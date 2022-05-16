@@ -53,27 +53,30 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateApplicationResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateApplicationResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "applicationId": ...,
-        "applicationArn": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateApplicationResponseTypeDef(TypedDict):
-    applicationId: str,
-    applicationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -107,138 +110,6 @@ class DescribeApplicationRequestRequestTypeDef(TypedDict):
     applicationId: str,
 ```
 
-## DescribeApplicationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseTypeDef
-
-def get_value() -> DescribeApplicationResponseTypeDef:
-    return {
-        "applicationId": ...,
-        "applicationArn": ...,
-        "applicationName": ...,
-        "applicationDescription": ...,
-        "applicationUrl": ...,
-        "applicationState": ...,
-        "applicationCreationDate": ...,
-        "applicationLastUpdateDate": ...,
-        "roleArn": ...,
-        "ssoClientId": ...,
-        "errorMessage": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeApplicationResponseTypeDef(TypedDict):
-    applicationId: str,
-    applicationArn: str,
-    applicationName: str,
-    applicationDescription: str,
-    applicationUrl: str,
-    applicationState: ApplicationStateType,  # (1)
-    applicationCreationDate: int,
-    applicationLastUpdateDate: int,
-    roleArn: str,
-    ssoClientId: str,
-    errorMessage: str,
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListApplicationsRequestListApplicationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
-
-def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListApplicationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestRequestTypeDef
-
-def get_value() -> ListApplicationsRequestRequestTypeDef:
-    return {
-        "nextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationsRequestRequestTypeDef(TypedDict):
-    nextToken: NotRequired[str],
-```
-
-## ListApplicationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
-
-def get_value() -> ListApplicationsResponseTypeDef:
-    return {
-        "applicationSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationsResponseTypeDef(TypedDict):
-    applicationSummaries: List[ApplicationSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -257,28 +128,36 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
-## ResponseMetadataTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotfleethub.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> ListApplicationsRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "nextToken": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
 ```
 
 ## TagResourceRequestRequestTypeDef
@@ -336,3 +215,124 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
+## CreateApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "applicationId": ...,
+        "applicationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    applicationId: str,
+    applicationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseTypeDef
+
+def get_value() -> DescribeApplicationResponseTypeDef:
+    return {
+        "applicationId": ...,
+        "applicationArn": ...,
+        "applicationName": ...,
+        "applicationDescription": ...,
+        "applicationUrl": ...,
+        "applicationState": ...,
+        "applicationCreationDate": ...,
+        "applicationLastUpdateDate": ...,
+        "roleArn": ...,
+        "ssoClientId": ...,
+        "errorMessage": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeApplicationResponseTypeDef(TypedDict):
+    applicationId: str,
+    applicationArn: str,
+    applicationName: str,
+    applicationDescription: str,
+    applicationUrl: str,
+    applicationState: ApplicationStateType,  # (1)
+    applicationCreationDate: int,
+    applicationLastUpdateDate: int,
+    roleArn: str,
+    ssoClientId: str,
+    errorMessage: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "applicationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    applicationSummaries: List[ApplicationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsRequestListApplicationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
+
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 

@@ -92,43 +92,43 @@ def get_value() -> AppIntegrationsServiceServiceName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import ScheduleConfigurationTypeDef
 
-def get_value() -> CreateDataIntegrationRequestRequestTypeDef:
+def get_value() -> ScheduleConfigurationTypeDef:
     return {
-        "Name": ...,
+        "FirstExecutionFrom": ...,
     }
 ```
 
-- [CreateDataIntegrationRequestRequestTypeDef](./type_defs.md#createdataintegrationrequestrequesttypedef)
-- [CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef)
-- [CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef)
-- [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef)
+- [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - [DataIntegrationAssociationSummaryTypeDef](./type_defs.md#dataintegrationassociationsummarytypedef)
 - [DataIntegrationSummaryTypeDef](./type_defs.md#dataintegrationsummarytypedef)
 - [DeleteDataIntegrationRequestRequestTypeDef](./type_defs.md#deletedataintegrationrequestrequesttypedef)
 - [DeleteEventIntegrationRequestRequestTypeDef](./type_defs.md#deleteeventintegrationrequestrequesttypedef)
-- [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - [EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef)
-- [EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)
 - [GetDataIntegrationRequestRequestTypeDef](./type_defs.md#getdataintegrationrequestrequesttypedef)
-- [GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef)
 - [GetEventIntegrationRequestRequestTypeDef](./type_defs.md#geteventintegrationrequestrequesttypedef)
-- [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef)
 - [ListDataIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listdataintegrationassociationsrequestrequesttypedef)
-- [ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef)
 - [ListDataIntegrationsRequestRequestTypeDef](./type_defs.md#listdataintegrationsrequestrequesttypedef)
-- [ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef)
 - [ListEventIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequestrequesttypedef)
-- [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef)
 - [ListEventIntegrationsRequestRequestTypeDef](./type_defs.md#listeventintegrationsrequestrequesttypedef)
-- [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDataIntegrationRequestRequestTypeDef](./type_defs.md#updatedataintegrationrequestrequesttypedef)
 - [UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef)
+- [CreateDataIntegrationRequestRequestTypeDef](./type_defs.md#createdataintegrationrequestrequesttypedef)
+- [CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef)
+- [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef)
+- [GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef)
+- [EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)
+- [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef)
+- [ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef)
+- [ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef)
+- [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef)
+- [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef)
 

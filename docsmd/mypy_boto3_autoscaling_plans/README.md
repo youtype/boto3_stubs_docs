@@ -125,39 +125,39 @@ def get_value() -> DescribeScalingPlanResourcesPaginatorName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import TagFilterTypeDef
 
-def get_value() -> ApplicationSourceTypeDef:
+def get_value() -> TagFilterTypeDef:
     return {
-        "CloudFormationStackARN": ...,
+        "Key": ...,
     }
 ```
 
+- [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
+- [DatapointTypeDef](./type_defs.md#datapointtypedef)
+- [DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef)
+- [GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef)
+- [PredefinedLoadMetricSpecificationTypeDef](./type_defs.md#predefinedloadmetricspecificationtypedef)
+- [PredefinedScalingMetricSpecificationTypeDef](./type_defs.md#predefinedscalingmetricspecificationtypedef)
 - [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
-- [CreateScalingPlanRequestRequestTypeDef](./type_defs.md#createscalingplanrequestrequesttypedef)
 - [CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef)
 - [CustomizedLoadMetricSpecificationTypeDef](./type_defs.md#customizedloadmetricspecificationtypedef)
 - [CustomizedScalingMetricSpecificationTypeDef](./type_defs.md#customizedscalingmetricspecificationtypedef)
-- [DatapointTypeDef](./type_defs.md#datapointtypedef)
-- [DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef)
+- [GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef)
 - [DescribeScalingPlanResourcesRequestDescribeScalingPlanResourcesPaginateTypeDef](./type_defs.md#describescalingplanresourcesrequestdescribescalingplanresourcespaginatetypedef)
-- [DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef)
-- [DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)
 - [DescribeScalingPlansRequestDescribeScalingPlansPaginateTypeDef](./type_defs.md#describescalingplansrequestdescribescalingplanspaginatetypedef)
 - [DescribeScalingPlansRequestRequestTypeDef](./type_defs.md#describescalingplansrequestrequesttypedef)
-- [DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef)
-- [GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef)
-- [GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef)
-- [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PredefinedLoadMetricSpecificationTypeDef](./type_defs.md#predefinedloadmetricspecificationtypedef)
-- [PredefinedScalingMetricSpecificationTypeDef](./type_defs.md#predefinedscalingmetricspecificationtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)
-- [ScalingPlanResourceTypeDef](./type_defs.md#scalingplanresourcetypedef)
-- [ScalingPlanTypeDef](./type_defs.md#scalingplantypedef)
-- [ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)
-- [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
+- [ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)
+- [ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)
+- [CreateScalingPlanRequestRequestTypeDef](./type_defs.md#createscalingplanrequestrequesttypedef)
+- [ScalingPlanTypeDef](./type_defs.md#scalingplantypedef)
 - [UpdateScalingPlanRequestRequestTypeDef](./type_defs.md#updatescalingplanrequestrequesttypedef)
+- [ScalingPlanResourceTypeDef](./type_defs.md#scalingplanresourcetypedef)
+- [DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef)
+- [DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)
 

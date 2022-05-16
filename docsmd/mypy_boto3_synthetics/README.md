@@ -97,55 +97,55 @@ def get_value() -> CanaryRunStateReasonCodeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef
+from mypy_boto3_synthetics.type_defs import S3EncryptionConfigTypeDef
 
-def get_value() -> ArtifactConfigInputTypeDef:
+def get_value() -> S3EncryptionConfigTypeDef:
     return {
-        "S3Encryption": ...,
+        "EncryptionMode": ...,
     }
 ```
 
-- [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
-- [ArtifactConfigOutputTypeDef](./type_defs.md#artifactconfigoutputtypedef)
+- [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
 - [BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)
 - [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
 - [CanaryCodeOutputTypeDef](./type_defs.md#canarycodeoutputtypedef)
-- [CanaryLastRunTypeDef](./type_defs.md#canarylastruntypedef)
 - [CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef)
 - [CanaryRunConfigOutputTypeDef](./type_defs.md#canaryrunconfigoutputtypedef)
 - [CanaryRunStatusTypeDef](./type_defs.md#canaryrunstatustypedef)
 - [CanaryRunTimelineTypeDef](./type_defs.md#canaryruntimelinetypedef)
-- [CanaryRunTypeDef](./type_defs.md#canaryruntypedef)
 - [CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef)
 - [CanaryScheduleOutputTypeDef](./type_defs.md#canaryscheduleoutputtypedef)
 - [CanaryStatusTypeDef](./type_defs.md#canarystatustypedef)
 - [CanaryTimelineTypeDef](./type_defs.md#canarytimelinetypedef)
-- [CanaryTypeDef](./type_defs.md#canarytypedef)
-- [CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef)
-- [CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef)
+- [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)
+- [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeleteCanaryRequestRequestTypeDef](./type_defs.md#deletecanaryrequestrequesttypedef)
 - [DescribeCanariesLastRunRequestRequestTypeDef](./type_defs.md#describecanarieslastrunrequestrequesttypedef)
-- [DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef)
 - [DescribeCanariesRequestRequestTypeDef](./type_defs.md#describecanariesrequestrequesttypedef)
-- [DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef)
 - [DescribeRuntimeVersionsRequestRequestTypeDef](./type_defs.md#describeruntimeversionsrequestrequesttypedef)
-- [DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef)
-- [GetCanaryRequestRequestTypeDef](./type_defs.md#getcanaryrequestrequesttypedef)
-- [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef)
-- [GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef)
-- [GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef)
-- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RuntimeVersionTypeDef](./type_defs.md#runtimeversiontypedef)
-- [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
+- [GetCanaryRequestRequestTypeDef](./type_defs.md#getcanaryrequestrequesttypedef)
+- [GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [StartCanaryRequestRequestTypeDef](./type_defs.md#startcanaryrequestrequesttypedef)
 - [StopCanaryRequestRequestTypeDef](./type_defs.md#stopcanaryrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
-- [UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef)
+- [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
+- [ArtifactConfigOutputTypeDef](./type_defs.md#artifactconfigoutputtypedef)
 - [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
 - [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
-- [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
-- [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)
+- [CanaryRunTypeDef](./type_defs.md#canaryruntypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef)
+- [CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef)
+- [UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef)
+- [CanaryTypeDef](./type_defs.md#canarytypedef)
+- [CanaryLastRunTypeDef](./type_defs.md#canarylastruntypedef)
+- [GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef)
+- [CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef)
+- [DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef)
+- [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef)
+- [DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef)
 

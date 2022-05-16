@@ -39,6 +39,156 @@ class DescribeHumanLoopRequestRequestTypeDef(TypedDict):
     HumanLoopName: str,
 ```
 
+## HumanLoopOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopOutputTypeDef
+
+def get_value() -> HumanLoopOutputTypeDef:
+    return {
+        "OutputS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class HumanLoopOutputTypeDef(TypedDict):
+    OutputS3Uri: str,
+```
+
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## HumanLoopDataAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopDataAttributesTypeDef
+
+def get_value() -> HumanLoopDataAttributesTypeDef:
+    return {
+        "ContentClassifiers": ...,
+    }
+```
+
+```python title="Definition"
+class HumanLoopDataAttributesTypeDef(TypedDict):
+    ContentClassifiers: Sequence[ContentClassifierType],  # (1)
+```
+
+1. See [:material-code-brackets: ContentClassifierType](./literals.md#contentclassifiertype) 
+## HumanLoopInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopInputTypeDef
+
+def get_value() -> HumanLoopInputTypeDef:
+    return {
+        "InputContent": ...,
+    }
+```
+
+```python title="Definition"
+class HumanLoopInputTypeDef(TypedDict):
+    InputContent: str,
+```
+
+## HumanLoopSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopSummaryTypeDef
+
+def get_value() -> HumanLoopSummaryTypeDef:
+    return {
+        "HumanLoopName": ...,
+    }
+```
+
+```python title="Definition"
+class HumanLoopSummaryTypeDef(TypedDict):
+    HumanLoopName: NotRequired[str],
+    HumanLoopStatus: NotRequired[HumanLoopStatusType],  # (1)
+    CreationTime: NotRequired[datetime],
+    FailureReason: NotRequired[str],
+    FlowDefinitionArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HumanLoopStatusType](./literals.md#humanloopstatustype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListHumanLoopsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsRequestRequestTypeDef
+
+def get_value() -> ListHumanLoopsRequestRequestTypeDef:
+    return {
+        "FlowDefinitionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListHumanLoopsRequestRequestTypeDef(TypedDict):
+    FlowDefinitionArn: str,
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    SortOrder: NotRequired[SortOrderType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## StopHumanLoopRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import StopHumanLoopRequestRequestTypeDef
+
+def get_value() -> StopHumanLoopRequestRequestTypeDef:
+    return {
+        "HumanLoopName": ...,
+    }
+```
+
+```python title="Definition"
+class StopHumanLoopRequestRequestTypeDef(TypedDict):
+    HumanLoopName: str,
+```
+
 ## DescribeHumanLoopResponseTypeDef
 
 ```python title="Usage Example"
@@ -74,184 +224,25 @@ class DescribeHumanLoopResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: HumanLoopStatusType](./literals.md#humanloopstatustype) 
 2. See [:material-code-braces: HumanLoopOutputTypeDef](./type_defs.md#humanloopoutputtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## HumanLoopDataAttributesTypeDef
+## StartHumanLoopResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopDataAttributesTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import StartHumanLoopResponseTypeDef
 
-def get_value() -> HumanLoopDataAttributesTypeDef:
+def get_value() -> StartHumanLoopResponseTypeDef:
     return {
-        "ContentClassifiers": ...,
-    }
-```
-
-```python title="Definition"
-class HumanLoopDataAttributesTypeDef(TypedDict):
-    ContentClassifiers: Sequence[ContentClassifierType],  # (1)
-```
-
-1. See [:material-code-brackets: ContentClassifierType](./literals.md#contentclassifiertype) 
-## HumanLoopInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopInputTypeDef
-
-def get_value() -> HumanLoopInputTypeDef:
-    return {
-        "InputContent": ...,
-    }
-```
-
-```python title="Definition"
-class HumanLoopInputTypeDef(TypedDict):
-    InputContent: str,
-```
-
-## HumanLoopOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopOutputTypeDef
-
-def get_value() -> HumanLoopOutputTypeDef:
-    return {
-        "OutputS3Uri": ...,
-    }
-```
-
-```python title="Definition"
-class HumanLoopOutputTypeDef(TypedDict):
-    OutputS3Uri: str,
-```
-
-## HumanLoopSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopSummaryTypeDef
-
-def get_value() -> HumanLoopSummaryTypeDef:
-    return {
-        "HumanLoopName": ...,
-    }
-```
-
-```python title="Definition"
-class HumanLoopSummaryTypeDef(TypedDict):
-    HumanLoopName: NotRequired[str],
-    HumanLoopStatus: NotRequired[HumanLoopStatusType],  # (1)
-    CreationTime: NotRequired[datetime],
-    FailureReason: NotRequired[str],
-    FlowDefinitionArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: HumanLoopStatusType](./literals.md#humanloopstatustype) 
-## ListHumanLoopsRequestListHumanLoopsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsRequestListHumanLoopsPaginateTypeDef
-
-def get_value() -> ListHumanLoopsRequestListHumanLoopsPaginateTypeDef:
-    return {
-        "FlowDefinitionArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListHumanLoopsRequestListHumanLoopsPaginateTypeDef(TypedDict):
-    FlowDefinitionArn: str,
-    CreationTimeAfter: NotRequired[Union[datetime, str]],
-    CreationTimeBefore: NotRequired[Union[datetime, str]],
-    SortOrder: NotRequired[SortOrderType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListHumanLoopsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsRequestRequestTypeDef
-
-def get_value() -> ListHumanLoopsRequestRequestTypeDef:
-    return {
-        "FlowDefinitionArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListHumanLoopsRequestRequestTypeDef(TypedDict):
-    FlowDefinitionArn: str,
-    CreationTimeAfter: NotRequired[Union[datetime, str]],
-    CreationTimeBefore: NotRequired[Union[datetime, str]],
-    SortOrder: NotRequired[SortOrderType],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## ListHumanLoopsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsResponseTypeDef
-
-def get_value() -> ListHumanLoopsResponseTypeDef:
-    return {
-        "HumanLoopSummaries": ...,
-        "NextToken": ...,
+        "HumanLoopArn": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListHumanLoopsResponseTypeDef(TypedDict):
-    HumanLoopSummaries: List[HumanLoopSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class StartHumanLoopResponseTypeDef(TypedDict):
+    HumanLoopArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartHumanLoopRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -275,38 +266,47 @@ class StartHumanLoopRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef) 
 2. See [:material-code-braces: HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef) 
-## StartHumanLoopResponseTypeDef
+## ListHumanLoopsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import StartHumanLoopResponseTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsResponseTypeDef
 
-def get_value() -> StartHumanLoopResponseTypeDef:
+def get_value() -> ListHumanLoopsResponseTypeDef:
     return {
-        "HumanLoopArn": ...,
+        "HumanLoopSummaries": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StartHumanLoopResponseTypeDef(TypedDict):
-    HumanLoopArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ListHumanLoopsResponseTypeDef(TypedDict):
+    HumanLoopSummaries: List[HumanLoopSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StopHumanLoopRequestRequestTypeDef
+1. See [:material-code-braces: HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHumanLoopsRequestListHumanLoopsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import StopHumanLoopRequestRequestTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsRequestListHumanLoopsPaginateTypeDef
 
-def get_value() -> StopHumanLoopRequestRequestTypeDef:
+def get_value() -> ListHumanLoopsRequestListHumanLoopsPaginateTypeDef:
     return {
-        "HumanLoopName": ...,
+        "FlowDefinitionArn": ...,
     }
 ```
 
 ```python title="Definition"
-class StopHumanLoopRequestRequestTypeDef(TypedDict):
-    HumanLoopName: str,
+class ListHumanLoopsRequestListHumanLoopsPaginateTypeDef(TypedDict):
+    FlowDefinitionArn: str,
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    SortOrder: NotRequired[SortOrderType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 

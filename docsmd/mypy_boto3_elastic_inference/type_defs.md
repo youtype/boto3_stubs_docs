@@ -26,26 +26,39 @@ class AcceleratorTypeOfferingTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LocationTypeType](./literals.md#locationtypetype) 
-## AcceleratorTypeTypeDef
+## KeyValuePairTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeTypeDef
+from mypy_boto3_elastic_inference.type_defs import KeyValuePairTypeDef
 
-def get_value() -> AcceleratorTypeTypeDef:
+def get_value() -> KeyValuePairTypeDef:
     return {
-        "acceleratorTypeName": ...,
+        "key": ...,
     }
 ```
 
 ```python title="Definition"
-class AcceleratorTypeTypeDef(TypedDict):
-    acceleratorTypeName: NotRequired[str],
-    memoryInfo: NotRequired[MemoryInfoTypeDef],  # (1)
-    throughputInfo: NotRequired[List[KeyValuePairTypeDef]],  # (2)
+class KeyValuePairTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[int],
 ```
 
-1. See [:material-code-braces: MemoryInfoTypeDef](./type_defs.md#memoryinfotypedef) 
-2. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+## MemoryInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import MemoryInfoTypeDef
+
+def get_value() -> MemoryInfoTypeDef:
+    return {
+        "sizeInMiB": ...,
+    }
+```
+
+```python title="Definition"
+class MemoryInfoTypeDef(TypedDict):
+    sizeInMiB: NotRequired[int],
+```
+
 ## DescribeAcceleratorOfferingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -64,248 +77,6 @@ class DescribeAcceleratorOfferingsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LocationTypeType](./literals.md#locationtypetype) 
-## DescribeAcceleratorOfferingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsResponseTypeDef
-
-def get_value() -> DescribeAcceleratorOfferingsResponseTypeDef:
-    return {
-        "acceleratorTypeOfferings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAcceleratorOfferingsResponseTypeDef(TypedDict):
-    acceleratorTypeOfferings: List[AcceleratorTypeOfferingTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AcceleratorTypeOfferingTypeDef](./type_defs.md#acceleratortypeofferingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAcceleratorTypesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorTypesResponseTypeDef
-
-def get_value() -> DescribeAcceleratorTypesResponseTypeDef:
-    return {
-        "acceleratorTypes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAcceleratorTypesResponseTypeDef(TypedDict):
-    acceleratorTypes: List[AcceleratorTypeTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AcceleratorTypeTypeDef](./type_defs.md#acceleratortypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef
-
-def get_value() -> DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef:
-    return {
-        "acceleratorIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef(TypedDict):
-    acceleratorIds: NotRequired[Sequence[str]],
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeAcceleratorsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestRequestTypeDef
-
-def get_value() -> DescribeAcceleratorsRequestRequestTypeDef:
-    return {
-        "acceleratorIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAcceleratorsRequestRequestTypeDef(TypedDict):
-    acceleratorIds: NotRequired[Sequence[str]],
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## DescribeAcceleratorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsResponseTypeDef
-
-def get_value() -> DescribeAcceleratorsResponseTypeDef:
-    return {
-        "acceleratorSet": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAcceleratorsResponseTypeDef(TypedDict):
-    acceleratorSet: List[ElasticInferenceAcceleratorTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ElasticInferenceAcceleratorHealthTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorHealthTypeDef
-
-def get_value() -> ElasticInferenceAcceleratorHealthTypeDef:
-    return {
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class ElasticInferenceAcceleratorHealthTypeDef(TypedDict):
-    status: NotRequired[str],
-```
-
-## ElasticInferenceAcceleratorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorTypeDef
-
-def get_value() -> ElasticInferenceAcceleratorTypeDef:
-    return {
-        "acceleratorHealth": ...,
-    }
-```
-
-```python title="Definition"
-class ElasticInferenceAcceleratorTypeDef(TypedDict):
-    acceleratorHealth: NotRequired[ElasticInferenceAcceleratorHealthTypeDef],  # (1)
-    acceleratorType: NotRequired[str],
-    acceleratorId: NotRequired[str],
-    availabilityZone: NotRequired[str],
-    attachedResource: NotRequired[str],
-```
-
-1. See [:material-code-braces: ElasticInferenceAcceleratorHealthTypeDef](./type_defs.md#elasticinferenceacceleratorhealthtypedef) 
-## FilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import FilterTypeDef
-
-def get_value() -> FilterTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class FilterTypeDef(TypedDict):
-    name: NotRequired[str],
-    values: NotRequired[Sequence[str]],
-```
-
-## KeyValuePairTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import KeyValuePairTypeDef
-
-def get_value() -> KeyValuePairTypeDef:
-    return {
-        "key": ...,
-    }
-```
-
-```python title="Definition"
-class KeyValuePairTypeDef(TypedDict):
-    key: NotRequired[str],
-    value: NotRequired[int],
-```
-
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceResultTypeDef
-
-def get_value() -> ListTagsForResourceResultTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResultTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MemoryInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import MemoryInfoTypeDef
-
-def get_value() -> MemoryInfoTypeDef:
-    return {
-        "sizeInMiB": ...,
-    }
-```
-
-```python title="Definition"
-class MemoryInfoTypeDef(TypedDict):
-    sizeInMiB: NotRequired[int],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elastic_inference.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -328,6 +99,73 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## FilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    name: NotRequired[str],
+    values: NotRequired[Sequence[str]],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ElasticInferenceAcceleratorHealthTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorHealthTypeDef
+
+def get_value() -> ElasticInferenceAcceleratorHealthTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class ElasticInferenceAcceleratorHealthTypeDef(TypedDict):
+    status: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
 ```
 
 ## TagResourceRequestRequestTypeDef
@@ -366,3 +204,165 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
+## AcceleratorTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeTypeDef
+
+def get_value() -> AcceleratorTypeTypeDef:
+    return {
+        "acceleratorTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class AcceleratorTypeTypeDef(TypedDict):
+    acceleratorTypeName: NotRequired[str],
+    memoryInfo: NotRequired[MemoryInfoTypeDef],  # (1)
+    throughputInfo: NotRequired[List[KeyValuePairTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: MemoryInfoTypeDef](./type_defs.md#memoryinfotypedef) 
+2. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+## DescribeAcceleratorOfferingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsResponseTypeDef
+
+def get_value() -> DescribeAcceleratorOfferingsResponseTypeDef:
+    return {
+        "acceleratorTypeOfferings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAcceleratorOfferingsResponseTypeDef(TypedDict):
+    acceleratorTypeOfferings: List[AcceleratorTypeOfferingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AcceleratorTypeOfferingTypeDef](./type_defs.md#acceleratortypeofferingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAcceleratorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestRequestTypeDef
+
+def get_value() -> DescribeAcceleratorsRequestRequestTypeDef:
+    return {
+        "acceleratorIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAcceleratorsRequestRequestTypeDef(TypedDict):
+    acceleratorIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef
+
+def get_value() -> DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef:
+    return {
+        "acceleratorIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef(TypedDict):
+    acceleratorIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ElasticInferenceAcceleratorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorTypeDef
+
+def get_value() -> ElasticInferenceAcceleratorTypeDef:
+    return {
+        "acceleratorHealth": ...,
+    }
+```
+
+```python title="Definition"
+class ElasticInferenceAcceleratorTypeDef(TypedDict):
+    acceleratorHealth: NotRequired[ElasticInferenceAcceleratorHealthTypeDef],  # (1)
+    acceleratorType: NotRequired[str],
+    acceleratorId: NotRequired[str],
+    availabilityZone: NotRequired[str],
+    attachedResource: NotRequired[str],
+```
+
+1. See [:material-code-braces: ElasticInferenceAcceleratorHealthTypeDef](./type_defs.md#elasticinferenceacceleratorhealthtypedef) 
+## DescribeAcceleratorTypesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorTypesResponseTypeDef
+
+def get_value() -> DescribeAcceleratorTypesResponseTypeDef:
+    return {
+        "acceleratorTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAcceleratorTypesResponseTypeDef(TypedDict):
+    acceleratorTypes: List[AcceleratorTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AcceleratorTypeTypeDef](./type_defs.md#acceleratortypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAcceleratorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsResponseTypeDef
+
+def get_value() -> DescribeAcceleratorsResponseTypeDef:
+    return {
+        "acceleratorSet": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAcceleratorsResponseTypeDef(TypedDict):
+    acceleratorSet: List[ElasticInferenceAcceleratorTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -102,8 +102,8 @@ def get_value() -> EventTypeDef:
 
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
+- [UserTypeDef](./type_defs.md#usertypedef)
 - [PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef)
 - [PutItemsRequestRequestTypeDef](./type_defs.md#putitemsrequestrequesttypedef)
 - [PutUsersRequestRequestTypeDef](./type_defs.md#putusersrequestrequesttypedef)
-- [UserTypeDef](./type_defs.md#usertypedef)
 

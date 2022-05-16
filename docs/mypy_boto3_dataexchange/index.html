@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36094,110 +36094,110 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_dataexchange.type_defs</span> <span class="kn">import</span> <span class="n">ActionTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_dataexchange.type_defs</span> <span class="kn">import</span> <span class="n">ApiGatewayApiAssetTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ApiGatewayApiAssetTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ExportRevisionToS3&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ApiDescription&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
 <li><a href="type_defs/#apigatewayapiassettypedef">ApiGatewayApiAssetTypeDef</a></li>
 <li><a href="type_defs/#assetdestinationentrytypedef">AssetDestinationEntryTypeDef</a></li>
-<li><a href="type_defs/#assetdetailstypedef">AssetDetailsTypeDef</a></li>
-<li><a href="type_defs/#assetentrytypedef">AssetEntryTypeDef</a></li>
+<li><a href="type_defs/#redshiftdatashareassettypedef">RedshiftDataShareAssetTypeDef</a></li>
+<li><a href="type_defs/#s3snapshotassettypedef">S3SnapshotAssetTypeDef</a></li>
 <li><a href="type_defs/#assetsourceentrytypedef">AssetSourceEntryTypeDef</a></li>
 <li><a href="type_defs/#autoexportrevisiondestinationentrytypedef">AutoExportRevisionDestinationEntryTypeDef</a></li>
-<li><a href="type_defs/#autoexportrevisiontos3requestdetailstypedef">AutoExportRevisionToS3RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#exportserversideencryptiontypedef">ExportServerSideEncryptionTypeDef</a></li>
 <li><a href="type_defs/#canceljobrequestrequesttypedef">CancelJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdatasetrequestrequesttypedef">CreateDataSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdatasetresponsetypedef">CreateDataSetResponseTypeDef</a></li>
-<li><a href="type_defs/#createeventactionrequestrequesttypedef">CreateEventActionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createeventactionresponsetypedef">CreateEventActionResponseTypeDef</a></li>
-<li><a href="type_defs/#createjobrequestrequesttypedef">CreateJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createjobresponsetypedef">CreateJobResponseTypeDef</a></li>
+<li><a href="type_defs/#origindetailstypedef">OriginDetailsTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createrevisionrequestrequesttypedef">CreateRevisionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createrevisionresponsetypedef">CreateRevisionResponseTypeDef</a></li>
-<li><a href="type_defs/#datasetentrytypedef">DataSetEntryTypeDef</a></li>
 <li><a href="type_defs/#deleteassetrequestrequesttypedef">DeleteAssetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedatasetrequestrequesttypedef">DeleteDataSetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteeventactionrequestrequesttypedef">DeleteEventActionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleterevisionrequestrequesttypedef">DeleteRevisionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#detailstypedef">DetailsTypeDef</a></li>
-<li><a href="type_defs/#eventactionentrytypedef">EventActionEntryTypeDef</a></li>
-<li><a href="type_defs/#eventtypedef">EventTypeDef</a></li>
+<li><a href="type_defs/#importassetfromsignedurljoberrordetailstypedef">ImportAssetFromSignedUrlJobErrorDetailsTypeDef</a></li>
+<li><a href="type_defs/#revisionpublishedtypedef">RevisionPublishedTypeDef</a></li>
 <li><a href="type_defs/#exportassettosignedurlrequestdetailstypedef">ExportAssetToSignedUrlRequestDetailsTypeDef</a></li>
 <li><a href="type_defs/#exportassettosignedurlresponsedetailstypedef">ExportAssetToSignedUrlResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#exportassetstos3requestdetailstypedef">ExportAssetsToS3RequestDetailsTypeDef</a></li>
-<li><a href="type_defs/#exportassetstos3responsedetailstypedef">ExportAssetsToS3ResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#exportrevisionstos3requestdetailstypedef">ExportRevisionsToS3RequestDetailsTypeDef</a></li>
-<li><a href="type_defs/#exportrevisionstos3responsedetailstypedef">ExportRevisionsToS3ResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#exportserversideencryptiontypedef">ExportServerSideEncryptionTypeDef</a></li>
+<li><a href="type_defs/#revisiondestinationentrytypedef">RevisionDestinationEntryTypeDef</a></li>
 <li><a href="type_defs/#getassetrequestrequesttypedef">GetAssetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getassetresponsetypedef">GetAssetResponseTypeDef</a></li>
 <li><a href="type_defs/#getdatasetrequestrequesttypedef">GetDataSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdatasetresponsetypedef">GetDataSetResponseTypeDef</a></li>
 <li><a href="type_defs/#geteventactionrequestrequesttypedef">GetEventActionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#geteventactionresponsetypedef">GetEventActionResponseTypeDef</a></li>
 <li><a href="type_defs/#getjobrequestrequesttypedef">GetJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getjobresponsetypedef">GetJobResponseTypeDef</a></li>
 <li><a href="type_defs/#getrevisionrequestrequesttypedef">GetRevisionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getrevisionresponsetypedef">GetRevisionResponseTypeDef</a></li>
 <li><a href="type_defs/#importassetfromapigatewayapirequestdetailstypedef">ImportAssetFromApiGatewayApiRequestDetailsTypeDef</a></li>
 <li><a href="type_defs/#importassetfromapigatewayapiresponsedetailstypedef">ImportAssetFromApiGatewayApiResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#importassetfromsignedurljoberrordetailstypedef">ImportAssetFromSignedUrlJobErrorDetailsTypeDef</a></li>
 <li><a href="type_defs/#importassetfromsignedurlrequestdetailstypedef">ImportAssetFromSignedUrlRequestDetailsTypeDef</a></li>
 <li><a href="type_defs/#importassetfromsignedurlresponsedetailstypedef">ImportAssetFromSignedUrlResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#importassetsfromredshiftdatasharesrequestdetailstypedef">ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef</a></li>
-<li><a href="type_defs/#importassetsfromredshiftdatasharesresponsedetailstypedef">ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#importassetsfroms3requestdetailstypedef">ImportAssetsFromS3RequestDetailsTypeDef</a></li>
-<li><a href="type_defs/#importassetsfroms3responsedetailstypedef">ImportAssetsFromS3ResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#jobentrytypedef">JobEntryTypeDef</a></li>
-<li><a href="type_defs/#joberrortypedef">JobErrorTypeDef</a></li>
-<li><a href="type_defs/#listdatasetrevisionsrequestlistdatasetrevisionspaginatetypedef">ListDataSetRevisionsRequestListDataSetRevisionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdatasetrevisionsrequestrequesttypedef">ListDataSetRevisionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdatasetrevisionsresponsetypedef">ListDataSetRevisionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listdatasetsrequestlistdatasetspaginatetypedef">ListDataSetsRequestListDataSetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdatasetsrequestrequesttypedef">ListDataSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdatasetsresponsetypedef">ListDataSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listeventactionsrequestlisteventactionspaginatetypedef">ListEventActionsRequestListEventActionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listeventactionsrequestrequesttypedef">ListEventActionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listeventactionsresponsetypedef">ListEventActionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listjobsrequestlistjobspaginatetypedef">ListJobsRequestListJobsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listjobsrequestrequesttypedef">ListJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listjobsresponsetypedef">ListJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#listrevisionassetsrequestlistrevisionassetspaginatetypedef">ListRevisionAssetsRequestListRevisionAssetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listrevisionassetsrequestrequesttypedef">ListRevisionAssetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrevisionassetsresponsetypedef">ListRevisionAssetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#origindetailstypedef">OriginDetailsTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#redshiftdatashareassetsourceentrytypedef">RedshiftDataShareAssetSourceEntryTypeDef</a></li>
-<li><a href="type_defs/#redshiftdatashareassettypedef">RedshiftDataShareAssetTypeDef</a></li>
-<li><a href="type_defs/#requestdetailstypedef">RequestDetailsTypeDef</a></li>
-<li><a href="type_defs/#responsedetailstypedef">ResponseDetailsTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#revisiondestinationentrytypedef">RevisionDestinationEntryTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listdatasetrevisionsrequestrequesttypedef">ListDataSetRevisionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#revisionentrytypedef">RevisionEntryTypeDef</a></li>
-<li><a href="type_defs/#revisionpublishedtypedef">RevisionPublishedTypeDef</a></li>
+<li><a href="type_defs/#listdatasetsrequestrequesttypedef">ListDataSetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listeventactionsrequestrequesttypedef">ListEventActionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listjobsrequestrequesttypedef">ListJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrevisionassetsrequestrequesttypedef">ListRevisionAssetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#revokerevisionrequestrequesttypedef">RevokeRevisionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#revokerevisionresponsetypedef">RevokeRevisionResponseTypeDef</a></li>
-<li><a href="type_defs/#s3snapshotassettypedef">S3SnapshotAssetTypeDef</a></li>
 <li><a href="type_defs/#sendapiassetrequestrequesttypedef">SendApiAssetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#sendapiassetresponsetypedef">SendApiAssetResponseTypeDef</a></li>
 <li><a href="type_defs/#startjobrequestrequesttypedef">StartJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateassetrequestrequesttypedef">UpdateAssetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateassetresponsetypedef">UpdateAssetResponseTypeDef</a></li>
 <li><a href="type_defs/#updatedatasetrequestrequesttypedef">UpdateDataSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updaterevisionrequestrequesttypedef">UpdateRevisionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#assetdetailstypedef">AssetDetailsTypeDef</a></li>
+<li><a href="type_defs/#importassetsfroms3requestdetailstypedef">ImportAssetsFromS3RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#importassetsfroms3responsedetailstypedef">ImportAssetsFromS3ResponseDetailsTypeDef</a></li>
+<li><a href="type_defs/#autoexportrevisiontos3requestdetailstypedef">AutoExportRevisionToS3RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#exportassetstos3requestdetailstypedef">ExportAssetsToS3RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#exportassetstos3responsedetailstypedef">ExportAssetsToS3ResponseDetailsTypeDef</a></li>
+<li><a href="type_defs/#datasetentrytypedef">DataSetEntryTypeDef</a></li>
+<li><a href="type_defs/#createdatasetresponsetypedef">CreateDataSetResponseTypeDef</a></li>
+<li><a href="type_defs/#createrevisionresponsetypedef">CreateRevisionResponseTypeDef</a></li>
+<li><a href="type_defs/#getdatasetresponsetypedef">GetDataSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getrevisionresponsetypedef">GetRevisionResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#revokerevisionresponsetypedef">RevokeRevisionResponseTypeDef</a></li>
+<li><a href="type_defs/#sendapiassetresponsetypedef">SendApiAssetResponseTypeDef</a></li>
 <li><a href="type_defs/#updatedatasetresponsetypedef">UpdateDataSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updaterevisionresponsetypedef">UpdateRevisionResponseTypeDef</a></li>
+<li><a href="type_defs/#detailstypedef">DetailsTypeDef</a></li>
+<li><a href="type_defs/#eventtypedef">EventTypeDef</a></li>
+<li><a href="type_defs/#exportrevisionstos3requestdetailstypedef">ExportRevisionsToS3RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#exportrevisionstos3responsedetailstypedef">ExportRevisionsToS3ResponseDetailsTypeDef</a></li>
+<li><a href="type_defs/#importassetsfromredshiftdatasharesrequestdetailstypedef">ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#importassetsfromredshiftdatasharesresponsedetailstypedef">ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef</a></li>
+<li><a href="type_defs/#listdatasetrevisionsrequestlistdatasetrevisionspaginatetypedef">ListDataSetRevisionsRequestListDataSetRevisionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdatasetsrequestlistdatasetspaginatetypedef">ListDataSetsRequestListDataSetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listeventactionsrequestlisteventactionspaginatetypedef">ListEventActionsRequestListEventActionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listjobsrequestlistjobspaginatetypedef">ListJobsRequestListJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listrevisionassetsrequestlistrevisionassetspaginatetypedef">ListRevisionAssetsRequestListRevisionAssetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdatasetrevisionsresponsetypedef">ListDataSetRevisionsResponseTypeDef</a></li>
+<li><a href="type_defs/#assetentrytypedef">AssetEntryTypeDef</a></li>
+<li><a href="type_defs/#getassetresponsetypedef">GetAssetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateassetresponsetypedef">UpdateAssetResponseTypeDef</a></li>
+<li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
+<li><a href="type_defs/#listdatasetsresponsetypedef">ListDataSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#joberrortypedef">JobErrorTypeDef</a></li>
+<li><a href="type_defs/#requestdetailstypedef">RequestDetailsTypeDef</a></li>
+<li><a href="type_defs/#responsedetailstypedef">ResponseDetailsTypeDef</a></li>
+<li><a href="type_defs/#listrevisionassetsresponsetypedef">ListRevisionAssetsResponseTypeDef</a></li>
+<li><a href="type_defs/#createeventactionrequestrequesttypedef">CreateEventActionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createeventactionresponsetypedef">CreateEventActionResponseTypeDef</a></li>
+<li><a href="type_defs/#eventactionentrytypedef">EventActionEntryTypeDef</a></li>
+<li><a href="type_defs/#geteventactionresponsetypedef">GetEventActionResponseTypeDef</a></li>
 <li><a href="type_defs/#updateeventactionrequestrequesttypedef">UpdateEventActionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateeventactionresponsetypedef">UpdateEventActionResponseTypeDef</a></li>
-<li><a href="type_defs/#updaterevisionrequestrequesttypedef">UpdateRevisionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updaterevisionresponsetypedef">UpdateRevisionResponseTypeDef</a></li>
+<li><a href="type_defs/#createjobrequestrequesttypedef">CreateJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createjobresponsetypedef">CreateJobResponseTypeDef</a></li>
+<li><a href="type_defs/#getjobresponsetypedef">GetJobResponseTypeDef</a></li>
+<li><a href="type_defs/#jobentrytypedef">JobEntryTypeDef</a></li>
+<li><a href="type_defs/#listeventactionsresponsetypedef">ListEventActionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listjobsresponsetypedef">ListJobsResponseTypeDef</a></li>
 </ul>
 
               
@@ -36267,7 +36267,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

@@ -100,9 +100,9 @@ def get_value() -> GetRawMessageContentRequestRequestTypeDef:
 ```
 
 - [GetRawMessageContentRequestRequestTypeDef](./type_defs.md#getrawmessagecontentrequestrequesttypedef)
-- [GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef)
-- [PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef)
-- [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)
+- [GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef)
+- [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
+- [PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef)
 

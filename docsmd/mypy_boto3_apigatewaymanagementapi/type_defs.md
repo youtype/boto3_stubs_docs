@@ -39,30 +39,6 @@ class GetConnectionRequestRequestTypeDef(TypedDict):
     ConnectionId: str,
 ```
 
-## GetConnectionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef
-
-def get_value() -> GetConnectionResponseTypeDef:
-    return {
-        "ConnectedAt": ...,
-        "Identity": ...,
-        "LastActiveAt": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectionResponseTypeDef(TypedDict):
-    ConnectedAt: datetime,
-    Identity: IdentityTypeDef,  # (1)
-    LastActiveAt: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityTypeDef
 
 ```python title="Usage Example"
@@ -79,24 +55,6 @@ def get_value() -> IdentityTypeDef:
 class IdentityTypeDef(TypedDict):
     SourceIp: str,
     UserAgent: str,
-```
-
-## PostToConnectionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigatewaymanagementapi.type_defs import PostToConnectionRequestRequestTypeDef
-
-def get_value() -> PostToConnectionRequestRequestTypeDef:
-    return {
-        "Data": ...,
-        "ConnectionId": ...,
-    }
-```
-
-```python title="Definition"
-class PostToConnectionRequestRequestTypeDef(TypedDict):
-    Data: Union[str, bytes, IO[Any], StreamingBody],
-    ConnectionId: str,
 ```
 
 ## ResponseMetadataTypeDef
@@ -123,3 +81,45 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## PostToConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigatewaymanagementapi.type_defs import PostToConnectionRequestRequestTypeDef
+
+def get_value() -> PostToConnectionRequestRequestTypeDef:
+    return {
+        "Data": ...,
+        "ConnectionId": ...,
+    }
+```
+
+```python title="Definition"
+class PostToConnectionRequestRequestTypeDef(TypedDict):
+    Data: Union[str, bytes, IO[Any], StreamingBody],
+    ConnectionId: str,
+```
+
+## GetConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef
+
+def get_value() -> GetConnectionResponseTypeDef:
+    return {
+        "ConnectedAt": ...,
+        "Identity": ...,
+        "LastActiveAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectionResponseTypeDef(TypedDict):
+    ConnectedAt: datetime,
+    Identity: IdentityTypeDef,  # (1)
+    LastActiveAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

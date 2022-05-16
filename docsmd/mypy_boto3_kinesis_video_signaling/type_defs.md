@@ -27,26 +27,6 @@ class GetIceServerConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
-## GetIceServerConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
-
-def get_value() -> GetIceServerConfigResponseTypeDef:
-    return {
-        "IceServerList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetIceServerConfigResponseTypeDef(TypedDict):
-    IceServerList: List[IceServerTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IceServerTypeDef](./type_defs.md#iceservertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IceServerTypeDef
 
 ```python title="Usage Example"
@@ -110,6 +90,26 @@ class SendAlexaOfferToMasterRequestRequestTypeDef(TypedDict):
     MessagePayload: str,
 ```
 
+## GetIceServerConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
+
+def get_value() -> GetIceServerConfigResponseTypeDef:
+    return {
+        "IceServerList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIceServerConfigResponseTypeDef(TypedDict):
+    IceServerList: List[IceServerTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IceServerTypeDef](./type_defs.md#iceservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendAlexaOfferToMasterResponseTypeDef
 
 ```python title="Usage Example"

@@ -7,23 +7,6 @@
     Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
     type annotations stubs module [mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
-## AbortConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AbortConfigTypeDef
-
-def get_value() -> AbortConfigTypeDef:
-    return {
-        "criteriaList": ...,
-    }
-```
-
-```python title="Definition"
-class AbortConfigTypeDef(TypedDict):
-    criteriaList: Sequence[AbortCriteriaTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AbortCriteriaTypeDef](./type_defs.md#abortcriteriatypedef) 
 ## AbortCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -65,94 +48,420 @@ class AcceptCertificateTransferRequestRequestTypeDef(TypedDict):
     setAsActive: NotRequired[bool],
 ```
 
-## ActionTypeDef
+## CloudwatchAlarmActionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ActionTypeDef
+from mypy_boto3_iot.type_defs import CloudwatchAlarmActionTypeDef
 
-def get_value() -> ActionTypeDef:
+def get_value() -> CloudwatchAlarmActionTypeDef:
     return {
-        "dynamoDB": ...,
+        "roleArn": ...,
+        "alarmName": ...,
+        "stateReason": ...,
+        "stateValue": ...,
     }
 ```
 
 ```python title="Definition"
-class ActionTypeDef(TypedDict):
-    dynamoDB: NotRequired[DynamoDBActionTypeDef],  # (1)
-    dynamoDBv2: NotRequired[DynamoDBv2ActionTypeDef],  # (2)
-    lambda: NotRequired[LambdaActionTypeDef],  # (3)
-    sns: NotRequired[SnsActionTypeDef],  # (4)
-    sqs: NotRequired[SqsActionTypeDef],  # (5)
-    kinesis: NotRequired[KinesisActionTypeDef],  # (6)
-    republish: NotRequired[RepublishActionTypeDef],  # (7)
-    s3: NotRequired[S3ActionTypeDef],  # (8)
-    firehose: NotRequired[FirehoseActionTypeDef],  # (9)
-    cloudwatchMetric: NotRequired[CloudwatchMetricActionTypeDef],  # (10)
-    cloudwatchAlarm: NotRequired[CloudwatchAlarmActionTypeDef],  # (11)
-    cloudwatchLogs: NotRequired[CloudwatchLogsActionTypeDef],  # (12)
-    elasticsearch: NotRequired[ElasticsearchActionTypeDef],  # (13)
-    salesforce: NotRequired[SalesforceActionTypeDef],  # (14)
-    iotAnalytics: NotRequired[IotAnalyticsActionTypeDef],  # (15)
-    iotEvents: NotRequired[IotEventsActionTypeDef],  # (16)
-    iotSiteWise: NotRequired[IotSiteWiseActionTypeDef],  # (17)
-    stepFunctions: NotRequired[StepFunctionsActionTypeDef],  # (18)
-    timestream: NotRequired[TimestreamActionTypeDef],  # (19)
-    http: NotRequired[HttpActionTypeDef],  # (20)
-    kafka: NotRequired[KafkaActionTypeDef],  # (21)
-    openSearch: NotRequired[OpenSearchActionTypeDef],  # (22)
+class CloudwatchAlarmActionTypeDef(TypedDict):
+    roleArn: str,
+    alarmName: str,
+    stateReason: str,
+    stateValue: str,
 ```
 
-1. See [:material-code-braces: DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef) 
-2. See [:material-code-braces: DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef) 
-3. See [:material-code-braces: LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef) 
-4. See [:material-code-braces: SnsActionTypeDef](./type_defs.md#snsactiontypedef) 
-5. See [:material-code-braces: SqsActionTypeDef](./type_defs.md#sqsactiontypedef) 
-6. See [:material-code-braces: KinesisActionTypeDef](./type_defs.md#kinesisactiontypedef) 
-7. See [:material-code-braces: RepublishActionTypeDef](./type_defs.md#republishactiontypedef) 
-8. See [:material-code-braces: S3ActionTypeDef](./type_defs.md#s3actiontypedef) 
-9. See [:material-code-braces: FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef) 
-10. See [:material-code-braces: CloudwatchMetricActionTypeDef](./type_defs.md#cloudwatchmetricactiontypedef) 
-11. See [:material-code-braces: CloudwatchAlarmActionTypeDef](./type_defs.md#cloudwatchalarmactiontypedef) 
-12. See [:material-code-braces: CloudwatchLogsActionTypeDef](./type_defs.md#cloudwatchlogsactiontypedef) 
-13. See [:material-code-braces: ElasticsearchActionTypeDef](./type_defs.md#elasticsearchactiontypedef) 
-14. See [:material-code-braces: SalesforceActionTypeDef](./type_defs.md#salesforceactiontypedef) 
-15. See [:material-code-braces: IotAnalyticsActionTypeDef](./type_defs.md#iotanalyticsactiontypedef) 
-16. See [:material-code-braces: IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef) 
-17. See [:material-code-braces: IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef) 
-18. See [:material-code-braces: StepFunctionsActionTypeDef](./type_defs.md#stepfunctionsactiontypedef) 
-19. See [:material-code-braces: TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef) 
-20. See [:material-code-braces: HttpActionTypeDef](./type_defs.md#httpactiontypedef) 
-21. See [:material-code-braces: KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef) 
-22. See [:material-code-braces: OpenSearchActionTypeDef](./type_defs.md#opensearchactiontypedef) 
-## ActiveViolationTypeDef
+## CloudwatchLogsActionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ActiveViolationTypeDef
+from mypy_boto3_iot.type_defs import CloudwatchLogsActionTypeDef
 
-def get_value() -> ActiveViolationTypeDef:
+def get_value() -> CloudwatchLogsActionTypeDef:
     return {
-        "violationId": ...,
+        "roleArn": ...,
+        "logGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class ActiveViolationTypeDef(TypedDict):
-    violationId: NotRequired[str],
-    thingName: NotRequired[str],
-    securityProfileName: NotRequired[str],
-    behavior: NotRequired[BehaviorTypeDef],  # (1)
-    lastViolationValue: NotRequired[MetricValueTypeDef],  # (2)
-    violationEventAdditionalInfo: NotRequired[ViolationEventAdditionalInfoTypeDef],  # (3)
-    verificationState: NotRequired[VerificationStateType],  # (4)
-    verificationStateDescription: NotRequired[str],
-    lastViolationTime: NotRequired[datetime],
-    violationStartTime: NotRequired[datetime],
+class CloudwatchLogsActionTypeDef(TypedDict):
+    roleArn: str,
+    logGroupName: str,
 ```
 
-1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
-2. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
-3. See [:material-code-braces: ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef) 
-4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+## CloudwatchMetricActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CloudwatchMetricActionTypeDef
+
+def get_value() -> CloudwatchMetricActionTypeDef:
+    return {
+        "roleArn": ...,
+        "metricNamespace": ...,
+        "metricName": ...,
+        "metricValue": ...,
+        "metricUnit": ...,
+    }
+```
+
+```python title="Definition"
+class CloudwatchMetricActionTypeDef(TypedDict):
+    roleArn: str,
+    metricNamespace: str,
+    metricName: str,
+    metricValue: str,
+    metricUnit: str,
+    metricTimestamp: NotRequired[str],
+```
+
+## DynamoDBActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DynamoDBActionTypeDef
+
+def get_value() -> DynamoDBActionTypeDef:
+    return {
+        "tableName": ...,
+        "roleArn": ...,
+        "hashKeyField": ...,
+        "hashKeyValue": ...,
+    }
+```
+
+```python title="Definition"
+class DynamoDBActionTypeDef(TypedDict):
+    tableName: str,
+    roleArn: str,
+    hashKeyField: str,
+    hashKeyValue: str,
+    operation: NotRequired[str],
+    hashKeyType: NotRequired[DynamoKeyTypeType],  # (1)
+    rangeKeyField: NotRequired[str],
+    rangeKeyValue: NotRequired[str],
+    rangeKeyType: NotRequired[DynamoKeyTypeType],  # (1)
+    payloadField: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DynamoKeyTypeType](./literals.md#dynamokeytypetype) 
+2. See [:material-code-brackets: DynamoKeyTypeType](./literals.md#dynamokeytypetype) 
+## ElasticsearchActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ElasticsearchActionTypeDef
+
+def get_value() -> ElasticsearchActionTypeDef:
+    return {
+        "roleArn": ...,
+        "endpoint": ...,
+        "index": ...,
+        "type": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class ElasticsearchActionTypeDef(TypedDict):
+    roleArn: str,
+    endpoint: str,
+    index: str,
+    type: str,
+    id: str,
+```
+
+## FirehoseActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import FirehoseActionTypeDef
+
+def get_value() -> FirehoseActionTypeDef:
+    return {
+        "roleArn": ...,
+        "deliveryStreamName": ...,
+    }
+```
+
+```python title="Definition"
+class FirehoseActionTypeDef(TypedDict):
+    roleArn: str,
+    deliveryStreamName: str,
+    separator: NotRequired[str],
+    batchMode: NotRequired[bool],
+```
+
+## IotAnalyticsActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import IotAnalyticsActionTypeDef
+
+def get_value() -> IotAnalyticsActionTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class IotAnalyticsActionTypeDef(TypedDict):
+    channelArn: NotRequired[str],
+    channelName: NotRequired[str],
+    batchMode: NotRequired[bool],
+    roleArn: NotRequired[str],
+```
+
+## IotEventsActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import IotEventsActionTypeDef
+
+def get_value() -> IotEventsActionTypeDef:
+    return {
+        "inputName": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class IotEventsActionTypeDef(TypedDict):
+    inputName: str,
+    roleArn: str,
+    messageId: NotRequired[str],
+    batchMode: NotRequired[bool],
+```
+
+## KafkaActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import KafkaActionTypeDef
+
+def get_value() -> KafkaActionTypeDef:
+    return {
+        "destinationArn": ...,
+        "topic": ...,
+        "clientProperties": ...,
+    }
+```
+
+```python title="Definition"
+class KafkaActionTypeDef(TypedDict):
+    destinationArn: str,
+    topic: str,
+    clientProperties: Mapping[str, str],
+    key: NotRequired[str],
+    partition: NotRequired[str],
+```
+
+## KinesisActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import KinesisActionTypeDef
+
+def get_value() -> KinesisActionTypeDef:
+    return {
+        "roleArn": ...,
+        "streamName": ...,
+    }
+```
+
+```python title="Definition"
+class KinesisActionTypeDef(TypedDict):
+    roleArn: str,
+    streamName: str,
+    partitionKey: NotRequired[str],
+```
+
+## LambdaActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import LambdaActionTypeDef
+
+def get_value() -> LambdaActionTypeDef:
+    return {
+        "functionArn": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaActionTypeDef(TypedDict):
+    functionArn: str,
+```
+
+## OpenSearchActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import OpenSearchActionTypeDef
+
+def get_value() -> OpenSearchActionTypeDef:
+    return {
+        "roleArn": ...,
+        "endpoint": ...,
+        "index": ...,
+        "type": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class OpenSearchActionTypeDef(TypedDict):
+    roleArn: str,
+    endpoint: str,
+    index: str,
+    type: str,
+    id: str,
+```
+
+## RepublishActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RepublishActionTypeDef
+
+def get_value() -> RepublishActionTypeDef:
+    return {
+        "roleArn": ...,
+        "topic": ...,
+    }
+```
+
+```python title="Definition"
+class RepublishActionTypeDef(TypedDict):
+    roleArn: str,
+    topic: str,
+    qos: NotRequired[int],
+```
+
+## S3ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import S3ActionTypeDef
+
+def get_value() -> S3ActionTypeDef:
+    return {
+        "roleArn": ...,
+        "bucketName": ...,
+        "key": ...,
+    }
+```
+
+```python title="Definition"
+class S3ActionTypeDef(TypedDict):
+    roleArn: str,
+    bucketName: str,
+    key: str,
+    cannedAcl: NotRequired[CannedAccessControlListType],  # (1)
+```
+
+1. See [:material-code-brackets: CannedAccessControlListType](./literals.md#cannedaccesscontrollisttype) 
+## SalesforceActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SalesforceActionTypeDef
+
+def get_value() -> SalesforceActionTypeDef:
+    return {
+        "token": ...,
+        "url": ...,
+    }
+```
+
+```python title="Definition"
+class SalesforceActionTypeDef(TypedDict):
+    token: str,
+    url: str,
+```
+
+## SnsActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SnsActionTypeDef
+
+def get_value() -> SnsActionTypeDef:
+    return {
+        "targetArn": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class SnsActionTypeDef(TypedDict):
+    targetArn: str,
+    roleArn: str,
+    messageFormat: NotRequired[MessageFormatType],  # (1)
+```
+
+1. See [:material-code-brackets: MessageFormatType](./literals.md#messageformattype) 
+## SqsActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SqsActionTypeDef
+
+def get_value() -> SqsActionTypeDef:
+    return {
+        "roleArn": ...,
+        "queueUrl": ...,
+    }
+```
+
+```python title="Definition"
+class SqsActionTypeDef(TypedDict):
+    roleArn: str,
+    queueUrl: str,
+    useBase64: NotRequired[bool],
+```
+
+## StepFunctionsActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StepFunctionsActionTypeDef
+
+def get_value() -> StepFunctionsActionTypeDef:
+    return {
+        "stateMachineName": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class StepFunctionsActionTypeDef(TypedDict):
+    stateMachineName: str,
+    roleArn: str,
+    executionNamePrefix: NotRequired[str],
+```
+
+## MetricValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MetricValueTypeDef
+
+def get_value() -> MetricValueTypeDef:
+    return {
+        "count": ...,
+    }
+```
+
+```python title="Definition"
+class MetricValueTypeDef(TypedDict):
+    count: NotRequired[int],
+    cidrs: NotRequired[Sequence[str]],
+    ports: NotRequired[Sequence[int]],
+    number: NotRequired[float],
+    numbers: NotRequired[Sequence[float]],
+    strings: NotRequired[Sequence[str]],
+```
+
+## ViolationEventAdditionalInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ViolationEventAdditionalInfoTypeDef
+
+def get_value() -> ViolationEventAdditionalInfoTypeDef:
+    return {
+        "confidenceLevel": ...,
+    }
+```
+
+```python title="Definition"
+class ViolationEventAdditionalInfoTypeDef(TypedDict):
+    confidenceLevel: NotRequired[ConfidenceLevelType],  # (1)
+```
+
+1. See [:material-code-brackets: ConfidenceLevelType](./literals.md#confidenceleveltype) 
 ## AddThingToBillingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -245,23 +554,23 @@ class AlertTargetTypeDef(TypedDict):
     roleArn: str,
 ```
 
-## AllowedTypeDef
+## PolicyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AllowedTypeDef
+from mypy_boto3_iot.type_defs import PolicyTypeDef
 
-def get_value() -> AllowedTypeDef:
+def get_value() -> PolicyTypeDef:
     return {
-        "policies": ...,
+        "policyName": ...,
     }
 ```
 
 ```python title="Definition"
-class AllowedTypeDef(TypedDict):
-    policies: NotRequired[List[PolicyTypeDef]],  # (1)
+class PolicyTypeDef(TypedDict):
+    policyName: NotRequired[str],
+    policyArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
 ## AssetPropertyTimestampTypeDef
 
 ```python title="Usage Example"
@@ -279,27 +588,6 @@ class AssetPropertyTimestampTypeDef(TypedDict):
     offsetInNanos: NotRequired[str],
 ```
 
-## AssetPropertyValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AssetPropertyValueTypeDef
-
-def get_value() -> AssetPropertyValueTypeDef:
-    return {
-        "value": ...,
-        "timestamp": ...,
-    }
-```
-
-```python title="Definition"
-class AssetPropertyValueTypeDef(TypedDict):
-    value: AssetPropertyVariantTypeDef,  # (1)
-    timestamp: AssetPropertyTimestampTypeDef,  # (2)
-    quality: NotRequired[str],
-```
-
-1. See [:material-code-braces: AssetPropertyVariantTypeDef](./type_defs.md#assetpropertyvarianttypedef) 
-2. See [:material-code-braces: AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef) 
 ## AssetPropertyVariantTypeDef
 
 ```python title="Usage Example"
@@ -339,29 +627,30 @@ class AssociateTargetsWithJobRequestRequestTypeDef(TypedDict):
     namespaceId: NotRequired[str],
 ```
 
-## AssociateTargetsWithJobResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseTypeDef
+from mypy_boto3_iot.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateTargetsWithJobResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "jobArn": ...,
-        "jobId": ...,
-        "description": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateTargetsWithJobResponseTypeDef(TypedDict):
-    jobArn: str,
-    jobId: str,
-    description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -490,35 +779,6 @@ class AuditCheckDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuditCheckRunStatusType](./literals.md#auditcheckrunstatustype) 
-## AuditFindingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AuditFindingTypeDef
-
-def get_value() -> AuditFindingTypeDef:
-    return {
-        "findingId": ...,
-    }
-```
-
-```python title="Definition"
-class AuditFindingTypeDef(TypedDict):
-    findingId: NotRequired[str],
-    taskId: NotRequired[str],
-    checkName: NotRequired[str],
-    taskStartTime: NotRequired[datetime],
-    findingTime: NotRequired[datetime],
-    severity: NotRequired[AuditFindingSeverityType],  # (1)
-    nonCompliantResource: NotRequired[NonCompliantResourceTypeDef],  # (2)
-    relatedResources: NotRequired[List[RelatedResourceTypeDef]],  # (3)
-    reasonForNonCompliance: NotRequired[str],
-    reasonForNonComplianceCode: NotRequired[str],
-    isSuppressed: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: AuditFindingSeverityType](./literals.md#auditfindingseveritytype) 
-2. See [:material-code-braces: NonCompliantResourceTypeDef](./type_defs.md#noncompliantresourcetypedef) 
-3. See [:material-code-braces: RelatedResourceTypeDef](./type_defs.md#relatedresourcetypedef) 
 ## AuditMitigationActionExecutionMetadataTypeDef
 
 ```python title="Usage Example"
@@ -599,28 +859,6 @@ class AuditNotificationTargetTypeDef(TypedDict):
     enabled: NotRequired[bool],
 ```
 
-## AuditSuppressionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AuditSuppressionTypeDef
-
-def get_value() -> AuditSuppressionTypeDef:
-    return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class AuditSuppressionTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-    expirationDate: NotRequired[datetime],
-    suppressIndefinitely: NotRequired[bool],
-    description: NotRequired[str],
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 ## AuditTaskMetadataTypeDef
 
 ```python title="Usage Example"
@@ -659,30 +897,6 @@ class AuthInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
-## AuthResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AuthResultTypeDef
-
-def get_value() -> AuthResultTypeDef:
-    return {
-        "authInfo": ...,
-    }
-```
-
-```python title="Definition"
-class AuthResultTypeDef(TypedDict):
-    authInfo: NotRequired[AuthInfoTypeDef],  # (1)
-    allowed: NotRequired[AllowedTypeDef],  # (2)
-    denied: NotRequired[DeniedTypeDef],  # (3)
-    authDecision: NotRequired[AuthDecisionType],  # (4)
-    missingContextValues: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: AuthInfoTypeDef](./type_defs.md#authinfotypedef) 
-2. See [:material-code-braces: AllowedTypeDef](./type_defs.md#allowedtypedef) 
-3. See [:material-code-braces: DeniedTypeDef](./type_defs.md#deniedtypedef) 
-4. See [:material-code-brackets: AuthDecisionType](./literals.md#authdecisiontype) 
 ## AuthorizerConfigTypeDef
 
 ```python title="Usage Example"
@@ -743,23 +957,6 @@ class AuthorizerSummaryTypeDef(TypedDict):
     authorizerArn: NotRequired[str],
 ```
 
-## AwsJobAbortConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AwsJobAbortConfigTypeDef
-
-def get_value() -> AwsJobAbortConfigTypeDef:
-    return {
-        "abortCriteriaList": ...,
-    }
-```
-
-```python title="Definition"
-class AwsJobAbortConfigTypeDef(TypedDict):
-    abortCriteriaList: Sequence[AwsJobAbortCriteriaTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsJobAbortCriteriaTypeDef](./type_defs.md#awsjobabortcriteriatypedef) 
 ## AwsJobAbortCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -784,61 +981,6 @@ class AwsJobAbortCriteriaTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AwsJobAbortCriteriaFailureTypeType](./literals.md#awsjobabortcriteriafailuretypetype) 
 2. See [:material-code-brackets: AwsJobAbortCriteriaAbortActionType](./literals.md#awsjobabortcriteriaabortactiontype) 
-## AwsJobExecutionsRolloutConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AwsJobExecutionsRolloutConfigTypeDef
-
-def get_value() -> AwsJobExecutionsRolloutConfigTypeDef:
-    return {
-        "maximumPerMinute": ...,
-    }
-```
-
-```python title="Definition"
-class AwsJobExecutionsRolloutConfigTypeDef(TypedDict):
-    maximumPerMinute: NotRequired[int],
-    exponentialRate: NotRequired[AwsJobExponentialRolloutRateTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsJobExponentialRolloutRateTypeDef](./type_defs.md#awsjobexponentialrolloutratetypedef) 
-## AwsJobExponentialRolloutRateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AwsJobExponentialRolloutRateTypeDef
-
-def get_value() -> AwsJobExponentialRolloutRateTypeDef:
-    return {
-        "baseRatePerMinute": ...,
-        "incrementFactor": ...,
-        "rateIncreaseCriteria": ...,
-    }
-```
-
-```python title="Definition"
-class AwsJobExponentialRolloutRateTypeDef(TypedDict):
-    baseRatePerMinute: int,
-    incrementFactor: float,
-    rateIncreaseCriteria: AwsJobRateIncreaseCriteriaTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: AwsJobRateIncreaseCriteriaTypeDef](./type_defs.md#awsjobrateincreasecriteriatypedef) 
-## AwsJobPresignedUrlConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import AwsJobPresignedUrlConfigTypeDef
-
-def get_value() -> AwsJobPresignedUrlConfigTypeDef:
-    return {
-        "expiresInSec": ...,
-    }
-```
-
-```python title="Definition"
-class AwsJobPresignedUrlConfigTypeDef(TypedDict):
-    expiresInSec: NotRequired[int],
-```
-
 ## AwsJobRateIncreaseCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -854,6 +996,22 @@ def get_value() -> AwsJobRateIncreaseCriteriaTypeDef:
 class AwsJobRateIncreaseCriteriaTypeDef(TypedDict):
     numberOfNotifiedThings: NotRequired[int],
     numberOfSucceededThings: NotRequired[int],
+```
+
+## AwsJobPresignedUrlConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AwsJobPresignedUrlConfigTypeDef
+
+def get_value() -> AwsJobPresignedUrlConfigTypeDef:
+    return {
+        "expiresInSec": ...,
+    }
+```
+
+```python title="Definition"
+class AwsJobPresignedUrlConfigTypeDef(TypedDict):
+    expiresInSec: NotRequired[int],
 ```
 
 ## AwsJobTimeoutConfigTypeDef
@@ -872,32 +1030,39 @@ class AwsJobTimeoutConfigTypeDef(TypedDict):
     inProgressTimeoutInMinutes: NotRequired[int],
 ```
 
-## BehaviorCriteriaTypeDef
+## MachineLearningDetectionConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import BehaviorCriteriaTypeDef
+from mypy_boto3_iot.type_defs import MachineLearningDetectionConfigTypeDef
 
-def get_value() -> BehaviorCriteriaTypeDef:
+def get_value() -> MachineLearningDetectionConfigTypeDef:
     return {
-        "comparisonOperator": ...,
+        "confidenceLevel": ...,
     }
 ```
 
 ```python title="Definition"
-class BehaviorCriteriaTypeDef(TypedDict):
-    comparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
-    value: NotRequired[MetricValueTypeDef],  # (2)
-    durationSeconds: NotRequired[int],
-    consecutiveDatapointsToAlarm: NotRequired[int],
-    consecutiveDatapointsToClear: NotRequired[int],
-    statisticalThreshold: NotRequired[StatisticalThresholdTypeDef],  # (3)
-    mlDetectionConfig: NotRequired[MachineLearningDetectionConfigTypeDef],  # (4)
+class MachineLearningDetectionConfigTypeDef(TypedDict):
+    confidenceLevel: ConfidenceLevelType,  # (1)
 ```
 
-1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
-2. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
-3. See [:material-code-braces: StatisticalThresholdTypeDef](./type_defs.md#statisticalthresholdtypedef) 
-4. See [:material-code-braces: MachineLearningDetectionConfigTypeDef](./type_defs.md#machinelearningdetectionconfigtypedef) 
+1. See [:material-code-brackets: ConfidenceLevelType](./literals.md#confidenceleveltype) 
+## StatisticalThresholdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StatisticalThresholdTypeDef
+
+def get_value() -> StatisticalThresholdTypeDef:
+    return {
+        "statistic": ...,
+    }
+```
+
+```python title="Definition"
+class StatisticalThresholdTypeDef(TypedDict):
+    statistic: NotRequired[str],
+```
+
 ## BehaviorModelTrainingSummaryTypeDef
 
 ```python title="Usage Example"
@@ -920,28 +1085,24 @@ class BehaviorModelTrainingSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
-## BehaviorTypeDef
+## MetricDimensionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import BehaviorTypeDef
+from mypy_boto3_iot.type_defs import MetricDimensionTypeDef
 
-def get_value() -> BehaviorTypeDef:
+def get_value() -> MetricDimensionTypeDef:
     return {
-        "name": ...,
+        "dimensionName": ...,
     }
 ```
 
 ```python title="Definition"
-class BehaviorTypeDef(TypedDict):
-    name: str,
-    metric: NotRequired[str],
-    metricDimension: NotRequired[MetricDimensionTypeDef],  # (1)
-    criteria: NotRequired[BehaviorCriteriaTypeDef],  # (2)
-    suppressAlerts: NotRequired[bool],
+class MetricDimensionTypeDef(TypedDict):
+    dimensionName: str,
+    operator: NotRequired[DimensionValueOperatorType],  # (1)
 ```
 
-1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
-2. See [:material-code-braces: BehaviorCriteriaTypeDef](./type_defs.md#behaviorcriteriatypedef) 
+1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
 ## BillingGroupMetadataTypeDef
 
 ```python title="Usage Example"
@@ -991,52 +1152,39 @@ class BucketTypeDef(TypedDict):
     count: NotRequired[int],
 ```
 
-## BucketsAggregationTypeTypeDef
+## TermsAggregationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import BucketsAggregationTypeTypeDef
+from mypy_boto3_iot.type_defs import TermsAggregationTypeDef
 
-def get_value() -> BucketsAggregationTypeTypeDef:
+def get_value() -> TermsAggregationTypeDef:
     return {
-        "termsAggregation": ...,
+        "maxBuckets": ...,
     }
 ```
 
 ```python title="Definition"
-class BucketsAggregationTypeTypeDef(TypedDict):
-    termsAggregation: NotRequired[TermsAggregationTypeDef],  # (1)
+class TermsAggregationTypeDef(TypedDict):
+    maxBuckets: NotRequired[int],
 ```
 
-1. See [:material-code-braces: TermsAggregationTypeDef](./type_defs.md#termsaggregationtypedef) 
-## CACertificateDescriptionTypeDef
+## CertificateValidityTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CACertificateDescriptionTypeDef
+from mypy_boto3_iot.type_defs import CertificateValidityTypeDef
 
-def get_value() -> CACertificateDescriptionTypeDef:
+def get_value() -> CertificateValidityTypeDef:
     return {
-        "certificateArn": ...,
+        "notBefore": ...,
     }
 ```
 
 ```python title="Definition"
-class CACertificateDescriptionTypeDef(TypedDict):
-    certificateArn: NotRequired[str],
-    certificateId: NotRequired[str],
-    status: NotRequired[CACertificateStatusType],  # (1)
-    certificatePem: NotRequired[str],
-    ownedBy: NotRequired[str],
-    creationDate: NotRequired[datetime],
-    autoRegistrationStatus: NotRequired[AutoRegistrationStatusType],  # (2)
-    lastModifiedDate: NotRequired[datetime],
-    customerVersion: NotRequired[int],
-    generationId: NotRequired[str],
-    validity: NotRequired[CertificateValidityTypeDef],  # (3)
+class CertificateValidityTypeDef(TypedDict):
+    notBefore: NotRequired[datetime],
+    notAfter: NotRequired[datetime],
 ```
 
-1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
-2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
-3. See [:material-code-braces: CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef) 
 ## CACertificateTypeDef
 
 ```python title="Usage Example"
@@ -1161,62 +1309,26 @@ class CancelJobRequestRequestTypeDef(TypedDict):
     force: NotRequired[bool],
 ```
 
-## CancelJobResponseTypeDef
+## TransferDataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CancelJobResponseTypeDef
+from mypy_boto3_iot.type_defs import TransferDataTypeDef
 
-def get_value() -> CancelJobResponseTypeDef:
+def get_value() -> TransferDataTypeDef:
     return {
-        "jobArn": ...,
-        "jobId": ...,
-        "description": ...,
-        "ResponseMetadata": ...,
+        "transferMessage": ...,
     }
 ```
 
 ```python title="Definition"
-class CancelJobResponseTypeDef(TypedDict):
-    jobArn: str,
-    jobId: str,
-    description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class TransferDataTypeDef(TypedDict):
+    transferMessage: NotRequired[str],
+    rejectReason: NotRequired[str],
+    transferDate: NotRequired[datetime],
+    acceptDate: NotRequired[datetime],
+    rejectDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CertificateDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CertificateDescriptionTypeDef
-
-def get_value() -> CertificateDescriptionTypeDef:
-    return {
-        "certificateArn": ...,
-    }
-```
-
-```python title="Definition"
-class CertificateDescriptionTypeDef(TypedDict):
-    certificateArn: NotRequired[str],
-    certificateId: NotRequired[str],
-    caCertificateId: NotRequired[str],
-    status: NotRequired[CertificateStatusType],  # (1)
-    certificatePem: NotRequired[str],
-    ownedBy: NotRequired[str],
-    previousOwnedBy: NotRequired[str],
-    creationDate: NotRequired[datetime],
-    lastModifiedDate: NotRequired[datetime],
-    customerVersion: NotRequired[int],
-    transferData: NotRequired[TransferDataTypeDef],  # (2)
-    generationId: NotRequired[str],
-    validity: NotRequired[CertificateValidityTypeDef],  # (3)
-    certificateMode: NotRequired[CertificateModeType],  # (4)
-```
-
-1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
-2. See [:material-code-braces: TransferDataTypeDef](./type_defs.md#transferdatatypedef) 
-3. See [:material-code-braces: CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef) 
-4. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
 ## CertificateTypeDef
 
 ```python title="Usage Example"
@@ -1239,88 +1351,6 @@ class CertificateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
 2. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
-## CertificateValidityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CertificateValidityTypeDef
-
-def get_value() -> CertificateValidityTypeDef:
-    return {
-        "notBefore": ...,
-    }
-```
-
-```python title="Definition"
-class CertificateValidityTypeDef(TypedDict):
-    notBefore: NotRequired[datetime],
-    notAfter: NotRequired[datetime],
-```
-
-## CloudwatchAlarmActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CloudwatchAlarmActionTypeDef
-
-def get_value() -> CloudwatchAlarmActionTypeDef:
-    return {
-        "roleArn": ...,
-        "alarmName": ...,
-        "stateReason": ...,
-        "stateValue": ...,
-    }
-```
-
-```python title="Definition"
-class CloudwatchAlarmActionTypeDef(TypedDict):
-    roleArn: str,
-    alarmName: str,
-    stateReason: str,
-    stateValue: str,
-```
-
-## CloudwatchLogsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CloudwatchLogsActionTypeDef
-
-def get_value() -> CloudwatchLogsActionTypeDef:
-    return {
-        "roleArn": ...,
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class CloudwatchLogsActionTypeDef(TypedDict):
-    roleArn: str,
-    logGroupName: str,
-```
-
-## CloudwatchMetricActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CloudwatchMetricActionTypeDef
-
-def get_value() -> CloudwatchMetricActionTypeDef:
-    return {
-        "roleArn": ...,
-        "metricNamespace": ...,
-        "metricName": ...,
-        "metricValue": ...,
-        "metricUnit": ...,
-    }
-```
-
-```python title="Definition"
-class CloudwatchMetricActionTypeDef(TypedDict):
-    roleArn: str,
-    metricNamespace: str,
-    metricName: str,
-    metricValue: str,
-    metricUnit: str,
-    metricTimestamp: NotRequired[str],
-```
-
 ## CodeSigningCertificateChainTypeDef
 
 ```python title="Usage Example"
@@ -1354,26 +1384,6 @@ class CodeSigningSignatureTypeDef(TypedDict):
     inlineDocument: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
-## CodeSigningTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CodeSigningTypeDef
-
-def get_value() -> CodeSigningTypeDef:
-    return {
-        "awsSignerJobId": ...,
-    }
-```
-
-```python title="Definition"
-class CodeSigningTypeDef(TypedDict):
-    awsSignerJobId: NotRequired[str],
-    startSigningJobParameter: NotRequired[StartSigningJobParameterTypeDef],  # (1)
-    customCodeSigning: NotRequired[CustomCodeSigningTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: StartSigningJobParameterTypeDef](./type_defs.md#startsigningjobparametertypedef) 
-2. See [:material-code-braces: CustomCodeSigningTypeDef](./type_defs.md#customcodesigningtypedef) 
 ## ConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1406,120 +1416,23 @@ class ConfirmTopicRuleDestinationRequestRequestTypeDef(TypedDict):
     confirmationToken: str,
 ```
 
-## CreateAuditSuppressionRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateAuditSuppressionRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import TagTypeDef
 
-def get_value() -> CreateAuditSuppressionRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-        "clientRequestToken": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAuditSuppressionRequestRequestTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-    clientRequestToken: str,
-    expirationDate: NotRequired[Union[datetime, str]],
-    suppressIndefinitely: NotRequired[bool],
-    description: NotRequired[str],
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## CreateAuthorizerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateAuthorizerRequestRequestTypeDef
-
-def get_value() -> CreateAuthorizerRequestRequestTypeDef:
-    return {
-        "authorizerName": ...,
-        "authorizerFunctionArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAuthorizerRequestRequestTypeDef(TypedDict):
-    authorizerName: str,
-    authorizerFunctionArn: str,
-    tokenKeyName: NotRequired[str],
-    tokenSigningPublicKeys: NotRequired[Mapping[str, str]],
-    status: NotRequired[AuthorizerStatusType],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    signingDisabled: NotRequired[bool],
-    enableCachingForHttp: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateAuthorizerResponseTypeDef
-
-def get_value() -> CreateAuthorizerResponseTypeDef:
-    return {
-        "authorizerName": ...,
-        "authorizerArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAuthorizerResponseTypeDef(TypedDict):
-    authorizerName: str,
-    authorizerArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateBillingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateBillingGroupRequestRequestTypeDef
-
-def get_value() -> CreateBillingGroupRequestRequestTypeDef:
-    return {
-        "billingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBillingGroupRequestRequestTypeDef(TypedDict):
-    billingGroupName: str,
-    billingGroupProperties: NotRequired[BillingGroupPropertiesTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateBillingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateBillingGroupResponseTypeDef
-
-def get_value() -> CreateBillingGroupResponseTypeDef:
-    return {
-        "billingGroupName": ...,
-        "billingGroupArn": ...,
-        "billingGroupId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBillingGroupResponseTypeDef(TypedDict):
-    billingGroupName: str,
-    billingGroupArn: str,
-    billingGroupId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCertificateFromCsrRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1537,387 +1450,39 @@ class CreateCertificateFromCsrRequestRequestTypeDef(TypedDict):
     setAsActive: NotRequired[bool],
 ```
 
-## CreateCertificateFromCsrResponseTypeDef
+## PresignedUrlConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateCertificateFromCsrResponseTypeDef
+from mypy_boto3_iot.type_defs import PresignedUrlConfigTypeDef
 
-def get_value() -> CreateCertificateFromCsrResponseTypeDef:
+def get_value() -> PresignedUrlConfigTypeDef:
     return {
-        "certificateArn": ...,
-        "certificateId": ...,
-        "certificatePem": ...,
-        "ResponseMetadata": ...,
+        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateCertificateFromCsrResponseTypeDef(TypedDict):
-    certificateArn: str,
-    certificateId: str,
-    certificatePem: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class PresignedUrlConfigTypeDef(TypedDict):
+    roleArn: NotRequired[str],
+    expiresInSec: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateCustomMetricRequestRequestTypeDef
+## TimeoutConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateCustomMetricRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import TimeoutConfigTypeDef
 
-def get_value() -> CreateCustomMetricRequestRequestTypeDef:
+def get_value() -> TimeoutConfigTypeDef:
     return {
-        "metricName": ...,
-        "metricType": ...,
-        "clientRequestToken": ...,
+        "inProgressTimeoutInMinutes": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateCustomMetricRequestRequestTypeDef(TypedDict):
-    metricName: str,
-    metricType: CustomMetricTypeType,  # (1)
-    clientRequestToken: str,
-    displayName: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+class TimeoutConfigTypeDef(TypedDict):
+    inProgressTimeoutInMinutes: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateCustomMetricResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateCustomMetricResponseTypeDef
-
-def get_value() -> CreateCustomMetricResponseTypeDef:
-    return {
-        "metricName": ...,
-        "metricArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateCustomMetricResponseTypeDef(TypedDict):
-    metricName: str,
-    metricArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDimensionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDimensionRequestRequestTypeDef
-
-def get_value() -> CreateDimensionRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "type": ...,
-        "stringValues": ...,
-        "clientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDimensionRequestRequestTypeDef(TypedDict):
-    name: str,
-    type: DimensionTypeType,  # (1)
-    stringValues: Sequence[str],
-    clientRequestToken: str,
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDimensionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDimensionResponseTypeDef
-
-def get_value() -> CreateDimensionResponseTypeDef:
-    return {
-        "name": ...,
-        "arn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDimensionResponseTypeDef(TypedDict):
-    name: str,
-    arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDomainConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDomainConfigurationRequestRequestTypeDef
-
-def get_value() -> CreateDomainConfigurationRequestRequestTypeDef:
-    return {
-        "domainConfigurationName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDomainConfigurationRequestRequestTypeDef(TypedDict):
-    domainConfigurationName: str,
-    domainName: NotRequired[str],
-    serverCertificateArns: NotRequired[Sequence[str]],
-    validationCertificateArn: NotRequired[str],
-    authorizerConfig: NotRequired[AuthorizerConfigTypeDef],  # (1)
-    serviceType: NotRequired[ServiceTypeType],  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
-2. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDomainConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDomainConfigurationResponseTypeDef
-
-def get_value() -> CreateDomainConfigurationResponseTypeDef:
-    return {
-        "domainConfigurationName": ...,
-        "domainConfigurationArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDomainConfigurationResponseTypeDef(TypedDict):
-    domainConfigurationName: str,
-    domainConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDynamicThingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDynamicThingGroupRequestRequestTypeDef
-
-def get_value() -> CreateDynamicThingGroupRequestRequestTypeDef:
-    return {
-        "thingGroupName": ...,
-        "queryString": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDynamicThingGroupRequestRequestTypeDef(TypedDict):
-    thingGroupName: str,
-    queryString: str,
-    thingGroupProperties: NotRequired[ThingGroupPropertiesTypeDef],  # (1)
-    indexName: NotRequired[str],
-    queryVersion: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDynamicThingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateDynamicThingGroupResponseTypeDef
-
-def get_value() -> CreateDynamicThingGroupResponseTypeDef:
-    return {
-        "thingGroupName": ...,
-        "thingGroupArn": ...,
-        "thingGroupId": ...,
-        "indexName": ...,
-        "queryString": ...,
-        "queryVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDynamicThingGroupResponseTypeDef(TypedDict):
-    thingGroupName: str,
-    thingGroupArn: str,
-    thingGroupId: str,
-    indexName: str,
-    queryString: str,
-    queryVersion: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFleetMetricRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateFleetMetricRequestRequestTypeDef
-
-def get_value() -> CreateFleetMetricRequestRequestTypeDef:
-    return {
-        "metricName": ...,
-        "queryString": ...,
-        "aggregationType": ...,
-        "period": ...,
-        "aggregationField": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFleetMetricRequestRequestTypeDef(TypedDict):
-    metricName: str,
-    queryString: str,
-    aggregationType: AggregationTypeTypeDef,  # (1)
-    period: int,
-    aggregationField: str,
-    description: NotRequired[str],
-    queryVersion: NotRequired[str],
-    indexName: NotRequired[str],
-    unit: NotRequired[FleetMetricUnitType],  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
-2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateFleetMetricResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateFleetMetricResponseTypeDef
-
-def get_value() -> CreateFleetMetricResponseTypeDef:
-    return {
-        "metricName": ...,
-        "metricArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFleetMetricResponseTypeDef(TypedDict):
-    metricName: str,
-    metricArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateJobRequestRequestTypeDef
-
-def get_value() -> CreateJobRequestRequestTypeDef:
-    return {
-        "jobId": ...,
-        "targets": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobRequestRequestTypeDef(TypedDict):
-    jobId: str,
-    targets: Sequence[str],
-    documentSource: NotRequired[str],
-    document: NotRequired[str],
-    description: NotRequired[str],
-    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
-    targetSelection: NotRequired[TargetSelectionType],  # (2)
-    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (3)
-    abortConfig: NotRequired[AbortConfigTypeDef],  # (4)
-    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (5)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
-    namespaceId: NotRequired[str],
-    jobTemplateArn: NotRequired[str],
-    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (7)
-    documentParameters: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
-2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-3. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
-4. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
-5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-## CreateJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateJobResponseTypeDef
-
-def get_value() -> CreateJobResponseTypeDef:
-    return {
-        "jobArn": ...,
-        "jobId": ...,
-        "description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobResponseTypeDef(TypedDict):
-    jobArn: str,
-    jobId: str,
-    description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateJobTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateJobTemplateRequestRequestTypeDef
-
-def get_value() -> CreateJobTemplateRequestRequestTypeDef:
-    return {
-        "jobTemplateId": ...,
-        "description": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobTemplateRequestRequestTypeDef(TypedDict):
-    jobTemplateId: str,
-    description: str,
-    jobArn: NotRequired[str],
-    documentSource: NotRequired[str],
-    document: NotRequired[str],
-    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
-    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (2)
-    abortConfig: NotRequired[AbortConfigTypeDef],  # (3)
-    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (4)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (5)
-    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (6)
-```
-
-1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
-2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
-3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
-4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-## CreateJobTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateJobTemplateResponseTypeDef
-
-def get_value() -> CreateJobTemplateResponseTypeDef:
-    return {
-        "jobTemplateArn": ...,
-        "jobTemplateId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobTemplateResponseTypeDef(TypedDict):
-    jobTemplateArn: str,
-    jobTemplateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateKeysAndCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1934,188 +1499,23 @@ class CreateKeysAndCertificateRequestRequestTypeDef(TypedDict):
     setAsActive: NotRequired[bool],
 ```
 
-## CreateKeysAndCertificateResponseTypeDef
+## KeyPairTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateKeysAndCertificateResponseTypeDef
+from mypy_boto3_iot.type_defs import KeyPairTypeDef
 
-def get_value() -> CreateKeysAndCertificateResponseTypeDef:
+def get_value() -> KeyPairTypeDef:
     return {
-        "certificateArn": ...,
-        "certificateId": ...,
-        "certificatePem": ...,
-        "keyPair": ...,
-        "ResponseMetadata": ...,
+        "PublicKey": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateKeysAndCertificateResponseTypeDef(TypedDict):
-    certificateArn: str,
-    certificateId: str,
-    certificatePem: str,
-    keyPair: KeyPairTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class KeyPairTypeDef(TypedDict):
+    PublicKey: NotRequired[str],
+    PrivateKey: NotRequired[str],
 ```
 
-1. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMitigationActionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateMitigationActionRequestRequestTypeDef
-
-def get_value() -> CreateMitigationActionRequestRequestTypeDef:
-    return {
-        "actionName": ...,
-        "roleArn": ...,
-        "actionParams": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMitigationActionRequestRequestTypeDef(TypedDict):
-    actionName: str,
-    roleArn: str,
-    actionParams: MitigationActionParamsTypeDef,  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateMitigationActionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateMitigationActionResponseTypeDef
-
-def get_value() -> CreateMitigationActionResponseTypeDef:
-    return {
-        "actionArn": ...,
-        "actionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMitigationActionResponseTypeDef(TypedDict):
-    actionArn: str,
-    actionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateOTAUpdateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateOTAUpdateRequestRequestTypeDef
-
-def get_value() -> CreateOTAUpdateRequestRequestTypeDef:
-    return {
-        "otaUpdateId": ...,
-        "targets": ...,
-        "files": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateOTAUpdateRequestRequestTypeDef(TypedDict):
-    otaUpdateId: str,
-    targets: Sequence[str],
-    files: Sequence[OTAUpdateFileTypeDef],  # (1)
-    roleArn: str,
-    description: NotRequired[str],
-    protocols: NotRequired[Sequence[ProtocolType]],  # (2)
-    targetSelection: NotRequired[TargetSelectionType],  # (3)
-    awsJobExecutionsRolloutConfig: NotRequired[AwsJobExecutionsRolloutConfigTypeDef],  # (4)
-    awsJobPresignedUrlConfig: NotRequired[AwsJobPresignedUrlConfigTypeDef],  # (5)
-    awsJobAbortConfig: NotRequired[AwsJobAbortConfigTypeDef],  # (6)
-    awsJobTimeoutConfig: NotRequired[AwsJobTimeoutConfigTypeDef],  # (7)
-    additionalParameters: NotRequired[Mapping[str, str]],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (8)
-```
-
-1. See [:material-code-braces: OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef) 
-2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
-3. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-4. See [:material-code-braces: AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef) 
-5. See [:material-code-braces: AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef) 
-6. See [:material-code-braces: AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef) 
-7. See [:material-code-braces: AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateOTAUpdateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateOTAUpdateResponseTypeDef
-
-def get_value() -> CreateOTAUpdateResponseTypeDef:
-    return {
-        "otaUpdateId": ...,
-        "awsIotJobId": ...,
-        "otaUpdateArn": ...,
-        "awsIotJobArn": ...,
-        "otaUpdateStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateOTAUpdateResponseTypeDef(TypedDict):
-    otaUpdateId: str,
-    awsIotJobId: str,
-    otaUpdateArn: str,
-    awsIotJobArn: str,
-    otaUpdateStatus: OTAUpdateStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreatePolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreatePolicyRequestRequestTypeDef
-
-def get_value() -> CreatePolicyRequestRequestTypeDef:
-    return {
-        "policyName": ...,
-        "policyDocument": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePolicyRequestRequestTypeDef(TypedDict):
-    policyName: str,
-    policyDocument: str,
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreatePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreatePolicyResponseTypeDef
-
-def get_value() -> CreatePolicyResponseTypeDef:
-    return {
-        "policyName": ...,
-        "policyArn": ...,
-        "policyDocument": ...,
-        "policyVersionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePolicyResponseTypeDef(TypedDict):
-    policyName: str,
-    policyArn: str,
-    policyDocument: str,
-    policyVersionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePolicyVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2135,31 +1535,6 @@ class CreatePolicyVersionRequestRequestTypeDef(TypedDict):
     setAsDefault: NotRequired[bool],
 ```
 
-## CreatePolicyVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreatePolicyVersionResponseTypeDef
-
-def get_value() -> CreatePolicyVersionResponseTypeDef:
-    return {
-        "policyArn": ...,
-        "policyDocument": ...,
-        "policyVersionId": ...,
-        "isDefaultVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePolicyVersionResponseTypeDef(TypedDict):
-    policyArn: str,
-    policyDocument: str,
-    policyVersionId: str,
-    isDefaultVersion: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProvisioningClaimRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2176,81 +1551,23 @@ class CreateProvisioningClaimRequestRequestTypeDef(TypedDict):
     templateName: str,
 ```
 
-## CreateProvisioningClaimResponseTypeDef
+## ProvisioningHookTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateProvisioningClaimResponseTypeDef
+from mypy_boto3_iot.type_defs import ProvisioningHookTypeDef
 
-def get_value() -> CreateProvisioningClaimResponseTypeDef:
+def get_value() -> ProvisioningHookTypeDef:
     return {
-        "certificateId": ...,
-        "certificatePem": ...,
-        "keyPair": ...,
-        "expiration": ...,
-        "ResponseMetadata": ...,
+        "targetArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProvisioningClaimResponseTypeDef(TypedDict):
-    certificateId: str,
-    certificatePem: str,
-    keyPair: KeyPairTypeDef,  # (1)
-    expiration: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ProvisioningHookTypeDef(TypedDict):
+    targetArn: str,
+    payloadVersion: NotRequired[str],
 ```
 
-1. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProvisioningTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateRequestRequestTypeDef
-
-def get_value() -> CreateProvisioningTemplateRequestRequestTypeDef:
-    return {
-        "templateName": ...,
-        "templateBody": ...,
-        "provisioningRoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProvisioningTemplateRequestRequestTypeDef(TypedDict):
-    templateName: str,
-    templateBody: str,
-    provisioningRoleArn: str,
-    description: NotRequired[str],
-    enabled: NotRequired[bool],
-    preProvisioningHook: NotRequired[ProvisioningHookTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateProvisioningTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateResponseTypeDef
-
-def get_value() -> CreateProvisioningTemplateResponseTypeDef:
-    return {
-        "templateArn": ...,
-        "templateName": ...,
-        "defaultVersionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProvisioningTemplateResponseTypeDef(TypedDict):
-    templateArn: str,
-    templateName: str,
-    defaultVersionId: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProvisioningTemplateVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2270,422 +1587,23 @@ class CreateProvisioningTemplateVersionRequestRequestTypeDef(TypedDict):
     setAsDefault: NotRequired[bool],
 ```
 
-## CreateProvisioningTemplateVersionResponseTypeDef
+## ThingTypePropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionResponseTypeDef
+from mypy_boto3_iot.type_defs import ThingTypePropertiesTypeDef
 
-def get_value() -> CreateProvisioningTemplateVersionResponseTypeDef:
+def get_value() -> ThingTypePropertiesTypeDef:
     return {
-        "templateArn": ...,
-        "templateName": ...,
-        "versionId": ...,
-        "isDefaultVersion": ...,
-        "ResponseMetadata": ...,
+        "thingTypeDescription": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProvisioningTemplateVersionResponseTypeDef(TypedDict):
-    templateArn: str,
-    templateName: str,
-    versionId: int,
-    isDefaultVersion: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ThingTypePropertiesTypeDef(TypedDict):
+    thingTypeDescription: NotRequired[str],
+    searchableAttributes: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateRoleAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateRoleAliasRequestRequestTypeDef
-
-def get_value() -> CreateRoleAliasRequestRequestTypeDef:
-    return {
-        "roleAlias": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRoleAliasRequestRequestTypeDef(TypedDict):
-    roleAlias: str,
-    roleArn: str,
-    credentialDurationSeconds: NotRequired[int],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateRoleAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateRoleAliasResponseTypeDef
-
-def get_value() -> CreateRoleAliasResponseTypeDef:
-    return {
-        "roleAlias": ...,
-        "roleAliasArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRoleAliasResponseTypeDef(TypedDict):
-    roleAlias: str,
-    roleAliasArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateScheduledAuditRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateScheduledAuditRequestRequestTypeDef
-
-def get_value() -> CreateScheduledAuditRequestRequestTypeDef:
-    return {
-        "frequency": ...,
-        "targetCheckNames": ...,
-        "scheduledAuditName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateScheduledAuditRequestRequestTypeDef(TypedDict):
-    frequency: AuditFrequencyType,  # (1)
-    targetCheckNames: Sequence[str],
-    scheduledAuditName: str,
-    dayOfMonth: NotRequired[str],
-    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
-2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateScheduledAuditResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateScheduledAuditResponseTypeDef
-
-def get_value() -> CreateScheduledAuditResponseTypeDef:
-    return {
-        "scheduledAuditArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateScheduledAuditResponseTypeDef(TypedDict):
-    scheduledAuditArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSecurityProfileRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateSecurityProfileRequestRequestTypeDef
-
-def get_value() -> CreateSecurityProfileRequestRequestTypeDef:
-    return {
-        "securityProfileName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSecurityProfileRequestRequestTypeDef(TypedDict):
-    securityProfileName: str,
-    securityProfileDescription: NotRequired[str],
-    behaviors: NotRequired[Sequence[BehaviorTypeDef]],  # (1)
-    alertTargets: NotRequired[Mapping[AlertTargetTypeType, AlertTargetTypeDef]],  # (2)
-    additionalMetricsToRetain: NotRequired[Sequence[str]],
-    additionalMetricsToRetainV2: NotRequired[Sequence[MetricToRetainTypeDef]],  # (3)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
-2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
-3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateSecurityProfileResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateSecurityProfileResponseTypeDef
-
-def get_value() -> CreateSecurityProfileResponseTypeDef:
-    return {
-        "securityProfileName": ...,
-        "securityProfileArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSecurityProfileResponseTypeDef(TypedDict):
-    securityProfileName: str,
-    securityProfileArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateStreamRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateStreamRequestRequestTypeDef
-
-def get_value() -> CreateStreamRequestRequestTypeDef:
-    return {
-        "streamId": ...,
-        "files": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamRequestRequestTypeDef(TypedDict):
-    streamId: str,
-    files: Sequence[StreamFileTypeDef],  # (1)
-    roleArn: str,
-    description: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateStreamResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateStreamResponseTypeDef
-
-def get_value() -> CreateStreamResponseTypeDef:
-    return {
-        "streamId": ...,
-        "streamArn": ...,
-        "description": ...,
-        "streamVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamResponseTypeDef(TypedDict):
-    streamId: str,
-    streamArn: str,
-    description: str,
-    streamVersion: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateThingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingGroupRequestRequestTypeDef
-
-def get_value() -> CreateThingGroupRequestRequestTypeDef:
-    return {
-        "thingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingGroupRequestRequestTypeDef(TypedDict):
-    thingGroupName: str,
-    parentGroupName: NotRequired[str],
-    thingGroupProperties: NotRequired[ThingGroupPropertiesTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateThingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingGroupResponseTypeDef
-
-def get_value() -> CreateThingGroupResponseTypeDef:
-    return {
-        "thingGroupName": ...,
-        "thingGroupArn": ...,
-        "thingGroupId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingGroupResponseTypeDef(TypedDict):
-    thingGroupName: str,
-    thingGroupArn: str,
-    thingGroupId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateThingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingRequestRequestTypeDef
-
-def get_value() -> CreateThingRequestRequestTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingRequestRequestTypeDef(TypedDict):
-    thingName: str,
-    thingTypeName: NotRequired[str],
-    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
-    billingGroupName: NotRequired[str],
-```
-
-1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
-## CreateThingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingResponseTypeDef
-
-def get_value() -> CreateThingResponseTypeDef:
-    return {
-        "thingName": ...,
-        "thingArn": ...,
-        "thingId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingResponseTypeDef(TypedDict):
-    thingName: str,
-    thingArn: str,
-    thingId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateThingTypeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingTypeRequestRequestTypeDef
-
-def get_value() -> CreateThingTypeRequestRequestTypeDef:
-    return {
-        "thingTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingTypeRequestRequestTypeDef(TypedDict):
-    thingTypeName: str,
-    thingTypeProperties: NotRequired[ThingTypePropertiesTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateThingTypeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateThingTypeResponseTypeDef
-
-def get_value() -> CreateThingTypeResponseTypeDef:
-    return {
-        "thingTypeName": ...,
-        "thingTypeArn": ...,
-        "thingTypeId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThingTypeResponseTypeDef(TypedDict):
-    thingTypeName: str,
-    thingTypeArn: str,
-    thingTypeId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateTopicRuleDestinationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationRequestRequestTypeDef
-
-def get_value() -> CreateTopicRuleDestinationRequestRequestTypeDef:
-    return {
-        "destinationConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTopicRuleDestinationRequestRequestTypeDef(TypedDict):
-    destinationConfiguration: TopicRuleDestinationConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: TopicRuleDestinationConfigurationTypeDef](./type_defs.md#topicruledestinationconfigurationtypedef) 
-## CreateTopicRuleDestinationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationResponseTypeDef
-
-def get_value() -> CreateTopicRuleDestinationResponseTypeDef:
-    return {
-        "topicRuleDestination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTopicRuleDestinationResponseTypeDef(TypedDict):
-    topicRuleDestination: TopicRuleDestinationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateTopicRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CreateTopicRuleRequestRequestTypeDef
-
-def get_value() -> CreateTopicRuleRequestRequestTypeDef:
-    return {
-        "ruleName": ...,
-        "topicRulePayload": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTopicRuleRequestRequestTypeDef(TypedDict):
-    ruleName: str,
-    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
-    tags: NotRequired[str],
-```
-
-1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
-## CustomCodeSigningTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import CustomCodeSigningTypeDef
-
-def get_value() -> CustomCodeSigningTypeDef:
-    return {
-        "signature": ...,
-    }
-```
-
-```python title="Definition"
-class CustomCodeSigningTypeDef(TypedDict):
-    signature: NotRequired[CodeSigningSignatureTypeDef],  # (1)
-    certificateChain: NotRequired[CodeSigningCertificateChainTypeDef],  # (2)
-    hashAlgorithm: NotRequired[str],
-    signatureAlgorithm: NotRequired[str],
-```
-
-1. See [:material-code-braces: CodeSigningSignatureTypeDef](./type_defs.md#codesigningsignaturetypedef) 
-2. See [:material-code-braces: CodeSigningCertificateChainTypeDef](./type_defs.md#codesigningcertificatechaintypedef) 
 ## DeleteAccountAuditConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2702,25 +1620,6 @@ class DeleteAccountAuditConfigurationRequestRequestTypeDef(TypedDict):
     deleteScheduledAudits: NotRequired[bool],
 ```
 
-## DeleteAuditSuppressionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DeleteAuditSuppressionRequestRequestTypeDef
-
-def get_value() -> DeleteAuditSuppressionRequestRequestTypeDef:
-    return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAuditSuppressionRequestRequestTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 ## DeleteAuthorizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3193,25 +2092,6 @@ class DeleteV2LoggingLevelRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
-## DeniedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DeniedTypeDef
-
-def get_value() -> DeniedTypeDef:
-    return {
-        "implicitDeny": ...,
-    }
-```
-
-```python title="Definition"
-class DeniedTypeDef(TypedDict):
-    implicitDeny: NotRequired[ImplicitDenyTypeDef],  # (1)
-    explicitDeny: NotRequired[ExplicitDenyTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ImplicitDenyTypeDef](./type_defs.md#implicitdenytypedef) 
-2. See [:material-code-braces: ExplicitDenyTypeDef](./type_defs.md#explicitdenytypedef) 
 ## DeprecateThingTypeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3229,31 +2109,6 @@ class DeprecateThingTypeRequestRequestTypeDef(TypedDict):
     undoDeprecate: NotRequired[bool],
 ```
 
-## DescribeAccountAuditConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAccountAuditConfigurationResponseTypeDef
-
-def get_value() -> DescribeAccountAuditConfigurationResponseTypeDef:
-    return {
-        "roleArn": ...,
-        "auditNotificationTargetConfigurations": ...,
-        "auditCheckConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountAuditConfigurationResponseTypeDef(TypedDict):
-    roleArn: str,
-    auditNotificationTargetConfigurations: Dict[AuditNotificationTypeType, AuditNotificationTargetTypeDef],  # (1)
-    auditCheckConfigurations: Dict[str, AuditCheckConfigurationTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: AuditNotificationTypeType](./literals.md#auditnotificationtypetype) [:material-code-braces: AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef) 
-2. See [:material-code-braces: AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAuditFindingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3270,26 +2125,6 @@ class DescribeAuditFindingRequestRequestTypeDef(TypedDict):
     findingId: str,
 ```
 
-## DescribeAuditFindingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuditFindingResponseTypeDef
-
-def get_value() -> DescribeAuditFindingResponseTypeDef:
-    return {
-        "finding": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAuditFindingResponseTypeDef(TypedDict):
-    finding: AuditFindingTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditFindingTypeDef](./type_defs.md#auditfindingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAuditMitigationActionsTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3306,88 +2141,26 @@ class DescribeAuditMitigationActionsTaskRequestRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeAuditMitigationActionsTaskResponseTypeDef
+## TaskStatisticsForAuditCheckTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseTypeDef
+from mypy_boto3_iot.type_defs import TaskStatisticsForAuditCheckTypeDef
 
-def get_value() -> DescribeAuditMitigationActionsTaskResponseTypeDef:
+def get_value() -> TaskStatisticsForAuditCheckTypeDef:
     return {
-        "taskStatus": ...,
-        "startTime": ...,
-        "endTime": ...,
-        "taskStatistics": ...,
-        "target": ...,
-        "auditCheckToActionsMapping": ...,
-        "actionsDefinition": ...,
-        "ResponseMetadata": ...,
+        "totalFindingsCount": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAuditMitigationActionsTaskResponseTypeDef(TypedDict):
-    taskStatus: AuditMitigationActionsTaskStatusType,  # (1)
-    startTime: datetime,
-    endTime: datetime,
-    taskStatistics: Dict[str, TaskStatisticsForAuditCheckTypeDef],  # (2)
-    target: AuditMitigationActionsTaskTargetTypeDef,  # (3)
-    auditCheckToActionsMapping: Dict[str, List[str]],
-    actionsDefinition: List[MitigationActionTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class TaskStatisticsForAuditCheckTypeDef(TypedDict):
+    totalFindingsCount: NotRequired[int],
+    failedFindingsCount: NotRequired[int],
+    succeededFindingsCount: NotRequired[int],
+    skippedFindingsCount: NotRequired[int],
+    canceledFindingsCount: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
-2. See [:material-code-braces: TaskStatisticsForAuditCheckTypeDef](./type_defs.md#taskstatisticsforauditchecktypedef) 
-3. See [:material-code-braces: AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef) 
-4. See [:material-code-braces: MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAuditSuppressionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuditSuppressionRequestRequestTypeDef
-
-def get_value() -> DescribeAuditSuppressionRequestRequestTypeDef:
-    return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAuditSuppressionRequestRequestTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## DescribeAuditSuppressionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuditSuppressionResponseTypeDef
-
-def get_value() -> DescribeAuditSuppressionResponseTypeDef:
-    return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-        "expirationDate": ...,
-        "suppressIndefinitely": ...,
-        "description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAuditSuppressionResponseTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-    expirationDate: datetime,
-    suppressIndefinitely: bool,
-    description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAuditTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3404,39 +2177,28 @@ class DescribeAuditTaskRequestRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeAuditTaskResponseTypeDef
+## TaskStatisticsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseTypeDef
+from mypy_boto3_iot.type_defs import TaskStatisticsTypeDef
 
-def get_value() -> DescribeAuditTaskResponseTypeDef:
+def get_value() -> TaskStatisticsTypeDef:
     return {
-        "taskStatus": ...,
-        "taskType": ...,
-        "taskStartTime": ...,
-        "taskStatistics": ...,
-        "scheduledAuditName": ...,
-        "auditDetails": ...,
-        "ResponseMetadata": ...,
+        "totalChecks": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAuditTaskResponseTypeDef(TypedDict):
-    taskStatus: AuditTaskStatusType,  # (1)
-    taskType: AuditTaskTypeType,  # (2)
-    taskStartTime: datetime,
-    taskStatistics: TaskStatisticsTypeDef,  # (3)
-    scheduledAuditName: str,
-    auditDetails: Dict[str, AuditCheckDetailsTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class TaskStatisticsTypeDef(TypedDict):
+    totalChecks: NotRequired[int],
+    inProgressChecks: NotRequired[int],
+    waitingForDataCollectionChecks: NotRequired[int],
+    compliantChecks: NotRequired[int],
+    nonCompliantChecks: NotRequired[int],
+    failedChecks: NotRequired[int],
+    canceledChecks: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
-2. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
-3. See [:material-code-braces: TaskStatisticsTypeDef](./type_defs.md#taskstatisticstypedef) 
-4. See [:material-code-braces: AuditCheckDetailsTypeDef](./type_defs.md#auditcheckdetailstypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAuthorizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3453,26 +2215,6 @@ class DescribeAuthorizerRequestRequestTypeDef(TypedDict):
     authorizerName: str,
 ```
 
-## DescribeAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeAuthorizerResponseTypeDef
-
-def get_value() -> DescribeAuthorizerResponseTypeDef:
-    return {
-        "authorizerDescription": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAuthorizerResponseTypeDef(TypedDict):
-    authorizerDescription: AuthorizerDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBillingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3489,37 +2231,6 @@ class DescribeBillingGroupRequestRequestTypeDef(TypedDict):
     billingGroupName: str,
 ```
 
-## DescribeBillingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeBillingGroupResponseTypeDef
-
-def get_value() -> DescribeBillingGroupResponseTypeDef:
-    return {
-        "billingGroupName": ...,
-        "billingGroupId": ...,
-        "billingGroupArn": ...,
-        "version": ...,
-        "billingGroupProperties": ...,
-        "billingGroupMetadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeBillingGroupResponseTypeDef(TypedDict):
-    billingGroupName: str,
-    billingGroupId: str,
-    billingGroupArn: str,
-    version: int,
-    billingGroupProperties: BillingGroupPropertiesTypeDef,  # (1)
-    billingGroupMetadata: BillingGroupMetadataTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
-2. See [:material-code-braces: BillingGroupMetadataTypeDef](./type_defs.md#billinggroupmetadatatypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCACertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3536,29 +2247,23 @@ class DescribeCACertificateRequestRequestTypeDef(TypedDict):
     certificateId: str,
 ```
 
-## DescribeCACertificateResponseTypeDef
+## RegistrationConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeCACertificateResponseTypeDef
+from mypy_boto3_iot.type_defs import RegistrationConfigTypeDef
 
-def get_value() -> DescribeCACertificateResponseTypeDef:
+def get_value() -> RegistrationConfigTypeDef:
     return {
-        "certificateDescription": ...,
-        "registrationConfig": ...,
-        "ResponseMetadata": ...,
+        "templateBody": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeCACertificateResponseTypeDef(TypedDict):
-    certificateDescription: CACertificateDescriptionTypeDef,  # (1)
-    registrationConfig: RegistrationConfigTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class RegistrationConfigTypeDef(TypedDict):
+    templateBody: NotRequired[str],
+    roleArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: CACertificateDescriptionTypeDef](./type_defs.md#cacertificatedescriptiontypedef) 
-2. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3575,26 +2280,6 @@ class DescribeCertificateRequestRequestTypeDef(TypedDict):
     certificateId: str,
 ```
 
-## DescribeCertificateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeCertificateResponseTypeDef
-
-def get_value() -> DescribeCertificateResponseTypeDef:
-    return {
-        "certificateDescription": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCertificateResponseTypeDef(TypedDict):
-    certificateDescription: CertificateDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateDescriptionTypeDef](./type_defs.md#certificatedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomMetricRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3611,56 +2296,6 @@ class DescribeCustomMetricRequestRequestTypeDef(TypedDict):
     metricName: str,
 ```
 
-## DescribeCustomMetricResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeCustomMetricResponseTypeDef
-
-def get_value() -> DescribeCustomMetricResponseTypeDef:
-    return {
-        "metricName": ...,
-        "metricArn": ...,
-        "metricType": ...,
-        "displayName": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCustomMetricResponseTypeDef(TypedDict):
-    metricName: str,
-    metricArn: str,
-    metricType: CustomMetricTypeType,  # (1)
-    displayName: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDefaultAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeDefaultAuthorizerResponseTypeDef
-
-def get_value() -> DescribeDefaultAuthorizerResponseTypeDef:
-    return {
-        "authorizerDescription": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDefaultAuthorizerResponseTypeDef(TypedDict):
-    authorizerDescription: AuthorizerDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDetectMitigationActionsTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3677,26 +2312,6 @@ class DescribeDetectMitigationActionsTaskRequestRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeDetectMitigationActionsTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskResponseTypeDef
-
-def get_value() -> DescribeDetectMitigationActionsTaskResponseTypeDef:
-    return {
-        "taskSummary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDetectMitigationActionsTaskResponseTypeDef(TypedDict):
-    taskSummary: DetectMitigationActionsTaskSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDimensionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3713,36 +2328,6 @@ class DescribeDimensionRequestRequestTypeDef(TypedDict):
     name: str,
 ```
 
-## DescribeDimensionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeDimensionResponseTypeDef
-
-def get_value() -> DescribeDimensionResponseTypeDef:
-    return {
-        "name": ...,
-        "arn": ...,
-        "type": ...,
-        "stringValues": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDimensionResponseTypeDef(TypedDict):
-    name: str,
-    arn: str,
-    type: DimensionTypeType,  # (1)
-    stringValues: List[str],
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDomainConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3759,46 +2344,25 @@ class DescribeDomainConfigurationRequestRequestTypeDef(TypedDict):
     domainConfigurationName: str,
 ```
 
-## DescribeDomainConfigurationResponseTypeDef
+## ServerCertificateSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeDomainConfigurationResponseTypeDef
+from mypy_boto3_iot.type_defs import ServerCertificateSummaryTypeDef
 
-def get_value() -> DescribeDomainConfigurationResponseTypeDef:
+def get_value() -> ServerCertificateSummaryTypeDef:
     return {
-        "domainConfigurationName": ...,
-        "domainConfigurationArn": ...,
-        "domainName": ...,
-        "serverCertificates": ...,
-        "authorizerConfig": ...,
-        "domainConfigurationStatus": ...,
-        "serviceType": ...,
-        "domainType": ...,
-        "lastStatusChangeDate": ...,
-        "ResponseMetadata": ...,
+        "serverCertificateArn": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDomainConfigurationResponseTypeDef(TypedDict):
-    domainConfigurationName: str,
-    domainConfigurationArn: str,
-    domainName: str,
-    serverCertificates: List[ServerCertificateSummaryTypeDef],  # (1)
-    authorizerConfig: AuthorizerConfigTypeDef,  # (2)
-    domainConfigurationStatus: DomainConfigurationStatusType,  # (3)
-    serviceType: ServiceTypeType,  # (4)
-    domainType: DomainTypeType,  # (5)
-    lastStatusChangeDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+class ServerCertificateSummaryTypeDef(TypedDict):
+    serverCertificateArn: NotRequired[str],
+    serverCertificateStatus: NotRequired[ServerCertificateStatusType],  # (1)
+    serverCertificateStatusDetail: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ServerCertificateSummaryTypeDef](./type_defs.md#servercertificatesummarytypedef) 
-2. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
-3. See [:material-code-brackets: DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype) 
-4. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
-5. See [:material-code-brackets: DomainTypeType](./literals.md#domaintypetype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ServerCertificateStatusType](./literals.md#servercertificatestatustype) 
 ## DescribeEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3815,49 +2379,6 @@ class DescribeEndpointRequestRequestTypeDef(TypedDict):
     endpointType: NotRequired[str],
 ```
 
-## DescribeEndpointResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeEndpointResponseTypeDef
-
-def get_value() -> DescribeEndpointResponseTypeDef:
-    return {
-        "endpointAddress": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEndpointResponseTypeDef(TypedDict):
-    endpointAddress: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeEventConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseTypeDef
-
-def get_value() -> DescribeEventConfigurationsResponseTypeDef:
-    return {
-        "eventConfigurations": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEventConfigurationsResponseTypeDef(TypedDict):
-    eventConfigurations: Dict[EventTypeType, ConfigurationTypeDef],  # (1)
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFleetMetricRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3874,51 +2395,6 @@ class DescribeFleetMetricRequestRequestTypeDef(TypedDict):
     metricName: str,
 ```
 
-## DescribeFleetMetricResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeFleetMetricResponseTypeDef
-
-def get_value() -> DescribeFleetMetricResponseTypeDef:
-    return {
-        "metricName": ...,
-        "queryString": ...,
-        "aggregationType": ...,
-        "period": ...,
-        "aggregationField": ...,
-        "description": ...,
-        "queryVersion": ...,
-        "indexName": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "unit": ...,
-        "version": ...,
-        "metricArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetMetricResponseTypeDef(TypedDict):
-    metricName: str,
-    queryString: str,
-    aggregationType: AggregationTypeTypeDef,  # (1)
-    period: int,
-    aggregationField: str,
-    description: str,
-    queryVersion: str,
-    indexName: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    unit: FleetMetricUnitType,  # (2)
-    version: int,
-    metricArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
-2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIndexRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3935,30 +2411,6 @@ class DescribeIndexRequestRequestTypeDef(TypedDict):
     indexName: str,
 ```
 
-## DescribeIndexResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeIndexResponseTypeDef
-
-def get_value() -> DescribeIndexResponseTypeDef:
-    return {
-        "indexName": ...,
-        "indexStatus": ...,
-        "schema": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIndexResponseTypeDef(TypedDict):
-    indexName: str,
-    indexStatus: IndexStatusType,  # (1)
-    schema: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3978,26 +2430,6 @@ class DescribeJobExecutionRequestRequestTypeDef(TypedDict):
     executionNumber: NotRequired[int],
 ```
 
-## DescribeJobExecutionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeJobExecutionResponseTypeDef
-
-def get_value() -> DescribeJobExecutionResponseTypeDef:
-    return {
-        "execution": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobExecutionResponseTypeDef(TypedDict):
-    execution: JobExecutionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4014,28 +2446,6 @@ class DescribeJobRequestRequestTypeDef(TypedDict):
     jobId: str,
 ```
 
-## DescribeJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeJobResponseTypeDef
-
-def get_value() -> DescribeJobResponseTypeDef:
-    return {
-        "documentSource": ...,
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobResponseTypeDef(TypedDict):
-    documentSource: str,
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4052,50 +2462,6 @@ class DescribeJobTemplateRequestRequestTypeDef(TypedDict):
     jobTemplateId: str,
 ```
 
-## DescribeJobTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeJobTemplateResponseTypeDef
-
-def get_value() -> DescribeJobTemplateResponseTypeDef:
-    return {
-        "jobTemplateArn": ...,
-        "jobTemplateId": ...,
-        "description": ...,
-        "documentSource": ...,
-        "document": ...,
-        "createdAt": ...,
-        "presignedUrlConfig": ...,
-        "jobExecutionsRolloutConfig": ...,
-        "abortConfig": ...,
-        "timeoutConfig": ...,
-        "jobExecutionsRetryConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobTemplateResponseTypeDef(TypedDict):
-    jobTemplateArn: str,
-    jobTemplateId: str,
-    description: str,
-    documentSource: str,
-    document: str,
-    createdAt: datetime,
-    presignedUrlConfig: PresignedUrlConfigTypeDef,  # (1)
-    jobExecutionsRolloutConfig: JobExecutionsRolloutConfigTypeDef,  # (2)
-    abortConfig: AbortConfigTypeDef,  # (3)
-    timeoutConfig: TimeoutConfigTypeDef,  # (4)
-    jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
-2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
-3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
-4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
-5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeManagedJobTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4113,38 +2479,26 @@ class DescribeManagedJobTemplateRequestRequestTypeDef(TypedDict):
     templateVersion: NotRequired[str],
 ```
 
-## DescribeManagedJobTemplateResponseTypeDef
+## DocumentParameterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeManagedJobTemplateResponseTypeDef
+from mypy_boto3_iot.type_defs import DocumentParameterTypeDef
 
-def get_value() -> DescribeManagedJobTemplateResponseTypeDef:
+def get_value() -> DocumentParameterTypeDef:
     return {
-        "templateName": ...,
-        "templateArn": ...,
-        "description": ...,
-        "templateVersion": ...,
-        "environments": ...,
-        "documentParameters": ...,
-        "document": ...,
-        "ResponseMetadata": ...,
+        "key": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeManagedJobTemplateResponseTypeDef(TypedDict):
-    templateName: str,
-    templateArn: str,
-    description: str,
-    templateVersion: str,
-    environments: List[str],
-    documentParameters: List[DocumentParameterTypeDef],  # (1)
-    document: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DocumentParameterTypeDef(TypedDict):
+    key: NotRequired[str],
+    description: NotRequired[str],
+    regex: NotRequired[str],
+    example: NotRequired[str],
+    optional: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: DocumentParameterTypeDef](./type_defs.md#documentparametertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMitigationActionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4161,41 +2515,6 @@ class DescribeMitigationActionRequestRequestTypeDef(TypedDict):
     actionName: str,
 ```
 
-## DescribeMitigationActionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseTypeDef
-
-def get_value() -> DescribeMitigationActionResponseTypeDef:
-    return {
-        "actionName": ...,
-        "actionType": ...,
-        "actionArn": ...,
-        "actionId": ...,
-        "roleArn": ...,
-        "actionParams": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMitigationActionResponseTypeDef(TypedDict):
-    actionName: str,
-    actionType: MitigationActionTypeType,  # (1)
-    actionArn: str,
-    actionId: str,
-    roleArn: str,
-    actionParams: MitigationActionParamsTypeDef,  # (2)
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
-2. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProvisioningTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4212,44 +2531,6 @@ class DescribeProvisioningTemplateRequestRequestTypeDef(TypedDict):
     templateName: str,
 ```
 
-## DescribeProvisioningTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateResponseTypeDef
-
-def get_value() -> DescribeProvisioningTemplateResponseTypeDef:
-    return {
-        "templateArn": ...,
-        "templateName": ...,
-        "description": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "defaultVersionId": ...,
-        "templateBody": ...,
-        "enabled": ...,
-        "provisioningRoleArn": ...,
-        "preProvisioningHook": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProvisioningTemplateResponseTypeDef(TypedDict):
-    templateArn: str,
-    templateName: str,
-    description: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    defaultVersionId: int,
-    templateBody: str,
-    enabled: bool,
-    provisioningRoleArn: str,
-    preProvisioningHook: ProvisioningHookTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProvisioningTemplateVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4268,31 +2549,6 @@ class DescribeProvisioningTemplateVersionRequestRequestTypeDef(TypedDict):
     versionId: int,
 ```
 
-## DescribeProvisioningTemplateVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionResponseTypeDef
-
-def get_value() -> DescribeProvisioningTemplateVersionResponseTypeDef:
-    return {
-        "versionId": ...,
-        "creationDate": ...,
-        "templateBody": ...,
-        "isDefaultVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProvisioningTemplateVersionResponseTypeDef(TypedDict):
-    versionId: int,
-    creationDate: datetime,
-    templateBody: str,
-    isDefaultVersion: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRoleAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4309,26 +2565,28 @@ class DescribeRoleAliasRequestRequestTypeDef(TypedDict):
     roleAlias: str,
 ```
 
-## DescribeRoleAliasResponseTypeDef
+## RoleAliasDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeRoleAliasResponseTypeDef
+from mypy_boto3_iot.type_defs import RoleAliasDescriptionTypeDef
 
-def get_value() -> DescribeRoleAliasResponseTypeDef:
+def get_value() -> RoleAliasDescriptionTypeDef:
     return {
-        "roleAliasDescription": ...,
-        "ResponseMetadata": ...,
+        "roleAlias": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeRoleAliasResponseTypeDef(TypedDict):
-    roleAliasDescription: RoleAliasDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RoleAliasDescriptionTypeDef(TypedDict):
+    roleAlias: NotRequired[str],
+    roleAliasArn: NotRequired[str],
+    roleArn: NotRequired[str],
+    owner: NotRequired[str],
+    credentialDurationSeconds: NotRequired[int],
+    creationDate: NotRequired[datetime],
+    lastModifiedDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: RoleAliasDescriptionTypeDef](./type_defs.md#rolealiasdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScheduledAuditRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4345,37 +2603,6 @@ class DescribeScheduledAuditRequestRequestTypeDef(TypedDict):
     scheduledAuditName: str,
 ```
 
-## DescribeScheduledAuditResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseTypeDef
-
-def get_value() -> DescribeScheduledAuditResponseTypeDef:
-    return {
-        "frequency": ...,
-        "dayOfMonth": ...,
-        "dayOfWeek": ...,
-        "targetCheckNames": ...,
-        "scheduledAuditName": ...,
-        "scheduledAuditArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeScheduledAuditResponseTypeDef(TypedDict):
-    frequency: AuditFrequencyType,  # (1)
-    dayOfMonth: str,
-    dayOfWeek: DayOfWeekType,  # (2)
-    targetCheckNames: List[str],
-    scheduledAuditName: str,
-    scheduledAuditArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
-2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecurityProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4392,46 +2619,6 @@ class DescribeSecurityProfileRequestRequestTypeDef(TypedDict):
     securityProfileName: str,
 ```
 
-## DescribeSecurityProfileResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeSecurityProfileResponseTypeDef
-
-def get_value() -> DescribeSecurityProfileResponseTypeDef:
-    return {
-        "securityProfileName": ...,
-        "securityProfileArn": ...,
-        "securityProfileDescription": ...,
-        "behaviors": ...,
-        "alertTargets": ...,
-        "additionalMetricsToRetain": ...,
-        "additionalMetricsToRetainV2": ...,
-        "version": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSecurityProfileResponseTypeDef(TypedDict):
-    securityProfileName: str,
-    securityProfileArn: str,
-    securityProfileDescription: str,
-    behaviors: List[BehaviorTypeDef],  # (1)
-    alertTargets: Dict[AlertTargetTypeType, AlertTargetTypeDef],  # (2)
-    additionalMetricsToRetain: List[str],
-    additionalMetricsToRetainV2: List[MetricToRetainTypeDef],  # (3)
-    version: int,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
-2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
-3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStreamRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4448,26 +2635,6 @@ class DescribeStreamRequestRequestTypeDef(TypedDict):
     streamId: str,
 ```
 
-## DescribeStreamResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeStreamResponseTypeDef
-
-def get_value() -> DescribeStreamResponseTypeDef:
-    return {
-        "streamInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStreamResponseTypeDef(TypedDict):
-    streamInfo: StreamInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamInfoTypeDef](./type_defs.md#streaminfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeThingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4484,46 +2651,6 @@ class DescribeThingGroupRequestRequestTypeDef(TypedDict):
     thingGroupName: str,
 ```
 
-## DescribeThingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeThingGroupResponseTypeDef
-
-def get_value() -> DescribeThingGroupResponseTypeDef:
-    return {
-        "thingGroupName": ...,
-        "thingGroupId": ...,
-        "thingGroupArn": ...,
-        "version": ...,
-        "thingGroupProperties": ...,
-        "thingGroupMetadata": ...,
-        "indexName": ...,
-        "queryString": ...,
-        "queryVersion": ...,
-        "status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThingGroupResponseTypeDef(TypedDict):
-    thingGroupName: str,
-    thingGroupId: str,
-    thingGroupArn: str,
-    version: int,
-    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
-    thingGroupMetadata: ThingGroupMetadataTypeDef,  # (2)
-    indexName: str,
-    queryString: str,
-    queryVersion: str,
-    status: DynamicGroupStatusType,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
-2. See [:material-code-braces: ThingGroupMetadataTypeDef](./type_defs.md#thinggroupmetadatatypedef) 
-3. See [:material-code-brackets: DynamicGroupStatusType](./literals.md#dynamicgroupstatustype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeThingRegistrationTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4540,48 +2667,6 @@ class DescribeThingRegistrationTaskRequestRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeThingRegistrationTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskResponseTypeDef
-
-def get_value() -> DescribeThingRegistrationTaskResponseTypeDef:
-    return {
-        "taskId": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "templateBody": ...,
-        "inputFileBucket": ...,
-        "inputFileKey": ...,
-        "roleArn": ...,
-        "status": ...,
-        "message": ...,
-        "successCount": ...,
-        "failureCount": ...,
-        "percentageProgress": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThingRegistrationTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    templateBody: str,
-    inputFileBucket: str,
-    inputFileKey: str,
-    roleArn: str,
-    status: StatusType,  # (1)
-    message: str,
-    successCount: int,
-    failureCount: int,
-    percentageProgress: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeThingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4598,39 +2683,6 @@ class DescribeThingRequestRequestTypeDef(TypedDict):
     thingName: str,
 ```
 
-## DescribeThingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeThingResponseTypeDef
-
-def get_value() -> DescribeThingResponseTypeDef:
-    return {
-        "defaultClientId": ...,
-        "thingName": ...,
-        "thingId": ...,
-        "thingArn": ...,
-        "thingTypeName": ...,
-        "attributes": ...,
-        "version": ...,
-        "billingGroupName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThingResponseTypeDef(TypedDict):
-    defaultClientId: str,
-    thingName: str,
-    thingId: str,
-    thingArn: str,
-    thingTypeName: str,
-    attributes: Dict[str, str],
-    version: int,
-    billingGroupName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeThingTypeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4647,52 +2699,41 @@ class DescribeThingTypeRequestRequestTypeDef(TypedDict):
     thingTypeName: str,
 ```
 
-## DescribeThingTypeResponseTypeDef
+## ThingTypeMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DescribeThingTypeResponseTypeDef
+from mypy_boto3_iot.type_defs import ThingTypeMetadataTypeDef
 
-def get_value() -> DescribeThingTypeResponseTypeDef:
+def get_value() -> ThingTypeMetadataTypeDef:
     return {
-        "thingTypeName": ...,
-        "thingTypeId": ...,
-        "thingTypeArn": ...,
-        "thingTypeProperties": ...,
-        "thingTypeMetadata": ...,
-        "ResponseMetadata": ...,
+        "deprecated": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeThingTypeResponseTypeDef(TypedDict):
-    thingTypeName: str,
-    thingTypeId: str,
-    thingTypeArn: str,
-    thingTypeProperties: ThingTypePropertiesTypeDef,  # (1)
-    thingTypeMetadata: ThingTypeMetadataTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ThingTypeMetadataTypeDef(TypedDict):
+    deprecated: NotRequired[bool],
+    deprecationDate: NotRequired[datetime],
+    creationDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
-2. See [:material-code-braces: ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DestinationTypeDef
+## S3DestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DestinationTypeDef
+from mypy_boto3_iot.type_defs import S3DestinationTypeDef
 
-def get_value() -> DestinationTypeDef:
+def get_value() -> S3DestinationTypeDef:
     return {
-        "s3Destination": ...,
+        "bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class DestinationTypeDef(TypedDict):
-    s3Destination: NotRequired[S3DestinationTypeDef],  # (1)
+class S3DestinationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    prefix: NotRequired[str],
 ```
 
-1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 ## DetachPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4808,36 +2849,6 @@ class DetectMitigationActionsTaskStatisticsTypeDef(TypedDict):
     actionsFailed: NotRequired[int],
 ```
 
-## DetectMitigationActionsTaskSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DetectMitigationActionsTaskSummaryTypeDef
-
-def get_value() -> DetectMitigationActionsTaskSummaryTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class DetectMitigationActionsTaskSummaryTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    taskStatus: NotRequired[DetectMitigationActionsTaskStatusType],  # (1)
-    taskStartTime: NotRequired[datetime],
-    taskEndTime: NotRequired[datetime],
-    target: NotRequired[DetectMitigationActionsTaskTargetTypeDef],  # (2)
-    violationEventOccurrenceRange: NotRequired[ViolationEventOccurrenceRangeTypeDef],  # (3)
-    onlyActiveViolationsIncluded: NotRequired[bool],
-    suppressedAlertsIncluded: NotRequired[bool],
-    actionsDefinition: NotRequired[List[MitigationActionTypeDef]],  # (4)
-    taskStatistics: NotRequired[DetectMitigationActionsTaskStatisticsTypeDef],  # (5)
-```
-
-1. See [:material-code-brackets: DetectMitigationActionsTaskStatusType](./literals.md#detectmitigationactionstaskstatustype) 
-2. See [:material-code-braces: DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef) 
-3. See [:material-code-braces: ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef) 
-4. See [:material-code-braces: MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef) 
-5. See [:material-code-braces: DetectMitigationActionsTaskStatisticsTypeDef](./type_defs.md#detectmitigationactionstaskstatisticstypedef) 
 ## DetectMitigationActionsTaskTargetTypeDef
 
 ```python title="Usage Example"
@@ -4856,6 +2867,24 @@ class DetectMitigationActionsTaskTargetTypeDef(TypedDict):
     behaviorName: NotRequired[str],
 ```
 
+## ViolationEventOccurrenceRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ViolationEventOccurrenceRangeTypeDef
+
+def get_value() -> ViolationEventOccurrenceRangeTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ViolationEventOccurrenceRangeTypeDef(TypedDict):
+    startTime: datetime,
+    endTime: datetime,
+```
+
 ## DisableTopicRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4870,26 +2899,6 @@ def get_value() -> DisableTopicRuleRequestRequestTypeDef:
 ```python title="Definition"
 class DisableTopicRuleRequestRequestTypeDef(TypedDict):
     ruleName: str,
-```
-
-## DocumentParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DocumentParameterTypeDef
-
-def get_value() -> DocumentParameterTypeDef:
-    return {
-        "key": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentParameterTypeDef(TypedDict):
-    key: NotRequired[str],
-    description: NotRequired[str],
-    regex: NotRequired[str],
-    example: NotRequired[str],
-    optional: NotRequired[bool],
 ```
 
 ## DomainConfigurationSummaryTypeDef
@@ -4911,55 +2920,22 @@ class DomainConfigurationSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
-## DynamoDBActionTypeDef
+## PutItemInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DynamoDBActionTypeDef
+from mypy_boto3_iot.type_defs import PutItemInputTypeDef
 
-def get_value() -> DynamoDBActionTypeDef:
+def get_value() -> PutItemInputTypeDef:
     return {
         "tableName": ...,
-        "roleArn": ...,
-        "hashKeyField": ...,
-        "hashKeyValue": ...,
     }
 ```
 
 ```python title="Definition"
-class DynamoDBActionTypeDef(TypedDict):
+class PutItemInputTypeDef(TypedDict):
     tableName: str,
-    roleArn: str,
-    hashKeyField: str,
-    hashKeyValue: str,
-    operation: NotRequired[str],
-    hashKeyType: NotRequired[DynamoKeyTypeType],  # (1)
-    rangeKeyField: NotRequired[str],
-    rangeKeyValue: NotRequired[str],
-    rangeKeyType: NotRequired[DynamoKeyTypeType],  # (1)
-    payloadField: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: DynamoKeyTypeType](./literals.md#dynamokeytypetype) 
-2. See [:material-code-brackets: DynamoKeyTypeType](./literals.md#dynamokeytypetype) 
-## DynamoDBv2ActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import DynamoDBv2ActionTypeDef
-
-def get_value() -> DynamoDBv2ActionTypeDef:
-    return {
-        "roleArn": ...,
-        "putItem": ...,
-    }
-```
-
-```python title="Definition"
-class DynamoDBv2ActionTypeDef(TypedDict):
-    roleArn: str,
-    putItem: PutItemInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: PutItemInputTypeDef](./type_defs.md#putiteminputtypedef) 
 ## EffectivePolicyTypeDef
 
 ```python title="Usage Example"
@@ -4976,30 +2952,6 @@ class EffectivePolicyTypeDef(TypedDict):
     policyName: NotRequired[str],
     policyArn: NotRequired[str],
     policyDocument: NotRequired[str],
-```
-
-## ElasticsearchActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ElasticsearchActionTypeDef
-
-def get_value() -> ElasticsearchActionTypeDef:
-    return {
-        "roleArn": ...,
-        "endpoint": ...,
-        "index": ...,
-        "type": ...,
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class ElasticsearchActionTypeDef(TypedDict):
-    roleArn: str,
-    endpoint: str,
-    index: str,
-    type: str,
-    id: str,
 ```
 
 ## EnableIoTLoggingParamsTypeDef
@@ -5054,44 +3006,23 @@ class ErrorInfoTypeDef(TypedDict):
     message: NotRequired[str],
 ```
 
-## ExplicitDenyTypeDef
+## RateIncreaseCriteriaTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ExplicitDenyTypeDef
+from mypy_boto3_iot.type_defs import RateIncreaseCriteriaTypeDef
 
-def get_value() -> ExplicitDenyTypeDef:
+def get_value() -> RateIncreaseCriteriaTypeDef:
     return {
-        "policies": ...,
+        "numberOfNotifiedThings": ...,
     }
 ```
 
 ```python title="Definition"
-class ExplicitDenyTypeDef(TypedDict):
-    policies: NotRequired[List[PolicyTypeDef]],  # (1)
+class RateIncreaseCriteriaTypeDef(TypedDict):
+    numberOfNotifiedThings: NotRequired[int],
+    numberOfSucceededThings: NotRequired[int],
 ```
 
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
-## ExponentialRolloutRateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ExponentialRolloutRateTypeDef
-
-def get_value() -> ExponentialRolloutRateTypeDef:
-    return {
-        "baseRatePerMinute": ...,
-        "incrementFactor": ...,
-        "rateIncreaseCriteria": ...,
-    }
-```
-
-```python title="Definition"
-class ExponentialRolloutRateTypeDef(TypedDict):
-    baseRatePerMinute: int,
-    incrementFactor: float,
-    rateIncreaseCriteria: RateIncreaseCriteriaTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RateIncreaseCriteriaTypeDef](./type_defs.md#rateincreasecriteriatypedef) 
 ## FieldTypeDef
 
 ```python title="Usage Example"
@@ -5110,43 +3041,39 @@ class FieldTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FieldTypeType](./literals.md#fieldtypetype) 
-## FileLocationTypeDef
+## S3LocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import FileLocationTypeDef
+from mypy_boto3_iot.type_defs import S3LocationTypeDef
 
-def get_value() -> FileLocationTypeDef:
+def get_value() -> S3LocationTypeDef:
     return {
-        "stream": ...,
+        "bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class FileLocationTypeDef(TypedDict):
-    stream: NotRequired[StreamTypeDef],  # (1)
-    s3Location: NotRequired[S3LocationTypeDef],  # (2)
+class S3LocationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    key: NotRequired[str],
+    version: NotRequired[str],
 ```
 
-1. See [:material-code-braces: StreamTypeDef](./type_defs.md#streamtypedef) 
-2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-## FirehoseActionTypeDef
+## StreamTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import FirehoseActionTypeDef
+from mypy_boto3_iot.type_defs import StreamTypeDef
 
-def get_value() -> FirehoseActionTypeDef:
+def get_value() -> StreamTypeDef:
     return {
-        "roleArn": ...,
-        "deliveryStreamName": ...,
+        "streamId": ...,
     }
 ```
 
 ```python title="Definition"
-class FirehoseActionTypeDef(TypedDict):
-    roleArn: str,
-    deliveryStreamName: str,
-    separator: NotRequired[str],
-    batchMode: NotRequired[bool],
+class StreamTypeDef(TypedDict):
+    streamId: NotRequired[str],
+    fileId: NotRequired[int],
 ```
 
 ## FleetMetricNameAndArnTypeDef
@@ -5166,24 +3093,24 @@ class FleetMetricNameAndArnTypeDef(TypedDict):
     metricArn: NotRequired[str],
 ```
 
-## GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef
+from mypy_boto3_iot.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "securityProfileName": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef(TypedDict):
-    securityProfileName: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetBehaviorModelTrainingSummariesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5202,73 +3129,6 @@ class GetBehaviorModelTrainingSummariesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## GetBehaviorModelTrainingSummariesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTypeDef
-
-def get_value() -> GetBehaviorModelTrainingSummariesResponseTypeDef:
-    return {
-        "summaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBehaviorModelTrainingSummariesResponseTypeDef(TypedDict):
-    summaries: List[BehaviorModelTrainingSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BehaviorModelTrainingSummaryTypeDef](./type_defs.md#behaviormodeltrainingsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetBucketsAggregationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetBucketsAggregationRequestRequestTypeDef
-
-def get_value() -> GetBucketsAggregationRequestRequestTypeDef:
-    return {
-        "queryString": ...,
-        "aggregationField": ...,
-        "bucketsAggregationType": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketsAggregationRequestRequestTypeDef(TypedDict):
-    queryString: str,
-    aggregationField: str,
-    bucketsAggregationType: BucketsAggregationTypeTypeDef,  # (1)
-    indexName: NotRequired[str],
-    queryVersion: NotRequired[str],
-```
-
-1. See [:material-code-braces: BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef) 
-## GetBucketsAggregationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetBucketsAggregationResponseTypeDef
-
-def get_value() -> GetBucketsAggregationResponseTypeDef:
-    return {
-        "totalCount": ...,
-        "buckets": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketsAggregationResponseTypeDef(TypedDict):
-    totalCount: int,
-    buckets: List[BucketTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BucketTypeDef](./type_defs.md#buckettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCardinalityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5288,25 +3148,6 @@ class GetCardinalityRequestRequestTypeDef(TypedDict):
     queryVersion: NotRequired[str],
 ```
 
-## GetCardinalityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetCardinalityResponseTypeDef
-
-def get_value() -> GetCardinalityResponseTypeDef:
-    return {
-        "cardinality": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCardinalityResponseTypeDef(TypedDict):
-    cardinality: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEffectivePoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5325,49 +3166,6 @@ class GetEffectivePoliciesRequestRequestTypeDef(TypedDict):
     thingName: NotRequired[str],
 ```
 
-## GetEffectivePoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetEffectivePoliciesResponseTypeDef
-
-def get_value() -> GetEffectivePoliciesResponseTypeDef:
-    return {
-        "effectivePolicies": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEffectivePoliciesResponseTypeDef(TypedDict):
-    effectivePolicies: List[EffectivePolicyTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EffectivePolicyTypeDef](./type_defs.md#effectivepolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetIndexingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetIndexingConfigurationResponseTypeDef
-
-def get_value() -> GetIndexingConfigurationResponseTypeDef:
-    return {
-        "thingIndexingConfiguration": ...,
-        "thingGroupIndexingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetIndexingConfigurationResponseTypeDef(TypedDict):
-    thingIndexingConfiguration: ThingIndexingConfigurationTypeDef,  # (1)
-    thingGroupIndexingConfiguration: ThingGroupIndexingConfigurationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef) 
-2. See [:material-code-braces: ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobDocumentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5384,47 +3182,6 @@ class GetJobDocumentRequestRequestTypeDef(TypedDict):
     jobId: str,
 ```
 
-## GetJobDocumentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetJobDocumentResponseTypeDef
-
-def get_value() -> GetJobDocumentResponseTypeDef:
-    return {
-        "document": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetJobDocumentResponseTypeDef(TypedDict):
-    document: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetLoggingOptionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseTypeDef
-
-def get_value() -> GetLoggingOptionsResponseTypeDef:
-    return {
-        "roleArn": ...,
-        "logLevel": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLoggingOptionsResponseTypeDef(TypedDict):
-    roleArn: str,
-    logLevel: LogLevelType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOTAUpdateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5441,26 +3198,6 @@ class GetOTAUpdateRequestRequestTypeDef(TypedDict):
     otaUpdateId: str,
 ```
 
-## GetOTAUpdateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetOTAUpdateResponseTypeDef
-
-def get_value() -> GetOTAUpdateResponseTypeDef:
-    return {
-        "otaUpdateInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetOTAUpdateResponseTypeDef(TypedDict):
-    otaUpdateInfo: OTAUpdateInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OTAUpdateInfoTypeDef](./type_defs.md#otaupdateinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPercentilesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5481,26 +3218,23 @@ class GetPercentilesRequestRequestTypeDef(TypedDict):
     percents: NotRequired[Sequence[float]],
 ```
 
-## GetPercentilesResponseTypeDef
+## PercentPairTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetPercentilesResponseTypeDef
+from mypy_boto3_iot.type_defs import PercentPairTypeDef
 
-def get_value() -> GetPercentilesResponseTypeDef:
+def get_value() -> PercentPairTypeDef:
     return {
-        "percentiles": ...,
-        "ResponseMetadata": ...,
+        "percent": ...,
     }
 ```
 
 ```python title="Definition"
-class GetPercentilesResponseTypeDef(TypedDict):
-    percentiles: List[PercentPairTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PercentPairTypeDef(TypedDict):
+    percent: NotRequired[float],
+    value: NotRequired[float],
 ```
 
-1. See [:material-code-braces: PercentPairTypeDef](./type_defs.md#percentpairtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5517,37 +3251,6 @@ class GetPolicyRequestRequestTypeDef(TypedDict):
     policyName: str,
 ```
 
-## GetPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetPolicyResponseTypeDef
-
-def get_value() -> GetPolicyResponseTypeDef:
-    return {
-        "policyName": ...,
-        "policyArn": ...,
-        "policyDocument": ...,
-        "defaultVersionId": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "generationId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPolicyResponseTypeDef(TypedDict):
-    policyName: str,
-    policyArn: str,
-    policyDocument: str,
-    defaultVersionId: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    generationId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5566,58 +3269,6 @@ class GetPolicyVersionRequestRequestTypeDef(TypedDict):
     policyVersionId: str,
 ```
 
-## GetPolicyVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetPolicyVersionResponseTypeDef
-
-def get_value() -> GetPolicyVersionResponseTypeDef:
-    return {
-        "policyArn": ...,
-        "policyName": ...,
-        "policyDocument": ...,
-        "policyVersionId": ...,
-        "isDefaultVersion": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "generationId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPolicyVersionResponseTypeDef(TypedDict):
-    policyArn: str,
-    policyName: str,
-    policyDocument: str,
-    policyVersionId: str,
-    isDefaultVersion: bool,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
-    generationId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRegistrationCodeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetRegistrationCodeResponseTypeDef
-
-def get_value() -> GetRegistrationCodeResponseTypeDef:
-    return {
-        "registrationCode": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRegistrationCodeResponseTypeDef(TypedDict):
-    registrationCode: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStatisticsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5637,26 +3288,29 @@ class GetStatisticsRequestRequestTypeDef(TypedDict):
     queryVersion: NotRequired[str],
 ```
 
-## GetStatisticsResponseTypeDef
+## StatisticsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetStatisticsResponseTypeDef
+from mypy_boto3_iot.type_defs import StatisticsTypeDef
 
-def get_value() -> GetStatisticsResponseTypeDef:
+def get_value() -> StatisticsTypeDef:
     return {
-        "statistics": ...,
-        "ResponseMetadata": ...,
+        "count": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStatisticsResponseTypeDef(TypedDict):
-    statistics: StatisticsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class StatisticsTypeDef(TypedDict):
+    count: NotRequired[int],
+    average: NotRequired[float],
+    sum: NotRequired[float],
+    minimum: NotRequired[float],
+    maximum: NotRequired[float],
+    sumOfSquares: NotRequired[float],
+    variance: NotRequired[float],
+    stdDeviation: NotRequired[float],
 ```
 
-1. See [:material-code-braces: StatisticsTypeDef](./type_defs.md#statisticstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTopicRuleDestinationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5673,26 +3327,6 @@ class GetTopicRuleDestinationRequestRequestTypeDef(TypedDict):
     arn: str,
 ```
 
-## GetTopicRuleDestinationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetTopicRuleDestinationResponseTypeDef
-
-def get_value() -> GetTopicRuleDestinationResponseTypeDef:
-    return {
-        "topicRuleDestination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTopicRuleDestinationResponseTypeDef(TypedDict):
-    topicRuleDestination: TopicRuleDestinationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTopicRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5709,52 +3343,6 @@ class GetTopicRuleRequestRequestTypeDef(TypedDict):
     ruleName: str,
 ```
 
-## GetTopicRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetTopicRuleResponseTypeDef
-
-def get_value() -> GetTopicRuleResponseTypeDef:
-    return {
-        "ruleArn": ...,
-        "rule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTopicRuleResponseTypeDef(TypedDict):
-    ruleArn: str,
-    rule: TopicRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TopicRuleTypeDef](./type_defs.md#topicruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetV2LoggingOptionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseTypeDef
-
-def get_value() -> GetV2LoggingOptionsResponseTypeDef:
-    return {
-        "roleArn": ...,
-        "defaultLogLevel": ...,
-        "disableAllLogs": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetV2LoggingOptionsResponseTypeDef(TypedDict):
-    roleArn: str,
-    defaultLogLevel: LogLevelType,  # (1)
-    disableAllLogs: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupNameAndArnTypeDef
 
 ```python title="Usage Example"
@@ -5790,44 +3378,26 @@ class HttpActionHeaderTypeDef(TypedDict):
     value: str,
 ```
 
-## HttpActionTypeDef
+## SigV4AuthorizationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import HttpActionTypeDef
+from mypy_boto3_iot.type_defs import SigV4AuthorizationTypeDef
 
-def get_value() -> HttpActionTypeDef:
+def get_value() -> SigV4AuthorizationTypeDef:
     return {
-        "url": ...,
+        "signingRegion": ...,
+        "serviceName": ...,
+        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class HttpActionTypeDef(TypedDict):
-    url: str,
-    confirmationUrl: NotRequired[str],
-    headers: NotRequired[Sequence[HttpActionHeaderTypeDef]],  # (1)
-    auth: NotRequired[HttpAuthorizationTypeDef],  # (2)
+class SigV4AuthorizationTypeDef(TypedDict):
+    signingRegion: str,
+    serviceName: str,
+    roleArn: str,
 ```
 
-1. See [:material-code-braces: HttpActionHeaderTypeDef](./type_defs.md#httpactionheadertypedef) 
-2. See [:material-code-braces: HttpAuthorizationTypeDef](./type_defs.md#httpauthorizationtypedef) 
-## HttpAuthorizationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import HttpAuthorizationTypeDef
-
-def get_value() -> HttpAuthorizationTypeDef:
-    return {
-        "sigv4": ...,
-    }
-```
-
-```python title="Definition"
-class HttpAuthorizationTypeDef(TypedDict):
-    sigv4: NotRequired[SigV4AuthorizationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SigV4AuthorizationTypeDef](./type_defs.md#sigv4authorizationtypedef) 
 ## HttpContextTypeDef
 
 ```python title="Usage Example"
@@ -5893,81 +3463,6 @@ class HttpUrlDestinationSummaryTypeDef(TypedDict):
     confirmationUrl: NotRequired[str],
 ```
 
-## ImplicitDenyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ImplicitDenyTypeDef
-
-def get_value() -> ImplicitDenyTypeDef:
-    return {
-        "policies": ...,
-    }
-```
-
-```python title="Definition"
-class ImplicitDenyTypeDef(TypedDict):
-    policies: NotRequired[List[PolicyTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
-## IotAnalyticsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import IotAnalyticsActionTypeDef
-
-def get_value() -> IotAnalyticsActionTypeDef:
-    return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class IotAnalyticsActionTypeDef(TypedDict):
-    channelArn: NotRequired[str],
-    channelName: NotRequired[str],
-    batchMode: NotRequired[bool],
-    roleArn: NotRequired[str],
-```
-
-## IotEventsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import IotEventsActionTypeDef
-
-def get_value() -> IotEventsActionTypeDef:
-    return {
-        "inputName": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class IotEventsActionTypeDef(TypedDict):
-    inputName: str,
-    roleArn: str,
-    messageId: NotRequired[str],
-    batchMode: NotRequired[bool],
-```
-
-## IotSiteWiseActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import IotSiteWiseActionTypeDef
-
-def get_value() -> IotSiteWiseActionTypeDef:
-    return {
-        "putAssetPropertyValueEntries": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class IotSiteWiseActionTypeDef(TypedDict):
-    putAssetPropertyValueEntries: Sequence[PutAssetPropertyValueEntryTypeDef],  # (1)
-    roleArn: str,
-```
-
-1. See [:material-code-braces: PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef) 
 ## JobExecutionStatusDetailsTypeDef
 
 ```python title="Usage Example"
@@ -5984,42 +3479,6 @@ class JobExecutionStatusDetailsTypeDef(TypedDict):
     detailsMap: NotRequired[Dict[str, str]],
 ```
 
-## JobExecutionSummaryForJobTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobExecutionSummaryForJobTypeDef
-
-def get_value() -> JobExecutionSummaryForJobTypeDef:
-    return {
-        "thingArn": ...,
-    }
-```
-
-```python title="Definition"
-class JobExecutionSummaryForJobTypeDef(TypedDict):
-    thingArn: NotRequired[str],
-    jobExecutionSummary: NotRequired[JobExecutionSummaryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
-## JobExecutionSummaryForThingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobExecutionSummaryForThingTypeDef
-
-def get_value() -> JobExecutionSummaryForThingTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class JobExecutionSummaryForThingTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    jobExecutionSummary: NotRequired[JobExecutionSummaryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
 ## JobExecutionSummaryTypeDef
 
 ```python title="Usage Example"
@@ -6042,69 +3501,25 @@ class JobExecutionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-## JobExecutionTypeDef
+## RetryCriteriaTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobExecutionTypeDef
+from mypy_boto3_iot.type_defs import RetryCriteriaTypeDef
 
-def get_value() -> JobExecutionTypeDef:
+def get_value() -> RetryCriteriaTypeDef:
     return {
-        "jobId": ...,
+        "failureType": ...,
+        "numberOfRetries": ...,
     }
 ```
 
 ```python title="Definition"
-class JobExecutionTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    status: NotRequired[JobExecutionStatusType],  # (1)
-    forceCanceled: NotRequired[bool],
-    statusDetails: NotRequired[JobExecutionStatusDetailsTypeDef],  # (2)
-    thingArn: NotRequired[str],
-    queuedAt: NotRequired[datetime],
-    startedAt: NotRequired[datetime],
-    lastUpdatedAt: NotRequired[datetime],
-    executionNumber: NotRequired[int],
-    versionNumber: NotRequired[int],
-    approximateSecondsBeforeTimedOut: NotRequired[int],
+class RetryCriteriaTypeDef(TypedDict):
+    failureType: RetryableFailureTypeType,  # (1)
+    numberOfRetries: int,
 ```
 
-1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-2. See [:material-code-braces: JobExecutionStatusDetailsTypeDef](./type_defs.md#jobexecutionstatusdetailstypedef) 
-## JobExecutionsRetryConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobExecutionsRetryConfigTypeDef
-
-def get_value() -> JobExecutionsRetryConfigTypeDef:
-    return {
-        "criteriaList": ...,
-    }
-```
-
-```python title="Definition"
-class JobExecutionsRetryConfigTypeDef(TypedDict):
-    criteriaList: Sequence[RetryCriteriaTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: RetryCriteriaTypeDef](./type_defs.md#retrycriteriatypedef) 
-## JobExecutionsRolloutConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobExecutionsRolloutConfigTypeDef
-
-def get_value() -> JobExecutionsRolloutConfigTypeDef:
-    return {
-        "maximumPerMinute": ...,
-    }
-```
-
-```python title="Definition"
-class JobExecutionsRolloutConfigTypeDef(TypedDict):
-    maximumPerMinute: NotRequired[int],
-    exponentialRate: NotRequired[ExponentialRolloutRateTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ExponentialRolloutRateTypeDef](./type_defs.md#exponentialrolloutratetypedef) 
+1. See [:material-code-brackets: RetryableFailureTypeType](./literals.md#retryablefailuretypetype) 
 ## JobProcessDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6174,149 +3589,6 @@ class JobTemplateSummaryTypeDef(TypedDict):
     createdAt: NotRequired[datetime],
 ```
 
-## JobTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import JobTypeDef
-
-def get_value() -> JobTypeDef:
-    return {
-        "jobArn": ...,
-    }
-```
-
-```python title="Definition"
-class JobTypeDef(TypedDict):
-    jobArn: NotRequired[str],
-    jobId: NotRequired[str],
-    targetSelection: NotRequired[TargetSelectionType],  # (1)
-    status: NotRequired[JobStatusType],  # (2)
-    forceCanceled: NotRequired[bool],
-    reasonCode: NotRequired[str],
-    comment: NotRequired[str],
-    targets: NotRequired[List[str]],
-    description: NotRequired[str],
-    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (3)
-    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (4)
-    abortConfig: NotRequired[AbortConfigTypeDef],  # (5)
-    createdAt: NotRequired[datetime],
-    lastUpdatedAt: NotRequired[datetime],
-    completedAt: NotRequired[datetime],
-    jobProcessDetails: NotRequired[JobProcessDetailsTypeDef],  # (6)
-    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (7)
-    namespaceId: NotRequired[str],
-    jobTemplateArn: NotRequired[str],
-    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (8)
-    documentParameters: NotRequired[Dict[str, str]],
-    isConcurrent: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-3. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
-4. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
-5. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
-6. See [:material-code-braces: JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef) 
-7. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
-8. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-## KafkaActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import KafkaActionTypeDef
-
-def get_value() -> KafkaActionTypeDef:
-    return {
-        "destinationArn": ...,
-        "topic": ...,
-        "clientProperties": ...,
-    }
-```
-
-```python title="Definition"
-class KafkaActionTypeDef(TypedDict):
-    destinationArn: str,
-    topic: str,
-    clientProperties: Mapping[str, str],
-    key: NotRequired[str],
-    partition: NotRequired[str],
-```
-
-## KeyPairTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import KeyPairTypeDef
-
-def get_value() -> KeyPairTypeDef:
-    return {
-        "PublicKey": ...,
-    }
-```
-
-```python title="Definition"
-class KeyPairTypeDef(TypedDict):
-    PublicKey: NotRequired[str],
-    PrivateKey: NotRequired[str],
-```
-
-## KinesisActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import KinesisActionTypeDef
-
-def get_value() -> KinesisActionTypeDef:
-    return {
-        "roleArn": ...,
-        "streamName": ...,
-    }
-```
-
-```python title="Definition"
-class KinesisActionTypeDef(TypedDict):
-    roleArn: str,
-    streamName: str,
-    partitionKey: NotRequired[str],
-```
-
-## LambdaActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import LambdaActionTypeDef
-
-def get_value() -> LambdaActionTypeDef:
-    return {
-        "functionArn": ...,
-    }
-```
-
-```python title="Definition"
-class LambdaActionTypeDef(TypedDict):
-    functionArn: str,
-```
-
-## ListActiveViolationsRequestListActiveViolationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListActiveViolationsRequestListActiveViolationsPaginateTypeDef
-
-def get_value() -> ListActiveViolationsRequestListActiveViolationsPaginateTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ListActiveViolationsRequestListActiveViolationsPaginateTypeDef(TypedDict):
-    thingName: NotRequired[str],
-    securityProfileName: NotRequired[str],
-    behaviorCriteriaType: NotRequired[BehaviorCriteriaTypeType],  # (1)
-    listSuppressedAlerts: NotRequired[bool],
-    verificationState: NotRequired[VerificationStateType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
-2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListActiveViolationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6341,47 +3613,6 @@ class ListActiveViolationsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
 2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-## ListActiveViolationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListActiveViolationsResponseTypeDef
-
-def get_value() -> ListActiveViolationsResponseTypeDef:
-    return {
-        "activeViolations": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListActiveViolationsResponseTypeDef(TypedDict):
-    activeViolations: List[ActiveViolationTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActiveViolationTypeDef](./type_defs.md#activeviolationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef
-
-def get_value() -> ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef:
-    return {
-        "target": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef(TypedDict):
-    target: str,
-    recursive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttachedPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6401,120 +3632,6 @@ class ListAttachedPoliciesRequestRequestTypeDef(TypedDict):
     pageSize: NotRequired[int],
 ```
 
-## ListAttachedPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAttachedPoliciesResponseTypeDef
-
-def get_value() -> ListAttachedPoliciesResponseTypeDef:
-    return {
-        "policies": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttachedPoliciesResponseTypeDef(TypedDict):
-    policies: List[PolicyTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuditFindingsRequestListAuditFindingsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditFindingsRequestListAuditFindingsPaginateTypeDef
-
-def get_value() -> ListAuditFindingsRequestListAuditFindingsPaginateTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditFindingsRequestListAuditFindingsPaginateTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    checkName: NotRequired[str],
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    listSuppressedFindings: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAuditFindingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditFindingsRequestRequestTypeDef
-
-def get_value() -> ListAuditFindingsRequestRequestTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditFindingsRequestRequestTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    checkName: NotRequired[str],
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    listSuppressedFindings: NotRequired[bool],
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## ListAuditFindingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditFindingsResponseTypeDef
-
-def get_value() -> ListAuditFindingsResponseTypeDef:
-    return {
-        "findings": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditFindingsResponseTypeDef(TypedDict):
-    findings: List[AuditFindingTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditFindingTypeDef](./type_defs.md#auditfindingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef
-
-def get_value() -> ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef:
-    return {
-        "taskId": ...,
-        "findingId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef(TypedDict):
-    taskId: str,
-    findingId: str,
-    actionStatus: NotRequired[AuditMitigationActionsExecutionStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAuditMitigationActionsExecutionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6537,52 +3654,6 @@ class ListAuditMitigationActionsExecutionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype) 
-## ListAuditMitigationActionsExecutionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsResponseTypeDef
-
-def get_value() -> ListAuditMitigationActionsExecutionsResponseTypeDef:
-    return {
-        "actionsExecutions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditMitigationActionsExecutionsResponseTypeDef(TypedDict):
-    actionsExecutions: List[AuditMitigationActionExecutionMetadataTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditMitigationActionExecutionMetadataTypeDef](./type_defs.md#auditmitigationactionexecutionmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef
-
-def get_value() -> ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef(TypedDict):
-    startTime: Union[datetime, str],
-    endTime: Union[datetime, str],
-    auditTaskId: NotRequired[str],
-    findingId: NotRequired[str],
-    taskStatus: NotRequired[AuditMitigationActionsTaskStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAuditMitigationActionsTasksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6607,116 +3678,6 @@ class ListAuditMitigationActionsTasksRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
-## ListAuditMitigationActionsTasksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksResponseTypeDef
-
-def get_value() -> ListAuditMitigationActionsTasksResponseTypeDef:
-    return {
-        "tasks": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditMitigationActionsTasksResponseTypeDef(TypedDict):
-    tasks: List[AuditMitigationActionsTaskMetadataTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditMitigationActionsTaskMetadataTypeDef](./type_defs.md#auditmitigationactionstaskmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef
-
-def get_value() -> ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef:
-    return {
-        "checkName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef(TypedDict):
-    checkName: NotRequired[str],
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAuditSuppressionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestRequestTypeDef
-
-def get_value() -> ListAuditSuppressionsRequestRequestTypeDef:
-    return {
-        "checkName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditSuppressionsRequestRequestTypeDef(TypedDict):
-    checkName: NotRequired[str],
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
-    ascendingOrder: NotRequired[bool],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## ListAuditSuppressionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditSuppressionsResponseTypeDef
-
-def get_value() -> ListAuditSuppressionsResponseTypeDef:
-    return {
-        "suppressions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditSuppressionsResponseTypeDef(TypedDict):
-    suppressions: List[AuditSuppressionTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditSuppressionTypeDef](./type_defs.md#auditsuppressiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuditTasksRequestListAuditTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditTasksRequestListAuditTasksPaginateTypeDef
-
-def get_value() -> ListAuditTasksRequestListAuditTasksPaginateTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditTasksRequestListAuditTasksPaginateTypeDef(TypedDict):
-    startTime: Union[datetime, str],
-    endTime: Union[datetime, str],
-    taskType: NotRequired[AuditTaskTypeType],  # (1)
-    taskStatus: NotRequired[AuditTaskStatusType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
-2. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAuditTasksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6741,48 +3702,6 @@ class ListAuditTasksRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
 2. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
-## ListAuditTasksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuditTasksResponseTypeDef
-
-def get_value() -> ListAuditTasksResponseTypeDef:
-    return {
-        "tasks": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuditTasksResponseTypeDef(TypedDict):
-    tasks: List[AuditTaskMetadataTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuditTaskMetadataTypeDef](./type_defs.md#audittaskmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAuthorizersRequestListAuthorizersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuthorizersRequestListAuthorizersPaginateTypeDef
-
-def get_value() -> ListAuthorizersRequestListAuthorizersPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuthorizersRequestListAuthorizersPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    status: NotRequired[AuthorizerStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAuthorizersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6803,46 +3722,6 @@ class ListAuthorizersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
-## ListAuthorizersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListAuthorizersResponseTypeDef
-
-def get_value() -> ListAuthorizersResponseTypeDef:
-    return {
-        "authorizers": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAuthorizersResponseTypeDef(TypedDict):
-    authorizers: List[AuthorizerSummaryTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuthorizerSummaryTypeDef](./type_defs.md#authorizersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListBillingGroupsRequestListBillingGroupsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListBillingGroupsRequestListBillingGroupsPaginateTypeDef
-
-def get_value() -> ListBillingGroupsRequestListBillingGroupsPaginateTypeDef:
-    return {
-        "namePrefixFilter": ...,
-    }
-```
-
-```python title="Definition"
-class ListBillingGroupsRequestListBillingGroupsPaginateTypeDef(TypedDict):
-    namePrefixFilter: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBillingGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6861,46 +3740,6 @@ class ListBillingGroupsRequestRequestTypeDef(TypedDict):
     namePrefixFilter: NotRequired[str],
 ```
 
-## ListBillingGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListBillingGroupsResponseTypeDef
-
-def get_value() -> ListBillingGroupsResponseTypeDef:
-    return {
-        "billingGroups": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBillingGroupsResponseTypeDef(TypedDict):
-    billingGroups: List[GroupNameAndArnTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCACertificatesRequestListCACertificatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCACertificatesRequestListCACertificatesPaginateTypeDef
-
-def get_value() -> ListCACertificatesRequestListCACertificatesPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListCACertificatesRequestListCACertificatesPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCACertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6919,47 +3758,6 @@ class ListCACertificatesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListCACertificatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCACertificatesResponseTypeDef
-
-def get_value() -> ListCACertificatesResponseTypeDef:
-    return {
-        "certificates": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCACertificatesResponseTypeDef(TypedDict):
-    certificates: List[CACertificateTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CACertificateTypeDef](./type_defs.md#cacertificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef
-
-def get_value() -> ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef:
-    return {
-        "caCertificateId": ...,
-    }
-```
-
-```python title="Definition"
-class ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef(TypedDict):
-    caCertificateId: str,
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCertificatesByCARequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6979,46 +3777,6 @@ class ListCertificatesByCARequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListCertificatesByCAResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCertificatesByCAResponseTypeDef
-
-def get_value() -> ListCertificatesByCAResponseTypeDef:
-    return {
-        "certificates": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCertificatesByCAResponseTypeDef(TypedDict):
-    certificates: List[CertificateTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCertificatesRequestListCertificatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCertificatesRequestListCertificatesPaginateTypeDef
-
-def get_value() -> ListCertificatesRequestListCertificatesPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListCertificatesRequestListCertificatesPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7037,45 +3795,6 @@ class ListCertificatesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListCertificatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCertificatesResponseTypeDef
-
-def get_value() -> ListCertificatesResponseTypeDef:
-    return {
-        "certificates": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCertificatesResponseTypeDef(TypedDict):
-    certificates: List[CertificateTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCustomMetricsRequestListCustomMetricsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCustomMetricsRequestListCustomMetricsPaginateTypeDef
-
-def get_value() -> ListCustomMetricsRequestListCustomMetricsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListCustomMetricsRequestListCustomMetricsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomMetricsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7093,49 +3812,6 @@ class ListCustomMetricsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListCustomMetricsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListCustomMetricsResponseTypeDef
-
-def get_value() -> ListCustomMetricsResponseTypeDef:
-    return {
-        "metricNames": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCustomMetricsResponseTypeDef(TypedDict):
-    metricNames: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef
-
-def get_value() -> ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    violationId: NotRequired[str],
-    thingName: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDetectMitigationActionsExecutionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7158,48 +3834,6 @@ class ListDetectMitigationActionsExecutionsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListDetectMitigationActionsExecutionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsResponseTypeDef
-
-def get_value() -> ListDetectMitigationActionsExecutionsResponseTypeDef:
-    return {
-        "actionsExecutions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDetectMitigationActionsExecutionsResponseTypeDef(TypedDict):
-    actionsExecutions: List[DetectMitigationActionExecutionTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DetectMitigationActionExecutionTypeDef](./type_defs.md#detectmitigationactionexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef
-
-def get_value() -> ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef(TypedDict):
-    startTime: Union[datetime, str],
-    endTime: Union[datetime, str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDetectMitigationActionsTasksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7220,45 +3854,6 @@ class ListDetectMitigationActionsTasksRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListDetectMitigationActionsTasksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksResponseTypeDef
-
-def get_value() -> ListDetectMitigationActionsTasksResponseTypeDef:
-    return {
-        "tasks": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDetectMitigationActionsTasksResponseTypeDef(TypedDict):
-    tasks: List[DetectMitigationActionsTaskSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDimensionsRequestListDimensionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDimensionsRequestListDimensionsPaginateTypeDef
-
-def get_value() -> ListDimensionsRequestListDimensionsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListDimensionsRequestListDimensionsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDimensionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7276,46 +3871,6 @@ class ListDimensionsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListDimensionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDimensionsResponseTypeDef
-
-def get_value() -> ListDimensionsResponseTypeDef:
-    return {
-        "dimensionNames": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDimensionsResponseTypeDef(TypedDict):
-    dimensionNames: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef
-
-def get_value() -> ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef:
-    return {
-        "serviceType": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef(TypedDict):
-    serviceType: NotRequired[ServiceTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDomainConfigurationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7335,45 +3890,6 @@ class ListDomainConfigurationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
-## ListDomainConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListDomainConfigurationsResponseTypeDef
-
-def get_value() -> ListDomainConfigurationsResponseTypeDef:
-    return {
-        "domainConfigurations": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainConfigurationsResponseTypeDef(TypedDict):
-    domainConfigurations: List[DomainConfigurationSummaryTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainConfigurationSummaryTypeDef](./type_defs.md#domainconfigurationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFleetMetricsRequestListFleetMetricsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListFleetMetricsRequestListFleetMetricsPaginateTypeDef
-
-def get_value() -> ListFleetMetricsRequestListFleetMetricsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListFleetMetricsRequestListFleetMetricsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFleetMetricsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7391,45 +3907,6 @@ class ListFleetMetricsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListFleetMetricsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListFleetMetricsResponseTypeDef
-
-def get_value() -> ListFleetMetricsResponseTypeDef:
-    return {
-        "fleetMetrics": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFleetMetricsResponseTypeDef(TypedDict):
-    fleetMetrics: List[FleetMetricNameAndArnTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FleetMetricNameAndArnTypeDef](./type_defs.md#fleetmetricnameandarntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIndicesRequestListIndicesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListIndicesRequestListIndicesPaginateTypeDef
-
-def get_value() -> ListIndicesRequestListIndicesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListIndicesRequestListIndicesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIndicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7447,47 +3924,6 @@ class ListIndicesRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListIndicesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListIndicesResponseTypeDef
-
-def get_value() -> ListIndicesResponseTypeDef:
-    return {
-        "indexNames": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIndicesResponseTypeDef(TypedDict):
-    indexNames: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef
-
-def get_value() -> ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef(TypedDict):
-    jobId: str,
-    status: NotRequired[JobExecutionStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobExecutionsForJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7508,50 +3944,6 @@ class ListJobExecutionsForJobRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-## ListJobExecutionsForJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobExecutionsForJobResponseTypeDef
-
-def get_value() -> ListJobExecutionsForJobResponseTypeDef:
-    return {
-        "executionSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobExecutionsForJobResponseTypeDef(TypedDict):
-    executionSummaries: List[JobExecutionSummaryForJobTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobExecutionSummaryForJobTypeDef](./type_defs.md#jobexecutionsummaryforjobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef
-
-def get_value() -> ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef(TypedDict):
-    thingName: str,
-    status: NotRequired[JobExecutionStatusType],  # (1)
-    namespaceId: NotRequired[str],
-    jobId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobExecutionsForThingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7574,45 +3966,6 @@ class ListJobExecutionsForThingRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
-## ListJobExecutionsForThingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobExecutionsForThingResponseTypeDef
-
-def get_value() -> ListJobExecutionsForThingResponseTypeDef:
-    return {
-        "executionSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobExecutionsForThingResponseTypeDef(TypedDict):
-    executionSummaries: List[JobExecutionSummaryForThingTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobExecutionSummaryForThingTypeDef](./type_defs.md#jobexecutionsummaryforthingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
-
-def get_value() -> ListJobTemplatesRequestListJobTemplatesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobTemplatesRequestListJobTemplatesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7630,52 +3983,6 @@ class ListJobTemplatesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListJobTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobTemplatesResponseTypeDef
-
-def get_value() -> ListJobTemplatesResponseTypeDef:
-    return {
-        "jobTemplates": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobTemplatesResponseTypeDef(TypedDict):
-    jobTemplates: List[JobTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTemplateSummaryTypeDef](./type_defs.md#jobtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListJobsRequestListJobsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobsRequestListJobsPaginateTypeDef
-
-def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
-    return {
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
-    status: NotRequired[JobStatusType],  # (1)
-    targetSelection: NotRequired[TargetSelectionType],  # (2)
-    thingGroupName: NotRequired[str],
-    thingGroupId: NotRequired[str],
-    namespaceId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7700,28 +4007,6 @@ class ListJobsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-## ListJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListJobsResponseTypeDef
-
-def get_value() -> ListJobsResponseTypeDef:
-    return {
-        "jobs": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobsResponseTypeDef(TypedDict):
-    jobs: List[JobSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListManagedJobTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7740,55 +4025,26 @@ class ListManagedJobTemplatesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListManagedJobTemplatesResponseTypeDef
+## ManagedJobTemplateSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListManagedJobTemplatesResponseTypeDef
+from mypy_boto3_iot.type_defs import ManagedJobTemplateSummaryTypeDef
 
-def get_value() -> ListManagedJobTemplatesResponseTypeDef:
+def get_value() -> ManagedJobTemplateSummaryTypeDef:
     return {
-        "managedJobTemplates": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "templateArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListManagedJobTemplatesResponseTypeDef(TypedDict):
-    managedJobTemplates: List[ManagedJobTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ManagedJobTemplateSummaryTypeDef(TypedDict):
+    templateArn: NotRequired[str],
+    templateName: NotRequired[str],
+    description: NotRequired[str],
+    environments: NotRequired[List[str]],
+    templateVersion: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ManagedJobTemplateSummaryTypeDef](./type_defs.md#managedjobtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMetricValuesRequestListMetricValuesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListMetricValuesRequestListMetricValuesPaginateTypeDef
-
-def get_value() -> ListMetricValuesRequestListMetricValuesPaginateTypeDef:
-    return {
-        "thingName": ...,
-        "metricName": ...,
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListMetricValuesRequestListMetricValuesPaginateTypeDef(TypedDict):
-    thingName: str,
-    metricName: str,
-    startTime: Union[datetime, str],
-    endTime: Union[datetime, str],
-    dimensionName: NotRequired[str],
-    dimensionValueOperator: NotRequired[DimensionValueOperatorType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMetricValuesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7816,47 +4072,6 @@ class ListMetricValuesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
-## ListMetricValuesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListMetricValuesResponseTypeDef
-
-def get_value() -> ListMetricValuesResponseTypeDef:
-    return {
-        "metricDatumList": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMetricValuesResponseTypeDef(TypedDict):
-    metricDatumList: List[MetricDatumTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMitigationActionsRequestListMitigationActionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListMitigationActionsRequestListMitigationActionsPaginateTypeDef
-
-def get_value() -> ListMitigationActionsRequestListMitigationActionsPaginateTypeDef:
-    return {
-        "actionType": ...,
-    }
-```
-
-```python title="Definition"
-class ListMitigationActionsRequestListMitigationActionsPaginateTypeDef(TypedDict):
-    actionType: NotRequired[MitigationActionTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMitigationActionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7876,47 +4091,24 @@ class ListMitigationActionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
-## ListMitigationActionsResponseTypeDef
+## MitigationActionIdentifierTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListMitigationActionsResponseTypeDef
+from mypy_boto3_iot.type_defs import MitigationActionIdentifierTypeDef
 
-def get_value() -> ListMitigationActionsResponseTypeDef:
+def get_value() -> MitigationActionIdentifierTypeDef:
     return {
-        "actionIdentifiers": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "actionName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListMitigationActionsResponseTypeDef(TypedDict):
-    actionIdentifiers: List[MitigationActionIdentifierTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MitigationActionIdentifierTypeDef(TypedDict):
+    actionName: NotRequired[str],
+    actionArn: NotRequired[str],
+    creationDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: MitigationActionIdentifierTypeDef](./type_defs.md#mitigationactionidentifiertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef
-
-def get_value() -> ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef:
-    return {
-        "otaUpdateStatus": ...,
-    }
-```
-
-```python title="Definition"
-class ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef(TypedDict):
-    otaUpdateStatus: NotRequired[OTAUpdateStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOTAUpdatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7936,46 +4128,24 @@ class ListOTAUpdatesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
-## ListOTAUpdatesResponseTypeDef
+## OTAUpdateSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListOTAUpdatesResponseTypeDef
+from mypy_boto3_iot.type_defs import OTAUpdateSummaryTypeDef
 
-def get_value() -> ListOTAUpdatesResponseTypeDef:
+def get_value() -> OTAUpdateSummaryTypeDef:
     return {
-        "otaUpdates": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "otaUpdateId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListOTAUpdatesResponseTypeDef(TypedDict):
-    otaUpdates: List[OTAUpdateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class OTAUpdateSummaryTypeDef(TypedDict):
+    otaUpdateId: NotRequired[str],
+    otaUpdateArn: NotRequired[str],
+    creationDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: OTAUpdateSummaryTypeDef](./type_defs.md#otaupdatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef
-
-def get_value() -> ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOutgoingCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7994,46 +4164,27 @@ class ListOutgoingCertificatesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListOutgoingCertificatesResponseTypeDef
+## OutgoingCertificateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListOutgoingCertificatesResponseTypeDef
+from mypy_boto3_iot.type_defs import OutgoingCertificateTypeDef
 
-def get_value() -> ListOutgoingCertificatesResponseTypeDef:
+def get_value() -> OutgoingCertificateTypeDef:
     return {
-        "outgoingCertificates": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
+        "certificateArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListOutgoingCertificatesResponseTypeDef(TypedDict):
-    outgoingCertificates: List[OutgoingCertificateTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class OutgoingCertificateTypeDef(TypedDict):
+    certificateArn: NotRequired[str],
+    certificateId: NotRequired[str],
+    transferredTo: NotRequired[str],
+    transferDate: NotRequired[datetime],
+    transferMessage: NotRequired[str],
+    creationDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: OutgoingCertificateTypeDef](./type_defs.md#outgoingcertificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPoliciesRequestListPoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPoliciesRequestListPoliciesPaginateTypeDef
-
-def get_value() -> ListPoliciesRequestListPoliciesPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListPoliciesRequestListPoliciesPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8052,47 +4203,6 @@ class ListPoliciesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPoliciesResponseTypeDef
-
-def get_value() -> ListPoliciesResponseTypeDef:
-    return {
-        "policies": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPoliciesResponseTypeDef(TypedDict):
-    policies: List[PolicyTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef
-
-def get_value() -> ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef:
-    return {
-        "policyName": ...,
-    }
-```
-
-```python title="Definition"
-class ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef(TypedDict):
-    policyName: str,
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPolicyPrincipalsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8112,27 +4222,6 @@ class ListPolicyPrincipalsRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListPolicyPrincipalsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPolicyPrincipalsResponseTypeDef
-
-def get_value() -> ListPolicyPrincipalsResponseTypeDef:
-    return {
-        "principals": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPolicyPrincipalsResponseTypeDef(TypedDict):
-    principals: List[str],
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPolicyVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8149,45 +4238,24 @@ class ListPolicyVersionsRequestRequestTypeDef(TypedDict):
     policyName: str,
 ```
 
-## ListPolicyVersionsResponseTypeDef
+## PolicyVersionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPolicyVersionsResponseTypeDef
+from mypy_boto3_iot.type_defs import PolicyVersionTypeDef
 
-def get_value() -> ListPolicyVersionsResponseTypeDef:
+def get_value() -> PolicyVersionTypeDef:
     return {
-        "policyVersions": ...,
-        "ResponseMetadata": ...,
+        "versionId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListPolicyVersionsResponseTypeDef(TypedDict):
-    policyVersions: List[PolicyVersionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PolicyVersionTypeDef(TypedDict):
+    versionId: NotRequired[str],
+    isDefaultVersion: NotRequired[bool],
+    createDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef
-
-def get_value() -> ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef:
-    return {
-        "principal": ...,
-    }
-```
-
-```python title="Definition"
-class ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef(TypedDict):
-    principal: str,
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrincipalPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8207,46 +4275,6 @@ class ListPrincipalPoliciesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListPrincipalPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPrincipalPoliciesResponseTypeDef
-
-def get_value() -> ListPrincipalPoliciesResponseTypeDef:
-    return {
-        "policies": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPrincipalPoliciesResponseTypeDef(TypedDict):
-    policies: List[PolicyTypeDef],  # (1)
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef
-
-def get_value() -> ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef:
-    return {
-        "principal": ...,
-    }
-```
-
-```python title="Definition"
-class ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef(TypedDict):
-    principal: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrincipalThingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8265,45 +4293,6 @@ class ListPrincipalThingsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListPrincipalThingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListPrincipalThingsResponseTypeDef
-
-def get_value() -> ListPrincipalThingsResponseTypeDef:
-    return {
-        "things": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPrincipalThingsResponseTypeDef(TypedDict):
-    things: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef
-
-def get_value() -> ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef:
-    return {
-        "templateName": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef(TypedDict):
-    templateName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProvisioningTemplateVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8322,45 +4311,24 @@ class ListProvisioningTemplateVersionsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListProvisioningTemplateVersionsResponseTypeDef
+## ProvisioningTemplateVersionSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsResponseTypeDef
+from mypy_boto3_iot.type_defs import ProvisioningTemplateVersionSummaryTypeDef
 
-def get_value() -> ListProvisioningTemplateVersionsResponseTypeDef:
+def get_value() -> ProvisioningTemplateVersionSummaryTypeDef:
     return {
-        "versions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "versionId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListProvisioningTemplateVersionsResponseTypeDef(TypedDict):
-    versions: List[ProvisioningTemplateVersionSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ProvisioningTemplateVersionSummaryTypeDef(TypedDict):
+    versionId: NotRequired[int],
+    creationDate: NotRequired[datetime],
+    isDefaultVersion: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ProvisioningTemplateVersionSummaryTypeDef](./type_defs.md#provisioningtemplateversionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef
-
-def get_value() -> ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProvisioningTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8378,46 +4346,27 @@ class ListProvisioningTemplatesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListProvisioningTemplatesResponseTypeDef
+## ProvisioningTemplateSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListProvisioningTemplatesResponseTypeDef
+from mypy_boto3_iot.type_defs import ProvisioningTemplateSummaryTypeDef
 
-def get_value() -> ListProvisioningTemplatesResponseTypeDef:
+def get_value() -> ProvisioningTemplateSummaryTypeDef:
     return {
-        "templates": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "templateArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListProvisioningTemplatesResponseTypeDef(TypedDict):
-    templates: List[ProvisioningTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ProvisioningTemplateSummaryTypeDef(TypedDict):
+    templateArn: NotRequired[str],
+    templateName: NotRequired[str],
+    description: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastModifiedDate: NotRequired[datetime],
+    enabled: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ProvisioningTemplateSummaryTypeDef](./type_defs.md#provisioningtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRoleAliasesRequestListRoleAliasesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListRoleAliasesRequestListRoleAliasesPaginateTypeDef
-
-def get_value() -> ListRoleAliasesRequestListRoleAliasesPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoleAliasesRequestListRoleAliasesPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRoleAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8436,44 +4385,6 @@ class ListRoleAliasesRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListRoleAliasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListRoleAliasesResponseTypeDef
-
-def get_value() -> ListRoleAliasesResponseTypeDef:
-    return {
-        "roleAliases": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoleAliasesResponseTypeDef(TypedDict):
-    roleAliases: List[str],
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef
-
-def get_value() -> ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListScheduledAuditsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8491,47 +4402,28 @@ class ListScheduledAuditsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListScheduledAuditsResponseTypeDef
+## ScheduledAuditMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListScheduledAuditsResponseTypeDef
+from mypy_boto3_iot.type_defs import ScheduledAuditMetadataTypeDef
 
-def get_value() -> ListScheduledAuditsResponseTypeDef:
+def get_value() -> ScheduledAuditMetadataTypeDef:
     return {
-        "scheduledAudits": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "scheduledAuditName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListScheduledAuditsResponseTypeDef(TypedDict):
-    scheduledAudits: List[ScheduledAuditMetadataTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ScheduledAuditMetadataTypeDef(TypedDict):
+    scheduledAuditName: NotRequired[str],
+    scheduledAuditArn: NotRequired[str],
+    frequency: NotRequired[AuditFrequencyType],  # (1)
+    dayOfMonth: NotRequired[str],
+    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
 ```
 
-1. See [:material-code-braces: ScheduledAuditMetadataTypeDef](./type_defs.md#scheduledauditmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef
-
-def get_value() -> ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef:
-    return {
-        "securityProfileTargetArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef(TypedDict):
-    securityProfileTargetArn: str,
-    recursive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
 ## ListSecurityProfilesForTargetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8551,47 +4443,6 @@ class ListSecurityProfilesForTargetRequestRequestTypeDef(TypedDict):
     recursive: NotRequired[bool],
 ```
 
-## ListSecurityProfilesForTargetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetResponseTypeDef
-
-def get_value() -> ListSecurityProfilesForTargetResponseTypeDef:
-    return {
-        "securityProfileTargetMappings": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityProfilesForTargetResponseTypeDef(TypedDict):
-    securityProfileTargetMappings: List[SecurityProfileTargetMappingTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SecurityProfileTargetMappingTypeDef](./type_defs.md#securityprofiletargetmappingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
-
-def get_value() -> ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef:
-    return {
-        "dimensionName": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef(TypedDict):
-    dimensionName: NotRequired[str],
-    metricName: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityProfilesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8611,46 +4462,24 @@ class ListSecurityProfilesRequestRequestTypeDef(TypedDict):
     metricName: NotRequired[str],
 ```
 
-## ListSecurityProfilesResponseTypeDef
+## SecurityProfileIdentifierTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListSecurityProfilesResponseTypeDef
+from mypy_boto3_iot.type_defs import SecurityProfileIdentifierTypeDef
 
-def get_value() -> ListSecurityProfilesResponseTypeDef:
+def get_value() -> SecurityProfileIdentifierTypeDef:
     return {
-        "securityProfileIdentifiers": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "name": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListSecurityProfilesResponseTypeDef(TypedDict):
-    securityProfileIdentifiers: List[SecurityProfileIdentifierTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SecurityProfileIdentifierTypeDef(TypedDict):
+    name: str,
+    arn: str,
 ```
 
-1. See [:material-code-braces: SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStreamsRequestListStreamsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListStreamsRequestListStreamsPaginateTypeDef
-
-def get_value() -> ListStreamsRequestListStreamsPaginateTypeDef:
-    return {
-        "ascendingOrder": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamsRequestListStreamsPaginateTypeDef(TypedDict):
-    ascendingOrder: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStreamsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8669,46 +4498,25 @@ class ListStreamsRequestRequestTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
 ```
 
-## ListStreamsResponseTypeDef
+## StreamSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListStreamsResponseTypeDef
+from mypy_boto3_iot.type_defs import StreamSummaryTypeDef
 
-def get_value() -> ListStreamsResponseTypeDef:
+def get_value() -> StreamSummaryTypeDef:
     return {
-        "streams": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "streamId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListStreamsResponseTypeDef(TypedDict):
-    streams: List[StreamSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class StreamSummaryTypeDef(TypedDict):
+    streamId: NotRequired[str],
+    streamArn: NotRequired[str],
+    streamVersion: NotRequired[int],
+    description: NotRequired[str],
 ```
 
-1. See [:material-code-braces: StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
-    resourceArn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8726,46 +4534,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: List[TagTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef
-
-def get_value() -> ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef:
-    return {
-        "policyName": ...,
-    }
-```
-
-```python title="Definition"
-class ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef(TypedDict):
-    policyName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTargetsForPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8784,45 +4552,6 @@ class ListTargetsForPolicyRequestRequestTypeDef(TypedDict):
     pageSize: NotRequired[int],
 ```
 
-## ListTargetsForPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTargetsForPolicyResponseTypeDef
-
-def get_value() -> ListTargetsForPolicyResponseTypeDef:
-    return {
-        "targets": ...,
-        "nextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTargetsForPolicyResponseTypeDef(TypedDict):
-    targets: List[str],
-    nextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef
-
-def get_value() -> ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef:
-    return {
-        "securityProfileName": ...,
-    }
-```
-
-```python title="Definition"
-class ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef(TypedDict):
-    securityProfileName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTargetsForSecurityProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8841,46 +4570,22 @@ class ListTargetsForSecurityProfileRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListTargetsForSecurityProfileResponseTypeDef
+## SecurityProfileTargetTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileResponseTypeDef
+from mypy_boto3_iot.type_defs import SecurityProfileTargetTypeDef
 
-def get_value() -> ListTargetsForSecurityProfileResponseTypeDef:
+def get_value() -> SecurityProfileTargetTypeDef:
     return {
-        "securityProfileTargets": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTargetsForSecurityProfileResponseTypeDef(TypedDict):
-    securityProfileTargets: List[SecurityProfileTargetTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SecurityProfileTargetTypeDef(TypedDict):
+    arn: str,
 ```
 
-1. See [:material-code-braces: SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef
-
-def get_value() -> ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef(TypedDict):
-    thingName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingGroupsForThingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8899,48 +4604,6 @@ class ListThingGroupsForThingRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListThingGroupsForThingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingGroupsForThingResponseTypeDef
-
-def get_value() -> ListThingGroupsForThingResponseTypeDef:
-    return {
-        "thingGroups": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingGroupsForThingResponseTypeDef(TypedDict):
-    thingGroups: List[GroupNameAndArnTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingGroupsRequestListThingGroupsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingGroupsRequestListThingGroupsPaginateTypeDef
-
-def get_value() -> ListThingGroupsRequestListThingGroupsPaginateTypeDef:
-    return {
-        "parentGroup": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingGroupsRequestListThingGroupsPaginateTypeDef(TypedDict):
-    parentGroup: NotRequired[str],
-    namePrefixFilter: NotRequired[str],
-    recursive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8961,46 +4624,6 @@ class ListThingGroupsRequestRequestTypeDef(TypedDict):
     recursive: NotRequired[bool],
 ```
 
-## ListThingGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingGroupsResponseTypeDef
-
-def get_value() -> ListThingGroupsResponseTypeDef:
-    return {
-        "thingGroups": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingGroupsResponseTypeDef(TypedDict):
-    thingGroups: List[GroupNameAndArnTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef
-
-def get_value() -> ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef(TypedDict):
-    thingName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingPrincipalsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9019,48 +4642,6 @@ class ListThingPrincipalsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListThingPrincipalsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingPrincipalsResponseTypeDef
-
-def get_value() -> ListThingPrincipalsResponseTypeDef:
-    return {
-        "principals": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingPrincipalsResponseTypeDef(TypedDict):
-    principals: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef
-
-def get_value() -> ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef:
-    return {
-        "taskId": ...,
-        "reportType": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef(TypedDict):
-    taskId: str,
-    reportType: ReportTypeType,  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingRegistrationTaskReportsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9082,49 +4663,6 @@ class ListThingRegistrationTaskReportsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
-## ListThingRegistrationTaskReportsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseTypeDef
-
-def get_value() -> ListThingRegistrationTaskReportsResponseTypeDef:
-    return {
-        "resourceLinks": ...,
-        "reportType": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingRegistrationTaskReportsResponseTypeDef(TypedDict):
-    resourceLinks: List[str],
-    reportType: ReportTypeType,  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef
-
-def get_value() -> ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef:
-    return {
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef(TypedDict):
-    status: NotRequired[StatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingRegistrationTasksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9144,45 +4682,6 @@ class ListThingRegistrationTasksRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## ListThingRegistrationTasksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingRegistrationTasksResponseTypeDef
-
-def get_value() -> ListThingRegistrationTasksResponseTypeDef:
-    return {
-        "taskIds": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingRegistrationTasksResponseTypeDef(TypedDict):
-    taskIds: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingTypesRequestListThingTypesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingTypesRequestListThingTypesPaginateTypeDef
-
-def get_value() -> ListThingTypesRequestListThingTypesPaginateTypeDef:
-    return {
-        "thingTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingTypesRequestListThingTypesPaginateTypeDef(TypedDict):
-    thingTypeName: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingTypesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9201,46 +4700,6 @@ class ListThingTypesRequestRequestTypeDef(TypedDict):
     thingTypeName: NotRequired[str],
 ```
 
-## ListThingTypesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingTypesResponseTypeDef
-
-def get_value() -> ListThingTypesResponseTypeDef:
-    return {
-        "thingTypes": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingTypesResponseTypeDef(TypedDict):
-    thingTypes: List[ThingTypeDefinitionTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThingTypeDefinitionTypeDef](./type_defs.md#thingtypedefinitiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef
-
-def get_value() -> ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef:
-    return {
-        "billingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef(TypedDict):
-    billingGroupName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingsInBillingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9259,46 +4718,6 @@ class ListThingsInBillingGroupRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListThingsInBillingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsInBillingGroupResponseTypeDef
-
-def get_value() -> ListThingsInBillingGroupResponseTypeDef:
-    return {
-        "things": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingsInBillingGroupResponseTypeDef(TypedDict):
-    things: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef
-
-def get_value() -> ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef:
-    return {
-        "thingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef(TypedDict):
-    thingGroupName: str,
-    recursive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingsInThingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9318,48 +4737,6 @@ class ListThingsInThingGroupRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## ListThingsInThingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsInThingGroupResponseTypeDef
-
-def get_value() -> ListThingsInThingGroupResponseTypeDef:
-    return {
-        "things": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingsInThingGroupResponseTypeDef(TypedDict):
-    things: List[str],
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThingsRequestListThingsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsRequestListThingsPaginateTypeDef
-
-def get_value() -> ListThingsRequestListThingsPaginateTypeDef:
-    return {
-        "attributeName": ...,
-    }
-```
-
-```python title="Definition"
-class ListThingsRequestListThingsPaginateTypeDef(TypedDict):
-    attributeName: NotRequired[str],
-    attributeValue: NotRequired[str],
-    thingTypeName: NotRequired[str],
-    usePrefixAttributeValue: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9381,45 +4758,26 @@ class ListThingsRequestRequestTypeDef(TypedDict):
     usePrefixAttributeValue: NotRequired[bool],
 ```
 
-## ListThingsResponseTypeDef
+## ThingAttributeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListThingsResponseTypeDef
+from mypy_boto3_iot.type_defs import ThingAttributeTypeDef
 
-def get_value() -> ListThingsResponseTypeDef:
+def get_value() -> ThingAttributeTypeDef:
     return {
-        "things": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "thingName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListThingsResponseTypeDef(TypedDict):
-    things: List[ThingAttributeTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ThingAttributeTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    thingTypeName: NotRequired[str],
+    thingArn: NotRequired[str],
+    attributes: NotRequired[Dict[str, str]],
+    version: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ThingAttributeTypeDef](./type_defs.md#thingattributetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef
-
-def get_value() -> ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTopicRuleDestinationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9437,47 +4795,6 @@ class ListTopicRuleDestinationsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListTopicRuleDestinationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsResponseTypeDef
-
-def get_value() -> ListTopicRuleDestinationsResponseTypeDef:
-    return {
-        "destinationSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTopicRuleDestinationsResponseTypeDef(TypedDict):
-    destinationSummaries: List[TopicRuleDestinationSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TopicRuleDestinationSummaryTypeDef](./type_defs.md#topicruledestinationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTopicRulesRequestListTopicRulesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTopicRulesRequestListTopicRulesPaginateTypeDef
-
-def get_value() -> ListTopicRulesRequestListTopicRulesPaginateTypeDef:
-    return {
-        "topic": ...,
-    }
-```
-
-```python title="Definition"
-class ListTopicRulesRequestListTopicRulesPaginateTypeDef(TypedDict):
-    topic: NotRequired[str],
-    ruleDisabled: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTopicRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9497,47 +4814,26 @@ class ListTopicRulesRequestRequestTypeDef(TypedDict):
     ruleDisabled: NotRequired[bool],
 ```
 
-## ListTopicRulesResponseTypeDef
+## TopicRuleListItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListTopicRulesResponseTypeDef
+from mypy_boto3_iot.type_defs import TopicRuleListItemTypeDef
 
-def get_value() -> ListTopicRulesResponseTypeDef:
+def get_value() -> TopicRuleListItemTypeDef:
     return {
-        "rules": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "ruleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTopicRulesResponseTypeDef(TypedDict):
-    rules: List[TopicRuleListItemTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TopicRuleListItemTypeDef(TypedDict):
+    ruleArn: NotRequired[str],
+    ruleName: NotRequired[str],
+    topicPattern: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    ruleDisabled: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: TopicRuleListItemTypeDef](./type_defs.md#topicrulelistitemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef
-
-def get_value() -> ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef:
-    return {
-        "targetType": ...,
-    }
-```
-
-```python title="Definition"
-class ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef(TypedDict):
-    targetType: NotRequired[LogTargetTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListV2LoggingLevelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9557,55 +4853,6 @@ class ListV2LoggingLevelsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
-## ListV2LoggingLevelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListV2LoggingLevelsResponseTypeDef
-
-def get_value() -> ListV2LoggingLevelsResponseTypeDef:
-    return {
-        "logTargetConfigurations": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListV2LoggingLevelsResponseTypeDef(TypedDict):
-    logTargetConfigurations: List[LogTargetConfigurationTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LogTargetConfigurationTypeDef](./type_defs.md#logtargetconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListViolationEventsRequestListViolationEventsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListViolationEventsRequestListViolationEventsPaginateTypeDef
-
-def get_value() -> ListViolationEventsRequestListViolationEventsPaginateTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListViolationEventsRequestListViolationEventsPaginateTypeDef(TypedDict):
-    startTime: Union[datetime, str],
-    endTime: Union[datetime, str],
-    thingName: NotRequired[str],
-    securityProfileName: NotRequired[str],
-    behaviorCriteriaType: NotRequired[BehaviorCriteriaTypeType],  # (1)
-    listSuppressedAlerts: NotRequired[bool],
-    verificationState: NotRequired[VerificationStateType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
-2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListViolationEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9633,47 +4880,6 @@ class ListViolationEventsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
 2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-## ListViolationEventsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ListViolationEventsResponseTypeDef
-
-def get_value() -> ListViolationEventsResponseTypeDef:
-    return {
-        "violationEvents": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListViolationEventsResponseTypeDef(TypedDict):
-    violationEvents: List[ViolationEventTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ViolationEventTypeDef](./type_defs.md#violationeventtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogTargetConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import LogTargetConfigurationTypeDef
-
-def get_value() -> LogTargetConfigurationTypeDef:
-    return {
-        "logTarget": ...,
-    }
-```
-
-```python title="Definition"
-class LogTargetConfigurationTypeDef(TypedDict):
-    logTarget: NotRequired[LogTargetTypeDef],  # (1)
-    logLevel: NotRequired[LogLevelType],  # (2)
-```
-
-1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
-2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## LogTargetTypeDef
 
 ```python title="Usage Example"
@@ -9710,183 +4916,73 @@ class LoggingOptionsPayloadTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-## MachineLearningDetectionConfigTypeDef
+## PublishFindingToSnsParamsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MachineLearningDetectionConfigTypeDef
+from mypy_boto3_iot.type_defs import PublishFindingToSnsParamsTypeDef
 
-def get_value() -> MachineLearningDetectionConfigTypeDef:
+def get_value() -> PublishFindingToSnsParamsTypeDef:
     return {
-        "confidenceLevel": ...,
+        "topicArn": ...,
     }
 ```
 
 ```python title="Definition"
-class MachineLearningDetectionConfigTypeDef(TypedDict):
-    confidenceLevel: ConfidenceLevelType,  # (1)
+class PublishFindingToSnsParamsTypeDef(TypedDict):
+    topicArn: str,
 ```
 
-1. See [:material-code-brackets: ConfidenceLevelType](./literals.md#confidenceleveltype) 
-## ManagedJobTemplateSummaryTypeDef
+## ReplaceDefaultPolicyVersionParamsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ManagedJobTemplateSummaryTypeDef
+from mypy_boto3_iot.type_defs import ReplaceDefaultPolicyVersionParamsTypeDef
 
-def get_value() -> ManagedJobTemplateSummaryTypeDef:
+def get_value() -> ReplaceDefaultPolicyVersionParamsTypeDef:
     return {
-        "templateArn": ...,
+        "templateName": ...,
     }
 ```
 
 ```python title="Definition"
-class ManagedJobTemplateSummaryTypeDef(TypedDict):
-    templateArn: NotRequired[str],
-    templateName: NotRequired[str],
-    description: NotRequired[str],
-    environments: NotRequired[List[str]],
-    templateVersion: NotRequired[str],
+class ReplaceDefaultPolicyVersionParamsTypeDef(TypedDict):
+    templateName: PolicyTemplateNameType,  # (1)
 ```
 
-## MetricDatumTypeDef
+1. See [:material-code-brackets: PolicyTemplateNameType](./literals.md#policytemplatenametype) 
+## UpdateCACertificateParamsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MetricDatumTypeDef
+from mypy_boto3_iot.type_defs import UpdateCACertificateParamsTypeDef
 
-def get_value() -> MetricDatumTypeDef:
+def get_value() -> UpdateCACertificateParamsTypeDef:
     return {
-        "timestamp": ...,
+        "action": ...,
     }
 ```
 
 ```python title="Definition"
-class MetricDatumTypeDef(TypedDict):
-    timestamp: NotRequired[datetime],
-    value: NotRequired[MetricValueTypeDef],  # (1)
+class UpdateCACertificateParamsTypeDef(TypedDict):
+    action: CACertificateUpdateActionType,  # (1)
 ```
 
-1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
-## MetricDimensionTypeDef
+1. See [:material-code-brackets: CACertificateUpdateActionType](./literals.md#cacertificateupdateactiontype) 
+## UpdateDeviceCertificateParamsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MetricDimensionTypeDef
+from mypy_boto3_iot.type_defs import UpdateDeviceCertificateParamsTypeDef
 
-def get_value() -> MetricDimensionTypeDef:
+def get_value() -> UpdateDeviceCertificateParamsTypeDef:
     return {
-        "dimensionName": ...,
+        "action": ...,
     }
 ```
 
 ```python title="Definition"
-class MetricDimensionTypeDef(TypedDict):
-    dimensionName: str,
-    operator: NotRequired[DimensionValueOperatorType],  # (1)
+class UpdateDeviceCertificateParamsTypeDef(TypedDict):
+    action: DeviceCertificateUpdateActionType,  # (1)
 ```
 
-1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
-## MetricToRetainTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MetricToRetainTypeDef
-
-def get_value() -> MetricToRetainTypeDef:
-    return {
-        "metric": ...,
-    }
-```
-
-```python title="Definition"
-class MetricToRetainTypeDef(TypedDict):
-    metric: str,
-    metricDimension: NotRequired[MetricDimensionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
-## MetricValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MetricValueTypeDef
-
-def get_value() -> MetricValueTypeDef:
-    return {
-        "count": ...,
-    }
-```
-
-```python title="Definition"
-class MetricValueTypeDef(TypedDict):
-    count: NotRequired[int],
-    cidrs: NotRequired[Sequence[str]],
-    ports: NotRequired[Sequence[int]],
-    number: NotRequired[float],
-    numbers: NotRequired[Sequence[float]],
-    strings: NotRequired[Sequence[str]],
-```
-
-## MitigationActionIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MitigationActionIdentifierTypeDef
-
-def get_value() -> MitigationActionIdentifierTypeDef:
-    return {
-        "actionName": ...,
-    }
-```
-
-```python title="Definition"
-class MitigationActionIdentifierTypeDef(TypedDict):
-    actionName: NotRequired[str],
-    actionArn: NotRequired[str],
-    creationDate: NotRequired[datetime],
-```
-
-## MitigationActionParamsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MitigationActionParamsTypeDef
-
-def get_value() -> MitigationActionParamsTypeDef:
-    return {
-        "updateDeviceCertificateParams": ...,
-    }
-```
-
-```python title="Definition"
-class MitigationActionParamsTypeDef(TypedDict):
-    updateDeviceCertificateParams: NotRequired[UpdateDeviceCertificateParamsTypeDef],  # (1)
-    updateCACertificateParams: NotRequired[UpdateCACertificateParamsTypeDef],  # (2)
-    addThingsToThingGroupParams: NotRequired[AddThingsToThingGroupParamsTypeDef],  # (3)
-    replaceDefaultPolicyVersionParams: NotRequired[ReplaceDefaultPolicyVersionParamsTypeDef],  # (4)
-    enableIoTLoggingParams: NotRequired[EnableIoTLoggingParamsTypeDef],  # (5)
-    publishFindingToSnsParams: NotRequired[PublishFindingToSnsParamsTypeDef],  # (6)
-```
-
-1. See [:material-code-braces: UpdateDeviceCertificateParamsTypeDef](./type_defs.md#updatedevicecertificateparamstypedef) 
-2. See [:material-code-braces: UpdateCACertificateParamsTypeDef](./type_defs.md#updatecacertificateparamstypedef) 
-3. See [:material-code-braces: AddThingsToThingGroupParamsTypeDef](./type_defs.md#addthingstothinggroupparamstypedef) 
-4. See [:material-code-braces: ReplaceDefaultPolicyVersionParamsTypeDef](./type_defs.md#replacedefaultpolicyversionparamstypedef) 
-5. See [:material-code-braces: EnableIoTLoggingParamsTypeDef](./type_defs.md#enableiotloggingparamstypedef) 
-6. See [:material-code-braces: PublishFindingToSnsParamsTypeDef](./type_defs.md#publishfindingtosnsparamstypedef) 
-## MitigationActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import MitigationActionTypeDef
-
-def get_value() -> MitigationActionTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class MitigationActionTypeDef(TypedDict):
-    name: NotRequired[str],
-    id: NotRequired[str],
-    roleArn: NotRequired[str],
-    actionParams: NotRequired[MitigationActionParamsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+1. See [:material-code-brackets: DeviceCertificateUpdateActionType](./literals.md#devicecertificateupdateactiontype) 
 ## MqttContextTypeDef
 
 ```python title="Usage Example"
@@ -9905,202 +5001,6 @@ class MqttContextTypeDef(TypedDict):
     clientId: NotRequired[str],
 ```
 
-## NonCompliantResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import NonCompliantResourceTypeDef
-
-def get_value() -> NonCompliantResourceTypeDef:
-    return {
-        "resourceType": ...,
-    }
-```
-
-```python title="Definition"
-class NonCompliantResourceTypeDef(TypedDict):
-    resourceType: NotRequired[ResourceTypeType],  # (1)
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (2)
-    additionalInfo: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## OTAUpdateFileTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import OTAUpdateFileTypeDef
-
-def get_value() -> OTAUpdateFileTypeDef:
-    return {
-        "fileName": ...,
-    }
-```
-
-```python title="Definition"
-class OTAUpdateFileTypeDef(TypedDict):
-    fileName: NotRequired[str],
-    fileType: NotRequired[int],
-    fileVersion: NotRequired[str],
-    fileLocation: NotRequired[FileLocationTypeDef],  # (1)
-    codeSigning: NotRequired[CodeSigningTypeDef],  # (2)
-    attributes: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: FileLocationTypeDef](./type_defs.md#filelocationtypedef) 
-2. See [:material-code-braces: CodeSigningTypeDef](./type_defs.md#codesigningtypedef) 
-## OTAUpdateInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import OTAUpdateInfoTypeDef
-
-def get_value() -> OTAUpdateInfoTypeDef:
-    return {
-        "otaUpdateId": ...,
-    }
-```
-
-```python title="Definition"
-class OTAUpdateInfoTypeDef(TypedDict):
-    otaUpdateId: NotRequired[str],
-    otaUpdateArn: NotRequired[str],
-    creationDate: NotRequired[datetime],
-    lastModifiedDate: NotRequired[datetime],
-    description: NotRequired[str],
-    targets: NotRequired[List[str]],
-    protocols: NotRequired[List[ProtocolType]],  # (1)
-    awsJobExecutionsRolloutConfig: NotRequired[AwsJobExecutionsRolloutConfigTypeDef],  # (2)
-    awsJobPresignedUrlConfig: NotRequired[AwsJobPresignedUrlConfigTypeDef],  # (3)
-    targetSelection: NotRequired[TargetSelectionType],  # (4)
-    otaUpdateFiles: NotRequired[List[OTAUpdateFileTypeDef]],  # (5)
-    otaUpdateStatus: NotRequired[OTAUpdateStatusType],  # (6)
-    awsIotJobId: NotRequired[str],
-    awsIotJobArn: NotRequired[str],
-    errorInfo: NotRequired[ErrorInfoTypeDef],  # (7)
-    additionalParameters: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
-2. See [:material-code-braces: AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef) 
-3. See [:material-code-braces: AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef) 
-4. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
-5. See [:material-code-braces: OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef) 
-6. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
-7. See [:material-code-braces: ErrorInfoTypeDef](./type_defs.md#errorinfotypedef) 
-## OTAUpdateSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import OTAUpdateSummaryTypeDef
-
-def get_value() -> OTAUpdateSummaryTypeDef:
-    return {
-        "otaUpdateId": ...,
-    }
-```
-
-```python title="Definition"
-class OTAUpdateSummaryTypeDef(TypedDict):
-    otaUpdateId: NotRequired[str],
-    otaUpdateArn: NotRequired[str],
-    creationDate: NotRequired[datetime],
-```
-
-## OpenSearchActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import OpenSearchActionTypeDef
-
-def get_value() -> OpenSearchActionTypeDef:
-    return {
-        "roleArn": ...,
-        "endpoint": ...,
-        "index": ...,
-        "type": ...,
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class OpenSearchActionTypeDef(TypedDict):
-    roleArn: str,
-    endpoint: str,
-    index: str,
-    type: str,
-    id: str,
-```
-
-## OutgoingCertificateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import OutgoingCertificateTypeDef
-
-def get_value() -> OutgoingCertificateTypeDef:
-    return {
-        "certificateArn": ...,
-    }
-```
-
-```python title="Definition"
-class OutgoingCertificateTypeDef(TypedDict):
-    certificateArn: NotRequired[str],
-    certificateId: NotRequired[str],
-    transferredTo: NotRequired[str],
-    transferDate: NotRequired[datetime],
-    transferMessage: NotRequired[str],
-    creationDate: NotRequired[datetime],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PercentPairTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PercentPairTypeDef
-
-def get_value() -> PercentPairTypeDef:
-    return {
-        "percent": ...,
-    }
-```
-
-```python title="Definition"
-class PercentPairTypeDef(TypedDict):
-    percent: NotRequired[float],
-    value: NotRequired[float],
-```
-
-## PolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PolicyTypeDef
-
-def get_value() -> PolicyTypeDef:
-    return {
-        "policyName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyTypeDef(TypedDict):
-    policyName: NotRequired[str],
-    policyArn: NotRequired[str],
-```
-
 ## PolicyVersionIdentifierTypeDef
 
 ```python title="Usage Example"
@@ -10116,150 +5016,6 @@ def get_value() -> PolicyVersionIdentifierTypeDef:
 class PolicyVersionIdentifierTypeDef(TypedDict):
     policyName: NotRequired[str],
     policyVersionId: NotRequired[str],
-```
-
-## PolicyVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PolicyVersionTypeDef
-
-def get_value() -> PolicyVersionTypeDef:
-    return {
-        "versionId": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyVersionTypeDef(TypedDict):
-    versionId: NotRequired[str],
-    isDefaultVersion: NotRequired[bool],
-    createDate: NotRequired[datetime],
-```
-
-## PresignedUrlConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PresignedUrlConfigTypeDef
-
-def get_value() -> PresignedUrlConfigTypeDef:
-    return {
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class PresignedUrlConfigTypeDef(TypedDict):
-    roleArn: NotRequired[str],
-    expiresInSec: NotRequired[int],
-```
-
-## ProvisioningHookTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ProvisioningHookTypeDef
-
-def get_value() -> ProvisioningHookTypeDef:
-    return {
-        "targetArn": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningHookTypeDef(TypedDict):
-    targetArn: str,
-    payloadVersion: NotRequired[str],
-```
-
-## ProvisioningTemplateSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ProvisioningTemplateSummaryTypeDef
-
-def get_value() -> ProvisioningTemplateSummaryTypeDef:
-    return {
-        "templateArn": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningTemplateSummaryTypeDef(TypedDict):
-    templateArn: NotRequired[str],
-    templateName: NotRequired[str],
-    description: NotRequired[str],
-    creationDate: NotRequired[datetime],
-    lastModifiedDate: NotRequired[datetime],
-    enabled: NotRequired[bool],
-```
-
-## ProvisioningTemplateVersionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ProvisioningTemplateVersionSummaryTypeDef
-
-def get_value() -> ProvisioningTemplateVersionSummaryTypeDef:
-    return {
-        "versionId": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningTemplateVersionSummaryTypeDef(TypedDict):
-    versionId: NotRequired[int],
-    creationDate: NotRequired[datetime],
-    isDefaultVersion: NotRequired[bool],
-```
-
-## PublishFindingToSnsParamsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PublishFindingToSnsParamsTypeDef
-
-def get_value() -> PublishFindingToSnsParamsTypeDef:
-    return {
-        "topicArn": ...,
-    }
-```
-
-```python title="Definition"
-class PublishFindingToSnsParamsTypeDef(TypedDict):
-    topicArn: str,
-```
-
-## PutAssetPropertyValueEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PutAssetPropertyValueEntryTypeDef
-
-def get_value() -> PutAssetPropertyValueEntryTypeDef:
-    return {
-        "propertyValues": ...,
-    }
-```
-
-```python title="Definition"
-class PutAssetPropertyValueEntryTypeDef(TypedDict):
-    propertyValues: Sequence[AssetPropertyValueTypeDef],  # (1)
-    entryId: NotRequired[str],
-    assetId: NotRequired[str],
-    propertyId: NotRequired[str],
-    propertyAlias: NotRequired[str],
-```
-
-1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
-## PutItemInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import PutItemInputTypeDef
-
-def get_value() -> PutItemInputTypeDef:
-    return {
-        "tableName": ...,
-    }
-```
-
-```python title="Definition"
-class PutItemInputTypeDef(TypedDict):
-    tableName: str,
 ```
 
 ## PutVerificationStateOnViolationRequestRequestTypeDef
@@ -10282,68 +5038,6 @@ class PutVerificationStateOnViolationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-## RateIncreaseCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RateIncreaseCriteriaTypeDef
-
-def get_value() -> RateIncreaseCriteriaTypeDef:
-    return {
-        "numberOfNotifiedThings": ...,
-    }
-```
-
-```python title="Definition"
-class RateIncreaseCriteriaTypeDef(TypedDict):
-    numberOfNotifiedThings: NotRequired[int],
-    numberOfSucceededThings: NotRequired[int],
-```
-
-## RegisterCACertificateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegisterCACertificateRequestRequestTypeDef
-
-def get_value() -> RegisterCACertificateRequestRequestTypeDef:
-    return {
-        "caCertificate": ...,
-        "verificationCertificate": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterCACertificateRequestRequestTypeDef(TypedDict):
-    caCertificate: str,
-    verificationCertificate: str,
-    setAsActive: NotRequired[bool],
-    allowAutoRegistration: NotRequired[bool],
-    registrationConfig: NotRequired[RegistrationConfigTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## RegisterCACertificateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegisterCACertificateResponseTypeDef
-
-def get_value() -> RegisterCACertificateResponseTypeDef:
-    return {
-        "certificateArn": ...,
-        "certificateId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterCACertificateResponseTypeDef(TypedDict):
-    certificateArn: str,
-    certificateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10364,27 +5058,6 @@ class RegisterCertificateRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
-## RegisterCertificateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegisterCertificateResponseTypeDef
-
-def get_value() -> RegisterCertificateResponseTypeDef:
-    return {
-        "certificateArn": ...,
-        "certificateId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterCertificateResponseTypeDef(TypedDict):
-    certificateArn: str,
-    certificateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterCertificateWithoutCARequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10403,27 +5076,6 @@ class RegisterCertificateWithoutCARequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
-## RegisterCertificateWithoutCAResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCAResponseTypeDef
-
-def get_value() -> RegisterCertificateWithoutCAResponseTypeDef:
-    return {
-        "certificateArn": ...,
-        "certificateId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterCertificateWithoutCAResponseTypeDef(TypedDict):
-    certificateArn: str,
-    certificateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterThingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10439,44 +5091,6 @@ def get_value() -> RegisterThingRequestRequestTypeDef:
 class RegisterThingRequestRequestTypeDef(TypedDict):
     templateBody: str,
     parameters: NotRequired[Mapping[str, str]],
-```
-
-## RegisterThingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegisterThingResponseTypeDef
-
-def get_value() -> RegisterThingResponseTypeDef:
-    return {
-        "certificatePem": ...,
-        "resourceArns": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterThingResponseTypeDef(TypedDict):
-    certificatePem: str,
-    resourceArns: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RegistrationConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RegistrationConfigTypeDef
-
-def get_value() -> RegistrationConfigTypeDef:
-    return {
-        "templateBody": ...,
-    }
-```
-
-```python title="Definition"
-class RegistrationConfigTypeDef(TypedDict):
-    templateBody: NotRequired[str],
-    roleArn: NotRequired[str],
 ```
 
 ## RejectCertificateTransferRequestRequestTypeDef
@@ -10496,26 +5110,6 @@ class RejectCertificateTransferRequestRequestTypeDef(TypedDict):
     rejectReason: NotRequired[str],
 ```
 
-## RelatedResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RelatedResourceTypeDef
-
-def get_value() -> RelatedResourceTypeDef:
-    return {
-        "resourceType": ...,
-    }
-```
-
-```python title="Definition"
-class RelatedResourceTypeDef(TypedDict):
-    resourceType: NotRequired[ResourceTypeType],  # (1)
-    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (2)
-    additionalInfo: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 ## RemoveThingFromBillingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10554,247 +5148,6 @@ class RemoveThingFromThingGroupRequestRequestTypeDef(TypedDict):
     thingArn: NotRequired[str],
 ```
 
-## ReplaceDefaultPolicyVersionParamsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ReplaceDefaultPolicyVersionParamsTypeDef
-
-def get_value() -> ReplaceDefaultPolicyVersionParamsTypeDef:
-    return {
-        "templateName": ...,
-    }
-```
-
-```python title="Definition"
-class ReplaceDefaultPolicyVersionParamsTypeDef(TypedDict):
-    templateName: PolicyTemplateNameType,  # (1)
-```
-
-1. See [:material-code-brackets: PolicyTemplateNameType](./literals.md#policytemplatenametype) 
-## ReplaceTopicRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ReplaceTopicRuleRequestRequestTypeDef
-
-def get_value() -> ReplaceTopicRuleRequestRequestTypeDef:
-    return {
-        "ruleName": ...,
-        "topicRulePayload": ...,
-    }
-```
-
-```python title="Definition"
-class ReplaceTopicRuleRequestRequestTypeDef(TypedDict):
-    ruleName: str,
-    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
-## RepublishActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RepublishActionTypeDef
-
-def get_value() -> RepublishActionTypeDef:
-    return {
-        "roleArn": ...,
-        "topic": ...,
-    }
-```
-
-```python title="Definition"
-class RepublishActionTypeDef(TypedDict):
-    roleArn: str,
-    topic: str,
-    qos: NotRequired[int],
-```
-
-## ResourceIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ResourceIdentifierTypeDef
-
-def get_value() -> ResourceIdentifierTypeDef:
-    return {
-        "deviceCertificateId": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceIdentifierTypeDef(TypedDict):
-    deviceCertificateId: NotRequired[str],
-    caCertificateId: NotRequired[str],
-    cognitoIdentityPoolId: NotRequired[str],
-    clientId: NotRequired[str],
-    policyVersionIdentifier: NotRequired[PolicyVersionIdentifierTypeDef],  # (1)
-    account: NotRequired[str],
-    iamRoleArn: NotRequired[str],
-    roleAliasArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: PolicyVersionIdentifierTypeDef](./type_defs.md#policyversionidentifiertypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RetryCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RetryCriteriaTypeDef
-
-def get_value() -> RetryCriteriaTypeDef:
-    return {
-        "failureType": ...,
-        "numberOfRetries": ...,
-    }
-```
-
-```python title="Definition"
-class RetryCriteriaTypeDef(TypedDict):
-    failureType: RetryableFailureTypeType,  # (1)
-    numberOfRetries: int,
-```
-
-1. See [:material-code-brackets: RetryableFailureTypeType](./literals.md#retryablefailuretypetype) 
-## RoleAliasDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RoleAliasDescriptionTypeDef
-
-def get_value() -> RoleAliasDescriptionTypeDef:
-    return {
-        "roleAlias": ...,
-    }
-```
-
-```python title="Definition"
-class RoleAliasDescriptionTypeDef(TypedDict):
-    roleAlias: NotRequired[str],
-    roleAliasArn: NotRequired[str],
-    roleArn: NotRequired[str],
-    owner: NotRequired[str],
-    credentialDurationSeconds: NotRequired[int],
-    creationDate: NotRequired[datetime],
-    lastModifiedDate: NotRequired[datetime],
-```
-
-## S3ActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import S3ActionTypeDef
-
-def get_value() -> S3ActionTypeDef:
-    return {
-        "roleArn": ...,
-        "bucketName": ...,
-        "key": ...,
-    }
-```
-
-```python title="Definition"
-class S3ActionTypeDef(TypedDict):
-    roleArn: str,
-    bucketName: str,
-    key: str,
-    cannedAcl: NotRequired[CannedAccessControlListType],  # (1)
-```
-
-1. See [:material-code-brackets: CannedAccessControlListType](./literals.md#cannedaccesscontrollisttype) 
-## S3DestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import S3DestinationTypeDef
-
-def get_value() -> S3DestinationTypeDef:
-    return {
-        "bucket": ...,
-    }
-```
-
-```python title="Definition"
-class S3DestinationTypeDef(TypedDict):
-    bucket: NotRequired[str],
-    prefix: NotRequired[str],
-```
-
-## S3LocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import S3LocationTypeDef
-
-def get_value() -> S3LocationTypeDef:
-    return {
-        "bucket": ...,
-    }
-```
-
-```python title="Definition"
-class S3LocationTypeDef(TypedDict):
-    bucket: NotRequired[str],
-    key: NotRequired[str],
-    version: NotRequired[str],
-```
-
-## SalesforceActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SalesforceActionTypeDef
-
-def get_value() -> SalesforceActionTypeDef:
-    return {
-        "token": ...,
-        "url": ...,
-    }
-```
-
-```python title="Definition"
-class SalesforceActionTypeDef(TypedDict):
-    token: str,
-    url: str,
-```
-
-## ScheduledAuditMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ScheduledAuditMetadataTypeDef
-
-def get_value() -> ScheduledAuditMetadataTypeDef:
-    return {
-        "scheduledAuditName": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduledAuditMetadataTypeDef(TypedDict):
-    scheduledAuditName: NotRequired[str],
-    scheduledAuditArn: NotRequired[str],
-    frequency: NotRequired[AuditFrequencyType],  # (1)
-    dayOfMonth: NotRequired[str],
-    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
-```
-
-1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
-2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
 ## SearchIndexRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10815,103 +5168,26 @@ class SearchIndexRequestRequestTypeDef(TypedDict):
     queryVersion: NotRequired[str],
 ```
 
-## SearchIndexResponseTypeDef
+## ThingGroupDocumentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SearchIndexResponseTypeDef
+from mypy_boto3_iot.type_defs import ThingGroupDocumentTypeDef
 
-def get_value() -> SearchIndexResponseTypeDef:
+def get_value() -> ThingGroupDocumentTypeDef:
     return {
-        "nextToken": ...,
-        "things": ...,
-        "thingGroups": ...,
-        "ResponseMetadata": ...,
+        "thingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class SearchIndexResponseTypeDef(TypedDict):
-    nextToken: str,
-    things: List[ThingDocumentTypeDef],  # (1)
-    thingGroups: List[ThingGroupDocumentTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ThingGroupDocumentTypeDef(TypedDict):
+    thingGroupName: NotRequired[str],
+    thingGroupId: NotRequired[str],
+    thingGroupDescription: NotRequired[str],
+    attributes: NotRequired[Dict[str, str]],
+    parentGroupNames: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: ThingDocumentTypeDef](./type_defs.md#thingdocumenttypedef) 
-2. See [:material-code-braces: ThingGroupDocumentTypeDef](./type_defs.md#thinggroupdocumenttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SecurityProfileIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SecurityProfileIdentifierTypeDef
-
-def get_value() -> SecurityProfileIdentifierTypeDef:
-    return {
-        "name": ...,
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class SecurityProfileIdentifierTypeDef(TypedDict):
-    name: str,
-    arn: str,
-```
-
-## SecurityProfileTargetMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SecurityProfileTargetMappingTypeDef
-
-def get_value() -> SecurityProfileTargetMappingTypeDef:
-    return {
-        "securityProfileIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class SecurityProfileTargetMappingTypeDef(TypedDict):
-    securityProfileIdentifier: NotRequired[SecurityProfileIdentifierTypeDef],  # (1)
-    target: NotRequired[SecurityProfileTargetTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef) 
-2. See [:material-code-braces: SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef) 
-## SecurityProfileTargetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SecurityProfileTargetTypeDef
-
-def get_value() -> SecurityProfileTargetTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class SecurityProfileTargetTypeDef(TypedDict):
-    arn: str,
-```
-
-## ServerCertificateSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ServerCertificateSummaryTypeDef
-
-def get_value() -> ServerCertificateSummaryTypeDef:
-    return {
-        "serverCertificateArn": ...,
-    }
-```
-
-```python title="Definition"
-class ServerCertificateSummaryTypeDef(TypedDict):
-    serverCertificateArn: NotRequired[str],
-    serverCertificateStatus: NotRequired[ServerCertificateStatusType],  # (1)
-    serverCertificateStatusDetail: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ServerCertificateStatusType](./literals.md#servercertificatestatustype) 
 ## SetDefaultAuthorizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10928,27 +5204,6 @@ class SetDefaultAuthorizerRequestRequestTypeDef(TypedDict):
     authorizerName: str,
 ```
 
-## SetDefaultAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SetDefaultAuthorizerResponseTypeDef
-
-def get_value() -> SetDefaultAuthorizerResponseTypeDef:
-    return {
-        "authorizerName": ...,
-        "authorizerArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SetDefaultAuthorizerResponseTypeDef(TypedDict):
-    authorizerName: str,
-    authorizerArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetDefaultPolicyVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10967,43 +5222,6 @@ class SetDefaultPolicyVersionRequestRequestTypeDef(TypedDict):
     policyVersionId: str,
 ```
 
-## SetLoggingOptionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SetLoggingOptionsRequestRequestTypeDef
-
-def get_value() -> SetLoggingOptionsRequestRequestTypeDef:
-    return {
-        "loggingOptionsPayload": ...,
-    }
-```
-
-```python title="Definition"
-class SetLoggingOptionsRequestRequestTypeDef(TypedDict):
-    loggingOptionsPayload: LoggingOptionsPayloadTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef) 
-## SetV2LoggingLevelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SetV2LoggingLevelRequestRequestTypeDef
-
-def get_value() -> SetV2LoggingLevelRequestRequestTypeDef:
-    return {
-        "logTarget": ...,
-        "logLevel": ...,
-    }
-```
-
-```python title="Definition"
-class SetV2LoggingLevelRequestRequestTypeDef(TypedDict):
-    logTarget: LogTargetTypeDef,  # (1)
-    logLevel: LogLevelType,  # (2)
-```
-
-1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
-2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## SetV2LoggingOptionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11023,26 +5241,6 @@ class SetV2LoggingOptionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-## SigV4AuthorizationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SigV4AuthorizationTypeDef
-
-def get_value() -> SigV4AuthorizationTypeDef:
-    return {
-        "signingRegion": ...,
-        "serviceName": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class SigV4AuthorizationTypeDef(TypedDict):
-    signingRegion: str,
-    serviceName: str,
-    roleArn: str,
-```
-
 ## SigningProfileParameterTypeDef
 
 ```python title="Usage Example"
@@ -11061,133 +5259,6 @@ class SigningProfileParameterTypeDef(TypedDict):
     certificatePathOnDevice: NotRequired[str],
 ```
 
-## SnsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SnsActionTypeDef
-
-def get_value() -> SnsActionTypeDef:
-    return {
-        "targetArn": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class SnsActionTypeDef(TypedDict):
-    targetArn: str,
-    roleArn: str,
-    messageFormat: NotRequired[MessageFormatType],  # (1)
-```
-
-1. See [:material-code-brackets: MessageFormatType](./literals.md#messageformattype) 
-## SqsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SqsActionTypeDef
-
-def get_value() -> SqsActionTypeDef:
-    return {
-        "roleArn": ...,
-        "queueUrl": ...,
-    }
-```
-
-```python title="Definition"
-class SqsActionTypeDef(TypedDict):
-    roleArn: str,
-    queueUrl: str,
-    useBase64: NotRequired[bool],
-```
-
-## StartAuditMitigationActionsTaskRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskRequestRequestTypeDef
-
-def get_value() -> StartAuditMitigationActionsTaskRequestRequestTypeDef:
-    return {
-        "taskId": ...,
-        "target": ...,
-        "auditCheckToActionsMapping": ...,
-        "clientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class StartAuditMitigationActionsTaskRequestRequestTypeDef(TypedDict):
-    taskId: str,
-    target: AuditMitigationActionsTaskTargetTypeDef,  # (1)
-    auditCheckToActionsMapping: Mapping[str, Sequence[str]],
-    clientRequestToken: str,
-```
-
-1. See [:material-code-braces: AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef) 
-## StartAuditMitigationActionsTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskResponseTypeDef
-
-def get_value() -> StartAuditMitigationActionsTaskResponseTypeDef:
-    return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartAuditMitigationActionsTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartDetectMitigationActionsTaskRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskRequestRequestTypeDef
-
-def get_value() -> StartDetectMitigationActionsTaskRequestRequestTypeDef:
-    return {
-        "taskId": ...,
-        "target": ...,
-        "actions": ...,
-        "clientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class StartDetectMitigationActionsTaskRequestRequestTypeDef(TypedDict):
-    taskId: str,
-    target: DetectMitigationActionsTaskTargetTypeDef,  # (1)
-    actions: Sequence[str],
-    clientRequestToken: str,
-    violationEventOccurrenceRange: NotRequired[ViolationEventOccurrenceRangeTypeDef],  # (2)
-    includeOnlyActiveViolations: NotRequired[bool],
-    includeSuppressedAlerts: NotRequired[bool],
-```
-
-1. See [:material-code-braces: DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef) 
-2. See [:material-code-braces: ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef) 
-## StartDetectMitigationActionsTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskResponseTypeDef
-
-def get_value() -> StartDetectMitigationActionsTaskResponseTypeDef:
-    return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartDetectMitigationActionsTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartOnDemandAuditTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11204,45 +5275,6 @@ class StartOnDemandAuditTaskRequestRequestTypeDef(TypedDict):
     targetCheckNames: Sequence[str],
 ```
 
-## StartOnDemandAuditTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskResponseTypeDef
-
-def get_value() -> StartOnDemandAuditTaskResponseTypeDef:
-    return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartOnDemandAuditTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartSigningJobParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartSigningJobParameterTypeDef
-
-def get_value() -> StartSigningJobParameterTypeDef:
-    return {
-        "signingProfileParameter": ...,
-    }
-```
-
-```python title="Definition"
-class StartSigningJobParameterTypeDef(TypedDict):
-    signingProfileParameter: NotRequired[SigningProfileParameterTypeDef],  # (1)
-    signingProfileName: NotRequired[str],
-    destination: NotRequired[DestinationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: SigningProfileParameterTypeDef](./type_defs.md#signingprofileparametertypedef) 
-2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
 ## StartThingRegistrationTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11265,83 +5297,6 @@ class StartThingRegistrationTaskRequestRequestTypeDef(TypedDict):
     roleArn: str,
 ```
 
-## StartThingRegistrationTaskResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StartThingRegistrationTaskResponseTypeDef
-
-def get_value() -> StartThingRegistrationTaskResponseTypeDef:
-    return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartThingRegistrationTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StatisticalThresholdTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StatisticalThresholdTypeDef
-
-def get_value() -> StatisticalThresholdTypeDef:
-    return {
-        "statistic": ...,
-    }
-```
-
-```python title="Definition"
-class StatisticalThresholdTypeDef(TypedDict):
-    statistic: NotRequired[str],
-```
-
-## StatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StatisticsTypeDef
-
-def get_value() -> StatisticsTypeDef:
-    return {
-        "count": ...,
-    }
-```
-
-```python title="Definition"
-class StatisticsTypeDef(TypedDict):
-    count: NotRequired[int],
-    average: NotRequired[float],
-    sum: NotRequired[float],
-    minimum: NotRequired[float],
-    maximum: NotRequired[float],
-    sumOfSquares: NotRequired[float],
-    variance: NotRequired[float],
-    stdDeviation: NotRequired[float],
-```
-
-## StepFunctionsActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StepFunctionsActionTypeDef
-
-def get_value() -> StepFunctionsActionTypeDef:
-    return {
-        "stateMachineName": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class StepFunctionsActionTypeDef(TypedDict):
-    stateMachineName: str,
-    roleArn: str,
-    executionNamePrefix: NotRequired[str],
-```
-
 ## StopThingRegistrationTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11358,289 +5313,20 @@ class StopThingRegistrationTaskRequestRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## StreamFileTypeDef
+## TlsContextTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StreamFileTypeDef
+from mypy_boto3_iot.type_defs import TlsContextTypeDef
 
-def get_value() -> StreamFileTypeDef:
+def get_value() -> TlsContextTypeDef:
     return {
-        "fileId": ...,
+        "serverName": ...,
     }
 ```
 
 ```python title="Definition"
-class StreamFileTypeDef(TypedDict):
-    fileId: NotRequired[int],
-    s3Location: NotRequired[S3LocationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-## StreamInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StreamInfoTypeDef
-
-def get_value() -> StreamInfoTypeDef:
-    return {
-        "streamId": ...,
-    }
-```
-
-```python title="Definition"
-class StreamInfoTypeDef(TypedDict):
-    streamId: NotRequired[str],
-    streamArn: NotRequired[str],
-    streamVersion: NotRequired[int],
-    description: NotRequired[str],
-    files: NotRequired[List[StreamFileTypeDef]],  # (1)
-    createdAt: NotRequired[datetime],
-    lastUpdatedAt: NotRequired[datetime],
-    roleArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
-## StreamSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StreamSummaryTypeDef
-
-def get_value() -> StreamSummaryTypeDef:
-    return {
-        "streamId": ...,
-    }
-```
-
-```python title="Definition"
-class StreamSummaryTypeDef(TypedDict):
-    streamId: NotRequired[str],
-    streamArn: NotRequired[str],
-    streamVersion: NotRequired[int],
-    description: NotRequired[str],
-```
-
-## StreamTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import StreamTypeDef
-
-def get_value() -> StreamTypeDef:
-    return {
-        "streamId": ...,
-    }
-```
-
-```python title="Definition"
-class StreamTypeDef(TypedDict):
-    streamId: NotRequired[str],
-    fileId: NotRequired[int],
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: NotRequired[str],
-```
-
-## TaskStatisticsForAuditCheckTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TaskStatisticsForAuditCheckTypeDef
-
-def get_value() -> TaskStatisticsForAuditCheckTypeDef:
-    return {
-        "totalFindingsCount": ...,
-    }
-```
-
-```python title="Definition"
-class TaskStatisticsForAuditCheckTypeDef(TypedDict):
-    totalFindingsCount: NotRequired[int],
-    failedFindingsCount: NotRequired[int],
-    succeededFindingsCount: NotRequired[int],
-    skippedFindingsCount: NotRequired[int],
-    canceledFindingsCount: NotRequired[int],
-```
-
-## TaskStatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TaskStatisticsTypeDef
-
-def get_value() -> TaskStatisticsTypeDef:
-    return {
-        "totalChecks": ...,
-    }
-```
-
-```python title="Definition"
-class TaskStatisticsTypeDef(TypedDict):
-    totalChecks: NotRequired[int],
-    inProgressChecks: NotRequired[int],
-    waitingForDataCollectionChecks: NotRequired[int],
-    compliantChecks: NotRequired[int],
-    nonCompliantChecks: NotRequired[int],
-    failedChecks: NotRequired[int],
-    canceledChecks: NotRequired[int],
-```
-
-## TermsAggregationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TermsAggregationTypeDef
-
-def get_value() -> TermsAggregationTypeDef:
-    return {
-        "maxBuckets": ...,
-    }
-```
-
-```python title="Definition"
-class TermsAggregationTypeDef(TypedDict):
-    maxBuckets: NotRequired[int],
-```
-
-## TestAuthorizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TestAuthorizationRequestRequestTypeDef
-
-def get_value() -> TestAuthorizationRequestRequestTypeDef:
-    return {
-        "authInfos": ...,
-    }
-```
-
-```python title="Definition"
-class TestAuthorizationRequestRequestTypeDef(TypedDict):
-    authInfos: Sequence[AuthInfoTypeDef],  # (1)
-    principal: NotRequired[str],
-    cognitoIdentityPoolId: NotRequired[str],
-    clientId: NotRequired[str],
-    policyNamesToAdd: NotRequired[Sequence[str]],
-    policyNamesToSkip: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: AuthInfoTypeDef](./type_defs.md#authinfotypedef) 
-## TestAuthorizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TestAuthorizationResponseTypeDef
-
-def get_value() -> TestAuthorizationResponseTypeDef:
-    return {
-        "authResults": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestAuthorizationResponseTypeDef(TypedDict):
-    authResults: List[AuthResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuthResultTypeDef](./type_defs.md#authresulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TestInvokeAuthorizerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
-
-def get_value() -> TestInvokeAuthorizerRequestRequestTypeDef:
-    return {
-        "authorizerName": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeAuthorizerRequestRequestTypeDef(TypedDict):
-    authorizerName: str,
-    token: NotRequired[str],
-    tokenSignature: NotRequired[str],
-    httpContext: NotRequired[HttpContextTypeDef],  # (1)
-    mqttContext: NotRequired[MqttContextTypeDef],  # (2)
-    tlsContext: NotRequired[TlsContextTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: HttpContextTypeDef](./type_defs.md#httpcontexttypedef) 
-2. See [:material-code-braces: MqttContextTypeDef](./type_defs.md#mqttcontexttypedef) 
-3. See [:material-code-braces: TlsContextTypeDef](./type_defs.md#tlscontexttypedef) 
-## TestInvokeAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TestInvokeAuthorizerResponseTypeDef
-
-def get_value() -> TestInvokeAuthorizerResponseTypeDef:
-    return {
-        "isAuthenticated": ...,
-        "principalId": ...,
-        "policyDocuments": ...,
-        "refreshAfterInSeconds": ...,
-        "disconnectAfterInSeconds": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeAuthorizerResponseTypeDef(TypedDict):
-    isAuthenticated: bool,
-    principalId: str,
-    policyDocuments: List[str],
-    refreshAfterInSeconds: int,
-    disconnectAfterInSeconds: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ThingAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingAttributeTypeDef
-
-def get_value() -> ThingAttributeTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ThingAttributeTypeDef(TypedDict):
-    thingName: NotRequired[str],
-    thingTypeName: NotRequired[str],
-    thingArn: NotRequired[str],
-    attributes: NotRequired[Dict[str, str]],
-    version: NotRequired[int],
+class TlsContextTypeDef(TypedDict):
+    serverName: NotRequired[str],
 ```
 
 ## ThingConnectivityTypeDef
@@ -11661,232 +5347,6 @@ class ThingConnectivityTypeDef(TypedDict):
     disconnectReason: NotRequired[str],
 ```
 
-## ThingDocumentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingDocumentTypeDef
-
-def get_value() -> ThingDocumentTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class ThingDocumentTypeDef(TypedDict):
-    thingName: NotRequired[str],
-    thingId: NotRequired[str],
-    thingTypeName: NotRequired[str],
-    thingGroupNames: NotRequired[List[str]],
-    attributes: NotRequired[Dict[str, str]],
-    shadow: NotRequired[str],
-    deviceDefender: NotRequired[str],
-    connectivity: NotRequired[ThingConnectivityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ThingConnectivityTypeDef](./type_defs.md#thingconnectivitytypedef) 
-## ThingGroupDocumentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingGroupDocumentTypeDef
-
-def get_value() -> ThingGroupDocumentTypeDef:
-    return {
-        "thingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ThingGroupDocumentTypeDef(TypedDict):
-    thingGroupName: NotRequired[str],
-    thingGroupId: NotRequired[str],
-    thingGroupDescription: NotRequired[str],
-    attributes: NotRequired[Dict[str, str]],
-    parentGroupNames: NotRequired[List[str]],
-```
-
-## ThingGroupIndexingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingGroupIndexingConfigurationTypeDef
-
-def get_value() -> ThingGroupIndexingConfigurationTypeDef:
-    return {
-        "thingGroupIndexingMode": ...,
-    }
-```
-
-```python title="Definition"
-class ThingGroupIndexingConfigurationTypeDef(TypedDict):
-    thingGroupIndexingMode: ThingGroupIndexingModeType,  # (1)
-    managedFields: NotRequired[List[FieldTypeDef]],  # (2)
-    customFields: NotRequired[List[FieldTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: ThingGroupIndexingModeType](./literals.md#thinggroupindexingmodetype) 
-2. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
-3. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
-## ThingGroupMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingGroupMetadataTypeDef
-
-def get_value() -> ThingGroupMetadataTypeDef:
-    return {
-        "parentGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ThingGroupMetadataTypeDef(TypedDict):
-    parentGroupName: NotRequired[str],
-    rootToParentThingGroups: NotRequired[List[GroupNameAndArnTypeDef]],  # (1)
-    creationDate: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
-## ThingGroupPropertiesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingGroupPropertiesTypeDef
-
-def get_value() -> ThingGroupPropertiesTypeDef:
-    return {
-        "thingGroupDescription": ...,
-    }
-```
-
-```python title="Definition"
-class ThingGroupPropertiesTypeDef(TypedDict):
-    thingGroupDescription: NotRequired[str],
-    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
-## ThingIndexingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingIndexingConfigurationTypeDef
-
-def get_value() -> ThingIndexingConfigurationTypeDef:
-    return {
-        "thingIndexingMode": ...,
-    }
-```
-
-```python title="Definition"
-class ThingIndexingConfigurationTypeDef(TypedDict):
-    thingIndexingMode: ThingIndexingModeType,  # (1)
-    thingConnectivityIndexingMode: NotRequired[ThingConnectivityIndexingModeType],  # (2)
-    deviceDefenderIndexingMode: NotRequired[DeviceDefenderIndexingModeType],  # (3)
-    namedShadowIndexingMode: NotRequired[NamedShadowIndexingModeType],  # (4)
-    managedFields: NotRequired[List[FieldTypeDef]],  # (5)
-    customFields: NotRequired[List[FieldTypeDef]],  # (5)
-```
-
-1. See [:material-code-brackets: ThingIndexingModeType](./literals.md#thingindexingmodetype) 
-2. See [:material-code-brackets: ThingConnectivityIndexingModeType](./literals.md#thingconnectivityindexingmodetype) 
-3. See [:material-code-brackets: DeviceDefenderIndexingModeType](./literals.md#devicedefenderindexingmodetype) 
-4. See [:material-code-brackets: NamedShadowIndexingModeType](./literals.md#namedshadowindexingmodetype) 
-5. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
-6. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
-## ThingTypeDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingTypeDefinitionTypeDef
-
-def get_value() -> ThingTypeDefinitionTypeDef:
-    return {
-        "thingTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class ThingTypeDefinitionTypeDef(TypedDict):
-    thingTypeName: NotRequired[str],
-    thingTypeArn: NotRequired[str],
-    thingTypeProperties: NotRequired[ThingTypePropertiesTypeDef],  # (1)
-    thingTypeMetadata: NotRequired[ThingTypeMetadataTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
-2. See [:material-code-braces: ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef) 
-## ThingTypeMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingTypeMetadataTypeDef
-
-def get_value() -> ThingTypeMetadataTypeDef:
-    return {
-        "deprecated": ...,
-    }
-```
-
-```python title="Definition"
-class ThingTypeMetadataTypeDef(TypedDict):
-    deprecated: NotRequired[bool],
-    deprecationDate: NotRequired[datetime],
-    creationDate: NotRequired[datetime],
-```
-
-## ThingTypePropertiesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ThingTypePropertiesTypeDef
-
-def get_value() -> ThingTypePropertiesTypeDef:
-    return {
-        "thingTypeDescription": ...,
-    }
-```
-
-```python title="Definition"
-class ThingTypePropertiesTypeDef(TypedDict):
-    thingTypeDescription: NotRequired[str],
-    searchableAttributes: NotRequired[Sequence[str]],
-```
-
-## TimeoutConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TimeoutConfigTypeDef
-
-def get_value() -> TimeoutConfigTypeDef:
-    return {
-        "inProgressTimeoutInMinutes": ...,
-    }
-```
-
-```python title="Definition"
-class TimeoutConfigTypeDef(TypedDict):
-    inProgressTimeoutInMinutes: NotRequired[int],
-```
-
-## TimestreamActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TimestreamActionTypeDef
-
-def get_value() -> TimestreamActionTypeDef:
-    return {
-        "roleArn": ...,
-        "databaseName": ...,
-        "tableName": ...,
-        "dimensions": ...,
-    }
-```
-
-```python title="Definition"
-class TimestreamActionTypeDef(TypedDict):
-    roleArn: str,
-    databaseName: str,
-    tableName: str,
-    dimensions: Sequence[TimestreamDimensionTypeDef],  # (1)
-    timestamp: NotRequired[TimestreamTimestampTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TimestreamDimensionTypeDef](./type_defs.md#timestreamdimensiontypedef) 
-2. See [:material-code-braces: TimestreamTimestampTypeDef](./type_defs.md#timestreamtimestamptypedef) 
 ## TimestreamDimensionTypeDef
 
 ```python title="Usage Example"
@@ -11923,22 +5383,5574 @@ class TimestreamTimestampTypeDef(TypedDict):
     unit: str,
 ```
 
-## TlsContextTypeDef
+## VpcDestinationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TlsContextTypeDef
+from mypy_boto3_iot.type_defs import VpcDestinationConfigurationTypeDef
 
-def get_value() -> TlsContextTypeDef:
+def get_value() -> VpcDestinationConfigurationTypeDef:
     return {
-        "serverName": ...,
+        "subnetIds": ...,
+        "vpcId": ...,
+        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class TlsContextTypeDef(TypedDict):
-    serverName: NotRequired[str],
+class VpcDestinationConfigurationTypeDef(TypedDict):
+    subnetIds: Sequence[str],
+    vpcId: str,
+    roleArn: str,
+    securityGroups: NotRequired[Sequence[str]],
 ```
 
+## VpcDestinationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import VpcDestinationSummaryTypeDef
+
+def get_value() -> VpcDestinationSummaryTypeDef:
+    return {
+        "subnetIds": ...,
+    }
+```
+
+```python title="Definition"
+class VpcDestinationSummaryTypeDef(TypedDict):
+    subnetIds: NotRequired[List[str]],
+    securityGroups: NotRequired[List[str]],
+    vpcId: NotRequired[str],
+    roleArn: NotRequired[str],
+```
+
+## VpcDestinationPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import VpcDestinationPropertiesTypeDef
+
+def get_value() -> VpcDestinationPropertiesTypeDef:
+    return {
+        "subnetIds": ...,
+    }
+```
+
+```python title="Definition"
+class VpcDestinationPropertiesTypeDef(TypedDict):
+    subnetIds: NotRequired[List[str]],
+    securityGroups: NotRequired[List[str]],
+    vpcId: NotRequired[str],
+    roleArn: NotRequired[str],
+```
+
+## TransferCertificateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TransferCertificateRequestRequestTypeDef
+
+def get_value() -> TransferCertificateRequestRequestTypeDef:
+    return {
+        "certificateId": ...,
+        "targetAwsAccount": ...,
+    }
+```
+
+```python title="Definition"
+class TransferCertificateRequestRequestTypeDef(TypedDict):
+    certificateId: str,
+    targetAwsAccount: str,
+    transferMessage: NotRequired[str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateAuthorizerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateAuthorizerRequestRequestTypeDef
+
+def get_value() -> UpdateAuthorizerRequestRequestTypeDef:
+    return {
+        "authorizerName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAuthorizerRequestRequestTypeDef(TypedDict):
+    authorizerName: str,
+    authorizerFunctionArn: NotRequired[str],
+    tokenKeyName: NotRequired[str],
+    tokenSigningPublicKeys: NotRequired[Mapping[str, str]],
+    status: NotRequired[AuthorizerStatusType],  # (1)
+    enableCachingForHttp: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+## UpdateCertificateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateCertificateRequestRequestTypeDef
+
+def get_value() -> UpdateCertificateRequestRequestTypeDef:
+    return {
+        "certificateId": ...,
+        "newStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCertificateRequestRequestTypeDef(TypedDict):
+    certificateId: str,
+    newStatus: CertificateStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+## UpdateCustomMetricRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateCustomMetricRequestRequestTypeDef
+
+def get_value() -> UpdateCustomMetricRequestRequestTypeDef:
+    return {
+        "metricName": ...,
+        "displayName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCustomMetricRequestRequestTypeDef(TypedDict):
+    metricName: str,
+    displayName: str,
+```
+
+## UpdateDimensionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateDimensionRequestRequestTypeDef
+
+def get_value() -> UpdateDimensionRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "stringValues": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDimensionRequestRequestTypeDef(TypedDict):
+    name: str,
+    stringValues: Sequence[str],
+```
+
+## UpdateRoleAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateRoleAliasRequestRequestTypeDef
+
+def get_value() -> UpdateRoleAliasRequestRequestTypeDef:
+    return {
+        "roleAlias": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRoleAliasRequestRequestTypeDef(TypedDict):
+    roleAlias: str,
+    roleArn: NotRequired[str],
+    credentialDurationSeconds: NotRequired[int],
+```
+
+## UpdateScheduledAuditRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateScheduledAuditRequestRequestTypeDef
+
+def get_value() -> UpdateScheduledAuditRequestRequestTypeDef:
+    return {
+        "scheduledAuditName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateScheduledAuditRequestRequestTypeDef(TypedDict):
+    scheduledAuditName: str,
+    frequency: NotRequired[AuditFrequencyType],  # (1)
+    dayOfMonth: NotRequired[str],
+    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
+    targetCheckNames: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+## UpdateThingGroupsForThingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateThingGroupsForThingRequestRequestTypeDef
+
+def get_value() -> UpdateThingGroupsForThingRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThingGroupsForThingRequestRequestTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    thingGroupsToAdd: NotRequired[Sequence[str]],
+    thingGroupsToRemove: NotRequired[Sequence[str]],
+    overrideDynamicGroups: NotRequired[bool],
+```
+
+## UpdateTopicRuleDestinationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateTopicRuleDestinationRequestRequestTypeDef
+
+def get_value() -> UpdateTopicRuleDestinationRequestRequestTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTopicRuleDestinationRequestRequestTypeDef(TypedDict):
+    arn: str,
+    status: TopicRuleDestinationStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype) 
+## ValidationErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ValidationErrorTypeDef
+
+def get_value() -> ValidationErrorTypeDef:
+    return {
+        "errorMessage": ...,
+    }
+```
+
+```python title="Definition"
+class ValidationErrorTypeDef(TypedDict):
+    errorMessage: NotRequired[str],
+```
+
+## AbortConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AbortConfigTypeDef
+
+def get_value() -> AbortConfigTypeDef:
+    return {
+        "criteriaList": ...,
+    }
+```
+
+```python title="Definition"
+class AbortConfigTypeDef(TypedDict):
+    criteriaList: Sequence[AbortCriteriaTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AbortCriteriaTypeDef](./type_defs.md#abortcriteriatypedef) 
+## MetricDatumTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MetricDatumTypeDef
+
+def get_value() -> MetricDatumTypeDef:
+    return {
+        "timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDatumTypeDef(TypedDict):
+    timestamp: NotRequired[datetime],
+    value: NotRequired[MetricValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+## UpdateFleetMetricRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateFleetMetricRequestRequestTypeDef
+
+def get_value() -> UpdateFleetMetricRequestRequestTypeDef:
+    return {
+        "metricName": ...,
+        "indexName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFleetMetricRequestRequestTypeDef(TypedDict):
+    metricName: str,
+    indexName: str,
+    queryString: NotRequired[str],
+    aggregationType: NotRequired[AggregationTypeTypeDef],  # (1)
+    period: NotRequired[int],
+    aggregationField: NotRequired[str],
+    description: NotRequired[str],
+    queryVersion: NotRequired[str],
+    unit: NotRequired[FleetMetricUnitType],  # (2)
+    expectedVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
+2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+## AllowedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AllowedTypeDef
+
+def get_value() -> AllowedTypeDef:
+    return {
+        "policies": ...,
+    }
+```
+
+```python title="Definition"
+class AllowedTypeDef(TypedDict):
+    policies: NotRequired[List[PolicyTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+## ExplicitDenyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ExplicitDenyTypeDef
+
+def get_value() -> ExplicitDenyTypeDef:
+    return {
+        "policies": ...,
+    }
+```
+
+```python title="Definition"
+class ExplicitDenyTypeDef(TypedDict):
+    policies: NotRequired[List[PolicyTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+## ImplicitDenyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ImplicitDenyTypeDef
+
+def get_value() -> ImplicitDenyTypeDef:
+    return {
+        "policies": ...,
+    }
+```
+
+```python title="Definition"
+class ImplicitDenyTypeDef(TypedDict):
+    policies: NotRequired[List[PolicyTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+## AssetPropertyValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AssetPropertyValueTypeDef
+
+def get_value() -> AssetPropertyValueTypeDef:
+    return {
+        "value": ...,
+        "timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class AssetPropertyValueTypeDef(TypedDict):
+    value: AssetPropertyVariantTypeDef,  # (1)
+    timestamp: AssetPropertyTimestampTypeDef,  # (2)
+    quality: NotRequired[str],
+```
+
+1. See [:material-code-braces: AssetPropertyVariantTypeDef](./type_defs.md#assetpropertyvarianttypedef) 
+2. See [:material-code-braces: AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef) 
+## AssociateTargetsWithJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseTypeDef
+
+def get_value() -> AssociateTargetsWithJobResponseTypeDef:
+    return {
+        "jobArn": ...,
+        "jobId": ...,
+        "description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateTargetsWithJobResponseTypeDef(TypedDict):
+    jobArn: str,
+    jobId: str,
+    description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CancelJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CancelJobResponseTypeDef
+
+def get_value() -> CancelJobResponseTypeDef:
+    return {
+        "jobArn": ...,
+        "jobId": ...,
+        "description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelJobResponseTypeDef(TypedDict):
+    jobArn: str,
+    jobId: str,
+    description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateAuthorizerResponseTypeDef
+
+def get_value() -> CreateAuthorizerResponseTypeDef:
+    return {
+        "authorizerName": ...,
+        "authorizerArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAuthorizerResponseTypeDef(TypedDict):
+    authorizerName: str,
+    authorizerArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBillingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateBillingGroupResponseTypeDef
+
+def get_value() -> CreateBillingGroupResponseTypeDef:
+    return {
+        "billingGroupName": ...,
+        "billingGroupArn": ...,
+        "billingGroupId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBillingGroupResponseTypeDef(TypedDict):
+    billingGroupName: str,
+    billingGroupArn: str,
+    billingGroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCertificateFromCsrResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateCertificateFromCsrResponseTypeDef
+
+def get_value() -> CreateCertificateFromCsrResponseTypeDef:
+    return {
+        "certificateArn": ...,
+        "certificateId": ...,
+        "certificatePem": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCertificateFromCsrResponseTypeDef(TypedDict):
+    certificateArn: str,
+    certificateId: str,
+    certificatePem: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCustomMetricResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateCustomMetricResponseTypeDef
+
+def get_value() -> CreateCustomMetricResponseTypeDef:
+    return {
+        "metricName": ...,
+        "metricArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomMetricResponseTypeDef(TypedDict):
+    metricName: str,
+    metricArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDimensionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDimensionResponseTypeDef
+
+def get_value() -> CreateDimensionResponseTypeDef:
+    return {
+        "name": ...,
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDimensionResponseTypeDef(TypedDict):
+    name: str,
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDomainConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDomainConfigurationResponseTypeDef
+
+def get_value() -> CreateDomainConfigurationResponseTypeDef:
+    return {
+        "domainConfigurationName": ...,
+        "domainConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDomainConfigurationResponseTypeDef(TypedDict):
+    domainConfigurationName: str,
+    domainConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDynamicThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDynamicThingGroupResponseTypeDef
+
+def get_value() -> CreateDynamicThingGroupResponseTypeDef:
+    return {
+        "thingGroupName": ...,
+        "thingGroupArn": ...,
+        "thingGroupId": ...,
+        "indexName": ...,
+        "queryString": ...,
+        "queryVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDynamicThingGroupResponseTypeDef(TypedDict):
+    thingGroupName: str,
+    thingGroupArn: str,
+    thingGroupId: str,
+    indexName: str,
+    queryString: str,
+    queryVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFleetMetricResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateFleetMetricResponseTypeDef
+
+def get_value() -> CreateFleetMetricResponseTypeDef:
+    return {
+        "metricName": ...,
+        "metricArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetMetricResponseTypeDef(TypedDict):
+    metricName: str,
+    metricArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateJobResponseTypeDef
+
+def get_value() -> CreateJobResponseTypeDef:
+    return {
+        "jobArn": ...,
+        "jobId": ...,
+        "description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobResponseTypeDef(TypedDict):
+    jobArn: str,
+    jobId: str,
+    description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateJobTemplateResponseTypeDef
+
+def get_value() -> CreateJobTemplateResponseTypeDef:
+    return {
+        "jobTemplateArn": ...,
+        "jobTemplateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobTemplateResponseTypeDef(TypedDict):
+    jobTemplateArn: str,
+    jobTemplateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMitigationActionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateMitigationActionResponseTypeDef
+
+def get_value() -> CreateMitigationActionResponseTypeDef:
+    return {
+        "actionArn": ...,
+        "actionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMitigationActionResponseTypeDef(TypedDict):
+    actionArn: str,
+    actionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateOTAUpdateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateOTAUpdateResponseTypeDef
+
+def get_value() -> CreateOTAUpdateResponseTypeDef:
+    return {
+        "otaUpdateId": ...,
+        "awsIotJobId": ...,
+        "otaUpdateArn": ...,
+        "awsIotJobArn": ...,
+        "otaUpdateStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOTAUpdateResponseTypeDef(TypedDict):
+    otaUpdateId: str,
+    awsIotJobId: str,
+    otaUpdateArn: str,
+    awsIotJobArn: str,
+    otaUpdateStatus: OTAUpdateStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreatePolicyResponseTypeDef
+
+def get_value() -> CreatePolicyResponseTypeDef:
+    return {
+        "policyName": ...,
+        "policyArn": ...,
+        "policyDocument": ...,
+        "policyVersionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePolicyResponseTypeDef(TypedDict):
+    policyName: str,
+    policyArn: str,
+    policyDocument: str,
+    policyVersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePolicyVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreatePolicyVersionResponseTypeDef
+
+def get_value() -> CreatePolicyVersionResponseTypeDef:
+    return {
+        "policyArn": ...,
+        "policyDocument": ...,
+        "policyVersionId": ...,
+        "isDefaultVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePolicyVersionResponseTypeDef(TypedDict):
+    policyArn: str,
+    policyDocument: str,
+    policyVersionId: str,
+    isDefaultVersion: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisioningTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateResponseTypeDef
+
+def get_value() -> CreateProvisioningTemplateResponseTypeDef:
+    return {
+        "templateArn": ...,
+        "templateName": ...,
+        "defaultVersionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningTemplateResponseTypeDef(TypedDict):
+    templateArn: str,
+    templateName: str,
+    defaultVersionId: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisioningTemplateVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionResponseTypeDef
+
+def get_value() -> CreateProvisioningTemplateVersionResponseTypeDef:
+    return {
+        "templateArn": ...,
+        "templateName": ...,
+        "versionId": ...,
+        "isDefaultVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningTemplateVersionResponseTypeDef(TypedDict):
+    templateArn: str,
+    templateName: str,
+    versionId: int,
+    isDefaultVersion: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRoleAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateRoleAliasResponseTypeDef
+
+def get_value() -> CreateRoleAliasResponseTypeDef:
+    return {
+        "roleAlias": ...,
+        "roleAliasArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRoleAliasResponseTypeDef(TypedDict):
+    roleAlias: str,
+    roleAliasArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateScheduledAuditResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateScheduledAuditResponseTypeDef
+
+def get_value() -> CreateScheduledAuditResponseTypeDef:
+    return {
+        "scheduledAuditArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateScheduledAuditResponseTypeDef(TypedDict):
+    scheduledAuditArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSecurityProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateSecurityProfileResponseTypeDef
+
+def get_value() -> CreateSecurityProfileResponseTypeDef:
+    return {
+        "securityProfileName": ...,
+        "securityProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSecurityProfileResponseTypeDef(TypedDict):
+    securityProfileName: str,
+    securityProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStreamResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateStreamResponseTypeDef
+
+def get_value() -> CreateStreamResponseTypeDef:
+    return {
+        "streamId": ...,
+        "streamArn": ...,
+        "description": ...,
+        "streamVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStreamResponseTypeDef(TypedDict):
+    streamId: str,
+    streamArn: str,
+    description: str,
+    streamVersion: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingGroupResponseTypeDef
+
+def get_value() -> CreateThingGroupResponseTypeDef:
+    return {
+        "thingGroupName": ...,
+        "thingGroupArn": ...,
+        "thingGroupId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingGroupResponseTypeDef(TypedDict):
+    thingGroupName: str,
+    thingGroupArn: str,
+    thingGroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingResponseTypeDef
+
+def get_value() -> CreateThingResponseTypeDef:
+    return {
+        "thingName": ...,
+        "thingArn": ...,
+        "thingId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingResponseTypeDef(TypedDict):
+    thingName: str,
+    thingArn: str,
+    thingId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThingTypeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingTypeResponseTypeDef
+
+def get_value() -> CreateThingTypeResponseTypeDef:
+    return {
+        "thingTypeName": ...,
+        "thingTypeArn": ...,
+        "thingTypeId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingTypeResponseTypeDef(TypedDict):
+    thingTypeName: str,
+    thingTypeArn: str,
+    thingTypeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCustomMetricResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeCustomMetricResponseTypeDef
+
+def get_value() -> DescribeCustomMetricResponseTypeDef:
+    return {
+        "metricName": ...,
+        "metricArn": ...,
+        "metricType": ...,
+        "displayName": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCustomMetricResponseTypeDef(TypedDict):
+    metricName: str,
+    metricArn: str,
+    metricType: CustomMetricTypeType,  # (1)
+    displayName: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDimensionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeDimensionResponseTypeDef
+
+def get_value() -> DescribeDimensionResponseTypeDef:
+    return {
+        "name": ...,
+        "arn": ...,
+        "type": ...,
+        "stringValues": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDimensionResponseTypeDef(TypedDict):
+    name: str,
+    arn: str,
+    type: DimensionTypeType,  # (1)
+    stringValues: List[str],
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeEndpointResponseTypeDef
+
+def get_value() -> DescribeEndpointResponseTypeDef:
+    return {
+        "endpointAddress": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointResponseTypeDef(TypedDict):
+    endpointAddress: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetMetricResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeFleetMetricResponseTypeDef
+
+def get_value() -> DescribeFleetMetricResponseTypeDef:
+    return {
+        "metricName": ...,
+        "queryString": ...,
+        "aggregationType": ...,
+        "period": ...,
+        "aggregationField": ...,
+        "description": ...,
+        "queryVersion": ...,
+        "indexName": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "unit": ...,
+        "version": ...,
+        "metricArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetMetricResponseTypeDef(TypedDict):
+    metricName: str,
+    queryString: str,
+    aggregationType: AggregationTypeTypeDef,  # (1)
+    period: int,
+    aggregationField: str,
+    description: str,
+    queryVersion: str,
+    indexName: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    unit: FleetMetricUnitType,  # (2)
+    version: int,
+    metricArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
+2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIndexResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeIndexResponseTypeDef
+
+def get_value() -> DescribeIndexResponseTypeDef:
+    return {
+        "indexName": ...,
+        "indexStatus": ...,
+        "schema": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIndexResponseTypeDef(TypedDict):
+    indexName: str,
+    indexStatus: IndexStatusType,  # (1)
+    schema: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProvisioningTemplateVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionResponseTypeDef
+
+def get_value() -> DescribeProvisioningTemplateVersionResponseTypeDef:
+    return {
+        "versionId": ...,
+        "creationDate": ...,
+        "templateBody": ...,
+        "isDefaultVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProvisioningTemplateVersionResponseTypeDef(TypedDict):
+    versionId: int,
+    creationDate: datetime,
+    templateBody: str,
+    isDefaultVersion: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeScheduledAuditResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseTypeDef
+
+def get_value() -> DescribeScheduledAuditResponseTypeDef:
+    return {
+        "frequency": ...,
+        "dayOfMonth": ...,
+        "dayOfWeek": ...,
+        "targetCheckNames": ...,
+        "scheduledAuditName": ...,
+        "scheduledAuditArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScheduledAuditResponseTypeDef(TypedDict):
+    frequency: AuditFrequencyType,  # (1)
+    dayOfMonth: str,
+    dayOfWeek: DayOfWeekType,  # (2)
+    targetCheckNames: List[str],
+    scheduledAuditName: str,
+    scheduledAuditArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThingRegistrationTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskResponseTypeDef
+
+def get_value() -> DescribeThingRegistrationTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "templateBody": ...,
+        "inputFileBucket": ...,
+        "inputFileKey": ...,
+        "roleArn": ...,
+        "status": ...,
+        "message": ...,
+        "successCount": ...,
+        "failureCount": ...,
+        "percentageProgress": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThingRegistrationTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    templateBody: str,
+    inputFileBucket: str,
+    inputFileKey: str,
+    roleArn: str,
+    status: StatusType,  # (1)
+    message: str,
+    successCount: int,
+    failureCount: int,
+    percentageProgress: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeThingResponseTypeDef
+
+def get_value() -> DescribeThingResponseTypeDef:
+    return {
+        "defaultClientId": ...,
+        "thingName": ...,
+        "thingId": ...,
+        "thingArn": ...,
+        "thingTypeName": ...,
+        "attributes": ...,
+        "version": ...,
+        "billingGroupName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThingResponseTypeDef(TypedDict):
+    defaultClientId: str,
+    thingName: str,
+    thingId: str,
+    thingArn: str,
+    thingTypeName: str,
+    attributes: Dict[str, str],
+    version: int,
+    billingGroupName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCardinalityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetCardinalityResponseTypeDef
+
+def get_value() -> GetCardinalityResponseTypeDef:
+    return {
+        "cardinality": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCardinalityResponseTypeDef(TypedDict):
+    cardinality: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetJobDocumentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetJobDocumentResponseTypeDef
+
+def get_value() -> GetJobDocumentResponseTypeDef:
+    return {
+        "document": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetJobDocumentResponseTypeDef(TypedDict):
+    document: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLoggingOptionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseTypeDef
+
+def get_value() -> GetLoggingOptionsResponseTypeDef:
+    return {
+        "roleArn": ...,
+        "logLevel": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLoggingOptionsResponseTypeDef(TypedDict):
+    roleArn: str,
+    logLevel: LogLevelType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "policyName": ...,
+        "policyArn": ...,
+        "policyDocument": ...,
+        "defaultVersionId": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "generationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    policyName: str,
+    policyArn: str,
+    policyDocument: str,
+    defaultVersionId: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    generationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPolicyVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetPolicyVersionResponseTypeDef
+
+def get_value() -> GetPolicyVersionResponseTypeDef:
+    return {
+        "policyArn": ...,
+        "policyName": ...,
+        "policyDocument": ...,
+        "policyVersionId": ...,
+        "isDefaultVersion": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "generationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPolicyVersionResponseTypeDef(TypedDict):
+    policyArn: str,
+    policyName: str,
+    policyDocument: str,
+    policyVersionId: str,
+    isDefaultVersion: bool,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    generationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRegistrationCodeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetRegistrationCodeResponseTypeDef
+
+def get_value() -> GetRegistrationCodeResponseTypeDef:
+    return {
+        "registrationCode": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRegistrationCodeResponseTypeDef(TypedDict):
+    registrationCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetV2LoggingOptionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseTypeDef
+
+def get_value() -> GetV2LoggingOptionsResponseTypeDef:
+    return {
+        "roleArn": ...,
+        "defaultLogLevel": ...,
+        "disableAllLogs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetV2LoggingOptionsResponseTypeDef(TypedDict):
+    roleArn: str,
+    defaultLogLevel: LogLevelType,  # (1)
+    disableAllLogs: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttachedPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAttachedPoliciesResponseTypeDef
+
+def get_value() -> ListAttachedPoliciesResponseTypeDef:
+    return {
+        "policies": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachedPoliciesResponseTypeDef(TypedDict):
+    policies: List[PolicyTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomMetricsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCustomMetricsResponseTypeDef
+
+def get_value() -> ListCustomMetricsResponseTypeDef:
+    return {
+        "metricNames": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomMetricsResponseTypeDef(TypedDict):
+    metricNames: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDimensionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDimensionsResponseTypeDef
+
+def get_value() -> ListDimensionsResponseTypeDef:
+    return {
+        "dimensionNames": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDimensionsResponseTypeDef(TypedDict):
+    dimensionNames: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIndicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListIndicesResponseTypeDef
+
+def get_value() -> ListIndicesResponseTypeDef:
+    return {
+        "indexNames": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIndicesResponseTypeDef(TypedDict):
+    indexNames: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPoliciesResponseTypeDef
+
+def get_value() -> ListPoliciesResponseTypeDef:
+    return {
+        "policies": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPoliciesResponseTypeDef(TypedDict):
+    policies: List[PolicyTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPolicyPrincipalsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPolicyPrincipalsResponseTypeDef
+
+def get_value() -> ListPolicyPrincipalsResponseTypeDef:
+    return {
+        "principals": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPolicyPrincipalsResponseTypeDef(TypedDict):
+    principals: List[str],
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPrincipalPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPrincipalPoliciesResponseTypeDef
+
+def get_value() -> ListPrincipalPoliciesResponseTypeDef:
+    return {
+        "policies": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalPoliciesResponseTypeDef(TypedDict):
+    policies: List[PolicyTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPrincipalThingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPrincipalThingsResponseTypeDef
+
+def get_value() -> ListPrincipalThingsResponseTypeDef:
+    return {
+        "things": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalThingsResponseTypeDef(TypedDict):
+    things: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoleAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListRoleAliasesResponseTypeDef
+
+def get_value() -> ListRoleAliasesResponseTypeDef:
+    return {
+        "roleAliases": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoleAliasesResponseTypeDef(TypedDict):
+    roleAliases: List[str],
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTargetsForPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTargetsForPolicyResponseTypeDef
+
+def get_value() -> ListTargetsForPolicyResponseTypeDef:
+    return {
+        "targets": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsForPolicyResponseTypeDef(TypedDict):
+    targets: List[str],
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingPrincipalsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingPrincipalsResponseTypeDef
+
+def get_value() -> ListThingPrincipalsResponseTypeDef:
+    return {
+        "principals": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingPrincipalsResponseTypeDef(TypedDict):
+    principals: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingRegistrationTaskReportsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseTypeDef
+
+def get_value() -> ListThingRegistrationTaskReportsResponseTypeDef:
+    return {
+        "resourceLinks": ...,
+        "reportType": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingRegistrationTaskReportsResponseTypeDef(TypedDict):
+    resourceLinks: List[str],
+    reportType: ReportTypeType,  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingRegistrationTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingRegistrationTasksResponseTypeDef
+
+def get_value() -> ListThingRegistrationTasksResponseTypeDef:
+    return {
+        "taskIds": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingRegistrationTasksResponseTypeDef(TypedDict):
+    taskIds: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingsInBillingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsInBillingGroupResponseTypeDef
+
+def get_value() -> ListThingsInBillingGroupResponseTypeDef:
+    return {
+        "things": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsInBillingGroupResponseTypeDef(TypedDict):
+    things: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingsInThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsInThingGroupResponseTypeDef
+
+def get_value() -> ListThingsInThingGroupResponseTypeDef:
+    return {
+        "things": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsInThingGroupResponseTypeDef(TypedDict):
+    things: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterCACertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RegisterCACertificateResponseTypeDef
+
+def get_value() -> RegisterCACertificateResponseTypeDef:
+    return {
+        "certificateArn": ...,
+        "certificateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCACertificateResponseTypeDef(TypedDict):
+    certificateArn: str,
+    certificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterCertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RegisterCertificateResponseTypeDef
+
+def get_value() -> RegisterCertificateResponseTypeDef:
+    return {
+        "certificateArn": ...,
+        "certificateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCertificateResponseTypeDef(TypedDict):
+    certificateArn: str,
+    certificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterCertificateWithoutCAResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCAResponseTypeDef
+
+def get_value() -> RegisterCertificateWithoutCAResponseTypeDef:
+    return {
+        "certificateArn": ...,
+        "certificateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCertificateWithoutCAResponseTypeDef(TypedDict):
+    certificateArn: str,
+    certificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterThingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RegisterThingResponseTypeDef
+
+def get_value() -> RegisterThingResponseTypeDef:
+    return {
+        "certificatePem": ...,
+        "resourceArns": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterThingResponseTypeDef(TypedDict):
+    certificatePem: str,
+    resourceArns: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SetDefaultAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SetDefaultAuthorizerResponseTypeDef
+
+def get_value() -> SetDefaultAuthorizerResponseTypeDef:
+    return {
+        "authorizerName": ...,
+        "authorizerArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SetDefaultAuthorizerResponseTypeDef(TypedDict):
+    authorizerName: str,
+    authorizerArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartAuditMitigationActionsTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskResponseTypeDef
+
+def get_value() -> StartAuditMitigationActionsTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartAuditMitigationActionsTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartDetectMitigationActionsTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskResponseTypeDef
+
+def get_value() -> StartDetectMitigationActionsTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartDetectMitigationActionsTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartOnDemandAuditTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskResponseTypeDef
+
+def get_value() -> StartOnDemandAuditTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartOnDemandAuditTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartThingRegistrationTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartThingRegistrationTaskResponseTypeDef
+
+def get_value() -> StartThingRegistrationTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartThingRegistrationTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestInvokeAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TestInvokeAuthorizerResponseTypeDef
+
+def get_value() -> TestInvokeAuthorizerResponseTypeDef:
+    return {
+        "isAuthenticated": ...,
+        "principalId": ...,
+        "policyDocuments": ...,
+        "refreshAfterInSeconds": ...,
+        "disconnectAfterInSeconds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeAuthorizerResponseTypeDef(TypedDict):
+    isAuthenticated: bool,
+    principalId: str,
+    policyDocuments: List[str],
+    refreshAfterInSeconds: int,
+    disconnectAfterInSeconds: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TransferCertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TransferCertificateResponseTypeDef
+
+def get_value() -> TransferCertificateResponseTypeDef:
+    return {
+        "transferredCertificateArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TransferCertificateResponseTypeDef(TypedDict):
+    transferredCertificateArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateAuthorizerResponseTypeDef
+
+def get_value() -> UpdateAuthorizerResponseTypeDef:
+    return {
+        "authorizerName": ...,
+        "authorizerArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAuthorizerResponseTypeDef(TypedDict):
+    authorizerName: str,
+    authorizerArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBillingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateBillingGroupResponseTypeDef
+
+def get_value() -> UpdateBillingGroupResponseTypeDef:
+    return {
+        "version": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBillingGroupResponseTypeDef(TypedDict):
+    version: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateCustomMetricResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateCustomMetricResponseTypeDef
+
+def get_value() -> UpdateCustomMetricResponseTypeDef:
+    return {
+        "metricName": ...,
+        "metricArn": ...,
+        "metricType": ...,
+        "displayName": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCustomMetricResponseTypeDef(TypedDict):
+    metricName: str,
+    metricArn: str,
+    metricType: CustomMetricTypeType,  # (1)
+    displayName: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDimensionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateDimensionResponseTypeDef
+
+def get_value() -> UpdateDimensionResponseTypeDef:
+    return {
+        "name": ...,
+        "arn": ...,
+        "type": ...,
+        "stringValues": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDimensionResponseTypeDef(TypedDict):
+    name: str,
+    arn: str,
+    type: DimensionTypeType,  # (1)
+    stringValues: List[str],
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDomainConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateDomainConfigurationResponseTypeDef
+
+def get_value() -> UpdateDomainConfigurationResponseTypeDef:
+    return {
+        "domainConfigurationName": ...,
+        "domainConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDomainConfigurationResponseTypeDef(TypedDict):
+    domainConfigurationName: str,
+    domainConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDynamicThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupResponseTypeDef
+
+def get_value() -> UpdateDynamicThingGroupResponseTypeDef:
+    return {
+        "version": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDynamicThingGroupResponseTypeDef(TypedDict):
+    version: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMitigationActionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateMitigationActionResponseTypeDef
+
+def get_value() -> UpdateMitigationActionResponseTypeDef:
+    return {
+        "actionArn": ...,
+        "actionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMitigationActionResponseTypeDef(TypedDict):
+    actionArn: str,
+    actionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRoleAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateRoleAliasResponseTypeDef
+
+def get_value() -> UpdateRoleAliasResponseTypeDef:
+    return {
+        "roleAlias": ...,
+        "roleAliasArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRoleAliasResponseTypeDef(TypedDict):
+    roleAlias: str,
+    roleAliasArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateScheduledAuditResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateScheduledAuditResponseTypeDef
+
+def get_value() -> UpdateScheduledAuditResponseTypeDef:
+    return {
+        "scheduledAuditArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateScheduledAuditResponseTypeDef(TypedDict):
+    scheduledAuditArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateStreamResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateStreamResponseTypeDef
+
+def get_value() -> UpdateStreamResponseTypeDef:
+    return {
+        "streamId": ...,
+        "streamArn": ...,
+        "description": ...,
+        "streamVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStreamResponseTypeDef(TypedDict):
+    streamId: str,
+    streamArn: str,
+    description: str,
+    streamVersion: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateThingGroupResponseTypeDef
+
+def get_value() -> UpdateThingGroupResponseTypeDef:
+    return {
+        "version": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThingGroupResponseTypeDef(TypedDict):
+    version: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingRequestRequestTypeDef
+
+def get_value() -> CreateThingRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    thingTypeName: NotRequired[str],
+    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
+    billingGroupName: NotRequired[str],
+```
+
+1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
+## ThingGroupPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingGroupPropertiesTypeDef
+
+def get_value() -> ThingGroupPropertiesTypeDef:
+    return {
+        "thingGroupDescription": ...,
+    }
+```
+
+```python title="Definition"
+class ThingGroupPropertiesTypeDef(TypedDict):
+    thingGroupDescription: NotRequired[str],
+    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
+## UpdateThingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateThingRequestRequestTypeDef
+
+def get_value() -> UpdateThingRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThingRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    thingTypeName: NotRequired[str],
+    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
+    expectedVersion: NotRequired[int],
+    removeThingType: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
+## ListAuditMitigationActionsExecutionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsResponseTypeDef
+
+def get_value() -> ListAuditMitigationActionsExecutionsResponseTypeDef:
+    return {
+        "actionsExecutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditMitigationActionsExecutionsResponseTypeDef(TypedDict):
+    actionsExecutions: List[AuditMitigationActionExecutionMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditMitigationActionExecutionMetadataTypeDef](./type_defs.md#auditmitigationactionexecutionmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAuditMitigationActionsTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksResponseTypeDef
+
+def get_value() -> ListAuditMitigationActionsTasksResponseTypeDef:
+    return {
+        "tasks": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditMitigationActionsTasksResponseTypeDef(TypedDict):
+    tasks: List[AuditMitigationActionsTaskMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditMitigationActionsTaskMetadataTypeDef](./type_defs.md#auditmitigationactionstaskmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartAuditMitigationActionsTaskRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskRequestRequestTypeDef
+
+def get_value() -> StartAuditMitigationActionsTaskRequestRequestTypeDef:
+    return {
+        "taskId": ...,
+        "target": ...,
+        "auditCheckToActionsMapping": ...,
+        "clientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class StartAuditMitigationActionsTaskRequestRequestTypeDef(TypedDict):
+    taskId: str,
+    target: AuditMitigationActionsTaskTargetTypeDef,  # (1)
+    auditCheckToActionsMapping: Mapping[str, Sequence[str]],
+    clientRequestToken: str,
+```
+
+1. See [:material-code-braces: AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef) 
+## DescribeAccountAuditConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAccountAuditConfigurationResponseTypeDef
+
+def get_value() -> DescribeAccountAuditConfigurationResponseTypeDef:
+    return {
+        "roleArn": ...,
+        "auditNotificationTargetConfigurations": ...,
+        "auditCheckConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountAuditConfigurationResponseTypeDef(TypedDict):
+    roleArn: str,
+    auditNotificationTargetConfigurations: Dict[AuditNotificationTypeType, AuditNotificationTargetTypeDef],  # (1)
+    auditCheckConfigurations: Dict[str, AuditCheckConfigurationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AuditNotificationTypeType](./literals.md#auditnotificationtypetype) [:material-code-braces: AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef) 
+2. See [:material-code-braces: AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAccountAuditConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateAccountAuditConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateAccountAuditConfigurationRequestRequestTypeDef:
+    return {
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountAuditConfigurationRequestRequestTypeDef(TypedDict):
+    roleArn: NotRequired[str],
+    auditNotificationTargetConfigurations: NotRequired[Mapping[AuditNotificationTypeType, AuditNotificationTargetTypeDef]],  # (1)
+    auditCheckConfigurations: NotRequired[Mapping[str, AuditCheckConfigurationTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: AuditNotificationTypeType](./literals.md#auditnotificationtypetype) [:material-code-braces: AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef) 
+2. See [:material-code-braces: AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef) 
+## ListAuditTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditTasksResponseTypeDef
+
+def get_value() -> ListAuditTasksResponseTypeDef:
+    return {
+        "tasks": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditTasksResponseTypeDef(TypedDict):
+    tasks: List[AuditTaskMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditTaskMetadataTypeDef](./type_defs.md#audittaskmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestAuthorizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TestAuthorizationRequestRequestTypeDef
+
+def get_value() -> TestAuthorizationRequestRequestTypeDef:
+    return {
+        "authInfos": ...,
+    }
+```
+
+```python title="Definition"
+class TestAuthorizationRequestRequestTypeDef(TypedDict):
+    authInfos: Sequence[AuthInfoTypeDef],  # (1)
+    principal: NotRequired[str],
+    cognitoIdentityPoolId: NotRequired[str],
+    clientId: NotRequired[str],
+    policyNamesToAdd: NotRequired[Sequence[str]],
+    policyNamesToSkip: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: AuthInfoTypeDef](./type_defs.md#authinfotypedef) 
+## UpdateDomainConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateDomainConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateDomainConfigurationRequestRequestTypeDef:
+    return {
+        "domainConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDomainConfigurationRequestRequestTypeDef(TypedDict):
+    domainConfigurationName: str,
+    authorizerConfig: NotRequired[AuthorizerConfigTypeDef],  # (1)
+    domainConfigurationStatus: NotRequired[DomainConfigurationStatusType],  # (2)
+    removeAuthorizerConfig: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
+2. See [:material-code-brackets: DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype) 
+## DescribeAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuthorizerResponseTypeDef
+
+def get_value() -> DescribeAuthorizerResponseTypeDef:
+    return {
+        "authorizerDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuthorizerResponseTypeDef(TypedDict):
+    authorizerDescription: AuthorizerDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDefaultAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeDefaultAuthorizerResponseTypeDef
+
+def get_value() -> DescribeDefaultAuthorizerResponseTypeDef:
+    return {
+        "authorizerDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDefaultAuthorizerResponseTypeDef(TypedDict):
+    authorizerDescription: AuthorizerDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAuthorizersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuthorizersResponseTypeDef
+
+def get_value() -> ListAuthorizersResponseTypeDef:
+    return {
+        "authorizers": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuthorizersResponseTypeDef(TypedDict):
+    authorizers: List[AuthorizerSummaryTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthorizerSummaryTypeDef](./type_defs.md#authorizersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AwsJobAbortConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AwsJobAbortConfigTypeDef
+
+def get_value() -> AwsJobAbortConfigTypeDef:
+    return {
+        "abortCriteriaList": ...,
+    }
+```
+
+```python title="Definition"
+class AwsJobAbortConfigTypeDef(TypedDict):
+    abortCriteriaList: Sequence[AwsJobAbortCriteriaTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsJobAbortCriteriaTypeDef](./type_defs.md#awsjobabortcriteriatypedef) 
+## AwsJobExponentialRolloutRateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AwsJobExponentialRolloutRateTypeDef
+
+def get_value() -> AwsJobExponentialRolloutRateTypeDef:
+    return {
+        "baseRatePerMinute": ...,
+        "incrementFactor": ...,
+        "rateIncreaseCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class AwsJobExponentialRolloutRateTypeDef(TypedDict):
+    baseRatePerMinute: int,
+    incrementFactor: float,
+    rateIncreaseCriteria: AwsJobRateIncreaseCriteriaTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: AwsJobRateIncreaseCriteriaTypeDef](./type_defs.md#awsjobrateincreasecriteriatypedef) 
+## BehaviorCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import BehaviorCriteriaTypeDef
+
+def get_value() -> BehaviorCriteriaTypeDef:
+    return {
+        "comparisonOperator": ...,
+    }
+```
+
+```python title="Definition"
+class BehaviorCriteriaTypeDef(TypedDict):
+    comparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
+    value: NotRequired[MetricValueTypeDef],  # (2)
+    durationSeconds: NotRequired[int],
+    consecutiveDatapointsToAlarm: NotRequired[int],
+    consecutiveDatapointsToClear: NotRequired[int],
+    statisticalThreshold: NotRequired[StatisticalThresholdTypeDef],  # (3)
+    mlDetectionConfig: NotRequired[MachineLearningDetectionConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+2. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+3. See [:material-code-braces: StatisticalThresholdTypeDef](./type_defs.md#statisticalthresholdtypedef) 
+4. See [:material-code-braces: MachineLearningDetectionConfigTypeDef](./type_defs.md#machinelearningdetectionconfigtypedef) 
+## GetBehaviorModelTrainingSummariesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTypeDef
+
+def get_value() -> GetBehaviorModelTrainingSummariesResponseTypeDef:
+    return {
+        "summaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBehaviorModelTrainingSummariesResponseTypeDef(TypedDict):
+    summaries: List[BehaviorModelTrainingSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BehaviorModelTrainingSummaryTypeDef](./type_defs.md#behaviormodeltrainingsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricToRetainTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MetricToRetainTypeDef
+
+def get_value() -> MetricToRetainTypeDef:
+    return {
+        "metric": ...,
+    }
+```
+
+```python title="Definition"
+class MetricToRetainTypeDef(TypedDict):
+    metric: str,
+    metricDimension: NotRequired[MetricDimensionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+## DescribeBillingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeBillingGroupResponseTypeDef
+
+def get_value() -> DescribeBillingGroupResponseTypeDef:
+    return {
+        "billingGroupName": ...,
+        "billingGroupId": ...,
+        "billingGroupArn": ...,
+        "version": ...,
+        "billingGroupProperties": ...,
+        "billingGroupMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBillingGroupResponseTypeDef(TypedDict):
+    billingGroupName: str,
+    billingGroupId: str,
+    billingGroupArn: str,
+    version: int,
+    billingGroupProperties: BillingGroupPropertiesTypeDef,  # (1)
+    billingGroupMetadata: BillingGroupMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
+2. See [:material-code-braces: BillingGroupMetadataTypeDef](./type_defs.md#billinggroupmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBillingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateBillingGroupRequestRequestTypeDef
+
+def get_value() -> UpdateBillingGroupRequestRequestTypeDef:
+    return {
+        "billingGroupName": ...,
+        "billingGroupProperties": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBillingGroupRequestRequestTypeDef(TypedDict):
+    billingGroupName: str,
+    billingGroupProperties: BillingGroupPropertiesTypeDef,  # (1)
+    expectedVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
+## GetBucketsAggregationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetBucketsAggregationResponseTypeDef
+
+def get_value() -> GetBucketsAggregationResponseTypeDef:
+    return {
+        "totalCount": ...,
+        "buckets": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketsAggregationResponseTypeDef(TypedDict):
+    totalCount: int,
+    buckets: List[BucketTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BucketTypeDef](./type_defs.md#buckettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BucketsAggregationTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import BucketsAggregationTypeTypeDef
+
+def get_value() -> BucketsAggregationTypeTypeDef:
+    return {
+        "termsAggregation": ...,
+    }
+```
+
+```python title="Definition"
+class BucketsAggregationTypeTypeDef(TypedDict):
+    termsAggregation: NotRequired[TermsAggregationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TermsAggregationTypeDef](./type_defs.md#termsaggregationtypedef) 
+## CACertificateDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CACertificateDescriptionTypeDef
+
+def get_value() -> CACertificateDescriptionTypeDef:
+    return {
+        "certificateArn": ...,
+    }
+```
+
+```python title="Definition"
+class CACertificateDescriptionTypeDef(TypedDict):
+    certificateArn: NotRequired[str],
+    certificateId: NotRequired[str],
+    status: NotRequired[CACertificateStatusType],  # (1)
+    certificatePem: NotRequired[str],
+    ownedBy: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    autoRegistrationStatus: NotRequired[AutoRegistrationStatusType],  # (2)
+    lastModifiedDate: NotRequired[datetime],
+    customerVersion: NotRequired[int],
+    generationId: NotRequired[str],
+    validity: NotRequired[CertificateValidityTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
+2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
+3. See [:material-code-braces: CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef) 
+## ListCACertificatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCACertificatesResponseTypeDef
+
+def get_value() -> ListCACertificatesResponseTypeDef:
+    return {
+        "certificates": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCACertificatesResponseTypeDef(TypedDict):
+    certificates: List[CACertificateTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CACertificateTypeDef](./type_defs.md#cacertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CertificateDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CertificateDescriptionTypeDef
+
+def get_value() -> CertificateDescriptionTypeDef:
+    return {
+        "certificateArn": ...,
+    }
+```
+
+```python title="Definition"
+class CertificateDescriptionTypeDef(TypedDict):
+    certificateArn: NotRequired[str],
+    certificateId: NotRequired[str],
+    caCertificateId: NotRequired[str],
+    status: NotRequired[CertificateStatusType],  # (1)
+    certificatePem: NotRequired[str],
+    ownedBy: NotRequired[str],
+    previousOwnedBy: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastModifiedDate: NotRequired[datetime],
+    customerVersion: NotRequired[int],
+    transferData: NotRequired[TransferDataTypeDef],  # (2)
+    generationId: NotRequired[str],
+    validity: NotRequired[CertificateValidityTypeDef],  # (3)
+    certificateMode: NotRequired[CertificateModeType],  # (4)
+```
+
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-braces: TransferDataTypeDef](./type_defs.md#transferdatatypedef) 
+3. See [:material-code-braces: CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef) 
+4. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
+## ListCertificatesByCAResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCertificatesByCAResponseTypeDef
+
+def get_value() -> ListCertificatesByCAResponseTypeDef:
+    return {
+        "certificates": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesByCAResponseTypeDef(TypedDict):
+    certificates: List[CertificateTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCertificatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCertificatesResponseTypeDef
+
+def get_value() -> ListCertificatesResponseTypeDef:
+    return {
+        "certificates": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesResponseTypeDef(TypedDict):
+    certificates: List[CertificateTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CustomCodeSigningTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CustomCodeSigningTypeDef
+
+def get_value() -> CustomCodeSigningTypeDef:
+    return {
+        "signature": ...,
+    }
+```
+
+```python title="Definition"
+class CustomCodeSigningTypeDef(TypedDict):
+    signature: NotRequired[CodeSigningSignatureTypeDef],  # (1)
+    certificateChain: NotRequired[CodeSigningCertificateChainTypeDef],  # (2)
+    hashAlgorithm: NotRequired[str],
+    signatureAlgorithm: NotRequired[str],
+```
+
+1. See [:material-code-braces: CodeSigningSignatureTypeDef](./type_defs.md#codesigningsignaturetypedef) 
+2. See [:material-code-braces: CodeSigningCertificateChainTypeDef](./type_defs.md#codesigningcertificatechaintypedef) 
+## DescribeEventConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseTypeDef
+
+def get_value() -> DescribeEventConfigurationsResponseTypeDef:
+    return {
+        "eventConfigurations": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventConfigurationsResponseTypeDef(TypedDict):
+    eventConfigurations: Dict[EventTypeType, ConfigurationTypeDef],  # (1)
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateEventConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateEventConfigurationsRequestRequestTypeDef
+
+def get_value() -> UpdateEventConfigurationsRequestRequestTypeDef:
+    return {
+        "eventConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEventConfigurationsRequestRequestTypeDef(TypedDict):
+    eventConfigurations: NotRequired[Mapping[EventTypeType, ConfigurationTypeDef]],  # (1)
+```
+
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+## CreateAuthorizerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateAuthorizerRequestRequestTypeDef
+
+def get_value() -> CreateAuthorizerRequestRequestTypeDef:
+    return {
+        "authorizerName": ...,
+        "authorizerFunctionArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAuthorizerRequestRequestTypeDef(TypedDict):
+    authorizerName: str,
+    authorizerFunctionArn: str,
+    tokenKeyName: NotRequired[str],
+    tokenSigningPublicKeys: NotRequired[Mapping[str, str]],
+    status: NotRequired[AuthorizerStatusType],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    signingDisabled: NotRequired[bool],
+    enableCachingForHttp: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateBillingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateBillingGroupRequestRequestTypeDef
+
+def get_value() -> CreateBillingGroupRequestRequestTypeDef:
+    return {
+        "billingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBillingGroupRequestRequestTypeDef(TypedDict):
+    billingGroupName: str,
+    billingGroupProperties: NotRequired[BillingGroupPropertiesTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateCustomMetricRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateCustomMetricRequestRequestTypeDef
+
+def get_value() -> CreateCustomMetricRequestRequestTypeDef:
+    return {
+        "metricName": ...,
+        "metricType": ...,
+        "clientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomMetricRequestRequestTypeDef(TypedDict):
+    metricName: str,
+    metricType: CustomMetricTypeType,  # (1)
+    clientRequestToken: str,
+    displayName: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateDimensionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDimensionRequestRequestTypeDef
+
+def get_value() -> CreateDimensionRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+        "stringValues": ...,
+        "clientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDimensionRequestRequestTypeDef(TypedDict):
+    name: str,
+    type: DimensionTypeType,  # (1)
+    stringValues: Sequence[str],
+    clientRequestToken: str,
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateDomainConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDomainConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateDomainConfigurationRequestRequestTypeDef:
+    return {
+        "domainConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDomainConfigurationRequestRequestTypeDef(TypedDict):
+    domainConfigurationName: str,
+    domainName: NotRequired[str],
+    serverCertificateArns: NotRequired[Sequence[str]],
+    validationCertificateArn: NotRequired[str],
+    authorizerConfig: NotRequired[AuthorizerConfigTypeDef],  # (1)
+    serviceType: NotRequired[ServiceTypeType],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
+2. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFleetMetricRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateFleetMetricRequestRequestTypeDef
+
+def get_value() -> CreateFleetMetricRequestRequestTypeDef:
+    return {
+        "metricName": ...,
+        "queryString": ...,
+        "aggregationType": ...,
+        "period": ...,
+        "aggregationField": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetMetricRequestRequestTypeDef(TypedDict):
+    metricName: str,
+    queryString: str,
+    aggregationType: AggregationTypeTypeDef,  # (1)
+    period: int,
+    aggregationField: str,
+    description: NotRequired[str],
+    queryVersion: NotRequired[str],
+    indexName: NotRequired[str],
+    unit: NotRequired[FleetMetricUnitType],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
+2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreatePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreatePolicyRequestRequestTypeDef
+
+def get_value() -> CreatePolicyRequestRequestTypeDef:
+    return {
+        "policyName": ...,
+        "policyDocument": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePolicyRequestRequestTypeDef(TypedDict):
+    policyName: str,
+    policyDocument: str,
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateRoleAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateRoleAliasRequestRequestTypeDef
+
+def get_value() -> CreateRoleAliasRequestRequestTypeDef:
+    return {
+        "roleAlias": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRoleAliasRequestRequestTypeDef(TypedDict):
+    roleAlias: str,
+    roleArn: str,
+    credentialDurationSeconds: NotRequired[int],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateScheduledAuditRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateScheduledAuditRequestRequestTypeDef
+
+def get_value() -> CreateScheduledAuditRequestRequestTypeDef:
+    return {
+        "frequency": ...,
+        "targetCheckNames": ...,
+        "scheduledAuditName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateScheduledAuditRequestRequestTypeDef(TypedDict):
+    frequency: AuditFrequencyType,  # (1)
+    targetCheckNames: Sequence[str],
+    scheduledAuditName: str,
+    dayOfMonth: NotRequired[str],
+    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateKeysAndCertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateKeysAndCertificateResponseTypeDef
+
+def get_value() -> CreateKeysAndCertificateResponseTypeDef:
+    return {
+        "certificateArn": ...,
+        "certificateId": ...,
+        "certificatePem": ...,
+        "keyPair": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateKeysAndCertificateResponseTypeDef(TypedDict):
+    certificateArn: str,
+    certificateId: str,
+    certificatePem: str,
+    keyPair: KeyPairTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisioningClaimResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateProvisioningClaimResponseTypeDef
+
+def get_value() -> CreateProvisioningClaimResponseTypeDef:
+    return {
+        "certificateId": ...,
+        "certificatePem": ...,
+        "keyPair": ...,
+        "expiration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningClaimResponseTypeDef(TypedDict):
+    certificateId: str,
+    certificatePem: str,
+    keyPair: KeyPairTypeDef,  # (1)
+    expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisioningTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateRequestRequestTypeDef
+
+def get_value() -> CreateProvisioningTemplateRequestRequestTypeDef:
+    return {
+        "templateName": ...,
+        "templateBody": ...,
+        "provisioningRoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningTemplateRequestRequestTypeDef(TypedDict):
+    templateName: str,
+    templateBody: str,
+    provisioningRoleArn: str,
+    description: NotRequired[str],
+    enabled: NotRequired[bool],
+    preProvisioningHook: NotRequired[ProvisioningHookTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeProvisioningTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateResponseTypeDef
+
+def get_value() -> DescribeProvisioningTemplateResponseTypeDef:
+    return {
+        "templateArn": ...,
+        "templateName": ...,
+        "description": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "defaultVersionId": ...,
+        "templateBody": ...,
+        "enabled": ...,
+        "provisioningRoleArn": ...,
+        "preProvisioningHook": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProvisioningTemplateResponseTypeDef(TypedDict):
+    templateArn: str,
+    templateName: str,
+    description: str,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    defaultVersionId: int,
+    templateBody: str,
+    enabled: bool,
+    provisioningRoleArn: str,
+    preProvisioningHook: ProvisioningHookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProvisioningTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateProvisioningTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateProvisioningTemplateRequestRequestTypeDef:
+    return {
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisioningTemplateRequestRequestTypeDef(TypedDict):
+    templateName: str,
+    description: NotRequired[str],
+    enabled: NotRequired[bool],
+    defaultVersionId: NotRequired[int],
+    provisioningRoleArn: NotRequired[str],
+    preProvisioningHook: NotRequired[ProvisioningHookTypeDef],  # (1)
+    removePreProvisioningHook: NotRequired[bool],
+```
+
+1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
+## CreateThingTypeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingTypeRequestRequestTypeDef
+
+def get_value() -> CreateThingTypeRequestRequestTypeDef:
+    return {
+        "thingTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingTypeRequestRequestTypeDef(TypedDict):
+    thingTypeName: str,
+    thingTypeProperties: NotRequired[ThingTypePropertiesTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeAuditTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseTypeDef
+
+def get_value() -> DescribeAuditTaskResponseTypeDef:
+    return {
+        "taskStatus": ...,
+        "taskType": ...,
+        "taskStartTime": ...,
+        "taskStatistics": ...,
+        "scheduledAuditName": ...,
+        "auditDetails": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuditTaskResponseTypeDef(TypedDict):
+    taskStatus: AuditTaskStatusType,  # (1)
+    taskType: AuditTaskTypeType,  # (2)
+    taskStartTime: datetime,
+    taskStatistics: TaskStatisticsTypeDef,  # (3)
+    scheduledAuditName: str,
+    auditDetails: Dict[str, AuditCheckDetailsTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
+2. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
+3. See [:material-code-braces: TaskStatisticsTypeDef](./type_defs.md#taskstatisticstypedef) 
+4. See [:material-code-braces: AuditCheckDetailsTypeDef](./type_defs.md#auditcheckdetailstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterCACertificateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RegisterCACertificateRequestRequestTypeDef
+
+def get_value() -> RegisterCACertificateRequestRequestTypeDef:
+    return {
+        "caCertificate": ...,
+        "verificationCertificate": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCACertificateRequestRequestTypeDef(TypedDict):
+    caCertificate: str,
+    verificationCertificate: str,
+    setAsActive: NotRequired[bool],
+    allowAutoRegistration: NotRequired[bool],
+    registrationConfig: NotRequired[RegistrationConfigTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateCACertificateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateCACertificateRequestRequestTypeDef
+
+def get_value() -> UpdateCACertificateRequestRequestTypeDef:
+    return {
+        "certificateId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCACertificateRequestRequestTypeDef(TypedDict):
+    certificateId: str,
+    newStatus: NotRequired[CACertificateStatusType],  # (1)
+    newAutoRegistrationStatus: NotRequired[AutoRegistrationStatusType],  # (2)
+    registrationConfig: NotRequired[RegistrationConfigTypeDef],  # (3)
+    removeAutoRegistration: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
+2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
+3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+## DescribeDomainConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeDomainConfigurationResponseTypeDef
+
+def get_value() -> DescribeDomainConfigurationResponseTypeDef:
+    return {
+        "domainConfigurationName": ...,
+        "domainConfigurationArn": ...,
+        "domainName": ...,
+        "serverCertificates": ...,
+        "authorizerConfig": ...,
+        "domainConfigurationStatus": ...,
+        "serviceType": ...,
+        "domainType": ...,
+        "lastStatusChangeDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDomainConfigurationResponseTypeDef(TypedDict):
+    domainConfigurationName: str,
+    domainConfigurationArn: str,
+    domainName: str,
+    serverCertificates: List[ServerCertificateSummaryTypeDef],  # (1)
+    authorizerConfig: AuthorizerConfigTypeDef,  # (2)
+    domainConfigurationStatus: DomainConfigurationStatusType,  # (3)
+    serviceType: ServiceTypeType,  # (4)
+    domainType: DomainTypeType,  # (5)
+    lastStatusChangeDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: ServerCertificateSummaryTypeDef](./type_defs.md#servercertificatesummarytypedef) 
+2. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
+3. See [:material-code-brackets: DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype) 
+4. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+5. See [:material-code-brackets: DomainTypeType](./literals.md#domaintypetype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeManagedJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeManagedJobTemplateResponseTypeDef
+
+def get_value() -> DescribeManagedJobTemplateResponseTypeDef:
+    return {
+        "templateName": ...,
+        "templateArn": ...,
+        "description": ...,
+        "templateVersion": ...,
+        "environments": ...,
+        "documentParameters": ...,
+        "document": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeManagedJobTemplateResponseTypeDef(TypedDict):
+    templateName: str,
+    templateArn: str,
+    description: str,
+    templateVersion: str,
+    environments: List[str],
+    documentParameters: List[DocumentParameterTypeDef],  # (1)
+    document: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DocumentParameterTypeDef](./type_defs.md#documentparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRoleAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeRoleAliasResponseTypeDef
+
+def get_value() -> DescribeRoleAliasResponseTypeDef:
+    return {
+        "roleAliasDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRoleAliasResponseTypeDef(TypedDict):
+    roleAliasDescription: RoleAliasDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoleAliasDescriptionTypeDef](./type_defs.md#rolealiasdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThingTypeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeThingTypeResponseTypeDef
+
+def get_value() -> DescribeThingTypeResponseTypeDef:
+    return {
+        "thingTypeName": ...,
+        "thingTypeId": ...,
+        "thingTypeArn": ...,
+        "thingTypeProperties": ...,
+        "thingTypeMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThingTypeResponseTypeDef(TypedDict):
+    thingTypeName: str,
+    thingTypeId: str,
+    thingTypeArn: str,
+    thingTypeProperties: ThingTypePropertiesTypeDef,  # (1)
+    thingTypeMetadata: ThingTypeMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
+2. See [:material-code-braces: ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ThingTypeDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingTypeDefinitionTypeDef
+
+def get_value() -> ThingTypeDefinitionTypeDef:
+    return {
+        "thingTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class ThingTypeDefinitionTypeDef(TypedDict):
+    thingTypeName: NotRequired[str],
+    thingTypeArn: NotRequired[str],
+    thingTypeProperties: NotRequired[ThingTypePropertiesTypeDef],  # (1)
+    thingTypeMetadata: NotRequired[ThingTypeMetadataTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
+2. See [:material-code-braces: ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef) 
+## DestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "s3Destination": ...,
+    }
+```
+
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    s3Destination: NotRequired[S3DestinationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+## ListDetectMitigationActionsExecutionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsResponseTypeDef
+
+def get_value() -> ListDetectMitigationActionsExecutionsResponseTypeDef:
+    return {
+        "actionsExecutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDetectMitigationActionsExecutionsResponseTypeDef(TypedDict):
+    actionsExecutions: List[DetectMitigationActionExecutionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectMitigationActionExecutionTypeDef](./type_defs.md#detectmitigationactionexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartDetectMitigationActionsTaskRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskRequestRequestTypeDef
+
+def get_value() -> StartDetectMitigationActionsTaskRequestRequestTypeDef:
+    return {
+        "taskId": ...,
+        "target": ...,
+        "actions": ...,
+        "clientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class StartDetectMitigationActionsTaskRequestRequestTypeDef(TypedDict):
+    taskId: str,
+    target: DetectMitigationActionsTaskTargetTypeDef,  # (1)
+    actions: Sequence[str],
+    clientRequestToken: str,
+    violationEventOccurrenceRange: NotRequired[ViolationEventOccurrenceRangeTypeDef],  # (2)
+    includeOnlyActiveViolations: NotRequired[bool],
+    includeSuppressedAlerts: NotRequired[bool],
+```
+
+1. See [:material-code-braces: DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef) 
+2. See [:material-code-braces: ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef) 
+## ListDomainConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDomainConfigurationsResponseTypeDef
+
+def get_value() -> ListDomainConfigurationsResponseTypeDef:
+    return {
+        "domainConfigurations": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainConfigurationsResponseTypeDef(TypedDict):
+    domainConfigurations: List[DomainConfigurationSummaryTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainConfigurationSummaryTypeDef](./type_defs.md#domainconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DynamoDBv2ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DynamoDBv2ActionTypeDef
+
+def get_value() -> DynamoDBv2ActionTypeDef:
+    return {
+        "roleArn": ...,
+        "putItem": ...,
+    }
+```
+
+```python title="Definition"
+class DynamoDBv2ActionTypeDef(TypedDict):
+    roleArn: str,
+    putItem: PutItemInputTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: PutItemInputTypeDef](./type_defs.md#putiteminputtypedef) 
+## GetEffectivePoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetEffectivePoliciesResponseTypeDef
+
+def get_value() -> GetEffectivePoliciesResponseTypeDef:
+    return {
+        "effectivePolicies": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEffectivePoliciesResponseTypeDef(TypedDict):
+    effectivePolicies: List[EffectivePolicyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EffectivePolicyTypeDef](./type_defs.md#effectivepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExponentialRolloutRateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ExponentialRolloutRateTypeDef
+
+def get_value() -> ExponentialRolloutRateTypeDef:
+    return {
+        "baseRatePerMinute": ...,
+        "incrementFactor": ...,
+        "rateIncreaseCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ExponentialRolloutRateTypeDef(TypedDict):
+    baseRatePerMinute: int,
+    incrementFactor: float,
+    rateIncreaseCriteria: RateIncreaseCriteriaTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RateIncreaseCriteriaTypeDef](./type_defs.md#rateincreasecriteriatypedef) 
+## ThingGroupIndexingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingGroupIndexingConfigurationTypeDef
+
+def get_value() -> ThingGroupIndexingConfigurationTypeDef:
+    return {
+        "thingGroupIndexingMode": ...,
+    }
+```
+
+```python title="Definition"
+class ThingGroupIndexingConfigurationTypeDef(TypedDict):
+    thingGroupIndexingMode: ThingGroupIndexingModeType,  # (1)
+    managedFields: NotRequired[List[FieldTypeDef]],  # (2)
+    customFields: NotRequired[List[FieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ThingGroupIndexingModeType](./literals.md#thinggroupindexingmodetype) 
+2. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+3. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+## ThingIndexingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingIndexingConfigurationTypeDef
+
+def get_value() -> ThingIndexingConfigurationTypeDef:
+    return {
+        "thingIndexingMode": ...,
+    }
+```
+
+```python title="Definition"
+class ThingIndexingConfigurationTypeDef(TypedDict):
+    thingIndexingMode: ThingIndexingModeType,  # (1)
+    thingConnectivityIndexingMode: NotRequired[ThingConnectivityIndexingModeType],  # (2)
+    deviceDefenderIndexingMode: NotRequired[DeviceDefenderIndexingModeType],  # (3)
+    namedShadowIndexingMode: NotRequired[NamedShadowIndexingModeType],  # (4)
+    managedFields: NotRequired[List[FieldTypeDef]],  # (5)
+    customFields: NotRequired[List[FieldTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: ThingIndexingModeType](./literals.md#thingindexingmodetype) 
+2. See [:material-code-brackets: ThingConnectivityIndexingModeType](./literals.md#thingconnectivityindexingmodetype) 
+3. See [:material-code-brackets: DeviceDefenderIndexingModeType](./literals.md#devicedefenderindexingmodetype) 
+4. See [:material-code-brackets: NamedShadowIndexingModeType](./literals.md#namedshadowindexingmodetype) 
+5. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+6. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+## StreamFileTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StreamFileTypeDef
+
+def get_value() -> StreamFileTypeDef:
+    return {
+        "fileId": ...,
+    }
+```
+
+```python title="Definition"
+class StreamFileTypeDef(TypedDict):
+    fileId: NotRequired[int],
+    s3Location: NotRequired[S3LocationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## FileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import FileLocationTypeDef
+
+def get_value() -> FileLocationTypeDef:
+    return {
+        "stream": ...,
+    }
+```
+
+```python title="Definition"
+class FileLocationTypeDef(TypedDict):
+    stream: NotRequired[StreamTypeDef],  # (1)
+    s3Location: NotRequired[S3LocationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StreamTypeDef](./type_defs.md#streamtypedef) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## ListFleetMetricsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListFleetMetricsResponseTypeDef
+
+def get_value() -> ListFleetMetricsResponseTypeDef:
+    return {
+        "fleetMetrics": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFleetMetricsResponseTypeDef(TypedDict):
+    fleetMetrics: List[FleetMetricNameAndArnTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FleetMetricNameAndArnTypeDef](./type_defs.md#fleetmetricnameandarntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef
+
+def get_value() -> GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef:
+    return {
+        "securityProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef(TypedDict):
+    securityProfileName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListActiveViolationsRequestListActiveViolationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListActiveViolationsRequestListActiveViolationsPaginateTypeDef
+
+def get_value() -> ListActiveViolationsRequestListActiveViolationsPaginateTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListActiveViolationsRequestListActiveViolationsPaginateTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    securityProfileName: NotRequired[str],
+    behaviorCriteriaType: NotRequired[BehaviorCriteriaTypeType],  # (1)
+    listSuppressedAlerts: NotRequired[bool],
+    verificationState: NotRequired[VerificationStateType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
+2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef
+
+def get_value() -> ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef:
+    return {
+        "target": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef(TypedDict):
+    target: str,
+    recursive: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef
+
+def get_value() -> ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef:
+    return {
+        "taskId": ...,
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef(TypedDict):
+    taskId: str,
+    findingId: str,
+    actionStatus: NotRequired[AuditMitigationActionsExecutionStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef
+
+def get_value() -> ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef(TypedDict):
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    auditTaskId: NotRequired[str],
+    findingId: NotRequired[str],
+    taskStatus: NotRequired[AuditMitigationActionsTaskStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuditTasksRequestListAuditTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditTasksRequestListAuditTasksPaginateTypeDef
+
+def get_value() -> ListAuditTasksRequestListAuditTasksPaginateTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditTasksRequestListAuditTasksPaginateTypeDef(TypedDict):
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    taskType: NotRequired[AuditTaskTypeType],  # (1)
+    taskStatus: NotRequired[AuditTaskStatusType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
+2. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuthorizersRequestListAuthorizersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuthorizersRequestListAuthorizersPaginateTypeDef
+
+def get_value() -> ListAuthorizersRequestListAuthorizersPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuthorizersRequestListAuthorizersPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    status: NotRequired[AuthorizerStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListBillingGroupsRequestListBillingGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListBillingGroupsRequestListBillingGroupsPaginateTypeDef
+
+def get_value() -> ListBillingGroupsRequestListBillingGroupsPaginateTypeDef:
+    return {
+        "namePrefixFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListBillingGroupsRequestListBillingGroupsPaginateTypeDef(TypedDict):
+    namePrefixFilter: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCACertificatesRequestListCACertificatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCACertificatesRequestListCACertificatesPaginateTypeDef
+
+def get_value() -> ListCACertificatesRequestListCACertificatesPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListCACertificatesRequestListCACertificatesPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef
+
+def get_value() -> ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef:
+    return {
+        "caCertificateId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef(TypedDict):
+    caCertificateId: str,
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCertificatesRequestListCertificatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCertificatesRequestListCertificatesPaginateTypeDef
+
+def get_value() -> ListCertificatesRequestListCertificatesPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesRequestListCertificatesPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCustomMetricsRequestListCustomMetricsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListCustomMetricsRequestListCustomMetricsPaginateTypeDef
+
+def get_value() -> ListCustomMetricsRequestListCustomMetricsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomMetricsRequestListCustomMetricsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef
+
+def get_value() -> ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    violationId: NotRequired[str],
+    thingName: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef
+
+def get_value() -> ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef(TypedDict):
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDimensionsRequestListDimensionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDimensionsRequestListDimensionsPaginateTypeDef
+
+def get_value() -> ListDimensionsRequestListDimensionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDimensionsRequestListDimensionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef
+
+def get_value() -> ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef:
+    return {
+        "serviceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef(TypedDict):
+    serviceType: NotRequired[ServiceTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFleetMetricsRequestListFleetMetricsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListFleetMetricsRequestListFleetMetricsPaginateTypeDef
+
+def get_value() -> ListFleetMetricsRequestListFleetMetricsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFleetMetricsRequestListFleetMetricsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListIndicesRequestListIndicesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListIndicesRequestListIndicesPaginateTypeDef
+
+def get_value() -> ListIndicesRequestListIndicesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListIndicesRequestListIndicesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef
+
+def get_value() -> ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef(TypedDict):
+    jobId: str,
+    status: NotRequired[JobExecutionStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef
+
+def get_value() -> ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef(TypedDict):
+    thingName: str,
+    status: NotRequired[JobExecutionStatusType],  # (1)
+    namespaceId: NotRequired[str],
+    jobId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
+
+def get_value() -> ListJobTemplatesRequestListJobTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesRequestListJobTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListJobsRequestListJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobsRequestListJobsPaginateTypeDef
+
+def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
+    status: NotRequired[JobStatusType],  # (1)
+    targetSelection: NotRequired[TargetSelectionType],  # (2)
+    thingGroupName: NotRequired[str],
+    thingGroupId: NotRequired[str],
+    namespaceId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMetricValuesRequestListMetricValuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMetricValuesRequestListMetricValuesPaginateTypeDef
+
+def get_value() -> ListMetricValuesRequestListMetricValuesPaginateTypeDef:
+    return {
+        "thingName": ...,
+        "metricName": ...,
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricValuesRequestListMetricValuesPaginateTypeDef(TypedDict):
+    thingName: str,
+    metricName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    dimensionName: NotRequired[str],
+    dimensionValueOperator: NotRequired[DimensionValueOperatorType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMitigationActionsRequestListMitigationActionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMitigationActionsRequestListMitigationActionsPaginateTypeDef
+
+def get_value() -> ListMitigationActionsRequestListMitigationActionsPaginateTypeDef:
+    return {
+        "actionType": ...,
+    }
+```
+
+```python title="Definition"
+class ListMitigationActionsRequestListMitigationActionsPaginateTypeDef(TypedDict):
+    actionType: NotRequired[MitigationActionTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef
+
+def get_value() -> ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef:
+    return {
+        "otaUpdateStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef(TypedDict):
+    otaUpdateStatus: NotRequired[OTAUpdateStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef
+
+def get_value() -> ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPoliciesRequestListPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPoliciesRequestListPoliciesPaginateTypeDef
+
+def get_value() -> ListPoliciesRequestListPoliciesPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListPoliciesRequestListPoliciesPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef
+
+def get_value() -> ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef:
+    return {
+        "policyName": ...,
+    }
+```
+
+```python title="Definition"
+class ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef(TypedDict):
+    policyName: str,
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef
+
+def get_value() -> ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef:
+    return {
+        "principal": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef(TypedDict):
+    principal: str,
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef
+
+def get_value() -> ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef:
+    return {
+        "principal": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef(TypedDict):
+    principal: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef
+
+def get_value() -> ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef:
+    return {
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef(TypedDict):
+    templateName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef
+
+def get_value() -> ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRoleAliasesRequestListRoleAliasesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListRoleAliasesRequestListRoleAliasesPaginateTypeDef
+
+def get_value() -> ListRoleAliasesRequestListRoleAliasesPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoleAliasesRequestListRoleAliasesPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef
+
+def get_value() -> ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef
+
+def get_value() -> ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef:
+    return {
+        "securityProfileTargetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef(TypedDict):
+    securityProfileTargetArn: str,
+    recursive: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
+
+def get_value() -> ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef:
+    return {
+        "dimensionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef(TypedDict):
+    dimensionName: NotRequired[str],
+    metricName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStreamsRequestListStreamsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListStreamsRequestListStreamsPaginateTypeDef
+
+def get_value() -> ListStreamsRequestListStreamsPaginateTypeDef:
+    return {
+        "ascendingOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamsRequestListStreamsPaginateTypeDef(TypedDict):
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef
+
+def get_value() -> ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef:
+    return {
+        "policyName": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef(TypedDict):
+    policyName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef
+
+def get_value() -> ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef:
+    return {
+        "securityProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef(TypedDict):
+    securityProfileName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef
+
+def get_value() -> ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef(TypedDict):
+    thingName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingGroupsRequestListThingGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingGroupsRequestListThingGroupsPaginateTypeDef
+
+def get_value() -> ListThingGroupsRequestListThingGroupsPaginateTypeDef:
+    return {
+        "parentGroup": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingGroupsRequestListThingGroupsPaginateTypeDef(TypedDict):
+    parentGroup: NotRequired[str],
+    namePrefixFilter: NotRequired[str],
+    recursive: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef
+
+def get_value() -> ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef(TypedDict):
+    thingName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef
+
+def get_value() -> ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef:
+    return {
+        "taskId": ...,
+        "reportType": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef(TypedDict):
+    taskId: str,
+    reportType: ReportTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef
+
+def get_value() -> ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef(TypedDict):
+    status: NotRequired[StatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingTypesRequestListThingTypesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingTypesRequestListThingTypesPaginateTypeDef
+
+def get_value() -> ListThingTypesRequestListThingTypesPaginateTypeDef:
+    return {
+        "thingTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingTypesRequestListThingTypesPaginateTypeDef(TypedDict):
+    thingTypeName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef
+
+def get_value() -> ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef:
+    return {
+        "billingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef(TypedDict):
+    billingGroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef
+
+def get_value() -> ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef:
+    return {
+        "thingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef(TypedDict):
+    thingGroupName: str,
+    recursive: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThingsRequestListThingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsRequestListThingsPaginateTypeDef
+
+def get_value() -> ListThingsRequestListThingsPaginateTypeDef:
+    return {
+        "attributeName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsRequestListThingsPaginateTypeDef(TypedDict):
+    attributeName: NotRequired[str],
+    attributeValue: NotRequired[str],
+    thingTypeName: NotRequired[str],
+    usePrefixAttributeValue: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef
+
+def get_value() -> ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTopicRulesRequestListTopicRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTopicRulesRequestListTopicRulesPaginateTypeDef
+
+def get_value() -> ListTopicRulesRequestListTopicRulesPaginateTypeDef:
+    return {
+        "topic": ...,
+    }
+```
+
+```python title="Definition"
+class ListTopicRulesRequestListTopicRulesPaginateTypeDef(TypedDict):
+    topic: NotRequired[str],
+    ruleDisabled: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef
+
+def get_value() -> ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef:
+    return {
+        "targetType": ...,
+    }
+```
+
+```python title="Definition"
+class ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef(TypedDict):
+    targetType: NotRequired[LogTargetTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListViolationEventsRequestListViolationEventsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListViolationEventsRequestListViolationEventsPaginateTypeDef
+
+def get_value() -> ListViolationEventsRequestListViolationEventsPaginateTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListViolationEventsRequestListViolationEventsPaginateTypeDef(TypedDict):
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    thingName: NotRequired[str],
+    securityProfileName: NotRequired[str],
+    behaviorCriteriaType: NotRequired[BehaviorCriteriaTypeType],  # (1)
+    listSuppressedAlerts: NotRequired[bool],
+    verificationState: NotRequired[VerificationStateType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
+2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetPercentilesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetPercentilesResponseTypeDef
+
+def get_value() -> GetPercentilesResponseTypeDef:
+    return {
+        "percentiles": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPercentilesResponseTypeDef(TypedDict):
+    percentiles: List[PercentPairTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PercentPairTypeDef](./type_defs.md#percentpairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetStatisticsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetStatisticsResponseTypeDef
+
+def get_value() -> GetStatisticsResponseTypeDef:
+    return {
+        "statistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStatisticsResponseTypeDef(TypedDict):
+    statistics: StatisticsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StatisticsTypeDef](./type_defs.md#statisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBillingGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListBillingGroupsResponseTypeDef
+
+def get_value() -> ListBillingGroupsResponseTypeDef:
+    return {
+        "billingGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBillingGroupsResponseTypeDef(TypedDict):
+    billingGroups: List[GroupNameAndArnTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingGroupsForThingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingGroupsForThingResponseTypeDef
+
+def get_value() -> ListThingGroupsForThingResponseTypeDef:
+    return {
+        "thingGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingGroupsForThingResponseTypeDef(TypedDict):
+    thingGroups: List[GroupNameAndArnTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingGroupsResponseTypeDef
+
+def get_value() -> ListThingGroupsResponseTypeDef:
+    return {
+        "thingGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingGroupsResponseTypeDef(TypedDict):
+    thingGroups: List[GroupNameAndArnTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ThingGroupMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingGroupMetadataTypeDef
+
+def get_value() -> ThingGroupMetadataTypeDef:
+    return {
+        "parentGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ThingGroupMetadataTypeDef(TypedDict):
+    parentGroupName: NotRequired[str],
+    rootToParentThingGroups: NotRequired[List[GroupNameAndArnTypeDef]],  # (1)
+    creationDate: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef) 
+## HttpAuthorizationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import HttpAuthorizationTypeDef
+
+def get_value() -> HttpAuthorizationTypeDef:
+    return {
+        "sigv4": ...,
+    }
+```
+
+```python title="Definition"
+class HttpAuthorizationTypeDef(TypedDict):
+    sigv4: NotRequired[SigV4AuthorizationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SigV4AuthorizationTypeDef](./type_defs.md#sigv4authorizationtypedef) 
+## JobExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobExecutionTypeDef
+
+def get_value() -> JobExecutionTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class JobExecutionTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    status: NotRequired[JobExecutionStatusType],  # (1)
+    forceCanceled: NotRequired[bool],
+    statusDetails: NotRequired[JobExecutionStatusDetailsTypeDef],  # (2)
+    thingArn: NotRequired[str],
+    queuedAt: NotRequired[datetime],
+    startedAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    executionNumber: NotRequired[int],
+    versionNumber: NotRequired[int],
+    approximateSecondsBeforeTimedOut: NotRequired[int],
+```
+
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: JobExecutionStatusDetailsTypeDef](./type_defs.md#jobexecutionstatusdetailstypedef) 
+## JobExecutionSummaryForJobTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobExecutionSummaryForJobTypeDef
+
+def get_value() -> JobExecutionSummaryForJobTypeDef:
+    return {
+        "thingArn": ...,
+    }
+```
+
+```python title="Definition"
+class JobExecutionSummaryForJobTypeDef(TypedDict):
+    thingArn: NotRequired[str],
+    jobExecutionSummary: NotRequired[JobExecutionSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
+## JobExecutionSummaryForThingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobExecutionSummaryForThingTypeDef
+
+def get_value() -> JobExecutionSummaryForThingTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class JobExecutionSummaryForThingTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    jobExecutionSummary: NotRequired[JobExecutionSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
+## JobExecutionsRetryConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobExecutionsRetryConfigTypeDef
+
+def get_value() -> JobExecutionsRetryConfigTypeDef:
+    return {
+        "criteriaList": ...,
+    }
+```
+
+```python title="Definition"
+class JobExecutionsRetryConfigTypeDef(TypedDict):
+    criteriaList: Sequence[RetryCriteriaTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RetryCriteriaTypeDef](./type_defs.md#retrycriteriatypedef) 
+## ListJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobsResponseTypeDef
+
+def get_value() -> ListJobsResponseTypeDef:
+    return {
+        "jobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsResponseTypeDef(TypedDict):
+    jobs: List[JobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobTemplatesResponseTypeDef
+
+def get_value() -> ListJobTemplatesResponseTypeDef:
+    return {
+        "jobTemplates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesResponseTypeDef(TypedDict):
+    jobTemplates: List[JobTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTemplateSummaryTypeDef](./type_defs.md#jobtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListManagedJobTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListManagedJobTemplatesResponseTypeDef
+
+def get_value() -> ListManagedJobTemplatesResponseTypeDef:
+    return {
+        "managedJobTemplates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListManagedJobTemplatesResponseTypeDef(TypedDict):
+    managedJobTemplates: List[ManagedJobTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ManagedJobTemplateSummaryTypeDef](./type_defs.md#managedjobtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMitigationActionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMitigationActionsResponseTypeDef
+
+def get_value() -> ListMitigationActionsResponseTypeDef:
+    return {
+        "actionIdentifiers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMitigationActionsResponseTypeDef(TypedDict):
+    actionIdentifiers: List[MitigationActionIdentifierTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MitigationActionIdentifierTypeDef](./type_defs.md#mitigationactionidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOTAUpdatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListOTAUpdatesResponseTypeDef
+
+def get_value() -> ListOTAUpdatesResponseTypeDef:
+    return {
+        "otaUpdates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOTAUpdatesResponseTypeDef(TypedDict):
+    otaUpdates: List[OTAUpdateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OTAUpdateSummaryTypeDef](./type_defs.md#otaupdatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOutgoingCertificatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListOutgoingCertificatesResponseTypeDef
+
+def get_value() -> ListOutgoingCertificatesResponseTypeDef:
+    return {
+        "outgoingCertificates": ...,
+        "nextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOutgoingCertificatesResponseTypeDef(TypedDict):
+    outgoingCertificates: List[OutgoingCertificateTypeDef],  # (1)
+    nextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OutgoingCertificateTypeDef](./type_defs.md#outgoingcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPolicyVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListPolicyVersionsResponseTypeDef
+
+def get_value() -> ListPolicyVersionsResponseTypeDef:
+    return {
+        "policyVersions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPolicyVersionsResponseTypeDef(TypedDict):
+    policyVersions: List[PolicyVersionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProvisioningTemplateVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsResponseTypeDef
+
+def get_value() -> ListProvisioningTemplateVersionsResponseTypeDef:
+    return {
+        "versions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningTemplateVersionsResponseTypeDef(TypedDict):
+    versions: List[ProvisioningTemplateVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisioningTemplateVersionSummaryTypeDef](./type_defs.md#provisioningtemplateversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProvisioningTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListProvisioningTemplatesResponseTypeDef
+
+def get_value() -> ListProvisioningTemplatesResponseTypeDef:
+    return {
+        "templates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningTemplatesResponseTypeDef(TypedDict):
+    templates: List[ProvisioningTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisioningTemplateSummaryTypeDef](./type_defs.md#provisioningtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListScheduledAuditsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListScheduledAuditsResponseTypeDef
+
+def get_value() -> ListScheduledAuditsResponseTypeDef:
+    return {
+        "scheduledAudits": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListScheduledAuditsResponseTypeDef(TypedDict):
+    scheduledAudits: List[ScheduledAuditMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScheduledAuditMetadataTypeDef](./type_defs.md#scheduledauditmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityProfilesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListSecurityProfilesResponseTypeDef
+
+def get_value() -> ListSecurityProfilesResponseTypeDef:
+    return {
+        "securityProfileIdentifiers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilesResponseTypeDef(TypedDict):
+    securityProfileIdentifiers: List[SecurityProfileIdentifierTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStreamsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListStreamsResponseTypeDef
+
+def get_value() -> ListStreamsResponseTypeDef:
+    return {
+        "streams": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamsResponseTypeDef(TypedDict):
+    streams: List[StreamSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTargetsForSecurityProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileResponseTypeDef
+
+def get_value() -> ListTargetsForSecurityProfileResponseTypeDef:
+    return {
+        "securityProfileTargets": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsForSecurityProfileResponseTypeDef(TypedDict):
+    securityProfileTargets: List[SecurityProfileTargetTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SecurityProfileTargetMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SecurityProfileTargetMappingTypeDef
+
+def get_value() -> SecurityProfileTargetMappingTypeDef:
+    return {
+        "securityProfileIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityProfileTargetMappingTypeDef(TypedDict):
+    securityProfileIdentifier: NotRequired[SecurityProfileIdentifierTypeDef],  # (1)
+    target: NotRequired[SecurityProfileTargetTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef) 
+2. See [:material-code-braces: SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef) 
+## ListThingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListThingsResponseTypeDef
+
+def get_value() -> ListThingsResponseTypeDef:
+    return {
+        "things": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThingsResponseTypeDef(TypedDict):
+    things: List[ThingAttributeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThingAttributeTypeDef](./type_defs.md#thingattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTopicRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTopicRulesResponseTypeDef
+
+def get_value() -> ListTopicRulesResponseTypeDef:
+    return {
+        "rules": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTopicRulesResponseTypeDef(TypedDict):
+    rules: List[TopicRuleListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TopicRuleListItemTypeDef](./type_defs.md#topicrulelistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LogTargetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import LogTargetConfigurationTypeDef
+
+def get_value() -> LogTargetConfigurationTypeDef:
+    return {
+        "logTarget": ...,
+    }
+```
+
+```python title="Definition"
+class LogTargetConfigurationTypeDef(TypedDict):
+    logTarget: NotRequired[LogTargetTypeDef],  # (1)
+    logLevel: NotRequired[LogLevelType],  # (2)
+```
+
+1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+## SetV2LoggingLevelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SetV2LoggingLevelRequestRequestTypeDef
+
+def get_value() -> SetV2LoggingLevelRequestRequestTypeDef:
+    return {
+        "logTarget": ...,
+        "logLevel": ...,
+    }
+```
+
+```python title="Definition"
+class SetV2LoggingLevelRequestRequestTypeDef(TypedDict):
+    logTarget: LogTargetTypeDef,  # (1)
+    logLevel: LogLevelType,  # (2)
+```
+
+1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+## SetLoggingOptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SetLoggingOptionsRequestRequestTypeDef
+
+def get_value() -> SetLoggingOptionsRequestRequestTypeDef:
+    return {
+        "loggingOptionsPayload": ...,
+    }
+```
+
+```python title="Definition"
+class SetLoggingOptionsRequestRequestTypeDef(TypedDict):
+    loggingOptionsPayload: LoggingOptionsPayloadTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef) 
+## MitigationActionParamsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MitigationActionParamsTypeDef
+
+def get_value() -> MitigationActionParamsTypeDef:
+    return {
+        "updateDeviceCertificateParams": ...,
+    }
+```
+
+```python title="Definition"
+class MitigationActionParamsTypeDef(TypedDict):
+    updateDeviceCertificateParams: NotRequired[UpdateDeviceCertificateParamsTypeDef],  # (1)
+    updateCACertificateParams: NotRequired[UpdateCACertificateParamsTypeDef],  # (2)
+    addThingsToThingGroupParams: NotRequired[AddThingsToThingGroupParamsTypeDef],  # (3)
+    replaceDefaultPolicyVersionParams: NotRequired[ReplaceDefaultPolicyVersionParamsTypeDef],  # (4)
+    enableIoTLoggingParams: NotRequired[EnableIoTLoggingParamsTypeDef],  # (5)
+    publishFindingToSnsParams: NotRequired[PublishFindingToSnsParamsTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: UpdateDeviceCertificateParamsTypeDef](./type_defs.md#updatedevicecertificateparamstypedef) 
+2. See [:material-code-braces: UpdateCACertificateParamsTypeDef](./type_defs.md#updatecacertificateparamstypedef) 
+3. See [:material-code-braces: AddThingsToThingGroupParamsTypeDef](./type_defs.md#addthingstothinggroupparamstypedef) 
+4. See [:material-code-braces: ReplaceDefaultPolicyVersionParamsTypeDef](./type_defs.md#replacedefaultpolicyversionparamstypedef) 
+5. See [:material-code-braces: EnableIoTLoggingParamsTypeDef](./type_defs.md#enableiotloggingparamstypedef) 
+6. See [:material-code-braces: PublishFindingToSnsParamsTypeDef](./type_defs.md#publishfindingtosnsparamstypedef) 
+## ResourceIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ResourceIdentifierTypeDef
+
+def get_value() -> ResourceIdentifierTypeDef:
+    return {
+        "deviceCertificateId": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceIdentifierTypeDef(TypedDict):
+    deviceCertificateId: NotRequired[str],
+    caCertificateId: NotRequired[str],
+    cognitoIdentityPoolId: NotRequired[str],
+    clientId: NotRequired[str],
+    policyVersionIdentifier: NotRequired[PolicyVersionIdentifierTypeDef],  # (1)
+    account: NotRequired[str],
+    iamRoleArn: NotRequired[str],
+    roleAliasArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: PolicyVersionIdentifierTypeDef](./type_defs.md#policyversionidentifiertypedef) 
+## TestInvokeAuthorizerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
+
+def get_value() -> TestInvokeAuthorizerRequestRequestTypeDef:
+    return {
+        "authorizerName": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeAuthorizerRequestRequestTypeDef(TypedDict):
+    authorizerName: str,
+    token: NotRequired[str],
+    tokenSignature: NotRequired[str],
+    httpContext: NotRequired[HttpContextTypeDef],  # (1)
+    mqttContext: NotRequired[MqttContextTypeDef],  # (2)
+    tlsContext: NotRequired[TlsContextTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: HttpContextTypeDef](./type_defs.md#httpcontexttypedef) 
+2. See [:material-code-braces: MqttContextTypeDef](./type_defs.md#mqttcontexttypedef) 
+3. See [:material-code-braces: TlsContextTypeDef](./type_defs.md#tlscontexttypedef) 
+## ThingDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ThingDocumentTypeDef
+
+def get_value() -> ThingDocumentTypeDef:
+    return {
+        "thingName": ...,
+    }
+```
+
+```python title="Definition"
+class ThingDocumentTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    thingId: NotRequired[str],
+    thingTypeName: NotRequired[str],
+    thingGroupNames: NotRequired[List[str]],
+    attributes: NotRequired[Dict[str, str]],
+    shadow: NotRequired[str],
+    deviceDefender: NotRequired[str],
+    connectivity: NotRequired[ThingConnectivityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ThingConnectivityTypeDef](./type_defs.md#thingconnectivitytypedef) 
+## TimestreamActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TimestreamActionTypeDef
+
+def get_value() -> TimestreamActionTypeDef:
+    return {
+        "roleArn": ...,
+        "databaseName": ...,
+        "tableName": ...,
+        "dimensions": ...,
+    }
+```
+
+```python title="Definition"
+class TimestreamActionTypeDef(TypedDict):
+    roleArn: str,
+    databaseName: str,
+    tableName: str,
+    dimensions: Sequence[TimestreamDimensionTypeDef],  # (1)
+    timestamp: NotRequired[TimestreamTimestampTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TimestreamDimensionTypeDef](./type_defs.md#timestreamdimensiontypedef) 
+2. See [:material-code-braces: TimestreamTimestampTypeDef](./type_defs.md#timestreamtimestamptypedef) 
 ## TopicRuleDestinationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -12008,489 +11020,135 @@ class TopicRuleDestinationTypeDef(TypedDict):
 1. See [:material-code-brackets: TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype) 
 2. See [:material-code-braces: HttpUrlDestinationPropertiesTypeDef](./type_defs.md#httpurldestinationpropertiestypedef) 
 3. See [:material-code-braces: VpcDestinationPropertiesTypeDef](./type_defs.md#vpcdestinationpropertiestypedef) 
-## TopicRuleListItemTypeDef
+## ValidateSecurityProfileBehaviorsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TopicRuleListItemTypeDef
+from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsResponseTypeDef
 
-def get_value() -> TopicRuleListItemTypeDef:
+def get_value() -> ValidateSecurityProfileBehaviorsResponseTypeDef:
     return {
-        "ruleArn": ...,
-    }
-```
-
-```python title="Definition"
-class TopicRuleListItemTypeDef(TypedDict):
-    ruleArn: NotRequired[str],
-    ruleName: NotRequired[str],
-    topicPattern: NotRequired[str],
-    createdAt: NotRequired[datetime],
-    ruleDisabled: NotRequired[bool],
-```
-
-## TopicRulePayloadTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TopicRulePayloadTypeDef
-
-def get_value() -> TopicRulePayloadTypeDef:
-    return {
-        "sql": ...,
-        "actions": ...,
-    }
-```
-
-```python title="Definition"
-class TopicRulePayloadTypeDef(TypedDict):
-    sql: str,
-    actions: Sequence[ActionTypeDef],  # (1)
-    description: NotRequired[str],
-    ruleDisabled: NotRequired[bool],
-    awsIotSqlVersion: NotRequired[str],
-    errorAction: NotRequired[ActionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-## TopicRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TopicRuleTypeDef
-
-def get_value() -> TopicRuleTypeDef:
-    return {
-        "ruleName": ...,
-    }
-```
-
-```python title="Definition"
-class TopicRuleTypeDef(TypedDict):
-    ruleName: NotRequired[str],
-    sql: NotRequired[str],
-    description: NotRequired[str],
-    createdAt: NotRequired[datetime],
-    actions: NotRequired[List[ActionTypeDef]],  # (1)
-    ruleDisabled: NotRequired[bool],
-    awsIotSqlVersion: NotRequired[str],
-    errorAction: NotRequired[ActionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-## TransferCertificateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TransferCertificateRequestRequestTypeDef
-
-def get_value() -> TransferCertificateRequestRequestTypeDef:
-    return {
-        "certificateId": ...,
-        "targetAwsAccount": ...,
-    }
-```
-
-```python title="Definition"
-class TransferCertificateRequestRequestTypeDef(TypedDict):
-    certificateId: str,
-    targetAwsAccount: str,
-    transferMessage: NotRequired[str],
-```
-
-## TransferCertificateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TransferCertificateResponseTypeDef
-
-def get_value() -> TransferCertificateResponseTypeDef:
-    return {
-        "transferredCertificateArn": ...,
+        "valid": ...,
+        "validationErrors": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TransferCertificateResponseTypeDef(TypedDict):
-    transferredCertificateArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TransferDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import TransferDataTypeDef
-
-def get_value() -> TransferDataTypeDef:
-    return {
-        "transferMessage": ...,
-    }
-```
-
-```python title="Definition"
-class TransferDataTypeDef(TypedDict):
-    transferMessage: NotRequired[str],
-    rejectReason: NotRequired[str],
-    transferDate: NotRequired[datetime],
-    acceptDate: NotRequired[datetime],
-    rejectDate: NotRequired[datetime],
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateAccountAuditConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateAccountAuditConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateAccountAuditConfigurationRequestRequestTypeDef:
-    return {
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccountAuditConfigurationRequestRequestTypeDef(TypedDict):
-    roleArn: NotRequired[str],
-    auditNotificationTargetConfigurations: NotRequired[Mapping[AuditNotificationTypeType, AuditNotificationTargetTypeDef]],  # (1)
-    auditCheckConfigurations: NotRequired[Mapping[str, AuditCheckConfigurationTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: AuditNotificationTypeType](./literals.md#auditnotificationtypetype) [:material-code-braces: AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef) 
-2. See [:material-code-braces: AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef) 
-## UpdateAuditSuppressionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateAuditSuppressionRequestRequestTypeDef
-
-def get_value() -> UpdateAuditSuppressionRequestRequestTypeDef:
-    return {
-        "checkName": ...,
-        "resourceIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAuditSuppressionRequestRequestTypeDef(TypedDict):
-    checkName: str,
-    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
-    expirationDate: NotRequired[Union[datetime, str]],
-    suppressIndefinitely: NotRequired[bool],
-    description: NotRequired[str],
-```
-
-1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
-## UpdateAuthorizerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateAuthorizerRequestRequestTypeDef
-
-def get_value() -> UpdateAuthorizerRequestRequestTypeDef:
-    return {
-        "authorizerName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAuthorizerRequestRequestTypeDef(TypedDict):
-    authorizerName: str,
-    authorizerFunctionArn: NotRequired[str],
-    tokenKeyName: NotRequired[str],
-    tokenSigningPublicKeys: NotRequired[Mapping[str, str]],
-    status: NotRequired[AuthorizerStatusType],  # (1)
-    enableCachingForHttp: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
-## UpdateAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateAuthorizerResponseTypeDef
-
-def get_value() -> UpdateAuthorizerResponseTypeDef:
-    return {
-        "authorizerName": ...,
-        "authorizerArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAuthorizerResponseTypeDef(TypedDict):
-    authorizerName: str,
-    authorizerArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateBillingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateBillingGroupRequestRequestTypeDef
-
-def get_value() -> UpdateBillingGroupRequestRequestTypeDef:
-    return {
-        "billingGroupName": ...,
-        "billingGroupProperties": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBillingGroupRequestRequestTypeDef(TypedDict):
-    billingGroupName: str,
-    billingGroupProperties: BillingGroupPropertiesTypeDef,  # (1)
-    expectedVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
-## UpdateBillingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateBillingGroupResponseTypeDef
-
-def get_value() -> UpdateBillingGroupResponseTypeDef:
-    return {
-        "version": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBillingGroupResponseTypeDef(TypedDict):
-    version: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateCACertificateParamsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateCACertificateParamsTypeDef
-
-def get_value() -> UpdateCACertificateParamsTypeDef:
-    return {
-        "action": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCACertificateParamsTypeDef(TypedDict):
-    action: CACertificateUpdateActionType,  # (1)
-```
-
-1. See [:material-code-brackets: CACertificateUpdateActionType](./literals.md#cacertificateupdateactiontype) 
-## UpdateCACertificateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateCACertificateRequestRequestTypeDef
-
-def get_value() -> UpdateCACertificateRequestRequestTypeDef:
-    return {
-        "certificateId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCACertificateRequestRequestTypeDef(TypedDict):
-    certificateId: str,
-    newStatus: NotRequired[CACertificateStatusType],  # (1)
-    newAutoRegistrationStatus: NotRequired[AutoRegistrationStatusType],  # (2)
-    registrationConfig: NotRequired[RegistrationConfigTypeDef],  # (3)
-    removeAutoRegistration: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
-2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
-3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
-## UpdateCertificateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateCertificateRequestRequestTypeDef
-
-def get_value() -> UpdateCertificateRequestRequestTypeDef:
-    return {
-        "certificateId": ...,
-        "newStatus": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCertificateRequestRequestTypeDef(TypedDict):
-    certificateId: str,
-    newStatus: CertificateStatusType,  # (1)
-```
-
-1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
-## UpdateCustomMetricRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateCustomMetricRequestRequestTypeDef
-
-def get_value() -> UpdateCustomMetricRequestRequestTypeDef:
-    return {
-        "metricName": ...,
-        "displayName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCustomMetricRequestRequestTypeDef(TypedDict):
-    metricName: str,
-    displayName: str,
-```
-
-## UpdateCustomMetricResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateCustomMetricResponseTypeDef
-
-def get_value() -> UpdateCustomMetricResponseTypeDef:
-    return {
-        "metricName": ...,
-        "metricArn": ...,
-        "metricType": ...,
-        "displayName": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCustomMetricResponseTypeDef(TypedDict):
-    metricName: str,
-    metricArn: str,
-    metricType: CustomMetricTypeType,  # (1)
-    displayName: str,
-    creationDate: datetime,
-    lastModifiedDate: datetime,
+class ValidateSecurityProfileBehaviorsResponseTypeDef(TypedDict):
+    valid: bool,
+    validationErrors: List[ValidationErrorTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
+1. See [:material-code-braces: ValidationErrorTypeDef](./type_defs.md#validationerrortypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDeviceCertificateParamsTypeDef
+## ListMetricValuesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDeviceCertificateParamsTypeDef
+from mypy_boto3_iot.type_defs import ListMetricValuesResponseTypeDef
 
-def get_value() -> UpdateDeviceCertificateParamsTypeDef:
+def get_value() -> ListMetricValuesResponseTypeDef:
     return {
-        "action": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDeviceCertificateParamsTypeDef(TypedDict):
-    action: DeviceCertificateUpdateActionType,  # (1)
-```
-
-1. See [:material-code-brackets: DeviceCertificateUpdateActionType](./literals.md#devicecertificateupdateactiontype) 
-## UpdateDimensionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDimensionRequestRequestTypeDef
-
-def get_value() -> UpdateDimensionRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "stringValues": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDimensionRequestRequestTypeDef(TypedDict):
-    name: str,
-    stringValues: Sequence[str],
-```
-
-## UpdateDimensionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDimensionResponseTypeDef
-
-def get_value() -> UpdateDimensionResponseTypeDef:
-    return {
-        "name": ...,
-        "arn": ...,
-        "type": ...,
-        "stringValues": ...,
-        "creationDate": ...,
-        "lastModifiedDate": ...,
+        "metricDatumList": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDimensionResponseTypeDef(TypedDict):
-    name: str,
-    arn: str,
-    type: DimensionTypeType,  # (1)
-    stringValues: List[str],
-    creationDate: datetime,
-    lastModifiedDate: datetime,
+class ListMetricValuesResponseTypeDef(TypedDict):
+    metricDatumList: List[MetricDatumTypeDef],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDomainConfigurationRequestRequestTypeDef
+## DeniedTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDomainConfigurationRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import DeniedTypeDef
 
-def get_value() -> UpdateDomainConfigurationRequestRequestTypeDef:
+def get_value() -> DeniedTypeDef:
     return {
-        "domainConfigurationName": ...,
+        "implicitDeny": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDomainConfigurationRequestRequestTypeDef(TypedDict):
-    domainConfigurationName: str,
-    authorizerConfig: NotRequired[AuthorizerConfigTypeDef],  # (1)
-    domainConfigurationStatus: NotRequired[DomainConfigurationStatusType],  # (2)
-    removeAuthorizerConfig: NotRequired[bool],
+class DeniedTypeDef(TypedDict):
+    implicitDeny: NotRequired[ImplicitDenyTypeDef],  # (1)
+    explicitDeny: NotRequired[ExplicitDenyTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
-2. See [:material-code-brackets: DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype) 
-## UpdateDomainConfigurationResponseTypeDef
+1. See [:material-code-braces: ImplicitDenyTypeDef](./type_defs.md#implicitdenytypedef) 
+2. See [:material-code-braces: ExplicitDenyTypeDef](./type_defs.md#explicitdenytypedef) 
+## PutAssetPropertyValueEntryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDomainConfigurationResponseTypeDef
+from mypy_boto3_iot.type_defs import PutAssetPropertyValueEntryTypeDef
 
-def get_value() -> UpdateDomainConfigurationResponseTypeDef:
+def get_value() -> PutAssetPropertyValueEntryTypeDef:
     return {
-        "domainConfigurationName": ...,
-        "domainConfigurationArn": ...,
-        "ResponseMetadata": ...,
+        "propertyValues": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDomainConfigurationResponseTypeDef(TypedDict):
-    domainConfigurationName: str,
-    domainConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class PutAssetPropertyValueEntryTypeDef(TypedDict):
+    propertyValues: Sequence[AssetPropertyValueTypeDef],  # (1)
+    entryId: NotRequired[str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
+## CreateDynamicThingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateDynamicThingGroupRequestRequestTypeDef
+
+def get_value() -> CreateDynamicThingGroupRequestRequestTypeDef:
+    return {
+        "thingGroupName": ...,
+        "queryString": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDynamicThingGroupRequestRequestTypeDef(TypedDict):
+    thingGroupName: str,
+    queryString: str,
+    thingGroupProperties: NotRequired[ThingGroupPropertiesTypeDef],  # (1)
+    indexName: NotRequired[str],
+    queryVersion: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateThingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateThingGroupRequestRequestTypeDef
+
+def get_value() -> CreateThingGroupRequestRequestTypeDef:
+    return {
+        "thingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThingGroupRequestRequestTypeDef(TypedDict):
+    thingGroupName: str,
+    parentGroupName: NotRequired[str],
+    thingGroupProperties: NotRequired[ThingGroupPropertiesTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateDynamicThingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12514,70 +11172,215 @@ class UpdateDynamicThingGroupRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
-## UpdateDynamicThingGroupResponseTypeDef
+## UpdateThingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateThingGroupRequestRequestTypeDef
 
-def get_value() -> UpdateDynamicThingGroupResponseTypeDef:
+def get_value() -> UpdateThingGroupRequestRequestTypeDef:
     return {
-        "version": ...,
+        "thingGroupName": ...,
+        "thingGroupProperties": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThingGroupRequestRequestTypeDef(TypedDict):
+    thingGroupName: str,
+    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
+    expectedVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+## AwsJobExecutionsRolloutConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AwsJobExecutionsRolloutConfigTypeDef
+
+def get_value() -> AwsJobExecutionsRolloutConfigTypeDef:
+    return {
+        "maximumPerMinute": ...,
+    }
+```
+
+```python title="Definition"
+class AwsJobExecutionsRolloutConfigTypeDef(TypedDict):
+    maximumPerMinute: NotRequired[int],
+    exponentialRate: NotRequired[AwsJobExponentialRolloutRateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsJobExponentialRolloutRateTypeDef](./type_defs.md#awsjobexponentialrolloutratetypedef) 
+## BehaviorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import BehaviorTypeDef
+
+def get_value() -> BehaviorTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class BehaviorTypeDef(TypedDict):
+    name: str,
+    metric: NotRequired[str],
+    metricDimension: NotRequired[MetricDimensionTypeDef],  # (1)
+    criteria: NotRequired[BehaviorCriteriaTypeDef],  # (2)
+    suppressAlerts: NotRequired[bool],
+```
+
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+2. See [:material-code-braces: BehaviorCriteriaTypeDef](./type_defs.md#behaviorcriteriatypedef) 
+## GetBucketsAggregationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetBucketsAggregationRequestRequestTypeDef
+
+def get_value() -> GetBucketsAggregationRequestRequestTypeDef:
+    return {
+        "queryString": ...,
+        "aggregationField": ...,
+        "bucketsAggregationType": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketsAggregationRequestRequestTypeDef(TypedDict):
+    queryString: str,
+    aggregationField: str,
+    bucketsAggregationType: BucketsAggregationTypeTypeDef,  # (1)
+    indexName: NotRequired[str],
+    queryVersion: NotRequired[str],
+```
+
+1. See [:material-code-braces: BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef) 
+## DescribeCACertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeCACertificateResponseTypeDef
+
+def get_value() -> DescribeCACertificateResponseTypeDef:
+    return {
+        "certificateDescription": ...,
+        "registrationConfig": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDynamicThingGroupResponseTypeDef(TypedDict):
-    version: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribeCACertificateResponseTypeDef(TypedDict):
+    certificateDescription: CACertificateDescriptionTypeDef,  # (1)
+    registrationConfig: RegistrationConfigTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateEventConfigurationsRequestRequestTypeDef
+1. See [:material-code-braces: CACertificateDescriptionTypeDef](./type_defs.md#cacertificatedescriptiontypedef) 
+2. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCertificateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateEventConfigurationsRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeCertificateResponseTypeDef
 
-def get_value() -> UpdateEventConfigurationsRequestRequestTypeDef:
+def get_value() -> DescribeCertificateResponseTypeDef:
     return {
-        "eventConfigurations": ...,
+        "certificateDescription": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateEventConfigurationsRequestRequestTypeDef(TypedDict):
-    eventConfigurations: NotRequired[Mapping[EventTypeType, ConfigurationTypeDef]],  # (1)
+class DescribeCertificateResponseTypeDef(TypedDict):
+    certificateDescription: CertificateDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
-## UpdateFleetMetricRequestRequestTypeDef
+1. See [:material-code-braces: CertificateDescriptionTypeDef](./type_defs.md#certificatedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThingTypesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateFleetMetricRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingTypesResponseTypeDef
 
-def get_value() -> UpdateFleetMetricRequestRequestTypeDef:
+def get_value() -> ListThingTypesResponseTypeDef:
     return {
-        "metricName": ...,
-        "indexName": ...,
+        "thingTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFleetMetricRequestRequestTypeDef(TypedDict):
-    metricName: str,
-    indexName: str,
-    queryString: NotRequired[str],
-    aggregationType: NotRequired[AggregationTypeTypeDef],  # (1)
-    period: NotRequired[int],
-    aggregationField: NotRequired[str],
-    description: NotRequired[str],
-    queryVersion: NotRequired[str],
-    unit: NotRequired[FleetMetricUnitType],  # (2)
-    expectedVersion: NotRequired[int],
+class ListThingTypesResponseTypeDef(TypedDict):
+    thingTypes: List[ThingTypeDefinitionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
-2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+1. See [:material-code-braces: ThingTypeDefinitionTypeDef](./type_defs.md#thingtypedefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartSigningJobParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StartSigningJobParameterTypeDef
+
+def get_value() -> StartSigningJobParameterTypeDef:
+    return {
+        "signingProfileParameter": ...,
+    }
+```
+
+```python title="Definition"
+class StartSigningJobParameterTypeDef(TypedDict):
+    signingProfileParameter: NotRequired[SigningProfileParameterTypeDef],  # (1)
+    signingProfileName: NotRequired[str],
+    destination: NotRequired[DestinationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SigningProfileParameterTypeDef](./type_defs.md#signingprofileparametertypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+## JobExecutionsRolloutConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobExecutionsRolloutConfigTypeDef
+
+def get_value() -> JobExecutionsRolloutConfigTypeDef:
+    return {
+        "maximumPerMinute": ...,
+    }
+```
+
+```python title="Definition"
+class JobExecutionsRolloutConfigTypeDef(TypedDict):
+    maximumPerMinute: NotRequired[int],
+    exponentialRate: NotRequired[ExponentialRolloutRateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ExponentialRolloutRateTypeDef](./type_defs.md#exponentialrolloutratetypedef) 
+## GetIndexingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetIndexingConfigurationResponseTypeDef
+
+def get_value() -> GetIndexingConfigurationResponseTypeDef:
+    return {
+        "thingIndexingConfiguration": ...,
+        "thingGroupIndexingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIndexingConfigurationResponseTypeDef(TypedDict):
+    thingIndexingConfiguration: ThingIndexingConfigurationTypeDef,  # (1)
+    thingGroupIndexingConfiguration: ThingGroupIndexingConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef) 
+2. See [:material-code-braces: ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIndexingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12597,34 +11400,321 @@ class UpdateIndexingConfigurationRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef) 
 2. See [:material-code-braces: ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef) 
-## UpdateJobRequestRequestTypeDef
+## CreateStreamRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateJobRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateStreamRequestRequestTypeDef
 
-def get_value() -> UpdateJobRequestRequestTypeDef:
+def get_value() -> CreateStreamRequestRequestTypeDef:
     return {
-        "jobId": ...,
+        "streamId": ...,
+        "files": ...,
+        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateJobRequestRequestTypeDef(TypedDict):
-    jobId: str,
+class CreateStreamRequestRequestTypeDef(TypedDict):
+    streamId: str,
+    files: Sequence[StreamFileTypeDef],  # (1)
+    roleArn: str,
     description: NotRequired[str],
-    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
-    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (2)
-    abortConfig: NotRequired[AbortConfigTypeDef],  # (3)
-    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (4)
-    namespaceId: NotRequired[str],
-    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (5)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
-2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
-3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
-4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
-5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## StreamInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import StreamInfoTypeDef
+
+def get_value() -> StreamInfoTypeDef:
+    return {
+        "streamId": ...,
+    }
+```
+
+```python title="Definition"
+class StreamInfoTypeDef(TypedDict):
+    streamId: NotRequired[str],
+    streamArn: NotRequired[str],
+    streamVersion: NotRequired[int],
+    description: NotRequired[str],
+    files: NotRequired[List[StreamFileTypeDef]],  # (1)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    roleArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
+## UpdateStreamRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateStreamRequestRequestTypeDef
+
+def get_value() -> UpdateStreamRequestRequestTypeDef:
+    return {
+        "streamId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStreamRequestRequestTypeDef(TypedDict):
+    streamId: str,
+    description: NotRequired[str],
+    files: NotRequired[Sequence[StreamFileTypeDef]],  # (1)
+    roleArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
+## DescribeThingGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeThingGroupResponseTypeDef
+
+def get_value() -> DescribeThingGroupResponseTypeDef:
+    return {
+        "thingGroupName": ...,
+        "thingGroupId": ...,
+        "thingGroupArn": ...,
+        "version": ...,
+        "thingGroupProperties": ...,
+        "thingGroupMetadata": ...,
+        "indexName": ...,
+        "queryString": ...,
+        "queryVersion": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThingGroupResponseTypeDef(TypedDict):
+    thingGroupName: str,
+    thingGroupId: str,
+    thingGroupArn: str,
+    version: int,
+    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
+    thingGroupMetadata: ThingGroupMetadataTypeDef,  # (2)
+    indexName: str,
+    queryString: str,
+    queryVersion: str,
+    status: DynamicGroupStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: ThingGroupMetadataTypeDef](./type_defs.md#thinggroupmetadatatypedef) 
+3. See [:material-code-brackets: DynamicGroupStatusType](./literals.md#dynamicgroupstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## HttpActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import HttpActionTypeDef
+
+def get_value() -> HttpActionTypeDef:
+    return {
+        "url": ...,
+    }
+```
+
+```python title="Definition"
+class HttpActionTypeDef(TypedDict):
+    url: str,
+    confirmationUrl: NotRequired[str],
+    headers: NotRequired[Sequence[HttpActionHeaderTypeDef]],  # (1)
+    auth: NotRequired[HttpAuthorizationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: HttpActionHeaderTypeDef](./type_defs.md#httpactionheadertypedef) 
+2. See [:material-code-braces: HttpAuthorizationTypeDef](./type_defs.md#httpauthorizationtypedef) 
+## DescribeJobExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeJobExecutionResponseTypeDef
+
+def get_value() -> DescribeJobExecutionResponseTypeDef:
+    return {
+        "execution": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobExecutionResponseTypeDef(TypedDict):
+    execution: JobExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobExecutionsForJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobExecutionsForJobResponseTypeDef
+
+def get_value() -> ListJobExecutionsForJobResponseTypeDef:
+    return {
+        "executionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobExecutionsForJobResponseTypeDef(TypedDict):
+    executionSummaries: List[JobExecutionSummaryForJobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobExecutionSummaryForJobTypeDef](./type_defs.md#jobexecutionsummaryforjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobExecutionsForThingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListJobExecutionsForThingResponseTypeDef
+
+def get_value() -> ListJobExecutionsForThingResponseTypeDef:
+    return {
+        "executionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobExecutionsForThingResponseTypeDef(TypedDict):
+    executionSummaries: List[JobExecutionSummaryForThingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobExecutionSummaryForThingTypeDef](./type_defs.md#jobexecutionsummaryforthingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityProfilesForTargetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetResponseTypeDef
+
+def get_value() -> ListSecurityProfilesForTargetResponseTypeDef:
+    return {
+        "securityProfileTargetMappings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilesForTargetResponseTypeDef(TypedDict):
+    securityProfileTargetMappings: List[SecurityProfileTargetMappingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileTargetMappingTypeDef](./type_defs.md#securityprofiletargetmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListV2LoggingLevelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListV2LoggingLevelsResponseTypeDef
+
+def get_value() -> ListV2LoggingLevelsResponseTypeDef:
+    return {
+        "logTargetConfigurations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListV2LoggingLevelsResponseTypeDef(TypedDict):
+    logTargetConfigurations: List[LogTargetConfigurationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogTargetConfigurationTypeDef](./type_defs.md#logtargetconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMitigationActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateMitigationActionRequestRequestTypeDef
+
+def get_value() -> CreateMitigationActionRequestRequestTypeDef:
+    return {
+        "actionName": ...,
+        "roleArn": ...,
+        "actionParams": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMitigationActionRequestRequestTypeDef(TypedDict):
+    actionName: str,
+    roleArn: str,
+    actionParams: MitigationActionParamsTypeDef,  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeMitigationActionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseTypeDef
+
+def get_value() -> DescribeMitigationActionResponseTypeDef:
+    return {
+        "actionName": ...,
+        "actionType": ...,
+        "actionArn": ...,
+        "actionId": ...,
+        "roleArn": ...,
+        "actionParams": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMitigationActionResponseTypeDef(TypedDict):
+    actionName: str,
+    actionType: MitigationActionTypeType,  # (1)
+    actionArn: str,
+    actionId: str,
+    roleArn: str,
+    actionParams: MitigationActionParamsTypeDef,  # (2)
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
+2. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MitigationActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MitigationActionTypeDef
+
+def get_value() -> MitigationActionTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class MitigationActionTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    roleArn: NotRequired[str],
+    actionParams: NotRequired[MitigationActionParamsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
 ## UpdateMitigationActionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12644,130 +11734,512 @@ class UpdateMitigationActionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
-## UpdateMitigationActionResponseTypeDef
+## AuditSuppressionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateMitigationActionResponseTypeDef
+from mypy_boto3_iot.type_defs import AuditSuppressionTypeDef
 
-def get_value() -> UpdateMitigationActionResponseTypeDef:
+def get_value() -> AuditSuppressionTypeDef:
     return {
-        "actionArn": ...,
-        "actionId": ...,
-        "ResponseMetadata": ...,
+        "checkName": ...,
+        "resourceIdentifier": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateMitigationActionResponseTypeDef(TypedDict):
-    actionArn: str,
-    actionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProvisioningTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateProvisioningTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateProvisioningTemplateRequestRequestTypeDef:
-    return {
-        "templateName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProvisioningTemplateRequestRequestTypeDef(TypedDict):
-    templateName: str,
+class AuditSuppressionTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    expirationDate: NotRequired[datetime],
+    suppressIndefinitely: NotRequired[bool],
     description: NotRequired[str],
-    enabled: NotRequired[bool],
-    defaultVersionId: NotRequired[int],
-    provisioningRoleArn: NotRequired[str],
-    preProvisioningHook: NotRequired[ProvisioningHookTypeDef],  # (1)
-    removePreProvisioningHook: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
-## UpdateRoleAliasRequestRequestTypeDef
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## CreateAuditSuppressionRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateRoleAliasRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateAuditSuppressionRequestRequestTypeDef
 
-def get_value() -> UpdateRoleAliasRequestRequestTypeDef:
+def get_value() -> CreateAuditSuppressionRequestRequestTypeDef:
     return {
-        "roleAlias": ...,
+        "checkName": ...,
+        "resourceIdentifier": ...,
+        "clientRequestToken": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateRoleAliasRequestRequestTypeDef(TypedDict):
-    roleAlias: str,
-    roleArn: NotRequired[str],
-    credentialDurationSeconds: NotRequired[int],
+class CreateAuditSuppressionRequestRequestTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    clientRequestToken: str,
+    expirationDate: NotRequired[Union[datetime, str]],
+    suppressIndefinitely: NotRequired[bool],
+    description: NotRequired[str],
 ```
 
-## UpdateRoleAliasResponseTypeDef
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## DeleteAuditSuppressionRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateRoleAliasResponseTypeDef
+from mypy_boto3_iot.type_defs import DeleteAuditSuppressionRequestRequestTypeDef
 
-def get_value() -> UpdateRoleAliasResponseTypeDef:
+def get_value() -> DeleteAuditSuppressionRequestRequestTypeDef:
     return {
-        "roleAlias": ...,
-        "roleAliasArn": ...,
+        "checkName": ...,
+        "resourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAuditSuppressionRequestRequestTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## DescribeAuditSuppressionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuditSuppressionRequestRequestTypeDef
+
+def get_value() -> DescribeAuditSuppressionRequestRequestTypeDef:
+    return {
+        "checkName": ...,
+        "resourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuditSuppressionRequestRequestTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## DescribeAuditSuppressionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuditSuppressionResponseTypeDef
+
+def get_value() -> DescribeAuditSuppressionResponseTypeDef:
+    return {
+        "checkName": ...,
+        "resourceIdentifier": ...,
+        "expirationDate": ...,
+        "suppressIndefinitely": ...,
+        "description": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateRoleAliasResponseTypeDef(TypedDict):
-    roleAlias: str,
-    roleAliasArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribeAuditSuppressionResponseTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    expirationDate: datetime,
+    suppressIndefinitely: bool,
+    description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateScheduledAuditRequestRequestTypeDef
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAuditFindingsRequestListAuditFindingsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateScheduledAuditRequestRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditFindingsRequestListAuditFindingsPaginateTypeDef
 
-def get_value() -> UpdateScheduledAuditRequestRequestTypeDef:
+def get_value() -> ListAuditFindingsRequestListAuditFindingsPaginateTypeDef:
     return {
-        "scheduledAuditName": ...,
+        "taskId": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateScheduledAuditRequestRequestTypeDef(TypedDict):
-    scheduledAuditName: str,
-    frequency: NotRequired[AuditFrequencyType],  # (1)
-    dayOfMonth: NotRequired[str],
-    dayOfWeek: NotRequired[DayOfWeekType],  # (2)
-    targetCheckNames: NotRequired[Sequence[str]],
+class ListAuditFindingsRequestListAuditFindingsPaginateTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    checkName: NotRequired[str],
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    listSuppressedFindings: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
-2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
-## UpdateScheduledAuditResponseTypeDef
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuditFindingsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateScheduledAuditResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditFindingsRequestRequestTypeDef
 
-def get_value() -> UpdateScheduledAuditResponseTypeDef:
+def get_value() -> ListAuditFindingsRequestRequestTypeDef:
     return {
-        "scheduledAuditArn": ...,
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditFindingsRequestRequestTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    checkName: NotRequired[str],
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    listSuppressedFindings: NotRequired[bool],
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef
+
+def get_value() -> ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef:
+    return {
+        "checkName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef(TypedDict):
+    checkName: NotRequired[str],
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
+    ascendingOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAuditSuppressionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestRequestTypeDef
+
+def get_value() -> ListAuditSuppressionsRequestRequestTypeDef:
+    return {
+        "checkName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditSuppressionsRequestRequestTypeDef(TypedDict):
+    checkName: NotRequired[str],
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
+    ascendingOrder: NotRequired[bool],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## NonCompliantResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import NonCompliantResourceTypeDef
+
+def get_value() -> NonCompliantResourceTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class NonCompliantResourceTypeDef(TypedDict):
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (2)
+    additionalInfo: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## RelatedResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RelatedResourceTypeDef
+
+def get_value() -> RelatedResourceTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class RelatedResourceTypeDef(TypedDict):
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    resourceIdentifier: NotRequired[ResourceIdentifierTypeDef],  # (2)
+    additionalInfo: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## UpdateAuditSuppressionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateAuditSuppressionRequestRequestTypeDef
+
+def get_value() -> UpdateAuditSuppressionRequestRequestTypeDef:
+    return {
+        "checkName": ...,
+        "resourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAuditSuppressionRequestRequestTypeDef(TypedDict):
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    expirationDate: NotRequired[Union[datetime, str]],
+    suppressIndefinitely: NotRequired[bool],
+    description: NotRequired[str],
+```
+
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+## SearchIndexResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SearchIndexResponseTypeDef
+
+def get_value() -> SearchIndexResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "things": ...,
+        "thingGroups": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateScheduledAuditResponseTypeDef(TypedDict):
-    scheduledAuditArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class SearchIndexResponseTypeDef(TypedDict):
+    nextToken: str,
+    things: List[ThingDocumentTypeDef],  # (1)
+    thingGroups: List[ThingGroupDocumentTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ThingDocumentTypeDef](./type_defs.md#thingdocumenttypedef) 
+2. See [:material-code-braces: ThingGroupDocumentTypeDef](./type_defs.md#thinggroupdocumenttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTopicRuleDestinationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationRequestRequestTypeDef
+
+def get_value() -> CreateTopicRuleDestinationRequestRequestTypeDef:
+    return {
+        "destinationConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTopicRuleDestinationRequestRequestTypeDef(TypedDict):
+    destinationConfiguration: TopicRuleDestinationConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: TopicRuleDestinationConfigurationTypeDef](./type_defs.md#topicruledestinationconfigurationtypedef) 
+## ListTopicRuleDestinationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsResponseTypeDef
+
+def get_value() -> ListTopicRuleDestinationsResponseTypeDef:
+    return {
+        "destinationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTopicRuleDestinationsResponseTypeDef(TypedDict):
+    destinationSummaries: List[TopicRuleDestinationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TopicRuleDestinationSummaryTypeDef](./type_defs.md#topicruledestinationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTopicRuleDestinationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationResponseTypeDef
+
+def get_value() -> CreateTopicRuleDestinationResponseTypeDef:
+    return {
+        "topicRuleDestination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTopicRuleDestinationResponseTypeDef(TypedDict):
+    topicRuleDestination: TopicRuleDestinationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTopicRuleDestinationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetTopicRuleDestinationResponseTypeDef
+
+def get_value() -> GetTopicRuleDestinationResponseTypeDef:
+    return {
+        "topicRuleDestination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTopicRuleDestinationResponseTypeDef(TypedDict):
+    topicRuleDestination: TopicRuleDestinationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AuthResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AuthResultTypeDef
+
+def get_value() -> AuthResultTypeDef:
+    return {
+        "authInfo": ...,
+    }
+```
+
+```python title="Definition"
+class AuthResultTypeDef(TypedDict):
+    authInfo: NotRequired[AuthInfoTypeDef],  # (1)
+    allowed: NotRequired[AllowedTypeDef],  # (2)
+    denied: NotRequired[DeniedTypeDef],  # (3)
+    authDecision: NotRequired[AuthDecisionType],  # (4)
+    missingContextValues: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: AuthInfoTypeDef](./type_defs.md#authinfotypedef) 
+2. See [:material-code-braces: AllowedTypeDef](./type_defs.md#allowedtypedef) 
+3. See [:material-code-braces: DeniedTypeDef](./type_defs.md#deniedtypedef) 
+4. See [:material-code-brackets: AuthDecisionType](./literals.md#authdecisiontype) 
+## IotSiteWiseActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import IotSiteWiseActionTypeDef
+
+def get_value() -> IotSiteWiseActionTypeDef:
+    return {
+        "putAssetPropertyValueEntries": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class IotSiteWiseActionTypeDef(TypedDict):
+    putAssetPropertyValueEntries: Sequence[PutAssetPropertyValueEntryTypeDef],  # (1)
+    roleArn: str,
+```
+
+1. See [:material-code-braces: PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef) 
+## ActiveViolationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ActiveViolationTypeDef
+
+def get_value() -> ActiveViolationTypeDef:
+    return {
+        "violationId": ...,
+    }
+```
+
+```python title="Definition"
+class ActiveViolationTypeDef(TypedDict):
+    violationId: NotRequired[str],
+    thingName: NotRequired[str],
+    securityProfileName: NotRequired[str],
+    behavior: NotRequired[BehaviorTypeDef],  # (1)
+    lastViolationValue: NotRequired[MetricValueTypeDef],  # (2)
+    violationEventAdditionalInfo: NotRequired[ViolationEventAdditionalInfoTypeDef],  # (3)
+    verificationState: NotRequired[VerificationStateType],  # (4)
+    verificationStateDescription: NotRequired[str],
+    lastViolationTime: NotRequired[datetime],
+    violationStartTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+3. See [:material-code-braces: ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef) 
+4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+## CreateSecurityProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateSecurityProfileRequestRequestTypeDef
+
+def get_value() -> CreateSecurityProfileRequestRequestTypeDef:
+    return {
+        "securityProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSecurityProfileRequestRequestTypeDef(TypedDict):
+    securityProfileName: str,
+    securityProfileDescription: NotRequired[str],
+    behaviors: NotRequired[Sequence[BehaviorTypeDef]],  # (1)
+    alertTargets: NotRequired[Mapping[AlertTargetTypeType, AlertTargetTypeDef]],  # (2)
+    additionalMetricsToRetain: NotRequired[Sequence[str]],
+    additionalMetricsToRetainV2: NotRequired[Sequence[MetricToRetainTypeDef]],  # (3)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
+3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeSecurityProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeSecurityProfileResponseTypeDef
+
+def get_value() -> DescribeSecurityProfileResponseTypeDef:
+    return {
+        "securityProfileName": ...,
+        "securityProfileArn": ...,
+        "securityProfileDescription": ...,
+        "behaviors": ...,
+        "alertTargets": ...,
+        "additionalMetricsToRetain": ...,
+        "additionalMetricsToRetainV2": ...,
+        "version": ...,
+        "creationDate": ...,
+        "lastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSecurityProfileResponseTypeDef(TypedDict):
+    securityProfileName: str,
+    securityProfileArn: str,
+    securityProfileDescription: str,
+    behaviors: List[BehaviorTypeDef],  # (1)
+    alertTargets: Dict[AlertTargetTypeType, AlertTargetTypeDef],  # (2)
+    additionalMetricsToRetain: List[str],
+    additionalMetricsToRetainV2: List[MetricToRetainTypeDef],  # (3)
+    version: int,
+    creationDate: datetime,
+    lastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
+3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSecurityProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12836,149 +12308,6 @@ class UpdateSecurityProfileResponseTypeDef(TypedDict):
 2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
 3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateStreamRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateStreamRequestRequestTypeDef
-
-def get_value() -> UpdateStreamRequestRequestTypeDef:
-    return {
-        "streamId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateStreamRequestRequestTypeDef(TypedDict):
-    streamId: str,
-    description: NotRequired[str],
-    files: NotRequired[Sequence[StreamFileTypeDef]],  # (1)
-    roleArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
-## UpdateStreamResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateStreamResponseTypeDef
-
-def get_value() -> UpdateStreamResponseTypeDef:
-    return {
-        "streamId": ...,
-        "streamArn": ...,
-        "description": ...,
-        "streamVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateStreamResponseTypeDef(TypedDict):
-    streamId: str,
-    streamArn: str,
-    description: str,
-    streamVersion: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateThingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateThingGroupRequestRequestTypeDef
-
-def get_value() -> UpdateThingGroupRequestRequestTypeDef:
-    return {
-        "thingGroupName": ...,
-        "thingGroupProperties": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThingGroupRequestRequestTypeDef(TypedDict):
-    thingGroupName: str,
-    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
-    expectedVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
-## UpdateThingGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateThingGroupResponseTypeDef
-
-def get_value() -> UpdateThingGroupResponseTypeDef:
-    return {
-        "version": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThingGroupResponseTypeDef(TypedDict):
-    version: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateThingGroupsForThingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateThingGroupsForThingRequestRequestTypeDef
-
-def get_value() -> UpdateThingGroupsForThingRequestRequestTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThingGroupsForThingRequestRequestTypeDef(TypedDict):
-    thingName: NotRequired[str],
-    thingGroupsToAdd: NotRequired[Sequence[str]],
-    thingGroupsToRemove: NotRequired[Sequence[str]],
-    overrideDynamicGroups: NotRequired[bool],
-```
-
-## UpdateThingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateThingRequestRequestTypeDef
-
-def get_value() -> UpdateThingRequestRequestTypeDef:
-    return {
-        "thingName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThingRequestRequestTypeDef(TypedDict):
-    thingName: str,
-    thingTypeName: NotRequired[str],
-    attributePayload: NotRequired[AttributePayloadTypeDef],  # (1)
-    expectedVersion: NotRequired[int],
-    removeThingType: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
-## UpdateTopicRuleDestinationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import UpdateTopicRuleDestinationRequestRequestTypeDef
-
-def get_value() -> UpdateTopicRuleDestinationRequestRequestTypeDef:
-    return {
-        "arn": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTopicRuleDestinationRequestRequestTypeDef(TypedDict):
-    arn: str,
-    status: TopicRuleDestinationStatusType,  # (1)
-```
-
-1. See [:material-code-brackets: TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype) 
 ## ValidateSecurityProfileBehaviorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12996,79 +12325,6 @@ class ValidateSecurityProfileBehaviorsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
-## ValidateSecurityProfileBehaviorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsResponseTypeDef
-
-def get_value() -> ValidateSecurityProfileBehaviorsResponseTypeDef:
-    return {
-        "valid": ...,
-        "validationErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ValidateSecurityProfileBehaviorsResponseTypeDef(TypedDict):
-    valid: bool,
-    validationErrors: List[ValidationErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ValidationErrorTypeDef](./type_defs.md#validationerrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ValidationErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ValidationErrorTypeDef
-
-def get_value() -> ValidationErrorTypeDef:
-    return {
-        "errorMessage": ...,
-    }
-```
-
-```python title="Definition"
-class ValidationErrorTypeDef(TypedDict):
-    errorMessage: NotRequired[str],
-```
-
-## ViolationEventAdditionalInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ViolationEventAdditionalInfoTypeDef
-
-def get_value() -> ViolationEventAdditionalInfoTypeDef:
-    return {
-        "confidenceLevel": ...,
-    }
-```
-
-```python title="Definition"
-class ViolationEventAdditionalInfoTypeDef(TypedDict):
-    confidenceLevel: NotRequired[ConfidenceLevelType],  # (1)
-```
-
-1. See [:material-code-brackets: ConfidenceLevelType](./literals.md#confidenceleveltype) 
-## ViolationEventOccurrenceRangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import ViolationEventOccurrenceRangeTypeDef
-
-def get_value() -> ViolationEventOccurrenceRangeTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class ViolationEventOccurrenceRangeTypeDef(TypedDict):
-    startTime: datetime,
-    endTime: datetime,
-```
-
 ## ViolationEventTypeDef
 
 ```python title="Usage Example"
@@ -13099,62 +12355,806 @@ class ViolationEventTypeDef(TypedDict):
 3. See [:material-code-braces: ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef) 
 4. See [:material-code-brackets: ViolationEventTypeType](./literals.md#violationeventtypetype) 
 5. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-## VpcDestinationConfigurationTypeDef
+## CodeSigningTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import VpcDestinationConfigurationTypeDef
+from mypy_boto3_iot.type_defs import CodeSigningTypeDef
 
-def get_value() -> VpcDestinationConfigurationTypeDef:
+def get_value() -> CodeSigningTypeDef:
     return {
-        "subnetIds": ...,
-        "vpcId": ...,
+        "awsSignerJobId": ...,
+    }
+```
+
+```python title="Definition"
+class CodeSigningTypeDef(TypedDict):
+    awsSignerJobId: NotRequired[str],
+    startSigningJobParameter: NotRequired[StartSigningJobParameterTypeDef],  # (1)
+    customCodeSigning: NotRequired[CustomCodeSigningTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StartSigningJobParameterTypeDef](./type_defs.md#startsigningjobparametertypedef) 
+2. See [:material-code-braces: CustomCodeSigningTypeDef](./type_defs.md#customcodesigningtypedef) 
+## CreateJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "targets": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    targets: Sequence[str],
+    documentSource: NotRequired[str],
+    document: NotRequired[str],
+    description: NotRequired[str],
+    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
+    targetSelection: NotRequired[TargetSelectionType],  # (2)
+    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (3)
+    abortConfig: NotRequired[AbortConfigTypeDef],  # (4)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (5)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+    namespaceId: NotRequired[str],
+    jobTemplateArn: NotRequired[str],
+    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (7)
+    documentParameters: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+3. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+4. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+## CreateJobTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateJobTemplateRequestRequestTypeDef
+
+def get_value() -> CreateJobTemplateRequestRequestTypeDef:
+    return {
+        "jobTemplateId": ...,
+        "description": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobTemplateRequestRequestTypeDef(TypedDict):
+    jobTemplateId: str,
+    description: str,
+    jobArn: NotRequired[str],
+    documentSource: NotRequired[str],
+    document: NotRequired[str],
+    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
+    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (2)
+    abortConfig: NotRequired[AbortConfigTypeDef],  # (3)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (4)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+## DescribeJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeJobTemplateResponseTypeDef
+
+def get_value() -> DescribeJobTemplateResponseTypeDef:
+    return {
+        "jobTemplateArn": ...,
+        "jobTemplateId": ...,
+        "description": ...,
+        "documentSource": ...,
+        "document": ...,
+        "createdAt": ...,
+        "presignedUrlConfig": ...,
+        "jobExecutionsRolloutConfig": ...,
+        "abortConfig": ...,
+        "timeoutConfig": ...,
+        "jobExecutionsRetryConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobTemplateResponseTypeDef(TypedDict):
+    jobTemplateArn: str,
+    jobTemplateId: str,
+    description: str,
+    documentSource: str,
+    document: str,
+    createdAt: datetime,
+    presignedUrlConfig: PresignedUrlConfigTypeDef,  # (1)
+    jobExecutionsRolloutConfig: JobExecutionsRolloutConfigTypeDef,  # (2)
+    abortConfig: AbortConfigTypeDef,  # (3)
+    timeoutConfig: TimeoutConfigTypeDef,  # (4)
+    jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## JobTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "jobArn": ...,
+    }
+```
+
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    jobArn: NotRequired[str],
+    jobId: NotRequired[str],
+    targetSelection: NotRequired[TargetSelectionType],  # (1)
+    status: NotRequired[JobStatusType],  # (2)
+    forceCanceled: NotRequired[bool],
+    reasonCode: NotRequired[str],
+    comment: NotRequired[str],
+    targets: NotRequired[List[str]],
+    description: NotRequired[str],
+    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (3)
+    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (4)
+    abortConfig: NotRequired[AbortConfigTypeDef],  # (5)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    completedAt: NotRequired[datetime],
+    jobProcessDetails: NotRequired[JobProcessDetailsTypeDef],  # (6)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (7)
+    namespaceId: NotRequired[str],
+    jobTemplateArn: NotRequired[str],
+    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (8)
+    documentParameters: NotRequired[Dict[str, str]],
+    isConcurrent: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+4. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+5. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+6. See [:material-code-braces: JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef) 
+7. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+8. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+## UpdateJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UpdateJobRequestRequestTypeDef
+
+def get_value() -> UpdateJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    description: NotRequired[str],
+    presignedUrlConfig: NotRequired[PresignedUrlConfigTypeDef],  # (1)
+    jobExecutionsRolloutConfig: NotRequired[JobExecutionsRolloutConfigTypeDef],  # (2)
+    abortConfig: NotRequired[AbortConfigTypeDef],  # (3)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (4)
+    namespaceId: NotRequired[str],
+    jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+## DescribeStreamResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeStreamResponseTypeDef
+
+def get_value() -> DescribeStreamResponseTypeDef:
+    return {
+        "streamInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStreamResponseTypeDef(TypedDict):
+    streamInfo: StreamInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamInfoTypeDef](./type_defs.md#streaminfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAuditMitigationActionsTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseTypeDef
+
+def get_value() -> DescribeAuditMitigationActionsTaskResponseTypeDef:
+    return {
+        "taskStatus": ...,
+        "startTime": ...,
+        "endTime": ...,
+        "taskStatistics": ...,
+        "target": ...,
+        "auditCheckToActionsMapping": ...,
+        "actionsDefinition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuditMitigationActionsTaskResponseTypeDef(TypedDict):
+    taskStatus: AuditMitigationActionsTaskStatusType,  # (1)
+    startTime: datetime,
+    endTime: datetime,
+    taskStatistics: Dict[str, TaskStatisticsForAuditCheckTypeDef],  # (2)
+    target: AuditMitigationActionsTaskTargetTypeDef,  # (3)
+    auditCheckToActionsMapping: Dict[str, List[str]],
+    actionsDefinition: List[MitigationActionTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
+2. See [:material-code-braces: TaskStatisticsForAuditCheckTypeDef](./type_defs.md#taskstatisticsforauditchecktypedef) 
+3. See [:material-code-braces: AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef) 
+4. See [:material-code-braces: MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetectMitigationActionsTaskSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DetectMitigationActionsTaskSummaryTypeDef
+
+def get_value() -> DetectMitigationActionsTaskSummaryTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class DetectMitigationActionsTaskSummaryTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    taskStatus: NotRequired[DetectMitigationActionsTaskStatusType],  # (1)
+    taskStartTime: NotRequired[datetime],
+    taskEndTime: NotRequired[datetime],
+    target: NotRequired[DetectMitigationActionsTaskTargetTypeDef],  # (2)
+    violationEventOccurrenceRange: NotRequired[ViolationEventOccurrenceRangeTypeDef],  # (3)
+    onlyActiveViolationsIncluded: NotRequired[bool],
+    suppressedAlertsIncluded: NotRequired[bool],
+    actionsDefinition: NotRequired[List[MitigationActionTypeDef]],  # (4)
+    taskStatistics: NotRequired[DetectMitigationActionsTaskStatisticsTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: DetectMitigationActionsTaskStatusType](./literals.md#detectmitigationactionstaskstatustype) 
+2. See [:material-code-braces: DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef) 
+3. See [:material-code-braces: ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef) 
+4. See [:material-code-braces: MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef) 
+5. See [:material-code-braces: DetectMitigationActionsTaskStatisticsTypeDef](./type_defs.md#detectmitigationactionstaskstatisticstypedef) 
+## ListAuditSuppressionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditSuppressionsResponseTypeDef
+
+def get_value() -> ListAuditSuppressionsResponseTypeDef:
+    return {
+        "suppressions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditSuppressionsResponseTypeDef(TypedDict):
+    suppressions: List[AuditSuppressionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditSuppressionTypeDef](./type_defs.md#auditsuppressiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AuditFindingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import AuditFindingTypeDef
+
+def get_value() -> AuditFindingTypeDef:
+    return {
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class AuditFindingTypeDef(TypedDict):
+    findingId: NotRequired[str],
+    taskId: NotRequired[str],
+    checkName: NotRequired[str],
+    taskStartTime: NotRequired[datetime],
+    findingTime: NotRequired[datetime],
+    severity: NotRequired[AuditFindingSeverityType],  # (1)
+    nonCompliantResource: NotRequired[NonCompliantResourceTypeDef],  # (2)
+    relatedResources: NotRequired[List[RelatedResourceTypeDef]],  # (3)
+    reasonForNonCompliance: NotRequired[str],
+    reasonForNonComplianceCode: NotRequired[str],
+    isSuppressed: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: AuditFindingSeverityType](./literals.md#auditfindingseveritytype) 
+2. See [:material-code-braces: NonCompliantResourceTypeDef](./type_defs.md#noncompliantresourcetypedef) 
+3. See [:material-code-braces: RelatedResourceTypeDef](./type_defs.md#relatedresourcetypedef) 
+## TestAuthorizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TestAuthorizationResponseTypeDef
+
+def get_value() -> TestAuthorizationResponseTypeDef:
+    return {
+        "authResults": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestAuthorizationResponseTypeDef(TypedDict):
+    authResults: List[AuthResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthResultTypeDef](./type_defs.md#authresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "dynamoDB": ...,
+    }
+```
+
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    dynamoDB: NotRequired[DynamoDBActionTypeDef],  # (1)
+    dynamoDBv2: NotRequired[DynamoDBv2ActionTypeDef],  # (2)
+    lambda: NotRequired[LambdaActionTypeDef],  # (3)
+    sns: NotRequired[SnsActionTypeDef],  # (4)
+    sqs: NotRequired[SqsActionTypeDef],  # (5)
+    kinesis: NotRequired[KinesisActionTypeDef],  # (6)
+    republish: NotRequired[RepublishActionTypeDef],  # (7)
+    s3: NotRequired[S3ActionTypeDef],  # (8)
+    firehose: NotRequired[FirehoseActionTypeDef],  # (9)
+    cloudwatchMetric: NotRequired[CloudwatchMetricActionTypeDef],  # (10)
+    cloudwatchAlarm: NotRequired[CloudwatchAlarmActionTypeDef],  # (11)
+    cloudwatchLogs: NotRequired[CloudwatchLogsActionTypeDef],  # (12)
+    elasticsearch: NotRequired[ElasticsearchActionTypeDef],  # (13)
+    salesforce: NotRequired[SalesforceActionTypeDef],  # (14)
+    iotAnalytics: NotRequired[IotAnalyticsActionTypeDef],  # (15)
+    iotEvents: NotRequired[IotEventsActionTypeDef],  # (16)
+    iotSiteWise: NotRequired[IotSiteWiseActionTypeDef],  # (17)
+    stepFunctions: NotRequired[StepFunctionsActionTypeDef],  # (18)
+    timestream: NotRequired[TimestreamActionTypeDef],  # (19)
+    http: NotRequired[HttpActionTypeDef],  # (20)
+    kafka: NotRequired[KafkaActionTypeDef],  # (21)
+    openSearch: NotRequired[OpenSearchActionTypeDef],  # (22)
+```
+
+1. See [:material-code-braces: DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef) 
+2. See [:material-code-braces: DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef) 
+3. See [:material-code-braces: LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef) 
+4. See [:material-code-braces: SnsActionTypeDef](./type_defs.md#snsactiontypedef) 
+5. See [:material-code-braces: SqsActionTypeDef](./type_defs.md#sqsactiontypedef) 
+6. See [:material-code-braces: KinesisActionTypeDef](./type_defs.md#kinesisactiontypedef) 
+7. See [:material-code-braces: RepublishActionTypeDef](./type_defs.md#republishactiontypedef) 
+8. See [:material-code-braces: S3ActionTypeDef](./type_defs.md#s3actiontypedef) 
+9. See [:material-code-braces: FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef) 
+10. See [:material-code-braces: CloudwatchMetricActionTypeDef](./type_defs.md#cloudwatchmetricactiontypedef) 
+11. See [:material-code-braces: CloudwatchAlarmActionTypeDef](./type_defs.md#cloudwatchalarmactiontypedef) 
+12. See [:material-code-braces: CloudwatchLogsActionTypeDef](./type_defs.md#cloudwatchlogsactiontypedef) 
+13. See [:material-code-braces: ElasticsearchActionTypeDef](./type_defs.md#elasticsearchactiontypedef) 
+14. See [:material-code-braces: SalesforceActionTypeDef](./type_defs.md#salesforceactiontypedef) 
+15. See [:material-code-braces: IotAnalyticsActionTypeDef](./type_defs.md#iotanalyticsactiontypedef) 
+16. See [:material-code-braces: IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef) 
+17. See [:material-code-braces: IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef) 
+18. See [:material-code-braces: StepFunctionsActionTypeDef](./type_defs.md#stepfunctionsactiontypedef) 
+19. See [:material-code-braces: TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef) 
+20. See [:material-code-braces: HttpActionTypeDef](./type_defs.md#httpactiontypedef) 
+21. See [:material-code-braces: KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef) 
+22. See [:material-code-braces: OpenSearchActionTypeDef](./type_defs.md#opensearchactiontypedef) 
+## ListActiveViolationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListActiveViolationsResponseTypeDef
+
+def get_value() -> ListActiveViolationsResponseTypeDef:
+    return {
+        "activeViolations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListActiveViolationsResponseTypeDef(TypedDict):
+    activeViolations: List[ActiveViolationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActiveViolationTypeDef](./type_defs.md#activeviolationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListViolationEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListViolationEventsResponseTypeDef
+
+def get_value() -> ListViolationEventsResponseTypeDef:
+    return {
+        "violationEvents": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListViolationEventsResponseTypeDef(TypedDict):
+    violationEvents: List[ViolationEventTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ViolationEventTypeDef](./type_defs.md#violationeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OTAUpdateFileTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import OTAUpdateFileTypeDef
+
+def get_value() -> OTAUpdateFileTypeDef:
+    return {
+        "fileName": ...,
+    }
+```
+
+```python title="Definition"
+class OTAUpdateFileTypeDef(TypedDict):
+    fileName: NotRequired[str],
+    fileType: NotRequired[int],
+    fileVersion: NotRequired[str],
+    fileLocation: NotRequired[FileLocationTypeDef],  # (1)
+    codeSigning: NotRequired[CodeSigningTypeDef],  # (2)
+    attributes: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: FileLocationTypeDef](./type_defs.md#filelocationtypedef) 
+2. See [:material-code-braces: CodeSigningTypeDef](./type_defs.md#codesigningtypedef) 
+## DescribeJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeJobResponseTypeDef
+
+def get_value() -> DescribeJobResponseTypeDef:
+    return {
+        "documentSource": ...,
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobResponseTypeDef(TypedDict):
+    documentSource: str,
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDetectMitigationActionsTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskResponseTypeDef
+
+def get_value() -> DescribeDetectMitigationActionsTaskResponseTypeDef:
+    return {
+        "taskSummary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDetectMitigationActionsTaskResponseTypeDef(TypedDict):
+    taskSummary: DetectMitigationActionsTaskSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDetectMitigationActionsTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksResponseTypeDef
+
+def get_value() -> ListDetectMitigationActionsTasksResponseTypeDef:
+    return {
+        "tasks": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDetectMitigationActionsTasksResponseTypeDef(TypedDict):
+    tasks: List[DetectMitigationActionsTaskSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAuditFindingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import DescribeAuditFindingResponseTypeDef
+
+def get_value() -> DescribeAuditFindingResponseTypeDef:
+    return {
+        "finding": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuditFindingResponseTypeDef(TypedDict):
+    finding: AuditFindingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditFindingTypeDef](./type_defs.md#auditfindingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAuditFindingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListAuditFindingsResponseTypeDef
+
+def get_value() -> ListAuditFindingsResponseTypeDef:
+    return {
+        "findings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAuditFindingsResponseTypeDef(TypedDict):
+    findings: List[AuditFindingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuditFindingTypeDef](./type_defs.md#auditfindingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TopicRulePayloadTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TopicRulePayloadTypeDef
+
+def get_value() -> TopicRulePayloadTypeDef:
+    return {
+        "sql": ...,
+        "actions": ...,
+    }
+```
+
+```python title="Definition"
+class TopicRulePayloadTypeDef(TypedDict):
+    sql: str,
+    actions: Sequence[ActionTypeDef],  # (1)
+    description: NotRequired[str],
+    ruleDisabled: NotRequired[bool],
+    awsIotSqlVersion: NotRequired[str],
+    errorAction: NotRequired[ActionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+## TopicRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import TopicRuleTypeDef
+
+def get_value() -> TopicRuleTypeDef:
+    return {
+        "ruleName": ...,
+    }
+```
+
+```python title="Definition"
+class TopicRuleTypeDef(TypedDict):
+    ruleName: NotRequired[str],
+    sql: NotRequired[str],
+    description: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    actions: NotRequired[List[ActionTypeDef]],  # (1)
+    ruleDisabled: NotRequired[bool],
+    awsIotSqlVersion: NotRequired[str],
+    errorAction: NotRequired[ActionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+## CreateOTAUpdateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import CreateOTAUpdateRequestRequestTypeDef
+
+def get_value() -> CreateOTAUpdateRequestRequestTypeDef:
+    return {
+        "otaUpdateId": ...,
+        "targets": ...,
+        "files": ...,
         "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcDestinationConfigurationTypeDef(TypedDict):
-    subnetIds: Sequence[str],
-    vpcId: str,
+class CreateOTAUpdateRequestRequestTypeDef(TypedDict):
+    otaUpdateId: str,
+    targets: Sequence[str],
+    files: Sequence[OTAUpdateFileTypeDef],  # (1)
     roleArn: str,
-    securityGroups: NotRequired[Sequence[str]],
+    description: NotRequired[str],
+    protocols: NotRequired[Sequence[ProtocolType]],  # (2)
+    targetSelection: NotRequired[TargetSelectionType],  # (3)
+    awsJobExecutionsRolloutConfig: NotRequired[AwsJobExecutionsRolloutConfigTypeDef],  # (4)
+    awsJobPresignedUrlConfig: NotRequired[AwsJobPresignedUrlConfigTypeDef],  # (5)
+    awsJobAbortConfig: NotRequired[AwsJobAbortConfigTypeDef],  # (6)
+    awsJobTimeoutConfig: NotRequired[AwsJobTimeoutConfigTypeDef],  # (7)
+    additionalParameters: NotRequired[Mapping[str, str]],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (8)
 ```
 
-## VpcDestinationPropertiesTypeDef
+1. See [:material-code-braces: OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+4. See [:material-code-braces: AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef) 
+5. See [:material-code-braces: AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef) 
+6. See [:material-code-braces: AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef) 
+7. See [:material-code-braces: AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## OTAUpdateInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import VpcDestinationPropertiesTypeDef
+from mypy_boto3_iot.type_defs import OTAUpdateInfoTypeDef
 
-def get_value() -> VpcDestinationPropertiesTypeDef:
+def get_value() -> OTAUpdateInfoTypeDef:
     return {
-        "subnetIds": ...,
+        "otaUpdateId": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcDestinationPropertiesTypeDef(TypedDict):
-    subnetIds: NotRequired[List[str]],
-    securityGroups: NotRequired[List[str]],
-    vpcId: NotRequired[str],
-    roleArn: NotRequired[str],
+class OTAUpdateInfoTypeDef(TypedDict):
+    otaUpdateId: NotRequired[str],
+    otaUpdateArn: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastModifiedDate: NotRequired[datetime],
+    description: NotRequired[str],
+    targets: NotRequired[List[str]],
+    protocols: NotRequired[List[ProtocolType]],  # (1)
+    awsJobExecutionsRolloutConfig: NotRequired[AwsJobExecutionsRolloutConfigTypeDef],  # (2)
+    awsJobPresignedUrlConfig: NotRequired[AwsJobPresignedUrlConfigTypeDef],  # (3)
+    targetSelection: NotRequired[TargetSelectionType],  # (4)
+    otaUpdateFiles: NotRequired[List[OTAUpdateFileTypeDef]],  # (5)
+    otaUpdateStatus: NotRequired[OTAUpdateStatusType],  # (6)
+    awsIotJobId: NotRequired[str],
+    awsIotJobArn: NotRequired[str],
+    errorInfo: NotRequired[ErrorInfoTypeDef],  # (7)
+    additionalParameters: NotRequired[Dict[str, str]],
 ```
 
-## VpcDestinationSummaryTypeDef
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+2. See [:material-code-braces: AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef) 
+4. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+5. See [:material-code-braces: OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef) 
+6. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
+7. See [:material-code-braces: ErrorInfoTypeDef](./type_defs.md#errorinfotypedef) 
+## CreateTopicRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iot.type_defs import VpcDestinationSummaryTypeDef
+from mypy_boto3_iot.type_defs import CreateTopicRuleRequestRequestTypeDef
 
-def get_value() -> VpcDestinationSummaryTypeDef:
+def get_value() -> CreateTopicRuleRequestRequestTypeDef:
     return {
-        "subnetIds": ...,
+        "ruleName": ...,
+        "topicRulePayload": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcDestinationSummaryTypeDef(TypedDict):
-    subnetIds: NotRequired[List[str]],
-    securityGroups: NotRequired[List[str]],
-    vpcId: NotRequired[str],
-    roleArn: NotRequired[str],
+class CreateTopicRuleRequestRequestTypeDef(TypedDict):
+    ruleName: str,
+    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
+    tags: NotRequired[str],
 ```
 
+1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
+## ReplaceTopicRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ReplaceTopicRuleRequestRequestTypeDef
+
+def get_value() -> ReplaceTopicRuleRequestRequestTypeDef:
+    return {
+        "ruleName": ...,
+        "topicRulePayload": ...,
+    }
+```
+
+```python title="Definition"
+class ReplaceTopicRuleRequestRequestTypeDef(TypedDict):
+    ruleName: str,
+    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
+## GetTopicRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetTopicRuleResponseTypeDef
+
+def get_value() -> GetTopicRuleResponseTypeDef:
+    return {
+        "ruleArn": ...,
+        "rule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTopicRuleResponseTypeDef(TypedDict):
+    ruleArn: str,
+    rule: TopicRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TopicRuleTypeDef](./type_defs.md#topicruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOTAUpdateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import GetOTAUpdateResponseTypeDef
+
+def get_value() -> GetOTAUpdateResponseTypeDef:
+    return {
+        "otaUpdateInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOTAUpdateResponseTypeDef(TypedDict):
+    otaUpdateInfo: OTAUpdateInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OTAUpdateInfoTypeDef](./type_defs.md#otaupdateinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

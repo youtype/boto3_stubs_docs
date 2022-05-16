@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36168,206 +36168,209 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_emr.type_defs</span> <span class="kn">import</span> <span class="n">AddInstanceFleetInputRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_emr.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddInstanceFleetInputRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;ClusterId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;InstanceFleet&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addinstancefleetinputrequesttypedef">AddInstanceFleetInputRequestTypeDef</a></li>
-<li><a href="type_defs/#addinstancefleetoutputtypedef">AddInstanceFleetOutputTypeDef</a></li>
-<li><a href="type_defs/#addinstancegroupsinputrequesttypedef">AddInstanceGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#addinstancegroupsoutputtypedef">AddInstanceGroupsOutputTypeDef</a></li>
-<li><a href="type_defs/#addjobflowstepsinputrequesttypedef">AddJobFlowStepsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#addjobflowstepsoutputtypedef">AddJobFlowStepsOutputTypeDef</a></li>
-<li><a href="type_defs/#addtagsinputrequesttypedef">AddTagsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#applicationtypedef">ApplicationTypeDef</a></li>
-<li><a href="type_defs/#autoscalingpolicydescriptiontypedef">AutoScalingPolicyDescriptionTypeDef</a></li>
+<li><a href="type_defs/#scalingconstraintstypedef">ScalingConstraintsTypeDef</a></li>
 <li><a href="type_defs/#autoscalingpolicystatechangereasontypedef">AutoScalingPolicyStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#autoscalingpolicystatustypedef">AutoScalingPolicyStatusTypeDef</a></li>
-<li><a href="type_defs/#autoscalingpolicytypedef">AutoScalingPolicyTypeDef</a></li>
 <li><a href="type_defs/#autoterminationpolicytypedef">AutoTerminationPolicyTypeDef</a></li>
 <li><a href="type_defs/#blockpublicaccessconfigurationmetadatatypedef">BlockPublicAccessConfigurationMetadataTypeDef</a></li>
-<li><a href="type_defs/#blockpublicaccessconfigurationtypedef">BlockPublicAccessConfigurationTypeDef</a></li>
-<li><a href="type_defs/#bootstrapactionconfigtypedef">BootstrapActionConfigTypeDef</a></li>
-<li><a href="type_defs/#bootstrapactiondetailtypedef">BootstrapActionDetailTypeDef</a></li>
+<li><a href="type_defs/#portrangetypedef">PortRangeTypeDef</a></li>
+<li><a href="type_defs/#scriptbootstrapactionconfigtypedef">ScriptBootstrapActionConfigTypeDef</a></li>
 <li><a href="type_defs/#cancelstepsinfotypedef">CancelStepsInfoTypeDef</a></li>
 <li><a href="type_defs/#cancelstepsinputrequesttypedef">CancelStepsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#cancelstepsoutputtypedef">CancelStepsOutputTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchalarmdefinitiontypedef">CloudWatchAlarmDefinitionTypeDef</a></li>
+<li><a href="type_defs/#metricdimensiontypedef">MetricDimensionTypeDef</a></li>
 <li><a href="type_defs/#clusterstatechangereasontypedef">ClusterStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#clusterstatustypedef">ClusterStatusTypeDef</a></li>
-<li><a href="type_defs/#clustersummarytypedef">ClusterSummaryTypeDef</a></li>
 <li><a href="type_defs/#clustertimelinetypedef">ClusterTimelineTypeDef</a></li>
-<li><a href="type_defs/#clustertypedef">ClusterTypeDef</a></li>
+<li><a href="type_defs/#ec2instanceattributestypedef">Ec2InstanceAttributesTypeDef</a></li>
+<li><a href="type_defs/#kerberosattributestypedef">KerberosAttributesTypeDef</a></li>
+<li><a href="type_defs/#placementgroupconfigtypedef">PlacementGroupConfigTypeDef</a></li>
 <li><a href="type_defs/#commandtypedef">CommandTypeDef</a></li>
 <li><a href="type_defs/#computelimitstypedef">ComputeLimitsTypeDef</a></li>
 <li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createsecurityconfigurationinputrequesttypedef">CreateSecurityConfigurationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createsecurityconfigurationoutputtypedef">CreateSecurityConfigurationOutputTypeDef</a></li>
-<li><a href="type_defs/#createstudioinputrequesttypedef">CreateStudioInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createstudiooutputtypedef">CreateStudioOutputTypeDef</a></li>
 <li><a href="type_defs/#createstudiosessionmappinginputrequesttypedef">CreateStudioSessionMappingInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesecurityconfigurationinputrequesttypedef">DeleteSecurityConfigurationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestudioinputrequesttypedef">DeleteStudioInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestudiosessionmappinginputrequesttypedef">DeleteStudioSessionMappingInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeclusterinputclusterrunningwaittypedef">DescribeClusterInputClusterRunningWaitTypeDef</a></li>
-<li><a href="type_defs/#describeclusterinputclusterterminatedwaittypedef">DescribeClusterInputClusterTerminatedWaitTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describeclusterinputrequesttypedef">DescribeClusterInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeclusteroutputtypedef">DescribeClusterOutputTypeDef</a></li>
 <li><a href="type_defs/#describejobflowsinputrequesttypedef">DescribeJobFlowsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describejobflowsoutputtypedef">DescribeJobFlowsOutputTypeDef</a></li>
 <li><a href="type_defs/#describenotebookexecutioninputrequesttypedef">DescribeNotebookExecutionInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describenotebookexecutionoutputtypedef">DescribeNotebookExecutionOutputTypeDef</a></li>
 <li><a href="type_defs/#describereleaselabelinputrequesttypedef">DescribeReleaseLabelInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describereleaselabeloutputtypedef">DescribeReleaseLabelOutputTypeDef</a></li>
+<li><a href="type_defs/#osreleasetypedef">OSReleaseTypeDef</a></li>
+<li><a href="type_defs/#simplifiedapplicationtypedef">SimplifiedApplicationTypeDef</a></li>
 <li><a href="type_defs/#describesecurityconfigurationinputrequesttypedef">DescribeSecurityConfigurationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describesecurityconfigurationoutputtypedef">DescribeSecurityConfigurationOutputTypeDef</a></li>
 <li><a href="type_defs/#describestepinputrequesttypedef">DescribeStepInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describestepinputstepcompletewaittypedef">DescribeStepInputStepCompleteWaitTypeDef</a></li>
-<li><a href="type_defs/#describestepoutputtypedef">DescribeStepOutputTypeDef</a></li>
 <li><a href="type_defs/#describestudioinputrequesttypedef">DescribeStudioInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describestudiooutputtypedef">DescribeStudioOutputTypeDef</a></li>
-<li><a href="type_defs/#ebsblockdeviceconfigtypedef">EbsBlockDeviceConfigTypeDef</a></li>
-<li><a href="type_defs/#ebsblockdevicetypedef">EbsBlockDeviceTypeDef</a></li>
-<li><a href="type_defs/#ebsconfigurationtypedef">EbsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#volumespecificationtypedef">VolumeSpecificationTypeDef</a></li>
 <li><a href="type_defs/#ebsvolumetypedef">EbsVolumeTypeDef</a></li>
-<li><a href="type_defs/#ec2instanceattributestypedef">Ec2InstanceAttributesTypeDef</a></li>
 <li><a href="type_defs/#executionengineconfigtypedef">ExecutionEngineConfigTypeDef</a></li>
 <li><a href="type_defs/#failuredetailstypedef">FailureDetailsTypeDef</a></li>
 <li><a href="type_defs/#getautoterminationpolicyinputrequesttypedef">GetAutoTerminationPolicyInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getautoterminationpolicyoutputtypedef">GetAutoTerminationPolicyOutputTypeDef</a></li>
-<li><a href="type_defs/#getblockpublicaccessconfigurationoutputtypedef">GetBlockPublicAccessConfigurationOutputTypeDef</a></li>
 <li><a href="type_defs/#getmanagedscalingpolicyinputrequesttypedef">GetManagedScalingPolicyInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getmanagedscalingpolicyoutputtypedef">GetManagedScalingPolicyOutputTypeDef</a></li>
 <li><a href="type_defs/#getstudiosessionmappinginputrequesttypedef">GetStudioSessionMappingInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getstudiosessionmappingoutputtypedef">GetStudioSessionMappingOutputTypeDef</a></li>
-<li><a href="type_defs/#hadoopjarstepconfigtypedef">HadoopJarStepConfigTypeDef</a></li>
+<li><a href="type_defs/#sessionmappingdetailtypedef">SessionMappingDetailTypeDef</a></li>
+<li><a href="type_defs/#keyvaluetypedef">KeyValueTypeDef</a></li>
 <li><a href="type_defs/#hadoopstepconfigtypedef">HadoopStepConfigTypeDef</a></li>
-<li><a href="type_defs/#instancefleetconfigtypedef">InstanceFleetConfigTypeDef</a></li>
 <li><a href="type_defs/#instancefleetmodifyconfigtypedef">InstanceFleetModifyConfigTypeDef</a></li>
-<li><a href="type_defs/#instancefleetprovisioningspecificationstypedef">InstanceFleetProvisioningSpecificationsTypeDef</a></li>
+<li><a href="type_defs/#spotprovisioningspecificationtypedef">SpotProvisioningSpecificationTypeDef</a></li>
 <li><a href="type_defs/#instancefleetstatechangereasontypedef">InstanceFleetStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#instancefleetstatustypedef">InstanceFleetStatusTypeDef</a></li>
 <li><a href="type_defs/#instancefleettimelinetypedef">InstanceFleetTimelineTypeDef</a></li>
-<li><a href="type_defs/#instancefleettypedef">InstanceFleetTypeDef</a></li>
-<li><a href="type_defs/#instancegroupconfigtypedef">InstanceGroupConfigTypeDef</a></li>
 <li><a href="type_defs/#instancegroupdetailtypedef">InstanceGroupDetailTypeDef</a></li>
-<li><a href="type_defs/#instancegroupmodifyconfigtypedef">InstanceGroupModifyConfigTypeDef</a></li>
 <li><a href="type_defs/#instancegroupstatechangereasontypedef">InstanceGroupStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#instancegroupstatustypedef">InstanceGroupStatusTypeDef</a></li>
 <li><a href="type_defs/#instancegrouptimelinetypedef">InstanceGroupTimelineTypeDef</a></li>
-<li><a href="type_defs/#instancegrouptypedef">InstanceGroupTypeDef</a></li>
 <li><a href="type_defs/#instanceresizepolicytypedef">InstanceResizePolicyTypeDef</a></li>
 <li><a href="type_defs/#instancestatechangereasontypedef">InstanceStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#instancestatustypedef">InstanceStatusTypeDef</a></li>
 <li><a href="type_defs/#instancetimelinetypedef">InstanceTimelineTypeDef</a></li>
-<li><a href="type_defs/#instancetypeconfigtypedef">InstanceTypeConfigTypeDef</a></li>
-<li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
-<li><a href="type_defs/#instancetypespecificationtypedef">InstanceTypeSpecificationTypeDef</a></li>
-<li><a href="type_defs/#jobflowdetailtypedef">JobFlowDetailTypeDef</a></li>
 <li><a href="type_defs/#jobflowexecutionstatusdetailtypedef">JobFlowExecutionStatusDetailTypeDef</a></li>
-<li><a href="type_defs/#jobflowinstancesconfigtypedef">JobFlowInstancesConfigTypeDef</a></li>
-<li><a href="type_defs/#jobflowinstancesdetailtypedef">JobFlowInstancesDetailTypeDef</a></li>
-<li><a href="type_defs/#kerberosattributestypedef">KerberosAttributesTypeDef</a></li>
-<li><a href="type_defs/#keyvaluetypedef">KeyValueTypeDef</a></li>
-<li><a href="type_defs/#listbootstrapactionsinputlistbootstrapactionspaginatetypedef">ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listbootstrapactionsinputrequesttypedef">ListBootstrapActionsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listbootstrapactionsoutputtypedef">ListBootstrapActionsOutputTypeDef</a></li>
-<li><a href="type_defs/#listclustersinputlistclusterspaginatetypedef">ListClustersInputListClustersPaginateTypeDef</a></li>
-<li><a href="type_defs/#listclustersinputrequesttypedef">ListClustersInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listclustersoutputtypedef">ListClustersOutputTypeDef</a></li>
-<li><a href="type_defs/#listinstancefleetsinputlistinstancefleetspaginatetypedef">ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listinstancefleetsinputrequesttypedef">ListInstanceFleetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listinstancefleetsoutputtypedef">ListInstanceFleetsOutputTypeDef</a></li>
-<li><a href="type_defs/#listinstancegroupsinputlistinstancegroupspaginatetypedef">ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listinstancegroupsinputrequesttypedef">ListInstanceGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listinstancegroupsoutputtypedef">ListInstanceGroupsOutputTypeDef</a></li>
-<li><a href="type_defs/#listinstancesinputlistinstancespaginatetypedef">ListInstancesInputListInstancesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listinstancesinputrequesttypedef">ListInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listinstancesoutputtypedef">ListInstancesOutputTypeDef</a></li>
-<li><a href="type_defs/#listnotebookexecutionsinputlistnotebookexecutionspaginatetypedef">ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listnotebookexecutionsinputrequesttypedef">ListNotebookExecutionsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listnotebookexecutionsoutputtypedef">ListNotebookExecutionsOutputTypeDef</a></li>
-<li><a href="type_defs/#listreleaselabelsinputrequesttypedef">ListReleaseLabelsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listreleaselabelsoutputtypedef">ListReleaseLabelsOutputTypeDef</a></li>
-<li><a href="type_defs/#listsecurityconfigurationsinputlistsecurityconfigurationspaginatetypedef">ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listsecurityconfigurationsinputrequesttypedef">ListSecurityConfigurationsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listsecurityconfigurationsoutputtypedef">ListSecurityConfigurationsOutputTypeDef</a></li>
-<li><a href="type_defs/#liststepsinputliststepspaginatetypedef">ListStepsInputListStepsPaginateTypeDef</a></li>
-<li><a href="type_defs/#liststepsinputrequesttypedef">ListStepsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#liststepsoutputtypedef">ListStepsOutputTypeDef</a></li>
-<li><a href="type_defs/#liststudiosessionmappingsinputliststudiosessionmappingspaginatetypedef">ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef</a></li>
-<li><a href="type_defs/#liststudiosessionmappingsinputrequesttypedef">ListStudioSessionMappingsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#liststudiosessionmappingsoutputtypedef">ListStudioSessionMappingsOutputTypeDef</a></li>
-<li><a href="type_defs/#liststudiosinputliststudiospaginatetypedef">ListStudiosInputListStudiosPaginateTypeDef</a></li>
-<li><a href="type_defs/#liststudiosinputrequesttypedef">ListStudiosInputRequestTypeDef</a></li>
-<li><a href="type_defs/#liststudiosoutputtypedef">ListStudiosOutputTypeDef</a></li>
-<li><a href="type_defs/#managedscalingpolicytypedef">ManagedScalingPolicyTypeDef</a></li>
-<li><a href="type_defs/#metricdimensiontypedef">MetricDimensionTypeDef</a></li>
-<li><a href="type_defs/#modifyclusterinputrequesttypedef">ModifyClusterInputRequestTypeDef</a></li>
-<li><a href="type_defs/#modifyclusteroutputtypedef">ModifyClusterOutputTypeDef</a></li>
-<li><a href="type_defs/#modifyinstancefleetinputrequesttypedef">ModifyInstanceFleetInputRequestTypeDef</a></li>
-<li><a href="type_defs/#modifyinstancegroupsinputrequesttypedef">ModifyInstanceGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#notebookexecutionsummarytypedef">NotebookExecutionSummaryTypeDef</a></li>
-<li><a href="type_defs/#notebookexecutiontypedef">NotebookExecutionTypeDef</a></li>
-<li><a href="type_defs/#osreleasetypedef">OSReleaseTypeDef</a></li>
-<li><a href="type_defs/#ondemandcapacityreservationoptionstypedef">OnDemandCapacityReservationOptionsTypeDef</a></li>
-<li><a href="type_defs/#ondemandprovisioningspecificationtypedef">OnDemandProvisioningSpecificationTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#placementgroupconfigtypedef">PlacementGroupConfigTypeDef</a></li>
 <li><a href="type_defs/#placementtypetypedef">PlacementTypeTypeDef</a></li>
-<li><a href="type_defs/#portrangetypedef">PortRangeTypeDef</a></li>
-<li><a href="type_defs/#putautoscalingpolicyinputrequesttypedef">PutAutoScalingPolicyInputRequestTypeDef</a></li>
-<li><a href="type_defs/#putautoscalingpolicyoutputtypedef">PutAutoScalingPolicyOutputTypeDef</a></li>
-<li><a href="type_defs/#putautoterminationpolicyinputrequesttypedef">PutAutoTerminationPolicyInputRequestTypeDef</a></li>
-<li><a href="type_defs/#putblockpublicaccessconfigurationinputrequesttypedef">PutBlockPublicAccessConfigurationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#putmanagedscalingpolicyinputrequesttypedef">PutManagedScalingPolicyInputRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listbootstrapactionsinputrequesttypedef">ListBootstrapActionsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listclustersinputrequesttypedef">ListClustersInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listinstancefleetsinputrequesttypedef">ListInstanceFleetsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listinstancegroupsinputrequesttypedef">ListInstanceGroupsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listinstancesinputrequesttypedef">ListInstancesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listnotebookexecutionsinputrequesttypedef">ListNotebookExecutionsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#notebookexecutionsummarytypedef">NotebookExecutionSummaryTypeDef</a></li>
 <li><a href="type_defs/#releaselabelfiltertypedef">ReleaseLabelFilterTypeDef</a></li>
+<li><a href="type_defs/#listsecurityconfigurationsinputrequesttypedef">ListSecurityConfigurationsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#securityconfigurationsummarytypedef">SecurityConfigurationSummaryTypeDef</a></li>
+<li><a href="type_defs/#liststepsinputrequesttypedef">ListStepsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#liststudiosessionmappingsinputrequesttypedef">ListStudioSessionMappingsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#sessionmappingsummarytypedef">SessionMappingSummaryTypeDef</a></li>
+<li><a href="type_defs/#liststudiosinputrequesttypedef">ListStudiosInputRequestTypeDef</a></li>
+<li><a href="type_defs/#studiosummarytypedef">StudioSummaryTypeDef</a></li>
+<li><a href="type_defs/#modifyclusterinputrequesttypedef">ModifyClusterInputRequestTypeDef</a></li>
+<li><a href="type_defs/#ondemandcapacityreservationoptionstypedef">OnDemandCapacityReservationOptionsTypeDef</a></li>
 <li><a href="type_defs/#removeautoscalingpolicyinputrequesttypedef">RemoveAutoScalingPolicyInputRequestTypeDef</a></li>
 <li><a href="type_defs/#removeautoterminationpolicyinputrequesttypedef">RemoveAutoTerminationPolicyInputRequestTypeDef</a></li>
 <li><a href="type_defs/#removemanagedscalingpolicyinputrequesttypedef">RemoveManagedScalingPolicyInputRequestTypeDef</a></li>
 <li><a href="type_defs/#removetagsinputrequesttypedef">RemoveTagsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#runjobflowinputrequesttypedef">RunJobFlowInputRequestTypeDef</a></li>
-<li><a href="type_defs/#runjobflowoutputtypedef">RunJobFlowOutputTypeDef</a></li>
-<li><a href="type_defs/#scalingactiontypedef">ScalingActionTypeDef</a></li>
-<li><a href="type_defs/#scalingconstraintstypedef">ScalingConstraintsTypeDef</a></li>
-<li><a href="type_defs/#scalingruletypedef">ScalingRuleTypeDef</a></li>
-<li><a href="type_defs/#scalingtriggertypedef">ScalingTriggerTypeDef</a></li>
-<li><a href="type_defs/#scriptbootstrapactionconfigtypedef">ScriptBootstrapActionConfigTypeDef</a></li>
-<li><a href="type_defs/#securityconfigurationsummarytypedef">SecurityConfigurationSummaryTypeDef</a></li>
-<li><a href="type_defs/#sessionmappingdetailtypedef">SessionMappingDetailTypeDef</a></li>
-<li><a href="type_defs/#sessionmappingsummarytypedef">SessionMappingSummaryTypeDef</a></li>
+<li><a href="type_defs/#supportedproductconfigtypedef">SupportedProductConfigTypeDef</a></li>
+<li><a href="type_defs/#simplescalingpolicyconfigurationtypedef">SimpleScalingPolicyConfigurationTypeDef</a></li>
 <li><a href="type_defs/#setterminationprotectioninputrequesttypedef">SetTerminationProtectionInputRequestTypeDef</a></li>
 <li><a href="type_defs/#setvisibletoallusersinputrequesttypedef">SetVisibleToAllUsersInputRequestTypeDef</a></li>
-<li><a href="type_defs/#shrinkpolicytypedef">ShrinkPolicyTypeDef</a></li>
-<li><a href="type_defs/#simplescalingpolicyconfigurationtypedef">SimpleScalingPolicyConfigurationTypeDef</a></li>
-<li><a href="type_defs/#simplifiedapplicationtypedef">SimplifiedApplicationTypeDef</a></li>
-<li><a href="type_defs/#spotprovisioningspecificationtypedef">SpotProvisioningSpecificationTypeDef</a></li>
-<li><a href="type_defs/#startnotebookexecutioninputrequesttypedef">StartNotebookExecutionInputRequestTypeDef</a></li>
-<li><a href="type_defs/#startnotebookexecutionoutputtypedef">StartNotebookExecutionOutputTypeDef</a></li>
-<li><a href="type_defs/#stepconfigtypedef">StepConfigTypeDef</a></li>
-<li><a href="type_defs/#stepdetailtypedef">StepDetailTypeDef</a></li>
 <li><a href="type_defs/#stepexecutionstatusdetailtypedef">StepExecutionStatusDetailTypeDef</a></li>
 <li><a href="type_defs/#stepstatechangereasontypedef">StepStateChangeReasonTypeDef</a></li>
-<li><a href="type_defs/#stepstatustypedef">StepStatusTypeDef</a></li>
-<li><a href="type_defs/#stepsummarytypedef">StepSummaryTypeDef</a></li>
 <li><a href="type_defs/#steptimelinetypedef">StepTimelineTypeDef</a></li>
-<li><a href="type_defs/#steptypedef">StepTypeDef</a></li>
 <li><a href="type_defs/#stopnotebookexecutioninputrequesttypedef">StopNotebookExecutionInputRequestTypeDef</a></li>
-<li><a href="type_defs/#studiosummarytypedef">StudioSummaryTypeDef</a></li>
-<li><a href="type_defs/#studiotypedef">StudioTypeDef</a></li>
-<li><a href="type_defs/#supportedproductconfigtypedef">SupportedProductConfigTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#terminatejobflowsinputrequesttypedef">TerminateJobFlowsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatestudioinputrequesttypedef">UpdateStudioInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatestudiosessionmappinginputrequesttypedef">UpdateStudioSessionMappingInputRequestTypeDef</a></li>
-<li><a href="type_defs/#volumespecificationtypedef">VolumeSpecificationTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#addinstancefleetoutputtypedef">AddInstanceFleetOutputTypeDef</a></li>
+<li><a href="type_defs/#addinstancegroupsoutputtypedef">AddInstanceGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#addjobflowstepsoutputtypedef">AddJobFlowStepsOutputTypeDef</a></li>
+<li><a href="type_defs/#createsecurityconfigurationoutputtypedef">CreateSecurityConfigurationOutputTypeDef</a></li>
+<li><a href="type_defs/#createstudiooutputtypedef">CreateStudioOutputTypeDef</a></li>
+<li><a href="type_defs/#describesecurityconfigurationoutputtypedef">DescribeSecurityConfigurationOutputTypeDef</a></li>
+<li><a href="type_defs/#listreleaselabelsoutputtypedef">ListReleaseLabelsOutputTypeDef</a></li>
+<li><a href="type_defs/#modifyclusteroutputtypedef">ModifyClusterOutputTypeDef</a></li>
+<li><a href="type_defs/#runjobflowoutputtypedef">RunJobFlowOutputTypeDef</a></li>
+<li><a href="type_defs/#startnotebookexecutionoutputtypedef">StartNotebookExecutionOutputTypeDef</a></li>
+<li><a href="type_defs/#addtagsinputrequesttypedef">AddTagsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#createstudioinputrequesttypedef">CreateStudioInputRequestTypeDef</a></li>
+<li><a href="type_defs/#studiotypedef">StudioTypeDef</a></li>
+<li><a href="type_defs/#autoscalingpolicystatustypedef">AutoScalingPolicyStatusTypeDef</a></li>
+<li><a href="type_defs/#getautoterminationpolicyoutputtypedef">GetAutoTerminationPolicyOutputTypeDef</a></li>
+<li><a href="type_defs/#putautoterminationpolicyinputrequesttypedef">PutAutoTerminationPolicyInputRequestTypeDef</a></li>
+<li><a href="type_defs/#blockpublicaccessconfigurationtypedef">BlockPublicAccessConfigurationTypeDef</a></li>
+<li><a href="type_defs/#bootstrapactionconfigtypedef">BootstrapActionConfigTypeDef</a></li>
+<li><a href="type_defs/#cancelstepsoutputtypedef">CancelStepsOutputTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchalarmdefinitiontypedef">CloudWatchAlarmDefinitionTypeDef</a></li>
+<li><a href="type_defs/#clusterstatustypedef">ClusterStatusTypeDef</a></li>
+<li><a href="type_defs/#listbootstrapactionsoutputtypedef">ListBootstrapActionsOutputTypeDef</a></li>
+<li><a href="type_defs/#managedscalingpolicytypedef">ManagedScalingPolicyTypeDef</a></li>
+<li><a href="type_defs/#describeclusterinputclusterrunningwaittypedef">DescribeClusterInputClusterRunningWaitTypeDef</a></li>
+<li><a href="type_defs/#describeclusterinputclusterterminatedwaittypedef">DescribeClusterInputClusterTerminatedWaitTypeDef</a></li>
+<li><a href="type_defs/#describestepinputstepcompletewaittypedef">DescribeStepInputStepCompleteWaitTypeDef</a></li>
+<li><a href="type_defs/#describereleaselabeloutputtypedef">DescribeReleaseLabelOutputTypeDef</a></li>
+<li><a href="type_defs/#ebsblockdeviceconfigtypedef">EbsBlockDeviceConfigTypeDef</a></li>
+<li><a href="type_defs/#ebsblockdevicetypedef">EbsBlockDeviceTypeDef</a></li>
+<li><a href="type_defs/#notebookexecutiontypedef">NotebookExecutionTypeDef</a></li>
+<li><a href="type_defs/#startnotebookexecutioninputrequesttypedef">StartNotebookExecutionInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getstudiosessionmappingoutputtypedef">GetStudioSessionMappingOutputTypeDef</a></li>
+<li><a href="type_defs/#hadoopjarstepconfigtypedef">HadoopJarStepConfigTypeDef</a></li>
+<li><a href="type_defs/#modifyinstancefleetinputrequesttypedef">ModifyInstanceFleetInputRequestTypeDef</a></li>
+<li><a href="type_defs/#instancefleetstatustypedef">InstanceFleetStatusTypeDef</a></li>
+<li><a href="type_defs/#instancegroupstatustypedef">InstanceGroupStatusTypeDef</a></li>
+<li><a href="type_defs/#shrinkpolicytypedef">ShrinkPolicyTypeDef</a></li>
+<li><a href="type_defs/#instancestatustypedef">InstanceStatusTypeDef</a></li>
+<li><a href="type_defs/#jobflowinstancesdetailtypedef">JobFlowInstancesDetailTypeDef</a></li>
+<li><a href="type_defs/#listbootstrapactionsinputlistbootstrapactionspaginatetypedef">ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listclustersinputlistclusterspaginatetypedef">ListClustersInputListClustersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listinstancefleetsinputlistinstancefleetspaginatetypedef">ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listinstancegroupsinputlistinstancegroupspaginatetypedef">ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listinstancesinputlistinstancespaginatetypedef">ListInstancesInputListInstancesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listnotebookexecutionsinputlistnotebookexecutionspaginatetypedef">ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listsecurityconfigurationsinputlistsecurityconfigurationspaginatetypedef">ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststepsinputliststepspaginatetypedef">ListStepsInputListStepsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststudiosessionmappingsinputliststudiosessionmappingspaginatetypedef">ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststudiosinputliststudiospaginatetypedef">ListStudiosInputListStudiosPaginateTypeDef</a></li>
+<li><a href="type_defs/#listnotebookexecutionsoutputtypedef">ListNotebookExecutionsOutputTypeDef</a></li>
+<li><a href="type_defs/#listreleaselabelsinputrequesttypedef">ListReleaseLabelsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listsecurityconfigurationsoutputtypedef">ListSecurityConfigurationsOutputTypeDef</a></li>
+<li><a href="type_defs/#liststudiosessionmappingsoutputtypedef">ListStudioSessionMappingsOutputTypeDef</a></li>
+<li><a href="type_defs/#liststudiosoutputtypedef">ListStudiosOutputTypeDef</a></li>
+<li><a href="type_defs/#ondemandprovisioningspecificationtypedef">OnDemandProvisioningSpecificationTypeDef</a></li>
+<li><a href="type_defs/#scalingactiontypedef">ScalingActionTypeDef</a></li>
+<li><a href="type_defs/#stepstatustypedef">StepStatusTypeDef</a></li>
+<li><a href="type_defs/#describestudiooutputtypedef">DescribeStudioOutputTypeDef</a></li>
+<li><a href="type_defs/#getblockpublicaccessconfigurationoutputtypedef">GetBlockPublicAccessConfigurationOutputTypeDef</a></li>
+<li><a href="type_defs/#putblockpublicaccessconfigurationinputrequesttypedef">PutBlockPublicAccessConfigurationInputRequestTypeDef</a></li>
+<li><a href="type_defs/#bootstrapactiondetailtypedef">BootstrapActionDetailTypeDef</a></li>
+<li><a href="type_defs/#scalingtriggertypedef">ScalingTriggerTypeDef</a></li>
+<li><a href="type_defs/#clustersummarytypedef">ClusterSummaryTypeDef</a></li>
+<li><a href="type_defs/#clustertypedef">ClusterTypeDef</a></li>
+<li><a href="type_defs/#getmanagedscalingpolicyoutputtypedef">GetManagedScalingPolicyOutputTypeDef</a></li>
+<li><a href="type_defs/#putmanagedscalingpolicyinputrequesttypedef">PutManagedScalingPolicyInputRequestTypeDef</a></li>
+<li><a href="type_defs/#ebsconfigurationtypedef">EbsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#instancetypespecificationtypedef">InstanceTypeSpecificationTypeDef</a></li>
+<li><a href="type_defs/#describenotebookexecutionoutputtypedef">DescribeNotebookExecutionOutputTypeDef</a></li>
+<li><a href="type_defs/#stepconfigtypedef">StepConfigTypeDef</a></li>
+<li><a href="type_defs/#instancegroupmodifyconfigtypedef">InstanceGroupModifyConfigTypeDef</a></li>
+<li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
+<li><a href="type_defs/#instancefleetprovisioningspecificationstypedef">InstanceFleetProvisioningSpecificationsTypeDef</a></li>
+<li><a href="type_defs/#stepsummarytypedef">StepSummaryTypeDef</a></li>
+<li><a href="type_defs/#steptypedef">StepTypeDef</a></li>
+<li><a href="type_defs/#scalingruletypedef">ScalingRuleTypeDef</a></li>
+<li><a href="type_defs/#listclustersoutputtypedef">ListClustersOutputTypeDef</a></li>
+<li><a href="type_defs/#describeclusteroutputtypedef">DescribeClusterOutputTypeDef</a></li>
+<li><a href="type_defs/#instancetypeconfigtypedef">InstanceTypeConfigTypeDef</a></li>
+<li><a href="type_defs/#addjobflowstepsinputrequesttypedef">AddJobFlowStepsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#stepdetailtypedef">StepDetailTypeDef</a></li>
+<li><a href="type_defs/#modifyinstancegroupsinputrequesttypedef">ModifyInstanceGroupsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listinstancesoutputtypedef">ListInstancesOutputTypeDef</a></li>
+<li><a href="type_defs/#instancefleettypedef">InstanceFleetTypeDef</a></li>
+<li><a href="type_defs/#liststepsoutputtypedef">ListStepsOutputTypeDef</a></li>
+<li><a href="type_defs/#describestepoutputtypedef">DescribeStepOutputTypeDef</a></li>
+<li><a href="type_defs/#autoscalingpolicydescriptiontypedef">AutoScalingPolicyDescriptionTypeDef</a></li>
+<li><a href="type_defs/#autoscalingpolicytypedef">AutoScalingPolicyTypeDef</a></li>
+<li><a href="type_defs/#instancefleetconfigtypedef">InstanceFleetConfigTypeDef</a></li>
+<li><a href="type_defs/#jobflowdetailtypedef">JobFlowDetailTypeDef</a></li>
+<li><a href="type_defs/#listinstancefleetsoutputtypedef">ListInstanceFleetsOutputTypeDef</a></li>
+<li><a href="type_defs/#instancegrouptypedef">InstanceGroupTypeDef</a></li>
+<li><a href="type_defs/#putautoscalingpolicyoutputtypedef">PutAutoScalingPolicyOutputTypeDef</a></li>
+<li><a href="type_defs/#instancegroupconfigtypedef">InstanceGroupConfigTypeDef</a></li>
+<li><a href="type_defs/#putautoscalingpolicyinputrequesttypedef">PutAutoScalingPolicyInputRequestTypeDef</a></li>
+<li><a href="type_defs/#addinstancefleetinputrequesttypedef">AddInstanceFleetInputRequestTypeDef</a></li>
+<li><a href="type_defs/#describejobflowsoutputtypedef">DescribeJobFlowsOutputTypeDef</a></li>
+<li><a href="type_defs/#listinstancegroupsoutputtypedef">ListInstanceGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#addinstancegroupsinputrequesttypedef">AddInstanceGroupsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#jobflowinstancesconfigtypedef">JobFlowInstancesConfigTypeDef</a></li>
+<li><a href="type_defs/#runjobflowinputrequesttypedef">RunJobFlowInputRequestTypeDef</a></li>
 </ul>
 
               
@@ -36437,7 +36440,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36110,122 +36110,117 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_accessanalyzer.type_defs</span> <span class="kn">import</span> <span class="n">AccessPreviewFindingTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_accessanalyzer.type_defs</span> <span class="kn">import</span> <span class="n">AccessPreviewStatusReasonTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessPreviewFindingTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessPreviewStatusReasonTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;changeType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;createdAt&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="s2">&quot;resourceOwnerAccount&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="s2">&quot;resourceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#accesspreviewfindingtypedef">AccessPreviewFindingTypeDef</a></li>
 <li><a href="type_defs/#accesspreviewstatusreasontypedef">AccessPreviewStatusReasonTypeDef</a></li>
-<li><a href="type_defs/#accesspreviewsummarytypedef">AccessPreviewSummaryTypeDef</a></li>
-<li><a href="type_defs/#accesspreviewtypedef">AccessPreviewTypeDef</a></li>
 <li><a href="type_defs/#aclgranteetypedef">AclGranteeTypeDef</a></li>
 <li><a href="type_defs/#analyzedresourcesummarytypedef">AnalyzedResourceSummaryTypeDef</a></li>
 <li><a href="type_defs/#analyzedresourcetypedef">AnalyzedResourceTypeDef</a></li>
-<li><a href="type_defs/#analyzersummarytypedef">AnalyzerSummaryTypeDef</a></li>
+<li><a href="type_defs/#statusreasontypedef">StatusReasonTypeDef</a></li>
 <li><a href="type_defs/#applyarchiverulerequestrequesttypedef">ApplyArchiveRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#archiverulesummarytypedef">ArchiveRuleSummaryTypeDef</a></li>
-<li><a href="type_defs/#cancelpolicygenerationrequestrequesttypedef">CancelPolicyGenerationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#cloudtraildetailstypedef">CloudTrailDetailsTypeDef</a></li>
-<li><a href="type_defs/#cloudtrailpropertiestypedef">CloudTrailPropertiesTypeDef</a></li>
-<li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
-<li><a href="type_defs/#createaccesspreviewrequestrequesttypedef">CreateAccessPreviewRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createaccesspreviewresponsetypedef">CreateAccessPreviewResponseTypeDef</a></li>
-<li><a href="type_defs/#createanalyzerrequestrequesttypedef">CreateAnalyzerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createanalyzerresponsetypedef">CreateAnalyzerResponseTypeDef</a></li>
-<li><a href="type_defs/#createarchiverulerequestrequesttypedef">CreateArchiveRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#criteriontypedef">CriterionTypeDef</a></li>
+<li><a href="type_defs/#cancelpolicygenerationrequestrequesttypedef">CancelPolicyGenerationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#trailtypedef">TrailTypeDef</a></li>
+<li><a href="type_defs/#trailpropertiestypedef">TrailPropertiesTypeDef</a></li>
+<li><a href="type_defs/#iamroleconfigurationtypedef">IamRoleConfigurationTypeDef</a></li>
+<li><a href="type_defs/#secretsmanagersecretconfigurationtypedef">SecretsManagerSecretConfigurationTypeDef</a></li>
+<li><a href="type_defs/#sqsqueueconfigurationtypedef">SqsQueueConfigurationTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#deleteanalyzerrequestrequesttypedef">DeleteAnalyzerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletearchiverulerequestrequesttypedef">DeleteArchiveRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#findingsourcedetailtypedef">FindingSourceDetailTypeDef</a></li>
-<li><a href="type_defs/#findingsourcetypedef">FindingSourceTypeDef</a></li>
-<li><a href="type_defs/#findingsummarytypedef">FindingSummaryTypeDef</a></li>
-<li><a href="type_defs/#findingtypedef">FindingTypeDef</a></li>
-<li><a href="type_defs/#generatedpolicypropertiestypedef">GeneratedPolicyPropertiesTypeDef</a></li>
-<li><a href="type_defs/#generatedpolicyresulttypedef">GeneratedPolicyResultTypeDef</a></li>
 <li><a href="type_defs/#generatedpolicytypedef">GeneratedPolicyTypeDef</a></li>
 <li><a href="type_defs/#getaccesspreviewrequestrequesttypedef">GetAccessPreviewRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getaccesspreviewresponsetypedef">GetAccessPreviewResponseTypeDef</a></li>
 <li><a href="type_defs/#getanalyzedresourcerequestrequesttypedef">GetAnalyzedResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getanalyzedresourceresponsetypedef">GetAnalyzedResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#getanalyzerrequestrequesttypedef">GetAnalyzerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getanalyzerresponsetypedef">GetAnalyzerResponseTypeDef</a></li>
 <li><a href="type_defs/#getarchiverulerequestrequesttypedef">GetArchiveRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getarchiveruleresponsetypedef">GetArchiveRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#getfindingrequestrequesttypedef">GetFindingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfindingresponsetypedef">GetFindingResponseTypeDef</a></li>
 <li><a href="type_defs/#getgeneratedpolicyrequestrequesttypedef">GetGeneratedPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getgeneratedpolicyresponsetypedef">GetGeneratedPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#iamroleconfigurationtypedef">IamRoleConfigurationTypeDef</a></li>
-<li><a href="type_defs/#inlinearchiveruletypedef">InlineArchiveRuleTypeDef</a></li>
-<li><a href="type_defs/#jobdetailstypedef">JobDetailsTypeDef</a></li>
 <li><a href="type_defs/#joberrortypedef">JobErrorTypeDef</a></li>
-<li><a href="type_defs/#kmsgrantconfigurationtypedef">KmsGrantConfigurationTypeDef</a></li>
 <li><a href="type_defs/#kmsgrantconstraintstypedef">KmsGrantConstraintsTypeDef</a></li>
-<li><a href="type_defs/#kmskeyconfigurationtypedef">KmsKeyConfigurationTypeDef</a></li>
-<li><a href="type_defs/#listaccesspreviewfindingsrequestlistaccesspreviewfindingspaginatetypedef">ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listaccesspreviewfindingsrequestrequesttypedef">ListAccessPreviewFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listaccesspreviewfindingsresponsetypedef">ListAccessPreviewFindingsResponseTypeDef</a></li>
-<li><a href="type_defs/#listaccesspreviewsrequestlistaccesspreviewspaginatetypedef">ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listaccesspreviewsrequestrequesttypedef">ListAccessPreviewsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listaccesspreviewsresponsetypedef">ListAccessPreviewsResponseTypeDef</a></li>
-<li><a href="type_defs/#listanalyzedresourcesrequestlistanalyzedresourcespaginatetypedef">ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listanalyzedresourcesrequestrequesttypedef">ListAnalyzedResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listanalyzedresourcesresponsetypedef">ListAnalyzedResourcesResponseTypeDef</a></li>
-<li><a href="type_defs/#listanalyzersrequestlistanalyzerspaginatetypedef">ListAnalyzersRequestListAnalyzersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listanalyzersrequestrequesttypedef">ListAnalyzersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listanalyzersresponsetypedef">ListAnalyzersResponseTypeDef</a></li>
-<li><a href="type_defs/#listarchiverulesrequestlistarchiverulespaginatetypedef">ListArchiveRulesRequestListArchiveRulesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listarchiverulesrequestrequesttypedef">ListArchiveRulesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listarchiverulesresponsetypedef">ListArchiveRulesResponseTypeDef</a></li>
+<li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
+<li><a href="type_defs/#listpolicygenerationsrequestrequesttypedef">ListPolicyGenerationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#policygenerationtypedef">PolicyGenerationTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#vpcconfigurationtypedef">VpcConfigurationTypeDef</a></li>
+<li><a href="type_defs/#substringtypedef">SubstringTypeDef</a></li>
+<li><a href="type_defs/#policygenerationdetailstypedef">PolicyGenerationDetailsTypeDef</a></li>
+<li><a href="type_defs/#positiontypedef">PositionTypeDef</a></li>
+<li><a href="type_defs/#s3publicaccessblockconfigurationtypedef">S3PublicAccessBlockConfigurationTypeDef</a></li>
+<li><a href="type_defs/#startresourcescanrequestrequesttypedef">StartResourceScanRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatefindingsrequestrequesttypedef">UpdateFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#validatepolicyrequestrequesttypedef">ValidatePolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#accesspreviewsummarytypedef">AccessPreviewSummaryTypeDef</a></li>
+<li><a href="type_defs/#s3bucketaclgrantconfigurationtypedef">S3BucketAclGrantConfigurationTypeDef</a></li>
+<li><a href="type_defs/#analyzersummarytypedef">AnalyzerSummaryTypeDef</a></li>
+<li><a href="type_defs/#archiverulesummarytypedef">ArchiveRuleSummaryTypeDef</a></li>
+<li><a href="type_defs/#createarchiverulerequestrequesttypedef">CreateArchiveRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#inlinearchiveruletypedef">InlineArchiveRuleTypeDef</a></li>
+<li><a href="type_defs/#listaccesspreviewfindingsrequestrequesttypedef">ListAccessPreviewFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatearchiverulerequestrequesttypedef">UpdateArchiveRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#cloudtraildetailstypedef">CloudTrailDetailsTypeDef</a></li>
+<li><a href="type_defs/#cloudtrailpropertiestypedef">CloudTrailPropertiesTypeDef</a></li>
+<li><a href="type_defs/#createaccesspreviewresponsetypedef">CreateAccessPreviewResponseTypeDef</a></li>
+<li><a href="type_defs/#createanalyzerresponsetypedef">CreateAnalyzerResponseTypeDef</a></li>
+<li><a href="type_defs/#getanalyzedresourceresponsetypedef">GetAnalyzedResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#listanalyzedresourcesresponsetypedef">ListAnalyzedResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#startpolicygenerationresponsetypedef">StartPolicyGenerationResponseTypeDef</a></li>
+<li><a href="type_defs/#findingsourcetypedef">FindingSourceTypeDef</a></li>
+<li><a href="type_defs/#jobdetailstypedef">JobDetailsTypeDef</a></li>
+<li><a href="type_defs/#kmsgrantconfigurationtypedef">KmsGrantConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listaccesspreviewfindingsrequestlistaccesspreviewfindingspaginatetypedef">ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listaccesspreviewsrequestlistaccesspreviewspaginatetypedef">ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listanalyzedresourcesrequestlistanalyzedresourcespaginatetypedef">ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listanalyzersrequestlistanalyzerspaginatetypedef">ListAnalyzersRequestListAnalyzersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listarchiverulesrequestlistarchiverulespaginatetypedef">ListArchiveRulesRequestListArchiveRulesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listpolicygenerationsrequestlistpolicygenerationspaginatetypedef">ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#validatepolicyrequestvalidatepolicypaginatetypedef">ValidatePolicyRequestValidatePolicyPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfindingsrequestlistfindingspaginatetypedef">ListFindingsRequestListFindingsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfindingsrequestrequesttypedef">ListFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
-<li><a href="type_defs/#listpolicygenerationsrequestlistpolicygenerationspaginatetypedef">ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listpolicygenerationsrequestrequesttypedef">ListPolicyGenerationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpolicygenerationsresponsetypedef">ListPolicyGenerationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
 <li><a href="type_defs/#networkoriginconfigurationtypedef">NetworkOriginConfigurationTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#pathelementtypedef">PathElementTypeDef</a></li>
-<li><a href="type_defs/#policygenerationdetailstypedef">PolicyGenerationDetailsTypeDef</a></li>
-<li><a href="type_defs/#policygenerationtypedef">PolicyGenerationTypeDef</a></li>
-<li><a href="type_defs/#positiontypedef">PositionTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#s3accesspointconfigurationtypedef">S3AccessPointConfigurationTypeDef</a></li>
-<li><a href="type_defs/#s3bucketaclgrantconfigurationtypedef">S3BucketAclGrantConfigurationTypeDef</a></li>
-<li><a href="type_defs/#s3bucketconfigurationtypedef">S3BucketConfigurationTypeDef</a></li>
-<li><a href="type_defs/#s3publicaccessblockconfigurationtypedef">S3PublicAccessBlockConfigurationTypeDef</a></li>
-<li><a href="type_defs/#secretsmanagersecretconfigurationtypedef">SecretsManagerSecretConfigurationTypeDef</a></li>
-<li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
 <li><a href="type_defs/#spantypedef">SpanTypeDef</a></li>
-<li><a href="type_defs/#sqsqueueconfigurationtypedef">SqsQueueConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listaccesspreviewsresponsetypedef">ListAccessPreviewsResponseTypeDef</a></li>
+<li><a href="type_defs/#getanalyzerresponsetypedef">GetAnalyzerResponseTypeDef</a></li>
+<li><a href="type_defs/#listanalyzersresponsetypedef">ListAnalyzersResponseTypeDef</a></li>
+<li><a href="type_defs/#getarchiveruleresponsetypedef">GetArchiveRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#listarchiverulesresponsetypedef">ListArchiveRulesResponseTypeDef</a></li>
+<li><a href="type_defs/#createanalyzerrequestrequesttypedef">CreateAnalyzerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startpolicygenerationrequestrequesttypedef">StartPolicyGenerationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startpolicygenerationresponsetypedef">StartPolicyGenerationResponseTypeDef</a></li>
-<li><a href="type_defs/#startresourcescanrequestrequesttypedef">StartResourceScanRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#statusreasontypedef">StatusReasonTypeDef</a></li>
-<li><a href="type_defs/#substringtypedef">SubstringTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#trailpropertiestypedef">TrailPropertiesTypeDef</a></li>
-<li><a href="type_defs/#trailtypedef">TrailTypeDef</a></li>
-<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatearchiverulerequestrequesttypedef">UpdateArchiveRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatefindingsrequestrequesttypedef">UpdateFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#generatedpolicypropertiestypedef">GeneratedPolicyPropertiesTypeDef</a></li>
+<li><a href="type_defs/#accesspreviewfindingtypedef">AccessPreviewFindingTypeDef</a></li>
+<li><a href="type_defs/#findingsummarytypedef">FindingSummaryTypeDef</a></li>
+<li><a href="type_defs/#findingtypedef">FindingTypeDef</a></li>
+<li><a href="type_defs/#kmskeyconfigurationtypedef">KmsKeyConfigurationTypeDef</a></li>
+<li><a href="type_defs/#s3accesspointconfigurationtypedef">S3AccessPointConfigurationTypeDef</a></li>
+<li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
+<li><a href="type_defs/#generatedpolicyresulttypedef">GeneratedPolicyResultTypeDef</a></li>
+<li><a href="type_defs/#listaccesspreviewfindingsresponsetypedef">ListAccessPreviewFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#getfindingresponsetypedef">GetFindingResponseTypeDef</a></li>
+<li><a href="type_defs/#s3bucketconfigurationtypedef">S3BucketConfigurationTypeDef</a></li>
 <li><a href="type_defs/#validatepolicyfindingtypedef">ValidatePolicyFindingTypeDef</a></li>
-<li><a href="type_defs/#validatepolicyrequestrequesttypedef">ValidatePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#validatepolicyrequestvalidatepolicypaginatetypedef">ValidatePolicyRequestValidatePolicyPaginateTypeDef</a></li>
+<li><a href="type_defs/#getgeneratedpolicyresponsetypedef">GetGeneratedPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
 <li><a href="type_defs/#validatepolicyresponsetypedef">ValidatePolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#vpcconfigurationtypedef">VpcConfigurationTypeDef</a></li>
+<li><a href="type_defs/#accesspreviewtypedef">AccessPreviewTypeDef</a></li>
+<li><a href="type_defs/#createaccesspreviewrequestrequesttypedef">CreateAccessPreviewRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getaccesspreviewresponsetypedef">GetAccessPreviewResponseTypeDef</a></li>
 </ul>
 
               
@@ -36295,7 +36290,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

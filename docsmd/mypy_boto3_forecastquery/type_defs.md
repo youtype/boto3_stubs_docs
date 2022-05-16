@@ -24,23 +24,6 @@ class DataPointTypeDef(TypedDict):
     Value: NotRequired[float],
 ```
 
-## ForecastTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_forecastquery.type_defs import ForecastTypeDef
-
-def get_value() -> ForecastTypeDef:
-    return {
-        "Predictions": ...,
-    }
-```
-
-```python title="Definition"
-class ForecastTypeDef(TypedDict):
-    Predictions: NotRequired[Dict[str, List[DataPointTypeDef]]],  # (1)
-```
-
-1. See [:material-code-braces: DataPointTypeDef](./type_defs.md#datapointtypedef) 
 ## QueryForecastRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -62,26 +45,6 @@ class QueryForecastRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## QueryForecastResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_forecastquery.type_defs import QueryForecastResponseTypeDef
-
-def get_value() -> QueryForecastResponseTypeDef:
-    return {
-        "Forecast": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class QueryForecastResponseTypeDef(TypedDict):
-    Forecast: ForecastTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ForecastTypeDef](./type_defs.md#forecasttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -106,3 +69,40 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## ForecastTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecastquery.type_defs import ForecastTypeDef
+
+def get_value() -> ForecastTypeDef:
+    return {
+        "Predictions": ...,
+    }
+```
+
+```python title="Definition"
+class ForecastTypeDef(TypedDict):
+    Predictions: NotRequired[Dict[str, List[DataPointTypeDef]]],  # (1)
+```
+
+1. See [:material-code-braces: DataPointTypeDef](./type_defs.md#datapointtypedef) 
+## QueryForecastResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecastquery.type_defs import QueryForecastResponseTypeDef
+
+def get_value() -> QueryForecastResponseTypeDef:
+    return {
+        "Forecast": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class QueryForecastResponseTypeDef(TypedDict):
+    Forecast: ForecastTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ForecastTypeDef](./type_defs.md#forecasttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

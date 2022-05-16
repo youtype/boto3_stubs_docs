@@ -23,106 +23,6 @@ class GetRoutingControlStateRequestRequestTypeDef(TypedDict):
     RoutingControlArn: str,
 ```
 
-## GetRoutingControlStateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateResponseTypeDef
-
-def get_value() -> GetRoutingControlStateResponseTypeDef:
-    return {
-        "RoutingControlArn": ...,
-        "RoutingControlState": ...,
-        "RoutingControlName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRoutingControlStateResponseTypeDef(TypedDict):
-    RoutingControlArn: str,
-    RoutingControlState: RoutingControlStateType,  # (1)
-    RoutingControlName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
-
-def get_value() -> ListRoutingControlsRequestListRoutingControlsPaginateTypeDef:
-    return {
-        "ControlPanelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoutingControlsRequestListRoutingControlsPaginateTypeDef(TypedDict):
-    ControlPanelArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListRoutingControlsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsRequestRequestTypeDef
-
-def get_value() -> ListRoutingControlsRequestRequestTypeDef:
-    return {
-        "ControlPanelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoutingControlsRequestRequestTypeDef(TypedDict):
-    ControlPanelArn: NotRequired[str],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListRoutingControlsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsResponseTypeDef
-
-def get_value() -> ListRoutingControlsResponseTypeDef:
-    return {
-        "RoutingControls": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoutingControlsResponseTypeDef(TypedDict):
-    RoutingControls: List[RoutingControlTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_cluster.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -145,6 +45,42 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_cluster.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListRoutingControlsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsRequestRequestTypeDef
+
+def get_value() -> ListRoutingControlsRequestRequestTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingControlsRequestRequestTypeDef(TypedDict):
+    ControlPanelArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## RoutingControlTypeDef
@@ -207,6 +143,70 @@ class UpdateRoutingControlStateRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
+## GetRoutingControlStateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateResponseTypeDef
+
+def get_value() -> GetRoutingControlStateResponseTypeDef:
+    return {
+        "RoutingControlArn": ...,
+        "RoutingControlState": ...,
+        "RoutingControlName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRoutingControlStateResponseTypeDef(TypedDict):
+    RoutingControlArn: str,
+    RoutingControlState: RoutingControlStateType,  # (1)
+    RoutingControlName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
+
+def get_value() -> ListRoutingControlsRequestListRoutingControlsPaginateTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingControlsRequestListRoutingControlsPaginateTypeDef(TypedDict):
+    ControlPanelArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRoutingControlsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_cluster.type_defs import ListRoutingControlsResponseTypeDef
+
+def get_value() -> ListRoutingControlsResponseTypeDef:
+    return {
+        "RoutingControls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingControlsResponseTypeDef(TypedDict):
+    RoutingControls: List[RoutingControlTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRoutingControlStatesRequestRequestTypeDef
 
 ```python title="Usage Example"

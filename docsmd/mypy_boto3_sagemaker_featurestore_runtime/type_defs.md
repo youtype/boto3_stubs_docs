@@ -48,88 +48,28 @@ class BatchGetRecordIdentifierTypeDef(TypedDict):
     FeatureNames: NotRequired[Sequence[str]],
 ```
 
-## BatchGetRecordRequestRequestTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordRequestRequestTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BatchGetRecordRequestRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Identifiers": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchGetRecordRequestRequestTypeDef(TypedDict):
-    Identifiers: Sequence[BatchGetRecordIdentifierTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef) 
-## BatchGetRecordResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResponseTypeDef
-
-def get_value() -> BatchGetRecordResponseTypeDef:
-    return {
-        "Records": ...,
-        "Errors": ...,
-        "UnprocessedIdentifiers": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetRecordResponseTypeDef(TypedDict):
-    Records: List[BatchGetRecordResultDetailTypeDef],  # (1)
-    Errors: List[BatchGetRecordErrorTypeDef],  # (2)
-    UnprocessedIdentifiers: List[BatchGetRecordIdentifierTypeDef],  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef) 
-2. See [:material-code-braces: BatchGetRecordErrorTypeDef](./type_defs.md#batchgetrecorderrortypedef) 
-3. See [:material-code-braces: BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchGetRecordResultDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResultDetailTypeDef
-
-def get_value() -> BatchGetRecordResultDetailTypeDef:
-    return {
-        "FeatureGroupName": ...,
-        "RecordIdentifierValueAsString": ...,
-        "Record": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetRecordResultDetailTypeDef(TypedDict):
-    FeatureGroupName: str,
-    RecordIdentifierValueAsString: str,
-    Record: List[FeatureValueTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
-## DeleteRecordRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import DeleteRecordRequestRequestTypeDef
-
-def get_value() -> DeleteRecordRequestRequestTypeDef:
-    return {
-        "FeatureGroupName": ...,
-        "RecordIdentifierValueAsString": ...,
-        "EventTime": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteRecordRequestRequestTypeDef(TypedDict):
-    FeatureGroupName: str,
-    RecordIdentifierValueAsString: str,
-    EventTime: str,
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
 ## FeatureValueTypeDef
@@ -148,6 +88,26 @@ def get_value() -> FeatureValueTypeDef:
 class FeatureValueTypeDef(TypedDict):
     FeatureName: str,
     ValueAsString: str,
+```
+
+## DeleteRecordRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import DeleteRecordRequestRequestTypeDef
+
+def get_value() -> DeleteRecordRequestRequestTypeDef:
+    return {
+        "FeatureGroupName": ...,
+        "RecordIdentifierValueAsString": ...,
+        "EventTime": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteRecordRequestRequestTypeDef(TypedDict):
+    FeatureGroupName: str,
+    RecordIdentifierValueAsString: str,
+    EventTime: str,
 ```
 
 ## GetRecordRequestRequestTypeDef
@@ -169,6 +129,44 @@ class GetRecordRequestRequestTypeDef(TypedDict):
     FeatureNames: NotRequired[Sequence[str]],
 ```
 
+## BatchGetRecordRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordRequestRequestTypeDef
+
+def get_value() -> BatchGetRecordRequestRequestTypeDef:
+    return {
+        "Identifiers": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetRecordRequestRequestTypeDef(TypedDict):
+    Identifiers: Sequence[BatchGetRecordIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef) 
+## BatchGetRecordResultDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResultDetailTypeDef
+
+def get_value() -> BatchGetRecordResultDetailTypeDef:
+    return {
+        "FeatureGroupName": ...,
+        "RecordIdentifierValueAsString": ...,
+        "Record": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetRecordResultDetailTypeDef(TypedDict):
+    FeatureGroupName: str,
+    RecordIdentifierValueAsString: str,
+    Record: List[FeatureValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
 ## GetRecordResponseTypeDef
 
 ```python title="Usage Example"
@@ -208,27 +206,29 @@ class PutRecordRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
-## ResponseMetadataTypeDef
+## BatchGetRecordResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> BatchGetRecordResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "Records": ...,
+        "Errors": ...,
+        "UnprocessedIdentifiers": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class BatchGetRecordResponseTypeDef(TypedDict):
+    Records: List[BatchGetRecordResultDetailTypeDef],  # (1)
+    Errors: List[BatchGetRecordErrorTypeDef],  # (2)
+    UnprocessedIdentifiers: List[BatchGetRecordIdentifierTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
+1. See [:material-code-braces: BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef) 
+2. See [:material-code-braces: BatchGetRecordErrorTypeDef](./type_defs.md#batchgetrecorderrortypedef) 
+3. See [:material-code-braces: BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

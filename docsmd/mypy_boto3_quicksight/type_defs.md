@@ -148,42 +148,24 @@ class AnalysisSearchFilterTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
 2. See [:material-code-brackets: AnalysisFilterAttributeType](./literals.md#analysisfilterattributetype) 
-## AnalysisSourceEntityTypeDef
+## DataSetReferenceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnalysisSourceEntityTypeDef
+from mypy_boto3_quicksight.type_defs import DataSetReferenceTypeDef
 
-def get_value() -> AnalysisSourceEntityTypeDef:
+def get_value() -> DataSetReferenceTypeDef:
     return {
-        "SourceTemplate": ...,
+        "DataSetPlaceholder": ...,
+        "DataSetArn": ...,
     }
 ```
 
 ```python title="Definition"
-class AnalysisSourceEntityTypeDef(TypedDict):
-    SourceTemplate: NotRequired[AnalysisSourceTemplateTypeDef],  # (1)
+class DataSetReferenceTypeDef(TypedDict):
+    DataSetPlaceholder: str,
+    DataSetArn: str,
 ```
 
-1. See [:material-code-braces: AnalysisSourceTemplateTypeDef](./type_defs.md#analysissourcetemplatetypedef) 
-## AnalysisSourceTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnalysisSourceTemplateTypeDef
-
-def get_value() -> AnalysisSourceTemplateTypeDef:
-    return {
-        "DataSetReferences": ...,
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class AnalysisSourceTemplateTypeDef(TypedDict):
-    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
-    Arn: str,
-```
-
-1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
 ## AnalysisSummaryTypeDef
 
 ```python title="Usage Example"
@@ -206,34 +188,23 @@ class AnalysisSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-## AnalysisTypeDef
+## SheetTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnalysisTypeDef
+from mypy_boto3_quicksight.type_defs import SheetTypeDef
 
-def get_value() -> AnalysisTypeDef:
+def get_value() -> SheetTypeDef:
     return {
-        "AnalysisId": ...,
+        "SheetId": ...,
     }
 ```
 
 ```python title="Definition"
-class AnalysisTypeDef(TypedDict):
-    AnalysisId: NotRequired[str],
-    Arn: NotRequired[str],
+class SheetTypeDef(TypedDict):
+    SheetId: NotRequired[str],
     Name: NotRequired[str],
-    Status: NotRequired[ResourceStatusType],  # (1)
-    Errors: NotRequired[List[AnalysisErrorTypeDef]],  # (2)
-    DataSetArns: NotRequired[List[str]],
-    ThemeArn: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
 ```
 
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef) 
-3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
 ## AnonymousUserDashboardEmbeddingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -250,23 +221,6 @@ class AnonymousUserDashboardEmbeddingConfigurationTypeDef(TypedDict):
     InitialDashboardId: str,
 ```
 
-## AnonymousUserEmbeddingExperienceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnonymousUserEmbeddingExperienceConfigurationTypeDef
-
-def get_value() -> AnonymousUserEmbeddingExperienceConfigurationTypeDef:
-    return {
-        "Dashboard": ...,
-    }
-```
-
-```python title="Definition"
-class AnonymousUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
-    Dashboard: NotRequired[AnonymousUserDashboardEmbeddingConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AnonymousUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardembeddingconfigurationtypedef) 
 ## AthenaParametersTypeDef
 
 ```python title="Usage Example"
@@ -395,31 +349,30 @@ class CancelIngestionRequestRequestTypeDef(TypedDict):
     IngestionId: str,
 ```
 
-## CancelIngestionResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CancelIngestionResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CancelIngestionResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Arn": ...,
-        "IngestionId": ...,
         "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CancelIngestionResponseTypeDef(TypedDict):
-    Arn: str,
-    IngestionId: str,
+class ResponseMetadataTypeDef(TypedDict):
     RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CastColumnTypeOperationTypeDef
 
 ```python title="Usage Example"
@@ -472,41 +425,27 @@ class ColumnGroupColumnSchemaTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## ColumnGroupSchemaTypeDef
+## GeoSpatialColumnGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ColumnGroupSchemaTypeDef
+from mypy_boto3_quicksight.type_defs import GeoSpatialColumnGroupTypeDef
 
-def get_value() -> ColumnGroupSchemaTypeDef:
+def get_value() -> GeoSpatialColumnGroupTypeDef:
     return {
         "Name": ...,
+        "CountryCode": ...,
+        "Columns": ...,
     }
 ```
 
 ```python title="Definition"
-class ColumnGroupSchemaTypeDef(TypedDict):
-    Name: NotRequired[str],
-    ColumnGroupColumnSchemaList: NotRequired[List[ColumnGroupColumnSchemaTypeDef]],  # (1)
+class GeoSpatialColumnGroupTypeDef(TypedDict):
+    Name: str,
+    CountryCode: GeoSpatialCountryCodeType,  # (1)
+    Columns: Sequence[str],
 ```
 
-1. See [:material-code-braces: ColumnGroupColumnSchemaTypeDef](./type_defs.md#columngroupcolumnschematypedef) 
-## ColumnGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ColumnGroupTypeDef
-
-def get_value() -> ColumnGroupTypeDef:
-    return {
-        "GeoSpatialColumnGroup": ...,
-    }
-```
-
-```python title="Definition"
-class ColumnGroupTypeDef(TypedDict):
-    GeoSpatialColumnGroup: NotRequired[GeoSpatialColumnGroupTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: GeoSpatialColumnGroupTypeDef](./type_defs.md#geospatialcolumngrouptypedef) 
+1. See [:material-code-brackets: GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype) 
 ## ColumnLevelPermissionRuleTypeDef
 
 ```python title="Usage Example"
@@ -542,351 +481,132 @@ class ColumnSchemaTypeDef(TypedDict):
     GeographicRole: NotRequired[str],
 ```
 
-## ColumnTagTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ColumnTagTypeDef
+from mypy_boto3_quicksight.type_defs import TagTypeDef
 
-def get_value() -> ColumnTagTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ColumnGeographicRole": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class ColumnTagTypeDef(TypedDict):
-    ColumnGeographicRole: NotRequired[GeoSpatialDataRoleType],  # (1)
-    ColumnDescription: NotRequired[ColumnDescriptionTypeDef],  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-brackets: GeoSpatialDataRoleType](./literals.md#geospatialdataroletype) 
-2. See [:material-code-braces: ColumnDescriptionTypeDef](./type_defs.md#columndescriptiontypedef) 
-## CreateAccountCustomizationRequestRequestTypeDef
+## ResourcePermissionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ResourcePermissionTypeDef
 
-def get_value() -> CreateAccountCustomizationRequestRequestTypeDef:
+def get_value() -> ResourcePermissionTypeDef:
     return {
-        "AwsAccountId": ...,
-        "AccountCustomization": ...,
+        "Principal": ...,
+        "Actions": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccountCustomizationRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+class ResourcePermissionTypeDef(TypedDict):
+    Principal: str,
+    Actions: Sequence[str],
+```
+
+## DataSetUsageConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetUsageConfigurationTypeDef
+
+def get_value() -> DataSetUsageConfigurationTypeDef:
+    return {
+        "DisableUseAsDirectQuerySource": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetUsageConfigurationTypeDef(TypedDict):
+    DisableUseAsDirectQuerySource: NotRequired[bool],
+    DisableUseAsImportedSource: NotRequired[bool],
+```
+
+## FieldFolderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldFolderTypeDef
+
+def get_value() -> FieldFolderTypeDef:
+    return {
+        "description": ...,
+    }
+```
+
+```python title="Definition"
+class FieldFolderTypeDef(TypedDict):
+    description: NotRequired[str],
+    columns: NotRequired[Sequence[str]],
+```
+
+## RowLevelPermissionDataSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RowLevelPermissionDataSetTypeDef
+
+def get_value() -> RowLevelPermissionDataSetTypeDef:
+    return {
+        "Arn": ...,
+        "PermissionPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class RowLevelPermissionDataSetTypeDef(TypedDict):
+    Arn: str,
+    PermissionPolicy: RowLevelPermissionPolicyType,  # (1)
     Namespace: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    FormatVersion: NotRequired[RowLevelPermissionFormatVersionType],  # (2)
+    Status: NotRequired[StatusType],  # (3)
 ```
 
-1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAccountCustomizationResponseTypeDef
+1. See [:material-code-brackets: RowLevelPermissionPolicyType](./literals.md#rowlevelpermissionpolicytype) 
+2. See [:material-code-brackets: RowLevelPermissionFormatVersionType](./literals.md#rowlevelpermissionformatversiontype) 
+3. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## SslPropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationResponseTypeDef
+from mypy_boto3_quicksight.type_defs import SslPropertiesTypeDef
 
-def get_value() -> CreateAccountCustomizationResponseTypeDef:
+def get_value() -> SslPropertiesTypeDef:
     return {
-        "Arn": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "AccountCustomization": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "DisableSsl": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccountCustomizationResponseTypeDef(TypedDict):
-    Arn: str,
-    AwsAccountId: str,
-    Namespace: str,
-    AccountCustomization: AccountCustomizationTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SslPropertiesTypeDef(TypedDict):
+    DisableSsl: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAnalysisRequestRequestTypeDef
+## VpcConnectionPropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import VpcConnectionPropertiesTypeDef
 
-def get_value() -> CreateAnalysisRequestRequestTypeDef:
+def get_value() -> VpcConnectionPropertiesTypeDef:
     return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
+        "VpcConnectionArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-    Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
-    ThemeArn: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+class VpcConnectionPropertiesTypeDef(TypedDict):
+    VpcConnectionArn: str,
 ```
 
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateAnalysisResponseTypeDef
-
-def get_value() -> CreateAnalysisResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AnalysisId": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAnalysisResponseTypeDef(TypedDict):
-    Arn: str,
-    AnalysisId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateColumnsOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateColumnsOperationTypeDef
-
-def get_value() -> CreateColumnsOperationTypeDef:
-    return {
-        "Columns": ...,
-    }
-```
-
-```python title="Definition"
-class CreateColumnsOperationTypeDef(TypedDict):
-    Columns: Sequence[CalculatedColumnTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef) 
-## CreateDashboardRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDashboardRequestRequestTypeDef
-
-def get_value() -> CreateDashboardRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-    VersionDescription: NotRequired[str],
-    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (5)
-    ThemeArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-## CreateDashboardResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDashboardResponseTypeDef
-
-def get_value() -> CreateDashboardResponseTypeDef:
-    return {
-        "Arn": ...,
-        "VersionArn": ...,
-        "DashboardId": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDashboardResponseTypeDef(TypedDict):
-    Arn: str,
-    VersionArn: str,
-    DashboardId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDataSetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDataSetRequestRequestTypeDef
-
-def get_value() -> CreateDataSetRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-        "Name": ...,
-        "PhysicalTableMap": ...,
-        "ImportMode": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDataSetRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-    Name: str,
-    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
-    ImportMode: DataSetImportModeType,  # (2)
-    LogicalTableMap: NotRequired[Mapping[str, LogicalTableTypeDef]],  # (3)
-    ColumnGroups: NotRequired[Sequence[ColumnGroupTypeDef]],  # (4)
-    FieldFolders: NotRequired[Mapping[str, FieldFolderTypeDef]],  # (5)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (6)
-    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (7)
-    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (8)
-    ColumnLevelPermissionRules: NotRequired[Sequence[ColumnLevelPermissionRuleTypeDef]],  # (9)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (10)
-    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (11)
-```
-
-1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
-2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
-3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
-4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
-5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
-6. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-7. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
-8. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
-9. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
-10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-11. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
-## CreateDataSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDataSetResponseTypeDef
-
-def get_value() -> CreateDataSetResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSetId": ...,
-        "IngestionArn": ...,
-        "IngestionId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDataSetResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSetId: str,
-    IngestionArn: str,
-    IngestionId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDataSourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDataSourceRequestRequestTypeDef
-
-def get_value() -> CreateDataSourceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSourceId": ...,
-        "Name": ...,
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDataSourceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSourceId: str,
-    Name: str,
-    Type: DataSourceTypeType,  # (1)
-    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (2)
-    Credentials: NotRequired[DataSourceCredentialsTypeDef],  # (3)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (4)
-    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (5)
-    SslProperties: NotRequired[SslPropertiesTypeDef],  # (6)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
-```
-
-1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-2. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
-3. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
-4. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-5. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
-6. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
-7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDataSourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDataSourceResponseTypeDef
-
-def get_value() -> CreateDataSourceResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSourceId": ...,
-        "CreationStatus": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDataSourceResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSourceId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFolderMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -910,81 +630,24 @@ class CreateFolderMembershipRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-## CreateFolderMembershipResponseTypeDef
+## FolderMemberTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateFolderMembershipResponseTypeDef
+from mypy_boto3_quicksight.type_defs import FolderMemberTypeDef
 
-def get_value() -> CreateFolderMembershipResponseTypeDef:
+def get_value() -> FolderMemberTypeDef:
     return {
-        "Status": ...,
-        "FolderMember": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
+        "MemberId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateFolderMembershipResponseTypeDef(TypedDict):
-    Status: int,
-    FolderMember: FolderMemberTypeDef,  # (1)
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class FolderMemberTypeDef(TypedDict):
+    MemberId: NotRequired[str],
+    MemberType: NotRequired[MemberTypeType],  # (1)
 ```
 
-1. See [:material-code-braces: FolderMemberTypeDef](./type_defs.md#foldermembertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFolderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateFolderRequestRequestTypeDef
-
-def get_value() -> CreateFolderRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFolderRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-    Name: NotRequired[str],
-    FolderType: NotRequired[FolderTypeType],  # (1)
-    ParentFolderArn: NotRequired[str],
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
-2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateFolderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateFolderResponseTypeDef
-
-def get_value() -> CreateFolderResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "FolderId": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFolderResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    FolderId: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
 ## CreateGroupMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1007,30 +670,23 @@ class CreateGroupMembershipRequestRequestTypeDef(TypedDict):
     Namespace: str,
 ```
 
-## CreateGroupMembershipResponseTypeDef
+## GroupMemberTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateGroupMembershipResponseTypeDef
+from mypy_boto3_quicksight.type_defs import GroupMemberTypeDef
 
-def get_value() -> CreateGroupMembershipResponseTypeDef:
+def get_value() -> GroupMemberTypeDef:
     return {
-        "GroupMember": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGroupMembershipResponseTypeDef(TypedDict):
-    GroupMember: GroupMemberTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GroupMemberTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    MemberName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1052,30 +708,25 @@ class CreateGroupRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## CreateGroupResponseTypeDef
+## GroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateGroupResponseTypeDef
+from mypy_boto3_quicksight.type_defs import GroupTypeDef
 
-def get_value() -> CreateGroupResponseTypeDef:
+def get_value() -> GroupTypeDef:
     return {
-        "Group": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGroupResponseTypeDef(TypedDict):
-    Group: GroupTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GroupTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    GroupName: NotRequired[str],
+    Description: NotRequired[str],
+    PrincipalId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIAMPolicyAssignmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1101,38 +752,6 @@ class CreateIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-## CreateIAMPolicyAssignmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentResponseTypeDef
-
-def get_value() -> CreateIAMPolicyAssignmentResponseTypeDef:
-    return {
-        "AssignmentName": ...,
-        "AssignmentId": ...,
-        "AssignmentStatus": ...,
-        "PolicyArn": ...,
-        "Identities": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateIAMPolicyAssignmentResponseTypeDef(TypedDict):
-    AssignmentName: str,
-    AssignmentId: str,
-    AssignmentStatus: AssignmentStatusType,  # (1)
-    PolicyArn: str,
-    Identities: Dict[str, List[str]],
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIngestionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1155,90 +774,6 @@ class CreateIngestionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IngestionTypeType](./literals.md#ingestiontypetype) 
-## CreateIngestionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateIngestionResponseTypeDef
-
-def get_value() -> CreateIngestionResponseTypeDef:
-    return {
-        "Arn": ...,
-        "IngestionId": ...,
-        "IngestionStatus": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateIngestionResponseTypeDef(TypedDict):
-    Arn: str,
-    IngestionId: str,
-    IngestionStatus: IngestionStatusType,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: IngestionStatusType](./literals.md#ingestionstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateNamespaceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateNamespaceRequestRequestTypeDef
-
-def get_value() -> CreateNamespaceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "IdentityStore": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNamespaceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    IdentityStore: IdentityStoreType,  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateNamespaceResponseTypeDef
-
-def get_value() -> CreateNamespaceResponseTypeDef:
-    return {
-        "Arn": ...,
-        "Name": ...,
-        "CapacityRegion": ...,
-        "CreationStatus": ...,
-        "IdentityStore": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNamespaceResponseTypeDef(TypedDict):
-    Arn: str,
-    Name: str,
-    CapacityRegion: str,
-    CreationStatus: NamespaceStatusType,  # (1)
-    IdentityStore: IdentityStoreType,  # (2)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
-2. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTemplateAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1261,87 +796,24 @@ class CreateTemplateAliasRequestRequestTypeDef(TypedDict):
     TemplateVersionNumber: int,
 ```
 
-## CreateTemplateAliasResponseTypeDef
+## TemplateAliasTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateTemplateAliasResponseTypeDef
+from mypy_boto3_quicksight.type_defs import TemplateAliasTypeDef
 
-def get_value() -> CreateTemplateAliasResponseTypeDef:
+def get_value() -> TemplateAliasTypeDef:
     return {
-        "TemplateAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
+        "AliasName": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateTemplateAliasResponseTypeDef(TypedDict):
-    TemplateAlias: TemplateAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TemplateAliasTypeDef(TypedDict):
+    AliasName: NotRequired[str],
+    Arn: NotRequired[str],
+    TemplateVersionNumber: NotRequired[int],
 ```
 
-1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateTemplateRequestRequestTypeDef
-
-def get_value() -> CreateTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
-    Name: NotRequired[str],
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    VersionDescription: NotRequired[str],
-```
-
-1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
-2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateTemplateResponseTypeDef
-
-def get_value() -> CreateTemplateResponseTypeDef:
-    return {
-        "Arn": ...,
-        "VersionArn": ...,
-        "TemplateId": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTemplateResponseTypeDef(TypedDict):
-    Arn: str,
-    VersionArn: str,
-    TemplateId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateThemeAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1364,132 +836,43 @@ class CreateThemeAliasRequestRequestTypeDef(TypedDict):
     ThemeVersionNumber: int,
 ```
 
-## CreateThemeAliasResponseTypeDef
+## ThemeAliasTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateThemeAliasResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ThemeAliasTypeDef
 
-def get_value() -> CreateThemeAliasResponseTypeDef:
-    return {
-        "ThemeAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThemeAliasResponseTypeDef(TypedDict):
-    ThemeAlias: ThemeAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateThemeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateThemeRequestRequestTypeDef
-
-def get_value() -> CreateThemeRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-        "Name": ...,
-        "BaseThemeId": ...,
-        "Configuration": ...,
-    }
-```
-
-```python title="Definition"
-class CreateThemeRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    Name: str,
-    BaseThemeId: str,
-    Configuration: ThemeConfigurationTypeDef,  # (1)
-    VersionDescription: NotRequired[str],
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
-2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateThemeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateThemeResponseTypeDef
-
-def get_value() -> CreateThemeResponseTypeDef:
+def get_value() -> ThemeAliasTypeDef:
     return {
         "Arn": ...,
-        "VersionArn": ...,
-        "ThemeId": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateThemeResponseTypeDef(TypedDict):
-    Arn: str,
-    VersionArn: str,
-    ThemeId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ThemeAliasTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    AliasName: NotRequired[str],
+    ThemeVersionNumber: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CredentialPairTypeDef
+## InputColumnTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CredentialPairTypeDef
+from mypy_boto3_quicksight.type_defs import InputColumnTypeDef
 
-def get_value() -> CredentialPairTypeDef:
+def get_value() -> InputColumnTypeDef:
     return {
-        "Username": ...,
-        "Password": ...,
-    }
-```
-
-```python title="Definition"
-class CredentialPairTypeDef(TypedDict):
-    Username: str,
-    Password: str,
-    AlternateDataSourceParameters: NotRequired[Sequence[DataSourceParametersTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
-## CustomSqlTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CustomSqlTypeDef
-
-def get_value() -> CustomSqlTypeDef:
-    return {
-        "DataSourceArn": ...,
         "Name": ...,
-        "SqlQuery": ...,
+        "Type": ...,
     }
 ```
 
 ```python title="Definition"
-class CustomSqlTypeDef(TypedDict):
-    DataSourceArn: str,
+class InputColumnTypeDef(TypedDict):
     Name: str,
-    SqlQuery: str,
-    Columns: NotRequired[Sequence[InputColumnTypeDef]],  # (1)
+    Type: InputColumnDataTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
+1. See [:material-code-brackets: InputColumnDataTypeType](./literals.md#inputcolumndatatypetype) 
 ## DashboardErrorTypeDef
 
 ```python title="Usage Example"
@@ -1508,27 +891,40 @@ class DashboardErrorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DashboardErrorTypeType](./literals.md#dashboarderrortypetype) 
-## DashboardPublishOptionsTypeDef
+## ExportToCSVOptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardPublishOptionsTypeDef
+from mypy_boto3_quicksight.type_defs import ExportToCSVOptionTypeDef
 
-def get_value() -> DashboardPublishOptionsTypeDef:
+def get_value() -> ExportToCSVOptionTypeDef:
     return {
-        "AdHocFilteringOption": ...,
+        "AvailabilityStatus": ...,
     }
 ```
 
 ```python title="Definition"
-class DashboardPublishOptionsTypeDef(TypedDict):
-    AdHocFilteringOption: NotRequired[AdHocFilteringOptionTypeDef],  # (1)
-    ExportToCSVOption: NotRequired[ExportToCSVOptionTypeDef],  # (2)
-    SheetControlsOption: NotRequired[SheetControlsOptionTypeDef],  # (3)
+class ExportToCSVOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
 ```
 
-1. See [:material-code-braces: AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef) 
-2. See [:material-code-braces: ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef) 
-3. See [:material-code-braces: SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef) 
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## SheetControlsOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetControlsOptionTypeDef
+
+def get_value() -> SheetControlsOptionTypeDef:
+    return {
+        "VisibilityState": ...,
+    }
+```
+
+```python title="Definition"
+class SheetControlsOptionTypeDef(TypedDict):
+    VisibilityState: NotRequired[DashboardUIStateType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardUIStateType](./literals.md#dashboarduistatetype) 
 ## DashboardSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -1549,42 +945,6 @@ class DashboardSearchFilterTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
 2. See [:material-code-brackets: DashboardFilterAttributeType](./literals.md#dashboardfilterattributetype) 
-## DashboardSourceEntityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardSourceEntityTypeDef
-
-def get_value() -> DashboardSourceEntityTypeDef:
-    return {
-        "SourceTemplate": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardSourceEntityTypeDef(TypedDict):
-    SourceTemplate: NotRequired[DashboardSourceTemplateTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DashboardSourceTemplateTypeDef](./type_defs.md#dashboardsourcetemplatetypedef) 
-## DashboardSourceTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardSourceTemplateTypeDef
-
-def get_value() -> DashboardSourceTemplateTypeDef:
-    return {
-        "DataSetReferences": ...,
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardSourceTemplateTypeDef(TypedDict):
-    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
-    Arn: str,
-```
-
-1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
 ## DashboardSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1607,29 +967,6 @@ class DashboardSummaryTypeDef(TypedDict):
     LastPublishedTime: NotRequired[datetime],
 ```
 
-## DashboardTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardTypeDef
-
-def get_value() -> DashboardTypeDef:
-    return {
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardTypeDef(TypedDict):
-    DashboardId: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    Version: NotRequired[DashboardVersionTypeDef],  # (1)
-    CreatedTime: NotRequired[datetime],
-    LastPublishedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: DashboardVersionTypeDef](./type_defs.md#dashboardversiontypedef) 
 ## DashboardVersionSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1652,34 +989,6 @@ class DashboardVersionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-## DashboardVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardVersionTypeDef
-
-def get_value() -> DashboardVersionTypeDef:
-    return {
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardVersionTypeDef(TypedDict):
-    CreatedTime: NotRequired[datetime],
-    Errors: NotRequired[List[DashboardErrorTypeDef]],  # (1)
-    VersionNumber: NotRequired[int],
-    Status: NotRequired[ResourceStatusType],  # (2)
-    Arn: NotRequired[str],
-    SourceEntityArn: NotRequired[str],
-    DataSetArns: NotRequired[List[str]],
-    Description: NotRequired[str],
-    ThemeArn: NotRequired[str],
-    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
-2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
 ## DataColorPaletteTypeDef
 
 ```python title="Usage Example"
@@ -1698,163 +1007,25 @@ class DataColorPaletteTypeDef(TypedDict):
     EmptyFillColor: NotRequired[str],
 ```
 
-## DataSetConfigurationTypeDef
+## OutputColumnTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetConfigurationTypeDef
+from mypy_boto3_quicksight.type_defs import OutputColumnTypeDef
 
-def get_value() -> DataSetConfigurationTypeDef:
+def get_value() -> OutputColumnTypeDef:
     return {
-        "Placeholder": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DataSetConfigurationTypeDef(TypedDict):
-    Placeholder: NotRequired[str],
-    DataSetSchema: NotRequired[DataSetSchemaTypeDef],  # (1)
-    ColumnGroupSchemaList: NotRequired[List[ColumnGroupSchemaTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: DataSetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
-2. See [:material-code-braces: ColumnGroupSchemaTypeDef](./type_defs.md#columngroupschematypedef) 
-## DataSetReferenceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetReferenceTypeDef
-
-def get_value() -> DataSetReferenceTypeDef:
-    return {
-        "DataSetPlaceholder": ...,
-        "DataSetArn": ...,
-    }
-```
-
-```python title="Definition"
-class DataSetReferenceTypeDef(TypedDict):
-    DataSetPlaceholder: str,
-    DataSetArn: str,
-```
-
-## DataSetSchemaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetSchemaTypeDef
-
-def get_value() -> DataSetSchemaTypeDef:
-    return {
-        "ColumnSchemaList": ...,
-    }
-```
-
-```python title="Definition"
-class DataSetSchemaTypeDef(TypedDict):
-    ColumnSchemaList: NotRequired[List[ColumnSchemaTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ColumnSchemaTypeDef](./type_defs.md#columnschematypedef) 
-## DataSetSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetSummaryTypeDef
-
-def get_value() -> DataSetSummaryTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DataSetSummaryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    DataSetId: NotRequired[str],
+class OutputColumnTypeDef(TypedDict):
     Name: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    ImportMode: NotRequired[DataSetImportModeType],  # (1)
-    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (2)
-    RowLevelPermissionTagConfigurationApplied: NotRequired[bool],
-    ColumnLevelPermissionRulesApplied: NotRequired[bool],
+    Description: NotRequired[str],
+    Type: NotRequired[ColumnDataTypeType],  # (1)
 ```
 
-1. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
-2. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
-## DataSetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetTypeDef
-
-def get_value() -> DataSetTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DataSetTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    DataSetId: NotRequired[str],
-    Name: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    PhysicalTableMap: NotRequired[Dict[str, PhysicalTableTypeDef]],  # (1)
-    LogicalTableMap: NotRequired[Dict[str, LogicalTableTypeDef]],  # (2)
-    OutputColumns: NotRequired[List[OutputColumnTypeDef]],  # (3)
-    ImportMode: NotRequired[DataSetImportModeType],  # (4)
-    ConsumedSpiceCapacityInBytes: NotRequired[int],
-    ColumnGroups: NotRequired[List[ColumnGroupTypeDef]],  # (5)
-    FieldFolders: NotRequired[Dict[str, FieldFolderTypeDef]],  # (6)
-    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (7)
-    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (8)
-    ColumnLevelPermissionRules: NotRequired[List[ColumnLevelPermissionRuleTypeDef]],  # (9)
-    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (10)
-```
-
-1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
-2. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
-3. See [:material-code-braces: OutputColumnTypeDef](./type_defs.md#outputcolumntypedef) 
-4. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
-5. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
-6. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
-7. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
-8. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
-9. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
-10. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
-## DataSetUsageConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSetUsageConfigurationTypeDef
-
-def get_value() -> DataSetUsageConfigurationTypeDef:
-    return {
-        "DisableUseAsDirectQuerySource": ...,
-    }
-```
-
-```python title="Definition"
-class DataSetUsageConfigurationTypeDef(TypedDict):
-    DisableUseAsDirectQuerySource: NotRequired[bool],
-    DisableUseAsImportedSource: NotRequired[bool],
-```
-
-## DataSourceCredentialsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSourceCredentialsTypeDef
-
-def get_value() -> DataSourceCredentialsTypeDef:
-    return {
-        "CredentialPair": ...,
-    }
-```
-
-```python title="Definition"
-class DataSourceCredentialsTypeDef(TypedDict):
-    CredentialPair: NotRequired[CredentialPairTypeDef],  # (1)
-    CopySourceArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: CredentialPairTypeDef](./type_defs.md#credentialpairtypedef) 
+1. See [:material-code-brackets: ColumnDataTypeType](./literals.md#columndatatypetype) 
 ## DataSourceErrorInfoTypeDef
 
 ```python title="Usage Example"
@@ -1873,2039 +1044,6 @@ class DataSourceErrorInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataSourceErrorInfoTypeType](./literals.md#datasourceerrorinfotypetype) 
-## DataSourceParametersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSourceParametersTypeDef
-
-def get_value() -> DataSourceParametersTypeDef:
-    return {
-        "AmazonElasticsearchParameters": ...,
-    }
-```
-
-```python title="Definition"
-class DataSourceParametersTypeDef(TypedDict):
-    AmazonElasticsearchParameters: NotRequired[AmazonElasticsearchParametersTypeDef],  # (1)
-    AthenaParameters: NotRequired[AthenaParametersTypeDef],  # (2)
-    AuroraParameters: NotRequired[AuroraParametersTypeDef],  # (3)
-    AuroraPostgreSqlParameters: NotRequired[AuroraPostgreSqlParametersTypeDef],  # (4)
-    AwsIotAnalyticsParameters: NotRequired[AwsIotAnalyticsParametersTypeDef],  # (5)
-    JiraParameters: NotRequired[JiraParametersTypeDef],  # (6)
-    MariaDbParameters: NotRequired[MariaDbParametersTypeDef],  # (7)
-    MySqlParameters: NotRequired[MySqlParametersTypeDef],  # (8)
-    OracleParameters: NotRequired[OracleParametersTypeDef],  # (9)
-    PostgreSqlParameters: NotRequired[PostgreSqlParametersTypeDef],  # (10)
-    PrestoParameters: NotRequired[PrestoParametersTypeDef],  # (11)
-    RdsParameters: NotRequired[RdsParametersTypeDef],  # (12)
-    RedshiftParameters: NotRequired[RedshiftParametersTypeDef],  # (13)
-    S3Parameters: NotRequired[S3ParametersTypeDef],  # (14)
-    ServiceNowParameters: NotRequired[ServiceNowParametersTypeDef],  # (15)
-    SnowflakeParameters: NotRequired[SnowflakeParametersTypeDef],  # (16)
-    SparkParameters: NotRequired[SparkParametersTypeDef],  # (17)
-    SqlServerParameters: NotRequired[SqlServerParametersTypeDef],  # (18)
-    TeradataParameters: NotRequired[TeradataParametersTypeDef],  # (19)
-    TwitterParameters: NotRequired[TwitterParametersTypeDef],  # (20)
-    AmazonOpenSearchParameters: NotRequired[AmazonOpenSearchParametersTypeDef],  # (21)
-    ExasolParameters: NotRequired[ExasolParametersTypeDef],  # (22)
-```
-
-1. See [:material-code-braces: AmazonElasticsearchParametersTypeDef](./type_defs.md#amazonelasticsearchparameterstypedef) 
-2. See [:material-code-braces: AthenaParametersTypeDef](./type_defs.md#athenaparameterstypedef) 
-3. See [:material-code-braces: AuroraParametersTypeDef](./type_defs.md#auroraparameterstypedef) 
-4. See [:material-code-braces: AuroraPostgreSqlParametersTypeDef](./type_defs.md#aurorapostgresqlparameterstypedef) 
-5. See [:material-code-braces: AwsIotAnalyticsParametersTypeDef](./type_defs.md#awsiotanalyticsparameterstypedef) 
-6. See [:material-code-braces: JiraParametersTypeDef](./type_defs.md#jiraparameterstypedef) 
-7. See [:material-code-braces: MariaDbParametersTypeDef](./type_defs.md#mariadbparameterstypedef) 
-8. See [:material-code-braces: MySqlParametersTypeDef](./type_defs.md#mysqlparameterstypedef) 
-9. See [:material-code-braces: OracleParametersTypeDef](./type_defs.md#oracleparameterstypedef) 
-10. See [:material-code-braces: PostgreSqlParametersTypeDef](./type_defs.md#postgresqlparameterstypedef) 
-11. See [:material-code-braces: PrestoParametersTypeDef](./type_defs.md#prestoparameterstypedef) 
-12. See [:material-code-braces: RdsParametersTypeDef](./type_defs.md#rdsparameterstypedef) 
-13. See [:material-code-braces: RedshiftParametersTypeDef](./type_defs.md#redshiftparameterstypedef) 
-14. See [:material-code-braces: S3ParametersTypeDef](./type_defs.md#s3parameterstypedef) 
-15. See [:material-code-braces: ServiceNowParametersTypeDef](./type_defs.md#servicenowparameterstypedef) 
-16. See [:material-code-braces: SnowflakeParametersTypeDef](./type_defs.md#snowflakeparameterstypedef) 
-17. See [:material-code-braces: SparkParametersTypeDef](./type_defs.md#sparkparameterstypedef) 
-18. See [:material-code-braces: SqlServerParametersTypeDef](./type_defs.md#sqlserverparameterstypedef) 
-19. See [:material-code-braces: TeradataParametersTypeDef](./type_defs.md#teradataparameterstypedef) 
-20. See [:material-code-braces: TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef) 
-21. See [:material-code-braces: AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef) 
-22. See [:material-code-braces: ExasolParametersTypeDef](./type_defs.md#exasolparameterstypedef) 
-## DataSourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DataSourceTypeDef
-
-def get_value() -> DataSourceTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DataSourceTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    DataSourceId: NotRequired[str],
-    Name: NotRequired[str],
-    Type: NotRequired[DataSourceTypeType],  # (1)
-    Status: NotRequired[ResourceStatusType],  # (2)
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (3)
-    AlternateDataSourceParameters: NotRequired[List[DataSourceParametersTypeDef]],  # (4)
-    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (5)
-    SslProperties: NotRequired[SslPropertiesTypeDef],  # (6)
-    ErrorInfo: NotRequired[DataSourceErrorInfoTypeDef],  # (7)
-```
-
-1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-3. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
-4. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
-5. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
-6. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
-7. See [:material-code-braces: DataSourceErrorInfoTypeDef](./type_defs.md#datasourceerrorinfotypedef) 
-## DateTimeParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DateTimeParameterTypeDef
-
-def get_value() -> DateTimeParameterTypeDef:
-    return {
-        "Name": ...,
-        "Values": ...,
-    }
-```
-
-```python title="Definition"
-class DateTimeParameterTypeDef(TypedDict):
-    Name: str,
-    Values: Sequence[Union[datetime, str]],
-```
-
-## DecimalParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DecimalParameterTypeDef
-
-def get_value() -> DecimalParameterTypeDef:
-    return {
-        "Name": ...,
-        "Values": ...,
-    }
-```
-
-```python title="Definition"
-class DecimalParameterTypeDef(TypedDict):
-    Name: str,
-    Values: Sequence[float],
-```
-
-## DeleteAccountCustomizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationRequestRequestTypeDef
-
-def get_value() -> DeleteAccountCustomizationRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAccountCustomizationRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: NotRequired[str],
-```
-
-## DeleteAccountCustomizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationResponseTypeDef
-
-def get_value() -> DeleteAccountCustomizationResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAccountCustomizationResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteAnalysisRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteAnalysisRequestRequestTypeDef
-
-def get_value() -> DeleteAnalysisRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-    RecoveryWindowInDays: NotRequired[int],
-    ForceDeleteWithoutRecovery: NotRequired[bool],
-```
-
-## DeleteAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteAnalysisResponseTypeDef
-
-def get_value() -> DeleteAnalysisResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "AnalysisId": ...,
-        "DeletionTime": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAnalysisResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    AnalysisId: str,
-    DeletionTime: datetime,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteDashboardRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDashboardRequestRequestTypeDef
-
-def get_value() -> DeleteDashboardRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    VersionNumber: NotRequired[int],
-```
-
-## DeleteDashboardResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDashboardResponseTypeDef
-
-def get_value() -> DeleteDashboardResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "DashboardId": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDashboardResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    DashboardId: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteDataSetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDataSetRequestRequestTypeDef
-
-def get_value() -> DeleteDataSetRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDataSetRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-```
-
-## DeleteDataSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDataSetResponseTypeDef
-
-def get_value() -> DeleteDataSetResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSetId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDataSetResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSetId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteDataSourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDataSourceRequestRequestTypeDef
-
-def get_value() -> DeleteDataSourceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSourceId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDataSourceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSourceId: str,
-```
-
-## DeleteDataSourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteDataSourceResponseTypeDef
-
-def get_value() -> DeleteDataSourceResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSourceId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDataSourceResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSourceId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteFolderMembershipRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipRequestRequestTypeDef
-
-def get_value() -> DeleteFolderMembershipRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-        "MemberId": ...,
-        "MemberType": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFolderMembershipRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-    MemberId: str,
-    MemberType: MemberTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-## DeleteFolderMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipResponseTypeDef
-
-def get_value() -> DeleteFolderMembershipResponseTypeDef:
-    return {
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFolderMembershipResponseTypeDef(TypedDict):
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteFolderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteFolderRequestRequestTypeDef
-
-def get_value() -> DeleteFolderRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFolderRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-```
-
-## DeleteFolderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteFolderResponseTypeDef
-
-def get_value() -> DeleteFolderResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "FolderId": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFolderResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    FolderId: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteGroupMembershipRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipRequestRequestTypeDef
-
-def get_value() -> DeleteGroupMembershipRequestRequestTypeDef:
-    return {
-        "MemberName": ...,
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGroupMembershipRequestRequestTypeDef(TypedDict):
-    MemberName: str,
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DeleteGroupMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipResponseTypeDef
-
-def get_value() -> DeleteGroupMembershipResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGroupMembershipResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteGroupRequestRequestTypeDef
-
-def get_value() -> DeleteGroupRequestRequestTypeDef:
-    return {
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGroupRequestRequestTypeDef(TypedDict):
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DeleteGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteGroupResponseTypeDef
-
-def get_value() -> DeleteGroupResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGroupResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteIAMPolicyAssignmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentRequestRequestTypeDef
-
-def get_value() -> DeleteIAMPolicyAssignmentRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AssignmentName": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AssignmentName: str,
-    Namespace: str,
-```
-
-## DeleteIAMPolicyAssignmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentResponseTypeDef
-
-def get_value() -> DeleteIAMPolicyAssignmentResponseTypeDef:
-    return {
-        "AssignmentName": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteIAMPolicyAssignmentResponseTypeDef(TypedDict):
-    AssignmentName: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteNamespaceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteNamespaceRequestRequestTypeDef
-
-def get_value() -> DeleteNamespaceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteNamespaceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DeleteNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteNamespaceResponseTypeDef
-
-def get_value() -> DeleteNamespaceResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteNamespaceResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteTemplateAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasRequestRequestTypeDef
-
-def get_value() -> DeleteTemplateAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "AliasName": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTemplateAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    AliasName: str,
-```
-
-## DeleteTemplateAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasResponseTypeDef
-
-def get_value() -> DeleteTemplateAliasResponseTypeDef:
-    return {
-        "Status": ...,
-        "TemplateId": ...,
-        "AliasName": ...,
-        "Arn": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTemplateAliasResponseTypeDef(TypedDict):
-    Status: int,
-    TemplateId: str,
-    AliasName: str,
-    Arn: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteTemplateRequestRequestTypeDef
-
-def get_value() -> DeleteTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    VersionNumber: NotRequired[int],
-```
-
-## DeleteTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteTemplateResponseTypeDef
-
-def get_value() -> DeleteTemplateResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Arn": ...,
-        "TemplateId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTemplateResponseTypeDef(TypedDict):
-    RequestId: str,
-    Arn: str,
-    TemplateId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteThemeAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteThemeAliasRequestRequestTypeDef
-
-def get_value() -> DeleteThemeAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-        "AliasName": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteThemeAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    AliasName: str,
-```
-
-## DeleteThemeAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteThemeAliasResponseTypeDef
-
-def get_value() -> DeleteThemeAliasResponseTypeDef:
-    return {
-        "AliasName": ...,
-        "Arn": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ThemeId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteThemeAliasResponseTypeDef(TypedDict):
-    AliasName: str,
-    Arn: str,
-    RequestId: str,
-    Status: int,
-    ThemeId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteThemeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteThemeRequestRequestTypeDef
-
-def get_value() -> DeleteThemeRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteThemeRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    VersionNumber: NotRequired[int],
-```
-
-## DeleteThemeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteThemeResponseTypeDef
-
-def get_value() -> DeleteThemeResponseTypeDef:
-    return {
-        "Arn": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ThemeId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteThemeResponseTypeDef(TypedDict):
-    Arn: str,
-    RequestId: str,
-    Status: int,
-    ThemeId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteUserByPrincipalIdRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdRequestRequestTypeDef
-
-def get_value() -> DeleteUserByPrincipalIdRequestRequestTypeDef:
-    return {
-        "PrincipalId": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteUserByPrincipalIdRequestRequestTypeDef(TypedDict):
-    PrincipalId: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DeleteUserByPrincipalIdResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdResponseTypeDef
-
-def get_value() -> DeleteUserByPrincipalIdResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteUserByPrincipalIdResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteUserRequestRequestTypeDef
-
-def get_value() -> DeleteUserRequestRequestTypeDef:
-    return {
-        "UserName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteUserRequestRequestTypeDef(TypedDict):
-    UserName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DeleteUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DeleteUserResponseTypeDef
-
-def get_value() -> DeleteUserResponseTypeDef:
-    return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteUserResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAccountCustomizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationRequestRequestTypeDef
-
-def get_value() -> DescribeAccountCustomizationRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountCustomizationRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: NotRequired[str],
-    Resolved: NotRequired[bool],
-```
-
-## DescribeAccountCustomizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationResponseTypeDef
-
-def get_value() -> DescribeAccountCustomizationResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "AccountCustomization": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountCustomizationResponseTypeDef(TypedDict):
-    Arn: str,
-    AwsAccountId: str,
-    Namespace: str,
-    AccountCustomization: AccountCustomizationTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAccountSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsRequestRequestTypeDef
-
-def get_value() -> DescribeAccountSettingsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountSettingsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-```
-
-## DescribeAccountSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsResponseTypeDef
-
-def get_value() -> DescribeAccountSettingsResponseTypeDef:
-    return {
-        "AccountSettings": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountSettingsResponseTypeDef(TypedDict):
-    AccountSettings: AccountSettingsTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAnalysisPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeAnalysisPermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnalysisPermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-```
-
-## DescribeAnalysisPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsResponseTypeDef
-
-def get_value() -> DescribeAnalysisPermissionsResponseTypeDef:
-    return {
-        "AnalysisId": ...,
-        "AnalysisArn": ...,
-        "Permissions": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnalysisPermissionsResponseTypeDef(TypedDict):
-    AnalysisId: str,
-    AnalysisArn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAnalysisRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisRequestRequestTypeDef
-
-def get_value() -> DescribeAnalysisRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-```
-
-## DescribeAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
-
-def get_value() -> DescribeAnalysisResponseTypeDef:
-    return {
-        "Analysis": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnalysisResponseTypeDef(TypedDict):
-    Analysis: AnalysisTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AnalysisTypeDef](./type_defs.md#analysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDashboardPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeDashboardPermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDashboardPermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-```
-
-## DescribeDashboardPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsResponseTypeDef
-
-def get_value() -> DescribeDashboardPermissionsResponseTypeDef:
-    return {
-        "DashboardId": ...,
-        "DashboardArn": ...,
-        "Permissions": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "LinkSharingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDashboardPermissionsResponseTypeDef(TypedDict):
-    DashboardId: str,
-    DashboardArn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    Status: int,
-    RequestId: str,
-    LinkSharingConfiguration: LinkSharingConfigurationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDashboardRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDashboardRequestRequestTypeDef
-
-def get_value() -> DescribeDashboardRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    VersionNumber: NotRequired[int],
-    AliasName: NotRequired[str],
-```
-
-## DescribeDashboardResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
-
-def get_value() -> DescribeDashboardResponseTypeDef:
-    return {
-        "Dashboard": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDashboardResponseTypeDef(TypedDict):
-    Dashboard: DashboardTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DashboardTypeDef](./type_defs.md#dashboardtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDataSetPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeDataSetPermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSetPermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-```
-
-## DescribeDataSetPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsResponseTypeDef
-
-def get_value() -> DescribeDataSetPermissionsResponseTypeDef:
-    return {
-        "DataSetArn": ...,
-        "DataSetId": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSetPermissionsResponseTypeDef(TypedDict):
-    DataSetArn: str,
-    DataSetId: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDataSetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSetRequestRequestTypeDef
-
-def get_value() -> DescribeDataSetRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSetRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-```
-
-## DescribeDataSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSetResponseTypeDef
-
-def get_value() -> DescribeDataSetResponseTypeDef:
-    return {
-        "DataSet": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSetResponseTypeDef(TypedDict):
-    DataSet: DataSetTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DataSetTypeDef](./type_defs.md#datasettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDataSourcePermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeDataSourcePermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSourceId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSourcePermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSourceId: str,
-```
-
-## DescribeDataSourcePermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsResponseTypeDef
-
-def get_value() -> DescribeDataSourcePermissionsResponseTypeDef:
-    return {
-        "DataSourceArn": ...,
-        "DataSourceId": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSourcePermissionsResponseTypeDef(TypedDict):
-    DataSourceArn: str,
-    DataSourceId: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDataSourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSourceRequestRequestTypeDef
-
-def get_value() -> DescribeDataSourceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSourceId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSourceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSourceId: str,
-```
-
-## DescribeDataSourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDataSourceResponseTypeDef
-
-def get_value() -> DescribeDataSourceResponseTypeDef:
-    return {
-        "DataSource": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDataSourceResponseTypeDef(TypedDict):
-    DataSource: DataSourceTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeFolderPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeFolderPermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderPermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-```
-
-## DescribeFolderPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsResponseTypeDef
-
-def get_value() -> DescribeFolderPermissionsResponseTypeDef:
-    return {
-        "Status": ...,
-        "FolderId": ...,
-        "Arn": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderPermissionsResponseTypeDef(TypedDict):
-    Status: int,
-    FolderId: str,
-    Arn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeFolderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderRequestRequestTypeDef
-
-def get_value() -> DescribeFolderRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-```
-
-## DescribeFolderResolvedPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeFolderResolvedPermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderResolvedPermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-```
-
-## DescribeFolderResolvedPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsResponseTypeDef
-
-def get_value() -> DescribeFolderResolvedPermissionsResponseTypeDef:
-    return {
-        "Status": ...,
-        "FolderId": ...,
-        "Arn": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderResolvedPermissionsResponseTypeDef(TypedDict):
-    Status: int,
-    FolderId: str,
-    Arn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeFolderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeFolderResponseTypeDef
-
-def get_value() -> DescribeFolderResponseTypeDef:
-    return {
-        "Status": ...,
-        "Folder": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFolderResponseTypeDef(TypedDict):
-    Status: int,
-    Folder: FolderTypeDef,  # (1)
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FolderTypeDef](./type_defs.md#foldertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeGroupMembershipRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipRequestRequestTypeDef
-
-def get_value() -> DescribeGroupMembershipRequestRequestTypeDef:
-    return {
-        "MemberName": ...,
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGroupMembershipRequestRequestTypeDef(TypedDict):
-    MemberName: str,
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DescribeGroupMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipResponseTypeDef
-
-def get_value() -> DescribeGroupMembershipResponseTypeDef:
-    return {
-        "GroupMember": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGroupMembershipResponseTypeDef(TypedDict):
-    GroupMember: GroupMemberTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeGroupRequestRequestTypeDef
-
-def get_value() -> DescribeGroupRequestRequestTypeDef:
-    return {
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGroupRequestRequestTypeDef(TypedDict):
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DescribeGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeGroupResponseTypeDef
-
-def get_value() -> DescribeGroupResponseTypeDef:
-    return {
-        "Group": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGroupResponseTypeDef(TypedDict):
-    Group: GroupTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeIAMPolicyAssignmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentRequestRequestTypeDef
-
-def get_value() -> DescribeIAMPolicyAssignmentRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AssignmentName": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AssignmentName: str,
-    Namespace: str,
-```
-
-## DescribeIAMPolicyAssignmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentResponseTypeDef
-
-def get_value() -> DescribeIAMPolicyAssignmentResponseTypeDef:
-    return {
-        "IAMPolicyAssignment": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIAMPolicyAssignmentResponseTypeDef(TypedDict):
-    IAMPolicyAssignment: IAMPolicyAssignmentTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IAMPolicyAssignmentTypeDef](./type_defs.md#iampolicyassignmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeIngestionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIngestionRequestRequestTypeDef
-
-def get_value() -> DescribeIngestionRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-        "IngestionId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIngestionRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-    IngestionId: str,
-```
-
-## DescribeIngestionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseTypeDef
-
-def get_value() -> DescribeIngestionResponseTypeDef:
-    return {
-        "Ingestion": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIngestionResponseTypeDef(TypedDict):
-    Ingestion: IngestionTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IngestionTypeDef](./type_defs.md#ingestiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeIpRestrictionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionRequestRequestTypeDef
-
-def get_value() -> DescribeIpRestrictionRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIpRestrictionRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-```
-
-## DescribeIpRestrictionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionResponseTypeDef
-
-def get_value() -> DescribeIpRestrictionResponseTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "IpRestrictionRuleMap": ...,
-        "Enabled": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIpRestrictionResponseTypeDef(TypedDict):
-    AwsAccountId: str,
-    IpRestrictionRuleMap: Dict[str, str],
-    Enabled: bool,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNamespaceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeNamespaceRequestRequestTypeDef
-
-def get_value() -> DescribeNamespaceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNamespaceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DescribeNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeNamespaceResponseTypeDef
-
-def get_value() -> DescribeNamespaceResponseTypeDef:
-    return {
-        "Namespace": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNamespaceResponseTypeDef(TypedDict):
-    Namespace: NamespaceInfoV2TypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTemplateAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasRequestRequestTypeDef
-
-def get_value() -> DescribeTemplateAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "AliasName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplateAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    AliasName: str,
-```
-
-## DescribeTemplateAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasResponseTypeDef
-
-def get_value() -> DescribeTemplateAliasResponseTypeDef:
-    return {
-        "TemplateAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplateAliasResponseTypeDef(TypedDict):
-    TemplateAlias: TemplateAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTemplatePermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeTemplatePermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplatePermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-```
-
-## DescribeTemplatePermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsResponseTypeDef
-
-def get_value() -> DescribeTemplatePermissionsResponseTypeDef:
-    return {
-        "TemplateId": ...,
-        "TemplateArn": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplatePermissionsResponseTypeDef(TypedDict):
-    TemplateId: str,
-    TemplateArn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplateRequestRequestTypeDef
-
-def get_value() -> DescribeTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    VersionNumber: NotRequired[int],
-    AliasName: NotRequired[str],
-```
-
-## DescribeTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeTemplateResponseTypeDef
-
-def get_value() -> DescribeTemplateResponseTypeDef:
-    return {
-        "Template": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTemplateResponseTypeDef(TypedDict):
-    Template: TemplateTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeThemeAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemeAliasRequestRequestTypeDef
-
-def get_value() -> DescribeThemeAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-        "AliasName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemeAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    AliasName: str,
-```
-
-## DescribeThemeAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemeAliasResponseTypeDef
-
-def get_value() -> DescribeThemeAliasResponseTypeDef:
-    return {
-        "ThemeAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemeAliasResponseTypeDef(TypedDict):
-    ThemeAlias: ThemeAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeThemePermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsRequestRequestTypeDef
-
-def get_value() -> DescribeThemePermissionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemePermissionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-```
-
-## DescribeThemePermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsResponseTypeDef
-
-def get_value() -> DescribeThemePermissionsResponseTypeDef:
-    return {
-        "ThemeId": ...,
-        "ThemeArn": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemePermissionsResponseTypeDef(TypedDict):
-    ThemeId: str,
-    ThemeArn: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeThemeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemeRequestRequestTypeDef
-
-def get_value() -> DescribeThemeRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemeRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    VersionNumber: NotRequired[int],
-    AliasName: NotRequired[str],
-```
-
-## DescribeThemeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeThemeResponseTypeDef
-
-def get_value() -> DescribeThemeResponseTypeDef:
-    return {
-        "Theme": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeThemeResponseTypeDef(TypedDict):
-    Theme: ThemeTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeUserRequestRequestTypeDef
-
-def get_value() -> DescribeUserRequestRequestTypeDef:
-    return {
-        "UserName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserRequestRequestTypeDef(TypedDict):
-    UserName: str,
-    AwsAccountId: str,
-    Namespace: str,
-```
-
-## DescribeUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeUserResponseTypeDef
-
-def get_value() -> DescribeUserResponseTypeDef:
-    return {
-        "User": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ErrorInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ErrorInfoTypeDef
-
-def get_value() -> ErrorInfoTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class ErrorInfoTypeDef(TypedDict):
-    Type: NotRequired[IngestionErrorTypeType],  # (1)
-    Message: NotRequired[str],
-```
-
-1. See [:material-code-brackets: IngestionErrorTypeType](./literals.md#ingestionerrortypetype) 
 ## ExasolParametersTypeDef
 
 ```python title="Usage Example"
@@ -3924,532 +1062,6 @@ class ExasolParametersTypeDef(TypedDict):
     Port: int,
 ```
 
-## ExportToCSVOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ExportToCSVOptionTypeDef
-
-def get_value() -> ExportToCSVOptionTypeDef:
-    return {
-        "AvailabilityStatus": ...,
-    }
-```
-
-```python title="Definition"
-class ExportToCSVOptionTypeDef(TypedDict):
-    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
-```
-
-1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
-## FieldFolderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FieldFolderTypeDef
-
-def get_value() -> FieldFolderTypeDef:
-    return {
-        "description": ...,
-    }
-```
-
-```python title="Definition"
-class FieldFolderTypeDef(TypedDict):
-    description: NotRequired[str],
-    columns: NotRequired[Sequence[str]],
-```
-
-## FilterOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FilterOperationTypeDef
-
-def get_value() -> FilterOperationTypeDef:
-    return {
-        "ConditionExpression": ...,
-    }
-```
-
-```python title="Definition"
-class FilterOperationTypeDef(TypedDict):
-    ConditionExpression: str,
-```
-
-## FolderMemberTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FolderMemberTypeDef
-
-def get_value() -> FolderMemberTypeDef:
-    return {
-        "MemberId": ...,
-    }
-```
-
-```python title="Definition"
-class FolderMemberTypeDef(TypedDict):
-    MemberId: NotRequired[str],
-    MemberType: NotRequired[MemberTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-## FolderSearchFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FolderSearchFilterTypeDef
-
-def get_value() -> FolderSearchFilterTypeDef:
-    return {
-        "Operator": ...,
-    }
-```
-
-```python title="Definition"
-class FolderSearchFilterTypeDef(TypedDict):
-    Operator: NotRequired[FilterOperatorType],  # (1)
-    Name: NotRequired[FolderFilterAttributeType],  # (2)
-    Value: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
-2. See [:material-code-brackets: FolderFilterAttributeType](./literals.md#folderfilterattributetype) 
-## FolderSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FolderSummaryTypeDef
-
-def get_value() -> FolderSummaryTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class FolderSummaryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    FolderId: NotRequired[str],
-    Name: NotRequired[str],
-    FolderType: NotRequired[FolderTypeType],  # (1)
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
-## FolderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import FolderTypeDef
-
-def get_value() -> FolderTypeDef:
-    return {
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class FolderTypeDef(TypedDict):
-    FolderId: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    FolderType: NotRequired[FolderTypeType],  # (1)
-    FolderPath: NotRequired[List[str]],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
-## GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
-
-def get_value() -> GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "AuthorizedResourceArns": ...,
-        "ExperienceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    AuthorizedResourceArns: Sequence[str],
-    ExperienceConfiguration: AnonymousUserEmbeddingExperienceConfigurationTypeDef,  # (1)
-    SessionLifetimeInMinutes: NotRequired[int],
-    SessionTags: NotRequired[Sequence[SessionTagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef) 
-2. See [:material-code-braces: SessionTagTypeDef](./type_defs.md#sessiontagtypedef) 
-## GenerateEmbedUrlForAnonymousUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserResponseTypeDef
-
-def get_value() -> GenerateEmbedUrlForAnonymousUserResponseTypeDef:
-    return {
-        "EmbedUrl": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateEmbedUrlForAnonymousUserResponseTypeDef(TypedDict):
-    EmbedUrl: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
-
-def get_value() -> GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "UserArn": ...,
-        "ExperienceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    UserArn: str,
-    ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
-    SessionLifetimeInMinutes: NotRequired[int],
-```
-
-1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
-## GenerateEmbedUrlForRegisteredUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserResponseTypeDef
-
-def get_value() -> GenerateEmbedUrlForRegisteredUserResponseTypeDef:
-    return {
-        "EmbedUrl": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateEmbedUrlForRegisteredUserResponseTypeDef(TypedDict):
-    EmbedUrl: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GeoSpatialColumnGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GeoSpatialColumnGroupTypeDef
-
-def get_value() -> GeoSpatialColumnGroupTypeDef:
-    return {
-        "Name": ...,
-        "CountryCode": ...,
-        "Columns": ...,
-    }
-```
-
-```python title="Definition"
-class GeoSpatialColumnGroupTypeDef(TypedDict):
-    Name: str,
-    CountryCode: GeoSpatialCountryCodeType,  # (1)
-    Columns: Sequence[str],
-```
-
-1. See [:material-code-brackets: GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype) 
-## GetDashboardEmbedUrlRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlRequestRequestTypeDef
-
-def get_value() -> GetDashboardEmbedUrlRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-        "IdentityType": ...,
-    }
-```
-
-```python title="Definition"
-class GetDashboardEmbedUrlRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    IdentityType: EmbeddingIdentityTypeType,  # (1)
-    SessionLifetimeInMinutes: NotRequired[int],
-    UndoRedoDisabled: NotRequired[bool],
-    ResetDisabled: NotRequired[bool],
-    StatePersistenceEnabled: NotRequired[bool],
-    UserArn: NotRequired[str],
-    Namespace: NotRequired[str],
-    AdditionalDashboardIds: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: EmbeddingIdentityTypeType](./literals.md#embeddingidentitytypetype) 
-## GetDashboardEmbedUrlResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlResponseTypeDef
-
-def get_value() -> GetDashboardEmbedUrlResponseTypeDef:
-    return {
-        "EmbedUrl": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDashboardEmbedUrlResponseTypeDef(TypedDict):
-    EmbedUrl: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSessionEmbedUrlRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlRequestRequestTypeDef
-
-def get_value() -> GetSessionEmbedUrlRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class GetSessionEmbedUrlRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    EntryPoint: NotRequired[str],
-    SessionLifetimeInMinutes: NotRequired[int],
-    UserArn: NotRequired[str],
-```
-
-## GetSessionEmbedUrlResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlResponseTypeDef
-
-def get_value() -> GetSessionEmbedUrlResponseTypeDef:
-    return {
-        "EmbedUrl": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSessionEmbedUrlResponseTypeDef(TypedDict):
-    EmbedUrl: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GroupMemberTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GroupMemberTypeDef
-
-def get_value() -> GroupMemberTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class GroupMemberTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    MemberName: NotRequired[str],
-```
-
-## GroupSearchFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GroupSearchFilterTypeDef
-
-def get_value() -> GroupSearchFilterTypeDef:
-    return {
-        "Operator": ...,
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class GroupSearchFilterTypeDef(TypedDict):
-    Operator: GroupFilterOperatorType,  # (1)
-    Name: GroupFilterAttributeType,  # (2)
-    Value: str,
-```
-
-1. See [:material-code-brackets: GroupFilterOperatorType](./literals.md#groupfilteroperatortype) 
-2. See [:material-code-brackets: GroupFilterAttributeType](./literals.md#groupfilterattributetype) 
-## GroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GroupTypeDef
-
-def get_value() -> GroupTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class GroupTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    GroupName: NotRequired[str],
-    Description: NotRequired[str],
-    PrincipalId: NotRequired[str],
-```
-
-## GutterStyleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import GutterStyleTypeDef
-
-def get_value() -> GutterStyleTypeDef:
-    return {
-        "Show": ...,
-    }
-```
-
-```python title="Definition"
-class GutterStyleTypeDef(TypedDict):
-    Show: NotRequired[bool],
-```
-
-## IAMPolicyAssignmentSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentSummaryTypeDef
-
-def get_value() -> IAMPolicyAssignmentSummaryTypeDef:
-    return {
-        "AssignmentName": ...,
-    }
-```
-
-```python title="Definition"
-class IAMPolicyAssignmentSummaryTypeDef(TypedDict):
-    AssignmentName: NotRequired[str],
-    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-## IAMPolicyAssignmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentTypeDef
-
-def get_value() -> IAMPolicyAssignmentTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class IAMPolicyAssignmentTypeDef(TypedDict):
-    AwsAccountId: NotRequired[str],
-    AssignmentId: NotRequired[str],
-    AssignmentName: NotRequired[str],
-    PolicyArn: NotRequired[str],
-    Identities: NotRequired[Dict[str, List[str]]],
-    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-## IngestionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import IngestionTypeDef
-
-def get_value() -> IngestionTypeDef:
-    return {
-        "Arn": ...,
-        "IngestionStatus": ...,
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class IngestionTypeDef(TypedDict):
-    Arn: str,
-    IngestionStatus: IngestionStatusType,  # (1)
-    CreatedTime: datetime,
-    IngestionId: NotRequired[str],
-    ErrorInfo: NotRequired[ErrorInfoTypeDef],  # (2)
-    RowInfo: NotRequired[RowInfoTypeDef],  # (3)
-    QueueInfo: NotRequired[QueueInfoTypeDef],  # (4)
-    IngestionTimeInSeconds: NotRequired[int],
-    IngestionSizeInBytes: NotRequired[int],
-    RequestSource: NotRequired[IngestionRequestSourceType],  # (5)
-    RequestType: NotRequired[IngestionRequestTypeType],  # (6)
-```
-
-1. See [:material-code-brackets: IngestionStatusType](./literals.md#ingestionstatustype) 
-2. See [:material-code-braces: ErrorInfoTypeDef](./type_defs.md#errorinfotypedef) 
-3. See [:material-code-braces: RowInfoTypeDef](./type_defs.md#rowinfotypedef) 
-4. See [:material-code-braces: QueueInfoTypeDef](./type_defs.md#queueinfotypedef) 
-5. See [:material-code-brackets: IngestionRequestSourceType](./literals.md#ingestionrequestsourcetype) 
-6. See [:material-code-brackets: IngestionRequestTypeType](./literals.md#ingestionrequesttypetype) 
-## InputColumnTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import InputColumnTypeDef
-
-def get_value() -> InputColumnTypeDef:
-    return {
-        "Name": ...,
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class InputColumnTypeDef(TypedDict):
-    Name: str,
-    Type: InputColumnDataTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: InputColumnDataTypeType](./literals.md#inputcolumndatatypetype) 
-## IntegerParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import IntegerParameterTypeDef
-
-def get_value() -> IntegerParameterTypeDef:
-    return {
-        "Name": ...,
-        "Values": ...,
-    }
-```
-
-```python title="Definition"
-class IntegerParameterTypeDef(TypedDict):
-    Name: str,
-    Values: Sequence[int],
-```
-
 ## JiraParametersTypeDef
 
 ```python title="Usage Example"
@@ -4464,1368 +1076,6 @@ def get_value() -> JiraParametersTypeDef:
 ```python title="Definition"
 class JiraParametersTypeDef(TypedDict):
     SiteBaseUrl: str,
-```
-
-## JoinInstructionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import JoinInstructionTypeDef
-
-def get_value() -> JoinInstructionTypeDef:
-    return {
-        "LeftOperand": ...,
-        "RightOperand": ...,
-        "Type": ...,
-        "OnClause": ...,
-    }
-```
-
-```python title="Definition"
-class JoinInstructionTypeDef(TypedDict):
-    LeftOperand: str,
-    RightOperand: str,
-    Type: JoinTypeType,  # (3)
-    OnClause: str,
-    LeftJoinKeyProperties: NotRequired[JoinKeyPropertiesTypeDef],  # (1)
-    RightJoinKeyProperties: NotRequired[JoinKeyPropertiesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
-2. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
-3. See [:material-code-brackets: JoinTypeType](./literals.md#jointypetype) 
-## JoinKeyPropertiesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import JoinKeyPropertiesTypeDef
-
-def get_value() -> JoinKeyPropertiesTypeDef:
-    return {
-        "UniqueKey": ...,
-    }
-```
-
-```python title="Definition"
-class JoinKeyPropertiesTypeDef(TypedDict):
-    UniqueKey: NotRequired[bool],
-```
-
-## LinkSharingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import LinkSharingConfigurationTypeDef
-
-def get_value() -> LinkSharingConfigurationTypeDef:
-    return {
-        "Permissions": ...,
-    }
-```
-
-```python title="Definition"
-class LinkSharingConfigurationTypeDef(TypedDict):
-    Permissions: NotRequired[List[ResourcePermissionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-## ListAnalysesRequestListAnalysesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListAnalysesRequestListAnalysesPaginateTypeDef
-
-def get_value() -> ListAnalysesRequestListAnalysesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAnalysesRequestListAnalysesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAnalysesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListAnalysesRequestRequestTypeDef
-
-def get_value() -> ListAnalysesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAnalysesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListAnalysesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListAnalysesResponseTypeDef
-
-def get_value() -> ListAnalysesResponseTypeDef:
-    return {
-        "AnalysisSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAnalysesResponseTypeDef(TypedDict):
-    AnalysisSummaryList: List[AnalysisSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef
-
-def get_value() -> ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDashboardVersionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestRequestTypeDef
-
-def get_value() -> ListDashboardVersionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardVersionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListDashboardVersionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardVersionsResponseTypeDef
-
-def get_value() -> ListDashboardVersionsResponseTypeDef:
-    return {
-        "DashboardVersionSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardVersionsResponseTypeDef(TypedDict):
-    DashboardVersionSummaryList: List[DashboardVersionSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DashboardVersionSummaryTypeDef](./type_defs.md#dashboardversionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDashboardsRequestListDashboardsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardsRequestListDashboardsPaginateTypeDef
-
-def get_value() -> ListDashboardsRequestListDashboardsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardsRequestListDashboardsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDashboardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardsRequestRequestTypeDef
-
-def get_value() -> ListDashboardsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListDashboardsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDashboardsResponseTypeDef
-
-def get_value() -> ListDashboardsResponseTypeDef:
-    return {
-        "DashboardSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardsResponseTypeDef(TypedDict):
-    DashboardSummaryList: List[DashboardSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDataSetsRequestListDataSetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSetsRequestListDataSetsPaginateTypeDef
-
-def get_value() -> ListDataSetsRequestListDataSetsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSetsRequestListDataSetsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDataSetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSetsRequestRequestTypeDef
-
-def get_value() -> ListDataSetsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSetsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListDataSetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSetsResponseTypeDef
-
-def get_value() -> ListDataSetsResponseTypeDef:
-    return {
-        "DataSetSummaries": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSetsResponseTypeDef(TypedDict):
-    DataSetSummaries: List[DataSetSummaryTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDataSourcesRequestListDataSourcesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestListDataSourcesPaginateTypeDef
-
-def get_value() -> ListDataSourcesRequestListDataSourcesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSourcesRequestListDataSourcesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDataSourcesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestRequestTypeDef
-
-def get_value() -> ListDataSourcesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSourcesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListDataSourcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseTypeDef
-
-def get_value() -> ListDataSourcesResponseTypeDef:
-    return {
-        "DataSources": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDataSourcesResponseTypeDef(TypedDict):
-    DataSources: List[DataSourceTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFolderMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListFolderMembersRequestRequestTypeDef
-
-def get_value() -> ListFolderMembersRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFolderMembersRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListFolderMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListFolderMembersResponseTypeDef
-
-def get_value() -> ListFolderMembersResponseTypeDef:
-    return {
-        "Status": ...,
-        "FolderMemberList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFolderMembersResponseTypeDef(TypedDict):
-    Status: int,
-    FolderMemberList: List[MemberIdArnPairTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MemberIdArnPairTypeDef](./type_defs.md#memberidarnpairtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFoldersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListFoldersRequestRequestTypeDef
-
-def get_value() -> ListFoldersRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFoldersRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListFoldersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListFoldersResponseTypeDef
-
-def get_value() -> ListFoldersResponseTypeDef:
-    return {
-        "Status": ...,
-        "FolderSummaryList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFoldersResponseTypeDef(TypedDict):
-    Status: int,
-    FolderSummaryList: List[FolderSummaryTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGroupMembershipsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListGroupMembershipsRequestRequestTypeDef
-
-def get_value() -> ListGroupMembershipsRequestRequestTypeDef:
-    return {
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupMembershipsRequestRequestTypeDef(TypedDict):
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListGroupMembershipsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListGroupMembershipsResponseTypeDef
-
-def get_value() -> ListGroupMembershipsResponseTypeDef:
-    return {
-        "GroupMemberList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupMembershipsResponseTypeDef(TypedDict):
-    GroupMemberList: List[GroupMemberTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListGroupsRequestRequestTypeDef
-
-def get_value() -> ListGroupsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListGroupsResponseTypeDef
-
-def get_value() -> ListGroupsResponseTypeDef:
-    return {
-        "GroupList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupsResponseTypeDef(TypedDict):
-    GroupList: List[GroupTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
-
-def get_value() -> ListIAMPolicyAssignmentsForUserRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "UserName": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListIAMPolicyAssignmentsForUserRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    UserName: str,
-    Namespace: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListIAMPolicyAssignmentsForUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserResponseTypeDef
-
-def get_value() -> ListIAMPolicyAssignmentsForUserResponseTypeDef:
-    return {
-        "ActiveAssignments": ...,
-        "RequestId": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIAMPolicyAssignmentsForUserResponseTypeDef(TypedDict):
-    ActiveAssignments: List[ActiveIAMPolicyAssignmentTypeDef],  # (1)
-    RequestId: str,
-    NextToken: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActiveIAMPolicyAssignmentTypeDef](./type_defs.md#activeiampolicyassignmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIAMPolicyAssignmentsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsRequestRequestTypeDef
-
-def get_value() -> ListIAMPolicyAssignmentsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListIAMPolicyAssignmentsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-## ListIAMPolicyAssignmentsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsResponseTypeDef
-
-def get_value() -> ListIAMPolicyAssignmentsResponseTypeDef:
-    return {
-        "IAMPolicyAssignments": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIAMPolicyAssignmentsResponseTypeDef(TypedDict):
-    IAMPolicyAssignments: List[IAMPolicyAssignmentSummaryTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IAMPolicyAssignmentSummaryTypeDef](./type_defs.md#iampolicyassignmentsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIngestionsRequestListIngestionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIngestionsRequestListIngestionsPaginateTypeDef
-
-def get_value() -> ListIngestionsRequestListIngestionsPaginateTypeDef:
-    return {
-        "DataSetId": ...,
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListIngestionsRequestListIngestionsPaginateTypeDef(TypedDict):
-    DataSetId: str,
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListIngestionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIngestionsRequestRequestTypeDef
-
-def get_value() -> ListIngestionsRequestRequestTypeDef:
-    return {
-        "DataSetId": ...,
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListIngestionsRequestRequestTypeDef(TypedDict):
-    DataSetId: str,
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListIngestionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListIngestionsResponseTypeDef
-
-def get_value() -> ListIngestionsResponseTypeDef:
-    return {
-        "Ingestions": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIngestionsResponseTypeDef(TypedDict):
-    Ingestions: List[IngestionTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IngestionTypeDef](./type_defs.md#ingestiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListNamespacesRequestListNamespacesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListNamespacesRequestListNamespacesPaginateTypeDef
-
-def get_value() -> ListNamespacesRequestListNamespacesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListNamespacesRequestListNamespacesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListNamespacesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListNamespacesRequestRequestTypeDef
-
-def get_value() -> ListNamespacesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListNamespacesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListNamespacesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListNamespacesResponseTypeDef
-
-def get_value() -> ListNamespacesResponseTypeDef:
-    return {
-        "Namespaces": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListNamespacesResponseTypeDef(TypedDict):
-    Namespaces: List[NamespaceInfoV2TypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef
-
-def get_value() -> ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTemplateAliasesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestRequestTypeDef
-
-def get_value() -> ListTemplateAliasesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateAliasesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListTemplateAliasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateAliasesResponseTypeDef
-
-def get_value() -> ListTemplateAliasesResponseTypeDef:
-    return {
-        "TemplateAliasList": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateAliasesResponseTypeDef(TypedDict):
-    TemplateAliasList: List[TemplateAliasTypeDef],  # (1)
-    Status: int,
-    RequestId: str,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef
-
-def get_value() -> ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTemplateVersionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestRequestTypeDef
-
-def get_value() -> ListTemplateVersionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateVersionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListTemplateVersionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplateVersionsResponseTypeDef
-
-def get_value() -> ListTemplateVersionsResponseTypeDef:
-    return {
-        "TemplateVersionSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplateVersionsResponseTypeDef(TypedDict):
-    TemplateVersionSummaryList: List[TemplateVersionSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateVersionSummaryTypeDef](./type_defs.md#templateversionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTemplatesRequestListTemplatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplatesRequestListTemplatesPaginateTypeDef
-
-def get_value() -> ListTemplatesRequestListTemplatesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplatesRequestListTemplatesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTemplatesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplatesRequestRequestTypeDef
-
-def get_value() -> ListTemplatesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplatesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListTemplatesResponseTypeDef
-
-def get_value() -> ListTemplatesResponseTypeDef:
-    return {
-        "TemplateSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTemplatesResponseTypeDef(TypedDict):
-    TemplateSummaryList: List[TemplateSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateSummaryTypeDef](./type_defs.md#templatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThemeAliasesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemeAliasesRequestRequestTypeDef
-
-def get_value() -> ListThemeAliasesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemeAliasesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListThemeAliasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemeAliasesResponseTypeDef
-
-def get_value() -> ListThemeAliasesResponseTypeDef:
-    return {
-        "ThemeAliasList": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemeAliasesResponseTypeDef(TypedDict):
-    ThemeAliasList: List[ThemeAliasTypeDef],  # (1)
-    Status: int,
-    RequestId: str,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThemeVersionsRequestListThemeVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestListThemeVersionsPaginateTypeDef
-
-def get_value() -> ListThemeVersionsRequestListThemeVersionsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemeVersionsRequestListThemeVersionsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListThemeVersionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestRequestTypeDef
-
-def get_value() -> ListThemeVersionsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemeVersionsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListThemeVersionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemeVersionsResponseTypeDef
-
-def get_value() -> ListThemeVersionsResponseTypeDef:
-    return {
-        "ThemeVersionSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemeVersionsResponseTypeDef(TypedDict):
-    ThemeVersionSummaryList: List[ThemeVersionSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeVersionSummaryTypeDef](./type_defs.md#themeversionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListThemesRequestListThemesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemesRequestListThemesPaginateTypeDef
-
-def get_value() -> ListThemesRequestListThemesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemesRequestListThemesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    Type: NotRequired[ThemeTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListThemesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemesRequestRequestTypeDef
-
-def get_value() -> ListThemesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-    Type: NotRequired[ThemeTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
-## ListThemesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListThemesResponseTypeDef
-
-def get_value() -> ListThemesResponseTypeDef:
-    return {
-        "ThemeSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListThemesResponseTypeDef(TypedDict):
-    ThemeSummaryList: List[ThemeSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUserGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListUserGroupsRequestRequestTypeDef
-
-def get_value() -> ListUserGroupsRequestRequestTypeDef:
-    return {
-        "UserName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListUserGroupsRequestRequestTypeDef(TypedDict):
-    UserName: str,
-    AwsAccountId: str,
-    Namespace: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListUserGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListUserGroupsResponseTypeDef
-
-def get_value() -> ListUserGroupsResponseTypeDef:
-    return {
-        "GroupList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUserGroupsResponseTypeDef(TypedDict):
-    GroupList: List[GroupTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUsersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListUsersRequestRequestTypeDef
-
-def get_value() -> ListUsersRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ListUsersResponseTypeDef
-
-def get_value() -> ListUsersResponseTypeDef:
-    return {
-        "UserList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersResponseTypeDef(TypedDict):
-    UserList: List[UserTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogicalTableSourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import LogicalTableSourceTypeDef
-
-def get_value() -> LogicalTableSourceTypeDef:
-    return {
-        "JoinInstruction": ...,
-    }
-```
-
-```python title="Definition"
-class LogicalTableSourceTypeDef(TypedDict):
-    JoinInstruction: NotRequired[JoinInstructionTypeDef],  # (1)
-    PhysicalTableId: NotRequired[str],
-    DataSetArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef) 
-## LogicalTableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import LogicalTableTypeDef
-
-def get_value() -> LogicalTableTypeDef:
-    return {
-        "Alias": ...,
-        "Source": ...,
-    }
-```
-
-```python title="Definition"
-class LogicalTableTypeDef(TypedDict):
-    Alias: str,
-    Source: LogicalTableSourceTypeDef,  # (2)
-    DataTransforms: NotRequired[Sequence[TransformOperationTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TransformOperationTypeDef](./type_defs.md#transformoperationtypedef) 
-2. See [:material-code-braces: LogicalTableSourceTypeDef](./type_defs.md#logicaltablesourcetypedef) 
-## ManifestFileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ManifestFileLocationTypeDef
-
-def get_value() -> ManifestFileLocationTypeDef:
-    return {
-        "Bucket": ...,
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class ManifestFileLocationTypeDef(TypedDict):
-    Bucket: str,
-    Key: str,
-```
-
-## MarginStyleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import MarginStyleTypeDef
-
-def get_value() -> MarginStyleTypeDef:
-    return {
-        "Show": ...,
-    }
-```
-
-```python title="Definition"
-class MarginStyleTypeDef(TypedDict):
-    Show: NotRequired[bool],
 ```
 
 ## MariaDbParametersTypeDef
@@ -5848,23 +1098,6 @@ class MariaDbParametersTypeDef(TypedDict):
     Database: str,
 ```
 
-## MemberIdArnPairTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import MemberIdArnPairTypeDef
-
-def get_value() -> MemberIdArnPairTypeDef:
-    return {
-        "MemberId": ...,
-    }
-```
-
-```python title="Definition"
-class MemberIdArnPairTypeDef(TypedDict):
-    MemberId: NotRequired[str],
-    MemberArn: NotRequired[str],
-```
-
 ## MySqlParametersTypeDef
 
 ```python title="Usage Example"
@@ -5885,48 +1118,6 @@ class MySqlParametersTypeDef(TypedDict):
     Database: str,
 ```
 
-## NamespaceErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import NamespaceErrorTypeDef
-
-def get_value() -> NamespaceErrorTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class NamespaceErrorTypeDef(TypedDict):
-    Type: NotRequired[NamespaceErrorTypeType],  # (1)
-    Message: NotRequired[str],
-```
-
-1. See [:material-code-brackets: NamespaceErrorTypeType](./literals.md#namespaceerrortypetype) 
-## NamespaceInfoV2TypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import NamespaceInfoV2TypeDef
-
-def get_value() -> NamespaceInfoV2TypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class NamespaceInfoV2TypeDef(TypedDict):
-    Name: NotRequired[str],
-    Arn: NotRequired[str],
-    CapacityRegion: NotRequired[str],
-    CreationStatus: NotRequired[NamespaceStatusType],  # (1)
-    IdentityStore: NotRequired[IdentityStoreType],  # (2)
-    NamespaceError: NotRequired[NamespaceErrorTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
-2. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
-3. See [:material-code-braces: NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef) 
 ## OracleParametersTypeDef
 
 ```python title="Usage Example"
@@ -5947,87 +1138,6 @@ class OracleParametersTypeDef(TypedDict):
     Database: str,
 ```
 
-## OutputColumnTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import OutputColumnTypeDef
-
-def get_value() -> OutputColumnTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class OutputColumnTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Type: NotRequired[ColumnDataTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: ColumnDataTypeType](./literals.md#columndatatypetype) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ParametersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ParametersTypeDef
-
-def get_value() -> ParametersTypeDef:
-    return {
-        "StringParameters": ...,
-    }
-```
-
-```python title="Definition"
-class ParametersTypeDef(TypedDict):
-    StringParameters: NotRequired[Sequence[StringParameterTypeDef]],  # (1)
-    IntegerParameters: NotRequired[Sequence[IntegerParameterTypeDef]],  # (2)
-    DecimalParameters: NotRequired[Sequence[DecimalParameterTypeDef]],  # (3)
-    DateTimeParameters: NotRequired[Sequence[DateTimeParameterTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: StringParameterTypeDef](./type_defs.md#stringparametertypedef) 
-2. See [:material-code-braces: IntegerParameterTypeDef](./type_defs.md#integerparametertypedef) 
-3. See [:material-code-braces: DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef) 
-4. See [:material-code-braces: DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef) 
-## PhysicalTableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import PhysicalTableTypeDef
-
-def get_value() -> PhysicalTableTypeDef:
-    return {
-        "RelationalTable": ...,
-    }
-```
-
-```python title="Definition"
-class PhysicalTableTypeDef(TypedDict):
-    RelationalTable: NotRequired[RelationalTableTypeDef],  # (1)
-    CustomSql: NotRequired[CustomSqlTypeDef],  # (2)
-    S3Source: NotRequired[S3SourceTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: RelationalTableTypeDef](./type_defs.md#relationaltabletypedef) 
-2. See [:material-code-braces: CustomSqlTypeDef](./type_defs.md#customsqltypedef) 
-3. See [:material-code-braces: S3SourceTypeDef](./type_defs.md#s3sourcetypedef) 
 ## PostgreSqlParametersTypeDef
 
 ```python title="Usage Example"
@@ -6068,40 +1178,6 @@ class PrestoParametersTypeDef(TypedDict):
     Catalog: str,
 ```
 
-## ProjectOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ProjectOperationTypeDef
-
-def get_value() -> ProjectOperationTypeDef:
-    return {
-        "ProjectedColumns": ...,
-    }
-```
-
-```python title="Definition"
-class ProjectOperationTypeDef(TypedDict):
-    ProjectedColumns: Sequence[str],
-```
-
-## QueueInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import QueueInfoTypeDef
-
-def get_value() -> QueueInfoTypeDef:
-    return {
-        "WaitingOnIngestion": ...,
-        "QueuedIngestion": ...,
-    }
-```
-
-```python title="Definition"
-class QueueInfoTypeDef(TypedDict):
-    WaitingOnIngestion: str,
-    QueuedIngestion: str,
-```
-
 ## RdsParametersTypeDef
 
 ```python title="Usage Example"
@@ -6139,611 +1215,6 @@ class RedshiftParametersTypeDef(TypedDict):
     ClusterId: NotRequired[str],
 ```
 
-## RegisterUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisterUserRequestRequestTypeDef
-
-def get_value() -> RegisterUserRequestRequestTypeDef:
-    return {
-        "IdentityType": ...,
-        "Email": ...,
-        "UserRole": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterUserRequestRequestTypeDef(TypedDict):
-    IdentityType: IdentityTypeType,  # (1)
-    Email: str,
-    UserRole: UserRoleType,  # (2)
-    AwsAccountId: str,
-    Namespace: str,
-    IamArn: NotRequired[str],
-    SessionName: NotRequired[str],
-    UserName: NotRequired[str],
-    CustomPermissionsName: NotRequired[str],
-    ExternalLoginFederationProviderType: NotRequired[str],
-    CustomFederationProviderUrl: NotRequired[str],
-    ExternalLoginId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
-2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
-## RegisterUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisterUserResponseTypeDef
-
-def get_value() -> RegisterUserResponseTypeDef:
-    return {
-        "User": ...,
-        "UserInvitationUrl": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterUserResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    UserInvitationUrl: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RegisteredUserDashboardEmbeddingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardEmbeddingConfigurationTypeDef
-
-def get_value() -> RegisteredUserDashboardEmbeddingConfigurationTypeDef:
-    return {
-        "InitialDashboardId": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserDashboardEmbeddingConfigurationTypeDef(TypedDict):
-    InitialDashboardId: str,
-```
-
-## RegisteredUserEmbeddingExperienceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserEmbeddingExperienceConfigurationTypeDef
-
-def get_value() -> RegisteredUserEmbeddingExperienceConfigurationTypeDef:
-    return {
-        "Dashboard": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
-    Dashboard: NotRequired[RegisteredUserDashboardEmbeddingConfigurationTypeDef],  # (1)
-    QuickSightConsole: NotRequired[RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef],  # (2)
-    QSearchBar: NotRequired[RegisteredUserQSearchBarEmbeddingConfigurationTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef) 
-2. See [:material-code-braces: RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef) 
-3. See [:material-code-braces: RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef) 
-## RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
-
-def get_value() -> RegisteredUserQSearchBarEmbeddingConfigurationTypeDef:
-    return {
-        "InitialTopicId": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserQSearchBarEmbeddingConfigurationTypeDef(TypedDict):
-    InitialTopicId: NotRequired[str],
-```
-
-## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
-
-def get_value() -> RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef:
-    return {
-        "InitialPath": ...,
-    }
-```
-
-```python title="Definition"
-class RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef(TypedDict):
-    InitialPath: NotRequired[str],
-```
-
-## RelationalTableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RelationalTableTypeDef
-
-def get_value() -> RelationalTableTypeDef:
-    return {
-        "DataSourceArn": ...,
-        "Name": ...,
-        "InputColumns": ...,
-    }
-```
-
-```python title="Definition"
-class RelationalTableTypeDef(TypedDict):
-    DataSourceArn: str,
-    Name: str,
-    InputColumns: Sequence[InputColumnTypeDef],  # (1)
-    Catalog: NotRequired[str],
-    Schema: NotRequired[str],
-```
-
-1. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
-## RenameColumnOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RenameColumnOperationTypeDef
-
-def get_value() -> RenameColumnOperationTypeDef:
-    return {
-        "ColumnName": ...,
-        "NewColumnName": ...,
-    }
-```
-
-```python title="Definition"
-class RenameColumnOperationTypeDef(TypedDict):
-    ColumnName: str,
-    NewColumnName: str,
-```
-
-## ResourcePermissionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ResourcePermissionTypeDef
-
-def get_value() -> ResourcePermissionTypeDef:
-    return {
-        "Principal": ...,
-        "Actions": ...,
-    }
-```
-
-```python title="Definition"
-class ResourcePermissionTypeDef(TypedDict):
-    Principal: str,
-    Actions: Sequence[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RestoreAnalysisRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RestoreAnalysisRequestRequestTypeDef
-
-def get_value() -> RestoreAnalysisRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class RestoreAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-```
-
-## RestoreAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RestoreAnalysisResponseTypeDef
-
-def get_value() -> RestoreAnalysisResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "AnalysisId": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RestoreAnalysisResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    AnalysisId: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RowInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RowInfoTypeDef
-
-def get_value() -> RowInfoTypeDef:
-    return {
-        "RowsIngested": ...,
-    }
-```
-
-```python title="Definition"
-class RowInfoTypeDef(TypedDict):
-    RowsIngested: NotRequired[int],
-    RowsDropped: NotRequired[int],
-    TotalRowsInDataset: NotRequired[int],
-```
-
-## RowLevelPermissionDataSetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RowLevelPermissionDataSetTypeDef
-
-def get_value() -> RowLevelPermissionDataSetTypeDef:
-    return {
-        "Arn": ...,
-        "PermissionPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class RowLevelPermissionDataSetTypeDef(TypedDict):
-    Arn: str,
-    PermissionPolicy: RowLevelPermissionPolicyType,  # (1)
-    Namespace: NotRequired[str],
-    FormatVersion: NotRequired[RowLevelPermissionFormatVersionType],  # (2)
-    Status: NotRequired[StatusType],  # (3)
-```
-
-1. See [:material-code-brackets: RowLevelPermissionPolicyType](./literals.md#rowlevelpermissionpolicytype) 
-2. See [:material-code-brackets: RowLevelPermissionFormatVersionType](./literals.md#rowlevelpermissionformatversiontype) 
-3. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## RowLevelPermissionTagConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagConfigurationTypeDef
-
-def get_value() -> RowLevelPermissionTagConfigurationTypeDef:
-    return {
-        "TagRules": ...,
-    }
-```
-
-```python title="Definition"
-class RowLevelPermissionTagConfigurationTypeDef(TypedDict):
-    TagRules: Sequence[RowLevelPermissionTagRuleTypeDef],  # (2)
-    Status: NotRequired[StatusType],  # (1)
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-2. See [:material-code-braces: RowLevelPermissionTagRuleTypeDef](./type_defs.md#rowlevelpermissiontagruletypedef) 
-## RowLevelPermissionTagRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagRuleTypeDef
-
-def get_value() -> RowLevelPermissionTagRuleTypeDef:
-    return {
-        "TagKey": ...,
-        "ColumnName": ...,
-    }
-```
-
-```python title="Definition"
-class RowLevelPermissionTagRuleTypeDef(TypedDict):
-    TagKey: str,
-    ColumnName: str,
-    TagMultiValueDelimiter: NotRequired[str],
-    MatchAllValue: NotRequired[str],
-```
-
-## S3ParametersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import S3ParametersTypeDef
-
-def get_value() -> S3ParametersTypeDef:
-    return {
-        "ManifestFileLocation": ...,
-    }
-```
-
-```python title="Definition"
-class S3ParametersTypeDef(TypedDict):
-    ManifestFileLocation: ManifestFileLocationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ManifestFileLocationTypeDef](./type_defs.md#manifestfilelocationtypedef) 
-## S3SourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import S3SourceTypeDef
-
-def get_value() -> S3SourceTypeDef:
-    return {
-        "DataSourceArn": ...,
-        "InputColumns": ...,
-    }
-```
-
-```python title="Definition"
-class S3SourceTypeDef(TypedDict):
-    DataSourceArn: str,
-    InputColumns: Sequence[InputColumnTypeDef],  # (2)
-    UploadSettings: NotRequired[UploadSettingsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef) 
-2. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
-## SearchAnalysesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestRequestTypeDef
-
-def get_value() -> SearchAnalysesRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchAnalysesRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Filters: Sequence[AnalysisSearchFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef) 
-## SearchAnalysesRequestSearchAnalysesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestSearchAnalysesPaginateTypeDef
-
-def get_value() -> SearchAnalysesRequestSearchAnalysesPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchAnalysesRequestSearchAnalysesPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    Filters: Sequence[AnalysisSearchFilterTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchAnalysesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchAnalysesResponseTypeDef
-
-def get_value() -> SearchAnalysesResponseTypeDef:
-    return {
-        "AnalysisSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchAnalysesResponseTypeDef(TypedDict):
-    AnalysisSummaryList: List[AnalysisSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchDashboardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestRequestTypeDef
-
-def get_value() -> SearchDashboardsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchDashboardsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Filters: Sequence[DashboardSearchFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
-## SearchDashboardsRequestSearchDashboardsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestSearchDashboardsPaginateTypeDef
-
-def get_value() -> SearchDashboardsRequestSearchDashboardsPaginateTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchDashboardsRequestSearchDashboardsPaginateTypeDef(TypedDict):
-    AwsAccountId: str,
-    Filters: Sequence[DashboardSearchFilterTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchDashboardsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchDashboardsResponseTypeDef
-
-def get_value() -> SearchDashboardsResponseTypeDef:
-    return {
-        "DashboardSummaryList": ...,
-        "NextToken": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchDashboardsResponseTypeDef(TypedDict):
-    DashboardSummaryList: List[DashboardSummaryTypeDef],  # (1)
-    NextToken: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchFoldersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchFoldersRequestRequestTypeDef
-
-def get_value() -> SearchFoldersRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchFoldersRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Filters: Sequence[FolderSearchFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef) 
-## SearchFoldersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchFoldersResponseTypeDef
-
-def get_value() -> SearchFoldersResponseTypeDef:
-    return {
-        "Status": ...,
-        "FolderSummaryList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchFoldersResponseTypeDef(TypedDict):
-    Status: int,
-    FolderSummaryList: List[FolderSummaryTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchGroupsRequestRequestTypeDef
-
-def get_value() -> SearchGroupsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class SearchGroupsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    Namespace: str,
-    Filters: Sequence[GroupSearchFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef) 
-## SearchGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SearchGroupsResponseTypeDef
-
-def get_value() -> SearchGroupsResponseTypeDef:
-    return {
-        "GroupList": ...,
-        "NextToken": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchGroupsResponseTypeDef(TypedDict):
-    GroupList: List[GroupTypeDef],  # (1)
-    NextToken: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceNowParametersTypeDef
 
 ```python title="Usage Example"
@@ -6758,77 +1229,6 @@ def get_value() -> ServiceNowParametersTypeDef:
 ```python title="Definition"
 class ServiceNowParametersTypeDef(TypedDict):
     SiteBaseUrl: str,
-```
-
-## SessionTagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SessionTagTypeDef
-
-def get_value() -> SessionTagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class SessionTagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## SheetControlsOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SheetControlsOptionTypeDef
-
-def get_value() -> SheetControlsOptionTypeDef:
-    return {
-        "VisibilityState": ...,
-    }
-```
-
-```python title="Definition"
-class SheetControlsOptionTypeDef(TypedDict):
-    VisibilityState: NotRequired[DashboardUIStateType],  # (1)
-```
-
-1. See [:material-code-brackets: DashboardUIStateType](./literals.md#dashboarduistatetype) 
-## SheetStyleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SheetStyleTypeDef
-
-def get_value() -> SheetStyleTypeDef:
-    return {
-        "Tile": ...,
-    }
-```
-
-```python title="Definition"
-class SheetStyleTypeDef(TypedDict):
-    Tile: NotRequired[TileStyleTypeDef],  # (1)
-    TileLayout: NotRequired[TileLayoutStyleTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TileStyleTypeDef](./type_defs.md#tilestyletypedef) 
-2. See [:material-code-braces: TileLayoutStyleTypeDef](./type_defs.md#tilelayoutstyletypedef) 
-## SheetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SheetTypeDef
-
-def get_value() -> SheetTypeDef:
-    return {
-        "SheetId": ...,
-    }
-```
-
-```python title="Definition"
-class SheetTypeDef(TypedDict):
-    SheetId: NotRequired[str],
-    Name: NotRequired[str],
 ```
 
 ## SnowflakeParametersTypeDef
@@ -6889,28 +1289,50 @@ class SqlServerParametersTypeDef(TypedDict):
     Database: str,
 ```
 
-## SslPropertiesTypeDef
+## TeradataParametersTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import SslPropertiesTypeDef
+from mypy_boto3_quicksight.type_defs import TeradataParametersTypeDef
 
-def get_value() -> SslPropertiesTypeDef:
+def get_value() -> TeradataParametersTypeDef:
     return {
-        "DisableSsl": ...,
+        "Host": ...,
+        "Port": ...,
+        "Database": ...,
     }
 ```
 
 ```python title="Definition"
-class SslPropertiesTypeDef(TypedDict):
-    DisableSsl: NotRequired[bool],
+class TeradataParametersTypeDef(TypedDict):
+    Host: str,
+    Port: int,
+    Database: str,
 ```
 
-## StringParameterTypeDef
+## TwitterParametersTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import StringParameterTypeDef
+from mypy_boto3_quicksight.type_defs import TwitterParametersTypeDef
 
-def get_value() -> StringParameterTypeDef:
+def get_value() -> TwitterParametersTypeDef:
+    return {
+        "Query": ...,
+        "MaxRows": ...,
+    }
+```
+
+```python title="Definition"
+class TwitterParametersTypeDef(TypedDict):
+    Query: str,
+    MaxRows: int,
+```
+
+## DateTimeParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeParameterTypeDef
+
+def get_value() -> DateTimeParameterTypeDef:
     return {
         "Name": ...,
         "Values": ...,
@@ -6918,76 +1340,1001 @@ def get_value() -> StringParameterTypeDef:
 ```
 
 ```python title="Definition"
-class StringParameterTypeDef(TypedDict):
+class DateTimeParameterTypeDef(TypedDict):
     Name: str,
-    Values: Sequence[str],
+    Values: Sequence[Union[datetime, str]],
 ```
 
-## TagColumnOperationTypeDef
+## DecimalParameterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TagColumnOperationTypeDef
+from mypy_boto3_quicksight.type_defs import DecimalParameterTypeDef
 
-def get_value() -> TagColumnOperationTypeDef:
+def get_value() -> DecimalParameterTypeDef:
     return {
-        "ColumnName": ...,
-        "Tags": ...,
+        "Name": ...,
+        "Values": ...,
     }
 ```
 
 ```python title="Definition"
-class TagColumnOperationTypeDef(TypedDict):
-    ColumnName: str,
-    Tags: Sequence[ColumnTagTypeDef],  # (1)
+class DecimalParameterTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[float],
 ```
 
-1. See [:material-code-braces: ColumnTagTypeDef](./type_defs.md#columntagtypedef) 
-## TagResourceRequestRequestTypeDef
+## DeleteAccountCustomizationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationRequestRequestTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> DeleteAccountCustomizationRequestRequestTypeDef:
     return {
-        "ResourceArn": ...,
-        "Tags": ...,
+        "AwsAccountId": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Sequence[TagTypeDef],  # (1)
+class DeleteAccountCustomizationRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagResourceResponseTypeDef
+## DeleteAnalysisRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TagResourceResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAnalysisRequestRequestTypeDef
 
-def get_value() -> TagResourceResponseTypeDef:
+def get_value() -> DeleteAnalysisRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceResponseTypeDef(TypedDict):
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DeleteAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+    RecoveryWindowInDays: NotRequired[int],
+    ForceDeleteWithoutRecovery: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagTypeDef
+## DeleteDashboardRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TagTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDashboardRequestRequestTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> DeleteDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: NotRequired[int],
+```
+
+## DeleteDataSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteDataSetRequestRequestTypeDef
+
+def get_value() -> DeleteDataSetRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataSetRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+```
+
+## DeleteDataSourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteDataSourceRequestRequestTypeDef
+
+def get_value() -> DeleteDataSourceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSourceId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataSourceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSourceId: str,
+```
+
+## DeleteFolderMembershipRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipRequestRequestTypeDef
+
+def get_value() -> DeleteFolderMembershipRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+        "MemberId": ...,
+        "MemberType": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFolderMembershipRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+    MemberId: str,
+    MemberType: MemberTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
+## DeleteFolderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteFolderRequestRequestTypeDef
+
+def get_value() -> DeleteFolderRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFolderRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+```
+
+## DeleteGroupMembershipRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipRequestRequestTypeDef
+
+def get_value() -> DeleteGroupMembershipRequestRequestTypeDef:
+    return {
+        "MemberName": ...,
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGroupMembershipRequestRequestTypeDef(TypedDict):
+    MemberName: str,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DeleteGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DeleteIAMPolicyAssignmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentRequestRequestTypeDef
+
+def get_value() -> DeleteIAMPolicyAssignmentRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AssignmentName": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+```
+
+## DeleteNamespaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteNamespaceRequestRequestTypeDef
+
+def get_value() -> DeleteNamespaceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteNamespaceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DeleteTemplateAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasRequestRequestTypeDef
+
+def get_value() -> DeleteTemplateAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+        "AliasName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTemplateAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+```
+
+## DeleteTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: NotRequired[int],
+```
+
+## DeleteThemeAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteThemeAliasRequestRequestTypeDef
+
+def get_value() -> DeleteThemeAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+        "AliasName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteThemeAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+```
+
+## DeleteThemeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteThemeRequestRequestTypeDef
+
+def get_value() -> DeleteThemeRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteThemeRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    VersionNumber: NotRequired[int],
+```
+
+## DeleteUserByPrincipalIdRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdRequestRequestTypeDef
+
+def get_value() -> DeleteUserByPrincipalIdRequestRequestTypeDef:
+    return {
+        "PrincipalId": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteUserByPrincipalIdRequestRequestTypeDef(TypedDict):
+    PrincipalId: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DeleteUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DescribeAccountCustomizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationRequestRequestTypeDef
+
+def get_value() -> DescribeAccountCustomizationRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountCustomizationRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: NotRequired[str],
+    Resolved: NotRequired[bool],
+```
+
+## DescribeAccountSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsRequestRequestTypeDef
+
+def get_value() -> DescribeAccountSettingsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountSettingsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+```
+
+## DescribeAnalysisPermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeAnalysisPermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisPermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+```
+
+## DescribeAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisRequestRequestTypeDef
+
+def get_value() -> DescribeAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+```
+
+## DescribeDashboardPermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeDashboardPermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardPermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+```
+
+## DescribeDashboardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardRequestRequestTypeDef
+
+def get_value() -> DescribeDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: NotRequired[int],
+    AliasName: NotRequired[str],
+```
+
+## DescribeDataSetPermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeDataSetPermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSetPermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+```
+
+## DescribeDataSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSetRequestRequestTypeDef
+
+def get_value() -> DescribeDataSetRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSetRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+```
+
+## DescribeDataSourcePermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeDataSourcePermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSourceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourcePermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSourceId: str,
+```
+
+## DescribeDataSourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSourceRequestRequestTypeDef
+
+def get_value() -> DescribeDataSourceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSourceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSourceId: str,
+```
+
+## DescribeFolderPermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeFolderPermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderPermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+```
+
+## DescribeFolderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderRequestRequestTypeDef
+
+def get_value() -> DescribeFolderRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+```
+
+## DescribeFolderResolvedPermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeFolderResolvedPermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderResolvedPermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+```
+
+## FolderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FolderTypeDef
+
+def get_value() -> FolderTypeDef:
+    return {
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class FolderTypeDef(TypedDict):
+    FolderId: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    FolderType: NotRequired[FolderTypeType],  # (1)
+    FolderPath: NotRequired[List[str]],
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
+## DescribeGroupMembershipRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipRequestRequestTypeDef
+
+def get_value() -> DescribeGroupMembershipRequestRequestTypeDef:
+    return {
+        "MemberName": ...,
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupMembershipRequestRequestTypeDef(TypedDict):
+    MemberName: str,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DescribeGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeGroupRequestRequestTypeDef
+
+def get_value() -> DescribeGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DescribeIAMPolicyAssignmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentRequestRequestTypeDef
+
+def get_value() -> DescribeIAMPolicyAssignmentRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AssignmentName": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+```
+
+## IAMPolicyAssignmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentTypeDef
+
+def get_value() -> IAMPolicyAssignmentTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class IAMPolicyAssignmentTypeDef(TypedDict):
+    AwsAccountId: NotRequired[str],
+    AssignmentId: NotRequired[str],
+    AssignmentName: NotRequired[str],
+    PolicyArn: NotRequired[str],
+    Identities: NotRequired[Dict[str, List[str]]],
+    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+## DescribeIngestionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIngestionRequestRequestTypeDef
+
+def get_value() -> DescribeIngestionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+        "IngestionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIngestionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+    IngestionId: str,
+```
+
+## DescribeIpRestrictionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionRequestRequestTypeDef
+
+def get_value() -> DescribeIpRestrictionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpRestrictionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+```
+
+## DescribeNamespaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeNamespaceRequestRequestTypeDef
+
+def get_value() -> DescribeNamespaceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNamespaceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## DescribeTemplateAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasRequestRequestTypeDef
+
+def get_value() -> DescribeTemplateAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+        "AliasName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplateAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+```
+
+## DescribeTemplatePermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeTemplatePermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplatePermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+```
+
+## DescribeTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplateRequestRequestTypeDef
+
+def get_value() -> DescribeTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: NotRequired[int],
+    AliasName: NotRequired[str],
+```
+
+## DescribeThemeAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemeAliasRequestRequestTypeDef
+
+def get_value() -> DescribeThemeAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+        "AliasName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemeAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+```
+
+## DescribeThemePermissionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeThemePermissionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemePermissionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+```
+
+## DescribeThemeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemeRequestRequestTypeDef
+
+def get_value() -> DescribeThemeRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemeRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    VersionNumber: NotRequired[int],
+    AliasName: NotRequired[str],
+```
+
+## DescribeUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeUserRequestRequestTypeDef
+
+def get_value() -> DescribeUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+```
+
+## UserTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    UserName: NotRequired[str],
+    Email: NotRequired[str],
+    Role: NotRequired[UserRoleType],  # (1)
+    IdentityType: NotRequired[IdentityTypeType],  # (2)
+    Active: NotRequired[bool],
+    PrincipalId: NotRequired[str],
+    CustomPermissionsName: NotRequired[str],
+    ExternalLoginFederationProviderType: NotRequired[str],
+    ExternalLoginFederationProviderUrl: NotRequired[str],
+    ExternalLoginId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+2. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+## ErrorInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ErrorInfoTypeDef
+
+def get_value() -> ErrorInfoTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class ErrorInfoTypeDef(TypedDict):
+    Type: NotRequired[IngestionErrorTypeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IngestionErrorTypeType](./literals.md#ingestionerrortypetype) 
+## FilterOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterOperationTypeDef
+
+def get_value() -> FilterOperationTypeDef:
+    return {
+        "ConditionExpression": ...,
+    }
+```
+
+```python title="Definition"
+class FilterOperationTypeDef(TypedDict):
+    ConditionExpression: str,
+```
+
+## FolderSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FolderSearchFilterTypeDef
+
+def get_value() -> FolderSearchFilterTypeDef:
+    return {
+        "Operator": ...,
+    }
+```
+
+```python title="Definition"
+class FolderSearchFilterTypeDef(TypedDict):
+    Operator: NotRequired[FilterOperatorType],  # (1)
+    Name: NotRequired[FolderFilterAttributeType],  # (2)
+    Value: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
+2. See [:material-code-brackets: FolderFilterAttributeType](./literals.md#folderfilterattributetype) 
+## FolderSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FolderSummaryTypeDef
+
+def get_value() -> FolderSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class FolderSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    FolderId: NotRequired[str],
+    Name: NotRequired[str],
+    FolderType: NotRequired[FolderTypeType],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
+## SessionTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SessionTagTypeDef
+
+def get_value() -> SessionTagTypeDef:
     return {
         "Key": ...,
         "Value": ...,
@@ -6995,99 +2342,566 @@ def get_value() -> TagTypeDef:
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
+class SessionTagTypeDef(TypedDict):
     Key: str,
     Value: str,
 ```
 
-## TemplateAliasTypeDef
+## GetDashboardEmbedUrlRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateAliasTypeDef
+from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlRequestRequestTypeDef
 
-def get_value() -> TemplateAliasTypeDef:
+def get_value() -> GetDashboardEmbedUrlRequestRequestTypeDef:
     return {
-        "AliasName": ...,
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "IdentityType": ...,
     }
 ```
 
 ```python title="Definition"
-class TemplateAliasTypeDef(TypedDict):
-    AliasName: NotRequired[str],
+class GetDashboardEmbedUrlRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    IdentityType: EmbeddingIdentityTypeType,  # (1)
+    SessionLifetimeInMinutes: NotRequired[int],
+    UndoRedoDisabled: NotRequired[bool],
+    ResetDisabled: NotRequired[bool],
+    StatePersistenceEnabled: NotRequired[bool],
+    UserArn: NotRequired[str],
+    Namespace: NotRequired[str],
+    AdditionalDashboardIds: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: EmbeddingIdentityTypeType](./literals.md#embeddingidentitytypetype) 
+## GetSessionEmbedUrlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlRequestRequestTypeDef
+
+def get_value() -> GetSessionEmbedUrlRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionEmbedUrlRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    EntryPoint: NotRequired[str],
+    SessionLifetimeInMinutes: NotRequired[int],
+    UserArn: NotRequired[str],
+```
+
+## GroupSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GroupSearchFilterTypeDef
+
+def get_value() -> GroupSearchFilterTypeDef:
+    return {
+        "Operator": ...,
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class GroupSearchFilterTypeDef(TypedDict):
+    Operator: GroupFilterOperatorType,  # (1)
+    Name: GroupFilterAttributeType,  # (2)
+    Value: str,
+```
+
+1. See [:material-code-brackets: GroupFilterOperatorType](./literals.md#groupfilteroperatortype) 
+2. See [:material-code-brackets: GroupFilterAttributeType](./literals.md#groupfilterattributetype) 
+## GutterStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GutterStyleTypeDef
+
+def get_value() -> GutterStyleTypeDef:
+    return {
+        "Show": ...,
+    }
+```
+
+```python title="Definition"
+class GutterStyleTypeDef(TypedDict):
+    Show: NotRequired[bool],
+```
+
+## IAMPolicyAssignmentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentSummaryTypeDef
+
+def get_value() -> IAMPolicyAssignmentSummaryTypeDef:
+    return {
+        "AssignmentName": ...,
+    }
+```
+
+```python title="Definition"
+class IAMPolicyAssignmentSummaryTypeDef(TypedDict):
+    AssignmentName: NotRequired[str],
+    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+## QueueInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import QueueInfoTypeDef
+
+def get_value() -> QueueInfoTypeDef:
+    return {
+        "WaitingOnIngestion": ...,
+        "QueuedIngestion": ...,
+    }
+```
+
+```python title="Definition"
+class QueueInfoTypeDef(TypedDict):
+    WaitingOnIngestion: str,
+    QueuedIngestion: str,
+```
+
+## RowInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RowInfoTypeDef
+
+def get_value() -> RowInfoTypeDef:
+    return {
+        "RowsIngested": ...,
+    }
+```
+
+```python title="Definition"
+class RowInfoTypeDef(TypedDict):
+    RowsIngested: NotRequired[int],
+    RowsDropped: NotRequired[int],
+    TotalRowsInDataset: NotRequired[int],
+```
+
+## IntegerParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IntegerParameterTypeDef
+
+def get_value() -> IntegerParameterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class IntegerParameterTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[int],
+```
+
+## JoinKeyPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import JoinKeyPropertiesTypeDef
+
+def get_value() -> JoinKeyPropertiesTypeDef:
+    return {
+        "UniqueKey": ...,
+    }
+```
+
+```python title="Definition"
+class JoinKeyPropertiesTypeDef(TypedDict):
+    UniqueKey: NotRequired[bool],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListAnalysesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListAnalysesRequestRequestTypeDef
+
+def get_value() -> ListAnalysesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnalysesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListDashboardVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestRequestTypeDef
+
+def get_value() -> ListDashboardVersionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardVersionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListDashboardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardsRequestRequestTypeDef
+
+def get_value() -> ListDashboardsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListDataSetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSetsRequestRequestTypeDef
+
+def get_value() -> ListDataSetsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSetsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListDataSourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestRequestTypeDef
+
+def get_value() -> ListDataSourcesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSourcesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListFolderMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListFolderMembersRequestRequestTypeDef
+
+def get_value() -> ListFolderMembersRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFolderMembersRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## MemberIdArnPairTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MemberIdArnPairTypeDef
+
+def get_value() -> MemberIdArnPairTypeDef:
+    return {
+        "MemberId": ...,
+    }
+```
+
+```python title="Definition"
+class MemberIdArnPairTypeDef(TypedDict):
+    MemberId: NotRequired[str],
+    MemberArn: NotRequired[str],
+```
+
+## ListFoldersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListFoldersRequestRequestTypeDef
+
+def get_value() -> ListFoldersRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFoldersRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListGroupMembershipsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListGroupMembershipsRequestRequestTypeDef
+
+def get_value() -> ListGroupMembershipsRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupMembershipsRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListGroupsRequestRequestTypeDef
+
+def get_value() -> ListGroupsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
+
+def get_value() -> ListIAMPolicyAssignmentsForUserRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "UserName": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class ListIAMPolicyAssignmentsForUserRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    UserName: str,
+    Namespace: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListIAMPolicyAssignmentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsRequestRequestTypeDef
+
+def get_value() -> ListIAMPolicyAssignmentsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class ListIAMPolicyAssignmentsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+## ListIngestionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIngestionsRequestRequestTypeDef
+
+def get_value() -> ListIngestionsRequestRequestTypeDef:
+    return {
+        "DataSetId": ...,
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIngestionsRequestRequestTypeDef(TypedDict):
+    DataSetId: str,
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListNamespacesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListNamespacesRequestRequestTypeDef
+
+def get_value() -> ListNamespacesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListNamespacesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## ListTemplateAliasesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestRequestTypeDef
+
+def get_value() -> ListTemplateAliasesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateAliasesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListTemplateVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestRequestTypeDef
+
+def get_value() -> ListTemplateVersionsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateVersionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## TemplateVersionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateVersionSummaryTypeDef
+
+def get_value() -> TemplateVersionSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateVersionSummaryTypeDef(TypedDict):
     Arn: NotRequired[str],
-    TemplateVersionNumber: NotRequired[int],
+    VersionNumber: NotRequired[int],
+    CreatedTime: NotRequired[datetime],
+    Status: NotRequired[ResourceStatusType],  # (1)
+    Description: NotRequired[str],
 ```
 
-## TemplateErrorTypeDef
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+## ListTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplatesRequestRequestTypeDef
 
-def get_value() -> TemplateErrorTypeDef:
+def get_value() -> ListTemplatesRequestRequestTypeDef:
     return {
-        "Type": ...,
+        "AwsAccountId": ...,
     }
 ```
 
 ```python title="Definition"
-class TemplateErrorTypeDef(TypedDict):
-    Type: NotRequired[TemplateErrorTypeType],  # (1)
-    Message: NotRequired[str],
-```
-
-1. See [:material-code-brackets: TemplateErrorTypeType](./literals.md#templateerrortypetype) 
-## TemplateSourceAnalysisTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateSourceAnalysisTypeDef
-
-def get_value() -> TemplateSourceAnalysisTypeDef:
-    return {
-        "Arn": ...,
-        "DataSetReferences": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateSourceAnalysisTypeDef(TypedDict):
-    Arn: str,
-    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
-## TemplateSourceEntityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateSourceEntityTypeDef
-
-def get_value() -> TemplateSourceEntityTypeDef:
-    return {
-        "SourceAnalysis": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateSourceEntityTypeDef(TypedDict):
-    SourceAnalysis: NotRequired[TemplateSourceAnalysisTypeDef],  # (1)
-    SourceTemplate: NotRequired[TemplateSourceTemplateTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TemplateSourceAnalysisTypeDef](./type_defs.md#templatesourceanalysistypedef) 
-2. See [:material-code-braces: TemplateSourceTemplateTypeDef](./type_defs.md#templatesourcetemplatetypedef) 
-## TemplateSourceTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateSourceTemplateTypeDef
-
-def get_value() -> TemplateSourceTemplateTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateSourceTemplateTypeDef(TypedDict):
-    Arn: str,
+class ListTemplatesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## TemplateSummaryTypeDef
@@ -7111,199 +2925,46 @@ class TemplateSummaryTypeDef(TypedDict):
     LastUpdatedTime: NotRequired[datetime],
 ```
 
-## TemplateTypeDef
+## ListThemeAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeAliasesRequestRequestTypeDef
 
-def get_value() -> TemplateTypeDef:
+def get_value() -> ListThemeAliasesRequestRequestTypeDef:
     return {
-        "Arn": ...,
+        "AwsAccountId": ...,
+        "ThemeId": ...,
     }
 ```
 
 ```python title="Definition"
-class TemplateTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    Version: NotRequired[TemplateVersionTypeDef],  # (1)
-    TemplateId: NotRequired[str],
-    LastUpdatedTime: NotRequired[datetime],
-    CreatedTime: NotRequired[datetime],
+class ListThemeAliasesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-braces: TemplateVersionTypeDef](./type_defs.md#templateversiontypedef) 
-## TemplateVersionSummaryTypeDef
+## ListThemeVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateVersionSummaryTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestRequestTypeDef
 
-def get_value() -> TemplateVersionSummaryTypeDef:
+def get_value() -> ListThemeVersionsRequestRequestTypeDef:
     return {
-        "Arn": ...,
+        "AwsAccountId": ...,
+        "ThemeId": ...,
     }
 ```
 
 ```python title="Definition"
-class TemplateVersionSummaryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    VersionNumber: NotRequired[int],
-    CreatedTime: NotRequired[datetime],
-    Status: NotRequired[ResourceStatusType],  # (1)
-    Description: NotRequired[str],
+class ListThemeVersionsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-## TemplateVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateVersionTypeDef
-
-def get_value() -> TemplateVersionTypeDef:
-    return {
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateVersionTypeDef(TypedDict):
-    CreatedTime: NotRequired[datetime],
-    Errors: NotRequired[List[TemplateErrorTypeDef]],  # (1)
-    VersionNumber: NotRequired[int],
-    Status: NotRequired[ResourceStatusType],  # (2)
-    DataSetConfigurations: NotRequired[List[DataSetConfigurationTypeDef]],  # (3)
-    Description: NotRequired[str],
-    SourceEntityArn: NotRequired[str],
-    ThemeArn: NotRequired[str],
-    Sheets: NotRequired[List[SheetTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: TemplateErrorTypeDef](./type_defs.md#templateerrortypedef) 
-2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-3. See [:material-code-braces: DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef) 
-4. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
-## TeradataParametersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TeradataParametersTypeDef
-
-def get_value() -> TeradataParametersTypeDef:
-    return {
-        "Host": ...,
-        "Port": ...,
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class TeradataParametersTypeDef(TypedDict):
-    Host: str,
-    Port: int,
-    Database: str,
-```
-
-## ThemeAliasTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeAliasTypeDef
-
-def get_value() -> ThemeAliasTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ThemeAliasTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    AliasName: NotRequired[str],
-    ThemeVersionNumber: NotRequired[int],
-```
-
-## ThemeConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeConfigurationTypeDef
-
-def get_value() -> ThemeConfigurationTypeDef:
-    return {
-        "DataColorPalette": ...,
-    }
-```
-
-```python title="Definition"
-class ThemeConfigurationTypeDef(TypedDict):
-    DataColorPalette: NotRequired[DataColorPaletteTypeDef],  # (1)
-    UIColorPalette: NotRequired[UIColorPaletteTypeDef],  # (2)
-    Sheet: NotRequired[SheetStyleTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: DataColorPaletteTypeDef](./type_defs.md#datacolorpalettetypedef) 
-2. See [:material-code-braces: UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef) 
-3. See [:material-code-braces: SheetStyleTypeDef](./type_defs.md#sheetstyletypedef) 
-## ThemeErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeErrorTypeDef
-
-def get_value() -> ThemeErrorTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class ThemeErrorTypeDef(TypedDict):
-    Type: NotRequired[ThemeErrorTypeType],  # (1)
-    Message: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ThemeErrorTypeType](./literals.md#themeerrortypetype) 
-## ThemeSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeSummaryTypeDef
-
-def get_value() -> ThemeSummaryTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ThemeSummaryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    ThemeId: NotRequired[str],
-    LatestVersionNumber: NotRequired[int],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-```
-
-## ThemeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeTypeDef
-
-def get_value() -> ThemeTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ThemeTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    ThemeId: NotRequired[str],
-    Version: NotRequired[ThemeVersionTypeDef],  # (1)
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    Type: NotRequired[ThemeTypeType],  # (2)
-```
-
-1. See [:material-code-braces: ThemeVersionTypeDef](./type_defs.md#themeversiontypedef) 
-2. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
 ## ThemeVersionSummaryTypeDef
 
 ```python title="Usage Example"
@@ -7325,113 +2986,366 @@ class ThemeVersionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-## ThemeVersionTypeDef
+## ListThemesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import ThemeVersionTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemesRequestRequestTypeDef
 
-def get_value() -> ThemeVersionTypeDef:
+def get_value() -> ListThemesRequestRequestTypeDef:
     return {
-        "VersionNumber": ...,
+        "AwsAccountId": ...,
     }
 ```
 
 ```python title="Definition"
-class ThemeVersionTypeDef(TypedDict):
-    VersionNumber: NotRequired[int],
+class ListThemesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Type: NotRequired[ThemeTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
+## ThemeSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ThemeSummaryTypeDef
+
+def get_value() -> ThemeSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ThemeSummaryTypeDef(TypedDict):
     Arn: NotRequired[str],
-    Description: NotRequired[str],
-    BaseThemeId: NotRequired[str],
+    Name: NotRequired[str],
+    ThemeId: NotRequired[str],
+    LatestVersionNumber: NotRequired[int],
     CreatedTime: NotRequired[datetime],
-    Configuration: NotRequired[ThemeConfigurationTypeDef],  # (1)
-    Errors: NotRequired[List[ThemeErrorTypeDef]],  # (2)
-    Status: NotRequired[ResourceStatusType],  # (3)
+    LastUpdatedTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
-2. See [:material-code-braces: ThemeErrorTypeDef](./type_defs.md#themeerrortypedef) 
-3. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-## TileLayoutStyleTypeDef
+## ListUserGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TileLayoutStyleTypeDef
+from mypy_boto3_quicksight.type_defs import ListUserGroupsRequestRequestTypeDef
 
-def get_value() -> TileLayoutStyleTypeDef:
+def get_value() -> ListUserGroupsRequestRequestTypeDef:
     return {
-        "Gutter": ...,
+        "UserName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
     }
 ```
 
 ```python title="Definition"
-class TileLayoutStyleTypeDef(TypedDict):
-    Gutter: NotRequired[GutterStyleTypeDef],  # (1)
-    Margin: NotRequired[MarginStyleTypeDef],  # (2)
+class ListUserGroupsRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-braces: GutterStyleTypeDef](./type_defs.md#gutterstyletypedef) 
-2. See [:material-code-braces: MarginStyleTypeDef](./type_defs.md#marginstyletypedef) 
-## TileStyleTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TileStyleTypeDef
+from mypy_boto3_quicksight.type_defs import ListUsersRequestRequestTypeDef
 
-def get_value() -> TileStyleTypeDef:
+def get_value() -> ListUsersRequestRequestTypeDef:
     return {
-        "Border": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
     }
 ```
 
 ```python title="Definition"
-class TileStyleTypeDef(TypedDict):
-    Border: NotRequired[BorderStyleTypeDef],  # (1)
+class ListUsersRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-braces: BorderStyleTypeDef](./type_defs.md#borderstyletypedef) 
-## TransformOperationTypeDef
+## ManifestFileLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TransformOperationTypeDef
+from mypy_boto3_quicksight.type_defs import ManifestFileLocationTypeDef
 
-def get_value() -> TransformOperationTypeDef:
+def get_value() -> ManifestFileLocationTypeDef:
     return {
-        "ProjectOperation": ...,
+        "Bucket": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class TransformOperationTypeDef(TypedDict):
-    ProjectOperation: NotRequired[ProjectOperationTypeDef],  # (1)
-    FilterOperation: NotRequired[FilterOperationTypeDef],  # (2)
-    CreateColumnsOperation: NotRequired[CreateColumnsOperationTypeDef],  # (3)
-    RenameColumnOperation: NotRequired[RenameColumnOperationTypeDef],  # (4)
-    CastColumnTypeOperation: NotRequired[CastColumnTypeOperationTypeDef],  # (5)
-    TagColumnOperation: NotRequired[TagColumnOperationTypeDef],  # (6)
-    UntagColumnOperation: NotRequired[UntagColumnOperationTypeDef],  # (7)
+class ManifestFileLocationTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
 ```
 
-1. See [:material-code-braces: ProjectOperationTypeDef](./type_defs.md#projectoperationtypedef) 
-2. See [:material-code-braces: FilterOperationTypeDef](./type_defs.md#filteroperationtypedef) 
-3. See [:material-code-braces: CreateColumnsOperationTypeDef](./type_defs.md#createcolumnsoperationtypedef) 
-4. See [:material-code-braces: RenameColumnOperationTypeDef](./type_defs.md#renamecolumnoperationtypedef) 
-5. See [:material-code-braces: CastColumnTypeOperationTypeDef](./type_defs.md#castcolumntypeoperationtypedef) 
-6. See [:material-code-braces: TagColumnOperationTypeDef](./type_defs.md#tagcolumnoperationtypedef) 
-7. See [:material-code-braces: UntagColumnOperationTypeDef](./type_defs.md#untagcolumnoperationtypedef) 
-## TwitterParametersTypeDef
+## MarginStyleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TwitterParametersTypeDef
+from mypy_boto3_quicksight.type_defs import MarginStyleTypeDef
 
-def get_value() -> TwitterParametersTypeDef:
+def get_value() -> MarginStyleTypeDef:
     return {
-        "Query": ...,
-        "MaxRows": ...,
+        "Show": ...,
     }
 ```
 
 ```python title="Definition"
-class TwitterParametersTypeDef(TypedDict):
-    Query: str,
-    MaxRows: int,
+class MarginStyleTypeDef(TypedDict):
+    Show: NotRequired[bool],
+```
+
+## NamespaceErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NamespaceErrorTypeDef
+
+def get_value() -> NamespaceErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class NamespaceErrorTypeDef(TypedDict):
+    Type: NotRequired[NamespaceErrorTypeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NamespaceErrorTypeType](./literals.md#namespaceerrortypetype) 
+## StringParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import StringParameterTypeDef
+
+def get_value() -> StringParameterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class StringParameterTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[str],
+```
+
+## ProjectOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ProjectOperationTypeDef
+
+def get_value() -> ProjectOperationTypeDef:
+    return {
+        "ProjectedColumns": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectOperationTypeDef(TypedDict):
+    ProjectedColumns: Sequence[str],
+```
+
+## RegisterUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisterUserRequestRequestTypeDef
+
+def get_value() -> RegisterUserRequestRequestTypeDef:
+    return {
+        "IdentityType": ...,
+        "Email": ...,
+        "UserRole": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterUserRequestRequestTypeDef(TypedDict):
+    IdentityType: IdentityTypeType,  # (1)
+    Email: str,
+    UserRole: UserRoleType,  # (2)
+    AwsAccountId: str,
+    Namespace: str,
+    IamArn: NotRequired[str],
+    SessionName: NotRequired[str],
+    UserName: NotRequired[str],
+    CustomPermissionsName: NotRequired[str],
+    ExternalLoginFederationProviderType: NotRequired[str],
+    CustomFederationProviderUrl: NotRequired[str],
+    ExternalLoginId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+## RegisteredUserDashboardEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardEmbeddingConfigurationTypeDef
+
+def get_value() -> RegisteredUserDashboardEmbeddingConfigurationTypeDef:
+    return {
+        "InitialDashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserDashboardEmbeddingConfigurationTypeDef(TypedDict):
+    InitialDashboardId: str,
+```
+
+## RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
+
+def get_value() -> RegisteredUserQSearchBarEmbeddingConfigurationTypeDef:
+    return {
+        "InitialTopicId": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserQSearchBarEmbeddingConfigurationTypeDef(TypedDict):
+    InitialTopicId: NotRequired[str],
+```
+
+## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+
+def get_value() -> RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef:
+    return {
+        "InitialPath": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef(TypedDict):
+    InitialPath: NotRequired[str],
+```
+
+## RenameColumnOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RenameColumnOperationTypeDef
+
+def get_value() -> RenameColumnOperationTypeDef:
+    return {
+        "ColumnName": ...,
+        "NewColumnName": ...,
+    }
+```
+
+```python title="Definition"
+class RenameColumnOperationTypeDef(TypedDict):
+    ColumnName: str,
+    NewColumnName: str,
+```
+
+## RestoreAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RestoreAnalysisRequestRequestTypeDef
+
+def get_value() -> RestoreAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+```
+
+## RowLevelPermissionTagRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagRuleTypeDef
+
+def get_value() -> RowLevelPermissionTagRuleTypeDef:
+    return {
+        "TagKey": ...,
+        "ColumnName": ...,
+    }
+```
+
+```python title="Definition"
+class RowLevelPermissionTagRuleTypeDef(TypedDict):
+    TagKey: str,
+    ColumnName: str,
+    TagMultiValueDelimiter: NotRequired[str],
+    MatchAllValue: NotRequired[str],
+```
+
+## UploadSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UploadSettingsTypeDef
+
+def get_value() -> UploadSettingsTypeDef:
+    return {
+        "Format": ...,
+    }
+```
+
+```python title="Definition"
+class UploadSettingsTypeDef(TypedDict):
+    Format: NotRequired[FileFormatType],  # (1)
+    StartFromRow: NotRequired[int],
+    ContainsHeader: NotRequired[bool],
+    TextQualifier: NotRequired[TextQualifierType],  # (2)
+    Delimiter: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
+2. See [:material-code-brackets: TextQualifierType](./literals.md#textqualifiertype) 
+## TemplateErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
+
+def get_value() -> TemplateErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateErrorTypeDef(TypedDict):
+    Type: NotRequired[TemplateErrorTypeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TemplateErrorTypeType](./literals.md#templateerrortypetype) 
+## TemplateSourceTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateSourceTemplateTypeDef
+
+def get_value() -> TemplateSourceTemplateTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateSourceTemplateTypeDef(TypedDict):
+    Arn: str,
 ```
 
 ## UIColorPaletteTypeDef
@@ -7465,6 +3379,24 @@ class UIColorPaletteTypeDef(TypedDict):
     MeasureForeground: NotRequired[str],
 ```
 
+## ThemeErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ThemeErrorTypeDef
+
+def get_value() -> ThemeErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class ThemeErrorTypeDef(TypedDict):
+    Type: NotRequired[ThemeErrorTypeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ThemeErrorTypeType](./literals.md#themeerrortypetype) 
 ## UntagColumnOperationTypeDef
 
 ```python title="Usage Example"
@@ -7502,6 +3434,1425 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateAccountSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateAccountSettingsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DefaultNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountSettingsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DefaultNamespace: str,
+    NotificationEmail: NotRequired[str],
+```
+
+## UpdateDashboardPublishedVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionRequestRequestTypeDef
+
+def get_value() -> UpdateDashboardPublishedVersionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "VersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardPublishedVersionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: int,
+```
+
+## UpdateFolderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateFolderRequestRequestTypeDef
+
+def get_value() -> UpdateFolderRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFolderRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+    Name: str,
+```
+
+## UpdateGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateGroupRequestRequestTypeDef
+
+def get_value() -> UpdateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    Description: NotRequired[str],
+```
+
+## UpdateIAMPolicyAssignmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentRequestRequestTypeDef
+
+def get_value() -> UpdateIAMPolicyAssignmentRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AssignmentName": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
+    PolicyArn: NotRequired[str],
+    Identities: NotRequired[Mapping[str, Sequence[str]]],
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+## UpdateIpRestrictionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionRequestRequestTypeDef
+
+def get_value() -> UpdateIpRestrictionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIpRestrictionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    IpRestrictionRuleMap: NotRequired[Mapping[str, str]],
+    Enabled: NotRequired[bool],
+```
+
+## UpdateTemplateAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasRequestRequestTypeDef
+
+def get_value() -> UpdateTemplateAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+        "AliasName": ...,
+        "TemplateVersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTemplateAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+    TemplateVersionNumber: int,
+```
+
+## UpdateThemeAliasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateThemeAliasRequestRequestTypeDef
+
+def get_value() -> UpdateThemeAliasRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+        "AliasName": ...,
+        "ThemeVersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThemeAliasRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+    ThemeVersionNumber: int,
+```
+
+## UpdateUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "Email": ...,
+        "Role": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    Email: str,
+    Role: UserRoleType,  # (1)
+    CustomPermissionsName: NotRequired[str],
+    UnapplyCustomPermissions: NotRequired[bool],
+    ExternalLoginFederationProviderType: NotRequired[str],
+    CustomFederationProviderUrl: NotRequired[str],
+    ExternalLoginId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+## UpdateAccountCustomizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationRequestRequestTypeDef
+
+def get_value() -> UpdateAccountCustomizationRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AccountCustomization": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountCustomizationRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    Namespace: NotRequired[str],
+```
+
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+## SearchAnalysesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestRequestTypeDef
+
+def get_value() -> SearchAnalysesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchAnalysesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[AnalysisSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef) 
+## AnalysisSourceTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisSourceTemplateTypeDef
+
+def get_value() -> AnalysisSourceTemplateTypeDef:
+    return {
+        "DataSetReferences": ...,
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisSourceTemplateTypeDef(TypedDict):
+    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
+    Arn: str,
+```
+
+1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
+## DashboardSourceTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardSourceTemplateTypeDef
+
+def get_value() -> DashboardSourceTemplateTypeDef:
+    return {
+        "DataSetReferences": ...,
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardSourceTemplateTypeDef(TypedDict):
+    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
+    Arn: str,
+```
+
+1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
+## TemplateSourceAnalysisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateSourceAnalysisTypeDef
+
+def get_value() -> TemplateSourceAnalysisTypeDef:
+    return {
+        "Arn": ...,
+        "DataSetReferences": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateSourceAnalysisTypeDef(TypedDict):
+    Arn: str,
+    DataSetReferences: Sequence[DataSetReferenceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
+## AnalysisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisTypeDef
+
+def get_value() -> AnalysisTypeDef:
+    return {
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisTypeDef(TypedDict):
+    AnalysisId: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ResourceStatusType],  # (1)
+    Errors: NotRequired[List[AnalysisErrorTypeDef]],  # (2)
+    DataSetArns: NotRequired[List[str]],
+    ThemeArn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef) 
+3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
+## AnonymousUserEmbeddingExperienceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnonymousUserEmbeddingExperienceConfigurationTypeDef
+
+def get_value() -> AnonymousUserEmbeddingExperienceConfigurationTypeDef:
+    return {
+        "Dashboard": ...,
+    }
+```
+
+```python title="Definition"
+class AnonymousUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
+    Dashboard: NotRequired[AnonymousUserDashboardEmbeddingConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AnonymousUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardembeddingconfigurationtypedef) 
+## TileStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TileStyleTypeDef
+
+def get_value() -> TileStyleTypeDef:
+    return {
+        "Border": ...,
+    }
+```
+
+```python title="Definition"
+class TileStyleTypeDef(TypedDict):
+    Border: NotRequired[BorderStyleTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BorderStyleTypeDef](./type_defs.md#borderstyletypedef) 
+## CreateColumnsOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateColumnsOperationTypeDef
+
+def get_value() -> CreateColumnsOperationTypeDef:
+    return {
+        "Columns": ...,
+    }
+```
+
+```python title="Definition"
+class CreateColumnsOperationTypeDef(TypedDict):
+    Columns: Sequence[CalculatedColumnTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef) 
+## CancelIngestionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CancelIngestionResponseTypeDef
+
+def get_value() -> CancelIngestionResponseTypeDef:
+    return {
+        "Arn": ...,
+        "IngestionId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelIngestionResponseTypeDef(TypedDict):
+    Arn: str,
+    IngestionId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccountCustomizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationResponseTypeDef
+
+def get_value() -> CreateAccountCustomizationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "AccountCustomization": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccountCustomizationResponseTypeDef(TypedDict):
+    Arn: str,
+    AwsAccountId: str,
+    Namespace: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateAnalysisResponseTypeDef
+
+def get_value() -> CreateAnalysisResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AnalysisId": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAnalysisResponseTypeDef(TypedDict):
+    Arn: str,
+    AnalysisId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDashboardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDashboardResponseTypeDef
+
+def get_value() -> CreateDashboardResponseTypeDef:
+    return {
+        "Arn": ...,
+        "VersionArn": ...,
+        "DashboardId": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDashboardResponseTypeDef(TypedDict):
+    Arn: str,
+    VersionArn: str,
+    DashboardId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDataSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDataSetResponseTypeDef
+
+def get_value() -> CreateDataSetResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSetId": ...,
+        "IngestionArn": ...,
+        "IngestionId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataSetResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSetId: str,
+    IngestionArn: str,
+    IngestionId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDataSourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDataSourceResponseTypeDef
+
+def get_value() -> CreateDataSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSourceId": ...,
+        "CreationStatus": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSourceId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFolderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateFolderResponseTypeDef
+
+def get_value() -> CreateFolderResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "FolderId": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFolderResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    FolderId: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateIAMPolicyAssignmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentResponseTypeDef
+
+def get_value() -> CreateIAMPolicyAssignmentResponseTypeDef:
+    return {
+        "AssignmentName": ...,
+        "AssignmentId": ...,
+        "AssignmentStatus": ...,
+        "PolicyArn": ...,
+        "Identities": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIAMPolicyAssignmentResponseTypeDef(TypedDict):
+    AssignmentName: str,
+    AssignmentId: str,
+    AssignmentStatus: AssignmentStatusType,  # (1)
+    PolicyArn: str,
+    Identities: Dict[str, List[str]],
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateIngestionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateIngestionResponseTypeDef
+
+def get_value() -> CreateIngestionResponseTypeDef:
+    return {
+        "Arn": ...,
+        "IngestionId": ...,
+        "IngestionStatus": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIngestionResponseTypeDef(TypedDict):
+    Arn: str,
+    IngestionId: str,
+    IngestionStatus: IngestionStatusType,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: IngestionStatusType](./literals.md#ingestionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateNamespaceResponseTypeDef
+
+def get_value() -> CreateNamespaceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "CapacityRegion": ...,
+        "CreationStatus": ...,
+        "IdentityStore": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNamespaceResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    CapacityRegion: str,
+    CreationStatus: NamespaceStatusType,  # (1)
+    IdentityStore: IdentityStoreType,  # (2)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
+2. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateTemplateResponseTypeDef
+
+def get_value() -> CreateTemplateResponseTypeDef:
+    return {
+        "Arn": ...,
+        "VersionArn": ...,
+        "TemplateId": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTemplateResponseTypeDef(TypedDict):
+    Arn: str,
+    VersionArn: str,
+    TemplateId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThemeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateThemeResponseTypeDef
+
+def get_value() -> CreateThemeResponseTypeDef:
+    return {
+        "Arn": ...,
+        "VersionArn": ...,
+        "ThemeId": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThemeResponseTypeDef(TypedDict):
+    Arn: str,
+    VersionArn: str,
+    ThemeId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAccountCustomizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationResponseTypeDef
+
+def get_value() -> DeleteAccountCustomizationResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAccountCustomizationResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteAnalysisResponseTypeDef
+
+def get_value() -> DeleteAnalysisResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "AnalysisId": ...,
+        "DeletionTime": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAnalysisResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    AnalysisId: str,
+    DeletionTime: datetime,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDashboardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteDashboardResponseTypeDef
+
+def get_value() -> DeleteDashboardResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "DashboardId": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDashboardResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    DashboardId: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDataSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteDataSetResponseTypeDef
+
+def get_value() -> DeleteDataSetResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSetId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataSetResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSetId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDataSourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteDataSourceResponseTypeDef
+
+def get_value() -> DeleteDataSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSourceId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSourceId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFolderMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipResponseTypeDef
+
+def get_value() -> DeleteFolderMembershipResponseTypeDef:
+    return {
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFolderMembershipResponseTypeDef(TypedDict):
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFolderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteFolderResponseTypeDef
+
+def get_value() -> DeleteFolderResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "FolderId": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFolderResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    FolderId: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGroupMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipResponseTypeDef
+
+def get_value() -> DeleteGroupMembershipResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGroupMembershipResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteGroupResponseTypeDef
+
+def get_value() -> DeleteGroupResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGroupResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteIAMPolicyAssignmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentResponseTypeDef
+
+def get_value() -> DeleteIAMPolicyAssignmentResponseTypeDef:
+    return {
+        "AssignmentName": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIAMPolicyAssignmentResponseTypeDef(TypedDict):
+    AssignmentName: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteNamespaceResponseTypeDef
+
+def get_value() -> DeleteNamespaceResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteNamespaceResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTemplateAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasResponseTypeDef
+
+def get_value() -> DeleteTemplateAliasResponseTypeDef:
+    return {
+        "Status": ...,
+        "TemplateId": ...,
+        "AliasName": ...,
+        "Arn": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTemplateAliasResponseTypeDef(TypedDict):
+    Status: int,
+    TemplateId: str,
+    AliasName: str,
+    Arn: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteTemplateResponseTypeDef
+
+def get_value() -> DeleteTemplateResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Arn": ...,
+        "TemplateId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTemplateResponseTypeDef(TypedDict):
+    RequestId: str,
+    Arn: str,
+    TemplateId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteThemeAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteThemeAliasResponseTypeDef
+
+def get_value() -> DeleteThemeAliasResponseTypeDef:
+    return {
+        "AliasName": ...,
+        "Arn": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ThemeId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteThemeAliasResponseTypeDef(TypedDict):
+    AliasName: str,
+    Arn: str,
+    RequestId: str,
+    Status: int,
+    ThemeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteThemeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteThemeResponseTypeDef
+
+def get_value() -> DeleteThemeResponseTypeDef:
+    return {
+        "Arn": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ThemeId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteThemeResponseTypeDef(TypedDict):
+    Arn: str,
+    RequestId: str,
+    Status: int,
+    ThemeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteUserByPrincipalIdResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdResponseTypeDef
+
+def get_value() -> DeleteUserByPrincipalIdResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteUserByPrincipalIdResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteUserResponseTypeDef
+
+def get_value() -> DeleteUserResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteUserResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAccountCustomizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationResponseTypeDef
+
+def get_value() -> DescribeAccountCustomizationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "AccountCustomization": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountCustomizationResponseTypeDef(TypedDict):
+    Arn: str,
+    AwsAccountId: str,
+    Namespace: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAccountSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsResponseTypeDef
+
+def get_value() -> DescribeAccountSettingsResponseTypeDef:
+    return {
+        "AccountSettings": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountSettingsResponseTypeDef(TypedDict):
+    AccountSettings: AccountSettingsTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIpRestrictionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionResponseTypeDef
+
+def get_value() -> DescribeIpRestrictionResponseTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "IpRestrictionRuleMap": ...,
+        "Enabled": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpRestrictionResponseTypeDef(TypedDict):
+    AwsAccountId: str,
+    IpRestrictionRuleMap: Dict[str, str],
+    Enabled: bool,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateEmbedUrlForAnonymousUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserResponseTypeDef
+
+def get_value() -> GenerateEmbedUrlForAnonymousUserResponseTypeDef:
+    return {
+        "EmbedUrl": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateEmbedUrlForAnonymousUserResponseTypeDef(TypedDict):
+    EmbedUrl: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateEmbedUrlForRegisteredUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserResponseTypeDef
+
+def get_value() -> GenerateEmbedUrlForRegisteredUserResponseTypeDef:
+    return {
+        "EmbedUrl": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateEmbedUrlForRegisteredUserResponseTypeDef(TypedDict):
+    EmbedUrl: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDashboardEmbedUrlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlResponseTypeDef
+
+def get_value() -> GetDashboardEmbedUrlResponseTypeDef:
+    return {
+        "EmbedUrl": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDashboardEmbedUrlResponseTypeDef(TypedDict):
+    EmbedUrl: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSessionEmbedUrlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlResponseTypeDef
+
+def get_value() -> GetSessionEmbedUrlResponseTypeDef:
+    return {
+        "EmbedUrl": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionEmbedUrlResponseTypeDef(TypedDict):
+    EmbedUrl: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAnalysesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListAnalysesResponseTypeDef
+
+def get_value() -> ListAnalysesResponseTypeDef:
+    return {
+        "AnalysisSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnalysesResponseTypeDef(TypedDict):
+    AnalysisSummaryList: List[AnalysisSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIAMPolicyAssignmentsForUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserResponseTypeDef
+
+def get_value() -> ListIAMPolicyAssignmentsForUserResponseTypeDef:
+    return {
+        "ActiveAssignments": ...,
+        "RequestId": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIAMPolicyAssignmentsForUserResponseTypeDef(TypedDict):
+    ActiveAssignments: List[ActiveIAMPolicyAssignmentTypeDef],  # (1)
+    RequestId: str,
+    NextToken: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActiveIAMPolicyAssignmentTypeDef](./type_defs.md#activeiampolicyassignmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestoreAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RestoreAnalysisResponseTypeDef
+
+def get_value() -> RestoreAnalysisResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "AnalysisId": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreAnalysisResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    AnalysisId: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchAnalysesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchAnalysesResponseTypeDef
+
+def get_value() -> SearchAnalysesResponseTypeDef:
+    return {
+        "AnalysisSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchAnalysesResponseTypeDef(TypedDict):
+    AnalysisSummaryList: List[AnalysisSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TagResourceResponseTypeDef
+
+def get_value() -> TagResourceResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -7523,26 +4874,6 @@ class UntagResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateAccountCustomizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationRequestRequestTypeDef
-
-def get_value() -> UpdateAccountCustomizationRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AccountCustomization": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccountCustomizationRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AccountCustomization: AccountCustomizationTypeDef,  # (1)
-    Namespace: NotRequired[str],
-```
-
-1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
 ## UpdateAccountCustomizationResponseTypeDef
 
 ```python title="Usage Example"
@@ -7573,25 +4904,6 @@ class UpdateAccountCustomizationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateAccountSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsRequestRequestTypeDef
-
-def get_value() -> UpdateAccountSettingsRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DefaultNamespace": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccountSettingsRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DefaultNamespace: str,
-    NotificationEmail: NotRequired[str],
-```
-
 ## UpdateAccountSettingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -7613,6 +4925,734 @@ class UpdateAccountSettingsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisResponseTypeDef
+
+def get_value() -> UpdateAnalysisResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AnalysisId": ...,
+        "UpdateStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAnalysisResponseTypeDef(TypedDict):
+    Arn: str,
+    AnalysisId: str,
+    UpdateStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDashboardPublishedVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionResponseTypeDef
+
+def get_value() -> UpdateDashboardPublishedVersionResponseTypeDef:
+    return {
+        "DashboardId": ...,
+        "DashboardArn": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardPublishedVersionResponseTypeDef(TypedDict):
+    DashboardId: str,
+    DashboardArn: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDashboardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardResponseTypeDef
+
+def get_value() -> UpdateDashboardResponseTypeDef:
+    return {
+        "Arn": ...,
+        "VersionArn": ...,
+        "DashboardId": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardResponseTypeDef(TypedDict):
+    Arn: str,
+    VersionArn: str,
+    DashboardId: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataSetPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsResponseTypeDef
+
+def get_value() -> UpdateDataSetPermissionsResponseTypeDef:
+    return {
+        "DataSetArn": ...,
+        "DataSetId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSetPermissionsResponseTypeDef(TypedDict):
+    DataSetArn: str,
+    DataSetId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSetResponseTypeDef
+
+def get_value() -> UpdateDataSetResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSetId": ...,
+        "IngestionArn": ...,
+        "IngestionId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSetResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSetId: str,
+    IngestionArn: str,
+    IngestionId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataSourcePermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsResponseTypeDef
+
+def get_value() -> UpdateDataSourcePermissionsResponseTypeDef:
+    return {
+        "DataSourceArn": ...,
+        "DataSourceId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSourcePermissionsResponseTypeDef(TypedDict):
+    DataSourceArn: str,
+    DataSourceId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataSourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSourceResponseTypeDef
+
+def get_value() -> UpdateDataSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "DataSourceId": ...,
+        "UpdateStatus": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    DataSourceId: str,
+    UpdateStatus: ResourceStatusType,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFolderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateFolderResponseTypeDef
+
+def get_value() -> UpdateFolderResponseTypeDef:
+    return {
+        "Status": ...,
+        "Arn": ...,
+        "FolderId": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFolderResponseTypeDef(TypedDict):
+    Status: int,
+    Arn: str,
+    FolderId: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateIAMPolicyAssignmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentResponseTypeDef
+
+def get_value() -> UpdateIAMPolicyAssignmentResponseTypeDef:
+    return {
+        "AssignmentName": ...,
+        "AssignmentId": ...,
+        "PolicyArn": ...,
+        "Identities": ...,
+        "AssignmentStatus": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIAMPolicyAssignmentResponseTypeDef(TypedDict):
+    AssignmentName: str,
+    AssignmentId: str,
+    PolicyArn: str,
+    Identities: Dict[str, List[str]],
+    AssignmentStatus: AssignmentStatusType,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateIpRestrictionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionResponseTypeDef
+
+def get_value() -> UpdateIpRestrictionResponseTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIpRestrictionResponseTypeDef(TypedDict):
+    AwsAccountId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateTemplateResponseTypeDef
+
+def get_value() -> UpdateTemplateResponseTypeDef:
+    return {
+        "TemplateId": ...,
+        "Arn": ...,
+        "VersionArn": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTemplateResponseTypeDef(TypedDict):
+    TemplateId: str,
+    Arn: str,
+    VersionArn: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateThemeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateThemeResponseTypeDef
+
+def get_value() -> UpdateThemeResponseTypeDef:
+    return {
+        "ThemeId": ...,
+        "Arn": ...,
+        "VersionArn": ...,
+        "CreationStatus": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThemeResponseTypeDef(TypedDict):
+    ThemeId: str,
+    Arn: str,
+    VersionArn: str,
+    CreationStatus: ResourceStatusType,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ColumnTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnTagTypeDef
+
+def get_value() -> ColumnTagTypeDef:
+    return {
+        "ColumnGeographicRole": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnTagTypeDef(TypedDict):
+    ColumnGeographicRole: NotRequired[GeoSpatialDataRoleType],  # (1)
+    ColumnDescription: NotRequired[ColumnDescriptionTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GeoSpatialDataRoleType](./literals.md#geospatialdataroletype) 
+2. See [:material-code-braces: ColumnDescriptionTypeDef](./type_defs.md#columndescriptiontypedef) 
+## ColumnGroupSchemaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnGroupSchemaTypeDef
+
+def get_value() -> ColumnGroupSchemaTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnGroupSchemaTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ColumnGroupColumnSchemaList: NotRequired[List[ColumnGroupColumnSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ColumnGroupColumnSchemaTypeDef](./type_defs.md#columngroupcolumnschematypedef) 
+## ColumnGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnGroupTypeDef
+
+def get_value() -> ColumnGroupTypeDef:
+    return {
+        "GeoSpatialColumnGroup": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnGroupTypeDef(TypedDict):
+    GeoSpatialColumnGroup: NotRequired[GeoSpatialColumnGroupTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GeoSpatialColumnGroupTypeDef](./type_defs.md#geospatialcolumngrouptypedef) 
+## DataSetSchemaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetSchemaTypeDef
+
+def get_value() -> DataSetSchemaTypeDef:
+    return {
+        "ColumnSchemaList": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetSchemaTypeDef(TypedDict):
+    ColumnSchemaList: NotRequired[List[ColumnSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ColumnSchemaTypeDef](./type_defs.md#columnschematypedef) 
+## CreateAccountCustomizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationRequestRequestTypeDef
+
+def get_value() -> CreateAccountCustomizationRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AccountCustomization": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccountCustomizationRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    Namespace: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateNamespaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateNamespaceRequestRequestTypeDef
+
+def get_value() -> CreateNamespaceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "IdentityStore": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNamespaceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    IdentityStore: IdentityStoreType,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFolderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateFolderRequestRequestTypeDef
+
+def get_value() -> CreateFolderRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFolderRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    FolderId: str,
+    Name: NotRequired[str],
+    FolderType: NotRequired[FolderTypeType],  # (1)
+    ParentFolderArn: NotRequired[str],
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeAnalysisPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsResponseTypeDef
+
+def get_value() -> DescribeAnalysisPermissionsResponseTypeDef:
+    return {
+        "AnalysisId": ...,
+        "AnalysisArn": ...,
+        "Permissions": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisPermissionsResponseTypeDef(TypedDict):
+    AnalysisId: str,
+    AnalysisArn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDataSetPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsResponseTypeDef
+
+def get_value() -> DescribeDataSetPermissionsResponseTypeDef:
+    return {
+        "DataSetArn": ...,
+        "DataSetId": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSetPermissionsResponseTypeDef(TypedDict):
+    DataSetArn: str,
+    DataSetId: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDataSourcePermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsResponseTypeDef
+
+def get_value() -> DescribeDataSourcePermissionsResponseTypeDef:
+    return {
+        "DataSourceArn": ...,
+        "DataSourceId": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourcePermissionsResponseTypeDef(TypedDict):
+    DataSourceArn: str,
+    DataSourceId: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFolderPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsResponseTypeDef
+
+def get_value() -> DescribeFolderPermissionsResponseTypeDef:
+    return {
+        "Status": ...,
+        "FolderId": ...,
+        "Arn": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderPermissionsResponseTypeDef(TypedDict):
+    Status: int,
+    FolderId: str,
+    Arn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFolderResolvedPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsResponseTypeDef
+
+def get_value() -> DescribeFolderResolvedPermissionsResponseTypeDef:
+    return {
+        "Status": ...,
+        "FolderId": ...,
+        "Arn": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderResolvedPermissionsResponseTypeDef(TypedDict):
+    Status: int,
+    FolderId: str,
+    Arn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTemplatePermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsResponseTypeDef
+
+def get_value() -> DescribeTemplatePermissionsResponseTypeDef:
+    return {
+        "TemplateId": ...,
+        "TemplateArn": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplatePermissionsResponseTypeDef(TypedDict):
+    TemplateId: str,
+    TemplateArn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThemePermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsResponseTypeDef
+
+def get_value() -> DescribeThemePermissionsResponseTypeDef:
+    return {
+        "ThemeId": ...,
+        "ThemeArn": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemePermissionsResponseTypeDef(TypedDict):
+    ThemeId: str,
+    ThemeArn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LinkSharingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LinkSharingConfigurationTypeDef
+
+def get_value() -> LinkSharingConfigurationTypeDef:
+    return {
+        "Permissions": ...,
+    }
+```
+
+```python title="Definition"
+class LinkSharingConfigurationTypeDef(TypedDict):
+    Permissions: NotRequired[List[ResourcePermissionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 ## UpdateAnalysisPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7663,60 +5703,6 @@ class UpdateAnalysisPermissionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateAnalysisRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestRequestTypeDef
-
-def get_value() -> UpdateAnalysisRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-    Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    ThemeArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-## UpdateAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisResponseTypeDef
-
-def get_value() -> UpdateAnalysisResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AnalysisId": ...,
-        "UpdateStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAnalysisResponseTypeDef(TypedDict):
-    Arn: str,
-    AnalysisId: str,
-    UpdateStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDashboardPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7743,141 +5729,6 @@ class UpdateDashboardPermissionsRequestRequestTypeDef(TypedDict):
 2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 4. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-## UpdateDashboardPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsResponseTypeDef
-
-def get_value() -> UpdateDashboardPermissionsResponseTypeDef:
-    return {
-        "DashboardArn": ...,
-        "DashboardId": ...,
-        "Permissions": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "LinkSharingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardPermissionsResponseTypeDef(TypedDict):
-    DashboardArn: str,
-    DashboardId: str,
-    Permissions: List[ResourcePermissionTypeDef],  # (1)
-    RequestId: str,
-    Status: int,
-    LinkSharingConfiguration: LinkSharingConfigurationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDashboardPublishedVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionRequestRequestTypeDef
-
-def get_value() -> UpdateDashboardPublishedVersionRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-        "VersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardPublishedVersionRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    VersionNumber: int,
-```
-
-## UpdateDashboardPublishedVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionResponseTypeDef
-
-def get_value() -> UpdateDashboardPublishedVersionResponseTypeDef:
-    return {
-        "DashboardId": ...,
-        "DashboardArn": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardPublishedVersionResponseTypeDef(TypedDict):
-    DashboardId: str,
-    DashboardArn: str,
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDashboardRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestRequestTypeDef
-
-def get_value() -> UpdateDashboardRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    VersionDescription: NotRequired[str],
-    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (3)
-    ThemeArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-## UpdateDashboardResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardResponseTypeDef
-
-def get_value() -> UpdateDashboardResponseTypeDef:
-    return {
-        "Arn": ...,
-        "VersionArn": ...,
-        "DashboardId": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardResponseTypeDef(TypedDict):
-    Arn: str,
-    VersionArn: str,
-    DashboardId: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDataSetPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7900,100 +5751,6 @@ class UpdateDataSetPermissionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-## UpdateDataSetPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsResponseTypeDef
-
-def get_value() -> UpdateDataSetPermissionsResponseTypeDef:
-    return {
-        "DataSetArn": ...,
-        "DataSetId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSetPermissionsResponseTypeDef(TypedDict):
-    DataSetArn: str,
-    DataSetId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDataSetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSetRequestRequestTypeDef
-
-def get_value() -> UpdateDataSetRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSetId": ...,
-        "Name": ...,
-        "PhysicalTableMap": ...,
-        "ImportMode": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSetRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSetId: str,
-    Name: str,
-    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
-    ImportMode: DataSetImportModeType,  # (2)
-    LogicalTableMap: NotRequired[Mapping[str, LogicalTableTypeDef]],  # (3)
-    ColumnGroups: NotRequired[Sequence[ColumnGroupTypeDef]],  # (4)
-    FieldFolders: NotRequired[Mapping[str, FieldFolderTypeDef]],  # (5)
-    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (6)
-    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (7)
-    ColumnLevelPermissionRules: NotRequired[Sequence[ColumnLevelPermissionRuleTypeDef]],  # (8)
-    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (9)
-```
-
-1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
-2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
-3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
-4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
-5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
-6. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
-7. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
-8. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
-9. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
-## UpdateDataSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSetResponseTypeDef
-
-def get_value() -> UpdateDataSetResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSetId": ...,
-        "IngestionArn": ...,
-        "IngestionId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSetResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSetId: str,
-    IngestionArn: str,
-    IngestionId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDataSourcePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8016,87 +5773,6 @@ class UpdateDataSourcePermissionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-## UpdateDataSourcePermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsResponseTypeDef
-
-def get_value() -> UpdateDataSourcePermissionsResponseTypeDef:
-    return {
-        "DataSourceArn": ...,
-        "DataSourceId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSourcePermissionsResponseTypeDef(TypedDict):
-    DataSourceArn: str,
-    DataSourceId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDataSourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSourceRequestRequestTypeDef
-
-def get_value() -> UpdateDataSourceRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DataSourceId": ...,
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSourceRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DataSourceId: str,
-    Name: str,
-    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (1)
-    Credentials: NotRequired[DataSourceCredentialsTypeDef],  # (2)
-    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (3)
-    SslProperties: NotRequired[SslPropertiesTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
-2. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
-3. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
-4. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
-## UpdateDataSourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDataSourceResponseTypeDef
-
-def get_value() -> UpdateDataSourceResponseTypeDef:
-    return {
-        "Arn": ...,
-        "DataSourceId": ...,
-        "UpdateStatus": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataSourceResponseTypeDef(TypedDict):
-    Arn: str,
-    DataSourceId: str,
-    UpdateStatus: ResourceStatusType,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFolderPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8146,239 +5822,6 @@ class UpdateFolderPermissionsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFolderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateFolderRequestRequestTypeDef
-
-def get_value() -> UpdateFolderRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "FolderId": ...,
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFolderRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    FolderId: str,
-    Name: str,
-```
-
-## UpdateFolderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateFolderResponseTypeDef
-
-def get_value() -> UpdateFolderResponseTypeDef:
-    return {
-        "Status": ...,
-        "Arn": ...,
-        "FolderId": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFolderResponseTypeDef(TypedDict):
-    Status: int,
-    Arn: str,
-    FolderId: str,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateGroupRequestRequestTypeDef
-
-def get_value() -> UpdateGroupRequestRequestTypeDef:
-    return {
-        "GroupName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGroupRequestRequestTypeDef(TypedDict):
-    GroupName: str,
-    AwsAccountId: str,
-    Namespace: str,
-    Description: NotRequired[str],
-```
-
-## UpdateGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateGroupResponseTypeDef
-
-def get_value() -> UpdateGroupResponseTypeDef:
-    return {
-        "Group": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGroupResponseTypeDef(TypedDict):
-    Group: GroupTypeDef,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateIAMPolicyAssignmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentRequestRequestTypeDef
-
-def get_value() -> UpdateIAMPolicyAssignmentRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "AssignmentName": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateIAMPolicyAssignmentRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AssignmentName: str,
-    Namespace: str,
-    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
-    PolicyArn: NotRequired[str],
-    Identities: NotRequired[Mapping[str, Sequence[str]]],
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-## UpdateIAMPolicyAssignmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentResponseTypeDef
-
-def get_value() -> UpdateIAMPolicyAssignmentResponseTypeDef:
-    return {
-        "AssignmentName": ...,
-        "AssignmentId": ...,
-        "PolicyArn": ...,
-        "Identities": ...,
-        "AssignmentStatus": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateIAMPolicyAssignmentResponseTypeDef(TypedDict):
-    AssignmentName: str,
-    AssignmentId: str,
-    PolicyArn: str,
-    Identities: Dict[str, List[str]],
-    AssignmentStatus: AssignmentStatusType,  # (1)
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateIpRestrictionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionRequestRequestTypeDef
-
-def get_value() -> UpdateIpRestrictionRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateIpRestrictionRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    IpRestrictionRuleMap: NotRequired[Mapping[str, str]],
-    Enabled: NotRequired[bool],
-```
-
-## UpdateIpRestrictionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionResponseTypeDef
-
-def get_value() -> UpdateIpRestrictionResponseTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "RequestId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateIpRestrictionResponseTypeDef(TypedDict):
-    AwsAccountId: str,
-    RequestId: str,
-    Status: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateTemplateAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasRequestRequestTypeDef
-
-def get_value() -> UpdateTemplateAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "AliasName": ...,
-        "TemplateVersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTemplateAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    AliasName: str,
-    TemplateVersionNumber: int,
-```
-
-## UpdateTemplateAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasResponseTypeDef
-
-def get_value() -> UpdateTemplateAliasResponseTypeDef:
-    return {
-        "TemplateAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTemplateAliasResponseTypeDef(TypedDict):
-    TemplateAlias: TemplateAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTemplatePermissionsRequestRequestTypeDef
 
@@ -8430,105 +5873,6 @@ class UpdateTemplatePermissionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
-    VersionDescription: NotRequired[str],
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
-## UpdateTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateTemplateResponseTypeDef
-
-def get_value() -> UpdateTemplateResponseTypeDef:
-    return {
-        "TemplateId": ...,
-        "Arn": ...,
-        "VersionArn": ...,
-        "CreationStatus": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTemplateResponseTypeDef(TypedDict):
-    TemplateId: str,
-    Arn: str,
-    VersionArn: str,
-    CreationStatus: ResourceStatusType,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateThemeAliasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateThemeAliasRequestRequestTypeDef
-
-def get_value() -> UpdateThemeAliasRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-        "AliasName": ...,
-        "ThemeVersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThemeAliasRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    AliasName: str,
-    ThemeVersionNumber: int,
-```
-
-## UpdateThemeAliasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateThemeAliasResponseTypeDef
-
-def get_value() -> UpdateThemeAliasResponseTypeDef:
-    return {
-        "ThemeAlias": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateThemeAliasResponseTypeDef(TypedDict):
-    ThemeAlias: ThemeAliasTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateThemePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8579,41 +5923,288 @@ class UpdateThemePermissionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateThemeRequestRequestTypeDef
+## DataSetSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateThemeRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DataSetSummaryTypeDef
 
-def get_value() -> UpdateThemeRequestRequestTypeDef:
+def get_value() -> DataSetSummaryTypeDef:
     return {
-        "AwsAccountId": ...,
-        "ThemeId": ...,
-        "BaseThemeId": ...,
+        "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateThemeRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    ThemeId: str,
-    BaseThemeId: str,
+class DataSetSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    DataSetId: NotRequired[str],
     Name: NotRequired[str],
-    VersionDescription: NotRequired[str],
-    Configuration: NotRequired[ThemeConfigurationTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    ImportMode: NotRequired[DataSetImportModeType],  # (1)
+    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (2)
+    RowLevelPermissionTagConfigurationApplied: NotRequired[bool],
+    ColumnLevelPermissionRulesApplied: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
-## UpdateThemeResponseTypeDef
+1. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+2. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+## CreateFolderMembershipResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateThemeResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateFolderMembershipResponseTypeDef
 
-def get_value() -> UpdateThemeResponseTypeDef:
+def get_value() -> CreateFolderMembershipResponseTypeDef:
     return {
-        "ThemeId": ...,
-        "Arn": ...,
-        "VersionArn": ...,
-        "CreationStatus": ...,
+        "Status": ...,
+        "FolderMember": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFolderMembershipResponseTypeDef(TypedDict):
+    Status: int,
+    FolderMember: FolderMemberTypeDef,  # (1)
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FolderMemberTypeDef](./type_defs.md#foldermembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGroupMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateGroupMembershipResponseTypeDef
+
+def get_value() -> CreateGroupMembershipResponseTypeDef:
+    return {
+        "GroupMember": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGroupMembershipResponseTypeDef(TypedDict):
+    GroupMember: GroupMemberTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeGroupMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipResponseTypeDef
+
+def get_value() -> DescribeGroupMembershipResponseTypeDef:
+    return {
+        "GroupMember": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupMembershipResponseTypeDef(TypedDict):
+    GroupMember: GroupMemberTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupMembershipsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListGroupMembershipsResponseTypeDef
+
+def get_value() -> ListGroupMembershipsResponseTypeDef:
+    return {
+        "GroupMemberList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupMembershipsResponseTypeDef(TypedDict):
+    GroupMemberList: List[GroupMemberTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupMemberTypeDef](./type_defs.md#groupmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateGroupResponseTypeDef
+
+def get_value() -> CreateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeGroupResponseTypeDef
+
+def get_value() -> DescribeGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "GroupList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    GroupList: List[GroupTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListUserGroupsResponseTypeDef
+
+def get_value() -> ListUserGroupsResponseTypeDef:
+    return {
+        "GroupList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserGroupsResponseTypeDef(TypedDict):
+    GroupList: List[GroupTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchGroupsResponseTypeDef
+
+def get_value() -> SearchGroupsResponseTypeDef:
+    return {
+        "GroupList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchGroupsResponseTypeDef(TypedDict):
+    GroupList: List[GroupTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateGroupResponseTypeDef
+
+def get_value() -> UpdateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTemplateAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateTemplateAliasResponseTypeDef
+
+def get_value() -> CreateTemplateAliasResponseTypeDef:
+    return {
+        "TemplateAlias": ...,
         "Status": ...,
         "RequestId": ...,
         "ResponseMetadata": ...,
@@ -8621,48 +6212,504 @@ def get_value() -> UpdateThemeResponseTypeDef:
 ```
 
 ```python title="Definition"
-class UpdateThemeResponseTypeDef(TypedDict):
-    ThemeId: str,
-    Arn: str,
-    VersionArn: str,
-    CreationStatus: ResourceStatusType,  # (1)
+class CreateTemplateAliasResponseTypeDef(TypedDict):
+    TemplateAlias: TemplateAliasTypeDef,  # (1)
     Status: int,
     RequestId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateUserRequestRequestTypeDef
+## DescribeTemplateAliasResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateUserRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasResponseTypeDef
 
-def get_value() -> UpdateUserRequestRequestTypeDef:
+def get_value() -> DescribeTemplateAliasResponseTypeDef:
     return {
-        "UserName": ...,
-        "AwsAccountId": ...,
-        "Namespace": ...,
-        "Email": ...,
-        "Role": ...,
+        "TemplateAlias": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateUserRequestRequestTypeDef(TypedDict):
-    UserName: str,
-    AwsAccountId: str,
-    Namespace: str,
-    Email: str,
-    Role: UserRoleType,  # (1)
-    CustomPermissionsName: NotRequired[str],
-    UnapplyCustomPermissions: NotRequired[bool],
-    ExternalLoginFederationProviderType: NotRequired[str],
-    CustomFederationProviderUrl: NotRequired[str],
-    ExternalLoginId: NotRequired[str],
+class DescribeTemplateAliasResponseTypeDef(TypedDict):
+    TemplateAlias: TemplateAliasTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTemplateAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateAliasesResponseTypeDef
+
+def get_value() -> ListTemplateAliasesResponseTypeDef:
+    return {
+        "TemplateAliasList": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateAliasesResponseTypeDef(TypedDict):
+    TemplateAliasList: List[TemplateAliasTypeDef],  # (1)
+    Status: int,
+    RequestId: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTemplateAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasResponseTypeDef
+
+def get_value() -> UpdateTemplateAliasResponseTypeDef:
+    return {
+        "TemplateAlias": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTemplateAliasResponseTypeDef(TypedDict):
+    TemplateAlias: TemplateAliasTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateAliasTypeDef](./type_defs.md#templatealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThemeAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateThemeAliasResponseTypeDef
+
+def get_value() -> CreateThemeAliasResponseTypeDef:
+    return {
+        "ThemeAlias": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThemeAliasResponseTypeDef(TypedDict):
+    ThemeAlias: ThemeAliasTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThemeAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemeAliasResponseTypeDef
+
+def get_value() -> DescribeThemeAliasResponseTypeDef:
+    return {
+        "ThemeAlias": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemeAliasResponseTypeDef(TypedDict):
+    ThemeAlias: ThemeAliasTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThemeAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListThemeAliasesResponseTypeDef
+
+def get_value() -> ListThemeAliasesResponseTypeDef:
+    return {
+        "ThemeAliasList": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemeAliasesResponseTypeDef(TypedDict):
+    ThemeAliasList: List[ThemeAliasTypeDef],  # (1)
+    Status: int,
+    RequestId: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateThemeAliasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateThemeAliasResponseTypeDef
+
+def get_value() -> UpdateThemeAliasResponseTypeDef:
+    return {
+        "ThemeAlias": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThemeAliasResponseTypeDef(TypedDict):
+    ThemeAlias: ThemeAliasTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CustomSqlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomSqlTypeDef
+
+def get_value() -> CustomSqlTypeDef:
+    return {
+        "DataSourceArn": ...,
+        "Name": ...,
+        "SqlQuery": ...,
+    }
+```
+
+```python title="Definition"
+class CustomSqlTypeDef(TypedDict):
+    DataSourceArn: str,
+    Name: str,
+    SqlQuery: str,
+    Columns: NotRequired[Sequence[InputColumnTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
+## RelationalTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RelationalTableTypeDef
+
+def get_value() -> RelationalTableTypeDef:
+    return {
+        "DataSourceArn": ...,
+        "Name": ...,
+        "InputColumns": ...,
+    }
+```
+
+```python title="Definition"
+class RelationalTableTypeDef(TypedDict):
+    DataSourceArn: str,
+    Name: str,
+    InputColumns: Sequence[InputColumnTypeDef],  # (1)
+    Catalog: NotRequired[str],
+    Schema: NotRequired[str],
+```
+
+1. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
+## DashboardVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardVersionTypeDef
+
+def get_value() -> DashboardVersionTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardVersionTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    Errors: NotRequired[List[DashboardErrorTypeDef]],  # (1)
+    VersionNumber: NotRequired[int],
+    Status: NotRequired[ResourceStatusType],  # (2)
+    Arn: NotRequired[str],
+    SourceEntityArn: NotRequired[str],
+    DataSetArns: NotRequired[List[str]],
+    Description: NotRequired[str],
+    ThemeArn: NotRequired[str],
+    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
+## DashboardPublishOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardPublishOptionsTypeDef
+
+def get_value() -> DashboardPublishOptionsTypeDef:
+    return {
+        "AdHocFilteringOption": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardPublishOptionsTypeDef(TypedDict):
+    AdHocFilteringOption: NotRequired[AdHocFilteringOptionTypeDef],  # (1)
+    ExportToCSVOption: NotRequired[ExportToCSVOptionTypeDef],  # (2)
+    SheetControlsOption: NotRequired[SheetControlsOptionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef) 
+2. See [:material-code-braces: ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef) 
+3. See [:material-code-braces: SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef) 
+## SearchDashboardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestRequestTypeDef
+
+def get_value() -> SearchDashboardsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDashboardsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DashboardSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
+## ListDashboardsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardsResponseTypeDef
+
+def get_value() -> ListDashboardsResponseTypeDef:
+    return {
+        "DashboardSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsResponseTypeDef(TypedDict):
+    DashboardSummaryList: List[DashboardSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchDashboardsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDashboardsResponseTypeDef
+
+def get_value() -> SearchDashboardsResponseTypeDef:
+    return {
+        "DashboardSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDashboardsResponseTypeDef(TypedDict):
+    DashboardSummaryList: List[DashboardSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDashboardVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardVersionsResponseTypeDef
+
+def get_value() -> ListDashboardVersionsResponseTypeDef:
+    return {
+        "DashboardVersionSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardVersionsResponseTypeDef(TypedDict):
+    DashboardVersionSummaryList: List[DashboardVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DashboardVersionSummaryTypeDef](./type_defs.md#dashboardversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFolderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeFolderResponseTypeDef
+
+def get_value() -> DescribeFolderResponseTypeDef:
+    return {
+        "Status": ...,
+        "Folder": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderResponseTypeDef(TypedDict):
+    Status: int,
+    Folder: FolderTypeDef,  # (1)
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FolderTypeDef](./type_defs.md#foldertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIAMPolicyAssignmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentResponseTypeDef
+
+def get_value() -> DescribeIAMPolicyAssignmentResponseTypeDef:
+    return {
+        "IAMPolicyAssignment": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIAMPolicyAssignmentResponseTypeDef(TypedDict):
+    IAMPolicyAssignment: IAMPolicyAssignmentTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IAMPolicyAssignmentTypeDef](./type_defs.md#iampolicyassignmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeUserResponseTypeDef
+
+def get_value() -> DescribeUserResponseTypeDef:
+    return {
+        "User": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "UserList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    UserList: List[UserTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisterUserResponseTypeDef
+
+def get_value() -> RegisterUserResponseTypeDef:
+    return {
+        "User": ...,
+        "UserInvitationUrl": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    UserInvitationUrl: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserResponseTypeDef
 
 ```python title="Usage Example"
@@ -8687,69 +6734,2022 @@ class UpdateUserResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UploadSettingsTypeDef
+## SearchFoldersRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UploadSettingsTypeDef
+from mypy_boto3_quicksight.type_defs import SearchFoldersRequestRequestTypeDef
 
-def get_value() -> UploadSettingsTypeDef:
+def get_value() -> SearchFoldersRequestRequestTypeDef:
     return {
-        "Format": ...,
+        "AwsAccountId": ...,
+        "Filters": ...,
     }
 ```
 
 ```python title="Definition"
-class UploadSettingsTypeDef(TypedDict):
-    Format: NotRequired[FileFormatType],  # (1)
-    StartFromRow: NotRequired[int],
-    ContainsHeader: NotRequired[bool],
-    TextQualifier: NotRequired[TextQualifierType],  # (2)
-    Delimiter: NotRequired[str],
+class SearchFoldersRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[FolderSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
-2. See [:material-code-brackets: TextQualifierType](./literals.md#textqualifiertype) 
-## UserTypeDef
+1. See [:material-code-braces: FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef) 
+## ListFoldersResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UserTypeDef
+from mypy_boto3_quicksight.type_defs import ListFoldersResponseTypeDef
 
-def get_value() -> UserTypeDef:
+def get_value() -> ListFoldersResponseTypeDef:
+    return {
+        "Status": ...,
+        "FolderSummaryList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFoldersResponseTypeDef(TypedDict):
+    Status: int,
+    FolderSummaryList: List[FolderSummaryTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchFoldersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchFoldersResponseTypeDef
+
+def get_value() -> SearchFoldersResponseTypeDef:
+    return {
+        "Status": ...,
+        "FolderSummaryList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchFoldersResponseTypeDef(TypedDict):
+    Status: int,
+    FolderSummaryList: List[FolderSummaryTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchGroupsRequestRequestTypeDef
+
+def get_value() -> SearchGroupsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchGroupsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    Filters: Sequence[GroupSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef) 
+## ListIAMPolicyAssignmentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsResponseTypeDef
+
+def get_value() -> ListIAMPolicyAssignmentsResponseTypeDef:
+    return {
+        "IAMPolicyAssignments": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIAMPolicyAssignmentsResponseTypeDef(TypedDict):
+    IAMPolicyAssignments: List[IAMPolicyAssignmentSummaryTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IAMPolicyAssignmentSummaryTypeDef](./type_defs.md#iampolicyassignmentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IngestionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IngestionTypeDef
+
+def get_value() -> IngestionTypeDef:
+    return {
+        "Arn": ...,
+        "IngestionStatus": ...,
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class IngestionTypeDef(TypedDict):
+    Arn: str,
+    IngestionStatus: IngestionStatusType,  # (1)
+    CreatedTime: datetime,
+    IngestionId: NotRequired[str],
+    ErrorInfo: NotRequired[ErrorInfoTypeDef],  # (2)
+    RowInfo: NotRequired[RowInfoTypeDef],  # (3)
+    QueueInfo: NotRequired[QueueInfoTypeDef],  # (4)
+    IngestionTimeInSeconds: NotRequired[int],
+    IngestionSizeInBytes: NotRequired[int],
+    RequestSource: NotRequired[IngestionRequestSourceType],  # (5)
+    RequestType: NotRequired[IngestionRequestTypeType],  # (6)
+```
+
+1. See [:material-code-brackets: IngestionStatusType](./literals.md#ingestionstatustype) 
+2. See [:material-code-braces: ErrorInfoTypeDef](./type_defs.md#errorinfotypedef) 
+3. See [:material-code-braces: RowInfoTypeDef](./type_defs.md#rowinfotypedef) 
+4. See [:material-code-braces: QueueInfoTypeDef](./type_defs.md#queueinfotypedef) 
+5. See [:material-code-brackets: IngestionRequestSourceType](./literals.md#ingestionrequestsourcetype) 
+6. See [:material-code-brackets: IngestionRequestTypeType](./literals.md#ingestionrequesttypetype) 
+## JoinInstructionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import JoinInstructionTypeDef
+
+def get_value() -> JoinInstructionTypeDef:
+    return {
+        "LeftOperand": ...,
+        "RightOperand": ...,
+        "Type": ...,
+        "OnClause": ...,
+    }
+```
+
+```python title="Definition"
+class JoinInstructionTypeDef(TypedDict):
+    LeftOperand: str,
+    RightOperand: str,
+    Type: JoinTypeType,  # (3)
+    OnClause: str,
+    LeftJoinKeyProperties: NotRequired[JoinKeyPropertiesTypeDef],  # (1)
+    RightJoinKeyProperties: NotRequired[JoinKeyPropertiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
+2. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
+3. See [:material-code-brackets: JoinTypeType](./literals.md#jointypetype) 
+## ListAnalysesRequestListAnalysesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListAnalysesRequestListAnalysesPaginateTypeDef
+
+def get_value() -> ListAnalysesRequestListAnalysesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnalysesRequestListAnalysesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef
+
+def get_value() -> ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDashboardsRequestListDashboardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDashboardsRequestListDashboardsPaginateTypeDef
+
+def get_value() -> ListDashboardsRequestListDashboardsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsRequestListDashboardsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDataSetsRequestListDataSetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSetsRequestListDataSetsPaginateTypeDef
+
+def get_value() -> ListDataSetsRequestListDataSetsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSetsRequestListDataSetsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDataSourcesRequestListDataSourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestListDataSourcesPaginateTypeDef
+
+def get_value() -> ListDataSourcesRequestListDataSourcesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSourcesRequestListDataSourcesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListIngestionsRequestListIngestionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIngestionsRequestListIngestionsPaginateTypeDef
+
+def get_value() -> ListIngestionsRequestListIngestionsPaginateTypeDef:
+    return {
+        "DataSetId": ...,
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIngestionsRequestListIngestionsPaginateTypeDef(TypedDict):
+    DataSetId: str,
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListNamespacesRequestListNamespacesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListNamespacesRequestListNamespacesPaginateTypeDef
+
+def get_value() -> ListNamespacesRequestListNamespacesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListNamespacesRequestListNamespacesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef
+
+def get_value() -> ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef
+
+def get_value() -> ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTemplatesRequestListTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplatesRequestListTemplatesPaginateTypeDef
+
+def get_value() -> ListTemplatesRequestListTemplatesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplatesRequestListTemplatesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThemeVersionsRequestListThemeVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestListThemeVersionsPaginateTypeDef
+
+def get_value() -> ListThemeVersionsRequestListThemeVersionsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemeVersionsRequestListThemeVersionsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThemesRequestListThemesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListThemesRequestListThemesPaginateTypeDef
+
+def get_value() -> ListThemesRequestListThemesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemesRequestListThemesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    Type: NotRequired[ThemeTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchAnalysesRequestSearchAnalysesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestSearchAnalysesPaginateTypeDef
+
+def get_value() -> SearchAnalysesRequestSearchAnalysesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchAnalysesRequestSearchAnalysesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[AnalysisSearchFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchDashboardsRequestSearchDashboardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestSearchDashboardsPaginateTypeDef
+
+def get_value() -> SearchDashboardsRequestSearchDashboardsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDashboardsRequestSearchDashboardsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DashboardSearchFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFolderMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListFolderMembersResponseTypeDef
+
+def get_value() -> ListFolderMembersResponseTypeDef:
+    return {
+        "Status": ...,
+        "FolderMemberList": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFolderMembersResponseTypeDef(TypedDict):
+    Status: int,
+    FolderMemberList: List[MemberIdArnPairTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MemberIdArnPairTypeDef](./type_defs.md#memberidarnpairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTemplateVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplateVersionsResponseTypeDef
+
+def get_value() -> ListTemplateVersionsResponseTypeDef:
+    return {
+        "TemplateVersionSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateVersionsResponseTypeDef(TypedDict):
+    TemplateVersionSummaryList: List[TemplateVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateVersionSummaryTypeDef](./type_defs.md#templateversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListTemplatesResponseTypeDef
+
+def get_value() -> ListTemplatesResponseTypeDef:
+    return {
+        "TemplateSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplatesResponseTypeDef(TypedDict):
+    TemplateSummaryList: List[TemplateSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateSummaryTypeDef](./type_defs.md#templatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThemeVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListThemeVersionsResponseTypeDef
+
+def get_value() -> ListThemeVersionsResponseTypeDef:
+    return {
+        "ThemeVersionSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemeVersionsResponseTypeDef(TypedDict):
+    ThemeVersionSummaryList: List[ThemeVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeVersionSummaryTypeDef](./type_defs.md#themeversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThemesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListThemesResponseTypeDef
+
+def get_value() -> ListThemesResponseTypeDef:
+    return {
+        "ThemeSummaryList": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemesResponseTypeDef(TypedDict):
+    ThemeSummaryList: List[ThemeSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## S3ParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import S3ParametersTypeDef
+
+def get_value() -> S3ParametersTypeDef:
+    return {
+        "ManifestFileLocation": ...,
+    }
+```
+
+```python title="Definition"
+class S3ParametersTypeDef(TypedDict):
+    ManifestFileLocation: ManifestFileLocationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ManifestFileLocationTypeDef](./type_defs.md#manifestfilelocationtypedef) 
+## TileLayoutStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TileLayoutStyleTypeDef
+
+def get_value() -> TileLayoutStyleTypeDef:
+    return {
+        "Gutter": ...,
+    }
+```
+
+```python title="Definition"
+class TileLayoutStyleTypeDef(TypedDict):
+    Gutter: NotRequired[GutterStyleTypeDef],  # (1)
+    Margin: NotRequired[MarginStyleTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GutterStyleTypeDef](./type_defs.md#gutterstyletypedef) 
+2. See [:material-code-braces: MarginStyleTypeDef](./type_defs.md#marginstyletypedef) 
+## NamespaceInfoV2TypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NamespaceInfoV2TypeDef
+
+def get_value() -> NamespaceInfoV2TypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class NamespaceInfoV2TypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    CapacityRegion: NotRequired[str],
+    CreationStatus: NotRequired[NamespaceStatusType],  # (1)
+    IdentityStore: NotRequired[IdentityStoreType],  # (2)
+    NamespaceError: NotRequired[NamespaceErrorTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
+2. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
+3. See [:material-code-braces: NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef) 
+## ParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParametersTypeDef
+
+def get_value() -> ParametersTypeDef:
+    return {
+        "StringParameters": ...,
+    }
+```
+
+```python title="Definition"
+class ParametersTypeDef(TypedDict):
+    StringParameters: NotRequired[Sequence[StringParameterTypeDef]],  # (1)
+    IntegerParameters: NotRequired[Sequence[IntegerParameterTypeDef]],  # (2)
+    DecimalParameters: NotRequired[Sequence[DecimalParameterTypeDef]],  # (3)
+    DateTimeParameters: NotRequired[Sequence[DateTimeParameterTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: StringParameterTypeDef](./type_defs.md#stringparametertypedef) 
+2. See [:material-code-braces: IntegerParameterTypeDef](./type_defs.md#integerparametertypedef) 
+3. See [:material-code-braces: DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef) 
+4. See [:material-code-braces: DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef) 
+## RegisteredUserEmbeddingExperienceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RegisteredUserEmbeddingExperienceConfigurationTypeDef
+
+def get_value() -> RegisteredUserEmbeddingExperienceConfigurationTypeDef:
+    return {
+        "Dashboard": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
+    Dashboard: NotRequired[RegisteredUserDashboardEmbeddingConfigurationTypeDef],  # (1)
+    QuickSightConsole: NotRequired[RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef],  # (2)
+    QSearchBar: NotRequired[RegisteredUserQSearchBarEmbeddingConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef) 
+2. See [:material-code-braces: RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef) 
+3. See [:material-code-braces: RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef) 
+## RowLevelPermissionTagConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagConfigurationTypeDef
+
+def get_value() -> RowLevelPermissionTagConfigurationTypeDef:
+    return {
+        "TagRules": ...,
+    }
+```
+
+```python title="Definition"
+class RowLevelPermissionTagConfigurationTypeDef(TypedDict):
+    TagRules: Sequence[RowLevelPermissionTagRuleTypeDef],  # (2)
+    Status: NotRequired[StatusType],  # (1)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: RowLevelPermissionTagRuleTypeDef](./type_defs.md#rowlevelpermissiontagruletypedef) 
+## S3SourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import S3SourceTypeDef
+
+def get_value() -> S3SourceTypeDef:
+    return {
+        "DataSourceArn": ...,
+        "InputColumns": ...,
+    }
+```
+
+```python title="Definition"
+class S3SourceTypeDef(TypedDict):
+    DataSourceArn: str,
+    InputColumns: Sequence[InputColumnTypeDef],  # (2)
+    UploadSettings: NotRequired[UploadSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef) 
+2. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
+## AnalysisSourceEntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisSourceEntityTypeDef
+
+def get_value() -> AnalysisSourceEntityTypeDef:
+    return {
+        "SourceTemplate": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisSourceEntityTypeDef(TypedDict):
+    SourceTemplate: NotRequired[AnalysisSourceTemplateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AnalysisSourceTemplateTypeDef](./type_defs.md#analysissourcetemplatetypedef) 
+## DashboardSourceEntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardSourceEntityTypeDef
+
+def get_value() -> DashboardSourceEntityTypeDef:
+    return {
+        "SourceTemplate": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardSourceEntityTypeDef(TypedDict):
+    SourceTemplate: NotRequired[DashboardSourceTemplateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DashboardSourceTemplateTypeDef](./type_defs.md#dashboardsourcetemplatetypedef) 
+## TemplateSourceEntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateSourceEntityTypeDef
+
+def get_value() -> TemplateSourceEntityTypeDef:
+    return {
+        "SourceAnalysis": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateSourceEntityTypeDef(TypedDict):
+    SourceAnalysis: NotRequired[TemplateSourceAnalysisTypeDef],  # (1)
+    SourceTemplate: NotRequired[TemplateSourceTemplateTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TemplateSourceAnalysisTypeDef](./type_defs.md#templatesourceanalysistypedef) 
+2. See [:material-code-braces: TemplateSourceTemplateTypeDef](./type_defs.md#templatesourcetemplatetypedef) 
+## DescribeAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
+
+def get_value() -> DescribeAnalysisResponseTypeDef:
+    return {
+        "Analysis": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisResponseTypeDef(TypedDict):
+    Analysis: AnalysisTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnalysisTypeDef](./type_defs.md#analysistypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
+
+def get_value() -> GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Namespace": ...,
+        "AuthorizedResourceArns": ...,
+        "ExperienceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Namespace: str,
+    AuthorizedResourceArns: Sequence[str],
+    ExperienceConfiguration: AnonymousUserEmbeddingExperienceConfigurationTypeDef,  # (1)
+    SessionLifetimeInMinutes: NotRequired[int],
+    SessionTags: NotRequired[Sequence[SessionTagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef) 
+2. See [:material-code-braces: SessionTagTypeDef](./type_defs.md#sessiontagtypedef) 
+## TagColumnOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TagColumnOperationTypeDef
+
+def get_value() -> TagColumnOperationTypeDef:
+    return {
+        "ColumnName": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagColumnOperationTypeDef(TypedDict):
+    ColumnName: str,
+    Tags: Sequence[ColumnTagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ColumnTagTypeDef](./type_defs.md#columntagtypedef) 
+## DataSetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetConfigurationTypeDef
+
+def get_value() -> DataSetConfigurationTypeDef:
+    return {
+        "Placeholder": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetConfigurationTypeDef(TypedDict):
+    Placeholder: NotRequired[str],
+    DataSetSchema: NotRequired[DataSetSchemaTypeDef],  # (1)
+    ColumnGroupSchemaList: NotRequired[List[ColumnGroupSchemaTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DataSetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: ColumnGroupSchemaTypeDef](./type_defs.md#columngroupschematypedef) 
+## DescribeDashboardPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsResponseTypeDef
+
+def get_value() -> DescribeDashboardPermissionsResponseTypeDef:
+    return {
+        "DashboardId": ...,
+        "DashboardArn": ...,
+        "Permissions": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "LinkSharingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardPermissionsResponseTypeDef(TypedDict):
+    DashboardId: str,
+    DashboardArn: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    Status: int,
+    RequestId: str,
+    LinkSharingConfiguration: LinkSharingConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDashboardPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsResponseTypeDef
+
+def get_value() -> UpdateDashboardPermissionsResponseTypeDef:
+    return {
+        "DashboardArn": ...,
+        "DashboardId": ...,
+        "Permissions": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "LinkSharingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardPermissionsResponseTypeDef(TypedDict):
+    DashboardArn: str,
+    DashboardId: str,
+    Permissions: List[ResourcePermissionTypeDef],  # (1)
+    RequestId: str,
+    Status: int,
+    LinkSharingConfiguration: LinkSharingConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataSetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSetsResponseTypeDef
+
+def get_value() -> ListDataSetsResponseTypeDef:
+    return {
+        "DataSetSummaries": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSetsResponseTypeDef(TypedDict):
+    DataSetSummaries: List[DataSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DashboardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardTypeDef
+
+def get_value() -> DashboardTypeDef:
+    return {
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardTypeDef(TypedDict):
+    DashboardId: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[DashboardVersionTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastPublishedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: DashboardVersionTypeDef](./type_defs.md#dashboardversiontypedef) 
+## DescribeIngestionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseTypeDef
+
+def get_value() -> DescribeIngestionResponseTypeDef:
+    return {
+        "Ingestion": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIngestionResponseTypeDef(TypedDict):
+    Ingestion: IngestionTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IngestionTypeDef](./type_defs.md#ingestiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIngestionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListIngestionsResponseTypeDef
+
+def get_value() -> ListIngestionsResponseTypeDef:
+    return {
+        "Ingestions": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIngestionsResponseTypeDef(TypedDict):
+    Ingestions: List[IngestionTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IngestionTypeDef](./type_defs.md#ingestiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LogicalTableSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LogicalTableSourceTypeDef
+
+def get_value() -> LogicalTableSourceTypeDef:
+    return {
+        "JoinInstruction": ...,
+    }
+```
+
+```python title="Definition"
+class LogicalTableSourceTypeDef(TypedDict):
+    JoinInstruction: NotRequired[JoinInstructionTypeDef],  # (1)
+    PhysicalTableId: NotRequired[str],
+    DataSetArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef) 
+## DataSourceParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSourceParametersTypeDef
+
+def get_value() -> DataSourceParametersTypeDef:
+    return {
+        "AmazonElasticsearchParameters": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceParametersTypeDef(TypedDict):
+    AmazonElasticsearchParameters: NotRequired[AmazonElasticsearchParametersTypeDef],  # (1)
+    AthenaParameters: NotRequired[AthenaParametersTypeDef],  # (2)
+    AuroraParameters: NotRequired[AuroraParametersTypeDef],  # (3)
+    AuroraPostgreSqlParameters: NotRequired[AuroraPostgreSqlParametersTypeDef],  # (4)
+    AwsIotAnalyticsParameters: NotRequired[AwsIotAnalyticsParametersTypeDef],  # (5)
+    JiraParameters: NotRequired[JiraParametersTypeDef],  # (6)
+    MariaDbParameters: NotRequired[MariaDbParametersTypeDef],  # (7)
+    MySqlParameters: NotRequired[MySqlParametersTypeDef],  # (8)
+    OracleParameters: NotRequired[OracleParametersTypeDef],  # (9)
+    PostgreSqlParameters: NotRequired[PostgreSqlParametersTypeDef],  # (10)
+    PrestoParameters: NotRequired[PrestoParametersTypeDef],  # (11)
+    RdsParameters: NotRequired[RdsParametersTypeDef],  # (12)
+    RedshiftParameters: NotRequired[RedshiftParametersTypeDef],  # (13)
+    S3Parameters: NotRequired[S3ParametersTypeDef],  # (14)
+    ServiceNowParameters: NotRequired[ServiceNowParametersTypeDef],  # (15)
+    SnowflakeParameters: NotRequired[SnowflakeParametersTypeDef],  # (16)
+    SparkParameters: NotRequired[SparkParametersTypeDef],  # (17)
+    SqlServerParameters: NotRequired[SqlServerParametersTypeDef],  # (18)
+    TeradataParameters: NotRequired[TeradataParametersTypeDef],  # (19)
+    TwitterParameters: NotRequired[TwitterParametersTypeDef],  # (20)
+    AmazonOpenSearchParameters: NotRequired[AmazonOpenSearchParametersTypeDef],  # (21)
+    ExasolParameters: NotRequired[ExasolParametersTypeDef],  # (22)
+```
+
+1. See [:material-code-braces: AmazonElasticsearchParametersTypeDef](./type_defs.md#amazonelasticsearchparameterstypedef) 
+2. See [:material-code-braces: AthenaParametersTypeDef](./type_defs.md#athenaparameterstypedef) 
+3. See [:material-code-braces: AuroraParametersTypeDef](./type_defs.md#auroraparameterstypedef) 
+4. See [:material-code-braces: AuroraPostgreSqlParametersTypeDef](./type_defs.md#aurorapostgresqlparameterstypedef) 
+5. See [:material-code-braces: AwsIotAnalyticsParametersTypeDef](./type_defs.md#awsiotanalyticsparameterstypedef) 
+6. See [:material-code-braces: JiraParametersTypeDef](./type_defs.md#jiraparameterstypedef) 
+7. See [:material-code-braces: MariaDbParametersTypeDef](./type_defs.md#mariadbparameterstypedef) 
+8. See [:material-code-braces: MySqlParametersTypeDef](./type_defs.md#mysqlparameterstypedef) 
+9. See [:material-code-braces: OracleParametersTypeDef](./type_defs.md#oracleparameterstypedef) 
+10. See [:material-code-braces: PostgreSqlParametersTypeDef](./type_defs.md#postgresqlparameterstypedef) 
+11. See [:material-code-braces: PrestoParametersTypeDef](./type_defs.md#prestoparameterstypedef) 
+12. See [:material-code-braces: RdsParametersTypeDef](./type_defs.md#rdsparameterstypedef) 
+13. See [:material-code-braces: RedshiftParametersTypeDef](./type_defs.md#redshiftparameterstypedef) 
+14. See [:material-code-braces: S3ParametersTypeDef](./type_defs.md#s3parameterstypedef) 
+15. See [:material-code-braces: ServiceNowParametersTypeDef](./type_defs.md#servicenowparameterstypedef) 
+16. See [:material-code-braces: SnowflakeParametersTypeDef](./type_defs.md#snowflakeparameterstypedef) 
+17. See [:material-code-braces: SparkParametersTypeDef](./type_defs.md#sparkparameterstypedef) 
+18. See [:material-code-braces: SqlServerParametersTypeDef](./type_defs.md#sqlserverparameterstypedef) 
+19. See [:material-code-braces: TeradataParametersTypeDef](./type_defs.md#teradataparameterstypedef) 
+20. See [:material-code-braces: TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef) 
+21. See [:material-code-braces: AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef) 
+22. See [:material-code-braces: ExasolParametersTypeDef](./type_defs.md#exasolparameterstypedef) 
+## SheetStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetStyleTypeDef
+
+def get_value() -> SheetStyleTypeDef:
+    return {
+        "Tile": ...,
+    }
+```
+
+```python title="Definition"
+class SheetStyleTypeDef(TypedDict):
+    Tile: NotRequired[TileStyleTypeDef],  # (1)
+    TileLayout: NotRequired[TileLayoutStyleTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TileStyleTypeDef](./type_defs.md#tilestyletypedef) 
+2. See [:material-code-braces: TileLayoutStyleTypeDef](./type_defs.md#tilelayoutstyletypedef) 
+## DescribeNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeNamespaceResponseTypeDef
+
+def get_value() -> DescribeNamespaceResponseTypeDef:
+    return {
+        "Namespace": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNamespaceResponseTypeDef(TypedDict):
+    Namespace: NamespaceInfoV2TypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNamespacesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListNamespacesResponseTypeDef
+
+def get_value() -> ListNamespacesResponseTypeDef:
+    return {
+        "Namespaces": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListNamespacesResponseTypeDef(TypedDict):
+    Namespaces: List[NamespaceInfoV2TypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+
+def get_value() -> GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "UserArn": ...,
+        "ExperienceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    UserArn: str,
+    ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
+    SessionLifetimeInMinutes: NotRequired[int],
+```
+
+1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
+## PhysicalTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PhysicalTableTypeDef
+
+def get_value() -> PhysicalTableTypeDef:
+    return {
+        "RelationalTable": ...,
+    }
+```
+
+```python title="Definition"
+class PhysicalTableTypeDef(TypedDict):
+    RelationalTable: NotRequired[RelationalTableTypeDef],  # (1)
+    CustomSql: NotRequired[CustomSqlTypeDef],  # (2)
+    S3Source: NotRequired[S3SourceTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: RelationalTableTypeDef](./type_defs.md#relationaltabletypedef) 
+2. See [:material-code-braces: CustomSqlTypeDef](./type_defs.md#customsqltypedef) 
+3. See [:material-code-braces: S3SourceTypeDef](./type_defs.md#s3sourcetypedef) 
+## CreateAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestRequestTypeDef
+
+def get_value() -> CreateAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+        "Name": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
+    Parameters: NotRequired[ParametersTypeDef],  # (2)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
+    ThemeArn: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestRequestTypeDef
+
+def get_value() -> UpdateAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+        "Name": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
+    Parameters: NotRequired[ParametersTypeDef],  # (2)
+    ThemeArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+## CreateDashboardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDashboardRequestRequestTypeDef
+
+def get_value() -> CreateDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "Name": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
+    Parameters: NotRequired[ParametersTypeDef],  # (2)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    VersionDescription: NotRequired[str],
+    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (5)
+    ThemeArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+## UpdateDashboardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestRequestTypeDef
+
+def get_value() -> UpdateDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "Name": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
+    Parameters: NotRequired[ParametersTypeDef],  # (2)
+    VersionDescription: NotRequired[str],
+    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (3)
+    ThemeArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+## CreateTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateTemplateRequestRequestTypeDef
+
+def get_value() -> CreateTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+    Name: NotRequired[str],
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    VersionDescription: NotRequired[str],
+```
+
+1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+        "SourceEntity": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+    VersionDescription: NotRequired[str],
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+## TransformOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TransformOperationTypeDef
+
+def get_value() -> TransformOperationTypeDef:
+    return {
+        "ProjectOperation": ...,
+    }
+```
+
+```python title="Definition"
+class TransformOperationTypeDef(TypedDict):
+    ProjectOperation: NotRequired[ProjectOperationTypeDef],  # (1)
+    FilterOperation: NotRequired[FilterOperationTypeDef],  # (2)
+    CreateColumnsOperation: NotRequired[CreateColumnsOperationTypeDef],  # (3)
+    RenameColumnOperation: NotRequired[RenameColumnOperationTypeDef],  # (4)
+    CastColumnTypeOperation: NotRequired[CastColumnTypeOperationTypeDef],  # (5)
+    TagColumnOperation: NotRequired[TagColumnOperationTypeDef],  # (6)
+    UntagColumnOperation: NotRequired[UntagColumnOperationTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: ProjectOperationTypeDef](./type_defs.md#projectoperationtypedef) 
+2. See [:material-code-braces: FilterOperationTypeDef](./type_defs.md#filteroperationtypedef) 
+3. See [:material-code-braces: CreateColumnsOperationTypeDef](./type_defs.md#createcolumnsoperationtypedef) 
+4. See [:material-code-braces: RenameColumnOperationTypeDef](./type_defs.md#renamecolumnoperationtypedef) 
+5. See [:material-code-braces: CastColumnTypeOperationTypeDef](./type_defs.md#castcolumntypeoperationtypedef) 
+6. See [:material-code-braces: TagColumnOperationTypeDef](./type_defs.md#tagcolumnoperationtypedef) 
+7. See [:material-code-braces: UntagColumnOperationTypeDef](./type_defs.md#untagcolumnoperationtypedef) 
+## TemplateVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateVersionTypeDef
+
+def get_value() -> TemplateVersionTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateVersionTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    Errors: NotRequired[List[TemplateErrorTypeDef]],  # (1)
+    VersionNumber: NotRequired[int],
+    Status: NotRequired[ResourceStatusType],  # (2)
+    DataSetConfigurations: NotRequired[List[DataSetConfigurationTypeDef]],  # (3)
+    Description: NotRequired[str],
+    SourceEntityArn: NotRequired[str],
+    ThemeArn: NotRequired[str],
+    Sheets: NotRequired[List[SheetTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: TemplateErrorTypeDef](./type_defs.md#templateerrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef) 
+4. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
+## DescribeDashboardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
+
+def get_value() -> DescribeDashboardResponseTypeDef:
+    return {
+        "Dashboard": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardResponseTypeDef(TypedDict):
+    Dashboard: DashboardTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DashboardTypeDef](./type_defs.md#dashboardtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CredentialPairTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CredentialPairTypeDef
+
+def get_value() -> CredentialPairTypeDef:
+    return {
+        "Username": ...,
+        "Password": ...,
+    }
+```
+
+```python title="Definition"
+class CredentialPairTypeDef(TypedDict):
+    Username: str,
+    Password: str,
+    AlternateDataSourceParameters: NotRequired[Sequence[DataSourceParametersTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+## DataSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
     return {
         "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class UserTypeDef(TypedDict):
+class DataSourceTypeDef(TypedDict):
     Arn: NotRequired[str],
-    UserName: NotRequired[str],
-    Email: NotRequired[str],
-    Role: NotRequired[UserRoleType],  # (1)
-    IdentityType: NotRequired[IdentityTypeType],  # (2)
-    Active: NotRequired[bool],
-    PrincipalId: NotRequired[str],
-    CustomPermissionsName: NotRequired[str],
-    ExternalLoginFederationProviderType: NotRequired[str],
-    ExternalLoginFederationProviderUrl: NotRequired[str],
-    ExternalLoginId: NotRequired[str],
+    DataSourceId: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[DataSourceTypeType],  # (1)
+    Status: NotRequired[ResourceStatusType],  # (2)
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (3)
+    AlternateDataSourceParameters: NotRequired[List[DataSourceParametersTypeDef]],  # (4)
+    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (5)
+    SslProperties: NotRequired[SslPropertiesTypeDef],  # (6)
+    ErrorInfo: NotRequired[DataSourceErrorInfoTypeDef],  # (7)
 ```
 
-1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
-2. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
-## VpcConnectionPropertiesTypeDef
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+4. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+5. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
+6. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
+7. See [:material-code-braces: DataSourceErrorInfoTypeDef](./type_defs.md#datasourceerrorinfotypedef) 
+## ThemeConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import VpcConnectionPropertiesTypeDef
+from mypy_boto3_quicksight.type_defs import ThemeConfigurationTypeDef
 
-def get_value() -> VpcConnectionPropertiesTypeDef:
+def get_value() -> ThemeConfigurationTypeDef:
     return {
-        "VpcConnectionArn": ...,
+        "DataColorPalette": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcConnectionPropertiesTypeDef(TypedDict):
-    VpcConnectionArn: str,
+class ThemeConfigurationTypeDef(TypedDict):
+    DataColorPalette: NotRequired[DataColorPaletteTypeDef],  # (1)
+    UIColorPalette: NotRequired[UIColorPaletteTypeDef],  # (2)
+    Sheet: NotRequired[SheetStyleTypeDef],  # (3)
 ```
 
+1. See [:material-code-braces: DataColorPaletteTypeDef](./type_defs.md#datacolorpalettetypedef) 
+2. See [:material-code-braces: UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef) 
+3. See [:material-code-braces: SheetStyleTypeDef](./type_defs.md#sheetstyletypedef) 
+## LogicalTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LogicalTableTypeDef
+
+def get_value() -> LogicalTableTypeDef:
+    return {
+        "Alias": ...,
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class LogicalTableTypeDef(TypedDict):
+    Alias: str,
+    Source: LogicalTableSourceTypeDef,  # (2)
+    DataTransforms: NotRequired[Sequence[TransformOperationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TransformOperationTypeDef](./type_defs.md#transformoperationtypedef) 
+2. See [:material-code-braces: LogicalTableSourceTypeDef](./type_defs.md#logicaltablesourcetypedef) 
+## TemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateTypeDef
+
+def get_value() -> TemplateTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[TemplateVersionTypeDef],  # (1)
+    TemplateId: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+    CreatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: TemplateVersionTypeDef](./type_defs.md#templateversiontypedef) 
+## DataSourceCredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSourceCredentialsTypeDef
+
+def get_value() -> DataSourceCredentialsTypeDef:
+    return {
+        "CredentialPair": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceCredentialsTypeDef(TypedDict):
+    CredentialPair: NotRequired[CredentialPairTypeDef],  # (1)
+    CopySourceArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: CredentialPairTypeDef](./type_defs.md#credentialpairtypedef) 
+## DescribeDataSourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSourceResponseTypeDef
+
+def get_value() -> DescribeDataSourceResponseTypeDef:
+    return {
+        "DataSource": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourceResponseTypeDef(TypedDict):
+    DataSource: DataSourceTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataSourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseTypeDef
+
+def get_value() -> ListDataSourcesResponseTypeDef:
+    return {
+        "DataSources": ...,
+        "NextToken": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataSourcesResponseTypeDef(TypedDict):
+    DataSources: List[DataSourceTypeDef],  # (1)
+    NextToken: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateThemeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateThemeRequestRequestTypeDef
+
+def get_value() -> CreateThemeRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+        "Name": ...,
+        "BaseThemeId": ...,
+        "Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class CreateThemeRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    Name: str,
+    BaseThemeId: str,
+    Configuration: ThemeConfigurationTypeDef,  # (1)
+    VersionDescription: NotRequired[str],
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ThemeVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ThemeVersionTypeDef
+
+def get_value() -> ThemeVersionTypeDef:
+    return {
+        "VersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class ThemeVersionTypeDef(TypedDict):
+    VersionNumber: NotRequired[int],
+    Arn: NotRequired[str],
+    Description: NotRequired[str],
+    BaseThemeId: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    Configuration: NotRequired[ThemeConfigurationTypeDef],  # (1)
+    Errors: NotRequired[List[ThemeErrorTypeDef]],  # (2)
+    Status: NotRequired[ResourceStatusType],  # (3)
+```
+
+1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+2. See [:material-code-braces: ThemeErrorTypeDef](./type_defs.md#themeerrortypedef) 
+3. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+## UpdateThemeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateThemeRequestRequestTypeDef
+
+def get_value() -> UpdateThemeRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "ThemeId": ...,
+        "BaseThemeId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateThemeRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    ThemeId: str,
+    BaseThemeId: str,
+    Name: NotRequired[str],
+    VersionDescription: NotRequired[str],
+    Configuration: NotRequired[ThemeConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+## CreateDataSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDataSetRequestRequestTypeDef
+
+def get_value() -> CreateDataSetRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+        "Name": ...,
+        "PhysicalTableMap": ...,
+        "ImportMode": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataSetRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+    Name: str,
+    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
+    ImportMode: DataSetImportModeType,  # (2)
+    LogicalTableMap: NotRequired[Mapping[str, LogicalTableTypeDef]],  # (3)
+    ColumnGroups: NotRequired[Sequence[ColumnGroupTypeDef]],  # (4)
+    FieldFolders: NotRequired[Mapping[str, FieldFolderTypeDef]],  # (5)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (6)
+    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (7)
+    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (8)
+    ColumnLevelPermissionRules: NotRequired[Sequence[ColumnLevelPermissionRuleTypeDef]],  # (9)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (10)
+    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (11)
+```
+
+1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
+2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
+4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
+5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
+6. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+7. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+8. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
+9. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
+## DataSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetTypeDef
+
+def get_value() -> DataSetTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    DataSetId: NotRequired[str],
+    Name: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    PhysicalTableMap: NotRequired[Dict[str, PhysicalTableTypeDef]],  # (1)
+    LogicalTableMap: NotRequired[Dict[str, LogicalTableTypeDef]],  # (2)
+    OutputColumns: NotRequired[List[OutputColumnTypeDef]],  # (3)
+    ImportMode: NotRequired[DataSetImportModeType],  # (4)
+    ConsumedSpiceCapacityInBytes: NotRequired[int],
+    ColumnGroups: NotRequired[List[ColumnGroupTypeDef]],  # (5)
+    FieldFolders: NotRequired[Dict[str, FieldFolderTypeDef]],  # (6)
+    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (7)
+    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (8)
+    ColumnLevelPermissionRules: NotRequired[List[ColumnLevelPermissionRuleTypeDef]],  # (9)
+    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (10)
+```
+
+1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
+2. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
+3. See [:material-code-braces: OutputColumnTypeDef](./type_defs.md#outputcolumntypedef) 
+4. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+5. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
+6. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
+7. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+8. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
+9. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
+10. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
+## UpdateDataSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSetRequestRequestTypeDef
+
+def get_value() -> UpdateDataSetRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSetId": ...,
+        "Name": ...,
+        "PhysicalTableMap": ...,
+        "ImportMode": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSetRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSetId: str,
+    Name: str,
+    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
+    ImportMode: DataSetImportModeType,  # (2)
+    LogicalTableMap: NotRequired[Mapping[str, LogicalTableTypeDef]],  # (3)
+    ColumnGroups: NotRequired[Sequence[ColumnGroupTypeDef]],  # (4)
+    FieldFolders: NotRequired[Mapping[str, FieldFolderTypeDef]],  # (5)
+    RowLevelPermissionDataSet: NotRequired[RowLevelPermissionDataSetTypeDef],  # (6)
+    RowLevelPermissionTagConfiguration: NotRequired[RowLevelPermissionTagConfigurationTypeDef],  # (7)
+    ColumnLevelPermissionRules: NotRequired[Sequence[ColumnLevelPermissionRuleTypeDef]],  # (8)
+    DataSetUsageConfiguration: NotRequired[DataSetUsageConfigurationTypeDef],  # (9)
+```
+
+1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
+2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
+4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
+5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
+6. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+7. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
+8. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
+9. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
+## DescribeTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplateResponseTypeDef
+
+def get_value() -> DescribeTemplateResponseTypeDef:
+    return {
+        "Template": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplateResponseTypeDef(TypedDict):
+    Template: TemplateTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDataSourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDataSourceRequestRequestTypeDef
+
+def get_value() -> CreateDataSourceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSourceId": ...,
+        "Name": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataSourceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSourceId: str,
+    Name: str,
+    Type: DataSourceTypeType,  # (1)
+    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (2)
+    Credentials: NotRequired[DataSourceCredentialsTypeDef],  # (3)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (4)
+    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (5)
+    SslProperties: NotRequired[SslPropertiesTypeDef],  # (6)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+```
+
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+3. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
+4. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+5. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
+6. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateDataSourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDataSourceRequestRequestTypeDef
+
+def get_value() -> UpdateDataSourceRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DataSourceId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSourceRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DataSourceId: str,
+    Name: str,
+    DataSourceParameters: NotRequired[DataSourceParametersTypeDef],  # (1)
+    Credentials: NotRequired[DataSourceCredentialsTypeDef],  # (2)
+    VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (3)
+    SslProperties: NotRequired[SslPropertiesTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+2. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
+3. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
+4. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
+## ThemeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ThemeTypeDef
+
+def get_value() -> ThemeTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ThemeTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    ThemeId: NotRequired[str],
+    Version: NotRequired[ThemeVersionTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    Type: NotRequired[ThemeTypeType],  # (2)
+```
+
+1. See [:material-code-braces: ThemeVersionTypeDef](./type_defs.md#themeversiontypedef) 
+2. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
+## DescribeDataSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDataSetResponseTypeDef
+
+def get_value() -> DescribeDataSetResponseTypeDef:
+    return {
+        "DataSet": ...,
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSetResponseTypeDef(TypedDict):
+    DataSet: DataSetTypeDef,  # (1)
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSetTypeDef](./type_defs.md#datasettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeThemeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeThemeResponseTypeDef
+
+def get_value() -> DescribeThemeResponseTypeDef:
+    return {
+        "Theme": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeThemeResponseTypeDef(TypedDict):
+    Theme: ThemeTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

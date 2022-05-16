@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36097,153 +36097,151 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_directconnect.type_defs</span> <span class="kn">import</span> <span class="n">AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_directconnect.type_defs</span> <span class="kn">import</span> <span class="n">RouteFilterPrefixTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RouteFilterPrefixTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;directConnectGatewayId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;proposalId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;associatedGatewayOwnerAccount&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;cidr&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#acceptdirectconnectgatewayassociationproposalrequestrequesttypedef">AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#acceptdirectconnectgatewayassociationproposalresulttypedef">AcceptDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
+<li><a href="type_defs/#routefilterprefixtypedef">RouteFilterPrefixTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#allocateconnectiononinterconnectrequestrequesttypedef">AllocateConnectionOnInterconnectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#allocatehostedconnectionrequestrequesttypedef">AllocateHostedConnectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#allocateprivatevirtualinterfacerequestrequesttypedef">AllocatePrivateVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#allocatepublicvirtualinterfacerequestrequesttypedef">AllocatePublicVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#allocatetransitvirtualinterfacerequestrequesttypedef">AllocateTransitVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#allocatetransitvirtualinterfaceresulttypedef">AllocateTransitVirtualInterfaceResultTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#associateconnectionwithlagrequestrequesttypedef">AssociateConnectionWithLagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatehostedconnectionrequestrequesttypedef">AssociateHostedConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatemacseckeyrequestrequesttypedef">AssociateMacSecKeyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#associatemacseckeyresponsetypedef">AssociateMacSecKeyResponseTypeDef</a></li>
+<li><a href="type_defs/#macseckeytypedef">MacSecKeyTypeDef</a></li>
 <li><a href="type_defs/#associatevirtualinterfacerequestrequesttypedef">AssociateVirtualInterfaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatedgatewaytypedef">AssociatedGatewayTypeDef</a></li>
 <li><a href="type_defs/#bgppeertypedef">BGPPeerTypeDef</a></li>
 <li><a href="type_defs/#confirmconnectionrequestrequesttypedef">ConfirmConnectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#confirmconnectionresponsetypedef">ConfirmConnectionResponseTypeDef</a></li>
 <li><a href="type_defs/#confirmcustomeragreementrequestrequesttypedef">ConfirmCustomerAgreementRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#confirmcustomeragreementresponsetypedef">ConfirmCustomerAgreementResponseTypeDef</a></li>
 <li><a href="type_defs/#confirmprivatevirtualinterfacerequestrequesttypedef">ConfirmPrivateVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#confirmprivatevirtualinterfaceresponsetypedef">ConfirmPrivateVirtualInterfaceResponseTypeDef</a></li>
 <li><a href="type_defs/#confirmpublicvirtualinterfacerequestrequesttypedef">ConfirmPublicVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#confirmpublicvirtualinterfaceresponsetypedef">ConfirmPublicVirtualInterfaceResponseTypeDef</a></li>
 <li><a href="type_defs/#confirmtransitvirtualinterfacerequestrequesttypedef">ConfirmTransitVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#confirmtransitvirtualinterfaceresponsetypedef">ConfirmTransitVirtualInterfaceResponseTypeDef</a></li>
-<li><a href="type_defs/#connectionresponsemetadatatypedef">ConnectionResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#connectiontypedef">ConnectionTypeDef</a></li>
-<li><a href="type_defs/#connectionstypedef">ConnectionsTypeDef</a></li>
-<li><a href="type_defs/#createbgppeerrequestrequesttypedef">CreateBGPPeerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createbgppeerresponsetypedef">CreateBGPPeerResponseTypeDef</a></li>
-<li><a href="type_defs/#createconnectionrequestrequesttypedef">CreateConnectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdirectconnectgatewayassociationproposalrequestrequesttypedef">CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdirectconnectgatewayassociationproposalresulttypedef">CreateDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
-<li><a href="type_defs/#createdirectconnectgatewayassociationrequestrequesttypedef">CreateDirectConnectGatewayAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdirectconnectgatewayassociationresulttypedef">CreateDirectConnectGatewayAssociationResultTypeDef</a></li>
+<li><a href="type_defs/#newbgppeertypedef">NewBGPPeerTypeDef</a></li>
 <li><a href="type_defs/#createdirectconnectgatewayrequestrequesttypedef">CreateDirectConnectGatewayRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdirectconnectgatewayresulttypedef">CreateDirectConnectGatewayResultTypeDef</a></li>
-<li><a href="type_defs/#createinterconnectrequestrequesttypedef">CreateInterconnectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createlagrequestrequesttypedef">CreateLagRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createprivatevirtualinterfacerequestrequesttypedef">CreatePrivateVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createpublicvirtualinterfacerequestrequesttypedef">CreatePublicVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtransitvirtualinterfacerequestrequesttypedef">CreateTransitVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtransitvirtualinterfaceresulttypedef">CreateTransitVirtualInterfaceResultTypeDef</a></li>
+<li><a href="type_defs/#directconnectgatewaytypedef">DirectConnectGatewayTypeDef</a></li>
 <li><a href="type_defs/#customeragreementtypedef">CustomerAgreementTypeDef</a></li>
 <li><a href="type_defs/#deletebgppeerrequestrequesttypedef">DeleteBGPPeerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletebgppeerresponsetypedef">DeleteBGPPeerResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteconnectionrequestrequesttypedef">DeleteConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedirectconnectgatewayassociationproposalrequestrequesttypedef">DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletedirectconnectgatewayassociationproposalresulttypedef">DeleteDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
 <li><a href="type_defs/#deletedirectconnectgatewayassociationrequestrequesttypedef">DeleteDirectConnectGatewayAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletedirectconnectgatewayassociationresulttypedef">DeleteDirectConnectGatewayAssociationResultTypeDef</a></li>
 <li><a href="type_defs/#deletedirectconnectgatewayrequestrequesttypedef">DeleteDirectConnectGatewayRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletedirectconnectgatewayresulttypedef">DeleteDirectConnectGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#deleteinterconnectrequestrequesttypedef">DeleteInterconnectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteinterconnectresponsetypedef">DeleteInterconnectResponseTypeDef</a></li>
 <li><a href="type_defs/#deletelagrequestrequesttypedef">DeleteLagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevirtualinterfacerequestrequesttypedef">DeleteVirtualInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletevirtualinterfaceresponsetypedef">DeleteVirtualInterfaceResponseTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionloarequestrequesttypedef">DescribeConnectionLoaRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeconnectionloaresponsetypedef">DescribeConnectionLoaResponseTypeDef</a></li>
+<li><a href="type_defs/#loatypedef">LoaTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionsoninterconnectrequestrequesttypedef">DescribeConnectionsOnInterconnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionsrequestrequesttypedef">DescribeConnectionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describecustomermetadataresponsetypedef">DescribeCustomerMetadataResponseTypeDef</a></li>
 <li><a href="type_defs/#describedirectconnectgatewayassociationproposalsrequestrequesttypedef">DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewayassociationproposalsresulttypedef">DescribeDirectConnectGatewayAssociationProposalsResultTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewayassociationsrequestdescribedirectconnectgatewayassociationspaginatetypedef">DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describedirectconnectgatewayassociationsrequestrequesttypedef">DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewayassociationsresulttypedef">DescribeDirectConnectGatewayAssociationsResultTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewayattachmentsrequestdescribedirectconnectgatewayattachmentspaginatetypedef">DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describedirectconnectgatewayattachmentsrequestrequesttypedef">DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewayattachmentsresulttypedef">DescribeDirectConnectGatewayAttachmentsResultTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewaysrequestdescribedirectconnectgatewayspaginatetypedef">DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef</a></li>
+<li><a href="type_defs/#directconnectgatewayattachmenttypedef">DirectConnectGatewayAttachmentTypeDef</a></li>
 <li><a href="type_defs/#describedirectconnectgatewaysrequestrequesttypedef">DescribeDirectConnectGatewaysRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedirectconnectgatewaysresulttypedef">DescribeDirectConnectGatewaysResultTypeDef</a></li>
 <li><a href="type_defs/#describehostedconnectionsrequestrequesttypedef">DescribeHostedConnectionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeinterconnectloarequestrequesttypedef">DescribeInterconnectLoaRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeinterconnectloaresponsetypedef">DescribeInterconnectLoaResponseTypeDef</a></li>
 <li><a href="type_defs/#describeinterconnectsrequestrequesttypedef">DescribeInterconnectsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describelagsrequestrequesttypedef">DescribeLagsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeloarequestrequesttypedef">DescribeLoaRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describerouterconfigurationrequestrequesttypedef">DescribeRouterConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describerouterconfigurationresponsetypedef">DescribeRouterConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#routertypetypedef">RouterTypeTypeDef</a></li>
 <li><a href="type_defs/#describetagsrequestrequesttypedef">DescribeTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetagsresponsetypedef">DescribeTagsResponseTypeDef</a></li>
 <li><a href="type_defs/#describevirtualinterfacesrequestrequesttypedef">DescribeVirtualInterfacesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#directconnectgatewayassociationproposaltypedef">DirectConnectGatewayAssociationProposalTypeDef</a></li>
-<li><a href="type_defs/#directconnectgatewayassociationtypedef">DirectConnectGatewayAssociationTypeDef</a></li>
-<li><a href="type_defs/#directconnectgatewayattachmenttypedef">DirectConnectGatewayAttachmentTypeDef</a></li>
-<li><a href="type_defs/#directconnectgatewaytypedef">DirectConnectGatewayTypeDef</a></li>
 <li><a href="type_defs/#disassociateconnectionfromlagrequestrequesttypedef">DisassociateConnectionFromLagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatemacseckeyrequestrequesttypedef">DisassociateMacSecKeyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#disassociatemacseckeyresponsetypedef">DisassociateMacSecKeyResponseTypeDef</a></li>
+<li><a href="type_defs/#listvirtualinterfacetesthistoryrequestrequesttypedef">ListVirtualInterfaceTestHistoryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#virtualinterfacetesthistorytypedef">VirtualInterfaceTestHistoryTypeDef</a></li>
+<li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
+<li><a href="type_defs/#startbgpfailovertestrequestrequesttypedef">StartBgpFailoverTestRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stopbgpfailovertestrequestrequesttypedef">StopBgpFailoverTestRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateconnectionrequestrequesttypedef">UpdateConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatedirectconnectgatewayrequestrequesttypedef">UpdateDirectConnectGatewayRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatelagrequestrequesttypedef">UpdateLagRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatevirtualinterfaceattributesrequestrequesttypedef">UpdateVirtualInterfaceAttributesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#virtualgatewaytypedef">VirtualGatewayTypeDef</a></li>
+<li><a href="type_defs/#acceptdirectconnectgatewayassociationproposalrequestrequesttypedef">AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdirectconnectgatewayassociationproposalrequestrequesttypedef">CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdirectconnectgatewayassociationrequestrequesttypedef">CreateDirectConnectGatewayAssociationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatedirectconnectgatewayassociationrequestrequesttypedef">UpdateDirectConnectGatewayAssociationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#confirmconnectionresponsetypedef">ConfirmConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#confirmcustomeragreementresponsetypedef">ConfirmCustomerAgreementResponseTypeDef</a></li>
+<li><a href="type_defs/#confirmprivatevirtualinterfaceresponsetypedef">ConfirmPrivateVirtualInterfaceResponseTypeDef</a></li>
+<li><a href="type_defs/#confirmpublicvirtualinterfaceresponsetypedef">ConfirmPublicVirtualInterfaceResponseTypeDef</a></li>
+<li><a href="type_defs/#confirmtransitvirtualinterfaceresponsetypedef">ConfirmTransitVirtualInterfaceResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteinterconnectresponsetypedef">DeleteInterconnectResponseTypeDef</a></li>
+<li><a href="type_defs/#deletevirtualinterfaceresponsetypedef">DeleteVirtualInterfaceResponseTypeDef</a></li>
+<li><a href="type_defs/#loaresponsemetadatatypedef">LoaResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#allocatehostedconnectionrequestrequesttypedef">AllocateHostedConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createconnectionrequestrequesttypedef">CreateConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createinterconnectrequestrequesttypedef">CreateInterconnectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlagrequestrequesttypedef">CreateLagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#interconnectresponsemetadatatypedef">InterconnectResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#interconnecttypedef">InterconnectTypeDef</a></li>
-<li><a href="type_defs/#interconnectstypedef">InterconnectsTypeDef</a></li>
-<li><a href="type_defs/#lagresponsemetadatatypedef">LagResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#lagtypedef">LagTypeDef</a></li>
-<li><a href="type_defs/#lagstypedef">LagsTypeDef</a></li>
-<li><a href="type_defs/#listvirtualinterfacetesthistoryrequestrequesttypedef">ListVirtualInterfaceTestHistoryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listvirtualinterfacetesthistoryresponsetypedef">ListVirtualInterfaceTestHistoryResponseTypeDef</a></li>
-<li><a href="type_defs/#loaresponsemetadatatypedef">LoaResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#loatypedef">LoaTypeDef</a></li>
-<li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
-<li><a href="type_defs/#locationstypedef">LocationsTypeDef</a></li>
-<li><a href="type_defs/#macseckeytypedef">MacSecKeyTypeDef</a></li>
-<li><a href="type_defs/#newbgppeertypedef">NewBGPPeerTypeDef</a></li>
 <li><a href="type_defs/#newprivatevirtualinterfaceallocationtypedef">NewPrivateVirtualInterfaceAllocationTypeDef</a></li>
 <li><a href="type_defs/#newprivatevirtualinterfacetypedef">NewPrivateVirtualInterfaceTypeDef</a></li>
 <li><a href="type_defs/#newpublicvirtualinterfaceallocationtypedef">NewPublicVirtualInterfaceAllocationTypeDef</a></li>
 <li><a href="type_defs/#newpublicvirtualinterfacetypedef">NewPublicVirtualInterfaceTypeDef</a></li>
 <li><a href="type_defs/#newtransitvirtualinterfaceallocationtypedef">NewTransitVirtualInterfaceAllocationTypeDef</a></li>
 <li><a href="type_defs/#newtransitvirtualinterfacetypedef">NewTransitVirtualInterfaceTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#resourcetagtypedef">ResourceTagTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#routefilterprefixtypedef">RouteFilterPrefixTypeDef</a></li>
-<li><a href="type_defs/#routertypetypedef">RouterTypeTypeDef</a></li>
-<li><a href="type_defs/#startbgpfailovertestrequestrequesttypedef">StartBgpFailoverTestRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startbgpfailovertestresponsetypedef">StartBgpFailoverTestResponseTypeDef</a></li>
-<li><a href="type_defs/#stopbgpfailovertestrequestrequesttypedef">StopBgpFailoverTestRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopbgpfailovertestresponsetypedef">StopBgpFailoverTestResponseTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateconnectionrequestrequesttypedef">UpdateConnectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedirectconnectgatewayassociationrequestrequesttypedef">UpdateDirectConnectGatewayAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedirectconnectgatewayassociationresulttypedef">UpdateDirectConnectGatewayAssociationResultTypeDef</a></li>
-<li><a href="type_defs/#updatedirectconnectgatewayrequestrequesttypedef">UpdateDirectConnectGatewayRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedirectconnectgatewayresponsetypedef">UpdateDirectConnectGatewayResponseTypeDef</a></li>
-<li><a href="type_defs/#updatelagrequestrequesttypedef">UpdateLagRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatevirtualinterfaceattributesrequestrequesttypedef">UpdateVirtualInterfaceAttributesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#virtualgatewaytypedef">VirtualGatewayTypeDef</a></li>
-<li><a href="type_defs/#virtualgatewaystypedef">VirtualGatewaysTypeDef</a></li>
+<li><a href="type_defs/#associatemacseckeyresponsetypedef">AssociateMacSecKeyResponseTypeDef</a></li>
+<li><a href="type_defs/#connectionresponsemetadatatypedef">ConnectionResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#connectiontypedef">ConnectionTypeDef</a></li>
+<li><a href="type_defs/#disassociatemacseckeyresponsetypedef">DisassociateMacSecKeyResponseTypeDef</a></li>
+<li><a href="type_defs/#directconnectgatewayassociationproposaltypedef">DirectConnectGatewayAssociationProposalTypeDef</a></li>
+<li><a href="type_defs/#directconnectgatewayassociationtypedef">DirectConnectGatewayAssociationTypeDef</a></li>
 <li><a href="type_defs/#virtualinterfaceresponsemetadatatypedef">VirtualInterfaceResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#virtualinterfacetesthistorytypedef">VirtualInterfaceTestHistoryTypeDef</a></li>
 <li><a href="type_defs/#virtualinterfacetypedef">VirtualInterfaceTypeDef</a></li>
+<li><a href="type_defs/#createbgppeerrequestrequesttypedef">CreateBGPPeerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdirectconnectgatewayresulttypedef">CreateDirectConnectGatewayResultTypeDef</a></li>
+<li><a href="type_defs/#deletedirectconnectgatewayresulttypedef">DeleteDirectConnectGatewayResultTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewaysresulttypedef">DescribeDirectConnectGatewaysResultTypeDef</a></li>
+<li><a href="type_defs/#updatedirectconnectgatewayresponsetypedef">UpdateDirectConnectGatewayResponseTypeDef</a></li>
+<li><a href="type_defs/#describecustomermetadataresponsetypedef">DescribeCustomerMetadataResponseTypeDef</a></li>
+<li><a href="type_defs/#describeconnectionloaresponsetypedef">DescribeConnectionLoaResponseTypeDef</a></li>
+<li><a href="type_defs/#describeinterconnectloaresponsetypedef">DescribeInterconnectLoaResponseTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewayassociationsrequestdescribedirectconnectgatewayassociationspaginatetypedef">DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewayattachmentsrequestdescribedirectconnectgatewayattachmentspaginatetypedef">DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewaysrequestdescribedirectconnectgatewayspaginatetypedef">DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewayattachmentsresulttypedef">DescribeDirectConnectGatewayAttachmentsResultTypeDef</a></li>
+<li><a href="type_defs/#describerouterconfigurationresponsetypedef">DescribeRouterConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#listvirtualinterfacetesthistoryresponsetypedef">ListVirtualInterfaceTestHistoryResponseTypeDef</a></li>
+<li><a href="type_defs/#startbgpfailovertestresponsetypedef">StartBgpFailoverTestResponseTypeDef</a></li>
+<li><a href="type_defs/#stopbgpfailovertestresponsetypedef">StopBgpFailoverTestResponseTypeDef</a></li>
+<li><a href="type_defs/#locationstypedef">LocationsTypeDef</a></li>
+<li><a href="type_defs/#virtualgatewaystypedef">VirtualGatewaysTypeDef</a></li>
+<li><a href="type_defs/#interconnectstypedef">InterconnectsTypeDef</a></li>
+<li><a href="type_defs/#allocateprivatevirtualinterfacerequestrequesttypedef">AllocatePrivateVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createprivatevirtualinterfacerequestrequesttypedef">CreatePrivateVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#allocatepublicvirtualinterfacerequestrequesttypedef">AllocatePublicVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createpublicvirtualinterfacerequestrequesttypedef">CreatePublicVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#allocatetransitvirtualinterfacerequestrequesttypedef">AllocateTransitVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtransitvirtualinterfacerequestrequesttypedef">CreateTransitVirtualInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describetagsresponsetypedef">DescribeTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#connectionstypedef">ConnectionsTypeDef</a></li>
+<li><a href="type_defs/#lagresponsemetadatatypedef">LagResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#lagtypedef">LagTypeDef</a></li>
+<li><a href="type_defs/#createdirectconnectgatewayassociationproposalresulttypedef">CreateDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
+<li><a href="type_defs/#deletedirectconnectgatewayassociationproposalresulttypedef">DeleteDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewayassociationproposalsresulttypedef">DescribeDirectConnectGatewayAssociationProposalsResultTypeDef</a></li>
+<li><a href="type_defs/#acceptdirectconnectgatewayassociationproposalresulttypedef">AcceptDirectConnectGatewayAssociationProposalResultTypeDef</a></li>
+<li><a href="type_defs/#createdirectconnectgatewayassociationresulttypedef">CreateDirectConnectGatewayAssociationResultTypeDef</a></li>
+<li><a href="type_defs/#deletedirectconnectgatewayassociationresulttypedef">DeleteDirectConnectGatewayAssociationResultTypeDef</a></li>
+<li><a href="type_defs/#describedirectconnectgatewayassociationsresulttypedef">DescribeDirectConnectGatewayAssociationsResultTypeDef</a></li>
+<li><a href="type_defs/#updatedirectconnectgatewayassociationresulttypedef">UpdateDirectConnectGatewayAssociationResultTypeDef</a></li>
+<li><a href="type_defs/#allocatetransitvirtualinterfaceresulttypedef">AllocateTransitVirtualInterfaceResultTypeDef</a></li>
+<li><a href="type_defs/#createbgppeerresponsetypedef">CreateBGPPeerResponseTypeDef</a></li>
+<li><a href="type_defs/#createtransitvirtualinterfaceresulttypedef">CreateTransitVirtualInterfaceResultTypeDef</a></li>
+<li><a href="type_defs/#deletebgppeerresponsetypedef">DeleteBGPPeerResponseTypeDef</a></li>
 <li><a href="type_defs/#virtualinterfacestypedef">VirtualInterfacesTypeDef</a></li>
+<li><a href="type_defs/#lagstypedef">LagsTypeDef</a></li>
 </ul>
 
               
@@ -36313,7 +36311,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

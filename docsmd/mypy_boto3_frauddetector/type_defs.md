@@ -25,45 +25,69 @@ class BatchCreateVariableErrorTypeDef(TypedDict):
     message: NotRequired[str],
 ```
 
-## BatchCreateVariableRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import TagTypeDef
 
-def get_value() -> BatchCreateVariableRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "variableEntries": ...,
+        "key": ...,
+        "value": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchCreateVariableRequestRequestTypeDef(TypedDict):
-    variableEntries: Sequence[VariableEntryTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
 ```
 
-1. See [:material-code-braces: VariableEntryTypeDef](./type_defs.md#variableentrytypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## BatchCreateVariableResultTypeDef
+## VariableEntryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
+from mypy_boto3_frauddetector.type_defs import VariableEntryTypeDef
 
-def get_value() -> BatchCreateVariableResultTypeDef:
+def get_value() -> VariableEntryTypeDef:
     return {
-        "errors": ...,
-        "ResponseMetadata": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchCreateVariableResultTypeDef(TypedDict):
-    errors: List[BatchCreateVariableErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VariableEntryTypeDef(TypedDict):
+    name: NotRequired[str],
+    dataType: NotRequired[str],
+    dataSource: NotRequired[str],
+    defaultValue: NotRequired[str],
+    description: NotRequired[str],
+    variableType: NotRequired[str],
 ```
 
-1. See [:material-code-braces: BatchCreateVariableErrorTypeDef](./type_defs.md#batchcreatevariableerrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## BatchGetVariableErrorTypeDef
 
 ```python title="Usage Example"
@@ -98,29 +122,32 @@ class BatchGetVariableRequestRequestTypeDef(TypedDict):
     names: Sequence[str],
 ```
 
-## BatchGetVariableResultTypeDef
+## VariableTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import BatchGetVariableResultTypeDef
+from mypy_boto3_frauddetector.type_defs import VariableTypeDef
 
-def get_value() -> BatchGetVariableResultTypeDef:
+def get_value() -> VariableTypeDef:
     return {
-        "variables": ...,
-        "errors": ...,
-        "ResponseMetadata": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchGetVariableResultTypeDef(TypedDict):
-    variables: List[VariableTypeDef],  # (1)
-    errors: List[BatchGetVariableErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class VariableTypeDef(TypedDict):
+    name: NotRequired[str],
+    dataType: NotRequired[DataTypeType],  # (1)
+    dataSource: NotRequired[DataSourceType],  # (2)
+    defaultValue: NotRequired[str],
+    description: NotRequired[str],
+    variableType: NotRequired[str],
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
-2. See [:material-code-braces: BatchGetVariableErrorTypeDef](./type_defs.md#batchgetvariableerrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: DataTypeType](./literals.md#datatypetype) 
+2. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
 ## BatchImportTypeDef
 
 ```python title="Usage Example"
@@ -213,288 +240,104 @@ class CancelBatchPredictionJobRequestRequestTypeDef(TypedDict):
     jobId: str,
 ```
 
-## CreateBatchImportJobRequestRequestTypeDef
+## ModelVersionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateBatchImportJobRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import ModelVersionTypeDef
 
-def get_value() -> CreateBatchImportJobRequestRequestTypeDef:
-    return {
-        "jobId": ...,
-        "inputPath": ...,
-        "outputPath": ...,
-        "eventTypeName": ...,
-        "iamRoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBatchImportJobRequestRequestTypeDef(TypedDict):
-    jobId: str,
-    inputPath: str,
-    outputPath: str,
-    eventTypeName: str,
-    iamRoleArn: str,
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateBatchPredictionJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateBatchPredictionJobRequestRequestTypeDef
-
-def get_value() -> CreateBatchPredictionJobRequestRequestTypeDef:
-    return {
-        "jobId": ...,
-        "inputPath": ...,
-        "outputPath": ...,
-        "eventTypeName": ...,
-        "detectorName": ...,
-        "iamRoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBatchPredictionJobRequestRequestTypeDef(TypedDict):
-    jobId: str,
-    inputPath: str,
-    outputPath: str,
-    eventTypeName: str,
-    detectorName: str,
-    iamRoleArn: str,
-    detectorVersion: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDetectorVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionRequestRequestTypeDef
-
-def get_value() -> CreateDetectorVersionRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-        "rules": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDetectorVersionRequestRequestTypeDef(TypedDict):
-    detectorId: str,
-    rules: Sequence[RuleTypeDef],  # (1)
-    description: NotRequired[str],
-    externalModelEndpoints: NotRequired[Sequence[str]],
-    modelVersions: NotRequired[Sequence[ModelVersionTypeDef]],  # (2)
-    ruleExecutionMode: NotRequired[RuleExecutionModeType],  # (3)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-2. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
-3. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDetectorVersionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionResultTypeDef
-
-def get_value() -> CreateDetectorVersionResultTypeDef:
-    return {
-        "detectorId": ...,
-        "detectorVersionId": ...,
-        "status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDetectorVersionResultTypeDef(TypedDict):
-    detectorId: str,
-    detectorVersionId: str,
-    status: DetectorVersionStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateModelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateModelRequestRequestTypeDef
-
-def get_value() -> CreateModelRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "eventTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateModelRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    eventTypeName: str,
-    description: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateModelVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateModelVersionRequestRequestTypeDef
-
-def get_value() -> CreateModelVersionRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "trainingDataSource": ...,
-        "trainingDataSchema": ...,
-    }
-```
-
-```python title="Definition"
-class CreateModelVersionRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    trainingDataSource: TrainingDataSourceEnumType,  # (2)
-    trainingDataSchema: TrainingDataSchemaTypeDef,  # (3)
-    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
-    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
-3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
-4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
-5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateModelVersionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultTypeDef
-
-def get_value() -> CreateModelVersionResultTypeDef:
+def get_value() -> ModelVersionTypeDef:
     return {
         "modelId": ...,
         "modelType": ...,
         "modelVersionNumber": ...,
-        "status": ...,
-        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateModelVersionResultTypeDef(TypedDict):
+class ModelVersionTypeDef(TypedDict):
     modelId: str,
     modelType: ModelTypeEnumType,  # (1)
     modelVersionNumber: str,
-    status: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    arn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateRuleRequestRequestTypeDef
+## RuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateRuleRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import RuleTypeDef
 
-def get_value() -> CreateRuleRequestRequestTypeDef:
+def get_value() -> RuleTypeDef:
     return {
-        "ruleId": ...,
         "detectorId": ...,
-        "expression": ...,
-        "language": ...,
-        "outcomes": ...,
+        "ruleId": ...,
+        "ruleVersion": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateRuleRequestRequestTypeDef(TypedDict):
-    ruleId: str,
+class RuleTypeDef(TypedDict):
     detectorId: str,
-    expression: str,
-    language: LanguageType,  # (1)
-    outcomes: Sequence[str],
-    description: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ruleId: str,
+    ruleVersion: str,
 ```
 
-1. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateRuleResultTypeDef
+## ExternalEventsDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateRuleResultTypeDef
+from mypy_boto3_frauddetector.type_defs import ExternalEventsDetailTypeDef
 
-def get_value() -> CreateRuleResultTypeDef:
+def get_value() -> ExternalEventsDetailTypeDef:
     return {
-        "rule": ...,
-        "ResponseMetadata": ...,
+        "dataLocation": ...,
+        "dataAccessRoleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateRuleResultTypeDef(TypedDict):
-    rule: RuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ExternalEventsDetailTypeDef(TypedDict):
+    dataLocation: str,
+    dataAccessRoleArn: str,
 ```
 
-1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateVariableRequestRequestTypeDef
+## FieldValidationMessageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import CreateVariableRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import FieldValidationMessageTypeDef
 
-def get_value() -> CreateVariableRequestRequestTypeDef:
+def get_value() -> FieldValidationMessageTypeDef:
     return {
-        "name": ...,
-        "dataType": ...,
-        "dataSource": ...,
-        "defaultValue": ...,
+        "fieldName": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateVariableRequestRequestTypeDef(TypedDict):
-    name: str,
-    dataType: DataTypeType,  # (1)
-    dataSource: DataSourceType,  # (2)
-    defaultValue: str,
-    description: NotRequired[str],
-    variableType: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+class FieldValidationMessageTypeDef(TypedDict):
+    fieldName: NotRequired[str],
+    identifier: NotRequired[str],
+    title: NotRequired[str],
+    content: NotRequired[str],
+    type: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: DataTypeType](./literals.md#datatypetype) 
-2. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DataValidationMetricsTypeDef
+## FileValidationMessageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DataValidationMetricsTypeDef
+from mypy_boto3_frauddetector.type_defs import FileValidationMessageTypeDef
 
-def get_value() -> DataValidationMetricsTypeDef:
+def get_value() -> FileValidationMessageTypeDef:
     return {
-        "fileLevelMessages": ...,
+        "title": ...,
     }
 ```
 
 ```python title="Definition"
-class DataValidationMetricsTypeDef(TypedDict):
-    fileLevelMessages: NotRequired[List[FileValidationMessageTypeDef]],  # (1)
-    fieldLevelMessages: NotRequired[List[FieldValidationMessageTypeDef]],  # (2)
+class FileValidationMessageTypeDef(TypedDict):
+    title: NotRequired[str],
+    content: NotRequired[str],
+    type: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FileValidationMessageTypeDef](./type_defs.md#filevalidationmessagetypedef) 
-2. See [:material-code-braces: FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef) 
 ## DeleteBatchImportJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -628,27 +471,6 @@ class DeleteEventsByEventTypeRequestRequestTypeDef(TypedDict):
     eventTypeName: str,
 ```
 
-## DeleteEventsByEventTypeResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DeleteEventsByEventTypeResultTypeDef
-
-def get_value() -> DeleteEventsByEventTypeResultTypeDef:
-    return {
-        "eventTypeName": ...,
-        "eventsDeletionStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteEventsByEventTypeResultTypeDef(TypedDict):
-    eventTypeName: str,
-    eventsDeletionStatus: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteExternalModelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -737,23 +559,6 @@ class DeleteOutcomeRequestRequestTypeDef(TypedDict):
     name: str,
 ```
 
-## DeleteRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DeleteRuleRequestRequestTypeDef
-
-def get_value() -> DeleteRuleRequestRequestTypeDef:
-    return {
-        "rule": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteRuleRequestRequestTypeDef(TypedDict):
-    rule: RuleTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## DeleteVariableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -788,32 +593,26 @@ class DescribeDetectorRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
-## DescribeDetectorResultTypeDef
+## DetectorVersionSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DescribeDetectorResultTypeDef
+from mypy_boto3_frauddetector.type_defs import DetectorVersionSummaryTypeDef
 
-def get_value() -> DescribeDetectorResultTypeDef:
+def get_value() -> DetectorVersionSummaryTypeDef:
     return {
-        "detectorId": ...,
-        "detectorVersionSummaries": ...,
-        "nextToken": ...,
-        "arn": ...,
-        "ResponseMetadata": ...,
+        "detectorVersionId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDetectorResultTypeDef(TypedDict):
-    detectorId: str,
-    detectorVersionSummaries: List[DetectorVersionSummaryTypeDef],  # (1)
-    nextToken: str,
-    arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DetectorVersionSummaryTypeDef(TypedDict):
+    detectorVersionId: NotRequired[str],
+    status: NotRequired[DetectorVersionStatusType],  # (1)
+    description: NotRequired[str],
+    lastUpdatedTime: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DetectorVersionSummaryTypeDef](./type_defs.md#detectorversionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
 ## DescribeModelVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -835,28 +634,6 @@ class DescribeModelVersionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-## DescribeModelVersionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
-
-def get_value() -> DescribeModelVersionsResultTypeDef:
-    return {
-        "modelVersionDetails": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelVersionsResultTypeDef(TypedDict):
-    modelVersionDetails: List[ModelVersionDetailTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ModelVersionDetailTypeDef](./type_defs.md#modelversiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectorTypeDef
 
 ```python title="Usage Example"
@@ -878,26 +655,6 @@ class DetectorTypeDef(TypedDict):
     arn: NotRequired[str],
 ```
 
-## DetectorVersionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DetectorVersionSummaryTypeDef
-
-def get_value() -> DetectorVersionSummaryTypeDef:
-    return {
-        "detectorVersionId": ...,
-    }
-```
-
-```python title="Definition"
-class DetectorVersionSummaryTypeDef(TypedDict):
-    detectorVersionId: NotRequired[str],
-    status: NotRequired[DetectorVersionStatusType],  # (1)
-    description: NotRequired[str],
-    lastUpdatedTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
 ## EntityTypeDef
 
 ```python title="Usage Example"
@@ -955,26 +712,6 @@ class EvaluatedExternalModelTypeDef(TypedDict):
     outputVariables: NotRequired[Dict[str, str]],
 ```
 
-## EvaluatedModelVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import EvaluatedModelVersionTypeDef
-
-def get_value() -> EvaluatedModelVersionTypeDef:
-    return {
-        "modelId": ...,
-    }
-```
-
-```python title="Definition"
-class EvaluatedModelVersionTypeDef(TypedDict):
-    modelId: NotRequired[str],
-    modelVersion: NotRequired[str],
-    modelType: NotRequired[str],
-    evaluations: NotRequired[List[ModelVersionEvaluationTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ModelVersionEvaluationTypeDef](./type_defs.md#modelversionevaluationtypedef) 
 ## EvaluatedRuleTypeDef
 
 ```python title="Usage Example"
@@ -1018,1004 +755,6 @@ class EventPredictionSummaryTypeDef(TypedDict):
     detectorVersionId: NotRequired[str],
 ```
 
-## EventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import EventTypeDef
-
-def get_value() -> EventTypeDef:
-    return {
-        "eventId": ...,
-    }
-```
-
-```python title="Definition"
-class EventTypeDef(TypedDict):
-    eventId: NotRequired[str],
-    eventTypeName: NotRequired[str],
-    eventTimestamp: NotRequired[str],
-    eventVariables: NotRequired[Dict[str, str]],
-    currentLabel: NotRequired[str],
-    labelTimestamp: NotRequired[str],
-    entities: NotRequired[List[EntityTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
-## EventTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import EventTypeTypeDef
-
-def get_value() -> EventTypeTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class EventTypeTypeDef(TypedDict):
-    name: NotRequired[str],
-    description: NotRequired[str],
-    eventVariables: NotRequired[List[str]],
-    labels: NotRequired[List[str]],
-    entityTypes: NotRequired[List[str]],
-    eventIngestion: NotRequired[EventIngestionType],  # (1)
-    ingestedEventStatistics: NotRequired[IngestedEventStatisticsTypeDef],  # (2)
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: EventIngestionType](./literals.md#eventingestiontype) 
-2. See [:material-code-braces: IngestedEventStatisticsTypeDef](./type_defs.md#ingestedeventstatisticstypedef) 
-## EventVariableSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import EventVariableSummaryTypeDef
-
-def get_value() -> EventVariableSummaryTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class EventVariableSummaryTypeDef(TypedDict):
-    name: NotRequired[str],
-    value: NotRequired[str],
-    source: NotRequired[str],
-```
-
-## ExternalEventsDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ExternalEventsDetailTypeDef
-
-def get_value() -> ExternalEventsDetailTypeDef:
-    return {
-        "dataLocation": ...,
-        "dataAccessRoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class ExternalEventsDetailTypeDef(TypedDict):
-    dataLocation: str,
-    dataAccessRoleArn: str,
-```
-
-## ExternalModelOutputsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ExternalModelOutputsTypeDef
-
-def get_value() -> ExternalModelOutputsTypeDef:
-    return {
-        "externalModel": ...,
-    }
-```
-
-```python title="Definition"
-class ExternalModelOutputsTypeDef(TypedDict):
-    externalModel: NotRequired[ExternalModelSummaryTypeDef],  # (1)
-    outputs: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: ExternalModelSummaryTypeDef](./type_defs.md#externalmodelsummarytypedef) 
-## ExternalModelSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ExternalModelSummaryTypeDef
-
-def get_value() -> ExternalModelSummaryTypeDef:
-    return {
-        "modelEndpoint": ...,
-    }
-```
-
-```python title="Definition"
-class ExternalModelSummaryTypeDef(TypedDict):
-    modelEndpoint: NotRequired[str],
-    modelSource: NotRequired[ModelSourceType],  # (1)
-```
-
-1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
-## ExternalModelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ExternalModelTypeDef
-
-def get_value() -> ExternalModelTypeDef:
-    return {
-        "modelEndpoint": ...,
-    }
-```
-
-```python title="Definition"
-class ExternalModelTypeDef(TypedDict):
-    modelEndpoint: NotRequired[str],
-    modelSource: NotRequired[ModelSourceType],  # (1)
-    invokeModelEndpointRoleArn: NotRequired[str],
-    inputConfiguration: NotRequired[ModelInputConfigurationTypeDef],  # (2)
-    outputConfiguration: NotRequired[ModelOutputConfigurationTypeDef],  # (3)
-    modelEndpointStatus: NotRequired[ModelEndpointStatusType],  # (4)
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
-2. See [:material-code-braces: ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef) 
-3. See [:material-code-braces: ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef) 
-4. See [:material-code-brackets: ModelEndpointStatusType](./literals.md#modelendpointstatustype) 
-## FieldValidationMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import FieldValidationMessageTypeDef
-
-def get_value() -> FieldValidationMessageTypeDef:
-    return {
-        "fieldName": ...,
-    }
-```
-
-```python title="Definition"
-class FieldValidationMessageTypeDef(TypedDict):
-    fieldName: NotRequired[str],
-    identifier: NotRequired[str],
-    title: NotRequired[str],
-    content: NotRequired[str],
-    type: NotRequired[str],
-```
-
-## FileValidationMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import FileValidationMessageTypeDef
-
-def get_value() -> FileValidationMessageTypeDef:
-    return {
-        "title": ...,
-    }
-```
-
-```python title="Definition"
-class FileValidationMessageTypeDef(TypedDict):
-    title: NotRequired[str],
-    content: NotRequired[str],
-    type: NotRequired[str],
-```
-
-## FilterConditionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import FilterConditionTypeDef
-
-def get_value() -> FilterConditionTypeDef:
-    return {
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class FilterConditionTypeDef(TypedDict):
-    value: NotRequired[str],
-```
-
-## GetBatchImportJobsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsRequestRequestTypeDef
-
-def get_value() -> GetBatchImportJobsRequestRequestTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class GetBatchImportJobsRequestRequestTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## GetBatchImportJobsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsResultTypeDef
-
-def get_value() -> GetBatchImportJobsResultTypeDef:
-    return {
-        "batchImports": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBatchImportJobsResultTypeDef(TypedDict):
-    batchImports: List[BatchImportTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BatchImportTypeDef](./type_defs.md#batchimporttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetBatchPredictionJobsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsRequestRequestTypeDef
-
-def get_value() -> GetBatchPredictionJobsRequestRequestTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class GetBatchPredictionJobsRequestRequestTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## GetBatchPredictionJobsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsResultTypeDef
-
-def get_value() -> GetBatchPredictionJobsResultTypeDef:
-    return {
-        "batchPredictions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBatchPredictionJobsResultTypeDef(TypedDict):
-    batchPredictions: List[BatchPredictionTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
-
-def get_value() -> GetDeleteEventsByEventTypeStatusRequestRequestTypeDef:
-    return {
-        "eventTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class GetDeleteEventsByEventTypeStatusRequestRequestTypeDef(TypedDict):
-    eventTypeName: str,
-```
-
-## GetDeleteEventsByEventTypeStatusResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusResultTypeDef
-
-def get_value() -> GetDeleteEventsByEventTypeStatusResultTypeDef:
-    return {
-        "eventTypeName": ...,
-        "eventsDeletionStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDeleteEventsByEventTypeStatusResultTypeDef(TypedDict):
-    eventTypeName: str,
-    eventsDeletionStatus: AsyncJobStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AsyncJobStatusType](./literals.md#asyncjobstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDetectorVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDetectorVersionRequestRequestTypeDef
-
-def get_value() -> GetDetectorVersionRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-        "detectorVersionId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDetectorVersionRequestRequestTypeDef(TypedDict):
-    detectorId: str,
-    detectorVersionId: str,
-```
-
-## GetDetectorVersionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDetectorVersionResultTypeDef
-
-def get_value() -> GetDetectorVersionResultTypeDef:
-    return {
-        "detectorId": ...,
-        "detectorVersionId": ...,
-        "description": ...,
-        "externalModelEndpoints": ...,
-        "modelVersions": ...,
-        "rules": ...,
-        "status": ...,
-        "lastUpdatedTime": ...,
-        "createdTime": ...,
-        "ruleExecutionMode": ...,
-        "arn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDetectorVersionResultTypeDef(TypedDict):
-    detectorId: str,
-    detectorVersionId: str,
-    description: str,
-    externalModelEndpoints: List[str],
-    modelVersions: List[ModelVersionTypeDef],  # (1)
-    rules: List[RuleTypeDef],  # (2)
-    status: DetectorVersionStatusType,  # (3)
-    lastUpdatedTime: str,
-    createdTime: str,
-    ruleExecutionMode: RuleExecutionModeType,  # (4)
-    arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
-2. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-3. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
-4. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDetectorsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDetectorsRequestRequestTypeDef
-
-def get_value() -> GetDetectorsRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDetectorsRequestRequestTypeDef(TypedDict):
-    detectorId: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetDetectorsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetDetectorsResultTypeDef
-
-def get_value() -> GetDetectorsResultTypeDef:
-    return {
-        "detectors": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDetectorsResultTypeDef(TypedDict):
-    detectors: List[DetectorTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DetectorTypeDef](./type_defs.md#detectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEntityTypesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEntityTypesRequestRequestTypeDef
-
-def get_value() -> GetEntityTypesRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class GetEntityTypesRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetEntityTypesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultTypeDef
-
-def get_value() -> GetEntityTypesResultTypeDef:
-    return {
-        "entityTypes": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEntityTypesResultTypeDef(TypedDict):
-    entityTypes: List[EntityTypeTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EntityTypeTypeDef](./type_defs.md#entitytypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEventPredictionMetadataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataRequestRequestTypeDef
-
-def get_value() -> GetEventPredictionMetadataRequestRequestTypeDef:
-    return {
-        "eventId": ...,
-        "eventTypeName": ...,
-        "detectorId": ...,
-        "detectorVersionId": ...,
-        "predictionTimestamp": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventPredictionMetadataRequestRequestTypeDef(TypedDict):
-    eventId: str,
-    eventTypeName: str,
-    detectorId: str,
-    detectorVersionId: str,
-    predictionTimestamp: str,
-```
-
-## GetEventPredictionMetadataResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataResultTypeDef
-
-def get_value() -> GetEventPredictionMetadataResultTypeDef:
-    return {
-        "eventId": ...,
-        "eventTypeName": ...,
-        "entityId": ...,
-        "entityType": ...,
-        "eventTimestamp": ...,
-        "detectorId": ...,
-        "detectorVersionId": ...,
-        "detectorVersionStatus": ...,
-        "eventVariables": ...,
-        "rules": ...,
-        "ruleExecutionMode": ...,
-        "outcomes": ...,
-        "evaluatedModelVersions": ...,
-        "evaluatedExternalModels": ...,
-        "predictionTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventPredictionMetadataResultTypeDef(TypedDict):
-    eventId: str,
-    eventTypeName: str,
-    entityId: str,
-    entityType: str,
-    eventTimestamp: str,
-    detectorId: str,
-    detectorVersionId: str,
-    detectorVersionStatus: str,
-    eventVariables: List[EventVariableSummaryTypeDef],  # (1)
-    rules: List[EvaluatedRuleTypeDef],  # (2)
-    ruleExecutionMode: RuleExecutionModeType,  # (3)
-    outcomes: List[str],
-    evaluatedModelVersions: List[EvaluatedModelVersionTypeDef],  # (4)
-    evaluatedExternalModels: List[EvaluatedExternalModelTypeDef],  # (5)
-    predictionTimestamp: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-braces: EventVariableSummaryTypeDef](./type_defs.md#eventvariablesummarytypedef) 
-2. See [:material-code-braces: EvaluatedRuleTypeDef](./type_defs.md#evaluatedruletypedef) 
-3. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
-4. See [:material-code-braces: EvaluatedModelVersionTypeDef](./type_defs.md#evaluatedmodelversiontypedef) 
-5. See [:material-code-braces: EvaluatedExternalModelTypeDef](./type_defs.md#evaluatedexternalmodeltypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEventPredictionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionRequestRequestTypeDef
-
-def get_value() -> GetEventPredictionRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-        "eventId": ...,
-        "eventTypeName": ...,
-        "entities": ...,
-        "eventTimestamp": ...,
-        "eventVariables": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventPredictionRequestRequestTypeDef(TypedDict):
-    detectorId: str,
-    eventId: str,
-    eventTypeName: str,
-    entities: Sequence[EntityTypeDef],  # (1)
-    eventTimestamp: str,
-    eventVariables: Mapping[str, str],
-    detectorVersionId: NotRequired[str],
-    externalModelEndpointDataBlobs: NotRequired[Mapping[str, ModelEndpointDataBlobTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
-2. See [:material-code-braces: ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef) 
-## GetEventPredictionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionResultTypeDef
-
-def get_value() -> GetEventPredictionResultTypeDef:
-    return {
-        "modelScores": ...,
-        "ruleResults": ...,
-        "externalModelOutputs": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventPredictionResultTypeDef(TypedDict):
-    modelScores: List[ModelScoresTypeDef],  # (1)
-    ruleResults: List[RuleResultTypeDef],  # (2)
-    externalModelOutputs: List[ExternalModelOutputsTypeDef],  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ModelScoresTypeDef](./type_defs.md#modelscorestypedef) 
-2. See [:material-code-braces: RuleResultTypeDef](./type_defs.md#ruleresulttypedef) 
-3. See [:material-code-braces: ExternalModelOutputsTypeDef](./type_defs.md#externalmodeloutputstypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEventRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventRequestRequestTypeDef
-
-def get_value() -> GetEventRequestRequestTypeDef:
-    return {
-        "eventId": ...,
-        "eventTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventRequestRequestTypeDef(TypedDict):
-    eventId: str,
-    eventTypeName: str,
-```
-
-## GetEventResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventResultTypeDef
-
-def get_value() -> GetEventResultTypeDef:
-    return {
-        "event": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventResultTypeDef(TypedDict):
-    event: EventTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEventTypesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventTypesRequestRequestTypeDef
-
-def get_value() -> GetEventTypesRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventTypesRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetEventTypesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetEventTypesResultTypeDef
-
-def get_value() -> GetEventTypesResultTypeDef:
-    return {
-        "eventTypes": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEventTypesResultTypeDef(TypedDict):
-    eventTypes: List[EventTypeTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventTypeTypeDef](./type_defs.md#eventtypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetExternalModelsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetExternalModelsRequestRequestTypeDef
-
-def get_value() -> GetExternalModelsRequestRequestTypeDef:
-    return {
-        "modelEndpoint": ...,
-    }
-```
-
-```python title="Definition"
-class GetExternalModelsRequestRequestTypeDef(TypedDict):
-    modelEndpoint: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetExternalModelsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetExternalModelsResultTypeDef
-
-def get_value() -> GetExternalModelsResultTypeDef:
-    return {
-        "externalModels": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetExternalModelsResultTypeDef(TypedDict):
-    externalModels: List[ExternalModelTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ExternalModelTypeDef](./type_defs.md#externalmodeltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetKMSEncryptionKeyResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetKMSEncryptionKeyResultTypeDef
-
-def get_value() -> GetKMSEncryptionKeyResultTypeDef:
-    return {
-        "kmsKey": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetKMSEncryptionKeyResultTypeDef(TypedDict):
-    kmsKey: KMSKeyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: KMSKeyTypeDef](./type_defs.md#kmskeytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetLabelsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetLabelsRequestRequestTypeDef
-
-def get_value() -> GetLabelsRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class GetLabelsRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetLabelsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetLabelsResultTypeDef
-
-def get_value() -> GetLabelsResultTypeDef:
-    return {
-        "labels": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLabelsResultTypeDef(TypedDict):
-    labels: List[LabelTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetModelVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetModelVersionRequestRequestTypeDef
-
-def get_value() -> GetModelVersionRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "modelVersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class GetModelVersionRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    modelVersionNumber: str,
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-## GetModelVersionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetModelVersionResultTypeDef
-
-def get_value() -> GetModelVersionResultTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "modelVersionNumber": ...,
-        "trainingDataSource": ...,
-        "trainingDataSchema": ...,
-        "externalEventsDetail": ...,
-        "ingestedEventsDetail": ...,
-        "status": ...,
-        "arn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetModelVersionResultTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    modelVersionNumber: str,
-    trainingDataSource: TrainingDataSourceEnumType,  # (2)
-    trainingDataSchema: TrainingDataSchemaTypeDef,  # (3)
-    externalEventsDetail: ExternalEventsDetailTypeDef,  # (4)
-    ingestedEventsDetail: IngestedEventsDetailTypeDef,  # (5)
-    status: str,
-    arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
-3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
-4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
-5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetModelsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetModelsRequestRequestTypeDef
-
-def get_value() -> GetModelsRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-    }
-```
-
-```python title="Definition"
-class GetModelsRequestRequestTypeDef(TypedDict):
-    modelId: NotRequired[str],
-    modelType: NotRequired[ModelTypeEnumType],  # (1)
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-## GetModelsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetModelsResultTypeDef
-
-def get_value() -> GetModelsResultTypeDef:
-    return {
-        "nextToken": ...,
-        "models": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetModelsResultTypeDef(TypedDict):
-    nextToken: str,
-    models: List[ModelTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetOutcomesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetOutcomesRequestRequestTypeDef
-
-def get_value() -> GetOutcomesRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class GetOutcomesRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetOutcomesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetOutcomesResultTypeDef
-
-def get_value() -> GetOutcomesResultTypeDef:
-    return {
-        "outcomes": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetOutcomesResultTypeDef(TypedDict):
-    outcomes: List[OutcomeTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OutcomeTypeDef](./type_defs.md#outcometypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRulesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetRulesRequestRequestTypeDef
-
-def get_value() -> GetRulesRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-    }
-```
-
-```python title="Definition"
-class GetRulesRequestRequestTypeDef(TypedDict):
-    detectorId: str,
-    ruleId: NotRequired[str],
-    ruleVersion: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetRulesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetRulesResultTypeDef
-
-def get_value() -> GetRulesResultTypeDef:
-    return {
-        "ruleDetails": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRulesResultTypeDef(TypedDict):
-    ruleDetails: List[RuleDetailTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleDetailTypeDef](./type_defs.md#ruledetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetVariablesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetVariablesRequestRequestTypeDef
-
-def get_value() -> GetVariablesRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class GetVariablesRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetVariablesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import GetVariablesResultTypeDef
-
-def get_value() -> GetVariablesResultTypeDef:
-    return {
-        "variables": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVariablesResultTypeDef(TypedDict):
-    variables: List[VariableTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IngestedEventStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -2036,240 +775,42 @@ class IngestedEventStatisticsTypeDef(TypedDict):
     lastUpdatedTime: NotRequired[str],
 ```
 
-## IngestedEventsDetailTypeDef
+## EventVariableSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import IngestedEventsDetailTypeDef
+from mypy_boto3_frauddetector.type_defs import EventVariableSummaryTypeDef
 
-def get_value() -> IngestedEventsDetailTypeDef:
-    return {
-        "ingestedEventsTimeWindow": ...,
-    }
-```
-
-```python title="Definition"
-class IngestedEventsDetailTypeDef(TypedDict):
-    ingestedEventsTimeWindow: IngestedEventsTimeWindowTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: IngestedEventsTimeWindowTypeDef](./type_defs.md#ingestedeventstimewindowtypedef) 
-## IngestedEventsTimeWindowTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import IngestedEventsTimeWindowTypeDef
-
-def get_value() -> IngestedEventsTimeWindowTypeDef:
-    return {
-        "startTime": ...,
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class IngestedEventsTimeWindowTypeDef(TypedDict):
-    startTime: str,
-    endTime: str,
-```
-
-## KMSKeyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import KMSKeyTypeDef
-
-def get_value() -> KMSKeyTypeDef:
-    return {
-        "kmsEncryptionKeyArn": ...,
-    }
-```
-
-```python title="Definition"
-class KMSKeyTypeDef(TypedDict):
-    kmsEncryptionKeyArn: NotRequired[str],
-```
-
-## LabelSchemaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import LabelSchemaTypeDef
-
-def get_value() -> LabelSchemaTypeDef:
-    return {
-        "labelMapper": ...,
-    }
-```
-
-```python title="Definition"
-class LabelSchemaTypeDef(TypedDict):
-    labelMapper: Mapping[str, Sequence[str]],
-    unlabeledEventsTreatment: NotRequired[UnlabeledEventsTreatmentType],  # (1)
-```
-
-1. See [:material-code-brackets: UnlabeledEventsTreatmentType](./literals.md#unlabeledeventstreatmenttype) 
-## LabelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import LabelTypeDef
-
-def get_value() -> LabelTypeDef:
+def get_value() -> EventVariableSummaryTypeDef:
     return {
         "name": ...,
     }
 ```
 
 ```python title="Definition"
-class LabelTypeDef(TypedDict):
+class EventVariableSummaryTypeDef(TypedDict):
     name: NotRequired[str],
-    description: NotRequired[str],
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
+    value: NotRequired[str],
+    source: NotRequired[str],
 ```
 
-## ListEventPredictionsRequestRequestTypeDef
+## ExternalModelSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ListEventPredictionsRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import ExternalModelSummaryTypeDef
 
-def get_value() -> ListEventPredictionsRequestRequestTypeDef:
+def get_value() -> ExternalModelSummaryTypeDef:
     return {
-        "eventId": ...,
+        "modelEndpoint": ...,
     }
 ```
 
 ```python title="Definition"
-class ListEventPredictionsRequestRequestTypeDef(TypedDict):
-    eventId: NotRequired[FilterConditionTypeDef],  # (1)
-    eventType: NotRequired[FilterConditionTypeDef],  # (1)
-    detectorId: NotRequired[FilterConditionTypeDef],  # (1)
-    detectorVersionId: NotRequired[FilterConditionTypeDef],  # (1)
-    predictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (5)
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
+class ExternalModelSummaryTypeDef(TypedDict):
+    modelEndpoint: NotRequired[str],
+    modelSource: NotRequired[ModelSourceType],  # (1)
 ```
 
-1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
-2. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
-3. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
-4. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
-5. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
-## ListEventPredictionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ListEventPredictionsResultTypeDef
-
-def get_value() -> ListEventPredictionsResultTypeDef:
-    return {
-        "eventPredictionSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEventPredictionsResultTypeDef(TypedDict):
-    eventPredictionSummaries: List[EventPredictionSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventPredictionSummaryTypeDef](./type_defs.md#eventpredictionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceARN": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceARN: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListTagsForResourceResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ListTagsForResourceResultTypeDef
-
-def get_value() -> ListTagsForResourceResultTypeDef:
-    return {
-        "tags": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResultTypeDef(TypedDict):
-    tags: List[TagTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogOddsMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import LogOddsMetricTypeDef
-
-def get_value() -> LogOddsMetricTypeDef:
-    return {
-        "variableName": ...,
-        "variableType": ...,
-        "variableImportance": ...,
-    }
-```
-
-```python title="Definition"
-class LogOddsMetricTypeDef(TypedDict):
-    variableName: str,
-    variableType: str,
-    variableImportance: float,
-```
-
-## MetricDataPointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import MetricDataPointTypeDef
-
-def get_value() -> MetricDataPointTypeDef:
-    return {
-        "fpr": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDataPointTypeDef(TypedDict):
-    fpr: NotRequired[float],
-    precision: NotRequired[float],
-    tpr: NotRequired[float],
-    threshold: NotRequired[float],
-```
-
-## ModelEndpointDataBlobTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelEndpointDataBlobTypeDef
-
-def get_value() -> ModelEndpointDataBlobTypeDef:
-    return {
-        "byteBuffer": ...,
-    }
-```
-
-```python title="Definition"
-class ModelEndpointDataBlobTypeDef(TypedDict):
-    byteBuffer: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
-    contentType: NotRequired[str],
-```
-
+1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
 ## ModelInputConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2310,24 +851,335 @@ class ModelOutputConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelOutputDataFormatType](./literals.md#modeloutputdataformattype) 
-## ModelScoresTypeDef
+## FilterConditionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelScoresTypeDef
+from mypy_boto3_frauddetector.type_defs import FilterConditionTypeDef
 
-def get_value() -> ModelScoresTypeDef:
+def get_value() -> FilterConditionTypeDef:
     return {
-        "modelVersion": ...,
+        "value": ...,
     }
 ```
 
 ```python title="Definition"
-class ModelScoresTypeDef(TypedDict):
-    modelVersion: NotRequired[ModelVersionTypeDef],  # (1)
-    scores: NotRequired[Dict[str, float]],
+class FilterConditionTypeDef(TypedDict):
+    value: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
+## GetBatchImportJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsRequestRequestTypeDef
+
+def get_value() -> GetBatchImportJobsRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetBatchImportJobsRequestRequestTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## GetBatchPredictionJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsRequestRequestTypeDef
+
+def get_value() -> GetBatchPredictionJobsRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetBatchPredictionJobsRequestRequestTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
+
+def get_value() -> GetDeleteEventsByEventTypeStatusRequestRequestTypeDef:
+    return {
+        "eventTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeleteEventsByEventTypeStatusRequestRequestTypeDef(TypedDict):
+    eventTypeName: str,
+```
+
+## GetDetectorVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetDetectorVersionRequestRequestTypeDef
+
+def get_value() -> GetDetectorVersionRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+        "detectorVersionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDetectorVersionRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    detectorVersionId: str,
+```
+
+## GetDetectorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetDetectorsRequestRequestTypeDef
+
+def get_value() -> GetDetectorsRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDetectorsRequestRequestTypeDef(TypedDict):
+    detectorId: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetEntityTypesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEntityTypesRequestRequestTypeDef
+
+def get_value() -> GetEntityTypesRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetEntityTypesRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetEventPredictionMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataRequestRequestTypeDef
+
+def get_value() -> GetEventPredictionMetadataRequestRequestTypeDef:
+    return {
+        "eventId": ...,
+        "eventTypeName": ...,
+        "detectorId": ...,
+        "detectorVersionId": ...,
+        "predictionTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventPredictionMetadataRequestRequestTypeDef(TypedDict):
+    eventId: str,
+    eventTypeName: str,
+    detectorId: str,
+    detectorVersionId: str,
+    predictionTimestamp: str,
+```
+
+## ModelEndpointDataBlobTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ModelEndpointDataBlobTypeDef
+
+def get_value() -> ModelEndpointDataBlobTypeDef:
+    return {
+        "byteBuffer": ...,
+    }
+```
+
+```python title="Definition"
+class ModelEndpointDataBlobTypeDef(TypedDict):
+    byteBuffer: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    contentType: NotRequired[str],
+```
+
+## RuleResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import RuleResultTypeDef
+
+def get_value() -> RuleResultTypeDef:
+    return {
+        "ruleId": ...,
+    }
+```
+
+```python title="Definition"
+class RuleResultTypeDef(TypedDict):
+    ruleId: NotRequired[str],
+    outcomes: NotRequired[List[str]],
+```
+
+## GetEventRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventRequestRequestTypeDef
+
+def get_value() -> GetEventRequestRequestTypeDef:
+    return {
+        "eventId": ...,
+        "eventTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventRequestRequestTypeDef(TypedDict):
+    eventId: str,
+    eventTypeName: str,
+```
+
+## GetEventTypesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventTypesRequestRequestTypeDef
+
+def get_value() -> GetEventTypesRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventTypesRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetExternalModelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetExternalModelsRequestRequestTypeDef
+
+def get_value() -> GetExternalModelsRequestRequestTypeDef:
+    return {
+        "modelEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class GetExternalModelsRequestRequestTypeDef(TypedDict):
+    modelEndpoint: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## KMSKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import KMSKeyTypeDef
+
+def get_value() -> KMSKeyTypeDef:
+    return {
+        "kmsEncryptionKeyArn": ...,
+    }
+```
+
+```python title="Definition"
+class KMSKeyTypeDef(TypedDict):
+    kmsEncryptionKeyArn: NotRequired[str],
+```
+
+## GetLabelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetLabelsRequestRequestTypeDef
+
+def get_value() -> GetLabelsRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetLabelsRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## LabelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import LabelTypeDef
+
+def get_value() -> LabelTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class LabelTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
+```
+
+## GetModelVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetModelVersionRequestRequestTypeDef
+
+def get_value() -> GetModelVersionRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "modelVersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class GetModelVersionRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    modelVersionNumber: str,
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+## GetModelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetModelsRequestRequestTypeDef
+
+def get_value() -> GetModelsRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+    }
+```
+
+```python title="Definition"
+class GetModelsRequestRequestTypeDef(TypedDict):
+    modelId: NotRequired[str],
+    modelType: NotRequired[ModelTypeEnumType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
 ## ModelTypeDef
 
 ```python title="Usage Example"
@@ -2351,80 +1203,24 @@ class ModelTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-## ModelVersionDetailTypeDef
+## GetOutcomesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
+from mypy_boto3_frauddetector.type_defs import GetOutcomesRequestRequestTypeDef
 
-def get_value() -> ModelVersionDetailTypeDef:
+def get_value() -> GetOutcomesRequestRequestTypeDef:
     return {
-        "modelId": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class ModelVersionDetailTypeDef(TypedDict):
-    modelId: NotRequired[str],
-    modelType: NotRequired[ModelTypeEnumType],  # (1)
-    modelVersionNumber: NotRequired[str],
-    status: NotRequired[str],
-    trainingDataSource: NotRequired[TrainingDataSourceEnumType],  # (2)
-    trainingDataSchema: NotRequired[TrainingDataSchemaTypeDef],  # (3)
-    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
-    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
-    trainingResult: NotRequired[TrainingResultTypeDef],  # (6)
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
+class GetOutcomesRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
-3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
-4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
-5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
-6. See [:material-code-braces: TrainingResultTypeDef](./type_defs.md#trainingresulttypedef) 
-## ModelVersionEvaluationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelVersionEvaluationTypeDef
-
-def get_value() -> ModelVersionEvaluationTypeDef:
-    return {
-        "outputVariableName": ...,
-    }
-```
-
-```python title="Definition"
-class ModelVersionEvaluationTypeDef(TypedDict):
-    outputVariableName: NotRequired[str],
-    evaluationScore: NotRequired[str],
-    predictionExplanations: NotRequired[PredictionExplanationsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PredictionExplanationsTypeDef](./type_defs.md#predictionexplanationstypedef) 
-## ModelVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelVersionTypeDef
-
-def get_value() -> ModelVersionTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "modelVersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class ModelVersionTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    modelVersionNumber: str,
-    arn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
 ## OutcomeTypeDef
 
 ```python title="Usage Example"
@@ -2445,23 +1241,106 @@ class OutcomeTypeDef(TypedDict):
     arn: NotRequired[str],
 ```
 
-## PredictionExplanationsTypeDef
+## GetRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import PredictionExplanationsTypeDef
+from mypy_boto3_frauddetector.type_defs import GetRulesRequestRequestTypeDef
 
-def get_value() -> PredictionExplanationsTypeDef:
+def get_value() -> GetRulesRequestRequestTypeDef:
     return {
-        "variableImpactExplanations": ...,
+        "detectorId": ...,
     }
 ```
 
 ```python title="Definition"
-class PredictionExplanationsTypeDef(TypedDict):
-    variableImpactExplanations: NotRequired[List[VariableImpactExplanationTypeDef]],  # (1)
+class GetRulesRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    ruleId: NotRequired[str],
+    ruleVersion: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
-1. See [:material-code-braces: VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef) 
+## RuleDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import RuleDetailTypeDef
+
+def get_value() -> RuleDetailTypeDef:
+    return {
+        "ruleId": ...,
+    }
+```
+
+```python title="Definition"
+class RuleDetailTypeDef(TypedDict):
+    ruleId: NotRequired[str],
+    description: NotRequired[str],
+    detectorId: NotRequired[str],
+    ruleVersion: NotRequired[str],
+    expression: NotRequired[str],
+    language: NotRequired[LanguageType],  # (1)
+    outcomes: NotRequired[List[str]],
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
+## GetVariablesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetVariablesRequestRequestTypeDef
+
+def get_value() -> GetVariablesRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetVariablesRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## IngestedEventsTimeWindowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import IngestedEventsTimeWindowTypeDef
+
+def get_value() -> IngestedEventsTimeWindowTypeDef:
+    return {
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class IngestedEventsTimeWindowTypeDef(TypedDict):
+    startTime: str,
+    endTime: str,
+```
+
+## LabelSchemaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import LabelSchemaTypeDef
+
+def get_value() -> LabelSchemaTypeDef:
+    return {
+        "labelMapper": ...,
+    }
+```
+
+```python title="Definition"
+class LabelSchemaTypeDef(TypedDict):
+    labelMapper: Mapping[str, Sequence[str]],
+    unlabeledEventsTreatment: NotRequired[UnlabeledEventsTreatmentType],  # (1)
+```
+
+1. See [:material-code-brackets: UnlabeledEventsTreatmentType](./literals.md#unlabeledeventstreatmenttype) 
 ## PredictionTimeRangeTypeDef
 
 ```python title="Usage Example"
@@ -2480,6 +1359,376 @@ class PredictionTimeRangeTypeDef(TypedDict):
     endTime: str,
 ```
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## LogOddsMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import LogOddsMetricTypeDef
+
+def get_value() -> LogOddsMetricTypeDef:
+    return {
+        "variableName": ...,
+        "variableType": ...,
+        "variableImportance": ...,
+    }
+```
+
+```python title="Definition"
+class LogOddsMetricTypeDef(TypedDict):
+    variableName: str,
+    variableType: str,
+    variableImportance: float,
+```
+
+## MetricDataPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import MetricDataPointTypeDef
+
+def get_value() -> MetricDataPointTypeDef:
+    return {
+        "fpr": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDataPointTypeDef(TypedDict):
+    fpr: NotRequired[float],
+    precision: NotRequired[float],
+    tpr: NotRequired[float],
+    threshold: NotRequired[float],
+```
+
+## VariableImpactExplanationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import VariableImpactExplanationTypeDef
+
+def get_value() -> VariableImpactExplanationTypeDef:
+    return {
+        "eventVariableName": ...,
+    }
+```
+
+```python title="Definition"
+class VariableImpactExplanationTypeDef(TypedDict):
+    eventVariableName: NotRequired[str],
+    relativeImpact: NotRequired[str],
+    logOddsImpact: NotRequired[float],
+```
+
+## PutKMSEncryptionKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import PutKMSEncryptionKeyRequestRequestTypeDef
+
+def get_value() -> PutKMSEncryptionKeyRequestRequestTypeDef:
+    return {
+        "kmsEncryptionKeyArn": ...,
+    }
+```
+
+```python title="Definition"
+class PutKMSEncryptionKeyRequestRequestTypeDef(TypedDict):
+    kmsEncryptionKeyArn: str,
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateDetectorVersionMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateDetectorVersionMetadataRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+        "detectorVersionId": ...,
+        "description": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDetectorVersionMetadataRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    detectorVersionId: str,
+    description: str,
+```
+
+## UpdateDetectorVersionStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionStatusRequestRequestTypeDef
+
+def get_value() -> UpdateDetectorVersionStatusRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+        "detectorVersionId": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDetectorVersionStatusRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    detectorVersionId: str,
+    status: DetectorVersionStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
+## UpdateEventLabelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateEventLabelRequestRequestTypeDef
+
+def get_value() -> UpdateEventLabelRequestRequestTypeDef:
+    return {
+        "eventId": ...,
+        "eventTypeName": ...,
+        "assignedLabel": ...,
+        "labelTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEventLabelRequestRequestTypeDef(TypedDict):
+    eventId: str,
+    eventTypeName: str,
+    assignedLabel: str,
+    labelTimestamp: str,
+```
+
+## UpdateModelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateModelRequestRequestTypeDef
+
+def get_value() -> UpdateModelRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    description: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+## UpdateModelVersionStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionStatusRequestRequestTypeDef
+
+def get_value() -> UpdateModelVersionStatusRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "modelVersionNumber": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelVersionStatusRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    modelVersionNumber: str,
+    status: ModelVersionStatusType,  # (2)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-brackets: ModelVersionStatusType](./literals.md#modelversionstatustype) 
+## UpdateVariableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateVariableRequestRequestTypeDef
+
+def get_value() -> UpdateVariableRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVariableRequestRequestTypeDef(TypedDict):
+    name: str,
+    defaultValue: NotRequired[str],
+    description: NotRequired[str],
+    variableType: NotRequired[str],
+```
+
+## CreateBatchImportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateBatchImportJobRequestRequestTypeDef
+
+def get_value() -> CreateBatchImportJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "inputPath": ...,
+        "outputPath": ...,
+        "eventTypeName": ...,
+        "iamRoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBatchImportJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    inputPath: str,
+    outputPath: str,
+    eventTypeName: str,
+    iamRoleArn: str,
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateBatchPredictionJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateBatchPredictionJobRequestRequestTypeDef
+
+def get_value() -> CreateBatchPredictionJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "inputPath": ...,
+        "outputPath": ...,
+        "eventTypeName": ...,
+        "detectorName": ...,
+        "iamRoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBatchPredictionJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    inputPath: str,
+    outputPath: str,
+    eventTypeName: str,
+    detectorName: str,
+    iamRoleArn: str,
+    detectorVersion: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateModelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateModelRequestRequestTypeDef
+
+def get_value() -> CreateModelRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "eventTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    eventTypeName: str,
+    description: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateRuleRequestRequestTypeDef
+
+def get_value() -> CreateRuleRequestRequestTypeDef:
+    return {
+        "ruleId": ...,
+        "detectorId": ...,
+        "expression": ...,
+        "language": ...,
+        "outcomes": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleRequestRequestTypeDef(TypedDict):
+    ruleId: str,
+    detectorId: str,
+    expression: str,
+    language: LanguageType,  # (1)
+    outcomes: Sequence[str],
+    description: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateVariableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateVariableRequestRequestTypeDef
+
+def get_value() -> CreateVariableRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "dataType": ...,
+        "dataSource": ...,
+        "defaultValue": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVariableRequestRequestTypeDef(TypedDict):
+    name: str,
+    dataType: DataTypeType,  # (1)
+    dataSource: DataSourceType,  # (2)
+    defaultValue: str,
+    description: NotRequired[str],
+    variableType: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: DataTypeType](./literals.md#datatypetype) 
+2. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2546,54 +1795,6 @@ class PutEventTypeRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EventIngestionType](./literals.md#eventingestiontype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## PutExternalModelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import PutExternalModelRequestRequestTypeDef
-
-def get_value() -> PutExternalModelRequestRequestTypeDef:
-    return {
-        "modelEndpoint": ...,
-        "modelSource": ...,
-        "invokeModelEndpointRoleArn": ...,
-        "inputConfiguration": ...,
-        "outputConfiguration": ...,
-        "modelEndpointStatus": ...,
-    }
-```
-
-```python title="Definition"
-class PutExternalModelRequestRequestTypeDef(TypedDict):
-    modelEndpoint: str,
-    modelSource: ModelSourceType,  # (1)
-    invokeModelEndpointRoleArn: str,
-    inputConfiguration: ModelInputConfigurationTypeDef,  # (2)
-    outputConfiguration: ModelOutputConfigurationTypeDef,  # (3)
-    modelEndpointStatus: ModelEndpointStatusType,  # (4)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (5)
-```
-
-1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
-2. See [:material-code-braces: ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef) 
-3. See [:material-code-braces: ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef) 
-4. See [:material-code-brackets: ModelEndpointStatusType](./literals.md#modelendpointstatustype) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## PutKMSEncryptionKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import PutKMSEncryptionKeyRequestRequestTypeDef
-
-def get_value() -> PutKMSEncryptionKeyRequestRequestTypeDef:
-    return {
-        "kmsEncryptionKeyArn": ...,
-    }
-```
-
-```python title="Definition"
-class PutKMSEncryptionKeyRequestRequestTypeDef(TypedDict):
-    kmsEncryptionKeyArn: str,
-```
-
 ## PutLabelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2632,120 +1833,6 @@ class PutOutcomeRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RuleDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import RuleDetailTypeDef
-
-def get_value() -> RuleDetailTypeDef:
-    return {
-        "ruleId": ...,
-    }
-```
-
-```python title="Definition"
-class RuleDetailTypeDef(TypedDict):
-    ruleId: NotRequired[str],
-    description: NotRequired[str],
-    detectorId: NotRequired[str],
-    ruleVersion: NotRequired[str],
-    expression: NotRequired[str],
-    language: NotRequired[LanguageType],  # (1)
-    outcomes: NotRequired[List[str]],
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
-## RuleResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import RuleResultTypeDef
-
-def get_value() -> RuleResultTypeDef:
-    return {
-        "ruleId": ...,
-    }
-```
-
-```python title="Definition"
-class RuleResultTypeDef(TypedDict):
-    ruleId: NotRequired[str],
-    outcomes: NotRequired[List[str]],
-```
-
-## RuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import RuleTypeDef
-
-def get_value() -> RuleTypeDef:
-    return {
-        "detectorId": ...,
-        "ruleId": ...,
-        "ruleVersion": ...,
-    }
-```
-
-```python title="Definition"
-class RuleTypeDef(TypedDict):
-    detectorId: str,
-    ruleId: str,
-    ruleVersion: str,
-```
-
-## SendEventRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import SendEventRequestRequestTypeDef
-
-def get_value() -> SendEventRequestRequestTypeDef:
-    return {
-        "eventId": ...,
-        "eventTypeName": ...,
-        "eventTimestamp": ...,
-        "eventVariables": ...,
-        "entities": ...,
-    }
-```
-
-```python title="Definition"
-class SendEventRequestRequestTypeDef(TypedDict):
-    eventId: str,
-    eventTypeName: str,
-    eventTimestamp: str,
-    eventVariables: Mapping[str, str],
-    entities: Sequence[EntityTypeDef],  # (1)
-    assignedLabel: NotRequired[str],
-    labelTimestamp: NotRequired[str],
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2765,120 +1852,400 @@ class TagResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+## BatchCreateVariableRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TagTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestRequestTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> BatchCreateVariableRequestRequestTypeDef:
     return {
-        "key": ...,
-        "value": ...,
+        "variableEntries": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    key: str,
-    value: str,
+class BatchCreateVariableRequestRequestTypeDef(TypedDict):
+    variableEntries: Sequence[VariableEntryTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
-## TrainingDataSchemaTypeDef
+1. See [:material-code-braces: VariableEntryTypeDef](./type_defs.md#variableentrytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## BatchCreateVariableResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TrainingDataSchemaTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
 
-def get_value() -> TrainingDataSchemaTypeDef:
+def get_value() -> BatchCreateVariableResultTypeDef:
     return {
-        "modelVariables": ...,
-        "labelSchema": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TrainingDataSchemaTypeDef(TypedDict):
-    modelVariables: Sequence[str],
-    labelSchema: LabelSchemaTypeDef,  # (1)
+class BatchCreateVariableResultTypeDef(TypedDict):
+    errors: List[BatchCreateVariableErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: LabelSchemaTypeDef](./type_defs.md#labelschematypedef) 
-## TrainingMetricsTypeDef
+1. See [:material-code-braces: BatchCreateVariableErrorTypeDef](./type_defs.md#batchcreatevariableerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDetectorVersionResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TrainingMetricsTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionResultTypeDef
 
-def get_value() -> TrainingMetricsTypeDef:
+def get_value() -> CreateDetectorVersionResultTypeDef:
     return {
-        "auc": ...,
+        "detectorId": ...,
+        "detectorVersionId": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TrainingMetricsTypeDef(TypedDict):
-    auc: NotRequired[float],
-    metricDataPoints: NotRequired[List[MetricDataPointTypeDef]],  # (1)
+class CreateDetectorVersionResultTypeDef(TypedDict):
+    detectorId: str,
+    detectorVersionId: str,
+    status: DetectorVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef) 
-## TrainingResultTypeDef
+1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelVersionResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TrainingResultTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultTypeDef
 
-def get_value() -> TrainingResultTypeDef:
+def get_value() -> CreateModelVersionResultTypeDef:
     return {
-        "dataValidationMetrics": ...,
+        "modelId": ...,
+        "modelType": ...,
+        "modelVersionNumber": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TrainingResultTypeDef(TypedDict):
-    dataValidationMetrics: NotRequired[DataValidationMetricsTypeDef],  # (1)
-    trainingMetrics: NotRequired[TrainingMetricsTypeDef],  # (2)
-    variableImportanceMetrics: NotRequired[VariableImportanceMetricsTypeDef],  # (3)
+class CreateModelVersionResultTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    modelVersionNumber: str,
+    status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef) 
-2. See [:material-code-braces: TrainingMetricsTypeDef](./type_defs.md#trainingmetricstypedef) 
-3. See [:material-code-braces: VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef) 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteEventsByEventTypeResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteEventsByEventTypeResultTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> DeleteEventsByEventTypeResultTypeDef:
     return {
-        "resourceARN": ...,
-        "tagKeys": ...,
+        "eventTypeName": ...,
+        "eventsDeletionStatus": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceARN: str,
-    tagKeys: Sequence[str],
+class DeleteEventsByEventTypeResultTypeDef(TypedDict):
+    eventTypeName: str,
+    eventsDeletionStatus: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-## UpdateDetectorVersionMetadataRequestRequestTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDeleteEventsByEventTypeStatusResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionMetadataRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusResultTypeDef
 
-def get_value() -> UpdateDetectorVersionMetadataRequestRequestTypeDef:
+def get_value() -> GetDeleteEventsByEventTypeStatusResultTypeDef:
+    return {
+        "eventTypeName": ...,
+        "eventsDeletionStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeleteEventsByEventTypeStatusResultTypeDef(TypedDict):
+    eventTypeName: str,
+    eventsDeletionStatus: AsyncJobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AsyncJobStatusType](./literals.md#asyncjobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "tags": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateModelVersionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultTypeDef
+
+def get_value() -> UpdateModelVersionResultTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "modelVersionNumber": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelVersionResultTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    modelVersionNumber: str,
+    status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetVariableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import BatchGetVariableResultTypeDef
+
+def get_value() -> BatchGetVariableResultTypeDef:
+    return {
+        "variables": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetVariableResultTypeDef(TypedDict):
+    variables: List[VariableTypeDef],  # (1)
+    errors: List[BatchGetVariableErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
+2. See [:material-code-braces: BatchGetVariableErrorTypeDef](./type_defs.md#batchgetvariableerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVariablesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetVariablesResultTypeDef
+
+def get_value() -> GetVariablesResultTypeDef:
+    return {
+        "variables": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVariablesResultTypeDef(TypedDict):
+    variables: List[VariableTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBatchImportJobsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsResultTypeDef
+
+def get_value() -> GetBatchImportJobsResultTypeDef:
+    return {
+        "batchImports": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBatchImportJobsResultTypeDef(TypedDict):
+    batchImports: List[BatchImportTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchImportTypeDef](./type_defs.md#batchimporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBatchPredictionJobsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsResultTypeDef
+
+def get_value() -> GetBatchPredictionJobsResultTypeDef:
+    return {
+        "batchPredictions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBatchPredictionJobsResultTypeDef(TypedDict):
+    batchPredictions: List[BatchPredictionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelScoresTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ModelScoresTypeDef
+
+def get_value() -> ModelScoresTypeDef:
+    return {
+        "modelVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ModelScoresTypeDef(TypedDict):
+    modelVersion: NotRequired[ModelVersionTypeDef],  # (1)
+    scores: NotRequired[Dict[str, float]],
+```
+
+1. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
+## CreateDetectorVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionRequestRequestTypeDef
+
+def get_value() -> CreateDetectorVersionRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+        "rules": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDetectorVersionRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    rules: Sequence[RuleTypeDef],  # (1)
+    description: NotRequired[str],
+    externalModelEndpoints: NotRequired[Sequence[str]],
+    modelVersions: NotRequired[Sequence[ModelVersionTypeDef]],  # (2)
+    ruleExecutionMode: NotRequired[RuleExecutionModeType],  # (3)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
+3. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateRuleResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateRuleResultTypeDef
+
+def get_value() -> CreateRuleResultTypeDef:
+    return {
+        "rule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleResultTypeDef(TypedDict):
+    rule: RuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import DeleteRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRuleRequestRequestTypeDef:
+    return {
+        "rule": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteRuleRequestRequestTypeDef(TypedDict):
+    rule: RuleTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+## GetDetectorVersionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetDetectorVersionResultTypeDef
+
+def get_value() -> GetDetectorVersionResultTypeDef:
     return {
         "detectorId": ...,
         "detectorVersionId": ...,
         "description": ...,
+        "externalModelEndpoints": ...,
+        "modelVersions": ...,
+        "rules": ...,
+        "status": ...,
+        "lastUpdatedTime": ...,
+        "createdTime": ...,
+        "ruleExecutionMode": ...,
+        "arn": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDetectorVersionMetadataRequestRequestTypeDef(TypedDict):
+class GetDetectorVersionResultTypeDef(TypedDict):
     detectorId: str,
     detectorVersionId: str,
     description: str,
+    externalModelEndpoints: List[str],
+    modelVersions: List[ModelVersionTypeDef],  # (1)
+    rules: List[RuleTypeDef],  # (2)
+    status: DetectorVersionStatusType,  # (3)
+    lastUpdatedTime: str,
+    createdTime: str,
+    ruleExecutionMode: RuleExecutionModeType,  # (4)
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
+1. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
+2. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+3. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
+4. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDetectorVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2907,146 +2274,6 @@ class UpdateDetectorVersionRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 2. See [:material-code-braces: ModelVersionTypeDef](./type_defs.md#modelversiontypedef) 
 3. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
-## UpdateDetectorVersionStatusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionStatusRequestRequestTypeDef
-
-def get_value() -> UpdateDetectorVersionStatusRequestRequestTypeDef:
-    return {
-        "detectorId": ...,
-        "detectorVersionId": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDetectorVersionStatusRequestRequestTypeDef(TypedDict):
-    detectorId: str,
-    detectorVersionId: str,
-    status: DetectorVersionStatusType,  # (1)
-```
-
-1. See [:material-code-brackets: DetectorVersionStatusType](./literals.md#detectorversionstatustype) 
-## UpdateEventLabelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateEventLabelRequestRequestTypeDef
-
-def get_value() -> UpdateEventLabelRequestRequestTypeDef:
-    return {
-        "eventId": ...,
-        "eventTypeName": ...,
-        "assignedLabel": ...,
-        "labelTimestamp": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateEventLabelRequestRequestTypeDef(TypedDict):
-    eventId: str,
-    eventTypeName: str,
-    assignedLabel: str,
-    labelTimestamp: str,
-```
-
-## UpdateModelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateModelRequestRequestTypeDef
-
-def get_value() -> UpdateModelRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateModelRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    description: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-## UpdateModelVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionRequestRequestTypeDef
-
-def get_value() -> UpdateModelVersionRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "majorVersionNumber": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateModelVersionRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    majorVersionNumber: str,
-    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (2)
-    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (3)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
-3. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdateModelVersionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultTypeDef
-
-def get_value() -> UpdateModelVersionResultTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "modelVersionNumber": ...,
-        "status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateModelVersionResultTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    modelVersionNumber: str,
-    status: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateModelVersionStatusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionStatusRequestRequestTypeDef
-
-def get_value() -> UpdateModelVersionStatusRequestRequestTypeDef:
-    return {
-        "modelId": ...,
-        "modelType": ...,
-        "modelVersionNumber": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateModelVersionStatusRequestRequestTypeDef(TypedDict):
-    modelId: str,
-    modelType: ModelTypeEnumType,  # (1)
-    modelVersionNumber: str,
-    status: ModelVersionStatusType,  # (2)
-```
-
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-brackets: ModelVersionStatusType](./literals.md#modelversionstatustype) 
 ## UpdateRuleMetadataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3113,64 +2340,473 @@ class UpdateRuleVersionResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateVariableRequestRequestTypeDef
+## DataValidationMetricsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import UpdateVariableRequestRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DataValidationMetricsTypeDef
 
-def get_value() -> UpdateVariableRequestRequestTypeDef:
+def get_value() -> DataValidationMetricsTypeDef:
+    return {
+        "fileLevelMessages": ...,
+    }
+```
+
+```python title="Definition"
+class DataValidationMetricsTypeDef(TypedDict):
+    fileLevelMessages: NotRequired[List[FileValidationMessageTypeDef]],  # (1)
+    fieldLevelMessages: NotRequired[List[FieldValidationMessageTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: FileValidationMessageTypeDef](./type_defs.md#filevalidationmessagetypedef) 
+2. See [:material-code-braces: FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef) 
+## DescribeDetectorResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import DescribeDetectorResultTypeDef
+
+def get_value() -> DescribeDetectorResultTypeDef:
+    return {
+        "detectorId": ...,
+        "detectorVersionSummaries": ...,
+        "nextToken": ...,
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDetectorResultTypeDef(TypedDict):
+    detectorId: str,
+    detectorVersionSummaries: List[DetectorVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectorVersionSummaryTypeDef](./type_defs.md#detectorversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDetectorsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetDetectorsResultTypeDef
+
+def get_value() -> GetDetectorsResultTypeDef:
+    return {
+        "detectors": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDetectorsResultTypeDef(TypedDict):
+    detectors: List[DetectorTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectorTypeDef](./type_defs.md#detectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "eventId": ...,
+    }
+```
+
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    eventId: NotRequired[str],
+    eventTypeName: NotRequired[str],
+    eventTimestamp: NotRequired[str],
+    eventVariables: NotRequired[Dict[str, str]],
+    currentLabel: NotRequired[str],
+    labelTimestamp: NotRequired[str],
+    entities: NotRequired[List[EntityTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+## SendEventRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import SendEventRequestRequestTypeDef
+
+def get_value() -> SendEventRequestRequestTypeDef:
+    return {
+        "eventId": ...,
+        "eventTypeName": ...,
+        "eventTimestamp": ...,
+        "eventVariables": ...,
+        "entities": ...,
+    }
+```
+
+```python title="Definition"
+class SendEventRequestRequestTypeDef(TypedDict):
+    eventId: str,
+    eventTypeName: str,
+    eventTimestamp: str,
+    eventVariables: Mapping[str, str],
+    entities: Sequence[EntityTypeDef],  # (1)
+    assignedLabel: NotRequired[str],
+    labelTimestamp: NotRequired[str],
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+## GetEntityTypesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultTypeDef
+
+def get_value() -> GetEntityTypesResultTypeDef:
+    return {
+        "entityTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEntityTypesResultTypeDef(TypedDict):
+    entityTypes: List[EntityTypeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EntityTypeTypeDef](./type_defs.md#entitytypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEventPredictionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ListEventPredictionsResultTypeDef
+
+def get_value() -> ListEventPredictionsResultTypeDef:
+    return {
+        "eventPredictionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventPredictionsResultTypeDef(TypedDict):
+    eventPredictionSummaries: List[EventPredictionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventPredictionSummaryTypeDef](./type_defs.md#eventpredictionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EventTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import EventTypeTypeDef
+
+def get_value() -> EventTypeTypeDef:
     return {
         "name": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateVariableRequestRequestTypeDef(TypedDict):
-    name: str,
-    defaultValue: NotRequired[str],
-    description: NotRequired[str],
-    variableType: NotRequired[str],
-```
-
-## VariableEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import VariableEntryTypeDef
-
-def get_value() -> VariableEntryTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class VariableEntryTypeDef(TypedDict):
+class EventTypeTypeDef(TypedDict):
     name: NotRequired[str],
-    dataType: NotRequired[str],
-    dataSource: NotRequired[str],
-    defaultValue: NotRequired[str],
     description: NotRequired[str],
-    variableType: NotRequired[str],
+    eventVariables: NotRequired[List[str]],
+    labels: NotRequired[List[str]],
+    entityTypes: NotRequired[List[str]],
+    eventIngestion: NotRequired[EventIngestionType],  # (1)
+    ingestedEventStatistics: NotRequired[IngestedEventStatisticsTypeDef],  # (2)
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
 ```
 
-## VariableImpactExplanationTypeDef
+1. See [:material-code-brackets: EventIngestionType](./literals.md#eventingestiontype) 
+2. See [:material-code-braces: IngestedEventStatisticsTypeDef](./type_defs.md#ingestedeventstatisticstypedef) 
+## ExternalModelOutputsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import VariableImpactExplanationTypeDef
+from mypy_boto3_frauddetector.type_defs import ExternalModelOutputsTypeDef
 
-def get_value() -> VariableImpactExplanationTypeDef:
+def get_value() -> ExternalModelOutputsTypeDef:
     return {
-        "eventVariableName": ...,
+        "externalModel": ...,
     }
 ```
 
 ```python title="Definition"
-class VariableImpactExplanationTypeDef(TypedDict):
-    eventVariableName: NotRequired[str],
-    relativeImpact: NotRequired[str],
-    logOddsImpact: NotRequired[float],
+class ExternalModelOutputsTypeDef(TypedDict):
+    externalModel: NotRequired[ExternalModelSummaryTypeDef],  # (1)
+    outputs: NotRequired[Dict[str, str]],
 ```
 
+1. See [:material-code-braces: ExternalModelSummaryTypeDef](./type_defs.md#externalmodelsummarytypedef) 
+## ExternalModelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ExternalModelTypeDef
+
+def get_value() -> ExternalModelTypeDef:
+    return {
+        "modelEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class ExternalModelTypeDef(TypedDict):
+    modelEndpoint: NotRequired[str],
+    modelSource: NotRequired[ModelSourceType],  # (1)
+    invokeModelEndpointRoleArn: NotRequired[str],
+    inputConfiguration: NotRequired[ModelInputConfigurationTypeDef],  # (2)
+    outputConfiguration: NotRequired[ModelOutputConfigurationTypeDef],  # (3)
+    modelEndpointStatus: NotRequired[ModelEndpointStatusType],  # (4)
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
+2. See [:material-code-braces: ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef) 
+3. See [:material-code-braces: ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef) 
+4. See [:material-code-brackets: ModelEndpointStatusType](./literals.md#modelendpointstatustype) 
+## PutExternalModelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import PutExternalModelRequestRequestTypeDef
+
+def get_value() -> PutExternalModelRequestRequestTypeDef:
+    return {
+        "modelEndpoint": ...,
+        "modelSource": ...,
+        "invokeModelEndpointRoleArn": ...,
+        "inputConfiguration": ...,
+        "outputConfiguration": ...,
+        "modelEndpointStatus": ...,
+    }
+```
+
+```python title="Definition"
+class PutExternalModelRequestRequestTypeDef(TypedDict):
+    modelEndpoint: str,
+    modelSource: ModelSourceType,  # (1)
+    invokeModelEndpointRoleArn: str,
+    inputConfiguration: ModelInputConfigurationTypeDef,  # (2)
+    outputConfiguration: ModelOutputConfigurationTypeDef,  # (3)
+    modelEndpointStatus: ModelEndpointStatusType,  # (4)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: ModelSourceType](./literals.md#modelsourcetype) 
+2. See [:material-code-braces: ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef) 
+3. See [:material-code-braces: ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef) 
+4. See [:material-code-brackets: ModelEndpointStatusType](./literals.md#modelendpointstatustype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetEventPredictionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionRequestRequestTypeDef
+
+def get_value() -> GetEventPredictionRequestRequestTypeDef:
+    return {
+        "detectorId": ...,
+        "eventId": ...,
+        "eventTypeName": ...,
+        "entities": ...,
+        "eventTimestamp": ...,
+        "eventVariables": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventPredictionRequestRequestTypeDef(TypedDict):
+    detectorId: str,
+    eventId: str,
+    eventTypeName: str,
+    entities: Sequence[EntityTypeDef],  # (1)
+    eventTimestamp: str,
+    eventVariables: Mapping[str, str],
+    detectorVersionId: NotRequired[str],
+    externalModelEndpointDataBlobs: NotRequired[Mapping[str, ModelEndpointDataBlobTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+2. See [:material-code-braces: ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef) 
+## GetKMSEncryptionKeyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetKMSEncryptionKeyResultTypeDef
+
+def get_value() -> GetKMSEncryptionKeyResultTypeDef:
+    return {
+        "kmsKey": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetKMSEncryptionKeyResultTypeDef(TypedDict):
+    kmsKey: KMSKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KMSKeyTypeDef](./type_defs.md#kmskeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLabelsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetLabelsResultTypeDef
+
+def get_value() -> GetLabelsResultTypeDef:
+    return {
+        "labels": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLabelsResultTypeDef(TypedDict):
+    labels: List[LabelTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetModelsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetModelsResultTypeDef
+
+def get_value() -> GetModelsResultTypeDef:
+    return {
+        "nextToken": ...,
+        "models": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetModelsResultTypeDef(TypedDict):
+    nextToken: str,
+    models: List[ModelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOutcomesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetOutcomesResultTypeDef
+
+def get_value() -> GetOutcomesResultTypeDef:
+    return {
+        "outcomes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOutcomesResultTypeDef(TypedDict):
+    outcomes: List[OutcomeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OutcomeTypeDef](./type_defs.md#outcometypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRulesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetRulesResultTypeDef
+
+def get_value() -> GetRulesResultTypeDef:
+    return {
+        "ruleDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRulesResultTypeDef(TypedDict):
+    ruleDetails: List[RuleDetailTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleDetailTypeDef](./type_defs.md#ruledetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IngestedEventsDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import IngestedEventsDetailTypeDef
+
+def get_value() -> IngestedEventsDetailTypeDef:
+    return {
+        "ingestedEventsTimeWindow": ...,
+    }
+```
+
+```python title="Definition"
+class IngestedEventsDetailTypeDef(TypedDict):
+    ingestedEventsTimeWindow: IngestedEventsTimeWindowTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: IngestedEventsTimeWindowTypeDef](./type_defs.md#ingestedeventstimewindowtypedef) 
+## TrainingDataSchemaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TrainingDataSchemaTypeDef
+
+def get_value() -> TrainingDataSchemaTypeDef:
+    return {
+        "modelVariables": ...,
+        "labelSchema": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingDataSchemaTypeDef(TypedDict):
+    modelVariables: Sequence[str],
+    labelSchema: LabelSchemaTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LabelSchemaTypeDef](./type_defs.md#labelschematypedef) 
+## ListEventPredictionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ListEventPredictionsRequestRequestTypeDef
+
+def get_value() -> ListEventPredictionsRequestRequestTypeDef:
+    return {
+        "eventId": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventPredictionsRequestRequestTypeDef(TypedDict):
+    eventId: NotRequired[FilterConditionTypeDef],  # (1)
+    eventType: NotRequired[FilterConditionTypeDef],  # (1)
+    detectorId: NotRequired[FilterConditionTypeDef],  # (1)
+    detectorVersionId: NotRequired[FilterConditionTypeDef],  # (1)
+    predictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (5)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+2. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+3. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+4. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+5. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
 ## VariableImportanceMetricsTypeDef
 
 ```python title="Usage Example"
@@ -3188,29 +2824,393 @@ class VariableImportanceMetricsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LogOddsMetricTypeDef](./type_defs.md#logoddsmetrictypedef) 
-## VariableTypeDef
+## TrainingMetricsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import VariableTypeDef
+from mypy_boto3_frauddetector.type_defs import TrainingMetricsTypeDef
 
-def get_value() -> VariableTypeDef:
+def get_value() -> TrainingMetricsTypeDef:
     return {
-        "name": ...,
+        "auc": ...,
     }
 ```
 
 ```python title="Definition"
-class VariableTypeDef(TypedDict):
-    name: NotRequired[str],
-    dataType: NotRequired[DataTypeType],  # (1)
-    dataSource: NotRequired[DataSourceType],  # (2)
-    defaultValue: NotRequired[str],
-    description: NotRequired[str],
-    variableType: NotRequired[str],
+class TrainingMetricsTypeDef(TypedDict):
+    auc: NotRequired[float],
+    metricDataPoints: NotRequired[List[MetricDataPointTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef) 
+## PredictionExplanationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import PredictionExplanationsTypeDef
+
+def get_value() -> PredictionExplanationsTypeDef:
+    return {
+        "variableImpactExplanations": ...,
+    }
+```
+
+```python title="Definition"
+class PredictionExplanationsTypeDef(TypedDict):
+    variableImpactExplanations: NotRequired[List[VariableImpactExplanationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef) 
+## GetEventResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventResultTypeDef
+
+def get_value() -> GetEventResultTypeDef:
+    return {
+        "event": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventResultTypeDef(TypedDict):
+    event: EventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEventTypesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventTypesResultTypeDef
+
+def get_value() -> GetEventTypesResultTypeDef:
+    return {
+        "eventTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventTypesResultTypeDef(TypedDict):
+    eventTypes: List[EventTypeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventTypeTypeDef](./type_defs.md#eventtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEventPredictionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionResultTypeDef
+
+def get_value() -> GetEventPredictionResultTypeDef:
+    return {
+        "modelScores": ...,
+        "ruleResults": ...,
+        "externalModelOutputs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventPredictionResultTypeDef(TypedDict):
+    modelScores: List[ModelScoresTypeDef],  # (1)
+    ruleResults: List[RuleResultTypeDef],  # (2)
+    externalModelOutputs: List[ExternalModelOutputsTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ModelScoresTypeDef](./type_defs.md#modelscorestypedef) 
+2. See [:material-code-braces: RuleResultTypeDef](./type_defs.md#ruleresulttypedef) 
+3. See [:material-code-braces: ExternalModelOutputsTypeDef](./type_defs.md#externalmodeloutputstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetExternalModelsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetExternalModelsResultTypeDef
+
+def get_value() -> GetExternalModelsResultTypeDef:
+    return {
+        "externalModels": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetExternalModelsResultTypeDef(TypedDict):
+    externalModels: List[ExternalModelTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExternalModelTypeDef](./type_defs.md#externalmodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateModelVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionRequestRequestTypeDef
+
+def get_value() -> UpdateModelVersionRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "majorVersionNumber": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelVersionRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    majorVersionNumber: str,
+    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (2)
+    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (3)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
+3. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateModelVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateModelVersionRequestRequestTypeDef
+
+def get_value() -> CreateModelVersionRequestRequestTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "trainingDataSource": ...,
+        "trainingDataSchema": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelVersionRequestRequestTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    trainingDataSource: TrainingDataSourceEnumType,  # (2)
+    trainingDataSchema: TrainingDataSchemaTypeDef,  # (3)
+    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
+    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
+3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
+4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
+5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetModelVersionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetModelVersionResultTypeDef
+
+def get_value() -> GetModelVersionResultTypeDef:
+    return {
+        "modelId": ...,
+        "modelType": ...,
+        "modelVersionNumber": ...,
+        "trainingDataSource": ...,
+        "trainingDataSchema": ...,
+        "externalEventsDetail": ...,
+        "ingestedEventsDetail": ...,
+        "status": ...,
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetModelVersionResultTypeDef(TypedDict):
+    modelId: str,
+    modelType: ModelTypeEnumType,  # (1)
+    modelVersionNumber: str,
+    trainingDataSource: TrainingDataSourceEnumType,  # (2)
+    trainingDataSchema: TrainingDataSchemaTypeDef,  # (3)
+    externalEventsDetail: ExternalEventsDetailTypeDef,  # (4)
+    ingestedEventsDetail: IngestedEventsDetailTypeDef,  # (5)
+    status: str,
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
+3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
+4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
+5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TrainingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TrainingResultTypeDef
+
+def get_value() -> TrainingResultTypeDef:
+    return {
+        "dataValidationMetrics": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingResultTypeDef(TypedDict):
+    dataValidationMetrics: NotRequired[DataValidationMetricsTypeDef],  # (1)
+    trainingMetrics: NotRequired[TrainingMetricsTypeDef],  # (2)
+    variableImportanceMetrics: NotRequired[VariableImportanceMetricsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef) 
+2. See [:material-code-braces: TrainingMetricsTypeDef](./type_defs.md#trainingmetricstypedef) 
+3. See [:material-code-braces: VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef) 
+## ModelVersionEvaluationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ModelVersionEvaluationTypeDef
+
+def get_value() -> ModelVersionEvaluationTypeDef:
+    return {
+        "outputVariableName": ...,
+    }
+```
+
+```python title="Definition"
+class ModelVersionEvaluationTypeDef(TypedDict):
+    outputVariableName: NotRequired[str],
+    evaluationScore: NotRequired[str],
+    predictionExplanations: NotRequired[PredictionExplanationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PredictionExplanationsTypeDef](./type_defs.md#predictionexplanationstypedef) 
+## ModelVersionDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
+
+def get_value() -> ModelVersionDetailTypeDef:
+    return {
+        "modelId": ...,
+    }
+```
+
+```python title="Definition"
+class ModelVersionDetailTypeDef(TypedDict):
+    modelId: NotRequired[str],
+    modelType: NotRequired[ModelTypeEnumType],  # (1)
+    modelVersionNumber: NotRequired[str],
+    status: NotRequired[str],
+    trainingDataSource: NotRequired[TrainingDataSourceEnumType],  # (2)
+    trainingDataSchema: NotRequired[TrainingDataSchemaTypeDef],  # (3)
+    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
+    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
+    trainingResult: NotRequired[TrainingResultTypeDef],  # (6)
     lastUpdatedTime: NotRequired[str],
     createdTime: NotRequired[str],
     arn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: DataTypeType](./literals.md#datatypetype) 
-2. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
+3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
+4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
+5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
+6. See [:material-code-braces: TrainingResultTypeDef](./type_defs.md#trainingresulttypedef) 
+## EvaluatedModelVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import EvaluatedModelVersionTypeDef
+
+def get_value() -> EvaluatedModelVersionTypeDef:
+    return {
+        "modelId": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluatedModelVersionTypeDef(TypedDict):
+    modelId: NotRequired[str],
+    modelVersion: NotRequired[str],
+    modelType: NotRequired[str],
+    evaluations: NotRequired[List[ModelVersionEvaluationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ModelVersionEvaluationTypeDef](./type_defs.md#modelversionevaluationtypedef) 
+## DescribeModelVersionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
+
+def get_value() -> DescribeModelVersionsResultTypeDef:
+    return {
+        "modelVersionDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelVersionsResultTypeDef(TypedDict):
+    modelVersionDetails: List[ModelVersionDetailTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelVersionDetailTypeDef](./type_defs.md#modelversiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEventPredictionMetadataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataResultTypeDef
+
+def get_value() -> GetEventPredictionMetadataResultTypeDef:
+    return {
+        "eventId": ...,
+        "eventTypeName": ...,
+        "entityId": ...,
+        "entityType": ...,
+        "eventTimestamp": ...,
+        "detectorId": ...,
+        "detectorVersionId": ...,
+        "detectorVersionStatus": ...,
+        "eventVariables": ...,
+        "rules": ...,
+        "ruleExecutionMode": ...,
+        "outcomes": ...,
+        "evaluatedModelVersions": ...,
+        "evaluatedExternalModels": ...,
+        "predictionTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventPredictionMetadataResultTypeDef(TypedDict):
+    eventId: str,
+    eventTypeName: str,
+    entityId: str,
+    entityType: str,
+    eventTimestamp: str,
+    detectorId: str,
+    detectorVersionId: str,
+    detectorVersionStatus: str,
+    eventVariables: List[EventVariableSummaryTypeDef],  # (1)
+    rules: List[EvaluatedRuleTypeDef],  # (2)
+    ruleExecutionMode: RuleExecutionModeType,  # (3)
+    outcomes: List[str],
+    evaluatedModelVersions: List[EvaluatedModelVersionTypeDef],  # (4)
+    evaluatedExternalModels: List[EvaluatedExternalModelTypeDef],  # (5)
+    predictionTimestamp: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: EventVariableSummaryTypeDef](./type_defs.md#eventvariablesummarytypedef) 
+2. See [:material-code-braces: EvaluatedRuleTypeDef](./type_defs.md#evaluatedruletypedef) 
+3. See [:material-code-brackets: RuleExecutionModeType](./literals.md#ruleexecutionmodetype) 
+4. See [:material-code-braces: EvaluatedModelVersionTypeDef](./type_defs.md#evaluatedmodelversiontypedef) 
+5. See [:material-code-braces: EvaluatedExternalModelTypeDef](./type_defs.md#evaluatedexternalmodeltypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

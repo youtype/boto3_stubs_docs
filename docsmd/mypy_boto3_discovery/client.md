@@ -708,9 +708,9 @@ parent.start_export_task(**kwargs)
 ### start\_import\_task
 
 Starts an import task, which allows you to import details of your on-premises
-environment directly into AWS Migration Hub without having to use the
-Application Discovery Service (ADS) tools such as the Discovery Connector or
-Discovery Agent.
+environment directly into Amazon Web Services Migration Hub without having to
+use the Application Discovery Service (ADS) tools such as the Discovery
+Connector or Discovery Agent.
 
 Type annotations and code completion for `#!python boto3.client("discovery").start_import_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)

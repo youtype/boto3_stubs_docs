@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36068,89 +36068,89 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_comprehendmedical.type_defs</span> <span class="kn">import</span> <span class="n">AttributeTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_comprehendmedical.type_defs</span> <span class="kn">import</span> <span class="n">TraitTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AttributeTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TraitTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#attributetypedef">AttributeTypeDef</a></li>
+<li><a href="type_defs/#traittypedef">TraitTypeDef</a></li>
 <li><a href="type_defs/#characterstypedef">CharactersTypeDef</a></li>
 <li><a href="type_defs/#comprehendmedicalasyncjobfiltertypedef">ComprehendMedicalAsyncJobFilterTypeDef</a></li>
-<li><a href="type_defs/#comprehendmedicalasyncjobpropertiestypedef">ComprehendMedicalAsyncJobPropertiesTypeDef</a></li>
-<li><a href="type_defs/#describeentitiesdetectionv2jobrequestrequesttypedef">DescribeEntitiesDetectionV2JobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeentitiesdetectionv2jobresponsetypedef">DescribeEntitiesDetectionV2JobResponseTypeDef</a></li>
-<li><a href="type_defs/#describeicd10cminferencejobrequestrequesttypedef">DescribeICD10CMInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeicd10cminferencejobresponsetypedef">DescribeICD10CMInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#describephidetectionjobrequestrequesttypedef">DescribePHIDetectionJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describephidetectionjobresponsetypedef">DescribePHIDetectionJobResponseTypeDef</a></li>
-<li><a href="type_defs/#describerxnorminferencejobrequestrequesttypedef">DescribeRxNormInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describerxnorminferencejobresponsetypedef">DescribeRxNormInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#describesnomedctinferencejobrequestrequesttypedef">DescribeSNOMEDCTInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describesnomedctinferencejobresponsetypedef">DescribeSNOMEDCTInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#detectentitiesrequestrequesttypedef">DetectEntitiesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#detectentitiesresponsetypedef">DetectEntitiesResponseTypeDef</a></li>
-<li><a href="type_defs/#detectentitiesv2requestrequesttypedef">DetectEntitiesV2RequestRequestTypeDef</a></li>
-<li><a href="type_defs/#detectentitiesv2responsetypedef">DetectEntitiesV2ResponseTypeDef</a></li>
-<li><a href="type_defs/#detectphirequestrequesttypedef">DetectPHIRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#detectphiresponsetypedef">DetectPHIResponseTypeDef</a></li>
-<li><a href="type_defs/#entitytypedef">EntityTypeDef</a></li>
-<li><a href="type_defs/#icd10cmattributetypedef">ICD10CMAttributeTypeDef</a></li>
-<li><a href="type_defs/#icd10cmconcepttypedef">ICD10CMConceptTypeDef</a></li>
-<li><a href="type_defs/#icd10cmentitytypedef">ICD10CMEntityTypeDef</a></li>
-<li><a href="type_defs/#icd10cmtraittypedef">ICD10CMTraitTypeDef</a></li>
-<li><a href="type_defs/#infericd10cmrequestrequesttypedef">InferICD10CMRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#infericd10cmresponsetypedef">InferICD10CMResponseTypeDef</a></li>
-<li><a href="type_defs/#inferrxnormrequestrequesttypedef">InferRxNormRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#inferrxnormresponsetypedef">InferRxNormResponseTypeDef</a></li>
-<li><a href="type_defs/#infersnomedctrequestrequesttypedef">InferSNOMEDCTRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#infersnomedctresponsetypedef">InferSNOMEDCTResponseTypeDef</a></li>
 <li><a href="type_defs/#inputdataconfigtypedef">InputDataConfigTypeDef</a></li>
-<li><a href="type_defs/#listentitiesdetectionv2jobsrequestrequesttypedef">ListEntitiesDetectionV2JobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listentitiesdetectionv2jobsresponsetypedef">ListEntitiesDetectionV2JobsResponseTypeDef</a></li>
-<li><a href="type_defs/#listicd10cminferencejobsrequestrequesttypedef">ListICD10CMInferenceJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listicd10cminferencejobsresponsetypedef">ListICD10CMInferenceJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#listphidetectionjobsrequestrequesttypedef">ListPHIDetectionJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listphidetectionjobsresponsetypedef">ListPHIDetectionJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#listrxnorminferencejobsrequestrequesttypedef">ListRxNormInferenceJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrxnorminferencejobsresponsetypedef">ListRxNormInferenceJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#listsnomedctinferencejobsrequestrequesttypedef">ListSNOMEDCTInferenceJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsnomedctinferencejobsresponsetypedef">ListSNOMEDCTInferenceJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#outputdataconfigtypedef">OutputDataConfigTypeDef</a></li>
+<li><a href="type_defs/#describeentitiesdetectionv2jobrequestrequesttypedef">DescribeEntitiesDetectionV2JobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#rxnormattributetypedef">RxNormAttributeTypeDef</a></li>
-<li><a href="type_defs/#rxnormconcepttypedef">RxNormConceptTypeDef</a></li>
-<li><a href="type_defs/#rxnormentitytypedef">RxNormEntityTypeDef</a></li>
-<li><a href="type_defs/#rxnormtraittypedef">RxNormTraitTypeDef</a></li>
-<li><a href="type_defs/#snomedctattributetypedef">SNOMEDCTAttributeTypeDef</a></li>
-<li><a href="type_defs/#snomedctconcepttypedef">SNOMEDCTConceptTypeDef</a></li>
+<li><a href="type_defs/#describeicd10cminferencejobrequestrequesttypedef">DescribeICD10CMInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describephidetectionjobrequestrequesttypedef">DescribePHIDetectionJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describerxnorminferencejobrequestrequesttypedef">DescribeRxNormInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describesnomedctinferencejobrequestrequesttypedef">DescribeSNOMEDCTInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#detectentitiesrequestrequesttypedef">DetectEntitiesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#detectentitiesv2requestrequesttypedef">DetectEntitiesV2RequestRequestTypeDef</a></li>
+<li><a href="type_defs/#detectphirequestrequesttypedef">DetectPHIRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#icd10cmtraittypedef">ICD10CMTraitTypeDef</a></li>
+<li><a href="type_defs/#icd10cmconcepttypedef">ICD10CMConceptTypeDef</a></li>
+<li><a href="type_defs/#infericd10cmrequestrequesttypedef">InferICD10CMRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#inferrxnormrequestrequesttypedef">InferRxNormRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#infersnomedctrequestrequesttypedef">InferSNOMEDCTRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#snomedctdetailstypedef">SNOMEDCTDetailsTypeDef</a></li>
-<li><a href="type_defs/#snomedctentitytypedef">SNOMEDCTEntityTypeDef</a></li>
+<li><a href="type_defs/#rxnormtraittypedef">RxNormTraitTypeDef</a></li>
+<li><a href="type_defs/#rxnormconcepttypedef">RxNormConceptTypeDef</a></li>
+<li><a href="type_defs/#snomedctconcepttypedef">SNOMEDCTConceptTypeDef</a></li>
 <li><a href="type_defs/#snomedcttraittypedef">SNOMEDCTTraitTypeDef</a></li>
-<li><a href="type_defs/#startentitiesdetectionv2jobrequestrequesttypedef">StartEntitiesDetectionV2JobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startentitiesdetectionv2jobresponsetypedef">StartEntitiesDetectionV2JobResponseTypeDef</a></li>
-<li><a href="type_defs/#starticd10cminferencejobrequestrequesttypedef">StartICD10CMInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#starticd10cminferencejobresponsetypedef">StartICD10CMInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#startphidetectionjobrequestrequesttypedef">StartPHIDetectionJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startphidetectionjobresponsetypedef">StartPHIDetectionJobResponseTypeDef</a></li>
-<li><a href="type_defs/#startrxnorminferencejobrequestrequesttypedef">StartRxNormInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startrxnorminferencejobresponsetypedef">StartRxNormInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#startsnomedctinferencejobrequestrequesttypedef">StartSNOMEDCTInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startsnomedctinferencejobresponsetypedef">StartSNOMEDCTInferenceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#stopentitiesdetectionv2jobrequestrequesttypedef">StopEntitiesDetectionV2JobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopentitiesdetectionv2jobresponsetypedef">StopEntitiesDetectionV2JobResponseTypeDef</a></li>
 <li><a href="type_defs/#stopicd10cminferencejobrequestrequesttypedef">StopICD10CMInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopicd10cminferencejobresponsetypedef">StopICD10CMInferenceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#stopphidetectionjobrequestrequesttypedef">StopPHIDetectionJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopphidetectionjobresponsetypedef">StopPHIDetectionJobResponseTypeDef</a></li>
 <li><a href="type_defs/#stoprxnorminferencejobrequestrequesttypedef">StopRxNormInferenceJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stoprxnorminferencejobresponsetypedef">StopRxNormInferenceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#stopsnomedctinferencejobrequestrequesttypedef">StopSNOMEDCTInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#attributetypedef">AttributeTypeDef</a></li>
+<li><a href="type_defs/#listentitiesdetectionv2jobsrequestrequesttypedef">ListEntitiesDetectionV2JobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listicd10cminferencejobsrequestrequesttypedef">ListICD10CMInferenceJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listphidetectionjobsrequestrequesttypedef">ListPHIDetectionJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrxnorminferencejobsrequestrequesttypedef">ListRxNormInferenceJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listsnomedctinferencejobsrequestrequesttypedef">ListSNOMEDCTInferenceJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#comprehendmedicalasyncjobpropertiestypedef">ComprehendMedicalAsyncJobPropertiesTypeDef</a></li>
+<li><a href="type_defs/#startentitiesdetectionv2jobrequestrequesttypedef">StartEntitiesDetectionV2JobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#starticd10cminferencejobrequestrequesttypedef">StartICD10CMInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startphidetectionjobrequestrequesttypedef">StartPHIDetectionJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startrxnorminferencejobrequestrequesttypedef">StartRxNormInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startsnomedctinferencejobrequestrequesttypedef">StartSNOMEDCTInferenceJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startentitiesdetectionv2jobresponsetypedef">StartEntitiesDetectionV2JobResponseTypeDef</a></li>
+<li><a href="type_defs/#starticd10cminferencejobresponsetypedef">StartICD10CMInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#startphidetectionjobresponsetypedef">StartPHIDetectionJobResponseTypeDef</a></li>
+<li><a href="type_defs/#startrxnorminferencejobresponsetypedef">StartRxNormInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#startsnomedctinferencejobresponsetypedef">StartSNOMEDCTInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#stopentitiesdetectionv2jobresponsetypedef">StopEntitiesDetectionV2JobResponseTypeDef</a></li>
+<li><a href="type_defs/#stopicd10cminferencejobresponsetypedef">StopICD10CMInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#stopphidetectionjobresponsetypedef">StopPHIDetectionJobResponseTypeDef</a></li>
+<li><a href="type_defs/#stoprxnorminferencejobresponsetypedef">StopRxNormInferenceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#stopsnomedctinferencejobresponsetypedef">StopSNOMEDCTInferenceJobResponseTypeDef</a></li>
-<li><a href="type_defs/#traittypedef">TraitTypeDef</a></li>
+<li><a href="type_defs/#icd10cmattributetypedef">ICD10CMAttributeTypeDef</a></li>
+<li><a href="type_defs/#rxnormattributetypedef">RxNormAttributeTypeDef</a></li>
+<li><a href="type_defs/#snomedctattributetypedef">SNOMEDCTAttributeTypeDef</a></li>
+<li><a href="type_defs/#entitytypedef">EntityTypeDef</a></li>
 <li><a href="type_defs/#unmappedattributetypedef">UnmappedAttributeTypeDef</a></li>
+<li><a href="type_defs/#describeentitiesdetectionv2jobresponsetypedef">DescribeEntitiesDetectionV2JobResponseTypeDef</a></li>
+<li><a href="type_defs/#describeicd10cminferencejobresponsetypedef">DescribeICD10CMInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#describephidetectionjobresponsetypedef">DescribePHIDetectionJobResponseTypeDef</a></li>
+<li><a href="type_defs/#describerxnorminferencejobresponsetypedef">DescribeRxNormInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#describesnomedctinferencejobresponsetypedef">DescribeSNOMEDCTInferenceJobResponseTypeDef</a></li>
+<li><a href="type_defs/#listentitiesdetectionv2jobsresponsetypedef">ListEntitiesDetectionV2JobsResponseTypeDef</a></li>
+<li><a href="type_defs/#listicd10cminferencejobsresponsetypedef">ListICD10CMInferenceJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#listphidetectionjobsresponsetypedef">ListPHIDetectionJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#listrxnorminferencejobsresponsetypedef">ListRxNormInferenceJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsnomedctinferencejobsresponsetypedef">ListSNOMEDCTInferenceJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#icd10cmentitytypedef">ICD10CMEntityTypeDef</a></li>
+<li><a href="type_defs/#rxnormentitytypedef">RxNormEntityTypeDef</a></li>
+<li><a href="type_defs/#snomedctentitytypedef">SNOMEDCTEntityTypeDef</a></li>
+<li><a href="type_defs/#detectphiresponsetypedef">DetectPHIResponseTypeDef</a></li>
+<li><a href="type_defs/#detectentitiesresponsetypedef">DetectEntitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#detectentitiesv2responsetypedef">DetectEntitiesV2ResponseTypeDef</a></li>
+<li><a href="type_defs/#infericd10cmresponsetypedef">InferICD10CMResponseTypeDef</a></li>
+<li><a href="type_defs/#inferrxnormresponsetypedef">InferRxNormResponseTypeDef</a></li>
+<li><a href="type_defs/#infersnomedctresponsetypedef">InferSNOMEDCTResponseTypeDef</a></li>
 </ul>
 
               
@@ -36220,7 +36220,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

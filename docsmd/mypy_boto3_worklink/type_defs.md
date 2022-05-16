@@ -48,25 +48,30 @@ class AssociateWebsiteAuthorizationProviderRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype) 
-## AssociateWebsiteAuthorizationProviderResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderResponseTypeDef
+from mypy_boto3_worklink.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateWebsiteAuthorizationProviderResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "AuthorizationProviderId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateWebsiteAuthorizationProviderResponseTypeDef(TypedDict):
-    AuthorizationProviderId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -86,25 +91,6 @@ class AssociateWebsiteCertificateAuthorityRequestRequestTypeDef(TypedDict):
     DisplayName: NotRequired[str],
 ```
 
-## AssociateWebsiteCertificateAuthorityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityResponseTypeDef
-
-def get_value() -> AssociateWebsiteCertificateAuthorityResponseTypeDef:
-    return {
-        "WebsiteCaId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AssociateWebsiteCertificateAuthorityResponseTypeDef(TypedDict):
-    WebsiteCaId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFleetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -124,25 +110,6 @@ class CreateFleetRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateFleetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import CreateFleetResponseTypeDef
-
-def get_value() -> CreateFleetResponseTypeDef:
-    return {
-        "FleetArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFleetResponseTypeDef(TypedDict):
-    FleetArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFleetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -175,25 +142,6 @@ class DescribeAuditStreamConfigurationRequestRequestTypeDef(TypedDict):
     FleetArn: str,
 ```
 
-## DescribeAuditStreamConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationResponseTypeDef
-
-def get_value() -> DescribeAuditStreamConfigurationResponseTypeDef:
-    return {
-        "AuditStreamArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAuditStreamConfigurationResponseTypeDef(TypedDict):
-    AuditStreamArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCompanyNetworkConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -210,29 +158,6 @@ class DescribeCompanyNetworkConfigurationRequestRequestTypeDef(TypedDict):
     FleetArn: str,
 ```
 
-## DescribeCompanyNetworkConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationResponseTypeDef
-
-def get_value() -> DescribeCompanyNetworkConfigurationResponseTypeDef:
-    return {
-        "VpcId": ...,
-        "SubnetIds": ...,
-        "SecurityGroupIds": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCompanyNetworkConfigurationResponseTypeDef(TypedDict):
-    VpcId: str,
-    SubnetIds: List[str],
-    SecurityGroupIds: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDevicePolicyConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -249,25 +174,6 @@ class DescribeDevicePolicyConfigurationRequestRequestTypeDef(TypedDict):
     FleetArn: str,
 ```
 
-## DescribeDevicePolicyConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationResponseTypeDef
-
-def get_value() -> DescribeDevicePolicyConfigurationResponseTypeDef:
-    return {
-        "DeviceCaCertificate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDevicePolicyConfigurationResponseTypeDef(TypedDict):
-    DeviceCaCertificate: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -286,42 +192,6 @@ class DescribeDeviceRequestRequestTypeDef(TypedDict):
     DeviceId: str,
 ```
 
-## DescribeDeviceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeDeviceResponseTypeDef
-
-def get_value() -> DescribeDeviceResponseTypeDef:
-    return {
-        "Status": ...,
-        "Model": ...,
-        "Manufacturer": ...,
-        "OperatingSystem": ...,
-        "OperatingSystemVersion": ...,
-        "PatchLevel": ...,
-        "FirstAccessedTime": ...,
-        "LastAccessedTime": ...,
-        "Username": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDeviceResponseTypeDef(TypedDict):
-    Status: DeviceStatusType,  # (1)
-    Model: str,
-    Manufacturer: str,
-    OperatingSystem: str,
-    OperatingSystemVersion: str,
-    PatchLevel: str,
-    FirstAccessedTime: datetime,
-    LastAccessedTime: datetime,
-    Username: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -340,34 +210,6 @@ class DescribeDomainRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
-## DescribeDomainResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeDomainResponseTypeDef
-
-def get_value() -> DescribeDomainResponseTypeDef:
-    return {
-        "DomainName": ...,
-        "DisplayName": ...,
-        "CreatedTime": ...,
-        "DomainStatus": ...,
-        "AcmCertificateArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDomainResponseTypeDef(TypedDict):
-    DomainName: str,
-    DisplayName: str,
-    CreatedTime: datetime,
-    DomainStatus: DomainStatusType,  # (1)
-    AcmCertificateArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFleetMetadataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -384,40 +226,6 @@ class DescribeFleetMetadataRequestRequestTypeDef(TypedDict):
     FleetArn: str,
 ```
 
-## DescribeFleetMetadataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeFleetMetadataResponseTypeDef
-
-def get_value() -> DescribeFleetMetadataResponseTypeDef:
-    return {
-        "CreatedTime": ...,
-        "LastUpdatedTime": ...,
-        "FleetName": ...,
-        "DisplayName": ...,
-        "OptimizeForEndUserLocation": ...,
-        "CompanyCode": ...,
-        "FleetStatus": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetMetadataResponseTypeDef(TypedDict):
-    CreatedTime: datetime,
-    LastUpdatedTime: datetime,
-    FleetName: str,
-    DisplayName: str,
-    OptimizeForEndUserLocation: bool,
-    CompanyCode: str,
-    FleetStatus: FleetStatusType,  # (1)
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: FleetStatusType](./literals.md#fleetstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIdentityProviderConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -434,30 +242,6 @@ class DescribeIdentityProviderConfigurationRequestRequestTypeDef(TypedDict):
     FleetArn: str,
 ```
 
-## DescribeIdentityProviderConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationResponseTypeDef
-
-def get_value() -> DescribeIdentityProviderConfigurationResponseTypeDef:
-    return {
-        "IdentityProviderType": ...,
-        "ServiceProviderSamlMetadata": ...,
-        "IdentityProviderSamlMetadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIdentityProviderConfigurationResponseTypeDef(TypedDict):
-    IdentityProviderType: IdentityProviderTypeType,  # (1)
-    ServiceProviderSamlMetadata: str,
-    IdentityProviderSamlMetadata: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -476,29 +260,6 @@ class DescribeWebsiteCertificateAuthorityRequestRequestTypeDef(TypedDict):
     WebsiteCaId: str,
 ```
 
-## DescribeWebsiteCertificateAuthorityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityResponseTypeDef
-
-def get_value() -> DescribeWebsiteCertificateAuthorityResponseTypeDef:
-    return {
-        "Certificate": ...,
-        "CreatedTime": ...,
-        "DisplayName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeWebsiteCertificateAuthorityResponseTypeDef(TypedDict):
-    Certificate: str,
-    CreatedTime: datetime,
-    DisplayName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -635,28 +396,6 @@ class ListDevicesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListDevicesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListDevicesResponseTypeDef
-
-def get_value() -> ListDevicesResponseTypeDef:
-    return {
-        "Devices": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDevicesResponseTypeDef(TypedDict):
-    Devices: List[DeviceSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDomainsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -675,28 +414,6 @@ class ListDomainsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListDomainsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListDomainsResponseTypeDef
-
-def get_value() -> ListDomainsResponseTypeDef:
-    return {
-        "Domains": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainsResponseTypeDef(TypedDict):
-    Domains: List[DomainSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFleetsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -714,28 +431,6 @@ class ListFleetsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListFleetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListFleetsResponseTypeDef
-
-def get_value() -> ListFleetsResponseTypeDef:
-    return {
-        "FleetSummaryList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFleetsResponseTypeDef(TypedDict):
-    FleetSummaryList: List[FleetSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FleetSummaryTypeDef](./type_defs.md#fleetsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -752,25 +447,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWebsiteAuthorizationProvidersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -789,28 +465,26 @@ class ListWebsiteAuthorizationProvidersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListWebsiteAuthorizationProvidersResponseTypeDef
+## WebsiteAuthorizationProviderSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersResponseTypeDef
+from mypy_boto3_worklink.type_defs import WebsiteAuthorizationProviderSummaryTypeDef
 
-def get_value() -> ListWebsiteAuthorizationProvidersResponseTypeDef:
+def get_value() -> WebsiteAuthorizationProviderSummaryTypeDef:
     return {
-        "WebsiteAuthorizationProviders": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "AuthorizationProviderType": ...,
     }
 ```
 
 ```python title="Definition"
-class ListWebsiteAuthorizationProvidersResponseTypeDef(TypedDict):
-    WebsiteAuthorizationProviders: List[WebsiteAuthorizationProviderSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class WebsiteAuthorizationProviderSummaryTypeDef(TypedDict):
+    AuthorizationProviderType: AuthorizationProviderTypeType,  # (1)
+    AuthorizationProviderId: NotRequired[str],
+    DomainName: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: WebsiteAuthorizationProviderSummaryTypeDef](./type_defs.md#websiteauthorizationprovidersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype) 
 ## ListWebsiteCertificateAuthoritiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -829,50 +503,22 @@ class ListWebsiteCertificateAuthoritiesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListWebsiteCertificateAuthoritiesResponseTypeDef
+## WebsiteCaSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesResponseTypeDef
+from mypy_boto3_worklink.type_defs import WebsiteCaSummaryTypeDef
 
-def get_value() -> ListWebsiteCertificateAuthoritiesResponseTypeDef:
+def get_value() -> WebsiteCaSummaryTypeDef:
     return {
-        "WebsiteCertificateAuthorities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "WebsiteCaId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListWebsiteCertificateAuthoritiesResponseTypeDef(TypedDict):
-    WebsiteCertificateAuthorities: List[WebsiteCaSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WebsiteCaSummaryTypeDef](./type_defs.md#websitecasummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class WebsiteCaSummaryTypeDef(TypedDict):
+    WebsiteCaId: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    DisplayName: NotRequired[str],
 ```
 
 ## RestoreDomainAccessRequestRequestTypeDef
@@ -1078,41 +724,395 @@ class UpdateIdentityProviderConfigurationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-## WebsiteAuthorizationProviderSummaryTypeDef
+## AssociateWebsiteAuthorizationProviderResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import WebsiteAuthorizationProviderSummaryTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderResponseTypeDef
 
-def get_value() -> WebsiteAuthorizationProviderSummaryTypeDef:
+def get_value() -> AssociateWebsiteAuthorizationProviderResponseTypeDef:
     return {
-        "AuthorizationProviderType": ...,
+        "AuthorizationProviderId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class WebsiteAuthorizationProviderSummaryTypeDef(TypedDict):
-    AuthorizationProviderType: AuthorizationProviderTypeType,  # (1)
-    AuthorizationProviderId: NotRequired[str],
-    DomainName: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
+class AssociateWebsiteAuthorizationProviderResponseTypeDef(TypedDict):
+    AuthorizationProviderId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype) 
-## WebsiteCaSummaryTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateWebsiteCertificateAuthorityResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_worklink.type_defs import WebsiteCaSummaryTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityResponseTypeDef
 
-def get_value() -> WebsiteCaSummaryTypeDef:
+def get_value() -> AssociateWebsiteCertificateAuthorityResponseTypeDef:
     return {
         "WebsiteCaId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class WebsiteCaSummaryTypeDef(TypedDict):
-    WebsiteCaId: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    DisplayName: NotRequired[str],
+class AssociateWebsiteCertificateAuthorityResponseTypeDef(TypedDict):
+    WebsiteCaId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFleetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import CreateFleetResponseTypeDef
+
+def get_value() -> CreateFleetResponseTypeDef:
+    return {
+        "FleetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetResponseTypeDef(TypedDict):
+    FleetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAuditStreamConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationResponseTypeDef
+
+def get_value() -> DescribeAuditStreamConfigurationResponseTypeDef:
+    return {
+        "AuditStreamArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAuditStreamConfigurationResponseTypeDef(TypedDict):
+    AuditStreamArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCompanyNetworkConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationResponseTypeDef
+
+def get_value() -> DescribeCompanyNetworkConfigurationResponseTypeDef:
+    return {
+        "VpcId": ...,
+        "SubnetIds": ...,
+        "SecurityGroupIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCompanyNetworkConfigurationResponseTypeDef(TypedDict):
+    VpcId: str,
+    SubnetIds: List[str],
+    SecurityGroupIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDevicePolicyConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationResponseTypeDef
+
+def get_value() -> DescribeDevicePolicyConfigurationResponseTypeDef:
+    return {
+        "DeviceCaCertificate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDevicePolicyConfigurationResponseTypeDef(TypedDict):
+    DeviceCaCertificate: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDeviceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeDeviceResponseTypeDef
+
+def get_value() -> DescribeDeviceResponseTypeDef:
+    return {
+        "Status": ...,
+        "Model": ...,
+        "Manufacturer": ...,
+        "OperatingSystem": ...,
+        "OperatingSystemVersion": ...,
+        "PatchLevel": ...,
+        "FirstAccessedTime": ...,
+        "LastAccessedTime": ...,
+        "Username": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDeviceResponseTypeDef(TypedDict):
+    Status: DeviceStatusType,  # (1)
+    Model: str,
+    Manufacturer: str,
+    OperatingSystem: str,
+    OperatingSystemVersion: str,
+    PatchLevel: str,
+    FirstAccessedTime: datetime,
+    LastAccessedTime: datetime,
+    Username: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDomainResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeDomainResponseTypeDef
+
+def get_value() -> DescribeDomainResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "DisplayName": ...,
+        "CreatedTime": ...,
+        "DomainStatus": ...,
+        "AcmCertificateArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDomainResponseTypeDef(TypedDict):
+    DomainName: str,
+    DisplayName: str,
+    CreatedTime: datetime,
+    DomainStatus: DomainStatusType,  # (1)
+    AcmCertificateArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetMetadataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeFleetMetadataResponseTypeDef
+
+def get_value() -> DescribeFleetMetadataResponseTypeDef:
+    return {
+        "CreatedTime": ...,
+        "LastUpdatedTime": ...,
+        "FleetName": ...,
+        "DisplayName": ...,
+        "OptimizeForEndUserLocation": ...,
+        "CompanyCode": ...,
+        "FleetStatus": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetMetadataResponseTypeDef(TypedDict):
+    CreatedTime: datetime,
+    LastUpdatedTime: datetime,
+    FleetName: str,
+    DisplayName: str,
+    OptimizeForEndUserLocation: bool,
+    CompanyCode: str,
+    FleetStatus: FleetStatusType,  # (1)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: FleetStatusType](./literals.md#fleetstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIdentityProviderConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationResponseTypeDef
+
+def get_value() -> DescribeIdentityProviderConfigurationResponseTypeDef:
+    return {
+        "IdentityProviderType": ...,
+        "ServiceProviderSamlMetadata": ...,
+        "IdentityProviderSamlMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIdentityProviderConfigurationResponseTypeDef(TypedDict):
+    IdentityProviderType: IdentityProviderTypeType,  # (1)
+    ServiceProviderSamlMetadata: str,
+    IdentityProviderSamlMetadata: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWebsiteCertificateAuthorityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityResponseTypeDef
+
+def get_value() -> DescribeWebsiteCertificateAuthorityResponseTypeDef:
+    return {
+        "Certificate": ...,
+        "CreatedTime": ...,
+        "DisplayName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWebsiteCertificateAuthorityResponseTypeDef(TypedDict):
+    Certificate: str,
+    CreatedTime: datetime,
+    DisplayName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDevicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListDevicesResponseTypeDef
+
+def get_value() -> ListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDomainsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListDomainsResponseTypeDef
+
+def get_value() -> ListDomainsResponseTypeDef:
+    return {
+        "Domains": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainsResponseTypeDef(TypedDict):
+    Domains: List[DomainSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFleetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListFleetsResponseTypeDef
+
+def get_value() -> ListFleetsResponseTypeDef:
+    return {
+        "FleetSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFleetsResponseTypeDef(TypedDict):
+    FleetSummaryList: List[FleetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FleetSummaryTypeDef](./type_defs.md#fleetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWebsiteAuthorizationProvidersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersResponseTypeDef
+
+def get_value() -> ListWebsiteAuthorizationProvidersResponseTypeDef:
+    return {
+        "WebsiteAuthorizationProviders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWebsiteAuthorizationProvidersResponseTypeDef(TypedDict):
+    WebsiteAuthorizationProviders: List[WebsiteAuthorizationProviderSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WebsiteAuthorizationProviderSummaryTypeDef](./type_defs.md#websiteauthorizationprovidersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWebsiteCertificateAuthoritiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesResponseTypeDef
+
+def get_value() -> ListWebsiteCertificateAuthoritiesResponseTypeDef:
+    return {
+        "WebsiteCertificateAuthorities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWebsiteCertificateAuthoritiesResponseTypeDef(TypedDict):
+    WebsiteCertificateAuthorities: List[WebsiteCaSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WebsiteCaSummaryTypeDef](./type_defs.md#websitecasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

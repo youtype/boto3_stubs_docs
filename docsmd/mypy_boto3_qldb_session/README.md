@@ -92,30 +92,30 @@ def get_value() -> QLDBSessionServiceName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef
+from mypy_boto3_qldb_session.type_defs import TimingInformationTypeDef
 
-def get_value() -> AbortTransactionResultTypeDef:
+def get_value() -> TimingInformationTypeDef:
     return {
-        "TimingInformation": ...,
+        "ProcessingTimeMilliseconds": ...,
     }
 ```
 
-- [AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef)
+- [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
-- [CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef)
-- [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
-- [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
-- [ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef)
-- [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
-- [FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef)
 - [IOUsageTypeDef](./type_defs.md#iousagetypedef)
-- [PageTypeDef](./type_defs.md#pagetypedef)
+- [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
+- [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef)
-- [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef)
 - [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
+- [AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef)
+- [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
 - [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
 - [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)
-- [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-- [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
+- [CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef)
+- [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
+- [PageTypeDef](./type_defs.md#pagetypedef)
+- [SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef)
+- [ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef)
+- [FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef)
+- [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef)
 

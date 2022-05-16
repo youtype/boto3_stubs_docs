@@ -93,29 +93,29 @@ def get_value() -> ContentTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import BucketTypeDef
 
-def get_value() -> BucketInfoTypeDef:
+def get_value() -> BucketTypeDef:
     return {
-        "buckets": ...,
+        "value": ...,
     }
 ```
 
-- [BucketInfoTypeDef](./type_defs.md#bucketinfotypedef)
 - [BucketTypeDef](./type_defs.md#buckettypedef)
 - [DocumentServiceWarningTypeDef](./type_defs.md#documentservicewarningtypedef)
 - [FieldStatsTypeDef](./type_defs.md#fieldstatstypedef)
 - [HitTypeDef](./type_defs.md#hittypedef)
-- [HitsTypeDef](./type_defs.md#hitstypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef)
-- [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef)
 - [SearchStatusTypeDef](./type_defs.md#searchstatustypedef)
-- [SuggestModelTypeDef](./type_defs.md#suggestmodeltypedef)
-- [SuggestRequestRequestTypeDef](./type_defs.md#suggestrequestrequesttypedef)
-- [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef)
-- [SuggestStatusTypeDef](./type_defs.md#suggeststatustypedef)
 - [SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)
+- [SuggestRequestRequestTypeDef](./type_defs.md#suggestrequestrequesttypedef)
+- [SuggestStatusTypeDef](./type_defs.md#suggeststatustypedef)
 - [UploadDocumentsRequestRequestTypeDef](./type_defs.md#uploaddocumentsrequestrequesttypedef)
+- [BucketInfoTypeDef](./type_defs.md#bucketinfotypedef)
+- [HitsTypeDef](./type_defs.md#hitstypedef)
 - [UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef)
+- [SuggestModelTypeDef](./type_defs.md#suggestmodeltypedef)
+- [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef)
+- [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef)
 

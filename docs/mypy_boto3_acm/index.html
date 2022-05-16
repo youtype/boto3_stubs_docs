@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36119,54 +36119,53 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_acm.type_defs</span> <span class="kn">import</span> <span class="n">AddTagsToCertificateRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_acm.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddTagsToCertificateRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;CertificateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addtagstocertificaterequestrequesttypedef">AddTagsToCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#certificatedetailtypedef">CertificateDetailTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#certificateoptionstypedef">CertificateOptionsTypeDef</a></li>
+<li><a href="type_defs/#extendedkeyusagetypedef">ExtendedKeyUsageTypeDef</a></li>
+<li><a href="type_defs/#keyusagetypedef">KeyUsageTypeDef</a></li>
 <li><a href="type_defs/#certificatesummarytypedef">CertificateSummaryTypeDef</a></li>
 <li><a href="type_defs/#deletecertificaterequestrequesttypedef">DeleteCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describecertificaterequestcertificatevalidatedwaittypedef">DescribeCertificateRequestCertificateValidatedWaitTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describecertificaterequestrequesttypedef">DescribeCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describecertificateresponsetypedef">DescribeCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#domainvalidationoptiontypedef">DomainValidationOptionTypeDef</a></li>
-<li><a href="type_defs/#domainvalidationtypedef">DomainValidationTypeDef</a></li>
+<li><a href="type_defs/#resourcerecordtypedef">ResourceRecordTypeDef</a></li>
 <li><a href="type_defs/#expiryeventsconfigurationtypedef">ExpiryEventsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#exportcertificaterequestrequesttypedef">ExportCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#exportcertificateresponsetypedef">ExportCertificateResponseTypeDef</a></li>
-<li><a href="type_defs/#extendedkeyusagetypedef">ExtendedKeyUsageTypeDef</a></li>
 <li><a href="type_defs/#filterstypedef">FiltersTypeDef</a></li>
-<li><a href="type_defs/#getaccountconfigurationresponsetypedef">GetAccountConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getcertificaterequestrequesttypedef">GetCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcertificateresponsetypedef">GetCertificateResponseTypeDef</a></li>
-<li><a href="type_defs/#importcertificaterequestrequesttypedef">ImportCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#importcertificateresponsetypedef">ImportCertificateResponseTypeDef</a></li>
-<li><a href="type_defs/#keyusagetypedef">KeyUsageTypeDef</a></li>
-<li><a href="type_defs/#listcertificatesrequestlistcertificatespaginatetypedef">ListCertificatesRequestListCertificatesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listcertificatesrequestrequesttypedef">ListCertificatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcertificatesresponsetypedef">ListCertificatesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforcertificaterequestrequesttypedef">ListTagsForCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforcertificateresponsetypedef">ListTagsForCertificateResponseTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#putaccountconfigurationrequestrequesttypedef">PutAccountConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removetagsfromcertificaterequestrequesttypedef">RemoveTagsFromCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforcertificaterequestrequesttypedef">ListTagsForCertificateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#renewcertificaterequestrequesttypedef">RenewCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#renewalsummarytypedef">RenewalSummaryTypeDef</a></li>
-<li><a href="type_defs/#requestcertificaterequestrequesttypedef">RequestCertificateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#requestcertificateresponsetypedef">RequestCertificateResponseTypeDef</a></li>
 <li><a href="type_defs/#resendvalidationemailrequestrequesttypedef">ResendValidationEmailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#resourcerecordtypedef">ResourceRecordTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#addtagstocertificaterequestrequesttypedef">AddTagsToCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importcertificaterequestrequesttypedef">ImportCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removetagsfromcertificaterequestrequesttypedef">RemoveTagsFromCertificateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecertificateoptionsrequestrequesttypedef">UpdateCertificateOptionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#describecertificaterequestcertificatevalidatedwaittypedef">DescribeCertificateRequestCertificateValidatedWaitTypeDef</a></li>
+<li><a href="type_defs/#exportcertificateresponsetypedef">ExportCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#getcertificateresponsetypedef">GetCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#importcertificateresponsetypedef">ImportCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesresponsetypedef">ListCertificatesResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforcertificateresponsetypedef">ListTagsForCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#requestcertificateresponsetypedef">RequestCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#requestcertificaterequestrequesttypedef">RequestCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#domainvalidationtypedef">DomainValidationTypeDef</a></li>
+<li><a href="type_defs/#getaccountconfigurationresponsetypedef">GetAccountConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#putaccountconfigurationrequestrequesttypedef">PutAccountConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesrequestrequesttypedef">ListCertificatesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesrequestlistcertificatespaginatetypedef">ListCertificatesRequestListCertificatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#renewalsummarytypedef">RenewalSummaryTypeDef</a></li>
+<li><a href="type_defs/#certificatedetailtypedef">CertificateDetailTypeDef</a></li>
+<li><a href="type_defs/#describecertificateresponsetypedef">DescribeCertificateResponseTypeDef</a></li>
 </ul>
 
               
@@ -36236,7 +36235,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

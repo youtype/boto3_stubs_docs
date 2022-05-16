@@ -24,50 +24,29 @@ class CPUTypeDef(TypedDict):
     modelName: NotRequired[str],
 ```
 
-## CreateReplicationConfigurationTemplateRequestRequestTypeDef
+## PITPolicyRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import CreateReplicationConfigurationTemplateRequestRequestTypeDef
+from mypy_boto3_drs.type_defs import PITPolicyRuleTypeDef
 
-def get_value() -> CreateReplicationConfigurationTemplateRequestRequestTypeDef:
+def get_value() -> PITPolicyRuleTypeDef:
     return {
-        "associateDefaultSecurityGroup": ...,
-        "bandwidthThrottling": ...,
-        "createPublicIP": ...,
-        "dataPlaneRouting": ...,
-        "defaultLargeStagingDiskType": ...,
-        "ebsEncryption": ...,
-        "pitPolicy": ...,
-        "replicationServerInstanceType": ...,
-        "replicationServersSecurityGroupsIDs": ...,
-        "stagingAreaSubnetId": ...,
-        "stagingAreaTags": ...,
-        "useDedicatedReplicationServer": ...,
+        "interval": ...,
+        "retentionDuration": ...,
+        "units": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
-    associateDefaultSecurityGroup: bool,
-    bandwidthThrottling: int,
-    createPublicIP: bool,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
-    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
-    pitPolicy: Sequence[PITPolicyRuleTypeDef],  # (4)
-    replicationServerInstanceType: str,
-    replicationServersSecurityGroupsIDs: Sequence[str],
-    stagingAreaSubnetId: str,
-    stagingAreaTags: Mapping[str, str],
-    useDedicatedReplicationServer: bool,
-    ebsEncryptionKeyArn: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
+class PITPolicyRuleTypeDef(TypedDict):
+    interval: int,
+    retentionDuration: int,
+    units: PITPolicyRuleUnitsType,  # (1)
+    enabled: NotRequired[bool],
+    ruleID: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+1. See [:material-code-brackets: PITPolicyRuleUnitsType](./literals.md#pitpolicyruleunitstype) 
 ## DataReplicationErrorTypeDef
 
 ```python title="Usage Example"
@@ -106,31 +85,6 @@ class DataReplicationInfoReplicatedDiskTypeDef(TypedDict):
     totalStorageBytes: NotRequired[int],
 ```
 
-## DataReplicationInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DataReplicationInfoTypeDef
-
-def get_value() -> DataReplicationInfoTypeDef:
-    return {
-        "dataReplicationError": ...,
-    }
-```
-
-```python title="Definition"
-class DataReplicationInfoTypeDef(TypedDict):
-    dataReplicationError: NotRequired[DataReplicationErrorTypeDef],  # (1)
-    dataReplicationInitiation: NotRequired[DataReplicationInitiationTypeDef],  # (2)
-    dataReplicationState: NotRequired[DataReplicationStateType],  # (3)
-    etaDateTime: NotRequired[str],
-    lagDuration: NotRequired[str],
-    replicatedDisks: NotRequired[List[DataReplicationInfoReplicatedDiskTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef) 
-2. See [:material-code-braces: DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef) 
-3. See [:material-code-brackets: DataReplicationStateType](./literals.md#datareplicationstatetype) 
-4. See [:material-code-braces: DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef) 
 ## DataReplicationInitiationStepTypeDef
 
 ```python title="Usage Example"
@@ -150,25 +104,6 @@ class DataReplicationInitiationStepTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype) 
 2. See [:material-code-brackets: DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype) 
-## DataReplicationInitiationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DataReplicationInitiationTypeDef
-
-def get_value() -> DataReplicationInitiationTypeDef:
-    return {
-        "nextAttemptDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class DataReplicationInitiationTypeDef(TypedDict):
-    nextAttemptDateTime: NotRequired[str],
-    startDateTime: NotRequired[str],
-    steps: NotRequired[List[DataReplicationInitiationStepTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef) 
 ## DeleteJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -233,24 +168,24 @@ class DeleteSourceServerRequestRequestTypeDef(TypedDict):
     sourceServerID: str,
 ```
 
-## DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+from mypy_boto3_drs.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "jobID": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef(TypedDict):
-    jobID: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeJobLogItemsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -269,47 +204,30 @@ class DescribeJobLogItemsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## DescribeJobLogItemsResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeJobLogItemsResponseTypeDef
+from mypy_boto3_drs.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> DescribeJobLogItemsResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeJobLogItemsResponseTypeDef(TypedDict):
-    items: List[JobLogTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: JobLogTypeDef](./type_defs.md#joblogtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeJobsRequestDescribeJobsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeJobsRequestDescribeJobsPaginateTypeDef
-
-def get_value() -> DescribeJobsRequestDescribeJobsPaginateTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsRequestDescribeJobsPaginateTypeDef(TypedDict):
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeJobsRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -328,66 +246,6 @@ class DescribeJobsRequestFiltersTypeDef(TypedDict):
     toDate: NotRequired[str],
 ```
 
-## DescribeJobsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeJobsRequestRequestTypeDef
-
-def get_value() -> DescribeJobsRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsRequestRequestTypeDef(TypedDict):
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
-## DescribeJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeJobsResponseTypeDef
-
-def get_value() -> DescribeJobsResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsResponseTypeDef(TypedDict):
-    items: List[JobTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef
-
-def get_value() -> DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef(TypedDict):
-    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeRecoveryInstancesRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -405,69 +263,6 @@ class DescribeRecoveryInstancesRequestFiltersTypeDef(TypedDict):
     sourceServerIDs: NotRequired[Sequence[str]],
 ```
 
-## DescribeRecoveryInstancesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesRequestRequestTypeDef
-
-def get_value() -> DescribeRecoveryInstancesRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRecoveryInstancesRequestRequestTypeDef(TypedDict):
-    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef) 
-## DescribeRecoveryInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesResponseTypeDef
-
-def get_value() -> DescribeRecoveryInstancesResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRecoveryInstancesResponseTypeDef(TypedDict):
-    items: List[RecoveryInstanceTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecoveryInstanceTypeDef](./type_defs.md#recoveryinstancetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef
-
-def get_value() -> DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef(TypedDict):
-    sourceServerID: str,
-    filters: NotRequired[DescribeRecoverySnapshotsRequestFiltersTypeDef],  # (1)
-    order: NotRequired[RecoverySnapshotsOrderType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef) 
-2. See [:material-code-brackets: RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeRecoverySnapshotsRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -485,68 +280,28 @@ class DescribeRecoverySnapshotsRequestFiltersTypeDef(TypedDict):
     toDateTime: NotRequired[str],
 ```
 
-## DescribeRecoverySnapshotsRequestRequestTypeDef
+## RecoverySnapshotTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsRequestRequestTypeDef
+from mypy_boto3_drs.type_defs import RecoverySnapshotTypeDef
 
-def get_value() -> DescribeRecoverySnapshotsRequestRequestTypeDef:
+def get_value() -> RecoverySnapshotTypeDef:
     return {
+        "expectedTimestamp": ...,
+        "snapshotID": ...,
         "sourceServerID": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeRecoverySnapshotsRequestRequestTypeDef(TypedDict):
+class RecoverySnapshotTypeDef(TypedDict):
+    expectedTimestamp: str,
+    snapshotID: str,
     sourceServerID: str,
-    filters: NotRequired[DescribeRecoverySnapshotsRequestFiltersTypeDef],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    order: NotRequired[RecoverySnapshotsOrderType],  # (2)
+    ebsSnapshots: NotRequired[List[str]],
+    timestamp: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef) 
-2. See [:material-code-brackets: RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype) 
-## DescribeRecoverySnapshotsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsResponseTypeDef
-
-def get_value() -> DescribeRecoverySnapshotsResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRecoverySnapshotsResponseTypeDef(TypedDict):
-    items: List[RecoverySnapshotTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecoverySnapshotTypeDef](./type_defs.md#recoverysnapshottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
-
-def get_value() -> DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef:
-    return {
-        "replicationConfigurationTemplateIDs": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef(TypedDict):
-    replicationConfigurationTemplateIDs: Sequence[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReplicationConfigurationTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -565,47 +320,6 @@ class DescribeReplicationConfigurationTemplatesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## DescribeReplicationConfigurationTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
-
-def get_value() -> DescribeReplicationConfigurationTemplatesResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReplicationConfigurationTemplatesResponseTypeDef(TypedDict):
-    items: List[ReplicationConfigurationTemplateTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
-
-def get_value() -> DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef(TypedDict):
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSourceServersRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -623,47 +337,6 @@ class DescribeSourceServersRequestFiltersTypeDef(TypedDict):
     sourceServerIDs: NotRequired[Sequence[str]],
 ```
 
-## DescribeSourceServersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeSourceServersRequestRequestTypeDef
-
-def get_value() -> DescribeSourceServersRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersRequestRequestTypeDef(TypedDict):
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
-## DescribeSourceServersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import DescribeSourceServersResponseTypeDef
-
-def get_value() -> DescribeSourceServersResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersResponseTypeDef(TypedDict):
-    items: List[SourceServerTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisconnectRecoveryInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -729,31 +402,6 @@ class GetFailbackReplicationConfigurationRequestRequestTypeDef(TypedDict):
     recoveryInstanceID: str,
 ```
 
-## GetFailbackReplicationConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import GetFailbackReplicationConfigurationResponseTypeDef
-
-def get_value() -> GetFailbackReplicationConfigurationResponseTypeDef:
-    return {
-        "bandwidthThrottling": ...,
-        "name": ...,
-        "recoveryInstanceID": ...,
-        "usePrivateIP": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFailbackReplicationConfigurationResponseTypeDef(TypedDict):
-    bandwidthThrottling: int,
-    name: str,
-    recoveryInstanceID: str,
-    usePrivateIP: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLaunchConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -824,6 +472,813 @@ class JobLogEventDataTypeDef(TypedDict):
     targetInstanceID: NotRequired[str],
 ```
 
+## ParticipatingServerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ParticipatingServerTypeDef
+
+def get_value() -> ParticipatingServerTypeDef:
+    return {
+        "launchStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ParticipatingServerTypeDef(TypedDict):
+    launchStatus: NotRequired[LaunchStatusType],  # (1)
+    recoveryInstanceID: NotRequired[str],
+    sourceServerID: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+## LicensingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import LicensingTypeDef
+
+def get_value() -> LicensingTypeDef:
+    return {
+        "osByol": ...,
+    }
+```
+
+```python title="Definition"
+class LicensingTypeDef(TypedDict):
+    osByol: NotRequired[bool],
+```
+
+## LifeCycleLastLaunchInitiatedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import LifeCycleLastLaunchInitiatedTypeDef
+
+def get_value() -> LifeCycleLastLaunchInitiatedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastLaunchInitiatedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+    jobID: NotRequired[str],
+    type: NotRequired[LastLaunchTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: LastLaunchTypeType](./literals.md#lastlaunchtypetype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## NetworkInterfaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "ips": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    ips: NotRequired[List[str]],
+    isPrimary: NotRequired[bool],
+    macAddress: NotRequired[str],
+```
+
+## OSTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import OSTypeDef
+
+def get_value() -> OSTypeDef:
+    return {
+        "fullString": ...,
+    }
+```
+
+```python title="Definition"
+class OSTypeDef(TypedDict):
+    fullString: NotRequired[str],
+```
+
+## RecoveryInstanceDataReplicationErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationErrorTypeDef
+
+def get_value() -> RecoveryInstanceDataReplicationErrorTypeDef:
+    return {
+        "error": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceDataReplicationErrorTypeDef(TypedDict):
+    error: NotRequired[FailbackReplicationErrorType],  # (1)
+    rawError: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FailbackReplicationErrorType](./literals.md#failbackreplicationerrortype) 
+## RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef
+
+def get_value() -> RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef:
+    return {
+        "backloggedStorageBytes": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef(TypedDict):
+    backloggedStorageBytes: NotRequired[int],
+    deviceName: NotRequired[str],
+    replicatedStorageBytes: NotRequired[int],
+    rescannedStorageBytes: NotRequired[int],
+    totalStorageBytes: NotRequired[int],
+```
+
+## RecoveryInstanceDataReplicationInitiationStepTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInitiationStepTypeDef
+
+def get_value() -> RecoveryInstanceDataReplicationInitiationStepTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceDataReplicationInitiationStepTypeDef(TypedDict):
+    name: NotRequired[RecoveryInstanceDataReplicationInitiationStepNameType],  # (1)
+    status: NotRequired[RecoveryInstanceDataReplicationInitiationStepStatusType],  # (2)
+```
+
+1. See [:material-code-brackets: RecoveryInstanceDataReplicationInitiationStepNameType](./literals.md#recoveryinstancedatareplicationinitiationstepnametype) 
+2. See [:material-code-brackets: RecoveryInstanceDataReplicationInitiationStepStatusType](./literals.md#recoveryinstancedatareplicationinitiationstepstatustype) 
+## RecoveryInstanceDiskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceDiskTypeDef
+
+def get_value() -> RecoveryInstanceDiskTypeDef:
+    return {
+        "bytes": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceDiskTypeDef(TypedDict):
+    bytes: NotRequired[int],
+    ebsVolumeID: NotRequired[str],
+    internalDeviceName: NotRequired[str],
+```
+
+## RecoveryInstanceFailbackTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceFailbackTypeDef
+
+def get_value() -> RecoveryInstanceFailbackTypeDef:
+    return {
+        "agentLastSeenByServiceDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceFailbackTypeDef(TypedDict):
+    agentLastSeenByServiceDateTime: NotRequired[str],
+    elapsedReplicationDuration: NotRequired[str],
+    failbackClientID: NotRequired[str],
+    failbackClientLastSeenByServiceDateTime: NotRequired[str],
+    failbackInitiationTime: NotRequired[str],
+    failbackJobID: NotRequired[str],
+    failbackToOriginalServer: NotRequired[bool],
+    firstByteDateTime: NotRequired[str],
+    state: NotRequired[FailbackStateType],  # (1)
+```
+
+1. See [:material-code-brackets: FailbackStateType](./literals.md#failbackstatetype) 
+## ReplicationConfigurationReplicatedDiskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ReplicationConfigurationReplicatedDiskTypeDef
+
+def get_value() -> ReplicationConfigurationReplicatedDiskTypeDef:
+    return {
+        "deviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationReplicatedDiskTypeDef(TypedDict):
+    deviceName: NotRequired[str],
+    iops: NotRequired[int],
+    isBootDisk: NotRequired[bool],
+    stagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
+    throughput: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
+## RetryDataReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RetryDataReplicationRequestRequestTypeDef
+
+def get_value() -> RetryDataReplicationRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class RetryDataReplicationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+```
+
+## StartFailbackLaunchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartFailbackLaunchRequestRequestTypeDef
+
+def get_value() -> StartFailbackLaunchRequestRequestTypeDef:
+    return {
+        "recoveryInstanceIDs": ...,
+    }
+```
+
+```python title="Definition"
+class StartFailbackLaunchRequestRequestTypeDef(TypedDict):
+    recoveryInstanceIDs: Sequence[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## StartRecoveryRequestSourceServerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartRecoveryRequestSourceServerTypeDef
+
+def get_value() -> StartRecoveryRequestSourceServerTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecoveryRequestSourceServerTypeDef(TypedDict):
+    sourceServerID: str,
+    recoverySnapshotID: NotRequired[str],
+```
+
+## StopFailbackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StopFailbackRequestRequestTypeDef
+
+def get_value() -> StopFailbackRequestRequestTypeDef:
+    return {
+        "recoveryInstanceID": ...,
+    }
+```
+
+```python title="Definition"
+class StopFailbackRequestRequestTypeDef(TypedDict):
+    recoveryInstanceID: str,
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## TerminateRecoveryInstancesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import TerminateRecoveryInstancesRequestRequestTypeDef
+
+def get_value() -> TerminateRecoveryInstancesRequestRequestTypeDef:
+    return {
+        "recoveryInstanceIDs": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateRecoveryInstancesRequestRequestTypeDef(TypedDict):
+    recoveryInstanceIDs: Sequence[str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateFailbackReplicationConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import UpdateFailbackReplicationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateFailbackReplicationConfigurationRequestRequestTypeDef:
+    return {
+        "recoveryInstanceID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFailbackReplicationConfigurationRequestRequestTypeDef(TypedDict):
+    recoveryInstanceID: str,
+    bandwidthThrottling: NotRequired[int],
+    name: NotRequired[str],
+    usePrivateIP: NotRequired[bool],
+```
+
+## CreateReplicationConfigurationTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import CreateReplicationConfigurationTemplateRequestRequestTypeDef
+
+def get_value() -> CreateReplicationConfigurationTemplateRequestRequestTypeDef:
+    return {
+        "associateDefaultSecurityGroup": ...,
+        "bandwidthThrottling": ...,
+        "createPublicIP": ...,
+        "dataPlaneRouting": ...,
+        "defaultLargeStagingDiskType": ...,
+        "ebsEncryption": ...,
+        "pitPolicy": ...,
+        "replicationServerInstanceType": ...,
+        "replicationServersSecurityGroupsIDs": ...,
+        "stagingAreaSubnetId": ...,
+        "stagingAreaTags": ...,
+        "useDedicatedReplicationServer": ...,
+    }
+```
+
+```python title="Definition"
+class CreateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    pitPolicy: Sequence[PITPolicyRuleTypeDef],  # (4)
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: Sequence[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Mapping[str, str],
+    useDedicatedReplicationServer: bool,
+    ebsEncryptionKeyArn: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+## ReplicationConfigurationTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ReplicationConfigurationTemplateTypeDef
+
+def get_value() -> ReplicationConfigurationTemplateTypeDef:
+    return {
+        "replicationConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationTemplateTypeDef(TypedDict):
+    replicationConfigurationTemplateID: str,
+    arn: NotRequired[str],
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    pitPolicy: NotRequired[List[PITPolicyRuleTypeDef]],  # (4)
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[List[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Dict[str, str]],
+    tags: NotRequired[Dict[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import UpdateReplicationConfigurationTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateReplicationConfigurationTemplateRequestRequestTypeDef:
+    return {
+        "replicationConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
+    replicationConfigurationTemplateID: str,
+    arn: NotRequired[str],
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    pitPolicy: NotRequired[Sequence[PITPolicyRuleTypeDef]],  # (4)
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Mapping[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+## DataReplicationInitiationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DataReplicationInitiationTypeDef
+
+def get_value() -> DataReplicationInitiationTypeDef:
+    return {
+        "nextAttemptDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class DataReplicationInitiationTypeDef(TypedDict):
+    nextAttemptDateTime: NotRequired[str],
+    startDateTime: NotRequired[str],
+    steps: NotRequired[List[DataReplicationInitiationStepTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef) 
+## DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+
+def get_value() -> DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef:
+    return {
+        "jobID": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef(TypedDict):
+    jobID: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
+
+def get_value() -> DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef:
+    return {
+        "replicationConfigurationTemplateIDs": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef(TypedDict):
+    replicationConfigurationTemplateIDs: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetFailbackReplicationConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import GetFailbackReplicationConfigurationResponseTypeDef
+
+def get_value() -> GetFailbackReplicationConfigurationResponseTypeDef:
+    return {
+        "bandwidthThrottling": ...,
+        "name": ...,
+        "recoveryInstanceID": ...,
+        "usePrivateIP": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFailbackReplicationConfigurationResponseTypeDef(TypedDict):
+    bandwidthThrottling: int,
+    name: str,
+    recoveryInstanceID: str,
+    usePrivateIP: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
+    return {
+        "arn": ...,
+        "associateDefaultSecurityGroup": ...,
+        "bandwidthThrottling": ...,
+        "createPublicIP": ...,
+        "dataPlaneRouting": ...,
+        "defaultLargeStagingDiskType": ...,
+        "ebsEncryption": ...,
+        "ebsEncryptionKeyArn": ...,
+        "pitPolicy": ...,
+        "replicationConfigurationTemplateID": ...,
+        "replicationServerInstanceType": ...,
+        "replicationServersSecurityGroupsIDs": ...,
+        "stagingAreaSubnetId": ...,
+        "stagingAreaTags": ...,
+        "tags": ...,
+        "useDedicatedReplicationServer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
+    arn: str,
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    ebsEncryptionKeyArn: str,
+    pitPolicy: List[PITPolicyRuleTypeDef],  # (4)
+    replicationConfigurationTemplateID: str,
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: List[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Dict[str, str],
+    tags: Dict[str, str],
+    useDedicatedReplicationServer: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeJobsRequestDescribeJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeJobsRequestDescribeJobsPaginateTypeDef
+
+def get_value() -> DescribeJobsRequestDescribeJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsRequestDescribeJobsPaginateTypeDef(TypedDict):
+    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeJobsRequestRequestTypeDef
+
+def get_value() -> DescribeJobsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsRequestRequestTypeDef(TypedDict):
+    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+## DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef
+
+def get_value() -> DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef(TypedDict):
+    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeRecoveryInstancesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesRequestRequestTypeDef
+
+def get_value() -> DescribeRecoveryInstancesRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoveryInstancesRequestRequestTypeDef(TypedDict):
+    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef) 
+## DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef
+
+def get_value() -> DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef(TypedDict):
+    sourceServerID: str,
+    filters: NotRequired[DescribeRecoverySnapshotsRequestFiltersTypeDef],  # (1)
+    order: NotRequired[RecoverySnapshotsOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef) 
+2. See [:material-code-brackets: RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeRecoverySnapshotsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsRequestRequestTypeDef
+
+def get_value() -> DescribeRecoverySnapshotsRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoverySnapshotsRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+    filters: NotRequired[DescribeRecoverySnapshotsRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    order: NotRequired[RecoverySnapshotsOrderType],  # (2)
+```
+
+1. See [:material-code-braces: DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef) 
+2. See [:material-code-brackets: RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype) 
+## DescribeRecoverySnapshotsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoverySnapshotsResponseTypeDef
+
+def get_value() -> DescribeRecoverySnapshotsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoverySnapshotsResponseTypeDef(TypedDict):
+    items: List[RecoverySnapshotTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecoverySnapshotTypeDef](./type_defs.md#recoverysnapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
+
+def get_value() -> DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef(TypedDict):
+    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSourceServersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeSourceServersRequestRequestTypeDef
+
+def get_value() -> DescribeSourceServersRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSourceServersRequestRequestTypeDef(TypedDict):
+    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
 ## JobLogTypeDef
 
 ```python title="Usage Example"
@@ -908,41 +1363,31 @@ class LaunchConfigurationTypeDef(TypedDict):
 2. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
 3. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LicensingTypeDef
+## UpdateLaunchConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import LicensingTypeDef
+from mypy_boto3_drs.type_defs import UpdateLaunchConfigurationRequestRequestTypeDef
 
-def get_value() -> LicensingTypeDef:
+def get_value() -> UpdateLaunchConfigurationRequestRequestTypeDef:
     return {
-        "osByol": ...,
+        "sourceServerID": ...,
     }
 ```
 
 ```python title="Definition"
-class LicensingTypeDef(TypedDict):
-    osByol: NotRequired[bool],
+class UpdateLaunchConfigurationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+    copyPrivateIp: NotRequired[bool],
+    copyTags: NotRequired[bool],
+    launchDisposition: NotRequired[LaunchDispositionType],  # (1)
+    licensing: NotRequired[LicensingTypeDef],  # (2)
+    name: NotRequired[str],
+    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (3)
 ```
 
-## LifeCycleLastLaunchInitiatedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import LifeCycleLastLaunchInitiatedTypeDef
-
-def get_value() -> LifeCycleLastLaunchInitiatedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastLaunchInitiatedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-    jobID: NotRequired[str],
-    type: NotRequired[LastLaunchTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: LastLaunchTypeType](./literals.md#lastlaunchtypetype) 
+1. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+2. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+3. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 ## LifeCycleLastLaunchTypeDef
 
 ```python title="Usage Example"
@@ -960,238 +1405,34 @@ class LifeCycleLastLaunchTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LifeCycleLastLaunchInitiatedTypeDef](./type_defs.md#lifecyclelastlaunchinitiatedtypedef) 
-## LifeCycleTypeDef
+## SourcePropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import LifeCycleTypeDef
+from mypy_boto3_drs.type_defs import SourcePropertiesTypeDef
 
-def get_value() -> LifeCycleTypeDef:
+def get_value() -> SourcePropertiesTypeDef:
     return {
-        "addedToServiceDateTime": ...,
+        "cpus": ...,
     }
 ```
 
 ```python title="Definition"
-class LifeCycleTypeDef(TypedDict):
-    addedToServiceDateTime: NotRequired[str],
-    elapsedReplicationDuration: NotRequired[str],
-    firstByteDateTime: NotRequired[str],
-    lastLaunch: NotRequired[LifeCycleLastLaunchTypeDef],  # (1)
-    lastSeenByServiceDateTime: NotRequired[str],
+class SourcePropertiesTypeDef(TypedDict):
+    cpus: NotRequired[List[CPUTypeDef]],  # (1)
+    disks: NotRequired[List[DiskTypeDef]],  # (2)
+    identificationHints: NotRequired[IdentificationHintsTypeDef],  # (3)
+    lastUpdatedDateTime: NotRequired[str],
+    networkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (4)
+    os: NotRequired[OSTypeDef],  # (5)
+    ramBytes: NotRequired[int],
+    recommendedInstanceType: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LifeCycleLastLaunchTypeDef](./type_defs.md#lifecyclelastlaunchtypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkInterfaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import NetworkInterfaceTypeDef
-
-def get_value() -> NetworkInterfaceTypeDef:
-    return {
-        "ips": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceTypeDef(TypedDict):
-    ips: NotRequired[List[str]],
-    isPrimary: NotRequired[bool],
-    macAddress: NotRequired[str],
-```
-
-## OSTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import OSTypeDef
-
-def get_value() -> OSTypeDef:
-    return {
-        "fullString": ...,
-    }
-```
-
-```python title="Definition"
-class OSTypeDef(TypedDict):
-    fullString: NotRequired[str],
-```
-
-## PITPolicyRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import PITPolicyRuleTypeDef
-
-def get_value() -> PITPolicyRuleTypeDef:
-    return {
-        "interval": ...,
-        "retentionDuration": ...,
-        "units": ...,
-    }
-```
-
-```python title="Definition"
-class PITPolicyRuleTypeDef(TypedDict):
-    interval: int,
-    retentionDuration: int,
-    units: PITPolicyRuleUnitsType,  # (1)
-    enabled: NotRequired[bool],
-    ruleID: NotRequired[int],
-```
-
-1. See [:material-code-brackets: PITPolicyRuleUnitsType](./literals.md#pitpolicyruleunitstype) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ParticipatingServerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ParticipatingServerTypeDef
-
-def get_value() -> ParticipatingServerTypeDef:
-    return {
-        "launchStatus": ...,
-    }
-```
-
-```python title="Definition"
-class ParticipatingServerTypeDef(TypedDict):
-    launchStatus: NotRequired[LaunchStatusType],  # (1)
-    recoveryInstanceID: NotRequired[str],
-    sourceServerID: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
-## RecoveryInstanceDataReplicationErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationErrorTypeDef
-
-def get_value() -> RecoveryInstanceDataReplicationErrorTypeDef:
-    return {
-        "error": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceDataReplicationErrorTypeDef(TypedDict):
-    error: NotRequired[FailbackReplicationErrorType],  # (1)
-    rawError: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FailbackReplicationErrorType](./literals.md#failbackreplicationerrortype) 
-## RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef
-
-def get_value() -> RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef:
-    return {
-        "backloggedStorageBytes": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef(TypedDict):
-    backloggedStorageBytes: NotRequired[int],
-    deviceName: NotRequired[str],
-    replicatedStorageBytes: NotRequired[int],
-    rescannedStorageBytes: NotRequired[int],
-    totalStorageBytes: NotRequired[int],
-```
-
-## RecoveryInstanceDataReplicationInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInfoTypeDef
-
-def get_value() -> RecoveryInstanceDataReplicationInfoTypeDef:
-    return {
-        "dataReplicationError": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceDataReplicationInfoTypeDef(TypedDict):
-    dataReplicationError: NotRequired[RecoveryInstanceDataReplicationErrorTypeDef],  # (1)
-    dataReplicationInitiation: NotRequired[RecoveryInstanceDataReplicationInitiationTypeDef],  # (2)
-    dataReplicationState: NotRequired[RecoveryInstanceDataReplicationStateType],  # (3)
-    etaDateTime: NotRequired[str],
-    lagDuration: NotRequired[str],
-    replicatedDisks: NotRequired[List[RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: RecoveryInstanceDataReplicationErrorTypeDef](./type_defs.md#recoveryinstancedatareplicationerrortypedef) 
-2. See [:material-code-braces: RecoveryInstanceDataReplicationInitiationTypeDef](./type_defs.md#recoveryinstancedatareplicationinitiationtypedef) 
-3. See [:material-code-brackets: RecoveryInstanceDataReplicationStateType](./literals.md#recoveryinstancedatareplicationstatetype) 
-4. See [:material-code-braces: RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#recoveryinstancedatareplicationinforeplicateddisktypedef) 
-## RecoveryInstanceDataReplicationInitiationStepTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInitiationStepTypeDef
-
-def get_value() -> RecoveryInstanceDataReplicationInitiationStepTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceDataReplicationInitiationStepTypeDef(TypedDict):
-    name: NotRequired[RecoveryInstanceDataReplicationInitiationStepNameType],  # (1)
-    status: NotRequired[RecoveryInstanceDataReplicationInitiationStepStatusType],  # (2)
-```
-
-1. See [:material-code-brackets: RecoveryInstanceDataReplicationInitiationStepNameType](./literals.md#recoveryinstancedatareplicationinitiationstepnametype) 
-2. See [:material-code-brackets: RecoveryInstanceDataReplicationInitiationStepStatusType](./literals.md#recoveryinstancedatareplicationinitiationstepstatustype) 
+1. See [:material-code-braces: CPUTypeDef](./type_defs.md#cputypedef) 
+2. See [:material-code-braces: DiskTypeDef](./type_defs.md#disktypedef) 
+3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
+4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
 ## RecoveryInstanceDataReplicationInitiationTypeDef
 
 ```python title="Usage Example"
@@ -1210,49 +1451,6 @@ class RecoveryInstanceDataReplicationInitiationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RecoveryInstanceDataReplicationInitiationStepTypeDef](./type_defs.md#recoveryinstancedatareplicationinitiationsteptypedef) 
-## RecoveryInstanceDiskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceDiskTypeDef
-
-def get_value() -> RecoveryInstanceDiskTypeDef:
-    return {
-        "bytes": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceDiskTypeDef(TypedDict):
-    bytes: NotRequired[int],
-    ebsVolumeID: NotRequired[str],
-    internalDeviceName: NotRequired[str],
-```
-
-## RecoveryInstanceFailbackTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceFailbackTypeDef
-
-def get_value() -> RecoveryInstanceFailbackTypeDef:
-    return {
-        "agentLastSeenByServiceDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceFailbackTypeDef(TypedDict):
-    agentLastSeenByServiceDateTime: NotRequired[str],
-    elapsedReplicationDuration: NotRequired[str],
-    failbackClientID: NotRequired[str],
-    failbackClientLastSeenByServiceDateTime: NotRequired[str],
-    failbackInitiationTime: NotRequired[str],
-    failbackJobID: NotRequired[str],
-    failbackToOriginalServer: NotRequired[bool],
-    firstByteDateTime: NotRequired[str],
-    state: NotRequired[FailbackStateType],  # (1)
-```
-
-1. See [:material-code-brackets: FailbackStateType](./literals.md#failbackstatetype) 
 ## RecoveryInstancePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1280,168 +1478,6 @@ class RecoveryInstancePropertiesTypeDef(TypedDict):
 3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
 4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
 5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
-## RecoveryInstanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoveryInstanceTypeDef
-
-def get_value() -> RecoveryInstanceTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class RecoveryInstanceTypeDef(TypedDict):
-    arn: NotRequired[str],
-    dataReplicationInfo: NotRequired[RecoveryInstanceDataReplicationInfoTypeDef],  # (1)
-    ec2InstanceID: NotRequired[str],
-    ec2InstanceState: NotRequired[EC2InstanceStateType],  # (2)
-    failback: NotRequired[RecoveryInstanceFailbackTypeDef],  # (3)
-    isDrill: NotRequired[bool],
-    jobID: NotRequired[str],
-    pointInTimeSnapshotDateTime: NotRequired[str],
-    recoveryInstanceID: NotRequired[str],
-    recoveryInstanceProperties: NotRequired[RecoveryInstancePropertiesTypeDef],  # (4)
-    sourceServerID: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: RecoveryInstanceDataReplicationInfoTypeDef](./type_defs.md#recoveryinstancedatareplicationinfotypedef) 
-2. See [:material-code-brackets: EC2InstanceStateType](./literals.md#ec2instancestatetype) 
-3. See [:material-code-braces: RecoveryInstanceFailbackTypeDef](./type_defs.md#recoveryinstancefailbacktypedef) 
-4. See [:material-code-braces: RecoveryInstancePropertiesTypeDef](./type_defs.md#recoveryinstancepropertiestypedef) 
-## RecoverySnapshotTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RecoverySnapshotTypeDef
-
-def get_value() -> RecoverySnapshotTypeDef:
-    return {
-        "expectedTimestamp": ...,
-        "snapshotID": ...,
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class RecoverySnapshotTypeDef(TypedDict):
-    expectedTimestamp: str,
-    snapshotID: str,
-    sourceServerID: str,
-    ebsSnapshots: NotRequired[List[str]],
-    timestamp: NotRequired[str],
-```
-
-## ReplicationConfigurationReplicatedDiskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ReplicationConfigurationReplicatedDiskTypeDef
-
-def get_value() -> ReplicationConfigurationReplicatedDiskTypeDef:
-    return {
-        "deviceName": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationReplicatedDiskTypeDef(TypedDict):
-    deviceName: NotRequired[str],
-    iops: NotRequired[int],
-    isBootDisk: NotRequired[bool],
-    stagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
-    throughput: NotRequired[int],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
-## ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
-    return {
-        "arn": ...,
-        "associateDefaultSecurityGroup": ...,
-        "bandwidthThrottling": ...,
-        "createPublicIP": ...,
-        "dataPlaneRouting": ...,
-        "defaultLargeStagingDiskType": ...,
-        "ebsEncryption": ...,
-        "ebsEncryptionKeyArn": ...,
-        "pitPolicy": ...,
-        "replicationConfigurationTemplateID": ...,
-        "replicationServerInstanceType": ...,
-        "replicationServersSecurityGroupsIDs": ...,
-        "stagingAreaSubnetId": ...,
-        "stagingAreaTags": ...,
-        "tags": ...,
-        "useDedicatedReplicationServer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
-    arn: str,
-    associateDefaultSecurityGroup: bool,
-    bandwidthThrottling: int,
-    createPublicIP: bool,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
-    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
-    ebsEncryptionKeyArn: str,
-    pitPolicy: List[PITPolicyRuleTypeDef],  # (4)
-    replicationConfigurationTemplateID: str,
-    replicationServerInstanceType: str,
-    replicationServersSecurityGroupsIDs: List[str],
-    stagingAreaSubnetId: str,
-    stagingAreaTags: Dict[str, str],
-    tags: Dict[str, str],
-    useDedicatedReplicationServer: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ReplicationConfigurationTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ReplicationConfigurationTemplateTypeDef
-
-def get_value() -> ReplicationConfigurationTemplateTypeDef:
-    return {
-        "replicationConfigurationTemplateID": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationTemplateTypeDef(TypedDict):
-    replicationConfigurationTemplateID: str,
-    arn: NotRequired[str],
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    pitPolicy: NotRequired[List[PITPolicyRuleTypeDef]],  # (4)
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[List[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Dict[str, str]],
-    tags: NotRequired[Dict[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
 ## ReplicationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1496,74 +1532,258 @@ class ReplicationConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
 5. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
 6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
+## UpdateReplicationConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_drs.type_defs import UpdateReplicationConfigurationRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RetryDataReplicationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import RetryDataReplicationRequestRequestTypeDef
-
-def get_value() -> RetryDataReplicationRequestRequestTypeDef:
+def get_value() -> UpdateReplicationConfigurationRequestRequestTypeDef:
     return {
         "sourceServerID": ...,
     }
 ```
 
 ```python title="Definition"
-class RetryDataReplicationRequestRequestTypeDef(TypedDict):
+class UpdateReplicationConfigurationRequestRequestTypeDef(TypedDict):
     sourceServerID: str,
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    name: NotRequired[str],
+    pitPolicy: NotRequired[Sequence[PITPolicyRuleTypeDef]],  # (4)
+    replicatedDisks: NotRequired[Sequence[ReplicationConfigurationReplicatedDiskTypeDef]],  # (5)
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Mapping[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
 ```
 
-## SourcePropertiesTypeDef
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+5. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
+## StartRecoveryRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import SourcePropertiesTypeDef
+from mypy_boto3_drs.type_defs import StartRecoveryRequestRequestTypeDef
 
-def get_value() -> SourcePropertiesTypeDef:
+def get_value() -> StartRecoveryRequestRequestTypeDef:
     return {
-        "cpus": ...,
+        "sourceServers": ...,
     }
 ```
 
 ```python title="Definition"
-class SourcePropertiesTypeDef(TypedDict):
-    cpus: NotRequired[List[CPUTypeDef]],  # (1)
-    disks: NotRequired[List[DiskTypeDef]],  # (2)
-    identificationHints: NotRequired[IdentificationHintsTypeDef],  # (3)
-    lastUpdatedDateTime: NotRequired[str],
-    networkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (4)
-    os: NotRequired[OSTypeDef],  # (5)
-    ramBytes: NotRequired[int],
-    recommendedInstanceType: NotRequired[str],
+class StartRecoveryRequestRequestTypeDef(TypedDict):
+    sourceServers: Sequence[StartRecoveryRequestSourceServerTypeDef],  # (1)
+    isDrill: NotRequired[bool],
+    tags: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-braces: CPUTypeDef](./type_defs.md#cputypedef) 
-2. See [:material-code-braces: DiskTypeDef](./type_defs.md#disktypedef) 
-3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
-4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
-5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
+1. See [:material-code-braces: StartRecoveryRequestSourceServerTypeDef](./type_defs.md#startrecoveryrequestsourceservertypedef) 
+## DescribeReplicationConfigurationTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
+
+def get_value() -> DescribeReplicationConfigurationTemplatesResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReplicationConfigurationTemplatesResponseTypeDef(TypedDict):
+    items: List[ReplicationConfigurationTemplateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DataReplicationInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DataReplicationInfoTypeDef
+
+def get_value() -> DataReplicationInfoTypeDef:
+    return {
+        "dataReplicationError": ...,
+    }
+```
+
+```python title="Definition"
+class DataReplicationInfoTypeDef(TypedDict):
+    dataReplicationError: NotRequired[DataReplicationErrorTypeDef],  # (1)
+    dataReplicationInitiation: NotRequired[DataReplicationInitiationTypeDef],  # (2)
+    dataReplicationState: NotRequired[DataReplicationStateType],  # (3)
+    etaDateTime: NotRequired[str],
+    lagDuration: NotRequired[str],
+    replicatedDisks: NotRequired[List[DataReplicationInfoReplicatedDiskTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef) 
+2. See [:material-code-braces: DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef) 
+3. See [:material-code-brackets: DataReplicationStateType](./literals.md#datareplicationstatetype) 
+4. See [:material-code-braces: DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef) 
+## DescribeJobLogItemsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeJobLogItemsResponseTypeDef
+
+def get_value() -> DescribeJobLogItemsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobLogItemsResponseTypeDef(TypedDict):
+    items: List[JobLogTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobLogTypeDef](./type_defs.md#joblogtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeJobsResponseTypeDef
+
+def get_value() -> DescribeJobsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsResponseTypeDef(TypedDict):
+    items: List[JobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartFailbackLaunchResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartFailbackLaunchResponseTypeDef
+
+def get_value() -> StartFailbackLaunchResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartFailbackLaunchResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartRecoveryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartRecoveryResponseTypeDef
+
+def get_value() -> StartRecoveryResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecoveryResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TerminateRecoveryInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import TerminateRecoveryInstancesResponseTypeDef
+
+def get_value() -> TerminateRecoveryInstancesResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateRecoveryInstancesResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LifeCycleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import LifeCycleTypeDef
+
+def get_value() -> LifeCycleTypeDef:
+    return {
+        "addedToServiceDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleTypeDef(TypedDict):
+    addedToServiceDateTime: NotRequired[str],
+    elapsedReplicationDuration: NotRequired[str],
+    firstByteDateTime: NotRequired[str],
+    lastLaunch: NotRequired[LifeCycleLastLaunchTypeDef],  # (1)
+    lastSeenByServiceDateTime: NotRequired[str],
+```
+
+1. See [:material-code-braces: LifeCycleLastLaunchTypeDef](./type_defs.md#lifecyclelastlaunchtypedef) 
+## RecoveryInstanceDataReplicationInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import RecoveryInstanceDataReplicationInfoTypeDef
+
+def get_value() -> RecoveryInstanceDataReplicationInfoTypeDef:
+    return {
+        "dataReplicationError": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryInstanceDataReplicationInfoTypeDef(TypedDict):
+    dataReplicationError: NotRequired[RecoveryInstanceDataReplicationErrorTypeDef],  # (1)
+    dataReplicationInitiation: NotRequired[RecoveryInstanceDataReplicationInitiationTypeDef],  # (2)
+    dataReplicationState: NotRequired[RecoveryInstanceDataReplicationStateType],  # (3)
+    etaDateTime: NotRequired[str],
+    lagDuration: NotRequired[str],
+    replicatedDisks: NotRequired[List[RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: RecoveryInstanceDataReplicationErrorTypeDef](./type_defs.md#recoveryinstancedatareplicationerrortypedef) 
+2. See [:material-code-braces: RecoveryInstanceDataReplicationInitiationTypeDef](./type_defs.md#recoveryinstancedatareplicationinitiationtypedef) 
+3. See [:material-code-brackets: RecoveryInstanceDataReplicationStateType](./literals.md#recoveryinstancedatareplicationstatetype) 
+4. See [:material-code-braces: RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#recoveryinstancedatareplicationinforeplicateddisktypedef) 
 ## SourceServerResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1628,298 +1848,78 @@ class SourceServerTypeDef(TypedDict):
 2. See [:material-code-brackets: LastLaunchResultType](./literals.md#lastlaunchresulttype) 
 3. See [:material-code-braces: LifeCycleTypeDef](./type_defs.md#lifecycletypedef) 
 4. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
-## StartFailbackLaunchRequestRequestTypeDef
+## RecoveryInstanceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StartFailbackLaunchRequestRequestTypeDef
+from mypy_boto3_drs.type_defs import RecoveryInstanceTypeDef
 
-def get_value() -> StartFailbackLaunchRequestRequestTypeDef:
+def get_value() -> RecoveryInstanceTypeDef:
     return {
-        "recoveryInstanceIDs": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class StartFailbackLaunchRequestRequestTypeDef(TypedDict):
-    recoveryInstanceIDs: Sequence[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-## StartFailbackLaunchResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StartFailbackLaunchResponseTypeDef
-
-def get_value() -> StartFailbackLaunchResponseTypeDef:
-    return {
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartFailbackLaunchResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartRecoveryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StartRecoveryRequestRequestTypeDef
-
-def get_value() -> StartRecoveryRequestRequestTypeDef:
-    return {
-        "sourceServers": ...,
-    }
-```
-
-```python title="Definition"
-class StartRecoveryRequestRequestTypeDef(TypedDict):
-    sourceServers: Sequence[StartRecoveryRequestSourceServerTypeDef],  # (1)
-    isDrill: NotRequired[bool],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: StartRecoveryRequestSourceServerTypeDef](./type_defs.md#startrecoveryrequestsourceservertypedef) 
-## StartRecoveryRequestSourceServerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StartRecoveryRequestSourceServerTypeDef
-
-def get_value() -> StartRecoveryRequestSourceServerTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class StartRecoveryRequestSourceServerTypeDef(TypedDict):
-    sourceServerID: str,
-    recoverySnapshotID: NotRequired[str],
-```
-
-## StartRecoveryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StartRecoveryResponseTypeDef
-
-def get_value() -> StartRecoveryResponseTypeDef:
-    return {
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartRecoveryResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StopFailbackRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import StopFailbackRequestRequestTypeDef
-
-def get_value() -> StopFailbackRequestRequestTypeDef:
-    return {
-        "recoveryInstanceID": ...,
-    }
-```
-
-```python title="Definition"
-class StopFailbackRequestRequestTypeDef(TypedDict):
-    recoveryInstanceID: str,
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## TerminateRecoveryInstancesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import TerminateRecoveryInstancesRequestRequestTypeDef
-
-def get_value() -> TerminateRecoveryInstancesRequestRequestTypeDef:
-    return {
-        "recoveryInstanceIDs": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateRecoveryInstancesRequestRequestTypeDef(TypedDict):
-    recoveryInstanceIDs: Sequence[str],
-```
-
-## TerminateRecoveryInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import TerminateRecoveryInstancesResponseTypeDef
-
-def get_value() -> TerminateRecoveryInstancesResponseTypeDef:
-    return {
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateRecoveryInstancesResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateFailbackReplicationConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import UpdateFailbackReplicationConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateFailbackReplicationConfigurationRequestRequestTypeDef:
-    return {
-        "recoveryInstanceID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFailbackReplicationConfigurationRequestRequestTypeDef(TypedDict):
-    recoveryInstanceID: str,
-    bandwidthThrottling: NotRequired[int],
-    name: NotRequired[str],
-    usePrivateIP: NotRequired[bool],
-```
-
-## UpdateLaunchConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import UpdateLaunchConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateLaunchConfigurationRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateLaunchConfigurationRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-    copyPrivateIp: NotRequired[bool],
-    copyTags: NotRequired[bool],
-    launchDisposition: NotRequired[LaunchDispositionType],  # (1)
-    licensing: NotRequired[LicensingTypeDef],  # (2)
-    name: NotRequired[str],
-    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (3)
-```
-
-1. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
-2. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
-3. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
-## UpdateReplicationConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import UpdateReplicationConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateReplicationConfigurationRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateReplicationConfigurationRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    name: NotRequired[str],
-    pitPolicy: NotRequired[Sequence[PITPolicyRuleTypeDef]],  # (4)
-    replicatedDisks: NotRequired[Sequence[ReplicationConfigurationReplicatedDiskTypeDef]],  # (5)
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Mapping[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
-5. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
-## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_drs.type_defs import UpdateReplicationConfigurationTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateReplicationConfigurationTemplateRequestRequestTypeDef:
-    return {
-        "replicationConfigurationTemplateID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
-    replicationConfigurationTemplateID: str,
+class RecoveryInstanceTypeDef(TypedDict):
     arn: NotRequired[str],
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    pitPolicy: NotRequired[Sequence[PITPolicyRuleTypeDef]],  # (4)
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Mapping[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
+    dataReplicationInfo: NotRequired[RecoveryInstanceDataReplicationInfoTypeDef],  # (1)
+    ec2InstanceID: NotRequired[str],
+    ec2InstanceState: NotRequired[EC2InstanceStateType],  # (2)
+    failback: NotRequired[RecoveryInstanceFailbackTypeDef],  # (3)
+    isDrill: NotRequired[bool],
+    jobID: NotRequired[str],
+    pointInTimeSnapshotDateTime: NotRequired[str],
+    recoveryInstanceID: NotRequired[str],
+    recoveryInstanceProperties: NotRequired[RecoveryInstancePropertiesTypeDef],  # (4)
+    sourceServerID: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
 ```
 
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+1. See [:material-code-braces: RecoveryInstanceDataReplicationInfoTypeDef](./type_defs.md#recoveryinstancedatareplicationinfotypedef) 
+2. See [:material-code-brackets: EC2InstanceStateType](./literals.md#ec2instancestatetype) 
+3. See [:material-code-braces: RecoveryInstanceFailbackTypeDef](./type_defs.md#recoveryinstancefailbacktypedef) 
+4. See [:material-code-braces: RecoveryInstancePropertiesTypeDef](./type_defs.md#recoveryinstancepropertiestypedef) 
+## DescribeSourceServersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeSourceServersResponseTypeDef
+
+def get_value() -> DescribeSourceServersResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSourceServersResponseTypeDef(TypedDict):
+    items: List[SourceServerTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRecoveryInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import DescribeRecoveryInstancesResponseTypeDef
+
+def get_value() -> DescribeRecoveryInstancesResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecoveryInstancesResponseTypeDef(TypedDict):
+    items: List[RecoveryInstanceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecoveryInstanceTypeDef](./type_defs.md#recoveryinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -107,8 +107,8 @@ def get_value() -> GenerateDataSetRequestRequestTypeDef:
 ```
 
 - [GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef)
-- [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef)
+- [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef)
 - [StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef)
 

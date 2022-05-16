@@ -29,6 +29,208 @@ class CreateChatTokenRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChatTokenCapabilityType](./literals.md#chattokencapabilitytype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## MessageReviewHandlerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import MessageReviewHandlerTypeDef
+
+def get_value() -> MessageReviewHandlerTypeDef:
+    return {
+        "fallbackResult": ...,
+    }
+```
+
+```python title="Definition"
+class MessageReviewHandlerTypeDef(TypedDict):
+    fallbackResult: NotRequired[FallbackResultType],  # (1)
+    uri: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FallbackResultType](./literals.md#fallbackresulttype) 
+## DeleteMessageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import DeleteMessageRequestRequestTypeDef
+
+def get_value() -> DeleteMessageRequestRequestTypeDef:
+    return {
+        "id": ...,
+        "roomIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMessageRequestRequestTypeDef(TypedDict):
+    id: str,
+    roomIdentifier: str,
+    reason: NotRequired[str],
+```
+
+## DeleteRoomRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import DeleteRoomRequestRequestTypeDef
+
+def get_value() -> DeleteRoomRequestRequestTypeDef:
+    return {
+        "identifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteRoomRequestRequestTypeDef(TypedDict):
+    identifier: str,
+```
+
+## DisconnectUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import DisconnectUserRequestRequestTypeDef
+
+def get_value() -> DisconnectUserRequestRequestTypeDef:
+    return {
+        "roomIdentifier": ...,
+        "userId": ...,
+    }
+```
+
+```python title="Definition"
+class DisconnectUserRequestRequestTypeDef(TypedDict):
+    roomIdentifier: str,
+    userId: str,
+    reason: NotRequired[str],
+```
+
+## GetRoomRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import GetRoomRequestRequestTypeDef
+
+def get_value() -> GetRoomRequestRequestTypeDef:
+    return {
+        "identifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetRoomRequestRequestTypeDef(TypedDict):
+    identifier: str,
+```
+
+## ListRoomsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import ListRoomsRequestRequestTypeDef
+
+def get_value() -> ListRoomsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoomsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    messageReviewHandlerUri: NotRequired[str],
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## SendEventRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import SendEventRequestRequestTypeDef
+
+def get_value() -> SendEventRequestRequestTypeDef:
+    return {
+        "eventName": ...,
+        "roomIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class SendEventRequestRequestTypeDef(TypedDict):
+    eventName: str,
+    roomIdentifier: str,
+    attributes: NotRequired[Mapping[str, str]],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
 ## CreateChatTokenResponseTypeDef
 
 ```python title="Usage Example"
@@ -48,6 +250,63 @@ class CreateChatTokenResponseTypeDef(TypedDict):
     sessionExpirationTime: datetime,
     token: str,
     tokenExpirationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import DeleteMessageResponseTypeDef
+
+def get_value() -> DeleteMessageResponseTypeDef:
+    return {
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMessageResponseTypeDef(TypedDict):
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendEventResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import SendEventResponseTypeDef
+
+def get_value() -> SendEventResponseTypeDef:
+    return {
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendEventResponseTypeDef(TypedDict):
+    id: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -109,95 +368,6 @@ class CreateRoomResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MessageReviewHandlerTypeDef](./type_defs.md#messagereviewhandlertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteMessageRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import DeleteMessageRequestRequestTypeDef
-
-def get_value() -> DeleteMessageRequestRequestTypeDef:
-    return {
-        "id": ...,
-        "roomIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMessageRequestRequestTypeDef(TypedDict):
-    id: str,
-    roomIdentifier: str,
-    reason: NotRequired[str],
-```
-
-## DeleteMessageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import DeleteMessageResponseTypeDef
-
-def get_value() -> DeleteMessageResponseTypeDef:
-    return {
-        "id": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMessageResponseTypeDef(TypedDict):
-    id: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteRoomRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import DeleteRoomRequestRequestTypeDef
-
-def get_value() -> DeleteRoomRequestRequestTypeDef:
-    return {
-        "identifier": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteRoomRequestRequestTypeDef(TypedDict):
-    identifier: str,
-```
-
-## DisconnectUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import DisconnectUserRequestRequestTypeDef
-
-def get_value() -> DisconnectUserRequestRequestTypeDef:
-    return {
-        "roomIdentifier": ...,
-        "userId": ...,
-    }
-```
-
-```python title="Definition"
-class DisconnectUserRequestRequestTypeDef(TypedDict):
-    roomIdentifier: str,
-    userId: str,
-    reason: NotRequired[str],
-```
-
-## GetRoomRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import GetRoomRequestRequestTypeDef
-
-def get_value() -> GetRoomRequestRequestTypeDef:
-    return {
-        "identifier": ...,
-    }
-```
-
-```python title="Definition"
-class GetRoomRequestRequestTypeDef(TypedDict):
-    identifier: str,
-```
-
 ## GetRoomResponseTypeDef
 
 ```python title="Usage Example"
@@ -234,124 +404,6 @@ class GetRoomResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MessageReviewHandlerTypeDef](./type_defs.md#messagereviewhandlertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRoomsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import ListRoomsRequestRequestTypeDef
-
-def get_value() -> ListRoomsRequestRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoomsRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    messageReviewHandlerUri: NotRequired[str],
-    name: NotRequired[str],
-    nextToken: NotRequired[str],
-```
-
-## ListRoomsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import ListRoomsResponseTypeDef
-
-def get_value() -> ListRoomsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "rooms": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoomsResponseTypeDef(TypedDict):
-    nextToken: str,
-    rooms: List[RoomSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomSummaryTypeDef](./type_defs.md#roomsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MessageReviewHandlerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import MessageReviewHandlerTypeDef
-
-def get_value() -> MessageReviewHandlerTypeDef:
-    return {
-        "fallbackResult": ...,
-    }
-```
-
-```python title="Definition"
-class MessageReviewHandlerTypeDef(TypedDict):
-    fallbackResult: NotRequired[FallbackResultType],  # (1)
-    uri: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FallbackResultType](./literals.md#fallbackresulttype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## RoomSummaryTypeDef
 
 ```python title="Usage Example"
@@ -375,80 +427,6 @@ class RoomSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MessageReviewHandlerTypeDef](./type_defs.md#messagereviewhandlertypedef) 
-## SendEventRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import SendEventRequestRequestTypeDef
-
-def get_value() -> SendEventRequestRequestTypeDef:
-    return {
-        "eventName": ...,
-        "roomIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class SendEventRequestRequestTypeDef(TypedDict):
-    eventName: str,
-    roomIdentifier: str,
-    attributes: NotRequired[Mapping[str, str]],
-```
-
-## SendEventResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import SendEventResponseTypeDef
-
-def get_value() -> SendEventResponseTypeDef:
-    return {
-        "id": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendEventResponseTypeDef(TypedDict):
-    id: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivschat.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
 ## UpdateRoomRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -505,4 +483,26 @@ class UpdateRoomResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MessageReviewHandlerTypeDef](./type_defs.md#messagereviewhandlertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoomsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.type_defs import ListRoomsResponseTypeDef
+
+def get_value() -> ListRoomsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "rooms": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoomsResponseTypeDef(TypedDict):
+    nextToken: str,
+    rooms: List[RoomSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomSummaryTypeDef](./type_defs.md#roomsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

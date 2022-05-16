@@ -89,42 +89,6 @@ class ChangeMessageVisibilityBatchRequestEntryTypeDef(TypedDict):
     VisibilityTimeout: NotRequired[int],
 ```
 
-## ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef
-
-def get_value() -> ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef:
-    return {
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef(TypedDict):
-    Entries: Sequence[ChangeMessageVisibilityBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef) 
-## ChangeMessageVisibilityBatchRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestRequestTypeDef
-
-def get_value() -> ChangeMessageVisibilityBatchRequestRequestTypeDef:
-    return {
-        "QueueUrl": ...,
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class ChangeMessageVisibilityBatchRequestRequestTypeDef(TypedDict):
-    QueueUrl: str,
-    Entries: Sequence[ChangeMessageVisibilityBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef) 
 ## ChangeMessageVisibilityBatchResultEntryTypeDef
 
 ```python title="Usage Example"
@@ -141,29 +105,30 @@ class ChangeMessageVisibilityBatchResultEntryTypeDef(TypedDict):
     Id: str,
 ```
 
-## ChangeMessageVisibilityBatchResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
+from mypy_boto3_sqs.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> ChangeMessageVisibilityBatchResultTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Successful": ...,
-        "Failed": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class ChangeMessageVisibilityBatchResultTypeDef(TypedDict):
-    Successful: List[ChangeMessageVisibilityBatchResultEntryTypeDef],  # (1)
-    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ChangeMessageVisibilityBatchResultEntryTypeDef](./type_defs.md#changemessagevisibilitybatchresultentrytypedef) 
-2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeMessageVisibilityRequestMessageChangeVisibilityTypeDef
 
 ```python title="Usage Example"
@@ -238,25 +203,6 @@ class CreateQueueRequestServiceResourceCreateQueueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
-## CreateQueueResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import CreateQueueResultTypeDef
-
-def get_value() -> CreateQueueResultTypeDef:
-    return {
-        "QueueUrl": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateQueueResultTypeDef(TypedDict):
-    QueueUrl: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMessageBatchRequestEntryTypeDef
 
 ```python title="Usage Example"
@@ -275,42 +221,6 @@ class DeleteMessageBatchRequestEntryTypeDef(TypedDict):
     ReceiptHandle: str,
 ```
 
-## DeleteMessageBatchRequestQueueDeleteMessagesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestQueueDeleteMessagesTypeDef
-
-def get_value() -> DeleteMessageBatchRequestQueueDeleteMessagesTypeDef:
-    return {
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMessageBatchRequestQueueDeleteMessagesTypeDef(TypedDict):
-    Entries: Sequence[DeleteMessageBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef) 
-## DeleteMessageBatchRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestRequestTypeDef
-
-def get_value() -> DeleteMessageBatchRequestRequestTypeDef:
-    return {
-        "QueueUrl": ...,
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMessageBatchRequestRequestTypeDef(TypedDict):
-    QueueUrl: str,
-    Entries: Sequence[DeleteMessageBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef) 
 ## DeleteMessageBatchResultEntryTypeDef
 
 ```python title="Usage Example"
@@ -327,29 +237,6 @@ class DeleteMessageBatchResultEntryTypeDef(TypedDict):
     Id: str,
 ```
 
-## DeleteMessageBatchResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultTypeDef
-
-def get_value() -> DeleteMessageBatchResultTypeDef:
-    return {
-        "Successful": ...,
-        "Failed": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMessageBatchResultTypeDef(TypedDict):
-    Successful: List[DeleteMessageBatchResultEntryTypeDef],  # (1)
-    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: DeleteMessageBatchResultEntryTypeDef](./type_defs.md#deletemessagebatchresultentrytypedef) 
-2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -402,26 +289,6 @@ class GetQueueAttributesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
-## GetQueueAttributesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import GetQueueAttributesResultTypeDef
-
-def get_value() -> GetQueueAttributesResultTypeDef:
-    return {
-        "Attributes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetQueueAttributesResultTypeDef(TypedDict):
-    Attributes: Dict[QueueAttributeNameType, str],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueueUrlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -456,43 +323,24 @@ class GetQueueUrlRequestServiceResourceGetQueueByNameTypeDef(TypedDict):
     QueueOwnerAWSAccountId: NotRequired[str],
 ```
 
-## GetQueueUrlResultTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import GetQueueUrlResultTypeDef
+from mypy_boto3_sqs.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> GetQueueUrlResultTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "QueueUrl": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class GetQueueUrlResultTypeDef(TypedDict):
-    QueueUrl: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef
-
-def get_value() -> ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef:
-    return {
-        "QueueUrl": ...,
-    }
-```
-
-```python title="Definition"
-class ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef(TypedDict):
-    QueueUrl: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeadLetterSourceQueuesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -511,27 +359,6 @@ class ListDeadLetterSourceQueuesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListDeadLetterSourceQueuesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultTypeDef
-
-def get_value() -> ListDeadLetterSourceQueuesResultTypeDef:
-    return {
-        "queueUrls": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDeadLetterSourceQueuesResultTypeDef(TypedDict):
-    queueUrls: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListQueueTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -548,43 +375,6 @@ class ListQueueTagsRequestRequestTypeDef(TypedDict):
     QueueUrl: str,
 ```
 
-## ListQueueTagsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ListQueueTagsResultTypeDef
-
-def get_value() -> ListQueueTagsResultTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListQueueTagsResultTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListQueuesRequestListQueuesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ListQueuesRequestListQueuesPaginateTypeDef
-
-def get_value() -> ListQueuesRequestListQueuesPaginateTypeDef:
-    return {
-        "QueueNamePrefix": ...,
-    }
-```
-
-```python title="Definition"
-class ListQueuesRequestListQueuesPaginateTypeDef(TypedDict):
-    QueueNamePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQueuesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -603,27 +393,6 @@ class ListQueuesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListQueuesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ListQueuesResultTypeDef
-
-def get_value() -> ListQueuesResultTypeDef:
-    return {
-        "QueueUrls": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListQueuesResultTypeDef(TypedDict):
-    QueueUrls: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MessageAttributeValueTypeDef
 
 ```python title="Usage Example"
@@ -662,48 +431,6 @@ class MessageSystemAttributeValueTypeDef(TypedDict):
     BinaryValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     StringListValues: NotRequired[Sequence[str]],
     BinaryListValues: NotRequired[Sequence[Union[str, bytes, IO[Any], StreamingBody]]],
-```
-
-## MessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import MessageTypeDef
-
-def get_value() -> MessageTypeDef:
-    return {
-        "MessageId": ...,
-    }
-```
-
-```python title="Definition"
-class MessageTypeDef(TypedDict):
-    MessageId: NotRequired[str],
-    ReceiptHandle: NotRequired[str],
-    MD5OfBody: NotRequired[str],
-    Body: NotRequired[str],
-    Attributes: NotRequired[Dict[MessageSystemAttributeNameType, str]],  # (1)
-    MD5OfMessageAttributes: NotRequired[str],
-    MessageAttributes: NotRequired[Dict[str, MessageAttributeValueTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype) 
-2. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## PurgeQueueRequestRequestTypeDef
@@ -783,26 +510,6 @@ class ReceiveMessageRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
-## ReceiveMessageResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ReceiveMessageResultTypeDef
-
-def get_value() -> ReceiveMessageResultTypeDef:
-    return {
-        "Messages": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReceiveMessageResultTypeDef(TypedDict):
-    Messages: List[MessageTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemovePermissionRequestQueueRemovePermissionTypeDef
 
 ```python title="Usage Example"
@@ -837,91 +544,6 @@ class RemovePermissionRequestRequestTypeDef(TypedDict):
     Label: str,
 ```
 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SendMessageBatchRequestEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageBatchRequestEntryTypeDef
-
-def get_value() -> SendMessageBatchRequestEntryTypeDef:
-    return {
-        "Id": ...,
-        "MessageBody": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageBatchRequestEntryTypeDef(TypedDict):
-    Id: str,
-    MessageBody: str,
-    DelaySeconds: NotRequired[int],
-    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
-    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
-    MessageDeduplicationId: NotRequired[str],
-    MessageGroupId: NotRequired[str],
-```
-
-1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
-2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
-## SendMessageBatchRequestQueueSendMessagesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageBatchRequestQueueSendMessagesTypeDef
-
-def get_value() -> SendMessageBatchRequestQueueSendMessagesTypeDef:
-    return {
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageBatchRequestQueueSendMessagesTypeDef(TypedDict):
-    Entries: Sequence[SendMessageBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef) 
-## SendMessageBatchRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageBatchRequestRequestTypeDef
-
-def get_value() -> SendMessageBatchRequestRequestTypeDef:
-    return {
-        "QueueUrl": ...,
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageBatchRequestRequestTypeDef(TypedDict):
-    QueueUrl: str,
-    Entries: Sequence[SendMessageBatchRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef) 
 ## SendMessageBatchResultEntryTypeDef
 
 ```python title="Usage Example"
@@ -945,104 +567,6 @@ class SendMessageBatchResultEntryTypeDef(TypedDict):
     SequenceNumber: NotRequired[str],
 ```
 
-## SendMessageBatchResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageBatchResultTypeDef
-
-def get_value() -> SendMessageBatchResultTypeDef:
-    return {
-        "Successful": ...,
-        "Failed": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageBatchResultTypeDef(TypedDict):
-    Successful: List[SendMessageBatchResultEntryTypeDef],  # (1)
-    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: SendMessageBatchResultEntryTypeDef](./type_defs.md#sendmessagebatchresultentrytypedef) 
-2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendMessageRequestQueueSendMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageRequestQueueSendMessageTypeDef
-
-def get_value() -> SendMessageRequestQueueSendMessageTypeDef:
-    return {
-        "MessageBody": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageRequestQueueSendMessageTypeDef(TypedDict):
-    MessageBody: str,
-    DelaySeconds: NotRequired[int],
-    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
-    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
-    MessageDeduplicationId: NotRequired[str],
-    MessageGroupId: NotRequired[str],
-```
-
-1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
-2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
-## SendMessageRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageRequestRequestTypeDef
-
-def get_value() -> SendMessageRequestRequestTypeDef:
-    return {
-        "QueueUrl": ...,
-        "MessageBody": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageRequestRequestTypeDef(TypedDict):
-    QueueUrl: str,
-    MessageBody: str,
-    DelaySeconds: NotRequired[int],
-    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
-    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
-    MessageDeduplicationId: NotRequired[str],
-    MessageGroupId: NotRequired[str],
-```
-
-1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
-2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
-## SendMessageResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sqs.type_defs import SendMessageResultTypeDef
-
-def get_value() -> SendMessageResultTypeDef:
-    return {
-        "MD5OfMessageBody": ...,
-        "MD5OfMessageAttributes": ...,
-        "MD5OfMessageSystemAttributes": ...,
-        "MessageId": ...,
-        "SequenceNumber": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageResultTypeDef(TypedDict):
-    MD5OfMessageBody: str,
-    MD5OfMessageAttributes: str,
-    MD5OfMessageSystemAttributes: str,
-    MessageId: str,
-    SequenceNumber: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceResourceMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1149,3 +673,479 @@ class UntagQueueRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef
+
+def get_value() -> ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef:
+    return {
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeMessageVisibilityBatchRequestQueueChangeMessageVisibilityBatchTypeDef(TypedDict):
+    Entries: Sequence[ChangeMessageVisibilityBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef) 
+## ChangeMessageVisibilityBatchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestRequestTypeDef
+
+def get_value() -> ChangeMessageVisibilityBatchRequestRequestTypeDef:
+    return {
+        "QueueUrl": ...,
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeMessageVisibilityBatchRequestRequestTypeDef(TypedDict):
+    QueueUrl: str,
+    Entries: Sequence[ChangeMessageVisibilityBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef) 
+## ChangeMessageVisibilityBatchResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
+
+def get_value() -> ChangeMessageVisibilityBatchResultTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeMessageVisibilityBatchResultTypeDef(TypedDict):
+    Successful: List[ChangeMessageVisibilityBatchResultEntryTypeDef],  # (1)
+    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ChangeMessageVisibilityBatchResultEntryTypeDef](./type_defs.md#changemessagevisibilitybatchresultentrytypedef) 
+2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateQueueResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import CreateQueueResultTypeDef
+
+def get_value() -> CreateQueueResultTypeDef:
+    return {
+        "QueueUrl": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateQueueResultTypeDef(TypedDict):
+    QueueUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetQueueAttributesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import GetQueueAttributesResultTypeDef
+
+def get_value() -> GetQueueAttributesResultTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueueAttributesResultTypeDef(TypedDict):
+    Attributes: Dict[QueueAttributeNameType, str],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetQueueUrlResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import GetQueueUrlResultTypeDef
+
+def get_value() -> GetQueueUrlResultTypeDef:
+    return {
+        "QueueUrl": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueueUrlResultTypeDef(TypedDict):
+    QueueUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeadLetterSourceQueuesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultTypeDef
+
+def get_value() -> ListDeadLetterSourceQueuesResultTypeDef:
+    return {
+        "queueUrls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeadLetterSourceQueuesResultTypeDef(TypedDict):
+    queueUrls: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueueTagsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ListQueueTagsResultTypeDef
+
+def get_value() -> ListQueueTagsResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueueTagsResultTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueuesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ListQueuesResultTypeDef
+
+def get_value() -> ListQueuesResultTypeDef:
+    return {
+        "QueueUrls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueuesResultTypeDef(TypedDict):
+    QueueUrls: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendMessageResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageResultTypeDef
+
+def get_value() -> SendMessageResultTypeDef:
+    return {
+        "MD5OfMessageBody": ...,
+        "MD5OfMessageAttributes": ...,
+        "MD5OfMessageSystemAttributes": ...,
+        "MessageId": ...,
+        "SequenceNumber": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageResultTypeDef(TypedDict):
+    MD5OfMessageBody: str,
+    MD5OfMessageAttributes: str,
+    MD5OfMessageSystemAttributes: str,
+    MessageId: str,
+    SequenceNumber: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMessageBatchRequestQueueDeleteMessagesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestQueueDeleteMessagesTypeDef
+
+def get_value() -> DeleteMessageBatchRequestQueueDeleteMessagesTypeDef:
+    return {
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMessageBatchRequestQueueDeleteMessagesTypeDef(TypedDict):
+    Entries: Sequence[DeleteMessageBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef) 
+## DeleteMessageBatchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestRequestTypeDef
+
+def get_value() -> DeleteMessageBatchRequestRequestTypeDef:
+    return {
+        "QueueUrl": ...,
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMessageBatchRequestRequestTypeDef(TypedDict):
+    QueueUrl: str,
+    Entries: Sequence[DeleteMessageBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef) 
+## DeleteMessageBatchResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultTypeDef
+
+def get_value() -> DeleteMessageBatchResultTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMessageBatchResultTypeDef(TypedDict):
+    Successful: List[DeleteMessageBatchResultEntryTypeDef],  # (1)
+    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DeleteMessageBatchResultEntryTypeDef](./type_defs.md#deletemessagebatchresultentrytypedef) 
+2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef
+
+def get_value() -> ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef:
+    return {
+        "QueueUrl": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef(TypedDict):
+    QueueUrl: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListQueuesRequestListQueuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ListQueuesRequestListQueuesPaginateTypeDef
+
+def get_value() -> ListQueuesRequestListQueuesPaginateTypeDef:
+    return {
+        "QueueNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueuesRequestListQueuesPaginateTypeDef(TypedDict):
+    QueueNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## MessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import MessageTypeDef
+
+def get_value() -> MessageTypeDef:
+    return {
+        "MessageId": ...,
+    }
+```
+
+```python title="Definition"
+class MessageTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    ReceiptHandle: NotRequired[str],
+    MD5OfBody: NotRequired[str],
+    Body: NotRequired[str],
+    Attributes: NotRequired[Dict[MessageSystemAttributeNameType, str]],  # (1)
+    MD5OfMessageAttributes: NotRequired[str],
+    MessageAttributes: NotRequired[Dict[str, MessageAttributeValueTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype) 
+2. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+## SendMessageBatchRequestEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageBatchRequestEntryTypeDef
+
+def get_value() -> SendMessageBatchRequestEntryTypeDef:
+    return {
+        "Id": ...,
+        "MessageBody": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageBatchRequestEntryTypeDef(TypedDict):
+    Id: str,
+    MessageBody: str,
+    DelaySeconds: NotRequired[int],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
+
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
+## SendMessageRequestQueueSendMessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageRequestQueueSendMessageTypeDef
+
+def get_value() -> SendMessageRequestQueueSendMessageTypeDef:
+    return {
+        "MessageBody": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageRequestQueueSendMessageTypeDef(TypedDict):
+    MessageBody: str,
+    DelaySeconds: NotRequired[int],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
+
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
+## SendMessageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageRequestRequestTypeDef
+
+def get_value() -> SendMessageRequestRequestTypeDef:
+    return {
+        "QueueUrl": ...,
+        "MessageBody": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageRequestRequestTypeDef(TypedDict):
+    QueueUrl: str,
+    MessageBody: str,
+    DelaySeconds: NotRequired[int],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageSystemAttributes: NotRequired[Mapping[MessageSystemAttributeNameForSendsType, MessageSystemAttributeValueTypeDef]],  # (2)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
+
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-brackets: MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype) [:material-code-braces: MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef) 
+## SendMessageBatchResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageBatchResultTypeDef
+
+def get_value() -> SendMessageBatchResultTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageBatchResultTypeDef(TypedDict):
+    Successful: List[SendMessageBatchResultEntryTypeDef],  # (1)
+    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: SendMessageBatchResultEntryTypeDef](./type_defs.md#sendmessagebatchresultentrytypedef) 
+2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReceiveMessageResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import ReceiveMessageResultTypeDef
+
+def get_value() -> ReceiveMessageResultTypeDef:
+    return {
+        "Messages": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReceiveMessageResultTypeDef(TypedDict):
+    Messages: List[MessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendMessageBatchRequestQueueSendMessagesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageBatchRequestQueueSendMessagesTypeDef
+
+def get_value() -> SendMessageBatchRequestQueueSendMessagesTypeDef:
+    return {
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageBatchRequestQueueSendMessagesTypeDef(TypedDict):
+    Entries: Sequence[SendMessageBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef) 
+## SendMessageBatchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sqs.type_defs import SendMessageBatchRequestRequestTypeDef
+
+def get_value() -> SendMessageBatchRequestRequestTypeDef:
+    return {
+        "QueueUrl": ...,
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class SendMessageBatchRequestRequestTypeDef(TypedDict):
+    QueueUrl: str,
+    Entries: Sequence[SendMessageBatchRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef) 

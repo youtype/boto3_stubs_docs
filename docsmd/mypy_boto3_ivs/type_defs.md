@@ -60,90 +60,6 @@ class BatchGetChannelRequestRequestTypeDef(TypedDict):
     arns: Sequence[str],
 ```
 
-## BatchGetChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import BatchGetChannelResponseTypeDef
-
-def get_value() -> BatchGetChannelResponseTypeDef:
-    return {
-        "channels": ...,
-        "errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetChannelResponseTypeDef(TypedDict):
-    channels: List[ChannelTypeDef],  # (1)
-    errors: List[BatchErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-2. See [:material-code-braces: BatchErrorTypeDef](./type_defs.md#batcherrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchGetStreamKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import BatchGetStreamKeyRequestRequestTypeDef
-
-def get_value() -> BatchGetStreamKeyRequestRequestTypeDef:
-    return {
-        "arns": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetStreamKeyRequestRequestTypeDef(TypedDict):
-    arns: Sequence[str],
-```
-
-## BatchGetStreamKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import BatchGetStreamKeyResponseTypeDef
-
-def get_value() -> BatchGetStreamKeyResponseTypeDef:
-    return {
-        "errors": ...,
-        "streamKeys": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetStreamKeyResponseTypeDef(TypedDict):
-    errors: List[BatchErrorTypeDef],  # (1)
-    streamKeys: List[StreamKeyTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: BatchErrorTypeDef](./type_defs.md#batcherrortypedef) 
-2. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ChannelSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ChannelSummaryTypeDef
-
-def get_value() -> ChannelSummaryTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelSummaryTypeDef(TypedDict):
-    arn: NotRequired[str],
-    authorized: NotRequired[bool],
-    latencyMode: NotRequired[ChannelLatencyModeType],  # (1)
-    name: NotRequired[str],
-    recordingConfigurationArn: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
 ## ChannelTypeDef
 
 ```python title="Usage Example"
@@ -170,6 +86,87 @@ class ChannelTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
 2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## BatchGetStreamKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import BatchGetStreamKeyRequestRequestTypeDef
+
+def get_value() -> BatchGetStreamKeyRequestRequestTypeDef:
+    return {
+        "arns": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetStreamKeyRequestRequestTypeDef(TypedDict):
+    arns: Sequence[str],
+```
+
+## StreamKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamKeyTypeDef
+
+def get_value() -> StreamKeyTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamKeyTypeDef(TypedDict):
+    arn: NotRequired[str],
+    channelArn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    value: NotRequired[str],
+```
+
+## ChannelSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ChannelSummaryTypeDef
+
+def get_value() -> ChannelSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    authorized: NotRequired[bool],
+    latencyMode: NotRequired[ChannelLatencyModeType],  # (1)
+    name: NotRequired[str],
+    recordingConfigurationArn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
 ## CreateChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -193,70 +190,24 @@ class CreateChannelRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
 2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
-## CreateChannelResponseTypeDef
+## ThumbnailConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import CreateChannelResponseTypeDef
+from mypy_boto3_ivs.type_defs import ThumbnailConfigurationTypeDef
 
-def get_value() -> CreateChannelResponseTypeDef:
+def get_value() -> ThumbnailConfigurationTypeDef:
     return {
-        "channel": ...,
-        "streamKey": ...,
-        "ResponseMetadata": ...,
+        "recordingMode": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateChannelResponseTypeDef(TypedDict):
-    channel: ChannelTypeDef,  # (1)
-    streamKey: StreamKeyTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ThumbnailConfigurationTypeDef(TypedDict):
+    recordingMode: NotRequired[RecordingModeType],  # (1)
+    targetIntervalSeconds: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-2. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateRecordingConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import CreateRecordingConfigurationRequestRequestTypeDef
-
-def get_value() -> CreateRecordingConfigurationRequestRequestTypeDef:
-    return {
-        "destinationConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRecordingConfigurationRequestRequestTypeDef(TypedDict):
-    destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
-    name: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-    thumbnailConfiguration: NotRequired[ThumbnailConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
-2. See [:material-code-braces: ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef) 
-## CreateRecordingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import CreateRecordingConfigurationResponseTypeDef
-
-def get_value() -> CreateRecordingConfigurationResponseTypeDef:
-    return {
-        "recordingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRecordingConfigurationResponseTypeDef(TypedDict):
-    recordingConfiguration: RecordingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: RecordingModeType](./literals.md#recordingmodetype) 
 ## CreateStreamKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -274,26 +225,6 @@ class CreateStreamKeyRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateStreamKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import CreateStreamKeyResponseTypeDef
-
-def get_value() -> CreateStreamKeyResponseTypeDef:
-    return {
-        "streamKey": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamKeyResponseTypeDef(TypedDict):
-    streamKey: StreamKeyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -358,23 +289,22 @@ class DeleteStreamKeyRequestRequestTypeDef(TypedDict):
     arn: str,
 ```
 
-## DestinationConfigurationTypeDef
+## S3DestinationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import DestinationConfigurationTypeDef
+from mypy_boto3_ivs.type_defs import S3DestinationConfigurationTypeDef
 
-def get_value() -> DestinationConfigurationTypeDef:
+def get_value() -> S3DestinationConfigurationTypeDef:
     return {
-        "s3": ...,
+        "bucketName": ...,
     }
 ```
 
 ```python title="Definition"
-class DestinationConfigurationTypeDef(TypedDict):
-    s3: NotRequired[S3DestinationConfigurationTypeDef],  # (1)
+class S3DestinationConfigurationTypeDef(TypedDict):
+    bucketName: str,
 ```
 
-1. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
 ## GetChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -391,6 +321,523 @@ class GetChannelRequestRequestTypeDef(TypedDict):
     arn: str,
 ```
 
+## GetPlaybackKeyPairRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairRequestRequestTypeDef
+
+def get_value() -> GetPlaybackKeyPairRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class GetPlaybackKeyPairRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
+
+## PlaybackKeyPairTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import PlaybackKeyPairTypeDef
+
+def get_value() -> PlaybackKeyPairTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class PlaybackKeyPairTypeDef(TypedDict):
+    arn: NotRequired[str],
+    fingerprint: NotRequired[str],
+    name: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+## GetRecordingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetRecordingConfigurationRequestRequestTypeDef
+
+def get_value() -> GetRecordingConfigurationRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecordingConfigurationRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
+
+## GetStreamKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetStreamKeyRequestRequestTypeDef
+
+def get_value() -> GetStreamKeyRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamKeyRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
+
+## GetStreamRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetStreamRequestRequestTypeDef
+
+def get_value() -> GetStreamRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+```
+
+## StreamTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamTypeDef
+
+def get_value() -> StreamTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamTypeDef(TypedDict):
+    channelArn: NotRequired[str],
+    health: NotRequired[StreamHealthType],  # (1)
+    playbackUrl: NotRequired[str],
+    startTime: NotRequired[datetime],
+    state: NotRequired[StreamStateType],  # (2)
+    streamId: NotRequired[str],
+    viewerCount: NotRequired[int],
+```
+
+1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
+2. See [:material-code-brackets: StreamStateType](./literals.md#streamstatetype) 
+## GetStreamSessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetStreamSessionRequestRequestTypeDef
+
+def get_value() -> GetStreamSessionRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamSessionRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+    streamId: NotRequired[str],
+```
+
+## ImportPlaybackKeyPairRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ImportPlaybackKeyPairRequestRequestTypeDef
+
+def get_value() -> ImportPlaybackKeyPairRequestRequestTypeDef:
+    return {
+        "publicKeyMaterial": ...,
+    }
+```
+
+```python title="Definition"
+class ImportPlaybackKeyPairRequestRequestTypeDef(TypedDict):
+    publicKeyMaterial: str,
+    name: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## VideoConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import VideoConfigurationTypeDef
+
+def get_value() -> VideoConfigurationTypeDef:
+    return {
+        "avcLevel": ...,
+    }
+```
+
+```python title="Definition"
+class VideoConfigurationTypeDef(TypedDict):
+    avcLevel: NotRequired[str],
+    avcProfile: NotRequired[str],
+    codec: NotRequired[str],
+    encoder: NotRequired[str],
+    targetBitrate: NotRequired[int],
+    targetFramerate: NotRequired[int],
+    videoHeight: NotRequired[int],
+    videoWidth: NotRequired[int],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListChannelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "filterByName": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    filterByName: NotRequired[str],
+    filterByRecordingConfigurationArn: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListPlaybackKeyPairsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListPlaybackKeyPairsRequestRequestTypeDef
+
+def get_value() -> ListPlaybackKeyPairsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlaybackKeyPairsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## PlaybackKeyPairSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import PlaybackKeyPairSummaryTypeDef
+
+def get_value() -> PlaybackKeyPairSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class PlaybackKeyPairSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+## ListRecordingConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListRecordingConfigurationsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecordingConfigurationsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListStreamKeysRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListStreamKeysRequestRequestTypeDef
+
+def get_value() -> ListStreamKeysRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamKeysRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## StreamKeySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamKeySummaryTypeDef
+
+def get_value() -> StreamKeySummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamKeySummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    channelArn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+## ListStreamSessionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListStreamSessionsRequestRequestTypeDef
+
+def get_value() -> ListStreamSessionsRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamSessionsRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## StreamSessionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamSessionSummaryTypeDef
+
+def get_value() -> StreamSessionSummaryTypeDef:
+    return {
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class StreamSessionSummaryTypeDef(TypedDict):
+    endTime: NotRequired[datetime],
+    hasErrorEvent: NotRequired[bool],
+    startTime: NotRequired[datetime],
+    streamId: NotRequired[str],
+```
+
+## StreamFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamFiltersTypeDef
+
+def get_value() -> StreamFiltersTypeDef:
+    return {
+        "health": ...,
+    }
+```
+
+```python title="Definition"
+class StreamFiltersTypeDef(TypedDict):
+    health: NotRequired[StreamHealthType],  # (1)
+```
+
+1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
+## StreamSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamSummaryTypeDef
+
+def get_value() -> StreamSummaryTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamSummaryTypeDef(TypedDict):
+    channelArn: NotRequired[str],
+    health: NotRequired[StreamHealthType],  # (1)
+    startTime: NotRequired[datetime],
+    state: NotRequired[StreamStateType],  # (2)
+    streamId: NotRequired[str],
+    viewerCount: NotRequired[int],
+```
+
+1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
+2. See [:material-code-brackets: StreamStateType](./literals.md#streamstatetype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## PutMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import PutMetadataRequestRequestTypeDef
+
+def get_value() -> PutMetadataRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+        "metadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetadataRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+    metadata: str,
+```
+
+## StopStreamRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StopStreamRequestRequestTypeDef
+
+def get_value() -> StopStreamRequestRequestTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class StopStreamRequestRequestTypeDef(TypedDict):
+    channelArn: str,
+```
+
+## StreamEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import StreamEventTypeDef
+
+def get_value() -> StreamEventTypeDef:
+    return {
+        "eventTime": ...,
+    }
+```
+
+```python title="Definition"
+class StreamEventTypeDef(TypedDict):
+    eventTime: NotRequired[datetime],
+    name: NotRequired[str],
+    type: NotRequired[str],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    arn: str,
+    authorized: NotRequired[bool],
+    latencyMode: NotRequired[ChannelLatencyModeType],  # (1)
+    name: NotRequired[str],
+    recordingConfigurationArn: NotRequired[str],
+    type: NotRequired[ChannelTypeType],  # (2)
+```
+
+1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
+2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+## BatchGetChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import BatchGetChannelResponseTypeDef
+
+def get_value() -> BatchGetChannelResponseTypeDef:
+    return {
+        "channels": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetChannelResponseTypeDef(TypedDict):
+    channels: List[ChannelTypeDef],  # (1)
+    errors: List[BatchErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: BatchErrorTypeDef](./type_defs.md#batcherrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChannelResponseTypeDef
 
 ```python title="Usage Example"
@@ -411,94 +858,111 @@ class GetChannelResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetPlaybackKeyPairRequestRequestTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import ListTagsForResourceResponseTypeDef
 
-def get_value() -> GetPlaybackKeyPairRequestRequestTypeDef:
+def get_value() -> ListTagsForResourceResponseTypeDef:
     return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class GetPlaybackKeyPairRequestRequestTypeDef(TypedDict):
-    arn: str,
-```
-
-## GetPlaybackKeyPairResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairResponseTypeDef
-
-def get_value() -> GetPlaybackKeyPairResponseTypeDef:
-    return {
-        "keyPair": ...,
+        "tags": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetPlaybackKeyPairResponseTypeDef(TypedDict):
-    keyPair: PlaybackKeyPairTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: PlaybackKeyPairTypeDef](./type_defs.md#playbackkeypairtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRecordingConfigurationRequestRequestTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateChannelResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetRecordingConfigurationRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import UpdateChannelResponseTypeDef
 
-def get_value() -> GetRecordingConfigurationRequestRequestTypeDef:
+def get_value() -> UpdateChannelResponseTypeDef:
     return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class GetRecordingConfigurationRequestRequestTypeDef(TypedDict):
-    arn: str,
-```
-
-## GetRecordingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetRecordingConfigurationResponseTypeDef
-
-def get_value() -> GetRecordingConfigurationResponseTypeDef:
-    return {
-        "recordingConfiguration": ...,
+        "channel": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetRecordingConfigurationResponseTypeDef(TypedDict):
-    recordingConfiguration: RecordingConfigurationTypeDef,  # (1)
+class UpdateChannelResponseTypeDef(TypedDict):
+    channel: ChannelTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef) 
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetStreamKeyRequestRequestTypeDef
+## BatchGetStreamKeyResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetStreamKeyRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import BatchGetStreamKeyResponseTypeDef
 
-def get_value() -> GetStreamKeyRequestRequestTypeDef:
+def get_value() -> BatchGetStreamKeyResponseTypeDef:
     return {
-        "arn": ...,
+        "errors": ...,
+        "streamKeys": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStreamKeyRequestRequestTypeDef(TypedDict):
-    arn: str,
+class BatchGetStreamKeyResponseTypeDef(TypedDict):
+    errors: List[BatchErrorTypeDef],  # (1)
+    streamKeys: List[StreamKeyTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
+1. See [:material-code-braces: BatchErrorTypeDef](./type_defs.md#batcherrortypedef) 
+2. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "channel": ...,
+        "streamKey": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    channel: ChannelTypeDef,  # (1)
+    streamKey: StreamKeyTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStreamKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import CreateStreamKeyResponseTypeDef
+
+def get_value() -> CreateStreamKeyResponseTypeDef:
+    return {
+        "streamKey": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStreamKeyResponseTypeDef(TypedDict):
+    streamKey: StreamKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStreamKeyResponseTypeDef
 
 ```python title="Usage Example"
@@ -519,97 +983,65 @@ class GetStreamKeyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StreamKeyTypeDef](./type_defs.md#streamkeytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetStreamRequestRequestTypeDef
+## ListChannelsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetStreamRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import ListChannelsResponseTypeDef
 
-def get_value() -> GetStreamRequestRequestTypeDef:
+def get_value() -> ListChannelsResponseTypeDef:
     return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class GetStreamRequestRequestTypeDef(TypedDict):
-    channelArn: str,
-```
-
-## GetStreamResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetStreamResponseTypeDef
-
-def get_value() -> GetStreamResponseTypeDef:
-    return {
-        "stream": ...,
+        "channels": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStreamResponseTypeDef(TypedDict):
-    stream: StreamTypeDef,  # (1)
+class ListChannelsResponseTypeDef(TypedDict):
+    channels: List[ChannelSummaryTypeDef],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StreamTypeDef](./type_defs.md#streamtypedef) 
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetStreamSessionRequestRequestTypeDef
+## DestinationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetStreamSessionRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import DestinationConfigurationTypeDef
 
-def get_value() -> GetStreamSessionRequestRequestTypeDef:
+def get_value() -> DestinationConfigurationTypeDef:
     return {
-        "channelArn": ...,
+        "s3": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStreamSessionRequestRequestTypeDef(TypedDict):
-    channelArn: str,
-    streamId: NotRequired[str],
+class DestinationConfigurationTypeDef(TypedDict):
+    s3: NotRequired[S3DestinationConfigurationTypeDef],  # (1)
 ```
 
-## GetStreamSessionResponseTypeDef
+1. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+## GetPlaybackKeyPairResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import GetStreamSessionResponseTypeDef
+from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairResponseTypeDef
 
-def get_value() -> GetStreamSessionResponseTypeDef:
+def get_value() -> GetPlaybackKeyPairResponseTypeDef:
     return {
-        "streamSession": ...,
+        "keyPair": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStreamSessionResponseTypeDef(TypedDict):
-    streamSession: StreamSessionTypeDef,  # (1)
+class GetPlaybackKeyPairResponseTypeDef(TypedDict):
+    keyPair: PlaybackKeyPairTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StreamSessionTypeDef](./type_defs.md#streamsessiontypedef) 
+1. See [:material-code-braces: PlaybackKeyPairTypeDef](./type_defs.md#playbackkeypairtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ImportPlaybackKeyPairRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ImportPlaybackKeyPairRequestRequestTypeDef
-
-def get_value() -> ImportPlaybackKeyPairRequestRequestTypeDef:
-    return {
-        "publicKeyMaterial": ...,
-    }
-```
-
-```python title="Definition"
-class ImportPlaybackKeyPairRequestRequestTypeDef(TypedDict):
-    publicKeyMaterial: str,
-    name: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
 ## ImportPlaybackKeyPairResponseTypeDef
 
 ```python title="Usage Example"
@@ -629,6 +1061,26 @@ class ImportPlaybackKeyPairResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PlaybackKeyPairTypeDef](./type_defs.md#playbackkeypairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetStreamResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import GetStreamResponseTypeDef
+
+def get_value() -> GetStreamResponseTypeDef:
+    return {
+        "stream": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamResponseTypeDef(TypedDict):
+    stream: StreamTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamTypeDef](./type_defs.md#streamtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IngestConfigurationTypeDef
 
@@ -668,47 +1120,6 @@ class ListChannelsRequestListChannelsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListChannelsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListChannelsRequestRequestTypeDef
-
-def get_value() -> ListChannelsRequestRequestTypeDef:
-    return {
-        "filterByName": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsRequestRequestTypeDef(TypedDict):
-    filterByName: NotRequired[str],
-    filterByRecordingConfigurationArn: NotRequired[str],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListChannelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListChannelsResponseTypeDef
-
-def get_value() -> ListChannelsResponseTypeDef:
-    return {
-        "channels": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsResponseTypeDef(TypedDict):
-    channels: List[ChannelSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPlaybackKeyPairsRequestListPlaybackKeyPairsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -726,23 +1137,41 @@ class ListPlaybackKeyPairsRequestListPlaybackKeyPairsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListPlaybackKeyPairsRequestRequestTypeDef
+## ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListPlaybackKeyPairsRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef
 
-def get_value() -> ListPlaybackKeyPairsRequestRequestTypeDef:
+def get_value() -> ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef:
     return {
-        "maxResults": ...,
+        "PaginationConfig": ...,
     }
 ```
 
 ```python title="Definition"
-class ListPlaybackKeyPairsRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
+class ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStreamKeysRequestListStreamKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ivs.type_defs import ListStreamKeysRequestListStreamKeysPaginateTypeDef
+
+def get_value() -> ListStreamKeysRequestListStreamKeysPaginateTypeDef:
+    return {
+        "channelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamKeysRequestListStreamKeysPaginateTypeDef(TypedDict):
+    channelArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlaybackKeyPairsResponseTypeDef
 
 ```python title="Usage Example"
@@ -765,98 +1194,6 @@ class ListPlaybackKeyPairsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PlaybackKeyPairSummaryTypeDef](./type_defs.md#playbackkeypairsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef
-
-def get_value() -> ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListRecordingConfigurationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsRequestRequestTypeDef
-
-def get_value() -> ListRecordingConfigurationsRequestRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordingConfigurationsRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListRecordingConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsResponseTypeDef
-
-def get_value() -> ListRecordingConfigurationsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "recordingConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordingConfigurationsResponseTypeDef(TypedDict):
-    nextToken: str,
-    recordingConfigurations: List[RecordingConfigurationSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordingConfigurationSummaryTypeDef](./type_defs.md#recordingconfigurationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStreamKeysRequestListStreamKeysPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListStreamKeysRequestListStreamKeysPaginateTypeDef
-
-def get_value() -> ListStreamKeysRequestListStreamKeysPaginateTypeDef:
-    return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamKeysRequestListStreamKeysPaginateTypeDef(TypedDict):
-    channelArn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListStreamKeysRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListStreamKeysRequestRequestTypeDef
-
-def get_value() -> ListStreamKeysRequestRequestTypeDef:
-    return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamKeysRequestRequestTypeDef(TypedDict):
-    channelArn: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
 ## ListStreamKeysResponseTypeDef
 
 ```python title="Usage Example"
@@ -879,24 +1216,6 @@ class ListStreamKeysResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StreamKeySummaryTypeDef](./type_defs.md#streamkeysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStreamSessionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListStreamSessionsRequestRequestTypeDef
-
-def get_value() -> ListStreamSessionsRequestRequestTypeDef:
-    return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamSessionsRequestRequestTypeDef(TypedDict):
-    channelArn: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
 ## ListStreamSessionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -979,114 +1298,27 @@ class ListStreamsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
+## CreateRecordingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListTagsForResourceRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import CreateRecordingConfigurationRequestRequestTypeDef
 
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+def get_value() -> CreateRecordingConfigurationRequestRequestTypeDef:
     return {
-        "resourceArn": ...,
+        "destinationConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PlaybackKeyPairSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import PlaybackKeyPairSummaryTypeDef
-
-def get_value() -> PlaybackKeyPairSummaryTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class PlaybackKeyPairSummaryTypeDef(TypedDict):
-    arn: NotRequired[str],
+class CreateRecordingConfigurationRequestRequestTypeDef(TypedDict):
+    destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
     name: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
+    tags: NotRequired[Mapping[str, str]],
+    thumbnailConfiguration: NotRequired[ThumbnailConfigurationTypeDef],  # (2)
 ```
 
-## PlaybackKeyPairTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import PlaybackKeyPairTypeDef
-
-def get_value() -> PlaybackKeyPairTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class PlaybackKeyPairTypeDef(TypedDict):
-    arn: NotRequired[str],
-    fingerprint: NotRequired[str],
-    name: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-## PutMetadataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import PutMetadataRequestRequestTypeDef
-
-def get_value() -> PutMetadataRequestRequestTypeDef:
-    return {
-        "channelArn": ...,
-        "metadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutMetadataRequestRequestTypeDef(TypedDict):
-    channelArn: str,
-    metadata: str,
-```
-
+1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
+2. See [:material-code-braces: ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef) 
 ## RecordingConfigurationSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1137,153 +1369,68 @@ class RecordingConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
 2. See [:material-code-brackets: RecordingConfigurationStateType](./literals.md#recordingconfigurationstatetype) 
 3. See [:material-code-braces: ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef) 
-## ResponseMetadataTypeDef
+## ListRecordingConfigurationsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> ListRecordingConfigurationsResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "nextToken": ...,
+        "recordingConfigurations": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class ListRecordingConfigurationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    recordingConfigurations: List[RecordingConfigurationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## S3DestinationConfigurationTypeDef
+1. See [:material-code-braces: RecordingConfigurationSummaryTypeDef](./type_defs.md#recordingconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRecordingConfigurationResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import S3DestinationConfigurationTypeDef
+from mypy_boto3_ivs.type_defs import CreateRecordingConfigurationResponseTypeDef
 
-def get_value() -> S3DestinationConfigurationTypeDef:
+def get_value() -> CreateRecordingConfigurationResponseTypeDef:
     return {
-        "bucketName": ...,
+        "recordingConfiguration": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class S3DestinationConfigurationTypeDef(TypedDict):
-    bucketName: str,
+class CreateRecordingConfigurationResponseTypeDef(TypedDict):
+    recordingConfiguration: RecordingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## StopStreamRequestRequestTypeDef
+1. See [:material-code-braces: RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRecordingConfigurationResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StopStreamRequestRequestTypeDef
+from mypy_boto3_ivs.type_defs import GetRecordingConfigurationResponseTypeDef
 
-def get_value() -> StopStreamRequestRequestTypeDef:
+def get_value() -> GetRecordingConfigurationResponseTypeDef:
     return {
-        "channelArn": ...,
+        "recordingConfiguration": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StopStreamRequestRequestTypeDef(TypedDict):
-    channelArn: str,
+class GetRecordingConfigurationResponseTypeDef(TypedDict):
+    recordingConfiguration: RecordingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## StreamEventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamEventTypeDef
-
-def get_value() -> StreamEventTypeDef:
-    return {
-        "eventTime": ...,
-    }
-```
-
-```python title="Definition"
-class StreamEventTypeDef(TypedDict):
-    eventTime: NotRequired[datetime],
-    name: NotRequired[str],
-    type: NotRequired[str],
-```
-
-## StreamFiltersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamFiltersTypeDef
-
-def get_value() -> StreamFiltersTypeDef:
-    return {
-        "health": ...,
-    }
-```
-
-```python title="Definition"
-class StreamFiltersTypeDef(TypedDict):
-    health: NotRequired[StreamHealthType],  # (1)
-```
-
-1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
-## StreamKeySummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamKeySummaryTypeDef
-
-def get_value() -> StreamKeySummaryTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class StreamKeySummaryTypeDef(TypedDict):
-    arn: NotRequired[str],
-    channelArn: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-## StreamKeyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamKeyTypeDef
-
-def get_value() -> StreamKeyTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class StreamKeyTypeDef(TypedDict):
-    arn: NotRequired[str],
-    channelArn: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-    value: NotRequired[str],
-```
-
-## StreamSessionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamSessionSummaryTypeDef
-
-def get_value() -> StreamSessionSummaryTypeDef:
-    return {
-        "endTime": ...,
-    }
-```
-
-```python title="Definition"
-class StreamSessionSummaryTypeDef(TypedDict):
-    endTime: NotRequired[datetime],
-    hasErrorEvent: NotRequired[bool],
-    startTime: NotRequired[datetime],
-    streamId: NotRequired[str],
-```
-
+1. See [:material-code-braces: RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StreamSessionTypeDef
 
 ```python title="Usage Example"
@@ -1310,170 +1457,23 @@ class StreamSessionTypeDef(TypedDict):
 2. See [:material-code-braces: IngestConfigurationTypeDef](./type_defs.md#ingestconfigurationtypedef) 
 3. See [:material-code-braces: RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef) 
 4. See [:material-code-braces: StreamEventTypeDef](./type_defs.md#streameventtypedef) 
-## StreamSummaryTypeDef
+## GetStreamSessionResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamSummaryTypeDef
+from mypy_boto3_ivs.type_defs import GetStreamSessionResponseTypeDef
 
-def get_value() -> StreamSummaryTypeDef:
+def get_value() -> GetStreamSessionResponseTypeDef:
     return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class StreamSummaryTypeDef(TypedDict):
-    channelArn: NotRequired[str],
-    health: NotRequired[StreamHealthType],  # (1)
-    startTime: NotRequired[datetime],
-    state: NotRequired[StreamStateType],  # (2)
-    streamId: NotRequired[str],
-    viewerCount: NotRequired[int],
-```
-
-1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
-2. See [:material-code-brackets: StreamStateType](./literals.md#streamstatetype) 
-## StreamTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import StreamTypeDef
-
-def get_value() -> StreamTypeDef:
-    return {
-        "channelArn": ...,
-    }
-```
-
-```python title="Definition"
-class StreamTypeDef(TypedDict):
-    channelArn: NotRequired[str],
-    health: NotRequired[StreamHealthType],  # (1)
-    playbackUrl: NotRequired[str],
-    startTime: NotRequired[datetime],
-    state: NotRequired[StreamStateType],  # (2)
-    streamId: NotRequired[str],
-    viewerCount: NotRequired[int],
-```
-
-1. See [:material-code-brackets: StreamHealthType](./literals.md#streamhealthtype) 
-2. See [:material-code-brackets: StreamStateType](./literals.md#streamstatetype) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## ThumbnailConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import ThumbnailConfigurationTypeDef
-
-def get_value() -> ThumbnailConfigurationTypeDef:
-    return {
-        "recordingMode": ...,
-    }
-```
-
-```python title="Definition"
-class ThumbnailConfigurationTypeDef(TypedDict):
-    recordingMode: NotRequired[RecordingModeType],  # (1)
-    targetIntervalSeconds: NotRequired[int],
-```
-
-1. See [:material-code-brackets: RecordingModeType](./literals.md#recordingmodetype) 
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateChannelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import UpdateChannelRequestRequestTypeDef
-
-def get_value() -> UpdateChannelRequestRequestTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateChannelRequestRequestTypeDef(TypedDict):
-    arn: str,
-    authorized: NotRequired[bool],
-    latencyMode: NotRequired[ChannelLatencyModeType],  # (1)
-    name: NotRequired[str],
-    recordingConfigurationArn: NotRequired[str],
-    type: NotRequired[ChannelTypeType],  # (2)
-```
-
-1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
-2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
-## UpdateChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import UpdateChannelResponseTypeDef
-
-def get_value() -> UpdateChannelResponseTypeDef:
-    return {
-        "channel": ...,
+        "streamSession": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateChannelResponseTypeDef(TypedDict):
-    channel: ChannelTypeDef,  # (1)
+class GetStreamSessionResponseTypeDef(TypedDict):
+    streamSession: StreamSessionTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+1. See [:material-code-braces: StreamSessionTypeDef](./type_defs.md#streamsessiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VideoConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ivs.type_defs import VideoConfigurationTypeDef
-
-def get_value() -> VideoConfigurationTypeDef:
-    return {
-        "avcLevel": ...,
-    }
-```
-
-```python title="Definition"
-class VideoConfigurationTypeDef(TypedDict):
-    avcLevel: NotRequired[str],
-    avcProfile: NotRequired[str],
-    codec: NotRequired[str],
-    encoder: NotRequired[str],
-    targetBitrate: NotRequired[int],
-    targetFramerate: NotRequired[int],
-    videoHeight: NotRequired[int],
-    videoWidth: NotRequired[int],
-```
-

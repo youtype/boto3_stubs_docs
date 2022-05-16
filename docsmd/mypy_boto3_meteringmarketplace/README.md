@@ -93,26 +93,29 @@ def get_value() -> UsageRecordResultStatusType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestRequestTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BatchMeterUsageRequestRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "UsageRecords": ...,
-        "ProductCode": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
-- [BatchMeterUsageRequestRequestTypeDef](./type_defs.md#batchmeterusagerequestrequesttypedef)
-- [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef)
-- [MeterUsageRequestRequestTypeDef](./type_defs.md#meterusagerequestrequesttypedef)
-- [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef)
-- [RegisterUsageRequestRequestTypeDef](./type_defs.md#registerusagerequestrequesttypedef)
-- [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef)
-- [ResolveCustomerRequestRequestTypeDef](./type_defs.md#resolvecustomerrequestrequesttypedef)
-- [ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RegisterUsageRequestRequestTypeDef](./type_defs.md#registerusagerequestrequesttypedef)
+- [ResolveCustomerRequestRequestTypeDef](./type_defs.md#resolvecustomerrequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
+- [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef)
+- [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef)
+- [ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef)
 - [UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)
-- [UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)
+- [MeterUsageRequestRequestTypeDef](./type_defs.md#meterusagerequestrequesttypedef)
 - [UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)
+- [BatchMeterUsageRequestRequestTypeDef](./type_defs.md#batchmeterusagerequestrequesttypedef)
+- [UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)
+- [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef)
 

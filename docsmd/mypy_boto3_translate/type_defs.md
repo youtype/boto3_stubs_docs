@@ -7,70 +7,85 @@
     Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
     type annotations stubs module [mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
-## AppliedTerminologyTypeDef
+## TermTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef
+from mypy_boto3_translate.type_defs import TermTypeDef
 
-def get_value() -> AppliedTerminologyTypeDef:
+def get_value() -> TermTypeDef:
     return {
-        "Name": ...,
+        "SourceText": ...,
     }
 ```
 
 ```python title="Definition"
-class AppliedTerminologyTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Terms: NotRequired[List[TermTypeDef]],  # (1)
+class TermTypeDef(TypedDict):
+    SourceText: NotRequired[str],
+    TargetText: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TermTypeDef](./type_defs.md#termtypedef) 
-## CreateParallelDataRequestRequestTypeDef
+## EncryptionKeyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
+from mypy_boto3_translate.type_defs import EncryptionKeyTypeDef
 
-def get_value() -> CreateParallelDataRequestRequestTypeDef:
+def get_value() -> EncryptionKeyTypeDef:
     return {
-        "Name": ...,
-        "ParallelDataConfig": ...,
-        "ClientToken": ...,
+        "Type": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateParallelDataRequestRequestTypeDef(TypedDict):
-    Name: str,
-    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
-    ClientToken: str,
-    Description: NotRequired[str],
-    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (2)
+class EncryptionKeyTypeDef(TypedDict):
+    Type: EncryptionKeyTypeType,  # (1)
+    Id: str,
 ```
 
-1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
-2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
-## CreateParallelDataResponseTypeDef
+1. See [:material-code-brackets: EncryptionKeyTypeType](./literals.md#encryptionkeytypetype) 
+## ParallelDataConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
+from mypy_boto3_translate.type_defs import ParallelDataConfigTypeDef
 
-def get_value() -> CreateParallelDataResponseTypeDef:
+def get_value() -> ParallelDataConfigTypeDef:
     return {
-        "Name": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "S3Uri": ...,
+        "Format": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateParallelDataResponseTypeDef(TypedDict):
-    Name: str,
-    Status: ParallelDataStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ParallelDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+    Format: ParallelDataFormatType,  # (1)
 ```
 
-1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ParallelDataFormatType](./literals.md#paralleldataformattype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## DeleteParallelDataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -87,28 +102,6 @@ class DeleteParallelDataRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## DeleteParallelDataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import DeleteParallelDataResponseTypeDef
-
-def get_value() -> DeleteParallelDataResponseTypeDef:
-    return {
-        "Name": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteParallelDataResponseTypeDef(TypedDict):
-    Name: str,
-    Status: ParallelDataStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTerminologyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -141,45 +134,6 @@ class DescribeTextTranslationJobRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
-## DescribeTextTranslationJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import DescribeTextTranslationJobResponseTypeDef
-
-def get_value() -> DescribeTextTranslationJobResponseTypeDef:
-    return {
-        "TextTranslationJobProperties": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTextTranslationJobResponseTypeDef(TypedDict):
-    TextTranslationJobProperties: TextTranslationJobPropertiesTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EncryptionKeyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import EncryptionKeyTypeDef
-
-def get_value() -> EncryptionKeyTypeDef:
-    return {
-        "Type": ...,
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class EncryptionKeyTypeDef(TypedDict):
-    Type: EncryptionKeyTypeType,  # (1)
-    Id: str,
-```
-
-1. See [:material-code-brackets: EncryptionKeyTypeType](./literals.md#encryptionkeytypetype) 
 ## GetParallelDataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -196,35 +150,24 @@ class GetParallelDataRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetParallelDataResponseTypeDef
+## ParallelDataDataLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import GetParallelDataResponseTypeDef
+from mypy_boto3_translate.type_defs import ParallelDataDataLocationTypeDef
 
-def get_value() -> GetParallelDataResponseTypeDef:
+def get_value() -> ParallelDataDataLocationTypeDef:
     return {
-        "ParallelDataProperties": ...,
-        "DataLocation": ...,
-        "AuxiliaryDataLocation": ...,
-        "LatestUpdateAttemptAuxiliaryDataLocation": ...,
-        "ResponseMetadata": ...,
+        "RepositoryType": ...,
+        "Location": ...,
     }
 ```
 
 ```python title="Definition"
-class GetParallelDataResponseTypeDef(TypedDict):
-    ParallelDataProperties: ParallelDataPropertiesTypeDef,  # (1)
-    DataLocation: ParallelDataDataLocationTypeDef,  # (2)
-    AuxiliaryDataLocation: ParallelDataDataLocationTypeDef,  # (2)
-    LatestUpdateAttemptAuxiliaryDataLocation: ParallelDataDataLocationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class ParallelDataDataLocationTypeDef(TypedDict):
+    RepositoryType: str,
+    Location: str,
 ```
 
-1. See [:material-code-braces: ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef) 
-2. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
-3. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
-4. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTerminologyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -243,80 +186,45 @@ class GetTerminologyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
-## GetTerminologyResponseTypeDef
+## TerminologyDataLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import GetTerminologyResponseTypeDef
+from mypy_boto3_translate.type_defs import TerminologyDataLocationTypeDef
 
-def get_value() -> GetTerminologyResponseTypeDef:
+def get_value() -> TerminologyDataLocationTypeDef:
     return {
-        "TerminologyProperties": ...,
-        "TerminologyDataLocation": ...,
-        "AuxiliaryDataLocation": ...,
-        "ResponseMetadata": ...,
+        "RepositoryType": ...,
+        "Location": ...,
     }
 ```
 
 ```python title="Definition"
-class GetTerminologyResponseTypeDef(TypedDict):
-    TerminologyProperties: TerminologyPropertiesTypeDef,  # (1)
-    TerminologyDataLocation: TerminologyDataLocationTypeDef,  # (2)
-    AuxiliaryDataLocation: TerminologyDataLocationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+class TerminologyDataLocationTypeDef(TypedDict):
+    RepositoryType: str,
+    Location: str,
 ```
 
-1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
-2. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
-3. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ImportTerminologyRequestRequestTypeDef
+## TerminologyDataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ImportTerminologyRequestRequestTypeDef
+from mypy_boto3_translate.type_defs import TerminologyDataTypeDef
 
-def get_value() -> ImportTerminologyRequestRequestTypeDef:
+def get_value() -> TerminologyDataTypeDef:
     return {
-        "Name": ...,
-        "MergeStrategy": ...,
-        "TerminologyData": ...,
+        "File": ...,
+        "Format": ...,
     }
 ```
 
 ```python title="Definition"
-class ImportTerminologyRequestRequestTypeDef(TypedDict):
-    Name: str,
-    MergeStrategy: MergeStrategyType,  # (1)
-    TerminologyData: TerminologyDataTypeDef,  # (2)
-    Description: NotRequired[str],
-    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (3)
+class TerminologyDataTypeDef(TypedDict):
+    File: Union[str, bytes, IO[Any], StreamingBody],
+    Format: TerminologyDataFormatType,  # (1)
+    Directionality: NotRequired[DirectionalityType],  # (2)
 ```
 
-1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
-2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
-3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
-## ImportTerminologyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ImportTerminologyResponseTypeDef
-
-def get_value() -> ImportTerminologyResponseTypeDef:
-    return {
-        "TerminologyProperties": ...,
-        "AuxiliaryDataLocation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportTerminologyResponseTypeDef(TypedDict):
-    TerminologyProperties: TerminologyPropertiesTypeDef,  # (1)
-    AuxiliaryDataLocation: TerminologyDataLocationTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
-2. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
+2. See [:material-code-brackets: DirectionalityType](./literals.md#directionalitytype) 
 ## InputDataConfigTypeDef
 
 ```python title="Usage Example"
@@ -370,143 +278,6 @@ class ListParallelDataRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListParallelDataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListParallelDataResponseTypeDef
-
-def get_value() -> ListParallelDataResponseTypeDef:
-    return {
-        "ParallelDataPropertiesList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListParallelDataResponseTypeDef(TypedDict):
-    ParallelDataPropertiesList: List[ParallelDataPropertiesTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTerminologiesRequestListTerminologiesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListTerminologiesRequestListTerminologiesPaginateTypeDef
-
-def get_value() -> ListTerminologiesRequestListTerminologiesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListTerminologiesRequestListTerminologiesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTerminologiesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListTerminologiesRequestRequestTypeDef
-
-def get_value() -> ListTerminologiesRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListTerminologiesRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListTerminologiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
-
-def get_value() -> ListTerminologiesResponseTypeDef:
-    return {
-        "TerminologyPropertiesList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTerminologiesResponseTypeDef(TypedDict):
-    TerminologyPropertiesList: List[TerminologyPropertiesTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTextTranslationJobsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListTextTranslationJobsRequestRequestTypeDef
-
-def get_value() -> ListTextTranslationJobsRequestRequestTypeDef:
-    return {
-        "Filter": ...,
-    }
-```
-
-```python title="Definition"
-class ListTextTranslationJobsRequestRequestTypeDef(TypedDict):
-    Filter: NotRequired[TextTranslationJobFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-1. See [:material-code-braces: TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef) 
-## ListTextTranslationJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ListTextTranslationJobsResponseTypeDef
-
-def get_value() -> ListTextTranslationJobsResponseTypeDef:
-    return {
-        "TextTranslationJobPropertiesList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTextTranslationJobsResponseTypeDef(TypedDict):
-    TextTranslationJobPropertiesList: List[TextTranslationJobPropertiesTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## OutputDataConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import OutputDataConfigTypeDef
-
-def get_value() -> OutputDataConfigTypeDef:
-    return {
-        "S3Uri": ...,
-    }
-```
-
-```python title="Definition"
-class OutputDataConfigTypeDef(TypedDict):
-    S3Uri: str,
-    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -525,43 +296,170 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
-## ParallelDataConfigTypeDef
+## ListTerminologiesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ParallelDataConfigTypeDef
+from mypy_boto3_translate.type_defs import ListTerminologiesRequestRequestTypeDef
 
-def get_value() -> ParallelDataConfigTypeDef:
+def get_value() -> ListTerminologiesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListTerminologiesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## TextTranslationJobFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import TextTranslationJobFilterTypeDef
+
+def get_value() -> TextTranslationJobFilterTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class TextTranslationJobFilterTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    JobStatus: NotRequired[JobStatusType],  # (1)
+    SubmittedBeforeTime: NotRequired[Union[datetime, str]],
+    SubmittedAfterTime: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+## TranslationSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import TranslationSettingsTypeDef
+
+def get_value() -> TranslationSettingsTypeDef:
+    return {
+        "Formality": ...,
+    }
+```
+
+```python title="Definition"
+class TranslationSettingsTypeDef(TypedDict):
+    Formality: NotRequired[FormalityType],  # (1)
+    Profanity: NotRequired[ProfanityType],  # (2)
+```
+
+1. See [:material-code-brackets: FormalityType](./literals.md#formalitytype) 
+2. See [:material-code-brackets: ProfanityType](./literals.md#profanitytype) 
+## StopTextTranslationJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import StopTextTranslationJobRequestRequestTypeDef
+
+def get_value() -> StopTextTranslationJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class StopTextTranslationJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
+
+## AppliedTerminologyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef
+
+def get_value() -> AppliedTerminologyTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AppliedTerminologyTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Terms: NotRequired[List[TermTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TermTypeDef](./type_defs.md#termtypedef) 
+## OutputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import OutputDataConfigTypeDef
+
+def get_value() -> OutputDataConfigTypeDef:
     return {
         "S3Uri": ...,
-        "Format": ...,
     }
 ```
 
 ```python title="Definition"
-class ParallelDataConfigTypeDef(TypedDict):
+class OutputDataConfigTypeDef(TypedDict):
     S3Uri: str,
-    Format: ParallelDataFormatType,  # (1)
+    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: ParallelDataFormatType](./literals.md#paralleldataformattype) 
-## ParallelDataDataLocationTypeDef
+1. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+## TerminologyPropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ParallelDataDataLocationTypeDef
+from mypy_boto3_translate.type_defs import TerminologyPropertiesTypeDef
 
-def get_value() -> ParallelDataDataLocationTypeDef:
+def get_value() -> TerminologyPropertiesTypeDef:
     return {
-        "RepositoryType": ...,
-        "Location": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class ParallelDataDataLocationTypeDef(TypedDict):
-    RepositoryType: str,
-    Location: str,
+class TerminologyPropertiesTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Arn: NotRequired[str],
+    SourceLanguageCode: NotRequired[str],
+    TargetLanguageCodes: NotRequired[List[str]],
+    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (1)
+    SizeBytes: NotRequired[int],
+    TermCount: NotRequired[int],
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    Directionality: NotRequired[DirectionalityType],  # (2)
+    Message: NotRequired[str],
+    SkippedTermCount: NotRequired[int],
+    Format: NotRequired[TerminologyDataFormatType],  # (3)
 ```
 
+1. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+2. See [:material-code-brackets: DirectionalityType](./literals.md#directionalitytype) 
+3. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
+## CreateParallelDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
+
+def get_value() -> CreateParallelDataRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ParallelDataConfig": ...,
+        "ClientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateParallelDataRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
+    ClientToken: str,
+    Description: NotRequired[str],
+    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## ParallelDataPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -598,63 +496,72 @@ class ParallelDataPropertiesTypeDef(TypedDict):
 2. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
 3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 4. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
-## ResponseMetadataTypeDef
+## UpdateParallelDataRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_translate.type_defs import UpdateParallelDataRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> UpdateParallelDataRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## StartTextTranslationJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import StartTextTranslationJobRequestRequestTypeDef
-
-def get_value() -> StartTextTranslationJobRequestRequestTypeDef:
-    return {
-        "InputDataConfig": ...,
-        "OutputDataConfig": ...,
-        "DataAccessRoleArn": ...,
-        "SourceLanguageCode": ...,
-        "TargetLanguageCodes": ...,
+        "Name": ...,
+        "ParallelDataConfig": ...,
         "ClientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class StartTextTranslationJobRequestRequestTypeDef(TypedDict):
-    InputDataConfig: InputDataConfigTypeDef,  # (1)
-    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
-    DataAccessRoleArn: str,
-    SourceLanguageCode: str,
-    TargetLanguageCodes: Sequence[str],
+class UpdateParallelDataRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
     ClientToken: str,
-    JobName: NotRequired[str],
-    TerminologyNames: NotRequired[Sequence[str]],
-    ParallelDataNames: NotRequired[Sequence[str]],
-    Settings: NotRequired[TranslationSettingsTypeDef],  # (3)
+    Description: NotRequired[str],
 ```
 
-1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
-2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
-3. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+## CreateParallelDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
+
+def get_value() -> CreateParallelDataResponseTypeDef:
+    return {
+        "Name": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateParallelDataResponseTypeDef(TypedDict):
+    Name: str,
+    Status: ParallelDataStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteParallelDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import DeleteParallelDataResponseTypeDef
+
+def get_value() -> DeleteParallelDataResponseTypeDef:
+    return {
+        "Name": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteParallelDataResponseTypeDef(TypedDict):
+    Name: str,
+    Status: ParallelDataStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTextTranslationJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -677,22 +584,6 @@ class StartTextTranslationJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StopTextTranslationJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import StopTextTranslationJobRequestRequestTypeDef
-
-def get_value() -> StopTextTranslationJobRequestRequestTypeDef:
-    return {
-        "JobId": ...,
-    }
-```
-
-```python title="Definition"
-class StopTextTranslationJobRequestRequestTypeDef(TypedDict):
-    JobId: str,
-```
-
 ## StopTextTranslationJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -715,149 +606,94 @@ class StopTextTranslationJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TermTypeDef
+## UpdateParallelDataResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TermTypeDef
+from mypy_boto3_translate.type_defs import UpdateParallelDataResponseTypeDef
 
-def get_value() -> TermTypeDef:
-    return {
-        "SourceText": ...,
-    }
-```
-
-```python title="Definition"
-class TermTypeDef(TypedDict):
-    SourceText: NotRequired[str],
-    TargetText: NotRequired[str],
-```
-
-## TerminologyDataLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TerminologyDataLocationTypeDef
-
-def get_value() -> TerminologyDataLocationTypeDef:
-    return {
-        "RepositoryType": ...,
-        "Location": ...,
-    }
-```
-
-```python title="Definition"
-class TerminologyDataLocationTypeDef(TypedDict):
-    RepositoryType: str,
-    Location: str,
-```
-
-## TerminologyDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TerminologyDataTypeDef
-
-def get_value() -> TerminologyDataTypeDef:
-    return {
-        "File": ...,
-        "Format": ...,
-    }
-```
-
-```python title="Definition"
-class TerminologyDataTypeDef(TypedDict):
-    File: Union[str, bytes, IO[Any], StreamingBody],
-    Format: TerminologyDataFormatType,  # (1)
-    Directionality: NotRequired[DirectionalityType],  # (2)
-```
-
-1. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
-2. See [:material-code-brackets: DirectionalityType](./literals.md#directionalitytype) 
-## TerminologyPropertiesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TerminologyPropertiesTypeDef
-
-def get_value() -> TerminologyPropertiesTypeDef:
+def get_value() -> UpdateParallelDataResponseTypeDef:
     return {
         "Name": ...,
+        "Status": ...,
+        "LatestUpdateAttemptStatus": ...,
+        "LatestUpdateAttemptAt": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TerminologyPropertiesTypeDef(TypedDict):
-    Name: NotRequired[str],
+class UpdateParallelDataResponseTypeDef(TypedDict):
+    Name: str,
+    Status: ParallelDataStatusType,  # (1)
+    LatestUpdateAttemptStatus: ParallelDataStatusType,  # (1)
+    LatestUpdateAttemptAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
+2. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportTerminologyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ImportTerminologyRequestRequestTypeDef
+
+def get_value() -> ImportTerminologyRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "MergeStrategy": ...,
+        "TerminologyData": ...,
+    }
+```
+
+```python title="Definition"
+class ImportTerminologyRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MergeStrategy: MergeStrategyType,  # (1)
+    TerminologyData: TerminologyDataTypeDef,  # (2)
     Description: NotRequired[str],
-    Arn: NotRequired[str],
-    SourceLanguageCode: NotRequired[str],
-    TargetLanguageCodes: NotRequired[List[str]],
-    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (1)
-    SizeBytes: NotRequired[int],
-    TermCount: NotRequired[int],
-    CreatedAt: NotRequired[datetime],
-    LastUpdatedAt: NotRequired[datetime],
-    Directionality: NotRequired[DirectionalityType],  # (2)
-    Message: NotRequired[str],
-    SkippedTermCount: NotRequired[int],
-    Format: NotRequired[TerminologyDataFormatType],  # (3)
+    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
-2. See [:material-code-brackets: DirectionalityType](./literals.md#directionalitytype) 
-3. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
-## TextTranslationJobFilterTypeDef
+1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
+3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+## ListTerminologiesRequestListTerminologiesPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TextTranslationJobFilterTypeDef
+from mypy_boto3_translate.type_defs import ListTerminologiesRequestListTerminologiesPaginateTypeDef
 
-def get_value() -> TextTranslationJobFilterTypeDef:
+def get_value() -> ListTerminologiesRequestListTerminologiesPaginateTypeDef:
     return {
-        "JobName": ...,
+        "PaginationConfig": ...,
     }
 ```
 
 ```python title="Definition"
-class TextTranslationJobFilterTypeDef(TypedDict):
-    JobName: NotRequired[str],
-    JobStatus: NotRequired[JobStatusType],  # (1)
-    SubmittedBeforeTime: NotRequired[Union[datetime, str]],
-    SubmittedAfterTime: NotRequired[Union[datetime, str]],
+class ListTerminologiesRequestListTerminologiesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-## TextTranslationJobPropertiesTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTextTranslationJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TextTranslationJobPropertiesTypeDef
+from mypy_boto3_translate.type_defs import ListTextTranslationJobsRequestRequestTypeDef
 
-def get_value() -> TextTranslationJobPropertiesTypeDef:
+def get_value() -> ListTextTranslationJobsRequestRequestTypeDef:
     return {
-        "JobId": ...,
+        "Filter": ...,
     }
 ```
 
 ```python title="Definition"
-class TextTranslationJobPropertiesTypeDef(TypedDict):
-    JobId: NotRequired[str],
-    JobName: NotRequired[str],
-    JobStatus: NotRequired[JobStatusType],  # (1)
-    JobDetails: NotRequired[JobDetailsTypeDef],  # (2)
-    SourceLanguageCode: NotRequired[str],
-    TargetLanguageCodes: NotRequired[List[str]],
-    TerminologyNames: NotRequired[List[str]],
-    ParallelDataNames: NotRequired[List[str]],
-    Message: NotRequired[str],
-    SubmittedTime: NotRequired[datetime],
-    EndTime: NotRequired[datetime],
-    InputDataConfig: NotRequired[InputDataConfigTypeDef],  # (3)
-    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (4)
-    DataAccessRoleArn: NotRequired[str],
-    Settings: NotRequired[TranslationSettingsTypeDef],  # (5)
+class ListTextTranslationJobsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[TextTranslationJobFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-2. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
-3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
-4. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
-5. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+1. See [:material-code-braces: TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef) 
 ## TranslateTextRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -910,71 +746,235 @@ class TranslateTextResponseTypeDef(TypedDict):
 1. See [:material-code-braces: AppliedTerminologyTypeDef](./type_defs.md#appliedterminologytypedef) 
 2. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TranslationSettingsTypeDef
+## StartTextTranslationJobRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import TranslationSettingsTypeDef
+from mypy_boto3_translate.type_defs import StartTextTranslationJobRequestRequestTypeDef
 
-def get_value() -> TranslationSettingsTypeDef:
+def get_value() -> StartTextTranslationJobRequestRequestTypeDef:
     return {
-        "Formality": ...,
-    }
-```
-
-```python title="Definition"
-class TranslationSettingsTypeDef(TypedDict):
-    Formality: NotRequired[FormalityType],  # (1)
-    Profanity: NotRequired[ProfanityType],  # (2)
-```
-
-1. See [:material-code-brackets: FormalityType](./literals.md#formalitytype) 
-2. See [:material-code-brackets: ProfanityType](./literals.md#profanitytype) 
-## UpdateParallelDataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import UpdateParallelDataRequestRequestTypeDef
-
-def get_value() -> UpdateParallelDataRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "ParallelDataConfig": ...,
+        "InputDataConfig": ...,
+        "OutputDataConfig": ...,
+        "DataAccessRoleArn": ...,
+        "SourceLanguageCode": ...,
+        "TargetLanguageCodes": ...,
         "ClientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateParallelDataRequestRequestTypeDef(TypedDict):
-    Name: str,
-    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
+class StartTextTranslationJobRequestRequestTypeDef(TypedDict):
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    SourceLanguageCode: str,
+    TargetLanguageCodes: Sequence[str],
     ClientToken: str,
-    Description: NotRequired[str],
+    JobName: NotRequired[str],
+    TerminologyNames: NotRequired[Sequence[str]],
+    ParallelDataNames: NotRequired[Sequence[str]],
+    Settings: NotRequired[TranslationSettingsTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
-## UpdateParallelDataResponseTypeDef
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+## TextTranslationJobPropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_translate.type_defs import UpdateParallelDataResponseTypeDef
+from mypy_boto3_translate.type_defs import TextTranslationJobPropertiesTypeDef
 
-def get_value() -> UpdateParallelDataResponseTypeDef:
+def get_value() -> TextTranslationJobPropertiesTypeDef:
     return {
-        "Name": ...,
-        "Status": ...,
-        "LatestUpdateAttemptStatus": ...,
-        "LatestUpdateAttemptAt": ...,
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class TextTranslationJobPropertiesTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobStatus: NotRequired[JobStatusType],  # (1)
+    JobDetails: NotRequired[JobDetailsTypeDef],  # (2)
+    SourceLanguageCode: NotRequired[str],
+    TargetLanguageCodes: NotRequired[List[str]],
+    TerminologyNames: NotRequired[List[str]],
+    ParallelDataNames: NotRequired[List[str]],
+    Message: NotRequired[str],
+    SubmittedTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    InputDataConfig: NotRequired[InputDataConfigTypeDef],  # (3)
+    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (4)
+    DataAccessRoleArn: NotRequired[str],
+    Settings: NotRequired[TranslationSettingsTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+4. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+5. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+## GetTerminologyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import GetTerminologyResponseTypeDef
+
+def get_value() -> GetTerminologyResponseTypeDef:
+    return {
+        "TerminologyProperties": ...,
+        "TerminologyDataLocation": ...,
+        "AuxiliaryDataLocation": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateParallelDataResponseTypeDef(TypedDict):
-    Name: str,
-    Status: ParallelDataStatusType,  # (1)
-    LatestUpdateAttemptStatus: ParallelDataStatusType,  # (1)
-    LatestUpdateAttemptAt: datetime,
+class GetTerminologyResponseTypeDef(TypedDict):
+    TerminologyProperties: TerminologyPropertiesTypeDef,  # (1)
+    TerminologyDataLocation: TerminologyDataLocationTypeDef,  # (2)
+    AuxiliaryDataLocation: TerminologyDataLocationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
+2. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
+3. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportTerminologyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ImportTerminologyResponseTypeDef
+
+def get_value() -> ImportTerminologyResponseTypeDef:
+    return {
+        "TerminologyProperties": ...,
+        "AuxiliaryDataLocation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportTerminologyResponseTypeDef(TypedDict):
+    TerminologyProperties: TerminologyPropertiesTypeDef,  # (1)
+    AuxiliaryDataLocation: TerminologyDataLocationTypeDef,  # (2)
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
-2. See [:material-code-brackets: ParallelDataStatusType](./literals.md#paralleldatastatustype) 
+1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
+2. See [:material-code-braces: TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTerminologiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
+
+def get_value() -> ListTerminologiesResponseTypeDef:
+    return {
+        "TerminologyPropertiesList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTerminologiesResponseTypeDef(TypedDict):
+    TerminologyPropertiesList: List[TerminologyPropertiesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetParallelDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import GetParallelDataResponseTypeDef
+
+def get_value() -> GetParallelDataResponseTypeDef:
+    return {
+        "ParallelDataProperties": ...,
+        "DataLocation": ...,
+        "AuxiliaryDataLocation": ...,
+        "LatestUpdateAttemptAuxiliaryDataLocation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetParallelDataResponseTypeDef(TypedDict):
+    ParallelDataProperties: ParallelDataPropertiesTypeDef,  # (1)
+    DataLocation: ParallelDataDataLocationTypeDef,  # (2)
+    AuxiliaryDataLocation: ParallelDataDataLocationTypeDef,  # (2)
+    LatestUpdateAttemptAuxiliaryDataLocation: ParallelDataDataLocationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef) 
+2. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
+3. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
+4. See [:material-code-braces: ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListParallelDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListParallelDataResponseTypeDef
+
+def get_value() -> ListParallelDataResponseTypeDef:
+    return {
+        "ParallelDataPropertiesList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListParallelDataResponseTypeDef(TypedDict):
+    ParallelDataPropertiesList: List[ParallelDataPropertiesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTextTranslationJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import DescribeTextTranslationJobResponseTypeDef
+
+def get_value() -> DescribeTextTranslationJobResponseTypeDef:
+    return {
+        "TextTranslationJobProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTextTranslationJobResponseTypeDef(TypedDict):
+    TextTranslationJobProperties: TextTranslationJobPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTextTranslationJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListTextTranslationJobsResponseTypeDef
+
+def get_value() -> ListTextTranslationJobsResponseTypeDef:
+    return {
+        "TextTranslationJobPropertiesList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTextTranslationJobsResponseTypeDef(TypedDict):
+    TextTranslationJobPropertiesList: List[TextTranslationJobPropertiesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

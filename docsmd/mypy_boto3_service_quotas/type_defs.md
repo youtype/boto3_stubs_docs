@@ -63,46 +63,30 @@ class GetAWSDefaultServiceQuotaRequestRequestTypeDef(TypedDict):
     QuotaCode: str,
 ```
 
-## GetAWSDefaultServiceQuotaResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> GetAWSDefaultServiceQuotaResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Quota": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAWSDefaultServiceQuotaResponseTypeDef(TypedDict):
-    Quota: ServiceQuotaTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetAssociationForServiceQuotaTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTemplateResponseTypeDef
-
-def get_value() -> GetAssociationForServiceQuotaTemplateResponseTypeDef:
-    return {
-        "ServiceQuotaTemplateAssociationStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAssociationForServiceQuotaTemplateResponseTypeDef(TypedDict):
-    ServiceQuotaTemplateAssociationStatus: ServiceQuotaTemplateAssociationStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRequestedServiceQuotaChangeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -119,26 +103,36 @@ class GetRequestedServiceQuotaChangeRequestRequestTypeDef(TypedDict):
     RequestId: str,
 ```
 
-## GetRequestedServiceQuotaChangeResponseTypeDef
+## RequestedServiceQuotaChangeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import RequestedServiceQuotaChangeTypeDef
 
-def get_value() -> GetRequestedServiceQuotaChangeResponseTypeDef:
+def get_value() -> RequestedServiceQuotaChangeTypeDef:
     return {
-        "RequestedQuota": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class GetRequestedServiceQuotaChangeResponseTypeDef(TypedDict):
-    RequestedQuota: RequestedServiceQuotaChangeTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RequestedServiceQuotaChangeTypeDef(TypedDict):
+    Id: NotRequired[str],
+    CaseId: NotRequired[str],
+    ServiceCode: NotRequired[str],
+    ServiceName: NotRequired[str],
+    QuotaCode: NotRequired[str],
+    QuotaName: NotRequired[str],
+    DesiredValue: NotRequired[float],
+    Status: NotRequired[RequestStatusType],  # (1)
+    Created: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Requester: NotRequired[str],
+    QuotaArn: NotRequired[str],
+    GlobalQuota: NotRequired[bool],
+    Unit: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
 ## GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -159,26 +153,29 @@ class GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef(TypedDict)
     AwsRegion: str,
 ```
 
-## GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
+## ServiceQuotaIncreaseRequestInTemplateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ServiceQuotaIncreaseRequestInTemplateTypeDef
 
-def get_value() -> GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef:
+def get_value() -> ServiceQuotaIncreaseRequestInTemplateTypeDef:
     return {
-        "ServiceQuotaIncreaseRequestInTemplate": ...,
-        "ResponseMetadata": ...,
+        "ServiceCode": ...,
     }
 ```
 
 ```python title="Definition"
-class GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef(TypedDict):
-    ServiceQuotaIncreaseRequestInTemplate: ServiceQuotaIncreaseRequestInTemplateTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ServiceQuotaIncreaseRequestInTemplateTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    ServiceName: NotRequired[str],
+    QuotaCode: NotRequired[str],
+    QuotaName: NotRequired[str],
+    DesiredValue: NotRequired[float],
+    AwsRegion: NotRequired[str],
+    Unit: NotRequired[str],
+    GlobalQuota: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceQuotaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -197,44 +194,24 @@ class GetServiceQuotaRequestRequestTypeDef(TypedDict):
     QuotaCode: str,
 ```
 
-## GetServiceQuotaResponseTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import GetServiceQuotaResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> GetServiceQuotaResponseTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "Quota": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class GetServiceQuotaResponseTypeDef(TypedDict):
-    Quota: ServiceQuotaTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef
-
-def get_value() -> ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef:
-    return {
-        "ServiceCode": ...,
-    }
-```
-
-```python title="Definition"
-class ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef(TypedDict):
-    ServiceCode: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAWSDefaultServiceQuotasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -253,50 +230,6 @@ class ListAWSDefaultServiceQuotasRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAWSDefaultServiceQuotasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasResponseTypeDef
-
-def get_value() -> ListAWSDefaultServiceQuotasResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Quotas": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAWSDefaultServiceQuotasResponseTypeDef(TypedDict):
-    NextToken: str,
-    Quotas: List[ServiceQuotaTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef
-
-def get_value() -> ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef:
-    return {
-        "ServiceCode": ...,
-        "QuotaCode": ...,
-    }
-```
-
-```python title="Definition"
-class ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef(TypedDict):
-    ServiceCode: str,
-    QuotaCode: str,
-    Status: NotRequired[RequestStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -319,48 +252,6 @@ class ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef(TypedDi
 ```
 
 1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
-## ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
-
-def get_value() -> ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "RequestedQuotas": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef(TypedDict):
-    NextToken: str,
-    RequestedQuotas: List[RequestedServiceQuotaChangeTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef
-
-def get_value() -> ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef:
-    return {
-        "ServiceCode": ...,
-    }
-```
-
-```python title="Definition"
-class ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef(TypedDict):
-    ServiceCode: NotRequired[str],
-    Status: NotRequired[RequestStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -381,47 +272,6 @@ class ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
-## ListRequestedServiceQuotaChangeHistoryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryResponseTypeDef
-
-def get_value() -> ListRequestedServiceQuotaChangeHistoryResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "RequestedQuotas": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRequestedServiceQuotaChangeHistoryResponseTypeDef(TypedDict):
-    NextToken: str,
-    RequestedQuotas: List[RequestedServiceQuotaChangeTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef
-
-def get_value() -> ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef:
-    return {
-        "ServiceCode": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef(TypedDict):
-    ServiceCode: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -441,46 +291,6 @@ class ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef(TypedDict)
     MaxResults: NotRequired[int],
 ```
 
-## ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
-
-def get_value() -> ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef:
-    return {
-        "ServiceQuotaIncreaseRequestInTemplateList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef(TypedDict):
-    ServiceQuotaIncreaseRequestInTemplateList: List[ServiceQuotaIncreaseRequestInTemplateTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServiceQuotasRequestListServiceQuotasPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotasRequestListServiceQuotasPaginateTypeDef
-
-def get_value() -> ListServiceQuotasRequestListServiceQuotasPaginateTypeDef:
-    return {
-        "ServiceCode": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceQuotasRequestListServiceQuotasPaginateTypeDef(TypedDict):
-    ServiceCode: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceQuotasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -499,45 +309,6 @@ class ListServiceQuotasRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListServiceQuotasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotasResponseTypeDef
-
-def get_value() -> ListServiceQuotasResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Quotas": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceQuotasResponseTypeDef(TypedDict):
-    NextToken: str,
-    Quotas: List[ServiceQuotaTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServicesRequestListServicesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServicesRequestListServicesPaginateTypeDef
-
-def get_value() -> ListServicesRequestListServicesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListServicesRequestListServicesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -555,28 +326,23 @@ class ListServicesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListServicesResponseTypeDef
+## ServiceInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListServicesResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ServiceInfoTypeDef
 
-def get_value() -> ListServicesResponseTypeDef:
+def get_value() -> ServiceInfoTypeDef:
     return {
-        "NextToken": ...,
-        "Services": ...,
-        "ResponseMetadata": ...,
+        "ServiceCode": ...,
     }
 ```
 
 ```python title="Definition"
-class ListServicesResponseTypeDef(TypedDict):
-    NextToken: str,
-    Services: List[ServiceInfoTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ServiceInfoTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    ServiceName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ServiceInfoTypeDef](./type_defs.md#serviceinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -593,26 +359,24 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceARN: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import TagTypeDef
 
-def get_value() -> ListTagsForResourceResponseTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricInfoTypeDef
 
 ```python title="Usage Example"
@@ -630,24 +394,6 @@ class MetricInfoTypeDef(TypedDict):
     MetricName: NotRequired[str],
     MetricDimensions: NotRequired[Dict[str, str]],
     MetricStatisticRecommendation: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef
@@ -672,26 +418,6 @@ class PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef(TypedDict)
     DesiredValue: float,
 ```
 
-## PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
-
-def get_value() -> PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef:
-    return {
-        "ServiceQuotaIncreaseRequestInTemplate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef(TypedDict):
-    ServiceQuotaIncreaseRequestInTemplate: ServiceQuotaIncreaseRequestInTemplateTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QuotaPeriodTypeDef
 
 ```python title="Usage Example"
@@ -730,6 +456,108 @@ class RequestServiceQuotaIncreaseRequestRequestTypeDef(TypedDict):
     DesiredValue: float,
 ```
 
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
+
+## GetAssociationForServiceQuotaTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTemplateResponseTypeDef
+
+def get_value() -> GetAssociationForServiceQuotaTemplateResponseTypeDef:
+    return {
+        "ServiceQuotaTemplateAssociationStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAssociationForServiceQuotaTemplateResponseTypeDef(TypedDict):
+    ServiceQuotaTemplateAssociationStatus: ServiceQuotaTemplateAssociationStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRequestedServiceQuotaChangeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeResponseTypeDef
+
+def get_value() -> GetRequestedServiceQuotaChangeResponseTypeDef:
+    return {
+        "RequestedQuota": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRequestedServiceQuotaChangeResponseTypeDef(TypedDict):
+    RequestedQuota: RequestedServiceQuotaChangeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
+
+def get_value() -> ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RequestedQuotas": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef(TypedDict):
+    NextToken: str,
+    RequestedQuotas: List[RequestedServiceQuotaChangeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRequestedServiceQuotaChangeHistoryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryResponseTypeDef
+
+def get_value() -> ListRequestedServiceQuotaChangeHistoryResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RequestedQuotas": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRequestedServiceQuotaChangeHistoryResponseTypeDef(TypedDict):
+    NextToken: str,
+    RequestedQuotas: List[RequestedServiceQuotaChangeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RequestServiceQuotaIncreaseResponseTypeDef
 
 ```python title="Usage Example"
@@ -750,100 +578,243 @@ class RequestServiceQuotaIncreaseResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RequestedServiceQuotaChangeTypeDef
+## GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import RequestedServiceQuotaChangeTypeDef
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
 
-def get_value() -> RequestedServiceQuotaChangeTypeDef:
+def get_value() -> GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef:
     return {
-        "Id": ...,
+        "ServiceQuotaIncreaseRequestInTemplate": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RequestedServiceQuotaChangeTypeDef(TypedDict):
-    Id: NotRequired[str],
-    CaseId: NotRequired[str],
-    ServiceCode: NotRequired[str],
-    ServiceName: NotRequired[str],
-    QuotaCode: NotRequired[str],
-    QuotaName: NotRequired[str],
-    DesiredValue: NotRequired[float],
+class GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef(TypedDict):
+    ServiceQuotaIncreaseRequestInTemplate: ServiceQuotaIncreaseRequestInTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
+
+def get_value() -> ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef:
+    return {
+        "ServiceQuotaIncreaseRequestInTemplateList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef(TypedDict):
+    ServiceQuotaIncreaseRequestInTemplateList: List[ServiceQuotaIncreaseRequestInTemplateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
+
+def get_value() -> PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef:
+    return {
+        "ServiceQuotaIncreaseRequestInTemplate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef(TypedDict):
+    ServiceQuotaIncreaseRequestInTemplate: ServiceQuotaIncreaseRequestInTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef
+
+def get_value() -> ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef(TypedDict):
+    ServiceCode: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef
+
+def get_value() -> ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+        "QuotaCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef(TypedDict):
+    ServiceCode: str,
+    QuotaCode: str,
     Status: NotRequired[RequestStatusType],  # (1)
-    Created: NotRequired[datetime],
-    LastUpdated: NotRequired[datetime],
-    Requester: NotRequired[str],
-    QuotaArn: NotRequired[str],
-    GlobalQuota: NotRequired[bool],
-    Unit: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
 1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
-## ResponseMetadataTypeDef
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ServiceInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ServiceInfoTypeDef
-
-def get_value() -> ServiceInfoTypeDef:
+def get_value() -> ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef:
     return {
         "ServiceCode": ...,
     }
 ```
 
 ```python title="Definition"
-class ServiceInfoTypeDef(TypedDict):
+class ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef(TypedDict):
     ServiceCode: NotRequired[str],
-    ServiceName: NotRequired[str],
+    Status: NotRequired[RequestStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-## ServiceQuotaIncreaseRequestInTemplateTypeDef
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import ServiceQuotaIncreaseRequestInTemplateTypeDef
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef
 
-def get_value() -> ServiceQuotaIncreaseRequestInTemplateTypeDef:
+def get_value() -> ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef:
     return {
         "ServiceCode": ...,
     }
 ```
 
 ```python title="Definition"
-class ServiceQuotaIncreaseRequestInTemplateTypeDef(TypedDict):
+class ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef(TypedDict):
     ServiceCode: NotRequired[str],
-    ServiceName: NotRequired[str],
-    QuotaCode: NotRequired[str],
-    QuotaName: NotRequired[str],
-    DesiredValue: NotRequired[float],
     AwsRegion: NotRequired[str],
-    Unit: NotRequired[str],
-    GlobalQuota: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServiceQuotasRequestListServiceQuotasPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotasRequestListServiceQuotasPaginateTypeDef
+
+def get_value() -> ListServiceQuotasRequestListServiceQuotasPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceQuotasRequestListServiceQuotasPaginateTypeDef(TypedDict):
+    ServiceCode: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServicesRequestListServicesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListServicesRequestListServicesPaginateTypeDef
+
+def get_value() -> ListServicesRequestListServicesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesRequestListServicesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListServicesResponseTypeDef
+
+def get_value() -> ListServicesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Services": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Services: List[ServiceInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ServiceInfoTypeDef](./type_defs.md#serviceinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ServiceQuotaTypeDef
 
 ```python title="Usage Example"
@@ -874,58 +845,87 @@ class ServiceQuotaTypeDef(TypedDict):
 1. See [:material-code-braces: MetricInfoTypeDef](./type_defs.md#metricinfotypedef) 
 2. See [:material-code-braces: QuotaPeriodTypeDef](./type_defs.md#quotaperiodtypedef) 
 3. See [:material-code-braces: ErrorReasonTypeDef](./type_defs.md#errorreasontypedef) 
-## TagResourceRequestRequestTypeDef
+## GetAWSDefaultServiceQuotaResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaResponseTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> GetAWSDefaultServiceQuotaResponseTypeDef:
     return {
-        "ResourceARN": ...,
-        "Tags": ...,
+        "Quota": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
+class GetAWSDefaultServiceQuotaResponseTypeDef(TypedDict):
+    Quota: ServiceQuotaTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetServiceQuotaResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import TagTypeDef
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaResponseTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> GetServiceQuotaResponseTypeDef:
     return {
-        "Key": ...,
-        "Value": ...,
+        "Quota": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
+class GetServiceQuotaResponseTypeDef(TypedDict):
+    Quota: ServiceQuotaTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAWSDefaultServiceQuotasResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_service_quotas.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasResponseTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> ListAWSDefaultServiceQuotasResponseTypeDef:
     return {
-        "ResourceARN": ...,
-        "TagKeys": ...,
+        "NextToken": ...,
+        "Quotas": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    TagKeys: Sequence[str],
+class ListAWSDefaultServiceQuotasResponseTypeDef(TypedDict):
+    NextToken: str,
+    Quotas: List[ServiceQuotaTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceQuotasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotasResponseTypeDef
+
+def get_value() -> ListServiceQuotasResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Quotas": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceQuotasResponseTypeDef(TypedDict):
+    NextToken: str,
+    Quotas: List[ServiceQuotaTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

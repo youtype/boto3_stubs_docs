@@ -24,37 +24,22 @@ class AccountSettingsTypeDef(TypedDict):
     EnableDialOut: NotRequired[bool],
 ```
 
-## AccountTypeDef
+## SigninDelegateGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AccountTypeDef
+from mypy_boto3_chime.type_defs import SigninDelegateGroupTypeDef
 
-def get_value() -> AccountTypeDef:
+def get_value() -> SigninDelegateGroupTypeDef:
     return {
-        "AwsAccountId": ...,
-        "AccountId": ...,
-        "Name": ...,
+        "GroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class AccountTypeDef(TypedDict):
-    AwsAccountId: str,
-    AccountId: str,
-    Name: str,
-    AccountType: NotRequired[AccountTypeType],  # (1)
-    CreatedTimestamp: NotRequired[datetime],
-    DefaultLicense: NotRequired[LicenseType],  # (2)
-    SupportedLicenses: NotRequired[List[LicenseType]],  # (3)
-    AccountStatus: NotRequired[AccountStatusType],  # (4)
-    SigninDelegateGroups: NotRequired[List[SigninDelegateGroupTypeDef]],  # (5)
+class SigninDelegateGroupTypeDef(TypedDict):
+    GroupName: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AccountTypeType](./literals.md#accounttypetype) 
-2. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
-3. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
-4. See [:material-code-brackets: AccountStatusType](./literals.md#accountstatustype) 
-5. See [:material-code-braces: SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef) 
 ## AlexaForBusinessMetadataTypeDef
 
 ```python title="Usage Example"
@@ -72,59 +57,39 @@ class AlexaForBusinessMetadataTypeDef(TypedDict):
     AlexaForBusinessRoomArn: NotRequired[str],
 ```
 
-## AppInstanceAdminSummaryTypeDef
+## IdentityTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AppInstanceAdminSummaryTypeDef
+from mypy_boto3_chime.type_defs import IdentityTypeDef
 
-def get_value() -> AppInstanceAdminSummaryTypeDef:
+def get_value() -> IdentityTypeDef:
     return {
-        "Admin": ...,
+        "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class AppInstanceAdminSummaryTypeDef(TypedDict):
-    Admin: NotRequired[IdentityTypeDef],  # (1)
+class IdentityTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## AppInstanceAdminTypeDef
+## ChannelRetentionSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AppInstanceAdminTypeDef
+from mypy_boto3_chime.type_defs import ChannelRetentionSettingsTypeDef
 
-def get_value() -> AppInstanceAdminTypeDef:
+def get_value() -> ChannelRetentionSettingsTypeDef:
     return {
-        "Admin": ...,
+        "RetentionDays": ...,
     }
 ```
 
 ```python title="Definition"
-class AppInstanceAdminTypeDef(TypedDict):
-    Admin: NotRequired[IdentityTypeDef],  # (1)
-    AppInstanceArn: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
+class ChannelRetentionSettingsTypeDef(TypedDict):
+    RetentionDays: NotRequired[int],
 ```
 
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## AppInstanceRetentionSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AppInstanceRetentionSettingsTypeDef
-
-def get_value() -> AppInstanceRetentionSettingsTypeDef:
-    return {
-        "ChannelRetentionSettings": ...,
-    }
-```
-
-```python title="Definition"
-class AppInstanceRetentionSettingsTypeDef(TypedDict):
-    ChannelRetentionSettings: NotRequired[ChannelRetentionSettingsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ChannelRetentionSettingsTypeDef](./type_defs.md#channelretentionsettingstypedef) 
 ## AppInstanceStreamingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -238,29 +203,61 @@ class AppInstanceUserTypeDef(TypedDict):
     LastUpdatedTimestamp: NotRequired[datetime],
 ```
 
-## ArtifactsConfigurationTypeDef
+## AudioArtifactsConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ArtifactsConfigurationTypeDef
+from mypy_boto3_chime.type_defs import AudioArtifactsConfigurationTypeDef
 
-def get_value() -> ArtifactsConfigurationTypeDef:
+def get_value() -> AudioArtifactsConfigurationTypeDef:
     return {
-        "Audio": ...,
-        "Video": ...,
-        "Content": ...,
+        "MuxType": ...,
     }
 ```
 
 ```python title="Definition"
-class ArtifactsConfigurationTypeDef(TypedDict):
-    Audio: AudioArtifactsConfigurationTypeDef,  # (1)
-    Video: VideoArtifactsConfigurationTypeDef,  # (2)
-    Content: ContentArtifactsConfigurationTypeDef,  # (3)
+class AudioArtifactsConfigurationTypeDef(TypedDict):
+    MuxType: AudioMuxTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef) 
-2. See [:material-code-braces: VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef) 
-3. See [:material-code-braces: ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef) 
+1. See [:material-code-brackets: AudioMuxTypeType](./literals.md#audiomuxtypetype) 
+## ContentArtifactsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ContentArtifactsConfigurationTypeDef
+
+def get_value() -> ContentArtifactsConfigurationTypeDef:
+    return {
+        "State": ...,
+    }
+```
+
+```python title="Definition"
+class ContentArtifactsConfigurationTypeDef(TypedDict):
+    State: ArtifactsStateType,  # (1)
+    MuxType: NotRequired[ContentMuxTypeType],  # (2)
+```
+
+1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
+2. See [:material-code-brackets: ContentMuxTypeType](./literals.md#contentmuxtypetype) 
+## VideoArtifactsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import VideoArtifactsConfigurationTypeDef
+
+def get_value() -> VideoArtifactsConfigurationTypeDef:
+    return {
+        "State": ...,
+    }
+```
+
+```python title="Definition"
+class VideoArtifactsConfigurationTypeDef(TypedDict):
+    State: ArtifactsStateType,  # (1)
+    MuxType: NotRequired[VideoMuxTypeType],  # (2)
+```
+
+1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
+2. See [:material-code-brackets: VideoMuxTypeType](./literals.md#videomuxtypetype) 
 ## AssociatePhoneNumberWithUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -300,26 +297,49 @@ class AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef(TypedDic
     ForceAssociate: NotRequired[bool],
 ```
 
-## AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
+## PhoneNumberErrorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
+from mypy_boto3_chime.type_defs import PhoneNumberErrorTypeDef
 
-def get_value() -> AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef:
+def get_value() -> PhoneNumberErrorTypeDef:
     return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
+        "PhoneNumberId": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PhoneNumberErrorTypeDef(TypedDict):
+    PhoneNumberId: NotRequired[str],
+    ErrorCode: NotRequired[ErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -339,45 +359,6 @@ class AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef(TypedDict):
     ForceAssociate: NotRequired[bool],
 ```
 
-## AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
-
-def get_value() -> AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef:
-    return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
-
-def get_value() -> AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "SigninDelegateGroups": ...,
-    }
-```
-
-```python title="Definition"
-class AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    SigninDelegateGroups: Sequence[SigninDelegateGroupTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef) 
 ## AttendeeTypeDef
 
 ```python title="Usage Example"
@@ -396,87 +377,24 @@ class AttendeeTypeDef(TypedDict):
     JoinToken: NotRequired[str],
 ```
 
-## AudioArtifactsConfigurationTypeDef
+## CreateAttendeeErrorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import AudioArtifactsConfigurationTypeDef
+from mypy_boto3_chime.type_defs import CreateAttendeeErrorTypeDef
 
-def get_value() -> AudioArtifactsConfigurationTypeDef:
+def get_value() -> CreateAttendeeErrorTypeDef:
     return {
-        "MuxType": ...,
+        "ExternalUserId": ...,
     }
 ```
 
 ```python title="Definition"
-class AudioArtifactsConfigurationTypeDef(TypedDict):
-    MuxType: AudioMuxTypeType,  # (1)
+class CreateAttendeeErrorTypeDef(TypedDict):
+    ExternalUserId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AudioMuxTypeType](./literals.md#audiomuxtypetype) 
-## BatchChannelMembershipsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchChannelMembershipsTypeDef
-
-def get_value() -> BatchChannelMembershipsTypeDef:
-    return {
-        "InvitedBy": ...,
-    }
-```
-
-```python title="Definition"
-class BatchChannelMembershipsTypeDef(TypedDict):
-    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
-    Type: NotRequired[ChannelMembershipTypeType],  # (2)
-    Members: NotRequired[List[IdentityTypeDef]],  # (3)
-    ChannelArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
-3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## BatchCreateAttendeeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchCreateAttendeeRequestRequestTypeDef
-
-def get_value() -> BatchCreateAttendeeRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "Attendees": ...,
-    }
-```
-
-```python title="Definition"
-class BatchCreateAttendeeRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
-## BatchCreateAttendeeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchCreateAttendeeResponseTypeDef
-
-def get_value() -> BatchCreateAttendeeResponseTypeDef:
-    return {
-        "Attendees": ...,
-        "Errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchCreateAttendeeResponseTypeDef(TypedDict):
-    Attendees: List[AttendeeTypeDef],  # (1)
-    Errors: List[CreateAttendeeErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
-2. See [:material-code-braces: CreateAttendeeErrorTypeDef](./type_defs.md#createattendeeerrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchCreateChannelMembershipErrorTypeDef
 
 ```python title="Usage Example"
@@ -517,70 +435,43 @@ class BatchCreateChannelMembershipRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
-## BatchCreateChannelMembershipResponseTypeDef
+## MembershipItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipResponseTypeDef
+from mypy_boto3_chime.type_defs import MembershipItemTypeDef
 
-def get_value() -> BatchCreateChannelMembershipResponseTypeDef:
+def get_value() -> MembershipItemTypeDef:
     return {
-        "BatchChannelMemberships": ...,
-        "Errors": ...,
-        "ResponseMetadata": ...,
+        "MemberId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchCreateChannelMembershipResponseTypeDef(TypedDict):
-    BatchChannelMemberships: BatchChannelMembershipsTypeDef,  # (1)
-    Errors: List[BatchCreateChannelMembershipErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class MembershipItemTypeDef(TypedDict):
+    MemberId: NotRequired[str],
+    Role: NotRequired[RoomMembershipRoleType],  # (1)
 ```
 
-1. See [:material-code-braces: BatchChannelMembershipsTypeDef](./type_defs.md#batchchannelmembershipstypedef) 
-2. See [:material-code-braces: BatchCreateChannelMembershipErrorTypeDef](./type_defs.md#batchcreatechannelmembershiperrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchCreateRoomMembershipRequestRequestTypeDef
+1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
+## MemberErrorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipRequestRequestTypeDef
+from mypy_boto3_chime.type_defs import MemberErrorTypeDef
 
-def get_value() -> BatchCreateRoomMembershipRequestRequestTypeDef:
+def get_value() -> MemberErrorTypeDef:
     return {
-        "AccountId": ...,
-        "RoomId": ...,
-        "MembershipItemList": ...,
+        "MemberId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchCreateRoomMembershipRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    RoomId: str,
-    MembershipItemList: Sequence[MembershipItemTypeDef],  # (1)
+class MemberErrorTypeDef(TypedDict):
+    MemberId: NotRequired[str],
+    ErrorCode: NotRequired[ErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: MembershipItemTypeDef](./type_defs.md#membershipitemtypedef) 
-## BatchCreateRoomMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipResponseTypeDef
-
-def get_value() -> BatchCreateRoomMembershipResponseTypeDef:
-    return {
-        "Errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchCreateRoomMembershipResponseTypeDef(TypedDict):
-    Errors: List[MemberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MemberErrorTypeDef](./type_defs.md#membererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## BatchDeletePhoneNumberRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -597,26 +488,6 @@ class BatchDeletePhoneNumberRequestRequestTypeDef(TypedDict):
     PhoneNumberIds: Sequence[str],
 ```
 
-## BatchDeletePhoneNumberResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberResponseTypeDef
-
-def get_value() -> BatchDeletePhoneNumberResponseTypeDef:
-    return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDeletePhoneNumberResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchSuspendUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -635,26 +506,25 @@ class BatchSuspendUserRequestRequestTypeDef(TypedDict):
     UserIdList: Sequence[str],
 ```
 
-## BatchSuspendUserResponseTypeDef
+## UserErrorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchSuspendUserResponseTypeDef
+from mypy_boto3_chime.type_defs import UserErrorTypeDef
 
-def get_value() -> BatchSuspendUserResponseTypeDef:
+def get_value() -> UserErrorTypeDef:
     return {
-        "UserErrors": ...,
-        "ResponseMetadata": ...,
+        "UserId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchSuspendUserResponseTypeDef(TypedDict):
-    UserErrors: List[UserErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class UserErrorTypeDef(TypedDict):
+    UserId: NotRequired[str],
+    ErrorCode: NotRequired[ErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## BatchUnsuspendUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -673,102 +543,25 @@ class BatchUnsuspendUserRequestRequestTypeDef(TypedDict):
     UserIdList: Sequence[str],
 ```
 
-## BatchUnsuspendUserResponseTypeDef
+## UpdatePhoneNumberRequestItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchUnsuspendUserResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdatePhoneNumberRequestItemTypeDef
 
-def get_value() -> BatchUnsuspendUserResponseTypeDef:
+def get_value() -> UpdatePhoneNumberRequestItemTypeDef:
     return {
-        "UserErrors": ...,
-        "ResponseMetadata": ...,
+        "PhoneNumberId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchUnsuspendUserResponseTypeDef(TypedDict):
-    UserErrors: List[UserErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class UpdatePhoneNumberRequestItemTypeDef(TypedDict):
+    PhoneNumberId: str,
+    ProductType: NotRequired[PhoneNumberProductTypeType],  # (1)
+    CallingName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchUpdatePhoneNumberRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberRequestRequestTypeDef
-
-def get_value() -> BatchUpdatePhoneNumberRequestRequestTypeDef:
-    return {
-        "UpdatePhoneNumberRequestItems": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdatePhoneNumberRequestRequestTypeDef(TypedDict):
-    UpdatePhoneNumberRequestItems: Sequence[UpdatePhoneNumberRequestItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef) 
-## BatchUpdatePhoneNumberResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberResponseTypeDef
-
-def get_value() -> BatchUpdatePhoneNumberResponseTypeDef:
-    return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdatePhoneNumberResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchUpdateUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchUpdateUserRequestRequestTypeDef
-
-def get_value() -> BatchUpdateUserRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "UpdateUserRequestItems": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdateUserRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    UpdateUserRequestItems: Sequence[UpdateUserRequestItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef) 
-## BatchUpdateUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import BatchUpdateUserResponseTypeDef
-
-def get_value() -> BatchUpdateUserResponseTypeDef:
-    return {
-        "UserErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdateUserResponseTypeDef(TypedDict):
-    UserErrors: List[UserErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
 ## BotTypeDef
 
 ```python title="Usage Example"
@@ -810,230 +603,6 @@ class BusinessCallingSettingsTypeDef(TypedDict):
     CdrBucket: NotRequired[str],
 ```
 
-## ChannelBanSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelBanSummaryTypeDef
-
-def get_value() -> ChannelBanSummaryTypeDef:
-    return {
-        "Member": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelBanSummaryTypeDef(TypedDict):
-    Member: NotRequired[IdentityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelBanTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelBanTypeDef
-
-def get_value() -> ChannelBanTypeDef:
-    return {
-        "Member": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelBanTypeDef(TypedDict):
-    Member: NotRequired[IdentityTypeDef],  # (1)
-    ChannelArn: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
-    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelMembershipForAppInstanceUserSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelMembershipForAppInstanceUserSummaryTypeDef
-
-def get_value() -> ChannelMembershipForAppInstanceUserSummaryTypeDef:
-    return {
-        "ChannelSummary": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelMembershipForAppInstanceUserSummaryTypeDef(TypedDict):
-    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
-    AppInstanceUserMembershipSummary: NotRequired[AppInstanceUserMembershipSummaryTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
-2. See [:material-code-braces: AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef) 
-## ChannelMembershipSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelMembershipSummaryTypeDef
-
-def get_value() -> ChannelMembershipSummaryTypeDef:
-    return {
-        "Member": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelMembershipSummaryTypeDef(TypedDict):
-    Member: NotRequired[IdentityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelMembershipTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelMembershipTypeDef
-
-def get_value() -> ChannelMembershipTypeDef:
-    return {
-        "InvitedBy": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelMembershipTypeDef(TypedDict):
-    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
-    Type: NotRequired[ChannelMembershipTypeType],  # (2)
-    Member: NotRequired[IdentityTypeDef],  # (1)
-    ChannelArn: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
-    LastUpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
-3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelMessageSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelMessageSummaryTypeDef
-
-def get_value() -> ChannelMessageSummaryTypeDef:
-    return {
-        "MessageId": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelMessageSummaryTypeDef(TypedDict):
-    MessageId: NotRequired[str],
-    Content: NotRequired[str],
-    Metadata: NotRequired[str],
-    Type: NotRequired[ChannelMessageTypeType],  # (1)
-    CreatedTimestamp: NotRequired[datetime],
-    LastUpdatedTimestamp: NotRequired[datetime],
-    LastEditedTimestamp: NotRequired[datetime],
-    Sender: NotRequired[IdentityTypeDef],  # (2)
-    Redacted: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
-2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelMessageTypeDef
-
-def get_value() -> ChannelMessageTypeDef:
-    return {
-        "ChannelArn": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelMessageTypeDef(TypedDict):
-    ChannelArn: NotRequired[str],
-    MessageId: NotRequired[str],
-    Content: NotRequired[str],
-    Metadata: NotRequired[str],
-    Type: NotRequired[ChannelMessageTypeType],  # (1)
-    CreatedTimestamp: NotRequired[datetime],
-    LastEditedTimestamp: NotRequired[datetime],
-    LastUpdatedTimestamp: NotRequired[datetime],
-    Sender: NotRequired[IdentityTypeDef],  # (2)
-    Redacted: NotRequired[bool],
-    Persistence: NotRequired[ChannelMessagePersistenceTypeType],  # (3)
-```
-
-1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
-2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-3. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
-## ChannelModeratedByAppInstanceUserSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelModeratedByAppInstanceUserSummaryTypeDef
-
-def get_value() -> ChannelModeratedByAppInstanceUserSummaryTypeDef:
-    return {
-        "ChannelSummary": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelModeratedByAppInstanceUserSummaryTypeDef(TypedDict):
-    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
-## ChannelModeratorSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelModeratorSummaryTypeDef
-
-def get_value() -> ChannelModeratorSummaryTypeDef:
-    return {
-        "Moderator": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelModeratorSummaryTypeDef(TypedDict):
-    Moderator: NotRequired[IdentityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelModeratorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelModeratorTypeDef
-
-def get_value() -> ChannelModeratorTypeDef:
-    return {
-        "Moderator": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelModeratorTypeDef(TypedDict):
-    Moderator: NotRequired[IdentityTypeDef],  # (1)
-    ChannelArn: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
-    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChannelRetentionSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelRetentionSettingsTypeDef
-
-def get_value() -> ChannelRetentionSettingsTypeDef:
-    return {
-        "RetentionDays": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelRetentionSettingsTypeDef(TypedDict):
-    RetentionDays: NotRequired[int],
-```
-
 ## ChannelSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1057,71 +626,6 @@ class ChannelSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
 2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
-## ChannelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChannelTypeDef
-
-def get_value() -> ChannelTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelTypeDef(TypedDict):
-    Name: NotRequired[str],
-    ChannelArn: NotRequired[str],
-    Mode: NotRequired[ChannelModeType],  # (1)
-    Privacy: NotRequired[ChannelPrivacyType],  # (2)
-    Metadata: NotRequired[str],
-    CreatedBy: NotRequired[IdentityTypeDef],  # (3)
-    CreatedTimestamp: NotRequired[datetime],
-    LastMessageTimestamp: NotRequired[datetime],
-    LastUpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
-2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
-3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-## ChimeSdkMeetingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ChimeSdkMeetingConfigurationTypeDef
-
-def get_value() -> ChimeSdkMeetingConfigurationTypeDef:
-    return {
-        "SourceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class ChimeSdkMeetingConfigurationTypeDef(TypedDict):
-    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
-    ArtifactsConfiguration: NotRequired[ArtifactsConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
-2. See [:material-code-braces: ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef) 
-## ContentArtifactsConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ContentArtifactsConfigurationTypeDef
-
-def get_value() -> ContentArtifactsConfigurationTypeDef:
-    return {
-        "State": ...,
-    }
-```
-
-```python title="Definition"
-class ContentArtifactsConfigurationTypeDef(TypedDict):
-    State: ArtifactsStateType,  # (1)
-    MuxType: NotRequired[ContentMuxTypeType],  # (2)
-```
-
-1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
-2. See [:material-code-brackets: ContentMuxTypeType](./literals.md#contentmuxtypetype) 
 ## ConversationRetentionSettingsTypeDef
 
 ```python title="Usage Example"
@@ -1154,26 +658,6 @@ class CreateAccountRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## CreateAccountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAccountResponseTypeDef
-
-def get_value() -> CreateAccountResponseTypeDef:
-    return {
-        "Account": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAccountResponseTypeDef(TypedDict):
-    Account: AccountTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAppInstanceAdminRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1192,188 +676,24 @@ class CreateAppInstanceAdminRequestRequestTypeDef(TypedDict):
     AppInstanceArn: str,
 ```
 
-## CreateAppInstanceAdminResponseTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAppInstanceAdminResponseTypeDef
+from mypy_boto3_chime.type_defs import TagTypeDef
 
-def get_value() -> CreateAppInstanceAdminResponseTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "AppInstanceAdmin": ...,
-        "AppInstanceArn": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAppInstanceAdminResponseTypeDef(TypedDict):
-    AppInstanceAdmin: IdentityTypeDef,  # (1)
-    AppInstanceArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAppInstanceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAppInstanceRequestRequestTypeDef
-
-def get_value() -> CreateAppInstanceRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "ClientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppInstanceRequestRequestTypeDef(TypedDict):
-    Name: str,
-    ClientRequestToken: str,
-    Metadata: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAppInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAppInstanceResponseTypeDef
-
-def get_value() -> CreateAppInstanceResponseTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppInstanceResponseTypeDef(TypedDict):
-    AppInstanceArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAppInstanceUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAppInstanceUserRequestRequestTypeDef
-
-def get_value() -> CreateAppInstanceUserRequestRequestTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "AppInstanceUserId": ...,
-        "Name": ...,
-        "ClientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppInstanceUserRequestRequestTypeDef(TypedDict):
-    AppInstanceArn: str,
-    AppInstanceUserId: str,
-    Name: str,
-    ClientRequestToken: str,
-    Metadata: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAppInstanceUserResponseTypeDef
-
-def get_value() -> CreateAppInstanceUserResponseTypeDef:
-    return {
-        "AppInstanceUserArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppInstanceUserResponseTypeDef(TypedDict):
-    AppInstanceUserArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAttendeeErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAttendeeErrorTypeDef
-
-def get_value() -> CreateAttendeeErrorTypeDef:
-    return {
-        "ExternalUserId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeErrorTypeDef(TypedDict):
-    ExternalUserId: NotRequired[str],
-    ErrorCode: NotRequired[str],
-    ErrorMessage: NotRequired[str],
-```
-
-## CreateAttendeeRequestItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAttendeeRequestItemTypeDef
-
-def get_value() -> CreateAttendeeRequestItemTypeDef:
-    return {
-        "ExternalUserId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeRequestItemTypeDef(TypedDict):
-    ExternalUserId: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAttendeeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAttendeeRequestRequestTypeDef
-
-def get_value() -> CreateAttendeeRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "ExternalUserId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    ExternalUserId: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAttendeeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateAttendeeResponseTypeDef
-
-def get_value() -> CreateAttendeeResponseTypeDef:
-    return {
-        "Attendee": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeResponseTypeDef(TypedDict):
-    Attendee: AttendeeTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1393,26 +713,6 @@ class CreateBotRequestRequestTypeDef(TypedDict):
     Domain: NotRequired[str],
 ```
 
-## CreateBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateBotResponseTypeDef
-
-def get_value() -> CreateBotResponseTypeDef:
-    return {
-        "Bot": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBotResponseTypeDef(TypedDict):
-    Bot: BotTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelBanRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1432,28 +732,6 @@ class CreateChannelBanRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## CreateChannelBanResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateChannelBanResponseTypeDef
-
-def get_value() -> CreateChannelBanResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "Member": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelBanResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    Member: IdentityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1476,28 +754,6 @@ class CreateChannelMembershipRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
-## CreateChannelMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateChannelMembershipResponseTypeDef
-
-def get_value() -> CreateChannelMembershipResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "Member": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelMembershipResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    Member: IdentityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelModeratorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1517,122 +773,6 @@ class CreateChannelModeratorRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## CreateChannelModeratorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateChannelModeratorResponseTypeDef
-
-def get_value() -> CreateChannelModeratorResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "ChannelModerator": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelModeratorResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    ChannelModerator: IdentityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateChannelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateChannelRequestRequestTypeDef
-
-def get_value() -> CreateChannelRequestRequestTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "Name": ...,
-        "ClientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelRequestRequestTypeDef(TypedDict):
-    AppInstanceArn: str,
-    Name: str,
-    ClientRequestToken: str,
-    Mode: NotRequired[ChannelModeType],  # (1)
-    Privacy: NotRequired[ChannelPrivacyType],  # (2)
-    Metadata: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    ChimeBearer: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
-2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateChannelResponseTypeDef
-
-def get_value() -> CreateChannelResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMediaCapturePipelineRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineRequestRequestTypeDef
-
-def get_value() -> CreateMediaCapturePipelineRequestRequestTypeDef:
-    return {
-        "SourceType": ...,
-        "SourceArn": ...,
-        "SinkType": ...,
-        "SinkArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMediaCapturePipelineRequestRequestTypeDef(TypedDict):
-    SourceType: MediaPipelineSourceTypeType,  # (1)
-    SourceArn: str,
-    SinkType: MediaPipelineSinkTypeType,  # (2)
-    SinkArn: str,
-    ClientRequestToken: NotRequired[str],
-    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
-2. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
-3. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
-## CreateMediaCapturePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineResponseTypeDef
-
-def get_value() -> CreateMediaCapturePipelineResponseTypeDef:
-    return {
-        "MediaCapturePipeline": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMediaCapturePipelineResponseTypeDef(TypedDict):
-    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMeetingDialOutRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1655,119 +795,23 @@ class CreateMeetingDialOutRequestRequestTypeDef(TypedDict):
     JoinToken: str,
 ```
 
-## CreateMeetingDialOutResponseTypeDef
+## MeetingNotificationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMeetingDialOutResponseTypeDef
+from mypy_boto3_chime.type_defs import MeetingNotificationConfigurationTypeDef
 
-def get_value() -> CreateMeetingDialOutResponseTypeDef:
+def get_value() -> MeetingNotificationConfigurationTypeDef:
     return {
-        "TransactionId": ...,
-        "ResponseMetadata": ...,
+        "SnsTopicArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateMeetingDialOutResponseTypeDef(TypedDict):
-    TransactionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class MeetingNotificationConfigurationTypeDef(TypedDict):
+    SnsTopicArn: NotRequired[str],
+    SqsQueueArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMeetingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMeetingRequestRequestTypeDef
-
-def get_value() -> CreateMeetingRequestRequestTypeDef:
-    return {
-        "ClientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeetingRequestRequestTypeDef(TypedDict):
-    ClientRequestToken: str,
-    ExternalMeetingId: NotRequired[str],
-    MeetingHostId: NotRequired[str],
-    MediaRegion: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    NotificationsConfiguration: NotRequired[MeetingNotificationConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
-## CreateMeetingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMeetingResponseTypeDef
-
-def get_value() -> CreateMeetingResponseTypeDef:
-    return {
-        "Meeting": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeetingResponseTypeDef(TypedDict):
-    Meeting: MeetingTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMeetingWithAttendeesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesRequestRequestTypeDef
-
-def get_value() -> CreateMeetingWithAttendeesRequestRequestTypeDef:
-    return {
-        "ClientRequestToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeetingWithAttendeesRequestRequestTypeDef(TypedDict):
-    ClientRequestToken: str,
-    ExternalMeetingId: NotRequired[str],
-    MeetingHostId: NotRequired[str],
-    MediaRegion: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    NotificationsConfiguration: NotRequired[MeetingNotificationConfigurationTypeDef],  # (2)
-    Attendees: NotRequired[Sequence[CreateAttendeeRequestItemTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
-3. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
-## CreateMeetingWithAttendeesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesResponseTypeDef
-
-def get_value() -> CreateMeetingWithAttendeesResponseTypeDef:
-    return {
-        "Meeting": ...,
-        "Attendees": ...,
-        "Errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeetingWithAttendeesResponseTypeDef(TypedDict):
-    Meeting: MeetingTypeDef,  # (1)
-    Attendees: List[AttendeeTypeDef],  # (2)
-    Errors: List[CreateAttendeeErrorTypeDef],  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
-2. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
-3. See [:material-code-braces: CreateAttendeeErrorTypeDef](./type_defs.md#createattendeeerrortypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePhoneNumberOrderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1787,75 +831,24 @@ class CreatePhoneNumberOrderRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
-## CreatePhoneNumberOrderResponseTypeDef
+## GeoMatchParamsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderResponseTypeDef
+from mypy_boto3_chime.type_defs import GeoMatchParamsTypeDef
 
-def get_value() -> CreatePhoneNumberOrderResponseTypeDef:
+def get_value() -> GeoMatchParamsTypeDef:
     return {
-        "PhoneNumberOrder": ...,
-        "ResponseMetadata": ...,
+        "Country": ...,
+        "AreaCode": ...,
     }
 ```
 
 ```python title="Definition"
-class CreatePhoneNumberOrderResponseTypeDef(TypedDict):
-    PhoneNumberOrder: PhoneNumberOrderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GeoMatchParamsTypeDef(TypedDict):
+    Country: str,
+    AreaCode: str,
 ```
 
-1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProxySessionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateProxySessionRequestRequestTypeDef
-
-def get_value() -> CreateProxySessionRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "ParticipantPhoneNumbers": ...,
-        "Capabilities": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProxySessionRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    ParticipantPhoneNumbers: Sequence[str],
-    Capabilities: Sequence[CapabilityType],  # (1)
-    Name: NotRequired[str],
-    ExpiryMinutes: NotRequired[int],
-    NumberSelectionBehavior: NotRequired[NumberSelectionBehaviorType],  # (2)
-    GeoMatchLevel: NotRequired[GeoMatchLevelType],  # (3)
-    GeoMatchParams: NotRequired[GeoMatchParamsTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
-2. See [:material-code-brackets: NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype) 
-3. See [:material-code-brackets: GeoMatchLevelType](./literals.md#geomatchleveltype) 
-4. See [:material-code-braces: GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef) 
-## CreateProxySessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateProxySessionResponseTypeDef
-
-def get_value() -> CreateProxySessionResponseTypeDef:
-    return {
-        "ProxySession": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProxySessionResponseTypeDef(TypedDict):
-    ProxySession: ProxySessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRoomMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1878,26 +871,6 @@ class CreateRoomMembershipRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
-## CreateRoomMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateRoomMembershipResponseTypeDef
-
-def get_value() -> CreateRoomMembershipResponseTypeDef:
-    return {
-        "RoomMembership": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRoomMembershipResponseTypeDef(TypedDict):
-    RoomMembership: RoomMembershipTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRoomRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1917,26 +890,27 @@ class CreateRoomRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
 ```
 
-## CreateRoomResponseTypeDef
+## RoomTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateRoomResponseTypeDef
+from mypy_boto3_chime.type_defs import RoomTypeDef
 
-def get_value() -> CreateRoomResponseTypeDef:
+def get_value() -> RoomTypeDef:
     return {
-        "Room": ...,
-        "ResponseMetadata": ...,
+        "RoomId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateRoomResponseTypeDef(TypedDict):
-    Room: RoomTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RoomTypeDef(TypedDict):
+    RoomId: NotRequired[str],
+    Name: NotRequired[str],
+    AccountId: NotRequired[str],
+    CreatedBy: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSipMediaApplicationCallRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1958,112 +932,56 @@ class CreateSipMediaApplicationCallRequestRequestTypeDef(TypedDict):
     SipHeaders: NotRequired[Mapping[str, str]],
 ```
 
-## CreateSipMediaApplicationCallResponseTypeDef
+## SipMediaApplicationCallTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallResponseTypeDef
+from mypy_boto3_chime.type_defs import SipMediaApplicationCallTypeDef
 
-def get_value() -> CreateSipMediaApplicationCallResponseTypeDef:
+def get_value() -> SipMediaApplicationCallTypeDef:
     return {
-        "SipMediaApplicationCall": ...,
-        "ResponseMetadata": ...,
+        "TransactionId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateSipMediaApplicationCallResponseTypeDef(TypedDict):
-    SipMediaApplicationCall: SipMediaApplicationCallTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SipMediaApplicationCallTypeDef(TypedDict):
+    TransactionId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: SipMediaApplicationCallTypeDef](./type_defs.md#sipmediaapplicationcalltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSipMediaApplicationRequestRequestTypeDef
+## SipMediaApplicationEndpointTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationRequestRequestTypeDef
+from mypy_boto3_chime.type_defs import SipMediaApplicationEndpointTypeDef
 
-def get_value() -> CreateSipMediaApplicationRequestRequestTypeDef:
+def get_value() -> SipMediaApplicationEndpointTypeDef:
     return {
-        "AwsRegion": ...,
-        "Name": ...,
-        "Endpoints": ...,
+        "LambdaArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateSipMediaApplicationRequestRequestTypeDef(TypedDict):
-    AwsRegion: str,
-    Name: str,
-    Endpoints: Sequence[SipMediaApplicationEndpointTypeDef],  # (1)
+class SipMediaApplicationEndpointTypeDef(TypedDict):
+    LambdaArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
-## CreateSipMediaApplicationResponseTypeDef
+## SipRuleTargetApplicationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationResponseTypeDef
+from mypy_boto3_chime.type_defs import SipRuleTargetApplicationTypeDef
 
-def get_value() -> CreateSipMediaApplicationResponseTypeDef:
+def get_value() -> SipRuleTargetApplicationTypeDef:
     return {
-        "SipMediaApplication": ...,
-        "ResponseMetadata": ...,
+        "SipMediaApplicationId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateSipMediaApplicationResponseTypeDef(TypedDict):
-    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SipRuleTargetApplicationTypeDef(TypedDict):
+    SipMediaApplicationId: NotRequired[str],
+    Priority: NotRequired[int],
+    AwsRegion: NotRequired[str],
 ```
 
-1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSipRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateSipRuleRequestRequestTypeDef
-
-def get_value() -> CreateSipRuleRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "TriggerType": ...,
-        "TriggerValue": ...,
-        "TargetApplications": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSipRuleRequestRequestTypeDef(TypedDict):
-    Name: str,
-    TriggerType: SipRuleTriggerTypeType,  # (1)
-    TriggerValue: str,
-    TargetApplications: Sequence[SipRuleTargetApplicationTypeDef],  # (2)
-    Disabled: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype) 
-2. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
-## CreateSipRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateSipRuleResponseTypeDef
-
-def get_value() -> CreateSipRuleResponseTypeDef:
-    return {
-        "SipRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSipRuleResponseTypeDef(TypedDict):
-    SipRule: SipRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2084,64 +1002,24 @@ class CreateUserRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
-## CreateUserResponseTypeDef
+## VoiceConnectorItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateUserResponseTypeDef
+from mypy_boto3_chime.type_defs import VoiceConnectorItemTypeDef
 
-def get_value() -> CreateUserResponseTypeDef:
+def get_value() -> VoiceConnectorItemTypeDef:
     return {
-        "User": ...,
-        "ResponseMetadata": ...,
+        "VoiceConnectorId": ...,
+        "Priority": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateUserResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VoiceConnectorItemTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    Priority: int,
 ```
 
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateVoiceConnectorGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupRequestRequestTypeDef
-
-def get_value() -> CreateVoiceConnectorGroupRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateVoiceConnectorGroupRequestRequestTypeDef(TypedDict):
-    Name: str,
-    VoiceConnectorItems: NotRequired[Sequence[VoiceConnectorItemTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
-## CreateVoiceConnectorGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupResponseTypeDef
-
-def get_value() -> CreateVoiceConnectorGroupResponseTypeDef:
-    return {
-        "VoiceConnectorGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateVoiceConnectorGroupResponseTypeDef(TypedDict):
-    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVoiceConnectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2162,26 +1040,30 @@ class CreateVoiceConnectorRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype) 
-## CreateVoiceConnectorResponseTypeDef
+## VoiceConnectorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorResponseTypeDef
+from mypy_boto3_chime.type_defs import VoiceConnectorTypeDef
 
-def get_value() -> CreateVoiceConnectorResponseTypeDef:
+def get_value() -> VoiceConnectorTypeDef:
     return {
-        "VoiceConnector": ...,
-        "ResponseMetadata": ...,
+        "VoiceConnectorId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateVoiceConnectorResponseTypeDef(TypedDict):
-    VoiceConnector: VoiceConnectorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VoiceConnectorTypeDef(TypedDict):
+    VoiceConnectorId: NotRequired[str],
+    AwsRegion: NotRequired[VoiceConnectorAwsRegionType],  # (1)
+    Name: NotRequired[str],
+    OutboundHostName: NotRequired[str],
+    RequireEncryption: NotRequired[bool],
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+    VoiceConnectorArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype) 
 ## CredentialTypeDef
 
 ```python title="Usage Example"
@@ -2713,26 +1595,6 @@ class DescribeAppInstanceAdminRequestRequestTypeDef(TypedDict):
     AppInstanceArn: str,
 ```
 
-## DescribeAppInstanceAdminResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminResponseTypeDef
-
-def get_value() -> DescribeAppInstanceAdminResponseTypeDef:
-    return {
-        "AppInstanceAdmin": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAppInstanceAdminResponseTypeDef(TypedDict):
-    AppInstanceAdmin: AppInstanceAdminTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceAdminTypeDef](./type_defs.md#appinstanceadmintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2749,26 +1611,6 @@ class DescribeAppInstanceRequestRequestTypeDef(TypedDict):
     AppInstanceArn: str,
 ```
 
-## DescribeAppInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeAppInstanceResponseTypeDef
-
-def get_value() -> DescribeAppInstanceResponseTypeDef:
-    return {
-        "AppInstance": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAppInstanceResponseTypeDef(TypedDict):
-    AppInstance: AppInstanceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceTypeDef](./type_defs.md#appinstancetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2785,26 +1627,6 @@ class DescribeAppInstanceUserRequestRequestTypeDef(TypedDict):
     AppInstanceUserArn: str,
 ```
 
-## DescribeAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeAppInstanceUserResponseTypeDef
-
-def get_value() -> DescribeAppInstanceUserResponseTypeDef:
-    return {
-        "AppInstanceUser": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAppInstanceUserResponseTypeDef(TypedDict):
-    AppInstanceUser: AppInstanceUserTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceUserTypeDef](./type_defs.md#appinstanceusertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelBanRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2824,26 +1646,6 @@ class DescribeChannelBanRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelBanResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelBanResponseTypeDef
-
-def get_value() -> DescribeChannelBanResponseTypeDef:
-    return {
-        "ChannelBan": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelBanResponseTypeDef(TypedDict):
-    ChannelBan: ChannelBanTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelBanTypeDef](./type_defs.md#channelbantypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2863,26 +1665,6 @@ class DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef(TypedDict
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelMembershipForAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserResponseTypeDef
-
-def get_value() -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:
-    return {
-        "ChannelMembership": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelMembershipForAppInstanceUserResponseTypeDef(TypedDict):
-    ChannelMembership: ChannelMembershipForAppInstanceUserSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2902,26 +1684,6 @@ class DescribeChannelMembershipRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipResponseTypeDef
-
-def get_value() -> DescribeChannelMembershipResponseTypeDef:
-    return {
-        "ChannelMembership": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelMembershipResponseTypeDef(TypedDict):
-    ChannelMembership: ChannelMembershipTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMembershipTypeDef](./type_defs.md#channelmembershiptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2941,26 +1703,6 @@ class DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelModeratedByAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserResponseTypeDef
-
-def get_value() -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:
-    return {
-        "Channel": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelModeratedByAppInstanceUserResponseTypeDef(TypedDict):
-    Channel: ChannelModeratedByAppInstanceUserSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelModeratorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2980,26 +1722,6 @@ class DescribeChannelModeratorRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelModeratorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelModeratorResponseTypeDef
-
-def get_value() -> DescribeChannelModeratorResponseTypeDef:
-    return {
-        "ChannelModerator": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelModeratorResponseTypeDef(TypedDict):
-    ChannelModerator: ChannelModeratorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelModeratorTypeDef](./type_defs.md#channelmoderatortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3017,26 +1739,6 @@ class DescribeChannelRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## DescribeChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DescribeChannelResponseTypeDef
-
-def get_value() -> DescribeChannelResponseTypeDef:
-    return {
-        "Channel": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelResponseTypeDef(TypedDict):
-    Channel: ChannelTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociatePhoneNumberFromUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3073,26 +1775,6 @@ class DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef(Typed
     E164PhoneNumbers: Sequence[str],
 ```
 
-## DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
-
-def get_value() -> DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef:
-    return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3111,26 +1793,6 @@ class DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef(TypedDict)
     E164PhoneNumbers: Sequence[str],
 ```
 
-## DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
-
-def get_value() -> DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef:
-    return {
-        "PhoneNumberErrors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef(TypedDict):
-    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3149,23 +1811,6 @@ class DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef(TypedDict
     GroupNames: Sequence[str],
 ```
 
-## EmergencyCallingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import EmergencyCallingConfigurationTypeDef
-
-def get_value() -> EmergencyCallingConfigurationTypeDef:
-    return {
-        "DNIS": ...,
-    }
-```
-
-```python title="Definition"
-class EmergencyCallingConfigurationTypeDef(TypedDict):
-    DNIS: NotRequired[List[DNISEmergencyCallingConfigurationTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DNISEmergencyCallingConfigurationTypeDef](./type_defs.md#dnisemergencycallingconfigurationtypedef) 
 ## EngineTranscribeMedicalSettingsTypeDef
 
 ```python title="Usage Example"
@@ -3244,24 +1889,6 @@ class EventsConfigurationTypeDef(TypedDict):
     LambdaFunctionArn: NotRequired[str],
 ```
 
-## GeoMatchParamsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GeoMatchParamsTypeDef
-
-def get_value() -> GeoMatchParamsTypeDef:
-    return {
-        "Country": ...,
-        "AreaCode": ...,
-    }
-```
-
-```python title="Definition"
-class GeoMatchParamsTypeDef(TypedDict):
-    Country: str,
-    AreaCode: str,
-```
-
 ## GetAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3278,26 +1905,6 @@ class GetAccountRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
-## GetAccountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetAccountResponseTypeDef
-
-def get_value() -> GetAccountResponseTypeDef:
-    return {
-        "Account": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccountResponseTypeDef(TypedDict):
-    Account: AccountTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccountSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3314,26 +1921,6 @@ class GetAccountSettingsRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
-## GetAccountSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetAccountSettingsResponseTypeDef
-
-def get_value() -> GetAccountSettingsResponseTypeDef:
-    return {
-        "AccountSettings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccountSettingsResponseTypeDef(TypedDict):
-    AccountSettings: AccountSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3350,28 +1937,6 @@ class GetAppInstanceRetentionSettingsRequestRequestTypeDef(TypedDict):
     AppInstanceArn: str,
 ```
 
-## GetAppInstanceRetentionSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsResponseTypeDef
-
-def get_value() -> GetAppInstanceRetentionSettingsResponseTypeDef:
-    return {
-        "AppInstanceRetentionSettings": ...,
-        "InitiateDeletionTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAppInstanceRetentionSettingsResponseTypeDef(TypedDict):
-    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
-    InitiateDeletionTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppInstanceStreamingConfigurationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3388,26 +1953,6 @@ class GetAppInstanceStreamingConfigurationsRequestRequestTypeDef(TypedDict):
     AppInstanceArn: str,
 ```
 
-## GetAppInstanceStreamingConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsResponseTypeDef
-
-def get_value() -> GetAppInstanceStreamingConfigurationsResponseTypeDef:
-    return {
-        "AppInstanceStreamingConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAppInstanceStreamingConfigurationsResponseTypeDef(TypedDict):
-    AppInstanceStreamingConfigurations: List[AppInstanceStreamingConfigurationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAttendeeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3426,26 +1971,6 @@ class GetAttendeeRequestRequestTypeDef(TypedDict):
     AttendeeId: str,
 ```
 
-## GetAttendeeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetAttendeeResponseTypeDef
-
-def get_value() -> GetAttendeeResponseTypeDef:
-    return {
-        "Attendee": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAttendeeResponseTypeDef(TypedDict):
-    Attendee: AttendeeTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3464,26 +1989,6 @@ class GetBotRequestRequestTypeDef(TypedDict):
     BotId: str,
 ```
 
-## GetBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetBotResponseTypeDef
-
-def get_value() -> GetBotResponseTypeDef:
-    return {
-        "Bot": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBotResponseTypeDef(TypedDict):
-    Bot: BotTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChannelMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3503,26 +2008,6 @@ class GetChannelMessageRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## GetChannelMessageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetChannelMessageResponseTypeDef
-
-def get_value() -> GetChannelMessageResponseTypeDef:
-    return {
-        "ChannelMessage": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetChannelMessageResponseTypeDef(TypedDict):
-    ChannelMessage: ChannelMessageTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEventsConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3541,49 +2026,22 @@ class GetEventsConfigurationRequestRequestTypeDef(TypedDict):
     BotId: str,
 ```
 
-## GetEventsConfigurationResponseTypeDef
+## VoiceConnectorSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetEventsConfigurationResponseTypeDef
+from mypy_boto3_chime.type_defs import VoiceConnectorSettingsTypeDef
 
-def get_value() -> GetEventsConfigurationResponseTypeDef:
+def get_value() -> VoiceConnectorSettingsTypeDef:
     return {
-        "EventsConfiguration": ...,
-        "ResponseMetadata": ...,
+        "CdrBucket": ...,
     }
 ```
 
 ```python title="Definition"
-class GetEventsConfigurationResponseTypeDef(TypedDict):
-    EventsConfiguration: EventsConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VoiceConnectorSettingsTypeDef(TypedDict):
+    CdrBucket: NotRequired[str],
 ```
 
-1. See [:material-code-braces: EventsConfigurationTypeDef](./type_defs.md#eventsconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetGlobalSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetGlobalSettingsResponseTypeDef
-
-def get_value() -> GetGlobalSettingsResponseTypeDef:
-    return {
-        "BusinessCalling": ...,
-        "VoiceConnector": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetGlobalSettingsResponseTypeDef(TypedDict):
-    BusinessCalling: BusinessCallingSettingsTypeDef,  # (1)
-    VoiceConnector: VoiceConnectorSettingsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef) 
-2. See [:material-code-braces: VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMediaCapturePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3600,26 +2058,6 @@ class GetMediaCapturePipelineRequestRequestTypeDef(TypedDict):
     MediaPipelineId: str,
 ```
 
-## GetMediaCapturePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetMediaCapturePipelineResponseTypeDef
-
-def get_value() -> GetMediaCapturePipelineResponseTypeDef:
-    return {
-        "MediaCapturePipeline": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMediaCapturePipelineResponseTypeDef(TypedDict):
-    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMeetingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3636,46 +2074,22 @@ class GetMeetingRequestRequestTypeDef(TypedDict):
     MeetingId: str,
 ```
 
-## GetMeetingResponseTypeDef
+## MessagingSessionEndpointTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetMeetingResponseTypeDef
+from mypy_boto3_chime.type_defs import MessagingSessionEndpointTypeDef
 
-def get_value() -> GetMeetingResponseTypeDef:
+def get_value() -> MessagingSessionEndpointTypeDef:
     return {
-        "Meeting": ...,
-        "ResponseMetadata": ...,
+        "Url": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMeetingResponseTypeDef(TypedDict):
-    Meeting: MeetingTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MessagingSessionEndpointTypeDef(TypedDict):
+    Url: NotRequired[str],
 ```
 
-1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMessagingSessionEndpointResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetMessagingSessionEndpointResponseTypeDef
-
-def get_value() -> GetMessagingSessionEndpointResponseTypeDef:
-    return {
-        "Endpoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMessagingSessionEndpointResponseTypeDef(TypedDict):
-    Endpoint: MessagingSessionEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MessagingSessionEndpointTypeDef](./type_defs.md#messagingsessionendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPhoneNumberOrderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3692,26 +2106,6 @@ class GetPhoneNumberOrderRequestRequestTypeDef(TypedDict):
     PhoneNumberOrderId: str,
 ```
 
-## GetPhoneNumberOrderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetPhoneNumberOrderResponseTypeDef
-
-def get_value() -> GetPhoneNumberOrderResponseTypeDef:
-    return {
-        "PhoneNumberOrder": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPhoneNumberOrderResponseTypeDef(TypedDict):
-    PhoneNumberOrder: PhoneNumberOrderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPhoneNumberRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3728,47 +2122,6 @@ class GetPhoneNumberRequestRequestTypeDef(TypedDict):
     PhoneNumberId: str,
 ```
 
-## GetPhoneNumberResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetPhoneNumberResponseTypeDef
-
-def get_value() -> GetPhoneNumberResponseTypeDef:
-    return {
-        "PhoneNumber": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPhoneNumberResponseTypeDef(TypedDict):
-    PhoneNumber: PhoneNumberTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetPhoneNumberSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetPhoneNumberSettingsResponseTypeDef
-
-def get_value() -> GetPhoneNumberSettingsResponseTypeDef:
-    return {
-        "CallingName": ...,
-        "CallingNameUpdatedTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPhoneNumberSettingsResponseTypeDef(TypedDict):
-    CallingName: str,
-    CallingNameUpdatedTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProxySessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3787,26 +2140,6 @@ class GetProxySessionRequestRequestTypeDef(TypedDict):
     ProxySessionId: str,
 ```
 
-## GetProxySessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetProxySessionResponseTypeDef
-
-def get_value() -> GetProxySessionResponseTypeDef:
-    return {
-        "ProxySession": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetProxySessionResponseTypeDef(TypedDict):
-    ProxySession: ProxySessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRetentionSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3823,28 +2156,6 @@ class GetRetentionSettingsRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
-## GetRetentionSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetRetentionSettingsResponseTypeDef
-
-def get_value() -> GetRetentionSettingsResponseTypeDef:
-    return {
-        "RetentionSettings": ...,
-        "InitiateDeletionTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRetentionSettingsResponseTypeDef(TypedDict):
-    RetentionSettings: RetentionSettingsTypeDef,  # (1)
-    InitiateDeletionTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRoomRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3863,26 +2174,6 @@ class GetRoomRequestRequestTypeDef(TypedDict):
     RoomId: str,
 ```
 
-## GetRoomResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetRoomResponseTypeDef
-
-def get_value() -> GetRoomResponseTypeDef:
-    return {
-        "Room": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRoomResponseTypeDef(TypedDict):
-    Room: RoomTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3899,26 +2190,22 @@ class GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef(TypedDict)
     SipMediaApplicationId: str,
 ```
 
-## GetSipMediaApplicationLoggingConfigurationResponseTypeDef
+## SipMediaApplicationLoggingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationResponseTypeDef
+from mypy_boto3_chime.type_defs import SipMediaApplicationLoggingConfigurationTypeDef
 
-def get_value() -> GetSipMediaApplicationLoggingConfigurationResponseTypeDef:
+def get_value() -> SipMediaApplicationLoggingConfigurationTypeDef:
     return {
-        "SipMediaApplicationLoggingConfiguration": ...,
-        "ResponseMetadata": ...,
+        "EnableSipMediaApplicationMessageLogs": ...,
     }
 ```
 
 ```python title="Definition"
-class GetSipMediaApplicationLoggingConfigurationResponseTypeDef(TypedDict):
-    SipMediaApplicationLoggingConfiguration: SipMediaApplicationLoggingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SipMediaApplicationLoggingConfigurationTypeDef(TypedDict):
+    EnableSipMediaApplicationMessageLogs: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSipMediaApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3935,26 +2222,6 @@ class GetSipMediaApplicationRequestRequestTypeDef(TypedDict):
     SipMediaApplicationId: str,
 ```
 
-## GetSipMediaApplicationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationResponseTypeDef
-
-def get_value() -> GetSipMediaApplicationResponseTypeDef:
-    return {
-        "SipMediaApplication": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSipMediaApplicationResponseTypeDef(TypedDict):
-    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSipRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3971,26 +2238,6 @@ class GetSipRuleRequestRequestTypeDef(TypedDict):
     SipRuleId: str,
 ```
 
-## GetSipRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetSipRuleResponseTypeDef
-
-def get_value() -> GetSipRuleResponseTypeDef:
-    return {
-        "SipRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSipRuleResponseTypeDef(TypedDict):
-    SipRule: SipRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4009,26 +2256,6 @@ class GetUserRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## GetUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetUserResponseTypeDef
-
-def get_value() -> GetUserResponseTypeDef:
-    return {
-        "User": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetUserResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4047,26 +2274,6 @@ class GetUserSettingsRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## GetUserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetUserSettingsResponseTypeDef
-
-def get_value() -> GetUserSettingsResponseTypeDef:
-    return {
-        "UserSettings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetUserSettingsResponseTypeDef(TypedDict):
-    UserSettings: UserSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4083,26 +2290,6 @@ class GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef(TypedD
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
-
-def get_value() -> GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
-    return {
-        "EmergencyCallingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef(TypedDict):
-    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4119,26 +2306,6 @@ class GetVoiceConnectorGroupRequestRequestTypeDef(TypedDict):
     VoiceConnectorGroupId: str,
 ```
 
-## GetVoiceConnectorGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupResponseTypeDef
-
-def get_value() -> GetVoiceConnectorGroupResponseTypeDef:
-    return {
-        "VoiceConnectorGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVoiceConnectorGroupResponseTypeDef(TypedDict):
-    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4155,26 +2322,23 @@ class GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorLoggingConfigurationResponseTypeDef
+## LoggingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationResponseTypeDef
+from mypy_boto3_chime.type_defs import LoggingConfigurationTypeDef
 
-def get_value() -> GetVoiceConnectorLoggingConfigurationResponseTypeDef:
+def get_value() -> LoggingConfigurationTypeDef:
     return {
-        "LoggingConfiguration": ...,
-        "ResponseMetadata": ...,
+        "EnableSIPLogs": ...,
     }
 ```
 
 ```python title="Definition"
-class GetVoiceConnectorLoggingConfigurationResponseTypeDef(TypedDict):
-    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LoggingConfigurationTypeDef(TypedDict):
+    EnableSIPLogs: NotRequired[bool],
+    EnableMediaMetricLogs: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorOriginationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4191,26 +2355,6 @@ class GetVoiceConnectorOriginationRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorOriginationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationResponseTypeDef
-
-def get_value() -> GetVoiceConnectorOriginationResponseTypeDef:
-    return {
-        "Origination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVoiceConnectorOriginationResponseTypeDef(TypedDict):
-    Origination: OriginationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorProxyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4227,26 +2371,25 @@ class GetVoiceConnectorProxyRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorProxyResponseTypeDef
+## ProxyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyResponseTypeDef
+from mypy_boto3_chime.type_defs import ProxyTypeDef
 
-def get_value() -> GetVoiceConnectorProxyResponseTypeDef:
+def get_value() -> ProxyTypeDef:
     return {
-        "Proxy": ...,
-        "ResponseMetadata": ...,
+        "DefaultSessionExpiryMinutes": ...,
     }
 ```
 
 ```python title="Definition"
-class GetVoiceConnectorProxyResponseTypeDef(TypedDict):
-    Proxy: ProxyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ProxyTypeDef(TypedDict):
+    DefaultSessionExpiryMinutes: NotRequired[int],
+    Disabled: NotRequired[bool],
+    FallBackPhoneNumber: NotRequired[str],
+    PhoneNumberCountries: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: ProxyTypeDef](./type_defs.md#proxytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4263,26 +2406,6 @@ class GetVoiceConnectorRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorResponseTypeDef
-
-def get_value() -> GetVoiceConnectorResponseTypeDef:
-    return {
-        "VoiceConnector": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVoiceConnectorResponseTypeDef(TypedDict):
-    VoiceConnector: VoiceConnectorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4299,26 +2422,6 @@ class GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorStreamingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationResponseTypeDef
-
-def get_value() -> GetVoiceConnectorStreamingConfigurationResponseTypeDef:
-    return {
-        "StreamingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVoiceConnectorStreamingConfigurationResponseTypeDef(TypedDict):
-    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorTerminationHealthRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4335,26 +2438,23 @@ class GetVoiceConnectorTerminationHealthRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorTerminationHealthResponseTypeDef
+## TerminationHealthTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthResponseTypeDef
+from mypy_boto3_chime.type_defs import TerminationHealthTypeDef
 
-def get_value() -> GetVoiceConnectorTerminationHealthResponseTypeDef:
+def get_value() -> TerminationHealthTypeDef:
     return {
-        "TerminationHealth": ...,
-        "ResponseMetadata": ...,
+        "Timestamp": ...,
     }
 ```
 
 ```python title="Definition"
-class GetVoiceConnectorTerminationHealthResponseTypeDef(TypedDict):
-    TerminationHealth: TerminationHealthTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TerminationHealthTypeDef(TypedDict):
+    Timestamp: NotRequired[datetime],
+    Source: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TerminationHealthTypeDef](./type_defs.md#terminationhealthtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVoiceConnectorTerminationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4371,41 +2471,24 @@ class GetVoiceConnectorTerminationRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## GetVoiceConnectorTerminationResponseTypeDef
+## TerminationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationResponseTypeDef
+from mypy_boto3_chime.type_defs import TerminationTypeDef
 
-def get_value() -> GetVoiceConnectorTerminationResponseTypeDef:
+def get_value() -> TerminationTypeDef:
     return {
-        "Termination": ...,
-        "ResponseMetadata": ...,
+        "CpsLimit": ...,
     }
 ```
 
 ```python title="Definition"
-class GetVoiceConnectorTerminationResponseTypeDef(TypedDict):
-    Termination: TerminationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IdentityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import IdentityTypeDef
-
-def get_value() -> IdentityTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
+class TerminationTypeDef(TypedDict):
+    CpsLimit: NotRequired[int],
+    DefaultPhoneNumber: NotRequired[str],
+    CallingRegions: NotRequired[List[str]],
+    CidrAllowedList: NotRequired[List[str]],
+    Disabled: NotRequired[bool],
 ```
 
 ## InviteTypeDef
@@ -4449,45 +2532,24 @@ class InviteUsersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
-## InviteUsersResponseTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import InviteUsersResponseTypeDef
+from mypy_boto3_chime.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> InviteUsersResponseTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "Invites": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class InviteUsersResponseTypeDef(TypedDict):
-    Invites: List[InviteTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: InviteTypeDef](./type_defs.md#invitetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAccountsRequestListAccountsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAccountsRequestListAccountsPaginateTypeDef
-
-def get_value() -> ListAccountsRequestListAccountsPaginateTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccountsRequestListAccountsPaginateTypeDef(TypedDict):
-    Name: NotRequired[str],
-    UserEmail: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4507,28 +2569,6 @@ class ListAccountsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAccountsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAccountsResponseTypeDef
-
-def get_value() -> ListAccountsResponseTypeDef:
-    return {
-        "Accounts": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccountsResponseTypeDef(TypedDict):
-    Accounts: List[AccountTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppInstanceAdminsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4547,30 +2587,6 @@ class ListAppInstanceAdminsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListAppInstanceAdminsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAppInstanceAdminsResponseTypeDef
-
-def get_value() -> ListAppInstanceAdminsResponseTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "AppInstanceAdmins": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppInstanceAdminsResponseTypeDef(TypedDict):
-    AppInstanceArn: str,
-    AppInstanceAdmins: List[AppInstanceAdminSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceAdminSummaryTypeDef](./type_defs.md#appinstanceadminsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppInstanceUsersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4589,30 +2605,6 @@ class ListAppInstanceUsersRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListAppInstanceUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAppInstanceUsersResponseTypeDef
-
-def get_value() -> ListAppInstanceUsersResponseTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "AppInstanceUsers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppInstanceUsersResponseTypeDef(TypedDict):
-    AppInstanceArn: str,
-    AppInstanceUsers: List[AppInstanceUserSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceUserSummaryTypeDef](./type_defs.md#appinstanceusersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppInstancesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4630,28 +2622,6 @@ class ListAppInstancesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListAppInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAppInstancesResponseTypeDef
-
-def get_value() -> ListAppInstancesResponseTypeDef:
-    return {
-        "AppInstances": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppInstancesResponseTypeDef(TypedDict):
-    AppInstances: List[AppInstanceSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceSummaryTypeDef](./type_defs.md#appinstancesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAttendeeTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4670,26 +2640,6 @@ class ListAttendeeTagsRequestRequestTypeDef(TypedDict):
     AttendeeId: str,
 ```
 
-## ListAttendeeTagsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAttendeeTagsResponseTypeDef
-
-def get_value() -> ListAttendeeTagsResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttendeeTagsResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAttendeesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4708,28 +2658,6 @@ class ListAttendeesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAttendeesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListAttendeesResponseTypeDef
-
-def get_value() -> ListAttendeesResponseTypeDef:
-    return {
-        "Attendees": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttendeesResponseTypeDef(TypedDict):
-    Attendees: List[AttendeeTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4748,28 +2676,6 @@ class ListBotsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListBotsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListBotsResponseTypeDef
-
-def get_value() -> ListBotsResponseTypeDef:
-    return {
-        "Bots": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBotsResponseTypeDef(TypedDict):
-    Bots: List[BotTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelBansRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4789,30 +2695,6 @@ class ListChannelBansRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## ListChannelBansResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelBansResponseTypeDef
-
-def get_value() -> ListChannelBansResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "NextToken": ...,
-        "ChannelBans": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelBansResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    NextToken: str,
-    ChannelBans: List[ChannelBanSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelBanSummaryTypeDef](./type_defs.md#channelbansummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4832,28 +2714,6 @@ class ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## ListChannelMembershipsForAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserResponseTypeDef
-
-def get_value() -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:
-    return {
-        "ChannelMemberships": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelMembershipsForAppInstanceUserResponseTypeDef(TypedDict):
-    ChannelMemberships: List[ChannelMembershipForAppInstanceUserSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMembershipsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4875,30 +2735,6 @@ class ListChannelMembershipsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
-## ListChannelMembershipsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelMembershipsResponseTypeDef
-
-def get_value() -> ListChannelMembershipsResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "ChannelMemberships": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelMembershipsResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    ChannelMemberships: List[ChannelMembershipSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMembershipSummaryTypeDef](./type_defs.md#channelmembershipsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMessagesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4922,30 +2758,6 @@ class ListChannelMessagesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## ListChannelMessagesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelMessagesResponseTypeDef
-
-def get_value() -> ListChannelMessagesResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "NextToken": ...,
-        "ChannelMessages": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelMessagesResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    NextToken: str,
-    ChannelMessages: List[ChannelMessageSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelMessageSummaryTypeDef](./type_defs.md#channelmessagesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelModeratorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4965,30 +2777,6 @@ class ListChannelModeratorsRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## ListChannelModeratorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelModeratorsResponseTypeDef
-
-def get_value() -> ListChannelModeratorsResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "NextToken": ...,
-        "ChannelModerators": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelModeratorsResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    NextToken: str,
-    ChannelModerators: List[ChannelModeratorSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelModeratorSummaryTypeDef](./type_defs.md#channelmoderatorsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5008,28 +2796,6 @@ class ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## ListChannelsModeratedByAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserResponseTypeDef
-
-def get_value() -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:
-    return {
-        "Channels": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsModeratedByAppInstanceUserResponseTypeDef(TypedDict):
-    Channels: List[ChannelModeratedByAppInstanceUserSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5051,28 +2817,6 @@ class ListChannelsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
-## ListChannelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListChannelsResponseTypeDef
-
-def get_value() -> ListChannelsResponseTypeDef:
-    return {
-        "Channels": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsResponseTypeDef(TypedDict):
-    Channels: List[ChannelSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMediaCapturePipelinesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5090,28 +2834,6 @@ class ListMediaCapturePipelinesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListMediaCapturePipelinesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListMediaCapturePipelinesResponseTypeDef
-
-def get_value() -> ListMediaCapturePipelinesResponseTypeDef:
-    return {
-        "MediaCapturePipelines": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMediaCapturePipelinesResponseTypeDef(TypedDict):
-    MediaCapturePipelines: List[MediaCapturePipelineTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMeetingTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5128,26 +2850,6 @@ class ListMeetingTagsRequestRequestTypeDef(TypedDict):
     MeetingId: str,
 ```
 
-## ListMeetingTagsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListMeetingTagsResponseTypeDef
-
-def get_value() -> ListMeetingTagsResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMeetingTagsResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMeetingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5165,28 +2867,6 @@ class ListMeetingsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListMeetingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListMeetingsResponseTypeDef
-
-def get_value() -> ListMeetingsResponseTypeDef:
-    return {
-        "Meetings": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMeetingsResponseTypeDef(TypedDict):
-    Meetings: List[MeetingTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPhoneNumberOrdersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5204,28 +2884,6 @@ class ListPhoneNumberOrdersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListPhoneNumberOrdersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersResponseTypeDef
-
-def get_value() -> ListPhoneNumberOrdersResponseTypeDef:
-    return {
-        "PhoneNumberOrders": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPhoneNumberOrdersResponseTypeDef(TypedDict):
-    PhoneNumberOrders: List[PhoneNumberOrderTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPhoneNumbersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5250,28 +2908,6 @@ class ListPhoneNumbersRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: PhoneNumberStatusType](./literals.md#phonenumberstatustype) 
 2. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
 3. See [:material-code-brackets: PhoneNumberAssociationNameType](./literals.md#phonenumberassociationnametype) 
-## ListPhoneNumbersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListPhoneNumbersResponseTypeDef
-
-def get_value() -> ListPhoneNumbersResponseTypeDef:
-    return {
-        "PhoneNumbers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPhoneNumbersResponseTypeDef(TypedDict):
-    PhoneNumbers: List[PhoneNumberTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProxySessionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5292,28 +2928,6 @@ class ListProxySessionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProxySessionStatusType](./literals.md#proxysessionstatustype) 
-## ListProxySessionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListProxySessionsResponseTypeDef
-
-def get_value() -> ListProxySessionsResponseTypeDef:
-    return {
-        "ProxySessions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListProxySessionsResponseTypeDef(TypedDict):
-    ProxySessions: List[ProxySessionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRoomMembershipsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5334,28 +2948,6 @@ class ListRoomMembershipsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListRoomMembershipsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListRoomMembershipsResponseTypeDef
-
-def get_value() -> ListRoomMembershipsResponseTypeDef:
-    return {
-        "RoomMemberships": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoomMembershipsResponseTypeDef(TypedDict):
-    RoomMemberships: List[RoomMembershipTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRoomsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5375,28 +2967,6 @@ class ListRoomsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListRoomsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListRoomsResponseTypeDef
-
-def get_value() -> ListRoomsResponseTypeDef:
-    return {
-        "Rooms": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoomsResponseTypeDef(TypedDict):
-    Rooms: List[RoomTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSipMediaApplicationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5414,28 +2984,6 @@ class ListSipMediaApplicationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListSipMediaApplicationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListSipMediaApplicationsResponseTypeDef
-
-def get_value() -> ListSipMediaApplicationsResponseTypeDef:
-    return {
-        "SipMediaApplications": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSipMediaApplicationsResponseTypeDef(TypedDict):
-    SipMediaApplications: List[SipMediaApplicationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSipRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5454,28 +3002,6 @@ class ListSipRulesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListSipRulesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListSipRulesResponseTypeDef
-
-def get_value() -> ListSipRulesResponseTypeDef:
-    return {
-        "SipRules": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSipRulesResponseTypeDef(TypedDict):
-    SipRules: List[SipRuleTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSupportedPhoneNumberCountriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5493,26 +3019,24 @@ class ListSupportedPhoneNumberCountriesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
-## ListSupportedPhoneNumberCountriesResponseTypeDef
+## PhoneNumberCountryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesResponseTypeDef
+from mypy_boto3_chime.type_defs import PhoneNumberCountryTypeDef
 
-def get_value() -> ListSupportedPhoneNumberCountriesResponseTypeDef:
+def get_value() -> PhoneNumberCountryTypeDef:
     return {
-        "PhoneNumberCountries": ...,
-        "ResponseMetadata": ...,
+        "CountryCode": ...,
     }
 ```
 
 ```python title="Definition"
-class ListSupportedPhoneNumberCountriesResponseTypeDef(TypedDict):
-    PhoneNumberCountries: List[PhoneNumberCountryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PhoneNumberCountryTypeDef(TypedDict):
+    CountryCode: NotRequired[str],
+    SupportedPhoneNumberTypes: NotRequired[List[PhoneNumberTypeType]],  # (1)
 ```
 
-1. See [:material-code-braces: PhoneNumberCountryTypeDef](./type_defs.md#phonenumbercountrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5529,47 +3053,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceARN: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUsersRequestListUsersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListUsersRequestListUsersPaginateTypeDef
-
-def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
-    return {
-        "AccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
-    AccountId: str,
-    UserEmail: NotRequired[str],
-    UserType: NotRequired[UserTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5591,28 +3074,6 @@ class ListUsersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
-## ListUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListUsersResponseTypeDef
-
-def get_value() -> ListUsersResponseTypeDef:
-    return {
-        "Users": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersResponseTypeDef(TypedDict):
-    Users: List[UserTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVoiceConnectorGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5630,28 +3091,6 @@ class ListVoiceConnectorGroupsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListVoiceConnectorGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsResponseTypeDef
-
-def get_value() -> ListVoiceConnectorGroupsResponseTypeDef:
-    return {
-        "VoiceConnectorGroups": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListVoiceConnectorGroupsResponseTypeDef(TypedDict):
-    VoiceConnectorGroups: List[VoiceConnectorGroupTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5668,25 +3107,6 @@ class ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
 ```
 
-## ListVoiceConnectorTerminationCredentialsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsResponseTypeDef
-
-def get_value() -> ListVoiceConnectorTerminationCredentialsResponseTypeDef:
-    return {
-        "Usernames": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListVoiceConnectorTerminationCredentialsResponseTypeDef(TypedDict):
-    Usernames: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVoiceConnectorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5702,45 +3122,6 @@ def get_value() -> ListVoiceConnectorsRequestRequestTypeDef:
 class ListVoiceConnectorsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
-```
-
-## ListVoiceConnectorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ListVoiceConnectorsResponseTypeDef
-
-def get_value() -> ListVoiceConnectorsResponseTypeDef:
-    return {
-        "VoiceConnectors": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListVoiceConnectorsResponseTypeDef(TypedDict):
-    VoiceConnectors: List[VoiceConnectorTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LoggingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import LoggingConfigurationTypeDef
-
-def get_value() -> LoggingConfigurationTypeDef:
-    return {
-        "EnableSIPLogs": ...,
-    }
-```
-
-```python title="Definition"
-class LoggingConfigurationTypeDef(TypedDict):
-    EnableSIPLogs: NotRequired[bool],
-    EnableMediaMetricLogs: NotRequired[bool],
 ```
 
 ## LogoutUserRequestRequestTypeDef
@@ -5761,34 +3142,6 @@ class LogoutUserRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## MediaCapturePipelineTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MediaCapturePipelineTypeDef
-
-def get_value() -> MediaCapturePipelineTypeDef:
-    return {
-        "MediaPipelineId": ...,
-    }
-```
-
-```python title="Definition"
-class MediaCapturePipelineTypeDef(TypedDict):
-    MediaPipelineId: NotRequired[str],
-    SourceType: NotRequired[MediaPipelineSourceTypeType],  # (1)
-    SourceArn: NotRequired[str],
-    Status: NotRequired[MediaPipelineStatusType],  # (2)
-    SinkType: NotRequired[MediaPipelineSinkTypeType],  # (3)
-    SinkArn: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
-2. See [:material-code-brackets: MediaPipelineStatusType](./literals.md#mediapipelinestatustype) 
-3. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
-4. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
 ## MediaPlacementTypeDef
 
 ```python title="Usage Example"
@@ -5812,62 +3165,6 @@ class MediaPlacementTypeDef(TypedDict):
     EventIngestionUrl: NotRequired[str],
 ```
 
-## MeetingNotificationConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MeetingNotificationConfigurationTypeDef
-
-def get_value() -> MeetingNotificationConfigurationTypeDef:
-    return {
-        "SnsTopicArn": ...,
-    }
-```
-
-```python title="Definition"
-class MeetingNotificationConfigurationTypeDef(TypedDict):
-    SnsTopicArn: NotRequired[str],
-    SqsQueueArn: NotRequired[str],
-```
-
-## MeetingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MeetingTypeDef
-
-def get_value() -> MeetingTypeDef:
-    return {
-        "MeetingId": ...,
-    }
-```
-
-```python title="Definition"
-class MeetingTypeDef(TypedDict):
-    MeetingId: NotRequired[str],
-    ExternalMeetingId: NotRequired[str],
-    MediaPlacement: NotRequired[MediaPlacementTypeDef],  # (1)
-    MediaRegion: NotRequired[str],
-```
-
-1. See [:material-code-braces: MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef) 
-## MemberErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MemberErrorTypeDef
-
-def get_value() -> MemberErrorTypeDef:
-    return {
-        "MemberId": ...,
-    }
-```
-
-```python title="Definition"
-class MemberErrorTypeDef(TypedDict):
-    MemberId: NotRequired[str],
-    ErrorCode: NotRequired[ErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## MemberTypeDef
 
 ```python title="Usage Example"
@@ -5889,40 +3186,6 @@ class MemberTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-## MembershipItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MembershipItemTypeDef
-
-def get_value() -> MembershipItemTypeDef:
-    return {
-        "MemberId": ...,
-    }
-```
-
-```python title="Definition"
-class MembershipItemTypeDef(TypedDict):
-    MemberId: NotRequired[str],
-    Role: NotRequired[RoomMembershipRoleType],  # (1)
-```
-
-1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
-## MessagingSessionEndpointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import MessagingSessionEndpointTypeDef
-
-def get_value() -> MessagingSessionEndpointTypeDef:
-    return {
-        "Url": ...,
-    }
-```
-
-```python title="Definition"
-class MessagingSessionEndpointTypeDef(TypedDict):
-    Url: NotRequired[str],
-```
-
 ## OrderedPhoneNumberTypeDef
 
 ```python title="Usage Example"
@@ -5962,42 +3225,6 @@ class OriginationRouteTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OriginationRouteProtocolType](./literals.md#originationrouteprotocoltype) 
-## OriginationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import OriginationTypeDef
-
-def get_value() -> OriginationTypeDef:
-    return {
-        "Routes": ...,
-    }
-```
-
-```python title="Definition"
-class OriginationTypeDef(TypedDict):
-    Routes: NotRequired[List[OriginationRouteTypeDef]],  # (1)
-    Disabled: NotRequired[bool],
-```
-
-1. See [:material-code-braces: OriginationRouteTypeDef](./type_defs.md#originationroutetypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
 ## ParticipantTypeDef
 
 ```python title="Usage Example"
@@ -6055,234 +3282,6 @@ class PhoneNumberCapabilitiesTypeDef(TypedDict):
     OutboundMMS: NotRequired[bool],
 ```
 
-## PhoneNumberCountryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PhoneNumberCountryTypeDef
-
-def get_value() -> PhoneNumberCountryTypeDef:
-    return {
-        "CountryCode": ...,
-    }
-```
-
-```python title="Definition"
-class PhoneNumberCountryTypeDef(TypedDict):
-    CountryCode: NotRequired[str],
-    SupportedPhoneNumberTypes: NotRequired[List[PhoneNumberTypeType]],  # (1)
-```
-
-1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
-## PhoneNumberErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PhoneNumberErrorTypeDef
-
-def get_value() -> PhoneNumberErrorTypeDef:
-    return {
-        "PhoneNumberId": ...,
-    }
-```
-
-```python title="Definition"
-class PhoneNumberErrorTypeDef(TypedDict):
-    PhoneNumberId: NotRequired[str],
-    ErrorCode: NotRequired[ErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
-## PhoneNumberOrderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PhoneNumberOrderTypeDef
-
-def get_value() -> PhoneNumberOrderTypeDef:
-    return {
-        "PhoneNumberOrderId": ...,
-    }
-```
-
-```python title="Definition"
-class PhoneNumberOrderTypeDef(TypedDict):
-    PhoneNumberOrderId: NotRequired[str],
-    ProductType: NotRequired[PhoneNumberProductTypeType],  # (1)
-    Status: NotRequired[PhoneNumberOrderStatusType],  # (2)
-    OrderedPhoneNumbers: NotRequired[List[OrderedPhoneNumberTypeDef]],  # (3)
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
-2. See [:material-code-brackets: PhoneNumberOrderStatusType](./literals.md#phonenumberorderstatustype) 
-3. See [:material-code-braces: OrderedPhoneNumberTypeDef](./type_defs.md#orderedphonenumbertypedef) 
-## PhoneNumberTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PhoneNumberTypeDef
-
-def get_value() -> PhoneNumberTypeDef:
-    return {
-        "PhoneNumberId": ...,
-    }
-```
-
-```python title="Definition"
-class PhoneNumberTypeDef(TypedDict):
-    PhoneNumberId: NotRequired[str],
-    E164PhoneNumber: NotRequired[str],
-    Country: NotRequired[str],
-    Type: NotRequired[PhoneNumberTypeType],  # (1)
-    ProductType: NotRequired[PhoneNumberProductTypeType],  # (2)
-    Status: NotRequired[PhoneNumberStatusType],  # (3)
-    Capabilities: NotRequired[PhoneNumberCapabilitiesTypeDef],  # (4)
-    Associations: NotRequired[List[PhoneNumberAssociationTypeDef]],  # (5)
-    CallingName: NotRequired[str],
-    CallingNameStatus: NotRequired[CallingNameStatusType],  # (6)
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-    DeletionTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
-2. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
-3. See [:material-code-brackets: PhoneNumberStatusType](./literals.md#phonenumberstatustype) 
-4. See [:material-code-braces: PhoneNumberCapabilitiesTypeDef](./type_defs.md#phonenumbercapabilitiestypedef) 
-5. See [:material-code-braces: PhoneNumberAssociationTypeDef](./type_defs.md#phonenumberassociationtypedef) 
-6. See [:material-code-brackets: CallingNameStatusType](./literals.md#callingnamestatustype) 
-## ProxySessionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ProxySessionTypeDef
-
-def get_value() -> ProxySessionTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-    }
-```
-
-```python title="Definition"
-class ProxySessionTypeDef(TypedDict):
-    VoiceConnectorId: NotRequired[str],
-    ProxySessionId: NotRequired[str],
-    Name: NotRequired[str],
-    Status: NotRequired[ProxySessionStatusType],  # (1)
-    ExpiryMinutes: NotRequired[int],
-    Capabilities: NotRequired[List[CapabilityType]],  # (2)
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-    EndedTimestamp: NotRequired[datetime],
-    Participants: NotRequired[List[ParticipantTypeDef]],  # (3)
-    NumberSelectionBehavior: NotRequired[NumberSelectionBehaviorType],  # (4)
-    GeoMatchLevel: NotRequired[GeoMatchLevelType],  # (5)
-    GeoMatchParams: NotRequired[GeoMatchParamsTypeDef],  # (6)
-```
-
-1. See [:material-code-brackets: ProxySessionStatusType](./literals.md#proxysessionstatustype) 
-2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
-3. See [:material-code-braces: ParticipantTypeDef](./type_defs.md#participanttypedef) 
-4. See [:material-code-brackets: NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype) 
-5. See [:material-code-brackets: GeoMatchLevelType](./literals.md#geomatchleveltype) 
-6. See [:material-code-braces: GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef) 
-## ProxyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ProxyTypeDef
-
-def get_value() -> ProxyTypeDef:
-    return {
-        "DefaultSessionExpiryMinutes": ...,
-    }
-```
-
-```python title="Definition"
-class ProxyTypeDef(TypedDict):
-    DefaultSessionExpiryMinutes: NotRequired[int],
-    Disabled: NotRequired[bool],
-    FallBackPhoneNumber: NotRequired[str],
-    PhoneNumberCountries: NotRequired[List[str]],
-```
-
-## PutAppInstanceRetentionSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsRequestRequestTypeDef
-
-def get_value() -> PutAppInstanceRetentionSettingsRequestRequestTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "AppInstanceRetentionSettings": ...,
-    }
-```
-
-```python title="Definition"
-class PutAppInstanceRetentionSettingsRequestRequestTypeDef(TypedDict):
-    AppInstanceArn: str,
-    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
-## PutAppInstanceRetentionSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsResponseTypeDef
-
-def get_value() -> PutAppInstanceRetentionSettingsResponseTypeDef:
-    return {
-        "AppInstanceRetentionSettings": ...,
-        "InitiateDeletionTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutAppInstanceRetentionSettingsResponseTypeDef(TypedDict):
-    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
-    InitiateDeletionTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
-
-def get_value() -> PutAppInstanceStreamingConfigurationsRequestRequestTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "AppInstanceStreamingConfigurations": ...,
-    }
-```
-
-```python title="Definition"
-class PutAppInstanceStreamingConfigurationsRequestRequestTypeDef(TypedDict):
-    AppInstanceArn: str,
-    AppInstanceStreamingConfigurations: Sequence[AppInstanceStreamingConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
-## PutAppInstanceStreamingConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsResponseTypeDef
-
-def get_value() -> PutAppInstanceStreamingConfigurationsResponseTypeDef:
-    return {
-        "AppInstanceStreamingConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutAppInstanceStreamingConfigurationsResponseTypeDef(TypedDict):
-    AppInstanceStreamingConfigurations: List[AppInstanceStreamingConfigurationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutEventsConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6303,222 +3302,6 @@ class PutEventsConfigurationRequestRequestTypeDef(TypedDict):
     LambdaFunctionArn: NotRequired[str],
 ```
 
-## PutEventsConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutEventsConfigurationResponseTypeDef
-
-def get_value() -> PutEventsConfigurationResponseTypeDef:
-    return {
-        "EventsConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutEventsConfigurationResponseTypeDef(TypedDict):
-    EventsConfiguration: EventsConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventsConfigurationTypeDef](./type_defs.md#eventsconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutRetentionSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutRetentionSettingsRequestRequestTypeDef
-
-def get_value() -> PutRetentionSettingsRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "RetentionSettings": ...,
-    }
-```
-
-```python title="Definition"
-class PutRetentionSettingsRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    RetentionSettings: RetentionSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
-## PutRetentionSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutRetentionSettingsResponseTypeDef
-
-def get_value() -> PutRetentionSettingsResponseTypeDef:
-    return {
-        "RetentionSettings": ...,
-        "InitiateDeletionTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutRetentionSettingsResponseTypeDef(TypedDict):
-    RetentionSettings: RetentionSettingsTypeDef,  # (1)
-    InitiateDeletionTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
-
-def get_value() -> PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef:
-    return {
-        "SipMediaApplicationId": ...,
-    }
-```
-
-```python title="Definition"
-class PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef(TypedDict):
-    SipMediaApplicationId: str,
-    SipMediaApplicationLoggingConfiguration: NotRequired[SipMediaApplicationLoggingConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
-## PutSipMediaApplicationLoggingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationResponseTypeDef
-
-def get_value() -> PutSipMediaApplicationLoggingConfigurationResponseTypeDef:
-    return {
-        "SipMediaApplicationLoggingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutSipMediaApplicationLoggingConfigurationResponseTypeDef(TypedDict):
-    SipMediaApplicationLoggingConfiguration: SipMediaApplicationLoggingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "EmergencyCallingConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
-## PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
-
-def get_value() -> PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
-    return {
-        "EmergencyCallingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef(TypedDict):
-    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "LoggingConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
-## PutVoiceConnectorLoggingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationResponseTypeDef
-
-def get_value() -> PutVoiceConnectorLoggingConfigurationResponseTypeDef:
-    return {
-        "LoggingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorLoggingConfigurationResponseTypeDef(TypedDict):
-    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutVoiceConnectorOriginationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorOriginationRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "Origination": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorOriginationRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    Origination: OriginationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
-## PutVoiceConnectorOriginationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationResponseTypeDef
-
-def get_value() -> PutVoiceConnectorOriginationResponseTypeDef:
-    return {
-        "Origination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorOriginationResponseTypeDef(TypedDict):
-    Origination: OriginationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutVoiceConnectorProxyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6541,122 +3324,6 @@ class PutVoiceConnectorProxyRequestRequestTypeDef(TypedDict):
     Disabled: NotRequired[bool],
 ```
 
-## PutVoiceConnectorProxyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyResponseTypeDef
-
-def get_value() -> PutVoiceConnectorProxyResponseTypeDef:
-    return {
-        "Proxy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorProxyResponseTypeDef(TypedDict):
-    Proxy: ProxyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProxyTypeDef](./type_defs.md#proxytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "StreamingConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
-## PutVoiceConnectorStreamingConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationResponseTypeDef
-
-def get_value() -> PutVoiceConnectorStreamingConfigurationResponseTypeDef:
-    return {
-        "StreamingConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorStreamingConfigurationResponseTypeDef(TypedDict):
-    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    Credentials: NotRequired[Sequence[CredentialTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: CredentialTypeDef](./type_defs.md#credentialtypedef) 
-## PutVoiceConnectorTerminationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationRequestRequestTypeDef
-
-def get_value() -> PutVoiceConnectorTerminationRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "Termination": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorTerminationRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    Termination: TerminationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
-## PutVoiceConnectorTerminationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationResponseTypeDef
-
-def get_value() -> PutVoiceConnectorTerminationResponseTypeDef:
-    return {
-        "Termination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutVoiceConnectorTerminationResponseTypeDef(TypedDict):
-    Termination: TerminationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RedactChannelMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6676,27 +3343,6 @@ class RedactChannelMessageRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## RedactChannelMessageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RedactChannelMessageResponseTypeDef
-
-def get_value() -> RedactChannelMessageResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "MessageId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RedactChannelMessageResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    MessageId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RedactConversationMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6755,26 +3401,6 @@ class RegenerateSecurityTokenRequestRequestTypeDef(TypedDict):
     BotId: str,
 ```
 
-## RegenerateSecurityTokenResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RegenerateSecurityTokenResponseTypeDef
-
-def get_value() -> RegenerateSecurityTokenResponseTypeDef:
-    return {
-        "Bot": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegenerateSecurityTokenResponseTypeDef(TypedDict):
-    Bot: BotTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResetPersonalPINRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6793,50 +3419,6 @@ class ResetPersonalPINRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## ResetPersonalPINResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ResetPersonalPINResponseTypeDef
-
-def get_value() -> ResetPersonalPINResponseTypeDef:
-    return {
-        "User": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ResetPersonalPINResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## RestorePhoneNumberRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6853,67 +3435,6 @@ class RestorePhoneNumberRequestRequestTypeDef(TypedDict):
     PhoneNumberId: str,
 ```
 
-## RestorePhoneNumberResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RestorePhoneNumberResponseTypeDef
-
-def get_value() -> RestorePhoneNumberResponseTypeDef:
-    return {
-        "PhoneNumber": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RestorePhoneNumberResponseTypeDef(TypedDict):
-    PhoneNumber: PhoneNumberTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RetentionSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RetentionSettingsTypeDef
-
-def get_value() -> RetentionSettingsTypeDef:
-    return {
-        "RoomRetentionSettings": ...,
-    }
-```
-
-```python title="Definition"
-class RetentionSettingsTypeDef(TypedDict):
-    RoomRetentionSettings: NotRequired[RoomRetentionSettingsTypeDef],  # (1)
-    ConversationRetentionSettings: NotRequired[ConversationRetentionSettingsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: RoomRetentionSettingsTypeDef](./type_defs.md#roomretentionsettingstypedef) 
-2. See [:material-code-braces: ConversationRetentionSettingsTypeDef](./type_defs.md#conversationretentionsettingstypedef) 
-## RoomMembershipTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RoomMembershipTypeDef
-
-def get_value() -> RoomMembershipTypeDef:
-    return {
-        "RoomId": ...,
-    }
-```
-
-```python title="Definition"
-class RoomMembershipTypeDef(TypedDict):
-    RoomId: NotRequired[str],
-    Member: NotRequired[MemberTypeDef],  # (1)
-    Role: NotRequired[RoomMembershipRoleType],  # (2)
-    InvitedBy: NotRequired[str],
-    UpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
-2. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
 ## RoomRetentionSettingsTypeDef
 
 ```python title="Usage Example"
@@ -6928,27 +3449,6 @@ def get_value() -> RoomRetentionSettingsTypeDef:
 ```python title="Definition"
 class RoomRetentionSettingsTypeDef(TypedDict):
     RetentionDays: NotRequired[int],
-```
-
-## RoomTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import RoomTypeDef
-
-def get_value() -> RoomTypeDef:
-    return {
-        "RoomId": ...,
-    }
-```
-
-```python title="Definition"
-class RoomTypeDef(TypedDict):
-    RoomId: NotRequired[str],
-    Name: NotRequired[str],
-    AccountId: NotRequired[str],
-    CreatedBy: NotRequired[str],
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
 ```
 
 ## SearchAvailablePhoneNumbersRequestRequestTypeDef
@@ -6975,27 +3475,6 @@ class SearchAvailablePhoneNumbersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
-## SearchAvailablePhoneNumbersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersResponseTypeDef
-
-def get_value() -> SearchAvailablePhoneNumbersResponseTypeDef:
-    return {
-        "E164PhoneNumbers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchAvailablePhoneNumbersResponseTypeDef(TypedDict):
-    E164PhoneNumbers: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SelectedVideoStreamsTypeDef
 
 ```python title="Usage Example"
@@ -7041,192 +3520,6 @@ class SendChannelMessageRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
 2. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
-## SendChannelMessageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SendChannelMessageResponseTypeDef
-
-def get_value() -> SendChannelMessageResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "MessageId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendChannelMessageResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    MessageId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SigninDelegateGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SigninDelegateGroupTypeDef
-
-def get_value() -> SigninDelegateGroupTypeDef:
-    return {
-        "GroupName": ...,
-    }
-```
-
-```python title="Definition"
-class SigninDelegateGroupTypeDef(TypedDict):
-    GroupName: NotRequired[str],
-```
-
-## SipMediaApplicationCallTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipMediaApplicationCallTypeDef
-
-def get_value() -> SipMediaApplicationCallTypeDef:
-    return {
-        "TransactionId": ...,
-    }
-```
-
-```python title="Definition"
-class SipMediaApplicationCallTypeDef(TypedDict):
-    TransactionId: NotRequired[str],
-```
-
-## SipMediaApplicationEndpointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipMediaApplicationEndpointTypeDef
-
-def get_value() -> SipMediaApplicationEndpointTypeDef:
-    return {
-        "LambdaArn": ...,
-    }
-```
-
-```python title="Definition"
-class SipMediaApplicationEndpointTypeDef(TypedDict):
-    LambdaArn: NotRequired[str],
-```
-
-## SipMediaApplicationLoggingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipMediaApplicationLoggingConfigurationTypeDef
-
-def get_value() -> SipMediaApplicationLoggingConfigurationTypeDef:
-    return {
-        "EnableSipMediaApplicationMessageLogs": ...,
-    }
-```
-
-```python title="Definition"
-class SipMediaApplicationLoggingConfigurationTypeDef(TypedDict):
-    EnableSipMediaApplicationMessageLogs: NotRequired[bool],
-```
-
-## SipMediaApplicationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipMediaApplicationTypeDef
-
-def get_value() -> SipMediaApplicationTypeDef:
-    return {
-        "SipMediaApplicationId": ...,
-    }
-```
-
-```python title="Definition"
-class SipMediaApplicationTypeDef(TypedDict):
-    SipMediaApplicationId: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    Name: NotRequired[str],
-    Endpoints: NotRequired[List[SipMediaApplicationEndpointTypeDef]],  # (1)
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
-## SipRuleTargetApplicationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipRuleTargetApplicationTypeDef
-
-def get_value() -> SipRuleTargetApplicationTypeDef:
-    return {
-        "SipMediaApplicationId": ...,
-    }
-```
-
-```python title="Definition"
-class SipRuleTargetApplicationTypeDef(TypedDict):
-    SipMediaApplicationId: NotRequired[str],
-    Priority: NotRequired[int],
-    AwsRegion: NotRequired[str],
-```
-
-## SipRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SipRuleTypeDef
-
-def get_value() -> SipRuleTypeDef:
-    return {
-        "SipRuleId": ...,
-    }
-```
-
-```python title="Definition"
-class SipRuleTypeDef(TypedDict):
-    SipRuleId: NotRequired[str],
-    Name: NotRequired[str],
-    Disabled: NotRequired[bool],
-    TriggerType: NotRequired[SipRuleTriggerTypeType],  # (1)
-    TriggerValue: NotRequired[str],
-    TargetApplications: NotRequired[List[SipRuleTargetApplicationTypeDef]],  # (2)
-    CreatedTimestamp: NotRequired[datetime],
-    UpdatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype) 
-2. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
-## SourceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import SourceConfigurationTypeDef
-
-def get_value() -> SourceConfigurationTypeDef:
-    return {
-        "SelectedVideoStreams": ...,
-    }
-```
-
-```python title="Definition"
-class SourceConfigurationTypeDef(TypedDict):
-    SelectedVideoStreams: NotRequired[SelectedVideoStreamsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef) 
-## StartMeetingTranscriptionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import StartMeetingTranscriptionRequestRequestTypeDef
-
-def get_value() -> StartMeetingTranscriptionRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "TranscriptionConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class StartMeetingTranscriptionRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    TranscriptionConfiguration: TranscriptionConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef) 
 ## StopMeetingTranscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7243,25 +3536,6 @@ class StopMeetingTranscriptionRequestRequestTypeDef(TypedDict):
     MeetingId: str,
 ```
 
-## StreamingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import StreamingConfigurationTypeDef
-
-def get_value() -> StreamingConfigurationTypeDef:
-    return {
-        "DataRetentionInHours": ...,
-    }
-```
-
-```python title="Definition"
-class StreamingConfigurationTypeDef(TypedDict):
-    DataRetentionInHours: int,
-    Disabled: NotRequired[bool],
-    StreamingNotificationTargets: NotRequired[List[StreamingNotificationTargetTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: StreamingNotificationTargetTypeDef](./type_defs.md#streamingnotificationtargettypedef) 
 ## StreamingNotificationTargetTypeDef
 
 ```python title="Usage Example"
@@ -7279,83 +3553,6 @@ class StreamingNotificationTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NotificationTargetType](./literals.md#notificationtargettype) 
-## TagAttendeeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TagAttendeeRequestRequestTypeDef
-
-def get_value() -> TagAttendeeRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "AttendeeId": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagAttendeeRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    AttendeeId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagMeetingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TagMeetingRequestRequestTypeDef
-
-def get_value() -> TagMeetingRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagMeetingRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
 ## TelephonySettingsTypeDef
 
 ```python title="Usage Example"
@@ -7376,62 +3573,6 @@ class TelephonySettingsTypeDef(TypedDict):
     SMS: bool,
 ```
 
-## TerminationHealthTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TerminationHealthTypeDef
-
-def get_value() -> TerminationHealthTypeDef:
-    return {
-        "Timestamp": ...,
-    }
-```
-
-```python title="Definition"
-class TerminationHealthTypeDef(TypedDict):
-    Timestamp: NotRequired[datetime],
-    Source: NotRequired[str],
-```
-
-## TerminationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TerminationTypeDef
-
-def get_value() -> TerminationTypeDef:
-    return {
-        "CpsLimit": ...,
-    }
-```
-
-```python title="Definition"
-class TerminationTypeDef(TypedDict):
-    CpsLimit: NotRequired[int],
-    DefaultPhoneNumber: NotRequired[str],
-    CallingRegions: NotRequired[List[str]],
-    CidrAllowedList: NotRequired[List[str]],
-    Disabled: NotRequired[bool],
-```
-
-## TranscriptionConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import TranscriptionConfigurationTypeDef
-
-def get_value() -> TranscriptionConfigurationTypeDef:
-    return {
-        "EngineTranscribeSettings": ...,
-    }
-```
-
-```python title="Definition"
-class TranscriptionConfigurationTypeDef(TypedDict):
-    EngineTranscribeSettings: NotRequired[EngineTranscribeSettingsTypeDef],  # (1)
-    EngineTranscribeMedicalSettings: NotRequired[EngineTranscribeMedicalSettingsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: EngineTranscribeSettingsTypeDef](./type_defs.md#enginetranscribesettingstypedef) 
-2. See [:material-code-braces: EngineTranscribeMedicalSettingsTypeDef](./type_defs.md#enginetranscribemedicalsettingstypedef) 
 ## UntagAttendeeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7507,45 +3648,6 @@ class UpdateAccountRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
-## UpdateAccountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateAccountResponseTypeDef
-
-def get_value() -> UpdateAccountResponseTypeDef:
-    return {
-        "Account": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccountResponseTypeDef(TypedDict):
-    Account: AccountTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateAccountSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateAccountSettingsRequestRequestTypeDef
-
-def get_value() -> UpdateAccountSettingsRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "AccountSettings": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccountSettingsRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    AccountSettings: AccountSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
 ## UpdateAppInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7565,25 +3667,6 @@ class UpdateAppInstanceRequestRequestTypeDef(TypedDict):
     Metadata: NotRequired[str],
 ```
 
-## UpdateAppInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateAppInstanceResponseTypeDef
-
-def get_value() -> UpdateAppInstanceResponseTypeDef:
-    return {
-        "AppInstanceArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAppInstanceResponseTypeDef(TypedDict):
-    AppInstanceArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAppInstanceUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7603,25 +3686,6 @@ class UpdateAppInstanceUserRequestRequestTypeDef(TypedDict):
     Metadata: NotRequired[str],
 ```
 
-## UpdateAppInstanceUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateAppInstanceUserResponseTypeDef
-
-def get_value() -> UpdateAppInstanceUserResponseTypeDef:
-    return {
-        "AppInstanceUserArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAppInstanceUserResponseTypeDef(TypedDict):
-    AppInstanceUserArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7641,26 +3705,6 @@ class UpdateBotRequestRequestTypeDef(TypedDict):
     Disabled: NotRequired[bool],
 ```
 
-## UpdateBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateBotResponseTypeDef
-
-def get_value() -> UpdateBotResponseTypeDef:
-    return {
-        "Bot": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBotResponseTypeDef(TypedDict):
-    Bot: BotTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7682,27 +3726,6 @@ class UpdateChannelMessageRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## UpdateChannelMessageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateChannelMessageResponseTypeDef
-
-def get_value() -> UpdateChannelMessageResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "MessageId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateChannelMessageResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    MessageId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelReadMarkerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7720,25 +3743,6 @@ class UpdateChannelReadMarkerRequestRequestTypeDef(TypedDict):
     ChimeBearer: NotRequired[str],
 ```
 
-## UpdateChannelReadMarkerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerResponseTypeDef
-
-def get_value() -> UpdateChannelReadMarkerResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateChannelReadMarkerResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7762,63 +3766,6 @@ class UpdateChannelRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
-## UpdateChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateChannelResponseTypeDef
-
-def get_value() -> UpdateChannelResponseTypeDef:
-    return {
-        "ChannelArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateChannelResponseTypeDef(TypedDict):
-    ChannelArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateGlobalSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateGlobalSettingsRequestRequestTypeDef
-
-def get_value() -> UpdateGlobalSettingsRequestRequestTypeDef:
-    return {
-        "BusinessCalling": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGlobalSettingsRequestRequestTypeDef(TypedDict):
-    BusinessCalling: NotRequired[BusinessCallingSettingsTypeDef],  # (1)
-    VoiceConnector: NotRequired[VoiceConnectorSettingsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef) 
-2. See [:material-code-braces: VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef) 
-## UpdatePhoneNumberRequestItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdatePhoneNumberRequestItemTypeDef
-
-def get_value() -> UpdatePhoneNumberRequestItemTypeDef:
-    return {
-        "PhoneNumberId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePhoneNumberRequestItemTypeDef(TypedDict):
-    PhoneNumberId: str,
-    ProductType: NotRequired[PhoneNumberProductTypeType],  # (1)
-    CallingName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
 ## UpdatePhoneNumberRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7838,26 +3785,6 @@ class UpdatePhoneNumberRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
-## UpdatePhoneNumberResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdatePhoneNumberResponseTypeDef
-
-def get_value() -> UpdatePhoneNumberResponseTypeDef:
-    return {
-        "PhoneNumber": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePhoneNumberResponseTypeDef(TypedDict):
-    PhoneNumber: PhoneNumberTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePhoneNumberSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7896,26 +3823,6 @@ class UpdateProxySessionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
-## UpdateProxySessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateProxySessionResponseTypeDef
-
-def get_value() -> UpdateProxySessionResponseTypeDef:
-    return {
-        "ProxySession": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProxySessionResponseTypeDef(TypedDict):
-    ProxySession: ProxySessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRoomMembershipRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7938,26 +3845,6 @@ class UpdateRoomMembershipRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
-## UpdateRoomMembershipResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateRoomMembershipResponseTypeDef
-
-def get_value() -> UpdateRoomMembershipResponseTypeDef:
-    return {
-        "RoomMembership": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateRoomMembershipResponseTypeDef(TypedDict):
-    RoomMembership: RoomMembershipTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRoomRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7977,26 +3864,6 @@ class UpdateRoomRequestRequestTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## UpdateRoomResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateRoomResponseTypeDef
-
-def get_value() -> UpdateRoomResponseTypeDef:
-    return {
-        "Room": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateRoomResponseTypeDef(TypedDict):
-    Room: RoomTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSipMediaApplicationCallRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8017,106 +3884,95 @@ class UpdateSipMediaApplicationCallRequestRequestTypeDef(TypedDict):
     Arguments: Mapping[str, str],
 ```
 
-## UpdateSipMediaApplicationCallResponseTypeDef
+## UpdateVoiceConnectorRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorRequestRequestTypeDef
 
-def get_value() -> UpdateSipMediaApplicationCallResponseTypeDef:
+def get_value() -> UpdateVoiceConnectorRequestRequestTypeDef:
     return {
-        "SipMediaApplicationCall": ...,
-        "ResponseMetadata": ...,
+        "VoiceConnectorId": ...,
+        "Name": ...,
+        "RequireEncryption": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSipMediaApplicationCallResponseTypeDef(TypedDict):
-    SipMediaApplicationCall: SipMediaApplicationCallTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class UpdateVoiceConnectorRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    Name: str,
+    RequireEncryption: bool,
 ```
 
-1. See [:material-code-braces: SipMediaApplicationCallTypeDef](./type_defs.md#sipmediaapplicationcalltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateSipMediaApplicationRequestRequestTypeDef
+## UpdateAccountSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationRequestRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateAccountSettingsRequestRequestTypeDef
 
-def get_value() -> UpdateSipMediaApplicationRequestRequestTypeDef:
+def get_value() -> UpdateAccountSettingsRequestRequestTypeDef:
     return {
-        "SipMediaApplicationId": ...,
+        "AccountId": ...,
+        "AccountSettings": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSipMediaApplicationRequestRequestTypeDef(TypedDict):
-    SipMediaApplicationId: str,
-    Name: NotRequired[str],
-    Endpoints: NotRequired[Sequence[SipMediaApplicationEndpointTypeDef]],  # (1)
+class UpdateAccountSettingsRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    AccountSettings: AccountSettingsTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
-## UpdateSipMediaApplicationResponseTypeDef
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+## AccountTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationResponseTypeDef
+from mypy_boto3_chime.type_defs import AccountTypeDef
 
-def get_value() -> UpdateSipMediaApplicationResponseTypeDef:
+def get_value() -> AccountTypeDef:
     return {
-        "SipMediaApplication": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSipMediaApplicationResponseTypeDef(TypedDict):
-    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateSipRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateSipRuleRequestRequestTypeDef
-
-def get_value() -> UpdateSipRuleRequestRequestTypeDef:
-    return {
-        "SipRuleId": ...,
+        "AwsAccountId": ...,
+        "AccountId": ...,
         "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSipRuleRequestRequestTypeDef(TypedDict):
-    SipRuleId: str,
+class AccountTypeDef(TypedDict):
+    AwsAccountId: str,
+    AccountId: str,
     Name: str,
-    Disabled: NotRequired[bool],
-    TargetApplications: NotRequired[Sequence[SipRuleTargetApplicationTypeDef]],  # (1)
+    AccountType: NotRequired[AccountTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    DefaultLicense: NotRequired[LicenseType],  # (2)
+    SupportedLicenses: NotRequired[List[LicenseType]],  # (3)
+    AccountStatus: NotRequired[AccountStatusType],  # (4)
+    SigninDelegateGroups: NotRequired[List[SigninDelegateGroupTypeDef]],  # (5)
 ```
 
-1. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
-## UpdateSipRuleResponseTypeDef
+1. See [:material-code-brackets: AccountTypeType](./literals.md#accounttypetype) 
+2. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
+3. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
+4. See [:material-code-brackets: AccountStatusType](./literals.md#accountstatustype) 
+5. See [:material-code-braces: SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef) 
+## AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateSipRuleResponseTypeDef
+from mypy_boto3_chime.type_defs import AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
 
-def get_value() -> UpdateSipRuleResponseTypeDef:
+def get_value() -> AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef:
     return {
-        "SipRule": ...,
-        "ResponseMetadata": ...,
+        "AccountId": ...,
+        "SigninDelegateGroups": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSipRuleResponseTypeDef(TypedDict):
-    SipRule: SipRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    SigninDelegateGroups: Sequence[SigninDelegateGroupTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef) 
 ## UpdateUserRequestItemTypeDef
 
 ```python title="Usage Example"
@@ -8163,164 +4019,6 @@ class UpdateUserRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
 2. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
 3. See [:material-code-braces: AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef) 
-## UpdateUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateUserResponseTypeDef
-
-def get_value() -> UpdateUserResponseTypeDef:
-    return {
-        "User": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateUserResponseTypeDef(TypedDict):
-    User: UserTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateUserSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateUserSettingsRequestRequestTypeDef
-
-def get_value() -> UpdateUserSettingsRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "UserId": ...,
-        "UserSettings": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateUserSettingsRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    UserId: str,
-    UserSettings: UserSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
-## UpdateVoiceConnectorGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupRequestRequestTypeDef
-
-def get_value() -> UpdateVoiceConnectorGroupRequestRequestTypeDef:
-    return {
-        "VoiceConnectorGroupId": ...,
-        "Name": ...,
-        "VoiceConnectorItems": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateVoiceConnectorGroupRequestRequestTypeDef(TypedDict):
-    VoiceConnectorGroupId: str,
-    Name: str,
-    VoiceConnectorItems: Sequence[VoiceConnectorItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
-## UpdateVoiceConnectorGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupResponseTypeDef
-
-def get_value() -> UpdateVoiceConnectorGroupResponseTypeDef:
-    return {
-        "VoiceConnectorGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateVoiceConnectorGroupResponseTypeDef(TypedDict):
-    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateVoiceConnectorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorRequestRequestTypeDef
-
-def get_value() -> UpdateVoiceConnectorRequestRequestTypeDef:
-    return {
-        "VoiceConnectorId": ...,
-        "Name": ...,
-        "RequireEncryption": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateVoiceConnectorRequestRequestTypeDef(TypedDict):
-    VoiceConnectorId: str,
-    Name: str,
-    RequireEncryption: bool,
-```
-
-## UpdateVoiceConnectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorResponseTypeDef
-
-def get_value() -> UpdateVoiceConnectorResponseTypeDef:
-    return {
-        "VoiceConnector": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateVoiceConnectorResponseTypeDef(TypedDict):
-    VoiceConnector: VoiceConnectorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UserErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UserErrorTypeDef
-
-def get_value() -> UserErrorTypeDef:
-    return {
-        "UserId": ...,
-    }
-```
-
-```python title="Definition"
-class UserErrorTypeDef(TypedDict):
-    UserId: NotRequired[str],
-    ErrorCode: NotRequired[ErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
-## UserSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime.type_defs import UserSettingsTypeDef
-
-def get_value() -> UserSettingsTypeDef:
-    return {
-        "Telephony": ...,
-    }
-```
-
-```python title="Definition"
-class UserSettingsTypeDef(TypedDict):
-    Telephony: TelephonySettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: TelephonySettingsTypeDef](./type_defs.md#telephonysettingstypedef) 
 ## UserTypeDef
 
 ```python title="Usage Example"
@@ -8354,25 +4052,1892 @@ class UserTypeDef(TypedDict):
 3. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
 4. See [:material-code-brackets: InviteStatusType](./literals.md#invitestatustype) 
 5. See [:material-code-braces: AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef) 
-## VideoArtifactsConfigurationTypeDef
+## AppInstanceAdminSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import VideoArtifactsConfigurationTypeDef
+from mypy_boto3_chime.type_defs import AppInstanceAdminSummaryTypeDef
 
-def get_value() -> VideoArtifactsConfigurationTypeDef:
+def get_value() -> AppInstanceAdminSummaryTypeDef:
     return {
-        "State": ...,
+        "Admin": ...,
     }
 ```
 
 ```python title="Definition"
-class VideoArtifactsConfigurationTypeDef(TypedDict):
-    State: ArtifactsStateType,  # (1)
-    MuxType: NotRequired[VideoMuxTypeType],  # (2)
+class AppInstanceAdminSummaryTypeDef(TypedDict):
+    Admin: NotRequired[IdentityTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
-2. See [:material-code-brackets: VideoMuxTypeType](./literals.md#videomuxtypetype) 
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## AppInstanceAdminTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import AppInstanceAdminTypeDef
+
+def get_value() -> AppInstanceAdminTypeDef:
+    return {
+        "Admin": ...,
+    }
+```
+
+```python title="Definition"
+class AppInstanceAdminTypeDef(TypedDict):
+    Admin: NotRequired[IdentityTypeDef],  # (1)
+    AppInstanceArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## BatchChannelMembershipsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchChannelMembershipsTypeDef
+
+def get_value() -> BatchChannelMembershipsTypeDef:
+    return {
+        "InvitedBy": ...,
+    }
+```
+
+```python title="Definition"
+class BatchChannelMembershipsTypeDef(TypedDict):
+    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
+    Type: NotRequired[ChannelMembershipTypeType],  # (2)
+    Members: NotRequired[List[IdentityTypeDef]],  # (3)
+    ChannelArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelBanSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelBanSummaryTypeDef
+
+def get_value() -> ChannelBanSummaryTypeDef:
+    return {
+        "Member": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelBanSummaryTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelBanTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelBanTypeDef
+
+def get_value() -> ChannelBanTypeDef:
+    return {
+        "Member": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelBanTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelMembershipSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelMembershipSummaryTypeDef
+
+def get_value() -> ChannelMembershipSummaryTypeDef:
+    return {
+        "Member": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelMembershipSummaryTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelMembershipTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelMembershipTypeDef
+
+def get_value() -> ChannelMembershipTypeDef:
+    return {
+        "InvitedBy": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelMembershipTypeDef(TypedDict):
+    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
+    Type: NotRequired[ChannelMembershipTypeType],  # (2)
+    Member: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelMessageSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelMessageSummaryTypeDef
+
+def get_value() -> ChannelMessageSummaryTypeDef:
+    return {
+        "MessageId": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelMessageSummaryTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+    Type: NotRequired[ChannelMessageTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    LastEditedTimestamp: NotRequired[datetime],
+    Sender: NotRequired[IdentityTypeDef],  # (2)
+    Redacted: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelMessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelMessageTypeDef
+
+def get_value() -> ChannelMessageTypeDef:
+    return {
+        "ChannelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelMessageTypeDef(TypedDict):
+    ChannelArn: NotRequired[str],
+    MessageId: NotRequired[str],
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+    Type: NotRequired[ChannelMessageTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    LastEditedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    Sender: NotRequired[IdentityTypeDef],  # (2)
+    Redacted: NotRequired[bool],
+    Persistence: NotRequired[ChannelMessagePersistenceTypeType],  # (3)
+```
+
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+3. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
+## ChannelModeratorSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelModeratorSummaryTypeDef
+
+def get_value() -> ChannelModeratorSummaryTypeDef:
+    return {
+        "Moderator": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelModeratorSummaryTypeDef(TypedDict):
+    Moderator: NotRequired[IdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelModeratorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelModeratorTypeDef
+
+def get_value() -> ChannelModeratorTypeDef:
+    return {
+        "Moderator": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelModeratorTypeDef(TypedDict):
+    Moderator: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## ChannelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ChannelArn: NotRequired[str],
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (3)
+    CreatedTimestamp: NotRequired[datetime],
+    LastMessageTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+## AppInstanceRetentionSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import AppInstanceRetentionSettingsTypeDef
+
+def get_value() -> AppInstanceRetentionSettingsTypeDef:
+    return {
+        "ChannelRetentionSettings": ...,
+    }
+```
+
+```python title="Definition"
+class AppInstanceRetentionSettingsTypeDef(TypedDict):
+    ChannelRetentionSettings: NotRequired[ChannelRetentionSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChannelRetentionSettingsTypeDef](./type_defs.md#channelretentionsettingstypedef) 
+## PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
+
+def get_value() -> PutAppInstanceStreamingConfigurationsRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "AppInstanceStreamingConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class PutAppInstanceStreamingConfigurationsRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    AppInstanceStreamingConfigurations: Sequence[AppInstanceStreamingConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
+## ArtifactsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ArtifactsConfigurationTypeDef
+
+def get_value() -> ArtifactsConfigurationTypeDef:
+    return {
+        "Audio": ...,
+        "Video": ...,
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class ArtifactsConfigurationTypeDef(TypedDict):
+    Audio: AudioArtifactsConfigurationTypeDef,  # (1)
+    Video: VideoArtifactsConfigurationTypeDef,  # (2)
+    Content: ContentArtifactsConfigurationTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef) 
+2. See [:material-code-braces: VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef) 
+3. See [:material-code-braces: ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef) 
+## AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
+
+def get_value() -> AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
+
+def get_value() -> AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDeletePhoneNumberResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberResponseTypeDef
+
+def get_value() -> BatchDeletePhoneNumberResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeletePhoneNumberResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdatePhoneNumberResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberResponseTypeDef
+
+def get_value() -> BatchUpdatePhoneNumberResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdatePhoneNumberResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppInstanceAdminResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAppInstanceAdminResponseTypeDef
+
+def get_value() -> CreateAppInstanceAdminResponseTypeDef:
+    return {
+        "AppInstanceAdmin": ...,
+        "AppInstanceArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppInstanceAdminResponseTypeDef(TypedDict):
+    AppInstanceAdmin: IdentityTypeDef,  # (1)
+    AppInstanceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAppInstanceResponseTypeDef
+
+def get_value() -> CreateAppInstanceResponseTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppInstanceResponseTypeDef(TypedDict):
+    AppInstanceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAppInstanceUserResponseTypeDef
+
+def get_value() -> CreateAppInstanceUserResponseTypeDef:
+    return {
+        "AppInstanceUserArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppInstanceUserResponseTypeDef(TypedDict):
+    AppInstanceUserArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelBanResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateChannelBanResponseTypeDef
+
+def get_value() -> CreateChannelBanResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelBanResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateChannelMembershipResponseTypeDef
+
+def get_value() -> CreateChannelMembershipResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelMembershipResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelModeratorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateChannelModeratorResponseTypeDef
+
+def get_value() -> CreateChannelModeratorResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelModerator": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelModeratorResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelModerator: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMeetingDialOutResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMeetingDialOutResponseTypeDef
+
+def get_value() -> CreateMeetingDialOutResponseTypeDef:
+    return {
+        "TransactionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeetingDialOutResponseTypeDef(TypedDict):
+    TransactionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeAppInstanceResponseTypeDef
+
+def get_value() -> DescribeAppInstanceResponseTypeDef:
+    return {
+        "AppInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppInstanceResponseTypeDef(TypedDict):
+    AppInstance: AppInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceTypeDef](./type_defs.md#appinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeAppInstanceUserResponseTypeDef
+
+def get_value() -> DescribeAppInstanceUserResponseTypeDef:
+    return {
+        "AppInstanceUser": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppInstanceUserResponseTypeDef(TypedDict):
+    AppInstanceUser: AppInstanceUserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceUserTypeDef](./type_defs.md#appinstanceusertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
+
+def get_value() -> DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
+
+def get_value() -> DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef:
+    return {
+        "PhoneNumberErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef(TypedDict):
+    PhoneNumberErrors: List[PhoneNumberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberErrorTypeDef](./type_defs.md#phonenumbererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccountSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetAccountSettingsResponseTypeDef
+
+def get_value() -> GetAccountSettingsResponseTypeDef:
+    return {
+        "AccountSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccountSettingsResponseTypeDef(TypedDict):
+    AccountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAppInstanceStreamingConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsResponseTypeDef
+
+def get_value() -> GetAppInstanceStreamingConfigurationsResponseTypeDef:
+    return {
+        "AppInstanceStreamingConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAppInstanceStreamingConfigurationsResponseTypeDef(TypedDict):
+    AppInstanceStreamingConfigurations: List[AppInstanceStreamingConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPhoneNumberSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetPhoneNumberSettingsResponseTypeDef
+
+def get_value() -> GetPhoneNumberSettingsResponseTypeDef:
+    return {
+        "CallingName": ...,
+        "CallingNameUpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPhoneNumberSettingsResponseTypeDef(TypedDict):
+    CallingName: str,
+    CallingNameUpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppInstanceUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAppInstanceUsersResponseTypeDef
+
+def get_value() -> ListAppInstanceUsersResponseTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "AppInstanceUsers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppInstanceUsersResponseTypeDef(TypedDict):
+    AppInstanceArn: str,
+    AppInstanceUsers: List[AppInstanceUserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceUserSummaryTypeDef](./type_defs.md#appinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAppInstancesResponseTypeDef
+
+def get_value() -> ListAppInstancesResponseTypeDef:
+    return {
+        "AppInstances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppInstancesResponseTypeDef(TypedDict):
+    AppInstances: List[AppInstanceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceSummaryTypeDef](./type_defs.md#appinstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVoiceConnectorTerminationCredentialsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsResponseTypeDef
+
+def get_value() -> ListVoiceConnectorTerminationCredentialsResponseTypeDef:
+    return {
+        "Usernames": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVoiceConnectorTerminationCredentialsResponseTypeDef(TypedDict):
+    Usernames: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutAppInstanceStreamingConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsResponseTypeDef
+
+def get_value() -> PutAppInstanceStreamingConfigurationsResponseTypeDef:
+    return {
+        "AppInstanceStreamingConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutAppInstanceStreamingConfigurationsResponseTypeDef(TypedDict):
+    AppInstanceStreamingConfigurations: List[AppInstanceStreamingConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RedactChannelMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import RedactChannelMessageResponseTypeDef
+
+def get_value() -> RedactChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RedactChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchAvailablePhoneNumbersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersResponseTypeDef
+
+def get_value() -> SearchAvailablePhoneNumbersResponseTypeDef:
+    return {
+        "E164PhoneNumbers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchAvailablePhoneNumbersResponseTypeDef(TypedDict):
+    E164PhoneNumbers: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendChannelMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import SendChannelMessageResponseTypeDef
+
+def get_value() -> SendChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAppInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateAppInstanceResponseTypeDef
+
+def get_value() -> UpdateAppInstanceResponseTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppInstanceResponseTypeDef(TypedDict):
+    AppInstanceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateAppInstanceUserResponseTypeDef
+
+def get_value() -> UpdateAppInstanceUserResponseTypeDef:
+    return {
+        "AppInstanceUserArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppInstanceUserResponseTypeDef(TypedDict):
+    AppInstanceUserArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateChannelMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateChannelMessageResponseTypeDef
+
+def get_value() -> UpdateChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateChannelReadMarkerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerResponseTypeDef
+
+def get_value() -> UpdateChannelReadMarkerResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelReadMarkerResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateChannelResponseTypeDef
+
+def get_value() -> UpdateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAttendeeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAttendeeResponseTypeDef
+
+def get_value() -> CreateAttendeeResponseTypeDef:
+    return {
+        "Attendee": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAttendeeResponseTypeDef(TypedDict):
+    Attendee: AttendeeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAttendeeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetAttendeeResponseTypeDef
+
+def get_value() -> GetAttendeeResponseTypeDef:
+    return {
+        "Attendee": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAttendeeResponseTypeDef(TypedDict):
+    Attendee: AttendeeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttendeesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAttendeesResponseTypeDef
+
+def get_value() -> ListAttendeesResponseTypeDef:
+    return {
+        "Attendees": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttendeesResponseTypeDef(TypedDict):
+    Attendees: List[AttendeeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchCreateAttendeeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchCreateAttendeeResponseTypeDef
+
+def get_value() -> BatchCreateAttendeeResponseTypeDef:
+    return {
+        "Attendees": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateAttendeeResponseTypeDef(TypedDict):
+    Attendees: List[AttendeeTypeDef],  # (1)
+    Errors: List[CreateAttendeeErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+2. See [:material-code-braces: CreateAttendeeErrorTypeDef](./type_defs.md#createattendeeerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchCreateRoomMembershipRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipRequestRequestTypeDef
+
+def get_value() -> BatchCreateRoomMembershipRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "RoomId": ...,
+        "MembershipItemList": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateRoomMembershipRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    RoomId: str,
+    MembershipItemList: Sequence[MembershipItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MembershipItemTypeDef](./type_defs.md#membershipitemtypedef) 
+## BatchCreateRoomMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipResponseTypeDef
+
+def get_value() -> BatchCreateRoomMembershipResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateRoomMembershipResponseTypeDef(TypedDict):
+    Errors: List[MemberErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MemberErrorTypeDef](./type_defs.md#membererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchSuspendUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchSuspendUserResponseTypeDef
+
+def get_value() -> BatchSuspendUserResponseTypeDef:
+    return {
+        "UserErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchSuspendUserResponseTypeDef(TypedDict):
+    UserErrors: List[UserErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUnsuspendUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchUnsuspendUserResponseTypeDef
+
+def get_value() -> BatchUnsuspendUserResponseTypeDef:
+    return {
+        "UserErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUnsuspendUserResponseTypeDef(TypedDict):
+    UserErrors: List[UserErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchUpdateUserResponseTypeDef
+
+def get_value() -> BatchUpdateUserResponseTypeDef:
+    return {
+        "UserErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateUserResponseTypeDef(TypedDict):
+    UserErrors: List[UserErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserErrorTypeDef](./type_defs.md#usererrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdatePhoneNumberRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberRequestRequestTypeDef
+
+def get_value() -> BatchUpdatePhoneNumberRequestRequestTypeDef:
+    return {
+        "UpdatePhoneNumberRequestItems": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdatePhoneNumberRequestRequestTypeDef(TypedDict):
+    UpdatePhoneNumberRequestItems: Sequence[UpdatePhoneNumberRequestItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef) 
+## CreateBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateBotResponseTypeDef
+
+def get_value() -> CreateBotResponseTypeDef:
+    return {
+        "Bot": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBotResponseTypeDef(TypedDict):
+    Bot: BotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetBotResponseTypeDef
+
+def get_value() -> GetBotResponseTypeDef:
+    return {
+        "Bot": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBotResponseTypeDef(TypedDict):
+    Bot: BotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBotsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListBotsResponseTypeDef
+
+def get_value() -> ListBotsResponseTypeDef:
+    return {
+        "Bots": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBotsResponseTypeDef(TypedDict):
+    Bots: List[BotTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegenerateSecurityTokenResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import RegenerateSecurityTokenResponseTypeDef
+
+def get_value() -> RegenerateSecurityTokenResponseTypeDef:
+    return {
+        "Bot": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegenerateSecurityTokenResponseTypeDef(TypedDict):
+    Bot: BotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateBotResponseTypeDef
+
+def get_value() -> UpdateBotResponseTypeDef:
+    return {
+        "Bot": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBotResponseTypeDef(TypedDict):
+    Bot: BotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ChannelMembershipForAppInstanceUserSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelMembershipForAppInstanceUserSummaryTypeDef
+
+def get_value() -> ChannelMembershipForAppInstanceUserSummaryTypeDef:
+    return {
+        "ChannelSummary": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelMembershipForAppInstanceUserSummaryTypeDef(TypedDict):
+    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
+    AppInstanceUserMembershipSummary: NotRequired[AppInstanceUserMembershipSummaryTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef) 
+## ChannelModeratedByAppInstanceUserSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChannelModeratedByAppInstanceUserSummaryTypeDef
+
+def get_value() -> ChannelModeratedByAppInstanceUserSummaryTypeDef:
+    return {
+        "ChannelSummary": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelModeratedByAppInstanceUserSummaryTypeDef(TypedDict):
+    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+## ListChannelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelsResponseTypeDef
+
+def get_value() -> ListChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsResponseTypeDef(TypedDict):
+    Channels: List[ChannelSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAppInstanceRequestRequestTypeDef
+
+def get_value() -> CreateAppInstanceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ClientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppInstanceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateAppInstanceUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAppInstanceUserRequestRequestTypeDef
+
+def get_value() -> CreateAppInstanceUserRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "AppInstanceUserId": ...,
+        "Name": ...,
+        "ClientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppInstanceUserRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    AppInstanceUserId: str,
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateAttendeeRequestItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAttendeeRequestItemTypeDef
+
+def get_value() -> CreateAttendeeRequestItemTypeDef:
+    return {
+        "ExternalUserId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAttendeeRequestItemTypeDef(TypedDict):
+    ExternalUserId: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateAttendeeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAttendeeRequestRequestTypeDef
+
+def get_value() -> CreateAttendeeRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "ExternalUserId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAttendeeRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    ExternalUserId: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "Name": ...,
+        "ClientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    Name: str,
+    ClientRequestToken: str,
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ChimeBearer: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListAttendeeTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAttendeeTagsResponseTypeDef
+
+def get_value() -> ListAttendeeTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttendeeTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMeetingTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListMeetingTagsResponseTypeDef
+
+def get_value() -> ListMeetingTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMeetingTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagAttendeeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import TagAttendeeRequestRequestTypeDef
+
+def get_value() -> TagAttendeeRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "AttendeeId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagAttendeeRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    AttendeeId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagMeetingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import TagMeetingRequestRequestTypeDef
+
+def get_value() -> TagMeetingRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagMeetingRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateMeetingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMeetingRequestRequestTypeDef
+
+def get_value() -> CreateMeetingRequestRequestTypeDef:
+    return {
+        "ClientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeetingRequestRequestTypeDef(TypedDict):
+    ClientRequestToken: str,
+    ExternalMeetingId: NotRequired[str],
+    MeetingHostId: NotRequired[str],
+    MediaRegion: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    NotificationsConfiguration: NotRequired[MeetingNotificationConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
+## CreateProxySessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateProxySessionRequestRequestTypeDef
+
+def get_value() -> CreateProxySessionRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+        "ParticipantPhoneNumbers": ...,
+        "Capabilities": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProxySessionRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    ParticipantPhoneNumbers: Sequence[str],
+    Capabilities: Sequence[CapabilityType],  # (1)
+    Name: NotRequired[str],
+    ExpiryMinutes: NotRequired[int],
+    NumberSelectionBehavior: NotRequired[NumberSelectionBehaviorType],  # (2)
+    GeoMatchLevel: NotRequired[GeoMatchLevelType],  # (3)
+    GeoMatchParams: NotRequired[GeoMatchParamsTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+2. See [:material-code-brackets: NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype) 
+3. See [:material-code-brackets: GeoMatchLevelType](./literals.md#geomatchleveltype) 
+4. See [:material-code-braces: GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef) 
+## CreateRoomResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateRoomResponseTypeDef
+
+def get_value() -> CreateRoomResponseTypeDef:
+    return {
+        "Room": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRoomResponseTypeDef(TypedDict):
+    Room: RoomTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRoomResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetRoomResponseTypeDef
+
+def get_value() -> GetRoomResponseTypeDef:
+    return {
+        "Room": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRoomResponseTypeDef(TypedDict):
+    Room: RoomTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoomsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListRoomsResponseTypeDef
+
+def get_value() -> ListRoomsResponseTypeDef:
+    return {
+        "Rooms": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoomsResponseTypeDef(TypedDict):
+    Rooms: List[RoomTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRoomResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateRoomResponseTypeDef
+
+def get_value() -> UpdateRoomResponseTypeDef:
+    return {
+        "Room": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRoomResponseTypeDef(TypedDict):
+    Room: RoomTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSipMediaApplicationCallResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallResponseTypeDef
+
+def get_value() -> CreateSipMediaApplicationCallResponseTypeDef:
+    return {
+        "SipMediaApplicationCall": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSipMediaApplicationCallResponseTypeDef(TypedDict):
+    SipMediaApplicationCall: SipMediaApplicationCallTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationCallTypeDef](./type_defs.md#sipmediaapplicationcalltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSipMediaApplicationCallResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallResponseTypeDef
+
+def get_value() -> UpdateSipMediaApplicationCallResponseTypeDef:
+    return {
+        "SipMediaApplicationCall": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSipMediaApplicationCallResponseTypeDef(TypedDict):
+    SipMediaApplicationCall: SipMediaApplicationCallTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationCallTypeDef](./type_defs.md#sipmediaapplicationcalltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSipMediaApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationRequestRequestTypeDef
+
+def get_value() -> CreateSipMediaApplicationRequestRequestTypeDef:
+    return {
+        "AwsRegion": ...,
+        "Name": ...,
+        "Endpoints": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSipMediaApplicationRequestRequestTypeDef(TypedDict):
+    AwsRegion: str,
+    Name: str,
+    Endpoints: Sequence[SipMediaApplicationEndpointTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
+## SipMediaApplicationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import SipMediaApplicationTypeDef
+
+def get_value() -> SipMediaApplicationTypeDef:
+    return {
+        "SipMediaApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class SipMediaApplicationTypeDef(TypedDict):
+    SipMediaApplicationId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    Name: NotRequired[str],
+    Endpoints: NotRequired[List[SipMediaApplicationEndpointTypeDef]],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
+## UpdateSipMediaApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateSipMediaApplicationRequestRequestTypeDef:
+    return {
+        "SipMediaApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSipMediaApplicationRequestRequestTypeDef(TypedDict):
+    SipMediaApplicationId: str,
+    Name: NotRequired[str],
+    Endpoints: NotRequired[Sequence[SipMediaApplicationEndpointTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
+## CreateSipRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateSipRuleRequestRequestTypeDef
+
+def get_value() -> CreateSipRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "TriggerType": ...,
+        "TriggerValue": ...,
+        "TargetApplications": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSipRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    TriggerType: SipRuleTriggerTypeType,  # (1)
+    TriggerValue: str,
+    TargetApplications: Sequence[SipRuleTargetApplicationTypeDef],  # (2)
+    Disabled: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype) 
+2. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
+## SipRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import SipRuleTypeDef
+
+def get_value() -> SipRuleTypeDef:
+    return {
+        "SipRuleId": ...,
+    }
+```
+
+```python title="Definition"
+class SipRuleTypeDef(TypedDict):
+    SipRuleId: NotRequired[str],
+    Name: NotRequired[str],
+    Disabled: NotRequired[bool],
+    TriggerType: NotRequired[SipRuleTriggerTypeType],  # (1)
+    TriggerValue: NotRequired[str],
+    TargetApplications: NotRequired[List[SipRuleTargetApplicationTypeDef]],  # (2)
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype) 
+2. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
+## UpdateSipRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateSipRuleRequestRequestTypeDef
+
+def get_value() -> UpdateSipRuleRequestRequestTypeDef:
+    return {
+        "SipRuleId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSipRuleRequestRequestTypeDef(TypedDict):
+    SipRuleId: str,
+    Name: str,
+    Disabled: NotRequired[bool],
+    TargetApplications: NotRequired[Sequence[SipRuleTargetApplicationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
+## CreateVoiceConnectorGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupRequestRequestTypeDef
+
+def get_value() -> CreateVoiceConnectorGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVoiceConnectorGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    VoiceConnectorItems: NotRequired[Sequence[VoiceConnectorItemTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
+## UpdateVoiceConnectorGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupRequestRequestTypeDef
+
+def get_value() -> UpdateVoiceConnectorGroupRequestRequestTypeDef:
+    return {
+        "VoiceConnectorGroupId": ...,
+        "Name": ...,
+        "VoiceConnectorItems": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVoiceConnectorGroupRequestRequestTypeDef(TypedDict):
+    VoiceConnectorGroupId: str,
+    Name: str,
+    VoiceConnectorItems: Sequence[VoiceConnectorItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
 ## VoiceConnectorGroupTypeDef
 
 ```python title="Usage Example"
@@ -8395,61 +5960,2496 @@ class VoiceConnectorGroupTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
-## VoiceConnectorItemTypeDef
+## CreateVoiceConnectorResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import VoiceConnectorItemTypeDef
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorResponseTypeDef
 
-def get_value() -> VoiceConnectorItemTypeDef:
+def get_value() -> CreateVoiceConnectorResponseTypeDef:
     return {
-        "VoiceConnectorId": ...,
-        "Priority": ...,
+        "VoiceConnector": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class VoiceConnectorItemTypeDef(TypedDict):
+class CreateVoiceConnectorResponseTypeDef(TypedDict):
+    VoiceConnector: VoiceConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorResponseTypeDef
+
+def get_value() -> GetVoiceConnectorResponseTypeDef:
+    return {
+        "VoiceConnector": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorResponseTypeDef(TypedDict):
+    VoiceConnector: VoiceConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVoiceConnectorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListVoiceConnectorsResponseTypeDef
+
+def get_value() -> ListVoiceConnectorsResponseTypeDef:
+    return {
+        "VoiceConnectors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVoiceConnectorsResponseTypeDef(TypedDict):
+    VoiceConnectors: List[VoiceConnectorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateVoiceConnectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorResponseTypeDef
+
+def get_value() -> UpdateVoiceConnectorResponseTypeDef:
+    return {
+        "VoiceConnector": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVoiceConnectorResponseTypeDef(TypedDict):
+    VoiceConnector: VoiceConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef(TypedDict):
     VoiceConnectorId: str,
-    Priority: int,
+    Credentials: NotRequired[Sequence[CredentialTypeDef]],  # (1)
 ```
 
-## VoiceConnectorSettingsTypeDef
+1. See [:material-code-braces: CredentialTypeDef](./type_defs.md#credentialtypedef) 
+## EmergencyCallingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import VoiceConnectorSettingsTypeDef
+from mypy_boto3_chime.type_defs import EmergencyCallingConfigurationTypeDef
 
-def get_value() -> VoiceConnectorSettingsTypeDef:
+def get_value() -> EmergencyCallingConfigurationTypeDef:
     return {
-        "CdrBucket": ...,
+        "DNIS": ...,
     }
 ```
 
 ```python title="Definition"
-class VoiceConnectorSettingsTypeDef(TypedDict):
-    CdrBucket: NotRequired[str],
+class EmergencyCallingConfigurationTypeDef(TypedDict):
+    DNIS: NotRequired[List[DNISEmergencyCallingConfigurationTypeDef]],  # (1)
 ```
 
-## VoiceConnectorTypeDef
+1. See [:material-code-braces: DNISEmergencyCallingConfigurationTypeDef](./type_defs.md#dnisemergencycallingconfigurationtypedef) 
+## TranscriptionConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime.type_defs import VoiceConnectorTypeDef
+from mypy_boto3_chime.type_defs import TranscriptionConfigurationTypeDef
 
-def get_value() -> VoiceConnectorTypeDef:
+def get_value() -> TranscriptionConfigurationTypeDef:
+    return {
+        "EngineTranscribeSettings": ...,
+    }
+```
+
+```python title="Definition"
+class TranscriptionConfigurationTypeDef(TypedDict):
+    EngineTranscribeSettings: NotRequired[EngineTranscribeSettingsTypeDef],  # (1)
+    EngineTranscribeMedicalSettings: NotRequired[EngineTranscribeMedicalSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EngineTranscribeSettingsTypeDef](./type_defs.md#enginetranscribesettingstypedef) 
+2. See [:material-code-braces: EngineTranscribeMedicalSettingsTypeDef](./type_defs.md#enginetranscribemedicalsettingstypedef) 
+## GetEventsConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetEventsConfigurationResponseTypeDef
+
+def get_value() -> GetEventsConfigurationResponseTypeDef:
+    return {
+        "EventsConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEventsConfigurationResponseTypeDef(TypedDict):
+    EventsConfiguration: EventsConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventsConfigurationTypeDef](./type_defs.md#eventsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutEventsConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutEventsConfigurationResponseTypeDef
+
+def get_value() -> PutEventsConfigurationResponseTypeDef:
+    return {
+        "EventsConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutEventsConfigurationResponseTypeDef(TypedDict):
+    EventsConfiguration: EventsConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventsConfigurationTypeDef](./type_defs.md#eventsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetGlobalSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetGlobalSettingsResponseTypeDef
+
+def get_value() -> GetGlobalSettingsResponseTypeDef:
+    return {
+        "BusinessCalling": ...,
+        "VoiceConnector": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetGlobalSettingsResponseTypeDef(TypedDict):
+    BusinessCalling: BusinessCallingSettingsTypeDef,  # (1)
+    VoiceConnector: VoiceConnectorSettingsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef) 
+2. See [:material-code-braces: VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGlobalSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateGlobalSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateGlobalSettingsRequestRequestTypeDef:
+    return {
+        "BusinessCalling": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGlobalSettingsRequestRequestTypeDef(TypedDict):
+    BusinessCalling: NotRequired[BusinessCallingSettingsTypeDef],  # (1)
+    VoiceConnector: NotRequired[VoiceConnectorSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef) 
+2. See [:material-code-braces: VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef) 
+## GetMessagingSessionEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetMessagingSessionEndpointResponseTypeDef
+
+def get_value() -> GetMessagingSessionEndpointResponseTypeDef:
+    return {
+        "Endpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMessagingSessionEndpointResponseTypeDef(TypedDict):
+    Endpoint: MessagingSessionEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MessagingSessionEndpointTypeDef](./type_defs.md#messagingsessionendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSipMediaApplicationLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationResponseTypeDef
+
+def get_value() -> GetSipMediaApplicationLoggingConfigurationResponseTypeDef:
+    return {
+        "SipMediaApplicationLoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSipMediaApplicationLoggingConfigurationResponseTypeDef(TypedDict):
+    SipMediaApplicationLoggingConfiguration: SipMediaApplicationLoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "SipMediaApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    SipMediaApplicationId: str,
+    SipMediaApplicationLoggingConfiguration: NotRequired[SipMediaApplicationLoggingConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
+## PutSipMediaApplicationLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationResponseTypeDef
+
+def get_value() -> PutSipMediaApplicationLoggingConfigurationResponseTypeDef:
+    return {
+        "SipMediaApplicationLoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutSipMediaApplicationLoggingConfigurationResponseTypeDef(TypedDict):
+    SipMediaApplicationLoggingConfiguration: SipMediaApplicationLoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationResponseTypeDef
+
+def get_value() -> GetVoiceConnectorLoggingConfigurationResponseTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorLoggingConfigurationResponseTypeDef(TypedDict):
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef:
     return {
         "VoiceConnectorId": ...,
+        "LoggingConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class VoiceConnectorTypeDef(TypedDict):
-    VoiceConnectorId: NotRequired[str],
-    AwsRegion: NotRequired[VoiceConnectorAwsRegionType],  # (1)
+class PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+## PutVoiceConnectorLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationResponseTypeDef
+
+def get_value() -> PutVoiceConnectorLoggingConfigurationResponseTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorLoggingConfigurationResponseTypeDef(TypedDict):
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorProxyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyResponseTypeDef
+
+def get_value() -> GetVoiceConnectorProxyResponseTypeDef:
+    return {
+        "Proxy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorProxyResponseTypeDef(TypedDict):
+    Proxy: ProxyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxyTypeDef](./type_defs.md#proxytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorProxyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyResponseTypeDef
+
+def get_value() -> PutVoiceConnectorProxyResponseTypeDef:
+    return {
+        "Proxy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorProxyResponseTypeDef(TypedDict):
+    Proxy: ProxyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxyTypeDef](./type_defs.md#proxytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorTerminationHealthResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthResponseTypeDef
+
+def get_value() -> GetVoiceConnectorTerminationHealthResponseTypeDef:
+    return {
+        "TerminationHealth": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorTerminationHealthResponseTypeDef(TypedDict):
+    TerminationHealth: TerminationHealthTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TerminationHealthTypeDef](./type_defs.md#terminationhealthtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorTerminationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationResponseTypeDef
+
+def get_value() -> GetVoiceConnectorTerminationResponseTypeDef:
+    return {
+        "Termination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorTerminationResponseTypeDef(TypedDict):
+    Termination: TerminationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorTerminationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorTerminationRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+        "Termination": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorTerminationRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    Termination: TerminationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
+## PutVoiceConnectorTerminationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationResponseTypeDef
+
+def get_value() -> PutVoiceConnectorTerminationResponseTypeDef:
+    return {
+        "Termination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorTerminationResponseTypeDef(TypedDict):
+    Termination: TerminationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InviteUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import InviteUsersResponseTypeDef
+
+def get_value() -> InviteUsersResponseTypeDef:
+    return {
+        "Invites": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class InviteUsersResponseTypeDef(TypedDict):
+    Invites: List[InviteTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InviteTypeDef](./type_defs.md#invitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountsRequestListAccountsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAccountsRequestListAccountsPaginateTypeDef
+
+def get_value() -> ListAccountsRequestListAccountsPaginateTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountsRequestListAccountsPaginateTypeDef(TypedDict):
     Name: NotRequired[str],
-    OutboundHostName: NotRequired[str],
-    RequireEncryption: NotRequired[bool],
+    UserEmail: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListUsersRequestListUsersPaginateTypeDef
+
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    AccountId: str,
+    UserEmail: NotRequired[str],
+    UserType: NotRequired[UserTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSupportedPhoneNumberCountriesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesResponseTypeDef
+
+def get_value() -> ListSupportedPhoneNumberCountriesResponseTypeDef:
+    return {
+        "PhoneNumberCountries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSupportedPhoneNumberCountriesResponseTypeDef(TypedDict):
+    PhoneNumberCountries: List[PhoneNumberCountryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberCountryTypeDef](./type_defs.md#phonenumbercountrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MeetingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import MeetingTypeDef
+
+def get_value() -> MeetingTypeDef:
+    return {
+        "MeetingId": ...,
+    }
+```
+
+```python title="Definition"
+class MeetingTypeDef(TypedDict):
+    MeetingId: NotRequired[str],
+    ExternalMeetingId: NotRequired[str],
+    MediaPlacement: NotRequired[MediaPlacementTypeDef],  # (1)
+    MediaRegion: NotRequired[str],
+```
+
+1. See [:material-code-braces: MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef) 
+## RoomMembershipTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import RoomMembershipTypeDef
+
+def get_value() -> RoomMembershipTypeDef:
+    return {
+        "RoomId": ...,
+    }
+```
+
+```python title="Definition"
+class RoomMembershipTypeDef(TypedDict):
+    RoomId: NotRequired[str],
+    Member: NotRequired[MemberTypeDef],  # (1)
+    Role: NotRequired[RoomMembershipRoleType],  # (2)
+    InvitedBy: NotRequired[str],
+    UpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
+## PhoneNumberOrderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PhoneNumberOrderTypeDef
+
+def get_value() -> PhoneNumberOrderTypeDef:
+    return {
+        "PhoneNumberOrderId": ...,
+    }
+```
+
+```python title="Definition"
+class PhoneNumberOrderTypeDef(TypedDict):
+    PhoneNumberOrderId: NotRequired[str],
+    ProductType: NotRequired[PhoneNumberProductTypeType],  # (1)
+    Status: NotRequired[PhoneNumberOrderStatusType],  # (2)
+    OrderedPhoneNumbers: NotRequired[List[OrderedPhoneNumberTypeDef]],  # (3)
     CreatedTimestamp: NotRequired[datetime],
     UpdatedTimestamp: NotRequired[datetime],
-    VoiceConnectorArn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype) 
+1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+2. See [:material-code-brackets: PhoneNumberOrderStatusType](./literals.md#phonenumberorderstatustype) 
+3. See [:material-code-braces: OrderedPhoneNumberTypeDef](./type_defs.md#orderedphonenumbertypedef) 
+## OriginationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import OriginationTypeDef
+
+def get_value() -> OriginationTypeDef:
+    return {
+        "Routes": ...,
+    }
+```
+
+```python title="Definition"
+class OriginationTypeDef(TypedDict):
+    Routes: NotRequired[List[OriginationRouteTypeDef]],  # (1)
+    Disabled: NotRequired[bool],
+```
+
+1. See [:material-code-braces: OriginationRouteTypeDef](./type_defs.md#originationroutetypedef) 
+## ProxySessionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ProxySessionTypeDef
+
+def get_value() -> ProxySessionTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ProxySessionTypeDef(TypedDict):
+    VoiceConnectorId: NotRequired[str],
+    ProxySessionId: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ProxySessionStatusType],  # (1)
+    ExpiryMinutes: NotRequired[int],
+    Capabilities: NotRequired[List[CapabilityType]],  # (2)
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+    EndedTimestamp: NotRequired[datetime],
+    Participants: NotRequired[List[ParticipantTypeDef]],  # (3)
+    NumberSelectionBehavior: NotRequired[NumberSelectionBehaviorType],  # (4)
+    GeoMatchLevel: NotRequired[GeoMatchLevelType],  # (5)
+    GeoMatchParams: NotRequired[GeoMatchParamsTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: ProxySessionStatusType](./literals.md#proxysessionstatustype) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: ParticipantTypeDef](./type_defs.md#participanttypedef) 
+4. See [:material-code-brackets: NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype) 
+5. See [:material-code-brackets: GeoMatchLevelType](./literals.md#geomatchleveltype) 
+6. See [:material-code-braces: GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef) 
+## PhoneNumberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PhoneNumberTypeDef
+
+def get_value() -> PhoneNumberTypeDef:
+    return {
+        "PhoneNumberId": ...,
+    }
+```
+
+```python title="Definition"
+class PhoneNumberTypeDef(TypedDict):
+    PhoneNumberId: NotRequired[str],
+    E164PhoneNumber: NotRequired[str],
+    Country: NotRequired[str],
+    Type: NotRequired[PhoneNumberTypeType],  # (1)
+    ProductType: NotRequired[PhoneNumberProductTypeType],  # (2)
+    Status: NotRequired[PhoneNumberStatusType],  # (3)
+    Capabilities: NotRequired[PhoneNumberCapabilitiesTypeDef],  # (4)
+    Associations: NotRequired[List[PhoneNumberAssociationTypeDef]],  # (5)
+    CallingName: NotRequired[str],
+    CallingNameStatus: NotRequired[CallingNameStatusType],  # (6)
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+    DeletionTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+3. See [:material-code-brackets: PhoneNumberStatusType](./literals.md#phonenumberstatustype) 
+4. See [:material-code-braces: PhoneNumberCapabilitiesTypeDef](./type_defs.md#phonenumbercapabilitiestypedef) 
+5. See [:material-code-braces: PhoneNumberAssociationTypeDef](./type_defs.md#phonenumberassociationtypedef) 
+6. See [:material-code-brackets: CallingNameStatusType](./literals.md#callingnamestatustype) 
+## RetentionSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import RetentionSettingsTypeDef
+
+def get_value() -> RetentionSettingsTypeDef:
+    return {
+        "RoomRetentionSettings": ...,
+    }
+```
+
+```python title="Definition"
+class RetentionSettingsTypeDef(TypedDict):
+    RoomRetentionSettings: NotRequired[RoomRetentionSettingsTypeDef],  # (1)
+    ConversationRetentionSettings: NotRequired[ConversationRetentionSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RoomRetentionSettingsTypeDef](./type_defs.md#roomretentionsettingstypedef) 
+2. See [:material-code-braces: ConversationRetentionSettingsTypeDef](./type_defs.md#conversationretentionsettingstypedef) 
+## SourceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import SourceConfigurationTypeDef
+
+def get_value() -> SourceConfigurationTypeDef:
+    return {
+        "SelectedVideoStreams": ...,
+    }
+```
+
+```python title="Definition"
+class SourceConfigurationTypeDef(TypedDict):
+    SelectedVideoStreams: NotRequired[SelectedVideoStreamsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef) 
+## StreamingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import StreamingConfigurationTypeDef
+
+def get_value() -> StreamingConfigurationTypeDef:
+    return {
+        "DataRetentionInHours": ...,
+    }
+```
+
+```python title="Definition"
+class StreamingConfigurationTypeDef(TypedDict):
+    DataRetentionInHours: int,
+    Disabled: NotRequired[bool],
+    StreamingNotificationTargets: NotRequired[List[StreamingNotificationTargetTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: StreamingNotificationTargetTypeDef](./type_defs.md#streamingnotificationtargettypedef) 
+## UserSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UserSettingsTypeDef
+
+def get_value() -> UserSettingsTypeDef:
+    return {
+        "Telephony": ...,
+    }
+```
+
+```python title="Definition"
+class UserSettingsTypeDef(TypedDict):
+    Telephony: TelephonySettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: TelephonySettingsTypeDef](./type_defs.md#telephonysettingstypedef) 
+## CreateAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateAccountResponseTypeDef
+
+def get_value() -> CreateAccountResponseTypeDef:
+    return {
+        "Account": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccountResponseTypeDef(TypedDict):
+    Account: AccountTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetAccountResponseTypeDef
+
+def get_value() -> GetAccountResponseTypeDef:
+    return {
+        "Account": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccountResponseTypeDef(TypedDict):
+    Account: AccountTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAccountsResponseTypeDef
+
+def get_value() -> ListAccountsResponseTypeDef:
+    return {
+        "Accounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountsResponseTypeDef(TypedDict):
+    Accounts: List[AccountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateAccountResponseTypeDef
+
+def get_value() -> UpdateAccountResponseTypeDef:
+    return {
+        "Account": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountResponseTypeDef(TypedDict):
+    Account: AccountTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdateUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchUpdateUserRequestRequestTypeDef
+
+def get_value() -> BatchUpdateUserRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "UpdateUserRequestItems": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateUserRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    UpdateUserRequestItems: Sequence[UpdateUserRequestItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef) 
+## CreateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetUserResponseTypeDef
+
+def get_value() -> GetUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResetPersonalPINResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ResetPersonalPINResponseTypeDef
+
+def get_value() -> ResetPersonalPINResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ResetPersonalPINResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateUserResponseTypeDef
+
+def get_value() -> UpdateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppInstanceAdminsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListAppInstanceAdminsResponseTypeDef
+
+def get_value() -> ListAppInstanceAdminsResponseTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "AppInstanceAdmins": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppInstanceAdminsResponseTypeDef(TypedDict):
+    AppInstanceArn: str,
+    AppInstanceAdmins: List[AppInstanceAdminSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceAdminSummaryTypeDef](./type_defs.md#appinstanceadminsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppInstanceAdminResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminResponseTypeDef
+
+def get_value() -> DescribeAppInstanceAdminResponseTypeDef:
+    return {
+        "AppInstanceAdmin": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppInstanceAdminResponseTypeDef(TypedDict):
+    AppInstanceAdmin: AppInstanceAdminTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceAdminTypeDef](./type_defs.md#appinstanceadmintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchCreateChannelMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipResponseTypeDef
+
+def get_value() -> BatchCreateChannelMembershipResponseTypeDef:
+    return {
+        "BatchChannelMemberships": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateChannelMembershipResponseTypeDef(TypedDict):
+    BatchChannelMemberships: BatchChannelMembershipsTypeDef,  # (1)
+    Errors: List[BatchCreateChannelMembershipErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BatchChannelMembershipsTypeDef](./type_defs.md#batchchannelmembershipstypedef) 
+2. See [:material-code-braces: BatchCreateChannelMembershipErrorTypeDef](./type_defs.md#batchcreatechannelmembershiperrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelBansResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelBansResponseTypeDef
+
+def get_value() -> ListChannelBansResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelBans": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelBansResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelBans: List[ChannelBanSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelBanSummaryTypeDef](./type_defs.md#channelbansummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelBanResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelBanResponseTypeDef
+
+def get_value() -> DescribeChannelBanResponseTypeDef:
+    return {
+        "ChannelBan": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelBanResponseTypeDef(TypedDict):
+    ChannelBan: ChannelBanTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelBanTypeDef](./type_defs.md#channelbantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelMembershipsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelMembershipsResponseTypeDef
+
+def get_value() -> ListChannelMembershipsResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelMemberships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelMembershipsResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelMemberships: List[ChannelMembershipSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMembershipSummaryTypeDef](./type_defs.md#channelmembershipsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipResponseTypeDef
+
+def get_value() -> DescribeChannelMembershipResponseTypeDef:
+    return {
+        "ChannelMembership": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelMembershipResponseTypeDef(TypedDict):
+    ChannelMembership: ChannelMembershipTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMembershipTypeDef](./type_defs.md#channelmembershiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelMessagesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelMessagesResponseTypeDef
+
+def get_value() -> ListChannelMessagesResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelMessages": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelMessagesResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelMessages: List[ChannelMessageSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMessageSummaryTypeDef](./type_defs.md#channelmessagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetChannelMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetChannelMessageResponseTypeDef
+
+def get_value() -> GetChannelMessageResponseTypeDef:
+    return {
+        "ChannelMessage": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetChannelMessageResponseTypeDef(TypedDict):
+    ChannelMessage: ChannelMessageTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelModeratorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelModeratorsResponseTypeDef
+
+def get_value() -> ListChannelModeratorsResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelModerators": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelModeratorsResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelModerators: List[ChannelModeratorSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelModeratorSummaryTypeDef](./type_defs.md#channelmoderatorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelModeratorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelModeratorResponseTypeDef
+
+def get_value() -> DescribeChannelModeratorResponseTypeDef:
+    return {
+        "ChannelModerator": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelModeratorResponseTypeDef(TypedDict):
+    ChannelModerator: ChannelModeratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelModeratorTypeDef](./type_defs.md#channelmoderatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelResponseTypeDef
+
+def get_value() -> DescribeChannelResponseTypeDef:
+    return {
+        "Channel": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelResponseTypeDef(TypedDict):
+    Channel: ChannelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAppInstanceRetentionSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsResponseTypeDef
+
+def get_value() -> GetAppInstanceRetentionSettingsResponseTypeDef:
+    return {
+        "AppInstanceRetentionSettings": ...,
+        "InitiateDeletionTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAppInstanceRetentionSettingsResponseTypeDef(TypedDict):
+    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
+    InitiateDeletionTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutAppInstanceRetentionSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsRequestRequestTypeDef
+
+def get_value() -> PutAppInstanceRetentionSettingsRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "AppInstanceRetentionSettings": ...,
+    }
+```
+
+```python title="Definition"
+class PutAppInstanceRetentionSettingsRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
+## PutAppInstanceRetentionSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsResponseTypeDef
+
+def get_value() -> PutAppInstanceRetentionSettingsResponseTypeDef:
+    return {
+        "AppInstanceRetentionSettings": ...,
+        "InitiateDeletionTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutAppInstanceRetentionSettingsResponseTypeDef(TypedDict):
+    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
+    InitiateDeletionTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelMembershipForAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserResponseTypeDef
+
+def get_value() -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:
+    return {
+        "ChannelMembership": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelMembershipForAppInstanceUserResponseTypeDef(TypedDict):
+    ChannelMembership: ChannelMembershipForAppInstanceUserSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelMembershipsForAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserResponseTypeDef
+
+def get_value() -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:
+    return {
+        "ChannelMemberships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelMembershipsForAppInstanceUserResponseTypeDef(TypedDict):
+    ChannelMemberships: List[ChannelMembershipForAppInstanceUserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelModeratedByAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserResponseTypeDef
+
+def get_value() -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:
+    return {
+        "Channel": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChannelModeratedByAppInstanceUserResponseTypeDef(TypedDict):
+    Channel: ChannelModeratedByAppInstanceUserSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelsModeratedByAppInstanceUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserResponseTypeDef
+
+def get_value() -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsModeratedByAppInstanceUserResponseTypeDef(TypedDict):
+    Channels: List[ChannelModeratedByAppInstanceUserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchCreateAttendeeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import BatchCreateAttendeeRequestRequestTypeDef
+
+def get_value() -> BatchCreateAttendeeRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "Attendees": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateAttendeeRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+## CreateMeetingWithAttendeesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesRequestRequestTypeDef
+
+def get_value() -> CreateMeetingWithAttendeesRequestRequestTypeDef:
+    return {
+        "ClientRequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeetingWithAttendeesRequestRequestTypeDef(TypedDict):
+    ClientRequestToken: str,
+    ExternalMeetingId: NotRequired[str],
+    MeetingHostId: NotRequired[str],
+    MediaRegion: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    NotificationsConfiguration: NotRequired[MeetingNotificationConfigurationTypeDef],  # (2)
+    Attendees: NotRequired[Sequence[CreateAttendeeRequestItemTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
+3. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+## CreateSipMediaApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationResponseTypeDef
+
+def get_value() -> CreateSipMediaApplicationResponseTypeDef:
+    return {
+        "SipMediaApplication": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSipMediaApplicationResponseTypeDef(TypedDict):
+    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSipMediaApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationResponseTypeDef
+
+def get_value() -> GetSipMediaApplicationResponseTypeDef:
+    return {
+        "SipMediaApplication": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSipMediaApplicationResponseTypeDef(TypedDict):
+    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSipMediaApplicationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListSipMediaApplicationsResponseTypeDef
+
+def get_value() -> ListSipMediaApplicationsResponseTypeDef:
+    return {
+        "SipMediaApplications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSipMediaApplicationsResponseTypeDef(TypedDict):
+    SipMediaApplications: List[SipMediaApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSipMediaApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationResponseTypeDef
+
+def get_value() -> UpdateSipMediaApplicationResponseTypeDef:
+    return {
+        "SipMediaApplication": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSipMediaApplicationResponseTypeDef(TypedDict):
+    SipMediaApplication: SipMediaApplicationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipMediaApplicationTypeDef](./type_defs.md#sipmediaapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSipRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateSipRuleResponseTypeDef
+
+def get_value() -> CreateSipRuleResponseTypeDef:
+    return {
+        "SipRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSipRuleResponseTypeDef(TypedDict):
+    SipRule: SipRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSipRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetSipRuleResponseTypeDef
+
+def get_value() -> GetSipRuleResponseTypeDef:
+    return {
+        "SipRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSipRuleResponseTypeDef(TypedDict):
+    SipRule: SipRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSipRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListSipRulesResponseTypeDef
+
+def get_value() -> ListSipRulesResponseTypeDef:
+    return {
+        "SipRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSipRulesResponseTypeDef(TypedDict):
+    SipRules: List[SipRuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSipRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateSipRuleResponseTypeDef
+
+def get_value() -> UpdateSipRuleResponseTypeDef:
+    return {
+        "SipRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSipRuleResponseTypeDef(TypedDict):
+    SipRule: SipRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SipRuleTypeDef](./type_defs.md#sipruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVoiceConnectorGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupResponseTypeDef
+
+def get_value() -> CreateVoiceConnectorGroupResponseTypeDef:
+    return {
+        "VoiceConnectorGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVoiceConnectorGroupResponseTypeDef(TypedDict):
+    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupResponseTypeDef
+
+def get_value() -> GetVoiceConnectorGroupResponseTypeDef:
+    return {
+        "VoiceConnectorGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorGroupResponseTypeDef(TypedDict):
+    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVoiceConnectorGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsResponseTypeDef
+
+def get_value() -> ListVoiceConnectorGroupsResponseTypeDef:
+    return {
+        "VoiceConnectorGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVoiceConnectorGroupsResponseTypeDef(TypedDict):
+    VoiceConnectorGroups: List[VoiceConnectorGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateVoiceConnectorGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupResponseTypeDef
+
+def get_value() -> UpdateVoiceConnectorGroupResponseTypeDef:
+    return {
+        "VoiceConnectorGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVoiceConnectorGroupResponseTypeDef(TypedDict):
+    VoiceConnectorGroup: VoiceConnectorGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VoiceConnectorGroupTypeDef](./type_defs.md#voiceconnectorgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
+
+def get_value() -> GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
+    return {
+        "EmergencyCallingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef(TypedDict):
+    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+        "EmergencyCallingConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
+## PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
+
+def get_value() -> PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
+    return {
+        "EmergencyCallingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef(TypedDict):
+    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartMeetingTranscriptionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import StartMeetingTranscriptionRequestRequestTypeDef
+
+def get_value() -> StartMeetingTranscriptionRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "TranscriptionConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class StartMeetingTranscriptionRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    TranscriptionConfiguration: TranscriptionConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef) 
+## CreateMeetingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMeetingResponseTypeDef
+
+def get_value() -> CreateMeetingResponseTypeDef:
+    return {
+        "Meeting": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeetingResponseTypeDef(TypedDict):
+    Meeting: MeetingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMeetingWithAttendeesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesResponseTypeDef
+
+def get_value() -> CreateMeetingWithAttendeesResponseTypeDef:
+    return {
+        "Meeting": ...,
+        "Attendees": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeetingWithAttendeesResponseTypeDef(TypedDict):
+    Meeting: MeetingTypeDef,  # (1)
+    Attendees: List[AttendeeTypeDef],  # (2)
+    Errors: List[CreateAttendeeErrorTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
+2. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+3. See [:material-code-braces: CreateAttendeeErrorTypeDef](./type_defs.md#createattendeeerrortypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMeetingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetMeetingResponseTypeDef
+
+def get_value() -> GetMeetingResponseTypeDef:
+    return {
+        "Meeting": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMeetingResponseTypeDef(TypedDict):
+    Meeting: MeetingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMeetingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListMeetingsResponseTypeDef
+
+def get_value() -> ListMeetingsResponseTypeDef:
+    return {
+        "Meetings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMeetingsResponseTypeDef(TypedDict):
+    Meetings: List[MeetingTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeetingTypeDef](./type_defs.md#meetingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRoomMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateRoomMembershipResponseTypeDef
+
+def get_value() -> CreateRoomMembershipResponseTypeDef:
+    return {
+        "RoomMembership": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRoomMembershipResponseTypeDef(TypedDict):
+    RoomMembership: RoomMembershipTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoomMembershipsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListRoomMembershipsResponseTypeDef
+
+def get_value() -> ListRoomMembershipsResponseTypeDef:
+    return {
+        "RoomMemberships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoomMembershipsResponseTypeDef(TypedDict):
+    RoomMemberships: List[RoomMembershipTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRoomMembershipResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateRoomMembershipResponseTypeDef
+
+def get_value() -> UpdateRoomMembershipResponseTypeDef:
+    return {
+        "RoomMembership": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRoomMembershipResponseTypeDef(TypedDict):
+    RoomMembership: RoomMembershipTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePhoneNumberOrderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderResponseTypeDef
+
+def get_value() -> CreatePhoneNumberOrderResponseTypeDef:
+    return {
+        "PhoneNumberOrder": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePhoneNumberOrderResponseTypeDef(TypedDict):
+    PhoneNumberOrder: PhoneNumberOrderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPhoneNumberOrderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetPhoneNumberOrderResponseTypeDef
+
+def get_value() -> GetPhoneNumberOrderResponseTypeDef:
+    return {
+        "PhoneNumberOrder": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPhoneNumberOrderResponseTypeDef(TypedDict):
+    PhoneNumberOrder: PhoneNumberOrderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPhoneNumberOrdersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersResponseTypeDef
+
+def get_value() -> ListPhoneNumberOrdersResponseTypeDef:
+    return {
+        "PhoneNumberOrders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPhoneNumberOrdersResponseTypeDef(TypedDict):
+    PhoneNumberOrders: List[PhoneNumberOrderTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberOrderTypeDef](./type_defs.md#phonenumberordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVoiceConnectorOriginationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationResponseTypeDef
+
+def get_value() -> GetVoiceConnectorOriginationResponseTypeDef:
+    return {
+        "Origination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorOriginationResponseTypeDef(TypedDict):
+    Origination: OriginationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorOriginationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorOriginationRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+        "Origination": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorOriginationRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    Origination: OriginationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
+## PutVoiceConnectorOriginationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationResponseTypeDef
+
+def get_value() -> PutVoiceConnectorOriginationResponseTypeDef:
+    return {
+        "Origination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorOriginationResponseTypeDef(TypedDict):
+    Origination: OriginationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProxySessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateProxySessionResponseTypeDef
+
+def get_value() -> CreateProxySessionResponseTypeDef:
+    return {
+        "ProxySession": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProxySessionResponseTypeDef(TypedDict):
+    ProxySession: ProxySessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetProxySessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetProxySessionResponseTypeDef
+
+def get_value() -> GetProxySessionResponseTypeDef:
+    return {
+        "ProxySession": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetProxySessionResponseTypeDef(TypedDict):
+    ProxySession: ProxySessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProxySessionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListProxySessionsResponseTypeDef
+
+def get_value() -> ListProxySessionsResponseTypeDef:
+    return {
+        "ProxySessions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProxySessionsResponseTypeDef(TypedDict):
+    ProxySessions: List[ProxySessionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProxySessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateProxySessionResponseTypeDef
+
+def get_value() -> UpdateProxySessionResponseTypeDef:
+    return {
+        "ProxySession": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProxySessionResponseTypeDef(TypedDict):
+    ProxySession: ProxySessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProxySessionTypeDef](./type_defs.md#proxysessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPhoneNumberResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetPhoneNumberResponseTypeDef
+
+def get_value() -> GetPhoneNumberResponseTypeDef:
+    return {
+        "PhoneNumber": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPhoneNumberResponseTypeDef(TypedDict):
+    PhoneNumber: PhoneNumberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPhoneNumbersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListPhoneNumbersResponseTypeDef
+
+def get_value() -> ListPhoneNumbersResponseTypeDef:
+    return {
+        "PhoneNumbers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPhoneNumbersResponseTypeDef(TypedDict):
+    PhoneNumbers: List[PhoneNumberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestorePhoneNumberResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import RestorePhoneNumberResponseTypeDef
+
+def get_value() -> RestorePhoneNumberResponseTypeDef:
+    return {
+        "PhoneNumber": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RestorePhoneNumberResponseTypeDef(TypedDict):
+    PhoneNumber: PhoneNumberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdatePhoneNumberResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdatePhoneNumberResponseTypeDef
+
+def get_value() -> UpdatePhoneNumberResponseTypeDef:
+    return {
+        "PhoneNumber": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePhoneNumberResponseTypeDef(TypedDict):
+    PhoneNumber: PhoneNumberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRetentionSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetRetentionSettingsResponseTypeDef
+
+def get_value() -> GetRetentionSettingsResponseTypeDef:
+    return {
+        "RetentionSettings": ...,
+        "InitiateDeletionTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRetentionSettingsResponseTypeDef(TypedDict):
+    RetentionSettings: RetentionSettingsTypeDef,  # (1)
+    InitiateDeletionTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutRetentionSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutRetentionSettingsRequestRequestTypeDef
+
+def get_value() -> PutRetentionSettingsRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "RetentionSettings": ...,
+    }
+```
+
+```python title="Definition"
+class PutRetentionSettingsRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    RetentionSettings: RetentionSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
+## PutRetentionSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutRetentionSettingsResponseTypeDef
+
+def get_value() -> PutRetentionSettingsResponseTypeDef:
+    return {
+        "RetentionSettings": ...,
+        "InitiateDeletionTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutRetentionSettingsResponseTypeDef(TypedDict):
+    RetentionSettings: RetentionSettingsTypeDef,  # (1)
+    InitiateDeletionTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ChimeSdkMeetingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ChimeSdkMeetingConfigurationTypeDef
+
+def get_value() -> ChimeSdkMeetingConfigurationTypeDef:
+    return {
+        "SourceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ChimeSdkMeetingConfigurationTypeDef(TypedDict):
+    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
+    ArtifactsConfiguration: NotRequired[ArtifactsConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef) 
+## GetVoiceConnectorStreamingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationResponseTypeDef
+
+def get_value() -> GetVoiceConnectorStreamingConfigurationResponseTypeDef:
+    return {
+        "StreamingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVoiceConnectorStreamingConfigurationResponseTypeDef(TypedDict):
+    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
+
+def get_value() -> PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef:
+    return {
+        "VoiceConnectorId": ...,
+        "StreamingConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef(TypedDict):
+    VoiceConnectorId: str,
+    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
+## PutVoiceConnectorStreamingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationResponseTypeDef
+
+def get_value() -> PutVoiceConnectorStreamingConfigurationResponseTypeDef:
+    return {
+        "StreamingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutVoiceConnectorStreamingConfigurationResponseTypeDef(TypedDict):
+    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetUserSettingsResponseTypeDef
+
+def get_value() -> GetUserSettingsResponseTypeDef:
+    return {
+        "UserSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserSettingsResponseTypeDef(TypedDict):
+    UserSettings: UserSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateUserSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import UpdateUserSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateUserSettingsRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "UserId": ...,
+        "UserSettings": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserSettingsRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    UserId: str,
+    UserSettings: UserSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
+## CreateMediaCapturePipelineRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineRequestRequestTypeDef
+
+def get_value() -> CreateMediaCapturePipelineRequestRequestTypeDef:
+    return {
+        "SourceType": ...,
+        "SourceArn": ...,
+        "SinkType": ...,
+        "SinkArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMediaCapturePipelineRequestRequestTypeDef(TypedDict):
+    SourceType: MediaPipelineSourceTypeType,  # (1)
+    SourceArn: str,
+    SinkType: MediaPipelineSinkTypeType,  # (2)
+    SinkArn: str,
+    ClientRequestToken: NotRequired[str],
+    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
+2. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
+3. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
+## MediaCapturePipelineTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import MediaCapturePipelineTypeDef
+
+def get_value() -> MediaCapturePipelineTypeDef:
+    return {
+        "MediaPipelineId": ...,
+    }
+```
+
+```python title="Definition"
+class MediaCapturePipelineTypeDef(TypedDict):
+    MediaPipelineId: NotRequired[str],
+    SourceType: NotRequired[MediaPipelineSourceTypeType],  # (1)
+    SourceArn: NotRequired[str],
+    Status: NotRequired[MediaPipelineStatusType],  # (2)
+    SinkType: NotRequired[MediaPipelineSinkTypeType],  # (3)
+    SinkArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
+2. See [:material-code-brackets: MediaPipelineStatusType](./literals.md#mediapipelinestatustype) 
+3. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
+4. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
+## CreateMediaCapturePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineResponseTypeDef
+
+def get_value() -> CreateMediaCapturePipelineResponseTypeDef:
+    return {
+        "MediaCapturePipeline": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMediaCapturePipelineResponseTypeDef(TypedDict):
+    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMediaCapturePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import GetMediaCapturePipelineResponseTypeDef
+
+def get_value() -> GetMediaCapturePipelineResponseTypeDef:
+    return {
+        "MediaCapturePipeline": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMediaCapturePipelineResponseTypeDef(TypedDict):
+    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMediaCapturePipelinesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ListMediaCapturePipelinesResponseTypeDef
+
+def get_value() -> ListMediaCapturePipelinesResponseTypeDef:
+    return {
+        "MediaCapturePipelines": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMediaCapturePipelinesResponseTypeDef(TypedDict):
+    MediaCapturePipelines: List[MediaCapturePipelineTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -30,27 +30,30 @@ class InvokeEndpointAsyncInputRequestTypeDef(TypedDict):
     RequestTTLSeconds: NotRequired[int],
 ```
 
-## InvokeEndpointAsyncOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncOutputTypeDef
+from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> InvokeEndpointAsyncOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "InferenceId": ...,
-        "OutputLocation": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class InvokeEndpointAsyncOutputTypeDef(TypedDict):
-    InferenceId: str,
-    OutputLocation: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvokeEndpointInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -76,6 +79,27 @@ class InvokeEndpointInputRequestTypeDef(TypedDict):
     InferenceId: NotRequired[str],
 ```
 
+## InvokeEndpointAsyncOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncOutputTypeDef
+
+def get_value() -> InvokeEndpointAsyncOutputTypeDef:
+    return {
+        "InferenceId": ...,
+        "OutputLocation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class InvokeEndpointAsyncOutputTypeDef(TypedDict):
+    InferenceId: str,
+    OutputLocation: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvokeEndpointOutputTypeDef
 
 ```python title="Usage Example"
@@ -101,27 +125,3 @@ class InvokeEndpointOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-

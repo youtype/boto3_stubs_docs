@@ -7,93 +7,125 @@
     Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
     type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
-## AssociateFirewallRuleGroupRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import TagTypeDef
 
-def get_value() -> AssociateFirewallRuleGroupRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "CreatorRequestId": ...,
-        "FirewallRuleGroupId": ...,
-        "VpcId": ...,
-        "Priority": ...,
-        "Name": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateFirewallRuleGroupRequestRequestTypeDef(TypedDict):
-    CreatorRequestId: str,
-    FirewallRuleGroupId: str,
-    VpcId: str,
-    Priority: int,
-    Name: str,
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## FirewallRuleGroupAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupAssociationTypeDef
+
+def get_value() -> FirewallRuleGroupAssociationTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallRuleGroupAssociationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    FirewallRuleGroupId: NotRequired[str],
+    VpcId: NotRequired[str],
+    Name: NotRequired[str],
+    Priority: NotRequired[int],
     MutationProtection: NotRequired[MutationProtectionStatusType],  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ManagedOwnerName: NotRequired[str],
+    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (2)
+    StatusMessage: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## AssociateFirewallRuleGroupResponseTypeDef
+2. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateFirewallRuleGroupResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "FirewallRuleGroupAssociation": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateFirewallRuleGroupResponseTypeDef(TypedDict):
-    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AssociateResolverEndpointIpAddressRequestRequestTypeDef
+## IpAddressUpdateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import IpAddressUpdateTypeDef
 
-def get_value() -> AssociateResolverEndpointIpAddressRequestRequestTypeDef:
+def get_value() -> IpAddressUpdateTypeDef:
     return {
-        "ResolverEndpointId": ...,
-        "IpAddress": ...,
+        "IpId": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateResolverEndpointIpAddressRequestRequestTypeDef(TypedDict):
-    ResolverEndpointId: str,
-    IpAddress: IpAddressUpdateTypeDef,  # (1)
+class IpAddressUpdateTypeDef(TypedDict):
+    IpId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    Ip: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
-## AssociateResolverEndpointIpAddressResponseTypeDef
+## ResolverEndpointTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverEndpointTypeDef
 
-def get_value() -> AssociateResolverEndpointIpAddressResponseTypeDef:
+def get_value() -> ResolverEndpointTypeDef:
     return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateResolverEndpointIpAddressResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResolverEndpointTypeDef(TypedDict):
+    Id: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    Direction: NotRequired[ResolverEndpointDirectionType],  # (1)
+    IpAddressCount: NotRequired[int],
+    HostVPCId: NotRequired[str],
+    Status: NotRequired[ResolverEndpointStatusType],  # (2)
+    StatusMessage: NotRequired[str],
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
+2. See [:material-code-brackets: ResolverEndpointStatusType](./literals.md#resolverendpointstatustype) 
 ## AssociateResolverQueryLogConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -112,26 +144,30 @@ class AssociateResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## AssociateResolverQueryLogConfigResponseTypeDef
+## ResolverQueryLogConfigAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigAssociationTypeDef
 
-def get_value() -> AssociateResolverQueryLogConfigResponseTypeDef:
+def get_value() -> ResolverQueryLogConfigAssociationTypeDef:
     return {
-        "ResolverQueryLogConfigAssociation": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateResolverQueryLogConfigResponseTypeDef(TypedDict):
-    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResolverQueryLogConfigAssociationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ResolverQueryLogConfigId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Status: NotRequired[ResolverQueryLogConfigAssociationStatusType],  # (1)
+    Error: NotRequired[ResolverQueryLogConfigAssociationErrorType],  # (2)
+    ErrorMessage: NotRequired[str],
+    CreationTime: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ResolverQueryLogConfigAssociationStatusType](./literals.md#resolverquerylogconfigassociationstatustype) 
+2. See [:material-code-brackets: ResolverQueryLogConfigAssociationErrorType](./literals.md#resolverquerylogconfigassociationerrortype) 
 ## AssociateResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -151,106 +187,82 @@ class AssociateResolverRuleRequestRequestTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## AssociateResolverRuleResponseTypeDef
+## ResolverRuleAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverRuleAssociationTypeDef
 
-def get_value() -> AssociateResolverRuleResponseTypeDef:
+def get_value() -> ResolverRuleAssociationTypeDef:
     return {
-        "ResolverRuleAssociation": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateResolverRuleResponseTypeDef(TypedDict):
-    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResolverRuleAssociationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ResolverRuleId: NotRequired[str],
+    Name: NotRequired[str],
+    VPCId: NotRequired[str],
+    Status: NotRequired[ResolverRuleAssociationStatusType],  # (1)
+    StatusMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFirewallDomainListRequestRequestTypeDef
+1. See [:material-code-brackets: ResolverRuleAssociationStatusType](./literals.md#resolverruleassociationstatustype) 
+## FirewallDomainListTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import FirewallDomainListTypeDef
 
-def get_value() -> CreateFirewallDomainListRequestRequestTypeDef:
+def get_value() -> FirewallDomainListTypeDef:
     return {
-        "CreatorRequestId": ...,
-        "Name": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateFirewallDomainListRequestRequestTypeDef(TypedDict):
-    CreatorRequestId: str,
-    Name: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+class FirewallDomainListTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    DomainCount: NotRequired[int],
+    Status: NotRequired[FirewallDomainListStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    ManagedOwnerName: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateFirewallDomainListResponseTypeDef
+1. See [:material-code-brackets: FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype) 
+## FirewallRuleGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupTypeDef
 
-def get_value() -> CreateFirewallDomainListResponseTypeDef:
+def get_value() -> FirewallRuleGroupTypeDef:
     return {
-        "FirewallDomainList": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateFirewallDomainListResponseTypeDef(TypedDict):
-    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class FirewallRuleGroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    RuleCount: NotRequired[int],
+    Status: NotRequired[FirewallRuleGroupStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    OwnerId: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    ShareStatus: NotRequired[ShareStatusType],  # (2)
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFirewallRuleGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupRequestRequestTypeDef
-
-def get_value() -> CreateFirewallRuleGroupRequestRequestTypeDef:
-    return {
-        "CreatorRequestId": ...,
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFirewallRuleGroupRequestRequestTypeDef(TypedDict):
-    CreatorRequestId: str,
-    Name: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateFirewallRuleGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupResponseTypeDef
-
-def get_value() -> CreateFirewallRuleGroupResponseTypeDef:
-    return {
-        "FirewallRuleGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFirewallRuleGroupResponseTypeDef(TypedDict):
-    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: FirewallRuleGroupStatusType](./literals.md#firewallrulegroupstatustype) 
+2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## CreateFirewallRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -284,162 +296,97 @@ class CreateFirewallRuleRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
 2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
 3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
-## CreateFirewallRuleResponseTypeDef
+## FirewallRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import FirewallRuleTypeDef
 
-def get_value() -> CreateFirewallRuleResponseTypeDef:
+def get_value() -> FirewallRuleTypeDef:
     return {
-        "FirewallRule": ...,
-        "ResponseMetadata": ...,
+        "FirewallRuleGroupId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateFirewallRuleResponseTypeDef(TypedDict):
-    FirewallRule: FirewallRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateResolverEndpointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointRequestRequestTypeDef
-
-def get_value() -> CreateResolverEndpointRequestRequestTypeDef:
-    return {
-        "CreatorRequestId": ...,
-        "SecurityGroupIds": ...,
-        "Direction": ...,
-        "IpAddresses": ...,
-    }
-```
-
-```python title="Definition"
-class CreateResolverEndpointRequestRequestTypeDef(TypedDict):
-    CreatorRequestId: str,
-    SecurityGroupIds: Sequence[str],
-    Direction: ResolverEndpointDirectionType,  # (1)
-    IpAddresses: Sequence[IpAddressRequestTypeDef],  # (2)
+class FirewallRuleTypeDef(TypedDict):
+    FirewallRuleGroupId: NotRequired[str],
+    FirewallDomainListId: NotRequired[str],
     Name: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    Priority: NotRequired[int],
+    Action: NotRequired[ActionType],  # (1)
+    BlockResponse: NotRequired[BlockResponseType],  # (2)
+    BlockOverrideDomain: NotRequired[str],
+    BlockOverrideDnsType: NotRequired[BlockOverrideDnsTypeType],  # (3)
+    BlockOverrideTtl: NotRequired[int],
+    CreatorRequestId: NotRequired[str],
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
-2. See [:material-code-braces: IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateResolverEndpointResponseTypeDef
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
+3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
+## IpAddressRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import IpAddressRequestTypeDef
 
-def get_value() -> CreateResolverEndpointResponseTypeDef:
+def get_value() -> IpAddressRequestTypeDef:
     return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
+        "SubnetId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateResolverEndpointResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class IpAddressRequestTypeDef(TypedDict):
+    SubnetId: str,
+    Ip: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateResolverQueryLogConfigRequestRequestTypeDef
+## ResolverQueryLogConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigTypeDef
 
-def get_value() -> CreateResolverQueryLogConfigRequestRequestTypeDef:
+def get_value() -> ResolverQueryLogConfigTypeDef:
     return {
-        "Name": ...,
-        "DestinationArn": ...,
-        "CreatorRequestId": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
-    Name: str,
-    DestinationArn: str,
-    CreatorRequestId: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateResolverQueryLogConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigResponseTypeDef
-
-def get_value() -> CreateResolverQueryLogConfigResponseTypeDef:
-    return {
-        "ResolverQueryLogConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateResolverQueryLogConfigResponseTypeDef(TypedDict):
-    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateResolverRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverRuleRequestRequestTypeDef
-
-def get_value() -> CreateResolverRuleRequestRequestTypeDef:
-    return {
-        "CreatorRequestId": ...,
-        "RuleType": ...,
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateResolverRuleRequestRequestTypeDef(TypedDict):
-    CreatorRequestId: str,
-    RuleType: RuleTypeOptionType,  # (1)
-    DomainName: str,
+class ResolverQueryLogConfigTypeDef(TypedDict):
+    Id: NotRequired[str],
+    OwnerId: NotRequired[str],
+    Status: NotRequired[ResolverQueryLogConfigStatusType],  # (1)
+    ShareStatus: NotRequired[ShareStatusType],  # (2)
+    AssociationCount: NotRequired[int],
+    Arn: NotRequired[str],
     Name: NotRequired[str],
-    TargetIps: NotRequired[Sequence[TargetAddressTypeDef]],  # (2)
-    ResolverEndpointId: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    DestinationArn: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    CreationTime: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: RuleTypeOptionType](./literals.md#ruletypeoptiontype) 
-2. See [:material-code-braces: TargetAddressTypeDef](./type_defs.md#targetaddresstypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateResolverRuleResponseTypeDef
+1. See [:material-code-brackets: ResolverQueryLogConfigStatusType](./literals.md#resolverquerylogconfigstatustype) 
+2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
+## TargetAddressTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import CreateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import TargetAddressTypeDef
 
-def get_value() -> CreateResolverRuleResponseTypeDef:
+def get_value() -> TargetAddressTypeDef:
     return {
-        "ResolverRule": ...,
-        "ResponseMetadata": ...,
+        "Ip": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateResolverRuleResponseTypeDef(TypedDict):
-    ResolverRule: ResolverRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TargetAddressTypeDef(TypedDict):
+    Ip: str,
+    Port: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFirewallDomainListRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -456,26 +403,6 @@ class DeleteFirewallDomainListRequestRequestTypeDef(TypedDict):
     FirewallDomainListId: str,
 ```
 
-## DeleteFirewallDomainListResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListResponseTypeDef
-
-def get_value() -> DeleteFirewallDomainListResponseTypeDef:
-    return {
-        "FirewallDomainList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFirewallDomainListResponseTypeDef(TypedDict):
-    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFirewallRuleGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -492,26 +419,6 @@ class DeleteFirewallRuleGroupRequestRequestTypeDef(TypedDict):
     FirewallRuleGroupId: str,
 ```
 
-## DeleteFirewallRuleGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupResponseTypeDef
-
-def get_value() -> DeleteFirewallRuleGroupResponseTypeDef:
-    return {
-        "FirewallRuleGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFirewallRuleGroupResponseTypeDef(TypedDict):
-    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFirewallRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -530,26 +437,6 @@ class DeleteFirewallRuleRequestRequestTypeDef(TypedDict):
     FirewallDomainListId: str,
 ```
 
-## DeleteFirewallRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleResponseTypeDef
-
-def get_value() -> DeleteFirewallRuleResponseTypeDef:
-    return {
-        "FirewallRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFirewallRuleResponseTypeDef(TypedDict):
-    FirewallRule: FirewallRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResolverEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -566,26 +453,6 @@ class DeleteResolverEndpointRequestRequestTypeDef(TypedDict):
     ResolverEndpointId: str,
 ```
 
-## DeleteResolverEndpointResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointResponseTypeDef
-
-def get_value() -> DeleteResolverEndpointResponseTypeDef:
-    return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteResolverEndpointResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResolverQueryLogConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -602,26 +469,6 @@ class DeleteResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
     ResolverQueryLogConfigId: str,
 ```
 
-## DeleteResolverQueryLogConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigResponseTypeDef
-
-def get_value() -> DeleteResolverQueryLogConfigResponseTypeDef:
-    return {
-        "ResolverQueryLogConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteResolverQueryLogConfigResponseTypeDef(TypedDict):
-    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -638,26 +485,6 @@ class DeleteResolverRuleRequestRequestTypeDef(TypedDict):
     ResolverRuleId: str,
 ```
 
-## DeleteResolverRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleResponseTypeDef
-
-def get_value() -> DeleteResolverRuleResponseTypeDef:
-    return {
-        "ResolverRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteResolverRuleResponseTypeDef(TypedDict):
-    ResolverRule: ResolverRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateFirewallRuleGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -674,65 +501,6 @@ class DisassociateFirewallRuleGroupRequestRequestTypeDef(TypedDict):
     FirewallRuleGroupAssociationId: str,
 ```
 
-## DisassociateFirewallRuleGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupResponseTypeDef
-
-def get_value() -> DisassociateFirewallRuleGroupResponseTypeDef:
-    return {
-        "FirewallRuleGroupAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateFirewallRuleGroupResponseTypeDef(TypedDict):
-    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DisassociateResolverEndpointIpAddressRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressRequestRequestTypeDef
-
-def get_value() -> DisassociateResolverEndpointIpAddressRequestRequestTypeDef:
-    return {
-        "ResolverEndpointId": ...,
-        "IpAddress": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateResolverEndpointIpAddressRequestRequestTypeDef(TypedDict):
-    ResolverEndpointId: str,
-    IpAddress: IpAddressUpdateTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
-## DisassociateResolverEndpointIpAddressResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressResponseTypeDef
-
-def get_value() -> DisassociateResolverEndpointIpAddressResponseTypeDef:
-    return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateResolverEndpointIpAddressResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateResolverQueryLogConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -751,26 +519,6 @@ class DisassociateResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## DisassociateResolverQueryLogConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigResponseTypeDef
-
-def get_value() -> DisassociateResolverQueryLogConfigResponseTypeDef:
-    return {
-        "ResolverQueryLogConfigAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateResolverQueryLogConfigResponseTypeDef(TypedDict):
-    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -789,26 +537,6 @@ class DisassociateResolverRuleRequestRequestTypeDef(TypedDict):
     ResolverRuleId: str,
 ```
 
-## DisassociateResolverRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleResponseTypeDef
-
-def get_value() -> DisassociateResolverRuleResponseTypeDef:
-    return {
-        "ResolverRuleAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateResolverRuleResponseTypeDef(TypedDict):
-    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -866,62 +594,6 @@ class FirewallDomainListMetadataTypeDef(TypedDict):
     ManagedOwnerName: NotRequired[str],
 ```
 
-## FirewallDomainListTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import FirewallDomainListTypeDef
-
-def get_value() -> FirewallDomainListTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallDomainListTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    DomainCount: NotRequired[int],
-    Status: NotRequired[FirewallDomainListStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    ManagedOwnerName: NotRequired[str],
-    CreatorRequestId: NotRequired[str],
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype) 
-## FirewallRuleGroupAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupAssociationTypeDef
-
-def get_value() -> FirewallRuleGroupAssociationTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallRuleGroupAssociationTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Arn: NotRequired[str],
-    FirewallRuleGroupId: NotRequired[str],
-    VpcId: NotRequired[str],
-    Name: NotRequired[str],
-    Priority: NotRequired[int],
-    MutationProtection: NotRequired[MutationProtectionStatusType],  # (1)
-    ManagedOwnerName: NotRequired[str],
-    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (2)
-    StatusMessage: NotRequired[str],
-    CreatorRequestId: NotRequired[str],
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
-2. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
 ## FirewallRuleGroupMetadataTypeDef
 
 ```python title="Usage Example"
@@ -944,64 +616,6 @@ class FirewallRuleGroupMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-## FirewallRuleGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupTypeDef
-
-def get_value() -> FirewallRuleGroupTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallRuleGroupTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    RuleCount: NotRequired[int],
-    Status: NotRequired[FirewallRuleGroupStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    OwnerId: NotRequired[str],
-    CreatorRequestId: NotRequired[str],
-    ShareStatus: NotRequired[ShareStatusType],  # (2)
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FirewallRuleGroupStatusType](./literals.md#firewallrulegroupstatustype) 
-2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-## FirewallRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import FirewallRuleTypeDef
-
-def get_value() -> FirewallRuleTypeDef:
-    return {
-        "FirewallRuleGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallRuleTypeDef(TypedDict):
-    FirewallRuleGroupId: NotRequired[str],
-    FirewallDomainListId: NotRequired[str],
-    Name: NotRequired[str],
-    Priority: NotRequired[int],
-    Action: NotRequired[ActionType],  # (1)
-    BlockResponse: NotRequired[BlockResponseType],  # (2)
-    BlockOverrideDomain: NotRequired[str],
-    BlockOverrideDnsType: NotRequired[BlockOverrideDnsTypeType],  # (3)
-    BlockOverrideTtl: NotRequired[int],
-    CreatorRequestId: NotRequired[str],
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
-2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
-3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
 ## GetFirewallConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1018,26 +632,6 @@ class GetFirewallConfigRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## GetFirewallConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseTypeDef
-
-def get_value() -> GetFirewallConfigResponseTypeDef:
-    return {
-        "FirewallConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFirewallConfigResponseTypeDef(TypedDict):
-    FirewallConfig: FirewallConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFirewallDomainListRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1054,26 +648,6 @@ class GetFirewallDomainListRequestRequestTypeDef(TypedDict):
     FirewallDomainListId: str,
 ```
 
-## GetFirewallDomainListResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListResponseTypeDef
-
-def get_value() -> GetFirewallDomainListResponseTypeDef:
-    return {
-        "FirewallDomainList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFirewallDomainListResponseTypeDef(TypedDict):
-    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFirewallRuleGroupAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1090,26 +664,6 @@ class GetFirewallRuleGroupAssociationRequestRequestTypeDef(TypedDict):
     FirewallRuleGroupAssociationId: str,
 ```
 
-## GetFirewallRuleGroupAssociationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationResponseTypeDef
-
-def get_value() -> GetFirewallRuleGroupAssociationResponseTypeDef:
-    return {
-        "FirewallRuleGroupAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFirewallRuleGroupAssociationResponseTypeDef(TypedDict):
-    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFirewallRuleGroupPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1126,25 +680,6 @@ class GetFirewallRuleGroupPolicyRequestRequestTypeDef(TypedDict):
     Arn: str,
 ```
 
-## GetFirewallRuleGroupPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyResponseTypeDef
-
-def get_value() -> GetFirewallRuleGroupPolicyResponseTypeDef:
-    return {
-        "FirewallRuleGroupPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFirewallRuleGroupPolicyResponseTypeDef(TypedDict):
-    FirewallRuleGroupPolicy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFirewallRuleGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1161,26 +696,6 @@ class GetFirewallRuleGroupRequestRequestTypeDef(TypedDict):
     FirewallRuleGroupId: str,
 ```
 
-## GetFirewallRuleGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupResponseTypeDef
-
-def get_value() -> GetFirewallRuleGroupResponseTypeDef:
-    return {
-        "FirewallRuleGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFirewallRuleGroupResponseTypeDef(TypedDict):
-    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1197,26 +712,26 @@ class GetResolverConfigRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## GetResolverConfigResponseTypeDef
+## ResolverConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverConfigTypeDef
 
-def get_value() -> GetResolverConfigResponseTypeDef:
+def get_value() -> ResolverConfigTypeDef:
     return {
-        "ResolverConfig": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class GetResolverConfigResponseTypeDef(TypedDict):
-    ResolverConfig: ResolverConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResolverConfigTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ResourceId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    AutodefinedReverse: NotRequired[ResolverAutodefinedReverseStatusType],  # (1)
 ```
 
-1. See [:material-code-braces: ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ResolverAutodefinedReverseStatusType](./literals.md#resolverautodefinedreversestatustype) 
 ## GetResolverDnssecConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1233,26 +748,26 @@ class GetResolverDnssecConfigRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## GetResolverDnssecConfigResponseTypeDef
+## ResolverDnssecConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ResolverDnssecConfigTypeDef
 
-def get_value() -> GetResolverDnssecConfigResponseTypeDef:
+def get_value() -> ResolverDnssecConfigTypeDef:
     return {
-        "ResolverDNSSECConfig": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class GetResolverDnssecConfigResponseTypeDef(TypedDict):
-    ResolverDNSSECConfig: ResolverDnssecConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResolverDnssecConfigTypeDef(TypedDict):
+    Id: NotRequired[str],
+    OwnerId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ValidationStatus: NotRequired[ResolverDNSSECValidationStatusType],  # (1)
 ```
 
-1. See [:material-code-braces: ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ResolverDNSSECValidationStatusType](./literals.md#resolverdnssecvalidationstatustype) 
 ## GetResolverEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1269,26 +784,6 @@ class GetResolverEndpointRequestRequestTypeDef(TypedDict):
     ResolverEndpointId: str,
 ```
 
-## GetResolverEndpointResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverEndpointResponseTypeDef
-
-def get_value() -> GetResolverEndpointResponseTypeDef:
-    return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverEndpointResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverQueryLogConfigAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1305,26 +800,6 @@ class GetResolverQueryLogConfigAssociationRequestRequestTypeDef(TypedDict):
     ResolverQueryLogConfigAssociationId: str,
 ```
 
-## GetResolverQueryLogConfigAssociationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationResponseTypeDef
-
-def get_value() -> GetResolverQueryLogConfigAssociationResponseTypeDef:
-    return {
-        "ResolverQueryLogConfigAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverQueryLogConfigAssociationResponseTypeDef(TypedDict):
-    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverQueryLogConfigPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1341,25 +816,6 @@ class GetResolverQueryLogConfigPolicyRequestRequestTypeDef(TypedDict):
     Arn: str,
 ```
 
-## GetResolverQueryLogConfigPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyResponseTypeDef
-
-def get_value() -> GetResolverQueryLogConfigPolicyResponseTypeDef:
-    return {
-        "ResolverQueryLogConfigPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverQueryLogConfigPolicyResponseTypeDef(TypedDict):
-    ResolverQueryLogConfigPolicy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverQueryLogConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1376,26 +832,6 @@ class GetResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
     ResolverQueryLogConfigId: str,
 ```
 
-## GetResolverQueryLogConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigResponseTypeDef
-
-def get_value() -> GetResolverQueryLogConfigResponseTypeDef:
-    return {
-        "ResolverQueryLogConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverQueryLogConfigResponseTypeDef(TypedDict):
-    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverRuleAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1412,26 +848,6 @@ class GetResolverRuleAssociationRequestRequestTypeDef(TypedDict):
     ResolverRuleAssociationId: str,
 ```
 
-## GetResolverRuleAssociationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationResponseTypeDef
-
-def get_value() -> GetResolverRuleAssociationResponseTypeDef:
-    return {
-        "ResolverRuleAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverRuleAssociationResponseTypeDef(TypedDict):
-    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverRulePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1448,25 +864,6 @@ class GetResolverRulePolicyRequestRequestTypeDef(TypedDict):
     Arn: str,
 ```
 
-## GetResolverRulePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyResponseTypeDef
-
-def get_value() -> GetResolverRulePolicyResponseTypeDef:
-    return {
-        "ResolverRulePolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverRulePolicyResponseTypeDef(TypedDict):
-    ResolverRulePolicy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1483,26 +880,6 @@ class GetResolverRuleRequestRequestTypeDef(TypedDict):
     ResolverRuleId: str,
 ```
 
-## GetResolverRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import GetResolverRuleResponseTypeDef
-
-def get_value() -> GetResolverRuleResponseTypeDef:
-    return {
-        "ResolverRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResolverRuleResponseTypeDef(TypedDict):
-    ResolverRule: ResolverRuleTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportFirewallDomainsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1524,6 +901,653 @@ class ImportFirewallDomainsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype) 
+## IpAddressResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import IpAddressResponseTypeDef
+
+def get_value() -> IpAddressResponseTypeDef:
+    return {
+        "IpId": ...,
+    }
+```
+
+```python title="Definition"
+class IpAddressResponseTypeDef(TypedDict):
+    IpId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    Ip: NotRequired[str],
+    Status: NotRequired[IpAddressStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    CreationTime: NotRequired[str],
+    ModificationTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IpAddressStatusType](./literals.md#ipaddressstatustype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListFirewallConfigsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsRequestRequestTypeDef
+
+def get_value() -> ListFirewallConfigsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallConfigsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListFirewallDomainListsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsRequestRequestTypeDef
+
+def get_value() -> ListFirewallDomainListsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallDomainListsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListFirewallDomainsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsRequestRequestTypeDef
+
+def get_value() -> ListFirewallDomainsRequestRequestTypeDef:
+    return {
+        "FirewallDomainListId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallDomainsRequestRequestTypeDef(TypedDict):
+    FirewallDomainListId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListFirewallRuleGroupAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsRequestRequestTypeDef
+
+def get_value() -> ListFirewallRuleGroupAssociationsRequestRequestTypeDef:
+    return {
+        "FirewallRuleGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRuleGroupAssociationsRequestRequestTypeDef(TypedDict):
+    FirewallRuleGroupId: NotRequired[str],
+    VpcId: NotRequired[str],
+    Priority: NotRequired[int],
+    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
+## ListFirewallRuleGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsRequestRequestTypeDef
+
+def get_value() -> ListFirewallRuleGroupsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRuleGroupsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListFirewallRulesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRulesRequestRequestTypeDef
+
+def get_value() -> ListFirewallRulesRequestRequestTypeDef:
+    return {
+        "FirewallRuleGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRulesRequestRequestTypeDef(TypedDict):
+    FirewallRuleGroupId: str,
+    Priority: NotRequired[int],
+    Action: NotRequired[ActionType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+## ListResolverConfigsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverConfigsRequestRequestTypeDef
+
+def get_value() -> ListResolverConfigsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverConfigsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListResolverEndpointIpAddressesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesRequestRequestTypeDef
+
+def get_value() -> ListResolverEndpointIpAddressesRequestRequestTypeDef:
+    return {
+        "ResolverEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverEndpointIpAddressesRequestRequestTypeDef(TypedDict):
+    ResolverEndpointId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## PutFirewallRuleGroupPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyRequestRequestTypeDef
+
+def get_value() -> PutFirewallRuleGroupPolicyRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "FirewallRuleGroupPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutFirewallRuleGroupPolicyRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    FirewallRuleGroupPolicy: str,
+```
+
+## PutResolverQueryLogConfigPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyRequestRequestTypeDef
+
+def get_value() -> PutResolverQueryLogConfigPolicyRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "ResolverQueryLogConfigPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutResolverQueryLogConfigPolicyRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    ResolverQueryLogConfigPolicy: str,
+```
+
+## PutResolverRulePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyRequestRequestTypeDef
+
+def get_value() -> PutResolverRulePolicyRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "ResolverRulePolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutResolverRulePolicyRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    ResolverRulePolicy: str,
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
+## UpdateFirewallConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallConfigRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "FirewallFailOpen": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallConfigRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    FirewallFailOpen: FirewallFailOpenStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype) 
+## UpdateFirewallDomainsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallDomainsRequestRequestTypeDef:
+    return {
+        "FirewallDomainListId": ...,
+        "Operation": ...,
+        "Domains": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallDomainsRequestRequestTypeDef(TypedDict):
+    FirewallDomainListId: str,
+    Operation: FirewallDomainUpdateOperationType,  # (1)
+    Domains: Sequence[str],
+```
+
+1. See [:material-code-brackets: FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype) 
+## UpdateFirewallRuleGroupAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallRuleGroupAssociationRequestRequestTypeDef:
+    return {
+        "FirewallRuleGroupAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallRuleGroupAssociationRequestRequestTypeDef(TypedDict):
+    FirewallRuleGroupAssociationId: str,
+    Priority: NotRequired[int],
+    MutationProtection: NotRequired[MutationProtectionStatusType],  # (1)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
+## UpdateFirewallRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallRuleRequestRequestTypeDef:
+    return {
+        "FirewallRuleGroupId": ...,
+        "FirewallDomainListId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallRuleRequestRequestTypeDef(TypedDict):
+    FirewallRuleGroupId: str,
+    FirewallDomainListId: str,
+    Priority: NotRequired[int],
+    Action: NotRequired[ActionType],  # (1)
+    BlockResponse: NotRequired[BlockResponseType],  # (2)
+    BlockOverrideDomain: NotRequired[str],
+    BlockOverrideDnsType: NotRequired[BlockOverrideDnsTypeType],  # (3)
+    BlockOverrideTtl: NotRequired[int],
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
+3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
+## UpdateResolverConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateResolverConfigRequestRequestTypeDef
+
+def get_value() -> UpdateResolverConfigRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "AutodefinedReverseFlag": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResolverConfigRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    AutodefinedReverseFlag: AutodefinedReverseFlagType,  # (1)
+```
+
+1. See [:material-code-brackets: AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype) 
+## UpdateResolverDnssecConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigRequestRequestTypeDef
+
+def get_value() -> UpdateResolverDnssecConfigRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Validation": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResolverDnssecConfigRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Validation: ValidationType,  # (1)
+```
+
+1. See [:material-code-brackets: ValidationType](./literals.md#validationtype) 
+## UpdateResolverEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointRequestRequestTypeDef
+
+def get_value() -> UpdateResolverEndpointRequestRequestTypeDef:
+    return {
+        "ResolverEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResolverEndpointRequestRequestTypeDef(TypedDict):
+    ResolverEndpointId: str,
+    Name: NotRequired[str],
+```
+
+## AssociateFirewallRuleGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestRequestTypeDef
+
+def get_value() -> AssociateFirewallRuleGroupRequestRequestTypeDef:
+    return {
+        "CreatorRequestId": ...,
+        "FirewallRuleGroupId": ...,
+        "VpcId": ...,
+        "Priority": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateFirewallRuleGroupRequestRequestTypeDef(TypedDict):
+    CreatorRequestId: str,
+    FirewallRuleGroupId: str,
+    VpcId: str,
+    Priority: int,
+    Name: str,
+    MutationProtection: NotRequired[MutationProtectionStatusType],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFirewallDomainListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListRequestRequestTypeDef
+
+def get_value() -> CreateFirewallDomainListRequestRequestTypeDef:
+    return {
+        "CreatorRequestId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFirewallDomainListRequestRequestTypeDef(TypedDict):
+    CreatorRequestId: str,
+    Name: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFirewallRuleGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupRequestRequestTypeDef
+
+def get_value() -> CreateFirewallRuleGroupRequestRequestTypeDef:
+    return {
+        "CreatorRequestId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFirewallRuleGroupRequestRequestTypeDef(TypedDict):
+    CreatorRequestId: str,
+    Name: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateResolverQueryLogConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigRequestRequestTypeDef
+
+def get_value() -> CreateResolverQueryLogConfigRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "DestinationArn": ...,
+        "CreatorRequestId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResolverQueryLogConfigRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DestinationArn: str,
+    CreatorRequestId: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## AssociateFirewallRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
+
+def get_value() -> AssociateFirewallRuleGroupResponseTypeDef:
+    return {
+        "FirewallRuleGroupAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateFirewallRuleGroupResponseTypeDef(TypedDict):
+    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateFirewallRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupResponseTypeDef
+
+def get_value() -> DisassociateFirewallRuleGroupResponseTypeDef:
+    return {
+        "FirewallRuleGroupAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateFirewallRuleGroupResponseTypeDef(TypedDict):
+    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFirewallRuleGroupAssociationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationResponseTypeDef
+
+def get_value() -> GetFirewallRuleGroupAssociationResponseTypeDef:
+    return {
+        "FirewallRuleGroupAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFirewallRuleGroupAssociationResponseTypeDef(TypedDict):
+    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFirewallRuleGroupPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyResponseTypeDef
+
+def get_value() -> GetFirewallRuleGroupPolicyResponseTypeDef:
+    return {
+        "FirewallRuleGroupPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFirewallRuleGroupPolicyResponseTypeDef(TypedDict):
+    FirewallRuleGroupPolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverQueryLogConfigPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyResponseTypeDef
+
+def get_value() -> GetResolverQueryLogConfigPolicyResponseTypeDef:
+    return {
+        "ResolverQueryLogConfigPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverQueryLogConfigPolicyResponseTypeDef(TypedDict):
+    ResolverQueryLogConfigPolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverRulePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyResponseTypeDef
+
+def get_value() -> GetResolverRulePolicyResponseTypeDef:
+    return {
+        "ResolverRulePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverRulePolicyResponseTypeDef(TypedDict):
+    ResolverRulePolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportFirewallDomainsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1550,212 +1574,6 @@ class ImportFirewallDomainsResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IpAddressRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import IpAddressRequestTypeDef
-
-def get_value() -> IpAddressRequestTypeDef:
-    return {
-        "SubnetId": ...,
-    }
-```
-
-```python title="Definition"
-class IpAddressRequestTypeDef(TypedDict):
-    SubnetId: str,
-    Ip: NotRequired[str],
-```
-
-## IpAddressResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import IpAddressResponseTypeDef
-
-def get_value() -> IpAddressResponseTypeDef:
-    return {
-        "IpId": ...,
-    }
-```
-
-```python title="Definition"
-class IpAddressResponseTypeDef(TypedDict):
-    IpId: NotRequired[str],
-    SubnetId: NotRequired[str],
-    Ip: NotRequired[str],
-    Status: NotRequired[IpAddressStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: IpAddressStatusType](./literals.md#ipaddressstatustype) 
-## IpAddressUpdateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import IpAddressUpdateTypeDef
-
-def get_value() -> IpAddressUpdateTypeDef:
-    return {
-        "IpId": ...,
-    }
-```
-
-```python title="Definition"
-class IpAddressUpdateTypeDef(TypedDict):
-    IpId: NotRequired[str],
-    SubnetId: NotRequired[str],
-    Ip: NotRequired[str],
-```
-
-## ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef
-
-def get_value() -> ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallConfigsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsRequestRequestTypeDef
-
-def get_value() -> ListFirewallConfigsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallConfigsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListFirewallConfigsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
-
-def get_value() -> ListFirewallConfigsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "FirewallConfigs": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallConfigsResponseTypeDef(TypedDict):
-    NextToken: str,
-    FirewallConfigs: List[FirewallConfigTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef
-
-def get_value() -> ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallDomainListsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsRequestRequestTypeDef
-
-def get_value() -> ListFirewallDomainListsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallDomainListsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListFirewallDomainListsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsResponseTypeDef
-
-def get_value() -> ListFirewallDomainListsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "FirewallDomainLists": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallDomainListsResponseTypeDef(TypedDict):
-    NextToken: str,
-    FirewallDomainLists: List[FirewallDomainListMetadataTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FirewallDomainListMetadataTypeDef](./type_defs.md#firewalldomainlistmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef
-
-def get_value() -> ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef:
-    return {
-        "FirewallDomainListId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef(TypedDict):
-    FirewallDomainListId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallDomainsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsRequestRequestTypeDef
-
-def get_value() -> ListFirewallDomainsRequestRequestTypeDef:
-    return {
-        "FirewallDomainListId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallDomainsRequestRequestTypeDef(TypedDict):
-    FirewallDomainListId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
 ## ListFirewallDomainsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1777,50 +1595,6 @@ class ListFirewallDomainsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef
-
-def get_value() -> ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef:
-    return {
-        "FirewallRuleGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef(TypedDict):
-    FirewallRuleGroupId: NotRequired[str],
-    VpcId: NotRequired[str],
-    Priority: NotRequired[int],
-    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallRuleGroupAssociationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsRequestRequestTypeDef
-
-def get_value() -> ListFirewallRuleGroupAssociationsRequestRequestTypeDef:
-    return {
-        "FirewallRuleGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRuleGroupAssociationsRequestRequestTypeDef(TypedDict):
-    FirewallRuleGroupId: NotRequired[str],
-    VpcId: NotRequired[str],
-    Priority: NotRequired[int],
-    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (1)
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
 ## ListFirewallRuleGroupAssociationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1843,340 +1617,269 @@ class ListFirewallRuleGroupAssociationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import ListTagsForResourceResponseTypeDef
 
-def get_value() -> ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef:
+def get_value() -> ListTagsForResourceResponseTypeDef:
     return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallRuleGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsRequestRequestTypeDef
-
-def get_value() -> ListFirewallRuleGroupsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRuleGroupsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListFirewallRuleGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsResponseTypeDef
-
-def get_value() -> ListFirewallRuleGroupsResponseTypeDef:
-    return {
+        "Tags": ...,
         "NextToken": ...,
-        "FirewallRuleGroups": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListFirewallRuleGroupsResponseTypeDef(TypedDict):
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
     NextToken: str,
-    FirewallRuleGroups: List[FirewallRuleGroupMetadataTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FirewallRuleGroupMetadataTypeDef](./type_defs.md#firewallrulegroupmetadatatypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFirewallRulesRequestListFirewallRulesPaginateTypeDef
+## PutFirewallRuleGroupPolicyResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRulesRequestListFirewallRulesPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyResponseTypeDef
 
-def get_value() -> ListFirewallRulesRequestListFirewallRulesPaginateTypeDef:
+def get_value() -> PutFirewallRuleGroupPolicyResponseTypeDef:
     return {
-        "FirewallRuleGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRulesRequestListFirewallRulesPaginateTypeDef(TypedDict):
-    FirewallRuleGroupId: str,
-    Priority: NotRequired[int],
-    Action: NotRequired[ActionType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFirewallRulesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRulesRequestRequestTypeDef
-
-def get_value() -> ListFirewallRulesRequestRequestTypeDef:
-    return {
-        "FirewallRuleGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFirewallRulesRequestRequestTypeDef(TypedDict):
-    FirewallRuleGroupId: str,
-    Priority: NotRequired[int],
-    Action: NotRequired[ActionType],  # (1)
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
-## ListFirewallRulesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListFirewallRulesResponseTypeDef
-
-def get_value() -> ListFirewallRulesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "FirewallRules": ...,
+        "ReturnValue": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListFirewallRulesResponseTypeDef(TypedDict):
-    NextToken: str,
-    FirewallRules: List[FirewallRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PutFirewallRuleGroupPolicyResponseTypeDef(TypedDict):
+    ReturnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverConfigsRequestListResolverConfigsPaginateTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResolverQueryLogConfigPolicyResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverConfigsRequestListResolverConfigsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyResponseTypeDef
 
-def get_value() -> ListResolverConfigsRequestListResolverConfigsPaginateTypeDef:
+def get_value() -> PutResolverQueryLogConfigPolicyResponseTypeDef:
     return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverConfigsRequestListResolverConfigsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverConfigsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverConfigsRequestRequestTypeDef
-
-def get_value() -> ListResolverConfigsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverConfigsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListResolverConfigsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverConfigsResponseTypeDef
-
-def get_value() -> ListResolverConfigsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "ResolverConfigs": ...,
+        "ReturnValue": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverConfigsResponseTypeDef(TypedDict):
-    NextToken: str,
-    ResolverConfigs: List[ResolverConfigTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PutResolverQueryLogConfigPolicyResponseTypeDef(TypedDict):
+    ReturnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResolverRulePolicyResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyResponseTypeDef
 
-def get_value() -> ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef:
+def get_value() -> PutResolverRulePolicyResponseTypeDef:
     return {
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverDnssecConfigsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsRequestRequestTypeDef
-
-def get_value() -> ListResolverDnssecConfigsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverDnssecConfigsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListResolverDnssecConfigsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsResponseTypeDef
-
-def get_value() -> ListResolverDnssecConfigsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "ResolverDnssecConfigs": ...,
+        "ReturnValue": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverDnssecConfigsResponseTypeDef(TypedDict):
-    NextToken: str,
-    ResolverDnssecConfigs: List[ResolverDnssecConfigTypeDef],  # (1)
+class PutResolverRulePolicyResponseTypeDef(TypedDict):
+    ReturnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFirewallDomainsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsResponseTypeDef
+
+def get_value() -> UpdateFirewallDomainsResponseTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallDomainsResponseTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    Status: FirewallDomainListStatusType,  # (1)
+    StatusMessage: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef) 
+1. See [:material-code-brackets: FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef
+## UpdateFirewallRuleGroupAssociationResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationResponseTypeDef
 
-def get_value() -> ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef:
+def get_value() -> UpdateFirewallRuleGroupAssociationResponseTypeDef:
+    return {
+        "FirewallRuleGroupAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallRuleGroupAssociationResponseTypeDef(TypedDict):
+    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateResolverEndpointIpAddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressRequestRequestTypeDef
+
+def get_value() -> AssociateResolverEndpointIpAddressRequestRequestTypeDef:
     return {
         "ResolverEndpointId": ...,
+        "IpAddress": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef(TypedDict):
+class AssociateResolverEndpointIpAddressRequestRequestTypeDef(TypedDict):
     ResolverEndpointId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    IpAddress: IpAddressUpdateTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverEndpointIpAddressesRequestRequestTypeDef
+1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
+## DisassociateResolverEndpointIpAddressRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressRequestRequestTypeDef
 
-def get_value() -> ListResolverEndpointIpAddressesRequestRequestTypeDef:
+def get_value() -> DisassociateResolverEndpointIpAddressRequestRequestTypeDef:
     return {
         "ResolverEndpointId": ...,
+        "IpAddress": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverEndpointIpAddressesRequestRequestTypeDef(TypedDict):
+class DisassociateResolverEndpointIpAddressRequestRequestTypeDef(TypedDict):
     ResolverEndpointId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
+    IpAddress: IpAddressUpdateTypeDef,  # (1)
 ```
 
-## ListResolverEndpointIpAddressesResponseTypeDef
+1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
+## AssociateResolverEndpointIpAddressResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressResponseTypeDef
 
-def get_value() -> ListResolverEndpointIpAddressesResponseTypeDef:
+def get_value() -> AssociateResolverEndpointIpAddressResponseTypeDef:
     return {
-        "NextToken": ...,
-        "MaxResults": ...,
-        "IpAddresses": ...,
+        "ResolverEndpoint": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverEndpointIpAddressesResponseTypeDef(TypedDict):
-    NextToken: str,
-    MaxResults: int,
-    IpAddresses: List[IpAddressResponseTypeDef],  # (1)
+class AssociateResolverEndpointIpAddressResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: IpAddressResponseTypeDef](./type_defs.md#ipaddressresponsetypedef) 
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef
+## CreateResolverEndpointResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointResponseTypeDef
 
-def get_value() -> ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef:
+def get_value() -> CreateResolverEndpointResponseTypeDef:
     return {
-        "Filters": ...,
+        "ResolverEndpoint": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+class CreateResolverEndpointResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverEndpointsRequestRequestTypeDef
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteResolverEndpointResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointResponseTypeDef
 
-def get_value() -> ListResolverEndpointsRequestRequestTypeDef:
+def get_value() -> DeleteResolverEndpointResponseTypeDef:
     return {
-        "MaxResults": ...,
+        "ResolverEndpoint": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverEndpointsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+class DeleteResolverEndpointResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateResolverEndpointIpAddressResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressResponseTypeDef
+
+def get_value() -> DisassociateResolverEndpointIpAddressResponseTypeDef:
+    return {
+        "ResolverEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateResolverEndpointIpAddressResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverEndpointResponseTypeDef
+
+def get_value() -> GetResolverEndpointResponseTypeDef:
+    return {
+        "ResolverEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverEndpointResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResolverEndpointsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2201,50 +1904,86 @@ class ListResolverEndpointsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef
+## UpdateResolverEndpointResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointResponseTypeDef
 
-def get_value() -> ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef:
+def get_value() -> UpdateResolverEndpointResponseTypeDef:
     return {
-        "Filters": ...,
+        "ResolverEndpoint": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    SortBy: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+class UpdateResolverEndpointResponseTypeDef(TypedDict):
+    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverQueryLogConfigAssociationsRequestRequestTypeDef
+1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateResolverQueryLogConfigResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigResponseTypeDef
 
-def get_value() -> ListResolverQueryLogConfigAssociationsRequestRequestTypeDef:
+def get_value() -> AssociateResolverQueryLogConfigResponseTypeDef:
     return {
-        "MaxResults": ...,
+        "ResolverQueryLogConfigAssociation": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverQueryLogConfigAssociationsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    SortBy: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (2)
+class AssociateResolverQueryLogConfigResponseTypeDef(TypedDict):
+    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateResolverQueryLogConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigResponseTypeDef
+
+def get_value() -> DisassociateResolverQueryLogConfigResponseTypeDef:
+    return {
+        "ResolverQueryLogConfigAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateResolverQueryLogConfigResponseTypeDef(TypedDict):
+    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverQueryLogConfigAssociationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationResponseTypeDef
+
+def get_value() -> GetResolverQueryLogConfigAssociationResponseTypeDef:
+    return {
+        "ResolverQueryLogConfigAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverQueryLogConfigAssociationResponseTypeDef(TypedDict):
+    ResolverQueryLogConfigAssociation: ResolverQueryLogConfigAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResolverQueryLogConfigAssociationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2271,50 +2010,379 @@ class ListResolverQueryLogConfigAssociationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef
+## AssociateResolverRuleResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleResponseTypeDef
 
-def get_value() -> ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef:
+def get_value() -> AssociateResolverRuleResponseTypeDef:
     return {
-        "Filters": ...,
+        "ResolverRuleAssociation": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    SortBy: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+class AssociateResolverRuleResponseTypeDef(TypedDict):
+    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverQueryLogConfigsRequestRequestTypeDef
+1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateResolverRuleResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleResponseTypeDef
 
-def get_value() -> ListResolverQueryLogConfigsRequestRequestTypeDef:
+def get_value() -> DisassociateResolverRuleResponseTypeDef:
     return {
+        "ResolverRuleAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateResolverRuleResponseTypeDef(TypedDict):
+    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverRuleAssociationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationResponseTypeDef
+
+def get_value() -> GetResolverRuleAssociationResponseTypeDef:
+    return {
+        "ResolverRuleAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverRuleAssociationResponseTypeDef(TypedDict):
+    ResolverRuleAssociation: ResolverRuleAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResolverRuleAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsResponseTypeDef
+
+def get_value() -> ListResolverRuleAssociationsResponseTypeDef:
+    return {
+        "NextToken": ...,
         "MaxResults": ...,
+        "ResolverRuleAssociations": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverQueryLogConfigsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    SortBy: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (2)
+class ListResolverRuleAssociationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    MaxResults: int,
+    ResolverRuleAssociations: List[ResolverRuleAssociationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFirewallDomainListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListResponseTypeDef
+
+def get_value() -> CreateFirewallDomainListResponseTypeDef:
+    return {
+        "FirewallDomainList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFirewallDomainListResponseTypeDef(TypedDict):
+    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFirewallDomainListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListResponseTypeDef
+
+def get_value() -> DeleteFirewallDomainListResponseTypeDef:
+    return {
+        "FirewallDomainList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFirewallDomainListResponseTypeDef(TypedDict):
+    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFirewallDomainListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListResponseTypeDef
+
+def get_value() -> GetFirewallDomainListResponseTypeDef:
+    return {
+        "FirewallDomainList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFirewallDomainListResponseTypeDef(TypedDict):
+    FirewallDomainList: FirewallDomainListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFirewallRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupResponseTypeDef
+
+def get_value() -> CreateFirewallRuleGroupResponseTypeDef:
+    return {
+        "FirewallRuleGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFirewallRuleGroupResponseTypeDef(TypedDict):
+    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFirewallRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupResponseTypeDef
+
+def get_value() -> DeleteFirewallRuleGroupResponseTypeDef:
+    return {
+        "FirewallRuleGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFirewallRuleGroupResponseTypeDef(TypedDict):
+    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFirewallRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupResponseTypeDef
+
+def get_value() -> GetFirewallRuleGroupResponseTypeDef:
+    return {
+        "FirewallRuleGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFirewallRuleGroupResponseTypeDef(TypedDict):
+    FirewallRuleGroup: FirewallRuleGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFirewallRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleResponseTypeDef
+
+def get_value() -> CreateFirewallRuleResponseTypeDef:
+    return {
+        "FirewallRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFirewallRuleResponseTypeDef(TypedDict):
+    FirewallRule: FirewallRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFirewallRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleResponseTypeDef
+
+def get_value() -> DeleteFirewallRuleResponseTypeDef:
+    return {
+        "FirewallRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFirewallRuleResponseTypeDef(TypedDict):
+    FirewallRule: FirewallRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFirewallRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRulesResponseTypeDef
+
+def get_value() -> ListFirewallRulesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "FirewallRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRulesResponseTypeDef(TypedDict):
+    NextToken: str,
+    FirewallRules: List[FirewallRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFirewallRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseTypeDef
+
+def get_value() -> UpdateFirewallRuleResponseTypeDef:
+    return {
+        "FirewallRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFirewallRuleResponseTypeDef(TypedDict):
+    FirewallRule: FirewallRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateResolverEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointRequestRequestTypeDef
+
+def get_value() -> CreateResolverEndpointRequestRequestTypeDef:
+    return {
+        "CreatorRequestId": ...,
+        "SecurityGroupIds": ...,
+        "Direction": ...,
+        "IpAddresses": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResolverEndpointRequestRequestTypeDef(TypedDict):
+    CreatorRequestId: str,
+    SecurityGroupIds: Sequence[str],
+    Direction: ResolverEndpointDirectionType,  # (1)
+    IpAddresses: Sequence[IpAddressRequestTypeDef],  # (2)
+    Name: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
+2. See [:material-code-braces: IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateResolverQueryLogConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigResponseTypeDef
+
+def get_value() -> CreateResolverQueryLogConfigResponseTypeDef:
+    return {
+        "ResolverQueryLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResolverQueryLogConfigResponseTypeDef(TypedDict):
+    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteResolverQueryLogConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigResponseTypeDef
+
+def get_value() -> DeleteResolverQueryLogConfigResponseTypeDef:
+    return {
+        "ResolverQueryLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResolverQueryLogConfigResponseTypeDef(TypedDict):
+    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverQueryLogConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigResponseTypeDef
+
+def get_value() -> GetResolverQueryLogConfigResponseTypeDef:
+    return {
+        "ResolverQueryLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverQueryLogConfigResponseTypeDef(TypedDict):
+    ResolverQueryLogConfig: ResolverQueryLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResolverQueryLogConfigsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2341,459 +2409,33 @@ class ListResolverQueryLogConfigsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef
+## CreateResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateResolverRuleRequestRequestTypeDef
 
-def get_value() -> ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef:
+def get_value() -> CreateResolverRuleRequestRequestTypeDef:
     return {
-        "Filters": ...,
+        "CreatorRequestId": ...,
+        "RuleType": ...,
+        "DomainName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverRuleAssociationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsRequestRequestTypeDef
-
-def get_value() -> ListResolverRuleAssociationsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverRuleAssociationsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListResolverRuleAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsResponseTypeDef
-
-def get_value() -> ListResolverRuleAssociationsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "MaxResults": ...,
-        "ResolverRuleAssociations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverRuleAssociationsResponseTypeDef(TypedDict):
-    NextToken: str,
-    MaxResults: int,
-    ResolverRuleAssociations: List[ResolverRuleAssociationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResolverRulesRequestListResolverRulesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRulesRequestListResolverRulesPaginateTypeDef
-
-def get_value() -> ListResolverRulesRequestListResolverRulesPaginateTypeDef:
-    return {
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverRulesRequestListResolverRulesPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResolverRulesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRulesRequestRequestTypeDef
-
-def get_value() -> ListResolverRulesRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverRulesRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListResolverRulesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListResolverRulesResponseTypeDef
-
-def get_value() -> ListResolverRulesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "MaxResults": ...,
-        "ResolverRules": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListResolverRulesResponseTypeDef(TypedDict):
-    NextToken: str,
-    MaxResults: int,
-    ResolverRules: List[ResolverRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
-    ResourceArn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PutFirewallRuleGroupPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyRequestRequestTypeDef
-
-def get_value() -> PutFirewallRuleGroupPolicyRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-        "FirewallRuleGroupPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class PutFirewallRuleGroupPolicyRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    FirewallRuleGroupPolicy: str,
-```
-
-## PutFirewallRuleGroupPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyResponseTypeDef
-
-def get_value() -> PutFirewallRuleGroupPolicyResponseTypeDef:
-    return {
-        "ReturnValue": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutFirewallRuleGroupPolicyResponseTypeDef(TypedDict):
-    ReturnValue: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutResolverQueryLogConfigPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyRequestRequestTypeDef
-
-def get_value() -> PutResolverQueryLogConfigPolicyRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-        "ResolverQueryLogConfigPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class PutResolverQueryLogConfigPolicyRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    ResolverQueryLogConfigPolicy: str,
-```
-
-## PutResolverQueryLogConfigPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyResponseTypeDef
-
-def get_value() -> PutResolverQueryLogConfigPolicyResponseTypeDef:
-    return {
-        "ReturnValue": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutResolverQueryLogConfigPolicyResponseTypeDef(TypedDict):
-    ReturnValue: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutResolverRulePolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyRequestRequestTypeDef
-
-def get_value() -> PutResolverRulePolicyRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-        "ResolverRulePolicy": ...,
-    }
-```
-
-```python title="Definition"
-class PutResolverRulePolicyRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    ResolverRulePolicy: str,
-```
-
-## PutResolverRulePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyResponseTypeDef
-
-def get_value() -> PutResolverRulePolicyResponseTypeDef:
-    return {
-        "ReturnValue": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutResolverRulePolicyResponseTypeDef(TypedDict):
-    ReturnValue: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResolverConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverConfigTypeDef
-
-def get_value() -> ResolverConfigTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverConfigTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ResourceId: NotRequired[str],
-    OwnerId: NotRequired[str],
-    AutodefinedReverse: NotRequired[ResolverAutodefinedReverseStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: ResolverAutodefinedReverseStatusType](./literals.md#resolverautodefinedreversestatustype) 
-## ResolverDnssecConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverDnssecConfigTypeDef
-
-def get_value() -> ResolverDnssecConfigTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverDnssecConfigTypeDef(TypedDict):
-    Id: NotRequired[str],
-    OwnerId: NotRequired[str],
-    ResourceId: NotRequired[str],
-    ValidationStatus: NotRequired[ResolverDNSSECValidationStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: ResolverDNSSECValidationStatusType](./literals.md#resolverdnssecvalidationstatustype) 
-## ResolverEndpointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverEndpointTypeDef
-
-def get_value() -> ResolverEndpointTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverEndpointTypeDef(TypedDict):
-    Id: NotRequired[str],
-    CreatorRequestId: NotRequired[str],
-    Arn: NotRequired[str],
+class CreateResolverRuleRequestRequestTypeDef(TypedDict):
+    CreatorRequestId: str,
+    RuleType: RuleTypeOptionType,  # (1)
+    DomainName: str,
     Name: NotRequired[str],
-    SecurityGroupIds: NotRequired[List[str]],
-    Direction: NotRequired[ResolverEndpointDirectionType],  # (1)
-    IpAddressCount: NotRequired[int],
-    HostVPCId: NotRequired[str],
-    Status: NotRequired[ResolverEndpointStatusType],  # (2)
-    StatusMessage: NotRequired[str],
-    CreationTime: NotRequired[str],
-    ModificationTime: NotRequired[str],
+    TargetIps: NotRequired[Sequence[TargetAddressTypeDef]],  # (2)
+    ResolverEndpointId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
 ```
 
-1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
-2. See [:material-code-brackets: ResolverEndpointStatusType](./literals.md#resolverendpointstatustype) 
-## ResolverQueryLogConfigAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigAssociationTypeDef
-
-def get_value() -> ResolverQueryLogConfigAssociationTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverQueryLogConfigAssociationTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ResolverQueryLogConfigId: NotRequired[str],
-    ResourceId: NotRequired[str],
-    Status: NotRequired[ResolverQueryLogConfigAssociationStatusType],  # (1)
-    Error: NotRequired[ResolverQueryLogConfigAssociationErrorType],  # (2)
-    ErrorMessage: NotRequired[str],
-    CreationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ResolverQueryLogConfigAssociationStatusType](./literals.md#resolverquerylogconfigassociationstatustype) 
-2. See [:material-code-brackets: ResolverQueryLogConfigAssociationErrorType](./literals.md#resolverquerylogconfigassociationerrortype) 
-## ResolverQueryLogConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigTypeDef
-
-def get_value() -> ResolverQueryLogConfigTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverQueryLogConfigTypeDef(TypedDict):
-    Id: NotRequired[str],
-    OwnerId: NotRequired[str],
-    Status: NotRequired[ResolverQueryLogConfigStatusType],  # (1)
-    ShareStatus: NotRequired[ShareStatusType],  # (2)
-    AssociationCount: NotRequired[int],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    DestinationArn: NotRequired[str],
-    CreatorRequestId: NotRequired[str],
-    CreationTime: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ResolverQueryLogConfigStatusType](./literals.md#resolverquerylogconfigstatustype) 
-2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-## ResolverRuleAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResolverRuleAssociationTypeDef
-
-def get_value() -> ResolverRuleAssociationTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResolverRuleAssociationTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ResolverRuleId: NotRequired[str],
-    Name: NotRequired[str],
-    VPCId: NotRequired[str],
-    Status: NotRequired[ResolverRuleAssociationStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ResolverRuleAssociationStatusType](./literals.md#resolverruleassociationstatustype) 
+1. See [:material-code-brackets: RuleTypeOptionType](./literals.md#ruletypeoptiontype) 
+2. See [:material-code-braces: TargetAddressTypeDef](./type_defs.md#targetaddresstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResolverRuleConfigTypeDef
 
 ```python title="Usage Example"
@@ -2846,121 +2488,168 @@ class ResolverRuleTypeDef(TypedDict):
 2. See [:material-code-brackets: RuleTypeOptionType](./literals.md#ruletypeoptiontype) 
 3. See [:material-code-braces: TargetAddressTypeDef](./type_defs.md#targetaddresstypedef) 
 4. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-## ResponseMetadataTypeDef
+## ListResolverDnssecConfigsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> ListResolverDnssecConfigsRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class ListResolverDnssecConfigsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
 ```
 
-## TagResourceRequestRequestTypeDef
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListResolverEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsRequestRequestTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> ListResolverEndpointsRequestRequestTypeDef:
     return {
-        "ResourceArn": ...,
-        "Tags": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Sequence[TagTypeDef],  # (1)
+class ListResolverEndpointsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListResolverQueryLogConfigAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import TagTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsRequestRequestTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> ListResolverQueryLogConfigAssociationsRequestRequestTypeDef:
     return {
-        "Key": ...,
-        "Value": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
+class ListResolverQueryLogConfigAssociationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
 ```
 
-## TargetAddressTypeDef
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListResolverQueryLogConfigsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import TargetAddressTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsRequestRequestTypeDef
 
-def get_value() -> TargetAddressTypeDef:
+def get_value() -> ListResolverQueryLogConfigsRequestRequestTypeDef:
     return {
-        "Ip": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class TargetAddressTypeDef(TypedDict):
-    Ip: str,
-    Port: NotRequired[int],
+class ListResolverQueryLogConfigsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
 ```
 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListResolverRuleAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsRequestRequestTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> ListResolverRuleAssociationsRequestRequestTypeDef:
     return {
-        "ResourceArn": ...,
-        "TagKeys": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    TagKeys: Sequence[str],
+class ListResolverRuleAssociationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
 ```
 
-## UpdateFirewallConfigRequestRequestTypeDef
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListResolverRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverRulesRequestRequestTypeDef
 
-def get_value() -> UpdateFirewallConfigRequestRequestTypeDef:
+def get_value() -> ListResolverRulesRequestRequestTypeDef:
     return {
-        "ResourceId": ...,
-        "FirewallFailOpen": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFirewallConfigRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    FirewallFailOpen: FirewallFailOpenStatusType,  # (1)
+class ListResolverRulesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
 ```
 
-1. See [:material-code-brackets: FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype) 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## GetFirewallConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseTypeDef
+
+def get_value() -> GetFirewallConfigResponseTypeDef:
+    return {
+        "FirewallConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFirewallConfigResponseTypeDef(TypedDict):
+    FirewallConfig: FirewallConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFirewallConfigsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
+
+def get_value() -> ListFirewallConfigsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "FirewallConfigs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallConfigsResponseTypeDef(TypedDict):
+    NextToken: str,
+    FirewallConfigs: List[FirewallConfigTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFirewallConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -2981,160 +2670,92 @@ class UpdateFirewallConfigResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFirewallDomainsRequestRequestTypeDef
+## ListFirewallDomainListsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsResponseTypeDef
 
-def get_value() -> UpdateFirewallDomainsRequestRequestTypeDef:
+def get_value() -> ListFirewallDomainListsResponseTypeDef:
     return {
-        "FirewallDomainListId": ...,
-        "Operation": ...,
-        "Domains": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFirewallDomainsRequestRequestTypeDef(TypedDict):
-    FirewallDomainListId: str,
-    Operation: FirewallDomainUpdateOperationType,  # (1)
-    Domains: Sequence[str],
-```
-
-1. See [:material-code-brackets: FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype) 
-## UpdateFirewallDomainsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsResponseTypeDef
-
-def get_value() -> UpdateFirewallDomainsResponseTypeDef:
-    return {
-        "Id": ...,
-        "Name": ...,
-        "Status": ...,
-        "StatusMessage": ...,
+        "NextToken": ...,
+        "FirewallDomainLists": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFirewallDomainsResponseTypeDef(TypedDict):
-    Id: str,
-    Name: str,
-    Status: FirewallDomainListStatusType,  # (1)
-    StatusMessage: str,
+class ListFirewallDomainListsResponseTypeDef(TypedDict):
+    NextToken: str,
+    FirewallDomainLists: List[FirewallDomainListMetadataTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype) 
+1. See [:material-code-braces: FirewallDomainListMetadataTypeDef](./type_defs.md#firewalldomainlistmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFirewallRuleGroupAssociationRequestRequestTypeDef
+## ListFirewallRuleGroupsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsResponseTypeDef
 
-def get_value() -> UpdateFirewallRuleGroupAssociationRequestRequestTypeDef:
+def get_value() -> ListFirewallRuleGroupsResponseTypeDef:
     return {
-        "FirewallRuleGroupAssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFirewallRuleGroupAssociationRequestRequestTypeDef(TypedDict):
-    FirewallRuleGroupAssociationId: str,
-    Priority: NotRequired[int],
-    MutationProtection: NotRequired[MutationProtectionStatusType],  # (1)
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
-## UpdateFirewallRuleGroupAssociationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationResponseTypeDef
-
-def get_value() -> UpdateFirewallRuleGroupAssociationResponseTypeDef:
-    return {
-        "FirewallRuleGroupAssociation": ...,
+        "NextToken": ...,
+        "FirewallRuleGroups": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFirewallRuleGroupAssociationResponseTypeDef(TypedDict):
-    FirewallRuleGroupAssociation: FirewallRuleGroupAssociationTypeDef,  # (1)
+class ListFirewallRuleGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    FirewallRuleGroups: List[FirewallRuleGroupMetadataTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef) 
+1. See [:material-code-braces: FirewallRuleGroupMetadataTypeDef](./type_defs.md#firewallrulegroupmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFirewallRuleRequestRequestTypeDef
+## GetResolverConfigResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverConfigResponseTypeDef
 
-def get_value() -> UpdateFirewallRuleRequestRequestTypeDef:
+def get_value() -> GetResolverConfigResponseTypeDef:
     return {
-        "FirewallRuleGroupId": ...,
-        "FirewallDomainListId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFirewallRuleRequestRequestTypeDef(TypedDict):
-    FirewallRuleGroupId: str,
-    FirewallDomainListId: str,
-    Priority: NotRequired[int],
-    Action: NotRequired[ActionType],  # (1)
-    BlockResponse: NotRequired[BlockResponseType],  # (2)
-    BlockOverrideDomain: NotRequired[str],
-    BlockOverrideDnsType: NotRequired[BlockOverrideDnsTypeType],  # (3)
-    BlockOverrideTtl: NotRequired[int],
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
-2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
-3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
-## UpdateFirewallRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseTypeDef
-
-def get_value() -> UpdateFirewallRuleResponseTypeDef:
-    return {
-        "FirewallRule": ...,
+        "ResolverConfig": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFirewallRuleResponseTypeDef(TypedDict):
-    FirewallRule: FirewallRuleTypeDef,  # (1)
+class GetResolverConfigResponseTypeDef(TypedDict):
+    ResolverConfig: ResolverConfigTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FirewallRuleTypeDef](./type_defs.md#firewallruletypedef) 
+1. See [:material-code-braces: ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateResolverConfigRequestRequestTypeDef
+## ListResolverConfigsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateResolverConfigRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverConfigsResponseTypeDef
 
-def get_value() -> UpdateResolverConfigRequestRequestTypeDef:
+def get_value() -> ListResolverConfigsResponseTypeDef:
     return {
-        "ResourceId": ...,
-        "AutodefinedReverseFlag": ...,
+        "NextToken": ...,
+        "ResolverConfigs": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateResolverConfigRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    AutodefinedReverseFlag: AutodefinedReverseFlagType,  # (1)
+class ListResolverConfigsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ResolverConfigs: List[ResolverConfigTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype) 
+1. See [:material-code-braces: ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResolverConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -3155,25 +2776,48 @@ class UpdateResolverConfigResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateResolverDnssecConfigRequestRequestTypeDef
+## GetResolverDnssecConfigResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigResponseTypeDef
 
-def get_value() -> UpdateResolverDnssecConfigRequestRequestTypeDef:
+def get_value() -> GetResolverDnssecConfigResponseTypeDef:
     return {
-        "ResourceId": ...,
-        "Validation": ...,
+        "ResolverDNSSECConfig": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateResolverDnssecConfigRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    Validation: ValidationType,  # (1)
+class GetResolverDnssecConfigResponseTypeDef(TypedDict):
+    ResolverDNSSECConfig: ResolverDnssecConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: ValidationType](./literals.md#validationtype) 
+1. See [:material-code-braces: ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResolverDnssecConfigsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsResponseTypeDef
+
+def get_value() -> ListResolverDnssecConfigsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ResolverDnssecConfigs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverDnssecConfigsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ResolverDnssecConfigs: List[ResolverDnssecConfigTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResolverDnssecConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -3194,43 +2838,315 @@ class UpdateResolverDnssecConfigResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateResolverEndpointRequestRequestTypeDef
+## ListResolverEndpointIpAddressesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointRequestRequestTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesResponseTypeDef
 
-def get_value() -> UpdateResolverEndpointRequestRequestTypeDef:
+def get_value() -> ListResolverEndpointIpAddressesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MaxResults": ...,
+        "IpAddresses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverEndpointIpAddressesResponseTypeDef(TypedDict):
+    NextToken: str,
+    MaxResults: int,
+    IpAddresses: List[IpAddressResponseTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpAddressResponseTypeDef](./type_defs.md#ipaddressresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef
+
+def get_value() -> ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef
+
+def get_value() -> ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef
+
+def get_value() -> ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef:
+    return {
+        "FirewallDomainListId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef(TypedDict):
+    FirewallDomainListId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef
+
+def get_value() -> ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef:
+    return {
+        "FirewallRuleGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef(TypedDict):
+    FirewallRuleGroupId: NotRequired[str],
+    VpcId: NotRequired[str],
+    Priority: NotRequired[int],
+    Status: NotRequired[FirewallRuleGroupAssociationStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef
+
+def get_value() -> ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFirewallRulesRequestListFirewallRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListFirewallRulesRequestListFirewallRulesPaginateTypeDef
+
+def get_value() -> ListFirewallRulesRequestListFirewallRulesPaginateTypeDef:
+    return {
+        "FirewallRuleGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallRulesRequestListFirewallRulesPaginateTypeDef(TypedDict):
+    FirewallRuleGroupId: str,
+    Priority: NotRequired[int],
+    Action: NotRequired[ActionType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverConfigsRequestListResolverConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverConfigsRequestListResolverConfigsPaginateTypeDef
+
+def get_value() -> ListResolverConfigsRequestListResolverConfigsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverConfigsRequestListResolverConfigsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef
+
+def get_value() -> ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef
+
+def get_value() -> ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef:
     return {
         "ResolverEndpointId": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateResolverEndpointRequestRequestTypeDef(TypedDict):
+class ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef(TypedDict):
     ResolverEndpointId: str,
-    Name: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-## UpdateResolverEndpointResponseTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef
 
-def get_value() -> UpdateResolverEndpointResponseTypeDef:
+def get_value() -> ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef:
     return {
-        "ResolverEndpoint": ...,
-        "ResponseMetadata": ...,
+        "Filters": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateResolverEndpointResponseTypeDef(TypedDict):
-    ResolverEndpoint: ResolverEndpointTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef
+
+def get_value() -> ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef
+
+def get_value() -> ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef
+
+def get_value() -> ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResolverRulesRequestListResolverRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverRulesRequestListResolverRulesPaginateTypeDef
+
+def get_value() -> ListResolverRulesRequestListResolverRulesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverRulesRequestListResolverRulesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## UpdateResolverRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3250,6 +3166,90 @@ class UpdateResolverRuleRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef) 
+## CreateResolverRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import CreateResolverRuleResponseTypeDef
+
+def get_value() -> CreateResolverRuleResponseTypeDef:
+    return {
+        "ResolverRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResolverRuleResponseTypeDef(TypedDict):
+    ResolverRule: ResolverRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteResolverRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleResponseTypeDef
+
+def get_value() -> DeleteResolverRuleResponseTypeDef:
+    return {
+        "ResolverRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResolverRuleResponseTypeDef(TypedDict):
+    ResolverRule: ResolverRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResolverRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleResponseTypeDef
+
+def get_value() -> GetResolverRuleResponseTypeDef:
+    return {
+        "ResolverRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResolverRuleResponseTypeDef(TypedDict):
+    ResolverRule: ResolverRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResolverRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53resolver.type_defs import ListResolverRulesResponseTypeDef
+
+def get_value() -> ListResolverRulesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MaxResults": ...,
+        "ResolverRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResolverRulesResponseTypeDef(TypedDict):
+    NextToken: str,
+    MaxResults: int,
+    ResolverRules: List[ResolverRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResolverRuleTypeDef](./type_defs.md#resolverruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResolverRuleResponseTypeDef
 
 ```python title="Usage Example"

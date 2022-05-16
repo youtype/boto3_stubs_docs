@@ -7,29 +7,6 @@
     Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
     type annotations stubs module [mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
-## AlertManagerDefinitionDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef
-
-def get_value() -> AlertManagerDefinitionDescriptionTypeDef:
-    return {
-        "createdAt": ...,
-        "data": ...,
-        "modifiedAt": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class AlertManagerDefinitionDescriptionTypeDef(TypedDict):
-    createdAt: datetime,
-    data: bytes,
-    modifiedAt: datetime,
-    status: AlertManagerDefinitionStatusTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
 ## AlertManagerDefinitionStatusTypeDef
 
 ```python title="Usage Example"
@@ -67,26 +44,30 @@ class CreateAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## CreateAlertManagerDefinitionResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import CreateAlertManagerDefinitionResponseTypeDef
+from mypy_boto3_amp.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateAlertManagerDefinitionResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "status": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAlertManagerDefinitionResponseTypeDef(TypedDict):
-    status: AlertManagerDefinitionStatusTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -109,32 +90,24 @@ class CreateRuleGroupsNamespaceRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateRuleGroupsNamespaceResponseTypeDef
+## RuleGroupsNamespaceStatusTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import CreateRuleGroupsNamespaceResponseTypeDef
+from mypy_boto3_amp.type_defs import RuleGroupsNamespaceStatusTypeDef
 
-def get_value() -> CreateRuleGroupsNamespaceResponseTypeDef:
+def get_value() -> RuleGroupsNamespaceStatusTypeDef:
     return {
-        "arn": ...,
-        "name": ...,
-        "status": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
+        "statusCode": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateRuleGroupsNamespaceResponseTypeDef(TypedDict):
-    arn: str,
-    name: str,
-    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RuleGroupsNamespaceStatusTypeDef(TypedDict):
+    statusCode: RuleGroupsNamespaceStatusCodeType,  # (1)
+    statusReason: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: RuleGroupsNamespaceStatusCodeType](./literals.md#rulegroupsnamespacestatuscodetype) 
 ## CreateWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -153,32 +126,23 @@ class CreateWorkspaceRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateWorkspaceResponseTypeDef
+## WorkspaceStatusTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef
+from mypy_boto3_amp.type_defs import WorkspaceStatusTypeDef
 
-def get_value() -> CreateWorkspaceResponseTypeDef:
+def get_value() -> WorkspaceStatusTypeDef:
     return {
-        "arn": ...,
-        "status": ...,
-        "tags": ...,
-        "workspaceId": ...,
-        "ResponseMetadata": ...,
+        "statusCode": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateWorkspaceResponseTypeDef(TypedDict):
-    arn: str,
-    status: WorkspaceStatusTypeDef,  # (1)
-    tags: Dict[str, str],
-    workspaceId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class WorkspaceStatusTypeDef(TypedDict):
+    statusCode: WorkspaceStatusCodeType,  # (1)
 ```
 
-1. See [:material-code-braces: WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype) 
 ## DeleteAlertManagerDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -248,26 +212,6 @@ class DescribeAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
-## DescribeAlertManagerDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import DescribeAlertManagerDefinitionResponseTypeDef
-
-def get_value() -> DescribeAlertManagerDefinitionResponseTypeDef:
-    return {
-        "alertManagerDefinition": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlertManagerDefinitionResponseTypeDef(TypedDict):
-    alertManagerDefinition: AlertManagerDefinitionDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AlertManagerDefinitionDescriptionTypeDef](./type_defs.md#alertmanagerdefinitiondescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -286,26 +230,6 @@ class DescribeRuleGroupsNamespaceRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
-## DescribeRuleGroupsNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import DescribeRuleGroupsNamespaceResponseTypeDef
-
-def get_value() -> DescribeRuleGroupsNamespaceResponseTypeDef:
-    return {
-        "ruleGroupsNamespace": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRuleGroupsNamespaceResponseTypeDef(TypedDict):
-    ruleGroupsNamespace: RuleGroupsNamespaceDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupsNamespaceDescriptionTypeDef](./type_defs.md#rulegroupsnamespacedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -322,81 +246,41 @@ class DescribeWorkspaceRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
-## DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef
+## WaiterConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef
+from mypy_boto3_amp.type_defs import WaiterConfigTypeDef
 
-def get_value() -> DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef:
+def get_value() -> WaiterConfigTypeDef:
     return {
-        "workspaceId": ...,
+        "Delay": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef(TypedDict):
-    workspaceId: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
 ```
 
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef
+from mypy_boto3_amp.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "workspaceId": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef(TypedDict):
-    workspaceId: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeWorkspaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseTypeDef
-
-def get_value() -> DescribeWorkspaceResponseTypeDef:
-    return {
-        "workspace": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeWorkspaceResponseTypeDef(TypedDict):
-    workspace: WorkspaceDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef
-
-def get_value() -> ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef:
-    return {
-        "workspaceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef(TypedDict):
-    workspaceId: str,
-    name: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRuleGroupsNamespacesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -416,28 +300,6 @@ class ListRuleGroupsNamespacesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListRuleGroupsNamespacesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ListRuleGroupsNamespacesResponseTypeDef
-
-def get_value() -> ListRuleGroupsNamespacesResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "ruleGroupsNamespaces": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRuleGroupsNamespacesResponseTypeDef(TypedDict):
-    nextToken: str,
-    ruleGroupsNamespaces: List[RuleGroupsNamespaceSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupsNamespaceSummaryTypeDef](./type_defs.md#rulegroupsnamespacesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -454,43 +316,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListWorkspacesRequestListWorkspacesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ListWorkspacesRequestListWorkspacesPaginateTypeDef
-
-def get_value() -> ListWorkspacesRequestListWorkspacesPaginateTypeDef:
-    return {
-        "alias": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkspacesRequestListWorkspacesPaginateTypeDef(TypedDict):
-    alias: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorkspacesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -507,46 +332,6 @@ class ListWorkspacesRequestRequestTypeDef(TypedDict):
     alias: NotRequired[str],
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
-```
-
-## ListWorkspacesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ListWorkspacesResponseTypeDef
-
-def get_value() -> ListWorkspacesResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "workspaces": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkspacesResponseTypeDef(TypedDict):
-    nextToken: str,
-    workspaces: List[WorkspaceSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## PutAlertManagerDefinitionRequestRequestTypeDef
@@ -568,26 +353,6 @@ class PutAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## PutAlertManagerDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import PutAlertManagerDefinitionResponseTypeDef
-
-def get_value() -> PutAlertManagerDefinitionResponseTypeDef:
-    return {
-        "status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutAlertManagerDefinitionResponseTypeDef(TypedDict):
-    status: AlertManagerDefinitionStatusTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -609,128 +374,6 @@ class PutRuleGroupsNamespaceRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## PutRuleGroupsNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import PutRuleGroupsNamespaceResponseTypeDef
-
-def get_value() -> PutRuleGroupsNamespaceResponseTypeDef:
-    return {
-        "arn": ...,
-        "name": ...,
-        "status": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutRuleGroupsNamespaceResponseTypeDef(TypedDict):
-    arn: str,
-    name: str,
-    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RuleGroupsNamespaceDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import RuleGroupsNamespaceDescriptionTypeDef
-
-def get_value() -> RuleGroupsNamespaceDescriptionTypeDef:
-    return {
-        "arn": ...,
-        "createdAt": ...,
-        "data": ...,
-        "modifiedAt": ...,
-        "name": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupsNamespaceDescriptionTypeDef(TypedDict):
-    arn: str,
-    createdAt: datetime,
-    data: bytes,
-    modifiedAt: datetime,
-    name: str,
-    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
-## RuleGroupsNamespaceStatusTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import RuleGroupsNamespaceStatusTypeDef
-
-def get_value() -> RuleGroupsNamespaceStatusTypeDef:
-    return {
-        "statusCode": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupsNamespaceStatusTypeDef(TypedDict):
-    statusCode: RuleGroupsNamespaceStatusCodeType,  # (1)
-    statusReason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: RuleGroupsNamespaceStatusCodeType](./literals.md#rulegroupsnamespacestatuscodetype) 
-## RuleGroupsNamespaceSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import RuleGroupsNamespaceSummaryTypeDef
-
-def get_value() -> RuleGroupsNamespaceSummaryTypeDef:
-    return {
-        "arn": ...,
-        "createdAt": ...,
-        "modifiedAt": ...,
-        "name": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupsNamespaceSummaryTypeDef(TypedDict):
-    arn: str,
-    createdAt: datetime,
-    modifiedAt: datetime,
-    name: str,
-    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -785,23 +428,220 @@ class UpdateWorkspaceAliasRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## WaiterConfigTypeDef
+## AlertManagerDefinitionDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_amp.type_defs import WaiterConfigTypeDef
+from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef
 
-def get_value() -> WaiterConfigTypeDef:
+def get_value() -> AlertManagerDefinitionDescriptionTypeDef:
     return {
-        "Delay": ...,
+        "createdAt": ...,
+        "data": ...,
+        "modifiedAt": ...,
+        "status": ...,
     }
 ```
 
 ```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
+class AlertManagerDefinitionDescriptionTypeDef(TypedDict):
+    createdAt: datetime,
+    data: bytes,
+    modifiedAt: datetime,
+    status: AlertManagerDefinitionStatusTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
+## CreateAlertManagerDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import CreateAlertManagerDefinitionResponseTypeDef
+
+def get_value() -> CreateAlertManagerDefinitionResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAlertManagerDefinitionResponseTypeDef(TypedDict):
+    status: AlertManagerDefinitionStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutAlertManagerDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import PutAlertManagerDefinitionResponseTypeDef
+
+def get_value() -> PutAlertManagerDefinitionResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutAlertManagerDefinitionResponseTypeDef(TypedDict):
+    status: AlertManagerDefinitionStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRuleGroupsNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import CreateRuleGroupsNamespaceResponseTypeDef
+
+def get_value() -> CreateRuleGroupsNamespaceResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "status": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleGroupsNamespaceResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutRuleGroupsNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import PutRuleGroupsNamespaceResponseTypeDef
+
+def get_value() -> PutRuleGroupsNamespaceResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "status": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutRuleGroupsNamespaceResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RuleGroupsNamespaceDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import RuleGroupsNamespaceDescriptionTypeDef
+
+def get_value() -> RuleGroupsNamespaceDescriptionTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "data": ...,
+        "modifiedAt": ...,
+        "name": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupsNamespaceDescriptionTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    data: bytes,
+    modifiedAt: datetime,
+    name: str,
+    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
+## RuleGroupsNamespaceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import RuleGroupsNamespaceSummaryTypeDef
+
+def get_value() -> RuleGroupsNamespaceSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "modifiedAt": ...,
+        "name": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupsNamespaceSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    modifiedAt: datetime,
+    name: str,
+    status: RuleGroupsNamespaceStatusTypeDef,  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef) 
+## CreateWorkspaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef
+
+def get_value() -> CreateWorkspaceResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "tags": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceResponseTypeDef(TypedDict):
+    arn: str,
+    status: WorkspaceStatusTypeDef,  # (1)
+    tags: Dict[str, str],
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WorkspaceDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -828,23 +668,6 @@ class WorkspaceDescriptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef) 
-## WorkspaceStatusTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_amp.type_defs import WorkspaceStatusTypeDef
-
-def get_value() -> WorkspaceStatusTypeDef:
-    return {
-        "statusCode": ...,
-    }
-```
-
-```python title="Definition"
-class WorkspaceStatusTypeDef(TypedDict):
-    statusCode: WorkspaceStatusCodeType,  # (1)
-```
-
-1. See [:material-code-brackets: WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype) 
 ## WorkspaceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -870,3 +693,180 @@ class WorkspaceSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef) 
+## DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef
+
+def get_value() -> DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef(TypedDict):
+    workspaceId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef
+
+def get_value() -> DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef(TypedDict):
+    workspaceId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef
+
+def get_value() -> ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef(TypedDict):
+    workspaceId: str,
+    name: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWorkspacesRequestListWorkspacesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import ListWorkspacesRequestListWorkspacesPaginateTypeDef
+
+def get_value() -> ListWorkspacesRequestListWorkspacesPaginateTypeDef:
+    return {
+        "alias": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkspacesRequestListWorkspacesPaginateTypeDef(TypedDict):
+    alias: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAlertManagerDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeAlertManagerDefinitionResponseTypeDef
+
+def get_value() -> DescribeAlertManagerDefinitionResponseTypeDef:
+    return {
+        "alertManagerDefinition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlertManagerDefinitionResponseTypeDef(TypedDict):
+    alertManagerDefinition: AlertManagerDefinitionDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AlertManagerDefinitionDescriptionTypeDef](./type_defs.md#alertmanagerdefinitiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRuleGroupsNamespaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeRuleGroupsNamespaceResponseTypeDef
+
+def get_value() -> DescribeRuleGroupsNamespaceResponseTypeDef:
+    return {
+        "ruleGroupsNamespace": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRuleGroupsNamespaceResponseTypeDef(TypedDict):
+    ruleGroupsNamespace: RuleGroupsNamespaceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceDescriptionTypeDef](./type_defs.md#rulegroupsnamespacedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRuleGroupsNamespacesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import ListRuleGroupsNamespacesResponseTypeDef
+
+def get_value() -> ListRuleGroupsNamespacesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "ruleGroupsNamespaces": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRuleGroupsNamespacesResponseTypeDef(TypedDict):
+    nextToken: str,
+    ruleGroupsNamespaces: List[RuleGroupsNamespaceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupsNamespaceSummaryTypeDef](./type_defs.md#rulegroupsnamespacesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseTypeDef
+
+def get_value() -> DescribeWorkspaceResponseTypeDef:
+    return {
+        "workspace": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceResponseTypeDef(TypedDict):
+    workspace: WorkspaceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkspacesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import ListWorkspacesResponseTypeDef
+
+def get_value() -> ListWorkspacesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "workspaces": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkspacesResponseTypeDef(TypedDict):
+    nextToken: str,
+    workspaces: List[WorkspaceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

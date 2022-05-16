@@ -23,25 +23,30 @@ class BulkPublishRequestRequestTypeDef(TypedDict):
     IdentityPoolId: str,
 ```
 
-## BulkPublishResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import BulkPublishResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BulkPublishResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "IdentityPoolId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class BulkPublishResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CognitoStreamsTypeDef
 
 ```python title="Usage Example"
@@ -103,26 +108,6 @@ class DeleteDatasetRequestRequestTypeDef(TypedDict):
     DatasetName: str,
 ```
 
-## DeleteDatasetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import DeleteDatasetResponseTypeDef
-
-def get_value() -> DeleteDatasetResponseTypeDef:
-    return {
-        "Dataset": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDatasetResponseTypeDef(TypedDict):
-    Dataset: DatasetTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -143,26 +128,6 @@ class DescribeDatasetRequestRequestTypeDef(TypedDict):
     DatasetName: str,
 ```
 
-## DescribeDatasetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import DescribeDatasetResponseTypeDef
-
-def get_value() -> DescribeDatasetResponseTypeDef:
-    return {
-        "Dataset": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDatasetResponseTypeDef(TypedDict):
-    Dataset: DatasetTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIdentityPoolUsageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -179,26 +144,25 @@ class DescribeIdentityPoolUsageRequestRequestTypeDef(TypedDict):
     IdentityPoolId: str,
 ```
 
-## DescribeIdentityPoolUsageResponseTypeDef
+## IdentityPoolUsageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import IdentityPoolUsageTypeDef
 
-def get_value() -> DescribeIdentityPoolUsageResponseTypeDef:
+def get_value() -> IdentityPoolUsageTypeDef:
     return {
-        "IdentityPoolUsage": ...,
-        "ResponseMetadata": ...,
+        "IdentityPoolId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeIdentityPoolUsageResponseTypeDef(TypedDict):
-    IdentityPoolUsage: IdentityPoolUsageTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class IdentityPoolUsageTypeDef(TypedDict):
+    IdentityPoolId: NotRequired[str],
+    SyncSessionsCount: NotRequired[int],
+    DataStorage: NotRequired[int],
+    LastModifiedDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: IdentityPoolUsageTypeDef](./type_defs.md#identitypoolusagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIdentityUsageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -217,26 +181,26 @@ class DescribeIdentityUsageRequestRequestTypeDef(TypedDict):
     IdentityId: str,
 ```
 
-## DescribeIdentityUsageResponseTypeDef
+## IdentityUsageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import IdentityUsageTypeDef
 
-def get_value() -> DescribeIdentityUsageResponseTypeDef:
+def get_value() -> IdentityUsageTypeDef:
     return {
-        "IdentityUsage": ...,
-        "ResponseMetadata": ...,
+        "IdentityId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeIdentityUsageResponseTypeDef(TypedDict):
-    IdentityUsage: IdentityUsageTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class IdentityUsageTypeDef(TypedDict):
+    IdentityId: NotRequired[str],
+    IdentityPoolId: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    DatasetCount: NotRequired[int],
+    DataStorage: NotRequired[int],
 ```
 
-1. See [:material-code-braces: IdentityUsageTypeDef](./type_defs.md#identityusagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBulkPublishDetailsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -253,6 +217,264 @@ class GetBulkPublishDetailsRequestRequestTypeDef(TypedDict):
     IdentityPoolId: str,
 ```
 
+## GetCognitoEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsRequestRequestTypeDef
+
+def get_value() -> GetCognitoEventsRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCognitoEventsRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+```
+
+## GetIdentityPoolConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationRequestRequestTypeDef
+
+def get_value() -> GetIdentityPoolConfigurationRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class GetIdentityPoolConfigurationRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+```
+
+## PushSyncTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import PushSyncTypeDef
+
+def get_value() -> PushSyncTypeDef:
+    return {
+        "ApplicationArns": ...,
+    }
+```
+
+```python title="Definition"
+class PushSyncTypeDef(TypedDict):
+    ApplicationArns: NotRequired[List[str]],
+    RoleArn: NotRequired[str],
+```
+
+## ListDatasetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListIdentityPoolUsageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageRequestRequestTypeDef
+
+def get_value() -> ListIdentityPoolUsageRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentityPoolUsageRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListRecordsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import ListRecordsRequestRequestTypeDef
+
+def get_value() -> ListRecordsRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityId": ...,
+        "DatasetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecordsRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    LastSyncCount: NotRequired[int],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SyncSessionToken: NotRequired[str],
+```
+
+## RecordTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import RecordTypeDef
+
+def get_value() -> RecordTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class RecordTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    SyncCount: NotRequired[int],
+    LastModifiedDate: NotRequired[datetime],
+    LastModifiedBy: NotRequired[str],
+    DeviceLastModifiedDate: NotRequired[datetime],
+```
+
+## RecordPatchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import RecordPatchTypeDef
+
+def get_value() -> RecordPatchTypeDef:
+    return {
+        "Op": ...,
+        "Key": ...,
+        "SyncCount": ...,
+    }
+```
+
+```python title="Definition"
+class RecordPatchTypeDef(TypedDict):
+    Op: OperationType,  # (1)
+    Key: str,
+    SyncCount: int,
+    Value: NotRequired[str],
+    DeviceLastModifiedDate: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
+## RegisterDeviceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import RegisterDeviceRequestRequestTypeDef
+
+def get_value() -> RegisterDeviceRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityId": ...,
+        "Platform": ...,
+        "Token": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterDeviceRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityId: str,
+    Platform: PlatformType,  # (1)
+    Token: str,
+```
+
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+## SetCognitoEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import SetCognitoEventsRequestRequestTypeDef
+
+def get_value() -> SetCognitoEventsRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "Events": ...,
+    }
+```
+
+```python title="Definition"
+class SetCognitoEventsRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    Events: Mapping[str, str],
+```
+
+## SubscribeToDatasetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import SubscribeToDatasetRequestRequestTypeDef
+
+def get_value() -> SubscribeToDatasetRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityId": ...,
+        "DatasetName": ...,
+        "DeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class SubscribeToDatasetRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    DeviceId: str,
+```
+
+## UnsubscribeFromDatasetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import UnsubscribeFromDatasetRequestRequestTypeDef
+
+def get_value() -> UnsubscribeFromDatasetRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityId": ...,
+        "DatasetName": ...,
+        "DeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class UnsubscribeFromDatasetRequestRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    DeviceId: str,
+```
+
+## BulkPublishResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_sync.type_defs import BulkPublishResponseTypeDef
+
+def get_value() -> BulkPublishResponseTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BulkPublishResponseTypeDef(TypedDict):
+    IdentityPoolId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBulkPublishDetailsResponseTypeDef
 
 ```python title="Usage Example"
@@ -281,22 +503,6 @@ class GetBulkPublishDetailsResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BulkPublishStatusType](./literals.md#bulkpublishstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetCognitoEventsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsRequestRequestTypeDef
-
-def get_value() -> GetCognitoEventsRequestRequestTypeDef:
-    return {
-        "IdentityPoolId": ...,
-    }
-```
-
-```python title="Definition"
-class GetCognitoEventsRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-```
-
 ## GetCognitoEventsResponseTypeDef
 
 ```python title="Usage Example"
@@ -316,106 +522,65 @@ class GetCognitoEventsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetIdentityPoolConfigurationRequestRequestTypeDef
+## RegisterDeviceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationRequestRequestTypeDef
+from mypy_boto3_cognito_sync.type_defs import RegisterDeviceResponseTypeDef
 
-def get_value() -> GetIdentityPoolConfigurationRequestRequestTypeDef:
+def get_value() -> RegisterDeviceResponseTypeDef:
     return {
-        "IdentityPoolId": ...,
-    }
-```
-
-```python title="Definition"
-class GetIdentityPoolConfigurationRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-```
-
-## GetIdentityPoolConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationResponseTypeDef
-
-def get_value() -> GetIdentityPoolConfigurationResponseTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "PushSync": ...,
-        "CognitoStreams": ...,
+        "DeviceId": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetIdentityPoolConfigurationResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    PushSync: PushSyncTypeDef,  # (1)
-    CognitoStreams: CognitoStreamsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class RegisterDeviceResponseTypeDef(TypedDict):
+    DeviceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: PushSyncTypeDef](./type_defs.md#pushsynctypedef) 
-2. See [:material-code-braces: CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IdentityPoolUsageTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDatasetResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import IdentityPoolUsageTypeDef
+from mypy_boto3_cognito_sync.type_defs import DeleteDatasetResponseTypeDef
 
-def get_value() -> IdentityPoolUsageTypeDef:
+def get_value() -> DeleteDatasetResponseTypeDef:
     return {
-        "IdentityPoolId": ...,
+        "Dataset": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class IdentityPoolUsageTypeDef(TypedDict):
-    IdentityPoolId: NotRequired[str],
-    SyncSessionsCount: NotRequired[int],
-    DataStorage: NotRequired[int],
-    LastModifiedDate: NotRequired[datetime],
+class DeleteDatasetResponseTypeDef(TypedDict):
+    Dataset: DatasetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## IdentityUsageTypeDef
+1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDatasetResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import IdentityUsageTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeDatasetResponseTypeDef
 
-def get_value() -> IdentityUsageTypeDef:
+def get_value() -> DescribeDatasetResponseTypeDef:
     return {
-        "IdentityId": ...,
+        "Dataset": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class IdentityUsageTypeDef(TypedDict):
-    IdentityId: NotRequired[str],
-    IdentityPoolId: NotRequired[str],
-    LastModifiedDate: NotRequired[datetime],
-    DatasetCount: NotRequired[int],
-    DataStorage: NotRequired[int],
+class DescribeDatasetResponseTypeDef(TypedDict):
+    Dataset: DatasetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## ListDatasetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import ListDatasetsRequestRequestTypeDef
-
-def get_value() -> ListDatasetsRequestRequestTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "IdentityId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatasetsRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
+1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatasetsResponseTypeDef
 
 ```python title="Usage Example"
@@ -440,23 +605,26 @@ class ListDatasetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIdentityPoolUsageRequestRequestTypeDef
+## DescribeIdentityPoolUsageResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageRequestRequestTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageResponseTypeDef
 
-def get_value() -> ListIdentityPoolUsageRequestRequestTypeDef:
+def get_value() -> DescribeIdentityPoolUsageResponseTypeDef:
     return {
-        "NextToken": ...,
+        "IdentityPoolUsage": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListIdentityPoolUsageRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
+class DescribeIdentityPoolUsageResponseTypeDef(TypedDict):
+    IdentityPoolUsage: IdentityPoolUsageTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: IdentityPoolUsageTypeDef](./type_defs.md#identitypoolusagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIdentityPoolUsageResponseTypeDef
 
 ```python title="Usage Example"
@@ -483,211 +651,51 @@ class ListIdentityPoolUsageResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: IdentityPoolUsageTypeDef](./type_defs.md#identitypoolusagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRecordsRequestRequestTypeDef
+## DescribeIdentityUsageResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import ListRecordsRequestRequestTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageResponseTypeDef
 
-def get_value() -> ListRecordsRequestRequestTypeDef:
+def get_value() -> DescribeIdentityUsageResponseTypeDef:
     return {
-        "IdentityPoolId": ...,
-        "IdentityId": ...,
-        "DatasetName": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordsRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityId: str,
-    DatasetName: str,
-    LastSyncCount: NotRequired[int],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-    SyncSessionToken: NotRequired[str],
-```
-
-## ListRecordsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import ListRecordsResponseTypeDef
-
-def get_value() -> ListRecordsResponseTypeDef:
-    return {
-        "Records": ...,
-        "NextToken": ...,
-        "Count": ...,
-        "DatasetSyncCount": ...,
-        "LastModifiedBy": ...,
-        "MergedDatasetNames": ...,
-        "DatasetExists": ...,
-        "DatasetDeletedAfterRequestedSyncCount": ...,
-        "SyncSessionToken": ...,
+        "IdentityUsage": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListRecordsResponseTypeDef(TypedDict):
-    Records: List[RecordTypeDef],  # (1)
-    NextToken: str,
-    Count: int,
-    DatasetSyncCount: int,
-    LastModifiedBy: str,
-    MergedDatasetNames: List[str],
-    DatasetExists: bool,
-    DatasetDeletedAfterRequestedSyncCount: bool,
-    SyncSessionToken: str,
+class DescribeIdentityUsageResponseTypeDef(TypedDict):
+    IdentityUsage: IdentityUsageTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+1. See [:material-code-braces: IdentityUsageTypeDef](./type_defs.md#identityusagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PushSyncTypeDef
+## GetIdentityPoolConfigurationResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import PushSyncTypeDef
+from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationResponseTypeDef
 
-def get_value() -> PushSyncTypeDef:
-    return {
-        "ApplicationArns": ...,
-    }
-```
-
-```python title="Definition"
-class PushSyncTypeDef(TypedDict):
-    ApplicationArns: NotRequired[List[str]],
-    RoleArn: NotRequired[str],
-```
-
-## RecordPatchTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import RecordPatchTypeDef
-
-def get_value() -> RecordPatchTypeDef:
-    return {
-        "Op": ...,
-        "Key": ...,
-        "SyncCount": ...,
-    }
-```
-
-```python title="Definition"
-class RecordPatchTypeDef(TypedDict):
-    Op: OperationType,  # (1)
-    Key: str,
-    SyncCount: int,
-    Value: NotRequired[str],
-    DeviceLastModifiedDate: NotRequired[Union[datetime, str]],
-```
-
-1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
-## RecordTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import RecordTypeDef
-
-def get_value() -> RecordTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class RecordTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    SyncCount: NotRequired[int],
-    LastModifiedDate: NotRequired[datetime],
-    LastModifiedBy: NotRequired[str],
-    DeviceLastModifiedDate: NotRequired[datetime],
-```
-
-## RegisterDeviceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import RegisterDeviceRequestRequestTypeDef
-
-def get_value() -> RegisterDeviceRequestRequestTypeDef:
+def get_value() -> GetIdentityPoolConfigurationResponseTypeDef:
     return {
         "IdentityPoolId": ...,
-        "IdentityId": ...,
-        "Platform": ...,
-        "Token": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterDeviceRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityId: str,
-    Platform: PlatformType,  # (1)
-    Token: str,
-```
-
-1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## RegisterDeviceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import RegisterDeviceResponseTypeDef
-
-def get_value() -> RegisterDeviceResponseTypeDef:
-    return {
-        "DeviceId": ...,
+        "PushSync": ...,
+        "CognitoStreams": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RegisterDeviceResponseTypeDef(TypedDict):
-    DeviceId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SetCognitoEventsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import SetCognitoEventsRequestRequestTypeDef
-
-def get_value() -> SetCognitoEventsRequestRequestTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "Events": ...,
-    }
-```
-
-```python title="Definition"
-class SetCognitoEventsRequestRequestTypeDef(TypedDict):
+class GetIdentityPoolConfigurationResponseTypeDef(TypedDict):
     IdentityPoolId: str,
-    Events: Mapping[str, str],
+    PushSync: PushSyncTypeDef,  # (1)
+    CognitoStreams: CognitoStreamsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
+1. See [:material-code-braces: PushSyncTypeDef](./type_defs.md#pushsynctypedef) 
+2. See [:material-code-braces: CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetIdentityPoolConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -733,50 +741,62 @@ class SetIdentityPoolConfigurationResponseTypeDef(TypedDict):
 1. See [:material-code-braces: PushSyncTypeDef](./type_defs.md#pushsynctypedef) 
 2. See [:material-code-braces: CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SubscribeToDatasetRequestRequestTypeDef
+## ListRecordsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import SubscribeToDatasetRequestRequestTypeDef
+from mypy_boto3_cognito_sync.type_defs import ListRecordsResponseTypeDef
 
-def get_value() -> SubscribeToDatasetRequestRequestTypeDef:
+def get_value() -> ListRecordsResponseTypeDef:
     return {
-        "IdentityPoolId": ...,
-        "IdentityId": ...,
-        "DatasetName": ...,
-        "DeviceId": ...,
+        "Records": ...,
+        "NextToken": ...,
+        "Count": ...,
+        "DatasetSyncCount": ...,
+        "LastModifiedBy": ...,
+        "MergedDatasetNames": ...,
+        "DatasetExists": ...,
+        "DatasetDeletedAfterRequestedSyncCount": ...,
+        "SyncSessionToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SubscribeToDatasetRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityId: str,
-    DatasetName: str,
-    DeviceId: str,
+class ListRecordsResponseTypeDef(TypedDict):
+    Records: List[RecordTypeDef],  # (1)
+    NextToken: str,
+    Count: int,
+    DatasetSyncCount: int,
+    LastModifiedBy: str,
+    MergedDatasetNames: List[str],
+    DatasetExists: bool,
+    DatasetDeletedAfterRequestedSyncCount: bool,
+    SyncSessionToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## UnsubscribeFromDatasetRequestRequestTypeDef
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRecordsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import UnsubscribeFromDatasetRequestRequestTypeDef
+from mypy_boto3_cognito_sync.type_defs import UpdateRecordsResponseTypeDef
 
-def get_value() -> UnsubscribeFromDatasetRequestRequestTypeDef:
+def get_value() -> UpdateRecordsResponseTypeDef:
     return {
-        "IdentityPoolId": ...,
-        "IdentityId": ...,
-        "DatasetName": ...,
-        "DeviceId": ...,
+        "Records": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UnsubscribeFromDatasetRequestRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityId: str,
-    DatasetName: str,
-    DeviceId: str,
+class UpdateRecordsResponseTypeDef(TypedDict):
+    Records: List[RecordTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRecordsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -803,23 +823,3 @@ class UpdateRecordsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RecordPatchTypeDef](./type_defs.md#recordpatchtypedef) 
-## UpdateRecordsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_sync.type_defs import UpdateRecordsResponseTypeDef
-
-def get_value() -> UpdateRecordsResponseTypeDef:
-    return {
-        "Records": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateRecordsResponseTypeDef(TypedDict):
-    Records: List[RecordTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

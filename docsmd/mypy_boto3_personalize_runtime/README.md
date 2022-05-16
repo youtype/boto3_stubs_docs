@@ -102,9 +102,9 @@ def get_value() -> GetPersonalizedRankingRequestRequestTypeDef:
 ```
 
 - [GetPersonalizedRankingRequestRequestTypeDef](./type_defs.md#getpersonalizedrankingrequestrequesttypedef)
-- [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef)
-- [GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef)
-- [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef)
 - [PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef)
+- [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef)
+- [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef)
 

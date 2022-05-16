@@ -23,86 +23,109 @@ class AcceptSharedDirectoryRequestRequestTypeDef(TypedDict):
     SharedDirectoryId: str,
 ```
 
-## AcceptSharedDirectoryResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import AcceptSharedDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AcceptSharedDirectoryResultTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "SharedDirectory": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AcceptSharedDirectoryResultTypeDef(TypedDict):
-    SharedDirectory: SharedDirectoryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AddIpRoutesRequestRequestTypeDef
+## SharedDirectoryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import AddIpRoutesRequestRequestTypeDef
+from mypy_boto3_ds.type_defs import SharedDirectoryTypeDef
 
-def get_value() -> AddIpRoutesRequestRequestTypeDef:
+def get_value() -> SharedDirectoryTypeDef:
     return {
-        "DirectoryId": ...,
-        "IpRoutes": ...,
+        "OwnerAccountId": ...,
     }
 ```
 
 ```python title="Definition"
-class AddIpRoutesRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    IpRoutes: Sequence[IpRouteTypeDef],  # (1)
-    UpdateSecurityGroupForDirectoryControllers: NotRequired[bool],
+class SharedDirectoryTypeDef(TypedDict):
+    OwnerAccountId: NotRequired[str],
+    OwnerDirectoryId: NotRequired[str],
+    ShareMethod: NotRequired[ShareMethodType],  # (1)
+    SharedAccountId: NotRequired[str],
+    SharedDirectoryId: NotRequired[str],
+    ShareStatus: NotRequired[ShareStatusType],  # (2)
+    ShareNotes: NotRequired[str],
+    CreatedDateTime: NotRequired[datetime],
+    LastUpdatedDateTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: IpRouteTypeDef](./type_defs.md#iproutetypedef) 
-## AddRegionRequestRequestTypeDef
+1. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
+2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
+## IpRouteTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import AddRegionRequestRequestTypeDef
+from mypy_boto3_ds.type_defs import IpRouteTypeDef
 
-def get_value() -> AddRegionRequestRequestTypeDef:
+def get_value() -> IpRouteTypeDef:
     return {
-        "DirectoryId": ...,
-        "RegionName": ...,
-        "VPCSettings": ...,
+        "CidrIp": ...,
     }
 ```
 
 ```python title="Definition"
-class AddRegionRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    RegionName: str,
-    VPCSettings: DirectoryVpcSettingsTypeDef,  # (1)
+class IpRouteTypeDef(TypedDict):
+    CidrIp: NotRequired[str],
+    Description: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
-## AddTagsToResourceRequestRequestTypeDef
+## DirectoryVpcSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import AddTagsToResourceRequestRequestTypeDef
+from mypy_boto3_ds.type_defs import DirectoryVpcSettingsTypeDef
 
-def get_value() -> AddTagsToResourceRequestRequestTypeDef:
+def get_value() -> DirectoryVpcSettingsTypeDef:
     return {
-        "ResourceId": ...,
-        "Tags": ...,
+        "VpcId": ...,
+        "SubnetIds": ...,
     }
 ```
 
 ```python title="Definition"
-class AddTagsToResourceRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
+class DirectoryVpcSettingsTypeDef(TypedDict):
+    VpcId: str,
+    SubnetIds: Sequence[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## AttributeTypeDef
 
 ```python title="Usage Example"
@@ -160,32 +183,22 @@ class CertificateInfoTypeDef(TypedDict):
 
 1. See [:material-code-brackets: CertificateStateType](./literals.md#certificatestatetype) 
 2. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
-## CertificateTypeDef
+## ClientCertAuthSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CertificateTypeDef
+from mypy_boto3_ds.type_defs import ClientCertAuthSettingsTypeDef
 
-def get_value() -> CertificateTypeDef:
+def get_value() -> ClientCertAuthSettingsTypeDef:
     return {
-        "CertificateId": ...,
+        "OCSPUrl": ...,
     }
 ```
 
 ```python title="Definition"
-class CertificateTypeDef(TypedDict):
-    CertificateId: NotRequired[str],
-    State: NotRequired[CertificateStateType],  # (1)
-    StateReason: NotRequired[str],
-    CommonName: NotRequired[str],
-    RegisteredDateTime: NotRequired[datetime],
-    ExpiryDateTime: NotRequired[datetime],
-    Type: NotRequired[CertificateTypeType],  # (2)
-    ClientCertAuthSettings: NotRequired[ClientCertAuthSettingsTypeDef],  # (3)
+class ClientCertAuthSettingsTypeDef(TypedDict):
+    OCSPUrl: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: CertificateStateType](./literals.md#certificatestatetype) 
-2. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
-3. See [:material-code-braces: ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef) 
 ## ClientAuthenticationSettingInfoTypeDef
 
 ```python title="Usage Example"
@@ -206,41 +219,6 @@ class ClientAuthenticationSettingInfoTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
 2. See [:material-code-brackets: ClientAuthenticationStatusType](./literals.md#clientauthenticationstatustype) 
-## ClientCertAuthSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ClientCertAuthSettingsTypeDef
-
-def get_value() -> ClientCertAuthSettingsTypeDef:
-    return {
-        "OCSPUrl": ...,
-    }
-```
-
-```python title="Definition"
-class ClientCertAuthSettingsTypeDef(TypedDict):
-    OCSPUrl: NotRequired[str],
-```
-
-## ComputerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ComputerTypeDef
-
-def get_value() -> ComputerTypeDef:
-    return {
-        "ComputerId": ...,
-    }
-```
-
-```python title="Definition"
-class ComputerTypeDef(TypedDict):
-    ComputerId: NotRequired[str],
-    ComputerName: NotRequired[str],
-    ComputerAttributes: NotRequired[List[AttributeTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 ## ConditionalForwarderTypeDef
 
 ```python title="Usage Example"
@@ -260,53 +238,28 @@ class ConditionalForwarderTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReplicationScopeType](./literals.md#replicationscopetype) 
-## ConnectDirectoryRequestRequestTypeDef
+## DirectoryConnectSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ConnectDirectoryRequestRequestTypeDef
+from mypy_boto3_ds.type_defs import DirectoryConnectSettingsTypeDef
 
-def get_value() -> ConnectDirectoryRequestRequestTypeDef:
+def get_value() -> DirectoryConnectSettingsTypeDef:
     return {
-        "Name": ...,
-        "Password": ...,
-        "Size": ...,
-        "ConnectSettings": ...,
+        "VpcId": ...,
+        "SubnetIds": ...,
+        "CustomerDnsIps": ...,
+        "CustomerUserName": ...,
     }
 ```
 
 ```python title="Definition"
-class ConnectDirectoryRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Password: str,
-    Size: DirectorySizeType,  # (1)
-    ConnectSettings: DirectoryConnectSettingsTypeDef,  # (2)
-    ShortName: NotRequired[str],
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+class DirectoryConnectSettingsTypeDef(TypedDict):
+    VpcId: str,
+    SubnetIds: Sequence[str],
+    CustomerDnsIps: Sequence[str],
+    CustomerUserName: str,
 ```
 
-1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
-2. See [:material-code-braces: DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ConnectDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ConnectDirectoryResultTypeDef
-
-def get_value() -> ConnectDirectoryResultTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectDirectoryResultTypeDef(TypedDict):
-    DirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -325,70 +278,6 @@ class CreateAliasRequestRequestTypeDef(TypedDict):
     Alias: str,
 ```
 
-## CreateAliasResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateAliasResultTypeDef
-
-def get_value() -> CreateAliasResultTypeDef:
-    return {
-        "DirectoryId": ...,
-        "Alias": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAliasResultTypeDef(TypedDict):
-    DirectoryId: str,
-    Alias: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateComputerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateComputerRequestRequestTypeDef
-
-def get_value() -> CreateComputerRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ComputerName": ...,
-        "Password": ...,
-    }
-```
-
-```python title="Definition"
-class CreateComputerRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    ComputerName: str,
-    Password: str,
-    OrganizationalUnitDistinguishedName: NotRequired[str],
-    ComputerAttributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
-## CreateComputerResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateComputerResultTypeDef
-
-def get_value() -> CreateComputerResultTypeDef:
-    return {
-        "Computer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateComputerResultTypeDef(TypedDict):
-    Computer: ComputerTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ComputerTypeDef](./type_defs.md#computertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConditionalForwarderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -409,52 +298,6 @@ class CreateConditionalForwarderRequestRequestTypeDef(TypedDict):
     DnsIpAddrs: Sequence[str],
 ```
 
-## CreateDirectoryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateDirectoryRequestRequestTypeDef
-
-def get_value() -> CreateDirectoryRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "Password": ...,
-        "Size": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDirectoryRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Password: str,
-    Size: DirectorySizeType,  # (1)
-    ShortName: NotRequired[str],
-    Description: NotRequired[str],
-    VpcSettings: NotRequired[DirectoryVpcSettingsTypeDef],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
-2. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateDirectoryResultTypeDef
-
-def get_value() -> CreateDirectoryResultTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDirectoryResultTypeDef(TypedDict):
-    DirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLogSubscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -473,52 +316,6 @@ class CreateLogSubscriptionRequestRequestTypeDef(TypedDict):
     LogGroupName: str,
 ```
 
-## CreateMicrosoftADRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateMicrosoftADRequestRequestTypeDef
-
-def get_value() -> CreateMicrosoftADRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "Password": ...,
-        "VpcSettings": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMicrosoftADRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Password: str,
-    VpcSettings: DirectoryVpcSettingsTypeDef,  # (1)
-    ShortName: NotRequired[str],
-    Description: NotRequired[str],
-    Edition: NotRequired[DirectoryEditionType],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
-2. See [:material-code-brackets: DirectoryEditionType](./literals.md#directoryeditiontype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateMicrosoftADResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateMicrosoftADResultTypeDef
-
-def get_value() -> CreateMicrosoftADResultTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMicrosoftADResultTypeDef(TypedDict):
-    DirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -536,25 +333,6 @@ class CreateSnapshotRequestRequestTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## CreateSnapshotResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateSnapshotResultTypeDef
-
-def get_value() -> CreateSnapshotResultTypeDef:
-    return {
-        "SnapshotId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSnapshotResultTypeDef(TypedDict):
-    SnapshotId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrustRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -583,25 +361,6 @@ class CreateTrustRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: TrustDirectionType](./literals.md#trustdirectiontype) 
 2. See [:material-code-brackets: TrustTypeType](./literals.md#trusttypetype) 
 3. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
-## CreateTrustResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import CreateTrustResultTypeDef
-
-def get_value() -> CreateTrustResultTypeDef:
-    return {
-        "TrustId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTrustResultTypeDef(TypedDict):
-    TrustId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConditionalForwarderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -636,25 +395,6 @@ class DeleteDirectoryRequestRequestTypeDef(TypedDict):
     DirectoryId: str,
 ```
 
-## DeleteDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DeleteDirectoryResultTypeDef
-
-def get_value() -> DeleteDirectoryResultTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDirectoryResultTypeDef(TypedDict):
-    DirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLogSubscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -687,25 +427,6 @@ class DeleteSnapshotRequestRequestTypeDef(TypedDict):
     SnapshotId: str,
 ```
 
-## DeleteSnapshotResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DeleteSnapshotResultTypeDef
-
-def get_value() -> DeleteSnapshotResultTypeDef:
-    return {
-        "SnapshotId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteSnapshotResultTypeDef(TypedDict):
-    SnapshotId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTrustRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -723,25 +444,6 @@ class DeleteTrustRequestRequestTypeDef(TypedDict):
     DeleteAssociatedConditionalForwarder: NotRequired[bool],
 ```
 
-## DeleteTrustResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DeleteTrustResultTypeDef
-
-def get_value() -> DeleteTrustResultTypeDef:
-    return {
-        "TrustId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTrustResultTypeDef(TypedDict):
-    TrustId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -796,26 +498,6 @@ class DescribeCertificateRequestRequestTypeDef(TypedDict):
     CertificateId: str,
 ```
 
-## DescribeCertificateResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeCertificateResultTypeDef
-
-def get_value() -> DescribeCertificateResultTypeDef:
-    return {
-        "Certificate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCertificateResultTypeDef(TypedDict):
-    Certificate: CertificateTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClientAuthenticationSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -836,28 +518,6 @@ class DescribeClientAuthenticationSettingsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
-## DescribeClientAuthenticationSettingsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsResultTypeDef
-
-def get_value() -> DescribeClientAuthenticationSettingsResultTypeDef:
-    return {
-        "ClientAuthenticationSettingsInfo": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeClientAuthenticationSettingsResultTypeDef(TypedDict):
-    ClientAuthenticationSettingsInfo: List[ClientAuthenticationSettingInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ClientAuthenticationSettingInfoTypeDef](./type_defs.md#clientauthenticationsettinginfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConditionalForwardersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -875,44 +535,24 @@ class DescribeConditionalForwardersRequestRequestTypeDef(TypedDict):
     RemoteDomainNames: NotRequired[Sequence[str]],
 ```
 
-## DescribeConditionalForwardersResultTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeConditionalForwardersResultTypeDef
+from mypy_boto3_ds.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeConditionalForwardersResultTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "ConditionalForwarders": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeConditionalForwardersResultTypeDef(TypedDict):
-    ConditionalForwarders: List[ConditionalForwarderTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ConditionalForwarderTypeDef](./type_defs.md#conditionalforwardertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef
-
-def get_value() -> DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef:
-    return {
-        "DirectoryIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef(TypedDict):
-    DirectoryIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectoriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -931,47 +571,6 @@ class DescribeDirectoriesRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeDirectoriesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeDirectoriesResultTypeDef
-
-def get_value() -> DescribeDirectoriesResultTypeDef:
-    return {
-        "DirectoryDescriptions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDirectoriesResultTypeDef(TypedDict):
-    DirectoryDescriptions: List[DirectoryDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DirectoryDescriptionTypeDef](./type_defs.md#directorydescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef
-
-def get_value() -> DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef(TypedDict):
-    DirectoryId: str,
-    DomainControllerIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDomainControllersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -991,28 +590,32 @@ class DescribeDomainControllersRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeDomainControllersResultTypeDef
+## DomainControllerTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeDomainControllersResultTypeDef
+from mypy_boto3_ds.type_defs import DomainControllerTypeDef
 
-def get_value() -> DescribeDomainControllersResultTypeDef:
+def get_value() -> DomainControllerTypeDef:
     return {
-        "DomainControllers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDomainControllersResultTypeDef(TypedDict):
-    DomainControllers: List[DomainControllerTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DomainControllerTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    DomainControllerId: NotRequired[str],
+    DnsIpAddr: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    Status: NotRequired[DomainControllerStatusType],  # (1)
+    StatusReason: NotRequired[str],
+    LaunchTime: NotRequired[datetime],
+    StatusLastUpdatedDateTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: DomainControllerTypeDef](./type_defs.md#domaincontrollertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: DomainControllerStatusType](./literals.md#domaincontrollerstatustype) 
 ## DescribeEventTopicsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1030,26 +633,27 @@ class DescribeEventTopicsRequestRequestTypeDef(TypedDict):
     TopicNames: NotRequired[Sequence[str]],
 ```
 
-## DescribeEventTopicsResultTypeDef
+## EventTopicTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeEventTopicsResultTypeDef
+from mypy_boto3_ds.type_defs import EventTopicTypeDef
 
-def get_value() -> DescribeEventTopicsResultTypeDef:
+def get_value() -> EventTopicTypeDef:
     return {
-        "EventTopics": ...,
-        "ResponseMetadata": ...,
+        "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeEventTopicsResultTypeDef(TypedDict):
-    EventTopics: List[EventTopicTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class EventTopicTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    TopicName: NotRequired[str],
+    TopicArn: NotRequired[str],
+    CreatedDateTime: NotRequired[datetime],
+    Status: NotRequired[TopicStatusType],  # (1)
 ```
 
-1. See [:material-code-braces: EventTopicTypeDef](./type_defs.md#eventtopictypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: TopicStatusType](./literals.md#topicstatustype) 
 ## DescribeLDAPSSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1070,28 +674,25 @@ class DescribeLDAPSSettingsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
-## DescribeLDAPSSettingsResultTypeDef
+## LDAPSSettingInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsResultTypeDef
+from mypy_boto3_ds.type_defs import LDAPSSettingInfoTypeDef
 
-def get_value() -> DescribeLDAPSSettingsResultTypeDef:
+def get_value() -> LDAPSSettingInfoTypeDef:
     return {
-        "LDAPSSettingsInfo": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "LDAPSStatus": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLDAPSSettingsResultTypeDef(TypedDict):
-    LDAPSSettingsInfo: List[LDAPSSettingInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LDAPSSettingInfoTypeDef(TypedDict):
+    LDAPSStatus: NotRequired[LDAPSStatusType],  # (1)
+    LDAPSStatusReason: NotRequired[str],
+    LastUpdatedDateTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: LDAPSSettingInfoTypeDef](./type_defs.md#ldapssettinginfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: LDAPSStatusType](./literals.md#ldapsstatustype) 
 ## DescribeRegionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1110,47 +711,6 @@ class DescribeRegionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeRegionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeRegionsResultTypeDef
-
-def get_value() -> DescribeRegionsResultTypeDef:
-    return {
-        "RegionsDescription": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRegionsResultTypeDef(TypedDict):
-    RegionsDescription: List[RegionDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RegionDescriptionTypeDef](./type_defs.md#regiondescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef
-
-def get_value() -> DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef:
-    return {
-        "OwnerDirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef(TypedDict):
-    OwnerDirectoryId: str,
-    SharedDirectoryIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSharedDirectoriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1170,47 +730,6 @@ class DescribeSharedDirectoriesRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeSharedDirectoriesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesResultTypeDef
-
-def get_value() -> DescribeSharedDirectoriesResultTypeDef:
-    return {
-        "SharedDirectories": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSharedDirectoriesResultTypeDef(TypedDict):
-    SharedDirectories: List[SharedDirectoryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
-
-def get_value() -> DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    SnapshotIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSnapshotsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1230,47 +749,29 @@ class DescribeSnapshotsRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeSnapshotsResultTypeDef
+## SnapshotTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeSnapshotsResultTypeDef
+from mypy_boto3_ds.type_defs import SnapshotTypeDef
 
-def get_value() -> DescribeSnapshotsResultTypeDef:
-    return {
-        "Snapshots": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSnapshotsResultTypeDef(TypedDict):
-    Snapshots: List[SnapshotTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTrustsRequestDescribeTrustsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeTrustsRequestDescribeTrustsPaginateTypeDef
-
-def get_value() -> DescribeTrustsRequestDescribeTrustsPaginateTypeDef:
+def get_value() -> SnapshotTypeDef:
     return {
         "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeTrustsRequestDescribeTrustsPaginateTypeDef(TypedDict):
+class SnapshotTypeDef(TypedDict):
     DirectoryId: NotRequired[str],
-    TrustIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    SnapshotId: NotRequired[str],
+    Type: NotRequired[SnapshotTypeType],  # (1)
+    Name: NotRequired[str],
+    Status: NotRequired[SnapshotStatusType],  # (2)
+    StartTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: SnapshotTypeType](./literals.md#snapshottypetype) 
+2. See [:material-code-brackets: SnapshotStatusType](./literals.md#snapshotstatustype) 
 ## DescribeTrustsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1290,28 +791,36 @@ class DescribeTrustsRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeTrustsResultTypeDef
+## TrustTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DescribeTrustsResultTypeDef
+from mypy_boto3_ds.type_defs import TrustTypeDef
 
-def get_value() -> DescribeTrustsResultTypeDef:
+def get_value() -> TrustTypeDef:
     return {
-        "Trusts": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeTrustsResultTypeDef(TypedDict):
-    Trusts: List[TrustTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TrustTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    TrustId: NotRequired[str],
+    RemoteDomainName: NotRequired[str],
+    TrustType: NotRequired[TrustTypeType],  # (1)
+    TrustDirection: NotRequired[TrustDirectionType],  # (2)
+    TrustState: NotRequired[TrustStateType],  # (3)
+    CreatedDateTime: NotRequired[datetime],
+    LastUpdatedDateTime: NotRequired[datetime],
+    StateLastUpdatedDateTime: NotRequired[datetime],
+    TrustStateReason: NotRequired[str],
+    SelectiveAuth: NotRequired[SelectiveAuthType],  # (4)
 ```
 
-1. See [:material-code-braces: TrustTypeDef](./type_defs.md#trusttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: TrustTypeType](./literals.md#trusttypetype) 
+2. See [:material-code-brackets: TrustDirectionType](./literals.md#trustdirectiontype) 
+3. See [:material-code-brackets: TrustStateType](./literals.md#truststatetype) 
+4. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
 ## DirectoryConnectSettingsDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1333,80 +842,66 @@ class DirectoryConnectSettingsDescriptionTypeDef(TypedDict):
     ConnectIps: NotRequired[List[str]],
 ```
 
-## DirectoryConnectSettingsTypeDef
+## DirectoryVpcSettingsDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DirectoryConnectSettingsTypeDef
+from mypy_boto3_ds.type_defs import DirectoryVpcSettingsDescriptionTypeDef
 
-def get_value() -> DirectoryConnectSettingsTypeDef:
+def get_value() -> DirectoryVpcSettingsDescriptionTypeDef:
     return {
         "VpcId": ...,
-        "SubnetIds": ...,
-        "CustomerDnsIps": ...,
-        "CustomerUserName": ...,
     }
 ```
 
 ```python title="Definition"
-class DirectoryConnectSettingsTypeDef(TypedDict):
-    VpcId: str,
-    SubnetIds: Sequence[str],
-    CustomerDnsIps: Sequence[str],
-    CustomerUserName: str,
+class DirectoryVpcSettingsDescriptionTypeDef(TypedDict):
+    VpcId: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    SecurityGroupId: NotRequired[str],
+    AvailabilityZones: NotRequired[List[str]],
 ```
 
-## DirectoryDescriptionTypeDef
+## RadiusSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DirectoryDescriptionTypeDef
+from mypy_boto3_ds.type_defs import RadiusSettingsTypeDef
 
-def get_value() -> DirectoryDescriptionTypeDef:
+def get_value() -> RadiusSettingsTypeDef:
     return {
-        "DirectoryId": ...,
+        "RadiusServers": ...,
     }
 ```
 
 ```python title="Definition"
-class DirectoryDescriptionTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    Name: NotRequired[str],
-    ShortName: NotRequired[str],
-    Size: NotRequired[DirectorySizeType],  # (1)
-    Edition: NotRequired[DirectoryEditionType],  # (2)
-    Alias: NotRequired[str],
-    AccessUrl: NotRequired[str],
-    Description: NotRequired[str],
-    DnsIpAddrs: NotRequired[List[str]],
-    Stage: NotRequired[DirectoryStageType],  # (3)
-    ShareStatus: NotRequired[ShareStatusType],  # (4)
-    ShareMethod: NotRequired[ShareMethodType],  # (5)
-    ShareNotes: NotRequired[str],
-    LaunchTime: NotRequired[datetime],
-    StageLastUpdatedDateTime: NotRequired[datetime],
-    Type: NotRequired[DirectoryTypeType],  # (6)
-    VpcSettings: NotRequired[DirectoryVpcSettingsDescriptionTypeDef],  # (7)
-    ConnectSettings: NotRequired[DirectoryConnectSettingsDescriptionTypeDef],  # (8)
-    RadiusSettings: NotRequired[RadiusSettingsTypeDef],  # (9)
-    RadiusStatus: NotRequired[RadiusStatusType],  # (10)
-    StageReason: NotRequired[str],
-    SsoEnabled: NotRequired[bool],
-    DesiredNumberOfDomainControllers: NotRequired[int],
-    OwnerDirectoryDescription: NotRequired[OwnerDirectoryDescriptionTypeDef],  # (11)
-    RegionsInfo: NotRequired[RegionsInfoTypeDef],  # (12)
+class RadiusSettingsTypeDef(TypedDict):
+    RadiusServers: NotRequired[List[str]],
+    RadiusPort: NotRequired[int],
+    RadiusTimeout: NotRequired[int],
+    RadiusRetries: NotRequired[int],
+    SharedSecret: NotRequired[str],
+    AuthenticationProtocol: NotRequired[RadiusAuthenticationProtocolType],  # (1)
+    DisplayLabel: NotRequired[str],
+    UseSameUsername: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
-2. See [:material-code-brackets: DirectoryEditionType](./literals.md#directoryeditiontype) 
-3. See [:material-code-brackets: DirectoryStageType](./literals.md#directorystagetype) 
-4. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-5. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
-6. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
-7. See [:material-code-braces: DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef) 
-8. See [:material-code-braces: DirectoryConnectSettingsDescriptionTypeDef](./type_defs.md#directoryconnectsettingsdescriptiontypedef) 
-9. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
-10. See [:material-code-brackets: RadiusStatusType](./literals.md#radiusstatustype) 
-11. See [:material-code-braces: OwnerDirectoryDescriptionTypeDef](./type_defs.md#ownerdirectorydescriptiontypedef) 
-12. See [:material-code-braces: RegionsInfoTypeDef](./type_defs.md#regionsinfotypedef) 
+1. See [:material-code-brackets: RadiusAuthenticationProtocolType](./literals.md#radiusauthenticationprotocoltype) 
+## RegionsInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import RegionsInfoTypeDef
+
+def get_value() -> RegionsInfoTypeDef:
+    return {
+        "PrimaryRegion": ...,
+    }
+```
+
+```python title="Definition"
+class RegionsInfoTypeDef(TypedDict):
+    PrimaryRegion: NotRequired[str],
+    AdditionalRegions: NotRequired[List[str]],
+```
+
 ## DirectoryLimitsTypeDef
 
 ```python title="Usage Example"
@@ -1429,43 +924,6 @@ class DirectoryLimitsTypeDef(TypedDict):
     ConnectedDirectoriesLimit: NotRequired[int],
     ConnectedDirectoriesCurrentCount: NotRequired[int],
     ConnectedDirectoriesLimitReached: NotRequired[bool],
-```
-
-## DirectoryVpcSettingsDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DirectoryVpcSettingsDescriptionTypeDef
-
-def get_value() -> DirectoryVpcSettingsDescriptionTypeDef:
-    return {
-        "VpcId": ...,
-    }
-```
-
-```python title="Definition"
-class DirectoryVpcSettingsDescriptionTypeDef(TypedDict):
-    VpcId: NotRequired[str],
-    SubnetIds: NotRequired[List[str]],
-    SecurityGroupId: NotRequired[str],
-    AvailabilityZones: NotRequired[List[str]],
-```
-
-## DirectoryVpcSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DirectoryVpcSettingsTypeDef
-
-def get_value() -> DirectoryVpcSettingsTypeDef:
-    return {
-        "VpcId": ...,
-        "SubnetIds": ...,
-    }
-```
-
-```python title="Definition"
-class DirectoryVpcSettingsTypeDef(TypedDict):
-    VpcId: str,
-    SubnetIds: Sequence[str],
 ```
 
 ## DisableClientAuthenticationRequestRequestTypeDef
@@ -1540,32 +998,6 @@ class DisableSsoRequestRequestTypeDef(TypedDict):
     Password: NotRequired[str],
 ```
 
-## DomainControllerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import DomainControllerTypeDef
-
-def get_value() -> DomainControllerTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class DomainControllerTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    DomainControllerId: NotRequired[str],
-    DnsIpAddr: NotRequired[str],
-    VpcId: NotRequired[str],
-    SubnetId: NotRequired[str],
-    AvailabilityZone: NotRequired[str],
-    Status: NotRequired[DomainControllerStatusType],  # (1)
-    StatusReason: NotRequired[str],
-    LaunchTime: NotRequired[datetime],
-    StatusLastUpdatedDateTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: DomainControllerStatusType](./literals.md#domaincontrollerstatustype) 
 ## EnableClientAuthenticationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1604,25 +1036,6 @@ class EnableLDAPSRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
-## EnableRadiusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import EnableRadiusRequestRequestTypeDef
-
-def get_value() -> EnableRadiusRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "RadiusSettings": ...,
-    }
-```
-
-```python title="Definition"
-class EnableRadiusRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    RadiusSettings: RadiusSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
 ## EnableSsoRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1641,47 +1054,6 @@ class EnableSsoRequestRequestTypeDef(TypedDict):
     Password: NotRequired[str],
 ```
 
-## EventTopicTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import EventTopicTypeDef
-
-def get_value() -> EventTopicTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class EventTopicTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    TopicName: NotRequired[str],
-    TopicArn: NotRequired[str],
-    CreatedDateTime: NotRequired[datetime],
-    Status: NotRequired[TopicStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: TopicStatusType](./literals.md#topicstatustype) 
-## GetDirectoryLimitsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import GetDirectoryLimitsResultTypeDef
-
-def get_value() -> GetDirectoryLimitsResultTypeDef:
-    return {
-        "DirectoryLimits": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDirectoryLimitsResultTypeDef(TypedDict):
-    DirectoryLimits: DirectoryLimitsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DirectoryLimitsTypeDef](./type_defs.md#directorylimitstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSnapshotLimitsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1698,26 +1070,24 @@ class GetSnapshotLimitsRequestRequestTypeDef(TypedDict):
     DirectoryId: str,
 ```
 
-## GetSnapshotLimitsResultTypeDef
+## SnapshotLimitsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultTypeDef
+from mypy_boto3_ds.type_defs import SnapshotLimitsTypeDef
 
-def get_value() -> GetSnapshotLimitsResultTypeDef:
+def get_value() -> SnapshotLimitsTypeDef:
     return {
-        "SnapshotLimits": ...,
-        "ResponseMetadata": ...,
+        "ManualSnapshotsLimit": ...,
     }
 ```
 
 ```python title="Definition"
-class GetSnapshotLimitsResultTypeDef(TypedDict):
-    SnapshotLimits: SnapshotLimitsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SnapshotLimitsTypeDef(TypedDict):
+    ManualSnapshotsLimit: NotRequired[int],
+    ManualSnapshotsCurrentCount: NotRequired[int],
+    ManualSnapshotsLimitReached: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IpRouteInfoTypeDef
 
 ```python title="Usage Example"
@@ -1740,42 +1110,6 @@ class IpRouteInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpRouteStatusMsgType](./literals.md#iproutestatusmsgtype) 
-## IpRouteTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import IpRouteTypeDef
-
-def get_value() -> IpRouteTypeDef:
-    return {
-        "CidrIp": ...,
-    }
-```
-
-```python title="Definition"
-class IpRouteTypeDef(TypedDict):
-    CidrIp: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## LDAPSSettingInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import LDAPSSettingInfoTypeDef
-
-def get_value() -> LDAPSSettingInfoTypeDef:
-    return {
-        "LDAPSStatus": ...,
-    }
-```
-
-```python title="Definition"
-class LDAPSSettingInfoTypeDef(TypedDict):
-    LDAPSStatus: NotRequired[LDAPSStatusType],  # (1)
-    LDAPSStatusReason: NotRequired[str],
-    LastUpdatedDateTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: LDAPSStatusType](./literals.md#ldapsstatustype) 
 ## ListCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1794,46 +1128,6 @@ class ListCertificatesRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## ListCertificatesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListCertificatesResultTypeDef
-
-def get_value() -> ListCertificatesResultTypeDef:
-    return {
-        "NextToken": ...,
-        "CertificatesInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCertificatesResultTypeDef(TypedDict):
-    NextToken: str,
-    CertificatesInfo: List[CertificateInfoTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateInfoTypeDef](./type_defs.md#certificateinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIpRoutesRequestListIpRoutesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListIpRoutesRequestListIpRoutesPaginateTypeDef
-
-def get_value() -> ListIpRoutesRequestListIpRoutesPaginateTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class ListIpRoutesRequestListIpRoutesPaginateTypeDef(TypedDict):
-    DirectoryId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIpRoutesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1852,46 +1146,6 @@ class ListIpRoutesRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## ListIpRoutesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListIpRoutesResultTypeDef
-
-def get_value() -> ListIpRoutesResultTypeDef:
-    return {
-        "IpRoutesInfo": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIpRoutesResultTypeDef(TypedDict):
-    IpRoutesInfo: List[IpRouteInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpRouteInfoTypeDef](./type_defs.md#iprouteinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef
-
-def get_value() -> ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLogSubscriptionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1910,144 +1164,6 @@ class ListLogSubscriptionsRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## ListLogSubscriptionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListLogSubscriptionsResultTypeDef
-
-def get_value() -> ListLogSubscriptionsResultTypeDef:
-    return {
-        "LogSubscriptions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogSubscriptionsResultTypeDef(TypedDict):
-    LogSubscriptions: List[LogSubscriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LogSubscriptionTypeDef](./type_defs.md#logsubscriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef
-
-def get_value() -> ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef(TypedDict):
-    DirectoryId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListSchemaExtensionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListSchemaExtensionsRequestRequestTypeDef
-
-def get_value() -> ListSchemaExtensionsRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemaExtensionsRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    NextToken: NotRequired[str],
-    Limit: NotRequired[int],
-```
-
-## ListSchemaExtensionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListSchemaExtensionsResultTypeDef
-
-def get_value() -> ListSchemaExtensionsResultTypeDef:
-    return {
-        "SchemaExtensionsInfo": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemaExtensionsResultTypeDef(TypedDict):
-    SchemaExtensionsInfo: List[SchemaExtensionInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SchemaExtensionInfoTypeDef](./type_defs.md#schemaextensioninfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
-    return {
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
-    ResourceId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    NextToken: NotRequired[str],
-    Limit: NotRequired[int],
-```
-
-## ListTagsForResourceResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ListTagsForResourceResultTypeDef
-
-def get_value() -> ListTagsForResourceResultTypeDef:
-    return {
-        "Tags": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResultTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogSubscriptionTypeDef
 
 ```python title="Usage Example"
@@ -2066,157 +1182,65 @@ class LogSubscriptionTypeDef(TypedDict):
     SubscriptionCreatedDateTime: NotRequired[datetime],
 ```
 
-## OwnerDirectoryDescriptionTypeDef
+## ListSchemaExtensionsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import OwnerDirectoryDescriptionTypeDef
+from mypy_boto3_ds.type_defs import ListSchemaExtensionsRequestRequestTypeDef
 
-def get_value() -> OwnerDirectoryDescriptionTypeDef:
+def get_value() -> ListSchemaExtensionsRequestRequestTypeDef:
     return {
         "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class OwnerDirectoryDescriptionTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    AccountId: NotRequired[str],
-    DnsIpAddrs: NotRequired[List[str]],
-    VpcSettings: NotRequired[DirectoryVpcSettingsDescriptionTypeDef],  # (1)
-    RadiusSettings: NotRequired[RadiusSettingsTypeDef],  # (2)
-    RadiusStatus: NotRequired[RadiusStatusType],  # (3)
-```
-
-1. See [:material-code-braces: DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef) 
-2. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
-3. See [:material-code-brackets: RadiusStatusType](./literals.md#radiusstatustype) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## RadiusSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RadiusSettingsTypeDef
-
-def get_value() -> RadiusSettingsTypeDef:
-    return {
-        "RadiusServers": ...,
-    }
-```
-
-```python title="Definition"
-class RadiusSettingsTypeDef(TypedDict):
-    RadiusServers: NotRequired[List[str]],
-    RadiusPort: NotRequired[int],
-    RadiusTimeout: NotRequired[int],
-    RadiusRetries: NotRequired[int],
-    SharedSecret: NotRequired[str],
-    AuthenticationProtocol: NotRequired[RadiusAuthenticationProtocolType],  # (1)
-    DisplayLabel: NotRequired[str],
-    UseSameUsername: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: RadiusAuthenticationProtocolType](./literals.md#radiusauthenticationprotocoltype) 
-## RegionDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RegionDescriptionTypeDef
-
-def get_value() -> RegionDescriptionTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class RegionDescriptionTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    RegionName: NotRequired[str],
-    RegionType: NotRequired[RegionTypeType],  # (1)
-    Status: NotRequired[DirectoryStageType],  # (2)
-    VpcSettings: NotRequired[DirectoryVpcSettingsTypeDef],  # (3)
-    DesiredNumberOfDomainControllers: NotRequired[int],
-    LaunchTime: NotRequired[datetime],
-    StatusLastUpdatedDateTime: NotRequired[datetime],
-    LastUpdatedDateTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: RegionTypeType](./literals.md#regiontypetype) 
-2. See [:material-code-brackets: DirectoryStageType](./literals.md#directorystagetype) 
-3. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
-## RegionsInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RegionsInfoTypeDef
-
-def get_value() -> RegionsInfoTypeDef:
-    return {
-        "PrimaryRegion": ...,
-    }
-```
-
-```python title="Definition"
-class RegionsInfoTypeDef(TypedDict):
-    PrimaryRegion: NotRequired[str],
-    AdditionalRegions: NotRequired[List[str]],
-```
-
-## RegisterCertificateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RegisterCertificateRequestRequestTypeDef
-
-def get_value() -> RegisterCertificateRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "CertificateData": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterCertificateRequestRequestTypeDef(TypedDict):
+class ListSchemaExtensionsRequestRequestTypeDef(TypedDict):
     DirectoryId: str,
-    CertificateData: str,
-    Type: NotRequired[CertificateTypeType],  # (1)
-    ClientCertAuthSettings: NotRequired[ClientCertAuthSettingsTypeDef],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
-2. See [:material-code-braces: ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef) 
-## RegisterCertificateResultTypeDef
+## SchemaExtensionInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RegisterCertificateResultTypeDef
+from mypy_boto3_ds.type_defs import SchemaExtensionInfoTypeDef
 
-def get_value() -> RegisterCertificateResultTypeDef:
+def get_value() -> SchemaExtensionInfoTypeDef:
     return {
-        "CertificateId": ...,
-        "ResponseMetadata": ...,
+        "DirectoryId": ...,
     }
 ```
 
 ```python title="Definition"
-class RegisterCertificateResultTypeDef(TypedDict):
-    CertificateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class SchemaExtensionInfoTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    SchemaExtensionId: NotRequired[str],
+    Description: NotRequired[str],
+    SchemaExtensionStatus: NotRequired[SchemaExtensionStatusType],  # (1)
+    SchemaExtensionStatusReason: NotRequired[str],
+    StartDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: SchemaExtensionStatusType](./literals.md#schemaextensionstatustype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
+
 ## RegisterEventTopicRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2251,25 +1275,6 @@ class RejectSharedDirectoryRequestRequestTypeDef(TypedDict):
     SharedDirectoryId: str,
 ```
 
-## RejectSharedDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import RejectSharedDirectoryResultTypeDef
-
-def get_value() -> RejectSharedDirectoryResultTypeDef:
-    return {
-        "SharedDirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RejectSharedDirectoryResultTypeDef(TypedDict):
-    SharedDirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveIpRoutesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2342,30 +1347,6 @@ class ResetUserPasswordRequestRequestTypeDef(TypedDict):
     NewPassword: str,
 ```
 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## RestoreFromSnapshotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2382,71 +1363,6 @@ class RestoreFromSnapshotRequestRequestTypeDef(TypedDict):
     SnapshotId: str,
 ```
 
-## SchemaExtensionInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import SchemaExtensionInfoTypeDef
-
-def get_value() -> SchemaExtensionInfoTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class SchemaExtensionInfoTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    SchemaExtensionId: NotRequired[str],
-    Description: NotRequired[str],
-    SchemaExtensionStatus: NotRequired[SchemaExtensionStatusType],  # (1)
-    SchemaExtensionStatusReason: NotRequired[str],
-    StartDateTime: NotRequired[datetime],
-    EndDateTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: SchemaExtensionStatusType](./literals.md#schemaextensionstatustype) 
-## ShareDirectoryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ShareDirectoryRequestRequestTypeDef
-
-def get_value() -> ShareDirectoryRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "ShareTarget": ...,
-        "ShareMethod": ...,
-    }
-```
-
-```python title="Definition"
-class ShareDirectoryRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    ShareTarget: ShareTargetTypeDef,  # (1)
-    ShareMethod: ShareMethodType,  # (2)
-    ShareNotes: NotRequired[str],
-```
-
-1. See [:material-code-braces: ShareTargetTypeDef](./type_defs.md#sharetargettypedef) 
-2. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
-## ShareDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import ShareDirectoryResultTypeDef
-
-def get_value() -> ShareDirectoryResultTypeDef:
-    return {
-        "SharedDirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ShareDirectoryResultTypeDef(TypedDict):
-    SharedDirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ShareTargetTypeDef
 
 ```python title="Usage Example"
@@ -2466,73 +1382,6 @@ class ShareTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
-## SharedDirectoryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import SharedDirectoryTypeDef
-
-def get_value() -> SharedDirectoryTypeDef:
-    return {
-        "OwnerAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class SharedDirectoryTypeDef(TypedDict):
-    OwnerAccountId: NotRequired[str],
-    OwnerDirectoryId: NotRequired[str],
-    ShareMethod: NotRequired[ShareMethodType],  # (1)
-    SharedAccountId: NotRequired[str],
-    SharedDirectoryId: NotRequired[str],
-    ShareStatus: NotRequired[ShareStatusType],  # (2)
-    ShareNotes: NotRequired[str],
-    CreatedDateTime: NotRequired[datetime],
-    LastUpdatedDateTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
-2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-## SnapshotLimitsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import SnapshotLimitsTypeDef
-
-def get_value() -> SnapshotLimitsTypeDef:
-    return {
-        "ManualSnapshotsLimit": ...,
-    }
-```
-
-```python title="Definition"
-class SnapshotLimitsTypeDef(TypedDict):
-    ManualSnapshotsLimit: NotRequired[int],
-    ManualSnapshotsCurrentCount: NotRequired[int],
-    ManualSnapshotsLimitReached: NotRequired[bool],
-```
-
-## SnapshotTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import SnapshotTypeDef
-
-def get_value() -> SnapshotTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class SnapshotTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    SnapshotId: NotRequired[str],
-    Type: NotRequired[SnapshotTypeType],  # (1)
-    Name: NotRequired[str],
-    Status: NotRequired[SnapshotStatusType],  # (2)
-    StartTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: SnapshotTypeType](./literals.md#snapshottypetype) 
-2. See [:material-code-brackets: SnapshotStatusType](./literals.md#snapshotstatustype) 
 ## StartSchemaExtensionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2555,111 +1404,6 @@ class StartSchemaExtensionRequestRequestTypeDef(TypedDict):
     Description: str,
 ```
 
-## StartSchemaExtensionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import StartSchemaExtensionResultTypeDef
-
-def get_value() -> StartSchemaExtensionResultTypeDef:
-    return {
-        "SchemaExtensionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartSchemaExtensionResultTypeDef(TypedDict):
-    SchemaExtensionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## TrustTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import TrustTypeDef
-
-def get_value() -> TrustTypeDef:
-    return {
-        "DirectoryId": ...,
-    }
-```
-
-```python title="Definition"
-class TrustTypeDef(TypedDict):
-    DirectoryId: NotRequired[str],
-    TrustId: NotRequired[str],
-    RemoteDomainName: NotRequired[str],
-    TrustType: NotRequired[TrustTypeType],  # (1)
-    TrustDirection: NotRequired[TrustDirectionType],  # (2)
-    TrustState: NotRequired[TrustStateType],  # (3)
-    CreatedDateTime: NotRequired[datetime],
-    LastUpdatedDateTime: NotRequired[datetime],
-    StateLastUpdatedDateTime: NotRequired[datetime],
-    TrustStateReason: NotRequired[str],
-    SelectiveAuth: NotRequired[SelectiveAuthType],  # (4)
-```
-
-1. See [:material-code-brackets: TrustTypeType](./literals.md#trusttypetype) 
-2. See [:material-code-brackets: TrustDirectionType](./literals.md#trustdirectiontype) 
-3. See [:material-code-brackets: TrustStateType](./literals.md#truststatetype) 
-4. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
-## UnshareDirectoryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import UnshareDirectoryRequestRequestTypeDef
-
-def get_value() -> UnshareDirectoryRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "UnshareTarget": ...,
-    }
-```
-
-```python title="Definition"
-class UnshareDirectoryRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    UnshareTarget: UnshareTargetTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef) 
-## UnshareDirectoryResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import UnshareDirectoryResultTypeDef
-
-def get_value() -> UnshareDirectoryResultTypeDef:
-    return {
-        "SharedDirectoryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UnshareDirectoryResultTypeDef(TypedDict):
-    SharedDirectoryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UnshareTargetTypeDef
 
 ```python title="Usage Example"
@@ -2717,25 +1461,6 @@ class UpdateNumberOfDomainControllersRequestRequestTypeDef(TypedDict):
     DesiredNumber: int,
 ```
 
-## UpdateRadiusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import UpdateRadiusRequestRequestTypeDef
-
-def get_value() -> UpdateRadiusRequestRequestTypeDef:
-    return {
-        "DirectoryId": ...,
-        "RadiusSettings": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateRadiusRequestRequestTypeDef(TypedDict):
-    DirectoryId: str,
-    RadiusSettings: RadiusSettingsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
 ## UpdateTrustRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2754,6 +1479,290 @@ class UpdateTrustRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
+## VerifyTrustRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import VerifyTrustRequestRequestTypeDef
+
+def get_value() -> VerifyTrustRequestRequestTypeDef:
+    return {
+        "TrustId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifyTrustRequestRequestTypeDef(TypedDict):
+    TrustId: str,
+```
+
+## ConnectDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ConnectDirectoryResultTypeDef
+
+def get_value() -> ConnectDirectoryResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectDirectoryResultTypeDef(TypedDict):
+    DirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAliasResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateAliasResultTypeDef
+
+def get_value() -> CreateAliasResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "Alias": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAliasResultTypeDef(TypedDict):
+    DirectoryId: str,
+    Alias: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateDirectoryResultTypeDef
+
+def get_value() -> CreateDirectoryResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDirectoryResultTypeDef(TypedDict):
+    DirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMicrosoftADResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateMicrosoftADResultTypeDef
+
+def get_value() -> CreateMicrosoftADResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMicrosoftADResultTypeDef(TypedDict):
+    DirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSnapshotResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateSnapshotResultTypeDef
+
+def get_value() -> CreateSnapshotResultTypeDef:
+    return {
+        "SnapshotId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSnapshotResultTypeDef(TypedDict):
+    SnapshotId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTrustResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateTrustResultTypeDef
+
+def get_value() -> CreateTrustResultTypeDef:
+    return {
+        "TrustId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrustResultTypeDef(TypedDict):
+    TrustId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DeleteDirectoryResultTypeDef
+
+def get_value() -> DeleteDirectoryResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDirectoryResultTypeDef(TypedDict):
+    DirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteSnapshotResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DeleteSnapshotResultTypeDef
+
+def get_value() -> DeleteSnapshotResultTypeDef:
+    return {
+        "SnapshotId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSnapshotResultTypeDef(TypedDict):
+    SnapshotId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTrustResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DeleteTrustResultTypeDef
+
+def get_value() -> DeleteTrustResultTypeDef:
+    return {
+        "TrustId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTrustResultTypeDef(TypedDict):
+    TrustId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterCertificateResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import RegisterCertificateResultTypeDef
+
+def get_value() -> RegisterCertificateResultTypeDef:
+    return {
+        "CertificateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCertificateResultTypeDef(TypedDict):
+    CertificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RejectSharedDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import RejectSharedDirectoryResultTypeDef
+
+def get_value() -> RejectSharedDirectoryResultTypeDef:
+    return {
+        "SharedDirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RejectSharedDirectoryResultTypeDef(TypedDict):
+    SharedDirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ShareDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ShareDirectoryResultTypeDef
+
+def get_value() -> ShareDirectoryResultTypeDef:
+    return {
+        "SharedDirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ShareDirectoryResultTypeDef(TypedDict):
+    SharedDirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartSchemaExtensionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import StartSchemaExtensionResultTypeDef
+
+def get_value() -> StartSchemaExtensionResultTypeDef:
+    return {
+        "SchemaExtensionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartSchemaExtensionResultTypeDef(TypedDict):
+    SchemaExtensionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UnshareDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UnshareDirectoryResultTypeDef
+
+def get_value() -> UnshareDirectoryResultTypeDef:
+    return {
+        "SharedDirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UnshareDirectoryResultTypeDef(TypedDict):
+    SharedDirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTrustResultTypeDef
 
 ```python title="Usage Example"
@@ -2775,22 +1784,6 @@ class UpdateTrustResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VerifyTrustRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import VerifyTrustRequestRequestTypeDef
-
-def get_value() -> VerifyTrustRequestRequestTypeDef:
-    return {
-        "TrustId": ...,
-    }
-```
-
-```python title="Definition"
-class VerifyTrustRequestRequestTypeDef(TypedDict):
-    TrustId: str,
-```
-
 ## VerifyTrustResultTypeDef
 
 ```python title="Usage Example"
@@ -2810,3 +1803,1010 @@ class VerifyTrustResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AcceptSharedDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import AcceptSharedDirectoryResultTypeDef
+
+def get_value() -> AcceptSharedDirectoryResultTypeDef:
+    return {
+        "SharedDirectory": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptSharedDirectoryResultTypeDef(TypedDict):
+    SharedDirectory: SharedDirectoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSharedDirectoriesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesResultTypeDef
+
+def get_value() -> DescribeSharedDirectoriesResultTypeDef:
+    return {
+        "SharedDirectories": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSharedDirectoriesResultTypeDef(TypedDict):
+    SharedDirectories: List[SharedDirectoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AddIpRoutesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import AddIpRoutesRequestRequestTypeDef
+
+def get_value() -> AddIpRoutesRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "IpRoutes": ...,
+    }
+```
+
+```python title="Definition"
+class AddIpRoutesRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    IpRoutes: Sequence[IpRouteTypeDef],  # (1)
+    UpdateSecurityGroupForDirectoryControllers: NotRequired[bool],
+```
+
+1. See [:material-code-braces: IpRouteTypeDef](./type_defs.md#iproutetypedef) 
+## AddRegionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import AddRegionRequestRequestTypeDef
+
+def get_value() -> AddRegionRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "RegionName": ...,
+        "VPCSettings": ...,
+    }
+```
+
+```python title="Definition"
+class AddRegionRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    RegionName: str,
+    VPCSettings: DirectoryVpcSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+## RegionDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import RegionDescriptionTypeDef
+
+def get_value() -> RegionDescriptionTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class RegionDescriptionTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    RegionName: NotRequired[str],
+    RegionType: NotRequired[RegionTypeType],  # (1)
+    Status: NotRequired[DirectoryStageType],  # (2)
+    VpcSettings: NotRequired[DirectoryVpcSettingsTypeDef],  # (3)
+    DesiredNumberOfDomainControllers: NotRequired[int],
+    LaunchTime: NotRequired[datetime],
+    StatusLastUpdatedDateTime: NotRequired[datetime],
+    LastUpdatedDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: RegionTypeType](./literals.md#regiontypetype) 
+2. See [:material-code-brackets: DirectoryStageType](./literals.md#directorystagetype) 
+3. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+## AddTagsToResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import AddTagsToResourceRequestRequestTypeDef
+
+def get_value() -> AddTagsToResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class AddTagsToResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateDirectoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateDirectoryRequestRequestTypeDef
+
+def get_value() -> CreateDirectoryRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Password": ...,
+        "Size": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDirectoryRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Password: str,
+    Size: DirectorySizeType,  # (1)
+    ShortName: NotRequired[str],
+    Description: NotRequired[str],
+    VpcSettings: NotRequired[DirectoryVpcSettingsTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
+2. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateMicrosoftADRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateMicrosoftADRequestRequestTypeDef
+
+def get_value() -> CreateMicrosoftADRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Password": ...,
+        "VpcSettings": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMicrosoftADRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Password: str,
+    VpcSettings: DirectoryVpcSettingsTypeDef,  # (1)
+    ShortName: NotRequired[str],
+    Description: NotRequired[str],
+    Edition: NotRequired[DirectoryEditionType],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+2. See [:material-code-brackets: DirectoryEditionType](./literals.md#directoryeditiontype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ComputerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ComputerTypeDef
+
+def get_value() -> ComputerTypeDef:
+    return {
+        "ComputerId": ...,
+    }
+```
+
+```python title="Definition"
+class ComputerTypeDef(TypedDict):
+    ComputerId: NotRequired[str],
+    ComputerName: NotRequired[str],
+    ComputerAttributes: NotRequired[List[AttributeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+## CreateComputerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateComputerRequestRequestTypeDef
+
+def get_value() -> CreateComputerRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ComputerName": ...,
+        "Password": ...,
+    }
+```
+
+```python title="Definition"
+class CreateComputerRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    ComputerName: str,
+    Password: str,
+    OrganizationalUnitDistinguishedName: NotRequired[str],
+    ComputerAttributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+## ListCertificatesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListCertificatesResultTypeDef
+
+def get_value() -> ListCertificatesResultTypeDef:
+    return {
+        "NextToken": ...,
+        "CertificatesInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesResultTypeDef(TypedDict):
+    NextToken: str,
+    CertificatesInfo: List[CertificateInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateInfoTypeDef](./type_defs.md#certificateinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CertificateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CertificateTypeDef
+
+def get_value() -> CertificateTypeDef:
+    return {
+        "CertificateId": ...,
+    }
+```
+
+```python title="Definition"
+class CertificateTypeDef(TypedDict):
+    CertificateId: NotRequired[str],
+    State: NotRequired[CertificateStateType],  # (1)
+    StateReason: NotRequired[str],
+    CommonName: NotRequired[str],
+    RegisteredDateTime: NotRequired[datetime],
+    ExpiryDateTime: NotRequired[datetime],
+    Type: NotRequired[CertificateTypeType],  # (2)
+    ClientCertAuthSettings: NotRequired[ClientCertAuthSettingsTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: CertificateStateType](./literals.md#certificatestatetype) 
+2. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
+3. See [:material-code-braces: ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef) 
+## RegisterCertificateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import RegisterCertificateRequestRequestTypeDef
+
+def get_value() -> RegisterCertificateRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "CertificateData": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterCertificateRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    CertificateData: str,
+    Type: NotRequired[CertificateTypeType],  # (1)
+    ClientCertAuthSettings: NotRequired[ClientCertAuthSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
+2. See [:material-code-braces: ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef) 
+## DescribeClientAuthenticationSettingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsResultTypeDef
+
+def get_value() -> DescribeClientAuthenticationSettingsResultTypeDef:
+    return {
+        "ClientAuthenticationSettingsInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClientAuthenticationSettingsResultTypeDef(TypedDict):
+    ClientAuthenticationSettingsInfo: List[ClientAuthenticationSettingInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClientAuthenticationSettingInfoTypeDef](./type_defs.md#clientauthenticationsettinginfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConditionalForwardersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeConditionalForwardersResultTypeDef
+
+def get_value() -> DescribeConditionalForwardersResultTypeDef:
+    return {
+        "ConditionalForwarders": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConditionalForwardersResultTypeDef(TypedDict):
+    ConditionalForwarders: List[ConditionalForwarderTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConditionalForwarderTypeDef](./type_defs.md#conditionalforwardertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConnectDirectoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ConnectDirectoryRequestRequestTypeDef
+
+def get_value() -> ConnectDirectoryRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Password": ...,
+        "Size": ...,
+        "ConnectSettings": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectDirectoryRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Password: str,
+    Size: DirectorySizeType,  # (1)
+    ConnectSettings: DirectoryConnectSettingsTypeDef,  # (2)
+    ShortName: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
+2. See [:material-code-braces: DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef
+
+def get_value() -> DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef:
+    return {
+        "DirectoryIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef(TypedDict):
+    DirectoryIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef
+
+def get_value() -> DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    DomainControllerIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef
+
+def get_value() -> DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef:
+    return {
+        "OwnerDirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef(TypedDict):
+    OwnerDirectoryId: str,
+    SharedDirectoryIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
+
+def get_value() -> DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    SnapshotIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeTrustsRequestDescribeTrustsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeTrustsRequestDescribeTrustsPaginateTypeDef
+
+def get_value() -> DescribeTrustsRequestDescribeTrustsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrustsRequestDescribeTrustsPaginateTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    TrustIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListIpRoutesRequestListIpRoutesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListIpRoutesRequestListIpRoutesPaginateTypeDef
+
+def get_value() -> ListIpRoutesRequestListIpRoutesPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIpRoutesRequestListIpRoutesPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef
+
+def get_value() -> ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef
+
+def get_value() -> ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeDomainControllersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeDomainControllersResultTypeDef
+
+def get_value() -> DescribeDomainControllersResultTypeDef:
+    return {
+        "DomainControllers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDomainControllersResultTypeDef(TypedDict):
+    DomainControllers: List[DomainControllerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainControllerTypeDef](./type_defs.md#domaincontrollertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventTopicsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeEventTopicsResultTypeDef
+
+def get_value() -> DescribeEventTopicsResultTypeDef:
+    return {
+        "EventTopics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventTopicsResultTypeDef(TypedDict):
+    EventTopics: List[EventTopicTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventTopicTypeDef](./type_defs.md#eventtopictypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLDAPSSettingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsResultTypeDef
+
+def get_value() -> DescribeLDAPSSettingsResultTypeDef:
+    return {
+        "LDAPSSettingsInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLDAPSSettingsResultTypeDef(TypedDict):
+    LDAPSSettingsInfo: List[LDAPSSettingInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LDAPSSettingInfoTypeDef](./type_defs.md#ldapssettinginfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSnapshotsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSnapshotsResultTypeDef
+
+def get_value() -> DescribeSnapshotsResultTypeDef:
+    return {
+        "Snapshots": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSnapshotsResultTypeDef(TypedDict):
+    Snapshots: List[SnapshotTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTrustsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeTrustsResultTypeDef
+
+def get_value() -> DescribeTrustsResultTypeDef:
+    return {
+        "Trusts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrustsResultTypeDef(TypedDict):
+    Trusts: List[TrustTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrustTypeDef](./type_defs.md#trusttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableRadiusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import EnableRadiusRequestRequestTypeDef
+
+def get_value() -> EnableRadiusRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "RadiusSettings": ...,
+    }
+```
+
+```python title="Definition"
+class EnableRadiusRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    RadiusSettings: RadiusSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
+## OwnerDirectoryDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import OwnerDirectoryDescriptionTypeDef
+
+def get_value() -> OwnerDirectoryDescriptionTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class OwnerDirectoryDescriptionTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    AccountId: NotRequired[str],
+    DnsIpAddrs: NotRequired[List[str]],
+    VpcSettings: NotRequired[DirectoryVpcSettingsDescriptionTypeDef],  # (1)
+    RadiusSettings: NotRequired[RadiusSettingsTypeDef],  # (2)
+    RadiusStatus: NotRequired[RadiusStatusType],  # (3)
+```
+
+1. See [:material-code-braces: DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef) 
+2. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
+3. See [:material-code-brackets: RadiusStatusType](./literals.md#radiusstatustype) 
+## UpdateRadiusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateRadiusRequestRequestTypeDef
+
+def get_value() -> UpdateRadiusRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "RadiusSettings": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRadiusRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    RadiusSettings: RadiusSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
+## GetDirectoryLimitsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import GetDirectoryLimitsResultTypeDef
+
+def get_value() -> GetDirectoryLimitsResultTypeDef:
+    return {
+        "DirectoryLimits": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDirectoryLimitsResultTypeDef(TypedDict):
+    DirectoryLimits: DirectoryLimitsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DirectoryLimitsTypeDef](./type_defs.md#directorylimitstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSnapshotLimitsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultTypeDef
+
+def get_value() -> GetSnapshotLimitsResultTypeDef:
+    return {
+        "SnapshotLimits": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSnapshotLimitsResultTypeDef(TypedDict):
+    SnapshotLimits: SnapshotLimitsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIpRoutesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListIpRoutesResultTypeDef
+
+def get_value() -> ListIpRoutesResultTypeDef:
+    return {
+        "IpRoutesInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIpRoutesResultTypeDef(TypedDict):
+    IpRoutesInfo: List[IpRouteInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpRouteInfoTypeDef](./type_defs.md#iprouteinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLogSubscriptionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListLogSubscriptionsResultTypeDef
+
+def get_value() -> ListLogSubscriptionsResultTypeDef:
+    return {
+        "LogSubscriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogSubscriptionsResultTypeDef(TypedDict):
+    LogSubscriptions: List[LogSubscriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogSubscriptionTypeDef](./type_defs.md#logsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemaExtensionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListSchemaExtensionsResultTypeDef
+
+def get_value() -> ListSchemaExtensionsResultTypeDef:
+    return {
+        "SchemaExtensionsInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemaExtensionsResultTypeDef(TypedDict):
+    SchemaExtensionsInfo: List[SchemaExtensionInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SchemaExtensionInfoTypeDef](./type_defs.md#schemaextensioninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ShareDirectoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ShareDirectoryRequestRequestTypeDef
+
+def get_value() -> ShareDirectoryRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ShareTarget": ...,
+        "ShareMethod": ...,
+    }
+```
+
+```python title="Definition"
+class ShareDirectoryRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    ShareTarget: ShareTargetTypeDef,  # (1)
+    ShareMethod: ShareMethodType,  # (2)
+    ShareNotes: NotRequired[str],
+```
+
+1. See [:material-code-braces: ShareTargetTypeDef](./type_defs.md#sharetargettypedef) 
+2. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
+## UnshareDirectoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UnshareDirectoryRequestRequestTypeDef
+
+def get_value() -> UnshareDirectoryRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "UnshareTarget": ...,
+    }
+```
+
+```python title="Definition"
+class UnshareDirectoryRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    UnshareTarget: UnshareTargetTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef) 
+## DescribeRegionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeRegionsResultTypeDef
+
+def get_value() -> DescribeRegionsResultTypeDef:
+    return {
+        "RegionsDescription": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRegionsResultTypeDef(TypedDict):
+    RegionsDescription: List[RegionDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RegionDescriptionTypeDef](./type_defs.md#regiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateComputerResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import CreateComputerResultTypeDef
+
+def get_value() -> CreateComputerResultTypeDef:
+    return {
+        "Computer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateComputerResultTypeDef(TypedDict):
+    Computer: ComputerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComputerTypeDef](./type_defs.md#computertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCertificateResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeCertificateResultTypeDef
+
+def get_value() -> DescribeCertificateResultTypeDef:
+    return {
+        "Certificate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCertificateResultTypeDef(TypedDict):
+    Certificate: CertificateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DirectoryDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DirectoryDescriptionTypeDef
+
+def get_value() -> DirectoryDescriptionTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DirectoryDescriptionTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    Name: NotRequired[str],
+    ShortName: NotRequired[str],
+    Size: NotRequired[DirectorySizeType],  # (1)
+    Edition: NotRequired[DirectoryEditionType],  # (2)
+    Alias: NotRequired[str],
+    AccessUrl: NotRequired[str],
+    Description: NotRequired[str],
+    DnsIpAddrs: NotRequired[List[str]],
+    Stage: NotRequired[DirectoryStageType],  # (3)
+    ShareStatus: NotRequired[ShareStatusType],  # (4)
+    ShareMethod: NotRequired[ShareMethodType],  # (5)
+    ShareNotes: NotRequired[str],
+    LaunchTime: NotRequired[datetime],
+    StageLastUpdatedDateTime: NotRequired[datetime],
+    Type: NotRequired[DirectoryTypeType],  # (6)
+    VpcSettings: NotRequired[DirectoryVpcSettingsDescriptionTypeDef],  # (7)
+    ConnectSettings: NotRequired[DirectoryConnectSettingsDescriptionTypeDef],  # (8)
+    RadiusSettings: NotRequired[RadiusSettingsTypeDef],  # (9)
+    RadiusStatus: NotRequired[RadiusStatusType],  # (10)
+    StageReason: NotRequired[str],
+    SsoEnabled: NotRequired[bool],
+    DesiredNumberOfDomainControllers: NotRequired[int],
+    OwnerDirectoryDescription: NotRequired[OwnerDirectoryDescriptionTypeDef],  # (11)
+    RegionsInfo: NotRequired[RegionsInfoTypeDef],  # (12)
+```
+
+1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
+2. See [:material-code-brackets: DirectoryEditionType](./literals.md#directoryeditiontype) 
+3. See [:material-code-brackets: DirectoryStageType](./literals.md#directorystagetype) 
+4. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
+5. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
+6. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
+7. See [:material-code-braces: DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef) 
+8. See [:material-code-braces: DirectoryConnectSettingsDescriptionTypeDef](./type_defs.md#directoryconnectsettingsdescriptiontypedef) 
+9. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
+10. See [:material-code-brackets: RadiusStatusType](./literals.md#radiusstatustype) 
+11. See [:material-code-braces: OwnerDirectoryDescriptionTypeDef](./type_defs.md#ownerdirectorydescriptiontypedef) 
+12. See [:material-code-braces: RegionsInfoTypeDef](./type_defs.md#regionsinfotypedef) 
+## DescribeDirectoriesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeDirectoriesResultTypeDef
+
+def get_value() -> DescribeDirectoriesResultTypeDef:
+    return {
+        "DirectoryDescriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectoriesResultTypeDef(TypedDict):
+    DirectoryDescriptions: List[DirectoryDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DirectoryDescriptionTypeDef](./type_defs.md#directorydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

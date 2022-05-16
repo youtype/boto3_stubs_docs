@@ -124,33 +124,21 @@ def get_value() -> DescribeFileSystemsPaginatorName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_efs.type_defs import AccessPointDescriptionResponseMetadataTypeDef
+from mypy_boto3_efs.type_defs import PosixUserTypeDef
 
-def get_value() -> AccessPointDescriptionResponseMetadataTypeDef:
+def get_value() -> PosixUserTypeDef:
     return {
-        "ClientToken": ...,
-        "Name": ...,
-        "Tags": ...,
-        "AccessPointId": ...,
-        "AccessPointArn": ...,
-        "FileSystemId": ...,
-        "PosixUser": ...,
-        "RootDirectory": ...,
-        "OwnerId": ...,
-        "LifeCycleState": ...,
-        "ResponseMetadata": ...,
+        "Uid": ...,
+        "Gid": ...,
     }
 ```
 
-- [AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef)
-- [AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef)
-- [BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef)
+- [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
 - [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
-- [CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef)
-- [CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef)
 - [CreateMountTargetRequestRequestTypeDef](./type_defs.md#createmounttargetrequestrequesttypedef)
-- [CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef)
-- [CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef)
+- [DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)
 - [CreationInfoTypeDef](./type_defs.md#creationinfotypedef)
 - [DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef)
 - [DeleteFileSystemPolicyRequestRequestTypeDef](./type_defs.md#deletefilesystempolicyrequestrequesttypedef)
@@ -159,52 +147,55 @@ def get_value() -> AccessPointDescriptionResponseMetadataTypeDef:
 - [DeleteReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationrequestrequesttypedef)
 - [DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef)
 - [DescribeAccessPointsRequestRequestTypeDef](./type_defs.md#describeaccesspointsrequestrequesttypedef)
-- [DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef)
 - [DescribeAccountPreferencesRequestRequestTypeDef](./type_defs.md#describeaccountpreferencesrequestrequesttypedef)
-- [DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef)
+- [ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef)
 - [DescribeBackupPolicyRequestRequestTypeDef](./type_defs.md#describebackuppolicyrequestrequesttypedef)
 - [DescribeFileSystemPolicyRequestRequestTypeDef](./type_defs.md#describefilesystempolicyrequestrequesttypedef)
-- [DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef](./type_defs.md#describefilesystemsrequestdescribefilesystemspaginatetypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef)
-- [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)
 - [DescribeLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequestrequesttypedef)
 - [DescribeMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequestrequesttypedef)
-- [DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef)
-- [DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef](./type_defs.md#describemounttargetsrequestdescribemounttargetspaginatetypedef)
 - [DescribeMountTargetsRequestRequestTypeDef](./type_defs.md#describemounttargetsrequestrequesttypedef)
-- [DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef)
+- [MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef)
 - [DescribeReplicationConfigurationsRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationsrequestrequesttypedef)
-- [DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef)
-- [DescribeTagsRequestDescribeTagsPaginateTypeDef](./type_defs.md#describetagsrequestdescribetagspaginatetypedef)
 - [DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef)
-- [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)
-- [DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)
 - [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- [FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef)
-- [FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef)
-- [FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef)
 - [FileSystemSizeTypeDef](./type_defs.md#filesystemsizetypedef)
-- [LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef)
 - [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ModifyMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequestrequesttypedef)
-- [MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef)
-- [MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - [PutAccountPreferencesRequestRequestTypeDef](./type_defs.md#putaccountpreferencesrequestrequesttypedef)
-- [PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef)
-- [PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef)
 - [PutFileSystemPolicyRequestRequestTypeDef](./type_defs.md#putfilesystempolicyrequestrequesttypedef)
-- [PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef)
-- [ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef)
-- [ReplicationConfigurationDescriptionTypeDef](./type_defs.md#replicationconfigurationdescriptiontypedef)
-- [ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef)
+- [DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef)
+- [FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef)
+- [MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef)
+- [CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef)
+- [CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef)
+- [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef)
+- [PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef)
+- [CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef)
+- [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
+- [DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef)
+- [PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef)
+- [DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef](./type_defs.md#describefilesystemsrequestdescribefilesystemspaginatetypedef)
+- [DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef](./type_defs.md#describemounttargetsrequestdescribemounttargetspaginatetypedef)
+- [DescribeTagsRequestDescribeTagsPaginateTypeDef](./type_defs.md#describetagsrequestdescribetagspaginatetypedef)
+- [DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef)
+- [ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef)
+- [ReplicationConfigurationDescriptionTypeDef](./type_defs.md#replicationconfigurationdescriptiontypedef)
+- [FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef)
+- [FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef)
+- [LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef)
+- [PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef)
+- [AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef)
+- [AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef)
+- [CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef)
+- [DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef)
+- [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)
+- [DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef)
 

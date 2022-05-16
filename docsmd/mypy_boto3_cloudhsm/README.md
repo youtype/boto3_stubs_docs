@@ -119,58 +119,58 @@ def get_value() -> ClientVersionType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceRequestRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import TagTypeDef
 
-def get_value() -> AddTagsToResourceRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ResourceArn": ...,
-        "TagList": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [CreateHapgRequestRequestTypeDef](./type_defs.md#createhapgrequestrequesttypedef)
+- [CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef)
+- [CreateLunaClientRequestRequestTypeDef](./type_defs.md#createlunaclientrequestrequesttypedef)
+- [DeleteHapgRequestRequestTypeDef](./type_defs.md#deletehapgrequestrequesttypedef)
+- [DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef)
+- [DeleteLunaClientRequestRequestTypeDef](./type_defs.md#deletelunaclientrequestrequesttypedef)
+- [DescribeHapgRequestRequestTypeDef](./type_defs.md#describehapgrequestrequesttypedef)
+- [DescribeHsmRequestRequestTypeDef](./type_defs.md#describehsmrequestrequesttypedef)
+- [DescribeLunaClientRequestRequestTypeDef](./type_defs.md#describelunaclientrequestrequesttypedef)
+- [GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ListHapgsRequestRequestTypeDef](./type_defs.md#listhapgsrequestrequesttypedef)
+- [ListHsmsRequestRequestTypeDef](./type_defs.md#listhsmsrequestrequesttypedef)
+- [ListLunaClientsRequestRequestTypeDef](./type_defs.md#listlunaclientsrequestrequesttypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ModifyHapgRequestRequestTypeDef](./type_defs.md#modifyhapgrequestrequesttypedef)
+- [ModifyHsmRequestRequestTypeDef](./type_defs.md#modifyhsmrequestrequesttypedef)
+- [ModifyLunaClientRequestRequestTypeDef](./type_defs.md#modifylunaclientrequestrequesttypedef)
+- [RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef)
 - [AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef)
 - [AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef)
-- [CreateHapgRequestRequestTypeDef](./type_defs.md#createhapgrequestrequesttypedef)
 - [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef)
-- [CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef)
 - [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef)
-- [CreateLunaClientRequestRequestTypeDef](./type_defs.md#createlunaclientrequestrequesttypedef)
 - [CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef)
-- [DeleteHapgRequestRequestTypeDef](./type_defs.md#deletehapgrequestrequesttypedef)
 - [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef)
-- [DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef)
 - [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef)
-- [DeleteLunaClientRequestRequestTypeDef](./type_defs.md#deletelunaclientrequestrequesttypedef)
 - [DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef)
-- [DescribeHapgRequestRequestTypeDef](./type_defs.md#describehapgrequestrequesttypedef)
 - [DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef)
-- [DescribeHsmRequestRequestTypeDef](./type_defs.md#describehsmrequestrequesttypedef)
 - [DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef)
-- [DescribeLunaClientRequestRequestTypeDef](./type_defs.md#describelunaclientrequestrequesttypedef)
 - [DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef)
-- [GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef)
 - [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef)
 - [ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef)
-- [ListHapgsRequestListHapgsPaginateTypeDef](./type_defs.md#listhapgsrequestlisthapgspaginatetypedef)
-- [ListHapgsRequestRequestTypeDef](./type_defs.md#listhapgsrequestrequesttypedef)
 - [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef)
-- [ListHsmsRequestListHsmsPaginateTypeDef](./type_defs.md#listhsmsrequestlisthsmspaginatetypedef)
-- [ListHsmsRequestRequestTypeDef](./type_defs.md#listhsmsrequestrequesttypedef)
 - [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef)
-- [ListLunaClientsRequestListLunaClientsPaginateTypeDef](./type_defs.md#listlunaclientsrequestlistlunaclientspaginatetypedef)
-- [ListLunaClientsRequestRequestTypeDef](./type_defs.md#listlunaclientsrequestrequesttypedef)
 - [ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef)
-- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ModifyHapgRequestRequestTypeDef](./type_defs.md#modifyhapgrequestrequesttypedef)
 - [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef)
-- [ModifyHsmRequestRequestTypeDef](./type_defs.md#modifyhsmrequestrequesttypedef)
 - [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef)
-- [ModifyLunaClientRequestRequestTypeDef](./type_defs.md#modifylunaclientrequestrequesttypedef)
 - [ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef)
 - [RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ListHapgsRequestListHapgsPaginateTypeDef](./type_defs.md#listhapgsrequestlisthapgspaginatetypedef)
+- [ListHsmsRequestListHsmsPaginateTypeDef](./type_defs.md#listhsmsrequestlisthsmspaginatetypedef)
+- [ListLunaClientsRequestListLunaClientsPaginateTypeDef](./type_defs.md#listlunaclientsrequestlistlunaclientspaginatetypedef)
 

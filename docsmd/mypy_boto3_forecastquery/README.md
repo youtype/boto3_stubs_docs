@@ -101,8 +101,8 @@ def get_value() -> DataPointTypeDef:
 ```
 
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
-- [ForecastTypeDef](./type_defs.md#forecasttypedef)
 - [QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef)
-- [QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [ForecastTypeDef](./type_defs.md#forecasttypedef)
+- [QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef)
 

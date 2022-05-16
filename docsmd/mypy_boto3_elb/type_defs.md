@@ -44,44 +44,47 @@ class AddAvailabilityZonesInputRequestTypeDef(TypedDict):
     AvailabilityZones: Sequence[str],
 ```
 
-## AddAvailabilityZonesOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import AddAvailabilityZonesOutputTypeDef
+from mypy_boto3_elb.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AddAvailabilityZonesOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "AvailabilityZones": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AddAvailabilityZonesOutputTypeDef(TypedDict):
-    AvailabilityZones: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AddTagsInputRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import AddTagsInputRequestTypeDef
+from mypy_boto3_elb.type_defs import TagTypeDef
 
-def get_value() -> AddTagsInputRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "LoadBalancerNames": ...,
-        "Tags": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class AddTagsInputRequestTypeDef(TypedDict):
-    LoadBalancerNames: Sequence[str],
-    Tags: Sequence[TagTypeDef],  # (1)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AdditionalAttributeTypeDef
 
 ```python title="Usage Example"
@@ -134,25 +137,6 @@ class ApplySecurityGroupsToLoadBalancerInputRequestTypeDef(TypedDict):
     SecurityGroups: Sequence[str],
 ```
 
-## ApplySecurityGroupsToLoadBalancerOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ApplySecurityGroupsToLoadBalancerOutputTypeDef
-
-def get_value() -> ApplySecurityGroupsToLoadBalancerOutputTypeDef:
-    return {
-        "SecurityGroups": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ApplySecurityGroupsToLoadBalancerOutputTypeDef(TypedDict):
-    SecurityGroups: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachLoadBalancerToSubnetsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -171,25 +155,6 @@ class AttachLoadBalancerToSubnetsInputRequestTypeDef(TypedDict):
     Subnets: Sequence[str],
 ```
 
-## AttachLoadBalancerToSubnetsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import AttachLoadBalancerToSubnetsOutputTypeDef
-
-def get_value() -> AttachLoadBalancerToSubnetsOutputTypeDef:
-    return {
-        "Subnets": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AttachLoadBalancerToSubnetsOutputTypeDef(TypedDict):
-    Subnets: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BackendServerDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -207,45 +172,30 @@ class BackendServerDescriptionTypeDef(TypedDict):
     PolicyNames: NotRequired[List[str]],
 ```
 
-## ConfigureHealthCheckInputRequestTypeDef
+## HealthCheckTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ConfigureHealthCheckInputRequestTypeDef
+from mypy_boto3_elb.type_defs import HealthCheckTypeDef
 
-def get_value() -> ConfigureHealthCheckInputRequestTypeDef:
+def get_value() -> HealthCheckTypeDef:
     return {
-        "LoadBalancerName": ...,
-        "HealthCheck": ...,
+        "Target": ...,
+        "Interval": ...,
+        "Timeout": ...,
+        "UnhealthyThreshold": ...,
+        "HealthyThreshold": ...,
     }
 ```
 
 ```python title="Definition"
-class ConfigureHealthCheckInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    HealthCheck: HealthCheckTypeDef,  # (1)
+class HealthCheckTypeDef(TypedDict):
+    Target: str,
+    Interval: int,
+    Timeout: int,
+    UnhealthyThreshold: int,
+    HealthyThreshold: int,
 ```
 
-1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
-## ConfigureHealthCheckOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ConfigureHealthCheckOutputTypeDef
-
-def get_value() -> ConfigureHealthCheckOutputTypeDef:
-    return {
-        "HealthCheck": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ConfigureHealthCheckOutputTypeDef(TypedDict):
-    HealthCheck: HealthCheckTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectionDrainingTypeDef
 
 ```python title="Usage Example"
@@ -279,50 +229,28 @@ class ConnectionSettingsTypeDef(TypedDict):
     IdleTimeout: int,
 ```
 
-## CreateAccessPointInputRequestTypeDef
+## ListenerTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import CreateAccessPointInputRequestTypeDef
+from mypy_boto3_elb.type_defs import ListenerTypeDef
 
-def get_value() -> CreateAccessPointInputRequestTypeDef:
+def get_value() -> ListenerTypeDef:
     return {
-        "LoadBalancerName": ...,
-        "Listeners": ...,
+        "Protocol": ...,
+        "LoadBalancerPort": ...,
+        "InstancePort": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccessPointInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    Listeners: Sequence[ListenerTypeDef],  # (1)
-    AvailabilityZones: NotRequired[Sequence[str]],
-    Subnets: NotRequired[Sequence[str]],
-    SecurityGroups: NotRequired[Sequence[str]],
-    Scheme: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+class ListenerTypeDef(TypedDict):
+    Protocol: str,
+    LoadBalancerPort: int,
+    InstancePort: int,
+    InstanceProtocol: NotRequired[str],
+    SSLCertificateId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateAccessPointOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import CreateAccessPointOutputTypeDef
-
-def get_value() -> CreateAccessPointOutputTypeDef:
-    return {
-        "DNSName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAccessPointOutputTypeDef(TypedDict):
-    DNSName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAppCookieStickinessPolicyInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -362,47 +290,23 @@ class CreateLBCookieStickinessPolicyInputRequestTypeDef(TypedDict):
     CookieExpirationPeriod: NotRequired[int],
 ```
 
-## CreateLoadBalancerListenerInputRequestTypeDef
+## PolicyAttributeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import CreateLoadBalancerListenerInputRequestTypeDef
+from mypy_boto3_elb.type_defs import PolicyAttributeTypeDef
 
-def get_value() -> CreateLoadBalancerListenerInputRequestTypeDef:
+def get_value() -> PolicyAttributeTypeDef:
     return {
-        "LoadBalancerName": ...,
-        "Listeners": ...,
+        "AttributeName": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateLoadBalancerListenerInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    Listeners: Sequence[ListenerTypeDef],  # (1)
+class PolicyAttributeTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeValue: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
-## CreateLoadBalancerPolicyInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import CreateLoadBalancerPolicyInputRequestTypeDef
-
-def get_value() -> CreateLoadBalancerPolicyInputRequestTypeDef:
-    return {
-        "LoadBalancerName": ...,
-        "PolicyName": ...,
-        "PolicyTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateLoadBalancerPolicyInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    PolicyName: str,
-    PolicyTypeName: str,
-    PolicyAttributes: NotRequired[Sequence[PolicyAttributeTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef) 
 ## CrossZoneLoadBalancingTypeDef
 
 ```python title="Usage Example"
@@ -471,6 +375,675 @@ class DeleteLoadBalancerPolicyInputRequestTypeDef(TypedDict):
     PolicyName: str,
 ```
 
+## InstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## DescribeAccessPointsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeAccessPointsInputRequestTypeDef
+
+def get_value() -> DescribeAccessPointsInputRequestTypeDef:
+    return {
+        "LoadBalancerNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccessPointsInputRequestTypeDef(TypedDict):
+    LoadBalancerNames: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    PageSize: NotRequired[int],
+```
+
+## DescribeAccountLimitsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeAccountLimitsInputRequestTypeDef
+
+def get_value() -> DescribeAccountLimitsInputRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountLimitsInputRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    PageSize: NotRequired[int],
+```
+
+## LimitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import LimitTypeDef
+
+def get_value() -> LimitTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class LimitTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Max: NotRequired[str],
+```
+
+## WaiterConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
+```
+
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
+
+## InstanceStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import InstanceStateTypeDef
+
+def get_value() -> InstanceStateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceStateTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    State: NotRequired[str],
+    ReasonCode: NotRequired[str],
+    Description: NotRequired[str],
+```
+
+## DescribeLoadBalancerAttributesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesInputRequestTypeDef
+
+def get_value() -> DescribeLoadBalancerAttributesInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoadBalancerAttributesInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+```
+
+## DescribeLoadBalancerPoliciesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesInputRequestTypeDef
+
+def get_value() -> DescribeLoadBalancerPoliciesInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoadBalancerPoliciesInputRequestTypeDef(TypedDict):
+    LoadBalancerName: NotRequired[str],
+    PolicyNames: NotRequired[Sequence[str]],
+```
+
+## DescribeLoadBalancerPolicyTypesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesInputRequestTypeDef
+
+def get_value() -> DescribeLoadBalancerPolicyTypesInputRequestTypeDef:
+    return {
+        "PolicyTypeNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoadBalancerPolicyTypesInputRequestTypeDef(TypedDict):
+    PolicyTypeNames: NotRequired[Sequence[str]],
+```
+
+## DescribeTagsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeTagsInputRequestTypeDef
+
+def get_value() -> DescribeTagsInputRequestTypeDef:
+    return {
+        "LoadBalancerNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsInputRequestTypeDef(TypedDict):
+    LoadBalancerNames: Sequence[str],
+```
+
+## DetachLoadBalancerFromSubnetsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsInputRequestTypeDef
+
+def get_value() -> DetachLoadBalancerFromSubnetsInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "Subnets": ...,
+    }
+```
+
+```python title="Definition"
+class DetachLoadBalancerFromSubnetsInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    Subnets: Sequence[str],
+```
+
+## LBCookieStickinessPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import LBCookieStickinessPolicyTypeDef
+
+def get_value() -> LBCookieStickinessPolicyTypeDef:
+    return {
+        "PolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class LBCookieStickinessPolicyTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    CookieExpirationPeriod: NotRequired[int],
+```
+
+## SourceSecurityGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import SourceSecurityGroupTypeDef
+
+def get_value() -> SourceSecurityGroupTypeDef:
+    return {
+        "OwnerAlias": ...,
+    }
+```
+
+```python title="Definition"
+class SourceSecurityGroupTypeDef(TypedDict):
+    OwnerAlias: NotRequired[str],
+    GroupName: NotRequired[str],
+```
+
+## PolicyAttributeDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import PolicyAttributeDescriptionTypeDef
+
+def get_value() -> PolicyAttributeDescriptionTypeDef:
+    return {
+        "AttributeName": ...,
+    }
+```
+
+```python title="Definition"
+class PolicyAttributeDescriptionTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeValue: NotRequired[str],
+```
+
+## PolicyAttributeTypeDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import PolicyAttributeTypeDescriptionTypeDef
+
+def get_value() -> PolicyAttributeTypeDescriptionTypeDef:
+    return {
+        "AttributeName": ...,
+    }
+```
+
+```python title="Definition"
+class PolicyAttributeTypeDescriptionTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeType: NotRequired[str],
+    Description: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    Cardinality: NotRequired[str],
+```
+
+## RemoveAvailabilityZonesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesInputRequestTypeDef
+
+def get_value() -> RemoveAvailabilityZonesInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "AvailabilityZones": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveAvailabilityZonesInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    AvailabilityZones: Sequence[str],
+```
+
+## TagKeyOnlyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import TagKeyOnlyTypeDef
+
+def get_value() -> TagKeyOnlyTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class TagKeyOnlyTypeDef(TypedDict):
+    Key: NotRequired[str],
+```
+
+## SetLoadBalancerListenerSSLCertificateInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import SetLoadBalancerListenerSSLCertificateInputRequestTypeDef
+
+def get_value() -> SetLoadBalancerListenerSSLCertificateInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "LoadBalancerPort": ...,
+        "SSLCertificateId": ...,
+    }
+```
+
+```python title="Definition"
+class SetLoadBalancerListenerSSLCertificateInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    LoadBalancerPort: int,
+    SSLCertificateId: str,
+```
+
+## SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef
+
+def get_value() -> SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "InstancePort": ...,
+        "PolicyNames": ...,
+    }
+```
+
+```python title="Definition"
+class SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    InstancePort: int,
+    PolicyNames: Sequence[str],
+```
+
+## SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
+
+def get_value() -> SetLoadBalancerPoliciesOfListenerInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "LoadBalancerPort": ...,
+        "PolicyNames": ...,
+    }
+```
+
+```python title="Definition"
+class SetLoadBalancerPoliciesOfListenerInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    LoadBalancerPort: int,
+    PolicyNames: Sequence[str],
+```
+
+## AddAvailabilityZonesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import AddAvailabilityZonesOutputTypeDef
+
+def get_value() -> AddAvailabilityZonesOutputTypeDef:
+    return {
+        "AvailabilityZones": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AddAvailabilityZonesOutputTypeDef(TypedDict):
+    AvailabilityZones: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ApplySecurityGroupsToLoadBalancerOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import ApplySecurityGroupsToLoadBalancerOutputTypeDef
+
+def get_value() -> ApplySecurityGroupsToLoadBalancerOutputTypeDef:
+    return {
+        "SecurityGroups": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ApplySecurityGroupsToLoadBalancerOutputTypeDef(TypedDict):
+    SecurityGroups: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AttachLoadBalancerToSubnetsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import AttachLoadBalancerToSubnetsOutputTypeDef
+
+def get_value() -> AttachLoadBalancerToSubnetsOutputTypeDef:
+    return {
+        "Subnets": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AttachLoadBalancerToSubnetsOutputTypeDef(TypedDict):
+    Subnets: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccessPointOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import CreateAccessPointOutputTypeDef
+
+def get_value() -> CreateAccessPointOutputTypeDef:
+    return {
+        "DNSName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointOutputTypeDef(TypedDict):
+    DNSName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetachLoadBalancerFromSubnetsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsOutputTypeDef
+
+def get_value() -> DetachLoadBalancerFromSubnetsOutputTypeDef:
+    return {
+        "Subnets": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetachLoadBalancerFromSubnetsOutputTypeDef(TypedDict):
+    Subnets: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RemoveAvailabilityZonesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesOutputTypeDef
+
+def get_value() -> RemoveAvailabilityZonesOutputTypeDef:
+    return {
+        "AvailabilityZones": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveAvailabilityZonesOutputTypeDef(TypedDict):
+    AvailabilityZones: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AddTagsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import AddTagsInputRequestTypeDef
+
+def get_value() -> AddTagsInputRequestTypeDef:
+    return {
+        "LoadBalancerNames": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class AddTagsInputRequestTypeDef(TypedDict):
+    LoadBalancerNames: Sequence[str],
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import TagDescriptionTypeDef
+
+def get_value() -> TagDescriptionTypeDef:
+    return {
+        "LoadBalancerName": ...,
+    }
+```
+
+```python title="Definition"
+class TagDescriptionTypeDef(TypedDict):
+    LoadBalancerName: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ConfigureHealthCheckInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import ConfigureHealthCheckInputRequestTypeDef
+
+def get_value() -> ConfigureHealthCheckInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "HealthCheck": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigureHealthCheckInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    HealthCheck: HealthCheckTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+## ConfigureHealthCheckOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import ConfigureHealthCheckOutputTypeDef
+
+def get_value() -> ConfigureHealthCheckOutputTypeDef:
+    return {
+        "HealthCheck": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigureHealthCheckOutputTypeDef(TypedDict):
+    HealthCheck: HealthCheckTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccessPointInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import CreateAccessPointInputRequestTypeDef
+
+def get_value() -> CreateAccessPointInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "Listeners": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    Listeners: Sequence[ListenerTypeDef],  # (1)
+    AvailabilityZones: NotRequired[Sequence[str]],
+    Subnets: NotRequired[Sequence[str]],
+    SecurityGroups: NotRequired[Sequence[str]],
+    Scheme: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateLoadBalancerListenerInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import CreateLoadBalancerListenerInputRequestTypeDef
+
+def get_value() -> CreateLoadBalancerListenerInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "Listeners": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLoadBalancerListenerInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    Listeners: Sequence[ListenerTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+## ListenerDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import ListenerDescriptionTypeDef
+
+def get_value() -> ListenerDescriptionTypeDef:
+    return {
+        "Listener": ...,
+    }
+```
+
+```python title="Definition"
+class ListenerDescriptionTypeDef(TypedDict):
+    Listener: NotRequired[ListenerTypeDef],  # (1)
+    PolicyNames: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+## CreateLoadBalancerPolicyInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import CreateLoadBalancerPolicyInputRequestTypeDef
+
+def get_value() -> CreateLoadBalancerPolicyInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "PolicyName": ...,
+        "PolicyTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLoadBalancerPolicyInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    PolicyName: str,
+    PolicyTypeName: str,
+    PolicyAttributes: NotRequired[Sequence[PolicyAttributeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef) 
+## LoadBalancerAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import LoadBalancerAttributesTypeDef
+
+def get_value() -> LoadBalancerAttributesTypeDef:
+    return {
+        "CrossZoneLoadBalancing": ...,
+    }
+```
+
+```python title="Definition"
+class LoadBalancerAttributesTypeDef(TypedDict):
+    CrossZoneLoadBalancing: NotRequired[CrossZoneLoadBalancingTypeDef],  # (1)
+    AccessLog: NotRequired[AccessLogTypeDef],  # (2)
+    ConnectionDraining: NotRequired[ConnectionDrainingTypeDef],  # (3)
+    ConnectionSettings: NotRequired[ConnectionSettingsTypeDef],  # (4)
+    AdditionalAttributes: NotRequired[List[AdditionalAttributeTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: CrossZoneLoadBalancingTypeDef](./type_defs.md#crosszoneloadbalancingtypedef) 
+2. See [:material-code-braces: AccessLogTypeDef](./type_defs.md#accesslogtypedef) 
+3. See [:material-code-braces: ConnectionDrainingTypeDef](./type_defs.md#connectiondrainingtypedef) 
+4. See [:material-code-braces: ConnectionSettingsTypeDef](./type_defs.md#connectionsettingstypedef) 
+5. See [:material-code-braces: AdditionalAttributeTypeDef](./type_defs.md#additionalattributetypedef) 
 ## DeregisterEndPointsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -510,6 +1083,63 @@ class DeregisterEndPointsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEndPointStateInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import DescribeEndPointStateInputRequestTypeDef
+
+def get_value() -> DescribeEndPointStateInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndPointStateInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    Instances: NotRequired[Sequence[InstanceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+## RegisterEndPointsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import RegisterEndPointsInputRequestTypeDef
+
+def get_value() -> RegisterEndPointsInputRequestTypeDef:
+    return {
+        "LoadBalancerName": ...,
+        "Instances": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterEndPointsInputRequestTypeDef(TypedDict):
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+## RegisterEndPointsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elb.type_defs import RegisterEndPointsOutputTypeDef
+
+def get_value() -> RegisterEndPointsOutputTypeDef:
+    return {
+        "Instances": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterEndPointsOutputTypeDef(TypedDict):
+    Instances: List[InstanceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccessPointsInputDescribeLoadBalancersPaginateTypeDef
 
 ```python title="Usage Example"
@@ -528,46 +1158,6 @@ class DescribeAccessPointsInputDescribeLoadBalancersPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeAccessPointsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeAccessPointsInputRequestTypeDef
-
-def get_value() -> DescribeAccessPointsInputRequestTypeDef:
-    return {
-        "LoadBalancerNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccessPointsInputRequestTypeDef(TypedDict):
-    LoadBalancerNames: NotRequired[Sequence[str]],
-    Marker: NotRequired[str],
-    PageSize: NotRequired[int],
-```
-
-## DescribeAccessPointsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeAccessPointsOutputTypeDef
-
-def get_value() -> DescribeAccessPointsOutputTypeDef:
-    return {
-        "LoadBalancerDescriptions": ...,
-        "NextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccessPointsOutputTypeDef(TypedDict):
-    LoadBalancerDescriptions: List[LoadBalancerDescriptionTypeDef],  # (1)
-    NextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LoadBalancerDescriptionTypeDef](./type_defs.md#loadbalancerdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -585,23 +1175,6 @@ class DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeAccountLimitsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeAccountLimitsInputRequestTypeDef
-
-def get_value() -> DescribeAccountLimitsInputRequestTypeDef:
-    return {
-        "Marker": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountLimitsInputRequestTypeDef(TypedDict):
-    Marker: NotRequired[str],
-    PageSize: NotRequired[int],
-```
-
 ## DescribeAccountLimitsOutputTypeDef
 
 ```python title="Usage Example"
@@ -684,24 +1257,6 @@ class DescribeEndPointStateInputInstanceInServiceWaitTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
 2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeEndPointStateInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeEndPointStateInputRequestTypeDef
-
-def get_value() -> DescribeEndPointStateInputRequestTypeDef:
-    return {
-        "LoadBalancerName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEndPointStateInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    Instances: NotRequired[Sequence[InstanceTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
 ## DescribeEndPointStateOutputTypeDef
 
 ```python title="Usage Example"
@@ -722,131 +1277,83 @@ class DescribeEndPointStateOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceStateTypeDef](./type_defs.md#instancestatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLoadBalancerAttributesInputRequestTypeDef
+## PoliciesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesInputRequestTypeDef
+from mypy_boto3_elb.type_defs import PoliciesTypeDef
 
-def get_value() -> DescribeLoadBalancerAttributesInputRequestTypeDef:
+def get_value() -> PoliciesTypeDef:
     return {
-        "LoadBalancerName": ...,
+        "AppCookieStickinessPolicies": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLoadBalancerAttributesInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
+class PoliciesTypeDef(TypedDict):
+    AppCookieStickinessPolicies: NotRequired[List[AppCookieStickinessPolicyTypeDef]],  # (1)
+    LBCookieStickinessPolicies: NotRequired[List[LBCookieStickinessPolicyTypeDef]],  # (2)
+    OtherPolicies: NotRequired[List[str]],
 ```
 
-## DescribeLoadBalancerAttributesOutputTypeDef
+1. See [:material-code-braces: AppCookieStickinessPolicyTypeDef](./type_defs.md#appcookiestickinesspolicytypedef) 
+2. See [:material-code-braces: LBCookieStickinessPolicyTypeDef](./type_defs.md#lbcookiestickinesspolicytypedef) 
+## PolicyDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesOutputTypeDef
+from mypy_boto3_elb.type_defs import PolicyDescriptionTypeDef
 
-def get_value() -> DescribeLoadBalancerAttributesOutputTypeDef:
+def get_value() -> PolicyDescriptionTypeDef:
     return {
-        "LoadBalancerAttributes": ...,
-        "ResponseMetadata": ...,
+        "PolicyName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLoadBalancerAttributesOutputTypeDef(TypedDict):
-    LoadBalancerAttributes: LoadBalancerAttributesTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PolicyDescriptionTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyTypeName: NotRequired[str],
+    PolicyAttributeDescriptions: NotRequired[List[PolicyAttributeDescriptionTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLoadBalancerPoliciesInputRequestTypeDef
+1. See [:material-code-braces: PolicyAttributeDescriptionTypeDef](./type_defs.md#policyattributedescriptiontypedef) 
+## PolicyTypeDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesInputRequestTypeDef
+from mypy_boto3_elb.type_defs import PolicyTypeDescriptionTypeDef
 
-def get_value() -> DescribeLoadBalancerPoliciesInputRequestTypeDef:
+def get_value() -> PolicyTypeDescriptionTypeDef:
     return {
-        "LoadBalancerName": ...,
+        "PolicyTypeName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLoadBalancerPoliciesInputRequestTypeDef(TypedDict):
-    LoadBalancerName: NotRequired[str],
-    PolicyNames: NotRequired[Sequence[str]],
+class PolicyTypeDescriptionTypeDef(TypedDict):
+    PolicyTypeName: NotRequired[str],
+    Description: NotRequired[str],
+    PolicyAttributeTypeDescriptions: NotRequired[List[PolicyAttributeTypeDescriptionTypeDef]],  # (1)
 ```
 
-## DescribeLoadBalancerPoliciesOutputTypeDef
+1. See [:material-code-braces: PolicyAttributeTypeDescriptionTypeDef](./type_defs.md#policyattributetypedescriptiontypedef) 
+## RemoveTagsInputRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesOutputTypeDef
+from mypy_boto3_elb.type_defs import RemoveTagsInputRequestTypeDef
 
-def get_value() -> DescribeLoadBalancerPoliciesOutputTypeDef:
-    return {
-        "PolicyDescriptions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoadBalancerPoliciesOutputTypeDef(TypedDict):
-    PolicyDescriptions: List[PolicyDescriptionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyDescriptionTypeDef](./type_defs.md#policydescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLoadBalancerPolicyTypesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesInputRequestTypeDef
-
-def get_value() -> DescribeLoadBalancerPolicyTypesInputRequestTypeDef:
-    return {
-        "PolicyTypeNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoadBalancerPolicyTypesInputRequestTypeDef(TypedDict):
-    PolicyTypeNames: NotRequired[Sequence[str]],
-```
-
-## DescribeLoadBalancerPolicyTypesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesOutputTypeDef
-
-def get_value() -> DescribeLoadBalancerPolicyTypesOutputTypeDef:
-    return {
-        "PolicyTypeDescriptions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoadBalancerPolicyTypesOutputTypeDef(TypedDict):
-    PolicyTypeDescriptions: List[PolicyTypeDescriptionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyTypeDescriptionTypeDef](./type_defs.md#policytypedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTagsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DescribeTagsInputRequestTypeDef
-
-def get_value() -> DescribeTagsInputRequestTypeDef:
+def get_value() -> RemoveTagsInputRequestTypeDef:
     return {
         "LoadBalancerNames": ...,
+        "Tags": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeTagsInputRequestTypeDef(TypedDict):
+class RemoveTagsInputRequestTypeDef(TypedDict):
     LoadBalancerNames: Sequence[str],
+    Tags: Sequence[TagKeyOnlyTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef) 
 ## DescribeTagsOutputTypeDef
 
 ```python title="Usage Example"
@@ -867,238 +1374,26 @@ class DescribeTagsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DetachLoadBalancerFromSubnetsInputRequestTypeDef
+## DescribeLoadBalancerAttributesOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsInputRequestTypeDef
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesOutputTypeDef
 
-def get_value() -> DetachLoadBalancerFromSubnetsInputRequestTypeDef:
+def get_value() -> DescribeLoadBalancerAttributesOutputTypeDef:
     return {
-        "LoadBalancerName": ...,
-        "Subnets": ...,
-    }
-```
-
-```python title="Definition"
-class DetachLoadBalancerFromSubnetsInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    Subnets: Sequence[str],
-```
-
-## DetachLoadBalancerFromSubnetsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsOutputTypeDef
-
-def get_value() -> DetachLoadBalancerFromSubnetsOutputTypeDef:
-    return {
-        "Subnets": ...,
+        "LoadBalancerAttributes": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DetachLoadBalancerFromSubnetsOutputTypeDef(TypedDict):
-    Subnets: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribeLoadBalancerAttributesOutputTypeDef(TypedDict):
+    LoadBalancerAttributes: LoadBalancerAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## HealthCheckTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import HealthCheckTypeDef
-
-def get_value() -> HealthCheckTypeDef:
-    return {
-        "Target": ...,
-        "Interval": ...,
-        "Timeout": ...,
-        "UnhealthyThreshold": ...,
-        "HealthyThreshold": ...,
-    }
-```
-
-```python title="Definition"
-class HealthCheckTypeDef(TypedDict):
-    Target: str,
-    Interval: int,
-    Timeout: int,
-    UnhealthyThreshold: int,
-    HealthyThreshold: int,
-```
-
-## InstanceStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import InstanceStateTypeDef
-
-def get_value() -> InstanceStateTypeDef:
-    return {
-        "InstanceId": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceStateTypeDef(TypedDict):
-    InstanceId: NotRequired[str],
-    State: NotRequired[str],
-    ReasonCode: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## InstanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import InstanceTypeDef
-
-def get_value() -> InstanceTypeDef:
-    return {
-        "InstanceId": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceTypeDef(TypedDict):
-    InstanceId: NotRequired[str],
-```
-
-## LBCookieStickinessPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import LBCookieStickinessPolicyTypeDef
-
-def get_value() -> LBCookieStickinessPolicyTypeDef:
-    return {
-        "PolicyName": ...,
-    }
-```
-
-```python title="Definition"
-class LBCookieStickinessPolicyTypeDef(TypedDict):
-    PolicyName: NotRequired[str],
-    CookieExpirationPeriod: NotRequired[int],
-```
-
-## LimitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import LimitTypeDef
-
-def get_value() -> LimitTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class LimitTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Max: NotRequired[str],
-```
-
-## ListenerDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ListenerDescriptionTypeDef
-
-def get_value() -> ListenerDescriptionTypeDef:
-    return {
-        "Listener": ...,
-    }
-```
-
-```python title="Definition"
-class ListenerDescriptionTypeDef(TypedDict):
-    Listener: NotRequired[ListenerTypeDef],  # (1)
-    PolicyNames: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
-## ListenerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ListenerTypeDef
-
-def get_value() -> ListenerTypeDef:
-    return {
-        "Protocol": ...,
-        "LoadBalancerPort": ...,
-        "InstancePort": ...,
-    }
-```
-
-```python title="Definition"
-class ListenerTypeDef(TypedDict):
-    Protocol: str,
-    LoadBalancerPort: int,
-    InstancePort: int,
-    InstanceProtocol: NotRequired[str],
-    SSLCertificateId: NotRequired[str],
-```
-
-## LoadBalancerAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import LoadBalancerAttributesTypeDef
-
-def get_value() -> LoadBalancerAttributesTypeDef:
-    return {
-        "CrossZoneLoadBalancing": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerAttributesTypeDef(TypedDict):
-    CrossZoneLoadBalancing: NotRequired[CrossZoneLoadBalancingTypeDef],  # (1)
-    AccessLog: NotRequired[AccessLogTypeDef],  # (2)
-    ConnectionDraining: NotRequired[ConnectionDrainingTypeDef],  # (3)
-    ConnectionSettings: NotRequired[ConnectionSettingsTypeDef],  # (4)
-    AdditionalAttributes: NotRequired[List[AdditionalAttributeTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: CrossZoneLoadBalancingTypeDef](./type_defs.md#crosszoneloadbalancingtypedef) 
-2. See [:material-code-braces: AccessLogTypeDef](./type_defs.md#accesslogtypedef) 
-3. See [:material-code-braces: ConnectionDrainingTypeDef](./type_defs.md#connectiondrainingtypedef) 
-4. See [:material-code-braces: ConnectionSettingsTypeDef](./type_defs.md#connectionsettingstypedef) 
-5. See [:material-code-braces: AdditionalAttributeTypeDef](./type_defs.md#additionalattributetypedef) 
-## LoadBalancerDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import LoadBalancerDescriptionTypeDef
-
-def get_value() -> LoadBalancerDescriptionTypeDef:
-    return {
-        "LoadBalancerName": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerDescriptionTypeDef(TypedDict):
-    LoadBalancerName: NotRequired[str],
-    DNSName: NotRequired[str],
-    CanonicalHostedZoneName: NotRequired[str],
-    CanonicalHostedZoneNameID: NotRequired[str],
-    ListenerDescriptions: NotRequired[List[ListenerDescriptionTypeDef]],  # (1)
-    Policies: NotRequired[PoliciesTypeDef],  # (2)
-    BackendServerDescriptions: NotRequired[List[BackendServerDescriptionTypeDef]],  # (3)
-    AvailabilityZones: NotRequired[List[str]],
-    Subnets: NotRequired[List[str]],
-    VPCId: NotRequired[str],
-    Instances: NotRequired[List[InstanceTypeDef]],  # (4)
-    HealthCheck: NotRequired[HealthCheckTypeDef],  # (5)
-    SourceSecurityGroup: NotRequired[SourceSecurityGroupTypeDef],  # (6)
-    SecurityGroups: NotRequired[List[str]],
-    CreatedTime: NotRequired[datetime],
-    Scheme: NotRequired[str],
-```
-
-1. See [:material-code-braces: ListenerDescriptionTypeDef](./type_defs.md#listenerdescriptiontypedef) 
-2. See [:material-code-braces: PoliciesTypeDef](./type_defs.md#policiestypedef) 
-3. See [:material-code-braces: BackendServerDescriptionTypeDef](./type_defs.md#backendserverdescriptiontypedef) 
-4. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
-5. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
-6. See [:material-code-braces: SourceSecurityGroupTypeDef](./type_defs.md#sourcesecuritygrouptypedef) 
+1. See [:material-code-braces: LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyLoadBalancerAttributesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1140,397 +1435,102 @@ class ModifyLoadBalancerAttributesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
+## LoadBalancerDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_elb.type_defs import LoadBalancerDescriptionTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PoliciesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PoliciesTypeDef
-
-def get_value() -> PoliciesTypeDef:
-    return {
-        "AppCookieStickinessPolicies": ...,
-    }
-```
-
-```python title="Definition"
-class PoliciesTypeDef(TypedDict):
-    AppCookieStickinessPolicies: NotRequired[List[AppCookieStickinessPolicyTypeDef]],  # (1)
-    LBCookieStickinessPolicies: NotRequired[List[LBCookieStickinessPolicyTypeDef]],  # (2)
-    OtherPolicies: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: AppCookieStickinessPolicyTypeDef](./type_defs.md#appcookiestickinesspolicytypedef) 
-2. See [:material-code-braces: LBCookieStickinessPolicyTypeDef](./type_defs.md#lbcookiestickinesspolicytypedef) 
-## PolicyAttributeDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PolicyAttributeDescriptionTypeDef
-
-def get_value() -> PolicyAttributeDescriptionTypeDef:
-    return {
-        "AttributeName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyAttributeDescriptionTypeDef(TypedDict):
-    AttributeName: NotRequired[str],
-    AttributeValue: NotRequired[str],
-```
-
-## PolicyAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PolicyAttributeTypeDef
-
-def get_value() -> PolicyAttributeTypeDef:
-    return {
-        "AttributeName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyAttributeTypeDef(TypedDict):
-    AttributeName: NotRequired[str],
-    AttributeValue: NotRequired[str],
-```
-
-## PolicyAttributeTypeDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PolicyAttributeTypeDescriptionTypeDef
-
-def get_value() -> PolicyAttributeTypeDescriptionTypeDef:
-    return {
-        "AttributeName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyAttributeTypeDescriptionTypeDef(TypedDict):
-    AttributeName: NotRequired[str],
-    AttributeType: NotRequired[str],
-    Description: NotRequired[str],
-    DefaultValue: NotRequired[str],
-    Cardinality: NotRequired[str],
-```
-
-## PolicyDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PolicyDescriptionTypeDef
-
-def get_value() -> PolicyDescriptionTypeDef:
-    return {
-        "PolicyName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyDescriptionTypeDef(TypedDict):
-    PolicyName: NotRequired[str],
-    PolicyTypeName: NotRequired[str],
-    PolicyAttributeDescriptions: NotRequired[List[PolicyAttributeDescriptionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: PolicyAttributeDescriptionTypeDef](./type_defs.md#policyattributedescriptiontypedef) 
-## PolicyTypeDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import PolicyTypeDescriptionTypeDef
-
-def get_value() -> PolicyTypeDescriptionTypeDef:
-    return {
-        "PolicyTypeName": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyTypeDescriptionTypeDef(TypedDict):
-    PolicyTypeName: NotRequired[str],
-    Description: NotRequired[str],
-    PolicyAttributeTypeDescriptions: NotRequired[List[PolicyAttributeTypeDescriptionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: PolicyAttributeTypeDescriptionTypeDef](./type_defs.md#policyattributetypedescriptiontypedef) 
-## RegisterEndPointsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import RegisterEndPointsInputRequestTypeDef
-
-def get_value() -> RegisterEndPointsInputRequestTypeDef:
+def get_value() -> LoadBalancerDescriptionTypeDef:
     return {
         "LoadBalancerName": ...,
-        "Instances": ...,
     }
 ```
 
 ```python title="Definition"
-class RegisterEndPointsInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    Instances: Sequence[InstanceTypeDef],  # (1)
+class LoadBalancerDescriptionTypeDef(TypedDict):
+    LoadBalancerName: NotRequired[str],
+    DNSName: NotRequired[str],
+    CanonicalHostedZoneName: NotRequired[str],
+    CanonicalHostedZoneNameID: NotRequired[str],
+    ListenerDescriptions: NotRequired[List[ListenerDescriptionTypeDef]],  # (1)
+    Policies: NotRequired[PoliciesTypeDef],  # (2)
+    BackendServerDescriptions: NotRequired[List[BackendServerDescriptionTypeDef]],  # (3)
+    AvailabilityZones: NotRequired[List[str]],
+    Subnets: NotRequired[List[str]],
+    VPCId: NotRequired[str],
+    Instances: NotRequired[List[InstanceTypeDef]],  # (4)
+    HealthCheck: NotRequired[HealthCheckTypeDef],  # (5)
+    SourceSecurityGroup: NotRequired[SourceSecurityGroupTypeDef],  # (6)
+    SecurityGroups: NotRequired[List[str]],
+    CreatedTime: NotRequired[datetime],
+    Scheme: NotRequired[str],
 ```
 
-1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
-## RegisterEndPointsOutputTypeDef
+1. See [:material-code-braces: ListenerDescriptionTypeDef](./type_defs.md#listenerdescriptiontypedef) 
+2. See [:material-code-braces: PoliciesTypeDef](./type_defs.md#policiestypedef) 
+3. See [:material-code-braces: BackendServerDescriptionTypeDef](./type_defs.md#backendserverdescriptiontypedef) 
+4. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+5. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+6. See [:material-code-braces: SourceSecurityGroupTypeDef](./type_defs.md#sourcesecuritygrouptypedef) 
+## DescribeLoadBalancerPoliciesOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import RegisterEndPointsOutputTypeDef
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesOutputTypeDef
 
-def get_value() -> RegisterEndPointsOutputTypeDef:
+def get_value() -> DescribeLoadBalancerPoliciesOutputTypeDef:
     return {
-        "Instances": ...,
+        "PolicyDescriptions": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RegisterEndPointsOutputTypeDef(TypedDict):
-    Instances: List[InstanceTypeDef],  # (1)
+class DescribeLoadBalancerPoliciesOutputTypeDef(TypedDict):
+    PolicyDescriptions: List[PolicyDescriptionTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+1. See [:material-code-braces: PolicyDescriptionTypeDef](./type_defs.md#policydescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RemoveAvailabilityZonesInputRequestTypeDef
+## DescribeLoadBalancerPolicyTypesOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesInputRequestTypeDef
+from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesOutputTypeDef
 
-def get_value() -> RemoveAvailabilityZonesInputRequestTypeDef:
+def get_value() -> DescribeLoadBalancerPolicyTypesOutputTypeDef:
     return {
-        "LoadBalancerName": ...,
-        "AvailabilityZones": ...,
-    }
-```
-
-```python title="Definition"
-class RemoveAvailabilityZonesInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    AvailabilityZones: Sequence[str],
-```
-
-## RemoveAvailabilityZonesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesOutputTypeDef
-
-def get_value() -> RemoveAvailabilityZonesOutputTypeDef:
-    return {
-        "AvailabilityZones": ...,
+        "PolicyTypeDescriptions": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RemoveAvailabilityZonesOutputTypeDef(TypedDict):
-    AvailabilityZones: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribeLoadBalancerPolicyTypesOutputTypeDef(TypedDict):
+    PolicyTypeDescriptions: List[PolicyTypeDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RemoveTagsInputRequestTypeDef
+1. See [:material-code-braces: PolicyTypeDescriptionTypeDef](./type_defs.md#policytypedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAccessPointsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_elb.type_defs import RemoveTagsInputRequestTypeDef
+from mypy_boto3_elb.type_defs import DescribeAccessPointsOutputTypeDef
 
-def get_value() -> RemoveTagsInputRequestTypeDef:
+def get_value() -> DescribeAccessPointsOutputTypeDef:
     return {
-        "LoadBalancerNames": ...,
-        "Tags": ...,
+        "LoadBalancerDescriptions": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RemoveTagsInputRequestTypeDef(TypedDict):
-    LoadBalancerNames: Sequence[str],
-    Tags: Sequence[TagKeyOnlyTypeDef],  # (1)
+class DescribeAccessPointsOutputTypeDef(TypedDict):
+    LoadBalancerDescriptions: List[LoadBalancerDescriptionTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SetLoadBalancerListenerSSLCertificateInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import SetLoadBalancerListenerSSLCertificateInputRequestTypeDef
-
-def get_value() -> SetLoadBalancerListenerSSLCertificateInputRequestTypeDef:
-    return {
-        "LoadBalancerName": ...,
-        "LoadBalancerPort": ...,
-        "SSLCertificateId": ...,
-    }
-```
-
-```python title="Definition"
-class SetLoadBalancerListenerSSLCertificateInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    LoadBalancerPort: int,
-    SSLCertificateId: str,
-```
-
-## SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef
-
-def get_value() -> SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef:
-    return {
-        "LoadBalancerName": ...,
-        "InstancePort": ...,
-        "PolicyNames": ...,
-    }
-```
-
-```python title="Definition"
-class SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    InstancePort: int,
-    PolicyNames: Sequence[str],
-```
-
-## SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
-
-def get_value() -> SetLoadBalancerPoliciesOfListenerInputRequestTypeDef:
-    return {
-        "LoadBalancerName": ...,
-        "LoadBalancerPort": ...,
-        "PolicyNames": ...,
-    }
-```
-
-```python title="Definition"
-class SetLoadBalancerPoliciesOfListenerInputRequestTypeDef(TypedDict):
-    LoadBalancerName: str,
-    LoadBalancerPort: int,
-    PolicyNames: Sequence[str],
-```
-
-## SourceSecurityGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import SourceSecurityGroupTypeDef
-
-def get_value() -> SourceSecurityGroupTypeDef:
-    return {
-        "OwnerAlias": ...,
-    }
-```
-
-```python title="Definition"
-class SourceSecurityGroupTypeDef(TypedDict):
-    OwnerAlias: NotRequired[str],
-    GroupName: NotRequired[str],
-```
-
-## TagDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import TagDescriptionTypeDef
-
-def get_value() -> TagDescriptionTypeDef:
-    return {
-        "LoadBalancerName": ...,
-    }
-```
-
-```python title="Definition"
-class TagDescriptionTypeDef(TypedDict):
-    LoadBalancerName: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagKeyOnlyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import TagKeyOnlyTypeDef
-
-def get_value() -> TagKeyOnlyTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagKeyOnlyTypeDef(TypedDict):
-    Key: NotRequired[str],
-```
-
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: NotRequired[str],
-```
-
-## WaiterConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elb.type_defs import WaiterConfigTypeDef
-
-def get_value() -> WaiterConfigTypeDef:
-    return {
-        "Delay": ...,
-    }
-```
-
-```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
-```
-
+1. See [:material-code-braces: LoadBalancerDescriptionTypeDef](./type_defs.md#loadbalancerdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

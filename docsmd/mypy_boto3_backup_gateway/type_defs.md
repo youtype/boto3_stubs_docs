@@ -25,67 +25,48 @@ class AssociateGatewayToServerInputRequestTypeDef(TypedDict):
     ServerArn: str,
 ```
 
-## AssociateGatewayToServerOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerOutputTypeDef
+from mypy_boto3_backup_gateway.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateGatewayToServerOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateGatewayToServerOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateGatewayInputRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import CreateGatewayInputRequestTypeDef
+from mypy_boto3_backup_gateway.type_defs import TagTypeDef
 
-def get_value() -> CreateGatewayInputRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ActivationKey": ...,
-        "GatewayDisplayName": ...,
-        "GatewayType": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGatewayInputRequestTypeDef(TypedDict):
-    ActivationKey: str,
-    GatewayDisplayName: str,
-    GatewayType: GatewayTypeType,  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateGatewayOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import CreateGatewayOutputTypeDef
-
-def get_value() -> CreateGatewayOutputTypeDef:
-    return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateGatewayOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGatewayInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -102,25 +83,6 @@ class DeleteGatewayInputRequestTypeDef(TypedDict):
     GatewayArn: str,
 ```
 
-## DeleteGatewayOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import DeleteGatewayOutputTypeDef
-
-def get_value() -> DeleteGatewayOutputTypeDef:
-    return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGatewayOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteHypervisorInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -137,25 +99,6 @@ class DeleteHypervisorInputRequestTypeDef(TypedDict):
     HypervisorArn: str,
 ```
 
-## DeleteHypervisorOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import DeleteHypervisorOutputTypeDef
-
-def get_value() -> DeleteHypervisorOutputTypeDef:
-    return {
-        "HypervisorArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteHypervisorOutputTypeDef(TypedDict):
-    HypervisorArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateGatewayFromServerInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -172,25 +115,6 @@ class DisassociateGatewayFromServerInputRequestTypeDef(TypedDict):
     GatewayArn: str,
 ```
 
-## DisassociateGatewayFromServerOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import DisassociateGatewayFromServerOutputTypeDef
-
-def get_value() -> DisassociateGatewayFromServerOutputTypeDef:
-    return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateGatewayFromServerOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GatewayTypeDef
 
 ```python title="Usage Example"
@@ -233,65 +157,24 @@ class HypervisorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: HypervisorStateType](./literals.md#hypervisorstatetype) 
-## ImportHypervisorConfigurationInputRequestTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ImportHypervisorConfigurationInputRequestTypeDef
+from mypy_boto3_backup_gateway.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> ImportHypervisorConfigurationInputRequestTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "Host": ...,
-        "Name": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class ImportHypervisorConfigurationInputRequestTypeDef(TypedDict):
-    Host: str,
-    Name: str,
-    KmsKeyArn: NotRequired[str],
-    Password: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    Username: NotRequired[str],
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ImportHypervisorConfigurationOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ImportHypervisorConfigurationOutputTypeDef
-
-def get_value() -> ImportHypervisorConfigurationOutputTypeDef:
-    return {
-        "HypervisorArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportHypervisorConfigurationOutputTypeDef(TypedDict):
-    HypervisorArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGatewaysInputListGatewaysPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListGatewaysInputListGatewaysPaginateTypeDef
-
-def get_value() -> ListGatewaysInputListGatewaysPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListGatewaysInputListGatewaysPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGatewaysInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -309,45 +192,6 @@ class ListGatewaysInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListGatewaysOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListGatewaysOutputTypeDef
-
-def get_value() -> ListGatewaysOutputTypeDef:
-    return {
-        "Gateways": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGatewaysOutputTypeDef(TypedDict):
-    Gateways: List[GatewayTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GatewayTypeDef](./type_defs.md#gatewaytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListHypervisorsInputListHypervisorsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListHypervisorsInputListHypervisorsPaginateTypeDef
-
-def get_value() -> ListHypervisorsInputListHypervisorsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListHypervisorsInputListHypervisorsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHypervisorsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -365,28 +209,6 @@ class ListHypervisorsInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListHypervisorsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListHypervisorsOutputTypeDef
-
-def get_value() -> ListHypervisorsOutputTypeDef:
-    return {
-        "Hypervisors": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListHypervisorsOutputTypeDef(TypedDict):
-    Hypervisors: List[HypervisorTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: HypervisorTypeDef](./type_defs.md#hypervisortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -403,45 +225,6 @@ class ListTagsForResourceInputRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## ListTagsForResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListTagsForResourceOutputTypeDef
-
-def get_value() -> ListTagsForResourceOutputTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceOutputTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef
-
-def get_value() -> ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualMachinesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -459,44 +242,25 @@ class ListVirtualMachinesInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListVirtualMachinesOutputTypeDef
+## VirtualMachineTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesOutputTypeDef
+from mypy_boto3_backup_gateway.type_defs import VirtualMachineTypeDef
 
-def get_value() -> ListVirtualMachinesOutputTypeDef:
+def get_value() -> VirtualMachineTypeDef:
     return {
-        "NextToken": ...,
-        "VirtualMachines": ...,
-        "ResponseMetadata": ...,
+        "HostName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListVirtualMachinesOutputTypeDef(TypedDict):
-    NextToken: str,
-    VirtualMachines: List[VirtualMachineTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VirtualMachineTypeDef](./type_defs.md#virtualmachinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class VirtualMachineTypeDef(TypedDict):
+    HostName: NotRequired[str],
+    HypervisorId: NotRequired[str],
+    LastBackupDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    Path: NotRequired[str],
+    ResourceArn: NotRequired[str],
 ```
 
 ## PutMaintenanceStartTimeInputRequestTypeDef
@@ -519,105 +283,6 @@ class PutMaintenanceStartTimeInputRequestTypeDef(TypedDict):
     MinuteOfHour: int,
     DayOfMonth: NotRequired[int],
     DayOfWeek: NotRequired[int],
-```
-
-## PutMaintenanceStartTimeOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import PutMaintenanceStartTimeOutputTypeDef
-
-def get_value() -> PutMaintenanceStartTimeOutputTypeDef:
-    return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutMaintenanceStartTimeOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## TagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import TagResourceInputRequestTypeDef
-
-def get_value() -> TagResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import TagResourceOutputTypeDef
-
-def get_value() -> TagResourceOutputTypeDef:
-    return {
-        "ResourceARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceOutputTypeDef(TypedDict):
-    ResourceARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
 ```
 
 ## TestHypervisorConfigurationInputRequestTypeDef
@@ -658,25 +323,6 @@ class UntagResourceInputRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
-## UntagResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import UntagResourceOutputTypeDef
-
-def get_value() -> UntagResourceOutputTypeDef:
-    return {
-        "ResourceARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceOutputTypeDef(TypedDict):
-    ResourceARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGatewayInformationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -694,25 +340,6 @@ class UpdateGatewayInformationInputRequestTypeDef(TypedDict):
     GatewayDisplayName: NotRequired[str],
 ```
 
-## UpdateGatewayInformationOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import UpdateGatewayInformationOutputTypeDef
-
-def get_value() -> UpdateGatewayInformationOutputTypeDef:
-    return {
-        "GatewayArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGatewayInformationOutputTypeDef(TypedDict):
-    GatewayArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateHypervisorInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -732,6 +359,196 @@ class UpdateHypervisorInputRequestTypeDef(TypedDict):
     Username: NotRequired[str],
 ```
 
+## AssociateGatewayToServerOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerOutputTypeDef
+
+def get_value() -> AssociateGatewayToServerOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateGatewayToServerOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGatewayOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import CreateGatewayOutputTypeDef
+
+def get_value() -> CreateGatewayOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGatewayOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGatewayOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import DeleteGatewayOutputTypeDef
+
+def get_value() -> DeleteGatewayOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGatewayOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteHypervisorOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import DeleteHypervisorOutputTypeDef
+
+def get_value() -> DeleteHypervisorOutputTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteHypervisorOutputTypeDef(TypedDict):
+    HypervisorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateGatewayFromServerOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import DisassociateGatewayFromServerOutputTypeDef
+
+def get_value() -> DisassociateGatewayFromServerOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateGatewayFromServerOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportHypervisorConfigurationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ImportHypervisorConfigurationOutputTypeDef
+
+def get_value() -> ImportHypervisorConfigurationOutputTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHypervisorConfigurationOutputTypeDef(TypedDict):
+    HypervisorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMaintenanceStartTimeOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import PutMaintenanceStartTimeOutputTypeDef
+
+def get_value() -> PutMaintenanceStartTimeOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutMaintenanceStartTimeOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import TagResourceOutputTypeDef
+
+def get_value() -> TagResourceOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceOutputTypeDef(TypedDict):
+    ResourceARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UntagResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import UntagResourceOutputTypeDef
+
+def get_value() -> UntagResourceOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceOutputTypeDef(TypedDict):
+    ResourceARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGatewayInformationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import UpdateGatewayInformationOutputTypeDef
+
+def get_value() -> UpdateGatewayInformationOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGatewayInformationOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateHypervisorOutputTypeDef
 
 ```python title="Usage Example"
@@ -751,24 +568,207 @@ class UpdateHypervisorOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VirtualMachineTypeDef
+## CreateGatewayInputRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import VirtualMachineTypeDef
+from mypy_boto3_backup_gateway.type_defs import CreateGatewayInputRequestTypeDef
 
-def get_value() -> VirtualMachineTypeDef:
+def get_value() -> CreateGatewayInputRequestTypeDef:
     return {
-        "HostName": ...,
+        "ActivationKey": ...,
+        "GatewayDisplayName": ...,
+        "GatewayType": ...,
     }
 ```
 
 ```python title="Definition"
-class VirtualMachineTypeDef(TypedDict):
-    HostName: NotRequired[str],
-    HypervisorId: NotRequired[str],
-    LastBackupDate: NotRequired[datetime],
-    Name: NotRequired[str],
-    Path: NotRequired[str],
-    ResourceArn: NotRequired[str],
+class CreateGatewayInputRequestTypeDef(TypedDict):
+    ActivationKey: str,
+    GatewayDisplayName: str,
+    GatewayType: GatewayTypeType,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
+1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ImportHypervisorConfigurationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ImportHypervisorConfigurationInputRequestTypeDef
+
+def get_value() -> ImportHypervisorConfigurationInputRequestTypeDef:
+    return {
+        "Host": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHypervisorConfigurationInputRequestTypeDef(TypedDict):
+    Host: str,
+    Name: str,
+    KmsKeyArn: NotRequired[str],
+    Password: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    Username: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListGatewaysOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListGatewaysOutputTypeDef
+
+def get_value() -> ListGatewaysOutputTypeDef:
+    return {
+        "Gateways": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGatewaysOutputTypeDef(TypedDict):
+    Gateways: List[GatewayTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GatewayTypeDef](./type_defs.md#gatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHypervisorsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListHypervisorsOutputTypeDef
+
+def get_value() -> ListHypervisorsOutputTypeDef:
+    return {
+        "Hypervisors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListHypervisorsOutputTypeDef(TypedDict):
+    Hypervisors: List[HypervisorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HypervisorTypeDef](./type_defs.md#hypervisortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGatewaysInputListGatewaysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListGatewaysInputListGatewaysPaginateTypeDef
+
+def get_value() -> ListGatewaysInputListGatewaysPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGatewaysInputListGatewaysPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListHypervisorsInputListHypervisorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListHypervisorsInputListHypervisorsPaginateTypeDef
+
+def get_value() -> ListHypervisorsInputListHypervisorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListHypervisorsInputListHypervisorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef
+
+def get_value() -> ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListVirtualMachinesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesOutputTypeDef
+
+def get_value() -> ListVirtualMachinesOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "VirtualMachines": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualMachinesOutputTypeDef(TypedDict):
+    NextToken: str,
+    VirtualMachines: List[VirtualMachineTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VirtualMachineTypeDef](./type_defs.md#virtualmachinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -386,6 +386,8 @@ def create_user_settings(
     printAllowed: EnabledTypeType,  # (1)
     uploadAllowed: EnabledTypeType,  # (1)
     clientToken: str = ...,
+    disconnectTimeoutInMinutes: int = ...,
+    idleDisconnectTimeoutInMinutes: int = ...,
     tags: Sequence[TagTypeDef] = ...,  # (6)
 ) -> CreateUserSettingsResponseTypeDef:  # (7)
     ...
@@ -1424,7 +1426,9 @@ def update_user_settings(
     userSettingsArn: str,
     clientToken: str = ...,
     copyAllowed: EnabledTypeType = ...,  # (1)
+    disconnectTimeoutInMinutes: int = ...,
     downloadAllowed: EnabledTypeType = ...,  # (1)
+    idleDisconnectTimeoutInMinutes: int = ...,
     pasteAllowed: EnabledTypeType = ...,  # (1)
     printAllowed: EnabledTypeType = ...,  # (1)
     uploadAllowed: EnabledTypeType = ...,  # (1)

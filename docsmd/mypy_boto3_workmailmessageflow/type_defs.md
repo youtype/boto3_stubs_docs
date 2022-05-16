@@ -23,61 +23,6 @@ class GetRawMessageContentRequestRequestTypeDef(TypedDict):
     messageId: str,
 ```
 
-## GetRawMessageContentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
-
-def get_value() -> GetRawMessageContentResponseTypeDef:
-    return {
-        "messageContent": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRawMessageContentResponseTypeDef(TypedDict):
-    messageContent: StreamingBody,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutRawMessageContentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestRequestTypeDef
-
-def get_value() -> PutRawMessageContentRequestRequestTypeDef:
-    return {
-        "messageId": ...,
-        "content": ...,
-    }
-```
-
-```python title="Definition"
-class PutRawMessageContentRequestRequestTypeDef(TypedDict):
-    messageId: str,
-    content: RawMessageContentTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef) 
-## RawMessageContentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmailmessageflow.type_defs import RawMessageContentTypeDef
-
-def get_value() -> RawMessageContentTypeDef:
-    return {
-        "s3Reference": ...,
-    }
-```
-
-```python title="Definition"
-class RawMessageContentTypeDef(TypedDict):
-    s3Reference: S3ReferenceTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: S3ReferenceTypeDef](./type_defs.md#s3referencetypedef) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -121,3 +66,58 @@ class S3ReferenceTypeDef(TypedDict):
     objectVersion: NotRequired[str],
 ```
 
+## GetRawMessageContentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
+
+def get_value() -> GetRawMessageContentResponseTypeDef:
+    return {
+        "messageContent": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRawMessageContentResponseTypeDef(TypedDict):
+    messageContent: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RawMessageContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmailmessageflow.type_defs import RawMessageContentTypeDef
+
+def get_value() -> RawMessageContentTypeDef:
+    return {
+        "s3Reference": ...,
+    }
+```
+
+```python title="Definition"
+class RawMessageContentTypeDef(TypedDict):
+    s3Reference: S3ReferenceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: S3ReferenceTypeDef](./type_defs.md#s3referencetypedef) 
+## PutRawMessageContentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestRequestTypeDef
+
+def get_value() -> PutRawMessageContentRequestRequestTypeDef:
+    return {
+        "messageId": ...,
+        "content": ...,
+    }
+```
+
+```python title="Definition"
+class PutRawMessageContentRequestRequestTypeDef(TypedDict):
+    messageId: str,
+    content: RawMessageContentTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef) 

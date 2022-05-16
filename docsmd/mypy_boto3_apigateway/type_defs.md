@@ -24,90 +24,47 @@ class AccessLogSettingsTypeDef(TypedDict):
     destinationArn: NotRequired[str],
 ```
 
-## AccountTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import AccountTypeDef
+from mypy_boto3_apigateway.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AccountTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "cloudwatchRoleArn": ...,
-        "throttleSettings": ...,
-        "features": ...,
-        "apiKeyVersion": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AccountTypeDef(TypedDict):
-    cloudwatchRoleArn: str,
-    throttleSettings: ThrottleSettingsTypeDef,  # (1)
-    features: List[str],
-    apiKeyVersion: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ApiKeyIdsTypeDef
+## ThrottleSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ApiKeyIdsTypeDef
+from mypy_boto3_apigateway.type_defs import ThrottleSettingsTypeDef
 
-def get_value() -> ApiKeyIdsTypeDef:
+def get_value() -> ThrottleSettingsTypeDef:
     return {
-        "ids": ...,
-        "warnings": ...,
-        "ResponseMetadata": ...,
+        "burstLimit": ...,
     }
 ```
 
 ```python title="Definition"
-class ApiKeyIdsTypeDef(TypedDict):
-    ids: List[str],
-    warnings: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ThrottleSettingsTypeDef(TypedDict):
+    burstLimit: NotRequired[int],
+    rateLimit: NotRequired[float],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ApiKeyResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ApiKeyResponseMetadataTypeDef
-
-def get_value() -> ApiKeyResponseMetadataTypeDef:
-    return {
-        "id": ...,
-        "value": ...,
-        "name": ...,
-        "customerId": ...,
-        "description": ...,
-        "enabled": ...,
-        "createdDate": ...,
-        "lastUpdatedDate": ...,
-        "stageKeys": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ApiKeyResponseMetadataTypeDef(TypedDict):
-    id: str,
-    value: str,
-    name: str,
-    customerId: str,
-    description: str,
-    enabled: bool,
-    createdDate: datetime,
-    lastUpdatedDate: datetime,
-    stageKeys: List[str],
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApiKeyTypeDef
 
 ```python title="Usage Example"
@@ -133,87 +90,6 @@ class ApiKeyTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
 ```
 
-## ApiKeysTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ApiKeysTypeDef
-
-def get_value() -> ApiKeysTypeDef:
-    return {
-        "warnings": ...,
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ApiKeysTypeDef(TypedDict):
-    warnings: List[str],
-    position: str,
-    items: List[ApiKeyTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApiKeyTypeDef](./type_defs.md#apikeytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ApiStageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ApiStageTypeDef
-
-def get_value() -> ApiStageTypeDef:
-    return {
-        "apiId": ...,
-    }
-```
-
-```python title="Definition"
-class ApiStageTypeDef(TypedDict):
-    apiId: NotRequired[str],
-    stage: NotRequired[str],
-    throttle: NotRequired[Mapping[str, ThrottleSettingsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
-## AuthorizerResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import AuthorizerResponseMetadataTypeDef
-
-def get_value() -> AuthorizerResponseMetadataTypeDef:
-    return {
-        "id": ...,
-        "name": ...,
-        "type": ...,
-        "providerARNs": ...,
-        "authType": ...,
-        "authorizerUri": ...,
-        "authorizerCredentials": ...,
-        "identitySource": ...,
-        "identityValidationExpression": ...,
-        "authorizerResultTtlInSeconds": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AuthorizerResponseMetadataTypeDef(TypedDict):
-    id: str,
-    name: str,
-    type: AuthorizerTypeType,  # (1)
-    providerARNs: List[str],
-    authType: str,
-    authorizerUri: str,
-    authorizerCredentials: str,
-    identitySource: str,
-    identityValidationExpression: str,
-    authorizerResultTtlInSeconds: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AuthorizerTypeType](./literals.md#authorizertypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AuthorizerTypeDef
 
 ```python title="Usage Example"
@@ -240,51 +116,6 @@ class AuthorizerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthorizerTypeType](./literals.md#authorizertypetype) 
-## AuthorizersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import AuthorizersTypeDef
-
-def get_value() -> AuthorizersTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AuthorizersTypeDef(TypedDict):
-    position: str,
-    items: List[AuthorizerTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AuthorizerTypeDef](./type_defs.md#authorizertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BasePathMappingResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import BasePathMappingResponseMetadataTypeDef
-
-def get_value() -> BasePathMappingResponseMetadataTypeDef:
-    return {
-        "basePath": ...,
-        "restApiId": ...,
-        "stage": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BasePathMappingResponseMetadataTypeDef(TypedDict):
-    basePath: str,
-    restApiId: str,
-    stage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BasePathMappingTypeDef
 
 ```python title="Usage Example"
@@ -303,28 +134,6 @@ class BasePathMappingTypeDef(TypedDict):
     stage: NotRequired[str],
 ```
 
-## BasePathMappingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import BasePathMappingsTypeDef
-
-def get_value() -> BasePathMappingsTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BasePathMappingsTypeDef(TypedDict):
-    position: str,
-    items: List[BasePathMappingTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CanarySettingsTypeDef
 
 ```python title="Usage Example"
@@ -344,35 +153,6 @@ class CanarySettingsTypeDef(TypedDict):
     useStageCache: NotRequired[bool],
 ```
 
-## ClientCertificateResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ClientCertificateResponseMetadataTypeDef
-
-def get_value() -> ClientCertificateResponseMetadataTypeDef:
-    return {
-        "clientCertificateId": ...,
-        "description": ...,
-        "pemEncodedCertificate": ...,
-        "createdDate": ...,
-        "expirationDate": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ClientCertificateResponseMetadataTypeDef(TypedDict):
-    clientCertificateId: str,
-    description: str,
-    pemEncodedCertificate: str,
-    createdDate: datetime,
-    expirationDate: datetime,
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClientCertificateTypeDef
 
 ```python title="Usage Example"
@@ -394,52 +174,23 @@ class ClientCertificateTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
 ```
 
-## ClientCertificatesTypeDef
+## StageKeyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ClientCertificatesTypeDef
+from mypy_boto3_apigateway.type_defs import StageKeyTypeDef
 
-def get_value() -> ClientCertificatesTypeDef:
+def get_value() -> StageKeyTypeDef:
     return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
+        "restApiId": ...,
     }
 ```
 
 ```python title="Definition"
-class ClientCertificatesTypeDef(TypedDict):
-    position: str,
-    items: List[ClientCertificateTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class StageKeyTypeDef(TypedDict):
+    restApiId: NotRequired[str],
+    stageName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateApiKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateApiKeyRequestRequestTypeDef
-
-def get_value() -> CreateApiKeyRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateApiKeyRequestRequestTypeDef(TypedDict):
-    name: NotRequired[str],
-    description: NotRequired[str],
-    enabled: NotRequired[bool],
-    generateDistinctId: NotRequired[bool],
-    value: NotRequired[str],
-    stageKeys: NotRequired[Sequence[StageKeyTypeDef]],  # (1)
-    customerId: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: StageKeyTypeDef](./type_defs.md#stagekeytypedef) 
 ## CreateAuthorizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -488,53 +239,45 @@ class CreateBasePathMappingRequestRequestTypeDef(TypedDict):
     stage: NotRequired[str],
 ```
 
-## CreateDeploymentRequestRequestTypeDef
+## DeploymentCanarySettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateDeploymentRequestRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeploymentCanarySettingsTypeDef
 
-def get_value() -> CreateDeploymentRequestRequestTypeDef:
+def get_value() -> DeploymentCanarySettingsTypeDef:
     return {
-        "restApiId": ...,
+        "percentTraffic": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDeploymentRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    stageName: NotRequired[str],
-    stageDescription: NotRequired[str],
-    description: NotRequired[str],
-    cacheClusterEnabled: NotRequired[bool],
-    cacheClusterSize: NotRequired[CacheClusterSizeType],  # (1)
-    variables: NotRequired[Mapping[str, str]],
-    canarySettings: NotRequired[DeploymentCanarySettingsTypeDef],  # (2)
-    tracingEnabled: NotRequired[bool],
+class DeploymentCanarySettingsTypeDef(TypedDict):
+    percentTraffic: NotRequired[float],
+    stageVariableOverrides: NotRequired[Mapping[str, str]],
+    useStageCache: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
-2. See [:material-code-braces: DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef) 
-## CreateDocumentationPartRequestRequestTypeDef
+## DocumentationPartLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateDocumentationPartRequestRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationPartLocationTypeDef
 
-def get_value() -> CreateDocumentationPartRequestRequestTypeDef:
+def get_value() -> DocumentationPartLocationTypeDef:
     return {
-        "restApiId": ...,
-        "location": ...,
-        "properties": ...,
+        "type": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDocumentationPartRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    location: DocumentationPartLocationTypeDef,  # (1)
-    properties: str,
+class DocumentationPartLocationTypeDef(TypedDict):
+    type: DocumentationPartTypeType,  # (1)
+    path: NotRequired[str],
+    method: NotRequired[str],
+    statusCode: NotRequired[str],
+    name: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
+1. See [:material-code-brackets: DocumentationPartTypeType](./literals.md#documentationparttypetype) 
 ## CreateDocumentationVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -555,37 +298,41 @@ class CreateDocumentationVersionRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
 ```
 
-## CreateDomainNameRequestRequestTypeDef
+## EndpointConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateDomainNameRequestRequestTypeDef
+from mypy_boto3_apigateway.type_defs import EndpointConfigurationTypeDef
 
-def get_value() -> CreateDomainNameRequestRequestTypeDef:
+def get_value() -> EndpointConfigurationTypeDef:
     return {
-        "domainName": ...,
+        "types": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDomainNameRequestRequestTypeDef(TypedDict):
-    domainName: str,
-    certificateName: NotRequired[str],
-    certificateBody: NotRequired[str],
-    certificatePrivateKey: NotRequired[str],
-    certificateChain: NotRequired[str],
-    certificateArn: NotRequired[str],
-    regionalCertificateName: NotRequired[str],
-    regionalCertificateArn: NotRequired[str],
-    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (1)
-    tags: NotRequired[Mapping[str, str]],
-    securityPolicy: NotRequired[SecurityPolicyType],  # (2)
-    mutualTlsAuthentication: NotRequired[MutualTlsAuthenticationInputTypeDef],  # (3)
-    ownershipVerificationCertificateArn: NotRequired[str],
+class EndpointConfigurationTypeDef(TypedDict):
+    types: NotRequired[Sequence[EndpointTypeType]],  # (1)
+    vpcEndpointIds: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
-2. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
-3. See [:material-code-braces: MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef) 
+1. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
+## MutualTlsAuthenticationInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import MutualTlsAuthenticationInputTypeDef
+
+def get_value() -> MutualTlsAuthenticationInputTypeDef:
+    return {
+        "truststoreUri": ...,
+    }
+```
+
+```python title="Definition"
+class MutualTlsAuthenticationInputTypeDef(TypedDict):
+    truststoreUri: NotRequired[str],
+    truststoreVersion: NotRequired[str],
+```
+
 ## CreateModelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -647,64 +394,6 @@ class CreateResourceRequestRequestTypeDef(TypedDict):
     pathPart: str,
 ```
 
-## CreateRestApiRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateRestApiRequestRequestTypeDef
-
-def get_value() -> CreateRestApiRequestRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRestApiRequestRequestTypeDef(TypedDict):
-    name: str,
-    description: NotRequired[str],
-    version: NotRequired[str],
-    cloneFrom: NotRequired[str],
-    binaryMediaTypes: NotRequired[Sequence[str]],
-    minimumCompressionSize: NotRequired[int],
-    apiKeySource: NotRequired[ApiKeySourceTypeType],  # (1)
-    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (2)
-    policy: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-    disableExecuteApiEndpoint: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ApiKeySourceTypeType](./literals.md#apikeysourcetypetype) 
-2. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
-## CreateStageRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateStageRequestRequestTypeDef
-
-def get_value() -> CreateStageRequestRequestTypeDef:
-    return {
-        "restApiId": ...,
-        "stageName": ...,
-        "deploymentId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStageRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    stageName: str,
-    deploymentId: str,
-    description: NotRequired[str],
-    cacheClusterEnabled: NotRequired[bool],
-    cacheClusterSize: NotRequired[CacheClusterSizeType],  # (1)
-    variables: NotRequired[Mapping[str, str]],
-    documentationVersion: NotRequired[str],
-    canarySettings: NotRequired[CanarySettingsTypeDef],  # (2)
-    tracingEnabled: NotRequired[bool],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
-2. See [:material-code-braces: CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef) 
 ## CreateUsagePlanKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -725,30 +414,25 @@ class CreateUsagePlanKeyRequestRequestTypeDef(TypedDict):
     keyType: str,
 ```
 
-## CreateUsagePlanRequestRequestTypeDef
+## QuotaSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import CreateUsagePlanRequestRequestTypeDef
+from mypy_boto3_apigateway.type_defs import QuotaSettingsTypeDef
 
-def get_value() -> CreateUsagePlanRequestRequestTypeDef:
+def get_value() -> QuotaSettingsTypeDef:
     return {
-        "name": ...,
+        "limit": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateUsagePlanRequestRequestTypeDef(TypedDict):
-    name: str,
-    description: NotRequired[str],
-    apiStages: NotRequired[Sequence[ApiStageTypeDef]],  # (1)
-    throttle: NotRequired[ThrottleSettingsTypeDef],  # (2)
-    quota: NotRequired[QuotaSettingsTypeDef],  # (3)
-    tags: NotRequired[Mapping[str, str]],
+class QuotaSettingsTypeDef(TypedDict):
+    limit: NotRequired[int],
+    offset: NotRequired[int],
+    period: NotRequired[QuotaPeriodTypeType],  # (1)
 ```
 
-1. See [:material-code-braces: ApiStageTypeDef](./type_defs.md#apistagetypedef) 
-2. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
-3. See [:material-code-braces: QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef) 
+1. See [:material-code-brackets: QuotaPeriodTypeType](./literals.md#quotaperiodtypetype) 
 ## CreateVpcLinkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1148,222 +832,23 @@ class DeleteVpcLinkRequestRequestTypeDef(TypedDict):
     vpcLinkId: str,
 ```
 
-## DeploymentCanarySettingsTypeDef
+## MethodSnapshotTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DeploymentCanarySettingsTypeDef
+from mypy_boto3_apigateway.type_defs import MethodSnapshotTypeDef
 
-def get_value() -> DeploymentCanarySettingsTypeDef:
+def get_value() -> MethodSnapshotTypeDef:
     return {
-        "percentTraffic": ...,
+        "authorizationType": ...,
     }
 ```
 
 ```python title="Definition"
-class DeploymentCanarySettingsTypeDef(TypedDict):
-    percentTraffic: NotRequired[float],
-    stageVariableOverrides: NotRequired[Mapping[str, str]],
-    useStageCache: NotRequired[bool],
+class MethodSnapshotTypeDef(TypedDict):
+    authorizationType: NotRequired[str],
+    apiKeyRequired: NotRequired[bool],
 ```
 
-## DeploymentResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DeploymentResponseMetadataTypeDef
-
-def get_value() -> DeploymentResponseMetadataTypeDef:
-    return {
-        "id": ...,
-        "description": ...,
-        "createdDate": ...,
-        "apiSummary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeploymentResponseMetadataTypeDef(TypedDict):
-    id: str,
-    description: str,
-    createdDate: datetime,
-    apiSummary: Dict[str, Dict[str, MethodSnapshotTypeDef]],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MethodSnapshotTypeDef](./type_defs.md#methodsnapshottypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeploymentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DeploymentTypeDef
-
-def get_value() -> DeploymentTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class DeploymentTypeDef(TypedDict):
-    id: NotRequired[str],
-    description: NotRequired[str],
-    createdDate: NotRequired[datetime],
-    apiSummary: NotRequired[Dict[str, Dict[str, MethodSnapshotTypeDef]]],  # (1)
-```
-
-1. See [:material-code-braces: MethodSnapshotTypeDef](./type_defs.md#methodsnapshottypedef) 
-## DeploymentsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DeploymentsTypeDef
-
-def get_value() -> DeploymentsTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeploymentsTypeDef(TypedDict):
-    position: str,
-    items: List[DeploymentTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DocumentationPartIdsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationPartIdsTypeDef
-
-def get_value() -> DocumentationPartIdsTypeDef:
-    return {
-        "ids": ...,
-        "warnings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationPartIdsTypeDef(TypedDict):
-    ids: List[str],
-    warnings: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DocumentationPartLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationPartLocationTypeDef
-
-def get_value() -> DocumentationPartLocationTypeDef:
-    return {
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationPartLocationTypeDef(TypedDict):
-    type: DocumentationPartTypeType,  # (1)
-    path: NotRequired[str],
-    method: NotRequired[str],
-    statusCode: NotRequired[str],
-    name: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DocumentationPartTypeType](./literals.md#documentationparttypetype) 
-## DocumentationPartResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationPartResponseMetadataTypeDef
-
-def get_value() -> DocumentationPartResponseMetadataTypeDef:
-    return {
-        "id": ...,
-        "location": ...,
-        "properties": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationPartResponseMetadataTypeDef(TypedDict):
-    id: str,
-    location: DocumentationPartLocationTypeDef,  # (1)
-    properties: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DocumentationPartTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationPartTypeDef
-
-def get_value() -> DocumentationPartTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationPartTypeDef(TypedDict):
-    id: NotRequired[str],
-    location: NotRequired[DocumentationPartLocationTypeDef],  # (1)
-    properties: NotRequired[str],
-```
-
-1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
-## DocumentationPartsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationPartsTypeDef
-
-def get_value() -> DocumentationPartsTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationPartsTypeDef(TypedDict):
-    position: str,
-    items: List[DocumentationPartTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DocumentationPartTypeDef](./type_defs.md#documentationparttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DocumentationVersionResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationVersionResponseMetadataTypeDef
-
-def get_value() -> DocumentationVersionResponseMetadataTypeDef:
-    return {
-        "version": ...,
-        "createdDate": ...,
-        "description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentationVersionResponseMetadataTypeDef(TypedDict):
-    version: str,
-    createdDate: datetime,
-    description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DocumentationVersionTypeDef
 
 ```python title="Usage Example"
@@ -1382,182 +867,24 @@ class DocumentationVersionTypeDef(TypedDict):
     description: NotRequired[str],
 ```
 
-## DocumentationVersionsTypeDef
+## MutualTlsAuthenticationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DocumentationVersionsTypeDef
+from mypy_boto3_apigateway.type_defs import MutualTlsAuthenticationTypeDef
 
-def get_value() -> DocumentationVersionsTypeDef:
+def get_value() -> MutualTlsAuthenticationTypeDef:
     return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
+        "truststoreUri": ...,
     }
 ```
 
 ```python title="Definition"
-class DocumentationVersionsTypeDef(TypedDict):
-    position: str,
-    items: List[DocumentationVersionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MutualTlsAuthenticationTypeDef(TypedDict):
+    truststoreUri: NotRequired[str],
+    truststoreVersion: NotRequired[str],
+    truststoreWarnings: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DomainNameResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DomainNameResponseMetadataTypeDef
-
-def get_value() -> DomainNameResponseMetadataTypeDef:
-    return {
-        "domainName": ...,
-        "certificateName": ...,
-        "certificateArn": ...,
-        "certificateUploadDate": ...,
-        "regionalDomainName": ...,
-        "regionalHostedZoneId": ...,
-        "regionalCertificateName": ...,
-        "regionalCertificateArn": ...,
-        "distributionDomainName": ...,
-        "distributionHostedZoneId": ...,
-        "endpointConfiguration": ...,
-        "domainNameStatus": ...,
-        "domainNameStatusMessage": ...,
-        "securityPolicy": ...,
-        "tags": ...,
-        "mutualTlsAuthentication": ...,
-        "ownershipVerificationCertificateArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DomainNameResponseMetadataTypeDef(TypedDict):
-    domainName: str,
-    certificateName: str,
-    certificateArn: str,
-    certificateUploadDate: datetime,
-    regionalDomainName: str,
-    regionalHostedZoneId: str,
-    regionalCertificateName: str,
-    regionalCertificateArn: str,
-    distributionDomainName: str,
-    distributionHostedZoneId: str,
-    endpointConfiguration: EndpointConfigurationTypeDef,  # (1)
-    domainNameStatus: DomainNameStatusType,  # (2)
-    domainNameStatusMessage: str,
-    securityPolicy: SecurityPolicyType,  # (3)
-    tags: Dict[str, str],
-    mutualTlsAuthentication: MutualTlsAuthenticationTypeDef,  # (4)
-    ownershipVerificationCertificateArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
-2. See [:material-code-brackets: DomainNameStatusType](./literals.md#domainnamestatustype) 
-3. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
-4. See [:material-code-braces: MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DomainNameTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DomainNameTypeDef
-
-def get_value() -> DomainNameTypeDef:
-    return {
-        "domainName": ...,
-    }
-```
-
-```python title="Definition"
-class DomainNameTypeDef(TypedDict):
-    domainName: NotRequired[str],
-    certificateName: NotRequired[str],
-    certificateArn: NotRequired[str],
-    certificateUploadDate: NotRequired[datetime],
-    regionalDomainName: NotRequired[str],
-    regionalHostedZoneId: NotRequired[str],
-    regionalCertificateName: NotRequired[str],
-    regionalCertificateArn: NotRequired[str],
-    distributionDomainName: NotRequired[str],
-    distributionHostedZoneId: NotRequired[str],
-    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (1)
-    domainNameStatus: NotRequired[DomainNameStatusType],  # (2)
-    domainNameStatusMessage: NotRequired[str],
-    securityPolicy: NotRequired[SecurityPolicyType],  # (3)
-    tags: NotRequired[Dict[str, str]],
-    mutualTlsAuthentication: NotRequired[MutualTlsAuthenticationTypeDef],  # (4)
-    ownershipVerificationCertificateArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
-2. See [:material-code-brackets: DomainNameStatusType](./literals.md#domainnamestatustype) 
-3. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
-4. See [:material-code-braces: MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef) 
-## DomainNamesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import DomainNamesTypeDef
-
-def get_value() -> DomainNamesTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DomainNamesTypeDef(TypedDict):
-    position: str,
-    items: List[DomainNameTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainNameTypeDef](./type_defs.md#domainnametypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EndpointConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import EndpointConfigurationTypeDef
-
-def get_value() -> EndpointConfigurationTypeDef:
-    return {
-        "types": ...,
-    }
-```
-
-```python title="Definition"
-class EndpointConfigurationTypeDef(TypedDict):
-    types: NotRequired[Sequence[EndpointTypeType]],  # (1)
-    vpcEndpointIds: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
-## ExportResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ExportResponseTypeDef
-
-def get_value() -> ExportResponseTypeDef:
-    return {
-        "contentType": ...,
-        "contentDisposition": ...,
-        "body": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ExportResponseTypeDef(TypedDict):
-    contentType: str,
-    contentDisposition: str,
-    body: StreamingBody,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FlushStageAuthorizersCacheRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1594,34 +921,6 @@ class FlushStageCacheRequestRequestTypeDef(TypedDict):
     stageName: str,
 ```
 
-## GatewayResponseResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GatewayResponseResponseMetadataTypeDef
-
-def get_value() -> GatewayResponseResponseMetadataTypeDef:
-    return {
-        "responseType": ...,
-        "statusCode": ...,
-        "responseParameters": ...,
-        "responseTemplates": ...,
-        "defaultResponse": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GatewayResponseResponseMetadataTypeDef(TypedDict):
-    responseType: GatewayResponseTypeType,  # (1)
-    statusCode: str,
-    responseParameters: Dict[str, str],
-    responseTemplates: Dict[str, str],
-    defaultResponse: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GatewayResponseTypeDef
 
 ```python title="Usage Example"
@@ -1643,28 +942,6 @@ class GatewayResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
-## GatewayResponsesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GatewayResponsesTypeDef
-
-def get_value() -> GatewayResponsesTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GatewayResponsesTypeDef(TypedDict):
-    position: str,
-    items: List[GatewayResponseTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateClientCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1699,26 +976,24 @@ class GetApiKeyRequestRequestTypeDef(TypedDict):
     includeValue: NotRequired[bool],
 ```
 
-## GetApiKeysRequestGetApiKeysPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetApiKeysRequestGetApiKeysPaginateTypeDef
+from mypy_boto3_apigateway.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> GetApiKeysRequestGetApiKeysPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "nameQuery": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class GetApiKeysRequestGetApiKeysPaginateTypeDef(TypedDict):
-    nameQuery: NotRequired[str],
-    customerId: NotRequired[str],
-    includeValues: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetApiKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1757,24 +1032,6 @@ class GetAuthorizerRequestRequestTypeDef(TypedDict):
     authorizerId: str,
 ```
 
-## GetAuthorizersRequestGetAuthorizersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetAuthorizersRequestGetAuthorizersPaginateTypeDef
-
-def get_value() -> GetAuthorizersRequestGetAuthorizersPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetAuthorizersRequestGetAuthorizersPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAuthorizersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1811,24 +1068,6 @@ class GetBasePathMappingRequestRequestTypeDef(TypedDict):
     basePath: str,
 ```
 
-## GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef
-
-def get_value() -> GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef:
-    return {
-        "domainName": ...,
-    }
-```
-
-```python title="Definition"
-class GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef(TypedDict):
-    domainName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetBasePathMappingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1863,23 +1102,6 @@ class GetClientCertificateRequestRequestTypeDef(TypedDict):
     clientCertificateId: str,
 ```
 
-## GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef
-
-def get_value() -> GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetClientCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1916,24 +1138,6 @@ class GetDeploymentRequestRequestTypeDef(TypedDict):
     embed: NotRequired[Sequence[str]],
 ```
 
-## GetDeploymentsRequestGetDeploymentsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetDeploymentsRequestGetDeploymentsPaginateTypeDef
-
-def get_value() -> GetDeploymentsRequestGetDeploymentsPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDeploymentsRequestGetDeploymentsPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDeploymentsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1970,30 +1174,6 @@ class GetDocumentationPartRequestRequestTypeDef(TypedDict):
     documentationPartId: str,
 ```
 
-## GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef
-
-def get_value() -> GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef(TypedDict):
-    restApiId: str,
-    type: NotRequired[DocumentationPartTypeType],  # (1)
-    nameQuery: NotRequired[str],
-    path: NotRequired[str],
-    locationStatus: NotRequired[LocationStatusTypeType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: DocumentationPartTypeType](./literals.md#documentationparttypetype) 
-2. See [:material-code-brackets: LocationStatusTypeType](./literals.md#locationstatustypetype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDocumentationPartsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2036,24 +1216,6 @@ class GetDocumentationVersionRequestRequestTypeDef(TypedDict):
     documentationVersion: str,
 ```
 
-## GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef
-
-def get_value() -> GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDocumentationVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2088,23 +1250,6 @@ class GetDomainNameRequestRequestTypeDef(TypedDict):
     domainName: str,
 ```
 
-## GetDomainNamesRequestGetDomainNamesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetDomainNamesRequestGetDomainNamesPaginateTypeDef
-
-def get_value() -> GetDomainNamesRequestGetDomainNamesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetDomainNamesRequestGetDomainNamesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDomainNamesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2163,24 +1308,6 @@ class GetGatewayResponseRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
-## GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef
-
-def get_value() -> GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetGatewayResponsesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2320,24 +1447,6 @@ class GetModelTemplateRequestRequestTypeDef(TypedDict):
     modelName: str,
 ```
 
-## GetModelsRequestGetModelsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetModelsRequestGetModelsPaginateTypeDef
-
-def get_value() -> GetModelsRequestGetModelsPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetModelsRequestGetModelsPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetModelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2374,24 +1483,6 @@ class GetRequestValidatorRequestRequestTypeDef(TypedDict):
     requestValidatorId: str,
 ```
 
-## GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef
-
-def get_value() -> GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef(TypedDict):
-    restApiId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetRequestValidatorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2429,25 +1520,6 @@ class GetResourceRequestRequestTypeDef(TypedDict):
     embed: NotRequired[Sequence[str]],
 ```
 
-## GetResourcesRequestGetResourcesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetResourcesRequestGetResourcesPaginateTypeDef
-
-def get_value() -> GetResourcesRequestGetResourcesPaginateTypeDef:
-    return {
-        "restApiId": ...,
-    }
-```
-
-```python title="Definition"
-class GetResourcesRequestGetResourcesPaginateTypeDef(TypedDict):
-    restApiId: str,
-    embed: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourcesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2483,23 +1555,6 @@ class GetRestApiRequestRequestTypeDef(TypedDict):
     restApiId: str,
 ```
 
-## GetRestApisRequestGetRestApisPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetRestApisRequestGetRestApisPaginateTypeDef
-
-def get_value() -> GetRestApisRequestGetRestApisPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetRestApisRequestGetRestApisPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetRestApisRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2554,23 +1609,6 @@ class GetSdkTypeRequestRequestTypeDef(TypedDict):
     id: str,
 ```
 
-## GetSdkTypesRequestGetSdkTypesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetSdkTypesRequestGetSdkTypesPaginateTypeDef
-
-def get_value() -> GetSdkTypesRequestGetSdkTypesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetSdkTypesRequestGetSdkTypesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSdkTypesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2659,25 +1697,6 @@ class GetUsagePlanKeyRequestRequestTypeDef(TypedDict):
     keyId: str,
 ```
 
-## GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef
-
-def get_value() -> GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef:
-    return {
-        "usagePlanId": ...,
-    }
-```
-
-```python title="Definition"
-class GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef(TypedDict):
-    usagePlanId: str,
-    nameQuery: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetUsagePlanKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2713,24 +1732,6 @@ class GetUsagePlanRequestRequestTypeDef(TypedDict):
     usagePlanId: str,
 ```
 
-## GetUsagePlansRequestGetUsagePlansPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetUsagePlansRequestGetUsagePlansPaginateTypeDef
-
-def get_value() -> GetUsagePlansRequestGetUsagePlansPaginateTypeDef:
-    return {
-        "keyId": ...,
-    }
-```
-
-```python title="Definition"
-class GetUsagePlansRequestGetUsagePlansPaginateTypeDef(TypedDict):
-    keyId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetUsagePlansRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2749,29 +1750,6 @@ class GetUsagePlansRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## GetUsageRequestGetUsagePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetUsageRequestGetUsagePaginateTypeDef
-
-def get_value() -> GetUsageRequestGetUsagePaginateTypeDef:
-    return {
-        "usagePlanId": ...,
-        "startDate": ...,
-        "endDate": ...,
-    }
-```
-
-```python title="Definition"
-class GetUsageRequestGetUsagePaginateTypeDef(TypedDict):
-    usagePlanId: str,
-    startDate: str,
-    endDate: str,
-    keyId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetUsageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2811,23 +1789,6 @@ class GetVpcLinkRequestRequestTypeDef(TypedDict):
     vpcLinkId: str,
 ```
 
-## GetVpcLinksRequestGetVpcLinksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import GetVpcLinksRequestGetVpcLinksPaginateTypeDef
-
-def get_value() -> GetVpcLinksRequestGetVpcLinksPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetVpcLinksRequestGetVpcLinksPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetVpcLinksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2904,86 +1865,6 @@ class ImportRestApiRequestRequestTypeDef(TypedDict):
     parameters: NotRequired[Mapping[str, str]],
 ```
 
-## IntegrationResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import IntegrationResponseMetadataTypeDef
-
-def get_value() -> IntegrationResponseMetadataTypeDef:
-    return {
-        "type": ...,
-        "httpMethod": ...,
-        "uri": ...,
-        "connectionType": ...,
-        "connectionId": ...,
-        "credentials": ...,
-        "requestParameters": ...,
-        "requestTemplates": ...,
-        "passthroughBehavior": ...,
-        "contentHandling": ...,
-        "timeoutInMillis": ...,
-        "cacheNamespace": ...,
-        "cacheKeyParameters": ...,
-        "integrationResponses": ...,
-        "tlsConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class IntegrationResponseMetadataTypeDef(TypedDict):
-    type: IntegrationTypeType,  # (1)
-    httpMethod: str,
-    uri: str,
-    connectionType: ConnectionTypeType,  # (2)
-    connectionId: str,
-    credentials: str,
-    requestParameters: Dict[str, str],
-    requestTemplates: Dict[str, str],
-    passthroughBehavior: str,
-    contentHandling: ContentHandlingStrategyType,  # (3)
-    timeoutInMillis: int,
-    cacheNamespace: str,
-    cacheKeyParameters: List[str],
-    integrationResponses: Dict[str, IntegrationResponseTypeDef],  # (4)
-    tlsConfig: TlsConfigTypeDef,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
-2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
-3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
-4. See [:material-code-braces: IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef) 
-5. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IntegrationResponseResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import IntegrationResponseResponseMetadataTypeDef
-
-def get_value() -> IntegrationResponseResponseMetadataTypeDef:
-    return {
-        "statusCode": ...,
-        "selectionPattern": ...,
-        "responseParameters": ...,
-        "responseTemplates": ...,
-        "contentHandling": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class IntegrationResponseResponseMetadataTypeDef(TypedDict):
-    statusCode: str,
-    selectionPattern: str,
-    responseParameters: Dict[str, str],
-    responseTemplates: Dict[str, str],
-    contentHandling: ContentHandlingStrategyType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IntegrationResponseTypeDef
 
 ```python title="Usage Example"
@@ -3005,105 +1886,22 @@ class IntegrationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
-## IntegrationTypeDef
+## TlsConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import IntegrationTypeDef
+from mypy_boto3_apigateway.type_defs import TlsConfigTypeDef
 
-def get_value() -> IntegrationTypeDef:
+def get_value() -> TlsConfigTypeDef:
     return {
-        "type": ...,
+        "insecureSkipVerification": ...,
     }
 ```
 
 ```python title="Definition"
-class IntegrationTypeDef(TypedDict):
-    type: NotRequired[IntegrationTypeType],  # (1)
-    httpMethod: NotRequired[str],
-    uri: NotRequired[str],
-    connectionType: NotRequired[ConnectionTypeType],  # (2)
-    connectionId: NotRequired[str],
-    credentials: NotRequired[str],
-    requestParameters: NotRequired[Dict[str, str]],
-    requestTemplates: NotRequired[Dict[str, str]],
-    passthroughBehavior: NotRequired[str],
-    contentHandling: NotRequired[ContentHandlingStrategyType],  # (3)
-    timeoutInMillis: NotRequired[int],
-    cacheNamespace: NotRequired[str],
-    cacheKeyParameters: NotRequired[List[str]],
-    integrationResponses: NotRequired[Dict[str, IntegrationResponseTypeDef]],  # (4)
-    tlsConfig: NotRequired[TlsConfigTypeDef],  # (5)
+class TlsConfigTypeDef(TypedDict):
+    insecureSkipVerification: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
-2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
-3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
-4. See [:material-code-braces: IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef) 
-5. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
-## MethodResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MethodResponseMetadataTypeDef
-
-def get_value() -> MethodResponseMetadataTypeDef:
-    return {
-        "httpMethod": ...,
-        "authorizationType": ...,
-        "authorizerId": ...,
-        "apiKeyRequired": ...,
-        "requestValidatorId": ...,
-        "operationName": ...,
-        "requestParameters": ...,
-        "requestModels": ...,
-        "methodResponses": ...,
-        "methodIntegration": ...,
-        "authorizationScopes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class MethodResponseMetadataTypeDef(TypedDict):
-    httpMethod: str,
-    authorizationType: str,
-    authorizerId: str,
-    apiKeyRequired: bool,
-    requestValidatorId: str,
-    operationName: str,
-    requestParameters: Dict[str, bool],
-    requestModels: Dict[str, str],
-    methodResponses: Dict[str, MethodResponseTypeDef],  # (1)
-    methodIntegration: IntegrationTypeDef,  # (2)
-    authorizationScopes: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: MethodResponseTypeDef](./type_defs.md#methodresponsetypedef) 
-2. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MethodResponseResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MethodResponseResponseMetadataTypeDef
-
-def get_value() -> MethodResponseResponseMetadataTypeDef:
-    return {
-        "statusCode": ...,
-        "responseParameters": ...,
-        "responseModels": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class MethodResponseResponseMetadataTypeDef(TypedDict):
-    statusCode: str,
-    responseParameters: Dict[str, bool],
-    responseModels: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MethodResponseTypeDef
 
 ```python title="Usage Example"
@@ -3148,78 +1946,6 @@ class MethodSettingTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UnauthorizedCacheControlHeaderStrategyType](./literals.md#unauthorizedcachecontrolheaderstrategytype) 
-## MethodSnapshotTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MethodSnapshotTypeDef
-
-def get_value() -> MethodSnapshotTypeDef:
-    return {
-        "authorizationType": ...,
-    }
-```
-
-```python title="Definition"
-class MethodSnapshotTypeDef(TypedDict):
-    authorizationType: NotRequired[str],
-    apiKeyRequired: NotRequired[bool],
-```
-
-## MethodTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MethodTypeDef
-
-def get_value() -> MethodTypeDef:
-    return {
-        "httpMethod": ...,
-    }
-```
-
-```python title="Definition"
-class MethodTypeDef(TypedDict):
-    httpMethod: NotRequired[str],
-    authorizationType: NotRequired[str],
-    authorizerId: NotRequired[str],
-    apiKeyRequired: NotRequired[bool],
-    requestValidatorId: NotRequired[str],
-    operationName: NotRequired[str],
-    requestParameters: NotRequired[Dict[str, bool]],
-    requestModels: NotRequired[Dict[str, str]],
-    methodResponses: NotRequired[Dict[str, MethodResponseTypeDef]],  # (1)
-    methodIntegration: NotRequired[IntegrationTypeDef],  # (2)
-    authorizationScopes: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: MethodResponseTypeDef](./type_defs.md#methodresponsetypedef) 
-2. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
-## ModelResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ModelResponseMetadataTypeDef
-
-def get_value() -> ModelResponseMetadataTypeDef:
-    return {
-        "id": ...,
-        "name": ...,
-        "description": ...,
-        "schema": ...,
-        "contentType": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ModelResponseMetadataTypeDef(TypedDict):
-    id: str,
-    name: str,
-    description: str,
-    schema: str,
-    contentType: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModelTypeDef
 
 ```python title="Usage Example"
@@ -3238,81 +1964,6 @@ class ModelTypeDef(TypedDict):
     description: NotRequired[str],
     schema: NotRequired[str],
     contentType: NotRequired[str],
-```
-
-## ModelsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ModelsTypeDef
-
-def get_value() -> ModelsTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ModelsTypeDef(TypedDict):
-    position: str,
-    items: List[ModelTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MutualTlsAuthenticationInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MutualTlsAuthenticationInputTypeDef
-
-def get_value() -> MutualTlsAuthenticationInputTypeDef:
-    return {
-        "truststoreUri": ...,
-    }
-```
-
-```python title="Definition"
-class MutualTlsAuthenticationInputTypeDef(TypedDict):
-    truststoreUri: NotRequired[str],
-    truststoreVersion: NotRequired[str],
-```
-
-## MutualTlsAuthenticationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import MutualTlsAuthenticationTypeDef
-
-def get_value() -> MutualTlsAuthenticationTypeDef:
-    return {
-        "truststoreUri": ...,
-    }
-```
-
-```python title="Definition"
-class MutualTlsAuthenticationTypeDef(TypedDict):
-    truststoreUri: NotRequired[str],
-    truststoreVersion: NotRequired[str],
-    truststoreWarnings: NotRequired[List[str]],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## PatchOperationTypeDef
@@ -3357,45 +2008,6 @@ class PutGatewayResponseRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
-## PutIntegrationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import PutIntegrationRequestRequestTypeDef
-
-def get_value() -> PutIntegrationRequestRequestTypeDef:
-    return {
-        "restApiId": ...,
-        "resourceId": ...,
-        "httpMethod": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class PutIntegrationRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    resourceId: str,
-    httpMethod: str,
-    type: IntegrationTypeType,  # (1)
-    integrationHttpMethod: NotRequired[str],
-    uri: NotRequired[str],
-    connectionType: NotRequired[ConnectionTypeType],  # (2)
-    connectionId: NotRequired[str],
-    credentials: NotRequired[str],
-    requestParameters: NotRequired[Mapping[str, str]],
-    requestTemplates: NotRequired[Mapping[str, str]],
-    passthroughBehavior: NotRequired[str],
-    cacheNamespace: NotRequired[str],
-    cacheKeyParameters: NotRequired[Sequence[str]],
-    contentHandling: NotRequired[ContentHandlingStrategyType],  # (3)
-    timeoutInMillis: NotRequired[int],
-    tlsConfig: NotRequired[TlsConfigTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
-2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
-3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
-4. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
 ## PutIntegrationResponseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3498,25 +2110,494 @@ class PutRestApiRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PutModeType](./literals.md#putmodetype) 
-## QuotaSettingsTypeDef
+## RequestValidatorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import QuotaSettingsTypeDef
+from mypy_boto3_apigateway.type_defs import RequestValidatorTypeDef
 
-def get_value() -> QuotaSettingsTypeDef:
+def get_value() -> RequestValidatorTypeDef:
     return {
-        "limit": ...,
+        "id": ...,
     }
 ```
 
 ```python title="Definition"
-class QuotaSettingsTypeDef(TypedDict):
-    limit: NotRequired[int],
-    offset: NotRequired[int],
-    period: NotRequired[QuotaPeriodTypeType],  # (1)
+class RequestValidatorTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    validateRequestBody: NotRequired[bool],
+    validateRequestParameters: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: QuotaPeriodTypeType](./literals.md#quotaperiodtypetype) 
+## SdkConfigurationPropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import SdkConfigurationPropertyTypeDef
+
+def get_value() -> SdkConfigurationPropertyTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SdkConfigurationPropertyTypeDef(TypedDict):
+    name: NotRequired[str],
+    friendlyName: NotRequired[str],
+    description: NotRequired[str],
+    required: NotRequired[bool],
+    defaultValue: NotRequired[str],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## TestInvokeAuthorizerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
+
+def get_value() -> TestInvokeAuthorizerRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+        "authorizerId": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeAuthorizerRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    authorizerId: str,
+    headers: NotRequired[Mapping[str, str]],
+    multiValueHeaders: NotRequired[Mapping[str, Sequence[str]]],
+    pathWithQueryString: NotRequired[str],
+    body: NotRequired[str],
+    stageVariables: NotRequired[Mapping[str, str]],
+    additionalContext: NotRequired[Mapping[str, str]],
+```
+
+## TestInvokeMethodRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TestInvokeMethodRequestRequestTypeDef
+
+def get_value() -> TestInvokeMethodRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+        "resourceId": ...,
+        "httpMethod": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeMethodRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    pathWithQueryString: NotRequired[str],
+    body: NotRequired[str],
+    headers: NotRequired[Mapping[str, str]],
+    multiValueHeaders: NotRequired[Mapping[str, Sequence[str]]],
+    clientCertificateId: NotRequired[str],
+    stageVariables: NotRequired[Mapping[str, str]],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UsagePlanKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import UsagePlanKeyTypeDef
+
+def get_value() -> UsagePlanKeyTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class UsagePlanKeyTypeDef(TypedDict):
+    id: NotRequired[str],
+    type: NotRequired[str],
+    value: NotRequired[str],
+    name: NotRequired[str],
+```
+
+## VpcLinkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import VpcLinkTypeDef
+
+def get_value() -> VpcLinkTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class VpcLinkTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    targetArns: NotRequired[List[str]],
+    status: NotRequired[VpcLinkStatusType],  # (1)
+    statusMessage: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: VpcLinkStatusType](./literals.md#vpclinkstatustype) 
+## ApiKeyIdsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ApiKeyIdsTypeDef
+
+def get_value() -> ApiKeyIdsTypeDef:
+    return {
+        "ids": ...,
+        "warnings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ApiKeyIdsTypeDef(TypedDict):
+    ids: List[str],
+    warnings: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ApiKeyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ApiKeyResponseMetadataTypeDef
+
+def get_value() -> ApiKeyResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "value": ...,
+        "name": ...,
+        "customerId": ...,
+        "description": ...,
+        "enabled": ...,
+        "createdDate": ...,
+        "lastUpdatedDate": ...,
+        "stageKeys": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ApiKeyResponseMetadataTypeDef(TypedDict):
+    id: str,
+    value: str,
+    name: str,
+    customerId: str,
+    description: str,
+    enabled: bool,
+    createdDate: datetime,
+    lastUpdatedDate: datetime,
+    stageKeys: List[str],
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AuthorizerResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import AuthorizerResponseMetadataTypeDef
+
+def get_value() -> AuthorizerResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "type": ...,
+        "providerARNs": ...,
+        "authType": ...,
+        "authorizerUri": ...,
+        "authorizerCredentials": ...,
+        "identitySource": ...,
+        "identityValidationExpression": ...,
+        "authorizerResultTtlInSeconds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AuthorizerResponseMetadataTypeDef(TypedDict):
+    id: str,
+    name: str,
+    type: AuthorizerTypeType,  # (1)
+    providerARNs: List[str],
+    authType: str,
+    authorizerUri: str,
+    authorizerCredentials: str,
+    identitySource: str,
+    identityValidationExpression: str,
+    authorizerResultTtlInSeconds: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AuthorizerTypeType](./literals.md#authorizertypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BasePathMappingResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import BasePathMappingResponseMetadataTypeDef
+
+def get_value() -> BasePathMappingResponseMetadataTypeDef:
+    return {
+        "basePath": ...,
+        "restApiId": ...,
+        "stage": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BasePathMappingResponseMetadataTypeDef(TypedDict):
+    basePath: str,
+    restApiId: str,
+    stage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ClientCertificateResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ClientCertificateResponseMetadataTypeDef
+
+def get_value() -> ClientCertificateResponseMetadataTypeDef:
+    return {
+        "clientCertificateId": ...,
+        "description": ...,
+        "pemEncodedCertificate": ...,
+        "createdDate": ...,
+        "expirationDate": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ClientCertificateResponseMetadataTypeDef(TypedDict):
+    clientCertificateId: str,
+    description: str,
+    pemEncodedCertificate: str,
+    createdDate: datetime,
+    expirationDate: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DocumentationPartIdsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DocumentationPartIdsTypeDef
+
+def get_value() -> DocumentationPartIdsTypeDef:
+    return {
+        "ids": ...,
+        "warnings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentationPartIdsTypeDef(TypedDict):
+    ids: List[str],
+    warnings: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DocumentationVersionResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DocumentationVersionResponseMetadataTypeDef
+
+def get_value() -> DocumentationVersionResponseMetadataTypeDef:
+    return {
+        "version": ...,
+        "createdDate": ...,
+        "description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentationVersionResponseMetadataTypeDef(TypedDict):
+    version: str,
+    createdDate: datetime,
+    description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ExportResponseTypeDef
+
+def get_value() -> ExportResponseTypeDef:
+    return {
+        "contentType": ...,
+        "contentDisposition": ...,
+        "body": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExportResponseTypeDef(TypedDict):
+    contentType: str,
+    contentDisposition: str,
+    body: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GatewayResponseResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GatewayResponseResponseMetadataTypeDef
+
+def get_value() -> GatewayResponseResponseMetadataTypeDef:
+    return {
+        "responseType": ...,
+        "statusCode": ...,
+        "responseParameters": ...,
+        "responseTemplates": ...,
+        "defaultResponse": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GatewayResponseResponseMetadataTypeDef(TypedDict):
+    responseType: GatewayResponseTypeType,  # (1)
+    statusCode: str,
+    responseParameters: Dict[str, str],
+    responseTemplates: Dict[str, str],
+    defaultResponse: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IntegrationResponseResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import IntegrationResponseResponseMetadataTypeDef
+
+def get_value() -> IntegrationResponseResponseMetadataTypeDef:
+    return {
+        "statusCode": ...,
+        "selectionPattern": ...,
+        "responseParameters": ...,
+        "responseTemplates": ...,
+        "contentHandling": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class IntegrationResponseResponseMetadataTypeDef(TypedDict):
+    statusCode: str,
+    selectionPattern: str,
+    responseParameters: Dict[str, str],
+    responseTemplates: Dict[str, str],
+    contentHandling: ContentHandlingStrategyType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MethodResponseResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import MethodResponseResponseMetadataTypeDef
+
+def get_value() -> MethodResponseResponseMetadataTypeDef:
+    return {
+        "statusCode": ...,
+        "responseParameters": ...,
+        "responseModels": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class MethodResponseResponseMetadataTypeDef(TypedDict):
+    statusCode: str,
+    responseParameters: Dict[str, bool],
+    responseModels: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ModelResponseMetadataTypeDef
+
+def get_value() -> ModelResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "description": ...,
+        "schema": ...,
+        "contentType": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModelResponseMetadataTypeDef(TypedDict):
+    id: str,
+    name: str,
+    description: str,
+    schema: str,
+    contentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RequestValidatorResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3542,102 +2623,286 @@ class RequestValidatorResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RequestValidatorTypeDef
+## SdkResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import RequestValidatorTypeDef
+from mypy_boto3_apigateway.type_defs import SdkResponseTypeDef
 
-def get_value() -> RequestValidatorTypeDef:
+def get_value() -> SdkResponseTypeDef:
     return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class RequestValidatorTypeDef(TypedDict):
-    id: NotRequired[str],
-    name: NotRequired[str],
-    validateRequestBody: NotRequired[bool],
-    validateRequestParameters: NotRequired[bool],
-```
-
-## RequestValidatorsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import RequestValidatorsTypeDef
-
-def get_value() -> RequestValidatorsTypeDef:
-    return {
-        "position": ...,
-        "items": ...,
+        "contentType": ...,
+        "contentDisposition": ...,
+        "body": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RequestValidatorsTypeDef(TypedDict):
-    position: str,
-    items: List[RequestValidatorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SdkResponseTypeDef(TypedDict):
+    contentType: str,
+    contentDisposition: str,
+    body: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResourceResponseMetadataTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ResourceResponseMetadataTypeDef
+from mypy_boto3_apigateway.type_defs import TagsTypeDef
 
-def get_value() -> ResourceResponseMetadataTypeDef:
+def get_value() -> TagsTypeDef:
     return {
-        "id": ...,
-        "parentId": ...,
-        "pathPart": ...,
-        "path": ...,
-        "resourceMethods": ...,
+        "tags": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResourceResponseMetadataTypeDef(TypedDict):
+class TagsTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TemplateTypeDef
+
+def get_value() -> TemplateTypeDef:
+    return {
+        "value": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateTypeDef(TypedDict):
+    value: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestInvokeAuthorizerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerResponseTypeDef
+
+def get_value() -> TestInvokeAuthorizerResponseTypeDef:
+    return {
+        "clientStatus": ...,
+        "log": ...,
+        "latency": ...,
+        "principalId": ...,
+        "policy": ...,
+        "authorization": ...,
+        "claims": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeAuthorizerResponseTypeDef(TypedDict):
+    clientStatus: int,
+    log: str,
+    latency: int,
+    principalId: str,
+    policy: str,
+    authorization: Dict[str, List[str]],
+    claims: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestInvokeMethodResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import TestInvokeMethodResponseTypeDef
+
+def get_value() -> TestInvokeMethodResponseTypeDef:
+    return {
+        "status": ...,
+        "body": ...,
+        "headers": ...,
+        "multiValueHeaders": ...,
+        "log": ...,
+        "latency": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestInvokeMethodResponseTypeDef(TypedDict):
+    status: int,
+    body: str,
+    headers: Dict[str, str],
+    multiValueHeaders: Dict[str, List[str]],
+    log: str,
+    latency: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UsagePlanKeyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import UsagePlanKeyResponseMetadataTypeDef
+
+def get_value() -> UsagePlanKeyResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "type": ...,
+        "value": ...,
+        "name": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UsagePlanKeyResponseMetadataTypeDef(TypedDict):
     id: str,
-    parentId: str,
-    pathPart: str,
-    path: str,
-    resourceMethods: Dict[str, MethodTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    type: str,
+    value: str,
+    name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: MethodTypeDef](./type_defs.md#methodtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResourceTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UsageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ResourceTypeDef
+from mypy_boto3_apigateway.type_defs import UsageTypeDef
 
-def get_value() -> ResourceTypeDef:
+def get_value() -> UsageTypeDef:
     return {
-        "id": ...,
+        "usagePlanId": ...,
+        "startDate": ...,
+        "endDate": ...,
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResourceTypeDef(TypedDict):
-    id: NotRequired[str],
-    parentId: NotRequired[str],
-    pathPart: NotRequired[str],
-    path: NotRequired[str],
-    resourceMethods: NotRequired[Dict[str, MethodTypeDef]],  # (1)
+class UsageTypeDef(TypedDict):
+    usagePlanId: str,
+    startDate: str,
+    endDate: str,
+    position: str,
+    items: Dict[str, List[List[int]]],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: MethodTypeDef](./type_defs.md#methodtypedef) 
-## ResourcesTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VpcLinkResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ResourcesTypeDef
+from mypy_boto3_apigateway.type_defs import VpcLinkResponseMetadataTypeDef
 
-def get_value() -> ResourcesTypeDef:
+def get_value() -> VpcLinkResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "description": ...,
+        "targetArns": ...,
+        "status": ...,
+        "statusMessage": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class VpcLinkResponseMetadataTypeDef(TypedDict):
+    id: str,
+    name: str,
+    description: str,
+    targetArns: List[str],
+    status: VpcLinkStatusType,  # (1)
+    statusMessage: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: VpcLinkStatusType](./literals.md#vpclinkstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AccountTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import AccountTypeDef
+
+def get_value() -> AccountTypeDef:
+    return {
+        "cloudwatchRoleArn": ...,
+        "throttleSettings": ...,
+        "features": ...,
+        "apiKeyVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AccountTypeDef(TypedDict):
+    cloudwatchRoleArn: str,
+    throttleSettings: ThrottleSettingsTypeDef,  # (1)
+    features: List[str],
+    apiKeyVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ApiStageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ApiStageTypeDef
+
+def get_value() -> ApiStageTypeDef:
+    return {
+        "apiId": ...,
+    }
+```
+
+```python title="Definition"
+class ApiStageTypeDef(TypedDict):
+    apiId: NotRequired[str],
+    stage: NotRequired[str],
+    throttle: NotRequired[Mapping[str, ThrottleSettingsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
+## ApiKeysTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ApiKeysTypeDef
+
+def get_value() -> ApiKeysTypeDef:
+    return {
+        "warnings": ...,
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ApiKeysTypeDef(TypedDict):
+    warnings: List[str],
+    position: str,
+    items: List[ApiKeyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApiKeyTypeDef](./type_defs.md#apikeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AuthorizersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import AuthorizersTypeDef
+
+def get_value() -> AuthorizersTypeDef:
     return {
         "position": ...,
         "items": ...,
@@ -3646,38 +2911,230 @@ def get_value() -> ResourcesTypeDef:
 ```
 
 ```python title="Definition"
-class ResourcesTypeDef(TypedDict):
+class AuthorizersTypeDef(TypedDict):
     position: str,
-    items: List[ResourceTypeDef],  # (1)
+    items: List[AuthorizerTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+1. See [:material-code-braces: AuthorizerTypeDef](./type_defs.md#authorizertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
+## BasePathMappingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_apigateway.type_defs import BasePathMappingsTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> BasePathMappingsTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class BasePathMappingsTypeDef(TypedDict):
+    position: str,
+    items: List[BasePathMappingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateStageRequestRequestTypeDef
+
+def get_value() -> CreateStageRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+        "stageName": ...,
+        "deploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStageRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    stageName: str,
+    deploymentId: str,
+    description: NotRequired[str],
+    cacheClusterEnabled: NotRequired[bool],
+    cacheClusterSize: NotRequired[CacheClusterSizeType],  # (1)
+    variables: NotRequired[Mapping[str, str]],
+    documentationVersion: NotRequired[str],
+    canarySettings: NotRequired[CanarySettingsTypeDef],  # (2)
+    tracingEnabled: NotRequired[bool],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
+2. See [:material-code-braces: CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef) 
+## ClientCertificatesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import ClientCertificatesTypeDef
+
+def get_value() -> ClientCertificatesTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ClientCertificatesTypeDef(TypedDict):
+    position: str,
+    items: List[ClientCertificateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateApiKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateApiKeyRequestRequestTypeDef
+
+def get_value() -> CreateApiKeyRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApiKeyRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    enabled: NotRequired[bool],
+    generateDistinctId: NotRequired[bool],
+    value: NotRequired[str],
+    stageKeys: NotRequired[Sequence[StageKeyTypeDef]],  # (1)
+    customerId: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: StageKeyTypeDef](./type_defs.md#stagekeytypedef) 
+## CreateDeploymentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateDeploymentRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDeploymentRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    stageName: NotRequired[str],
+    stageDescription: NotRequired[str],
+    description: NotRequired[str],
+    cacheClusterEnabled: NotRequired[bool],
+    cacheClusterSize: NotRequired[CacheClusterSizeType],  # (1)
+    variables: NotRequired[Mapping[str, str]],
+    canarySettings: NotRequired[DeploymentCanarySettingsTypeDef],  # (2)
+    tracingEnabled: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
+2. See [:material-code-braces: DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef) 
+## CreateDocumentationPartRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateDocumentationPartRequestRequestTypeDef
+
+def get_value() -> CreateDocumentationPartRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+        "location": ...,
+        "properties": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDocumentationPartRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    location: DocumentationPartLocationTypeDef,  # (1)
+    properties: str,
+```
+
+1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
+## DocumentationPartResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DocumentationPartResponseMetadataTypeDef
+
+def get_value() -> DocumentationPartResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "location": ...,
+        "properties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentationPartResponseMetadataTypeDef(TypedDict):
+    id: str,
+    location: DocumentationPartLocationTypeDef,  # (1)
+    properties: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DocumentationPartTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DocumentationPartTypeDef
+
+def get_value() -> DocumentationPartTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentationPartTypeDef(TypedDict):
+    id: NotRequired[str],
+    location: NotRequired[DocumentationPartLocationTypeDef],  # (1)
+    properties: NotRequired[str],
+```
+
+1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
+## CreateRestApiRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateRestApiRequestRequestTypeDef
+
+def get_value() -> CreateRestApiRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRestApiRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    version: NotRequired[str],
+    cloneFrom: NotRequired[str],
+    binaryMediaTypes: NotRequired[Sequence[str]],
+    minimumCompressionSize: NotRequired[int],
+    apiKeySource: NotRequired[ApiKeySourceTypeType],  # (1)
+    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (2)
+    policy: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    disableExecuteApiEndpoint: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ApiKeySourceTypeType](./literals.md#apikeysourcetypetype) 
+2. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
 ## RestApiResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3753,123 +3210,89 @@ class RestApiTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ApiKeySourceTypeType](./literals.md#apikeysourcetypetype) 
 2. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
-## RestApisTypeDef
+## CreateDomainNameRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import RestApisTypeDef
+from mypy_boto3_apigateway.type_defs import CreateDomainNameRequestRequestTypeDef
 
-def get_value() -> RestApisTypeDef:
+def get_value() -> CreateDomainNameRequestRequestTypeDef:
     return {
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
+        "domainName": ...,
     }
 ```
 
 ```python title="Definition"
-class RestApisTypeDef(TypedDict):
-    position: str,
-    items: List[RestApiTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CreateDomainNameRequestRequestTypeDef(TypedDict):
+    domainName: str,
+    certificateName: NotRequired[str],
+    certificateBody: NotRequired[str],
+    certificatePrivateKey: NotRequired[str],
+    certificateChain: NotRequired[str],
+    certificateArn: NotRequired[str],
+    regionalCertificateName: NotRequired[str],
+    regionalCertificateArn: NotRequired[str],
+    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+    securityPolicy: NotRequired[SecurityPolicyType],  # (2)
+    mutualTlsAuthentication: NotRequired[MutualTlsAuthenticationInputTypeDef],  # (3)
+    ownershipVerificationCertificateArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RestApiTypeDef](./type_defs.md#restapitypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SdkConfigurationPropertyTypeDef
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
+3. See [:material-code-braces: MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef) 
+## DeploymentResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import SdkConfigurationPropertyTypeDef
+from mypy_boto3_apigateway.type_defs import DeploymentResponseMetadataTypeDef
 
-def get_value() -> SdkConfigurationPropertyTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SdkConfigurationPropertyTypeDef(TypedDict):
-    name: NotRequired[str],
-    friendlyName: NotRequired[str],
-    description: NotRequired[str],
-    required: NotRequired[bool],
-    defaultValue: NotRequired[str],
-```
-
-## SdkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import SdkResponseTypeDef
-
-def get_value() -> SdkResponseTypeDef:
-    return {
-        "contentType": ...,
-        "contentDisposition": ...,
-        "body": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SdkResponseTypeDef(TypedDict):
-    contentType: str,
-    contentDisposition: str,
-    body: StreamingBody,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SdkTypeResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import SdkTypeResponseMetadataTypeDef
-
-def get_value() -> SdkTypeResponseMetadataTypeDef:
+def get_value() -> DeploymentResponseMetadataTypeDef:
     return {
         "id": ...,
-        "friendlyName": ...,
         "description": ...,
-        "configurationProperties": ...,
+        "createdDate": ...,
+        "apiSummary": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SdkTypeResponseMetadataTypeDef(TypedDict):
+class DeploymentResponseMetadataTypeDef(TypedDict):
     id: str,
-    friendlyName: str,
     description: str,
-    configurationProperties: List[SdkConfigurationPropertyTypeDef],  # (1)
+    createdDate: datetime,
+    apiSummary: Dict[str, Dict[str, MethodSnapshotTypeDef]],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: SdkConfigurationPropertyTypeDef](./type_defs.md#sdkconfigurationpropertytypedef) 
+1. See [:material-code-braces: MethodSnapshotTypeDef](./type_defs.md#methodsnapshottypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SdkTypeTypeDef
+## DeploymentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import SdkTypeTypeDef
+from mypy_boto3_apigateway.type_defs import DeploymentTypeDef
 
-def get_value() -> SdkTypeTypeDef:
+def get_value() -> DeploymentTypeDef:
     return {
         "id": ...,
     }
 ```
 
 ```python title="Definition"
-class SdkTypeTypeDef(TypedDict):
+class DeploymentTypeDef(TypedDict):
     id: NotRequired[str],
-    friendlyName: NotRequired[str],
     description: NotRequired[str],
-    configurationProperties: NotRequired[List[SdkConfigurationPropertyTypeDef]],  # (1)
+    createdDate: NotRequired[datetime],
+    apiSummary: NotRequired[Dict[str, Dict[str, MethodSnapshotTypeDef]]],  # (1)
 ```
 
-1. See [:material-code-braces: SdkConfigurationPropertyTypeDef](./type_defs.md#sdkconfigurationpropertytypedef) 
-## SdkTypesTypeDef
+1. See [:material-code-braces: MethodSnapshotTypeDef](./type_defs.md#methodsnapshottypedef) 
+## DocumentationVersionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import SdkTypesTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationVersionsTypeDef
 
-def get_value() -> SdkTypesTypeDef:
+def get_value() -> DocumentationVersionsTypeDef:
     return {
         "position": ...,
         "items": ...,
@@ -3878,31 +3301,587 @@ def get_value() -> SdkTypesTypeDef:
 ```
 
 ```python title="Definition"
-class SdkTypesTypeDef(TypedDict):
+class DocumentationVersionsTypeDef(TypedDict):
     position: str,
-    items: List[SdkTypeTypeDef],  # (1)
+    items: List[DocumentationVersionTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: SdkTypeTypeDef](./type_defs.md#sdktypetypedef) 
+1. See [:material-code-braces: DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StageKeyTypeDef
+## DomainNameResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import StageKeyTypeDef
+from mypy_boto3_apigateway.type_defs import DomainNameResponseMetadataTypeDef
 
-def get_value() -> StageKeyTypeDef:
+def get_value() -> DomainNameResponseMetadataTypeDef:
+    return {
+        "domainName": ...,
+        "certificateName": ...,
+        "certificateArn": ...,
+        "certificateUploadDate": ...,
+        "regionalDomainName": ...,
+        "regionalHostedZoneId": ...,
+        "regionalCertificateName": ...,
+        "regionalCertificateArn": ...,
+        "distributionDomainName": ...,
+        "distributionHostedZoneId": ...,
+        "endpointConfiguration": ...,
+        "domainNameStatus": ...,
+        "domainNameStatusMessage": ...,
+        "securityPolicy": ...,
+        "tags": ...,
+        "mutualTlsAuthentication": ...,
+        "ownershipVerificationCertificateArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DomainNameResponseMetadataTypeDef(TypedDict):
+    domainName: str,
+    certificateName: str,
+    certificateArn: str,
+    certificateUploadDate: datetime,
+    regionalDomainName: str,
+    regionalHostedZoneId: str,
+    regionalCertificateName: str,
+    regionalCertificateArn: str,
+    distributionDomainName: str,
+    distributionHostedZoneId: str,
+    endpointConfiguration: EndpointConfigurationTypeDef,  # (1)
+    domainNameStatus: DomainNameStatusType,  # (2)
+    domainNameStatusMessage: str,
+    securityPolicy: SecurityPolicyType,  # (3)
+    tags: Dict[str, str],
+    mutualTlsAuthentication: MutualTlsAuthenticationTypeDef,  # (4)
+    ownershipVerificationCertificateArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: DomainNameStatusType](./literals.md#domainnamestatustype) 
+3. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
+4. See [:material-code-braces: MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DomainNameTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DomainNameTypeDef
+
+def get_value() -> DomainNameTypeDef:
+    return {
+        "domainName": ...,
+    }
+```
+
+```python title="Definition"
+class DomainNameTypeDef(TypedDict):
+    domainName: NotRequired[str],
+    certificateName: NotRequired[str],
+    certificateArn: NotRequired[str],
+    certificateUploadDate: NotRequired[datetime],
+    regionalDomainName: NotRequired[str],
+    regionalHostedZoneId: NotRequired[str],
+    regionalCertificateName: NotRequired[str],
+    regionalCertificateArn: NotRequired[str],
+    distributionDomainName: NotRequired[str],
+    distributionHostedZoneId: NotRequired[str],
+    endpointConfiguration: NotRequired[EndpointConfigurationTypeDef],  # (1)
+    domainNameStatus: NotRequired[DomainNameStatusType],  # (2)
+    domainNameStatusMessage: NotRequired[str],
+    securityPolicy: NotRequired[SecurityPolicyType],  # (3)
+    tags: NotRequired[Dict[str, str]],
+    mutualTlsAuthentication: NotRequired[MutualTlsAuthenticationTypeDef],  # (4)
+    ownershipVerificationCertificateArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: DomainNameStatusType](./literals.md#domainnamestatustype) 
+3. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
+4. See [:material-code-braces: MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef) 
+## GatewayResponsesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GatewayResponsesTypeDef
+
+def get_value() -> GatewayResponsesTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GatewayResponsesTypeDef(TypedDict):
+    position: str,
+    items: List[GatewayResponseTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetApiKeysRequestGetApiKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetApiKeysRequestGetApiKeysPaginateTypeDef
+
+def get_value() -> GetApiKeysRequestGetApiKeysPaginateTypeDef:
+    return {
+        "nameQuery": ...,
+    }
+```
+
+```python title="Definition"
+class GetApiKeysRequestGetApiKeysPaginateTypeDef(TypedDict):
+    nameQuery: NotRequired[str],
+    customerId: NotRequired[str],
+    includeValues: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetAuthorizersRequestGetAuthorizersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetAuthorizersRequestGetAuthorizersPaginateTypeDef
+
+def get_value() -> GetAuthorizersRequestGetAuthorizersPaginateTypeDef:
     return {
         "restApiId": ...,
     }
 ```
 
 ```python title="Definition"
-class StageKeyTypeDef(TypedDict):
-    restApiId: NotRequired[str],
-    stageName: NotRequired[str],
+class GetAuthorizersRequestGetAuthorizersPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef
+
+def get_value() -> GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef:
+    return {
+        "domainName": ...,
+    }
+```
+
+```python title="Definition"
+class GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef(TypedDict):
+    domainName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef
+
+def get_value() -> GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetDeploymentsRequestGetDeploymentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetDeploymentsRequestGetDeploymentsPaginateTypeDef
+
+def get_value() -> GetDeploymentsRequestGetDeploymentsPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeploymentsRequestGetDeploymentsPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef
+
+def get_value() -> GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef(TypedDict):
+    restApiId: str,
+    type: NotRequired[DocumentationPartTypeType],  # (1)
+    nameQuery: NotRequired[str],
+    path: NotRequired[str],
+    locationStatus: NotRequired[LocationStatusTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DocumentationPartTypeType](./literals.md#documentationparttypetype) 
+2. See [:material-code-brackets: LocationStatusTypeType](./literals.md#locationstatustypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef
+
+def get_value() -> GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetDomainNamesRequestGetDomainNamesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetDomainNamesRequestGetDomainNamesPaginateTypeDef
+
+def get_value() -> GetDomainNamesRequestGetDomainNamesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetDomainNamesRequestGetDomainNamesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef
+
+def get_value() -> GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetModelsRequestGetModelsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetModelsRequestGetModelsPaginateTypeDef
+
+def get_value() -> GetModelsRequestGetModelsPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetModelsRequestGetModelsPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef
+
+def get_value() -> GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef(TypedDict):
+    restApiId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetResourcesRequestGetResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetResourcesRequestGetResourcesPaginateTypeDef
+
+def get_value() -> GetResourcesRequestGetResourcesPaginateTypeDef:
+    return {
+        "restApiId": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcesRequestGetResourcesPaginateTypeDef(TypedDict):
+    restApiId: str,
+    embed: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetRestApisRequestGetRestApisPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetRestApisRequestGetRestApisPaginateTypeDef
+
+def get_value() -> GetRestApisRequestGetRestApisPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetRestApisRequestGetRestApisPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetSdkTypesRequestGetSdkTypesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetSdkTypesRequestGetSdkTypesPaginateTypeDef
+
+def get_value() -> GetSdkTypesRequestGetSdkTypesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetSdkTypesRequestGetSdkTypesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef
+
+def get_value() -> GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef:
+    return {
+        "usagePlanId": ...,
+    }
+```
+
+```python title="Definition"
+class GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef(TypedDict):
+    usagePlanId: str,
+    nameQuery: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetUsagePlansRequestGetUsagePlansPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetUsagePlansRequestGetUsagePlansPaginateTypeDef
+
+def get_value() -> GetUsagePlansRequestGetUsagePlansPaginateTypeDef:
+    return {
+        "keyId": ...,
+    }
+```
+
+```python title="Definition"
+class GetUsagePlansRequestGetUsagePlansPaginateTypeDef(TypedDict):
+    keyId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetUsageRequestGetUsagePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetUsageRequestGetUsagePaginateTypeDef
+
+def get_value() -> GetUsageRequestGetUsagePaginateTypeDef:
+    return {
+        "usagePlanId": ...,
+        "startDate": ...,
+        "endDate": ...,
+    }
+```
+
+```python title="Definition"
+class GetUsageRequestGetUsagePaginateTypeDef(TypedDict):
+    usagePlanId: str,
+    startDate: str,
+    endDate: str,
+    keyId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetVpcLinksRequestGetVpcLinksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import GetVpcLinksRequestGetVpcLinksPaginateTypeDef
+
+def get_value() -> GetVpcLinksRequestGetVpcLinksPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetVpcLinksRequestGetVpcLinksPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## IntegrationResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import IntegrationResponseMetadataTypeDef
+
+def get_value() -> IntegrationResponseMetadataTypeDef:
+    return {
+        "type": ...,
+        "httpMethod": ...,
+        "uri": ...,
+        "connectionType": ...,
+        "connectionId": ...,
+        "credentials": ...,
+        "requestParameters": ...,
+        "requestTemplates": ...,
+        "passthroughBehavior": ...,
+        "contentHandling": ...,
+        "timeoutInMillis": ...,
+        "cacheNamespace": ...,
+        "cacheKeyParameters": ...,
+        "integrationResponses": ...,
+        "tlsConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class IntegrationResponseMetadataTypeDef(TypedDict):
+    type: IntegrationTypeType,  # (1)
+    httpMethod: str,
+    uri: str,
+    connectionType: ConnectionTypeType,  # (2)
+    connectionId: str,
+    credentials: str,
+    requestParameters: Dict[str, str],
+    requestTemplates: Dict[str, str],
+    passthroughBehavior: str,
+    contentHandling: ContentHandlingStrategyType,  # (3)
+    timeoutInMillis: int,
+    cacheNamespace: str,
+    cacheKeyParameters: List[str],
+    integrationResponses: Dict[str, IntegrationResponseTypeDef],  # (4)
+    tlsConfig: TlsConfigTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+4. See [:material-code-braces: IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef) 
+5. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IntegrationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import IntegrationTypeDef
+
+def get_value() -> IntegrationTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class IntegrationTypeDef(TypedDict):
+    type: NotRequired[IntegrationTypeType],  # (1)
+    httpMethod: NotRequired[str],
+    uri: NotRequired[str],
+    connectionType: NotRequired[ConnectionTypeType],  # (2)
+    connectionId: NotRequired[str],
+    credentials: NotRequired[str],
+    requestParameters: NotRequired[Dict[str, str]],
+    requestTemplates: NotRequired[Dict[str, str]],
+    passthroughBehavior: NotRequired[str],
+    contentHandling: NotRequired[ContentHandlingStrategyType],  # (3)
+    timeoutInMillis: NotRequired[int],
+    cacheNamespace: NotRequired[str],
+    cacheKeyParameters: NotRequired[List[str]],
+    integrationResponses: NotRequired[Dict[str, IntegrationResponseTypeDef]],  # (4)
+    tlsConfig: NotRequired[TlsConfigTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+4. See [:material-code-braces: IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef) 
+5. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
+## PutIntegrationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import PutIntegrationRequestRequestTypeDef
+
+def get_value() -> PutIntegrationRequestRequestTypeDef:
+    return {
+        "restApiId": ...,
+        "resourceId": ...,
+        "httpMethod": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class PutIntegrationRequestRequestTypeDef(TypedDict):
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    type: IntegrationTypeType,  # (1)
+    integrationHttpMethod: NotRequired[str],
+    uri: NotRequired[str],
+    connectionType: NotRequired[ConnectionTypeType],  # (2)
+    connectionId: NotRequired[str],
+    credentials: NotRequired[str],
+    requestParameters: NotRequired[Mapping[str, str]],
+    requestTemplates: NotRequired[Mapping[str, str]],
+    passthroughBehavior: NotRequired[str],
+    cacheNamespace: NotRequired[str],
+    cacheKeyParameters: NotRequired[Sequence[str]],
+    contentHandling: NotRequired[ContentHandlingStrategyType],  # (3)
+    timeoutInMillis: NotRequired[int],
+    tlsConfig: NotRequired[TlsConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+4. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
 ## StageResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3996,243 +3975,28 @@ class StageTypeDef(TypedDict):
 3. See [:material-code-braces: MethodSettingTypeDef](./type_defs.md#methodsettingtypedef) 
 4. See [:material-code-braces: AccessLogSettingsTypeDef](./type_defs.md#accesslogsettingstypedef) 
 5. See [:material-code-braces: CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef) 
-## StagesTypeDef
+## ModelsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import StagesTypeDef
+from mypy_boto3_apigateway.type_defs import ModelsTypeDef
 
-def get_value() -> StagesTypeDef:
+def get_value() -> ModelsTypeDef:
     return {
-        "item": ...,
+        "position": ...,
+        "items": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StagesTypeDef(TypedDict):
-    item: List[StageTypeDef],  # (1)
+class ModelsTypeDef(TypedDict):
+    position: str,
+    items: List[ModelTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StageTypeDef](./type_defs.md#stagetypedef) 
+1. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## TagsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TagsTypeDef
-
-def get_value() -> TagsTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TagsTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TemplateTypeDef
-
-def get_value() -> TemplateTypeDef:
-    return {
-        "value": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateTypeDef(TypedDict):
-    value: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TestInvokeAuthorizerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
-
-def get_value() -> TestInvokeAuthorizerRequestRequestTypeDef:
-    return {
-        "restApiId": ...,
-        "authorizerId": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeAuthorizerRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    authorizerId: str,
-    headers: NotRequired[Mapping[str, str]],
-    multiValueHeaders: NotRequired[Mapping[str, Sequence[str]]],
-    pathWithQueryString: NotRequired[str],
-    body: NotRequired[str],
-    stageVariables: NotRequired[Mapping[str, str]],
-    additionalContext: NotRequired[Mapping[str, str]],
-```
-
-## TestInvokeAuthorizerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerResponseTypeDef
-
-def get_value() -> TestInvokeAuthorizerResponseTypeDef:
-    return {
-        "clientStatus": ...,
-        "log": ...,
-        "latency": ...,
-        "principalId": ...,
-        "policy": ...,
-        "authorization": ...,
-        "claims": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeAuthorizerResponseTypeDef(TypedDict):
-    clientStatus: int,
-    log: str,
-    latency: int,
-    principalId: str,
-    policy: str,
-    authorization: Dict[str, List[str]],
-    claims: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TestInvokeMethodRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TestInvokeMethodRequestRequestTypeDef
-
-def get_value() -> TestInvokeMethodRequestRequestTypeDef:
-    return {
-        "restApiId": ...,
-        "resourceId": ...,
-        "httpMethod": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeMethodRequestRequestTypeDef(TypedDict):
-    restApiId: str,
-    resourceId: str,
-    httpMethod: str,
-    pathWithQueryString: NotRequired[str],
-    body: NotRequired[str],
-    headers: NotRequired[Mapping[str, str]],
-    multiValueHeaders: NotRequired[Mapping[str, Sequence[str]]],
-    clientCertificateId: NotRequired[str],
-    stageVariables: NotRequired[Mapping[str, str]],
-```
-
-## TestInvokeMethodResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TestInvokeMethodResponseTypeDef
-
-def get_value() -> TestInvokeMethodResponseTypeDef:
-    return {
-        "status": ...,
-        "body": ...,
-        "headers": ...,
-        "multiValueHeaders": ...,
-        "log": ...,
-        "latency": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestInvokeMethodResponseTypeDef(TypedDict):
-    status: int,
-    body: str,
-    headers: Dict[str, str],
-    multiValueHeaders: Dict[str, List[str]],
-    log: str,
-    latency: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ThrottleSettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import ThrottleSettingsTypeDef
-
-def get_value() -> ThrottleSettingsTypeDef:
-    return {
-        "burstLimit": ...,
-    }
-```
-
-```python title="Definition"
-class ThrottleSettingsTypeDef(TypedDict):
-    burstLimit: NotRequired[int],
-    rateLimit: NotRequired[float],
-```
-
-## TlsConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import TlsConfigTypeDef
-
-def get_value() -> TlsConfigTypeDef:
-    return {
-        "insecureSkipVerification": ...,
-    }
-```
-
-```python title="Definition"
-class TlsConfigTypeDef(TypedDict):
-    insecureSkipVerification: NotRequired[bool],
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
 ## UpdateAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4671,50 +4435,74 @@ class UpdateVpcLinkRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
-## UsagePlanKeyResponseMetadataTypeDef
+## RequestValidatorsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import UsagePlanKeyResponseMetadataTypeDef
+from mypy_boto3_apigateway.type_defs import RequestValidatorsTypeDef
 
-def get_value() -> UsagePlanKeyResponseMetadataTypeDef:
+def get_value() -> RequestValidatorsTypeDef:
     return {
-        "id": ...,
-        "type": ...,
-        "value": ...,
-        "name": ...,
+        "position": ...,
+        "items": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UsagePlanKeyResponseMetadataTypeDef(TypedDict):
-    id: str,
-    type: str,
-    value: str,
-    name: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class RequestValidatorsTypeDef(TypedDict):
+    position: str,
+    items: List[RequestValidatorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UsagePlanKeyTypeDef
+1. See [:material-code-braces: RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SdkTypeResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import UsagePlanKeyTypeDef
+from mypy_boto3_apigateway.type_defs import SdkTypeResponseMetadataTypeDef
 
-def get_value() -> UsagePlanKeyTypeDef:
+def get_value() -> SdkTypeResponseMetadataTypeDef:
+    return {
+        "id": ...,
+        "friendlyName": ...,
+        "description": ...,
+        "configurationProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SdkTypeResponseMetadataTypeDef(TypedDict):
+    id: str,
+    friendlyName: str,
+    description: str,
+    configurationProperties: List[SdkConfigurationPropertyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SdkConfigurationPropertyTypeDef](./type_defs.md#sdkconfigurationpropertytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SdkTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import SdkTypeTypeDef
+
+def get_value() -> SdkTypeTypeDef:
     return {
         "id": ...,
     }
 ```
 
 ```python title="Definition"
-class UsagePlanKeyTypeDef(TypedDict):
+class SdkTypeTypeDef(TypedDict):
     id: NotRequired[str],
-    type: NotRequired[str],
-    value: NotRequired[str],
-    name: NotRequired[str],
+    friendlyName: NotRequired[str],
+    description: NotRequired[str],
+    configurationProperties: NotRequired[List[SdkConfigurationPropertyTypeDef]],  # (1)
 ```
 
+1. See [:material-code-braces: SdkConfigurationPropertyTypeDef](./type_defs.md#sdkconfigurationpropertytypedef) 
 ## UsagePlanKeysTypeDef
 
 ```python title="Usage Example"
@@ -4737,6 +4525,52 @@ class UsagePlanKeysTypeDef(TypedDict):
 
 1. See [:material-code-braces: UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VpcLinksTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import VpcLinksTypeDef
+
+def get_value() -> VpcLinksTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class VpcLinksTypeDef(TypedDict):
+    position: str,
+    items: List[VpcLinkTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcLinkTypeDef](./type_defs.md#vpclinktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUsagePlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import CreateUsagePlanRequestRequestTypeDef
+
+def get_value() -> CreateUsagePlanRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUsagePlanRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    apiStages: NotRequired[Sequence[ApiStageTypeDef]],  # (1)
+    throttle: NotRequired[ThrottleSettingsTypeDef],  # (2)
+    quota: NotRequired[QuotaSettingsTypeDef],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: ApiStageTypeDef](./type_defs.md#apistagetypedef) 
+2. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
+3. See [:material-code-braces: QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef) 
 ## UsagePlanResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -4799,6 +4633,205 @@ class UsagePlanTypeDef(TypedDict):
 1. See [:material-code-braces: ApiStageTypeDef](./type_defs.md#apistagetypedef) 
 2. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
 3. See [:material-code-braces: QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef) 
+## DocumentationPartsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DocumentationPartsTypeDef
+
+def get_value() -> DocumentationPartsTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentationPartsTypeDef(TypedDict):
+    position: str,
+    items: List[DocumentationPartTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DocumentationPartTypeDef](./type_defs.md#documentationparttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestApisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import RestApisTypeDef
+
+def get_value() -> RestApisTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RestApisTypeDef(TypedDict):
+    position: str,
+    items: List[RestApiTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RestApiTypeDef](./type_defs.md#restapitypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeploymentsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DeploymentsTypeDef
+
+def get_value() -> DeploymentsTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentsTypeDef(TypedDict):
+    position: str,
+    items: List[DeploymentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DomainNamesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import DomainNamesTypeDef
+
+def get_value() -> DomainNamesTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DomainNamesTypeDef(TypedDict):
+    position: str,
+    items: List[DomainNameTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainNameTypeDef](./type_defs.md#domainnametypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MethodResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import MethodResponseMetadataTypeDef
+
+def get_value() -> MethodResponseMetadataTypeDef:
+    return {
+        "httpMethod": ...,
+        "authorizationType": ...,
+        "authorizerId": ...,
+        "apiKeyRequired": ...,
+        "requestValidatorId": ...,
+        "operationName": ...,
+        "requestParameters": ...,
+        "requestModels": ...,
+        "methodResponses": ...,
+        "methodIntegration": ...,
+        "authorizationScopes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class MethodResponseMetadataTypeDef(TypedDict):
+    httpMethod: str,
+    authorizationType: str,
+    authorizerId: str,
+    apiKeyRequired: bool,
+    requestValidatorId: str,
+    operationName: str,
+    requestParameters: Dict[str, bool],
+    requestModels: Dict[str, str],
+    methodResponses: Dict[str, MethodResponseTypeDef],  # (1)
+    methodIntegration: IntegrationTypeDef,  # (2)
+    authorizationScopes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MethodResponseTypeDef](./type_defs.md#methodresponsetypedef) 
+2. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MethodTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import MethodTypeDef
+
+def get_value() -> MethodTypeDef:
+    return {
+        "httpMethod": ...,
+    }
+```
+
+```python title="Definition"
+class MethodTypeDef(TypedDict):
+    httpMethod: NotRequired[str],
+    authorizationType: NotRequired[str],
+    authorizerId: NotRequired[str],
+    apiKeyRequired: NotRequired[bool],
+    requestValidatorId: NotRequired[str],
+    operationName: NotRequired[str],
+    requestParameters: NotRequired[Dict[str, bool]],
+    requestModels: NotRequired[Dict[str, str]],
+    methodResponses: NotRequired[Dict[str, MethodResponseTypeDef]],  # (1)
+    methodIntegration: NotRequired[IntegrationTypeDef],  # (2)
+    authorizationScopes: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: MethodResponseTypeDef](./type_defs.md#methodresponsetypedef) 
+2. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
+## StagesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import StagesTypeDef
+
+def get_value() -> StagesTypeDef:
+    return {
+        "item": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StagesTypeDef(TypedDict):
+    item: List[StageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StageTypeDef](./type_defs.md#stagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SdkTypesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigateway.type_defs import SdkTypesTypeDef
+
+def get_value() -> SdkTypesTypeDef:
+    return {
+        "position": ...,
+        "items": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SdkTypesTypeDef(TypedDict):
+    position: str,
+    items: List[SdkTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SdkTypeTypeDef](./type_defs.md#sdktypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UsagePlansTypeDef
 
 ```python title="Usage Example"
@@ -4821,94 +4854,61 @@ class UsagePlansTypeDef(TypedDict):
 
 1. See [:material-code-braces: UsagePlanTypeDef](./type_defs.md#usageplantypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UsageTypeDef
+## ResourceResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import UsageTypeDef
+from mypy_boto3_apigateway.type_defs import ResourceResponseMetadataTypeDef
 
-def get_value() -> UsageTypeDef:
-    return {
-        "usagePlanId": ...,
-        "startDate": ...,
-        "endDate": ...,
-        "position": ...,
-        "items": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UsageTypeDef(TypedDict):
-    usagePlanId: str,
-    startDate: str,
-    endDate: str,
-    position: str,
-    items: Dict[str, List[List[int]]],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VpcLinkResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import VpcLinkResponseMetadataTypeDef
-
-def get_value() -> VpcLinkResponseMetadataTypeDef:
+def get_value() -> ResourceResponseMetadataTypeDef:
     return {
         "id": ...,
-        "name": ...,
-        "description": ...,
-        "targetArns": ...,
-        "status": ...,
-        "statusMessage": ...,
-        "tags": ...,
+        "parentId": ...,
+        "pathPart": ...,
+        "path": ...,
+        "resourceMethods": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcLinkResponseMetadataTypeDef(TypedDict):
+class ResourceResponseMetadataTypeDef(TypedDict):
     id: str,
-    name: str,
-    description: str,
-    targetArns: List[str],
-    status: VpcLinkStatusType,  # (1)
-    statusMessage: str,
-    tags: Dict[str, str],
+    parentId: str,
+    pathPart: str,
+    path: str,
+    resourceMethods: Dict[str, MethodTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: VpcLinkStatusType](./literals.md#vpclinkstatustype) 
+1. See [:material-code-braces: MethodTypeDef](./type_defs.md#methodtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VpcLinkTypeDef
+## ResourceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import VpcLinkTypeDef
+from mypy_boto3_apigateway.type_defs import ResourceTypeDef
 
-def get_value() -> VpcLinkTypeDef:
+def get_value() -> ResourceTypeDef:
     return {
         "id": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcLinkTypeDef(TypedDict):
+class ResourceTypeDef(TypedDict):
     id: NotRequired[str],
-    name: NotRequired[str],
-    description: NotRequired[str],
-    targetArns: NotRequired[List[str]],
-    status: NotRequired[VpcLinkStatusType],  # (1)
-    statusMessage: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
+    parentId: NotRequired[str],
+    pathPart: NotRequired[str],
+    path: NotRequired[str],
+    resourceMethods: NotRequired[Dict[str, MethodTypeDef]],  # (1)
 ```
 
-1. See [:material-code-brackets: VpcLinkStatusType](./literals.md#vpclinkstatustype) 
-## VpcLinksTypeDef
+1. See [:material-code-braces: MethodTypeDef](./type_defs.md#methodtypedef) 
+## ResourcesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apigateway.type_defs import VpcLinksTypeDef
+from mypy_boto3_apigateway.type_defs import ResourcesTypeDef
 
-def get_value() -> VpcLinksTypeDef:
+def get_value() -> ResourcesTypeDef:
     return {
         "position": ...,
         "items": ...,
@@ -4917,11 +4917,11 @@ def get_value() -> VpcLinksTypeDef:
 ```
 
 ```python title="Definition"
-class VpcLinksTypeDef(TypedDict):
+class ResourcesTypeDef(TypedDict):
     position: str,
-    items: List[VpcLinkTypeDef],  # (1)
+    items: List[ResourceTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: VpcLinkTypeDef](./type_defs.md#vpclinktypedef) 
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -101,8 +101,8 @@ def get_value() -> EdgeMetricTypeDef:
 
 - [EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)
 - [GetDeviceRegistrationRequestRequestTypeDef](./type_defs.md#getdeviceregistrationrequestrequesttypedef)
-- [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef)
-- [ModelTypeDef](./type_defs.md#modeltypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [ModelTypeDef](./type_defs.md#modeltypedef)
+- [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef)
 - [SendHeartbeatRequestRequestTypeDef](./type_defs.md#sendheartbeatrequestrequesttypedef)
 

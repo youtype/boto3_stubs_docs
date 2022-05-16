@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36042,6 +36042,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <ul>
 <li><a href="literals/#alarmtypetype">AlarmTypeType</a></li>
+<li><a href="literals/#appassessmentscheduletypetype">AppAssessmentScheduleTypeType</a></li>
 <li><a href="literals/#appcompliancestatustypetype">AppComplianceStatusTypeType</a></li>
 <li><a href="literals/#appstatustypetype">AppStatusTypeType</a></li>
 <li><a href="literals/#assessmentinvokertype">AssessmentInvokerType</a></li>
@@ -36071,118 +36072,124 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_resiliencehub.type_defs</span> <span class="kn">import</span> <span class="n">AddDraftAppVersionResourceMappingsRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_resiliencehub.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddDraftAppVersionResourceMappingsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;appArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;resourceMappings&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#adddraftappversionresourcemappingsrequestrequesttypedef">AddDraftAppVersionResourceMappingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#adddraftappversionresourcemappingsresponsetypedef">AddDraftAppVersionResourceMappingsResponseTypeDef</a></li>
-<li><a href="type_defs/#alarmrecommendationtypedef">AlarmRecommendationTypeDef</a></li>
-<li><a href="type_defs/#appassessmentsummarytypedef">AppAssessmentSummaryTypeDef</a></li>
-<li><a href="type_defs/#appassessmenttypedef">AppAssessmentTypeDef</a></li>
-<li><a href="type_defs/#appcomponentcompliancetypedef">AppComponentComplianceTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#recommendationitemtypedef">RecommendationItemTypeDef</a></li>
+<li><a href="type_defs/#costtypedef">CostTypeDef</a></li>
+<li><a href="type_defs/#disruptioncompliancetypedef">DisruptionComplianceTypeDef</a></li>
+<li><a href="type_defs/#resiliencyscoretypedef">ResiliencyScoreTypeDef</a></li>
 <li><a href="type_defs/#appcomponenttypedef">AppComponentTypeDef</a></li>
 <li><a href="type_defs/#appsummarytypedef">AppSummaryTypeDef</a></li>
 <li><a href="type_defs/#apptypedef">AppTypeDef</a></li>
 <li><a href="type_defs/#appversionsummarytypedef">AppVersionSummaryTypeDef</a></li>
-<li><a href="type_defs/#componentrecommendationtypedef">ComponentRecommendationTypeDef</a></li>
-<li><a href="type_defs/#configrecommendationtypedef">ConfigRecommendationTypeDef</a></li>
-<li><a href="type_defs/#costtypedef">CostTypeDef</a></li>
+<li><a href="type_defs/#recommendationdisruptioncompliancetypedef">RecommendationDisruptionComplianceTypeDef</a></li>
 <li><a href="type_defs/#createapprequestrequesttypedef">CreateAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createappresponsetypedef">CreateAppResponseTypeDef</a></li>
 <li><a href="type_defs/#createrecommendationtemplaterequestrequesttypedef">CreateRecommendationTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createrecommendationtemplateresponsetypedef">CreateRecommendationTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#createresiliencypolicyrequestrequesttypedef">CreateResiliencyPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createresiliencypolicyresponsetypedef">CreateResiliencyPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteappassessmentrequestrequesttypedef">DeleteAppAssessmentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteappassessmentresponsetypedef">DeleteAppAssessmentResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteapprequestrequesttypedef">DeleteAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteappresponsetypedef">DeleteAppResponseTypeDef</a></li>
-<li><a href="type_defs/#deleterecommendationtemplaterequestrequesttypedef">DeleteRecommendationTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleterecommendationtemplateresponsetypedef">DeleteRecommendationTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteresiliencypolicyrequestrequesttypedef">DeleteResiliencyPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteresiliencypolicyresponsetypedef">DeleteResiliencyPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#describeappassessmentrequestrequesttypedef">DescribeAppAssessmentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeappassessmentresponsetypedef">DescribeAppAssessmentResponseTypeDef</a></li>
-<li><a href="type_defs/#describeapprequestrequesttypedef">DescribeAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeappresponsetypedef">DescribeAppResponseTypeDef</a></li>
-<li><a href="type_defs/#describeappversionresourcesresolutionstatusrequestrequesttypedef">DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeappversionresourcesresolutionstatusresponsetypedef">DescribeAppVersionResourcesResolutionStatusResponseTypeDef</a></li>
-<li><a href="type_defs/#describeappversiontemplaterequestrequesttypedef">DescribeAppVersionTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeappversiontemplateresponsetypedef">DescribeAppVersionTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#describedraftappversionresourcesimportstatusrequestrequesttypedef">DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedraftappversionresourcesimportstatusresponsetypedef">DescribeDraftAppVersionResourcesImportStatusResponseTypeDef</a></li>
-<li><a href="type_defs/#describeresiliencypolicyrequestrequesttypedef">DescribeResiliencyPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeresiliencypolicyresponsetypedef">DescribeResiliencyPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#disruptioncompliancetypedef">DisruptionComplianceTypeDef</a></li>
 <li><a href="type_defs/#failurepolicytypedef">FailurePolicyTypeDef</a></li>
-<li><a href="type_defs/#importresourcestodraftappversionrequestrequesttypedef">ImportResourcesToDraftAppVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#importresourcestodraftappversionresponsetypedef">ImportResourcesToDraftAppVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteappassessmentrequestrequesttypedef">DeleteAppAssessmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapprequestrequesttypedef">DeleteAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleterecommendationtemplaterequestrequesttypedef">DeleteRecommendationTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteresiliencypolicyrequestrequesttypedef">DeleteResiliencyPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeappassessmentrequestrequesttypedef">DescribeAppAssessmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeapprequestrequesttypedef">DescribeAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeappversionresourcesresolutionstatusrequestrequesttypedef">DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeappversiontemplaterequestrequesttypedef">DescribeAppVersionTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describedraftappversionresourcesimportstatusrequestrequesttypedef">DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeresiliencypolicyrequestrequesttypedef">DescribeResiliencyPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#terraformsourcetypedef">TerraformSourceTypeDef</a></li>
 <li><a href="type_defs/#listalarmrecommendationsrequestrequesttypedef">ListAlarmRecommendationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listalarmrecommendationsresponsetypedef">ListAlarmRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappassessmentsrequestrequesttypedef">ListAppAssessmentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappassessmentsresponsetypedef">ListAppAssessmentsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappcomponentcompliancesrequestrequesttypedef">ListAppComponentCompliancesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappcomponentcompliancesresponsetypedef">ListAppComponentCompliancesResponseTypeDef</a></li>
 <li><a href="type_defs/#listappcomponentrecommendationsrequestrequesttypedef">ListAppComponentRecommendationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappcomponentrecommendationsresponsetypedef">ListAppComponentRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappversionresourcemappingsrequestrequesttypedef">ListAppVersionResourceMappingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappversionresourcemappingsresponsetypedef">ListAppVersionResourceMappingsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappversionresourcesrequestrequesttypedef">ListAppVersionResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappversionresourcesresponsetypedef">ListAppVersionResourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#listappversionsrequestrequesttypedef">ListAppVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappversionsresponsetypedef">ListAppVersionsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappsrequestrequesttypedef">ListAppsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappsresponsetypedef">ListAppsResponseTypeDef</a></li>
 <li><a href="type_defs/#listrecommendationtemplatesrequestrequesttypedef">ListRecommendationTemplatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrecommendationtemplatesresponsetypedef">ListRecommendationTemplatesResponseTypeDef</a></li>
 <li><a href="type_defs/#listresiliencypoliciesrequestrequesttypedef">ListResiliencyPoliciesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresiliencypoliciesresponsetypedef">ListResiliencyPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#listsoprecommendationsrequestrequesttypedef">ListSopRecommendationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsoprecommendationsresponsetypedef">ListSopRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listsuggestedresiliencypoliciesrequestrequesttypedef">ListSuggestedResiliencyPoliciesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsuggestedresiliencypoliciesresponsetypedef">ListSuggestedResiliencyPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#listtestrecommendationsrequestrequesttypedef">ListTestRecommendationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestrecommendationsresponsetypedef">ListTestRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listunsupportedappversionresourcesrequestrequesttypedef">ListUnsupportedAppVersionResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listunsupportedappversionresourcesresponsetypedef">ListUnsupportedAppVersionResourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#logicalresourceidtypedef">LogicalResourceIdTypeDef</a></li>
 <li><a href="type_defs/#physicalresourceidtypedef">PhysicalResourceIdTypeDef</a></li>
-<li><a href="type_defs/#physicalresourcetypedef">PhysicalResourceTypeDef</a></li>
 <li><a href="type_defs/#publishappversionrequestrequesttypedef">PublishAppVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#publishappversionresponsetypedef">PublishAppVersionResponseTypeDef</a></li>
 <li><a href="type_defs/#putdraftappversiontemplaterequestrequesttypedef">PutDraftAppVersionTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putdraftappversiontemplateresponsetypedef">PutDraftAppVersionTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#recommendationdisruptioncompliancetypedef">RecommendationDisruptionComplianceTypeDef</a></li>
-<li><a href="type_defs/#recommendationitemtypedef">RecommendationItemTypeDef</a></li>
-<li><a href="type_defs/#recommendationtemplatetypedef">RecommendationTemplateTypeDef</a></li>
-<li><a href="type_defs/#removedraftappversionresourcemappingsrequestrequesttypedef">RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removedraftappversionresourcemappingsresponsetypedef">RemoveDraftAppVersionResourceMappingsResponseTypeDef</a></li>
-<li><a href="type_defs/#resiliencypolicytypedef">ResiliencyPolicyTypeDef</a></li>
-<li><a href="type_defs/#resiliencyscoretypedef">ResiliencyScoreTypeDef</a></li>
-<li><a href="type_defs/#resolveappversionresourcesrequestrequesttypedef">ResolveAppVersionResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#resolveappversionresourcesresponsetypedef">ResolveAppVersionResourcesResponseTypeDef</a></li>
-<li><a href="type_defs/#resourcemappingtypedef">ResourceMappingTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#s3locationtypedef">S3LocationTypeDef</a></li>
-<li><a href="type_defs/#soprecommendationtypedef">SopRecommendationTypeDef</a></li>
+<li><a href="type_defs/#removedraftappversionresourcemappingsrequestrequesttypedef">RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resolveappversionresourcesrequestrequesttypedef">ResolveAppVersionResourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourceerrortypedef">ResourceErrorTypeDef</a></li>
 <li><a href="type_defs/#startappassessmentrequestrequesttypedef">StartAppAssessmentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startappassessmentresponsetypedef">StartAppAssessmentResponseTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#testrecommendationtypedef">TestRecommendationTypeDef</a></li>
-<li><a href="type_defs/#unsupportedresourcetypedef">UnsupportedResourceTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateapprequestrequesttypedef">UpdateAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteappassessmentresponsetypedef">DeleteAppAssessmentResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteappresponsetypedef">DeleteAppResponseTypeDef</a></li>
+<li><a href="type_defs/#deleterecommendationtemplateresponsetypedef">DeleteRecommendationTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteresiliencypolicyresponsetypedef">DeleteResiliencyPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#describeappversionresourcesresolutionstatusresponsetypedef">DescribeAppVersionResourcesResolutionStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#describeappversiontemplateresponsetypedef">DescribeAppVersionTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#describedraftappversionresourcesimportstatusresponsetypedef">DescribeDraftAppVersionResourcesImportStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#publishappversionresponsetypedef">PublishAppVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#putdraftappversiontemplateresponsetypedef">PutDraftAppVersionTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#removedraftappversionresourcemappingsresponsetypedef">RemoveDraftAppVersionResourceMappingsResponseTypeDef</a></li>
+<li><a href="type_defs/#resolveappversionresourcesresponsetypedef">ResolveAppVersionResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#alarmrecommendationtypedef">AlarmRecommendationTypeDef</a></li>
+<li><a href="type_defs/#soprecommendationtypedef">SopRecommendationTypeDef</a></li>
+<li><a href="type_defs/#testrecommendationtypedef">TestRecommendationTypeDef</a></li>
+<li><a href="type_defs/#appassessmentsummarytypedef">AppAssessmentSummaryTypeDef</a></li>
+<li><a href="type_defs/#appcomponentcompliancetypedef">AppComponentComplianceTypeDef</a></li>
+<li><a href="type_defs/#listappsresponsetypedef">ListAppsResponseTypeDef</a></li>
+<li><a href="type_defs/#createappresponsetypedef">CreateAppResponseTypeDef</a></li>
+<li><a href="type_defs/#describeappresponsetypedef">DescribeAppResponseTypeDef</a></li>
 <li><a href="type_defs/#updateappresponsetypedef">UpdateAppResponseTypeDef</a></li>
+<li><a href="type_defs/#listappversionsresponsetypedef">ListAppVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#configrecommendationtypedef">ConfigRecommendationTypeDef</a></li>
+<li><a href="type_defs/#createresiliencypolicyrequestrequesttypedef">CreateResiliencyPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resiliencypolicytypedef">ResiliencyPolicyTypeDef</a></li>
 <li><a href="type_defs/#updateresiliencypolicyrequestrequesttypedef">UpdateResiliencyPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importresourcestodraftappversionrequestrequesttypedef">ImportResourcesToDraftAppVersionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importresourcestodraftappversionresponsetypedef">ImportResourcesToDraftAppVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#physicalresourcetypedef">PhysicalResourceTypeDef</a></li>
+<li><a href="type_defs/#resourcemappingtypedef">ResourceMappingTypeDef</a></li>
+<li><a href="type_defs/#unsupportedresourcetypedef">UnsupportedResourceTypeDef</a></li>
+<li><a href="type_defs/#recommendationtemplatetypedef">RecommendationTemplateTypeDef</a></li>
+<li><a href="type_defs/#resourceerrorsdetailstypedef">ResourceErrorsDetailsTypeDef</a></li>
+<li><a href="type_defs/#listalarmrecommendationsresponsetypedef">ListAlarmRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsoprecommendationsresponsetypedef">ListSopRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtestrecommendationsresponsetypedef">ListTestRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listappassessmentsresponsetypedef">ListAppAssessmentsResponseTypeDef</a></li>
+<li><a href="type_defs/#listappcomponentcompliancesresponsetypedef">ListAppComponentCompliancesResponseTypeDef</a></li>
+<li><a href="type_defs/#componentrecommendationtypedef">ComponentRecommendationTypeDef</a></li>
+<li><a href="type_defs/#createresiliencypolicyresponsetypedef">CreateResiliencyPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#describeresiliencypolicyresponsetypedef">DescribeResiliencyPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#listresiliencypoliciesresponsetypedef">ListResiliencyPoliciesResponseTypeDef</a></li>
+<li><a href="type_defs/#listsuggestedresiliencypoliciesresponsetypedef">ListSuggestedResiliencyPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresiliencypolicyresponsetypedef">UpdateResiliencyPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#listappversionresourcesresponsetypedef">ListAppVersionResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#adddraftappversionresourcemappingsrequestrequesttypedef">AddDraftAppVersionResourceMappingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#adddraftappversionresourcemappingsresponsetypedef">AddDraftAppVersionResourceMappingsResponseTypeDef</a></li>
+<li><a href="type_defs/#listappversionresourcemappingsresponsetypedef">ListAppVersionResourceMappingsResponseTypeDef</a></li>
+<li><a href="type_defs/#listunsupportedappversionresourcesresponsetypedef">ListUnsupportedAppVersionResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#createrecommendationtemplateresponsetypedef">CreateRecommendationTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#listrecommendationtemplatesresponsetypedef">ListRecommendationTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#appassessmenttypedef">AppAssessmentTypeDef</a></li>
+<li><a href="type_defs/#listappcomponentrecommendationsresponsetypedef">ListAppComponentRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#describeappassessmentresponsetypedef">DescribeAppAssessmentResponseTypeDef</a></li>
+<li><a href="type_defs/#startappassessmentresponsetypedef">StartAppAssessmentResponseTypeDef</a></li>
 </ul>
 
               
@@ -36252,7 +36259,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

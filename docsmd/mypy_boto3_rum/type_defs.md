@@ -71,33 +71,240 @@ class AppMonitorSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
-## AppMonitorTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import AppMonitorTypeDef
+from mypy_boto3_rum.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AppMonitorTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "AppMonitorConfiguration": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AppMonitorTypeDef(TypedDict):
-    AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
-    Created: NotRequired[str],
-    DataStorage: NotRequired[DataStorageTypeDef],  # (2)
-    Domain: NotRequired[str],
-    Id: NotRequired[str],
-    LastModified: NotRequired[str],
-    Name: NotRequired[str],
-    State: NotRequired[StateEnumType],  # (3)
-    Tags: NotRequired[Dict[str, str]],
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
-2. See [:material-code-braces: DataStorageTypeDef](./type_defs.md#datastoragetypedef) 
-3. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
+## CwLogTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import CwLogTypeDef
+
+def get_value() -> CwLogTypeDef:
+    return {
+        "CwLogEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class CwLogTypeDef(TypedDict):
+    CwLogEnabled: NotRequired[bool],
+    CwLogGroup: NotRequired[str],
+```
+
+## DeleteAppMonitorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import DeleteAppMonitorRequestRequestTypeDef
+
+def get_value() -> DeleteAppMonitorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppMonitorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## QueryFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import QueryFilterTypeDef
+
+def get_value() -> QueryFilterTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class QueryFilterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
+
+## TimeRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import TimeRangeTypeDef
+
+def get_value() -> TimeRangeTypeDef:
+    return {
+        "After": ...,
+    }
+```
+
+```python title="Definition"
+class TimeRangeTypeDef(TypedDict):
+    After: int,
+    Before: NotRequired[int],
+```
+
+## GetAppMonitorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import GetAppMonitorRequestRequestTypeDef
+
+def get_value() -> GetAppMonitorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetAppMonitorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## ListAppMonitorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListAppMonitorsRequestRequestTypeDef
+
+def get_value() -> ListAppMonitorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppMonitorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## RumEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import RumEventTypeDef
+
+def get_value() -> RumEventTypeDef:
+    return {
+        "details": ...,
+        "id": ...,
+        "timestamp": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class RumEventTypeDef(TypedDict):
+    details: str,
+    id: str,
+    timestamp: Union[datetime, str],
+    type: str,
+    metadata: NotRequired[str],
+```
+
+## UserDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import UserDetailsTypeDef
+
+def get_value() -> UserDetailsTypeDef:
+    return {
+        "sessionId": ...,
+    }
+```
+
+```python title="Definition"
+class UserDetailsTypeDef(TypedDict):
+    sessionId: NotRequired[str],
+    userId: NotRequired[str],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
 ## CreateAppMonitorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -120,6 +327,26 @@ class CreateAppMonitorRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+## UpdateAppMonitorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import UpdateAppMonitorRequestRequestTypeDef
+
+def get_value() -> UpdateAppMonitorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppMonitorRequestRequestTypeDef(TypedDict):
+    Name: str,
+    AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
+    CwLogEnabled: NotRequired[bool],
+    Domain: NotRequired[str],
+```
+
+1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
 ## CreateAppMonitorResponseTypeDef
 
 ```python title="Usage Example"
@@ -139,23 +366,70 @@ class CreateAppMonitorResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CwLogTypeDef
+## GetAppMonitorDataResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import CwLogTypeDef
+from mypy_boto3_rum.type_defs import GetAppMonitorDataResponseTypeDef
 
-def get_value() -> CwLogTypeDef:
+def get_value() -> GetAppMonitorDataResponseTypeDef:
     return {
-        "CwLogEnabled": ...,
+        "Events": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class CwLogTypeDef(TypedDict):
-    CwLogEnabled: NotRequired[bool],
-    CwLogGroup: NotRequired[str],
+class GetAppMonitorDataResponseTypeDef(TypedDict):
+    Events: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppMonitorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListAppMonitorsResponseTypeDef
+
+def get_value() -> ListAppMonitorsResponseTypeDef:
+    return {
+        "AppMonitorSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppMonitorsResponseTypeDef(TypedDict):
+    AppMonitorSummaries: List[AppMonitorSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppMonitorSummaryTypeDef](./type_defs.md#appmonitorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataStorageTypeDef
 
 ```python title="Usage Example"
@@ -173,22 +447,23 @@ class DataStorageTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CwLogTypeDef](./type_defs.md#cwlogtypedef) 
-## DeleteAppMonitorRequestRequestTypeDef
+## ListAppMonitorsRequestListAppMonitorsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import DeleteAppMonitorRequestRequestTypeDef
+from mypy_boto3_rum.type_defs import ListAppMonitorsRequestListAppMonitorsPaginateTypeDef
 
-def get_value() -> DeleteAppMonitorRequestRequestTypeDef:
+def get_value() -> ListAppMonitorsRequestListAppMonitorsPaginateTypeDef:
     return {
-        "Name": ...,
+        "PaginationConfig": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteAppMonitorRequestRequestTypeDef(TypedDict):
-    Name: str,
+class ListAppMonitorsRequestListAppMonitorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef
 
 ```python title="Usage Example"
@@ -235,174 +510,6 @@ class GetAppMonitorDataRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 2. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
-## GetAppMonitorDataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import GetAppMonitorDataResponseTypeDef
-
-def get_value() -> GetAppMonitorDataResponseTypeDef:
-    return {
-        "Events": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAppMonitorDataResponseTypeDef(TypedDict):
-    Events: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetAppMonitorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import GetAppMonitorRequestRequestTypeDef
-
-def get_value() -> GetAppMonitorRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class GetAppMonitorRequestRequestTypeDef(TypedDict):
-    Name: str,
-```
-
-## GetAppMonitorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import GetAppMonitorResponseTypeDef
-
-def get_value() -> GetAppMonitorResponseTypeDef:
-    return {
-        "AppMonitor": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAppMonitorResponseTypeDef(TypedDict):
-    AppMonitor: AppMonitorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppMonitorTypeDef](./type_defs.md#appmonitortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAppMonitorsRequestListAppMonitorsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ListAppMonitorsRequestListAppMonitorsPaginateTypeDef
-
-def get_value() -> ListAppMonitorsRequestListAppMonitorsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppMonitorsRequestListAppMonitorsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAppMonitorsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ListAppMonitorsRequestRequestTypeDef
-
-def get_value() -> ListAppMonitorsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppMonitorsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListAppMonitorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ListAppMonitorsResponseTypeDef
-
-def get_value() -> ListAppMonitorsResponseTypeDef:
-    return {
-        "AppMonitorSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAppMonitorsResponseTypeDef(TypedDict):
-    AppMonitorSummaries: List[AppMonitorSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppMonitorSummaryTypeDef](./type_defs.md#appmonitorsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
 ## PutRumEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -430,157 +537,50 @@ class PutRumEventsRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: AppMonitorDetailsTypeDef](./type_defs.md#appmonitordetailstypedef) 
 2. See [:material-code-braces: RumEventTypeDef](./type_defs.md#rumeventtypedef) 
 3. See [:material-code-braces: UserDetailsTypeDef](./type_defs.md#userdetailstypedef) 
-## QueryFilterTypeDef
+## AppMonitorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import QueryFilterTypeDef
+from mypy_boto3_rum.type_defs import AppMonitorTypeDef
 
-def get_value() -> QueryFilterTypeDef:
+def get_value() -> AppMonitorTypeDef:
     return {
-        "Name": ...,
+        "AppMonitorConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class QueryFilterTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Values: NotRequired[Sequence[str]],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RumEventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import RumEventTypeDef
-
-def get_value() -> RumEventTypeDef:
-    return {
-        "details": ...,
-        "id": ...,
-        "timestamp": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class RumEventTypeDef(TypedDict):
-    details: str,
-    id: str,
-    timestamp: Union[datetime, str],
-    type: str,
-    metadata: NotRequired[str],
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Mapping[str, str],
-```
-
-## TimeRangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import TimeRangeTypeDef
-
-def get_value() -> TimeRangeTypeDef:
-    return {
-        "After": ...,
-    }
-```
-
-```python title="Definition"
-class TimeRangeTypeDef(TypedDict):
-    After: int,
-    Before: NotRequired[int],
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    TagKeys: Sequence[str],
-```
-
-## UpdateAppMonitorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rum.type_defs import UpdateAppMonitorRequestRequestTypeDef
-
-def get_value() -> UpdateAppMonitorRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAppMonitorRequestRequestTypeDef(TypedDict):
-    Name: str,
+class AppMonitorTypeDef(TypedDict):
     AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
-    CwLogEnabled: NotRequired[bool],
+    Created: NotRequired[str],
+    DataStorage: NotRequired[DataStorageTypeDef],  # (2)
     Domain: NotRequired[str],
+    Id: NotRequired[str],
+    LastModified: NotRequired[str],
+    Name: NotRequired[str],
+    State: NotRequired[StateEnumType],  # (3)
+    Tags: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
-## UserDetailsTypeDef
+2. See [:material-code-braces: DataStorageTypeDef](./type_defs.md#datastoragetypedef) 
+3. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
+## GetAppMonitorResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import UserDetailsTypeDef
+from mypy_boto3_rum.type_defs import GetAppMonitorResponseTypeDef
 
-def get_value() -> UserDetailsTypeDef:
+def get_value() -> GetAppMonitorResponseTypeDef:
     return {
-        "sessionId": ...,
+        "AppMonitor": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserDetailsTypeDef(TypedDict):
-    sessionId: NotRequired[str],
-    userId: NotRequired[str],
+class GetAppMonitorResponseTypeDef(TypedDict):
+    AppMonitor: AppMonitorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: AppMonitorTypeDef](./type_defs.md#appmonitortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

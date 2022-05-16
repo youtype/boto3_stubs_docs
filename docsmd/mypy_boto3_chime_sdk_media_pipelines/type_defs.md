@@ -7,29 +7,6 @@
     Auto-generated documentation for [ChimeSDKMediaPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines)
     type annotations stubs module [mypy-boto3-chime-sdk-media-pipelines](https://pypi.org/project/mypy-boto3-chime-sdk-media-pipelines/).
 
-## ArtifactsConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ArtifactsConfigurationTypeDef
-
-def get_value() -> ArtifactsConfigurationTypeDef:
-    return {
-        "Audio": ...,
-        "Video": ...,
-        "Content": ...,
-    }
-```
-
-```python title="Definition"
-class ArtifactsConfigurationTypeDef(TypedDict):
-    Audio: AudioArtifactsConfigurationTypeDef,  # (1)
-    Video: VideoArtifactsConfigurationTypeDef,  # (2)
-    Content: ContentArtifactsConfigurationTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef) 
-2. See [:material-code-braces: VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef) 
-3. See [:material-code-braces: ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef) 
 ## AudioArtifactsConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -47,25 +24,6 @@ class AudioArtifactsConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AudioMuxTypeType](./literals.md#audiomuxtypetype) 
-## ChimeSdkMeetingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ChimeSdkMeetingConfigurationTypeDef
-
-def get_value() -> ChimeSdkMeetingConfigurationTypeDef:
-    return {
-        "SourceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class ChimeSdkMeetingConfigurationTypeDef(TypedDict):
-    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
-    ArtifactsConfiguration: NotRequired[ArtifactsConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
-2. See [:material-code-braces: ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef) 
 ## ContentArtifactsConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -85,55 +43,67 @@ class ContentArtifactsConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
 2. See [:material-code-brackets: ContentMuxTypeType](./literals.md#contentmuxtypetype) 
-## CreateMediaCapturePipelineRequestRequestTypeDef
+## VideoArtifactsConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import CreateMediaCapturePipelineRequestRequestTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import VideoArtifactsConfigurationTypeDef
 
-def get_value() -> CreateMediaCapturePipelineRequestRequestTypeDef:
+def get_value() -> VideoArtifactsConfigurationTypeDef:
     return {
-        "SourceType": ...,
-        "SourceArn": ...,
-        "SinkType": ...,
-        "SinkArn": ...,
+        "State": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateMediaCapturePipelineRequestRequestTypeDef(TypedDict):
-    SourceType: MediaPipelineSourceTypeType,  # (1)
-    SourceArn: str,
-    SinkType: MediaPipelineSinkTypeType,  # (2)
-    SinkArn: str,
-    ClientRequestToken: NotRequired[str],
-    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+class VideoArtifactsConfigurationTypeDef(TypedDict):
+    State: ArtifactsStateType,  # (1)
+    MuxType: NotRequired[VideoMuxTypeType],  # (2)
 ```
 
-1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
-2. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
-3. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateMediaCapturePipelineResponseTypeDef
+1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
+2. See [:material-code-brackets: VideoMuxTypeType](./literals.md#videomuxtypetype) 
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import CreateMediaCapturePipelineResponseTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import TagTypeDef
 
-def get_value() -> CreateMediaCapturePipelineResponseTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "MediaCapturePipeline": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateMediaCapturePipelineResponseTypeDef(TypedDict):
-    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## DeleteMediaCapturePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -166,26 +136,6 @@ class GetMediaCapturePipelineRequestRequestTypeDef(TypedDict):
     MediaPipelineId: str,
 ```
 
-## GetMediaCapturePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import GetMediaCapturePipelineResponseTypeDef
-
-def get_value() -> GetMediaCapturePipelineResponseTypeDef:
-    return {
-        "MediaCapturePipeline": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMediaCapturePipelineResponseTypeDef(TypedDict):
-    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMediaCapturePipelinesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -203,6 +153,136 @@ class ListMediaCapturePipelinesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## MediaCapturePipelineSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import MediaCapturePipelineSummaryTypeDef
+
+def get_value() -> MediaCapturePipelineSummaryTypeDef:
+    return {
+        "MediaPipelineId": ...,
+    }
+```
+
+```python title="Definition"
+class MediaCapturePipelineSummaryTypeDef(TypedDict):
+    MediaPipelineId: NotRequired[str],
+    MediaPipelineArn: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
+
+## SelectedVideoStreamsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import SelectedVideoStreamsTypeDef
+
+def get_value() -> SelectedVideoStreamsTypeDef:
+    return {
+        "AttendeeIds": ...,
+    }
+```
+
+```python title="Definition"
+class SelectedVideoStreamsTypeDef(TypedDict):
+    AttendeeIds: NotRequired[Sequence[str]],
+    ExternalUserIds: NotRequired[Sequence[str]],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
+
+## ArtifactsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import ArtifactsConfigurationTypeDef
+
+def get_value() -> ArtifactsConfigurationTypeDef:
+    return {
+        "Audio": ...,
+        "Video": ...,
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class ArtifactsConfigurationTypeDef(TypedDict):
+    Audio: AudioArtifactsConfigurationTypeDef,  # (1)
+    Video: VideoArtifactsConfigurationTypeDef,  # (2)
+    Content: ContentArtifactsConfigurationTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef) 
+2. See [:material-code-braces: VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef) 
+3. See [:material-code-braces: ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMediaCapturePipelinesResponseTypeDef
 
 ```python title="Usage Example"
@@ -225,59 +305,71 @@ class ListMediaCapturePipelinesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MediaCapturePipelineSummaryTypeDef](./type_defs.md#mediacapturepipelinesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
+## SourceConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ListTagsForResourceRequestRequestTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import SourceConfigurationTypeDef
 
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+def get_value() -> SourceConfigurationTypeDef:
     return {
-        "ResourceARN": ...,
+        "SelectedVideoStreams": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
+class SourceConfigurationTypeDef(TypedDict):
+    SelectedVideoStreams: NotRequired[SelectedVideoStreamsTypeDef],  # (1)
 ```
 
-## ListTagsForResourceResponseTypeDef
+1. See [:material-code-braces: SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef) 
+## ChimeSdkMeetingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import ChimeSdkMeetingConfigurationTypeDef
 
-def get_value() -> ListTagsForResourceResponseTypeDef:
+def get_value() -> ChimeSdkMeetingConfigurationTypeDef:
     return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
+        "SourceConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ChimeSdkMeetingConfigurationTypeDef(TypedDict):
+    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
+    ArtifactsConfiguration: NotRequired[ArtifactsConfigurationTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MediaCapturePipelineSummaryTypeDef
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef) 
+## CreateMediaCapturePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import MediaCapturePipelineSummaryTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import CreateMediaCapturePipelineRequestRequestTypeDef
 
-def get_value() -> MediaCapturePipelineSummaryTypeDef:
+def get_value() -> CreateMediaCapturePipelineRequestRequestTypeDef:
     return {
-        "MediaPipelineId": ...,
+        "SourceType": ...,
+        "SourceArn": ...,
+        "SinkType": ...,
+        "SinkArn": ...,
     }
 ```
 
 ```python title="Definition"
-class MediaCapturePipelineSummaryTypeDef(TypedDict):
-    MediaPipelineId: NotRequired[str],
-    MediaPipelineArn: NotRequired[str],
+class CreateMediaCapturePipelineRequestRequestTypeDef(TypedDict):
+    SourceType: MediaPipelineSourceTypeType,  # (1)
+    SourceArn: str,
+    SinkType: MediaPipelineSinkTypeType,  # (2)
+    SinkArn: str,
+    ClientRequestToken: NotRequired[str],
+    ChimeSdkMeetingConfiguration: NotRequired[ChimeSdkMeetingConfigurationTypeDef],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
 ```
 
+1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
+2. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
+3. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## MediaCapturePipelineTypeDef
 
 ```python title="Usage Example"
@@ -307,135 +399,43 @@ class MediaCapturePipelineTypeDef(TypedDict):
 2. See [:material-code-brackets: MediaPipelineStatusType](./literals.md#mediapipelinestatustype) 
 3. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
 4. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
-## ResponseMetadataTypeDef
+## CreateMediaCapturePipelineResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import CreateMediaCapturePipelineResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> CreateMediaCapturePipelineResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "MediaCapturePipeline": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class CreateMediaCapturePipelineResponseTypeDef(TypedDict):
+    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## SelectedVideoStreamsTypeDef
+1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMediaCapturePipelineResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import SelectedVideoStreamsTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import GetMediaCapturePipelineResponseTypeDef
 
-def get_value() -> SelectedVideoStreamsTypeDef:
+def get_value() -> GetMediaCapturePipelineResponseTypeDef:
     return {
-        "AttendeeIds": ...,
+        "MediaCapturePipeline": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SelectedVideoStreamsTypeDef(TypedDict):
-    AttendeeIds: NotRequired[Sequence[str]],
-    ExternalUserIds: NotRequired[Sequence[str]],
+class GetMediaCapturePipelineResponseTypeDef(TypedDict):
+    MediaCapturePipeline: MediaCapturePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## SourceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import SourceConfigurationTypeDef
-
-def get_value() -> SourceConfigurationTypeDef:
-    return {
-        "SelectedVideoStreams": ...,
-    }
-```
-
-```python title="Definition"
-class SourceConfigurationTypeDef(TypedDict):
-    SelectedVideoStreams: NotRequired[SelectedVideoStreamsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    TagKeys: Sequence[str],
-```
-
-## VideoArtifactsConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import VideoArtifactsConfigurationTypeDef
-
-def get_value() -> VideoArtifactsConfigurationTypeDef:
-    return {
-        "State": ...,
-    }
-```
-
-```python title="Definition"
-class VideoArtifactsConfigurationTypeDef(TypedDict):
-    State: ArtifactsStateType,  # (1)
-    MuxType: NotRequired[VideoMuxTypeType],  # (2)
-```
-
-1. See [:material-code-brackets: ArtifactsStateType](./literals.md#artifactsstatetype) 
-2. See [:material-code-brackets: VideoMuxTypeType](./literals.md#videomuxtypetype) 
+1. See [:material-code-braces: MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

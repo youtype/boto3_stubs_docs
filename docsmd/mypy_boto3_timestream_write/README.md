@@ -96,50 +96,51 @@ def get_value() -> DimensionValueTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import TagTypeDef
 
-def get_value() -> CreateDatabaseRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "DatabaseName": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
-- [CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef)
-- [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef)
-- [CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef)
-- [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
 - [DatabaseTypeDef](./type_defs.md#databasetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - [DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef)
 - [DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef)
 - [DescribeDatabaseRequestRequestTypeDef](./type_defs.md#describedatabaserequestrequesttypedef)
-- [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef)
-- [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
-- [DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef)
-- [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)
-- [DimensionTypeDef](./type_defs.md#dimensiontypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- [DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef)
+- [DimensionTypeDef](./type_defs.md#dimensiontypedef)
 - [ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef)
-- [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)
 - [ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef)
-- [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
-- [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
-- [MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)
-- [RecordTypeDef](./type_defs.md#recordtypedef)
-- [RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-- [TableTypeDef](./type_defs.md#tabletypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
+- [MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)
+- [RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef)
+- [CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef)
+- [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef)
+- [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef)
-- [UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef)
-- [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef)
-- [WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef)
+- [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
+- [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
+- [RecordTypeDef](./type_defs.md#recordtypedef)
 - [WriteRecordsResponseTypeDef](./type_defs.md#writerecordsresponsetypedef)
+- [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
+- [WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef)
+- [CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef)
+- [TableTypeDef](./type_defs.md#tabletypedef)
+- [UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef)
+- [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef)
+- [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)
+- [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
+- [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef)
 

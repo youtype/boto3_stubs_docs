@@ -104,10 +104,10 @@ def get_value() -> CreateTokenRequestRequestTypeDef:
 ```
 
 - [CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef)
-- [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef)
-- [RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef)
-- [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef)
 - [StartDeviceAuthorizationRequestRequestTypeDef](./type_defs.md#startdeviceauthorizationrequestrequesttypedef)
+- [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef)
+- [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef)
 - [StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef)
 

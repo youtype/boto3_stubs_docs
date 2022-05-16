@@ -48,6 +48,23 @@ class ItemTypeDef(TypedDict):
     properties: NotRequired[str],
 ```
 
+## UserTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_events.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "userId": ...,
+    }
+```
+
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    userId: str,
+    properties: NotRequired[str],
+```
+
 ## PutEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -108,20 +125,3 @@ class PutUsersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-## UserTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_personalize_events.type_defs import UserTypeDef
-
-def get_value() -> UserTypeDef:
-    return {
-        "userId": ...,
-    }
-```
-
-```python title="Definition"
-class UserTypeDef(TypedDict):
-    userId: str,
-    properties: NotRequired[str],
-```
-

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36089,90 +36089,89 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.type_defs</span> <span class="kn">import</span> <span class="n">AddTagsRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddTagsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;TagsList&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addtagsrequestrequesttypedef">AddTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#advancedeventselectortypedef">AdvancedEventSelectorTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#advancedfieldselectortypedef">AdvancedFieldSelectorTypeDef</a></li>
 <li><a href="type_defs/#cancelqueryrequestrequesttypedef">CancelQueryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#cancelqueryresponsetypedef">CancelQueryResponseTypeDef</a></li>
-<li><a href="type_defs/#createeventdatastorerequestrequesttypedef">CreateEventDataStoreRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createeventdatastoreresponsetypedef">CreateEventDataStoreResponseTypeDef</a></li>
-<li><a href="type_defs/#createtrailrequestrequesttypedef">CreateTrailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtrailresponsetypedef">CreateTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#dataresourcetypedef">DataResourceTypeDef</a></li>
 <li><a href="type_defs/#deleteeventdatastorerequestrequesttypedef">DeleteEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetrailrequestrequesttypedef">DeleteTrailRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describequeryrequestrequesttypedef">DescribeQueryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describequeryresponsetypedef">DescribeQueryResponseTypeDef</a></li>
-<li><a href="type_defs/#describetrailsrequestrequesttypedef">DescribeTrailsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetrailsresponsetypedef">DescribeTrailsResponseTypeDef</a></li>
-<li><a href="type_defs/#eventdatastoretypedef">EventDataStoreTypeDef</a></li>
-<li><a href="type_defs/#eventselectortypedef">EventSelectorTypeDef</a></li>
-<li><a href="type_defs/#eventtypedef">EventTypeDef</a></li>
-<li><a href="type_defs/#geteventdatastorerequestrequesttypedef">GetEventDataStoreRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#geteventdatastoreresponsetypedef">GetEventDataStoreResponseTypeDef</a></li>
-<li><a href="type_defs/#geteventselectorsrequestrequesttypedef">GetEventSelectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#geteventselectorsresponsetypedef">GetEventSelectorsResponseTypeDef</a></li>
-<li><a href="type_defs/#getinsightselectorsrequestrequesttypedef">GetInsightSelectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getinsightselectorsresponsetypedef">GetInsightSelectorsResponseTypeDef</a></li>
-<li><a href="type_defs/#getqueryresultsrequestrequesttypedef">GetQueryResultsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getqueryresultsresponsetypedef">GetQueryResultsResponseTypeDef</a></li>
-<li><a href="type_defs/#gettrailrequestrequesttypedef">GetTrailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettrailresponsetypedef">GetTrailResponseTypeDef</a></li>
-<li><a href="type_defs/#gettrailstatusrequestrequesttypedef">GetTrailStatusRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettrailstatusresponsetypedef">GetTrailStatusResponseTypeDef</a></li>
-<li><a href="type_defs/#insightselectortypedef">InsightSelectorTypeDef</a></li>
-<li><a href="type_defs/#listeventdatastoresrequestrequesttypedef">ListEventDataStoresRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listeventdatastoresresponsetypedef">ListEventDataStoresResponseTypeDef</a></li>
-<li><a href="type_defs/#listpublickeysrequestlistpublickeyspaginatetypedef">ListPublicKeysRequestListPublicKeysPaginateTypeDef</a></li>
-<li><a href="type_defs/#listpublickeysrequestrequesttypedef">ListPublicKeysRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listpublickeysresponsetypedef">ListPublicKeysResponseTypeDef</a></li>
-<li><a href="type_defs/#listqueriesrequestrequesttypedef">ListQueriesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listqueriesresponsetypedef">ListQueriesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsrequestlisttagspaginatetypedef">ListTagsRequestListTagsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listtagsrequestrequesttypedef">ListTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsresponsetypedef">ListTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtrailsrequestlisttrailspaginatetypedef">ListTrailsRequestListTrailsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listtrailsrequestrequesttypedef">ListTrailsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtrailsresponsetypedef">ListTrailsResponseTypeDef</a></li>
-<li><a href="type_defs/#lookupattributetypedef">LookupAttributeTypeDef</a></li>
-<li><a href="type_defs/#lookupeventsrequestlookupeventspaginatetypedef">LookupEventsRequestLookupEventsPaginateTypeDef</a></li>
-<li><a href="type_defs/#lookupeventsrequestrequesttypedef">LookupEventsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#lookupeventsresponsetypedef">LookupEventsResponseTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#publickeytypedef">PublicKeyTypeDef</a></li>
-<li><a href="type_defs/#puteventselectorsrequestrequesttypedef">PutEventSelectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#puteventselectorsresponsetypedef">PutEventSelectorsResponseTypeDef</a></li>
-<li><a href="type_defs/#putinsightselectorsrequestrequesttypedef">PutInsightSelectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putinsightselectorsresponsetypedef">PutInsightSelectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#querystatisticsfordescribequerytypedef">QueryStatisticsForDescribeQueryTypeDef</a></li>
-<li><a href="type_defs/#querystatisticstypedef">QueryStatisticsTypeDef</a></li>
-<li><a href="type_defs/#querytypedef">QueryTypeDef</a></li>
-<li><a href="type_defs/#removetagsrequestrequesttypedef">RemoveTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#resourcetagtypedef">ResourceTagTypeDef</a></li>
+<li><a href="type_defs/#describetrailsrequestrequesttypedef">DescribeTrailsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#trailtypedef">TrailTypeDef</a></li>
 <li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#geteventdatastorerequestrequesttypedef">GetEventDataStoreRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#geteventselectorsrequestrequesttypedef">GetEventSelectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getinsightselectorsrequestrequesttypedef">GetInsightSelectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#insightselectortypedef">InsightSelectorTypeDef</a></li>
+<li><a href="type_defs/#getqueryresultsrequestrequesttypedef">GetQueryResultsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#querystatisticstypedef">QueryStatisticsTypeDef</a></li>
+<li><a href="type_defs/#gettrailrequestrequesttypedef">GetTrailRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettrailstatusrequestrequesttypedef">GetTrailStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listeventdatastoresrequestrequesttypedef">ListEventDataStoresRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listpublickeysrequestrequesttypedef">ListPublicKeysRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#publickeytypedef">PublicKeyTypeDef</a></li>
+<li><a href="type_defs/#listqueriesrequestrequesttypedef">ListQueriesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#querytypedef">QueryTypeDef</a></li>
+<li><a href="type_defs/#listtagsrequestrequesttypedef">ListTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtrailsrequestrequesttypedef">ListTrailsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#trailinfotypedef">TrailInfoTypeDef</a></li>
+<li><a href="type_defs/#lookupattributetypedef">LookupAttributeTypeDef</a></li>
 <li><a href="type_defs/#restoreeventdatastorerequestrequesttypedef">RestoreEventDataStoreRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#restoreeventdatastoreresponsetypedef">RestoreEventDataStoreResponseTypeDef</a></li>
 <li><a href="type_defs/#startloggingrequestrequesttypedef">StartLoggingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startqueryrequestrequesttypedef">StartQueryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startqueryresponsetypedef">StartQueryResponseTypeDef</a></li>
 <li><a href="type_defs/#stoploggingrequestrequesttypedef">StopLoggingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#trailinfotypedef">TrailInfoTypeDef</a></li>
-<li><a href="type_defs/#trailtypedef">TrailTypeDef</a></li>
+<li><a href="type_defs/#updatetrailrequestrequesttypedef">UpdateTrailRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addtagsrequestrequesttypedef">AddTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtrailrequestrequesttypedef">CreateTrailRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removetagsrequestrequesttypedef">RemoveTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourcetagtypedef">ResourceTagTypeDef</a></li>
+<li><a href="type_defs/#advancedeventselectortypedef">AdvancedEventSelectorTypeDef</a></li>
+<li><a href="type_defs/#cancelqueryresponsetypedef">CancelQueryResponseTypeDef</a></li>
+<li><a href="type_defs/#createtrailresponsetypedef">CreateTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#gettrailstatusresponsetypedef">GetTrailStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#startqueryresponsetypedef">StartQueryResponseTypeDef</a></li>
+<li><a href="type_defs/#updatetrailresponsetypedef">UpdateTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#eventselectortypedef">EventSelectorTypeDef</a></li>
+<li><a href="type_defs/#describequeryresponsetypedef">DescribeQueryResponseTypeDef</a></li>
+<li><a href="type_defs/#describetrailsresponsetypedef">DescribeTrailsResponseTypeDef</a></li>
+<li><a href="type_defs/#gettrailresponsetypedef">GetTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#eventtypedef">EventTypeDef</a></li>
+<li><a href="type_defs/#getinsightselectorsresponsetypedef">GetInsightSelectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#putinsightselectorsrequestrequesttypedef">PutInsightSelectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putinsightselectorsresponsetypedef">PutInsightSelectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#getqueryresultsresponsetypedef">GetQueryResultsResponseTypeDef</a></li>
+<li><a href="type_defs/#listpublickeysrequestlistpublickeyspaginatetypedef">ListPublicKeysRequestListPublicKeysPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtagsrequestlisttagspaginatetypedef">ListTagsRequestListTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtrailsrequestlisttrailspaginatetypedef">ListTrailsRequestListTrailsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listpublickeysresponsetypedef">ListPublicKeysResponseTypeDef</a></li>
+<li><a href="type_defs/#listqueriesresponsetypedef">ListQueriesResponseTypeDef</a></li>
+<li><a href="type_defs/#listtrailsresponsetypedef">ListTrailsResponseTypeDef</a></li>
+<li><a href="type_defs/#lookupeventsrequestlookupeventspaginatetypedef">LookupEventsRequestLookupEventsPaginateTypeDef</a></li>
+<li><a href="type_defs/#lookupeventsrequestrequesttypedef">LookupEventsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsresponsetypedef">ListTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#createeventdatastorerequestrequesttypedef">CreateEventDataStoreRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createeventdatastoreresponsetypedef">CreateEventDataStoreResponseTypeDef</a></li>
+<li><a href="type_defs/#eventdatastoretypedef">EventDataStoreTypeDef</a></li>
+<li><a href="type_defs/#geteventdatastoreresponsetypedef">GetEventDataStoreResponseTypeDef</a></li>
+<li><a href="type_defs/#restoreeventdatastoreresponsetypedef">RestoreEventDataStoreResponseTypeDef</a></li>
 <li><a href="type_defs/#updateeventdatastorerequestrequesttypedef">UpdateEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateeventdatastoreresponsetypedef">UpdateEventDataStoreResponseTypeDef</a></li>
-<li><a href="type_defs/#updatetrailrequestrequesttypedef">UpdateTrailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatetrailresponsetypedef">UpdateTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#geteventselectorsresponsetypedef">GetEventSelectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#puteventselectorsrequestrequesttypedef">PutEventSelectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#puteventselectorsresponsetypedef">PutEventSelectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#lookupeventsresponsetypedef">LookupEventsResponseTypeDef</a></li>
+<li><a href="type_defs/#listeventdatastoresresponsetypedef">ListEventDataStoresResponseTypeDef</a></li>
 </ul>
 
               
@@ -36242,7 +36241,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

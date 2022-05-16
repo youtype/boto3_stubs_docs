@@ -23,50 +23,22 @@ class AbortIncompleteMultipartUploadTypeDef(TypedDict):
     DaysAfterInitiation: NotRequired[int],
 ```
 
-## AccessPointTypeDef
+## VpcConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import AccessPointTypeDef
+from mypy_boto3_s3control.type_defs import VpcConfigurationTypeDef
 
-def get_value() -> AccessPointTypeDef:
+def get_value() -> VpcConfigurationTypeDef:
     return {
-        "Name": ...,
-        "NetworkOrigin": ...,
-        "Bucket": ...,
+        "VpcId": ...,
     }
 ```
 
 ```python title="Definition"
-class AccessPointTypeDef(TypedDict):
-    Name: str,
-    NetworkOrigin: NetworkOriginType,  # (1)
-    Bucket: str,
-    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (2)
-    AccessPointArn: NotRequired[str],
-    Alias: NotRequired[str],
+class VpcConfigurationTypeDef(TypedDict):
+    VpcId: str,
 ```
 
-1. See [:material-code-brackets: NetworkOriginType](./literals.md#networkorigintype) 
-2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-## AccountLevelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import AccountLevelTypeDef
-
-def get_value() -> AccountLevelTypeDef:
-    return {
-        "BucketLevel": ...,
-    }
-```
-
-```python title="Definition"
-class AccountLevelTypeDef(TypedDict):
-    BucketLevel: BucketLevelTypeDef,  # (2)
-    ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
-2. See [:material-code-braces: BucketLevelTypeDef](./type_defs.md#bucketleveltypedef) 
 ## ActivityMetricsTypeDef
 
 ```python title="Usage Example"
@@ -102,70 +74,40 @@ class AsyncErrorDetailsTypeDef(TypedDict):
     RequestId: NotRequired[str],
 ```
 
-## AsyncOperationTypeDef
+## DeleteMultiRegionAccessPointInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import AsyncOperationTypeDef
+from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointInputTypeDef
 
-def get_value() -> AsyncOperationTypeDef:
+def get_value() -> DeleteMultiRegionAccessPointInputTypeDef:
     return {
-        "CreationTime": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class AsyncOperationTypeDef(TypedDict):
-    CreationTime: NotRequired[datetime],
-    Operation: NotRequired[AsyncOperationNameType],  # (1)
-    RequestTokenARN: NotRequired[str],
-    RequestParameters: NotRequired[AsyncRequestParametersTypeDef],  # (2)
-    RequestStatus: NotRequired[str],
-    ResponseDetails: NotRequired[AsyncResponseDetailsTypeDef],  # (3)
+class DeleteMultiRegionAccessPointInputTypeDef(TypedDict):
+    Name: str,
 ```
 
-1. See [:material-code-brackets: AsyncOperationNameType](./literals.md#asyncoperationnametype) 
-2. See [:material-code-braces: AsyncRequestParametersTypeDef](./type_defs.md#asyncrequestparameterstypedef) 
-3. See [:material-code-braces: AsyncResponseDetailsTypeDef](./type_defs.md#asyncresponsedetailstypedef) 
-## AsyncRequestParametersTypeDef
+## PutMultiRegionAccessPointPolicyInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import AsyncRequestParametersTypeDef
+from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyInputTypeDef
 
-def get_value() -> AsyncRequestParametersTypeDef:
+def get_value() -> PutMultiRegionAccessPointPolicyInputTypeDef:
     return {
-        "CreateMultiRegionAccessPointRequest": ...,
+        "Name": ...,
+        "Policy": ...,
     }
 ```
 
 ```python title="Definition"
-class AsyncRequestParametersTypeDef(TypedDict):
-    CreateMultiRegionAccessPointRequest: NotRequired[CreateMultiRegionAccessPointInputTypeDef],  # (1)
-    DeleteMultiRegionAccessPointRequest: NotRequired[DeleteMultiRegionAccessPointInputTypeDef],  # (2)
-    PutMultiRegionAccessPointPolicyRequest: NotRequired[PutMultiRegionAccessPointPolicyInputTypeDef],  # (3)
+class PutMultiRegionAccessPointPolicyInputTypeDef(TypedDict):
+    Name: str,
+    Policy: str,
 ```
 
-1. See [:material-code-braces: CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef) 
-2. See [:material-code-braces: DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef) 
-3. See [:material-code-braces: PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef) 
-## AsyncResponseDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import AsyncResponseDetailsTypeDef
-
-def get_value() -> AsyncResponseDetailsTypeDef:
-    return {
-        "MultiRegionAccessPointDetails": ...,
-    }
-```
-
-```python title="Definition"
-class AsyncResponseDetailsTypeDef(TypedDict):
-    MultiRegionAccessPointDetails: NotRequired[MultiRegionAccessPointsAsyncResponseTypeDef],  # (1)
-    ErrorDetails: NotRequired[AsyncErrorDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: MultiRegionAccessPointsAsyncResponseTypeDef](./type_defs.md#multiregionaccesspointsasyncresponsetypedef) 
-2. See [:material-code-braces: AsyncErrorDetailsTypeDef](./type_defs.md#asyncerrordetailstypedef) 
 ## AwsLambdaTransformationTypeDef
 
 ```python title="Usage Example"
@@ -183,25 +125,6 @@ class AwsLambdaTransformationTypeDef(TypedDict):
     FunctionPayload: NotRequired[str],
 ```
 
-## BucketLevelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import BucketLevelTypeDef
-
-def get_value() -> BucketLevelTypeDef:
-    return {
-        "ActivityMetrics": ...,
-    }
-```
-
-```python title="Definition"
-class BucketLevelTypeDef(TypedDict):
-    ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
-    PrefixLevel: NotRequired[PrefixLevelTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
-2. See [:material-code-braces: PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef) 
 ## CloudWatchMetricsTypeDef
 
 ```python title="Usage Example"
@@ -218,91 +141,49 @@ class CloudWatchMetricsTypeDef(TypedDict):
     IsEnabled: bool,
 ```
 
-## CreateAccessPointForObjectLambdaRequestRequestTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateAccessPointForObjectLambdaRequestRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "AccountId": ...,
-        "Name": ...,
-        "Configuration": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccessPointForObjectLambdaRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Name: str,
-    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
-## CreateAccessPointForObjectLambdaResultTypeDef
+## PublicAccessBlockConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import PublicAccessBlockConfigurationTypeDef
 
-def get_value() -> CreateAccessPointForObjectLambdaResultTypeDef:
+def get_value() -> PublicAccessBlockConfigurationTypeDef:
     return {
-        "ObjectLambdaAccessPointArn": ...,
-        "ResponseMetadata": ...,
+        "BlockPublicAcls": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccessPointForObjectLambdaResultTypeDef(TypedDict):
-    ObjectLambdaAccessPointArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class PublicAccessBlockConfigurationTypeDef(TypedDict):
+    BlockPublicAcls: NotRequired[bool],
+    IgnorePublicAcls: NotRequired[bool],
+    BlockPublicPolicy: NotRequired[bool],
+    RestrictPublicBuckets: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAccessPointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateAccessPointRequestRequestTypeDef
-
-def get_value() -> CreateAccessPointRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Name": ...,
-        "Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAccessPointRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Name: str,
-    Bucket: str,
-    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
-    PublicAccessBlockConfiguration: NotRequired[PublicAccessBlockConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-2. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-## CreateAccessPointResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
-
-def get_value() -> CreateAccessPointResultTypeDef:
-    return {
-        "AccessPointArn": ...,
-        "Alias": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAccessPointResultTypeDef(TypedDict):
-    AccessPointArn: str,
-    Alias: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBucketConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -320,170 +201,62 @@ class CreateBucketConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype) 
-## CreateBucketRequestRequestTypeDef
+## JobReportTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateBucketRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import JobReportTypeDef
 
-def get_value() -> CreateBucketRequestRequestTypeDef:
+def get_value() -> JobReportTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class JobReportTypeDef(TypedDict):
+    Enabled: bool,
+    Bucket: NotRequired[str],
+    Format: NotRequired[JobReportFormatType],  # (1)
+    Prefix: NotRequired[str],
+    ReportScope: NotRequired[JobReportScopeType],  # (2)
+```
+
+1. See [:material-code-brackets: JobReportFormatType](./literals.md#jobreportformattype) 
+2. See [:material-code-brackets: JobReportScopeType](./literals.md#jobreportscopetype) 
+## S3TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3TagTypeDef
+
+def get_value() -> S3TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class S3TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## RegionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import RegionTypeDef
+
+def get_value() -> RegionTypeDef:
     return {
         "Bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateBucketRequestRequestTypeDef(TypedDict):
+class RegionTypeDef(TypedDict):
     Bucket: str,
-    ACL: NotRequired[BucketCannedACLType],  # (1)
-    CreateBucketConfiguration: NotRequired[CreateBucketConfigurationTypeDef],  # (2)
-    GrantFullControl: NotRequired[str],
-    GrantRead: NotRequired[str],
-    GrantReadACP: NotRequired[str],
-    GrantWrite: NotRequired[str],
-    GrantWriteACP: NotRequired[str],
-    ObjectLockEnabledForBucket: NotRequired[bool],
-    OutpostId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
-2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
-## CreateBucketResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateBucketResultTypeDef
-
-def get_value() -> CreateBucketResultTypeDef:
-    return {
-        "Location": ...,
-        "BucketArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBucketResultTypeDef(TypedDict):
-    Location: str,
-    BucketArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateJobRequestRequestTypeDef
-
-def get_value() -> CreateJobRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Operation": ...,
-        "Report": ...,
-        "ClientRequestToken": ...,
-        "Priority": ...,
-        "RoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Operation: JobOperationTypeDef,  # (1)
-    Report: JobReportTypeDef,  # (2)
-    ClientRequestToken: str,
-    Priority: int,
-    RoleArn: str,
-    ConfirmationRequired: NotRequired[bool],
-    Manifest: NotRequired[JobManifestTypeDef],  # (3)
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[S3TagTypeDef]],  # (4)
-    ManifestGenerator: NotRequired[JobManifestGeneratorTypeDef],  # (5)
-```
-
-1. See [:material-code-braces: JobOperationTypeDef](./type_defs.md#joboperationtypedef) 
-2. See [:material-code-braces: JobReportTypeDef](./type_defs.md#jobreporttypedef) 
-3. See [:material-code-braces: JobManifestTypeDef](./type_defs.md#jobmanifesttypedef) 
-4. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-5. See [:material-code-braces: JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef) 
-## CreateJobResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateJobResultTypeDef
-
-def get_value() -> CreateJobResultTypeDef:
-    return {
-        "JobId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateJobResultTypeDef(TypedDict):
-    JobId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMultiRegionAccessPointInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointInputTypeDef
-
-def get_value() -> CreateMultiRegionAccessPointInputTypeDef:
-    return {
-        "Name": ...,
-        "Regions": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMultiRegionAccessPointInputTypeDef(TypedDict):
-    Name: str,
-    Regions: Sequence[RegionTypeDef],  # (2)
-    PublicAccessBlock: NotRequired[PublicAccessBlockConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-2. See [:material-code-braces: RegionTypeDef](./type_defs.md#regiontypedef) 
-## CreateMultiRegionAccessPointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointRequestRequestTypeDef
-
-def get_value() -> CreateMultiRegionAccessPointRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "ClientToken": ...,
-        "Details": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    ClientToken: str,
-    Details: CreateMultiRegionAccessPointInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef) 
-## CreateMultiRegionAccessPointResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointResultTypeDef
-
-def get_value() -> CreateMultiRegionAccessPointResultTypeDef:
-    return {
-        "RequestTokenARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMultiRegionAccessPointResultTypeDef(TypedDict):
-    RequestTokenARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAccessPointForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -646,62 +419,6 @@ class DeleteJobTaggingRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
-## DeleteMultiRegionAccessPointInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointInputTypeDef
-
-def get_value() -> DeleteMultiRegionAccessPointInputTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMultiRegionAccessPointInputTypeDef(TypedDict):
-    Name: str,
-```
-
-## DeleteMultiRegionAccessPointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointRequestRequestTypeDef
-
-def get_value() -> DeleteMultiRegionAccessPointRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "ClientToken": ...,
-        "Details": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    ClientToken: str,
-    Details: DeleteMultiRegionAccessPointInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef) 
-## DeleteMultiRegionAccessPointResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointResultTypeDef
-
-def get_value() -> DeleteMultiRegionAccessPointResultTypeDef:
-    return {
-        "RequestTokenARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMultiRegionAccessPointResultTypeDef(TypedDict):
-    RequestTokenARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeletePublicAccessBlockRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -772,26 +489,6 @@ class DescribeJobRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
-## DescribeJobResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import DescribeJobResultTypeDef
-
-def get_value() -> DescribeJobResultTypeDef:
-    return {
-        "Job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobResultTypeDef(TypedDict):
-    Job: JobDescriptorTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobDescriptorTypeDef](./type_defs.md#jobdescriptortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMultiRegionAccessPointOperationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -810,26 +507,6 @@ class DescribeMultiRegionAccessPointOperationRequestRequestTypeDef(TypedDict):
     RequestTokenARN: str,
 ```
 
-## DescribeMultiRegionAccessPointOperationResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import DescribeMultiRegionAccessPointOperationResultTypeDef
-
-def get_value() -> DescribeMultiRegionAccessPointOperationResultTypeDef:
-    return {
-        "AsyncOperation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMultiRegionAccessPointOperationResultTypeDef(TypedDict):
-    AsyncOperation: AsyncOperationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AsyncOperationTypeDef](./type_defs.md#asyncoperationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EstablishedMultiRegionAccessPointPolicyTypeDef
 
 ```python title="Usage Example"
@@ -863,24 +540,22 @@ class ExcludeTypeDef(TypedDict):
     Regions: NotRequired[List[str]],
 ```
 
-## GeneratedManifestEncryptionTypeDef
+## SSEKMSEncryptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GeneratedManifestEncryptionTypeDef
+from mypy_boto3_s3control.type_defs import SSEKMSEncryptionTypeDef
 
-def get_value() -> GeneratedManifestEncryptionTypeDef:
+def get_value() -> SSEKMSEncryptionTypeDef:
     return {
-        "SSES3": ...,
+        "KeyId": ...,
     }
 ```
 
 ```python title="Definition"
-class GeneratedManifestEncryptionTypeDef(TypedDict):
-    SSES3: NotRequired[Mapping[str, Any]],
-    SSEKMS: NotRequired[SSEKMSEncryptionTypeDef],  # (1)
+class SSEKMSEncryptionTypeDef(TypedDict):
+    KeyId: str,
 ```
 
-1. See [:material-code-braces: SSEKMSEncryptionTypeDef](./type_defs.md#ssekmsencryptiontypedef) 
 ## GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -899,26 +574,6 @@ class GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef(TypedDict)
     Name: str,
 ```
 
-## GetAccessPointConfigurationForObjectLambdaResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaResultTypeDef
-
-def get_value() -> GetAccessPointConfigurationForObjectLambdaResultTypeDef:
-    return {
-        "Configuration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointConfigurationForObjectLambdaResultTypeDef(TypedDict):
-    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -937,30 +592,6 @@ class GetAccessPointForObjectLambdaRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointForObjectLambdaResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaResultTypeDef
-
-def get_value() -> GetAccessPointForObjectLambdaResultTypeDef:
-    return {
-        "Name": ...,
-        "PublicAccessBlockConfiguration": ...,
-        "CreationDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointForObjectLambdaResultTypeDef(TypedDict):
-    Name: str,
-    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
-    CreationDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -979,25 +610,6 @@ class GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointPolicyForObjectLambdaResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaResultTypeDef
-
-def get_value() -> GetAccessPointPolicyForObjectLambdaResultTypeDef:
-    return {
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointPolicyForObjectLambdaResultTypeDef(TypedDict):
-    Policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1016,25 +628,6 @@ class GetAccessPointPolicyRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointPolicyResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyResultTypeDef
-
-def get_value() -> GetAccessPointPolicyResultTypeDef:
-    return {
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointPolicyResultTypeDef(TypedDict):
-    Policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1053,26 +646,22 @@ class GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+## PolicyStatusTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import PolicyStatusTypeDef
 
-def get_value() -> GetAccessPointPolicyStatusForObjectLambdaResultTypeDef:
+def get_value() -> PolicyStatusTypeDef:
     return {
-        "PolicyStatus": ...,
-        "ResponseMetadata": ...,
+        "IsPublic": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAccessPointPolicyStatusForObjectLambdaResultTypeDef(TypedDict):
-    PolicyStatus: PolicyStatusTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PolicyStatusTypeDef(TypedDict):
+    IsPublic: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointPolicyStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1091,26 +680,6 @@ class GetAccessPointPolicyStatusRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointPolicyStatusResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusResultTypeDef
-
-def get_value() -> GetAccessPointPolicyStatusResultTypeDef:
-    return {
-        "PolicyStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointPolicyStatusResultTypeDef(TypedDict):
-    PolicyStatus: PolicyStatusTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessPointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1129,44 +698,6 @@ class GetAccessPointRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetAccessPointResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetAccessPointResultTypeDef
-
-def get_value() -> GetAccessPointResultTypeDef:
-    return {
-        "Name": ...,
-        "Bucket": ...,
-        "NetworkOrigin": ...,
-        "VpcConfiguration": ...,
-        "PublicAccessBlockConfiguration": ...,
-        "CreationDate": ...,
-        "Alias": ...,
-        "AccessPointArn": ...,
-        "Endpoints": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessPointResultTypeDef(TypedDict):
-    Name: str,
-    Bucket: str,
-    NetworkOrigin: NetworkOriginType,  # (1)
-    VpcConfiguration: VpcConfigurationTypeDef,  # (2)
-    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (3)
-    CreationDate: datetime,
-    Alias: str,
-    AccessPointArn: str,
-    Endpoints: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: NetworkOriginType](./literals.md#networkorigintype) 
-2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-3. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1185,26 +716,6 @@ class GetBucketLifecycleConfigurationRequestRequestTypeDef(TypedDict):
     Bucket: str,
 ```
 
-## GetBucketLifecycleConfigurationResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResultTypeDef
-
-def get_value() -> GetBucketLifecycleConfigurationResultTypeDef:
-    return {
-        "Rules": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketLifecycleConfigurationResultTypeDef(TypedDict):
-    Rules: List[LifecycleRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1223,25 +734,6 @@ class GetBucketPolicyRequestRequestTypeDef(TypedDict):
     Bucket: str,
 ```
 
-## GetBucketPolicyResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetBucketPolicyResultTypeDef
-
-def get_value() -> GetBucketPolicyResultTypeDef:
-    return {
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketPolicyResultTypeDef(TypedDict):
-    Policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1260,29 +752,6 @@ class GetBucketRequestRequestTypeDef(TypedDict):
     Bucket: str,
 ```
 
-## GetBucketResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetBucketResultTypeDef
-
-def get_value() -> GetBucketResultTypeDef:
-    return {
-        "Bucket": ...,
-        "PublicAccessBlockEnabled": ...,
-        "CreationDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketResultTypeDef(TypedDict):
-    Bucket: str,
-    PublicAccessBlockEnabled: bool,
-    CreationDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketTaggingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1301,26 +770,6 @@ class GetBucketTaggingRequestRequestTypeDef(TypedDict):
     Bucket: str,
 ```
 
-## GetBucketTaggingResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetBucketTaggingResultTypeDef
-
-def get_value() -> GetBucketTaggingResultTypeDef:
-    return {
-        "TagSet": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketTaggingResultTypeDef(TypedDict):
-    TagSet: List[S3TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobTaggingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1339,26 +788,6 @@ class GetJobTaggingRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
-## GetJobTaggingResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetJobTaggingResultTypeDef
-
-def get_value() -> GetJobTaggingResultTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetJobTaggingResultTypeDef(TypedDict):
-    Tags: List[S3TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMultiRegionAccessPointPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1377,26 +806,6 @@ class GetMultiRegionAccessPointPolicyRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetMultiRegionAccessPointPolicyResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointPolicyResultTypeDef
-
-def get_value() -> GetMultiRegionAccessPointPolicyResultTypeDef:
-    return {
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMultiRegionAccessPointPolicyResultTypeDef(TypedDict):
-    Policy: MultiRegionAccessPointPolicyDocumentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MultiRegionAccessPointPolicyDocumentTypeDef](./type_defs.md#multiregionaccesspointpolicydocumenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1415,26 +824,6 @@ class GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetMultiRegionAccessPointPolicyStatusResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointPolicyStatusResultTypeDef
-
-def get_value() -> GetMultiRegionAccessPointPolicyStatusResultTypeDef:
-    return {
-        "Established": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMultiRegionAccessPointPolicyStatusResultTypeDef(TypedDict):
-    Established: PolicyStatusTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMultiRegionAccessPointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1453,46 +842,6 @@ class GetMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetMultiRegionAccessPointResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointResultTypeDef
-
-def get_value() -> GetMultiRegionAccessPointResultTypeDef:
-    return {
-        "AccessPoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMultiRegionAccessPointResultTypeDef(TypedDict):
-    AccessPoint: MultiRegionAccessPointReportTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MultiRegionAccessPointReportTypeDef](./type_defs.md#multiregionaccesspointreporttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetPublicAccessBlockOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputTypeDef
-
-def get_value() -> GetPublicAccessBlockOutputTypeDef:
-    return {
-        "PublicAccessBlockConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPublicAccessBlockOutputTypeDef(TypedDict):
-    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPublicAccessBlockRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1527,26 +876,6 @@ class GetStorageLensConfigurationRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
-## GetStorageLensConfigurationResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationResultTypeDef
-
-def get_value() -> GetStorageLensConfigurationResultTypeDef:
-    return {
-        "StorageLensConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetStorageLensConfigurationResultTypeDef(TypedDict):
-    StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStorageLensConfigurationTaggingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1565,26 +894,24 @@ class GetStorageLensConfigurationTaggingRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
-## GetStorageLensConfigurationTaggingResultTypeDef
+## StorageLensTagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingResultTypeDef
+from mypy_boto3_s3control.type_defs import StorageLensTagTypeDef
 
-def get_value() -> GetStorageLensConfigurationTaggingResultTypeDef:
+def get_value() -> StorageLensTagTypeDef:
     return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStorageLensConfigurationTaggingResultTypeDef(TypedDict):
-    Tags: List[StorageLensTagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class StorageLensTagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IncludeTypeDef
 
 ```python title="Usage Example"
@@ -1602,48 +929,6 @@ class IncludeTypeDef(TypedDict):
     Regions: NotRequired[List[str]],
 ```
 
-## JobDescriptorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobDescriptorTypeDef
-
-def get_value() -> JobDescriptorTypeDef:
-    return {
-        "JobId": ...,
-    }
-```
-
-```python title="Definition"
-class JobDescriptorTypeDef(TypedDict):
-    JobId: NotRequired[str],
-    ConfirmationRequired: NotRequired[bool],
-    Description: NotRequired[str],
-    JobArn: NotRequired[str],
-    Status: NotRequired[JobStatusType],  # (1)
-    Manifest: NotRequired[JobManifestTypeDef],  # (2)
-    Operation: NotRequired[JobOperationTypeDef],  # (3)
-    Priority: NotRequired[int],
-    ProgressSummary: NotRequired[JobProgressSummaryTypeDef],  # (4)
-    StatusUpdateReason: NotRequired[str],
-    FailureReasons: NotRequired[List[JobFailureTypeDef]],  # (5)
-    Report: NotRequired[JobReportTypeDef],  # (6)
-    CreationTime: NotRequired[datetime],
-    TerminationDate: NotRequired[datetime],
-    RoleArn: NotRequired[str],
-    SuspendedDate: NotRequired[datetime],
-    SuspendedCause: NotRequired[str],
-    ManifestGenerator: NotRequired[JobManifestGeneratorTypeDef],  # (7)
-    GeneratedManifestDescriptor: NotRequired[S3GeneratedManifestDescriptorTypeDef],  # (8)
-```
-
-1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-2. See [:material-code-braces: JobManifestTypeDef](./type_defs.md#jobmanifesttypedef) 
-3. See [:material-code-braces: JobOperationTypeDef](./type_defs.md#joboperationtypedef) 
-4. See [:material-code-braces: JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef) 
-5. See [:material-code-braces: JobFailureTypeDef](./type_defs.md#jobfailuretypedef) 
-6. See [:material-code-braces: JobReportTypeDef](./type_defs.md#jobreporttypedef) 
-7. See [:material-code-braces: JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef) 
-8. See [:material-code-braces: S3GeneratedManifestDescriptorTypeDef](./type_defs.md#s3generatedmanifestdescriptortypedef) 
 ## JobFailureTypeDef
 
 ```python title="Usage Example"
@@ -1661,32 +946,6 @@ class JobFailureTypeDef(TypedDict):
     FailureReason: NotRequired[str],
 ```
 
-## JobListDescriptorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobListDescriptorTypeDef
-
-def get_value() -> JobListDescriptorTypeDef:
-    return {
-        "JobId": ...,
-    }
-```
-
-```python title="Definition"
-class JobListDescriptorTypeDef(TypedDict):
-    JobId: NotRequired[str],
-    Description: NotRequired[str],
-    Operation: NotRequired[OperationNameType],  # (1)
-    Priority: NotRequired[int],
-    Status: NotRequired[JobStatusType],  # (2)
-    CreationTime: NotRequired[datetime],
-    TerminationDate: NotRequired[datetime],
-    ProgressSummary: NotRequired[JobProgressSummaryTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: OperationNameType](./literals.md#operationnametype) 
-2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-3. See [:material-code-braces: JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef) 
 ## JobManifestGeneratorFilterTypeDef
 
 ```python title="Usage Example"
@@ -1707,23 +966,6 @@ class JobManifestGeneratorFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReplicationStatusType](./literals.md#replicationstatustype) 
-## JobManifestGeneratorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobManifestGeneratorTypeDef
-
-def get_value() -> JobManifestGeneratorTypeDef:
-    return {
-        "S3JobManifestGenerator": ...,
-    }
-```
-
-```python title="Definition"
-class JobManifestGeneratorTypeDef(TypedDict):
-    S3JobManifestGenerator: NotRequired[S3JobManifestGeneratorTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: S3JobManifestGeneratorTypeDef](./type_defs.md#s3jobmanifestgeneratortypedef) 
 ## JobManifestLocationTypeDef
 
 ```python title="Usage Example"
@@ -1762,115 +1004,6 @@ class JobManifestSpecTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobManifestFormatType](./literals.md#jobmanifestformattype) 
 2. See [:material-code-brackets: JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype) 
-## JobManifestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobManifestTypeDef
-
-def get_value() -> JobManifestTypeDef:
-    return {
-        "Spec": ...,
-        "Location": ...,
-    }
-```
-
-```python title="Definition"
-class JobManifestTypeDef(TypedDict):
-    Spec: JobManifestSpecTypeDef,  # (1)
-    Location: JobManifestLocationTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobManifestSpecTypeDef](./type_defs.md#jobmanifestspectypedef) 
-2. See [:material-code-braces: JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef) 
-## JobOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobOperationTypeDef
-
-def get_value() -> JobOperationTypeDef:
-    return {
-        "LambdaInvoke": ...,
-    }
-```
-
-```python title="Definition"
-class JobOperationTypeDef(TypedDict):
-    LambdaInvoke: NotRequired[LambdaInvokeOperationTypeDef],  # (1)
-    S3PutObjectCopy: NotRequired[S3CopyObjectOperationTypeDef],  # (2)
-    S3PutObjectAcl: NotRequired[S3SetObjectAclOperationTypeDef],  # (3)
-    S3PutObjectTagging: NotRequired[S3SetObjectTaggingOperationTypeDef],  # (4)
-    S3DeleteObjectTagging: NotRequired[Mapping[str, Any]],
-    S3InitiateRestoreObject: NotRequired[S3InitiateRestoreObjectOperationTypeDef],  # (5)
-    S3PutObjectLegalHold: NotRequired[S3SetObjectLegalHoldOperationTypeDef],  # (6)
-    S3PutObjectRetention: NotRequired[S3SetObjectRetentionOperationTypeDef],  # (7)
-    S3ReplicateObject: NotRequired[Mapping[str, Any]],
-```
-
-1. See [:material-code-braces: LambdaInvokeOperationTypeDef](./type_defs.md#lambdainvokeoperationtypedef) 
-2. See [:material-code-braces: S3CopyObjectOperationTypeDef](./type_defs.md#s3copyobjectoperationtypedef) 
-3. See [:material-code-braces: S3SetObjectAclOperationTypeDef](./type_defs.md#s3setobjectacloperationtypedef) 
-4. See [:material-code-braces: S3SetObjectTaggingOperationTypeDef](./type_defs.md#s3setobjecttaggingoperationtypedef) 
-5. See [:material-code-braces: S3InitiateRestoreObjectOperationTypeDef](./type_defs.md#s3initiaterestoreobjectoperationtypedef) 
-6. See [:material-code-braces: S3SetObjectLegalHoldOperationTypeDef](./type_defs.md#s3setobjectlegalholdoperationtypedef) 
-7. See [:material-code-braces: S3SetObjectRetentionOperationTypeDef](./type_defs.md#s3setobjectretentionoperationtypedef) 
-## JobProgressSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobProgressSummaryTypeDef
-
-def get_value() -> JobProgressSummaryTypeDef:
-    return {
-        "TotalNumberOfTasks": ...,
-    }
-```
-
-```python title="Definition"
-class JobProgressSummaryTypeDef(TypedDict):
-    TotalNumberOfTasks: NotRequired[int],
-    NumberOfTasksSucceeded: NotRequired[int],
-    NumberOfTasksFailed: NotRequired[int],
-    Timers: NotRequired[JobTimersTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: JobTimersTypeDef](./type_defs.md#jobtimerstypedef) 
-## JobReportTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobReportTypeDef
-
-def get_value() -> JobReportTypeDef:
-    return {
-        "Enabled": ...,
-    }
-```
-
-```python title="Definition"
-class JobReportTypeDef(TypedDict):
-    Enabled: bool,
-    Bucket: NotRequired[str],
-    Format: NotRequired[JobReportFormatType],  # (1)
-    Prefix: NotRequired[str],
-    ReportScope: NotRequired[JobReportScopeType],  # (2)
-```
-
-1. See [:material-code-brackets: JobReportFormatType](./literals.md#jobreportformattype) 
-2. See [:material-code-brackets: JobReportScopeType](./literals.md#jobreportscopetype) 
-## JobTimersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import JobTimersTypeDef
-
-def get_value() -> JobTimersTypeDef:
-    return {
-        "ElapsedTimeInActiveSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class JobTimersTypeDef(TypedDict):
-    ElapsedTimeInActiveSeconds: NotRequired[int],
-```
-
 ## LambdaInvokeOperationTypeDef
 
 ```python title="Usage Example"
@@ -1887,23 +1020,40 @@ class LambdaInvokeOperationTypeDef(TypedDict):
     FunctionArn: NotRequired[str],
 ```
 
-## LifecycleConfigurationTypeDef
+## S3InitiateRestoreObjectOperationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import LifecycleConfigurationTypeDef
+from mypy_boto3_s3control.type_defs import S3InitiateRestoreObjectOperationTypeDef
 
-def get_value() -> LifecycleConfigurationTypeDef:
+def get_value() -> S3InitiateRestoreObjectOperationTypeDef:
     return {
-        "Rules": ...,
+        "ExpirationInDays": ...,
     }
 ```
 
 ```python title="Definition"
-class LifecycleConfigurationTypeDef(TypedDict):
-    Rules: NotRequired[Sequence[LifecycleRuleTypeDef]],  # (1)
+class S3InitiateRestoreObjectOperationTypeDef(TypedDict):
+    ExpirationInDays: NotRequired[int],
+    GlacierJobTier: NotRequired[S3GlacierJobTierType],  # (1)
 ```
 
-1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
+1. See [:material-code-brackets: S3GlacierJobTierType](./literals.md#s3glacierjobtiertype) 
+## JobTimersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobTimersTypeDef
+
+def get_value() -> JobTimersTypeDef:
+    return {
+        "ElapsedTimeInActiveSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class JobTimersTypeDef(TypedDict):
+    ElapsedTimeInActiveSeconds: NotRequired[int],
+```
+
 ## LifecycleExpirationTypeDef
 
 ```python title="Usage Example"
@@ -1922,92 +1072,77 @@ class LifecycleExpirationTypeDef(TypedDict):
     ExpiredObjectDeleteMarker: NotRequired[bool],
 ```
 
-## LifecycleRuleAndOperatorTypeDef
+## NoncurrentVersionExpirationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import LifecycleRuleAndOperatorTypeDef
+from mypy_boto3_s3control.type_defs import NoncurrentVersionExpirationTypeDef
 
-def get_value() -> LifecycleRuleAndOperatorTypeDef:
+def get_value() -> NoncurrentVersionExpirationTypeDef:
     return {
-        "Prefix": ...,
+        "NoncurrentDays": ...,
     }
 ```
 
 ```python title="Definition"
-class LifecycleRuleAndOperatorTypeDef(TypedDict):
-    Prefix: NotRequired[str],
-    Tags: NotRequired[List[S3TagTypeDef]],  # (1)
+class NoncurrentVersionExpirationTypeDef(TypedDict):
+    NoncurrentDays: NotRequired[int],
 ```
 
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-## LifecycleRuleFilterTypeDef
+## NoncurrentVersionTransitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import LifecycleRuleFilterTypeDef
+from mypy_boto3_s3control.type_defs import NoncurrentVersionTransitionTypeDef
 
-def get_value() -> LifecycleRuleFilterTypeDef:
+def get_value() -> NoncurrentVersionTransitionTypeDef:
     return {
-        "Prefix": ...,
+        "NoncurrentDays": ...,
     }
 ```
 
 ```python title="Definition"
-class LifecycleRuleFilterTypeDef(TypedDict):
-    Prefix: NotRequired[str],
-    Tag: NotRequired[S3TagTypeDef],  # (1)
-    And: NotRequired[LifecycleRuleAndOperatorTypeDef],  # (2)
+class NoncurrentVersionTransitionTypeDef(TypedDict):
+    NoncurrentDays: NotRequired[int],
+    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
 ```
 
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-2. See [:material-code-braces: LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef) 
-## LifecycleRuleTypeDef
+1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
+## TransitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import LifecycleRuleTypeDef
+from mypy_boto3_s3control.type_defs import TransitionTypeDef
 
-def get_value() -> LifecycleRuleTypeDef:
+def get_value() -> TransitionTypeDef:
     return {
-        "Status": ...,
+        "Date": ...,
     }
 ```
 
 ```python title="Definition"
-class LifecycleRuleTypeDef(TypedDict):
-    Status: ExpirationStatusType,  # (3)
-    Expiration: NotRequired[LifecycleExpirationTypeDef],  # (1)
-    ID: NotRequired[str],
-    Filter: NotRequired[LifecycleRuleFilterTypeDef],  # (2)
-    Transitions: NotRequired[List[TransitionTypeDef]],  # (4)
-    NoncurrentVersionTransitions: NotRequired[List[NoncurrentVersionTransitionTypeDef]],  # (5)
-    NoncurrentVersionExpiration: NotRequired[NoncurrentVersionExpirationTypeDef],  # (6)
-    AbortIncompleteMultipartUpload: NotRequired[AbortIncompleteMultipartUploadTypeDef],  # (7)
+class TransitionTypeDef(TypedDict):
+    Date: NotRequired[datetime],
+    Days: NotRequired[int],
+    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
 ```
 
-1. See [:material-code-braces: LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef) 
-2. See [:material-code-braces: LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef) 
-3. See [:material-code-brackets: ExpirationStatusType](./literals.md#expirationstatustype) 
-4. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
-5. See [:material-code-braces: NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef) 
-6. See [:material-code-braces: NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef) 
-7. See [:material-code-braces: AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef) 
-## ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef
+1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef
+from mypy_boto3_s3control.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "AccountId": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef(TypedDict):
-    AccountId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccessPointsForObjectLambdaRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2026,28 +1161,23 @@ class ListAccessPointsForObjectLambdaRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAccessPointsForObjectLambdaResultTypeDef
+## ObjectLambdaAccessPointTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import ObjectLambdaAccessPointTypeDef
 
-def get_value() -> ListAccessPointsForObjectLambdaResultTypeDef:
+def get_value() -> ObjectLambdaAccessPointTypeDef:
     return {
-        "ObjectLambdaAccessPointList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class ListAccessPointsForObjectLambdaResultTypeDef(TypedDict):
-    ObjectLambdaAccessPointList: List[ObjectLambdaAccessPointTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ObjectLambdaAccessPointTypeDef(TypedDict):
+    Name: str,
+    ObjectLambdaAccessPointArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ObjectLambdaAccessPointTypeDef](./type_defs.md#objectlambdaaccesspointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAccessPointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2067,28 +1197,6 @@ class ListAccessPointsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAccessPointsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListAccessPointsResultTypeDef
-
-def get_value() -> ListAccessPointsResultTypeDef:
-    return {
-        "AccessPointList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccessPointsResultTypeDef(TypedDict):
-    AccessPointList: List[AccessPointTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccessPointTypeDef](./type_defs.md#accesspointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2109,28 +1217,6 @@ class ListJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-## ListJobsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListJobsResultTypeDef
-
-def get_value() -> ListJobsResultTypeDef:
-    return {
-        "NextToken": ...,
-        "Jobs": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListJobsResultTypeDef(TypedDict):
-    NextToken: str,
-    Jobs: List[JobListDescriptorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobListDescriptorTypeDef](./type_defs.md#joblistdescriptortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMultiRegionAccessPointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2149,28 +1235,6 @@ class ListMultiRegionAccessPointsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListMultiRegionAccessPointsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListMultiRegionAccessPointsResultTypeDef
-
-def get_value() -> ListMultiRegionAccessPointsResultTypeDef:
-    return {
-        "AccessPoints": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMultiRegionAccessPointsResultTypeDef(TypedDict):
-    AccessPoints: List[MultiRegionAccessPointReportTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MultiRegionAccessPointReportTypeDef](./type_defs.md#multiregionaccesspointreporttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRegionalBucketsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2190,28 +1254,28 @@ class ListRegionalBucketsRequestRequestTypeDef(TypedDict):
     OutpostId: NotRequired[str],
 ```
 
-## ListRegionalBucketsResultTypeDef
+## RegionalBucketTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ListRegionalBucketsResultTypeDef
+from mypy_boto3_s3control.type_defs import RegionalBucketTypeDef
 
-def get_value() -> ListRegionalBucketsResultTypeDef:
+def get_value() -> RegionalBucketTypeDef:
     return {
-        "RegionalBucketList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Bucket": ...,
+        "PublicAccessBlockEnabled": ...,
+        "CreationDate": ...,
     }
 ```
 
 ```python title="Definition"
-class ListRegionalBucketsResultTypeDef(TypedDict):
-    RegionalBucketList: List[RegionalBucketTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RegionalBucketTypeDef(TypedDict):
+    Bucket: str,
+    PublicAccessBlockEnabled: bool,
+    CreationDate: datetime,
+    BucketArn: NotRequired[str],
+    OutpostId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RegionalBucketTypeDef](./type_defs.md#regionalbuckettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStorageLensConfigurationEntryTypeDef
 
 ```python title="Usage Example"
@@ -2250,6 +1314,1179 @@ class ListStorageLensConfigurationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ProposedMultiRegionAccessPointPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import ProposedMultiRegionAccessPointPolicyTypeDef
+
+def get_value() -> ProposedMultiRegionAccessPointPolicyTypeDef:
+    return {
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class ProposedMultiRegionAccessPointPolicyTypeDef(TypedDict):
+    Policy: NotRequired[str],
+```
+
+## MultiRegionAccessPointRegionalResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import MultiRegionAccessPointRegionalResponseTypeDef
+
+def get_value() -> MultiRegionAccessPointRegionalResponseTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MultiRegionAccessPointRegionalResponseTypeDef(TypedDict):
+    Name: NotRequired[str],
+    RequestStatus: NotRequired[str],
+```
+
+## RegionReportTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import RegionReportTypeDef
+
+def get_value() -> RegionReportTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class RegionReportTypeDef(TypedDict):
+    Bucket: NotRequired[str],
+    Region: NotRequired[str],
+```
+
+## SelectionCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import SelectionCriteriaTypeDef
+
+def get_value() -> SelectionCriteriaTypeDef:
+    return {
+        "Delimiter": ...,
+    }
+```
+
+```python title="Definition"
+class SelectionCriteriaTypeDef(TypedDict):
+    Delimiter: NotRequired[str],
+    MaxDepth: NotRequired[int],
+    MinStorageBytesPercentage: NotRequired[float],
+```
+
+## PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef
+
+def get_value() -> PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Name": ...,
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Name: str,
+    Policy: str,
+```
+
+## PutAccessPointPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutAccessPointPolicyRequestRequestTypeDef
+
+def get_value() -> PutAccessPointPolicyRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Name": ...,
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutAccessPointPolicyRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Name: str,
+    Policy: str,
+```
+
+## PutBucketPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutBucketPolicyRequestRequestTypeDef
+
+def get_value() -> PutBucketPolicyRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Bucket": ...,
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutBucketPolicyRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Bucket: str,
+    Policy: str,
+    ConfirmRemoveSelfBucketAccess: NotRequired[bool],
+```
+
+## S3ObjectOwnerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3ObjectOwnerTypeDef
+
+def get_value() -> S3ObjectOwnerTypeDef:
+    return {
+        "ID": ...,
+    }
+```
+
+```python title="Definition"
+class S3ObjectOwnerTypeDef(TypedDict):
+    ID: NotRequired[str],
+    DisplayName: NotRequired[str],
+```
+
+## S3ObjectMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3ObjectMetadataTypeDef
+
+def get_value() -> S3ObjectMetadataTypeDef:
+    return {
+        "CacheControl": ...,
+    }
+```
+
+```python title="Definition"
+class S3ObjectMetadataTypeDef(TypedDict):
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    UserMetadata: NotRequired[Mapping[str, str]],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ContentType: NotRequired[str],
+    HttpExpiresDate: NotRequired[Union[datetime, str]],
+    RequesterCharged: NotRequired[bool],
+    SSEAlgorithm: NotRequired[S3SSEAlgorithmType],  # (1)
+```
+
+1. See [:material-code-brackets: S3SSEAlgorithmType](./literals.md#s3ssealgorithmtype) 
+## S3GranteeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3GranteeTypeDef
+
+def get_value() -> S3GranteeTypeDef:
+    return {
+        "TypeIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class S3GranteeTypeDef(TypedDict):
+    TypeIdentifier: NotRequired[S3GranteeTypeIdentifierType],  # (1)
+    Identifier: NotRequired[str],
+    DisplayName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: S3GranteeTypeIdentifierType](./literals.md#s3granteetypeidentifiertype) 
+## S3ObjectLockLegalHoldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3ObjectLockLegalHoldTypeDef
+
+def get_value() -> S3ObjectLockLegalHoldTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class S3ObjectLockLegalHoldTypeDef(TypedDict):
+    Status: S3ObjectLockLegalHoldStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype) 
+## S3RetentionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3RetentionTypeDef
+
+def get_value() -> S3RetentionTypeDef:
+    return {
+        "RetainUntilDate": ...,
+    }
+```
+
+```python title="Definition"
+class S3RetentionTypeDef(TypedDict):
+    RetainUntilDate: NotRequired[Union[datetime, str]],
+    Mode: NotRequired[S3ObjectLockRetentionModeType],  # (1)
+```
+
+1. See [:material-code-brackets: S3ObjectLockRetentionModeType](./literals.md#s3objectlockretentionmodetype) 
+## SSEKMSTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import SSEKMSTypeDef
+
+def get_value() -> SSEKMSTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class SSEKMSTypeDef(TypedDict):
+    KeyId: str,
+```
+
+## StorageLensAwsOrgTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import StorageLensAwsOrgTypeDef
+
+def get_value() -> StorageLensAwsOrgTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class StorageLensAwsOrgTypeDef(TypedDict):
+    Arn: str,
+```
+
+## UpdateJobPriorityRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import UpdateJobPriorityRequestRequestTypeDef
+
+def get_value() -> UpdateJobPriorityRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "JobId": ...,
+        "Priority": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobPriorityRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    JobId: str,
+    Priority: int,
+```
+
+## UpdateJobStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import UpdateJobStatusRequestRequestTypeDef
+
+def get_value() -> UpdateJobStatusRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "JobId": ...,
+        "RequestedJobStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobStatusRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    JobId: str,
+    RequestedJobStatus: RequestedJobStatusType,  # (1)
+    StatusUpdateReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: RequestedJobStatusType](./literals.md#requestedjobstatustype) 
+## AccessPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import AccessPointTypeDef
+
+def get_value() -> AccessPointTypeDef:
+    return {
+        "Name": ...,
+        "NetworkOrigin": ...,
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class AccessPointTypeDef(TypedDict):
+    Name: str,
+    NetworkOrigin: NetworkOriginType,  # (1)
+    Bucket: str,
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (2)
+    AccessPointArn: NotRequired[str],
+    Alias: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NetworkOriginType](./literals.md#networkorigintype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+## DeleteMultiRegionAccessPointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointRequestRequestTypeDef
+
+def get_value() -> DeleteMultiRegionAccessPointRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "ClientToken": ...,
+        "Details": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    ClientToken: str,
+    Details: DeleteMultiRegionAccessPointInputTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef) 
+## PutMultiRegionAccessPointPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyRequestRequestTypeDef
+
+def get_value() -> PutMultiRegionAccessPointPolicyRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "ClientToken": ...,
+        "Details": ...,
+    }
+```
+
+```python title="Definition"
+class PutMultiRegionAccessPointPolicyRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    ClientToken: str,
+    Details: PutMultiRegionAccessPointPolicyInputTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef) 
+## ObjectLambdaContentTransformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import ObjectLambdaContentTransformationTypeDef
+
+def get_value() -> ObjectLambdaContentTransformationTypeDef:
+    return {
+        "AwsLambda": ...,
+    }
+```
+
+```python title="Definition"
+class ObjectLambdaContentTransformationTypeDef(TypedDict):
+    AwsLambda: NotRequired[AwsLambdaTransformationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsLambdaTransformationTypeDef](./type_defs.md#awslambdatransformationtypedef) 
+## CreateAccessPointForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaResultTypeDef
+
+def get_value() -> CreateAccessPointForObjectLambdaResultTypeDef:
+    return {
+        "ObjectLambdaAccessPointArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointForObjectLambdaResultTypeDef(TypedDict):
+    ObjectLambdaAccessPointArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccessPointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
+
+def get_value() -> CreateAccessPointResultTypeDef:
+    return {
+        "AccessPointArn": ...,
+        "Alias": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointResultTypeDef(TypedDict):
+    AccessPointArn: str,
+    Alias: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBucketResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateBucketResultTypeDef
+
+def get_value() -> CreateBucketResultTypeDef:
+    return {
+        "Location": ...,
+        "BucketArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBucketResultTypeDef(TypedDict):
+    Location: str,
+    BucketArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateJobResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateJobResultTypeDef
+
+def get_value() -> CreateJobResultTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobResultTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMultiRegionAccessPointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointResultTypeDef
+
+def get_value() -> CreateMultiRegionAccessPointResultTypeDef:
+    return {
+        "RequestTokenARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMultiRegionAccessPointResultTypeDef(TypedDict):
+    RequestTokenARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMultiRegionAccessPointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointResultTypeDef
+
+def get_value() -> DeleteMultiRegionAccessPointResultTypeDef:
+    return {
+        "RequestTokenARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMultiRegionAccessPointResultTypeDef(TypedDict):
+    RequestTokenARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessPointPolicyForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaResultTypeDef
+
+def get_value() -> GetAccessPointPolicyForObjectLambdaResultTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointPolicyForObjectLambdaResultTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessPointPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyResultTypeDef
+
+def get_value() -> GetAccessPointPolicyResultTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointPolicyResultTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBucketPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketPolicyResultTypeDef
+
+def get_value() -> GetBucketPolicyResultTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketPolicyResultTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBucketResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketResultTypeDef
+
+def get_value() -> GetBucketResultTypeDef:
+    return {
+        "Bucket": ...,
+        "PublicAccessBlockEnabled": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketResultTypeDef(TypedDict):
+    Bucket: str,
+    PublicAccessBlockEnabled: bool,
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMultiRegionAccessPointPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyResultTypeDef
+
+def get_value() -> PutMultiRegionAccessPointPolicyResultTypeDef:
+    return {
+        "RequestTokenARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutMultiRegionAccessPointPolicyResultTypeDef(TypedDict):
+    RequestTokenARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateJobPriorityResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import UpdateJobPriorityResultTypeDef
+
+def get_value() -> UpdateJobPriorityResultTypeDef:
+    return {
+        "JobId": ...,
+        "Priority": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobPriorityResultTypeDef(TypedDict):
+    JobId: str,
+    Priority: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateJobStatusResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import UpdateJobStatusResultTypeDef
+
+def get_value() -> UpdateJobStatusResultTypeDef:
+    return {
+        "JobId": ...,
+        "Status": ...,
+        "StatusUpdateReason": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobStatusResultTypeDef(TypedDict):
+    JobId: str,
+    Status: JobStatusType,  # (1)
+    StatusUpdateReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccessPointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateAccessPointRequestRequestTypeDef
+
+def get_value() -> CreateAccessPointRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Name": ...,
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Name: str,
+    Bucket: str,
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+    PublicAccessBlockConfiguration: NotRequired[PublicAccessBlockConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+2. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+## GetAccessPointForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaResultTypeDef
+
+def get_value() -> GetAccessPointForObjectLambdaResultTypeDef:
+    return {
+        "Name": ...,
+        "PublicAccessBlockConfiguration": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointForObjectLambdaResultTypeDef(TypedDict):
+    Name: str,
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessPointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointResultTypeDef
+
+def get_value() -> GetAccessPointResultTypeDef:
+    return {
+        "Name": ...,
+        "Bucket": ...,
+        "NetworkOrigin": ...,
+        "VpcConfiguration": ...,
+        "PublicAccessBlockConfiguration": ...,
+        "CreationDate": ...,
+        "Alias": ...,
+        "AccessPointArn": ...,
+        "Endpoints": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointResultTypeDef(TypedDict):
+    Name: str,
+    Bucket: str,
+    NetworkOrigin: NetworkOriginType,  # (1)
+    VpcConfiguration: VpcConfigurationTypeDef,  # (2)
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (3)
+    CreationDate: datetime,
+    Alias: str,
+    AccessPointArn: str,
+    Endpoints: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: NetworkOriginType](./literals.md#networkorigintype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+3. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPublicAccessBlockOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputTypeDef
+
+def get_value() -> GetPublicAccessBlockOutputTypeDef:
+    return {
+        "PublicAccessBlockConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPublicAccessBlockOutputTypeDef(TypedDict):
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutPublicAccessBlockRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutPublicAccessBlockRequestRequestTypeDef
+
+def get_value() -> PutPublicAccessBlockRequestRequestTypeDef:
+    return {
+        "PublicAccessBlockConfiguration": ...,
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class PutPublicAccessBlockRequestRequestTypeDef(TypedDict):
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    AccountId: str,
+```
+
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+## CreateBucketRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateBucketRequestRequestTypeDef
+
+def get_value() -> CreateBucketRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBucketRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    CreateBucketConfiguration: NotRequired[CreateBucketConfigurationTypeDef],  # (2)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ObjectLockEnabledForBucket: NotRequired[bool],
+    OutpostId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+## GetBucketTaggingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketTaggingResultTypeDef
+
+def get_value() -> GetBucketTaggingResultTypeDef:
+    return {
+        "TagSet": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketTaggingResultTypeDef(TypedDict):
+    TagSet: List[S3TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetJobTaggingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetJobTaggingResultTypeDef
+
+def get_value() -> GetJobTaggingResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetJobTaggingResultTypeDef(TypedDict):
+    Tags: List[S3TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LifecycleRuleAndOperatorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import LifecycleRuleAndOperatorTypeDef
+
+def get_value() -> LifecycleRuleAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class LifecycleRuleAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[S3TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+## PutJobTaggingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutJobTaggingRequestRequestTypeDef
+
+def get_value() -> PutJobTaggingRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "JobId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class PutJobTaggingRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    JobId: str,
+    Tags: Sequence[S3TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+## S3SetObjectTaggingOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3SetObjectTaggingOperationTypeDef
+
+def get_value() -> S3SetObjectTaggingOperationTypeDef:
+    return {
+        "TagSet": ...,
+    }
+```
+
+```python title="Definition"
+class S3SetObjectTaggingOperationTypeDef(TypedDict):
+    TagSet: NotRequired[Sequence[S3TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+## TaggingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import TaggingTypeDef
+
+def get_value() -> TaggingTypeDef:
+    return {
+        "TagSet": ...,
+    }
+```
+
+```python title="Definition"
+class TaggingTypeDef(TypedDict):
+    TagSet: Sequence[S3TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+## CreateMultiRegionAccessPointInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointInputTypeDef
+
+def get_value() -> CreateMultiRegionAccessPointInputTypeDef:
+    return {
+        "Name": ...,
+        "Regions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMultiRegionAccessPointInputTypeDef(TypedDict):
+    Name: str,
+    Regions: Sequence[RegionTypeDef],  # (2)
+    PublicAccessBlock: NotRequired[PublicAccessBlockConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: RegionTypeDef](./type_defs.md#regiontypedef) 
+## GeneratedManifestEncryptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GeneratedManifestEncryptionTypeDef
+
+def get_value() -> GeneratedManifestEncryptionTypeDef:
+    return {
+        "SSES3": ...,
+    }
+```
+
+```python title="Definition"
+class GeneratedManifestEncryptionTypeDef(TypedDict):
+    SSES3: NotRequired[Mapping[str, Any]],
+    SSEKMS: NotRequired[SSEKMSEncryptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SSEKMSEncryptionTypeDef](./type_defs.md#ssekmsencryptiontypedef) 
+## GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+
+def get_value() -> GetAccessPointPolicyStatusForObjectLambdaResultTypeDef:
+    return {
+        "PolicyStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointPolicyStatusForObjectLambdaResultTypeDef(TypedDict):
+    PolicyStatus: PolicyStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessPointPolicyStatusResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusResultTypeDef
+
+def get_value() -> GetAccessPointPolicyStatusResultTypeDef:
+    return {
+        "PolicyStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointPolicyStatusResultTypeDef(TypedDict):
+    PolicyStatus: PolicyStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMultiRegionAccessPointPolicyStatusResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointPolicyStatusResultTypeDef
+
+def get_value() -> GetMultiRegionAccessPointPolicyStatusResultTypeDef:
+    return {
+        "Established": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMultiRegionAccessPointPolicyStatusResultTypeDef(TypedDict):
+    Established: PolicyStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetStorageLensConfigurationTaggingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingResultTypeDef
+
+def get_value() -> GetStorageLensConfigurationTaggingResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStorageLensConfigurationTaggingResultTypeDef(TypedDict):
+    Tags: List[StorageLensTagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutStorageLensConfigurationTaggingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationTaggingRequestRequestTypeDef
+
+def get_value() -> PutStorageLensConfigurationTaggingRequestRequestTypeDef:
+    return {
+        "ConfigId": ...,
+        "AccountId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class PutStorageLensConfigurationTaggingRequestRequestTypeDef(TypedDict):
+    ConfigId: str,
+    AccountId: str,
+    Tags: Sequence[StorageLensTagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
+## S3GeneratedManifestDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import S3GeneratedManifestDescriptorTypeDef
+
+def get_value() -> S3GeneratedManifestDescriptorTypeDef:
+    return {
+        "Format": ...,
+    }
+```
+
+```python title="Definition"
+class S3GeneratedManifestDescriptorTypeDef(TypedDict):
+    Format: NotRequired[GeneratedManifestFormatType],  # (1)
+    Location: NotRequired[JobManifestLocationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GeneratedManifestFormatType](./literals.md#generatedmanifestformattype) 
+2. See [:material-code-braces: JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef) 
+## JobManifestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobManifestTypeDef
+
+def get_value() -> JobManifestTypeDef:
+    return {
+        "Spec": ...,
+        "Location": ...,
+    }
+```
+
+```python title="Definition"
+class JobManifestTypeDef(TypedDict):
+    Spec: JobManifestSpecTypeDef,  # (1)
+    Location: JobManifestLocationTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobManifestSpecTypeDef](./type_defs.md#jobmanifestspectypedef) 
+2. See [:material-code-braces: JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef) 
+## JobProgressSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobProgressSummaryTypeDef
+
+def get_value() -> JobProgressSummaryTypeDef:
+    return {
+        "TotalNumberOfTasks": ...,
+    }
+```
+
+```python title="Definition"
+class JobProgressSummaryTypeDef(TypedDict):
+    TotalNumberOfTasks: NotRequired[int],
+    NumberOfTasksSucceeded: NotRequired[int],
+    NumberOfTasksFailed: NotRequired[int],
+    Timers: NotRequired[JobTimersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: JobTimersTypeDef](./type_defs.md#jobtimerstypedef) 
+## ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef
+
+def get_value() -> ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef(TypedDict):
+    AccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAccessPointsForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
+
+def get_value() -> ListAccessPointsForObjectLambdaResultTypeDef:
+    return {
+        "ObjectLambdaAccessPointList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessPointsForObjectLambdaResultTypeDef(TypedDict):
+    ObjectLambdaAccessPointList: List[ObjectLambdaAccessPointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ObjectLambdaAccessPointTypeDef](./type_defs.md#objectlambdaaccesspointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegionalBucketsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import ListRegionalBucketsResultTypeDef
+
+def get_value() -> ListRegionalBucketsResultTypeDef:
+    return {
+        "RegionalBucketList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegionalBucketsResultTypeDef(TypedDict):
+    RegionalBucketList: List[RegionalBucketTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RegionalBucketTypeDef](./type_defs.md#regionalbuckettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStorageLensConfigurationsResultTypeDef
 
 ```python title="Usage Example"
@@ -2291,23 +2528,23 @@ class MultiRegionAccessPointPolicyDocumentTypeDef(TypedDict):
 
 1. See [:material-code-braces: EstablishedMultiRegionAccessPointPolicyTypeDef](./type_defs.md#establishedmultiregionaccesspointpolicytypedef) 
 2. See [:material-code-braces: ProposedMultiRegionAccessPointPolicyTypeDef](./type_defs.md#proposedmultiregionaccesspointpolicytypedef) 
-## MultiRegionAccessPointRegionalResponseTypeDef
+## MultiRegionAccessPointsAsyncResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import MultiRegionAccessPointRegionalResponseTypeDef
+from mypy_boto3_s3control.type_defs import MultiRegionAccessPointsAsyncResponseTypeDef
 
-def get_value() -> MultiRegionAccessPointRegionalResponseTypeDef:
+def get_value() -> MultiRegionAccessPointsAsyncResponseTypeDef:
     return {
-        "Name": ...,
+        "Regions": ...,
     }
 ```
 
 ```python title="Definition"
-class MultiRegionAccessPointRegionalResponseTypeDef(TypedDict):
-    Name: NotRequired[str],
-    RequestStatus: NotRequired[str],
+class MultiRegionAccessPointsAsyncResponseTypeDef(TypedDict):
+    Regions: NotRequired[List[MultiRegionAccessPointRegionalResponseTypeDef]],  # (1)
 ```
 
+1. See [:material-code-braces: MultiRegionAccessPointRegionalResponseTypeDef](./type_defs.md#multiregionaccesspointregionalresponsetypedef) 
 ## MultiRegionAccessPointReportTypeDef
 
 ```python title="Usage Example"
@@ -2332,113 +2569,118 @@ class MultiRegionAccessPointReportTypeDef(TypedDict):
 1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
 2. See [:material-code-brackets: MultiRegionAccessPointStatusType](./literals.md#multiregionaccesspointstatustype) 
 3. See [:material-code-braces: RegionReportTypeDef](./type_defs.md#regionreporttypedef) 
-## MultiRegionAccessPointsAsyncResponseTypeDef
+## PrefixLevelStorageMetricsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import MultiRegionAccessPointsAsyncResponseTypeDef
+from mypy_boto3_s3control.type_defs import PrefixLevelStorageMetricsTypeDef
 
-def get_value() -> MultiRegionAccessPointsAsyncResponseTypeDef:
+def get_value() -> PrefixLevelStorageMetricsTypeDef:
     return {
-        "Regions": ...,
+        "IsEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class MultiRegionAccessPointsAsyncResponseTypeDef(TypedDict):
-    Regions: NotRequired[List[MultiRegionAccessPointRegionalResponseTypeDef]],  # (1)
+class PrefixLevelStorageMetricsTypeDef(TypedDict):
+    IsEnabled: NotRequired[bool],
+    SelectionCriteria: NotRequired[SelectionCriteriaTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: MultiRegionAccessPointRegionalResponseTypeDef](./type_defs.md#multiregionaccesspointregionalresponsetypedef) 
-## NoncurrentVersionExpirationTypeDef
+1. See [:material-code-braces: SelectionCriteriaTypeDef](./type_defs.md#selectioncriteriatypedef) 
+## S3GrantTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import NoncurrentVersionExpirationTypeDef
+from mypy_boto3_s3control.type_defs import S3GrantTypeDef
 
-def get_value() -> NoncurrentVersionExpirationTypeDef:
+def get_value() -> S3GrantTypeDef:
     return {
-        "NoncurrentDays": ...,
+        "Grantee": ...,
     }
 ```
 
 ```python title="Definition"
-class NoncurrentVersionExpirationTypeDef(TypedDict):
-    NoncurrentDays: NotRequired[int],
+class S3GrantTypeDef(TypedDict):
+    Grantee: NotRequired[S3GranteeTypeDef],  # (1)
+    Permission: NotRequired[S3PermissionType],  # (2)
 ```
 
-## NoncurrentVersionTransitionTypeDef
+1. See [:material-code-braces: S3GranteeTypeDef](./type_defs.md#s3granteetypedef) 
+2. See [:material-code-brackets: S3PermissionType](./literals.md#s3permissiontype) 
+## S3SetObjectLegalHoldOperationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import NoncurrentVersionTransitionTypeDef
+from mypy_boto3_s3control.type_defs import S3SetObjectLegalHoldOperationTypeDef
 
-def get_value() -> NoncurrentVersionTransitionTypeDef:
+def get_value() -> S3SetObjectLegalHoldOperationTypeDef:
     return {
-        "NoncurrentDays": ...,
+        "LegalHold": ...,
     }
 ```
 
 ```python title="Definition"
-class NoncurrentVersionTransitionTypeDef(TypedDict):
-    NoncurrentDays: NotRequired[int],
-    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
+class S3SetObjectLegalHoldOperationTypeDef(TypedDict):
+    LegalHold: S3ObjectLockLegalHoldTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
-## ObjectLambdaAccessPointTypeDef
+1. See [:material-code-braces: S3ObjectLockLegalHoldTypeDef](./type_defs.md#s3objectlocklegalholdtypedef) 
+## S3SetObjectRetentionOperationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ObjectLambdaAccessPointTypeDef
+from mypy_boto3_s3control.type_defs import S3SetObjectRetentionOperationTypeDef
 
-def get_value() -> ObjectLambdaAccessPointTypeDef:
+def get_value() -> S3SetObjectRetentionOperationTypeDef:
     return {
-        "Name": ...,
+        "Retention": ...,
     }
 ```
 
 ```python title="Definition"
-class ObjectLambdaAccessPointTypeDef(TypedDict):
-    Name: str,
-    ObjectLambdaAccessPointArn: NotRequired[str],
+class S3SetObjectRetentionOperationTypeDef(TypedDict):
+    Retention: S3RetentionTypeDef,  # (1)
+    BypassGovernanceRetention: NotRequired[bool],
 ```
 
-## ObjectLambdaConfigurationTypeDef
+1. See [:material-code-braces: S3RetentionTypeDef](./type_defs.md#s3retentiontypedef) 
+## StorageLensDataExportEncryptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ObjectLambdaConfigurationTypeDef
+from mypy_boto3_s3control.type_defs import StorageLensDataExportEncryptionTypeDef
 
-def get_value() -> ObjectLambdaConfigurationTypeDef:
+def get_value() -> StorageLensDataExportEncryptionTypeDef:
     return {
-        "SupportingAccessPoint": ...,
-        "TransformationConfigurations": ...,
+        "SSES3": ...,
     }
 ```
 
 ```python title="Definition"
-class ObjectLambdaConfigurationTypeDef(TypedDict):
-    SupportingAccessPoint: str,
-    TransformationConfigurations: Sequence[ObjectLambdaTransformationConfigurationTypeDef],  # (2)
-    CloudWatchMetricsEnabled: NotRequired[bool],
-    AllowedFeatures: NotRequired[Sequence[ObjectLambdaAllowedFeatureType]],  # (1)
+class StorageLensDataExportEncryptionTypeDef(TypedDict):
+    SSES3: NotRequired[Dict[str, Any]],
+    SSEKMS: NotRequired[SSEKMSTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype) 
-2. See [:material-code-braces: ObjectLambdaTransformationConfigurationTypeDef](./type_defs.md#objectlambdatransformationconfigurationtypedef) 
-## ObjectLambdaContentTransformationTypeDef
+1. See [:material-code-braces: SSEKMSTypeDef](./type_defs.md#ssekmstypedef) 
+## ListAccessPointsResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ObjectLambdaContentTransformationTypeDef
+from mypy_boto3_s3control.type_defs import ListAccessPointsResultTypeDef
 
-def get_value() -> ObjectLambdaContentTransformationTypeDef:
+def get_value() -> ListAccessPointsResultTypeDef:
     return {
-        "AwsLambda": ...,
+        "AccessPointList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ObjectLambdaContentTransformationTypeDef(TypedDict):
-    AwsLambda: NotRequired[AwsLambdaTransformationTypeDef],  # (1)
+class ListAccessPointsResultTypeDef(TypedDict):
+    AccessPointList: List[AccessPointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: AwsLambdaTransformationTypeDef](./type_defs.md#awslambdatransformationtypedef) 
+1. See [:material-code-braces: AccessPointTypeDef](./type_defs.md#accesspointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ObjectLambdaTransformationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2459,212 +2701,26 @@ class ObjectLambdaTransformationConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ObjectLambdaTransformationConfigurationActionType](./literals.md#objectlambdatransformationconfigurationactiontype) 
 2. See [:material-code-braces: ObjectLambdaContentTransformationTypeDef](./type_defs.md#objectlambdacontenttransformationtypedef) 
-## PaginatorConfigTypeDef
+## LifecycleRuleFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_s3control.type_defs import LifecycleRuleFilterTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> LifecycleRuleFilterTypeDef:
     return {
-        "MaxItems": ...,
+        "Prefix": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class LifecycleRuleFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[S3TagTypeDef],  # (1)
+    And: NotRequired[LifecycleRuleAndOperatorTypeDef],  # (2)
 ```
 
-## PolicyStatusTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PolicyStatusTypeDef
-
-def get_value() -> PolicyStatusTypeDef:
-    return {
-        "IsPublic": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyStatusTypeDef(TypedDict):
-    IsPublic: NotRequired[bool],
-```
-
-## PrefixLevelStorageMetricsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PrefixLevelStorageMetricsTypeDef
-
-def get_value() -> PrefixLevelStorageMetricsTypeDef:
-    return {
-        "IsEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class PrefixLevelStorageMetricsTypeDef(TypedDict):
-    IsEnabled: NotRequired[bool],
-    SelectionCriteria: NotRequired[SelectionCriteriaTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SelectionCriteriaTypeDef](./type_defs.md#selectioncriteriatypedef) 
-## PrefixLevelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PrefixLevelTypeDef
-
-def get_value() -> PrefixLevelTypeDef:
-    return {
-        "StorageMetrics": ...,
-    }
-```
-
-```python title="Definition"
-class PrefixLevelTypeDef(TypedDict):
-    StorageMetrics: PrefixLevelStorageMetricsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: PrefixLevelStorageMetricsTypeDef](./type_defs.md#prefixlevelstoragemetricstypedef) 
-## ProposedMultiRegionAccessPointPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ProposedMultiRegionAccessPointPolicyTypeDef
-
-def get_value() -> ProposedMultiRegionAccessPointPolicyTypeDef:
-    return {
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class ProposedMultiRegionAccessPointPolicyTypeDef(TypedDict):
-    Policy: NotRequired[str],
-```
-
-## PublicAccessBlockConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PublicAccessBlockConfigurationTypeDef
-
-def get_value() -> PublicAccessBlockConfigurationTypeDef:
-    return {
-        "BlockPublicAcls": ...,
-    }
-```
-
-```python title="Definition"
-class PublicAccessBlockConfigurationTypeDef(TypedDict):
-    BlockPublicAcls: NotRequired[bool],
-    IgnorePublicAcls: NotRequired[bool],
-    BlockPublicPolicy: NotRequired[bool],
-    RestrictPublicBuckets: NotRequired[bool],
-```
-
-## PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
-
-def get_value() -> PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Name": ...,
-        "Configuration": ...,
-    }
-```
-
-```python title="Definition"
-class PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Name: str,
-    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
-## PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef
-
-def get_value() -> PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Name": ...,
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Name: str,
-    Policy: str,
-```
-
-## PutAccessPointPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutAccessPointPolicyRequestRequestTypeDef
-
-def get_value() -> PutAccessPointPolicyRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Name": ...,
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutAccessPointPolicyRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Name: str,
-    Policy: str,
-```
-
-## PutBucketLifecycleConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutBucketLifecycleConfigurationRequestRequestTypeDef
-
-def get_value() -> PutBucketLifecycleConfigurationRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class PutBucketLifecycleConfigurationRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Bucket: str,
-    LifecycleConfiguration: NotRequired[LifecycleConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
-## PutBucketPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutBucketPolicyRequestRequestTypeDef
-
-def get_value() -> PutBucketPolicyRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "Bucket": ...,
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutBucketPolicyRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    Bucket: str,
-    Policy: str,
-    ConfirmRemoveSelfBucketAccess: NotRequired[bool],
-```
-
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+2. See [:material-code-braces: LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef) 
 ## PutBucketTaggingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2686,51 +2742,33 @@ class PutBucketTaggingRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
-## PutJobTaggingRequestRequestTypeDef
+## AsyncRequestParametersTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutJobTaggingRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import AsyncRequestParametersTypeDef
 
-def get_value() -> PutJobTaggingRequestRequestTypeDef:
+def get_value() -> AsyncRequestParametersTypeDef:
     return {
-        "AccountId": ...,
-        "JobId": ...,
-        "Tags": ...,
+        "CreateMultiRegionAccessPointRequest": ...,
     }
 ```
 
 ```python title="Definition"
-class PutJobTaggingRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    JobId: str,
-    Tags: Sequence[S3TagTypeDef],  # (1)
+class AsyncRequestParametersTypeDef(TypedDict):
+    CreateMultiRegionAccessPointRequest: NotRequired[CreateMultiRegionAccessPointInputTypeDef],  # (1)
+    DeleteMultiRegionAccessPointRequest: NotRequired[DeleteMultiRegionAccessPointInputTypeDef],  # (2)
+    PutMultiRegionAccessPointPolicyRequest: NotRequired[PutMultiRegionAccessPointPolicyInputTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-## PutMultiRegionAccessPointPolicyInputTypeDef
+1. See [:material-code-braces: CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef) 
+2. See [:material-code-braces: DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef) 
+3. See [:material-code-braces: PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef) 
+## CreateMultiRegionAccessPointRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyInputTypeDef
+from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointRequestRequestTypeDef
 
-def get_value() -> PutMultiRegionAccessPointPolicyInputTypeDef:
-    return {
-        "Name": ...,
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutMultiRegionAccessPointPolicyInputTypeDef(TypedDict):
-    Name: str,
-    Policy: str,
-```
-
-## PutMultiRegionAccessPointPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyRequestRequestTypeDef
-
-def get_value() -> PutMultiRegionAccessPointPolicyRequestRequestTypeDef:
+def get_value() -> CreateMultiRegionAccessPointRequestRequestTypeDef:
     return {
         "AccountId": ...,
         "ClientToken": ...,
@@ -2739,174 +2777,160 @@ def get_value() -> PutMultiRegionAccessPointPolicyRequestRequestTypeDef:
 ```
 
 ```python title="Definition"
-class PutMultiRegionAccessPointPolicyRequestRequestTypeDef(TypedDict):
+class CreateMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
     AccountId: str,
     ClientToken: str,
-    Details: PutMultiRegionAccessPointPolicyInputTypeDef,  # (1)
+    Details: CreateMultiRegionAccessPointInputTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef) 
-## PutMultiRegionAccessPointPolicyResultTypeDef
+1. See [:material-code-braces: CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef) 
+## S3ManifestOutputLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutMultiRegionAccessPointPolicyResultTypeDef
+from mypy_boto3_s3control.type_defs import S3ManifestOutputLocationTypeDef
 
-def get_value() -> PutMultiRegionAccessPointPolicyResultTypeDef:
+def get_value() -> S3ManifestOutputLocationTypeDef:
     return {
-        "RequestTokenARN": ...,
+        "Bucket": ...,
+        "ManifestFormat": ...,
+    }
+```
+
+```python title="Definition"
+class S3ManifestOutputLocationTypeDef(TypedDict):
+    Bucket: str,
+    ManifestFormat: GeneratedManifestFormatType,  # (2)
+    ExpectedManifestBucketOwner: NotRequired[str],
+    ManifestPrefix: NotRequired[str],
+    ManifestEncryption: NotRequired[GeneratedManifestEncryptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GeneratedManifestEncryptionTypeDef](./type_defs.md#generatedmanifestencryptiontypedef) 
+2. See [:material-code-brackets: GeneratedManifestFormatType](./literals.md#generatedmanifestformattype) 
+## JobListDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobListDescriptorTypeDef
+
+def get_value() -> JobListDescriptorTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class JobListDescriptorTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    Description: NotRequired[str],
+    Operation: NotRequired[OperationNameType],  # (1)
+    Priority: NotRequired[int],
+    Status: NotRequired[JobStatusType],  # (2)
+    CreationTime: NotRequired[datetime],
+    TerminationDate: NotRequired[datetime],
+    ProgressSummary: NotRequired[JobProgressSummaryTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: OperationNameType](./literals.md#operationnametype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef) 
+## GetMultiRegionAccessPointPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointPolicyResultTypeDef
+
+def get_value() -> GetMultiRegionAccessPointPolicyResultTypeDef:
+    return {
+        "Policy": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutMultiRegionAccessPointPolicyResultTypeDef(TypedDict):
-    RequestTokenARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GetMultiRegionAccessPointPolicyResultTypeDef(TypedDict):
+    Policy: MultiRegionAccessPointPolicyDocumentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutPublicAccessBlockRequestRequestTypeDef
+1. See [:material-code-braces: MultiRegionAccessPointPolicyDocumentTypeDef](./type_defs.md#multiregionaccesspointpolicydocumenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AsyncResponseDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutPublicAccessBlockRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import AsyncResponseDetailsTypeDef
 
-def get_value() -> PutPublicAccessBlockRequestRequestTypeDef:
+def get_value() -> AsyncResponseDetailsTypeDef:
     return {
-        "PublicAccessBlockConfiguration": ...,
-        "AccountId": ...,
+        "MultiRegionAccessPointDetails": ...,
     }
 ```
 
 ```python title="Definition"
-class PutPublicAccessBlockRequestRequestTypeDef(TypedDict):
-    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
-    AccountId: str,
+class AsyncResponseDetailsTypeDef(TypedDict):
+    MultiRegionAccessPointDetails: NotRequired[MultiRegionAccessPointsAsyncResponseTypeDef],  # (1)
+    ErrorDetails: NotRequired[AsyncErrorDetailsTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
-## PutStorageLensConfigurationRequestRequestTypeDef
+1. See [:material-code-braces: MultiRegionAccessPointsAsyncResponseTypeDef](./type_defs.md#multiregionaccesspointsasyncresponsetypedef) 
+2. See [:material-code-braces: AsyncErrorDetailsTypeDef](./type_defs.md#asyncerrordetailstypedef) 
+## GetMultiRegionAccessPointResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointResultTypeDef
 
-def get_value() -> PutStorageLensConfigurationRequestRequestTypeDef:
+def get_value() -> GetMultiRegionAccessPointResultTypeDef:
     return {
-        "ConfigId": ...,
-        "AccountId": ...,
-        "StorageLensConfiguration": ...,
+        "AccessPoint": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutStorageLensConfigurationRequestRequestTypeDef(TypedDict):
-    ConfigId: str,
-    AccountId: str,
-    StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
-    Tags: NotRequired[Sequence[StorageLensTagTypeDef]],  # (2)
+class GetMultiRegionAccessPointResultTypeDef(TypedDict):
+    AccessPoint: MultiRegionAccessPointReportTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
-2. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
-## PutStorageLensConfigurationTaggingRequestRequestTypeDef
+1. See [:material-code-braces: MultiRegionAccessPointReportTypeDef](./type_defs.md#multiregionaccesspointreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMultiRegionAccessPointsResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationTaggingRequestRequestTypeDef
+from mypy_boto3_s3control.type_defs import ListMultiRegionAccessPointsResultTypeDef
 
-def get_value() -> PutStorageLensConfigurationTaggingRequestRequestTypeDef:
+def get_value() -> ListMultiRegionAccessPointsResultTypeDef:
     return {
-        "ConfigId": ...,
-        "AccountId": ...,
-        "Tags": ...,
+        "AccessPoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutStorageLensConfigurationTaggingRequestRequestTypeDef(TypedDict):
-    ConfigId: str,
-    AccountId: str,
-    Tags: Sequence[StorageLensTagTypeDef],  # (1)
+class ListMultiRegionAccessPointsResultTypeDef(TypedDict):
+    AccessPoints: List[MultiRegionAccessPointReportTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
-## RegionReportTypeDef
+1. See [:material-code-braces: MultiRegionAccessPointReportTypeDef](./type_defs.md#multiregionaccesspointreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PrefixLevelTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import RegionReportTypeDef
+from mypy_boto3_s3control.type_defs import PrefixLevelTypeDef
 
-def get_value() -> RegionReportTypeDef:
+def get_value() -> PrefixLevelTypeDef:
     return {
-        "Bucket": ...,
+        "StorageMetrics": ...,
     }
 ```
 
 ```python title="Definition"
-class RegionReportTypeDef(TypedDict):
-    Bucket: NotRequired[str],
-    Region: NotRequired[str],
+class PrefixLevelTypeDef(TypedDict):
+    StorageMetrics: PrefixLevelStorageMetricsTypeDef,  # (1)
 ```
 
-## RegionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import RegionTypeDef
-
-def get_value() -> RegionTypeDef:
-    return {
-        "Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class RegionTypeDef(TypedDict):
-    Bucket: str,
-```
-
-## RegionalBucketTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import RegionalBucketTypeDef
-
-def get_value() -> RegionalBucketTypeDef:
-    return {
-        "Bucket": ...,
-        "PublicAccessBlockEnabled": ...,
-        "CreationDate": ...,
-    }
-```
-
-```python title="Definition"
-class RegionalBucketTypeDef(TypedDict):
-    Bucket: str,
-    PublicAccessBlockEnabled: bool,
-    CreationDate: datetime,
-    BucketArn: NotRequired[str],
-    OutpostId: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
+1. See [:material-code-braces: PrefixLevelStorageMetricsTypeDef](./type_defs.md#prefixlevelstoragemetricstypedef) 
 ## S3AccessControlListTypeDef
 
 ```python title="Usage Example"
@@ -2926,52 +2950,6 @@ class S3AccessControlListTypeDef(TypedDict):
 
 1. See [:material-code-braces: S3ObjectOwnerTypeDef](./type_defs.md#s3objectownertypedef) 
 2. See [:material-code-braces: S3GrantTypeDef](./type_defs.md#s3granttypedef) 
-## S3AccessControlPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3AccessControlPolicyTypeDef
-
-def get_value() -> S3AccessControlPolicyTypeDef:
-    return {
-        "AccessControlList": ...,
-    }
-```
-
-```python title="Definition"
-class S3AccessControlPolicyTypeDef(TypedDict):
-    AccessControlList: NotRequired[S3AccessControlListTypeDef],  # (1)
-    CannedAccessControlList: NotRequired[S3CannedAccessControlListType],  # (2)
-```
-
-1. See [:material-code-braces: S3AccessControlListTypeDef](./type_defs.md#s3accesscontrollisttypedef) 
-2. See [:material-code-brackets: S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype) 
-## S3BucketDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3BucketDestinationTypeDef
-
-def get_value() -> S3BucketDestinationTypeDef:
-    return {
-        "Format": ...,
-        "OutputSchemaVersion": ...,
-        "AccountId": ...,
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class S3BucketDestinationTypeDef(TypedDict):
-    Format: FormatType,  # (1)
-    OutputSchemaVersion: OutputSchemaVersionType,  # (2)
-    AccountId: str,
-    Arn: str,
-    Prefix: NotRequired[str],
-    Encryption: NotRequired[StorageLensDataExportEncryptionTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
-2. See [:material-code-brackets: OutputSchemaVersionType](./literals.md#outputschemaversiontype) 
-3. See [:material-code-braces: StorageLensDataExportEncryptionTypeDef](./type_defs.md#storagelensdataexportencryptiontypedef) 
 ## S3CopyObjectOperationTypeDef
 
 ```python title="Usage Example"
@@ -3014,81 +2992,85 @@ class S3CopyObjectOperationTypeDef(TypedDict):
 7. See [:material-code-brackets: S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype) 
 8. See [:material-code-brackets: S3ObjectLockModeType](./literals.md#s3objectlockmodetype) 
 9. See [:material-code-brackets: S3ChecksumAlgorithmType](./literals.md#s3checksumalgorithmtype) 
-## S3GeneratedManifestDescriptorTypeDef
+## S3BucketDestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3GeneratedManifestDescriptorTypeDef
+from mypy_boto3_s3control.type_defs import S3BucketDestinationTypeDef
 
-def get_value() -> S3GeneratedManifestDescriptorTypeDef:
+def get_value() -> S3BucketDestinationTypeDef:
     return {
         "Format": ...,
+        "OutputSchemaVersion": ...,
+        "AccountId": ...,
+        "Arn": ...,
     }
 ```
 
 ```python title="Definition"
-class S3GeneratedManifestDescriptorTypeDef(TypedDict):
-    Format: NotRequired[GeneratedManifestFormatType],  # (1)
-    Location: NotRequired[JobManifestLocationTypeDef],  # (2)
+class S3BucketDestinationTypeDef(TypedDict):
+    Format: FormatType,  # (1)
+    OutputSchemaVersion: OutputSchemaVersionType,  # (2)
+    AccountId: str,
+    Arn: str,
+    Prefix: NotRequired[str],
+    Encryption: NotRequired[StorageLensDataExportEncryptionTypeDef],  # (3)
 ```
 
-1. See [:material-code-brackets: GeneratedManifestFormatType](./literals.md#generatedmanifestformattype) 
-2. See [:material-code-braces: JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef) 
-## S3GrantTypeDef
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+2. See [:material-code-brackets: OutputSchemaVersionType](./literals.md#outputschemaversiontype) 
+3. See [:material-code-braces: StorageLensDataExportEncryptionTypeDef](./type_defs.md#storagelensdataexportencryptiontypedef) 
+## ObjectLambdaConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3GrantTypeDef
+from mypy_boto3_s3control.type_defs import ObjectLambdaConfigurationTypeDef
 
-def get_value() -> S3GrantTypeDef:
+def get_value() -> ObjectLambdaConfigurationTypeDef:
     return {
-        "Grantee": ...,
+        "SupportingAccessPoint": ...,
+        "TransformationConfigurations": ...,
     }
 ```
 
 ```python title="Definition"
-class S3GrantTypeDef(TypedDict):
-    Grantee: NotRequired[S3GranteeTypeDef],  # (1)
-    Permission: NotRequired[S3PermissionType],  # (2)
+class ObjectLambdaConfigurationTypeDef(TypedDict):
+    SupportingAccessPoint: str,
+    TransformationConfigurations: Sequence[ObjectLambdaTransformationConfigurationTypeDef],  # (2)
+    CloudWatchMetricsEnabled: NotRequired[bool],
+    AllowedFeatures: NotRequired[Sequence[ObjectLambdaAllowedFeatureType]],  # (1)
 ```
 
-1. See [:material-code-braces: S3GranteeTypeDef](./type_defs.md#s3granteetypedef) 
-2. See [:material-code-brackets: S3PermissionType](./literals.md#s3permissiontype) 
-## S3GranteeTypeDef
+1. See [:material-code-brackets: ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype) 
+2. See [:material-code-braces: ObjectLambdaTransformationConfigurationTypeDef](./type_defs.md#objectlambdatransformationconfigurationtypedef) 
+## LifecycleRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3GranteeTypeDef
+from mypy_boto3_s3control.type_defs import LifecycleRuleTypeDef
 
-def get_value() -> S3GranteeTypeDef:
+def get_value() -> LifecycleRuleTypeDef:
     return {
-        "TypeIdentifier": ...,
+        "Status": ...,
     }
 ```
 
 ```python title="Definition"
-class S3GranteeTypeDef(TypedDict):
-    TypeIdentifier: NotRequired[S3GranteeTypeIdentifierType],  # (1)
-    Identifier: NotRequired[str],
-    DisplayName: NotRequired[str],
+class LifecycleRuleTypeDef(TypedDict):
+    Status: ExpirationStatusType,  # (3)
+    Expiration: NotRequired[LifecycleExpirationTypeDef],  # (1)
+    ID: NotRequired[str],
+    Filter: NotRequired[LifecycleRuleFilterTypeDef],  # (2)
+    Transitions: NotRequired[List[TransitionTypeDef]],  # (4)
+    NoncurrentVersionTransitions: NotRequired[List[NoncurrentVersionTransitionTypeDef]],  # (5)
+    NoncurrentVersionExpiration: NotRequired[NoncurrentVersionExpirationTypeDef],  # (6)
+    AbortIncompleteMultipartUpload: NotRequired[AbortIncompleteMultipartUploadTypeDef],  # (7)
 ```
 
-1. See [:material-code-brackets: S3GranteeTypeIdentifierType](./literals.md#s3granteetypeidentifiertype) 
-## S3InitiateRestoreObjectOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3InitiateRestoreObjectOperationTypeDef
-
-def get_value() -> S3InitiateRestoreObjectOperationTypeDef:
-    return {
-        "ExpirationInDays": ...,
-    }
-```
-
-```python title="Definition"
-class S3InitiateRestoreObjectOperationTypeDef(TypedDict):
-    ExpirationInDays: NotRequired[int],
-    GlacierJobTier: NotRequired[S3GlacierJobTierType],  # (1)
-```
-
-1. See [:material-code-brackets: S3GlacierJobTierType](./literals.md#s3glacierjobtiertype) 
+1. See [:material-code-braces: LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef) 
+2. See [:material-code-braces: LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef) 
+3. See [:material-code-brackets: ExpirationStatusType](./literals.md#expirationstatustype) 
+4. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
+5. See [:material-code-braces: NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef) 
+6. See [:material-code-braces: NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef) 
+7. See [:material-code-braces: AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef) 
 ## S3JobManifestGeneratorTypeDef
 
 ```python title="Usage Example"
@@ -3112,108 +3094,264 @@ class S3JobManifestGeneratorTypeDef(TypedDict):
 
 1. See [:material-code-braces: S3ManifestOutputLocationTypeDef](./type_defs.md#s3manifestoutputlocationtypedef) 
 2. See [:material-code-braces: JobManifestGeneratorFilterTypeDef](./type_defs.md#jobmanifestgeneratorfiltertypedef) 
-## S3ManifestOutputLocationTypeDef
+## ListJobsResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3ManifestOutputLocationTypeDef
+from mypy_boto3_s3control.type_defs import ListJobsResultTypeDef
 
-def get_value() -> S3ManifestOutputLocationTypeDef:
+def get_value() -> ListJobsResultTypeDef:
     return {
-        "Bucket": ...,
-        "ManifestFormat": ...,
+        "NextToken": ...,
+        "Jobs": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class S3ManifestOutputLocationTypeDef(TypedDict):
-    Bucket: str,
-    ManifestFormat: GeneratedManifestFormatType,  # (2)
-    ExpectedManifestBucketOwner: NotRequired[str],
-    ManifestPrefix: NotRequired[str],
-    ManifestEncryption: NotRequired[GeneratedManifestEncryptionTypeDef],  # (1)
+class ListJobsResultTypeDef(TypedDict):
+    NextToken: str,
+    Jobs: List[JobListDescriptorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: GeneratedManifestEncryptionTypeDef](./type_defs.md#generatedmanifestencryptiontypedef) 
-2. See [:material-code-brackets: GeneratedManifestFormatType](./literals.md#generatedmanifestformattype) 
-## S3ObjectLockLegalHoldTypeDef
+1. See [:material-code-braces: JobListDescriptorTypeDef](./type_defs.md#joblistdescriptortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AsyncOperationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3ObjectLockLegalHoldTypeDef
+from mypy_boto3_s3control.type_defs import AsyncOperationTypeDef
 
-def get_value() -> S3ObjectLockLegalHoldTypeDef:
+def get_value() -> AsyncOperationTypeDef:
     return {
-        "Status": ...,
+        "CreationTime": ...,
     }
 ```
 
 ```python title="Definition"
-class S3ObjectLockLegalHoldTypeDef(TypedDict):
-    Status: S3ObjectLockLegalHoldStatusType,  # (1)
+class AsyncOperationTypeDef(TypedDict):
+    CreationTime: NotRequired[datetime],
+    Operation: NotRequired[AsyncOperationNameType],  # (1)
+    RequestTokenARN: NotRequired[str],
+    RequestParameters: NotRequired[AsyncRequestParametersTypeDef],  # (2)
+    RequestStatus: NotRequired[str],
+    ResponseDetails: NotRequired[AsyncResponseDetailsTypeDef],  # (3)
 ```
 
-1. See [:material-code-brackets: S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype) 
-## S3ObjectMetadataTypeDef
+1. See [:material-code-brackets: AsyncOperationNameType](./literals.md#asyncoperationnametype) 
+2. See [:material-code-braces: AsyncRequestParametersTypeDef](./type_defs.md#asyncrequestparameterstypedef) 
+3. See [:material-code-braces: AsyncResponseDetailsTypeDef](./type_defs.md#asyncresponsedetailstypedef) 
+## BucketLevelTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3ObjectMetadataTypeDef
+from mypy_boto3_s3control.type_defs import BucketLevelTypeDef
 
-def get_value() -> S3ObjectMetadataTypeDef:
+def get_value() -> BucketLevelTypeDef:
     return {
-        "CacheControl": ...,
+        "ActivityMetrics": ...,
     }
 ```
 
 ```python title="Definition"
-class S3ObjectMetadataTypeDef(TypedDict):
-    CacheControl: NotRequired[str],
-    ContentDisposition: NotRequired[str],
-    ContentEncoding: NotRequired[str],
-    ContentLanguage: NotRequired[str],
-    UserMetadata: NotRequired[Mapping[str, str]],
-    ContentLength: NotRequired[int],
-    ContentMD5: NotRequired[str],
-    ContentType: NotRequired[str],
-    HttpExpiresDate: NotRequired[Union[datetime, str]],
-    RequesterCharged: NotRequired[bool],
-    SSEAlgorithm: NotRequired[S3SSEAlgorithmType],  # (1)
+class BucketLevelTypeDef(TypedDict):
+    ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
+    PrefixLevel: NotRequired[PrefixLevelTypeDef],  # (2)
 ```
 
-1. See [:material-code-brackets: S3SSEAlgorithmType](./literals.md#s3ssealgorithmtype) 
-## S3ObjectOwnerTypeDef
+1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
+2. See [:material-code-braces: PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef) 
+## S3AccessControlPolicyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3ObjectOwnerTypeDef
+from mypy_boto3_s3control.type_defs import S3AccessControlPolicyTypeDef
 
-def get_value() -> S3ObjectOwnerTypeDef:
+def get_value() -> S3AccessControlPolicyTypeDef:
     return {
-        "ID": ...,
+        "AccessControlList": ...,
     }
 ```
 
 ```python title="Definition"
-class S3ObjectOwnerTypeDef(TypedDict):
-    ID: NotRequired[str],
-    DisplayName: NotRequired[str],
+class S3AccessControlPolicyTypeDef(TypedDict):
+    AccessControlList: NotRequired[S3AccessControlListTypeDef],  # (1)
+    CannedAccessControlList: NotRequired[S3CannedAccessControlListType],  # (2)
 ```
 
-## S3RetentionTypeDef
+1. See [:material-code-braces: S3AccessControlListTypeDef](./type_defs.md#s3accesscontrollisttypedef) 
+2. See [:material-code-brackets: S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype) 
+## StorageLensDataExportTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3RetentionTypeDef
+from mypy_boto3_s3control.type_defs import StorageLensDataExportTypeDef
 
-def get_value() -> S3RetentionTypeDef:
+def get_value() -> StorageLensDataExportTypeDef:
     return {
-        "RetainUntilDate": ...,
+        "S3BucketDestination": ...,
     }
 ```
 
 ```python title="Definition"
-class S3RetentionTypeDef(TypedDict):
-    RetainUntilDate: NotRequired[Union[datetime, str]],
-    Mode: NotRequired[S3ObjectLockRetentionModeType],  # (1)
+class StorageLensDataExportTypeDef(TypedDict):
+    S3BucketDestination: NotRequired[S3BucketDestinationTypeDef],  # (1)
+    CloudWatchMetrics: NotRequired[CloudWatchMetricsTypeDef],  # (2)
 ```
 
-1. See [:material-code-brackets: S3ObjectLockRetentionModeType](./literals.md#s3objectlockretentionmodetype) 
+1. See [:material-code-braces: S3BucketDestinationTypeDef](./type_defs.md#s3bucketdestinationtypedef) 
+2. See [:material-code-braces: CloudWatchMetricsTypeDef](./type_defs.md#cloudwatchmetricstypedef) 
+## CreateAccessPointForObjectLambdaRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaRequestRequestTypeDef
+
+def get_value() -> CreateAccessPointForObjectLambdaRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Name": ...,
+        "Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessPointForObjectLambdaRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Name: str,
+    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
+## GetAccessPointConfigurationForObjectLambdaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaResultTypeDef
+
+def get_value() -> GetAccessPointConfigurationForObjectLambdaResultTypeDef:
+    return {
+        "Configuration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessPointConfigurationForObjectLambdaResultTypeDef(TypedDict):
+    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
+
+def get_value() -> PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Name": ...,
+        "Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Name: str,
+    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
+## GetBucketLifecycleConfigurationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResultTypeDef
+
+def get_value() -> GetBucketLifecycleConfigurationResultTypeDef:
+    return {
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketLifecycleConfigurationResultTypeDef(TypedDict):
+    Rules: List[LifecycleRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LifecycleConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import LifecycleConfigurationTypeDef
+
+def get_value() -> LifecycleConfigurationTypeDef:
+    return {
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class LifecycleConfigurationTypeDef(TypedDict):
+    Rules: NotRequired[Sequence[LifecycleRuleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
+## JobManifestGeneratorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobManifestGeneratorTypeDef
+
+def get_value() -> JobManifestGeneratorTypeDef:
+    return {
+        "S3JobManifestGenerator": ...,
+    }
+```
+
+```python title="Definition"
+class JobManifestGeneratorTypeDef(TypedDict):
+    S3JobManifestGenerator: NotRequired[S3JobManifestGeneratorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3JobManifestGeneratorTypeDef](./type_defs.md#s3jobmanifestgeneratortypedef) 
+## DescribeMultiRegionAccessPointOperationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import DescribeMultiRegionAccessPointOperationResultTypeDef
+
+def get_value() -> DescribeMultiRegionAccessPointOperationResultTypeDef:
+    return {
+        "AsyncOperation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMultiRegionAccessPointOperationResultTypeDef(TypedDict):
+    AsyncOperation: AsyncOperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AsyncOperationTypeDef](./type_defs.md#asyncoperationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AccountLevelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import AccountLevelTypeDef
+
+def get_value() -> AccountLevelTypeDef:
+    return {
+        "BucketLevel": ...,
+    }
+```
+
+```python title="Definition"
+class AccountLevelTypeDef(TypedDict):
+    BucketLevel: BucketLevelTypeDef,  # (2)
+    ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
+2. See [:material-code-braces: BucketLevelTypeDef](./type_defs.md#bucketleveltypedef) 
 ## S3SetObjectAclOperationTypeDef
 
 ```python title="Usage Example"
@@ -3231,142 +3369,26 @@ class S3SetObjectAclOperationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3AccessControlPolicyTypeDef](./type_defs.md#s3accesscontrolpolicytypedef) 
-## S3SetObjectLegalHoldOperationTypeDef
+## PutBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3SetObjectLegalHoldOperationTypeDef
+from mypy_boto3_s3control.type_defs import PutBucketLifecycleConfigurationRequestRequestTypeDef
 
-def get_value() -> S3SetObjectLegalHoldOperationTypeDef:
+def get_value() -> PutBucketLifecycleConfigurationRequestRequestTypeDef:
     return {
-        "LegalHold": ...,
+        "AccountId": ...,
+        "Bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class S3SetObjectLegalHoldOperationTypeDef(TypedDict):
-    LegalHold: S3ObjectLockLegalHoldTypeDef,  # (1)
+class PutBucketLifecycleConfigurationRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Bucket: str,
+    LifecycleConfiguration: NotRequired[LifecycleConfigurationTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: S3ObjectLockLegalHoldTypeDef](./type_defs.md#s3objectlocklegalholdtypedef) 
-## S3SetObjectRetentionOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3SetObjectRetentionOperationTypeDef
-
-def get_value() -> S3SetObjectRetentionOperationTypeDef:
-    return {
-        "Retention": ...,
-    }
-```
-
-```python title="Definition"
-class S3SetObjectRetentionOperationTypeDef(TypedDict):
-    Retention: S3RetentionTypeDef,  # (1)
-    BypassGovernanceRetention: NotRequired[bool],
-```
-
-1. See [:material-code-braces: S3RetentionTypeDef](./type_defs.md#s3retentiontypedef) 
-## S3SetObjectTaggingOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3SetObjectTaggingOperationTypeDef
-
-def get_value() -> S3SetObjectTaggingOperationTypeDef:
-    return {
-        "TagSet": ...,
-    }
-```
-
-```python title="Definition"
-class S3SetObjectTaggingOperationTypeDef(TypedDict):
-    TagSet: NotRequired[Sequence[S3TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-## S3TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import S3TagTypeDef
-
-def get_value() -> S3TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class S3TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## SSEKMSEncryptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import SSEKMSEncryptionTypeDef
-
-def get_value() -> SSEKMSEncryptionTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class SSEKMSEncryptionTypeDef(TypedDict):
-    KeyId: str,
-```
-
-## SSEKMSTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import SSEKMSTypeDef
-
-def get_value() -> SSEKMSTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class SSEKMSTypeDef(TypedDict):
-    KeyId: str,
-```
-
-## SelectionCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import SelectionCriteriaTypeDef
-
-def get_value() -> SelectionCriteriaTypeDef:
-    return {
-        "Delimiter": ...,
-    }
-```
-
-```python title="Definition"
-class SelectionCriteriaTypeDef(TypedDict):
-    Delimiter: NotRequired[str],
-    MaxDepth: NotRequired[int],
-    MinStorageBytesPercentage: NotRequired[float],
-```
-
-## StorageLensAwsOrgTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import StorageLensAwsOrgTypeDef
-
-def get_value() -> StorageLensAwsOrgTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class StorageLensAwsOrgTypeDef(TypedDict):
-    Arn: str,
-```
-
+1. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
 ## StorageLensConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3397,197 +3419,175 @@ class StorageLensConfigurationTypeDef(TypedDict):
 3. See [:material-code-braces: ExcludeTypeDef](./type_defs.md#excludetypedef) 
 4. See [:material-code-braces: StorageLensDataExportTypeDef](./type_defs.md#storagelensdataexporttypedef) 
 5. See [:material-code-braces: StorageLensAwsOrgTypeDef](./type_defs.md#storagelensawsorgtypedef) 
-## StorageLensDataExportEncryptionTypeDef
+## JobOperationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import StorageLensDataExportEncryptionTypeDef
+from mypy_boto3_s3control.type_defs import JobOperationTypeDef
 
-def get_value() -> StorageLensDataExportEncryptionTypeDef:
+def get_value() -> JobOperationTypeDef:
     return {
-        "SSES3": ...,
+        "LambdaInvoke": ...,
     }
 ```
 
 ```python title="Definition"
-class StorageLensDataExportEncryptionTypeDef(TypedDict):
-    SSES3: NotRequired[Dict[str, Any]],
-    SSEKMS: NotRequired[SSEKMSTypeDef],  # (1)
+class JobOperationTypeDef(TypedDict):
+    LambdaInvoke: NotRequired[LambdaInvokeOperationTypeDef],  # (1)
+    S3PutObjectCopy: NotRequired[S3CopyObjectOperationTypeDef],  # (2)
+    S3PutObjectAcl: NotRequired[S3SetObjectAclOperationTypeDef],  # (3)
+    S3PutObjectTagging: NotRequired[S3SetObjectTaggingOperationTypeDef],  # (4)
+    S3DeleteObjectTagging: NotRequired[Mapping[str, Any]],
+    S3InitiateRestoreObject: NotRequired[S3InitiateRestoreObjectOperationTypeDef],  # (5)
+    S3PutObjectLegalHold: NotRequired[S3SetObjectLegalHoldOperationTypeDef],  # (6)
+    S3PutObjectRetention: NotRequired[S3SetObjectRetentionOperationTypeDef],  # (7)
+    S3ReplicateObject: NotRequired[Mapping[str, Any]],
 ```
 
-1. See [:material-code-braces: SSEKMSTypeDef](./type_defs.md#ssekmstypedef) 
-## StorageLensDataExportTypeDef
+1. See [:material-code-braces: LambdaInvokeOperationTypeDef](./type_defs.md#lambdainvokeoperationtypedef) 
+2. See [:material-code-braces: S3CopyObjectOperationTypeDef](./type_defs.md#s3copyobjectoperationtypedef) 
+3. See [:material-code-braces: S3SetObjectAclOperationTypeDef](./type_defs.md#s3setobjectacloperationtypedef) 
+4. See [:material-code-braces: S3SetObjectTaggingOperationTypeDef](./type_defs.md#s3setobjecttaggingoperationtypedef) 
+5. See [:material-code-braces: S3InitiateRestoreObjectOperationTypeDef](./type_defs.md#s3initiaterestoreobjectoperationtypedef) 
+6. See [:material-code-braces: S3SetObjectLegalHoldOperationTypeDef](./type_defs.md#s3setobjectlegalholdoperationtypedef) 
+7. See [:material-code-braces: S3SetObjectRetentionOperationTypeDef](./type_defs.md#s3setobjectretentionoperationtypedef) 
+## GetStorageLensConfigurationResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import StorageLensDataExportTypeDef
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationResultTypeDef
 
-def get_value() -> StorageLensDataExportTypeDef:
+def get_value() -> GetStorageLensConfigurationResultTypeDef:
     return {
-        "S3BucketDestination": ...,
-    }
-```
-
-```python title="Definition"
-class StorageLensDataExportTypeDef(TypedDict):
-    S3BucketDestination: NotRequired[S3BucketDestinationTypeDef],  # (1)
-    CloudWatchMetrics: NotRequired[CloudWatchMetricsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: S3BucketDestinationTypeDef](./type_defs.md#s3bucketdestinationtypedef) 
-2. See [:material-code-braces: CloudWatchMetricsTypeDef](./type_defs.md#cloudwatchmetricstypedef) 
-## StorageLensTagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import StorageLensTagTypeDef
-
-def get_value() -> StorageLensTagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class StorageLensTagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## TaggingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import TaggingTypeDef
-
-def get_value() -> TaggingTypeDef:
-    return {
-        "TagSet": ...,
-    }
-```
-
-```python title="Definition"
-class TaggingTypeDef(TypedDict):
-    TagSet: Sequence[S3TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-## TransitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import TransitionTypeDef
-
-def get_value() -> TransitionTypeDef:
-    return {
-        "Date": ...,
-    }
-```
-
-```python title="Definition"
-class TransitionTypeDef(TypedDict):
-    Date: NotRequired[datetime],
-    Days: NotRequired[int],
-    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
-```
-
-1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
-## UpdateJobPriorityRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import UpdateJobPriorityRequestRequestTypeDef
-
-def get_value() -> UpdateJobPriorityRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "JobId": ...,
-        "Priority": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateJobPriorityRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    JobId: str,
-    Priority: int,
-```
-
-## UpdateJobPriorityResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import UpdateJobPriorityResultTypeDef
-
-def get_value() -> UpdateJobPriorityResultTypeDef:
-    return {
-        "JobId": ...,
-        "Priority": ...,
+        "StorageLensConfiguration": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateJobPriorityResultTypeDef(TypedDict):
-    JobId: str,
-    Priority: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateJobStatusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import UpdateJobStatusRequestRequestTypeDef
-
-def get_value() -> UpdateJobStatusRequestRequestTypeDef:
-    return {
-        "AccountId": ...,
-        "JobId": ...,
-        "RequestedJobStatus": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateJobStatusRequestRequestTypeDef(TypedDict):
-    AccountId: str,
-    JobId: str,
-    RequestedJobStatus: RequestedJobStatusType,  # (1)
-    StatusUpdateReason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: RequestedJobStatusType](./literals.md#requestedjobstatustype) 
-## UpdateJobStatusResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import UpdateJobStatusResultTypeDef
-
-def get_value() -> UpdateJobStatusResultTypeDef:
-    return {
-        "JobId": ...,
-        "Status": ...,
-        "StatusUpdateReason": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateJobStatusResultTypeDef(TypedDict):
-    JobId: str,
-    Status: JobStatusType,  # (1)
-    StatusUpdateReason: str,
+class GetStorageLensConfigurationResultTypeDef(TypedDict):
+    StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## VpcConfigurationTypeDef
+## PutStorageLensConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3control.type_defs import VpcConfigurationTypeDef
+from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationRequestRequestTypeDef
 
-def get_value() -> VpcConfigurationTypeDef:
+def get_value() -> PutStorageLensConfigurationRequestRequestTypeDef:
     return {
-        "VpcId": ...,
+        "ConfigId": ...,
+        "AccountId": ...,
+        "StorageLensConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcConfigurationTypeDef(TypedDict):
-    VpcId: str,
+class PutStorageLensConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigId: str,
+    AccountId: str,
+    StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[StorageLensTagTypeDef]],  # (2)
 ```
 
+1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
+2. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
+## CreateJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Operation": ...,
+        "Report": ...,
+        "ClientRequestToken": ...,
+        "Priority": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Operation: JobOperationTypeDef,  # (1)
+    Report: JobReportTypeDef,  # (2)
+    ClientRequestToken: str,
+    Priority: int,
+    RoleArn: str,
+    ConfirmationRequired: NotRequired[bool],
+    Manifest: NotRequired[JobManifestTypeDef],  # (3)
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[S3TagTypeDef]],  # (4)
+    ManifestGenerator: NotRequired[JobManifestGeneratorTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: JobOperationTypeDef](./type_defs.md#joboperationtypedef) 
+2. See [:material-code-braces: JobReportTypeDef](./type_defs.md#jobreporttypedef) 
+3. See [:material-code-braces: JobManifestTypeDef](./type_defs.md#jobmanifesttypedef) 
+4. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+5. See [:material-code-braces: JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef) 
+## JobDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import JobDescriptorTypeDef
+
+def get_value() -> JobDescriptorTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class JobDescriptorTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    ConfirmationRequired: NotRequired[bool],
+    Description: NotRequired[str],
+    JobArn: NotRequired[str],
+    Status: NotRequired[JobStatusType],  # (1)
+    Manifest: NotRequired[JobManifestTypeDef],  # (2)
+    Operation: NotRequired[JobOperationTypeDef],  # (3)
+    Priority: NotRequired[int],
+    ProgressSummary: NotRequired[JobProgressSummaryTypeDef],  # (4)
+    StatusUpdateReason: NotRequired[str],
+    FailureReasons: NotRequired[List[JobFailureTypeDef]],  # (5)
+    Report: NotRequired[JobReportTypeDef],  # (6)
+    CreationTime: NotRequired[datetime],
+    TerminationDate: NotRequired[datetime],
+    RoleArn: NotRequired[str],
+    SuspendedDate: NotRequired[datetime],
+    SuspendedCause: NotRequired[str],
+    ManifestGenerator: NotRequired[JobManifestGeneratorTypeDef],  # (7)
+    GeneratedManifestDescriptor: NotRequired[S3GeneratedManifestDescriptorTypeDef],  # (8)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: JobManifestTypeDef](./type_defs.md#jobmanifesttypedef) 
+3. See [:material-code-braces: JobOperationTypeDef](./type_defs.md#joboperationtypedef) 
+4. See [:material-code-braces: JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef) 
+5. See [:material-code-braces: JobFailureTypeDef](./type_defs.md#jobfailuretypedef) 
+6. See [:material-code-braces: JobReportTypeDef](./type_defs.md#jobreporttypedef) 
+7. See [:material-code-braces: JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef) 
+8. See [:material-code-braces: S3GeneratedManifestDescriptorTypeDef](./type_defs.md#s3generatedmanifestdescriptortypedef) 
+## DescribeJobResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import DescribeJobResultTypeDef
+
+def get_value() -> DescribeJobResultTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobResultTypeDef(TypedDict):
+    Job: JobDescriptorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobDescriptorTypeDef](./type_defs.md#jobdescriptortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

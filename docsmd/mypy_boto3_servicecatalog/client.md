@@ -1785,7 +1785,8 @@ parent.import_as_provisioned_product(**kwargs)
 
 ### list\_accepted\_portfolio\_shares
 
-Lists all portfolios for which sharing was accepted by this account.
+Lists all imported portfolios for which account-to-account shares were accepted
+by this account.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)

@@ -92,34 +92,33 @@ def get_value() -> STSServiceName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef
+from mypy_boto3_sts.type_defs import PolicyDescriptorTypeTypeDef
 
-def get_value() -> AssumeRoleRequestRequestTypeDef:
+def get_value() -> PolicyDescriptorTypeTypeDef:
     return {
-        "RoleArn": ...,
-        "RoleSessionName": ...,
+        "arn": ...,
     }
 ```
 
-- [AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef)
-- [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef)
-- [AssumeRoleWithSAMLRequestRequestTypeDef](./type_defs.md#assumerolewithsamlrequestrequesttypedef)
-- [AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef)
-- [AssumeRoleWithWebIdentityRequestRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequestrequesttypedef)
-- [AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef)
+- [PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
 - [AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef)
 - [CredentialsTypeDef](./type_defs.md#credentialstypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DecodeAuthorizationMessageRequestRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequestrequesttypedef)
-- [DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef)
 - [FederatedUserTypeDef](./type_defs.md#federatedusertypedef)
 - [GetAccessKeyInfoRequestRequestTypeDef](./type_defs.md#getaccesskeyinforequestrequesttypedef)
+- [GetSessionTokenRequestRequestTypeDef](./type_defs.md#getsessiontokenrequestrequesttypedef)
+- [AssumeRoleWithSAMLRequestRequestTypeDef](./type_defs.md#assumerolewithsamlrequestrequesttypedef)
+- [AssumeRoleWithWebIdentityRequestRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequestrequesttypedef)
+- [AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef)
+- [GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef)
+- [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef)
+- [AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef)
+- [AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef)
+- [DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef)
 - [GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef)
 - [GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef)
-- [GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef)
-- [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef)
-- [GetSessionTokenRequestRequestTypeDef](./type_defs.md#getsessiontokenrequestrequesttypedef)
 - [GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef)
-- [PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
+- [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef)
 

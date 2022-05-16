@@ -93,23 +93,23 @@ def get_value() -> SentimentValueType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_connect_contact_lens.type_defs import CategoriesTypeDef
+from mypy_boto3_connect_contact_lens.type_defs import PointOfInterestTypeDef
 
-def get_value() -> CategoriesTypeDef:
+def get_value() -> PointOfInterestTypeDef:
     return {
-        "MatchedCategories": ...,
-        "MatchedDetails": ...,
+        "BeginOffsetMillis": ...,
+        "EndOffsetMillis": ...,
     }
 ```
 
-- [CategoriesTypeDef](./type_defs.md#categoriestypedef)
-- [CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef)
-- [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
-- [IssueDetectedTypeDef](./type_defs.md#issuedetectedtypedef)
-- [ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsrequestrequesttypedef)
-- [ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef)
 - [PointOfInterestTypeDef](./type_defs.md#pointofinteresttypedef)
-- [RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef)
+- [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
+- [ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef)
+- [IssueDetectedTypeDef](./type_defs.md#issuedetectedtypedef)
+- [CategoriesTypeDef](./type_defs.md#categoriestypedef)
 - [TranscriptTypeDef](./type_defs.md#transcripttypedef)
+- [RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef)
+- [ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef)
 

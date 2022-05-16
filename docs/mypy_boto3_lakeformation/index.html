@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36097,136 +36097,136 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_lakeformation.type_defs</span> <span class="kn">import</span> <span class="n">AddLFTagsToResourceRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_lakeformation.type_defs</span> <span class="kn">import</span> <span class="n">LFTagPairTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddLFTagsToResourceRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LFTagPairTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Resource&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;LFTags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;TagKey&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;TagValues&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addlftagstoresourcerequestrequesttypedef">AddLFTagsToResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addlftagstoresourceresponsetypedef">AddLFTagsToResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#lftagpairtypedef">LFTagPairTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#addobjectinputtypedef">AddObjectInputTypeDef</a></li>
 <li><a href="type_defs/#auditcontexttypedef">AuditContextTypeDef</a></li>
-<li><a href="type_defs/#batchgrantpermissionsrequestrequesttypedef">BatchGrantPermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgrantpermissionsresponsetypedef">BatchGrantPermissionsResponseTypeDef</a></li>
-<li><a href="type_defs/#batchpermissionsfailureentrytypedef">BatchPermissionsFailureEntryTypeDef</a></li>
-<li><a href="type_defs/#batchpermissionsrequestentrytypedef">BatchPermissionsRequestEntryTypeDef</a></li>
-<li><a href="type_defs/#batchrevokepermissionsrequestrequesttypedef">BatchRevokePermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#batchrevokepermissionsresponsetypedef">BatchRevokePermissionsResponseTypeDef</a></li>
+<li><a href="type_defs/#errordetailtypedef">ErrorDetailTypeDef</a></li>
+<li><a href="type_defs/#datalakeprincipaltypedef">DataLakePrincipalTypeDef</a></li>
 <li><a href="type_defs/#canceltransactionrequestrequesttypedef">CancelTransactionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#columnlftagtypedef">ColumnLFTagTypeDef</a></li>
 <li><a href="type_defs/#columnwildcardtypedef">ColumnWildcardTypeDef</a></li>
 <li><a href="type_defs/#committransactionrequestrequesttypedef">CommitTransactionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#committransactionresponsetypedef">CommitTransactionResponseTypeDef</a></li>
-<li><a href="type_defs/#createdatacellsfilterrequestrequesttypedef">CreateDataCellsFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createlftagrequestrequesttypedef">CreateLFTagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datacellsfilterresourcetypedef">DataCellsFilterResourceTypeDef</a></li>
-<li><a href="type_defs/#datacellsfiltertypedef">DataCellsFilterTypeDef</a></li>
-<li><a href="type_defs/#datalakeprincipaltypedef">DataLakePrincipalTypeDef</a></li>
-<li><a href="type_defs/#datalakesettingstypedef">DataLakeSettingsTypeDef</a></li>
+<li><a href="type_defs/#rowfiltertypedef">RowFilterTypeDef</a></li>
 <li><a href="type_defs/#datalocationresourcetypedef">DataLocationResourceTypeDef</a></li>
 <li><a href="type_defs/#databaseresourcetypedef">DatabaseResourceTypeDef</a></li>
 <li><a href="type_defs/#deletedatacellsfilterrequestrequesttypedef">DeleteDataCellsFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelftagrequestrequesttypedef">DeleteLFTagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteobjectinputtypedef">DeleteObjectInputTypeDef</a></li>
-<li><a href="type_defs/#deleteobjectsoncancelrequestrequesttypedef">DeleteObjectsOnCancelRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#virtualobjecttypedef">VirtualObjectTypeDef</a></li>
 <li><a href="type_defs/#deregisterresourcerequestrequesttypedef">DeregisterResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeresourcerequestrequesttypedef">DescribeResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeresourceresponsetypedef">DescribeResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#resourceinfotypedef">ResourceInfoTypeDef</a></li>
 <li><a href="type_defs/#describetransactionrequestrequesttypedef">DescribeTransactionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetransactionresponsetypedef">DescribeTransactionResponseTypeDef</a></li>
+<li><a href="type_defs/#transactiondescriptiontypedef">TransactionDescriptionTypeDef</a></li>
 <li><a href="type_defs/#detailsmaptypedef">DetailsMapTypeDef</a></li>
-<li><a href="type_defs/#errordetailtypedef">ErrorDetailTypeDef</a></li>
 <li><a href="type_defs/#executionstatisticstypedef">ExecutionStatisticsTypeDef</a></li>
 <li><a href="type_defs/#extendtransactionrequestrequesttypedef">ExtendTransactionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#filterconditiontypedef">FilterConditionTypeDef</a></li>
 <li><a href="type_defs/#getdatalakesettingsrequestrequesttypedef">GetDataLakeSettingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdatalakesettingsresponsetypedef">GetDataLakeSettingsResponseTypeDef</a></li>
 <li><a href="type_defs/#geteffectivepermissionsforpathrequestrequesttypedef">GetEffectivePermissionsForPathRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#geteffectivepermissionsforpathresponsetypedef">GetEffectivePermissionsForPathResponseTypeDef</a></li>
 <li><a href="type_defs/#getlftagrequestrequesttypedef">GetLFTagRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getlftagresponsetypedef">GetLFTagResponseTypeDef</a></li>
 <li><a href="type_defs/#getquerystaterequestrequesttypedef">GetQueryStateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getquerystateresponsetypedef">GetQueryStateResponseTypeDef</a></li>
 <li><a href="type_defs/#getquerystatisticsrequestrequesttypedef">GetQueryStatisticsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getquerystatisticsresponsetypedef">GetQueryStatisticsResponseTypeDef</a></li>
-<li><a href="type_defs/#getresourcelftagsrequestrequesttypedef">GetResourceLFTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresourcelftagsresponsetypedef">GetResourceLFTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#gettableobjectsrequestrequesttypedef">GetTableObjectsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettableobjectsresponsetypedef">GetTableObjectsResponseTypeDef</a></li>
-<li><a href="type_defs/#gettemporarygluepartitioncredentialsrequestrequesttypedef">GetTemporaryGluePartitionCredentialsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettemporarygluepartitioncredentialsresponsetypedef">GetTemporaryGluePartitionCredentialsResponseTypeDef</a></li>
-<li><a href="type_defs/#gettemporarygluetablecredentialsrequestrequesttypedef">GetTemporaryGlueTableCredentialsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettemporarygluetablecredentialsresponsetypedef">GetTemporaryGlueTableCredentialsResponseTypeDef</a></li>
-<li><a href="type_defs/#getworkunitresultsrequestrequesttypedef">GetWorkUnitResultsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getworkunitresultsresponsetypedef">GetWorkUnitResultsResponseTypeDef</a></li>
-<li><a href="type_defs/#getworkunitsrequestgetworkunitspaginatetypedef">GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getworkunitsrequestrequesttypedef">GetWorkUnitsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getworkunitsresponsetypedef">GetWorkUnitsResponseTypeDef</a></li>
-<li><a href="type_defs/#grantpermissionsrequestrequesttypedef">GrantPermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#lftagerrortypedef">LFTagErrorTypeDef</a></li>
-<li><a href="type_defs/#lftagkeyresourcetypedef">LFTagKeyResourceTypeDef</a></li>
-<li><a href="type_defs/#lftagpairtypedef">LFTagPairTypeDef</a></li>
-<li><a href="type_defs/#lftagpolicyresourcetypedef">LFTagPolicyResourceTypeDef</a></li>
-<li><a href="type_defs/#lftagtypedef">LFTagTypeDef</a></li>
-<li><a href="type_defs/#listdatacellsfilterrequestlistdatacellsfilterpaginatetypedef">ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdatacellsfilterrequestrequesttypedef">ListDataCellsFilterRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdatacellsfilterresponsetypedef">ListDataCellsFilterResponseTypeDef</a></li>
-<li><a href="type_defs/#listlftagsrequestlistlftagspaginatetypedef">ListLFTagsRequestListLFTagsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listlftagsrequestrequesttypedef">ListLFTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listlftagsresponsetypedef">ListLFTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#listpermissionsrequestrequesttypedef">ListPermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listpermissionsresponsetypedef">ListPermissionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresourcesrequestrequesttypedef">ListResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresourcesresponsetypedef">ListResourcesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtablestorageoptimizersrequestrequesttypedef">ListTableStorageOptimizersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtablestorageoptimizersresponsetypedef">ListTableStorageOptimizersResponseTypeDef</a></li>
-<li><a href="type_defs/#listtransactionsrequestrequesttypedef">ListTransactionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtransactionsresponsetypedef">ListTransactionsResponseTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#partitionobjectstypedef">PartitionObjectsTypeDef</a></li>
-<li><a href="type_defs/#partitionvaluelisttypedef">PartitionValueListTypeDef</a></li>
 <li><a href="type_defs/#planningstatisticstypedef">PlanningStatisticsTypeDef</a></li>
-<li><a href="type_defs/#principalpermissionstypedef">PrincipalPermissionsTypeDef</a></li>
-<li><a href="type_defs/#principalresourcepermissionstypedef">PrincipalResourcePermissionsTypeDef</a></li>
-<li><a href="type_defs/#putdatalakesettingsrequestrequesttypedef">PutDataLakeSettingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettableobjectsrequestrequesttypedef">GetTableObjectsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#partitionvaluelisttypedef">PartitionValueListTypeDef</a></li>
+<li><a href="type_defs/#getworkunitresultsrequestrequesttypedef">GetWorkUnitResultsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#getworkunitsrequestrequesttypedef">GetWorkUnitsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#workunitrangetypedef">WorkUnitRangeTypeDef</a></li>
+<li><a href="type_defs/#lftagkeyresourcetypedef">LFTagKeyResourceTypeDef</a></li>
+<li><a href="type_defs/#lftagtypedef">LFTagTypeDef</a></li>
+<li><a href="type_defs/#tableresourcetypedef">TableResourceTypeDef</a></li>
+<li><a href="type_defs/#listlftagsrequestrequesttypedef">ListLFTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtablestorageoptimizersrequestrequesttypedef">ListTableStorageOptimizersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#storageoptimizertypedef">StorageOptimizerTypeDef</a></li>
+<li><a href="type_defs/#listtransactionsrequestrequesttypedef">ListTransactionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tableobjecttypedef">TableObjectTypeDef</a></li>
 <li><a href="type_defs/#queryplanningcontexttypedef">QueryPlanningContextTypeDef</a></li>
 <li><a href="type_defs/#registerresourcerequestrequesttypedef">RegisterResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removelftagsfromresourcerequestrequesttypedef">RemoveLFTagsFromResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removelftagsfromresourceresponsetypedef">RemoveLFTagsFromResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#resourceinfotypedef">ResourceInfoTypeDef</a></li>
-<li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#revokepermissionsrequestrequesttypedef">RevokePermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#rowfiltertypedef">RowFilterTypeDef</a></li>
-<li><a href="type_defs/#searchdatabasesbylftagsrequestrequesttypedef">SearchDatabasesByLFTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#searchdatabasesbylftagsrequestsearchdatabasesbylftagspaginatetypedef">SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef</a></li>
-<li><a href="type_defs/#searchdatabasesbylftagsresponsetypedef">SearchDatabasesByLFTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#searchtablesbylftagsrequestrequesttypedef">SearchTablesByLFTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#searchtablesbylftagsrequestsearchtablesbylftagspaginatetypedef">SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef</a></li>
-<li><a href="type_defs/#searchtablesbylftagsresponsetypedef">SearchTablesByLFTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#startqueryplanningrequestrequesttypedef">StartQueryPlanningRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startqueryplanningresponsetypedef">StartQueryPlanningResponseTypeDef</a></li>
 <li><a href="type_defs/#starttransactionrequestrequesttypedef">StartTransactionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#starttransactionresponsetypedef">StartTransactionResponseTypeDef</a></li>
-<li><a href="type_defs/#storageoptimizertypedef">StorageOptimizerTypeDef</a></li>
-<li><a href="type_defs/#tableobjecttypedef">TableObjectTypeDef</a></li>
-<li><a href="type_defs/#tableresourcetypedef">TableResourceTypeDef</a></li>
-<li><a href="type_defs/#tablewithcolumnsresourcetypedef">TableWithColumnsResourceTypeDef</a></li>
-<li><a href="type_defs/#taggeddatabasetypedef">TaggedDatabaseTypeDef</a></li>
-<li><a href="type_defs/#taggedtabletypedef">TaggedTableTypeDef</a></li>
-<li><a href="type_defs/#transactiondescriptiontypedef">TransactionDescriptionTypeDef</a></li>
 <li><a href="type_defs/#updatelftagrequestrequesttypedef">UpdateLFTagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateresourcerequestrequesttypedef">UpdateResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatetableobjectsrequestrequesttypedef">UpdateTableObjectsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetablestorageoptimizerrequestrequesttypedef">UpdateTableStorageOptimizerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#columnlftagtypedef">ColumnLFTagTypeDef</a></li>
+<li><a href="type_defs/#committransactionresponsetypedef">CommitTransactionResponseTypeDef</a></li>
+<li><a href="type_defs/#getlftagresponsetypedef">GetLFTagResponseTypeDef</a></li>
+<li><a href="type_defs/#getquerystateresponsetypedef">GetQueryStateResponseTypeDef</a></li>
+<li><a href="type_defs/#gettemporarygluepartitioncredentialsresponsetypedef">GetTemporaryGluePartitionCredentialsResponseTypeDef</a></li>
+<li><a href="type_defs/#gettemporarygluetablecredentialsresponsetypedef">GetTemporaryGlueTableCredentialsResponseTypeDef</a></li>
+<li><a href="type_defs/#getworkunitresultsresponsetypedef">GetWorkUnitResultsResponseTypeDef</a></li>
+<li><a href="type_defs/#listlftagsresponsetypedef">ListLFTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#startqueryplanningresponsetypedef">StartQueryPlanningResponseTypeDef</a></li>
+<li><a href="type_defs/#starttransactionresponsetypedef">StartTransactionResponseTypeDef</a></li>
 <li><a href="type_defs/#updatetablestorageoptimizerresponsetypedef">UpdateTableStorageOptimizerResponseTypeDef</a></li>
-<li><a href="type_defs/#virtualobjecttypedef">VirtualObjectTypeDef</a></li>
-<li><a href="type_defs/#workunitrangetypedef">WorkUnitRangeTypeDef</a></li>
+<li><a href="type_defs/#gettemporarygluetablecredentialsrequestrequesttypedef">GetTemporaryGlueTableCredentialsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#lftagerrortypedef">LFTagErrorTypeDef</a></li>
+<li><a href="type_defs/#principalpermissionstypedef">PrincipalPermissionsTypeDef</a></li>
+<li><a href="type_defs/#tablewithcolumnsresourcetypedef">TableWithColumnsResourceTypeDef</a></li>
+<li><a href="type_defs/#datacellsfiltertypedef">DataCellsFilterTypeDef</a></li>
+<li><a href="type_defs/#taggeddatabasetypedef">TaggedDatabaseTypeDef</a></li>
 <li><a href="type_defs/#writeoperationtypedef">WriteOperationTypeDef</a></li>
+<li><a href="type_defs/#deleteobjectsoncancelrequestrequesttypedef">DeleteObjectsOnCancelRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeresourceresponsetypedef">DescribeResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#listresourcesresponsetypedef">ListResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#describetransactionresponsetypedef">DescribeTransactionResponseTypeDef</a></li>
+<li><a href="type_defs/#listtransactionsresponsetypedef">ListTransactionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listresourcesrequestrequesttypedef">ListResourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getquerystatisticsresponsetypedef">GetQueryStatisticsResponseTypeDef</a></li>
+<li><a href="type_defs/#gettemporarygluepartitioncredentialsrequestrequesttypedef">GetTemporaryGluePartitionCredentialsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getworkunitsrequestgetworkunitspaginatetypedef">GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listlftagsrequestlistlftagspaginatetypedef">ListLFTagsRequestListLFTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getworkunitsresponsetypedef">GetWorkUnitsResponseTypeDef</a></li>
+<li><a href="type_defs/#lftagpolicyresourcetypedef">LFTagPolicyResourceTypeDef</a></li>
+<li><a href="type_defs/#searchdatabasesbylftagsrequestrequesttypedef">SearchDatabasesByLFTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#searchdatabasesbylftagsrequestsearchdatabasesbylftagspaginatetypedef">SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#searchtablesbylftagsrequestrequesttypedef">SearchTablesByLFTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#searchtablesbylftagsrequestsearchtablesbylftagspaginatetypedef">SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdatacellsfilterrequestlistdatacellsfilterpaginatetypedef">ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdatacellsfilterrequestrequesttypedef">ListDataCellsFilterRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtablestorageoptimizersresponsetypedef">ListTableStorageOptimizersResponseTypeDef</a></li>
+<li><a href="type_defs/#partitionobjectstypedef">PartitionObjectsTypeDef</a></li>
+<li><a href="type_defs/#startqueryplanningrequestrequesttypedef">StartQueryPlanningRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresourcelftagsresponsetypedef">GetResourceLFTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#taggedtabletypedef">TaggedTableTypeDef</a></li>
+<li><a href="type_defs/#addlftagstoresourceresponsetypedef">AddLFTagsToResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#removelftagsfromresourceresponsetypedef">RemoveLFTagsFromResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#datalakesettingstypedef">DataLakeSettingsTypeDef</a></li>
+<li><a href="type_defs/#createdatacellsfilterrequestrequesttypedef">CreateDataCellsFilterRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listdatacellsfilterresponsetypedef">ListDataCellsFilterResponseTypeDef</a></li>
+<li><a href="type_defs/#searchdatabasesbylftagsresponsetypedef">SearchDatabasesByLFTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatetableobjectsrequestrequesttypedef">UpdateTableObjectsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
+<li><a href="type_defs/#gettableobjectsresponsetypedef">GetTableObjectsResponseTypeDef</a></li>
+<li><a href="type_defs/#searchtablesbylftagsresponsetypedef">SearchTablesByLFTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#getdatalakesettingsresponsetypedef">GetDataLakeSettingsResponseTypeDef</a></li>
+<li><a href="type_defs/#putdatalakesettingsrequestrequesttypedef">PutDataLakeSettingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addlftagstoresourcerequestrequesttypedef">AddLFTagsToResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchpermissionsrequestentrytypedef">BatchPermissionsRequestEntryTypeDef</a></li>
+<li><a href="type_defs/#getresourcelftagsrequestrequesttypedef">GetResourceLFTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#grantpermissionsrequestrequesttypedef">GrantPermissionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listpermissionsrequestrequesttypedef">ListPermissionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#principalresourcepermissionstypedef">PrincipalResourcePermissionsTypeDef</a></li>
+<li><a href="type_defs/#removelftagsfromresourcerequestrequesttypedef">RemoveLFTagsFromResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#revokepermissionsrequestrequesttypedef">RevokePermissionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgrantpermissionsrequestrequesttypedef">BatchGrantPermissionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchpermissionsfailureentrytypedef">BatchPermissionsFailureEntryTypeDef</a></li>
+<li><a href="type_defs/#batchrevokepermissionsrequestrequesttypedef">BatchRevokePermissionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#geteffectivepermissionsforpathresponsetypedef">GetEffectivePermissionsForPathResponseTypeDef</a></li>
+<li><a href="type_defs/#listpermissionsresponsetypedef">ListPermissionsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgrantpermissionsresponsetypedef">BatchGrantPermissionsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchrevokepermissionsresponsetypedef">BatchRevokePermissionsResponseTypeDef</a></li>
 </ul>
 
               
@@ -36296,7 +36296,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

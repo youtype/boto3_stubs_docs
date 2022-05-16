@@ -7,45 +7,50 @@
     Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
     type annotations stubs module [mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
-## AddNotificationChannelsRequestRequestTypeDef
+## ChannelTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ChannelTypeDef
 
-def get_value() -> AddNotificationChannelsRequestRequestTypeDef:
+def get_value() -> ChannelTypeDef:
     return {
-        "channels": ...,
-        "profilingGroupName": ...,
+        "eventPublishers": ...,
+        "uri": ...,
     }
 ```
 
 ```python title="Definition"
-class AddNotificationChannelsRequestRequestTypeDef(TypedDict):
-    channels: Sequence[ChannelTypeDef],  # (1)
-    profilingGroupName: str,
+class ChannelTypeDef(TypedDict):
+    eventPublishers: Sequence[EventPublisherType],  # (1)
+    uri: str,
+    id: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-## AddNotificationChannelsResponseTypeDef
+1. See [:material-code-brackets: EventPublisherType](./literals.md#eventpublishertype) 
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AddNotificationChannelsResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "notificationConfiguration": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AddNotificationChannelsResponseTypeDef(TypedDict):
-    notificationConfiguration: NotificationConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AgentConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -100,125 +105,81 @@ class AggregatedProfileTimeTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
-## AnomalyInstanceTypeDef
+## UserFeedbackTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import AnomalyInstanceTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import UserFeedbackTypeDef
 
-def get_value() -> AnomalyInstanceTypeDef:
+def get_value() -> UserFeedbackTypeDef:
     return {
-        "id": ...,
-        "startTime": ...,
+        "type": ...,
     }
 ```
 
 ```python title="Definition"
-class AnomalyInstanceTypeDef(TypedDict):
-    id: str,
-    startTime: datetime,
-    endTime: NotRequired[datetime],
-    userFeedback: NotRequired[UserFeedbackTypeDef],  # (1)
+class UserFeedbackTypeDef(TypedDict):
+    type: FeedbackTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: UserFeedbackTypeDef](./type_defs.md#userfeedbacktypedef) 
-## AnomalyTypeDef
+1. See [:material-code-brackets: FeedbackTypeType](./literals.md#feedbacktypetype) 
+## MetricTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import AnomalyTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import MetricTypeDef
 
-def get_value() -> AnomalyTypeDef:
+def get_value() -> MetricTypeDef:
     return {
-        "instances": ...,
-        "metric": ...,
-        "reason": ...,
+        "frameName": ...,
+        "threadStates": ...,
+        "type": ...,
     }
 ```
 
 ```python title="Definition"
-class AnomalyTypeDef(TypedDict):
-    instances: List[AnomalyInstanceTypeDef],  # (1)
-    metric: MetricTypeDef,  # (2)
-    reason: str,
+class MetricTypeDef(TypedDict):
+    frameName: str,
+    threadStates: List[str],
+    type: MetricTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: AnomalyInstanceTypeDef](./type_defs.md#anomalyinstancetypedef) 
-2. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
-## BatchGetFrameMetricDataRequestRequestTypeDef
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+## FrameMetricTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import FrameMetricTypeDef
 
-def get_value() -> BatchGetFrameMetricDataRequestRequestTypeDef:
+def get_value() -> FrameMetricTypeDef:
     return {
-        "profilingGroupName": ...,
+        "frameName": ...,
+        "threadStates": ...,
+        "type": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchGetFrameMetricDataRequestRequestTypeDef(TypedDict):
-    profilingGroupName: str,
-    endTime: NotRequired[Union[datetime, str]],
-    frameMetrics: NotRequired[Sequence[FrameMetricTypeDef]],  # (1)
-    period: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-    targetResolution: NotRequired[AggregationPeriodType],  # (2)
+class FrameMetricTypeDef(TypedDict):
+    frameName: str,
+    threadStates: Sequence[str],
+    type: MetricTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: FrameMetricTypeDef](./type_defs.md#framemetrictypedef) 
-2. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
-## BatchGetFrameMetricDataResponseTypeDef
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+## TimestampStructureTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import TimestampStructureTypeDef
 
-def get_value() -> BatchGetFrameMetricDataResponseTypeDef:
+def get_value() -> TimestampStructureTypeDef:
     return {
-        "endTime": ...,
-        "endTimes": ...,
-        "frameMetricData": ...,
-        "resolution": ...,
-        "startTime": ...,
-        "unprocessedEndTimes": ...,
-        "ResponseMetadata": ...,
+        "value": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchGetFrameMetricDataResponseTypeDef(TypedDict):
-    endTime: datetime,
-    endTimes: List[TimestampStructureTypeDef],  # (1)
-    frameMetricData: List[FrameMetricDatumTypeDef],  # (2)
-    resolution: AggregationPeriodType,  # (3)
-    startTime: datetime,
-    unprocessedEndTimes: Dict[str, List[TimestampStructureTypeDef]],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class TimestampStructureTypeDef(TypedDict):
+    value: datetime,
 ```
 
-1. See [:material-code-braces: TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef) 
-2. See [:material-code-braces: FrameMetricDatumTypeDef](./type_defs.md#framemetricdatumtypedef) 
-3. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
-4. See [:material-code-braces: TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ChannelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ChannelTypeDef
-
-def get_value() -> ChannelTypeDef:
-    return {
-        "eventPublishers": ...,
-        "uri": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelTypeDef(TypedDict):
-    eventPublishers: Sequence[EventPublisherType],  # (1)
-    uri: str,
-    id: NotRequired[str],
-```
-
-1. See [:material-code-brackets: EventPublisherType](./literals.md#eventpublishertype) 
 ## ConfigureAgentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -238,6 +199,589 @@ class ConfigureAgentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MetadataFieldType](./literals.md#metadatafieldtype) 
+## DeleteProfilingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import DeleteProfilingGroupRequestRequestTypeDef
+
+def get_value() -> DeleteProfilingGroupRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteProfilingGroupRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+```
+
+## DescribeProfilingGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupRequestRequestTypeDef
+
+def get_value() -> DescribeProfilingGroupRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProfilingGroupRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+```
+
+## FindingsReportSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import FindingsReportSummaryTypeDef
+
+def get_value() -> FindingsReportSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class FindingsReportSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    profileEndTime: NotRequired[datetime],
+    profileStartTime: NotRequired[datetime],
+    profilingGroupName: NotRequired[str],
+    totalNumberOfFindings: NotRequired[int],
+```
+
+## GetFindingsReportAccountSummaryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryRequestRequestTypeDef
+
+def get_value() -> GetFindingsReportAccountSummaryRequestRequestTypeDef:
+    return {
+        "dailyReportsOnly": ...,
+    }
+```
+
+```python title="Definition"
+class GetFindingsReportAccountSummaryRequestRequestTypeDef(TypedDict):
+    dailyReportsOnly: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## GetNotificationConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRequestRequestTypeDef
+
+def get_value() -> GetNotificationConfigurationRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class GetNotificationConfigurationRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+```
+
+## GetPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetPolicyRequestRequestTypeDef
+
+def get_value() -> GetPolicyRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class GetPolicyRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+```
+
+## GetProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetProfileRequestRequestTypeDef
+
+def get_value() -> GetProfileRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class GetProfileRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+    accept: NotRequired[str],
+    endTime: NotRequired[Union[datetime, str]],
+    maxDepth: NotRequired[int],
+    period: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+```
+
+## GetRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsRequestRequestTypeDef
+
+def get_value() -> GetRecommendationsRequestRequestTypeDef:
+    return {
+        "endTime": ...,
+        "profilingGroupName": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationsRequestRequestTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    locale: NotRequired[str],
+```
+
+## ListFindingsReportsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsRequestRequestTypeDef
+
+def get_value() -> ListFindingsReportsRequestRequestTypeDef:
+    return {
+        "endTime": ...,
+        "profilingGroupName": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingsReportsRequestRequestTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    dailyReportsOnly: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListProfileTimesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesRequestRequestTypeDef
+
+def get_value() -> ListProfileTimesRequestRequestTypeDef:
+    return {
+        "endTime": ...,
+        "period": ...,
+        "profilingGroupName": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListProfileTimesRequestRequestTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    period: AggregationPeriodType,  # (1)
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    orderBy: NotRequired[OrderByType],  # (2)
+```
+
+1. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+## ProfileTimeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ProfileTimeTypeDef
+
+def get_value() -> ProfileTimeTypeDef:
+    return {
+        "start": ...,
+    }
+```
+
+```python title="Definition"
+class ProfileTimeTypeDef(TypedDict):
+    start: NotRequired[datetime],
+```
+
+## ListProfilingGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsRequestRequestTypeDef
+
+def get_value() -> ListProfilingGroupsRequestRequestTypeDef:
+    return {
+        "includeDescription": ...,
+    }
+```
+
+```python title="Definition"
+class ListProfilingGroupsRequestRequestTypeDef(TypedDict):
+    includeDescription: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## MatchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import MatchTypeDef
+
+def get_value() -> MatchTypeDef:
+    return {
+        "frameAddress": ...,
+    }
+```
+
+```python title="Definition"
+class MatchTypeDef(TypedDict):
+    frameAddress: NotRequired[str],
+    targetFramesIndex: NotRequired[int],
+    thresholdBreachValue: NotRequired[float],
+```
+
+## PatternTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import PatternTypeDef
+
+def get_value() -> PatternTypeDef:
+    return {
+        "countersToAggregate": ...,
+    }
+```
+
+```python title="Definition"
+class PatternTypeDef(TypedDict):
+    countersToAggregate: NotRequired[List[str]],
+    description: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    resolutionSteps: NotRequired[str],
+    targetFrames: NotRequired[List[List[str]]],
+    thresholdPercent: NotRequired[float],
+```
+
+## PostAgentProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import PostAgentProfileRequestRequestTypeDef
+
+def get_value() -> PostAgentProfileRequestRequestTypeDef:
+    return {
+        "agentProfile": ...,
+        "contentType": ...,
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class PostAgentProfileRequestRequestTypeDef(TypedDict):
+    agentProfile: Union[str, bytes, IO[Any], StreamingBody],
+    contentType: str,
+    profilingGroupName: str,
+    profileToken: NotRequired[str],
+```
+
+## PutPermissionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import PutPermissionRequestRequestTypeDef
+
+def get_value() -> PutPermissionRequestRequestTypeDef:
+    return {
+        "actionGroup": ...,
+        "principals": ...,
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class PutPermissionRequestRequestTypeDef(TypedDict):
+    actionGroup: ActionGroupType,  # (1)
+    principals: Sequence[str],
+    profilingGroupName: str,
+    revisionId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
+## RemoveNotificationChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelRequestRequestTypeDef
+
+def get_value() -> RemoveNotificationChannelRequestRequestTypeDef:
+    return {
+        "channelId": ...,
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveNotificationChannelRequestRequestTypeDef(TypedDict):
+    channelId: str,
+    profilingGroupName: str,
+```
+
+## RemovePermissionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionRequestRequestTypeDef
+
+def get_value() -> RemovePermissionRequestRequestTypeDef:
+    return {
+        "actionGroup": ...,
+        "profilingGroupName": ...,
+        "revisionId": ...,
+    }
+```
+
+```python title="Definition"
+class RemovePermissionRequestRequestTypeDef(TypedDict):
+    actionGroup: ActionGroupType,  # (1)
+    profilingGroupName: str,
+    revisionId: str,
+```
+
+1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
+## SubmitFeedbackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import SubmitFeedbackRequestRequestTypeDef
+
+def get_value() -> SubmitFeedbackRequestRequestTypeDef:
+    return {
+        "anomalyInstanceId": ...,
+        "profilingGroupName": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class SubmitFeedbackRequestRequestTypeDef(TypedDict):
+    anomalyInstanceId: str,
+    profilingGroupName: str,
+    type: FeedbackTypeType,  # (1)
+    comment: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FeedbackTypeType](./literals.md#feedbacktypetype) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## AddNotificationChannelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestRequestTypeDef
+
+def get_value() -> AddNotificationChannelsRequestRequestTypeDef:
+    return {
+        "channels": ...,
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class AddNotificationChannelsRequestRequestTypeDef(TypedDict):
+    channels: Sequence[ChannelTypeDef],  # (1)
+    profilingGroupName: str,
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+## NotificationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import NotificationConfigurationTypeDef
+
+def get_value() -> NotificationConfigurationTypeDef:
+    return {
+        "channels": ...,
+    }
+```
+
+```python title="Definition"
+class NotificationConfigurationTypeDef(TypedDict):
+    channels: NotRequired[List[ChannelTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+## GetPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "policy": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    policy: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetProfileResponseTypeDef
+
+def get_value() -> GetProfileResponseTypeDef:
+    return {
+        "contentEncoding": ...,
+        "contentType": ...,
+        "profile": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetProfileResponseTypeDef(TypedDict):
+    contentEncoding: str,
+    contentType: str,
+    profile: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutPermissionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import PutPermissionResponseTypeDef
+
+def get_value() -> PutPermissionResponseTypeDef:
+    return {
+        "policy": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutPermissionResponseTypeDef(TypedDict):
+    policy: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RemovePermissionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionResponseTypeDef
+
+def get_value() -> RemovePermissionResponseTypeDef:
+    return {
+        "policy": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RemovePermissionResponseTypeDef(TypedDict):
+    policy: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigureAgentResponseTypeDef
 
 ```python title="Usage Example"
@@ -281,98 +825,88 @@ class CreateProfilingGroupRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
 2. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
-## CreateProfilingGroupResponseTypeDef
+## UpdateProfilingGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupRequestRequestTypeDef
 
-def get_value() -> CreateProfilingGroupResponseTypeDef:
+def get_value() -> UpdateProfilingGroupRequestRequestTypeDef:
     return {
-        "profilingGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProfilingGroupResponseTypeDef(TypedDict):
-    profilingGroup: ProfilingGroupDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteProfilingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import DeleteProfilingGroupRequestRequestTypeDef
-
-def get_value() -> DeleteProfilingGroupRequestRequestTypeDef:
-    return {
+        "agentOrchestrationConfig": ...,
         "profilingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteProfilingGroupRequestRequestTypeDef(TypedDict):
+class UpdateProfilingGroupRequestRequestTypeDef(TypedDict):
+    agentOrchestrationConfig: AgentOrchestrationConfigTypeDef,  # (1)
     profilingGroupName: str,
 ```
 
-## DescribeProfilingGroupRequestRequestTypeDef
+1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
+## ProfilingStatusTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ProfilingStatusTypeDef
 
-def get_value() -> DescribeProfilingGroupRequestRequestTypeDef:
+def get_value() -> ProfilingStatusTypeDef:
     return {
-        "profilingGroupName": ...,
+        "latestAgentOrchestratedAt": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeProfilingGroupRequestRequestTypeDef(TypedDict):
-    profilingGroupName: str,
+class ProfilingStatusTypeDef(TypedDict):
+    latestAgentOrchestratedAt: NotRequired[datetime],
+    latestAgentProfileReportedAt: NotRequired[datetime],
+    latestAggregatedProfile: NotRequired[AggregatedProfileTimeTypeDef],  # (1)
 ```
 
-## DescribeProfilingGroupResponseTypeDef
+1. See [:material-code-braces: AggregatedProfileTimeTypeDef](./type_defs.md#aggregatedprofiletimetypedef) 
+## AnomalyInstanceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import AnomalyInstanceTypeDef
 
-def get_value() -> DescribeProfilingGroupResponseTypeDef:
-    return {
-        "profilingGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProfilingGroupResponseTypeDef(TypedDict):
-    profilingGroup: ProfilingGroupDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## FindingsReportSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import FindingsReportSummaryTypeDef
-
-def get_value() -> FindingsReportSummaryTypeDef:
+def get_value() -> AnomalyInstanceTypeDef:
     return {
         "id": ...,
+        "startTime": ...,
     }
 ```
 
 ```python title="Definition"
-class FindingsReportSummaryTypeDef(TypedDict):
-    id: NotRequired[str],
-    profileEndTime: NotRequired[datetime],
-    profileStartTime: NotRequired[datetime],
-    profilingGroupName: NotRequired[str],
-    totalNumberOfFindings: NotRequired[int],
+class AnomalyInstanceTypeDef(TypedDict):
+    id: str,
+    startTime: datetime,
+    endTime: NotRequired[datetime],
+    userFeedback: NotRequired[UserFeedbackTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: UserFeedbackTypeDef](./type_defs.md#userfeedbacktypedef) 
+## BatchGetFrameMetricDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataRequestRequestTypeDef
+
+def get_value() -> BatchGetFrameMetricDataRequestRequestTypeDef:
+    return {
+        "profilingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetFrameMetricDataRequestRequestTypeDef(TypedDict):
+    profilingGroupName: str,
+    endTime: NotRequired[Union[datetime, str]],
+    frameMetrics: NotRequired[Sequence[FrameMetricTypeDef]],  # (1)
+    period: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+    targetResolution: NotRequired[AggregationPeriodType],  # (2)
+```
+
+1. See [:material-code-braces: FrameMetricTypeDef](./type_defs.md#framemetrictypedef) 
+2. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
 ## FrameMetricDatumTypeDef
 
 ```python title="Usage Example"
@@ -392,45 +926,6 @@ class FrameMetricDatumTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FrameMetricTypeDef](./type_defs.md#framemetrictypedef) 
-## FrameMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import FrameMetricTypeDef
-
-def get_value() -> FrameMetricTypeDef:
-    return {
-        "frameName": ...,
-        "threadStates": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class FrameMetricTypeDef(TypedDict):
-    frameName: str,
-    threadStates: Sequence[str],
-    type: MetricTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
-## GetFindingsReportAccountSummaryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryRequestRequestTypeDef
-
-def get_value() -> GetFindingsReportAccountSummaryRequestRequestTypeDef:
-    return {
-        "dailyReportsOnly": ...,
-    }
-```
-
-```python title="Definition"
-class GetFindingsReportAccountSummaryRequestRequestTypeDef(TypedDict):
-    dailyReportsOnly: NotRequired[bool],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
 ## GetFindingsReportAccountSummaryResponseTypeDef
 
 ```python title="Usage Example"
@@ -453,196 +948,6 @@ class GetFindingsReportAccountSummaryResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FindingsReportSummaryTypeDef](./type_defs.md#findingsreportsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNotificationConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRequestRequestTypeDef
-
-def get_value() -> GetNotificationConfigurationRequestRequestTypeDef:
-    return {
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class GetNotificationConfigurationRequestRequestTypeDef(TypedDict):
-    profilingGroupName: str,
-```
-
-## GetNotificationConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationResponseTypeDef
-
-def get_value() -> GetNotificationConfigurationResponseTypeDef:
-    return {
-        "notificationConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetNotificationConfigurationResponseTypeDef(TypedDict):
-    notificationConfiguration: NotificationConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetPolicyRequestRequestTypeDef
-
-def get_value() -> GetPolicyRequestRequestTypeDef:
-    return {
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class GetPolicyRequestRequestTypeDef(TypedDict):
-    profilingGroupName: str,
-```
-
-## GetPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetPolicyResponseTypeDef
-
-def get_value() -> GetPolicyResponseTypeDef:
-    return {
-        "policy": ...,
-        "revisionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPolicyResponseTypeDef(TypedDict):
-    policy: str,
-    revisionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetProfileRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetProfileRequestRequestTypeDef
-
-def get_value() -> GetProfileRequestRequestTypeDef:
-    return {
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class GetProfileRequestRequestTypeDef(TypedDict):
-    profilingGroupName: str,
-    accept: NotRequired[str],
-    endTime: NotRequired[Union[datetime, str]],
-    maxDepth: NotRequired[int],
-    period: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-```
-
-## GetProfileResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetProfileResponseTypeDef
-
-def get_value() -> GetProfileResponseTypeDef:
-    return {
-        "contentEncoding": ...,
-        "contentType": ...,
-        "profile": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetProfileResponseTypeDef(TypedDict):
-    contentEncoding: str,
-    contentType: str,
-    profile: StreamingBody,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRecommendationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsRequestRequestTypeDef
-
-def get_value() -> GetRecommendationsRequestRequestTypeDef:
-    return {
-        "endTime": ...,
-        "profilingGroupName": ...,
-        "startTime": ...,
-    }
-```
-
-```python title="Definition"
-class GetRecommendationsRequestRequestTypeDef(TypedDict):
-    endTime: Union[datetime, str],
-    profilingGroupName: str,
-    startTime: Union[datetime, str],
-    locale: NotRequired[str],
-```
-
-## GetRecommendationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsResponseTypeDef
-
-def get_value() -> GetRecommendationsResponseTypeDef:
-    return {
-        "anomalies": ...,
-        "profileEndTime": ...,
-        "profileStartTime": ...,
-        "profilingGroupName": ...,
-        "recommendations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRecommendationsResponseTypeDef(TypedDict):
-    anomalies: List[AnomalyTypeDef],  # (1)
-    profileEndTime: datetime,
-    profileStartTime: datetime,
-    profilingGroupName: str,
-    recommendations: List[RecommendationTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AnomalyTypeDef](./type_defs.md#anomalytypedef) 
-2. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFindingsReportsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsRequestRequestTypeDef
-
-def get_value() -> ListFindingsReportsRequestRequestTypeDef:
-    return {
-        "endTime": ...,
-        "profilingGroupName": ...,
-        "startTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListFindingsReportsRequestRequestTypeDef(TypedDict):
-    endTime: Union[datetime, str],
-    profilingGroupName: str,
-    startTime: Union[datetime, str],
-    dailyReportsOnly: NotRequired[bool],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
 ## ListFindingsReportsResponseTypeDef
 
 ```python title="Usage Example"
@@ -692,33 +997,6 @@ class ListProfileTimesRequestListProfileTimesPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
 2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListProfileTimesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesRequestRequestTypeDef
-
-def get_value() -> ListProfileTimesRequestRequestTypeDef:
-    return {
-        "endTime": ...,
-        "period": ...,
-        "profilingGroupName": ...,
-        "startTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListProfileTimesRequestRequestTypeDef(TypedDict):
-    endTime: Union[datetime, str],
-    period: AggregationPeriodType,  # (1)
-    profilingGroupName: str,
-    startTime: Union[datetime, str],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    orderBy: NotRequired[OrderByType],  # (2)
-```
-
-1. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
-2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## ListProfileTimesResponseTypeDef
 
 ```python title="Usage Example"
@@ -741,304 +1019,6 @@ class ListProfileTimesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProfileTimeTypeDef](./type_defs.md#profiletimetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProfilingGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsRequestRequestTypeDef
-
-def get_value() -> ListProfilingGroupsRequestRequestTypeDef:
-    return {
-        "includeDescription": ...,
-    }
-```
-
-```python title="Definition"
-class ListProfilingGroupsRequestRequestTypeDef(TypedDict):
-    includeDescription: NotRequired[bool],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListProfilingGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsResponseTypeDef
-
-def get_value() -> ListProfilingGroupsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "profilingGroupNames": ...,
-        "profilingGroups": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListProfilingGroupsResponseTypeDef(TypedDict):
-    nextToken: str,
-    profilingGroupNames: List[str],
-    profilingGroups: List[ProfilingGroupDescriptionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MatchTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import MatchTypeDef
-
-def get_value() -> MatchTypeDef:
-    return {
-        "frameAddress": ...,
-    }
-```
-
-```python title="Definition"
-class MatchTypeDef(TypedDict):
-    frameAddress: NotRequired[str],
-    targetFramesIndex: NotRequired[int],
-    thresholdBreachValue: NotRequired[float],
-```
-
-## MetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import MetricTypeDef
-
-def get_value() -> MetricTypeDef:
-    return {
-        "frameName": ...,
-        "threadStates": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class MetricTypeDef(TypedDict):
-    frameName: str,
-    threadStates: List[str],
-    type: MetricTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
-## NotificationConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import NotificationConfigurationTypeDef
-
-def get_value() -> NotificationConfigurationTypeDef:
-    return {
-        "channels": ...,
-    }
-```
-
-```python title="Definition"
-class NotificationConfigurationTypeDef(TypedDict):
-    channels: NotRequired[List[ChannelTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PatternTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import PatternTypeDef
-
-def get_value() -> PatternTypeDef:
-    return {
-        "countersToAggregate": ...,
-    }
-```
-
-```python title="Definition"
-class PatternTypeDef(TypedDict):
-    countersToAggregate: NotRequired[List[str]],
-    description: NotRequired[str],
-    id: NotRequired[str],
-    name: NotRequired[str],
-    resolutionSteps: NotRequired[str],
-    targetFrames: NotRequired[List[List[str]]],
-    thresholdPercent: NotRequired[float],
-```
-
-## PostAgentProfileRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import PostAgentProfileRequestRequestTypeDef
-
-def get_value() -> PostAgentProfileRequestRequestTypeDef:
-    return {
-        "agentProfile": ...,
-        "contentType": ...,
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class PostAgentProfileRequestRequestTypeDef(TypedDict):
-    agentProfile: Union[str, bytes, IO[Any], StreamingBody],
-    contentType: str,
-    profilingGroupName: str,
-    profileToken: NotRequired[str],
-```
-
-## ProfileTimeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ProfileTimeTypeDef
-
-def get_value() -> ProfileTimeTypeDef:
-    return {
-        "start": ...,
-    }
-```
-
-```python title="Definition"
-class ProfileTimeTypeDef(TypedDict):
-    start: NotRequired[datetime],
-```
-
-## ProfilingGroupDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ProfilingGroupDescriptionTypeDef
-
-def get_value() -> ProfilingGroupDescriptionTypeDef:
-    return {
-        "agentOrchestrationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ProfilingGroupDescriptionTypeDef(TypedDict):
-    agentOrchestrationConfig: NotRequired[AgentOrchestrationConfigTypeDef],  # (1)
-    arn: NotRequired[str],
-    computePlatform: NotRequired[ComputePlatformType],  # (2)
-    createdAt: NotRequired[datetime],
-    name: NotRequired[str],
-    profilingStatus: NotRequired[ProfilingStatusTypeDef],  # (3)
-    tags: NotRequired[Dict[str, str]],
-    updatedAt: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
-2. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
-3. See [:material-code-braces: ProfilingStatusTypeDef](./type_defs.md#profilingstatustypedef) 
-## ProfilingStatusTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ProfilingStatusTypeDef
-
-def get_value() -> ProfilingStatusTypeDef:
-    return {
-        "latestAgentOrchestratedAt": ...,
-    }
-```
-
-```python title="Definition"
-class ProfilingStatusTypeDef(TypedDict):
-    latestAgentOrchestratedAt: NotRequired[datetime],
-    latestAgentProfileReportedAt: NotRequired[datetime],
-    latestAggregatedProfile: NotRequired[AggregatedProfileTimeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AggregatedProfileTimeTypeDef](./type_defs.md#aggregatedprofiletimetypedef) 
-## PutPermissionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import PutPermissionRequestRequestTypeDef
-
-def get_value() -> PutPermissionRequestRequestTypeDef:
-    return {
-        "actionGroup": ...,
-        "principals": ...,
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class PutPermissionRequestRequestTypeDef(TypedDict):
-    actionGroup: ActionGroupType,  # (1)
-    principals: Sequence[str],
-    profilingGroupName: str,
-    revisionId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
-## PutPermissionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import PutPermissionResponseTypeDef
-
-def get_value() -> PutPermissionResponseTypeDef:
-    return {
-        "policy": ...,
-        "revisionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutPermissionResponseTypeDef(TypedDict):
-    policy: str,
-    revisionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecommendationTypeDef
 
 ```python title="Usage Example"
@@ -1067,24 +1047,46 @@ class RecommendationTypeDef(TypedDict):
 
 1. See [:material-code-braces: PatternTypeDef](./type_defs.md#patterntypedef) 
 2. See [:material-code-braces: MatchTypeDef](./type_defs.md#matchtypedef) 
-## RemoveNotificationChannelRequestRequestTypeDef
+## AddNotificationChannelsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsResponseTypeDef
 
-def get_value() -> RemoveNotificationChannelRequestRequestTypeDef:
+def get_value() -> AddNotificationChannelsResponseTypeDef:
     return {
-        "channelId": ...,
-        "profilingGroupName": ...,
+        "notificationConfiguration": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RemoveNotificationChannelRequestRequestTypeDef(TypedDict):
-    channelId: str,
-    profilingGroupName: str,
+class AddNotificationChannelsResponseTypeDef(TypedDict):
+    notificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNotificationConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationResponseTypeDef
+
+def get_value() -> GetNotificationConfigurationResponseTypeDef:
+    return {
+        "notificationConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNotificationConfigurationResponseTypeDef(TypedDict):
+    notificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveNotificationChannelResponseTypeDef
 
 ```python title="Usage Example"
@@ -1105,165 +1107,151 @@ class RemoveNotificationChannelResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RemovePermissionRequestRequestTypeDef
+## ProfilingGroupDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ProfilingGroupDescriptionTypeDef
 
-def get_value() -> RemovePermissionRequestRequestTypeDef:
+def get_value() -> ProfilingGroupDescriptionTypeDef:
     return {
-        "actionGroup": ...,
-        "profilingGroupName": ...,
-        "revisionId": ...,
+        "agentOrchestrationConfig": ...,
     }
 ```
 
 ```python title="Definition"
-class RemovePermissionRequestRequestTypeDef(TypedDict):
-    actionGroup: ActionGroupType,  # (1)
-    profilingGroupName: str,
-    revisionId: str,
+class ProfilingGroupDescriptionTypeDef(TypedDict):
+    agentOrchestrationConfig: NotRequired[AgentOrchestrationConfigTypeDef],  # (1)
+    arn: NotRequired[str],
+    computePlatform: NotRequired[ComputePlatformType],  # (2)
+    createdAt: NotRequired[datetime],
+    name: NotRequired[str],
+    profilingStatus: NotRequired[ProfilingStatusTypeDef],  # (3)
+    tags: NotRequired[Dict[str, str]],
+    updatedAt: NotRequired[datetime],
 ```
 
-1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
-## RemovePermissionResponseTypeDef
+1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
+2. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+3. See [:material-code-braces: ProfilingStatusTypeDef](./type_defs.md#profilingstatustypedef) 
+## AnomalyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import AnomalyTypeDef
 
-def get_value() -> RemovePermissionResponseTypeDef:
+def get_value() -> AnomalyTypeDef:
     return {
-        "policy": ...,
-        "revisionId": ...,
+        "instances": ...,
+        "metric": ...,
+        "reason": ...,
+    }
+```
+
+```python title="Definition"
+class AnomalyTypeDef(TypedDict):
+    instances: List[AnomalyInstanceTypeDef],  # (1)
+    metric: MetricTypeDef,  # (2)
+    reason: str,
+```
+
+1. See [:material-code-braces: AnomalyInstanceTypeDef](./type_defs.md#anomalyinstancetypedef) 
+2. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+## BatchGetFrameMetricDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataResponseTypeDef
+
+def get_value() -> BatchGetFrameMetricDataResponseTypeDef:
+    return {
+        "endTime": ...,
+        "endTimes": ...,
+        "frameMetricData": ...,
+        "resolution": ...,
+        "startTime": ...,
+        "unprocessedEndTimes": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RemovePermissionResponseTypeDef(TypedDict):
-    policy: str,
-    revisionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class BatchGetFrameMetricDataResponseTypeDef(TypedDict):
+    endTime: datetime,
+    endTimes: List[TimestampStructureTypeDef],  # (1)
+    frameMetricData: List[FrameMetricDatumTypeDef],  # (2)
+    resolution: AggregationPeriodType,  # (3)
+    startTime: datetime,
+    unprocessedEndTimes: Dict[str, List[TimestampStructureTypeDef]],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
+1. See [:material-code-braces: TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef) 
+2. See [:material-code-braces: FrameMetricDatumTypeDef](./type_defs.md#framemetricdatumtypedef) 
+3. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
+4. See [:material-code-braces: TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProfilingGroupResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> CreateProfilingGroupResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "profilingGroup": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class CreateProfilingGroupResponseTypeDef(TypedDict):
+    profilingGroup: ProfilingGroupDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## SubmitFeedbackRequestRequestTypeDef
+1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProfilingGroupResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import SubmitFeedbackRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupResponseTypeDef
 
-def get_value() -> SubmitFeedbackRequestRequestTypeDef:
+def get_value() -> DescribeProfilingGroupResponseTypeDef:
     return {
-        "anomalyInstanceId": ...,
-        "profilingGroupName": ...,
-        "type": ...,
+        "profilingGroup": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SubmitFeedbackRequestRequestTypeDef(TypedDict):
-    anomalyInstanceId: str,
-    profilingGroupName: str,
-    type: FeedbackTypeType,  # (1)
-    comment: NotRequired[str],
+class DescribeProfilingGroupResponseTypeDef(TypedDict):
+    profilingGroup: ProfilingGroupDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: FeedbackTypeType](./literals.md#feedbacktypetype) 
-## TagResourceRequestRequestTypeDef
+1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProfilingGroupsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsResponseTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> ListProfilingGroupsResponseTypeDef:
     return {
-        "resourceArn": ...,
-        "tags": ...,
+        "nextToken": ...,
+        "profilingGroupNames": ...,
+        "profilingGroups": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
+class ListProfilingGroupsResponseTypeDef(TypedDict):
+    nextToken: str,
+    profilingGroupNames: List[str],
+    profilingGroups: List[ProfilingGroupDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## TimestampStructureTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import TimestampStructureTypeDef
-
-def get_value() -> TimestampStructureTypeDef:
-    return {
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class TimestampStructureTypeDef(TypedDict):
-    value: datetime,
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateProfilingGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupRequestRequestTypeDef
-
-def get_value() -> UpdateProfilingGroupRequestRequestTypeDef:
-    return {
-        "agentOrchestrationConfig": ...,
-        "profilingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProfilingGroupRequestRequestTypeDef(TypedDict):
-    agentOrchestrationConfig: AgentOrchestrationConfigTypeDef,  # (1)
-    profilingGroupName: str,
-```
-
-1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
+1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProfilingGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -1284,20 +1272,32 @@ class UpdateProfilingGroupResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UserFeedbackTypeDef
+## GetRecommendationsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeguruprofiler.type_defs import UserFeedbackTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsResponseTypeDef
 
-def get_value() -> UserFeedbackTypeDef:
+def get_value() -> GetRecommendationsResponseTypeDef:
     return {
-        "type": ...,
+        "anomalies": ...,
+        "profileEndTime": ...,
+        "profileStartTime": ...,
+        "profilingGroupName": ...,
+        "recommendations": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserFeedbackTypeDef(TypedDict):
-    type: FeedbackTypeType,  # (1)
+class GetRecommendationsResponseTypeDef(TypedDict):
+    anomalies: List[AnomalyTypeDef],  # (1)
+    profileEndTime: datetime,
+    profileStartTime: datetime,
+    profilingGroupName: str,
+    recommendations: List[RecommendationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-brackets: FeedbackTypeType](./literals.md#feedbacktypetype) 
+1. See [:material-code-braces: AnomalyTypeDef](./type_defs.md#anomalytypedef) 
+2. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

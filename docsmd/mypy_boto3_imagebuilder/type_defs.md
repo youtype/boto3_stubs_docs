@@ -7,68 +7,59 @@
     Auto-generated documentation for [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
     type annotations stubs module [mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
-## AdditionalInstanceConfigurationTypeDef
+## SystemsManagerAgentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef
+from mypy_boto3_imagebuilder.type_defs import SystemsManagerAgentTypeDef
 
-def get_value() -> AdditionalInstanceConfigurationTypeDef:
+def get_value() -> SystemsManagerAgentTypeDef:
     return {
-        "systemsManagerAgent": ...,
+        "uninstallAfterBuild": ...,
     }
 ```
 
 ```python title="Definition"
-class AdditionalInstanceConfigurationTypeDef(TypedDict):
-    systemsManagerAgent: NotRequired[SystemsManagerAgentTypeDef],  # (1)
-    userDataOverride: NotRequired[str],
+class SystemsManagerAgentTypeDef(TypedDict):
+    uninstallAfterBuild: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: SystemsManagerAgentTypeDef](./type_defs.md#systemsmanageragenttypedef) 
-## AmiDistributionConfigurationTypeDef
+## LaunchPermissionConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import AmiDistributionConfigurationTypeDef
+from mypy_boto3_imagebuilder.type_defs import LaunchPermissionConfigurationTypeDef
 
-def get_value() -> AmiDistributionConfigurationTypeDef:
+def get_value() -> LaunchPermissionConfigurationTypeDef:
     return {
-        "name": ...,
+        "userIds": ...,
     }
 ```
 
 ```python title="Definition"
-class AmiDistributionConfigurationTypeDef(TypedDict):
-    name: NotRequired[str],
-    description: NotRequired[str],
-    targetAccountIds: NotRequired[Sequence[str]],
-    amiTags: NotRequired[Mapping[str, str]],
-    kmsKeyId: NotRequired[str],
-    launchPermission: NotRequired[LaunchPermissionConfigurationTypeDef],  # (1)
+class LaunchPermissionConfigurationTypeDef(TypedDict):
+    userIds: NotRequired[Sequence[str]],
+    userGroups: NotRequired[Sequence[str]],
+    organizationArns: NotRequired[Sequence[str]],
+    organizationalUnitArns: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: LaunchPermissionConfigurationTypeDef](./type_defs.md#launchpermissionconfigurationtypedef) 
-## AmiTypeDef
+## ImageStateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import AmiTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImageStateTypeDef
 
-def get_value() -> AmiTypeDef:
+def get_value() -> ImageStateTypeDef:
     return {
-        "region": ...,
+        "status": ...,
     }
 ```
 
 ```python title="Definition"
-class AmiTypeDef(TypedDict):
-    region: NotRequired[str],
-    image: NotRequired[str],
-    name: NotRequired[str],
-    description: NotRequired[str],
-    state: NotRequired[ImageStateTypeDef],  # (1)
-    accountId: NotRequired[str],
+class ImageStateTypeDef(TypedDict):
+    status: NotRequired[ImageStatusType],  # (1)
+    reason: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
+1. See [:material-code-brackets: ImageStatusType](./literals.md#imagestatustype) 
 ## CancelImageCreationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -87,65 +78,28 @@ class CancelImageCreationRequestRequestTypeDef(TypedDict):
     clientToken: str,
 ```
 
-## CancelImageCreationResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CancelImageCreationResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CancelImageCreationResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imageBuildVersionArn": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CancelImageCreationResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imageBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ComponentConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ComponentConfigurationTypeDef
-
-def get_value() -> ComponentConfigurationTypeDef:
-    return {
-        "componentArn": ...,
-    }
-```
-
-```python title="Definition"
-class ComponentConfigurationTypeDef(TypedDict):
-    componentArn: str,
-    parameters: NotRequired[Sequence[ComponentParameterTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ComponentParameterTypeDef](./type_defs.md#componentparametertypedef) 
-## ComponentParameterDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ComponentParameterDetailTypeDef
-
-def get_value() -> ComponentParameterDetailTypeDef:
-    return {
-        "name": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class ComponentParameterDetailTypeDef(TypedDict):
-    name: str,
-    type: str,
-    defaultValue: NotRequired[List[str]],
-    description: NotRequired[str],
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
 ## ComponentParameterTypeDef
@@ -166,6 +120,26 @@ class ComponentParameterTypeDef(TypedDict):
     value: Sequence[str],
 ```
 
+## ComponentParameterDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ComponentParameterDetailTypeDef
+
+def get_value() -> ComponentParameterDetailTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentParameterDetailTypeDef(TypedDict):
+    name: str,
+    type: str,
+    defaultValue: NotRequired[List[str]],
+    description: NotRequired[str],
+```
+
 ## ComponentStateTypeDef
 
 ```python title="Usage Example"
@@ -184,71 +158,6 @@ class ComponentStateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ComponentStatusType](./literals.md#componentstatustype) 
-## ComponentSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ComponentSummaryTypeDef
-
-def get_value() -> ComponentSummaryTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ComponentSummaryTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    version: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (1)
-    supportedOsVersions: NotRequired[List[str]],
-    state: NotRequired[ComponentStateTypeDef],  # (2)
-    type: NotRequired[ComponentTypeType],  # (3)
-    owner: NotRequired[str],
-    description: NotRequired[str],
-    changeDescription: NotRequired[str],
-    dateCreated: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-2. See [:material-code-braces: ComponentStateTypeDef](./type_defs.md#componentstatetypedef) 
-3. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
-## ComponentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ComponentTypeDef
-
-def get_value() -> ComponentTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ComponentTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    version: NotRequired[str],
-    description: NotRequired[str],
-    changeDescription: NotRequired[str],
-    type: NotRequired[ComponentTypeType],  # (1)
-    platform: NotRequired[PlatformType],  # (2)
-    supportedOsVersions: NotRequired[List[str]],
-    state: NotRequired[ComponentStateTypeDef],  # (3)
-    parameters: NotRequired[List[ComponentParameterDetailTypeDef]],  # (4)
-    owner: NotRequired[str],
-    data: NotRequired[str],
-    kmsKeyId: NotRequired[str],
-    encrypted: NotRequired[bool],
-    dateCreated: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
-2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-3. See [:material-code-braces: ComponentStateTypeDef](./type_defs.md#componentstatetypedef) 
-4. See [:material-code-braces: ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef) 
 ## ComponentVersionTypeDef
 
 ```python title="Usage Example"
@@ -275,25 +184,25 @@ class ComponentVersionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
 2. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
-## ContainerDistributionConfigurationTypeDef
+## TargetContainerRepositoryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ContainerDistributionConfigurationTypeDef
+from mypy_boto3_imagebuilder.type_defs import TargetContainerRepositoryTypeDef
 
-def get_value() -> ContainerDistributionConfigurationTypeDef:
+def get_value() -> TargetContainerRepositoryTypeDef:
     return {
-        "targetRepository": ...,
+        "service": ...,
+        "repositoryName": ...,
     }
 ```
 
 ```python title="Definition"
-class ContainerDistributionConfigurationTypeDef(TypedDict):
-    targetRepository: TargetContainerRepositoryTypeDef,  # (1)
-    description: NotRequired[str],
-    containerTags: NotRequired[Sequence[str]],
+class TargetContainerRepositoryTypeDef(TypedDict):
+    service: ContainerRepositoryServiceType,  # (1)
+    repositoryName: str,
 ```
 
-1. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
+1. See [:material-code-brackets: ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype) 
 ## ContainerRecipeSummaryTypeDef
 
 ```python title="Usage Example"
@@ -319,43 +228,6 @@ class ContainerRecipeSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
 2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## ContainerRecipeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ContainerRecipeTypeDef
-
-def get_value() -> ContainerRecipeTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ContainerRecipeTypeDef(TypedDict):
-    arn: NotRequired[str],
-    containerType: NotRequired[ContainerTypeType],  # (1)
-    name: NotRequired[str],
-    description: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (2)
-    owner: NotRequired[str],
-    version: NotRequired[str],
-    components: NotRequired[List[ComponentConfigurationTypeDef]],  # (3)
-    instanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (4)
-    dockerfileTemplateData: NotRequired[str],
-    kmsKeyId: NotRequired[str],
-    encrypted: NotRequired[bool],
-    parentImage: NotRequired[str],
-    dateCreated: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-    workingDirectory: NotRequired[str],
-    targetRepository: NotRequired[TargetContainerRepositoryTypeDef],  # (5)
-```
-
-1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
-2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-3. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
-4. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
-5. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
 ## ContainerTypeDef
 
 ```python title="Usage Example"
@@ -403,354 +275,59 @@ class CreateComponentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## CreateComponentResponseTypeDef
+## ImageTestsConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateComponentResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImageTestsConfigurationTypeDef
 
-def get_value() -> CreateComponentResponseTypeDef:
+def get_value() -> ImageTestsConfigurationTypeDef:
     return {
-        "requestId": ...,
-        "clientToken": ...,
-        "componentBuildVersionArn": ...,
-        "ResponseMetadata": ...,
+        "imageTestsEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateComponentResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    componentBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ImageTestsConfigurationTypeDef(TypedDict):
+    imageTestsEnabled: NotRequired[bool],
+    timeoutMinutes: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateContainerRecipeRequestRequestTypeDef
+## ScheduleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ScheduleTypeDef
 
-def get_value() -> CreateContainerRecipeRequestRequestTypeDef:
+def get_value() -> ScheduleTypeDef:
     return {
-        "containerType": ...,
-        "name": ...,
-        "semanticVersion": ...,
-        "components": ...,
-        "parentImage": ...,
-        "targetRepository": ...,
-        "clientToken": ...,
+        "scheduleExpression": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateContainerRecipeRequestRequestTypeDef(TypedDict):
-    containerType: ContainerTypeType,  # (1)
-    name: str,
-    semanticVersion: str,
-    components: Sequence[ComponentConfigurationTypeDef],  # (2)
-    parentImage: str,
-    targetRepository: TargetContainerRepositoryTypeDef,  # (3)
-    clientToken: str,
-    description: NotRequired[str],
-    instanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (4)
-    dockerfileTemplateData: NotRequired[str],
-    dockerfileTemplateUri: NotRequired[str],
-    platformOverride: NotRequired[PlatformType],  # (5)
-    imageOsVersionOverride: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-    workingDirectory: NotRequired[str],
-    kmsKeyId: NotRequired[str],
+class ScheduleTypeDef(TypedDict):
+    scheduleExpression: NotRequired[str],
+    timezone: NotRequired[str],
+    pipelineExecutionStartCondition: NotRequired[PipelineExecutionStartConditionType],  # (1)
 ```
 
-1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
-2. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
-3. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
-4. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
-5. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## CreateContainerRecipeResponseTypeDef
+1. See [:material-code-brackets: PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype) 
+## InstanceMetadataOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import InstanceMetadataOptionsTypeDef
 
-def get_value() -> CreateContainerRecipeResponseTypeDef:
+def get_value() -> InstanceMetadataOptionsTypeDef:
     return {
-        "requestId": ...,
-        "clientToken": ...,
-        "containerRecipeArn": ...,
-        "ResponseMetadata": ...,
+        "httpTokens": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateContainerRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    containerRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class InstanceMetadataOptionsTypeDef(TypedDict):
+    httpTokens: NotRequired[str],
+    httpPutResponseHopLimit: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDistributionConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationRequestRequestTypeDef
-
-def get_value() -> CreateDistributionConfigurationRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "distributions": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDistributionConfigurationRequestRequestTypeDef(TypedDict):
-    name: str,
-    distributions: Sequence[DistributionTypeDef],  # (1)
-    clientToken: str,
-    description: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
-## CreateDistributionConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationResponseTypeDef
-
-def get_value() -> CreateDistributionConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "distributionConfigurationArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDistributionConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    distributionConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateImagePipelineRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineRequestRequestTypeDef
-
-def get_value() -> CreateImagePipelineRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "infrastructureConfigurationArn": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImagePipelineRequestRequestTypeDef(TypedDict):
-    name: str,
-    infrastructureConfigurationArn: str,
-    clientToken: str,
-    description: NotRequired[str],
-    imageRecipeArn: NotRequired[str],
-    containerRecipeArn: NotRequired[str],
-    distributionConfigurationArn: NotRequired[str],
-    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
-    enhancedImageMetadataEnabled: NotRequired[bool],
-    schedule: NotRequired[ScheduleTypeDef],  # (2)
-    status: NotRequired[PipelineStatusType],  # (3)
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
-2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
-3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
-## CreateImagePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineResponseTypeDef
-
-def get_value() -> CreateImagePipelineResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imagePipelineArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImagePipelineResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imagePipelineArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateImageRecipeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeRequestRequestTypeDef
-
-def get_value() -> CreateImageRecipeRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "semanticVersion": ...,
-        "components": ...,
-        "parentImage": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageRecipeRequestRequestTypeDef(TypedDict):
-    name: str,
-    semanticVersion: str,
-    components: Sequence[ComponentConfigurationTypeDef],  # (1)
-    parentImage: str,
-    clientToken: str,
-    description: NotRequired[str],
-    blockDeviceMappings: NotRequired[Sequence[InstanceBlockDeviceMappingTypeDef]],  # (2)
-    tags: NotRequired[Mapping[str, str]],
-    workingDirectory: NotRequired[str],
-    additionalInstanceConfiguration: NotRequired[AdditionalInstanceConfigurationTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
-2. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
-3. See [:material-code-braces: AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef) 
-## CreateImageRecipeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeResponseTypeDef
-
-def get_value() -> CreateImageRecipeResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imageRecipeArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imageRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateImageRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImageRequestRequestTypeDef
-
-def get_value() -> CreateImageRequestRequestTypeDef:
-    return {
-        "infrastructureConfigurationArn": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageRequestRequestTypeDef(TypedDict):
-    infrastructureConfigurationArn: str,
-    clientToken: str,
-    imageRecipeArn: NotRequired[str],
-    containerRecipeArn: NotRequired[str],
-    distributionConfigurationArn: NotRequired[str],
-    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
-    enhancedImageMetadataEnabled: NotRequired[bool],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
-## CreateImageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateImageResponseTypeDef
-
-def get_value() -> CreateImageResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imageBuildVersionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imageBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateInfrastructureConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationRequestRequestTypeDef
-
-def get_value() -> CreateInfrastructureConfigurationRequestRequestTypeDef:
-    return {
-        "name": ...,
-        "instanceProfileName": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateInfrastructureConfigurationRequestRequestTypeDef(TypedDict):
-    name: str,
-    instanceProfileName: str,
-    clientToken: str,
-    description: NotRequired[str],
-    instanceTypes: NotRequired[Sequence[str]],
-    securityGroupIds: NotRequired[Sequence[str]],
-    subnetId: NotRequired[str],
-    logging: NotRequired[LoggingTypeDef],  # (1)
-    keyPair: NotRequired[str],
-    terminateInstanceOnFailure: NotRequired[bool],
-    snsTopicArn: NotRequired[str],
-    resourceTags: NotRequired[Mapping[str, str]],
-    instanceMetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (2)
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
-2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## CreateInfrastructureConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationResponseTypeDef
-
-def get_value() -> CreateInfrastructureConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "infrastructureConfigurationArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateInfrastructureConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    infrastructureConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -767,27 +344,6 @@ class DeleteComponentRequestRequestTypeDef(TypedDict):
     componentBuildVersionArn: str,
 ```
 
-## DeleteComponentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteComponentResponseTypeDef
-
-def get_value() -> DeleteComponentResponseTypeDef:
-    return {
-        "requestId": ...,
-        "componentBuildVersionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteComponentResponseTypeDef(TypedDict):
-    requestId: str,
-    componentBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteContainerRecipeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -804,27 +360,6 @@ class DeleteContainerRecipeRequestRequestTypeDef(TypedDict):
     containerRecipeArn: str,
 ```
 
-## DeleteContainerRecipeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeResponseTypeDef
-
-def get_value() -> DeleteContainerRecipeResponseTypeDef:
-    return {
-        "requestId": ...,
-        "containerRecipeArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteContainerRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    containerRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDistributionConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -841,27 +376,6 @@ class DeleteDistributionConfigurationRequestRequestTypeDef(TypedDict):
     distributionConfigurationArn: str,
 ```
 
-## DeleteDistributionConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationResponseTypeDef
-
-def get_value() -> DeleteDistributionConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "distributionConfigurationArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDistributionConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    distributionConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteImagePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -878,27 +392,6 @@ class DeleteImagePipelineRequestRequestTypeDef(TypedDict):
     imagePipelineArn: str,
 ```
 
-## DeleteImagePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineResponseTypeDef
-
-def get_value() -> DeleteImagePipelineResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imagePipelineArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteImagePipelineResponseTypeDef(TypedDict):
-    requestId: str,
-    imagePipelineArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteImageRecipeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -915,27 +408,6 @@ class DeleteImageRecipeRequestRequestTypeDef(TypedDict):
     imageRecipeArn: str,
 ```
 
-## DeleteImageRecipeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeResponseTypeDef
-
-def get_value() -> DeleteImageRecipeResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imageRecipeArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteImageRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    imageRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -952,27 +424,6 @@ class DeleteImageRequestRequestTypeDef(TypedDict):
     imageBuildVersionArn: str,
 ```
 
-## DeleteImageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteImageResponseTypeDef
-
-def get_value() -> DeleteImageResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imageBuildVersionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteImageResponseTypeDef(TypedDict):
-    requestId: str,
-    imageBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteInfrastructureConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -989,27 +440,6 @@ class DeleteInfrastructureConfigurationRequestRequestTypeDef(TypedDict):
     infrastructureConfigurationArn: str,
 ```
 
-## DeleteInfrastructureConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationResponseTypeDef
-
-def get_value() -> DeleteInfrastructureConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "infrastructureConfigurationArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteInfrastructureConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    infrastructureConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DistributionConfigurationSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1032,57 +462,46 @@ class DistributionConfigurationSummaryTypeDef(TypedDict):
     regions: NotRequired[List[str]],
 ```
 
-## DistributionConfigurationTypeDef
+## LaunchTemplateConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DistributionConfigurationTypeDef
+from mypy_boto3_imagebuilder.type_defs import LaunchTemplateConfigurationTypeDef
 
-def get_value() -> DistributionConfigurationTypeDef:
+def get_value() -> LaunchTemplateConfigurationTypeDef:
     return {
-        "timeoutMinutes": ...,
+        "launchTemplateId": ...,
     }
 ```
 
 ```python title="Definition"
-class DistributionConfigurationTypeDef(TypedDict):
-    timeoutMinutes: int,
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    description: NotRequired[str],
-    distributions: NotRequired[List[DistributionTypeDef]],  # (1)
-    dateCreated: NotRequired[str],
-    dateUpdated: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
+class LaunchTemplateConfigurationTypeDef(TypedDict):
+    launchTemplateId: str,
+    accountId: NotRequired[str],
+    setDefaultVersion: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
-## DistributionTypeDef
+## S3ExportConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import DistributionTypeDef
+from mypy_boto3_imagebuilder.type_defs import S3ExportConfigurationTypeDef
 
-def get_value() -> DistributionTypeDef:
+def get_value() -> S3ExportConfigurationTypeDef:
     return {
-        "region": ...,
+        "roleName": ...,
+        "diskImageFormat": ...,
+        "s3Bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class DistributionTypeDef(TypedDict):
-    region: str,
-    amiDistributionConfiguration: NotRequired[AmiDistributionConfigurationTypeDef],  # (1)
-    containerDistributionConfiguration: NotRequired[ContainerDistributionConfigurationTypeDef],  # (2)
-    licenseConfigurationArns: NotRequired[Sequence[str]],
-    launchTemplateConfigurations: NotRequired[Sequence[LaunchTemplateConfigurationTypeDef]],  # (3)
-    s3ExportConfiguration: NotRequired[S3ExportConfigurationTypeDef],  # (4)
-    fastLaunchConfigurations: NotRequired[Sequence[FastLaunchConfigurationTypeDef]],  # (5)
+class S3ExportConfigurationTypeDef(TypedDict):
+    roleName: str,
+    diskImageFormat: DiskImageFormatType,  # (1)
+    s3Bucket: str,
+    s3Prefix: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AmiDistributionConfigurationTypeDef](./type_defs.md#amidistributionconfigurationtypedef) 
-2. See [:material-code-braces: ContainerDistributionConfigurationTypeDef](./type_defs.md#containerdistributionconfigurationtypedef) 
-3. See [:material-code-braces: LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef) 
-4. See [:material-code-braces: S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef) 
-5. See [:material-code-braces: FastLaunchConfigurationTypeDef](./type_defs.md#fastlaunchconfigurationtypedef) 
+1. See [:material-code-brackets: DiskImageFormatType](./literals.md#diskimageformattype) 
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -1107,28 +526,6 @@ class EbsInstanceBlockDeviceSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EbsVolumeTypeType](./literals.md#ebsvolumetypetype) 
-## FastLaunchConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import FastLaunchConfigurationTypeDef
-
-def get_value() -> FastLaunchConfigurationTypeDef:
-    return {
-        "enabled": ...,
-    }
-```
-
-```python title="Definition"
-class FastLaunchConfigurationTypeDef(TypedDict):
-    enabled: bool,
-    snapshotConfiguration: NotRequired[FastLaunchSnapshotConfigurationTypeDef],  # (1)
-    maxParallelLaunches: NotRequired[int],
-    launchTemplate: NotRequired[FastLaunchLaunchTemplateSpecificationTypeDef],  # (2)
-    accountId: NotRequired[str],
-```
-
-1. See [:material-code-braces: FastLaunchSnapshotConfigurationTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationtypedef) 
-2. See [:material-code-braces: FastLaunchLaunchTemplateSpecificationTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationtypedef) 
 ## FastLaunchLaunchTemplateSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -1196,27 +593,6 @@ class GetComponentPolicyRequestRequestTypeDef(TypedDict):
     componentArn: str,
 ```
 
-## GetComponentPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyResponseTypeDef
-
-def get_value() -> GetComponentPolicyResponseTypeDef:
-    return {
-        "requestId": ...,
-        "policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetComponentPolicyResponseTypeDef(TypedDict):
-    requestId: str,
-    policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1233,28 +609,6 @@ class GetComponentRequestRequestTypeDef(TypedDict):
     componentBuildVersionArn: str,
 ```
 
-## GetComponentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetComponentResponseTypeDef
-
-def get_value() -> GetComponentResponseTypeDef:
-    return {
-        "requestId": ...,
-        "component": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetComponentResponseTypeDef(TypedDict):
-    requestId: str,
-    component: ComponentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContainerRecipePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1271,27 +625,6 @@ class GetContainerRecipePolicyRequestRequestTypeDef(TypedDict):
     containerRecipeArn: str,
 ```
 
-## GetContainerRecipePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyResponseTypeDef
-
-def get_value() -> GetContainerRecipePolicyResponseTypeDef:
-    return {
-        "requestId": ...,
-        "policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetContainerRecipePolicyResponseTypeDef(TypedDict):
-    requestId: str,
-    policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContainerRecipeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1308,28 +641,6 @@ class GetContainerRecipeRequestRequestTypeDef(TypedDict):
     containerRecipeArn: str,
 ```
 
-## GetContainerRecipeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeResponseTypeDef
-
-def get_value() -> GetContainerRecipeResponseTypeDef:
-    return {
-        "requestId": ...,
-        "containerRecipe": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetContainerRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    containerRecipe: ContainerRecipeTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ContainerRecipeTypeDef](./type_defs.md#containerrecipetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDistributionConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1346,28 +657,6 @@ class GetDistributionConfigurationRequestRequestTypeDef(TypedDict):
     distributionConfigurationArn: str,
 ```
 
-## GetDistributionConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationResponseTypeDef
-
-def get_value() -> GetDistributionConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "distributionConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDistributionConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    distributionConfiguration: DistributionConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DistributionConfigurationTypeDef](./type_defs.md#distributionconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImagePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1384,28 +673,6 @@ class GetImagePipelineRequestRequestTypeDef(TypedDict):
     imagePipelineArn: str,
 ```
 
-## GetImagePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetImagePipelineResponseTypeDef
-
-def get_value() -> GetImagePipelineResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imagePipeline": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImagePipelineResponseTypeDef(TypedDict):
-    requestId: str,
-    imagePipeline: ImagePipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImagePipelineTypeDef](./type_defs.md#imagepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImagePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1422,27 +689,6 @@ class GetImagePolicyRequestRequestTypeDef(TypedDict):
     imageArn: str,
 ```
 
-## GetImagePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetImagePolicyResponseTypeDef
-
-def get_value() -> GetImagePolicyResponseTypeDef:
-    return {
-        "requestId": ...,
-        "policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImagePolicyResponseTypeDef(TypedDict):
-    requestId: str,
-    policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImageRecipePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1459,27 +705,6 @@ class GetImageRecipePolicyRequestRequestTypeDef(TypedDict):
     imageRecipeArn: str,
 ```
 
-## GetImageRecipePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyResponseTypeDef
-
-def get_value() -> GetImageRecipePolicyResponseTypeDef:
-    return {
-        "requestId": ...,
-        "policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImageRecipePolicyResponseTypeDef(TypedDict):
-    requestId: str,
-    policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImageRecipeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1496,28 +721,6 @@ class GetImageRecipeRequestRequestTypeDef(TypedDict):
     imageRecipeArn: str,
 ```
 
-## GetImageRecipeResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipeResponseTypeDef
-
-def get_value() -> GetImageRecipeResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imageRecipe": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImageRecipeResponseTypeDef(TypedDict):
-    requestId: str,
-    imageRecipe: ImageRecipeTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageRecipeTypeDef](./type_defs.md#imagerecipetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1534,28 +737,6 @@ class GetImageRequestRequestTypeDef(TypedDict):
     imageBuildVersionArn: str,
 ```
 
-## GetImageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetImageResponseTypeDef
-
-def get_value() -> GetImageResponseTypeDef:
-    return {
-        "requestId": ...,
-        "image": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImageResponseTypeDef(TypedDict):
-    requestId: str,
-    image: ImageTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInfrastructureConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1572,28 +753,6 @@ class GetInfrastructureConfigurationRequestRequestTypeDef(TypedDict):
     infrastructureConfigurationArn: str,
 ```
 
-## GetInfrastructureConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationResponseTypeDef
-
-def get_value() -> GetInfrastructureConfigurationResponseTypeDef:
-    return {
-        "requestId": ...,
-        "infrastructureConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetInfrastructureConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    infrastructureConfiguration: InfrastructureConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImagePackageTypeDef
 
 ```python title="Usage Example"
@@ -1611,42 +770,6 @@ class ImagePackageTypeDef(TypedDict):
     packageVersion: NotRequired[str],
 ```
 
-## ImagePipelineTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImagePipelineTypeDef
-
-def get_value() -> ImagePipelineTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ImagePipelineTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    description: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (1)
-    enhancedImageMetadataEnabled: NotRequired[bool],
-    imageRecipeArn: NotRequired[str],
-    containerRecipeArn: NotRequired[str],
-    infrastructureConfigurationArn: NotRequired[str],
-    distributionConfigurationArn: NotRequired[str],
-    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (2)
-    schedule: NotRequired[ScheduleTypeDef],  # (3)
-    status: NotRequired[PipelineStatusType],  # (4)
-    dateCreated: NotRequired[str],
-    dateUpdated: NotRequired[str],
-    dateLastRun: NotRequired[str],
-    dateNextRun: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-2. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
-3. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
-4. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
 ## ImageRecipeSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1670,151 +793,6 @@ class ImageRecipeSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## ImageRecipeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImageRecipeTypeDef
-
-def get_value() -> ImageRecipeTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ImageRecipeTypeDef(TypedDict):
-    arn: NotRequired[str],
-    type: NotRequired[ImageTypeType],  # (1)
-    name: NotRequired[str],
-    description: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (2)
-    owner: NotRequired[str],
-    version: NotRequired[str],
-    components: NotRequired[List[ComponentConfigurationTypeDef]],  # (3)
-    parentImage: NotRequired[str],
-    blockDeviceMappings: NotRequired[List[InstanceBlockDeviceMappingTypeDef]],  # (4)
-    dateCreated: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-    workingDirectory: NotRequired[str],
-    additionalInstanceConfiguration: NotRequired[AdditionalInstanceConfigurationTypeDef],  # (5)
-```
-
-1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
-2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-3. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
-4. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
-5. See [:material-code-braces: AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef) 
-## ImageStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImageStateTypeDef
-
-def get_value() -> ImageStateTypeDef:
-    return {
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class ImageStateTypeDef(TypedDict):
-    status: NotRequired[ImageStatusType],  # (1)
-    reason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ImageStatusType](./literals.md#imagestatustype) 
-## ImageSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImageSummaryTypeDef
-
-def get_value() -> ImageSummaryTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ImageSummaryTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    type: NotRequired[ImageTypeType],  # (1)
-    version: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (2)
-    osVersion: NotRequired[str],
-    state: NotRequired[ImageStateTypeDef],  # (3)
-    owner: NotRequired[str],
-    dateCreated: NotRequired[str],
-    outputResources: NotRequired[OutputResourcesTypeDef],  # (4)
-    tags: NotRequired[Dict[str, str]],
-    buildType: NotRequired[BuildTypeType],  # (5)
-```
-
-1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
-2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-3. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
-4. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
-5. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
-## ImageTestsConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImageTestsConfigurationTypeDef
-
-def get_value() -> ImageTestsConfigurationTypeDef:
-    return {
-        "imageTestsEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class ImageTestsConfigurationTypeDef(TypedDict):
-    imageTestsEnabled: NotRequired[bool],
-    timeoutMinutes: NotRequired[int],
-```
-
-## ImageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImageTypeDef
-
-def get_value() -> ImageTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ImageTypeDef(TypedDict):
-    arn: NotRequired[str],
-    type: NotRequired[ImageTypeType],  # (1)
-    name: NotRequired[str],
-    version: NotRequired[str],
-    platform: NotRequired[PlatformType],  # (2)
-    enhancedImageMetadataEnabled: NotRequired[bool],
-    osVersion: NotRequired[str],
-    state: NotRequired[ImageStateTypeDef],  # (3)
-    imageRecipe: NotRequired[ImageRecipeTypeDef],  # (4)
-    containerRecipe: NotRequired[ContainerRecipeTypeDef],  # (5)
-    sourcePipelineName: NotRequired[str],
-    sourcePipelineArn: NotRequired[str],
-    infrastructureConfiguration: NotRequired[InfrastructureConfigurationTypeDef],  # (6)
-    distributionConfiguration: NotRequired[DistributionConfigurationTypeDef],  # (7)
-    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (8)
-    dateCreated: NotRequired[str],
-    outputResources: NotRequired[OutputResourcesTypeDef],  # (9)
-    tags: NotRequired[Dict[str, str]],
-    buildType: NotRequired[BuildTypeType],  # (10)
-```
-
-1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
-2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-3. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
-4. See [:material-code-braces: ImageRecipeTypeDef](./type_defs.md#imagerecipetypedef) 
-5. See [:material-code-braces: ContainerRecipeTypeDef](./type_defs.md#containerrecipetypedef) 
-6. See [:material-code-braces: InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef) 
-7. See [:material-code-braces: DistributionConfigurationTypeDef](./type_defs.md#distributionconfigurationtypedef) 
-8. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
-9. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
-10. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
 ## ImageVersionTypeDef
 
 ```python title="Usage Example"
@@ -1877,29 +855,6 @@ class ImportComponentRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
 2. See [:material-code-brackets: ComponentFormatType](./literals.md#componentformattype) 
 3. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## ImportComponentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImportComponentResponseTypeDef
-
-def get_value() -> ImportComponentResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "componentBuildVersionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportComponentResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    componentBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportVmImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1928,29 +883,6 @@ class ImportVmImageRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
-## ImportVmImageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ImportVmImageResponseTypeDef
-
-def get_value() -> ImportVmImageResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imageArn": ...,
-        "clientToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportVmImageResponseTypeDef(TypedDict):
-    requestId: str,
-    imageArn: str,
-    clientToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InfrastructureConfigurationSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1975,131 +907,6 @@ class InfrastructureConfigurationSummaryTypeDef(TypedDict):
     instanceProfileName: NotRequired[str],
 ```
 
-## InfrastructureConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import InfrastructureConfigurationTypeDef
-
-def get_value() -> InfrastructureConfigurationTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class InfrastructureConfigurationTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    description: NotRequired[str],
-    instanceTypes: NotRequired[List[str]],
-    instanceProfileName: NotRequired[str],
-    securityGroupIds: NotRequired[List[str]],
-    subnetId: NotRequired[str],
-    logging: NotRequired[LoggingTypeDef],  # (1)
-    keyPair: NotRequired[str],
-    terminateInstanceOnFailure: NotRequired[bool],
-    snsTopicArn: NotRequired[str],
-    dateCreated: NotRequired[str],
-    dateUpdated: NotRequired[str],
-    resourceTags: NotRequired[Dict[str, str]],
-    instanceMetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (2)
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
-2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## InstanceBlockDeviceMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import InstanceBlockDeviceMappingTypeDef
-
-def get_value() -> InstanceBlockDeviceMappingTypeDef:
-    return {
-        "deviceName": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceBlockDeviceMappingTypeDef(TypedDict):
-    deviceName: NotRequired[str],
-    ebs: NotRequired[EbsInstanceBlockDeviceSpecificationTypeDef],  # (1)
-    virtualName: NotRequired[str],
-    noDevice: NotRequired[str],
-```
-
-1. See [:material-code-braces: EbsInstanceBlockDeviceSpecificationTypeDef](./type_defs.md#ebsinstanceblockdevicespecificationtypedef) 
-## InstanceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import InstanceConfigurationTypeDef
-
-def get_value() -> InstanceConfigurationTypeDef:
-    return {
-        "image": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceConfigurationTypeDef(TypedDict):
-    image: NotRequired[str],
-    blockDeviceMappings: NotRequired[Sequence[InstanceBlockDeviceMappingTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
-## InstanceMetadataOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import InstanceMetadataOptionsTypeDef
-
-def get_value() -> InstanceMetadataOptionsTypeDef:
-    return {
-        "httpTokens": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceMetadataOptionsTypeDef(TypedDict):
-    httpTokens: NotRequired[str],
-    httpPutResponseHopLimit: NotRequired[int],
-```
-
-## LaunchPermissionConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import LaunchPermissionConfigurationTypeDef
-
-def get_value() -> LaunchPermissionConfigurationTypeDef:
-    return {
-        "userIds": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchPermissionConfigurationTypeDef(TypedDict):
-    userIds: NotRequired[Sequence[str]],
-    userGroups: NotRequired[Sequence[str]],
-    organizationArns: NotRequired[Sequence[str]],
-    organizationalUnitArns: NotRequired[Sequence[str]],
-```
-
-## LaunchTemplateConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import LaunchTemplateConfigurationTypeDef
-
-def get_value() -> LaunchTemplateConfigurationTypeDef:
-    return {
-        "launchTemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchTemplateConfigurationTypeDef(TypedDict):
-    launchTemplateId: str,
-    accountId: NotRequired[str],
-    setDefaultVersion: NotRequired[bool],
-```
-
 ## ListComponentBuildVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2118,52 +925,984 @@ class ListComponentBuildVersionsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListComponentBuildVersionsResponseTypeDef
+## ListImagePackagesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePackagesRequestRequestTypeDef
 
-def get_value() -> ListComponentBuildVersionsResponseTypeDef:
+def get_value() -> ListImagePackagesRequestRequestTypeDef:
+    return {
+        "imageBuildVersionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListImagePackagesRequestRequestTypeDef(TypedDict):
+    imageBuildVersionArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## S3LogsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import S3LogsTypeDef
+
+def get_value() -> S3LogsTypeDef:
+    return {
+        "s3BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class S3LogsTypeDef(TypedDict):
+    s3BucketName: NotRequired[str],
+    s3KeyPrefix: NotRequired[str],
+```
+
+## PutComponentPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyRequestRequestTypeDef
+
+def get_value() -> PutComponentPolicyRequestRequestTypeDef:
+    return {
+        "componentArn": ...,
+        "policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutComponentPolicyRequestRequestTypeDef(TypedDict):
+    componentArn: str,
+    policy: str,
+```
+
+## PutContainerRecipePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyRequestRequestTypeDef
+
+def get_value() -> PutContainerRecipePolicyRequestRequestTypeDef:
+    return {
+        "containerRecipeArn": ...,
+        "policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutContainerRecipePolicyRequestRequestTypeDef(TypedDict):
+    containerRecipeArn: str,
+    policy: str,
+```
+
+## PutImagePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutImagePolicyRequestRequestTypeDef
+
+def get_value() -> PutImagePolicyRequestRequestTypeDef:
+    return {
+        "imageArn": ...,
+        "policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutImagePolicyRequestRequestTypeDef(TypedDict):
+    imageArn: str,
+    policy: str,
+```
+
+## PutImageRecipePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyRequestRequestTypeDef
+
+def get_value() -> PutImageRecipePolicyRequestRequestTypeDef:
+    return {
+        "imageRecipeArn": ...,
+        "policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutImageRecipePolicyRequestRequestTypeDef(TypedDict):
+    imageRecipeArn: str,
+    policy: str,
+```
+
+## StartImagePipelineExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionRequestRequestTypeDef
+
+def get_value() -> StartImagePipelineExecutionRequestRequestTypeDef:
+    return {
+        "imagePipelineArn": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class StartImagePipelineExecutionRequestRequestTypeDef(TypedDict):
+    imagePipelineArn: str,
+    clientToken: str,
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## AdditionalInstanceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef
+
+def get_value() -> AdditionalInstanceConfigurationTypeDef:
+    return {
+        "systemsManagerAgent": ...,
+    }
+```
+
+```python title="Definition"
+class AdditionalInstanceConfigurationTypeDef(TypedDict):
+    systemsManagerAgent: NotRequired[SystemsManagerAgentTypeDef],  # (1)
+    userDataOverride: NotRequired[str],
+```
+
+1. See [:material-code-braces: SystemsManagerAgentTypeDef](./type_defs.md#systemsmanageragenttypedef) 
+## AmiDistributionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import AmiDistributionConfigurationTypeDef
+
+def get_value() -> AmiDistributionConfigurationTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class AmiDistributionConfigurationTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    targetAccountIds: NotRequired[Sequence[str]],
+    amiTags: NotRequired[Mapping[str, str]],
+    kmsKeyId: NotRequired[str],
+    launchPermission: NotRequired[LaunchPermissionConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LaunchPermissionConfigurationTypeDef](./type_defs.md#launchpermissionconfigurationtypedef) 
+## AmiTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import AmiTypeDef
+
+def get_value() -> AmiTypeDef:
+    return {
+        "region": ...,
+    }
+```
+
+```python title="Definition"
+class AmiTypeDef(TypedDict):
+    region: NotRequired[str],
+    image: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    state: NotRequired[ImageStateTypeDef],  # (1)
+    accountId: NotRequired[str],
+```
+
+1. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
+## CancelImageCreationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CancelImageCreationResponseTypeDef
+
+def get_value() -> CancelImageCreationResponseTypeDef:
     return {
         "requestId": ...,
-        "componentSummaryList": ...,
-        "nextToken": ...,
+        "clientToken": ...,
+        "imageBuildVersionArn": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListComponentBuildVersionsResponseTypeDef(TypedDict):
+class CancelImageCreationResponseTypeDef(TypedDict):
     requestId: str,
-    componentSummaryList: List[ComponentSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    clientToken: str,
+    imageBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListComponentsRequestRequestTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateComponentResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListComponentsRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateComponentResponseTypeDef
 
-def get_value() -> ListComponentsRequestRequestTypeDef:
+def get_value() -> CreateComponentResponseTypeDef:
     return {
-        "owner": ...,
+        "requestId": ...,
+        "clientToken": ...,
+        "componentBuildVersionArn": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListComponentsRequestRequestTypeDef(TypedDict):
-    owner: NotRequired[OwnershipType],  # (1)
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
-    byName: NotRequired[bool],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
+class CreateComponentResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    componentBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
-2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateContainerRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeResponseTypeDef
+
+def get_value() -> CreateContainerRecipeResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "containerRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContainerRecipeResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    containerRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDistributionConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationResponseTypeDef
+
+def get_value() -> CreateDistributionConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "distributionConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDistributionConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    distributionConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImagePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineResponseTypeDef
+
+def get_value() -> CreateImagePipelineResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "imagePipelineArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImagePipelineResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    imagePipelineArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImageRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeResponseTypeDef
+
+def get_value() -> CreateImageRecipeResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "imageRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImageRecipeResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    imageRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateImageResponseTypeDef
+
+def get_value() -> CreateImageResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "imageBuildVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImageResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    imageBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateInfrastructureConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationResponseTypeDef
+
+def get_value() -> CreateInfrastructureConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "infrastructureConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateInfrastructureConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    infrastructureConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteComponentResponseTypeDef
+
+def get_value() -> DeleteComponentResponseTypeDef:
+    return {
+        "requestId": ...,
+        "componentBuildVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteComponentResponseTypeDef(TypedDict):
+    requestId: str,
+    componentBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteContainerRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeResponseTypeDef
+
+def get_value() -> DeleteContainerRecipeResponseTypeDef:
+    return {
+        "requestId": ...,
+        "containerRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteContainerRecipeResponseTypeDef(TypedDict):
+    requestId: str,
+    containerRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDistributionConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationResponseTypeDef
+
+def get_value() -> DeleteDistributionConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "distributionConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDistributionConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    distributionConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteImagePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineResponseTypeDef
+
+def get_value() -> DeleteImagePipelineResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imagePipelineArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteImagePipelineResponseTypeDef(TypedDict):
+    requestId: str,
+    imagePipelineArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteImageRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeResponseTypeDef
+
+def get_value() -> DeleteImageRecipeResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteImageRecipeResponseTypeDef(TypedDict):
+    requestId: str,
+    imageRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteImageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteImageResponseTypeDef
+
+def get_value() -> DeleteImageResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageBuildVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteImageResponseTypeDef(TypedDict):
+    requestId: str,
+    imageBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteInfrastructureConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationResponseTypeDef
+
+def get_value() -> DeleteInfrastructureConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "infrastructureConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInfrastructureConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    infrastructureConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComponentPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyResponseTypeDef
+
+def get_value() -> GetComponentPolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetComponentPolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContainerRecipePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyResponseTypeDef
+
+def get_value() -> GetContainerRecipePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContainerRecipePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetImagePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetImagePolicyResponseTypeDef
+
+def get_value() -> GetImagePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImagePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetImageRecipePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyResponseTypeDef
+
+def get_value() -> GetImageRecipePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImageRecipePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ImportComponentResponseTypeDef
+
+def get_value() -> ImportComponentResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "componentBuildVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportComponentResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    componentBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportVmImageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ImportVmImageResponseTypeDef
+
+def get_value() -> ImportVmImageResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageArn": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportVmImageResponseTypeDef(TypedDict):
+    requestId: str,
+    imageArn: str,
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutComponentPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyResponseTypeDef
+
+def get_value() -> PutComponentPolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "componentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutComponentPolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    componentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutContainerRecipePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyResponseTypeDef
+
+def get_value() -> PutContainerRecipePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "containerRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutContainerRecipePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    containerRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutImagePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutImagePolicyResponseTypeDef
+
+def get_value() -> PutImagePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutImagePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    imageArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutImageRecipePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyResponseTypeDef
+
+def get_value() -> PutImageRecipePolicyResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageRecipeArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutImageRecipePolicyResponseTypeDef(TypedDict):
+    requestId: str,
+    imageRecipeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartImagePipelineExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionResponseTypeDef
+
+def get_value() -> StartImagePipelineExecutionResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "imageBuildVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartImagePipelineExecutionResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    imageBuildVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDistributionConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationResponseTypeDef
+
+def get_value() -> UpdateDistributionConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "distributionConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDistributionConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    distributionConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateImagePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineResponseTypeDef
+
+def get_value() -> UpdateImagePipelineResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "imagePipelineArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateImagePipelineResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    imagePipelineArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateInfrastructureConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationResponseTypeDef
+
+def get_value() -> UpdateInfrastructureConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "clientToken": ...,
+        "infrastructureConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInfrastructureConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    clientToken: str,
+    infrastructureConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ComponentConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ComponentConfigurationTypeDef
+
+def get_value() -> ComponentConfigurationTypeDef:
+    return {
+        "componentArn": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentConfigurationTypeDef(TypedDict):
+    componentArn: str,
+    parameters: NotRequired[Sequence[ComponentParameterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ComponentParameterTypeDef](./type_defs.md#componentparametertypedef) 
+## ComponentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ComponentSummaryTypeDef
+
+def get_value() -> ComponentSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    version: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (1)
+    supportedOsVersions: NotRequired[List[str]],
+    state: NotRequired[ComponentStateTypeDef],  # (2)
+    type: NotRequired[ComponentTypeType],  # (3)
+    owner: NotRequired[str],
+    description: NotRequired[str],
+    changeDescription: NotRequired[str],
+    dateCreated: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: ComponentStateTypeDef](./type_defs.md#componentstatetypedef) 
+3. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
+## ComponentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ComponentTypeDef
+
+def get_value() -> ComponentTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    version: NotRequired[str],
+    description: NotRequired[str],
+    changeDescription: NotRequired[str],
+    type: NotRequired[ComponentTypeType],  # (1)
+    platform: NotRequired[PlatformType],  # (2)
+    supportedOsVersions: NotRequired[List[str]],
+    state: NotRequired[ComponentStateTypeDef],  # (3)
+    parameters: NotRequired[List[ComponentParameterDetailTypeDef]],  # (4)
+    owner: NotRequired[str],
+    data: NotRequired[str],
+    kmsKeyId: NotRequired[str],
+    encrypted: NotRequired[bool],
+    dateCreated: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
+2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+3. See [:material-code-braces: ComponentStateTypeDef](./type_defs.md#componentstatetypedef) 
+4. See [:material-code-braces: ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef) 
 ## ListComponentsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2188,27 +1927,25 @@ class ListComponentsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ComponentVersionTypeDef](./type_defs.md#componentversiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListContainerRecipesRequestRequestTypeDef
+## ContainerDistributionConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ContainerDistributionConfigurationTypeDef
 
-def get_value() -> ListContainerRecipesRequestRequestTypeDef:
+def get_value() -> ContainerDistributionConfigurationTypeDef:
     return {
-        "owner": ...,
+        "targetRepository": ...,
     }
 ```
 
 ```python title="Definition"
-class ListContainerRecipesRequestRequestTypeDef(TypedDict):
-    owner: NotRequired[OwnershipType],  # (1)
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
+class ContainerDistributionConfigurationTypeDef(TypedDict):
+    targetRepository: TargetContainerRepositoryTypeDef,  # (1)
+    description: NotRequired[str],
+    containerTags: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
-2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+1. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
 ## ListContainerRecipesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2233,25 +1970,130 @@ class ListContainerRecipesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContainerRecipeSummaryTypeDef](./type_defs.md#containerrecipesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDistributionConfigurationsRequestRequestTypeDef
+## CreateImageRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageRequestRequestTypeDef
 
-def get_value() -> ListDistributionConfigurationsRequestRequestTypeDef:
+def get_value() -> CreateImageRequestRequestTypeDef:
     return {
-        "filters": ...,
+        "infrastructureConfigurationArn": ...,
+        "clientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class ListDistributionConfigurationsRequestRequestTypeDef(TypedDict):
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
+class CreateImageRequestRequestTypeDef(TypedDict):
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    imageRecipeArn: NotRequired[str],
+    containerRecipeArn: NotRequired[str],
+    distributionConfigurationArn: NotRequired[str],
+    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
+    enhancedImageMetadataEnabled: NotRequired[bool],
+    tags: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+## CreateImagePipelineRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineRequestRequestTypeDef
+
+def get_value() -> CreateImagePipelineRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "infrastructureConfigurationArn": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImagePipelineRequestRequestTypeDef(TypedDict):
+    name: str,
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    description: NotRequired[str],
+    imageRecipeArn: NotRequired[str],
+    containerRecipeArn: NotRequired[str],
+    distributionConfigurationArn: NotRequired[str],
+    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
+    enhancedImageMetadataEnabled: NotRequired[bool],
+    schedule: NotRequired[ScheduleTypeDef],  # (2)
+    status: NotRequired[PipelineStatusType],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+## ImagePipelineTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ImagePipelineTypeDef
+
+def get_value() -> ImagePipelineTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ImagePipelineTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (1)
+    enhancedImageMetadataEnabled: NotRequired[bool],
+    imageRecipeArn: NotRequired[str],
+    containerRecipeArn: NotRequired[str],
+    infrastructureConfigurationArn: NotRequired[str],
+    distributionConfigurationArn: NotRequired[str],
+    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (2)
+    schedule: NotRequired[ScheduleTypeDef],  # (3)
+    status: NotRequired[PipelineStatusType],  # (4)
+    dateCreated: NotRequired[str],
+    dateUpdated: NotRequired[str],
+    dateLastRun: NotRequired[str],
+    dateNextRun: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+3. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+4. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+## UpdateImagePipelineRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineRequestRequestTypeDef
+
+def get_value() -> UpdateImagePipelineRequestRequestTypeDef:
+    return {
+        "imagePipelineArn": ...,
+        "infrastructureConfigurationArn": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateImagePipelineRequestRequestTypeDef(TypedDict):
+    imagePipelineArn: str,
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    description: NotRequired[str],
+    imageRecipeArn: NotRequired[str],
+    containerRecipeArn: NotRequired[str],
+    distributionConfigurationArn: NotRequired[str],
+    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
+    enhancedImageMetadataEnabled: NotRequired[bool],
+    schedule: NotRequired[ScheduleTypeDef],  # (2)
+    status: NotRequired[PipelineStatusType],  # (3)
+```
+
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
 ## ListDistributionConfigurationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2276,6 +2118,110 @@ class ListDistributionConfigurationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DistributionConfigurationSummaryTypeDef](./type_defs.md#distributionconfigurationsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InstanceBlockDeviceMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import InstanceBlockDeviceMappingTypeDef
+
+def get_value() -> InstanceBlockDeviceMappingTypeDef:
+    return {
+        "deviceName": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceBlockDeviceMappingTypeDef(TypedDict):
+    deviceName: NotRequired[str],
+    ebs: NotRequired[EbsInstanceBlockDeviceSpecificationTypeDef],  # (1)
+    virtualName: NotRequired[str],
+    noDevice: NotRequired[str],
+```
+
+1. See [:material-code-braces: EbsInstanceBlockDeviceSpecificationTypeDef](./type_defs.md#ebsinstanceblockdevicespecificationtypedef) 
+## FastLaunchConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import FastLaunchConfigurationTypeDef
+
+def get_value() -> FastLaunchConfigurationTypeDef:
+    return {
+        "enabled": ...,
+    }
+```
+
+```python title="Definition"
+class FastLaunchConfigurationTypeDef(TypedDict):
+    enabled: bool,
+    snapshotConfiguration: NotRequired[FastLaunchSnapshotConfigurationTypeDef],  # (1)
+    maxParallelLaunches: NotRequired[int],
+    launchTemplate: NotRequired[FastLaunchLaunchTemplateSpecificationTypeDef],  # (2)
+    accountId: NotRequired[str],
+```
+
+1. See [:material-code-braces: FastLaunchSnapshotConfigurationTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationtypedef) 
+2. See [:material-code-braces: FastLaunchLaunchTemplateSpecificationTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationtypedef) 
+## ListComponentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListComponentsRequestRequestTypeDef
+
+def get_value() -> ListComponentsRequestRequestTypeDef:
+    return {
+        "owner": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsRequestRequestTypeDef(TypedDict):
+    owner: NotRequired[OwnershipType],  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    byName: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListContainerRecipesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesRequestRequestTypeDef
+
+def get_value() -> ListContainerRecipesRequestRequestTypeDef:
+    return {
+        "owner": ...,
+    }
+```
+
+```python title="Definition"
+class ListContainerRecipesRequestRequestTypeDef(TypedDict):
+    owner: NotRequired[OwnershipType],  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListDistributionConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListDistributionConfigurationsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListDistributionConfigurationsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListImageBuildVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2296,48 +2242,108 @@ class ListImageBuildVersionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListImageBuildVersionsResponseTypeDef
+## ListImagePipelineImagesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesRequestRequestTypeDef
 
-def get_value() -> ListImageBuildVersionsResponseTypeDef:
+def get_value() -> ListImagePipelineImagesRequestRequestTypeDef:
     return {
-        "requestId": ...,
-        "imageSummaryList": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "imagePipelineArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListImageBuildVersionsResponseTypeDef(TypedDict):
-    requestId: str,
-    imageSummaryList: List[ImageSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageSummaryTypeDef](./type_defs.md#imagesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListImagePackagesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagePackagesRequestRequestTypeDef
-
-def get_value() -> ListImagePackagesRequestRequestTypeDef:
-    return {
-        "imageBuildVersionArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagePackagesRequestRequestTypeDef(TypedDict):
-    imageBuildVersionArn: str,
+class ListImagePipelineImagesRequestRequestTypeDef(TypedDict):
+    imagePipelineArn: str,
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListImagePipelinesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesRequestRequestTypeDef
+
+def get_value() -> ListImagePipelinesRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListImagePipelinesRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListImageRecipesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListImageRecipesRequestRequestTypeDef
+
+def get_value() -> ListImageRecipesRequestRequestTypeDef:
+    return {
+        "owner": ...,
+    }
+```
+
+```python title="Definition"
+class ListImageRecipesRequestRequestTypeDef(TypedDict):
+    owner: NotRequired[OwnershipType],  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListImagesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListImagesRequestRequestTypeDef
+
+def get_value() -> ListImagesRequestRequestTypeDef:
+    return {
+        "owner": ...,
+    }
+```
+
+```python title="Definition"
+class ListImagesRequestRequestTypeDef(TypedDict):
+    owner: NotRequired[OwnershipType],  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    byName: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    includeDeprecated: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListInfrastructureConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListInfrastructureConfigurationsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListInfrastructureConfigurationsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListImagePackagesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2362,114 +2368,6 @@ class ListImagePackagesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImagePackageTypeDef](./type_defs.md#imagepackagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListImagePipelineImagesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesRequestRequestTypeDef
-
-def get_value() -> ListImagePipelineImagesRequestRequestTypeDef:
-    return {
-        "imagePipelineArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagePipelineImagesRequestRequestTypeDef(TypedDict):
-    imagePipelineArn: str,
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListImagePipelineImagesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesResponseTypeDef
-
-def get_value() -> ListImagePipelineImagesResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imageSummaryList": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagePipelineImagesResponseTypeDef(TypedDict):
-    requestId: str,
-    imageSummaryList: List[ImageSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageSummaryTypeDef](./type_defs.md#imagesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListImagePipelinesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesRequestRequestTypeDef
-
-def get_value() -> ListImagePipelinesRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagePipelinesRequestRequestTypeDef(TypedDict):
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## ListImagePipelinesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesResponseTypeDef
-
-def get_value() -> ListImagePipelinesResponseTypeDef:
-    return {
-        "requestId": ...,
-        "imagePipelineList": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagePipelinesResponseTypeDef(TypedDict):
-    requestId: str,
-    imagePipelineList: List[ImagePipelineTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImagePipelineTypeDef](./type_defs.md#imagepipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListImageRecipesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImageRecipesRequestRequestTypeDef
-
-def get_value() -> ListImageRecipesRequestRequestTypeDef:
-    return {
-        "owner": ...,
-    }
-```
-
-```python title="Definition"
-class ListImageRecipesRequestRequestTypeDef(TypedDict):
-    owner: NotRequired[OwnershipType],  # (1)
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
-2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListImageRecipesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2494,29 +2392,6 @@ class ListImageRecipesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImageRecipeSummaryTypeDef](./type_defs.md#imagerecipesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListImagesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListImagesRequestRequestTypeDef
-
-def get_value() -> ListImagesRequestRequestTypeDef:
-    return {
-        "owner": ...,
-    }
-```
-
-```python title="Definition"
-class ListImagesRequestRequestTypeDef(TypedDict):
-    owner: NotRequired[OwnershipType],  # (1)
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
-    byName: NotRequired[bool],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    includeDeprecated: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
-2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListImagesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2541,25 +2416,6 @@ class ListImagesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImageVersionTypeDef](./type_defs.md#imageversiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListInfrastructureConfigurationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsRequestRequestTypeDef
-
-def get_value() -> ListInfrastructureConfigurationsRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class ListInfrastructureConfigurationsRequestRequestTypeDef(TypedDict):
-    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListInfrastructureConfigurationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2584,41 +2440,6 @@ class ListInfrastructureConfigurationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: InfrastructureConfigurationSummaryTypeDef](./type_defs.md#infrastructureconfigurationsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingTypeDef
 
 ```python title="Usage Example"
@@ -2655,455 +2476,275 @@ class OutputResourcesTypeDef(TypedDict):
 
 1. See [:material-code-braces: AmiTypeDef](./type_defs.md#amitypedef) 
 2. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
-## PutComponentPolicyRequestRequestTypeDef
+## ListComponentBuildVersionsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsResponseTypeDef
 
-def get_value() -> PutComponentPolicyRequestRequestTypeDef:
-    return {
-        "componentArn": ...,
-        "policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutComponentPolicyRequestRequestTypeDef(TypedDict):
-    componentArn: str,
-    policy: str,
-```
-
-## PutComponentPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyResponseTypeDef
-
-def get_value() -> PutComponentPolicyResponseTypeDef:
+def get_value() -> ListComponentBuildVersionsResponseTypeDef:
     return {
         "requestId": ...,
-        "componentArn": ...,
+        "componentSummaryList": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutComponentPolicyResponseTypeDef(TypedDict):
+class ListComponentBuildVersionsResponseTypeDef(TypedDict):
     requestId: str,
-    componentArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    componentSummaryList: List[ComponentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutContainerRecipePolicyRequestRequestTypeDef
+1. See [:material-code-braces: ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComponentResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetComponentResponseTypeDef
 
-def get_value() -> PutContainerRecipePolicyRequestRequestTypeDef:
-    return {
-        "containerRecipeArn": ...,
-        "policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutContainerRecipePolicyRequestRequestTypeDef(TypedDict):
-    containerRecipeArn: str,
-    policy: str,
-```
-
-## PutContainerRecipePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyResponseTypeDef
-
-def get_value() -> PutContainerRecipePolicyResponseTypeDef:
+def get_value() -> GetComponentResponseTypeDef:
     return {
         "requestId": ...,
-        "containerRecipeArn": ...,
+        "component": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutContainerRecipePolicyResponseTypeDef(TypedDict):
+class GetComponentResponseTypeDef(TypedDict):
     requestId: str,
-    containerRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutImagePolicyRequestRequestTypeDef
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetImagePipelineResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutImagePolicyRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImagePipelineResponseTypeDef
 
-def get_value() -> PutImagePolicyRequestRequestTypeDef:
-    return {
-        "imageArn": ...,
-        "policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutImagePolicyRequestRequestTypeDef(TypedDict):
-    imageArn: str,
-    policy: str,
-```
-
-## PutImagePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutImagePolicyResponseTypeDef
-
-def get_value() -> PutImagePolicyResponseTypeDef:
+def get_value() -> GetImagePipelineResponseTypeDef:
     return {
         "requestId": ...,
-        "imageArn": ...,
+        "imagePipeline": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutImagePolicyResponseTypeDef(TypedDict):
+class GetImagePipelineResponseTypeDef(TypedDict):
     requestId: str,
-    imageArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    imagePipeline: ImagePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutImageRecipePolicyRequestRequestTypeDef
+1. See [:material-code-braces: ImagePipelineTypeDef](./type_defs.md#imagepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImagePipelinesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesResponseTypeDef
 
-def get_value() -> PutImageRecipePolicyRequestRequestTypeDef:
-    return {
-        "imageRecipeArn": ...,
-        "policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutImageRecipePolicyRequestRequestTypeDef(TypedDict):
-    imageRecipeArn: str,
-    policy: str,
-```
-
-## PutImageRecipePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyResponseTypeDef
-
-def get_value() -> PutImageRecipePolicyResponseTypeDef:
+def get_value() -> ListImagePipelinesResponseTypeDef:
     return {
         "requestId": ...,
-        "imageRecipeArn": ...,
+        "imagePipelineList": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutImageRecipePolicyResponseTypeDef(TypedDict):
+class ListImagePipelinesResponseTypeDef(TypedDict):
     requestId: str,
-    imageRecipeArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    imagePipelineList: List[ImagePipelineTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
+1. See [:material-code-braces: ImagePipelineTypeDef](./type_defs.md#imagepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImageRecipeRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> CreateImageRecipeRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## S3ExportConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import S3ExportConfigurationTypeDef
-
-def get_value() -> S3ExportConfigurationTypeDef:
-    return {
-        "roleName": ...,
-        "diskImageFormat": ...,
-        "s3Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class S3ExportConfigurationTypeDef(TypedDict):
-    roleName: str,
-    diskImageFormat: DiskImageFormatType,  # (1)
-    s3Bucket: str,
-    s3Prefix: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DiskImageFormatType](./literals.md#diskimageformattype) 
-## S3LogsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import S3LogsTypeDef
-
-def get_value() -> S3LogsTypeDef:
-    return {
-        "s3BucketName": ...,
-    }
-```
-
-```python title="Definition"
-class S3LogsTypeDef(TypedDict):
-    s3BucketName: NotRequired[str],
-    s3KeyPrefix: NotRequired[str],
-```
-
-## ScheduleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import ScheduleTypeDef
-
-def get_value() -> ScheduleTypeDef:
-    return {
-        "scheduleExpression": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduleTypeDef(TypedDict):
-    scheduleExpression: NotRequired[str],
-    timezone: NotRequired[str],
-    pipelineExecutionStartCondition: NotRequired[PipelineExecutionStartConditionType],  # (1)
-```
-
-1. See [:material-code-brackets: PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype) 
-## StartImagePipelineExecutionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionRequestRequestTypeDef
-
-def get_value() -> StartImagePipelineExecutionRequestRequestTypeDef:
-    return {
-        "imagePipelineArn": ...,
+        "name": ...,
+        "semanticVersion": ...,
+        "components": ...,
+        "parentImage": ...,
         "clientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class StartImagePipelineExecutionRequestRequestTypeDef(TypedDict):
-    imagePipelineArn: str,
-    clientToken: str,
-```
-
-## StartImagePipelineExecutionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionResponseTypeDef
-
-def get_value() -> StartImagePipelineExecutionResponseTypeDef:
-    return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imageBuildVersionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartImagePipelineExecutionResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imageBuildVersionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SystemsManagerAgentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import SystemsManagerAgentTypeDef
-
-def get_value() -> SystemsManagerAgentTypeDef:
-    return {
-        "uninstallAfterBuild": ...,
-    }
-```
-
-```python title="Definition"
-class SystemsManagerAgentTypeDef(TypedDict):
-    uninstallAfterBuild: NotRequired[bool],
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## TargetContainerRepositoryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import TargetContainerRepositoryTypeDef
-
-def get_value() -> TargetContainerRepositoryTypeDef:
-    return {
-        "service": ...,
-        "repositoryName": ...,
-    }
-```
-
-```python title="Definition"
-class TargetContainerRepositoryTypeDef(TypedDict):
-    service: ContainerRepositoryServiceType,  # (1)
-    repositoryName: str,
-```
-
-1. See [:material-code-brackets: ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype) 
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateDistributionConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateDistributionConfigurationRequestRequestTypeDef:
-    return {
-        "distributionConfigurationArn": ...,
-        "distributions": ...,
-        "clientToken": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDistributionConfigurationRequestRequestTypeDef(TypedDict):
-    distributionConfigurationArn: str,
-    distributions: Sequence[DistributionTypeDef],  # (1)
+class CreateImageRecipeRequestRequestTypeDef(TypedDict):
+    name: str,
+    semanticVersion: str,
+    components: Sequence[ComponentConfigurationTypeDef],  # (1)
+    parentImage: str,
     clientToken: str,
     description: NotRequired[str],
+    blockDeviceMappings: NotRequired[Sequence[InstanceBlockDeviceMappingTypeDef]],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+    workingDirectory: NotRequired[str],
+    additionalInstanceConfiguration: NotRequired[AdditionalInstanceConfigurationTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
-## UpdateDistributionConfigurationResponseTypeDef
+1. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+2. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
+3. See [:material-code-braces: AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef) 
+## ImageRecipeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImageRecipeTypeDef
 
-def get_value() -> UpdateDistributionConfigurationResponseTypeDef:
+def get_value() -> ImageRecipeTypeDef:
     return {
-        "requestId": ...,
-        "clientToken": ...,
-        "distributionConfigurationArn": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDistributionConfigurationResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    distributionConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ImageRecipeTypeDef(TypedDict):
+    arn: NotRequired[str],
+    type: NotRequired[ImageTypeType],  # (1)
+    name: NotRequired[str],
+    description: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (2)
+    owner: NotRequired[str],
+    version: NotRequired[str],
+    components: NotRequired[List[ComponentConfigurationTypeDef]],  # (3)
+    parentImage: NotRequired[str],
+    blockDeviceMappings: NotRequired[List[InstanceBlockDeviceMappingTypeDef]],  # (4)
+    dateCreated: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    workingDirectory: NotRequired[str],
+    additionalInstanceConfiguration: NotRequired[AdditionalInstanceConfigurationTypeDef],  # (5)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateImagePipelineRequestRequestTypeDef
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+3. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+4. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
+5. See [:material-code-braces: AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef) 
+## InstanceConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineRequestRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import InstanceConfigurationTypeDef
 
-def get_value() -> UpdateImagePipelineRequestRequestTypeDef:
+def get_value() -> InstanceConfigurationTypeDef:
     return {
-        "imagePipelineArn": ...,
-        "infrastructureConfigurationArn": ...,
+        "image": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceConfigurationTypeDef(TypedDict):
+    image: NotRequired[str],
+    blockDeviceMappings: NotRequired[Sequence[InstanceBlockDeviceMappingTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
+## DistributionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DistributionTypeDef
+
+def get_value() -> DistributionTypeDef:
+    return {
+        "region": ...,
+    }
+```
+
+```python title="Definition"
+class DistributionTypeDef(TypedDict):
+    region: str,
+    amiDistributionConfiguration: NotRequired[AmiDistributionConfigurationTypeDef],  # (1)
+    containerDistributionConfiguration: NotRequired[ContainerDistributionConfigurationTypeDef],  # (2)
+    licenseConfigurationArns: NotRequired[Sequence[str]],
+    launchTemplateConfigurations: NotRequired[Sequence[LaunchTemplateConfigurationTypeDef]],  # (3)
+    s3ExportConfiguration: NotRequired[S3ExportConfigurationTypeDef],  # (4)
+    fastLaunchConfigurations: NotRequired[Sequence[FastLaunchConfigurationTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: AmiDistributionConfigurationTypeDef](./type_defs.md#amidistributionconfigurationtypedef) 
+2. See [:material-code-braces: ContainerDistributionConfigurationTypeDef](./type_defs.md#containerdistributionconfigurationtypedef) 
+3. See [:material-code-braces: LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef) 
+4. See [:material-code-braces: S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef) 
+5. See [:material-code-braces: FastLaunchConfigurationTypeDef](./type_defs.md#fastlaunchconfigurationtypedef) 
+## CreateInfrastructureConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateInfrastructureConfigurationRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "instanceProfileName": ...,
         "clientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateImagePipelineRequestRequestTypeDef(TypedDict):
-    imagePipelineArn: str,
-    infrastructureConfigurationArn: str,
+class CreateInfrastructureConfigurationRequestRequestTypeDef(TypedDict):
+    name: str,
+    instanceProfileName: str,
     clientToken: str,
     description: NotRequired[str],
-    imageRecipeArn: NotRequired[str],
-    containerRecipeArn: NotRequired[str],
-    distributionConfigurationArn: NotRequired[str],
-    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (1)
-    enhancedImageMetadataEnabled: NotRequired[bool],
-    schedule: NotRequired[ScheduleTypeDef],  # (2)
-    status: NotRequired[PipelineStatusType],  # (3)
+    instanceTypes: NotRequired[Sequence[str]],
+    securityGroupIds: NotRequired[Sequence[str]],
+    subnetId: NotRequired[str],
+    logging: NotRequired[LoggingTypeDef],  # (1)
+    keyPair: NotRequired[str],
+    terminateInstanceOnFailure: NotRequired[bool],
+    snsTopicArn: NotRequired[str],
+    resourceTags: NotRequired[Mapping[str, str]],
+    instanceMetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (2)
+    tags: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
-2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
-3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
-## UpdateImagePipelineResponseTypeDef
+1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
+## InfrastructureConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import InfrastructureConfigurationTypeDef
 
-def get_value() -> UpdateImagePipelineResponseTypeDef:
+def get_value() -> InfrastructureConfigurationTypeDef:
     return {
-        "requestId": ...,
-        "clientToken": ...,
-        "imagePipelineArn": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateImagePipelineResponseTypeDef(TypedDict):
-    requestId: str,
-    clientToken: str,
-    imagePipelineArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class InfrastructureConfigurationTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    instanceTypes: NotRequired[List[str]],
+    instanceProfileName: NotRequired[str],
+    securityGroupIds: NotRequired[List[str]],
+    subnetId: NotRequired[str],
+    logging: NotRequired[LoggingTypeDef],  # (1)
+    keyPair: NotRequired[str],
+    terminateInstanceOnFailure: NotRequired[bool],
+    snsTopicArn: NotRequired[str],
+    dateCreated: NotRequired[str],
+    dateUpdated: NotRequired[str],
+    resourceTags: NotRequired[Dict[str, str]],
+    instanceMetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (2)
+    tags: NotRequired[Dict[str, str]],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
 ## UpdateInfrastructureConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3136,26 +2777,385 @@ class UpdateInfrastructureConfigurationRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
 2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## UpdateInfrastructureConfigurationResponseTypeDef
+## ImageSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImageSummaryTypeDef
 
-def get_value() -> UpdateInfrastructureConfigurationResponseTypeDef:
+def get_value() -> ImageSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ImageSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[ImageTypeType],  # (1)
+    version: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (2)
+    osVersion: NotRequired[str],
+    state: NotRequired[ImageStateTypeDef],  # (3)
+    owner: NotRequired[str],
+    dateCreated: NotRequired[str],
+    outputResources: NotRequired[OutputResourcesTypeDef],  # (4)
+    tags: NotRequired[Dict[str, str]],
+    buildType: NotRequired[BuildTypeType],  # (5)
+```
+
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+3. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
+4. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
+5. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
+## GetImageRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipeResponseTypeDef
+
+def get_value() -> GetImageRecipeResponseTypeDef:
     return {
         "requestId": ...,
-        "clientToken": ...,
-        "infrastructureConfigurationArn": ...,
+        "imageRecipe": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateInfrastructureConfigurationResponseTypeDef(TypedDict):
+class GetImageRecipeResponseTypeDef(TypedDict):
     requestId: str,
-    clientToken: str,
-    infrastructureConfigurationArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    imageRecipe: ImageRecipeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ImageRecipeTypeDef](./type_defs.md#imagerecipetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ContainerRecipeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ContainerRecipeTypeDef
+
+def get_value() -> ContainerRecipeTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerRecipeTypeDef(TypedDict):
+    arn: NotRequired[str],
+    containerType: NotRequired[ContainerTypeType],  # (1)
+    name: NotRequired[str],
+    description: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (2)
+    owner: NotRequired[str],
+    version: NotRequired[str],
+    components: NotRequired[List[ComponentConfigurationTypeDef]],  # (3)
+    instanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (4)
+    dockerfileTemplateData: NotRequired[str],
+    kmsKeyId: NotRequired[str],
+    encrypted: NotRequired[bool],
+    parentImage: NotRequired[str],
+    dateCreated: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    workingDirectory: NotRequired[str],
+    targetRepository: NotRequired[TargetContainerRepositoryTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
+2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+3. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+4. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+5. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
+## CreateContainerRecipeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeRequestRequestTypeDef
+
+def get_value() -> CreateContainerRecipeRequestRequestTypeDef:
+    return {
+        "containerType": ...,
+        "name": ...,
+        "semanticVersion": ...,
+        "components": ...,
+        "parentImage": ...,
+        "targetRepository": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContainerRecipeRequestRequestTypeDef(TypedDict):
+    containerType: ContainerTypeType,  # (1)
+    name: str,
+    semanticVersion: str,
+    components: Sequence[ComponentConfigurationTypeDef],  # (2)
+    parentImage: str,
+    targetRepository: TargetContainerRepositoryTypeDef,  # (3)
+    clientToken: str,
+    description: NotRequired[str],
+    instanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (4)
+    dockerfileTemplateData: NotRequired[str],
+    dockerfileTemplateUri: NotRequired[str],
+    platformOverride: NotRequired[PlatformType],  # (5)
+    imageOsVersionOverride: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    workingDirectory: NotRequired[str],
+    kmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
+2. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+3. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
+4. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+5. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+## CreateDistributionConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateDistributionConfigurationRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "distributions": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDistributionConfigurationRequestRequestTypeDef(TypedDict):
+    name: str,
+    distributions: Sequence[DistributionTypeDef],  # (1)
+    clientToken: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+## DistributionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import DistributionConfigurationTypeDef
+
+def get_value() -> DistributionConfigurationTypeDef:
+    return {
+        "timeoutMinutes": ...,
+    }
+```
+
+```python title="Definition"
+class DistributionConfigurationTypeDef(TypedDict):
+    timeoutMinutes: int,
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    distributions: NotRequired[List[DistributionTypeDef]],  # (1)
+    dateCreated: NotRequired[str],
+    dateUpdated: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+## UpdateDistributionConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateDistributionConfigurationRequestRequestTypeDef:
+    return {
+        "distributionConfigurationArn": ...,
+        "distributions": ...,
+        "clientToken": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDistributionConfigurationRequestRequestTypeDef(TypedDict):
+    distributionConfigurationArn: str,
+    distributions: Sequence[DistributionTypeDef],  # (1)
+    clientToken: str,
+    description: NotRequired[str],
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+## GetInfrastructureConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationResponseTypeDef
+
+def get_value() -> GetInfrastructureConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "infrastructureConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetInfrastructureConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    infrastructureConfiguration: InfrastructureConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImageBuildVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsResponseTypeDef
+
+def get_value() -> ListImageBuildVersionsResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageSummaryList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImageBuildVersionsResponseTypeDef(TypedDict):
+    requestId: str,
+    imageSummaryList: List[ImageSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageSummaryTypeDef](./type_defs.md#imagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImagePipelineImagesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesResponseTypeDef
+
+def get_value() -> ListImagePipelineImagesResponseTypeDef:
+    return {
+        "requestId": ...,
+        "imageSummaryList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImagePipelineImagesResponseTypeDef(TypedDict):
+    requestId: str,
+    imageSummaryList: List[ImageSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageSummaryTypeDef](./type_defs.md#imagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContainerRecipeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeResponseTypeDef
+
+def get_value() -> GetContainerRecipeResponseTypeDef:
+    return {
+        "requestId": ...,
+        "containerRecipe": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContainerRecipeResponseTypeDef(TypedDict):
+    requestId: str,
+    containerRecipe: ContainerRecipeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContainerRecipeTypeDef](./type_defs.md#containerrecipetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDistributionConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationResponseTypeDef
+
+def get_value() -> GetDistributionConfigurationResponseTypeDef:
+    return {
+        "requestId": ...,
+        "distributionConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDistributionConfigurationResponseTypeDef(TypedDict):
+    requestId: str,
+    distributionConfiguration: DistributionConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DistributionConfigurationTypeDef](./type_defs.md#distributionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import ImageTypeDef
+
+def get_value() -> ImageTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ImageTypeDef(TypedDict):
+    arn: NotRequired[str],
+    type: NotRequired[ImageTypeType],  # (1)
+    name: NotRequired[str],
+    version: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (2)
+    enhancedImageMetadataEnabled: NotRequired[bool],
+    osVersion: NotRequired[str],
+    state: NotRequired[ImageStateTypeDef],  # (3)
+    imageRecipe: NotRequired[ImageRecipeTypeDef],  # (4)
+    containerRecipe: NotRequired[ContainerRecipeTypeDef],  # (5)
+    sourcePipelineName: NotRequired[str],
+    sourcePipelineArn: NotRequired[str],
+    infrastructureConfiguration: NotRequired[InfrastructureConfigurationTypeDef],  # (6)
+    distributionConfiguration: NotRequired[DistributionConfigurationTypeDef],  # (7)
+    imageTestsConfiguration: NotRequired[ImageTestsConfigurationTypeDef],  # (8)
+    dateCreated: NotRequired[str],
+    outputResources: NotRequired[OutputResourcesTypeDef],  # (9)
+    tags: NotRequired[Dict[str, str]],
+    buildType: NotRequired[BuildTypeType],  # (10)
+```
+
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+3. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
+4. See [:material-code-braces: ImageRecipeTypeDef](./type_defs.md#imagerecipetypedef) 
+5. See [:material-code-braces: ContainerRecipeTypeDef](./type_defs.md#containerrecipetypedef) 
+6. See [:material-code-braces: InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef) 
+7. See [:material-code-braces: DistributionConfigurationTypeDef](./type_defs.md#distributionconfigurationtypedef) 
+8. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+9. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
+10. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
+## GetImageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.type_defs import GetImageResponseTypeDef
+
+def get_value() -> GetImageResponseTypeDef:
+    return {
+        "requestId": ...,
+        "image": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImageResponseTypeDef(TypedDict):
+    requestId: str,
+    image: ImageTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36130,179 +36130,176 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">AssociateFirewallRuleGroupRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53resolver.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AssociateFirewallRuleGroupRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;CreatorRequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;FirewallRuleGroupId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;VpcId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="s2">&quot;Priority&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;Value&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#associatefirewallrulegrouprequestrequesttypedef">AssociateFirewallRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#associatefirewallrulegroupresponsetypedef">AssociateFirewallRuleGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#associateresolverendpointipaddressrequestrequesttypedef">AssociateResolverEndpointIpAddressRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#associateresolverendpointipaddressresponsetypedef">AssociateResolverEndpointIpAddressResponseTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#firewallrulegroupassociationtypedef">FirewallRuleGroupAssociationTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#ipaddressupdatetypedef">IpAddressUpdateTypeDef</a></li>
+<li><a href="type_defs/#resolverendpointtypedef">ResolverEndpointTypeDef</a></li>
 <li><a href="type_defs/#associateresolverquerylogconfigrequestrequesttypedef">AssociateResolverQueryLogConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#associateresolverquerylogconfigresponsetypedef">AssociateResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#resolverquerylogconfigassociationtypedef">ResolverQueryLogConfigAssociationTypeDef</a></li>
 <li><a href="type_defs/#associateresolverrulerequestrequesttypedef">AssociateResolverRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#associateresolverruleresponsetypedef">AssociateResolverRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#createfirewalldomainlistrequestrequesttypedef">CreateFirewallDomainListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createfirewalldomainlistresponsetypedef">CreateFirewallDomainListResponseTypeDef</a></li>
-<li><a href="type_defs/#createfirewallrulegrouprequestrequesttypedef">CreateFirewallRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createfirewallrulegroupresponsetypedef">CreateFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#resolverruleassociationtypedef">ResolverRuleAssociationTypeDef</a></li>
+<li><a href="type_defs/#firewalldomainlisttypedef">FirewallDomainListTypeDef</a></li>
+<li><a href="type_defs/#firewallrulegrouptypedef">FirewallRuleGroupTypeDef</a></li>
 <li><a href="type_defs/#createfirewallrulerequestrequesttypedef">CreateFirewallRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createfirewallruleresponsetypedef">CreateFirewallRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#createresolverendpointrequestrequesttypedef">CreateResolverEndpointRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createresolverendpointresponsetypedef">CreateResolverEndpointResponseTypeDef</a></li>
-<li><a href="type_defs/#createresolverquerylogconfigrequestrequesttypedef">CreateResolverQueryLogConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createresolverquerylogconfigresponsetypedef">CreateResolverQueryLogConfigResponseTypeDef</a></li>
-<li><a href="type_defs/#createresolverrulerequestrequesttypedef">CreateResolverRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createresolverruleresponsetypedef">CreateResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#firewallruletypedef">FirewallRuleTypeDef</a></li>
+<li><a href="type_defs/#ipaddressrequesttypedef">IpAddressRequestTypeDef</a></li>
+<li><a href="type_defs/#resolverquerylogconfigtypedef">ResolverQueryLogConfigTypeDef</a></li>
+<li><a href="type_defs/#targetaddresstypedef">TargetAddressTypeDef</a></li>
 <li><a href="type_defs/#deletefirewalldomainlistrequestrequesttypedef">DeleteFirewallDomainListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletefirewalldomainlistresponsetypedef">DeleteFirewallDomainListResponseTypeDef</a></li>
 <li><a href="type_defs/#deletefirewallrulegrouprequestrequesttypedef">DeleteFirewallRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletefirewallrulegroupresponsetypedef">DeleteFirewallRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#deletefirewallrulerequestrequesttypedef">DeleteFirewallRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletefirewallruleresponsetypedef">DeleteFirewallRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteresolverendpointrequestrequesttypedef">DeleteResolverEndpointRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteresolverendpointresponsetypedef">DeleteResolverEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteresolverquerylogconfigrequestrequesttypedef">DeleteResolverQueryLogConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteresolverquerylogconfigresponsetypedef">DeleteResolverQueryLogConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteresolverrulerequestrequesttypedef">DeleteResolverRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteresolverruleresponsetypedef">DeleteResolverRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociatefirewallrulegrouprequestrequesttypedef">DisassociateFirewallRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#disassociatefirewallrulegroupresponsetypedef">DisassociateFirewallRuleGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#disassociateresolverendpointipaddressrequestrequesttypedef">DisassociateResolverEndpointIpAddressRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#disassociateresolverendpointipaddressresponsetypedef">DisassociateResolverEndpointIpAddressResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociateresolverquerylogconfigrequestrequesttypedef">DisassociateResolverQueryLogConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#disassociateresolverquerylogconfigresponsetypedef">DisassociateResolverQueryLogConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociateresolverrulerequestrequesttypedef">DisassociateResolverRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#disassociateresolverruleresponsetypedef">DisassociateResolverRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
 <li><a href="type_defs/#firewallconfigtypedef">FirewallConfigTypeDef</a></li>
 <li><a href="type_defs/#firewalldomainlistmetadatatypedef">FirewallDomainListMetadataTypeDef</a></li>
-<li><a href="type_defs/#firewalldomainlisttypedef">FirewallDomainListTypeDef</a></li>
-<li><a href="type_defs/#firewallrulegroupassociationtypedef">FirewallRuleGroupAssociationTypeDef</a></li>
 <li><a href="type_defs/#firewallrulegroupmetadatatypedef">FirewallRuleGroupMetadataTypeDef</a></li>
-<li><a href="type_defs/#firewallrulegrouptypedef">FirewallRuleGroupTypeDef</a></li>
-<li><a href="type_defs/#firewallruletypedef">FirewallRuleTypeDef</a></li>
 <li><a href="type_defs/#getfirewallconfigrequestrequesttypedef">GetFirewallConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfirewallconfigresponsetypedef">GetFirewallConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#getfirewalldomainlistrequestrequesttypedef">GetFirewallDomainListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfirewalldomainlistresponsetypedef">GetFirewallDomainListResponseTypeDef</a></li>
 <li><a href="type_defs/#getfirewallrulegroupassociationrequestrequesttypedef">GetFirewallRuleGroupAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfirewallrulegroupassociationresponsetypedef">GetFirewallRuleGroupAssociationResponseTypeDef</a></li>
 <li><a href="type_defs/#getfirewallrulegrouppolicyrequestrequesttypedef">GetFirewallRuleGroupPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfirewallrulegrouppolicyresponsetypedef">GetFirewallRuleGroupPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getfirewallrulegrouprequestrequesttypedef">GetFirewallRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getfirewallrulegroupresponsetypedef">GetFirewallRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#getresolverconfigrequestrequesttypedef">GetResolverConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverconfigresponsetypedef">GetResolverConfigResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverdnssecconfigrequestrequesttypedef">GetResolverDnssecConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverdnssecconfigresponsetypedef">GetResolverDnssecConfigResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverendpointrequestrequesttypedef">GetResolverEndpointRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverendpointresponsetypedef">GetResolverEndpointResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigassociationrequestrequesttypedef">GetResolverQueryLogConfigAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigassociationresponsetypedef">GetResolverQueryLogConfigAssociationResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigpolicyrequestrequesttypedef">GetResolverQueryLogConfigPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigpolicyresponsetypedef">GetResolverQueryLogConfigPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigrequestrequesttypedef">GetResolverQueryLogConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverquerylogconfigresponsetypedef">GetResolverQueryLogConfigResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverruleassociationrequestrequesttypedef">GetResolverRuleAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverruleassociationresponsetypedef">GetResolverRuleAssociationResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverrulepolicyrequestrequesttypedef">GetResolverRulePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverrulepolicyresponsetypedef">GetResolverRulePolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#getresolverrulerequestrequesttypedef">GetResolverRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getresolverruleresponsetypedef">GetResolverRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#importfirewalldomainsrequestrequesttypedef">ImportFirewallDomainsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#importfirewalldomainsresponsetypedef">ImportFirewallDomainsResponseTypeDef</a></li>
-<li><a href="type_defs/#ipaddressrequesttypedef">IpAddressRequestTypeDef</a></li>
-<li><a href="type_defs/#ipaddressresponsetypedef">IpAddressResponseTypeDef</a></li>
-<li><a href="type_defs/#ipaddressupdatetypedef">IpAddressUpdateTypeDef</a></li>
-<li><a href="type_defs/#listfirewallconfigsrequestlistfirewallconfigspaginatetypedef">ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewallconfigsrequestrequesttypedef">ListFirewallConfigsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewallconfigsresponsetypedef">ListFirewallConfigsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainlistsrequestlistfirewalldomainlistspaginatetypedef">ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainlistsrequestrequesttypedef">ListFirewallDomainListsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainlistsresponsetypedef">ListFirewallDomainListsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainsrequestlistfirewalldomainspaginatetypedef">ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainsrequestrequesttypedef">ListFirewallDomainsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewalldomainsresponsetypedef">ListFirewallDomainsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupassociationsrequestlistfirewallrulegroupassociationspaginatetypedef">ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupassociationsrequestrequesttypedef">ListFirewallRuleGroupAssociationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupassociationsresponsetypedef">ListFirewallRuleGroupAssociationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupsrequestlistfirewallrulegroupspaginatetypedef">ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupsrequestrequesttypedef">ListFirewallRuleGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulegroupsresponsetypedef">ListFirewallRuleGroupsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulesrequestlistfirewallrulespaginatetypedef">ListFirewallRulesRequestListFirewallRulesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulesrequestrequesttypedef">ListFirewallRulesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfirewallrulesresponsetypedef">ListFirewallRulesResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverconfigsrequestlistresolverconfigspaginatetypedef">ListResolverConfigsRequestListResolverConfigsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverconfigsrequestrequesttypedef">ListResolverConfigsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverconfigsresponsetypedef">ListResolverConfigsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverdnssecconfigsrequestlistresolverdnssecconfigspaginatetypedef">ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverdnssecconfigsrequestrequesttypedef">ListResolverDnssecConfigsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverdnssecconfigsresponsetypedef">ListResolverDnssecConfigsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointipaddressesrequestlistresolverendpointipaddressespaginatetypedef">ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointipaddressesrequestrequesttypedef">ListResolverEndpointIpAddressesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointipaddressesresponsetypedef">ListResolverEndpointIpAddressesResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointsrequestlistresolverendpointspaginatetypedef">ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointsrequestrequesttypedef">ListResolverEndpointsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverendpointsresponsetypedef">ListResolverEndpointsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigassociationsrequestlistresolverquerylogconfigassociationspaginatetypedef">ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigassociationsrequestrequesttypedef">ListResolverQueryLogConfigAssociationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigassociationsresponsetypedef">ListResolverQueryLogConfigAssociationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigsrequestlistresolverquerylogconfigspaginatetypedef">ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigsrequestrequesttypedef">ListResolverQueryLogConfigsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverquerylogconfigsresponsetypedef">ListResolverQueryLogConfigsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverruleassociationsrequestlistresolverruleassociationspaginatetypedef">ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverruleassociationsrequestrequesttypedef">ListResolverRuleAssociationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverruleassociationsresponsetypedef">ListResolverRuleAssociationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresolverrulesrequestlistresolverrulespaginatetypedef">ListResolverRulesRequestListResolverRulesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listresolverrulesrequestrequesttypedef">ListResolverRulesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresolverrulesresponsetypedef">ListResolverRulesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestlisttagsforresourcepaginatetypedef">ListTagsForResourceRequestListTagsForResourcePaginateTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#putfirewallrulegrouppolicyrequestrequesttypedef">PutFirewallRuleGroupPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putfirewallrulegrouppolicyresponsetypedef">PutFirewallRuleGroupPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#putresolverquerylogconfigpolicyrequestrequesttypedef">PutResolverQueryLogConfigPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putresolverquerylogconfigpolicyresponsetypedef">PutResolverQueryLogConfigPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#putresolverrulepolicyrequestrequesttypedef">PutResolverRulePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putresolverrulepolicyresponsetypedef">PutResolverRulePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#resolverconfigtypedef">ResolverConfigTypeDef</a></li>
+<li><a href="type_defs/#getresolverdnssecconfigrequestrequesttypedef">GetResolverDnssecConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#resolverdnssecconfigtypedef">ResolverDnssecConfigTypeDef</a></li>
-<li><a href="type_defs/#resolverendpointtypedef">ResolverEndpointTypeDef</a></li>
-<li><a href="type_defs/#resolverquerylogconfigassociationtypedef">ResolverQueryLogConfigAssociationTypeDef</a></li>
-<li><a href="type_defs/#resolverquerylogconfigtypedef">ResolverQueryLogConfigTypeDef</a></li>
-<li><a href="type_defs/#resolverruleassociationtypedef">ResolverRuleAssociationTypeDef</a></li>
-<li><a href="type_defs/#resolverruleconfigtypedef">ResolverRuleConfigTypeDef</a></li>
-<li><a href="type_defs/#resolverruletypedef">ResolverRuleTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#targetaddresstypedef">TargetAddressTypeDef</a></li>
+<li><a href="type_defs/#getresolverendpointrequestrequesttypedef">GetResolverEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigassociationrequestrequesttypedef">GetResolverQueryLogConfigAssociationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigpolicyrequestrequesttypedef">GetResolverQueryLogConfigPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigrequestrequesttypedef">GetResolverQueryLogConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverruleassociationrequestrequesttypedef">GetResolverRuleAssociationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverrulepolicyrequestrequesttypedef">GetResolverRulePolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresolverrulerequestrequesttypedef">GetResolverRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importfirewalldomainsrequestrequesttypedef">ImportFirewallDomainsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ipaddressresponsetypedef">IpAddressResponseTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listfirewallconfigsrequestrequesttypedef">ListFirewallConfigsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainlistsrequestrequesttypedef">ListFirewallDomainListsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainsrequestrequesttypedef">ListFirewallDomainsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupassociationsrequestrequesttypedef">ListFirewallRuleGroupAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupsrequestrequesttypedef">ListFirewallRuleGroupsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulesrequestrequesttypedef">ListFirewallRulesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverconfigsrequestrequesttypedef">ListResolverConfigsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointipaddressesrequestrequesttypedef">ListResolverEndpointIpAddressesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putfirewallrulegrouppolicyrequestrequesttypedef">PutFirewallRuleGroupPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putresolverquerylogconfigpolicyrequestrequesttypedef">PutResolverQueryLogConfigPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putresolverrulepolicyrequestrequesttypedef">PutResolverRulePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefirewallconfigrequestrequesttypedef">UpdateFirewallConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatefirewallconfigresponsetypedef">UpdateFirewallConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#updatefirewalldomainsrequestrequesttypedef">UpdateFirewallDomainsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatefirewalldomainsresponsetypedef">UpdateFirewallDomainsResponseTypeDef</a></li>
 <li><a href="type_defs/#updatefirewallrulegroupassociationrequestrequesttypedef">UpdateFirewallRuleGroupAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatefirewallrulegroupassociationresponsetypedef">UpdateFirewallRuleGroupAssociationResponseTypeDef</a></li>
 <li><a href="type_defs/#updatefirewallrulerequestrequesttypedef">UpdateFirewallRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatefirewallruleresponsetypedef">UpdateFirewallRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresolverconfigrequestrequesttypedef">UpdateResolverConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateresolverconfigresponsetypedef">UpdateResolverConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresolverdnssecconfigrequestrequesttypedef">UpdateResolverDnssecConfigRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateresolverdnssecconfigresponsetypedef">UpdateResolverDnssecConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresolverendpointrequestrequesttypedef">UpdateResolverEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatefirewallrulegrouprequestrequesttypedef">AssociateFirewallRuleGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createfirewalldomainlistrequestrequesttypedef">CreateFirewallDomainListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createfirewallrulegrouprequestrequesttypedef">CreateFirewallRuleGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createresolverquerylogconfigrequestrequesttypedef">CreateResolverQueryLogConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatefirewallrulegroupresponsetypedef">AssociateFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#disassociatefirewallrulegroupresponsetypedef">DisassociateFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#getfirewallrulegroupassociationresponsetypedef">GetFirewallRuleGroupAssociationResponseTypeDef</a></li>
+<li><a href="type_defs/#getfirewallrulegrouppolicyresponsetypedef">GetFirewallRuleGroupPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigpolicyresponsetypedef">GetResolverQueryLogConfigPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverrulepolicyresponsetypedef">GetResolverRulePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#importfirewalldomainsresponsetypedef">ImportFirewallDomainsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainsresponsetypedef">ListFirewallDomainsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupassociationsresponsetypedef">ListFirewallRuleGroupAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#putfirewallrulegrouppolicyresponsetypedef">PutFirewallRuleGroupPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#putresolverquerylogconfigpolicyresponsetypedef">PutResolverQueryLogConfigPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#putresolverrulepolicyresponsetypedef">PutResolverRulePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#updatefirewalldomainsresponsetypedef">UpdateFirewallDomainsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatefirewallrulegroupassociationresponsetypedef">UpdateFirewallRuleGroupAssociationResponseTypeDef</a></li>
+<li><a href="type_defs/#associateresolverendpointipaddressrequestrequesttypedef">AssociateResolverEndpointIpAddressRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociateresolverendpointipaddressrequestrequesttypedef">DisassociateResolverEndpointIpAddressRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associateresolverendpointipaddressresponsetypedef">AssociateResolverEndpointIpAddressResponseTypeDef</a></li>
+<li><a href="type_defs/#createresolverendpointresponsetypedef">CreateResolverEndpointResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteresolverendpointresponsetypedef">DeleteResolverEndpointResponseTypeDef</a></li>
+<li><a href="type_defs/#disassociateresolverendpointipaddressresponsetypedef">DisassociateResolverEndpointIpAddressResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverendpointresponsetypedef">GetResolverEndpointResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointsresponsetypedef">ListResolverEndpointsResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresolverendpointresponsetypedef">UpdateResolverEndpointResponseTypeDef</a></li>
+<li><a href="type_defs/#associateresolverquerylogconfigresponsetypedef">AssociateResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#disassociateresolverquerylogconfigresponsetypedef">DisassociateResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigassociationresponsetypedef">GetResolverQueryLogConfigAssociationResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigassociationsresponsetypedef">ListResolverQueryLogConfigAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#associateresolverruleresponsetypedef">AssociateResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#disassociateresolverruleresponsetypedef">DisassociateResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverruleassociationresponsetypedef">GetResolverRuleAssociationResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverruleassociationsresponsetypedef">ListResolverRuleAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#createfirewalldomainlistresponsetypedef">CreateFirewallDomainListResponseTypeDef</a></li>
+<li><a href="type_defs/#deletefirewalldomainlistresponsetypedef">DeleteFirewallDomainListResponseTypeDef</a></li>
+<li><a href="type_defs/#getfirewalldomainlistresponsetypedef">GetFirewallDomainListResponseTypeDef</a></li>
+<li><a href="type_defs/#createfirewallrulegroupresponsetypedef">CreateFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#deletefirewallrulegroupresponsetypedef">DeleteFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#getfirewallrulegroupresponsetypedef">GetFirewallRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#createfirewallruleresponsetypedef">CreateFirewallRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#deletefirewallruleresponsetypedef">DeleteFirewallRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulesresponsetypedef">ListFirewallRulesResponseTypeDef</a></li>
+<li><a href="type_defs/#updatefirewallruleresponsetypedef">UpdateFirewallRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#createresolverendpointrequestrequesttypedef">CreateResolverEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createresolverquerylogconfigresponsetypedef">CreateResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteresolverquerylogconfigresponsetypedef">DeleteResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverquerylogconfigresponsetypedef">GetResolverQueryLogConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigsresponsetypedef">ListResolverQueryLogConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#createresolverrulerequestrequesttypedef">CreateResolverRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resolverruleconfigtypedef">ResolverRuleConfigTypeDef</a></li>
+<li><a href="type_defs/#resolverruletypedef">ResolverRuleTypeDef</a></li>
+<li><a href="type_defs/#listresolverdnssecconfigsrequestrequesttypedef">ListResolverDnssecConfigsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointsrequestrequesttypedef">ListResolverEndpointsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigassociationsrequestrequesttypedef">ListResolverQueryLogConfigAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigsrequestrequesttypedef">ListResolverQueryLogConfigsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverruleassociationsrequestrequesttypedef">ListResolverRuleAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listresolverrulesrequestrequesttypedef">ListResolverRulesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getfirewallconfigresponsetypedef">GetFirewallConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewallconfigsresponsetypedef">ListFirewallConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatefirewallconfigresponsetypedef">UpdateFirewallConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainlistsresponsetypedef">ListFirewallDomainListsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupsresponsetypedef">ListFirewallRuleGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverconfigresponsetypedef">GetResolverConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverconfigsresponsetypedef">ListResolverConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#updateresolverconfigresponsetypedef">UpdateResolverConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverdnssecconfigresponsetypedef">GetResolverDnssecConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverdnssecconfigsresponsetypedef">ListResolverDnssecConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#updateresolverdnssecconfigresponsetypedef">UpdateResolverDnssecConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointipaddressesresponsetypedef">ListResolverEndpointIpAddressesResponseTypeDef</a></li>
+<li><a href="type_defs/#listfirewallconfigsrequestlistfirewallconfigspaginatetypedef">ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainlistsrequestlistfirewalldomainlistspaginatetypedef">ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfirewalldomainsrequestlistfirewalldomainspaginatetypedef">ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupassociationsrequestlistfirewallrulegroupassociationspaginatetypedef">ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulegroupsrequestlistfirewallrulegroupspaginatetypedef">ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfirewallrulesrequestlistfirewallrulespaginatetypedef">ListFirewallRulesRequestListFirewallRulesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverconfigsrequestlistresolverconfigspaginatetypedef">ListResolverConfigsRequestListResolverConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverdnssecconfigsrequestlistresolverdnssecconfigspaginatetypedef">ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointipaddressesrequestlistresolverendpointipaddressespaginatetypedef">ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverendpointsrequestlistresolverendpointspaginatetypedef">ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigassociationsrequestlistresolverquerylogconfigassociationspaginatetypedef">ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverquerylogconfigsrequestlistresolverquerylogconfigspaginatetypedef">ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverruleassociationsrequestlistresolverruleassociationspaginatetypedef">ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresolverrulesrequestlistresolverrulespaginatetypedef">ListResolverRulesRequestListResolverRulesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestlisttagsforresourcepaginatetypedef">ListTagsForResourceRequestListTagsForResourcePaginateTypeDef</a></li>
 <li><a href="type_defs/#updateresolverrulerequestrequesttypedef">UpdateResolverRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createresolverruleresponsetypedef">CreateResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteresolverruleresponsetypedef">DeleteResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#getresolverruleresponsetypedef">GetResolverRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#listresolverrulesresponsetypedef">ListResolverRulesResponseTypeDef</a></li>
 <li><a href="type_defs/#updateresolverruleresponsetypedef">UpdateResolverRuleResponseTypeDef</a></li>
 </ul>
 
@@ -36373,7 +36370,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

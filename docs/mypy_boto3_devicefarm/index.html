@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36143,37 +36143,33 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_devicefarm.type_defs</span> <span class="kn">import</span> <span class="n">AccountSettingsTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_devicefarm.type_defs</span> <span class="kn">import</span> <span class="n">TrialMinutesTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountSettingsTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TrialMinutesTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;awsAccountNumber&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;total&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#accountsettingstypedef">AccountSettingsTypeDef</a></li>
+<li><a href="type_defs/#trialminutestypedef">TrialMinutesTypeDef</a></li>
 <li><a href="type_defs/#artifacttypedef">ArtifactTypeDef</a></li>
 <li><a href="type_defs/#cputypedef">CPUTypeDef</a></li>
 <li><a href="type_defs/#counterstypedef">CountersTypeDef</a></li>
-<li><a href="type_defs/#createdevicepoolrequestrequesttypedef">CreateDevicePoolRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdevicepoolresulttypedef">CreateDevicePoolResultTypeDef</a></li>
+<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createinstanceprofilerequestrequesttypedef">CreateInstanceProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createinstanceprofileresulttypedef">CreateInstanceProfileResultTypeDef</a></li>
+<li><a href="type_defs/#instanceprofiletypedef">InstanceProfileTypeDef</a></li>
 <li><a href="type_defs/#createnetworkprofilerequestrequesttypedef">CreateNetworkProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createnetworkprofileresulttypedef">CreateNetworkProfileResultTypeDef</a></li>
+<li><a href="type_defs/#networkprofiletypedef">NetworkProfileTypeDef</a></li>
 <li><a href="type_defs/#createprojectrequestrequesttypedef">CreateProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createprojectresulttypedef">CreateProjectResultTypeDef</a></li>
+<li><a href="type_defs/#projecttypedef">ProjectTypeDef</a></li>
 <li><a href="type_defs/#createremoteaccesssessionconfigurationtypedef">CreateRemoteAccessSessionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#createremoteaccesssessionrequestrequesttypedef">CreateRemoteAccessSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createremoteaccesssessionresulttypedef">CreateRemoteAccessSessionResultTypeDef</a></li>
-<li><a href="type_defs/#createtestgridprojectrequestrequesttypedef">CreateTestGridProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtestgridprojectresulttypedef">CreateTestGridProjectResultTypeDef</a></li>
+<li><a href="type_defs/#testgridvpcconfigtypedef">TestGridVpcConfigTypeDef</a></li>
 <li><a href="type_defs/#createtestgridurlrequestrequesttypedef">CreateTestGridUrlRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtestgridurlresulttypedef">CreateTestGridUrlResultTypeDef</a></li>
 <li><a href="type_defs/#createuploadrequestrequesttypedef">CreateUploadRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createuploadresulttypedef">CreateUploadResultTypeDef</a></li>
+<li><a href="type_defs/#uploadtypedef">UploadTypeDef</a></li>
 <li><a href="type_defs/#createvpceconfigurationrequestrequesttypedef">CreateVPCEConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createvpceconfigurationresulttypedef">CreateVPCEConfigurationResultTypeDef</a></li>
+<li><a href="type_defs/#vpceconfigurationtypedef">VPCEConfigurationTypeDef</a></li>
 <li><a href="type_defs/#customerartifactpathstypedef">CustomerArtifactPathsTypeDef</a></li>
 <li><a href="type_defs/#deletedevicepoolrequestrequesttypedef">DeleteDevicePoolRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteinstanceprofilerequestrequesttypedef">DeleteInstanceProfileRequestRequestTypeDef</a></li>
@@ -36185,185 +36181,189 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteuploadrequestrequesttypedef">DeleteUploadRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevpceconfigurationrequestrequesttypedef">DeleteVPCEConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#devicefiltertypedef">DeviceFilterTypeDef</a></li>
-<li><a href="type_defs/#deviceinstancetypedef">DeviceInstanceTypeDef</a></li>
 <li><a href="type_defs/#deviceminutestypedef">DeviceMinutesTypeDef</a></li>
-<li><a href="type_defs/#devicepoolcompatibilityresulttypedef">DevicePoolCompatibilityResultTypeDef</a></li>
-<li><a href="type_defs/#devicepooltypedef">DevicePoolTypeDef</a></li>
-<li><a href="type_defs/#deviceselectionconfigurationtypedef">DeviceSelectionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#deviceselectionresulttypedef">DeviceSelectionResultTypeDef</a></li>
-<li><a href="type_defs/#devicetypedef">DeviceTypeDef</a></li>
-<li><a href="type_defs/#executionconfigurationtypedef">ExecutionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#getaccountsettingsresulttypedef">GetAccountSettingsResultTypeDef</a></li>
-<li><a href="type_defs/#getdeviceinstancerequestrequesttypedef">GetDeviceInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeviceinstanceresulttypedef">GetDeviceInstanceResultTypeDef</a></li>
-<li><a href="type_defs/#getdevicepoolcompatibilityrequestrequesttypedef">GetDevicePoolCompatibilityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdevicepoolcompatibilityresulttypedef">GetDevicePoolCompatibilityResultTypeDef</a></li>
-<li><a href="type_defs/#getdevicepoolrequestrequesttypedef">GetDevicePoolRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdevicepoolresulttypedef">GetDevicePoolResultTypeDef</a></li>
-<li><a href="type_defs/#getdevicerequestrequesttypedef">GetDeviceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeviceresulttypedef">GetDeviceResultTypeDef</a></li>
-<li><a href="type_defs/#getinstanceprofilerequestrequesttypedef">GetInstanceProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getinstanceprofileresulttypedef">GetInstanceProfileResultTypeDef</a></li>
-<li><a href="type_defs/#getjobrequestrequesttypedef">GetJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getjobresulttypedef">GetJobResultTypeDef</a></li>
-<li><a href="type_defs/#getnetworkprofilerequestrequesttypedef">GetNetworkProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getnetworkprofileresulttypedef">GetNetworkProfileResultTypeDef</a></li>
-<li><a href="type_defs/#getofferingstatusrequestgetofferingstatuspaginatetypedef">GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef</a></li>
-<li><a href="type_defs/#getofferingstatusrequestrequesttypedef">GetOfferingStatusRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getofferingstatusresulttypedef">GetOfferingStatusResultTypeDef</a></li>
-<li><a href="type_defs/#getprojectrequestrequesttypedef">GetProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getprojectresulttypedef">GetProjectResultTypeDef</a></li>
-<li><a href="type_defs/#getremoteaccesssessionrequestrequesttypedef">GetRemoteAccessSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getremoteaccesssessionresulttypedef">GetRemoteAccessSessionResultTypeDef</a></li>
-<li><a href="type_defs/#getrunrequestrequesttypedef">GetRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getrunresulttypedef">GetRunResultTypeDef</a></li>
-<li><a href="type_defs/#getsuiterequestrequesttypedef">GetSuiteRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsuiteresulttypedef">GetSuiteResultTypeDef</a></li>
-<li><a href="type_defs/#gettestgridprojectrequestrequesttypedef">GetTestGridProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettestgridprojectresulttypedef">GetTestGridProjectResultTypeDef</a></li>
-<li><a href="type_defs/#gettestgridsessionrequestrequesttypedef">GetTestGridSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettestgridsessionresulttypedef">GetTestGridSessionResultTypeDef</a></li>
-<li><a href="type_defs/#gettestrequestrequesttypedef">GetTestRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettestresulttypedef">GetTestResultTypeDef</a></li>
-<li><a href="type_defs/#getuploadrequestrequesttypedef">GetUploadRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getuploadresulttypedef">GetUploadResultTypeDef</a></li>
-<li><a href="type_defs/#getvpceconfigurationrequestrequesttypedef">GetVPCEConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getvpceconfigurationresulttypedef">GetVPCEConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#incompatibilitymessagetypedef">IncompatibilityMessageTypeDef</a></li>
+<li><a href="type_defs/#resolutiontypedef">ResolutionTypeDef</a></li>
+<li><a href="type_defs/#executionconfigurationtypedef">ExecutionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#getdeviceinstancerequestrequesttypedef">GetDeviceInstanceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#scheduleruntesttypedef">ScheduleRunTestTypeDef</a></li>
+<li><a href="type_defs/#getdevicepoolrequestrequesttypedef">GetDevicePoolRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdevicerequestrequesttypedef">GetDeviceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getinstanceprofilerequestrequesttypedef">GetInstanceProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getjobrequestrequesttypedef">GetJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getnetworkprofilerequestrequesttypedef">GetNetworkProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#getofferingstatusrequestrequesttypedef">GetOfferingStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getprojectrequestrequesttypedef">GetProjectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getremoteaccesssessionrequestrequesttypedef">GetRemoteAccessSessionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getrunrequestrequesttypedef">GetRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getsuiterequestrequesttypedef">GetSuiteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettestgridprojectrequestrequesttypedef">GetTestGridProjectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettestgridsessionrequestrequesttypedef">GetTestGridSessionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#testgridsessiontypedef">TestGridSessionTypeDef</a></li>
+<li><a href="type_defs/#gettestrequestrequesttypedef">GetTestRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getuploadrequestrequesttypedef">GetUploadRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getvpceconfigurationrequestrequesttypedef">GetVPCEConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#installtoremoteaccesssessionrequestrequesttypedef">InstallToRemoteAccessSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#installtoremoteaccesssessionresulttypedef">InstallToRemoteAccessSessionResultTypeDef</a></li>
-<li><a href="type_defs/#instanceprofiletypedef">InstanceProfileTypeDef</a></li>
-<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
-<li><a href="type_defs/#listartifactsrequestlistartifactspaginatetypedef">ListArtifactsRequestListArtifactsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listartifactsrequestrequesttypedef">ListArtifactsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listartifactsresulttypedef">ListArtifactsResultTypeDef</a></li>
-<li><a href="type_defs/#listdeviceinstancesrequestlistdeviceinstancespaginatetypedef">ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdeviceinstancesrequestrequesttypedef">ListDeviceInstancesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeviceinstancesresulttypedef">ListDeviceInstancesResultTypeDef</a></li>
-<li><a href="type_defs/#listdevicepoolsrequestlistdevicepoolspaginatetypedef">ListDevicePoolsRequestListDevicePoolsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdevicepoolsrequestrequesttypedef">ListDevicePoolsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdevicepoolsresulttypedef">ListDevicePoolsResultTypeDef</a></li>
-<li><a href="type_defs/#listdevicesrequestlistdevicespaginatetypedef">ListDevicesRequestListDevicesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdevicesrequestrequesttypedef">ListDevicesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdevicesresulttypedef">ListDevicesResultTypeDef</a></li>
-<li><a href="type_defs/#listinstanceprofilesrequestlistinstanceprofilespaginatetypedef">ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listinstanceprofilesrequestrequesttypedef">ListInstanceProfilesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listinstanceprofilesresulttypedef">ListInstanceProfilesResultTypeDef</a></li>
-<li><a href="type_defs/#listjobsrequestlistjobspaginatetypedef">ListJobsRequestListJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listjobsrequestrequesttypedef">ListJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listjobsresulttypedef">ListJobsResultTypeDef</a></li>
-<li><a href="type_defs/#listnetworkprofilesrequestlistnetworkprofilespaginatetypedef">ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listnetworkprofilesrequestrequesttypedef">ListNetworkProfilesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listnetworkprofilesresulttypedef">ListNetworkProfilesResultTypeDef</a></li>
-<li><a href="type_defs/#listofferingpromotionsrequestlistofferingpromotionspaginatetypedef">ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listofferingpromotionsrequestrequesttypedef">ListOfferingPromotionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listofferingpromotionsresulttypedef">ListOfferingPromotionsResultTypeDef</a></li>
-<li><a href="type_defs/#listofferingtransactionsrequestlistofferingtransactionspaginatetypedef">ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#offeringpromotiontypedef">OfferingPromotionTypeDef</a></li>
 <li><a href="type_defs/#listofferingtransactionsrequestrequesttypedef">ListOfferingTransactionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listofferingtransactionsresulttypedef">ListOfferingTransactionsResultTypeDef</a></li>
-<li><a href="type_defs/#listofferingsrequestlistofferingspaginatetypedef">ListOfferingsRequestListOfferingsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listofferingsrequestrequesttypedef">ListOfferingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listofferingsresulttypedef">ListOfferingsResultTypeDef</a></li>
-<li><a href="type_defs/#listprojectsrequestlistprojectspaginatetypedef">ListProjectsRequestListProjectsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listprojectsrequestrequesttypedef">ListProjectsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listprojectsresulttypedef">ListProjectsResultTypeDef</a></li>
-<li><a href="type_defs/#listremoteaccesssessionsrequestlistremoteaccesssessionspaginatetypedef">ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listremoteaccesssessionsrequestrequesttypedef">ListRemoteAccessSessionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listremoteaccesssessionsresulttypedef">ListRemoteAccessSessionsResultTypeDef</a></li>
-<li><a href="type_defs/#listrunsrequestlistrunspaginatetypedef">ListRunsRequestListRunsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrunsrequestrequesttypedef">ListRunsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrunsresulttypedef">ListRunsResultTypeDef</a></li>
-<li><a href="type_defs/#listsamplesrequestlistsamplespaginatetypedef">ListSamplesRequestListSamplesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsamplesrequestrequesttypedef">ListSamplesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsamplesresulttypedef">ListSamplesResultTypeDef</a></li>
-<li><a href="type_defs/#listsuitesrequestlistsuitespaginatetypedef">ListSuitesRequestListSuitesPaginateTypeDef</a></li>
+<li><a href="type_defs/#sampletypedef">SampleTypeDef</a></li>
 <li><a href="type_defs/#listsuitesrequestrequesttypedef">ListSuitesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsuitesresulttypedef">ListSuitesResultTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#listtestgridprojectsrequestrequesttypedef">ListTestGridProjectsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestgridprojectsresulttypedef">ListTestGridProjectsResultTypeDef</a></li>
 <li><a href="type_defs/#listtestgridsessionactionsrequestrequesttypedef">ListTestGridSessionActionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestgridsessionactionsresulttypedef">ListTestGridSessionActionsResultTypeDef</a></li>
+<li><a href="type_defs/#testgridsessionactiontypedef">TestGridSessionActionTypeDef</a></li>
 <li><a href="type_defs/#listtestgridsessionartifactsrequestrequesttypedef">ListTestGridSessionArtifactsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestgridsessionartifactsresulttypedef">ListTestGridSessionArtifactsResultTypeDef</a></li>
+<li><a href="type_defs/#testgridsessionartifacttypedef">TestGridSessionArtifactTypeDef</a></li>
 <li><a href="type_defs/#listtestgridsessionsrequestrequesttypedef">ListTestGridSessionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestgridsessionsresulttypedef">ListTestGridSessionsResultTypeDef</a></li>
-<li><a href="type_defs/#listtestsrequestlisttestspaginatetypedef">ListTestsRequestListTestsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtestsrequestrequesttypedef">ListTestsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtestsresulttypedef">ListTestsResultTypeDef</a></li>
-<li><a href="type_defs/#listuniqueproblemsrequestlistuniqueproblemspaginatetypedef">ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listuniqueproblemsrequestrequesttypedef">ListUniqueProblemsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listuniqueproblemsresulttypedef">ListUniqueProblemsResultTypeDef</a></li>
-<li><a href="type_defs/#listuploadsrequestlistuploadspaginatetypedef">ListUploadsRequestListUploadsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listuploadsrequestrequesttypedef">ListUploadsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listuploadsresulttypedef">ListUploadsResultTypeDef</a></li>
-<li><a href="type_defs/#listvpceconfigurationsrequestlistvpceconfigurationspaginatetypedef">ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listvpceconfigurationsrequestrequesttypedef">ListVPCEConfigurationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listvpceconfigurationsresulttypedef">ListVPCEConfigurationsResultTypeDef</a></li>
 <li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
 <li><a href="type_defs/#monetaryamounttypedef">MonetaryAmountTypeDef</a></li>
-<li><a href="type_defs/#networkprofiletypedef">NetworkProfileTypeDef</a></li>
-<li><a href="type_defs/#offeringpromotiontypedef">OfferingPromotionTypeDef</a></li>
-<li><a href="type_defs/#offeringstatustypedef">OfferingStatusTypeDef</a></li>
-<li><a href="type_defs/#offeringtransactiontypedef">OfferingTransactionTypeDef</a></li>
-<li><a href="type_defs/#offeringtypedef">OfferingTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#problemdetailtypedef">ProblemDetailTypeDef</a></li>
-<li><a href="type_defs/#problemtypedef">ProblemTypeDef</a></li>
-<li><a href="type_defs/#projecttypedef">ProjectTypeDef</a></li>
 <li><a href="type_defs/#purchaseofferingrequestrequesttypedef">PurchaseOfferingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#purchaseofferingresulttypedef">PurchaseOfferingResultTypeDef</a></li>
 <li><a href="type_defs/#radiostypedef">RadiosTypeDef</a></li>
-<li><a href="type_defs/#recurringchargetypedef">RecurringChargeTypeDef</a></li>
-<li><a href="type_defs/#remoteaccesssessiontypedef">RemoteAccessSessionTypeDef</a></li>
 <li><a href="type_defs/#renewofferingrequestrequesttypedef">RenewOfferingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#renewofferingresulttypedef">RenewOfferingResultTypeDef</a></li>
-<li><a href="type_defs/#resolutiontypedef">ResolutionTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
-<li><a href="type_defs/#runtypedef">RunTypeDef</a></li>
-<li><a href="type_defs/#sampletypedef">SampleTypeDef</a></li>
-<li><a href="type_defs/#schedulerunconfigurationtypedef">ScheduleRunConfigurationTypeDef</a></li>
-<li><a href="type_defs/#schedulerunrequestrequesttypedef">ScheduleRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#schedulerunresulttypedef">ScheduleRunResultTypeDef</a></li>
-<li><a href="type_defs/#scheduleruntesttypedef">ScheduleRunTestTypeDef</a></li>
 <li><a href="type_defs/#stopjobrequestrequesttypedef">StopJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopjobresulttypedef">StopJobResultTypeDef</a></li>
 <li><a href="type_defs/#stopremoteaccesssessionrequestrequesttypedef">StopRemoteAccessSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopremoteaccesssessionresulttypedef">StopRemoteAccessSessionResultTypeDef</a></li>
 <li><a href="type_defs/#stoprunrequestrequesttypedef">StopRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stoprunresulttypedef">StopRunResultTypeDef</a></li>
-<li><a href="type_defs/#suitetypedef">SuiteTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#testgridprojecttypedef">TestGridProjectTypeDef</a></li>
-<li><a href="type_defs/#testgridsessionactiontypedef">TestGridSessionActionTypeDef</a></li>
-<li><a href="type_defs/#testgridsessionartifacttypedef">TestGridSessionArtifactTypeDef</a></li>
-<li><a href="type_defs/#testgridsessiontypedef">TestGridSessionTypeDef</a></li>
-<li><a href="type_defs/#testgridvpcconfigtypedef">TestGridVpcConfigTypeDef</a></li>
-<li><a href="type_defs/#testtypedef">TestTypeDef</a></li>
-<li><a href="type_defs/#trialminutestypedef">TrialMinutesTypeDef</a></li>
-<li><a href="type_defs/#uniqueproblemtypedef">UniqueProblemTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedeviceinstancerequestrequesttypedef">UpdateDeviceInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedeviceinstanceresulttypedef">UpdateDeviceInstanceResultTypeDef</a></li>
-<li><a href="type_defs/#updatedevicepoolrequestrequesttypedef">UpdateDevicePoolRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedevicepoolresulttypedef">UpdateDevicePoolResultTypeDef</a></li>
 <li><a href="type_defs/#updateinstanceprofilerequestrequesttypedef">UpdateInstanceProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateinstanceprofileresulttypedef">UpdateInstanceProfileResultTypeDef</a></li>
 <li><a href="type_defs/#updatenetworkprofilerequestrequesttypedef">UpdateNetworkProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatenetworkprofileresulttypedef">UpdateNetworkProfileResultTypeDef</a></li>
 <li><a href="type_defs/#updateprojectrequestrequesttypedef">UpdateProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateprojectresulttypedef">UpdateProjectResultTypeDef</a></li>
-<li><a href="type_defs/#updatetestgridprojectrequestrequesttypedef">UpdateTestGridProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatetestgridprojectresulttypedef">UpdateTestGridProjectResultTypeDef</a></li>
 <li><a href="type_defs/#updateuploadrequestrequesttypedef">UpdateUploadRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateuploadresulttypedef">UpdateUploadResultTypeDef</a></li>
 <li><a href="type_defs/#updatevpceconfigurationrequestrequesttypedef">UpdateVPCEConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#accountsettingstypedef">AccountSettingsTypeDef</a></li>
+<li><a href="type_defs/#createdevicepoolrequestrequesttypedef">CreateDevicePoolRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#devicepooltypedef">DevicePoolTypeDef</a></li>
+<li><a href="type_defs/#updatedevicepoolrequestrequesttypedef">UpdateDevicePoolRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtestgridurlresulttypedef">CreateTestGridUrlResultTypeDef</a></li>
+<li><a href="type_defs/#listartifactsresulttypedef">ListArtifactsResultTypeDef</a></li>
+<li><a href="type_defs/#createinstanceprofileresulttypedef">CreateInstanceProfileResultTypeDef</a></li>
+<li><a href="type_defs/#deviceinstancetypedef">DeviceInstanceTypeDef</a></li>
+<li><a href="type_defs/#getinstanceprofileresulttypedef">GetInstanceProfileResultTypeDef</a></li>
+<li><a href="type_defs/#listinstanceprofilesresulttypedef">ListInstanceProfilesResultTypeDef</a></li>
+<li><a href="type_defs/#updateinstanceprofileresulttypedef">UpdateInstanceProfileResultTypeDef</a></li>
+<li><a href="type_defs/#createnetworkprofileresulttypedef">CreateNetworkProfileResultTypeDef</a></li>
+<li><a href="type_defs/#getnetworkprofileresulttypedef">GetNetworkProfileResultTypeDef</a></li>
+<li><a href="type_defs/#listnetworkprofilesresulttypedef">ListNetworkProfilesResultTypeDef</a></li>
+<li><a href="type_defs/#updatenetworkprofileresulttypedef">UpdateNetworkProfileResultTypeDef</a></li>
+<li><a href="type_defs/#createprojectresulttypedef">CreateProjectResultTypeDef</a></li>
+<li><a href="type_defs/#getprojectresulttypedef">GetProjectResultTypeDef</a></li>
+<li><a href="type_defs/#listprojectsresulttypedef">ListProjectsResultTypeDef</a></li>
+<li><a href="type_defs/#updateprojectresulttypedef">UpdateProjectResultTypeDef</a></li>
+<li><a href="type_defs/#createremoteaccesssessionrequestrequesttypedef">CreateRemoteAccessSessionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtestgridprojectrequestrequesttypedef">CreateTestGridProjectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#testgridprojecttypedef">TestGridProjectTypeDef</a></li>
+<li><a href="type_defs/#updatetestgridprojectrequestrequesttypedef">UpdateTestGridProjectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createuploadresulttypedef">CreateUploadResultTypeDef</a></li>
+<li><a href="type_defs/#getuploadresulttypedef">GetUploadResultTypeDef</a></li>
+<li><a href="type_defs/#installtoremoteaccesssessionresulttypedef">InstallToRemoteAccessSessionResultTypeDef</a></li>
+<li><a href="type_defs/#listuploadsresulttypedef">ListUploadsResultTypeDef</a></li>
+<li><a href="type_defs/#updateuploadresulttypedef">UpdateUploadResultTypeDef</a></li>
+<li><a href="type_defs/#createvpceconfigurationresulttypedef">CreateVPCEConfigurationResultTypeDef</a></li>
+<li><a href="type_defs/#getvpceconfigurationresulttypedef">GetVPCEConfigurationResultTypeDef</a></li>
+<li><a href="type_defs/#listvpceconfigurationsresulttypedef">ListVPCEConfigurationsResultTypeDef</a></li>
 <li><a href="type_defs/#updatevpceconfigurationresulttypedef">UpdateVPCEConfigurationResultTypeDef</a></li>
-<li><a href="type_defs/#uploadtypedef">UploadTypeDef</a></li>
-<li><a href="type_defs/#vpceconfigurationtypedef">VPCEConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deviceselectionconfigurationtypedef">DeviceSelectionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deviceselectionresulttypedef">DeviceSelectionResultTypeDef</a></li>
+<li><a href="type_defs/#listdevicesrequestrequesttypedef">ListDevicesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#suitetypedef">SuiteTypeDef</a></li>
+<li><a href="type_defs/#testtypedef">TestTypeDef</a></li>
+<li><a href="type_defs/#getofferingstatusrequestgetofferingstatuspaginatetypedef">GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef</a></li>
+<li><a href="type_defs/#listartifactsrequestlistartifactspaginatetypedef">ListArtifactsRequestListArtifactsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeviceinstancesrequestlistdeviceinstancespaginatetypedef">ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdevicepoolsrequestlistdevicepoolspaginatetypedef">ListDevicePoolsRequestListDevicePoolsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdevicesrequestlistdevicespaginatetypedef">ListDevicesRequestListDevicesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listinstanceprofilesrequestlistinstanceprofilespaginatetypedef">ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listjobsrequestlistjobspaginatetypedef">ListJobsRequestListJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listnetworkprofilesrequestlistnetworkprofilespaginatetypedef">ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listofferingpromotionsrequestlistofferingpromotionspaginatetypedef">ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listofferingtransactionsrequestlistofferingtransactionspaginatetypedef">ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listofferingsrequestlistofferingspaginatetypedef">ListOfferingsRequestListOfferingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listprojectsrequestlistprojectspaginatetypedef">ListProjectsRequestListProjectsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listremoteaccesssessionsrequestlistremoteaccesssessionspaginatetypedef">ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listrunsrequestlistrunspaginatetypedef">ListRunsRequestListRunsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listsamplesrequestlistsamplespaginatetypedef">ListSamplesRequestListSamplesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listsuitesrequestlistsuitespaginatetypedef">ListSuitesRequestListSuitesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtestsrequestlisttestspaginatetypedef">ListTestsRequestListTestsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listuniqueproblemsrequestlistuniqueproblemspaginatetypedef">ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listuploadsrequestlistuploadspaginatetypedef">ListUploadsRequestListUploadsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listvpceconfigurationsrequestlistvpceconfigurationspaginatetypedef">ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#gettestgridsessionresulttypedef">GetTestGridSessionResultTypeDef</a></li>
+<li><a href="type_defs/#listtestgridsessionsresulttypedef">ListTestGridSessionsResultTypeDef</a></li>
+<li><a href="type_defs/#listofferingpromotionsresulttypedef">ListOfferingPromotionsResultTypeDef</a></li>
+<li><a href="type_defs/#listsamplesresulttypedef">ListSamplesResultTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtestgridsessionactionsresulttypedef">ListTestGridSessionActionsResultTypeDef</a></li>
+<li><a href="type_defs/#listtestgridsessionartifactsresulttypedef">ListTestGridSessionArtifactsResultTypeDef</a></li>
+<li><a href="type_defs/#recurringchargetypedef">RecurringChargeTypeDef</a></li>
+<li><a href="type_defs/#schedulerunconfigurationtypedef">ScheduleRunConfigurationTypeDef</a></li>
+<li><a href="type_defs/#getaccountsettingsresulttypedef">GetAccountSettingsResultTypeDef</a></li>
+<li><a href="type_defs/#createdevicepoolresulttypedef">CreateDevicePoolResultTypeDef</a></li>
+<li><a href="type_defs/#getdevicepoolresulttypedef">GetDevicePoolResultTypeDef</a></li>
+<li><a href="type_defs/#listdevicepoolsresulttypedef">ListDevicePoolsResultTypeDef</a></li>
+<li><a href="type_defs/#updatedevicepoolresulttypedef">UpdateDevicePoolResultTypeDef</a></li>
+<li><a href="type_defs/#devicetypedef">DeviceTypeDef</a></li>
+<li><a href="type_defs/#getdeviceinstanceresulttypedef">GetDeviceInstanceResultTypeDef</a></li>
+<li><a href="type_defs/#listdeviceinstancesresulttypedef">ListDeviceInstancesResultTypeDef</a></li>
+<li><a href="type_defs/#updatedeviceinstanceresulttypedef">UpdateDeviceInstanceResultTypeDef</a></li>
+<li><a href="type_defs/#createtestgridprojectresulttypedef">CreateTestGridProjectResultTypeDef</a></li>
+<li><a href="type_defs/#gettestgridprojectresulttypedef">GetTestGridProjectResultTypeDef</a></li>
+<li><a href="type_defs/#listtestgridprojectsresulttypedef">ListTestGridProjectsResultTypeDef</a></li>
+<li><a href="type_defs/#updatetestgridprojectresulttypedef">UpdateTestGridProjectResultTypeDef</a></li>
+<li><a href="type_defs/#runtypedef">RunTypeDef</a></li>
+<li><a href="type_defs/#getsuiteresulttypedef">GetSuiteResultTypeDef</a></li>
+<li><a href="type_defs/#listsuitesresulttypedef">ListSuitesResultTypeDef</a></li>
+<li><a href="type_defs/#gettestresulttypedef">GetTestResultTypeDef</a></li>
+<li><a href="type_defs/#listtestsresulttypedef">ListTestsResultTypeDef</a></li>
+<li><a href="type_defs/#offeringtypedef">OfferingTypeDef</a></li>
+<li><a href="type_defs/#getdevicepoolcompatibilityrequestrequesttypedef">GetDevicePoolCompatibilityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#schedulerunrequestrequesttypedef">ScheduleRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#devicepoolcompatibilityresulttypedef">DevicePoolCompatibilityResultTypeDef</a></li>
+<li><a href="type_defs/#getdeviceresulttypedef">GetDeviceResultTypeDef</a></li>
+<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
+<li><a href="type_defs/#listdevicesresulttypedef">ListDevicesResultTypeDef</a></li>
+<li><a href="type_defs/#problemtypedef">ProblemTypeDef</a></li>
+<li><a href="type_defs/#remoteaccesssessiontypedef">RemoteAccessSessionTypeDef</a></li>
+<li><a href="type_defs/#getrunresulttypedef">GetRunResultTypeDef</a></li>
+<li><a href="type_defs/#listrunsresulttypedef">ListRunsResultTypeDef</a></li>
+<li><a href="type_defs/#schedulerunresulttypedef">ScheduleRunResultTypeDef</a></li>
+<li><a href="type_defs/#stoprunresulttypedef">StopRunResultTypeDef</a></li>
+<li><a href="type_defs/#listofferingsresulttypedef">ListOfferingsResultTypeDef</a></li>
+<li><a href="type_defs/#offeringstatustypedef">OfferingStatusTypeDef</a></li>
+<li><a href="type_defs/#getdevicepoolcompatibilityresulttypedef">GetDevicePoolCompatibilityResultTypeDef</a></li>
+<li><a href="type_defs/#getjobresulttypedef">GetJobResultTypeDef</a></li>
+<li><a href="type_defs/#listjobsresulttypedef">ListJobsResultTypeDef</a></li>
+<li><a href="type_defs/#stopjobresulttypedef">StopJobResultTypeDef</a></li>
+<li><a href="type_defs/#uniqueproblemtypedef">UniqueProblemTypeDef</a></li>
+<li><a href="type_defs/#createremoteaccesssessionresulttypedef">CreateRemoteAccessSessionResultTypeDef</a></li>
+<li><a href="type_defs/#getremoteaccesssessionresulttypedef">GetRemoteAccessSessionResultTypeDef</a></li>
+<li><a href="type_defs/#listremoteaccesssessionsresulttypedef">ListRemoteAccessSessionsResultTypeDef</a></li>
+<li><a href="type_defs/#stopremoteaccesssessionresulttypedef">StopRemoteAccessSessionResultTypeDef</a></li>
+<li><a href="type_defs/#getofferingstatusresulttypedef">GetOfferingStatusResultTypeDef</a></li>
+<li><a href="type_defs/#offeringtransactiontypedef">OfferingTransactionTypeDef</a></li>
+<li><a href="type_defs/#listuniqueproblemsresulttypedef">ListUniqueProblemsResultTypeDef</a></li>
+<li><a href="type_defs/#listofferingtransactionsresulttypedef">ListOfferingTransactionsResultTypeDef</a></li>
+<li><a href="type_defs/#purchaseofferingresulttypedef">PurchaseOfferingResultTypeDef</a></li>
+<li><a href="type_defs/#renewofferingresulttypedef">RenewOfferingResultTypeDef</a></li>
 </ul>
 
               
@@ -36433,7 +36433,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

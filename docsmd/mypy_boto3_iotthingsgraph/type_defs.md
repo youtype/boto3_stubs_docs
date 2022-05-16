@@ -26,129 +26,6 @@ class AssociateEntityToThingRequestRequestTypeDef(TypedDict):
     namespaceVersion: NotRequired[int],
 ```
 
-## CreateFlowTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateRequestRequestTypeDef
-
-def get_value() -> CreateFlowTemplateRequestRequestTypeDef:
-    return {
-        "definition": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFlowTemplateRequestRequestTypeDef(TypedDict):
-    definition: DefinitionDocumentTypeDef,  # (1)
-    compatibleNamespaceVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## CreateFlowTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateResponseTypeDef
-
-def get_value() -> CreateFlowTemplateResponseTypeDef:
-    return {
-        "summary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFlowTemplateResponseTypeDef(TypedDict):
-    summary: FlowTemplateSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSystemInstanceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceRequestRequestTypeDef
-
-def get_value() -> CreateSystemInstanceRequestRequestTypeDef:
-    return {
-        "definition": ...,
-        "target": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSystemInstanceRequestRequestTypeDef(TypedDict):
-    definition: DefinitionDocumentTypeDef,  # (1)
-    target: DeploymentTargetType,  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    greengrassGroupName: NotRequired[str],
-    s3BucketName: NotRequired[str],
-    metricsConfiguration: NotRequired[MetricsConfigurationTypeDef],  # (4)
-    flowActionsRoleArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-2. See [:material-code-brackets: DeploymentTargetType](./literals.md#deploymenttargettype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
-## CreateSystemInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceResponseTypeDef
-
-def get_value() -> CreateSystemInstanceResponseTypeDef:
-    return {
-        "summary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSystemInstanceResponseTypeDef(TypedDict):
-    summary: SystemInstanceSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSystemTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateRequestRequestTypeDef
-
-def get_value() -> CreateSystemTemplateRequestRequestTypeDef:
-    return {
-        "definition": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSystemTemplateRequestRequestTypeDef(TypedDict):
-    definition: DefinitionDocumentTypeDef,  # (1)
-    compatibleNamespaceVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## CreateSystemTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateResponseTypeDef
-
-def get_value() -> CreateSystemTemplateResponseTypeDef:
-    return {
-        "summary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSystemTemplateResponseTypeDef(TypedDict):
-    summary: SystemTemplateSummaryTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefinitionDocumentTypeDef
 
 ```python title="Usage Example"
@@ -168,6 +45,129 @@ class DefinitionDocumentTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DefinitionLanguageType](./literals.md#definitionlanguagetype) 
+## FlowTemplateSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateSummaryTypeDef
+
+def get_value() -> FlowTemplateSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class FlowTemplateSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    revisionNumber: NotRequired[int],
+    createdAt: NotRequired[datetime],
+```
+
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## MetricsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import MetricsConfigurationTypeDef
+
+def get_value() -> MetricsConfigurationTypeDef:
+    return {
+        "cloudMetricEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class MetricsConfigurationTypeDef(TypedDict):
+    cloudMetricEnabled: NotRequired[bool],
+    metricRuleRoleArn: NotRequired[str],
+```
+
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
+
+## SystemInstanceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceSummaryTypeDef
+
+def get_value() -> SystemInstanceSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class SystemInstanceSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    status: NotRequired[SystemInstanceDeploymentStatusType],  # (1)
+    target: NotRequired[DeploymentTargetType],  # (2)
+    greengrassGroupName: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    updatedAt: NotRequired[datetime],
+    greengrassGroupId: NotRequired[str],
+    greengrassGroupVersionId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SystemInstanceDeploymentStatusType](./literals.md#systeminstancedeploymentstatustype) 
+2. See [:material-code-brackets: DeploymentTargetType](./literals.md#deploymenttargettype) 
+## SystemTemplateSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateSummaryTypeDef
+
+def get_value() -> SystemTemplateSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class SystemTemplateSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    revisionNumber: NotRequired[int],
+    createdAt: NotRequired[datetime],
+```
+
 ## DeleteFlowTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -184,27 +184,6 @@ class DeleteFlowTemplateRequestRequestTypeDef(TypedDict):
     id: str,
 ```
 
-## DeleteNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import DeleteNamespaceResponseTypeDef
-
-def get_value() -> DeleteNamespaceResponseTypeDef:
-    return {
-        "namespaceArn": ...,
-        "namespaceName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteNamespaceResponseTypeDef(TypedDict):
-    namespaceArn: str,
-    namespaceName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSystemInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -270,28 +249,6 @@ class DeploySystemInstanceRequestRequestTypeDef(TypedDict):
     id: NotRequired[str],
 ```
 
-## DeploySystemInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceResponseTypeDef
-
-def get_value() -> DeploySystemInstanceResponseTypeDef:
-    return {
-        "summary": ...,
-        "greengrassDeploymentId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeploySystemInstanceResponseTypeDef(TypedDict):
-    summary: SystemInstanceSummaryTypeDef,  # (1)
-    greengrassDeploymentId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeprecateFlowTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -340,33 +297,6 @@ class DescribeNamespaceRequestRequestTypeDef(TypedDict):
     namespaceName: NotRequired[str],
 ```
 
-## DescribeNamespaceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceResponseTypeDef
-
-def get_value() -> DescribeNamespaceResponseTypeDef:
-    return {
-        "namespaceArn": ...,
-        "namespaceName": ...,
-        "trackingNamespaceName": ...,
-        "trackingNamespaceVersion": ...,
-        "namespaceVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNamespaceResponseTypeDef(TypedDict):
-    namespaceArn: str,
-    namespaceName: str,
-    trackingNamespaceName: str,
-    trackingNamespaceVersion: int,
-    namespaceVersion: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DissociateEntityFromThingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -386,28 +316,6 @@ class DissociateEntityFromThingRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
-## EntityDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import EntityDescriptionTypeDef
-
-def get_value() -> EntityDescriptionTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class EntityDescriptionTypeDef(TypedDict):
-    id: NotRequired[str],
-    arn: NotRequired[str],
-    type: NotRequired[EntityTypeType],  # (1)
-    createdAt: NotRequired[datetime],
-    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
-2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
 ## EntityFilterTypeDef
 
 ```python title="Usage Example"
@@ -468,6 +376,443 @@ class FlowExecutionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FlowExecutionStatusType](./literals.md#flowexecutionstatustype) 
+## FlowTemplateFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateFilterTypeDef
+
+def get_value() -> FlowTemplateFilterTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class FlowTemplateFilterTypeDef(TypedDict):
+    name: FlowTemplateFilterNameType,  # (1)
+    value: Sequence[str],
+```
+
+1. See [:material-code-brackets: FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype) 
+## GetEntitiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesRequestRequestTypeDef
+
+def get_value() -> GetEntitiesRequestRequestTypeDef:
+    return {
+        "ids": ...,
+    }
+```
+
+```python title="Definition"
+class GetEntitiesRequestRequestTypeDef(TypedDict):
+    ids: Sequence[str],
+    namespaceVersion: NotRequired[int],
+```
+
+## GetFlowTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRequestRequestTypeDef
+
+def get_value() -> GetFlowTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetFlowTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    revisionNumber: NotRequired[int],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## GetFlowTemplateRevisionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsRequestRequestTypeDef
+
+def get_value() -> GetFlowTemplateRevisionsRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetFlowTemplateRevisionsRequestRequestTypeDef(TypedDict):
+    id: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetSystemInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceRequestRequestTypeDef
+
+def get_value() -> GetSystemInstanceRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemInstanceRequestRequestTypeDef(TypedDict):
+    id: str,
+```
+
+## GetSystemTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRequestRequestTypeDef
+
+def get_value() -> GetSystemTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    revisionNumber: NotRequired[int],
+```
+
+## GetSystemTemplateRevisionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsRequestRequestTypeDef
+
+def get_value() -> GetSystemTemplateRevisionsRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemTemplateRevisionsRequestRequestTypeDef(TypedDict):
+    id: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetUploadStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusRequestRequestTypeDef
+
+def get_value() -> GetUploadStatusRequestRequestTypeDef:
+    return {
+        "uploadId": ...,
+    }
+```
+
+```python title="Definition"
+class GetUploadStatusRequestRequestTypeDef(TypedDict):
+    uploadId: str,
+```
+
+## ListFlowExecutionMessagesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesRequestRequestTypeDef
+
+def get_value() -> ListFlowExecutionMessagesRequestRequestTypeDef:
+    return {
+        "flowExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlowExecutionMessagesRequestRequestTypeDef(TypedDict):
+    flowExecutionId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## SearchFlowExecutionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsRequestRequestTypeDef
+
+def get_value() -> SearchFlowExecutionsRequestRequestTypeDef:
+    return {
+        "systemInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchFlowExecutionsRequestRequestTypeDef(TypedDict):
+    systemInstanceId: str,
+    flowExecutionId: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## SystemInstanceFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceFilterTypeDef
+
+def get_value() -> SystemInstanceFilterTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SystemInstanceFilterTypeDef(TypedDict):
+    name: NotRequired[SystemInstanceFilterNameType],  # (1)
+    value: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype) 
+## SystemTemplateFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateFilterTypeDef
+
+def get_value() -> SystemTemplateFilterTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class SystemTemplateFilterTypeDef(TypedDict):
+    name: SystemTemplateFilterNameType,  # (1)
+    value: Sequence[str],
+```
+
+1. See [:material-code-brackets: SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype) 
+## SearchThingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchThingsRequestRequestTypeDef
+
+def get_value() -> SearchThingsRequestRequestTypeDef:
+    return {
+        "entityId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchThingsRequestRequestTypeDef(TypedDict):
+    entityId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    namespaceVersion: NotRequired[int],
+```
+
+## ThingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ThingTypeDef
+
+def get_value() -> ThingTypeDef:
+    return {
+        "thingArn": ...,
+    }
+```
+
+```python title="Definition"
+class ThingTypeDef(TypedDict):
+    thingArn: NotRequired[str],
+    thingName: NotRequired[str],
+```
+
+## UndeploySystemInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceRequestRequestTypeDef
+
+def get_value() -> UndeploySystemInstanceRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class UndeploySystemInstanceRequestRequestTypeDef(TypedDict):
+    id: NotRequired[str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## CreateFlowTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateRequestRequestTypeDef
+
+def get_value() -> CreateFlowTemplateRequestRequestTypeDef:
+    return {
+        "definition": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFlowTemplateRequestRequestTypeDef(TypedDict):
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## CreateSystemTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateRequestRequestTypeDef
+
+def get_value() -> CreateSystemTemplateRequestRequestTypeDef:
+    return {
+        "definition": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSystemTemplateRequestRequestTypeDef(TypedDict):
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## EntityDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import EntityDescriptionTypeDef
+
+def get_value() -> EntityDescriptionTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class EntityDescriptionTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    type: NotRequired[EntityTypeType],  # (1)
+    createdAt: NotRequired[datetime],
+    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## UpdateFlowTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateFlowTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+        "definition": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFlowTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## UpdateSystemTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateSystemTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+        "definition": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSystemTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## UploadEntityDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsRequestRequestTypeDef
+
+def get_value() -> UploadEntityDefinitionsRequestRequestTypeDef:
+    return {
+        "document": ...,
+    }
+```
+
+```python title="Definition"
+class UploadEntityDefinitionsRequestRequestTypeDef(TypedDict):
+    document: NotRequired[DefinitionDocumentTypeDef],  # (1)
+    syncWithPublicNamespace: NotRequired[bool],
+    deprecateExistingEntities: NotRequired[bool],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
 ## FlowTemplateDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -488,154 +833,74 @@ class FlowTemplateDescriptionTypeDef(TypedDict):
 
 1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
 2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## FlowTemplateFilterTypeDef
+## CreateFlowTemplateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateFilterTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateResponseTypeDef
 
-def get_value() -> FlowTemplateFilterTypeDef:
+def get_value() -> CreateFlowTemplateResponseTypeDef:
     return {
-        "name": ...,
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class FlowTemplateFilterTypeDef(TypedDict):
-    name: FlowTemplateFilterNameType,  # (1)
-    value: Sequence[str],
-```
-
-1. See [:material-code-brackets: FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype) 
-## FlowTemplateSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateSummaryTypeDef
-
-def get_value() -> FlowTemplateSummaryTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class FlowTemplateSummaryTypeDef(TypedDict):
-    id: NotRequired[str],
-    arn: NotRequired[str],
-    revisionNumber: NotRequired[int],
-    createdAt: NotRequired[datetime],
-```
-
-## GetEntitiesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesRequestRequestTypeDef
-
-def get_value() -> GetEntitiesRequestRequestTypeDef:
-    return {
-        "ids": ...,
-    }
-```
-
-```python title="Definition"
-class GetEntitiesRequestRequestTypeDef(TypedDict):
-    ids: Sequence[str],
-    namespaceVersion: NotRequired[int],
-```
-
-## GetEntitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesResponseTypeDef
-
-def get_value() -> GetEntitiesResponseTypeDef:
-    return {
-        "descriptions": ...,
+        "summary": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetEntitiesResponseTypeDef(TypedDict):
-    descriptions: List[EntityDescriptionTypeDef],  # (1)
+class CreateFlowTemplateResponseTypeDef(TypedDict):
+    summary: FlowTemplateSummaryTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef) 
+1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetFlowTemplateRequestRequestTypeDef
+## DeleteNamespaceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRequestRequestTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DeleteNamespaceResponseTypeDef
 
-def get_value() -> GetFlowTemplateRequestRequestTypeDef:
+def get_value() -> DeleteNamespaceResponseTypeDef:
     return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetFlowTemplateRequestRequestTypeDef(TypedDict):
-    id: str,
-    revisionNumber: NotRequired[int],
-```
-
-## GetFlowTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateResponseTypeDef
-
-def get_value() -> GetFlowTemplateResponseTypeDef:
-    return {
-        "description": ...,
+        "namespaceArn": ...,
+        "namespaceName": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetFlowTemplateResponseTypeDef(TypedDict):
-    description: FlowTemplateDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DeleteNamespaceResponseTypeDef(TypedDict):
+    namespaceArn: str,
+    namespaceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: FlowTemplateDescriptionTypeDef](./type_defs.md#flowtemplatedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNamespaceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceResponseTypeDef
 
-def get_value() -> GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef:
+def get_value() -> DescribeNamespaceResponseTypeDef:
     return {
-        "id": ...,
+        "namespaceArn": ...,
+        "namespaceName": ...,
+        "trackingNamespaceName": ...,
+        "trackingNamespaceVersion": ...,
+        "namespaceVersion": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef(TypedDict):
-    id: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class DescribeNamespaceResponseTypeDef(TypedDict):
+    namespaceArn: str,
+    namespaceName: str,
+    trackingNamespaceName: str,
+    trackingNamespaceVersion: int,
+    namespaceVersion: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetFlowTemplateRevisionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsRequestRequestTypeDef
-
-def get_value() -> GetFlowTemplateRevisionsRequestRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetFlowTemplateRevisionsRequestRequestTypeDef(TypedDict):
-    id: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFlowTemplateRevisionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -687,153 +952,6 @@ class GetNamespaceDeletionStatusResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: NamespaceDeletionStatusType](./literals.md#namespacedeletionstatustype) 
 2. See [:material-code-brackets: NamespaceDeletionStatusErrorCodesType](./literals.md#namespacedeletionstatuserrorcodestype) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSystemInstanceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceRequestRequestTypeDef
-
-def get_value() -> GetSystemInstanceRequestRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemInstanceRequestRequestTypeDef(TypedDict):
-    id: str,
-```
-
-## GetSystemInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceResponseTypeDef
-
-def get_value() -> GetSystemInstanceResponseTypeDef:
-    return {
-        "description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemInstanceResponseTypeDef(TypedDict):
-    description: SystemInstanceDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemInstanceDescriptionTypeDef](./type_defs.md#systeminstancedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSystemTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRequestRequestTypeDef
-
-def get_value() -> GetSystemTemplateRequestRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemTemplateRequestRequestTypeDef(TypedDict):
-    id: str,
-    revisionNumber: NotRequired[int],
-```
-
-## GetSystemTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateResponseTypeDef
-
-def get_value() -> GetSystemTemplateResponseTypeDef:
-    return {
-        "description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemTemplateResponseTypeDef(TypedDict):
-    description: SystemTemplateDescriptionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemTemplateDescriptionTypeDef](./type_defs.md#systemtemplatedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef
-
-def get_value() -> GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef(TypedDict):
-    id: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetSystemTemplateRevisionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsRequestRequestTypeDef
-
-def get_value() -> GetSystemTemplateRevisionsRequestRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemTemplateRevisionsRequestRequestTypeDef(TypedDict):
-    id: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## GetSystemTemplateRevisionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsResponseTypeDef
-
-def get_value() -> GetSystemTemplateRevisionsResponseTypeDef:
-    return {
-        "summaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSystemTemplateRevisionsResponseTypeDef(TypedDict):
-    summaries: List[SystemTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetUploadStatusRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusRequestRequestTypeDef
-
-def get_value() -> GetUploadStatusRequestRequestTypeDef:
-    return {
-        "uploadId": ...,
-    }
-```
-
-```python title="Definition"
-class GetUploadStatusRequestRequestTypeDef(TypedDict):
-    uploadId: str,
-```
-
 ## GetUploadStatusResponseTypeDef
 
 ```python title="Usage Example"
@@ -866,100 +984,94 @@ class GetUploadStatusResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: UploadStatusType](./literals.md#uploadstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef
+## SearchFlowTemplatesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesResponseTypeDef
 
-def get_value() -> ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef:
+def get_value() -> SearchFlowTemplatesResponseTypeDef:
     return {
-        "flowExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef(TypedDict):
-    flowExecutionId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFlowExecutionMessagesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesRequestRequestTypeDef
-
-def get_value() -> ListFlowExecutionMessagesRequestRequestTypeDef:
-    return {
-        "flowExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFlowExecutionMessagesRequestRequestTypeDef(TypedDict):
-    flowExecutionId: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListFlowExecutionMessagesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesResponseTypeDef
-
-def get_value() -> ListFlowExecutionMessagesResponseTypeDef:
-    return {
-        "messages": ...,
+        "summaries": ...,
         "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListFlowExecutionMessagesResponseTypeDef(TypedDict):
-    messages: List[FlowExecutionMessageTypeDef],  # (1)
+class SearchFlowTemplatesResponseTypeDef(TypedDict):
+    summaries: List[FlowTemplateSummaryTypeDef],  # (1)
     nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FlowExecutionMessageTypeDef](./type_defs.md#flowexecutionmessagetypedef) 
+1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+## UpdateFlowTemplateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateResponseTypeDef
 
-def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+def get_value() -> UpdateFlowTemplateResponseTypeDef:
     return {
-        "resourceArn": ...,
+        "summary": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
-    resourceArn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class UpdateFlowTemplateResponseTypeDef(TypedDict):
+    summary: FlowTemplateSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTagsForResourceRequestRequestTypeDef
+1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UploadEntityDefinitionsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceRequestRequestTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsResponseTypeDef
 
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+def get_value() -> UploadEntityDefinitionsResponseTypeDef:
     return {
-        "resourceArn": ...,
+        "uploadId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
+class UploadEntityDefinitionsResponseTypeDef(TypedDict):
+    uploadId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSystemInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceRequestRequestTypeDef
+
+def get_value() -> CreateSystemInstanceRequestRequestTypeDef:
+    return {
+        "definition": ...,
+        "target": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSystemInstanceRequestRequestTypeDef(TypedDict):
+    definition: DefinitionDocumentTypeDef,  # (1)
+    target: DeploymentTargetType,  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    greengrassGroupName: NotRequired[str],
+    s3BucketName: NotRequired[str],
+    metricsConfiguration: NotRequired[MetricsConfigurationTypeDef],  # (4)
+    flowActionsRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-brackets: DeploymentTargetType](./literals.md#deploymenttargettype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -982,65 +1094,239 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MetricsConfigurationTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import MetricsConfigurationTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import TagResourceRequestRequestTypeDef
 
-def get_value() -> MetricsConfigurationTypeDef:
+def get_value() -> TagResourceRequestRequestTypeDef:
     return {
-        "cloudMetricEnabled": ...,
+        "resourceArn": ...,
+        "tags": ...,
     }
 ```
 
 ```python title="Definition"
-class MetricsConfigurationTypeDef(TypedDict):
-    cloudMetricEnabled: NotRequired[bool],
-    metricRuleRoleArn: NotRequired[str],
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
 ```
 
-## PaginatorConfigTypeDef
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateSystemInstanceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceResponseTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> CreateSystemInstanceResponseTypeDef:
     return {
-        "MaxItems": ...,
+        "summary": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class CreateSystemInstanceResponseTypeDef(TypedDict):
+    summary: SystemInstanceSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## ResponseMetadataTypeDef
+1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeploySystemInstanceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> DeploySystemInstanceResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "summary": ...,
+        "greengrassDeploymentId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class DeploySystemInstanceResponseTypeDef(TypedDict):
+    summary: SystemInstanceSummaryTypeDef,  # (1)
+    greengrassDeploymentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchSystemInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesResponseTypeDef
+
+def get_value() -> SearchSystemInstancesResponseTypeDef:
+    return {
+        "summaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSystemInstancesResponseTypeDef(TypedDict):
+    summaries: List[SystemInstanceSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UndeploySystemInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceResponseTypeDef
+
+def get_value() -> UndeploySystemInstanceResponseTypeDef:
+    return {
+        "summary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UndeploySystemInstanceResponseTypeDef(TypedDict):
+    summary: SystemInstanceSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSystemTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateResponseTypeDef
+
+def get_value() -> CreateSystemTemplateResponseTypeDef:
+    return {
+        "summary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSystemTemplateResponseTypeDef(TypedDict):
+    summary: SystemTemplateSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSystemTemplateRevisionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsResponseTypeDef
+
+def get_value() -> GetSystemTemplateRevisionsResponseTypeDef:
+    return {
+        "summaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemTemplateRevisionsResponseTypeDef(TypedDict):
+    summaries: List[SystemTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchSystemTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesResponseTypeDef
+
+def get_value() -> SearchSystemTemplatesResponseTypeDef:
+    return {
+        "summaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSystemTemplatesResponseTypeDef(TypedDict):
+    summaries: List[SystemTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SystemTemplateDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateDescriptionTypeDef
+
+def get_value() -> SystemTemplateDescriptionTypeDef:
+    return {
+        "summary": ...,
+    }
+```
+
+```python title="Definition"
+class SystemTemplateDescriptionTypeDef(TypedDict):
+    summary: NotRequired[SystemTemplateSummaryTypeDef],  # (1)
+    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
+    validatedNamespaceVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+## UpdateSystemTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateResponseTypeDef
+
+def get_value() -> UpdateSystemTemplateResponseTypeDef:
+    return {
+        "summary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSystemTemplateResponseTypeDef(TypedDict):
+    summary: SystemTemplateSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SystemInstanceDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceDescriptionTypeDef
+
+def get_value() -> SystemInstanceDescriptionTypeDef:
+    return {
+        "summary": ...,
+    }
+```
+
+```python title="Definition"
+class SystemInstanceDescriptionTypeDef(TypedDict):
+    summary: NotRequired[SystemInstanceSummaryTypeDef],  # (1)
+    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
+    s3BucketName: NotRequired[str],
+    metricsConfiguration: NotRequired[MetricsConfigurationTypeDef],  # (3)
+    validatedNamespaceVersion: NotRequired[int],
+    validatedDependencyRevisions: NotRequired[List[DependencyRevisionTypeDef]],  # (4)
+    flowActionsRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+3. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
+4. See [:material-code-braces: DependencyRevisionTypeDef](./type_defs.md#dependencyrevisiontypedef) 
 ## SearchEntitiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1063,92 +1349,28 @@ class SearchEntitiesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
 2. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
-## SearchEntitiesRequestSearchEntitiesPaginateTypeDef
+## ListFlowExecutionMessagesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesRequestSearchEntitiesPaginateTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesResponseTypeDef
 
-def get_value() -> SearchEntitiesRequestSearchEntitiesPaginateTypeDef:
+def get_value() -> ListFlowExecutionMessagesResponseTypeDef:
     return {
-        "entityTypes": ...,
-    }
-```
-
-```python title="Definition"
-class SearchEntitiesRequestSearchEntitiesPaginateTypeDef(TypedDict):
-    entityTypes: Sequence[EntityTypeType],  # (1)
-    filters: NotRequired[Sequence[EntityFilterTypeDef]],  # (2)
-    namespaceVersion: NotRequired[int],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
-2. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchEntitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesResponseTypeDef
-
-def get_value() -> SearchEntitiesResponseTypeDef:
-    return {
-        "descriptions": ...,
+        "messages": ...,
         "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SearchEntitiesResponseTypeDef(TypedDict):
-    descriptions: List[EntityDescriptionTypeDef],  # (1)
+class ListFlowExecutionMessagesResponseTypeDef(TypedDict):
+    messages: List[FlowExecutionMessageTypeDef],  # (1)
     nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef) 
+1. See [:material-code-braces: FlowExecutionMessageTypeDef](./type_defs.md#flowexecutionmessagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchFlowExecutionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsRequestRequestTypeDef
-
-def get_value() -> SearchFlowExecutionsRequestRequestTypeDef:
-    return {
-        "systemInstanceId": ...,
-    }
-```
-
-```python title="Definition"
-class SearchFlowExecutionsRequestRequestTypeDef(TypedDict):
-    systemInstanceId: str,
-    flowExecutionId: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef
-
-def get_value() -> SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef:
-    return {
-        "systemInstanceId": ...,
-    }
-```
-
-```python title="Definition"
-class SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef(TypedDict):
-    systemInstanceId: str,
-    flowExecutionId: NotRequired[str],
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchFlowExecutionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1190,6 +1412,121 @@ class SearchFlowTemplatesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef) 
+## GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef
+
+def get_value() -> GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef(TypedDict):
+    id: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef
+
+def get_value() -> GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef(TypedDict):
+    id: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef
+
+def get_value() -> ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef:
+    return {
+        "flowExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef(TypedDict):
+    flowExecutionId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchEntitiesRequestSearchEntitiesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesRequestSearchEntitiesPaginateTypeDef
+
+def get_value() -> SearchEntitiesRequestSearchEntitiesPaginateTypeDef:
+    return {
+        "entityTypes": ...,
+    }
+```
+
+```python title="Definition"
+class SearchEntitiesRequestSearchEntitiesPaginateTypeDef(TypedDict):
+    entityTypes: Sequence[EntityTypeType],  # (1)
+    filters: NotRequired[Sequence[EntityFilterTypeDef]],  # (2)
+    namespaceVersion: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef
+
+def get_value() -> SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef:
+    return {
+        "systemInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef(TypedDict):
+    systemInstanceId: str,
+    flowExecutionId: NotRequired[str],
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchFlowTemplatesRequestSearchFlowTemplatesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1209,28 +1546,25 @@ class SearchFlowTemplatesRequestSearchFlowTemplatesPaginateTypeDef(TypedDict):
 
 1. See [:material-code-braces: FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchFlowTemplatesResponseTypeDef
+## SearchThingsRequestSearchThingsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchThingsRequestSearchThingsPaginateTypeDef
 
-def get_value() -> SearchFlowTemplatesResponseTypeDef:
+def get_value() -> SearchThingsRequestSearchThingsPaginateTypeDef:
     return {
-        "summaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "entityId": ...,
     }
 ```
 
 ```python title="Definition"
-class SearchFlowTemplatesResponseTypeDef(TypedDict):
-    summaries: List[FlowTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SearchThingsRequestSearchThingsPaginateTypeDef(TypedDict):
+    entityId: str,
+    namespaceVersion: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchSystemInstancesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1269,28 +1603,6 @@ class SearchSystemInstancesRequestSearchSystemInstancesPaginateTypeDef(TypedDict
 
 1. See [:material-code-braces: SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchSystemInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesResponseTypeDef
-
-def get_value() -> SearchSystemInstancesResponseTypeDef:
-    return {
-        "summaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchSystemInstancesResponseTypeDef(TypedDict):
-    summaries: List[SystemInstanceSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchSystemTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1329,66 +1641,6 @@ class SearchSystemTemplatesRequestSearchSystemTemplatesPaginateTypeDef(TypedDict
 
 1. See [:material-code-braces: SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchSystemTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesResponseTypeDef
-
-def get_value() -> SearchSystemTemplatesResponseTypeDef:
-    return {
-        "summaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchSystemTemplatesResponseTypeDef(TypedDict):
-    summaries: List[SystemTemplateSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchThingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchThingsRequestRequestTypeDef
-
-def get_value() -> SearchThingsRequestRequestTypeDef:
-    return {
-        "entityId": ...,
-    }
-```
-
-```python title="Definition"
-class SearchThingsRequestRequestTypeDef(TypedDict):
-    entityId: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-    namespaceVersion: NotRequired[int],
-```
-
-## SearchThingsRequestSearchThingsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SearchThingsRequestSearchThingsPaginateTypeDef
-
-def get_value() -> SearchThingsRequestSearchThingsPaginateTypeDef:
-    return {
-        "entityId": ...,
-    }
-```
-
-```python title="Definition"
-class SearchThingsRequestSearchThingsPaginateTypeDef(TypedDict):
-    entityId: str,
-    namespaceVersion: NotRequired[int],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchThingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1411,357 +1663,105 @@ class SearchThingsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThingTypeDef](./type_defs.md#thingtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SystemInstanceDescriptionTypeDef
+## GetEntitiesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceDescriptionTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesResponseTypeDef
 
-def get_value() -> SystemInstanceDescriptionTypeDef:
+def get_value() -> GetEntitiesResponseTypeDef:
     return {
-        "summary": ...,
-    }
-```
-
-```python title="Definition"
-class SystemInstanceDescriptionTypeDef(TypedDict):
-    summary: NotRequired[SystemInstanceSummaryTypeDef],  # (1)
-    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
-    s3BucketName: NotRequired[str],
-    metricsConfiguration: NotRequired[MetricsConfigurationTypeDef],  # (3)
-    validatedNamespaceVersion: NotRequired[int],
-    validatedDependencyRevisions: NotRequired[List[DependencyRevisionTypeDef]],  # (4)
-    flowActionsRoleArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
-2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-3. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
-4. See [:material-code-braces: DependencyRevisionTypeDef](./type_defs.md#dependencyrevisiontypedef) 
-## SystemInstanceFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceFilterTypeDef
-
-def get_value() -> SystemInstanceFilterTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SystemInstanceFilterTypeDef(TypedDict):
-    name: NotRequired[SystemInstanceFilterNameType],  # (1)
-    value: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype) 
-## SystemInstanceSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceSummaryTypeDef
-
-def get_value() -> SystemInstanceSummaryTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class SystemInstanceSummaryTypeDef(TypedDict):
-    id: NotRequired[str],
-    arn: NotRequired[str],
-    status: NotRequired[SystemInstanceDeploymentStatusType],  # (1)
-    target: NotRequired[DeploymentTargetType],  # (2)
-    greengrassGroupName: NotRequired[str],
-    createdAt: NotRequired[datetime],
-    updatedAt: NotRequired[datetime],
-    greengrassGroupId: NotRequired[str],
-    greengrassGroupVersionId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SystemInstanceDeploymentStatusType](./literals.md#systeminstancedeploymentstatustype) 
-2. See [:material-code-brackets: DeploymentTargetType](./literals.md#deploymenttargettype) 
-## SystemTemplateDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateDescriptionTypeDef
-
-def get_value() -> SystemTemplateDescriptionTypeDef:
-    return {
-        "summary": ...,
-    }
-```
-
-```python title="Definition"
-class SystemTemplateDescriptionTypeDef(TypedDict):
-    summary: NotRequired[SystemTemplateSummaryTypeDef],  # (1)
-    definition: NotRequired[DefinitionDocumentTypeDef],  # (2)
-    validatedNamespaceVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
-2. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## SystemTemplateFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateFilterTypeDef
-
-def get_value() -> SystemTemplateFilterTypeDef:
-    return {
-        "name": ...,
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class SystemTemplateFilterTypeDef(TypedDict):
-    name: SystemTemplateFilterNameType,  # (1)
-    value: Sequence[str],
-```
-
-1. See [:material-code-brackets: SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype) 
-## SystemTemplateSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateSummaryTypeDef
-
-def get_value() -> SystemTemplateSummaryTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class SystemTemplateSummaryTypeDef(TypedDict):
-    id: NotRequired[str],
-    arn: NotRequired[str],
-    revisionNumber: NotRequired[int],
-    createdAt: NotRequired[datetime],
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "key": ...,
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    key: str,
-    value: str,
-```
-
-## ThingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import ThingTypeDef
-
-def get_value() -> ThingTypeDef:
-    return {
-        "thingArn": ...,
-    }
-```
-
-```python title="Definition"
-class ThingTypeDef(TypedDict):
-    thingArn: NotRequired[str],
-    thingName: NotRequired[str],
-```
-
-## UndeploySystemInstanceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceRequestRequestTypeDef
-
-def get_value() -> UndeploySystemInstanceRequestRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class UndeploySystemInstanceRequestRequestTypeDef(TypedDict):
-    id: NotRequired[str],
-```
-
-## UndeploySystemInstanceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceResponseTypeDef
-
-def get_value() -> UndeploySystemInstanceResponseTypeDef:
-    return {
-        "summary": ...,
+        "descriptions": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UndeploySystemInstanceResponseTypeDef(TypedDict):
-    summary: SystemInstanceSummaryTypeDef,  # (1)
+class GetEntitiesResponseTypeDef(TypedDict):
+    descriptions: List[EntityDescriptionTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef) 
+1. See [:material-code-braces: EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UntagResourceRequestRequestTypeDef
+## SearchEntitiesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesResponseTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> SearchEntitiesResponseTypeDef:
     return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateFlowTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateFlowTemplateRequestRequestTypeDef:
-    return {
-        "id": ...,
-        "definition": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFlowTemplateRequestRequestTypeDef(TypedDict):
-    id: str,
-    definition: DefinitionDocumentTypeDef,  # (1)
-    compatibleNamespaceVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## UpdateFlowTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateResponseTypeDef
-
-def get_value() -> UpdateFlowTemplateResponseTypeDef:
-    return {
-        "summary": ...,
+        "descriptions": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFlowTemplateResponseTypeDef(TypedDict):
-    summary: FlowTemplateSummaryTypeDef,  # (1)
+class SearchEntitiesResponseTypeDef(TypedDict):
+    descriptions: List[EntityDescriptionTypeDef],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef) 
+1. See [:material-code-braces: EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateSystemTemplateRequestRequestTypeDef
+## GetFlowTemplateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateRequestRequestTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateResponseTypeDef
 
-def get_value() -> UpdateSystemTemplateRequestRequestTypeDef:
+def get_value() -> GetFlowTemplateResponseTypeDef:
     return {
-        "id": ...,
-        "definition": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSystemTemplateRequestRequestTypeDef(TypedDict):
-    id: str,
-    definition: DefinitionDocumentTypeDef,  # (1)
-    compatibleNamespaceVersion: NotRequired[int],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## UpdateSystemTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateResponseTypeDef
-
-def get_value() -> UpdateSystemTemplateResponseTypeDef:
-    return {
-        "summary": ...,
+        "description": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSystemTemplateResponseTypeDef(TypedDict):
-    summary: SystemTemplateSummaryTypeDef,  # (1)
+class GetFlowTemplateResponseTypeDef(TypedDict):
+    description: FlowTemplateDescriptionTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef) 
+1. See [:material-code-braces: FlowTemplateDescriptionTypeDef](./type_defs.md#flowtemplatedescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UploadEntityDefinitionsRequestRequestTypeDef
+## GetSystemTemplateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsRequestRequestTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateResponseTypeDef
 
-def get_value() -> UploadEntityDefinitionsRequestRequestTypeDef:
+def get_value() -> GetSystemTemplateResponseTypeDef:
     return {
-        "document": ...,
-    }
-```
-
-```python title="Definition"
-class UploadEntityDefinitionsRequestRequestTypeDef(TypedDict):
-    document: NotRequired[DefinitionDocumentTypeDef],  # (1)
-    syncWithPublicNamespace: NotRequired[bool],
-    deprecateExistingEntities: NotRequired[bool],
-```
-
-1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
-## UploadEntityDefinitionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsResponseTypeDef
-
-def get_value() -> UploadEntityDefinitionsResponseTypeDef:
-    return {
-        "uploadId": ...,
+        "description": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UploadEntityDefinitionsResponseTypeDef(TypedDict):
-    uploadId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GetSystemTemplateResponseTypeDef(TypedDict):
+    description: SystemTemplateDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: SystemTemplateDescriptionTypeDef](./type_defs.md#systemtemplatedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSystemInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceResponseTypeDef
+
+def get_value() -> GetSystemInstanceResponseTypeDef:
+    return {
+        "description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSystemInstanceResponseTypeDef(TypedDict):
+    description: SystemInstanceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SystemInstanceDescriptionTypeDef](./type_defs.md#systeminstancedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

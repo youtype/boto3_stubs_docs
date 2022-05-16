@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36139,125 +36139,127 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_elbv2.type_defs</span> <span class="kn">import</span> <span class="n">ActionTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_elbv2.type_defs</span> <span class="kn">import</span> <span class="n">AuthenticateCognitoActionConfigTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AuthenticateCognitoActionConfigTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;UserPoolArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;UserPoolClientId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="s2">&quot;UserPoolDomain&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
-<li><a href="type_defs/#addlistenercertificatesinputrequesttypedef">AddListenerCertificatesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#addlistenercertificatesoutputtypedef">AddListenerCertificatesOutputTypeDef</a></li>
-<li><a href="type_defs/#addtagsinputrequesttypedef">AddTagsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#authenticatecognitoactionconfigtypedef">AuthenticateCognitoActionConfigTypeDef</a></li>
 <li><a href="type_defs/#authenticateoidcactionconfigtypedef">AuthenticateOidcActionConfigTypeDef</a></li>
-<li><a href="type_defs/#availabilityzonetypedef">AvailabilityZoneTypeDef</a></li>
+<li><a href="type_defs/#fixedresponseactionconfigtypedef">FixedResponseActionConfigTypeDef</a></li>
+<li><a href="type_defs/#redirectactionconfigtypedef">RedirectActionConfigTypeDef</a></li>
 <li><a href="type_defs/#certificatetypedef">CertificateTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#loadbalanceraddresstypedef">LoadBalancerAddressTypeDef</a></li>
 <li><a href="type_defs/#ciphertypedef">CipherTypeDef</a></li>
-<li><a href="type_defs/#createlistenerinputrequesttypedef">CreateListenerInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createlisteneroutputtypedef">CreateListenerOutputTypeDef</a></li>
-<li><a href="type_defs/#createloadbalancerinputrequesttypedef">CreateLoadBalancerInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createloadbalanceroutputtypedef">CreateLoadBalancerOutputTypeDef</a></li>
-<li><a href="type_defs/#createruleinputrequesttypedef">CreateRuleInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createruleoutputtypedef">CreateRuleOutputTypeDef</a></li>
-<li><a href="type_defs/#createtargetgroupinputrequesttypedef">CreateTargetGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createtargetgroupoutputtypedef">CreateTargetGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#subnetmappingtypedef">SubnetMappingTypeDef</a></li>
+<li><a href="type_defs/#matchertypedef">MatcherTypeDef</a></li>
 <li><a href="type_defs/#deletelistenerinputrequesttypedef">DeleteListenerInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteloadbalancerinputrequesttypedef">DeleteLoadBalancerInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteruleinputrequesttypedef">DeleteRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetargetgroupinputrequesttypedef">DeleteTargetGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#deregistertargetsinputrequesttypedef">DeregisterTargetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef">DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef</a></li>
+<li><a href="type_defs/#targetdescriptiontypedef">TargetDescriptionTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describeaccountlimitsinputrequesttypedef">DescribeAccountLimitsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeaccountlimitsoutputtypedef">DescribeAccountLimitsOutputTypeDef</a></li>
-<li><a href="type_defs/#describelistenercertificatesinputdescribelistenercertificatespaginatetypedef">DescribeListenerCertificatesInputDescribeListenerCertificatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#limittypedef">LimitTypeDef</a></li>
 <li><a href="type_defs/#describelistenercertificatesinputrequesttypedef">DescribeListenerCertificatesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describelistenercertificatesoutputtypedef">DescribeListenerCertificatesOutputTypeDef</a></li>
-<li><a href="type_defs/#describelistenersinputdescribelistenerspaginatetypedef">DescribeListenersInputDescribeListenersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describelistenersinputrequesttypedef">DescribeListenersInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describelistenersoutputtypedef">DescribeListenersOutputTypeDef</a></li>
 <li><a href="type_defs/#describeloadbalancerattributesinputrequesttypedef">DescribeLoadBalancerAttributesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancerattributesoutputtypedef">DescribeLoadBalancerAttributesOutputTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancersinputdescribeloadbalancerspaginatetypedef">DescribeLoadBalancersInputDescribeLoadBalancersPaginateTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancersinputloadbalanceravailablewaittypedef">DescribeLoadBalancersInputLoadBalancerAvailableWaitTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancersinputloadbalancerexistswaittypedef">DescribeLoadBalancersInputLoadBalancerExistsWaitTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancersinputloadbalancersdeletedwaittypedef">DescribeLoadBalancersInputLoadBalancersDeletedWaitTypeDef</a></li>
+<li><a href="type_defs/#loadbalancerattributetypedef">LoadBalancerAttributeTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describeloadbalancersinputrequesttypedef">DescribeLoadBalancersInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describeloadbalancersoutputtypedef">DescribeLoadBalancersOutputTypeDef</a></li>
-<li><a href="type_defs/#describerulesinputdescriberulespaginatetypedef">DescribeRulesInputDescribeRulesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describerulesinputrequesttypedef">DescribeRulesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describerulesoutputtypedef">DescribeRulesOutputTypeDef</a></li>
-<li><a href="type_defs/#describesslpoliciesinputdescribesslpoliciespaginatetypedef">DescribeSSLPoliciesInputDescribeSSLPoliciesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describesslpoliciesinputrequesttypedef">DescribeSSLPoliciesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describesslpoliciesoutputtypedef">DescribeSSLPoliciesOutputTypeDef</a></li>
 <li><a href="type_defs/#describetagsinputrequesttypedef">DescribeTagsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describetagsoutputtypedef">DescribeTagsOutputTypeDef</a></li>
 <li><a href="type_defs/#describetargetgroupattributesinputrequesttypedef">DescribeTargetGroupAttributesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describetargetgroupattributesoutputtypedef">DescribeTargetGroupAttributesOutputTypeDef</a></li>
-<li><a href="type_defs/#describetargetgroupsinputdescribetargetgroupspaginatetypedef">DescribeTargetGroupsInputDescribeTargetGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#targetgroupattributetypedef">TargetGroupAttributeTypeDef</a></li>
 <li><a href="type_defs/#describetargetgroupsinputrequesttypedef">DescribeTargetGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describetargetgroupsoutputtypedef">DescribeTargetGroupsOutputTypeDef</a></li>
-<li><a href="type_defs/#describetargethealthinputrequesttypedef">DescribeTargetHealthInputRequestTypeDef</a></li>
-<li><a href="type_defs/#describetargethealthinputtargetderegisteredwaittypedef">DescribeTargetHealthInputTargetDeregisteredWaitTypeDef</a></li>
-<li><a href="type_defs/#describetargethealthinputtargetinservicewaittypedef">DescribeTargetHealthInputTargetInServiceWaitTypeDef</a></li>
-<li><a href="type_defs/#describetargethealthoutputtypedef">DescribeTargetHealthOutputTypeDef</a></li>
-<li><a href="type_defs/#fixedresponseactionconfigtypedef">FixedResponseActionConfigTypeDef</a></li>
-<li><a href="type_defs/#forwardactionconfigtypedef">ForwardActionConfigTypeDef</a></li>
+<li><a href="type_defs/#targetgroupstickinessconfigtypedef">TargetGroupStickinessConfigTypeDef</a></li>
+<li><a href="type_defs/#targetgrouptupletypedef">TargetGroupTupleTypeDef</a></li>
 <li><a href="type_defs/#hostheaderconditionconfigtypedef">HostHeaderConditionConfigTypeDef</a></li>
 <li><a href="type_defs/#httpheaderconditionconfigtypedef">HttpHeaderConditionConfigTypeDef</a></li>
 <li><a href="type_defs/#httprequestmethodconditionconfigtypedef">HttpRequestMethodConditionConfigTypeDef</a></li>
-<li><a href="type_defs/#limittypedef">LimitTypeDef</a></li>
-<li><a href="type_defs/#listenertypedef">ListenerTypeDef</a></li>
-<li><a href="type_defs/#loadbalanceraddresstypedef">LoadBalancerAddressTypeDef</a></li>
-<li><a href="type_defs/#loadbalancerattributetypedef">LoadBalancerAttributeTypeDef</a></li>
 <li><a href="type_defs/#loadbalancerstatetypedef">LoadBalancerStateTypeDef</a></li>
-<li><a href="type_defs/#loadbalancertypedef">LoadBalancerTypeDef</a></li>
-<li><a href="type_defs/#matchertypedef">MatcherTypeDef</a></li>
-<li><a href="type_defs/#modifylistenerinputrequesttypedef">ModifyListenerInputRequestTypeDef</a></li>
-<li><a href="type_defs/#modifylisteneroutputtypedef">ModifyListenerOutputTypeDef</a></li>
+<li><a href="type_defs/#pathpatternconditionconfigtypedef">PathPatternConditionConfigTypeDef</a></li>
+<li><a href="type_defs/#querystringkeyvaluepairtypedef">QueryStringKeyValuePairTypeDef</a></li>
+<li><a href="type_defs/#removetagsinputrequesttypedef">RemoveTagsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#sourceipconditionconfigtypedef">SourceIpConditionConfigTypeDef</a></li>
+<li><a href="type_defs/#ruleprioritypairtypedef">RulePriorityPairTypeDef</a></li>
+<li><a href="type_defs/#setipaddresstypeinputrequesttypedef">SetIpAddressTypeInputRequestTypeDef</a></li>
+<li><a href="type_defs/#setsecuritygroupsinputrequesttypedef">SetSecurityGroupsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#targethealthtypedef">TargetHealthTypeDef</a></li>
+<li><a href="type_defs/#addlistenercertificatesinputrequesttypedef">AddListenerCertificatesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#removelistenercertificatesinputrequesttypedef">RemoveListenerCertificatesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#addlistenercertificatesoutputtypedef">AddListenerCertificatesOutputTypeDef</a></li>
+<li><a href="type_defs/#describelistenercertificatesoutputtypedef">DescribeListenerCertificatesOutputTypeDef</a></li>
+<li><a href="type_defs/#setipaddresstypeoutputtypedef">SetIpAddressTypeOutputTypeDef</a></li>
+<li><a href="type_defs/#setsecuritygroupsoutputtypedef">SetSecurityGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#addtagsinputrequesttypedef">AddTagsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#tagdescriptiontypedef">TagDescriptionTypeDef</a></li>
+<li><a href="type_defs/#availabilityzonetypedef">AvailabilityZoneTypeDef</a></li>
+<li><a href="type_defs/#sslpolicytypedef">SslPolicyTypeDef</a></li>
+<li><a href="type_defs/#createloadbalancerinputrequesttypedef">CreateLoadBalancerInputRequestTypeDef</a></li>
+<li><a href="type_defs/#setsubnetsinputrequesttypedef">SetSubnetsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#createtargetgroupinputrequesttypedef">CreateTargetGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#modifytargetgroupinputrequesttypedef">ModifyTargetGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#targetgrouptypedef">TargetGroupTypeDef</a></li>
+<li><a href="type_defs/#deregistertargetsinputrequesttypedef">DeregisterTargetsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#describetargethealthinputrequesttypedef">DescribeTargetHealthInputRequestTypeDef</a></li>
+<li><a href="type_defs/#registertargetsinputrequesttypedef">RegisterTargetsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef">DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describelistenercertificatesinputdescribelistenercertificatespaginatetypedef">DescribeListenerCertificatesInputDescribeListenerCertificatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describelistenersinputdescribelistenerspaginatetypedef">DescribeListenersInputDescribeListenersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancersinputdescribeloadbalancerspaginatetypedef">DescribeLoadBalancersInputDescribeLoadBalancersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describerulesinputdescriberulespaginatetypedef">DescribeRulesInputDescribeRulesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describesslpoliciesinputdescribesslpoliciespaginatetypedef">DescribeSSLPoliciesInputDescribeSSLPoliciesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describetargetgroupsinputdescribetargetgroupspaginatetypedef">DescribeTargetGroupsInputDescribeTargetGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeaccountlimitsoutputtypedef">DescribeAccountLimitsOutputTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancerattributesoutputtypedef">DescribeLoadBalancerAttributesOutputTypeDef</a></li>
 <li><a href="type_defs/#modifyloadbalancerattributesinputrequesttypedef">ModifyLoadBalancerAttributesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#modifyloadbalancerattributesoutputtypedef">ModifyLoadBalancerAttributesOutputTypeDef</a></li>
-<li><a href="type_defs/#modifyruleinputrequesttypedef">ModifyRuleInputRequestTypeDef</a></li>
-<li><a href="type_defs/#modifyruleoutputtypedef">ModifyRuleOutputTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancersinputloadbalanceravailablewaittypedef">DescribeLoadBalancersInputLoadBalancerAvailableWaitTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancersinputloadbalancerexistswaittypedef">DescribeLoadBalancersInputLoadBalancerExistsWaitTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancersinputloadbalancersdeletedwaittypedef">DescribeLoadBalancersInputLoadBalancersDeletedWaitTypeDef</a></li>
+<li><a href="type_defs/#describetargethealthinputtargetderegisteredwaittypedef">DescribeTargetHealthInputTargetDeregisteredWaitTypeDef</a></li>
+<li><a href="type_defs/#describetargethealthinputtargetinservicewaittypedef">DescribeTargetHealthInputTargetInServiceWaitTypeDef</a></li>
+<li><a href="type_defs/#describetargetgroupattributesoutputtypedef">DescribeTargetGroupAttributesOutputTypeDef</a></li>
 <li><a href="type_defs/#modifytargetgroupattributesinputrequesttypedef">ModifyTargetGroupAttributesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#modifytargetgroupattributesoutputtypedef">ModifyTargetGroupAttributesOutputTypeDef</a></li>
-<li><a href="type_defs/#modifytargetgroupinputrequesttypedef">ModifyTargetGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#modifytargetgroupoutputtypedef">ModifyTargetGroupOutputTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#pathpatternconditionconfigtypedef">PathPatternConditionConfigTypeDef</a></li>
+<li><a href="type_defs/#forwardactionconfigtypedef">ForwardActionConfigTypeDef</a></li>
 <li><a href="type_defs/#querystringconditionconfigtypedef">QueryStringConditionConfigTypeDef</a></li>
-<li><a href="type_defs/#querystringkeyvaluepairtypedef">QueryStringKeyValuePairTypeDef</a></li>
-<li><a href="type_defs/#redirectactionconfigtypedef">RedirectActionConfigTypeDef</a></li>
-<li><a href="type_defs/#registertargetsinputrequesttypedef">RegisterTargetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#removelistenercertificatesinputrequesttypedef">RemoveListenerCertificatesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#removetagsinputrequesttypedef">RemoveTagsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#ruleconditiontypedef">RuleConditionTypeDef</a></li>
-<li><a href="type_defs/#ruleprioritypairtypedef">RulePriorityPairTypeDef</a></li>
-<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
-<li><a href="type_defs/#setipaddresstypeinputrequesttypedef">SetIpAddressTypeInputRequestTypeDef</a></li>
-<li><a href="type_defs/#setipaddresstypeoutputtypedef">SetIpAddressTypeOutputTypeDef</a></li>
 <li><a href="type_defs/#setruleprioritiesinputrequesttypedef">SetRulePrioritiesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#setruleprioritiesoutputtypedef">SetRulePrioritiesOutputTypeDef</a></li>
-<li><a href="type_defs/#setsecuritygroupsinputrequesttypedef">SetSecurityGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#setsecuritygroupsoutputtypedef">SetSecurityGroupsOutputTypeDef</a></li>
-<li><a href="type_defs/#setsubnetsinputrequesttypedef">SetSubnetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#setsubnetsoutputtypedef">SetSubnetsOutputTypeDef</a></li>
-<li><a href="type_defs/#sourceipconditionconfigtypedef">SourceIpConditionConfigTypeDef</a></li>
-<li><a href="type_defs/#sslpolicytypedef">SslPolicyTypeDef</a></li>
-<li><a href="type_defs/#subnetmappingtypedef">SubnetMappingTypeDef</a></li>
-<li><a href="type_defs/#tagdescriptiontypedef">TagDescriptionTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#targetdescriptiontypedef">TargetDescriptionTypeDef</a></li>
-<li><a href="type_defs/#targetgroupattributetypedef">TargetGroupAttributeTypeDef</a></li>
-<li><a href="type_defs/#targetgroupstickinessconfigtypedef">TargetGroupStickinessConfigTypeDef</a></li>
-<li><a href="type_defs/#targetgrouptupletypedef">TargetGroupTupleTypeDef</a></li>
-<li><a href="type_defs/#targetgrouptypedef">TargetGroupTypeDef</a></li>
 <li><a href="type_defs/#targethealthdescriptiontypedef">TargetHealthDescriptionTypeDef</a></li>
-<li><a href="type_defs/#targethealthtypedef">TargetHealthTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#describetagsoutputtypedef">DescribeTagsOutputTypeDef</a></li>
+<li><a href="type_defs/#loadbalancertypedef">LoadBalancerTypeDef</a></li>
+<li><a href="type_defs/#setsubnetsoutputtypedef">SetSubnetsOutputTypeDef</a></li>
+<li><a href="type_defs/#describesslpoliciesoutputtypedef">DescribeSSLPoliciesOutputTypeDef</a></li>
+<li><a href="type_defs/#createtargetgroupoutputtypedef">CreateTargetGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#describetargetgroupsoutputtypedef">DescribeTargetGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#modifytargetgroupoutputtypedef">ModifyTargetGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
+<li><a href="type_defs/#ruleconditiontypedef">RuleConditionTypeDef</a></li>
+<li><a href="type_defs/#describetargethealthoutputtypedef">DescribeTargetHealthOutputTypeDef</a></li>
+<li><a href="type_defs/#createloadbalanceroutputtypedef">CreateLoadBalancerOutputTypeDef</a></li>
+<li><a href="type_defs/#describeloadbalancersoutputtypedef">DescribeLoadBalancersOutputTypeDef</a></li>
+<li><a href="type_defs/#createlistenerinputrequesttypedef">CreateListenerInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listenertypedef">ListenerTypeDef</a></li>
+<li><a href="type_defs/#modifylistenerinputrequesttypedef">ModifyListenerInputRequestTypeDef</a></li>
+<li><a href="type_defs/#createruleinputrequesttypedef">CreateRuleInputRequestTypeDef</a></li>
+<li><a href="type_defs/#modifyruleinputrequesttypedef">ModifyRuleInputRequestTypeDef</a></li>
+<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
+<li><a href="type_defs/#createlisteneroutputtypedef">CreateListenerOutputTypeDef</a></li>
+<li><a href="type_defs/#describelistenersoutputtypedef">DescribeListenersOutputTypeDef</a></li>
+<li><a href="type_defs/#modifylisteneroutputtypedef">ModifyListenerOutputTypeDef</a></li>
+<li><a href="type_defs/#createruleoutputtypedef">CreateRuleOutputTypeDef</a></li>
+<li><a href="type_defs/#describerulesoutputtypedef">DescribeRulesOutputTypeDef</a></li>
+<li><a href="type_defs/#modifyruleoutputtypedef">ModifyRuleOutputTypeDef</a></li>
+<li><a href="type_defs/#setruleprioritiesoutputtypedef">SetRulePrioritiesOutputTypeDef</a></li>
 </ul>
 
               
@@ -36327,7 +36329,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

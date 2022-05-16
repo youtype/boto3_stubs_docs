@@ -25,32 +25,24 @@ class AccessEndpointTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AccessEndpointTypeType](./literals.md#accessendpointtypetype) 
-## AppBlockTypeDef
+## S3LocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import AppBlockTypeDef
+from mypy_boto3_appstream.type_defs import S3LocationTypeDef
 
-def get_value() -> AppBlockTypeDef:
+def get_value() -> S3LocationTypeDef:
     return {
-        "Name": ...,
-        "Arn": ...,
-        "SetupScriptDetails": ...,
+        "S3Bucket": ...,
+        "S3Key": ...,
     }
 ```
 
 ```python title="Definition"
-class AppBlockTypeDef(TypedDict):
-    Name: str,
-    Arn: str,
-    SetupScriptDetails: ScriptDetailsTypeDef,  # (2)
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    SourceS3Location: NotRequired[S3LocationTypeDef],  # (1)
-    CreatedTime: NotRequired[datetime],
+class S3LocationTypeDef(TypedDict):
+    S3Bucket: str,
+    S3Key: str,
 ```
 
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-2. See [:material-code-braces: ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) 
 ## ApplicationFleetAssociationTypeDef
 
 ```python title="Usage Example"
@@ -104,38 +96,6 @@ class ApplicationSettingsTypeDef(TypedDict):
     SettingsGroup: NotRequired[str],
 ```
 
-## ApplicationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ApplicationTypeDef
-
-def get_value() -> ApplicationTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ApplicationTypeDef(TypedDict):
-    Name: NotRequired[str],
-    DisplayName: NotRequired[str],
-    IconURL: NotRequired[str],
-    LaunchPath: NotRequired[str],
-    LaunchParameters: NotRequired[str],
-    Enabled: NotRequired[bool],
-    Metadata: NotRequired[Dict[str, str]],
-    WorkingDirectory: NotRequired[str],
-    Description: NotRequired[str],
-    Arn: NotRequired[str],
-    AppBlockArn: NotRequired[str],
-    IconS3Location: NotRequired[S3LocationTypeDef],  # (1)
-    Platforms: NotRequired[List[PlatformTypeType]],  # (2)
-    InstanceFamilies: NotRequired[List[str]],
-    CreatedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
 ## AssociateApplicationFleetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -154,26 +114,30 @@ class AssociateApplicationFleetRequestRequestTypeDef(TypedDict):
     ApplicationArn: str,
 ```
 
-## AssociateApplicationFleetResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import AssociateApplicationFleetResultTypeDef
+from mypy_boto3_appstream.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateApplicationFleetResultTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ApplicationFleetAssociation": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateApplicationFleetResultTypeDef(TypedDict):
-    ApplicationFleetAssociation: ApplicationFleetAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateApplicationToEntitlementRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -212,80 +176,28 @@ class AssociateFleetRequestRequestTypeDef(TypedDict):
     StackName: str,
 ```
 
-## BatchAssociateUserStackRequestRequestTypeDef
+## UserStackAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import BatchAssociateUserStackRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import UserStackAssociationTypeDef
 
-def get_value() -> BatchAssociateUserStackRequestRequestTypeDef:
+def get_value() -> UserStackAssociationTypeDef:
     return {
-        "UserStackAssociations": ...,
+        "StackName": ...,
+        "UserName": ...,
+        "AuthenticationType": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchAssociateUserStackRequestRequestTypeDef(TypedDict):
-    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
+class UserStackAssociationTypeDef(TypedDict):
+    StackName: str,
+    UserName: str,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    SendEmailNotification: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
-## BatchAssociateUserStackResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import BatchAssociateUserStackResultTypeDef
-
-def get_value() -> BatchAssociateUserStackResultTypeDef:
-    return {
-        "errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchAssociateUserStackResultTypeDef(TypedDict):
-    errors: List[UserStackAssociationErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchDisassociateUserStackRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackRequestRequestTypeDef
-
-def get_value() -> BatchDisassociateUserStackRequestRequestTypeDef:
-    return {
-        "UserStackAssociations": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDisassociateUserStackRequestRequestTypeDef(TypedDict):
-    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
-## BatchDisassociateUserStackResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackResultTypeDef
-
-def get_value() -> BatchDisassociateUserStackResultTypeDef:
-    return {
-        "errors": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDisassociateUserStackResultTypeDef(TypedDict):
-    errors: List[UserStackAssociationErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 ## ComputeCapacityStatusTypeDef
 
 ```python title="Usage Example"
@@ -342,324 +254,76 @@ class CopyImageRequestRequestTypeDef(TypedDict):
     DestinationImageDescription: NotRequired[str],
 ```
 
-## CopyImageResponseTypeDef
+## ServiceAccountCredentialsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CopyImageResponseTypeDef
+from mypy_boto3_appstream.type_defs import ServiceAccountCredentialsTypeDef
 
-def get_value() -> CopyImageResponseTypeDef:
+def get_value() -> ServiceAccountCredentialsTypeDef:
     return {
-        "DestinationImageName": ...,
-        "ResponseMetadata": ...,
+        "AccountName": ...,
+        "AccountPassword": ...,
     }
 ```
 
 ```python title="Definition"
-class CopyImageResponseTypeDef(TypedDict):
-    DestinationImageName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ServiceAccountCredentialsTypeDef(TypedDict):
+    AccountName: str,
+    AccountPassword: str,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateAppBlockRequestRequestTypeDef
+## EntitlementAttributeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateAppBlockRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import EntitlementAttributeTypeDef
 
-def get_value() -> CreateAppBlockRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "SourceS3Location": ...,
-        "SetupScriptDetails": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppBlockRequestRequestTypeDef(TypedDict):
-    Name: str,
-    SourceS3Location: S3LocationTypeDef,  # (1)
-    SetupScriptDetails: ScriptDetailsTypeDef,  # (2)
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    Tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-2. See [:material-code-braces: ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) 
-## CreateAppBlockResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateAppBlockResultTypeDef
-
-def get_value() -> CreateAppBlockResultTypeDef:
-    return {
-        "AppBlock": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAppBlockResultTypeDef(TypedDict):
-    AppBlock: AppBlockTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppBlockTypeDef](./type_defs.md#appblocktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateApplicationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateApplicationRequestRequestTypeDef
-
-def get_value() -> CreateApplicationRequestRequestTypeDef:
+def get_value() -> EntitlementAttributeTypeDef:
     return {
         "Name": ...,
-        "IconS3Location": ...,
-        "LaunchPath": ...,
-        "Platforms": ...,
-        "InstanceFamilies": ...,
-        "AppBlockArn": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateApplicationRequestRequestTypeDef(TypedDict):
+class EntitlementAttributeTypeDef(TypedDict):
     Name: str,
-    IconS3Location: S3LocationTypeDef,  # (1)
-    LaunchPath: str,
-    Platforms: Sequence[PlatformTypeType],  # (2)
-    InstanceFamilies: Sequence[str],
-    AppBlockArn: str,
-    DisplayName: NotRequired[str],
-    Description: NotRequired[str],
-    WorkingDirectory: NotRequired[str],
-    LaunchParameters: NotRequired[str],
-    Tags: NotRequired[Mapping[str, str]],
+    Value: str,
 ```
 
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
-## CreateApplicationResultTypeDef
+## DomainJoinInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateApplicationResultTypeDef
+from mypy_boto3_appstream.type_defs import DomainJoinInfoTypeDef
 
-def get_value() -> CreateApplicationResultTypeDef:
-    return {
-        "Application": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateApplicationResultTypeDef(TypedDict):
-    Application: ApplicationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDirectoryConfigRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateDirectoryConfigRequestRequestTypeDef
-
-def get_value() -> CreateDirectoryConfigRequestRequestTypeDef:
+def get_value() -> DomainJoinInfoTypeDef:
     return {
         "DirectoryName": ...,
-        "OrganizationalUnitDistinguishedNames": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDirectoryConfigRequestRequestTypeDef(TypedDict):
-    DirectoryName: str,
-    OrganizationalUnitDistinguishedNames: Sequence[str],
-    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+class DomainJoinInfoTypeDef(TypedDict):
+    DirectoryName: NotRequired[str],
+    OrganizationalUnitDistinguishedName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
-## CreateDirectoryConfigResultTypeDef
+## VpcConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateDirectoryConfigResultTypeDef
+from mypy_boto3_appstream.type_defs import VpcConfigTypeDef
 
-def get_value() -> CreateDirectoryConfigResultTypeDef:
+def get_value() -> VpcConfigTypeDef:
     return {
-        "DirectoryConfig": ...,
-        "ResponseMetadata": ...,
+        "SubnetIds": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDirectoryConfigResultTypeDef(TypedDict):
-    DirectoryConfig: DirectoryConfigTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VpcConfigTypeDef(TypedDict):
+    SubnetIds: NotRequired[Sequence[str]],
+    SecurityGroupIds: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateEntitlementRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateEntitlementRequestRequestTypeDef
-
-def get_value() -> CreateEntitlementRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "StackName": ...,
-        "AppVisibility": ...,
-        "Attributes": ...,
-    }
-```
-
-```python title="Definition"
-class CreateEntitlementRequestRequestTypeDef(TypedDict):
-    Name: str,
-    StackName: str,
-    AppVisibility: AppVisibilityType,  # (1)
-    Attributes: Sequence[EntitlementAttributeTypeDef],  # (2)
-    Description: NotRequired[str],
-```
-
-1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
-2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
-## CreateEntitlementResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateEntitlementResultTypeDef
-
-def get_value() -> CreateEntitlementResultTypeDef:
-    return {
-        "Entitlement": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateEntitlementResultTypeDef(TypedDict):
-    Entitlement: EntitlementTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFleetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateFleetRequestRequestTypeDef
-
-def get_value() -> CreateFleetRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "InstanceType": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFleetRequestRequestTypeDef(TypedDict):
-    Name: str,
-    InstanceType: str,
-    ImageName: NotRequired[str],
-    ImageArn: NotRequired[str],
-    FleetType: NotRequired[FleetTypeType],  # (1)
-    ComputeCapacity: NotRequired[ComputeCapacityTypeDef],  # (2)
-    VpcConfig: NotRequired[VpcConfigTypeDef],  # (3)
-    MaxUserDurationInSeconds: NotRequired[int],
-    DisconnectTimeoutInSeconds: NotRequired[int],
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    EnableDefaultInternetAccess: NotRequired[bool],
-    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (4)
-    Tags: NotRequired[Mapping[str, str]],
-    IdleDisconnectTimeoutInSeconds: NotRequired[int],
-    IamRoleArn: NotRequired[str],
-    StreamView: NotRequired[StreamViewType],  # (5)
-    Platform: NotRequired[PlatformTypeType],  # (6)
-    MaxConcurrentSessions: NotRequired[int],
-    UsbDeviceFilterStrings: NotRequired[Sequence[str]],
-    SessionScriptS3Location: NotRequired[S3LocationTypeDef],  # (7)
-```
-
-1. See [:material-code-brackets: FleetTypeType](./literals.md#fleettypetype) 
-2. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
-3. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-4. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
-5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
-6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
-7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-## CreateFleetResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateFleetResultTypeDef
-
-def get_value() -> CreateFleetResultTypeDef:
-    return {
-        "Fleet": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFleetResultTypeDef(TypedDict):
-    Fleet: FleetTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateImageBuilderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateImageBuilderRequestRequestTypeDef
-
-def get_value() -> CreateImageBuilderRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "InstanceType": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageBuilderRequestRequestTypeDef(TypedDict):
-    Name: str,
-    InstanceType: str,
-    ImageName: NotRequired[str],
-    ImageArn: NotRequired[str],
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
-    IamRoleArn: NotRequired[str],
-    EnableDefaultInternetAccess: NotRequired[bool],
-    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (2)
-    AppstreamAgentVersion: NotRequired[str],
-    Tags: NotRequired[Mapping[str, str]],
-    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-2. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
-3. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-## CreateImageBuilderResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateImageBuilderResultTypeDef
-
-def get_value() -> CreateImageBuilderResultTypeDef:
-    return {
-        "ImageBuilder": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImageBuilderResultTypeDef(TypedDict):
-    ImageBuilder: ImageBuilderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateImageBuilderStreamingURLRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -677,77 +341,45 @@ class CreateImageBuilderStreamingURLRequestRequestTypeDef(TypedDict):
     Validity: NotRequired[int],
 ```
 
-## CreateImageBuilderStreamingURLResultTypeDef
+## StorageConnectorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateImageBuilderStreamingURLResultTypeDef
+from mypy_boto3_appstream.type_defs import StorageConnectorTypeDef
 
-def get_value() -> CreateImageBuilderStreamingURLResultTypeDef:
+def get_value() -> StorageConnectorTypeDef:
     return {
-        "StreamingURL": ...,
-        "Expires": ...,
-        "ResponseMetadata": ...,
+        "ConnectorType": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateImageBuilderStreamingURLResultTypeDef(TypedDict):
-    StreamingURL: str,
-    Expires: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class StorageConnectorTypeDef(TypedDict):
+    ConnectorType: StorageConnectorTypeType,  # (1)
+    ResourceIdentifier: NotRequired[str],
+    Domains: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateStackRequestRequestTypeDef
+1. See [:material-code-brackets: StorageConnectorTypeType](./literals.md#storageconnectortypetype) 
+## UserSettingTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateStackRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import UserSettingTypeDef
 
-def get_value() -> CreateStackRequestRequestTypeDef:
+def get_value() -> UserSettingTypeDef:
     return {
-        "Name": ...,
+        "Action": ...,
+        "Permission": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateStackRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    StorageConnectors: NotRequired[Sequence[StorageConnectorTypeDef]],  # (1)
-    RedirectURL: NotRequired[str],
-    FeedbackURL: NotRequired[str],
-    UserSettings: NotRequired[Sequence[UserSettingTypeDef]],  # (2)
-    ApplicationSettings: NotRequired[ApplicationSettingsTypeDef],  # (3)
-    Tags: NotRequired[Mapping[str, str]],
-    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (4)
-    EmbedHostDomains: NotRequired[Sequence[str]],
+class UserSettingTypeDef(TypedDict):
+    Action: ActionType,  # (1)
+    Permission: PermissionType,  # (2)
 ```
 
-1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
-2. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
-3. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
-4. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-## CreateStackResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateStackResultTypeDef
-
-def get_value() -> CreateStackResultTypeDef:
-    return {
-        "Stack": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStackResultTypeDef(TypedDict):
-    Stack: StackTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## CreateStreamingURLRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -771,27 +403,6 @@ class CreateStreamingURLRequestRequestTypeDef(TypedDict):
     SessionContext: NotRequired[str],
 ```
 
-## CreateStreamingURLResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateStreamingURLResultTypeDef
-
-def get_value() -> CreateStreamingURLResultTypeDef:
-    return {
-        "StreamingURL": ...,
-        "Expires": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamingURLResultTypeDef(TypedDict):
-    StreamingURL: str,
-    Expires: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUpdatedImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -814,50 +425,6 @@ class CreateUpdatedImageRequestRequestTypeDef(TypedDict):
     dryRun: NotRequired[bool],
 ```
 
-## CreateUpdatedImageResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateUpdatedImageResultTypeDef
-
-def get_value() -> CreateUpdatedImageResultTypeDef:
-    return {
-        "image": ...,
-        "canUpdateImage": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUpdatedImageResultTypeDef(TypedDict):
-    image: ImageTypeDef,  # (1)
-    canUpdateImage: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateUsageReportSubscriptionResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import CreateUsageReportSubscriptionResultTypeDef
-
-def get_value() -> CreateUsageReportSubscriptionResultTypeDef:
-    return {
-        "S3BucketName": ...,
-        "Schedule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUsageReportSubscriptionResultTypeDef(TypedDict):
-    S3BucketName: str,
-    Schedule: UsageReportScheduleType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: UsageReportScheduleType](./literals.md#usagereportscheduletype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -979,26 +546,6 @@ class DeleteImageBuilderRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## DeleteImageBuilderResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DeleteImageBuilderResultTypeDef
-
-def get_value() -> DeleteImageBuilderResultTypeDef:
-    return {
-        "ImageBuilder": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteImageBuilderResultTypeDef(TypedDict):
-    ImageBuilder: ImageBuilderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteImagePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1033,26 +580,6 @@ class DeleteImageRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## DeleteImageResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DeleteImageResultTypeDef
-
-def get_value() -> DeleteImageResultTypeDef:
-    return {
-        "Image": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteImageResultTypeDef(TypedDict):
-    Image: ImageTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteStackRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1106,28 +633,6 @@ class DescribeAppBlocksRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeAppBlocksResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeAppBlocksResultTypeDef
-
-def get_value() -> DescribeAppBlocksResultTypeDef:
-    return {
-        "AppBlocks": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAppBlocksResultTypeDef(TypedDict):
-    AppBlocks: List[AppBlockTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AppBlockTypeDef](./type_defs.md#appblocktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeApplicationFleetAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1147,28 +652,6 @@ class DescribeApplicationFleetAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeApplicationFleetAssociationsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeApplicationFleetAssociationsResultTypeDef
-
-def get_value() -> DescribeApplicationFleetAssociationsResultTypeDef:
-    return {
-        "ApplicationFleetAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeApplicationFleetAssociationsResultTypeDef(TypedDict):
-    ApplicationFleetAssociations: List[ApplicationFleetAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeApplicationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1187,46 +670,24 @@ class DescribeApplicationsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeApplicationsResultTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeApplicationsResultTypeDef
+from mypy_boto3_appstream.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeApplicationsResultTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "Applications": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeApplicationsResultTypeDef(TypedDict):
-    Applications: List[ApplicationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef
-
-def get_value() -> DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef:
-    return {
-        "DirectoryNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef(TypedDict):
-    DirectoryNames: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectoryConfigsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1245,28 +706,6 @@ class DescribeDirectoryConfigsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeDirectoryConfigsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsResultTypeDef
-
-def get_value() -> DescribeDirectoryConfigsResultTypeDef:
-    return {
-        "DirectoryConfigs": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDirectoryConfigsResultTypeDef(TypedDict):
-    DirectoryConfigs: List[DirectoryConfigTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntitlementsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1286,84 +725,23 @@ class DescribeEntitlementsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeEntitlementsResultTypeDef
+## WaiterConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeEntitlementsResultTypeDef
+from mypy_boto3_appstream.type_defs import WaiterConfigTypeDef
 
-def get_value() -> DescribeEntitlementsResultTypeDef:
+def get_value() -> WaiterConfigTypeDef:
     return {
-        "Entitlements": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Delay": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeEntitlementsResultTypeDef(TypedDict):
-    Entitlements: List[EntitlementTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
 ```
 
-1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeFleetsRequestDescribeFleetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeFleetsRequestDescribeFleetsPaginateTypeDef
-
-def get_value() -> DescribeFleetsRequestDescribeFleetsPaginateTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetsRequestDescribeFleetsPaginateTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeFleetsRequestFleetStartedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeFleetsRequestFleetStartedWaitTypeDef
-
-def get_value() -> DescribeFleetsRequestFleetStartedWaitTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetsRequestFleetStartedWaitTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeFleetsRequestFleetStoppedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeFleetsRequestFleetStoppedWaitTypeDef
-
-def get_value() -> DescribeFleetsRequestFleetStoppedWaitTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetsRequestFleetStoppedWaitTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeFleetsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1381,46 +759,6 @@ class DescribeFleetsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeFleetsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeFleetsResultTypeDef
-
-def get_value() -> DescribeFleetsResultTypeDef:
-    return {
-        "Fleets": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFleetsResultTypeDef(TypedDict):
-    Fleets: List[FleetTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef
-
-def get_value() -> DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeImageBuildersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1439,28 +777,6 @@ class DescribeImageBuildersRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeImageBuildersResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeImageBuildersResultTypeDef
-
-def get_value() -> DescribeImageBuildersResultTypeDef:
-    return {
-        "ImageBuilders": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImageBuildersResultTypeDef(TypedDict):
-    ImageBuilders: List[ImageBuilderTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeImagePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1480,51 +796,6 @@ class DescribeImagePermissionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeImagePermissionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeImagePermissionsResultTypeDef
-
-def get_value() -> DescribeImagePermissionsResultTypeDef:
-    return {
-        "Name": ...,
-        "SharedImagePermissionsList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImagePermissionsResultTypeDef(TypedDict):
-    Name: str,
-    SharedImagePermissionsList: List[SharedImagePermissionsTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SharedImagePermissionsTypeDef](./type_defs.md#sharedimagepermissionstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeImagesRequestDescribeImagesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeImagesRequestDescribeImagesPaginateTypeDef
-
-def get_value() -> DescribeImagesRequestDescribeImagesPaginateTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImagesRequestDescribeImagesPaginateTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    Arns: NotRequired[Sequence[str]],
-    Type: NotRequired[VisibilityTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: VisibilityTypeType](./literals.md#visibilitytypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeImagesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1546,51 +817,6 @@ class DescribeImagesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VisibilityTypeType](./literals.md#visibilitytypetype) 
-## DescribeImagesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeImagesResultTypeDef
-
-def get_value() -> DescribeImagesResultTypeDef:
-    return {
-        "Images": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImagesResultTypeDef(TypedDict):
-    Images: List[ImageTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSessionsRequestDescribeSessionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeSessionsRequestDescribeSessionsPaginateTypeDef
-
-def get_value() -> DescribeSessionsRequestDescribeSessionsPaginateTypeDef:
-    return {
-        "StackName": ...,
-        "FleetName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSessionsRequestDescribeSessionsPaginateTypeDef(TypedDict):
-    StackName: str,
-    FleetName: str,
-    UserId: NotRequired[str],
-    AuthenticationType: NotRequired[AuthenticationTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSessionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1614,46 +840,6 @@ class DescribeSessionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-## DescribeSessionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeSessionsResultTypeDef
-
-def get_value() -> DescribeSessionsResultTypeDef:
-    return {
-        "Sessions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSessionsResultTypeDef(TypedDict):
-    Sessions: List[SessionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeStacksRequestDescribeStacksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeStacksRequestDescribeStacksPaginateTypeDef
-
-def get_value() -> DescribeStacksRequestDescribeStacksPaginateTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStacksRequestDescribeStacksPaginateTypeDef(TypedDict):
-    Names: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeStacksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1671,28 +857,6 @@ class DescribeStacksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeStacksResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeStacksResultTypeDef
-
-def get_value() -> DescribeStacksResultTypeDef:
-    return {
-        "Stacks": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStacksResultTypeDef(TypedDict):
-    Stacks: List[StackTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUsageReportSubscriptionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1710,49 +874,6 @@ class DescribeUsageReportSubscriptionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeUsageReportSubscriptionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsResultTypeDef
-
-def get_value() -> DescribeUsageReportSubscriptionsResultTypeDef:
-    return {
-        "UsageReportSubscriptions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUsageReportSubscriptionsResultTypeDef(TypedDict):
-    UsageReportSubscriptions: List[UsageReportSubscriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UsageReportSubscriptionTypeDef](./type_defs.md#usagereportsubscriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef
-
-def get_value() -> DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef:
-    return {
-        "StackName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef(TypedDict):
-    StackName: NotRequired[str],
-    UserName: NotRequired[str],
-    AuthenticationType: NotRequired[AuthenticationTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeUserStackAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1774,47 +895,6 @@ class DescribeUserStackAssociationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-## DescribeUserStackAssociationsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsResultTypeDef
-
-def get_value() -> DescribeUserStackAssociationsResultTypeDef:
-    return {
-        "UserStackAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserStackAssociationsResultTypeDef(TypedDict):
-    UserStackAssociations: List[UserStackAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeUsersRequestDescribeUsersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeUsersRequestDescribeUsersPaginateTypeDef
-
-def get_value() -> DescribeUsersRequestDescribeUsersPaginateTypeDef:
-    return {
-        "AuthenticationType": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUsersRequestDescribeUsersPaginateTypeDef(TypedDict):
-    AuthenticationType: AuthenticationTypeType,  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeUsersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1834,48 +914,30 @@ class DescribeUsersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-## DescribeUsersResultTypeDef
+## UserTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DescribeUsersResultTypeDef
+from mypy_boto3_appstream.type_defs import UserTypeDef
 
-def get_value() -> DescribeUsersResultTypeDef:
+def get_value() -> UserTypeDef:
     return {
-        "Users": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "AuthenticationType": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeUsersResultTypeDef(TypedDict):
-    Users: List[UserTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DirectoryConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DirectoryConfigTypeDef
-
-def get_value() -> DirectoryConfigTypeDef:
-    return {
-        "DirectoryName": ...,
-    }
-```
-
-```python title="Definition"
-class DirectoryConfigTypeDef(TypedDict):
-    DirectoryName: str,
-    OrganizationalUnitDistinguishedNames: NotRequired[List[str]],
-    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+class UserTypeDef(TypedDict):
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    Arn: NotRequired[str],
+    UserName: NotRequired[str],
+    Enabled: NotRequired[bool],
+    Status: NotRequired[str],
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
     CreatedTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 ## DisableUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1951,23 +1013,6 @@ class DisassociateFleetRequestRequestTypeDef(TypedDict):
     StackName: str,
 ```
 
-## DomainJoinInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import DomainJoinInfoTypeDef
-
-def get_value() -> DomainJoinInfoTypeDef:
-    return {
-        "DirectoryName": ...,
-    }
-```
-
-```python title="Definition"
-class DomainJoinInfoTypeDef(TypedDict):
-    DirectoryName: NotRequired[str],
-    OrganizationalUnitDistinguishedName: NotRequired[str],
-```
-
 ## EnableUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2003,51 +1048,6 @@ class EntitledApplicationTypeDef(TypedDict):
     ApplicationIdentifier: str,
 ```
 
-## EntitlementAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import EntitlementAttributeTypeDef
-
-def get_value() -> EntitlementAttributeTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class EntitlementAttributeTypeDef(TypedDict):
-    Name: str,
-    Value: str,
-```
-
-## EntitlementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import EntitlementTypeDef
-
-def get_value() -> EntitlementTypeDef:
-    return {
-        "Name": ...,
-        "StackName": ...,
-        "AppVisibility": ...,
-        "Attributes": ...,
-    }
-```
-
-```python title="Definition"
-class EntitlementTypeDef(TypedDict):
-    Name: str,
-    StackName: str,
-    AppVisibility: AppVisibilityType,  # (1)
-    Attributes: List[EntitlementAttributeTypeDef],  # (2)
-    Description: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastModifiedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
-2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
 ## ExpireSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2082,6 +1082,1266 @@ class FleetErrorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FleetErrorCodeType](./literals.md#fleeterrorcodetype) 
+## ImageBuilderStateChangeReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ImageBuilderStateChangeReasonTypeDef
+
+def get_value() -> ImageBuilderStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class ImageBuilderStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[ImageBuilderStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImageBuilderStateChangeReasonCodeType](./literals.md#imagebuilderstatechangereasoncodetype) 
+## NetworkAccessConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import NetworkAccessConfigurationTypeDef
+
+def get_value() -> NetworkAccessConfigurationTypeDef:
+    return {
+        "EniPrivateIpAddress": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkAccessConfigurationTypeDef(TypedDict):
+    EniPrivateIpAddress: NotRequired[str],
+    EniId: NotRequired[str],
+```
+
+## ResourceErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ResourceErrorTypeDef
+
+def get_value() -> ResourceErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[FleetErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+    ErrorTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: FleetErrorCodeType](./literals.md#fleeterrorcodetype) 
+## ImagePermissionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ImagePermissionsTypeDef
+
+def get_value() -> ImagePermissionsTypeDef:
+    return {
+        "allowFleet": ...,
+    }
+```
+
+```python title="Definition"
+class ImagePermissionsTypeDef(TypedDict):
+    allowFleet: NotRequired[bool],
+    allowImageBuilder: NotRequired[bool],
+```
+
+## ImageStateChangeReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ImageStateChangeReasonTypeDef
+
+def get_value() -> ImageStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class ImageStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[ImageStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImageStateChangeReasonCodeType](./literals.md#imagestatechangereasoncodetype) 
+## LastReportGenerationExecutionErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import LastReportGenerationExecutionErrorTypeDef
+
+def get_value() -> LastReportGenerationExecutionErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class LastReportGenerationExecutionErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[UsageReportExecutionErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype) 
+## ListAssociatedFleetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedFleetsRequestRequestTypeDef
+
+def get_value() -> ListAssociatedFleetsRequestRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedFleetsRequestRequestTypeDef(TypedDict):
+    StackName: str,
+    NextToken: NotRequired[str],
+```
+
+## ListAssociatedStacksRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedStacksRequestRequestTypeDef
+
+def get_value() -> ListAssociatedStacksRequestRequestTypeDef:
+    return {
+        "FleetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedStacksRequestRequestTypeDef(TypedDict):
+    FleetName: str,
+    NextToken: NotRequired[str],
+```
+
+## ListEntitledApplicationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListEntitledApplicationsRequestRequestTypeDef
+
+def get_value() -> ListEntitledApplicationsRequestRequestTypeDef:
+    return {
+        "StackName": ...,
+        "EntitlementName": ...,
+    }
+```
+
+```python title="Definition"
+class ListEntitledApplicationsRequestRequestTypeDef(TypedDict):
+    StackName: str,
+    EntitlementName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## StackErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StackErrorTypeDef
+
+def get_value() -> StackErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class StackErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[StackErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: StackErrorCodeType](./literals.md#stackerrorcodetype) 
+## StartFleetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StartFleetRequestRequestTypeDef
+
+def get_value() -> StartFleetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StartFleetRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## StartImageBuilderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StartImageBuilderRequestRequestTypeDef
+
+def get_value() -> StartImageBuilderRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StartImageBuilderRequestRequestTypeDef(TypedDict):
+    Name: str,
+    AppstreamAgentVersion: NotRequired[str],
+```
+
+## StopFleetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StopFleetRequestRequestTypeDef
+
+def get_value() -> StopFleetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StopFleetRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## StopImageBuilderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StopImageBuilderRequestRequestTypeDef
+
+def get_value() -> StopImageBuilderRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StopImageBuilderRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
+## ApplicationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ApplicationTypeDef
+
+def get_value() -> ApplicationTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DisplayName: NotRequired[str],
+    IconURL: NotRequired[str],
+    LaunchPath: NotRequired[str],
+    LaunchParameters: NotRequired[str],
+    Enabled: NotRequired[bool],
+    Metadata: NotRequired[Dict[str, str]],
+    WorkingDirectory: NotRequired[str],
+    Description: NotRequired[str],
+    Arn: NotRequired[str],
+    AppBlockArn: NotRequired[str],
+    IconS3Location: NotRequired[S3LocationTypeDef],  # (1)
+    Platforms: NotRequired[List[PlatformTypeType]],  # (2)
+    InstanceFamilies: NotRequired[List[str]],
+    CreatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+## CreateApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IconS3Location": ...,
+        "LaunchPath": ...,
+        "Platforms": ...,
+        "InstanceFamilies": ...,
+        "AppBlockArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IconS3Location: S3LocationTypeDef,  # (1)
+    LaunchPath: str,
+    Platforms: Sequence[PlatformTypeType],  # (2)
+    InstanceFamilies: Sequence[str],
+    AppBlockArn: str,
+    DisplayName: NotRequired[str],
+    Description: NotRequired[str],
+    WorkingDirectory: NotRequired[str],
+    LaunchParameters: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+## ScriptDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ScriptDetailsTypeDef
+
+def get_value() -> ScriptDetailsTypeDef:
+    return {
+        "ScriptS3Location": ...,
+        "ExecutablePath": ...,
+        "TimeoutInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class ScriptDetailsTypeDef(TypedDict):
+    ScriptS3Location: S3LocationTypeDef,  # (1)
+    ExecutablePath: str,
+    TimeoutInSeconds: int,
+    ExecutableParameters: NotRequired[str],
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## UpdateApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DisplayName: NotRequired[str],
+    Description: NotRequired[str],
+    IconS3Location: NotRequired[S3LocationTypeDef],  # (1)
+    LaunchPath: NotRequired[str],
+    WorkingDirectory: NotRequired[str],
+    LaunchParameters: NotRequired[str],
+    AppBlockArn: NotRequired[str],
+    AttributesToDelete: NotRequired[Sequence[ApplicationAttributeType]],  # (2)
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: ApplicationAttributeType](./literals.md#applicationattributetype) 
+## AssociateApplicationFleetResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import AssociateApplicationFleetResultTypeDef
+
+def get_value() -> AssociateApplicationFleetResultTypeDef:
+    return {
+        "ApplicationFleetAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateApplicationFleetResultTypeDef(TypedDict):
+    ApplicationFleetAssociation: ApplicationFleetAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CopyImageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CopyImageResponseTypeDef
+
+def get_value() -> CopyImageResponseTypeDef:
+    return {
+        "DestinationImageName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CopyImageResponseTypeDef(TypedDict):
+    DestinationImageName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImageBuilderStreamingURLResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateImageBuilderStreamingURLResultTypeDef
+
+def get_value() -> CreateImageBuilderStreamingURLResultTypeDef:
+    return {
+        "StreamingURL": ...,
+        "Expires": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImageBuilderStreamingURLResultTypeDef(TypedDict):
+    StreamingURL: str,
+    Expires: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStreamingURLResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateStreamingURLResultTypeDef
+
+def get_value() -> CreateStreamingURLResultTypeDef:
+    return {
+        "StreamingURL": ...,
+        "Expires": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStreamingURLResultTypeDef(TypedDict):
+    StreamingURL: str,
+    Expires: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUsageReportSubscriptionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateUsageReportSubscriptionResultTypeDef
+
+def get_value() -> CreateUsageReportSubscriptionResultTypeDef:
+    return {
+        "S3BucketName": ...,
+        "Schedule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUsageReportSubscriptionResultTypeDef(TypedDict):
+    S3BucketName: str,
+    Schedule: UsageReportScheduleType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: UsageReportScheduleType](./literals.md#usagereportscheduletype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeApplicationFleetAssociationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeApplicationFleetAssociationsResultTypeDef
+
+def get_value() -> DescribeApplicationFleetAssociationsResultTypeDef:
+    return {
+        "ApplicationFleetAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeApplicationFleetAssociationsResultTypeDef(TypedDict):
+    ApplicationFleetAssociations: List[ApplicationFleetAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociatedFleetsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedFleetsResultTypeDef
+
+def get_value() -> ListAssociatedFleetsResultTypeDef:
+    return {
+        "Names": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedFleetsResultTypeDef(TypedDict):
+    Names: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociatedStacksResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedStacksResultTypeDef
+
+def get_value() -> ListAssociatedStacksResultTypeDef:
+    return {
+        "Names": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedStacksResultTypeDef(TypedDict):
+    Names: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchAssociateUserStackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import BatchAssociateUserStackRequestRequestTypeDef
+
+def get_value() -> BatchAssociateUserStackRequestRequestTypeDef:
+    return {
+        "UserStackAssociations": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateUserStackRequestRequestTypeDef(TypedDict):
+    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+## BatchDisassociateUserStackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackRequestRequestTypeDef
+
+def get_value() -> BatchDisassociateUserStackRequestRequestTypeDef:
+    return {
+        "UserStackAssociations": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateUserStackRequestRequestTypeDef(TypedDict):
+    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+## DescribeUserStackAssociationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsResultTypeDef
+
+def get_value() -> DescribeUserStackAssociationsResultTypeDef:
+    return {
+        "UserStackAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserStackAssociationsResultTypeDef(TypedDict):
+    UserStackAssociations: List[UserStackAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UserStackAssociationErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UserStackAssociationErrorTypeDef
+
+def get_value() -> UserStackAssociationErrorTypeDef:
+    return {
+        "UserStackAssociation": ...,
+    }
+```
+
+```python title="Definition"
+class UserStackAssociationErrorTypeDef(TypedDict):
+    UserStackAssociation: NotRequired[UserStackAssociationTypeDef],  # (1)
+    ErrorCode: NotRequired[UserStackAssociationErrorCodeType],  # (2)
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+2. See [:material-code-brackets: UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype) 
+## CreateDirectoryConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateDirectoryConfigRequestRequestTypeDef
+
+def get_value() -> CreateDirectoryConfigRequestRequestTypeDef:
+    return {
+        "DirectoryName": ...,
+        "OrganizationalUnitDistinguishedNames": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDirectoryConfigRequestRequestTypeDef(TypedDict):
+    DirectoryName: str,
+    OrganizationalUnitDistinguishedNames: Sequence[str],
+    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+## DirectoryConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DirectoryConfigTypeDef
+
+def get_value() -> DirectoryConfigTypeDef:
+    return {
+        "DirectoryName": ...,
+    }
+```
+
+```python title="Definition"
+class DirectoryConfigTypeDef(TypedDict):
+    DirectoryName: str,
+    OrganizationalUnitDistinguishedNames: NotRequired[List[str]],
+    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+## UpdateDirectoryConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigRequestRequestTypeDef
+
+def get_value() -> UpdateDirectoryConfigRequestRequestTypeDef:
+    return {
+        "DirectoryName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDirectoryConfigRequestRequestTypeDef(TypedDict):
+    DirectoryName: str,
+    OrganizationalUnitDistinguishedNames: NotRequired[Sequence[str]],
+    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+## CreateEntitlementRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateEntitlementRequestRequestTypeDef
+
+def get_value() -> CreateEntitlementRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "StackName": ...,
+        "AppVisibility": ...,
+        "Attributes": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEntitlementRequestRequestTypeDef(TypedDict):
+    Name: str,
+    StackName: str,
+    AppVisibility: AppVisibilityType,  # (1)
+    Attributes: Sequence[EntitlementAttributeTypeDef],  # (2)
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
+2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+## EntitlementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import EntitlementTypeDef
+
+def get_value() -> EntitlementTypeDef:
+    return {
+        "Name": ...,
+        "StackName": ...,
+        "AppVisibility": ...,
+        "Attributes": ...,
+    }
+```
+
+```python title="Definition"
+class EntitlementTypeDef(TypedDict):
+    Name: str,
+    StackName: str,
+    AppVisibility: AppVisibilityType,  # (1)
+    Attributes: List[EntitlementAttributeTypeDef],  # (2)
+    Description: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
+2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+## UpdateEntitlementRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UpdateEntitlementRequestRequestTypeDef
+
+def get_value() -> UpdateEntitlementRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEntitlementRequestRequestTypeDef(TypedDict):
+    Name: str,
+    StackName: str,
+    Description: NotRequired[str],
+    AppVisibility: NotRequired[AppVisibilityType],  # (1)
+    Attributes: NotRequired[Sequence[EntitlementAttributeTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
+2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+## CreateFleetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateFleetRequestRequestTypeDef
+
+def get_value() -> CreateFleetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceType: str,
+    ImageName: NotRequired[str],
+    ImageArn: NotRequired[str],
+    FleetType: NotRequired[FleetTypeType],  # (1)
+    ComputeCapacity: NotRequired[ComputeCapacityTypeDef],  # (2)
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (3)
+    MaxUserDurationInSeconds: NotRequired[int],
+    DisconnectTimeoutInSeconds: NotRequired[int],
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    EnableDefaultInternetAccess: NotRequired[bool],
+    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (4)
+    Tags: NotRequired[Mapping[str, str]],
+    IdleDisconnectTimeoutInSeconds: NotRequired[int],
+    IamRoleArn: NotRequired[str],
+    StreamView: NotRequired[StreamViewType],  # (5)
+    Platform: NotRequired[PlatformTypeType],  # (6)
+    MaxConcurrentSessions: NotRequired[int],
+    UsbDeviceFilterStrings: NotRequired[Sequence[str]],
+    SessionScriptS3Location: NotRequired[S3LocationTypeDef],  # (7)
+```
+
+1. See [:material-code-brackets: FleetTypeType](./literals.md#fleettypetype) 
+2. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
+3. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+4. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
+6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## CreateImageBuilderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateImageBuilderRequestRequestTypeDef
+
+def get_value() -> CreateImageBuilderRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImageBuilderRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceType: str,
+    ImageName: NotRequired[str],
+    ImageArn: NotRequired[str],
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
+    IamRoleArn: NotRequired[str],
+    EnableDefaultInternetAccess: NotRequired[bool],
+    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (2)
+    AppstreamAgentVersion: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+3. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+## UpdateFleetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UpdateFleetRequestRequestTypeDef
+
+def get_value() -> UpdateFleetRequestRequestTypeDef:
+    return {
+        "ImageName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFleetRequestRequestTypeDef(TypedDict):
+    ImageName: NotRequired[str],
+    ImageArn: NotRequired[str],
+    Name: NotRequired[str],
+    InstanceType: NotRequired[str],
+    ComputeCapacity: NotRequired[ComputeCapacityTypeDef],  # (1)
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (2)
+    MaxUserDurationInSeconds: NotRequired[int],
+    DisconnectTimeoutInSeconds: NotRequired[int],
+    DeleteVpcConfig: NotRequired[bool],
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    EnableDefaultInternetAccess: NotRequired[bool],
+    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (3)
+    IdleDisconnectTimeoutInSeconds: NotRequired[int],
+    AttributesToDelete: NotRequired[Sequence[FleetAttributeType]],  # (4)
+    IamRoleArn: NotRequired[str],
+    StreamView: NotRequired[StreamViewType],  # (5)
+    Platform: NotRequired[PlatformTypeType],  # (6)
+    MaxConcurrentSessions: NotRequired[int],
+    UsbDeviceFilterStrings: NotRequired[Sequence[str]],
+    SessionScriptS3Location: NotRequired[S3LocationTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
+2. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+3. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+4. See [:material-code-brackets: FleetAttributeType](./literals.md#fleetattributetype) 
+5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
+6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## CreateStackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateStackRequestRequestTypeDef
+
+def get_value() -> CreateStackRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStackRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    StorageConnectors: NotRequired[Sequence[StorageConnectorTypeDef]],  # (1)
+    RedirectURL: NotRequired[str],
+    FeedbackURL: NotRequired[str],
+    UserSettings: NotRequired[Sequence[UserSettingTypeDef]],  # (2)
+    ApplicationSettings: NotRequired[ApplicationSettingsTypeDef],  # (3)
+    Tags: NotRequired[Mapping[str, str]],
+    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (4)
+    EmbedHostDomains: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
+2. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
+3. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
+4. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+## UpdateStackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UpdateStackRequestRequestTypeDef
+
+def get_value() -> UpdateStackRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStackRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DisplayName: NotRequired[str],
+    Description: NotRequired[str],
+    StorageConnectors: NotRequired[Sequence[StorageConnectorTypeDef]],  # (1)
+    DeleteStorageConnectors: NotRequired[bool],
+    RedirectURL: NotRequired[str],
+    FeedbackURL: NotRequired[str],
+    AttributesToDelete: NotRequired[Sequence[StackAttributeType]],  # (2)
+    UserSettings: NotRequired[Sequence[UserSettingTypeDef]],  # (3)
+    ApplicationSettings: NotRequired[ApplicationSettingsTypeDef],  # (4)
+    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (5)
+    EmbedHostDomains: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
+2. See [:material-code-brackets: StackAttributeType](./literals.md#stackattributetype) 
+3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
+4. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
+5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+## DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef
+
+def get_value() -> DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef:
+    return {
+        "DirectoryNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef(TypedDict):
+    DirectoryNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeFleetsRequestDescribeFleetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeFleetsRequestDescribeFleetsPaginateTypeDef
+
+def get_value() -> DescribeFleetsRequestDescribeFleetsPaginateTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetsRequestDescribeFleetsPaginateTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef
+
+def get_value() -> DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeImagesRequestDescribeImagesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeImagesRequestDescribeImagesPaginateTypeDef
+
+def get_value() -> DescribeImagesRequestDescribeImagesPaginateTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImagesRequestDescribeImagesPaginateTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    Arns: NotRequired[Sequence[str]],
+    Type: NotRequired[VisibilityTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VisibilityTypeType](./literals.md#visibilitytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSessionsRequestDescribeSessionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeSessionsRequestDescribeSessionsPaginateTypeDef
+
+def get_value() -> DescribeSessionsRequestDescribeSessionsPaginateTypeDef:
+    return {
+        "StackName": ...,
+        "FleetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSessionsRequestDescribeSessionsPaginateTypeDef(TypedDict):
+    StackName: str,
+    FleetName: str,
+    UserId: NotRequired[str],
+    AuthenticationType: NotRequired[AuthenticationTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeStacksRequestDescribeStacksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeStacksRequestDescribeStacksPaginateTypeDef
+
+def get_value() -> DescribeStacksRequestDescribeStacksPaginateTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksRequestDescribeStacksPaginateTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef
+
+def get_value() -> DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    UserName: NotRequired[str],
+    AuthenticationType: NotRequired[AuthenticationTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeUsersRequestDescribeUsersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeUsersRequestDescribeUsersPaginateTypeDef
+
+def get_value() -> DescribeUsersRequestDescribeUsersPaginateTypeDef:
+    return {
+        "AuthenticationType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsersRequestDescribeUsersPaginateTypeDef(TypedDict):
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef
+
+def get_value() -> ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef(TypedDict):
+    StackName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef
+
+def get_value() -> ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef:
+    return {
+        "FleetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef(TypedDict):
+    FleetName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeFleetsRequestFleetStartedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeFleetsRequestFleetStartedWaitTypeDef
+
+def get_value() -> DescribeFleetsRequestFleetStartedWaitTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetsRequestFleetStartedWaitTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeFleetsRequestFleetStoppedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeFleetsRequestFleetStoppedWaitTypeDef
+
+def get_value() -> DescribeFleetsRequestFleetStoppedWaitTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetsRequestFleetStoppedWaitTypeDef(TypedDict):
+    Names: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeUsersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeUsersResultTypeDef
+
+def get_value() -> DescribeUsersResultTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsersResultTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEntitledApplicationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import ListEntitledApplicationsResultTypeDef
+
+def get_value() -> ListEntitledApplicationsResultTypeDef:
+    return {
+        "EntitledApplications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEntitledApplicationsResultTypeDef(TypedDict):
+    EntitledApplications: List[EntitledApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EntitledApplicationTypeDef](./type_defs.md#entitledapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FleetTypeDef
 
 ```python title="Usage Example"
@@ -2134,24 +2394,39 @@ class FleetTypeDef(TypedDict):
 7. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
 8. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
 9. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-## ImageBuilderStateChangeReasonTypeDef
+## SessionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ImageBuilderStateChangeReasonTypeDef
+from mypy_boto3_appstream.type_defs import SessionTypeDef
 
-def get_value() -> ImageBuilderStateChangeReasonTypeDef:
+def get_value() -> SessionTypeDef:
     return {
-        "Code": ...,
+        "Id": ...,
+        "UserId": ...,
+        "StackName": ...,
+        "FleetName": ...,
+        "State": ...,
     }
 ```
 
 ```python title="Definition"
-class ImageBuilderStateChangeReasonTypeDef(TypedDict):
-    Code: NotRequired[ImageBuilderStateChangeReasonCodeType],  # (1)
-    Message: NotRequired[str],
+class SessionTypeDef(TypedDict):
+    Id: str,
+    UserId: str,
+    StackName: str,
+    FleetName: str,
+    State: SessionStateType,  # (1)
+    ConnectionState: NotRequired[SessionConnectionStateType],  # (2)
+    StartTime: NotRequired[datetime],
+    MaxExpirationTime: NotRequired[datetime],
+    AuthenticationType: NotRequired[AuthenticationTypeType],  # (3)
+    NetworkAccessConfiguration: NotRequired[NetworkAccessConfigurationTypeDef],  # (4)
 ```
 
-1. See [:material-code-brackets: ImageBuilderStateChangeReasonCodeType](./literals.md#imagebuilderstatechangereasoncodetype) 
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-brackets: SessionConnectionStateType](./literals.md#sessionconnectionstatetype) 
+3. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+4. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
 ## ImageBuilderTypeDef
 
 ```python title="Usage Example"
@@ -2193,41 +2468,142 @@ class ImageBuilderTypeDef(TypedDict):
 6. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
 7. See [:material-code-braces: ResourceErrorTypeDef](./type_defs.md#resourceerrortypedef) 
 8. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-## ImagePermissionsTypeDef
+## SharedImagePermissionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ImagePermissionsTypeDef
+from mypy_boto3_appstream.type_defs import SharedImagePermissionsTypeDef
 
-def get_value() -> ImagePermissionsTypeDef:
+def get_value() -> SharedImagePermissionsTypeDef:
     return {
-        "allowFleet": ...,
+        "sharedAccountId": ...,
+        "imagePermissions": ...,
     }
 ```
 
 ```python title="Definition"
-class ImagePermissionsTypeDef(TypedDict):
-    allowFleet: NotRequired[bool],
-    allowImageBuilder: NotRequired[bool],
+class SharedImagePermissionsTypeDef(TypedDict):
+    sharedAccountId: str,
+    imagePermissions: ImagePermissionsTypeDef,  # (1)
 ```
 
-## ImageStateChangeReasonTypeDef
+1. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
+## UpdateImagePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ImageStateChangeReasonTypeDef
+from mypy_boto3_appstream.type_defs import UpdateImagePermissionsRequestRequestTypeDef
 
-def get_value() -> ImageStateChangeReasonTypeDef:
+def get_value() -> UpdateImagePermissionsRequestRequestTypeDef:
     return {
-        "Code": ...,
+        "Name": ...,
+        "SharedAccountId": ...,
+        "ImagePermissions": ...,
     }
 ```
 
 ```python title="Definition"
-class ImageStateChangeReasonTypeDef(TypedDict):
-    Code: NotRequired[ImageStateChangeReasonCodeType],  # (1)
-    Message: NotRequired[str],
+class UpdateImagePermissionsRequestRequestTypeDef(TypedDict):
+    Name: str,
+    SharedAccountId: str,
+    ImagePermissions: ImagePermissionsTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: ImageStateChangeReasonCodeType](./literals.md#imagestatechangereasoncodetype) 
+1. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
+## UsageReportSubscriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import UsageReportSubscriptionTypeDef
+
+def get_value() -> UsageReportSubscriptionTypeDef:
+    return {
+        "S3BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class UsageReportSubscriptionTypeDef(TypedDict):
+    S3BucketName: NotRequired[str],
+    Schedule: NotRequired[UsageReportScheduleType],  # (1)
+    LastGeneratedReportDate: NotRequired[datetime],
+    SubscriptionErrors: NotRequired[List[LastReportGenerationExecutionErrorTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: UsageReportScheduleType](./literals.md#usagereportscheduletype) 
+2. See [:material-code-braces: LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef) 
+## StackTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StackTypeDef
+
+def get_value() -> StackTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StackTypeDef(TypedDict):
+    Name: str,
+    Arn: NotRequired[str],
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    StorageConnectors: NotRequired[List[StorageConnectorTypeDef]],  # (1)
+    RedirectURL: NotRequired[str],
+    FeedbackURL: NotRequired[str],
+    StackErrors: NotRequired[List[StackErrorTypeDef]],  # (2)
+    UserSettings: NotRequired[List[UserSettingTypeDef]],  # (3)
+    ApplicationSettings: NotRequired[ApplicationSettingsResponseTypeDef],  # (4)
+    AccessEndpoints: NotRequired[List[AccessEndpointTypeDef]],  # (5)
+    EmbedHostDomains: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
+2. See [:material-code-braces: StackErrorTypeDef](./type_defs.md#stackerrortypedef) 
+3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
+4. See [:material-code-braces: ApplicationSettingsResponseTypeDef](./type_defs.md#applicationsettingsresponsetypedef) 
+5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+## CreateApplicationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateApplicationResultTypeDef
+
+def get_value() -> CreateApplicationResultTypeDef:
+    return {
+        "Application": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationResultTypeDef(TypedDict):
+    Application: ApplicationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeApplicationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeApplicationsResultTypeDef
+
+def get_value() -> DescribeApplicationsResultTypeDef:
+    return {
+        "Applications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeApplicationsResultTypeDef(TypedDict):
+    Applications: List[ApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageTypeDef
 
 ```python title="Usage Example"
@@ -2267,638 +2643,6 @@ class ImageTypeDef(TypedDict):
 5. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
 6. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
 7. See [:material-code-braces: ResourceErrorTypeDef](./type_defs.md#resourceerrortypedef) 
-## LastReportGenerationExecutionErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import LastReportGenerationExecutionErrorTypeDef
-
-def get_value() -> LastReportGenerationExecutionErrorTypeDef:
-    return {
-        "ErrorCode": ...,
-    }
-```
-
-```python title="Definition"
-class LastReportGenerationExecutionErrorTypeDef(TypedDict):
-    ErrorCode: NotRequired[UsageReportExecutionErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype) 
-## ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef
-
-def get_value() -> ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef:
-    return {
-        "StackName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef(TypedDict):
-    StackName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAssociatedFleetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedFleetsRequestRequestTypeDef
-
-def get_value() -> ListAssociatedFleetsRequestRequestTypeDef:
-    return {
-        "StackName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedFleetsRequestRequestTypeDef(TypedDict):
-    StackName: str,
-    NextToken: NotRequired[str],
-```
-
-## ListAssociatedFleetsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedFleetsResultTypeDef
-
-def get_value() -> ListAssociatedFleetsResultTypeDef:
-    return {
-        "Names": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedFleetsResultTypeDef(TypedDict):
-    Names: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef
-
-def get_value() -> ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef:
-    return {
-        "FleetName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef(TypedDict):
-    FleetName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAssociatedStacksRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedStacksRequestRequestTypeDef
-
-def get_value() -> ListAssociatedStacksRequestRequestTypeDef:
-    return {
-        "FleetName": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedStacksRequestRequestTypeDef(TypedDict):
-    FleetName: str,
-    NextToken: NotRequired[str],
-```
-
-## ListAssociatedStacksResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListAssociatedStacksResultTypeDef
-
-def get_value() -> ListAssociatedStacksResultTypeDef:
-    return {
-        "Names": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedStacksResultTypeDef(TypedDict):
-    Names: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListEntitledApplicationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListEntitledApplicationsRequestRequestTypeDef
-
-def get_value() -> ListEntitledApplicationsRequestRequestTypeDef:
-    return {
-        "StackName": ...,
-        "EntitlementName": ...,
-    }
-```
-
-```python title="Definition"
-class ListEntitledApplicationsRequestRequestTypeDef(TypedDict):
-    StackName: str,
-    EntitlementName: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListEntitledApplicationsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListEntitledApplicationsResultTypeDef
-
-def get_value() -> ListEntitledApplicationsResultTypeDef:
-    return {
-        "EntitledApplications": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEntitledApplicationsResultTypeDef(TypedDict):
-    EntitledApplications: List[EntitledApplicationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EntitledApplicationTypeDef](./type_defs.md#entitledapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkAccessConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import NetworkAccessConfigurationTypeDef
-
-def get_value() -> NetworkAccessConfigurationTypeDef:
-    return {
-        "EniPrivateIpAddress": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkAccessConfigurationTypeDef(TypedDict):
-    EniPrivateIpAddress: NotRequired[str],
-    EniId: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ResourceErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ResourceErrorTypeDef
-
-def get_value() -> ResourceErrorTypeDef:
-    return {
-        "ErrorCode": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceErrorTypeDef(TypedDict):
-    ErrorCode: NotRequired[FleetErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-    ErrorTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: FleetErrorCodeType](./literals.md#fleeterrorcodetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## S3LocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import S3LocationTypeDef
-
-def get_value() -> S3LocationTypeDef:
-    return {
-        "S3Bucket": ...,
-        "S3Key": ...,
-    }
-```
-
-```python title="Definition"
-class S3LocationTypeDef(TypedDict):
-    S3Bucket: str,
-    S3Key: str,
-```
-
-## ScriptDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ScriptDetailsTypeDef
-
-def get_value() -> ScriptDetailsTypeDef:
-    return {
-        "ScriptS3Location": ...,
-        "ExecutablePath": ...,
-        "TimeoutInSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class ScriptDetailsTypeDef(TypedDict):
-    ScriptS3Location: S3LocationTypeDef,  # (1)
-    ExecutablePath: str,
-    TimeoutInSeconds: int,
-    ExecutableParameters: NotRequired[str],
-```
-
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-## ServiceAccountCredentialsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import ServiceAccountCredentialsTypeDef
-
-def get_value() -> ServiceAccountCredentialsTypeDef:
-    return {
-        "AccountName": ...,
-        "AccountPassword": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceAccountCredentialsTypeDef(TypedDict):
-    AccountName: str,
-    AccountPassword: str,
-```
-
-## SessionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import SessionTypeDef
-
-def get_value() -> SessionTypeDef:
-    return {
-        "Id": ...,
-        "UserId": ...,
-        "StackName": ...,
-        "FleetName": ...,
-        "State": ...,
-    }
-```
-
-```python title="Definition"
-class SessionTypeDef(TypedDict):
-    Id: str,
-    UserId: str,
-    StackName: str,
-    FleetName: str,
-    State: SessionStateType,  # (1)
-    ConnectionState: NotRequired[SessionConnectionStateType],  # (2)
-    StartTime: NotRequired[datetime],
-    MaxExpirationTime: NotRequired[datetime],
-    AuthenticationType: NotRequired[AuthenticationTypeType],  # (3)
-    NetworkAccessConfiguration: NotRequired[NetworkAccessConfigurationTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
-2. See [:material-code-brackets: SessionConnectionStateType](./literals.md#sessionconnectionstatetype) 
-3. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-4. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
-## SharedImagePermissionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import SharedImagePermissionsTypeDef
-
-def get_value() -> SharedImagePermissionsTypeDef:
-    return {
-        "sharedAccountId": ...,
-        "imagePermissions": ...,
-    }
-```
-
-```python title="Definition"
-class SharedImagePermissionsTypeDef(TypedDict):
-    sharedAccountId: str,
-    imagePermissions: ImagePermissionsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
-## StackErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StackErrorTypeDef
-
-def get_value() -> StackErrorTypeDef:
-    return {
-        "ErrorCode": ...,
-    }
-```
-
-```python title="Definition"
-class StackErrorTypeDef(TypedDict):
-    ErrorCode: NotRequired[StackErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StackErrorCodeType](./literals.md#stackerrorcodetype) 
-## StackTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StackTypeDef
-
-def get_value() -> StackTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class StackTypeDef(TypedDict):
-    Name: str,
-    Arn: NotRequired[str],
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    StorageConnectors: NotRequired[List[StorageConnectorTypeDef]],  # (1)
-    RedirectURL: NotRequired[str],
-    FeedbackURL: NotRequired[str],
-    StackErrors: NotRequired[List[StackErrorTypeDef]],  # (2)
-    UserSettings: NotRequired[List[UserSettingTypeDef]],  # (3)
-    ApplicationSettings: NotRequired[ApplicationSettingsResponseTypeDef],  # (4)
-    AccessEndpoints: NotRequired[List[AccessEndpointTypeDef]],  # (5)
-    EmbedHostDomains: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
-2. See [:material-code-braces: StackErrorTypeDef](./type_defs.md#stackerrortypedef) 
-3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
-4. See [:material-code-braces: ApplicationSettingsResponseTypeDef](./type_defs.md#applicationsettingsresponsetypedef) 
-5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-## StartFleetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StartFleetRequestRequestTypeDef
-
-def get_value() -> StartFleetRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class StartFleetRequestRequestTypeDef(TypedDict):
-    Name: str,
-```
-
-## StartImageBuilderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StartImageBuilderRequestRequestTypeDef
-
-def get_value() -> StartImageBuilderRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class StartImageBuilderRequestRequestTypeDef(TypedDict):
-    Name: str,
-    AppstreamAgentVersion: NotRequired[str],
-```
-
-## StartImageBuilderResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StartImageBuilderResultTypeDef
-
-def get_value() -> StartImageBuilderResultTypeDef:
-    return {
-        "ImageBuilder": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartImageBuilderResultTypeDef(TypedDict):
-    ImageBuilder: ImageBuilderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StopFleetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StopFleetRequestRequestTypeDef
-
-def get_value() -> StopFleetRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class StopFleetRequestRequestTypeDef(TypedDict):
-    Name: str,
-```
-
-## StopImageBuilderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StopImageBuilderRequestRequestTypeDef
-
-def get_value() -> StopImageBuilderRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class StopImageBuilderRequestRequestTypeDef(TypedDict):
-    Name: str,
-```
-
-## StopImageBuilderResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StopImageBuilderResultTypeDef
-
-def get_value() -> StopImageBuilderResultTypeDef:
-    return {
-        "ImageBuilder": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StopImageBuilderResultTypeDef(TypedDict):
-    ImageBuilder: ImageBuilderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StorageConnectorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import StorageConnectorTypeDef
-
-def get_value() -> StorageConnectorTypeDef:
-    return {
-        "ConnectorType": ...,
-    }
-```
-
-```python title="Definition"
-class StorageConnectorTypeDef(TypedDict):
-    ConnectorType: StorageConnectorTypeType,  # (1)
-    ResourceIdentifier: NotRequired[str],
-    Domains: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: StorageConnectorTypeType](./literals.md#storageconnectortypetype) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Mapping[str, str],
-```
-
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    TagKeys: Sequence[str],
-```
-
-## UpdateApplicationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateApplicationRequestRequestTypeDef
-
-def get_value() -> UpdateApplicationRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateApplicationRequestRequestTypeDef(TypedDict):
-    Name: str,
-    DisplayName: NotRequired[str],
-    Description: NotRequired[str],
-    IconS3Location: NotRequired[S3LocationTypeDef],  # (1)
-    LaunchPath: NotRequired[str],
-    WorkingDirectory: NotRequired[str],
-    LaunchParameters: NotRequired[str],
-    AppBlockArn: NotRequired[str],
-    AttributesToDelete: NotRequired[Sequence[ApplicationAttributeType]],  # (2)
-```
-
-1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
-2. See [:material-code-brackets: ApplicationAttributeType](./literals.md#applicationattributetype) 
 ## UpdateApplicationResultTypeDef
 
 ```python title="Usage Example"
@@ -2919,25 +2663,139 @@ class UpdateApplicationResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateDirectoryConfigRequestRequestTypeDef
+## AppBlockTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import AppBlockTypeDef
 
-def get_value() -> UpdateDirectoryConfigRequestRequestTypeDef:
+def get_value() -> AppBlockTypeDef:
     return {
-        "DirectoryName": ...,
+        "Name": ...,
+        "Arn": ...,
+        "SetupScriptDetails": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDirectoryConfigRequestRequestTypeDef(TypedDict):
-    DirectoryName: str,
-    OrganizationalUnitDistinguishedNames: NotRequired[Sequence[str]],
-    ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+class AppBlockTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    SetupScriptDetails: ScriptDetailsTypeDef,  # (2)
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    SourceS3Location: NotRequired[S3LocationTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) 
+## CreateAppBlockRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateAppBlockRequestRequestTypeDef
+
+def get_value() -> CreateAppBlockRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "SourceS3Location": ...,
+        "SetupScriptDetails": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppBlockRequestRequestTypeDef(TypedDict):
+    Name: str,
+    SourceS3Location: S3LocationTypeDef,  # (1)
+    SetupScriptDetails: ScriptDetailsTypeDef,  # (2)
+    Description: NotRequired[str],
+    DisplayName: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) 
+## BatchAssociateUserStackResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import BatchAssociateUserStackResultTypeDef
+
+def get_value() -> BatchAssociateUserStackResultTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateUserStackResultTypeDef(TypedDict):
+    errors: List[UserStackAssociationErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDisassociateUserStackResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackResultTypeDef
+
+def get_value() -> BatchDisassociateUserStackResultTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateUserStackResultTypeDef(TypedDict):
+    errors: List[UserStackAssociationErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDirectoryConfigResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateDirectoryConfigResultTypeDef
+
+def get_value() -> CreateDirectoryConfigResultTypeDef:
+    return {
+        "DirectoryConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDirectoryConfigResultTypeDef(TypedDict):
+    DirectoryConfig: DirectoryConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDirectoryConfigsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsResultTypeDef
+
+def get_value() -> DescribeDirectoryConfigsResultTypeDef:
+    return {
+        "DirectoryConfigs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectoryConfigsResultTypeDef(TypedDict):
+    DirectoryConfigs: List[DirectoryConfigTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDirectoryConfigResultTypeDef
 
 ```python title="Usage Example"
@@ -2958,29 +2816,48 @@ class UpdateDirectoryConfigResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateEntitlementRequestRequestTypeDef
+## CreateEntitlementResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateEntitlementRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import CreateEntitlementResultTypeDef
 
-def get_value() -> UpdateEntitlementRequestRequestTypeDef:
+def get_value() -> CreateEntitlementResultTypeDef:
     return {
-        "Name": ...,
-        "StackName": ...,
+        "Entitlement": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateEntitlementRequestRequestTypeDef(TypedDict):
-    Name: str,
-    StackName: str,
-    Description: NotRequired[str],
-    AppVisibility: NotRequired[AppVisibilityType],  # (1)
-    Attributes: NotRequired[Sequence[EntitlementAttributeTypeDef]],  # (2)
+class CreateEntitlementResultTypeDef(TypedDict):
+    Entitlement: EntitlementTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
-2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEntitlementsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeEntitlementsResultTypeDef
+
+def get_value() -> DescribeEntitlementsResultTypeDef:
+    return {
+        "Entitlements": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEntitlementsResultTypeDef(TypedDict):
+    Entitlements: List[EntitlementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEntitlementResultTypeDef
 
 ```python title="Usage Example"
@@ -3001,49 +2878,48 @@ class UpdateEntitlementResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFleetRequestRequestTypeDef
+## CreateFleetResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateFleetRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import CreateFleetResultTypeDef
 
-def get_value() -> UpdateFleetRequestRequestTypeDef:
+def get_value() -> CreateFleetResultTypeDef:
     return {
-        "ImageName": ...,
+        "Fleet": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFleetRequestRequestTypeDef(TypedDict):
-    ImageName: NotRequired[str],
-    ImageArn: NotRequired[str],
-    Name: NotRequired[str],
-    InstanceType: NotRequired[str],
-    ComputeCapacity: NotRequired[ComputeCapacityTypeDef],  # (1)
-    VpcConfig: NotRequired[VpcConfigTypeDef],  # (2)
-    MaxUserDurationInSeconds: NotRequired[int],
-    DisconnectTimeoutInSeconds: NotRequired[int],
-    DeleteVpcConfig: NotRequired[bool],
-    Description: NotRequired[str],
-    DisplayName: NotRequired[str],
-    EnableDefaultInternetAccess: NotRequired[bool],
-    DomainJoinInfo: NotRequired[DomainJoinInfoTypeDef],  # (3)
-    IdleDisconnectTimeoutInSeconds: NotRequired[int],
-    AttributesToDelete: NotRequired[Sequence[FleetAttributeType]],  # (4)
-    IamRoleArn: NotRequired[str],
-    StreamView: NotRequired[StreamViewType],  # (5)
-    Platform: NotRequired[PlatformTypeType],  # (6)
-    MaxConcurrentSessions: NotRequired[int],
-    UsbDeviceFilterStrings: NotRequired[Sequence[str]],
-    SessionScriptS3Location: NotRequired[S3LocationTypeDef],  # (7)
+class CreateFleetResultTypeDef(TypedDict):
+    Fleet: FleetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
-2. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-3. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
-4. See [:material-code-brackets: FleetAttributeType](./literals.md#fleetattributetype) 
-5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
-6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
-7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeFleetsResultTypeDef
+
+def get_value() -> DescribeFleetsResultTypeDef:
+    return {
+        "Fleets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetsResultTypeDef(TypedDict):
+    Fleets: List[FleetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFleetResultTypeDef
 
 ```python title="Usage Example"
@@ -3064,59 +2940,218 @@ class UpdateFleetResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateImagePermissionsRequestRequestTypeDef
+## DescribeSessionsResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateImagePermissionsRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import DescribeSessionsResultTypeDef
 
-def get_value() -> UpdateImagePermissionsRequestRequestTypeDef:
+def get_value() -> DescribeSessionsResultTypeDef:
     return {
-        "Name": ...,
-        "SharedAccountId": ...,
-        "ImagePermissions": ...,
+        "Sessions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateImagePermissionsRequestRequestTypeDef(TypedDict):
-    Name: str,
-    SharedAccountId: str,
-    ImagePermissions: ImagePermissionsTypeDef,  # (1)
+class DescribeSessionsResultTypeDef(TypedDict):
+    Sessions: List[SessionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
-## UpdateStackRequestRequestTypeDef
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImageBuilderResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UpdateStackRequestRequestTypeDef
+from mypy_boto3_appstream.type_defs import CreateImageBuilderResultTypeDef
 
-def get_value() -> UpdateStackRequestRequestTypeDef:
+def get_value() -> CreateImageBuilderResultTypeDef:
     return {
-        "Name": ...,
+        "ImageBuilder": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateStackRequestRequestTypeDef(TypedDict):
-    Name: str,
-    DisplayName: NotRequired[str],
-    Description: NotRequired[str],
-    StorageConnectors: NotRequired[Sequence[StorageConnectorTypeDef]],  # (1)
-    DeleteStorageConnectors: NotRequired[bool],
-    RedirectURL: NotRequired[str],
-    FeedbackURL: NotRequired[str],
-    AttributesToDelete: NotRequired[Sequence[StackAttributeType]],  # (2)
-    UserSettings: NotRequired[Sequence[UserSettingTypeDef]],  # (3)
-    ApplicationSettings: NotRequired[ApplicationSettingsTypeDef],  # (4)
-    AccessEndpoints: NotRequired[Sequence[AccessEndpointTypeDef]],  # (5)
-    EmbedHostDomains: NotRequired[Sequence[str]],
+class CreateImageBuilderResultTypeDef(TypedDict):
+    ImageBuilder: ImageBuilderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
-2. See [:material-code-brackets: StackAttributeType](./literals.md#stackattributetype) 
-3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
-4. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
-5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteImageBuilderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DeleteImageBuilderResultTypeDef
+
+def get_value() -> DeleteImageBuilderResultTypeDef:
+    return {
+        "ImageBuilder": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteImageBuilderResultTypeDef(TypedDict):
+    ImageBuilder: ImageBuilderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImageBuildersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeImageBuildersResultTypeDef
+
+def get_value() -> DescribeImageBuildersResultTypeDef:
+    return {
+        "ImageBuilders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImageBuildersResultTypeDef(TypedDict):
+    ImageBuilders: List[ImageBuilderTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartImageBuilderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StartImageBuilderResultTypeDef
+
+def get_value() -> StartImageBuilderResultTypeDef:
+    return {
+        "ImageBuilder": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartImageBuilderResultTypeDef(TypedDict):
+    ImageBuilder: ImageBuilderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopImageBuilderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import StopImageBuilderResultTypeDef
+
+def get_value() -> StopImageBuilderResultTypeDef:
+    return {
+        "ImageBuilder": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopImageBuilderResultTypeDef(TypedDict):
+    ImageBuilder: ImageBuilderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImagePermissionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeImagePermissionsResultTypeDef
+
+def get_value() -> DescribeImagePermissionsResultTypeDef:
+    return {
+        "Name": ...,
+        "SharedImagePermissionsList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImagePermissionsResultTypeDef(TypedDict):
+    Name: str,
+    SharedImagePermissionsList: List[SharedImagePermissionsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SharedImagePermissionsTypeDef](./type_defs.md#sharedimagepermissionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUsageReportSubscriptionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsResultTypeDef
+
+def get_value() -> DescribeUsageReportSubscriptionsResultTypeDef:
+    return {
+        "UsageReportSubscriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsageReportSubscriptionsResultTypeDef(TypedDict):
+    UsageReportSubscriptions: List[UsageReportSubscriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UsageReportSubscriptionTypeDef](./type_defs.md#usagereportsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStackResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CreateStackResultTypeDef
+
+def get_value() -> CreateStackResultTypeDef:
+    return {
+        "Stack": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStackResultTypeDef(TypedDict):
+    Stack: StackTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStacksResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import DescribeStacksResultTypeDef
+
+def get_value() -> DescribeStacksResultTypeDef:
+    return {
+        "Stacks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksResultTypeDef(TypedDict):
+    Stacks: List[StackTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateStackResultTypeDef
 
 ```python title="Usage Example"
@@ -3137,144 +3172,109 @@ class UpdateStackResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UsageReportSubscriptionTypeDef
+## CreateUpdatedImageResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UsageReportSubscriptionTypeDef
+from mypy_boto3_appstream.type_defs import CreateUpdatedImageResultTypeDef
 
-def get_value() -> UsageReportSubscriptionTypeDef:
+def get_value() -> CreateUpdatedImageResultTypeDef:
     return {
-        "S3BucketName": ...,
+        "image": ...,
+        "canUpdateImage": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UsageReportSubscriptionTypeDef(TypedDict):
-    S3BucketName: NotRequired[str],
-    Schedule: NotRequired[UsageReportScheduleType],  # (1)
-    LastGeneratedReportDate: NotRequired[datetime],
-    SubscriptionErrors: NotRequired[List[LastReportGenerationExecutionErrorTypeDef]],  # (2)
+class CreateUpdatedImageResultTypeDef(TypedDict):
+    image: ImageTypeDef,  # (1)
+    canUpdateImage: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: UsageReportScheduleType](./literals.md#usagereportscheduletype) 
-2. See [:material-code-braces: LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef) 
-## UserSettingTypeDef
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteImageResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UserSettingTypeDef
+from mypy_boto3_appstream.type_defs import DeleteImageResultTypeDef
 
-def get_value() -> UserSettingTypeDef:
+def get_value() -> DeleteImageResultTypeDef:
     return {
-        "Action": ...,
-        "Permission": ...,
+        "Image": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserSettingTypeDef(TypedDict):
-    Action: ActionType,  # (1)
-    Permission: PermissionType,  # (2)
+class DeleteImageResultTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
-2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
-## UserStackAssociationErrorTypeDef
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImagesResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UserStackAssociationErrorTypeDef
+from mypy_boto3_appstream.type_defs import DescribeImagesResultTypeDef
 
-def get_value() -> UserStackAssociationErrorTypeDef:
+def get_value() -> DescribeImagesResultTypeDef:
     return {
-        "UserStackAssociation": ...,
+        "Images": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserStackAssociationErrorTypeDef(TypedDict):
-    UserStackAssociation: NotRequired[UserStackAssociationTypeDef],  # (1)
-    ErrorCode: NotRequired[UserStackAssociationErrorCodeType],  # (2)
-    ErrorMessage: NotRequired[str],
+class DescribeImagesResultTypeDef(TypedDict):
+    Images: List[ImageTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
-2. See [:material-code-brackets: UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype) 
-## UserStackAssociationTypeDef
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppBlockResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UserStackAssociationTypeDef
+from mypy_boto3_appstream.type_defs import CreateAppBlockResultTypeDef
 
-def get_value() -> UserStackAssociationTypeDef:
+def get_value() -> CreateAppBlockResultTypeDef:
     return {
-        "StackName": ...,
-        "UserName": ...,
-        "AuthenticationType": ...,
+        "AppBlock": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserStackAssociationTypeDef(TypedDict):
-    StackName: str,
-    UserName: str,
-    AuthenticationType: AuthenticationTypeType,  # (1)
-    SendEmailNotification: NotRequired[bool],
+class CreateAppBlockResultTypeDef(TypedDict):
+    AppBlock: AppBlockTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-## UserTypeDef
+1. See [:material-code-braces: AppBlockTypeDef](./type_defs.md#appblocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppBlocksResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import UserTypeDef
+from mypy_boto3_appstream.type_defs import DescribeAppBlocksResultTypeDef
 
-def get_value() -> UserTypeDef:
+def get_value() -> DescribeAppBlocksResultTypeDef:
     return {
-        "AuthenticationType": ...,
+        "AppBlocks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserTypeDef(TypedDict):
-    AuthenticationType: AuthenticationTypeType,  # (1)
-    Arn: NotRequired[str],
-    UserName: NotRequired[str],
-    Enabled: NotRequired[bool],
-    Status: NotRequired[str],
-    FirstName: NotRequired[str],
-    LastName: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
+class DescribeAppBlocksResultTypeDef(TypedDict):
+    AppBlocks: List[AppBlockTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
-## VpcConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import VpcConfigTypeDef
-
-def get_value() -> VpcConfigTypeDef:
-    return {
-        "SubnetIds": ...,
-    }
-```
-
-```python title="Definition"
-class VpcConfigTypeDef(TypedDict):
-    SubnetIds: NotRequired[Sequence[str]],
-    SecurityGroupIds: NotRequired[Sequence[str]],
-```
-
-## WaiterConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appstream.type_defs import WaiterConfigTypeDef
-
-def get_value() -> WaiterConfigTypeDef:
-    return {
-        "Delay": ...,
-    }
-```
-
-```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
-```
-
+1. See [:material-code-braces: AppBlockTypeDef](./type_defs.md#appblocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

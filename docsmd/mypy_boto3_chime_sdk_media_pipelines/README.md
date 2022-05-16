@@ -99,36 +99,34 @@ def get_value() -> ArtifactsStateType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_chime_sdk_media_pipelines.type_defs import ArtifactsConfigurationTypeDef
+from mypy_boto3_chime_sdk_media_pipelines.type_defs import AudioArtifactsConfigurationTypeDef
 
-def get_value() -> ArtifactsConfigurationTypeDef:
+def get_value() -> AudioArtifactsConfigurationTypeDef:
     return {
-        "Audio": ...,
-        "Video": ...,
-        "Content": ...,
+        "MuxType": ...,
     }
 ```
 
-- [ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef)
 - [AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef)
-- [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
 - [ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef)
-- [CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef)
-- [CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef)
+- [VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeleteMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#deletemediacapturepipelinerequestrequesttypedef)
 - [GetMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#getmediacapturepipelinerequestrequesttypedef)
-- [GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef)
 - [ListMediaCapturePipelinesRequestRequestTypeDef](./type_defs.md#listmediacapturepipelinesrequestrequesttypedef)
-- [ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef)
-- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MediaCapturePipelineSummaryTypeDef](./type_defs.md#mediacapturepipelinesummarytypedef)
-- [MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef)
-- [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
-- [VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef)
+- [ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef)
+- [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
+- [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
+- [CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef)
+- [MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef)
+- [CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef)
+- [GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef)
 

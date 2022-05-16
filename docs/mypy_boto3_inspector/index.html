@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36108,122 +36108,121 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_inspector.type_defs</span> <span class="kn">import</span> <span class="n">AddAttributesToFindingsRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_inspector.type_defs</span> <span class="kn">import</span> <span class="n">AttributeTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddAttributesToFindingsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AttributeTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;findingArns&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;attributes&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addattributestofindingsrequestrequesttypedef">AddAttributesToFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addattributestofindingsresponsetypedef">AddAttributesToFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#attributetypedef">AttributeTypeDef</a></li>
+<li><a href="type_defs/#faileditemdetailstypedef">FailedItemDetailsTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#agentfiltertypedef">AgentFilterTypeDef</a></li>
 <li><a href="type_defs/#agentpreviewtypedef">AgentPreviewTypeDef</a></li>
-<li><a href="type_defs/#assessmentrunagenttypedef">AssessmentRunAgentTypeDef</a></li>
-<li><a href="type_defs/#assessmentrunfiltertypedef">AssessmentRunFilterTypeDef</a></li>
+<li><a href="type_defs/#telemetrymetadatatypedef">TelemetryMetadataTypeDef</a></li>
+<li><a href="type_defs/#durationrangetypedef">DurationRangeTypeDef</a></li>
+<li><a href="type_defs/#timestamprangetypedef">TimestampRangeTypeDef</a></li>
 <li><a href="type_defs/#assessmentrunnotificationtypedef">AssessmentRunNotificationTypeDef</a></li>
 <li><a href="type_defs/#assessmentrunstatechangetypedef">AssessmentRunStateChangeTypeDef</a></li>
-<li><a href="type_defs/#assessmentruntypedef">AssessmentRunTypeDef</a></li>
 <li><a href="type_defs/#assessmenttargetfiltertypedef">AssessmentTargetFilterTypeDef</a></li>
 <li><a href="type_defs/#assessmenttargettypedef">AssessmentTargetTypeDef</a></li>
-<li><a href="type_defs/#assessmenttemplatefiltertypedef">AssessmentTemplateFilterTypeDef</a></li>
-<li><a href="type_defs/#assessmenttemplatetypedef">AssessmentTemplateTypeDef</a></li>
-<li><a href="type_defs/#assetattributestypedef">AssetAttributesTypeDef</a></li>
-<li><a href="type_defs/#attributetypedef">AttributeTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#createassessmenttargetrequestrequesttypedef">CreateAssessmentTargetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createassessmenttargetresponsetypedef">CreateAssessmentTargetResponseTypeDef</a></li>
-<li><a href="type_defs/#createassessmenttemplaterequestrequesttypedef">CreateAssessmentTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createassessmenttemplateresponsetypedef">CreateAssessmentTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#createexclusionspreviewrequestrequesttypedef">CreateExclusionsPreviewRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createexclusionspreviewresponsetypedef">CreateExclusionsPreviewResponseTypeDef</a></li>
-<li><a href="type_defs/#createresourcegrouprequestrequesttypedef">CreateResourceGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createresourcegroupresponsetypedef">CreateResourceGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#resourcegrouptagtypedef">ResourceGroupTagTypeDef</a></li>
 <li><a href="type_defs/#deleteassessmentrunrequestrequesttypedef">DeleteAssessmentRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteassessmenttargetrequestrequesttypedef">DeleteAssessmentTargetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteassessmenttemplaterequestrequesttypedef">DeleteAssessmentTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeassessmentrunsrequestrequesttypedef">DescribeAssessmentRunsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeassessmentrunsresponsetypedef">DescribeAssessmentRunsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeassessmenttargetsrequestrequesttypedef">DescribeAssessmentTargetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeassessmenttargetsresponsetypedef">DescribeAssessmentTargetsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeassessmenttemplatesrequestrequesttypedef">DescribeAssessmentTemplatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeassessmenttemplatesresponsetypedef">DescribeAssessmentTemplatesResponseTypeDef</a></li>
-<li><a href="type_defs/#describecrossaccountaccessroleresponsetypedef">DescribeCrossAccountAccessRoleResponseTypeDef</a></li>
 <li><a href="type_defs/#describeexclusionsrequestrequesttypedef">DescribeExclusionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeexclusionsresponsetypedef">DescribeExclusionsResponseTypeDef</a></li>
 <li><a href="type_defs/#describefindingsrequestrequesttypedef">DescribeFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describefindingsresponsetypedef">DescribeFindingsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeresourcegroupsrequestrequesttypedef">DescribeResourceGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeresourcegroupsresponsetypedef">DescribeResourceGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#describerulespackagesrequestrequesttypedef">DescribeRulesPackagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describerulespackagesresponsetypedef">DescribeRulesPackagesResponseTypeDef</a></li>
-<li><a href="type_defs/#durationrangetypedef">DurationRangeTypeDef</a></li>
+<li><a href="type_defs/#rulespackagetypedef">RulesPackageTypeDef</a></li>
 <li><a href="type_defs/#eventsubscriptiontypedef">EventSubscriptionTypeDef</a></li>
-<li><a href="type_defs/#exclusionpreviewtypedef">ExclusionPreviewTypeDef</a></li>
-<li><a href="type_defs/#exclusiontypedef">ExclusionTypeDef</a></li>
-<li><a href="type_defs/#faileditemdetailstypedef">FailedItemDetailsTypeDef</a></li>
-<li><a href="type_defs/#findingfiltertypedef">FindingFilterTypeDef</a></li>
-<li><a href="type_defs/#findingtypedef">FindingTypeDef</a></li>
-<li><a href="type_defs/#getassessmentreportrequestrequesttypedef">GetAssessmentReportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getassessmentreportresponsetypedef">GetAssessmentReportResponseTypeDef</a></li>
-<li><a href="type_defs/#getexclusionspreviewrequestrequesttypedef">GetExclusionsPreviewRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getexclusionspreviewresponsetypedef">GetExclusionsPreviewResponseTypeDef</a></li>
-<li><a href="type_defs/#gettelemetrymetadatarequestrequesttypedef">GetTelemetryMetadataRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gettelemetrymetadataresponsetypedef">GetTelemetryMetadataResponseTypeDef</a></li>
+<li><a href="type_defs/#scopetypedef">ScopeTypeDef</a></li>
 <li><a href="type_defs/#inspectorserviceattributestypedef">InspectorServiceAttributesTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunagentsrequestlistassessmentrunagentspaginatetypedef">ListAssessmentRunAgentsRequestListAssessmentRunAgentsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunagentsrequestrequesttypedef">ListAssessmentRunAgentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunagentsresponsetypedef">ListAssessmentRunAgentsResponseTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunsrequestlistassessmentrunspaginatetypedef">ListAssessmentRunsRequestListAssessmentRunsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunsrequestrequesttypedef">ListAssessmentRunsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listassessmentrunsresponsetypedef">ListAssessmentRunsResponseTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttargetsrequestlistassessmenttargetspaginatetypedef">ListAssessmentTargetsRequestListAssessmentTargetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttargetsrequestrequesttypedef">ListAssessmentTargetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttargetsresponsetypedef">ListAssessmentTargetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttemplatesrequestlistassessmenttemplatespaginatetypedef">ListAssessmentTemplatesRequestListAssessmentTemplatesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttemplatesrequestrequesttypedef">ListAssessmentTemplatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listassessmenttemplatesresponsetypedef">ListAssessmentTemplatesResponseTypeDef</a></li>
-<li><a href="type_defs/#listeventsubscriptionsrequestlisteventsubscriptionspaginatetypedef">ListEventSubscriptionsRequestListEventSubscriptionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listeventsubscriptionsrequestrequesttypedef">ListEventSubscriptionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listeventsubscriptionsresponsetypedef">ListEventSubscriptionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listexclusionsrequestlistexclusionspaginatetypedef">ListExclusionsRequestListExclusionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listexclusionsrequestrequesttypedef">ListExclusionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listexclusionsresponsetypedef">ListExclusionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listfindingsrequestlistfindingspaginatetypedef">ListFindingsRequestListFindingsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfindingsrequestrequesttypedef">ListFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
-<li><a href="type_defs/#listrulespackagesrequestlistrulespackagespaginatetypedef">ListRulesPackagesRequestListRulesPackagesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listrulespackagesrequestrequesttypedef">ListRulesPackagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrulespackagesresponsetypedef">ListRulesPackagesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#networkinterfacetypedef">NetworkInterfaceTypeDef</a></li>
+<li><a href="type_defs/#getassessmentreportrequestrequesttypedef">GetAssessmentReportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getexclusionspreviewrequestrequesttypedef">GetExclusionsPreviewRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettelemetrymetadatarequestrequesttypedef">GetTelemetryMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#previewagentsrequestpreviewagentspaginatetypedef">PreviewAgentsRequestPreviewAgentsPaginateTypeDef</a></li>
-<li><a href="type_defs/#previewagentsrequestrequesttypedef">PreviewAgentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#previewagentsresponsetypedef">PreviewAgentsResponseTypeDef</a></li>
+<li><a href="type_defs/#listeventsubscriptionsrequestrequesttypedef">ListEventSubscriptionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listexclusionsrequestrequesttypedef">ListExclusionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrulespackagesrequestrequesttypedef">ListRulesPackagesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#privateiptypedef">PrivateIpTypeDef</a></li>
+<li><a href="type_defs/#securitygrouptypedef">SecurityGroupTypeDef</a></li>
+<li><a href="type_defs/#previewagentsrequestrequesttypedef">PreviewAgentsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#registercrossaccountaccessrolerequestrequesttypedef">RegisterCrossAccountAccessRoleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#removeattributesfromfindingsrequestrequesttypedef">RemoveAttributesFromFindingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removeattributesfromfindingsresponsetypedef">RemoveAttributesFromFindingsResponseTypeDef</a></li>
-<li><a href="type_defs/#resourcegrouptagtypedef">ResourceGroupTagTypeDef</a></li>
-<li><a href="type_defs/#resourcegrouptypedef">ResourceGroupTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#rulespackagetypedef">RulesPackageTypeDef</a></li>
-<li><a href="type_defs/#scopetypedef">ScopeTypeDef</a></li>
-<li><a href="type_defs/#securitygrouptypedef">SecurityGroupTypeDef</a></li>
-<li><a href="type_defs/#settagsforresourcerequestrequesttypedef">SetTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startassessmentrunrequestrequesttypedef">StartAssessmentRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startassessmentrunresponsetypedef">StartAssessmentRunResponseTypeDef</a></li>
 <li><a href="type_defs/#stopassessmentrunrequestrequesttypedef">StopAssessmentRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#subscribetoeventrequestrequesttypedef">SubscribeToEventRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#subscriptiontypedef">SubscriptionTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#telemetrymetadatatypedef">TelemetryMetadataTypeDef</a></li>
-<li><a href="type_defs/#timestamprangetypedef">TimestampRangeTypeDef</a></li>
 <li><a href="type_defs/#unsubscribefromeventrequestrequesttypedef">UnsubscribeFromEventRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateassessmenttargetrequestrequesttypedef">UpdateAssessmentTargetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addattributestofindingsrequestrequesttypedef">AddAttributesToFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#assessmenttemplatetypedef">AssessmentTemplateTypeDef</a></li>
+<li><a href="type_defs/#createassessmenttemplaterequestrequesttypedef">CreateAssessmentTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addattributestofindingsresponsetypedef">AddAttributesToFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#createassessmenttargetresponsetypedef">CreateAssessmentTargetResponseTypeDef</a></li>
+<li><a href="type_defs/#createassessmenttemplateresponsetypedef">CreateAssessmentTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#createexclusionspreviewresponsetypedef">CreateExclusionsPreviewResponseTypeDef</a></li>
+<li><a href="type_defs/#createresourcegroupresponsetypedef">CreateResourceGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#describecrossaccountaccessroleresponsetypedef">DescribeCrossAccountAccessRoleResponseTypeDef</a></li>
+<li><a href="type_defs/#getassessmentreportresponsetypedef">GetAssessmentReportResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunsresponsetypedef">ListAssessmentRunsResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttargetsresponsetypedef">ListAssessmentTargetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttemplatesresponsetypedef">ListAssessmentTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#listexclusionsresponsetypedef">ListExclusionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#listrulespackagesresponsetypedef">ListRulesPackagesResponseTypeDef</a></li>
+<li><a href="type_defs/#removeattributesfromfindingsresponsetypedef">RemoveAttributesFromFindingsResponseTypeDef</a></li>
+<li><a href="type_defs/#startassessmentrunresponsetypedef">StartAssessmentRunResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunagentsrequestrequesttypedef">ListAssessmentRunAgentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#previewagentsresponsetypedef">PreviewAgentsResponseTypeDef</a></li>
+<li><a href="type_defs/#assessmentrunagenttypedef">AssessmentRunAgentTypeDef</a></li>
+<li><a href="type_defs/#gettelemetrymetadataresponsetypedef">GetTelemetryMetadataResponseTypeDef</a></li>
+<li><a href="type_defs/#assessmenttemplatefiltertypedef">AssessmentTemplateFilterTypeDef</a></li>
+<li><a href="type_defs/#assessmentrunfiltertypedef">AssessmentRunFilterTypeDef</a></li>
+<li><a href="type_defs/#findingfiltertypedef">FindingFilterTypeDef</a></li>
+<li><a href="type_defs/#assessmentruntypedef">AssessmentRunTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttargetsrequestrequesttypedef">ListAssessmentTargetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeassessmenttargetsresponsetypedef">DescribeAssessmentTargetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#settagsforresourcerequestrequesttypedef">SetTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createresourcegrouprequestrequesttypedef">CreateResourceGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourcegrouptypedef">ResourceGroupTypeDef</a></li>
+<li><a href="type_defs/#describerulespackagesresponsetypedef">DescribeRulesPackagesResponseTypeDef</a></li>
+<li><a href="type_defs/#subscriptiontypedef">SubscriptionTypeDef</a></li>
+<li><a href="type_defs/#exclusionpreviewtypedef">ExclusionPreviewTypeDef</a></li>
+<li><a href="type_defs/#exclusiontypedef">ExclusionTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunagentsrequestlistassessmentrunagentspaginatetypedef">ListAssessmentRunAgentsRequestListAssessmentRunAgentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttargetsrequestlistassessmenttargetspaginatetypedef">ListAssessmentTargetsRequestListAssessmentTargetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listeventsubscriptionsrequestlisteventsubscriptionspaginatetypedef">ListEventSubscriptionsRequestListEventSubscriptionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listexclusionsrequestlistexclusionspaginatetypedef">ListExclusionsRequestListExclusionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listrulespackagesrequestlistrulespackagespaginatetypedef">ListRulesPackagesRequestListRulesPackagesPaginateTypeDef</a></li>
+<li><a href="type_defs/#previewagentsrequestpreviewagentspaginatetypedef">PreviewAgentsRequestPreviewAgentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#networkinterfacetypedef">NetworkInterfaceTypeDef</a></li>
+<li><a href="type_defs/#describeassessmenttemplatesresponsetypedef">DescribeAssessmentTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunagentsresponsetypedef">ListAssessmentRunAgentsResponseTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttemplatesrequestlistassessmenttemplatespaginatetypedef">ListAssessmentTemplatesRequestListAssessmentTemplatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listassessmenttemplatesrequestrequesttypedef">ListAssessmentTemplatesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunsrequestlistassessmentrunspaginatetypedef">ListAssessmentRunsRequestListAssessmentRunsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listassessmentrunsrequestrequesttypedef">ListAssessmentRunsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfindingsrequestlistfindingspaginatetypedef">ListFindingsRequestListFindingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfindingsrequestrequesttypedef">ListFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeassessmentrunsresponsetypedef">DescribeAssessmentRunsResponseTypeDef</a></li>
+<li><a href="type_defs/#describeresourcegroupsresponsetypedef">DescribeResourceGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listeventsubscriptionsresponsetypedef">ListEventSubscriptionsResponseTypeDef</a></li>
+<li><a href="type_defs/#getexclusionspreviewresponsetypedef">GetExclusionsPreviewResponseTypeDef</a></li>
+<li><a href="type_defs/#describeexclusionsresponsetypedef">DescribeExclusionsResponseTypeDef</a></li>
+<li><a href="type_defs/#assetattributestypedef">AssetAttributesTypeDef</a></li>
+<li><a href="type_defs/#findingtypedef">FindingTypeDef</a></li>
+<li><a href="type_defs/#describefindingsresponsetypedef">DescribeFindingsResponseTypeDef</a></li>
 </ul>
 
               
@@ -36293,7 +36292,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

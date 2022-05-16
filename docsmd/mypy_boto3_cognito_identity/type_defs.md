@@ -25,32 +25,6 @@ class CognitoIdentityProviderTypeDef(TypedDict):
     ServerSideTokenCheck: NotRequired[bool],
 ```
 
-## CreateIdentityPoolInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import CreateIdentityPoolInputRequestTypeDef
-
-def get_value() -> CreateIdentityPoolInputRequestTypeDef:
-    return {
-        "IdentityPoolName": ...,
-        "AllowUnauthenticatedIdentities": ...,
-    }
-```
-
-```python title="Definition"
-class CreateIdentityPoolInputRequestTypeDef(TypedDict):
-    IdentityPoolName: str,
-    AllowUnauthenticatedIdentities: bool,
-    AllowClassicFlow: NotRequired[bool],
-    SupportedLoginProviders: NotRequired[Mapping[str, str]],
-    DeveloperProviderName: NotRequired[str],
-    OpenIdConnectProviderARNs: NotRequired[Sequence[str]],
-    CognitoIdentityProviders: NotRequired[Sequence[CognitoIdentityProviderTypeDef]],  # (1)
-    SamlProviderARNs: NotRequired[Sequence[str]],
-    IdentityPoolTags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
 ## CredentialsTypeDef
 
 ```python title="Usage Example"
@@ -86,26 +60,48 @@ class DeleteIdentitiesInputRequestTypeDef(TypedDict):
     IdentityIdsToDelete: Sequence[str],
 ```
 
-## DeleteIdentitiesResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import DeleteIdentitiesResponseTypeDef
+from mypy_boto3_cognito_identity.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> DeleteIdentitiesResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "UnprocessedIdentityIds": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteIdentitiesResponseTypeDef(TypedDict):
-    UnprocessedIdentityIds: List[UnprocessedIdentityIdTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: UnprocessedIdentityIdTypeDef](./type_defs.md#unprocessedidentityidtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UnprocessedIdentityIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import UnprocessedIdentityIdTypeDef
+
+def get_value() -> UnprocessedIdentityIdTypeDef:
+    return {
+        "IdentityId": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedIdentityIdTypeDef(TypedDict):
+    IdentityId: NotRequired[str],
+    ErrorCode: NotRequired[ErrorCodeType],  # (1)
+```
+
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## DeleteIdentityPoolInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -172,28 +168,6 @@ class GetCredentialsForIdentityInputRequestTypeDef(TypedDict):
     CustomRoleArn: NotRequired[str],
 ```
 
-## GetCredentialsForIdentityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetCredentialsForIdentityResponseTypeDef
-
-def get_value() -> GetCredentialsForIdentityResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "Credentials": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCredentialsForIdentityResponseTypeDef(TypedDict):
-    IdentityId: str,
-    Credentials: CredentialsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIdInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -212,25 +186,6 @@ class GetIdInputRequestTypeDef(TypedDict):
     Logins: NotRequired[Mapping[str, str]],
 ```
 
-## GetIdResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetIdResponseTypeDef
-
-def get_value() -> GetIdResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetIdResponseTypeDef(TypedDict):
-    IdentityId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIdentityPoolRolesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -247,30 +202,6 @@ class GetIdentityPoolRolesInputRequestTypeDef(TypedDict):
     IdentityPoolId: str,
 ```
 
-## GetIdentityPoolRolesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetIdentityPoolRolesResponseTypeDef
-
-def get_value() -> GetIdentityPoolRolesResponseTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "Roles": ...,
-        "RoleMappings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetIdentityPoolRolesResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    Roles: Dict[str, str],
-    RoleMappings: Dict[str, RoleMappingTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -292,27 +223,6 @@ class GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef(TypedDict):
     TokenDuration: NotRequired[int],
 ```
 
-## GetOpenIdTokenForDeveloperIdentityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetOpenIdTokenForDeveloperIdentityResponseTypeDef
-
-def get_value() -> GetOpenIdTokenForDeveloperIdentityResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "Token": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetOpenIdTokenForDeveloperIdentityResponseTypeDef(TypedDict):
-    IdentityId: str,
-    Token: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOpenIdTokenInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -330,27 +240,6 @@ class GetOpenIdTokenInputRequestTypeDef(TypedDict):
     Logins: NotRequired[Mapping[str, str]],
 ```
 
-## GetOpenIdTokenResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetOpenIdTokenResponseTypeDef
-
-def get_value() -> GetOpenIdTokenResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "Token": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetOpenIdTokenResponseTypeDef(TypedDict):
-    IdentityId: str,
-    Token: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPrincipalTagAttributeMapInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -369,56 +258,6 @@ class GetPrincipalTagAttributeMapInputRequestTypeDef(TypedDict):
     IdentityProviderName: str,
 ```
 
-## GetPrincipalTagAttributeMapResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import GetPrincipalTagAttributeMapResponseTypeDef
-
-def get_value() -> GetPrincipalTagAttributeMapResponseTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "IdentityProviderName": ...,
-        "UseDefaults": ...,
-        "PrincipalTags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPrincipalTagAttributeMapResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityProviderName: str,
-    UseDefaults: bool,
-    PrincipalTags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IdentityDescriptionResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import IdentityDescriptionResponseMetadataTypeDef
-
-def get_value() -> IdentityDescriptionResponseMetadataTypeDef:
-    return {
-        "IdentityId": ...,
-        "Logins": ...,
-        "CreationDate": ...,
-        "LastModifiedDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityDescriptionResponseMetadataTypeDef(TypedDict):
-    IdentityId: str,
-    Logins: List[str],
-    CreationDate: datetime,
-    LastModifiedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -438,34 +277,6 @@ class IdentityDescriptionTypeDef(TypedDict):
     LastModifiedDate: NotRequired[datetime],
 ```
 
-## IdentityPoolRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import IdentityPoolRequestTypeDef
-
-def get_value() -> IdentityPoolRequestTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "IdentityPoolName": ...,
-        "AllowUnauthenticatedIdentities": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityPoolRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityPoolName: str,
-    AllowUnauthenticatedIdentities: bool,
-    AllowClassicFlow: NotRequired[bool],
-    SupportedLoginProviders: NotRequired[Mapping[str, str]],
-    DeveloperProviderName: NotRequired[str],
-    OpenIdConnectProviderARNs: NotRequired[Sequence[str]],
-    CognitoIdentityProviders: NotRequired[Sequence[CognitoIdentityProviderTypeDef]],  # (1)
-    SamlProviderARNs: NotRequired[Sequence[str]],
-    IdentityPoolTags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
 ## IdentityPoolShortDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -483,44 +294,6 @@ class IdentityPoolShortDescriptionTypeDef(TypedDict):
     IdentityPoolName: NotRequired[str],
 ```
 
-## IdentityPoolTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import IdentityPoolTypeDef
-
-def get_value() -> IdentityPoolTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "IdentityPoolName": ...,
-        "AllowUnauthenticatedIdentities": ...,
-        "AllowClassicFlow": ...,
-        "SupportedLoginProviders": ...,
-        "DeveloperProviderName": ...,
-        "OpenIdConnectProviderARNs": ...,
-        "CognitoIdentityProviders": ...,
-        "SamlProviderARNs": ...,
-        "IdentityPoolTags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityPoolTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityPoolName: str,
-    AllowUnauthenticatedIdentities: bool,
-    AllowClassicFlow: bool,
-    SupportedLoginProviders: Dict[str, str],
-    DeveloperProviderName: str,
-    OpenIdConnectProviderARNs: List[str],
-    CognitoIdentityProviders: List[CognitoIdentityProviderTypeDef],  # (1)
-    SamlProviderARNs: List[str],
-    IdentityPoolTags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIdentitiesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -541,47 +314,24 @@ class ListIdentitiesInputRequestTypeDef(TypedDict):
     HideDisabled: NotRequired[bool],
 ```
 
-## ListIdentitiesResponseTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import ListIdentitiesResponseTypeDef
+from mypy_boto3_cognito_identity.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> ListIdentitiesResponseTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "IdentityPoolId": ...,
-        "Identities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class ListIdentitiesResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    Identities: List[IdentityDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IdentityDescriptionTypeDef](./type_defs.md#identitydescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef
-
-def get_value() -> ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIdentityPoolsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -599,28 +349,6 @@ class ListIdentityPoolsInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListIdentityPoolsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsResponseTypeDef
-
-def get_value() -> ListIdentityPoolsResponseTypeDef:
-    return {
-        "IdentityPools": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIdentityPoolsResponseTypeDef(TypedDict):
-    IdentityPools: List[IdentityPoolShortDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityPoolShortDescriptionTypeDef](./type_defs.md#identitypoolshortdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -637,25 +365,6 @@ class ListTagsForResourceInputRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LookupDeveloperIdentityInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -676,29 +385,6 @@ class LookupDeveloperIdentityInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## LookupDeveloperIdentityResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import LookupDeveloperIdentityResponseTypeDef
-
-def get_value() -> LookupDeveloperIdentityResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "DeveloperUserIdentifierList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class LookupDeveloperIdentityResponseTypeDef(TypedDict):
-    IdentityId: str,
-    DeveloperUserIdentifierList: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MappingRuleTypeDef
 
 ```python title="Usage Example"
@@ -744,125 +430,6 @@ class MergeDeveloperIdentitiesInputRequestTypeDef(TypedDict):
     IdentityPoolId: str,
 ```
 
-## MergeDeveloperIdentitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import MergeDeveloperIdentitiesResponseTypeDef
-
-def get_value() -> MergeDeveloperIdentitiesResponseTypeDef:
-    return {
-        "IdentityId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class MergeDeveloperIdentitiesResponseTypeDef(TypedDict):
-    IdentityId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RoleMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import RoleMappingTypeDef
-
-def get_value() -> RoleMappingTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class RoleMappingTypeDef(TypedDict):
-    Type: RoleMappingTypeType,  # (1)
-    AmbiguousRoleResolution: NotRequired[AmbiguousRoleResolutionTypeType],  # (2)
-    RulesConfiguration: NotRequired[RulesConfigurationTypeTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: RoleMappingTypeType](./literals.md#rolemappingtypetype) 
-2. See [:material-code-brackets: AmbiguousRoleResolutionTypeType](./literals.md#ambiguousroleresolutiontypetype) 
-3. See [:material-code-braces: RulesConfigurationTypeTypeDef](./type_defs.md#rulesconfigurationtypetypedef) 
-## RulesConfigurationTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import RulesConfigurationTypeTypeDef
-
-def get_value() -> RulesConfigurationTypeTypeDef:
-    return {
-        "Rules": ...,
-    }
-```
-
-```python title="Definition"
-class RulesConfigurationTypeTypeDef(TypedDict):
-    Rules: List[MappingRuleTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MappingRuleTypeDef](./type_defs.md#mappingruletypedef) 
-## SetIdentityPoolRolesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import SetIdentityPoolRolesInputRequestTypeDef
-
-def get_value() -> SetIdentityPoolRolesInputRequestTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "Roles": ...,
-    }
-```
-
-```python title="Definition"
-class SetIdentityPoolRolesInputRequestTypeDef(TypedDict):
-    IdentityPoolId: str,
-    Roles: Mapping[str, str],
-    RoleMappings: NotRequired[Mapping[str, RoleMappingTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 
 ## SetPrincipalTagAttributeMapInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -883,31 +450,6 @@ class SetPrincipalTagAttributeMapInputRequestTypeDef(TypedDict):
     PrincipalTags: NotRequired[Mapping[str, str]],
 ```
 
-## SetPrincipalTagAttributeMapResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import SetPrincipalTagAttributeMapResponseTypeDef
-
-def get_value() -> SetPrincipalTagAttributeMapResponseTypeDef:
-    return {
-        "IdentityPoolId": ...,
-        "IdentityProviderName": ...,
-        "UseDefaults": ...,
-        "PrincipalTags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SetPrincipalTagAttributeMapResponseTypeDef(TypedDict):
-    IdentityPoolId: str,
-    IdentityProviderName: str,
-    UseDefaults: bool,
-    PrincipalTags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -968,24 +510,6 @@ class UnlinkIdentityInputRequestTypeDef(TypedDict):
     LoginsToRemove: Sequence[str],
 ```
 
-## UnprocessedIdentityIdTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cognito_identity.type_defs import UnprocessedIdentityIdTypeDef
-
-def get_value() -> UnprocessedIdentityIdTypeDef:
-    return {
-        "IdentityId": ...,
-    }
-```
-
-```python title="Definition"
-class UnprocessedIdentityIdTypeDef(TypedDict):
-    IdentityId: NotRequired[str],
-    ErrorCode: NotRequired[ErrorCodeType],  # (1)
-```
-
-1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## UntagResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1004,3 +528,479 @@ class UntagResourceInputRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## CreateIdentityPoolInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import CreateIdentityPoolInputRequestTypeDef
+
+def get_value() -> CreateIdentityPoolInputRequestTypeDef:
+    return {
+        "IdentityPoolName": ...,
+        "AllowUnauthenticatedIdentities": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIdentityPoolInputRequestTypeDef(TypedDict):
+    IdentityPoolName: str,
+    AllowUnauthenticatedIdentities: bool,
+    AllowClassicFlow: NotRequired[bool],
+    SupportedLoginProviders: NotRequired[Mapping[str, str]],
+    DeveloperProviderName: NotRequired[str],
+    OpenIdConnectProviderARNs: NotRequired[Sequence[str]],
+    CognitoIdentityProviders: NotRequired[Sequence[CognitoIdentityProviderTypeDef]],  # (1)
+    SamlProviderARNs: NotRequired[Sequence[str]],
+    IdentityPoolTags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
+## IdentityPoolRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import IdentityPoolRequestTypeDef
+
+def get_value() -> IdentityPoolRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityPoolName": ...,
+        "AllowUnauthenticatedIdentities": ...,
+    }
+```
+
+```python title="Definition"
+class IdentityPoolRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityPoolName: str,
+    AllowUnauthenticatedIdentities: bool,
+    AllowClassicFlow: NotRequired[bool],
+    SupportedLoginProviders: NotRequired[Mapping[str, str]],
+    DeveloperProviderName: NotRequired[str],
+    OpenIdConnectProviderARNs: NotRequired[Sequence[str]],
+    CognitoIdentityProviders: NotRequired[Sequence[CognitoIdentityProviderTypeDef]],  # (1)
+    SamlProviderARNs: NotRequired[Sequence[str]],
+    IdentityPoolTags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
+## GetCredentialsForIdentityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetCredentialsForIdentityResponseTypeDef
+
+def get_value() -> GetCredentialsForIdentityResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "Credentials": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCredentialsForIdentityResponseTypeDef(TypedDict):
+    IdentityId: str,
+    Credentials: CredentialsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetIdResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetIdResponseTypeDef
+
+def get_value() -> GetIdResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIdResponseTypeDef(TypedDict):
+    IdentityId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOpenIdTokenForDeveloperIdentityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetOpenIdTokenForDeveloperIdentityResponseTypeDef
+
+def get_value() -> GetOpenIdTokenForDeveloperIdentityResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "Token": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOpenIdTokenForDeveloperIdentityResponseTypeDef(TypedDict):
+    IdentityId: str,
+    Token: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOpenIdTokenResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetOpenIdTokenResponseTypeDef
+
+def get_value() -> GetOpenIdTokenResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "Token": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOpenIdTokenResponseTypeDef(TypedDict):
+    IdentityId: str,
+    Token: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPrincipalTagAttributeMapResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetPrincipalTagAttributeMapResponseTypeDef
+
+def get_value() -> GetPrincipalTagAttributeMapResponseTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityProviderName": ...,
+        "UseDefaults": ...,
+        "PrincipalTags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPrincipalTagAttributeMapResponseTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityProviderName: str,
+    UseDefaults: bool,
+    PrincipalTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IdentityDescriptionResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import IdentityDescriptionResponseMetadataTypeDef
+
+def get_value() -> IdentityDescriptionResponseMetadataTypeDef:
+    return {
+        "IdentityId": ...,
+        "Logins": ...,
+        "CreationDate": ...,
+        "LastModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class IdentityDescriptionResponseMetadataTypeDef(TypedDict):
+    IdentityId: str,
+    Logins: List[str],
+    CreationDate: datetime,
+    LastModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IdentityPoolTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import IdentityPoolTypeDef
+
+def get_value() -> IdentityPoolTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityPoolName": ...,
+        "AllowUnauthenticatedIdentities": ...,
+        "AllowClassicFlow": ...,
+        "SupportedLoginProviders": ...,
+        "DeveloperProviderName": ...,
+        "OpenIdConnectProviderARNs": ...,
+        "CognitoIdentityProviders": ...,
+        "SamlProviderARNs": ...,
+        "IdentityPoolTags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class IdentityPoolTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityPoolName: str,
+    AllowUnauthenticatedIdentities: bool,
+    AllowClassicFlow: bool,
+    SupportedLoginProviders: Dict[str, str],
+    DeveloperProviderName: str,
+    OpenIdConnectProviderARNs: List[str],
+    CognitoIdentityProviders: List[CognitoIdentityProviderTypeDef],  # (1)
+    SamlProviderARNs: List[str],
+    IdentityPoolTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LookupDeveloperIdentityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import LookupDeveloperIdentityResponseTypeDef
+
+def get_value() -> LookupDeveloperIdentityResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "DeveloperUserIdentifierList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class LookupDeveloperIdentityResponseTypeDef(TypedDict):
+    IdentityId: str,
+    DeveloperUserIdentifierList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MergeDeveloperIdentitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import MergeDeveloperIdentitiesResponseTypeDef
+
+def get_value() -> MergeDeveloperIdentitiesResponseTypeDef:
+    return {
+        "IdentityId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class MergeDeveloperIdentitiesResponseTypeDef(TypedDict):
+    IdentityId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SetPrincipalTagAttributeMapResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import SetPrincipalTagAttributeMapResponseTypeDef
+
+def get_value() -> SetPrincipalTagAttributeMapResponseTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "IdentityProviderName": ...,
+        "UseDefaults": ...,
+        "PrincipalTags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SetPrincipalTagAttributeMapResponseTypeDef(TypedDict):
+    IdentityPoolId: str,
+    IdentityProviderName: str,
+    UseDefaults: bool,
+    PrincipalTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteIdentitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import DeleteIdentitiesResponseTypeDef
+
+def get_value() -> DeleteIdentitiesResponseTypeDef:
+    return {
+        "UnprocessedIdentityIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIdentitiesResponseTypeDef(TypedDict):
+    UnprocessedIdentityIds: List[UnprocessedIdentityIdTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UnprocessedIdentityIdTypeDef](./type_defs.md#unprocessedidentityidtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIdentitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import ListIdentitiesResponseTypeDef
+
+def get_value() -> ListIdentitiesResponseTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "Identities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentitiesResponseTypeDef(TypedDict):
+    IdentityPoolId: str,
+    Identities: List[IdentityDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityDescriptionTypeDef](./type_defs.md#identitydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIdentityPoolsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsResponseTypeDef
+
+def get_value() -> ListIdentityPoolsResponseTypeDef:
+    return {
+        "IdentityPools": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentityPoolsResponseTypeDef(TypedDict):
+    IdentityPools: List[IdentityPoolShortDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityPoolShortDescriptionTypeDef](./type_defs.md#identitypoolshortdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef
+
+def get_value() -> ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## RulesConfigurationTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import RulesConfigurationTypeTypeDef
+
+def get_value() -> RulesConfigurationTypeTypeDef:
+    return {
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class RulesConfigurationTypeTypeDef(TypedDict):
+    Rules: List[MappingRuleTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MappingRuleTypeDef](./type_defs.md#mappingruletypedef) 
+## RoleMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import RoleMappingTypeDef
+
+def get_value() -> RoleMappingTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class RoleMappingTypeDef(TypedDict):
+    Type: RoleMappingTypeType,  # (1)
+    AmbiguousRoleResolution: NotRequired[AmbiguousRoleResolutionTypeType],  # (2)
+    RulesConfiguration: NotRequired[RulesConfigurationTypeTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RoleMappingTypeType](./literals.md#rolemappingtypetype) 
+2. See [:material-code-brackets: AmbiguousRoleResolutionTypeType](./literals.md#ambiguousroleresolutiontypetype) 
+3. See [:material-code-braces: RulesConfigurationTypeTypeDef](./type_defs.md#rulesconfigurationtypetypedef) 
+## GetIdentityPoolRolesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import GetIdentityPoolRolesResponseTypeDef
+
+def get_value() -> GetIdentityPoolRolesResponseTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "Roles": ...,
+        "RoleMappings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIdentityPoolRolesResponseTypeDef(TypedDict):
+    IdentityPoolId: str,
+    Roles: Dict[str, str],
+    RoleMappings: Dict[str, RoleMappingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SetIdentityPoolRolesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_identity.type_defs import SetIdentityPoolRolesInputRequestTypeDef
+
+def get_value() -> SetIdentityPoolRolesInputRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+        "Roles": ...,
+    }
+```
+
+```python title="Definition"
+class SetIdentityPoolRolesInputRequestTypeDef(TypedDict):
+    IdentityPoolId: str,
+    Roles: Mapping[str, str],
+    RoleMappings: NotRequired[Mapping[str, RoleMappingTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 

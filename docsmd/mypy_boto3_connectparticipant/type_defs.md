@@ -84,29 +84,47 @@ class CreateParticipantConnectionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
-## CreateParticipantConnectionResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateParticipantConnectionResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Websocket": ...,
-        "ConnectionCredentials": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateParticipantConnectionResponseTypeDef(TypedDict):
-    Websocket: WebsocketTypeDef,  # (1)
-    ConnectionCredentials: ConnectionCredentialsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: WebsocketTypeDef](./type_defs.md#websockettypedef) 
-2. See [:material-code-braces: ConnectionCredentialsTypeDef](./type_defs.md#connectioncredentialstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WebsocketTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import WebsocketTypeDef
+
+def get_value() -> WebsocketTypeDef:
+    return {
+        "Url": ...,
+    }
+```
+
+```python title="Definition"
+class WebsocketTypeDef(TypedDict):
+    Url: NotRequired[str],
+    ConnectionExpiry: NotRequired[str],
+```
+
 ## DisconnectParticipantRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -142,76 +160,107 @@ class GetAttachmentRequestRequestTypeDef(TypedDict):
     ConnectionToken: str,
 ```
 
-## GetAttachmentResponseTypeDef
+## StartPositionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import GetAttachmentResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import StartPositionTypeDef
 
-def get_value() -> GetAttachmentResponseTypeDef:
+def get_value() -> StartPositionTypeDef:
     return {
-        "Url": ...,
-        "UrlExpiry": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAttachmentResponseTypeDef(TypedDict):
-    Url: str,
-    UrlExpiry: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class StartPositionTypeDef(TypedDict):
+    Id: NotRequired[str],
+    AbsoluteTime: NotRequired[str],
+    MostRecent: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTranscriptRequestRequestTypeDef
+## SendEventRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import GetTranscriptRequestRequestTypeDef
+from mypy_boto3_connectparticipant.type_defs import SendEventRequestRequestTypeDef
 
-def get_value() -> GetTranscriptRequestRequestTypeDef:
+def get_value() -> SendEventRequestRequestTypeDef:
     return {
+        "ContentType": ...,
         "ConnectionToken": ...,
     }
 ```
 
 ```python title="Definition"
-class GetTranscriptRequestRequestTypeDef(TypedDict):
+class SendEventRequestRequestTypeDef(TypedDict):
+    ContentType: str,
     ConnectionToken: str,
-    ContactId: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    ScanDirection: NotRequired[ScanDirectionType],  # (1)
-    SortOrder: NotRequired[SortKeyType],  # (2)
-    StartPosition: NotRequired[StartPositionTypeDef],  # (3)
+    Content: NotRequired[str],
+    ClientToken: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ScanDirectionType](./literals.md#scandirectiontype) 
-2. See [:material-code-brackets: SortKeyType](./literals.md#sortkeytype) 
-3. See [:material-code-braces: StartPositionTypeDef](./type_defs.md#startpositiontypedef) 
-## GetTranscriptResponseTypeDef
+## SendMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import GetTranscriptResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import SendMessageRequestRequestTypeDef
 
-def get_value() -> GetTranscriptResponseTypeDef:
+def get_value() -> SendMessageRequestRequestTypeDef:
     return {
-        "InitialContactId": ...,
-        "Transcript": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "ContentType": ...,
+        "Content": ...,
+        "ConnectionToken": ...,
     }
 ```
 
 ```python title="Definition"
-class GetTranscriptResponseTypeDef(TypedDict):
-    InitialContactId: str,
-    Transcript: List[ItemTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SendMessageRequestRequestTypeDef(TypedDict):
+    ContentType: str,
+    Content: str,
+    ConnectionToken: str,
+    ClientToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartAttachmentUploadRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadRequestRequestTypeDef
+
+def get_value() -> StartAttachmentUploadRequestRequestTypeDef:
+    return {
+        "ContentType": ...,
+        "AttachmentSizeInBytes": ...,
+        "AttachmentName": ...,
+        "ClientToken": ...,
+        "ConnectionToken": ...,
+    }
+```
+
+```python title="Definition"
+class StartAttachmentUploadRequestRequestTypeDef(TypedDict):
+    ContentType: str,
+    AttachmentSizeInBytes: int,
+    AttachmentName: str,
+    ClientToken: str,
+    ConnectionToken: str,
+```
+
+## UploadMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import UploadMetadataTypeDef
+
+def get_value() -> UploadMetadataTypeDef:
+    return {
+        "Url": ...,
+    }
+```
+
+```python title="Definition"
+class UploadMetadataTypeDef(TypedDict):
+    Url: NotRequired[str],
+    UrlExpiry: NotRequired[str],
+    HeadersToInclude: NotRequired[Dict[str, str]],
+```
+
 ## ItemTypeDef
 
 ```python title="Usage Example"
@@ -239,50 +288,27 @@ class ItemTypeDef(TypedDict):
 1. See [:material-code-brackets: ChatItemTypeType](./literals.md#chatitemtypetype) 
 2. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
 3. See [:material-code-braces: AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef) 
-## ResponseMetadataTypeDef
+## GetAttachmentResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_connectparticipant.type_defs import GetAttachmentResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> GetAttachmentResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "Url": ...,
+        "UrlExpiry": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class GetAttachmentResponseTypeDef(TypedDict):
+    Url: str,
+    UrlExpiry: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-## SendEventRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import SendEventRequestRequestTypeDef
-
-def get_value() -> SendEventRequestRequestTypeDef:
-    return {
-        "ContentType": ...,
-        "ConnectionToken": ...,
-    }
-```
-
-```python title="Definition"
-class SendEventRequestRequestTypeDef(TypedDict):
-    ContentType: str,
-    ConnectionToken: str,
-    Content: NotRequired[str],
-    ClientToken: NotRequired[str],
-```
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendEventResponseTypeDef
 
 ```python title="Usage Example"
@@ -304,27 +330,6 @@ class SendEventResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendMessageRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import SendMessageRequestRequestTypeDef
-
-def get_value() -> SendMessageRequestRequestTypeDef:
-    return {
-        "ContentType": ...,
-        "Content": ...,
-        "ConnectionToken": ...,
-    }
-```
-
-```python title="Definition"
-class SendMessageRequestRequestTypeDef(TypedDict):
-    ContentType: str,
-    Content: str,
-    ConnectionToken: str,
-    ClientToken: NotRequired[str],
-```
-
 ## SendMessageResponseTypeDef
 
 ```python title="Usage Example"
@@ -346,30 +351,54 @@ class SendMessageResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartAttachmentUploadRequestRequestTypeDef
+## CreateParticipantConnectionResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadRequestRequestTypeDef
+from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionResponseTypeDef
 
-def get_value() -> StartAttachmentUploadRequestRequestTypeDef:
+def get_value() -> CreateParticipantConnectionResponseTypeDef:
     return {
-        "ContentType": ...,
-        "AttachmentSizeInBytes": ...,
-        "AttachmentName": ...,
-        "ClientToken": ...,
+        "Websocket": ...,
+        "ConnectionCredentials": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateParticipantConnectionResponseTypeDef(TypedDict):
+    Websocket: WebsocketTypeDef,  # (1)
+    ConnectionCredentials: ConnectionCredentialsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: WebsocketTypeDef](./type_defs.md#websockettypedef) 
+2. See [:material-code-braces: ConnectionCredentialsTypeDef](./type_defs.md#connectioncredentialstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTranscriptRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import GetTranscriptRequestRequestTypeDef
+
+def get_value() -> GetTranscriptRequestRequestTypeDef:
+    return {
         "ConnectionToken": ...,
     }
 ```
 
 ```python title="Definition"
-class StartAttachmentUploadRequestRequestTypeDef(TypedDict):
-    ContentType: str,
-    AttachmentSizeInBytes: int,
-    AttachmentName: str,
-    ClientToken: str,
+class GetTranscriptRequestRequestTypeDef(TypedDict):
     ConnectionToken: str,
+    ContactId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ScanDirection: NotRequired[ScanDirectionType],  # (1)
+    SortOrder: NotRequired[SortKeyType],  # (2)
+    StartPosition: NotRequired[StartPositionTypeDef],  # (3)
 ```
 
+1. See [:material-code-brackets: ScanDirectionType](./literals.md#scandirectiontype) 
+2. See [:material-code-brackets: SortKeyType](./literals.md#sortkeytype) 
+3. See [:material-code-braces: StartPositionTypeDef](./type_defs.md#startpositiontypedef) 
 ## StartAttachmentUploadResponseTypeDef
 
 ```python title="Usage Example"
@@ -392,56 +421,27 @@ class StartAttachmentUploadResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartPositionTypeDef
+## GetTranscriptResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import StartPositionTypeDef
+from mypy_boto3_connectparticipant.type_defs import GetTranscriptResponseTypeDef
 
-def get_value() -> StartPositionTypeDef:
+def get_value() -> GetTranscriptResponseTypeDef:
     return {
-        "Id": ...,
+        "InitialContactId": ...,
+        "Transcript": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StartPositionTypeDef(TypedDict):
-    Id: NotRequired[str],
-    AbsoluteTime: NotRequired[str],
-    MostRecent: NotRequired[int],
+class GetTranscriptResponseTypeDef(TypedDict):
+    InitialContactId: str,
+    Transcript: List[ItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## UploadMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import UploadMetadataTypeDef
-
-def get_value() -> UploadMetadataTypeDef:
-    return {
-        "Url": ...,
-    }
-```
-
-```python title="Definition"
-class UploadMetadataTypeDef(TypedDict):
-    Url: NotRequired[str],
-    UrlExpiry: NotRequired[str],
-    HeadersToInclude: NotRequired[Dict[str, str]],
-```
-
-## WebsocketTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import WebsocketTypeDef
-
-def get_value() -> WebsocketTypeDef:
-    return {
-        "Url": ...,
-    }
-```
-
-```python title="Definition"
-class WebsocketTypeDef(TypedDict):
-    Url: NotRequired[str],
-    ConnectionExpiry: NotRequired[str],
-```
-
+1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -23,25 +23,30 @@ class CancelTaskInputRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## CancelTaskOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import CancelTaskOutputTypeDef
+from mypy_boto3_snow_device_management.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CancelTaskOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CancelTaskOutputTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CapacityTypeDef
 
 ```python title="Usage Example"
@@ -96,49 +101,6 @@ class CpuOptionsTypeDef(TypedDict):
     threadsPerCore: NotRequired[int],
 ```
 
-## CreateTaskInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import CreateTaskInputRequestTypeDef
-
-def get_value() -> CreateTaskInputRequestTypeDef:
-    return {
-        "command": ...,
-        "targets": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTaskInputRequestTypeDef(TypedDict):
-    command: CommandTypeDef,  # (1)
-    targets: Sequence[str],
-    clientToken: NotRequired[str],
-    description: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
-## CreateTaskOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import CreateTaskOutputTypeDef
-
-def get_value() -> CreateTaskOutputTypeDef:
-    return {
-        "taskArn": ...,
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTaskOutputTypeDef(TypedDict):
-    taskArn: str,
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceEc2InputRequestTypeDef
 
 ```python title="Usage Example"
@@ -157,26 +119,6 @@ class DescribeDeviceEc2InputRequestTypeDef(TypedDict):
     managedDeviceId: str,
 ```
 
-## DescribeDeviceEc2OutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import DescribeDeviceEc2OutputTypeDef
-
-def get_value() -> DescribeDeviceEc2OutputTypeDef:
-    return {
-        "instances": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDeviceEc2OutputTypeDef(TypedDict):
-    instances: List[InstanceSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -193,49 +135,48 @@ class DescribeDeviceInputRequestTypeDef(TypedDict):
     managedDeviceId: str,
 ```
 
-## DescribeDeviceOutputTypeDef
+## PhysicalNetworkInterfaceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import DescribeDeviceOutputTypeDef
+from mypy_boto3_snow_device_management.type_defs import PhysicalNetworkInterfaceTypeDef
 
-def get_value() -> DescribeDeviceOutputTypeDef:
+def get_value() -> PhysicalNetworkInterfaceTypeDef:
     return {
-        "associatedWithJob": ...,
-        "deviceCapacities": ...,
-        "deviceState": ...,
-        "deviceType": ...,
-        "lastReachedOutAt": ...,
-        "lastUpdatedAt": ...,
-        "managedDeviceArn": ...,
-        "managedDeviceId": ...,
-        "physicalNetworkInterfaces": ...,
-        "software": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
+        "defaultGateway": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDeviceOutputTypeDef(TypedDict):
-    associatedWithJob: str,
-    deviceCapacities: List[CapacityTypeDef],  # (1)
-    deviceState: UnlockStateType,  # (2)
-    deviceType: str,
-    lastReachedOutAt: datetime,
-    lastUpdatedAt: datetime,
-    managedDeviceArn: str,
-    managedDeviceId: str,
-    physicalNetworkInterfaces: List[PhysicalNetworkInterfaceTypeDef],  # (3)
-    software: SoftwareInformationTypeDef,  # (4)
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class PhysicalNetworkInterfaceTypeDef(TypedDict):
+    defaultGateway: NotRequired[str],
+    ipAddress: NotRequired[str],
+    ipAddressAssignment: NotRequired[IpAddressAssignmentType],  # (1)
+    macAddress: NotRequired[str],
+    netmask: NotRequired[str],
+    physicalConnectorType: NotRequired[PhysicalConnectorTypeType],  # (2)
+    physicalNetworkInterfaceId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
-2. See [:material-code-brackets: UnlockStateType](./literals.md#unlockstatetype) 
-3. See [:material-code-braces: PhysicalNetworkInterfaceTypeDef](./type_defs.md#physicalnetworkinterfacetypedef) 
-4. See [:material-code-braces: SoftwareInformationTypeDef](./type_defs.md#softwareinformationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: IpAddressAssignmentType](./literals.md#ipaddressassignmenttype) 
+2. See [:material-code-brackets: PhysicalConnectorTypeType](./literals.md#physicalconnectortypetype) 
+## SoftwareInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import SoftwareInformationTypeDef
+
+def get_value() -> SoftwareInformationTypeDef:
+    return {
+        "installState": ...,
+    }
+```
+
+```python title="Definition"
+class SoftwareInformationTypeDef(TypedDict):
+    installState: NotRequired[str],
+    installedVersion: NotRequired[str],
+    installingVersion: NotRequired[str],
+```
+
 ## DescribeExecutionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -254,36 +195,6 @@ class DescribeExecutionInputRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeExecutionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import DescribeExecutionOutputTypeDef
-
-def get_value() -> DescribeExecutionOutputTypeDef:
-    return {
-        "executionId": ...,
-        "lastUpdatedAt": ...,
-        "managedDeviceId": ...,
-        "startedAt": ...,
-        "state": ...,
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeExecutionOutputTypeDef(TypedDict):
-    executionId: str,
-    lastUpdatedAt: datetime,
-    managedDeviceId: str,
-    startedAt: datetime,
-    state: ExecutionStateType,  # (1)
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTaskInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -300,42 +211,6 @@ class DescribeTaskInputRequestTypeDef(TypedDict):
     taskId: str,
 ```
 
-## DescribeTaskOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import DescribeTaskOutputTypeDef
-
-def get_value() -> DescribeTaskOutputTypeDef:
-    return {
-        "completedAt": ...,
-        "createdAt": ...,
-        "description": ...,
-        "lastUpdatedAt": ...,
-        "state": ...,
-        "tags": ...,
-        "targets": ...,
-        "taskArn": ...,
-        "taskId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTaskOutputTypeDef(TypedDict):
-    completedAt: datetime,
-    createdAt: datetime,
-    description: str,
-    lastUpdatedAt: datetime,
-    state: TaskStateType,  # (1)
-    tags: Dict[str, str],
-    targets: List[str],
-    taskArn: str,
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -395,24 +270,6 @@ class ExecutionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
-## InstanceBlockDeviceMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import InstanceBlockDeviceMappingTypeDef
-
-def get_value() -> InstanceBlockDeviceMappingTypeDef:
-    return {
-        "deviceName": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceBlockDeviceMappingTypeDef(TypedDict):
-    deviceName: NotRequired[str],
-    ebs: NotRequired[EbsInstanceBlockDeviceTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: EbsInstanceBlockDeviceTypeDef](./type_defs.md#ebsinstanceblockdevicetypedef) 
 ## InstanceStateTypeDef
 
 ```python title="Usage Example"
@@ -431,24 +288,579 @@ class InstanceStateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: InstanceStateNameType](./literals.md#instancestatenametype) 
-## InstanceSummaryTypeDef
+## SecurityGroupIdentifierTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import InstanceSummaryTypeDef
+from mypy_boto3_snow_device_management.type_defs import SecurityGroupIdentifierTypeDef
 
-def get_value() -> InstanceSummaryTypeDef:
+def get_value() -> SecurityGroupIdentifierTypeDef:
     return {
-        "instance": ...,
+        "groupId": ...,
     }
 ```
 
 ```python title="Definition"
-class InstanceSummaryTypeDef(TypedDict):
-    instance: NotRequired[InstanceTypeDef],  # (1)
-    lastUpdatedAt: NotRequired[datetime],
+class SecurityGroupIdentifierTypeDef(TypedDict):
+    groupId: NotRequired[str],
+    groupName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListDeviceResourcesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesInputRequestTypeDef
+
+def get_value() -> ListDeviceResourcesInputRequestTypeDef:
+    return {
+        "managedDeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceResourcesInputRequestTypeDef(TypedDict):
+    managedDeviceId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    type: NotRequired[str],
+```
+
+## ResourceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ResourceSummaryTypeDef
+
+def get_value() -> ResourceSummaryTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceSummaryTypeDef(TypedDict):
+    resourceType: str,
+    arn: NotRequired[str],
+    id: NotRequired[str],
+```
+
+## ListDevicesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDevicesInputRequestTypeDef
+
+def get_value() -> ListDevicesInputRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesInputRequestTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListExecutionsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListExecutionsInputRequestTypeDef
+
+def get_value() -> ListExecutionsInputRequestTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsInputRequestTypeDef(TypedDict):
+    taskId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    state: NotRequired[ExecutionStateType],  # (1)
+```
+
+1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
+## ListTagsForResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## ListTasksInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListTasksInputRequestTypeDef
+
+def get_value() -> ListTasksInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListTasksInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    state: NotRequired[TaskStateType],  # (1)
+```
+
+1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
+## TaskSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import TaskSummaryTypeDef
+
+def get_value() -> TaskSummaryTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class TaskSummaryTypeDef(TypedDict):
+    taskId: str,
+    state: NotRequired[TaskStateType],  # (1)
+    tags: NotRequired[Dict[str, str]],
+    taskArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
+## TagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## CancelTaskOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import CancelTaskOutputTypeDef
+
+def get_value() -> CancelTaskOutputTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelTaskOutputTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTaskOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import CreateTaskOutputTypeDef
+
+def get_value() -> CreateTaskOutputTypeDef:
+    return {
+        "taskArn": ...,
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTaskOutputTypeDef(TypedDict):
+    taskArn: str,
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExecutionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import DescribeExecutionOutputTypeDef
+
+def get_value() -> DescribeExecutionOutputTypeDef:
+    return {
+        "executionId": ...,
+        "lastUpdatedAt": ...,
+        "managedDeviceId": ...,
+        "startedAt": ...,
+        "state": ...,
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExecutionOutputTypeDef(TypedDict):
+    executionId: str,
+    lastUpdatedAt: datetime,
+    managedDeviceId: str,
+    startedAt: datetime,
+    state: ExecutionStateType,  # (1)
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTaskOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import DescribeTaskOutputTypeDef
+
+def get_value() -> DescribeTaskOutputTypeDef:
+    return {
+        "completedAt": ...,
+        "createdAt": ...,
+        "description": ...,
+        "lastUpdatedAt": ...,
+        "state": ...,
+        "tags": ...,
+        "targets": ...,
+        "taskArn": ...,
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTaskOutputTypeDef(TypedDict):
+    completedAt: datetime,
+    createdAt: datetime,
+    description: str,
+    lastUpdatedAt: datetime,
+    state: TaskStateType,  # (1)
+    tags: Dict[str, str],
+    targets: List[str],
+    taskArn: str,
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTaskInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import CreateTaskInputRequestTypeDef
+
+def get_value() -> CreateTaskInputRequestTypeDef:
+    return {
+        "command": ...,
+        "targets": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTaskInputRequestTypeDef(TypedDict):
+    command: CommandTypeDef,  # (1)
+    targets: Sequence[str],
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+## DescribeDeviceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import DescribeDeviceOutputTypeDef
+
+def get_value() -> DescribeDeviceOutputTypeDef:
+    return {
+        "associatedWithJob": ...,
+        "deviceCapacities": ...,
+        "deviceState": ...,
+        "deviceType": ...,
+        "lastReachedOutAt": ...,
+        "lastUpdatedAt": ...,
+        "managedDeviceArn": ...,
+        "managedDeviceId": ...,
+        "physicalNetworkInterfaces": ...,
+        "software": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDeviceOutputTypeDef(TypedDict):
+    associatedWithJob: str,
+    deviceCapacities: List[CapacityTypeDef],  # (1)
+    deviceState: UnlockStateType,  # (2)
+    deviceType: str,
+    lastReachedOutAt: datetime,
+    lastUpdatedAt: datetime,
+    managedDeviceArn: str,
+    managedDeviceId: str,
+    physicalNetworkInterfaces: List[PhysicalNetworkInterfaceTypeDef],  # (3)
+    software: SoftwareInformationTypeDef,  # (4)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
+2. See [:material-code-brackets: UnlockStateType](./literals.md#unlockstatetype) 
+3. See [:material-code-braces: PhysicalNetworkInterfaceTypeDef](./type_defs.md#physicalnetworkinterfacetypedef) 
+4. See [:material-code-braces: SoftwareInformationTypeDef](./type_defs.md#softwareinformationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDevicesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDevicesOutputTypeDef
+
+def get_value() -> ListDevicesOutputTypeDef:
+    return {
+        "devices": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesOutputTypeDef(TypedDict):
+    devices: List[DeviceSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InstanceBlockDeviceMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import InstanceBlockDeviceMappingTypeDef
+
+def get_value() -> InstanceBlockDeviceMappingTypeDef:
+    return {
+        "deviceName": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceBlockDeviceMappingTypeDef(TypedDict):
+    deviceName: NotRequired[str],
+    ebs: NotRequired[EbsInstanceBlockDeviceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EbsInstanceBlockDeviceTypeDef](./type_defs.md#ebsinstanceblockdevicetypedef) 
+## ListExecutionsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListExecutionsOutputTypeDef
+
+def get_value() -> ListExecutionsOutputTypeDef:
+    return {
+        "executions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsOutputTypeDef(TypedDict):
+    executions: List[ExecutionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExecutionSummaryTypeDef](./type_defs.md#executionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef
+
+def get_value() -> ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef:
+    return {
+        "managedDeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef(TypedDict):
+    managedDeviceId: str,
+    type: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDevicesInputListDevicesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDevicesInputListDevicesPaginateTypeDef
+
+def get_value() -> ListDevicesInputListDevicesPaginateTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesInputListDevicesPaginateTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListExecutionsInputListExecutionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListExecutionsInputListExecutionsPaginateTypeDef
+
+def get_value() -> ListExecutionsInputListExecutionsPaginateTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsInputListExecutionsPaginateTypeDef(TypedDict):
+    taskId: str,
+    state: NotRequired[ExecutionStateType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTasksInputListTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListTasksInputListTasksPaginateTypeDef
+
+def get_value() -> ListTasksInputListTasksPaginateTypeDef:
+    return {
+        "state": ...,
+    }
+```
+
+```python title="Definition"
+class ListTasksInputListTasksPaginateTypeDef(TypedDict):
+    state: NotRequired[TaskStateType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDeviceResourcesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesOutputTypeDef
+
+def get_value() -> ListDeviceResourcesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "resources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceResourcesOutputTypeDef(TypedDict):
+    nextToken: str,
+    resources: List[ResourceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceSummaryTypeDef](./type_defs.md#resourcesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTasksOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snow_device_management.type_defs import ListTasksOutputTypeDef
+
+def get_value() -> ListTasksOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "tasks": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTasksOutputTypeDef(TypedDict):
+    nextToken: str,
+    tasks: List[TaskSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TaskSummaryTypeDef](./type_defs.md#tasksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceTypeDef
 
 ```python title="Usage Example"
@@ -481,453 +893,41 @@ class InstanceTypeDef(TypedDict):
 2. See [:material-code-braces: CpuOptionsTypeDef](./type_defs.md#cpuoptionstypedef) 
 3. See [:material-code-braces: SecurityGroupIdentifierTypeDef](./type_defs.md#securitygroupidentifiertypedef) 
 4. See [:material-code-braces: InstanceStateTypeDef](./type_defs.md#instancestatetypedef) 
-## ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef
+## InstanceSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef
+from mypy_boto3_snow_device_management.type_defs import InstanceSummaryTypeDef
 
-def get_value() -> ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef:
+def get_value() -> InstanceSummaryTypeDef:
     return {
-        "managedDeviceId": ...,
+        "instance": ...,
     }
 ```
 
 ```python title="Definition"
-class ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef(TypedDict):
-    managedDeviceId: str,
-    type: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class InstanceSummaryTypeDef(TypedDict):
+    instance: NotRequired[InstanceTypeDef],  # (1)
+    lastUpdatedAt: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDeviceResourcesInputRequestTypeDef
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+## DescribeDeviceEc2OutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesInputRequestTypeDef
+from mypy_boto3_snow_device_management.type_defs import DescribeDeviceEc2OutputTypeDef
 
-def get_value() -> ListDeviceResourcesInputRequestTypeDef:
+def get_value() -> DescribeDeviceEc2OutputTypeDef:
     return {
-        "managedDeviceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDeviceResourcesInputRequestTypeDef(TypedDict):
-    managedDeviceId: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    type: NotRequired[str],
-```
-
-## ListDeviceResourcesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDeviceResourcesOutputTypeDef
-
-def get_value() -> ListDeviceResourcesOutputTypeDef:
-    return {
-        "nextToken": ...,
-        "resources": ...,
+        "instances": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListDeviceResourcesOutputTypeDef(TypedDict):
-    nextToken: str,
-    resources: List[ResourceSummaryTypeDef],  # (1)
+class DescribeDeviceEc2OutputTypeDef(TypedDict):
+    instances: List[InstanceSummaryTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResourceSummaryTypeDef](./type_defs.md#resourcesummarytypedef) 
+1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDevicesInputListDevicesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDevicesInputListDevicesPaginateTypeDef
-
-def get_value() -> ListDevicesInputListDevicesPaginateTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDevicesInputListDevicesPaginateTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDevicesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDevicesInputRequestTypeDef
-
-def get_value() -> ListDevicesInputRequestTypeDef:
-    return {
-        "jobId": ...,
-    }
-```
-
-```python title="Definition"
-class ListDevicesInputRequestTypeDef(TypedDict):
-    jobId: NotRequired[str],
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListDevicesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListDevicesOutputTypeDef
-
-def get_value() -> ListDevicesOutputTypeDef:
-    return {
-        "devices": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDevicesOutputTypeDef(TypedDict):
-    devices: List[DeviceSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListExecutionsInputListExecutionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListExecutionsInputListExecutionsPaginateTypeDef
-
-def get_value() -> ListExecutionsInputListExecutionsPaginateTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsInputListExecutionsPaginateTypeDef(TypedDict):
-    taskId: str,
-    state: NotRequired[ExecutionStateType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListExecutionsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListExecutionsInputRequestTypeDef
-
-def get_value() -> ListExecutionsInputRequestTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsInputRequestTypeDef(TypedDict):
-    taskId: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    state: NotRequired[ExecutionStateType],  # (1)
-```
-
-1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
-## ListExecutionsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListExecutionsOutputTypeDef
-
-def get_value() -> ListExecutionsOutputTypeDef:
-    return {
-        "executions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsOutputTypeDef(TypedDict):
-    executions: List[ExecutionSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ExecutionSummaryTypeDef](./type_defs.md#executionsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListTagsForResourceInputRequestTypeDef
-
-def get_value() -> ListTagsForResourceInputRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceInputRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListTagsForResourceOutputTypeDef
-
-def get_value() -> ListTagsForResourceOutputTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceOutputTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTasksInputListTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListTasksInputListTasksPaginateTypeDef
-
-def get_value() -> ListTasksInputListTasksPaginateTypeDef:
-    return {
-        "state": ...,
-    }
-```
-
-```python title="Definition"
-class ListTasksInputListTasksPaginateTypeDef(TypedDict):
-    state: NotRequired[TaskStateType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTasksInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListTasksInputRequestTypeDef
-
-def get_value() -> ListTasksInputRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListTasksInputRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    state: NotRequired[TaskStateType],  # (1)
-```
-
-1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
-## ListTasksOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ListTasksOutputTypeDef
-
-def get_value() -> ListTasksOutputTypeDef:
-    return {
-        "nextToken": ...,
-        "tasks": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTasksOutputTypeDef(TypedDict):
-    nextToken: str,
-    tasks: List[TaskSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TaskSummaryTypeDef](./type_defs.md#tasksummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PhysicalNetworkInterfaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import PhysicalNetworkInterfaceTypeDef
-
-def get_value() -> PhysicalNetworkInterfaceTypeDef:
-    return {
-        "defaultGateway": ...,
-    }
-```
-
-```python title="Definition"
-class PhysicalNetworkInterfaceTypeDef(TypedDict):
-    defaultGateway: NotRequired[str],
-    ipAddress: NotRequired[str],
-    ipAddressAssignment: NotRequired[IpAddressAssignmentType],  # (1)
-    macAddress: NotRequired[str],
-    netmask: NotRequired[str],
-    physicalConnectorType: NotRequired[PhysicalConnectorTypeType],  # (2)
-    physicalNetworkInterfaceId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: IpAddressAssignmentType](./literals.md#ipaddressassignmenttype) 
-2. See [:material-code-brackets: PhysicalConnectorTypeType](./literals.md#physicalconnectortypetype) 
-## ResourceSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ResourceSummaryTypeDef
-
-def get_value() -> ResourceSummaryTypeDef:
-    return {
-        "resourceType": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceSummaryTypeDef(TypedDict):
-    resourceType: str,
-    arn: NotRequired[str],
-    id: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SecurityGroupIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import SecurityGroupIdentifierTypeDef
-
-def get_value() -> SecurityGroupIdentifierTypeDef:
-    return {
-        "groupId": ...,
-    }
-```
-
-```python title="Definition"
-class SecurityGroupIdentifierTypeDef(TypedDict):
-    groupId: NotRequired[str],
-    groupName: NotRequired[str],
-```
-
-## SoftwareInformationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import SoftwareInformationTypeDef
-
-def get_value() -> SoftwareInformationTypeDef:
-    return {
-        "installState": ...,
-    }
-```
-
-```python title="Definition"
-class SoftwareInformationTypeDef(TypedDict):
-    installState: NotRequired[str],
-    installedVersion: NotRequired[str],
-    installingVersion: NotRequired[str],
-```
-
-## TagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import TagResourceInputRequestTypeDef
-
-def get_value() -> TagResourceInputRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceInputRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## TaskSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import TaskSummaryTypeDef
-
-def get_value() -> TaskSummaryTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class TaskSummaryTypeDef(TypedDict):
-    taskId: str,
-    state: NotRequired[TaskStateType],  # (1)
-    tags: NotRequired[Dict[str, str]],
-    taskArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
-## UntagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_snow_device_management.type_defs import UntagResourceInputRequestTypeDef
-
-def get_value() -> UntagResourceInputRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceInputRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-

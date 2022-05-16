@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36071,42 +36071,42 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">AccountDetailsTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">ReviewDetailsTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountDetailsTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ReviewDetailsTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;MailType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Status&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#accountdetailstypedef">AccountDetailsTypeDef</a></li>
+<li><a href="type_defs/#reviewdetailstypedef">ReviewDetailsTypeDef</a></li>
 <li><a href="type_defs/#blacklistentrytypedef">BlacklistEntryTypeDef</a></li>
-<li><a href="type_defs/#bodytypedef">BodyTypeDef</a></li>
-<li><a href="type_defs/#bulkemailcontenttypedef">BulkEmailContentTypeDef</a></li>
+<li><a href="type_defs/#contenttypedef">ContentTypeDef</a></li>
+<li><a href="type_defs/#templatetypedef">TemplateTypeDef</a></li>
 <li><a href="type_defs/#bulkemailentryresulttypedef">BulkEmailEntryResultTypeDef</a></li>
-<li><a href="type_defs/#bulkemailentrytypedef">BulkEmailEntryTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchdestinationtypedef">CloudWatchDestinationTypeDef</a></li>
+<li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
+<li><a href="type_defs/#messagetagtypedef">MessageTagTypeDef</a></li>
 <li><a href="type_defs/#cloudwatchdimensionconfigurationtypedef">CloudWatchDimensionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#contactlistdestinationtypedef">ContactListDestinationTypeDef</a></li>
 <li><a href="type_defs/#contactlisttypedef">ContactListTypeDef</a></li>
-<li><a href="type_defs/#contacttypedef">ContactTypeDef</a></li>
-<li><a href="type_defs/#contenttypedef">ContentTypeDef</a></li>
-<li><a href="type_defs/#createconfigurationseteventdestinationrequestrequesttypedef">CreateConfigurationSetEventDestinationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createconfigurationsetrequestrequesttypedef">CreateConfigurationSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createcontactlistrequestrequesttypedef">CreateContactListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createcontactrequestrequesttypedef">CreateContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#topicpreferencetypedef">TopicPreferenceTypeDef</a></li>
+<li><a href="type_defs/#deliveryoptionstypedef">DeliveryOptionsTypeDef</a></li>
+<li><a href="type_defs/#reputationoptionstypedef">ReputationOptionsTypeDef</a></li>
+<li><a href="type_defs/#sendingoptionstypedef">SendingOptionsTypeDef</a></li>
+<li><a href="type_defs/#suppressionoptionstypedef">SuppressionOptionsTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#trackingoptionstypedef">TrackingOptionsTypeDef</a></li>
+<li><a href="type_defs/#topictypedef">TopicTypeDef</a></li>
 <li><a href="type_defs/#createcustomverificationemailtemplaterequestrequesttypedef">CreateCustomVerificationEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#creatededicatedippoolrequestrequesttypedef">CreateDedicatedIpPoolRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeliverabilitytestreportrequestrequesttypedef">CreateDeliverabilityTestReportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeliverabilitytestreportresponsetypedef">CreateDeliverabilityTestReportResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createemailidentitypolicyrequestrequesttypedef">CreateEmailIdentityPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createemailidentityrequestrequesttypedef">CreateEmailIdentityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createemailidentityresponsetypedef">CreateEmailIdentityResponseTypeDef</a></li>
-<li><a href="type_defs/#createemailtemplaterequestrequesttypedef">CreateEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createimportjobrequestrequesttypedef">CreateImportJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createimportjobresponsetypedef">CreateImportJobResponseTypeDef</a></li>
+<li><a href="type_defs/#dkimsigningattributestypedef">DkimSigningAttributesTypeDef</a></li>
+<li><a href="type_defs/#dkimattributestypedef">DkimAttributesTypeDef</a></li>
+<li><a href="type_defs/#emailtemplatecontenttypedef">EmailTemplateContentTypeDef</a></li>
+<li><a href="type_defs/#importdatasourcetypedef">ImportDataSourceTypeDef</a></li>
 <li><a href="type_defs/#customverificationemailtemplatemetadatatypedef">CustomVerificationEmailTemplateMetadataTypeDef</a></li>
-<li><a href="type_defs/#dailyvolumetypedef">DailyVolumeTypeDef</a></li>
+<li><a href="type_defs/#domainispplacementtypedef">DomainIspPlacementTypeDef</a></li>
+<li><a href="type_defs/#volumestatisticstypedef">VolumeStatisticsTypeDef</a></li>
 <li><a href="type_defs/#dedicatediptypedef">DedicatedIpTypeDef</a></li>
 <li><a href="type_defs/#deleteconfigurationseteventdestinationrequestrequesttypedef">DeleteConfigurationSetEventDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteconfigurationsetrequestrequesttypedef">DeleteConfigurationSetRequestRequestTypeDef</a></li>
@@ -36119,92 +36119,50 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deleteemailtemplaterequestrequesttypedef">DeleteEmailTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesuppresseddestinationrequestrequesttypedef">DeleteSuppressedDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deliverabilitytestreporttypedef">DeliverabilityTestReportTypeDef</a></li>
-<li><a href="type_defs/#deliveryoptionstypedef">DeliveryOptionsTypeDef</a></li>
-<li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
-<li><a href="type_defs/#dkimattributestypedef">DkimAttributesTypeDef</a></li>
-<li><a href="type_defs/#dkimsigningattributestypedef">DkimSigningAttributesTypeDef</a></li>
 <li><a href="type_defs/#domaindeliverabilitycampaigntypedef">DomainDeliverabilityCampaignTypeDef</a></li>
-<li><a href="type_defs/#domaindeliverabilitytrackingoptiontypedef">DomainDeliverabilityTrackingOptionTypeDef</a></li>
-<li><a href="type_defs/#domainispplacementtypedef">DomainIspPlacementTypeDef</a></li>
-<li><a href="type_defs/#emailcontenttypedef">EmailContentTypeDef</a></li>
-<li><a href="type_defs/#emailtemplatecontenttypedef">EmailTemplateContentTypeDef</a></li>
-<li><a href="type_defs/#emailtemplatemetadatatypedef">EmailTemplateMetadataTypeDef</a></li>
-<li><a href="type_defs/#eventdestinationdefinitiontypedef">EventDestinationDefinitionTypeDef</a></li>
-<li><a href="type_defs/#eventdestinationtypedef">EventDestinationTypeDef</a></li>
-<li><a href="type_defs/#failureinfotypedef">FailureInfoTypeDef</a></li>
-<li><a href="type_defs/#getaccountresponsetypedef">GetAccountResponseTypeDef</a></li>
-<li><a href="type_defs/#getblacklistreportsrequestrequesttypedef">GetBlacklistReportsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getblacklistreportsresponsetypedef">GetBlacklistReportsResponseTypeDef</a></li>
-<li><a href="type_defs/#getconfigurationseteventdestinationsrequestrequesttypedef">GetConfigurationSetEventDestinationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getconfigurationseteventdestinationsresponsetypedef">GetConfigurationSetEventDestinationsResponseTypeDef</a></li>
-<li><a href="type_defs/#getconfigurationsetrequestrequesttypedef">GetConfigurationSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getconfigurationsetresponsetypedef">GetConfigurationSetResponseTypeDef</a></li>
-<li><a href="type_defs/#getcontactlistrequestrequesttypedef">GetContactListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcontactlistresponsetypedef">GetContactListResponseTypeDef</a></li>
-<li><a href="type_defs/#getcontactrequestrequesttypedef">GetContactRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcontactresponsetypedef">GetContactResponseTypeDef</a></li>
-<li><a href="type_defs/#getcustomverificationemailtemplaterequestrequesttypedef">GetCustomVerificationEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcustomverificationemailtemplateresponsetypedef">GetCustomVerificationEmailTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#getdedicatediprequestrequesttypedef">GetDedicatedIpRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdedicatedipresponsetypedef">GetDedicatedIpResponseTypeDef</a></li>
-<li><a href="type_defs/#getdedicatedipsrequestrequesttypedef">GetDedicatedIpsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdedicatedipsresponsetypedef">GetDedicatedIpsResponseTypeDef</a></li>
-<li><a href="type_defs/#getdeliverabilitydashboardoptionsresponsetypedef">GetDeliverabilityDashboardOptionsResponseTypeDef</a></li>
-<li><a href="type_defs/#getdeliverabilitytestreportrequestrequesttypedef">GetDeliverabilityTestReportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeliverabilitytestreportresponsetypedef">GetDeliverabilityTestReportResponseTypeDef</a></li>
-<li><a href="type_defs/#getdomaindeliverabilitycampaignrequestrequesttypedef">GetDomainDeliverabilityCampaignRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdomaindeliverabilitycampaignresponsetypedef">GetDomainDeliverabilityCampaignResponseTypeDef</a></li>
-<li><a href="type_defs/#getdomainstatisticsreportrequestrequesttypedef">GetDomainStatisticsReportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdomainstatisticsreportresponsetypedef">GetDomainStatisticsReportResponseTypeDef</a></li>
-<li><a href="type_defs/#getemailidentitypoliciesrequestrequesttypedef">GetEmailIdentityPoliciesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getemailidentitypoliciesresponsetypedef">GetEmailIdentityPoliciesResponseTypeDef</a></li>
-<li><a href="type_defs/#getemailidentityrequestrequesttypedef">GetEmailIdentityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getemailidentityresponsetypedef">GetEmailIdentityResponseTypeDef</a></li>
-<li><a href="type_defs/#getemailtemplaterequestrequesttypedef">GetEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getemailtemplateresponsetypedef">GetEmailTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#getimportjobrequestrequesttypedef">GetImportJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimportjobresponsetypedef">GetImportJobResponseTypeDef</a></li>
-<li><a href="type_defs/#getsuppresseddestinationrequestrequesttypedef">GetSuppressedDestinationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsuppresseddestinationresponsetypedef">GetSuppressedDestinationResponseTypeDef</a></li>
-<li><a href="type_defs/#identityinfotypedef">IdentityInfoTypeDef</a></li>
-<li><a href="type_defs/#importdatasourcetypedef">ImportDataSourceTypeDef</a></li>
-<li><a href="type_defs/#importdestinationtypedef">ImportDestinationTypeDef</a></li>
-<li><a href="type_defs/#importjobsummarytypedef">ImportJobSummaryTypeDef</a></li>
 <li><a href="type_defs/#inboxplacementtrackingoptiontypedef">InboxPlacementTrackingOptionTypeDef</a></li>
-<li><a href="type_defs/#ispplacementtypedef">IspPlacementTypeDef</a></li>
+<li><a href="type_defs/#rawmessagetypedef">RawMessageTypeDef</a></li>
+<li><a href="type_defs/#emailtemplatemetadatatypedef">EmailTemplateMetadataTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehosedestinationtypedef">KinesisFirehoseDestinationTypeDef</a></li>
+<li><a href="type_defs/#pinpointdestinationtypedef">PinpointDestinationTypeDef</a></li>
+<li><a href="type_defs/#snsdestinationtypedef">SnsDestinationTypeDef</a></li>
+<li><a href="type_defs/#failureinfotypedef">FailureInfoTypeDef</a></li>
+<li><a href="type_defs/#sendquotatypedef">SendQuotaTypeDef</a></li>
+<li><a href="type_defs/#suppressionattributestypedef">SuppressionAttributesTypeDef</a></li>
+<li><a href="type_defs/#getblacklistreportsrequestrequesttypedef">GetBlacklistReportsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getconfigurationseteventdestinationsrequestrequesttypedef">GetConfigurationSetEventDestinationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getconfigurationsetrequestrequesttypedef">GetConfigurationSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcontactlistrequestrequesttypedef">GetContactListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcontactrequestrequesttypedef">GetContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcustomverificationemailtemplaterequestrequesttypedef">GetCustomVerificationEmailTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdedicatediprequestrequesttypedef">GetDedicatedIpRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdedicatedipsrequestrequesttypedef">GetDedicatedIpsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdeliverabilitytestreportrequestrequesttypedef">GetDeliverabilityTestReportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#placementstatisticstypedef">PlacementStatisticsTypeDef</a></li>
+<li><a href="type_defs/#getdomaindeliverabilitycampaignrequestrequesttypedef">GetDomainDeliverabilityCampaignRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdomainstatisticsreportrequestrequesttypedef">GetDomainStatisticsReportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getemailidentitypoliciesrequestrequesttypedef">GetEmailIdentityPoliciesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getemailidentityrequestrequesttypedef">GetEmailIdentityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mailfromattributestypedef">MailFromAttributesTypeDef</a></li>
+<li><a href="type_defs/#getemailtemplaterequestrequesttypedef">GetEmailTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getimportjobrequestrequesttypedef">GetImportJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getsuppresseddestinationrequestrequesttypedef">GetSuppressedDestinationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#identityinfotypedef">IdentityInfoTypeDef</a></li>
+<li><a href="type_defs/#suppressionlistdestinationtypedef">SuppressionListDestinationTypeDef</a></li>
 <li><a href="type_defs/#listconfigurationsetsrequestrequesttypedef">ListConfigurationSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listconfigurationsetsresponsetypedef">ListConfigurationSetsResponseTypeDef</a></li>
 <li><a href="type_defs/#listcontactlistsrequestrequesttypedef">ListContactListsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcontactlistsresponsetypedef">ListContactListsResponseTypeDef</a></li>
-<li><a href="type_defs/#listcontactsfiltertypedef">ListContactsFilterTypeDef</a></li>
-<li><a href="type_defs/#listcontactsrequestrequesttypedef">ListContactsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcontactsresponsetypedef">ListContactsResponseTypeDef</a></li>
+<li><a href="type_defs/#topicfiltertypedef">TopicFilterTypeDef</a></li>
 <li><a href="type_defs/#listcustomverificationemailtemplatesrequestrequesttypedef">ListCustomVerificationEmailTemplatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcustomverificationemailtemplatesresponsetypedef">ListCustomVerificationEmailTemplatesResponseTypeDef</a></li>
 <li><a href="type_defs/#listdedicatedippoolsrequestrequesttypedef">ListDedicatedIpPoolsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdedicatedippoolsresponsetypedef">ListDedicatedIpPoolsResponseTypeDef</a></li>
 <li><a href="type_defs/#listdeliverabilitytestreportsrequestrequesttypedef">ListDeliverabilityTestReportsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeliverabilitytestreportsresponsetypedef">ListDeliverabilityTestReportsResponseTypeDef</a></li>
 <li><a href="type_defs/#listdomaindeliverabilitycampaignsrequestrequesttypedef">ListDomainDeliverabilityCampaignsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdomaindeliverabilitycampaignsresponsetypedef">ListDomainDeliverabilityCampaignsResponseTypeDef</a></li>
 <li><a href="type_defs/#listemailidentitiesrequestrequesttypedef">ListEmailIdentitiesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listemailidentitiesresponsetypedef">ListEmailIdentitiesResponseTypeDef</a></li>
 <li><a href="type_defs/#listemailtemplatesrequestrequesttypedef">ListEmailTemplatesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listemailtemplatesresponsetypedef">ListEmailTemplatesResponseTypeDef</a></li>
 <li><a href="type_defs/#listimportjobsrequestrequesttypedef">ListImportJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimportjobsresponsetypedef">ListImportJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#listmanagementoptionstypedef">ListManagementOptionsTypeDef</a></li>
 <li><a href="type_defs/#listsuppresseddestinationsrequestrequesttypedef">ListSuppressedDestinationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsuppresseddestinationsresponsetypedef">ListSuppressedDestinationsResponseTypeDef</a></li>
+<li><a href="type_defs/#suppresseddestinationsummarytypedef">SuppressedDestinationSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#mailfromattributestypedef">MailFromAttributesTypeDef</a></li>
-<li><a href="type_defs/#messagetagtypedef">MessageTagTypeDef</a></li>
-<li><a href="type_defs/#messagetypedef">MessageTypeDef</a></li>
-<li><a href="type_defs/#overallvolumetypedef">OverallVolumeTypeDef</a></li>
-<li><a href="type_defs/#pinpointdestinationtypedef">PinpointDestinationTypeDef</a></li>
-<li><a href="type_defs/#placementstatisticstypedef">PlacementStatisticsTypeDef</a></li>
 <li><a href="type_defs/#putaccountdedicatedipwarmupattributesrequestrequesttypedef">PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putaccountdetailsrequestrequesttypedef">PutAccountDetailsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putaccountsendingattributesrequestrequesttypedef">PutAccountSendingAttributesRequestRequestTypeDef</a></li>
@@ -36216,52 +36174,94 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#putconfigurationsettrackingoptionsrequestrequesttypedef">PutConfigurationSetTrackingOptionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putdedicatedipinpoolrequestrequesttypedef">PutDedicatedIpInPoolRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putdedicatedipwarmupattributesrequestrequesttypedef">PutDedicatedIpWarmupAttributesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putdeliverabilitydashboardoptionrequestrequesttypedef">PutDeliverabilityDashboardOptionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putemailidentityconfigurationsetattributesrequestrequesttypedef">PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putemailidentitydkimattributesrequestrequesttypedef">PutEmailIdentityDkimAttributesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putemailidentitydkimsigningattributesrequestrequesttypedef">PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putemailidentitydkimsigningattributesresponsetypedef">PutEmailIdentityDkimSigningAttributesResponseTypeDef</a></li>
 <li><a href="type_defs/#putemailidentityfeedbackattributesrequestrequesttypedef">PutEmailIdentityFeedbackAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putemailidentitymailfromattributesrequestrequesttypedef">PutEmailIdentityMailFromAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putsuppresseddestinationrequestrequesttypedef">PutSuppressedDestinationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#rawmessagetypedef">RawMessageTypeDef</a></li>
-<li><a href="type_defs/#replacementemailcontenttypedef">ReplacementEmailContentTypeDef</a></li>
 <li><a href="type_defs/#replacementtemplatetypedef">ReplacementTemplateTypeDef</a></li>
-<li><a href="type_defs/#reputationoptionstypedef">ReputationOptionsTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#reviewdetailstypedef">ReviewDetailsTypeDef</a></li>
-<li><a href="type_defs/#sendbulkemailrequestrequesttypedef">SendBulkEmailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#sendbulkemailresponsetypedef">SendBulkEmailResponseTypeDef</a></li>
 <li><a href="type_defs/#sendcustomverificationemailrequestrequesttypedef">SendCustomVerificationEmailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#sendcustomverificationemailresponsetypedef">SendCustomVerificationEmailResponseTypeDef</a></li>
-<li><a href="type_defs/#sendemailrequestrequesttypedef">SendEmailRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#sendemailresponsetypedef">SendEmailResponseTypeDef</a></li>
-<li><a href="type_defs/#sendquotatypedef">SendQuotaTypeDef</a></li>
-<li><a href="type_defs/#sendingoptionstypedef">SendingOptionsTypeDef</a></li>
-<li><a href="type_defs/#snsdestinationtypedef">SnsDestinationTypeDef</a></li>
 <li><a href="type_defs/#suppresseddestinationattributestypedef">SuppressedDestinationAttributesTypeDef</a></li>
-<li><a href="type_defs/#suppresseddestinationsummarytypedef">SuppressedDestinationSummaryTypeDef</a></li>
-<li><a href="type_defs/#suppresseddestinationtypedef">SuppressedDestinationTypeDef</a></li>
-<li><a href="type_defs/#suppressionattributestypedef">SuppressionAttributesTypeDef</a></li>
-<li><a href="type_defs/#suppressionlistdestinationtypedef">SuppressionListDestinationTypeDef</a></li>
-<li><a href="type_defs/#suppressionoptionstypedef">SuppressionOptionsTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#templatetypedef">TemplateTypeDef</a></li>
 <li><a href="type_defs/#testrenderemailtemplaterequestrequesttypedef">TestRenderEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#testrenderemailtemplateresponsetypedef">TestRenderEmailTemplateResponseTypeDef</a></li>
-<li><a href="type_defs/#topicfiltertypedef">TopicFilterTypeDef</a></li>
-<li><a href="type_defs/#topicpreferencetypedef">TopicPreferenceTypeDef</a></li>
-<li><a href="type_defs/#topictypedef">TopicTypeDef</a></li>
-<li><a href="type_defs/#trackingoptionstypedef">TrackingOptionsTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateconfigurationseteventdestinationrequestrequesttypedef">UpdateConfigurationSetEventDestinationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatecontactlistrequestrequesttypedef">UpdateContactListRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatecontactrequestrequesttypedef">UpdateContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecustomverificationemailtemplaterequestrequesttypedef">UpdateCustomVerificationEmailTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateemailidentitypolicyrequestrequesttypedef">UpdateEmailIdentityPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#accountdetailstypedef">AccountDetailsTypeDef</a></li>
+<li><a href="type_defs/#bodytypedef">BodyTypeDef</a></li>
+<li><a href="type_defs/#bulkemailcontenttypedef">BulkEmailContentTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchdestinationtypedef">CloudWatchDestinationTypeDef</a></li>
+<li><a href="type_defs/#contacttypedef">ContactTypeDef</a></li>
+<li><a href="type_defs/#createcontactrequestrequesttypedef">CreateContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatecontactrequestrequesttypedef">UpdateContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#creatededicatedippoolrequestrequesttypedef">CreateDedicatedIpPoolRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createconfigurationsetrequestrequesttypedef">CreateConfigurationSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createcontactlistrequestrequesttypedef">CreateContactListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatecontactlistrequestrequesttypedef">UpdateContactListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdeliverabilitytestreportresponsetypedef">CreateDeliverabilityTestReportResponseTypeDef</a></li>
+<li><a href="type_defs/#createimportjobresponsetypedef">CreateImportJobResponseTypeDef</a></li>
+<li><a href="type_defs/#getblacklistreportsresponsetypedef">GetBlacklistReportsResponseTypeDef</a></li>
+<li><a href="type_defs/#getconfigurationsetresponsetypedef">GetConfigurationSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getcontactlistresponsetypedef">GetContactListResponseTypeDef</a></li>
+<li><a href="type_defs/#getcontactresponsetypedef">GetContactResponseTypeDef</a></li>
+<li><a href="type_defs/#getcustomverificationemailtemplateresponsetypedef">GetCustomVerificationEmailTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#getemailidentitypoliciesresponsetypedef">GetEmailIdentityPoliciesResponseTypeDef</a></li>
+<li><a href="type_defs/#listconfigurationsetsresponsetypedef">ListConfigurationSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listcontactlistsresponsetypedef">ListContactListsResponseTypeDef</a></li>
+<li><a href="type_defs/#listdedicatedippoolsresponsetypedef">ListDedicatedIpPoolsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#putemailidentitydkimsigningattributesresponsetypedef">PutEmailIdentityDkimSigningAttributesResponseTypeDef</a></li>
+<li><a href="type_defs/#sendbulkemailresponsetypedef">SendBulkEmailResponseTypeDef</a></li>
+<li><a href="type_defs/#sendcustomverificationemailresponsetypedef">SendCustomVerificationEmailResponseTypeDef</a></li>
+<li><a href="type_defs/#sendemailresponsetypedef">SendEmailResponseTypeDef</a></li>
+<li><a href="type_defs/#testrenderemailtemplateresponsetypedef">TestRenderEmailTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#createemailidentityrequestrequesttypedef">CreateEmailIdentityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putemailidentitydkimsigningattributesrequestrequesttypedef">PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createemailidentityresponsetypedef">CreateEmailIdentityResponseTypeDef</a></li>
+<li><a href="type_defs/#createemailtemplaterequestrequesttypedef">CreateEmailTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getemailtemplateresponsetypedef">GetEmailTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#updateemailtemplaterequestrequesttypedef">UpdateEmailTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#volumestatisticstypedef">VolumeStatisticsTypeDef</a></li>
+<li><a href="type_defs/#listcustomverificationemailtemplatesresponsetypedef">ListCustomVerificationEmailTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#dailyvolumetypedef">DailyVolumeTypeDef</a></li>
+<li><a href="type_defs/#overallvolumetypedef">OverallVolumeTypeDef</a></li>
+<li><a href="type_defs/#getdedicatedipresponsetypedef">GetDedicatedIpResponseTypeDef</a></li>
+<li><a href="type_defs/#getdedicatedipsresponsetypedef">GetDedicatedIpsResponseTypeDef</a></li>
+<li><a href="type_defs/#listdeliverabilitytestreportsresponsetypedef">ListDeliverabilityTestReportsResponseTypeDef</a></li>
+<li><a href="type_defs/#getdomaindeliverabilitycampaignresponsetypedef">GetDomainDeliverabilityCampaignResponseTypeDef</a></li>
+<li><a href="type_defs/#listdomaindeliverabilitycampaignsresponsetypedef">ListDomainDeliverabilityCampaignsResponseTypeDef</a></li>
+<li><a href="type_defs/#domaindeliverabilitytrackingoptiontypedef">DomainDeliverabilityTrackingOptionTypeDef</a></li>
+<li><a href="type_defs/#listemailtemplatesresponsetypedef">ListEmailTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#ispplacementtypedef">IspPlacementTypeDef</a></li>
+<li><a href="type_defs/#getemailidentityresponsetypedef">GetEmailIdentityResponseTypeDef</a></li>
+<li><a href="type_defs/#listemailidentitiesresponsetypedef">ListEmailIdentitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#importdestinationtypedef">ImportDestinationTypeDef</a></li>
+<li><a href="type_defs/#listcontactsfiltertypedef">ListContactsFilterTypeDef</a></li>
+<li><a href="type_defs/#listsuppresseddestinationsresponsetypedef">ListSuppressedDestinationsResponseTypeDef</a></li>
+<li><a href="type_defs/#replacementemailcontenttypedef">ReplacementEmailContentTypeDef</a></li>
+<li><a href="type_defs/#suppresseddestinationtypedef">SuppressedDestinationTypeDef</a></li>
+<li><a href="type_defs/#getaccountresponsetypedef">GetAccountResponseTypeDef</a></li>
+<li><a href="type_defs/#messagetypedef">MessageTypeDef</a></li>
+<li><a href="type_defs/#eventdestinationdefinitiontypedef">EventDestinationDefinitionTypeDef</a></li>
+<li><a href="type_defs/#eventdestinationtypedef">EventDestinationTypeDef</a></li>
+<li><a href="type_defs/#listcontactsresponsetypedef">ListContactsResponseTypeDef</a></li>
+<li><a href="type_defs/#getdomainstatisticsreportresponsetypedef">GetDomainStatisticsReportResponseTypeDef</a></li>
+<li><a href="type_defs/#getdeliverabilitydashboardoptionsresponsetypedef">GetDeliverabilityDashboardOptionsResponseTypeDef</a></li>
+<li><a href="type_defs/#putdeliverabilitydashboardoptionrequestrequesttypedef">PutDeliverabilityDashboardOptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getdeliverabilitytestreportresponsetypedef">GetDeliverabilityTestReportResponseTypeDef</a></li>
+<li><a href="type_defs/#createimportjobrequestrequesttypedef">CreateImportJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getimportjobresponsetypedef">GetImportJobResponseTypeDef</a></li>
+<li><a href="type_defs/#importjobsummarytypedef">ImportJobSummaryTypeDef</a></li>
+<li><a href="type_defs/#listcontactsrequestrequesttypedef">ListContactsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#bulkemailentrytypedef">BulkEmailEntryTypeDef</a></li>
+<li><a href="type_defs/#getsuppresseddestinationresponsetypedef">GetSuppressedDestinationResponseTypeDef</a></li>
+<li><a href="type_defs/#emailcontenttypedef">EmailContentTypeDef</a></li>
+<li><a href="type_defs/#createconfigurationseteventdestinationrequestrequesttypedef">CreateConfigurationSetEventDestinationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateconfigurationseteventdestinationrequestrequesttypedef">UpdateConfigurationSetEventDestinationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getconfigurationseteventdestinationsresponsetypedef">GetConfigurationSetEventDestinationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listimportjobsresponsetypedef">ListImportJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#sendbulkemailrequestrequesttypedef">SendBulkEmailRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdeliverabilitytestreportrequestrequesttypedef">CreateDeliverabilityTestReportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#sendemailrequestrequesttypedef">SendEmailRequestRequestTypeDef</a></li>
 </ul>
 
               
@@ -36331,7 +36331,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

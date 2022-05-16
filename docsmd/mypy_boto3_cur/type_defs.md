@@ -23,100 +23,30 @@ class DeleteReportDefinitionRequestRequestTypeDef(TypedDict):
     ReportName: NotRequired[str],
 ```
 
-## DeleteReportDefinitionResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef
+from mypy_boto3_cur.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> DeleteReportDefinitionResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ResponseMessage": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteReportDefinitionResponseTypeDef(TypedDict):
-    ResponseMessage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
-
-def get_value() -> DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeReportDefinitionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestRequestTypeDef
-
-def get_value() -> DescribeReportDefinitionsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReportDefinitionsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## DescribeReportDefinitionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
-
-def get_value() -> DescribeReportDefinitionsResponseTypeDef:
-    return {
-        "ReportDefinitions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReportDefinitionsResponseTypeDef(TypedDict):
-    ReportDefinitions: List[ReportDefinitionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyReportDefinitionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestRequestTypeDef
-
-def get_value() -> ModifyReportDefinitionRequestRequestTypeDef:
-    return {
-        "ReportName": ...,
-        "ReportDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyReportDefinitionRequestRequestTypeDef(TypedDict):
-    ReportName: str,
-    ReportDefinition: ReportDefinitionTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -135,23 +65,23 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
-## PutReportDefinitionRequestRequestTypeDef
+## DescribeReportDefinitionsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cur.type_defs import PutReportDefinitionRequestRequestTypeDef
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestRequestTypeDef
 
-def get_value() -> PutReportDefinitionRequestRequestTypeDef:
+def get_value() -> DescribeReportDefinitionsRequestRequestTypeDef:
     return {
-        "ReportDefinition": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class PutReportDefinitionRequestRequestTypeDef(TypedDict):
-    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+class DescribeReportDefinitionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 ## ReportDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -193,27 +123,97 @@ class ReportDefinitionTypeDef(TypedDict):
 5. See [:material-code-brackets: AWSRegionType](./literals.md#awsregiontype) 
 6. See [:material-code-brackets: AdditionalArtifactType](./literals.md#additionalartifacttype) 
 7. See [:material-code-brackets: ReportVersioningType](./literals.md#reportversioningtype) 
-## ResponseMetadataTypeDef
+## DeleteReportDefinitionResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cur.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> DeleteReportDefinitionResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "ResponseMessage": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class DeleteReportDefinitionResponseTypeDef(TypedDict):
+    ResponseMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
+
+def get_value() -> DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeReportDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
+
+def get_value() -> DescribeReportDefinitionsResponseTypeDef:
+    return {
+        "ReportDefinitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReportDefinitionsResponseTypeDef(TypedDict):
+    ReportDefinitions: List[ReportDefinitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyReportDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestRequestTypeDef
+
+def get_value() -> ModifyReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportName": ...,
+        "ReportDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyReportDefinitionRequestRequestTypeDef(TypedDict):
+    ReportName: str,
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
+## PutReportDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cur.type_defs import PutReportDefinitionRequestRequestTypeDef
+
+def get_value() -> PutReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class PutReportDefinitionRequestRequestTypeDef(TypedDict):
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 

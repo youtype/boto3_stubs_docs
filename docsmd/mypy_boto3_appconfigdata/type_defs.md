@@ -23,31 +23,6 @@ class GetLatestConfigurationRequestRequestTypeDef(TypedDict):
     ConfigurationToken: str,
 ```
 
-## GetLatestConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationResponseTypeDef
-
-def get_value() -> GetLatestConfigurationResponseTypeDef:
-    return {
-        "NextPollConfigurationToken": ...,
-        "NextPollIntervalInSeconds": ...,
-        "ContentType": ...,
-        "Configuration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLatestConfigurationResponseTypeDef(TypedDict):
-    NextPollConfigurationToken: str,
-    NextPollIntervalInSeconds: int,
-    ContentType: str,
-    Configuration: StreamingBody,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -93,6 +68,31 @@ class StartConfigurationSessionRequestRequestTypeDef(TypedDict):
     RequiredMinimumPollIntervalInSeconds: NotRequired[int],
 ```
 
+## GetLatestConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationResponseTypeDef
+
+def get_value() -> GetLatestConfigurationResponseTypeDef:
+    return {
+        "NextPollConfigurationToken": ...,
+        "NextPollIntervalInSeconds": ...,
+        "ContentType": ...,
+        "Configuration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLatestConfigurationResponseTypeDef(TypedDict):
+    NextPollConfigurationToken: str,
+    NextPollIntervalInSeconds: int,
+    ContentType: str,
+    Configuration: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartConfigurationSessionResponseTypeDef
 
 ```python title="Usage Example"

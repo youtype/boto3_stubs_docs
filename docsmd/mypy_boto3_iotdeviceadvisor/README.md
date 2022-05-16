@@ -93,45 +93,49 @@ def get_value() -> StatusType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionRequestRequestTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateSuiteDefinitionRequestRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "suiteDefinitionConfiguration": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
-- [CreateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#createsuitedefinitionrequestrequesttypedef)
-- [CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeleteSuiteDefinitionRequestRequestTypeDef](./type_defs.md#deletesuitedefinitionrequestrequesttypedef)
 - [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
 - [GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef)
-- [GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef)
 - [GetSuiteDefinitionRequestRequestTypeDef](./type_defs.md#getsuitedefinitionrequestrequesttypedef)
-- [GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef)
 - [GetSuiteRunReportRequestRequestTypeDef](./type_defs.md#getsuiterunreportrequestrequesttypedef)
-- [GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef)
 - [GetSuiteRunRequestRequestTypeDef](./type_defs.md#getsuiterunrequestrequesttypedef)
-- [GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef)
-- [GroupResultTypeDef](./type_defs.md#groupresulttypedef)
+- [TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)
 - [ListSuiteDefinitionsRequestRequestTypeDef](./type_defs.md#listsuitedefinitionsrequestrequesttypedef)
-- [ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef)
 - [ListSuiteRunsRequestRequestTypeDef](./type_defs.md#listsuiterunsrequestrequesttypedef)
-- [ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef)
+- [SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartSuiteRunRequestRequestTypeDef](./type_defs.md#startsuiterunrequestrequesttypedef)
-- [StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef)
 - [StopSuiteRunRequestRequestTypeDef](./type_defs.md#stopsuiterunrequestrequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef)
+- [GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef)
+- [GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef)
+- [UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef)
 - [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 - [SuiteDefinitionInformationTypeDef](./type_defs.md#suitedefinitioninformationtypedef)
 - [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
-- [SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)
-- [TestResultTypeDef](./type_defs.md#testresulttypedef)
-- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [GroupResultTypeDef](./type_defs.md#groupresulttypedef)
+- [ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef)
+- [CreateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#createsuitedefinitionrequestrequesttypedef)
+- [GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef)
 - [UpdateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#updatesuitedefinitionrequestrequesttypedef)
-- [UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef)
+- [ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef)
+- [StartSuiteRunRequestRequestTypeDef](./type_defs.md#startsuiterunrequestrequesttypedef)
+- [TestResultTypeDef](./type_defs.md#testresulttypedef)
+- [GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef)
 

@@ -33,6 +33,69 @@ class CreateTokenRequestRequestTypeDef(TypedDict):
     redirectUri: NotRequired[str],
 ```
 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_oidc.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## RegisterClientRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_oidc.type_defs import RegisterClientRequestRequestTypeDef
+
+def get_value() -> RegisterClientRequestRequestTypeDef:
+    return {
+        "clientName": ...,
+        "clientType": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterClientRequestRequestTypeDef(TypedDict):
+    clientName: str,
+    clientType: str,
+    scopes: NotRequired[Sequence[str]],
+```
+
+## StartDeviceAuthorizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_oidc.type_defs import StartDeviceAuthorizationRequestRequestTypeDef
+
+def get_value() -> StartDeviceAuthorizationRequestRequestTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+        "startUrl": ...,
+    }
+```
+
+```python title="Definition"
+class StartDeviceAuthorizationRequestRequestTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    startUrl: str,
+```
+
 ## CreateTokenResponseTypeDef
 
 ```python title="Usage Example"
@@ -60,25 +123,6 @@ class CreateTokenResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RegisterClientRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sso_oidc.type_defs import RegisterClientRequestRequestTypeDef
-
-def get_value() -> RegisterClientRequestRequestTypeDef:
-    return {
-        "clientName": ...,
-        "clientType": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterClientRequestRequestTypeDef(TypedDict):
-    clientName: str,
-    clientType: str,
-    scopes: NotRequired[Sequence[str]],
-```
-
 ## RegisterClientResponseTypeDef
 
 ```python title="Usage Example"
@@ -108,50 +152,6 @@ class RegisterClientResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sso_oidc.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## StartDeviceAuthorizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sso_oidc.type_defs import StartDeviceAuthorizationRequestRequestTypeDef
-
-def get_value() -> StartDeviceAuthorizationRequestRequestTypeDef:
-    return {
-        "clientId": ...,
-        "clientSecret": ...,
-        "startUrl": ...,
-    }
-```
-
-```python title="Definition"
-class StartDeviceAuthorizationRequestRequestTypeDef(TypedDict):
-    clientId: str,
-    clientSecret: str,
-    startUrl: str,
-```
-
 ## StartDeviceAuthorizationResponseTypeDef
 
 ```python title="Usage Example"

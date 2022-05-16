@@ -30,35 +30,30 @@ class BatchExecuteStatementInputRequestTypeDef(TypedDict):
     WithEvent: NotRequired[bool],
 ```
 
-## BatchExecuteStatementOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementOutputTypeDef
+from mypy_boto3_redshift_data.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BatchExecuteStatementOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ClusterIdentifier": ...,
-        "CreatedAt": ...,
-        "Database": ...,
-        "DbUser": ...,
-        "Id": ...,
-        "SecretArn": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchExecuteStatementOutputTypeDef(TypedDict):
-    ClusterIdentifier: str,
-    CreatedAt: datetime,
-    Database: str,
-    DbUser: str,
-    Id: str,
-    SecretArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelStatementRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -75,25 +70,6 @@ class CancelStatementRequestRequestTypeDef(TypedDict):
     Id: str,
 ```
 
-## CancelStatementResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef
-
-def get_value() -> CancelStatementResponseTypeDef:
-    return {
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CancelStatementResponseTypeDef(TypedDict):
-    Status: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ColumnMetadataTypeDef
 
 ```python title="Usage Example"
@@ -138,6 +114,433 @@ class DescribeStatementRequestRequestTypeDef(TypedDict):
     Id: str,
 ```
 
+## SqlParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import SqlParameterTypeDef
+
+def get_value() -> SqlParameterTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class SqlParameterTypeDef(TypedDict):
+    name: str,
+    value: str,
+```
+
+## SubStatementDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import SubStatementDataTypeDef
+
+def get_value() -> SubStatementDataTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class SubStatementDataTypeDef(TypedDict):
+    Id: str,
+    CreatedAt: NotRequired[datetime],
+    Duration: NotRequired[int],
+    Error: NotRequired[str],
+    HasResultSet: NotRequired[bool],
+    QueryString: NotRequired[str],
+    RedshiftQueryId: NotRequired[int],
+    ResultRows: NotRequired[int],
+    ResultSize: NotRequired[int],
+    Status: NotRequired[StatementStatusStringType],  # (1)
+    UpdatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: StatementStatusStringType](./literals.md#statementstatusstringtype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## DescribeTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import DescribeTableRequestRequestTypeDef
+
+def get_value() -> DescribeTableRequestRequestTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTableRequestRequestTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    ConnectedDatabase: NotRequired[str],
+    DbUser: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Schema: NotRequired[str],
+    SecretArn: NotRequired[str],
+    Table: NotRequired[str],
+```
+
+## FieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import FieldTypeDef
+
+def get_value() -> FieldTypeDef:
+    return {
+        "blobValue": ...,
+    }
+```
+
+```python title="Definition"
+class FieldTypeDef(TypedDict):
+    blobValue: NotRequired[bytes],
+    booleanValue: NotRequired[bool],
+    doubleValue: NotRequired[float],
+    isNull: NotRequired[bool],
+    longValue: NotRequired[int],
+    stringValue: NotRequired[str],
+```
+
+## GetStatementResultRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import GetStatementResultRequestRequestTypeDef
+
+def get_value() -> GetStatementResultRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetStatementResultRequestRequestTypeDef(TypedDict):
+    Id: str,
+    NextToken: NotRequired[str],
+```
+
+## ListDatabasesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestRequestTypeDef
+
+def get_value() -> ListDatabasesRequestRequestTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatabasesRequestRequestTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    DbUser: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SecretArn: NotRequired[str],
+```
+
+## ListSchemasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListSchemasRequestRequestTypeDef
+
+def get_value() -> ListSchemasRequestRequestTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasRequestRequestTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    ConnectedDatabase: NotRequired[str],
+    DbUser: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SchemaPattern: NotRequired[str],
+    SecretArn: NotRequired[str],
+```
+
+## ListStatementsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListStatementsRequestRequestTypeDef
+
+def get_value() -> ListStatementsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListStatementsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    RoleLevel: NotRequired[bool],
+    StatementName: NotRequired[str],
+    Status: NotRequired[StatusStringType],  # (1)
+```
+
+1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
+## ListTablesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListTablesRequestRequestTypeDef
+
+def get_value() -> ListTablesRequestRequestTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class ListTablesRequestRequestTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    ConnectedDatabase: NotRequired[str],
+    DbUser: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SchemaPattern: NotRequired[str],
+    SecretArn: NotRequired[str],
+    TablePattern: NotRequired[str],
+```
+
+## TableMemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import TableMemberTypeDef
+
+def get_value() -> TableMemberTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class TableMemberTypeDef(TypedDict):
+    name: NotRequired[str],
+    schema: NotRequired[str],
+    type: NotRequired[str],
+```
+
+## BatchExecuteStatementOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementOutputTypeDef
+
+def get_value() -> BatchExecuteStatementOutputTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "CreatedAt": ...,
+        "Database": ...,
+        "DbUser": ...,
+        "Id": ...,
+        "SecretArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchExecuteStatementOutputTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    CreatedAt: datetime,
+    Database: str,
+    DbUser: str,
+    Id: str,
+    SecretArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CancelStatementResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef
+
+def get_value() -> CancelStatementResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelStatementResponseTypeDef(TypedDict):
+    Status: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExecuteStatementOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputTypeDef
+
+def get_value() -> ExecuteStatementOutputTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "CreatedAt": ...,
+        "Database": ...,
+        "DbUser": ...,
+        "Id": ...,
+        "SecretArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExecuteStatementOutputTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    CreatedAt: datetime,
+    Database: str,
+    DbUser: str,
+    Id: str,
+    SecretArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatabasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseTypeDef
+
+def get_value() -> ListDatabasesResponseTypeDef:
+    return {
+        "Databases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatabasesResponseTypeDef(TypedDict):
+    Databases: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListSchemasResponseTypeDef
+
+def get_value() -> ListSchemasResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Schemas": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasResponseTypeDef(TypedDict):
+    NextToken: str,
+    Schemas: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTableResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import DescribeTableResponseTypeDef
+
+def get_value() -> DescribeTableResponseTypeDef:
+    return {
+        "ColumnList": ...,
+        "NextToken": ...,
+        "TableName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTableResponseTypeDef(TypedDict):
+    ColumnList: List[ColumnMetadataTypeDef],  # (1)
+    NextToken: str,
+    TableName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExecuteStatementInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputRequestTypeDef
+
+def get_value() -> ExecuteStatementInputRequestTypeDef:
+    return {
+        "Database": ...,
+        "Sql": ...,
+    }
+```
+
+```python title="Definition"
+class ExecuteStatementInputRequestTypeDef(TypedDict):
+    Database: str,
+    Sql: str,
+    ClusterIdentifier: NotRequired[str],
+    DbUser: NotRequired[str],
+    Parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (1)
+    SecretArn: NotRequired[str],
+    StatementName: NotRequired[str],
+    WithEvent: NotRequired[bool],
+```
+
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+## StatementDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import StatementDataTypeDef
+
+def get_value() -> StatementDataTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class StatementDataTypeDef(TypedDict):
+    Id: str,
+    CreatedAt: NotRequired[datetime],
+    IsBatchStatement: NotRequired[bool],
+    QueryParameters: NotRequired[List[SqlParameterTypeDef]],  # (1)
+    QueryString: NotRequired[str],
+    QueryStrings: NotRequired[List[str]],
+    SecretArn: NotRequired[str],
+    StatementName: NotRequired[str],
+    Status: NotRequired[StatusStringType],  # (2)
+    UpdatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
 ## DescribeStatementResponseTypeDef
 
 ```python title="Usage Example"
@@ -218,129 +621,6 @@ class DescribeTableRequestDescribeTablePaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeTableRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import DescribeTableRequestRequestTypeDef
-
-def get_value() -> DescribeTableRequestRequestTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTableRequestRequestTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    ConnectedDatabase: NotRequired[str],
-    DbUser: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    Schema: NotRequired[str],
-    SecretArn: NotRequired[str],
-    Table: NotRequired[str],
-```
-
-## DescribeTableResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import DescribeTableResponseTypeDef
-
-def get_value() -> DescribeTableResponseTypeDef:
-    return {
-        "ColumnList": ...,
-        "NextToken": ...,
-        "TableName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTableResponseTypeDef(TypedDict):
-    ColumnList: List[ColumnMetadataTypeDef],  # (1)
-    NextToken: str,
-    TableName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ExecuteStatementInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputRequestTypeDef
-
-def get_value() -> ExecuteStatementInputRequestTypeDef:
-    return {
-        "Database": ...,
-        "Sql": ...,
-    }
-```
-
-```python title="Definition"
-class ExecuteStatementInputRequestTypeDef(TypedDict):
-    Database: str,
-    Sql: str,
-    ClusterIdentifier: NotRequired[str],
-    DbUser: NotRequired[str],
-    Parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (1)
-    SecretArn: NotRequired[str],
-    StatementName: NotRequired[str],
-    WithEvent: NotRequired[bool],
-```
-
-1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
-## ExecuteStatementOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputTypeDef
-
-def get_value() -> ExecuteStatementOutputTypeDef:
-    return {
-        "ClusterIdentifier": ...,
-        "CreatedAt": ...,
-        "Database": ...,
-        "DbUser": ...,
-        "Id": ...,
-        "SecretArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ExecuteStatementOutputTypeDef(TypedDict):
-    ClusterIdentifier: str,
-    CreatedAt: datetime,
-    Database: str,
-    DbUser: str,
-    Id: str,
-    SecretArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## FieldTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import FieldTypeDef
-
-def get_value() -> FieldTypeDef:
-    return {
-        "blobValue": ...,
-    }
-```
-
-```python title="Definition"
-class FieldTypeDef(TypedDict):
-    blobValue: NotRequired[bytes],
-    booleanValue: NotRequired[bool],
-    doubleValue: NotRequired[float],
-    isNull: NotRequired[bool],
-    longValue: NotRequired[int],
-    stringValue: NotRequired[str],
-```
-
 ## GetStatementResultRequestGetStatementResultPaginateTypeDef
 
 ```python title="Usage Example"
@@ -359,23 +639,95 @@ class GetStatementResultRequestGetStatementResultPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetStatementResultRequestRequestTypeDef
+## ListDatabasesRequestListDatabasesPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import GetStatementResultRequestRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestListDatabasesPaginateTypeDef
 
-def get_value() -> GetStatementResultRequestRequestTypeDef:
+def get_value() -> ListDatabasesRequestListDatabasesPaginateTypeDef:
     return {
-        "Id": ...,
+        "Database": ...,
     }
 ```
 
 ```python title="Definition"
-class GetStatementResultRequestRequestTypeDef(TypedDict):
-    Id: str,
-    NextToken: NotRequired[str],
+class ListDatabasesRequestListDatabasesPaginateTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    DbUser: NotRequired[str],
+    SecretArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSchemasRequestListSchemasPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListSchemasRequestListSchemasPaginateTypeDef
+
+def get_value() -> ListSchemasRequestListSchemasPaginateTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasRequestListSchemasPaginateTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    ConnectedDatabase: NotRequired[str],
+    DbUser: NotRequired[str],
+    SchemaPattern: NotRequired[str],
+    SecretArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStatementsRequestListStatementsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListStatementsRequestListStatementsPaginateTypeDef
+
+def get_value() -> ListStatementsRequestListStatementsPaginateTypeDef:
+    return {
+        "RoleLevel": ...,
+    }
+```
+
+```python title="Definition"
+class ListStatementsRequestListStatementsPaginateTypeDef(TypedDict):
+    RoleLevel: NotRequired[bool],
+    StatementName: NotRequired[str],
+    Status: NotRequired[StatusStringType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTablesRequestListTablesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_data.type_defs import ListTablesRequestListTablesPaginateTypeDef
+
+def get_value() -> ListTablesRequestListTablesPaginateTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class ListTablesRequestListTablesPaginateTypeDef(TypedDict):
+    Database: str,
+    ClusterIdentifier: NotRequired[str],
+    ConnectedDatabase: NotRequired[str],
+    DbUser: NotRequired[str],
+    SchemaPattern: NotRequired[str],
+    SecretArn: NotRequired[str],
+    TablePattern: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetStatementResultResponseTypeDef
 
 ```python title="Usage Example"
@@ -403,248 +755,6 @@ class GetStatementResultResponseTypeDef(TypedDict):
 1. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
 2. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDatabasesRequestListDatabasesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestListDatabasesPaginateTypeDef
-
-def get_value() -> ListDatabasesRequestListDatabasesPaginateTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatabasesRequestListDatabasesPaginateTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    DbUser: NotRequired[str],
-    SecretArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDatabasesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestRequestTypeDef
-
-def get_value() -> ListDatabasesRequestRequestTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatabasesRequestRequestTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    DbUser: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    SecretArn: NotRequired[str],
-```
-
-## ListDatabasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseTypeDef
-
-def get_value() -> ListDatabasesResponseTypeDef:
-    return {
-        "Databases": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatabasesResponseTypeDef(TypedDict):
-    Databases: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSchemasRequestListSchemasPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListSchemasRequestListSchemasPaginateTypeDef
-
-def get_value() -> ListSchemasRequestListSchemasPaginateTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemasRequestListSchemasPaginateTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    ConnectedDatabase: NotRequired[str],
-    DbUser: NotRequired[str],
-    SchemaPattern: NotRequired[str],
-    SecretArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListSchemasRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListSchemasRequestRequestTypeDef
-
-def get_value() -> ListSchemasRequestRequestTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemasRequestRequestTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    ConnectedDatabase: NotRequired[str],
-    DbUser: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    SchemaPattern: NotRequired[str],
-    SecretArn: NotRequired[str],
-```
-
-## ListSchemasResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListSchemasResponseTypeDef
-
-def get_value() -> ListSchemasResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Schemas": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSchemasResponseTypeDef(TypedDict):
-    NextToken: str,
-    Schemas: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStatementsRequestListStatementsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListStatementsRequestListStatementsPaginateTypeDef
-
-def get_value() -> ListStatementsRequestListStatementsPaginateTypeDef:
-    return {
-        "RoleLevel": ...,
-    }
-```
-
-```python title="Definition"
-class ListStatementsRequestListStatementsPaginateTypeDef(TypedDict):
-    RoleLevel: NotRequired[bool],
-    StatementName: NotRequired[str],
-    Status: NotRequired[StatusStringType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListStatementsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListStatementsRequestRequestTypeDef
-
-def get_value() -> ListStatementsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListStatementsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    RoleLevel: NotRequired[bool],
-    StatementName: NotRequired[str],
-    Status: NotRequired[StatusStringType],  # (1)
-```
-
-1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
-## ListStatementsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListStatementsResponseTypeDef
-
-def get_value() -> ListStatementsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Statements": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListStatementsResponseTypeDef(TypedDict):
-    NextToken: str,
-    Statements: List[StatementDataTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StatementDataTypeDef](./type_defs.md#statementdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTablesRequestListTablesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListTablesRequestListTablesPaginateTypeDef
-
-def get_value() -> ListTablesRequestListTablesPaginateTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListTablesRequestListTablesPaginateTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    ConnectedDatabase: NotRequired[str],
-    DbUser: NotRequired[str],
-    SchemaPattern: NotRequired[str],
-    SecretArn: NotRequired[str],
-    TablePattern: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTablesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ListTablesRequestRequestTypeDef
-
-def get_value() -> ListTablesRequestRequestTypeDef:
-    return {
-        "Database": ...,
-    }
-```
-
-```python title="Definition"
-class ListTablesRequestRequestTypeDef(TypedDict):
-    Database: str,
-    ClusterIdentifier: NotRequired[str],
-    ConnectedDatabase: NotRequired[str],
-    DbUser: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    SchemaPattern: NotRequired[str],
-    SecretArn: NotRequired[str],
-    TablePattern: NotRequired[str],
-```
-
 ## ListTablesResponseTypeDef
 
 ```python title="Usage Example"
@@ -667,135 +777,25 @@ class ListTablesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TableMemberTypeDef](./type_defs.md#tablemembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
+## ListStatementsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_redshift_data.type_defs import ListStatementsResponseTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> ListStatementsResponseTypeDef:
     return {
-        "MaxItems": ...,
+        "NextToken": ...,
+        "Statements": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class ListStatementsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Statements: List[StatementDataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SqlParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import SqlParameterTypeDef
-
-def get_value() -> SqlParameterTypeDef:
-    return {
-        "name": ...,
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class SqlParameterTypeDef(TypedDict):
-    name: str,
-    value: str,
-```
-
-## StatementDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import StatementDataTypeDef
-
-def get_value() -> StatementDataTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class StatementDataTypeDef(TypedDict):
-    Id: str,
-    CreatedAt: NotRequired[datetime],
-    IsBatchStatement: NotRequired[bool],
-    QueryParameters: NotRequired[List[SqlParameterTypeDef]],  # (1)
-    QueryString: NotRequired[str],
-    QueryStrings: NotRequired[List[str]],
-    SecretArn: NotRequired[str],
-    StatementName: NotRequired[str],
-    Status: NotRequired[StatusStringType],  # (2)
-    UpdatedAt: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
-2. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
-## SubStatementDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import SubStatementDataTypeDef
-
-def get_value() -> SubStatementDataTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class SubStatementDataTypeDef(TypedDict):
-    Id: str,
-    CreatedAt: NotRequired[datetime],
-    Duration: NotRequired[int],
-    Error: NotRequired[str],
-    HasResultSet: NotRequired[bool],
-    QueryString: NotRequired[str],
-    RedshiftQueryId: NotRequired[int],
-    ResultRows: NotRequired[int],
-    ResultSize: NotRequired[int],
-    Status: NotRequired[StatementStatusStringType],  # (1)
-    UpdatedAt: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: StatementStatusStringType](./literals.md#statementstatusstringtype) 
-## TableMemberTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_data.type_defs import TableMemberTypeDef
-
-def get_value() -> TableMemberTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class TableMemberTypeDef(TypedDict):
-    name: NotRequired[str],
-    schema: NotRequired[str],
-    type: NotRequired[str],
-```
-
+1. See [:material-code-braces: StatementDataTypeDef](./type_defs.md#statementdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

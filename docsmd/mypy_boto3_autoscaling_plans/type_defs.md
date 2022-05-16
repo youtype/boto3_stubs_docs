@@ -7,6 +7,207 @@
     Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
     type annotations stubs module [mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
+## TagFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import TagFilterTypeDef
+
+def get_value() -> TagFilterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class TagFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
+
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## MetricDimensionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import MetricDimensionTypeDef
+
+def get_value() -> MetricDimensionTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
+
+## DatapointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import DatapointTypeDef
+
+def get_value() -> DatapointTypeDef:
+    return {
+        "Timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class DatapointTypeDef(TypedDict):
+    Timestamp: NotRequired[datetime],
+    Value: NotRequired[float],
+```
+
+## DeleteScalingPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import DeleteScalingPlanRequestRequestTypeDef
+
+def get_value() -> DeleteScalingPlanRequestRequestTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ScalingPlanVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteScalingPlanRequestRequestTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## DescribeScalingPlanResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesRequestRequestTypeDef
+
+def get_value() -> DescribeScalingPlanResourcesRequestRequestTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ScalingPlanVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScalingPlanResourcesRequestRequestTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## GetScalingPlanResourceForecastDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataRequestRequestTypeDef
+
+def get_value() -> GetScalingPlanResourceForecastDataRequestRequestTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ScalingPlanVersion": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+        "ForecastDataType": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetScalingPlanResourceForecastDataRequestRequestTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    ForecastDataType: ForecastDataTypeType,  # (3)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: ForecastDataTypeType](./literals.md#forecastdatatypetype) 
+## PredefinedLoadMetricSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import PredefinedLoadMetricSpecificationTypeDef
+
+def get_value() -> PredefinedLoadMetricSpecificationTypeDef:
+    return {
+        "PredefinedLoadMetricType": ...,
+    }
+```
+
+```python title="Definition"
+class PredefinedLoadMetricSpecificationTypeDef(TypedDict):
+    PredefinedLoadMetricType: LoadMetricTypeType,  # (1)
+    ResourceLabel: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LoadMetricTypeType](./literals.md#loadmetrictypetype) 
+## PredefinedScalingMetricSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import PredefinedScalingMetricSpecificationTypeDef
+
+def get_value() -> PredefinedScalingMetricSpecificationTypeDef:
+    return {
+        "PredefinedScalingMetricType": ...,
+    }
+```
+
+```python title="Definition"
+class PredefinedScalingMetricSpecificationTypeDef(TypedDict):
+    PredefinedScalingMetricType: ScalingMetricTypeType,  # (1)
+    ResourceLabel: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ScalingMetricTypeType](./literals.md#scalingmetrictypetype) 
 ## ApplicationSourceTypeDef
 
 ```python title="Usage Example"
@@ -25,28 +226,6 @@ class ApplicationSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
-## CreateScalingPlanRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanRequestRequestTypeDef
-
-def get_value() -> CreateScalingPlanRequestRequestTypeDef:
-    return {
-        "ScalingPlanName": ...,
-        "ApplicationSource": ...,
-        "ScalingInstructions": ...,
-    }
-```
-
-```python title="Definition"
-class CreateScalingPlanRequestRequestTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ApplicationSource: ApplicationSourceTypeDef,  # (1)
-    ScalingInstructions: Sequence[ScalingInstructionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
-2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
 ## CreateScalingPlanResponseTypeDef
 
 ```python title="Usage Example"
@@ -114,41 +293,26 @@ class CustomizedScalingMetricSpecificationTypeDef(TypedDict):
 
 1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
 2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
-## DatapointTypeDef
+## GetScalingPlanResourceForecastDataResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import DatapointTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataResponseTypeDef
 
-def get_value() -> DatapointTypeDef:
+def get_value() -> GetScalingPlanResourceForecastDataResponseTypeDef:
     return {
-        "Timestamp": ...,
+        "Datapoints": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DatapointTypeDef(TypedDict):
-    Timestamp: NotRequired[datetime],
-    Value: NotRequired[float],
+class GetScalingPlanResourceForecastDataResponseTypeDef(TypedDict):
+    Datapoints: List[DatapointTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## DeleteScalingPlanRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import DeleteScalingPlanRequestRequestTypeDef
-
-def get_value() -> DeleteScalingPlanRequestRequestTypeDef:
-    return {
-        "ScalingPlanName": ...,
-        "ScalingPlanVersion": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteScalingPlanRequestRequestTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-```
-
+1. See [:material-code-braces: DatapointTypeDef](./type_defs.md#datapointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScalingPlanResourcesRequestDescribeScalingPlanResourcesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -169,48 +333,6 @@ class DescribeScalingPlanResourcesRequestDescribeScalingPlanResourcesPaginateTyp
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeScalingPlanResourcesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesRequestRequestTypeDef
-
-def get_value() -> DescribeScalingPlanResourcesRequestRequestTypeDef:
-    return {
-        "ScalingPlanName": ...,
-        "ScalingPlanVersion": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeScalingPlanResourcesRequestRequestTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## DescribeScalingPlanResourcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesResponseTypeDef
-
-def get_value() -> DescribeScalingPlanResourcesResponseTypeDef:
-    return {
-        "ScalingPlanResources": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeScalingPlanResourcesResponseTypeDef(TypedDict):
-    ScalingPlanResources: List[ScalingPlanResourceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ScalingPlanResourceTypeDef](./type_defs.md#scalingplanresourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScalingPlansRequestDescribeScalingPlansPaginateTypeDef
 
 ```python title="Usage Example"
@@ -253,177 +375,30 @@ class DescribeScalingPlansRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
-## DescribeScalingPlansResponseTypeDef
+## TargetTrackingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansResponseTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import TargetTrackingConfigurationTypeDef
 
-def get_value() -> DescribeScalingPlansResponseTypeDef:
+def get_value() -> TargetTrackingConfigurationTypeDef:
     return {
-        "ScalingPlans": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "TargetValue": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeScalingPlansResponseTypeDef(TypedDict):
-    ScalingPlans: List[ScalingPlanTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TargetTrackingConfigurationTypeDef(TypedDict):
+    TargetValue: float,
+    PredefinedScalingMetricSpecification: NotRequired[PredefinedScalingMetricSpecificationTypeDef],  # (1)
+    CustomizedScalingMetricSpecification: NotRequired[CustomizedScalingMetricSpecificationTypeDef],  # (2)
+    DisableScaleIn: NotRequired[bool],
+    ScaleOutCooldown: NotRequired[int],
+    ScaleInCooldown: NotRequired[int],
+    EstimatedInstanceWarmup: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ScalingPlanTypeDef](./type_defs.md#scalingplantypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetScalingPlanResourceForecastDataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataRequestRequestTypeDef
-
-def get_value() -> GetScalingPlanResourceForecastDataRequestRequestTypeDef:
-    return {
-        "ScalingPlanName": ...,
-        "ScalingPlanVersion": ...,
-        "ServiceNamespace": ...,
-        "ResourceId": ...,
-        "ScalableDimension": ...,
-        "ForecastDataType": ...,
-        "StartTime": ...,
-        "EndTime": ...,
-    }
-```
-
-```python title="Definition"
-class GetScalingPlanResourceForecastDataRequestRequestTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    ServiceNamespace: ServiceNamespaceType,  # (1)
-    ResourceId: str,
-    ScalableDimension: ScalableDimensionType,  # (2)
-    ForecastDataType: ForecastDataTypeType,  # (3)
-    StartTime: Union[datetime, str],
-    EndTime: Union[datetime, str],
-```
-
-1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
-2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
-3. See [:material-code-brackets: ForecastDataTypeType](./literals.md#forecastdatatypetype) 
-## GetScalingPlanResourceForecastDataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataResponseTypeDef
-
-def get_value() -> GetScalingPlanResourceForecastDataResponseTypeDef:
-    return {
-        "Datapoints": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetScalingPlanResourceForecastDataResponseTypeDef(TypedDict):
-    Datapoints: List[DatapointTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatapointTypeDef](./type_defs.md#datapointtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MetricDimensionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import MetricDimensionTypeDef
-
-def get_value() -> MetricDimensionTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDimensionTypeDef(TypedDict):
-    Name: str,
-    Value: str,
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PredefinedLoadMetricSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import PredefinedLoadMetricSpecificationTypeDef
-
-def get_value() -> PredefinedLoadMetricSpecificationTypeDef:
-    return {
-        "PredefinedLoadMetricType": ...,
-    }
-```
-
-```python title="Definition"
-class PredefinedLoadMetricSpecificationTypeDef(TypedDict):
-    PredefinedLoadMetricType: LoadMetricTypeType,  # (1)
-    ResourceLabel: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LoadMetricTypeType](./literals.md#loadmetrictypetype) 
-## PredefinedScalingMetricSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import PredefinedScalingMetricSpecificationTypeDef
-
-def get_value() -> PredefinedScalingMetricSpecificationTypeDef:
-    return {
-        "PredefinedScalingMetricType": ...,
-    }
-```
-
-```python title="Definition"
-class PredefinedScalingMetricSpecificationTypeDef(TypedDict):
-    PredefinedScalingMetricType: ScalingMetricTypeType,  # (1)
-    ResourceLabel: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ScalingMetricTypeType](./literals.md#scalingmetrictypetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
+1. See [:material-code-braces: PredefinedScalingMetricSpecificationTypeDef](./type_defs.md#predefinedscalingmetricspecificationtypedef) 
+2. See [:material-code-braces: CustomizedScalingMetricSpecificationTypeDef](./type_defs.md#customizedscalingmetricspecificationtypedef) 
 ## ScalingInstructionTypeDef
 
 ```python title="Usage Example"
@@ -466,6 +441,101 @@ class ScalingInstructionTypeDef(TypedDict):
 6. See [:material-code-brackets: PredictiveScalingMaxCapacityBehaviorType](./literals.md#predictivescalingmaxcapacitybehaviortype) 
 7. See [:material-code-brackets: PredictiveScalingModeType](./literals.md#predictivescalingmodetype) 
 8. See [:material-code-brackets: ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype) 
+## ScalingPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import ScalingPolicyTypeDef
+
+def get_value() -> ScalingPolicyTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyType": ...,
+    }
+```
+
+```python title="Definition"
+class ScalingPolicyTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyType: PolicyTypeType,  # (1)
+    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
+## CreateScalingPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanRequestRequestTypeDef
+
+def get_value() -> CreateScalingPlanRequestRequestTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ApplicationSource": ...,
+        "ScalingInstructions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateScalingPlanRequestRequestTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ApplicationSource: ApplicationSourceTypeDef,  # (1)
+    ScalingInstructions: Sequence[ScalingInstructionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
+## ScalingPlanTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import ScalingPlanTypeDef
+
+def get_value() -> ScalingPlanTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ScalingPlanVersion": ...,
+        "ApplicationSource": ...,
+        "ScalingInstructions": ...,
+        "StatusCode": ...,
+    }
+```
+
+```python title="Definition"
+class ScalingPlanTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    ApplicationSource: ApplicationSourceTypeDef,  # (1)
+    ScalingInstructions: List[ScalingInstructionTypeDef],  # (2)
+    StatusCode: ScalingPlanStatusCodeType,  # (3)
+    StatusMessage: NotRequired[str],
+    StatusStartTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
+3. See [:material-code-brackets: ScalingPlanStatusCodeType](./literals.md#scalingplanstatuscodetype) 
+## UpdateScalingPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling_plans.type_defs import UpdateScalingPlanRequestRequestTypeDef
+
+def get_value() -> UpdateScalingPlanRequestRequestTypeDef:
+    return {
+        "ScalingPlanName": ...,
+        "ScalingPlanVersion": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateScalingPlanRequestRequestTypeDef(TypedDict):
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    ApplicationSource: NotRequired[ApplicationSourceTypeDef],  # (1)
+    ScalingInstructions: NotRequired[Sequence[ScalingInstructionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
 ## ScalingPlanResourceTypeDef
 
 ```python title="Usage Example"
@@ -498,117 +568,47 @@ class ScalingPlanResourceTypeDef(TypedDict):
 2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 3. See [:material-code-braces: ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef) 
 4. See [:material-code-brackets: ScalingStatusCodeType](./literals.md#scalingstatuscodetype) 
-## ScalingPlanTypeDef
+## DescribeScalingPlansResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import ScalingPlanTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansResponseTypeDef
 
-def get_value() -> ScalingPlanTypeDef:
+def get_value() -> DescribeScalingPlansResponseTypeDef:
     return {
-        "ScalingPlanName": ...,
-        "ScalingPlanVersion": ...,
-        "ApplicationSource": ...,
-        "ScalingInstructions": ...,
-        "StatusCode": ...,
+        "ScalingPlans": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ScalingPlanTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    ApplicationSource: ApplicationSourceTypeDef,  # (1)
-    ScalingInstructions: List[ScalingInstructionTypeDef],  # (2)
-    StatusCode: ScalingPlanStatusCodeType,  # (3)
-    StatusMessage: NotRequired[str],
-    StatusStartTime: NotRequired[datetime],
-    CreationTime: NotRequired[datetime],
+class DescribeScalingPlansResponseTypeDef(TypedDict):
+    ScalingPlans: List[ScalingPlanTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
-2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
-3. See [:material-code-brackets: ScalingPlanStatusCodeType](./literals.md#scalingplanstatuscodetype) 
-## ScalingPolicyTypeDef
+1. See [:material-code-braces: ScalingPlanTypeDef](./type_defs.md#scalingplantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeScalingPlanResourcesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import ScalingPolicyTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesResponseTypeDef
 
-def get_value() -> ScalingPolicyTypeDef:
+def get_value() -> DescribeScalingPlanResourcesResponseTypeDef:
     return {
-        "PolicyName": ...,
-        "PolicyType": ...,
+        "ScalingPlanResources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ScalingPolicyTypeDef(TypedDict):
-    PolicyName: str,
-    PolicyType: PolicyTypeType,  # (1)
-    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (2)
+class DescribeScalingPlanResourcesResponseTypeDef(TypedDict):
+    ScalingPlanResources: List[ScalingPlanResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
-2. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
-## TagFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import TagFilterTypeDef
-
-def get_value() -> TagFilterTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagFilterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Values: NotRequired[Sequence[str]],
-```
-
-## TargetTrackingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import TargetTrackingConfigurationTypeDef
-
-def get_value() -> TargetTrackingConfigurationTypeDef:
-    return {
-        "TargetValue": ...,
-    }
-```
-
-```python title="Definition"
-class TargetTrackingConfigurationTypeDef(TypedDict):
-    TargetValue: float,
-    PredefinedScalingMetricSpecification: NotRequired[PredefinedScalingMetricSpecificationTypeDef],  # (1)
-    CustomizedScalingMetricSpecification: NotRequired[CustomizedScalingMetricSpecificationTypeDef],  # (2)
-    DisableScaleIn: NotRequired[bool],
-    ScaleOutCooldown: NotRequired[int],
-    ScaleInCooldown: NotRequired[int],
-    EstimatedInstanceWarmup: NotRequired[int],
-```
-
-1. See [:material-code-braces: PredefinedScalingMetricSpecificationTypeDef](./type_defs.md#predefinedscalingmetricspecificationtypedef) 
-2. See [:material-code-braces: CustomizedScalingMetricSpecificationTypeDef](./type_defs.md#customizedscalingmetricspecificationtypedef) 
-## UpdateScalingPlanRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling_plans.type_defs import UpdateScalingPlanRequestRequestTypeDef
-
-def get_value() -> UpdateScalingPlanRequestRequestTypeDef:
-    return {
-        "ScalingPlanName": ...,
-        "ScalingPlanVersion": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateScalingPlanRequestRequestTypeDef(TypedDict):
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    ApplicationSource: NotRequired[ApplicationSourceTypeDef],  # (1)
-    ScalingInstructions: NotRequired[Sequence[ScalingInstructionTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
-2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
+1. See [:material-code-braces: ScalingPlanResourceTypeDef](./type_defs.md#scalingplanresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

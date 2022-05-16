@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36054,28 +36054,25 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_appconfig.type_defs</span> <span class="kn">import</span> <span class="n">ApplicationResponseMetadataTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_appconfig.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ApplicationResponseMetadataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#applicationresponsemetadatatypedef">ApplicationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#applicationtypedef">ApplicationTypeDef</a></li>
-<li><a href="type_defs/#applicationstypedef">ApplicationsTypeDef</a></li>
 <li><a href="type_defs/#configurationprofilesummarytypedef">ConfigurationProfileSummaryTypeDef</a></li>
-<li><a href="type_defs/#configurationprofiletypedef">ConfigurationProfileTypeDef</a></li>
-<li><a href="type_defs/#configurationprofilestypedef">ConfigurationProfilesTypeDef</a></li>
-<li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
+<li><a href="type_defs/#validatortypedef">ValidatorTypeDef</a></li>
 <li><a href="type_defs/#createapplicationrequestrequesttypedef">CreateApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createconfigurationprofilerequestrequesttypedef">CreateConfigurationProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdeploymentstrategyrequestrequesttypedef">CreateDeploymentStrategyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createenvironmentrequestrequesttypedef">CreateEnvironmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#monitortypedef">MonitorTypeDef</a></li>
 <li><a href="type_defs/#createhostedconfigurationversionrequestrequesttypedef">CreateHostedConfigurationVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteapplicationrequestrequesttypedef">DeleteApplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteconfigurationprofilerequestrequesttypedef">DeleteConfigurationProfileRequestRequestTypeDef</a></li>
@@ -36083,15 +36080,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deleteenvironmentrequestrequesttypedef">DeleteEnvironmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletehostedconfigurationversionrequestrequesttypedef">DeleteHostedConfigurationVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deploymenteventtypedef">DeploymentEventTypeDef</a></li>
-<li><a href="type_defs/#deploymentstrategiestypedef">DeploymentStrategiesTypeDef</a></li>
-<li><a href="type_defs/#deploymentstrategyresponsemetadatatypedef">DeploymentStrategyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#deploymentstrategytypedef">DeploymentStrategyTypeDef</a></li>
 <li><a href="type_defs/#deploymentsummarytypedef">DeploymentSummaryTypeDef</a></li>
-<li><a href="type_defs/#deploymenttypedef">DeploymentTypeDef</a></li>
-<li><a href="type_defs/#deploymentstypedef">DeploymentsTypeDef</a></li>
-<li><a href="type_defs/#environmentresponsemetadatatypedef">EnvironmentResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#environmenttypedef">EnvironmentTypeDef</a></li>
-<li><a href="type_defs/#environmentstypedef">EnvironmentsTypeDef</a></li>
 <li><a href="type_defs/#getapplicationrequestrequesttypedef">GetApplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getconfigurationprofilerequestrequesttypedef">GetConfigurationProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getconfigurationrequestrequesttypedef">GetConfigurationRequestRequestTypeDef</a></li>
@@ -36100,8 +36090,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getenvironmentrequestrequesttypedef">GetEnvironmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gethostedconfigurationversionrequestrequesttypedef">GetHostedConfigurationVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#hostedconfigurationversionsummarytypedef">HostedConfigurationVersionSummaryTypeDef</a></li>
-<li><a href="type_defs/#hostedconfigurationversiontypedef">HostedConfigurationVersionTypeDef</a></li>
-<li><a href="type_defs/#hostedconfigurationversionstypedef">HostedConfigurationVersionsTypeDef</a></li>
 <li><a href="type_defs/#listapplicationsrequestrequesttypedef">ListApplicationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listconfigurationprofilesrequestrequesttypedef">ListConfigurationProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdeploymentstrategiesrequestrequesttypedef">ListDeploymentStrategiesRequestRequestTypeDef</a></li>
@@ -36109,19 +36097,32 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listenvironmentsrequestrequesttypedef">ListEnvironmentsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listhostedconfigurationversionsrequestrequesttypedef">ListHostedConfigurationVersionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#monitortypedef">MonitorTypeDef</a></li>
-<li><a href="type_defs/#resourcetagstypedef">ResourceTagsTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#startdeploymentrequestrequesttypedef">StartDeploymentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopdeploymentrequestrequesttypedef">StopDeploymentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateapplicationrequestrequesttypedef">UpdateApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateconfigurationprofilerequestrequesttypedef">UpdateConfigurationProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedeploymentstrategyrequestrequesttypedef">UpdateDeploymentStrategyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateenvironmentrequestrequesttypedef">UpdateEnvironmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#validateconfigurationrequestrequesttypedef">ValidateConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#validatortypedef">ValidatorTypeDef</a></li>
+<li><a href="type_defs/#applicationresponsemetadatatypedef">ApplicationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deploymentstrategyresponsemetadatatypedef">DeploymentStrategyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#hostedconfigurationversiontypedef">HostedConfigurationVersionTypeDef</a></li>
+<li><a href="type_defs/#resourcetagstypedef">ResourceTagsTypeDef</a></li>
+<li><a href="type_defs/#applicationstypedef">ApplicationsTypeDef</a></li>
+<li><a href="type_defs/#configurationprofilestypedef">ConfigurationProfilesTypeDef</a></li>
+<li><a href="type_defs/#configurationprofiletypedef">ConfigurationProfileTypeDef</a></li>
+<li><a href="type_defs/#createconfigurationprofilerequestrequesttypedef">CreateConfigurationProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateconfigurationprofilerequestrequesttypedef">UpdateConfigurationProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createenvironmentrequestrequesttypedef">CreateEnvironmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#environmentresponsemetadatatypedef">EnvironmentResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#environmenttypedef">EnvironmentTypeDef</a></li>
+<li><a href="type_defs/#updateenvironmentrequestrequesttypedef">UpdateEnvironmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymenttypedef">DeploymentTypeDef</a></li>
+<li><a href="type_defs/#deploymentstrategiestypedef">DeploymentStrategiesTypeDef</a></li>
+<li><a href="type_defs/#deploymentstypedef">DeploymentsTypeDef</a></li>
+<li><a href="type_defs/#hostedconfigurationversionstypedef">HostedConfigurationVersionsTypeDef</a></li>
+<li><a href="type_defs/#environmentstypedef">EnvironmentsTypeDef</a></li>
 </ul>
 
               
@@ -36191,7 +36192,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

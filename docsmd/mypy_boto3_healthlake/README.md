@@ -97,48 +97,48 @@ def get_value() -> CmkTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTypeDef
+from mypy_boto3_healthlake.type_defs import PreloadDataConfigTypeDef
 
-def get_value() -> CreateFHIRDatastoreRequestRequestTypeDef:
+def get_value() -> PreloadDataConfigTypeDef:
     return {
-        "DatastoreTypeVersion": ...,
+        "PreloadDataType": ...,
     }
 ```
 
-- [CreateFHIRDatastoreRequestRequestTypeDef](./type_defs.md#createfhirdatastorerequestrequesttypedef)
-- [CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef)
+- [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef)
-- [DatastorePropertiesTypeDef](./type_defs.md#datastorepropertiestypedef)
 - [DeleteFHIRDatastoreRequestRequestTypeDef](./type_defs.md#deletefhirdatastorerequestrequesttypedef)
-- [DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef)
 - [DescribeFHIRDatastoreRequestRequestTypeDef](./type_defs.md#describefhirdatastorerequestrequesttypedef)
-- [DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef)
 - [DescribeFHIRExportJobRequestRequestTypeDef](./type_defs.md#describefhirexportjobrequestrequesttypedef)
-- [DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef)
 - [DescribeFHIRImportJobRequestRequestTypeDef](./type_defs.md#describefhirimportjobrequestrequesttypedef)
-- [DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef)
-- [ExportJobPropertiesTypeDef](./type_defs.md#exportjobpropertiestypedef)
-- [ImportJobPropertiesTypeDef](./type_defs.md#importjobpropertiestypedef)
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [KmsEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
-- [ListFHIRDatastoresRequestRequestTypeDef](./type_defs.md#listfhirdatastoresrequestrequesttypedef)
-- [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef)
 - [ListFHIRExportJobsRequestRequestTypeDef](./type_defs.md#listfhirexportjobsrequestrequesttypedef)
-- [ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef)
 - [ListFHIRImportJobsRequestRequestTypeDef](./type_defs.md#listfhirimportjobsrequestrequesttypedef)
-- [ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-- [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
-- [StartFHIRExportJobRequestRequestTypeDef](./type_defs.md#startfhirexportjobrequestrequesttypedef)
-- [StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef)
-- [StartFHIRImportJobRequestRequestTypeDef](./type_defs.md#startfhirimportjobrequestrequesttypedef)
-- [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef)
+- [DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef)
+- [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef)
+- [ListFHIRDatastoresRequestRequestTypeDef](./type_defs.md#listfhirdatastoresrequestrequesttypedef)
+- [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
+- [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- [CreateFHIRDatastoreRequestRequestTypeDef](./type_defs.md#createfhirdatastorerequestrequesttypedef)
+- [DatastorePropertiesTypeDef](./type_defs.md#datastorepropertiestypedef)
+- [ExportJobPropertiesTypeDef](./type_defs.md#exportjobpropertiestypedef)
+- [ImportJobPropertiesTypeDef](./type_defs.md#importjobpropertiestypedef)
+- [StartFHIRExportJobRequestRequestTypeDef](./type_defs.md#startfhirexportjobrequestrequesttypedef)
+- [StartFHIRImportJobRequestRequestTypeDef](./type_defs.md#startfhirimportjobrequestrequesttypedef)
+- [DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef)
+- [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef)
+- [DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef)
+- [ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef)
+- [DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef)
+- [ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef)
 

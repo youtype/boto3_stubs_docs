@@ -25,27 +25,30 @@ class AssociateBrowserSettingsRequestRequestTypeDef(TypedDict):
     portalArn: str,
 ```
 
-## AssociateBrowserSettingsResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import AssociateBrowserSettingsResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AssociateBrowserSettingsResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "browserSettingsArn": ...,
-        "portalArn": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateBrowserSettingsResponseTypeDef(TypedDict):
-    browserSettingsArn: str,
-    portalArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateNetworkSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -64,27 +67,6 @@ class AssociateNetworkSettingsRequestRequestTypeDef(TypedDict):
     portalArn: str,
 ```
 
-## AssociateNetworkSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import AssociateNetworkSettingsResponseTypeDef
-
-def get_value() -> AssociateNetworkSettingsResponseTypeDef:
-    return {
-        "networkSettingsArn": ...,
-        "portalArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AssociateNetworkSettingsResponseTypeDef(TypedDict):
-    networkSettingsArn: str,
-    portalArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateTrustStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -103,27 +85,6 @@ class AssociateTrustStoreRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
 ```
 
-## AssociateTrustStoreResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import AssociateTrustStoreResponseTypeDef
-
-def get_value() -> AssociateTrustStoreResponseTypeDef:
-    return {
-        "portalArn": ...,
-        "trustStoreArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AssociateTrustStoreResponseTypeDef(TypedDict):
-    portalArn: str,
-    trustStoreArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -142,27 +103,6 @@ class AssociateUserSettingsRequestRequestTypeDef(TypedDict):
     userSettingsArn: str,
 ```
 
-## AssociateUserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import AssociateUserSettingsResponseTypeDef
-
-def get_value() -> AssociateUserSettingsResponseTypeDef:
-    return {
-        "portalArn": ...,
-        "userSettingsArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AssociateUserSettingsResponseTypeDef(TypedDict):
-    portalArn: str,
-    userSettingsArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BrowserSettingsSummaryTypeDef
 
 ```python title="Usage Example"
@@ -238,46 +178,24 @@ class CertificateTypeDef(TypedDict):
     thumbprint: NotRequired[str],
 ```
 
-## CreateBrowserSettingsRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateBrowserSettingsRequestRequestTypeDef
+from mypy_boto3_workspaces_web.type_defs import TagTypeDef
 
-def get_value() -> CreateBrowserSettingsRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "browserPolicy": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateBrowserSettingsRequestRequestTypeDef(TypedDict):
-    browserPolicy: str,
-    additionalEncryptionContext: NotRequired[Mapping[str, str]],
-    clientToken: NotRequired[str],
-    customerManagedKey: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateBrowserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateBrowserSettingsResponseTypeDef
-
-def get_value() -> CreateBrowserSettingsResponseTypeDef:
-    return {
-        "browserSettingsArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBrowserSettingsResponseTypeDef(TypedDict):
-    browserSettingsArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIdentityProviderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -302,198 +220,6 @@ class CreateIdentityProviderRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-## CreateIdentityProviderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateIdentityProviderResponseTypeDef
-
-def get_value() -> CreateIdentityProviderResponseTypeDef:
-    return {
-        "identityProviderArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateIdentityProviderResponseTypeDef(TypedDict):
-    identityProviderArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateNetworkSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateNetworkSettingsRequestRequestTypeDef
-
-def get_value() -> CreateNetworkSettingsRequestRequestTypeDef:
-    return {
-        "securityGroupIds": ...,
-        "subnetIds": ...,
-        "vpcId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNetworkSettingsRequestRequestTypeDef(TypedDict):
-    securityGroupIds: Sequence[str],
-    subnetIds: Sequence[str],
-    vpcId: str,
-    clientToken: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateNetworkSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateNetworkSettingsResponseTypeDef
-
-def get_value() -> CreateNetworkSettingsResponseTypeDef:
-    return {
-        "networkSettingsArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNetworkSettingsResponseTypeDef(TypedDict):
-    networkSettingsArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreatePortalRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreatePortalRequestRequestTypeDef
-
-def get_value() -> CreatePortalRequestRequestTypeDef:
-    return {
-        "additionalEncryptionContext": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePortalRequestRequestTypeDef(TypedDict):
-    additionalEncryptionContext: NotRequired[Mapping[str, str]],
-    clientToken: NotRequired[str],
-    customerManagedKey: NotRequired[str],
-    displayName: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreatePortalResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreatePortalResponseTypeDef
-
-def get_value() -> CreatePortalResponseTypeDef:
-    return {
-        "portalArn": ...,
-        "portalEndpoint": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePortalResponseTypeDef(TypedDict):
-    portalArn: str,
-    portalEndpoint: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateTrustStoreRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateTrustStoreRequestRequestTypeDef
-
-def get_value() -> CreateTrustStoreRequestRequestTypeDef:
-    return {
-        "certificateList": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTrustStoreRequestRequestTypeDef(TypedDict):
-    certificateList: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
-    clientToken: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateTrustStoreResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateTrustStoreResponseTypeDef
-
-def get_value() -> CreateTrustStoreResponseTypeDef:
-    return {
-        "trustStoreArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTrustStoreResponseTypeDef(TypedDict):
-    trustStoreArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateUserSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateUserSettingsRequestRequestTypeDef
-
-def get_value() -> CreateUserSettingsRequestRequestTypeDef:
-    return {
-        "copyAllowed": ...,
-        "downloadAllowed": ...,
-        "pasteAllowed": ...,
-        "printAllowed": ...,
-        "uploadAllowed": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUserSettingsRequestRequestTypeDef(TypedDict):
-    copyAllowed: EnabledTypeType,  # (1)
-    downloadAllowed: EnabledTypeType,  # (1)
-    pasteAllowed: EnabledTypeType,  # (1)
-    printAllowed: EnabledTypeType,  # (1)
-    uploadAllowed: EnabledTypeType,  # (1)
-    clientToken: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
-```
-
-1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateUserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import CreateUserSettingsResponseTypeDef
-
-def get_value() -> CreateUserSettingsResponseTypeDef:
-    return {
-        "userSettingsArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUserSettingsResponseTypeDef(TypedDict):
-    userSettingsArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBrowserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -670,26 +396,6 @@ class GetBrowserSettingsRequestRequestTypeDef(TypedDict):
     browserSettingsArn: str,
 ```
 
-## GetBrowserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetBrowserSettingsResponseTypeDef
-
-def get_value() -> GetBrowserSettingsResponseTypeDef:
-    return {
-        "browserSettings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBrowserSettingsResponseTypeDef(TypedDict):
-    browserSettings: BrowserSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BrowserSettingsTypeDef](./type_defs.md#browsersettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIdentityProviderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -706,26 +412,26 @@ class GetIdentityProviderRequestRequestTypeDef(TypedDict):
     identityProviderArn: str,
 ```
 
-## GetIdentityProviderResponseTypeDef
+## IdentityProviderTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetIdentityProviderResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import IdentityProviderTypeDef
 
-def get_value() -> GetIdentityProviderResponseTypeDef:
+def get_value() -> IdentityProviderTypeDef:
     return {
-        "identityProvider": ...,
-        "ResponseMetadata": ...,
+        "identityProviderArn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetIdentityProviderResponseTypeDef(TypedDict):
-    identityProvider: IdentityProviderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class IdentityProviderTypeDef(TypedDict):
+    identityProviderArn: str,
+    identityProviderDetails: NotRequired[Dict[str, str]],
+    identityProviderName: NotRequired[str],
+    identityProviderType: NotRequired[IdentityProviderTypeType],  # (1)
 ```
 
-1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
 ## GetNetworkSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -742,26 +448,26 @@ class GetNetworkSettingsRequestRequestTypeDef(TypedDict):
     networkSettingsArn: str,
 ```
 
-## GetNetworkSettingsResponseTypeDef
+## NetworkSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetNetworkSettingsResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import NetworkSettingsTypeDef
 
-def get_value() -> GetNetworkSettingsResponseTypeDef:
+def get_value() -> NetworkSettingsTypeDef:
     return {
-        "networkSettings": ...,
-        "ResponseMetadata": ...,
+        "networkSettingsArn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetNetworkSettingsResponseTypeDef(TypedDict):
-    networkSettings: NetworkSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class NetworkSettingsTypeDef(TypedDict):
+    networkSettingsArn: str,
+    associatedPortalArns: NotRequired[List[str]],
+    securityGroupIds: NotRequired[List[str]],
+    subnetIds: NotRequired[List[str]],
+    vpcId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: NetworkSettingsTypeDef](./type_defs.md#networksettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPortalRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -778,26 +484,36 @@ class GetPortalRequestRequestTypeDef(TypedDict):
     portalArn: str,
 ```
 
-## GetPortalResponseTypeDef
+## PortalTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetPortalResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import PortalTypeDef
 
-def get_value() -> GetPortalResponseTypeDef:
+def get_value() -> PortalTypeDef:
     return {
-        "portal": ...,
-        "ResponseMetadata": ...,
+        "browserSettingsArn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetPortalResponseTypeDef(TypedDict):
-    portal: PortalTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PortalTypeDef(TypedDict):
+    browserSettingsArn: NotRequired[str],
+    browserType: NotRequired[BrowserTypeType],  # (1)
+    creationDate: NotRequired[datetime],
+    displayName: NotRequired[str],
+    networkSettingsArn: NotRequired[str],
+    portalArn: NotRequired[str],
+    portalEndpoint: NotRequired[str],
+    portalStatus: NotRequired[PortalStatusType],  # (2)
+    rendererType: NotRequired[RendererTypeType],  # (3)
+    statusReason: NotRequired[str],
+    trustStoreArn: NotRequired[str],
+    userSettingsArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PortalTypeDef](./type_defs.md#portaltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
+2. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
+3. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
 ## GetPortalServiceProviderMetadataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -814,27 +530,6 @@ class GetPortalServiceProviderMetadataRequestRequestTypeDef(TypedDict):
     portalArn: str,
 ```
 
-## GetPortalServiceProviderMetadataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetPortalServiceProviderMetadataResponseTypeDef
-
-def get_value() -> GetPortalServiceProviderMetadataResponseTypeDef:
-    return {
-        "portalArn": ...,
-        "serviceProviderSamlMetadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPortalServiceProviderMetadataResponseTypeDef(TypedDict):
-    portalArn: str,
-    serviceProviderSamlMetadata: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrustStoreCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -853,28 +548,6 @@ class GetTrustStoreCertificateRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
 ```
 
-## GetTrustStoreCertificateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetTrustStoreCertificateResponseTypeDef
-
-def get_value() -> GetTrustStoreCertificateResponseTypeDef:
-    return {
-        "certificate": ...,
-        "trustStoreArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTrustStoreCertificateResponseTypeDef(TypedDict):
-    certificate: CertificateTypeDef,  # (1)
-    trustStoreArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrustStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -891,26 +564,23 @@ class GetTrustStoreRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
 ```
 
-## GetTrustStoreResponseTypeDef
+## TrustStoreTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetTrustStoreResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import TrustStoreTypeDef
 
-def get_value() -> GetTrustStoreResponseTypeDef:
+def get_value() -> TrustStoreTypeDef:
     return {
-        "trustStore": ...,
-        "ResponseMetadata": ...,
+        "associatedPortalArns": ...,
     }
 ```
 
 ```python title="Definition"
-class GetTrustStoreResponseTypeDef(TypedDict):
-    trustStore: TrustStoreTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TrustStoreTypeDef(TypedDict):
+    associatedPortalArns: NotRequired[List[str]],
+    trustStoreArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TrustStoreTypeDef](./type_defs.md#truststoretypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -927,26 +597,35 @@ class GetUserSettingsRequestRequestTypeDef(TypedDict):
     userSettingsArn: str,
 ```
 
-## GetUserSettingsResponseTypeDef
+## UserSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import GetUserSettingsResponseTypeDef
+from mypy_boto3_workspaces_web.type_defs import UserSettingsTypeDef
 
-def get_value() -> GetUserSettingsResponseTypeDef:
+def get_value() -> UserSettingsTypeDef:
     return {
-        "userSettings": ...,
-        "ResponseMetadata": ...,
+        "userSettingsArn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetUserSettingsResponseTypeDef(TypedDict):
-    userSettings: UserSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class UserSettingsTypeDef(TypedDict):
+    userSettingsArn: str,
+    associatedPortalArns: NotRequired[List[str]],
+    copyAllowed: NotRequired[EnabledTypeType],  # (1)
+    disconnectTimeoutInMinutes: NotRequired[int],
+    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
+    idleDisconnectTimeoutInMinutes: NotRequired[int],
+    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
+    printAllowed: NotRequired[EnabledTypeType],  # (1)
+    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
 ```
 
-1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
 ## IdentityProviderSummaryTypeDef
 
 ```python title="Usage Example"
@@ -961,26 +640,6 @@ def get_value() -> IdentityProviderSummaryTypeDef:
 ```python title="Definition"
 class IdentityProviderSummaryTypeDef(TypedDict):
     identityProviderArn: NotRequired[str],
-    identityProviderName: NotRequired[str],
-    identityProviderType: NotRequired[IdentityProviderTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-## IdentityProviderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import IdentityProviderTypeDef
-
-def get_value() -> IdentityProviderTypeDef:
-    return {
-        "identityProviderArn": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityProviderTypeDef(TypedDict):
-    identityProviderArn: str,
-    identityProviderDetails: NotRequired[Dict[str, str]],
     identityProviderName: NotRequired[str],
     identityProviderType: NotRequired[IdentityProviderTypeType],  # (1)
 ```
@@ -1003,28 +662,6 @@ class ListBrowserSettingsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListBrowserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListBrowserSettingsResponseTypeDef
-
-def get_value() -> ListBrowserSettingsResponseTypeDef:
-    return {
-        "browserSettings": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBrowserSettingsResponseTypeDef(TypedDict):
-    browserSettings: List[BrowserSettingsSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BrowserSettingsSummaryTypeDef](./type_defs.md#browsersettingssummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIdentityProvidersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1043,28 +680,6 @@ class ListIdentityProvidersRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListIdentityProvidersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListIdentityProvidersResponseTypeDef
-
-def get_value() -> ListIdentityProvidersResponseTypeDef:
-    return {
-        "identityProviders": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListIdentityProvidersResponseTypeDef(TypedDict):
-    identityProviders: List[IdentityProviderSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityProviderSummaryTypeDef](./type_defs.md#identityprovidersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNetworkSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1082,223 +697,6 @@ class ListNetworkSettingsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListNetworkSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListNetworkSettingsResponseTypeDef
-
-def get_value() -> ListNetworkSettingsResponseTypeDef:
-    return {
-        "networkSettings": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListNetworkSettingsResponseTypeDef(TypedDict):
-    networkSettings: List[NetworkSettingsSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkSettingsSummaryTypeDef](./type_defs.md#networksettingssummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPortalsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListPortalsRequestRequestTypeDef
-
-def get_value() -> ListPortalsRequestRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListPortalsRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListPortalsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListPortalsResponseTypeDef
-
-def get_value() -> ListPortalsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "portals": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPortalsResponseTypeDef(TypedDict):
-    nextToken: str,
-    portals: List[PortalSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PortalSummaryTypeDef](./type_defs.md#portalsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTrustStoreCertificatesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTrustStoreCertificatesRequestRequestTypeDef
-
-def get_value() -> ListTrustStoreCertificatesRequestRequestTypeDef:
-    return {
-        "trustStoreArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrustStoreCertificatesRequestRequestTypeDef(TypedDict):
-    trustStoreArn: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListTrustStoreCertificatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTrustStoreCertificatesResponseTypeDef
-
-def get_value() -> ListTrustStoreCertificatesResponseTypeDef:
-    return {
-        "certificateList": ...,
-        "nextToken": ...,
-        "trustStoreArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrustStoreCertificatesResponseTypeDef(TypedDict):
-    certificateList: List[CertificateSummaryTypeDef],  # (1)
-    nextToken: str,
-    trustStoreArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTrustStoresRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTrustStoresRequestRequestTypeDef
-
-def get_value() -> ListTrustStoresRequestRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrustStoresRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListTrustStoresResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListTrustStoresResponseTypeDef
-
-def get_value() -> ListTrustStoresResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "trustStores": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrustStoresResponseTypeDef(TypedDict):
-    nextToken: str,
-    trustStores: List[TrustStoreSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TrustStoreSummaryTypeDef](./type_defs.md#truststoresummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUserSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListUserSettingsRequestRequestTypeDef
-
-def get_value() -> ListUserSettingsRequestRequestTypeDef:
-    return {
-        "maxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListUserSettingsRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-## ListUserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ListUserSettingsResponseTypeDef
-
-def get_value() -> ListUserSettingsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "userSettings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUserSettingsResponseTypeDef(TypedDict):
-    nextToken: str,
-    userSettings: List[UserSettingsSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserSettingsSummaryTypeDef](./type_defs.md#usersettingssummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkSettingsSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1316,24 +714,21 @@ class NetworkSettingsSummaryTypeDef(TypedDict):
     vpcId: NotRequired[str],
 ```
 
-## NetworkSettingsTypeDef
+## ListPortalsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import NetworkSettingsTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListPortalsRequestRequestTypeDef
 
-def get_value() -> NetworkSettingsTypeDef:
+def get_value() -> ListPortalsRequestRequestTypeDef:
     return {
-        "networkSettingsArn": ...,
+        "maxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class NetworkSettingsTypeDef(TypedDict):
-    networkSettingsArn: str,
-    associatedPortalArns: NotRequired[List[str]],
-    securityGroupIds: NotRequired[List[str]],
-    subnetIds: NotRequired[List[str]],
-    vpcId: NotRequired[str],
+class ListPortalsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
 ```
 
 ## PortalSummaryTypeDef
@@ -1365,96 +760,55 @@ class PortalSummaryTypeDef(TypedDict):
 1. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
 2. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
 3. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
-## PortalTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import PortalTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListTagsForResourceRequestRequestTypeDef
 
-def get_value() -> PortalTypeDef:
-    return {
-        "browserSettingsArn": ...,
-    }
-```
-
-```python title="Definition"
-class PortalTypeDef(TypedDict):
-    browserSettingsArn: NotRequired[str],
-    browserType: NotRequired[BrowserTypeType],  # (1)
-    creationDate: NotRequired[datetime],
-    displayName: NotRequired[str],
-    networkSettingsArn: NotRequired[str],
-    portalArn: NotRequired[str],
-    portalEndpoint: NotRequired[str],
-    portalStatus: NotRequired[PortalStatusType],  # (2)
-    rendererType: NotRequired[RendererTypeType],  # (3)
-    statusReason: NotRequired[str],
-    trustStoreArn: NotRequired[str],
-    userSettingsArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
-2. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
-3. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
     return {
         "resourceArn": ...,
-        "tags": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
-    tags: Sequence[TagTypeDef],  # (1)
-    clientToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+## ListTrustStoreCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import TagTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListTrustStoreCertificatesRequestRequestTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> ListTrustStoreCertificatesRequestRequestTypeDef:
     return {
-        "Key": ...,
-        "Value": ...,
+        "trustStoreArn": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
+class ListTrustStoreCertificatesRequestRequestTypeDef(TypedDict):
+    trustStoreArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListTrustStoresRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListTrustStoresRequestRequestTypeDef
+
+def get_value() -> ListTrustStoresRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrustStoresRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
 ```
 
 ## TrustStoreSummaryTypeDef
@@ -1473,23 +827,51 @@ class TrustStoreSummaryTypeDef(TypedDict):
     trustStoreArn: NotRequired[str],
 ```
 
-## TrustStoreTypeDef
+## ListUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import TrustStoreTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListUserSettingsRequestRequestTypeDef
 
-def get_value() -> TrustStoreTypeDef:
+def get_value() -> ListUserSettingsRequestRequestTypeDef:
     return {
-        "associatedPortalArns": ...,
+        "maxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class TrustStoreTypeDef(TypedDict):
-    associatedPortalArns: NotRequired[List[str]],
-    trustStoreArn: NotRequired[str],
+class ListUserSettingsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
 ```
 
+## UserSettingsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UserSettingsSummaryTypeDef
+
+def get_value() -> UserSettingsSummaryTypeDef:
+    return {
+        "copyAllowed": ...,
+    }
+```
+
+```python title="Definition"
+class UserSettingsSummaryTypeDef(TypedDict):
+    copyAllowed: NotRequired[EnabledTypeType],  # (1)
+    disconnectTimeoutInMinutes: NotRequired[int],
+    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
+    idleDisconnectTimeoutInMinutes: NotRequired[int],
+    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
+    printAllowed: NotRequired[EnabledTypeType],  # (1)
+    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
+    userSettingsArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1526,26 +908,6 @@ class UpdateBrowserSettingsRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## UpdateBrowserSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdateBrowserSettingsResponseTypeDef
-
-def get_value() -> UpdateBrowserSettingsResponseTypeDef:
-    return {
-        "browserSettings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBrowserSettingsResponseTypeDef(TypedDict):
-    browserSettings: BrowserSettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BrowserSettingsTypeDef](./type_defs.md#browsersettingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIdentityProviderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1567,26 +929,6 @@ class UpdateIdentityProviderRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-## UpdateIdentityProviderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdateIdentityProviderResponseTypeDef
-
-def get_value() -> UpdateIdentityProviderResponseTypeDef:
-    return {
-        "identityProvider": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateIdentityProviderResponseTypeDef(TypedDict):
-    identityProvider: IdentityProviderTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNetworkSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1607,6 +949,637 @@ class UpdateNetworkSettingsRequestRequestTypeDef(TypedDict):
     vpcId: NotRequired[str],
 ```
 
+## UpdatePortalRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdatePortalRequestRequestTypeDef
+
+def get_value() -> UpdatePortalRequestRequestTypeDef:
+    return {
+        "portalArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePortalRequestRequestTypeDef(TypedDict):
+    portalArn: str,
+    displayName: NotRequired[str],
+```
+
+## UpdateTrustStoreRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateTrustStoreRequestRequestTypeDef
+
+def get_value() -> UpdateTrustStoreRequestRequestTypeDef:
+    return {
+        "trustStoreArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTrustStoreRequestRequestTypeDef(TypedDict):
+    trustStoreArn: str,
+    certificatesToAdd: NotRequired[Sequence[Union[str, bytes, IO[Any], StreamingBody]]],
+    certificatesToDelete: NotRequired[Sequence[str]],
+    clientToken: NotRequired[str],
+```
+
+## UpdateUserSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateUserSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateUserSettingsRequestRequestTypeDef:
+    return {
+        "userSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserSettingsRequestRequestTypeDef(TypedDict):
+    userSettingsArn: str,
+    clientToken: NotRequired[str],
+    copyAllowed: NotRequired[EnabledTypeType],  # (1)
+    disconnectTimeoutInMinutes: NotRequired[int],
+    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
+    idleDisconnectTimeoutInMinutes: NotRequired[int],
+    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
+    printAllowed: NotRequired[EnabledTypeType],  # (1)
+    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+## AssociateBrowserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateBrowserSettingsResponseTypeDef
+
+def get_value() -> AssociateBrowserSettingsResponseTypeDef:
+    return {
+        "browserSettingsArn": ...,
+        "portalArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateBrowserSettingsResponseTypeDef(TypedDict):
+    browserSettingsArn: str,
+    portalArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateNetworkSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateNetworkSettingsResponseTypeDef
+
+def get_value() -> AssociateNetworkSettingsResponseTypeDef:
+    return {
+        "networkSettingsArn": ...,
+        "portalArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateNetworkSettingsResponseTypeDef(TypedDict):
+    networkSettingsArn: str,
+    portalArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateTrustStoreResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateTrustStoreResponseTypeDef
+
+def get_value() -> AssociateTrustStoreResponseTypeDef:
+    return {
+        "portalArn": ...,
+        "trustStoreArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateTrustStoreResponseTypeDef(TypedDict):
+    portalArn: str,
+    trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateUserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateUserSettingsResponseTypeDef
+
+def get_value() -> AssociateUserSettingsResponseTypeDef:
+    return {
+        "portalArn": ...,
+        "userSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateUserSettingsResponseTypeDef(TypedDict):
+    portalArn: str,
+    userSettingsArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBrowserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateBrowserSettingsResponseTypeDef
+
+def get_value() -> CreateBrowserSettingsResponseTypeDef:
+    return {
+        "browserSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBrowserSettingsResponseTypeDef(TypedDict):
+    browserSettingsArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateIdentityProviderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateIdentityProviderResponseTypeDef
+
+def get_value() -> CreateIdentityProviderResponseTypeDef:
+    return {
+        "identityProviderArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIdentityProviderResponseTypeDef(TypedDict):
+    identityProviderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateNetworkSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateNetworkSettingsResponseTypeDef
+
+def get_value() -> CreateNetworkSettingsResponseTypeDef:
+    return {
+        "networkSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNetworkSettingsResponseTypeDef(TypedDict):
+    networkSettingsArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePortalResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreatePortalResponseTypeDef
+
+def get_value() -> CreatePortalResponseTypeDef:
+    return {
+        "portalArn": ...,
+        "portalEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortalResponseTypeDef(TypedDict):
+    portalArn: str,
+    portalEndpoint: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTrustStoreResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateTrustStoreResponseTypeDef
+
+def get_value() -> CreateTrustStoreResponseTypeDef:
+    return {
+        "trustStoreArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrustStoreResponseTypeDef(TypedDict):
+    trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateUserSettingsResponseTypeDef
+
+def get_value() -> CreateUserSettingsResponseTypeDef:
+    return {
+        "userSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserSettingsResponseTypeDef(TypedDict):
+    userSettingsArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPortalServiceProviderMetadataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetPortalServiceProviderMetadataResponseTypeDef
+
+def get_value() -> GetPortalServiceProviderMetadataResponseTypeDef:
+    return {
+        "portalArn": ...,
+        "serviceProviderSamlMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPortalServiceProviderMetadataResponseTypeDef(TypedDict):
+    portalArn: str,
+    serviceProviderSamlMetadata: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTrustStoreResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateTrustStoreResponseTypeDef
+
+def get_value() -> UpdateTrustStoreResponseTypeDef:
+    return {
+        "trustStoreArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTrustStoreResponseTypeDef(TypedDict):
+    trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBrowserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListBrowserSettingsResponseTypeDef
+
+def get_value() -> ListBrowserSettingsResponseTypeDef:
+    return {
+        "browserSettings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBrowserSettingsResponseTypeDef(TypedDict):
+    browserSettings: List[BrowserSettingsSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BrowserSettingsSummaryTypeDef](./type_defs.md#browsersettingssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBrowserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetBrowserSettingsResponseTypeDef
+
+def get_value() -> GetBrowserSettingsResponseTypeDef:
+    return {
+        "browserSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBrowserSettingsResponseTypeDef(TypedDict):
+    browserSettings: BrowserSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BrowserSettingsTypeDef](./type_defs.md#browsersettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBrowserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateBrowserSettingsResponseTypeDef
+
+def get_value() -> UpdateBrowserSettingsResponseTypeDef:
+    return {
+        "browserSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBrowserSettingsResponseTypeDef(TypedDict):
+    browserSettings: BrowserSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BrowserSettingsTypeDef](./type_defs.md#browsersettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrustStoreCertificatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListTrustStoreCertificatesResponseTypeDef
+
+def get_value() -> ListTrustStoreCertificatesResponseTypeDef:
+    return {
+        "certificateList": ...,
+        "nextToken": ...,
+        "trustStoreArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrustStoreCertificatesResponseTypeDef(TypedDict):
+    certificateList: List[CertificateSummaryTypeDef],  # (1)
+    nextToken: str,
+    trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTrustStoreCertificateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetTrustStoreCertificateResponseTypeDef
+
+def get_value() -> GetTrustStoreCertificateResponseTypeDef:
+    return {
+        "certificate": ...,
+        "trustStoreArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTrustStoreCertificateResponseTypeDef(TypedDict):
+    certificate: CertificateTypeDef,  # (1)
+    trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBrowserSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateBrowserSettingsRequestRequestTypeDef
+
+def get_value() -> CreateBrowserSettingsRequestRequestTypeDef:
+    return {
+        "browserPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBrowserSettingsRequestRequestTypeDef(TypedDict):
+    browserPolicy: str,
+    additionalEncryptionContext: NotRequired[Mapping[str, str]],
+    clientToken: NotRequired[str],
+    customerManagedKey: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateNetworkSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateNetworkSettingsRequestRequestTypeDef
+
+def get_value() -> CreateNetworkSettingsRequestRequestTypeDef:
+    return {
+        "securityGroupIds": ...,
+        "subnetIds": ...,
+        "vpcId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNetworkSettingsRequestRequestTypeDef(TypedDict):
+    securityGroupIds: Sequence[str],
+    subnetIds: Sequence[str],
+    vpcId: str,
+    clientToken: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreatePortalRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreatePortalRequestRequestTypeDef
+
+def get_value() -> CreatePortalRequestRequestTypeDef:
+    return {
+        "additionalEncryptionContext": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortalRequestRequestTypeDef(TypedDict):
+    additionalEncryptionContext: NotRequired[Mapping[str, str]],
+    clientToken: NotRequired[str],
+    customerManagedKey: NotRequired[str],
+    displayName: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateTrustStoreRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateTrustStoreRequestRequestTypeDef
+
+def get_value() -> CreateTrustStoreRequestRequestTypeDef:
+    return {
+        "certificateList": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrustStoreRequestRequestTypeDef(TypedDict):
+    certificateList: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
+    clientToken: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateUserSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateUserSettingsRequestRequestTypeDef
+
+def get_value() -> CreateUserSettingsRequestRequestTypeDef:
+    return {
+        "copyAllowed": ...,
+        "downloadAllowed": ...,
+        "pasteAllowed": ...,
+        "printAllowed": ...,
+        "uploadAllowed": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserSettingsRequestRequestTypeDef(TypedDict):
+    copyAllowed: EnabledTypeType,  # (1)
+    downloadAllowed: EnabledTypeType,  # (1)
+    pasteAllowed: EnabledTypeType,  # (1)
+    printAllowed: EnabledTypeType,  # (1)
+    uploadAllowed: EnabledTypeType,  # (1)
+    clientToken: NotRequired[str],
+    disconnectTimeoutInMinutes: NotRequired[int],
+    idleDisconnectTimeoutInMinutes: NotRequired[int],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+    clientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetIdentityProviderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetIdentityProviderResponseTypeDef
+
+def get_value() -> GetIdentityProviderResponseTypeDef:
+    return {
+        "identityProvider": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIdentityProviderResponseTypeDef(TypedDict):
+    identityProvider: IdentityProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateIdentityProviderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateIdentityProviderResponseTypeDef
+
+def get_value() -> UpdateIdentityProviderResponseTypeDef:
+    return {
+        "identityProvider": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIdentityProviderResponseTypeDef(TypedDict):
+    identityProvider: IdentityProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNetworkSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetNetworkSettingsResponseTypeDef
+
+def get_value() -> GetNetworkSettingsResponseTypeDef:
+    return {
+        "networkSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkSettingsResponseTypeDef(TypedDict):
+    networkSettings: NetworkSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkSettingsTypeDef](./type_defs.md#networksettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNetworkSettingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1627,23 +1600,26 @@ class UpdateNetworkSettingsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkSettingsTypeDef](./type_defs.md#networksettingstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdatePortalRequestRequestTypeDef
+## GetPortalResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdatePortalRequestRequestTypeDef
+from mypy_boto3_workspaces_web.type_defs import GetPortalResponseTypeDef
 
-def get_value() -> UpdatePortalRequestRequestTypeDef:
+def get_value() -> GetPortalResponseTypeDef:
     return {
-        "portalArn": ...,
+        "portal": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdatePortalRequestRequestTypeDef(TypedDict):
-    portalArn: str,
-    displayName: NotRequired[str],
+class GetPortalResponseTypeDef(TypedDict):
+    portal: PortalTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: PortalTypeDef](./type_defs.md#portaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePortalResponseTypeDef
 
 ```python title="Usage Example"
@@ -1664,71 +1640,46 @@ class UpdatePortalResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PortalTypeDef](./type_defs.md#portaltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateTrustStoreRequestRequestTypeDef
+## GetTrustStoreResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdateTrustStoreRequestRequestTypeDef
+from mypy_boto3_workspaces_web.type_defs import GetTrustStoreResponseTypeDef
 
-def get_value() -> UpdateTrustStoreRequestRequestTypeDef:
+def get_value() -> GetTrustStoreResponseTypeDef:
     return {
-        "trustStoreArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTrustStoreRequestRequestTypeDef(TypedDict):
-    trustStoreArn: str,
-    certificatesToAdd: NotRequired[Sequence[Union[str, bytes, IO[Any], StreamingBody]]],
-    certificatesToDelete: NotRequired[Sequence[str]],
-    clientToken: NotRequired[str],
-```
-
-## UpdateTrustStoreResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdateTrustStoreResponseTypeDef
-
-def get_value() -> UpdateTrustStoreResponseTypeDef:
-    return {
-        "trustStoreArn": ...,
+        "trustStore": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateTrustStoreResponseTypeDef(TypedDict):
-    trustStoreArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GetTrustStoreResponseTypeDef(TypedDict):
+    trustStore: TrustStoreTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateUserSettingsRequestRequestTypeDef
+1. See [:material-code-braces: TrustStoreTypeDef](./type_defs.md#truststoretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUserSettingsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UpdateUserSettingsRequestRequestTypeDef
+from mypy_boto3_workspaces_web.type_defs import GetUserSettingsResponseTypeDef
 
-def get_value() -> UpdateUserSettingsRequestRequestTypeDef:
+def get_value() -> GetUserSettingsResponseTypeDef:
     return {
-        "userSettingsArn": ...,
+        "userSettings": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateUserSettingsRequestRequestTypeDef(TypedDict):
-    userSettingsArn: str,
-    clientToken: NotRequired[str],
-    copyAllowed: NotRequired[EnabledTypeType],  # (1)
-    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
-    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
-    printAllowed: NotRequired[EnabledTypeType],  # (1)
-    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
+class GetUserSettingsResponseTypeDef(TypedDict):
+    userSettings: UserSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserSettingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1749,56 +1700,113 @@ class UpdateUserSettingsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UserSettingsSummaryTypeDef
+## ListIdentityProvidersResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UserSettingsSummaryTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListIdentityProvidersResponseTypeDef
 
-def get_value() -> UserSettingsSummaryTypeDef:
+def get_value() -> ListIdentityProvidersResponseTypeDef:
     return {
-        "copyAllowed": ...,
+        "identityProviders": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserSettingsSummaryTypeDef(TypedDict):
-    copyAllowed: NotRequired[EnabledTypeType],  # (1)
-    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
-    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
-    printAllowed: NotRequired[EnabledTypeType],  # (1)
-    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
-    userSettingsArn: NotRequired[str],
+class ListIdentityProvidersResponseTypeDef(TypedDict):
+    identityProviders: List[IdentityProviderSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-## UserSettingsTypeDef
+1. See [:material-code-braces: IdentityProviderSummaryTypeDef](./type_defs.md#identityprovidersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNetworkSettingsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workspaces_web.type_defs import UserSettingsTypeDef
+from mypy_boto3_workspaces_web.type_defs import ListNetworkSettingsResponseTypeDef
 
-def get_value() -> UserSettingsTypeDef:
+def get_value() -> ListNetworkSettingsResponseTypeDef:
     return {
-        "userSettingsArn": ...,
+        "networkSettings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserSettingsTypeDef(TypedDict):
-    userSettingsArn: str,
-    associatedPortalArns: NotRequired[List[str]],
-    copyAllowed: NotRequired[EnabledTypeType],  # (1)
-    downloadAllowed: NotRequired[EnabledTypeType],  # (1)
-    pasteAllowed: NotRequired[EnabledTypeType],  # (1)
-    printAllowed: NotRequired[EnabledTypeType],  # (1)
-    uploadAllowed: NotRequired[EnabledTypeType],  # (1)
+class ListNetworkSettingsResponseTypeDef(TypedDict):
+    networkSettings: List[NetworkSettingsSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
-5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+1. See [:material-code-braces: NetworkSettingsSummaryTypeDef](./type_defs.md#networksettingssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPortalsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListPortalsResponseTypeDef
+
+def get_value() -> ListPortalsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "portals": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortalsResponseTypeDef(TypedDict):
+    nextToken: str,
+    portals: List[PortalSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PortalSummaryTypeDef](./type_defs.md#portalsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrustStoresResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListTrustStoresResponseTypeDef
+
+def get_value() -> ListTrustStoresResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "trustStores": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrustStoresResponseTypeDef(TypedDict):
+    nextToken: str,
+    trustStores: List[TrustStoreSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrustStoreSummaryTypeDef](./type_defs.md#truststoresummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListUserSettingsResponseTypeDef
+
+def get_value() -> ListUserSettingsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "userSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserSettingsResponseTypeDef(TypedDict):
+    nextToken: str,
+    userSettings: List[UserSettingsSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserSettingsSummaryTypeDef](./type_defs.md#usersettingssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

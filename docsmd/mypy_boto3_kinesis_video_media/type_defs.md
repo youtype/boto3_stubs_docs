@@ -7,6 +7,50 @@
     Auto-generated documentation for [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
     type annotations stubs module [mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
+## StartSelectorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_media.type_defs import StartSelectorTypeDef
+
+def get_value() -> StartSelectorTypeDef:
+    return {
+        "StartSelectorType": ...,
+    }
+```
+
+```python title="Definition"
+class StartSelectorTypeDef(TypedDict):
+    StartSelectorType: StartSelectorTypeType,  # (1)
+    AfterFragmentNumber: NotRequired[str],
+    StartTimestamp: NotRequired[Union[datetime, str]],
+    ContinuationToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: StartSelectorTypeType](./literals.md#startselectortypetype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_media.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## GetMediaInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -47,47 +91,3 @@ class GetMediaOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesis_video_media.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## StartSelectorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesis_video_media.type_defs import StartSelectorTypeDef
-
-def get_value() -> StartSelectorTypeDef:
-    return {
-        "StartSelectorType": ...,
-    }
-```
-
-```python title="Definition"
-class StartSelectorTypeDef(TypedDict):
-    StartSelectorType: StartSelectorTypeType,  # (1)
-    AfterFragmentNumber: NotRequired[str],
-    StartTimestamp: NotRequired[Union[datetime, str]],
-    ContinuationToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StartSelectorTypeType](./literals.md#startselectortypetype) 

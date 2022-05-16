@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36224,187 +36224,187 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_opsworks.type_defs</span> <span class="kn">import</span> <span class="n">AgentVersionTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_opsworks.type_defs</span> <span class="kn">import</span> <span class="n">StackConfigurationManagerTypeDef</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AgentVersionTypeDef</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackConfigurationManagerTypeDef</span><span class="p">:</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="s2">&quot;Version&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#agentversiontypedef">AgentVersionTypeDef</a></li>
-<li><a href="type_defs/#apptypedef">AppTypeDef</a></li>
+<li><a href="type_defs/#stackconfigurationmanagertypedef">StackConfigurationManagerTypeDef</a></li>
+<li><a href="type_defs/#datasourcetypedef">DataSourceTypeDef</a></li>
+<li><a href="type_defs/#environmentvariabletypedef">EnvironmentVariableTypeDef</a></li>
+<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
+<li><a href="type_defs/#sslconfigurationtypedef">SslConfigurationTypeDef</a></li>
 <li><a href="type_defs/#assigninstancerequestrequesttypedef">AssignInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#assignvolumerequestrequesttypedef">AssignVolumeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associateelasticiprequestrequesttypedef">AssociateElasticIpRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#attachelasticloadbalancerrequestrequesttypedef">AttachElasticLoadBalancerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#autoscalingthresholdstypedef">AutoScalingThresholdsTypeDef</a></li>
-<li><a href="type_defs/#blockdevicemappingtypedef">BlockDeviceMappingTypeDef</a></li>
-<li><a href="type_defs/#chefconfigurationresponsemetadatatypedef">ChefConfigurationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#ebsblockdevicetypedef">EbsBlockDeviceTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#chefconfigurationtypedef">ChefConfigurationTypeDef</a></li>
-<li><a href="type_defs/#clonestackrequestrequesttypedef">CloneStackRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#clonestackresulttypedef">CloneStackResultTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchlogsconfigurationresponsemetadatatypedef">CloudWatchLogsConfigurationResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchlogsconfigurationtypedef">CloudWatchLogsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#cloudwatchlogslogstreamtypedef">CloudWatchLogsLogStreamTypeDef</a></li>
 <li><a href="type_defs/#commandtypedef">CommandTypeDef</a></li>
-<li><a href="type_defs/#createapprequestrequesttypedef">CreateAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createappresulttypedef">CreateAppResultTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentrequestrequesttypedef">CreateDeploymentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentresulttypedef">CreateDeploymentResultTypeDef</a></li>
-<li><a href="type_defs/#createinstancerequestrequesttypedef">CreateInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createinstanceresulttypedef">CreateInstanceResultTypeDef</a></li>
-<li><a href="type_defs/#createlayerrequestrequesttypedef">CreateLayerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createlayerrequeststackcreatelayertypedef">CreateLayerRequestStackCreateLayerTypeDef</a></li>
-<li><a href="type_defs/#createlayerresulttypedef">CreateLayerResultTypeDef</a></li>
-<li><a href="type_defs/#createstackrequestrequesttypedef">CreateStackRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createstackrequestserviceresourcecreatestacktypedef">CreateStackRequestServiceResourceCreateStackTypeDef</a></li>
-<li><a href="type_defs/#createstackresulttypedef">CreateStackResultTypeDef</a></li>
+<li><a href="type_defs/#deploymentcommandtypedef">DeploymentCommandTypeDef</a></li>
+<li><a href="type_defs/#recipestypedef">RecipesTypeDef</a></li>
+<li><a href="type_defs/#volumeconfigurationtypedef">VolumeConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createuserprofilerequestrequesttypedef">CreateUserProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createuserprofileresulttypedef">CreateUserProfileResultTypeDef</a></li>
-<li><a href="type_defs/#datasourcetypedef">DataSourceTypeDef</a></li>
 <li><a href="type_defs/#deleteapprequestrequesttypedef">DeleteAppRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteinstancerequestrequesttypedef">DeleteInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelayerrequestrequesttypedef">DeleteLayerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestackrequestrequesttypedef">DeleteStackRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteuserprofilerequestrequesttypedef">DeleteUserProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deploymentcommandtypedef">DeploymentCommandTypeDef</a></li>
-<li><a href="type_defs/#deploymenttypedef">DeploymentTypeDef</a></li>
 <li><a href="type_defs/#deregisterecsclusterrequestrequesttypedef">DeregisterEcsClusterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregisterelasticiprequestrequesttypedef">DeregisterElasticIpRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregisterinstancerequestrequesttypedef">DeregisterInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregisterrdsdbinstancerequestrequesttypedef">DeregisterRdsDbInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregistervolumerequestrequesttypedef">DeregisterVolumeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeagentversionsrequestrequesttypedef">DescribeAgentVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeagentversionsresulttypedef">DescribeAgentVersionsResultTypeDef</a></li>
-<li><a href="type_defs/#describeappsrequestappexistswaittypedef">DescribeAppsRequestAppExistsWaitTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describeappsrequestrequesttypedef">DescribeAppsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeappsresulttypedef">DescribeAppsResultTypeDef</a></li>
 <li><a href="type_defs/#describecommandsrequestrequesttypedef">DescribeCommandsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describecommandsresulttypedef">DescribeCommandsResultTypeDef</a></li>
-<li><a href="type_defs/#describedeploymentsrequestdeploymentsuccessfulwaittypedef">DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef</a></li>
 <li><a href="type_defs/#describedeploymentsrequestrequesttypedef">DescribeDeploymentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describedeploymentsresulttypedef">DescribeDeploymentsResultTypeDef</a></li>
-<li><a href="type_defs/#describeecsclustersrequestdescribeecsclusterspaginatetypedef">DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describeecsclustersrequestrequesttypedef">DescribeEcsClustersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeecsclustersresulttypedef">DescribeEcsClustersResultTypeDef</a></li>
+<li><a href="type_defs/#ecsclustertypedef">EcsClusterTypeDef</a></li>
 <li><a href="type_defs/#describeelasticipsrequestrequesttypedef">DescribeElasticIpsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeelasticipsresulttypedef">DescribeElasticIpsResultTypeDef</a></li>
+<li><a href="type_defs/#elasticiptypedef">ElasticIpTypeDef</a></li>
 <li><a href="type_defs/#describeelasticloadbalancersrequestrequesttypedef">DescribeElasticLoadBalancersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeelasticloadbalancersresulttypedef">DescribeElasticLoadBalancersResultTypeDef</a></li>
-<li><a href="type_defs/#describeinstancesrequestinstanceonlinewaittypedef">DescribeInstancesRequestInstanceOnlineWaitTypeDef</a></li>
-<li><a href="type_defs/#describeinstancesrequestinstanceregisteredwaittypedef">DescribeInstancesRequestInstanceRegisteredWaitTypeDef</a></li>
-<li><a href="type_defs/#describeinstancesrequestinstancestoppedwaittypedef">DescribeInstancesRequestInstanceStoppedWaitTypeDef</a></li>
-<li><a href="type_defs/#describeinstancesrequestinstanceterminatedwaittypedef">DescribeInstancesRequestInstanceTerminatedWaitTypeDef</a></li>
+<li><a href="type_defs/#elasticloadbalancertypedef">ElasticLoadBalancerTypeDef</a></li>
 <li><a href="type_defs/#describeinstancesrequestrequesttypedef">DescribeInstancesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeinstancesresulttypedef">DescribeInstancesResultTypeDef</a></li>
 <li><a href="type_defs/#describelayersrequestrequesttypedef">DescribeLayersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describelayersresulttypedef">DescribeLayersResultTypeDef</a></li>
 <li><a href="type_defs/#describeloadbasedautoscalingrequestrequesttypedef">DescribeLoadBasedAutoScalingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeloadbasedautoscalingresulttypedef">DescribeLoadBasedAutoScalingResultTypeDef</a></li>
-<li><a href="type_defs/#describemyuserprofileresulttypedef">DescribeMyUserProfileResultTypeDef</a></li>
-<li><a href="type_defs/#describeoperatingsystemsresponsetypedef">DescribeOperatingSystemsResponseTypeDef</a></li>
+<li><a href="type_defs/#selfuserprofiletypedef">SelfUserProfileTypeDef</a></li>
 <li><a href="type_defs/#describepermissionsrequestrequesttypedef">DescribePermissionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describepermissionsresulttypedef">DescribePermissionsResultTypeDef</a></li>
+<li><a href="type_defs/#permissiontypedef">PermissionTypeDef</a></li>
 <li><a href="type_defs/#describeraidarraysrequestrequesttypedef">DescribeRaidArraysRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeraidarraysresulttypedef">DescribeRaidArraysResultTypeDef</a></li>
+<li><a href="type_defs/#raidarraytypedef">RaidArrayTypeDef</a></li>
 <li><a href="type_defs/#describerdsdbinstancesrequestrequesttypedef">DescribeRdsDbInstancesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describerdsdbinstancesresulttypedef">DescribeRdsDbInstancesResultTypeDef</a></li>
+<li><a href="type_defs/#rdsdbinstancetypedef">RdsDbInstanceTypeDef</a></li>
 <li><a href="type_defs/#describeserviceerrorsrequestrequesttypedef">DescribeServiceErrorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeserviceerrorsresulttypedef">DescribeServiceErrorsResultTypeDef</a></li>
+<li><a href="type_defs/#serviceerrortypedef">ServiceErrorTypeDef</a></li>
 <li><a href="type_defs/#describestackprovisioningparametersrequestrequesttypedef">DescribeStackProvisioningParametersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describestackprovisioningparametersresulttypedef">DescribeStackProvisioningParametersResultTypeDef</a></li>
 <li><a href="type_defs/#describestacksummaryrequestrequesttypedef">DescribeStackSummaryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describestacksummaryresulttypedef">DescribeStackSummaryResultTypeDef</a></li>
 <li><a href="type_defs/#describestacksrequestrequesttypedef">DescribeStacksRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describestacksresulttypedef">DescribeStacksResultTypeDef</a></li>
 <li><a href="type_defs/#describetimebasedautoscalingrequestrequesttypedef">DescribeTimeBasedAutoScalingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetimebasedautoscalingresulttypedef">DescribeTimeBasedAutoScalingResultTypeDef</a></li>
 <li><a href="type_defs/#describeuserprofilesrequestrequesttypedef">DescribeUserProfilesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeuserprofilesresulttypedef">DescribeUserProfilesResultTypeDef</a></li>
+<li><a href="type_defs/#userprofiletypedef">UserProfileTypeDef</a></li>
 <li><a href="type_defs/#describevolumesrequestrequesttypedef">DescribeVolumesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describevolumesresulttypedef">DescribeVolumesResultTypeDef</a></li>
+<li><a href="type_defs/#volumetypedef">VolumeTypeDef</a></li>
 <li><a href="type_defs/#detachelasticloadbalancerrequestrequesttypedef">DetachElasticLoadBalancerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociateelasticiprequestrequesttypedef">DisassociateElasticIpRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#ebsblockdevicetypedef">EbsBlockDeviceTypeDef</a></li>
-<li><a href="type_defs/#ecsclustertypedef">EcsClusterTypeDef</a></li>
-<li><a href="type_defs/#elasticiptypedef">ElasticIpTypeDef</a></li>
-<li><a href="type_defs/#elasticloadbalancertypedef">ElasticLoadBalancerTypeDef</a></li>
-<li><a href="type_defs/#environmentvariabletypedef">EnvironmentVariableTypeDef</a></li>
 <li><a href="type_defs/#gethostnamesuggestionrequestrequesttypedef">GetHostnameSuggestionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#gethostnamesuggestionresulttypedef">GetHostnameSuggestionResultTypeDef</a></li>
 <li><a href="type_defs/#grantaccessrequestrequesttypedef">GrantAccessRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#grantaccessresulttypedef">GrantAccessResultTypeDef</a></li>
+<li><a href="type_defs/#temporarycredentialtypedef">TemporaryCredentialTypeDef</a></li>
 <li><a href="type_defs/#instanceidentitytypedef">InstanceIdentityTypeDef</a></li>
-<li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
-<li><a href="type_defs/#instancescountresponsemetadatatypedef">InstancesCountResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#reportedostypedef">ReportedOsTypeDef</a></li>
 <li><a href="type_defs/#instancescounttypedef">InstancesCountTypeDef</a></li>
-<li><a href="type_defs/#layertypedef">LayerTypeDef</a></li>
-<li><a href="type_defs/#lifecycleeventconfigurationresponsemetadatatypedef">LifecycleEventConfigurationResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#lifecycleeventconfigurationtypedef">LifecycleEventConfigurationTypeDef</a></li>
+<li><a href="type_defs/#shutdowneventconfigurationtypedef">ShutdownEventConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listtagsrequestrequesttypedef">ListTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsresulttypedef">ListTagsResultTypeDef</a></li>
-<li><a href="type_defs/#loadbasedautoscalingconfigurationtypedef">LoadBasedAutoScalingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#operatingsystemconfigurationmanagertypedef">OperatingSystemConfigurationManagerTypeDef</a></li>
-<li><a href="type_defs/#operatingsystemtypedef">OperatingSystemTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#permissiontypedef">PermissionTypeDef</a></li>
-<li><a href="type_defs/#raidarraytypedef">RaidArrayTypeDef</a></li>
-<li><a href="type_defs/#rdsdbinstancetypedef">RdsDbInstanceTypeDef</a></li>
 <li><a href="type_defs/#rebootinstancerequestrequesttypedef">RebootInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#recipesresponsemetadatatypedef">RecipesResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#recipestypedef">RecipesTypeDef</a></li>
 <li><a href="type_defs/#registerecsclusterrequestrequesttypedef">RegisterEcsClusterRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#registerecsclusterresulttypedef">RegisterEcsClusterResultTypeDef</a></li>
 <li><a href="type_defs/#registerelasticiprequestrequesttypedef">RegisterElasticIpRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#registerelasticipresulttypedef">RegisterElasticIpResultTypeDef</a></li>
-<li><a href="type_defs/#registerinstancerequestrequesttypedef">RegisterInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#registerinstanceresulttypedef">RegisterInstanceResultTypeDef</a></li>
 <li><a href="type_defs/#registerrdsdbinstancerequestrequesttypedef">RegisterRdsDbInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#registervolumerequestrequesttypedef">RegisterVolumeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#registervolumeresulttypedef">RegisterVolumeResultTypeDef</a></li>
-<li><a href="type_defs/#reportedostypedef">ReportedOsTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#selfuserprofiletypedef">SelfUserProfileTypeDef</a></li>
-<li><a href="type_defs/#serviceerrortypedef">ServiceErrorTypeDef</a></li>
 <li><a href="type_defs/#serviceresourcelayerrequesttypedef">ServiceResourceLayerRequestTypeDef</a></li>
 <li><a href="type_defs/#serviceresourcestackrequesttypedef">ServiceResourceStackRequestTypeDef</a></li>
 <li><a href="type_defs/#serviceresourcestacksummaryrequesttypedef">ServiceResourceStackSummaryRequestTypeDef</a></li>
-<li><a href="type_defs/#setloadbasedautoscalingrequestrequesttypedef">SetLoadBasedAutoScalingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#setpermissionrequestrequesttypedef">SetPermissionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#settimebasedautoscalingrequestrequesttypedef">SetTimeBasedAutoScalingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#shutdowneventconfigurationtypedef">ShutdownEventConfigurationTypeDef</a></li>
-<li><a href="type_defs/#sourceresponsemetadatatypedef">SourceResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
-<li><a href="type_defs/#sslconfigurationtypedef">SslConfigurationTypeDef</a></li>
-<li><a href="type_defs/#stackconfigurationmanagerresponsemetadatatypedef">StackConfigurationManagerResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#stackconfigurationmanagertypedef">StackConfigurationManagerTypeDef</a></li>
-<li><a href="type_defs/#stacksummarytypedef">StackSummaryTypeDef</a></li>
-<li><a href="type_defs/#stacktypedef">StackTypeDef</a></li>
+<li><a href="type_defs/#weeklyautoscalingscheduletypedef">WeeklyAutoScalingScheduleTypeDef</a></li>
 <li><a href="type_defs/#startinstancerequestrequesttypedef">StartInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startstackrequestrequesttypedef">StartStackRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopinstancerequestrequesttypedef">StopInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopstackrequestrequesttypedef">StopStackRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#temporarycredentialtypedef">TemporaryCredentialTypeDef</a></li>
-<li><a href="type_defs/#timebasedautoscalingconfigurationtypedef">TimeBasedAutoScalingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#unassigninstancerequestrequesttypedef">UnassignInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#unassignvolumerequestrequesttypedef">UnassignVolumeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateapprequestrequesttypedef">UpdateAppRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateelasticiprequestrequesttypedef">UpdateElasticIpRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateinstancerequestrequesttypedef">UpdateInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatelayerrequestrequesttypedef">UpdateLayerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatemyuserprofilerequestrequesttypedef">UpdateMyUserProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updaterdsdbinstancerequestrequesttypedef">UpdateRdsDbInstanceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatestackrequestrequesttypedef">UpdateStackRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateuserprofilerequestrequesttypedef">UpdateUserProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatevolumerequestrequesttypedef">UpdateVolumeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#userprofiletypedef">UserProfileTypeDef</a></li>
-<li><a href="type_defs/#volumeconfigurationtypedef">VolumeConfigurationTypeDef</a></li>
-<li><a href="type_defs/#volumetypedef">VolumeTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
-<li><a href="type_defs/#weeklyautoscalingscheduletypedef">WeeklyAutoScalingScheduleTypeDef</a></li>
+<li><a href="type_defs/#agentversiontypedef">AgentVersionTypeDef</a></li>
+<li><a href="type_defs/#describeagentversionsrequestrequesttypedef">DescribeAgentVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#apptypedef">AppTypeDef</a></li>
+<li><a href="type_defs/#createapprequestrequesttypedef">CreateAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateapprequestrequesttypedef">UpdateAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#loadbasedautoscalingconfigurationtypedef">LoadBasedAutoScalingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#setloadbasedautoscalingrequestrequesttypedef">SetLoadBasedAutoScalingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#blockdevicemappingtypedef">BlockDeviceMappingTypeDef</a></li>
+<li><a href="type_defs/#chefconfigurationresponsemetadatatypedef">ChefConfigurationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#clonestackresulttypedef">CloneStackResultTypeDef</a></li>
+<li><a href="type_defs/#createappresulttypedef">CreateAppResultTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentresulttypedef">CreateDeploymentResultTypeDef</a></li>
+<li><a href="type_defs/#createinstanceresulttypedef">CreateInstanceResultTypeDef</a></li>
+<li><a href="type_defs/#createlayerresulttypedef">CreateLayerResultTypeDef</a></li>
+<li><a href="type_defs/#createstackresulttypedef">CreateStackResultTypeDef</a></li>
+<li><a href="type_defs/#createuserprofileresulttypedef">CreateUserProfileResultTypeDef</a></li>
+<li><a href="type_defs/#describestackprovisioningparametersresulttypedef">DescribeStackProvisioningParametersResultTypeDef</a></li>
+<li><a href="type_defs/#gethostnamesuggestionresulttypedef">GetHostnameSuggestionResultTypeDef</a></li>
+<li><a href="type_defs/#instancescountresponsemetadatatypedef">InstancesCountResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#listtagsresulttypedef">ListTagsResultTypeDef</a></li>
+<li><a href="type_defs/#recipesresponsemetadatatypedef">RecipesResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#registerecsclusterresulttypedef">RegisterEcsClusterResultTypeDef</a></li>
+<li><a href="type_defs/#registerelasticipresulttypedef">RegisterElasticIpResultTypeDef</a></li>
+<li><a href="type_defs/#registerinstanceresulttypedef">RegisterInstanceResultTypeDef</a></li>
+<li><a href="type_defs/#registervolumeresulttypedef">RegisterVolumeResultTypeDef</a></li>
+<li><a href="type_defs/#sourceresponsemetadatatypedef">SourceResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#stackconfigurationmanagerresponsemetadatatypedef">StackConfigurationManagerResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#clonestackrequestrequesttypedef">CloneStackRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createstackrequestrequesttypedef">CreateStackRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createstackrequestserviceresourcecreatestacktypedef">CreateStackRequestServiceResourceCreateStackTypeDef</a></li>
+<li><a href="type_defs/#stacktypedef">StackTypeDef</a></li>
+<li><a href="type_defs/#updatestackrequestrequesttypedef">UpdateStackRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchlogsconfigurationresponsemetadatatypedef">CloudWatchLogsConfigurationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchlogsconfigurationtypedef">CloudWatchLogsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#describecommandsresulttypedef">DescribeCommandsResultTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentrequestrequesttypedef">CreateDeploymentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymenttypedef">DeploymentTypeDef</a></li>
+<li><a href="type_defs/#describeappsrequestappexistswaittypedef">DescribeAppsRequestAppExistsWaitTypeDef</a></li>
+<li><a href="type_defs/#describedeploymentsrequestdeploymentsuccessfulwaittypedef">DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef</a></li>
+<li><a href="type_defs/#describeinstancesrequestinstanceonlinewaittypedef">DescribeInstancesRequestInstanceOnlineWaitTypeDef</a></li>
+<li><a href="type_defs/#describeinstancesrequestinstanceregisteredwaittypedef">DescribeInstancesRequestInstanceRegisteredWaitTypeDef</a></li>
+<li><a href="type_defs/#describeinstancesrequestinstancestoppedwaittypedef">DescribeInstancesRequestInstanceStoppedWaitTypeDef</a></li>
+<li><a href="type_defs/#describeinstancesrequestinstanceterminatedwaittypedef">DescribeInstancesRequestInstanceTerminatedWaitTypeDef</a></li>
+<li><a href="type_defs/#describeecsclustersrequestdescribeecsclusterspaginatetypedef">DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeecsclustersresulttypedef">DescribeEcsClustersResultTypeDef</a></li>
+<li><a href="type_defs/#describeelasticipsresulttypedef">DescribeElasticIpsResultTypeDef</a></li>
+<li><a href="type_defs/#describeelasticloadbalancersresulttypedef">DescribeElasticLoadBalancersResultTypeDef</a></li>
+<li><a href="type_defs/#describemyuserprofileresulttypedef">DescribeMyUserProfileResultTypeDef</a></li>
+<li><a href="type_defs/#describepermissionsresulttypedef">DescribePermissionsResultTypeDef</a></li>
+<li><a href="type_defs/#describeraidarraysresulttypedef">DescribeRaidArraysResultTypeDef</a></li>
+<li><a href="type_defs/#describerdsdbinstancesresulttypedef">DescribeRdsDbInstancesResultTypeDef</a></li>
+<li><a href="type_defs/#describeserviceerrorsresulttypedef">DescribeServiceErrorsResultTypeDef</a></li>
+<li><a href="type_defs/#describeuserprofilesresulttypedef">DescribeUserProfilesResultTypeDef</a></li>
+<li><a href="type_defs/#describevolumesresulttypedef">DescribeVolumesResultTypeDef</a></li>
+<li><a href="type_defs/#grantaccessresulttypedef">GrantAccessResultTypeDef</a></li>
+<li><a href="type_defs/#registerinstancerequestrequesttypedef">RegisterInstanceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stacksummarytypedef">StackSummaryTypeDef</a></li>
+<li><a href="type_defs/#lifecycleeventconfigurationresponsemetadatatypedef">LifecycleEventConfigurationResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#lifecycleeventconfigurationtypedef">LifecycleEventConfigurationTypeDef</a></li>
+<li><a href="type_defs/#operatingsystemtypedef">OperatingSystemTypeDef</a></li>
+<li><a href="type_defs/#settimebasedautoscalingrequestrequesttypedef">SetTimeBasedAutoScalingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#timebasedautoscalingconfigurationtypedef">TimeBasedAutoScalingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#describeagentversionsresulttypedef">DescribeAgentVersionsResultTypeDef</a></li>
+<li><a href="type_defs/#describeappsresulttypedef">DescribeAppsResultTypeDef</a></li>
+<li><a href="type_defs/#describeloadbasedautoscalingresulttypedef">DescribeLoadBasedAutoScalingResultTypeDef</a></li>
+<li><a href="type_defs/#createinstancerequestrequesttypedef">CreateInstanceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
+<li><a href="type_defs/#describestacksresulttypedef">DescribeStacksResultTypeDef</a></li>
+<li><a href="type_defs/#describedeploymentsresulttypedef">DescribeDeploymentsResultTypeDef</a></li>
+<li><a href="type_defs/#describestacksummaryresulttypedef">DescribeStackSummaryResultTypeDef</a></li>
+<li><a href="type_defs/#createlayerrequestrequesttypedef">CreateLayerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlayerrequeststackcreatelayertypedef">CreateLayerRequestStackCreateLayerTypeDef</a></li>
+<li><a href="type_defs/#layertypedef">LayerTypeDef</a></li>
+<li><a href="type_defs/#updatelayerrequestrequesttypedef">UpdateLayerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeoperatingsystemsresponsetypedef">DescribeOperatingSystemsResponseTypeDef</a></li>
+<li><a href="type_defs/#describetimebasedautoscalingresulttypedef">DescribeTimeBasedAutoScalingResultTypeDef</a></li>
+<li><a href="type_defs/#describeinstancesresulttypedef">DescribeInstancesResultTypeDef</a></li>
+<li><a href="type_defs/#describelayersresulttypedef">DescribeLayersResultTypeDef</a></li>
 </ul>
 
               
@@ -36474,7 +36474,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

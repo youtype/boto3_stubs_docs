@@ -41,28 +41,6 @@ class AcceleratorTotalMemoryMiBRequestTypeDef(TypedDict):
     Max: NotRequired[int],
 ```
 
-## ActivitiesTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef
-
-def get_value() -> ActivitiesTypeTypeDef:
-    return {
-        "Activities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ActivitiesTypeTypeDef(TypedDict):
-    Activities: List[ActivityTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ActivityTypeDef
 
 ```python title="Usage Example"
@@ -95,26 +73,30 @@ class ActivityTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype) 
-## ActivityTypeTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ActivityTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> ActivityTypeTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Activity": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class ActivityTypeTypeDef(TypedDict):
-    Activity: ActivityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdjustmentTypeTypeDef
 
 ```python title="Usage Example"
@@ -201,183 +183,113 @@ class AttachLoadBalancersTypeRequestTypeDef(TypedDict):
     LoadBalancerNames: Sequence[str],
 ```
 
-## AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef
+## FilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef
+from mypy_boto3_autoscaling.type_defs import FilterTypeDef
 
-def get_value() -> AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef:
+def get_value() -> FilterTypeDef:
     return {
-        "AutoScalingGroupNames": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef(TypedDict):
-    AutoScalingGroupNames: NotRequired[Sequence[str]],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+class FilterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## AutoScalingGroupNamesTypeRequestTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> AutoScalingGroupNamesTypeRequestTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "AutoScalingGroupNames": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingGroupNamesTypeRequestTypeDef(TypedDict):
-    AutoScalingGroupNames: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    MaxRecords: NotRequired[int],
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## AutoScalingGroupTypeDef
+## EnabledMetricTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupTypeDef
+from mypy_boto3_autoscaling.type_defs import EnabledMetricTypeDef
 
-def get_value() -> AutoScalingGroupTypeDef:
+def get_value() -> EnabledMetricTypeDef:
     return {
-        "AutoScalingGroupName": ...,
-        "MinSize": ...,
-        "MaxSize": ...,
-        "DesiredCapacity": ...,
-        "DefaultCooldown": ...,
-        "AvailabilityZones": ...,
-        "HealthCheckType": ...,
-        "CreatedTime": ...,
+        "Metric": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingGroupTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    MinSize: int,
-    MaxSize: int,
-    DesiredCapacity: int,
-    DefaultCooldown: int,
-    AvailabilityZones: List[str],
-    HealthCheckType: str,
-    CreatedTime: datetime,
-    AutoScalingGroupARN: NotRequired[str],
-    LaunchConfigurationName: NotRequired[str],
-    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
-    PredictedCapacity: NotRequired[int],
-    LoadBalancerNames: NotRequired[List[str]],
-    TargetGroupARNs: NotRequired[List[str]],
-    HealthCheckGracePeriod: NotRequired[int],
-    Instances: NotRequired[List[InstanceTypeDef]],  # (3)
-    SuspendedProcesses: NotRequired[List[SuspendedProcessTypeDef]],  # (4)
-    PlacementGroup: NotRequired[str],
-    VPCZoneIdentifier: NotRequired[str],
-    EnabledMetrics: NotRequired[List[EnabledMetricTypeDef]],  # (5)
-    Status: NotRequired[str],
-    Tags: NotRequired[List[TagDescriptionTypeDef]],  # (6)
-    TerminationPolicies: NotRequired[List[str]],
-    NewInstancesProtectedFromScaleIn: NotRequired[bool],
-    ServiceLinkedRoleARN: NotRequired[str],
-    MaxInstanceLifetime: NotRequired[int],
-    CapacityRebalance: NotRequired[bool],
-    WarmPoolConfiguration: NotRequired[WarmPoolConfigurationTypeDef],  # (7)
-    WarmPoolSize: NotRequired[int],
-    Context: NotRequired[str],
-    DesiredCapacityType: NotRequired[str],
-    DefaultInstanceWarmup: NotRequired[int],
+class EnabledMetricTypeDef(TypedDict):
+    Metric: NotRequired[str],
+    Granularity: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
-3. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
-4. See [:material-code-braces: SuspendedProcessTypeDef](./type_defs.md#suspendedprocesstypedef) 
-5. See [:material-code-braces: EnabledMetricTypeDef](./type_defs.md#enabledmetrictypedef) 
-6. See [:material-code-braces: TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef) 
-7. See [:material-code-braces: WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef) 
-## AutoScalingGroupsTypeTypeDef
+## LaunchTemplateSpecificationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import LaunchTemplateSpecificationTypeDef
 
-def get_value() -> AutoScalingGroupsTypeTypeDef:
+def get_value() -> LaunchTemplateSpecificationTypeDef:
     return {
-        "AutoScalingGroups": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "LaunchTemplateId": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingGroupsTypeTypeDef(TypedDict):
-    AutoScalingGroups: List[AutoScalingGroupTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LaunchTemplateSpecificationTypeDef(TypedDict):
+    LaunchTemplateId: NotRequired[str],
+    LaunchTemplateName: NotRequired[str],
+    Version: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AutoScalingInstanceDetailsTypeDef
+## SuspendedProcessTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingInstanceDetailsTypeDef
+from mypy_boto3_autoscaling.type_defs import SuspendedProcessTypeDef
 
-def get_value() -> AutoScalingInstanceDetailsTypeDef:
+def get_value() -> SuspendedProcessTypeDef:
     return {
-        "InstanceId": ...,
-        "AutoScalingGroupName": ...,
-        "AvailabilityZone": ...,
-        "LifecycleState": ...,
-        "HealthStatus": ...,
-        "ProtectedFromScaleIn": ...,
+        "ProcessName": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingInstanceDetailsTypeDef(TypedDict):
-    InstanceId: str,
-    AutoScalingGroupName: str,
-    AvailabilityZone: str,
-    LifecycleState: str,
-    HealthStatus: str,
-    ProtectedFromScaleIn: bool,
-    InstanceType: NotRequired[str],
-    LaunchConfigurationName: NotRequired[str],
-    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    WeightedCapacity: NotRequired[str],
+class SuspendedProcessTypeDef(TypedDict):
+    ProcessName: NotRequired[str],
+    SuspensionReason: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-## AutoScalingInstancesTypeTypeDef
+## TagDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import AutoScalingInstancesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import TagDescriptionTypeDef
 
-def get_value() -> AutoScalingInstancesTypeTypeDef:
+def get_value() -> TagDescriptionTypeDef:
     return {
-        "AutoScalingInstances": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "ResourceId": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoScalingInstancesTypeTypeDef(TypedDict):
-    AutoScalingInstances: List[AutoScalingInstanceDetailsTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagDescriptionTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    PropagateAtLaunch: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: AutoScalingInstanceDetailsTypeDef](./type_defs.md#autoscalinginstancedetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BaselineEbsBandwidthMbpsRequestTypeDef
 
 ```python title="Usage Example"
@@ -395,26 +307,24 @@ class BaselineEbsBandwidthMbpsRequestTypeDef(TypedDict):
     Max: NotRequired[int],
 ```
 
-## BatchDeleteScheduledActionAnswerTypeDef
+## FailedScheduledUpdateGroupActionRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
+from mypy_boto3_autoscaling.type_defs import FailedScheduledUpdateGroupActionRequestTypeDef
 
-def get_value() -> BatchDeleteScheduledActionAnswerTypeDef:
+def get_value() -> FailedScheduledUpdateGroupActionRequestTypeDef:
     return {
-        "FailedScheduledActions": ...,
-        "ResponseMetadata": ...,
+        "ScheduledActionName": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchDeleteScheduledActionAnswerTypeDef(TypedDict):
-    FailedScheduledActions: List[FailedScheduledUpdateGroupActionRequestTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class FailedScheduledUpdateGroupActionRequestTypeDef(TypedDict):
+    ScheduledActionName: str,
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FailedScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#failedscheduledupdategroupactionrequesttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteScheduledActionTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -433,84 +343,51 @@ class BatchDeleteScheduledActionTypeRequestTypeDef(TypedDict):
     ScheduledActionNames: Sequence[str],
 ```
 
-## BatchPutScheduledUpdateGroupActionAnswerTypeDef
+## ScheduledUpdateGroupActionRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionAnswerTypeDef
+from mypy_boto3_autoscaling.type_defs import ScheduledUpdateGroupActionRequestTypeDef
 
-def get_value() -> BatchPutScheduledUpdateGroupActionAnswerTypeDef:
+def get_value() -> ScheduledUpdateGroupActionRequestTypeDef:
     return {
-        "FailedScheduledUpdateGroupActions": ...,
-        "ResponseMetadata": ...,
+        "ScheduledActionName": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchPutScheduledUpdateGroupActionAnswerTypeDef(TypedDict):
-    FailedScheduledUpdateGroupActions: List[FailedScheduledUpdateGroupActionRequestTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ScheduledUpdateGroupActionRequestTypeDef(TypedDict):
+    ScheduledActionName: str,
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Recurrence: NotRequired[str],
+    MinSize: NotRequired[int],
+    MaxSize: NotRequired[int],
+    DesiredCapacity: NotRequired[int],
+    TimeZone: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FailedScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#failedscheduledupdategroupactionrequesttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
+## EbsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import EbsTypeDef
 
-def get_value() -> BatchPutScheduledUpdateGroupActionTypeRequestTypeDef:
+def get_value() -> EbsTypeDef:
     return {
-        "AutoScalingGroupName": ...,
-        "ScheduledUpdateGroupActions": ...,
+        "SnapshotId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchPutScheduledUpdateGroupActionTypeRequestTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    ScheduledUpdateGroupActions: Sequence[ScheduledUpdateGroupActionRequestTypeDef],  # (1)
+class EbsTypeDef(TypedDict):
+    SnapshotId: NotRequired[str],
+    VolumeSize: NotRequired[int],
+    VolumeType: NotRequired[str],
+    DeleteOnTermination: NotRequired[bool],
+    Iops: NotRequired[int],
+    Encrypted: NotRequired[bool],
+    Throughput: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef) 
-## BlockDeviceMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import BlockDeviceMappingTypeDef
-
-def get_value() -> BlockDeviceMappingTypeDef:
-    return {
-        "DeviceName": ...,
-    }
-```
-
-```python title="Definition"
-class BlockDeviceMappingTypeDef(TypedDict):
-    DeviceName: str,
-    VirtualName: NotRequired[str],
-    Ebs: NotRequired[EbsTypeDef],  # (1)
-    NoDevice: NotRequired[bool],
-```
-
-1. See [:material-code-braces: EbsTypeDef](./type_defs.md#ebstypedef) 
-## CancelInstanceRefreshAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerTypeDef
-
-def get_value() -> CancelInstanceRefreshAnswerTypeDef:
-    return {
-        "InstanceRefreshId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CancelInstanceRefreshAnswerTypeDef(TypedDict):
-    InstanceRefreshId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelInstanceRefreshTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -567,131 +444,103 @@ class CompleteLifecycleActionTypeRequestTypeDef(TypedDict):
     InstanceId: NotRequired[str],
 ```
 
-## CreateAutoScalingGroupTypeRequestTypeDef
+## LifecycleHookSpecificationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CreateAutoScalingGroupTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import LifecycleHookSpecificationTypeDef
 
-def get_value() -> CreateAutoScalingGroupTypeRequestTypeDef:
+def get_value() -> LifecycleHookSpecificationTypeDef:
     return {
-        "AutoScalingGroupName": ...,
-        "MinSize": ...,
-        "MaxSize": ...,
+        "LifecycleHookName": ...,
+        "LifecycleTransition": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAutoScalingGroupTypeRequestTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    MinSize: int,
-    MaxSize: int,
-    LaunchConfigurationName: NotRequired[str],
-    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
-    InstanceId: NotRequired[str],
-    DesiredCapacity: NotRequired[int],
-    DefaultCooldown: NotRequired[int],
-    AvailabilityZones: NotRequired[Sequence[str]],
-    LoadBalancerNames: NotRequired[Sequence[str]],
-    TargetGroupARNs: NotRequired[Sequence[str]],
-    HealthCheckType: NotRequired[str],
-    HealthCheckGracePeriod: NotRequired[int],
-    PlacementGroup: NotRequired[str],
-    VPCZoneIdentifier: NotRequired[str],
-    TerminationPolicies: NotRequired[Sequence[str]],
-    NewInstancesProtectedFromScaleIn: NotRequired[bool],
-    CapacityRebalance: NotRequired[bool],
-    LifecycleHookSpecificationList: NotRequired[Sequence[LifecycleHookSpecificationTypeDef]],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-    ServiceLinkedRoleARN: NotRequired[str],
-    MaxInstanceLifetime: NotRequired[int],
-    Context: NotRequired[str],
-    DesiredCapacityType: NotRequired[str],
-    DefaultInstanceWarmup: NotRequired[int],
+class LifecycleHookSpecificationTypeDef(TypedDict):
+    LifecycleHookName: str,
+    LifecycleTransition: str,
+    NotificationMetadata: NotRequired[str],
+    HeartbeatTimeout: NotRequired[int],
+    DefaultResult: NotRequired[str],
+    NotificationTargetARN: NotRequired[str],
+    RoleARN: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
-3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateLaunchConfigurationTypeRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CreateLaunchConfigurationTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import TagTypeDef
 
-def get_value() -> CreateLaunchConfigurationTypeRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "LaunchConfigurationName": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateLaunchConfigurationTypeRequestTypeDef(TypedDict):
-    LaunchConfigurationName: str,
-    ImageId: NotRequired[str],
-    KeyName: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[str]],
-    ClassicLinkVPCId: NotRequired[str],
-    ClassicLinkVPCSecurityGroups: NotRequired[Sequence[str]],
-    UserData: NotRequired[str],
-    InstanceId: NotRequired[str],
-    InstanceType: NotRequired[str],
-    KernelId: NotRequired[str],
-    RamdiskId: NotRequired[str],
-    BlockDeviceMappings: NotRequired[Sequence[BlockDeviceMappingTypeDef]],  # (1)
-    InstanceMonitoring: NotRequired[InstanceMonitoringTypeDef],  # (2)
-    SpotPrice: NotRequired[str],
-    IamInstanceProfile: NotRequired[str],
-    EbsOptimized: NotRequired[bool],
-    AssociatePublicIpAddress: NotRequired[bool],
-    PlacementTenancy: NotRequired[str],
-    MetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (3)
+class TagTypeDef(TypedDict):
+    Key: str,
+    ResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    Value: NotRequired[str],
+    PropagateAtLaunch: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
-2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
-3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## CreateOrUpdateTagsTypeRequestTypeDef
+## InstanceMetadataOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import InstanceMetadataOptionsTypeDef
 
-def get_value() -> CreateOrUpdateTagsTypeRequestTypeDef:
+def get_value() -> InstanceMetadataOptionsTypeDef:
     return {
-        "Tags": ...,
+        "HttpTokens": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateOrUpdateTagsTypeRequestTypeDef(TypedDict):
-    Tags: Sequence[TagTypeDef],  # (1)
+class InstanceMetadataOptionsTypeDef(TypedDict):
+    HttpTokens: NotRequired[InstanceMetadataHttpTokensStateType],  # (1)
+    HttpPutResponseHopLimit: NotRequired[int],
+    HttpEndpoint: NotRequired[InstanceMetadataEndpointStateType],  # (2)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CustomizedMetricSpecificationTypeDef
+1. See [:material-code-brackets: InstanceMetadataHttpTokensStateType](./literals.md#instancemetadatahttptokensstatetype) 
+2. See [:material-code-brackets: InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype) 
+## InstanceMonitoringTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
+from mypy_boto3_autoscaling.type_defs import InstanceMonitoringTypeDef
 
-def get_value() -> CustomizedMetricSpecificationTypeDef:
+def get_value() -> InstanceMonitoringTypeDef:
     return {
-        "MetricName": ...,
-        "Namespace": ...,
-        "Statistic": ...,
+        "Enabled": ...,
     }
 ```
 
 ```python title="Definition"
-class CustomizedMetricSpecificationTypeDef(TypedDict):
-    MetricName: str,
-    Namespace: str,
-    Statistic: MetricStatisticType,  # (2)
-    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
-    Unit: NotRequired[str],
+class InstanceMonitoringTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
-2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+## MetricDimensionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MetricDimensionTypeDef
+
+def get_value() -> MetricDimensionTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
+
 ## DeleteAutoScalingGroupTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -780,23 +629,6 @@ class DeleteScheduledActionTypeRequestTypeDef(TypedDict):
     ScheduledActionName: str,
 ```
 
-## DeleteTagsTypeRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeRequestTypeDef
-
-def get_value() -> DeleteTagsTypeRequestTypeDef:
-    return {
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTagsTypeRequestTypeDef(TypedDict):
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DeleteWarmPoolTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -814,69 +646,6 @@ class DeleteWarmPoolTypeRequestTypeDef(TypedDict):
     ForceDelete: NotRequired[bool],
 ```
 
-## DescribeAccountLimitsAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeAccountLimitsAnswerTypeDef
-
-def get_value() -> DescribeAccountLimitsAnswerTypeDef:
-    return {
-        "MaxNumberOfAutoScalingGroups": ...,
-        "MaxNumberOfLaunchConfigurations": ...,
-        "NumberOfAutoScalingGroups": ...,
-        "NumberOfLaunchConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccountLimitsAnswerTypeDef(TypedDict):
-    MaxNumberOfAutoScalingGroups: int,
-    MaxNumberOfLaunchConfigurations: int,
-    NumberOfAutoScalingGroups: int,
-    NumberOfLaunchConfigurations: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAdjustmentTypesAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeAdjustmentTypesAnswerTypeDef
-
-def get_value() -> DescribeAdjustmentTypesAnswerTypeDef:
-    return {
-        "AdjustmentTypes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAdjustmentTypesAnswerTypeDef(TypedDict):
-    AdjustmentTypes: List[AdjustmentTypeTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AdjustmentTypeTypeDef](./type_defs.md#adjustmenttypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef
-
-def get_value() -> DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef:
-    return {
-        "InstanceIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef(TypedDict):
-    InstanceIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAutoScalingInstancesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -895,47 +664,6 @@ class DescribeAutoScalingInstancesTypeRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeAutoScalingNotificationTypesAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingNotificationTypesAnswerTypeDef
-
-def get_value() -> DescribeAutoScalingNotificationTypesAnswerTypeDef:
-    return {
-        "AutoScalingNotificationTypes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAutoScalingNotificationTypesAnswerTypeDef(TypedDict):
-    AutoScalingNotificationTypes: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeInstanceRefreshesAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesAnswerTypeDef
-
-def get_value() -> DescribeInstanceRefreshesAnswerTypeDef:
-    return {
-        "InstanceRefreshes": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeInstanceRefreshesAnswerTypeDef(TypedDict):
-    InstanceRefreshes: List[InstanceRefreshTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InstanceRefreshTypeDef](./type_defs.md#instancerefreshtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceRefreshesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -955,45 +683,30 @@ class DescribeInstanceRefreshesTypeRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribeLifecycleHookTypesAnswerTypeDef
+## LifecycleHookTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHookTypesAnswerTypeDef
+from mypy_boto3_autoscaling.type_defs import LifecycleHookTypeDef
 
-def get_value() -> DescribeLifecycleHookTypesAnswerTypeDef:
+def get_value() -> LifecycleHookTypeDef:
     return {
-        "LifecycleHookTypes": ...,
-        "ResponseMetadata": ...,
+        "LifecycleHookName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLifecycleHookTypesAnswerTypeDef(TypedDict):
-    LifecycleHookTypes: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class LifecycleHookTypeDef(TypedDict):
+    LifecycleHookName: NotRequired[str],
+    AutoScalingGroupName: NotRequired[str],
+    LifecycleTransition: NotRequired[str],
+    NotificationTargetARN: NotRequired[str],
+    RoleARN: NotRequired[str],
+    NotificationMetadata: NotRequired[str],
+    HeartbeatTimeout: NotRequired[int],
+    GlobalTimeout: NotRequired[int],
+    DefaultResult: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLifecycleHooksAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksAnswerTypeDef
-
-def get_value() -> DescribeLifecycleHooksAnswerTypeDef:
-    return {
-        "LifecycleHooks": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLifecycleHooksAnswerTypeDef(TypedDict):
-    LifecycleHooks: List[LifecycleHookTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LifecycleHookTypeDef](./type_defs.md#lifecyclehooktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLifecycleHooksTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1011,24 +724,6 @@ class DescribeLifecycleHooksTypeRequestTypeDef(TypedDict):
     LifecycleHookNames: NotRequired[Sequence[str]],
 ```
 
-## DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef
-
-def get_value() -> DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeLoadBalancerTargetGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1047,46 +742,23 @@ class DescribeLoadBalancerTargetGroupsRequestRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribeLoadBalancerTargetGroupsResponseTypeDef
+## LoadBalancerTargetGroupStateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import LoadBalancerTargetGroupStateTypeDef
 
-def get_value() -> DescribeLoadBalancerTargetGroupsResponseTypeDef:
+def get_value() -> LoadBalancerTargetGroupStateTypeDef:
     return {
-        "LoadBalancerTargetGroups": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "LoadBalancerTargetGroupARN": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLoadBalancerTargetGroupsResponseTypeDef(TypedDict):
-    LoadBalancerTargetGroups: List[LoadBalancerTargetGroupStateTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LoadBalancerTargetGroupStateTypeDef(TypedDict):
+    LoadBalancerTargetGroupARN: NotRequired[str],
+    State: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LoadBalancerTargetGroupStateTypeDef](./type_defs.md#loadbalancertargetgroupstatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef
-
-def get_value() -> DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeLoadBalancersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1105,91 +777,73 @@ class DescribeLoadBalancersRequestRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribeLoadBalancersResponseTypeDef
+## LoadBalancerStateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import LoadBalancerStateTypeDef
 
-def get_value() -> DescribeLoadBalancersResponseTypeDef:
+def get_value() -> LoadBalancerStateTypeDef:
     return {
-        "LoadBalancers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "LoadBalancerName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLoadBalancersResponseTypeDef(TypedDict):
-    LoadBalancers: List[LoadBalancerStateTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LoadBalancerStateTypeDef(TypedDict):
+    LoadBalancerName: NotRequired[str],
+    State: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeMetricCollectionTypesAnswerTypeDef
+## MetricCollectionTypeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeMetricCollectionTypesAnswerTypeDef
+from mypy_boto3_autoscaling.type_defs import MetricCollectionTypeTypeDef
 
-def get_value() -> DescribeMetricCollectionTypesAnswerTypeDef:
+def get_value() -> MetricCollectionTypeTypeDef:
     return {
-        "Metrics": ...,
-        "Granularities": ...,
-        "ResponseMetadata": ...,
+        "Metric": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeMetricCollectionTypesAnswerTypeDef(TypedDict):
-    Metrics: List[MetricCollectionTypeTypeDef],  # (1)
-    Granularities: List[MetricGranularityTypeTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class MetricCollectionTypeTypeDef(TypedDict):
+    Metric: NotRequired[str],
 ```
 
-1. See [:material-code-braces: MetricCollectionTypeTypeDef](./type_defs.md#metriccollectiontypetypedef) 
-2. See [:material-code-braces: MetricGranularityTypeTypeDef](./type_defs.md#metricgranularitytypetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNotificationConfigurationsAnswerTypeDef
+## MetricGranularityTypeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsAnswerTypeDef
+from mypy_boto3_autoscaling.type_defs import MetricGranularityTypeTypeDef
 
-def get_value() -> DescribeNotificationConfigurationsAnswerTypeDef:
+def get_value() -> MetricGranularityTypeTypeDef:
     return {
-        "NotificationConfigurations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Granularity": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeNotificationConfigurationsAnswerTypeDef(TypedDict):
-    NotificationConfigurations: List[NotificationConfigurationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MetricGranularityTypeTypeDef(TypedDict):
+    Granularity: NotRequired[str],
 ```
 
-1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef
+## NotificationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef
+from mypy_boto3_autoscaling.type_defs import NotificationConfigurationTypeDef
 
-def get_value() -> DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef:
+def get_value() -> NotificationConfigurationTypeDef:
     return {
-        "AutoScalingGroupNames": ...,
+        "AutoScalingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef(TypedDict):
-    AutoScalingGroupNames: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class NotificationConfigurationTypeDef(TypedDict):
+    AutoScalingGroupName: NotRequired[str],
+    TopicARN: NotRequired[str],
+    NotificationType: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeNotificationConfigurationsTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1208,26 +862,6 @@ class DescribeNotificationConfigurationsTypeRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribePoliciesTypeDescribePoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribePoliciesTypeDescribePoliciesPaginateTypeDef
-
-def get_value() -> DescribePoliciesTypeDescribePoliciesPaginateTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePoliciesTypeDescribePoliciesPaginateTypeDef(TypedDict):
-    AutoScalingGroupName: NotRequired[str],
-    PolicyNames: NotRequired[Sequence[str]],
-    PolicyTypes: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePoliciesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1248,26 +882,6 @@ class DescribePoliciesTypeRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef
-
-def get_value() -> DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef:
-    return {
-        "ActivityIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef(TypedDict):
-    ActivityIds: NotRequired[Sequence[str]],
-    AutoScalingGroupName: NotRequired[str],
-    IncludeDeletedGroups: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScalingActivitiesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1288,27 +902,6 @@ class DescribeScalingActivitiesTypeRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef
-
-def get_value() -> DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef(TypedDict):
-    AutoScalingGroupName: NotRequired[str],
-    ScheduledActionNames: NotRequired[Sequence[str]],
-    StartTime: NotRequired[Union[datetime, str]],
-    EndTime: NotRequired[Union[datetime, str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScheduledActionsTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1330,88 +923,6 @@ class DescribeScheduledActionsTypeRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## DescribeTagsTypeDescribeTagsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeDescribeTagsPaginateTypeDef
-
-def get_value() -> DescribeTagsTypeDescribeTagsPaginateTypeDef:
-    return {
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTagsTypeDescribeTagsPaginateTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeTagsTypeRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeRequestTypeDef
-
-def get_value() -> DescribeTagsTypeRequestTypeDef:
-    return {
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTagsTypeRequestTypeDef(TypedDict):
-    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    NextToken: NotRequired[str],
-    MaxRecords: NotRequired[int],
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-## DescribeTerminationPolicyTypesAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeTerminationPolicyTypesAnswerTypeDef
-
-def get_value() -> DescribeTerminationPolicyTypesAnswerTypeDef:
-    return {
-        "TerminationPolicyTypes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTerminationPolicyTypesAnswerTypeDef(TypedDict):
-    TerminationPolicyTypes: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeWarmPoolAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolAnswerTypeDef
-
-def get_value() -> DescribeWarmPoolAnswerTypeDef:
-    return {
-        "WarmPoolConfiguration": ...,
-        "Instances": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeWarmPoolAnswerTypeDef(TypedDict):
-    WarmPoolConfiguration: WarmPoolConfigurationTypeDef,  # (1)
-    Instances: List[InstanceTypeDef],  # (2)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef) 
-2. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWarmPoolTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1430,45 +941,6 @@ class DescribeWarmPoolTypeRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DesiredConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DesiredConfigurationTypeDef
-
-def get_value() -> DesiredConfigurationTypeDef:
-    return {
-        "LaunchTemplate": ...,
-    }
-```
-
-```python title="Definition"
-class DesiredConfigurationTypeDef(TypedDict):
-    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
-## DetachInstancesAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import DetachInstancesAnswerTypeDef
-
-def get_value() -> DetachInstancesAnswerTypeDef:
-    return {
-        "Activities": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DetachInstancesAnswerTypeDef(TypedDict):
-    Activities: List[ActivityTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetachInstancesQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -1541,28 +1013,6 @@ class DisableMetricsCollectionQueryRequestTypeDef(TypedDict):
     Metrics: NotRequired[Sequence[str]],
 ```
 
-## EbsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import EbsTypeDef
-
-def get_value() -> EbsTypeDef:
-    return {
-        "SnapshotId": ...,
-    }
-```
-
-```python title="Definition"
-class EbsTypeDef(TypedDict):
-    SnapshotId: NotRequired[str],
-    VolumeSize: NotRequired[int],
-    VolumeType: NotRequired[str],
-    DeleteOnTermination: NotRequired[bool],
-    Iops: NotRequired[int],
-    Encrypted: NotRequired[bool],
-    Throughput: NotRequired[int],
-```
-
 ## EnableMetricsCollectionQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -1582,43 +1032,6 @@ class EnableMetricsCollectionQueryRequestTypeDef(TypedDict):
     Metrics: NotRequired[Sequence[str]],
 ```
 
-## EnabledMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import EnabledMetricTypeDef
-
-def get_value() -> EnabledMetricTypeDef:
-    return {
-        "Metric": ...,
-    }
-```
-
-```python title="Definition"
-class EnabledMetricTypeDef(TypedDict):
-    Metric: NotRequired[str],
-    Granularity: NotRequired[str],
-```
-
-## EnterStandbyAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import EnterStandbyAnswerTypeDef
-
-def get_value() -> EnterStandbyAnswerTypeDef:
-    return {
-        "Activities": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EnterStandbyAnswerTypeDef(TypedDict):
-    Activities: List[ActivityTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnterStandbyQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -1658,26 +1071,6 @@ class ExecutePolicyTypeRequestTypeDef(TypedDict):
     BreachThreshold: NotRequired[float],
 ```
 
-## ExitStandbyAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ExitStandbyAnswerTypeDef
-
-def get_value() -> ExitStandbyAnswerTypeDef:
-    return {
-        "Activities": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ExitStandbyAnswerTypeDef(TypedDict):
-    Activities: List[ActivityTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExitStandbyQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -1695,66 +1088,6 @@ class ExitStandbyQueryRequestTypeDef(TypedDict):
     InstanceIds: NotRequired[Sequence[str]],
 ```
 
-## FailedScheduledUpdateGroupActionRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import FailedScheduledUpdateGroupActionRequestTypeDef
-
-def get_value() -> FailedScheduledUpdateGroupActionRequestTypeDef:
-    return {
-        "ScheduledActionName": ...,
-    }
-```
-
-```python title="Definition"
-class FailedScheduledUpdateGroupActionRequestTypeDef(TypedDict):
-    ScheduledActionName: str,
-    ErrorCode: NotRequired[str],
-    ErrorMessage: NotRequired[str],
-```
-
-## FilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import FilterTypeDef
-
-def get_value() -> FilterTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class FilterTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Values: NotRequired[Sequence[str]],
-```
-
-## GetPredictiveScalingForecastAnswerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastAnswerTypeDef
-
-def get_value() -> GetPredictiveScalingForecastAnswerTypeDef:
-    return {
-        "LoadForecast": ...,
-        "CapacityForecast": ...,
-        "UpdateTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPredictiveScalingForecastAnswerTypeDef(TypedDict):
-    LoadForecast: List[LoadForecastTypeDef],  # (1)
-    CapacityForecast: CapacityForecastTypeDef,  # (2)
-    UpdateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: LoadForecastTypeDef](./type_defs.md#loadforecasttypedef) 
-2. See [:material-code-braces: CapacityForecastTypeDef](./type_defs.md#capacityforecasttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPredictiveScalingForecastTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -1777,42 +1110,6 @@ class GetPredictiveScalingForecastTypeRequestTypeDef(TypedDict):
     EndTime: Union[datetime, str],
 ```
 
-## InstanceMetadataOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceMetadataOptionsTypeDef
-
-def get_value() -> InstanceMetadataOptionsTypeDef:
-    return {
-        "HttpTokens": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceMetadataOptionsTypeDef(TypedDict):
-    HttpTokens: NotRequired[InstanceMetadataHttpTokensStateType],  # (1)
-    HttpPutResponseHopLimit: NotRequired[int],
-    HttpEndpoint: NotRequired[InstanceMetadataEndpointStateType],  # (2)
-```
-
-1. See [:material-code-brackets: InstanceMetadataHttpTokensStateType](./literals.md#instancemetadatahttptokensstatetype) 
-2. See [:material-code-brackets: InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype) 
-## InstanceMonitoringTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceMonitoringTypeDef
-
-def get_value() -> InstanceMonitoringTypeDef:
-    return {
-        "Enabled": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceMonitoringTypeDef(TypedDict):
-    Enabled: NotRequired[bool],
-```
-
 ## InstanceRefreshLivePoolProgressTypeDef
 
 ```python title="Usage Example"
@@ -1830,55 +1127,6 @@ class InstanceRefreshLivePoolProgressTypeDef(TypedDict):
     InstancesToUpdate: NotRequired[int],
 ```
 
-## InstanceRefreshProgressDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceRefreshProgressDetailsTypeDef
-
-def get_value() -> InstanceRefreshProgressDetailsTypeDef:
-    return {
-        "LivePoolProgress": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceRefreshProgressDetailsTypeDef(TypedDict):
-    LivePoolProgress: NotRequired[InstanceRefreshLivePoolProgressTypeDef],  # (1)
-    WarmPoolProgress: NotRequired[InstanceRefreshWarmPoolProgressTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: InstanceRefreshLivePoolProgressTypeDef](./type_defs.md#instancerefreshlivepoolprogresstypedef) 
-2. See [:material-code-braces: InstanceRefreshWarmPoolProgressTypeDef](./type_defs.md#instancerefreshwarmpoolprogresstypedef) 
-## InstanceRefreshTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceRefreshTypeDef
-
-def get_value() -> InstanceRefreshTypeDef:
-    return {
-        "InstanceRefreshId": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceRefreshTypeDef(TypedDict):
-    InstanceRefreshId: NotRequired[str],
-    AutoScalingGroupName: NotRequired[str],
-    Status: NotRequired[InstanceRefreshStatusType],  # (1)
-    StatusReason: NotRequired[str],
-    StartTime: NotRequired[datetime],
-    EndTime: NotRequired[datetime],
-    PercentageComplete: NotRequired[int],
-    InstancesToUpdate: NotRequired[int],
-    ProgressDetails: NotRequired[InstanceRefreshProgressDetailsTypeDef],  # (2)
-    Preferences: NotRequired[RefreshPreferencesTypeDef],  # (3)
-    DesiredConfiguration: NotRequired[DesiredConfigurationTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: InstanceRefreshStatusType](./literals.md#instancerefreshstatustype) 
-2. See [:material-code-braces: InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef) 
-3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
-4. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
 ## InstanceRefreshWarmPoolProgressTypeDef
 
 ```python title="Usage Example"
@@ -1896,60 +1144,111 @@ class InstanceRefreshWarmPoolProgressTypeDef(TypedDict):
     InstancesToUpdate: NotRequired[int],
 ```
 
-## InstanceRequirementsTypeDef
+## RefreshPreferencesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceRequirementsTypeDef
+from mypy_boto3_autoscaling.type_defs import RefreshPreferencesTypeDef
 
-def get_value() -> InstanceRequirementsTypeDef:
+def get_value() -> RefreshPreferencesTypeDef:
     return {
-        "VCpuCount": ...,
-        "MemoryMiB": ...,
+        "MinHealthyPercentage": ...,
     }
 ```
 
 ```python title="Definition"
-class InstanceRequirementsTypeDef(TypedDict):
-    VCpuCount: VCpuCountRequestTypeDef,  # (1)
-    MemoryMiB: MemoryMiBRequestTypeDef,  # (2)
-    CpuManufacturers: NotRequired[Sequence[CpuManufacturerType]],  # (3)
-    MemoryGiBPerVCpu: NotRequired[MemoryGiBPerVCpuRequestTypeDef],  # (4)
-    ExcludedInstanceTypes: NotRequired[Sequence[str]],
-    InstanceGenerations: NotRequired[Sequence[InstanceGenerationType]],  # (5)
-    SpotMaxPricePercentageOverLowestPrice: NotRequired[int],
-    OnDemandMaxPricePercentageOverLowestPrice: NotRequired[int],
-    BareMetal: NotRequired[BareMetalType],  # (6)
-    BurstablePerformance: NotRequired[BurstablePerformanceType],  # (7)
-    RequireHibernateSupport: NotRequired[bool],
-    NetworkInterfaceCount: NotRequired[NetworkInterfaceCountRequestTypeDef],  # (8)
-    LocalStorage: NotRequired[LocalStorageType],  # (9)
-    LocalStorageTypes: NotRequired[Sequence[LocalStorageTypeType]],  # (10)
-    TotalLocalStorageGB: NotRequired[TotalLocalStorageGBRequestTypeDef],  # (11)
-    BaselineEbsBandwidthMbps: NotRequired[BaselineEbsBandwidthMbpsRequestTypeDef],  # (12)
-    AcceleratorTypes: NotRequired[Sequence[AcceleratorTypeType]],  # (13)
-    AcceleratorCount: NotRequired[AcceleratorCountRequestTypeDef],  # (14)
-    AcceleratorManufacturers: NotRequired[Sequence[AcceleratorManufacturerType]],  # (15)
-    AcceleratorNames: NotRequired[Sequence[AcceleratorNameType]],  # (16)
-    AcceleratorTotalMemoryMiB: NotRequired[AcceleratorTotalMemoryMiBRequestTypeDef],  # (17)
+class RefreshPreferencesTypeDef(TypedDict):
+    MinHealthyPercentage: NotRequired[int],
+    InstanceWarmup: NotRequired[int],
+    CheckpointPercentages: NotRequired[List[int]],
+    CheckpointDelay: NotRequired[int],
+    SkipMatching: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef) 
-2. See [:material-code-braces: MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef) 
-3. See [:material-code-brackets: CpuManufacturerType](./literals.md#cpumanufacturertype) 
-4. See [:material-code-braces: MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef) 
-5. See [:material-code-brackets: InstanceGenerationType](./literals.md#instancegenerationtype) 
-6. See [:material-code-brackets: BareMetalType](./literals.md#baremetaltype) 
-7. See [:material-code-brackets: BurstablePerformanceType](./literals.md#burstableperformancetype) 
-8. See [:material-code-braces: NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef) 
-9. See [:material-code-brackets: LocalStorageType](./literals.md#localstoragetype) 
-10. See [:material-code-brackets: LocalStorageTypeType](./literals.md#localstoragetypetype) 
-11. See [:material-code-braces: TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef) 
-12. See [:material-code-braces: BaselineEbsBandwidthMbpsRequestTypeDef](./type_defs.md#baselineebsbandwidthmbpsrequesttypedef) 
-13. See [:material-code-brackets: AcceleratorTypeType](./literals.md#acceleratortypetype) 
-14. See [:material-code-braces: AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef) 
-15. See [:material-code-brackets: AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype) 
-16. See [:material-code-brackets: AcceleratorNameType](./literals.md#acceleratornametype) 
-17. See [:material-code-braces: AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef) 
+## MemoryGiBPerVCpuRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MemoryGiBPerVCpuRequestTypeDef
+
+def get_value() -> MemoryGiBPerVCpuRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class MemoryGiBPerVCpuRequestTypeDef(TypedDict):
+    Min: NotRequired[float],
+    Max: NotRequired[float],
+```
+
+## MemoryMiBRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MemoryMiBRequestTypeDef
+
+def get_value() -> MemoryMiBRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class MemoryMiBRequestTypeDef(TypedDict):
+    Min: int,
+    Max: NotRequired[int],
+```
+
+## NetworkInterfaceCountRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import NetworkInterfaceCountRequestTypeDef
+
+def get_value() -> NetworkInterfaceCountRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceCountRequestTypeDef(TypedDict):
+    Min: NotRequired[int],
+    Max: NotRequired[int],
+```
+
+## TotalLocalStorageGBRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TotalLocalStorageGBRequestTypeDef
+
+def get_value() -> TotalLocalStorageGBRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class TotalLocalStorageGBRequestTypeDef(TypedDict):
+    Min: NotRequired[float],
+    Max: NotRequired[float],
+```
+
+## VCpuCountRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import VCpuCountRequestTypeDef
+
+def get_value() -> VCpuCountRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class VCpuCountRequestTypeDef(TypedDict):
+    Min: int,
+    Max: NotRequired[int],
+```
+
 ## InstanceReusePolicyTypeDef
 
 ```python title="Usage Example"
@@ -1966,36 +1265,6 @@ class InstanceReusePolicyTypeDef(TypedDict):
     ReuseOnScaleIn: NotRequired[bool],
 ```
 
-## InstanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import InstanceTypeDef
-
-def get_value() -> InstanceTypeDef:
-    return {
-        "InstanceId": ...,
-        "AvailabilityZone": ...,
-        "LifecycleState": ...,
-        "HealthStatus": ...,
-        "ProtectedFromScaleIn": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceTypeDef(TypedDict):
-    InstanceId: str,
-    AvailabilityZone: str,
-    LifecycleState: LifecycleStateType,  # (1)
-    HealthStatus: str,
-    ProtectedFromScaleIn: bool,
-    InstanceType: NotRequired[str],
-    LaunchConfigurationName: NotRequired[str],
-    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (2)
-    WeightedCapacity: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LifecycleStateType](./literals.md#lifecyclestatetype) 
-2. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 ## InstancesDistributionTypeDef
 
 ```python title="Usage Example"
@@ -2033,24 +1302,6 @@ class LaunchConfigurationNameTypeRequestTypeDef(TypedDict):
     LaunchConfigurationName: str,
 ```
 
-## LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef
-
-def get_value() -> LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef:
-    return {
-        "LaunchConfigurationNames": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef(TypedDict):
-    LaunchConfigurationNames: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## LaunchConfigurationNamesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -2069,490 +1320,6 @@ class LaunchConfigurationNamesTypeRequestTypeDef(TypedDict):
     MaxRecords: NotRequired[int],
 ```
 
-## LaunchConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationTypeDef
-
-def get_value() -> LaunchConfigurationTypeDef:
-    return {
-        "LaunchConfigurationName": ...,
-        "ImageId": ...,
-        "InstanceType": ...,
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchConfigurationTypeDef(TypedDict):
-    LaunchConfigurationName: str,
-    ImageId: str,
-    InstanceType: str,
-    CreatedTime: datetime,
-    LaunchConfigurationARN: NotRequired[str],
-    KeyName: NotRequired[str],
-    SecurityGroups: NotRequired[List[str]],
-    ClassicLinkVPCId: NotRequired[str],
-    ClassicLinkVPCSecurityGroups: NotRequired[List[str]],
-    UserData: NotRequired[str],
-    KernelId: NotRequired[str],
-    RamdiskId: NotRequired[str],
-    BlockDeviceMappings: NotRequired[List[BlockDeviceMappingTypeDef]],  # (1)
-    InstanceMonitoring: NotRequired[InstanceMonitoringTypeDef],  # (2)
-    SpotPrice: NotRequired[str],
-    IamInstanceProfile: NotRequired[str],
-    EbsOptimized: NotRequired[bool],
-    AssociatePublicIpAddress: NotRequired[bool],
-    PlacementTenancy: NotRequired[str],
-    MetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
-2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
-3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## LaunchConfigurationsTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationsTypeTypeDef
-
-def get_value() -> LaunchConfigurationsTypeTypeDef:
-    return {
-        "LaunchConfigurations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchConfigurationsTypeTypeDef(TypedDict):
-    LaunchConfigurations: List[LaunchConfigurationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LaunchTemplateOverridesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchTemplateOverridesTypeDef
-
-def get_value() -> LaunchTemplateOverridesTypeDef:
-    return {
-        "InstanceType": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchTemplateOverridesTypeDef(TypedDict):
-    InstanceType: NotRequired[str],
-    WeightedCapacity: NotRequired[str],
-    LaunchTemplateSpecification: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    InstanceRequirements: NotRequired[InstanceRequirementsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-2. See [:material-code-braces: InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef) 
-## LaunchTemplateSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchTemplateSpecificationTypeDef
-
-def get_value() -> LaunchTemplateSpecificationTypeDef:
-    return {
-        "LaunchTemplateId": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchTemplateSpecificationTypeDef(TypedDict):
-    LaunchTemplateId: NotRequired[str],
-    LaunchTemplateName: NotRequired[str],
-    Version: NotRequired[str],
-```
-
-## LaunchTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LaunchTemplateTypeDef
-
-def get_value() -> LaunchTemplateTypeDef:
-    return {
-        "LaunchTemplateSpecification": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchTemplateTypeDef(TypedDict):
-    LaunchTemplateSpecification: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
-    Overrides: NotRequired[Sequence[LaunchTemplateOverridesTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
-2. See [:material-code-braces: LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef) 
-## LifecycleHookSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LifecycleHookSpecificationTypeDef
-
-def get_value() -> LifecycleHookSpecificationTypeDef:
-    return {
-        "LifecycleHookName": ...,
-        "LifecycleTransition": ...,
-    }
-```
-
-```python title="Definition"
-class LifecycleHookSpecificationTypeDef(TypedDict):
-    LifecycleHookName: str,
-    LifecycleTransition: str,
-    NotificationMetadata: NotRequired[str],
-    HeartbeatTimeout: NotRequired[int],
-    DefaultResult: NotRequired[str],
-    NotificationTargetARN: NotRequired[str],
-    RoleARN: NotRequired[str],
-```
-
-## LifecycleHookTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LifecycleHookTypeDef
-
-def get_value() -> LifecycleHookTypeDef:
-    return {
-        "LifecycleHookName": ...,
-    }
-```
-
-```python title="Definition"
-class LifecycleHookTypeDef(TypedDict):
-    LifecycleHookName: NotRequired[str],
-    AutoScalingGroupName: NotRequired[str],
-    LifecycleTransition: NotRequired[str],
-    NotificationTargetARN: NotRequired[str],
-    RoleARN: NotRequired[str],
-    NotificationMetadata: NotRequired[str],
-    HeartbeatTimeout: NotRequired[int],
-    GlobalTimeout: NotRequired[int],
-    DefaultResult: NotRequired[str],
-```
-
-## LoadBalancerStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LoadBalancerStateTypeDef
-
-def get_value() -> LoadBalancerStateTypeDef:
-    return {
-        "LoadBalancerName": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerStateTypeDef(TypedDict):
-    LoadBalancerName: NotRequired[str],
-    State: NotRequired[str],
-```
-
-## LoadBalancerTargetGroupStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LoadBalancerTargetGroupStateTypeDef
-
-def get_value() -> LoadBalancerTargetGroupStateTypeDef:
-    return {
-        "LoadBalancerTargetGroupARN": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerTargetGroupStateTypeDef(TypedDict):
-    LoadBalancerTargetGroupARN: NotRequired[str],
-    State: NotRequired[str],
-```
-
-## LoadForecastTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import LoadForecastTypeDef
-
-def get_value() -> LoadForecastTypeDef:
-    return {
-        "Timestamps": ...,
-        "Values": ...,
-        "MetricSpecification": ...,
-    }
-```
-
-```python title="Definition"
-class LoadForecastTypeDef(TypedDict):
-    Timestamps: List[datetime],
-    Values: List[float],
-    MetricSpecification: PredictiveScalingMetricSpecificationTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef) 
-## MemoryGiBPerVCpuRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MemoryGiBPerVCpuRequestTypeDef
-
-def get_value() -> MemoryGiBPerVCpuRequestTypeDef:
-    return {
-        "Min": ...,
-    }
-```
-
-```python title="Definition"
-class MemoryGiBPerVCpuRequestTypeDef(TypedDict):
-    Min: NotRequired[float],
-    Max: NotRequired[float],
-```
-
-## MemoryMiBRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MemoryMiBRequestTypeDef
-
-def get_value() -> MemoryMiBRequestTypeDef:
-    return {
-        "Min": ...,
-    }
-```
-
-```python title="Definition"
-class MemoryMiBRequestTypeDef(TypedDict):
-    Min: int,
-    Max: NotRequired[int],
-```
-
-## MetricCollectionTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricCollectionTypeTypeDef
-
-def get_value() -> MetricCollectionTypeTypeDef:
-    return {
-        "Metric": ...,
-    }
-```
-
-```python title="Definition"
-class MetricCollectionTypeTypeDef(TypedDict):
-    Metric: NotRequired[str],
-```
-
-## MetricDataQueryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricDataQueryTypeDef
-
-def get_value() -> MetricDataQueryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDataQueryTypeDef(TypedDict):
-    Id: str,
-    Expression: NotRequired[str],
-    MetricStat: NotRequired[MetricStatTypeDef],  # (1)
-    Label: NotRequired[str],
-    ReturnData: NotRequired[bool],
-```
-
-1. See [:material-code-braces: MetricStatTypeDef](./type_defs.md#metricstattypedef) 
-## MetricDimensionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricDimensionTypeDef
-
-def get_value() -> MetricDimensionTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDimensionTypeDef(TypedDict):
-    Name: str,
-    Value: str,
-```
-
-## MetricGranularityTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricGranularityTypeTypeDef
-
-def get_value() -> MetricGranularityTypeTypeDef:
-    return {
-        "Granularity": ...,
-    }
-```
-
-```python title="Definition"
-class MetricGranularityTypeTypeDef(TypedDict):
-    Granularity: NotRequired[str],
-```
-
-## MetricStatTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricStatTypeDef
-
-def get_value() -> MetricStatTypeDef:
-    return {
-        "Metric": ...,
-        "Stat": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStatTypeDef(TypedDict):
-    Metric: MetricTypeDef,  # (1)
-    Stat: str,
-    Unit: NotRequired[str],
-```
-
-1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
-## MetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MetricTypeDef
-
-def get_value() -> MetricTypeDef:
-    return {
-        "Namespace": ...,
-        "MetricName": ...,
-    }
-```
-
-```python title="Definition"
-class MetricTypeDef(TypedDict):
-    Namespace: str,
-    MetricName: str,
-    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
-## MixedInstancesPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import MixedInstancesPolicyTypeDef
-
-def get_value() -> MixedInstancesPolicyTypeDef:
-    return {
-        "LaunchTemplate": ...,
-    }
-```
-
-```python title="Definition"
-class MixedInstancesPolicyTypeDef(TypedDict):
-    LaunchTemplate: NotRequired[LaunchTemplateTypeDef],  # (1)
-    InstancesDistribution: NotRequired[InstancesDistributionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef) 
-2. See [:material-code-braces: InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef) 
-## NetworkInterfaceCountRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import NetworkInterfaceCountRequestTypeDef
-
-def get_value() -> NetworkInterfaceCountRequestTypeDef:
-    return {
-        "Min": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceCountRequestTypeDef(TypedDict):
-    Min: NotRequired[int],
-    Max: NotRequired[int],
-```
-
-## NotificationConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import NotificationConfigurationTypeDef
-
-def get_value() -> NotificationConfigurationTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class NotificationConfigurationTypeDef(TypedDict):
-    AutoScalingGroupName: NotRequired[str],
-    TopicARN: NotRequired[str],
-    NotificationType: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PoliciesTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PoliciesTypeTypeDef
-
-def get_value() -> PoliciesTypeTypeDef:
-    return {
-        "ScalingPolicies": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PoliciesTypeTypeDef(TypedDict):
-    ScalingPolicies: List[ScalingPolicyTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PolicyARNTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PolicyARNTypeTypeDef
-
-def get_value() -> PolicyARNTypeTypeDef:
-    return {
-        "PolicyARN": ...,
-        "Alarms": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PolicyARNTypeTypeDef(TypedDict):
-    PolicyARN: str,
-    Alarms: List[AlarmTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PredefinedMetricSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -2571,108 +1338,6 @@ class PredefinedMetricSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
-## PredictiveScalingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PredictiveScalingConfigurationTypeDef
-
-def get_value() -> PredictiveScalingConfigurationTypeDef:
-    return {
-        "MetricSpecifications": ...,
-    }
-```
-
-```python title="Definition"
-class PredictiveScalingConfigurationTypeDef(TypedDict):
-    MetricSpecifications: List[PredictiveScalingMetricSpecificationTypeDef],  # (1)
-    Mode: NotRequired[PredictiveScalingModeType],  # (2)
-    SchedulingBufferTime: NotRequired[int],
-    MaxCapacityBreachBehavior: NotRequired[PredictiveScalingMaxCapacityBreachBehaviorType],  # (3)
-    MaxCapacityBuffer: NotRequired[int],
-```
-
-1. See [:material-code-braces: PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef) 
-2. See [:material-code-brackets: PredictiveScalingModeType](./literals.md#predictivescalingmodetype) 
-3. See [:material-code-brackets: PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype) 
-## PredictiveScalingCustomizedCapacityMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedCapacityMetricTypeDef
-
-def get_value() -> PredictiveScalingCustomizedCapacityMetricTypeDef:
-    return {
-        "MetricDataQueries": ...,
-    }
-```
-
-```python title="Definition"
-class PredictiveScalingCustomizedCapacityMetricTypeDef(TypedDict):
-    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-## PredictiveScalingCustomizedLoadMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedLoadMetricTypeDef
-
-def get_value() -> PredictiveScalingCustomizedLoadMetricTypeDef:
-    return {
-        "MetricDataQueries": ...,
-    }
-```
-
-```python title="Definition"
-class PredictiveScalingCustomizedLoadMetricTypeDef(TypedDict):
-    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-## PredictiveScalingCustomizedScalingMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedScalingMetricTypeDef
-
-def get_value() -> PredictiveScalingCustomizedScalingMetricTypeDef:
-    return {
-        "MetricDataQueries": ...,
-    }
-```
-
-```python title="Definition"
-class PredictiveScalingCustomizedScalingMetricTypeDef(TypedDict):
-    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-## PredictiveScalingMetricSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PredictiveScalingMetricSpecificationTypeDef
-
-def get_value() -> PredictiveScalingMetricSpecificationTypeDef:
-    return {
-        "TargetValue": ...,
-    }
-```
-
-```python title="Definition"
-class PredictiveScalingMetricSpecificationTypeDef(TypedDict):
-    TargetValue: float,
-    PredefinedMetricPairSpecification: NotRequired[PredictiveScalingPredefinedMetricPairTypeDef],  # (1)
-    PredefinedScalingMetricSpecification: NotRequired[PredictiveScalingPredefinedScalingMetricTypeDef],  # (2)
-    PredefinedLoadMetricSpecification: NotRequired[PredictiveScalingPredefinedLoadMetricTypeDef],  # (3)
-    CustomizedScalingMetricSpecification: NotRequired[PredictiveScalingCustomizedScalingMetricTypeDef],  # (4)
-    CustomizedLoadMetricSpecification: NotRequired[PredictiveScalingCustomizedLoadMetricTypeDef],  # (5)
-    CustomizedCapacityMetricSpecification: NotRequired[PredictiveScalingCustomizedCapacityMetricTypeDef],  # (6)
-```
-
-1. See [:material-code-braces: PredictiveScalingPredefinedMetricPairTypeDef](./type_defs.md#predictivescalingpredefinedmetricpairtypedef) 
-2. See [:material-code-braces: PredictiveScalingPredefinedScalingMetricTypeDef](./type_defs.md#predictivescalingpredefinedscalingmetrictypedef) 
-3. See [:material-code-braces: PredictiveScalingPredefinedLoadMetricTypeDef](./type_defs.md#predictivescalingpredefinedloadmetrictypedef) 
-4. See [:material-code-braces: PredictiveScalingCustomizedScalingMetricTypeDef](./type_defs.md#predictivescalingcustomizedscalingmetrictypedef) 
-5. See [:material-code-braces: PredictiveScalingCustomizedLoadMetricTypeDef](./type_defs.md#predictivescalingcustomizedloadmetrictypedef) 
-6. See [:material-code-braces: PredictiveScalingCustomizedCapacityMetricTypeDef](./type_defs.md#predictivescalingcustomizedcapacitymetrictypedef) 
 ## PredictiveScalingPredefinedLoadMetricTypeDef
 
 ```python title="Usage Example"
@@ -2743,26 +1408,6 @@ class ProcessTypeTypeDef(TypedDict):
     ProcessName: str,
 ```
 
-## ProcessesTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ProcessesTypeTypeDef
-
-def get_value() -> ProcessesTypeTypeDef:
-    return {
-        "Processes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ProcessesTypeTypeDef(TypedDict):
-    Processes: List[ProcessTypeTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProcessTypeTypeDef](./type_defs.md#processtypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutLifecycleHookTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -2807,39 +1452,24 @@ class PutNotificationConfigurationTypeRequestTypeDef(TypedDict):
     NotificationTypes: Sequence[str],
 ```
 
-## PutScalingPolicyTypeRequestTypeDef
+## StepAdjustmentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PutScalingPolicyTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import StepAdjustmentTypeDef
 
-def get_value() -> PutScalingPolicyTypeRequestTypeDef:
+def get_value() -> StepAdjustmentTypeDef:
     return {
-        "AutoScalingGroupName": ...,
-        "PolicyName": ...,
+        "ScalingAdjustment": ...,
     }
 ```
 
 ```python title="Definition"
-class PutScalingPolicyTypeRequestTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    PolicyName: str,
-    PolicyType: NotRequired[str],
-    AdjustmentType: NotRequired[str],
-    MinAdjustmentStep: NotRequired[int],
-    MinAdjustmentMagnitude: NotRequired[int],
-    ScalingAdjustment: NotRequired[int],
-    Cooldown: NotRequired[int],
-    MetricAggregationType: NotRequired[str],
-    StepAdjustments: NotRequired[Sequence[StepAdjustmentTypeDef]],  # (1)
-    EstimatedInstanceWarmup: NotRequired[int],
-    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (2)
-    Enabled: NotRequired[bool],
-    PredictiveScalingConfiguration: NotRequired[PredictiveScalingConfigurationTypeDef],  # (3)
+class StepAdjustmentTypeDef(TypedDict):
+    ScalingAdjustment: int,
+    MetricIntervalLowerBound: NotRequired[float],
+    MetricIntervalUpperBound: NotRequired[float],
 ```
 
-1. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
-2. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
-3. See [:material-code-braces: PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef) 
 ## PutScheduledUpdateGroupActionTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -2866,28 +1496,6 @@ class PutScheduledUpdateGroupActionTypeRequestTypeDef(TypedDict):
     TimeZone: NotRequired[str],
 ```
 
-## PutWarmPoolTypeRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import PutWarmPoolTypeRequestTypeDef
-
-def get_value() -> PutWarmPoolTypeRequestTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class PutWarmPoolTypeRequestTypeDef(TypedDict):
-    AutoScalingGroupName: str,
-    MaxGroupPreparedCapacity: NotRequired[int],
-    MinSize: NotRequired[int],
-    PoolState: NotRequired[WarmPoolStateType],  # (1)
-    InstanceReusePolicy: NotRequired[InstanceReusePolicyTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: WarmPoolStateType](./literals.md#warmpoolstatetype) 
-2. See [:material-code-braces: InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef) 
 ## RecordLifecycleActionHeartbeatTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -2908,85 +1516,6 @@ class RecordLifecycleActionHeartbeatTypeRequestTypeDef(TypedDict):
     InstanceId: NotRequired[str],
 ```
 
-## RefreshPreferencesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import RefreshPreferencesTypeDef
-
-def get_value() -> RefreshPreferencesTypeDef:
-    return {
-        "MinHealthyPercentage": ...,
-    }
-```
-
-```python title="Definition"
-class RefreshPreferencesTypeDef(TypedDict):
-    MinHealthyPercentage: NotRequired[int],
-    InstanceWarmup: NotRequired[int],
-    CheckpointPercentages: NotRequired[List[int]],
-    CheckpointDelay: NotRequired[int],
-    SkipMatching: NotRequired[bool],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ScalingPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ScalingPolicyTypeDef
-
-def get_value() -> ScalingPolicyTypeDef:
-    return {
-        "AutoScalingGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ScalingPolicyTypeDef(TypedDict):
-    AutoScalingGroupName: NotRequired[str],
-    PolicyName: NotRequired[str],
-    PolicyARN: NotRequired[str],
-    PolicyType: NotRequired[str],
-    AdjustmentType: NotRequired[str],
-    MinAdjustmentStep: NotRequired[int],
-    MinAdjustmentMagnitude: NotRequired[int],
-    ScalingAdjustment: NotRequired[int],
-    Cooldown: NotRequired[int],
-    StepAdjustments: NotRequired[List[StepAdjustmentTypeDef]],  # (1)
-    MetricAggregationType: NotRequired[str],
-    EstimatedInstanceWarmup: NotRequired[int],
-    Alarms: NotRequired[List[AlarmTypeDef]],  # (2)
-    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (3)
-    Enabled: NotRequired[bool],
-    PredictiveScalingConfiguration: NotRequired[PredictiveScalingConfigurationTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
-2. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
-3. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
-4. See [:material-code-braces: PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef) 
 ## ScalingProcessQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -3002,51 +1531,6 @@ def get_value() -> ScalingProcessQueryRequestTypeDef:
 class ScalingProcessQueryRequestTypeDef(TypedDict):
     AutoScalingGroupName: str,
     ScalingProcesses: NotRequired[Sequence[str]],
-```
-
-## ScheduledActionsTypeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ScheduledActionsTypeTypeDef
-
-def get_value() -> ScheduledActionsTypeTypeDef:
-    return {
-        "ScheduledUpdateGroupActions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduledActionsTypeTypeDef(TypedDict):
-    ScheduledUpdateGroupActions: List[ScheduledUpdateGroupActionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ScheduledUpdateGroupActionTypeDef](./type_defs.md#scheduledupdategroupactiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ScheduledUpdateGroupActionRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import ScheduledUpdateGroupActionRequestTypeDef
-
-def get_value() -> ScheduledUpdateGroupActionRequestTypeDef:
-    return {
-        "ScheduledActionName": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduledUpdateGroupActionRequestTypeDef(TypedDict):
-    ScheduledActionName: str,
-    StartTime: NotRequired[Union[datetime, str]],
-    EndTime: NotRequired[Union[datetime, str]],
-    Recurrence: NotRequired[str],
-    MinSize: NotRequired[int],
-    MaxSize: NotRequired[int],
-    DesiredCapacity: NotRequired[int],
-    TimeZone: NotRequired[str],
 ```
 
 ## ScheduledUpdateGroupActionTypeDef
@@ -3133,6 +1617,227 @@ class SetInstanceProtectionQueryRequestTypeDef(TypedDict):
     ProtectedFromScaleIn: bool,
 ```
 
+## TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
+
+def get_value() -> TerminateInstanceInAutoScalingGroupTypeRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ShouldDecrementDesiredCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateInstanceInAutoScalingGroupTypeRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ShouldDecrementDesiredCapacity: bool,
+```
+
+## ActivitiesTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef
+
+def get_value() -> ActivitiesTypeTypeDef:
+    return {
+        "Activities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ActivitiesTypeTypeDef(TypedDict):
+    Activities: List[ActivityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ActivityTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ActivityTypeTypeDef
+
+def get_value() -> ActivityTypeTypeDef:
+    return {
+        "Activity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ActivityTypeTypeDef(TypedDict):
+    Activity: ActivityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CancelInstanceRefreshAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerTypeDef
+
+def get_value() -> CancelInstanceRefreshAnswerTypeDef:
+    return {
+        "InstanceRefreshId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelInstanceRefreshAnswerTypeDef(TypedDict):
+    InstanceRefreshId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAccountLimitsAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeAccountLimitsAnswerTypeDef
+
+def get_value() -> DescribeAccountLimitsAnswerTypeDef:
+    return {
+        "MaxNumberOfAutoScalingGroups": ...,
+        "MaxNumberOfLaunchConfigurations": ...,
+        "NumberOfAutoScalingGroups": ...,
+        "NumberOfLaunchConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountLimitsAnswerTypeDef(TypedDict):
+    MaxNumberOfAutoScalingGroups: int,
+    MaxNumberOfLaunchConfigurations: int,
+    NumberOfAutoScalingGroups: int,
+    NumberOfLaunchConfigurations: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAutoScalingNotificationTypesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingNotificationTypesAnswerTypeDef
+
+def get_value() -> DescribeAutoScalingNotificationTypesAnswerTypeDef:
+    return {
+        "AutoScalingNotificationTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAutoScalingNotificationTypesAnswerTypeDef(TypedDict):
+    AutoScalingNotificationTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLifecycleHookTypesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHookTypesAnswerTypeDef
+
+def get_value() -> DescribeLifecycleHookTypesAnswerTypeDef:
+    return {
+        "LifecycleHookTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLifecycleHookTypesAnswerTypeDef(TypedDict):
+    LifecycleHookTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTerminationPolicyTypesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeTerminationPolicyTypesAnswerTypeDef
+
+def get_value() -> DescribeTerminationPolicyTypesAnswerTypeDef:
+    return {
+        "TerminationPolicyTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTerminationPolicyTypesAnswerTypeDef(TypedDict):
+    TerminationPolicyTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetachInstancesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DetachInstancesAnswerTypeDef
+
+def get_value() -> DetachInstancesAnswerTypeDef:
+    return {
+        "Activities": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetachInstancesAnswerTypeDef(TypedDict):
+    Activities: List[ActivityTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnterStandbyAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import EnterStandbyAnswerTypeDef
+
+def get_value() -> EnterStandbyAnswerTypeDef:
+    return {
+        "Activities": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnterStandbyAnswerTypeDef(TypedDict):
+    Activities: List[ActivityTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExitStandbyAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ExitStandbyAnswerTypeDef
+
+def get_value() -> ExitStandbyAnswerTypeDef:
+    return {
+        "Activities": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExitStandbyAnswerTypeDef(TypedDict):
+    Activities: List[ActivityTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartInstanceRefreshAnswerTypeDef
 
 ```python title="Usage Example"
@@ -3152,103 +1857,338 @@ class StartInstanceRefreshAnswerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartInstanceRefreshTypeRequestTypeDef
+## DescribeAdjustmentTypesAnswerTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeAdjustmentTypesAnswerTypeDef
 
-def get_value() -> StartInstanceRefreshTypeRequestTypeDef:
+def get_value() -> DescribeAdjustmentTypesAnswerTypeDef:
+    return {
+        "AdjustmentTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAdjustmentTypesAnswerTypeDef(TypedDict):
+    AdjustmentTypes: List[AdjustmentTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AdjustmentTypeTypeDef](./type_defs.md#adjustmenttypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PolicyARNTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PolicyARNTypeTypeDef
+
+def get_value() -> PolicyARNTypeTypeDef:
+    return {
+        "PolicyARN": ...,
+        "Alarms": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PolicyARNTypeTypeDef(TypedDict):
+    PolicyARN: str,
+    Alarms: List[AlarmTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AutoScalingGroupNamesTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeRequestTypeDef
+
+def get_value() -> AutoScalingGroupNamesTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupNames": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingGroupNamesTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeTagsTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeRequestTypeDef
+
+def get_value() -> DescribeTagsTypeRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsTypeRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef
+
+def get_value() -> AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef:
+    return {
+        "AutoScalingGroupNames": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef(TypedDict):
+    AutoScalingGroupNames: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef
+
+def get_value() -> DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef:
+    return {
+        "InstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef(TypedDict):
+    InstanceIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef
+
+def get_value() -> DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef:
     return {
         "AutoScalingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class StartInstanceRefreshTypeRequestTypeDef(TypedDict):
+class DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef(TypedDict):
     AutoScalingGroupName: str,
-    Strategy: NotRequired[RefreshStrategyType],  # (1)
-    DesiredConfiguration: NotRequired[DesiredConfigurationTypeDef],  # (2)
-    Preferences: NotRequired[RefreshPreferencesTypeDef],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: RefreshStrategyType](./literals.md#refreshstrategytype) 
-2. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
-3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
-## StepAdjustmentTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import StepAdjustmentTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef
 
-def get_value() -> StepAdjustmentTypeDef:
+def get_value() -> DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef:
     return {
-        "ScalingAdjustment": ...,
+        "AutoScalingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class StepAdjustmentTypeDef(TypedDict):
-    ScalingAdjustment: int,
-    MetricIntervalLowerBound: NotRequired[float],
-    MetricIntervalUpperBound: NotRequired[float],
+class DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-## SuspendedProcessTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import SuspendedProcessTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef
 
-def get_value() -> SuspendedProcessTypeDef:
+def get_value() -> DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef:
     return {
-        "ProcessName": ...,
+        "AutoScalingGroupNames": ...,
     }
 ```
 
 ```python title="Definition"
-class SuspendedProcessTypeDef(TypedDict):
-    ProcessName: NotRequired[str],
-    SuspensionReason: NotRequired[str],
+class DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef(TypedDict):
+    AutoScalingGroupNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-## TagDescriptionTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribePoliciesTypeDescribePoliciesPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import TagDescriptionTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribePoliciesTypeDescribePoliciesPaginateTypeDef
 
-def get_value() -> TagDescriptionTypeDef:
+def get_value() -> DescribePoliciesTypeDescribePoliciesPaginateTypeDef:
     return {
-        "ResourceId": ...,
+        "AutoScalingGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class TagDescriptionTypeDef(TypedDict):
-    ResourceId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    PropagateAtLaunch: NotRequired[bool],
+class DescribePoliciesTypeDescribePoliciesPaginateTypeDef(TypedDict):
+    AutoScalingGroupName: NotRequired[str],
+    PolicyNames: NotRequired[Sequence[str]],
+    PolicyTypes: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-## TagTypeDef
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import TagTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef:
     return {
-        "Key": ...,
+        "ActivityIds": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    ResourceId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    Value: NotRequired[str],
-    PropagateAtLaunch: NotRequired[bool],
+class DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef(TypedDict):
+    ActivityIds: NotRequired[Sequence[str]],
+    AutoScalingGroupName: NotRequired[str],
+    IncludeDeletedGroups: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef
+
+def get_value() -> DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef(TypedDict):
+    AutoScalingGroupName: NotRequired[str],
+    ScheduledActionNames: NotRequired[Sequence[str]],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeTagsTypeDescribeTagsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeDescribeTagsPaginateTypeDef
+
+def get_value() -> DescribeTagsTypeDescribeTagsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsTypeDescribeTagsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef
+
+def get_value() -> LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef:
+    return {
+        "LaunchConfigurationNames": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef(TypedDict):
+    LaunchConfigurationNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## AutoScalingInstanceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingInstanceDetailsTypeDef
+
+def get_value() -> AutoScalingInstanceDetailsTypeDef:
+    return {
+        "InstanceId": ...,
+        "AutoScalingGroupName": ...,
+        "AvailabilityZone": ...,
+        "LifecycleState": ...,
+        "HealthStatus": ...,
+        "ProtectedFromScaleIn": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingInstanceDetailsTypeDef(TypedDict):
+    InstanceId: str,
+    AutoScalingGroupName: str,
+    AvailabilityZone: str,
+    LifecycleState: str,
+    HealthStatus: str,
+    ProtectedFromScaleIn: bool,
+    InstanceType: NotRequired[str],
+    LaunchConfigurationName: NotRequired[str],
+    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    WeightedCapacity: NotRequired[str],
+```
+
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+## InstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "InstanceId": ...,
+        "AvailabilityZone": ...,
+        "LifecycleState": ...,
+        "HealthStatus": ...,
+        "ProtectedFromScaleIn": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    InstanceId: str,
+    AvailabilityZone: str,
+    LifecycleState: LifecycleStateType,  # (1)
+    HealthStatus: str,
+    ProtectedFromScaleIn: bool,
+    InstanceType: NotRequired[str],
+    LaunchConfigurationName: NotRequired[str],
+    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (2)
+    WeightedCapacity: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LifecycleStateType](./literals.md#lifecyclestatetype) 
+2. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 ## TagsTypeTypeDef
 
 ```python title="Usage Example"
@@ -3271,6 +2211,532 @@ class TagsTypeTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDeleteScheduledActionAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
+
+def get_value() -> BatchDeleteScheduledActionAnswerTypeDef:
+    return {
+        "FailedScheduledActions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteScheduledActionAnswerTypeDef(TypedDict):
+    FailedScheduledActions: List[FailedScheduledUpdateGroupActionRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#failedscheduledupdategroupactionrequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchPutScheduledUpdateGroupActionAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionAnswerTypeDef
+
+def get_value() -> BatchPutScheduledUpdateGroupActionAnswerTypeDef:
+    return {
+        "FailedScheduledUpdateGroupActions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutScheduledUpdateGroupActionAnswerTypeDef(TypedDict):
+    FailedScheduledUpdateGroupActions: List[FailedScheduledUpdateGroupActionRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#failedscheduledupdategroupactionrequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
+
+def get_value() -> BatchPutScheduledUpdateGroupActionTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "ScheduledUpdateGroupActions": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutScheduledUpdateGroupActionTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    ScheduledUpdateGroupActions: Sequence[ScheduledUpdateGroupActionRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef) 
+## BlockDeviceMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import BlockDeviceMappingTypeDef
+
+def get_value() -> BlockDeviceMappingTypeDef:
+    return {
+        "DeviceName": ...,
+    }
+```
+
+```python title="Definition"
+class BlockDeviceMappingTypeDef(TypedDict):
+    DeviceName: str,
+    VirtualName: NotRequired[str],
+    Ebs: NotRequired[EbsTypeDef],  # (1)
+    NoDevice: NotRequired[bool],
+```
+
+1. See [:material-code-braces: EbsTypeDef](./type_defs.md#ebstypedef) 
+## CreateOrUpdateTagsTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeRequestTypeDef
+
+def get_value() -> CreateOrUpdateTagsTypeRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOrUpdateTagsTypeRequestTypeDef(TypedDict):
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DeleteTagsTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeRequestTypeDef
+
+def get_value() -> DeleteTagsTypeRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTagsTypeRequestTypeDef(TypedDict):
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CustomizedMetricSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
+
+def get_value() -> CustomizedMetricSpecificationTypeDef:
+    return {
+        "MetricName": ...,
+        "Namespace": ...,
+        "Statistic": ...,
+    }
+```
+
+```python title="Definition"
+class CustomizedMetricSpecificationTypeDef(TypedDict):
+    MetricName: str,
+    Namespace: str,
+    Statistic: MetricStatisticType,  # (2)
+    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
+    Unit: NotRequired[str],
+```
+
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+## MetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MetricTypeDef
+
+def get_value() -> MetricTypeDef:
+    return {
+        "Namespace": ...,
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class MetricTypeDef(TypedDict):
+    Namespace: str,
+    MetricName: str,
+    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+## DescribeLifecycleHooksAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksAnswerTypeDef
+
+def get_value() -> DescribeLifecycleHooksAnswerTypeDef:
+    return {
+        "LifecycleHooks": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLifecycleHooksAnswerTypeDef(TypedDict):
+    LifecycleHooks: List[LifecycleHookTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LifecycleHookTypeDef](./type_defs.md#lifecyclehooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLoadBalancerTargetGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsResponseTypeDef
+
+def get_value() -> DescribeLoadBalancerTargetGroupsResponseTypeDef:
+    return {
+        "LoadBalancerTargetGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoadBalancerTargetGroupsResponseTypeDef(TypedDict):
+    LoadBalancerTargetGroups: List[LoadBalancerTargetGroupStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoadBalancerTargetGroupStateTypeDef](./type_defs.md#loadbalancertargetgroupstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLoadBalancersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersResponseTypeDef
+
+def get_value() -> DescribeLoadBalancersResponseTypeDef:
+    return {
+        "LoadBalancers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoadBalancersResponseTypeDef(TypedDict):
+    LoadBalancers: List[LoadBalancerStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMetricCollectionTypesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeMetricCollectionTypesAnswerTypeDef
+
+def get_value() -> DescribeMetricCollectionTypesAnswerTypeDef:
+    return {
+        "Metrics": ...,
+        "Granularities": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMetricCollectionTypesAnswerTypeDef(TypedDict):
+    Metrics: List[MetricCollectionTypeTypeDef],  # (1)
+    Granularities: List[MetricGranularityTypeTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MetricCollectionTypeTypeDef](./type_defs.md#metriccollectiontypetypedef) 
+2. See [:material-code-braces: MetricGranularityTypeTypeDef](./type_defs.md#metricgranularitytypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNotificationConfigurationsAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsAnswerTypeDef
+
+def get_value() -> DescribeNotificationConfigurationsAnswerTypeDef:
+    return {
+        "NotificationConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNotificationConfigurationsAnswerTypeDef(TypedDict):
+    NotificationConfigurations: List[NotificationConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InstanceRefreshProgressDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import InstanceRefreshProgressDetailsTypeDef
+
+def get_value() -> InstanceRefreshProgressDetailsTypeDef:
+    return {
+        "LivePoolProgress": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceRefreshProgressDetailsTypeDef(TypedDict):
+    LivePoolProgress: NotRequired[InstanceRefreshLivePoolProgressTypeDef],  # (1)
+    WarmPoolProgress: NotRequired[InstanceRefreshWarmPoolProgressTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: InstanceRefreshLivePoolProgressTypeDef](./type_defs.md#instancerefreshlivepoolprogresstypedef) 
+2. See [:material-code-braces: InstanceRefreshWarmPoolProgressTypeDef](./type_defs.md#instancerefreshwarmpoolprogresstypedef) 
+## InstanceRequirementsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import InstanceRequirementsTypeDef
+
+def get_value() -> InstanceRequirementsTypeDef:
+    return {
+        "VCpuCount": ...,
+        "MemoryMiB": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceRequirementsTypeDef(TypedDict):
+    VCpuCount: VCpuCountRequestTypeDef,  # (1)
+    MemoryMiB: MemoryMiBRequestTypeDef,  # (2)
+    CpuManufacturers: NotRequired[Sequence[CpuManufacturerType]],  # (3)
+    MemoryGiBPerVCpu: NotRequired[MemoryGiBPerVCpuRequestTypeDef],  # (4)
+    ExcludedInstanceTypes: NotRequired[Sequence[str]],
+    InstanceGenerations: NotRequired[Sequence[InstanceGenerationType]],  # (5)
+    SpotMaxPricePercentageOverLowestPrice: NotRequired[int],
+    OnDemandMaxPricePercentageOverLowestPrice: NotRequired[int],
+    BareMetal: NotRequired[BareMetalType],  # (6)
+    BurstablePerformance: NotRequired[BurstablePerformanceType],  # (7)
+    RequireHibernateSupport: NotRequired[bool],
+    NetworkInterfaceCount: NotRequired[NetworkInterfaceCountRequestTypeDef],  # (8)
+    LocalStorage: NotRequired[LocalStorageType],  # (9)
+    LocalStorageTypes: NotRequired[Sequence[LocalStorageTypeType]],  # (10)
+    TotalLocalStorageGB: NotRequired[TotalLocalStorageGBRequestTypeDef],  # (11)
+    BaselineEbsBandwidthMbps: NotRequired[BaselineEbsBandwidthMbpsRequestTypeDef],  # (12)
+    AcceleratorTypes: NotRequired[Sequence[AcceleratorTypeType]],  # (13)
+    AcceleratorCount: NotRequired[AcceleratorCountRequestTypeDef],  # (14)
+    AcceleratorManufacturers: NotRequired[Sequence[AcceleratorManufacturerType]],  # (15)
+    AcceleratorNames: NotRequired[Sequence[AcceleratorNameType]],  # (16)
+    AcceleratorTotalMemoryMiB: NotRequired[AcceleratorTotalMemoryMiBRequestTypeDef],  # (17)
+```
+
+1. See [:material-code-braces: VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef) 
+2. See [:material-code-braces: MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef) 
+3. See [:material-code-brackets: CpuManufacturerType](./literals.md#cpumanufacturertype) 
+4. See [:material-code-braces: MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef) 
+5. See [:material-code-brackets: InstanceGenerationType](./literals.md#instancegenerationtype) 
+6. See [:material-code-brackets: BareMetalType](./literals.md#baremetaltype) 
+7. See [:material-code-brackets: BurstablePerformanceType](./literals.md#burstableperformancetype) 
+8. See [:material-code-braces: NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef) 
+9. See [:material-code-brackets: LocalStorageType](./literals.md#localstoragetype) 
+10. See [:material-code-brackets: LocalStorageTypeType](./literals.md#localstoragetypetype) 
+11. See [:material-code-braces: TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef) 
+12. See [:material-code-braces: BaselineEbsBandwidthMbpsRequestTypeDef](./type_defs.md#baselineebsbandwidthmbpsrequesttypedef) 
+13. See [:material-code-brackets: AcceleratorTypeType](./literals.md#acceleratortypetype) 
+14. See [:material-code-braces: AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef) 
+15. See [:material-code-brackets: AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype) 
+16. See [:material-code-brackets: AcceleratorNameType](./literals.md#acceleratornametype) 
+17. See [:material-code-braces: AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef) 
+## PutWarmPoolTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PutWarmPoolTypeRequestTypeDef
+
+def get_value() -> PutWarmPoolTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class PutWarmPoolTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    MaxGroupPreparedCapacity: NotRequired[int],
+    MinSize: NotRequired[int],
+    PoolState: NotRequired[WarmPoolStateType],  # (1)
+    InstanceReusePolicy: NotRequired[InstanceReusePolicyTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: WarmPoolStateType](./literals.md#warmpoolstatetype) 
+2. See [:material-code-braces: InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef) 
+## WarmPoolConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import WarmPoolConfigurationTypeDef
+
+def get_value() -> WarmPoolConfigurationTypeDef:
+    return {
+        "MaxGroupPreparedCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class WarmPoolConfigurationTypeDef(TypedDict):
+    MaxGroupPreparedCapacity: NotRequired[int],
+    MinSize: NotRequired[int],
+    PoolState: NotRequired[WarmPoolStateType],  # (1)
+    Status: NotRequired[WarmPoolStatusType],  # (2)
+    InstanceReusePolicy: NotRequired[InstanceReusePolicyTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: WarmPoolStateType](./literals.md#warmpoolstatetype) 
+2. See [:material-code-brackets: WarmPoolStatusType](./literals.md#warmpoolstatustype) 
+3. See [:material-code-braces: InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef) 
+## ProcessesTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ProcessesTypeTypeDef
+
+def get_value() -> ProcessesTypeTypeDef:
+    return {
+        "Processes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ProcessesTypeTypeDef(TypedDict):
+    Processes: List[ProcessTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProcessTypeTypeDef](./type_defs.md#processtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ScheduledActionsTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ScheduledActionsTypeTypeDef
+
+def get_value() -> ScheduledActionsTypeTypeDef:
+    return {
+        "ScheduledUpdateGroupActions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ScheduledActionsTypeTypeDef(TypedDict):
+    ScheduledUpdateGroupActions: List[ScheduledUpdateGroupActionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScheduledUpdateGroupActionTypeDef](./type_defs.md#scheduledupdategroupactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AutoScalingInstancesTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingInstancesTypeTypeDef
+
+def get_value() -> AutoScalingInstancesTypeTypeDef:
+    return {
+        "AutoScalingInstances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingInstancesTypeTypeDef(TypedDict):
+    AutoScalingInstances: List[AutoScalingInstanceDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AutoScalingInstanceDetailsTypeDef](./type_defs.md#autoscalinginstancedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLaunchConfigurationTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CreateLaunchConfigurationTypeRequestTypeDef
+
+def get_value() -> CreateLaunchConfigurationTypeRequestTypeDef:
+    return {
+        "LaunchConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLaunchConfigurationTypeRequestTypeDef(TypedDict):
+    LaunchConfigurationName: str,
+    ImageId: NotRequired[str],
+    KeyName: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    ClassicLinkVPCId: NotRequired[str],
+    ClassicLinkVPCSecurityGroups: NotRequired[Sequence[str]],
+    UserData: NotRequired[str],
+    InstanceId: NotRequired[str],
+    InstanceType: NotRequired[str],
+    KernelId: NotRequired[str],
+    RamdiskId: NotRequired[str],
+    BlockDeviceMappings: NotRequired[Sequence[BlockDeviceMappingTypeDef]],  # (1)
+    InstanceMonitoring: NotRequired[InstanceMonitoringTypeDef],  # (2)
+    SpotPrice: NotRequired[str],
+    IamInstanceProfile: NotRequired[str],
+    EbsOptimized: NotRequired[bool],
+    AssociatePublicIpAddress: NotRequired[bool],
+    PlacementTenancy: NotRequired[str],
+    MetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
+2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
+3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
+## LaunchConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationTypeDef
+
+def get_value() -> LaunchConfigurationTypeDef:
+    return {
+        "LaunchConfigurationName": ...,
+        "ImageId": ...,
+        "InstanceType": ...,
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchConfigurationTypeDef(TypedDict):
+    LaunchConfigurationName: str,
+    ImageId: str,
+    InstanceType: str,
+    CreatedTime: datetime,
+    LaunchConfigurationARN: NotRequired[str],
+    KeyName: NotRequired[str],
+    SecurityGroups: NotRequired[List[str]],
+    ClassicLinkVPCId: NotRequired[str],
+    ClassicLinkVPCSecurityGroups: NotRequired[List[str]],
+    UserData: NotRequired[str],
+    KernelId: NotRequired[str],
+    RamdiskId: NotRequired[str],
+    BlockDeviceMappings: NotRequired[List[BlockDeviceMappingTypeDef]],  # (1)
+    InstanceMonitoring: NotRequired[InstanceMonitoringTypeDef],  # (2)
+    SpotPrice: NotRequired[str],
+    IamInstanceProfile: NotRequired[str],
+    EbsOptimized: NotRequired[bool],
+    AssociatePublicIpAddress: NotRequired[bool],
+    PlacementTenancy: NotRequired[str],
+    MetadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
+2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
+3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
 ## TargetTrackingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3292,41 +2758,360 @@ class TargetTrackingConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-braces: PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef) 
 2. See [:material-code-braces: CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef) 
-## TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
+## MetricStatTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import MetricStatTypeDef
 
-def get_value() -> TerminateInstanceInAutoScalingGroupTypeRequestTypeDef:
+def get_value() -> MetricStatTypeDef:
     return {
-        "InstanceId": ...,
-        "ShouldDecrementDesiredCapacity": ...,
+        "Metric": ...,
+        "Stat": ...,
     }
 ```
 
 ```python title="Definition"
-class TerminateInstanceInAutoScalingGroupTypeRequestTypeDef(TypedDict):
-    InstanceId: str,
-    ShouldDecrementDesiredCapacity: bool,
+class MetricStatTypeDef(TypedDict):
+    Metric: MetricTypeDef,  # (1)
+    Stat: str,
+    Unit: NotRequired[str],
 ```
 
-## TotalLocalStorageGBRequestTypeDef
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+## LaunchTemplateOverridesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import TotalLocalStorageGBRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import LaunchTemplateOverridesTypeDef
 
-def get_value() -> TotalLocalStorageGBRequestTypeDef:
+def get_value() -> LaunchTemplateOverridesTypeDef:
     return {
-        "Min": ...,
+        "InstanceType": ...,
     }
 ```
 
 ```python title="Definition"
-class TotalLocalStorageGBRequestTypeDef(TypedDict):
-    Min: NotRequired[float],
-    Max: NotRequired[float],
+class LaunchTemplateOverridesTypeDef(TypedDict):
+    InstanceType: NotRequired[str],
+    WeightedCapacity: NotRequired[str],
+    LaunchTemplateSpecification: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    InstanceRequirements: NotRequired[InstanceRequirementsTypeDef],  # (2)
 ```
 
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef) 
+## DescribeWarmPoolAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolAnswerTypeDef
+
+def get_value() -> DescribeWarmPoolAnswerTypeDef:
+    return {
+        "WarmPoolConfiguration": ...,
+        "Instances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWarmPoolAnswerTypeDef(TypedDict):
+    WarmPoolConfiguration: WarmPoolConfigurationTypeDef,  # (1)
+    Instances: List[InstanceTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef) 
+2. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LaunchConfigurationsTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationsTypeTypeDef
+
+def get_value() -> LaunchConfigurationsTypeTypeDef:
+    return {
+        "LaunchConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchConfigurationsTypeTypeDef(TypedDict):
+    LaunchConfigurations: List[LaunchConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricDataQueryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MetricDataQueryTypeDef
+
+def get_value() -> MetricDataQueryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDataQueryTypeDef(TypedDict):
+    Id: str,
+    Expression: NotRequired[str],
+    MetricStat: NotRequired[MetricStatTypeDef],  # (1)
+    Label: NotRequired[str],
+    ReturnData: NotRequired[bool],
+```
+
+1. See [:material-code-braces: MetricStatTypeDef](./type_defs.md#metricstattypedef) 
+## LaunchTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import LaunchTemplateTypeDef
+
+def get_value() -> LaunchTemplateTypeDef:
+    return {
+        "LaunchTemplateSpecification": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchTemplateTypeDef(TypedDict):
+    LaunchTemplateSpecification: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    Overrides: NotRequired[Sequence[LaunchTemplateOverridesTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef) 
+## PredictiveScalingCustomizedCapacityMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedCapacityMetricTypeDef
+
+def get_value() -> PredictiveScalingCustomizedCapacityMetricTypeDef:
+    return {
+        "MetricDataQueries": ...,
+    }
+```
+
+```python title="Definition"
+class PredictiveScalingCustomizedCapacityMetricTypeDef(TypedDict):
+    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+## PredictiveScalingCustomizedLoadMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedLoadMetricTypeDef
+
+def get_value() -> PredictiveScalingCustomizedLoadMetricTypeDef:
+    return {
+        "MetricDataQueries": ...,
+    }
+```
+
+```python title="Definition"
+class PredictiveScalingCustomizedLoadMetricTypeDef(TypedDict):
+    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+## PredictiveScalingCustomizedScalingMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedScalingMetricTypeDef
+
+def get_value() -> PredictiveScalingCustomizedScalingMetricTypeDef:
+    return {
+        "MetricDataQueries": ...,
+    }
+```
+
+```python title="Definition"
+class PredictiveScalingCustomizedScalingMetricTypeDef(TypedDict):
+    MetricDataQueries: List[MetricDataQueryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+## MixedInstancesPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import MixedInstancesPolicyTypeDef
+
+def get_value() -> MixedInstancesPolicyTypeDef:
+    return {
+        "LaunchTemplate": ...,
+    }
+```
+
+```python title="Definition"
+class MixedInstancesPolicyTypeDef(TypedDict):
+    LaunchTemplate: NotRequired[LaunchTemplateTypeDef],  # (1)
+    InstancesDistribution: NotRequired[InstancesDistributionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef) 
+2. See [:material-code-braces: InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef) 
+## PredictiveScalingMetricSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingMetricSpecificationTypeDef
+
+def get_value() -> PredictiveScalingMetricSpecificationTypeDef:
+    return {
+        "TargetValue": ...,
+    }
+```
+
+```python title="Definition"
+class PredictiveScalingMetricSpecificationTypeDef(TypedDict):
+    TargetValue: float,
+    PredefinedMetricPairSpecification: NotRequired[PredictiveScalingPredefinedMetricPairTypeDef],  # (1)
+    PredefinedScalingMetricSpecification: NotRequired[PredictiveScalingPredefinedScalingMetricTypeDef],  # (2)
+    PredefinedLoadMetricSpecification: NotRequired[PredictiveScalingPredefinedLoadMetricTypeDef],  # (3)
+    CustomizedScalingMetricSpecification: NotRequired[PredictiveScalingCustomizedScalingMetricTypeDef],  # (4)
+    CustomizedLoadMetricSpecification: NotRequired[PredictiveScalingCustomizedLoadMetricTypeDef],  # (5)
+    CustomizedCapacityMetricSpecification: NotRequired[PredictiveScalingCustomizedCapacityMetricTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: PredictiveScalingPredefinedMetricPairTypeDef](./type_defs.md#predictivescalingpredefinedmetricpairtypedef) 
+2. See [:material-code-braces: PredictiveScalingPredefinedScalingMetricTypeDef](./type_defs.md#predictivescalingpredefinedscalingmetrictypedef) 
+3. See [:material-code-braces: PredictiveScalingPredefinedLoadMetricTypeDef](./type_defs.md#predictivescalingpredefinedloadmetrictypedef) 
+4. See [:material-code-braces: PredictiveScalingCustomizedScalingMetricTypeDef](./type_defs.md#predictivescalingcustomizedscalingmetrictypedef) 
+5. See [:material-code-braces: PredictiveScalingCustomizedLoadMetricTypeDef](./type_defs.md#predictivescalingcustomizedloadmetrictypedef) 
+6. See [:material-code-braces: PredictiveScalingCustomizedCapacityMetricTypeDef](./type_defs.md#predictivescalingcustomizedcapacitymetrictypedef) 
+## AutoScalingGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupTypeDef
+
+def get_value() -> AutoScalingGroupTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "MinSize": ...,
+        "MaxSize": ...,
+        "DesiredCapacity": ...,
+        "DefaultCooldown": ...,
+        "AvailabilityZones": ...,
+        "HealthCheckType": ...,
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingGroupTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    MinSize: int,
+    MaxSize: int,
+    DesiredCapacity: int,
+    DefaultCooldown: int,
+    AvailabilityZones: List[str],
+    HealthCheckType: str,
+    CreatedTime: datetime,
+    AutoScalingGroupARN: NotRequired[str],
+    LaunchConfigurationName: NotRequired[str],
+    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
+    PredictedCapacity: NotRequired[int],
+    LoadBalancerNames: NotRequired[List[str]],
+    TargetGroupARNs: NotRequired[List[str]],
+    HealthCheckGracePeriod: NotRequired[int],
+    Instances: NotRequired[List[InstanceTypeDef]],  # (3)
+    SuspendedProcesses: NotRequired[List[SuspendedProcessTypeDef]],  # (4)
+    PlacementGroup: NotRequired[str],
+    VPCZoneIdentifier: NotRequired[str],
+    EnabledMetrics: NotRequired[List[EnabledMetricTypeDef]],  # (5)
+    Status: NotRequired[str],
+    Tags: NotRequired[List[TagDescriptionTypeDef]],  # (6)
+    TerminationPolicies: NotRequired[List[str]],
+    NewInstancesProtectedFromScaleIn: NotRequired[bool],
+    ServiceLinkedRoleARN: NotRequired[str],
+    MaxInstanceLifetime: NotRequired[int],
+    CapacityRebalance: NotRequired[bool],
+    WarmPoolConfiguration: NotRequired[WarmPoolConfigurationTypeDef],  # (7)
+    WarmPoolSize: NotRequired[int],
+    Context: NotRequired[str],
+    DesiredCapacityType: NotRequired[str],
+    DefaultInstanceWarmup: NotRequired[int],
+```
+
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
+3. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+4. See [:material-code-braces: SuspendedProcessTypeDef](./type_defs.md#suspendedprocesstypedef) 
+5. See [:material-code-braces: EnabledMetricTypeDef](./type_defs.md#enabledmetrictypedef) 
+6. See [:material-code-braces: TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef) 
+7. See [:material-code-braces: WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef) 
+## CreateAutoScalingGroupTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CreateAutoScalingGroupTypeRequestTypeDef
+
+def get_value() -> CreateAutoScalingGroupTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "MinSize": ...,
+        "MaxSize": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAutoScalingGroupTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    MinSize: int,
+    MaxSize: int,
+    LaunchConfigurationName: NotRequired[str],
+    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
+    InstanceId: NotRequired[str],
+    DesiredCapacity: NotRequired[int],
+    DefaultCooldown: NotRequired[int],
+    AvailabilityZones: NotRequired[Sequence[str]],
+    LoadBalancerNames: NotRequired[Sequence[str]],
+    TargetGroupARNs: NotRequired[Sequence[str]],
+    HealthCheckType: NotRequired[str],
+    HealthCheckGracePeriod: NotRequired[int],
+    PlacementGroup: NotRequired[str],
+    VPCZoneIdentifier: NotRequired[str],
+    TerminationPolicies: NotRequired[Sequence[str]],
+    NewInstancesProtectedFromScaleIn: NotRequired[bool],
+    CapacityRebalance: NotRequired[bool],
+    LifecycleHookSpecificationList: NotRequired[Sequence[LifecycleHookSpecificationTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    ServiceLinkedRoleARN: NotRequired[str],
+    MaxInstanceLifetime: NotRequired[int],
+    Context: NotRequired[str],
+    DesiredCapacityType: NotRequired[str],
+    DefaultInstanceWarmup: NotRequired[int],
+```
+
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
+3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DesiredConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DesiredConfigurationTypeDef
+
+def get_value() -> DesiredConfigurationTypeDef:
+    return {
+        "LaunchTemplate": ...,
+    }
+```
+
+```python title="Definition"
+class DesiredConfigurationTypeDef(TypedDict):
+    LaunchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    MixedInstancesPolicy: NotRequired[MixedInstancesPolicyTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
 ## UpdateAutoScalingGroupTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -3365,43 +3150,258 @@ class UpdateAutoScalingGroupTypeRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
-## VCpuCountRequestTypeDef
+## LoadForecastTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import VCpuCountRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import LoadForecastTypeDef
 
-def get_value() -> VCpuCountRequestTypeDef:
+def get_value() -> LoadForecastTypeDef:
     return {
-        "Min": ...,
+        "Timestamps": ...,
+        "Values": ...,
+        "MetricSpecification": ...,
     }
 ```
 
 ```python title="Definition"
-class VCpuCountRequestTypeDef(TypedDict):
-    Min: int,
-    Max: NotRequired[int],
+class LoadForecastTypeDef(TypedDict):
+    Timestamps: List[datetime],
+    Values: List[float],
+    MetricSpecification: PredictiveScalingMetricSpecificationTypeDef,  # (1)
 ```
 
-## WarmPoolConfigurationTypeDef
+1. See [:material-code-braces: PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef) 
+## PredictiveScalingConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import WarmPoolConfigurationTypeDef
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingConfigurationTypeDef
 
-def get_value() -> WarmPoolConfigurationTypeDef:
+def get_value() -> PredictiveScalingConfigurationTypeDef:
     return {
-        "MaxGroupPreparedCapacity": ...,
+        "MetricSpecifications": ...,
     }
 ```
 
 ```python title="Definition"
-class WarmPoolConfigurationTypeDef(TypedDict):
-    MaxGroupPreparedCapacity: NotRequired[int],
-    MinSize: NotRequired[int],
-    PoolState: NotRequired[WarmPoolStateType],  # (1)
-    Status: NotRequired[WarmPoolStatusType],  # (2)
-    InstanceReusePolicy: NotRequired[InstanceReusePolicyTypeDef],  # (3)
+class PredictiveScalingConfigurationTypeDef(TypedDict):
+    MetricSpecifications: List[PredictiveScalingMetricSpecificationTypeDef],  # (1)
+    Mode: NotRequired[PredictiveScalingModeType],  # (2)
+    SchedulingBufferTime: NotRequired[int],
+    MaxCapacityBreachBehavior: NotRequired[PredictiveScalingMaxCapacityBreachBehaviorType],  # (3)
+    MaxCapacityBuffer: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: WarmPoolStateType](./literals.md#warmpoolstatetype) 
-2. See [:material-code-brackets: WarmPoolStatusType](./literals.md#warmpoolstatustype) 
-3. See [:material-code-braces: InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef) 
+1. See [:material-code-braces: PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef) 
+2. See [:material-code-brackets: PredictiveScalingModeType](./literals.md#predictivescalingmodetype) 
+3. See [:material-code-brackets: PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype) 
+## AutoScalingGroupsTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
+
+def get_value() -> AutoScalingGroupsTypeTypeDef:
+    return {
+        "AutoScalingGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AutoScalingGroupsTypeTypeDef(TypedDict):
+    AutoScalingGroups: List[AutoScalingGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InstanceRefreshTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import InstanceRefreshTypeDef
+
+def get_value() -> InstanceRefreshTypeDef:
+    return {
+        "InstanceRefreshId": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceRefreshTypeDef(TypedDict):
+    InstanceRefreshId: NotRequired[str],
+    AutoScalingGroupName: NotRequired[str],
+    Status: NotRequired[InstanceRefreshStatusType],  # (1)
+    StatusReason: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    PercentageComplete: NotRequired[int],
+    InstancesToUpdate: NotRequired[int],
+    ProgressDetails: NotRequired[InstanceRefreshProgressDetailsTypeDef],  # (2)
+    Preferences: NotRequired[RefreshPreferencesTypeDef],  # (3)
+    DesiredConfiguration: NotRequired[DesiredConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: InstanceRefreshStatusType](./literals.md#instancerefreshstatustype) 
+2. See [:material-code-braces: InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef) 
+3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
+4. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
+## StartInstanceRefreshTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshTypeRequestTypeDef
+
+def get_value() -> StartInstanceRefreshTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class StartInstanceRefreshTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    Strategy: NotRequired[RefreshStrategyType],  # (1)
+    DesiredConfiguration: NotRequired[DesiredConfigurationTypeDef],  # (2)
+    Preferences: NotRequired[RefreshPreferencesTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RefreshStrategyType](./literals.md#refreshstrategytype) 
+2. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
+3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
+## GetPredictiveScalingForecastAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastAnswerTypeDef
+
+def get_value() -> GetPredictiveScalingForecastAnswerTypeDef:
+    return {
+        "LoadForecast": ...,
+        "CapacityForecast": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPredictiveScalingForecastAnswerTypeDef(TypedDict):
+    LoadForecast: List[LoadForecastTypeDef],  # (1)
+    CapacityForecast: CapacityForecastTypeDef,  # (2)
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: LoadForecastTypeDef](./type_defs.md#loadforecasttypedef) 
+2. See [:material-code-braces: CapacityForecastTypeDef](./type_defs.md#capacityforecasttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutScalingPolicyTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PutScalingPolicyTypeRequestTypeDef
+
+def get_value() -> PutScalingPolicyTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "PolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class PutScalingPolicyTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    PolicyName: str,
+    PolicyType: NotRequired[str],
+    AdjustmentType: NotRequired[str],
+    MinAdjustmentStep: NotRequired[int],
+    MinAdjustmentMagnitude: NotRequired[int],
+    ScalingAdjustment: NotRequired[int],
+    Cooldown: NotRequired[int],
+    MetricAggregationType: NotRequired[str],
+    StepAdjustments: NotRequired[Sequence[StepAdjustmentTypeDef]],  # (1)
+    EstimatedInstanceWarmup: NotRequired[int],
+    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (2)
+    Enabled: NotRequired[bool],
+    PredictiveScalingConfiguration: NotRequired[PredictiveScalingConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
+2. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
+3. See [:material-code-braces: PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef) 
+## ScalingPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import ScalingPolicyTypeDef
+
+def get_value() -> ScalingPolicyTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ScalingPolicyTypeDef(TypedDict):
+    AutoScalingGroupName: NotRequired[str],
+    PolicyName: NotRequired[str],
+    PolicyARN: NotRequired[str],
+    PolicyType: NotRequired[str],
+    AdjustmentType: NotRequired[str],
+    MinAdjustmentStep: NotRequired[int],
+    MinAdjustmentMagnitude: NotRequired[int],
+    ScalingAdjustment: NotRequired[int],
+    Cooldown: NotRequired[int],
+    StepAdjustments: NotRequired[List[StepAdjustmentTypeDef]],  # (1)
+    MetricAggregationType: NotRequired[str],
+    EstimatedInstanceWarmup: NotRequired[int],
+    Alarms: NotRequired[List[AlarmTypeDef]],  # (2)
+    TargetTrackingConfiguration: NotRequired[TargetTrackingConfigurationTypeDef],  # (3)
+    Enabled: NotRequired[bool],
+    PredictiveScalingConfiguration: NotRequired[PredictiveScalingConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
+2. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
+3. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
+4. See [:material-code-braces: PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef) 
+## DescribeInstanceRefreshesAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesAnswerTypeDef
+
+def get_value() -> DescribeInstanceRefreshesAnswerTypeDef:
+    return {
+        "InstanceRefreshes": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstanceRefreshesAnswerTypeDef(TypedDict):
+    InstanceRefreshes: List[InstanceRefreshTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InstanceRefreshTypeDef](./type_defs.md#instancerefreshtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PoliciesTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import PoliciesTypeTypeDef
+
+def get_value() -> PoliciesTypeTypeDef:
+    return {
+        "ScalingPolicies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PoliciesTypeTypeDef(TypedDict):
+    ScalingPolicies: List[ScalingPolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

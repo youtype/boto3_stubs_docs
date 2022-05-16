@@ -120,51 +120,47 @@ def get_value() -> DetailTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleRequestRequestTypeDef
+from mypy_boto3_codestar_notifications.type_defs import TargetTypeDef
 
-def get_value() -> CreateNotificationRuleRequestRequestTypeDef:
+def get_value() -> TargetTypeDef:
     return {
-        "Name": ...,
-        "EventTypeIds": ...,
-        "Resource": ...,
-        "Targets": ...,
-        "DetailType": ...,
+        "TargetType": ...,
     }
 ```
 
-- [CreateNotificationRuleRequestRequestTypeDef](./type_defs.md#createnotificationrulerequestrequesttypedef)
-- [CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef)
+- [TargetTypeDef](./type_defs.md#targettypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeleteNotificationRuleRequestRequestTypeDef](./type_defs.md#deletenotificationrulerequestrequesttypedef)
-- [DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef)
 - [DeleteTargetRequestRequestTypeDef](./type_defs.md#deletetargetrequestrequesttypedef)
 - [DescribeNotificationRuleRequestRequestTypeDef](./type_defs.md#describenotificationrulerequestrequesttypedef)
-- [DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef)
 - [EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)
+- [TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)
 - [ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)
-- [ListEventTypesRequestListEventTypesPaginateTypeDef](./type_defs.md#listeventtypesrequestlisteventtypespaginatetypedef)
-- [ListEventTypesRequestRequestTypeDef](./type_defs.md#listeventtypesrequestrequesttypedef)
-- [ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)
+- [NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UnsubscribeRequestRequestTypeDef](./type_defs.md#unsubscriberequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [CreateNotificationRuleRequestRequestTypeDef](./type_defs.md#createnotificationrulerequestrequesttypedef)
+- [SubscribeRequestRequestTypeDef](./type_defs.md#subscriberequestrequesttypedef)
+- [UpdateNotificationRuleRequestRequestTypeDef](./type_defs.md#updatenotificationrulerequestrequesttypedef)
+- [CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef)
+- [DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef)
+- [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
+- [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef)
+- [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef)
+- [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef)
+- [ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef)
+- [DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef)
+- [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef)
+- [ListEventTypesRequestRequestTypeDef](./type_defs.md#listeventtypesrequestrequesttypedef)
+- [ListEventTypesRequestListEventTypesPaginateTypeDef](./type_defs.md#listeventtypesrequestlisteventtypespaginatetypedef)
 - [ListNotificationRulesRequestListNotificationRulesPaginateTypeDef](./type_defs.md#listnotificationrulesrequestlistnotificationrulespaginatetypedef)
 - [ListNotificationRulesRequestRequestTypeDef](./type_defs.md#listnotificationrulesrequestrequesttypedef)
 - [ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef)
-- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
-- [ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)
 - [ListTargetsRequestListTargetsPaginateTypeDef](./type_defs.md#listtargetsrequestlisttargetspaginatetypedef)
 - [ListTargetsRequestRequestTypeDef](./type_defs.md#listtargetsrequestrequesttypedef)
-- [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef)
-- [NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SubscribeRequestRequestTypeDef](./type_defs.md#subscriberequestrequesttypedef)
-- [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef)
-- [TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)
-- [TargetTypeDef](./type_defs.md#targettypedef)
-- [UnsubscribeRequestRequestTypeDef](./type_defs.md#unsubscriberequestrequesttypedef)
-- [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef)
-- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
-- [UpdateNotificationRuleRequestRequestTypeDef](./type_defs.md#updatenotificationrulerequestrequesttypedef)
 

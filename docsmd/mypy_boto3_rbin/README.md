@@ -114,33 +114,32 @@ def get_value() -> ListRulesPaginatorName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_rbin.type_defs import CreateRuleRequestRequestTypeDef
+from mypy_boto3_rbin.type_defs import ResourceTagTypeDef
 
-def get_value() -> CreateRuleRequestRequestTypeDef:
+def get_value() -> ResourceTagTypeDef:
     return {
-        "RetentionPeriod": ...,
-        "ResourceType": ...,
+        "ResourceTagKey": ...,
     }
 ```
 
-- [CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef)
-- [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef)
+- [ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)
+- [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef)
 - [GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef)
-- [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef)
-- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
-- [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
-- [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
-- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- [RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)
-- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
+- [RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)
 - [UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef)
+- [CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef)
+- [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef)
+- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
+- [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
 

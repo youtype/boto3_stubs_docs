@@ -128,39 +128,39 @@ def get_value() -> ClipFragmentSelectorTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelectorTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import ClipTimestampRangeTypeDef
 
-def get_value() -> ClipFragmentSelectorTypeDef:
+def get_value() -> ClipTimestampRangeTypeDef:
     return {
-        "FragmentSelectorType": ...,
-        "TimestampRange": ...,
+        "StartTimestamp": ...,
+        "EndTimestamp": ...,
     }
 ```
 
-- [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
 - [ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef)
-- [DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef)
 - [DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef)
-- [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
+- [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - [FragmentTypeDef](./type_defs.md#fragmenttypedef)
-- [GetClipInputRequestTypeDef](./type_defs.md#getclipinputrequesttypedef)
-- [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef)
-- [GetDASHStreamingSessionURLInputRequestTypeDef](./type_defs.md#getdashstreamingsessionurlinputrequesttypedef)
-- [GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef)
-- [GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef)
-- [GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef)
-- [GetImagesInputGetImagesPaginateTypeDef](./type_defs.md#getimagesinputgetimagespaginatetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [GetImagesInputRequestTypeDef](./type_defs.md#getimagesinputrequesttypedef)
-- [GetImagesOutputTypeDef](./type_defs.md#getimagesoutputtypedef)
-- [GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef)
-- [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef)
-- [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
-- [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
 - [ImageTypeDef](./type_defs.md#imagetypedef)
+- [GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef)
+- [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
+- [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
+- [DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef)
+- [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
+- [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef)
+- [GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef)
+- [GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef)
+- [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef)
+- [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)
+- [GetImagesInputGetImagesPaginateTypeDef](./type_defs.md#getimagesinputgetimagespaginatetypedef)
+- [GetImagesOutputTypeDef](./type_defs.md#getimagesoutputtypedef)
+- [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
+- [GetClipInputRequestTypeDef](./type_defs.md#getclipinputrequesttypedef)
+- [GetDASHStreamingSessionURLInputRequestTypeDef](./type_defs.md#getdashstreamingsessionurlinputrequesttypedef)
 - [ListFragmentsInputListFragmentsPaginateTypeDef](./type_defs.md#listfragmentsinputlistfragmentspaginatetypedef)
 - [ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef)
-- [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
+- [GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef)
 

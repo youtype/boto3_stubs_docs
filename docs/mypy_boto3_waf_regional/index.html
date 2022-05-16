@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36063,225 +36063,224 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_waf_regional.type_defs</span> <span class="kn">import</span> <span class="n">ActivatedRuleTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_waf_regional.type_defs</span> <span class="kn">import</span> <span class="n">ExcludedRuleTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActivatedRuleTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ExcludedRuleTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Priority&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;RuleId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;RuleId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#activatedruletypedef">ActivatedRuleTypeDef</a></li>
+<li><a href="type_defs/#excludedruletypedef">ExcludedRuleTypeDef</a></li>
+<li><a href="type_defs/#wafactiontypedef">WafActionTypeDef</a></li>
+<li><a href="type_defs/#wafoverrideactiontypedef">WafOverrideActionTypeDef</a></li>
 <li><a href="type_defs/#associatewebaclrequestrequesttypedef">AssociateWebACLRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#bytematchsetsummarytypedef">ByteMatchSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#bytematchsettypedef">ByteMatchSetTypeDef</a></li>
-<li><a href="type_defs/#bytematchsetupdatetypedef">ByteMatchSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#bytematchtupletypedef">ByteMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#fieldtomatchtypedef">FieldToMatchTypeDef</a></li>
 <li><a href="type_defs/#createbytematchsetrequestrequesttypedef">CreateByteMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createbytematchsetresponsetypedef">CreateByteMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#creategeomatchsetrequestrequesttypedef">CreateGeoMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#creategeomatchsetresponsetypedef">CreateGeoMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#createipsetrequestrequesttypedef">CreateIPSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createipsetresponsetypedef">CreateIPSetResponseTypeDef</a></li>
-<li><a href="type_defs/#createratebasedrulerequestrequesttypedef">CreateRateBasedRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createratebasedruleresponsetypedef">CreateRateBasedRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#createregexmatchsetrequestrequesttypedef">CreateRegexMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createregexmatchsetresponsetypedef">CreateRegexMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#createregexpatternsetrequestrequesttypedef">CreateRegexPatternSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createregexpatternsetresponsetypedef">CreateRegexPatternSetResponseTypeDef</a></li>
-<li><a href="type_defs/#createrulegrouprequestrequesttypedef">CreateRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createrulegroupresponsetypedef">CreateRuleGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#createrulerequestrequesttypedef">CreateRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createruleresponsetypedef">CreateRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#regexpatternsettypedef">RegexPatternSetTypeDef</a></li>
+<li><a href="type_defs/#rulegrouptypedef">RuleGroupTypeDef</a></li>
 <li><a href="type_defs/#createsizeconstraintsetrequestrequesttypedef">CreateSizeConstraintSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createsizeconstraintsetresponsetypedef">CreateSizeConstraintSetResponseTypeDef</a></li>
 <li><a href="type_defs/#createsqlinjectionmatchsetrequestrequesttypedef">CreateSqlInjectionMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createsqlinjectionmatchsetresponsetypedef">CreateSqlInjectionMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#createwebaclmigrationstackrequestrequesttypedef">CreateWebACLMigrationStackRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createwebaclmigrationstackresponsetypedef">CreateWebACLMigrationStackResponseTypeDef</a></li>
-<li><a href="type_defs/#createwebaclrequestrequesttypedef">CreateWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createwebaclresponsetypedef">CreateWebACLResponseTypeDef</a></li>
 <li><a href="type_defs/#createxssmatchsetrequestrequesttypedef">CreateXssMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createxssmatchsetresponsetypedef">CreateXssMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletebytematchsetrequestrequesttypedef">DeleteByteMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletebytematchsetresponsetypedef">DeleteByteMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletegeomatchsetrequestrequesttypedef">DeleteGeoMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletegeomatchsetresponsetypedef">DeleteGeoMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteipsetrequestrequesttypedef">DeleteIPSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteipsetresponsetypedef">DeleteIPSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteloggingconfigurationrequestrequesttypedef">DeleteLoggingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepermissionpolicyrequestrequesttypedef">DeletePermissionPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteratebasedrulerequestrequesttypedef">DeleteRateBasedRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteratebasedruleresponsetypedef">DeleteRateBasedRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteregexmatchsetrequestrequesttypedef">DeleteRegexMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteregexmatchsetresponsetypedef">DeleteRegexMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteregexpatternsetrequestrequesttypedef">DeleteRegexPatternSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteregexpatternsetresponsetypedef">DeleteRegexPatternSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deleterulegrouprequestrequesttypedef">DeleteRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleterulegroupresponsetypedef">DeleteRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#deleterulerequestrequesttypedef">DeleteRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteruleresponsetypedef">DeleteRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#deletesizeconstraintsetrequestrequesttypedef">DeleteSizeConstraintSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletesizeconstraintsetresponsetypedef">DeleteSizeConstraintSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletesqlinjectionmatchsetrequestrequesttypedef">DeleteSqlInjectionMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletesqlinjectionmatchsetresponsetypedef">DeleteSqlInjectionMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletewebaclrequestrequesttypedef">DeleteWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletewebaclresponsetypedef">DeleteWebACLResponseTypeDef</a></li>
 <li><a href="type_defs/#deletexssmatchsetrequestrequesttypedef">DeleteXssMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletexssmatchsetresponsetypedef">DeleteXssMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociatewebaclrequestrequesttypedef">DisassociateWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#excludedruletypedef">ExcludedRuleTypeDef</a></li>
-<li><a href="type_defs/#fieldtomatchtypedef">FieldToMatchTypeDef</a></li>
 <li><a href="type_defs/#geomatchconstrainttypedef">GeoMatchConstraintTypeDef</a></li>
 <li><a href="type_defs/#geomatchsetsummarytypedef">GeoMatchSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#geomatchsettypedef">GeoMatchSetTypeDef</a></li>
-<li><a href="type_defs/#geomatchsetupdatetypedef">GeoMatchSetUpdateTypeDef</a></li>
 <li><a href="type_defs/#getbytematchsetrequestrequesttypedef">GetByteMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbytematchsetresponsetypedef">GetByteMatchSetResponseTypeDef</a></li>
-<li><a href="type_defs/#getchangetokenresponsetypedef">GetChangeTokenResponseTypeDef</a></li>
 <li><a href="type_defs/#getchangetokenstatusrequestrequesttypedef">GetChangeTokenStatusRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getchangetokenstatusresponsetypedef">GetChangeTokenStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#getgeomatchsetrequestrequesttypedef">GetGeoMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getgeomatchsetresponsetypedef">GetGeoMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getipsetrequestrequesttypedef">GetIPSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getipsetresponsetypedef">GetIPSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getloggingconfigurationrequestrequesttypedef">GetLoggingConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getloggingconfigurationresponsetypedef">GetLoggingConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getpermissionpolicyrequestrequesttypedef">GetPermissionPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getpermissionpolicyresponsetypedef">GetPermissionPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getratebasedrulemanagedkeysrequestrequesttypedef">GetRateBasedRuleManagedKeysRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getratebasedrulemanagedkeysresponsetypedef">GetRateBasedRuleManagedKeysResponseTypeDef</a></li>
 <li><a href="type_defs/#getratebasedrulerequestrequesttypedef">GetRateBasedRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getratebasedruleresponsetypedef">GetRateBasedRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#getregexmatchsetrequestrequesttypedef">GetRegexMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getregexmatchsetresponsetypedef">GetRegexMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getregexpatternsetrequestrequesttypedef">GetRegexPatternSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getregexpatternsetresponsetypedef">GetRegexPatternSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getrulegrouprequestrequesttypedef">GetRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getrulegroupresponsetypedef">GetRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#getrulerequestrequesttypedef">GetRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getruleresponsetypedef">GetRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#getsampledrequestsrequestrequesttypedef">GetSampledRequestsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsampledrequestsresponsetypedef">GetSampledRequestsResponseTypeDef</a></li>
+<li><a href="type_defs/#timewindowtypedef">TimeWindowTypeDef</a></li>
 <li><a href="type_defs/#getsizeconstraintsetrequestrequesttypedef">GetSizeConstraintSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsizeconstraintsetresponsetypedef">GetSizeConstraintSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getsqlinjectionmatchsetrequestrequesttypedef">GetSqlInjectionMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsqlinjectionmatchsetresponsetypedef">GetSqlInjectionMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getwebaclforresourcerequestrequesttypedef">GetWebACLForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getwebaclforresourceresponsetypedef">GetWebACLForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#webaclsummarytypedef">WebACLSummaryTypeDef</a></li>
 <li><a href="type_defs/#getwebaclrequestrequesttypedef">GetWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getwebaclresponsetypedef">GetWebACLResponseTypeDef</a></li>
 <li><a href="type_defs/#getxssmatchsetrequestrequesttypedef">GetXssMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getxssmatchsetresponsetypedef">GetXssMatchSetResponseTypeDef</a></li>
 <li><a href="type_defs/#httpheadertypedef">HTTPHeaderTypeDef</a></li>
-<li><a href="type_defs/#httprequesttypedef">HTTPRequestTypeDef</a></li>
 <li><a href="type_defs/#ipsetdescriptortypedef">IPSetDescriptorTypeDef</a></li>
 <li><a href="type_defs/#ipsetsummarytypedef">IPSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#ipsettypedef">IPSetTypeDef</a></li>
-<li><a href="type_defs/#ipsetupdatetypedef">IPSetUpdateTypeDef</a></li>
 <li><a href="type_defs/#listactivatedrulesinrulegrouprequestrequesttypedef">ListActivatedRulesInRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listactivatedrulesinrulegroupresponsetypedef">ListActivatedRulesInRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#listbytematchsetsrequestrequesttypedef">ListByteMatchSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listbytematchsetsresponsetypedef">ListByteMatchSetsResponseTypeDef</a></li>
 <li><a href="type_defs/#listgeomatchsetsrequestrequesttypedef">ListGeoMatchSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listgeomatchsetsresponsetypedef">ListGeoMatchSetsResponseTypeDef</a></li>
 <li><a href="type_defs/#listipsetsrequestrequesttypedef">ListIPSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listipsetsresponsetypedef">ListIPSetsResponseTypeDef</a></li>
 <li><a href="type_defs/#listloggingconfigurationsrequestrequesttypedef">ListLoggingConfigurationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listloggingconfigurationsresponsetypedef">ListLoggingConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listratebasedrulesrequestrequesttypedef">ListRateBasedRulesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listratebasedrulesresponsetypedef">ListRateBasedRulesResponseTypeDef</a></li>
-<li><a href="type_defs/#listregexmatchsetsrequestrequesttypedef">ListRegexMatchSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listregexmatchsetsresponsetypedef">ListRegexMatchSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listregexpatternsetsrequestrequesttypedef">ListRegexPatternSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listregexpatternsetsresponsetypedef">ListRegexPatternSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listresourcesforwebaclrequestrequesttypedef">ListResourcesForWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listresourcesforwebaclresponsetypedef">ListResourcesForWebACLResponseTypeDef</a></li>
-<li><a href="type_defs/#listrulegroupsrequestrequesttypedef">ListRuleGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrulegroupsresponsetypedef">ListRuleGroupsResponseTypeDef</a></li>
-<li><a href="type_defs/#listrulesrequestrequesttypedef">ListRulesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listrulesresponsetypedef">ListRulesResponseTypeDef</a></li>
-<li><a href="type_defs/#listsizeconstraintsetsrequestrequesttypedef">ListSizeConstraintSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsizeconstraintsetsresponsetypedef">ListSizeConstraintSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listsqlinjectionmatchsetsrequestrequesttypedef">ListSqlInjectionMatchSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsqlinjectionmatchsetsresponsetypedef">ListSqlInjectionMatchSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#listsubscribedrulegroupsrequestrequesttypedef">ListSubscribedRuleGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listsubscribedrulegroupsresponsetypedef">ListSubscribedRuleGroupsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#listwebaclsrequestrequesttypedef">ListWebACLsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listwebaclsresponsetypedef">ListWebACLsResponseTypeDef</a></li>
-<li><a href="type_defs/#listxssmatchsetsrequestrequesttypedef">ListXssMatchSetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listxssmatchsetsresponsetypedef">ListXssMatchSetsResponseTypeDef</a></li>
-<li><a href="type_defs/#loggingconfigurationtypedef">LoggingConfigurationTypeDef</a></li>
-<li><a href="type_defs/#predicatetypedef">PredicateTypeDef</a></li>
-<li><a href="type_defs/#putloggingconfigurationrequestrequesttypedef">PutLoggingConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putloggingconfigurationresponsetypedef">PutLoggingConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#putpermissionpolicyrequestrequesttypedef">PutPermissionPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#ratebasedruletypedef">RateBasedRuleTypeDef</a></li>
-<li><a href="type_defs/#regexmatchsetsummarytypedef">RegexMatchSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#regexmatchsettypedef">RegexMatchSetTypeDef</a></li>
-<li><a href="type_defs/#regexmatchsetupdatetypedef">RegexMatchSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#regexmatchtupletypedef">RegexMatchTupleTypeDef</a></li>
-<li><a href="type_defs/#regexpatternsetsummarytypedef">RegexPatternSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#regexpatternsettypedef">RegexPatternSetTypeDef</a></li>
-<li><a href="type_defs/#regexpatternsetupdatetypedef">RegexPatternSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#rulegroupsummarytypedef">RuleGroupSummaryTypeDef</a></li>
-<li><a href="type_defs/#rulegrouptypedef">RuleGroupTypeDef</a></li>
-<li><a href="type_defs/#rulegroupupdatetypedef">RuleGroupUpdateTypeDef</a></li>
 <li><a href="type_defs/#rulesummarytypedef">RuleSummaryTypeDef</a></li>
-<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
-<li><a href="type_defs/#ruleupdatetypedef">RuleUpdateTypeDef</a></li>
-<li><a href="type_defs/#sampledhttprequesttypedef">SampledHTTPRequestTypeDef</a></li>
+<li><a href="type_defs/#listregexmatchsetsrequestrequesttypedef">ListRegexMatchSetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#regexmatchsetsummarytypedef">RegexMatchSetSummaryTypeDef</a></li>
+<li><a href="type_defs/#listregexpatternsetsrequestrequesttypedef">ListRegexPatternSetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#regexpatternsetsummarytypedef">RegexPatternSetSummaryTypeDef</a></li>
+<li><a href="type_defs/#listresourcesforwebaclrequestrequesttypedef">ListResourcesForWebACLRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrulegroupsrequestrequesttypedef">ListRuleGroupsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#rulegroupsummarytypedef">RuleGroupSummaryTypeDef</a></li>
+<li><a href="type_defs/#listrulesrequestrequesttypedef">ListRulesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listsizeconstraintsetsrequestrequesttypedef">ListSizeConstraintSetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sizeconstraintsetsummarytypedef">SizeConstraintSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#sizeconstraintsettypedef">SizeConstraintSetTypeDef</a></li>
-<li><a href="type_defs/#sizeconstraintsetupdatetypedef">SizeConstraintSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#sizeconstrainttypedef">SizeConstraintTypeDef</a></li>
+<li><a href="type_defs/#listsqlinjectionmatchsetsrequestrequesttypedef">ListSqlInjectionMatchSetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sqlinjectionmatchsetsummarytypedef">SqlInjectionMatchSetSummaryTypeDef</a></li>
-<li><a href="type_defs/#sqlinjectionmatchsettypedef">SqlInjectionMatchSetTypeDef</a></li>
-<li><a href="type_defs/#sqlinjectionmatchsetupdatetypedef">SqlInjectionMatchSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#sqlinjectionmatchtupletypedef">SqlInjectionMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#listsubscribedrulegroupsrequestrequesttypedef">ListSubscribedRuleGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#subscribedrulegroupsummarytypedef">SubscribedRuleGroupSummaryTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listwebaclsrequestrequesttypedef">ListWebACLsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listxssmatchsetsrequestrequesttypedef">ListXssMatchSetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#xssmatchsetsummarytypedef">XssMatchSetSummaryTypeDef</a></li>
+<li><a href="type_defs/#predicatetypedef">PredicateTypeDef</a></li>
+<li><a href="type_defs/#putpermissionpolicyrequestrequesttypedef">PutPermissionPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#regexpatternsetupdatetypedef">RegexPatternSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#activatedruletypedef">ActivatedRuleTypeDef</a></li>
+<li><a href="type_defs/#bytematchtupletypedef">ByteMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#loggingconfigurationtypedef">LoggingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#regexmatchtupletypedef">RegexMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#sizeconstrainttypedef">SizeConstraintTypeDef</a></li>
+<li><a href="type_defs/#sqlinjectionmatchtupletypedef">SqlInjectionMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#xssmatchtupletypedef">XssMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#createwebaclmigrationstackresponsetypedef">CreateWebACLMigrationStackResponseTypeDef</a></li>
+<li><a href="type_defs/#deletebytematchsetresponsetypedef">DeleteByteMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deletegeomatchsetresponsetypedef">DeleteGeoMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteipsetresponsetypedef">DeleteIPSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteratebasedruleresponsetypedef">DeleteRateBasedRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteregexmatchsetresponsetypedef">DeleteRegexMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteregexpatternsetresponsetypedef">DeleteRegexPatternSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deleterulegroupresponsetypedef">DeleteRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteruleresponsetypedef">DeleteRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#deletesizeconstraintsetresponsetypedef">DeleteSizeConstraintSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deletesqlinjectionmatchsetresponsetypedef">DeleteSqlInjectionMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#deletewebaclresponsetypedef">DeleteWebACLResponseTypeDef</a></li>
+<li><a href="type_defs/#deletexssmatchsetresponsetypedef">DeleteXssMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getchangetokenresponsetypedef">GetChangeTokenResponseTypeDef</a></li>
+<li><a href="type_defs/#getchangetokenstatusresponsetypedef">GetChangeTokenStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#getpermissionpolicyresponsetypedef">GetPermissionPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getratebasedrulemanagedkeysresponsetypedef">GetRateBasedRuleManagedKeysResponseTypeDef</a></li>
+<li><a href="type_defs/#listbytematchsetsresponsetypedef">ListByteMatchSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listresourcesforwebaclresponsetypedef">ListResourcesForWebACLResponseTypeDef</a></li>
+<li><a href="type_defs/#updatebytematchsetresponsetypedef">UpdateByteMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updategeomatchsetresponsetypedef">UpdateGeoMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateipsetresponsetypedef">UpdateIPSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateratebasedruleresponsetypedef">UpdateRateBasedRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#updateregexmatchsetresponsetypedef">UpdateRegexMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateregexpatternsetresponsetypedef">UpdateRegexPatternSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updaterulegroupresponsetypedef">UpdateRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#updateruleresponsetypedef">UpdateRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#updatesizeconstraintsetresponsetypedef">UpdateSizeConstraintSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatesqlinjectionmatchsetresponsetypedef">UpdateSqlInjectionMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatewebaclresponsetypedef">UpdateWebACLResponseTypeDef</a></li>
+<li><a href="type_defs/#updatexssmatchsetresponsetypedef">UpdateXssMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#createratebasedrulerequestrequesttypedef">CreateRateBasedRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createrulegrouprequestrequesttypedef">CreateRuleGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createrulerequestrequesttypedef">CreateRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createwebaclrequestrequesttypedef">CreateWebACLRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#taginfoforresourcetypedef">TagInfoForResourceTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#timewindowtypedef">TimeWindowTypeDef</a></li>
-<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatebytematchsetrequestrequesttypedef">UpdateByteMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatebytematchsetresponsetypedef">UpdateByteMatchSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updategeomatchsetrequestrequesttypedef">UpdateGeoMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updategeomatchsetresponsetypedef">UpdateGeoMatchSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updateipsetrequestrequesttypedef">UpdateIPSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateipsetresponsetypedef">UpdateIPSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updateratebasedrulerequestrequesttypedef">UpdateRateBasedRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateratebasedruleresponsetypedef">UpdateRateBasedRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#updateregexmatchsetrequestrequesttypedef">UpdateRegexMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateregexmatchsetresponsetypedef">UpdateRegexMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#createregexpatternsetresponsetypedef">CreateRegexPatternSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getregexpatternsetresponsetypedef">GetRegexPatternSetResponseTypeDef</a></li>
+<li><a href="type_defs/#createrulegroupresponsetypedef">CreateRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#getrulegroupresponsetypedef">GetRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#geomatchsettypedef">GeoMatchSetTypeDef</a></li>
+<li><a href="type_defs/#geomatchsetupdatetypedef">GeoMatchSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#listgeomatchsetsresponsetypedef">ListGeoMatchSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#getsampledrequestsrequestrequesttypedef">GetSampledRequestsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getwebaclforresourceresponsetypedef">GetWebACLForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#listwebaclsresponsetypedef">ListWebACLsResponseTypeDef</a></li>
+<li><a href="type_defs/#httprequesttypedef">HTTPRequestTypeDef</a></li>
+<li><a href="type_defs/#ipsettypedef">IPSetTypeDef</a></li>
+<li><a href="type_defs/#ipsetupdatetypedef">IPSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#listipsetsresponsetypedef">ListIPSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listratebasedrulesresponsetypedef">ListRateBasedRulesResponseTypeDef</a></li>
+<li><a href="type_defs/#listrulesresponsetypedef">ListRulesResponseTypeDef</a></li>
+<li><a href="type_defs/#listregexmatchsetsresponsetypedef">ListRegexMatchSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listregexpatternsetsresponsetypedef">ListRegexPatternSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listrulegroupsresponsetypedef">ListRuleGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsizeconstraintsetsresponsetypedef">ListSizeConstraintSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsqlinjectionmatchsetsresponsetypedef">ListSqlInjectionMatchSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsubscribedrulegroupsresponsetypedef">ListSubscribedRuleGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listxssmatchsetsresponsetypedef">ListXssMatchSetsResponseTypeDef</a></li>
+<li><a href="type_defs/#ratebasedruletypedef">RateBasedRuleTypeDef</a></li>
+<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
+<li><a href="type_defs/#ruleupdatetypedef">RuleUpdateTypeDef</a></li>
 <li><a href="type_defs/#updateregexpatternsetrequestrequesttypedef">UpdateRegexPatternSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateregexpatternsetresponsetypedef">UpdateRegexPatternSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updaterulegrouprequestrequesttypedef">UpdateRuleGroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updaterulegroupresponsetypedef">UpdateRuleGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#updaterulerequestrequesttypedef">UpdateRuleRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateruleresponsetypedef">UpdateRuleResponseTypeDef</a></li>
-<li><a href="type_defs/#updatesizeconstraintsetrequestrequesttypedef">UpdateSizeConstraintSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatesizeconstraintsetresponsetypedef">UpdateSizeConstraintSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updatesqlinjectionmatchsetrequestrequesttypedef">UpdateSqlInjectionMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatesqlinjectionmatchsetresponsetypedef">UpdateSqlInjectionMatchSetResponseTypeDef</a></li>
-<li><a href="type_defs/#updatewebaclrequestrequesttypedef">UpdateWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatewebaclresponsetypedef">UpdateWebACLResponseTypeDef</a></li>
-<li><a href="type_defs/#updatexssmatchsetrequestrequesttypedef">UpdateXssMatchSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatexssmatchsetresponsetypedef">UpdateXssMatchSetResponseTypeDef</a></li>
-<li><a href="type_defs/#wafactiontypedef">WafActionTypeDef</a></li>
-<li><a href="type_defs/#wafoverrideactiontypedef">WafOverrideActionTypeDef</a></li>
-<li><a href="type_defs/#webaclsummarytypedef">WebACLSummaryTypeDef</a></li>
+<li><a href="type_defs/#listactivatedrulesinrulegroupresponsetypedef">ListActivatedRulesInRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#rulegroupupdatetypedef">RuleGroupUpdateTypeDef</a></li>
 <li><a href="type_defs/#webacltypedef">WebACLTypeDef</a></li>
 <li><a href="type_defs/#webaclupdatetypedef">WebACLUpdateTypeDef</a></li>
-<li><a href="type_defs/#xssmatchsetsummarytypedef">XssMatchSetSummaryTypeDef</a></li>
+<li><a href="type_defs/#bytematchsettypedef">ByteMatchSetTypeDef</a></li>
+<li><a href="type_defs/#bytematchsetupdatetypedef">ByteMatchSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#getloggingconfigurationresponsetypedef">GetLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#listloggingconfigurationsresponsetypedef">ListLoggingConfigurationsResponseTypeDef</a></li>
+<li><a href="type_defs/#putloggingconfigurationrequestrequesttypedef">PutLoggingConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putloggingconfigurationresponsetypedef">PutLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#regexmatchsettypedef">RegexMatchSetTypeDef</a></li>
+<li><a href="type_defs/#regexmatchsetupdatetypedef">RegexMatchSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#sizeconstraintsettypedef">SizeConstraintSetTypeDef</a></li>
+<li><a href="type_defs/#sizeconstraintsetupdatetypedef">SizeConstraintSetUpdateTypeDef</a></li>
+<li><a href="type_defs/#sqlinjectionmatchsettypedef">SqlInjectionMatchSetTypeDef</a></li>
+<li><a href="type_defs/#sqlinjectionmatchsetupdatetypedef">SqlInjectionMatchSetUpdateTypeDef</a></li>
 <li><a href="type_defs/#xssmatchsettypedef">XssMatchSetTypeDef</a></li>
 <li><a href="type_defs/#xssmatchsetupdatetypedef">XssMatchSetUpdateTypeDef</a></li>
-<li><a href="type_defs/#xssmatchtupletypedef">XssMatchTupleTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#creategeomatchsetresponsetypedef">CreateGeoMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getgeomatchsetresponsetypedef">GetGeoMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updategeomatchsetrequestrequesttypedef">UpdateGeoMatchSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#sampledhttprequesttypedef">SampledHTTPRequestTypeDef</a></li>
+<li><a href="type_defs/#createipsetresponsetypedef">CreateIPSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getipsetresponsetypedef">GetIPSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateipsetrequestrequesttypedef">UpdateIPSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createratebasedruleresponsetypedef">CreateRateBasedRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#getratebasedruleresponsetypedef">GetRateBasedRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#createruleresponsetypedef">CreateRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#getruleresponsetypedef">GetRuleResponseTypeDef</a></li>
+<li><a href="type_defs/#updateratebasedrulerequestrequesttypedef">UpdateRateBasedRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updaterulerequestrequesttypedef">UpdateRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updaterulegrouprequestrequesttypedef">UpdateRuleGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createwebaclresponsetypedef">CreateWebACLResponseTypeDef</a></li>
+<li><a href="type_defs/#getwebaclresponsetypedef">GetWebACLResponseTypeDef</a></li>
+<li><a href="type_defs/#updatewebaclrequestrequesttypedef">UpdateWebACLRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createbytematchsetresponsetypedef">CreateByteMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getbytematchsetresponsetypedef">GetByteMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatebytematchsetrequestrequesttypedef">UpdateByteMatchSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createregexmatchsetresponsetypedef">CreateRegexMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getregexmatchsetresponsetypedef">GetRegexMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updateregexmatchsetrequestrequesttypedef">UpdateRegexMatchSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createsizeconstraintsetresponsetypedef">CreateSizeConstraintSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getsizeconstraintsetresponsetypedef">GetSizeConstraintSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatesizeconstraintsetrequestrequesttypedef">UpdateSizeConstraintSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createsqlinjectionmatchsetresponsetypedef">CreateSqlInjectionMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getsqlinjectionmatchsetresponsetypedef">GetSqlInjectionMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatesqlinjectionmatchsetrequestrequesttypedef">UpdateSqlInjectionMatchSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createxssmatchsetresponsetypedef">CreateXssMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getxssmatchsetresponsetypedef">GetXssMatchSetResponseTypeDef</a></li>
+<li><a href="type_defs/#updatexssmatchsetrequestrequesttypedef">UpdateXssMatchSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getsampledrequestsresponsetypedef">GetSampledRequestsResponseTypeDef</a></li>
 </ul>
 
               
@@ -36351,7 +36350,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

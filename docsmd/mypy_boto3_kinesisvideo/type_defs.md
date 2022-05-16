@@ -7,31 +7,22 @@
     Auto-generated documentation for [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
     type annotations stubs module [mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
-## ChannelInfoTypeDef
+## SingleMasterConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ChannelInfoTypeDef
+from mypy_boto3_kinesisvideo.type_defs import SingleMasterConfigurationTypeDef
 
-def get_value() -> ChannelInfoTypeDef:
+def get_value() -> SingleMasterConfigurationTypeDef:
     return {
-        "ChannelName": ...,
+        "MessageTtlSeconds": ...,
     }
 ```
 
 ```python title="Definition"
-class ChannelInfoTypeDef(TypedDict):
-    ChannelName: NotRequired[str],
-    ChannelARN: NotRequired[str],
-    ChannelType: NotRequired[ChannelTypeType],  # (1)
-    ChannelStatus: NotRequired[StatusType],  # (2)
-    CreationTime: NotRequired[datetime],
-    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (3)
-    Version: NotRequired[str],
+class SingleMasterConfigurationTypeDef(TypedDict):
+    MessageTtlSeconds: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
 ## ChannelNameConditionTypeDef
 
 ```python title="Usage Example"
@@ -50,47 +41,48 @@ class ChannelNameConditionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
-## CreateSignalingChannelInputRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelInputRequestTypeDef
+from mypy_boto3_kinesisvideo.type_defs import TagTypeDef
 
-def get_value() -> CreateSignalingChannelInputRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ChannelName": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateSignalingChannelInputRequestTypeDef(TypedDict):
-    ChannelName: str,
-    ChannelType: NotRequired[ChannelTypeType],  # (1)
-    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
-2. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateSignalingChannelOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelOutputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateSignalingChannelOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ChannelARN": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateSignalingChannelOutputTypeDef(TypedDict):
-    ChannelARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStreamInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -112,25 +104,6 @@ class CreateStreamInputRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateStreamOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import CreateStreamOutputTypeDef
-
-def get_value() -> CreateStreamOutputTypeDef:
-    return {
-        "StreamARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamOutputTypeDef(TypedDict):
-    StreamARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSignalingChannelInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -182,26 +155,6 @@ class DescribeImageGenerationConfigurationInputRequestTypeDef(TypedDict):
     StreamARN: NotRequired[str],
 ```
 
-## DescribeImageGenerationConfigurationOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import DescribeImageGenerationConfigurationOutputTypeDef
-
-def get_value() -> DescribeImageGenerationConfigurationOutputTypeDef:
-    return {
-        "ImageGenerationConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeImageGenerationConfigurationOutputTypeDef(TypedDict):
-    ImageGenerationConfiguration: ImageGenerationConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImageGenerationConfigurationTypeDef](./type_defs.md#imagegenerationconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeNotificationConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -219,26 +172,6 @@ class DescribeNotificationConfigurationInputRequestTypeDef(TypedDict):
     StreamARN: NotRequired[str],
 ```
 
-## DescribeNotificationConfigurationOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import DescribeNotificationConfigurationOutputTypeDef
-
-def get_value() -> DescribeNotificationConfigurationOutputTypeDef:
-    return {
-        "NotificationConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNotificationConfigurationOutputTypeDef(TypedDict):
-    NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSignalingChannelInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -256,26 +189,6 @@ class DescribeSignalingChannelInputRequestTypeDef(TypedDict):
     ChannelARN: NotRequired[str],
 ```
 
-## DescribeSignalingChannelOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputTypeDef
-
-def get_value() -> DescribeSignalingChannelOutputTypeDef:
-    return {
-        "ChannelInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSignalingChannelOutputTypeDef(TypedDict):
-    ChannelInfo: ChannelInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelInfoTypeDef](./type_defs.md#channelinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStreamInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -293,6 +206,493 @@ class DescribeStreamInputRequestTypeDef(TypedDict):
     StreamARN: NotRequired[str],
 ```
 
+## StreamInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import StreamInfoTypeDef
+
+def get_value() -> StreamInfoTypeDef:
+    return {
+        "DeviceName": ...,
+    }
+```
+
+```python title="Definition"
+class StreamInfoTypeDef(TypedDict):
+    DeviceName: NotRequired[str],
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    MediaType: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Version: NotRequired[str],
+    Status: NotRequired[StatusType],  # (1)
+    CreationTime: NotRequired[datetime],
+    DataRetentionInHours: NotRequired[int],
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## GetDataEndpointInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointInputRequestTypeDef
+
+def get_value() -> GetDataEndpointInputRequestTypeDef:
+    return {
+        "APIName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataEndpointInputRequestTypeDef(TypedDict):
+    APIName: APINameType,  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
+
+1. See [:material-code-brackets: APINameType](./literals.md#apinametype) 
+## SingleMasterChannelEndpointConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import SingleMasterChannelEndpointConfigurationTypeDef
+
+def get_value() -> SingleMasterChannelEndpointConfigurationTypeDef:
+    return {
+        "Protocols": ...,
+    }
+```
+
+```python title="Definition"
+class SingleMasterChannelEndpointConfigurationTypeDef(TypedDict):
+    Protocols: NotRequired[Sequence[ChannelProtocolType]],  # (1)
+    Role: NotRequired[ChannelRoleType],  # (2)
+```
+
+1. See [:material-code-brackets: ChannelProtocolType](./literals.md#channelprotocoltype) 
+2. See [:material-code-brackets: ChannelRoleType](./literals.md#channelroletype) 
+## ResourceEndpointListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ResourceEndpointListItemTypeDef
+
+def get_value() -> ResourceEndpointListItemTypeDef:
+    return {
+        "Protocol": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceEndpointListItemTypeDef(TypedDict):
+    Protocol: NotRequired[ChannelProtocolType],  # (1)
+    ResourceEndpoint: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ChannelProtocolType](./literals.md#channelprotocoltype) 
+## ImageGenerationDestinationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ImageGenerationDestinationConfigTypeDef
+
+def get_value() -> ImageGenerationDestinationConfigTypeDef:
+    return {
+        "Uri": ...,
+        "DestinationRegion": ...,
+    }
+```
+
+```python title="Definition"
+class ImageGenerationDestinationConfigTypeDef(TypedDict):
+    Uri: str,
+    DestinationRegion: str,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## StreamNameConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import StreamNameConditionTypeDef
+
+def get_value() -> StreamNameConditionTypeDef:
+    return {
+        "ComparisonOperator": ...,
+    }
+```
+
+```python title="Definition"
+class StreamNameConditionTypeDef(TypedDict):
+    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
+    ComparisonValue: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+## ListTagsForResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    NextToken: NotRequired[str],
+```
+
+## ListTagsForStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamInputRequestTypeDef
+
+def get_value() -> ListTagsForStreamInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForStreamInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    StreamARN: NotRequired[str],
+    StreamName: NotRequired[str],
+```
+
+## NotificationDestinationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import NotificationDestinationConfigTypeDef
+
+def get_value() -> NotificationDestinationConfigTypeDef:
+    return {
+        "Uri": ...,
+    }
+```
+
+```python title="Definition"
+class NotificationDestinationConfigTypeDef(TypedDict):
+    Uri: str,
+```
+
+## TagStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import TagStreamInputRequestTypeDef
+
+def get_value() -> TagStreamInputRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagStreamInputRequestTypeDef(TypedDict):
+    Tags: Mapping[str, str],
+    StreamARN: NotRequired[str],
+    StreamName: NotRequired[str],
+```
+
+## UntagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeyList": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeyList: Sequence[str],
+```
+
+## UntagStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UntagStreamInputRequestTypeDef
+
+def get_value() -> UntagStreamInputRequestTypeDef:
+    return {
+        "TagKeyList": ...,
+    }
+```
+
+```python title="Definition"
+class UntagStreamInputRequestTypeDef(TypedDict):
+    TagKeyList: Sequence[str],
+    StreamARN: NotRequired[str],
+    StreamName: NotRequired[str],
+```
+
+## UpdateDataRetentionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UpdateDataRetentionInputRequestTypeDef
+
+def get_value() -> UpdateDataRetentionInputRequestTypeDef:
+    return {
+        "CurrentVersion": ...,
+        "Operation": ...,
+        "DataRetentionChangeInHours": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataRetentionInputRequestTypeDef(TypedDict):
+    CurrentVersion: str,
+    Operation: UpdateDataRetentionOperationType,  # (1)
+    DataRetentionChangeInHours: int,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype) 
+## UpdateStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UpdateStreamInputRequestTypeDef
+
+def get_value() -> UpdateStreamInputRequestTypeDef:
+    return {
+        "CurrentVersion": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStreamInputRequestTypeDef(TypedDict):
+    CurrentVersion: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    DeviceName: NotRequired[str],
+    MediaType: NotRequired[str],
+```
+
+## ChannelInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ChannelInfoTypeDef
+
+def get_value() -> ChannelInfoTypeDef:
+    return {
+        "ChannelName": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelInfoTypeDef(TypedDict):
+    ChannelName: NotRequired[str],
+    ChannelARN: NotRequired[str],
+    ChannelType: NotRequired[ChannelTypeType],  # (1)
+    ChannelStatus: NotRequired[StatusType],  # (2)
+    CreationTime: NotRequired[datetime],
+    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (3)
+    Version: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
+## UpdateSignalingChannelInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UpdateSignalingChannelInputRequestTypeDef
+
+def get_value() -> UpdateSignalingChannelInputRequestTypeDef:
+    return {
+        "ChannelARN": ...,
+        "CurrentVersion": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSignalingChannelInputRequestTypeDef(TypedDict):
+    ChannelARN: str,
+    CurrentVersion: str,
+    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
+## ListSignalingChannelsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputRequestTypeDef
+
+def get_value() -> ListSignalingChannelsInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListSignalingChannelsInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ChannelNameCondition: NotRequired[ChannelNameConditionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
+## CreateSignalingChannelInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelInputRequestTypeDef
+
+def get_value() -> CreateSignalingChannelInputRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSignalingChannelInputRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ChannelType: NotRequired[ChannelTypeType],  # (1)
+    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateSignalingChannelOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelOutputTypeDef
+
+def get_value() -> CreateSignalingChannelOutputTypeDef:
+    return {
+        "ChannelARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSignalingChannelOutputTypeDef(TypedDict):
+    ChannelARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStreamOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import CreateStreamOutputTypeDef
+
+def get_value() -> CreateStreamOutputTypeDef:
+    return {
+        "StreamARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStreamOutputTypeDef(TypedDict):
+    StreamARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDataEndpointOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointOutputTypeDef
+
+def get_value() -> GetDataEndpointOutputTypeDef:
+    return {
+        "DataEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataEndpointOutputTypeDef(TypedDict):
+    DataEndpoint: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    NextToken: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForStreamOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamOutputTypeDef
+
+def get_value() -> ListTagsForStreamOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForStreamOutputTypeDef(TypedDict):
+    NextToken: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStreamOutputTypeDef
 
 ```python title="Usage Example"
@@ -313,44 +713,28 @@ class DescribeStreamOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: StreamInfoTypeDef](./type_defs.md#streaminfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDataEndpointInputRequestTypeDef
+## ListStreamsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointInputRequestTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputTypeDef
 
-def get_value() -> GetDataEndpointInputRequestTypeDef:
+def get_value() -> ListStreamsOutputTypeDef:
     return {
-        "APIName": ...,
-    }
-```
-
-```python title="Definition"
-class GetDataEndpointInputRequestTypeDef(TypedDict):
-    APIName: APINameType,  # (1)
-    StreamName: NotRequired[str],
-    StreamARN: NotRequired[str],
-```
-
-1. See [:material-code-brackets: APINameType](./literals.md#apinametype) 
-## GetDataEndpointOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointOutputTypeDef
-
-def get_value() -> GetDataEndpointOutputTypeDef:
-    return {
-        "DataEndpoint": ...,
+        "StreamInfoList": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetDataEndpointOutputTypeDef(TypedDict):
-    DataEndpoint: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ListStreamsOutputTypeDef(TypedDict):
+    StreamInfoList: List[StreamInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: StreamInfoTypeDef](./type_defs.md#streaminfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSignalingChannelEndpointInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -421,24 +805,6 @@ class ImageGenerationConfigurationTypeDef(TypedDict):
 3. See [:material-code-braces: ImageGenerationDestinationConfigTypeDef](./type_defs.md#imagegenerationdestinationconfigtypedef) 
 4. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 5. See [:material-code-brackets: FormatConfigKeyType](./literals.md#formatconfigkeytype) 
-## ImageGenerationDestinationConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ImageGenerationDestinationConfigTypeDef
-
-def get_value() -> ImageGenerationDestinationConfigTypeDef:
-    return {
-        "Uri": ...,
-        "DestinationRegion": ...,
-    }
-```
-
-```python title="Definition"
-class ImageGenerationDestinationConfigTypeDef(TypedDict):
-    Uri: str,
-    DestinationRegion: str,
-```
-
 ## ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -458,47 +824,6 @@ class ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListSignalingChannelsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputRequestTypeDef
-
-def get_value() -> ListSignalingChannelsInputRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListSignalingChannelsInputRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    ChannelNameCondition: NotRequired[ChannelNameConditionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
-## ListSignalingChannelsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
-
-def get_value() -> ListSignalingChannelsOutputTypeDef:
-    return {
-        "ChannelInfoList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSignalingChannelsOutputTypeDef(TypedDict):
-    ChannelInfoList: List[ChannelInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelInfoTypeDef](./type_defs.md#channelinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStreamsInputListStreamsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -537,105 +862,6 @@ class ListStreamsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef) 
-## ListStreamsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputTypeDef
-
-def get_value() -> ListStreamsOutputTypeDef:
-    return {
-        "StreamInfoList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamsOutputTypeDef(TypedDict):
-    StreamInfoList: List[StreamInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamInfoTypeDef](./type_defs.md#streaminfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceInputRequestTypeDef
-
-def get_value() -> ListTagsForResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    NextToken: NotRequired[str],
-```
-
-## ListTagsForResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceOutputTypeDef
-
-def get_value() -> ListTagsForResourceOutputTypeDef:
-    return {
-        "NextToken": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceOutputTypeDef(TypedDict):
-    NextToken: str,
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamInputRequestTypeDef
-
-def get_value() -> ListTagsForStreamInputRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForStreamInputRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    StreamARN: NotRequired[str],
-    StreamName: NotRequired[str],
-```
-
-## ListTagsForStreamOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamOutputTypeDef
-
-def get_value() -> ListTagsForStreamOutputTypeDef:
-    return {
-        "NextToken": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForStreamOutputTypeDef(TypedDict):
-    NextToken: str,
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -656,274 +882,68 @@ class NotificationConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConfigurationStatusType](./literals.md#configurationstatustype) 
 2. See [:material-code-braces: NotificationDestinationConfigTypeDef](./type_defs.md#notificationdestinationconfigtypedef) 
-## NotificationDestinationConfigTypeDef
+## DescribeSignalingChannelOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import NotificationDestinationConfigTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputTypeDef
 
-def get_value() -> NotificationDestinationConfigTypeDef:
+def get_value() -> DescribeSignalingChannelOutputTypeDef:
     return {
-        "Uri": ...,
+        "ChannelInfo": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class NotificationDestinationConfigTypeDef(TypedDict):
-    Uri: str,
+class DescribeSignalingChannelOutputTypeDef(TypedDict):
+    ChannelInfo: ChannelInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## PaginatorConfigTypeDef
+1. See [:material-code-braces: ChannelInfoTypeDef](./type_defs.md#channelinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSignalingChannelsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> ListSignalingChannelsOutputTypeDef:
     return {
-        "MaxItems": ...,
+        "ChannelInfoList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class ListSignalingChannelsOutputTypeDef(TypedDict):
+    ChannelInfoList: List[ChannelInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## ResourceEndpointListItemTypeDef
+1. See [:material-code-braces: ChannelInfoTypeDef](./type_defs.md#channelinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImageGenerationConfigurationOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ResourceEndpointListItemTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeImageGenerationConfigurationOutputTypeDef
 
-def get_value() -> ResourceEndpointListItemTypeDef:
+def get_value() -> DescribeImageGenerationConfigurationOutputTypeDef:
     return {
-        "Protocol": ...,
+        "ImageGenerationConfiguration": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResourceEndpointListItemTypeDef(TypedDict):
-    Protocol: NotRequired[ChannelProtocolType],  # (1)
-    ResourceEndpoint: NotRequired[str],
+class DescribeImageGenerationConfigurationOutputTypeDef(TypedDict):
+    ImageGenerationConfiguration: ImageGenerationConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: ChannelProtocolType](./literals.md#channelprotocoltype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SingleMasterChannelEndpointConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import SingleMasterChannelEndpointConfigurationTypeDef
-
-def get_value() -> SingleMasterChannelEndpointConfigurationTypeDef:
-    return {
-        "Protocols": ...,
-    }
-```
-
-```python title="Definition"
-class SingleMasterChannelEndpointConfigurationTypeDef(TypedDict):
-    Protocols: NotRequired[Sequence[ChannelProtocolType]],  # (1)
-    Role: NotRequired[ChannelRoleType],  # (2)
-```
-
-1. See [:material-code-brackets: ChannelProtocolType](./literals.md#channelprotocoltype) 
-2. See [:material-code-brackets: ChannelRoleType](./literals.md#channelroletype) 
-## SingleMasterConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import SingleMasterConfigurationTypeDef
-
-def get_value() -> SingleMasterConfigurationTypeDef:
-    return {
-        "MessageTtlSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class SingleMasterConfigurationTypeDef(TypedDict):
-    MessageTtlSeconds: NotRequired[int],
-```
-
-## StreamInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import StreamInfoTypeDef
-
-def get_value() -> StreamInfoTypeDef:
-    return {
-        "DeviceName": ...,
-    }
-```
-
-```python title="Definition"
-class StreamInfoTypeDef(TypedDict):
-    DeviceName: NotRequired[str],
-    StreamName: NotRequired[str],
-    StreamARN: NotRequired[str],
-    MediaType: NotRequired[str],
-    KmsKeyId: NotRequired[str],
-    Version: NotRequired[str],
-    Status: NotRequired[StatusType],  # (1)
-    CreationTime: NotRequired[datetime],
-    DataRetentionInHours: NotRequired[int],
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## StreamNameConditionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import StreamNameConditionTypeDef
-
-def get_value() -> StreamNameConditionTypeDef:
-    return {
-        "ComparisonOperator": ...,
-    }
-```
-
-```python title="Definition"
-class StreamNameConditionTypeDef(TypedDict):
-    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
-    ComparisonValue: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
-## TagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import TagResourceInputRequestTypeDef
-
-def get_value() -> TagResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import TagStreamInputRequestTypeDef
-
-def get_value() -> TagStreamInputRequestTypeDef:
-    return {
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagStreamInputRequestTypeDef(TypedDict):
-    Tags: Mapping[str, str],
-    StreamARN: NotRequired[str],
-    StreamName: NotRequired[str],
-```
-
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## UntagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import UntagResourceInputRequestTypeDef
-
-def get_value() -> UntagResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "TagKeyList": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    TagKeyList: Sequence[str],
-```
-
-## UntagStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import UntagStreamInputRequestTypeDef
-
-def get_value() -> UntagStreamInputRequestTypeDef:
-    return {
-        "TagKeyList": ...,
-    }
-```
-
-```python title="Definition"
-class UntagStreamInputRequestTypeDef(TypedDict):
-    TagKeyList: Sequence[str],
-    StreamARN: NotRequired[str],
-    StreamName: NotRequired[str],
-```
-
-## UpdateDataRetentionInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import UpdateDataRetentionInputRequestTypeDef
-
-def get_value() -> UpdateDataRetentionInputRequestTypeDef:
-    return {
-        "CurrentVersion": ...,
-        "Operation": ...,
-        "DataRetentionChangeInHours": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDataRetentionInputRequestTypeDef(TypedDict):
-    CurrentVersion: str,
-    Operation: UpdateDataRetentionOperationType,  # (1)
-    DataRetentionChangeInHours: int,
-    StreamName: NotRequired[str],
-    StreamARN: NotRequired[str],
-```
-
-1. See [:material-code-brackets: UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype) 
+1. See [:material-code-braces: ImageGenerationConfigurationTypeDef](./type_defs.md#imagegenerationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateImageGenerationConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -943,6 +963,26 @@ class UpdateImageGenerationConfigurationInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ImageGenerationConfigurationTypeDef](./type_defs.md#imagegenerationconfigurationtypedef) 
+## DescribeNotificationConfigurationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeNotificationConfigurationOutputTypeDef
+
+def get_value() -> DescribeNotificationConfigurationOutputTypeDef:
+    return {
+        "NotificationConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNotificationConfigurationOutputTypeDef(TypedDict):
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNotificationConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -962,43 +1002,3 @@ class UpdateNotificationConfigurationInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
-## UpdateSignalingChannelInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import UpdateSignalingChannelInputRequestTypeDef
-
-def get_value() -> UpdateSignalingChannelInputRequestTypeDef:
-    return {
-        "ChannelARN": ...,
-        "CurrentVersion": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSignalingChannelInputRequestTypeDef(TypedDict):
-    ChannelARN: str,
-    CurrentVersion: str,
-    SingleMasterConfiguration: NotRequired[SingleMasterConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
-## UpdateStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import UpdateStreamInputRequestTypeDef
-
-def get_value() -> UpdateStreamInputRequestTypeDef:
-    return {
-        "CurrentVersion": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateStreamInputRequestTypeDef(TypedDict):
-    CurrentVersion: str,
-    StreamName: NotRequired[str],
-    StreamARN: NotRequired[str],
-    DeviceName: NotRequired[str],
-    MediaType: NotRequired[str],
-```
-

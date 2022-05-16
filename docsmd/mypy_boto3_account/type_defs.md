@@ -64,26 +64,30 @@ class GetAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
-## GetAlternateContactResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_account.type_defs import GetAlternateContactResponseTypeDef
+from mypy_boto3_account.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> GetAlternateContactResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "AlternateContact": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAlternateContactResponseTypeDef(TypedDict):
-    AlternateContact: AlternateContactTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutAlternateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -110,27 +114,23 @@ class PutAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
-## ResponseMetadataTypeDef
+## GetAlternateContactResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_account.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_account.type_defs import GetAlternateContactResponseTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> GetAlternateContactResponseTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "AlternateContact": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class GetAlternateContactResponseTypeDef(TypedDict):
+    AlternateContact: AlternateContactTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

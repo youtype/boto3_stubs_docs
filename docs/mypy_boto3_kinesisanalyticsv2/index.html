@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36092,193 +36092,192 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kinesisanalyticsv2.type_defs</span> <span class="kn">import</span> <span class="n">AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kinesisanalyticsv2.type_defs</span> <span class="kn">import</span> <span class="n">CloudWatchLoggingOptionTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CloudWatchLoggingOptionTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ApplicationName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;CloudWatchLoggingOption&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;LogStreamARN&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addapplicationcloudwatchloggingoptionrequestrequesttypedef">AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationcloudwatchloggingoptionresponsetypedef">AddApplicationCloudWatchLoggingOptionResponseTypeDef</a></li>
-<li><a href="type_defs/#addapplicationinputprocessingconfigurationrequestrequesttypedef">AddApplicationInputProcessingConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationinputprocessingconfigurationresponsetypedef">AddApplicationInputProcessingConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#addapplicationinputrequestrequesttypedef">AddApplicationInputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationinputresponsetypedef">AddApplicationInputResponseTypeDef</a></li>
-<li><a href="type_defs/#addapplicationoutputrequestrequesttypedef">AddApplicationOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationoutputresponsetypedef">AddApplicationOutputResponseTypeDef</a></li>
-<li><a href="type_defs/#addapplicationreferencedatasourcerequestrequesttypedef">AddApplicationReferenceDataSourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationreferencedatasourceresponsetypedef">AddApplicationReferenceDataSourceResponseTypeDef</a></li>
-<li><a href="type_defs/#addapplicationvpcconfigurationrequestrequesttypedef">AddApplicationVpcConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addapplicationvpcconfigurationresponsetypedef">AddApplicationVpcConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#applicationcodeconfigurationdescriptiontypedef">ApplicationCodeConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#applicationcodeconfigurationtypedef">ApplicationCodeConfigurationTypeDef</a></li>
-<li><a href="type_defs/#applicationcodeconfigurationupdatetypedef">ApplicationCodeConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#applicationconfigurationdescriptiontypedef">ApplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#applicationconfigurationtypedef">ApplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#applicationconfigurationupdatetypedef">ApplicationConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#applicationdetailtypedef">ApplicationDetailTypeDef</a></li>
-<li><a href="type_defs/#applicationmaintenanceconfigurationdescriptiontypedef">ApplicationMaintenanceConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#applicationmaintenanceconfigurationupdatetypedef">ApplicationMaintenanceConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#applicationrestoreconfigurationtypedef">ApplicationRestoreConfigurationTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchloggingoptiontypedef">CloudWatchLoggingOptionTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchloggingoptiondescriptiontypedef">CloudWatchLoggingOptionDescriptionTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#vpcconfigurationtypedef">VpcConfigurationTypeDef</a></li>
+<li><a href="type_defs/#vpcconfigurationdescriptiontypedef">VpcConfigurationDescriptionTypeDef</a></li>
 <li><a href="type_defs/#applicationsnapshotconfigurationdescriptiontypedef">ApplicationSnapshotConfigurationDescriptionTypeDef</a></li>
 <li><a href="type_defs/#applicationsnapshotconfigurationtypedef">ApplicationSnapshotConfigurationTypeDef</a></li>
 <li><a href="type_defs/#applicationsnapshotconfigurationupdatetypedef">ApplicationSnapshotConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#vpcconfigurationupdatetypedef">VpcConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#applicationmaintenanceconfigurationdescriptiontypedef">ApplicationMaintenanceConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#applicationmaintenanceconfigurationupdatetypedef">ApplicationMaintenanceConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#applicationrestoreconfigurationtypedef">ApplicationRestoreConfigurationTypeDef</a></li>
 <li><a href="type_defs/#applicationsummarytypedef">ApplicationSummaryTypeDef</a></li>
 <li><a href="type_defs/#applicationversionsummarytypedef">ApplicationVersionSummaryTypeDef</a></li>
 <li><a href="type_defs/#csvmappingparameterstypedef">CSVMappingParametersTypeDef</a></li>
-<li><a href="type_defs/#catalogconfigurationdescriptiontypedef">CatalogConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#catalogconfigurationtypedef">CatalogConfigurationTypeDef</a></li>
-<li><a href="type_defs/#catalogconfigurationupdatetypedef">CatalogConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#checkpointconfigurationdescriptiontypedef">CheckpointConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#checkpointconfigurationtypedef">CheckpointConfigurationTypeDef</a></li>
-<li><a href="type_defs/#checkpointconfigurationupdatetypedef">CheckpointConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchloggingoptiondescriptiontypedef">CloudWatchLoggingOptionDescriptionTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchloggingoptiontypedef">CloudWatchLoggingOptionTypeDef</a></li>
-<li><a href="type_defs/#cloudwatchloggingoptionupdatetypedef">CloudWatchLoggingOptionUpdateTypeDef</a></li>
-<li><a href="type_defs/#codecontentdescriptiontypedef">CodeContentDescriptionTypeDef</a></li>
-<li><a href="type_defs/#codecontenttypedef">CodeContentTypeDef</a></li>
-<li><a href="type_defs/#codecontentupdatetypedef">CodeContentUpdateTypeDef</a></li>
-<li><a href="type_defs/#createapplicationpresignedurlrequestrequesttypedef">CreateApplicationPresignedUrlRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createapplicationpresignedurlresponsetypedef">CreateApplicationPresignedUrlResponseTypeDef</a></li>
-<li><a href="type_defs/#createapplicationrequestrequesttypedef">CreateApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createapplicationresponsetypedef">CreateApplicationResponseTypeDef</a></li>
-<li><a href="type_defs/#createapplicationsnapshotrequestrequesttypedef">CreateApplicationSnapshotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#customartifactconfigurationdescriptiontypedef">CustomArtifactConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#customartifactconfigurationtypedef">CustomArtifactConfigurationTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef">DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationcloudwatchloggingoptionresponsetypedef">DeleteApplicationCloudWatchLoggingOptionResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationinputprocessingconfigurationrequestrequesttypedef">DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationinputprocessingconfigurationresponsetypedef">DeleteApplicationInputProcessingConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationoutputrequestrequesttypedef">DeleteApplicationOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationoutputresponsetypedef">DeleteApplicationOutputResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationreferencedatasourcerequestrequesttypedef">DeleteApplicationReferenceDataSourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationreferencedatasourceresponsetypedef">DeleteApplicationReferenceDataSourceResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationrequestrequesttypedef">DeleteApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationsnapshotrequestrequesttypedef">DeleteApplicationSnapshotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationvpcconfigurationrequestrequesttypedef">DeleteApplicationVpcConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteapplicationvpcconfigurationresponsetypedef">DeleteApplicationVpcConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#deployasapplicationconfigurationdescriptiontypedef">DeployAsApplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#deployasapplicationconfigurationtypedef">DeployAsApplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#deployasapplicationconfigurationupdatetypedef">DeployAsApplicationConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationrequestrequesttypedef">DescribeApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationresponsetypedef">DescribeApplicationResponseTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationsnapshotrequestrequesttypedef">DescribeApplicationSnapshotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationsnapshotresponsetypedef">DescribeApplicationSnapshotResponseTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationversionrequestrequesttypedef">DescribeApplicationVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeapplicationversionresponsetypedef">DescribeApplicationVersionResponseTypeDef</a></li>
-<li><a href="type_defs/#destinationschematypedef">DestinationSchemaTypeDef</a></li>
-<li><a href="type_defs/#discoverinputschemarequestrequesttypedef">DiscoverInputSchemaRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#discoverinputschemaresponsetypedef">DiscoverInputSchemaResponseTypeDef</a></li>
-<li><a href="type_defs/#environmentpropertiestypedef">EnvironmentPropertiesTypeDef</a></li>
-<li><a href="type_defs/#environmentpropertydescriptionstypedef">EnvironmentPropertyDescriptionsTypeDef</a></li>
-<li><a href="type_defs/#environmentpropertyupdatestypedef">EnvironmentPropertyUpdatesTypeDef</a></li>
-<li><a href="type_defs/#flinkapplicationconfigurationdescriptiontypedef">FlinkApplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#flinkapplicationconfigurationtypedef">FlinkApplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#flinkapplicationconfigurationupdatetypedef">FlinkApplicationConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#flinkrunconfigurationtypedef">FlinkRunConfigurationTypeDef</a></li>
 <li><a href="type_defs/#gluedatacatalogconfigurationdescriptiontypedef">GlueDataCatalogConfigurationDescriptionTypeDef</a></li>
 <li><a href="type_defs/#gluedatacatalogconfigurationtypedef">GlueDataCatalogConfigurationTypeDef</a></li>
 <li><a href="type_defs/#gluedatacatalogconfigurationupdatetypedef">GlueDataCatalogConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#inputdescriptiontypedef">InputDescriptionTypeDef</a></li>
+<li><a href="type_defs/#checkpointconfigurationdescriptiontypedef">CheckpointConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#checkpointconfigurationtypedef">CheckpointConfigurationTypeDef</a></li>
+<li><a href="type_defs/#checkpointconfigurationupdatetypedef">CheckpointConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchloggingoptionupdatetypedef">CloudWatchLoggingOptionUpdateTypeDef</a></li>
+<li><a href="type_defs/#s3applicationcodelocationdescriptiontypedef">S3ApplicationCodeLocationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#s3contentlocationtypedef">S3ContentLocationTypeDef</a></li>
+<li><a href="type_defs/#s3contentlocationupdatetypedef">S3ContentLocationUpdateTypeDef</a></li>
+<li><a href="type_defs/#createapplicationpresignedurlrequestrequesttypedef">CreateApplicationPresignedUrlRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#createapplicationsnapshotrequestrequesttypedef">CreateApplicationSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mavenreferencetypedef">MavenReferenceTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef">DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationinputprocessingconfigurationrequestrequesttypedef">DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationoutputrequestrequesttypedef">DeleteApplicationOutputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationreferencedatasourcerequestrequesttypedef">DeleteApplicationReferenceDataSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationrequestrequesttypedef">DeleteApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationsnapshotrequestrequesttypedef">DeleteApplicationSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationvpcconfigurationrequestrequesttypedef">DeleteApplicationVpcConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#s3contentbaselocationdescriptiontypedef">S3ContentBaseLocationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#s3contentbaselocationtypedef">S3ContentBaseLocationTypeDef</a></li>
+<li><a href="type_defs/#s3contentbaselocationupdatetypedef">S3ContentBaseLocationUpdateTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationrequestrequesttypedef">DescribeApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationsnapshotrequestrequesttypedef">DescribeApplicationSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#snapshotdetailstypedef">SnapshotDetailsTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationversionrequestrequesttypedef">DescribeApplicationVersionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#destinationschematypedef">DestinationSchemaTypeDef</a></li>
+<li><a href="type_defs/#inputstartingpositionconfigurationtypedef">InputStartingPositionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#s3configurationtypedef">S3ConfigurationTypeDef</a></li>
+<li><a href="type_defs/#propertygrouptypedef">PropertyGroupTypeDef</a></li>
+<li><a href="type_defs/#monitoringconfigurationdescriptiontypedef">MonitoringConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#parallelismconfigurationdescriptiontypedef">ParallelismConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#monitoringconfigurationtypedef">MonitoringConfigurationTypeDef</a></li>
+<li><a href="type_defs/#parallelismconfigurationtypedef">ParallelismConfigurationTypeDef</a></li>
+<li><a href="type_defs/#monitoringconfigurationupdatetypedef">MonitoringConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#parallelismconfigurationupdatetypedef">ParallelismConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#flinkrunconfigurationtypedef">FlinkRunConfigurationTypeDef</a></li>
+<li><a href="type_defs/#inputparallelismtypedef">InputParallelismTypeDef</a></li>
+<li><a href="type_defs/#kinesisfirehoseinputdescriptiontypedef">KinesisFirehoseInputDescriptionTypeDef</a></li>
+<li><a href="type_defs/#kinesisstreamsinputdescriptiontypedef">KinesisStreamsInputDescriptionTypeDef</a></li>
 <li><a href="type_defs/#inputlambdaprocessordescriptiontypedef">InputLambdaProcessorDescriptionTypeDef</a></li>
 <li><a href="type_defs/#inputlambdaprocessortypedef">InputLambdaProcessorTypeDef</a></li>
 <li><a href="type_defs/#inputlambdaprocessorupdatetypedef">InputLambdaProcessorUpdateTypeDef</a></li>
-<li><a href="type_defs/#inputparallelismtypedef">InputParallelismTypeDef</a></li>
 <li><a href="type_defs/#inputparallelismupdatetypedef">InputParallelismUpdateTypeDef</a></li>
-<li><a href="type_defs/#inputprocessingconfigurationdescriptiontypedef">InputProcessingConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#inputprocessingconfigurationtypedef">InputProcessingConfigurationTypeDef</a></li>
-<li><a href="type_defs/#inputprocessingconfigurationupdatetypedef">InputProcessingConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#inputschemaupdatetypedef">InputSchemaUpdateTypeDef</a></li>
-<li><a href="type_defs/#inputstartingpositionconfigurationtypedef">InputStartingPositionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#inputtypedef">InputTypeDef</a></li>
-<li><a href="type_defs/#inputupdatetypedef">InputUpdateTypeDef</a></li>
-<li><a href="type_defs/#jsonmappingparameterstypedef">JSONMappingParametersTypeDef</a></li>
-<li><a href="type_defs/#kinesisfirehoseinputdescriptiontypedef">KinesisFirehoseInputDescriptionTypeDef</a></li>
+<li><a href="type_defs/#recordcolumntypedef">RecordColumnTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehoseinputtypedef">KinesisFirehoseInputTypeDef</a></li>
+<li><a href="type_defs/#kinesisstreamsinputtypedef">KinesisStreamsInputTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehoseinputupdatetypedef">KinesisFirehoseInputUpdateTypeDef</a></li>
+<li><a href="type_defs/#kinesisstreamsinputupdatetypedef">KinesisStreamsInputUpdateTypeDef</a></li>
+<li><a href="type_defs/#jsonmappingparameterstypedef">JSONMappingParametersTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehoseoutputdescriptiontypedef">KinesisFirehoseOutputDescriptionTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehoseoutputtypedef">KinesisFirehoseOutputTypeDef</a></li>
 <li><a href="type_defs/#kinesisfirehoseoutputupdatetypedef">KinesisFirehoseOutputUpdateTypeDef</a></li>
-<li><a href="type_defs/#kinesisstreamsinputdescriptiontypedef">KinesisStreamsInputDescriptionTypeDef</a></li>
-<li><a href="type_defs/#kinesisstreamsinputtypedef">KinesisStreamsInputTypeDef</a></li>
-<li><a href="type_defs/#kinesisstreamsinputupdatetypedef">KinesisStreamsInputUpdateTypeDef</a></li>
 <li><a href="type_defs/#kinesisstreamsoutputdescriptiontypedef">KinesisStreamsOutputDescriptionTypeDef</a></li>
 <li><a href="type_defs/#kinesisstreamsoutputtypedef">KinesisStreamsOutputTypeDef</a></li>
 <li><a href="type_defs/#kinesisstreamsoutputupdatetypedef">KinesisStreamsOutputUpdateTypeDef</a></li>
 <li><a href="type_defs/#lambdaoutputdescriptiontypedef">LambdaOutputDescriptionTypeDef</a></li>
 <li><a href="type_defs/#lambdaoutputtypedef">LambdaOutputTypeDef</a></li>
 <li><a href="type_defs/#lambdaoutputupdatetypedef">LambdaOutputUpdateTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsnapshotsrequestlistapplicationsnapshotspaginatetypedef">ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsnapshotsrequestrequesttypedef">ListApplicationSnapshotsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsnapshotsresponsetypedef">ListApplicationSnapshotsResponseTypeDef</a></li>
-<li><a href="type_defs/#listapplicationversionsrequestrequesttypedef">ListApplicationVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listapplicationversionsresponsetypedef">ListApplicationVersionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsrequestlistapplicationspaginatetypedef">ListApplicationsRequestListApplicationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsrequestrequesttypedef">ListApplicationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsresponsetypedef">ListApplicationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#mappingparameterstypedef">MappingParametersTypeDef</a></li>
-<li><a href="type_defs/#mavenreferencetypedef">MavenReferenceTypeDef</a></li>
-<li><a href="type_defs/#monitoringconfigurationdescriptiontypedef">MonitoringConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#monitoringconfigurationtypedef">MonitoringConfigurationTypeDef</a></li>
-<li><a href="type_defs/#monitoringconfigurationupdatetypedef">MonitoringConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#outputdescriptiontypedef">OutputDescriptionTypeDef</a></li>
-<li><a href="type_defs/#outputtypedef">OutputTypeDef</a></li>
-<li><a href="type_defs/#outputupdatetypedef">OutputUpdateTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#parallelismconfigurationdescriptiontypedef">ParallelismConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#parallelismconfigurationtypedef">ParallelismConfigurationTypeDef</a></li>
-<li><a href="type_defs/#parallelismconfigurationupdatetypedef">ParallelismConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#propertygrouptypedef">PropertyGroupTypeDef</a></li>
-<li><a href="type_defs/#recordcolumntypedef">RecordColumnTypeDef</a></li>
-<li><a href="type_defs/#recordformattypedef">RecordFormatTypeDef</a></li>
-<li><a href="type_defs/#referencedatasourcedescriptiontypedef">ReferenceDataSourceDescriptionTypeDef</a></li>
-<li><a href="type_defs/#referencedatasourcetypedef">ReferenceDataSourceTypeDef</a></li>
-<li><a href="type_defs/#referencedatasourceupdatetypedef">ReferenceDataSourceUpdateTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#rollbackapplicationrequestrequesttypedef">RollbackApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#rollbackapplicationresponsetypedef">RollbackApplicationResponseTypeDef</a></li>
-<li><a href="type_defs/#runconfigurationdescriptiontypedef">RunConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#runconfigurationtypedef">RunConfigurationTypeDef</a></li>
-<li><a href="type_defs/#runconfigurationupdatetypedef">RunConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#s3applicationcodelocationdescriptiontypedef">S3ApplicationCodeLocationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#s3configurationtypedef">S3ConfigurationTypeDef</a></li>
-<li><a href="type_defs/#s3contentbaselocationdescriptiontypedef">S3ContentBaseLocationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#s3contentbaselocationtypedef">S3ContentBaseLocationTypeDef</a></li>
-<li><a href="type_defs/#s3contentbaselocationupdatetypedef">S3ContentBaseLocationUpdateTypeDef</a></li>
-<li><a href="type_defs/#s3contentlocationtypedef">S3ContentLocationTypeDef</a></li>
-<li><a href="type_defs/#s3contentlocationupdatetypedef">S3ContentLocationUpdateTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsnapshotsrequestrequesttypedef">ListApplicationSnapshotsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listapplicationversionsrequestrequesttypedef">ListApplicationVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsrequestrequesttypedef">ListApplicationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#s3referencedatasourcedescriptiontypedef">S3ReferenceDataSourceDescriptionTypeDef</a></li>
 <li><a href="type_defs/#s3referencedatasourcetypedef">S3ReferenceDataSourceTypeDef</a></li>
 <li><a href="type_defs/#s3referencedatasourceupdatetypedef">S3ReferenceDataSourceUpdateTypeDef</a></li>
-<li><a href="type_defs/#snapshotdetailstypedef">SnapshotDetailsTypeDef</a></li>
-<li><a href="type_defs/#sourceschematypedef">SourceSchemaTypeDef</a></li>
-<li><a href="type_defs/#sqlapplicationconfigurationdescriptiontypedef">SqlApplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#sqlapplicationconfigurationtypedef">SqlApplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#sqlapplicationconfigurationupdatetypedef">SqlApplicationConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#sqlrunconfigurationtypedef">SqlRunConfigurationTypeDef</a></li>
-<li><a href="type_defs/#startapplicationrequestrequesttypedef">StartApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#rollbackapplicationrequestrequesttypedef">RollbackApplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopapplicationrequestrequesttypedef">StopApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateapplicationmaintenanceconfigurationrequestrequesttypedef">UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateapplicationmaintenanceconfigurationresponsetypedef">UpdateApplicationMaintenanceConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#updateapplicationrequestrequesttypedef">UpdateApplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateapplicationresponsetypedef">UpdateApplicationResponseTypeDef</a></li>
-<li><a href="type_defs/#vpcconfigurationdescriptiontypedef">VpcConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#vpcconfigurationtypedef">VpcConfigurationTypeDef</a></li>
-<li><a href="type_defs/#vpcconfigurationupdatetypedef">VpcConfigurationUpdateTypeDef</a></li>
-<li><a href="type_defs/#zeppelinapplicationconfigurationdescriptiontypedef">ZeppelinApplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#zeppelinapplicationconfigurationtypedef">ZeppelinApplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#zeppelinapplicationconfigurationupdatetypedef">ZeppelinApplicationConfigurationUpdateTypeDef</a></li>
 <li><a href="type_defs/#zeppelinmonitoringconfigurationdescriptiontypedef">ZeppelinMonitoringConfigurationDescriptionTypeDef</a></li>
 <li><a href="type_defs/#zeppelinmonitoringconfigurationtypedef">ZeppelinMonitoringConfigurationTypeDef</a></li>
 <li><a href="type_defs/#zeppelinmonitoringconfigurationupdatetypedef">ZeppelinMonitoringConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#addapplicationcloudwatchloggingoptionrequestrequesttypedef">AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addapplicationcloudwatchloggingoptionresponsetypedef">AddApplicationCloudWatchLoggingOptionResponseTypeDef</a></li>
+<li><a href="type_defs/#createapplicationpresignedurlresponsetypedef">CreateApplicationPresignedUrlResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationcloudwatchloggingoptionresponsetypedef">DeleteApplicationCloudWatchLoggingOptionResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationinputprocessingconfigurationresponsetypedef">DeleteApplicationInputProcessingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationoutputresponsetypedef">DeleteApplicationOutputResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationreferencedatasourceresponsetypedef">DeleteApplicationReferenceDataSourceResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteapplicationvpcconfigurationresponsetypedef">DeleteApplicationVpcConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#addapplicationvpcconfigurationrequestrequesttypedef">AddApplicationVpcConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addapplicationvpcconfigurationresponsetypedef">AddApplicationVpcConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateapplicationmaintenanceconfigurationresponsetypedef">UpdateApplicationMaintenanceConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateapplicationmaintenanceconfigurationrequestrequesttypedef">UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsresponsetypedef">ListApplicationsResponseTypeDef</a></li>
+<li><a href="type_defs/#listapplicationversionsresponsetypedef">ListApplicationVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#catalogconfigurationdescriptiontypedef">CatalogConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#catalogconfigurationtypedef">CatalogConfigurationTypeDef</a></li>
+<li><a href="type_defs/#catalogconfigurationupdatetypedef">CatalogConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#codecontentdescriptiontypedef">CodeContentDescriptionTypeDef</a></li>
+<li><a href="type_defs/#codecontenttypedef">CodeContentTypeDef</a></li>
+<li><a href="type_defs/#codecontentupdatetypedef">CodeContentUpdateTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#customartifactconfigurationdescriptiontypedef">CustomArtifactConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#customartifactconfigurationtypedef">CustomArtifactConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deployasapplicationconfigurationdescriptiontypedef">DeployAsApplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#deployasapplicationconfigurationtypedef">DeployAsApplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deployasapplicationconfigurationupdatetypedef">DeployAsApplicationConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationsnapshotresponsetypedef">DescribeApplicationSnapshotResponseTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsnapshotsresponsetypedef">ListApplicationSnapshotsResponseTypeDef</a></li>
+<li><a href="type_defs/#sqlrunconfigurationtypedef">SqlRunConfigurationTypeDef</a></li>
+<li><a href="type_defs/#environmentpropertiestypedef">EnvironmentPropertiesTypeDef</a></li>
+<li><a href="type_defs/#environmentpropertydescriptionstypedef">EnvironmentPropertyDescriptionsTypeDef</a></li>
+<li><a href="type_defs/#environmentpropertyupdatestypedef">EnvironmentPropertyUpdatesTypeDef</a></li>
+<li><a href="type_defs/#flinkapplicationconfigurationdescriptiontypedef">FlinkApplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#flinkapplicationconfigurationtypedef">FlinkApplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#flinkapplicationconfigurationupdatetypedef">FlinkApplicationConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#runconfigurationdescriptiontypedef">RunConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#runconfigurationupdatetypedef">RunConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#inputprocessingconfigurationdescriptiontypedef">InputProcessingConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#inputprocessingconfigurationtypedef">InputProcessingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#inputprocessingconfigurationupdatetypedef">InputProcessingConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#mappingparameterstypedef">MappingParametersTypeDef</a></li>
+<li><a href="type_defs/#outputdescriptiontypedef">OutputDescriptionTypeDef</a></li>
+<li><a href="type_defs/#outputtypedef">OutputTypeDef</a></li>
+<li><a href="type_defs/#outputupdatetypedef">OutputUpdateTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsnapshotsrequestlistapplicationsnapshotspaginatetypedef">ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsrequestlistapplicationspaginatetypedef">ListApplicationsRequestListApplicationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#applicationcodeconfigurationdescriptiontypedef">ApplicationCodeConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#applicationcodeconfigurationtypedef">ApplicationCodeConfigurationTypeDef</a></li>
+<li><a href="type_defs/#applicationcodeconfigurationupdatetypedef">ApplicationCodeConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#zeppelinapplicationconfigurationdescriptiontypedef">ZeppelinApplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#zeppelinapplicationconfigurationtypedef">ZeppelinApplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#zeppelinapplicationconfigurationupdatetypedef">ZeppelinApplicationConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#runconfigurationtypedef">RunConfigurationTypeDef</a></li>
+<li><a href="type_defs/#addapplicationinputprocessingconfigurationresponsetypedef">AddApplicationInputProcessingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#addapplicationinputprocessingconfigurationrequestrequesttypedef">AddApplicationInputProcessingConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#discoverinputschemarequestrequesttypedef">DiscoverInputSchemaRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#recordformattypedef">RecordFormatTypeDef</a></li>
+<li><a href="type_defs/#addapplicationoutputresponsetypedef">AddApplicationOutputResponseTypeDef</a></li>
+<li><a href="type_defs/#addapplicationoutputrequestrequesttypedef">AddApplicationOutputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startapplicationrequestrequesttypedef">StartApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#inputschemaupdatetypedef">InputSchemaUpdateTypeDef</a></li>
+<li><a href="type_defs/#sourceschematypedef">SourceSchemaTypeDef</a></li>
+<li><a href="type_defs/#inputupdatetypedef">InputUpdateTypeDef</a></li>
+<li><a href="type_defs/#discoverinputschemaresponsetypedef">DiscoverInputSchemaResponseTypeDef</a></li>
+<li><a href="type_defs/#inputdescriptiontypedef">InputDescriptionTypeDef</a></li>
+<li><a href="type_defs/#inputtypedef">InputTypeDef</a></li>
+<li><a href="type_defs/#referencedatasourcedescriptiontypedef">ReferenceDataSourceDescriptionTypeDef</a></li>
+<li><a href="type_defs/#referencedatasourcetypedef">ReferenceDataSourceTypeDef</a></li>
+<li><a href="type_defs/#referencedatasourceupdatetypedef">ReferenceDataSourceUpdateTypeDef</a></li>
+<li><a href="type_defs/#addapplicationinputresponsetypedef">AddApplicationInputResponseTypeDef</a></li>
+<li><a href="type_defs/#addapplicationinputrequestrequesttypedef">AddApplicationInputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addapplicationreferencedatasourceresponsetypedef">AddApplicationReferenceDataSourceResponseTypeDef</a></li>
+<li><a href="type_defs/#sqlapplicationconfigurationdescriptiontypedef">SqlApplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#addapplicationreferencedatasourcerequestrequesttypedef">AddApplicationReferenceDataSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#sqlapplicationconfigurationtypedef">SqlApplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#sqlapplicationconfigurationupdatetypedef">SqlApplicationConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#applicationconfigurationdescriptiontypedef">ApplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#applicationconfigurationtypedef">ApplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#applicationconfigurationupdatetypedef">ApplicationConfigurationUpdateTypeDef</a></li>
+<li><a href="type_defs/#applicationdetailtypedef">ApplicationDetailTypeDef</a></li>
+<li><a href="type_defs/#createapplicationrequestrequesttypedef">CreateApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateapplicationrequestrequesttypedef">UpdateApplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createapplicationresponsetypedef">CreateApplicationResponseTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationresponsetypedef">DescribeApplicationResponseTypeDef</a></li>
+<li><a href="type_defs/#describeapplicationversionresponsetypedef">DescribeApplicationVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#rollbackapplicationresponsetypedef">RollbackApplicationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateapplicationresponsetypedef">UpdateApplicationResponseTypeDef</a></li>
 </ul>
 
               
@@ -36348,7 +36347,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

@@ -66,25 +66,30 @@ class CreateExportTaskRequestRequestTypeDef(TypedDict):
     destinationPrefix: NotRequired[str],
 ```
 
-## CreateExportTaskResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
+from mypy_boto3_logs.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateExportTaskResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "taskId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateExportTaskResponseTypeDef(TypedDict):
-    taskId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLogGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -205,25 +210,6 @@ class DeleteQueryDefinitionRequestRequestTypeDef(TypedDict):
     queryDefinitionId: str,
 ```
 
-## DeleteQueryDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DeleteQueryDefinitionResponseTypeDef
-
-def get_value() -> DeleteQueryDefinitionResponseTypeDef:
-    return {
-        "success": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteQueryDefinitionResponseTypeDef(TypedDict):
-    success: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -274,24 +260,24 @@ class DeleteSubscriptionFilterRequestRequestTypeDef(TypedDict):
     filterName: str,
 ```
 
-## DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef
+from mypy_boto3_logs.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "DestinationNamePrefix": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef(TypedDict):
-    DestinationNamePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDestinationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -310,48 +296,27 @@ class DescribeDestinationsRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## DescribeDestinationsResponseTypeDef
+## DestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
+from mypy_boto3_logs.type_defs import DestinationTypeDef
 
-def get_value() -> DescribeDestinationsResponseTypeDef:
+def get_value() -> DestinationTypeDef:
     return {
-        "destinations": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "destinationName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDestinationsResponseTypeDef(TypedDict):
-    destinations: List[DestinationTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DestinationTypeDef(TypedDict):
+    destinationName: NotRequired[str],
+    targetArn: NotRequired[str],
+    roleArn: NotRequired[str],
+    accessPolicy: NotRequired[str],
+    arn: NotRequired[str],
+    creationTime: NotRequired[int],
 ```
 
-1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
-
-def get_value() -> DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    statusCode: NotRequired[ExportTaskStatusCodeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeExportTasksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -372,46 +337,6 @@ class DescribeExportTasksRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
-## DescribeExportTasksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeExportTasksResponseTypeDef
-
-def get_value() -> DescribeExportTasksResponseTypeDef:
-    return {
-        "exportTasks": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeExportTasksResponseTypeDef(TypedDict):
-    exportTasks: List[ExportTaskTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ExportTaskTypeDef](./type_defs.md#exporttasktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef
-
-def get_value() -> DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef:
-    return {
-        "logGroupNamePrefix": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef(TypedDict):
-    logGroupNamePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeLogGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -430,50 +355,28 @@ class DescribeLogGroupsRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## DescribeLogGroupsResponseTypeDef
+## LogGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeLogGroupsResponseTypeDef
+from mypy_boto3_logs.type_defs import LogGroupTypeDef
 
-def get_value() -> DescribeLogGroupsResponseTypeDef:
-    return {
-        "logGroups": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLogGroupsResponseTypeDef(TypedDict):
-    logGroups: List[LogGroupTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LogGroupTypeDef](./type_defs.md#loggrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef
-
-def get_value() -> DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef:
+def get_value() -> LogGroupTypeDef:
     return {
         "logGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef(TypedDict):
-    logGroupName: str,
-    logStreamNamePrefix: NotRequired[str],
-    orderBy: NotRequired[OrderByType],  # (1)
-    descending: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+class LogGroupTypeDef(TypedDict):
+    logGroupName: NotRequired[str],
+    creationTime: NotRequired[int],
+    retentionInDays: NotRequired[int],
+    metricFilterCount: NotRequired[int],
+    arn: NotRequired[str],
+    storedBytes: NotRequired[int],
+    kmsKeyId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeLogStreamsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -496,49 +399,29 @@ class DescribeLogStreamsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
-## DescribeLogStreamsResponseTypeDef
+## LogStreamTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeLogStreamsResponseTypeDef
+from mypy_boto3_logs.type_defs import LogStreamTypeDef
 
-def get_value() -> DescribeLogStreamsResponseTypeDef:
+def get_value() -> LogStreamTypeDef:
     return {
-        "logStreams": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "logStreamName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLogStreamsResponseTypeDef(TypedDict):
-    logStreams: List[LogStreamTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LogStreamTypeDef(TypedDict):
+    logStreamName: NotRequired[str],
+    creationTime: NotRequired[int],
+    firstEventTimestamp: NotRequired[int],
+    lastEventTimestamp: NotRequired[int],
+    lastIngestionTime: NotRequired[int],
+    uploadSequenceToken: NotRequired[str],
+    arn: NotRequired[str],
+    storedBytes: NotRequired[int],
 ```
 
-1. See [:material-code-braces: LogStreamTypeDef](./type_defs.md#logstreamtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef
-
-def get_value() -> DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef:
-    return {
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef(TypedDict):
-    logGroupName: NotRequired[str],
-    filterNamePrefix: NotRequired[str],
-    metricName: NotRequired[str],
-    metricNamespace: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMetricFiltersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -560,48 +443,6 @@ class DescribeMetricFiltersRequestRequestTypeDef(TypedDict):
     metricNamespace: NotRequired[str],
 ```
 
-## DescribeMetricFiltersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeMetricFiltersResponseTypeDef
-
-def get_value() -> DescribeMetricFiltersResponseTypeDef:
-    return {
-        "metricFilters": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMetricFiltersResponseTypeDef(TypedDict):
-    metricFilters: List[MetricFilterTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MetricFilterTypeDef](./type_defs.md#metricfiltertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeQueriesRequestDescribeQueriesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeQueriesRequestDescribeQueriesPaginateTypeDef
-
-def get_value() -> DescribeQueriesRequestDescribeQueriesPaginateTypeDef:
-    return {
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeQueriesRequestDescribeQueriesPaginateTypeDef(TypedDict):
-    logGroupName: NotRequired[str],
-    status: NotRequired[QueryStatusType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeQueriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -622,28 +463,27 @@ class DescribeQueriesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
-## DescribeQueriesResponseTypeDef
+## QueryInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeQueriesResponseTypeDef
+from mypy_boto3_logs.type_defs import QueryInfoTypeDef
 
-def get_value() -> DescribeQueriesResponseTypeDef:
+def get_value() -> QueryInfoTypeDef:
     return {
-        "queries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "queryId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeQueriesResponseTypeDef(TypedDict):
-    queries: List[QueryInfoTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class QueryInfoTypeDef(TypedDict):
+    queryId: NotRequired[str],
+    queryString: NotRequired[str],
+    status: NotRequired[QueryStatusType],  # (1)
+    createTime: NotRequired[int],
+    logGroupName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: QueryInfoTypeDef](./type_defs.md#queryinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
 ## DescribeQueryDefinitionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -662,45 +502,26 @@ class DescribeQueryDefinitionsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## DescribeQueryDefinitionsResponseTypeDef
+## QueryDefinitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsResponseTypeDef
+from mypy_boto3_logs.type_defs import QueryDefinitionTypeDef
 
-def get_value() -> DescribeQueryDefinitionsResponseTypeDef:
+def get_value() -> QueryDefinitionTypeDef:
     return {
-        "queryDefinitions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "queryDefinitionId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeQueryDefinitionsResponseTypeDef(TypedDict):
-    queryDefinitions: List[QueryDefinitionTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class QueryDefinitionTypeDef(TypedDict):
+    queryDefinitionId: NotRequired[str],
+    name: NotRequired[str],
+    queryString: NotRequired[str],
+    lastModified: NotRequired[int],
+    logGroupNames: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: QueryDefinitionTypeDef](./type_defs.md#querydefinitiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef
-
-def get_value() -> DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeResourcePoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -718,47 +539,24 @@ class DescribeResourcePoliciesRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## DescribeResourcePoliciesResponseTypeDef
+## ResourcePolicyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeResourcePoliciesResponseTypeDef
+from mypy_boto3_logs.type_defs import ResourcePolicyTypeDef
 
-def get_value() -> DescribeResourcePoliciesResponseTypeDef:
+def get_value() -> ResourcePolicyTypeDef:
     return {
-        "resourcePolicies": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "policyName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeResourcePoliciesResponseTypeDef(TypedDict):
-    resourcePolicies: List[ResourcePolicyTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResourcePolicyTypeDef(TypedDict):
+    policyName: NotRequired[str],
+    policyDocument: NotRequired[str],
+    lastUpdatedTime: NotRequired[int],
 ```
 
-1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef
-
-def get_value() -> DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef:
-    return {
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef(TypedDict):
-    logGroupName: str,
-    filterNamePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSubscriptionFiltersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -778,49 +576,29 @@ class DescribeSubscriptionFiltersRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## DescribeSubscriptionFiltersResponseTypeDef
+## SubscriptionFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersResponseTypeDef
+from mypy_boto3_logs.type_defs import SubscriptionFilterTypeDef
 
-def get_value() -> DescribeSubscriptionFiltersResponseTypeDef:
+def get_value() -> SubscriptionFilterTypeDef:
     return {
-        "subscriptionFilters": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "filterName": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeSubscriptionFiltersResponseTypeDef(TypedDict):
-    subscriptionFilters: List[SubscriptionFilterTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SubscriptionFilterTypeDef](./type_defs.md#subscriptionfiltertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import DestinationTypeDef
-
-def get_value() -> DestinationTypeDef:
-    return {
-        "destinationName": ...,
-    }
-```
-
-```python title="Definition"
-class DestinationTypeDef(TypedDict):
-    destinationName: NotRequired[str],
-    targetArn: NotRequired[str],
+class SubscriptionFilterTypeDef(TypedDict):
+    filterName: NotRequired[str],
+    logGroupName: NotRequired[str],
+    filterPattern: NotRequired[str],
+    destinationArn: NotRequired[str],
     roleArn: NotRequired[str],
-    accessPolicy: NotRequired[str],
-    arn: NotRequired[str],
+    distribution: NotRequired[DistributionType],  # (1)
     creationTime: NotRequired[int],
 ```
 
+1. See [:material-code-brackets: DistributionType](./literals.md#distributiontype) 
 ## DisassociateKmsKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -872,56 +650,6 @@ class ExportTaskStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
-## ExportTaskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import ExportTaskTypeDef
-
-def get_value() -> ExportTaskTypeDef:
-    return {
-        "taskId": ...,
-    }
-```
-
-```python title="Definition"
-class ExportTaskTypeDef(TypedDict):
-    taskId: NotRequired[str],
-    taskName: NotRequired[str],
-    logGroupName: NotRequired[str],
-    from: NotRequired[int],
-    to: NotRequired[int],
-    destination: NotRequired[str],
-    destinationPrefix: NotRequired[str],
-    status: NotRequired[ExportTaskStatusTypeDef],  # (1)
-    executionInfo: NotRequired[ExportTaskExecutionInfoTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ExportTaskStatusTypeDef](./type_defs.md#exporttaskstatustypedef) 
-2. See [:material-code-braces: ExportTaskExecutionInfoTypeDef](./type_defs.md#exporttaskexecutioninfotypedef) 
-## FilterLogEventsRequestFilterLogEventsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import FilterLogEventsRequestFilterLogEventsPaginateTypeDef
-
-def get_value() -> FilterLogEventsRequestFilterLogEventsPaginateTypeDef:
-    return {
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class FilterLogEventsRequestFilterLogEventsPaginateTypeDef(TypedDict):
-    logGroupName: str,
-    logStreamNames: NotRequired[Sequence[str]],
-    logStreamNamePrefix: NotRequired[str],
-    startTime: NotRequired[int],
-    endTime: NotRequired[int],
-    filterPattern: NotRequired[str],
-    interleaved: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## FilterLogEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -946,31 +674,6 @@ class FilterLogEventsRequestRequestTypeDef(TypedDict):
     interleaved: NotRequired[bool],
 ```
 
-## FilterLogEventsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import FilterLogEventsResponseTypeDef
-
-def get_value() -> FilterLogEventsResponseTypeDef:
-    return {
-        "events": ...,
-        "searchedLogStreams": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class FilterLogEventsResponseTypeDef(TypedDict):
-    events: List[FilteredLogEventTypeDef],  # (1)
-    searchedLogStreams: List[SearchedLogStreamTypeDef],  # (2)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: FilteredLogEventTypeDef](./type_defs.md#filteredlogeventtypedef) 
-2. See [:material-code-braces: SearchedLogStreamTypeDef](./type_defs.md#searchedlogstreamtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilteredLogEventTypeDef
 
 ```python title="Usage Example"
@@ -989,6 +692,23 @@ class FilteredLogEventTypeDef(TypedDict):
     message: NotRequired[str],
     ingestionTime: NotRequired[int],
     eventId: NotRequired[str],
+```
+
+## SearchedLogStreamTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import SearchedLogStreamTypeDef
+
+def get_value() -> SearchedLogStreamTypeDef:
+    return {
+        "logStreamName": ...,
+    }
+```
+
+```python title="Definition"
+class SearchedLogStreamTypeDef(TypedDict):
+    logStreamName: NotRequired[str],
+    searchedCompletely: NotRequired[bool],
 ```
 
 ## GetLogEventsRequestRequestTypeDef
@@ -1014,30 +734,24 @@ class GetLogEventsRequestRequestTypeDef(TypedDict):
     startFromHead: NotRequired[bool],
 ```
 
-## GetLogEventsResponseTypeDef
+## OutputLogEventTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import GetLogEventsResponseTypeDef
+from mypy_boto3_logs.type_defs import OutputLogEventTypeDef
 
-def get_value() -> GetLogEventsResponseTypeDef:
+def get_value() -> OutputLogEventTypeDef:
     return {
-        "events": ...,
-        "nextForwardToken": ...,
-        "nextBackwardToken": ...,
-        "ResponseMetadata": ...,
+        "timestamp": ...,
     }
 ```
 
 ```python title="Definition"
-class GetLogEventsResponseTypeDef(TypedDict):
-    events: List[OutputLogEventTypeDef],  # (1)
-    nextForwardToken: str,
-    nextBackwardToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class OutputLogEventTypeDef(TypedDict):
+    timestamp: NotRequired[int],
+    message: NotRequired[str],
+    ingestionTime: NotRequired[int],
 ```
 
-1. See [:material-code-braces: OutputLogEventTypeDef](./type_defs.md#outputlogeventtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLogGroupFieldsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1055,26 +769,23 @@ class GetLogGroupFieldsRequestRequestTypeDef(TypedDict):
     time: NotRequired[int],
 ```
 
-## GetLogGroupFieldsResponseTypeDef
+## LogGroupFieldTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import GetLogGroupFieldsResponseTypeDef
+from mypy_boto3_logs.type_defs import LogGroupFieldTypeDef
 
-def get_value() -> GetLogGroupFieldsResponseTypeDef:
+def get_value() -> LogGroupFieldTypeDef:
     return {
-        "logGroupFields": ...,
-        "ResponseMetadata": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class GetLogGroupFieldsResponseTypeDef(TypedDict):
-    logGroupFields: List[LogGroupFieldTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LogGroupFieldTypeDef(TypedDict):
+    name: NotRequired[str],
+    percent: NotRequired[int],
 ```
 
-1. See [:material-code-braces: LogGroupFieldTypeDef](./type_defs.md#loggroupfieldtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLogRecordRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1091,25 +802,6 @@ class GetLogRecordRequestRequestTypeDef(TypedDict):
     logRecordPointer: str,
 ```
 
-## GetLogRecordResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import GetLogRecordResponseTypeDef
-
-def get_value() -> GetLogRecordResponseTypeDef:
-    return {
-        "logRecord": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLogRecordResponseTypeDef(TypedDict):
-    logRecord: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryResultsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1126,32 +818,41 @@ class GetQueryResultsRequestRequestTypeDef(TypedDict):
     queryId: str,
 ```
 
-## GetQueryResultsResponseTypeDef
+## QueryStatisticsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import GetQueryResultsResponseTypeDef
+from mypy_boto3_logs.type_defs import QueryStatisticsTypeDef
 
-def get_value() -> GetQueryResultsResponseTypeDef:
+def get_value() -> QueryStatisticsTypeDef:
     return {
-        "results": ...,
-        "statistics": ...,
-        "status": ...,
-        "ResponseMetadata": ...,
+        "recordsMatched": ...,
     }
 ```
 
 ```python title="Definition"
-class GetQueryResultsResponseTypeDef(TypedDict):
-    results: List[List[ResultFieldTypeDef]],  # (1)
-    statistics: QueryStatisticsTypeDef,  # (2)
-    status: QueryStatusType,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+class QueryStatisticsTypeDef(TypedDict):
+    recordsMatched: NotRequired[float],
+    recordsScanned: NotRequired[float],
+    bytesScanned: NotRequired[float],
 ```
 
-1. See [:material-code-braces: ResultFieldTypeDef](./type_defs.md#resultfieldtypedef) 
-2. See [:material-code-braces: QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef) 
-3. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResultFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import ResultFieldTypeDef
+
+def get_value() -> ResultFieldTypeDef:
+    return {
+        "field": ...,
+    }
+```
+
+```python title="Definition"
+class ResultFieldTypeDef(TypedDict):
+    field: NotRequired[str],
+    value: NotRequired[str],
+```
+
 ## InputLogEventTypeDef
 
 ```python title="Usage Example"
@@ -1186,87 +887,6 @@ class ListTagsLogGroupRequestRequestTypeDef(TypedDict):
     logGroupName: str,
 ```
 
-## ListTagsLogGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import ListTagsLogGroupResponseTypeDef
-
-def get_value() -> ListTagsLogGroupResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsLogGroupResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogGroupFieldTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import LogGroupFieldTypeDef
-
-def get_value() -> LogGroupFieldTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class LogGroupFieldTypeDef(TypedDict):
-    name: NotRequired[str],
-    percent: NotRequired[int],
-```
-
-## LogGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import LogGroupTypeDef
-
-def get_value() -> LogGroupTypeDef:
-    return {
-        "logGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class LogGroupTypeDef(TypedDict):
-    logGroupName: NotRequired[str],
-    creationTime: NotRequired[int],
-    retentionInDays: NotRequired[int],
-    metricFilterCount: NotRequired[int],
-    arn: NotRequired[str],
-    storedBytes: NotRequired[int],
-    kmsKeyId: NotRequired[str],
-```
-
-## LogStreamTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import LogStreamTypeDef
-
-def get_value() -> LogStreamTypeDef:
-    return {
-        "logStreamName": ...,
-    }
-```
-
-```python title="Definition"
-class LogStreamTypeDef(TypedDict):
-    logStreamName: NotRequired[str],
-    creationTime: NotRequired[int],
-    firstEventTimestamp: NotRequired[int],
-    lastEventTimestamp: NotRequired[int],
-    lastIngestionTime: NotRequired[int],
-    uploadSequenceToken: NotRequired[str],
-    arn: NotRequired[str],
-    storedBytes: NotRequired[int],
-```
-
 ## MetricFilterMatchRecordTypeDef
 
 ```python title="Usage Example"
@@ -1285,27 +905,6 @@ class MetricFilterMatchRecordTypeDef(TypedDict):
     extractedValues: NotRequired[Dict[str, str]],
 ```
 
-## MetricFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import MetricFilterTypeDef
-
-def get_value() -> MetricFilterTypeDef:
-    return {
-        "filterName": ...,
-    }
-```
-
-```python title="Definition"
-class MetricFilterTypeDef(TypedDict):
-    filterName: NotRequired[str],
-    filterPattern: NotRequired[str],
-    metricTransformations: NotRequired[List[MetricTransformationTypeDef]],  # (1)
-    creationTime: NotRequired[int],
-    logGroupName: NotRequired[str],
-```
-
-1. See [:material-code-braces: MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef) 
 ## MetricTransformationTypeDef
 
 ```python title="Usage Example"
@@ -1330,42 +929,6 @@ class MetricTransformationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
-## OutputLogEventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import OutputLogEventTypeDef
-
-def get_value() -> OutputLogEventTypeDef:
-    return {
-        "timestamp": ...,
-    }
-```
-
-```python title="Definition"
-class OutputLogEventTypeDef(TypedDict):
-    timestamp: NotRequired[int],
-    message: NotRequired[str],
-    ingestionTime: NotRequired[int],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
 ## PutDestinationPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1405,93 +968,24 @@ class PutDestinationRequestRequestTypeDef(TypedDict):
     roleArn: str,
 ```
 
-## PutDestinationResponseTypeDef
+## RejectedLogEventsInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutDestinationResponseTypeDef
+from mypy_boto3_logs.type_defs import RejectedLogEventsInfoTypeDef
 
-def get_value() -> PutDestinationResponseTypeDef:
+def get_value() -> RejectedLogEventsInfoTypeDef:
     return {
-        "destination": ...,
-        "ResponseMetadata": ...,
+        "tooNewLogEventStartIndex": ...,
     }
 ```
 
 ```python title="Definition"
-class PutDestinationResponseTypeDef(TypedDict):
-    destination: DestinationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RejectedLogEventsInfoTypeDef(TypedDict):
+    tooNewLogEventStartIndex: NotRequired[int],
+    tooOldLogEventEndIndex: NotRequired[int],
+    expiredLogEventEndIndex: NotRequired[int],
 ```
 
-1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutLogEventsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutLogEventsRequestRequestTypeDef
-
-def get_value() -> PutLogEventsRequestRequestTypeDef:
-    return {
-        "logGroupName": ...,
-        "logStreamName": ...,
-        "logEvents": ...,
-    }
-```
-
-```python title="Definition"
-class PutLogEventsRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
-    logStreamName: str,
-    logEvents: Sequence[InputLogEventTypeDef],  # (1)
-    sequenceToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef) 
-## PutLogEventsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutLogEventsResponseTypeDef
-
-def get_value() -> PutLogEventsResponseTypeDef:
-    return {
-        "nextSequenceToken": ...,
-        "rejectedLogEventsInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutLogEventsResponseTypeDef(TypedDict):
-    nextSequenceToken: str,
-    rejectedLogEventsInfo: RejectedLogEventsInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RejectedLogEventsInfoTypeDef](./type_defs.md#rejectedlogeventsinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutMetricFilterRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutMetricFilterRequestRequestTypeDef
-
-def get_value() -> PutMetricFilterRequestRequestTypeDef:
-    return {
-        "logGroupName": ...,
-        "filterName": ...,
-        "filterPattern": ...,
-        "metricTransformations": ...,
-    }
-```
-
-```python title="Definition"
-class PutMetricFilterRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
-    filterName: str,
-    filterPattern: str,
-    metricTransformations: Sequence[MetricTransformationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef) 
 ## PutQueryDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1512,25 +1006,6 @@ class PutQueryDefinitionRequestRequestTypeDef(TypedDict):
     logGroupNames: NotRequired[Sequence[str]],
 ```
 
-## PutQueryDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutQueryDefinitionResponseTypeDef
-
-def get_value() -> PutQueryDefinitionResponseTypeDef:
-    return {
-        "queryDefinitionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutQueryDefinitionResponseTypeDef(TypedDict):
-    queryDefinitionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1548,26 +1023,6 @@ class PutResourcePolicyRequestRequestTypeDef(TypedDict):
     policyDocument: NotRequired[str],
 ```
 
-## PutResourcePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import PutResourcePolicyResponseTypeDef
-
-def get_value() -> PutResourcePolicyResponseTypeDef:
-    return {
-        "resourcePolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutResourcePolicyResponseTypeDef(TypedDict):
-    resourcePolicy: ResourcePolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRetentionPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1611,159 +1066,6 @@ class PutSubscriptionFilterRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DistributionType](./literals.md#distributiontype) 
-## QueryDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import QueryDefinitionTypeDef
-
-def get_value() -> QueryDefinitionTypeDef:
-    return {
-        "queryDefinitionId": ...,
-    }
-```
-
-```python title="Definition"
-class QueryDefinitionTypeDef(TypedDict):
-    queryDefinitionId: NotRequired[str],
-    name: NotRequired[str],
-    queryString: NotRequired[str],
-    lastModified: NotRequired[int],
-    logGroupNames: NotRequired[List[str]],
-```
-
-## QueryInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import QueryInfoTypeDef
-
-def get_value() -> QueryInfoTypeDef:
-    return {
-        "queryId": ...,
-    }
-```
-
-```python title="Definition"
-class QueryInfoTypeDef(TypedDict):
-    queryId: NotRequired[str],
-    queryString: NotRequired[str],
-    status: NotRequired[QueryStatusType],  # (1)
-    createTime: NotRequired[int],
-    logGroupName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
-## QueryStatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import QueryStatisticsTypeDef
-
-def get_value() -> QueryStatisticsTypeDef:
-    return {
-        "recordsMatched": ...,
-    }
-```
-
-```python title="Definition"
-class QueryStatisticsTypeDef(TypedDict):
-    recordsMatched: NotRequired[float],
-    recordsScanned: NotRequired[float],
-    bytesScanned: NotRequired[float],
-```
-
-## RejectedLogEventsInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import RejectedLogEventsInfoTypeDef
-
-def get_value() -> RejectedLogEventsInfoTypeDef:
-    return {
-        "tooNewLogEventStartIndex": ...,
-    }
-```
-
-```python title="Definition"
-class RejectedLogEventsInfoTypeDef(TypedDict):
-    tooNewLogEventStartIndex: NotRequired[int],
-    tooOldLogEventEndIndex: NotRequired[int],
-    expiredLogEventEndIndex: NotRequired[int],
-```
-
-## ResourcePolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import ResourcePolicyTypeDef
-
-def get_value() -> ResourcePolicyTypeDef:
-    return {
-        "policyName": ...,
-    }
-```
-
-```python title="Definition"
-class ResourcePolicyTypeDef(TypedDict):
-    policyName: NotRequired[str],
-    policyDocument: NotRequired[str],
-    lastUpdatedTime: NotRequired[int],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ResultFieldTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import ResultFieldTypeDef
-
-def get_value() -> ResultFieldTypeDef:
-    return {
-        "field": ...,
-    }
-```
-
-```python title="Definition"
-class ResultFieldTypeDef(TypedDict):
-    field: NotRequired[str],
-    value: NotRequired[str],
-```
-
-## SearchedLogStreamTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import SearchedLogStreamTypeDef
-
-def get_value() -> SearchedLogStreamTypeDef:
-    return {
-        "logStreamName": ...,
-    }
-```
-
-```python title="Definition"
-class SearchedLogStreamTypeDef(TypedDict):
-    logStreamName: NotRequired[str],
-    searchedCompletely: NotRequired[bool],
-```
-
 ## StartQueryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1787,25 +1089,6 @@ class StartQueryRequestRequestTypeDef(TypedDict):
     limit: NotRequired[int],
 ```
 
-## StartQueryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import StartQueryResponseTypeDef
-
-def get_value() -> StartQueryResponseTypeDef:
-    return {
-        "queryId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartQueryResponseTypeDef(TypedDict):
-    queryId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopQueryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1822,48 +1105,6 @@ class StopQueryRequestRequestTypeDef(TypedDict):
     queryId: str,
 ```
 
-## StopQueryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import StopQueryResponseTypeDef
-
-def get_value() -> StopQueryResponseTypeDef:
-    return {
-        "success": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StopQueryResponseTypeDef(TypedDict):
-    success: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SubscriptionFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_logs.type_defs import SubscriptionFilterTypeDef
-
-def get_value() -> SubscriptionFilterTypeDef:
-    return {
-        "filterName": ...,
-    }
-```
-
-```python title="Definition"
-class SubscriptionFilterTypeDef(TypedDict):
-    filterName: NotRequired[str],
-    logGroupName: NotRequired[str],
-    filterPattern: NotRequired[str],
-    destinationArn: NotRequired[str],
-    roleArn: NotRequired[str],
-    distribution: NotRequired[DistributionType],  # (1)
-    creationTime: NotRequired[int],
-```
-
-1. See [:material-code-brackets: DistributionType](./literals.md#distributiontype) 
 ## TagLogGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1900,6 +1141,673 @@ class TestMetricFilterRequestRequestTypeDef(TypedDict):
     logEventMessages: Sequence[str],
 ```
 
+## UntagLogGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import UntagLogGroupRequestRequestTypeDef
+
+def get_value() -> UntagLogGroupRequestRequestTypeDef:
+    return {
+        "logGroupName": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class UntagLogGroupRequestRequestTypeDef(TypedDict):
+    logGroupName: str,
+    tags: Sequence[str],
+```
+
+## CreateExportTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
+
+def get_value() -> CreateExportTaskResponseTypeDef:
+    return {
+        "taskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateExportTaskResponseTypeDef(TypedDict):
+    taskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteQueryDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DeleteQueryDefinitionResponseTypeDef
+
+def get_value() -> DeleteQueryDefinitionResponseTypeDef:
+    return {
+        "success": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteQueryDefinitionResponseTypeDef(TypedDict):
+    success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLogRecordResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetLogRecordResponseTypeDef
+
+def get_value() -> GetLogRecordResponseTypeDef:
+    return {
+        "logRecord": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLogRecordResponseTypeDef(TypedDict):
+    logRecord: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsLogGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import ListTagsLogGroupResponseTypeDef
+
+def get_value() -> ListTagsLogGroupResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsLogGroupResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutQueryDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutQueryDefinitionResponseTypeDef
+
+def get_value() -> PutQueryDefinitionResponseTypeDef:
+    return {
+        "queryDefinitionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutQueryDefinitionResponseTypeDef(TypedDict):
+    queryDefinitionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartQueryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import StartQueryResponseTypeDef
+
+def get_value() -> StartQueryResponseTypeDef:
+    return {
+        "queryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartQueryResponseTypeDef(TypedDict):
+    queryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopQueryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import StopQueryResponseTypeDef
+
+def get_value() -> StopQueryResponseTypeDef:
+    return {
+        "success": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopQueryResponseTypeDef(TypedDict):
+    success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef
+
+def get_value() -> DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef:
+    return {
+        "DestinationNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef(TypedDict):
+    DestinationNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
+
+def get_value() -> DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    statusCode: NotRequired[ExportTaskStatusCodeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef
+
+def get_value() -> DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef:
+    return {
+        "logGroupNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef(TypedDict):
+    logGroupNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef
+
+def get_value() -> DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef(TypedDict):
+    logGroupName: str,
+    logStreamNamePrefix: NotRequired[str],
+    orderBy: NotRequired[OrderByType],  # (1)
+    descending: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef
+
+def get_value() -> DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef(TypedDict):
+    logGroupName: NotRequired[str],
+    filterNamePrefix: NotRequired[str],
+    metricName: NotRequired[str],
+    metricNamespace: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeQueriesRequestDescribeQueriesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeQueriesRequestDescribeQueriesPaginateTypeDef
+
+def get_value() -> DescribeQueriesRequestDescribeQueriesPaginateTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeQueriesRequestDescribeQueriesPaginateTypeDef(TypedDict):
+    logGroupName: NotRequired[str],
+    status: NotRequired[QueryStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef
+
+def get_value() -> DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef
+
+def get_value() -> DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef(TypedDict):
+    logGroupName: str,
+    filterNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## FilterLogEventsRequestFilterLogEventsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import FilterLogEventsRequestFilterLogEventsPaginateTypeDef
+
+def get_value() -> FilterLogEventsRequestFilterLogEventsPaginateTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class FilterLogEventsRequestFilterLogEventsPaginateTypeDef(TypedDict):
+    logGroupName: str,
+    logStreamNames: NotRequired[Sequence[str]],
+    logStreamNamePrefix: NotRequired[str],
+    startTime: NotRequired[int],
+    endTime: NotRequired[int],
+    filterPattern: NotRequired[str],
+    interleaved: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeDestinationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
+
+def get_value() -> DescribeDestinationsResponseTypeDef:
+    return {
+        "destinations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDestinationsResponseTypeDef(TypedDict):
+    destinations: List[DestinationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutDestinationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutDestinationResponseTypeDef
+
+def get_value() -> PutDestinationResponseTypeDef:
+    return {
+        "destination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutDestinationResponseTypeDef(TypedDict):
+    destination: DestinationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLogGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeLogGroupsResponseTypeDef
+
+def get_value() -> DescribeLogGroupsResponseTypeDef:
+    return {
+        "logGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLogGroupsResponseTypeDef(TypedDict):
+    logGroups: List[LogGroupTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogGroupTypeDef](./type_defs.md#loggrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLogStreamsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeLogStreamsResponseTypeDef
+
+def get_value() -> DescribeLogStreamsResponseTypeDef:
+    return {
+        "logStreams": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLogStreamsResponseTypeDef(TypedDict):
+    logStreams: List[LogStreamTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogStreamTypeDef](./type_defs.md#logstreamtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeQueriesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeQueriesResponseTypeDef
+
+def get_value() -> DescribeQueriesResponseTypeDef:
+    return {
+        "queries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeQueriesResponseTypeDef(TypedDict):
+    queries: List[QueryInfoTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: QueryInfoTypeDef](./type_defs.md#queryinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeQueryDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsResponseTypeDef
+
+def get_value() -> DescribeQueryDefinitionsResponseTypeDef:
+    return {
+        "queryDefinitions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeQueryDefinitionsResponseTypeDef(TypedDict):
+    queryDefinitions: List[QueryDefinitionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: QueryDefinitionTypeDef](./type_defs.md#querydefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeResourcePoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeResourcePoliciesResponseTypeDef
+
+def get_value() -> DescribeResourcePoliciesResponseTypeDef:
+    return {
+        "resourcePolicies": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourcePoliciesResponseTypeDef(TypedDict):
+    resourcePolicies: List[ResourcePolicyTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "resourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    resourcePolicy: ResourcePolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSubscriptionFiltersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersResponseTypeDef
+
+def get_value() -> DescribeSubscriptionFiltersResponseTypeDef:
+    return {
+        "subscriptionFilters": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSubscriptionFiltersResponseTypeDef(TypedDict):
+    subscriptionFilters: List[SubscriptionFilterTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SubscriptionFilterTypeDef](./type_defs.md#subscriptionfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportTaskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import ExportTaskTypeDef
+
+def get_value() -> ExportTaskTypeDef:
+    return {
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class ExportTaskTypeDef(TypedDict):
+    taskId: NotRequired[str],
+    taskName: NotRequired[str],
+    logGroupName: NotRequired[str],
+    from: NotRequired[int],
+    to: NotRequired[int],
+    destination: NotRequired[str],
+    destinationPrefix: NotRequired[str],
+    status: NotRequired[ExportTaskStatusTypeDef],  # (1)
+    executionInfo: NotRequired[ExportTaskExecutionInfoTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ExportTaskStatusTypeDef](./type_defs.md#exporttaskstatustypedef) 
+2. See [:material-code-braces: ExportTaskExecutionInfoTypeDef](./type_defs.md#exporttaskexecutioninfotypedef) 
+## FilterLogEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import FilterLogEventsResponseTypeDef
+
+def get_value() -> FilterLogEventsResponseTypeDef:
+    return {
+        "events": ...,
+        "searchedLogStreams": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class FilterLogEventsResponseTypeDef(TypedDict):
+    events: List[FilteredLogEventTypeDef],  # (1)
+    searchedLogStreams: List[SearchedLogStreamTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: FilteredLogEventTypeDef](./type_defs.md#filteredlogeventtypedef) 
+2. See [:material-code-braces: SearchedLogStreamTypeDef](./type_defs.md#searchedlogstreamtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLogEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetLogEventsResponseTypeDef
+
+def get_value() -> GetLogEventsResponseTypeDef:
+    return {
+        "events": ...,
+        "nextForwardToken": ...,
+        "nextBackwardToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLogEventsResponseTypeDef(TypedDict):
+    events: List[OutputLogEventTypeDef],  # (1)
+    nextForwardToken: str,
+    nextBackwardToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OutputLogEventTypeDef](./type_defs.md#outputlogeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLogGroupFieldsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetLogGroupFieldsResponseTypeDef
+
+def get_value() -> GetLogGroupFieldsResponseTypeDef:
+    return {
+        "logGroupFields": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLogGroupFieldsResponseTypeDef(TypedDict):
+    logGroupFields: List[LogGroupFieldTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogGroupFieldTypeDef](./type_defs.md#loggroupfieldtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetQueryResultsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetQueryResultsResponseTypeDef
+
+def get_value() -> GetQueryResultsResponseTypeDef:
+    return {
+        "results": ...,
+        "statistics": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueryResultsResponseTypeDef(TypedDict):
+    results: List[List[ResultFieldTypeDef]],  # (1)
+    statistics: QueryStatisticsTypeDef,  # (2)
+    status: QueryStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ResultFieldTypeDef](./type_defs.md#resultfieldtypedef) 
+2. See [:material-code-braces: QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef) 
+3. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutLogEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutLogEventsRequestRequestTypeDef
+
+def get_value() -> PutLogEventsRequestRequestTypeDef:
+    return {
+        "logGroupName": ...,
+        "logStreamName": ...,
+        "logEvents": ...,
+    }
+```
+
+```python title="Definition"
+class PutLogEventsRequestRequestTypeDef(TypedDict):
+    logGroupName: str,
+    logStreamName: str,
+    logEvents: Sequence[InputLogEventTypeDef],  # (1)
+    sequenceToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef) 
 ## TestMetricFilterResponseTypeDef
 
 ```python title="Usage Example"
@@ -1920,21 +1828,113 @@ class TestMetricFilterResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MetricFilterMatchRecordTypeDef](./type_defs.md#metricfiltermatchrecordtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UntagLogGroupRequestRequestTypeDef
+## MetricFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_logs.type_defs import UntagLogGroupRequestRequestTypeDef
+from mypy_boto3_logs.type_defs import MetricFilterTypeDef
 
-def get_value() -> UntagLogGroupRequestRequestTypeDef:
+def get_value() -> MetricFilterTypeDef:
     return {
-        "logGroupName": ...,
-        "tags": ...,
+        "filterName": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagLogGroupRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
-    tags: Sequence[str],
+class MetricFilterTypeDef(TypedDict):
+    filterName: NotRequired[str],
+    filterPattern: NotRequired[str],
+    metricTransformations: NotRequired[List[MetricTransformationTypeDef]],  # (1)
+    creationTime: NotRequired[int],
+    logGroupName: NotRequired[str],
 ```
 
+1. See [:material-code-braces: MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef) 
+## PutMetricFilterRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutMetricFilterRequestRequestTypeDef
+
+def get_value() -> PutMetricFilterRequestRequestTypeDef:
+    return {
+        "logGroupName": ...,
+        "filterName": ...,
+        "filterPattern": ...,
+        "metricTransformations": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetricFilterRequestRequestTypeDef(TypedDict):
+    logGroupName: str,
+    filterName: str,
+    filterPattern: str,
+    metricTransformations: Sequence[MetricTransformationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef) 
+## PutLogEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutLogEventsResponseTypeDef
+
+def get_value() -> PutLogEventsResponseTypeDef:
+    return {
+        "nextSequenceToken": ...,
+        "rejectedLogEventsInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutLogEventsResponseTypeDef(TypedDict):
+    nextSequenceToken: str,
+    rejectedLogEventsInfo: RejectedLogEventsInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RejectedLogEventsInfoTypeDef](./type_defs.md#rejectedlogeventsinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExportTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeExportTasksResponseTypeDef
+
+def get_value() -> DescribeExportTasksResponseTypeDef:
+    return {
+        "exportTasks": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExportTasksResponseTypeDef(TypedDict):
+    exportTasks: List[ExportTaskTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExportTaskTypeDef](./type_defs.md#exporttasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMetricFiltersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DescribeMetricFiltersResponseTypeDef
+
+def get_value() -> DescribeMetricFiltersResponseTypeDef:
+    return {
+        "metricFilters": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMetricFiltersResponseTypeDef(TypedDict):
+    metricFilters: List[MetricFilterTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricFilterTypeDef](./type_defs.md#metricfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

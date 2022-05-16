@@ -127,13 +127,13 @@ def get_value() -> DeleteReportDefinitionRequestRequestTypeDef:
 ```
 
 - [DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef)
+- [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 - [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef)
 - [DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef](./type_defs.md#describereportdefinitionsrequestdescribereportdefinitionspaginatetypedef)
-- [DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef)
 - [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)
 - [ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef)
-- [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

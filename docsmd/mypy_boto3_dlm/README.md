@@ -101,45 +101,48 @@ def get_value() -> EventSourceValuesType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_dlm.type_defs import ActionTypeDef
+from mypy_boto3_dlm.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> ActionTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Name": ...,
-        "CrossRegionCopy": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
-- [ActionTypeDef](./type_defs.md#actiontypedef)
-- [CreateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#createlifecyclepolicyrequestrequesttypedef)
-- [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [CreateRuleTypeDef](./type_defs.md#createruletypedef)
-- [CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)
-- [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
 - [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
-- [CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)
+- [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
+- [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
 - [DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef)
 - [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
-- [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - [EventParametersTypeDef](./type_defs.md#eventparameterstypedef)
-- [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
 - [FastRestoreRuleTypeDef](./type_defs.md#fastrestoreruletypedef)
 - [GetLifecyclePoliciesRequestRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequestrequesttypedef)
-- [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef)
-- [GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef)
-- [GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef)
 - [LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef)
-- [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
+- [GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
 - [RetainRuleTypeDef](./type_defs.md#retainruletypedef)
-- [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - [ShareRuleTypeDef](./type_defs.md#shareruletypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)
+- [CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)
+- [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
+- [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef)
+- [ActionTypeDef](./type_defs.md#actiontypedef)
+- [ScheduleTypeDef](./type_defs.md#scheduletypedef)
+- [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
+- [CreateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#createlifecyclepolicyrequestrequesttypedef)
+- [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
 - [UpdateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequestrequesttypedef)
+- [GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef)
 

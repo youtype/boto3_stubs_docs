@@ -104,13 +104,13 @@ def get_value() -> BatchGetRecordErrorTypeDef:
 
 - [BatchGetRecordErrorTypeDef](./type_defs.md#batchgetrecorderrortypedef)
 - [BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)
-- [BatchGetRecordRequestRequestTypeDef](./type_defs.md#batchgetrecordrequestrequesttypedef)
-- [BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef)
-- [BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef)
-- [DeleteRecordRequestRequestTypeDef](./type_defs.md#deleterecordrequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)
+- [DeleteRecordRequestRequestTypeDef](./type_defs.md#deleterecordrequestrequesttypedef)
 - [GetRecordRequestRequestTypeDef](./type_defs.md#getrecordrequestrequesttypedef)
+- [BatchGetRecordRequestRequestTypeDef](./type_defs.md#batchgetrecordrequestrequesttypedef)
+- [BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef)
 - [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef)
 - [PutRecordRequestRequestTypeDef](./type_defs.md#putrecordrequestrequesttypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef)
 

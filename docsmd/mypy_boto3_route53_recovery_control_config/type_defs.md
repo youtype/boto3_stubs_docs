@@ -7,36 +7,27 @@
     Auto-generated documentation for [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
     type annotations stubs module [mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
-## AssertionRuleTypeDef
+## RuleConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import AssertionRuleTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import RuleConfigTypeDef
 
-def get_value() -> AssertionRuleTypeDef:
+def get_value() -> RuleConfigTypeDef:
     return {
-        "AssertedControls": ...,
-        "ControlPanelArn": ...,
-        "Name": ...,
-        "RuleConfig": ...,
-        "SafetyRuleArn": ...,
-        "Status": ...,
-        "WaitPeriodMs": ...,
+        "Inverted": ...,
+        "Threshold": ...,
+        "Type": ...,
     }
 ```
 
 ```python title="Definition"
-class AssertionRuleTypeDef(TypedDict):
-    AssertedControls: List[str],
-    ControlPanelArn: str,
-    Name: str,
-    RuleConfig: RuleConfigTypeDef,  # (1)
-    SafetyRuleArn: str,
-    Status: StatusType,  # (2)
-    WaitPeriodMs: int,
+class RuleConfigTypeDef(TypedDict):
+    Inverted: bool,
+    Threshold: int,
+    Type: RuleTypeType,  # (1)
 ```
 
-1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+1. See [:material-code-brackets: RuleTypeType](./literals.md#ruletypetype) 
 ## AssertionRuleUpdateTypeDef
 
 ```python title="Usage Example"
@@ -74,27 +65,6 @@ class ClusterEndpointTypeDef(TypedDict):
     Region: NotRequired[str],
 ```
 
-## ClusterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ClusterTypeDef
-
-def get_value() -> ClusterTypeDef:
-    return {
-        "ClusterArn": ...,
-    }
-```
-
-```python title="Definition"
-class ClusterTypeDef(TypedDict):
-    ClusterArn: NotRequired[str],
-    ClusterEndpoints: NotRequired[List[ClusterEndpointTypeDef]],  # (1)
-    Name: NotRequired[str],
-    Status: NotRequired[StatusType],  # (2)
-```
-
-1. See [:material-code-braces: ClusterEndpointTypeDef](./type_defs.md#clusterendpointtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## ControlPanelTypeDef
 
 ```python title="Usage Example"
@@ -135,26 +105,30 @@ class CreateClusterRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateClusterResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import CreateClusterResponseTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateClusterResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Cluster": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateClusterResponseTypeDef(TypedDict):
-    Cluster: ClusterTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateControlPanelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -175,26 +149,6 @@ class CreateControlPanelRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreateControlPanelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import CreateControlPanelResponseTypeDef
-
-def get_value() -> CreateControlPanelResponseTypeDef:
-    return {
-        "ControlPanel": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateControlPanelResponseTypeDef(TypedDict):
-    ControlPanel: ControlPanelTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRoutingControlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -215,70 +169,26 @@ class CreateRoutingControlRequestRequestTypeDef(TypedDict):
     ControlPanelArn: NotRequired[str],
 ```
 
-## CreateRoutingControlResponseTypeDef
+## RoutingControlTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import CreateRoutingControlResponseTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import RoutingControlTypeDef
 
-def get_value() -> CreateRoutingControlResponseTypeDef:
+def get_value() -> RoutingControlTypeDef:
     return {
-        "RoutingControl": ...,
-        "ResponseMetadata": ...,
+        "ControlPanelArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateRoutingControlResponseTypeDef(TypedDict):
-    RoutingControl: RoutingControlTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RoutingControlTypeDef(TypedDict):
+    ControlPanelArn: NotRequired[str],
+    Name: NotRequired[str],
+    RoutingControlArn: NotRequired[str],
+    Status: NotRequired[StatusType],  # (1)
 ```
 
-1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSafetyRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import CreateSafetyRuleRequestRequestTypeDef
-
-def get_value() -> CreateSafetyRuleRequestRequestTypeDef:
-    return {
-        "AssertionRule": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSafetyRuleRequestRequestTypeDef(TypedDict):
-    AssertionRule: NotRequired[NewAssertionRuleTypeDef],  # (1)
-    ClientToken: NotRequired[str],
-    GatingRule: NotRequired[NewGatingRuleTypeDef],  # (2)
-    Tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef) 
-2. See [:material-code-braces: NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef) 
-## CreateSafetyRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import CreateSafetyRuleResponseTypeDef
-
-def get_value() -> CreateSafetyRuleResponseTypeDef:
-    return {
-        "AssertionRule": ...,
-        "GatingRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSafetyRuleResponseTypeDef(TypedDict):
-    AssertionRule: AssertionRuleTypeDef,  # (1)
-    GatingRule: GatingRuleTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
-2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## DeleteClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -343,42 +253,23 @@ class DeleteSafetyRuleRequestRequestTypeDef(TypedDict):
     SafetyRuleArn: str,
 ```
 
-## DescribeClusterRequestClusterCreatedWaitTypeDef
+## WaiterConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterRequestClusterCreatedWaitTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import WaiterConfigTypeDef
 
-def get_value() -> DescribeClusterRequestClusterCreatedWaitTypeDef:
+def get_value() -> WaiterConfigTypeDef:
     return {
-        "ClusterArn": ...,
+        "Delay": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeClusterRequestClusterCreatedWaitTypeDef(TypedDict):
-    ClusterArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
 ```
 
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeClusterRequestClusterDeletedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterRequestClusterDeletedWaitTypeDef
-
-def get_value() -> DescribeClusterRequestClusterDeletedWaitTypeDef:
-    return {
-        "ClusterArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeClusterRequestClusterDeletedWaitTypeDef(TypedDict):
-    ClusterArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -395,62 +286,6 @@ class DescribeClusterRequestRequestTypeDef(TypedDict):
     ClusterArn: str,
 ```
 
-## DescribeClusterResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterResponseTypeDef
-
-def get_value() -> DescribeClusterResponseTypeDef:
-    return {
-        "Cluster": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeClusterResponseTypeDef(TypedDict):
-    Cluster: ClusterTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeControlPanelRequestControlPanelCreatedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelRequestControlPanelCreatedWaitTypeDef
-
-def get_value() -> DescribeControlPanelRequestControlPanelCreatedWaitTypeDef:
-    return {
-        "ControlPanelArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeControlPanelRequestControlPanelCreatedWaitTypeDef(TypedDict):
-    ControlPanelArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeControlPanelRequestControlPanelDeletedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelRequestControlPanelDeletedWaitTypeDef
-
-def get_value() -> DescribeControlPanelRequestControlPanelDeletedWaitTypeDef:
-    return {
-        "ControlPanelArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeControlPanelRequestControlPanelDeletedWaitTypeDef(TypedDict):
-    ControlPanelArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeControlPanelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -467,26 +302,6 @@ class DescribeControlPanelRequestRequestTypeDef(TypedDict):
     ControlPanelArn: str,
 ```
 
-## DescribeControlPanelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelResponseTypeDef
-
-def get_value() -> DescribeControlPanelResponseTypeDef:
-    return {
-        "ControlPanel": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeControlPanelResponseTypeDef(TypedDict):
-    ControlPanel: ControlPanelTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRoutingControlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -503,62 +318,6 @@ class DescribeRoutingControlRequestRequestTypeDef(TypedDict):
     RoutingControlArn: str,
 ```
 
-## DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef
-
-def get_value() -> DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef:
-    return {
-        "RoutingControlArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef(TypedDict):
-    RoutingControlArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef
-
-def get_value() -> DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef:
-    return {
-        "RoutingControlArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef(TypedDict):
-    RoutingControlArn: str,
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeRoutingControlResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlResponseTypeDef
-
-def get_value() -> DescribeRoutingControlResponseTypeDef:
-    return {
-        "RoutingControl": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeRoutingControlResponseTypeDef(TypedDict):
-    RoutingControl: RoutingControlTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSafetyRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -575,61 +334,6 @@ class DescribeSafetyRuleRequestRequestTypeDef(TypedDict):
     SafetyRuleArn: str,
 ```
 
-## DescribeSafetyRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import DescribeSafetyRuleResponseTypeDef
-
-def get_value() -> DescribeSafetyRuleResponseTypeDef:
-    return {
-        "AssertionRule": ...,
-        "GatingRule": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSafetyRuleResponseTypeDef(TypedDict):
-    AssertionRule: AssertionRuleTypeDef,  # (1)
-    GatingRule: GatingRuleTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
-2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GatingRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import GatingRuleTypeDef
-
-def get_value() -> GatingRuleTypeDef:
-    return {
-        "ControlPanelArn": ...,
-        "GatingControls": ...,
-        "Name": ...,
-        "RuleConfig": ...,
-        "SafetyRuleArn": ...,
-        "Status": ...,
-        "TargetControls": ...,
-        "WaitPeriodMs": ...,
-    }
-```
-
-```python title="Definition"
-class GatingRuleTypeDef(TypedDict):
-    ControlPanelArn: str,
-    GatingControls: List[str],
-    Name: str,
-    RuleConfig: RuleConfigTypeDef,  # (1)
-    SafetyRuleArn: str,
-    Status: StatusType,  # (2)
-    TargetControls: List[str],
-    WaitPeriodMs: int,
-```
-
-1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## GatingRuleUpdateTypeDef
 
 ```python title="Usage Example"
@@ -668,27 +372,6 @@ class ListAssociatedRoute53HealthChecksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListAssociatedRoute53HealthChecksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListAssociatedRoute53HealthChecksResponseTypeDef
-
-def get_value() -> ListAssociatedRoute53HealthChecksResponseTypeDef:
-    return {
-        "HealthCheckIds": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAssociatedRoute53HealthChecksResponseTypeDef(TypedDict):
-    HealthCheckIds: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListClustersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -706,28 +389,6 @@ class ListClustersRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListClustersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListClustersResponseTypeDef
-
-def get_value() -> ListClustersResponseTypeDef:
-    return {
-        "Clusters": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListClustersResponseTypeDef(TypedDict):
-    Clusters: List[ClusterTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListControlPanelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -746,28 +407,6 @@ class ListControlPanelsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListControlPanelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListControlPanelsResponseTypeDef
-
-def get_value() -> ListControlPanelsResponseTypeDef:
-    return {
-        "ControlPanels": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListControlPanelsResponseTypeDef(TypedDict):
-    ControlPanels: List[ControlPanelTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRoutingControlsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -786,28 +425,6 @@ class ListRoutingControlsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListRoutingControlsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListRoutingControlsResponseTypeDef
-
-def get_value() -> ListRoutingControlsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "RoutingControls": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRoutingControlsResponseTypeDef(TypedDict):
-    NextToken: str,
-    RoutingControls: List[RoutingControlTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSafetyRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -826,28 +443,6 @@ class ListSafetyRulesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListSafetyRulesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListSafetyRulesResponseTypeDef
-
-def get_value() -> ListSafetyRulesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "SafetyRules": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSafetyRulesResponseTypeDef(TypedDict):
-    NextToken: str,
-    SafetyRules: List[RuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -864,161 +459,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NewAssertionRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import NewAssertionRuleTypeDef
-
-def get_value() -> NewAssertionRuleTypeDef:
-    return {
-        "AssertedControls": ...,
-        "ControlPanelArn": ...,
-        "Name": ...,
-        "RuleConfig": ...,
-        "WaitPeriodMs": ...,
-    }
-```
-
-```python title="Definition"
-class NewAssertionRuleTypeDef(TypedDict):
-    AssertedControls: Sequence[str],
-    ControlPanelArn: str,
-    Name: str,
-    RuleConfig: RuleConfigTypeDef,  # (1)
-    WaitPeriodMs: int,
-```
-
-1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
-## NewGatingRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import NewGatingRuleTypeDef
-
-def get_value() -> NewGatingRuleTypeDef:
-    return {
-        "ControlPanelArn": ...,
-        "GatingControls": ...,
-        "Name": ...,
-        "RuleConfig": ...,
-        "TargetControls": ...,
-        "WaitPeriodMs": ...,
-    }
-```
-
-```python title="Definition"
-class NewGatingRuleTypeDef(TypedDict):
-    ControlPanelArn: str,
-    GatingControls: Sequence[str],
-    Name: str,
-    RuleConfig: RuleConfigTypeDef,  # (1)
-    TargetControls: Sequence[str],
-    WaitPeriodMs: int,
-```
-
-1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RoutingControlTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import RoutingControlTypeDef
-
-def get_value() -> RoutingControlTypeDef:
-    return {
-        "ControlPanelArn": ...,
-    }
-```
-
-```python title="Definition"
-class RoutingControlTypeDef(TypedDict):
-    ControlPanelArn: NotRequired[str],
-    Name: NotRequired[str],
-    RoutingControlArn: NotRequired[str],
-    Status: NotRequired[StatusType],  # (1)
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## RuleConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import RuleConfigTypeDef
-
-def get_value() -> RuleConfigTypeDef:
-    return {
-        "Inverted": ...,
-        "Threshold": ...,
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class RuleConfigTypeDef(TypedDict):
-    Inverted: bool,
-    Threshold: int,
-    Type: RuleTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: RuleTypeType](./literals.md#ruletypetype) 
-## RuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import RuleTypeDef
-
-def get_value() -> RuleTypeDef:
-    return {
-        "ASSERTION": ...,
-    }
-```
-
-```python title="Definition"
-class RuleTypeDef(TypedDict):
-    ASSERTION: NotRequired[AssertionRuleTypeDef],  # (1)
-    GATING: NotRequired[GatingRuleTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
-2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1073,6 +513,261 @@ class UpdateControlPanelRequestRequestTypeDef(TypedDict):
     ControlPanelName: str,
 ```
 
+## UpdateRoutingControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import UpdateRoutingControlRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingControlRequestRequestTypeDef:
+    return {
+        "RoutingControlArn": ...,
+        "RoutingControlName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRoutingControlRequestRequestTypeDef(TypedDict):
+    RoutingControlArn: str,
+    RoutingControlName: str,
+```
+
+## AssertionRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import AssertionRuleTypeDef
+
+def get_value() -> AssertionRuleTypeDef:
+    return {
+        "AssertedControls": ...,
+        "ControlPanelArn": ...,
+        "Name": ...,
+        "RuleConfig": ...,
+        "SafetyRuleArn": ...,
+        "Status": ...,
+        "WaitPeriodMs": ...,
+    }
+```
+
+```python title="Definition"
+class AssertionRuleTypeDef(TypedDict):
+    AssertedControls: List[str],
+    ControlPanelArn: str,
+    Name: str,
+    RuleConfig: RuleConfigTypeDef,  # (1)
+    SafetyRuleArn: str,
+    Status: StatusType,  # (2)
+    WaitPeriodMs: int,
+```
+
+1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## GatingRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import GatingRuleTypeDef
+
+def get_value() -> GatingRuleTypeDef:
+    return {
+        "ControlPanelArn": ...,
+        "GatingControls": ...,
+        "Name": ...,
+        "RuleConfig": ...,
+        "SafetyRuleArn": ...,
+        "Status": ...,
+        "TargetControls": ...,
+        "WaitPeriodMs": ...,
+    }
+```
+
+```python title="Definition"
+class GatingRuleTypeDef(TypedDict):
+    ControlPanelArn: str,
+    GatingControls: List[str],
+    Name: str,
+    RuleConfig: RuleConfigTypeDef,  # (1)
+    SafetyRuleArn: str,
+    Status: StatusType,  # (2)
+    TargetControls: List[str],
+    WaitPeriodMs: int,
+```
+
+1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## NewAssertionRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import NewAssertionRuleTypeDef
+
+def get_value() -> NewAssertionRuleTypeDef:
+    return {
+        "AssertedControls": ...,
+        "ControlPanelArn": ...,
+        "Name": ...,
+        "RuleConfig": ...,
+        "WaitPeriodMs": ...,
+    }
+```
+
+```python title="Definition"
+class NewAssertionRuleTypeDef(TypedDict):
+    AssertedControls: Sequence[str],
+    ControlPanelArn: str,
+    Name: str,
+    RuleConfig: RuleConfigTypeDef,  # (1)
+    WaitPeriodMs: int,
+```
+
+1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
+## NewGatingRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import NewGatingRuleTypeDef
+
+def get_value() -> NewGatingRuleTypeDef:
+    return {
+        "ControlPanelArn": ...,
+        "GatingControls": ...,
+        "Name": ...,
+        "RuleConfig": ...,
+        "TargetControls": ...,
+        "WaitPeriodMs": ...,
+    }
+```
+
+```python title="Definition"
+class NewGatingRuleTypeDef(TypedDict):
+    ControlPanelArn: str,
+    GatingControls: Sequence[str],
+    Name: str,
+    RuleConfig: RuleConfigTypeDef,  # (1)
+    TargetControls: Sequence[str],
+    WaitPeriodMs: int,
+```
+
+1. See [:material-code-braces: RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef) 
+## ClusterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "ClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    ClusterArn: NotRequired[str],
+    ClusterEndpoints: NotRequired[List[ClusterEndpointTypeDef]],  # (1)
+    Name: NotRequired[str],
+    Status: NotRequired[StatusType],  # (2)
+```
+
+1. See [:material-code-braces: ClusterEndpointTypeDef](./type_defs.md#clusterendpointtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## CreateControlPanelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import CreateControlPanelResponseTypeDef
+
+def get_value() -> CreateControlPanelResponseTypeDef:
+    return {
+        "ControlPanel": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateControlPanelResponseTypeDef(TypedDict):
+    ControlPanel: ControlPanelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeControlPanelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelResponseTypeDef
+
+def get_value() -> DescribeControlPanelResponseTypeDef:
+    return {
+        "ControlPanel": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeControlPanelResponseTypeDef(TypedDict):
+    ControlPanel: ControlPanelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociatedRoute53HealthChecksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListAssociatedRoute53HealthChecksResponseTypeDef
+
+def get_value() -> ListAssociatedRoute53HealthChecksResponseTypeDef:
+    return {
+        "HealthCheckIds": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedRoute53HealthChecksResponseTypeDef(TypedDict):
+    HealthCheckIds: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListControlPanelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListControlPanelsResponseTypeDef
+
+def get_value() -> ListControlPanelsResponseTypeDef:
+    return {
+        "ControlPanels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListControlPanelsResponseTypeDef(TypedDict):
+    ControlPanels: List[ControlPanelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateControlPanelResponseTypeDef
 
 ```python title="Usage Example"
@@ -1093,24 +788,68 @@ class UpdateControlPanelResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ControlPanelTypeDef](./type_defs.md#controlpaneltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateRoutingControlRequestRequestTypeDef
+## CreateRoutingControlResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import UpdateRoutingControlRequestRequestTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import CreateRoutingControlResponseTypeDef
 
-def get_value() -> UpdateRoutingControlRequestRequestTypeDef:
+def get_value() -> CreateRoutingControlResponseTypeDef:
     return {
-        "RoutingControlArn": ...,
-        "RoutingControlName": ...,
+        "RoutingControl": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateRoutingControlRequestRequestTypeDef(TypedDict):
-    RoutingControlArn: str,
-    RoutingControlName: str,
+class CreateRoutingControlResponseTypeDef(TypedDict):
+    RoutingControl: RoutingControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRoutingControlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlResponseTypeDef
+
+def get_value() -> DescribeRoutingControlResponseTypeDef:
+    return {
+        "RoutingControl": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRoutingControlResponseTypeDef(TypedDict):
+    RoutingControl: RoutingControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutingControlsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListRoutingControlsResponseTypeDef
+
+def get_value() -> ListRoutingControlsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RoutingControls": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingControlsResponseTypeDef(TypedDict):
+    NextToken: str,
+    RoutingControls: List[RoutingControlTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRoutingControlResponseTypeDef
 
 ```python title="Usage Example"
@@ -1131,6 +870,114 @@ class UpdateRoutingControlResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RoutingControlTypeDef](./type_defs.md#routingcontroltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClusterRequestClusterCreatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterRequestClusterCreatedWaitTypeDef
+
+def get_value() -> DescribeClusterRequestClusterCreatedWaitTypeDef:
+    return {
+        "ClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterRequestClusterCreatedWaitTypeDef(TypedDict):
+    ClusterArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClusterRequestClusterDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterRequestClusterDeletedWaitTypeDef
+
+def get_value() -> DescribeClusterRequestClusterDeletedWaitTypeDef:
+    return {
+        "ClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterRequestClusterDeletedWaitTypeDef(TypedDict):
+    ClusterArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeControlPanelRequestControlPanelCreatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelRequestControlPanelCreatedWaitTypeDef
+
+def get_value() -> DescribeControlPanelRequestControlPanelCreatedWaitTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeControlPanelRequestControlPanelCreatedWaitTypeDef(TypedDict):
+    ControlPanelArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeControlPanelRequestControlPanelDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControlPanelRequestControlPanelDeletedWaitTypeDef
+
+def get_value() -> DescribeControlPanelRequestControlPanelDeletedWaitTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeControlPanelRequestControlPanelDeletedWaitTypeDef(TypedDict):
+    ControlPanelArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef
+
+def get_value() -> DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef:
+    return {
+        "RoutingControlArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef(TypedDict):
+    RoutingControlArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef
+
+def get_value() -> DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef:
+    return {
+        "RoutingControlArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef(TypedDict):
+    RoutingControlArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## UpdateSafetyRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1150,6 +997,71 @@ class UpdateSafetyRuleRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssertionRuleUpdateTypeDef](./type_defs.md#assertionruleupdatetypedef) 
 2. See [:material-code-braces: GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef) 
+## CreateSafetyRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import CreateSafetyRuleResponseTypeDef
+
+def get_value() -> CreateSafetyRuleResponseTypeDef:
+    return {
+        "AssertionRule": ...,
+        "GatingRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSafetyRuleResponseTypeDef(TypedDict):
+    AssertionRule: AssertionRuleTypeDef,  # (1)
+    GatingRule: GatingRuleTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
+2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSafetyRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeSafetyRuleResponseTypeDef
+
+def get_value() -> DescribeSafetyRuleResponseTypeDef:
+    return {
+        "AssertionRule": ...,
+        "GatingRule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSafetyRuleResponseTypeDef(TypedDict):
+    AssertionRule: AssertionRuleTypeDef,  # (1)
+    GatingRule: GatingRuleTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
+2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "ASSERTION": ...,
+    }
+```
+
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    ASSERTION: NotRequired[AssertionRuleTypeDef],  # (1)
+    GATING: NotRequired[GatingRuleTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
+2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
 ## UpdateSafetyRuleResponseTypeDef
 
 ```python title="Usage Example"
@@ -1173,20 +1085,108 @@ class UpdateSafetyRuleResponseTypeDef(TypedDict):
 1. See [:material-code-braces: AssertionRuleTypeDef](./type_defs.md#assertionruletypedef) 
 2. See [:material-code-braces: GatingRuleTypeDef](./type_defs.md#gatingruletypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## WaiterConfigTypeDef
+## CreateSafetyRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_route53_recovery_control_config.type_defs import WaiterConfigTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import CreateSafetyRuleRequestRequestTypeDef
 
-def get_value() -> WaiterConfigTypeDef:
+def get_value() -> CreateSafetyRuleRequestRequestTypeDef:
     return {
-        "Delay": ...,
+        "AssertionRule": ...,
     }
 ```
 
 ```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
+class CreateSafetyRuleRequestRequestTypeDef(TypedDict):
+    AssertionRule: NotRequired[NewAssertionRuleTypeDef],  # (1)
+    ClientToken: NotRequired[str],
+    GatingRule: NotRequired[NewGatingRuleTypeDef],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
 ```
 
+1. See [:material-code-braces: NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef) 
+2. See [:material-code-braces: NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef) 
+## CreateClusterResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClusterResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import DescribeClusterResponseTypeDef
+
+def get_value() -> DescribeClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListClustersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListClustersResponseTypeDef
+
+def get_value() -> ListClustersResponseTypeDef:
+    return {
+        "Clusters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersResponseTypeDef(TypedDict):
+    Clusters: List[ClusterTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSafetyRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListSafetyRulesResponseTypeDef
+
+def get_value() -> ListSafetyRulesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SafetyRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSafetyRulesResponseTypeDef(TypedDict):
+    NextToken: str,
+    SafetyRules: List[RuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36057,96 +36057,100 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iottwinmaker.type_defs</span> <span class="kn">import</span> <span class="n">BatchPutPropertyErrorEntryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iottwinmaker.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BatchPutPropertyErrorEntryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;errors&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#batchputpropertyerrorentrytypedef">BatchPutPropertyErrorEntryTypeDef</a></li>
-<li><a href="type_defs/#batchputpropertyerrortypedef">BatchPutPropertyErrorTypeDef</a></li>
-<li><a href="type_defs/#batchputpropertyvaluesrequestrequesttypedef">BatchPutPropertyValuesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#batchputpropertyvaluesresponsetypedef">BatchPutPropertyValuesResponseTypeDef</a></li>
-<li><a href="type_defs/#componentrequesttypedef">ComponentRequestTypeDef</a></li>
-<li><a href="type_defs/#componentresponsetypedef">ComponentResponseTypeDef</a></li>
-<li><a href="type_defs/#componenttypesummarytypedef">ComponentTypeSummaryTypeDef</a></li>
-<li><a href="type_defs/#componentupdaterequesttypedef">ComponentUpdateRequestTypeDef</a></li>
-<li><a href="type_defs/#createcomponenttyperequestrequesttypedef">CreateComponentTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createcomponenttyperesponsetypedef">CreateComponentTypeResponseTypeDef</a></li>
-<li><a href="type_defs/#createentityrequestrequesttypedef">CreateEntityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createentityresponsetypedef">CreateEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#propertydefinitionrequesttypedef">PropertyDefinitionRequestTypeDef</a></li>
 <li><a href="type_defs/#createscenerequestrequesttypedef">CreateSceneRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createsceneresponsetypedef">CreateSceneResponseTypeDef</a></li>
 <li><a href="type_defs/#createworkspacerequestrequesttypedef">CreateWorkspaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createworkspaceresponsetypedef">CreateWorkspaceResponseTypeDef</a></li>
-<li><a href="type_defs/#dataconnectortypedef">DataConnectorTypeDef</a></li>
-<li><a href="type_defs/#datatypetypedef">DataTypeTypeDef</a></li>
-<li><a href="type_defs/#datavaluetypedef">DataValueTypeDef</a></li>
+<li><a href="type_defs/#lambdafunctiontypedef">LambdaFunctionTypeDef</a></li>
+<li><a href="type_defs/#relationshiptypedef">RelationshipTypeDef</a></li>
+<li><a href="type_defs/#relationshipvaluetypedef">RelationshipValueTypeDef</a></li>
 <li><a href="type_defs/#deletecomponenttyperequestrequesttypedef">DeleteComponentTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletecomponenttyperesponsetypedef">DeleteComponentTypeResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteentityrequestrequesttypedef">DeleteEntityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteentityresponsetypedef">DeleteEntityResponseTypeDef</a></li>
 <li><a href="type_defs/#deletescenerequestrequesttypedef">DeleteSceneRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteworkspacerequestrequesttypedef">DeleteWorkspaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#entitypropertyreferencetypedef">EntityPropertyReferenceTypeDef</a></li>
-<li><a href="type_defs/#entitysummarytypedef">EntitySummaryTypeDef</a></li>
 <li><a href="type_defs/#errordetailstypedef">ErrorDetailsTypeDef</a></li>
-<li><a href="type_defs/#functionrequesttypedef">FunctionRequestTypeDef</a></li>
-<li><a href="type_defs/#functionresponsetypedef">FunctionResponseTypeDef</a></li>
 <li><a href="type_defs/#getcomponenttyperequestrequesttypedef">GetComponentTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcomponenttyperesponsetypedef">GetComponentTypeResponseTypeDef</a></li>
-<li><a href="type_defs/#getentityrequestrequesttypedef">GetEntityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getentityresponsetypedef">GetEntityResponseTypeDef</a></li>
-<li><a href="type_defs/#getpropertyvaluehistoryrequestrequesttypedef">GetPropertyValueHistoryRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getpropertyvaluehistoryresponsetypedef">GetPropertyValueHistoryResponseTypeDef</a></li>
-<li><a href="type_defs/#getpropertyvaluerequestrequesttypedef">GetPropertyValueRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getpropertyvalueresponsetypedef">GetPropertyValueResponseTypeDef</a></li>
-<li><a href="type_defs/#getscenerequestrequesttypedef">GetSceneRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getsceneresponsetypedef">GetSceneResponseTypeDef</a></li>
-<li><a href="type_defs/#getworkspacerequestrequesttypedef">GetWorkspaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getworkspaceresponsetypedef">GetWorkspaceResponseTypeDef</a></li>
-<li><a href="type_defs/#interpolationparameterstypedef">InterpolationParametersTypeDef</a></li>
-<li><a href="type_defs/#lambdafunctiontypedef">LambdaFunctionTypeDef</a></li>
-<li><a href="type_defs/#listcomponenttypesfiltertypedef">ListComponentTypesFilterTypeDef</a></li>
-<li><a href="type_defs/#listcomponenttypesrequestrequesttypedef">ListComponentTypesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcomponenttypesresponsetypedef">ListComponentTypesResponseTypeDef</a></li>
-<li><a href="type_defs/#listentitiesfiltertypedef">ListEntitiesFilterTypeDef</a></li>
-<li><a href="type_defs/#listentitiesrequestrequesttypedef">ListEntitiesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listentitiesresponsetypedef">ListEntitiesResponseTypeDef</a></li>
-<li><a href="type_defs/#listscenesrequestrequesttypedef">ListScenesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listscenesresponsetypedef">ListScenesResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#listworkspacesrequestrequesttypedef">ListWorkspacesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listworkspacesresponsetypedef">ListWorkspacesResponseTypeDef</a></li>
-<li><a href="type_defs/#parententityupdaterequesttypedef">ParentEntityUpdateRequestTypeDef</a></li>
-<li><a href="type_defs/#propertydefinitionrequesttypedef">PropertyDefinitionRequestTypeDef</a></li>
 <li><a href="type_defs/#propertydefinitionresponsetypedef">PropertyDefinitionResponseTypeDef</a></li>
+<li><a href="type_defs/#getentityrequestrequesttypedef">GetEntityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#interpolationparameterstypedef">InterpolationParametersTypeDef</a></li>
 <li><a href="type_defs/#propertyfiltertypedef">PropertyFilterTypeDef</a></li>
-<li><a href="type_defs/#propertylatestvaluetypedef">PropertyLatestValueTypeDef</a></li>
-<li><a href="type_defs/#propertyrequesttypedef">PropertyRequestTypeDef</a></li>
-<li><a href="type_defs/#propertyresponsetypedef">PropertyResponseTypeDef</a></li>
-<li><a href="type_defs/#propertyvalueentrytypedef">PropertyValueEntryTypeDef</a></li>
-<li><a href="type_defs/#propertyvaluehistorytypedef">PropertyValueHistoryTypeDef</a></li>
-<li><a href="type_defs/#propertyvaluetypedef">PropertyValueTypeDef</a></li>
-<li><a href="type_defs/#relationshiptypedef">RelationshipTypeDef</a></li>
-<li><a href="type_defs/#relationshipvaluetypedef">RelationshipValueTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#getpropertyvaluerequestrequesttypedef">GetPropertyValueRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getscenerequestrequesttypedef">GetSceneRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getworkspacerequestrequesttypedef">GetWorkspaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcomponenttypesfiltertypedef">ListComponentTypesFilterTypeDef</a></li>
+<li><a href="type_defs/#listentitiesfiltertypedef">ListEntitiesFilterTypeDef</a></li>
+<li><a href="type_defs/#listscenesrequestrequesttypedef">ListScenesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#scenesummarytypedef">SceneSummaryTypeDef</a></li>
-<li><a href="type_defs/#statustypedef">StatusTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listworkspacesrequestrequesttypedef">ListWorkspacesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#workspacesummarytypedef">WorkspaceSummaryTypeDef</a></li>
+<li><a href="type_defs/#parententityupdaterequesttypedef">ParentEntityUpdateRequestTypeDef</a></li>
+<li><a href="type_defs/#propertyvaluetypedef">PropertyValueTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatecomponenttyperequestrequesttypedef">UpdateComponentTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatecomponenttyperesponsetypedef">UpdateComponentTypeResponseTypeDef</a></li>
-<li><a href="type_defs/#updateentityrequestrequesttypedef">UpdateEntityRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateentityresponsetypedef">UpdateEntityResponseTypeDef</a></li>
 <li><a href="type_defs/#updatescenerequestrequesttypedef">UpdateSceneRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatesceneresponsetypedef">UpdateSceneResponseTypeDef</a></li>
 <li><a href="type_defs/#updateworkspacerequestrequesttypedef">UpdateWorkspaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createcomponenttyperesponsetypedef">CreateComponentTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#createentityresponsetypedef">CreateEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#createsceneresponsetypedef">CreateSceneResponseTypeDef</a></li>
+<li><a href="type_defs/#createworkspaceresponsetypedef">CreateWorkspaceResponseTypeDef</a></li>
+<li><a href="type_defs/#deletecomponenttyperesponsetypedef">DeleteComponentTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteentityresponsetypedef">DeleteEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#getsceneresponsetypedef">GetSceneResponseTypeDef</a></li>
+<li><a href="type_defs/#getworkspaceresponsetypedef">GetWorkspaceResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#updatecomponenttyperesponsetypedef">UpdateComponentTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#updateentityresponsetypedef">UpdateEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#updatesceneresponsetypedef">UpdateSceneResponseTypeDef</a></li>
 <li><a href="type_defs/#updateworkspaceresponsetypedef">UpdateWorkspaceResponseTypeDef</a></li>
-<li><a href="type_defs/#workspacesummarytypedef">WorkspaceSummaryTypeDef</a></li>
+<li><a href="type_defs/#propertyrequesttypedef">PropertyRequestTypeDef</a></li>
+<li><a href="type_defs/#dataconnectortypedef">DataConnectorTypeDef</a></li>
+<li><a href="type_defs/#datatypetypedef">DataTypeTypeDef</a></li>
+<li><a href="type_defs/#datavaluetypedef">DataValueTypeDef</a></li>
+<li><a href="type_defs/#propertylatestvaluetypedef">PropertyLatestValueTypeDef</a></li>
+<li><a href="type_defs/#statustypedef">StatusTypeDef</a></li>
+<li><a href="type_defs/#propertyresponsetypedef">PropertyResponseTypeDef</a></li>
+<li><a href="type_defs/#getpropertyvaluehistoryrequestrequesttypedef">GetPropertyValueHistoryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcomponenttypesrequestrequesttypedef">ListComponentTypesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listentitiesrequestrequesttypedef">ListEntitiesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listscenesresponsetypedef">ListScenesResponseTypeDef</a></li>
+<li><a href="type_defs/#listworkspacesresponsetypedef">ListWorkspacesResponseTypeDef</a></li>
+<li><a href="type_defs/#propertyvalueentrytypedef">PropertyValueEntryTypeDef</a></li>
+<li><a href="type_defs/#propertyvaluehistorytypedef">PropertyValueHistoryTypeDef</a></li>
+<li><a href="type_defs/#componentrequesttypedef">ComponentRequestTypeDef</a></li>
+<li><a href="type_defs/#componentupdaterequesttypedef">ComponentUpdateRequestTypeDef</a></li>
+<li><a href="type_defs/#functionrequesttypedef">FunctionRequestTypeDef</a></li>
+<li><a href="type_defs/#functionresponsetypedef">FunctionResponseTypeDef</a></li>
+<li><a href="type_defs/#getpropertyvalueresponsetypedef">GetPropertyValueResponseTypeDef</a></li>
+<li><a href="type_defs/#componenttypesummarytypedef">ComponentTypeSummaryTypeDef</a></li>
+<li><a href="type_defs/#entitysummarytypedef">EntitySummaryTypeDef</a></li>
+<li><a href="type_defs/#componentresponsetypedef">ComponentResponseTypeDef</a></li>
+<li><a href="type_defs/#batchputpropertyerrortypedef">BatchPutPropertyErrorTypeDef</a></li>
+<li><a href="type_defs/#batchputpropertyvaluesrequestrequesttypedef">BatchPutPropertyValuesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getpropertyvaluehistoryresponsetypedef">GetPropertyValueHistoryResponseTypeDef</a></li>
+<li><a href="type_defs/#createentityrequestrequesttypedef">CreateEntityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateentityrequestrequesttypedef">UpdateEntityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createcomponenttyperequestrequesttypedef">CreateComponentTypeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatecomponenttyperequestrequesttypedef">UpdateComponentTypeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcomponenttyperesponsetypedef">GetComponentTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#listcomponenttypesresponsetypedef">ListComponentTypesResponseTypeDef</a></li>
+<li><a href="type_defs/#listentitiesresponsetypedef">ListEntitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#getentityresponsetypedef">GetEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#batchputpropertyerrorentrytypedef">BatchPutPropertyErrorEntryTypeDef</a></li>
+<li><a href="type_defs/#batchputpropertyvaluesresponsetypedef">BatchPutPropertyValuesResponseTypeDef</a></li>
 </ul>
 
               
@@ -36216,7 +36220,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

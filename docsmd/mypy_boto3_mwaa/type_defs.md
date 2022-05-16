@@ -23,88 +23,47 @@ class CreateCliTokenRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## CreateCliTokenResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef
+from mypy_boto3_mwaa.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateCliTokenResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "CliToken": ...,
-        "WebServerHostname": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateCliTokenResponseTypeDef(TypedDict):
-    CliToken: str,
-    WebServerHostname: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateEnvironmentInputRequestTypeDef
+## NetworkConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import CreateEnvironmentInputRequestTypeDef
+from mypy_boto3_mwaa.type_defs import NetworkConfigurationTypeDef
 
-def get_value() -> CreateEnvironmentInputRequestTypeDef:
+def get_value() -> NetworkConfigurationTypeDef:
     return {
-        "DagS3Path": ...,
-        "ExecutionRoleArn": ...,
-        "Name": ...,
-        "NetworkConfiguration": ...,
-        "SourceBucketArn": ...,
+        "SecurityGroupIds": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateEnvironmentInputRequestTypeDef(TypedDict):
-    DagS3Path: str,
-    ExecutionRoleArn: str,
-    Name: str,
-    NetworkConfiguration: NetworkConfigurationTypeDef,  # (1)
-    SourceBucketArn: str,
-    AirflowConfigurationOptions: NotRequired[Mapping[str, str]],
-    AirflowVersion: NotRequired[str],
-    EnvironmentClass: NotRequired[str],
-    KmsKey: NotRequired[str],
-    LoggingConfiguration: NotRequired[LoggingConfigurationInputTypeDef],  # (2)
-    MaxWorkers: NotRequired[int],
-    MinWorkers: NotRequired[int],
-    PluginsS3ObjectVersion: NotRequired[str],
-    PluginsS3Path: NotRequired[str],
-    RequirementsS3ObjectVersion: NotRequired[str],
-    RequirementsS3Path: NotRequired[str],
-    Schedulers: NotRequired[int],
-    Tags: NotRequired[Mapping[str, str]],
-    WebserverAccessMode: NotRequired[WebserverAccessModeType],  # (3)
-    WeeklyMaintenanceWindowStart: NotRequired[str],
+class NetworkConfigurationTypeDef(TypedDict):
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    SubnetIds: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-2. See [:material-code-braces: LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef) 
-3. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
-## CreateEnvironmentOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import CreateEnvironmentOutputTypeDef
-
-def get_value() -> CreateEnvironmentOutputTypeDef:
-    return {
-        "Arn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateEnvironmentOutputTypeDef(TypedDict):
-    Arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWebLoginTokenRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -121,27 +80,6 @@ class CreateWebLoginTokenRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## CreateWebLoginTokenResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenResponseTypeDef
-
-def get_value() -> CreateWebLoginTokenResponseTypeDef:
-    return {
-        "WebServerHostname": ...,
-        "WebToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateWebLoginTokenResponseTypeDef(TypedDict):
-    WebServerHostname: str,
-    WebToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -176,52 +114,6 @@ class DimensionTypeDef(TypedDict):
     Value: str,
 ```
 
-## EnvironmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import EnvironmentTypeDef
-
-def get_value() -> EnvironmentTypeDef:
-    return {
-        "AirflowConfigurationOptions": ...,
-    }
-```
-
-```python title="Definition"
-class EnvironmentTypeDef(TypedDict):
-    AirflowConfigurationOptions: NotRequired[Dict[str, str]],
-    AirflowVersion: NotRequired[str],
-    Arn: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    DagS3Path: NotRequired[str],
-    EnvironmentClass: NotRequired[str],
-    ExecutionRoleArn: NotRequired[str],
-    KmsKey: NotRequired[str],
-    LastUpdate: NotRequired[LastUpdateTypeDef],  # (1)
-    LoggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (2)
-    MaxWorkers: NotRequired[int],
-    MinWorkers: NotRequired[int],
-    Name: NotRequired[str],
-    NetworkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
-    PluginsS3ObjectVersion: NotRequired[str],
-    PluginsS3Path: NotRequired[str],
-    RequirementsS3ObjectVersion: NotRequired[str],
-    RequirementsS3Path: NotRequired[str],
-    Schedulers: NotRequired[int],
-    ServiceRoleArn: NotRequired[str],
-    SourceBucketArn: NotRequired[str],
-    Status: NotRequired[EnvironmentStatusType],  # (4)
-    Tags: NotRequired[Dict[str, str]],
-    WebserverAccessMode: NotRequired[WebserverAccessModeType],  # (5)
-    WebserverUrl: NotRequired[str],
-    WeeklyMaintenanceWindowStart: NotRequired[str],
-```
-
-1. See [:material-code-braces: LastUpdateTypeDef](./type_defs.md#lastupdatetypedef) 
-2. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
-3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-4. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
-5. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
 ## GetEnvironmentInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -238,26 +130,303 @@ class GetEnvironmentInputRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## GetEnvironmentOutputTypeDef
+## UpdateErrorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputTypeDef
+from mypy_boto3_mwaa.type_defs import UpdateErrorTypeDef
 
-def get_value() -> GetEnvironmentOutputTypeDef:
+def get_value() -> UpdateErrorTypeDef:
     return {
-        "Environment": ...,
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListEnvironmentsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ListEnvironmentsInputRequestTypeDef
+
+def get_value() -> ListEnvironmentsInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentsInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListTagsForResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## ModuleLoggingConfigurationInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationInputTypeDef
+
+def get_value() -> ModuleLoggingConfigurationInputTypeDef:
+    return {
+        "Enabled": ...,
+        "LogLevel": ...,
+    }
+```
+
+```python title="Definition"
+class ModuleLoggingConfigurationInputTypeDef(TypedDict):
+    Enabled: bool,
+    LogLevel: LoggingLevelType,  # (1)
+```
+
+1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
+## ModuleLoggingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationTypeDef
+
+def get_value() -> ModuleLoggingConfigurationTypeDef:
+    return {
+        "CloudWatchLogGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModuleLoggingConfigurationTypeDef(TypedDict):
+    CloudWatchLogGroupArn: NotRequired[str],
+    Enabled: NotRequired[bool],
+    LogLevel: NotRequired[LoggingLevelType],  # (1)
+```
+
+1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
+## StatisticSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import StatisticSetTypeDef
+
+def get_value() -> StatisticSetTypeDef:
+    return {
+        "Maximum": ...,
+    }
+```
+
+```python title="Definition"
+class StatisticSetTypeDef(TypedDict):
+    Maximum: NotRequired[float],
+    Minimum: NotRequired[float],
+    SampleCount: NotRequired[int],
+    Sum: NotRequired[float],
+```
+
+## TagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
+
+## UntagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateNetworkConfigurationInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import UpdateNetworkConfigurationInputTypeDef
+
+def get_value() -> UpdateNetworkConfigurationInputTypeDef:
+    return {
+        "SecurityGroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNetworkConfigurationInputTypeDef(TypedDict):
+    SecurityGroupIds: Sequence[str],
+```
+
+## CreateCliTokenResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef
+
+def get_value() -> CreateCliTokenResponseTypeDef:
+    return {
+        "CliToken": ...,
+        "WebServerHostname": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetEnvironmentOutputTypeDef(TypedDict):
-    Environment: EnvironmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CreateCliTokenResponseTypeDef(TypedDict):
+    CliToken: str,
+    WebServerHostname: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEnvironmentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import CreateEnvironmentOutputTypeDef
+
+def get_value() -> CreateEnvironmentOutputTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEnvironmentOutputTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWebLoginTokenResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenResponseTypeDef
+
+def get_value() -> CreateWebLoginTokenResponseTypeDef:
+    return {
+        "WebServerHostname": ...,
+        "WebToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWebLoginTokenResponseTypeDef(TypedDict):
+    WebServerHostname: str,
+    WebToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
+
+def get_value() -> ListEnvironmentsOutputTypeDef:
+    return {
+        "Environments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentsOutputTypeDef(TypedDict):
+    Environments: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateEnvironmentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import UpdateEnvironmentOutputTypeDef
+
+def get_value() -> UpdateEnvironmentOutputTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEnvironmentOutputTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LastUpdateTypeDef
 
 ```python title="Usage Example"
@@ -296,79 +465,6 @@ class ListEnvironmentsInputListEnvironmentsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListEnvironmentsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ListEnvironmentsInputRequestTypeDef
-
-def get_value() -> ListEnvironmentsInputRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListEnvironmentsInputRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListEnvironmentsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
-
-def get_value() -> ListEnvironmentsOutputTypeDef:
-    return {
-        "Environments": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEnvironmentsOutputTypeDef(TypedDict):
-    Environments: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ListTagsForResourceInputRequestTypeDef
-
-def get_value() -> ListTagsForResourceInputRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceInputRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsForResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ListTagsForResourceOutputTypeDef
-
-def get_value() -> ListTagsForResourceOutputTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceOutputTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingConfigurationInputTypeDef
 
 ```python title="Usage Example"
@@ -444,177 +540,48 @@ class MetricDatumTypeDef(TypedDict):
 1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
 2. See [:material-code-braces: StatisticSetTypeDef](./type_defs.md#statisticsettypedef) 
 3. See [:material-code-brackets: UnitType](./literals.md#unittype) 
-## ModuleLoggingConfigurationInputTypeDef
+## CreateEnvironmentInputRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationInputTypeDef
+from mypy_boto3_mwaa.type_defs import CreateEnvironmentInputRequestTypeDef
 
-def get_value() -> ModuleLoggingConfigurationInputTypeDef:
+def get_value() -> CreateEnvironmentInputRequestTypeDef:
     return {
-        "Enabled": ...,
-        "LogLevel": ...,
+        "DagS3Path": ...,
+        "ExecutionRoleArn": ...,
+        "Name": ...,
+        "NetworkConfiguration": ...,
+        "SourceBucketArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ModuleLoggingConfigurationInputTypeDef(TypedDict):
-    Enabled: bool,
-    LogLevel: LoggingLevelType,  # (1)
+class CreateEnvironmentInputRequestTypeDef(TypedDict):
+    DagS3Path: str,
+    ExecutionRoleArn: str,
+    Name: str,
+    NetworkConfiguration: NetworkConfigurationTypeDef,  # (1)
+    SourceBucketArn: str,
+    AirflowConfigurationOptions: NotRequired[Mapping[str, str]],
+    AirflowVersion: NotRequired[str],
+    EnvironmentClass: NotRequired[str],
+    KmsKey: NotRequired[str],
+    LoggingConfiguration: NotRequired[LoggingConfigurationInputTypeDef],  # (2)
+    MaxWorkers: NotRequired[int],
+    MinWorkers: NotRequired[int],
+    PluginsS3ObjectVersion: NotRequired[str],
+    PluginsS3Path: NotRequired[str],
+    RequirementsS3ObjectVersion: NotRequired[str],
+    RequirementsS3Path: NotRequired[str],
+    Schedulers: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+    WebserverAccessMode: NotRequired[WebserverAccessModeType],  # (3)
+    WeeklyMaintenanceWindowStart: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
-## ModuleLoggingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationTypeDef
-
-def get_value() -> ModuleLoggingConfigurationTypeDef:
-    return {
-        "CloudWatchLogGroupArn": ...,
-    }
-```
-
-```python title="Definition"
-class ModuleLoggingConfigurationTypeDef(TypedDict):
-    CloudWatchLogGroupArn: NotRequired[str],
-    Enabled: NotRequired[bool],
-    LogLevel: NotRequired[LoggingLevelType],  # (1)
-```
-
-1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
-## NetworkConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import NetworkConfigurationTypeDef
-
-def get_value() -> NetworkConfigurationTypeDef:
-    return {
-        "SecurityGroupIds": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkConfigurationTypeDef(TypedDict):
-    SecurityGroupIds: NotRequired[Sequence[str]],
-    SubnetIds: NotRequired[Sequence[str]],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PublishMetricsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import PublishMetricsInputRequestTypeDef
-
-def get_value() -> PublishMetricsInputRequestTypeDef:
-    return {
-        "EnvironmentName": ...,
-        "MetricData": ...,
-    }
-```
-
-```python title="Definition"
-class PublishMetricsInputRequestTypeDef(TypedDict):
-    EnvironmentName: str,
-    MetricData: Sequence[MetricDatumTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## StatisticSetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import StatisticSetTypeDef
-
-def get_value() -> StatisticSetTypeDef:
-    return {
-        "Maximum": ...,
-    }
-```
-
-```python title="Definition"
-class StatisticSetTypeDef(TypedDict):
-    Maximum: NotRequired[float],
-    Minimum: NotRequired[float],
-    SampleCount: NotRequired[int],
-    Sum: NotRequired[float],
-```
-
-## TagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import TagResourceInputRequestTypeDef
-
-def get_value() -> TagResourceInputRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceInputRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Mapping[str, str],
-```
-
-## UntagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import UntagResourceInputRequestTypeDef
-
-def get_value() -> UntagResourceInputRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceInputRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    tagKeys: Sequence[str],
-```
-
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef) 
+3. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
 ## UpdateEnvironmentInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -651,55 +618,88 @@ class UpdateEnvironmentInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef) 
 2. See [:material-code-braces: UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef) 
 3. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
-## UpdateEnvironmentOutputTypeDef
+## EnvironmentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import UpdateEnvironmentOutputTypeDef
+from mypy_boto3_mwaa.type_defs import EnvironmentTypeDef
 
-def get_value() -> UpdateEnvironmentOutputTypeDef:
+def get_value() -> EnvironmentTypeDef:
     return {
-        "Arn": ...,
+        "AirflowConfigurationOptions": ...,
+    }
+```
+
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    AirflowConfigurationOptions: NotRequired[Dict[str, str]],
+    AirflowVersion: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    DagS3Path: NotRequired[str],
+    EnvironmentClass: NotRequired[str],
+    ExecutionRoleArn: NotRequired[str],
+    KmsKey: NotRequired[str],
+    LastUpdate: NotRequired[LastUpdateTypeDef],  # (1)
+    LoggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (2)
+    MaxWorkers: NotRequired[int],
+    MinWorkers: NotRequired[int],
+    Name: NotRequired[str],
+    NetworkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
+    PluginsS3ObjectVersion: NotRequired[str],
+    PluginsS3Path: NotRequired[str],
+    RequirementsS3ObjectVersion: NotRequired[str],
+    RequirementsS3Path: NotRequired[str],
+    Schedulers: NotRequired[int],
+    ServiceRoleArn: NotRequired[str],
+    SourceBucketArn: NotRequired[str],
+    Status: NotRequired[EnvironmentStatusType],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+    WebserverAccessMode: NotRequired[WebserverAccessModeType],  # (5)
+    WebserverUrl: NotRequired[str],
+    WeeklyMaintenanceWindowStart: NotRequired[str],
+```
+
+1. See [:material-code-braces: LastUpdateTypeDef](./type_defs.md#lastupdatetypedef) 
+2. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
+5. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
+## PublishMetricsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import PublishMetricsInputRequestTypeDef
+
+def get_value() -> PublishMetricsInputRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+        "MetricData": ...,
+    }
+```
+
+```python title="Definition"
+class PublishMetricsInputRequestTypeDef(TypedDict):
+    EnvironmentName: str,
+    MetricData: Sequence[MetricDatumTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
+## GetEnvironmentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputTypeDef
+
+def get_value() -> GetEnvironmentOutputTypeDef:
+    return {
+        "Environment": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateEnvironmentOutputTypeDef(TypedDict):
-    Arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GetEnvironmentOutputTypeDef(TypedDict):
+    Environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import UpdateErrorTypeDef
-
-def get_value() -> UpdateErrorTypeDef:
-    return {
-        "ErrorCode": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateErrorTypeDef(TypedDict):
-    ErrorCode: NotRequired[str],
-    ErrorMessage: NotRequired[str],
-```
-
-## UpdateNetworkConfigurationInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mwaa.type_defs import UpdateNetworkConfigurationInputTypeDef
-
-def get_value() -> UpdateNetworkConfigurationInputTypeDef:
-    return {
-        "SecurityGroupIds": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateNetworkConfigurationInputTypeDef(TypedDict):
-    SecurityGroupIds: Sequence[str],
-```
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

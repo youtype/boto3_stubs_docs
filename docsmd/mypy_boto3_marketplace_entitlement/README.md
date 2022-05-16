@@ -112,19 +112,19 @@ def get_value() -> GetEntitlementFilterNameType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_marketplace_entitlement.type_defs import EntitlementTypeDef
+from mypy_boto3_marketplace_entitlement.type_defs import EntitlementValueTypeDef
 
-def get_value() -> EntitlementTypeDef:
+def get_value() -> EntitlementValueTypeDef:
     return {
-        "ProductCode": ...,
+        "IntegerValue": ...,
     }
 ```
 
-- [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
-- [GetEntitlementsRequestGetEntitlementsPaginateTypeDef](./type_defs.md#getentitlementsrequestgetentitlementspaginatetypedef)
-- [GetEntitlementsRequestRequestTypeDef](./type_defs.md#getentitlementsrequestrequesttypedef)
-- [GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [GetEntitlementsRequestRequestTypeDef](./type_defs.md#getentitlementsrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
+- [GetEntitlementsRequestGetEntitlementsPaginateTypeDef](./type_defs.md#getentitlementsrequestgetentitlementspaginatetypedef)
+- [GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)
 

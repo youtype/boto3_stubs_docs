@@ -115,15 +115,17 @@ def create_app(
     self,
     *,
     name: str,
+    assessmentSchedule: AppAssessmentScheduleTypeType = ...,  # (1)
     clientToken: str = ...,
     description: str = ...,
     policyArn: str = ...,
     tags: Mapping[str, str] = ...,
-) -> CreateAppResponseTypeDef:  # (1)
+) -> CreateAppResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef) 
+1. See [:material-code-brackets: AppAssessmentScheduleTypeType](./literals.md#appassessmentscheduletypetype) 
+2. See [:material-code-braces: CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -549,18 +551,19 @@ def import_resources_to_draft_app_version(
     self,
     *,
     appArn: str,
-    sourceArns: Sequence[str],
-) -> ImportResourcesToDraftAppVersionResponseTypeDef:  # (1)
+    sourceArns: Sequence[str] = ...,
+    terraformSources: Sequence[TerraformSourceTypeDef] = ...,  # (1)
+) -> ImportResourcesToDraftAppVersionResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ImportResourcesToDraftAppVersionResponseTypeDef](./type_defs.md#importresourcestodraftappversionresponsetypedef) 
+1. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
+2. See [:material-code-braces: ImportResourcesToDraftAppVersionResponseTypeDef](./type_defs.md#importresourcestodraftappversionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ImportResourcesToDraftAppVersionRequestRequestTypeDef = {  # (1)
     "appArn": ...,
-    "sourceArns": ...,
 }
 
 parent.import_resources_to_draft_app_version(**kwargs)
@@ -1129,6 +1132,7 @@ def remove_draft_app_version_resource_mappings(
     logicalStackNames: Sequence[str] = ...,
     resourceGroupNames: Sequence[str] = ...,
     resourceNames: Sequence[str] = ...,
+    terraformSourceNames: Sequence[str] = ...,
 ) -> RemoveDraftAppVersionResourceMappingsResponseTypeDef:  # (1)
     ...
 ```
@@ -1284,14 +1288,16 @@ def update_app(
     self,
     *,
     appArn: str,
+    assessmentSchedule: AppAssessmentScheduleTypeType = ...,  # (1)
     clearResiliencyPolicyArn: bool = ...,
     description: str = ...,
     policyArn: str = ...,
-) -> UpdateAppResponseTypeDef:  # (1)
+) -> UpdateAppResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef) 
+1. See [:material-code-brackets: AppAssessmentScheduleTypeType](./literals.md#appassessmentscheduletypetype) 
+2. See [:material-code-braces: UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

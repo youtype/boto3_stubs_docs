@@ -143,82 +143,71 @@ class AssociateTagOptionWithResourceInputRequestTypeDef(TypedDict):
     TagOptionId: str,
 ```
 
-## BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
+## ServiceActionAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import ServiceActionAssociationTypeDef
 
-def get_value() -> BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef:
+def get_value() -> ServiceActionAssociationTypeDef:
     return {
-        "ServiceActionAssociations": ...,
+        "ServiceActionId": ...,
+        "ProductId": ...,
+        "ProvisioningArtifactId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef(TypedDict):
-    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
-    AcceptLanguage: NotRequired[str],
+class ServiceActionAssociationTypeDef(TypedDict):
+    ServiceActionId: str,
+    ProductId: str,
+    ProvisioningArtifactId: str,
 ```
 
-1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
-## BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
+## FailedServiceActionAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import FailedServiceActionAssociationTypeDef
 
-def get_value() -> BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef:
+def get_value() -> FailedServiceActionAssociationTypeDef:
     return {
-        "FailedServiceActionAssociations": ...,
-        "ResponseMetadata": ...,
+        "ServiceActionId": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef(TypedDict):
-    FailedServiceActionAssociations: List[FailedServiceActionAssociationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class FailedServiceActionAssociationTypeDef(TypedDict):
+    ServiceActionId: NotRequired[str],
+    ProductId: NotRequired[str],
+    ProvisioningArtifactId: NotRequired[str],
+    ErrorCode: NotRequired[ServiceActionAssociationErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
 ```
 
-1. See [:material-code-braces: FailedServiceActionAssociationTypeDef](./type_defs.md#failedserviceactionassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
+1. See [:material-code-brackets: ServiceActionAssociationErrorCodeType](./literals.md#serviceactionassociationerrorcodetype) 
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ServiceActionAssociations": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef(TypedDict):
-    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
-    AcceptLanguage: NotRequired[str],
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
-## BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
-
-def get_value() -> BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef:
-    return {
-        "FailedServiceActionAssociations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef(TypedDict):
-    FailedServiceActionAssociations: List[FailedServiceActionAssociationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FailedServiceActionAssociationTypeDef](./type_defs.md#failedserviceactionassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BudgetDetailTypeDef
 
 ```python title="Usage Example"
@@ -314,25 +303,6 @@ class CopyProductInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ProvisioningArtifactPropertyNameType](./literals.md#provisioningartifactpropertynametype) 
 2. See [:material-code-brackets: CopyOptionType](./literals.md#copyoptiontype) 
-## CopyProductOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CopyProductOutputTypeDef
-
-def get_value() -> CopyProductOutputTypeDef:
-    return {
-        "CopyProductToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CopyProductOutputTypeDef(TypedDict):
-    CopyProductToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConstraintInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -359,286 +329,126 @@ class CreateConstraintInputRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## CreateConstraintOutputTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import TagTypeDef
 
-def get_value() -> CreateConstraintOutputTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ConstraintDetail": ...,
-        "ConstraintParameters": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateConstraintOutputTypeDef(TypedDict):
-    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
-    ConstraintParameters: str,
-    Status: StatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreatePortfolioInputRequestTypeDef
+## PortfolioDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import PortfolioDetailTypeDef
 
-def get_value() -> CreatePortfolioInputRequestTypeDef:
+def get_value() -> PortfolioDetailTypeDef:
     return {
-        "DisplayName": ...,
-        "ProviderName": ...,
-        "IdempotencyToken": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class CreatePortfolioInputRequestTypeDef(TypedDict):
-    DisplayName: str,
-    ProviderName: str,
-    IdempotencyToken: str,
-    AcceptLanguage: NotRequired[str],
+class PortfolioDetailTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ARN: NotRequired[str],
+    DisplayName: NotRequired[str],
     Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    CreatedTime: NotRequired[datetime],
+    ProviderName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreatePortfolioOutputTypeDef
+## OrganizationNodeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import OrganizationNodeTypeDef
 
-def get_value() -> CreatePortfolioOutputTypeDef:
+def get_value() -> OrganizationNodeTypeDef:
     return {
-        "PortfolioDetail": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
+        "Type": ...,
     }
 ```
 
 ```python title="Definition"
-class CreatePortfolioOutputTypeDef(TypedDict):
-    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
-    Tags: List[TagTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class OrganizationNodeTypeDef(TypedDict):
+    Type: NotRequired[OrganizationNodeTypeType],  # (1)
+    Value: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreatePortfolioShareInputRequestTypeDef
+1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
+## ProvisioningArtifactPropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPropertiesTypeDef
 
-def get_value() -> CreatePortfolioShareInputRequestTypeDef:
+def get_value() -> ProvisioningArtifactPropertiesTypeDef:
     return {
-        "PortfolioId": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePortfolioShareInputRequestTypeDef(TypedDict):
-    PortfolioId: str,
-    AcceptLanguage: NotRequired[str],
-    AccountId: NotRequired[str],
-    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
-    ShareTagOptions: NotRequired[bool],
-```
-
-1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
-## CreatePortfolioShareOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputTypeDef
-
-def get_value() -> CreatePortfolioShareOutputTypeDef:
-    return {
-        "PortfolioShareToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePortfolioShareOutputTypeDef(TypedDict):
-    PortfolioShareToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProductInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProductInputRequestTypeDef
-
-def get_value() -> CreateProductInputRequestTypeDef:
-    return {
-        "Name": ...,
-        "Owner": ...,
-        "ProductType": ...,
-        "ProvisioningArtifactParameters": ...,
-        "IdempotencyToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProductInputRequestTypeDef(TypedDict):
-    Name: str,
-    Owner: str,
-    ProductType: ProductTypeType,  # (1)
-    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef,  # (2)
-    IdempotencyToken: str,
-    AcceptLanguage: NotRequired[str],
-    Description: NotRequired[str],
-    Distributor: NotRequired[str],
-    SupportDescription: NotRequired[str],
-    SupportEmail: NotRequired[str],
-    SupportUrl: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
-2. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateProductOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProductOutputTypeDef
-
-def get_value() -> CreateProductOutputTypeDef:
-    return {
-        "ProductViewDetail": ...,
-        "ProvisioningArtifactDetail": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProductOutputTypeDef(TypedDict):
-    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
-    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (2)
-    Tags: List[TagTypeDef],  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
-2. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProvisionedProductPlanInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanInputRequestTypeDef
-
-def get_value() -> CreateProvisionedProductPlanInputRequestTypeDef:
-    return {
-        "PlanName": ...,
-        "PlanType": ...,
-        "ProductId": ...,
-        "ProvisionedProductName": ...,
-        "ProvisioningArtifactId": ...,
-        "IdempotencyToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProvisionedProductPlanInputRequestTypeDef(TypedDict):
-    PlanName: str,
-    PlanType: ProvisionedProductPlanTypeType,  # (1)
-    ProductId: str,
-    ProvisionedProductName: str,
-    ProvisioningArtifactId: str,
-    IdempotencyToken: str,
-    AcceptLanguage: NotRequired[str],
-    NotificationArns: NotRequired[Sequence[str]],
-    PathId: NotRequired[str],
-    ProvisioningParameters: NotRequired[Sequence[UpdateProvisioningParameterTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
-2. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateProvisionedProductPlanOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutputTypeDef
-
-def get_value() -> CreateProvisionedProductPlanOutputTypeDef:
-    return {
-        "PlanName": ...,
-        "PlanId": ...,
-        "ProvisionProductId": ...,
-        "ProvisionedProductName": ...,
-        "ProvisioningArtifactId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProvisionedProductPlanOutputTypeDef(TypedDict):
-    PlanName: str,
-    PlanId: str,
-    ProvisionProductId: str,
-    ProvisionedProductName: str,
-    ProvisioningArtifactId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProvisioningArtifactInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactInputRequestTypeDef
-
-def get_value() -> CreateProvisioningArtifactInputRequestTypeDef:
-    return {
-        "ProductId": ...,
-        "Parameters": ...,
-        "IdempotencyToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProvisioningArtifactInputRequestTypeDef(TypedDict):
-    ProductId: str,
-    Parameters: ProvisioningArtifactPropertiesTypeDef,  # (1)
-    IdempotencyToken: str,
-    AcceptLanguage: NotRequired[str],
-```
-
-1. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
-## CreateProvisioningArtifactOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutputTypeDef
-
-def get_value() -> CreateProvisioningArtifactOutputTypeDef:
-    return {
-        "ProvisioningArtifactDetail": ...,
         "Info": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProvisioningArtifactOutputTypeDef(TypedDict):
-    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
-    Info: Dict[str, str],
-    Status: StatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ProvisioningArtifactPropertiesTypeDef(TypedDict):
+    Info: Mapping[str, str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[ProvisioningArtifactTypeType],  # (1)
+    DisableTemplateValidation: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype) 
+## ProvisioningArtifactDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactDetailTypeDef
+
+def get_value() -> ProvisioningArtifactDetailTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningArtifactDetailTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[ProvisioningArtifactTypeType],  # (1)
+    CreatedTime: NotRequired[datetime],
+    Active: NotRequired[bool],
+    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (2)
+```
+
+1. See [:material-code-brackets: ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype) 
+2. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
+## UpdateProvisioningParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningParameterTypeDef
+
+def get_value() -> UpdateProvisioningParameterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisioningParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    UsePreviousValue: NotRequired[bool],
+```
+
 ## CreateServiceActionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -665,26 +475,6 @@ class CreateServiceActionInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype) 
 2. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
-## CreateServiceActionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputTypeDef
-
-def get_value() -> CreateServiceActionOutputTypeDef:
-    return {
-        "ServiceActionDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateServiceActionOutputTypeDef(TypedDict):
-    ServiceActionDetail: ServiceActionDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceActionDetailTypeDef](./type_defs.md#serviceactiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTagOptionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -703,26 +493,26 @@ class CreateTagOptionInputRequestTypeDef(TypedDict):
     Value: str,
 ```
 
-## CreateTagOptionOutputTypeDef
+## TagOptionDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import TagOptionDetailTypeDef
 
-def get_value() -> CreateTagOptionOutputTypeDef:
+def get_value() -> TagOptionDetailTypeDef:
     return {
-        "TagOptionDetail": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateTagOptionOutputTypeDef(TypedDict):
-    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagOptionDetailTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Active: NotRequired[bool],
+    Id: NotRequired[str],
+    Owner: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConstraintInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -757,45 +547,6 @@ class DeletePortfolioInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DeletePortfolioShareInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareInputRequestTypeDef
-
-def get_value() -> DeletePortfolioShareInputRequestTypeDef:
-    return {
-        "PortfolioId": ...,
-    }
-```
-
-```python title="Definition"
-class DeletePortfolioShareInputRequestTypeDef(TypedDict):
-    PortfolioId: str,
-    AcceptLanguage: NotRequired[str],
-    AccountId: NotRequired[str],
-    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
-## DeletePortfolioShareOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputTypeDef
-
-def get_value() -> DeletePortfolioShareOutputTypeDef:
-    return {
-        "PortfolioShareToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeletePortfolioShareOutputTypeDef(TypedDict):
-    PortfolioShareToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -900,31 +651,6 @@ class DescribeConstraintInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribeConstraintOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputTypeDef
-
-def get_value() -> DescribeConstraintOutputTypeDef:
-    return {
-        "ConstraintDetail": ...,
-        "ConstraintParameters": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConstraintOutputTypeDef(TypedDict):
-    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
-    ConstraintParameters: str,
-    Status: StatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCopyProductStatusInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -942,30 +668,6 @@ class DescribeCopyProductStatusInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribeCopyProductStatusOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputTypeDef
-
-def get_value() -> DescribeCopyProductStatusOutputTypeDef:
-    return {
-        "CopyProductStatus": ...,
-        "TargetProductId": ...,
-        "StatusDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCopyProductStatusOutputTypeDef(TypedDict):
-    CopyProductStatus: CopyProductStatusType,  # (1)
-    TargetProductId: str,
-    StatusDetail: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: CopyProductStatusType](./literals.md#copyproductstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePortfolioInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -983,35 +685,6 @@ class DescribePortfolioInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribePortfolioOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputTypeDef
-
-def get_value() -> DescribePortfolioOutputTypeDef:
-    return {
-        "PortfolioDetail": ...,
-        "Tags": ...,
-        "TagOptions": ...,
-        "Budgets": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePortfolioOutputTypeDef(TypedDict):
-    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
-    Tags: List[TagTypeDef],  # (2)
-    TagOptions: List[TagOptionDetailTypeDef],  # (3)
-    Budgets: List[BudgetDetailTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-4. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePortfolioShareStatusInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1028,35 +701,6 @@ class DescribePortfolioShareStatusInputRequestTypeDef(TypedDict):
     PortfolioShareToken: str,
 ```
 
-## DescribePortfolioShareStatusOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutputTypeDef
-
-def get_value() -> DescribePortfolioShareStatusOutputTypeDef:
-    return {
-        "PortfolioShareToken": ...,
-        "PortfolioId": ...,
-        "OrganizationNodeValue": ...,
-        "Status": ...,
-        "ShareDetails": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePortfolioShareStatusOutputTypeDef(TypedDict):
-    PortfolioShareToken: str,
-    PortfolioId: str,
-    OrganizationNodeValue: str,
-    Status: ShareStatusType,  # (1)
-    ShareDetails: ShareDetailsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-2. See [:material-code-braces: ShareDetailsTypeDef](./type_defs.md#sharedetailstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePortfolioSharesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1078,28 +722,26 @@ class DescribePortfolioSharesInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype) 
-## DescribePortfolioSharesOutputTypeDef
+## PortfolioShareDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import PortfolioShareDetailTypeDef
 
-def get_value() -> DescribePortfolioSharesOutputTypeDef:
+def get_value() -> PortfolioShareDetailTypeDef:
     return {
-        "NextPageToken": ...,
-        "PortfolioShareDetails": ...,
-        "ResponseMetadata": ...,
+        "PrincipalId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribePortfolioSharesOutputTypeDef(TypedDict):
-    NextPageToken: str,
-    PortfolioShareDetails: List[PortfolioShareDetailTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PortfolioShareDetailTypeDef(TypedDict):
+    PrincipalId: NotRequired[str],
+    Type: NotRequired[DescribePortfolioShareTypeType],  # (1)
+    Accepted: NotRequired[bool],
+    ShareTagOptions: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: PortfolioShareDetailTypeDef](./type_defs.md#portfoliosharedetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype) 
 ## DescribeProductAsAdminInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1119,38 +761,26 @@ class DescribeProductAsAdminInputRequestTypeDef(TypedDict):
     SourcePortfolioId: NotRequired[str],
 ```
 
-## DescribeProductAsAdminOutputTypeDef
+## ProvisioningArtifactSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactSummaryTypeDef
 
-def get_value() -> DescribeProductAsAdminOutputTypeDef:
+def get_value() -> ProvisioningArtifactSummaryTypeDef:
     return {
-        "ProductViewDetail": ...,
-        "ProvisioningArtifactSummaries": ...,
-        "Tags": ...,
-        "TagOptions": ...,
-        "Budgets": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeProductAsAdminOutputTypeDef(TypedDict):
-    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
-    ProvisioningArtifactSummaries: List[ProvisioningArtifactSummaryTypeDef],  # (2)
-    Tags: List[TagTypeDef],  # (3)
-    TagOptions: List[TagOptionDetailTypeDef],  # (4)
-    Budgets: List[BudgetDetailTypeDef],  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+class ProvisioningArtifactSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    ProvisioningArtifactMetadata: NotRequired[Dict[str, str]],
 ```
 
-1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
-2. See [:material-code-braces: ProvisioningArtifactSummaryTypeDef](./type_defs.md#provisioningartifactsummarytypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-5. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1169,35 +799,71 @@ class DescribeProductInputRequestTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## DescribeProductOutputTypeDef
+## LaunchPathTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import LaunchPathTypeDef
 
-def get_value() -> DescribeProductOutputTypeDef:
+def get_value() -> LaunchPathTypeDef:
     return {
-        "ProductViewSummary": ...,
-        "ProvisioningArtifacts": ...,
-        "Budgets": ...,
-        "LaunchPaths": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeProductOutputTypeDef(TypedDict):
-    ProductViewSummary: ProductViewSummaryTypeDef,  # (1)
-    ProvisioningArtifacts: List[ProvisioningArtifactTypeDef],  # (2)
-    Budgets: List[BudgetDetailTypeDef],  # (3)
-    LaunchPaths: List[LaunchPathTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class LaunchPathTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
-2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
-3. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
-4. See [:material-code-braces: LaunchPathTypeDef](./type_defs.md#launchpathtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProductViewSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProductViewSummaryTypeDef
+
+def get_value() -> ProductViewSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ProductViewSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ProductId: NotRequired[str],
+    Name: NotRequired[str],
+    Owner: NotRequired[str],
+    ShortDescription: NotRequired[str],
+    Type: NotRequired[ProductTypeType],  # (1)
+    Distributor: NotRequired[str],
+    HasDefaultPath: NotRequired[bool],
+    SupportEmail: NotRequired[str],
+    SupportDescription: NotRequired[str],
+    SupportUrl: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
+## ProvisioningArtifactTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactTypeDef
+
+def get_value() -> ProvisioningArtifactTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningArtifactTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (1)
+```
+
+1. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
 ## DescribeProductViewInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1215,29 +881,6 @@ class DescribeProductViewInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribeProductViewOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputTypeDef
-
-def get_value() -> DescribeProductViewOutputTypeDef:
-    return {
-        "ProductViewSummary": ...,
-        "ProvisioningArtifacts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProductViewOutputTypeDef(TypedDict):
-    ProductViewSummary: ProductViewSummaryTypeDef,  # (1)
-    ProvisioningArtifacts: List[ProvisioningArtifactTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
-2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProvisionedProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1256,29 +899,36 @@ class DescribeProvisionedProductInputRequestTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## DescribeProvisionedProductOutputTypeDef
+## ProvisionedProductDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisionedProductDetailTypeDef
 
-def get_value() -> DescribeProvisionedProductOutputTypeDef:
+def get_value() -> ProvisionedProductDetailTypeDef:
     return {
-        "ProvisionedProductDetail": ...,
-        "CloudWatchDashboards": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeProvisionedProductOutputTypeDef(TypedDict):
-    ProvisionedProductDetail: ProvisionedProductDetailTypeDef,  # (1)
-    CloudWatchDashboards: List[CloudWatchDashboardTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ProvisionedProductDetailTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Type: NotRequired[str],
+    Id: NotRequired[str],
+    Status: NotRequired[ProvisionedProductStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    IdempotencyToken: NotRequired[str],
+    LastRecordId: NotRequired[str],
+    LastProvisioningRecordId: NotRequired[str],
+    LastSuccessfulProvisioningRecordId: NotRequired[str],
+    ProductId: NotRequired[str],
+    ProvisioningArtifactId: NotRequired[str],
+    LaunchRoleArn: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ProvisionedProductDetailTypeDef](./type_defs.md#provisionedproductdetailtypedef) 
-2. See [:material-code-braces: CloudWatchDashboardTypeDef](./type_defs.md#cloudwatchdashboardtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ProvisionedProductStatusType](./literals.md#provisionedproductstatustype) 
 ## DescribeProvisionedProductPlanInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1298,31 +948,6 @@ class DescribeProvisionedProductPlanInputRequestTypeDef(TypedDict):
     PageToken: NotRequired[str],
 ```
 
-## DescribeProvisionedProductPlanOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOutputTypeDef
-
-def get_value() -> DescribeProvisionedProductPlanOutputTypeDef:
-    return {
-        "ProvisionedProductPlanDetails": ...,
-        "ResourceChanges": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProvisionedProductPlanOutputTypeDef(TypedDict):
-    ProvisionedProductPlanDetails: ProvisionedProductPlanDetailsTypeDef,  # (1)
-    ResourceChanges: List[ResourceChangeTypeDef],  # (2)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProvisionedProductPlanDetailsTypeDef](./type_defs.md#provisionedproductplandetailstypedef) 
-2. See [:material-code-braces: ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProvisioningArtifactInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1344,31 +969,6 @@ class DescribeProvisioningArtifactInputRequestTypeDef(TypedDict):
     Verbose: NotRequired[bool],
 ```
 
-## DescribeProvisioningArtifactOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutputTypeDef
-
-def get_value() -> DescribeProvisioningArtifactOutputTypeDef:
-    return {
-        "ProvisioningArtifactDetail": ...,
-        "Info": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProvisioningArtifactOutputTypeDef(TypedDict):
-    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
-    Info: Dict[str, str],
-    Status: StatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProvisioningParametersInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1391,44 +991,74 @@ class DescribeProvisioningParametersInputRequestTypeDef(TypedDict):
     PathName: NotRequired[str],
 ```
 
-## DescribeProvisioningParametersOutputTypeDef
+## ProvisioningArtifactOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactOutputTypeDef
 
-def get_value() -> DescribeProvisioningParametersOutputTypeDef:
+def get_value() -> ProvisioningArtifactOutputTypeDef:
     return {
-        "ProvisioningArtifactParameters": ...,
-        "ConstraintSummaries": ...,
-        "UsageInstructions": ...,
-        "TagOptions": ...,
-        "ProvisioningArtifactPreferences": ...,
-        "ProvisioningArtifactOutputs": ...,
-        "ProvisioningArtifactOutputKeys": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeProvisioningParametersOutputTypeDef(TypedDict):
-    ProvisioningArtifactParameters: List[ProvisioningArtifactParameterTypeDef],  # (1)
-    ConstraintSummaries: List[ConstraintSummaryTypeDef],  # (2)
-    UsageInstructions: List[UsageInstructionTypeDef],  # (3)
-    TagOptions: List[TagOptionSummaryTypeDef],  # (4)
-    ProvisioningArtifactPreferences: ProvisioningArtifactPreferencesTypeDef,  # (5)
-    ProvisioningArtifactOutputs: List[ProvisioningArtifactOutputTypeDef],  # (6)
-    ProvisioningArtifactOutputKeys: List[ProvisioningArtifactOutputTypeDef],  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+class ProvisioningArtifactOutputTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Description: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ProvisioningArtifactParameterTypeDef](./type_defs.md#provisioningartifactparametertypedef) 
-2. See [:material-code-braces: ConstraintSummaryTypeDef](./type_defs.md#constraintsummarytypedef) 
-3. See [:material-code-braces: UsageInstructionTypeDef](./type_defs.md#usageinstructiontypedef) 
-4. See [:material-code-braces: TagOptionSummaryTypeDef](./type_defs.md#tagoptionsummarytypedef) 
-5. See [:material-code-braces: ProvisioningArtifactPreferencesTypeDef](./type_defs.md#provisioningartifactpreferencestypedef) 
-6. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
-7. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProvisioningArtifactPreferencesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPreferencesTypeDef
+
+def get_value() -> ProvisioningArtifactPreferencesTypeDef:
+    return {
+        "StackSetAccounts": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningArtifactPreferencesTypeDef(TypedDict):
+    StackSetAccounts: NotRequired[List[str]],
+    StackSetRegions: NotRequired[List[str]],
+```
+
+## TagOptionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import TagOptionSummaryTypeDef
+
+def get_value() -> TagOptionSummaryTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class TagOptionSummaryTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[List[str]],
+```
+
+## UsageInstructionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UsageInstructionTypeDef
+
+def get_value() -> UsageInstructionTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class UsageInstructionTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## DescribeRecordInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1448,31 +1078,24 @@ class DescribeRecordInputRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## DescribeRecordOutputTypeDef
+## RecordOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import RecordOutputTypeDef
 
-def get_value() -> DescribeRecordOutputTypeDef:
+def get_value() -> RecordOutputTypeDef:
     return {
-        "RecordDetail": ...,
-        "RecordOutputs": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
+        "OutputKey": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeRecordOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    RecordOutputs: List[RecordOutputTypeDef],  # (2)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class RecordOutputTypeDef(TypedDict):
+    OutputKey: NotRequired[str],
+    OutputValue: NotRequired[str],
+    Description: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: RecordOutputTypeDef](./type_defs.md#recordoutputtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceActionExecutionParametersInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1492,26 +1115,24 @@ class DescribeServiceActionExecutionParametersInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribeServiceActionExecutionParametersOutputTypeDef
+## ExecutionParameterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ExecutionParameterTypeDef
 
-def get_value() -> DescribeServiceActionExecutionParametersOutputTypeDef:
+def get_value() -> ExecutionParameterTypeDef:
     return {
-        "ServiceActionParameters": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeServiceActionExecutionParametersOutputTypeDef(TypedDict):
-    ServiceActionParameters: List[ExecutionParameterTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ExecutionParameterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+    DefaultValues: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: ExecutionParameterTypeDef](./type_defs.md#executionparametertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceActionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1529,26 +1150,6 @@ class DescribeServiceActionInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## DescribeServiceActionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputTypeDef
-
-def get_value() -> DescribeServiceActionOutputTypeDef:
-    return {
-        "ServiceActionDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeServiceActionOutputTypeDef(TypedDict):
-    ServiceActionDetail: ServiceActionDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ServiceActionDetailTypeDef](./type_defs.md#serviceactiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTagOptionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1565,26 +1166,6 @@ class DescribeTagOptionInputRequestTypeDef(TypedDict):
     Id: str,
 ```
 
-## DescribeTagOptionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputTypeDef
-
-def get_value() -> DescribeTagOptionOutputTypeDef:
-    return {
-        "TagOptionDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTagOptionOutputTypeDef(TypedDict):
-    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateBudgetFromResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1699,26 +1280,6 @@ class ExecuteProvisionedProductPlanInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## ExecuteProvisionedProductPlanOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOutputTypeDef
-
-def get_value() -> ExecuteProvisionedProductPlanOutputTypeDef:
-    return {
-        "RecordDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ExecuteProvisionedProductPlanOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteProvisionedProductServiceActionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1741,85 +1302,6 @@ class ExecuteProvisionedProductServiceActionInputRequestTypeDef(TypedDict):
     Parameters: NotRequired[Mapping[str, Sequence[str]]],
 ```
 
-## ExecuteProvisionedProductServiceActionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionOutputTypeDef
-
-def get_value() -> ExecuteProvisionedProductServiceActionOutputTypeDef:
-    return {
-        "RecordDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ExecuteProvisionedProductServiceActionOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ExecutionParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ExecutionParameterTypeDef
-
-def get_value() -> ExecutionParameterTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ExecutionParameterTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Type: NotRequired[str],
-    DefaultValues: NotRequired[List[str]],
-```
-
-## FailedServiceActionAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import FailedServiceActionAssociationTypeDef
-
-def get_value() -> FailedServiceActionAssociationTypeDef:
-    return {
-        "ServiceActionId": ...,
-    }
-```
-
-```python title="Definition"
-class FailedServiceActionAssociationTypeDef(TypedDict):
-    ServiceActionId: NotRequired[str],
-    ProductId: NotRequired[str],
-    ProvisioningArtifactId: NotRequired[str],
-    ErrorCode: NotRequired[ServiceActionAssociationErrorCodeType],  # (1)
-    ErrorMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ServiceActionAssociationErrorCodeType](./literals.md#serviceactionassociationerrorcodetype) 
-## GetAWSOrganizationsAccessStatusOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusOutputTypeDef
-
-def get_value() -> GetAWSOrganizationsAccessStatusOutputTypeDef:
-    return {
-        "AccessStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAWSOrganizationsAccessStatusOutputTypeDef(TypedDict):
-    AccessStatus: AccessStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AccessStatusType](./literals.md#accessstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProvisionedProductOutputsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1841,28 +1323,6 @@ class GetProvisionedProductOutputsInputRequestTypeDef(TypedDict):
     PageToken: NotRequired[str],
 ```
 
-## GetProvisionedProductOutputsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutputTypeDef
-
-def get_value() -> GetProvisionedProductOutputsOutputTypeDef:
-    return {
-        "Outputs": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetProvisionedProductOutputsOutputTypeDef(TypedDict):
-    Outputs: List[RecordOutputTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordOutputTypeDef](./type_defs.md#recordoutputtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportAsProvisionedProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1888,84 +1348,24 @@ class ImportAsProvisionedProductInputRequestTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
 ```
 
-## ImportAsProvisionedProductOutputTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> ImportAsProvisionedProductOutputTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "RecordDetail": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class ImportAsProvisionedProductOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LaunchPathSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import LaunchPathSummaryTypeDef
-
-def get_value() -> LaunchPathSummaryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchPathSummaryTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ConstraintSummaries: NotRequired[List[ConstraintSummaryTypeDef]],  # (1)
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-braces: ConstraintSummaryTypeDef](./type_defs.md#constraintsummarytypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## LaunchPathTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import LaunchPathTypeDef
-
-def get_value() -> LaunchPathTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchPathTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-```
-
-## ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef
-
-def get_value() -> ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PortfolioShareType: NotRequired[PortfolioShareTypeType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAcceptedPortfolioSharesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1986,28 +1386,6 @@ class ListAcceptedPortfolioSharesInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
-## ListAcceptedPortfolioSharesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
-
-def get_value() -> ListAcceptedPortfolioSharesOutputTypeDef:
-    return {
-        "PortfolioDetails": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAcceptedPortfolioSharesOutputTypeDef(TypedDict):
-    PortfolioDetails: List[PortfolioDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBudgetsForResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2027,48 +1405,6 @@ class ListBudgetsForResourceInputRequestTypeDef(TypedDict):
     PageToken: NotRequired[str],
 ```
 
-## ListBudgetsForResourceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputTypeDef
-
-def get_value() -> ListBudgetsForResourceOutputTypeDef:
-    return {
-        "Budgets": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBudgetsForResourceOutputTypeDef(TypedDict):
-    Budgets: List[BudgetDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef
-
-def get_value() -> ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef:
-    return {
-        "PortfolioId": ...,
-    }
-```
-
-```python title="Definition"
-class ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef(TypedDict):
-    PortfolioId: str,
-    AcceptLanguage: NotRequired[str],
-    ProductId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConstraintsForPortfolioInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2089,47 +1425,6 @@ class ListConstraintsForPortfolioInputRequestTypeDef(TypedDict):
     PageToken: NotRequired[str],
 ```
 
-## ListConstraintsForPortfolioOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutputTypeDef
-
-def get_value() -> ListConstraintsForPortfolioOutputTypeDef:
-    return {
-        "ConstraintDetails": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConstraintsForPortfolioOutputTypeDef(TypedDict):
-    ConstraintDetails: List[ConstraintDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListLaunchPathsInputListLaunchPathsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsInputListLaunchPathsPaginateTypeDef
-
-def get_value() -> ListLaunchPathsInputListLaunchPathsPaginateTypeDef:
-    return {
-        "ProductId": ...,
-    }
-```
-
-```python title="Definition"
-class ListLaunchPathsInputListLaunchPathsPaginateTypeDef(TypedDict):
-    ProductId: str,
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLaunchPathsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2149,50 +1444,6 @@ class ListLaunchPathsInputRequestTypeDef(TypedDict):
     PageToken: NotRequired[str],
 ```
 
-## ListLaunchPathsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputTypeDef
-
-def get_value() -> ListLaunchPathsOutputTypeDef:
-    return {
-        "LaunchPathSummaries": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListLaunchPathsOutputTypeDef(TypedDict):
-    LaunchPathSummaries: List[LaunchPathSummaryTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LaunchPathSummaryTypeDef](./type_defs.md#launchpathsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef
-
-def get_value() -> ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef:
-    return {
-        "PortfolioId": ...,
-        "OrganizationNodeType": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef(TypedDict):
-    PortfolioId: str,
-    OrganizationNodeType: OrganizationNodeTypeType,  # (1)
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOrganizationPortfolioAccessInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2215,28 +1466,6 @@ class ListOrganizationPortfolioAccessInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
-## ListOrganizationPortfolioAccessOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessOutputTypeDef
-
-def get_value() -> ListOrganizationPortfolioAccessOutputTypeDef:
-    return {
-        "OrganizationNodes": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationPortfolioAccessOutputTypeDef(TypedDict):
-    OrganizationNodes: List[OrganizationNodeTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPortfolioAccessInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2257,6 +1486,946 @@ class ListPortfolioAccessInputRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
+## ListPortfoliosForProductInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputRequestTypeDef
+
+def get_value() -> ListPortfoliosForProductInputRequestTypeDef:
+    return {
+        "ProductId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortfoliosForProductInputRequestTypeDef(TypedDict):
+    ProductId: str,
+    AcceptLanguage: NotRequired[str],
+    PageToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
+
+## ListPortfoliosInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputRequestTypeDef
+
+def get_value() -> ListPortfoliosInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortfoliosInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PageToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
+
+## ListPrincipalsForPortfolioInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioInputRequestTypeDef
+
+def get_value() -> ListPrincipalsForPortfolioInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalsForPortfolioInputRequestTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+```
+
+## PrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import PrincipalTypeDef
+
+def get_value() -> PrincipalTypeDef:
+    return {
+        "PrincipalARN": ...,
+    }
+```
+
+```python title="Definition"
+class PrincipalTypeDef(TypedDict):
+    PrincipalARN: NotRequired[str],
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+## ProvisionedProductPlanSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanSummaryTypeDef
+
+def get_value() -> ProvisionedProductPlanSummaryTypeDef:
+    return {
+        "PlanName": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedProductPlanSummaryTypeDef(TypedDict):
+    PlanName: NotRequired[str],
+    PlanId: NotRequired[str],
+    ProvisionProductId: NotRequired[str],
+    ProvisionProductName: NotRequired[str],
+    PlanType: NotRequired[ProvisionedProductPlanTypeType],  # (1)
+    ProvisioningArtifactId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
+## ListProvisioningArtifactsForServiceActionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputRequestTypeDef
+
+def get_value() -> ListProvisioningArtifactsForServiceActionInputRequestTypeDef:
+    return {
+        "ServiceActionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningArtifactsForServiceActionInputRequestTypeDef(TypedDict):
+    ServiceActionId: str,
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+    AcceptLanguage: NotRequired[str],
+```
+
+## ListProvisioningArtifactsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsInputRequestTypeDef
+
+def get_value() -> ListProvisioningArtifactsInputRequestTypeDef:
+    return {
+        "ProductId": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningArtifactsInputRequestTypeDef(TypedDict):
+    ProductId: str,
+    AcceptLanguage: NotRequired[str],
+```
+
+## ListRecordHistorySearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListRecordHistorySearchFilterTypeDef
+
+def get_value() -> ListRecordHistorySearchFilterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecordHistorySearchFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## ListResourcesForTagOptionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputRequestTypeDef
+
+def get_value() -> ListResourcesForTagOptionInputRequestTypeDef:
+    return {
+        "TagOptionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesForTagOptionInputRequestTypeDef(TypedDict):
+    TagOptionId: str,
+    ResourceType: NotRequired[str],
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+```
+
+## ResourceDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ResourceDetailTypeDef
+
+def get_value() -> ResourceDetailTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceDetailTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ARN: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+```
+
+## ListServiceActionsForProvisioningArtifactInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputRequestTypeDef
+
+def get_value() -> ListServiceActionsForProvisioningArtifactInputRequestTypeDef:
+    return {
+        "ProductId": ...,
+        "ProvisioningArtifactId": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceActionsForProvisioningArtifactInputRequestTypeDef(TypedDict):
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+    AcceptLanguage: NotRequired[str],
+```
+
+## ServiceActionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ServiceActionSummaryTypeDef
+
+def get_value() -> ServiceActionSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceActionSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    DefinitionType: NotRequired[ServiceActionDefinitionTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype) 
+## ListServiceActionsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputRequestTypeDef
+
+def get_value() -> ListServiceActionsInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceActionsInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+```
+
+## ListStackInstancesForProvisionedProductInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductInputRequestTypeDef
+
+def get_value() -> ListStackInstancesForProvisionedProductInputRequestTypeDef:
+    return {
+        "ProvisionedProductId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackInstancesForProvisionedProductInputRequestTypeDef(TypedDict):
+    ProvisionedProductId: str,
+    AcceptLanguage: NotRequired[str],
+    PageToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
+
+## StackInstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import StackInstanceTypeDef
+
+def get_value() -> StackInstanceTypeDef:
+    return {
+        "Account": ...,
+    }
+```
+
+```python title="Definition"
+class StackInstanceTypeDef(TypedDict):
+    Account: NotRequired[str],
+    Region: NotRequired[str],
+    StackInstanceStatus: NotRequired[StackInstanceStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: StackInstanceStatusType](./literals.md#stackinstancestatustype) 
+## ListTagOptionsFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListTagOptionsFiltersTypeDef
+
+def get_value() -> ListTagOptionsFiltersTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagOptionsFiltersTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Active: NotRequired[bool],
+```
+
+## ParameterConstraintsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ParameterConstraintsTypeDef
+
+def get_value() -> ParameterConstraintsTypeDef:
+    return {
+        "AllowedValues": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterConstraintsTypeDef(TypedDict):
+    AllowedValues: NotRequired[List[str]],
+    AllowedPattern: NotRequired[str],
+    ConstraintDescription: NotRequired[str],
+    MaxLength: NotRequired[str],
+    MinLength: NotRequired[str],
+    MaxValue: NotRequired[str],
+    MinValue: NotRequired[str],
+```
+
+## ProductViewAggregationValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProductViewAggregationValueTypeDef
+
+def get_value() -> ProductViewAggregationValueTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ProductViewAggregationValueTypeDef(TypedDict):
+    Value: NotRequired[str],
+    ApproximateCount: NotRequired[int],
+```
+
+## ProvisioningParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningParameterTypeDef
+
+def get_value() -> ProvisioningParameterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## ProvisioningPreferencesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningPreferencesTypeDef
+
+def get_value() -> ProvisioningPreferencesTypeDef:
+    return {
+        "StackSetAccounts": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningPreferencesTypeDef(TypedDict):
+    StackSetAccounts: NotRequired[Sequence[str]],
+    StackSetRegions: NotRequired[Sequence[str]],
+    StackSetFailureToleranceCount: NotRequired[int],
+    StackSetFailureTolerancePercentage: NotRequired[int],
+    StackSetMaxConcurrencyCount: NotRequired[int],
+    StackSetMaxConcurrencyPercentage: NotRequired[int],
+```
+
+## RecordErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import RecordErrorTypeDef
+
+def get_value() -> RecordErrorTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class RecordErrorTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Description: NotRequired[str],
+```
+
+## RecordTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import RecordTagTypeDef
+
+def get_value() -> RecordTagTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class RecordTagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## RejectPortfolioShareInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import RejectPortfolioShareInputRequestTypeDef
+
+def get_value() -> RejectPortfolioShareInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class RejectPortfolioShareInputRequestTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    PortfolioShareType: NotRequired[PortfolioShareTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
+## ResourceTargetDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ResourceTargetDefinitionTypeDef
+
+def get_value() -> ResourceTargetDefinitionTypeDef:
+    return {
+        "Attribute": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceTargetDefinitionTypeDef(TypedDict):
+    Attribute: NotRequired[ResourceAttributeType],  # (1)
+    Name: NotRequired[str],
+    RequiresRecreation: NotRequired[RequiresRecreationType],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
+2. See [:material-code-brackets: RequiresRecreationType](./literals.md#requiresrecreationtype) 
+## SearchProductsAsAdminInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputRequestTypeDef
+
+def get_value() -> SearchProductsAsAdminInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProductsAsAdminInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PortfolioId: NotRequired[str],
+    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
+    SortBy: NotRequired[ProductViewSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    PageToken: NotRequired[str],
+    PageSize: NotRequired[int],
+    ProductSource: NotRequired[ProductSourceType],  # (4)
+```
+
+1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
+2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-brackets: ProductSourceType](./literals.md#productsourcetype) 
+## SearchProductsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProductsInputRequestTypeDef
+
+def get_value() -> SearchProductsInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProductsInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
+    PageSize: NotRequired[int],
+    SortBy: NotRequired[ProductViewSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    PageToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
+2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ShareErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ShareErrorTypeDef
+
+def get_value() -> ShareErrorTypeDef:
+    return {
+        "Accounts": ...,
+    }
+```
+
+```python title="Definition"
+class ShareErrorTypeDef(TypedDict):
+    Accounts: NotRequired[List[str]],
+    Message: NotRequired[str],
+    Error: NotRequired[str],
+```
+
+## TerminateProvisionedProductInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductInputRequestTypeDef
+
+def get_value() -> TerminateProvisionedProductInputRequestTypeDef:
+    return {
+        "TerminateToken": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateProvisionedProductInputRequestTypeDef(TypedDict):
+    TerminateToken: str,
+    ProvisionedProductName: NotRequired[str],
+    ProvisionedProductId: NotRequired[str],
+    IgnoreErrors: NotRequired[bool],
+    AcceptLanguage: NotRequired[str],
+    RetainPhysicalResources: NotRequired[bool],
+```
+
+## UpdateConstraintInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateConstraintInputRequestTypeDef
+
+def get_value() -> UpdateConstraintInputRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConstraintInputRequestTypeDef(TypedDict):
+    Id: str,
+    AcceptLanguage: NotRequired[str],
+    Description: NotRequired[str],
+    Parameters: NotRequired[str],
+```
+
+## UpdateProvisioningPreferencesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningPreferencesTypeDef
+
+def get_value() -> UpdateProvisioningPreferencesTypeDef:
+    return {
+        "StackSetAccounts": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisioningPreferencesTypeDef(TypedDict):
+    StackSetAccounts: NotRequired[Sequence[str]],
+    StackSetRegions: NotRequired[Sequence[str]],
+    StackSetFailureToleranceCount: NotRequired[int],
+    StackSetFailureTolerancePercentage: NotRequired[int],
+    StackSetMaxConcurrencyCount: NotRequired[int],
+    StackSetMaxConcurrencyPercentage: NotRequired[int],
+    StackSetOperationType: NotRequired[StackSetOperationTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: StackSetOperationTypeType](./literals.md#stacksetoperationtypetype) 
+## UpdateProvisionedProductPropertiesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesInputRequestTypeDef
+
+def get_value() -> UpdateProvisionedProductPropertiesInputRequestTypeDef:
+    return {
+        "ProvisionedProductId": ...,
+        "ProvisionedProductProperties": ...,
+        "IdempotencyToken": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisionedProductPropertiesInputRequestTypeDef(TypedDict):
+    ProvisionedProductId: str,
+    ProvisionedProductProperties: Mapping[PropertyKeyType, str],  # (1)
+    IdempotencyToken: str,
+    AcceptLanguage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PropertyKeyType](./literals.md#propertykeytype) 
+## UpdateProvisioningArtifactInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactInputRequestTypeDef
+
+def get_value() -> UpdateProvisioningArtifactInputRequestTypeDef:
+    return {
+        "ProductId": ...,
+        "ProvisioningArtifactId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisioningArtifactInputRequestTypeDef(TypedDict):
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    AcceptLanguage: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Active: NotRequired[bool],
+    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (1)
+```
+
+1. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
+## UpdateServiceActionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionInputRequestTypeDef
+
+def get_value() -> UpdateServiceActionInputRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateServiceActionInputRequestTypeDef(TypedDict):
+    Id: str,
+    Name: NotRequired[str],
+    Definition: NotRequired[Mapping[ServiceActionDefinitionKeyType, str]],  # (1)
+    Description: NotRequired[str],
+    AcceptLanguage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
+## UpdateTagOptionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionInputRequestTypeDef
+
+def get_value() -> UpdateTagOptionInputRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTagOptionInputRequestTypeDef(TypedDict):
+    Id: str,
+    Value: NotRequired[str],
+    Active: NotRequired[bool],
+```
+
+## ListProvisionedProductPlansInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputRequestTypeDef
+
+def get_value() -> ListProvisionedProductPlansInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisionedProductPlansInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    ProvisionProductId: NotRequired[str],
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+## ScanProvisionedProductsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputRequestTypeDef
+
+def get_value() -> ScanProvisionedProductsInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ScanProvisionedProductsInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+## SearchProvisionedProductsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsInputRequestTypeDef
+
+def get_value() -> SearchProvisionedProductsInputRequestTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProvisionedProductsInputRequestTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
+    Filters: NotRequired[Mapping[ProvisionedProductViewFilterByType, Sequence[str]]],  # (2)
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    PageSize: NotRequired[int],
+    PageToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-brackets: ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
+
+def get_value() -> BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef:
+    return {
+        "ServiceActionAssociations": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef(TypedDict):
+    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
+    AcceptLanguage: NotRequired[str],
+```
+
+1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
+## BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
+
+def get_value() -> BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef:
+    return {
+        "ServiceActionAssociations": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef(TypedDict):
+    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
+    AcceptLanguage: NotRequired[str],
+```
+
+1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
+## BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
+
+def get_value() -> BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef:
+    return {
+        "FailedServiceActionAssociations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef(TypedDict):
+    FailedServiceActionAssociations: List[FailedServiceActionAssociationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedServiceActionAssociationTypeDef](./type_defs.md#failedserviceactionassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
+
+def get_value() -> BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef:
+    return {
+        "FailedServiceActionAssociations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef(TypedDict):
+    FailedServiceActionAssociations: List[FailedServiceActionAssociationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedServiceActionAssociationTypeDef](./type_defs.md#failedserviceactionassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CopyProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CopyProductOutputTypeDef
+
+def get_value() -> CopyProductOutputTypeDef:
+    return {
+        "CopyProductToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CopyProductOutputTypeDef(TypedDict):
+    CopyProductToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePortfolioShareOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputTypeDef
+
+def get_value() -> CreatePortfolioShareOutputTypeDef:
+    return {
+        "PortfolioShareToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortfolioShareOutputTypeDef(TypedDict):
+    PortfolioShareToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisionedProductPlanOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutputTypeDef
+
+def get_value() -> CreateProvisionedProductPlanOutputTypeDef:
+    return {
+        "PlanName": ...,
+        "PlanId": ...,
+        "ProvisionProductId": ...,
+        "ProvisionedProductName": ...,
+        "ProvisioningArtifactId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisionedProductPlanOutputTypeDef(TypedDict):
+    PlanName: str,
+    PlanId: str,
+    ProvisionProductId: str,
+    ProvisionedProductName: str,
+    ProvisioningArtifactId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeletePortfolioShareOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputTypeDef
+
+def get_value() -> DeletePortfolioShareOutputTypeDef:
+    return {
+        "PortfolioShareToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePortfolioShareOutputTypeDef(TypedDict):
+    PortfolioShareToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCopyProductStatusOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputTypeDef
+
+def get_value() -> DescribeCopyProductStatusOutputTypeDef:
+    return {
+        "CopyProductStatus": ...,
+        "TargetProductId": ...,
+        "StatusDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCopyProductStatusOutputTypeDef(TypedDict):
+    CopyProductStatus: CopyProductStatusType,  # (1)
+    TargetProductId: str,
+    StatusDetail: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: CopyProductStatusType](./literals.md#copyproductstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAWSOrganizationsAccessStatusOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusOutputTypeDef
+
+def get_value() -> GetAWSOrganizationsAccessStatusOutputTypeDef:
+    return {
+        "AccessStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAWSOrganizationsAccessStatusOutputTypeDef(TypedDict):
+    AccessStatus: AccessStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AccessStatusType](./literals.md#accessstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPortfolioAccessOutputTypeDef
 
 ```python title="Usage Example"
@@ -2278,44 +2447,350 @@ class ListPortfolioAccessOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef
+## UpdatePortfolioShareOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDef
 
-def get_value() -> ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef:
+def get_value() -> UpdatePortfolioShareOutputTypeDef:
     return {
-        "ProductId": ...,
+        "PortfolioShareToken": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef(TypedDict):
-    ProductId: str,
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class UpdatePortfolioShareOutputTypeDef(TypedDict):
+    PortfolioShareToken: str,
+    Status: ShareStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListPortfoliosForProductInputRequestTypeDef
+1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProvisionedProductPropertiesOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesOutputTypeDef
 
-def get_value() -> ListPortfoliosForProductInputRequestTypeDef:
+def get_value() -> UpdateProvisionedProductPropertiesOutputTypeDef:
     return {
-        "ProductId": ...,
+        "ProvisionedProductId": ...,
+        "ProvisionedProductProperties": ...,
+        "RecordId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListPortfoliosForProductInputRequestTypeDef(TypedDict):
-    ProductId: str,
-    AcceptLanguage: NotRequired[str],
-    PageToken: NotRequired[str],
-    PageSize: NotRequired[int],
+class UpdateProvisionedProductPropertiesOutputTypeDef(TypedDict):
+    ProvisionedProductId: str,
+    ProvisionedProductProperties: Dict[PropertyKeyType, str],  # (1)
+    RecordId: str,
+    Status: RecordStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
+1. See [:material-code-brackets: PropertyKeyType](./literals.md#propertykeytype) 
+2. See [:material-code-brackets: RecordStatusType](./literals.md#recordstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBudgetsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputTypeDef
+
+def get_value() -> ListBudgetsForResourceOutputTypeDef:
+    return {
+        "Budgets": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBudgetsForResourceOutputTypeDef(TypedDict):
+    Budgets: List[BudgetDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateConstraintOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputTypeDef
+
+def get_value() -> CreateConstraintOutputTypeDef:
+    return {
+        "ConstraintDetail": ...,
+        "ConstraintParameters": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConstraintOutputTypeDef(TypedDict):
+    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
+    ConstraintParameters: str,
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConstraintOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputTypeDef
+
+def get_value() -> DescribeConstraintOutputTypeDef:
+    return {
+        "ConstraintDetail": ...,
+        "ConstraintParameters": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConstraintOutputTypeDef(TypedDict):
+    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
+    ConstraintParameters: str,
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConstraintsForPortfolioOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutputTypeDef
+
+def get_value() -> ListConstraintsForPortfolioOutputTypeDef:
+    return {
+        "ConstraintDetails": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConstraintsForPortfolioOutputTypeDef(TypedDict):
+    ConstraintDetails: List[ConstraintDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateConstraintOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputTypeDef
+
+def get_value() -> UpdateConstraintOutputTypeDef:
+    return {
+        "ConstraintDetail": ...,
+        "ConstraintParameters": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConstraintOutputTypeDef(TypedDict):
+    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
+    ConstraintParameters: str,
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePortfolioInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioInputRequestTypeDef
+
+def get_value() -> CreatePortfolioInputRequestTypeDef:
+    return {
+        "DisplayName": ...,
+        "ProviderName": ...,
+        "IdempotencyToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortfolioInputRequestTypeDef(TypedDict):
+    DisplayName: str,
+    ProviderName: str,
+    IdempotencyToken: str,
+    AcceptLanguage: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## LaunchPathSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import LaunchPathSummaryTypeDef
+
+def get_value() -> LaunchPathSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchPathSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ConstraintSummaries: NotRequired[List[ConstraintSummaryTypeDef]],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: ConstraintSummaryTypeDef](./type_defs.md#constraintsummarytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ProvisionedProductAttributeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisionedProductAttributeTypeDef
+
+def get_value() -> ProvisionedProductAttributeTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedProductAttributeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Type: NotRequired[str],
+    Id: NotRequired[str],
+    Status: NotRequired[ProvisionedProductStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    IdempotencyToken: NotRequired[str],
+    LastRecordId: NotRequired[str],
+    LastProvisioningRecordId: NotRequired[str],
+    LastSuccessfulProvisioningRecordId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    PhysicalId: NotRequired[str],
+    ProductId: NotRequired[str],
+    ProductName: NotRequired[str],
+    ProvisioningArtifactId: NotRequired[str],
+    ProvisioningArtifactName: NotRequired[str],
+    UserArn: NotRequired[str],
+    UserArnSession: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProvisionedProductStatusType](./literals.md#provisionedproductstatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdatePortfolioInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioInputRequestTypeDef
+
+def get_value() -> UpdatePortfolioInputRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePortfolioInputRequestTypeDef(TypedDict):
+    Id: str,
+    AcceptLanguage: NotRequired[str],
+    DisplayName: NotRequired[str],
+    Description: NotRequired[str],
+    ProviderName: NotRequired[str],
+    AddTags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    RemoveTags: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateProductInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProductInputRequestTypeDef
+
+def get_value() -> UpdateProductInputRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProductInputRequestTypeDef(TypedDict):
+    Id: str,
+    AcceptLanguage: NotRequired[str],
+    Name: NotRequired[str],
+    Owner: NotRequired[str],
+    Description: NotRequired[str],
+    Distributor: NotRequired[str],
+    SupportDescription: NotRequired[str],
+    SupportEmail: NotRequired[str],
+    SupportUrl: NotRequired[str],
+    AddTags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    RemoveTags: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreatePortfolioOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputTypeDef
+
+def get_value() -> CreatePortfolioOutputTypeDef:
+    return {
+        "PortfolioDetail": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortfolioOutputTypeDef(TypedDict):
+    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAcceptedPortfolioSharesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
+
+def get_value() -> ListAcceptedPortfolioSharesOutputTypeDef:
+    return {
+        "PortfolioDetails": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAcceptedPortfolioSharesOutputTypeDef(TypedDict):
+    PortfolioDetails: List[PortfolioDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPortfoliosForProductOutputTypeDef
 
 ```python title="Usage Example"
@@ -2338,42 +2813,6 @@ class ListPortfoliosForProductOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPortfoliosInputListPortfoliosPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputListPortfoliosPaginateTypeDef
-
-def get_value() -> ListPortfoliosInputListPortfoliosPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListPortfoliosInputListPortfoliosPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListPortfoliosInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputRequestTypeDef
-
-def get_value() -> ListPortfoliosInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListPortfoliosInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PageToken: NotRequired[str],
-    PageSize: NotRequired[int],
-```
-
 ## ListPortfoliosOutputTypeDef
 
 ```python title="Usage Example"
@@ -2396,6 +2835,764 @@ class ListPortfoliosOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdatePortfolioOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputTypeDef
+
+def get_value() -> UpdatePortfolioOutputTypeDef:
+    return {
+        "PortfolioDetail": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePortfolioOutputTypeDef(TypedDict):
+    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePortfolioShareInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareInputRequestTypeDef
+
+def get_value() -> CreatePortfolioShareInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePortfolioShareInputRequestTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    AccountId: NotRequired[str],
+    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
+    ShareTagOptions: NotRequired[bool],
+```
+
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+## DeletePortfolioShareInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareInputRequestTypeDef
+
+def get_value() -> DeletePortfolioShareInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePortfolioShareInputRequestTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    AccountId: NotRequired[str],
+    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+## ListOrganizationPortfolioAccessOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessOutputTypeDef
+
+def get_value() -> ListOrganizationPortfolioAccessOutputTypeDef:
+    return {
+        "OrganizationNodes": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationPortfolioAccessOutputTypeDef(TypedDict):
+    OrganizationNodes: List[OrganizationNodeTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdatePortfolioShareInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareInputRequestTypeDef
+
+def get_value() -> UpdatePortfolioShareInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePortfolioShareInputRequestTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    AccountId: NotRequired[str],
+    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
+    ShareTagOptions: NotRequired[bool],
+```
+
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+## CreateProductInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateProductInputRequestTypeDef
+
+def get_value() -> CreateProductInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "Owner": ...,
+        "ProductType": ...,
+        "ProvisioningArtifactParameters": ...,
+        "IdempotencyToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProductInputRequestTypeDef(TypedDict):
+    Name: str,
+    Owner: str,
+    ProductType: ProductTypeType,  # (1)
+    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef,  # (2)
+    IdempotencyToken: str,
+    AcceptLanguage: NotRequired[str],
+    Description: NotRequired[str],
+    Distributor: NotRequired[str],
+    SupportDescription: NotRequired[str],
+    SupportEmail: NotRequired[str],
+    SupportUrl: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
+2. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateProvisioningArtifactInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactInputRequestTypeDef
+
+def get_value() -> CreateProvisioningArtifactInputRequestTypeDef:
+    return {
+        "ProductId": ...,
+        "Parameters": ...,
+        "IdempotencyToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningArtifactInputRequestTypeDef(TypedDict):
+    ProductId: str,
+    Parameters: ProvisioningArtifactPropertiesTypeDef,  # (1)
+    IdempotencyToken: str,
+    AcceptLanguage: NotRequired[str],
+```
+
+1. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
+## CreateProvisioningArtifactOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutputTypeDef
+
+def get_value() -> CreateProvisioningArtifactOutputTypeDef:
+    return {
+        "ProvisioningArtifactDetail": ...,
+        "Info": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisioningArtifactOutputTypeDef(TypedDict):
+    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
+    Info: Dict[str, str],
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProvisioningArtifactOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutputTypeDef
+
+def get_value() -> DescribeProvisioningArtifactOutputTypeDef:
+    return {
+        "ProvisioningArtifactDetail": ...,
+        "Info": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProvisioningArtifactOutputTypeDef(TypedDict):
+    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
+    Info: Dict[str, str],
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProvisioningArtifactsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputTypeDef
+
+def get_value() -> ListProvisioningArtifactsOutputTypeDef:
+    return {
+        "ProvisioningArtifactDetails": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningArtifactsOutputTypeDef(TypedDict):
+    ProvisioningArtifactDetails: List[ProvisioningArtifactDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProvisioningArtifactOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutputTypeDef
+
+def get_value() -> UpdateProvisioningArtifactOutputTypeDef:
+    return {
+        "ProvisioningArtifactDetail": ...,
+        "Info": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisioningArtifactOutputTypeDef(TypedDict):
+    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
+    Info: Dict[str, str],
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProvisionedProductPlanInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanInputRequestTypeDef
+
+def get_value() -> CreateProvisionedProductPlanInputRequestTypeDef:
+    return {
+        "PlanName": ...,
+        "PlanType": ...,
+        "ProductId": ...,
+        "ProvisionedProductName": ...,
+        "ProvisioningArtifactId": ...,
+        "IdempotencyToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProvisionedProductPlanInputRequestTypeDef(TypedDict):
+    PlanName: str,
+    PlanType: ProvisionedProductPlanTypeType,  # (1)
+    ProductId: str,
+    ProvisionedProductName: str,
+    ProvisioningArtifactId: str,
+    IdempotencyToken: str,
+    AcceptLanguage: NotRequired[str],
+    NotificationArns: NotRequired[Sequence[str]],
+    PathId: NotRequired[str],
+    ProvisioningParameters: NotRequired[Sequence[UpdateProvisioningParameterTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
+2. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ProvisionedProductPlanDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanDetailsTypeDef
+
+def get_value() -> ProvisionedProductPlanDetailsTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedProductPlanDetailsTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    PathId: NotRequired[str],
+    ProductId: NotRequired[str],
+    PlanName: NotRequired[str],
+    PlanId: NotRequired[str],
+    ProvisionProductId: NotRequired[str],
+    ProvisionProductName: NotRequired[str],
+    PlanType: NotRequired[ProvisionedProductPlanTypeType],  # (1)
+    ProvisioningArtifactId: NotRequired[str],
+    Status: NotRequired[ProvisionedProductPlanStatusType],  # (2)
+    UpdatedTime: NotRequired[datetime],
+    NotificationArns: NotRequired[List[str]],
+    ProvisioningParameters: NotRequired[List[UpdateProvisioningParameterTypeDef]],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+    StatusMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
+2. See [:material-code-brackets: ProvisionedProductPlanStatusType](./literals.md#provisionedproductplanstatustype) 
+3. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateTagOptionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputTypeDef
+
+def get_value() -> CreateTagOptionOutputTypeDef:
+    return {
+        "TagOptionDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTagOptionOutputTypeDef(TypedDict):
+    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePortfolioOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputTypeDef
+
+def get_value() -> DescribePortfolioOutputTypeDef:
+    return {
+        "PortfolioDetail": ...,
+        "Tags": ...,
+        "TagOptions": ...,
+        "Budgets": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePortfolioOutputTypeDef(TypedDict):
+    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    TagOptions: List[TagOptionDetailTypeDef],  # (3)
+    Budgets: List[BudgetDetailTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+4. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTagOptionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputTypeDef
+
+def get_value() -> DescribeTagOptionOutputTypeDef:
+    return {
+        "TagOptionDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagOptionOutputTypeDef(TypedDict):
+    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagOptionsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputTypeDef
+
+def get_value() -> ListTagOptionsOutputTypeDef:
+    return {
+        "TagOptionDetails": ...,
+        "PageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagOptionsOutputTypeDef(TypedDict):
+    TagOptionDetails: List[TagOptionDetailTypeDef],  # (1)
+    PageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTagOptionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputTypeDef
+
+def get_value() -> UpdateTagOptionOutputTypeDef:
+    return {
+        "TagOptionDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTagOptionOutputTypeDef(TypedDict):
+    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePortfolioSharesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputTypeDef
+
+def get_value() -> DescribePortfolioSharesOutputTypeDef:
+    return {
+        "NextPageToken": ...,
+        "PortfolioShareDetails": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePortfolioSharesOutputTypeDef(TypedDict):
+    NextPageToken: str,
+    PortfolioShareDetails: List[PortfolioShareDetailTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PortfolioShareDetailTypeDef](./type_defs.md#portfoliosharedetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProductViewDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProductViewDetailTypeDef
+
+def get_value() -> ProductViewDetailTypeDef:
+    return {
+        "ProductViewSummary": ...,
+    }
+```
+
+```python title="Definition"
+class ProductViewDetailTypeDef(TypedDict):
+    ProductViewSummary: NotRequired[ProductViewSummaryTypeDef],  # (1)
+    Status: NotRequired[StatusType],  # (2)
+    ProductARN: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## DescribeProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputTypeDef
+
+def get_value() -> DescribeProductOutputTypeDef:
+    return {
+        "ProductViewSummary": ...,
+        "ProvisioningArtifacts": ...,
+        "Budgets": ...,
+        "LaunchPaths": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductOutputTypeDef(TypedDict):
+    ProductViewSummary: ProductViewSummaryTypeDef,  # (1)
+    ProvisioningArtifacts: List[ProvisioningArtifactTypeDef],  # (2)
+    Budgets: List[BudgetDetailTypeDef],  # (3)
+    LaunchPaths: List[LaunchPathTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
+2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
+3. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
+4. See [:material-code-braces: LaunchPathTypeDef](./type_defs.md#launchpathtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProductViewOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputTypeDef
+
+def get_value() -> DescribeProductViewOutputTypeDef:
+    return {
+        "ProductViewSummary": ...,
+        "ProvisioningArtifacts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductViewOutputTypeDef(TypedDict):
+    ProductViewSummary: ProductViewSummaryTypeDef,  # (1)
+    ProvisioningArtifacts: List[ProvisioningArtifactTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
+2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProvisioningArtifactViewTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactViewTypeDef
+
+def get_value() -> ProvisioningArtifactViewTypeDef:
+    return {
+        "ProductViewSummary": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningArtifactViewTypeDef(TypedDict):
+    ProductViewSummary: NotRequired[ProductViewSummaryTypeDef],  # (1)
+    ProvisioningArtifact: NotRequired[ProvisioningArtifactTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
+2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
+## DescribeProvisionedProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutputTypeDef
+
+def get_value() -> DescribeProvisionedProductOutputTypeDef:
+    return {
+        "ProvisionedProductDetail": ...,
+        "CloudWatchDashboards": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProvisionedProductOutputTypeDef(TypedDict):
+    ProvisionedProductDetail: ProvisionedProductDetailTypeDef,  # (1)
+    CloudWatchDashboards: List[CloudWatchDashboardTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProvisionedProductDetailTypeDef](./type_defs.md#provisionedproductdetailtypedef) 
+2. See [:material-code-braces: CloudWatchDashboardTypeDef](./type_defs.md#cloudwatchdashboardtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ScanProvisionedProductsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputTypeDef
+
+def get_value() -> ScanProvisionedProductsOutputTypeDef:
+    return {
+        "ProvisionedProducts": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ScanProvisionedProductsOutputTypeDef(TypedDict):
+    ProvisionedProducts: List[ProvisionedProductDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisionedProductDetailTypeDef](./type_defs.md#provisionedproductdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetProvisionedProductOutputsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutputTypeDef
+
+def get_value() -> GetProvisionedProductOutputsOutputTypeDef:
+    return {
+        "Outputs": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetProvisionedProductOutputsOutputTypeDef(TypedDict):
+    Outputs: List[RecordOutputTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordOutputTypeDef](./type_defs.md#recordoutputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeServiceActionExecutionParametersOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersOutputTypeDef
+
+def get_value() -> DescribeServiceActionExecutionParametersOutputTypeDef:
+    return {
+        "ServiceActionParameters": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServiceActionExecutionParametersOutputTypeDef(TypedDict):
+    ServiceActionParameters: List[ExecutionParameterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExecutionParameterTypeDef](./type_defs.md#executionparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef
+
+def get_value() -> ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PortfolioShareType: NotRequired[PortfolioShareTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef
+
+def get_value() -> ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
+```
+
+```python title="Definition"
+class ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef(TypedDict):
+    PortfolioId: str,
+    AcceptLanguage: NotRequired[str],
+    ProductId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListLaunchPathsInputListLaunchPathsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsInputListLaunchPathsPaginateTypeDef
+
+def get_value() -> ListLaunchPathsInputListLaunchPathsPaginateTypeDef:
+    return {
+        "ProductId": ...,
+    }
+```
+
+```python title="Definition"
+class ListLaunchPathsInputListLaunchPathsPaginateTypeDef(TypedDict):
+    ProductId: str,
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef
+
+def get_value() -> ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef:
+    return {
+        "PortfolioId": ...,
+        "OrganizationNodeType": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef(TypedDict):
+    PortfolioId: str,
+    OrganizationNodeType: OrganizationNodeTypeType,  # (1)
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef
+
+def get_value() -> ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef:
+    return {
+        "ProductId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef(TypedDict):
+    ProductId: str,
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPortfoliosInputListPortfoliosPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputListPortfoliosPaginateTypeDef
+
+def get_value() -> ListPortfoliosInputListPortfoliosPaginateTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortfoliosInputListPortfoliosPaginateTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrincipalsForPortfolioInputListPrincipalsForPortfolioPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2415,25 +3612,151 @@ class ListPrincipalsForPortfolioInputListPrincipalsForPortfolioPaginateTypeDef(T
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListPrincipalsForPortfolioInputRequestTypeDef
+## ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef
 
-def get_value() -> ListPrincipalsForPortfolioInputRequestTypeDef:
+def get_value() -> ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef:
     return {
-        "PortfolioId": ...,
+        "AcceptLanguage": ...,
     }
 ```
 
 ```python title="Definition"
-class ListPrincipalsForPortfolioInputRequestTypeDef(TypedDict):
-    PortfolioId: str,
+class ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef(TypedDict):
     AcceptLanguage: NotRequired[str],
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
+    ProvisionProductId: NotRequired[str],
+    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef
+
+def get_value() -> ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef:
+    return {
+        "ServiceActionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef(TypedDict):
+    ServiceActionId: str,
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef
+
+def get_value() -> ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef:
+    return {
+        "TagOptionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef(TypedDict):
+    TagOptionId: str,
+    ResourceType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef
+
+def get_value() -> ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef:
+    return {
+        "ProductId": ...,
+        "ProvisioningArtifactId": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef(TypedDict):
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServiceActionsInputListServiceActionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputListServiceActionsPaginateTypeDef
+
+def get_value() -> ListServiceActionsInputListServiceActionsPaginateTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceActionsInputListServiceActionsPaginateTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef
+
+def get_value() -> ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef
+
+def get_value() -> SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef:
+    return {
+        "AcceptLanguage": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef(TypedDict):
+    AcceptLanguage: NotRequired[str],
+    PortfolioId: NotRequired[str],
+    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
+    SortBy: NotRequired[ProductViewSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    ProductSource: NotRequired[ProductSourceType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
+2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-brackets: ProductSourceType](./literals.md#productsourcetype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrincipalsForPortfolioOutputTypeDef
 
 ```python title="Usage Example"
@@ -2456,48 +3779,6 @@ class ListPrincipalsForPortfolioOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef
-
-def get_value() -> ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    ProvisionProductId: NotRequired[str],
-    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListProvisionedProductPlansInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputRequestTypeDef
-
-def get_value() -> ListProvisionedProductPlansInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisionedProductPlansInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    ProvisionProductId: NotRequired[str],
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
 ## ListProvisionedProductPlansOutputTypeDef
 
 ```python title="Usage Example"
@@ -2519,105 +3800,6 @@ class ListProvisionedProductPlansOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProvisionedProductPlanSummaryTypeDef](./type_defs.md#provisionedproductplansummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef
-
-def get_value() -> ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef:
-    return {
-        "ServiceActionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef(TypedDict):
-    ServiceActionId: str,
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListProvisioningArtifactsForServiceActionInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputRequestTypeDef
-
-def get_value() -> ListProvisioningArtifactsForServiceActionInputRequestTypeDef:
-    return {
-        "ServiceActionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningArtifactsForServiceActionInputRequestTypeDef(TypedDict):
-    ServiceActionId: str,
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-    AcceptLanguage: NotRequired[str],
-```
-
-## ListProvisioningArtifactsForServiceActionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionOutputTypeDef
-
-def get_value() -> ListProvisioningArtifactsForServiceActionOutputTypeDef:
-    return {
-        "ProvisioningArtifactViews": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningArtifactsForServiceActionOutputTypeDef(TypedDict):
-    ProvisioningArtifactViews: List[ProvisioningArtifactViewTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProvisioningArtifactViewTypeDef](./type_defs.md#provisioningartifactviewtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProvisioningArtifactsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsInputRequestTypeDef
-
-def get_value() -> ListProvisioningArtifactsInputRequestTypeDef:
-    return {
-        "ProductId": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningArtifactsInputRequestTypeDef(TypedDict):
-    ProductId: str,
-    AcceptLanguage: NotRequired[str],
-```
-
-## ListProvisioningArtifactsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputTypeDef
-
-def get_value() -> ListProvisioningArtifactsOutputTypeDef:
-    return {
-        "ProvisioningArtifactDetails": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListProvisioningArtifactsOutputTypeDef(TypedDict):
-    ProvisioningArtifactDetails: List[ProvisioningArtifactDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecordHistoryInputListRecordHistoryPaginateTypeDef
 
@@ -2663,83 +3845,6 @@ class ListRecordHistoryInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
 2. See [:material-code-braces: ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef) 
-## ListRecordHistoryOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputTypeDef
-
-def get_value() -> ListRecordHistoryOutputTypeDef:
-    return {
-        "RecordDetails": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordHistoryOutputTypeDef(TypedDict):
-    RecordDetails: List[RecordDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListRecordHistorySearchFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListRecordHistorySearchFilterTypeDef
-
-def get_value() -> ListRecordHistorySearchFilterTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class ListRecordHistorySearchFilterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef
-
-def get_value() -> ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef:
-    return {
-        "TagOptionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef(TypedDict):
-    TagOptionId: str,
-    ResourceType: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResourcesForTagOptionInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputRequestTypeDef
-
-def get_value() -> ListResourcesForTagOptionInputRequestTypeDef:
-    return {
-        "TagOptionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourcesForTagOptionInputRequestTypeDef(TypedDict):
-    TagOptionId: str,
-    ResourceType: NotRequired[str],
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-```
-
 ## ListResourcesForTagOptionOutputTypeDef
 
 ```python title="Usage Example"
@@ -2762,48 +3867,6 @@ class ListResourcesForTagOptionOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourceDetailTypeDef](./type_defs.md#resourcedetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef
-
-def get_value() -> ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef:
-    return {
-        "ProductId": ...,
-        "ProvisioningArtifactId": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef(TypedDict):
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListServiceActionsForProvisioningArtifactInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputRequestTypeDef
-
-def get_value() -> ListServiceActionsForProvisioningArtifactInputRequestTypeDef:
-    return {
-        "ProductId": ...,
-        "ProvisioningArtifactId": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceActionsForProvisioningArtifactInputRequestTypeDef(TypedDict):
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-    AcceptLanguage: NotRequired[str],
-```
-
 ## ListServiceActionsForProvisioningArtifactOutputTypeDef
 
 ```python title="Usage Example"
@@ -2826,42 +3889,6 @@ class ListServiceActionsForProvisioningArtifactOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ServiceActionSummaryTypeDef](./type_defs.md#serviceactionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServiceActionsInputListServiceActionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputListServiceActionsPaginateTypeDef
-
-def get_value() -> ListServiceActionsInputListServiceActionsPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceActionsInputListServiceActionsPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListServiceActionsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputRequestTypeDef
-
-def get_value() -> ListServiceActionsInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceActionsInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-```
-
 ## ListServiceActionsOutputTypeDef
 
 ```python title="Usage Example"
@@ -2884,25 +3911,25 @@ class ListServiceActionsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ServiceActionSummaryTypeDef](./type_defs.md#serviceactionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStackInstancesForProvisionedProductInputRequestTypeDef
+## ServiceActionDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import ServiceActionDetailTypeDef
 
-def get_value() -> ListStackInstancesForProvisionedProductInputRequestTypeDef:
+def get_value() -> ServiceActionDetailTypeDef:
     return {
-        "ProvisionedProductId": ...,
+        "ServiceActionSummary": ...,
     }
 ```
 
 ```python title="Definition"
-class ListStackInstancesForProvisionedProductInputRequestTypeDef(TypedDict):
-    ProvisionedProductId: str,
-    AcceptLanguage: NotRequired[str],
-    PageToken: NotRequired[str],
-    PageSize: NotRequired[int],
+class ServiceActionDetailTypeDef(TypedDict):
+    ServiceActionSummary: NotRequired[ServiceActionSummaryTypeDef],  # (1)
+    Definition: NotRequired[Dict[ServiceActionDefinitionKeyType, str]],  # (2)
 ```
 
+1. See [:material-code-braces: ServiceActionSummaryTypeDef](./type_defs.md#serviceactionsummarytypedef) 
+2. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
 ## ListStackInstancesForProvisionedProductOutputTypeDef
 
 ```python title="Usage Example"
@@ -2925,24 +3952,6 @@ class ListStackInstancesForProvisionedProductOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: StackInstanceTypeDef](./type_defs.md#stackinstancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagOptionsFiltersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListTagOptionsFiltersTypeDef
-
-def get_value() -> ListTagOptionsFiltersTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagOptionsFiltersTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    Active: NotRequired[bool],
-```
-
 ## ListTagOptionsInputListTagOptionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2981,210 +3990,53 @@ class ListTagOptionsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef) 
-## ListTagOptionsOutputTypeDef
+## ProvisioningArtifactParameterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactParameterTypeDef
 
-def get_value() -> ListTagOptionsOutputTypeDef:
+def get_value() -> ProvisioningArtifactParameterTypeDef:
     return {
-        "TagOptionDetails": ...,
-        "PageToken": ...,
+        "ParameterKey": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisioningArtifactParameterTypeDef(TypedDict):
+    ParameterKey: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    ParameterType: NotRequired[str],
+    IsNoEcho: NotRequired[bool],
+    Description: NotRequired[str],
+    ParameterConstraints: NotRequired[ParameterConstraintsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef) 
+## SearchProductsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputTypeDef
+
+def get_value() -> SearchProductsOutputTypeDef:
+    return {
+        "ProductViewSummaries": ...,
+        "ProductViewAggregations": ...,
+        "NextPageToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagOptionsOutputTypeDef(TypedDict):
-    TagOptionDetails: List[TagOptionDetailTypeDef],  # (1)
-    PageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## OrganizationNodeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import OrganizationNodeTypeDef
-
-def get_value() -> OrganizationNodeTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class OrganizationNodeTypeDef(TypedDict):
-    Type: NotRequired[OrganizationNodeTypeType],  # (1)
-    Value: NotRequired[str],
-```
-
-1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ParameterConstraintsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ParameterConstraintsTypeDef
-
-def get_value() -> ParameterConstraintsTypeDef:
-    return {
-        "AllowedValues": ...,
-    }
-```
-
-```python title="Definition"
-class ParameterConstraintsTypeDef(TypedDict):
-    AllowedValues: NotRequired[List[str]],
-    AllowedPattern: NotRequired[str],
-    ConstraintDescription: NotRequired[str],
-    MaxLength: NotRequired[str],
-    MinLength: NotRequired[str],
-    MaxValue: NotRequired[str],
-    MinValue: NotRequired[str],
-```
-
-## PortfolioDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import PortfolioDetailTypeDef
-
-def get_value() -> PortfolioDetailTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class PortfolioDetailTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ARN: NotRequired[str],
-    DisplayName: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    ProviderName: NotRequired[str],
-```
-
-## PortfolioShareDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import PortfolioShareDetailTypeDef
-
-def get_value() -> PortfolioShareDetailTypeDef:
-    return {
-        "PrincipalId": ...,
-    }
-```
-
-```python title="Definition"
-class PortfolioShareDetailTypeDef(TypedDict):
-    PrincipalId: NotRequired[str],
-    Type: NotRequired[DescribePortfolioShareTypeType],  # (1)
-    Accepted: NotRequired[bool],
-    ShareTagOptions: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype) 
-## PrincipalTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import PrincipalTypeDef
-
-def get_value() -> PrincipalTypeDef:
-    return {
-        "PrincipalARN": ...,
-    }
-```
-
-```python title="Definition"
-class PrincipalTypeDef(TypedDict):
-    PrincipalARN: NotRequired[str],
-    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
-## ProductViewAggregationValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProductViewAggregationValueTypeDef
-
-def get_value() -> ProductViewAggregationValueTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class ProductViewAggregationValueTypeDef(TypedDict):
-    Value: NotRequired[str],
-    ApproximateCount: NotRequired[int],
-```
-
-## ProductViewDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProductViewDetailTypeDef
-
-def get_value() -> ProductViewDetailTypeDef:
-    return {
-        "ProductViewSummary": ...,
-    }
-```
-
-```python title="Definition"
-class ProductViewDetailTypeDef(TypedDict):
-    ProductViewSummary: NotRequired[ProductViewSummaryTypeDef],  # (1)
-    Status: NotRequired[StatusType],  # (2)
-    ProductARN: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
+class SearchProductsOutputTypeDef(TypedDict):
+    ProductViewSummaries: List[ProductViewSummaryTypeDef],  # (1)
+    ProductViewAggregations: Dict[str, List[ProductViewAggregationValueTypeDef]],  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## ProductViewSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProductViewSummaryTypeDef
-
-def get_value() -> ProductViewSummaryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ProductViewSummaryTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ProductId: NotRequired[str],
-    Name: NotRequired[str],
-    Owner: NotRequired[str],
-    ShortDescription: NotRequired[str],
-    Type: NotRequired[ProductTypeType],  # (1)
-    Distributor: NotRequired[str],
-    HasDefaultPath: NotRequired[bool],
-    SupportEmail: NotRequired[str],
-    SupportDescription: NotRequired[str],
-    SupportUrl: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
+2. See [:material-code-braces: ProductViewAggregationValueTypeDef](./type_defs.md#productviewaggregationvaluetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ProvisionProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -3217,347 +4069,6 @@ class ProvisionProductInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef) 
 2. See [:material-code-braces: ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ProvisionProductOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputTypeDef
-
-def get_value() -> ProvisionProductOutputTypeDef:
-    return {
-        "RecordDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionProductOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ProvisionedProductAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisionedProductAttributeTypeDef
-
-def get_value() -> ProvisionedProductAttributeTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionedProductAttributeTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Arn: NotRequired[str],
-    Type: NotRequired[str],
-    Id: NotRequired[str],
-    Status: NotRequired[ProvisionedProductStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    IdempotencyToken: NotRequired[str],
-    LastRecordId: NotRequired[str],
-    LastProvisioningRecordId: NotRequired[str],
-    LastSuccessfulProvisioningRecordId: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
-    PhysicalId: NotRequired[str],
-    ProductId: NotRequired[str],
-    ProductName: NotRequired[str],
-    ProvisioningArtifactId: NotRequired[str],
-    ProvisioningArtifactName: NotRequired[str],
-    UserArn: NotRequired[str],
-    UserArnSession: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProvisionedProductStatusType](./literals.md#provisionedproductstatustype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ProvisionedProductDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisionedProductDetailTypeDef
-
-def get_value() -> ProvisionedProductDetailTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionedProductDetailTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Arn: NotRequired[str],
-    Type: NotRequired[str],
-    Id: NotRequired[str],
-    Status: NotRequired[ProvisionedProductStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    IdempotencyToken: NotRequired[str],
-    LastRecordId: NotRequired[str],
-    LastProvisioningRecordId: NotRequired[str],
-    LastSuccessfulProvisioningRecordId: NotRequired[str],
-    ProductId: NotRequired[str],
-    ProvisioningArtifactId: NotRequired[str],
-    LaunchRoleArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProvisionedProductStatusType](./literals.md#provisionedproductstatustype) 
-## ProvisionedProductPlanDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanDetailsTypeDef
-
-def get_value() -> ProvisionedProductPlanDetailsTypeDef:
-    return {
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionedProductPlanDetailsTypeDef(TypedDict):
-    CreatedTime: NotRequired[datetime],
-    PathId: NotRequired[str],
-    ProductId: NotRequired[str],
-    PlanName: NotRequired[str],
-    PlanId: NotRequired[str],
-    ProvisionProductId: NotRequired[str],
-    ProvisionProductName: NotRequired[str],
-    PlanType: NotRequired[ProvisionedProductPlanTypeType],  # (1)
-    ProvisioningArtifactId: NotRequired[str],
-    Status: NotRequired[ProvisionedProductPlanStatusType],  # (2)
-    UpdatedTime: NotRequired[datetime],
-    NotificationArns: NotRequired[List[str]],
-    ProvisioningParameters: NotRequired[List[UpdateProvisioningParameterTypeDef]],  # (3)
-    Tags: NotRequired[List[TagTypeDef]],  # (4)
-    StatusMessage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
-2. See [:material-code-brackets: ProvisionedProductPlanStatusType](./literals.md#provisionedproductplanstatustype) 
-3. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ProvisionedProductPlanSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanSummaryTypeDef
-
-def get_value() -> ProvisionedProductPlanSummaryTypeDef:
-    return {
-        "PlanName": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionedProductPlanSummaryTypeDef(TypedDict):
-    PlanName: NotRequired[str],
-    PlanId: NotRequired[str],
-    ProvisionProductId: NotRequired[str],
-    ProvisionProductName: NotRequired[str],
-    PlanType: NotRequired[ProvisionedProductPlanTypeType],  # (1)
-    ProvisioningArtifactId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
-## ProvisioningArtifactDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactDetailTypeDef
-
-def get_value() -> ProvisioningArtifactDetailTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactDetailTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Type: NotRequired[ProvisioningArtifactTypeType],  # (1)
-    CreatedTime: NotRequired[datetime],
-    Active: NotRequired[bool],
-    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (2)
-```
-
-1. See [:material-code-brackets: ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype) 
-2. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
-## ProvisioningArtifactOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactOutputTypeDef
-
-def get_value() -> ProvisioningArtifactOutputTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactOutputTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## ProvisioningArtifactParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactParameterTypeDef
-
-def get_value() -> ProvisioningArtifactParameterTypeDef:
-    return {
-        "ParameterKey": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactParameterTypeDef(TypedDict):
-    ParameterKey: NotRequired[str],
-    DefaultValue: NotRequired[str],
-    ParameterType: NotRequired[str],
-    IsNoEcho: NotRequired[bool],
-    Description: NotRequired[str],
-    ParameterConstraints: NotRequired[ParameterConstraintsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef) 
-## ProvisioningArtifactPreferencesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPreferencesTypeDef
-
-def get_value() -> ProvisioningArtifactPreferencesTypeDef:
-    return {
-        "StackSetAccounts": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactPreferencesTypeDef(TypedDict):
-    StackSetAccounts: NotRequired[List[str]],
-    StackSetRegions: NotRequired[List[str]],
-```
-
-## ProvisioningArtifactPropertiesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPropertiesTypeDef
-
-def get_value() -> ProvisioningArtifactPropertiesTypeDef:
-    return {
-        "Info": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactPropertiesTypeDef(TypedDict):
-    Info: Mapping[str, str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Type: NotRequired[ProvisioningArtifactTypeType],  # (1)
-    DisableTemplateValidation: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype) 
-## ProvisioningArtifactSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactSummaryTypeDef
-
-def get_value() -> ProvisioningArtifactSummaryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactSummaryTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    ProvisioningArtifactMetadata: NotRequired[Dict[str, str]],
-```
-
-## ProvisioningArtifactTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactTypeDef
-
-def get_value() -> ProvisioningArtifactTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (1)
-```
-
-1. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
-## ProvisioningArtifactViewTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactViewTypeDef
-
-def get_value() -> ProvisioningArtifactViewTypeDef:
-    return {
-        "ProductViewSummary": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningArtifactViewTypeDef(TypedDict):
-    ProductViewSummary: NotRequired[ProductViewSummaryTypeDef],  # (1)
-    ProvisioningArtifact: NotRequired[ProvisioningArtifactTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
-2. See [:material-code-braces: ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef) 
-## ProvisioningParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningParameterTypeDef
-
-def get_value() -> ProvisioningParameterTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningParameterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## ProvisioningPreferencesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ProvisioningPreferencesTypeDef
-
-def get_value() -> ProvisioningPreferencesTypeDef:
-    return {
-        "StackSetAccounts": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisioningPreferencesTypeDef(TypedDict):
-    StackSetAccounts: NotRequired[Sequence[str]],
-    StackSetRegions: NotRequired[Sequence[str]],
-    StackSetFailureToleranceCount: NotRequired[int],
-    StackSetFailureTolerancePercentage: NotRequired[int],
-    StackSetMaxConcurrencyCount: NotRequired[int],
-    StackSetMaxConcurrencyPercentage: NotRequired[int],
-```
-
 ## RecordDetailTypeDef
 
 ```python title="Usage Example"
@@ -3590,77 +4101,6 @@ class RecordDetailTypeDef(TypedDict):
 1. See [:material-code-brackets: RecordStatusType](./literals.md#recordstatustype) 
 2. See [:material-code-braces: RecordErrorTypeDef](./type_defs.md#recorderrortypedef) 
 3. See [:material-code-braces: RecordTagTypeDef](./type_defs.md#recordtagtypedef) 
-## RecordErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import RecordErrorTypeDef
-
-def get_value() -> RecordErrorTypeDef:
-    return {
-        "Code": ...,
-    }
-```
-
-```python title="Definition"
-class RecordErrorTypeDef(TypedDict):
-    Code: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## RecordOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import RecordOutputTypeDef
-
-def get_value() -> RecordOutputTypeDef:
-    return {
-        "OutputKey": ...,
-    }
-```
-
-```python title="Definition"
-class RecordOutputTypeDef(TypedDict):
-    OutputKey: NotRequired[str],
-    OutputValue: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## RecordTagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import RecordTagTypeDef
-
-def get_value() -> RecordTagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class RecordTagTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## RejectPortfolioShareInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import RejectPortfolioShareInputRequestTypeDef
-
-def get_value() -> RejectPortfolioShareInputRequestTypeDef:
-    return {
-        "PortfolioId": ...,
-    }
-```
-
-```python title="Definition"
-class RejectPortfolioShareInputRequestTypeDef(TypedDict):
-    PortfolioId: str,
-    AcceptLanguage: NotRequired[str],
-    PortfolioShareType: NotRequired[PortfolioShareTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
 ## ResourceChangeDetailTypeDef
 
 ```python title="Usage Example"
@@ -3681,391 +4121,6 @@ class ResourceChangeDetailTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef) 
 2. See [:material-code-brackets: EvaluationTypeType](./literals.md#evaluationtypetype) 
-## ResourceChangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ResourceChangeTypeDef
-
-def get_value() -> ResourceChangeTypeDef:
-    return {
-        "Action": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceChangeTypeDef(TypedDict):
-    Action: NotRequired[ChangeActionType],  # (1)
-    LogicalResourceId: NotRequired[str],
-    PhysicalResourceId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    Replacement: NotRequired[ReplacementType],  # (2)
-    Scope: NotRequired[List[ResourceAttributeType]],  # (3)
-    Details: NotRequired[List[ResourceChangeDetailTypeDef]],  # (4)
-```
-
-1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
-2. See [:material-code-brackets: ReplacementType](./literals.md#replacementtype) 
-3. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
-4. See [:material-code-braces: ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef) 
-## ResourceDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ResourceDetailTypeDef
-
-def get_value() -> ResourceDetailTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceDetailTypeDef(TypedDict):
-    Id: NotRequired[str],
-    ARN: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-```
-
-## ResourceTargetDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ResourceTargetDefinitionTypeDef
-
-def get_value() -> ResourceTargetDefinitionTypeDef:
-    return {
-        "Attribute": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceTargetDefinitionTypeDef(TypedDict):
-    Attribute: NotRequired[ResourceAttributeType],  # (1)
-    Name: NotRequired[str],
-    RequiresRecreation: NotRequired[RequiresRecreationType],  # (2)
-```
-
-1. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
-2. See [:material-code-brackets: RequiresRecreationType](./literals.md#requiresrecreationtype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ScanProvisionedProductsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputRequestTypeDef
-
-def get_value() -> ScanProvisionedProductsInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ScanProvisionedProductsInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
-## ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef
-
-def get_value() -> ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ScanProvisionedProductsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputTypeDef
-
-def get_value() -> ScanProvisionedProductsOutputTypeDef:
-    return {
-        "ProvisionedProducts": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ScanProvisionedProductsOutputTypeDef(TypedDict):
-    ProvisionedProducts: List[ProvisionedProductDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProvisionedProductDetailTypeDef](./type_defs.md#provisionedproductdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchProductsAsAdminInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputRequestTypeDef
-
-def get_value() -> SearchProductsAsAdminInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProductsAsAdminInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PortfolioId: NotRequired[str],
-    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
-    SortBy: NotRequired[ProductViewSortByType],  # (2)
-    SortOrder: NotRequired[SortOrderType],  # (3)
-    PageToken: NotRequired[str],
-    PageSize: NotRequired[int],
-    ProductSource: NotRequired[ProductSourceType],  # (4)
-```
-
-1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
-2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
-3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-4. See [:material-code-brackets: ProductSourceType](./literals.md#productsourcetype) 
-## SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef
-
-def get_value() -> SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    PortfolioId: NotRequired[str],
-    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
-    SortBy: NotRequired[ProductViewSortByType],  # (2)
-    SortOrder: NotRequired[SortOrderType],  # (3)
-    ProductSource: NotRequired[ProductSourceType],  # (4)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
-```
-
-1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
-2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
-3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-4. See [:material-code-brackets: ProductSourceType](./literals.md#productsourcetype) 
-5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## SearchProductsAsAdminOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputTypeDef
-
-def get_value() -> SearchProductsAsAdminOutputTypeDef:
-    return {
-        "ProductViewDetails": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProductsAsAdminOutputTypeDef(TypedDict):
-    ProductViewDetails: List[ProductViewDetailTypeDef],  # (1)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchProductsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProductsInputRequestTypeDef
-
-def get_value() -> SearchProductsInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProductsInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    Filters: NotRequired[Mapping[ProductViewFilterByType, Sequence[str]]],  # (1)
-    PageSize: NotRequired[int],
-    SortBy: NotRequired[ProductViewSortByType],  # (2)
-    SortOrder: NotRequired[SortOrderType],  # (3)
-    PageToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
-2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
-3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## SearchProductsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputTypeDef
-
-def get_value() -> SearchProductsOutputTypeDef:
-    return {
-        "ProductViewSummaries": ...,
-        "ProductViewAggregations": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProductsOutputTypeDef(TypedDict):
-    ProductViewSummaries: List[ProductViewSummaryTypeDef],  # (1)
-    ProductViewAggregations: Dict[str, List[ProductViewAggregationValueTypeDef]],  # (2)
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef) 
-2. See [:material-code-braces: ProductViewAggregationValueTypeDef](./type_defs.md#productviewaggregationvaluetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SearchProvisionedProductsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsInputRequestTypeDef
-
-def get_value() -> SearchProvisionedProductsInputRequestTypeDef:
-    return {
-        "AcceptLanguage": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProvisionedProductsInputRequestTypeDef(TypedDict):
-    AcceptLanguage: NotRequired[str],
-    AccessLevelFilter: NotRequired[AccessLevelFilterTypeDef],  # (1)
-    Filters: NotRequired[Mapping[ProvisionedProductViewFilterByType, Sequence[str]]],  # (2)
-    SortBy: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (3)
-    PageSize: NotRequired[int],
-    PageToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
-2. See [:material-code-brackets: ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype) 
-3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## SearchProvisionedProductsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputTypeDef
-
-def get_value() -> SearchProvisionedProductsOutputTypeDef:
-    return {
-        "ProvisionedProducts": ...,
-        "TotalResultsCount": ...,
-        "NextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProvisionedProductsOutputTypeDef(TypedDict):
-    ProvisionedProducts: List[ProvisionedProductAttributeTypeDef],  # (1)
-    TotalResultsCount: int,
-    NextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProvisionedProductAttributeTypeDef](./type_defs.md#provisionedproductattributetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ServiceActionAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ServiceActionAssociationTypeDef
-
-def get_value() -> ServiceActionAssociationTypeDef:
-    return {
-        "ServiceActionId": ...,
-        "ProductId": ...,
-        "ProvisioningArtifactId": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceActionAssociationTypeDef(TypedDict):
-    ServiceActionId: str,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-```
-
-## ServiceActionDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ServiceActionDetailTypeDef
-
-def get_value() -> ServiceActionDetailTypeDef:
-    return {
-        "ServiceActionSummary": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceActionDetailTypeDef(TypedDict):
-    ServiceActionSummary: NotRequired[ServiceActionSummaryTypeDef],  # (1)
-    Definition: NotRequired[Dict[ServiceActionDefinitionKeyType, str]],  # (2)
-```
-
-1. See [:material-code-braces: ServiceActionSummaryTypeDef](./type_defs.md#serviceactionsummarytypedef) 
-2. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
-## ServiceActionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ServiceActionSummaryTypeDef
-
-def get_value() -> ServiceActionSummaryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceActionSummaryTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    DefinitionType: NotRequired[ServiceActionDefinitionTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype) 
 ## ShareDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4084,322 +4139,6 @@ class ShareDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ShareErrorTypeDef](./type_defs.md#shareerrortypedef) 
-## ShareErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import ShareErrorTypeDef
-
-def get_value() -> ShareErrorTypeDef:
-    return {
-        "Accounts": ...,
-    }
-```
-
-```python title="Definition"
-class ShareErrorTypeDef(TypedDict):
-    Accounts: NotRequired[List[str]],
-    Message: NotRequired[str],
-    Error: NotRequired[str],
-```
-
-## StackInstanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import StackInstanceTypeDef
-
-def get_value() -> StackInstanceTypeDef:
-    return {
-        "Account": ...,
-    }
-```
-
-```python title="Definition"
-class StackInstanceTypeDef(TypedDict):
-    Account: NotRequired[str],
-    Region: NotRequired[str],
-    StackInstanceStatus: NotRequired[StackInstanceStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: StackInstanceStatusType](./literals.md#stackinstancestatustype) 
-## TagOptionDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import TagOptionDetailTypeDef
-
-def get_value() -> TagOptionDetailTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagOptionDetailTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    Active: NotRequired[bool],
-    Id: NotRequired[str],
-    Owner: NotRequired[str],
-```
-
-## TagOptionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import TagOptionSummaryTypeDef
-
-def get_value() -> TagOptionSummaryTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagOptionSummaryTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Values: NotRequired[List[str]],
-```
-
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## TerminateProvisionedProductInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductInputRequestTypeDef
-
-def get_value() -> TerminateProvisionedProductInputRequestTypeDef:
-    return {
-        "TerminateToken": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateProvisionedProductInputRequestTypeDef(TypedDict):
-    TerminateToken: str,
-    ProvisionedProductName: NotRequired[str],
-    ProvisionedProductId: NotRequired[str],
-    IgnoreErrors: NotRequired[bool],
-    AcceptLanguage: NotRequired[str],
-    RetainPhysicalResources: NotRequired[bool],
-```
-
-## TerminateProvisionedProductOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutputTypeDef
-
-def get_value() -> TerminateProvisionedProductOutputTypeDef:
-    return {
-        "RecordDetail": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateProvisionedProductOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateConstraintInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateConstraintInputRequestTypeDef
-
-def get_value() -> UpdateConstraintInputRequestTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConstraintInputRequestTypeDef(TypedDict):
-    Id: str,
-    AcceptLanguage: NotRequired[str],
-    Description: NotRequired[str],
-    Parameters: NotRequired[str],
-```
-
-## UpdateConstraintOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputTypeDef
-
-def get_value() -> UpdateConstraintOutputTypeDef:
-    return {
-        "ConstraintDetail": ...,
-        "ConstraintParameters": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConstraintOutputTypeDef(TypedDict):
-    ConstraintDetail: ConstraintDetailTypeDef,  # (1)
-    ConstraintParameters: str,
-    Status: StatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdatePortfolioInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioInputRequestTypeDef
-
-def get_value() -> UpdatePortfolioInputRequestTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePortfolioInputRequestTypeDef(TypedDict):
-    Id: str,
-    AcceptLanguage: NotRequired[str],
-    DisplayName: NotRequired[str],
-    Description: NotRequired[str],
-    ProviderName: NotRequired[str],
-    AddTags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    RemoveTags: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdatePortfolioOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputTypeDef
-
-def get_value() -> UpdatePortfolioOutputTypeDef:
-    return {
-        "PortfolioDetail": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePortfolioOutputTypeDef(TypedDict):
-    PortfolioDetail: PortfolioDetailTypeDef,  # (1)
-    Tags: List[TagTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: PortfolioDetailTypeDef](./type_defs.md#portfoliodetailtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdatePortfolioShareInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareInputRequestTypeDef
-
-def get_value() -> UpdatePortfolioShareInputRequestTypeDef:
-    return {
-        "PortfolioId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePortfolioShareInputRequestTypeDef(TypedDict):
-    PortfolioId: str,
-    AcceptLanguage: NotRequired[str],
-    AccountId: NotRequired[str],
-    OrganizationNode: NotRequired[OrganizationNodeTypeDef],  # (1)
-    ShareTagOptions: NotRequired[bool],
-```
-
-1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
-## UpdatePortfolioShareOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDef
-
-def get_value() -> UpdatePortfolioShareOutputTypeDef:
-    return {
-        "PortfolioShareToken": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePortfolioShareOutputTypeDef(TypedDict):
-    PortfolioShareToken: str,
-    Status: ShareStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProductInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProductInputRequestTypeDef
-
-def get_value() -> UpdateProductInputRequestTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProductInputRequestTypeDef(TypedDict):
-    Id: str,
-    AcceptLanguage: NotRequired[str],
-    Name: NotRequired[str],
-    Owner: NotRequired[str],
-    Description: NotRequired[str],
-    Distributor: NotRequired[str],
-    SupportDescription: NotRequired[str],
-    SupportEmail: NotRequired[str],
-    SupportUrl: NotRequired[str],
-    AddTags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    RemoveTags: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdateProductOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputTypeDef
-
-def get_value() -> UpdateProductOutputTypeDef:
-    return {
-        "ProductViewDetail": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProductOutputTypeDef(TypedDict):
-    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
-    Tags: List[TagTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProvisionedProductInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -4431,186 +4170,217 @@ class UpdateProvisionedProductInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
 2. See [:material-code-braces: UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdateProvisionedProductOutputTypeDef
+## ListLaunchPathsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputTypeDef
 
-def get_value() -> UpdateProvisionedProductOutputTypeDef:
+def get_value() -> ListLaunchPathsOutputTypeDef:
     return {
-        "RecordDetail": ...,
+        "LaunchPathSummaries": ...,
+        "NextPageToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateProvisionedProductOutputTypeDef(TypedDict):
-    RecordDetail: RecordDetailTypeDef,  # (1)
+class ListLaunchPathsOutputTypeDef(TypedDict):
+    LaunchPathSummaries: List[LaunchPathSummaryTypeDef],  # (1)
+    NextPageToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+1. See [:material-code-braces: LaunchPathSummaryTypeDef](./type_defs.md#launchpathsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProvisionedProductPropertiesInputRequestTypeDef
+## SearchProvisionedProductsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputTypeDef
 
-def get_value() -> UpdateProvisionedProductPropertiesInputRequestTypeDef:
+def get_value() -> SearchProvisionedProductsOutputTypeDef:
     return {
-        "ProvisionedProductId": ...,
-        "ProvisionedProductProperties": ...,
-        "IdempotencyToken": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProvisionedProductPropertiesInputRequestTypeDef(TypedDict):
-    ProvisionedProductId: str,
-    ProvisionedProductProperties: Mapping[PropertyKeyType, str],  # (1)
-    IdempotencyToken: str,
-    AcceptLanguage: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PropertyKeyType](./literals.md#propertykeytype) 
-## UpdateProvisionedProductPropertiesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesOutputTypeDef
-
-def get_value() -> UpdateProvisionedProductPropertiesOutputTypeDef:
-    return {
-        "ProvisionedProductId": ...,
-        "ProvisionedProductProperties": ...,
-        "RecordId": ...,
-        "Status": ...,
+        "ProvisionedProducts": ...,
+        "TotalResultsCount": ...,
+        "NextPageToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateProvisionedProductPropertiesOutputTypeDef(TypedDict):
-    ProvisionedProductId: str,
-    ProvisionedProductProperties: Dict[PropertyKeyType, str],  # (1)
-    RecordId: str,
-    Status: RecordStatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class SearchProvisionedProductsOutputTypeDef(TypedDict):
+    ProvisionedProducts: List[ProvisionedProductAttributeTypeDef],  # (1)
+    TotalResultsCount: int,
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: PropertyKeyType](./literals.md#propertykeytype) 
-2. See [:material-code-brackets: RecordStatusType](./literals.md#recordstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProvisioningArtifactInputRequestTypeDef
+1. See [:material-code-braces: ProvisionedProductAttributeTypeDef](./type_defs.md#provisionedproductattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProductOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProductOutputTypeDef
 
-def get_value() -> UpdateProvisioningArtifactInputRequestTypeDef:
+def get_value() -> CreateProductOutputTypeDef:
     return {
-        "ProductId": ...,
-        "ProvisioningArtifactId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProvisioningArtifactInputRequestTypeDef(TypedDict):
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    AcceptLanguage: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Active: NotRequired[bool],
-    Guidance: NotRequired[ProvisioningArtifactGuidanceType],  # (1)
-```
-
-1. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
-## UpdateProvisioningArtifactOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutputTypeDef
-
-def get_value() -> UpdateProvisioningArtifactOutputTypeDef:
-    return {
+        "ProductViewDetail": ...,
         "ProvisioningArtifactDetail": ...,
-        "Info": ...,
-        "Status": ...,
+        "Tags": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateProvisioningArtifactOutputTypeDef(TypedDict):
-    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (1)
-    Info: Dict[str, str],
-    Status: StatusType,  # (2)
+class CreateProductOutputTypeDef(TypedDict):
+    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
+    ProvisioningArtifactDetail: ProvisioningArtifactDetailTypeDef,  # (2)
+    Tags: List[TagTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
+2. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProductAsAdminOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputTypeDef
+
+def get_value() -> DescribeProductAsAdminOutputTypeDef:
+    return {
+        "ProductViewDetail": ...,
+        "ProvisioningArtifactSummaries": ...,
+        "Tags": ...,
+        "TagOptions": ...,
+        "Budgets": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductAsAdminOutputTypeDef(TypedDict):
+    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
+    ProvisioningArtifactSummaries: List[ProvisioningArtifactSummaryTypeDef],  # (2)
+    Tags: List[TagTypeDef],  # (3)
+    TagOptions: List[TagOptionDetailTypeDef],  # (4)
+    Budgets: List[BudgetDetailTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
+2. See [:material-code-braces: ProvisioningArtifactSummaryTypeDef](./type_defs.md#provisioningartifactsummarytypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
+5. See [:material-code-braces: BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchProductsAsAdminOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputTypeDef
+
+def get_value() -> SearchProductsAsAdminOutputTypeDef:
+    return {
+        "ProductViewDetails": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProductsAsAdminOutputTypeDef(TypedDict):
+    ProductViewDetails: List[ProductViewDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputTypeDef
+
+def get_value() -> UpdateProductOutputTypeDef:
+    return {
+        "ProductViewDetail": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProductOutputTypeDef(TypedDict):
+    ProductViewDetail: ProductViewDetailTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef) 
-2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+1. See [:material-code-braces: ProductViewDetailTypeDef](./type_defs.md#productviewdetailtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProvisioningParameterTypeDef
+## ListProvisioningArtifactsForServiceActionOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningParameterTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionOutputTypeDef
 
-def get_value() -> UpdateProvisioningParameterTypeDef:
+def get_value() -> ListProvisioningArtifactsForServiceActionOutputTypeDef:
     return {
-        "Key": ...,
+        "ProvisioningArtifactViews": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateProvisioningParameterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    UsePreviousValue: NotRequired[bool],
+class ListProvisioningArtifactsForServiceActionOutputTypeDef(TypedDict):
+    ProvisioningArtifactViews: List[ProvisioningArtifactViewTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## UpdateProvisioningPreferencesTypeDef
+1. See [:material-code-braces: ProvisioningArtifactViewTypeDef](./type_defs.md#provisioningartifactviewtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateServiceActionOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningPreferencesTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputTypeDef
 
-def get_value() -> UpdateProvisioningPreferencesTypeDef:
+def get_value() -> CreateServiceActionOutputTypeDef:
     return {
-        "StackSetAccounts": ...,
+        "ServiceActionDetail": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateProvisioningPreferencesTypeDef(TypedDict):
-    StackSetAccounts: NotRequired[Sequence[str]],
-    StackSetRegions: NotRequired[Sequence[str]],
-    StackSetFailureToleranceCount: NotRequired[int],
-    StackSetFailureTolerancePercentage: NotRequired[int],
-    StackSetMaxConcurrencyCount: NotRequired[int],
-    StackSetMaxConcurrencyPercentage: NotRequired[int],
-    StackSetOperationType: NotRequired[StackSetOperationTypeType],  # (1)
+class CreateServiceActionOutputTypeDef(TypedDict):
+    ServiceActionDetail: ServiceActionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: StackSetOperationTypeType](./literals.md#stacksetoperationtypetype) 
-## UpdateServiceActionInputRequestTypeDef
+1. See [:material-code-braces: ServiceActionDetailTypeDef](./type_defs.md#serviceactiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeServiceActionOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputTypeDef
 
-def get_value() -> UpdateServiceActionInputRequestTypeDef:
+def get_value() -> DescribeServiceActionOutputTypeDef:
     return {
-        "Id": ...,
+        "ServiceActionDetail": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateServiceActionInputRequestTypeDef(TypedDict):
-    Id: str,
-    Name: NotRequired[str],
-    Definition: NotRequired[Mapping[ServiceActionDefinitionKeyType, str]],  # (1)
-    Description: NotRequired[str],
-    AcceptLanguage: NotRequired[str],
+class DescribeServiceActionOutputTypeDef(TypedDict):
+    ServiceActionDetail: ServiceActionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
+1. See [:material-code-braces: ServiceActionDetailTypeDef](./type_defs.md#serviceactiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceActionOutputTypeDef
 
 ```python title="Usage Example"
@@ -4631,58 +4401,288 @@ class UpdateServiceActionOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ServiceActionDetailTypeDef](./type_defs.md#serviceactiondetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateTagOptionInputRequestTypeDef
+## DescribeProvisioningParametersOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionInputRequestTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOutputTypeDef
 
-def get_value() -> UpdateTagOptionInputRequestTypeDef:
+def get_value() -> DescribeProvisioningParametersOutputTypeDef:
     return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTagOptionInputRequestTypeDef(TypedDict):
-    Id: str,
-    Value: NotRequired[str],
-    Active: NotRequired[bool],
-```
-
-## UpdateTagOptionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputTypeDef
-
-def get_value() -> UpdateTagOptionOutputTypeDef:
-    return {
-        "TagOptionDetail": ...,
+        "ProvisioningArtifactParameters": ...,
+        "ConstraintSummaries": ...,
+        "UsageInstructions": ...,
+        "TagOptions": ...,
+        "ProvisioningArtifactPreferences": ...,
+        "ProvisioningArtifactOutputs": ...,
+        "ProvisioningArtifactOutputKeys": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateTagOptionOutputTypeDef(TypedDict):
-    TagOptionDetail: TagOptionDetailTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DescribeProvisioningParametersOutputTypeDef(TypedDict):
+    ProvisioningArtifactParameters: List[ProvisioningArtifactParameterTypeDef],  # (1)
+    ConstraintSummaries: List[ConstraintSummaryTypeDef],  # (2)
+    UsageInstructions: List[UsageInstructionTypeDef],  # (3)
+    TagOptions: List[TagOptionSummaryTypeDef],  # (4)
+    ProvisioningArtifactPreferences: ProvisioningArtifactPreferencesTypeDef,  # (5)
+    ProvisioningArtifactOutputs: List[ProvisioningArtifactOutputTypeDef],  # (6)
+    ProvisioningArtifactOutputKeys: List[ProvisioningArtifactOutputTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
-1. See [:material-code-braces: TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UsageInstructionTypeDef
+1. See [:material-code-braces: ProvisioningArtifactParameterTypeDef](./type_defs.md#provisioningartifactparametertypedef) 
+2. See [:material-code-braces: ConstraintSummaryTypeDef](./type_defs.md#constraintsummarytypedef) 
+3. See [:material-code-braces: UsageInstructionTypeDef](./type_defs.md#usageinstructiontypedef) 
+4. See [:material-code-braces: TagOptionSummaryTypeDef](./type_defs.md#tagoptionsummarytypedef) 
+5. See [:material-code-braces: ProvisioningArtifactPreferencesTypeDef](./type_defs.md#provisioningartifactpreferencestypedef) 
+6. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
+7. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRecordOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_servicecatalog.type_defs import UsageInstructionTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputTypeDef
 
-def get_value() -> UsageInstructionTypeDef:
+def get_value() -> DescribeRecordOutputTypeDef:
     return {
-        "Type": ...,
+        "RecordDetail": ...,
+        "RecordOutputs": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UsageInstructionTypeDef(TypedDict):
-    Type: NotRequired[str],
-    Value: NotRequired[str],
+class DescribeRecordOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    RecordOutputs: List[RecordOutputTypeDef],  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: RecordOutputTypeDef](./type_defs.md#recordoutputtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExecuteProvisionedProductPlanOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOutputTypeDef
+
+def get_value() -> ExecuteProvisionedProductPlanOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExecuteProvisionedProductPlanOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExecuteProvisionedProductServiceActionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionOutputTypeDef
+
+def get_value() -> ExecuteProvisionedProductServiceActionOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExecuteProvisionedProductServiceActionOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportAsProvisionedProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutputTypeDef
+
+def get_value() -> ImportAsProvisionedProductOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportAsProvisionedProductOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecordHistoryOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputTypeDef
+
+def get_value() -> ListRecordHistoryOutputTypeDef:
+    return {
+        "RecordDetails": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecordHistoryOutputTypeDef(TypedDict):
+    RecordDetails: List[RecordDetailTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProvisionProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputTypeDef
+
+def get_value() -> ProvisionProductOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionProductOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TerminateProvisionedProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutputTypeDef
+
+def get_value() -> TerminateProvisionedProductOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateProvisionedProductOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProvisionedProductOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputTypeDef
+
+def get_value() -> UpdateProvisionedProductOutputTypeDef:
+    return {
+        "RecordDetail": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProvisionedProductOutputTypeDef(TypedDict):
+    RecordDetail: RecordDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecordDetailTypeDef](./type_defs.md#recorddetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResourceChangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import ResourceChangeTypeDef
+
+def get_value() -> ResourceChangeTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceChangeTypeDef(TypedDict):
+    Action: NotRequired[ChangeActionType],  # (1)
+    LogicalResourceId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    Replacement: NotRequired[ReplacementType],  # (2)
+    Scope: NotRequired[List[ResourceAttributeType]],  # (3)
+    Details: NotRequired[List[ResourceChangeDetailTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-brackets: ReplacementType](./literals.md#replacementtype) 
+3. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
+4. See [:material-code-braces: ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef) 
+## DescribePortfolioShareStatusOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutputTypeDef
+
+def get_value() -> DescribePortfolioShareStatusOutputTypeDef:
+    return {
+        "PortfolioShareToken": ...,
+        "PortfolioId": ...,
+        "OrganizationNodeValue": ...,
+        "Status": ...,
+        "ShareDetails": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePortfolioShareStatusOutputTypeDef(TypedDict):
+    PortfolioShareToken: str,
+    PortfolioId: str,
+    OrganizationNodeValue: str,
+    Status: ShareStatusType,  # (1)
+    ShareDetails: ShareDetailsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
+2. See [:material-code-braces: ShareDetailsTypeDef](./type_defs.md#sharedetailstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProvisionedProductPlanOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOutputTypeDef
+
+def get_value() -> DescribeProvisionedProductPlanOutputTypeDef:
+    return {
+        "ProvisionedProductPlanDetails": ...,
+        "ResourceChanges": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProvisionedProductPlanOutputTypeDef(TypedDict):
+    ProvisionedProductPlanDetails: ProvisionedProductPlanDetailsTypeDef,  # (1)
+    ResourceChanges: List[ResourceChangeTypeDef],  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProvisionedProductPlanDetailsTypeDef](./type_defs.md#provisionedproductplandetailstypedef) 
+2. See [:material-code-braces: ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

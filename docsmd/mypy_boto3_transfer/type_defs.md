@@ -7,227 +7,142 @@
     Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
     type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
-## CopyStepDetailsTypeDef
+## HomeDirectoryMapEntryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CopyStepDetailsTypeDef
+from mypy_boto3_transfer.type_defs import HomeDirectoryMapEntryTypeDef
 
-def get_value() -> CopyStepDetailsTypeDef:
+def get_value() -> HomeDirectoryMapEntryTypeDef:
     return {
-        "Name": ...,
+        "Entry": ...,
+        "Target": ...,
     }
 ```
 
 ```python title="Definition"
-class CopyStepDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    DestinationFileLocation: NotRequired[InputFileLocationTypeDef],  # (1)
-    OverwriteExisting: NotRequired[OverwriteExistingType],  # (2)
-    SourceFileLocation: NotRequired[str],
+class HomeDirectoryMapEntryTypeDef(TypedDict):
+    Entry: str,
+    Target: str,
 ```
 
-1. See [:material-code-braces: InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef) 
-2. See [:material-code-brackets: OverwriteExistingType](./literals.md#overwriteexistingtype) 
-## CreateAccessRequestRequestTypeDef
+## PosixProfileTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateAccessRequestRequestTypeDef
+from mypy_boto3_transfer.type_defs import PosixProfileTypeDef
 
-def get_value() -> CreateAccessRequestRequestTypeDef:
+def get_value() -> PosixProfileTypeDef:
     return {
-        "Role": ...,
-        "ServerId": ...,
-        "ExternalId": ...,
+        "Uid": ...,
+        "Gid": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccessRequestRequestTypeDef(TypedDict):
-    Role: str,
-    ServerId: str,
-    ExternalId: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+class PosixProfileTypeDef(TypedDict):
+    Uid: int,
+    Gid: int,
+    SecondaryGids: NotRequired[Sequence[int]],
 ```
 
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-## CreateAccessResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef
+from mypy_boto3_transfer.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateAccessResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ServerId": ...,
-        "ExternalId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAccessResponseTypeDef(TypedDict):
-    ServerId: str,
-    ExternalId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateServerRequestRequestTypeDef
+## EndpointDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateServerRequestRequestTypeDef
+from mypy_boto3_transfer.type_defs import EndpointDetailsTypeDef
 
-def get_value() -> CreateServerRequestRequestTypeDef:
+def get_value() -> EndpointDetailsTypeDef:
     return {
-        "Certificate": ...,
+        "AddressAllocationIds": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateServerRequestRequestTypeDef(TypedDict):
-    Certificate: NotRequired[str],
-    Domain: NotRequired[DomainType],  # (1)
-    EndpointDetails: NotRequired[EndpointDetailsTypeDef],  # (2)
-    EndpointType: NotRequired[EndpointTypeType],  # (3)
-    HostKey: NotRequired[str],
-    IdentityProviderDetails: NotRequired[IdentityProviderDetailsTypeDef],  # (4)
-    IdentityProviderType: NotRequired[IdentityProviderTypeType],  # (5)
-    LoggingRole: NotRequired[str],
-    PostAuthenticationLoginBanner: NotRequired[str],
-    PreAuthenticationLoginBanner: NotRequired[str],
-    Protocols: NotRequired[Sequence[ProtocolType]],  # (6)
-    ProtocolDetails: NotRequired[ProtocolDetailsTypeDef],  # (7)
-    SecurityPolicyName: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
-    WorkflowDetails: NotRequired[WorkflowDetailsTypeDef],  # (9)
+class EndpointDetailsTypeDef(TypedDict):
+    AddressAllocationIds: NotRequired[Sequence[str]],
+    SubnetIds: NotRequired[Sequence[str]],
+    VpcEndpointId: NotRequired[str],
+    VpcId: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
-2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
-3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
-4. See [:material-code-braces: IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef) 
-5. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-6. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
-7. See [:material-code-braces: ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-9. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
-## CreateServerResponseTypeDef
+## IdentityProviderDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef
+from mypy_boto3_transfer.type_defs import IdentityProviderDetailsTypeDef
 
-def get_value() -> CreateServerResponseTypeDef:
+def get_value() -> IdentityProviderDetailsTypeDef:
     return {
-        "ServerId": ...,
-        "ResponseMetadata": ...,
+        "Url": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateServerResponseTypeDef(TypedDict):
-    ServerId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class IdentityProviderDetailsTypeDef(TypedDict):
+    Url: NotRequired[str],
+    InvocationRole: NotRequired[str],
+    DirectoryId: NotRequired[str],
+    Function: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateUserRequestRequestTypeDef
+## ProtocolDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateUserRequestRequestTypeDef
+from mypy_boto3_transfer.type_defs import ProtocolDetailsTypeDef
 
-def get_value() -> CreateUserRequestRequestTypeDef:
+def get_value() -> ProtocolDetailsTypeDef:
     return {
-        "Role": ...,
-        "ServerId": ...,
-        "UserName": ...,
+        "PassiveIp": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateUserRequestRequestTypeDef(TypedDict):
-    Role: str,
-    ServerId: str,
-    UserName: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
-    SshPublicKeyBody: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+class ProtocolDetailsTypeDef(TypedDict):
+    PassiveIp: NotRequired[str],
+    TlsSessionResumptionMode: NotRequired[TlsSessionResumptionModeType],  # (1)
 ```
 
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateUserResponseTypeDef
+1. See [:material-code-brackets: TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype) 
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateUserResponseTypeDef
+from mypy_boto3_transfer.type_defs import TagTypeDef
 
-def get_value() -> CreateUserResponseTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ServerId": ...,
-        "UserName": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateUserResponseTypeDef(TypedDict):
-    ServerId: str,
-    UserName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateWorkflowRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateWorkflowRequestRequestTypeDef
-
-def get_value() -> CreateWorkflowRequestRequestTypeDef:
-    return {
-        "Steps": ...,
-    }
-```
-
-```python title="Definition"
-class CreateWorkflowRequestRequestTypeDef(TypedDict):
-    Steps: Sequence[WorkflowStepTypeDef],  # (1)
-    Description: NotRequired[str],
-    OnExceptionSteps: NotRequired[Sequence[WorkflowStepTypeDef]],  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
-2. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateWorkflowResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import CreateWorkflowResponseTypeDef
-
-def get_value() -> CreateWorkflowResponseTypeDef:
-    return {
-        "WorkflowId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateWorkflowResponseTypeDef(TypedDict):
-    WorkflowId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomStepDetailsTypeDef
 
 ```python title="Usage Example"
@@ -370,28 +285,6 @@ class DescribeAccessRequestRequestTypeDef(TypedDict):
     ExternalId: str,
 ```
 
-## DescribeAccessResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeAccessResponseTypeDef
-
-def get_value() -> DescribeAccessResponseTypeDef:
-    return {
-        "ServerId": ...,
-        "Access": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccessResponseTypeDef(TypedDict):
-    ServerId: str,
-    Access: DescribedAccessTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DescribedAccessTypeDef](./type_defs.md#describedaccesstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -410,28 +303,6 @@ class DescribeExecutionRequestRequestTypeDef(TypedDict):
     WorkflowId: str,
 ```
 
-## DescribeExecutionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeExecutionResponseTypeDef
-
-def get_value() -> DescribeExecutionResponseTypeDef:
-    return {
-        "WorkflowId": ...,
-        "Execution": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeExecutionResponseTypeDef(TypedDict):
-    WorkflowId: str,
-    Execution: DescribedExecutionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DescribedExecutionTypeDef](./type_defs.md#describedexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecurityPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -448,6 +319,992 @@ class DescribeSecurityPolicyRequestRequestTypeDef(TypedDict):
     SecurityPolicyName: str,
 ```
 
+## DescribedSecurityPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribedSecurityPolicyTypeDef
+
+def get_value() -> DescribedSecurityPolicyTypeDef:
+    return {
+        "SecurityPolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribedSecurityPolicyTypeDef(TypedDict):
+    SecurityPolicyName: str,
+    Fips: NotRequired[bool],
+    SshCiphers: NotRequired[List[str]],
+    SshKexs: NotRequired[List[str]],
+    SshMacs: NotRequired[List[str]],
+    TlsCiphers: NotRequired[List[str]],
+```
+
+## DescribeServerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeServerRequestRequestTypeDef
+
+def get_value() -> DescribeServerRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServerRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+```
+
+## WaiterConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
+```
+
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
+
+## DescribeUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeUserRequestRequestTypeDef
+
+def get_value() -> DescribeUserRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    UserName: str,
+```
+
+## DescribeWorkflowRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeWorkflowRequestRequestTypeDef
+
+def get_value() -> DescribeWorkflowRequestRequestTypeDef:
+    return {
+        "WorkflowId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkflowRequestRequestTypeDef(TypedDict):
+    WorkflowId: str,
+```
+
+## LoggingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import LoggingConfigurationTypeDef
+
+def get_value() -> LoggingConfigurationTypeDef:
+    return {
+        "LoggingRole": ...,
+    }
+```
+
+```python title="Definition"
+class LoggingConfigurationTypeDef(TypedDict):
+    LoggingRole: NotRequired[str],
+    LogGroupName: NotRequired[str],
+```
+
+## SshPublicKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import SshPublicKeyTypeDef
+
+def get_value() -> SshPublicKeyTypeDef:
+    return {
+        "DateImported": ...,
+        "SshPublicKeyBody": ...,
+        "SshPublicKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class SshPublicKeyTypeDef(TypedDict):
+    DateImported: datetime,
+    SshPublicKeyBody: str,
+    SshPublicKeyId: str,
+```
+
+## EfsFileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import EfsFileLocationTypeDef
+
+def get_value() -> EfsFileLocationTypeDef:
+    return {
+        "FileSystemId": ...,
+    }
+```
+
+```python title="Definition"
+class EfsFileLocationTypeDef(TypedDict):
+    FileSystemId: NotRequired[str],
+    Path: NotRequired[str],
+```
+
+## ExecutionErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ExecutionErrorTypeDef
+
+def get_value() -> ExecutionErrorTypeDef:
+    return {
+        "Type": ...,
+        "Message": ...,
+    }
+```
+
+```python title="Definition"
+class ExecutionErrorTypeDef(TypedDict):
+    Type: ExecutionErrorTypeType,  # (1)
+    Message: str,
+```
+
+1. See [:material-code-brackets: ExecutionErrorTypeType](./literals.md#executionerrortypetype) 
+## S3FileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import S3FileLocationTypeDef
+
+def get_value() -> S3FileLocationTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3FileLocationTypeDef(TypedDict):
+    Bucket: NotRequired[str],
+    Key: NotRequired[str],
+    VersionId: NotRequired[str],
+    Etag: NotRequired[str],
+```
+
+## ImportSshPublicKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ImportSshPublicKeyRequestRequestTypeDef
+
+def get_value() -> ImportSshPublicKeyRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "SshPublicKeyBody": ...,
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ImportSshPublicKeyRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    SshPublicKeyBody: str,
+    UserName: str,
+```
+
+## S3InputFileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import S3InputFileLocationTypeDef
+
+def get_value() -> S3InputFileLocationTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3InputFileLocationTypeDef(TypedDict):
+    Bucket: NotRequired[str],
+    Key: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListAccessesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListAccessesRequestRequestTypeDef
+
+def get_value() -> ListAccessesRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessesRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListedAccessTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListedAccessTypeDef
+
+def get_value() -> ListedAccessTypeDef:
+    return {
+        "HomeDirectory": ...,
+    }
+```
+
+```python title="Definition"
+class ListedAccessTypeDef(TypedDict):
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    Role: NotRequired[str],
+    ExternalId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+## ListExecutionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListExecutionsRequestRequestTypeDef
+
+def get_value() -> ListExecutionsRequestRequestTypeDef:
+    return {
+        "WorkflowId": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsRequestRequestTypeDef(TypedDict):
+    WorkflowId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListSecurityPoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestRequestTypeDef
+
+def get_value() -> ListSecurityPoliciesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityPoliciesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListServersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListServersRequestRequestTypeDef
+
+def get_value() -> ListServersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListServersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListedServerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListedServerTypeDef
+
+def get_value() -> ListedServerTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListedServerTypeDef(TypedDict):
+    Arn: str,
+    Domain: NotRequired[DomainType],  # (1)
+    IdentityProviderType: NotRequired[IdentityProviderTypeType],  # (2)
+    EndpointType: NotRequired[EndpointTypeType],  # (3)
+    LoggingRole: NotRequired[str],
+    ServerId: NotRequired[str],
+    State: NotRequired[StateType],  # (4)
+    UserCount: NotRequired[int],
+```
+
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
+4. See [:material-code-brackets: StateType](./literals.md#statetype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListUsersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListedUserTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListedUserTypeDef
+
+def get_value() -> ListedUserTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListedUserTypeDef(TypedDict):
+    Arn: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    Role: NotRequired[str],
+    SshPublicKeyCount: NotRequired[int],
+    UserName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+## ListWorkflowsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListWorkflowsRequestRequestTypeDef
+
+def get_value() -> ListWorkflowsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkflowsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListedWorkflowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListedWorkflowTypeDef
+
+def get_value() -> ListedWorkflowTypeDef:
+    return {
+        "WorkflowId": ...,
+    }
+```
+
+```python title="Definition"
+class ListedWorkflowTypeDef(TypedDict):
+    WorkflowId: NotRequired[str],
+    Description: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
+## S3TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import S3TagTypeDef
+
+def get_value() -> S3TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class S3TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## SendWorkflowStepStateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import SendWorkflowStepStateRequestRequestTypeDef
+
+def get_value() -> SendWorkflowStepStateRequestRequestTypeDef:
+    return {
+        "WorkflowId": ...,
+        "ExecutionId": ...,
+        "Token": ...,
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class SendWorkflowStepStateRequestRequestTypeDef(TypedDict):
+    WorkflowId: str,
+    ExecutionId: str,
+    Token: str,
+    Status: CustomStepStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: CustomStepStatusType](./literals.md#customstepstatustype) 
+## UserDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UserDetailsTypeDef
+
+def get_value() -> UserDetailsTypeDef:
+    return {
+        "UserName": ...,
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class UserDetailsTypeDef(TypedDict):
+    UserName: str,
+    ServerId: str,
+    SessionId: NotRequired[str],
+```
+
+## StartServerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import StartServerRequestRequestTypeDef
+
+def get_value() -> StartServerRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class StartServerRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+```
+
+## StopServerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import StopServerRequestRequestTypeDef
+
+def get_value() -> StopServerRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class StopServerRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+```
+
+## TestIdentityProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import TestIdentityProviderRequestRequestTypeDef
+
+def get_value() -> TestIdentityProviderRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class TestIdentityProviderRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    UserName: str,
+    ServerProtocol: NotRequired[ProtocolType],  # (1)
+    SourceIp: NotRequired[str],
+    UserPassword: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    TagKeys: Sequence[str],
+```
+
+## WorkflowDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import WorkflowDetailTypeDef
+
+def get_value() -> WorkflowDetailTypeDef:
+    return {
+        "WorkflowId": ...,
+        "ExecutionRole": ...,
+    }
+```
+
+```python title="Definition"
+class WorkflowDetailTypeDef(TypedDict):
+    WorkflowId: str,
+    ExecutionRole: str,
+```
+
+## CreateAccessRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateAccessRequestRequestTypeDef
+
+def get_value() -> CreateAccessRequestRequestTypeDef:
+    return {
+        "Role": ...,
+        "ServerId": ...,
+        "ExternalId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessRequestRequestTypeDef(TypedDict):
+    Role: str,
+    ServerId: str,
+    ExternalId: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+## DescribedAccessTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribedAccessTypeDef
+
+def get_value() -> DescribedAccessTypeDef:
+    return {
+        "HomeDirectory": ...,
+    }
+```
+
+```python title="Definition"
+class DescribedAccessTypeDef(TypedDict):
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryMappings: NotRequired[List[HomeDirectoryMapEntryTypeDef]],  # (1)
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+    Role: NotRequired[str],
+    ExternalId: NotRequired[str],
+```
+
+1. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+2. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+## UpdateAccessRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateAccessRequestRequestTypeDef
+
+def get_value() -> UpdateAccessRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "ExternalId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccessRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    ExternalId: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+    Role: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+## UpdateUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    UserName: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+    Role: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+## CreateAccessResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef
+
+def get_value() -> CreateAccessResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "ExternalId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessResponseTypeDef(TypedDict):
+    ServerId: str,
+    ExternalId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateServerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef
+
+def get_value() -> CreateServerResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateServerResponseTypeDef(TypedDict):
+    ServerId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "UserName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    ServerId: str,
+    UserName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWorkflowResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateWorkflowResponseTypeDef
+
+def get_value() -> CreateWorkflowResponseTypeDef:
+    return {
+        "WorkflowId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkflowResponseTypeDef(TypedDict):
+    WorkflowId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportSshPublicKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ImportSshPublicKeyResponseTypeDef
+
+def get_value() -> ImportSshPublicKeyResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "SshPublicKeyId": ...,
+        "UserName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportSshPublicKeyResponseTypeDef(TypedDict):
+    ServerId: str,
+    SshPublicKeyId: str,
+    UserName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListSecurityPoliciesResponseTypeDef
+
+def get_value() -> ListSecurityPoliciesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SecurityPolicyNames": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityPoliciesResponseTypeDef(TypedDict):
+    NextToken: str,
+    SecurityPolicyNames: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestIdentityProviderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import TestIdentityProviderResponseTypeDef
+
+def get_value() -> TestIdentityProviderResponseTypeDef:
+    return {
+        "Response": ...,
+        "StatusCode": ...,
+        "Message": ...,
+        "Url": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestIdentityProviderResponseTypeDef(TypedDict):
+    Response: str,
+    StatusCode: int,
+    Message: str,
+    Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAccessResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateAccessResponseTypeDef
+
+def get_value() -> UpdateAccessResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "ExternalId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccessResponseTypeDef(TypedDict):
+    ServerId: str,
+    ExternalId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateServerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateServerResponseTypeDef
+
+def get_value() -> UpdateServerResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateServerResponseTypeDef(TypedDict):
+    ServerId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateUserResponseTypeDef
+
+def get_value() -> UpdateUserResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "UserName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserResponseTypeDef(TypedDict):
+    ServerId: str,
+    UserName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "Role": ...,
+        "ServerId": ...,
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    Role: str,
+    ServerId: str,
+    UserName: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
+    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+    SshPublicKeyBody: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Arn: str,
+    NextToken: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribeSecurityPolicyResponseTypeDef
 
 ```python title="Usage Example"
@@ -468,22 +1325,6 @@ class DescribeSecurityPolicyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DescribedSecurityPolicyTypeDef](./type_defs.md#describedsecuritypolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeServerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeServerRequestRequestTypeDef
-
-def get_value() -> DescribeServerRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeServerRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-```
-
 ## DescribeServerRequestServerOfflineWaitTypeDef
 
 ```python title="Usage Example"
@@ -520,44 +1361,384 @@ class DescribeServerRequestServerOnlineWaitTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeServerResponseTypeDef
+## DescribedUserTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeServerResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribedUserTypeDef
 
-def get_value() -> DescribeServerResponseTypeDef:
+def get_value() -> DescribedUserTypeDef:
     return {
-        "Server": ...,
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribedUserTypeDef(TypedDict):
+    Arn: str,
+    HomeDirectory: NotRequired[str],
+    HomeDirectoryMappings: NotRequired[List[HomeDirectoryMapEntryTypeDef]],  # (1)
+    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (2)
+    Policy: NotRequired[str],
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
+    Role: NotRequired[str],
+    SshPublicKeys: NotRequired[List[SshPublicKeyTypeDef]],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    UserName: NotRequired[str],
+```
+
+1. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+2. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: SshPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ExecutionStepResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ExecutionStepResultTypeDef
+
+def get_value() -> ExecutionStepResultTypeDef:
+    return {
+        "StepType": ...,
+    }
+```
+
+```python title="Definition"
+class ExecutionStepResultTypeDef(TypedDict):
+    StepType: NotRequired[WorkflowStepTypeType],  # (1)
+    Outputs: NotRequired[str],
+    Error: NotRequired[ExecutionErrorTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: WorkflowStepTypeType](./literals.md#workflowsteptypetype) 
+2. See [:material-code-braces: ExecutionErrorTypeDef](./type_defs.md#executionerrortypedef) 
+## FileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import FileLocationTypeDef
+
+def get_value() -> FileLocationTypeDef:
+    return {
+        "S3FileLocation": ...,
+    }
+```
+
+```python title="Definition"
+class FileLocationTypeDef(TypedDict):
+    S3FileLocation: NotRequired[S3FileLocationTypeDef],  # (1)
+    EfsFileLocation: NotRequired[EfsFileLocationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: S3FileLocationTypeDef](./type_defs.md#s3filelocationtypedef) 
+2. See [:material-code-braces: EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef) 
+## InputFileLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import InputFileLocationTypeDef
+
+def get_value() -> InputFileLocationTypeDef:
+    return {
+        "S3FileLocation": ...,
+    }
+```
+
+```python title="Definition"
+class InputFileLocationTypeDef(TypedDict):
+    S3FileLocation: NotRequired[S3InputFileLocationTypeDef],  # (1)
+    EfsFileLocation: NotRequired[EfsFileLocationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: S3InputFileLocationTypeDef](./type_defs.md#s3inputfilelocationtypedef) 
+2. See [:material-code-braces: EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef) 
+## ListAccessesRequestListAccessesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListAccessesRequestListAccessesPaginateTypeDef
+
+def get_value() -> ListAccessesRequestListAccessesPaginateTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessesRequestListAccessesPaginateTypeDef(TypedDict):
+    ServerId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListExecutionsRequestListExecutionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListExecutionsRequestListExecutionsPaginateTypeDef
+
+def get_value() -> ListExecutionsRequestListExecutionsPaginateTypeDef:
+    return {
+        "WorkflowId": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsRequestListExecutionsPaginateTypeDef(TypedDict):
+    WorkflowId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef
+
+def get_value() -> ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServersRequestListServersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListServersRequestListServersPaginateTypeDef
+
+def get_value() -> ListServersRequestListServersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListServersRequestListServersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    Arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListUsersRequestListUsersPaginateTypeDef
+
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    ServerId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWorkflowsRequestListWorkflowsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListWorkflowsRequestListWorkflowsPaginateTypeDef
+
+def get_value() -> ListWorkflowsRequestListWorkflowsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkflowsRequestListWorkflowsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAccessesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
+
+def get_value() -> ListAccessesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServerId": ...,
+        "Accesses": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeServerResponseTypeDef(TypedDict):
-    Server: DescribedServerTypeDef,  # (1)
+class ListAccessesResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServerId: str,
+    Accesses: List[ListedAccessTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: DescribedServerTypeDef](./type_defs.md#describedservertypedef) 
+1. See [:material-code-braces: ListedAccessTypeDef](./type_defs.md#listedaccesstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeUserRequestRequestTypeDef
+## ListServersResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeUserRequestRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
 
-def get_value() -> DescribeUserRequestRequestTypeDef:
+def get_value() -> ListServersResponseTypeDef:
     return {
-        "ServerId": ...,
-        "UserName": ...,
+        "NextToken": ...,
+        "Servers": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeUserRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    UserName: str,
+class ListServersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Servers: List[ListedServerTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: ListedServerTypeDef](./type_defs.md#listedservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServerId": ...,
+        "Users": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServerId: str,
+    Users: List[ListedUserTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListedUserTypeDef](./type_defs.md#listedusertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkflowsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListWorkflowsResponseTypeDef
+
+def get_value() -> ListWorkflowsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Workflows": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkflowsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Workflows: List[ListedWorkflowTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListedWorkflowTypeDef](./type_defs.md#listedworkflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagStepDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import TagStepDetailsTypeDef
+
+def get_value() -> TagStepDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class TagStepDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Tags: NotRequired[Sequence[S3TagTypeDef]],  # (1)
+    SourceFileLocation: NotRequired[str],
+```
+
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+## ServiceMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ServiceMetadataTypeDef
+
+def get_value() -> ServiceMetadataTypeDef:
+    return {
+        "UserDetails": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceMetadataTypeDef(TypedDict):
+    UserDetails: UserDetailsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UserDetailsTypeDef](./type_defs.md#userdetailstypedef) 
+## WorkflowDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import WorkflowDetailsTypeDef
+
+def get_value() -> WorkflowDetailsTypeDef:
+    return {
+        "OnUpload": ...,
+    }
+```
+
+```python title="Definition"
+class WorkflowDetailsTypeDef(TypedDict):
+    OnUpload: Sequence[WorkflowDetailTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef) 
+## DescribeAccessResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeAccessResponseTypeDef
+
+def get_value() -> DescribeAccessResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "Access": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccessResponseTypeDef(TypedDict):
+    ServerId: str,
+    Access: DescribedAccessTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DescribedAccessTypeDef](./type_defs.md#describedaccesstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserResponseTypeDef
 
 ```python title="Usage Example"
@@ -580,117 +1761,107 @@ class DescribeUserResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DescribedUserTypeDef](./type_defs.md#describedusertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeWorkflowRequestRequestTypeDef
+## ExecutionResultsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeWorkflowRequestRequestTypeDef
+from mypy_boto3_transfer.type_defs import ExecutionResultsTypeDef
 
-def get_value() -> DescribeWorkflowRequestRequestTypeDef:
+def get_value() -> ExecutionResultsTypeDef:
     return {
-        "WorkflowId": ...,
+        "Steps": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeWorkflowRequestRequestTypeDef(TypedDict):
-    WorkflowId: str,
+class ExecutionResultsTypeDef(TypedDict):
+    Steps: NotRequired[List[ExecutionStepResultTypeDef]],  # (1)
+    OnExceptionSteps: NotRequired[List[ExecutionStepResultTypeDef]],  # (1)
 ```
 
-## DescribeWorkflowResponseTypeDef
+1. See [:material-code-braces: ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef) 
+2. See [:material-code-braces: ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef) 
+## CopyStepDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribeWorkflowResponseTypeDef
+from mypy_boto3_transfer.type_defs import CopyStepDetailsTypeDef
 
-def get_value() -> DescribeWorkflowResponseTypeDef:
+def get_value() -> CopyStepDetailsTypeDef:
     return {
-        "Workflow": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeWorkflowResponseTypeDef(TypedDict):
-    Workflow: DescribedWorkflowTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CopyStepDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DestinationFileLocation: NotRequired[InputFileLocationTypeDef],  # (1)
+    OverwriteExisting: NotRequired[OverwriteExistingType],  # (2)
+    SourceFileLocation: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DescribedWorkflowTypeDef](./type_defs.md#describedworkflowtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribedAccessTypeDef
+1. See [:material-code-braces: InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef) 
+2. See [:material-code-brackets: OverwriteExistingType](./literals.md#overwriteexistingtype) 
+## ListedExecutionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribedAccessTypeDef
+from mypy_boto3_transfer.type_defs import ListedExecutionTypeDef
 
-def get_value() -> DescribedAccessTypeDef:
-    return {
-        "HomeDirectory": ...,
-    }
-```
-
-```python title="Definition"
-class DescribedAccessTypeDef(TypedDict):
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryMappings: NotRequired[List[HomeDirectoryMapEntryTypeDef]],  # (1)
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
-    Role: NotRequired[str],
-    ExternalId: NotRequired[str],
-```
-
-1. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-2. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-## DescribedExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribedExecutionTypeDef
-
-def get_value() -> DescribedExecutionTypeDef:
+def get_value() -> ListedExecutionTypeDef:
     return {
         "ExecutionId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribedExecutionTypeDef(TypedDict):
+class ListedExecutionTypeDef(TypedDict):
     ExecutionId: NotRequired[str],
     InitialFileLocation: NotRequired[FileLocationTypeDef],  # (1)
     ServiceMetadata: NotRequired[ServiceMetadataTypeDef],  # (2)
-    ExecutionRole: NotRequired[str],
-    LoggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (3)
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (4)
-    Status: NotRequired[ExecutionStatusType],  # (5)
-    Results: NotRequired[ExecutionResultsTypeDef],  # (6)
+    Status: NotRequired[ExecutionStatusType],  # (3)
 ```
 
 1. See [:material-code-braces: FileLocationTypeDef](./type_defs.md#filelocationtypedef) 
 2. See [:material-code-braces: ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef) 
-3. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
-4. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-5. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
-6. See [:material-code-braces: ExecutionResultsTypeDef](./type_defs.md#executionresultstypedef) 
-## DescribedSecurityPolicyTypeDef
+3. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+## CreateServerRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribedSecurityPolicyTypeDef
+from mypy_boto3_transfer.type_defs import CreateServerRequestRequestTypeDef
 
-def get_value() -> DescribedSecurityPolicyTypeDef:
+def get_value() -> CreateServerRequestRequestTypeDef:
     return {
-        "SecurityPolicyName": ...,
+        "Certificate": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribedSecurityPolicyTypeDef(TypedDict):
-    SecurityPolicyName: str,
-    Fips: NotRequired[bool],
-    SshCiphers: NotRequired[List[str]],
-    SshKexs: NotRequired[List[str]],
-    SshMacs: NotRequired[List[str]],
-    TlsCiphers: NotRequired[List[str]],
+class CreateServerRequestRequestTypeDef(TypedDict):
+    Certificate: NotRequired[str],
+    Domain: NotRequired[DomainType],  # (1)
+    EndpointDetails: NotRequired[EndpointDetailsTypeDef],  # (2)
+    EndpointType: NotRequired[EndpointTypeType],  # (3)
+    HostKey: NotRequired[str],
+    IdentityProviderDetails: NotRequired[IdentityProviderDetailsTypeDef],  # (4)
+    IdentityProviderType: NotRequired[IdentityProviderTypeType],  # (5)
+    LoggingRole: NotRequired[str],
+    PostAuthenticationLoginBanner: NotRequired[str],
+    PreAuthenticationLoginBanner: NotRequired[str],
+    Protocols: NotRequired[Sequence[ProtocolType]],  # (6)
+    ProtocolDetails: NotRequired[ProtocolDetailsTypeDef],  # (7)
+    SecurityPolicyName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+    WorkflowDetails: NotRequired[WorkflowDetailsTypeDef],  # (9)
 ```
 
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
+4. See [:material-code-braces: IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef) 
+5. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+6. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+7. See [:material-code-braces: ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
 ## DescribedServerTypeDef
 
 ```python title="Usage Example"
@@ -735,1200 +1906,6 @@ class DescribedServerTypeDef(TypedDict):
 8. See [:material-code-brackets: StateType](./literals.md#statetype) 
 9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 10. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
-## DescribedUserTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribedUserTypeDef
-
-def get_value() -> DescribedUserTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribedUserTypeDef(TypedDict):
-    Arn: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryMappings: NotRequired[List[HomeDirectoryMapEntryTypeDef]],  # (1)
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
-    Role: NotRequired[str],
-    SshPublicKeys: NotRequired[List[SshPublicKeyTypeDef]],  # (4)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-    UserName: NotRequired[str],
-```
-
-1. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-2. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-4. See [:material-code-braces: SshPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribedWorkflowTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import DescribedWorkflowTypeDef
-
-def get_value() -> DescribedWorkflowTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribedWorkflowTypeDef(TypedDict):
-    Arn: str,
-    Description: NotRequired[str],
-    Steps: NotRequired[List[WorkflowStepTypeDef]],  # (1)
-    OnExceptionSteps: NotRequired[List[WorkflowStepTypeDef]],  # (1)
-    WorkflowId: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
-2. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## EfsFileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import EfsFileLocationTypeDef
-
-def get_value() -> EfsFileLocationTypeDef:
-    return {
-        "FileSystemId": ...,
-    }
-```
-
-```python title="Definition"
-class EfsFileLocationTypeDef(TypedDict):
-    FileSystemId: NotRequired[str],
-    Path: NotRequired[str],
-```
-
-## EndpointDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import EndpointDetailsTypeDef
-
-def get_value() -> EndpointDetailsTypeDef:
-    return {
-        "AddressAllocationIds": ...,
-    }
-```
-
-```python title="Definition"
-class EndpointDetailsTypeDef(TypedDict):
-    AddressAllocationIds: NotRequired[Sequence[str]],
-    SubnetIds: NotRequired[Sequence[str]],
-    VpcEndpointId: NotRequired[str],
-    VpcId: NotRequired[str],
-    SecurityGroupIds: NotRequired[Sequence[str]],
-```
-
-## ExecutionErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ExecutionErrorTypeDef
-
-def get_value() -> ExecutionErrorTypeDef:
-    return {
-        "Type": ...,
-        "Message": ...,
-    }
-```
-
-```python title="Definition"
-class ExecutionErrorTypeDef(TypedDict):
-    Type: ExecutionErrorTypeType,  # (1)
-    Message: str,
-```
-
-1. See [:material-code-brackets: ExecutionErrorTypeType](./literals.md#executionerrortypetype) 
-## ExecutionResultsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ExecutionResultsTypeDef
-
-def get_value() -> ExecutionResultsTypeDef:
-    return {
-        "Steps": ...,
-    }
-```
-
-```python title="Definition"
-class ExecutionResultsTypeDef(TypedDict):
-    Steps: NotRequired[List[ExecutionStepResultTypeDef]],  # (1)
-    OnExceptionSteps: NotRequired[List[ExecutionStepResultTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef) 
-2. See [:material-code-braces: ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef) 
-## ExecutionStepResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ExecutionStepResultTypeDef
-
-def get_value() -> ExecutionStepResultTypeDef:
-    return {
-        "StepType": ...,
-    }
-```
-
-```python title="Definition"
-class ExecutionStepResultTypeDef(TypedDict):
-    StepType: NotRequired[WorkflowStepTypeType],  # (1)
-    Outputs: NotRequired[str],
-    Error: NotRequired[ExecutionErrorTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: WorkflowStepTypeType](./literals.md#workflowsteptypetype) 
-2. See [:material-code-braces: ExecutionErrorTypeDef](./type_defs.md#executionerrortypedef) 
-## FileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import FileLocationTypeDef
-
-def get_value() -> FileLocationTypeDef:
-    return {
-        "S3FileLocation": ...,
-    }
-```
-
-```python title="Definition"
-class FileLocationTypeDef(TypedDict):
-    S3FileLocation: NotRequired[S3FileLocationTypeDef],  # (1)
-    EfsFileLocation: NotRequired[EfsFileLocationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: S3FileLocationTypeDef](./type_defs.md#s3filelocationtypedef) 
-2. See [:material-code-braces: EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef) 
-## HomeDirectoryMapEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import HomeDirectoryMapEntryTypeDef
-
-def get_value() -> HomeDirectoryMapEntryTypeDef:
-    return {
-        "Entry": ...,
-        "Target": ...,
-    }
-```
-
-```python title="Definition"
-class HomeDirectoryMapEntryTypeDef(TypedDict):
-    Entry: str,
-    Target: str,
-```
-
-## IdentityProviderDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import IdentityProviderDetailsTypeDef
-
-def get_value() -> IdentityProviderDetailsTypeDef:
-    return {
-        "Url": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityProviderDetailsTypeDef(TypedDict):
-    Url: NotRequired[str],
-    InvocationRole: NotRequired[str],
-    DirectoryId: NotRequired[str],
-    Function: NotRequired[str],
-```
-
-## ImportSshPublicKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ImportSshPublicKeyRequestRequestTypeDef
-
-def get_value() -> ImportSshPublicKeyRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-        "SshPublicKeyBody": ...,
-        "UserName": ...,
-    }
-```
-
-```python title="Definition"
-class ImportSshPublicKeyRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    SshPublicKeyBody: str,
-    UserName: str,
-```
-
-## ImportSshPublicKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ImportSshPublicKeyResponseTypeDef
-
-def get_value() -> ImportSshPublicKeyResponseTypeDef:
-    return {
-        "ServerId": ...,
-        "SshPublicKeyId": ...,
-        "UserName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportSshPublicKeyResponseTypeDef(TypedDict):
-    ServerId: str,
-    SshPublicKeyId: str,
-    UserName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## InputFileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import InputFileLocationTypeDef
-
-def get_value() -> InputFileLocationTypeDef:
-    return {
-        "S3FileLocation": ...,
-    }
-```
-
-```python title="Definition"
-class InputFileLocationTypeDef(TypedDict):
-    S3FileLocation: NotRequired[S3InputFileLocationTypeDef],  # (1)
-    EfsFileLocation: NotRequired[EfsFileLocationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: S3InputFileLocationTypeDef](./type_defs.md#s3inputfilelocationtypedef) 
-2. See [:material-code-braces: EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef) 
-## ListAccessesRequestListAccessesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListAccessesRequestListAccessesPaginateTypeDef
-
-def get_value() -> ListAccessesRequestListAccessesPaginateTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccessesRequestListAccessesPaginateTypeDef(TypedDict):
-    ServerId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAccessesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListAccessesRequestRequestTypeDef
-
-def get_value() -> ListAccessesRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccessesRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListAccessesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
-
-def get_value() -> ListAccessesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "ServerId": ...,
-        "Accesses": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAccessesResponseTypeDef(TypedDict):
-    NextToken: str,
-    ServerId: str,
-    Accesses: List[ListedAccessTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListedAccessTypeDef](./type_defs.md#listedaccesstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListExecutionsRequestListExecutionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListExecutionsRequestListExecutionsPaginateTypeDef
-
-def get_value() -> ListExecutionsRequestListExecutionsPaginateTypeDef:
-    return {
-        "WorkflowId": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsRequestListExecutionsPaginateTypeDef(TypedDict):
-    WorkflowId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListExecutionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListExecutionsRequestRequestTypeDef
-
-def get_value() -> ListExecutionsRequestRequestTypeDef:
-    return {
-        "WorkflowId": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsRequestRequestTypeDef(TypedDict):
-    WorkflowId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListExecutionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListExecutionsResponseTypeDef
-
-def get_value() -> ListExecutionsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "WorkflowId": ...,
-        "Executions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListExecutionsResponseTypeDef(TypedDict):
-    NextToken: str,
-    WorkflowId: str,
-    Executions: List[ListedExecutionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListedExecutionTypeDef](./type_defs.md#listedexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef
-
-def get_value() -> ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListSecurityPoliciesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestRequestTypeDef
-
-def get_value() -> ListSecurityPoliciesRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityPoliciesRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListSecurityPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListSecurityPoliciesResponseTypeDef
-
-def get_value() -> ListSecurityPoliciesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "SecurityPolicyNames": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSecurityPoliciesResponseTypeDef(TypedDict):
-    NextToken: str,
-    SecurityPolicyNames: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListServersRequestListServersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListServersRequestListServersPaginateTypeDef
-
-def get_value() -> ListServersRequestListServersPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListServersRequestListServersPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListServersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListServersRequestRequestTypeDef
-
-def get_value() -> ListServersRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListServersRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListServersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
-
-def get_value() -> ListServersResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Servers": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListServersResponseTypeDef(TypedDict):
-    NextToken: str,
-    Servers: List[ListedServerTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListedServerTypeDef](./type_defs.md#listedservertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
-
-def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
-    Arn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Arn": ...,
-        "NextToken": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Arn: str,
-    NextToken: str,
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUsersRequestListUsersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListUsersRequestListUsersPaginateTypeDef
-
-def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
-    ServerId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListUsersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListUsersRequestRequestTypeDef
-
-def get_value() -> ListUsersRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListUsersResponseTypeDef
-
-def get_value() -> ListUsersResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "ServerId": ...,
-        "Users": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersResponseTypeDef(TypedDict):
-    NextToken: str,
-    ServerId: str,
-    Users: List[ListedUserTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListedUserTypeDef](./type_defs.md#listedusertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListWorkflowsRequestListWorkflowsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListWorkflowsRequestListWorkflowsPaginateTypeDef
-
-def get_value() -> ListWorkflowsRequestListWorkflowsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkflowsRequestListWorkflowsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListWorkflowsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListWorkflowsRequestRequestTypeDef
-
-def get_value() -> ListWorkflowsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkflowsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListWorkflowsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListWorkflowsResponseTypeDef
-
-def get_value() -> ListWorkflowsResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "Workflows": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkflowsResponseTypeDef(TypedDict):
-    NextToken: str,
-    Workflows: List[ListedWorkflowTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListedWorkflowTypeDef](./type_defs.md#listedworkflowtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListedAccessTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListedAccessTypeDef
-
-def get_value() -> ListedAccessTypeDef:
-    return {
-        "HomeDirectory": ...,
-    }
-```
-
-```python title="Definition"
-class ListedAccessTypeDef(TypedDict):
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    Role: NotRequired[str],
-    ExternalId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-## ListedExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListedExecutionTypeDef
-
-def get_value() -> ListedExecutionTypeDef:
-    return {
-        "ExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class ListedExecutionTypeDef(TypedDict):
-    ExecutionId: NotRequired[str],
-    InitialFileLocation: NotRequired[FileLocationTypeDef],  # (1)
-    ServiceMetadata: NotRequired[ServiceMetadataTypeDef],  # (2)
-    Status: NotRequired[ExecutionStatusType],  # (3)
-```
-
-1. See [:material-code-braces: FileLocationTypeDef](./type_defs.md#filelocationtypedef) 
-2. See [:material-code-braces: ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef) 
-3. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
-## ListedServerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListedServerTypeDef
-
-def get_value() -> ListedServerTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ListedServerTypeDef(TypedDict):
-    Arn: str,
-    Domain: NotRequired[DomainType],  # (1)
-    IdentityProviderType: NotRequired[IdentityProviderTypeType],  # (2)
-    EndpointType: NotRequired[EndpointTypeType],  # (3)
-    LoggingRole: NotRequired[str],
-    ServerId: NotRequired[str],
-    State: NotRequired[StateType],  # (4)
-    UserCount: NotRequired[int],
-```
-
-1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
-2. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
-3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
-4. See [:material-code-brackets: StateType](./literals.md#statetype) 
-## ListedUserTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListedUserTypeDef
-
-def get_value() -> ListedUserTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class ListedUserTypeDef(TypedDict):
-    Arn: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    Role: NotRequired[str],
-    SshPublicKeyCount: NotRequired[int],
-    UserName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-## ListedWorkflowTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ListedWorkflowTypeDef
-
-def get_value() -> ListedWorkflowTypeDef:
-    return {
-        "WorkflowId": ...,
-    }
-```
-
-```python title="Definition"
-class ListedWorkflowTypeDef(TypedDict):
-    WorkflowId: NotRequired[str],
-    Description: NotRequired[str],
-    Arn: NotRequired[str],
-```
-
-## LoggingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import LoggingConfigurationTypeDef
-
-def get_value() -> LoggingConfigurationTypeDef:
-    return {
-        "LoggingRole": ...,
-    }
-```
-
-```python title="Definition"
-class LoggingConfigurationTypeDef(TypedDict):
-    LoggingRole: NotRequired[str],
-    LogGroupName: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PosixProfileTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import PosixProfileTypeDef
-
-def get_value() -> PosixProfileTypeDef:
-    return {
-        "Uid": ...,
-        "Gid": ...,
-    }
-```
-
-```python title="Definition"
-class PosixProfileTypeDef(TypedDict):
-    Uid: int,
-    Gid: int,
-    SecondaryGids: NotRequired[Sequence[int]],
-```
-
-## ProtocolDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ProtocolDetailsTypeDef
-
-def get_value() -> ProtocolDetailsTypeDef:
-    return {
-        "PassiveIp": ...,
-    }
-```
-
-```python title="Definition"
-class ProtocolDetailsTypeDef(TypedDict):
-    PassiveIp: NotRequired[str],
-    TlsSessionResumptionMode: NotRequired[TlsSessionResumptionModeType],  # (1)
-```
-
-1. See [:material-code-brackets: TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## S3FileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import S3FileLocationTypeDef
-
-def get_value() -> S3FileLocationTypeDef:
-    return {
-        "Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class S3FileLocationTypeDef(TypedDict):
-    Bucket: NotRequired[str],
-    Key: NotRequired[str],
-    VersionId: NotRequired[str],
-    Etag: NotRequired[str],
-```
-
-## S3InputFileLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import S3InputFileLocationTypeDef
-
-def get_value() -> S3InputFileLocationTypeDef:
-    return {
-        "Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class S3InputFileLocationTypeDef(TypedDict):
-    Bucket: NotRequired[str],
-    Key: NotRequired[str],
-```
-
-## S3TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import S3TagTypeDef
-
-def get_value() -> S3TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class S3TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## SendWorkflowStepStateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import SendWorkflowStepStateRequestRequestTypeDef
-
-def get_value() -> SendWorkflowStepStateRequestRequestTypeDef:
-    return {
-        "WorkflowId": ...,
-        "ExecutionId": ...,
-        "Token": ...,
-        "Status": ...,
-    }
-```
-
-```python title="Definition"
-class SendWorkflowStepStateRequestRequestTypeDef(TypedDict):
-    WorkflowId: str,
-    ExecutionId: str,
-    Token: str,
-    Status: CustomStepStatusType,  # (1)
-```
-
-1. See [:material-code-brackets: CustomStepStatusType](./literals.md#customstepstatustype) 
-## ServiceMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import ServiceMetadataTypeDef
-
-def get_value() -> ServiceMetadataTypeDef:
-    return {
-        "UserDetails": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceMetadataTypeDef(TypedDict):
-    UserDetails: UserDetailsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: UserDetailsTypeDef](./type_defs.md#userdetailstypedef) 
-## SshPublicKeyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import SshPublicKeyTypeDef
-
-def get_value() -> SshPublicKeyTypeDef:
-    return {
-        "DateImported": ...,
-        "SshPublicKeyBody": ...,
-        "SshPublicKeyId": ...,
-    }
-```
-
-```python title="Definition"
-class SshPublicKeyTypeDef(TypedDict):
-    DateImported: datetime,
-    SshPublicKeyBody: str,
-    SshPublicKeyId: str,
-```
-
-## StartServerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import StartServerRequestRequestTypeDef
-
-def get_value() -> StartServerRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class StartServerRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-```
-
-## StopServerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import StopServerRequestRequestTypeDef
-
-def get_value() -> StopServerRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class StopServerRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-```
-
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagStepDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import TagStepDetailsTypeDef
-
-def get_value() -> TagStepDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class TagStepDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Tags: NotRequired[Sequence[S3TagTypeDef]],  # (1)
-    SourceFileLocation: NotRequired[str],
-```
-
-1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## TestIdentityProviderRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import TestIdentityProviderRequestRequestTypeDef
-
-def get_value() -> TestIdentityProviderRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-        "UserName": ...,
-    }
-```
-
-```python title="Definition"
-class TestIdentityProviderRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    UserName: str,
-    ServerProtocol: NotRequired[ProtocolType],  # (1)
-    SourceIp: NotRequired[str],
-    UserPassword: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
-## TestIdentityProviderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import TestIdentityProviderResponseTypeDef
-
-def get_value() -> TestIdentityProviderResponseTypeDef:
-    return {
-        "Response": ...,
-        "StatusCode": ...,
-        "Message": ...,
-        "Url": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestIdentityProviderResponseTypeDef(TypedDict):
-    Response: str,
-    StatusCode: int,
-    Message: str,
-    Url: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "Arn": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    Arn: str,
-    TagKeys: Sequence[str],
-```
-
-## UpdateAccessRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UpdateAccessRequestRequestTypeDef
-
-def get_value() -> UpdateAccessRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-        "ExternalId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccessRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    ExternalId: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
-    Role: NotRequired[str],
-```
-
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-## UpdateAccessResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UpdateAccessResponseTypeDef
-
-def get_value() -> UpdateAccessResponseTypeDef:
-    return {
-        "ServerId": ...,
-        "ExternalId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAccessResponseTypeDef(TypedDict):
-    ServerId: str,
-    ExternalId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1963,144 +1940,35 @@ class UpdateServerRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef) 
 5. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 6. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
-## UpdateServerResponseTypeDef
+## DescribedExecutionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UpdateServerResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribedExecutionTypeDef
 
-def get_value() -> UpdateServerResponseTypeDef:
+def get_value() -> DescribedExecutionTypeDef:
     return {
-        "ServerId": ...,
-        "ResponseMetadata": ...,
+        "ExecutionId": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateServerResponseTypeDef(TypedDict):
-    ServerId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribedExecutionTypeDef(TypedDict):
+    ExecutionId: NotRequired[str],
+    InitialFileLocation: NotRequired[FileLocationTypeDef],  # (1)
+    ServiceMetadata: NotRequired[ServiceMetadataTypeDef],  # (2)
+    ExecutionRole: NotRequired[str],
+    LoggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (3)
+    PosixProfile: NotRequired[PosixProfileTypeDef],  # (4)
+    Status: NotRequired[ExecutionStatusType],  # (5)
+    Results: NotRequired[ExecutionResultsTypeDef],  # (6)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UpdateUserRequestRequestTypeDef
-
-def get_value() -> UpdateUserRequestRequestTypeDef:
-    return {
-        "ServerId": ...,
-        "UserName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateUserRequestRequestTypeDef(TypedDict):
-    ServerId: str,
-    UserName: str,
-    HomeDirectory: NotRequired[str],
-    HomeDirectoryType: NotRequired[HomeDirectoryTypeType],  # (1)
-    HomeDirectoryMappings: NotRequired[Sequence[HomeDirectoryMapEntryTypeDef]],  # (2)
-    Policy: NotRequired[str],
-    PosixProfile: NotRequired[PosixProfileTypeDef],  # (3)
-    Role: NotRequired[str],
-```
-
-1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
-2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
-3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
-## UpdateUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UpdateUserResponseTypeDef
-
-def get_value() -> UpdateUserResponseTypeDef:
-    return {
-        "ServerId": ...,
-        "UserName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateUserResponseTypeDef(TypedDict):
-    ServerId: str,
-    UserName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UserDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import UserDetailsTypeDef
-
-def get_value() -> UserDetailsTypeDef:
-    return {
-        "UserName": ...,
-        "ServerId": ...,
-    }
-```
-
-```python title="Definition"
-class UserDetailsTypeDef(TypedDict):
-    UserName: str,
-    ServerId: str,
-    SessionId: NotRequired[str],
-```
-
-## WaiterConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import WaiterConfigTypeDef
-
-def get_value() -> WaiterConfigTypeDef:
-    return {
-        "Delay": ...,
-    }
-```
-
-```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
-```
-
-## WorkflowDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import WorkflowDetailTypeDef
-
-def get_value() -> WorkflowDetailTypeDef:
-    return {
-        "WorkflowId": ...,
-        "ExecutionRole": ...,
-    }
-```
-
-```python title="Definition"
-class WorkflowDetailTypeDef(TypedDict):
-    WorkflowId: str,
-    ExecutionRole: str,
-```
-
-## WorkflowDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_transfer.type_defs import WorkflowDetailsTypeDef
-
-def get_value() -> WorkflowDetailsTypeDef:
-    return {
-        "OnUpload": ...,
-    }
-```
-
-```python title="Definition"
-class WorkflowDetailsTypeDef(TypedDict):
-    OnUpload: Sequence[WorkflowDetailTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef) 
+1. See [:material-code-braces: FileLocationTypeDef](./type_defs.md#filelocationtypedef) 
+2. See [:material-code-braces: ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef) 
+3. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+4. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+5. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+6. See [:material-code-braces: ExecutionResultsTypeDef](./type_defs.md#executionresultstypedef) 
 ## WorkflowStepTypeDef
 
 ```python title="Usage Example"
@@ -2126,3 +1994,135 @@ class WorkflowStepTypeDef(TypedDict):
 3. See [:material-code-braces: CustomStepDetailsTypeDef](./type_defs.md#customstepdetailstypedef) 
 4. See [:material-code-braces: DeleteStepDetailsTypeDef](./type_defs.md#deletestepdetailstypedef) 
 5. See [:material-code-braces: TagStepDetailsTypeDef](./type_defs.md#tagstepdetailstypedef) 
+## ListExecutionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListExecutionsResponseTypeDef
+
+def get_value() -> ListExecutionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "WorkflowId": ...,
+        "Executions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    WorkflowId: str,
+    Executions: List[ListedExecutionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListedExecutionTypeDef](./type_defs.md#listedexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeServerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeServerResponseTypeDef
+
+def get_value() -> DescribeServerResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServerResponseTypeDef(TypedDict):
+    Server: DescribedServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DescribedServerTypeDef](./type_defs.md#describedservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeExecutionResponseTypeDef
+
+def get_value() -> DescribeExecutionResponseTypeDef:
+    return {
+        "WorkflowId": ...,
+        "Execution": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExecutionResponseTypeDef(TypedDict):
+    WorkflowId: str,
+    Execution: DescribedExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DescribedExecutionTypeDef](./type_defs.md#describedexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWorkflowRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import CreateWorkflowRequestRequestTypeDef
+
+def get_value() -> CreateWorkflowRequestRequestTypeDef:
+    return {
+        "Steps": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkflowRequestRequestTypeDef(TypedDict):
+    Steps: Sequence[WorkflowStepTypeDef],  # (1)
+    Description: NotRequired[str],
+    OnExceptionSteps: NotRequired[Sequence[WorkflowStepTypeDef]],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+2. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribedWorkflowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribedWorkflowTypeDef
+
+def get_value() -> DescribedWorkflowTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribedWorkflowTypeDef(TypedDict):
+    Arn: str,
+    Description: NotRequired[str],
+    Steps: NotRequired[List[WorkflowStepTypeDef]],  # (1)
+    OnExceptionSteps: NotRequired[List[WorkflowStepTypeDef]],  # (1)
+    WorkflowId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+2. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeWorkflowResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeWorkflowResponseTypeDef
+
+def get_value() -> DescribeWorkflowResponseTypeDef:
+    return {
+        "Workflow": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkflowResponseTypeDef(TypedDict):
+    Workflow: DescribedWorkflowTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DescribedWorkflowTypeDef](./type_defs.md#describedworkflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -7,30 +7,24 @@
     Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
     type annotations stubs module [mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
-## AccountDetailsTypeDef
+## ReviewDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import AccountDetailsTypeDef
+from mypy_boto3_sesv2.type_defs import ReviewDetailsTypeDef
 
-def get_value() -> AccountDetailsTypeDef:
+def get_value() -> ReviewDetailsTypeDef:
     return {
-        "MailType": ...,
+        "Status": ...,
     }
 ```
 
 ```python title="Definition"
-class AccountDetailsTypeDef(TypedDict):
-    MailType: NotRequired[MailTypeType],  # (1)
-    WebsiteURL: NotRequired[str],
-    ContactLanguage: NotRequired[ContactLanguageType],  # (2)
-    UseCaseDescription: NotRequired[str],
-    AdditionalContactEmailAddresses: NotRequired[List[str]],
-    ReviewDetails: NotRequired[ReviewDetailsTypeDef],  # (3)
+class ReviewDetailsTypeDef(TypedDict):
+    Status: NotRequired[ReviewStatusType],  # (1)
+    CaseId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: MailTypeType](./literals.md#mailtypetype) 
-2. See [:material-code-brackets: ContactLanguageType](./literals.md#contactlanguagetype) 
-3. See [:material-code-braces: ReviewDetailsTypeDef](./type_defs.md#reviewdetailstypedef) 
+1. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
 ## BlacklistEntryTypeDef
 
 ```python title="Usage Example"
@@ -49,42 +43,41 @@ class BlacklistEntryTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## BodyTypeDef
+## ContentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import BodyTypeDef
+from mypy_boto3_sesv2.type_defs import ContentTypeDef
 
-def get_value() -> BodyTypeDef:
+def get_value() -> ContentTypeDef:
     return {
-        "Text": ...,
+        "Data": ...,
     }
 ```
 
 ```python title="Definition"
-class BodyTypeDef(TypedDict):
-    Text: NotRequired[ContentTypeDef],  # (1)
-    Html: NotRequired[ContentTypeDef],  # (1)
+class ContentTypeDef(TypedDict):
+    Data: str,
+    Charset: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
-2. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
-## BulkEmailContentTypeDef
+## TemplateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import BulkEmailContentTypeDef
+from mypy_boto3_sesv2.type_defs import TemplateTypeDef
 
-def get_value() -> BulkEmailContentTypeDef:
+def get_value() -> TemplateTypeDef:
     return {
-        "Template": ...,
+        "TemplateName": ...,
     }
 ```
 
 ```python title="Definition"
-class BulkEmailContentTypeDef(TypedDict):
-    Template: NotRequired[TemplateTypeDef],  # (1)
+class TemplateTypeDef(TypedDict):
+    TemplateName: NotRequired[str],
+    TemplateArn: NotRequired[str],
+    TemplateData: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
 ## BulkEmailEntryResultTypeDef
 
 ```python title="Usage Example"
@@ -104,44 +97,42 @@ class BulkEmailEntryResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BulkEmailStatusType](./literals.md#bulkemailstatustype) 
-## BulkEmailEntryTypeDef
+## DestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import BulkEmailEntryTypeDef
+from mypy_boto3_sesv2.type_defs import DestinationTypeDef
 
-def get_value() -> BulkEmailEntryTypeDef:
+def get_value() -> DestinationTypeDef:
     return {
-        "Destination": ...,
+        "ToAddresses": ...,
     }
 ```
 
 ```python title="Definition"
-class BulkEmailEntryTypeDef(TypedDict):
-    Destination: DestinationTypeDef,  # (1)
-    ReplacementTags: NotRequired[Sequence[MessageTagTypeDef]],  # (2)
-    ReplacementEmailContent: NotRequired[ReplacementEmailContentTypeDef],  # (3)
+class DestinationTypeDef(TypedDict):
+    ToAddresses: NotRequired[Sequence[str]],
+    CcAddresses: NotRequired[Sequence[str]],
+    BccAddresses: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-2. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
-3. See [:material-code-braces: ReplacementEmailContentTypeDef](./type_defs.md#replacementemailcontenttypedef) 
-## CloudWatchDestinationTypeDef
+## MessageTagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CloudWatchDestinationTypeDef
+from mypy_boto3_sesv2.type_defs import MessageTagTypeDef
 
-def get_value() -> CloudWatchDestinationTypeDef:
+def get_value() -> MessageTagTypeDef:
     return {
-        "DimensionConfigurations": ...,
+        "Name": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CloudWatchDestinationTypeDef(TypedDict):
-    DimensionConfigurations: Sequence[CloudWatchDimensionConfigurationTypeDef],  # (1)
+class MessageTagTypeDef(TypedDict):
+    Name: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef) 
 ## CloudWatchDimensionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -199,137 +190,149 @@ class ContactListTypeDef(TypedDict):
     LastUpdatedTimestamp: NotRequired[datetime],
 ```
 
-## ContactTypeDef
+## TopicPreferenceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ContactTypeDef
+from mypy_boto3_sesv2.type_defs import TopicPreferenceTypeDef
 
-def get_value() -> ContactTypeDef:
+def get_value() -> TopicPreferenceTypeDef:
     return {
-        "EmailAddress": ...,
+        "TopicName": ...,
+        "SubscriptionStatus": ...,
     }
 ```
 
 ```python title="Definition"
-class ContactTypeDef(TypedDict):
-    EmailAddress: NotRequired[str],
-    TopicPreferences: NotRequired[List[TopicPreferenceTypeDef]],  # (1)
-    TopicDefaultPreferences: NotRequired[List[TopicPreferenceTypeDef]],  # (1)
-    UnsubscribeAll: NotRequired[bool],
-    LastUpdatedTimestamp: NotRequired[datetime],
+class TopicPreferenceTypeDef(TypedDict):
+    TopicName: str,
+    SubscriptionStatus: SubscriptionStatusType,  # (1)
 ```
 
-1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
-2. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
-## ContentTypeDef
+1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
+## DeliveryOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ContentTypeDef
+from mypy_boto3_sesv2.type_defs import DeliveryOptionsTypeDef
 
-def get_value() -> ContentTypeDef:
+def get_value() -> DeliveryOptionsTypeDef:
     return {
-        "Data": ...,
+        "TlsPolicy": ...,
     }
 ```
 
 ```python title="Definition"
-class ContentTypeDef(TypedDict):
-    Data: str,
-    Charset: NotRequired[str],
+class DeliveryOptionsTypeDef(TypedDict):
+    TlsPolicy: NotRequired[TlsPolicyType],  # (1)
+    SendingPoolName: NotRequired[str],
 ```
 
-## CreateConfigurationSetEventDestinationRequestRequestTypeDef
+1. See [:material-code-brackets: TlsPolicyType](./literals.md#tlspolicytype) 
+## ReputationOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateConfigurationSetEventDestinationRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import ReputationOptionsTypeDef
 
-def get_value() -> CreateConfigurationSetEventDestinationRequestRequestTypeDef:
+def get_value() -> ReputationOptionsTypeDef:
     return {
-        "ConfigurationSetName": ...,
-        "EventDestinationName": ...,
-        "EventDestination": ...,
+        "ReputationMetricsEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+class ReputationOptionsTypeDef(TypedDict):
+    ReputationMetricsEnabled: NotRequired[bool],
+    LastFreshStart: NotRequired[Union[datetime, str]],
 ```
 
-1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
-## CreateConfigurationSetRequestRequestTypeDef
+## SendingOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateConfigurationSetRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import SendingOptionsTypeDef
 
-def get_value() -> CreateConfigurationSetRequestRequestTypeDef:
+def get_value() -> SendingOptionsTypeDef:
     return {
-        "ConfigurationSetName": ...,
+        "SendingEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateConfigurationSetRequestRequestTypeDef(TypedDict):
-    ConfigurationSetName: str,
-    TrackingOptions: NotRequired[TrackingOptionsTypeDef],  # (1)
-    DeliveryOptions: NotRequired[DeliveryOptionsTypeDef],  # (2)
-    ReputationOptions: NotRequired[ReputationOptionsTypeDef],  # (3)
-    SendingOptions: NotRequired[SendingOptionsTypeDef],  # (4)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
-    SuppressionOptions: NotRequired[SuppressionOptionsTypeDef],  # (6)
+class SendingOptionsTypeDef(TypedDict):
+    SendingEnabled: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
-2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
-3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
-4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
-## CreateContactListRequestRequestTypeDef
+## SuppressionOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateContactListRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import SuppressionOptionsTypeDef
 
-def get_value() -> CreateContactListRequestRequestTypeDef:
+def get_value() -> SuppressionOptionsTypeDef:
     return {
-        "ContactListName": ...,
+        "SuppressedReasons": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateContactListRequestRequestTypeDef(TypedDict):
-    ContactListName: str,
-    Topics: NotRequired[Sequence[TopicTypeDef]],  # (1)
+class SuppressionOptionsTypeDef(TypedDict):
+    SuppressedReasons: NotRequired[Sequence[SuppressionListReasonType]],  # (1)
+```
+
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## TrackingOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import TrackingOptionsTypeDef
+
+def get_value() -> TrackingOptionsTypeDef:
+    return {
+        "CustomRedirectDomain": ...,
+    }
+```
+
+```python title="Definition"
+class TrackingOptionsTypeDef(TypedDict):
+    CustomRedirectDomain: str,
+```
+
+## TopicTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import TopicTypeDef
+
+def get_value() -> TopicTypeDef:
+    return {
+        "TopicName": ...,
+        "DisplayName": ...,
+        "DefaultSubscriptionStatus": ...,
+    }
+```
+
+```python title="Definition"
+class TopicTypeDef(TypedDict):
+    TopicName: str,
+    DisplayName: str,
+    DefaultSubscriptionStatus: SubscriptionStatusType,  # (1)
     Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateContactRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateContactRequestRequestTypeDef
-
-def get_value() -> CreateContactRequestRequestTypeDef:
-    return {
-        "ContactListName": ...,
-        "EmailAddress": ...,
-    }
-```
-
-```python title="Definition"
-class CreateContactRequestRequestTypeDef(TypedDict):
-    ContactListName: str,
-    EmailAddress: str,
-    TopicPreferences: NotRequired[Sequence[TopicPreferenceTypeDef]],  # (1)
-    UnsubscribeAll: NotRequired[bool],
-    AttributesData: NotRequired[str],
-```
-
-1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
 ## CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -356,68 +359,30 @@ class CreateCustomVerificationEmailTemplateRequestRequestTypeDef(TypedDict):
     FailureRedirectionURL: str,
 ```
 
-## CreateDedicatedIpPoolRequestRequestTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateDedicatedIpPoolRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateDedicatedIpPoolRequestRequestTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "PoolName": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDedicatedIpPoolRequestRequestTypeDef(TypedDict):
-    PoolName: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDeliverabilityTestReportRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportRequestRequestTypeDef
-
-def get_value() -> CreateDeliverabilityTestReportRequestRequestTypeDef:
-    return {
-        "FromEmailAddress": ...,
-        "Content": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDeliverabilityTestReportRequestRequestTypeDef(TypedDict):
-    FromEmailAddress: str,
-    Content: EmailContentTypeDef,  # (1)
-    ReportName: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDeliverabilityTestReportResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportResponseTypeDef
-
-def get_value() -> CreateDeliverabilityTestReportResponseTypeDef:
-    return {
-        "ReportId": ...,
-        "DeliverabilityTestStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDeliverabilityTestReportResponseTypeDef(TypedDict):
-    ReportId: str,
-    DeliverabilityTestStatus: DeliverabilityTestStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEmailIdentityPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -438,110 +403,88 @@ class CreateEmailIdentityPolicyRequestRequestTypeDef(TypedDict):
     Policy: str,
 ```
 
-## CreateEmailIdentityRequestRequestTypeDef
+## DkimSigningAttributesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateEmailIdentityRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import DkimSigningAttributesTypeDef
 
-def get_value() -> CreateEmailIdentityRequestRequestTypeDef:
+def get_value() -> DkimSigningAttributesTypeDef:
     return {
-        "EmailIdentity": ...,
+        "DomainSigningSelector": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateEmailIdentityRequestRequestTypeDef(TypedDict):
-    EmailIdentity: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    DkimSigningAttributes: NotRequired[DkimSigningAttributesTypeDef],  # (2)
-    ConfigurationSetName: NotRequired[str],
+class DkimSigningAttributesTypeDef(TypedDict):
+    DomainSigningSelector: NotRequired[str],
+    DomainSigningPrivateKey: NotRequired[str],
+    NextSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (1)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
-## CreateEmailIdentityResponseTypeDef
+1. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
+## DkimAttributesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateEmailIdentityResponseTypeDef
+from mypy_boto3_sesv2.type_defs import DkimAttributesTypeDef
 
-def get_value() -> CreateEmailIdentityResponseTypeDef:
+def get_value() -> DkimAttributesTypeDef:
     return {
-        "IdentityType": ...,
-        "VerifiedForSendingStatus": ...,
-        "DkimAttributes": ...,
-        "ResponseMetadata": ...,
+        "SigningEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateEmailIdentityResponseTypeDef(TypedDict):
-    IdentityType: IdentityTypeType,  # (1)
-    VerifiedForSendingStatus: bool,
-    DkimAttributes: DkimAttributesTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class DkimAttributesTypeDef(TypedDict):
+    SigningEnabled: NotRequired[bool],
+    Status: NotRequired[DkimStatusType],  # (1)
+    Tokens: NotRequired[List[str]],
+    SigningAttributesOrigin: NotRequired[DkimSigningAttributesOriginType],  # (2)
+    NextSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (3)
+    CurrentSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (3)
+    LastKeyGenerationTimestamp: NotRequired[datetime],
 ```
 
-1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
-2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateEmailTemplateRequestRequestTypeDef
+1. See [:material-code-brackets: DkimStatusType](./literals.md#dkimstatustype) 
+2. See [:material-code-brackets: DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype) 
+3. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
+4. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
+## EmailTemplateContentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateEmailTemplateRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import EmailTemplateContentTypeDef
 
-def get_value() -> CreateEmailTemplateRequestRequestTypeDef:
+def get_value() -> EmailTemplateContentTypeDef:
     return {
-        "TemplateName": ...,
-        "TemplateContent": ...,
+        "Subject": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateEmailTemplateRequestRequestTypeDef(TypedDict):
-    TemplateName: str,
-    TemplateContent: EmailTemplateContentTypeDef,  # (1)
+class EmailTemplateContentTypeDef(TypedDict):
+    Subject: NotRequired[str],
+    Text: NotRequired[str],
+    Html: NotRequired[str],
 ```
 
-1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
-## CreateImportJobRequestRequestTypeDef
+## ImportDataSourceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateImportJobRequestRequestTypeDef
+from mypy_boto3_sesv2.type_defs import ImportDataSourceTypeDef
 
-def get_value() -> CreateImportJobRequestRequestTypeDef:
+def get_value() -> ImportDataSourceTypeDef:
     return {
-        "ImportDestination": ...,
-        "ImportDataSource": ...,
+        "S3Url": ...,
+        "DataFormat": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateImportJobRequestRequestTypeDef(TypedDict):
-    ImportDestination: ImportDestinationTypeDef,  # (1)
-    ImportDataSource: ImportDataSourceTypeDef,  # (2)
+class ImportDataSourceTypeDef(TypedDict):
+    S3Url: str,
+    DataFormat: DataFormatType,  # (1)
 ```
 
-1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
-2. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
-## CreateImportJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import CreateImportJobResponseTypeDef
-
-def get_value() -> CreateImportJobResponseTypeDef:
-    return {
-        "JobId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateImportJobResponseTypeDef(TypedDict):
-    JobId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
 ## CustomVerificationEmailTemplateMetadataTypeDef
 
 ```python title="Usage Example"
@@ -562,26 +505,45 @@ class CustomVerificationEmailTemplateMetadataTypeDef(TypedDict):
     FailureRedirectionURL: NotRequired[str],
 ```
 
-## DailyVolumeTypeDef
+## DomainIspPlacementTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DailyVolumeTypeDef
+from mypy_boto3_sesv2.type_defs import DomainIspPlacementTypeDef
 
-def get_value() -> DailyVolumeTypeDef:
+def get_value() -> DomainIspPlacementTypeDef:
     return {
-        "StartDate": ...,
+        "IspName": ...,
     }
 ```
 
 ```python title="Definition"
-class DailyVolumeTypeDef(TypedDict):
-    StartDate: NotRequired[datetime],
-    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
-    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
+class DomainIspPlacementTypeDef(TypedDict):
+    IspName: NotRequired[str],
+    InboxRawCount: NotRequired[int],
+    SpamRawCount: NotRequired[int],
+    InboxPercentage: NotRequired[float],
+    SpamPercentage: NotRequired[float],
 ```
 
-1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
-2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
+## VolumeStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import VolumeStatisticsTypeDef
+
+def get_value() -> VolumeStatisticsTypeDef:
+    return {
+        "InboxRawCount": ...,
+    }
+```
+
+```python title="Definition"
+class VolumeStatisticsTypeDef(TypedDict):
+    InboxRawCount: NotRequired[int],
+    SpamRawCount: NotRequired[int],
+    ProjectedInbox: NotRequired[int],
+    ProjectedSpam: NotRequired[int],
+```
+
 ## DedicatedIpTypeDef
 
 ```python title="Usage Example"
@@ -792,87 +754,6 @@ class DeliverabilityTestReportTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype) 
-## DeliveryOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DeliveryOptionsTypeDef
-
-def get_value() -> DeliveryOptionsTypeDef:
-    return {
-        "TlsPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class DeliveryOptionsTypeDef(TypedDict):
-    TlsPolicy: NotRequired[TlsPolicyType],  # (1)
-    SendingPoolName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: TlsPolicyType](./literals.md#tlspolicytype) 
-## DestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DestinationTypeDef
-
-def get_value() -> DestinationTypeDef:
-    return {
-        "ToAddresses": ...,
-    }
-```
-
-```python title="Definition"
-class DestinationTypeDef(TypedDict):
-    ToAddresses: NotRequired[Sequence[str]],
-    CcAddresses: NotRequired[Sequence[str]],
-    BccAddresses: NotRequired[Sequence[str]],
-```
-
-## DkimAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DkimAttributesTypeDef
-
-def get_value() -> DkimAttributesTypeDef:
-    return {
-        "SigningEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class DkimAttributesTypeDef(TypedDict):
-    SigningEnabled: NotRequired[bool],
-    Status: NotRequired[DkimStatusType],  # (1)
-    Tokens: NotRequired[List[str]],
-    SigningAttributesOrigin: NotRequired[DkimSigningAttributesOriginType],  # (2)
-    NextSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (3)
-    CurrentSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (3)
-    LastKeyGenerationTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: DkimStatusType](./literals.md#dkimstatustype) 
-2. See [:material-code-brackets: DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype) 
-3. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
-4. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
-## DkimSigningAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DkimSigningAttributesTypeDef
-
-def get_value() -> DkimSigningAttributesTypeDef:
-    return {
-        "DomainSigningSelector": ...,
-    }
-```
-
-```python title="Definition"
-class DkimSigningAttributesTypeDef(TypedDict):
-    DomainSigningSelector: NotRequired[str],
-    DomainSigningPrivateKey: NotRequired[str],
-    NextSigningKeyLength: NotRequired[DkimSigningKeyLengthType],  # (1)
-```
-
-1. See [:material-code-brackets: DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype) 
 ## DomainDeliverabilityCampaignTypeDef
 
 ```python title="Usage Example"
@@ -902,82 +783,37 @@ class DomainDeliverabilityCampaignTypeDef(TypedDict):
     Esps: NotRequired[List[str]],
 ```
 
-## DomainDeliverabilityTrackingOptionTypeDef
+## InboxPlacementTrackingOptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DomainDeliverabilityTrackingOptionTypeDef
+from mypy_boto3_sesv2.type_defs import InboxPlacementTrackingOptionTypeDef
 
-def get_value() -> DomainDeliverabilityTrackingOptionTypeDef:
+def get_value() -> InboxPlacementTrackingOptionTypeDef:
     return {
-        "Domain": ...,
+        "Global": ...,
     }
 ```
 
 ```python title="Definition"
-class DomainDeliverabilityTrackingOptionTypeDef(TypedDict):
-    Domain: NotRequired[str],
-    SubscriptionStartDate: NotRequired[datetime],
-    InboxPlacementTrackingOption: NotRequired[InboxPlacementTrackingOptionTypeDef],  # (1)
+class InboxPlacementTrackingOptionTypeDef(TypedDict):
+    Global: NotRequired[bool],
+    TrackedIsps: NotRequired[List[str]],
 ```
 
-1. See [:material-code-braces: InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef) 
-## DomainIspPlacementTypeDef
+## RawMessageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import DomainIspPlacementTypeDef
+from mypy_boto3_sesv2.type_defs import RawMessageTypeDef
 
-def get_value() -> DomainIspPlacementTypeDef:
+def get_value() -> RawMessageTypeDef:
     return {
-        "IspName": ...,
+        "Data": ...,
     }
 ```
 
 ```python title="Definition"
-class DomainIspPlacementTypeDef(TypedDict):
-    IspName: NotRequired[str],
-    InboxRawCount: NotRequired[int],
-    SpamRawCount: NotRequired[int],
-    InboxPercentage: NotRequired[float],
-    SpamPercentage: NotRequired[float],
-```
-
-## EmailContentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import EmailContentTypeDef
-
-def get_value() -> EmailContentTypeDef:
-    return {
-        "Simple": ...,
-    }
-```
-
-```python title="Definition"
-class EmailContentTypeDef(TypedDict):
-    Simple: NotRequired[MessageTypeDef],  # (1)
-    Raw: NotRequired[RawMessageTypeDef],  # (2)
-    Template: NotRequired[TemplateTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
-2. See [:material-code-braces: RawMessageTypeDef](./type_defs.md#rawmessagetypedef) 
-3. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
-## EmailTemplateContentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import EmailTemplateContentTypeDef
-
-def get_value() -> EmailTemplateContentTypeDef:
-    return {
-        "Subject": ...,
-    }
-```
-
-```python title="Definition"
-class EmailTemplateContentTypeDef(TypedDict):
-    Subject: NotRequired[str],
-    Text: NotRequired[str],
-    Html: NotRequired[str],
+class RawMessageTypeDef(TypedDict):
+    Data: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## EmailTemplateMetadataTypeDef
@@ -997,60 +833,56 @@ class EmailTemplateMetadataTypeDef(TypedDict):
     CreatedTimestamp: NotRequired[datetime],
 ```
 
-## EventDestinationDefinitionTypeDef
+## KinesisFirehoseDestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import EventDestinationDefinitionTypeDef
+from mypy_boto3_sesv2.type_defs import KinesisFirehoseDestinationTypeDef
 
-def get_value() -> EventDestinationDefinitionTypeDef:
+def get_value() -> KinesisFirehoseDestinationTypeDef:
     return {
-        "Enabled": ...,
+        "IamRoleArn": ...,
+        "DeliveryStreamArn": ...,
     }
 ```
 
 ```python title="Definition"
-class EventDestinationDefinitionTypeDef(TypedDict):
-    Enabled: NotRequired[bool],
-    MatchingEventTypes: NotRequired[Sequence[EventTypeType]],  # (1)
-    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
-    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
-    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
-    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+class KinesisFirehoseDestinationTypeDef(TypedDict):
+    IamRoleArn: str,
+    DeliveryStreamArn: str,
 ```
 
-1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
-2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
-3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
-4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
-5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
-## EventDestinationTypeDef
+## PinpointDestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import EventDestinationTypeDef
+from mypy_boto3_sesv2.type_defs import PinpointDestinationTypeDef
 
-def get_value() -> EventDestinationTypeDef:
+def get_value() -> PinpointDestinationTypeDef:
     return {
-        "Name": ...,
-        "MatchingEventTypes": ...,
+        "ApplicationArn": ...,
     }
 ```
 
 ```python title="Definition"
-class EventDestinationTypeDef(TypedDict):
-    Name: str,
-    MatchingEventTypes: List[EventTypeType],  # (1)
-    Enabled: NotRequired[bool],
-    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
-    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
-    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
-    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+class PinpointDestinationTypeDef(TypedDict):
+    ApplicationArn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
-2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
-3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
-4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
-5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
+## SnsDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SnsDestinationTypeDef
+
+def get_value() -> SnsDestinationTypeDef:
+    return {
+        "TopicArn": ...,
+    }
+```
+
+```python title="Definition"
+class SnsDestinationTypeDef(TypedDict):
+    TopicArn: str,
+```
+
 ## FailureInfoTypeDef
 
 ```python title="Usage Example"
@@ -1068,40 +900,41 @@ class FailureInfoTypeDef(TypedDict):
     ErrorMessage: NotRequired[str],
 ```
 
-## GetAccountResponseTypeDef
+## SendQuotaTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetAccountResponseTypeDef
+from mypy_boto3_sesv2.type_defs import SendQuotaTypeDef
 
-def get_value() -> GetAccountResponseTypeDef:
+def get_value() -> SendQuotaTypeDef:
     return {
-        "DedicatedIpAutoWarmupEnabled": ...,
-        "EnforcementStatus": ...,
-        "ProductionAccessEnabled": ...,
-        "SendQuota": ...,
-        "SendingEnabled": ...,
-        "SuppressionAttributes": ...,
-        "Details": ...,
-        "ResponseMetadata": ...,
+        "Max24HourSend": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAccountResponseTypeDef(TypedDict):
-    DedicatedIpAutoWarmupEnabled: bool,
-    EnforcementStatus: str,
-    ProductionAccessEnabled: bool,
-    SendQuota: SendQuotaTypeDef,  # (1)
-    SendingEnabled: bool,
-    SuppressionAttributes: SuppressionAttributesTypeDef,  # (2)
-    Details: AccountDetailsTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+class SendQuotaTypeDef(TypedDict):
+    Max24HourSend: NotRequired[float],
+    MaxSendRate: NotRequired[float],
+    SentLast24Hours: NotRequired[float],
 ```
 
-1. See [:material-code-braces: SendQuotaTypeDef](./type_defs.md#sendquotatypedef) 
-2. See [:material-code-braces: SuppressionAttributesTypeDef](./type_defs.md#suppressionattributestypedef) 
-3. See [:material-code-braces: AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SuppressionAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SuppressionAttributesTypeDef
+
+def get_value() -> SuppressionAttributesTypeDef:
+    return {
+        "SuppressedReasons": ...,
+    }
+```
+
+```python title="Definition"
+class SuppressionAttributesTypeDef(TypedDict):
+    SuppressedReasons: NotRequired[List[SuppressionListReasonType]],  # (1)
+```
+
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
 ## GetBlacklistReportsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1118,26 +951,6 @@ class GetBlacklistReportsRequestRequestTypeDef(TypedDict):
     BlacklistItemNames: Sequence[str],
 ```
 
-## GetBlacklistReportsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetBlacklistReportsResponseTypeDef
-
-def get_value() -> GetBlacklistReportsResponseTypeDef:
-    return {
-        "BlacklistReport": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBlacklistReportsResponseTypeDef(TypedDict):
-    BlacklistReport: Dict[str, List[BlacklistEntryTypeDef]],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BlacklistEntryTypeDef](./type_defs.md#blacklistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConfigurationSetEventDestinationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1154,26 +967,6 @@ class GetConfigurationSetEventDestinationsRequestRequestTypeDef(TypedDict):
     ConfigurationSetName: str,
 ```
 
-## GetConfigurationSetEventDestinationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
-
-def get_value() -> GetConfigurationSetEventDestinationsResponseTypeDef:
-    return {
-        "EventDestinations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConfigurationSetEventDestinationsResponseTypeDef(TypedDict):
-    EventDestinations: List[EventDestinationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConfigurationSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1190,43 +983,6 @@ class GetConfigurationSetRequestRequestTypeDef(TypedDict):
     ConfigurationSetName: str,
 ```
 
-## GetConfigurationSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetConfigurationSetResponseTypeDef
-
-def get_value() -> GetConfigurationSetResponseTypeDef:
-    return {
-        "ConfigurationSetName": ...,
-        "TrackingOptions": ...,
-        "DeliveryOptions": ...,
-        "ReputationOptions": ...,
-        "SendingOptions": ...,
-        "Tags": ...,
-        "SuppressionOptions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConfigurationSetResponseTypeDef(TypedDict):
-    ConfigurationSetName: str,
-    TrackingOptions: TrackingOptionsTypeDef,  # (1)
-    DeliveryOptions: DeliveryOptionsTypeDef,  # (2)
-    ReputationOptions: ReputationOptionsTypeDef,  # (3)
-    SendingOptions: SendingOptionsTypeDef,  # (4)
-    Tags: List[TagTypeDef],  # (5)
-    SuppressionOptions: SuppressionOptionsTypeDef,  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
-```
-
-1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
-2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
-3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
-4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContactListRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1243,37 +999,6 @@ class GetContactListRequestRequestTypeDef(TypedDict):
     ContactListName: str,
 ```
 
-## GetContactListResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetContactListResponseTypeDef
-
-def get_value() -> GetContactListResponseTypeDef:
-    return {
-        "ContactListName": ...,
-        "Topics": ...,
-        "Description": ...,
-        "CreatedTimestamp": ...,
-        "LastUpdatedTimestamp": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetContactListResponseTypeDef(TypedDict):
-    ContactListName: str,
-    Topics: List[TopicTypeDef],  # (1)
-    Description: str,
-    CreatedTimestamp: datetime,
-    LastUpdatedTimestamp: datetime,
-    Tags: List[TagTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1292,41 +1017,6 @@ class GetContactRequestRequestTypeDef(TypedDict):
     EmailAddress: str,
 ```
 
-## GetContactResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetContactResponseTypeDef
-
-def get_value() -> GetContactResponseTypeDef:
-    return {
-        "ContactListName": ...,
-        "EmailAddress": ...,
-        "TopicPreferences": ...,
-        "TopicDefaultPreferences": ...,
-        "UnsubscribeAll": ...,
-        "AttributesData": ...,
-        "CreatedTimestamp": ...,
-        "LastUpdatedTimestamp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetContactResponseTypeDef(TypedDict):
-    ContactListName: str,
-    EmailAddress: str,
-    TopicPreferences: List[TopicPreferenceTypeDef],  # (1)
-    TopicDefaultPreferences: List[TopicPreferenceTypeDef],  # (1)
-    UnsubscribeAll: bool,
-    AttributesData: str,
-    CreatedTimestamp: datetime,
-    LastUpdatedTimestamp: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
-2. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1343,35 +1033,6 @@ class GetCustomVerificationEmailTemplateRequestRequestTypeDef(TypedDict):
     TemplateName: str,
 ```
 
-## GetCustomVerificationEmailTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetCustomVerificationEmailTemplateResponseTypeDef
-
-def get_value() -> GetCustomVerificationEmailTemplateResponseTypeDef:
-    return {
-        "TemplateName": ...,
-        "FromEmailAddress": ...,
-        "TemplateSubject": ...,
-        "TemplateContent": ...,
-        "SuccessRedirectionURL": ...,
-        "FailureRedirectionURL": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCustomVerificationEmailTemplateResponseTypeDef(TypedDict):
-    TemplateName: str,
-    FromEmailAddress: str,
-    TemplateSubject: str,
-    TemplateContent: str,
-    SuccessRedirectionURL: str,
-    FailureRedirectionURL: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDedicatedIpRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1388,26 +1049,6 @@ class GetDedicatedIpRequestRequestTypeDef(TypedDict):
     Ip: str,
 ```
 
-## GetDedicatedIpResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDedicatedIpResponseTypeDef
-
-def get_value() -> GetDedicatedIpResponseTypeDef:
-    return {
-        "DedicatedIp": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDedicatedIpResponseTypeDef(TypedDict):
-    DedicatedIp: DedicatedIpTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDedicatedIpsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1426,58 +1067,6 @@ class GetDedicatedIpsRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## GetDedicatedIpsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDedicatedIpsResponseTypeDef
-
-def get_value() -> GetDedicatedIpsResponseTypeDef:
-    return {
-        "DedicatedIps": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDedicatedIpsResponseTypeDef(TypedDict):
-    DedicatedIps: List[DedicatedIpTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDeliverabilityDashboardOptionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDeliverabilityDashboardOptionsResponseTypeDef
-
-def get_value() -> GetDeliverabilityDashboardOptionsResponseTypeDef:
-    return {
-        "DashboardEnabled": ...,
-        "SubscriptionExpiryDate": ...,
-        "AccountStatus": ...,
-        "ActiveSubscribedDomains": ...,
-        "PendingExpirationSubscribedDomains": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDeliverabilityDashboardOptionsResponseTypeDef(TypedDict):
-    DashboardEnabled: bool,
-    SubscriptionExpiryDate: datetime,
-    AccountStatus: DeliverabilityDashboardAccountStatusType,  # (1)
-    ActiveSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
-    PendingExpirationSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype) 
-2. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
-3. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeliverabilityTestReportRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1494,37 +1083,26 @@ class GetDeliverabilityTestReportRequestRequestTypeDef(TypedDict):
     ReportId: str,
 ```
 
-## GetDeliverabilityTestReportResponseTypeDef
+## PlacementStatisticsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDeliverabilityTestReportResponseTypeDef
+from mypy_boto3_sesv2.type_defs import PlacementStatisticsTypeDef
 
-def get_value() -> GetDeliverabilityTestReportResponseTypeDef:
+def get_value() -> PlacementStatisticsTypeDef:
     return {
-        "DeliverabilityTestReport": ...,
-        "OverallPlacement": ...,
-        "IspPlacements": ...,
-        "Message": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
+        "InboxPercentage": ...,
     }
 ```
 
 ```python title="Definition"
-class GetDeliverabilityTestReportResponseTypeDef(TypedDict):
-    DeliverabilityTestReport: DeliverabilityTestReportTypeDef,  # (1)
-    OverallPlacement: PlacementStatisticsTypeDef,  # (2)
-    IspPlacements: List[IspPlacementTypeDef],  # (3)
-    Message: str,
-    Tags: List[TagTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class PlacementStatisticsTypeDef(TypedDict):
+    InboxPercentage: NotRequired[float],
+    SpamPercentage: NotRequired[float],
+    MissingPercentage: NotRequired[float],
+    SpfPercentage: NotRequired[float],
+    DkimPercentage: NotRequired[float],
 ```
 
-1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
-2. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
-3. See [:material-code-braces: IspPlacementTypeDef](./type_defs.md#ispplacementtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainDeliverabilityCampaignRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1541,26 +1119,6 @@ class GetDomainDeliverabilityCampaignRequestRequestTypeDef(TypedDict):
     CampaignId: str,
 ```
 
-## GetDomainDeliverabilityCampaignResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDomainDeliverabilityCampaignResponseTypeDef
-
-def get_value() -> GetDomainDeliverabilityCampaignResponseTypeDef:
-    return {
-        "DomainDeliverabilityCampaign": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDomainDeliverabilityCampaignResponseTypeDef(TypedDict):
-    DomainDeliverabilityCampaign: DomainDeliverabilityCampaignTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainStatisticsReportRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1581,29 +1139,6 @@ class GetDomainStatisticsReportRequestRequestTypeDef(TypedDict):
     EndDate: Union[datetime, str],
 ```
 
-## GetDomainStatisticsReportResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetDomainStatisticsReportResponseTypeDef
-
-def get_value() -> GetDomainStatisticsReportResponseTypeDef:
-    return {
-        "OverallVolume": ...,
-        "DailyVolumes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDomainStatisticsReportResponseTypeDef(TypedDict):
-    OverallVolume: OverallVolumeTypeDef,  # (1)
-    DailyVolumes: List[DailyVolumeTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: OverallVolumeTypeDef](./type_defs.md#overallvolumetypedef) 
-2. See [:material-code-braces: DailyVolumeTypeDef](./type_defs.md#dailyvolumetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEmailIdentityPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1620,25 +1155,6 @@ class GetEmailIdentityPoliciesRequestRequestTypeDef(TypedDict):
     EmailIdentity: str,
 ```
 
-## GetEmailIdentityPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetEmailIdentityPoliciesResponseTypeDef
-
-def get_value() -> GetEmailIdentityPoliciesResponseTypeDef:
-    return {
-        "Policies": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEmailIdentityPoliciesResponseTypeDef(TypedDict):
-    Policies: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEmailIdentityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1655,43 +1171,28 @@ class GetEmailIdentityRequestRequestTypeDef(TypedDict):
     EmailIdentity: str,
 ```
 
-## GetEmailIdentityResponseTypeDef
+## MailFromAttributesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetEmailIdentityResponseTypeDef
+from mypy_boto3_sesv2.type_defs import MailFromAttributesTypeDef
 
-def get_value() -> GetEmailIdentityResponseTypeDef:
+def get_value() -> MailFromAttributesTypeDef:
     return {
-        "IdentityType": ...,
-        "FeedbackForwardingStatus": ...,
-        "VerifiedForSendingStatus": ...,
-        "DkimAttributes": ...,
-        "MailFromAttributes": ...,
-        "Policies": ...,
-        "Tags": ...,
-        "ConfigurationSetName": ...,
-        "ResponseMetadata": ...,
+        "MailFromDomain": ...,
+        "MailFromDomainStatus": ...,
+        "BehaviorOnMxFailure": ...,
     }
 ```
 
 ```python title="Definition"
-class GetEmailIdentityResponseTypeDef(TypedDict):
-    IdentityType: IdentityTypeType,  # (1)
-    FeedbackForwardingStatus: bool,
-    VerifiedForSendingStatus: bool,
-    DkimAttributes: DkimAttributesTypeDef,  # (2)
-    MailFromAttributes: MailFromAttributesTypeDef,  # (3)
-    Policies: Dict[str, str],
-    Tags: List[TagTypeDef],  # (4)
-    ConfigurationSetName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class MailFromAttributesTypeDef(TypedDict):
+    MailFromDomain: str,
+    MailFromDomainStatus: MailFromDomainStatusType,  # (1)
+    BehaviorOnMxFailure: BehaviorOnMxFailureType,  # (2)
 ```
 
-1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
-2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
-3. See [:material-code-braces: MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: MailFromDomainStatusType](./literals.md#mailfromdomainstatustype) 
+2. See [:material-code-brackets: BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype) 
 ## GetEmailTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1708,28 +1209,6 @@ class GetEmailTemplateRequestRequestTypeDef(TypedDict):
     TemplateName: str,
 ```
 
-## GetEmailTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetEmailTemplateResponseTypeDef
-
-def get_value() -> GetEmailTemplateResponseTypeDef:
-    return {
-        "TemplateName": ...,
-        "TemplateContent": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEmailTemplateResponseTypeDef(TypedDict):
-    TemplateName: str,
-    TemplateContent: EmailTemplateContentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImportJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1746,45 +1225,6 @@ class GetImportJobRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
-## GetImportJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetImportJobResponseTypeDef
-
-def get_value() -> GetImportJobResponseTypeDef:
-    return {
-        "JobId": ...,
-        "ImportDestination": ...,
-        "ImportDataSource": ...,
-        "FailureInfo": ...,
-        "JobStatus": ...,
-        "CreatedTimestamp": ...,
-        "CompletedTimestamp": ...,
-        "ProcessedRecordsCount": ...,
-        "FailedRecordsCount": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetImportJobResponseTypeDef(TypedDict):
-    JobId: str,
-    ImportDestination: ImportDestinationTypeDef,  # (1)
-    ImportDataSource: ImportDataSourceTypeDef,  # (2)
-    FailureInfo: FailureInfoTypeDef,  # (3)
-    JobStatus: JobStatusType,  # (4)
-    CreatedTimestamp: datetime,
-    CompletedTimestamp: datetime,
-    ProcessedRecordsCount: int,
-    FailedRecordsCount: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
-2. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
-3. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
-4. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSuppressedDestinationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1801,26 +1241,6 @@ class GetSuppressedDestinationRequestRequestTypeDef(TypedDict):
     EmailAddress: str,
 ```
 
-## GetSuppressedDestinationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import GetSuppressedDestinationResponseTypeDef
-
-def get_value() -> GetSuppressedDestinationResponseTypeDef:
-    return {
-        "SuppressedDestination": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSuppressedDestinationResponseTypeDef(TypedDict):
-    SuppressedDestination: SuppressedDestinationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SuppressedDestinationTypeDef](./type_defs.md#suppresseddestinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityInfoTypeDef
 
 ```python title="Usage Example"
@@ -1840,118 +1260,23 @@ class IdentityInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
-## ImportDataSourceTypeDef
+## SuppressionListDestinationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ImportDataSourceTypeDef
+from mypy_boto3_sesv2.type_defs import SuppressionListDestinationTypeDef
 
-def get_value() -> ImportDataSourceTypeDef:
+def get_value() -> SuppressionListDestinationTypeDef:
     return {
-        "S3Url": ...,
-        "DataFormat": ...,
+        "SuppressionListImportAction": ...,
     }
 ```
 
 ```python title="Definition"
-class ImportDataSourceTypeDef(TypedDict):
-    S3Url: str,
-    DataFormat: DataFormatType,  # (1)
+class SuppressionListDestinationTypeDef(TypedDict):
+    SuppressionListImportAction: SuppressionListImportActionType,  # (1)
 ```
 
-1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
-## ImportDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ImportDestinationTypeDef
-
-def get_value() -> ImportDestinationTypeDef:
-    return {
-        "SuppressionListDestination": ...,
-    }
-```
-
-```python title="Definition"
-class ImportDestinationTypeDef(TypedDict):
-    SuppressionListDestination: NotRequired[SuppressionListDestinationTypeDef],  # (1)
-    ContactListDestination: NotRequired[ContactListDestinationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: SuppressionListDestinationTypeDef](./type_defs.md#suppressionlistdestinationtypedef) 
-2. See [:material-code-braces: ContactListDestinationTypeDef](./type_defs.md#contactlistdestinationtypedef) 
-## ImportJobSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ImportJobSummaryTypeDef
-
-def get_value() -> ImportJobSummaryTypeDef:
-    return {
-        "JobId": ...,
-    }
-```
-
-```python title="Definition"
-class ImportJobSummaryTypeDef(TypedDict):
-    JobId: NotRequired[str],
-    ImportDestination: NotRequired[ImportDestinationTypeDef],  # (1)
-    JobStatus: NotRequired[JobStatusType],  # (2)
-    CreatedTimestamp: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
-2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-## InboxPlacementTrackingOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import InboxPlacementTrackingOptionTypeDef
-
-def get_value() -> InboxPlacementTrackingOptionTypeDef:
-    return {
-        "Global": ...,
-    }
-```
-
-```python title="Definition"
-class InboxPlacementTrackingOptionTypeDef(TypedDict):
-    Global: NotRequired[bool],
-    TrackedIsps: NotRequired[List[str]],
-```
-
-## IspPlacementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import IspPlacementTypeDef
-
-def get_value() -> IspPlacementTypeDef:
-    return {
-        "IspName": ...,
-    }
-```
-
-```python title="Definition"
-class IspPlacementTypeDef(TypedDict):
-    IspName: NotRequired[str],
-    PlacementStatistics: NotRequired[PlacementStatisticsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
-## KinesisFirehoseDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import KinesisFirehoseDestinationTypeDef
-
-def get_value() -> KinesisFirehoseDestinationTypeDef:
-    return {
-        "IamRoleArn": ...,
-        "DeliveryStreamArn": ...,
-    }
-```
-
-```python title="Definition"
-class KinesisFirehoseDestinationTypeDef(TypedDict):
-    IamRoleArn: str,
-    DeliveryStreamArn: str,
-```
-
+1. See [:material-code-brackets: SuppressionListImportActionType](./literals.md#suppressionlistimportactiontype) 
 ## ListConfigurationSetsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1969,27 +1294,6 @@ class ListConfigurationSetsRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListConfigurationSetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListConfigurationSetsResponseTypeDef
-
-def get_value() -> ListConfigurationSetsResponseTypeDef:
-    return {
-        "ConfigurationSets": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationSetsResponseTypeDef(TypedDict):
-    ConfigurationSets: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListContactListsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2007,89 +1311,23 @@ class ListContactListsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListContactListsResponseTypeDef
+## TopicFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListContactListsResponseTypeDef
+from mypy_boto3_sesv2.type_defs import TopicFilterTypeDef
 
-def get_value() -> ListContactListsResponseTypeDef:
+def get_value() -> TopicFilterTypeDef:
     return {
-        "ContactLists": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "TopicName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListContactListsResponseTypeDef(TypedDict):
-    ContactLists: List[ContactListTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TopicFilterTypeDef(TypedDict):
+    TopicName: NotRequired[str],
+    UseDefaultIfPreferenceUnavailable: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ContactListTypeDef](./type_defs.md#contactlisttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListContactsFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListContactsFilterTypeDef
-
-def get_value() -> ListContactsFilterTypeDef:
-    return {
-        "FilteredStatus": ...,
-    }
-```
-
-```python title="Definition"
-class ListContactsFilterTypeDef(TypedDict):
-    FilteredStatus: NotRequired[SubscriptionStatusType],  # (1)
-    TopicFilter: NotRequired[TopicFilterTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
-2. See [:material-code-braces: TopicFilterTypeDef](./type_defs.md#topicfiltertypedef) 
-## ListContactsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListContactsRequestRequestTypeDef
-
-def get_value() -> ListContactsRequestRequestTypeDef:
-    return {
-        "ContactListName": ...,
-    }
-```
-
-```python title="Definition"
-class ListContactsRequestRequestTypeDef(TypedDict):
-    ContactListName: str,
-    Filter: NotRequired[ListContactsFilterTypeDef],  # (1)
-    PageSize: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: ListContactsFilterTypeDef](./type_defs.md#listcontactsfiltertypedef) 
-## ListContactsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListContactsResponseTypeDef
-
-def get_value() -> ListContactsResponseTypeDef:
-    return {
-        "Contacts": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListContactsResponseTypeDef(TypedDict):
-    Contacts: List[ContactTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCustomVerificationEmailTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2107,28 +1345,6 @@ class ListCustomVerificationEmailTemplatesRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListCustomVerificationEmailTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListCustomVerificationEmailTemplatesResponseTypeDef
-
-def get_value() -> ListCustomVerificationEmailTemplatesResponseTypeDef:
-    return {
-        "CustomVerificationEmailTemplates": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCustomVerificationEmailTemplatesResponseTypeDef(TypedDict):
-    CustomVerificationEmailTemplates: List[CustomVerificationEmailTemplateMetadataTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CustomVerificationEmailTemplateMetadataTypeDef](./type_defs.md#customverificationemailtemplatemetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDedicatedIpPoolsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2146,27 +1362,6 @@ class ListDedicatedIpPoolsRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListDedicatedIpPoolsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListDedicatedIpPoolsResponseTypeDef
-
-def get_value() -> ListDedicatedIpPoolsResponseTypeDef:
-    return {
-        "DedicatedIpPools": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDedicatedIpPoolsResponseTypeDef(TypedDict):
-    DedicatedIpPools: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDeliverabilityTestReportsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2184,28 +1379,6 @@ class ListDeliverabilityTestReportsRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListDeliverabilityTestReportsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListDeliverabilityTestReportsResponseTypeDef
-
-def get_value() -> ListDeliverabilityTestReportsResponseTypeDef:
-    return {
-        "DeliverabilityTestReports": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDeliverabilityTestReportsResponseTypeDef(TypedDict):
-    DeliverabilityTestReports: List[DeliverabilityTestReportTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDomainDeliverabilityCampaignsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2228,28 +1401,6 @@ class ListDomainDeliverabilityCampaignsRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListDomainDeliverabilityCampaignsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListDomainDeliverabilityCampaignsResponseTypeDef
-
-def get_value() -> ListDomainDeliverabilityCampaignsResponseTypeDef:
-    return {
-        "DomainDeliverabilityCampaigns": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainDeliverabilityCampaignsResponseTypeDef(TypedDict):
-    DomainDeliverabilityCampaigns: List[DomainDeliverabilityCampaignTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEmailIdentitiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2267,28 +1418,6 @@ class ListEmailIdentitiesRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListEmailIdentitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListEmailIdentitiesResponseTypeDef
-
-def get_value() -> ListEmailIdentitiesResponseTypeDef:
-    return {
-        "EmailIdentities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEmailIdentitiesResponseTypeDef(TypedDict):
-    EmailIdentities: List[IdentityInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IdentityInfoTypeDef](./type_defs.md#identityinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEmailTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2306,28 +1435,6 @@ class ListEmailTemplatesRequestRequestTypeDef(TypedDict):
     PageSize: NotRequired[int],
 ```
 
-## ListEmailTemplatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListEmailTemplatesResponseTypeDef
-
-def get_value() -> ListEmailTemplatesResponseTypeDef:
-    return {
-        "TemplatesMetadata": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEmailTemplatesResponseTypeDef(TypedDict):
-    TemplatesMetadata: List[EmailTemplateMetadataTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EmailTemplateMetadataTypeDef](./type_defs.md#emailtemplatemetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListImportJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2347,28 +1454,6 @@ class ListImportJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ImportDestinationTypeType](./literals.md#importdestinationtypetype) 
-## ListImportJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListImportJobsResponseTypeDef
-
-def get_value() -> ListImportJobsResponseTypeDef:
-    return {
-        "ImportJobs": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListImportJobsResponseTypeDef(TypedDict):
-    ImportJobs: List[ImportJobSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImportJobSummaryTypeDef](./type_defs.md#importjobsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListManagementOptionsTypeDef
 
 ```python title="Usage Example"
@@ -2407,28 +1492,27 @@ class ListSuppressedDestinationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-## ListSuppressedDestinationsResponseTypeDef
+## SuppressedDestinationSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListSuppressedDestinationsResponseTypeDef
+from mypy_boto3_sesv2.type_defs import SuppressedDestinationSummaryTypeDef
 
-def get_value() -> ListSuppressedDestinationsResponseTypeDef:
+def get_value() -> SuppressedDestinationSummaryTypeDef:
     return {
-        "SuppressedDestinationSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "EmailAddress": ...,
+        "Reason": ...,
+        "LastUpdateTime": ...,
     }
 ```
 
 ```python title="Definition"
-class ListSuppressedDestinationsResponseTypeDef(TypedDict):
-    SuppressedDestinationSummaries: List[SuppressedDestinationSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SuppressedDestinationSummaryTypeDef(TypedDict):
+    EmailAddress: str,
+    Reason: SuppressionListReasonType,  # (1)
+    LastUpdateTime: datetime,
 ```
 
-1. See [:material-code-braces: SuppressedDestinationSummaryTypeDef](./type_defs.md#suppresseddestinationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2443,142 +1527,6 @@ def get_value() -> ListTagsForResourceRequestRequestTypeDef:
 ```python title="Definition"
 class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MailFromAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import MailFromAttributesTypeDef
-
-def get_value() -> MailFromAttributesTypeDef:
-    return {
-        "MailFromDomain": ...,
-        "MailFromDomainStatus": ...,
-        "BehaviorOnMxFailure": ...,
-    }
-```
-
-```python title="Definition"
-class MailFromAttributesTypeDef(TypedDict):
-    MailFromDomain: str,
-    MailFromDomainStatus: MailFromDomainStatusType,  # (1)
-    BehaviorOnMxFailure: BehaviorOnMxFailureType,  # (2)
-```
-
-1. See [:material-code-brackets: MailFromDomainStatusType](./literals.md#mailfromdomainstatustype) 
-2. See [:material-code-brackets: BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype) 
-## MessageTagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import MessageTagTypeDef
-
-def get_value() -> MessageTagTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class MessageTagTypeDef(TypedDict):
-    Name: str,
-    Value: str,
-```
-
-## MessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import MessageTypeDef
-
-def get_value() -> MessageTypeDef:
-    return {
-        "Subject": ...,
-        "Body": ...,
-    }
-```
-
-```python title="Definition"
-class MessageTypeDef(TypedDict):
-    Subject: ContentTypeDef,  # (1)
-    Body: BodyTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
-2. See [:material-code-braces: BodyTypeDef](./type_defs.md#bodytypedef) 
-## OverallVolumeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import OverallVolumeTypeDef
-
-def get_value() -> OverallVolumeTypeDef:
-    return {
-        "VolumeStatistics": ...,
-    }
-```
-
-```python title="Definition"
-class OverallVolumeTypeDef(TypedDict):
-    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
-    ReadRatePercent: NotRequired[float],
-    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
-2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
-## PinpointDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import PinpointDestinationTypeDef
-
-def get_value() -> PinpointDestinationTypeDef:
-    return {
-        "ApplicationArn": ...,
-    }
-```
-
-```python title="Definition"
-class PinpointDestinationTypeDef(TypedDict):
-    ApplicationArn: NotRequired[str],
-```
-
-## PlacementStatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import PlacementStatisticsTypeDef
-
-def get_value() -> PlacementStatisticsTypeDef:
-    return {
-        "InboxPercentage": ...,
-    }
-```
-
-```python title="Definition"
-class PlacementStatisticsTypeDef(TypedDict):
-    InboxPercentage: NotRequired[float],
-    SpamPercentage: NotRequired[float],
-    MissingPercentage: NotRequired[float],
-    SpfPercentage: NotRequired[float],
-    DkimPercentage: NotRequired[float],
 ```
 
 ## PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef
@@ -2779,24 +1727,6 @@ class PutDedicatedIpWarmupAttributesRequestRequestTypeDef(TypedDict):
     WarmupPercentage: int,
 ```
 
-## PutDeliverabilityDashboardOptionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import PutDeliverabilityDashboardOptionRequestRequestTypeDef
-
-def get_value() -> PutDeliverabilityDashboardOptionRequestRequestTypeDef:
-    return {
-        "DashboardEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class PutDeliverabilityDashboardOptionRequestRequestTypeDef(TypedDict):
-    DashboardEnabled: bool,
-    SubscribedDomains: NotRequired[Sequence[DomainDeliverabilityTrackingOptionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
 ## PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2831,49 +1761,6 @@ class PutEmailIdentityDkimAttributesRequestRequestTypeDef(TypedDict):
     SigningEnabled: NotRequired[bool],
 ```
 
-## PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef
-
-def get_value() -> PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef:
-    return {
-        "EmailIdentity": ...,
-        "SigningAttributesOrigin": ...,
-    }
-```
-
-```python title="Definition"
-class PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef(TypedDict):
-    EmailIdentity: str,
-    SigningAttributesOrigin: DkimSigningAttributesOriginType,  # (1)
-    SigningAttributes: NotRequired[DkimSigningAttributesTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype) 
-2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
-## PutEmailIdentityDkimSigningAttributesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import PutEmailIdentityDkimSigningAttributesResponseTypeDef
-
-def get_value() -> PutEmailIdentityDkimSigningAttributesResponseTypeDef:
-    return {
-        "DkimStatus": ...,
-        "DkimTokens": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutEmailIdentityDkimSigningAttributesResponseTypeDef(TypedDict):
-    DkimStatus: DkimStatusType,  # (1)
-    DkimTokens: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DkimStatusType](./literals.md#dkimstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutEmailIdentityFeedbackAttributesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2929,39 +1816,6 @@ class PutSuppressedDestinationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-## RawMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import RawMessageTypeDef
-
-def get_value() -> RawMessageTypeDef:
-    return {
-        "Data": ...,
-    }
-```
-
-```python title="Definition"
-class RawMessageTypeDef(TypedDict):
-    Data: Union[str, bytes, IO[Any], StreamingBody],
-```
-
-## ReplacementEmailContentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ReplacementEmailContentTypeDef
-
-def get_value() -> ReplacementEmailContentTypeDef:
-    return {
-        "ReplacementTemplate": ...,
-    }
-```
-
-```python title="Definition"
-class ReplacementEmailContentTypeDef(TypedDict):
-    ReplacementTemplate: NotRequired[ReplacementTemplateTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ReplacementTemplateTypeDef](./type_defs.md#replacementtemplatetypedef) 
 ## ReplacementTemplateTypeDef
 
 ```python title="Usage Example"
@@ -2978,113 +1832,6 @@ class ReplacementTemplateTypeDef(TypedDict):
     ReplacementTemplateData: NotRequired[str],
 ```
 
-## ReputationOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ReputationOptionsTypeDef
-
-def get_value() -> ReputationOptionsTypeDef:
-    return {
-        "ReputationMetricsEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class ReputationOptionsTypeDef(TypedDict):
-    ReputationMetricsEnabled: NotRequired[bool],
-    LastFreshStart: NotRequired[Union[datetime, str]],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ReviewDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import ReviewDetailsTypeDef
-
-def get_value() -> ReviewDetailsTypeDef:
-    return {
-        "Status": ...,
-    }
-```
-
-```python title="Definition"
-class ReviewDetailsTypeDef(TypedDict):
-    Status: NotRequired[ReviewStatusType],  # (1)
-    CaseId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
-## SendBulkEmailRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendBulkEmailRequestRequestTypeDef
-
-def get_value() -> SendBulkEmailRequestRequestTypeDef:
-    return {
-        "DefaultContent": ...,
-        "BulkEmailEntries": ...,
-    }
-```
-
-```python title="Definition"
-class SendBulkEmailRequestRequestTypeDef(TypedDict):
-    DefaultContent: BulkEmailContentTypeDef,  # (1)
-    BulkEmailEntries: Sequence[BulkEmailEntryTypeDef],  # (2)
-    FromEmailAddress: NotRequired[str],
-    FromEmailAddressIdentityArn: NotRequired[str],
-    ReplyToAddresses: NotRequired[Sequence[str]],
-    FeedbackForwardingEmailAddress: NotRequired[str],
-    FeedbackForwardingEmailAddressIdentityArn: NotRequired[str],
-    DefaultEmailTags: NotRequired[Sequence[MessageTagTypeDef]],  # (3)
-    ConfigurationSetName: NotRequired[str],
-```
-
-1. See [:material-code-braces: BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef) 
-2. See [:material-code-braces: BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef) 
-3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
-## SendBulkEmailResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendBulkEmailResponseTypeDef
-
-def get_value() -> SendBulkEmailResponseTypeDef:
-    return {
-        "BulkEmailEntryResults": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendBulkEmailResponseTypeDef(TypedDict):
-    BulkEmailEntryResults: List[BulkEmailEntryResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BulkEmailEntryResultTypeDef](./type_defs.md#bulkemailentryresulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendCustomVerificationEmailRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3104,123 +1851,6 @@ class SendCustomVerificationEmailRequestRequestTypeDef(TypedDict):
     ConfigurationSetName: NotRequired[str],
 ```
 
-## SendCustomVerificationEmailResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendCustomVerificationEmailResponseTypeDef
-
-def get_value() -> SendCustomVerificationEmailResponseTypeDef:
-    return {
-        "MessageId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendCustomVerificationEmailResponseTypeDef(TypedDict):
-    MessageId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendEmailRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendEmailRequestRequestTypeDef
-
-def get_value() -> SendEmailRequestRequestTypeDef:
-    return {
-        "Content": ...,
-    }
-```
-
-```python title="Definition"
-class SendEmailRequestRequestTypeDef(TypedDict):
-    Content: EmailContentTypeDef,  # (1)
-    FromEmailAddress: NotRequired[str],
-    FromEmailAddressIdentityArn: NotRequired[str],
-    Destination: NotRequired[DestinationTypeDef],  # (2)
-    ReplyToAddresses: NotRequired[Sequence[str]],
-    FeedbackForwardingEmailAddress: NotRequired[str],
-    FeedbackForwardingEmailAddressIdentityArn: NotRequired[str],
-    EmailTags: NotRequired[Sequence[MessageTagTypeDef]],  # (3)
-    ConfigurationSetName: NotRequired[str],
-    ListManagementOptions: NotRequired[ListManagementOptionsTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
-2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
-4. See [:material-code-braces: ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef) 
-## SendEmailResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendEmailResponseTypeDef
-
-def get_value() -> SendEmailResponseTypeDef:
-    return {
-        "MessageId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendEmailResponseTypeDef(TypedDict):
-    MessageId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendQuotaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendQuotaTypeDef
-
-def get_value() -> SendQuotaTypeDef:
-    return {
-        "Max24HourSend": ...,
-    }
-```
-
-```python title="Definition"
-class SendQuotaTypeDef(TypedDict):
-    Max24HourSend: NotRequired[float],
-    MaxSendRate: NotRequired[float],
-    SentLast24Hours: NotRequired[float],
-```
-
-## SendingOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SendingOptionsTypeDef
-
-def get_value() -> SendingOptionsTypeDef:
-    return {
-        "SendingEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class SendingOptionsTypeDef(TypedDict):
-    SendingEnabled: NotRequired[bool],
-```
-
-## SnsDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SnsDestinationTypeDef
-
-def get_value() -> SnsDestinationTypeDef:
-    return {
-        "TopicArn": ...,
-    }
-```
-
-```python title="Definition"
-class SnsDestinationTypeDef(TypedDict):
-    TopicArn: str,
-```
-
 ## SuppressedDestinationAttributesTypeDef
 
 ```python title="Usage Example"
@@ -3236,156 +1866,6 @@ def get_value() -> SuppressedDestinationAttributesTypeDef:
 class SuppressedDestinationAttributesTypeDef(TypedDict):
     MessageId: NotRequired[str],
     FeedbackId: NotRequired[str],
-```
-
-## SuppressedDestinationSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SuppressedDestinationSummaryTypeDef
-
-def get_value() -> SuppressedDestinationSummaryTypeDef:
-    return {
-        "EmailAddress": ...,
-        "Reason": ...,
-        "LastUpdateTime": ...,
-    }
-```
-
-```python title="Definition"
-class SuppressedDestinationSummaryTypeDef(TypedDict):
-    EmailAddress: str,
-    Reason: SuppressionListReasonType,  # (1)
-    LastUpdateTime: datetime,
-```
-
-1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-## SuppressedDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SuppressedDestinationTypeDef
-
-def get_value() -> SuppressedDestinationTypeDef:
-    return {
-        "EmailAddress": ...,
-        "Reason": ...,
-        "LastUpdateTime": ...,
-    }
-```
-
-```python title="Definition"
-class SuppressedDestinationTypeDef(TypedDict):
-    EmailAddress: str,
-    Reason: SuppressionListReasonType,  # (1)
-    LastUpdateTime: datetime,
-    Attributes: NotRequired[SuppressedDestinationAttributesTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-2. See [:material-code-braces: SuppressedDestinationAttributesTypeDef](./type_defs.md#suppresseddestinationattributestypedef) 
-## SuppressionAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SuppressionAttributesTypeDef
-
-def get_value() -> SuppressionAttributesTypeDef:
-    return {
-        "SuppressedReasons": ...,
-    }
-```
-
-```python title="Definition"
-class SuppressionAttributesTypeDef(TypedDict):
-    SuppressedReasons: NotRequired[List[SuppressionListReasonType]],  # (1)
-```
-
-1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-## SuppressionListDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SuppressionListDestinationTypeDef
-
-def get_value() -> SuppressionListDestinationTypeDef:
-    return {
-        "SuppressionListImportAction": ...,
-    }
-```
-
-```python title="Definition"
-class SuppressionListDestinationTypeDef(TypedDict):
-    SuppressionListImportAction: SuppressionListImportActionType,  # (1)
-```
-
-1. See [:material-code-brackets: SuppressionListImportActionType](./literals.md#suppressionlistimportactiontype) 
-## SuppressionOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import SuppressionOptionsTypeDef
-
-def get_value() -> SuppressionOptionsTypeDef:
-    return {
-        "SuppressedReasons": ...,
-    }
-```
-
-```python title="Definition"
-class SuppressionOptionsTypeDef(TypedDict):
-    SuppressedReasons: NotRequired[Sequence[SuppressionListReasonType]],  # (1)
-```
-
-1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## TemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TemplateTypeDef
-
-def get_value() -> TemplateTypeDef:
-    return {
-        "TemplateName": ...,
-    }
-```
-
-```python title="Definition"
-class TemplateTypeDef(TypedDict):
-    TemplateName: NotRequired[str],
-    TemplateArn: NotRequired[str],
-    TemplateData: NotRequired[str],
 ```
 
 ## TestRenderEmailTemplateRequestRequestTypeDef
@@ -3406,99 +1886,6 @@ class TestRenderEmailTemplateRequestRequestTypeDef(TypedDict):
     TemplateData: str,
 ```
 
-## TestRenderEmailTemplateResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TestRenderEmailTemplateResponseTypeDef
-
-def get_value() -> TestRenderEmailTemplateResponseTypeDef:
-    return {
-        "RenderedTemplate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TestRenderEmailTemplateResponseTypeDef(TypedDict):
-    RenderedTemplate: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TopicFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TopicFilterTypeDef
-
-def get_value() -> TopicFilterTypeDef:
-    return {
-        "TopicName": ...,
-    }
-```
-
-```python title="Definition"
-class TopicFilterTypeDef(TypedDict):
-    TopicName: NotRequired[str],
-    UseDefaultIfPreferenceUnavailable: NotRequired[bool],
-```
-
-## TopicPreferenceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TopicPreferenceTypeDef
-
-def get_value() -> TopicPreferenceTypeDef:
-    return {
-        "TopicName": ...,
-        "SubscriptionStatus": ...,
-    }
-```
-
-```python title="Definition"
-class TopicPreferenceTypeDef(TypedDict):
-    TopicName: str,
-    SubscriptionStatus: SubscriptionStatusType,  # (1)
-```
-
-1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
-## TopicTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TopicTypeDef
-
-def get_value() -> TopicTypeDef:
-    return {
-        "TopicName": ...,
-        "DisplayName": ...,
-        "DefaultSubscriptionStatus": ...,
-    }
-```
-
-```python title="Definition"
-class TopicTypeDef(TypedDict):
-    TopicName: str,
-    DisplayName: str,
-    DefaultSubscriptionStatus: SubscriptionStatusType,  # (1)
-    Description: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
-## TrackingOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import TrackingOptionsTypeDef
-
-def get_value() -> TrackingOptionsTypeDef:
-    return {
-        "CustomRedirectDomain": ...,
-    }
-```
-
-```python title="Definition"
-class TrackingOptionsTypeDef(TypedDict):
-    CustomRedirectDomain: str,
-```
-
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3517,68 +1904,6 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
-## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import UpdateConfigurationSetEventDestinationRequestRequestTypeDef
-
-def get_value() -> UpdateConfigurationSetEventDestinationRequestRequestTypeDef:
-    return {
-        "ConfigurationSetName": ...,
-        "EventDestinationName": ...,
-        "EventDestination": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
-## UpdateContactListRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import UpdateContactListRequestRequestTypeDef
-
-def get_value() -> UpdateContactListRequestRequestTypeDef:
-    return {
-        "ContactListName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateContactListRequestRequestTypeDef(TypedDict):
-    ContactListName: str,
-    Topics: NotRequired[Sequence[TopicTypeDef]],  # (1)
-    Description: NotRequired[str],
-```
-
-1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
-## UpdateContactRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import UpdateContactRequestRequestTypeDef
-
-def get_value() -> UpdateContactRequestRequestTypeDef:
-    return {
-        "ContactListName": ...,
-        "EmailAddress": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateContactRequestRequestTypeDef(TypedDict):
-    ContactListName: str,
-    EmailAddress: str,
-    TopicPreferences: NotRequired[Sequence[TopicPreferenceTypeDef]],  # (1)
-    UnsubscribeAll: NotRequired[bool],
-    AttributesData: NotRequired[str],
-```
-
-1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
 ## UpdateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3625,6 +1950,757 @@ class UpdateEmailIdentityPolicyRequestRequestTypeDef(TypedDict):
     Policy: str,
 ```
 
+## AccountDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import AccountDetailsTypeDef
+
+def get_value() -> AccountDetailsTypeDef:
+    return {
+        "MailType": ...,
+    }
+```
+
+```python title="Definition"
+class AccountDetailsTypeDef(TypedDict):
+    MailType: NotRequired[MailTypeType],  # (1)
+    WebsiteURL: NotRequired[str],
+    ContactLanguage: NotRequired[ContactLanguageType],  # (2)
+    UseCaseDescription: NotRequired[str],
+    AdditionalContactEmailAddresses: NotRequired[List[str]],
+    ReviewDetails: NotRequired[ReviewDetailsTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: MailTypeType](./literals.md#mailtypetype) 
+2. See [:material-code-brackets: ContactLanguageType](./literals.md#contactlanguagetype) 
+3. See [:material-code-braces: ReviewDetailsTypeDef](./type_defs.md#reviewdetailstypedef) 
+## BodyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import BodyTypeDef
+
+def get_value() -> BodyTypeDef:
+    return {
+        "Text": ...,
+    }
+```
+
+```python title="Definition"
+class BodyTypeDef(TypedDict):
+    Text: NotRequired[ContentTypeDef],  # (1)
+    Html: NotRequired[ContentTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+2. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+## BulkEmailContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import BulkEmailContentTypeDef
+
+def get_value() -> BulkEmailContentTypeDef:
+    return {
+        "Template": ...,
+    }
+```
+
+```python title="Definition"
+class BulkEmailContentTypeDef(TypedDict):
+    Template: NotRequired[TemplateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
+## CloudWatchDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CloudWatchDestinationTypeDef
+
+def get_value() -> CloudWatchDestinationTypeDef:
+    return {
+        "DimensionConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class CloudWatchDestinationTypeDef(TypedDict):
+    DimensionConfigurations: Sequence[CloudWatchDimensionConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef) 
+## ContactTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ContactTypeDef
+
+def get_value() -> ContactTypeDef:
+    return {
+        "EmailAddress": ...,
+    }
+```
+
+```python title="Definition"
+class ContactTypeDef(TypedDict):
+    EmailAddress: NotRequired[str],
+    TopicPreferences: NotRequired[List[TopicPreferenceTypeDef]],  # (1)
+    TopicDefaultPreferences: NotRequired[List[TopicPreferenceTypeDef]],  # (1)
+    UnsubscribeAll: NotRequired[bool],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+2. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+## CreateContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateContactRequestRequestTypeDef
+
+def get_value() -> CreateContactRequestRequestTypeDef:
+    return {
+        "ContactListName": ...,
+        "EmailAddress": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContactRequestRequestTypeDef(TypedDict):
+    ContactListName: str,
+    EmailAddress: str,
+    TopicPreferences: NotRequired[Sequence[TopicPreferenceTypeDef]],  # (1)
+    UnsubscribeAll: NotRequired[bool],
+    AttributesData: NotRequired[str],
+```
+
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+## UpdateContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import UpdateContactRequestRequestTypeDef
+
+def get_value() -> UpdateContactRequestRequestTypeDef:
+    return {
+        "ContactListName": ...,
+        "EmailAddress": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateContactRequestRequestTypeDef(TypedDict):
+    ContactListName: str,
+    EmailAddress: str,
+    TopicPreferences: NotRequired[Sequence[TopicPreferenceTypeDef]],  # (1)
+    UnsubscribeAll: NotRequired[bool],
+    AttributesData: NotRequired[str],
+```
+
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+## CreateDedicatedIpPoolRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateDedicatedIpPoolRequestRequestTypeDef
+
+def get_value() -> CreateDedicatedIpPoolRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDedicatedIpPoolRequestRequestTypeDef(TypedDict):
+    PoolName: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateConfigurationSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateConfigurationSetRequestRequestTypeDef
+
+def get_value() -> CreateConfigurationSetRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConfigurationSetRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    TrackingOptions: NotRequired[TrackingOptionsTypeDef],  # (1)
+    DeliveryOptions: NotRequired[DeliveryOptionsTypeDef],  # (2)
+    ReputationOptions: NotRequired[ReputationOptionsTypeDef],  # (3)
+    SendingOptions: NotRequired[SendingOptionsTypeDef],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    SuppressionOptions: NotRequired[SuppressionOptionsTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
+2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
+3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
+4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
+## CreateContactListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateContactListRequestRequestTypeDef
+
+def get_value() -> CreateContactListRequestRequestTypeDef:
+    return {
+        "ContactListName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContactListRequestRequestTypeDef(TypedDict):
+    ContactListName: str,
+    Topics: NotRequired[Sequence[TopicTypeDef]],  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateContactListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import UpdateContactListRequestRequestTypeDef
+
+def get_value() -> UpdateContactListRequestRequestTypeDef:
+    return {
+        "ContactListName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateContactListRequestRequestTypeDef(TypedDict):
+    ContactListName: str,
+    Topics: NotRequired[Sequence[TopicTypeDef]],  # (1)
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
+## CreateDeliverabilityTestReportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportResponseTypeDef
+
+def get_value() -> CreateDeliverabilityTestReportResponseTypeDef:
+    return {
+        "ReportId": ...,
+        "DeliverabilityTestStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDeliverabilityTestReportResponseTypeDef(TypedDict):
+    ReportId: str,
+    DeliverabilityTestStatus: DeliverabilityTestStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateImportJobResponseTypeDef
+
+def get_value() -> CreateImportJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImportJobResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBlacklistReportsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetBlacklistReportsResponseTypeDef
+
+def get_value() -> GetBlacklistReportsResponseTypeDef:
+    return {
+        "BlacklistReport": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBlacklistReportsResponseTypeDef(TypedDict):
+    BlacklistReport: Dict[str, List[BlacklistEntryTypeDef]],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlacklistEntryTypeDef](./type_defs.md#blacklistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConfigurationSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetConfigurationSetResponseTypeDef
+
+def get_value() -> GetConfigurationSetResponseTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "TrackingOptions": ...,
+        "DeliveryOptions": ...,
+        "ReputationOptions": ...,
+        "SendingOptions": ...,
+        "Tags": ...,
+        "SuppressionOptions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConfigurationSetResponseTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    TrackingOptions: TrackingOptionsTypeDef,  # (1)
+    DeliveryOptions: DeliveryOptionsTypeDef,  # (2)
+    ReputationOptions: ReputationOptionsTypeDef,  # (3)
+    SendingOptions: SendingOptionsTypeDef,  # (4)
+    Tags: List[TagTypeDef],  # (5)
+    SuppressionOptions: SuppressionOptionsTypeDef,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
+2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
+3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
+4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContactListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetContactListResponseTypeDef
+
+def get_value() -> GetContactListResponseTypeDef:
+    return {
+        "ContactListName": ...,
+        "Topics": ...,
+        "Description": ...,
+        "CreatedTimestamp": ...,
+        "LastUpdatedTimestamp": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContactListResponseTypeDef(TypedDict):
+    ContactListName: str,
+    Topics: List[TopicTypeDef],  # (1)
+    Description: str,
+    CreatedTimestamp: datetime,
+    LastUpdatedTimestamp: datetime,
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContactResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetContactResponseTypeDef
+
+def get_value() -> GetContactResponseTypeDef:
+    return {
+        "ContactListName": ...,
+        "EmailAddress": ...,
+        "TopicPreferences": ...,
+        "TopicDefaultPreferences": ...,
+        "UnsubscribeAll": ...,
+        "AttributesData": ...,
+        "CreatedTimestamp": ...,
+        "LastUpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContactResponseTypeDef(TypedDict):
+    ContactListName: str,
+    EmailAddress: str,
+    TopicPreferences: List[TopicPreferenceTypeDef],  # (1)
+    TopicDefaultPreferences: List[TopicPreferenceTypeDef],  # (1)
+    UnsubscribeAll: bool,
+    AttributesData: str,
+    CreatedTimestamp: datetime,
+    LastUpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+2. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCustomVerificationEmailTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetCustomVerificationEmailTemplateResponseTypeDef
+
+def get_value() -> GetCustomVerificationEmailTemplateResponseTypeDef:
+    return {
+        "TemplateName": ...,
+        "FromEmailAddress": ...,
+        "TemplateSubject": ...,
+        "TemplateContent": ...,
+        "SuccessRedirectionURL": ...,
+        "FailureRedirectionURL": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCustomVerificationEmailTemplateResponseTypeDef(TypedDict):
+    TemplateName: str,
+    FromEmailAddress: str,
+    TemplateSubject: str,
+    TemplateContent: str,
+    SuccessRedirectionURL: str,
+    FailureRedirectionURL: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEmailIdentityPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetEmailIdentityPoliciesResponseTypeDef
+
+def get_value() -> GetEmailIdentityPoliciesResponseTypeDef:
+    return {
+        "Policies": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEmailIdentityPoliciesResponseTypeDef(TypedDict):
+    Policies: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConfigurationSetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListConfigurationSetsResponseTypeDef
+
+def get_value() -> ListConfigurationSetsResponseTypeDef:
+    return {
+        "ConfigurationSets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationSetsResponseTypeDef(TypedDict):
+    ConfigurationSets: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactListsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListContactListsResponseTypeDef
+
+def get_value() -> ListContactListsResponseTypeDef:
+    return {
+        "ContactLists": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactListsResponseTypeDef(TypedDict):
+    ContactLists: List[ContactListTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContactListTypeDef](./type_defs.md#contactlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDedicatedIpPoolsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListDedicatedIpPoolsResponseTypeDef
+
+def get_value() -> ListDedicatedIpPoolsResponseTypeDef:
+    return {
+        "DedicatedIpPools": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDedicatedIpPoolsResponseTypeDef(TypedDict):
+    DedicatedIpPools: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutEmailIdentityDkimSigningAttributesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import PutEmailIdentityDkimSigningAttributesResponseTypeDef
+
+def get_value() -> PutEmailIdentityDkimSigningAttributesResponseTypeDef:
+    return {
+        "DkimStatus": ...,
+        "DkimTokens": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutEmailIdentityDkimSigningAttributesResponseTypeDef(TypedDict):
+    DkimStatus: DkimStatusType,  # (1)
+    DkimTokens: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DkimStatusType](./literals.md#dkimstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendBulkEmailResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SendBulkEmailResponseTypeDef
+
+def get_value() -> SendBulkEmailResponseTypeDef:
+    return {
+        "BulkEmailEntryResults": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendBulkEmailResponseTypeDef(TypedDict):
+    BulkEmailEntryResults: List[BulkEmailEntryResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BulkEmailEntryResultTypeDef](./type_defs.md#bulkemailentryresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendCustomVerificationEmailResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SendCustomVerificationEmailResponseTypeDef
+
+def get_value() -> SendCustomVerificationEmailResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendCustomVerificationEmailResponseTypeDef(TypedDict):
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendEmailResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SendEmailResponseTypeDef
+
+def get_value() -> SendEmailResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendEmailResponseTypeDef(TypedDict):
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestRenderEmailTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import TestRenderEmailTemplateResponseTypeDef
+
+def get_value() -> TestRenderEmailTemplateResponseTypeDef:
+    return {
+        "RenderedTemplate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestRenderEmailTemplateResponseTypeDef(TypedDict):
+    RenderedTemplate: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEmailIdentityRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateEmailIdentityRequestRequestTypeDef
+
+def get_value() -> CreateEmailIdentityRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEmailIdentityRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    DkimSigningAttributes: NotRequired[DkimSigningAttributesTypeDef],  # (2)
+    ConfigurationSetName: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
+## PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef
+
+def get_value() -> PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+        "SigningAttributesOrigin": ...,
+    }
+```
+
+```python title="Definition"
+class PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    SigningAttributesOrigin: DkimSigningAttributesOriginType,  # (1)
+    SigningAttributes: NotRequired[DkimSigningAttributesTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype) 
+2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
+## CreateEmailIdentityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateEmailIdentityResponseTypeDef
+
+def get_value() -> CreateEmailIdentityResponseTypeDef:
+    return {
+        "IdentityType": ...,
+        "VerifiedForSendingStatus": ...,
+        "DkimAttributes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEmailIdentityResponseTypeDef(TypedDict):
+    IdentityType: IdentityTypeType,  # (1)
+    VerifiedForSendingStatus: bool,
+    DkimAttributes: DkimAttributesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEmailTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateEmailTemplateRequestRequestTypeDef
+
+def get_value() -> CreateEmailTemplateRequestRequestTypeDef:
+    return {
+        "TemplateName": ...,
+        "TemplateContent": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEmailTemplateRequestRequestTypeDef(TypedDict):
+    TemplateName: str,
+    TemplateContent: EmailTemplateContentTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
+## GetEmailTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetEmailTemplateResponseTypeDef
+
+def get_value() -> GetEmailTemplateResponseTypeDef:
+    return {
+        "TemplateName": ...,
+        "TemplateContent": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEmailTemplateResponseTypeDef(TypedDict):
+    TemplateName: str,
+    TemplateContent: EmailTemplateContentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEmailTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3644,22 +2720,946 @@ class UpdateEmailTemplateRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
-## VolumeStatisticsTypeDef
+## ListCustomVerificationEmailTemplatesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sesv2.type_defs import VolumeStatisticsTypeDef
+from mypy_boto3_sesv2.type_defs import ListCustomVerificationEmailTemplatesResponseTypeDef
 
-def get_value() -> VolumeStatisticsTypeDef:
+def get_value() -> ListCustomVerificationEmailTemplatesResponseTypeDef:
     return {
-        "InboxRawCount": ...,
+        "CustomVerificationEmailTemplates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class VolumeStatisticsTypeDef(TypedDict):
-    InboxRawCount: NotRequired[int],
-    SpamRawCount: NotRequired[int],
-    ProjectedInbox: NotRequired[int],
-    ProjectedSpam: NotRequired[int],
+class ListCustomVerificationEmailTemplatesResponseTypeDef(TypedDict):
+    CustomVerificationEmailTemplates: List[CustomVerificationEmailTemplateMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: CustomVerificationEmailTemplateMetadataTypeDef](./type_defs.md#customverificationemailtemplatemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DailyVolumeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import DailyVolumeTypeDef
+
+def get_value() -> DailyVolumeTypeDef:
+    return {
+        "StartDate": ...,
+    }
+```
+
+```python title="Definition"
+class DailyVolumeTypeDef(TypedDict):
+    StartDate: NotRequired[datetime],
+    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
+    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
+2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
+## OverallVolumeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import OverallVolumeTypeDef
+
+def get_value() -> OverallVolumeTypeDef:
+    return {
+        "VolumeStatistics": ...,
+    }
+```
+
+```python title="Definition"
+class OverallVolumeTypeDef(TypedDict):
+    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
+    ReadRatePercent: NotRequired[float],
+    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
+2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
+## GetDedicatedIpResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDedicatedIpResponseTypeDef
+
+def get_value() -> GetDedicatedIpResponseTypeDef:
+    return {
+        "DedicatedIp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDedicatedIpResponseTypeDef(TypedDict):
+    DedicatedIp: DedicatedIpTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDedicatedIpsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDedicatedIpsResponseTypeDef
+
+def get_value() -> GetDedicatedIpsResponseTypeDef:
+    return {
+        "DedicatedIps": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDedicatedIpsResponseTypeDef(TypedDict):
+    DedicatedIps: List[DedicatedIpTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeliverabilityTestReportsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListDeliverabilityTestReportsResponseTypeDef
+
+def get_value() -> ListDeliverabilityTestReportsResponseTypeDef:
+    return {
+        "DeliverabilityTestReports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeliverabilityTestReportsResponseTypeDef(TypedDict):
+    DeliverabilityTestReports: List[DeliverabilityTestReportTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDomainDeliverabilityCampaignResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDomainDeliverabilityCampaignResponseTypeDef
+
+def get_value() -> GetDomainDeliverabilityCampaignResponseTypeDef:
+    return {
+        "DomainDeliverabilityCampaign": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDomainDeliverabilityCampaignResponseTypeDef(TypedDict):
+    DomainDeliverabilityCampaign: DomainDeliverabilityCampaignTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDomainDeliverabilityCampaignsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListDomainDeliverabilityCampaignsResponseTypeDef
+
+def get_value() -> ListDomainDeliverabilityCampaignsResponseTypeDef:
+    return {
+        "DomainDeliverabilityCampaigns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainDeliverabilityCampaignsResponseTypeDef(TypedDict):
+    DomainDeliverabilityCampaigns: List[DomainDeliverabilityCampaignTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DomainDeliverabilityTrackingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import DomainDeliverabilityTrackingOptionTypeDef
+
+def get_value() -> DomainDeliverabilityTrackingOptionTypeDef:
+    return {
+        "Domain": ...,
+    }
+```
+
+```python title="Definition"
+class DomainDeliverabilityTrackingOptionTypeDef(TypedDict):
+    Domain: NotRequired[str],
+    SubscriptionStartDate: NotRequired[datetime],
+    InboxPlacementTrackingOption: NotRequired[InboxPlacementTrackingOptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef) 
+## ListEmailTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListEmailTemplatesResponseTypeDef
+
+def get_value() -> ListEmailTemplatesResponseTypeDef:
+    return {
+        "TemplatesMetadata": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEmailTemplatesResponseTypeDef(TypedDict):
+    TemplatesMetadata: List[EmailTemplateMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EmailTemplateMetadataTypeDef](./type_defs.md#emailtemplatemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IspPlacementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import IspPlacementTypeDef
+
+def get_value() -> IspPlacementTypeDef:
+    return {
+        "IspName": ...,
+    }
+```
+
+```python title="Definition"
+class IspPlacementTypeDef(TypedDict):
+    IspName: NotRequired[str],
+    PlacementStatistics: NotRequired[PlacementStatisticsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
+## GetEmailIdentityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetEmailIdentityResponseTypeDef
+
+def get_value() -> GetEmailIdentityResponseTypeDef:
+    return {
+        "IdentityType": ...,
+        "FeedbackForwardingStatus": ...,
+        "VerifiedForSendingStatus": ...,
+        "DkimAttributes": ...,
+        "MailFromAttributes": ...,
+        "Policies": ...,
+        "Tags": ...,
+        "ConfigurationSetName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEmailIdentityResponseTypeDef(TypedDict):
+    IdentityType: IdentityTypeType,  # (1)
+    FeedbackForwardingStatus: bool,
+    VerifiedForSendingStatus: bool,
+    DkimAttributes: DkimAttributesTypeDef,  # (2)
+    MailFromAttributes: MailFromAttributesTypeDef,  # (3)
+    Policies: Dict[str, str],
+    Tags: List[TagTypeDef],  # (4)
+    ConfigurationSetName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
+3. See [:material-code-braces: MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEmailIdentitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListEmailIdentitiesResponseTypeDef
+
+def get_value() -> ListEmailIdentitiesResponseTypeDef:
+    return {
+        "EmailIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEmailIdentitiesResponseTypeDef(TypedDict):
+    EmailIdentities: List[IdentityInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityInfoTypeDef](./type_defs.md#identityinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ImportDestinationTypeDef
+
+def get_value() -> ImportDestinationTypeDef:
+    return {
+        "SuppressionListDestination": ...,
+    }
+```
+
+```python title="Definition"
+class ImportDestinationTypeDef(TypedDict):
+    SuppressionListDestination: NotRequired[SuppressionListDestinationTypeDef],  # (1)
+    ContactListDestination: NotRequired[ContactListDestinationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SuppressionListDestinationTypeDef](./type_defs.md#suppressionlistdestinationtypedef) 
+2. See [:material-code-braces: ContactListDestinationTypeDef](./type_defs.md#contactlistdestinationtypedef) 
+## ListContactsFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListContactsFilterTypeDef
+
+def get_value() -> ListContactsFilterTypeDef:
+    return {
+        "FilteredStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactsFilterTypeDef(TypedDict):
+    FilteredStatus: NotRequired[SubscriptionStatusType],  # (1)
+    TopicFilter: NotRequired[TopicFilterTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SubscriptionStatusType](./literals.md#subscriptionstatustype) 
+2. See [:material-code-braces: TopicFilterTypeDef](./type_defs.md#topicfiltertypedef) 
+## ListSuppressedDestinationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListSuppressedDestinationsResponseTypeDef
+
+def get_value() -> ListSuppressedDestinationsResponseTypeDef:
+    return {
+        "SuppressedDestinationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSuppressedDestinationsResponseTypeDef(TypedDict):
+    SuppressedDestinationSummaries: List[SuppressedDestinationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SuppressedDestinationSummaryTypeDef](./type_defs.md#suppresseddestinationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplacementEmailContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ReplacementEmailContentTypeDef
+
+def get_value() -> ReplacementEmailContentTypeDef:
+    return {
+        "ReplacementTemplate": ...,
+    }
+```
+
+```python title="Definition"
+class ReplacementEmailContentTypeDef(TypedDict):
+    ReplacementTemplate: NotRequired[ReplacementTemplateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ReplacementTemplateTypeDef](./type_defs.md#replacementtemplatetypedef) 
+## SuppressedDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SuppressedDestinationTypeDef
+
+def get_value() -> SuppressedDestinationTypeDef:
+    return {
+        "EmailAddress": ...,
+        "Reason": ...,
+        "LastUpdateTime": ...,
+    }
+```
+
+```python title="Definition"
+class SuppressedDestinationTypeDef(TypedDict):
+    EmailAddress: str,
+    Reason: SuppressionListReasonType,  # (1)
+    LastUpdateTime: datetime,
+    Attributes: NotRequired[SuppressedDestinationAttributesTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
+2. See [:material-code-braces: SuppressedDestinationAttributesTypeDef](./type_defs.md#suppresseddestinationattributestypedef) 
+## GetAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetAccountResponseTypeDef
+
+def get_value() -> GetAccountResponseTypeDef:
+    return {
+        "DedicatedIpAutoWarmupEnabled": ...,
+        "EnforcementStatus": ...,
+        "ProductionAccessEnabled": ...,
+        "SendQuota": ...,
+        "SendingEnabled": ...,
+        "SuppressionAttributes": ...,
+        "Details": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccountResponseTypeDef(TypedDict):
+    DedicatedIpAutoWarmupEnabled: bool,
+    EnforcementStatus: str,
+    ProductionAccessEnabled: bool,
+    SendQuota: SendQuotaTypeDef,  # (1)
+    SendingEnabled: bool,
+    SuppressionAttributes: SuppressionAttributesTypeDef,  # (2)
+    Details: AccountDetailsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: SendQuotaTypeDef](./type_defs.md#sendquotatypedef) 
+2. See [:material-code-braces: SuppressionAttributesTypeDef](./type_defs.md#suppressionattributestypedef) 
+3. See [:material-code-braces: AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import MessageTypeDef
+
+def get_value() -> MessageTypeDef:
+    return {
+        "Subject": ...,
+        "Body": ...,
+    }
+```
+
+```python title="Definition"
+class MessageTypeDef(TypedDict):
+    Subject: ContentTypeDef,  # (1)
+    Body: BodyTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+2. See [:material-code-braces: BodyTypeDef](./type_defs.md#bodytypedef) 
+## EventDestinationDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import EventDestinationDefinitionTypeDef
+
+def get_value() -> EventDestinationDefinitionTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class EventDestinationDefinitionTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    MatchingEventTypes: NotRequired[Sequence[EventTypeType]],  # (1)
+    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
+    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
+    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
+    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
+3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
+4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
+5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
+## EventDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import EventDestinationTypeDef
+
+def get_value() -> EventDestinationTypeDef:
+    return {
+        "Name": ...,
+        "MatchingEventTypes": ...,
+    }
+```
+
+```python title="Definition"
+class EventDestinationTypeDef(TypedDict):
+    Name: str,
+    MatchingEventTypes: List[EventTypeType],  # (1)
+    Enabled: NotRequired[bool],
+    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
+    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
+    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
+    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
+3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
+4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
+5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
+## ListContactsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListContactsResponseTypeDef
+
+def get_value() -> ListContactsResponseTypeDef:
+    return {
+        "Contacts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactsResponseTypeDef(TypedDict):
+    Contacts: List[ContactTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDomainStatisticsReportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDomainStatisticsReportResponseTypeDef
+
+def get_value() -> GetDomainStatisticsReportResponseTypeDef:
+    return {
+        "OverallVolume": ...,
+        "DailyVolumes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDomainStatisticsReportResponseTypeDef(TypedDict):
+    OverallVolume: OverallVolumeTypeDef,  # (1)
+    DailyVolumes: List[DailyVolumeTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: OverallVolumeTypeDef](./type_defs.md#overallvolumetypedef) 
+2. See [:material-code-braces: DailyVolumeTypeDef](./type_defs.md#dailyvolumetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDeliverabilityDashboardOptionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDeliverabilityDashboardOptionsResponseTypeDef
+
+def get_value() -> GetDeliverabilityDashboardOptionsResponseTypeDef:
+    return {
+        "DashboardEnabled": ...,
+        "SubscriptionExpiryDate": ...,
+        "AccountStatus": ...,
+        "ActiveSubscribedDomains": ...,
+        "PendingExpirationSubscribedDomains": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeliverabilityDashboardOptionsResponseTypeDef(TypedDict):
+    DashboardEnabled: bool,
+    SubscriptionExpiryDate: datetime,
+    AccountStatus: DeliverabilityDashboardAccountStatusType,  # (1)
+    ActiveSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
+    PendingExpirationSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype) 
+2. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
+3. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutDeliverabilityDashboardOptionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import PutDeliverabilityDashboardOptionRequestRequestTypeDef
+
+def get_value() -> PutDeliverabilityDashboardOptionRequestRequestTypeDef:
+    return {
+        "DashboardEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class PutDeliverabilityDashboardOptionRequestRequestTypeDef(TypedDict):
+    DashboardEnabled: bool,
+    SubscribedDomains: NotRequired[Sequence[DomainDeliverabilityTrackingOptionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
+## GetDeliverabilityTestReportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDeliverabilityTestReportResponseTypeDef
+
+def get_value() -> GetDeliverabilityTestReportResponseTypeDef:
+    return {
+        "DeliverabilityTestReport": ...,
+        "OverallPlacement": ...,
+        "IspPlacements": ...,
+        "Message": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeliverabilityTestReportResponseTypeDef(TypedDict):
+    DeliverabilityTestReport: DeliverabilityTestReportTypeDef,  # (1)
+    OverallPlacement: PlacementStatisticsTypeDef,  # (2)
+    IspPlacements: List[IspPlacementTypeDef],  # (3)
+    Message: str,
+    Tags: List[TagTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
+2. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
+3. See [:material-code-braces: IspPlacementTypeDef](./type_defs.md#ispplacementtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateImportJobRequestRequestTypeDef
+
+def get_value() -> CreateImportJobRequestRequestTypeDef:
+    return {
+        "ImportDestination": ...,
+        "ImportDataSource": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImportJobRequestRequestTypeDef(TypedDict):
+    ImportDestination: ImportDestinationTypeDef,  # (1)
+    ImportDataSource: ImportDataSourceTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
+2. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
+## GetImportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetImportJobResponseTypeDef
+
+def get_value() -> GetImportJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ImportDestination": ...,
+        "ImportDataSource": ...,
+        "FailureInfo": ...,
+        "JobStatus": ...,
+        "CreatedTimestamp": ...,
+        "CompletedTimestamp": ...,
+        "ProcessedRecordsCount": ...,
+        "FailedRecordsCount": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImportJobResponseTypeDef(TypedDict):
+    JobId: str,
+    ImportDestination: ImportDestinationTypeDef,  # (1)
+    ImportDataSource: ImportDataSourceTypeDef,  # (2)
+    FailureInfo: FailureInfoTypeDef,  # (3)
+    JobStatus: JobStatusType,  # (4)
+    CreatedTimestamp: datetime,
+    CompletedTimestamp: datetime,
+    ProcessedRecordsCount: int,
+    FailedRecordsCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
+2. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
+3. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
+4. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportJobSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ImportJobSummaryTypeDef
+
+def get_value() -> ImportJobSummaryTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class ImportJobSummaryTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    ImportDestination: NotRequired[ImportDestinationTypeDef],  # (1)
+    JobStatus: NotRequired[JobStatusType],  # (2)
+    CreatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+## ListContactsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListContactsRequestRequestTypeDef
+
+def get_value() -> ListContactsRequestRequestTypeDef:
+    return {
+        "ContactListName": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactsRequestRequestTypeDef(TypedDict):
+    ContactListName: str,
+    Filter: NotRequired[ListContactsFilterTypeDef],  # (1)
+    PageSize: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListContactsFilterTypeDef](./type_defs.md#listcontactsfiltertypedef) 
+## BulkEmailEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import BulkEmailEntryTypeDef
+
+def get_value() -> BulkEmailEntryTypeDef:
+    return {
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class BulkEmailEntryTypeDef(TypedDict):
+    Destination: DestinationTypeDef,  # (1)
+    ReplacementTags: NotRequired[Sequence[MessageTagTypeDef]],  # (2)
+    ReplacementEmailContent: NotRequired[ReplacementEmailContentTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
+3. See [:material-code-braces: ReplacementEmailContentTypeDef](./type_defs.md#replacementemailcontenttypedef) 
+## GetSuppressedDestinationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetSuppressedDestinationResponseTypeDef
+
+def get_value() -> GetSuppressedDestinationResponseTypeDef:
+    return {
+        "SuppressedDestination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSuppressedDestinationResponseTypeDef(TypedDict):
+    SuppressedDestination: SuppressedDestinationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SuppressedDestinationTypeDef](./type_defs.md#suppresseddestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmailContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import EmailContentTypeDef
+
+def get_value() -> EmailContentTypeDef:
+    return {
+        "Simple": ...,
+    }
+```
+
+```python title="Definition"
+class EmailContentTypeDef(TypedDict):
+    Simple: NotRequired[MessageTypeDef],  # (1)
+    Raw: NotRequired[RawMessageTypeDef],  # (2)
+    Template: NotRequired[TemplateTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: RawMessageTypeDef](./type_defs.md#rawmessagetypedef) 
+3. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
+## CreateConfigurationSetEventDestinationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateConfigurationSetEventDestinationRequestRequestTypeDef
+
+def get_value() -> CreateConfigurationSetEventDestinationRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "EventDestinationName": ...,
+        "EventDestination": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
+## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import UpdateConfigurationSetEventDestinationRequestRequestTypeDef
+
+def get_value() -> UpdateConfigurationSetEventDestinationRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "EventDestinationName": ...,
+        "EventDestination": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
+## GetConfigurationSetEventDestinationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
+
+def get_value() -> GetConfigurationSetEventDestinationsResponseTypeDef:
+    return {
+        "EventDestinations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConfigurationSetEventDestinationsResponseTypeDef(TypedDict):
+    EventDestinations: List[EventDestinationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImportJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import ListImportJobsResponseTypeDef
+
+def get_value() -> ListImportJobsResponseTypeDef:
+    return {
+        "ImportJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportJobsResponseTypeDef(TypedDict):
+    ImportJobs: List[ImportJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportJobSummaryTypeDef](./type_defs.md#importjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendBulkEmailRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SendBulkEmailRequestRequestTypeDef
+
+def get_value() -> SendBulkEmailRequestRequestTypeDef:
+    return {
+        "DefaultContent": ...,
+        "BulkEmailEntries": ...,
+    }
+```
+
+```python title="Definition"
+class SendBulkEmailRequestRequestTypeDef(TypedDict):
+    DefaultContent: BulkEmailContentTypeDef,  # (1)
+    BulkEmailEntries: Sequence[BulkEmailEntryTypeDef],  # (2)
+    FromEmailAddress: NotRequired[str],
+    FromEmailAddressIdentityArn: NotRequired[str],
+    ReplyToAddresses: NotRequired[Sequence[str]],
+    FeedbackForwardingEmailAddress: NotRequired[str],
+    FeedbackForwardingEmailAddressIdentityArn: NotRequired[str],
+    DefaultEmailTags: NotRequired[Sequence[MessageTagTypeDef]],  # (3)
+    ConfigurationSetName: NotRequired[str],
+```
+
+1. See [:material-code-braces: BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef) 
+2. See [:material-code-braces: BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef) 
+3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
+## CreateDeliverabilityTestReportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportRequestRequestTypeDef
+
+def get_value() -> CreateDeliverabilityTestReportRequestRequestTypeDef:
+    return {
+        "FromEmailAddress": ...,
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDeliverabilityTestReportRequestRequestTypeDef(TypedDict):
+    FromEmailAddress: str,
+    Content: EmailContentTypeDef,  # (1)
+    ReportName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## SendEmailRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import SendEmailRequestRequestTypeDef
+
+def get_value() -> SendEmailRequestRequestTypeDef:
+    return {
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class SendEmailRequestRequestTypeDef(TypedDict):
+    Content: EmailContentTypeDef,  # (1)
+    FromEmailAddress: NotRequired[str],
+    FromEmailAddressIdentityArn: NotRequired[str],
+    Destination: NotRequired[DestinationTypeDef],  # (2)
+    ReplyToAddresses: NotRequired[Sequence[str]],
+    FeedbackForwardingEmailAddress: NotRequired[str],
+    FeedbackForwardingEmailAddressIdentityArn: NotRequired[str],
+    EmailTags: NotRequired[Sequence[MessageTagTypeDef]],  # (3)
+    ConfigurationSetName: NotRequired[str],
+    ListManagementOptions: NotRequired[ListManagementOptionsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
+4. See [:material-code-braces: ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef) 

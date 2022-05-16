@@ -40,26 +40,30 @@ class AcceptAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
 ```
 
-## AcceptAttachmentResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AcceptAttachmentResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AcceptAttachmentResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Attachment": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AcceptAttachmentResponseTypeDef(TypedDict):
-    Attachment: AttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -81,26 +85,27 @@ class AssociateConnectPeerRequestRequestTypeDef(TypedDict):
     LinkId: NotRequired[str],
 ```
 
-## AssociateConnectPeerResponseTypeDef
+## ConnectPeerAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AssociateConnectPeerResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import ConnectPeerAssociationTypeDef
 
-def get_value() -> AssociateConnectPeerResponseTypeDef:
+def get_value() -> ConnectPeerAssociationTypeDef:
     return {
-        "ConnectPeerAssociation": ...,
-        "ResponseMetadata": ...,
+        "ConnectPeerId": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateConnectPeerResponseTypeDef(TypedDict):
-    ConnectPeerAssociation: ConnectPeerAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ConnectPeerAssociationTypeDef(TypedDict):
+    ConnectPeerId: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    State: NotRequired[ConnectPeerAssociationStateType],  # (1)
 ```
 
-1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ConnectPeerAssociationStateType](./literals.md#connectpeerassociationstatetype) 
 ## AssociateCustomerGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -122,26 +127,27 @@ class AssociateCustomerGatewayRequestRequestTypeDef(TypedDict):
     LinkId: NotRequired[str],
 ```
 
-## AssociateCustomerGatewayResponseTypeDef
+## CustomerGatewayAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CustomerGatewayAssociationTypeDef
 
-def get_value() -> AssociateCustomerGatewayResponseTypeDef:
+def get_value() -> CustomerGatewayAssociationTypeDef:
     return {
-        "CustomerGatewayAssociation": ...,
-        "ResponseMetadata": ...,
+        "CustomerGatewayArn": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateCustomerGatewayResponseTypeDef(TypedDict):
-    CustomerGatewayAssociation: CustomerGatewayAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CustomerGatewayAssociationTypeDef(TypedDict):
+    CustomerGatewayArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    State: NotRequired[CustomerGatewayAssociationStateType],  # (1)
 ```
 
-1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype) 
 ## AssociateLinkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -162,26 +168,26 @@ class AssociateLinkRequestRequestTypeDef(TypedDict):
     LinkId: str,
 ```
 
-## AssociateLinkResponseTypeDef
+## LinkAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AssociateLinkResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import LinkAssociationTypeDef
 
-def get_value() -> AssociateLinkResponseTypeDef:
+def get_value() -> LinkAssociationTypeDef:
     return {
-        "LinkAssociation": ...,
-        "ResponseMetadata": ...,
+        "GlobalNetworkId": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateLinkResponseTypeDef(TypedDict):
-    LinkAssociation: LinkAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LinkAssociationTypeDef(TypedDict):
+    GlobalNetworkId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    LinkAssociationState: NotRequired[LinkAssociationStateType],  # (1)
 ```
 
-1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: LinkAssociationStateType](./literals.md#linkassociationstatetype) 
 ## AssociateTransitGatewayConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -203,59 +209,44 @@ class AssociateTransitGatewayConnectPeerRequestRequestTypeDef(TypedDict):
     LinkId: NotRequired[str],
 ```
 
-## AssociateTransitGatewayConnectPeerResponseTypeDef
+## TransitGatewayConnectPeerAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import TransitGatewayConnectPeerAssociationTypeDef
 
-def get_value() -> AssociateTransitGatewayConnectPeerResponseTypeDef:
+def get_value() -> TransitGatewayConnectPeerAssociationTypeDef:
     return {
-        "TransitGatewayConnectPeerAssociation": ...,
-        "ResponseMetadata": ...,
+        "TransitGatewayConnectPeerArn": ...,
     }
 ```
 
 ```python title="Definition"
-class AssociateTransitGatewayConnectPeerResponseTypeDef(TypedDict):
-    TransitGatewayConnectPeerAssociation: TransitGatewayConnectPeerAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TransitGatewayConnectPeerAssociationTypeDef(TypedDict):
+    TransitGatewayConnectPeerArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    State: NotRequired[TransitGatewayConnectPeerAssociationStateType],  # (1)
 ```
 
-1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AttachmentTypeDef
+1. See [:material-code-brackets: TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype) 
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import AttachmentTypeDef
+from mypy_boto3_networkmanager.type_defs import TagTypeDef
 
-def get_value() -> AttachmentTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "CoreNetworkId": ...,
+        "Key": ...,
     }
 ```
 
 ```python title="Definition"
-class AttachmentTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    CoreNetworkArn: NotRequired[str],
-    AttachmentId: NotRequired[str],
-    OwnerAccountId: NotRequired[str],
-    AttachmentType: NotRequired[AttachmentTypeType],  # (1)
-    State: NotRequired[AttachmentStateType],  # (2)
-    EdgeLocation: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    AttachmentPolicyRuleNumber: NotRequired[int],
-    SegmentName: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-    ProposedSegmentChange: NotRequired[ProposedSegmentChangeTypeDef],  # (4)
-    CreatedAt: NotRequired[datetime],
-    UpdatedAt: NotRequired[datetime],
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
-2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: ProposedSegmentChangeTypeDef](./type_defs.md#proposedsegmentchangetypedef) 
 ## BandwidthTypeDef
 
 ```python title="Usage Example"
@@ -306,47 +297,6 @@ class ConnectAttachmentOptionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TunnelProtocolType](./literals.md#tunnelprotocoltype) 
-## ConnectAttachmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectAttachmentTypeDef
-
-def get_value() -> ConnectAttachmentTypeDef:
-    return {
-        "Attachment": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectAttachmentTypeDef(TypedDict):
-    Attachment: NotRequired[AttachmentTypeDef],  # (1)
-    TransportAttachmentId: NotRequired[str],
-    Options: NotRequired[ConnectAttachmentOptionsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-2. See [:material-code-braces: ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef) 
-## ConnectPeerAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectPeerAssociationTypeDef
-
-def get_value() -> ConnectPeerAssociationTypeDef:
-    return {
-        "ConnectPeerId": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectPeerAssociationTypeDef(TypedDict):
-    ConnectPeerId: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    State: NotRequired[ConnectPeerAssociationStateType],  # (1)
-```
-
-1. See [:material-code-brackets: ConnectPeerAssociationStateType](./literals.md#connectpeerassociationstatetype) 
 ## ConnectPeerBgpConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -366,78 +316,6 @@ class ConnectPeerBgpConfigurationTypeDef(TypedDict):
     PeerAddress: NotRequired[str],
 ```
 
-## ConnectPeerConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectPeerConfigurationTypeDef
-
-def get_value() -> ConnectPeerConfigurationTypeDef:
-    return {
-        "CoreNetworkAddress": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectPeerConfigurationTypeDef(TypedDict):
-    CoreNetworkAddress: NotRequired[str],
-    PeerAddress: NotRequired[str],
-    InsideCidrBlocks: NotRequired[List[str]],
-    Protocol: NotRequired[TunnelProtocolType],  # (1)
-    BgpConfigurations: NotRequired[List[ConnectPeerBgpConfigurationTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: TunnelProtocolType](./literals.md#tunnelprotocoltype) 
-2. See [:material-code-braces: ConnectPeerBgpConfigurationTypeDef](./type_defs.md#connectpeerbgpconfigurationtypedef) 
-## ConnectPeerSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectPeerSummaryTypeDef
-
-def get_value() -> ConnectPeerSummaryTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectPeerSummaryTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    ConnectAttachmentId: NotRequired[str],
-    ConnectPeerId: NotRequired[str],
-    EdgeLocation: NotRequired[str],
-    ConnectPeerState: NotRequired[ConnectPeerStateType],  # (1)
-    CreatedAt: NotRequired[datetime],
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: ConnectPeerStateType](./literals.md#connectpeerstatetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ConnectPeerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectPeerTypeDef
-
-def get_value() -> ConnectPeerTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectPeerTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    ConnectAttachmentId: NotRequired[str],
-    ConnectPeerId: NotRequired[str],
-    EdgeLocation: NotRequired[str],
-    State: NotRequired[ConnectPeerStateType],  # (1)
-    CreatedAt: NotRequired[datetime],
-    Configuration: NotRequired[ConnectPeerConfigurationTypeDef],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: ConnectPeerStateType](./literals.md#connectpeerstatetype) 
-2. See [:material-code-braces: ConnectPeerConfigurationTypeDef](./type_defs.md#connectpeerconfigurationtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ConnectionHealthTypeDef
 
 ```python title="Usage Example"
@@ -458,58 +336,6 @@ class ConnectionHealthTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
 2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
-## ConnectionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ConnectionTypeDef
-
-def get_value() -> ConnectionTypeDef:
-    return {
-        "ConnectionId": ...,
-    }
-```
-
-```python title="Definition"
-class ConnectionTypeDef(TypedDict):
-    ConnectionId: NotRequired[str],
-    ConnectionArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    ConnectedDeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    ConnectedLinkId: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[ConnectionStateType],  # (1)
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CoreNetworkChangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeTypeDef
-
-def get_value() -> CoreNetworkChangeTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class CoreNetworkChangeTypeDef(TypedDict):
-    Type: NotRequired[ChangeTypeType],  # (1)
-    Action: NotRequired[ChangeActionType],  # (2)
-    Identifier: NotRequired[str],
-    PreviousValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
-    NewValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
-2. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
-3. See [:material-code-braces: CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef) 
-4. See [:material-code-braces: CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef) 
 ## CoreNetworkChangeValuesTypeDef
 
 ```python title="Usage Example"
@@ -569,32 +395,6 @@ class CoreNetworkPolicyErrorTypeDef(TypedDict):
     Path: NotRequired[str],
 ```
 
-## CoreNetworkPolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CoreNetworkPolicyTypeDef
-
-def get_value() -> CoreNetworkPolicyTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class CoreNetworkPolicyTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    PolicyVersionId: NotRequired[int],
-    Alias: NotRequired[CoreNetworkPolicyAliasType],  # (1)
-    Description: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    ChangeSetState: NotRequired[ChangeSetStateType],  # (2)
-    PolicyErrors: NotRequired[List[CoreNetworkPolicyErrorTypeDef]],  # (3)
-    PolicyDocument: NotRequired[str],
-```
-
-1. See [:material-code-brackets: CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype) 
-2. See [:material-code-brackets: ChangeSetStateType](./literals.md#changesetstatetype) 
-3. See [:material-code-braces: CoreNetworkPolicyErrorTypeDef](./type_defs.md#corenetworkpolicyerrortypedef) 
 ## CoreNetworkPolicyVersionTypeDef
 
 ```python title="Usage Example"
@@ -654,516 +454,40 @@ class CoreNetworkSegmentTypeDef(TypedDict):
     SharedSegments: NotRequired[List[str]],
 ```
 
-## CoreNetworkSummaryTypeDef
+## LocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CoreNetworkSummaryTypeDef
+from mypy_boto3_networkmanager.type_defs import LocationTypeDef
 
-def get_value() -> CoreNetworkSummaryTypeDef:
+def get_value() -> LocationTypeDef:
     return {
-        "CoreNetworkId": ...,
+        "Address": ...,
     }
 ```
 
 ```python title="Definition"
-class CoreNetworkSummaryTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    CoreNetworkArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    OwnerAccountId: NotRequired[str],
-    State: NotRequired[CoreNetworkStateType],  # (1)
-    Description: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
+class LocationTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Latitude: NotRequired[str],
+    Longitude: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: CoreNetworkStateType](./literals.md#corenetworkstatetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CoreNetworkTypeDef
+## VpcOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CoreNetworkTypeDef
+from mypy_boto3_networkmanager.type_defs import VpcOptionsTypeDef
 
-def get_value() -> CoreNetworkTypeDef:
+def get_value() -> VpcOptionsTypeDef:
     return {
-        "GlobalNetworkId": ...,
+        "Ipv6Support": ...,
     }
 ```
 
 ```python title="Definition"
-class CoreNetworkTypeDef(TypedDict):
-    GlobalNetworkId: NotRequired[str],
-    CoreNetworkId: NotRequired[str],
-    CoreNetworkArn: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[CoreNetworkStateType],  # (1)
-    Segments: NotRequired[List[CoreNetworkSegmentTypeDef]],  # (2)
-    Edges: NotRequired[List[CoreNetworkEdgeTypeDef]],  # (3)
-    Tags: NotRequired[List[TagTypeDef]],  # (4)
+class VpcOptionsTypeDef(TypedDict):
+    Ipv6Support: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: CoreNetworkStateType](./literals.md#corenetworkstatetype) 
-2. See [:material-code-braces: CoreNetworkSegmentTypeDef](./type_defs.md#corenetworksegmenttypedef) 
-3. See [:material-code-braces: CoreNetworkEdgeTypeDef](./type_defs.md#corenetworkedgetypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateConnectAttachmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentRequestRequestTypeDef
-
-def get_value() -> CreateConnectAttachmentRequestRequestTypeDef:
-    return {
-        "CoreNetworkId": ...,
-        "EdgeLocation": ...,
-        "TransportAttachmentId": ...,
-        "Options": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectAttachmentRequestRequestTypeDef(TypedDict):
-    CoreNetworkId: str,
-    EdgeLocation: str,
-    TransportAttachmentId: str,
-    Options: ConnectAttachmentOptionsTypeDef,  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    ClientToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateConnectAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentResponseTypeDef
-
-def get_value() -> CreateConnectAttachmentResponseTypeDef:
-    return {
-        "ConnectAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectAttachmentResponseTypeDef(TypedDict):
-    ConnectAttachment: ConnectAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateConnectPeerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectPeerRequestRequestTypeDef
-
-def get_value() -> CreateConnectPeerRequestRequestTypeDef:
-    return {
-        "ConnectAttachmentId": ...,
-        "PeerAddress": ...,
-        "InsideCidrBlocks": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectPeerRequestRequestTypeDef(TypedDict):
-    ConnectAttachmentId: str,
-    PeerAddress: str,
-    InsideCidrBlocks: Sequence[str],
-    CoreNetworkAddress: NotRequired[str],
-    BgpOptions: NotRequired[BgpOptionsTypeDef],  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    ClientToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateConnectPeerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectPeerResponseTypeDef
-
-def get_value() -> CreateConnectPeerResponseTypeDef:
-    return {
-        "ConnectPeer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectPeerResponseTypeDef(TypedDict):
-    ConnectPeer: ConnectPeerTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateConnectionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectionRequestRequestTypeDef
-
-def get_value() -> CreateConnectionRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "DeviceId": ...,
-        "ConnectedDeviceId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectionRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    DeviceId: str,
-    ConnectedDeviceId: str,
-    LinkId: NotRequired[str],
-    ConnectedLinkId: NotRequired[str],
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateConnectionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseTypeDef
-
-def get_value() -> CreateConnectionResponseTypeDef:
-    return {
-        "Connection": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConnectionResponseTypeDef(TypedDict):
-    Connection: ConnectionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateCoreNetworkRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkRequestRequestTypeDef
-
-def get_value() -> CreateCoreNetworkRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateCoreNetworkRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    PolicyDocument: NotRequired[str],
-    ClientToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateCoreNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkResponseTypeDef
-
-def get_value() -> CreateCoreNetworkResponseTypeDef:
-    return {
-        "CoreNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateCoreNetworkResponseTypeDef(TypedDict):
-    CoreNetwork: CoreNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDeviceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateDeviceRequestRequestTypeDef
-
-def get_value() -> CreateDeviceRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDeviceRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    AWSLocation: NotRequired[AWSLocationTypeDef],  # (1)
-    Description: NotRequired[str],
-    Type: NotRequired[str],
-    Vendor: NotRequired[str],
-    Model: NotRequired[str],
-    SerialNumber: NotRequired[str],
-    Location: NotRequired[LocationTypeDef],  # (2)
-    SiteId: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
-2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDeviceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateDeviceResponseTypeDef
-
-def get_value() -> CreateDeviceResponseTypeDef:
-    return {
-        "Device": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDeviceResponseTypeDef(TypedDict):
-    Device: DeviceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateGlobalNetworkRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkRequestRequestTypeDef
-
-def get_value() -> CreateGlobalNetworkRequestRequestTypeDef:
-    return {
-        "Description": ...,
-    }
-```
-
-```python title="Definition"
-class CreateGlobalNetworkRequestRequestTypeDef(TypedDict):
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateGlobalNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkResponseTypeDef
-
-def get_value() -> CreateGlobalNetworkResponseTypeDef:
-    return {
-        "GlobalNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateGlobalNetworkResponseTypeDef(TypedDict):
-    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateLinkRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateLinkRequestRequestTypeDef
-
-def get_value() -> CreateLinkRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "Bandwidth": ...,
-        "SiteId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateLinkRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    Bandwidth: BandwidthTypeDef,  # (1)
-    SiteId: str,
-    Description: NotRequired[str],
-    Type: NotRequired[str],
-    Provider: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateLinkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateLinkResponseTypeDef
-
-def get_value() -> CreateLinkResponseTypeDef:
-    return {
-        "Link": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateLinkResponseTypeDef(TypedDict):
-    Link: LinkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSiteRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateSiteRequestRequestTypeDef
-
-def get_value() -> CreateSiteRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSiteRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    Description: NotRequired[str],
-    Location: NotRequired[LocationTypeDef],  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateSiteResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateSiteResponseTypeDef
-
-def get_value() -> CreateSiteResponseTypeDef:
-    return {
-        "Site": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSiteResponseTypeDef(TypedDict):
-    Site: SiteTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
-
-def get_value() -> CreateSiteToSiteVpnAttachmentRequestRequestTypeDef:
-    return {
-        "CoreNetworkId": ...,
-        "VpnConnectionArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSiteToSiteVpnAttachmentRequestRequestTypeDef(TypedDict):
-    CoreNetworkId: str,
-    VpnConnectionArn: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    ClientToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateSiteToSiteVpnAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentResponseTypeDef
-
-def get_value() -> CreateSiteToSiteVpnAttachmentResponseTypeDef:
-    return {
-        "SiteToSiteVpnAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSiteToSiteVpnAttachmentResponseTypeDef(TypedDict):
-    SiteToSiteVpnAttachment: SiteToSiteVpnAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateVpcAttachmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentRequestRequestTypeDef
-
-def get_value() -> CreateVpcAttachmentRequestRequestTypeDef:
-    return {
-        "CoreNetworkId": ...,
-        "VpcArn": ...,
-        "SubnetArns": ...,
-    }
-```
-
-```python title="Definition"
-class CreateVpcAttachmentRequestRequestTypeDef(TypedDict):
-    CoreNetworkId: str,
-    VpcArn: str,
-    SubnetArns: Sequence[str],
-    Options: NotRequired[VpcOptionsTypeDef],  # (1)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    ClientToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateVpcAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentResponseTypeDef
-
-def get_value() -> CreateVpcAttachmentResponseTypeDef:
-    return {
-        "VpcAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateVpcAttachmentResponseTypeDef(TypedDict):
-    VpcAttachment: VpcAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CustomerGatewayAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import CustomerGatewayAssociationTypeDef
-
-def get_value() -> CustomerGatewayAssociationTypeDef:
-    return {
-        "CustomerGatewayArn": ...,
-    }
-```
-
-```python title="Definition"
-class CustomerGatewayAssociationTypeDef(TypedDict):
-    CustomerGatewayArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    State: NotRequired[CustomerGatewayAssociationStateType],  # (1)
-```
-
-1. See [:material-code-brackets: CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype) 
 ## DeleteAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1180,26 +504,6 @@ class DeleteAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
 ```
 
-## DeleteAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteAttachmentResponseTypeDef
-
-def get_value() -> DeleteAttachmentResponseTypeDef:
-    return {
-        "Attachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAttachmentResponseTypeDef(TypedDict):
-    Attachment: AttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1216,26 +520,6 @@ class DeleteConnectPeerRequestRequestTypeDef(TypedDict):
     ConnectPeerId: str,
 ```
 
-## DeleteConnectPeerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteConnectPeerResponseTypeDef
-
-def get_value() -> DeleteConnectPeerResponseTypeDef:
-    return {
-        "ConnectPeer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteConnectPeerResponseTypeDef(TypedDict):
-    ConnectPeer: ConnectPeerTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1254,26 +538,6 @@ class DeleteConnectionRequestRequestTypeDef(TypedDict):
     ConnectionId: str,
 ```
 
-## DeleteConnectionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseTypeDef
-
-def get_value() -> DeleteConnectionResponseTypeDef:
-    return {
-        "Connection": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteConnectionResponseTypeDef(TypedDict):
-    Connection: ConnectionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCoreNetworkPolicyVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1292,26 +556,6 @@ class DeleteCoreNetworkPolicyVersionRequestRequestTypeDef(TypedDict):
     PolicyVersionId: int,
 ```
 
-## DeleteCoreNetworkPolicyVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkPolicyVersionResponseTypeDef
-
-def get_value() -> DeleteCoreNetworkPolicyVersionResponseTypeDef:
-    return {
-        "CoreNetworkPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteCoreNetworkPolicyVersionResponseTypeDef(TypedDict):
-    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCoreNetworkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1328,26 +572,6 @@ class DeleteCoreNetworkRequestRequestTypeDef(TypedDict):
     CoreNetworkId: str,
 ```
 
-## DeleteCoreNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkResponseTypeDef
-
-def get_value() -> DeleteCoreNetworkResponseTypeDef:
-    return {
-        "CoreNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteCoreNetworkResponseTypeDef(TypedDict):
-    CoreNetwork: CoreNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1366,26 +590,6 @@ class DeleteDeviceRequestRequestTypeDef(TypedDict):
     DeviceId: str,
 ```
 
-## DeleteDeviceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteDeviceResponseTypeDef
-
-def get_value() -> DeleteDeviceResponseTypeDef:
-    return {
-        "Device": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteDeviceResponseTypeDef(TypedDict):
-    Device: DeviceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGlobalNetworkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1402,26 +606,6 @@ class DeleteGlobalNetworkRequestRequestTypeDef(TypedDict):
     GlobalNetworkId: str,
 ```
 
-## DeleteGlobalNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkResponseTypeDef
-
-def get_value() -> DeleteGlobalNetworkResponseTypeDef:
-    return {
-        "GlobalNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteGlobalNetworkResponseTypeDef(TypedDict):
-    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLinkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1440,26 +624,6 @@ class DeleteLinkRequestRequestTypeDef(TypedDict):
     LinkId: str,
 ```
 
-## DeleteLinkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteLinkResponseTypeDef
-
-def get_value() -> DeleteLinkResponseTypeDef:
-    return {
-        "Link": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteLinkResponseTypeDef(TypedDict):
-    Link: LinkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1494,26 +658,6 @@ class DeleteSiteRequestRequestTypeDef(TypedDict):
     SiteId: str,
 ```
 
-## DeleteSiteResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeleteSiteResponseTypeDef
-
-def get_value() -> DeleteSiteResponseTypeDef:
-    return {
-        "Site": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteSiteResponseTypeDef(TypedDict):
-    Site: SiteTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterTransitGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1532,44 +676,24 @@ class DeregisterTransitGatewayRequestRequestTypeDef(TypedDict):
     TransitGatewayArn: str,
 ```
 
-## DeregisterTransitGatewayResponseTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DeregisterTransitGatewayResponseTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "TransitGatewayRegistration": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DeregisterTransitGatewayResponseTypeDef(TypedDict):
-    TransitGatewayRegistration: TransitGatewayRegistrationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef
-
-def get_value() -> DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef:
-    return {
-        "GlobalNetworkIds": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef(TypedDict):
-    GlobalNetworkIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeGlobalNetworksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1588,61 +712,6 @@ class DescribeGlobalNetworksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeGlobalNetworksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksResponseTypeDef
-
-def get_value() -> DescribeGlobalNetworksResponseTypeDef:
-    return {
-        "GlobalNetworks": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGlobalNetworksResponseTypeDef(TypedDict):
-    GlobalNetworks: List[GlobalNetworkTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeviceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DeviceTypeDef
-
-def get_value() -> DeviceTypeDef:
-    return {
-        "DeviceId": ...,
-    }
-```
-
-```python title="Definition"
-class DeviceTypeDef(TypedDict):
-    DeviceId: NotRequired[str],
-    DeviceArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    AWSLocation: NotRequired[AWSLocationTypeDef],  # (1)
-    Description: NotRequired[str],
-    Type: NotRequired[str],
-    Vendor: NotRequired[str],
-    Model: NotRequired[str],
-    SerialNumber: NotRequired[str],
-    Location: NotRequired[LocationTypeDef],  # (2)
-    SiteId: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[DeviceStateType],  # (3)
-    Tags: NotRequired[List[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
-2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-3. See [:material-code-brackets: DeviceStateType](./literals.md#devicestatetype) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DisassociateConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1661,26 +730,6 @@ class DisassociateConnectPeerRequestRequestTypeDef(TypedDict):
     ConnectPeerId: str,
 ```
 
-## DisassociateConnectPeerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DisassociateConnectPeerResponseTypeDef
-
-def get_value() -> DisassociateConnectPeerResponseTypeDef:
-    return {
-        "ConnectPeerAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateConnectPeerResponseTypeDef(TypedDict):
-    ConnectPeerAssociation: ConnectPeerAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateCustomerGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1699,26 +748,6 @@ class DisassociateCustomerGatewayRequestRequestTypeDef(TypedDict):
     CustomerGatewayArn: str,
 ```
 
-## DisassociateCustomerGatewayResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayResponseTypeDef
-
-def get_value() -> DisassociateCustomerGatewayResponseTypeDef:
-    return {
-        "CustomerGatewayAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateCustomerGatewayResponseTypeDef(TypedDict):
-    CustomerGatewayAssociation: CustomerGatewayAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateLinkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1739,26 +768,6 @@ class DisassociateLinkRequestRequestTypeDef(TypedDict):
     LinkId: str,
 ```
 
-## DisassociateLinkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DisassociateLinkResponseTypeDef
-
-def get_value() -> DisassociateLinkResponseTypeDef:
-    return {
-        "LinkAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateLinkResponseTypeDef(TypedDict):
-    LinkAssociation: LinkAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateTransitGatewayConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1777,26 +786,6 @@ class DisassociateTransitGatewayConnectPeerRequestRequestTypeDef(TypedDict):
     TransitGatewayConnectPeerArn: str,
 ```
 
-## DisassociateTransitGatewayConnectPeerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerResponseTypeDef
-
-def get_value() -> DisassociateTransitGatewayConnectPeerResponseTypeDef:
-    return {
-        "TransitGatewayConnectPeerAssociation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateTransitGatewayConnectPeerResponseTypeDef(TypedDict):
-    TransitGatewayConnectPeerAssociation: TransitGatewayConnectPeerAssociationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteCoreNetworkChangeSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1831,45 +820,6 @@ class GetConnectAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
 ```
 
-## GetConnectAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectAttachmentResponseTypeDef
-
-def get_value() -> GetConnectAttachmentResponseTypeDef:
-    return {
-        "ConnectAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectAttachmentResponseTypeDef(TypedDict):
-    ConnectAttachment: ConnectAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef
-
-def get_value() -> GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    ConnectPeerIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetConnectPeerAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1889,28 +839,6 @@ class GetConnectPeerAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetConnectPeerAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsResponseTypeDef
-
-def get_value() -> GetConnectPeerAssociationsResponseTypeDef:
-    return {
-        "ConnectPeerAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectPeerAssociationsResponseTypeDef(TypedDict):
-    ConnectPeerAssociations: List[ConnectPeerAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1927,46 +855,6 @@ class GetConnectPeerRequestRequestTypeDef(TypedDict):
     ConnectPeerId: str,
 ```
 
-## GetConnectPeerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectPeerResponseTypeDef
-
-def get_value() -> GetConnectPeerResponseTypeDef:
-    return {
-        "ConnectPeer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectPeerResponseTypeDef(TypedDict):
-    ConnectPeer: ConnectPeerTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetConnectionsRequestGetConnectionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectionsRequestGetConnectionsPaginateTypeDef
-
-def get_value() -> GetConnectionsRequestGetConnectionsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectionsRequestGetConnectionsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    ConnectionIds: NotRequired[Sequence[str]],
-    DeviceId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetConnectionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1987,48 +875,6 @@ class GetConnectionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetConnectionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseTypeDef
-
-def get_value() -> GetConnectionsResponseTypeDef:
-    return {
-        "Connections": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetConnectionsResponseTypeDef(TypedDict):
-    Connections: List[ConnectionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef
-
-def get_value() -> GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef:
-    return {
-        "CoreNetworkId": ...,
-        "PolicyVersionId": ...,
-    }
-```
-
-```python title="Definition"
-class GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef(TypedDict):
-    CoreNetworkId: str,
-    PolicyVersionId: int,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCoreNetworkChangeSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2049,28 +895,6 @@ class GetCoreNetworkChangeSetRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetCoreNetworkChangeSetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetResponseTypeDef
-
-def get_value() -> GetCoreNetworkChangeSetResponseTypeDef:
-    return {
-        "CoreNetworkChanges": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCoreNetworkChangeSetResponseTypeDef(TypedDict):
-    CoreNetworkChanges: List[CoreNetworkChangeTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkChangeTypeDef](./type_defs.md#corenetworkchangetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCoreNetworkPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2090,26 +914,6 @@ class GetCoreNetworkPolicyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype) 
-## GetCoreNetworkPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCoreNetworkPolicyResponseTypeDef
-
-def get_value() -> GetCoreNetworkPolicyResponseTypeDef:
-    return {
-        "CoreNetworkPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCoreNetworkPolicyResponseTypeDef(TypedDict):
-    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCoreNetworkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2126,45 +930,6 @@ class GetCoreNetworkRequestRequestTypeDef(TypedDict):
     CoreNetworkId: str,
 ```
 
-## GetCoreNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCoreNetworkResponseTypeDef
-
-def get_value() -> GetCoreNetworkResponseTypeDef:
-    return {
-        "CoreNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCoreNetworkResponseTypeDef(TypedDict):
-    CoreNetwork: CoreNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef
-
-def get_value() -> GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    CustomerGatewayArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCustomerGatewayAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2184,48 +949,6 @@ class GetCustomerGatewayAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetCustomerGatewayAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsResponseTypeDef
-
-def get_value() -> GetCustomerGatewayAssociationsResponseTypeDef:
-    return {
-        "CustomerGatewayAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetCustomerGatewayAssociationsResponseTypeDef(TypedDict):
-    CustomerGatewayAssociations: List[CustomerGatewayAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDevicesRequestGetDevicesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetDevicesRequestGetDevicesPaginateTypeDef
-
-def get_value() -> GetDevicesRequestGetDevicesPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetDevicesRequestGetDevicesPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    DeviceIds: NotRequired[Sequence[str]],
-    SiteId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDevicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2246,48 +969,6 @@ class GetDevicesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetDevicesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetDevicesResponseTypeDef
-
-def get_value() -> GetDevicesResponseTypeDef:
-    return {
-        "Devices": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDevicesResponseTypeDef(TypedDict):
-    Devices: List[DeviceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef
-
-def get_value() -> GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    DeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetLinkAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2308,50 +989,6 @@ class GetLinkAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetLinkAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsResponseTypeDef
-
-def get_value() -> GetLinkAssociationsResponseTypeDef:
-    return {
-        "LinkAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLinkAssociationsResponseTypeDef(TypedDict):
-    LinkAssociations: List[LinkAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetLinksRequestGetLinksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetLinksRequestGetLinksPaginateTypeDef
-
-def get_value() -> GetLinksRequestGetLinksPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetLinksRequestGetLinksPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    LinkIds: NotRequired[Sequence[str]],
-    SiteId: NotRequired[str],
-    Type: NotRequired[str],
-    Provider: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetLinksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2374,47 +1011,6 @@ class GetLinksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetLinksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetLinksResponseTypeDef
-
-def get_value() -> GetLinksResponseTypeDef:
-    return {
-        "Links": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetLinksResponseTypeDef(TypedDict):
-    Links: List[LinkTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef
-
-def get_value() -> GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    ResourceType: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetNetworkResourceCountsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2434,52 +1030,23 @@ class GetNetworkResourceCountsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetNetworkResourceCountsResponseTypeDef
+## NetworkResourceCountTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import NetworkResourceCountTypeDef
 
-def get_value() -> GetNetworkResourceCountsResponseTypeDef:
+def get_value() -> NetworkResourceCountTypeDef:
     return {
-        "NetworkResourceCounts": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "ResourceType": ...,
     }
 ```
 
 ```python title="Definition"
-class GetNetworkResourceCountsResponseTypeDef(TypedDict):
-    NetworkResourceCounts: List[NetworkResourceCountTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkResourceCountTypeDef](./type_defs.md#networkresourcecounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef
-
-def get_value() -> GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    CoreNetworkId: NotRequired[str],
-    RegisteredGatewayArn: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    AccountId: NotRequired[str],
+class NetworkResourceCountTypeDef(TypedDict):
     ResourceType: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    Count: NotRequired[int],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetNetworkResourceRelationshipsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2504,52 +1071,23 @@ class GetNetworkResourceRelationshipsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetNetworkResourceRelationshipsResponseTypeDef
+## RelationshipTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import RelationshipTypeDef
 
-def get_value() -> GetNetworkResourceRelationshipsResponseTypeDef:
+def get_value() -> RelationshipTypeDef:
     return {
-        "Relationships": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "From": ...,
     }
 ```
 
 ```python title="Definition"
-class GetNetworkResourceRelationshipsResponseTypeDef(TypedDict):
-    Relationships: List[RelationshipTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class RelationshipTypeDef(TypedDict):
+    From: NotRequired[str],
+    To: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RelationshipTypeDef](./type_defs.md#relationshiptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef
-
-def get_value() -> GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    CoreNetworkId: NotRequired[str],
-    RegisteredGatewayArn: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    AccountId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetNetworkResourcesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2574,111 +1112,6 @@ class GetNetworkResourcesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetNetworkResourcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesResponseTypeDef
-
-def get_value() -> GetNetworkResourcesResponseTypeDef:
-    return {
-        "NetworkResources": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkResourcesResponseTypeDef(TypedDict):
-    NetworkResources: List[NetworkResourceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkRoutesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesRequestRequestTypeDef
-
-def get_value() -> GetNetworkRoutesRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "RouteTableIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkRoutesRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    RouteTableIdentifier: RouteTableIdentifierTypeDef,  # (1)
-    ExactCidrMatches: NotRequired[Sequence[str]],
-    LongestPrefixMatches: NotRequired[Sequence[str]],
-    SubnetOfMatches: NotRequired[Sequence[str]],
-    SupernetOfMatches: NotRequired[Sequence[str]],
-    PrefixListIds: NotRequired[Sequence[str]],
-    States: NotRequired[Sequence[RouteStateType]],  # (2)
-    Types: NotRequired[Sequence[RouteTypeType]],  # (3)
-    DestinationFilters: NotRequired[Mapping[str, Sequence[str]]],
-```
-
-1. See [:material-code-braces: RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef) 
-2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
-3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
-## GetNetworkRoutesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesResponseTypeDef
-
-def get_value() -> GetNetworkRoutesResponseTypeDef:
-    return {
-        "RouteTableArn": ...,
-        "CoreNetworkSegmentEdge": ...,
-        "RouteTableType": ...,
-        "RouteTableTimestamp": ...,
-        "NetworkRoutes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkRoutesResponseTypeDef(TypedDict):
-    RouteTableArn: str,
-    CoreNetworkSegmentEdge: CoreNetworkSegmentEdgeIdentifierTypeDef,  # (1)
-    RouteTableType: RouteTableTypeType,  # (2)
-    RouteTableTimestamp: datetime,
-    NetworkRoutes: List[NetworkRouteTypeDef],  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef) 
-2. See [:material-code-brackets: RouteTableTypeType](./literals.md#routetabletypetype) 
-3. See [:material-code-braces: NetworkRouteTypeDef](./type_defs.md#networkroutetypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef
-
-def get_value() -> GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    CoreNetworkId: NotRequired[str],
-    RegisteredGatewayArn: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    AccountId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetNetworkTelemetryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2703,28 +1136,6 @@ class GetNetworkTelemetryRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetNetworkTelemetryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryResponseTypeDef
-
-def get_value() -> GetNetworkTelemetryResponseTypeDef:
-    return {
-        "NetworkTelemetry": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetNetworkTelemetryResponseTypeDef(TypedDict):
-    NetworkTelemetry: List[NetworkTelemetryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkTelemetryTypeDef](./type_defs.md#networktelemetrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2741,25 +1152,6 @@ class GetResourcePolicyRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## GetResourcePolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetResourcePolicyResponseTypeDef
-
-def get_value() -> GetResourcePolicyResponseTypeDef:
-    return {
-        "PolicyDocument": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetResourcePolicyResponseTypeDef(TypedDict):
-    PolicyDocument: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRouteAnalysisRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2778,26 +1170,6 @@ class GetRouteAnalysisRequestRequestTypeDef(TypedDict):
     RouteAnalysisId: str,
 ```
 
-## GetRouteAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetRouteAnalysisResponseTypeDef
-
-def get_value() -> GetRouteAnalysisResponseTypeDef:
-    return {
-        "RouteAnalysis": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRouteAnalysisResponseTypeDef(TypedDict):
-    RouteAnalysis: RouteAnalysisTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSiteToSiteVpnAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2814,45 +1186,6 @@ class GetSiteToSiteVpnAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
 ```
 
-## GetSiteToSiteVpnAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetSiteToSiteVpnAttachmentResponseTypeDef
-
-def get_value() -> GetSiteToSiteVpnAttachmentResponseTypeDef:
-    return {
-        "SiteToSiteVpnAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSiteToSiteVpnAttachmentResponseTypeDef(TypedDict):
-    SiteToSiteVpnAttachment: SiteToSiteVpnAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSitesRequestGetSitesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetSitesRequestGetSitesPaginateTypeDef
-
-def get_value() -> GetSitesRequestGetSitesPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetSitesRequestGetSitesPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    SiteIds: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSitesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2872,47 +1205,6 @@ class GetSitesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetSitesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetSitesResponseTypeDef
-
-def get_value() -> GetSitesResponseTypeDef:
-    return {
-        "Sites": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSitesResponseTypeDef(TypedDict):
-    Sites: List[SiteTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef
-
-def get_value() -> GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    TransitGatewayConnectPeerArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2932,47 +1224,6 @@ class GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetTransitGatewayConnectPeerAssociationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsResponseTypeDef
-
-def get_value() -> GetTransitGatewayConnectPeerAssociationsResponseTypeDef:
-    return {
-        "TransitGatewayConnectPeerAssociations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTransitGatewayConnectPeerAssociationsResponseTypeDef(TypedDict):
-    TransitGatewayConnectPeerAssociations: List[TransitGatewayConnectPeerAssociationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef
-
-def get_value() -> GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    TransitGatewayArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTransitGatewayRegistrationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2992,28 +1243,6 @@ class GetTransitGatewayRegistrationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## GetTransitGatewayRegistrationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsResponseTypeDef
-
-def get_value() -> GetTransitGatewayRegistrationsResponseTypeDef:
-    return {
-        "TransitGatewayRegistrations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTransitGatewayRegistrationsResponseTypeDef(TypedDict):
-    TransitGatewayRegistrations: List[TransitGatewayRegistrationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVpcAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3030,121 +1259,6 @@ class GetVpcAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
 ```
 
-## GetVpcAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GetVpcAttachmentResponseTypeDef
-
-def get_value() -> GetVpcAttachmentResponseTypeDef:
-    return {
-        "VpcAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetVpcAttachmentResponseTypeDef(TypedDict):
-    VpcAttachment: VpcAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GlobalNetworkTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import GlobalNetworkTypeDef
-
-def get_value() -> GlobalNetworkTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class GlobalNetworkTypeDef(TypedDict):
-    GlobalNetworkId: NotRequired[str],
-    GlobalNetworkArn: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[GlobalNetworkStateType],  # (1)
-    Tags: NotRequired[List[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: GlobalNetworkStateType](./literals.md#globalnetworkstatetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## LinkAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import LinkAssociationTypeDef
-
-def get_value() -> LinkAssociationTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class LinkAssociationTypeDef(TypedDict):
-    GlobalNetworkId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    LinkAssociationState: NotRequired[LinkAssociationStateType],  # (1)
-```
-
-1. See [:material-code-brackets: LinkAssociationStateType](./literals.md#linkassociationstatetype) 
-## LinkTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import LinkTypeDef
-
-def get_value() -> LinkTypeDef:
-    return {
-        "LinkId": ...,
-    }
-```
-
-```python title="Definition"
-class LinkTypeDef(TypedDict):
-    LinkId: NotRequired[str],
-    LinkArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    SiteId: NotRequired[str],
-    Description: NotRequired[str],
-    Type: NotRequired[str],
-    Bandwidth: NotRequired[BandwidthTypeDef],  # (1)
-    Provider: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[LinkStateType],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
-2. See [:material-code-brackets: LinkStateType](./literals.md#linkstatetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ListAttachmentsRequestListAttachmentsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListAttachmentsRequestListAttachmentsPaginateTypeDef
-
-def get_value() -> ListAttachmentsRequestListAttachmentsPaginateTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttachmentsRequestListAttachmentsPaginateTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    AttachmentType: NotRequired[AttachmentTypeType],  # (1)
-    EdgeLocation: NotRequired[str],
-    State: NotRequired[AttachmentStateType],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
-2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttachmentsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3168,47 +1282,6 @@ class ListAttachmentsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
 2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
-## ListAttachmentsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListAttachmentsResponseTypeDef
-
-def get_value() -> ListAttachmentsResponseTypeDef:
-    return {
-        "Attachments": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAttachmentsResponseTypeDef(TypedDict):
-    Attachments: List[AttachmentTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListConnectPeersRequestListConnectPeersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListConnectPeersRequestListConnectPeersPaginateTypeDef
-
-def get_value() -> ListConnectPeersRequestListConnectPeersPaginateTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class ListConnectPeersRequestListConnectPeersPaginateTypeDef(TypedDict):
-    CoreNetworkId: NotRequired[str],
-    ConnectAttachmentId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConnectPeersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3228,46 +1301,6 @@ class ListConnectPeersRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListConnectPeersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListConnectPeersResponseTypeDef
-
-def get_value() -> ListConnectPeersResponseTypeDef:
-    return {
-        "ConnectPeers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConnectPeersResponseTypeDef(TypedDict):
-    ConnectPeers: List[ConnectPeerSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectPeerSummaryTypeDef](./type_defs.md#connectpeersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef
-
-def get_value() -> ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef:
-    return {
-        "CoreNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef(TypedDict):
-    CoreNetworkId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCoreNetworkPolicyVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3286,45 +1319,6 @@ class ListCoreNetworkPolicyVersionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListCoreNetworkPolicyVersionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsResponseTypeDef
-
-def get_value() -> ListCoreNetworkPolicyVersionsResponseTypeDef:
-    return {
-        "CoreNetworkPolicyVersions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCoreNetworkPolicyVersionsResponseTypeDef(TypedDict):
-    CoreNetworkPolicyVersions: List[CoreNetworkPolicyVersionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkPolicyVersionTypeDef](./type_defs.md#corenetworkpolicyversiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCoreNetworksRequestListCoreNetworksPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListCoreNetworksRequestListCoreNetworksPaginateTypeDef
-
-def get_value() -> ListCoreNetworksRequestListCoreNetworksPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListCoreNetworksRequestListCoreNetworksPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCoreNetworksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3342,28 +1336,6 @@ class ListCoreNetworksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListCoreNetworksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListCoreNetworksResponseTypeDef
-
-def get_value() -> ListCoreNetworksResponseTypeDef:
-    return {
-        "CoreNetworks": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCoreNetworksResponseTypeDef(TypedDict):
-    CoreNetworks: List[CoreNetworkSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkSummaryTypeDef](./type_defs.md#corenetworksummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3378,61 +1350,6 @@ def get_value() -> ListTagsForResourceRequestRequestTypeDef:
 ```python title="Definition"
 class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "TagList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    TagList: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import LocationTypeDef
-
-def get_value() -> LocationTypeDef:
-    return {
-        "Address": ...,
-    }
-```
-
-```python title="Definition"
-class LocationTypeDef(TypedDict):
-    Address: NotRequired[str],
-    Latitude: NotRequired[str],
-    Longitude: NotRequired[str],
-```
-
-## NetworkResourceCountTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import NetworkResourceCountTypeDef
-
-def get_value() -> NetworkResourceCountTypeDef:
-    return {
-        "ResourceType": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkResourceCountTypeDef(TypedDict):
-    ResourceType: NotRequired[str],
-    Count: NotRequired[int],
 ```
 
 ## NetworkResourceSummaryTypeDef
@@ -3456,33 +1373,6 @@ class NetworkResourceSummaryTypeDef(TypedDict):
     IsMiddlebox: NotRequired[bool],
 ```
 
-## NetworkResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import NetworkResourceTypeDef
-
-def get_value() -> NetworkResourceTypeDef:
-    return {
-        "RegisteredGatewayArn": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkResourceTypeDef(TypedDict):
-    RegisteredGatewayArn: NotRequired[str],
-    CoreNetworkId: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    AccountId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    ResourceId: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    Definition: NotRequired[str],
-    DefinitionTimestamp: NotRequired[datetime],
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-    Metadata: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NetworkRouteDestinationTypeDef
 
 ```python title="Usage Example"
@@ -3504,110 +1394,6 @@ class NetworkRouteDestinationTypeDef(TypedDict):
     ResourceId: NotRequired[str],
 ```
 
-## NetworkRouteTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import NetworkRouteTypeDef
-
-def get_value() -> NetworkRouteTypeDef:
-    return {
-        "DestinationCidrBlock": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkRouteTypeDef(TypedDict):
-    DestinationCidrBlock: NotRequired[str],
-    Destinations: NotRequired[List[NetworkRouteDestinationTypeDef]],  # (1)
-    PrefixListId: NotRequired[str],
-    State: NotRequired[RouteStateType],  # (2)
-    Type: NotRequired[RouteTypeType],  # (3)
-```
-
-1. See [:material-code-braces: NetworkRouteDestinationTypeDef](./type_defs.md#networkroutedestinationtypedef) 
-2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
-3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
-## NetworkTelemetryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import NetworkTelemetryTypeDef
-
-def get_value() -> NetworkTelemetryTypeDef:
-    return {
-        "RegisteredGatewayArn": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkTelemetryTypeDef(TypedDict):
-    RegisteredGatewayArn: NotRequired[str],
-    CoreNetworkId: NotRequired[str],
-    AwsRegion: NotRequired[str],
-    AccountId: NotRequired[str],
-    ResourceType: NotRequired[str],
-    ResourceId: NotRequired[str],
-    ResourceArn: NotRequired[str],
-    Address: NotRequired[str],
-    Health: NotRequired[ConnectionHealthTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ConnectionHealthTypeDef](./type_defs.md#connectionhealthtypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PathComponentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import PathComponentTypeDef
-
-def get_value() -> PathComponentTypeDef:
-    return {
-        "Sequence": ...,
-    }
-```
-
-```python title="Definition"
-class PathComponentTypeDef(TypedDict):
-    Sequence: NotRequired[int],
-    Resource: NotRequired[NetworkResourceSummaryTypeDef],  # (1)
-    DestinationCidrBlock: NotRequired[str],
-```
-
-1. See [:material-code-braces: NetworkResourceSummaryTypeDef](./type_defs.md#networkresourcesummarytypedef) 
-## ProposedSegmentChangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ProposedSegmentChangeTypeDef
-
-def get_value() -> ProposedSegmentChangeTypeDef:
-    return {
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class ProposedSegmentChangeTypeDef(TypedDict):
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-    AttachmentPolicyRuleNumber: NotRequired[int],
-    SegmentName: NotRequired[str],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutCoreNetworkPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3629,26 +1415,6 @@ class PutCoreNetworkPolicyRequestRequestTypeDef(TypedDict):
     ClientToken: NotRequired[str],
 ```
 
-## PutCoreNetworkPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import PutCoreNetworkPolicyResponseTypeDef
-
-def get_value() -> PutCoreNetworkPolicyResponseTypeDef:
-    return {
-        "CoreNetworkPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutCoreNetworkPolicyResponseTypeDef(TypedDict):
-    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3685,26 +1451,6 @@ class RegisterTransitGatewayRequestRequestTypeDef(TypedDict):
     TransitGatewayArn: str,
 ```
 
-## RegisterTransitGatewayResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayResponseTypeDef
-
-def get_value() -> RegisterTransitGatewayResponseTypeDef:
-    return {
-        "TransitGatewayRegistration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RegisterTransitGatewayResponseTypeDef(TypedDict):
-    TransitGatewayRegistration: TransitGatewayRegistrationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RejectAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3719,67 +1465,6 @@ def get_value() -> RejectAttachmentRequestRequestTypeDef:
 ```python title="Definition"
 class RejectAttachmentRequestRequestTypeDef(TypedDict):
     AttachmentId: str,
-```
-
-## RejectAttachmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RejectAttachmentResponseTypeDef
-
-def get_value() -> RejectAttachmentResponseTypeDef:
-    return {
-        "Attachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RejectAttachmentResponseTypeDef(TypedDict):
-    Attachment: AttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RelationshipTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RelationshipTypeDef
-
-def get_value() -> RelationshipTypeDef:
-    return {
-        "From": ...,
-    }
-```
-
-```python title="Definition"
-class RelationshipTypeDef(TypedDict):
-    From: NotRequired[str],
-    To: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
 ```
 
 ## RestoreCoreNetworkPolicyVersionRequestRequestTypeDef
@@ -3800,26 +1485,6 @@ class RestoreCoreNetworkPolicyVersionRequestRequestTypeDef(TypedDict):
     PolicyVersionId: int,
 ```
 
-## RestoreCoreNetworkPolicyVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RestoreCoreNetworkPolicyVersionResponseTypeDef
-
-def get_value() -> RestoreCoreNetworkPolicyVersionResponseTypeDef:
-    return {
-        "CoreNetworkPolicy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RestoreCoreNetworkPolicyVersionResponseTypeDef(TypedDict):
-    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RouteAnalysisCompletionTypeDef
 
 ```python title="Usage Example"
@@ -3875,219 +1540,6 @@ class RouteAnalysisEndpointOptionsTypeDef(TypedDict):
     IpAddress: NotRequired[str],
 ```
 
-## RouteAnalysisPathTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RouteAnalysisPathTypeDef
-
-def get_value() -> RouteAnalysisPathTypeDef:
-    return {
-        "CompletionStatus": ...,
-    }
-```
-
-```python title="Definition"
-class RouteAnalysisPathTypeDef(TypedDict):
-    CompletionStatus: NotRequired[RouteAnalysisCompletionTypeDef],  # (1)
-    Path: NotRequired[List[PathComponentTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: RouteAnalysisCompletionTypeDef](./type_defs.md#routeanalysiscompletiontypedef) 
-2. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
-## RouteAnalysisTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RouteAnalysisTypeDef
-
-def get_value() -> RouteAnalysisTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class RouteAnalysisTypeDef(TypedDict):
-    GlobalNetworkId: NotRequired[str],
-    OwnerAccountId: NotRequired[str],
-    RouteAnalysisId: NotRequired[str],
-    StartTimestamp: NotRequired[datetime],
-    Status: NotRequired[RouteAnalysisStatusType],  # (1)
-    Source: NotRequired[RouteAnalysisEndpointOptionsTypeDef],  # (2)
-    Destination: NotRequired[RouteAnalysisEndpointOptionsTypeDef],  # (2)
-    IncludeReturnPath: NotRequired[bool],
-    UseMiddleboxes: NotRequired[bool],
-    ForwardPath: NotRequired[RouteAnalysisPathTypeDef],  # (4)
-    ReturnPath: NotRequired[RouteAnalysisPathTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: RouteAnalysisStatusType](./literals.md#routeanalysisstatustype) 
-2. See [:material-code-braces: RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef) 
-3. See [:material-code-braces: RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef) 
-4. See [:material-code-braces: RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef) 
-5. See [:material-code-braces: RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef) 
-## RouteTableIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import RouteTableIdentifierTypeDef
-
-def get_value() -> RouteTableIdentifierTypeDef:
-    return {
-        "TransitGatewayRouteTableArn": ...,
-    }
-```
-
-```python title="Definition"
-class RouteTableIdentifierTypeDef(TypedDict):
-    TransitGatewayRouteTableArn: NotRequired[str],
-    CoreNetworkSegmentEdge: NotRequired[CoreNetworkSegmentEdgeIdentifierTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef) 
-## SiteToSiteVpnAttachmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import SiteToSiteVpnAttachmentTypeDef
-
-def get_value() -> SiteToSiteVpnAttachmentTypeDef:
-    return {
-        "Attachment": ...,
-    }
-```
-
-```python title="Definition"
-class SiteToSiteVpnAttachmentTypeDef(TypedDict):
-    Attachment: NotRequired[AttachmentTypeDef],  # (1)
-    VpnConnectionArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
-## SiteTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import SiteTypeDef
-
-def get_value() -> SiteTypeDef:
-    return {
-        "SiteId": ...,
-    }
-```
-
-```python title="Definition"
-class SiteTypeDef(TypedDict):
-    SiteId: NotRequired[str],
-    SiteArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    Description: NotRequired[str],
-    Location: NotRequired[LocationTypeDef],  # (1)
-    CreatedAt: NotRequired[datetime],
-    State: NotRequired[SiteStateType],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-2. See [:material-code-brackets: SiteStateType](./literals.md#sitestatetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## StartRouteAnalysisRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisRequestRequestTypeDef
-
-def get_value() -> StartRouteAnalysisRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "Source": ...,
-        "Destination": ...,
-    }
-```
-
-```python title="Definition"
-class StartRouteAnalysisRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    Source: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
-    Destination: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
-    IncludeReturnPath: NotRequired[bool],
-    UseMiddleboxes: NotRequired[bool],
-```
-
-1. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
-2. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
-## StartRouteAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisResponseTypeDef
-
-def get_value() -> StartRouteAnalysisResponseTypeDef:
-    return {
-        "RouteAnalysis": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartRouteAnalysisResponseTypeDef(TypedDict):
-    RouteAnalysis: RouteAnalysisTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## TransitGatewayConnectPeerAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import TransitGatewayConnectPeerAssociationTypeDef
-
-def get_value() -> TransitGatewayConnectPeerAssociationTypeDef:
-    return {
-        "TransitGatewayConnectPeerArn": ...,
-    }
-```
-
-```python title="Definition"
-class TransitGatewayConnectPeerAssociationTypeDef(TypedDict):
-    TransitGatewayConnectPeerArn: NotRequired[str],
-    GlobalNetworkId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    LinkId: NotRequired[str],
-    State: NotRequired[TransitGatewayConnectPeerAssociationStateType],  # (1)
-```
-
-1. See [:material-code-brackets: TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype) 
 ## TransitGatewayRegistrationStateReasonTypeDef
 
 ```python title="Usage Example"
@@ -4106,25 +1558,6 @@ class TransitGatewayRegistrationStateReasonTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype) 
-## TransitGatewayRegistrationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import TransitGatewayRegistrationTypeDef
-
-def get_value() -> TransitGatewayRegistrationTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class TransitGatewayRegistrationTypeDef(TypedDict):
-    GlobalNetworkId: NotRequired[str],
-    TransitGatewayArn: NotRequired[str],
-    State: NotRequired[TransitGatewayRegistrationStateReasonTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef) 
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4164,26 +1597,6 @@ class UpdateConnectionRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## UpdateConnectionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateConnectionResponseTypeDef
-
-def get_value() -> UpdateConnectionResponseTypeDef:
-    return {
-        "Connection": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConnectionResponseTypeDef(TypedDict):
-    Connection: ConnectionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCoreNetworkRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4201,26 +1614,1003 @@ class UpdateCoreNetworkRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## UpdateCoreNetworkResponseTypeDef
+## UpdateGlobalNetworkRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateCoreNetworkResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkRequestRequestTypeDef
 
-def get_value() -> UpdateCoreNetworkResponseTypeDef:
+def get_value() -> UpdateGlobalNetworkRequestRequestTypeDef:
     return {
-        "CoreNetwork": ...,
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGlobalNetworkRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    Description: NotRequired[str],
+```
+
+## UpdateNetworkResourceMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateNetworkResourceMetadataRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "ResourceArn": ...,
+        "Metadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNetworkResourceMetadataRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    ResourceArn: str,
+    Metadata: Mapping[str, str],
+```
+
+## GetResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "PolicyDocument": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateCoreNetworkResponseTypeDef(TypedDict):
-    CoreNetwork: CoreNetworkTypeDef,  # (1)
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateNetworkResourceMetadataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataResponseTypeDef
+
+def get_value() -> UpdateNetworkResourceMetadataResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Metadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNetworkResourceMetadataResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    Metadata: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AssociateConnectPeerResponseTypeDef
+
+def get_value() -> AssociateConnectPeerResponseTypeDef:
+    return {
+        "ConnectPeerAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateConnectPeerResponseTypeDef(TypedDict):
+    ConnectPeerAssociation: ConnectPeerAssociationTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
+1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DisassociateConnectPeerResponseTypeDef
+
+def get_value() -> DisassociateConnectPeerResponseTypeDef:
+    return {
+        "ConnectPeerAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateConnectPeerResponseTypeDef(TypedDict):
+    ConnectPeerAssociation: ConnectPeerAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConnectPeerAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsResponseTypeDef
+
+def get_value() -> GetConnectPeerAssociationsResponseTypeDef:
+    return {
+        "ConnectPeerAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectPeerAssociationsResponseTypeDef(TypedDict):
+    ConnectPeerAssociations: List[ConnectPeerAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateCustomerGatewayResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayResponseTypeDef
+
+def get_value() -> AssociateCustomerGatewayResponseTypeDef:
+    return {
+        "CustomerGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateCustomerGatewayResponseTypeDef(TypedDict):
+    CustomerGatewayAssociation: CustomerGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateCustomerGatewayResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayResponseTypeDef
+
+def get_value() -> DisassociateCustomerGatewayResponseTypeDef:
+    return {
+        "CustomerGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateCustomerGatewayResponseTypeDef(TypedDict):
+    CustomerGatewayAssociation: CustomerGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCustomerGatewayAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsResponseTypeDef
+
+def get_value() -> GetCustomerGatewayAssociationsResponseTypeDef:
+    return {
+        "CustomerGatewayAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCustomerGatewayAssociationsResponseTypeDef(TypedDict):
+    CustomerGatewayAssociations: List[CustomerGatewayAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateLinkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AssociateLinkResponseTypeDef
+
+def get_value() -> AssociateLinkResponseTypeDef:
+    return {
+        "LinkAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateLinkResponseTypeDef(TypedDict):
+    LinkAssociation: LinkAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateLinkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DisassociateLinkResponseTypeDef
+
+def get_value() -> DisassociateLinkResponseTypeDef:
+    return {
+        "LinkAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateLinkResponseTypeDef(TypedDict):
+    LinkAssociation: LinkAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLinkAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsResponseTypeDef
+
+def get_value() -> GetLinkAssociationsResponseTypeDef:
+    return {
+        "LinkAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLinkAssociationsResponseTypeDef(TypedDict):
+    LinkAssociations: List[LinkAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateTransitGatewayConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerResponseTypeDef
+
+def get_value() -> AssociateTransitGatewayConnectPeerResponseTypeDef:
+    return {
+        "TransitGatewayConnectPeerAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateTransitGatewayConnectPeerResponseTypeDef(TypedDict):
+    TransitGatewayConnectPeerAssociation: TransitGatewayConnectPeerAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateTransitGatewayConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerResponseTypeDef
+
+def get_value() -> DisassociateTransitGatewayConnectPeerResponseTypeDef:
+    return {
+        "TransitGatewayConnectPeerAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateTransitGatewayConnectPeerResponseTypeDef(TypedDict):
+    TransitGatewayConnectPeerAssociation: TransitGatewayConnectPeerAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayConnectPeerAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsResponseTypeDef
+
+def get_value() -> GetTransitGatewayConnectPeerAssociationsResponseTypeDef:
+    return {
+        "TransitGatewayConnectPeerAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayConnectPeerAssociationsResponseTypeDef(TypedDict):
+    TransitGatewayConnectPeerAssociations: List[TransitGatewayConnectPeerAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConnectPeerSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ConnectPeerSummaryTypeDef
+
+def get_value() -> ConnectPeerSummaryTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectPeerSummaryTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    ConnectAttachmentId: NotRequired[str],
+    ConnectPeerId: NotRequired[str],
+    EdgeLocation: NotRequired[str],
+    ConnectPeerState: NotRequired[ConnectPeerStateType],  # (1)
+    CreatedAt: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ConnectPeerStateType](./literals.md#connectpeerstatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ConnectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "ConnectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    ConnectionId: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    ConnectedDeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    ConnectedLinkId: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[ConnectionStateType],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CoreNetworkSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkSummaryTypeDef
+
+def get_value() -> CoreNetworkSummaryTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkSummaryTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    CoreNetworkArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    State: NotRequired[CoreNetworkStateType],  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: CoreNetworkStateType](./literals.md#corenetworkstatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateConnectionRequestRequestTypeDef
+
+def get_value() -> CreateConnectionRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "DeviceId": ...,
+        "ConnectedDeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConnectionRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    DeviceId: str,
+    ConnectedDeviceId: str,
+    LinkId: NotRequired[str],
+    ConnectedLinkId: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateCoreNetworkRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkRequestRequestTypeDef
+
+def get_value() -> CreateCoreNetworkRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoreNetworkRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    PolicyDocument: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateGlobalNetworkRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkRequestRequestTypeDef
+
+def get_value() -> CreateGlobalNetworkRequestRequestTypeDef:
+    return {
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGlobalNetworkRequestRequestTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
+
+def get_value() -> CreateSiteToSiteVpnAttachmentRequestRequestTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "VpnConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSiteToSiteVpnAttachmentRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: str,
+    VpnConnectionArn: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GlobalNetworkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GlobalNetworkTypeDef
+
+def get_value() -> GlobalNetworkTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalNetworkTypeDef(TypedDict):
+    GlobalNetworkId: NotRequired[str],
+    GlobalNetworkArn: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[GlobalNetworkStateType],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: GlobalNetworkStateType](./literals.md#globalnetworkstatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NetworkResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import NetworkResourceTypeDef
+
+def get_value() -> NetworkResourceTypeDef:
+    return {
+        "RegisteredGatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkResourceTypeDef(TypedDict):
+    RegisteredGatewayArn: NotRequired[str],
+    CoreNetworkId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    AccountId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    Definition: NotRequired[str],
+    DefinitionTimestamp: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    Metadata: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ProposedSegmentChangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ProposedSegmentChangeTypeDef
+
+def get_value() -> ProposedSegmentChangeTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class ProposedSegmentChangeTypeDef(TypedDict):
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    AttachmentPolicyRuleNumber: NotRequired[int],
+    SegmentName: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateLinkRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateLinkRequestRequestTypeDef
+
+def get_value() -> CreateLinkRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "Bandwidth": ...,
+        "SiteId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLinkRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    Bandwidth: BandwidthTypeDef,  # (1)
+    SiteId: str,
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    Provider: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## LinkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import LinkTypeDef
+
+def get_value() -> LinkTypeDef:
+    return {
+        "LinkId": ...,
+    }
+```
+
+```python title="Definition"
+class LinkTypeDef(TypedDict):
+    LinkId: NotRequired[str],
+    LinkArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    SiteId: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    Bandwidth: NotRequired[BandwidthTypeDef],  # (1)
+    Provider: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[LinkStateType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
+2. See [:material-code-brackets: LinkStateType](./literals.md#linkstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateLinkRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateLinkRequestRequestTypeDef
+
+def get_value() -> UpdateLinkRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "LinkId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLinkRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    LinkId: str,
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    Bandwidth: NotRequired[BandwidthTypeDef],  # (1)
+    Provider: NotRequired[str],
+```
+
+1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
+## CreateConnectPeerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateConnectPeerRequestRequestTypeDef
+
+def get_value() -> CreateConnectPeerRequestRequestTypeDef:
+    return {
+        "ConnectAttachmentId": ...,
+        "PeerAddress": ...,
+        "InsideCidrBlocks": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConnectPeerRequestRequestTypeDef(TypedDict):
+    ConnectAttachmentId: str,
+    PeerAddress: str,
+    InsideCidrBlocks: Sequence[str],
+    CoreNetworkAddress: NotRequired[str],
+    BgpOptions: NotRequired[BgpOptionsTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateConnectAttachmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentRequestRequestTypeDef
+
+def get_value() -> CreateConnectAttachmentRequestRequestTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "EdgeLocation": ...,
+        "TransportAttachmentId": ...,
+        "Options": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConnectAttachmentRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: str,
+    EdgeLocation: str,
+    TransportAttachmentId: str,
+    Options: ConnectAttachmentOptionsTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ConnectPeerConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ConnectPeerConfigurationTypeDef
+
+def get_value() -> ConnectPeerConfigurationTypeDef:
+    return {
+        "CoreNetworkAddress": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectPeerConfigurationTypeDef(TypedDict):
+    CoreNetworkAddress: NotRequired[str],
+    PeerAddress: NotRequired[str],
+    InsideCidrBlocks: NotRequired[List[str]],
+    Protocol: NotRequired[TunnelProtocolType],  # (1)
+    BgpConfigurations: NotRequired[List[ConnectPeerBgpConfigurationTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: TunnelProtocolType](./literals.md#tunnelprotocoltype) 
+2. See [:material-code-braces: ConnectPeerBgpConfigurationTypeDef](./type_defs.md#connectpeerbgpconfigurationtypedef) 
+## NetworkTelemetryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import NetworkTelemetryTypeDef
+
+def get_value() -> NetworkTelemetryTypeDef:
+    return {
+        "RegisteredGatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkTelemetryTypeDef(TypedDict):
+    RegisteredGatewayArn: NotRequired[str],
+    CoreNetworkId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    AccountId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    Address: NotRequired[str],
+    Health: NotRequired[ConnectionHealthTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConnectionHealthTypeDef](./type_defs.md#connectionhealthtypedef) 
+## CoreNetworkChangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeTypeDef
+
+def get_value() -> CoreNetworkChangeTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkChangeTypeDef(TypedDict):
+    Type: NotRequired[ChangeTypeType],  # (1)
+    Action: NotRequired[ChangeActionType],  # (2)
+    Identifier: NotRequired[str],
+    PreviousValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
+    NewValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+2. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+3. See [:material-code-braces: CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef) 
+4. See [:material-code-braces: CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef) 
+## CoreNetworkPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkPolicyTypeDef
+
+def get_value() -> CoreNetworkPolicyTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkPolicyTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    PolicyVersionId: NotRequired[int],
+    Alias: NotRequired[CoreNetworkPolicyAliasType],  # (1)
+    Description: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    ChangeSetState: NotRequired[ChangeSetStateType],  # (2)
+    PolicyErrors: NotRequired[List[CoreNetworkPolicyErrorTypeDef]],  # (3)
+    PolicyDocument: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype) 
+2. See [:material-code-brackets: ChangeSetStateType](./literals.md#changesetstatetype) 
+3. See [:material-code-braces: CoreNetworkPolicyErrorTypeDef](./type_defs.md#corenetworkpolicyerrortypedef) 
+## ListCoreNetworkPolicyVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsResponseTypeDef
+
+def get_value() -> ListCoreNetworkPolicyVersionsResponseTypeDef:
+    return {
+        "CoreNetworkPolicyVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoreNetworkPolicyVersionsResponseTypeDef(TypedDict):
+    CoreNetworkPolicyVersions: List[CoreNetworkPolicyVersionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkPolicyVersionTypeDef](./type_defs.md#corenetworkpolicyversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RouteTableIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RouteTableIdentifierTypeDef
+
+def get_value() -> RouteTableIdentifierTypeDef:
+    return {
+        "TransitGatewayRouteTableArn": ...,
+    }
+```
+
+```python title="Definition"
+class RouteTableIdentifierTypeDef(TypedDict):
+    TransitGatewayRouteTableArn: NotRequired[str],
+    CoreNetworkSegmentEdge: NotRequired[CoreNetworkSegmentEdgeIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef) 
+## CoreNetworkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkTypeDef
+
+def get_value() -> CoreNetworkTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkTypeDef(TypedDict):
+    GlobalNetworkId: NotRequired[str],
+    CoreNetworkId: NotRequired[str],
+    CoreNetworkArn: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[CoreNetworkStateType],  # (1)
+    Segments: NotRequired[List[CoreNetworkSegmentTypeDef]],  # (2)
+    Edges: NotRequired[List[CoreNetworkEdgeTypeDef]],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: CoreNetworkStateType](./literals.md#corenetworkstatetype) 
+2. See [:material-code-braces: CoreNetworkSegmentTypeDef](./type_defs.md#corenetworksegmenttypedef) 
+3. See [:material-code-braces: CoreNetworkEdgeTypeDef](./type_defs.md#corenetworkedgetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateDeviceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateDeviceRequestRequestTypeDef
+
+def get_value() -> CreateDeviceRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDeviceRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    AWSLocation: NotRequired[AWSLocationTypeDef],  # (1)
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    Vendor: NotRequired[str],
+    Model: NotRequired[str],
+    SerialNumber: NotRequired[str],
+    Location: NotRequired[LocationTypeDef],  # (2)
+    SiteId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
+2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateSiteRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateSiteRequestRequestTypeDef
+
+def get_value() -> CreateSiteRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSiteRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    Description: NotRequired[str],
+    Location: NotRequired[LocationTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DeviceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "DeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    DeviceId: NotRequired[str],
+    DeviceArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    AWSLocation: NotRequired[AWSLocationTypeDef],  # (1)
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    Vendor: NotRequired[str],
+    Model: NotRequired[str],
+    SerialNumber: NotRequired[str],
+    Location: NotRequired[LocationTypeDef],  # (2)
+    SiteId: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[DeviceStateType],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
+2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+3. See [:material-code-brackets: DeviceStateType](./literals.md#devicestatetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## SiteTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import SiteTypeDef
+
+def get_value() -> SiteTypeDef:
+    return {
+        "SiteId": ...,
+    }
+```
+
+```python title="Definition"
+class SiteTypeDef(TypedDict):
+    SiteId: NotRequired[str],
+    SiteArn: NotRequired[str],
+    GlobalNetworkId: NotRequired[str],
+    Description: NotRequired[str],
+    Location: NotRequired[LocationTypeDef],  # (1)
+    CreatedAt: NotRequired[datetime],
+    State: NotRequired[SiteStateType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-brackets: SiteStateType](./literals.md#sitestatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4249,147 +2639,6 @@ class UpdateDeviceRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
 2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-## UpdateDeviceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateDeviceResponseTypeDef
-
-def get_value() -> UpdateDeviceResponseTypeDef:
-    return {
-        "Device": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDeviceResponseTypeDef(TypedDict):
-    Device: DeviceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateGlobalNetworkRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkRequestRequestTypeDef
-
-def get_value() -> UpdateGlobalNetworkRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGlobalNetworkRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    Description: NotRequired[str],
-```
-
-## UpdateGlobalNetworkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkResponseTypeDef
-
-def get_value() -> UpdateGlobalNetworkResponseTypeDef:
-    return {
-        "GlobalNetwork": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateGlobalNetworkResponseTypeDef(TypedDict):
-    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateLinkRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateLinkRequestRequestTypeDef
-
-def get_value() -> UpdateLinkRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "LinkId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateLinkRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    LinkId: str,
-    Description: NotRequired[str],
-    Type: NotRequired[str],
-    Bandwidth: NotRequired[BandwidthTypeDef],  # (1)
-    Provider: NotRequired[str],
-```
-
-1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
-## UpdateLinkResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseTypeDef
-
-def get_value() -> UpdateLinkResponseTypeDef:
-    return {
-        "Link": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateLinkResponseTypeDef(TypedDict):
-    Link: LinkTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateNetworkResourceMetadataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataRequestRequestTypeDef
-
-def get_value() -> UpdateNetworkResourceMetadataRequestRequestTypeDef:
-    return {
-        "GlobalNetworkId": ...,
-        "ResourceArn": ...,
-        "Metadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateNetworkResourceMetadataRequestRequestTypeDef(TypedDict):
-    GlobalNetworkId: str,
-    ResourceArn: str,
-    Metadata: Mapping[str, str],
-```
-
-## UpdateNetworkResourceMetadataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataResponseTypeDef
-
-def get_value() -> UpdateNetworkResourceMetadataResponseTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Metadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateNetworkResourceMetadataResponseTypeDef(TypedDict):
-    ResourceArn: str,
-    Metadata: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSiteRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4411,26 +2660,31 @@ class UpdateSiteRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
-## UpdateSiteResponseTypeDef
+## CreateVpcAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateSiteResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentRequestRequestTypeDef
 
-def get_value() -> UpdateSiteResponseTypeDef:
+def get_value() -> CreateVpcAttachmentRequestRequestTypeDef:
     return {
-        "Site": ...,
-        "ResponseMetadata": ...,
+        "CoreNetworkId": ...,
+        "VpcArn": ...,
+        "SubnetArns": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateSiteResponseTypeDef(TypedDict):
-    Site: SiteTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CreateVpcAttachmentRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: str,
+    VpcArn: str,
+    SubnetArns: Sequence[str],
+    Options: NotRequired[VpcOptionsTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateVpcAttachmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4451,26 +2705,1517 @@ class UpdateVpcAttachmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
-## UpdateVpcAttachmentResponseTypeDef
+## DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import UpdateVpcAttachmentResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef
 
-def get_value() -> UpdateVpcAttachmentResponseTypeDef:
+def get_value() -> DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef:
     return {
-        "VpcAttachment": ...,
+        "GlobalNetworkIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef(TypedDict):
+    GlobalNetworkIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef
+
+def get_value() -> GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    ConnectPeerIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetConnectionsRequestGetConnectionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectionsRequestGetConnectionsPaginateTypeDef
+
+def get_value() -> GetConnectionsRequestGetConnectionsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectionsRequestGetConnectionsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    ConnectionIds: NotRequired[Sequence[str]],
+    DeviceId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef
+
+def get_value() -> GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "PolicyVersionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef(TypedDict):
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef
+
+def get_value() -> GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    CustomerGatewayArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetDevicesRequestGetDevicesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetDevicesRequestGetDevicesPaginateTypeDef
+
+def get_value() -> GetDevicesRequestGetDevicesPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDevicesRequestGetDevicesPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    DeviceIds: NotRequired[Sequence[str]],
+    SiteId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef
+
+def get_value() -> GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    DeviceId: NotRequired[str],
+    LinkId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetLinksRequestGetLinksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetLinksRequestGetLinksPaginateTypeDef
+
+def get_value() -> GetLinksRequestGetLinksPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetLinksRequestGetLinksPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    LinkIds: NotRequired[Sequence[str]],
+    SiteId: NotRequired[str],
+    Type: NotRequired[str],
+    Provider: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef
+
+def get_value() -> GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    ResourceType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef
+
+def get_value() -> GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    CoreNetworkId: NotRequired[str],
+    RegisteredGatewayArn: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    AccountId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef
+
+def get_value() -> GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    CoreNetworkId: NotRequired[str],
+    RegisteredGatewayArn: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    AccountId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef
+
+def get_value() -> GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    CoreNetworkId: NotRequired[str],
+    RegisteredGatewayArn: NotRequired[str],
+    AwsRegion: NotRequired[str],
+    AccountId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetSitesRequestGetSitesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetSitesRequestGetSitesPaginateTypeDef
+
+def get_value() -> GetSitesRequestGetSitesPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSitesRequestGetSitesPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    SiteIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef
+
+def get_value() -> GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    TransitGatewayConnectPeerArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef
+
+def get_value() -> GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    TransitGatewayArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAttachmentsRequestListAttachmentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListAttachmentsRequestListAttachmentsPaginateTypeDef
+
+def get_value() -> ListAttachmentsRequestListAttachmentsPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachmentsRequestListAttachmentsPaginateTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    AttachmentType: NotRequired[AttachmentTypeType],  # (1)
+    EdgeLocation: NotRequired[str],
+    State: NotRequired[AttachmentStateType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
+2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListConnectPeersRequestListConnectPeersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListConnectPeersRequestListConnectPeersPaginateTypeDef
+
+def get_value() -> ListConnectPeersRequestListConnectPeersPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ListConnectPeersRequestListConnectPeersPaginateTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    ConnectAttachmentId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef
+
+def get_value() -> ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef(TypedDict):
+    CoreNetworkId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCoreNetworksRequestListCoreNetworksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworksRequestListCoreNetworksPaginateTypeDef
+
+def get_value() -> ListCoreNetworksRequestListCoreNetworksPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoreNetworksRequestListCoreNetworksPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetNetworkResourceCountsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsResponseTypeDef
+
+def get_value() -> GetNetworkResourceCountsResponseTypeDef:
+    return {
+        "NetworkResourceCounts": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateVpcAttachmentResponseTypeDef(TypedDict):
-    VpcAttachment: VpcAttachmentTypeDef,  # (1)
+class GetNetworkResourceCountsResponseTypeDef(TypedDict):
+    NetworkResourceCounts: List[NetworkResourceCountTypeDef],  # (1)
+    NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
+1. See [:material-code-braces: NetworkResourceCountTypeDef](./type_defs.md#networkresourcecounttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNetworkResourceRelationshipsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsResponseTypeDef
+
+def get_value() -> GetNetworkResourceRelationshipsResponseTypeDef:
+    return {
+        "Relationships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkResourceRelationshipsResponseTypeDef(TypedDict):
+    Relationships: List[RelationshipTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RelationshipTypeDef](./type_defs.md#relationshiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PathComponentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import PathComponentTypeDef
+
+def get_value() -> PathComponentTypeDef:
+    return {
+        "Sequence": ...,
+    }
+```
+
+```python title="Definition"
+class PathComponentTypeDef(TypedDict):
+    Sequence: NotRequired[int],
+    Resource: NotRequired[NetworkResourceSummaryTypeDef],  # (1)
+    DestinationCidrBlock: NotRequired[str],
+```
+
+1. See [:material-code-braces: NetworkResourceSummaryTypeDef](./type_defs.md#networkresourcesummarytypedef) 
+## NetworkRouteTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import NetworkRouteTypeDef
+
+def get_value() -> NetworkRouteTypeDef:
+    return {
+        "DestinationCidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkRouteTypeDef(TypedDict):
+    DestinationCidrBlock: NotRequired[str],
+    Destinations: NotRequired[List[NetworkRouteDestinationTypeDef]],  # (1)
+    PrefixListId: NotRequired[str],
+    State: NotRequired[RouteStateType],  # (2)
+    Type: NotRequired[RouteTypeType],  # (3)
+```
+
+1. See [:material-code-braces: NetworkRouteDestinationTypeDef](./type_defs.md#networkroutedestinationtypedef) 
+2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+## StartRouteAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisRequestRequestTypeDef
+
+def get_value() -> StartRouteAnalysisRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "Source": ...,
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class StartRouteAnalysisRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    Source: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
+    Destination: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
+    IncludeReturnPath: NotRequired[bool],
+    UseMiddleboxes: NotRequired[bool],
+```
+
+1. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
+2. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
+## TransitGatewayRegistrationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import TransitGatewayRegistrationTypeDef
+
+def get_value() -> TransitGatewayRegistrationTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayRegistrationTypeDef(TypedDict):
+    GlobalNetworkId: NotRequired[str],
+    TransitGatewayArn: NotRequired[str],
+    State: NotRequired[TransitGatewayRegistrationStateReasonTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef) 
+## ListConnectPeersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListConnectPeersResponseTypeDef
+
+def get_value() -> ListConnectPeersResponseTypeDef:
+    return {
+        "ConnectPeers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConnectPeersResponseTypeDef(TypedDict):
+    ConnectPeers: List[ConnectPeerSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectPeerSummaryTypeDef](./type_defs.md#connectpeersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseTypeDef
+
+def get_value() -> CreateConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseTypeDef
+
+def get_value() -> DeleteConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConnectionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseTypeDef
+
+def get_value() -> GetConnectionsResponseTypeDef:
+    return {
+        "Connections": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectionsResponseTypeDef(TypedDict):
+    Connections: List[ConnectionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateConnectionResponseTypeDef
+
+def get_value() -> UpdateConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCoreNetworksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworksResponseTypeDef
+
+def get_value() -> ListCoreNetworksResponseTypeDef:
+    return {
+        "CoreNetworks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoreNetworksResponseTypeDef(TypedDict):
+    CoreNetworks: List[CoreNetworkSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkSummaryTypeDef](./type_defs.md#corenetworksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGlobalNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkResponseTypeDef
+
+def get_value() -> CreateGlobalNetworkResponseTypeDef:
+    return {
+        "GlobalNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGlobalNetworkResponseTypeDef(TypedDict):
+    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGlobalNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkResponseTypeDef
+
+def get_value() -> DeleteGlobalNetworkResponseTypeDef:
+    return {
+        "GlobalNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGlobalNetworkResponseTypeDef(TypedDict):
+    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeGlobalNetworksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksResponseTypeDef
+
+def get_value() -> DescribeGlobalNetworksResponseTypeDef:
+    return {
+        "GlobalNetworks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGlobalNetworksResponseTypeDef(TypedDict):
+    GlobalNetworks: List[GlobalNetworkTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGlobalNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkResponseTypeDef
+
+def get_value() -> UpdateGlobalNetworkResponseTypeDef:
+    return {
+        "GlobalNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGlobalNetworkResponseTypeDef(TypedDict):
+    GlobalNetwork: GlobalNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNetworkResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesResponseTypeDef
+
+def get_value() -> GetNetworkResourcesResponseTypeDef:
+    return {
+        "NetworkResources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkResourcesResponseTypeDef(TypedDict):
+    NetworkResources: List[NetworkResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AttachmentTypeDef
+
+def get_value() -> AttachmentTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class AttachmentTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    CoreNetworkArn: NotRequired[str],
+    AttachmentId: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    AttachmentType: NotRequired[AttachmentTypeType],  # (1)
+    State: NotRequired[AttachmentStateType],  # (2)
+    EdgeLocation: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    AttachmentPolicyRuleNumber: NotRequired[int],
+    SegmentName: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    ProposedSegmentChange: NotRequired[ProposedSegmentChangeTypeDef],  # (4)
+    CreatedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
+2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ProposedSegmentChangeTypeDef](./type_defs.md#proposedsegmentchangetypedef) 
+## CreateLinkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateLinkResponseTypeDef
+
+def get_value() -> CreateLinkResponseTypeDef:
+    return {
+        "Link": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLinkResponseTypeDef(TypedDict):
+    Link: LinkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteLinkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteLinkResponseTypeDef
+
+def get_value() -> DeleteLinkResponseTypeDef:
+    return {
+        "Link": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLinkResponseTypeDef(TypedDict):
+    Link: LinkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLinksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetLinksResponseTypeDef
+
+def get_value() -> GetLinksResponseTypeDef:
+    return {
+        "Links": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLinksResponseTypeDef(TypedDict):
+    Links: List[LinkTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateLinkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseTypeDef
+
+def get_value() -> UpdateLinkResponseTypeDef:
+    return {
+        "Link": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLinkResponseTypeDef(TypedDict):
+    Link: LinkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LinkTypeDef](./type_defs.md#linktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConnectPeerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ConnectPeerTypeDef
+
+def get_value() -> ConnectPeerTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectPeerTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    ConnectAttachmentId: NotRequired[str],
+    ConnectPeerId: NotRequired[str],
+    EdgeLocation: NotRequired[str],
+    State: NotRequired[ConnectPeerStateType],  # (1)
+    CreatedAt: NotRequired[datetime],
+    Configuration: NotRequired[ConnectPeerConfigurationTypeDef],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ConnectPeerStateType](./literals.md#connectpeerstatetype) 
+2. See [:material-code-braces: ConnectPeerConfigurationTypeDef](./type_defs.md#connectpeerconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetNetworkTelemetryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryResponseTypeDef
+
+def get_value() -> GetNetworkTelemetryResponseTypeDef:
+    return {
+        "NetworkTelemetry": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkTelemetryResponseTypeDef(TypedDict):
+    NetworkTelemetry: List[NetworkTelemetryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkTelemetryTypeDef](./type_defs.md#networktelemetrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCoreNetworkChangeSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetResponseTypeDef
+
+def get_value() -> GetCoreNetworkChangeSetResponseTypeDef:
+    return {
+        "CoreNetworkChanges": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkChangeSetResponseTypeDef(TypedDict):
+    CoreNetworkChanges: List[CoreNetworkChangeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkChangeTypeDef](./type_defs.md#corenetworkchangetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteCoreNetworkPolicyVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkPolicyVersionResponseTypeDef
+
+def get_value() -> DeleteCoreNetworkPolicyVersionResponseTypeDef:
+    return {
+        "CoreNetworkPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoreNetworkPolicyVersionResponseTypeDef(TypedDict):
+    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCoreNetworkPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkPolicyResponseTypeDef
+
+def get_value() -> GetCoreNetworkPolicyResponseTypeDef:
+    return {
+        "CoreNetworkPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkPolicyResponseTypeDef(TypedDict):
+    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutCoreNetworkPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import PutCoreNetworkPolicyResponseTypeDef
+
+def get_value() -> PutCoreNetworkPolicyResponseTypeDef:
+    return {
+        "CoreNetworkPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutCoreNetworkPolicyResponseTypeDef(TypedDict):
+    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestoreCoreNetworkPolicyVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RestoreCoreNetworkPolicyVersionResponseTypeDef
+
+def get_value() -> RestoreCoreNetworkPolicyVersionResponseTypeDef:
+    return {
+        "CoreNetworkPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreCoreNetworkPolicyVersionResponseTypeDef(TypedDict):
+    CoreNetworkPolicy: CoreNetworkPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNetworkRoutesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesRequestRequestTypeDef
+
+def get_value() -> GetNetworkRoutesRequestRequestTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+        "RouteTableIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkRoutesRequestRequestTypeDef(TypedDict):
+    GlobalNetworkId: str,
+    RouteTableIdentifier: RouteTableIdentifierTypeDef,  # (1)
+    ExactCidrMatches: NotRequired[Sequence[str]],
+    LongestPrefixMatches: NotRequired[Sequence[str]],
+    SubnetOfMatches: NotRequired[Sequence[str]],
+    SupernetOfMatches: NotRequired[Sequence[str]],
+    PrefixListIds: NotRequired[Sequence[str]],
+    States: NotRequired[Sequence[RouteStateType]],  # (2)
+    Types: NotRequired[Sequence[RouteTypeType]],  # (3)
+    DestinationFilters: NotRequired[Mapping[str, Sequence[str]]],
+```
+
+1. See [:material-code-braces: RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef) 
+2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+## CreateCoreNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkResponseTypeDef
+
+def get_value() -> CreateCoreNetworkResponseTypeDef:
+    return {
+        "CoreNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoreNetworkResponseTypeDef(TypedDict):
+    CoreNetwork: CoreNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteCoreNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkResponseTypeDef
+
+def get_value() -> DeleteCoreNetworkResponseTypeDef:
+    return {
+        "CoreNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoreNetworkResponseTypeDef(TypedDict):
+    CoreNetwork: CoreNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCoreNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkResponseTypeDef
+
+def get_value() -> GetCoreNetworkResponseTypeDef:
+    return {
+        "CoreNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkResponseTypeDef(TypedDict):
+    CoreNetwork: CoreNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateCoreNetworkResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateCoreNetworkResponseTypeDef
+
+def get_value() -> UpdateCoreNetworkResponseTypeDef:
+    return {
+        "CoreNetwork": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCoreNetworkResponseTypeDef(TypedDict):
+    CoreNetwork: CoreNetworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkTypeDef](./type_defs.md#corenetworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDeviceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateDeviceResponseTypeDef
+
+def get_value() -> CreateDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteDeviceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteDeviceResponseTypeDef
+
+def get_value() -> DeleteDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDevicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetDevicesResponseTypeDef
+
+def get_value() -> GetDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDeviceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateDeviceResponseTypeDef
+
+def get_value() -> UpdateDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSiteResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateSiteResponseTypeDef
+
+def get_value() -> CreateSiteResponseTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSiteResponseTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteSiteResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteSiteResponseTypeDef
+
+def get_value() -> DeleteSiteResponseTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSiteResponseTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSitesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetSitesResponseTypeDef
+
+def get_value() -> GetSitesResponseTypeDef:
+    return {
+        "Sites": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSitesResponseTypeDef(TypedDict):
+    Sites: List[SiteTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSiteResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateSiteResponseTypeDef
+
+def get_value() -> UpdateSiteResponseTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSiteResponseTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RouteAnalysisPathTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisPathTypeDef
+
+def get_value() -> RouteAnalysisPathTypeDef:
+    return {
+        "CompletionStatus": ...,
+    }
+```
+
+```python title="Definition"
+class RouteAnalysisPathTypeDef(TypedDict):
+    CompletionStatus: NotRequired[RouteAnalysisCompletionTypeDef],  # (1)
+    Path: NotRequired[List[PathComponentTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: RouteAnalysisCompletionTypeDef](./type_defs.md#routeanalysiscompletiontypedef) 
+2. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
+## GetNetworkRoutesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesResponseTypeDef
+
+def get_value() -> GetNetworkRoutesResponseTypeDef:
+    return {
+        "RouteTableArn": ...,
+        "CoreNetworkSegmentEdge": ...,
+        "RouteTableType": ...,
+        "RouteTableTimestamp": ...,
+        "NetworkRoutes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkRoutesResponseTypeDef(TypedDict):
+    RouteTableArn: str,
+    CoreNetworkSegmentEdge: CoreNetworkSegmentEdgeIdentifierTypeDef,  # (1)
+    RouteTableType: RouteTableTypeType,  # (2)
+    RouteTableTimestamp: datetime,
+    NetworkRoutes: List[NetworkRouteTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef) 
+2. See [:material-code-brackets: RouteTableTypeType](./literals.md#routetabletypetype) 
+3. See [:material-code-braces: NetworkRouteTypeDef](./type_defs.md#networkroutetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeregisterTransitGatewayResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayResponseTypeDef
+
+def get_value() -> DeregisterTransitGatewayResponseTypeDef:
+    return {
+        "TransitGatewayRegistration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeregisterTransitGatewayResponseTypeDef(TypedDict):
+    TransitGatewayRegistration: TransitGatewayRegistrationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayRegistrationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsResponseTypeDef
+
+def get_value() -> GetTransitGatewayRegistrationsResponseTypeDef:
+    return {
+        "TransitGatewayRegistrations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayRegistrationsResponseTypeDef(TypedDict):
+    TransitGatewayRegistrations: List[TransitGatewayRegistrationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterTransitGatewayResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayResponseTypeDef
+
+def get_value() -> RegisterTransitGatewayResponseTypeDef:
+    return {
+        "TransitGatewayRegistration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterTransitGatewayResponseTypeDef(TypedDict):
+    TransitGatewayRegistration: TransitGatewayRegistrationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AcceptAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AcceptAttachmentResponseTypeDef
+
+def get_value() -> AcceptAttachmentResponseTypeDef:
+    return {
+        "Attachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptAttachmentResponseTypeDef(TypedDict):
+    Attachment: AttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConnectAttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ConnectAttachmentTypeDef
+
+def get_value() -> ConnectAttachmentTypeDef:
+    return {
+        "Attachment": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectAttachmentTypeDef(TypedDict):
+    Attachment: NotRequired[AttachmentTypeDef],  # (1)
+    TransportAttachmentId: NotRequired[str],
+    Options: NotRequired[ConnectAttachmentOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef) 
+## DeleteAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteAttachmentResponseTypeDef
+
+def get_value() -> DeleteAttachmentResponseTypeDef:
+    return {
+        "Attachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAttachmentResponseTypeDef(TypedDict):
+    Attachment: AttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttachmentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListAttachmentsResponseTypeDef
+
+def get_value() -> ListAttachmentsResponseTypeDef:
+    return {
+        "Attachments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachmentsResponseTypeDef(TypedDict):
+    Attachments: List[AttachmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RejectAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RejectAttachmentResponseTypeDef
+
+def get_value() -> RejectAttachmentResponseTypeDef:
+    return {
+        "Attachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RejectAttachmentResponseTypeDef(TypedDict):
+    Attachment: AttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SiteToSiteVpnAttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import SiteToSiteVpnAttachmentTypeDef
+
+def get_value() -> SiteToSiteVpnAttachmentTypeDef:
+    return {
+        "Attachment": ...,
+    }
+```
+
+```python title="Definition"
+class SiteToSiteVpnAttachmentTypeDef(TypedDict):
+    Attachment: NotRequired[AttachmentTypeDef],  # (1)
+    VpnConnectionArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
 ## VpcAttachmentTypeDef
 
 ```python title="Usage Example"
@@ -4491,19 +4236,274 @@ class VpcAttachmentTypeDef(TypedDict):
 
 1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
 2. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
-## VpcOptionsTypeDef
+## CreateConnectPeerResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_networkmanager.type_defs import VpcOptionsTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateConnectPeerResponseTypeDef
 
-def get_value() -> VpcOptionsTypeDef:
+def get_value() -> CreateConnectPeerResponseTypeDef:
     return {
-        "Ipv6Support": ...,
+        "ConnectPeer": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class VpcOptionsTypeDef(TypedDict):
-    Ipv6Support: NotRequired[bool],
+class CreateConnectPeerResponseTypeDef(TypedDict):
+    ConnectPeer: ConnectPeerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeleteConnectPeerResponseTypeDef
+
+def get_value() -> DeleteConnectPeerResponseTypeDef:
+    return {
+        "ConnectPeer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteConnectPeerResponseTypeDef(TypedDict):
+    ConnectPeer: ConnectPeerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConnectPeerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerResponseTypeDef
+
+def get_value() -> GetConnectPeerResponseTypeDef:
+    return {
+        "ConnectPeer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectPeerResponseTypeDef(TypedDict):
+    ConnectPeer: ConnectPeerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectPeerTypeDef](./type_defs.md#connectpeertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RouteAnalysisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisTypeDef
+
+def get_value() -> RouteAnalysisTypeDef:
+    return {
+        "GlobalNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class RouteAnalysisTypeDef(TypedDict):
+    GlobalNetworkId: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    RouteAnalysisId: NotRequired[str],
+    StartTimestamp: NotRequired[datetime],
+    Status: NotRequired[RouteAnalysisStatusType],  # (1)
+    Source: NotRequired[RouteAnalysisEndpointOptionsTypeDef],  # (2)
+    Destination: NotRequired[RouteAnalysisEndpointOptionsTypeDef],  # (2)
+    IncludeReturnPath: NotRequired[bool],
+    UseMiddleboxes: NotRequired[bool],
+    ForwardPath: NotRequired[RouteAnalysisPathTypeDef],  # (4)
+    ReturnPath: NotRequired[RouteAnalysisPathTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: RouteAnalysisStatusType](./literals.md#routeanalysisstatustype) 
+2. See [:material-code-braces: RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef) 
+3. See [:material-code-braces: RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef) 
+4. See [:material-code-braces: RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef) 
+5. See [:material-code-braces: RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef) 
+## CreateConnectAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentResponseTypeDef
+
+def get_value() -> CreateConnectAttachmentResponseTypeDef:
+    return {
+        "ConnectAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConnectAttachmentResponseTypeDef(TypedDict):
+    ConnectAttachment: ConnectAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConnectAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetConnectAttachmentResponseTypeDef
+
+def get_value() -> GetConnectAttachmentResponseTypeDef:
+    return {
+        "ConnectAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectAttachmentResponseTypeDef(TypedDict):
+    ConnectAttachment: ConnectAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSiteToSiteVpnAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentResponseTypeDef
+
+def get_value() -> CreateSiteToSiteVpnAttachmentResponseTypeDef:
+    return {
+        "SiteToSiteVpnAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSiteToSiteVpnAttachmentResponseTypeDef(TypedDict):
+    SiteToSiteVpnAttachment: SiteToSiteVpnAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSiteToSiteVpnAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetSiteToSiteVpnAttachmentResponseTypeDef
+
+def get_value() -> GetSiteToSiteVpnAttachmentResponseTypeDef:
+    return {
+        "SiteToSiteVpnAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSiteToSiteVpnAttachmentResponseTypeDef(TypedDict):
+    SiteToSiteVpnAttachment: SiteToSiteVpnAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVpcAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentResponseTypeDef
+
+def get_value() -> CreateVpcAttachmentResponseTypeDef:
+    return {
+        "VpcAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVpcAttachmentResponseTypeDef(TypedDict):
+    VpcAttachment: VpcAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVpcAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetVpcAttachmentResponseTypeDef
+
+def get_value() -> GetVpcAttachmentResponseTypeDef:
+    return {
+        "VpcAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVpcAttachmentResponseTypeDef(TypedDict):
+    VpcAttachment: VpcAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateVpcAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import UpdateVpcAttachmentResponseTypeDef
+
+def get_value() -> UpdateVpcAttachmentResponseTypeDef:
+    return {
+        "VpcAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVpcAttachmentResponseTypeDef(TypedDict):
+    VpcAttachment: VpcAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRouteAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetRouteAnalysisResponseTypeDef
+
+def get_value() -> GetRouteAnalysisResponseTypeDef:
+    return {
+        "RouteAnalysis": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRouteAnalysisResponseTypeDef(TypedDict):
+    RouteAnalysis: RouteAnalysisTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartRouteAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisResponseTypeDef
+
+def get_value() -> StartRouteAnalysisResponseTypeDef:
+    return {
+        "RouteAnalysis": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartRouteAnalysisResponseTypeDef(TypedDict):
+    RouteAnalysis: RouteAnalysisTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

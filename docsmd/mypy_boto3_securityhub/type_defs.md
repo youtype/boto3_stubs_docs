@@ -93,30 +93,75 @@ class ActionLocalPortDetailsTypeDef(TypedDict):
     PortName: NotRequired[str],
 ```
 
-## ActionRemoteIpDetailsTypeDef
+## CityTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ActionRemoteIpDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import CityTypeDef
 
-def get_value() -> ActionRemoteIpDetailsTypeDef:
+def get_value() -> CityTypeDef:
     return {
-        "IpAddressV4": ...,
+        "CityName": ...,
     }
 ```
 
 ```python title="Definition"
-class ActionRemoteIpDetailsTypeDef(TypedDict):
-    IpAddressV4: NotRequired[str],
-    Organization: NotRequired[IpOrganizationDetailsTypeDef],  # (1)
-    Country: NotRequired[CountryTypeDef],  # (2)
-    City: NotRequired[CityTypeDef],  # (3)
-    GeoLocation: NotRequired[GeoLocationTypeDef],  # (4)
+class CityTypeDef(TypedDict):
+    CityName: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IpOrganizationDetailsTypeDef](./type_defs.md#iporganizationdetailstypedef) 
-2. See [:material-code-braces: CountryTypeDef](./type_defs.md#countrytypedef) 
-3. See [:material-code-braces: CityTypeDef](./type_defs.md#citytypedef) 
-4. See [:material-code-braces: GeoLocationTypeDef](./type_defs.md#geolocationtypedef) 
+## CountryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CountryTypeDef
+
+def get_value() -> CountryTypeDef:
+    return {
+        "CountryCode": ...,
+    }
+```
+
+```python title="Definition"
+class CountryTypeDef(TypedDict):
+    CountryCode: NotRequired[str],
+    CountryName: NotRequired[str],
+```
+
+## GeoLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GeoLocationTypeDef
+
+def get_value() -> GeoLocationTypeDef:
+    return {
+        "Lon": ...,
+    }
+```
+
+```python title="Definition"
+class GeoLocationTypeDef(TypedDict):
+    Lon: NotRequired[float],
+    Lat: NotRequired[float],
+```
+
+## IpOrganizationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import IpOrganizationDetailsTypeDef
+
+def get_value() -> IpOrganizationDetailsTypeDef:
+    return {
+        "Asn": ...,
+    }
+```
+
+```python title="Definition"
+class IpOrganizationDetailsTypeDef(TypedDict):
+    Asn: NotRequired[int],
+    AsnOrg: NotRequired[str],
+    Isp: NotRequired[str],
+    Org: NotRequired[str],
+```
+
 ## ActionRemotePortDetailsTypeDef
 
 ```python title="Usage Example"
@@ -154,30 +199,24 @@ class ActionTargetTypeDef(TypedDict):
     Description: str,
 ```
 
-## ActionTypeDef
+## DnsRequestActionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ActionTypeDef
+from mypy_boto3_securityhub.type_defs import DnsRequestActionTypeDef
 
-def get_value() -> ActionTypeDef:
+def get_value() -> DnsRequestActionTypeDef:
     return {
-        "ActionType": ...,
+        "Domain": ...,
     }
 ```
 
 ```python title="Definition"
-class ActionTypeDef(TypedDict):
-    ActionType: NotRequired[str],
-    NetworkConnectionAction: NotRequired[NetworkConnectionActionTypeDef],  # (1)
-    AwsApiCallAction: NotRequired[AwsApiCallActionTypeDef],  # (2)
-    DnsRequestAction: NotRequired[DnsRequestActionTypeDef],  # (3)
-    PortProbeAction: NotRequired[PortProbeActionTypeDef],  # (4)
+class DnsRequestActionTypeDef(TypedDict):
+    Domain: NotRequired[str],
+    Protocol: NotRequired[str],
+    Blocked: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef) 
-2. See [:material-code-braces: AwsApiCallActionTypeDef](./type_defs.md#awsapicallactiontypedef) 
-3. See [:material-code-braces: DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef) 
-4. See [:material-code-braces: PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef) 
 ## AdjustmentTypeDef
 
 ```python title="Usage Example"
@@ -246,31 +285,6 @@ class AwsApiCallActionDomainDetailsTypeDef(TypedDict):
     Domain: NotRequired[str],
 ```
 
-## AwsApiCallActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsApiCallActionTypeDef
-
-def get_value() -> AwsApiCallActionTypeDef:
-    return {
-        "Api": ...,
-    }
-```
-
-```python title="Definition"
-class AwsApiCallActionTypeDef(TypedDict):
-    Api: NotRequired[str],
-    ServiceName: NotRequired[str],
-    CallerType: NotRequired[str],
-    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (1)
-    DomainDetails: NotRequired[AwsApiCallActionDomainDetailsTypeDef],  # (2)
-    AffectedResources: NotRequired[Mapping[str, str]],
-    FirstSeen: NotRequired[str],
-    LastSeen: NotRequired[str],
-```
-
-1. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
-2. See [:material-code-braces: AwsApiCallActionDomainDetailsTypeDef](./type_defs.md#awsapicallactiondomaindetailstypedef) 
 ## AwsApiGatewayAccessLogSettingsTypeDef
 
 ```python title="Usage Example"
@@ -350,91 +364,27 @@ class AwsApiGatewayMethodSettingsTypeDef(TypedDict):
     ResourcePath: NotRequired[str],
 ```
 
-## AwsApiGatewayRestApiDetailsTypeDef
+## AwsCorsConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsApiGatewayRestApiDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import AwsCorsConfigurationTypeDef
 
-def get_value() -> AwsApiGatewayRestApiDetailsTypeDef:
+def get_value() -> AwsCorsConfigurationTypeDef:
     return {
-        "Id": ...,
+        "AllowOrigins": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsApiGatewayRestApiDetailsTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    CreatedDate: NotRequired[str],
-    Version: NotRequired[str],
-    BinaryMediaTypes: NotRequired[Sequence[str]],
-    MinimumCompressionSize: NotRequired[int],
-    ApiKeySource: NotRequired[str],
-    EndpointConfiguration: NotRequired[AwsApiGatewayEndpointConfigurationTypeDef],  # (1)
+class AwsCorsConfigurationTypeDef(TypedDict):
+    AllowOrigins: NotRequired[Sequence[str]],
+    AllowCredentials: NotRequired[bool],
+    ExposeHeaders: NotRequired[Sequence[str]],
+    MaxAge: NotRequired[int],
+    AllowMethods: NotRequired[Sequence[str]],
+    AllowHeaders: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: AwsApiGatewayEndpointConfigurationTypeDef](./type_defs.md#awsapigatewayendpointconfigurationtypedef) 
-## AwsApiGatewayStageDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsApiGatewayStageDetailsTypeDef
-
-def get_value() -> AwsApiGatewayStageDetailsTypeDef:
-    return {
-        "DeploymentId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsApiGatewayStageDetailsTypeDef(TypedDict):
-    DeploymentId: NotRequired[str],
-    ClientCertificateId: NotRequired[str],
-    StageName: NotRequired[str],
-    Description: NotRequired[str],
-    CacheClusterEnabled: NotRequired[bool],
-    CacheClusterSize: NotRequired[str],
-    CacheClusterStatus: NotRequired[str],
-    MethodSettings: NotRequired[Sequence[AwsApiGatewayMethodSettingsTypeDef]],  # (1)
-    Variables: NotRequired[Mapping[str, str]],
-    DocumentationVersion: NotRequired[str],
-    AccessLogSettings: NotRequired[AwsApiGatewayAccessLogSettingsTypeDef],  # (2)
-    CanarySettings: NotRequired[AwsApiGatewayCanarySettingsTypeDef],  # (3)
-    TracingEnabled: NotRequired[bool],
-    CreatedDate: NotRequired[str],
-    LastUpdatedDate: NotRequired[str],
-    WebAclArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsApiGatewayMethodSettingsTypeDef](./type_defs.md#awsapigatewaymethodsettingstypedef) 
-2. See [:material-code-braces: AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef) 
-3. See [:material-code-braces: AwsApiGatewayCanarySettingsTypeDef](./type_defs.md#awsapigatewaycanarysettingstypedef) 
-## AwsApiGatewayV2ApiDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsApiGatewayV2ApiDetailsTypeDef
-
-def get_value() -> AwsApiGatewayV2ApiDetailsTypeDef:
-    return {
-        "ApiEndpoint": ...,
-    }
-```
-
-```python title="Definition"
-class AwsApiGatewayV2ApiDetailsTypeDef(TypedDict):
-    ApiEndpoint: NotRequired[str],
-    ApiId: NotRequired[str],
-    ApiKeySelectionExpression: NotRequired[str],
-    CreatedDate: NotRequired[str],
-    Description: NotRequired[str],
-    Version: NotRequired[str],
-    Name: NotRequired[str],
-    ProtocolType: NotRequired[str],
-    RouteSelectionExpression: NotRequired[str],
-    CorsConfiguration: NotRequired[AwsCorsConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsCorsConfigurationTypeDef](./type_defs.md#awscorsconfigurationtypedef) 
 ## AwsApiGatewayV2RouteSettingsTypeDef
 
 ```python title="Usage Example"
@@ -455,37 +405,6 @@ class AwsApiGatewayV2RouteSettingsTypeDef(TypedDict):
     ThrottlingRateLimit: NotRequired[float],
 ```
 
-## AwsApiGatewayV2StageDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsApiGatewayV2StageDetailsTypeDef
-
-def get_value() -> AwsApiGatewayV2StageDetailsTypeDef:
-    return {
-        "ClientCertificateId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsApiGatewayV2StageDetailsTypeDef(TypedDict):
-    ClientCertificateId: NotRequired[str],
-    CreatedDate: NotRequired[str],
-    Description: NotRequired[str],
-    DefaultRouteSettings: NotRequired[AwsApiGatewayV2RouteSettingsTypeDef],  # (1)
-    DeploymentId: NotRequired[str],
-    LastUpdatedDate: NotRequired[str],
-    RouteSettings: NotRequired[AwsApiGatewayV2RouteSettingsTypeDef],  # (1)
-    StageName: NotRequired[str],
-    StageVariables: NotRequired[Mapping[str, str]],
-    AccessLogSettings: NotRequired[AwsApiGatewayAccessLogSettingsTypeDef],  # (3)
-    AutoDeploy: NotRequired[bool],
-    LastDeploymentStatusMessage: NotRequired[str],
-    ApiGatewayManaged: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef) 
-2. See [:material-code-braces: AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef) 
-3. See [:material-code-braces: AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef) 
 ## AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef
 
 ```python title="Usage Example"
@@ -502,33 +421,6 @@ class AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef(TypedDic
     Value: NotRequired[str],
 ```
 
-## AwsAutoScalingAutoScalingGroupDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupDetailsTypeDef
-
-def get_value() -> AwsAutoScalingAutoScalingGroupDetailsTypeDef:
-    return {
-        "LaunchConfigurationName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsAutoScalingAutoScalingGroupDetailsTypeDef(TypedDict):
-    LaunchConfigurationName: NotRequired[str],
-    LoadBalancerNames: NotRequired[Sequence[str]],
-    HealthCheckType: NotRequired[str],
-    HealthCheckGracePeriod: NotRequired[int],
-    CreatedTime: NotRequired[str],
-    MixedInstancesPolicy: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef],  # (1)
-    AvailabilityZones: NotRequired[Sequence[AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef]],  # (2)
-    LaunchTemplate: NotRequired[AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef],  # (3)
-    CapacityRebalance: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef) 
-2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef) 
-3. See [:material-code-braces: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggrouplaunchtemplatelaunchtemplatespecificationtypedef) 
 ## AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -547,25 +439,6 @@ class AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTyp
     Version: NotRequired[str],
 ```
 
-## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
-
-def get_value() -> AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef:
-    return {
-        "InstancesDistribution": ...,
-    }
-```
-
-```python title="Definition"
-class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef(TypedDict):
-    InstancesDistribution: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef],  # (1)
-    LaunchTemplate: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicyinstancesdistributiondetailstypedef) 
-2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatedetailstypedef) 
 ## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -587,25 +460,6 @@ class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDet
     SpotMaxPrice: NotRequired[str],
 ```
 
-## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
-
-def get_value() -> AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef:
-    return {
-        "LaunchTemplateSpecification": ...,
-    }
-```
-
-```python title="Definition"
-class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef(TypedDict):
-    LaunchTemplateSpecification: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef],  # (1)
-    Overrides: NotRequired[Sequence[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatelaunchtemplatespecificationtypedef) 
-2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplateoverrideslistdetailstypedef) 
 ## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -641,26 +495,6 @@ class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesL
     WeightedCapacity: NotRequired[str],
 ```
 
-## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
-
-def get_value() -> AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef:
-    return {
-        "DeviceName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef(TypedDict):
-    DeviceName: NotRequired[str],
-    Ebs: NotRequired[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef],  # (1)
-    NoDevice: NotRequired[bool],
-    VirtualName: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef) 
 ## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -682,43 +516,6 @@ class AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef(Type
     VolumeType: NotRequired[str],
 ```
 
-## AwsAutoScalingLaunchConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationDetailsTypeDef
-
-def get_value() -> AwsAutoScalingLaunchConfigurationDetailsTypeDef:
-    return {
-        "AssociatePublicIpAddress": ...,
-    }
-```
-
-```python title="Definition"
-class AwsAutoScalingLaunchConfigurationDetailsTypeDef(TypedDict):
-    AssociatePublicIpAddress: NotRequired[bool],
-    BlockDeviceMappings: NotRequired[Sequence[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef]],  # (1)
-    ClassicLinkVpcId: NotRequired[str],
-    ClassicLinkVpcSecurityGroups: NotRequired[Sequence[str]],
-    CreatedTime: NotRequired[str],
-    EbsOptimized: NotRequired[bool],
-    IamInstanceProfile: NotRequired[str],
-    ImageId: NotRequired[str],
-    InstanceMonitoring: NotRequired[AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef],  # (2)
-    InstanceType: NotRequired[str],
-    KernelId: NotRequired[str],
-    KeyName: NotRequired[str],
-    LaunchConfigurationName: NotRequired[str],
-    PlacementTenancy: NotRequired[str],
-    RamdiskId: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[str]],
-    SpotPrice: NotRequired[str],
-    UserData: NotRequired[str],
-    MetadataOptions: NotRequired[AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef) 
-2. See [:material-code-braces: AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef) 
-3. See [:material-code-braces: AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationmetadataoptionstypedef) 
 ## AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef
 
 ```python title="Usage Example"
@@ -753,71 +550,6 @@ class AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef(TypedDict):
     HttpTokens: NotRequired[str],
 ```
 
-## AwsCertificateManagerCertificateDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateDetailsTypeDef
-
-def get_value() -> AwsCertificateManagerCertificateDetailsTypeDef:
-    return {
-        "CertificateAuthorityArn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCertificateManagerCertificateDetailsTypeDef(TypedDict):
-    CertificateAuthorityArn: NotRequired[str],
-    CreatedAt: NotRequired[str],
-    DomainName: NotRequired[str],
-    DomainValidationOptions: NotRequired[Sequence[AwsCertificateManagerCertificateDomainValidationOptionTypeDef]],  # (1)
-    ExtendedKeyUsages: NotRequired[Sequence[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef]],  # (2)
-    FailureReason: NotRequired[str],
-    ImportedAt: NotRequired[str],
-    InUseBy: NotRequired[Sequence[str]],
-    IssuedAt: NotRequired[str],
-    Issuer: NotRequired[str],
-    KeyAlgorithm: NotRequired[str],
-    KeyUsages: NotRequired[Sequence[AwsCertificateManagerCertificateKeyUsageTypeDef]],  # (3)
-    NotAfter: NotRequired[str],
-    NotBefore: NotRequired[str],
-    Options: NotRequired[AwsCertificateManagerCertificateOptionsTypeDef],  # (4)
-    RenewalEligibility: NotRequired[str],
-    RenewalSummary: NotRequired[AwsCertificateManagerCertificateRenewalSummaryTypeDef],  # (5)
-    Serial: NotRequired[str],
-    SignatureAlgorithm: NotRequired[str],
-    Status: NotRequired[str],
-    Subject: NotRequired[str],
-    SubjectAlternativeNames: NotRequired[Sequence[str]],
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef) 
-2. See [:material-code-braces: AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificateextendedkeyusagetypedef) 
-3. See [:material-code-braces: AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef) 
-4. See [:material-code-braces: AwsCertificateManagerCertificateOptionsTypeDef](./type_defs.md#awscertificatemanagercertificateoptionstypedef) 
-5. See [:material-code-braces: AwsCertificateManagerCertificateRenewalSummaryTypeDef](./type_defs.md#awscertificatemanagercertificaterenewalsummarytypedef) 
-## AwsCertificateManagerCertificateDomainValidationOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateDomainValidationOptionTypeDef
-
-def get_value() -> AwsCertificateManagerCertificateDomainValidationOptionTypeDef:
-    return {
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCertificateManagerCertificateDomainValidationOptionTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    ResourceRecord: NotRequired[AwsCertificateManagerCertificateResourceRecordTypeDef],  # (1)
-    ValidationDomain: NotRequired[str],
-    ValidationEmails: NotRequired[Sequence[str]],
-    ValidationMethod: NotRequired[str],
-    ValidationStatus: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsCertificateManagerCertificateResourceRecordTypeDef](./type_defs.md#awscertificatemanagercertificateresourcerecordtypedef) 
 ## AwsCertificateManagerCertificateExtendedKeyUsageTypeDef
 
 ```python title="Usage Example"
@@ -867,26 +599,6 @@ class AwsCertificateManagerCertificateOptionsTypeDef(TypedDict):
     CertificateTransparencyLoggingPreference: NotRequired[str],
 ```
 
-## AwsCertificateManagerCertificateRenewalSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateRenewalSummaryTypeDef
-
-def get_value() -> AwsCertificateManagerCertificateRenewalSummaryTypeDef:
-    return {
-        "DomainValidationOptions": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCertificateManagerCertificateRenewalSummaryTypeDef(TypedDict):
-    DomainValidationOptions: NotRequired[Sequence[AwsCertificateManagerCertificateDomainValidationOptionTypeDef]],  # (1)
-    RenewalStatus: NotRequired[str],
-    RenewalStatusReason: NotRequired[str],
-    UpdatedAt: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef) 
 ## AwsCertificateManagerCertificateResourceRecordTypeDef
 
 ```python title="Usage Example"
@@ -921,23 +633,6 @@ class AwsCloudFrontDistributionCacheBehaviorTypeDef(TypedDict):
     ViewerProtocolPolicy: NotRequired[str],
 ```
 
-## AwsCloudFrontDistributionCacheBehaviorsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionCacheBehaviorsTypeDef
-
-def get_value() -> AwsCloudFrontDistributionCacheBehaviorsTypeDef:
-    return {
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionCacheBehaviorsTypeDef(TypedDict):
-    Items: NotRequired[Sequence[AwsCloudFrontDistributionCacheBehaviorTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef) 
 ## AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef
 
 ```python title="Usage Example"
@@ -954,39 +649,6 @@ class AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef(TypedDict):
     ViewerProtocolPolicy: NotRequired[str],
 ```
 
-## AwsCloudFrontDistributionDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionDetailsTypeDef
-
-def get_value() -> AwsCloudFrontDistributionDetailsTypeDef:
-    return {
-        "CacheBehaviors": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionDetailsTypeDef(TypedDict):
-    CacheBehaviors: NotRequired[AwsCloudFrontDistributionCacheBehaviorsTypeDef],  # (1)
-    DefaultCacheBehavior: NotRequired[AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef],  # (2)
-    DefaultRootObject: NotRequired[str],
-    DomainName: NotRequired[str],
-    ETag: NotRequired[str],
-    LastModifiedTime: NotRequired[str],
-    Logging: NotRequired[AwsCloudFrontDistributionLoggingTypeDef],  # (3)
-    Origins: NotRequired[AwsCloudFrontDistributionOriginsTypeDef],  # (4)
-    OriginGroups: NotRequired[AwsCloudFrontDistributionOriginGroupsTypeDef],  # (5)
-    ViewerCertificate: NotRequired[AwsCloudFrontDistributionViewerCertificateTypeDef],  # (6)
-    Status: NotRequired[str],
-    WebAclId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionCacheBehaviorsTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviorstypedef) 
-2. See [:material-code-braces: AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributiondefaultcachebehaviortypedef) 
-3. See [:material-code-braces: AwsCloudFrontDistributionLoggingTypeDef](./type_defs.md#awscloudfrontdistributionloggingtypedef) 
-4. See [:material-code-braces: AwsCloudFrontDistributionOriginsTypeDef](./type_defs.md#awscloudfrontdistributionoriginstypedef) 
-5. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupsTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupstypedef) 
-6. See [:material-code-braces: AwsCloudFrontDistributionViewerCertificateTypeDef](./type_defs.md#awscloudfrontdistributionviewercertificatetypedef) 
 ## AwsCloudFrontDistributionLoggingTypeDef
 
 ```python title="Usage Example"
@@ -1006,127 +668,6 @@ class AwsCloudFrontDistributionLoggingTypeDef(TypedDict):
     Prefix: NotRequired[str],
 ```
 
-## AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef:
-    return {
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef(TypedDict):
-    Items: NotRequired[Sequence[int]],
-    Quantity: NotRequired[int],
-```
-
-## AwsCloudFrontDistributionOriginGroupFailoverTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupFailoverTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginGroupFailoverTypeDef:
-    return {
-        "StatusCodes": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginGroupFailoverTypeDef(TypedDict):
-    StatusCodes: NotRequired[AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailoverstatuscodestypedef) 
-## AwsCloudFrontDistributionOriginGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginGroupTypeDef:
-    return {
-        "FailoverCriteria": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginGroupTypeDef(TypedDict):
-    FailoverCriteria: NotRequired[AwsCloudFrontDistributionOriginGroupFailoverTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailovertypedef) 
-## AwsCloudFrontDistributionOriginGroupsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupsTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginGroupsTypeDef:
-    return {
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginGroupsTypeDef(TypedDict):
-    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginGroupTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupTypeDef](./type_defs.md#awscloudfrontdistributionorigingrouptypedef) 
-## AwsCloudFrontDistributionOriginItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginItemTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginItemTypeDef:
-    return {
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginItemTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    Id: NotRequired[str],
-    OriginPath: NotRequired[str],
-    S3OriginConfig: NotRequired[AwsCloudFrontDistributionOriginS3OriginConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigins3originconfigtypedef) 
-## AwsCloudFrontDistributionOriginS3OriginConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginS3OriginConfigTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginS3OriginConfigTypeDef:
-    return {
-        "OriginAccessIdentity": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginS3OriginConfigTypeDef(TypedDict):
-    OriginAccessIdentity: NotRequired[str],
-```
-
-## AwsCloudFrontDistributionOriginsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginsTypeDef:
-    return {
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginsTypeDef(TypedDict):
-    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginItemTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef) 
 ## AwsCloudFrontDistributionViewerCertificateTypeDef
 
 ```python title="Usage Example"
@@ -1147,6 +688,39 @@ class AwsCloudFrontDistributionViewerCertificateTypeDef(TypedDict):
     IamCertificateId: NotRequired[str],
     MinimumProtocolVersion: NotRequired[str],
     SslSupportMethod: NotRequired[str],
+```
+
+## AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef(TypedDict):
+    Items: NotRequired[Sequence[int]],
+    Quantity: NotRequired[int],
+```
+
+## AwsCloudFrontDistributionOriginS3OriginConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginS3OriginConfigTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginS3OriginConfigTypeDef:
+    return {
+        "OriginAccessIdentity": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginS3OriginConfigTypeDef(TypedDict):
+    OriginAccessIdentity: NotRequired[str],
 ```
 
 ## AwsCloudTrailTrailDetailsTypeDef
@@ -1203,149 +777,6 @@ class AwsCodeBuildProjectArtifactsDetailsTypeDef(TypedDict):
     Type: NotRequired[str],
 ```
 
-## AwsCodeBuildProjectDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectDetailsTypeDef
-
-def get_value() -> AwsCodeBuildProjectDetailsTypeDef:
-    return {
-        "EncryptionKey": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectDetailsTypeDef(TypedDict):
-    EncryptionKey: NotRequired[str],
-    Artifacts: NotRequired[Sequence[AwsCodeBuildProjectArtifactsDetailsTypeDef]],  # (1)
-    Environment: NotRequired[AwsCodeBuildProjectEnvironmentTypeDef],  # (2)
-    Name: NotRequired[str],
-    Source: NotRequired[AwsCodeBuildProjectSourceTypeDef],  # (3)
-    ServiceRole: NotRequired[str],
-    LogsConfig: NotRequired[AwsCodeBuildProjectLogsConfigDetailsTypeDef],  # (4)
-    VpcConfig: NotRequired[AwsCodeBuildProjectVpcConfigTypeDef],  # (5)
-    SecondaryArtifacts: NotRequired[Sequence[AwsCodeBuildProjectArtifactsDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
-2. See [:material-code-braces: AwsCodeBuildProjectEnvironmentTypeDef](./type_defs.md#awscodebuildprojectenvironmenttypedef) 
-3. See [:material-code-braces: AwsCodeBuildProjectSourceTypeDef](./type_defs.md#awscodebuildprojectsourcetypedef) 
-4. See [:material-code-braces: AwsCodeBuildProjectLogsConfigDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigdetailstypedef) 
-5. See [:material-code-braces: AwsCodeBuildProjectVpcConfigTypeDef](./type_defs.md#awscodebuildprojectvpcconfigtypedef) 
-6. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
-## AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
-
-def get_value() -> AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Type: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
-
-def get_value() -> AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef:
-    return {
-        "Credential": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef(TypedDict):
-    Credential: NotRequired[str],
-    CredentialProvider: NotRequired[str],
-```
-
-## AwsCodeBuildProjectEnvironmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentTypeDef
-
-def get_value() -> AwsCodeBuildProjectEnvironmentTypeDef:
-    return {
-        "Certificate": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectEnvironmentTypeDef(TypedDict):
-    Certificate: NotRequired[str],
-    EnvironmentVariables: NotRequired[Sequence[AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef]],  # (1)
-    PrivilegedMode: NotRequired[bool],
-    ImagePullCredentialsType: NotRequired[str],
-    RegistryCredential: NotRequired[AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef],  # (2)
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef](./type_defs.md#awscodebuildprojectenvironmentenvironmentvariablesdetailstypedef) 
-2. See [:material-code-braces: AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](./type_defs.md#awscodebuildprojectenvironmentregistrycredentialtypedef) 
-## AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
-
-def get_value() -> AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef:
-    return {
-        "GroupName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef(TypedDict):
-    GroupName: NotRequired[str],
-    Status: NotRequired[str],
-    StreamName: NotRequired[str],
-```
-
-## AwsCodeBuildProjectLogsConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigDetailsTypeDef
-
-def get_value() -> AwsCodeBuildProjectLogsConfigDetailsTypeDef:
-    return {
-        "CloudWatchLogs": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectLogsConfigDetailsTypeDef(TypedDict):
-    CloudWatchLogs: NotRequired[AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef],  # (1)
-    S3Logs: NotRequired[AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigcloudwatchlogsdetailstypedef) 
-2. See [:material-code-braces: AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigs3logsdetailstypedef) 
-## AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
-
-def get_value() -> AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef:
-    return {
-        "EncryptionDisabled": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef(TypedDict):
-    EncryptionDisabled: NotRequired[bool],
-    Location: NotRequired[str],
-    Status: NotRequired[str],
-```
-
 ## AwsCodeBuildProjectSourceTypeDef
 
 ```python title="Usage Example"
@@ -1383,25 +814,75 @@ class AwsCodeBuildProjectVpcConfigTypeDef(TypedDict):
     SecurityGroupIds: NotRequired[Sequence[str]],
 ```
 
-## AwsCorsConfigurationTypeDef
+## AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCorsConfigurationTypeDef
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
 
-def get_value() -> AwsCorsConfigurationTypeDef:
+def get_value() -> AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef:
     return {
-        "AllowOrigins": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsCorsConfigurationTypeDef(TypedDict):
-    AllowOrigins: NotRequired[Sequence[str]],
-    AllowCredentials: NotRequired[bool],
-    ExposeHeaders: NotRequired[Sequence[str]],
-    MaxAge: NotRequired[int],
-    AllowMethods: NotRequired[Sequence[str]],
-    AllowHeaders: NotRequired[Sequence[str]],
+class AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
+
+def get_value() -> AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef:
+    return {
+        "Credential": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef(TypedDict):
+    Credential: NotRequired[str],
+    CredentialProvider: NotRequired[str],
+```
+
+## AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
+
+def get_value() -> AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Status: NotRequired[str],
+    StreamName: NotRequired[str],
+```
+
+## AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
+
+def get_value() -> AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef:
+    return {
+        "EncryptionDisabled": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef(TypedDict):
+    EncryptionDisabled: NotRequired[bool],
+    Location: NotRequired[str],
+    Status: NotRequired[str],
 ```
 
 ## AwsDynamoDbTableAttributeDefinitionTypeDef
@@ -1438,77 +919,6 @@ class AwsDynamoDbTableBillingModeSummaryTypeDef(TypedDict):
     LastUpdateToPayPerRequestDateTime: NotRequired[str],
 ```
 
-## AwsDynamoDbTableDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableDetailsTypeDef
-
-def get_value() -> AwsDynamoDbTableDetailsTypeDef:
-    return {
-        "AttributeDefinitions": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableDetailsTypeDef(TypedDict):
-    AttributeDefinitions: NotRequired[Sequence[AwsDynamoDbTableAttributeDefinitionTypeDef]],  # (1)
-    BillingModeSummary: NotRequired[AwsDynamoDbTableBillingModeSummaryTypeDef],  # (2)
-    CreationDateTime: NotRequired[str],
-    GlobalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableGlobalSecondaryIndexTypeDef]],  # (3)
-    GlobalTableVersion: NotRequired[str],
-    ItemCount: NotRequired[int],
-    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (4)
-    LatestStreamArn: NotRequired[str],
-    LatestStreamLabel: NotRequired[str],
-    LocalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableLocalSecondaryIndexTypeDef]],  # (5)
-    ProvisionedThroughput: NotRequired[AwsDynamoDbTableProvisionedThroughputTypeDef],  # (6)
-    Replicas: NotRequired[Sequence[AwsDynamoDbTableReplicaTypeDef]],  # (7)
-    RestoreSummary: NotRequired[AwsDynamoDbTableRestoreSummaryTypeDef],  # (8)
-    SseDescription: NotRequired[AwsDynamoDbTableSseDescriptionTypeDef],  # (9)
-    StreamSpecification: NotRequired[AwsDynamoDbTableStreamSpecificationTypeDef],  # (10)
-    TableId: NotRequired[str],
-    TableName: NotRequired[str],
-    TableSizeBytes: NotRequired[int],
-    TableStatus: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsDynamoDbTableAttributeDefinitionTypeDef](./type_defs.md#awsdynamodbtableattributedefinitiontypedef) 
-2. See [:material-code-braces: AwsDynamoDbTableBillingModeSummaryTypeDef](./type_defs.md#awsdynamodbtablebillingmodesummarytypedef) 
-3. See [:material-code-braces: AwsDynamoDbTableGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtableglobalsecondaryindextypedef) 
-4. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
-5. See [:material-code-braces: AwsDynamoDbTableLocalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablelocalsecondaryindextypedef) 
-6. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef) 
-7. See [:material-code-braces: AwsDynamoDbTableReplicaTypeDef](./type_defs.md#awsdynamodbtablereplicatypedef) 
-8. See [:material-code-braces: AwsDynamoDbTableRestoreSummaryTypeDef](./type_defs.md#awsdynamodbtablerestoresummarytypedef) 
-9. See [:material-code-braces: AwsDynamoDbTableSseDescriptionTypeDef](./type_defs.md#awsdynamodbtablessedescriptiontypedef) 
-10. See [:material-code-braces: AwsDynamoDbTableStreamSpecificationTypeDef](./type_defs.md#awsdynamodbtablestreamspecificationtypedef) 
-## AwsDynamoDbTableGlobalSecondaryIndexTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableGlobalSecondaryIndexTypeDef
-
-def get_value() -> AwsDynamoDbTableGlobalSecondaryIndexTypeDef:
-    return {
-        "Backfilling": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableGlobalSecondaryIndexTypeDef(TypedDict):
-    Backfilling: NotRequired[bool],
-    IndexArn: NotRequired[str],
-    IndexName: NotRequired[str],
-    IndexSizeBytes: NotRequired[int],
-    IndexStatus: NotRequired[str],
-    ItemCount: NotRequired[int],
-    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (1)
-    Projection: NotRequired[AwsDynamoDbTableProjectionTypeDef],  # (2)
-    ProvisionedThroughput: NotRequired[AwsDynamoDbTableProvisionedThroughputTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
-2. See [:material-code-braces: AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef) 
-3. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef) 
 ## AwsDynamoDbTableKeySchemaTypeDef
 
 ```python title="Usage Example"
@@ -1524,60 +934,6 @@ def get_value() -> AwsDynamoDbTableKeySchemaTypeDef:
 class AwsDynamoDbTableKeySchemaTypeDef(TypedDict):
     AttributeName: NotRequired[str],
     KeyType: NotRequired[str],
-```
-
-## AwsDynamoDbTableLocalSecondaryIndexTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableLocalSecondaryIndexTypeDef
-
-def get_value() -> AwsDynamoDbTableLocalSecondaryIndexTypeDef:
-    return {
-        "IndexArn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableLocalSecondaryIndexTypeDef(TypedDict):
-    IndexArn: NotRequired[str],
-    IndexName: NotRequired[str],
-    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (1)
-    Projection: NotRequired[AwsDynamoDbTableProjectionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
-2. See [:material-code-braces: AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef) 
-## AwsDynamoDbTableProjectionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableProjectionTypeDef
-
-def get_value() -> AwsDynamoDbTableProjectionTypeDef:
-    return {
-        "NonKeyAttributes": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableProjectionTypeDef(TypedDict):
-    NonKeyAttributes: NotRequired[Sequence[str]],
-    ProjectionType: NotRequired[str],
-```
-
-## AwsDynamoDbTableProvisionedThroughputOverrideTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableProvisionedThroughputOverrideTypeDef
-
-def get_value() -> AwsDynamoDbTableProvisionedThroughputOverrideTypeDef:
-    return {
-        "ReadCapacityUnits": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableProvisionedThroughputOverrideTypeDef(TypedDict):
-    ReadCapacityUnits: NotRequired[int],
 ```
 
 ## AwsDynamoDbTableProvisionedThroughputTypeDef
@@ -1600,47 +956,6 @@ class AwsDynamoDbTableProvisionedThroughputTypeDef(TypedDict):
     WriteCapacityUnits: NotRequired[int],
 ```
 
-## AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef
-
-def get_value() -> AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef:
-    return {
-        "IndexName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef(TypedDict):
-    IndexName: NotRequired[str],
-    ProvisionedThroughputOverride: NotRequired[AwsDynamoDbTableProvisionedThroughputOverrideTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef) 
-## AwsDynamoDbTableReplicaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaTypeDef
-
-def get_value() -> AwsDynamoDbTableReplicaTypeDef:
-    return {
-        "GlobalSecondaryIndexes": ...,
-    }
-```
-
-```python title="Definition"
-class AwsDynamoDbTableReplicaTypeDef(TypedDict):
-    GlobalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef]],  # (1)
-    KmsMasterKeyId: NotRequired[str],
-    ProvisionedThroughputOverride: NotRequired[AwsDynamoDbTableProvisionedThroughputOverrideTypeDef],  # (2)
-    RegionName: NotRequired[str],
-    ReplicaStatus: NotRequired[str],
-    ReplicaStatusDescription: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef) 
-2. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef) 
 ## AwsDynamoDbTableRestoreSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1696,6 +1011,39 @@ class AwsDynamoDbTableStreamSpecificationTypeDef(TypedDict):
     StreamViewType: NotRequired[str],
 ```
 
+## AwsDynamoDbTableProjectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableProjectionTypeDef
+
+def get_value() -> AwsDynamoDbTableProjectionTypeDef:
+    return {
+        "NonKeyAttributes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableProjectionTypeDef(TypedDict):
+    NonKeyAttributes: NotRequired[Sequence[str]],
+    ProjectionType: NotRequired[str],
+```
+
+## AwsDynamoDbTableProvisionedThroughputOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableProvisionedThroughputOverrideTypeDef
+
+def get_value() -> AwsDynamoDbTableProvisionedThroughputOverrideTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableProvisionedThroughputOverrideTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[int],
+```
+
 ## AwsEc2EipDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1721,32 +1069,6 @@ class AwsEc2EipDetailsTypeDef(TypedDict):
     PrivateIpAddress: NotRequired[str],
 ```
 
-## AwsEc2InstanceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2InstanceDetailsTypeDef
-
-def get_value() -> AwsEc2InstanceDetailsTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2InstanceDetailsTypeDef(TypedDict):
-    Type: NotRequired[str],
-    ImageId: NotRequired[str],
-    IpV4Addresses: NotRequired[Sequence[str]],
-    IpV6Addresses: NotRequired[Sequence[str]],
-    KeyName: NotRequired[str],
-    IamInstanceProfileArn: NotRequired[str],
-    VpcId: NotRequired[str],
-    SubnetId: NotRequired[str],
-    LaunchedAt: NotRequired[str],
-    NetworkInterfaces: NotRequired[Sequence[AwsEc2InstanceNetworkInterfacesDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef) 
 ## AwsEc2InstanceNetworkInterfacesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1781,54 +1103,40 @@ class AwsEc2NetworkAclAssociationTypeDef(TypedDict):
     SubnetId: NotRequired[str],
 ```
 
-## AwsEc2NetworkAclDetailsTypeDef
+## IcmpTypeCodeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2NetworkAclDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import IcmpTypeCodeTypeDef
 
-def get_value() -> AwsEc2NetworkAclDetailsTypeDef:
+def get_value() -> IcmpTypeCodeTypeDef:
     return {
-        "IsDefault": ...,
+        "Code": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsEc2NetworkAclDetailsTypeDef(TypedDict):
-    IsDefault: NotRequired[bool],
-    NetworkAclId: NotRequired[str],
-    OwnerId: NotRequired[str],
-    VpcId: NotRequired[str],
-    Associations: NotRequired[Sequence[AwsEc2NetworkAclAssociationTypeDef]],  # (1)
-    Entries: NotRequired[Sequence[AwsEc2NetworkAclEntryTypeDef]],  # (2)
+class IcmpTypeCodeTypeDef(TypedDict):
+    Code: NotRequired[int],
+    Type: NotRequired[int],
 ```
 
-1. See [:material-code-braces: AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef) 
-2. See [:material-code-braces: AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef) 
-## AwsEc2NetworkAclEntryTypeDef
+## PortRangeFromToTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2NetworkAclEntryTypeDef
+from mypy_boto3_securityhub.type_defs import PortRangeFromToTypeDef
 
-def get_value() -> AwsEc2NetworkAclEntryTypeDef:
+def get_value() -> PortRangeFromToTypeDef:
     return {
-        "CidrBlock": ...,
+        "From": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsEc2NetworkAclEntryTypeDef(TypedDict):
-    CidrBlock: NotRequired[str],
-    Egress: NotRequired[bool],
-    IcmpTypeCode: NotRequired[IcmpTypeCodeTypeDef],  # (1)
-    Ipv6CidrBlock: NotRequired[str],
-    PortRange: NotRequired[PortRangeFromToTypeDef],  # (2)
-    Protocol: NotRequired[str],
-    RuleAction: NotRequired[str],
-    RuleNumber: NotRequired[int],
+class PortRangeFromToTypeDef(TypedDict):
+    From: NotRequired[int],
+    To: NotRequired[int],
 ```
 
-1. See [:material-code-braces: IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef) 
-2. See [:material-code-braces: PortRangeFromToTypeDef](./type_defs.md#portrangefromtotypedef) 
 ## AwsEc2NetworkInterfaceAttachmentTypeDef
 
 ```python title="Usage Example"
@@ -1851,33 +1159,6 @@ class AwsEc2NetworkInterfaceAttachmentTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsEc2NetworkInterfaceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2NetworkInterfaceDetailsTypeDef
-
-def get_value() -> AwsEc2NetworkInterfaceDetailsTypeDef:
-    return {
-        "Attachment": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2NetworkInterfaceDetailsTypeDef(TypedDict):
-    Attachment: NotRequired[AwsEc2NetworkInterfaceAttachmentTypeDef],  # (1)
-    NetworkInterfaceId: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[AwsEc2NetworkInterfaceSecurityGroupTypeDef]],  # (2)
-    SourceDestCheck: NotRequired[bool],
-    IpV6Addresses: NotRequired[Sequence[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef]],  # (3)
-    PrivateIpAddresses: NotRequired[Sequence[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef]],  # (4)
-    PublicDnsName: NotRequired[str],
-    PublicIp: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEc2NetworkInterfaceAttachmentTypeDef](./type_defs.md#awsec2networkinterfaceattachmenttypedef) 
-2. See [:material-code-braces: AwsEc2NetworkInterfaceSecurityGroupTypeDef](./type_defs.md#awsec2networkinterfacesecuritygrouptypedef) 
-3. See [:material-code-braces: AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef) 
-4. See [:material-code-braces: AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceprivateipaddressdetailtypedef) 
 ## AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef
 
 ```python title="Usage Example"
@@ -1928,55 +1209,6 @@ class AwsEc2NetworkInterfaceSecurityGroupTypeDef(TypedDict):
     GroupId: NotRequired[str],
 ```
 
-## AwsEc2SecurityGroupDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2SecurityGroupDetailsTypeDef
-
-def get_value() -> AwsEc2SecurityGroupDetailsTypeDef:
-    return {
-        "GroupName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2SecurityGroupDetailsTypeDef(TypedDict):
-    GroupName: NotRequired[str],
-    GroupId: NotRequired[str],
-    OwnerId: NotRequired[str],
-    VpcId: NotRequired[str],
-    IpPermissions: NotRequired[Sequence[AwsEc2SecurityGroupIpPermissionTypeDef]],  # (1)
-    IpPermissionsEgress: NotRequired[Sequence[AwsEc2SecurityGroupIpPermissionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
-2. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
-## AwsEc2SecurityGroupIpPermissionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2SecurityGroupIpPermissionTypeDef
-
-def get_value() -> AwsEc2SecurityGroupIpPermissionTypeDef:
-    return {
-        "IpProtocol": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2SecurityGroupIpPermissionTypeDef(TypedDict):
-    IpProtocol: NotRequired[str],
-    FromPort: NotRequired[int],
-    ToPort: NotRequired[int],
-    UserIdGroupPairs: NotRequired[Sequence[AwsEc2SecurityGroupUserIdGroupPairTypeDef]],  # (1)
-    IpRanges: NotRequired[Sequence[AwsEc2SecurityGroupIpRangeTypeDef]],  # (2)
-    Ipv6Ranges: NotRequired[Sequence[AwsEc2SecurityGroupIpv6RangeTypeDef]],  # (3)
-    PrefixListIds: NotRequired[Sequence[AwsEc2SecurityGroupPrefixListIdTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef) 
-2. See [:material-code-braces: AwsEc2SecurityGroupIpRangeTypeDef](./type_defs.md#awsec2securitygroupiprangetypedef) 
-3. See [:material-code-braces: AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef) 
-4. See [:material-code-braces: AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef) 
 ## AwsEc2SecurityGroupIpRangeTypeDef
 
 ```python title="Usage Example"
@@ -2046,35 +1278,24 @@ class AwsEc2SecurityGroupUserIdGroupPairTypeDef(TypedDict):
     VpcPeeringConnectionId: NotRequired[str],
 ```
 
-## AwsEc2SubnetDetailsTypeDef
+## Ipv6CidrBlockAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2SubnetDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import Ipv6CidrBlockAssociationTypeDef
 
-def get_value() -> AwsEc2SubnetDetailsTypeDef:
+def get_value() -> Ipv6CidrBlockAssociationTypeDef:
     return {
-        "AssignIpv6AddressOnCreation": ...,
+        "AssociationId": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsEc2SubnetDetailsTypeDef(TypedDict):
-    AssignIpv6AddressOnCreation: NotRequired[bool],
-    AvailabilityZone: NotRequired[str],
-    AvailabilityZoneId: NotRequired[str],
-    AvailableIpAddressCount: NotRequired[int],
-    CidrBlock: NotRequired[str],
-    DefaultForAz: NotRequired[bool],
-    MapPublicIpOnLaunch: NotRequired[bool],
-    OwnerId: NotRequired[str],
-    State: NotRequired[str],
-    SubnetArn: NotRequired[str],
-    SubnetId: NotRequired[str],
-    VpcId: NotRequired[str],
-    Ipv6CidrBlockAssociationSet: NotRequired[Sequence[Ipv6CidrBlockAssociationTypeDef]],  # (1)
+class Ipv6CidrBlockAssociationTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    Ipv6CidrBlock: NotRequired[str],
+    CidrBlockState: NotRequired[str],
 ```
 
-1. See [:material-code-braces: Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef) 
 ## AwsEc2VolumeAttachmentTypeDef
 
 ```python title="Usage Example"
@@ -2094,77 +1315,24 @@ class AwsEc2VolumeAttachmentTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsEc2VolumeDetailsTypeDef
+## CidrBlockAssociationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VolumeDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import CidrBlockAssociationTypeDef
 
-def get_value() -> AwsEc2VolumeDetailsTypeDef:
+def get_value() -> CidrBlockAssociationTypeDef:
     return {
-        "CreateTime": ...,
+        "AssociationId": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsEc2VolumeDetailsTypeDef(TypedDict):
-    CreateTime: NotRequired[str],
-    Encrypted: NotRequired[bool],
-    Size: NotRequired[int],
-    SnapshotId: NotRequired[str],
-    Status: NotRequired[str],
-    KmsKeyId: NotRequired[str],
-    Attachments: NotRequired[Sequence[AwsEc2VolumeAttachmentTypeDef]],  # (1)
+class CidrBlockAssociationTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    CidrBlock: NotRequired[str],
+    CidrBlockState: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef) 
-## AwsEc2VpcDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VpcDetailsTypeDef
-
-def get_value() -> AwsEc2VpcDetailsTypeDef:
-    return {
-        "CidrBlockAssociationSet": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2VpcDetailsTypeDef(TypedDict):
-    CidrBlockAssociationSet: NotRequired[Sequence[CidrBlockAssociationTypeDef]],  # (1)
-    Ipv6CidrBlockAssociationSet: NotRequired[Sequence[Ipv6CidrBlockAssociationTypeDef]],  # (2)
-    DhcpOptionsId: NotRequired[str],
-    State: NotRequired[str],
-```
-
-1. See [:material-code-braces: CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef) 
-2. See [:material-code-braces: Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef) 
-## AwsEc2VpcEndpointServiceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VpcEndpointServiceDetailsTypeDef
-
-def get_value() -> AwsEc2VpcEndpointServiceDetailsTypeDef:
-    return {
-        "AcceptanceRequired": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2VpcEndpointServiceDetailsTypeDef(TypedDict):
-    AcceptanceRequired: NotRequired[bool],
-    AvailabilityZones: NotRequired[Sequence[str]],
-    BaseEndpointDnsNames: NotRequired[Sequence[str]],
-    ManagesVpcEndpoints: NotRequired[bool],
-    GatewayLoadBalancerArns: NotRequired[Sequence[str]],
-    NetworkLoadBalancerArns: NotRequired[Sequence[str]],
-    PrivateDnsName: NotRequired[str],
-    ServiceId: NotRequired[str],
-    ServiceName: NotRequired[str],
-    ServiceState: NotRequired[str],
-    ServiceType: NotRequired[Sequence[AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef](./type_defs.md#awsec2vpcendpointserviceservicetypedetailstypedef) 
 ## AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2179,84 +1347,6 @@ def get_value() -> AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef:
 ```python title="Definition"
 class AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef(TypedDict):
     ServiceType: NotRequired[str],
-```
-
-## AwsEc2VpnConnectionDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionDetailsTypeDef
-
-def get_value() -> AwsEc2VpnConnectionDetailsTypeDef:
-    return {
-        "VpnConnectionId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2VpnConnectionDetailsTypeDef(TypedDict):
-    VpnConnectionId: NotRequired[str],
-    State: NotRequired[str],
-    CustomerGatewayId: NotRequired[str],
-    CustomerGatewayConfiguration: NotRequired[str],
-    Type: NotRequired[str],
-    VpnGatewayId: NotRequired[str],
-    Category: NotRequired[str],
-    VgwTelemetry: NotRequired[Sequence[AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef]],  # (1)
-    Options: NotRequired[AwsEc2VpnConnectionOptionsDetailsTypeDef],  # (2)
-    Routes: NotRequired[Sequence[AwsEc2VpnConnectionRoutesDetailsTypeDef]],  # (3)
-    TransitGatewayId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](./type_defs.md#awsec2vpnconnectionvgwtelemetrydetailstypedef) 
-2. See [:material-code-braces: AwsEc2VpnConnectionOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionsdetailstypedef) 
-3. See [:material-code-braces: AwsEc2VpnConnectionRoutesDetailsTypeDef](./type_defs.md#awsec2vpnconnectionroutesdetailstypedef) 
-## AwsEc2VpnConnectionOptionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsDetailsTypeDef
-
-def get_value() -> AwsEc2VpnConnectionOptionsDetailsTypeDef:
-    return {
-        "StaticRoutesOnly": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2VpnConnectionOptionsDetailsTypeDef(TypedDict):
-    StaticRoutesOnly: NotRequired[bool],
-    TunnelOptions: NotRequired[Sequence[AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionstunneloptionsdetailstypedef) 
-## AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
-
-def get_value() -> AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef:
-    return {
-        "DpdTimeoutSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef(TypedDict):
-    DpdTimeoutSeconds: NotRequired[int],
-    IkeVersions: NotRequired[Sequence[str]],
-    OutsideIpAddress: NotRequired[str],
-    Phase1DhGroupNumbers: NotRequired[Sequence[int]],
-    Phase1EncryptionAlgorithms: NotRequired[Sequence[str]],
-    Phase1IntegrityAlgorithms: NotRequired[Sequence[str]],
-    Phase1LifetimeSeconds: NotRequired[int],
-    Phase2DhGroupNumbers: NotRequired[Sequence[int]],
-    Phase2EncryptionAlgorithms: NotRequired[Sequence[str]],
-    Phase2IntegrityAlgorithms: NotRequired[Sequence[str]],
-    Phase2LifetimeSeconds: NotRequired[int],
-    PreSharedKey: NotRequired[str],
-    RekeyFuzzPercentage: NotRequired[int],
-    RekeyMarginTimeSeconds: NotRequired[int],
-    ReplayWindowSize: NotRequired[int],
-    TunnelInsideCidr: NotRequired[str],
 ```
 
 ## AwsEc2VpnConnectionRoutesDetailsTypeDef
@@ -2297,6 +1387,37 @@ class AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef(TypedDict):
     StatusMessage: NotRequired[str],
 ```
 
+## AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef:
+    return {
+        "DpdTimeoutSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef(TypedDict):
+    DpdTimeoutSeconds: NotRequired[int],
+    IkeVersions: NotRequired[Sequence[str]],
+    OutsideIpAddress: NotRequired[str],
+    Phase1DhGroupNumbers: NotRequired[Sequence[int]],
+    Phase1EncryptionAlgorithms: NotRequired[Sequence[str]],
+    Phase1IntegrityAlgorithms: NotRequired[Sequence[str]],
+    Phase1LifetimeSeconds: NotRequired[int],
+    Phase2DhGroupNumbers: NotRequired[Sequence[int]],
+    Phase2EncryptionAlgorithms: NotRequired[Sequence[str]],
+    Phase2IntegrityAlgorithms: NotRequired[Sequence[str]],
+    Phase2LifetimeSeconds: NotRequired[int],
+    PreSharedKey: NotRequired[str],
+    RekeyFuzzPercentage: NotRequired[int],
+    RekeyMarginTimeSeconds: NotRequired[int],
+    ReplayWindowSize: NotRequired[int],
+    TunnelInsideCidr: NotRequired[str],
+```
+
 ## AwsEcrContainerImageDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2318,29 +1439,6 @@ class AwsEcrContainerImageDetailsTypeDef(TypedDict):
     ImagePublishedAt: NotRequired[str],
 ```
 
-## AwsEcrRepositoryDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcrRepositoryDetailsTypeDef
-
-def get_value() -> AwsEcrRepositoryDetailsTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcrRepositoryDetailsTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    ImageScanningConfiguration: NotRequired[AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef],  # (1)
-    ImageTagMutability: NotRequired[str],
-    LifecyclePolicy: NotRequired[AwsEcrRepositoryLifecyclePolicyDetailsTypeDef],  # (2)
-    RepositoryName: NotRequired[str],
-    RepositoryPolicyText: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef](./type_defs.md#awsecrrepositoryimagescanningconfigurationdetailstypedef) 
-2. See [:material-code-braces: AwsEcrRepositoryLifecyclePolicyDetailsTypeDef](./type_defs.md#awsecrrepositorylifecyclepolicydetailstypedef) 
 ## AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2391,42 +1489,6 @@ class AwsEcsClusterClusterSettingsDetailsTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
-## AwsEcsClusterConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsClusterConfigurationDetailsTypeDef:
-    return {
-        "ExecuteCommandConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsClusterConfigurationDetailsTypeDef(TypedDict):
-    ExecuteCommandConfiguration: NotRequired[AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef) 
-## AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef:
-    return {
-        "KmsKeyId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef(TypedDict):
-    KmsKeyId: NotRequired[str],
-    LogConfiguration: NotRequired[AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef],  # (1)
-    Logging: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef) 
 ## AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2465,28 +1527,6 @@ class AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef(TypedDict):
     Weight: NotRequired[int],
 ```
 
-## AwsEcsClusterDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsClusterDetailsTypeDef
-
-def get_value() -> AwsEcsClusterDetailsTypeDef:
-    return {
-        "CapacityProviders": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsClusterDetailsTypeDef(TypedDict):
-    CapacityProviders: NotRequired[Sequence[str]],
-    ClusterSettings: NotRequired[Sequence[AwsEcsClusterClusterSettingsDetailsTypeDef]],  # (1)
-    Configuration: NotRequired[AwsEcsClusterConfigurationDetailsTypeDef],  # (2)
-    DefaultCapacityProviderStrategy: NotRequired[Sequence[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef) 
-2. See [:material-code-braces: AwsEcsClusterConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationdetailstypedef) 
-3. See [:material-code-braces: AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef) 
 ## AwsEcsServiceCapacityProviderStrategyDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2522,25 +1562,6 @@ class AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef
     Rollback: NotRequired[bool],
 ```
 
-## AwsEcsServiceDeploymentConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsServiceDeploymentConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsServiceDeploymentConfigurationDetailsTypeDef:
-    return {
-        "DeploymentCircuitBreaker": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsServiceDeploymentConfigurationDetailsTypeDef(TypedDict):
-    DeploymentCircuitBreaker: NotRequired[AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef],  # (1)
-    MaximumPercent: NotRequired[int],
-    MinimumHealthyPercent: NotRequired[int],
-```
-
-1. See [:material-code-braces: AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdeploymentcircuitbreakerdetailstypedef) 
 ## AwsEcsServiceDeploymentControllerDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2557,51 +1578,6 @@ class AwsEcsServiceDeploymentControllerDetailsTypeDef(TypedDict):
     Type: NotRequired[str],
 ```
 
-## AwsEcsServiceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsServiceDetailsTypeDef
-
-def get_value() -> AwsEcsServiceDetailsTypeDef:
-    return {
-        "CapacityProviderStrategy": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsServiceDetailsTypeDef(TypedDict):
-    CapacityProviderStrategy: NotRequired[Sequence[AwsEcsServiceCapacityProviderStrategyDetailsTypeDef]],  # (1)
-    Cluster: NotRequired[str],
-    DeploymentConfiguration: NotRequired[AwsEcsServiceDeploymentConfigurationDetailsTypeDef],  # (2)
-    DeploymentController: NotRequired[AwsEcsServiceDeploymentControllerDetailsTypeDef],  # (3)
-    DesiredCount: NotRequired[int],
-    EnableEcsManagedTags: NotRequired[bool],
-    EnableExecuteCommand: NotRequired[bool],
-    HealthCheckGracePeriodSeconds: NotRequired[int],
-    LaunchType: NotRequired[str],
-    LoadBalancers: NotRequired[Sequence[AwsEcsServiceLoadBalancersDetailsTypeDef]],  # (4)
-    Name: NotRequired[str],
-    NetworkConfiguration: NotRequired[AwsEcsServiceNetworkConfigurationDetailsTypeDef],  # (5)
-    PlacementConstraints: NotRequired[Sequence[AwsEcsServicePlacementConstraintsDetailsTypeDef]],  # (6)
-    PlacementStrategies: NotRequired[Sequence[AwsEcsServicePlacementStrategiesDetailsTypeDef]],  # (7)
-    PlatformVersion: NotRequired[str],
-    PropagateTags: NotRequired[str],
-    Role: NotRequired[str],
-    SchedulingStrategy: NotRequired[str],
-    ServiceArn: NotRequired[str],
-    ServiceName: NotRequired[str],
-    ServiceRegistries: NotRequired[Sequence[AwsEcsServiceServiceRegistriesDetailsTypeDef]],  # (8)
-    TaskDefinition: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsservicecapacityproviderstrategydetailstypedef) 
-2. See [:material-code-braces: AwsEcsServiceDeploymentConfigurationDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdetailstypedef) 
-3. See [:material-code-braces: AwsEcsServiceDeploymentControllerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentcontrollerdetailstypedef) 
-4. See [:material-code-braces: AwsEcsServiceLoadBalancersDetailsTypeDef](./type_defs.md#awsecsserviceloadbalancersdetailstypedef) 
-5. See [:material-code-braces: AwsEcsServiceNetworkConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationdetailstypedef) 
-6. See [:material-code-braces: AwsEcsServicePlacementConstraintsDetailsTypeDef](./type_defs.md#awsecsserviceplacementconstraintsdetailstypedef) 
-7. See [:material-code-braces: AwsEcsServicePlacementStrategiesDetailsTypeDef](./type_defs.md#awsecsserviceplacementstrategiesdetailstypedef) 
-8. See [:material-code-braces: AwsEcsServiceServiceRegistriesDetailsTypeDef](./type_defs.md#awsecsserviceserviceregistriesdetailstypedef) 
 ## AwsEcsServiceLoadBalancersDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2621,41 +1597,6 @@ class AwsEcsServiceLoadBalancersDetailsTypeDef(TypedDict):
     TargetGroupArn: NotRequired[str],
 ```
 
-## AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef:
-    return {
-        "AssignPublicIp": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef(TypedDict):
-    AssignPublicIp: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[str]],
-    Subnets: NotRequired[Sequence[str]],
-```
-
-## AwsEcsServiceNetworkConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsServiceNetworkConfigurationDetailsTypeDef:
-    return {
-        "AwsVpcConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsServiceNetworkConfigurationDetailsTypeDef(TypedDict):
-    AwsVpcConfiguration: NotRequired[AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationawsvpcconfigurationdetailstypedef) 
 ## AwsEcsServicePlacementConstraintsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2709,6 +1650,24 @@ class AwsEcsServiceServiceRegistriesDetailsTypeDef(TypedDict):
     RegistryArn: NotRequired[str],
 ```
 
+## AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef:
+    return {
+        "AssignPublicIp": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef(TypedDict):
+    AssignPublicIp: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    Subnets: NotRequired[Sequence[str]],
+```
+
 ## AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2726,76 +1685,6 @@ class AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef(TypedDict)
     ContainerName: NotRequired[str],
 ```
 
-## AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef:
-    return {
-        "Command": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef(TypedDict):
-    Command: NotRequired[Sequence[str]],
-    Cpu: NotRequired[int],
-    DependsOn: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef]],  # (1)
-    DisableNetworking: NotRequired[bool],
-    DnsSearchDomains: NotRequired[Sequence[str]],
-    DnsServers: NotRequired[Sequence[str]],
-    DockerLabels: NotRequired[Mapping[str, str]],
-    DockerSecurityOptions: NotRequired[Sequence[str]],
-    EntryPoint: NotRequired[Sequence[str]],
-    Environment: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef]],  # (2)
-    EnvironmentFiles: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef]],  # (3)
-    Essential: NotRequired[bool],
-    ExtraHosts: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef]],  # (4)
-    FirelensConfiguration: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef],  # (5)
-    HealthCheck: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef],  # (6)
-    Hostname: NotRequired[str],
-    Image: NotRequired[str],
-    Interactive: NotRequired[bool],
-    Links: NotRequired[Sequence[str]],
-    LinuxParameters: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef],  # (7)
-    LogConfiguration: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef],  # (8)
-    Memory: NotRequired[int],
-    MemoryReservation: NotRequired[int],
-    MountPoints: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef]],  # (9)
-    Name: NotRequired[str],
-    PortMappings: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef]],  # (10)
-    Privileged: NotRequired[bool],
-    PseudoTerminal: NotRequired[bool],
-    ReadonlyRootFilesystem: NotRequired[bool],
-    RepositoryCredentials: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef],  # (11)
-    ResourceRequirements: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef]],  # (12)
-    Secrets: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef]],  # (13)
-    StartTimeout: NotRequired[int],
-    StopTimeout: NotRequired[int],
-    SystemControls: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef]],  # (14)
-    Ulimits: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef]],  # (15)
-    User: NotRequired[str],
-    VolumesFrom: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef]],  # (16)
-    WorkingDirectory: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef) 
-2. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef) 
-3. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef) 
-4. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef) 
-5. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsfirelensconfigurationdetailstypedef) 
-6. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionshealthcheckdetailstypedef) 
-7. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdetailstypedef) 
-8. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationdetailstypedef) 
-9. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef) 
-10. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef) 
-11. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsrepositorycredentialsdetailstypedef) 
-12. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef) 
-13. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef) 
-14. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef) 
-15. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef) 
-16. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef) 
 ## AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2882,120 +1771,6 @@ class AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef(TypedDic
     Retries: NotRequired[int],
     StartPeriod: NotRequired[int],
     Timeout: NotRequired[int],
-```
-
-## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef:
-    return {
-        "Add": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef(TypedDict):
-    Add: NotRequired[Sequence[str]],
-    Drop: NotRequired[Sequence[str]],
-```
-
-## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef:
-    return {
-        "Capabilities": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef(TypedDict):
-    Capabilities: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef],  # (1)
-    Devices: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef]],  # (2)
-    InitProcessEnabled: NotRequired[bool],
-    MaxSwap: NotRequired[int],
-    SharedMemorySize: NotRequired[int],
-    Swappiness: NotRequired[int],
-    Tmpfs: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterscapabilitiesdetailstypedef) 
-2. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef) 
-3. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef) 
-## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef:
-    return {
-        "ContainerPath": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef(TypedDict):
-    ContainerPath: NotRequired[str],
-    HostPath: NotRequired[str],
-    Permissions: NotRequired[Sequence[str]],
-```
-
-## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef:
-    return {
-        "ContainerPath": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef(TypedDict):
-    ContainerPath: NotRequired[str],
-    MountOptions: NotRequired[Sequence[str]],
-    Size: NotRequired[int],
-```
-
-## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef:
-    return {
-        "LogDriver": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef(TypedDict):
-    LogDriver: NotRequired[str],
-    Options: NotRequired[Mapping[str, str]],
-    SecretOptions: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef) 
-## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    ValueFrom: NotRequired[str],
 ```
 
 ## AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef
@@ -3136,40 +1911,76 @@ class AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef(TypedDic
     SourceContainer: NotRequired[str],
 ```
 
-## AwsEcsTaskDefinitionDetailsTypeDef
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
 
-def get_value() -> AwsEcsTaskDefinitionDetailsTypeDef:
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef:
     return {
-        "ContainerDefinitions": ...,
+        "Add": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsEcsTaskDefinitionDetailsTypeDef(TypedDict):
-    ContainerDefinitions: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef]],  # (1)
-    Cpu: NotRequired[str],
-    ExecutionRoleArn: NotRequired[str],
-    Family: NotRequired[str],
-    InferenceAccelerators: NotRequired[Sequence[AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef]],  # (2)
-    IpcMode: NotRequired[str],
-    Memory: NotRequired[str],
-    NetworkMode: NotRequired[str],
-    PidMode: NotRequired[str],
-    PlacementConstraints: NotRequired[Sequence[AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef]],  # (3)
-    ProxyConfiguration: NotRequired[AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef],  # (4)
-    RequiresCompatibilities: NotRequired[Sequence[str]],
-    TaskRoleArn: NotRequired[str],
-    Volumes: NotRequired[Sequence[AwsEcsTaskDefinitionVolumesDetailsTypeDef]],  # (5)
+class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef(TypedDict):
+    Add: NotRequired[Sequence[str]],
+    Drop: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdetailstypedef) 
-2. See [:material-code-braces: AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioninferenceacceleratorsdetailstypedef) 
-3. See [:material-code-braces: AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](./type_defs.md#awsecstaskdefinitionplacementconstraintsdetailstypedef) 
-4. See [:material-code-braces: AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationdetailstypedef) 
-5. See [:material-code-braces: AwsEcsTaskDefinitionVolumesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdetailstypedef) 
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef:
+    return {
+        "ContainerPath": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef(TypedDict):
+    ContainerPath: NotRequired[str],
+    HostPath: NotRequired[str],
+    Permissions: NotRequired[Sequence[str]],
+```
+
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef:
+    return {
+        "ContainerPath": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef(TypedDict):
+    ContainerPath: NotRequired[str],
+    MountOptions: NotRequired[Sequence[str]],
+    Size: NotRequired[int],
+```
+
+## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ValueFrom: NotRequired[str],
+```
+
 ## AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3204,25 +2015,6 @@ class AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef(TypedDict):
     Type: NotRequired[str],
 ```
 
-## AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef:
-    return {
-        "ContainerName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef(TypedDict):
-    ContainerName: NotRequired[str],
-    ProxyConfigurationProperties: NotRequired[Sequence[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef]],  # (1)
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef) 
 ## AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3240,28 +2032,6 @@ class AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsT
     Value: NotRequired[str],
 ```
 
-## AwsEcsTaskDefinitionVolumesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionVolumesDetailsTypeDef:
-    return {
-        "DockerVolumeConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionVolumesDetailsTypeDef(TypedDict):
-    DockerVolumeConfiguration: NotRequired[AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef],  # (1)
-    EfsVolumeConfiguration: NotRequired[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef],  # (2)
-    Host: NotRequired[AwsEcsTaskDefinitionVolumesHostDetailsTypeDef],  # (3)
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdockervolumeconfigurationdetailstypedef) 
-2. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef) 
-3. See [:material-code-braces: AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumeshostdetailstypedef) 
 ## AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3282,6 +2052,22 @@ class AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef(TypedDi
     Scope: NotRequired[str],
 ```
 
+## AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionVolumesHostDetailsTypeDef:
+    return {
+        "SourcePath": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionVolumesHostDetailsTypeDef(TypedDict):
+    SourcePath: NotRequired[str],
+```
+
 ## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3299,103 +2085,6 @@ class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetail
     Iam: NotRequired[str],
 ```
 
-## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef:
-    return {
-        "AuthorizationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef(TypedDict):
-    AuthorizationConfig: NotRequired[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef],  # (1)
-    FilesystemId: NotRequired[str],
-    RootDirectory: NotRequired[str],
-    TransitEncryption: NotRequired[str],
-    TransitEncryptionPort: NotRequired[int],
-```
-
-1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef) 
-## AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
-
-def get_value() -> AwsEcsTaskDefinitionVolumesHostDetailsTypeDef:
-    return {
-        "SourcePath": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEcsTaskDefinitionVolumesHostDetailsTypeDef(TypedDict):
-    SourcePath: NotRequired[str],
-```
-
-## AwsEksClusterDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEksClusterDetailsTypeDef
-
-def get_value() -> AwsEksClusterDetailsTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEksClusterDetailsTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    CertificateAuthorityData: NotRequired[str],
-    ClusterStatus: NotRequired[str],
-    Endpoint: NotRequired[str],
-    Name: NotRequired[str],
-    ResourcesVpcConfig: NotRequired[AwsEksClusterResourcesVpcConfigDetailsTypeDef],  # (1)
-    RoleArn: NotRequired[str],
-    Version: NotRequired[str],
-    Logging: NotRequired[AwsEksClusterLoggingDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsEksClusterResourcesVpcConfigDetailsTypeDef](./type_defs.md#awseksclusterresourcesvpcconfigdetailstypedef) 
-2. See [:material-code-braces: AwsEksClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingdetailstypedef) 
-## AwsEksClusterLoggingClusterLoggingDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingClusterLoggingDetailsTypeDef
-
-def get_value() -> AwsEksClusterLoggingClusterLoggingDetailsTypeDef:
-    return {
-        "Enabled": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEksClusterLoggingClusterLoggingDetailsTypeDef(TypedDict):
-    Enabled: NotRequired[bool],
-    Types: NotRequired[Sequence[str]],
-```
-
-## AwsEksClusterLoggingDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingDetailsTypeDef
-
-def get_value() -> AwsEksClusterLoggingDetailsTypeDef:
-    return {
-        "ClusterLogging": ...,
-    }
-```
-
-```python title="Definition"
-class AwsEksClusterLoggingDetailsTypeDef(TypedDict):
-    ClusterLogging: NotRequired[Sequence[AwsEksClusterLoggingClusterLoggingDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsEksClusterLoggingClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingclusterloggingdetailstypedef) 
 ## AwsEksClusterResourcesVpcConfigDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3413,40 +2102,23 @@ class AwsEksClusterResourcesVpcConfigDetailsTypeDef(TypedDict):
     SubnetIds: NotRequired[Sequence[str]],
 ```
 
-## AwsElasticBeanstalkEnvironmentDetailsTypeDef
+## AwsEksClusterLoggingClusterLoggingDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticBeanstalkEnvironmentDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingClusterLoggingDetailsTypeDef
 
-def get_value() -> AwsElasticBeanstalkEnvironmentDetailsTypeDef:
+def get_value() -> AwsEksClusterLoggingClusterLoggingDetailsTypeDef:
     return {
-        "ApplicationName": ...,
+        "Enabled": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsElasticBeanstalkEnvironmentDetailsTypeDef(TypedDict):
-    ApplicationName: NotRequired[str],
-    Cname: NotRequired[str],
-    DateCreated: NotRequired[str],
-    DateUpdated: NotRequired[str],
-    Description: NotRequired[str],
-    EndpointUrl: NotRequired[str],
-    EnvironmentArn: NotRequired[str],
-    EnvironmentId: NotRequired[str],
-    EnvironmentLinks: NotRequired[Sequence[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef]],  # (1)
-    EnvironmentName: NotRequired[str],
-    OptionSettings: NotRequired[Sequence[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef]],  # (2)
-    PlatformArn: NotRequired[str],
-    SolutionStackName: NotRequired[str],
-    Status: NotRequired[str],
-    Tier: NotRequired[AwsElasticBeanstalkEnvironmentTierTypeDef],  # (3)
-    VersionLabel: NotRequired[str],
+class AwsEksClusterLoggingClusterLoggingDetailsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    Types: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef) 
-2. See [:material-code-braces: AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef) 
-3. See [:material-code-braces: AwsElasticBeanstalkEnvironmentTierTypeDef](./type_defs.md#awselasticbeanstalkenvironmenttiertypedef) 
 ## AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef
 
 ```python title="Usage Example"
@@ -3501,41 +2173,6 @@ class AwsElasticBeanstalkEnvironmentTierTypeDef(TypedDict):
     Version: NotRequired[str],
 ```
 
-## AwsElasticsearchDomainDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainDetailsTypeDef
-
-def get_value() -> AwsElasticsearchDomainDetailsTypeDef:
-    return {
-        "AccessPolicies": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElasticsearchDomainDetailsTypeDef(TypedDict):
-    AccessPolicies: NotRequired[str],
-    DomainEndpointOptions: NotRequired[AwsElasticsearchDomainDomainEndpointOptionsTypeDef],  # (1)
-    DomainId: NotRequired[str],
-    DomainName: NotRequired[str],
-    Endpoint: NotRequired[str],
-    Endpoints: NotRequired[Mapping[str, str]],
-    ElasticsearchVersion: NotRequired[str],
-    ElasticsearchClusterConfig: NotRequired[AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef],  # (2)
-    EncryptionAtRestOptions: NotRequired[AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef],  # (3)
-    LogPublishingOptions: NotRequired[AwsElasticsearchDomainLogPublishingOptionsTypeDef],  # (4)
-    NodeToNodeEncryptionOptions: NotRequired[AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef],  # (5)
-    ServiceSoftwareOptions: NotRequired[AwsElasticsearchDomainServiceSoftwareOptionsTypeDef],  # (6)
-    VPCOptions: NotRequired[AwsElasticsearchDomainVPCOptionsTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: AwsElasticsearchDomainDomainEndpointOptionsTypeDef](./type_defs.md#awselasticsearchdomaindomainendpointoptionstypedef) 
-2. See [:material-code-braces: AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigdetailstypedef) 
-3. See [:material-code-braces: AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef) 
-4. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionstypedef) 
-5. See [:material-code-braces: AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](./type_defs.md#awselasticsearchdomainnodetonodeencryptionoptionstypedef) 
-6. See [:material-code-braces: AwsElasticsearchDomainServiceSoftwareOptionsTypeDef](./type_defs.md#awselasticsearchdomainservicesoftwareoptionstypedef) 
-7. See [:material-code-braces: AwsElasticsearchDomainVPCOptionsTypeDef](./type_defs.md#awselasticsearchdomainvpcoptionstypedef) 
 ## AwsElasticsearchDomainDomainEndpointOptionsTypeDef
 
 ```python title="Usage Example"
@@ -3551,45 +2188,6 @@ def get_value() -> AwsElasticsearchDomainDomainEndpointOptionsTypeDef:
 class AwsElasticsearchDomainDomainEndpointOptionsTypeDef(TypedDict):
     EnforceHTTPS: NotRequired[bool],
     TLSSecurityPolicy: NotRequired[str],
-```
-
-## AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
-
-def get_value() -> AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef:
-    return {
-        "DedicatedMasterCount": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef(TypedDict):
-    DedicatedMasterCount: NotRequired[int],
-    DedicatedMasterEnabled: NotRequired[bool],
-    DedicatedMasterType: NotRequired[str],
-    InstanceCount: NotRequired[int],
-    InstanceType: NotRequired[str],
-    ZoneAwarenessConfig: NotRequired[AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef],  # (1)
-    ZoneAwarenessEnabled: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigzoneawarenessconfigdetailstypedef) 
-## AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
-
-def get_value() -> AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef:
-    return {
-        "AvailabilityZoneCount": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef(TypedDict):
-    AvailabilityZoneCount: NotRequired[int],
 ```
 
 ## AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef
@@ -3609,44 +2207,6 @@ class AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
 ```
 
-## AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
-
-def get_value() -> AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef:
-    return {
-        "CloudWatchLogsLogGroupArn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef(TypedDict):
-    CloudWatchLogsLogGroupArn: NotRequired[str],
-    Enabled: NotRequired[bool],
-```
-
-## AwsElasticsearchDomainLogPublishingOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsTypeDef
-
-def get_value() -> AwsElasticsearchDomainLogPublishingOptionsTypeDef:
-    return {
-        "IndexSlowLogs": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElasticsearchDomainLogPublishingOptionsTypeDef(TypedDict):
-    IndexSlowLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
-    SearchSlowLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
-    AuditLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
-2. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
-3. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
 ## AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef
 
 ```python title="Usage Example"
@@ -3702,6 +2262,39 @@ class AwsElasticsearchDomainVPCOptionsTypeDef(TypedDict):
     SecurityGroupIds: NotRequired[Sequence[str]],
     SubnetIds: NotRequired[Sequence[str]],
     VPCId: NotRequired[str],
+```
+
+## AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
+
+def get_value() -> AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef:
+    return {
+        "AvailabilityZoneCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef(TypedDict):
+    AvailabilityZoneCount: NotRequired[int],
+```
+
+## AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
+
+def get_value() -> AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef:
+    return {
+        "CloudWatchLogsLogGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef(TypedDict):
+    CloudWatchLogsLogGroupArn: NotRequired[str],
+    Enabled: NotRequired[bool],
 ```
 
 ## AwsElbAppCookieStickinessPolicyTypeDef
@@ -3774,48 +2367,6 @@ class AwsElbLoadBalancerAdditionalAttributeTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
-## AwsElbLoadBalancerAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerAttributesTypeDef
-
-def get_value() -> AwsElbLoadBalancerAttributesTypeDef:
-    return {
-        "AccessLog": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElbLoadBalancerAttributesTypeDef(TypedDict):
-    AccessLog: NotRequired[AwsElbLoadBalancerAccessLogTypeDef],  # (1)
-    ConnectionDraining: NotRequired[AwsElbLoadBalancerConnectionDrainingTypeDef],  # (2)
-    ConnectionSettings: NotRequired[AwsElbLoadBalancerConnectionSettingsTypeDef],  # (3)
-    CrossZoneLoadBalancing: NotRequired[AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef],  # (4)
-    AdditionalAttributes: NotRequired[Sequence[AwsElbLoadBalancerAdditionalAttributeTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: AwsElbLoadBalancerAccessLogTypeDef](./type_defs.md#awselbloadbalanceraccesslogtypedef) 
-2. See [:material-code-braces: AwsElbLoadBalancerConnectionDrainingTypeDef](./type_defs.md#awselbloadbalancerconnectiondrainingtypedef) 
-3. See [:material-code-braces: AwsElbLoadBalancerConnectionSettingsTypeDef](./type_defs.md#awselbloadbalancerconnectionsettingstypedef) 
-4. See [:material-code-braces: AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef](./type_defs.md#awselbloadbalancercrosszoneloadbalancingtypedef) 
-5. See [:material-code-braces: AwsElbLoadBalancerAdditionalAttributeTypeDef](./type_defs.md#awselbloadbalanceradditionalattributetypedef) 
-## AwsElbLoadBalancerBackendServerDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerBackendServerDescriptionTypeDef
-
-def get_value() -> AwsElbLoadBalancerBackendServerDescriptionTypeDef:
-    return {
-        "InstancePort": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElbLoadBalancerBackendServerDescriptionTypeDef(TypedDict):
-    InstancePort: NotRequired[int],
-    PolicyNames: NotRequired[Sequence[str]],
-```
-
 ## AwsElbLoadBalancerConnectionDrainingTypeDef
 
 ```python title="Usage Example"
@@ -3865,45 +2416,23 @@ class AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef(TypedDict):
     Enabled: NotRequired[bool],
 ```
 
-## AwsElbLoadBalancerDetailsTypeDef
+## AwsElbLoadBalancerBackendServerDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerBackendServerDescriptionTypeDef
 
-def get_value() -> AwsElbLoadBalancerDetailsTypeDef:
+def get_value() -> AwsElbLoadBalancerBackendServerDescriptionTypeDef:
     return {
-        "AvailabilityZones": ...,
+        "InstancePort": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsElbLoadBalancerDetailsTypeDef(TypedDict):
-    AvailabilityZones: NotRequired[Sequence[str]],
-    BackendServerDescriptions: NotRequired[Sequence[AwsElbLoadBalancerBackendServerDescriptionTypeDef]],  # (1)
-    CanonicalHostedZoneName: NotRequired[str],
-    CanonicalHostedZoneNameID: NotRequired[str],
-    CreatedTime: NotRequired[str],
-    DnsName: NotRequired[str],
-    HealthCheck: NotRequired[AwsElbLoadBalancerHealthCheckTypeDef],  # (2)
-    Instances: NotRequired[Sequence[AwsElbLoadBalancerInstanceTypeDef]],  # (3)
-    ListenerDescriptions: NotRequired[Sequence[AwsElbLoadBalancerListenerDescriptionTypeDef]],  # (4)
-    LoadBalancerAttributes: NotRequired[AwsElbLoadBalancerAttributesTypeDef],  # (5)
-    LoadBalancerName: NotRequired[str],
-    Policies: NotRequired[AwsElbLoadBalancerPoliciesTypeDef],  # (6)
-    Scheme: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[str]],
-    SourceSecurityGroup: NotRequired[AwsElbLoadBalancerSourceSecurityGroupTypeDef],  # (7)
-    Subnets: NotRequired[Sequence[str]],
-    VpcId: NotRequired[str],
+class AwsElbLoadBalancerBackendServerDescriptionTypeDef(TypedDict):
+    InstancePort: NotRequired[int],
+    PolicyNames: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: AwsElbLoadBalancerBackendServerDescriptionTypeDef](./type_defs.md#awselbloadbalancerbackendserverdescriptiontypedef) 
-2. See [:material-code-braces: AwsElbLoadBalancerHealthCheckTypeDef](./type_defs.md#awselbloadbalancerhealthchecktypedef) 
-3. See [:material-code-braces: AwsElbLoadBalancerInstanceTypeDef](./type_defs.md#awselbloadbalancerinstancetypedef) 
-4. See [:material-code-braces: AwsElbLoadBalancerListenerDescriptionTypeDef](./type_defs.md#awselbloadbalancerlistenerdescriptiontypedef) 
-5. See [:material-code-braces: AwsElbLoadBalancerAttributesTypeDef](./type_defs.md#awselbloadbalancerattributestypedef) 
-6. See [:material-code-braces: AwsElbLoadBalancerPoliciesTypeDef](./type_defs.md#awselbloadbalancerpoliciestypedef) 
-7. See [:material-code-braces: AwsElbLoadBalancerSourceSecurityGroupTypeDef](./type_defs.md#awselbloadbalancersourcesecuritygrouptypedef) 
 ## AwsElbLoadBalancerHealthCheckTypeDef
 
 ```python title="Usage Example"
@@ -3940,24 +2469,23 @@ class AwsElbLoadBalancerInstanceTypeDef(TypedDict):
     InstanceId: NotRequired[str],
 ```
 
-## AwsElbLoadBalancerListenerDescriptionTypeDef
+## AwsElbLoadBalancerSourceSecurityGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerListenerDescriptionTypeDef
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerSourceSecurityGroupTypeDef
 
-def get_value() -> AwsElbLoadBalancerListenerDescriptionTypeDef:
+def get_value() -> AwsElbLoadBalancerSourceSecurityGroupTypeDef:
     return {
-        "Listener": ...,
+        "GroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsElbLoadBalancerListenerDescriptionTypeDef(TypedDict):
-    Listener: NotRequired[AwsElbLoadBalancerListenerTypeDef],  # (1)
-    PolicyNames: NotRequired[Sequence[str]],
+class AwsElbLoadBalancerSourceSecurityGroupTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    OwnerAlias: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AwsElbLoadBalancerListenerTypeDef](./type_defs.md#awselbloadbalancerlistenertypedef) 
 ## AwsElbLoadBalancerListenerTypeDef
 
 ```python title="Usage Example"
@@ -3978,43 +2506,6 @@ class AwsElbLoadBalancerListenerTypeDef(TypedDict):
     SslCertificateId: NotRequired[str],
 ```
 
-## AwsElbLoadBalancerPoliciesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerPoliciesTypeDef
-
-def get_value() -> AwsElbLoadBalancerPoliciesTypeDef:
-    return {
-        "AppCookieStickinessPolicies": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElbLoadBalancerPoliciesTypeDef(TypedDict):
-    AppCookieStickinessPolicies: NotRequired[Sequence[AwsElbAppCookieStickinessPolicyTypeDef]],  # (1)
-    LbCookieStickinessPolicies: NotRequired[Sequence[AwsElbLbCookieStickinessPolicyTypeDef]],  # (2)
-    OtherPolicies: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: AwsElbAppCookieStickinessPolicyTypeDef](./type_defs.md#awselbappcookiestickinesspolicytypedef) 
-2. See [:material-code-braces: AwsElbLbCookieStickinessPolicyTypeDef](./type_defs.md#awselblbcookiestickinesspolicytypedef) 
-## AwsElbLoadBalancerSourceSecurityGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerSourceSecurityGroupTypeDef
-
-def get_value() -> AwsElbLoadBalancerSourceSecurityGroupTypeDef:
-    return {
-        "GroupName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsElbLoadBalancerSourceSecurityGroupTypeDef(TypedDict):
-    GroupName: NotRequired[str],
-    OwnerAlias: NotRequired[str],
-```
-
 ## AwsElbv2LoadBalancerAttributeTypeDef
 
 ```python title="Usage Example"
@@ -4032,61 +2523,23 @@ class AwsElbv2LoadBalancerAttributeTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
-## AwsElbv2LoadBalancerDetailsTypeDef
+## LoadBalancerStateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsElbv2LoadBalancerDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import LoadBalancerStateTypeDef
 
-def get_value() -> AwsElbv2LoadBalancerDetailsTypeDef:
+def get_value() -> LoadBalancerStateTypeDef:
     return {
-        "AvailabilityZones": ...,
+        "Code": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsElbv2LoadBalancerDetailsTypeDef(TypedDict):
-    AvailabilityZones: NotRequired[Sequence[AvailabilityZoneTypeDef]],  # (1)
-    CanonicalHostedZoneId: NotRequired[str],
-    CreatedTime: NotRequired[str],
-    DNSName: NotRequired[str],
-    IpAddressType: NotRequired[str],
-    Scheme: NotRequired[str],
-    SecurityGroups: NotRequired[Sequence[str]],
-    State: NotRequired[LoadBalancerStateTypeDef],  # (2)
-    Type: NotRequired[str],
-    VpcId: NotRequired[str],
-    LoadBalancerAttributes: NotRequired[Sequence[AwsElbv2LoadBalancerAttributeTypeDef]],  # (3)
+class LoadBalancerStateTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Reason: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
-2. See [:material-code-braces: LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef) 
-3. See [:material-code-braces: AwsElbv2LoadBalancerAttributeTypeDef](./type_defs.md#awselbv2loadbalancerattributetypedef) 
-## AwsIamAccessKeyDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamAccessKeyDetailsTypeDef
-
-def get_value() -> AwsIamAccessKeyDetailsTypeDef:
-    return {
-        "UserName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamAccessKeyDetailsTypeDef(TypedDict):
-    UserName: NotRequired[str],
-    Status: NotRequired[AwsIamAccessKeyStatusType],  # (1)
-    CreatedAt: NotRequired[str],
-    PrincipalId: NotRequired[str],
-    PrincipalType: NotRequired[str],
-    PrincipalName: NotRequired[str],
-    AccountId: NotRequired[str],
-    AccessKeyId: NotRequired[str],
-    SessionContext: NotRequired[AwsIamAccessKeySessionContextTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: AwsIamAccessKeyStatusType](./literals.md#awsiamaccesskeystatustype) 
-2. See [:material-code-braces: AwsIamAccessKeySessionContextTypeDef](./type_defs.md#awsiamaccesskeysessioncontexttypedef) 
 ## AwsIamAccessKeySessionContextAttributesTypeDef
 
 ```python title="Usage Example"
@@ -4124,25 +2577,6 @@ class AwsIamAccessKeySessionContextSessionIssuerTypeDef(TypedDict):
     UserName: NotRequired[str],
 ```
 
-## AwsIamAccessKeySessionContextTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamAccessKeySessionContextTypeDef
-
-def get_value() -> AwsIamAccessKeySessionContextTypeDef:
-    return {
-        "Attributes": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamAccessKeySessionContextTypeDef(TypedDict):
-    Attributes: NotRequired[AwsIamAccessKeySessionContextAttributesTypeDef],  # (1)
-    SessionIssuer: NotRequired[AwsIamAccessKeySessionContextSessionIssuerTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsIamAccessKeySessionContextAttributesTypeDef](./type_defs.md#awsiamaccesskeysessioncontextattributestypedef) 
-2. See [:material-code-braces: AwsIamAccessKeySessionContextSessionIssuerTypeDef](./type_defs.md#awsiamaccesskeysessioncontextsessionissuertypedef) 
 ## AwsIamAttachedManagedPolicyTypeDef
 
 ```python title="Usage Example"
@@ -4160,29 +2594,6 @@ class AwsIamAttachedManagedPolicyTypeDef(TypedDict):
     PolicyArn: NotRequired[str],
 ```
 
-## AwsIamGroupDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamGroupDetailsTypeDef
-
-def get_value() -> AwsIamGroupDetailsTypeDef:
-    return {
-        "AttachedManagedPolicies": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamGroupDetailsTypeDef(TypedDict):
-    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
-    CreateDate: NotRequired[str],
-    GroupId: NotRequired[str],
-    GroupName: NotRequired[str],
-    GroupPolicyList: NotRequired[Sequence[AwsIamGroupPolicyTypeDef]],  # (2)
-    Path: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
-2. See [:material-code-braces: AwsIamGroupPolicyTypeDef](./type_defs.md#awsiamgrouppolicytypedef) 
 ## AwsIamGroupPolicyTypeDef
 
 ```python title="Usage Example"
@@ -4220,28 +2631,6 @@ class AwsIamInstanceProfileRoleTypeDef(TypedDict):
     RoleName: NotRequired[str],
 ```
 
-## AwsIamInstanceProfileTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamInstanceProfileTypeDef
-
-def get_value() -> AwsIamInstanceProfileTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamInstanceProfileTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    CreateDate: NotRequired[str],
-    InstanceProfileId: NotRequired[str],
-    InstanceProfileName: NotRequired[str],
-    Path: NotRequired[str],
-    Roles: NotRequired[Sequence[AwsIamInstanceProfileRoleTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsIamInstanceProfileRoleTypeDef](./type_defs.md#awsiaminstanceprofileroletypedef) 
 ## AwsIamPermissionsBoundaryTypeDef
 
 ```python title="Usage Example"
@@ -4259,33 +2648,6 @@ class AwsIamPermissionsBoundaryTypeDef(TypedDict):
     PermissionsBoundaryType: NotRequired[str],
 ```
 
-## AwsIamPolicyDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamPolicyDetailsTypeDef
-
-def get_value() -> AwsIamPolicyDetailsTypeDef:
-    return {
-        "AttachmentCount": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamPolicyDetailsTypeDef(TypedDict):
-    AttachmentCount: NotRequired[int],
-    CreateDate: NotRequired[str],
-    DefaultVersionId: NotRequired[str],
-    Description: NotRequired[str],
-    IsAttachable: NotRequired[bool],
-    Path: NotRequired[str],
-    PermissionsBoundaryUsageCount: NotRequired[int],
-    PolicyId: NotRequired[str],
-    PolicyName: NotRequired[str],
-    PolicyVersionList: NotRequired[Sequence[AwsIamPolicyVersionTypeDef]],  # (1)
-    UpdateDate: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsIamPolicyVersionTypeDef](./type_defs.md#awsiampolicyversiontypedef) 
 ## AwsIamPolicyVersionTypeDef
 
 ```python title="Usage Example"
@@ -4304,35 +2666,6 @@ class AwsIamPolicyVersionTypeDef(TypedDict):
     CreateDate: NotRequired[str],
 ```
 
-## AwsIamRoleDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamRoleDetailsTypeDef
-
-def get_value() -> AwsIamRoleDetailsTypeDef:
-    return {
-        "AssumeRolePolicyDocument": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamRoleDetailsTypeDef(TypedDict):
-    AssumeRolePolicyDocument: NotRequired[str],
-    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
-    CreateDate: NotRequired[str],
-    InstanceProfileList: NotRequired[Sequence[AwsIamInstanceProfileTypeDef]],  # (2)
-    PermissionsBoundary: NotRequired[AwsIamPermissionsBoundaryTypeDef],  # (3)
-    RoleId: NotRequired[str],
-    RoleName: NotRequired[str],
-    RolePolicyList: NotRequired[Sequence[AwsIamRolePolicyTypeDef]],  # (4)
-    MaxSessionDuration: NotRequired[int],
-    Path: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
-2. See [:material-code-braces: AwsIamInstanceProfileTypeDef](./type_defs.md#awsiaminstanceprofiletypedef) 
-3. See [:material-code-braces: AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef) 
-4. See [:material-code-braces: AwsIamRolePolicyTypeDef](./type_defs.md#awsiamrolepolicytypedef) 
 ## AwsIamRolePolicyTypeDef
 
 ```python title="Usage Example"
@@ -4349,32 +2682,6 @@ class AwsIamRolePolicyTypeDef(TypedDict):
     PolicyName: NotRequired[str],
 ```
 
-## AwsIamUserDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsIamUserDetailsTypeDef
-
-def get_value() -> AwsIamUserDetailsTypeDef:
-    return {
-        "AttachedManagedPolicies": ...,
-    }
-```
-
-```python title="Definition"
-class AwsIamUserDetailsTypeDef(TypedDict):
-    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
-    CreateDate: NotRequired[str],
-    GroupList: NotRequired[Sequence[str]],
-    Path: NotRequired[str],
-    PermissionsBoundary: NotRequired[AwsIamPermissionsBoundaryTypeDef],  # (2)
-    UserId: NotRequired[str],
-    UserName: NotRequired[str],
-    UserPolicyList: NotRequired[Sequence[AwsIamUserPolicyTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
-2. See [:material-code-braces: AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef) 
-3. See [:material-code-braces: AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef) 
 ## AwsIamUserPolicyTypeDef
 
 ```python title="Usage Example"
@@ -4449,80 +2756,6 @@ class AwsLambdaFunctionDeadLetterConfigTypeDef(TypedDict):
     TargetArn: NotRequired[str],
 ```
 
-## AwsLambdaFunctionDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionDetailsTypeDef
-
-def get_value() -> AwsLambdaFunctionDetailsTypeDef:
-    return {
-        "Code": ...,
-    }
-```
-
-```python title="Definition"
-class AwsLambdaFunctionDetailsTypeDef(TypedDict):
-    Code: NotRequired[AwsLambdaFunctionCodeTypeDef],  # (1)
-    CodeSha256: NotRequired[str],
-    DeadLetterConfig: NotRequired[AwsLambdaFunctionDeadLetterConfigTypeDef],  # (2)
-    Environment: NotRequired[AwsLambdaFunctionEnvironmentTypeDef],  # (3)
-    FunctionName: NotRequired[str],
-    Handler: NotRequired[str],
-    KmsKeyArn: NotRequired[str],
-    LastModified: NotRequired[str],
-    Layers: NotRequired[Sequence[AwsLambdaFunctionLayerTypeDef]],  # (4)
-    MasterArn: NotRequired[str],
-    MemorySize: NotRequired[int],
-    RevisionId: NotRequired[str],
-    Role: NotRequired[str],
-    Runtime: NotRequired[str],
-    Timeout: NotRequired[int],
-    TracingConfig: NotRequired[AwsLambdaFunctionTracingConfigTypeDef],  # (5)
-    VpcConfig: NotRequired[AwsLambdaFunctionVpcConfigTypeDef],  # (6)
-    Version: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsLambdaFunctionCodeTypeDef](./type_defs.md#awslambdafunctioncodetypedef) 
-2. See [:material-code-braces: AwsLambdaFunctionDeadLetterConfigTypeDef](./type_defs.md#awslambdafunctiondeadletterconfigtypedef) 
-3. See [:material-code-braces: AwsLambdaFunctionEnvironmentTypeDef](./type_defs.md#awslambdafunctionenvironmenttypedef) 
-4. See [:material-code-braces: AwsLambdaFunctionLayerTypeDef](./type_defs.md#awslambdafunctionlayertypedef) 
-5. See [:material-code-braces: AwsLambdaFunctionTracingConfigTypeDef](./type_defs.md#awslambdafunctiontracingconfigtypedef) 
-6. See [:material-code-braces: AwsLambdaFunctionVpcConfigTypeDef](./type_defs.md#awslambdafunctionvpcconfigtypedef) 
-## AwsLambdaFunctionEnvironmentErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionEnvironmentErrorTypeDef
-
-def get_value() -> AwsLambdaFunctionEnvironmentErrorTypeDef:
-    return {
-        "ErrorCode": ...,
-    }
-```
-
-```python title="Definition"
-class AwsLambdaFunctionEnvironmentErrorTypeDef(TypedDict):
-    ErrorCode: NotRequired[str],
-    Message: NotRequired[str],
-```
-
-## AwsLambdaFunctionEnvironmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionEnvironmentTypeDef
-
-def get_value() -> AwsLambdaFunctionEnvironmentTypeDef:
-    return {
-        "Variables": ...,
-    }
-```
-
-```python title="Definition"
-class AwsLambdaFunctionEnvironmentTypeDef(TypedDict):
-    Variables: NotRequired[Mapping[str, str]],
-    Error: NotRequired[AwsLambdaFunctionEnvironmentErrorTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsLambdaFunctionEnvironmentErrorTypeDef](./type_defs.md#awslambdafunctionenvironmenterrortypedef) 
 ## AwsLambdaFunctionLayerTypeDef
 
 ```python title="Usage Example"
@@ -4574,6 +2807,23 @@ class AwsLambdaFunctionVpcConfigTypeDef(TypedDict):
     VpcId: NotRequired[str],
 ```
 
+## AwsLambdaFunctionEnvironmentErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionEnvironmentErrorTypeDef
+
+def get_value() -> AwsLambdaFunctionEnvironmentErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class AwsLambdaFunctionEnvironmentErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
+```
+
 ## AwsLambdaLayerVersionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4592,53 +2842,6 @@ class AwsLambdaLayerVersionDetailsTypeDef(TypedDict):
     CreatedDate: NotRequired[str],
 ```
 
-## AwsNetworkFirewallFirewallDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallDetailsTypeDef
-
-def get_value() -> AwsNetworkFirewallFirewallDetailsTypeDef:
-    return {
-        "DeleteProtection": ...,
-    }
-```
-
-```python title="Definition"
-class AwsNetworkFirewallFirewallDetailsTypeDef(TypedDict):
-    DeleteProtection: NotRequired[bool],
-    Description: NotRequired[str],
-    FirewallArn: NotRequired[str],
-    FirewallId: NotRequired[str],
-    FirewallName: NotRequired[str],
-    FirewallPolicyArn: NotRequired[str],
-    FirewallPolicyChangeProtection: NotRequired[bool],
-    SubnetChangeProtection: NotRequired[bool],
-    SubnetMappings: NotRequired[Sequence[AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef]],  # (1)
-    VpcId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallsubnetmappingsdetailstypedef) 
-## AwsNetworkFirewallFirewallPolicyDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallPolicyDetailsTypeDef
-
-def get_value() -> AwsNetworkFirewallFirewallPolicyDetailsTypeDef:
-    return {
-        "FirewallPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class AwsNetworkFirewallFirewallPolicyDetailsTypeDef(TypedDict):
-    FirewallPolicy: NotRequired[FirewallPolicyDetailsTypeDef],  # (1)
-    FirewallPolicyArn: NotRequired[str],
-    FirewallPolicyId: NotRequired[str],
-    FirewallPolicyName: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-1. See [:material-code-braces: FirewallPolicyDetailsTypeDef](./type_defs.md#firewallpolicydetailstypedef) 
 ## AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4655,55 +2858,6 @@ class AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef(TypedDict):
     SubnetId: NotRequired[str],
 ```
 
-## AwsNetworkFirewallRuleGroupDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallRuleGroupDetailsTypeDef
-
-def get_value() -> AwsNetworkFirewallRuleGroupDetailsTypeDef:
-    return {
-        "Capacity": ...,
-    }
-```
-
-```python title="Definition"
-class AwsNetworkFirewallRuleGroupDetailsTypeDef(TypedDict):
-    Capacity: NotRequired[int],
-    Description: NotRequired[str],
-    RuleGroup: NotRequired[RuleGroupDetailsTypeDef],  # (1)
-    RuleGroupArn: NotRequired[str],
-    RuleGroupId: NotRequired[str],
-    RuleGroupName: NotRequired[str],
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: RuleGroupDetailsTypeDef](./type_defs.md#rulegroupdetailstypedef) 
-## AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
-
-def get_value() -> AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef:
-    return {
-        "InstanceCount": ...,
-    }
-```
-
-```python title="Definition"
-class AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef(TypedDict):
-    InstanceCount: NotRequired[int],
-    WarmEnabled: NotRequired[bool],
-    WarmCount: NotRequired[int],
-    DedicatedMasterEnabled: NotRequired[bool],
-    ZoneAwarenessConfig: NotRequired[AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef],  # (1)
-    DedicatedMasterCount: NotRequired[int],
-    InstanceType: NotRequired[str],
-    WarmType: NotRequired[str],
-    ZoneAwarenessEnabled: NotRequired[bool],
-    DedicatedMasterType: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigzoneawarenessconfigdetailstypedef) 
 ## AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4720,42 +2874,6 @@ class AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef(T
     AvailabilityZoneCount: NotRequired[int],
 ```
 
-## AwsOpenSearchServiceDomainDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainDetailsTypeDef
-
-def get_value() -> AwsOpenSearchServiceDomainDetailsTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsOpenSearchServiceDomainDetailsTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    AccessPolicies: NotRequired[str],
-    DomainName: NotRequired[str],
-    Id: NotRequired[str],
-    DomainEndpoint: NotRequired[str],
-    EngineVersion: NotRequired[str],
-    EncryptionAtRestOptions: NotRequired[AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef],  # (1)
-    NodeToNodeEncryptionOptions: NotRequired[AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef],  # (2)
-    ServiceSoftwareOptions: NotRequired[AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef],  # (3)
-    ClusterConfig: NotRequired[AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef],  # (4)
-    DomainEndpointOptions: NotRequired[AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef],  # (5)
-    VpcOptions: NotRequired[AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef],  # (6)
-    LogPublishingOptions: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef],  # (7)
-    DomainEndpoints: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainencryptionatrestoptionsdetailstypedef) 
-2. See [:material-code-braces: AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainnodetonodeencryptionoptionsdetailstypedef) 
-3. See [:material-code-braces: AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainservicesoftwareoptionsdetailstypedef) 
-4. See [:material-code-braces: AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigdetailstypedef) 
-5. See [:material-code-braces: AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindomainendpointoptionsdetailstypedef) 
-6. See [:material-code-braces: AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainvpcoptionsdetailstypedef) 
-7. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptionsdetailstypedef) 
 ## AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4793,44 +2911,6 @@ class AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef(TypedDict)
     KmsKeyId: NotRequired[str],
 ```
 
-## AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
-
-def get_value() -> AwsOpenSearchServiceDomainLogPublishingOptionTypeDef:
-    return {
-        "CloudWatchLogsLogGroupArn": ...,
-    }
-```
-
-```python title="Definition"
-class AwsOpenSearchServiceDomainLogPublishingOptionTypeDef(TypedDict):
-    CloudWatchLogsLogGroupArn: NotRequired[str],
-    Enabled: NotRequired[bool],
-```
-
-## AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
-
-def get_value() -> AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef:
-    return {
-        "IndexSlowLogs": ...,
-    }
-```
-
-```python title="Definition"
-class AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef(TypedDict):
-    IndexSlowLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
-    SearchSlowLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
-    AuditLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
-2. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
-3. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
 ## AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4887,6 +2967,23 @@ class AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef(TypedDict):
     SubnetIds: NotRequired[Sequence[str]],
 ```
 
+## AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainLogPublishingOptionTypeDef:
+    return {
+        "CloudWatchLogsLogGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainLogPublishingOptionTypeDef(TypedDict):
+    CloudWatchLogsLogGroupArn: NotRequired[str],
+    Enabled: NotRequired[bool],
+```
+
 ## AwsRdsDbClusterAssociatedRoleTypeDef
 
 ```python title="Usage Example"
@@ -4904,63 +3001,6 @@ class AwsRdsDbClusterAssociatedRoleTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsRdsDbClusterDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbClusterDetailsTypeDef
-
-def get_value() -> AwsRdsDbClusterDetailsTypeDef:
-    return {
-        "AllocatedStorage": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbClusterDetailsTypeDef(TypedDict):
-    AllocatedStorage: NotRequired[int],
-    AvailabilityZones: NotRequired[Sequence[str]],
-    BackupRetentionPeriod: NotRequired[int],
-    DatabaseName: NotRequired[str],
-    Status: NotRequired[str],
-    Endpoint: NotRequired[str],
-    ReaderEndpoint: NotRequired[str],
-    CustomEndpoints: NotRequired[Sequence[str]],
-    MultiAz: NotRequired[bool],
-    Engine: NotRequired[str],
-    EngineVersion: NotRequired[str],
-    Port: NotRequired[int],
-    MasterUsername: NotRequired[str],
-    PreferredBackupWindow: NotRequired[str],
-    PreferredMaintenanceWindow: NotRequired[str],
-    ReadReplicaIdentifiers: NotRequired[Sequence[str]],
-    VpcSecurityGroups: NotRequired[Sequence[AwsRdsDbInstanceVpcSecurityGroupTypeDef]],  # (1)
-    HostedZoneId: NotRequired[str],
-    StorageEncrypted: NotRequired[bool],
-    KmsKeyId: NotRequired[str],
-    DbClusterResourceId: NotRequired[str],
-    AssociatedRoles: NotRequired[Sequence[AwsRdsDbClusterAssociatedRoleTypeDef]],  # (2)
-    ClusterCreateTime: NotRequired[str],
-    EnabledCloudWatchLogsExports: NotRequired[Sequence[str]],
-    EngineMode: NotRequired[str],
-    DeletionProtection: NotRequired[bool],
-    HttpEndpointEnabled: NotRequired[bool],
-    ActivityStreamStatus: NotRequired[str],
-    CopyTagsToSnapshot: NotRequired[bool],
-    CrossAccountClone: NotRequired[bool],
-    DomainMemberships: NotRequired[Sequence[AwsRdsDbDomainMembershipTypeDef]],  # (3)
-    DbClusterParameterGroup: NotRequired[str],
-    DbSubnetGroup: NotRequired[str],
-    DbClusterOptionGroupMemberships: NotRequired[Sequence[AwsRdsDbClusterOptionGroupMembershipTypeDef]],  # (4)
-    DbClusterIdentifier: NotRequired[str],
-    DbClusterMembers: NotRequired[Sequence[AwsRdsDbClusterMemberTypeDef]],  # (5)
-    IamDatabaseAuthenticationEnabled: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef) 
-2. See [:material-code-braces: AwsRdsDbClusterAssociatedRoleTypeDef](./type_defs.md#awsrdsdbclusterassociatedroletypedef) 
-3. See [:material-code-braces: AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef) 
-4. See [:material-code-braces: AwsRdsDbClusterOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdbclusteroptiongroupmembershiptypedef) 
-5. See [:material-code-braces: AwsRdsDbClusterMemberTypeDef](./type_defs.md#awsrdsdbclustermembertypedef) 
 ## AwsRdsDbClusterMemberTypeDef
 
 ```python title="Usage Example"
@@ -4997,6 +3037,42 @@ class AwsRdsDbClusterOptionGroupMembershipTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
+## AwsRdsDbDomainMembershipTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbDomainMembershipTypeDef
+
+def get_value() -> AwsRdsDbDomainMembershipTypeDef:
+    return {
+        "Domain": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbDomainMembershipTypeDef(TypedDict):
+    Domain: NotRequired[str],
+    Status: NotRequired[str],
+    Fqdn: NotRequired[str],
+    IamRoleName: NotRequired[str],
+```
+
+## AwsRdsDbInstanceVpcSecurityGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceVpcSecurityGroupTypeDef
+
+def get_value() -> AwsRdsDbInstanceVpcSecurityGroupTypeDef:
+    return {
+        "VpcSecurityGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbInstanceVpcSecurityGroupTypeDef(TypedDict):
+    VpcSecurityGroupId: NotRequired[str],
+    Status: NotRequired[str],
+```
+
 ## AwsRdsDbClusterSnapshotDetailsTypeDef
 
 ```python title="Usage Example"
@@ -5030,25 +3106,6 @@ class AwsRdsDbClusterSnapshotDetailsTypeDef(TypedDict):
     IamDatabaseAuthenticationEnabled: NotRequired[bool],
 ```
 
-## AwsRdsDbDomainMembershipTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbDomainMembershipTypeDef
-
-def get_value() -> AwsRdsDbDomainMembershipTypeDef:
-    return {
-        "Domain": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbDomainMembershipTypeDef(TypedDict):
-    Domain: NotRequired[str],
-    Status: NotRequired[str],
-    Fqdn: NotRequired[str],
-    IamRoleName: NotRequired[str],
-```
-
 ## AwsRdsDbInstanceAssociatedRoleTypeDef
 
 ```python title="Usage Example"
@@ -5067,89 +3124,6 @@ class AwsRdsDbInstanceAssociatedRoleTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsRdsDbInstanceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceDetailsTypeDef
-
-def get_value() -> AwsRdsDbInstanceDetailsTypeDef:
-    return {
-        "AssociatedRoles": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbInstanceDetailsTypeDef(TypedDict):
-    AssociatedRoles: NotRequired[Sequence[AwsRdsDbInstanceAssociatedRoleTypeDef]],  # (1)
-    CACertificateIdentifier: NotRequired[str],
-    DBClusterIdentifier: NotRequired[str],
-    DBInstanceIdentifier: NotRequired[str],
-    DBInstanceClass: NotRequired[str],
-    DbInstancePort: NotRequired[int],
-    DbiResourceId: NotRequired[str],
-    DBName: NotRequired[str],
-    DeletionProtection: NotRequired[bool],
-    Endpoint: NotRequired[AwsRdsDbInstanceEndpointTypeDef],  # (2)
-    Engine: NotRequired[str],
-    EngineVersion: NotRequired[str],
-    IAMDatabaseAuthenticationEnabled: NotRequired[bool],
-    InstanceCreateTime: NotRequired[str],
-    KmsKeyId: NotRequired[str],
-    PubliclyAccessible: NotRequired[bool],
-    StorageEncrypted: NotRequired[bool],
-    TdeCredentialArn: NotRequired[str],
-    VpcSecurityGroups: NotRequired[Sequence[AwsRdsDbInstanceVpcSecurityGroupTypeDef]],  # (3)
-    MultiAz: NotRequired[bool],
-    EnhancedMonitoringResourceArn: NotRequired[str],
-    DbInstanceStatus: NotRequired[str],
-    MasterUsername: NotRequired[str],
-    AllocatedStorage: NotRequired[int],
-    PreferredBackupWindow: NotRequired[str],
-    BackupRetentionPeriod: NotRequired[int],
-    DbSecurityGroups: NotRequired[Sequence[str]],
-    DbParameterGroups: NotRequired[Sequence[AwsRdsDbParameterGroupTypeDef]],  # (4)
-    AvailabilityZone: NotRequired[str],
-    DbSubnetGroup: NotRequired[AwsRdsDbSubnetGroupTypeDef],  # (5)
-    PreferredMaintenanceWindow: NotRequired[str],
-    PendingModifiedValues: NotRequired[AwsRdsDbPendingModifiedValuesTypeDef],  # (6)
-    LatestRestorableTime: NotRequired[str],
-    AutoMinorVersionUpgrade: NotRequired[bool],
-    ReadReplicaSourceDBInstanceIdentifier: NotRequired[str],
-    ReadReplicaDBInstanceIdentifiers: NotRequired[Sequence[str]],
-    ReadReplicaDBClusterIdentifiers: NotRequired[Sequence[str]],
-    LicenseModel: NotRequired[str],
-    Iops: NotRequired[int],
-    OptionGroupMemberships: NotRequired[Sequence[AwsRdsDbOptionGroupMembershipTypeDef]],  # (7)
-    CharacterSetName: NotRequired[str],
-    SecondaryAvailabilityZone: NotRequired[str],
-    StatusInfos: NotRequired[Sequence[AwsRdsDbStatusInfoTypeDef]],  # (8)
-    StorageType: NotRequired[str],
-    DomainMemberships: NotRequired[Sequence[AwsRdsDbDomainMembershipTypeDef]],  # (9)
-    CopyTagsToSnapshot: NotRequired[bool],
-    MonitoringInterval: NotRequired[int],
-    MonitoringRoleArn: NotRequired[str],
-    PromotionTier: NotRequired[int],
-    Timezone: NotRequired[str],
-    PerformanceInsightsEnabled: NotRequired[bool],
-    PerformanceInsightsKmsKeyId: NotRequired[str],
-    PerformanceInsightsRetentionPeriod: NotRequired[int],
-    EnabledCloudWatchLogsExports: NotRequired[Sequence[str]],
-    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (10)
-    ListenerEndpoint: NotRequired[AwsRdsDbInstanceEndpointTypeDef],  # (2)
-    MaxAllocatedStorage: NotRequired[int],
-```
-
-1. See [:material-code-braces: AwsRdsDbInstanceAssociatedRoleTypeDef](./type_defs.md#awsrdsdbinstanceassociatedroletypedef) 
-2. See [:material-code-braces: AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef) 
-3. See [:material-code-braces: AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef) 
-4. See [:material-code-braces: AwsRdsDbParameterGroupTypeDef](./type_defs.md#awsrdsdbparametergrouptypedef) 
-5. See [:material-code-braces: AwsRdsDbSubnetGroupTypeDef](./type_defs.md#awsrdsdbsubnetgrouptypedef) 
-6. See [:material-code-braces: AwsRdsDbPendingModifiedValuesTypeDef](./type_defs.md#awsrdsdbpendingmodifiedvaluestypedef) 
-7. See [:material-code-braces: AwsRdsDbOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdboptiongroupmembershiptypedef) 
-8. See [:material-code-braces: AwsRdsDbStatusInfoTypeDef](./type_defs.md#awsrdsdbstatusinfotypedef) 
-9. See [:material-code-braces: AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef) 
-10. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
-11. See [:material-code-braces: AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef) 
 ## AwsRdsDbInstanceEndpointTypeDef
 
 ```python title="Usage Example"
@@ -5166,23 +3140,6 @@ class AwsRdsDbInstanceEndpointTypeDef(TypedDict):
     Address: NotRequired[str],
     Port: NotRequired[int],
     HostedZoneId: NotRequired[str],
-```
-
-## AwsRdsDbInstanceVpcSecurityGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceVpcSecurityGroupTypeDef
-
-def get_value() -> AwsRdsDbInstanceVpcSecurityGroupTypeDef:
-    return {
-        "VpcSecurityGroupId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbInstanceVpcSecurityGroupTypeDef(TypedDict):
-    VpcSecurityGroupId: NotRequired[str],
-    Status: NotRequired[str],
 ```
 
 ## AwsRdsDbOptionGroupMembershipTypeDef
@@ -5219,38 +3176,6 @@ class AwsRdsDbParameterGroupTypeDef(TypedDict):
     ParameterApplyStatus: NotRequired[str],
 ```
 
-## AwsRdsDbPendingModifiedValuesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbPendingModifiedValuesTypeDef
-
-def get_value() -> AwsRdsDbPendingModifiedValuesTypeDef:
-    return {
-        "DbInstanceClass": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbPendingModifiedValuesTypeDef(TypedDict):
-    DbInstanceClass: NotRequired[str],
-    AllocatedStorage: NotRequired[int],
-    MasterUserPassword: NotRequired[str],
-    Port: NotRequired[int],
-    BackupRetentionPeriod: NotRequired[int],
-    MultiAZ: NotRequired[bool],
-    EngineVersion: NotRequired[str],
-    LicenseModel: NotRequired[str],
-    Iops: NotRequired[int],
-    DbInstanceIdentifier: NotRequired[str],
-    StorageType: NotRequired[str],
-    CaCertificateIdentifier: NotRequired[str],
-    DbSubnetGroupName: NotRequired[str],
-    PendingCloudWatchLogsExports: NotRequired[AwsRdsPendingCloudWatchLogsExportsTypeDef],  # (1)
-    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: AwsRdsPendingCloudWatchLogsExportsTypeDef](./type_defs.md#awsrdspendingcloudwatchlogsexportstypedef) 
-2. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
 ## AwsRdsDbProcessorFeatureTypeDef
 
 ```python title="Usage Example"
@@ -5268,30 +3193,42 @@ class AwsRdsDbProcessorFeatureTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
-## AwsRdsDbSecurityGroupDetailsTypeDef
+## AwsRdsDbStatusInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbSecurityGroupDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import AwsRdsDbStatusInfoTypeDef
 
-def get_value() -> AwsRdsDbSecurityGroupDetailsTypeDef:
+def get_value() -> AwsRdsDbStatusInfoTypeDef:
     return {
-        "DbSecurityGroupArn": ...,
+        "StatusType": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsRdsDbSecurityGroupDetailsTypeDef(TypedDict):
-    DbSecurityGroupArn: NotRequired[str],
-    DbSecurityGroupDescription: NotRequired[str],
-    DbSecurityGroupName: NotRequired[str],
-    Ec2SecurityGroups: NotRequired[Sequence[AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef]],  # (1)
-    IpRanges: NotRequired[Sequence[AwsRdsDbSecurityGroupIpRangeTypeDef]],  # (2)
-    OwnerId: NotRequired[str],
-    VpcId: NotRequired[str],
+class AwsRdsDbStatusInfoTypeDef(TypedDict):
+    StatusType: NotRequired[str],
+    Normal: NotRequired[bool],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef](./type_defs.md#awsrdsdbsecuritygroupec2securitygrouptypedef) 
-2. See [:material-code-braces: AwsRdsDbSecurityGroupIpRangeTypeDef](./type_defs.md#awsrdsdbsecuritygroupiprangetypedef) 
+## AwsRdsPendingCloudWatchLogsExportsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsPendingCloudWatchLogsExportsTypeDef
+
+def get_value() -> AwsRdsPendingCloudWatchLogsExportsTypeDef:
+    return {
+        "LogTypesToEnable": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsPendingCloudWatchLogsExportsTypeDef(TypedDict):
+    LogTypesToEnable: NotRequired[Sequence[str]],
+    LogTypesToDisable: NotRequired[Sequence[str]],
+```
+
 ## AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef
 
 ```python title="Usage Example"
@@ -5328,68 +3265,6 @@ class AwsRdsDbSecurityGroupIpRangeTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsRdsDbSnapshotDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbSnapshotDetailsTypeDef
-
-def get_value() -> AwsRdsDbSnapshotDetailsTypeDef:
-    return {
-        "DbSnapshotIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbSnapshotDetailsTypeDef(TypedDict):
-    DbSnapshotIdentifier: NotRequired[str],
-    DbInstanceIdentifier: NotRequired[str],
-    SnapshotCreateTime: NotRequired[str],
-    Engine: NotRequired[str],
-    AllocatedStorage: NotRequired[int],
-    Status: NotRequired[str],
-    Port: NotRequired[int],
-    AvailabilityZone: NotRequired[str],
-    VpcId: NotRequired[str],
-    InstanceCreateTime: NotRequired[str],
-    MasterUsername: NotRequired[str],
-    EngineVersion: NotRequired[str],
-    LicenseModel: NotRequired[str],
-    SnapshotType: NotRequired[str],
-    Iops: NotRequired[int],
-    OptionGroupName: NotRequired[str],
-    PercentProgress: NotRequired[int],
-    SourceRegion: NotRequired[str],
-    SourceDbSnapshotIdentifier: NotRequired[str],
-    StorageType: NotRequired[str],
-    TdeCredentialArn: NotRequired[str],
-    Encrypted: NotRequired[bool],
-    KmsKeyId: NotRequired[str],
-    Timezone: NotRequired[str],
-    IamDatabaseAuthenticationEnabled: NotRequired[bool],
-    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (1)
-    DbiResourceId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
-## AwsRdsDbStatusInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbStatusInfoTypeDef
-
-def get_value() -> AwsRdsDbStatusInfoTypeDef:
-    return {
-        "StatusType": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbStatusInfoTypeDef(TypedDict):
-    StatusType: NotRequired[str],
-    Normal: NotRequired[bool],
-    Status: NotRequired[str],
-    Message: NotRequired[str],
-```
-
 ## AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef
 
 ```python title="Usage Example"
@@ -5406,47 +3281,6 @@ class AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## AwsRdsDbSubnetGroupSubnetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbSubnetGroupSubnetTypeDef
-
-def get_value() -> AwsRdsDbSubnetGroupSubnetTypeDef:
-    return {
-        "SubnetIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbSubnetGroupSubnetTypeDef(TypedDict):
-    SubnetIdentifier: NotRequired[str],
-    SubnetAvailabilityZone: NotRequired[AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef],  # (1)
-    SubnetStatus: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnetavailabilityzonetypedef) 
-## AwsRdsDbSubnetGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsDbSubnetGroupTypeDef
-
-def get_value() -> AwsRdsDbSubnetGroupTypeDef:
-    return {
-        "DbSubnetGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsDbSubnetGroupTypeDef(TypedDict):
-    DbSubnetGroupName: NotRequired[str],
-    DbSubnetGroupDescription: NotRequired[str],
-    VpcId: NotRequired[str],
-    SubnetGroupStatus: NotRequired[str],
-    Subnets: NotRequired[Sequence[AwsRdsDbSubnetGroupSubnetTypeDef]],  # (1)
-    DbSubnetGroupArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef) 
 ## AwsRdsEventSubscriptionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -5472,23 +3306,6 @@ class AwsRdsEventSubscriptionDetailsTypeDef(TypedDict):
     SubscriptionCreationTime: NotRequired[str],
 ```
 
-## AwsRdsPendingCloudWatchLogsExportsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRdsPendingCloudWatchLogsExportsTypeDef
-
-def get_value() -> AwsRdsPendingCloudWatchLogsExportsTypeDef:
-    return {
-        "LogTypesToEnable": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRdsPendingCloudWatchLogsExportsTypeDef(TypedDict):
-    LogTypesToEnable: NotRequired[Sequence[str]],
-    LogTypesToDisable: NotRequired[Sequence[str]],
-```
-
 ## AwsRedshiftClusterClusterNodeTypeDef
 
 ```python title="Usage Example"
@@ -5507,25 +3324,6 @@ class AwsRedshiftClusterClusterNodeTypeDef(TypedDict):
     PublicIpAddress: NotRequired[str],
 ```
 
-## AwsRedshiftClusterClusterParameterGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterClusterParameterGroupTypeDef
-
-def get_value() -> AwsRedshiftClusterClusterParameterGroupTypeDef:
-    return {
-        "ClusterParameterStatusList": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRedshiftClusterClusterParameterGroupTypeDef(TypedDict):
-    ClusterParameterStatusList: NotRequired[Sequence[AwsRedshiftClusterClusterParameterStatusTypeDef]],  # (1)
-    ParameterApplyStatus: NotRequired[str],
-    ParameterGroupName: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsRedshiftClusterClusterParameterStatusTypeDef](./type_defs.md#awsredshiftclusterclusterparameterstatustypedef) 
 ## AwsRedshiftClusterClusterParameterStatusTypeDef
 
 ```python title="Usage Example"
@@ -5598,79 +3396,6 @@ class AwsRedshiftClusterDeferredMaintenanceWindowTypeDef(TypedDict):
     DeferMaintenanceStartTime: NotRequired[str],
 ```
 
-## AwsRedshiftClusterDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterDetailsTypeDef
-
-def get_value() -> AwsRedshiftClusterDetailsTypeDef:
-    return {
-        "AllowVersionUpgrade": ...,
-    }
-```
-
-```python title="Definition"
-class AwsRedshiftClusterDetailsTypeDef(TypedDict):
-    AllowVersionUpgrade: NotRequired[bool],
-    AutomatedSnapshotRetentionPeriod: NotRequired[int],
-    AvailabilityZone: NotRequired[str],
-    ClusterAvailabilityStatus: NotRequired[str],
-    ClusterCreateTime: NotRequired[str],
-    ClusterIdentifier: NotRequired[str],
-    ClusterNodes: NotRequired[Sequence[AwsRedshiftClusterClusterNodeTypeDef]],  # (1)
-    ClusterParameterGroups: NotRequired[Sequence[AwsRedshiftClusterClusterParameterGroupTypeDef]],  # (2)
-    ClusterPublicKey: NotRequired[str],
-    ClusterRevisionNumber: NotRequired[str],
-    ClusterSecurityGroups: NotRequired[Sequence[AwsRedshiftClusterClusterSecurityGroupTypeDef]],  # (3)
-    ClusterSnapshotCopyStatus: NotRequired[AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef],  # (4)
-    ClusterStatus: NotRequired[str],
-    ClusterSubnetGroupName: NotRequired[str],
-    ClusterVersion: NotRequired[str],
-    DBName: NotRequired[str],
-    DeferredMaintenanceWindows: NotRequired[Sequence[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef]],  # (5)
-    ElasticIpStatus: NotRequired[AwsRedshiftClusterElasticIpStatusTypeDef],  # (6)
-    ElasticResizeNumberOfNodeOptions: NotRequired[str],
-    Encrypted: NotRequired[bool],
-    Endpoint: NotRequired[AwsRedshiftClusterEndpointTypeDef],  # (7)
-    EnhancedVpcRouting: NotRequired[bool],
-    ExpectedNextSnapshotScheduleTime: NotRequired[str],
-    ExpectedNextSnapshotScheduleTimeStatus: NotRequired[str],
-    HsmStatus: NotRequired[AwsRedshiftClusterHsmStatusTypeDef],  # (8)
-    IamRoles: NotRequired[Sequence[AwsRedshiftClusterIamRoleTypeDef]],  # (9)
-    KmsKeyId: NotRequired[str],
-    MaintenanceTrackName: NotRequired[str],
-    ManualSnapshotRetentionPeriod: NotRequired[int],
-    MasterUsername: NotRequired[str],
-    NextMaintenanceWindowStartTime: NotRequired[str],
-    NodeType: NotRequired[str],
-    NumberOfNodes: NotRequired[int],
-    PendingActions: NotRequired[Sequence[str]],
-    PendingModifiedValues: NotRequired[AwsRedshiftClusterPendingModifiedValuesTypeDef],  # (10)
-    PreferredMaintenanceWindow: NotRequired[str],
-    PubliclyAccessible: NotRequired[bool],
-    ResizeInfo: NotRequired[AwsRedshiftClusterResizeInfoTypeDef],  # (11)
-    RestoreStatus: NotRequired[AwsRedshiftClusterRestoreStatusTypeDef],  # (12)
-    SnapshotScheduleIdentifier: NotRequired[str],
-    SnapshotScheduleState: NotRequired[str],
-    VpcId: NotRequired[str],
-    VpcSecurityGroups: NotRequired[Sequence[AwsRedshiftClusterVpcSecurityGroupTypeDef]],  # (13)
-    LoggingStatus: NotRequired[AwsRedshiftClusterLoggingStatusTypeDef],  # (14)
-```
-
-1. See [:material-code-braces: AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef) 
-2. See [:material-code-braces: AwsRedshiftClusterClusterParameterGroupTypeDef](./type_defs.md#awsredshiftclusterclusterparametergrouptypedef) 
-3. See [:material-code-braces: AwsRedshiftClusterClusterSecurityGroupTypeDef](./type_defs.md#awsredshiftclusterclustersecuritygrouptypedef) 
-4. See [:material-code-braces: AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef](./type_defs.md#awsredshiftclusterclustersnapshotcopystatustypedef) 
-5. See [:material-code-braces: AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](./type_defs.md#awsredshiftclusterdeferredmaintenancewindowtypedef) 
-6. See [:material-code-braces: AwsRedshiftClusterElasticIpStatusTypeDef](./type_defs.md#awsredshiftclusterelasticipstatustypedef) 
-7. See [:material-code-braces: AwsRedshiftClusterEndpointTypeDef](./type_defs.md#awsredshiftclusterendpointtypedef) 
-8. See [:material-code-braces: AwsRedshiftClusterHsmStatusTypeDef](./type_defs.md#awsredshiftclusterhsmstatustypedef) 
-9. See [:material-code-braces: AwsRedshiftClusterIamRoleTypeDef](./type_defs.md#awsredshiftclusteriamroletypedef) 
-10. See [:material-code-braces: AwsRedshiftClusterPendingModifiedValuesTypeDef](./type_defs.md#awsredshiftclusterpendingmodifiedvaluestypedef) 
-11. See [:material-code-braces: AwsRedshiftClusterResizeInfoTypeDef](./type_defs.md#awsredshiftclusterresizeinfotypedef) 
-12. See [:material-code-braces: AwsRedshiftClusterRestoreStatusTypeDef](./type_defs.md#awsredshiftclusterrestorestatustypedef) 
-13. See [:material-code-braces: AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef) 
-14. See [:material-code-braces: AwsRedshiftClusterLoggingStatusTypeDef](./type_defs.md#awsredshiftclusterloggingstatustypedef) 
 ## AwsRedshiftClusterElasticIpStatusTypeDef
 
 ```python title="Usage Example"
@@ -5861,23 +3586,6 @@ class AwsS3AccountPublicAccessBlockDetailsTypeDef(TypedDict):
     RestrictPublicBuckets: NotRequired[bool],
 ```
 
-## AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef:
-    return {
-        "Rules": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef(TypedDict):
-    Rules: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef) 
 ## AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef
 
 ```python title="Usage Example"
@@ -5892,127 +3600,6 @@ def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMu
 ```python title="Definition"
 class AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef(TypedDict):
     DaysAfterInitiation: NotRequired[int],
-```
-
-## AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef:
-    return {
-        "AbortIncompleteMultipartUpload": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef(TypedDict):
-    AbortIncompleteMultipartUpload: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef],  # (1)
-    ExpirationDate: NotRequired[str],
-    ExpirationInDays: NotRequired[int],
-    ExpiredObjectDeleteMarker: NotRequired[bool],
-    Filter: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef],  # (2)
-    ID: NotRequired[str],
-    NoncurrentVersionExpirationInDays: NotRequired[int],
-    NoncurrentVersionTransitions: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef]],  # (3)
-    Prefix: NotRequired[str],
-    Status: NotRequired[str],
-    Transitions: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesabortincompletemultipartuploaddetailstypedef) 
-2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterdetailstypedef) 
-3. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef) 
-4. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef) 
-## AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef:
-    return {
-        "Predicate": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef(TypedDict):
-    Predicate: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatedetailstypedef) 
-## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef:
-    return {
-        "Operands": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef(TypedDict):
-    Operands: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef]],  # (1)
-    Prefix: NotRequired[str],
-    Tag: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef],  # (2)
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef) 
-2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef) 
-## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef:
-    return {
-        "Prefix": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef(TypedDict):
-    Prefix: NotRequired[str],
-    Tag: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef],  # (1)
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandstagdetailstypedef) 
-## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
-## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
-
-def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
 ```
 
 ## AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef
@@ -6050,6 +3637,40 @@ class AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef(Type
     StorageClass: NotRequired[str],
 ```
 
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## AwsS3BucketBucketVersioningConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -6067,40 +3688,6 @@ class AwsS3BucketBucketVersioningConfigurationTypeDef(TypedDict):
     Status: NotRequired[str],
 ```
 
-## AwsS3BucketDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketDetailsTypeDef
-
-def get_value() -> AwsS3BucketDetailsTypeDef:
-    return {
-        "OwnerId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketDetailsTypeDef(TypedDict):
-    OwnerId: NotRequired[str],
-    OwnerName: NotRequired[str],
-    OwnerAccountId: NotRequired[str],
-    CreatedAt: NotRequired[str],
-    ServerSideEncryptionConfiguration: NotRequired[AwsS3BucketServerSideEncryptionConfigurationTypeDef],  # (1)
-    BucketLifecycleConfiguration: NotRequired[AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef],  # (2)
-    PublicAccessBlockConfiguration: NotRequired[AwsS3AccountPublicAccessBlockDetailsTypeDef],  # (3)
-    AccessControlList: NotRequired[str],
-    BucketLoggingConfiguration: NotRequired[AwsS3BucketLoggingConfigurationTypeDef],  # (4)
-    BucketWebsiteConfiguration: NotRequired[AwsS3BucketWebsiteConfigurationTypeDef],  # (5)
-    BucketNotificationConfiguration: NotRequired[AwsS3BucketNotificationConfigurationTypeDef],  # (6)
-    BucketVersioningConfiguration: NotRequired[AwsS3BucketBucketVersioningConfigurationTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: AwsS3BucketServerSideEncryptionConfigurationTypeDef](./type_defs.md#awss3bucketserversideencryptionconfigurationtypedef) 
-2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationdetailstypedef) 
-3. See [:material-code-braces: AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef) 
-4. See [:material-code-braces: AwsS3BucketLoggingConfigurationTypeDef](./type_defs.md#awss3bucketloggingconfigurationtypedef) 
-5. See [:material-code-braces: AwsS3BucketWebsiteConfigurationTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationtypedef) 
-6. See [:material-code-braces: AwsS3BucketNotificationConfigurationTypeDef](./type_defs.md#awss3bucketnotificationconfigurationtypedef) 
-7. See [:material-code-braces: AwsS3BucketBucketVersioningConfigurationTypeDef](./type_defs.md#awss3bucketbucketversioningconfigurationtypedef) 
 ## AwsS3BucketLoggingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -6118,43 +3705,6 @@ class AwsS3BucketLoggingConfigurationTypeDef(TypedDict):
     LogFilePrefix: NotRequired[str],
 ```
 
-## AwsS3BucketNotificationConfigurationDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationDetailTypeDef
-
-def get_value() -> AwsS3BucketNotificationConfigurationDetailTypeDef:
-    return {
-        "Events": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketNotificationConfigurationDetailTypeDef(TypedDict):
-    Events: NotRequired[Sequence[str]],
-    Filter: NotRequired[AwsS3BucketNotificationConfigurationFilterTypeDef],  # (1)
-    Destination: NotRequired[str],
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsS3BucketNotificationConfigurationFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurationfiltertypedef) 
-## AwsS3BucketNotificationConfigurationFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationFilterTypeDef
-
-def get_value() -> AwsS3BucketNotificationConfigurationFilterTypeDef:
-    return {
-        "S3KeyFilter": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketNotificationConfigurationFilterTypeDef(TypedDict):
-    S3KeyFilter: NotRequired[AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfiltertypedef) 
 ## AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef
 
 ```python title="Usage Example"
@@ -6173,40 +3723,6 @@ class AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType](./literals.md#awss3bucketnotificationconfigurations3keyfilterrulenametype) 
-## AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
-
-def get_value() -> AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef:
-    return {
-        "FilterRules": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef(TypedDict):
-    FilterRules: NotRequired[Sequence[AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfilterruletypedef) 
-## AwsS3BucketNotificationConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationTypeDef
-
-def get_value() -> AwsS3BucketNotificationConfigurationTypeDef:
-    return {
-        "Configurations": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketNotificationConfigurationTypeDef(TypedDict):
-    Configurations: NotRequired[Sequence[AwsS3BucketNotificationConfigurationDetailTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef) 
 ## AwsS3BucketServerSideEncryptionByDefaultTypeDef
 
 ```python title="Usage Example"
@@ -6224,40 +3740,6 @@ class AwsS3BucketServerSideEncryptionByDefaultTypeDef(TypedDict):
     KMSMasterKeyID: NotRequired[str],
 ```
 
-## AwsS3BucketServerSideEncryptionConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionConfigurationTypeDef
-
-def get_value() -> AwsS3BucketServerSideEncryptionConfigurationTypeDef:
-    return {
-        "Rules": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketServerSideEncryptionConfigurationTypeDef(TypedDict):
-    Rules: NotRequired[Sequence[AwsS3BucketServerSideEncryptionRuleTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketServerSideEncryptionRuleTypeDef](./type_defs.md#awss3bucketserversideencryptionruletypedef) 
-## AwsS3BucketServerSideEncryptionRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionRuleTypeDef
-
-def get_value() -> AwsS3BucketServerSideEncryptionRuleTypeDef:
-    return {
-        "ApplyServerSideEncryptionByDefault": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketServerSideEncryptionRuleTypeDef(TypedDict):
-    ApplyServerSideEncryptionByDefault: NotRequired[AwsS3BucketServerSideEncryptionByDefaultTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsS3BucketServerSideEncryptionByDefaultTypeDef](./type_defs.md#awss3bucketserversideencryptionbydefaulttypedef) 
 ## AwsS3BucketWebsiteConfigurationRedirectToTypeDef
 
 ```python title="Usage Example"
@@ -6312,46 +3794,6 @@ class AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef(TypedDict):
     ReplaceKeyWith: NotRequired[str],
 ```
 
-## AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
-
-def get_value() -> AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef:
-    return {
-        "Condition": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef(TypedDict):
-    Condition: NotRequired[AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef],  # (1)
-    Redirect: NotRequired[AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleconditiontypedef) 
-2. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleredirecttypedef) 
-## AwsS3BucketWebsiteConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationTypeDef
-
-def get_value() -> AwsS3BucketWebsiteConfigurationTypeDef:
-    return {
-        "ErrorDocument": ...,
-    }
-```
-
-```python title="Definition"
-class AwsS3BucketWebsiteConfigurationTypeDef(TypedDict):
-    ErrorDocument: NotRequired[str],
-    IndexDocumentSuffix: NotRequired[str],
-    RedirectAllRequestsTo: NotRequired[AwsS3BucketWebsiteConfigurationRedirectToTypeDef],  # (1)
-    RoutingRules: NotRequired[Sequence[AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRedirectToTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationredirecttotypedef) 
-2. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruletypedef) 
 ## AwsS3ObjectDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6373,6 +3815,3357 @@ class AwsS3ObjectDetailsTypeDef(TypedDict):
     SSEKMSKeyId: NotRequired[str],
 ```
 
+## AwsSecretsManagerSecretRotationRulesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSecretsManagerSecretRotationRulesTypeDef
+
+def get_value() -> AwsSecretsManagerSecretRotationRulesTypeDef:
+    return {
+        "AutomaticallyAfterDays": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSecretsManagerSecretRotationRulesTypeDef(TypedDict):
+    AutomaticallyAfterDays: NotRequired[int],
+```
+
+## BooleanFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BooleanFilterTypeDef
+
+def get_value() -> BooleanFilterTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class BooleanFilterTypeDef(TypedDict):
+    Value: NotRequired[bool],
+```
+
+## IpFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import IpFilterTypeDef
+
+def get_value() -> IpFilterTypeDef:
+    return {
+        "Cidr": ...,
+    }
+```
+
+```python title="Definition"
+class IpFilterTypeDef(TypedDict):
+    Cidr: NotRequired[str],
+```
+
+## KeywordFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import KeywordFilterTypeDef
+
+def get_value() -> KeywordFilterTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class KeywordFilterTypeDef(TypedDict):
+    Value: NotRequired[str],
+```
+
+## MapFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import MapFilterTypeDef
+
+def get_value() -> MapFilterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class MapFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Comparison: NotRequired[MapFilterComparisonType],  # (1)
+```
+
+1. See [:material-code-brackets: MapFilterComparisonType](./literals.md#mapfiltercomparisontype) 
+## NumberFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NumberFilterTypeDef
+
+def get_value() -> NumberFilterTypeDef:
+    return {
+        "Gte": ...,
+    }
+```
+
+```python title="Definition"
+class NumberFilterTypeDef(TypedDict):
+    Gte: NotRequired[float],
+    Lte: NotRequired[float],
+    Eq: NotRequired[float],
+```
+
+## StringFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StringFilterTypeDef
+
+def get_value() -> StringFilterTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class StringFilterTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Comparison: NotRequired[StringFilterComparisonType],  # (1)
+```
+
+1. See [:material-code-brackets: StringFilterComparisonType](./literals.md#stringfiltercomparisontype) 
+## AwsSecurityFindingIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSecurityFindingIdentifierTypeDef
+
+def get_value() -> AwsSecurityFindingIdentifierTypeDef:
+    return {
+        "Id": ...,
+        "ProductArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSecurityFindingIdentifierTypeDef(TypedDict):
+    Id: str,
+    ProductArn: str,
+```
+
+## MalwareTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import MalwareTypeDef
+
+def get_value() -> MalwareTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MalwareTypeDef(TypedDict):
+    Name: str,
+    Type: NotRequired[MalwareTypeType],  # (1)
+    Path: NotRequired[str],
+    State: NotRequired[MalwareStateType],  # (2)
+```
+
+1. See [:material-code-brackets: MalwareTypeType](./literals.md#malwaretypetype) 
+2. See [:material-code-brackets: MalwareStateType](./literals.md#malwarestatetype) 
+## NoteTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NoteTypeDef
+
+def get_value() -> NoteTypeDef:
+    return {
+        "Text": ...,
+        "UpdatedBy": ...,
+        "UpdatedAt": ...,
+    }
+```
+
+```python title="Definition"
+class NoteTypeDef(TypedDict):
+    Text: str,
+    UpdatedBy: str,
+    UpdatedAt: str,
+```
+
+## PatchSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import PatchSummaryTypeDef
+
+def get_value() -> PatchSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class PatchSummaryTypeDef(TypedDict):
+    Id: str,
+    InstalledCount: NotRequired[int],
+    MissingCount: NotRequired[int],
+    FailedCount: NotRequired[int],
+    InstalledOtherCount: NotRequired[int],
+    InstalledRejectedCount: NotRequired[int],
+    InstalledPendingReboot: NotRequired[int],
+    OperationStartTime: NotRequired[str],
+    OperationEndTime: NotRequired[str],
+    RebootOption: NotRequired[str],
+    Operation: NotRequired[str],
+```
+
+## ProcessDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ProcessDetailsTypeDef
+
+def get_value() -> ProcessDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ProcessDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Path: NotRequired[str],
+    Pid: NotRequired[int],
+    ParentPid: NotRequired[int],
+    LaunchedAt: NotRequired[str],
+    TerminatedAt: NotRequired[str],
+```
+
+## RelatedFindingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RelatedFindingTypeDef
+
+def get_value() -> RelatedFindingTypeDef:
+    return {
+        "ProductArn": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class RelatedFindingTypeDef(TypedDict):
+    ProductArn: str,
+    Id: str,
+```
+
+## SeverityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SeverityTypeDef
+
+def get_value() -> SeverityTypeDef:
+    return {
+        "Product": ...,
+    }
+```
+
+```python title="Definition"
+class SeverityTypeDef(TypedDict):
+    Product: NotRequired[float],
+    Label: NotRequired[SeverityLabelType],  # (1)
+    Normalized: NotRequired[int],
+    Original: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
+## ThreatIntelIndicatorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ThreatIntelIndicatorTypeDef
+
+def get_value() -> ThreatIntelIndicatorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class ThreatIntelIndicatorTypeDef(TypedDict):
+    Type: NotRequired[ThreatIntelIndicatorTypeType],  # (1)
+    Value: NotRequired[str],
+    Category: NotRequired[ThreatIntelIndicatorCategoryType],  # (2)
+    LastObservedAt: NotRequired[str],
+    Source: NotRequired[str],
+    SourceUrl: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ThreatIntelIndicatorTypeType](./literals.md#threatintelindicatortypetype) 
+2. See [:material-code-brackets: ThreatIntelIndicatorCategoryType](./literals.md#threatintelindicatorcategorytype) 
+## WorkflowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import WorkflowTypeDef
+
+def get_value() -> WorkflowTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class WorkflowTypeDef(TypedDict):
+    Status: NotRequired[WorkflowStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: WorkflowStatusType](./literals.md#workflowstatustype) 
+## AwsSnsTopicSubscriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSnsTopicSubscriptionTypeDef
+
+def get_value() -> AwsSnsTopicSubscriptionTypeDef:
+    return {
+        "Endpoint": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSnsTopicSubscriptionTypeDef(TypedDict):
+    Endpoint: NotRequired[str],
+    Protocol: NotRequired[str],
+```
+
+## AwsSqsQueueDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSqsQueueDetailsTypeDef
+
+def get_value() -> AwsSqsQueueDetailsTypeDef:
+    return {
+        "KmsDataKeyReusePeriodSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSqsQueueDetailsTypeDef(TypedDict):
+    KmsDataKeyReusePeriodSeconds: NotRequired[int],
+    KmsMasterKeyId: NotRequired[str],
+    QueueName: NotRequired[str],
+    DeadLetterTargetArn: NotRequired[str],
+```
+
+## AwsSsmComplianceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSsmComplianceSummaryTypeDef
+
+def get_value() -> AwsSsmComplianceSummaryTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSsmComplianceSummaryTypeDef(TypedDict):
+    Status: NotRequired[str],
+    CompliantCriticalCount: NotRequired[int],
+    CompliantHighCount: NotRequired[int],
+    CompliantMediumCount: NotRequired[int],
+    ExecutionType: NotRequired[str],
+    NonCompliantCriticalCount: NotRequired[int],
+    CompliantInformationalCount: NotRequired[int],
+    NonCompliantInformationalCount: NotRequired[int],
+    CompliantUnspecifiedCount: NotRequired[int],
+    NonCompliantLowCount: NotRequired[int],
+    NonCompliantHighCount: NotRequired[int],
+    CompliantLowCount: NotRequired[int],
+    ComplianceType: NotRequired[str],
+    PatchBaselineId: NotRequired[str],
+    OverallSeverity: NotRequired[str],
+    NonCompliantMediumCount: NotRequired[int],
+    NonCompliantUnspecifiedCount: NotRequired[int],
+    PatchGroup: NotRequired[str],
+```
+
+## AwsWafRateBasedRuleMatchPredicateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleMatchPredicateTypeDef
+
+def get_value() -> AwsWafRateBasedRuleMatchPredicateTypeDef:
+    return {
+        "DataId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRateBasedRuleMatchPredicateTypeDef(TypedDict):
+    DataId: NotRequired[str],
+    Negated: NotRequired[bool],
+    Type: NotRequired[str],
+```
+
+## AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
+
+def get_value() -> AwsWafRegionalRateBasedRuleMatchPredicateTypeDef:
+    return {
+        "DataId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRateBasedRuleMatchPredicateTypeDef(TypedDict):
+    DataId: NotRequired[str],
+    Negated: NotRequired[bool],
+    Type: NotRequired[str],
+```
+
+## WafActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import WafActionTypeDef
+
+def get_value() -> WafActionTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class WafActionTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## WafExcludedRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import WafExcludedRuleTypeDef
+
+def get_value() -> WafExcludedRuleTypeDef:
+    return {
+        "RuleId": ...,
+    }
+```
+
+```python title="Definition"
+class WafExcludedRuleTypeDef(TypedDict):
+    RuleId: NotRequired[str],
+```
+
+## WafOverrideActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import WafOverrideActionTypeDef
+
+def get_value() -> WafOverrideActionTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class WafOverrideActionTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## AwsXrayEncryptionConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsXrayEncryptionConfigDetailsTypeDef
+
+def get_value() -> AwsXrayEncryptionConfigDetailsTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsXrayEncryptionConfigDetailsTypeDef(TypedDict):
+    KeyId: NotRequired[str],
+    Status: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+## BatchDisableStandardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchDisableStandardsRequestRequestTypeDef
+
+def get_value() -> BatchDisableStandardsRequestRequestTypeDef:
+    return {
+        "StandardsSubscriptionArns": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisableStandardsRequestRequestTypeDef(TypedDict):
+    StandardsSubscriptionArns: Sequence[str],
+```
+
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## StandardsSubscriptionRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsSubscriptionRequestTypeDef
+
+def get_value() -> StandardsSubscriptionRequestTypeDef:
+    return {
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsSubscriptionRequestTypeDef(TypedDict):
+    StandardsArn: str,
+    StandardsInput: NotRequired[Mapping[str, str]],
+```
+
+## ImportFindingsErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ImportFindingsErrorTypeDef
+
+def get_value() -> ImportFindingsErrorTypeDef:
+    return {
+        "Id": ...,
+        "ErrorCode": ...,
+        "ErrorMessage": ...,
+    }
+```
+
+```python title="Definition"
+class ImportFindingsErrorTypeDef(TypedDict):
+    Id: str,
+    ErrorCode: str,
+    ErrorMessage: str,
+```
+
+## NoteUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NoteUpdateTypeDef
+
+def get_value() -> NoteUpdateTypeDef:
+    return {
+        "Text": ...,
+        "UpdatedBy": ...,
+    }
+```
+
+```python title="Definition"
+class NoteUpdateTypeDef(TypedDict):
+    Text: str,
+    UpdatedBy: str,
+```
+
+## SeverityUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SeverityUpdateTypeDef
+
+def get_value() -> SeverityUpdateTypeDef:
+    return {
+        "Normalized": ...,
+    }
+```
+
+```python title="Definition"
+class SeverityUpdateTypeDef(TypedDict):
+    Normalized: NotRequired[int],
+    Product: NotRequired[float],
+    Label: NotRequired[SeverityLabelType],  # (1)
+```
+
+1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
+## WorkflowUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import WorkflowUpdateTypeDef
+
+def get_value() -> WorkflowUpdateTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class WorkflowUpdateTypeDef(TypedDict):
+    Status: NotRequired[WorkflowStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: WorkflowStatusType](./literals.md#workflowstatustype) 
+## CellTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CellTypeDef
+
+def get_value() -> CellTypeDef:
+    return {
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class CellTypeDef(TypedDict):
+    Column: NotRequired[int],
+    Row: NotRequired[int],
+    ColumnName: NotRequired[str],
+    CellReference: NotRequired[str],
+```
+
+## ClassificationStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ClassificationStatusTypeDef
+
+def get_value() -> ClassificationStatusTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class ClassificationStatusTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Reason: NotRequired[str],
+```
+
+## StatusReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StatusReasonTypeDef
+
+def get_value() -> StatusReasonTypeDef:
+    return {
+        "ReasonCode": ...,
+    }
+```
+
+```python title="Definition"
+class StatusReasonTypeDef(TypedDict):
+    ReasonCode: str,
+    Description: NotRequired[str],
+```
+
+## ContainerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ContainerDetailsTypeDef
+
+def get_value() -> ContainerDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ImageId: NotRequired[str],
+    ImageName: NotRequired[str],
+    LaunchedAt: NotRequired[str],
+```
+
+## CreateActionTargetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateActionTargetRequestRequestTypeDef
+
+def get_value() -> CreateActionTargetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class CreateActionTargetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    Id: str,
+```
+
+## CreateFindingAggregatorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorRequestRequestTypeDef
+
+def get_value() -> CreateFindingAggregatorRequestRequestTypeDef:
+    return {
+        "RegionLinkingMode": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFindingAggregatorRequestRequestTypeDef(TypedDict):
+    RegionLinkingMode: str,
+    Regions: NotRequired[Sequence[str]],
+```
+
+## ResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ResultTypeDef
+
+def get_value() -> ResultTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ResultTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    ProcessingResult: NotRequired[str],
+```
+
+## DateRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DateRangeTypeDef
+
+def get_value() -> DateRangeTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class DateRangeTypeDef(TypedDict):
+    Value: NotRequired[int],
+    Unit: NotRequired[DateRangeUnitType],  # (1)
+```
+
+1. See [:material-code-brackets: DateRangeUnitType](./literals.md#daterangeunittype) 
+## DeclineInvitationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeclineInvitationsRequestRequestTypeDef
+
+def get_value() -> DeclineInvitationsRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class DeclineInvitationsRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## DeleteActionTargetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteActionTargetRequestRequestTypeDef
+
+def get_value() -> DeleteActionTargetRequestRequestTypeDef:
+    return {
+        "ActionTargetArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteActionTargetRequestRequestTypeDef(TypedDict):
+    ActionTargetArn: str,
+```
+
+## DeleteFindingAggregatorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteFindingAggregatorRequestRequestTypeDef
+
+def get_value() -> DeleteFindingAggregatorRequestRequestTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFindingAggregatorRequestRequestTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+```
+
+## DeleteInsightRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteInsightRequestRequestTypeDef
+
+def get_value() -> DeleteInsightRequestRequestTypeDef:
+    return {
+        "InsightArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInsightRequestRequestTypeDef(TypedDict):
+    InsightArn: str,
+```
+
+## DeleteInvitationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteInvitationsRequestRequestTypeDef
+
+def get_value() -> DeleteInvitationsRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInvitationsRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## DeleteMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteMembersRequestRequestTypeDef
+
+def get_value() -> DeleteMembersRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMembersRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## DescribeActionTargetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeActionTargetsRequestRequestTypeDef
+
+def get_value() -> DescribeActionTargetsRequestRequestTypeDef:
+    return {
+        "ActionTargetArns": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeActionTargetsRequestRequestTypeDef(TypedDict):
+    ActionTargetArns: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## DescribeHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeHubRequestRequestTypeDef
+
+def get_value() -> DescribeHubRequestRequestTypeDef:
+    return {
+        "HubArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubRequestRequestTypeDef(TypedDict):
+    HubArn: NotRequired[str],
+```
+
+## DescribeProductsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeProductsRequestRequestTypeDef
+
+def get_value() -> DescribeProductsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ProductArn: NotRequired[str],
+```
+
+## ProductTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ProductTypeDef
+
+def get_value() -> ProductTypeDef:
+    return {
+        "ProductArn": ...,
+    }
+```
+
+```python title="Definition"
+class ProductTypeDef(TypedDict):
+    ProductArn: str,
+    ProductName: NotRequired[str],
+    CompanyName: NotRequired[str],
+    Description: NotRequired[str],
+    Categories: NotRequired[List[str]],
+    IntegrationTypes: NotRequired[List[IntegrationTypeType]],  # (1)
+    MarketplaceUrl: NotRequired[str],
+    ActivationUrl: NotRequired[str],
+    ProductSubscriptionResourcePolicy: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+## DescribeStandardsControlsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsRequestRequestTypeDef
+
+def get_value() -> DescribeStandardsControlsRequestRequestTypeDef:
+    return {
+        "StandardsSubscriptionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsControlsRequestRequestTypeDef(TypedDict):
+    StandardsSubscriptionArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## StandardsControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsControlTypeDef
+
+def get_value() -> StandardsControlTypeDef:
+    return {
+        "StandardsControlArn": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsControlTypeDef(TypedDict):
+    StandardsControlArn: NotRequired[str],
+    ControlStatus: NotRequired[ControlStatusType],  # (1)
+    DisabledReason: NotRequired[str],
+    ControlStatusUpdatedAt: NotRequired[datetime],
+    ControlId: NotRequired[str],
+    Title: NotRequired[str],
+    Description: NotRequired[str],
+    RemediationUrl: NotRequired[str],
+    SeverityRating: NotRequired[SeverityRatingType],  # (2)
+    RelatedRequirements: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
+2. See [:material-code-brackets: SeverityRatingType](./literals.md#severityratingtype) 
+## DescribeStandardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsRequestRequestTypeDef
+
+def get_value() -> DescribeStandardsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## StandardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardTypeDef
+
+def get_value() -> StandardTypeDef:
+    return {
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class StandardTypeDef(TypedDict):
+    StandardsArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    EnabledByDefault: NotRequired[bool],
+```
+
+## DisableImportFindingsForProductRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DisableImportFindingsForProductRequestRequestTypeDef
+
+def get_value() -> DisableImportFindingsForProductRequestRequestTypeDef:
+    return {
+        "ProductSubscriptionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DisableImportFindingsForProductRequestRequestTypeDef(TypedDict):
+    ProductSubscriptionArn: str,
+```
+
+## DisableOrganizationAdminAccountRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DisableOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> DisableOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "AdminAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DisableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    AdminAccountId: str,
+```
+
+## DisassociateMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DisassociateMembersRequestRequestTypeDef
+
+def get_value() -> DisassociateMembersRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateMembersRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## EnableImportFindingsForProductRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import EnableImportFindingsForProductRequestRequestTypeDef
+
+def get_value() -> EnableImportFindingsForProductRequestRequestTypeDef:
+    return {
+        "ProductArn": ...,
+    }
+```
+
+```python title="Definition"
+class EnableImportFindingsForProductRequestRequestTypeDef(TypedDict):
+    ProductArn: str,
+```
+
+## EnableOrganizationAdminAccountRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import EnableOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> EnableOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "AdminAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class EnableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    AdminAccountId: str,
+```
+
+## EnableSecurityHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import EnableSecurityHubRequestRequestTypeDef
+
+def get_value() -> EnableSecurityHubRequestRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class EnableSecurityHubRequestRequestTypeDef(TypedDict):
+    Tags: NotRequired[Mapping[str, str]],
+    EnableDefaultStandards: NotRequired[bool],
+```
+
+## FindingAggregatorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FindingAggregatorTypeDef
+
+def get_value() -> FindingAggregatorTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+    }
+```
+
+```python title="Definition"
+class FindingAggregatorTypeDef(TypedDict):
+    FindingAggregatorArn: NotRequired[str],
+```
+
+## FindingProviderSeverityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FindingProviderSeverityTypeDef
+
+def get_value() -> FindingProviderSeverityTypeDef:
+    return {
+        "Label": ...,
+    }
+```
+
+```python title="Definition"
+class FindingProviderSeverityTypeDef(TypedDict):
+    Label: NotRequired[SeverityLabelType],  # (1)
+    Original: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
+## FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
+
+def get_value() -> FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+```
+
+## FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
+
+def get_value() -> FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef:
+    return {
+        "Priority": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef(TypedDict):
+    Priority: NotRequired[int],
+    ResourceArn: NotRequired[str],
+```
+
+## InvitationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import InvitationTypeDef
+
+def get_value() -> InvitationTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class InvitationTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    InvitationId: NotRequired[str],
+    InvitedAt: NotRequired[datetime],
+    MemberStatus: NotRequired[str],
+```
+
+## GetEnabledStandardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetEnabledStandardsRequestRequestTypeDef
+
+def get_value() -> GetEnabledStandardsRequestRequestTypeDef:
+    return {
+        "StandardsSubscriptionArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnabledStandardsRequestRequestTypeDef(TypedDict):
+    StandardsSubscriptionArns: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## GetFindingAggregatorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetFindingAggregatorRequestRequestTypeDef
+
+def get_value() -> GetFindingAggregatorRequestRequestTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetFindingAggregatorRequestRequestTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+```
+
+## SortCriterionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SortCriterionTypeDef
+
+def get_value() -> SortCriterionTypeDef:
+    return {
+        "Field": ...,
+    }
+```
+
+```python title="Definition"
+class SortCriterionTypeDef(TypedDict):
+    Field: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (1)
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## GetInsightResultsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetInsightResultsRequestRequestTypeDef
+
+def get_value() -> GetInsightResultsRequestRequestTypeDef:
+    return {
+        "InsightArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetInsightResultsRequestRequestTypeDef(TypedDict):
+    InsightArn: str,
+```
+
+## GetInsightsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetInsightsRequestRequestTypeDef
+
+def get_value() -> GetInsightsRequestRequestTypeDef:
+    return {
+        "InsightArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetInsightsRequestRequestTypeDef(TypedDict):
+    InsightArns: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## GetMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetMembersRequestRequestTypeDef
+
+def get_value() -> GetMembersRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class GetMembersRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## MemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import MemberTypeDef
+
+def get_value() -> MemberTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class MemberTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    Email: NotRequired[str],
+    MasterId: NotRequired[str],
+    AdministratorId: NotRequired[str],
+    MemberStatus: NotRequired[str],
+    InvitedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+```
+
+## InsightResultValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import InsightResultValueTypeDef
+
+def get_value() -> InsightResultValueTypeDef:
+    return {
+        "GroupByAttributeValue": ...,
+        "Count": ...,
+    }
+```
+
+```python title="Definition"
+class InsightResultValueTypeDef(TypedDict):
+    GroupByAttributeValue: str,
+    Count: int,
+```
+
+## InviteMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import InviteMembersRequestRequestTypeDef
+
+def get_value() -> InviteMembersRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
+```
+
+```python title="Definition"
+class InviteMembersRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+```
+
+## ListEnabledProductsForImportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportRequestRequestTypeDef
+
+def get_value() -> ListEnabledProductsForImportRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnabledProductsForImportRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListFindingAggregatorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsRequestRequestTypeDef
+
+def get_value() -> ListFindingAggregatorsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingAggregatorsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListInvitationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListInvitationsRequestRequestTypeDef
+
+def get_value() -> ListInvitationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvitationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListMembersRequestRequestTypeDef
+
+def get_value() -> ListMembersRequestRequestTypeDef:
+    return {
+        "OnlyAssociated": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersRequestRequestTypeDef(TypedDict):
+    OnlyAssociated: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListOrganizationAdminAccountsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsRequestRequestTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## PortRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import PortRangeTypeDef
+
+def get_value() -> PortRangeTypeDef:
+    return {
+        "Begin": ...,
+    }
+```
+
+```python title="Definition"
+class PortRangeTypeDef(TypedDict):
+    Begin: NotRequired[int],
+    End: NotRequired[int],
+```
+
+## RangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RangeTypeDef
+
+def get_value() -> RangeTypeDef:
+    return {
+        "Start": ...,
+    }
+```
+
+```python title="Definition"
+class RangeTypeDef(TypedDict):
+    Start: NotRequired[int],
+    End: NotRequired[int],
+    StartColumn: NotRequired[int],
+```
+
+## RecordTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RecordTypeDef
+
+def get_value() -> RecordTypeDef:
+    return {
+        "JsonPath": ...,
+    }
+```
+
+```python title="Definition"
+class RecordTypeDef(TypedDict):
+    JsonPath: NotRequired[str],
+    RecordIndex: NotRequired[int],
+```
+
+## RecommendationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RecommendationTypeDef
+
+def get_value() -> RecommendationTypeDef:
+    return {
+        "Text": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationTypeDef(TypedDict):
+    Text: NotRequired[str],
+    Url: NotRequired[str],
+```
+
+## RuleGroupSourceListDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceListDetailsTypeDef
+
+def get_value() -> RuleGroupSourceListDetailsTypeDef:
+    return {
+        "GeneratedRulesType": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceListDetailsTypeDef(TypedDict):
+    GeneratedRulesType: NotRequired[str],
+    TargetTypes: NotRequired[Sequence[str]],
+    Targets: NotRequired[Sequence[str]],
+```
+
+## RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
+
+def get_value() -> RuleGroupSourceStatefulRulesHeaderDetailsTypeDef:
+    return {
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatefulRulesHeaderDetailsTypeDef(TypedDict):
+    Destination: NotRequired[str],
+    DestinationPort: NotRequired[str],
+    Direction: NotRequired[str],
+    Protocol: NotRequired[str],
+    Source: NotRequired[str],
+    SourcePort: NotRequired[str],
+```
+
+## RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
+
+def get_value() -> RuleGroupSourceStatefulRulesOptionsDetailsTypeDef:
+    return {
+        "Keyword": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatefulRulesOptionsDetailsTypeDef(TypedDict):
+    Keyword: NotRequired[str],
+    Settings: NotRequired[Sequence[str]],
+```
+
+## RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef:
+    return {
+        "FromPort": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef(TypedDict):
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+```
+
+## RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef:
+    return {
+        "AddressDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef(TypedDict):
+    AddressDefinition: NotRequired[str],
+```
+
+## RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef:
+    return {
+        "FromPort": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef(TypedDict):
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+```
+
+## RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef:
+    return {
+        "AddressDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef(TypedDict):
+    AddressDefinition: NotRequired[str],
+```
+
+## RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef:
+    return {
+        "Flags": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef(TypedDict):
+    Flags: NotRequired[Sequence[str]],
+    Masks: NotRequired[Sequence[str]],
+```
+
+## RuleGroupVariablesIpSetsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesIpSetsDetailsTypeDef
+
+def get_value() -> RuleGroupVariablesIpSetsDetailsTypeDef:
+    return {
+        "Definition": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupVariablesIpSetsDetailsTypeDef(TypedDict):
+    Definition: NotRequired[Sequence[str]],
+```
+
+## RuleGroupVariablesPortSetsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesPortSetsDetailsTypeDef
+
+def get_value() -> RuleGroupVariablesPortSetsDetailsTypeDef:
+    return {
+        "Definition": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupVariablesPortSetsDetailsTypeDef(TypedDict):
+    Definition: NotRequired[Sequence[str]],
+```
+
+## SoftwarePackageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SoftwarePackageTypeDef
+
+def get_value() -> SoftwarePackageTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class SoftwarePackageTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+    Epoch: NotRequired[str],
+    Release: NotRequired[str],
+    Architecture: NotRequired[str],
+    PackageManager: NotRequired[str],
+    FilePath: NotRequired[str],
+```
+
+## StandardsStatusReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsStatusReasonTypeDef
+
+def get_value() -> StandardsStatusReasonTypeDef:
+    return {
+        "StatusReasonCode": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsStatusReasonTypeDef(TypedDict):
+    StatusReasonCode: StatusReasonCodeType,  # (1)
+```
+
+1. See [:material-code-brackets: StatusReasonCodeType](./literals.md#statusreasoncodetype) 
+## StatelessCustomPublishMetricActionDimensionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionDimensionTypeDef
+
+def get_value() -> StatelessCustomPublishMetricActionDimensionTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class StatelessCustomPublishMetricActionDimensionTypeDef(TypedDict):
+    Value: NotRequired[str],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
+## UpdateActionTargetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateActionTargetRequestRequestTypeDef
+
+def get_value() -> UpdateActionTargetRequestRequestTypeDef:
+    return {
+        "ActionTargetArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateActionTargetRequestRequestTypeDef(TypedDict):
+    ActionTargetArn: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
+
+## UpdateFindingAggregatorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorRequestRequestTypeDef
+
+def get_value() -> UpdateFindingAggregatorRequestRequestTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+        "RegionLinkingMode": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFindingAggregatorRequestRequestTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+    RegionLinkingMode: str,
+    Regions: NotRequired[Sequence[str]],
+```
+
+## UpdateOrganizationConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "AutoEnable": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    AutoEnable: bool,
+    AutoEnableStandards: NotRequired[AutoEnableStandardsType],  # (1)
+```
+
+1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
+## UpdateSecurityHubConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateSecurityHubConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateSecurityHubConfigurationRequestRequestTypeDef:
+    return {
+        "AutoEnableControls": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSecurityHubConfigurationRequestRequestTypeDef(TypedDict):
+    AutoEnableControls: NotRequired[bool],
+```
+
+## UpdateStandardsControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateStandardsControlRequestRequestTypeDef
+
+def get_value() -> UpdateStandardsControlRequestRequestTypeDef:
+    return {
+        "StandardsControlArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStandardsControlRequestRequestTypeDef(TypedDict):
+    StandardsControlArn: str,
+    ControlStatus: NotRequired[ControlStatusType],  # (1)
+    DisabledReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
+## VulnerabilityVendorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import VulnerabilityVendorTypeDef
+
+def get_value() -> VulnerabilityVendorTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class VulnerabilityVendorTypeDef(TypedDict):
+    Name: str,
+    Url: NotRequired[str],
+    VendorSeverity: NotRequired[str],
+    VendorCreatedAt: NotRequired[str],
+    VendorUpdatedAt: NotRequired[str],
+```
+
+## CreateMembersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateMembersRequestRequestTypeDef
+
+def get_value() -> CreateMembersRequestRequestTypeDef:
+    return {
+        "AccountDetails": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMembersRequestRequestTypeDef(TypedDict):
+    AccountDetails: Sequence[AccountDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef) 
+## ActionRemoteIpDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ActionRemoteIpDetailsTypeDef
+
+def get_value() -> ActionRemoteIpDetailsTypeDef:
+    return {
+        "IpAddressV4": ...,
+    }
+```
+
+```python title="Definition"
+class ActionRemoteIpDetailsTypeDef(TypedDict):
+    IpAddressV4: NotRequired[str],
+    Organization: NotRequired[IpOrganizationDetailsTypeDef],  # (1)
+    Country: NotRequired[CountryTypeDef],  # (2)
+    City: NotRequired[CityTypeDef],  # (3)
+    GeoLocation: NotRequired[GeoLocationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: IpOrganizationDetailsTypeDef](./type_defs.md#iporganizationdetailstypedef) 
+2. See [:material-code-braces: CountryTypeDef](./type_defs.md#countrytypedef) 
+3. See [:material-code-braces: CityTypeDef](./type_defs.md#citytypedef) 
+4. See [:material-code-braces: GeoLocationTypeDef](./type_defs.md#geolocationtypedef) 
+## CvssTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CvssTypeDef
+
+def get_value() -> CvssTypeDef:
+    return {
+        "Version": ...,
+    }
+```
+
+```python title="Definition"
+class CvssTypeDef(TypedDict):
+    Version: NotRequired[str],
+    BaseScore: NotRequired[float],
+    BaseVector: NotRequired[str],
+    Source: NotRequired[str],
+    Adjustments: NotRequired[Sequence[AdjustmentTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AdjustmentTypeDef](./type_defs.md#adjustmenttypedef) 
+## AwsApiGatewayRestApiDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsApiGatewayRestApiDetailsTypeDef
+
+def get_value() -> AwsApiGatewayRestApiDetailsTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class AwsApiGatewayRestApiDetailsTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    Version: NotRequired[str],
+    BinaryMediaTypes: NotRequired[Sequence[str]],
+    MinimumCompressionSize: NotRequired[int],
+    ApiKeySource: NotRequired[str],
+    EndpointConfiguration: NotRequired[AwsApiGatewayEndpointConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsApiGatewayEndpointConfigurationTypeDef](./type_defs.md#awsapigatewayendpointconfigurationtypedef) 
+## AwsApiGatewayStageDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsApiGatewayStageDetailsTypeDef
+
+def get_value() -> AwsApiGatewayStageDetailsTypeDef:
+    return {
+        "DeploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsApiGatewayStageDetailsTypeDef(TypedDict):
+    DeploymentId: NotRequired[str],
+    ClientCertificateId: NotRequired[str],
+    StageName: NotRequired[str],
+    Description: NotRequired[str],
+    CacheClusterEnabled: NotRequired[bool],
+    CacheClusterSize: NotRequired[str],
+    CacheClusterStatus: NotRequired[str],
+    MethodSettings: NotRequired[Sequence[AwsApiGatewayMethodSettingsTypeDef]],  # (1)
+    Variables: NotRequired[Mapping[str, str]],
+    DocumentationVersion: NotRequired[str],
+    AccessLogSettings: NotRequired[AwsApiGatewayAccessLogSettingsTypeDef],  # (2)
+    CanarySettings: NotRequired[AwsApiGatewayCanarySettingsTypeDef],  # (3)
+    TracingEnabled: NotRequired[bool],
+    CreatedDate: NotRequired[str],
+    LastUpdatedDate: NotRequired[str],
+    WebAclArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsApiGatewayMethodSettingsTypeDef](./type_defs.md#awsapigatewaymethodsettingstypedef) 
+2. See [:material-code-braces: AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef) 
+3. See [:material-code-braces: AwsApiGatewayCanarySettingsTypeDef](./type_defs.md#awsapigatewaycanarysettingstypedef) 
+## AwsApiGatewayV2ApiDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsApiGatewayV2ApiDetailsTypeDef
+
+def get_value() -> AwsApiGatewayV2ApiDetailsTypeDef:
+    return {
+        "ApiEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class AwsApiGatewayV2ApiDetailsTypeDef(TypedDict):
+    ApiEndpoint: NotRequired[str],
+    ApiId: NotRequired[str],
+    ApiKeySelectionExpression: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    Description: NotRequired[str],
+    Version: NotRequired[str],
+    Name: NotRequired[str],
+    ProtocolType: NotRequired[str],
+    RouteSelectionExpression: NotRequired[str],
+    CorsConfiguration: NotRequired[AwsCorsConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsCorsConfigurationTypeDef](./type_defs.md#awscorsconfigurationtypedef) 
+## AwsApiGatewayV2StageDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsApiGatewayV2StageDetailsTypeDef
+
+def get_value() -> AwsApiGatewayV2StageDetailsTypeDef:
+    return {
+        "ClientCertificateId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsApiGatewayV2StageDetailsTypeDef(TypedDict):
+    ClientCertificateId: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    Description: NotRequired[str],
+    DefaultRouteSettings: NotRequired[AwsApiGatewayV2RouteSettingsTypeDef],  # (1)
+    DeploymentId: NotRequired[str],
+    LastUpdatedDate: NotRequired[str],
+    RouteSettings: NotRequired[AwsApiGatewayV2RouteSettingsTypeDef],  # (1)
+    StageName: NotRequired[str],
+    StageVariables: NotRequired[Mapping[str, str]],
+    AccessLogSettings: NotRequired[AwsApiGatewayAccessLogSettingsTypeDef],  # (3)
+    AutoDeploy: NotRequired[bool],
+    LastDeploymentStatusMessage: NotRequired[str],
+    ApiGatewayManaged: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef) 
+2. See [:material-code-braces: AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef) 
+3. See [:material-code-braces: AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef) 
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
+
+def get_value() -> AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef:
+    return {
+        "LaunchTemplateSpecification": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef(TypedDict):
+    LaunchTemplateSpecification: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef],  # (1)
+    Overrides: NotRequired[Sequence[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatelaunchtemplatespecificationtypedef) 
+2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplateoverrideslistdetailstypedef) 
+## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
+
+def get_value() -> AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef:
+    return {
+        "DeviceName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef(TypedDict):
+    DeviceName: NotRequired[str],
+    Ebs: NotRequired[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef],  # (1)
+    NoDevice: NotRequired[bool],
+    VirtualName: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef) 
+## AwsCertificateManagerCertificateDomainValidationOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateDomainValidationOptionTypeDef
+
+def get_value() -> AwsCertificateManagerCertificateDomainValidationOptionTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCertificateManagerCertificateDomainValidationOptionTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    ResourceRecord: NotRequired[AwsCertificateManagerCertificateResourceRecordTypeDef],  # (1)
+    ValidationDomain: NotRequired[str],
+    ValidationEmails: NotRequired[Sequence[str]],
+    ValidationMethod: NotRequired[str],
+    ValidationStatus: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsCertificateManagerCertificateResourceRecordTypeDef](./type_defs.md#awscertificatemanagercertificateresourcerecordtypedef) 
+## AwsCloudFrontDistributionCacheBehaviorsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionCacheBehaviorsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionCacheBehaviorsTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionCacheBehaviorsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[AwsCloudFrontDistributionCacheBehaviorTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef) 
+## AwsCloudFrontDistributionOriginGroupFailoverTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupFailoverTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginGroupFailoverTypeDef:
+    return {
+        "StatusCodes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginGroupFailoverTypeDef(TypedDict):
+    StatusCodes: NotRequired[AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailoverstatuscodestypedef) 
+## AwsCloudFrontDistributionOriginItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginItemTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginItemTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginItemTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    Id: NotRequired[str],
+    OriginPath: NotRequired[str],
+    S3OriginConfig: NotRequired[AwsCloudFrontDistributionOriginS3OriginConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigins3originconfigtypedef) 
+## AwsCodeBuildProjectEnvironmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentTypeDef
+
+def get_value() -> AwsCodeBuildProjectEnvironmentTypeDef:
+    return {
+        "Certificate": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectEnvironmentTypeDef(TypedDict):
+    Certificate: NotRequired[str],
+    EnvironmentVariables: NotRequired[Sequence[AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef]],  # (1)
+    PrivilegedMode: NotRequired[bool],
+    ImagePullCredentialsType: NotRequired[str],
+    RegistryCredential: NotRequired[AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef],  # (2)
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef](./type_defs.md#awscodebuildprojectenvironmentenvironmentvariablesdetailstypedef) 
+2. See [:material-code-braces: AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](./type_defs.md#awscodebuildprojectenvironmentregistrycredentialtypedef) 
+## AwsCodeBuildProjectLogsConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigDetailsTypeDef
+
+def get_value() -> AwsCodeBuildProjectLogsConfigDetailsTypeDef:
+    return {
+        "CloudWatchLogs": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectLogsConfigDetailsTypeDef(TypedDict):
+    CloudWatchLogs: NotRequired[AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef],  # (1)
+    S3Logs: NotRequired[AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigcloudwatchlogsdetailstypedef) 
+2. See [:material-code-braces: AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigs3logsdetailstypedef) 
+## AwsDynamoDbTableGlobalSecondaryIndexTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableGlobalSecondaryIndexTypeDef
+
+def get_value() -> AwsDynamoDbTableGlobalSecondaryIndexTypeDef:
+    return {
+        "Backfilling": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableGlobalSecondaryIndexTypeDef(TypedDict):
+    Backfilling: NotRequired[bool],
+    IndexArn: NotRequired[str],
+    IndexName: NotRequired[str],
+    IndexSizeBytes: NotRequired[int],
+    IndexStatus: NotRequired[str],
+    ItemCount: NotRequired[int],
+    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (1)
+    Projection: NotRequired[AwsDynamoDbTableProjectionTypeDef],  # (2)
+    ProvisionedThroughput: NotRequired[AwsDynamoDbTableProvisionedThroughputTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
+2. See [:material-code-braces: AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef) 
+3. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef) 
+## AwsDynamoDbTableLocalSecondaryIndexTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableLocalSecondaryIndexTypeDef
+
+def get_value() -> AwsDynamoDbTableLocalSecondaryIndexTypeDef:
+    return {
+        "IndexArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableLocalSecondaryIndexTypeDef(TypedDict):
+    IndexArn: NotRequired[str],
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (1)
+    Projection: NotRequired[AwsDynamoDbTableProjectionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
+2. See [:material-code-braces: AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef) 
+## AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef
+
+def get_value() -> AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[AwsDynamoDbTableProvisionedThroughputOverrideTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef) 
+## AwsEc2InstanceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2InstanceDetailsTypeDef
+
+def get_value() -> AwsEc2InstanceDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2InstanceDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+    ImageId: NotRequired[str],
+    IpV4Addresses: NotRequired[Sequence[str]],
+    IpV6Addresses: NotRequired[Sequence[str]],
+    KeyName: NotRequired[str],
+    IamInstanceProfileArn: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    LaunchedAt: NotRequired[str],
+    NetworkInterfaces: NotRequired[Sequence[AwsEc2InstanceNetworkInterfacesDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef) 
+## AwsEc2NetworkAclEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2NetworkAclEntryTypeDef
+
+def get_value() -> AwsEc2NetworkAclEntryTypeDef:
+    return {
+        "CidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2NetworkAclEntryTypeDef(TypedDict):
+    CidrBlock: NotRequired[str],
+    Egress: NotRequired[bool],
+    IcmpTypeCode: NotRequired[IcmpTypeCodeTypeDef],  # (1)
+    Ipv6CidrBlock: NotRequired[str],
+    PortRange: NotRequired[PortRangeFromToTypeDef],  # (2)
+    Protocol: NotRequired[str],
+    RuleAction: NotRequired[str],
+    RuleNumber: NotRequired[int],
+```
+
+1. See [:material-code-braces: IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef) 
+2. See [:material-code-braces: PortRangeFromToTypeDef](./type_defs.md#portrangefromtotypedef) 
+## AwsEc2NetworkInterfaceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2NetworkInterfaceDetailsTypeDef
+
+def get_value() -> AwsEc2NetworkInterfaceDetailsTypeDef:
+    return {
+        "Attachment": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2NetworkInterfaceDetailsTypeDef(TypedDict):
+    Attachment: NotRequired[AwsEc2NetworkInterfaceAttachmentTypeDef],  # (1)
+    NetworkInterfaceId: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[AwsEc2NetworkInterfaceSecurityGroupTypeDef]],  # (2)
+    SourceDestCheck: NotRequired[bool],
+    IpV6Addresses: NotRequired[Sequence[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef]],  # (3)
+    PrivateIpAddresses: NotRequired[Sequence[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef]],  # (4)
+    PublicDnsName: NotRequired[str],
+    PublicIp: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2NetworkInterfaceAttachmentTypeDef](./type_defs.md#awsec2networkinterfaceattachmenttypedef) 
+2. See [:material-code-braces: AwsEc2NetworkInterfaceSecurityGroupTypeDef](./type_defs.md#awsec2networkinterfacesecuritygrouptypedef) 
+3. See [:material-code-braces: AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef) 
+4. See [:material-code-braces: AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceprivateipaddressdetailtypedef) 
+## AwsEc2SecurityGroupIpPermissionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2SecurityGroupIpPermissionTypeDef
+
+def get_value() -> AwsEc2SecurityGroupIpPermissionTypeDef:
+    return {
+        "IpProtocol": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2SecurityGroupIpPermissionTypeDef(TypedDict):
+    IpProtocol: NotRequired[str],
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+    UserIdGroupPairs: NotRequired[Sequence[AwsEc2SecurityGroupUserIdGroupPairTypeDef]],  # (1)
+    IpRanges: NotRequired[Sequence[AwsEc2SecurityGroupIpRangeTypeDef]],  # (2)
+    Ipv6Ranges: NotRequired[Sequence[AwsEc2SecurityGroupIpv6RangeTypeDef]],  # (3)
+    PrefixListIds: NotRequired[Sequence[AwsEc2SecurityGroupPrefixListIdTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef) 
+2. See [:material-code-braces: AwsEc2SecurityGroupIpRangeTypeDef](./type_defs.md#awsec2securitygroupiprangetypedef) 
+3. See [:material-code-braces: AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef) 
+4. See [:material-code-braces: AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef) 
+## AwsEc2SubnetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2SubnetDetailsTypeDef
+
+def get_value() -> AwsEc2SubnetDetailsTypeDef:
+    return {
+        "AssignIpv6AddressOnCreation": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2SubnetDetailsTypeDef(TypedDict):
+    AssignIpv6AddressOnCreation: NotRequired[bool],
+    AvailabilityZone: NotRequired[str],
+    AvailabilityZoneId: NotRequired[str],
+    AvailableIpAddressCount: NotRequired[int],
+    CidrBlock: NotRequired[str],
+    DefaultForAz: NotRequired[bool],
+    MapPublicIpOnLaunch: NotRequired[bool],
+    OwnerId: NotRequired[str],
+    State: NotRequired[str],
+    SubnetArn: NotRequired[str],
+    SubnetId: NotRequired[str],
+    VpcId: NotRequired[str],
+    Ipv6CidrBlockAssociationSet: NotRequired[Sequence[Ipv6CidrBlockAssociationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef) 
+## AwsEc2VolumeDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VolumeDetailsTypeDef
+
+def get_value() -> AwsEc2VolumeDetailsTypeDef:
+    return {
+        "CreateTime": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VolumeDetailsTypeDef(TypedDict):
+    CreateTime: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    Size: NotRequired[int],
+    SnapshotId: NotRequired[str],
+    Status: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Attachments: NotRequired[Sequence[AwsEc2VolumeAttachmentTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef) 
+## AwsEc2VpcDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcDetailsTypeDef
+
+def get_value() -> AwsEc2VpcDetailsTypeDef:
+    return {
+        "CidrBlockAssociationSet": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpcDetailsTypeDef(TypedDict):
+    CidrBlockAssociationSet: NotRequired[Sequence[CidrBlockAssociationTypeDef]],  # (1)
+    Ipv6CidrBlockAssociationSet: NotRequired[Sequence[Ipv6CidrBlockAssociationTypeDef]],  # (2)
+    DhcpOptionsId: NotRequired[str],
+    State: NotRequired[str],
+```
+
+1. See [:material-code-braces: CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef) 
+2. See [:material-code-braces: Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef) 
+## AwsEc2VpcEndpointServiceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcEndpointServiceDetailsTypeDef
+
+def get_value() -> AwsEc2VpcEndpointServiceDetailsTypeDef:
+    return {
+        "AcceptanceRequired": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpcEndpointServiceDetailsTypeDef(TypedDict):
+    AcceptanceRequired: NotRequired[bool],
+    AvailabilityZones: NotRequired[Sequence[str]],
+    BaseEndpointDnsNames: NotRequired[Sequence[str]],
+    ManagesVpcEndpoints: NotRequired[bool],
+    GatewayLoadBalancerArns: NotRequired[Sequence[str]],
+    NetworkLoadBalancerArns: NotRequired[Sequence[str]],
+    PrivateDnsName: NotRequired[str],
+    ServiceId: NotRequired[str],
+    ServiceName: NotRequired[str],
+    ServiceState: NotRequired[str],
+    ServiceType: NotRequired[Sequence[AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef](./type_defs.md#awsec2vpcendpointserviceservicetypedetailstypedef) 
+## AwsEc2VpnConnectionOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2VpnConnectionOptionsDetailsTypeDef:
+    return {
+        "StaticRoutesOnly": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpnConnectionOptionsDetailsTypeDef(TypedDict):
+    StaticRoutesOnly: NotRequired[bool],
+    TunnelOptions: NotRequired[Sequence[AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionstunneloptionsdetailstypedef) 
+## AwsEcrRepositoryDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcrRepositoryDetailsTypeDef
+
+def get_value() -> AwsEcrRepositoryDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcrRepositoryDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    ImageScanningConfiguration: NotRequired[AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef],  # (1)
+    ImageTagMutability: NotRequired[str],
+    LifecyclePolicy: NotRequired[AwsEcrRepositoryLifecyclePolicyDetailsTypeDef],  # (2)
+    RepositoryName: NotRequired[str],
+    RepositoryPolicyText: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef](./type_defs.md#awsecrrepositoryimagescanningconfigurationdetailstypedef) 
+2. See [:material-code-braces: AwsEcrRepositoryLifecyclePolicyDetailsTypeDef](./type_defs.md#awsecrrepositorylifecyclepolicydetailstypedef) 
+## AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef:
+    return {
+        "KmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef(TypedDict):
+    KmsKeyId: NotRequired[str],
+    LogConfiguration: NotRequired[AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef],  # (1)
+    Logging: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef) 
+## AwsEcsServiceDeploymentConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDeploymentConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsServiceDeploymentConfigurationDetailsTypeDef:
+    return {
+        "DeploymentCircuitBreaker": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsServiceDeploymentConfigurationDetailsTypeDef(TypedDict):
+    DeploymentCircuitBreaker: NotRequired[AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef],  # (1)
+    MaximumPercent: NotRequired[int],
+    MinimumHealthyPercent: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdeploymentcircuitbreakerdetailstypedef) 
+## AwsEcsServiceNetworkConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsServiceNetworkConfigurationDetailsTypeDef:
+    return {
+        "AwsVpcConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsServiceNetworkConfigurationDetailsTypeDef(TypedDict):
+    AwsVpcConfiguration: NotRequired[AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationawsvpcconfigurationdetailstypedef) 
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef:
+    return {
+        "Capabilities": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef(TypedDict):
+    Capabilities: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef],  # (1)
+    Devices: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef]],  # (2)
+    InitProcessEnabled: NotRequired[bool],
+    MaxSwap: NotRequired[int],
+    SharedMemorySize: NotRequired[int],
+    Swappiness: NotRequired[int],
+    Tmpfs: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterscapabilitiesdetailstypedef) 
+2. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef) 
+3. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef) 
+## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef:
+    return {
+        "LogDriver": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef(TypedDict):
+    LogDriver: NotRequired[str],
+    Options: NotRequired[Mapping[str, str]],
+    SecretOptions: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef) 
+## AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef:
+    return {
+        "ContainerName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef(TypedDict):
+    ContainerName: NotRequired[str],
+    ProxyConfigurationProperties: NotRequired[Sequence[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef]],  # (1)
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef) 
+## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef:
+    return {
+        "AuthorizationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef(TypedDict):
+    AuthorizationConfig: NotRequired[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef],  # (1)
+    FilesystemId: NotRequired[str],
+    RootDirectory: NotRequired[str],
+    TransitEncryption: NotRequired[str],
+    TransitEncryptionPort: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef) 
+## AwsEksClusterLoggingDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingDetailsTypeDef
+
+def get_value() -> AwsEksClusterLoggingDetailsTypeDef:
+    return {
+        "ClusterLogging": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEksClusterLoggingDetailsTypeDef(TypedDict):
+    ClusterLogging: NotRequired[Sequence[AwsEksClusterLoggingClusterLoggingDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEksClusterLoggingClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingclusterloggingdetailstypedef) 
+## AwsElasticBeanstalkEnvironmentDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticBeanstalkEnvironmentDetailsTypeDef
+
+def get_value() -> AwsElasticBeanstalkEnvironmentDetailsTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticBeanstalkEnvironmentDetailsTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    Cname: NotRequired[str],
+    DateCreated: NotRequired[str],
+    DateUpdated: NotRequired[str],
+    Description: NotRequired[str],
+    EndpointUrl: NotRequired[str],
+    EnvironmentArn: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    EnvironmentLinks: NotRequired[Sequence[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef]],  # (1)
+    EnvironmentName: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef]],  # (2)
+    PlatformArn: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    Status: NotRequired[str],
+    Tier: NotRequired[AwsElasticBeanstalkEnvironmentTierTypeDef],  # (3)
+    VersionLabel: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef) 
+2. See [:material-code-braces: AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef) 
+3. See [:material-code-braces: AwsElasticBeanstalkEnvironmentTierTypeDef](./type_defs.md#awselasticbeanstalkenvironmenttiertypedef) 
+## AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
+
+def get_value() -> AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef:
+    return {
+        "DedicatedMasterCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef(TypedDict):
+    DedicatedMasterCount: NotRequired[int],
+    DedicatedMasterEnabled: NotRequired[bool],
+    DedicatedMasterType: NotRequired[str],
+    InstanceCount: NotRequired[int],
+    InstanceType: NotRequired[str],
+    ZoneAwarenessConfig: NotRequired[AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef],  # (1)
+    ZoneAwarenessEnabled: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigzoneawarenessconfigdetailstypedef) 
+## AwsElasticsearchDomainLogPublishingOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsTypeDef
+
+def get_value() -> AwsElasticsearchDomainLogPublishingOptionsTypeDef:
+    return {
+        "IndexSlowLogs": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticsearchDomainLogPublishingOptionsTypeDef(TypedDict):
+    IndexSlowLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
+    SearchSlowLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
+    AuditLogs: NotRequired[AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
+2. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
+3. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef) 
+## AwsElbLoadBalancerPoliciesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerPoliciesTypeDef
+
+def get_value() -> AwsElbLoadBalancerPoliciesTypeDef:
+    return {
+        "AppCookieStickinessPolicies": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbLoadBalancerPoliciesTypeDef(TypedDict):
+    AppCookieStickinessPolicies: NotRequired[Sequence[AwsElbAppCookieStickinessPolicyTypeDef]],  # (1)
+    LbCookieStickinessPolicies: NotRequired[Sequence[AwsElbLbCookieStickinessPolicyTypeDef]],  # (2)
+    OtherPolicies: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: AwsElbAppCookieStickinessPolicyTypeDef](./type_defs.md#awselbappcookiestickinesspolicytypedef) 
+2. See [:material-code-braces: AwsElbLbCookieStickinessPolicyTypeDef](./type_defs.md#awselblbcookiestickinesspolicytypedef) 
+## AwsElbLoadBalancerAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerAttributesTypeDef
+
+def get_value() -> AwsElbLoadBalancerAttributesTypeDef:
+    return {
+        "AccessLog": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbLoadBalancerAttributesTypeDef(TypedDict):
+    AccessLog: NotRequired[AwsElbLoadBalancerAccessLogTypeDef],  # (1)
+    ConnectionDraining: NotRequired[AwsElbLoadBalancerConnectionDrainingTypeDef],  # (2)
+    ConnectionSettings: NotRequired[AwsElbLoadBalancerConnectionSettingsTypeDef],  # (3)
+    CrossZoneLoadBalancing: NotRequired[AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef],  # (4)
+    AdditionalAttributes: NotRequired[Sequence[AwsElbLoadBalancerAdditionalAttributeTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: AwsElbLoadBalancerAccessLogTypeDef](./type_defs.md#awselbloadbalanceraccesslogtypedef) 
+2. See [:material-code-braces: AwsElbLoadBalancerConnectionDrainingTypeDef](./type_defs.md#awselbloadbalancerconnectiondrainingtypedef) 
+3. See [:material-code-braces: AwsElbLoadBalancerConnectionSettingsTypeDef](./type_defs.md#awselbloadbalancerconnectionsettingstypedef) 
+4. See [:material-code-braces: AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef](./type_defs.md#awselbloadbalancercrosszoneloadbalancingtypedef) 
+5. See [:material-code-braces: AwsElbLoadBalancerAdditionalAttributeTypeDef](./type_defs.md#awselbloadbalanceradditionalattributetypedef) 
+## AwsElbLoadBalancerListenerDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerListenerDescriptionTypeDef
+
+def get_value() -> AwsElbLoadBalancerListenerDescriptionTypeDef:
+    return {
+        "Listener": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbLoadBalancerListenerDescriptionTypeDef(TypedDict):
+    Listener: NotRequired[AwsElbLoadBalancerListenerTypeDef],  # (1)
+    PolicyNames: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: AwsElbLoadBalancerListenerTypeDef](./type_defs.md#awselbloadbalancerlistenertypedef) 
+## AwsElbv2LoadBalancerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbv2LoadBalancerDetailsTypeDef
+
+def get_value() -> AwsElbv2LoadBalancerDetailsTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbv2LoadBalancerDetailsTypeDef(TypedDict):
+    AvailabilityZones: NotRequired[Sequence[AvailabilityZoneTypeDef]],  # (1)
+    CanonicalHostedZoneId: NotRequired[str],
+    CreatedTime: NotRequired[str],
+    DNSName: NotRequired[str],
+    IpAddressType: NotRequired[str],
+    Scheme: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    State: NotRequired[LoadBalancerStateTypeDef],  # (2)
+    Type: NotRequired[str],
+    VpcId: NotRequired[str],
+    LoadBalancerAttributes: NotRequired[Sequence[AwsElbv2LoadBalancerAttributeTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
+2. See [:material-code-braces: LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef) 
+3. See [:material-code-braces: AwsElbv2LoadBalancerAttributeTypeDef](./type_defs.md#awselbv2loadbalancerattributetypedef) 
+## AwsIamAccessKeySessionContextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamAccessKeySessionContextTypeDef
+
+def get_value() -> AwsIamAccessKeySessionContextTypeDef:
+    return {
+        "Attributes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamAccessKeySessionContextTypeDef(TypedDict):
+    Attributes: NotRequired[AwsIamAccessKeySessionContextAttributesTypeDef],  # (1)
+    SessionIssuer: NotRequired[AwsIamAccessKeySessionContextSessionIssuerTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsIamAccessKeySessionContextAttributesTypeDef](./type_defs.md#awsiamaccesskeysessioncontextattributestypedef) 
+2. See [:material-code-braces: AwsIamAccessKeySessionContextSessionIssuerTypeDef](./type_defs.md#awsiamaccesskeysessioncontextsessionissuertypedef) 
+## AwsIamGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamGroupDetailsTypeDef
+
+def get_value() -> AwsIamGroupDetailsTypeDef:
+    return {
+        "AttachedManagedPolicies": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamGroupDetailsTypeDef(TypedDict):
+    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
+    CreateDate: NotRequired[str],
+    GroupId: NotRequired[str],
+    GroupName: NotRequired[str],
+    GroupPolicyList: NotRequired[Sequence[AwsIamGroupPolicyTypeDef]],  # (2)
+    Path: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
+2. See [:material-code-braces: AwsIamGroupPolicyTypeDef](./type_defs.md#awsiamgrouppolicytypedef) 
+## AwsIamInstanceProfileTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamInstanceProfileTypeDef
+
+def get_value() -> AwsIamInstanceProfileTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamInstanceProfileTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreateDate: NotRequired[str],
+    InstanceProfileId: NotRequired[str],
+    InstanceProfileName: NotRequired[str],
+    Path: NotRequired[str],
+    Roles: NotRequired[Sequence[AwsIamInstanceProfileRoleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsIamInstanceProfileRoleTypeDef](./type_defs.md#awsiaminstanceprofileroletypedef) 
+## AwsIamPolicyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamPolicyDetailsTypeDef
+
+def get_value() -> AwsIamPolicyDetailsTypeDef:
+    return {
+        "AttachmentCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamPolicyDetailsTypeDef(TypedDict):
+    AttachmentCount: NotRequired[int],
+    CreateDate: NotRequired[str],
+    DefaultVersionId: NotRequired[str],
+    Description: NotRequired[str],
+    IsAttachable: NotRequired[bool],
+    Path: NotRequired[str],
+    PermissionsBoundaryUsageCount: NotRequired[int],
+    PolicyId: NotRequired[str],
+    PolicyName: NotRequired[str],
+    PolicyVersionList: NotRequired[Sequence[AwsIamPolicyVersionTypeDef]],  # (1)
+    UpdateDate: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsIamPolicyVersionTypeDef](./type_defs.md#awsiampolicyversiontypedef) 
+## AwsIamUserDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamUserDetailsTypeDef
+
+def get_value() -> AwsIamUserDetailsTypeDef:
+    return {
+        "AttachedManagedPolicies": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamUserDetailsTypeDef(TypedDict):
+    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
+    CreateDate: NotRequired[str],
+    GroupList: NotRequired[Sequence[str]],
+    Path: NotRequired[str],
+    PermissionsBoundary: NotRequired[AwsIamPermissionsBoundaryTypeDef],  # (2)
+    UserId: NotRequired[str],
+    UserName: NotRequired[str],
+    UserPolicyList: NotRequired[Sequence[AwsIamUserPolicyTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
+2. See [:material-code-braces: AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef) 
+3. See [:material-code-braces: AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef) 
+## AwsLambdaFunctionEnvironmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionEnvironmentTypeDef
+
+def get_value() -> AwsLambdaFunctionEnvironmentTypeDef:
+    return {
+        "Variables": ...,
+    }
+```
+
+```python title="Definition"
+class AwsLambdaFunctionEnvironmentTypeDef(TypedDict):
+    Variables: NotRequired[Mapping[str, str]],
+    Error: NotRequired[AwsLambdaFunctionEnvironmentErrorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsLambdaFunctionEnvironmentErrorTypeDef](./type_defs.md#awslambdafunctionenvironmenterrortypedef) 
+## AwsNetworkFirewallFirewallDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallDetailsTypeDef
+
+def get_value() -> AwsNetworkFirewallFirewallDetailsTypeDef:
+    return {
+        "DeleteProtection": ...,
+    }
+```
+
+```python title="Definition"
+class AwsNetworkFirewallFirewallDetailsTypeDef(TypedDict):
+    DeleteProtection: NotRequired[bool],
+    Description: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallId: NotRequired[str],
+    FirewallName: NotRequired[str],
+    FirewallPolicyArn: NotRequired[str],
+    FirewallPolicyChangeProtection: NotRequired[bool],
+    SubnetChangeProtection: NotRequired[bool],
+    SubnetMappings: NotRequired[Sequence[AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef]],  # (1)
+    VpcId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallsubnetmappingsdetailstypedef) 
+## AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef:
+    return {
+        "InstanceCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef(TypedDict):
+    InstanceCount: NotRequired[int],
+    WarmEnabled: NotRequired[bool],
+    WarmCount: NotRequired[int],
+    DedicatedMasterEnabled: NotRequired[bool],
+    ZoneAwarenessConfig: NotRequired[AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef],  # (1)
+    DedicatedMasterCount: NotRequired[int],
+    InstanceType: NotRequired[str],
+    WarmType: NotRequired[str],
+    ZoneAwarenessEnabled: NotRequired[bool],
+    DedicatedMasterType: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigzoneawarenessconfigdetailstypedef) 
+## AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef:
+    return {
+        "IndexSlowLogs": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef(TypedDict):
+    IndexSlowLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
+    SearchSlowLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
+    AuditLogs: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
+2. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
+3. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef) 
+## AwsRdsDbClusterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbClusterDetailsTypeDef
+
+def get_value() -> AwsRdsDbClusterDetailsTypeDef:
+    return {
+        "AllocatedStorage": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbClusterDetailsTypeDef(TypedDict):
+    AllocatedStorage: NotRequired[int],
+    AvailabilityZones: NotRequired[Sequence[str]],
+    BackupRetentionPeriod: NotRequired[int],
+    DatabaseName: NotRequired[str],
+    Status: NotRequired[str],
+    Endpoint: NotRequired[str],
+    ReaderEndpoint: NotRequired[str],
+    CustomEndpoints: NotRequired[Sequence[str]],
+    MultiAz: NotRequired[bool],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    Port: NotRequired[int],
+    MasterUsername: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    ReadReplicaIdentifiers: NotRequired[Sequence[str]],
+    VpcSecurityGroups: NotRequired[Sequence[AwsRdsDbInstanceVpcSecurityGroupTypeDef]],  # (1)
+    HostedZoneId: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    DbClusterResourceId: NotRequired[str],
+    AssociatedRoles: NotRequired[Sequence[AwsRdsDbClusterAssociatedRoleTypeDef]],  # (2)
+    ClusterCreateTime: NotRequired[str],
+    EnabledCloudWatchLogsExports: NotRequired[Sequence[str]],
+    EngineMode: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    HttpEndpointEnabled: NotRequired[bool],
+    ActivityStreamStatus: NotRequired[str],
+    CopyTagsToSnapshot: NotRequired[bool],
+    CrossAccountClone: NotRequired[bool],
+    DomainMemberships: NotRequired[Sequence[AwsRdsDbDomainMembershipTypeDef]],  # (3)
+    DbClusterParameterGroup: NotRequired[str],
+    DbSubnetGroup: NotRequired[str],
+    DbClusterOptionGroupMemberships: NotRequired[Sequence[AwsRdsDbClusterOptionGroupMembershipTypeDef]],  # (4)
+    DbClusterIdentifier: NotRequired[str],
+    DbClusterMembers: NotRequired[Sequence[AwsRdsDbClusterMemberTypeDef]],  # (5)
+    IamDatabaseAuthenticationEnabled: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef) 
+2. See [:material-code-braces: AwsRdsDbClusterAssociatedRoleTypeDef](./type_defs.md#awsrdsdbclusterassociatedroletypedef) 
+3. See [:material-code-braces: AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef) 
+4. See [:material-code-braces: AwsRdsDbClusterOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdbclusteroptiongroupmembershiptypedef) 
+5. See [:material-code-braces: AwsRdsDbClusterMemberTypeDef](./type_defs.md#awsrdsdbclustermembertypedef) 
+## AwsRdsDbSnapshotDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSnapshotDetailsTypeDef
+
+def get_value() -> AwsRdsDbSnapshotDetailsTypeDef:
+    return {
+        "DbSnapshotIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSnapshotDetailsTypeDef(TypedDict):
+    DbSnapshotIdentifier: NotRequired[str],
+    DbInstanceIdentifier: NotRequired[str],
+    SnapshotCreateTime: NotRequired[str],
+    Engine: NotRequired[str],
+    AllocatedStorage: NotRequired[int],
+    Status: NotRequired[str],
+    Port: NotRequired[int],
+    AvailabilityZone: NotRequired[str],
+    VpcId: NotRequired[str],
+    InstanceCreateTime: NotRequired[str],
+    MasterUsername: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    Iops: NotRequired[int],
+    OptionGroupName: NotRequired[str],
+    PercentProgress: NotRequired[int],
+    SourceRegion: NotRequired[str],
+    SourceDbSnapshotIdentifier: NotRequired[str],
+    StorageType: NotRequired[str],
+    TdeCredentialArn: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    Timezone: NotRequired[str],
+    IamDatabaseAuthenticationEnabled: NotRequired[bool],
+    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (1)
+    DbiResourceId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
+## AwsRdsDbPendingModifiedValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbPendingModifiedValuesTypeDef
+
+def get_value() -> AwsRdsDbPendingModifiedValuesTypeDef:
+    return {
+        "DbInstanceClass": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbPendingModifiedValuesTypeDef(TypedDict):
+    DbInstanceClass: NotRequired[str],
+    AllocatedStorage: NotRequired[int],
+    MasterUserPassword: NotRequired[str],
+    Port: NotRequired[int],
+    BackupRetentionPeriod: NotRequired[int],
+    MultiAZ: NotRequired[bool],
+    EngineVersion: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    Iops: NotRequired[int],
+    DbInstanceIdentifier: NotRequired[str],
+    StorageType: NotRequired[str],
+    CaCertificateIdentifier: NotRequired[str],
+    DbSubnetGroupName: NotRequired[str],
+    PendingCloudWatchLogsExports: NotRequired[AwsRdsPendingCloudWatchLogsExportsTypeDef],  # (1)
+    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsRdsPendingCloudWatchLogsExportsTypeDef](./type_defs.md#awsrdspendingcloudwatchlogsexportstypedef) 
+2. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
+## AwsRdsDbSecurityGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSecurityGroupDetailsTypeDef
+
+def get_value() -> AwsRdsDbSecurityGroupDetailsTypeDef:
+    return {
+        "DbSecurityGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSecurityGroupDetailsTypeDef(TypedDict):
+    DbSecurityGroupArn: NotRequired[str],
+    DbSecurityGroupDescription: NotRequired[str],
+    DbSecurityGroupName: NotRequired[str],
+    Ec2SecurityGroups: NotRequired[Sequence[AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef]],  # (1)
+    IpRanges: NotRequired[Sequence[AwsRdsDbSecurityGroupIpRangeTypeDef]],  # (2)
+    OwnerId: NotRequired[str],
+    VpcId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef](./type_defs.md#awsrdsdbsecuritygroupec2securitygrouptypedef) 
+2. See [:material-code-braces: AwsRdsDbSecurityGroupIpRangeTypeDef](./type_defs.md#awsrdsdbsecuritygroupiprangetypedef) 
+## AwsRdsDbSubnetGroupSubnetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSubnetGroupSubnetTypeDef
+
+def get_value() -> AwsRdsDbSubnetGroupSubnetTypeDef:
+    return {
+        "SubnetIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSubnetGroupSubnetTypeDef(TypedDict):
+    SubnetIdentifier: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef],  # (1)
+    SubnetStatus: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnetavailabilityzonetypedef) 
+## AwsRedshiftClusterClusterParameterGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterClusterParameterGroupTypeDef
+
+def get_value() -> AwsRedshiftClusterClusterParameterGroupTypeDef:
+    return {
+        "ClusterParameterStatusList": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRedshiftClusterClusterParameterGroupTypeDef(TypedDict):
+    ClusterParameterStatusList: NotRequired[Sequence[AwsRedshiftClusterClusterParameterStatusTypeDef]],  # (1)
+    ParameterApplyStatus: NotRequired[str],
+    ParameterGroupName: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRedshiftClusterClusterParameterStatusTypeDef](./type_defs.md#awsredshiftclusterclusterparameterstatustypedef) 
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef:
+    return {
+        "Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef],  # (1)
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandstagdetailstypedef) 
+## AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
+
+def get_value() -> AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef:
+    return {
+        "FilterRules": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef(TypedDict):
+    FilterRules: NotRequired[Sequence[AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfilterruletypedef) 
+## AwsS3BucketServerSideEncryptionRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionRuleTypeDef
+
+def get_value() -> AwsS3BucketServerSideEncryptionRuleTypeDef:
+    return {
+        "ApplyServerSideEncryptionByDefault": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketServerSideEncryptionRuleTypeDef(TypedDict):
+    ApplyServerSideEncryptionByDefault: NotRequired[AwsS3BucketServerSideEncryptionByDefaultTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketServerSideEncryptionByDefaultTypeDef](./type_defs.md#awss3bucketserversideencryptionbydefaulttypedef) 
+## AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
+
+def get_value() -> AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef:
+    return {
+        "Condition": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef(TypedDict):
+    Condition: NotRequired[AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef],  # (1)
+    Redirect: NotRequired[AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleconditiontypedef) 
+2. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleredirecttypedef) 
 ## AwsSecretsManagerSecretDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6397,22 +7190,2232 @@ class AwsSecretsManagerSecretDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsSecretsManagerSecretRotationRulesTypeDef](./type_defs.md#awssecretsmanagersecretrotationrulestypedef) 
-## AwsSecretsManagerSecretRotationRulesTypeDef
+## BatchUpdateFindingsUnprocessedFindingTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSecretsManagerSecretRotationRulesTypeDef
+from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsUnprocessedFindingTypeDef
 
-def get_value() -> AwsSecretsManagerSecretRotationRulesTypeDef:
+def get_value() -> BatchUpdateFindingsUnprocessedFindingTypeDef:
     return {
-        "AutomaticallyAfterDays": ...,
+        "FindingIdentifier": ...,
+        "ErrorCode": ...,
+        "ErrorMessage": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsSecretsManagerSecretRotationRulesTypeDef(TypedDict):
-    AutomaticallyAfterDays: NotRequired[int],
+class BatchUpdateFindingsUnprocessedFindingTypeDef(TypedDict):
+    FindingIdentifier: AwsSecurityFindingIdentifierTypeDef,  # (1)
+    ErrorCode: str,
+    ErrorMessage: str,
 ```
 
+1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
+## AwsSnsTopicDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSnsTopicDetailsTypeDef
+
+def get_value() -> AwsSnsTopicDetailsTypeDef:
+    return {
+        "KmsMasterKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSnsTopicDetailsTypeDef(TypedDict):
+    KmsMasterKeyId: NotRequired[str],
+    Subscription: NotRequired[Sequence[AwsSnsTopicSubscriptionTypeDef]],  # (1)
+    TopicName: NotRequired[str],
+    Owner: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef) 
+## AwsSsmPatchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSsmPatchTypeDef
+
+def get_value() -> AwsSsmPatchTypeDef:
+    return {
+        "ComplianceSummary": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSsmPatchTypeDef(TypedDict):
+    ComplianceSummary: NotRequired[AwsSsmComplianceSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsSsmComplianceSummaryTypeDef](./type_defs.md#awsssmcompliancesummarytypedef) 
+## AwsWafRateBasedRuleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleDetailsTypeDef
+
+def get_value() -> AwsWafRateBasedRuleDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRateBasedRuleDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    RateKey: NotRequired[str],
+    RateLimit: NotRequired[int],
+    RuleId: NotRequired[str],
+    MatchPredicates: NotRequired[Sequence[AwsWafRateBasedRuleMatchPredicateTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafratebasedrulematchpredicatetypedef) 
+## AwsWafRegionalRateBasedRuleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRateBasedRuleDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRateBasedRuleDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    RateKey: NotRequired[str],
+    RateLimit: NotRequired[int],
+    RuleId: NotRequired[str],
+    MatchPredicates: NotRequired[Sequence[AwsWafRegionalRateBasedRuleMatchPredicateTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafRegionalRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafregionalratebasedrulematchpredicatetypedef) 
+## AwsWafWebAclRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafWebAclRuleTypeDef
+
+def get_value() -> AwsWafWebAclRuleTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafWebAclRuleTypeDef(TypedDict):
+    Action: NotRequired[WafActionTypeDef],  # (1)
+    ExcludedRules: NotRequired[Sequence[WafExcludedRuleTypeDef]],  # (2)
+    OverrideAction: NotRequired[WafOverrideActionTypeDef],  # (3)
+    Priority: NotRequired[int],
+    RuleId: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+2. See [:material-code-braces: WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef) 
+3. See [:material-code-braces: WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef) 
+## CreateActionTargetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateActionTargetResponseTypeDef
+
+def get_value() -> CreateActionTargetResponseTypeDef:
+    return {
+        "ActionTargetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateActionTargetResponseTypeDef(TypedDict):
+    ActionTargetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFindingAggregatorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorResponseTypeDef
+
+def get_value() -> CreateFindingAggregatorResponseTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+        "FindingAggregationRegion": ...,
+        "RegionLinkingMode": ...,
+        "Regions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFindingAggregatorResponseTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+    FindingAggregationRegion: str,
+    RegionLinkingMode: str,
+    Regions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateInsightResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateInsightResponseTypeDef
+
+def get_value() -> CreateInsightResponseTypeDef:
+    return {
+        "InsightArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateInsightResponseTypeDef(TypedDict):
+    InsightArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteActionTargetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteActionTargetResponseTypeDef
+
+def get_value() -> DeleteActionTargetResponseTypeDef:
+    return {
+        "ActionTargetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteActionTargetResponseTypeDef(TypedDict):
+    ActionTargetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteInsightResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteInsightResponseTypeDef
+
+def get_value() -> DeleteInsightResponseTypeDef:
+    return {
+        "InsightArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInsightResponseTypeDef(TypedDict):
+    InsightArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeActionTargetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeActionTargetsResponseTypeDef
+
+def get_value() -> DescribeActionTargetsResponseTypeDef:
+    return {
+        "ActionTargets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeActionTargetsResponseTypeDef(TypedDict):
+    ActionTargets: List[ActionTargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeHubResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeHubResponseTypeDef
+
+def get_value() -> DescribeHubResponseTypeDef:
+    return {
+        "HubArn": ...,
+        "SubscribedAt": ...,
+        "AutoEnableControls": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubResponseTypeDef(TypedDict):
+    HubArn: str,
+    SubscribedAt: str,
+    AutoEnableControls: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+    return {
+        "AutoEnable": ...,
+        "MemberAccountLimitReached": ...,
+        "AutoEnableStandards": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
+    AutoEnable: bool,
+    MemberAccountLimitReached: bool,
+    AutoEnableStandards: AutoEnableStandardsType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableImportFindingsForProductResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import EnableImportFindingsForProductResponseTypeDef
+
+def get_value() -> EnableImportFindingsForProductResponseTypeDef:
+    return {
+        "ProductSubscriptionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnableImportFindingsForProductResponseTypeDef(TypedDict):
+    ProductSubscriptionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFindingAggregatorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetFindingAggregatorResponseTypeDef
+
+def get_value() -> GetFindingAggregatorResponseTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+        "FindingAggregationRegion": ...,
+        "RegionLinkingMode": ...,
+        "Regions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFindingAggregatorResponseTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+    FindingAggregationRegion: str,
+    RegionLinkingMode: str,
+    Regions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInvitationsCountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetInvitationsCountResponseTypeDef
+
+def get_value() -> GetInvitationsCountResponseTypeDef:
+    return {
+        "InvitationsCount": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetInvitationsCountResponseTypeDef(TypedDict):
+    InvitationsCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnabledProductsForImportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportResponseTypeDef
+
+def get_value() -> ListEnabledProductsForImportResponseTypeDef:
+    return {
+        "ProductSubscriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnabledProductsForImportResponseTypeDef(TypedDict):
+    ProductSubscriptions: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOrganizationAdminAccountsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsResponseTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsResponseTypeDef:
+    return {
+        "AdminAccounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationAdminAccountsResponseTypeDef(TypedDict):
+    AdminAccounts: List[AdminAccountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AdminAccountTypeDef](./type_defs.md#adminaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFindingAggregatorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorResponseTypeDef
+
+def get_value() -> UpdateFindingAggregatorResponseTypeDef:
+    return {
+        "FindingAggregatorArn": ...,
+        "FindingAggregationRegion": ...,
+        "RegionLinkingMode": ...,
+        "Regions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFindingAggregatorResponseTypeDef(TypedDict):
+    FindingAggregatorArn: str,
+    FindingAggregationRegion: str,
+    RegionLinkingMode: str,
+    Regions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchEnableStandardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchEnableStandardsRequestRequestTypeDef
+
+def get_value() -> BatchEnableStandardsRequestRequestTypeDef:
+    return {
+        "StandardsSubscriptionRequests": ...,
+    }
+```
+
+```python title="Definition"
+class BatchEnableStandardsRequestRequestTypeDef(TypedDict):
+    StandardsSubscriptionRequests: Sequence[StandardsSubscriptionRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef) 
+## BatchImportFindingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchImportFindingsResponseTypeDef
+
+def get_value() -> BatchImportFindingsResponseTypeDef:
+    return {
+        "FailedCount": ...,
+        "SuccessCount": ...,
+        "FailedFindings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchImportFindingsResponseTypeDef(TypedDict):
+    FailedCount: int,
+    SuccessCount: int,
+    FailedFindings: List[ImportFindingsErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportFindingsErrorTypeDef](./type_defs.md#importfindingserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdateFindingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsRequestRequestTypeDef
+
+def get_value() -> BatchUpdateFindingsRequestRequestTypeDef:
+    return {
+        "FindingIdentifiers": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateFindingsRequestRequestTypeDef(TypedDict):
+    FindingIdentifiers: Sequence[AwsSecurityFindingIdentifierTypeDef],  # (1)
+    Note: NotRequired[NoteUpdateTypeDef],  # (2)
+    Severity: NotRequired[SeverityUpdateTypeDef],  # (3)
+    VerificationState: NotRequired[VerificationStateType],  # (4)
+    Confidence: NotRequired[int],
+    Criticality: NotRequired[int],
+    Types: NotRequired[Sequence[str]],
+    UserDefinedFields: NotRequired[Mapping[str, str]],
+    Workflow: NotRequired[WorkflowUpdateTypeDef],  # (5)
+    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
+2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
+3. See [:material-code-braces: SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef) 
+4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+5. See [:material-code-braces: WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef) 
+6. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+## ComplianceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ComplianceTypeDef
+
+def get_value() -> ComplianceTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ComplianceTypeDef(TypedDict):
+    Status: NotRequired[ComplianceStatusType],  # (1)
+    RelatedRequirements: NotRequired[Sequence[str]],
+    StatusReasons: NotRequired[Sequence[StatusReasonTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
+## CreateMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateMembersResponseTypeDef
+
+def get_value() -> CreateMembersResponseTypeDef:
+    return {
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMembersResponseTypeDef(TypedDict):
+    UnprocessedAccounts: List[ResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeclineInvitationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeclineInvitationsResponseTypeDef
+
+def get_value() -> DeclineInvitationsResponseTypeDef:
+    return {
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeclineInvitationsResponseTypeDef(TypedDict):
+    UnprocessedAccounts: List[ResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteInvitationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteInvitationsResponseTypeDef
+
+def get_value() -> DeleteInvitationsResponseTypeDef:
+    return {
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInvitationsResponseTypeDef(TypedDict):
+    UnprocessedAccounts: List[ResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DeleteMembersResponseTypeDef
+
+def get_value() -> DeleteMembersResponseTypeDef:
+    return {
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMembersResponseTypeDef(TypedDict):
+    UnprocessedAccounts: List[ResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InviteMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import InviteMembersResponseTypeDef
+
+def get_value() -> InviteMembersResponseTypeDef:
+    return {
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class InviteMembersResponseTypeDef(TypedDict):
+    UnprocessedAccounts: List[ResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DateFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DateFilterTypeDef
+
+def get_value() -> DateFilterTypeDef:
+    return {
+        "Start": ...,
+    }
+```
+
+```python title="Definition"
+class DateFilterTypeDef(TypedDict):
+    Start: NotRequired[str],
+    End: NotRequired[str],
+    DateRange: NotRequired[DateRangeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DateRangeTypeDef](./type_defs.md#daterangetypedef) 
+## DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef
+
+def get_value() -> DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef:
+    return {
+        "ActionTargetArns": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef(TypedDict):
+    ActionTargetArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeProductsRequestDescribeProductsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeProductsRequestDescribeProductsPaginateTypeDef
+
+def get_value() -> DescribeProductsRequestDescribeProductsPaginateTypeDef:
+    return {
+        "ProductArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductsRequestDescribeProductsPaginateTypeDef(TypedDict):
+    ProductArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef
+
+def get_value() -> DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef:
+    return {
+        "StandardsSubscriptionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef(TypedDict):
+    StandardsSubscriptionArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeStandardsRequestDescribeStandardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsRequestDescribeStandardsPaginateTypeDef
+
+def get_value() -> DescribeStandardsRequestDescribeStandardsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsRequestDescribeStandardsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef
+
+def get_value() -> GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef:
+    return {
+        "StandardsSubscriptionArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef(TypedDict):
+    StandardsSubscriptionArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetInsightsRequestGetInsightsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetInsightsRequestGetInsightsPaginateTypeDef
+
+def get_value() -> GetInsightsRequestGetInsightsPaginateTypeDef:
+    return {
+        "InsightArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetInsightsRequestGetInsightsPaginateTypeDef(TypedDict):
+    InsightArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef
+
+def get_value() -> ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef
+
+def get_value() -> ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListInvitationsRequestListInvitationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListInvitationsRequestListInvitationsPaginateTypeDef
+
+def get_value() -> ListInvitationsRequestListInvitationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMembersRequestListMembersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListMembersRequestListMembersPaginateTypeDef
+
+def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
+    return {
+        "OnlyAssociated": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
+    OnlyAssociated: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeProductsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeProductsResponseTypeDef
+
+def get_value() -> DescribeProductsResponseTypeDef:
+    return {
+        "Products": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProductsResponseTypeDef(TypedDict):
+    Products: List[ProductTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProductTypeDef](./type_defs.md#producttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStandardsControlsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsResponseTypeDef
+
+def get_value() -> DescribeStandardsControlsResponseTypeDef:
+    return {
+        "Controls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsControlsResponseTypeDef(TypedDict):
+    Controls: List[StandardsControlTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StandardsControlTypeDef](./type_defs.md#standardscontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStandardsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsResponseTypeDef
+
+def get_value() -> DescribeStandardsResponseTypeDef:
+    return {
+        "Standards": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsResponseTypeDef(TypedDict):
+    Standards: List[StandardTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StandardTypeDef](./type_defs.md#standardtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingAggregatorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsResponseTypeDef
+
+def get_value() -> ListFindingAggregatorsResponseTypeDef:
+    return {
+        "FindingAggregators": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingAggregatorsResponseTypeDef(TypedDict):
+    FindingAggregators: List[FindingAggregatorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FindingAggregatorTypeDef](./type_defs.md#findingaggregatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FindingProviderFieldsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FindingProviderFieldsTypeDef
+
+def get_value() -> FindingProviderFieldsTypeDef:
+    return {
+        "Confidence": ...,
+    }
+```
+
+```python title="Definition"
+class FindingProviderFieldsTypeDef(TypedDict):
+    Confidence: NotRequired[int],
+    Criticality: NotRequired[int],
+    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (1)
+    Severity: NotRequired[FindingProviderSeverityTypeDef],  # (2)
+    Types: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+2. See [:material-code-braces: FindingProviderSeverityTypeDef](./type_defs.md#findingproviderseveritytypedef) 
+## GetAdministratorAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetAdministratorAccountResponseTypeDef
+
+def get_value() -> GetAdministratorAccountResponseTypeDef:
+    return {
+        "Administrator": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAdministratorAccountResponseTypeDef(TypedDict):
+    Administrator: InvitationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMasterAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetMasterAccountResponseTypeDef
+
+def get_value() -> GetMasterAccountResponseTypeDef:
+    return {
+        "Master": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMasterAccountResponseTypeDef(TypedDict):
+    Master: InvitationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInvitationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListInvitationsResponseTypeDef
+
+def get_value() -> ListInvitationsResponseTypeDef:
+    return {
+        "Invitations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvitationsResponseTypeDef(TypedDict):
+    Invitations: List[InvitationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetMembersResponseTypeDef
+
+def get_value() -> GetMembersResponseTypeDef:
+    return {
+        "Members": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMembersResponseTypeDef(TypedDict):
+    Members: List[MemberTypeDef],  # (1)
+    UnprocessedAccounts: List[ResultTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListMembersResponseTypeDef
+
+def get_value() -> ListMembersResponseTypeDef:
+    return {
+        "Members": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersResponseTypeDef(TypedDict):
+    Members: List[MemberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InsightResultsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import InsightResultsTypeDef
+
+def get_value() -> InsightResultsTypeDef:
+    return {
+        "InsightArn": ...,
+        "GroupByAttribute": ...,
+        "ResultValues": ...,
+    }
+```
+
+```python title="Definition"
+class InsightResultsTypeDef(TypedDict):
+    InsightArn: str,
+    GroupByAttribute: str,
+    ResultValues: List[InsightResultValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InsightResultValueTypeDef](./type_defs.md#insightresultvaluetypedef) 
+## NetworkPathComponentDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NetworkPathComponentDetailsTypeDef
+
+def get_value() -> NetworkPathComponentDetailsTypeDef:
+    return {
+        "Address": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkPathComponentDetailsTypeDef(TypedDict):
+    Address: NotRequired[Sequence[str]],
+    PortRanges: NotRequired[Sequence[PortRangeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+## NetworkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NetworkTypeDef
+
+def get_value() -> NetworkTypeDef:
+    return {
+        "Direction": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkTypeDef(TypedDict):
+    Direction: NotRequired[NetworkDirectionType],  # (1)
+    Protocol: NotRequired[str],
+    OpenPortRange: NotRequired[PortRangeTypeDef],  # (2)
+    SourceIpV4: NotRequired[str],
+    SourceIpV6: NotRequired[str],
+    SourcePort: NotRequired[int],
+    SourceDomain: NotRequired[str],
+    SourceMac: NotRequired[str],
+    DestinationIpV4: NotRequired[str],
+    DestinationIpV6: NotRequired[str],
+    DestinationPort: NotRequired[int],
+    DestinationDomain: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NetworkDirectionType](./literals.md#networkdirectiontype) 
+2. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+## PageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import PageTypeDef
+
+def get_value() -> PageTypeDef:
+    return {
+        "PageNumber": ...,
+    }
+```
+
+```python title="Definition"
+class PageTypeDef(TypedDict):
+    PageNumber: NotRequired[int],
+    LineRange: NotRequired[RangeTypeDef],  # (1)
+    OffsetRange: NotRequired[RangeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+## RemediationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RemediationTypeDef
+
+def get_value() -> RemediationTypeDef:
+    return {
+        "Recommendation": ...,
+    }
+```
+
+```python title="Definition"
+class RemediationTypeDef(TypedDict):
+    Recommendation: NotRequired[RecommendationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
+## RuleGroupSourceStatefulRulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesDetailsTypeDef
+
+def get_value() -> RuleGroupSourceStatefulRulesDetailsTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatefulRulesDetailsTypeDef(TypedDict):
+    Action: NotRequired[str],
+    Header: NotRequired[RuleGroupSourceStatefulRulesHeaderDetailsTypeDef],  # (1)
+    RuleOptions: NotRequired[Sequence[RuleGroupSourceStatefulRulesOptionsDetailsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupSourceStatefulRulesHeaderDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesheaderdetailstypedef) 
+2. See [:material-code-braces: RuleGroupSourceStatefulRulesOptionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesoptionsdetailstypedef) 
+## RuleGroupSourceStatelessRuleMatchAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesTypeDef:
+    return {
+        "DestinationPorts": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRuleMatchAttributesTypeDef(TypedDict):
+    DestinationPorts: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef]],  # (1)
+    Destinations: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef]],  # (2)
+    Protocols: NotRequired[Sequence[int]],
+    SourcePorts: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef]],  # (3)
+    Sources: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef]],  # (4)
+    TcpFlags: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationportstypedef) 
+2. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationstypedef) 
+3. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourceportstypedef) 
+4. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourcestypedef) 
+5. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestcpflagstypedef) 
+## RuleGroupVariablesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesTypeDef
+
+def get_value() -> RuleGroupVariablesTypeDef:
+    return {
+        "IpSets": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupVariablesTypeDef(TypedDict):
+    IpSets: NotRequired[RuleGroupVariablesIpSetsDetailsTypeDef],  # (1)
+    PortSets: NotRequired[RuleGroupVariablesPortSetsDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupVariablesIpSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesipsetsdetailstypedef) 
+2. See [:material-code-braces: RuleGroupVariablesPortSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesportsetsdetailstypedef) 
+## StandardsSubscriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsSubscriptionTypeDef
+
+def get_value() -> StandardsSubscriptionTypeDef:
+    return {
+        "StandardsSubscriptionArn": ...,
+        "StandardsArn": ...,
+        "StandardsInput": ...,
+        "StandardsStatus": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsSubscriptionTypeDef(TypedDict):
+    StandardsSubscriptionArn: str,
+    StandardsArn: str,
+    StandardsInput: Dict[str, str],
+    StandardsStatus: StandardsStatusType,  # (1)
+    StandardsStatusReason: NotRequired[StandardsStatusReasonTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: StandardsStatusType](./literals.md#standardsstatustype) 
+2. See [:material-code-braces: StandardsStatusReasonTypeDef](./type_defs.md#standardsstatusreasontypedef) 
+## StatelessCustomPublishMetricActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionTypeDef
+
+def get_value() -> StatelessCustomPublishMetricActionTypeDef:
+    return {
+        "Dimensions": ...,
+    }
+```
+
+```python title="Definition"
+class StatelessCustomPublishMetricActionTypeDef(TypedDict):
+    Dimensions: NotRequired[Sequence[StatelessCustomPublishMetricActionDimensionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: StatelessCustomPublishMetricActionDimensionTypeDef](./type_defs.md#statelesscustompublishmetricactiondimensiontypedef) 
+## AwsApiCallActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsApiCallActionTypeDef
+
+def get_value() -> AwsApiCallActionTypeDef:
+    return {
+        "Api": ...,
+    }
+```
+
+```python title="Definition"
+class AwsApiCallActionTypeDef(TypedDict):
+    Api: NotRequired[str],
+    ServiceName: NotRequired[str],
+    CallerType: NotRequired[str],
+    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (1)
+    DomainDetails: NotRequired[AwsApiCallActionDomainDetailsTypeDef],  # (2)
+    AffectedResources: NotRequired[Mapping[str, str]],
+    FirstSeen: NotRequired[str],
+    LastSeen: NotRequired[str],
+```
+
+1. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
+2. See [:material-code-braces: AwsApiCallActionDomainDetailsTypeDef](./type_defs.md#awsapicallactiondomaindetailstypedef) 
+## NetworkConnectionActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import NetworkConnectionActionTypeDef
+
+def get_value() -> NetworkConnectionActionTypeDef:
+    return {
+        "ConnectionDirection": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkConnectionActionTypeDef(TypedDict):
+    ConnectionDirection: NotRequired[str],
+    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (1)
+    RemotePortDetails: NotRequired[ActionRemotePortDetailsTypeDef],  # (2)
+    LocalPortDetails: NotRequired[ActionLocalPortDetailsTypeDef],  # (3)
+    Protocol: NotRequired[str],
+    Blocked: NotRequired[bool],
+```
+
+1. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
+2. See [:material-code-braces: ActionRemotePortDetailsTypeDef](./type_defs.md#actionremoteportdetailstypedef) 
+3. See [:material-code-braces: ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef) 
+## PortProbeDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import PortProbeDetailTypeDef
+
+def get_value() -> PortProbeDetailTypeDef:
+    return {
+        "LocalPortDetails": ...,
+    }
+```
+
+```python title="Definition"
+class PortProbeDetailTypeDef(TypedDict):
+    LocalPortDetails: NotRequired[ActionLocalPortDetailsTypeDef],  # (1)
+    LocalIpDetails: NotRequired[ActionLocalIpDetailsTypeDef],  # (2)
+    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef) 
+2. See [:material-code-braces: ActionLocalIpDetailsTypeDef](./type_defs.md#actionlocalipdetailstypedef) 
+3. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
+## VulnerabilityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import VulnerabilityTypeDef
+
+def get_value() -> VulnerabilityTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class VulnerabilityTypeDef(TypedDict):
+    Id: str,
+    VulnerablePackages: NotRequired[Sequence[SoftwarePackageTypeDef]],  # (1)
+    Cvss: NotRequired[Sequence[CvssTypeDef]],  # (2)
+    RelatedVulnerabilities: NotRequired[Sequence[str]],
+    Vendor: NotRequired[VulnerabilityVendorTypeDef],  # (3)
+    ReferenceUrls: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef) 
+2. See [:material-code-braces: CvssTypeDef](./type_defs.md#cvsstypedef) 
+3. See [:material-code-braces: VulnerabilityVendorTypeDef](./type_defs.md#vulnerabilityvendortypedef) 
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
+
+def get_value() -> AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef:
+    return {
+        "InstancesDistribution": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef(TypedDict):
+    InstancesDistribution: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef],  # (1)
+    LaunchTemplate: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicyinstancesdistributiondetailstypedef) 
+2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatedetailstypedef) 
+## AwsAutoScalingLaunchConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationDetailsTypeDef
+
+def get_value() -> AwsAutoScalingLaunchConfigurationDetailsTypeDef:
+    return {
+        "AssociatePublicIpAddress": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingLaunchConfigurationDetailsTypeDef(TypedDict):
+    AssociatePublicIpAddress: NotRequired[bool],
+    BlockDeviceMappings: NotRequired[Sequence[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef]],  # (1)
+    ClassicLinkVpcId: NotRequired[str],
+    ClassicLinkVpcSecurityGroups: NotRequired[Sequence[str]],
+    CreatedTime: NotRequired[str],
+    EbsOptimized: NotRequired[bool],
+    IamInstanceProfile: NotRequired[str],
+    ImageId: NotRequired[str],
+    InstanceMonitoring: NotRequired[AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef],  # (2)
+    InstanceType: NotRequired[str],
+    KernelId: NotRequired[str],
+    KeyName: NotRequired[str],
+    LaunchConfigurationName: NotRequired[str],
+    PlacementTenancy: NotRequired[str],
+    RamdiskId: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    SpotPrice: NotRequired[str],
+    UserData: NotRequired[str],
+    MetadataOptions: NotRequired[AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef) 
+2. See [:material-code-braces: AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef) 
+3. See [:material-code-braces: AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationmetadataoptionstypedef) 
+## AwsCertificateManagerCertificateRenewalSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateRenewalSummaryTypeDef
+
+def get_value() -> AwsCertificateManagerCertificateRenewalSummaryTypeDef:
+    return {
+        "DomainValidationOptions": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCertificateManagerCertificateRenewalSummaryTypeDef(TypedDict):
+    DomainValidationOptions: NotRequired[Sequence[AwsCertificateManagerCertificateDomainValidationOptionTypeDef]],  # (1)
+    RenewalStatus: NotRequired[str],
+    RenewalStatusReason: NotRequired[str],
+    UpdatedAt: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef) 
+## AwsCloudFrontDistributionOriginGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginGroupTypeDef:
+    return {
+        "FailoverCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginGroupTypeDef(TypedDict):
+    FailoverCriteria: NotRequired[AwsCloudFrontDistributionOriginGroupFailoverTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailovertypedef) 
+## AwsCloudFrontDistributionOriginsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginsTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginItemTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef) 
+## AwsCodeBuildProjectDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectDetailsTypeDef
+
+def get_value() -> AwsCodeBuildProjectDetailsTypeDef:
+    return {
+        "EncryptionKey": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCodeBuildProjectDetailsTypeDef(TypedDict):
+    EncryptionKey: NotRequired[str],
+    Artifacts: NotRequired[Sequence[AwsCodeBuildProjectArtifactsDetailsTypeDef]],  # (1)
+    Environment: NotRequired[AwsCodeBuildProjectEnvironmentTypeDef],  # (2)
+    Name: NotRequired[str],
+    Source: NotRequired[AwsCodeBuildProjectSourceTypeDef],  # (3)
+    ServiceRole: NotRequired[str],
+    LogsConfig: NotRequired[AwsCodeBuildProjectLogsConfigDetailsTypeDef],  # (4)
+    VpcConfig: NotRequired[AwsCodeBuildProjectVpcConfigTypeDef],  # (5)
+    SecondaryArtifacts: NotRequired[Sequence[AwsCodeBuildProjectArtifactsDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
+2. See [:material-code-braces: AwsCodeBuildProjectEnvironmentTypeDef](./type_defs.md#awscodebuildprojectenvironmenttypedef) 
+3. See [:material-code-braces: AwsCodeBuildProjectSourceTypeDef](./type_defs.md#awscodebuildprojectsourcetypedef) 
+4. See [:material-code-braces: AwsCodeBuildProjectLogsConfigDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigdetailstypedef) 
+5. See [:material-code-braces: AwsCodeBuildProjectVpcConfigTypeDef](./type_defs.md#awscodebuildprojectvpcconfigtypedef) 
+6. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
+## AwsDynamoDbTableReplicaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaTypeDef
+
+def get_value() -> AwsDynamoDbTableReplicaTypeDef:
+    return {
+        "GlobalSecondaryIndexes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableReplicaTypeDef(TypedDict):
+    GlobalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef]],  # (1)
+    KmsMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[AwsDynamoDbTableProvisionedThroughputOverrideTypeDef],  # (2)
+    RegionName: NotRequired[str],
+    ReplicaStatus: NotRequired[str],
+    ReplicaStatusDescription: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef) 
+2. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef) 
+## AwsEc2NetworkAclDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2NetworkAclDetailsTypeDef
+
+def get_value() -> AwsEc2NetworkAclDetailsTypeDef:
+    return {
+        "IsDefault": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2NetworkAclDetailsTypeDef(TypedDict):
+    IsDefault: NotRequired[bool],
+    NetworkAclId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    VpcId: NotRequired[str],
+    Associations: NotRequired[Sequence[AwsEc2NetworkAclAssociationTypeDef]],  # (1)
+    Entries: NotRequired[Sequence[AwsEc2NetworkAclEntryTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef) 
+2. See [:material-code-braces: AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef) 
+## AwsEc2SecurityGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2SecurityGroupDetailsTypeDef
+
+def get_value() -> AwsEc2SecurityGroupDetailsTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2SecurityGroupDetailsTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    VpcId: NotRequired[str],
+    IpPermissions: NotRequired[Sequence[AwsEc2SecurityGroupIpPermissionTypeDef]],  # (1)
+    IpPermissionsEgress: NotRequired[Sequence[AwsEc2SecurityGroupIpPermissionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
+2. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
+## AwsEc2VpnConnectionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionDetailsTypeDef
+
+def get_value() -> AwsEc2VpnConnectionDetailsTypeDef:
+    return {
+        "VpnConnectionId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpnConnectionDetailsTypeDef(TypedDict):
+    VpnConnectionId: NotRequired[str],
+    State: NotRequired[str],
+    CustomerGatewayId: NotRequired[str],
+    CustomerGatewayConfiguration: NotRequired[str],
+    Type: NotRequired[str],
+    VpnGatewayId: NotRequired[str],
+    Category: NotRequired[str],
+    VgwTelemetry: NotRequired[Sequence[AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef]],  # (1)
+    Options: NotRequired[AwsEc2VpnConnectionOptionsDetailsTypeDef],  # (2)
+    Routes: NotRequired[Sequence[AwsEc2VpnConnectionRoutesDetailsTypeDef]],  # (3)
+    TransitGatewayId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](./type_defs.md#awsec2vpnconnectionvgwtelemetrydetailstypedef) 
+2. See [:material-code-braces: AwsEc2VpnConnectionOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionsdetailstypedef) 
+3. See [:material-code-braces: AwsEc2VpnConnectionRoutesDetailsTypeDef](./type_defs.md#awsec2vpnconnectionroutesdetailstypedef) 
+## AwsEcsClusterConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationDetailsTypeDef
+
+def get_value() -> AwsEcsClusterConfigurationDetailsTypeDef:
+    return {
+        "ExecuteCommandConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsClusterConfigurationDetailsTypeDef(TypedDict):
+    ExecuteCommandConfiguration: NotRequired[AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef) 
+## AwsEcsServiceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDetailsTypeDef
+
+def get_value() -> AwsEcsServiceDetailsTypeDef:
+    return {
+        "CapacityProviderStrategy": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsServiceDetailsTypeDef(TypedDict):
+    CapacityProviderStrategy: NotRequired[Sequence[AwsEcsServiceCapacityProviderStrategyDetailsTypeDef]],  # (1)
+    Cluster: NotRequired[str],
+    DeploymentConfiguration: NotRequired[AwsEcsServiceDeploymentConfigurationDetailsTypeDef],  # (2)
+    DeploymentController: NotRequired[AwsEcsServiceDeploymentControllerDetailsTypeDef],  # (3)
+    DesiredCount: NotRequired[int],
+    EnableEcsManagedTags: NotRequired[bool],
+    EnableExecuteCommand: NotRequired[bool],
+    HealthCheckGracePeriodSeconds: NotRequired[int],
+    LaunchType: NotRequired[str],
+    LoadBalancers: NotRequired[Sequence[AwsEcsServiceLoadBalancersDetailsTypeDef]],  # (4)
+    Name: NotRequired[str],
+    NetworkConfiguration: NotRequired[AwsEcsServiceNetworkConfigurationDetailsTypeDef],  # (5)
+    PlacementConstraints: NotRequired[Sequence[AwsEcsServicePlacementConstraintsDetailsTypeDef]],  # (6)
+    PlacementStrategies: NotRequired[Sequence[AwsEcsServicePlacementStrategiesDetailsTypeDef]],  # (7)
+    PlatformVersion: NotRequired[str],
+    PropagateTags: NotRequired[str],
+    Role: NotRequired[str],
+    SchedulingStrategy: NotRequired[str],
+    ServiceArn: NotRequired[str],
+    ServiceName: NotRequired[str],
+    ServiceRegistries: NotRequired[Sequence[AwsEcsServiceServiceRegistriesDetailsTypeDef]],  # (8)
+    TaskDefinition: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsservicecapacityproviderstrategydetailstypedef) 
+2. See [:material-code-braces: AwsEcsServiceDeploymentConfigurationDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdetailstypedef) 
+3. See [:material-code-braces: AwsEcsServiceDeploymentControllerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentcontrollerdetailstypedef) 
+4. See [:material-code-braces: AwsEcsServiceLoadBalancersDetailsTypeDef](./type_defs.md#awsecsserviceloadbalancersdetailstypedef) 
+5. See [:material-code-braces: AwsEcsServiceNetworkConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationdetailstypedef) 
+6. See [:material-code-braces: AwsEcsServicePlacementConstraintsDetailsTypeDef](./type_defs.md#awsecsserviceplacementconstraintsdetailstypedef) 
+7. See [:material-code-braces: AwsEcsServicePlacementStrategiesDetailsTypeDef](./type_defs.md#awsecsserviceplacementstrategiesdetailstypedef) 
+8. See [:material-code-braces: AwsEcsServiceServiceRegistriesDetailsTypeDef](./type_defs.md#awsecsserviceserviceregistriesdetailstypedef) 
+## AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef:
+    return {
+        "Command": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef(TypedDict):
+    Command: NotRequired[Sequence[str]],
+    Cpu: NotRequired[int],
+    DependsOn: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef]],  # (1)
+    DisableNetworking: NotRequired[bool],
+    DnsSearchDomains: NotRequired[Sequence[str]],
+    DnsServers: NotRequired[Sequence[str]],
+    DockerLabels: NotRequired[Mapping[str, str]],
+    DockerSecurityOptions: NotRequired[Sequence[str]],
+    EntryPoint: NotRequired[Sequence[str]],
+    Environment: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef]],  # (2)
+    EnvironmentFiles: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef]],  # (3)
+    Essential: NotRequired[bool],
+    ExtraHosts: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef]],  # (4)
+    FirelensConfiguration: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef],  # (5)
+    HealthCheck: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef],  # (6)
+    Hostname: NotRequired[str],
+    Image: NotRequired[str],
+    Interactive: NotRequired[bool],
+    Links: NotRequired[Sequence[str]],
+    LinuxParameters: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef],  # (7)
+    LogConfiguration: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef],  # (8)
+    Memory: NotRequired[int],
+    MemoryReservation: NotRequired[int],
+    MountPoints: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef]],  # (9)
+    Name: NotRequired[str],
+    PortMappings: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef]],  # (10)
+    Privileged: NotRequired[bool],
+    PseudoTerminal: NotRequired[bool],
+    ReadonlyRootFilesystem: NotRequired[bool],
+    RepositoryCredentials: NotRequired[AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef],  # (11)
+    ResourceRequirements: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef]],  # (12)
+    Secrets: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef]],  # (13)
+    StartTimeout: NotRequired[int],
+    StopTimeout: NotRequired[int],
+    SystemControls: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef]],  # (14)
+    Ulimits: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef]],  # (15)
+    User: NotRequired[str],
+    VolumesFrom: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef]],  # (16)
+    WorkingDirectory: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef) 
+2. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef) 
+3. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef) 
+4. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef) 
+5. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsfirelensconfigurationdetailstypedef) 
+6. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionshealthcheckdetailstypedef) 
+7. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdetailstypedef) 
+8. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationdetailstypedef) 
+9. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef) 
+10. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef) 
+11. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsrepositorycredentialsdetailstypedef) 
+12. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef) 
+13. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef) 
+14. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef) 
+15. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef) 
+16. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef) 
+## AwsEcsTaskDefinitionVolumesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionVolumesDetailsTypeDef:
+    return {
+        "DockerVolumeConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionVolumesDetailsTypeDef(TypedDict):
+    DockerVolumeConfiguration: NotRequired[AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef],  # (1)
+    EfsVolumeConfiguration: NotRequired[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef],  # (2)
+    Host: NotRequired[AwsEcsTaskDefinitionVolumesHostDetailsTypeDef],  # (3)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdockervolumeconfigurationdetailstypedef) 
+2. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef) 
+3. See [:material-code-braces: AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumeshostdetailstypedef) 
+## AwsEksClusterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEksClusterDetailsTypeDef
+
+def get_value() -> AwsEksClusterDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEksClusterDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CertificateAuthorityData: NotRequired[str],
+    ClusterStatus: NotRequired[str],
+    Endpoint: NotRequired[str],
+    Name: NotRequired[str],
+    ResourcesVpcConfig: NotRequired[AwsEksClusterResourcesVpcConfigDetailsTypeDef],  # (1)
+    RoleArn: NotRequired[str],
+    Version: NotRequired[str],
+    Logging: NotRequired[AwsEksClusterLoggingDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsEksClusterResourcesVpcConfigDetailsTypeDef](./type_defs.md#awseksclusterresourcesvpcconfigdetailstypedef) 
+2. See [:material-code-braces: AwsEksClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingdetailstypedef) 
+## AwsElasticsearchDomainDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainDetailsTypeDef
+
+def get_value() -> AwsElasticsearchDomainDetailsTypeDef:
+    return {
+        "AccessPolicies": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElasticsearchDomainDetailsTypeDef(TypedDict):
+    AccessPolicies: NotRequired[str],
+    DomainEndpointOptions: NotRequired[AwsElasticsearchDomainDomainEndpointOptionsTypeDef],  # (1)
+    DomainId: NotRequired[str],
+    DomainName: NotRequired[str],
+    Endpoint: NotRequired[str],
+    Endpoints: NotRequired[Mapping[str, str]],
+    ElasticsearchVersion: NotRequired[str],
+    ElasticsearchClusterConfig: NotRequired[AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef],  # (2)
+    EncryptionAtRestOptions: NotRequired[AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef],  # (3)
+    LogPublishingOptions: NotRequired[AwsElasticsearchDomainLogPublishingOptionsTypeDef],  # (4)
+    NodeToNodeEncryptionOptions: NotRequired[AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef],  # (5)
+    ServiceSoftwareOptions: NotRequired[AwsElasticsearchDomainServiceSoftwareOptionsTypeDef],  # (6)
+    VPCOptions: NotRequired[AwsElasticsearchDomainVPCOptionsTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: AwsElasticsearchDomainDomainEndpointOptionsTypeDef](./type_defs.md#awselasticsearchdomaindomainendpointoptionstypedef) 
+2. See [:material-code-braces: AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigdetailstypedef) 
+3. See [:material-code-braces: AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef) 
+4. See [:material-code-braces: AwsElasticsearchDomainLogPublishingOptionsTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionstypedef) 
+5. See [:material-code-braces: AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](./type_defs.md#awselasticsearchdomainnodetonodeencryptionoptionstypedef) 
+6. See [:material-code-braces: AwsElasticsearchDomainServiceSoftwareOptionsTypeDef](./type_defs.md#awselasticsearchdomainservicesoftwareoptionstypedef) 
+7. See [:material-code-braces: AwsElasticsearchDomainVPCOptionsTypeDef](./type_defs.md#awselasticsearchdomainvpcoptionstypedef) 
+## AwsElbLoadBalancerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerDetailsTypeDef
+
+def get_value() -> AwsElbLoadBalancerDetailsTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbLoadBalancerDetailsTypeDef(TypedDict):
+    AvailabilityZones: NotRequired[Sequence[str]],
+    BackendServerDescriptions: NotRequired[Sequence[AwsElbLoadBalancerBackendServerDescriptionTypeDef]],  # (1)
+    CanonicalHostedZoneName: NotRequired[str],
+    CanonicalHostedZoneNameID: NotRequired[str],
+    CreatedTime: NotRequired[str],
+    DnsName: NotRequired[str],
+    HealthCheck: NotRequired[AwsElbLoadBalancerHealthCheckTypeDef],  # (2)
+    Instances: NotRequired[Sequence[AwsElbLoadBalancerInstanceTypeDef]],  # (3)
+    ListenerDescriptions: NotRequired[Sequence[AwsElbLoadBalancerListenerDescriptionTypeDef]],  # (4)
+    LoadBalancerAttributes: NotRequired[AwsElbLoadBalancerAttributesTypeDef],  # (5)
+    LoadBalancerName: NotRequired[str],
+    Policies: NotRequired[AwsElbLoadBalancerPoliciesTypeDef],  # (6)
+    Scheme: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    SourceSecurityGroup: NotRequired[AwsElbLoadBalancerSourceSecurityGroupTypeDef],  # (7)
+    Subnets: NotRequired[Sequence[str]],
+    VpcId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsElbLoadBalancerBackendServerDescriptionTypeDef](./type_defs.md#awselbloadbalancerbackendserverdescriptiontypedef) 
+2. See [:material-code-braces: AwsElbLoadBalancerHealthCheckTypeDef](./type_defs.md#awselbloadbalancerhealthchecktypedef) 
+3. See [:material-code-braces: AwsElbLoadBalancerInstanceTypeDef](./type_defs.md#awselbloadbalancerinstancetypedef) 
+4. See [:material-code-braces: AwsElbLoadBalancerListenerDescriptionTypeDef](./type_defs.md#awselbloadbalancerlistenerdescriptiontypedef) 
+5. See [:material-code-braces: AwsElbLoadBalancerAttributesTypeDef](./type_defs.md#awselbloadbalancerattributestypedef) 
+6. See [:material-code-braces: AwsElbLoadBalancerPoliciesTypeDef](./type_defs.md#awselbloadbalancerpoliciestypedef) 
+7. See [:material-code-braces: AwsElbLoadBalancerSourceSecurityGroupTypeDef](./type_defs.md#awselbloadbalancersourcesecuritygrouptypedef) 
+## AwsIamAccessKeyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamAccessKeyDetailsTypeDef
+
+def get_value() -> AwsIamAccessKeyDetailsTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamAccessKeyDetailsTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Status: NotRequired[AwsIamAccessKeyStatusType],  # (1)
+    CreatedAt: NotRequired[str],
+    PrincipalId: NotRequired[str],
+    PrincipalType: NotRequired[str],
+    PrincipalName: NotRequired[str],
+    AccountId: NotRequired[str],
+    AccessKeyId: NotRequired[str],
+    SessionContext: NotRequired[AwsIamAccessKeySessionContextTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AwsIamAccessKeyStatusType](./literals.md#awsiamaccesskeystatustype) 
+2. See [:material-code-braces: AwsIamAccessKeySessionContextTypeDef](./type_defs.md#awsiamaccesskeysessioncontexttypedef) 
+## AwsIamRoleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsIamRoleDetailsTypeDef
+
+def get_value() -> AwsIamRoleDetailsTypeDef:
+    return {
+        "AssumeRolePolicyDocument": ...,
+    }
+```
+
+```python title="Definition"
+class AwsIamRoleDetailsTypeDef(TypedDict):
+    AssumeRolePolicyDocument: NotRequired[str],
+    AttachedManagedPolicies: NotRequired[Sequence[AwsIamAttachedManagedPolicyTypeDef]],  # (1)
+    CreateDate: NotRequired[str],
+    InstanceProfileList: NotRequired[Sequence[AwsIamInstanceProfileTypeDef]],  # (2)
+    PermissionsBoundary: NotRequired[AwsIamPermissionsBoundaryTypeDef],  # (3)
+    RoleId: NotRequired[str],
+    RoleName: NotRequired[str],
+    RolePolicyList: NotRequired[Sequence[AwsIamRolePolicyTypeDef]],  # (4)
+    MaxSessionDuration: NotRequired[int],
+    Path: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
+2. See [:material-code-braces: AwsIamInstanceProfileTypeDef](./type_defs.md#awsiaminstanceprofiletypedef) 
+3. See [:material-code-braces: AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef) 
+4. See [:material-code-braces: AwsIamRolePolicyTypeDef](./type_defs.md#awsiamrolepolicytypedef) 
+## AwsLambdaFunctionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionDetailsTypeDef
+
+def get_value() -> AwsLambdaFunctionDetailsTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class AwsLambdaFunctionDetailsTypeDef(TypedDict):
+    Code: NotRequired[AwsLambdaFunctionCodeTypeDef],  # (1)
+    CodeSha256: NotRequired[str],
+    DeadLetterConfig: NotRequired[AwsLambdaFunctionDeadLetterConfigTypeDef],  # (2)
+    Environment: NotRequired[AwsLambdaFunctionEnvironmentTypeDef],  # (3)
+    FunctionName: NotRequired[str],
+    Handler: NotRequired[str],
+    KmsKeyArn: NotRequired[str],
+    LastModified: NotRequired[str],
+    Layers: NotRequired[Sequence[AwsLambdaFunctionLayerTypeDef]],  # (4)
+    MasterArn: NotRequired[str],
+    MemorySize: NotRequired[int],
+    RevisionId: NotRequired[str],
+    Role: NotRequired[str],
+    Runtime: NotRequired[str],
+    Timeout: NotRequired[int],
+    TracingConfig: NotRequired[AwsLambdaFunctionTracingConfigTypeDef],  # (5)
+    VpcConfig: NotRequired[AwsLambdaFunctionVpcConfigTypeDef],  # (6)
+    Version: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsLambdaFunctionCodeTypeDef](./type_defs.md#awslambdafunctioncodetypedef) 
+2. See [:material-code-braces: AwsLambdaFunctionDeadLetterConfigTypeDef](./type_defs.md#awslambdafunctiondeadletterconfigtypedef) 
+3. See [:material-code-braces: AwsLambdaFunctionEnvironmentTypeDef](./type_defs.md#awslambdafunctionenvironmenttypedef) 
+4. See [:material-code-braces: AwsLambdaFunctionLayerTypeDef](./type_defs.md#awslambdafunctionlayertypedef) 
+5. See [:material-code-braces: AwsLambdaFunctionTracingConfigTypeDef](./type_defs.md#awslambdafunctiontracingconfigtypedef) 
+6. See [:material-code-braces: AwsLambdaFunctionVpcConfigTypeDef](./type_defs.md#awslambdafunctionvpcconfigtypedef) 
+## AwsOpenSearchServiceDomainDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainDetailsTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    AccessPolicies: NotRequired[str],
+    DomainName: NotRequired[str],
+    Id: NotRequired[str],
+    DomainEndpoint: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    EncryptionAtRestOptions: NotRequired[AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef],  # (1)
+    NodeToNodeEncryptionOptions: NotRequired[AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef],  # (2)
+    ServiceSoftwareOptions: NotRequired[AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef],  # (3)
+    ClusterConfig: NotRequired[AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef],  # (4)
+    DomainEndpointOptions: NotRequired[AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef],  # (5)
+    VpcOptions: NotRequired[AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef],  # (6)
+    LogPublishingOptions: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef],  # (7)
+    DomainEndpoints: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainencryptionatrestoptionsdetailstypedef) 
+2. See [:material-code-braces: AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainnodetonodeencryptionoptionsdetailstypedef) 
+3. See [:material-code-braces: AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainservicesoftwareoptionsdetailstypedef) 
+4. See [:material-code-braces: AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigdetailstypedef) 
+5. See [:material-code-braces: AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindomainendpointoptionsdetailstypedef) 
+6. See [:material-code-braces: AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainvpcoptionsdetailstypedef) 
+7. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptionsdetailstypedef) 
+## AwsRdsDbSubnetGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSubnetGroupTypeDef
+
+def get_value() -> AwsRdsDbSubnetGroupTypeDef:
+    return {
+        "DbSubnetGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSubnetGroupTypeDef(TypedDict):
+    DbSubnetGroupName: NotRequired[str],
+    DbSubnetGroupDescription: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetGroupStatus: NotRequired[str],
+    Subnets: NotRequired[Sequence[AwsRdsDbSubnetGroupSubnetTypeDef]],  # (1)
+    DbSubnetGroupArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef) 
+## AwsRedshiftClusterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterDetailsTypeDef
+
+def get_value() -> AwsRedshiftClusterDetailsTypeDef:
+    return {
+        "AllowVersionUpgrade": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRedshiftClusterDetailsTypeDef(TypedDict):
+    AllowVersionUpgrade: NotRequired[bool],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    AvailabilityZone: NotRequired[str],
+    ClusterAvailabilityStatus: NotRequired[str],
+    ClusterCreateTime: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    ClusterNodes: NotRequired[Sequence[AwsRedshiftClusterClusterNodeTypeDef]],  # (1)
+    ClusterParameterGroups: NotRequired[Sequence[AwsRedshiftClusterClusterParameterGroupTypeDef]],  # (2)
+    ClusterPublicKey: NotRequired[str],
+    ClusterRevisionNumber: NotRequired[str],
+    ClusterSecurityGroups: NotRequired[Sequence[AwsRedshiftClusterClusterSecurityGroupTypeDef]],  # (3)
+    ClusterSnapshotCopyStatus: NotRequired[AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef],  # (4)
+    ClusterStatus: NotRequired[str],
+    ClusterSubnetGroupName: NotRequired[str],
+    ClusterVersion: NotRequired[str],
+    DBName: NotRequired[str],
+    DeferredMaintenanceWindows: NotRequired[Sequence[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef]],  # (5)
+    ElasticIpStatus: NotRequired[AwsRedshiftClusterElasticIpStatusTypeDef],  # (6)
+    ElasticResizeNumberOfNodeOptions: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    Endpoint: NotRequired[AwsRedshiftClusterEndpointTypeDef],  # (7)
+    EnhancedVpcRouting: NotRequired[bool],
+    ExpectedNextSnapshotScheduleTime: NotRequired[str],
+    ExpectedNextSnapshotScheduleTimeStatus: NotRequired[str],
+    HsmStatus: NotRequired[AwsRedshiftClusterHsmStatusTypeDef],  # (8)
+    IamRoles: NotRequired[Sequence[AwsRedshiftClusterIamRoleTypeDef]],  # (9)
+    KmsKeyId: NotRequired[str],
+    MaintenanceTrackName: NotRequired[str],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    MasterUsername: NotRequired[str],
+    NextMaintenanceWindowStartTime: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    PendingActions: NotRequired[Sequence[str]],
+    PendingModifiedValues: NotRequired[AwsRedshiftClusterPendingModifiedValuesTypeDef],  # (10)
+    PreferredMaintenanceWindow: NotRequired[str],
+    PubliclyAccessible: NotRequired[bool],
+    ResizeInfo: NotRequired[AwsRedshiftClusterResizeInfoTypeDef],  # (11)
+    RestoreStatus: NotRequired[AwsRedshiftClusterRestoreStatusTypeDef],  # (12)
+    SnapshotScheduleIdentifier: NotRequired[str],
+    SnapshotScheduleState: NotRequired[str],
+    VpcId: NotRequired[str],
+    VpcSecurityGroups: NotRequired[Sequence[AwsRedshiftClusterVpcSecurityGroupTypeDef]],  # (13)
+    LoggingStatus: NotRequired[AwsRedshiftClusterLoggingStatusTypeDef],  # (14)
+```
+
+1. See [:material-code-braces: AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef) 
+2. See [:material-code-braces: AwsRedshiftClusterClusterParameterGroupTypeDef](./type_defs.md#awsredshiftclusterclusterparametergrouptypedef) 
+3. See [:material-code-braces: AwsRedshiftClusterClusterSecurityGroupTypeDef](./type_defs.md#awsredshiftclusterclustersecuritygrouptypedef) 
+4. See [:material-code-braces: AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef](./type_defs.md#awsredshiftclusterclustersnapshotcopystatustypedef) 
+5. See [:material-code-braces: AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](./type_defs.md#awsredshiftclusterdeferredmaintenancewindowtypedef) 
+6. See [:material-code-braces: AwsRedshiftClusterElasticIpStatusTypeDef](./type_defs.md#awsredshiftclusterelasticipstatustypedef) 
+7. See [:material-code-braces: AwsRedshiftClusterEndpointTypeDef](./type_defs.md#awsredshiftclusterendpointtypedef) 
+8. See [:material-code-braces: AwsRedshiftClusterHsmStatusTypeDef](./type_defs.md#awsredshiftclusterhsmstatustypedef) 
+9. See [:material-code-braces: AwsRedshiftClusterIamRoleTypeDef](./type_defs.md#awsredshiftclusteriamroletypedef) 
+10. See [:material-code-braces: AwsRedshiftClusterPendingModifiedValuesTypeDef](./type_defs.md#awsredshiftclusterpendingmodifiedvaluestypedef) 
+11. See [:material-code-braces: AwsRedshiftClusterResizeInfoTypeDef](./type_defs.md#awsredshiftclusterresizeinfotypedef) 
+12. See [:material-code-braces: AwsRedshiftClusterRestoreStatusTypeDef](./type_defs.md#awsredshiftclusterrestorestatustypedef) 
+13. See [:material-code-braces: AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef) 
+14. See [:material-code-braces: AwsRedshiftClusterLoggingStatusTypeDef](./type_defs.md#awsredshiftclusterloggingstatustypedef) 
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef:
+    return {
+        "Operands": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef(TypedDict):
+    Operands: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef]],  # (1)
+    Prefix: NotRequired[str],
+    Tag: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef],  # (2)
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef) 
+2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef) 
+## AwsS3BucketNotificationConfigurationFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationFilterTypeDef
+
+def get_value() -> AwsS3BucketNotificationConfigurationFilterTypeDef:
+    return {
+        "S3KeyFilter": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketNotificationConfigurationFilterTypeDef(TypedDict):
+    S3KeyFilter: NotRequired[AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfiltertypedef) 
+## AwsS3BucketServerSideEncryptionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionConfigurationTypeDef
+
+def get_value() -> AwsS3BucketServerSideEncryptionConfigurationTypeDef:
+    return {
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketServerSideEncryptionConfigurationTypeDef(TypedDict):
+    Rules: NotRequired[Sequence[AwsS3BucketServerSideEncryptionRuleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketServerSideEncryptionRuleTypeDef](./type_defs.md#awss3bucketserversideencryptionruletypedef) 
+## AwsS3BucketWebsiteConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationTypeDef
+
+def get_value() -> AwsS3BucketWebsiteConfigurationTypeDef:
+    return {
+        "ErrorDocument": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketWebsiteConfigurationTypeDef(TypedDict):
+    ErrorDocument: NotRequired[str],
+    IndexDocumentSuffix: NotRequired[str],
+    RedirectAllRequestsTo: NotRequired[AwsS3BucketWebsiteConfigurationRedirectToTypeDef],  # (1)
+    RoutingRules: NotRequired[Sequence[AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRedirectToTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationredirecttotypedef) 
+2. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruletypedef) 
+## BatchUpdateFindingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsResponseTypeDef
+
+def get_value() -> BatchUpdateFindingsResponseTypeDef:
+    return {
+        "ProcessedFindings": ...,
+        "UnprocessedFindings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateFindingsResponseTypeDef(TypedDict):
+    ProcessedFindings: List[AwsSecurityFindingIdentifierTypeDef],  # (1)
+    UnprocessedFindings: List[BatchUpdateFindingsUnprocessedFindingTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
+2. See [:material-code-braces: BatchUpdateFindingsUnprocessedFindingTypeDef](./type_defs.md#batchupdatefindingsunprocessedfindingtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AwsSsmPatchComplianceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSsmPatchComplianceDetailsTypeDef
+
+def get_value() -> AwsSsmPatchComplianceDetailsTypeDef:
+    return {
+        "Patch": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSsmPatchComplianceDetailsTypeDef(TypedDict):
+    Patch: NotRequired[AwsSsmPatchTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsSsmPatchTypeDef](./type_defs.md#awsssmpatchtypedef) 
+## AwsWafWebAclDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafWebAclDetailsTypeDef
+
+def get_value() -> AwsWafWebAclDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafWebAclDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DefaultAction: NotRequired[str],
+    Rules: NotRequired[Sequence[AwsWafWebAclRuleTypeDef]],  # (1)
+    WebAclId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef) 
 ## AwsSecurityFindingFiltersTypeDef
 
 ```python title="Usage Example"
@@ -6618,388 +9621,89 @@ class AwsSecurityFindingFiltersTypeDef(TypedDict):
 93. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 94. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 95. See [:material-code-braces: BooleanFilterTypeDef](./type_defs.md#booleanfiltertypedef) 
-## AwsSecurityFindingIdentifierTypeDef
+## GetInsightResultsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSecurityFindingIdentifierTypeDef
+from mypy_boto3_securityhub.type_defs import GetInsightResultsResponseTypeDef
 
-def get_value() -> AwsSecurityFindingIdentifierTypeDef:
+def get_value() -> GetInsightResultsResponseTypeDef:
     return {
-        "Id": ...,
-        "ProductArn": ...,
+        "InsightResults": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsSecurityFindingIdentifierTypeDef(TypedDict):
-    Id: str,
-    ProductArn: str,
+class GetInsightResultsResponseTypeDef(TypedDict):
+    InsightResults: InsightResultsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## AwsSecurityFindingTypeDef
+1. See [:material-code-braces: InsightResultsTypeDef](./type_defs.md#insightresultstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NetworkHeaderTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSecurityFindingTypeDef
+from mypy_boto3_securityhub.type_defs import NetworkHeaderTypeDef
 
-def get_value() -> AwsSecurityFindingTypeDef:
+def get_value() -> NetworkHeaderTypeDef:
     return {
-        "SchemaVersion": ...,
-        "Id": ...,
-        "ProductArn": ...,
-        "GeneratorId": ...,
-        "AwsAccountId": ...,
-        "CreatedAt": ...,
-        "UpdatedAt": ...,
-        "Title": ...,
-        "Description": ...,
-        "Resources": ...,
+        "Protocol": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsSecurityFindingTypeDef(TypedDict):
-    SchemaVersion: str,
-    Id: str,
-    ProductArn: str,
-    GeneratorId: str,
-    AwsAccountId: str,
-    CreatedAt: str,
-    UpdatedAt: str,
-    Title: str,
-    Description: str,
-    Resources: Sequence[ResourceTypeDef],  # (8)
-    ProductName: NotRequired[str],
-    CompanyName: NotRequired[str],
-    Region: NotRequired[str],
-    Types: NotRequired[Sequence[str]],
-    FirstObservedAt: NotRequired[str],
-    LastObservedAt: NotRequired[str],
-    Severity: NotRequired[SeverityTypeDef],  # (1)
-    Confidence: NotRequired[int],
-    Criticality: NotRequired[int],
-    Remediation: NotRequired[RemediationTypeDef],  # (2)
-    SourceUrl: NotRequired[str],
-    ProductFields: NotRequired[Mapping[str, str]],
-    UserDefinedFields: NotRequired[Mapping[str, str]],
-    Malware: NotRequired[Sequence[MalwareTypeDef]],  # (3)
-    Network: NotRequired[NetworkTypeDef],  # (4)
-    NetworkPath: NotRequired[Sequence[NetworkPathComponentTypeDef]],  # (5)
-    Process: NotRequired[ProcessDetailsTypeDef],  # (6)
-    ThreatIntelIndicators: NotRequired[Sequence[ThreatIntelIndicatorTypeDef]],  # (7)
-    Compliance: NotRequired[ComplianceTypeDef],  # (9)
-    VerificationState: NotRequired[VerificationStateType],  # (10)
-    WorkflowState: NotRequired[WorkflowStateType],  # (11)
-    Workflow: NotRequired[WorkflowTypeDef],  # (12)
-    RecordState: NotRequired[RecordStateType],  # (13)
-    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (14)
-    Note: NotRequired[NoteTypeDef],  # (15)
-    Vulnerabilities: NotRequired[Sequence[VulnerabilityTypeDef]],  # (16)
-    PatchSummary: NotRequired[PatchSummaryTypeDef],  # (17)
-    Action: NotRequired[ActionTypeDef],  # (18)
-    FindingProviderFields: NotRequired[FindingProviderFieldsTypeDef],  # (19)
-    Sample: NotRequired[bool],
-```
-
-1. See [:material-code-braces: SeverityTypeDef](./type_defs.md#severitytypedef) 
-2. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
-3. See [:material-code-braces: MalwareTypeDef](./type_defs.md#malwaretypedef) 
-4. See [:material-code-braces: NetworkTypeDef](./type_defs.md#networktypedef) 
-5. See [:material-code-braces: NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef) 
-6. See [:material-code-braces: ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef) 
-7. See [:material-code-braces: ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef) 
-8. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
-9. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
-10. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-11. See [:material-code-brackets: WorkflowStateType](./literals.md#workflowstatetype) 
-12. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
-13. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
-14. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
-15. See [:material-code-braces: NoteTypeDef](./type_defs.md#notetypedef) 
-16. See [:material-code-braces: VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef) 
-17. See [:material-code-braces: PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef) 
-18. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-19. See [:material-code-braces: FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef) 
-## AwsSnsTopicDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSnsTopicDetailsTypeDef
-
-def get_value() -> AwsSnsTopicDetailsTypeDef:
-    return {
-        "KmsMasterKeyId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsSnsTopicDetailsTypeDef(TypedDict):
-    KmsMasterKeyId: NotRequired[str],
-    Subscription: NotRequired[Sequence[AwsSnsTopicSubscriptionTypeDef]],  # (1)
-    TopicName: NotRequired[str],
-    Owner: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef) 
-## AwsSnsTopicSubscriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSnsTopicSubscriptionTypeDef
-
-def get_value() -> AwsSnsTopicSubscriptionTypeDef:
-    return {
-        "Endpoint": ...,
-    }
-```
-
-```python title="Definition"
-class AwsSnsTopicSubscriptionTypeDef(TypedDict):
-    Endpoint: NotRequired[str],
+class NetworkHeaderTypeDef(TypedDict):
     Protocol: NotRequired[str],
+    Destination: NotRequired[NetworkPathComponentDetailsTypeDef],  # (1)
+    Source: NotRequired[NetworkPathComponentDetailsTypeDef],  # (1)
 ```
 
-## AwsSqsQueueDetailsTypeDef
+1. See [:material-code-braces: NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef) 
+2. See [:material-code-braces: NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef) 
+## OccurrencesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSqsQueueDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import OccurrencesTypeDef
 
-def get_value() -> AwsSqsQueueDetailsTypeDef:
+def get_value() -> OccurrencesTypeDef:
     return {
-        "KmsDataKeyReusePeriodSeconds": ...,
+        "LineRanges": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsSqsQueueDetailsTypeDef(TypedDict):
-    KmsDataKeyReusePeriodSeconds: NotRequired[int],
-    KmsMasterKeyId: NotRequired[str],
-    QueueName: NotRequired[str],
-    DeadLetterTargetArn: NotRequired[str],
+class OccurrencesTypeDef(TypedDict):
+    LineRanges: NotRequired[Sequence[RangeTypeDef]],  # (1)
+    OffsetRanges: NotRequired[Sequence[RangeTypeDef]],  # (1)
+    Pages: NotRequired[Sequence[PageTypeDef]],  # (3)
+    Records: NotRequired[Sequence[RecordTypeDef]],  # (4)
+    Cells: NotRequired[Sequence[CellTypeDef]],  # (5)
 ```
 
-## AwsSsmComplianceSummaryTypeDef
+1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+3. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+4. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+5. See [:material-code-braces: CellTypeDef](./type_defs.md#celltypedef) 
+## RuleGroupSourceStatelessRuleDefinitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSsmComplianceSummaryTypeDef
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleDefinitionTypeDef
 
-def get_value() -> AwsSsmComplianceSummaryTypeDef:
+def get_value() -> RuleGroupSourceStatelessRuleDefinitionTypeDef:
     return {
-        "Status": ...,
+        "Actions": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsSsmComplianceSummaryTypeDef(TypedDict):
-    Status: NotRequired[str],
-    CompliantCriticalCount: NotRequired[int],
-    CompliantHighCount: NotRequired[int],
-    CompliantMediumCount: NotRequired[int],
-    ExecutionType: NotRequired[str],
-    NonCompliantCriticalCount: NotRequired[int],
-    CompliantInformationalCount: NotRequired[int],
-    NonCompliantInformationalCount: NotRequired[int],
-    CompliantUnspecifiedCount: NotRequired[int],
-    NonCompliantLowCount: NotRequired[int],
-    NonCompliantHighCount: NotRequired[int],
-    CompliantLowCount: NotRequired[int],
-    ComplianceType: NotRequired[str],
-    PatchBaselineId: NotRequired[str],
-    OverallSeverity: NotRequired[str],
-    NonCompliantMediumCount: NotRequired[int],
-    NonCompliantUnspecifiedCount: NotRequired[int],
-    PatchGroup: NotRequired[str],
+class RuleGroupSourceStatelessRuleDefinitionTypeDef(TypedDict):
+    Actions: NotRequired[Sequence[str]],
+    MatchAttributes: NotRequired[RuleGroupSourceStatelessRuleMatchAttributesTypeDef],  # (1)
 ```
 
-## AwsSsmPatchComplianceDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSsmPatchComplianceDetailsTypeDef
-
-def get_value() -> AwsSsmPatchComplianceDetailsTypeDef:
-    return {
-        "Patch": ...,
-    }
-```
-
-```python title="Definition"
-class AwsSsmPatchComplianceDetailsTypeDef(TypedDict):
-    Patch: NotRequired[AwsSsmPatchTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsSsmPatchTypeDef](./type_defs.md#awsssmpatchtypedef) 
-## AwsSsmPatchTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsSsmPatchTypeDef
-
-def get_value() -> AwsSsmPatchTypeDef:
-    return {
-        "ComplianceSummary": ...,
-    }
-```
-
-```python title="Definition"
-class AwsSsmPatchTypeDef(TypedDict):
-    ComplianceSummary: NotRequired[AwsSsmComplianceSummaryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsSsmComplianceSummaryTypeDef](./type_defs.md#awsssmcompliancesummarytypedef) 
-## AwsWafRateBasedRuleDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleDetailsTypeDef
-
-def get_value() -> AwsWafRateBasedRuleDetailsTypeDef:
-    return {
-        "MetricName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafRateBasedRuleDetailsTypeDef(TypedDict):
-    MetricName: NotRequired[str],
-    Name: NotRequired[str],
-    RateKey: NotRequired[str],
-    RateLimit: NotRequired[int],
-    RuleId: NotRequired[str],
-    MatchPredicates: NotRequired[Sequence[AwsWafRateBasedRuleMatchPredicateTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsWafRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafratebasedrulematchpredicatetypedef) 
-## AwsWafRateBasedRuleMatchPredicateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleMatchPredicateTypeDef
-
-def get_value() -> AwsWafRateBasedRuleMatchPredicateTypeDef:
-    return {
-        "DataId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafRateBasedRuleMatchPredicateTypeDef(TypedDict):
-    DataId: NotRequired[str],
-    Negated: NotRequired[bool],
-    Type: NotRequired[str],
-```
-
-## AwsWafRegionalRateBasedRuleDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleDetailsTypeDef
-
-def get_value() -> AwsWafRegionalRateBasedRuleDetailsTypeDef:
-    return {
-        "MetricName": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafRegionalRateBasedRuleDetailsTypeDef(TypedDict):
-    MetricName: NotRequired[str],
-    Name: NotRequired[str],
-    RateKey: NotRequired[str],
-    RateLimit: NotRequired[int],
-    RuleId: NotRequired[str],
-    MatchPredicates: NotRequired[Sequence[AwsWafRegionalRateBasedRuleMatchPredicateTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsWafRegionalRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafregionalratebasedrulematchpredicatetypedef) 
-## AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
-
-def get_value() -> AwsWafRegionalRateBasedRuleMatchPredicateTypeDef:
-    return {
-        "DataId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafRegionalRateBasedRuleMatchPredicateTypeDef(TypedDict):
-    DataId: NotRequired[str],
-    Negated: NotRequired[bool],
-    Type: NotRequired[str],
-```
-
-## AwsWafWebAclDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafWebAclDetailsTypeDef
-
-def get_value() -> AwsWafWebAclDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafWebAclDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    DefaultAction: NotRequired[str],
-    Rules: NotRequired[Sequence[AwsWafWebAclRuleTypeDef]],  # (1)
-    WebAclId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef) 
-## AwsWafWebAclRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsWafWebAclRuleTypeDef
-
-def get_value() -> AwsWafWebAclRuleTypeDef:
-    return {
-        "Action": ...,
-    }
-```
-
-```python title="Definition"
-class AwsWafWebAclRuleTypeDef(TypedDict):
-    Action: NotRequired[WafActionTypeDef],  # (1)
-    ExcludedRules: NotRequired[Sequence[WafExcludedRuleTypeDef]],  # (2)
-    OverrideAction: NotRequired[WafOverrideActionTypeDef],  # (3)
-    Priority: NotRequired[int],
-    RuleId: NotRequired[str],
-    Type: NotRequired[str],
-```
-
-1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
-2. See [:material-code-braces: WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef) 
-3. See [:material-code-braces: WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef) 
-## AwsXrayEncryptionConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsXrayEncryptionConfigDetailsTypeDef
-
-def get_value() -> AwsXrayEncryptionConfigDetailsTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class AwsXrayEncryptionConfigDetailsTypeDef(TypedDict):
-    KeyId: NotRequired[str],
-    Status: NotRequired[str],
-    Type: NotRequired[str],
-```
-
-## BatchDisableStandardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchDisableStandardsRequestRequestTypeDef
-
-def get_value() -> BatchDisableStandardsRequestRequestTypeDef:
-    return {
-        "StandardsSubscriptionArns": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDisableStandardsRequestRequestTypeDef(TypedDict):
-    StandardsSubscriptionArns: Sequence[str],
-```
-
+1. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestypedef) 
 ## BatchDisableStandardsResponseTypeDef
 
 ```python title="Usage Example"
@@ -7020,23 +9724,6 @@ class BatchDisableStandardsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchEnableStandardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchEnableStandardsRequestRequestTypeDef
-
-def get_value() -> BatchEnableStandardsRequestRequestTypeDef:
-    return {
-        "StandardsSubscriptionRequests": ...,
-    }
-```
-
-```python title="Definition"
-class BatchEnableStandardsRequestRequestTypeDef(TypedDict):
-    StandardsSubscriptionRequests: Sequence[StandardsSubscriptionRequestTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef) 
 ## BatchEnableStandardsResponseTypeDef
 
 ```python title="Usage Example"
@@ -7057,1384 +9744,6 @@ class BatchEnableStandardsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchImportFindingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchImportFindingsRequestRequestTypeDef
-
-def get_value() -> BatchImportFindingsRequestRequestTypeDef:
-    return {
-        "Findings": ...,
-    }
-```
-
-```python title="Definition"
-class BatchImportFindingsRequestRequestTypeDef(TypedDict):
-    Findings: Sequence[AwsSecurityFindingTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef) 
-## BatchImportFindingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchImportFindingsResponseTypeDef
-
-def get_value() -> BatchImportFindingsResponseTypeDef:
-    return {
-        "FailedCount": ...,
-        "SuccessCount": ...,
-        "FailedFindings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchImportFindingsResponseTypeDef(TypedDict):
-    FailedCount: int,
-    SuccessCount: int,
-    FailedFindings: List[ImportFindingsErrorTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ImportFindingsErrorTypeDef](./type_defs.md#importfindingserrortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchUpdateFindingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsRequestRequestTypeDef
-
-def get_value() -> BatchUpdateFindingsRequestRequestTypeDef:
-    return {
-        "FindingIdentifiers": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdateFindingsRequestRequestTypeDef(TypedDict):
-    FindingIdentifiers: Sequence[AwsSecurityFindingIdentifierTypeDef],  # (1)
-    Note: NotRequired[NoteUpdateTypeDef],  # (2)
-    Severity: NotRequired[SeverityUpdateTypeDef],  # (3)
-    VerificationState: NotRequired[VerificationStateType],  # (4)
-    Confidence: NotRequired[int],
-    Criticality: NotRequired[int],
-    Types: NotRequired[Sequence[str]],
-    UserDefinedFields: NotRequired[Mapping[str, str]],
-    Workflow: NotRequired[WorkflowUpdateTypeDef],  # (5)
-    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (6)
-```
-
-1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
-2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
-3. See [:material-code-braces: SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef) 
-4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-5. See [:material-code-braces: WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef) 
-6. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
-## BatchUpdateFindingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsResponseTypeDef
-
-def get_value() -> BatchUpdateFindingsResponseTypeDef:
-    return {
-        "ProcessedFindings": ...,
-        "UnprocessedFindings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdateFindingsResponseTypeDef(TypedDict):
-    ProcessedFindings: List[AwsSecurityFindingIdentifierTypeDef],  # (1)
-    UnprocessedFindings: List[BatchUpdateFindingsUnprocessedFindingTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
-2. See [:material-code-braces: BatchUpdateFindingsUnprocessedFindingTypeDef](./type_defs.md#batchupdatefindingsunprocessedfindingtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchUpdateFindingsUnprocessedFindingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsUnprocessedFindingTypeDef
-
-def get_value() -> BatchUpdateFindingsUnprocessedFindingTypeDef:
-    return {
-        "FindingIdentifier": ...,
-        "ErrorCode": ...,
-        "ErrorMessage": ...,
-    }
-```
-
-```python title="Definition"
-class BatchUpdateFindingsUnprocessedFindingTypeDef(TypedDict):
-    FindingIdentifier: AwsSecurityFindingIdentifierTypeDef,  # (1)
-    ErrorCode: str,
-    ErrorMessage: str,
-```
-
-1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
-## BooleanFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import BooleanFilterTypeDef
-
-def get_value() -> BooleanFilterTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class BooleanFilterTypeDef(TypedDict):
-    Value: NotRequired[bool],
-```
-
-## CellTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CellTypeDef
-
-def get_value() -> CellTypeDef:
-    return {
-        "Column": ...,
-    }
-```
-
-```python title="Definition"
-class CellTypeDef(TypedDict):
-    Column: NotRequired[int],
-    Row: NotRequired[int],
-    ColumnName: NotRequired[str],
-    CellReference: NotRequired[str],
-```
-
-## CidrBlockAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CidrBlockAssociationTypeDef
-
-def get_value() -> CidrBlockAssociationTypeDef:
-    return {
-        "AssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class CidrBlockAssociationTypeDef(TypedDict):
-    AssociationId: NotRequired[str],
-    CidrBlock: NotRequired[str],
-    CidrBlockState: NotRequired[str],
-```
-
-## CityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CityTypeDef
-
-def get_value() -> CityTypeDef:
-    return {
-        "CityName": ...,
-    }
-```
-
-```python title="Definition"
-class CityTypeDef(TypedDict):
-    CityName: NotRequired[str],
-```
-
-## ClassificationResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ClassificationResultTypeDef
-
-def get_value() -> ClassificationResultTypeDef:
-    return {
-        "MimeType": ...,
-    }
-```
-
-```python title="Definition"
-class ClassificationResultTypeDef(TypedDict):
-    MimeType: NotRequired[str],
-    SizeClassified: NotRequired[int],
-    AdditionalOccurrences: NotRequired[bool],
-    Status: NotRequired[ClassificationStatusTypeDef],  # (1)
-    SensitiveData: NotRequired[Sequence[SensitiveDataResultTypeDef]],  # (2)
-    CustomDataIdentifiers: NotRequired[CustomDataIdentifiersResultTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: ClassificationStatusTypeDef](./type_defs.md#classificationstatustypedef) 
-2. See [:material-code-braces: SensitiveDataResultTypeDef](./type_defs.md#sensitivedataresulttypedef) 
-3. See [:material-code-braces: CustomDataIdentifiersResultTypeDef](./type_defs.md#customdataidentifiersresulttypedef) 
-## ClassificationStatusTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ClassificationStatusTypeDef
-
-def get_value() -> ClassificationStatusTypeDef:
-    return {
-        "Code": ...,
-    }
-```
-
-```python title="Definition"
-class ClassificationStatusTypeDef(TypedDict):
-    Code: NotRequired[str],
-    Reason: NotRequired[str],
-```
-
-## ComplianceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ComplianceTypeDef
-
-def get_value() -> ComplianceTypeDef:
-    return {
-        "Status": ...,
-    }
-```
-
-```python title="Definition"
-class ComplianceTypeDef(TypedDict):
-    Status: NotRequired[ComplianceStatusType],  # (1)
-    RelatedRequirements: NotRequired[Sequence[str]],
-    StatusReasons: NotRequired[Sequence[StatusReasonTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
-2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
-## ContainerDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ContainerDetailsTypeDef
-
-def get_value() -> ContainerDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ContainerDetailsTypeDef(TypedDict):
-    Name: NotRequired[str],
-    ImageId: NotRequired[str],
-    ImageName: NotRequired[str],
-    LaunchedAt: NotRequired[str],
-```
-
-## CountryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CountryTypeDef
-
-def get_value() -> CountryTypeDef:
-    return {
-        "CountryCode": ...,
-    }
-```
-
-```python title="Definition"
-class CountryTypeDef(TypedDict):
-    CountryCode: NotRequired[str],
-    CountryName: NotRequired[str],
-```
-
-## CreateActionTargetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateActionTargetRequestRequestTypeDef
-
-def get_value() -> CreateActionTargetRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "Description": ...,
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class CreateActionTargetRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Description: str,
-    Id: str,
-```
-
-## CreateActionTargetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateActionTargetResponseTypeDef
-
-def get_value() -> CreateActionTargetResponseTypeDef:
-    return {
-        "ActionTargetArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateActionTargetResponseTypeDef(TypedDict):
-    ActionTargetArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateFindingAggregatorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorRequestRequestTypeDef
-
-def get_value() -> CreateFindingAggregatorRequestRequestTypeDef:
-    return {
-        "RegionLinkingMode": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFindingAggregatorRequestRequestTypeDef(TypedDict):
-    RegionLinkingMode: str,
-    Regions: NotRequired[Sequence[str]],
-```
-
-## CreateFindingAggregatorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorResponseTypeDef
-
-def get_value() -> CreateFindingAggregatorResponseTypeDef:
-    return {
-        "FindingAggregatorArn": ...,
-        "FindingAggregationRegion": ...,
-        "RegionLinkingMode": ...,
-        "Regions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFindingAggregatorResponseTypeDef(TypedDict):
-    FindingAggregatorArn: str,
-    FindingAggregationRegion: str,
-    RegionLinkingMode: str,
-    Regions: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateInsightRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateInsightRequestRequestTypeDef
-
-def get_value() -> CreateInsightRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "Filters": ...,
-        "GroupByAttribute": ...,
-    }
-```
-
-```python title="Definition"
-class CreateInsightRequestRequestTypeDef(TypedDict):
-    Name: str,
-    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
-    GroupByAttribute: str,
-```
-
-1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
-## CreateInsightResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateInsightResponseTypeDef
-
-def get_value() -> CreateInsightResponseTypeDef:
-    return {
-        "InsightArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateInsightResponseTypeDef(TypedDict):
-    InsightArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateMembersRequestRequestTypeDef
-
-def get_value() -> CreateMembersRequestRequestTypeDef:
-    return {
-        "AccountDetails": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMembersRequestRequestTypeDef(TypedDict):
-    AccountDetails: Sequence[AccountDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef) 
-## CreateMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CreateMembersResponseTypeDef
-
-def get_value() -> CreateMembersResponseTypeDef:
-    return {
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMembersResponseTypeDef(TypedDict):
-    UnprocessedAccounts: List[ResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CustomDataIdentifiersDetectionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersDetectionsTypeDef
-
-def get_value() -> CustomDataIdentifiersDetectionsTypeDef:
-    return {
-        "Count": ...,
-    }
-```
-
-```python title="Definition"
-class CustomDataIdentifiersDetectionsTypeDef(TypedDict):
-    Count: NotRequired[int],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    Occurrences: NotRequired[OccurrencesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
-## CustomDataIdentifiersResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersResultTypeDef
-
-def get_value() -> CustomDataIdentifiersResultTypeDef:
-    return {
-        "Detections": ...,
-    }
-```
-
-```python title="Definition"
-class CustomDataIdentifiersResultTypeDef(TypedDict):
-    Detections: NotRequired[Sequence[CustomDataIdentifiersDetectionsTypeDef]],  # (1)
-    TotalCount: NotRequired[int],
-```
-
-1. See [:material-code-braces: CustomDataIdentifiersDetectionsTypeDef](./type_defs.md#customdataidentifiersdetectionstypedef) 
-## CvssTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import CvssTypeDef
-
-def get_value() -> CvssTypeDef:
-    return {
-        "Version": ...,
-    }
-```
-
-```python title="Definition"
-class CvssTypeDef(TypedDict):
-    Version: NotRequired[str],
-    BaseScore: NotRequired[float],
-    BaseVector: NotRequired[str],
-    Source: NotRequired[str],
-    Adjustments: NotRequired[Sequence[AdjustmentTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AdjustmentTypeDef](./type_defs.md#adjustmenttypedef) 
-## DataClassificationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DataClassificationDetailsTypeDef
-
-def get_value() -> DataClassificationDetailsTypeDef:
-    return {
-        "DetailedResultsLocation": ...,
-    }
-```
-
-```python title="Definition"
-class DataClassificationDetailsTypeDef(TypedDict):
-    DetailedResultsLocation: NotRequired[str],
-    Result: NotRequired[ClassificationResultTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef) 
-## DateFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DateFilterTypeDef
-
-def get_value() -> DateFilterTypeDef:
-    return {
-        "Start": ...,
-    }
-```
-
-```python title="Definition"
-class DateFilterTypeDef(TypedDict):
-    Start: NotRequired[str],
-    End: NotRequired[str],
-    DateRange: NotRequired[DateRangeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DateRangeTypeDef](./type_defs.md#daterangetypedef) 
-## DateRangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DateRangeTypeDef
-
-def get_value() -> DateRangeTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class DateRangeTypeDef(TypedDict):
-    Value: NotRequired[int],
-    Unit: NotRequired[DateRangeUnitType],  # (1)
-```
-
-1. See [:material-code-brackets: DateRangeUnitType](./literals.md#daterangeunittype) 
-## DeclineInvitationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeclineInvitationsRequestRequestTypeDef
-
-def get_value() -> DeclineInvitationsRequestRequestTypeDef:
-    return {
-        "AccountIds": ...,
-    }
-```
-
-```python title="Definition"
-class DeclineInvitationsRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
-```
-
-## DeclineInvitationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeclineInvitationsResponseTypeDef
-
-def get_value() -> DeclineInvitationsResponseTypeDef:
-    return {
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeclineInvitationsResponseTypeDef(TypedDict):
-    UnprocessedAccounts: List[ResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteActionTargetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteActionTargetRequestRequestTypeDef
-
-def get_value() -> DeleteActionTargetRequestRequestTypeDef:
-    return {
-        "ActionTargetArn": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteActionTargetRequestRequestTypeDef(TypedDict):
-    ActionTargetArn: str,
-```
-
-## DeleteActionTargetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteActionTargetResponseTypeDef
-
-def get_value() -> DeleteActionTargetResponseTypeDef:
-    return {
-        "ActionTargetArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteActionTargetResponseTypeDef(TypedDict):
-    ActionTargetArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteFindingAggregatorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteFindingAggregatorRequestRequestTypeDef
-
-def get_value() -> DeleteFindingAggregatorRequestRequestTypeDef:
-    return {
-        "FindingAggregatorArn": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteFindingAggregatorRequestRequestTypeDef(TypedDict):
-    FindingAggregatorArn: str,
-```
-
-## DeleteInsightRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteInsightRequestRequestTypeDef
-
-def get_value() -> DeleteInsightRequestRequestTypeDef:
-    return {
-        "InsightArn": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteInsightRequestRequestTypeDef(TypedDict):
-    InsightArn: str,
-```
-
-## DeleteInsightResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteInsightResponseTypeDef
-
-def get_value() -> DeleteInsightResponseTypeDef:
-    return {
-        "InsightArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteInsightResponseTypeDef(TypedDict):
-    InsightArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteInvitationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteInvitationsRequestRequestTypeDef
-
-def get_value() -> DeleteInvitationsRequestRequestTypeDef:
-    return {
-        "AccountIds": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteInvitationsRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
-```
-
-## DeleteInvitationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteInvitationsResponseTypeDef
-
-def get_value() -> DeleteInvitationsResponseTypeDef:
-    return {
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteInvitationsResponseTypeDef(TypedDict):
-    UnprocessedAccounts: List[ResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteMembersRequestRequestTypeDef
-
-def get_value() -> DeleteMembersRequestRequestTypeDef:
-    return {
-        "AccountIds": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMembersRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
-```
-
-## DeleteMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DeleteMembersResponseTypeDef
-
-def get_value() -> DeleteMembersResponseTypeDef:
-    return {
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMembersResponseTypeDef(TypedDict):
-    UnprocessedAccounts: List[ResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef
-
-def get_value() -> DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef:
-    return {
-        "ActionTargetArns": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef(TypedDict):
-    ActionTargetArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeActionTargetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeActionTargetsRequestRequestTypeDef
-
-def get_value() -> DescribeActionTargetsRequestRequestTypeDef:
-    return {
-        "ActionTargetArns": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeActionTargetsRequestRequestTypeDef(TypedDict):
-    ActionTargetArns: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## DescribeActionTargetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeActionTargetsResponseTypeDef
-
-def get_value() -> DescribeActionTargetsResponseTypeDef:
-    return {
-        "ActionTargets": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeActionTargetsResponseTypeDef(TypedDict):
-    ActionTargets: List[ActionTargetTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeHubRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeHubRequestRequestTypeDef
-
-def get_value() -> DescribeHubRequestRequestTypeDef:
-    return {
-        "HubArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeHubRequestRequestTypeDef(TypedDict):
-    HubArn: NotRequired[str],
-```
-
-## DescribeHubResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeHubResponseTypeDef
-
-def get_value() -> DescribeHubResponseTypeDef:
-    return {
-        "HubArn": ...,
-        "SubscribedAt": ...,
-        "AutoEnableControls": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeHubResponseTypeDef(TypedDict):
-    HubArn: str,
-    SubscribedAt: str,
-    AutoEnableControls: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeOrganizationConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeOrganizationConfigurationResponseTypeDef
-
-def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
-    return {
-        "AutoEnable": ...,
-        "MemberAccountLimitReached": ...,
-        "AutoEnableStandards": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
-    AutoEnable: bool,
-    MemberAccountLimitReached: bool,
-    AutoEnableStandards: AutoEnableStandardsType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeProductsRequestDescribeProductsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeProductsRequestDescribeProductsPaginateTypeDef
-
-def get_value() -> DescribeProductsRequestDescribeProductsPaginateTypeDef:
-    return {
-        "ProductArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProductsRequestDescribeProductsPaginateTypeDef(TypedDict):
-    ProductArn: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeProductsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeProductsRequestRequestTypeDef
-
-def get_value() -> DescribeProductsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProductsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-    ProductArn: NotRequired[str],
-```
-
-## DescribeProductsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeProductsResponseTypeDef
-
-def get_value() -> DescribeProductsResponseTypeDef:
-    return {
-        "Products": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProductsResponseTypeDef(TypedDict):
-    Products: List[ProductTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProductTypeDef](./type_defs.md#producttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef
-
-def get_value() -> DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef:
-    return {
-        "StandardsSubscriptionArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef(TypedDict):
-    StandardsSubscriptionArn: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeStandardsControlsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsRequestRequestTypeDef
-
-def get_value() -> DescribeStandardsControlsRequestRequestTypeDef:
-    return {
-        "StandardsSubscriptionArn": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsControlsRequestRequestTypeDef(TypedDict):
-    StandardsSubscriptionArn: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## DescribeStandardsControlsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsResponseTypeDef
-
-def get_value() -> DescribeStandardsControlsResponseTypeDef:
-    return {
-        "Controls": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsControlsResponseTypeDef(TypedDict):
-    Controls: List[StandardsControlTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StandardsControlTypeDef](./type_defs.md#standardscontroltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeStandardsRequestDescribeStandardsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsRequestDescribeStandardsPaginateTypeDef
-
-def get_value() -> DescribeStandardsRequestDescribeStandardsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsRequestDescribeStandardsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeStandardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsRequestRequestTypeDef
-
-def get_value() -> DescribeStandardsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## DescribeStandardsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsResponseTypeDef
-
-def get_value() -> DescribeStandardsResponseTypeDef:
-    return {
-        "Standards": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsResponseTypeDef(TypedDict):
-    Standards: List[StandardTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StandardTypeDef](./type_defs.md#standardtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DisableImportFindingsForProductRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DisableImportFindingsForProductRequestRequestTypeDef
-
-def get_value() -> DisableImportFindingsForProductRequestRequestTypeDef:
-    return {
-        "ProductSubscriptionArn": ...,
-    }
-```
-
-```python title="Definition"
-class DisableImportFindingsForProductRequestRequestTypeDef(TypedDict):
-    ProductSubscriptionArn: str,
-```
-
-## DisableOrganizationAdminAccountRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DisableOrganizationAdminAccountRequestRequestTypeDef
-
-def get_value() -> DisableOrganizationAdminAccountRequestRequestTypeDef:
-    return {
-        "AdminAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class DisableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
-    AdminAccountId: str,
-```
-
-## DisassociateMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DisassociateMembersRequestRequestTypeDef
-
-def get_value() -> DisassociateMembersRequestRequestTypeDef:
-    return {
-        "AccountIds": ...,
-    }
-```
-
-```python title="Definition"
-class DisassociateMembersRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
-```
-
-## DnsRequestActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DnsRequestActionTypeDef
-
-def get_value() -> DnsRequestActionTypeDef:
-    return {
-        "Domain": ...,
-    }
-```
-
-```python title="Definition"
-class DnsRequestActionTypeDef(TypedDict):
-    Domain: NotRequired[str],
-    Protocol: NotRequired[str],
-    Blocked: NotRequired[bool],
-```
-
-## EnableImportFindingsForProductRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import EnableImportFindingsForProductRequestRequestTypeDef
-
-def get_value() -> EnableImportFindingsForProductRequestRequestTypeDef:
-    return {
-        "ProductArn": ...,
-    }
-```
-
-```python title="Definition"
-class EnableImportFindingsForProductRequestRequestTypeDef(TypedDict):
-    ProductArn: str,
-```
-
-## EnableImportFindingsForProductResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import EnableImportFindingsForProductResponseTypeDef
-
-def get_value() -> EnableImportFindingsForProductResponseTypeDef:
-    return {
-        "ProductSubscriptionArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EnableImportFindingsForProductResponseTypeDef(TypedDict):
-    ProductSubscriptionArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EnableOrganizationAdminAccountRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import EnableOrganizationAdminAccountRequestRequestTypeDef
-
-def get_value() -> EnableOrganizationAdminAccountRequestRequestTypeDef:
-    return {
-        "AdminAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class EnableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
-    AdminAccountId: str,
-```
-
-## EnableSecurityHubRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import EnableSecurityHubRequestRequestTypeDef
-
-def get_value() -> EnableSecurityHubRequestRequestTypeDef:
-    return {
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class EnableSecurityHubRequestRequestTypeDef(TypedDict):
-    Tags: NotRequired[Mapping[str, str]],
-    EnableDefaultStandards: NotRequired[bool],
-```
-
-## FindingAggregatorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FindingAggregatorTypeDef
-
-def get_value() -> FindingAggregatorTypeDef:
-    return {
-        "FindingAggregatorArn": ...,
-    }
-```
-
-```python title="Definition"
-class FindingAggregatorTypeDef(TypedDict):
-    FindingAggregatorArn: NotRequired[str],
-```
-
-## FindingProviderFieldsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FindingProviderFieldsTypeDef
-
-def get_value() -> FindingProviderFieldsTypeDef:
-    return {
-        "Confidence": ...,
-    }
-```
-
-```python title="Definition"
-class FindingProviderFieldsTypeDef(TypedDict):
-    Confidence: NotRequired[int],
-    Criticality: NotRequired[int],
-    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (1)
-    Severity: NotRequired[FindingProviderSeverityTypeDef],  # (2)
-    Types: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
-2. See [:material-code-braces: FindingProviderSeverityTypeDef](./type_defs.md#findingproviderseveritytypedef) 
-## FindingProviderSeverityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FindingProviderSeverityTypeDef
-
-def get_value() -> FindingProviderSeverityTypeDef:
-    return {
-        "Label": ...,
-    }
-```
-
-```python title="Definition"
-class FindingProviderSeverityTypeDef(TypedDict):
-    Label: NotRequired[SeverityLabelType],  # (1)
-    Original: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
-## FirewallPolicyDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FirewallPolicyDetailsTypeDef
-
-def get_value() -> FirewallPolicyDetailsTypeDef:
-    return {
-        "StatefulRuleGroupReferences": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallPolicyDetailsTypeDef(TypedDict):
-    StatefulRuleGroupReferences: NotRequired[Sequence[FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef]],  # (1)
-    StatelessCustomActions: NotRequired[Sequence[FirewallPolicyStatelessCustomActionsDetailsTypeDef]],  # (2)
-    StatelessDefaultActions: NotRequired[Sequence[str]],
-    StatelessFragmentDefaultActions: NotRequired[Sequence[str]],
-    StatelessRuleGroupReferences: NotRequired[Sequence[FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatefulrulegroupreferencesdetailstypedef) 
-2. See [:material-code-braces: FirewallPolicyStatelessCustomActionsDetailsTypeDef](./type_defs.md#firewallpolicystatelesscustomactionsdetailstypedef) 
-3. See [:material-code-braces: FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatelessrulegroupreferencesdetailstypedef) 
-## FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
-
-def get_value() -> FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef(TypedDict):
-    ResourceArn: NotRequired[str],
-```
-
-## FirewallPolicyStatelessCustomActionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessCustomActionsDetailsTypeDef
-
-def get_value() -> FirewallPolicyStatelessCustomActionsDetailsTypeDef:
-    return {
-        "ActionDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallPolicyStatelessCustomActionsDetailsTypeDef(TypedDict):
-    ActionDefinition: NotRequired[StatelessCustomActionDefinitionTypeDef],  # (1)
-    ActionName: NotRequired[str],
-```
-
-1. See [:material-code-braces: StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef) 
-## FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
-
-def get_value() -> FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef:
-    return {
-        "Priority": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef(TypedDict):
-    Priority: NotRequired[int],
-    ResourceArn: NotRequired[str],
-```
-
-## GeoLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GeoLocationTypeDef
-
-def get_value() -> GeoLocationTypeDef:
-    return {
-        "Lon": ...,
-    }
-```
-
-```python title="Definition"
-class GeoLocationTypeDef(TypedDict):
-    Lon: NotRequired[float],
-    Lat: NotRequired[float],
-```
-
-## GetAdministratorAccountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetAdministratorAccountResponseTypeDef
-
-def get_value() -> GetAdministratorAccountResponseTypeDef:
-    return {
-        "Administrator": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAdministratorAccountResponseTypeDef(TypedDict):
-    Administrator: InvitationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef
-
-def get_value() -> GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef:
-    return {
-        "StandardsSubscriptionArns": ...,
-    }
-```
-
-```python title="Definition"
-class GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef(TypedDict):
-    StandardsSubscriptionArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetEnabledStandardsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetEnabledStandardsRequestRequestTypeDef
-
-def get_value() -> GetEnabledStandardsRequestRequestTypeDef:
-    return {
-        "StandardsSubscriptionArns": ...,
-    }
-```
-
-```python title="Definition"
-class GetEnabledStandardsRequestRequestTypeDef(TypedDict):
-    StandardsSubscriptionArns: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
 ## GetEnabledStandardsResponseTypeDef
 
 ```python title="Usage Example"
@@ -8457,47 +9766,369 @@ class GetEnabledStandardsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetFindingAggregatorRequestRequestTypeDef
+## StatelessCustomActionDefinitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetFindingAggregatorRequestRequestTypeDef
+from mypy_boto3_securityhub.type_defs import StatelessCustomActionDefinitionTypeDef
 
-def get_value() -> GetFindingAggregatorRequestRequestTypeDef:
+def get_value() -> StatelessCustomActionDefinitionTypeDef:
     return {
-        "FindingAggregatorArn": ...,
+        "PublishMetricAction": ...,
     }
 ```
 
 ```python title="Definition"
-class GetFindingAggregatorRequestRequestTypeDef(TypedDict):
-    FindingAggregatorArn: str,
+class StatelessCustomActionDefinitionTypeDef(TypedDict):
+    PublishMetricAction: NotRequired[StatelessCustomPublishMetricActionTypeDef],  # (1)
 ```
 
-## GetFindingAggregatorResponseTypeDef
+1. See [:material-code-braces: StatelessCustomPublishMetricActionTypeDef](./type_defs.md#statelesscustompublishmetricactiontypedef) 
+## PortProbeActionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetFindingAggregatorResponseTypeDef
+from mypy_boto3_securityhub.type_defs import PortProbeActionTypeDef
 
-def get_value() -> GetFindingAggregatorResponseTypeDef:
+def get_value() -> PortProbeActionTypeDef:
     return {
-        "FindingAggregatorArn": ...,
-        "FindingAggregationRegion": ...,
-        "RegionLinkingMode": ...,
-        "Regions": ...,
-        "ResponseMetadata": ...,
+        "PortProbeDetails": ...,
     }
 ```
 
 ```python title="Definition"
-class GetFindingAggregatorResponseTypeDef(TypedDict):
-    FindingAggregatorArn: str,
-    FindingAggregationRegion: str,
-    RegionLinkingMode: str,
-    Regions: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class PortProbeActionTypeDef(TypedDict):
+    PortProbeDetails: NotRequired[Sequence[PortProbeDetailTypeDef]],  # (1)
+    Blocked: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef) 
+## AwsAutoScalingAutoScalingGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupDetailsTypeDef
+
+def get_value() -> AwsAutoScalingAutoScalingGroupDetailsTypeDef:
+    return {
+        "LaunchConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingAutoScalingGroupDetailsTypeDef(TypedDict):
+    LaunchConfigurationName: NotRequired[str],
+    LoadBalancerNames: NotRequired[Sequence[str]],
+    HealthCheckType: NotRequired[str],
+    HealthCheckGracePeriod: NotRequired[int],
+    CreatedTime: NotRequired[str],
+    MixedInstancesPolicy: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef],  # (1)
+    AvailabilityZones: NotRequired[Sequence[AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef]],  # (2)
+    LaunchTemplate: NotRequired[AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef],  # (3)
+    CapacityRebalance: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef) 
+2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef) 
+3. See [:material-code-braces: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggrouplaunchtemplatelaunchtemplatespecificationtypedef) 
+## AwsCertificateManagerCertificateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateDetailsTypeDef
+
+def get_value() -> AwsCertificateManagerCertificateDetailsTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCertificateManagerCertificateDetailsTypeDef(TypedDict):
+    CertificateAuthorityArn: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    DomainName: NotRequired[str],
+    DomainValidationOptions: NotRequired[Sequence[AwsCertificateManagerCertificateDomainValidationOptionTypeDef]],  # (1)
+    ExtendedKeyUsages: NotRequired[Sequence[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef]],  # (2)
+    FailureReason: NotRequired[str],
+    ImportedAt: NotRequired[str],
+    InUseBy: NotRequired[Sequence[str]],
+    IssuedAt: NotRequired[str],
+    Issuer: NotRequired[str],
+    KeyAlgorithm: NotRequired[str],
+    KeyUsages: NotRequired[Sequence[AwsCertificateManagerCertificateKeyUsageTypeDef]],  # (3)
+    NotAfter: NotRequired[str],
+    NotBefore: NotRequired[str],
+    Options: NotRequired[AwsCertificateManagerCertificateOptionsTypeDef],  # (4)
+    RenewalEligibility: NotRequired[str],
+    RenewalSummary: NotRequired[AwsCertificateManagerCertificateRenewalSummaryTypeDef],  # (5)
+    Serial: NotRequired[str],
+    SignatureAlgorithm: NotRequired[str],
+    Status: NotRequired[str],
+    Subject: NotRequired[str],
+    SubjectAlternativeNames: NotRequired[Sequence[str]],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef) 
+2. See [:material-code-braces: AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificateextendedkeyusagetypedef) 
+3. See [:material-code-braces: AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef) 
+4. See [:material-code-braces: AwsCertificateManagerCertificateOptionsTypeDef](./type_defs.md#awscertificatemanagercertificateoptionstypedef) 
+5. See [:material-code-braces: AwsCertificateManagerCertificateRenewalSummaryTypeDef](./type_defs.md#awscertificatemanagercertificaterenewalsummarytypedef) 
+## AwsCloudFrontDistributionOriginGroupsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGroupsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginGroupsTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginGroupsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginGroupTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupTypeDef](./type_defs.md#awscloudfrontdistributionorigingrouptypedef) 
+## AwsDynamoDbTableDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableDetailsTypeDef
+
+def get_value() -> AwsDynamoDbTableDetailsTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+    }
+```
+
+```python title="Definition"
+class AwsDynamoDbTableDetailsTypeDef(TypedDict):
+    AttributeDefinitions: NotRequired[Sequence[AwsDynamoDbTableAttributeDefinitionTypeDef]],  # (1)
+    BillingModeSummary: NotRequired[AwsDynamoDbTableBillingModeSummaryTypeDef],  # (2)
+    CreationDateTime: NotRequired[str],
+    GlobalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableGlobalSecondaryIndexTypeDef]],  # (3)
+    GlobalTableVersion: NotRequired[str],
+    ItemCount: NotRequired[int],
+    KeySchema: NotRequired[Sequence[AwsDynamoDbTableKeySchemaTypeDef]],  # (4)
+    LatestStreamArn: NotRequired[str],
+    LatestStreamLabel: NotRequired[str],
+    LocalSecondaryIndexes: NotRequired[Sequence[AwsDynamoDbTableLocalSecondaryIndexTypeDef]],  # (5)
+    ProvisionedThroughput: NotRequired[AwsDynamoDbTableProvisionedThroughputTypeDef],  # (6)
+    Replicas: NotRequired[Sequence[AwsDynamoDbTableReplicaTypeDef]],  # (7)
+    RestoreSummary: NotRequired[AwsDynamoDbTableRestoreSummaryTypeDef],  # (8)
+    SseDescription: NotRequired[AwsDynamoDbTableSseDescriptionTypeDef],  # (9)
+    StreamSpecification: NotRequired[AwsDynamoDbTableStreamSpecificationTypeDef],  # (10)
+    TableId: NotRequired[str],
+    TableName: NotRequired[str],
+    TableSizeBytes: NotRequired[int],
+    TableStatus: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsDynamoDbTableAttributeDefinitionTypeDef](./type_defs.md#awsdynamodbtableattributedefinitiontypedef) 
+2. See [:material-code-braces: AwsDynamoDbTableBillingModeSummaryTypeDef](./type_defs.md#awsdynamodbtablebillingmodesummarytypedef) 
+3. See [:material-code-braces: AwsDynamoDbTableGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtableglobalsecondaryindextypedef) 
+4. See [:material-code-braces: AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef) 
+5. See [:material-code-braces: AwsDynamoDbTableLocalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablelocalsecondaryindextypedef) 
+6. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef) 
+7. See [:material-code-braces: AwsDynamoDbTableReplicaTypeDef](./type_defs.md#awsdynamodbtablereplicatypedef) 
+8. See [:material-code-braces: AwsDynamoDbTableRestoreSummaryTypeDef](./type_defs.md#awsdynamodbtablerestoresummarytypedef) 
+9. See [:material-code-braces: AwsDynamoDbTableSseDescriptionTypeDef](./type_defs.md#awsdynamodbtablessedescriptiontypedef) 
+10. See [:material-code-braces: AwsDynamoDbTableStreamSpecificationTypeDef](./type_defs.md#awsdynamodbtablestreamspecificationtypedef) 
+## AwsEcsClusterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterDetailsTypeDef
+
+def get_value() -> AwsEcsClusterDetailsTypeDef:
+    return {
+        "CapacityProviders": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsClusterDetailsTypeDef(TypedDict):
+    CapacityProviders: NotRequired[Sequence[str]],
+    ClusterSettings: NotRequired[Sequence[AwsEcsClusterClusterSettingsDetailsTypeDef]],  # (1)
+    Configuration: NotRequired[AwsEcsClusterConfigurationDetailsTypeDef],  # (2)
+    DefaultCapacityProviderStrategy: NotRequired[Sequence[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef) 
+2. See [:material-code-braces: AwsEcsClusterConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationdetailstypedef) 
+3. See [:material-code-braces: AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef) 
+## AwsEcsTaskDefinitionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDefinitionDetailsTypeDef:
+    return {
+        "ContainerDefinitions": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDefinitionDetailsTypeDef(TypedDict):
+    ContainerDefinitions: NotRequired[Sequence[AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef]],  # (1)
+    Cpu: NotRequired[str],
+    ExecutionRoleArn: NotRequired[str],
+    Family: NotRequired[str],
+    InferenceAccelerators: NotRequired[Sequence[AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef]],  # (2)
+    IpcMode: NotRequired[str],
+    Memory: NotRequired[str],
+    NetworkMode: NotRequired[str],
+    PidMode: NotRequired[str],
+    PlacementConstraints: NotRequired[Sequence[AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef]],  # (3)
+    ProxyConfiguration: NotRequired[AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef],  # (4)
+    RequiresCompatibilities: NotRequired[Sequence[str]],
+    TaskRoleArn: NotRequired[str],
+    Volumes: NotRequired[Sequence[AwsEcsTaskDefinitionVolumesDetailsTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdetailstypedef) 
+2. See [:material-code-braces: AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioninferenceacceleratorsdetailstypedef) 
+3. See [:material-code-braces: AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](./type_defs.md#awsecstaskdefinitionplacementconstraintsdetailstypedef) 
+4. See [:material-code-braces: AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationdetailstypedef) 
+5. See [:material-code-braces: AwsEcsTaskDefinitionVolumesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdetailstypedef) 
+## AwsRdsDbInstanceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceDetailsTypeDef
+
+def get_value() -> AwsRdsDbInstanceDetailsTypeDef:
+    return {
+        "AssociatedRoles": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbInstanceDetailsTypeDef(TypedDict):
+    AssociatedRoles: NotRequired[Sequence[AwsRdsDbInstanceAssociatedRoleTypeDef]],  # (1)
+    CACertificateIdentifier: NotRequired[str],
+    DBClusterIdentifier: NotRequired[str],
+    DBInstanceIdentifier: NotRequired[str],
+    DBInstanceClass: NotRequired[str],
+    DbInstancePort: NotRequired[int],
+    DbiResourceId: NotRequired[str],
+    DBName: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    Endpoint: NotRequired[AwsRdsDbInstanceEndpointTypeDef],  # (2)
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    IAMDatabaseAuthenticationEnabled: NotRequired[bool],
+    InstanceCreateTime: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    PubliclyAccessible: NotRequired[bool],
+    StorageEncrypted: NotRequired[bool],
+    TdeCredentialArn: NotRequired[str],
+    VpcSecurityGroups: NotRequired[Sequence[AwsRdsDbInstanceVpcSecurityGroupTypeDef]],  # (3)
+    MultiAz: NotRequired[bool],
+    EnhancedMonitoringResourceArn: NotRequired[str],
+    DbInstanceStatus: NotRequired[str],
+    MasterUsername: NotRequired[str],
+    AllocatedStorage: NotRequired[int],
+    PreferredBackupWindow: NotRequired[str],
+    BackupRetentionPeriod: NotRequired[int],
+    DbSecurityGroups: NotRequired[Sequence[str]],
+    DbParameterGroups: NotRequired[Sequence[AwsRdsDbParameterGroupTypeDef]],  # (4)
+    AvailabilityZone: NotRequired[str],
+    DbSubnetGroup: NotRequired[AwsRdsDbSubnetGroupTypeDef],  # (5)
+    PreferredMaintenanceWindow: NotRequired[str],
+    PendingModifiedValues: NotRequired[AwsRdsDbPendingModifiedValuesTypeDef],  # (6)
+    LatestRestorableTime: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+    ReadReplicaSourceDBInstanceIdentifier: NotRequired[str],
+    ReadReplicaDBInstanceIdentifiers: NotRequired[Sequence[str]],
+    ReadReplicaDBClusterIdentifiers: NotRequired[Sequence[str]],
+    LicenseModel: NotRequired[str],
+    Iops: NotRequired[int],
+    OptionGroupMemberships: NotRequired[Sequence[AwsRdsDbOptionGroupMembershipTypeDef]],  # (7)
+    CharacterSetName: NotRequired[str],
+    SecondaryAvailabilityZone: NotRequired[str],
+    StatusInfos: NotRequired[Sequence[AwsRdsDbStatusInfoTypeDef]],  # (8)
+    StorageType: NotRequired[str],
+    DomainMemberships: NotRequired[Sequence[AwsRdsDbDomainMembershipTypeDef]],  # (9)
+    CopyTagsToSnapshot: NotRequired[bool],
+    MonitoringInterval: NotRequired[int],
+    MonitoringRoleArn: NotRequired[str],
+    PromotionTier: NotRequired[int],
+    Timezone: NotRequired[str],
+    PerformanceInsightsEnabled: NotRequired[bool],
+    PerformanceInsightsKmsKeyId: NotRequired[str],
+    PerformanceInsightsRetentionPeriod: NotRequired[int],
+    EnabledCloudWatchLogsExports: NotRequired[Sequence[str]],
+    ProcessorFeatures: NotRequired[Sequence[AwsRdsDbProcessorFeatureTypeDef]],  # (10)
+    ListenerEndpoint: NotRequired[AwsRdsDbInstanceEndpointTypeDef],  # (2)
+    MaxAllocatedStorage: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsRdsDbInstanceAssociatedRoleTypeDef](./type_defs.md#awsrdsdbinstanceassociatedroletypedef) 
+2. See [:material-code-braces: AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef) 
+3. See [:material-code-braces: AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef) 
+4. See [:material-code-braces: AwsRdsDbParameterGroupTypeDef](./type_defs.md#awsrdsdbparametergrouptypedef) 
+5. See [:material-code-braces: AwsRdsDbSubnetGroupTypeDef](./type_defs.md#awsrdsdbsubnetgrouptypedef) 
+6. See [:material-code-braces: AwsRdsDbPendingModifiedValuesTypeDef](./type_defs.md#awsrdsdbpendingmodifiedvaluestypedef) 
+7. See [:material-code-braces: AwsRdsDbOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdboptiongroupmembershiptypedef) 
+8. See [:material-code-braces: AwsRdsDbStatusInfoTypeDef](./type_defs.md#awsrdsdbstatusinfotypedef) 
+9. See [:material-code-braces: AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef) 
+10. See [:material-code-braces: AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef) 
+11. See [:material-code-braces: AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef) 
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef:
+    return {
+        "Predicate": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef(TypedDict):
+    Predicate: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatedetailstypedef) 
+## AwsS3BucketNotificationConfigurationDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationDetailTypeDef
+
+def get_value() -> AwsS3BucketNotificationConfigurationDetailTypeDef:
+    return {
+        "Events": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketNotificationConfigurationDetailTypeDef(TypedDict):
+    Events: NotRequired[Sequence[str]],
+    Filter: NotRequired[AwsS3BucketNotificationConfigurationFilterTypeDef],  # (1)
+    Destination: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsS3BucketNotificationConfigurationFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurationfiltertypedef) 
+## CreateInsightRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CreateInsightRequestRequestTypeDef
+
+def get_value() -> CreateInsightRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Filters": ...,
+        "GroupByAttribute": ...,
+    }
+```
+
+```python title="Definition"
+class CreateInsightRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
+    GroupByAttribute: str,
+```
+
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
 ## GetFindingsRequestGetFindingsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -8540,276 +10171,6 @@ class GetFindingsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
 2. See [:material-code-braces: SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef) 
-## GetFindingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetFindingsResponseTypeDef
-
-def get_value() -> GetFindingsResponseTypeDef:
-    return {
-        "Findings": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetFindingsResponseTypeDef(TypedDict):
-    Findings: List[AwsSecurityFindingTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetInsightResultsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInsightResultsRequestRequestTypeDef
-
-def get_value() -> GetInsightResultsRequestRequestTypeDef:
-    return {
-        "InsightArn": ...,
-    }
-```
-
-```python title="Definition"
-class GetInsightResultsRequestRequestTypeDef(TypedDict):
-    InsightArn: str,
-```
-
-## GetInsightResultsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInsightResultsResponseTypeDef
-
-def get_value() -> GetInsightResultsResponseTypeDef:
-    return {
-        "InsightResults": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetInsightResultsResponseTypeDef(TypedDict):
-    InsightResults: InsightResultsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InsightResultsTypeDef](./type_defs.md#insightresultstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetInsightsRequestGetInsightsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInsightsRequestGetInsightsPaginateTypeDef
-
-def get_value() -> GetInsightsRequestGetInsightsPaginateTypeDef:
-    return {
-        "InsightArns": ...,
-    }
-```
-
-```python title="Definition"
-class GetInsightsRequestGetInsightsPaginateTypeDef(TypedDict):
-    InsightArns: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetInsightsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInsightsRequestRequestTypeDef
-
-def get_value() -> GetInsightsRequestRequestTypeDef:
-    return {
-        "InsightArns": ...,
-    }
-```
-
-```python title="Definition"
-class GetInsightsRequestRequestTypeDef(TypedDict):
-    InsightArns: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## GetInsightsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInsightsResponseTypeDef
-
-def get_value() -> GetInsightsResponseTypeDef:
-    return {
-        "Insights": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetInsightsResponseTypeDef(TypedDict):
-    Insights: List[InsightTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InsightTypeDef](./type_defs.md#insighttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetInvitationsCountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetInvitationsCountResponseTypeDef
-
-def get_value() -> GetInvitationsCountResponseTypeDef:
-    return {
-        "InvitationsCount": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetInvitationsCountResponseTypeDef(TypedDict):
-    InvitationsCount: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMasterAccountResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetMasterAccountResponseTypeDef
-
-def get_value() -> GetMasterAccountResponseTypeDef:
-    return {
-        "Master": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMasterAccountResponseTypeDef(TypedDict):
-    Master: InvitationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetMembersRequestRequestTypeDef
-
-def get_value() -> GetMembersRequestRequestTypeDef:
-    return {
-        "AccountIds": ...,
-    }
-```
-
-```python title="Definition"
-class GetMembersRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
-```
-
-## GetMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import GetMembersResponseTypeDef
-
-def get_value() -> GetMembersResponseTypeDef:
-    return {
-        "Members": ...,
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMembersResponseTypeDef(TypedDict):
-    Members: List[MemberTypeDef],  # (1)
-    UnprocessedAccounts: List[ResultTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
-2. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IcmpTypeCodeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import IcmpTypeCodeTypeDef
-
-def get_value() -> IcmpTypeCodeTypeDef:
-    return {
-        "Code": ...,
-    }
-```
-
-```python title="Definition"
-class IcmpTypeCodeTypeDef(TypedDict):
-    Code: NotRequired[int],
-    Type: NotRequired[int],
-```
-
-## ImportFindingsErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ImportFindingsErrorTypeDef
-
-def get_value() -> ImportFindingsErrorTypeDef:
-    return {
-        "Id": ...,
-        "ErrorCode": ...,
-        "ErrorMessage": ...,
-    }
-```
-
-```python title="Definition"
-class ImportFindingsErrorTypeDef(TypedDict):
-    Id: str,
-    ErrorCode: str,
-    ErrorMessage: str,
-```
-
-## InsightResultValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import InsightResultValueTypeDef
-
-def get_value() -> InsightResultValueTypeDef:
-    return {
-        "GroupByAttributeValue": ...,
-        "Count": ...,
-    }
-```
-
-```python title="Definition"
-class InsightResultValueTypeDef(TypedDict):
-    GroupByAttributeValue: str,
-    Count: int,
-```
-
-## InsightResultsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import InsightResultsTypeDef
-
-def get_value() -> InsightResultsTypeDef:
-    return {
-        "InsightArn": ...,
-        "GroupByAttribute": ...,
-        "ResultValues": ...,
-    }
-```
-
-```python title="Definition"
-class InsightResultsTypeDef(TypedDict):
-    InsightArn: str,
-    GroupByAttribute: str,
-    ResultValues: List[InsightResultValueTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: InsightResultValueTypeDef](./type_defs.md#insightresultvaluetypedef) 
 ## InsightTypeDef
 
 ```python title="Usage Example"
@@ -8833,587 +10194,47 @@ class InsightTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
-## InvitationTypeDef
+## UpdateFindingsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import InvitationTypeDef
+from mypy_boto3_securityhub.type_defs import UpdateFindingsRequestRequestTypeDef
 
-def get_value() -> InvitationTypeDef:
+def get_value() -> UpdateFindingsRequestRequestTypeDef:
     return {
-        "AccountId": ...,
+        "Filters": ...,
     }
 ```
 
 ```python title="Definition"
-class InvitationTypeDef(TypedDict):
-    AccountId: NotRequired[str],
-    InvitationId: NotRequired[str],
-    InvitedAt: NotRequired[datetime],
-    MemberStatus: NotRequired[str],
+class UpdateFindingsRequestRequestTypeDef(TypedDict):
+    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
+    Note: NotRequired[NoteUpdateTypeDef],  # (2)
+    RecordState: NotRequired[RecordStateType],  # (3)
 ```
 
-## InviteMembersRequestRequestTypeDef
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
+2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
+3. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
+## UpdateInsightRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import InviteMembersRequestRequestTypeDef
+from mypy_boto3_securityhub.type_defs import UpdateInsightRequestRequestTypeDef
 
-def get_value() -> InviteMembersRequestRequestTypeDef:
+def get_value() -> UpdateInsightRequestRequestTypeDef:
     return {
-        "AccountIds": ...,
+        "InsightArn": ...,
     }
 ```
 
 ```python title="Definition"
-class InviteMembersRequestRequestTypeDef(TypedDict):
-    AccountIds: Sequence[str],
+class UpdateInsightRequestRequestTypeDef(TypedDict):
+    InsightArn: str,
+    Name: NotRequired[str],
+    Filters: NotRequired[AwsSecurityFindingFiltersTypeDef],  # (1)
+    GroupByAttribute: NotRequired[str],
 ```
 
-## InviteMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import InviteMembersResponseTypeDef
-
-def get_value() -> InviteMembersResponseTypeDef:
-    return {
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class InviteMembersResponseTypeDef(TypedDict):
-    UnprocessedAccounts: List[ResultTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResultTypeDef](./type_defs.md#resulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## IpFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import IpFilterTypeDef
-
-def get_value() -> IpFilterTypeDef:
-    return {
-        "Cidr": ...,
-    }
-```
-
-```python title="Definition"
-class IpFilterTypeDef(TypedDict):
-    Cidr: NotRequired[str],
-```
-
-## IpOrganizationDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import IpOrganizationDetailsTypeDef
-
-def get_value() -> IpOrganizationDetailsTypeDef:
-    return {
-        "Asn": ...,
-    }
-```
-
-```python title="Definition"
-class IpOrganizationDetailsTypeDef(TypedDict):
-    Asn: NotRequired[int],
-    AsnOrg: NotRequired[str],
-    Isp: NotRequired[str],
-    Org: NotRequired[str],
-```
-
-## Ipv6CidrBlockAssociationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import Ipv6CidrBlockAssociationTypeDef
-
-def get_value() -> Ipv6CidrBlockAssociationTypeDef:
-    return {
-        "AssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class Ipv6CidrBlockAssociationTypeDef(TypedDict):
-    AssociationId: NotRequired[str],
-    Ipv6CidrBlock: NotRequired[str],
-    CidrBlockState: NotRequired[str],
-```
-
-## KeywordFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import KeywordFilterTypeDef
-
-def get_value() -> KeywordFilterTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class KeywordFilterTypeDef(TypedDict):
-    Value: NotRequired[str],
-```
-
-## ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef
-
-def get_value() -> ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListEnabledProductsForImportRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportRequestRequestTypeDef
-
-def get_value() -> ListEnabledProductsForImportRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListEnabledProductsForImportRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListEnabledProductsForImportResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportResponseTypeDef
-
-def get_value() -> ListEnabledProductsForImportResponseTypeDef:
-    return {
-        "ProductSubscriptions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEnabledProductsForImportResponseTypeDef(TypedDict):
-    ProductSubscriptions: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef
-
-def get_value() -> ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFindingAggregatorsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsRequestRequestTypeDef
-
-def get_value() -> ListFindingAggregatorsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListFindingAggregatorsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListFindingAggregatorsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsResponseTypeDef
-
-def get_value() -> ListFindingAggregatorsResponseTypeDef:
-    return {
-        "FindingAggregators": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListFindingAggregatorsResponseTypeDef(TypedDict):
-    FindingAggregators: List[FindingAggregatorTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FindingAggregatorTypeDef](./type_defs.md#findingaggregatortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListInvitationsRequestListInvitationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListInvitationsRequestListInvitationsPaginateTypeDef
-
-def get_value() -> ListInvitationsRequestListInvitationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListInvitationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListInvitationsRequestRequestTypeDef
-
-def get_value() -> ListInvitationsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListInvitationsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListInvitationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListInvitationsResponseTypeDef
-
-def get_value() -> ListInvitationsResponseTypeDef:
-    return {
-        "Invitations": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListInvitationsResponseTypeDef(TypedDict):
-    Invitations: List[InvitationTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMembersRequestListMembersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListMembersRequestListMembersPaginateTypeDef
-
-def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
-    return {
-        "OnlyAssociated": ...,
-    }
-```
-
-```python title="Definition"
-class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
-    OnlyAssociated: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListMembersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListMembersRequestRequestTypeDef
-
-def get_value() -> ListMembersRequestRequestTypeDef:
-    return {
-        "OnlyAssociated": ...,
-    }
-```
-
-```python title="Definition"
-class ListMembersRequestRequestTypeDef(TypedDict):
-    OnlyAssociated: NotRequired[bool],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListMembersResponseTypeDef
-
-def get_value() -> ListMembersResponseTypeDef:
-    return {
-        "Members": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMembersResponseTypeDef(TypedDict):
-    Members: List[MemberTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
-
-def get_value() -> ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListOrganizationAdminAccountsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsRequestRequestTypeDef
-
-def get_value() -> ListOrganizationAdminAccountsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListOrganizationAdminAccountsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsResponseTypeDef
-
-def get_value() -> ListOrganizationAdminAccountsResponseTypeDef:
-    return {
-        "AdminAccounts": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationAdminAccountsResponseTypeDef(TypedDict):
-    AdminAccounts: List[AdminAccountTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AdminAccountTypeDef](./type_defs.md#adminaccounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LoadBalancerStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import LoadBalancerStateTypeDef
-
-def get_value() -> LoadBalancerStateTypeDef:
-    return {
-        "Code": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerStateTypeDef(TypedDict):
-    Code: NotRequired[str],
-    Reason: NotRequired[str],
-```
-
-## MalwareTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import MalwareTypeDef
-
-def get_value() -> MalwareTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class MalwareTypeDef(TypedDict):
-    Name: str,
-    Type: NotRequired[MalwareTypeType],  # (1)
-    Path: NotRequired[str],
-    State: NotRequired[MalwareStateType],  # (2)
-```
-
-1. See [:material-code-brackets: MalwareTypeType](./literals.md#malwaretypetype) 
-2. See [:material-code-brackets: MalwareStateType](./literals.md#malwarestatetype) 
-## MapFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import MapFilterTypeDef
-
-def get_value() -> MapFilterTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class MapFilterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-    Comparison: NotRequired[MapFilterComparisonType],  # (1)
-```
-
-1. See [:material-code-brackets: MapFilterComparisonType](./literals.md#mapfiltercomparisontype) 
-## MemberTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import MemberTypeDef
-
-def get_value() -> MemberTypeDef:
-    return {
-        "AccountId": ...,
-    }
-```
-
-```python title="Definition"
-class MemberTypeDef(TypedDict):
-    AccountId: NotRequired[str],
-    Email: NotRequired[str],
-    MasterId: NotRequired[str],
-    AdministratorId: NotRequired[str],
-    MemberStatus: NotRequired[str],
-    InvitedAt: NotRequired[datetime],
-    UpdatedAt: NotRequired[datetime],
-```
-
-## NetworkConnectionActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NetworkConnectionActionTypeDef
-
-def get_value() -> NetworkConnectionActionTypeDef:
-    return {
-        "ConnectionDirection": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkConnectionActionTypeDef(TypedDict):
-    ConnectionDirection: NotRequired[str],
-    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (1)
-    RemotePortDetails: NotRequired[ActionRemotePortDetailsTypeDef],  # (2)
-    LocalPortDetails: NotRequired[ActionLocalPortDetailsTypeDef],  # (3)
-    Protocol: NotRequired[str],
-    Blocked: NotRequired[bool],
-```
-
-1. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
-2. See [:material-code-braces: ActionRemotePortDetailsTypeDef](./type_defs.md#actionremoteportdetailstypedef) 
-3. See [:material-code-braces: ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef) 
-## NetworkHeaderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NetworkHeaderTypeDef
-
-def get_value() -> NetworkHeaderTypeDef:
-    return {
-        "Protocol": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkHeaderTypeDef(TypedDict):
-    Protocol: NotRequired[str],
-    Destination: NotRequired[NetworkPathComponentDetailsTypeDef],  # (1)
-    Source: NotRequired[NetworkPathComponentDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef) 
-2. See [:material-code-braces: NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef) 
-## NetworkPathComponentDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NetworkPathComponentDetailsTypeDef
-
-def get_value() -> NetworkPathComponentDetailsTypeDef:
-    return {
-        "Address": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkPathComponentDetailsTypeDef(TypedDict):
-    Address: NotRequired[Sequence[str]],
-    PortRanges: NotRequired[Sequence[PortRangeTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
 ## NetworkPathComponentTypeDef
 
 ```python title="Usage Example"
@@ -9435,386 +10256,482 @@ class NetworkPathComponentTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkHeaderTypeDef](./type_defs.md#networkheadertypedef) 
 2. See [:material-code-braces: NetworkHeaderTypeDef](./type_defs.md#networkheadertypedef) 
-## NetworkTypeDef
+## CustomDataIdentifiersDetectionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NetworkTypeDef
+from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersDetectionsTypeDef
 
-def get_value() -> NetworkTypeDef:
+def get_value() -> CustomDataIdentifiersDetectionsTypeDef:
     return {
-        "Direction": ...,
+        "Count": ...,
     }
 ```
 
 ```python title="Definition"
-class NetworkTypeDef(TypedDict):
-    Direction: NotRequired[NetworkDirectionType],  # (1)
-    Protocol: NotRequired[str],
-    OpenPortRange: NotRequired[PortRangeTypeDef],  # (2)
-    SourceIpV4: NotRequired[str],
-    SourceIpV6: NotRequired[str],
-    SourcePort: NotRequired[int],
-    SourceDomain: NotRequired[str],
-    SourceMac: NotRequired[str],
-    DestinationIpV4: NotRequired[str],
-    DestinationIpV6: NotRequired[str],
-    DestinationPort: NotRequired[int],
-    DestinationDomain: NotRequired[str],
-```
-
-1. See [:material-code-brackets: NetworkDirectionType](./literals.md#networkdirectiontype) 
-2. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
-## NoteTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NoteTypeDef
-
-def get_value() -> NoteTypeDef:
-    return {
-        "Text": ...,
-        "UpdatedBy": ...,
-        "UpdatedAt": ...,
-    }
-```
-
-```python title="Definition"
-class NoteTypeDef(TypedDict):
-    Text: str,
-    UpdatedBy: str,
-    UpdatedAt: str,
-```
-
-## NoteUpdateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NoteUpdateTypeDef
-
-def get_value() -> NoteUpdateTypeDef:
-    return {
-        "Text": ...,
-        "UpdatedBy": ...,
-    }
-```
-
-```python title="Definition"
-class NoteUpdateTypeDef(TypedDict):
-    Text: str,
-    UpdatedBy: str,
-```
-
-## NumberFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import NumberFilterTypeDef
-
-def get_value() -> NumberFilterTypeDef:
-    return {
-        "Gte": ...,
-    }
-```
-
-```python title="Definition"
-class NumberFilterTypeDef(TypedDict):
-    Gte: NotRequired[float],
-    Lte: NotRequired[float],
-    Eq: NotRequired[float],
-```
-
-## OccurrencesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import OccurrencesTypeDef
-
-def get_value() -> OccurrencesTypeDef:
-    return {
-        "LineRanges": ...,
-    }
-```
-
-```python title="Definition"
-class OccurrencesTypeDef(TypedDict):
-    LineRanges: NotRequired[Sequence[RangeTypeDef]],  # (1)
-    OffsetRanges: NotRequired[Sequence[RangeTypeDef]],  # (1)
-    Pages: NotRequired[Sequence[PageTypeDef]],  # (3)
-    Records: NotRequired[Sequence[RecordTypeDef]],  # (4)
-    Cells: NotRequired[Sequence[CellTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
-2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
-3. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
-4. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
-5. See [:material-code-braces: CellTypeDef](./type_defs.md#celltypedef) 
-## PageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PageTypeDef
-
-def get_value() -> PageTypeDef:
-    return {
-        "PageNumber": ...,
-    }
-```
-
-```python title="Definition"
-class PageTypeDef(TypedDict):
-    PageNumber: NotRequired[int],
-    LineRange: NotRequired[RangeTypeDef],  # (1)
-    OffsetRange: NotRequired[RangeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
-2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PatchSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PatchSummaryTypeDef
-
-def get_value() -> PatchSummaryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class PatchSummaryTypeDef(TypedDict):
-    Id: str,
-    InstalledCount: NotRequired[int],
-    MissingCount: NotRequired[int],
-    FailedCount: NotRequired[int],
-    InstalledOtherCount: NotRequired[int],
-    InstalledRejectedCount: NotRequired[int],
-    InstalledPendingReboot: NotRequired[int],
-    OperationStartTime: NotRequired[str],
-    OperationEndTime: NotRequired[str],
-    RebootOption: NotRequired[str],
-    Operation: NotRequired[str],
-```
-
-## PortProbeActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PortProbeActionTypeDef
-
-def get_value() -> PortProbeActionTypeDef:
-    return {
-        "PortProbeDetails": ...,
-    }
-```
-
-```python title="Definition"
-class PortProbeActionTypeDef(TypedDict):
-    PortProbeDetails: NotRequired[Sequence[PortProbeDetailTypeDef]],  # (1)
-    Blocked: NotRequired[bool],
-```
-
-1. See [:material-code-braces: PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef) 
-## PortProbeDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PortProbeDetailTypeDef
-
-def get_value() -> PortProbeDetailTypeDef:
-    return {
-        "LocalPortDetails": ...,
-    }
-```
-
-```python title="Definition"
-class PortProbeDetailTypeDef(TypedDict):
-    LocalPortDetails: NotRequired[ActionLocalPortDetailsTypeDef],  # (1)
-    LocalIpDetails: NotRequired[ActionLocalIpDetailsTypeDef],  # (2)
-    RemoteIpDetails: NotRequired[ActionRemoteIpDetailsTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef) 
-2. See [:material-code-braces: ActionLocalIpDetailsTypeDef](./type_defs.md#actionlocalipdetailstypedef) 
-3. See [:material-code-braces: ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef) 
-## PortRangeFromToTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PortRangeFromToTypeDef
-
-def get_value() -> PortRangeFromToTypeDef:
-    return {
-        "From": ...,
-    }
-```
-
-```python title="Definition"
-class PortRangeFromToTypeDef(TypedDict):
-    From: NotRequired[int],
-    To: NotRequired[int],
-```
-
-## PortRangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import PortRangeTypeDef
-
-def get_value() -> PortRangeTypeDef:
-    return {
-        "Begin": ...,
-    }
-```
-
-```python title="Definition"
-class PortRangeTypeDef(TypedDict):
-    Begin: NotRequired[int],
-    End: NotRequired[int],
-```
-
-## ProcessDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ProcessDetailsTypeDef
-
-def get_value() -> ProcessDetailsTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ProcessDetailsTypeDef(TypedDict):
+class CustomDataIdentifiersDetectionsTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Arn: NotRequired[str],
     Name: NotRequired[str],
-    Path: NotRequired[str],
-    Pid: NotRequired[int],
-    ParentPid: NotRequired[int],
-    LaunchedAt: NotRequired[str],
-    TerminatedAt: NotRequired[str],
+    Occurrences: NotRequired[OccurrencesTypeDef],  # (1)
 ```
 
-## ProductTypeDef
+1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
+## SensitiveDataDetectionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ProductTypeDef
+from mypy_boto3_securityhub.type_defs import SensitiveDataDetectionsTypeDef
 
-def get_value() -> ProductTypeDef:
+def get_value() -> SensitiveDataDetectionsTypeDef:
     return {
-        "ProductArn": ...,
+        "Count": ...,
     }
 ```
 
 ```python title="Definition"
-class ProductTypeDef(TypedDict):
-    ProductArn: str,
-    ProductName: NotRequired[str],
-    CompanyName: NotRequired[str],
+class SensitiveDataDetectionsTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Type: NotRequired[str],
+    Occurrences: NotRequired[OccurrencesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
+## RuleGroupSourceStatelessRulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesDetailsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRulesDetailsTypeDef:
+    return {
+        "Priority": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRulesDetailsTypeDef(TypedDict):
+    Priority: NotRequired[int],
+    RuleDefinition: NotRequired[RuleGroupSourceStatelessRuleDefinitionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RuleGroupSourceStatelessRuleDefinitionTypeDef](./type_defs.md#rulegroupsourcestatelessruledefinitiontypedef) 
+## FirewallPolicyStatelessCustomActionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessCustomActionsDetailsTypeDef
+
+def get_value() -> FirewallPolicyStatelessCustomActionsDetailsTypeDef:
+    return {
+        "ActionDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallPolicyStatelessCustomActionsDetailsTypeDef(TypedDict):
+    ActionDefinition: NotRequired[StatelessCustomActionDefinitionTypeDef],  # (1)
+    ActionName: NotRequired[str],
+```
+
+1. See [:material-code-braces: StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef) 
+## RuleGroupSourceCustomActionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceCustomActionsDetailsTypeDef
+
+def get_value() -> RuleGroupSourceCustomActionsDetailsTypeDef:
+    return {
+        "ActionDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceCustomActionsDetailsTypeDef(TypedDict):
+    ActionDefinition: NotRequired[StatelessCustomActionDefinitionTypeDef],  # (1)
+    ActionName: NotRequired[str],
+```
+
+1. See [:material-code-braces: StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef) 
+## ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "ActionType": ...,
+    }
+```
+
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    ActionType: NotRequired[str],
+    NetworkConnectionAction: NotRequired[NetworkConnectionActionTypeDef],  # (1)
+    AwsApiCallAction: NotRequired[AwsApiCallActionTypeDef],  # (2)
+    DnsRequestAction: NotRequired[DnsRequestActionTypeDef],  # (3)
+    PortProbeAction: NotRequired[PortProbeActionTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef) 
+2. See [:material-code-braces: AwsApiCallActionTypeDef](./type_defs.md#awsapicallactiontypedef) 
+3. See [:material-code-braces: DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef) 
+4. See [:material-code-braces: PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef) 
+## AwsCloudFrontDistributionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionDetailsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionDetailsTypeDef:
+    return {
+        "CacheBehaviors": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionDetailsTypeDef(TypedDict):
+    CacheBehaviors: NotRequired[AwsCloudFrontDistributionCacheBehaviorsTypeDef],  # (1)
+    DefaultCacheBehavior: NotRequired[AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef],  # (2)
+    DefaultRootObject: NotRequired[str],
+    DomainName: NotRequired[str],
+    ETag: NotRequired[str],
+    LastModifiedTime: NotRequired[str],
+    Logging: NotRequired[AwsCloudFrontDistributionLoggingTypeDef],  # (3)
+    Origins: NotRequired[AwsCloudFrontDistributionOriginsTypeDef],  # (4)
+    OriginGroups: NotRequired[AwsCloudFrontDistributionOriginGroupsTypeDef],  # (5)
+    ViewerCertificate: NotRequired[AwsCloudFrontDistributionViewerCertificateTypeDef],  # (6)
+    Status: NotRequired[str],
+    WebAclId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionCacheBehaviorsTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviorstypedef) 
+2. See [:material-code-braces: AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributiondefaultcachebehaviortypedef) 
+3. See [:material-code-braces: AwsCloudFrontDistributionLoggingTypeDef](./type_defs.md#awscloudfrontdistributionloggingtypedef) 
+4. See [:material-code-braces: AwsCloudFrontDistributionOriginsTypeDef](./type_defs.md#awscloudfrontdistributionoriginstypedef) 
+5. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupsTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupstypedef) 
+6. See [:material-code-braces: AwsCloudFrontDistributionViewerCertificateTypeDef](./type_defs.md#awscloudfrontdistributionviewercertificatetypedef) 
+## AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef:
+    return {
+        "AbortIncompleteMultipartUpload": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef(TypedDict):
+    AbortIncompleteMultipartUpload: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef],  # (1)
+    ExpirationDate: NotRequired[str],
+    ExpirationInDays: NotRequired[int],
+    ExpiredObjectDeleteMarker: NotRequired[bool],
+    Filter: NotRequired[AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef],  # (2)
+    ID: NotRequired[str],
+    NoncurrentVersionExpirationInDays: NotRequired[int],
+    NoncurrentVersionTransitions: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef]],  # (3)
+    Prefix: NotRequired[str],
+    Status: NotRequired[str],
+    Transitions: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesabortincompletemultipartuploaddetailstypedef) 
+2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterdetailstypedef) 
+3. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef) 
+4. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef) 
+## AwsS3BucketNotificationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationTypeDef
+
+def get_value() -> AwsS3BucketNotificationConfigurationTypeDef:
+    return {
+        "Configurations": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketNotificationConfigurationTypeDef(TypedDict):
+    Configurations: NotRequired[Sequence[AwsS3BucketNotificationConfigurationDetailTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef) 
+## GetInsightsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import GetInsightsResponseTypeDef
+
+def get_value() -> GetInsightsResponseTypeDef:
+    return {
+        "Insights": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetInsightsResponseTypeDef(TypedDict):
+    Insights: List[InsightTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InsightTypeDef](./type_defs.md#insighttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CustomDataIdentifiersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersResultTypeDef
+
+def get_value() -> CustomDataIdentifiersResultTypeDef:
+    return {
+        "Detections": ...,
+    }
+```
+
+```python title="Definition"
+class CustomDataIdentifiersResultTypeDef(TypedDict):
+    Detections: NotRequired[Sequence[CustomDataIdentifiersDetectionsTypeDef]],  # (1)
+    TotalCount: NotRequired[int],
+```
+
+1. See [:material-code-braces: CustomDataIdentifiersDetectionsTypeDef](./type_defs.md#customdataidentifiersdetectionstypedef) 
+## SensitiveDataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SensitiveDataResultTypeDef
+
+def get_value() -> SensitiveDataResultTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class SensitiveDataResultTypeDef(TypedDict):
+    Category: NotRequired[str],
+    Detections: NotRequired[Sequence[SensitiveDataDetectionsTypeDef]],  # (1)
+    TotalCount: NotRequired[int],
+```
+
+1. See [:material-code-braces: SensitiveDataDetectionsTypeDef](./type_defs.md#sensitivedatadetectionstypedef) 
+## FirewallPolicyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FirewallPolicyDetailsTypeDef
+
+def get_value() -> FirewallPolicyDetailsTypeDef:
+    return {
+        "StatefulRuleGroupReferences": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallPolicyDetailsTypeDef(TypedDict):
+    StatefulRuleGroupReferences: NotRequired[Sequence[FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef]],  # (1)
+    StatelessCustomActions: NotRequired[Sequence[FirewallPolicyStatelessCustomActionsDetailsTypeDef]],  # (2)
+    StatelessDefaultActions: NotRequired[Sequence[str]],
+    StatelessFragmentDefaultActions: NotRequired[Sequence[str]],
+    StatelessRuleGroupReferences: NotRequired[Sequence[FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatefulrulegroupreferencesdetailstypedef) 
+2. See [:material-code-braces: FirewallPolicyStatelessCustomActionsDetailsTypeDef](./type_defs.md#firewallpolicystatelesscustomactionsdetailstypedef) 
+3. See [:material-code-braces: FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatelessrulegroupreferencesdetailstypedef) 
+## RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
+
+def get_value() -> RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef:
+    return {
+        "CustomActions": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef(TypedDict):
+    CustomActions: NotRequired[Sequence[RuleGroupSourceCustomActionsDetailsTypeDef]],  # (1)
+    StatelessRules: NotRequired[Sequence[RuleGroupSourceStatelessRulesDetailsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupSourceCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcecustomactionsdetailstypedef) 
+2. See [:material-code-braces: RuleGroupSourceStatelessRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesdetailstypedef) 
+## AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
+
+def get_value() -> AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef:
+    return {
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef(TypedDict):
+    Rules: NotRequired[Sequence[AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef) 
+## ClassificationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ClassificationResultTypeDef
+
+def get_value() -> ClassificationResultTypeDef:
+    return {
+        "MimeType": ...,
+    }
+```
+
+```python title="Definition"
+class ClassificationResultTypeDef(TypedDict):
+    MimeType: NotRequired[str],
+    SizeClassified: NotRequired[int],
+    AdditionalOccurrences: NotRequired[bool],
+    Status: NotRequired[ClassificationStatusTypeDef],  # (1)
+    SensitiveData: NotRequired[Sequence[SensitiveDataResultTypeDef]],  # (2)
+    CustomDataIdentifiers: NotRequired[CustomDataIdentifiersResultTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ClassificationStatusTypeDef](./type_defs.md#classificationstatustypedef) 
+2. See [:material-code-braces: SensitiveDataResultTypeDef](./type_defs.md#sensitivedataresulttypedef) 
+3. See [:material-code-braces: CustomDataIdentifiersResultTypeDef](./type_defs.md#customdataidentifiersresulttypedef) 
+## AwsNetworkFirewallFirewallPolicyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallPolicyDetailsTypeDef
+
+def get_value() -> AwsNetworkFirewallFirewallPolicyDetailsTypeDef:
+    return {
+        "FirewallPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class AwsNetworkFirewallFirewallPolicyDetailsTypeDef(TypedDict):
+    FirewallPolicy: NotRequired[FirewallPolicyDetailsTypeDef],  # (1)
+    FirewallPolicyArn: NotRequired[str],
+    FirewallPolicyId: NotRequired[str],
+    FirewallPolicyName: NotRequired[str],
     Description: NotRequired[str],
-    Categories: NotRequired[List[str]],
-    IntegrationTypes: NotRequired[List[IntegrationTypeType]],  # (1)
-    MarketplaceUrl: NotRequired[str],
-    ActivationUrl: NotRequired[str],
-    ProductSubscriptionResourcePolicy: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
-## RangeTypeDef
+1. See [:material-code-braces: FirewallPolicyDetailsTypeDef](./type_defs.md#firewallpolicydetailstypedef) 
+## RuleGroupSourceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RangeTypeDef
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceTypeDef
 
-def get_value() -> RangeTypeDef:
+def get_value() -> RuleGroupSourceTypeDef:
     return {
-        "Start": ...,
+        "RulesSourceList": ...,
     }
 ```
 
 ```python title="Definition"
-class RangeTypeDef(TypedDict):
-    Start: NotRequired[int],
-    End: NotRequired[int],
-    StartColumn: NotRequired[int],
+class RuleGroupSourceTypeDef(TypedDict):
+    RulesSourceList: NotRequired[RuleGroupSourceListDetailsTypeDef],  # (1)
+    RulesString: NotRequired[str],
+    StatefulRules: NotRequired[Sequence[RuleGroupSourceStatefulRulesDetailsTypeDef]],  # (2)
+    StatelessRulesAndCustomActions: NotRequired[RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef],  # (3)
 ```
 
-## RecommendationTypeDef
+1. See [:material-code-braces: RuleGroupSourceListDetailsTypeDef](./type_defs.md#rulegroupsourcelistdetailstypedef) 
+2. See [:material-code-braces: RuleGroupSourceStatefulRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesdetailstypedef) 
+3. See [:material-code-braces: RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesandcustomactionsdetailstypedef) 
+## AwsS3BucketDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RecommendationTypeDef
+from mypy_boto3_securityhub.type_defs import AwsS3BucketDetailsTypeDef
 
-def get_value() -> RecommendationTypeDef:
+def get_value() -> AwsS3BucketDetailsTypeDef:
     return {
-        "Text": ...,
+        "OwnerId": ...,
     }
 ```
 
 ```python title="Definition"
-class RecommendationTypeDef(TypedDict):
-    Text: NotRequired[str],
-    Url: NotRequired[str],
+class AwsS3BucketDetailsTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    OwnerName: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    ServerSideEncryptionConfiguration: NotRequired[AwsS3BucketServerSideEncryptionConfigurationTypeDef],  # (1)
+    BucketLifecycleConfiguration: NotRequired[AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef],  # (2)
+    PublicAccessBlockConfiguration: NotRequired[AwsS3AccountPublicAccessBlockDetailsTypeDef],  # (3)
+    AccessControlList: NotRequired[str],
+    BucketLoggingConfiguration: NotRequired[AwsS3BucketLoggingConfigurationTypeDef],  # (4)
+    BucketWebsiteConfiguration: NotRequired[AwsS3BucketWebsiteConfigurationTypeDef],  # (5)
+    BucketNotificationConfiguration: NotRequired[AwsS3BucketNotificationConfigurationTypeDef],  # (6)
+    BucketVersioningConfiguration: NotRequired[AwsS3BucketBucketVersioningConfigurationTypeDef],  # (7)
 ```
 
-## RecordTypeDef
+1. See [:material-code-braces: AwsS3BucketServerSideEncryptionConfigurationTypeDef](./type_defs.md#awss3bucketserversideencryptionconfigurationtypedef) 
+2. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationdetailstypedef) 
+3. See [:material-code-braces: AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef) 
+4. See [:material-code-braces: AwsS3BucketLoggingConfigurationTypeDef](./type_defs.md#awss3bucketloggingconfigurationtypedef) 
+5. See [:material-code-braces: AwsS3BucketWebsiteConfigurationTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationtypedef) 
+6. See [:material-code-braces: AwsS3BucketNotificationConfigurationTypeDef](./type_defs.md#awss3bucketnotificationconfigurationtypedef) 
+7. See [:material-code-braces: AwsS3BucketBucketVersioningConfigurationTypeDef](./type_defs.md#awss3bucketbucketversioningconfigurationtypedef) 
+## DataClassificationDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RecordTypeDef
+from mypy_boto3_securityhub.type_defs import DataClassificationDetailsTypeDef
 
-def get_value() -> RecordTypeDef:
+def get_value() -> DataClassificationDetailsTypeDef:
     return {
-        "JsonPath": ...,
+        "DetailedResultsLocation": ...,
     }
 ```
 
 ```python title="Definition"
-class RecordTypeDef(TypedDict):
-    JsonPath: NotRequired[str],
-    RecordIndex: NotRequired[int],
+class DataClassificationDetailsTypeDef(TypedDict):
+    DetailedResultsLocation: NotRequired[str],
+    Result: NotRequired[ClassificationResultTypeDef],  # (1)
 ```
 
-## RelatedFindingTypeDef
+1. See [:material-code-braces: ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef) 
+## RuleGroupDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RelatedFindingTypeDef
+from mypy_boto3_securityhub.type_defs import RuleGroupDetailsTypeDef
 
-def get_value() -> RelatedFindingTypeDef:
+def get_value() -> RuleGroupDetailsTypeDef:
     return {
-        "ProductArn": ...,
-        "Id": ...,
+        "RuleVariables": ...,
     }
 ```
 
 ```python title="Definition"
-class RelatedFindingTypeDef(TypedDict):
-    ProductArn: str,
-    Id: str,
+class RuleGroupDetailsTypeDef(TypedDict):
+    RuleVariables: NotRequired[RuleGroupVariablesTypeDef],  # (1)
+    RulesSource: NotRequired[RuleGroupSourceTypeDef],  # (2)
 ```
 
-## RemediationTypeDef
+1. See [:material-code-braces: RuleGroupVariablesTypeDef](./type_defs.md#rulegroupvariablestypedef) 
+2. See [:material-code-braces: RuleGroupSourceTypeDef](./type_defs.md#rulegroupsourcetypedef) 
+## AwsNetworkFirewallRuleGroupDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RemediationTypeDef
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallRuleGroupDetailsTypeDef
 
-def get_value() -> RemediationTypeDef:
+def get_value() -> AwsNetworkFirewallRuleGroupDetailsTypeDef:
     return {
-        "Recommendation": ...,
+        "Capacity": ...,
     }
 ```
 
 ```python title="Definition"
-class RemediationTypeDef(TypedDict):
-    Recommendation: NotRequired[RecommendationTypeDef],  # (1)
+class AwsNetworkFirewallRuleGroupDetailsTypeDef(TypedDict):
+    Capacity: NotRequired[int],
+    Description: NotRequired[str],
+    RuleGroup: NotRequired[RuleGroupDetailsTypeDef],  # (1)
+    RuleGroupArn: NotRequired[str],
+    RuleGroupId: NotRequired[str],
+    RuleGroupName: NotRequired[str],
+    Type: NotRequired[str],
 ```
 
-1. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
+1. See [:material-code-braces: RuleGroupDetailsTypeDef](./type_defs.md#rulegroupdetailstypedef) 
 ## ResourceDetailsTypeDef
 
 ```python title="Usage Example"
@@ -9982,1042 +10899,125 @@ class ResourceTypeDef(TypedDict):
 1. See [:material-code-brackets: PartitionType](./literals.md#partitiontype) 
 2. See [:material-code-braces: DataClassificationDetailsTypeDef](./type_defs.md#dataclassificationdetailstypedef) 
 3. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
-## ResponseMetadataTypeDef
+## AwsSecurityFindingTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_securityhub.type_defs import AwsSecurityFindingTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> AwsSecurityFindingTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "SchemaVersion": ...,
+        "Id": ...,
+        "ProductArn": ...,
+        "GeneratorId": ...,
+        "AwsAccountId": ...,
+        "CreatedAt": ...,
+        "UpdatedAt": ...,
+        "Title": ...,
+        "Description": ...,
+        "Resources": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ResultTypeDef
-
-def get_value() -> ResultTypeDef:
-    return {
-        "AccountId": ...,
-    }
-```
-
-```python title="Definition"
-class ResultTypeDef(TypedDict):
-    AccountId: NotRequired[str],
-    ProcessingResult: NotRequired[str],
-```
-
-## RuleGroupDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupDetailsTypeDef
-
-def get_value() -> RuleGroupDetailsTypeDef:
-    return {
-        "RuleVariables": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupDetailsTypeDef(TypedDict):
-    RuleVariables: NotRequired[RuleGroupVariablesTypeDef],  # (1)
-    RulesSource: NotRequired[RuleGroupSourceTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupVariablesTypeDef](./type_defs.md#rulegroupvariablestypedef) 
-2. See [:material-code-braces: RuleGroupSourceTypeDef](./type_defs.md#rulegroupsourcetypedef) 
-## RuleGroupSourceCustomActionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceCustomActionsDetailsTypeDef
-
-def get_value() -> RuleGroupSourceCustomActionsDetailsTypeDef:
-    return {
-        "ActionDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceCustomActionsDetailsTypeDef(TypedDict):
-    ActionDefinition: NotRequired[StatelessCustomActionDefinitionTypeDef],  # (1)
-    ActionName: NotRequired[str],
-```
-
-1. See [:material-code-braces: StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef) 
-## RuleGroupSourceListDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceListDetailsTypeDef
-
-def get_value() -> RuleGroupSourceListDetailsTypeDef:
-    return {
-        "GeneratedRulesType": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceListDetailsTypeDef(TypedDict):
-    GeneratedRulesType: NotRequired[str],
-    TargetTypes: NotRequired[Sequence[str]],
-    Targets: NotRequired[Sequence[str]],
-```
-
-## RuleGroupSourceStatefulRulesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesDetailsTypeDef
-
-def get_value() -> RuleGroupSourceStatefulRulesDetailsTypeDef:
-    return {
-        "Action": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatefulRulesDetailsTypeDef(TypedDict):
-    Action: NotRequired[str],
-    Header: NotRequired[RuleGroupSourceStatefulRulesHeaderDetailsTypeDef],  # (1)
-    RuleOptions: NotRequired[Sequence[RuleGroupSourceStatefulRulesOptionsDetailsTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupSourceStatefulRulesHeaderDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesheaderdetailstypedef) 
-2. See [:material-code-braces: RuleGroupSourceStatefulRulesOptionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesoptionsdetailstypedef) 
-## RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
-
-def get_value() -> RuleGroupSourceStatefulRulesHeaderDetailsTypeDef:
-    return {
-        "Destination": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatefulRulesHeaderDetailsTypeDef(TypedDict):
-    Destination: NotRequired[str],
-    DestinationPort: NotRequired[str],
-    Direction: NotRequired[str],
-    Protocol: NotRequired[str],
-    Source: NotRequired[str],
-    SourcePort: NotRequired[str],
-```
-
-## RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
-
-def get_value() -> RuleGroupSourceStatefulRulesOptionsDetailsTypeDef:
-    return {
-        "Keyword": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatefulRulesOptionsDetailsTypeDef(TypedDict):
-    Keyword: NotRequired[str],
-    Settings: NotRequired[Sequence[str]],
-```
-
-## RuleGroupSourceStatelessRuleDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleDefinitionTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleDefinitionTypeDef:
-    return {
-        "Actions": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleDefinitionTypeDef(TypedDict):
-    Actions: NotRequired[Sequence[str]],
-    MatchAttributes: NotRequired[RuleGroupSourceStatelessRuleMatchAttributesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestypedef) 
-## RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef:
-    return {
-        "FromPort": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef(TypedDict):
-    FromPort: NotRequired[int],
-    ToPort: NotRequired[int],
-```
-
-## RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef:
-    return {
-        "AddressDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef(TypedDict):
-    AddressDefinition: NotRequired[str],
-```
-
-## RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef:
-    return {
-        "FromPort": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef(TypedDict):
-    FromPort: NotRequired[int],
-    ToPort: NotRequired[int],
-```
-
-## RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef:
-    return {
-        "AddressDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef(TypedDict):
-    AddressDefinition: NotRequired[str],
-```
-
-## RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef:
-    return {
-        "Flags": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef(TypedDict):
-    Flags: NotRequired[Sequence[str]],
-    Masks: NotRequired[Sequence[str]],
-```
-
-## RuleGroupSourceStatelessRuleMatchAttributesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRuleMatchAttributesTypeDef:
-    return {
-        "DestinationPorts": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRuleMatchAttributesTypeDef(TypedDict):
-    DestinationPorts: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef]],  # (1)
-    Destinations: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef]],  # (2)
-    Protocols: NotRequired[Sequence[int]],
-    SourcePorts: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef]],  # (3)
-    Sources: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef]],  # (4)
-    TcpFlags: NotRequired[Sequence[RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationportstypedef) 
-2. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationstypedef) 
-3. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourceportstypedef) 
-4. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourcestypedef) 
-5. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestcpflagstypedef) 
-## RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef:
-    return {
-        "CustomActions": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef(TypedDict):
-    CustomActions: NotRequired[Sequence[RuleGroupSourceCustomActionsDetailsTypeDef]],  # (1)
-    StatelessRules: NotRequired[Sequence[RuleGroupSourceStatelessRulesDetailsTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupSourceCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcecustomactionsdetailstypedef) 
-2. See [:material-code-braces: RuleGroupSourceStatelessRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesdetailstypedef) 
-## RuleGroupSourceStatelessRulesDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesDetailsTypeDef
-
-def get_value() -> RuleGroupSourceStatelessRulesDetailsTypeDef:
-    return {
-        "Priority": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceStatelessRulesDetailsTypeDef(TypedDict):
-    Priority: NotRequired[int],
-    RuleDefinition: NotRequired[RuleGroupSourceStatelessRuleDefinitionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: RuleGroupSourceStatelessRuleDefinitionTypeDef](./type_defs.md#rulegroupsourcestatelessruledefinitiontypedef) 
-## RuleGroupSourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupSourceTypeDef
-
-def get_value() -> RuleGroupSourceTypeDef:
-    return {
-        "RulesSourceList": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupSourceTypeDef(TypedDict):
-    RulesSourceList: NotRequired[RuleGroupSourceListDetailsTypeDef],  # (1)
-    RulesString: NotRequired[str],
-    StatefulRules: NotRequired[Sequence[RuleGroupSourceStatefulRulesDetailsTypeDef]],  # (2)
-    StatelessRulesAndCustomActions: NotRequired[RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: RuleGroupSourceListDetailsTypeDef](./type_defs.md#rulegroupsourcelistdetailstypedef) 
-2. See [:material-code-braces: RuleGroupSourceStatefulRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesdetailstypedef) 
-3. See [:material-code-braces: RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesandcustomactionsdetailstypedef) 
-## RuleGroupVariablesIpSetsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupVariablesIpSetsDetailsTypeDef
-
-def get_value() -> RuleGroupVariablesIpSetsDetailsTypeDef:
-    return {
-        "Definition": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupVariablesIpSetsDetailsTypeDef(TypedDict):
-    Definition: NotRequired[Sequence[str]],
-```
-
-## RuleGroupVariablesPortSetsDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupVariablesPortSetsDetailsTypeDef
-
-def get_value() -> RuleGroupVariablesPortSetsDetailsTypeDef:
-    return {
-        "Definition": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupVariablesPortSetsDetailsTypeDef(TypedDict):
-    Definition: NotRequired[Sequence[str]],
-```
-
-## RuleGroupVariablesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import RuleGroupVariablesTypeDef
-
-def get_value() -> RuleGroupVariablesTypeDef:
-    return {
-        "IpSets": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupVariablesTypeDef(TypedDict):
-    IpSets: NotRequired[RuleGroupVariablesIpSetsDetailsTypeDef],  # (1)
-    PortSets: NotRequired[RuleGroupVariablesPortSetsDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupVariablesIpSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesipsetsdetailstypedef) 
-2. See [:material-code-braces: RuleGroupVariablesPortSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesportsetsdetailstypedef) 
-## SensitiveDataDetectionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SensitiveDataDetectionsTypeDef
-
-def get_value() -> SensitiveDataDetectionsTypeDef:
-    return {
-        "Count": ...,
-    }
-```
-
-```python title="Definition"
-class SensitiveDataDetectionsTypeDef(TypedDict):
-    Count: NotRequired[int],
-    Type: NotRequired[str],
-    Occurrences: NotRequired[OccurrencesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
-## SensitiveDataResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SensitiveDataResultTypeDef
-
-def get_value() -> SensitiveDataResultTypeDef:
-    return {
-        "Category": ...,
-    }
-```
-
-```python title="Definition"
-class SensitiveDataResultTypeDef(TypedDict):
-    Category: NotRequired[str],
-    Detections: NotRequired[Sequence[SensitiveDataDetectionsTypeDef]],  # (1)
-    TotalCount: NotRequired[int],
-```
-
-1. See [:material-code-braces: SensitiveDataDetectionsTypeDef](./type_defs.md#sensitivedatadetectionstypedef) 
-## SeverityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SeverityTypeDef
-
-def get_value() -> SeverityTypeDef:
-    return {
-        "Product": ...,
-    }
-```
-
-```python title="Definition"
-class SeverityTypeDef(TypedDict):
-    Product: NotRequired[float],
-    Label: NotRequired[SeverityLabelType],  # (1)
-    Normalized: NotRequired[int],
-    Original: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
-## SeverityUpdateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SeverityUpdateTypeDef
-
-def get_value() -> SeverityUpdateTypeDef:
-    return {
-        "Normalized": ...,
-    }
-```
-
-```python title="Definition"
-class SeverityUpdateTypeDef(TypedDict):
-    Normalized: NotRequired[int],
-    Product: NotRequired[float],
-    Label: NotRequired[SeverityLabelType],  # (1)
-```
-
-1. See [:material-code-brackets: SeverityLabelType](./literals.md#severitylabeltype) 
-## SoftwarePackageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SoftwarePackageTypeDef
-
-def get_value() -> SoftwarePackageTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class SoftwarePackageTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Version: NotRequired[str],
-    Epoch: NotRequired[str],
-    Release: NotRequired[str],
-    Architecture: NotRequired[str],
-    PackageManager: NotRequired[str],
-    FilePath: NotRequired[str],
-```
-
-## SortCriterionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import SortCriterionTypeDef
-
-def get_value() -> SortCriterionTypeDef:
-    return {
-        "Field": ...,
-    }
-```
-
-```python title="Definition"
-class SortCriterionTypeDef(TypedDict):
-    Field: NotRequired[str],
-    SortOrder: NotRequired[SortOrderType],  # (1)
-```
-
-1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## StandardTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardTypeDef
-
-def get_value() -> StandardTypeDef:
-    return {
-        "StandardsArn": ...,
-    }
-```
-
-```python title="Definition"
-class StandardTypeDef(TypedDict):
-    StandardsArn: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    EnabledByDefault: NotRequired[bool],
-```
-
-## StandardsControlTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardsControlTypeDef
-
-def get_value() -> StandardsControlTypeDef:
-    return {
-        "StandardsControlArn": ...,
-    }
-```
-
-```python title="Definition"
-class StandardsControlTypeDef(TypedDict):
-    StandardsControlArn: NotRequired[str],
-    ControlStatus: NotRequired[ControlStatusType],  # (1)
-    DisabledReason: NotRequired[str],
-    ControlStatusUpdatedAt: NotRequired[datetime],
-    ControlId: NotRequired[str],
-    Title: NotRequired[str],
-    Description: NotRequired[str],
-    RemediationUrl: NotRequired[str],
-    SeverityRating: NotRequired[SeverityRatingType],  # (2)
-    RelatedRequirements: NotRequired[List[str]],
-```
-
-1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
-2. See [:material-code-brackets: SeverityRatingType](./literals.md#severityratingtype) 
-## StandardsStatusReasonTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardsStatusReasonTypeDef
-
-def get_value() -> StandardsStatusReasonTypeDef:
-    return {
-        "StatusReasonCode": ...,
-    }
-```
-
-```python title="Definition"
-class StandardsStatusReasonTypeDef(TypedDict):
-    StatusReasonCode: StatusReasonCodeType,  # (1)
-```
-
-1. See [:material-code-brackets: StatusReasonCodeType](./literals.md#statusreasoncodetype) 
-## StandardsSubscriptionRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardsSubscriptionRequestTypeDef
-
-def get_value() -> StandardsSubscriptionRequestTypeDef:
-    return {
-        "StandardsArn": ...,
-    }
-```
-
-```python title="Definition"
-class StandardsSubscriptionRequestTypeDef(TypedDict):
-    StandardsArn: str,
-    StandardsInput: NotRequired[Mapping[str, str]],
-```
-
-## StandardsSubscriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardsSubscriptionTypeDef
-
-def get_value() -> StandardsSubscriptionTypeDef:
-    return {
-        "StandardsSubscriptionArn": ...,
-        "StandardsArn": ...,
-        "StandardsInput": ...,
-        "StandardsStatus": ...,
-    }
-```
-
-```python title="Definition"
-class StandardsSubscriptionTypeDef(TypedDict):
-    StandardsSubscriptionArn: str,
-    StandardsArn: str,
-    StandardsInput: Dict[str, str],
-    StandardsStatus: StandardsStatusType,  # (1)
-    StandardsStatusReason: NotRequired[StandardsStatusReasonTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: StandardsStatusType](./literals.md#standardsstatustype) 
-2. See [:material-code-braces: StandardsStatusReasonTypeDef](./type_defs.md#standardsstatusreasontypedef) 
-## StatelessCustomActionDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StatelessCustomActionDefinitionTypeDef
-
-def get_value() -> StatelessCustomActionDefinitionTypeDef:
-    return {
-        "PublishMetricAction": ...,
-    }
-```
-
-```python title="Definition"
-class StatelessCustomActionDefinitionTypeDef(TypedDict):
-    PublishMetricAction: NotRequired[StatelessCustomPublishMetricActionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: StatelessCustomPublishMetricActionTypeDef](./type_defs.md#statelesscustompublishmetricactiontypedef) 
-## StatelessCustomPublishMetricActionDimensionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionDimensionTypeDef
-
-def get_value() -> StatelessCustomPublishMetricActionDimensionTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class StatelessCustomPublishMetricActionDimensionTypeDef(TypedDict):
-    Value: NotRequired[str],
-```
-
-## StatelessCustomPublishMetricActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionTypeDef
-
-def get_value() -> StatelessCustomPublishMetricActionTypeDef:
-    return {
-        "Dimensions": ...,
-    }
-```
-
-```python title="Definition"
-class StatelessCustomPublishMetricActionTypeDef(TypedDict):
-    Dimensions: NotRequired[Sequence[StatelessCustomPublishMetricActionDimensionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: StatelessCustomPublishMetricActionDimensionTypeDef](./type_defs.md#statelesscustompublishmetricactiondimensiontypedef) 
-## StatusReasonTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StatusReasonTypeDef
-
-def get_value() -> StatusReasonTypeDef:
-    return {
-        "ReasonCode": ...,
-    }
-```
-
-```python title="Definition"
-class StatusReasonTypeDef(TypedDict):
-    ReasonCode: str,
-    Description: NotRequired[str],
-```
-
-## StringFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StringFilterTypeDef
-
-def get_value() -> StringFilterTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class StringFilterTypeDef(TypedDict):
-    Value: NotRequired[str],
-    Comparison: NotRequired[StringFilterComparisonType],  # (1)
-```
-
-1. See [:material-code-brackets: StringFilterComparisonType](./literals.md#stringfiltercomparisontype) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    Tags: Mapping[str, str],
-```
-
-## ThreatIntelIndicatorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ThreatIntelIndicatorTypeDef
-
-def get_value() -> ThreatIntelIndicatorTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class ThreatIntelIndicatorTypeDef(TypedDict):
-    Type: NotRequired[ThreatIntelIndicatorTypeType],  # (1)
-    Value: NotRequired[str],
-    Category: NotRequired[ThreatIntelIndicatorCategoryType],  # (2)
+class AwsSecurityFindingTypeDef(TypedDict):
+    SchemaVersion: str,
+    Id: str,
+    ProductArn: str,
+    GeneratorId: str,
+    AwsAccountId: str,
+    CreatedAt: str,
+    UpdatedAt: str,
+    Title: str,
+    Description: str,
+    Resources: Sequence[ResourceTypeDef],  # (8)
+    ProductName: NotRequired[str],
+    CompanyName: NotRequired[str],
+    Region: NotRequired[str],
+    Types: NotRequired[Sequence[str]],
+    FirstObservedAt: NotRequired[str],
     LastObservedAt: NotRequired[str],
-    Source: NotRequired[str],
+    Severity: NotRequired[SeverityTypeDef],  # (1)
+    Confidence: NotRequired[int],
+    Criticality: NotRequired[int],
+    Remediation: NotRequired[RemediationTypeDef],  # (2)
     SourceUrl: NotRequired[str],
+    ProductFields: NotRequired[Mapping[str, str]],
+    UserDefinedFields: NotRequired[Mapping[str, str]],
+    Malware: NotRequired[Sequence[MalwareTypeDef]],  # (3)
+    Network: NotRequired[NetworkTypeDef],  # (4)
+    NetworkPath: NotRequired[Sequence[NetworkPathComponentTypeDef]],  # (5)
+    Process: NotRequired[ProcessDetailsTypeDef],  # (6)
+    ThreatIntelIndicators: NotRequired[Sequence[ThreatIntelIndicatorTypeDef]],  # (7)
+    Compliance: NotRequired[ComplianceTypeDef],  # (9)
+    VerificationState: NotRequired[VerificationStateType],  # (10)
+    WorkflowState: NotRequired[WorkflowStateType],  # (11)
+    Workflow: NotRequired[WorkflowTypeDef],  # (12)
+    RecordState: NotRequired[RecordStateType],  # (13)
+    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (14)
+    Note: NotRequired[NoteTypeDef],  # (15)
+    Vulnerabilities: NotRequired[Sequence[VulnerabilityTypeDef]],  # (16)
+    PatchSummary: NotRequired[PatchSummaryTypeDef],  # (17)
+    Action: NotRequired[ActionTypeDef],  # (18)
+    FindingProviderFields: NotRequired[FindingProviderFieldsTypeDef],  # (19)
+    Sample: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: ThreatIntelIndicatorTypeType](./literals.md#threatintelindicatortypetype) 
-2. See [:material-code-brackets: ThreatIntelIndicatorCategoryType](./literals.md#threatintelindicatorcategorytype) 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: SeverityTypeDef](./type_defs.md#severitytypedef) 
+2. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
+3. See [:material-code-braces: MalwareTypeDef](./type_defs.md#malwaretypedef) 
+4. See [:material-code-braces: NetworkTypeDef](./type_defs.md#networktypedef) 
+5. See [:material-code-braces: NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef) 
+6. See [:material-code-braces: ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef) 
+7. See [:material-code-braces: ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef) 
+8. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+9. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
+10. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+11. See [:material-code-brackets: WorkflowStateType](./literals.md#workflowstatetype) 
+12. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
+13. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
+14. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+15. See [:material-code-braces: NoteTypeDef](./type_defs.md#notetypedef) 
+16. See [:material-code-braces: VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef) 
+17. See [:material-code-braces: PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef) 
+18. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+19. See [:material-code-braces: FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef) 
+## BatchImportFindingsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_securityhub.type_defs import BatchImportFindingsRequestRequestTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> BatchImportFindingsRequestRequestTypeDef:
     return {
-        "ResourceArn": ...,
-        "TagKeys": ...,
+        "Findings": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-    TagKeys: Sequence[str],
+class BatchImportFindingsRequestRequestTypeDef(TypedDict):
+    Findings: Sequence[AwsSecurityFindingTypeDef],  # (1)
 ```
 
-## UpdateActionTargetRequestRequestTypeDef
+1. See [:material-code-braces: AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef) 
+## GetFindingsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateActionTargetRequestRequestTypeDef
+from mypy_boto3_securityhub.type_defs import GetFindingsResponseTypeDef
 
-def get_value() -> UpdateActionTargetRequestRequestTypeDef:
+def get_value() -> GetFindingsResponseTypeDef:
     return {
-        "ActionTargetArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateActionTargetRequestRequestTypeDef(TypedDict):
-    ActionTargetArn: str,
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-## UpdateFindingAggregatorRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorRequestRequestTypeDef
-
-def get_value() -> UpdateFindingAggregatorRequestRequestTypeDef:
-    return {
-        "FindingAggregatorArn": ...,
-        "RegionLinkingMode": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFindingAggregatorRequestRequestTypeDef(TypedDict):
-    FindingAggregatorArn: str,
-    RegionLinkingMode: str,
-    Regions: NotRequired[Sequence[str]],
-```
-
-## UpdateFindingAggregatorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorResponseTypeDef
-
-def get_value() -> UpdateFindingAggregatorResponseTypeDef:
-    return {
-        "FindingAggregatorArn": ...,
-        "FindingAggregationRegion": ...,
-        "RegionLinkingMode": ...,
-        "Regions": ...,
+        "Findings": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFindingAggregatorResponseTypeDef(TypedDict):
-    FindingAggregatorArn: str,
-    FindingAggregationRegion: str,
-    RegionLinkingMode: str,
-    Regions: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GetFindingsResponseTypeDef(TypedDict):
+    Findings: List[AwsSecurityFindingTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateFindingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateFindingsRequestRequestTypeDef
-
-def get_value() -> UpdateFindingsRequestRequestTypeDef:
-    return {
-        "Filters": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateFindingsRequestRequestTypeDef(TypedDict):
-    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
-    Note: NotRequired[NoteUpdateTypeDef],  # (2)
-    RecordState: NotRequired[RecordStateType],  # (3)
-```
-
-1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
-2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
-3. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
-## UpdateInsightRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateInsightRequestRequestTypeDef
-
-def get_value() -> UpdateInsightRequestRequestTypeDef:
-    return {
-        "InsightArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateInsightRequestRequestTypeDef(TypedDict):
-    InsightArn: str,
-    Name: NotRequired[str],
-    Filters: NotRequired[AwsSecurityFindingFiltersTypeDef],  # (1)
-    GroupByAttribute: NotRequired[str],
-```
-
-1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
-## UpdateOrganizationConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
-    return {
-        "AutoEnable": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
-    AutoEnable: bool,
-    AutoEnableStandards: NotRequired[AutoEnableStandardsType],  # (1)
-```
-
-1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
-## UpdateSecurityHubConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateSecurityHubConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateSecurityHubConfigurationRequestRequestTypeDef:
-    return {
-        "AutoEnableControls": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSecurityHubConfigurationRequestRequestTypeDef(TypedDict):
-    AutoEnableControls: NotRequired[bool],
-```
-
-## UpdateStandardsControlRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import UpdateStandardsControlRequestRequestTypeDef
-
-def get_value() -> UpdateStandardsControlRequestRequestTypeDef:
-    return {
-        "StandardsControlArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateStandardsControlRequestRequestTypeDef(TypedDict):
-    StandardsControlArn: str,
-    ControlStatus: NotRequired[ControlStatusType],  # (1)
-    DisabledReason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
-## VulnerabilityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import VulnerabilityTypeDef
-
-def get_value() -> VulnerabilityTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class VulnerabilityTypeDef(TypedDict):
-    Id: str,
-    VulnerablePackages: NotRequired[Sequence[SoftwarePackageTypeDef]],  # (1)
-    Cvss: NotRequired[Sequence[CvssTypeDef]],  # (2)
-    RelatedVulnerabilities: NotRequired[Sequence[str]],
-    Vendor: NotRequired[VulnerabilityVendorTypeDef],  # (3)
-    ReferenceUrls: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef) 
-2. See [:material-code-braces: CvssTypeDef](./type_defs.md#cvsstypedef) 
-3. See [:material-code-braces: VulnerabilityVendorTypeDef](./type_defs.md#vulnerabilityvendortypedef) 
-## VulnerabilityVendorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import VulnerabilityVendorTypeDef
-
-def get_value() -> VulnerabilityVendorTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class VulnerabilityVendorTypeDef(TypedDict):
-    Name: str,
-    Url: NotRequired[str],
-    VendorSeverity: NotRequired[str],
-    VendorCreatedAt: NotRequired[str],
-    VendorUpdatedAt: NotRequired[str],
-```
-
-## WafActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import WafActionTypeDef
-
-def get_value() -> WafActionTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class WafActionTypeDef(TypedDict):
-    Type: NotRequired[str],
-```
-
-## WafExcludedRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import WafExcludedRuleTypeDef
-
-def get_value() -> WafExcludedRuleTypeDef:
-    return {
-        "RuleId": ...,
-    }
-```
-
-```python title="Definition"
-class WafExcludedRuleTypeDef(TypedDict):
-    RuleId: NotRequired[str],
-```
-
-## WafOverrideActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import WafOverrideActionTypeDef
-
-def get_value() -> WafOverrideActionTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class WafOverrideActionTypeDef(TypedDict):
-    Type: NotRequired[str],
-```
-
-## WorkflowTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import WorkflowTypeDef
-
-def get_value() -> WorkflowTypeDef:
-    return {
-        "Status": ...,
-    }
-```
-
-```python title="Definition"
-class WorkflowTypeDef(TypedDict):
-    Status: NotRequired[WorkflowStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: WorkflowStatusType](./literals.md#workflowstatustype) 
-## WorkflowUpdateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import WorkflowUpdateTypeDef
-
-def get_value() -> WorkflowUpdateTypeDef:
-    return {
-        "Status": ...,
-    }
-```
-
-```python title="Definition"
-class WorkflowUpdateTypeDef(TypedDict):
-    Status: NotRequired[WorkflowStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: WorkflowStatusType](./literals.md#workflowstatustype) 
+1. See [:material-code-braces: AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

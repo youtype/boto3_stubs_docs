@@ -27,44 +27,6 @@ class AttributeTypeDef(TypedDict):
     AlternateValueEncoding: NotRequired[str],
 ```
 
-## BatchDeleteAttributesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestRequestTypeDef
-
-def get_value() -> BatchDeleteAttributesRequestRequestTypeDef:
-    return {
-        "DomainName": ...,
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDeleteAttributesRequestRequestTypeDef(TypedDict):
-    DomainName: str,
-    Items: Sequence[DeletableItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DeletableItemTypeDef](./type_defs.md#deletableitemtypedef) 
-## BatchPutAttributesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import BatchPutAttributesRequestRequestTypeDef
-
-def get_value() -> BatchPutAttributesRequestRequestTypeDef:
-    return {
-        "DomainName": ...,
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class BatchPutAttributesRequestRequestTypeDef(TypedDict):
-    DomainName: str,
-    Items: Sequence[ReplaceableItemTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef) 
 ## CreateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -81,46 +43,24 @@ class CreateDomainRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
-## DeletableItemTypeDef
+## UpdateConditionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import DeletableItemTypeDef
+from mypy_boto3_sdb.type_defs import UpdateConditionTypeDef
 
-def get_value() -> DeletableItemTypeDef:
+def get_value() -> UpdateConditionTypeDef:
     return {
         "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DeletableItemTypeDef(TypedDict):
-    Name: str,
-    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+class UpdateConditionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+    Exists: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
-## DeleteAttributesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import DeleteAttributesRequestRequestTypeDef
-
-def get_value() -> DeleteAttributesRequestRequestTypeDef:
-    return {
-        "DomainName": ...,
-        "ItemName": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAttributesRequestRequestTypeDef(TypedDict):
-    DomainName: str,
-    ItemName: str,
-    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
-    Expected: NotRequired[UpdateConditionTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
-2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -153,6 +93,182 @@ class DomainMetadataRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## GetAttributesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import GetAttributesRequestRequestTypeDef
+
+def get_value() -> GetAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ItemName": ...,
+    }
+```
+
+```python title="Definition"
+class GetAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ItemName: str,
+    AttributeNames: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListDomainsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import ListDomainsRequestRequestTypeDef
+
+def get_value() -> ListDomainsRequestRequestTypeDef:
+    return {
+        "MaxNumberOfDomains": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainsRequestRequestTypeDef(TypedDict):
+    MaxNumberOfDomains: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ReplaceableAttributeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import ReplaceableAttributeTypeDef
+
+def get_value() -> ReplaceableAttributeTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ReplaceableAttributeTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Replace: NotRequired[bool],
+```
+
+## SelectRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import SelectRequestRequestTypeDef
+
+def get_value() -> SelectRequestRequestTypeDef:
+    return {
+        "SelectExpression": ...,
+    }
+```
+
+```python title="Definition"
+class SelectRequestRequestTypeDef(TypedDict):
+    SelectExpression: str,
+    NextToken: NotRequired[str],
+    ConsistentRead: NotRequired[bool],
+```
+
+## DeletableItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import DeletableItemTypeDef
+
+def get_value() -> DeletableItemTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DeletableItemTypeDef(TypedDict):
+    Name: str,
+    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+## ItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import ItemTypeDef
+
+def get_value() -> ItemTypeDef:
+    return {
+        "Name": ...,
+        "Attributes": ...,
+    }
+```
+
+```python title="Definition"
+class ItemTypeDef(TypedDict):
+    Name: str,
+    Attributes: List[AttributeTypeDef],  # (1)
+    AlternateNameEncoding: NotRequired[str],
+```
+
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+## DeleteAttributesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import DeleteAttributesRequestRequestTypeDef
+
+def get_value() -> DeleteAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ItemName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ItemName: str,
+    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+    Expected: NotRequired[UpdateConditionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 ## DomainMetadataResultTypeDef
 
 ```python title="Usage Example"
@@ -184,26 +300,6 @@ class DomainMetadataResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetAttributesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import GetAttributesRequestRequestTypeDef
-
-def get_value() -> GetAttributesRequestRequestTypeDef:
-    return {
-        "DomainName": ...,
-        "ItemName": ...,
-    }
-```
-
-```python title="Definition"
-class GetAttributesRequestRequestTypeDef(TypedDict):
-    DomainName: str,
-    ItemName: str,
-    AttributeNames: NotRequired[Sequence[str]],
-    ConsistentRead: NotRequired[bool],
-```
-
 ## GetAttributesResultTypeDef
 
 ```python title="Usage Example"
@@ -224,60 +320,6 @@ class GetAttributesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import ItemTypeDef
-
-def get_value() -> ItemTypeDef:
-    return {
-        "Name": ...,
-        "Attributes": ...,
-    }
-```
-
-```python title="Definition"
-class ItemTypeDef(TypedDict):
-    Name: str,
-    Attributes: List[AttributeTypeDef],  # (1)
-    AlternateNameEncoding: NotRequired[str],
-```
-
-1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
-## ListDomainsRequestListDomainsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import ListDomainsRequestListDomainsPaginateTypeDef
-
-def get_value() -> ListDomainsRequestListDomainsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDomainsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import ListDomainsRequestRequestTypeDef
-
-def get_value() -> ListDomainsRequestRequestTypeDef:
-    return {
-        "MaxNumberOfDomains": ...,
-    }
-```
-
-```python title="Definition"
-class ListDomainsRequestRequestTypeDef(TypedDict):
-    MaxNumberOfDomains: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
 ## ListDomainsResultTypeDef
 
 ```python title="Usage Example"
@@ -299,24 +341,42 @@ class ListDomainsResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
+## ListDomainsRequestListDomainsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_sdb.type_defs import ListDomainsRequestListDomainsPaginateTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> ListDomainsRequestListDomainsPaginateTypeDef:
     return {
-        "MaxItems": ...,
+        "PaginationConfig": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SelectRequestSelectPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import SelectRequestSelectPaginateTypeDef
+
+def get_value() -> SelectRequestSelectPaginateTypeDef:
+    return {
+        "SelectExpression": ...,
+    }
+```
+
+```python title="Definition"
+class SelectRequestSelectPaginateTypeDef(TypedDict):
+    SelectExpression: str,
+    ConsistentRead: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## PutAttributesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -340,25 +400,6 @@ class PutAttributesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef) 
 2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
-## ReplaceableAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import ReplaceableAttributeTypeDef
-
-def get_value() -> ReplaceableAttributeTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class ReplaceableAttributeTypeDef(TypedDict):
-    Name: str,
-    Value: str,
-    Replace: NotRequired[bool],
-```
-
 ## ReplaceableItemTypeDef
 
 ```python title="Usage Example"
@@ -378,67 +419,25 @@ class ReplaceableItemTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef) 
-## ResponseMetadataTypeDef
+## BatchDeleteAttributesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> BatchDeleteAttributesRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "DomainName": ...,
+        "Items": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class BatchDeleteAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Items: Sequence[DeletableItemTypeDef],  # (1)
 ```
 
-## SelectRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import SelectRequestRequestTypeDef
-
-def get_value() -> SelectRequestRequestTypeDef:
-    return {
-        "SelectExpression": ...,
-    }
-```
-
-```python title="Definition"
-class SelectRequestRequestTypeDef(TypedDict):
-    SelectExpression: str,
-    NextToken: NotRequired[str],
-    ConsistentRead: NotRequired[bool],
-```
-
-## SelectRequestSelectPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import SelectRequestSelectPaginateTypeDef
-
-def get_value() -> SelectRequestSelectPaginateTypeDef:
-    return {
-        "SelectExpression": ...,
-    }
-```
-
-```python title="Definition"
-class SelectRequestSelectPaginateTypeDef(TypedDict):
-    SelectExpression: str,
-    ConsistentRead: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-braces: DeletableItemTypeDef](./type_defs.md#deletableitemtypedef) 
 ## SelectResultTypeDef
 
 ```python title="Usage Example"
@@ -461,21 +460,22 @@ class SelectResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateConditionTypeDef
+## BatchPutAttributesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sdb.type_defs import UpdateConditionTypeDef
+from mypy_boto3_sdb.type_defs import BatchPutAttributesRequestRequestTypeDef
 
-def get_value() -> UpdateConditionTypeDef:
+def get_value() -> BatchPutAttributesRequestRequestTypeDef:
     return {
-        "Name": ...,
+        "DomainName": ...,
+        "Items": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateConditionTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Value: NotRequired[str],
-    Exists: NotRequired[bool],
+class BatchPutAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Items: Sequence[ReplaceableItemTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef) 

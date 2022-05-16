@@ -24,25 +24,6 @@ class CPUTypeDef(TypedDict):
     modelName: NotRequired[str],
 ```
 
-## ChangeServerLifeCycleStateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestRequestTypeDef
-
-def get_value() -> ChangeServerLifeCycleStateRequestRequestTypeDef:
-    return {
-        "lifeCycle": ...,
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class ChangeServerLifeCycleStateRequestRequestTypeDef(TypedDict):
-    lifeCycle: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef,  # (1)
-    sourceServerID: str,
-```
-
-1. See [:material-code-braces: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef) 
 ## ChangeServerLifeCycleStateSourceServerLifecycleTypeDef
 
 ```python title="Usage Example"
@@ -139,32 +120,6 @@ class DataReplicationInfoReplicatedDiskTypeDef(TypedDict):
     totalStorageBytes: NotRequired[int],
 ```
 
-## DataReplicationInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DataReplicationInfoTypeDef
-
-def get_value() -> DataReplicationInfoTypeDef:
-    return {
-        "dataReplicationError": ...,
-    }
-```
-
-```python title="Definition"
-class DataReplicationInfoTypeDef(TypedDict):
-    dataReplicationError: NotRequired[DataReplicationErrorTypeDef],  # (1)
-    dataReplicationInitiation: NotRequired[DataReplicationInitiationTypeDef],  # (2)
-    dataReplicationState: NotRequired[DataReplicationStateType],  # (3)
-    etaDateTime: NotRequired[str],
-    lagDuration: NotRequired[str],
-    lastSnapshotDateTime: NotRequired[str],
-    replicatedDisks: NotRequired[List[DataReplicationInfoReplicatedDiskTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef) 
-2. See [:material-code-braces: DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef) 
-3. See [:material-code-brackets: DataReplicationStateType](./literals.md#datareplicationstatetype) 
-4. See [:material-code-braces: DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef) 
 ## DataReplicationInitiationStepTypeDef
 
 ```python title="Usage Example"
@@ -184,25 +139,6 @@ class DataReplicationInitiationStepTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype) 
 2. See [:material-code-brackets: DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype) 
-## DataReplicationInitiationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DataReplicationInitiationTypeDef
-
-def get_value() -> DataReplicationInitiationTypeDef:
-    return {
-        "nextAttemptDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class DataReplicationInitiationTypeDef(TypedDict):
-    nextAttemptDateTime: NotRequired[str],
-    startDateTime: NotRequired[str],
-    steps: NotRequired[List[DataReplicationInitiationStepTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef) 
 ## DeleteJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -267,24 +203,24 @@ class DeleteVcenterClientRequestRequestTypeDef(TypedDict):
     vcenterClientID: str,
 ```
 
-## DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+from mypy_boto3_mgn.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "jobID": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef(TypedDict):
-    jobID: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeJobLogItemsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -303,47 +239,30 @@ class DescribeJobLogItemsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## DescribeJobLogItemsResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
+from mypy_boto3_mgn.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> DescribeJobLogItemsResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeJobLogItemsResponseTypeDef(TypedDict):
-    items: List[JobLogTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: JobLogTypeDef](./type_defs.md#joblogtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeJobsRequestDescribeJobsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeJobsRequestDescribeJobsPaginateTypeDef
-
-def get_value() -> DescribeJobsRequestDescribeJobsPaginateTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsRequestDescribeJobsPaginateTypeDef(TypedDict):
-    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeJobsRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -362,65 +281,6 @@ class DescribeJobsRequestFiltersTypeDef(TypedDict):
     toDate: NotRequired[str],
 ```
 
-## DescribeJobsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeJobsRequestRequestTypeDef
-
-def get_value() -> DescribeJobsRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsRequestRequestTypeDef(TypedDict):
-    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
-## DescribeJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeJobsResponseTypeDef
-
-def get_value() -> DescribeJobsResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeJobsResponseTypeDef(TypedDict):
-    items: List[JobTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
-
-def get_value() -> DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef:
-    return {
-        "replicationConfigurationTemplateIDs": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef(TypedDict):
-    replicationConfigurationTemplateIDs: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReplicationConfigurationTemplatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -439,47 +299,39 @@ class DescribeReplicationConfigurationTemplatesRequestRequestTypeDef(TypedDict):
     replicationConfigurationTemplateIDs: NotRequired[Sequence[str]],
 ```
 
-## DescribeReplicationConfigurationTemplatesResponseTypeDef
+## ReplicationConfigurationTemplateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateTypeDef
 
-def get_value() -> DescribeReplicationConfigurationTemplatesResponseTypeDef:
+def get_value() -> ReplicationConfigurationTemplateTypeDef:
     return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "replicationConfigurationTemplateID": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeReplicationConfigurationTemplatesResponseTypeDef(TypedDict):
-    items: List[ReplicationConfigurationTemplateTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ReplicationConfigurationTemplateTypeDef(TypedDict):
+    replicationConfigurationTemplateID: str,
+    arn: NotRequired[str],
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[List[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Dict[str, str]],
+    tags: NotRequired[Dict[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
-
-def get_value() -> DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef(TypedDict):
-    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
 ## DescribeSourceServersRequestFiltersTypeDef
 
 ```python title="Usage Example"
@@ -501,64 +353,6 @@ class DescribeSourceServersRequestFiltersTypeDef(TypedDict):
 
 1. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
 2. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
-## DescribeSourceServersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestRequestTypeDef
-
-def get_value() -> DescribeSourceServersRequestRequestTypeDef:
-    return {
-        "filters": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersRequestRequestTypeDef(TypedDict):
-    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
-## DescribeSourceServersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseTypeDef
-
-def get_value() -> DescribeSourceServersResponseTypeDef:
-    return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSourceServersResponseTypeDef(TypedDict):
-    items: List[SourceServerTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef
-
-def get_value() -> DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeVcenterClientsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -576,28 +370,29 @@ class DescribeVcenterClientsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## DescribeVcenterClientsResponseTypeDef
+## VcenterClientTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import DescribeVcenterClientsResponseTypeDef
+from mypy_boto3_mgn.type_defs import VcenterClientTypeDef
 
-def get_value() -> DescribeVcenterClientsResponseTypeDef:
+def get_value() -> VcenterClientTypeDef:
     return {
-        "items": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeVcenterClientsResponseTypeDef(TypedDict):
-    items: List[VcenterClientTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class VcenterClientTypeDef(TypedDict):
+    arn: NotRequired[str],
+    datacenterName: NotRequired[str],
+    hostname: NotRequired[str],
+    lastSeenDatetime: NotRequired[str],
+    sourceServerTags: NotRequired[Dict[str, str]],
+    tags: NotRequired[Dict[str, str]],
+    vcenterClientID: NotRequired[str],
+    vcenterUUID: NotRequired[str],
 ```
 
-1. See [:material-code-braces: VcenterClientTypeDef](./type_defs.md#vcenterclienttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisconnectFromServiceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -718,6 +513,694 @@ class JobLogEventDataTypeDef(TypedDict):
     targetInstanceID: NotRequired[str],
 ```
 
+## ParticipatingServerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ParticipatingServerTypeDef
+
+def get_value() -> ParticipatingServerTypeDef:
+    return {
+        "launchStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ParticipatingServerTypeDef(TypedDict):
+    launchStatus: NotRequired[LaunchStatusType],  # (1)
+    sourceServerID: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+## LicensingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LicensingTypeDef
+
+def get_value() -> LicensingTypeDef:
+    return {
+        "osByol": ...,
+    }
+```
+
+```python title="Definition"
+class LicensingTypeDef(TypedDict):
+    osByol: NotRequired[bool],
+```
+
+## LaunchedInstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LaunchedInstanceTypeDef
+
+def get_value() -> LaunchedInstanceTypeDef:
+    return {
+        "ec2InstanceID": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchedInstanceTypeDef(TypedDict):
+    ec2InstanceID: NotRequired[str],
+    firstBoot: NotRequired[FirstBootType],  # (1)
+    jobID: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FirstBootType](./literals.md#firstboottype) 
+## LifeCycleLastCutoverFinalizedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverFinalizedTypeDef
+
+def get_value() -> LifeCycleLastCutoverFinalizedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastCutoverFinalizedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+```
+
+## LifeCycleLastCutoverInitiatedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverInitiatedTypeDef
+
+def get_value() -> LifeCycleLastCutoverInitiatedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastCutoverInitiatedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+    jobID: NotRequired[str],
+```
+
+## LifeCycleLastCutoverRevertedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverRevertedTypeDef
+
+def get_value() -> LifeCycleLastCutoverRevertedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastCutoverRevertedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+```
+
+## LifeCycleLastTestFinalizedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastTestFinalizedTypeDef
+
+def get_value() -> LifeCycleLastTestFinalizedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastTestFinalizedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+```
+
+## LifeCycleLastTestInitiatedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastTestInitiatedTypeDef
+
+def get_value() -> LifeCycleLastTestInitiatedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastTestInitiatedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+    jobID: NotRequired[str],
+```
+
+## LifeCycleLastTestRevertedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleLastTestRevertedTypeDef
+
+def get_value() -> LifeCycleLastTestRevertedTypeDef:
+    return {
+        "apiCallDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleLastTestRevertedTypeDef(TypedDict):
+    apiCallDateTime: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## MarkAsArchivedRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import MarkAsArchivedRequestRequestTypeDef
+
+def get_value() -> MarkAsArchivedRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class MarkAsArchivedRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+```
+
+## NetworkInterfaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "ips": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    ips: NotRequired[List[str]],
+    isPrimary: NotRequired[bool],
+    macAddress: NotRequired[str],
+```
+
+## OSTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import OSTypeDef
+
+def get_value() -> OSTypeDef:
+    return {
+        "fullString": ...,
+    }
+```
+
+```python title="Definition"
+class OSTypeDef(TypedDict):
+    fullString: NotRequired[str],
+```
+
+## ReplicationConfigurationReplicatedDiskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationReplicatedDiskTypeDef
+
+def get_value() -> ReplicationConfigurationReplicatedDiskTypeDef:
+    return {
+        "deviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationReplicatedDiskTypeDef(TypedDict):
+    deviceName: NotRequired[str],
+    iops: NotRequired[int],
+    isBootDisk: NotRequired[bool],
+    stagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
+    throughput: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
+## RetryDataReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import RetryDataReplicationRequestRequestTypeDef
+
+def get_value() -> RetryDataReplicationRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class RetryDataReplicationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+```
+
+## StartCutoverRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import StartCutoverRequestRequestTypeDef
+
+def get_value() -> StartCutoverRequestRequestTypeDef:
+    return {
+        "sourceServerIDs": ...,
+    }
+```
+
+```python title="Definition"
+class StartCutoverRequestRequestTypeDef(TypedDict):
+    sourceServerIDs: Sequence[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## StartReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import StartReplicationRequestRequestTypeDef
+
+def get_value() -> StartReplicationRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class StartReplicationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+```
+
+## StartTestRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import StartTestRequestRequestTypeDef
+
+def get_value() -> StartTestRequestRequestTypeDef:
+    return {
+        "sourceServerIDs": ...,
+    }
+```
+
+```python title="Definition"
+class StartTestRequestRequestTypeDef(TypedDict):
+    sourceServerIDs: Sequence[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## TerminateTargetInstancesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TerminateTargetInstancesRequestRequestTypeDef
+
+def get_value() -> TerminateTargetInstancesRequestRequestTypeDef:
+    return {
+        "sourceServerIDs": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateTargetInstancesRequestRequestTypeDef(TypedDict):
+    sourceServerIDs: Sequence[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateReplicationConfigurationTemplateRequestRequestTypeDef:
+    return {
+        "replicationConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
+    replicationConfigurationTemplateID: str,
+    arn: NotRequired[str],
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Mapping[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+## UpdateSourceServerReplicationTypeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UpdateSourceServerReplicationTypeRequestRequestTypeDef
+
+def get_value() -> UpdateSourceServerReplicationTypeRequestRequestTypeDef:
+    return {
+        "replicationType": ...,
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSourceServerReplicationTypeRequestRequestTypeDef(TypedDict):
+    replicationType: ReplicationTypeType,  # (1)
+    sourceServerID: str,
+```
+
+1. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
+## ChangeServerLifeCycleStateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestRequestTypeDef
+
+def get_value() -> ChangeServerLifeCycleStateRequestRequestTypeDef:
+    return {
+        "lifeCycle": ...,
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeServerLifeCycleStateRequestRequestTypeDef(TypedDict):
+    lifeCycle: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef,  # (1)
+    sourceServerID: str,
+```
+
+1. See [:material-code-braces: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef) 
+## DataReplicationInitiationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DataReplicationInitiationTypeDef
+
+def get_value() -> DataReplicationInitiationTypeDef:
+    return {
+        "nextAttemptDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class DataReplicationInitiationTypeDef(TypedDict):
+    nextAttemptDateTime: NotRequired[str],
+    startDateTime: NotRequired[str],
+    steps: NotRequired[List[DataReplicationInitiationStepTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef) 
+## DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef
+
+def get_value() -> DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef:
+    return {
+        "jobID": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef(TypedDict):
+    jobID: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef
+
+def get_value() -> DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef:
+    return {
+        "replicationConfigurationTemplateIDs": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef(TypedDict):
+    replicationConfigurationTemplateIDs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef
+
+def get_value() -> DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
+    return {
+        "arn": ...,
+        "associateDefaultSecurityGroup": ...,
+        "bandwidthThrottling": ...,
+        "createPublicIP": ...,
+        "dataPlaneRouting": ...,
+        "defaultLargeStagingDiskType": ...,
+        "ebsEncryption": ...,
+        "ebsEncryptionKeyArn": ...,
+        "replicationConfigurationTemplateID": ...,
+        "replicationServerInstanceType": ...,
+        "replicationServersSecurityGroupsIDs": ...,
+        "stagingAreaSubnetId": ...,
+        "stagingAreaTags": ...,
+        "tags": ...,
+        "useDedicatedReplicationServer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
+    arn: str,
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    ebsEncryptionKeyArn: str,
+    replicationConfigurationTemplateID: str,
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: List[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Dict[str, str],
+    tags: Dict[str, str],
+    useDedicatedReplicationServer: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeJobsRequestDescribeJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeJobsRequestDescribeJobsPaginateTypeDef
+
+def get_value() -> DescribeJobsRequestDescribeJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsRequestDescribeJobsPaginateTypeDef(TypedDict):
+    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeJobsRequestRequestTypeDef
+
+def get_value() -> DescribeJobsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+## DescribeReplicationConfigurationTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
+
+def get_value() -> DescribeReplicationConfigurationTemplatesResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReplicationConfigurationTemplatesResponseTypeDef(TypedDict):
+    items: List[ReplicationConfigurationTemplateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef
+
+def get_value() -> DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef(TypedDict):
+    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSourceServersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestRequestTypeDef
+
+def get_value() -> DescribeSourceServersRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSourceServersRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
+## DescribeVcenterClientsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeVcenterClientsResponseTypeDef
+
+def get_value() -> DescribeVcenterClientsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVcenterClientsResponseTypeDef(TypedDict):
+    items: List[VcenterClientTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VcenterClientTypeDef](./type_defs.md#vcenterclienttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobLogTypeDef
 
 ```python title="Usage Example"
@@ -805,90 +1288,33 @@ class LaunchConfigurationTypeDef(TypedDict):
 3. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
 4. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LaunchedInstanceTypeDef
+## UpdateLaunchConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LaunchedInstanceTypeDef
+from mypy_boto3_mgn.type_defs import UpdateLaunchConfigurationRequestRequestTypeDef
 
-def get_value() -> LaunchedInstanceTypeDef:
+def get_value() -> UpdateLaunchConfigurationRequestRequestTypeDef:
     return {
-        "ec2InstanceID": ...,
+        "sourceServerID": ...,
     }
 ```
 
 ```python title="Definition"
-class LaunchedInstanceTypeDef(TypedDict):
-    ec2InstanceID: NotRequired[str],
-    firstBoot: NotRequired[FirstBootType],  # (1)
-    jobID: NotRequired[str],
+class UpdateLaunchConfigurationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+    bootMode: NotRequired[BootModeType],  # (1)
+    copyPrivateIp: NotRequired[bool],
+    copyTags: NotRequired[bool],
+    launchDisposition: NotRequired[LaunchDispositionType],  # (2)
+    licensing: NotRequired[LicensingTypeDef],  # (3)
+    name: NotRequired[str],
+    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (4)
 ```
 
-1. See [:material-code-brackets: FirstBootType](./literals.md#firstboottype) 
-## LicensingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LicensingTypeDef
-
-def get_value() -> LicensingTypeDef:
-    return {
-        "osByol": ...,
-    }
-```
-
-```python title="Definition"
-class LicensingTypeDef(TypedDict):
-    osByol: NotRequired[bool],
-```
-
-## LifeCycleLastCutoverFinalizedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverFinalizedTypeDef
-
-def get_value() -> LifeCycleLastCutoverFinalizedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastCutoverFinalizedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-```
-
-## LifeCycleLastCutoverInitiatedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverInitiatedTypeDef
-
-def get_value() -> LifeCycleLastCutoverInitiatedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastCutoverInitiatedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-    jobID: NotRequired[str],
-```
-
-## LifeCycleLastCutoverRevertedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverRevertedTypeDef
-
-def get_value() -> LifeCycleLastCutoverRevertedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastCutoverRevertedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-```
-
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+3. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+4. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 ## LifeCycleLastCutoverTypeDef
 
 ```python title="Usage Example"
@@ -910,55 +1336,6 @@ class LifeCycleLastCutoverTypeDef(TypedDict):
 1. See [:material-code-braces: LifeCycleLastCutoverFinalizedTypeDef](./type_defs.md#lifecyclelastcutoverfinalizedtypedef) 
 2. See [:material-code-braces: LifeCycleLastCutoverInitiatedTypeDef](./type_defs.md#lifecyclelastcutoverinitiatedtypedef) 
 3. See [:material-code-braces: LifeCycleLastCutoverRevertedTypeDef](./type_defs.md#lifecyclelastcutoverrevertedtypedef) 
-## LifeCycleLastTestFinalizedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastTestFinalizedTypeDef
-
-def get_value() -> LifeCycleLastTestFinalizedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastTestFinalizedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-```
-
-## LifeCycleLastTestInitiatedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastTestInitiatedTypeDef
-
-def get_value() -> LifeCycleLastTestInitiatedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastTestInitiatedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-    jobID: NotRequired[str],
-```
-
-## LifeCycleLastTestRevertedTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleLastTestRevertedTypeDef
-
-def get_value() -> LifeCycleLastTestRevertedTypeDef:
-    return {
-        "apiCallDateTime": ...,
-    }
-```
-
-```python title="Definition"
-class LifeCycleLastTestRevertedTypeDef(TypedDict):
-    apiCallDateTime: NotRequired[str],
-```
-
 ## LifeCycleLastTestTypeDef
 
 ```python title="Usage Example"
@@ -980,256 +1357,34 @@ class LifeCycleLastTestTypeDef(TypedDict):
 1. See [:material-code-braces: LifeCycleLastTestFinalizedTypeDef](./type_defs.md#lifecyclelasttestfinalizedtypedef) 
 2. See [:material-code-braces: LifeCycleLastTestInitiatedTypeDef](./type_defs.md#lifecyclelasttestinitiatedtypedef) 
 3. See [:material-code-braces: LifeCycleLastTestRevertedTypeDef](./type_defs.md#lifecyclelasttestrevertedtypedef) 
-## LifeCycleTypeDef
+## SourcePropertiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LifeCycleTypeDef
+from mypy_boto3_mgn.type_defs import SourcePropertiesTypeDef
 
-def get_value() -> LifeCycleTypeDef:
+def get_value() -> SourcePropertiesTypeDef:
     return {
-        "addedToServiceDateTime": ...,
+        "cpus": ...,
     }
 ```
 
 ```python title="Definition"
-class LifeCycleTypeDef(TypedDict):
-    addedToServiceDateTime: NotRequired[str],
-    elapsedReplicationDuration: NotRequired[str],
-    firstByteDateTime: NotRequired[str],
-    lastCutover: NotRequired[LifeCycleLastCutoverTypeDef],  # (1)
-    lastSeenByServiceDateTime: NotRequired[str],
-    lastTest: NotRequired[LifeCycleLastTestTypeDef],  # (2)
-    state: NotRequired[LifeCycleStateType],  # (3)
+class SourcePropertiesTypeDef(TypedDict):
+    cpus: NotRequired[List[CPUTypeDef]],  # (1)
+    disks: NotRequired[List[DiskTypeDef]],  # (2)
+    identificationHints: NotRequired[IdentificationHintsTypeDef],  # (3)
+    lastUpdatedDateTime: NotRequired[str],
+    networkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (4)
+    os: NotRequired[OSTypeDef],  # (5)
+    ramBytes: NotRequired[int],
+    recommendedInstanceType: NotRequired[str],
 ```
 
-1. See [:material-code-braces: LifeCycleLastCutoverTypeDef](./type_defs.md#lifecyclelastcutovertypedef) 
-2. See [:material-code-braces: LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef) 
-3. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MarkAsArchivedRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import MarkAsArchivedRequestRequestTypeDef
-
-def get_value() -> MarkAsArchivedRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class MarkAsArchivedRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-```
-
-## NetworkInterfaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import NetworkInterfaceTypeDef
-
-def get_value() -> NetworkInterfaceTypeDef:
-    return {
-        "ips": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceTypeDef(TypedDict):
-    ips: NotRequired[List[str]],
-    isPrimary: NotRequired[bool],
-    macAddress: NotRequired[str],
-```
-
-## OSTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import OSTypeDef
-
-def get_value() -> OSTypeDef:
-    return {
-        "fullString": ...,
-    }
-```
-
-```python title="Definition"
-class OSTypeDef(TypedDict):
-    fullString: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ParticipatingServerTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ParticipatingServerTypeDef
-
-def get_value() -> ParticipatingServerTypeDef:
-    return {
-        "launchStatus": ...,
-    }
-```
-
-```python title="Definition"
-class ParticipatingServerTypeDef(TypedDict):
-    launchStatus: NotRequired[LaunchStatusType],  # (1)
-    sourceServerID: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
-## ReplicationConfigurationReplicatedDiskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationReplicatedDiskTypeDef
-
-def get_value() -> ReplicationConfigurationReplicatedDiskTypeDef:
-    return {
-        "deviceName": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationReplicatedDiskTypeDef(TypedDict):
-    deviceName: NotRequired[str],
-    iops: NotRequired[int],
-    isBootDisk: NotRequired[bool],
-    stagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
-    throughput: NotRequired[int],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
-## ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
-    return {
-        "arn": ...,
-        "associateDefaultSecurityGroup": ...,
-        "bandwidthThrottling": ...,
-        "createPublicIP": ...,
-        "dataPlaneRouting": ...,
-        "defaultLargeStagingDiskType": ...,
-        "ebsEncryption": ...,
-        "ebsEncryptionKeyArn": ...,
-        "replicationConfigurationTemplateID": ...,
-        "replicationServerInstanceType": ...,
-        "replicationServersSecurityGroupsIDs": ...,
-        "stagingAreaSubnetId": ...,
-        "stagingAreaTags": ...,
-        "tags": ...,
-        "useDedicatedReplicationServer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
-    arn: str,
-    associateDefaultSecurityGroup: bool,
-    bandwidthThrottling: int,
-    createPublicIP: bool,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
-    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
-    ebsEncryptionKeyArn: str,
-    replicationConfigurationTemplateID: str,
-    replicationServerInstanceType: str,
-    replicationServersSecurityGroupsIDs: List[str],
-    stagingAreaSubnetId: str,
-    stagingAreaTags: Dict[str, str],
-    tags: Dict[str, str],
-    useDedicatedReplicationServer: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ReplicationConfigurationTemplateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateTypeDef
-
-def get_value() -> ReplicationConfigurationTemplateTypeDef:
-    return {
-        "replicationConfigurationTemplateID": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationTemplateTypeDef(TypedDict):
-    replicationConfigurationTemplateID: str,
-    arn: NotRequired[str],
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[List[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Dict[str, str]],
-    tags: NotRequired[Dict[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+1. See [:material-code-braces: CPUTypeDef](./type_defs.md#cputypedef) 
+2. See [:material-code-braces: DiskTypeDef](./type_defs.md#disktypedef) 
+3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
+4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
 ## ReplicationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1281,74 +1436,195 @@ class ReplicationConfigurationTypeDef(TypedDict):
 3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
 4. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
+## UpdateReplicationConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RetryDataReplicationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import RetryDataReplicationRequestRequestTypeDef
-
-def get_value() -> RetryDataReplicationRequestRequestTypeDef:
+def get_value() -> UpdateReplicationConfigurationRequestRequestTypeDef:
     return {
         "sourceServerID": ...,
     }
 ```
 
 ```python title="Definition"
-class RetryDataReplicationRequestRequestTypeDef(TypedDict):
+class UpdateReplicationConfigurationRequestRequestTypeDef(TypedDict):
     sourceServerID: str,
+    associateDefaultSecurityGroup: NotRequired[bool],
+    bandwidthThrottling: NotRequired[int],
+    createPublicIP: NotRequired[bool],
+    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
+    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
+    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
+    ebsEncryptionKeyArn: NotRequired[str],
+    name: NotRequired[str],
+    replicatedDisks: NotRequired[Sequence[ReplicationConfigurationReplicatedDiskTypeDef]],  # (4)
+    replicationServerInstanceType: NotRequired[str],
+    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
+    stagingAreaSubnetId: NotRequired[str],
+    stagingAreaTags: NotRequired[Mapping[str, str]],
+    useDedicatedReplicationServer: NotRequired[bool],
 ```
 
-## SourcePropertiesTypeDef
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
+## DataReplicationInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import SourcePropertiesTypeDef
+from mypy_boto3_mgn.type_defs import DataReplicationInfoTypeDef
 
-def get_value() -> SourcePropertiesTypeDef:
+def get_value() -> DataReplicationInfoTypeDef:
     return {
-        "cpus": ...,
+        "dataReplicationError": ...,
     }
 ```
 
 ```python title="Definition"
-class SourcePropertiesTypeDef(TypedDict):
-    cpus: NotRequired[List[CPUTypeDef]],  # (1)
-    disks: NotRequired[List[DiskTypeDef]],  # (2)
-    identificationHints: NotRequired[IdentificationHintsTypeDef],  # (3)
-    lastUpdatedDateTime: NotRequired[str],
-    networkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (4)
-    os: NotRequired[OSTypeDef],  # (5)
-    ramBytes: NotRequired[int],
-    recommendedInstanceType: NotRequired[str],
+class DataReplicationInfoTypeDef(TypedDict):
+    dataReplicationError: NotRequired[DataReplicationErrorTypeDef],  # (1)
+    dataReplicationInitiation: NotRequired[DataReplicationInitiationTypeDef],  # (2)
+    dataReplicationState: NotRequired[DataReplicationStateType],  # (3)
+    etaDateTime: NotRequired[str],
+    lagDuration: NotRequired[str],
+    lastSnapshotDateTime: NotRequired[str],
+    replicatedDisks: NotRequired[List[DataReplicationInfoReplicatedDiskTypeDef]],  # (4)
 ```
 
-1. See [:material-code-braces: CPUTypeDef](./type_defs.md#cputypedef) 
-2. See [:material-code-braces: DiskTypeDef](./type_defs.md#disktypedef) 
-3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
-4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
-5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
+1. See [:material-code-braces: DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef) 
+2. See [:material-code-braces: DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef) 
+3. See [:material-code-brackets: DataReplicationStateType](./literals.md#datareplicationstatetype) 
+4. See [:material-code-braces: DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef) 
+## DescribeJobLogItemsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
+
+def get_value() -> DescribeJobLogItemsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobLogItemsResponseTypeDef(TypedDict):
+    items: List[JobLogTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobLogTypeDef](./type_defs.md#joblogtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DescribeJobsResponseTypeDef
+
+def get_value() -> DescribeJobsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobsResponseTypeDef(TypedDict):
+    items: List[JobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartCutoverResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import StartCutoverResponseTypeDef
+
+def get_value() -> StartCutoverResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartCutoverResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartTestResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import StartTestResponseTypeDef
+
+def get_value() -> StartTestResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartTestResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TerminateTargetInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TerminateTargetInstancesResponseTypeDef
+
+def get_value() -> TerminateTargetInstancesResponseTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateTargetInstancesResponseTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LifeCycleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LifeCycleTypeDef
+
+def get_value() -> LifeCycleTypeDef:
+    return {
+        "addedToServiceDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class LifeCycleTypeDef(TypedDict):
+    addedToServiceDateTime: NotRequired[str],
+    elapsedReplicationDuration: NotRequired[str],
+    firstByteDateTime: NotRequired[str],
+    lastCutover: NotRequired[LifeCycleLastCutoverTypeDef],  # (1)
+    lastSeenByServiceDateTime: NotRequired[str],
+    lastTest: NotRequired[LifeCycleLastTestTypeDef],  # (2)
+    state: NotRequired[LifeCycleStateType],  # (3)
+```
+
+1. See [:material-code-braces: LifeCycleLastCutoverTypeDef](./type_defs.md#lifecyclelastcutovertypedef) 
+2. See [:material-code-braces: LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef) 
+3. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
 ## SourceServerResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1421,301 +1697,25 @@ class SourceServerTypeDef(TypedDict):
 3. See [:material-code-braces: LifeCycleTypeDef](./type_defs.md#lifecycletypedef) 
 4. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
 5. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
-## StartCutoverRequestRequestTypeDef
+## DescribeSourceServersResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import StartCutoverRequestRequestTypeDef
+from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseTypeDef
 
-def get_value() -> StartCutoverRequestRequestTypeDef:
+def get_value() -> DescribeSourceServersResponseTypeDef:
     return {
-        "sourceServerIDs": ...,
-    }
-```
-
-```python title="Definition"
-class StartCutoverRequestRequestTypeDef(TypedDict):
-    sourceServerIDs: Sequence[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-## StartCutoverResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import StartCutoverResponseTypeDef
-
-def get_value() -> StartCutoverResponseTypeDef:
-    return {
-        "job": ...,
+        "items": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StartCutoverResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
+class DescribeSourceServersResponseTypeDef(TypedDict):
+    items: List[SourceServerTypeDef],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartReplicationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import StartReplicationRequestRequestTypeDef
-
-def get_value() -> StartReplicationRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class StartReplicationRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-```
-
-## StartTestRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import StartTestRequestRequestTypeDef
-
-def get_value() -> StartTestRequestRequestTypeDef:
-    return {
-        "sourceServerIDs": ...,
-    }
-```
-
-```python title="Definition"
-class StartTestRequestRequestTypeDef(TypedDict):
-    sourceServerIDs: Sequence[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-## StartTestResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import StartTestResponseTypeDef
-
-def get_value() -> StartTestResponseTypeDef:
-    return {
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartTestResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
-```
-
-## TerminateTargetInstancesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import TerminateTargetInstancesRequestRequestTypeDef
-
-def get_value() -> TerminateTargetInstancesRequestRequestTypeDef:
-    return {
-        "sourceServerIDs": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateTargetInstancesRequestRequestTypeDef(TypedDict):
-    sourceServerIDs: Sequence[str],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-## TerminateTargetInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import TerminateTargetInstancesResponseTypeDef
-
-def get_value() -> TerminateTargetInstancesResponseTypeDef:
-    return {
-        "job": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TerminateTargetInstancesResponseTypeDef(TypedDict):
-    job: JobTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UntagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import UntagResourceRequestRequestTypeDef
-
-def get_value() -> UntagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
-```
-
-## UpdateLaunchConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import UpdateLaunchConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateLaunchConfigurationRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateLaunchConfigurationRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-    bootMode: NotRequired[BootModeType],  # (1)
-    copyPrivateIp: NotRequired[bool],
-    copyTags: NotRequired[bool],
-    launchDisposition: NotRequired[LaunchDispositionType],  # (2)
-    licensing: NotRequired[LicensingTypeDef],  # (3)
-    name: NotRequired[str],
-    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (4)
-```
-
-1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
-2. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
-3. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
-4. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
-## UpdateReplicationConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateReplicationConfigurationRequestRequestTypeDef:
-    return {
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateReplicationConfigurationRequestRequestTypeDef(TypedDict):
-    sourceServerID: str,
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    name: NotRequired[str],
-    replicatedDisks: NotRequired[Sequence[ReplicationConfigurationReplicatedDiskTypeDef]],  # (4)
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Mapping[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
-## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateReplicationConfigurationTemplateRequestRequestTypeDef:
-    return {
-        "replicationConfigurationTemplateID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
-    replicationConfigurationTemplateID: str,
-    arn: NotRequired[str],
-    associateDefaultSecurityGroup: NotRequired[bool],
-    bandwidthThrottling: NotRequired[int],
-    createPublicIP: NotRequired[bool],
-    dataPlaneRouting: NotRequired[ReplicationConfigurationDataPlaneRoutingType],  # (1)
-    defaultLargeStagingDiskType: NotRequired[ReplicationConfigurationDefaultLargeStagingDiskTypeType],  # (2)
-    ebsEncryption: NotRequired[ReplicationConfigurationEbsEncryptionType],  # (3)
-    ebsEncryptionKeyArn: NotRequired[str],
-    replicationServerInstanceType: NotRequired[str],
-    replicationServersSecurityGroupsIDs: NotRequired[Sequence[str]],
-    stagingAreaSubnetId: NotRequired[str],
-    stagingAreaTags: NotRequired[Mapping[str, str]],
-    useDedicatedReplicationServer: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-## UpdateSourceServerReplicationTypeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import UpdateSourceServerReplicationTypeRequestRequestTypeDef
-
-def get_value() -> UpdateSourceServerReplicationTypeRequestRequestTypeDef:
-    return {
-        "replicationType": ...,
-        "sourceServerID": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSourceServerReplicationTypeRequestRequestTypeDef(TypedDict):
-    replicationType: ReplicationTypeType,  # (1)
-    sourceServerID: str,
-```
-
-1. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
-## VcenterClientTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import VcenterClientTypeDef
-
-def get_value() -> VcenterClientTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class VcenterClientTypeDef(TypedDict):
-    arn: NotRequired[str],
-    datacenterName: NotRequired[str],
-    hostname: NotRequired[str],
-    lastSeenDatetime: NotRequired[str],
-    sourceServerTags: NotRequired[Dict[str, str]],
-    tags: NotRequired[Dict[str, str]],
-    vcenterClientID: NotRequired[str],
-    vcenterUUID: NotRequired[str],
-```
-

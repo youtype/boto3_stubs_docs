@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36137,126 +36137,129 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mediaconnect.type_defs</span> <span class="kn">import</span> <span class="n">AddFlowMediaStreamsRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mediaconnect.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddFlowMediaStreamsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;FlowArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;MediaStreams&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addflowmediastreamsrequestrequesttypedef">AddFlowMediaStreamsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addflowmediastreamsresponsetypedef">AddFlowMediaStreamsResponseTypeDef</a></li>
-<li><a href="type_defs/#addflowoutputsrequestrequesttypedef">AddFlowOutputsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addflowoutputsresponsetypedef">AddFlowOutputsResponseTypeDef</a></li>
-<li><a href="type_defs/#addflowsourcesrequestrequesttypedef">AddFlowSourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#addflowsourcesresponsetypedef">AddFlowSourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#vpcinterfacerequesttypedef">VpcInterfaceRequestTypeDef</a></li>
+<li><a href="type_defs/#vpcinterfacetypedef">VpcInterfaceTypeDef</a></li>
+<li><a href="type_defs/#addmaintenancetypedef">AddMaintenanceTypeDef</a></li>
+<li><a href="type_defs/#encryptiontypedef">EncryptionTypeDef</a></li>
+<li><a href="type_defs/#vpcinterfaceattachmenttypedef">VpcInterfaceAttachmentTypeDef</a></li>
+<li><a href="type_defs/#deleteflowrequestrequesttypedef">DeleteFlowRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#describeflowrequestrequesttypedef">DescribeFlowRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#messagestypedef">MessagesTypeDef</a></li>
+<li><a href="type_defs/#describeofferingrequestrequesttypedef">DescribeOfferingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describereservationrequestrequesttypedef">DescribeReservationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#interfacerequesttypedef">InterfaceRequestTypeDef</a></li>
+<li><a href="type_defs/#interfacetypedef">InterfaceTypeDef</a></li>
+<li><a href="type_defs/#encodingparametersrequesttypedef">EncodingParametersRequestTypeDef</a></li>
+<li><a href="type_defs/#encodingparameterstypedef">EncodingParametersTypeDef</a></li>
+<li><a href="type_defs/#sourceprioritytypedef">SourcePriorityTypeDef</a></li>
+<li><a href="type_defs/#maintenancetypedef">MaintenanceTypeDef</a></li>
+<li><a href="type_defs/#fmtprequesttypedef">FmtpRequestTypeDef</a></li>
+<li><a href="type_defs/#fmtptypedef">FmtpTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listentitlementsrequestrequesttypedef">ListEntitlementsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedentitlementtypedef">ListedEntitlementTypeDef</a></li>
+<li><a href="type_defs/#listflowsrequestrequesttypedef">ListFlowsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listofferingsrequestrequesttypedef">ListOfferingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listreservationsrequestrequesttypedef">ListReservationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourcespecificationtypedef">ResourceSpecificationTypeDef</a></li>
+<li><a href="type_defs/#transporttypedef">TransportTypeDef</a></li>
+<li><a href="type_defs/#purchaseofferingrequestrequesttypedef">PurchaseOfferingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removeflowmediastreamrequestrequesttypedef">RemoveFlowMediaStreamRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removeflowoutputrequestrequesttypedef">RemoveFlowOutputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removeflowsourcerequestrequesttypedef">RemoveFlowSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#removeflowvpcinterfacerequestrequesttypedef">RemoveFlowVpcInterfaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#revokeflowentitlementrequestrequesttypedef">RevokeFlowEntitlementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startflowrequestrequesttypedef">StartFlowRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stopflowrequestrequesttypedef">StopFlowRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateencryptiontypedef">UpdateEncryptionTypeDef</a></li>
+<li><a href="type_defs/#updatemaintenancetypedef">UpdateMaintenanceTypeDef</a></li>
+<li><a href="type_defs/#deleteflowresponsetypedef">DeleteFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#removeflowmediastreamresponsetypedef">RemoveFlowMediaStreamResponseTypeDef</a></li>
+<li><a href="type_defs/#removeflowoutputresponsetypedef">RemoveFlowOutputResponseTypeDef</a></li>
+<li><a href="type_defs/#removeflowsourceresponsetypedef">RemoveFlowSourceResponseTypeDef</a></li>
+<li><a href="type_defs/#removeflowvpcinterfaceresponsetypedef">RemoveFlowVpcInterfaceResponseTypeDef</a></li>
+<li><a href="type_defs/#revokeflowentitlementresponsetypedef">RevokeFlowEntitlementResponseTypeDef</a></li>
+<li><a href="type_defs/#startflowresponsetypedef">StartFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#stopflowresponsetypedef">StopFlowResponseTypeDef</a></li>
 <li><a href="type_defs/#addflowvpcinterfacesrequestrequesttypedef">AddFlowVpcInterfacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#addflowvpcinterfacesresponsetypedef">AddFlowVpcInterfacesResponseTypeDef</a></li>
-<li><a href="type_defs/#addmaintenancetypedef">AddMaintenanceTypeDef</a></li>
-<li><a href="type_defs/#addmediastreamrequesttypedef">AddMediaStreamRequestTypeDef</a></li>
-<li><a href="type_defs/#addoutputrequesttypedef">AddOutputRequestTypeDef</a></li>
-<li><a href="type_defs/#createflowrequestrequesttypedef">CreateFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createflowresponsetypedef">CreateFlowResponseTypeDef</a></li>
-<li><a href="type_defs/#deleteflowrequestrequesttypedef">DeleteFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteflowresponsetypedef">DeleteFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#entitlementtypedef">EntitlementTypeDef</a></li>
+<li><a href="type_defs/#grantentitlementrequesttypedef">GrantEntitlementRequestTypeDef</a></li>
 <li><a href="type_defs/#describeflowrequestflowactivewaittypedef">DescribeFlowRequestFlowActiveWaitTypeDef</a></li>
 <li><a href="type_defs/#describeflowrequestflowdeletedwaittypedef">DescribeFlowRequestFlowDeletedWaitTypeDef</a></li>
 <li><a href="type_defs/#describeflowrequestflowstandbywaittypedef">DescribeFlowRequestFlowStandbyWaitTypeDef</a></li>
-<li><a href="type_defs/#describeflowrequestrequesttypedef">DescribeFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeflowresponsetypedef">DescribeFlowResponseTypeDef</a></li>
-<li><a href="type_defs/#describeofferingrequestrequesttypedef">DescribeOfferingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeofferingresponsetypedef">DescribeOfferingResponseTypeDef</a></li>
-<li><a href="type_defs/#describereservationrequestrequesttypedef">DescribeReservationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describereservationresponsetypedef">DescribeReservationResponseTypeDef</a></li>
 <li><a href="type_defs/#destinationconfigurationrequesttypedef">DestinationConfigurationRequestTypeDef</a></li>
-<li><a href="type_defs/#destinationconfigurationtypedef">DestinationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#encodingparametersrequesttypedef">EncodingParametersRequestTypeDef</a></li>
-<li><a href="type_defs/#encodingparameterstypedef">EncodingParametersTypeDef</a></li>
-<li><a href="type_defs/#encryptiontypedef">EncryptionTypeDef</a></li>
-<li><a href="type_defs/#entitlementtypedef">EntitlementTypeDef</a></li>
-<li><a href="type_defs/#failoverconfigtypedef">FailoverConfigTypeDef</a></li>
-<li><a href="type_defs/#flowtypedef">FlowTypeDef</a></li>
-<li><a href="type_defs/#fmtprequesttypedef">FmtpRequestTypeDef</a></li>
-<li><a href="type_defs/#fmtptypedef">FmtpTypeDef</a></li>
-<li><a href="type_defs/#grantentitlementrequesttypedef">GrantEntitlementRequestTypeDef</a></li>
-<li><a href="type_defs/#grantflowentitlementsrequestrequesttypedef">GrantFlowEntitlementsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#grantflowentitlementsresponsetypedef">GrantFlowEntitlementsResponseTypeDef</a></li>
 <li><a href="type_defs/#inputconfigurationrequesttypedef">InputConfigurationRequestTypeDef</a></li>
+<li><a href="type_defs/#destinationconfigurationtypedef">DestinationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#inputconfigurationtypedef">InputConfigurationTypeDef</a></li>
-<li><a href="type_defs/#interfacerequesttypedef">InterfaceRequestTypeDef</a></li>
-<li><a href="type_defs/#interfacetypedef">InterfaceTypeDef</a></li>
-<li><a href="type_defs/#listentitlementsrequestlistentitlementspaginatetypedef">ListEntitlementsRequestListEntitlementsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listentitlementsrequestrequesttypedef">ListEntitlementsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listentitlementsresponsetypedef">ListEntitlementsResponseTypeDef</a></li>
-<li><a href="type_defs/#listflowsrequestlistflowspaginatetypedef">ListFlowsRequestListFlowsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listflowsrequestrequesttypedef">ListFlowsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listflowsresponsetypedef">ListFlowsResponseTypeDef</a></li>
-<li><a href="type_defs/#listofferingsrequestlistofferingspaginatetypedef">ListOfferingsRequestListOfferingsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listofferingsrequestrequesttypedef">ListOfferingsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listofferingsresponsetypedef">ListOfferingsResponseTypeDef</a></li>
-<li><a href="type_defs/#listreservationsrequestlistreservationspaginatetypedef">ListReservationsRequestListReservationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listreservationsrequestrequesttypedef">ListReservationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listreservationsresponsetypedef">ListReservationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#listedentitlementtypedef">ListedEntitlementTypeDef</a></li>
+<li><a href="type_defs/#failoverconfigtypedef">FailoverConfigTypeDef</a></li>
+<li><a href="type_defs/#updatefailoverconfigtypedef">UpdateFailoverConfigTypeDef</a></li>
 <li><a href="type_defs/#listedflowtypedef">ListedFlowTypeDef</a></li>
-<li><a href="type_defs/#maintenancetypedef">MaintenanceTypeDef</a></li>
 <li><a href="type_defs/#mediastreamattributesrequesttypedef">MediaStreamAttributesRequestTypeDef</a></li>
 <li><a href="type_defs/#mediastreamattributestypedef">MediaStreamAttributesTypeDef</a></li>
-<li><a href="type_defs/#mediastreamoutputconfigurationrequesttypedef">MediaStreamOutputConfigurationRequestTypeDef</a></li>
-<li><a href="type_defs/#mediastreamoutputconfigurationtypedef">MediaStreamOutputConfigurationTypeDef</a></li>
-<li><a href="type_defs/#mediastreamsourceconfigurationrequesttypedef">MediaStreamSourceConfigurationRequestTypeDef</a></li>
-<li><a href="type_defs/#mediastreamsourceconfigurationtypedef">MediaStreamSourceConfigurationTypeDef</a></li>
-<li><a href="type_defs/#mediastreamtypedef">MediaStreamTypeDef</a></li>
-<li><a href="type_defs/#messagestypedef">MessagesTypeDef</a></li>
+<li><a href="type_defs/#listentitlementsrequestlistentitlementspaginatetypedef">ListEntitlementsRequestListEntitlementsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listflowsrequestlistflowspaginatetypedef">ListFlowsRequestListFlowsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listofferingsrequestlistofferingspaginatetypedef">ListOfferingsRequestListOfferingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listreservationsrequestlistreservationspaginatetypedef">ListReservationsRequestListReservationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listentitlementsresponsetypedef">ListEntitlementsResponseTypeDef</a></li>
 <li><a href="type_defs/#offeringtypedef">OfferingTypeDef</a></li>
-<li><a href="type_defs/#outputtypedef">OutputTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#purchaseofferingrequestrequesttypedef">PurchaseOfferingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#purchaseofferingresponsetypedef">PurchaseOfferingResponseTypeDef</a></li>
-<li><a href="type_defs/#removeflowmediastreamrequestrequesttypedef">RemoveFlowMediaStreamRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removeflowmediastreamresponsetypedef">RemoveFlowMediaStreamResponseTypeDef</a></li>
-<li><a href="type_defs/#removeflowoutputrequestrequesttypedef">RemoveFlowOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removeflowoutputresponsetypedef">RemoveFlowOutputResponseTypeDef</a></li>
-<li><a href="type_defs/#removeflowsourcerequestrequesttypedef">RemoveFlowSourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removeflowsourceresponsetypedef">RemoveFlowSourceResponseTypeDef</a></li>
-<li><a href="type_defs/#removeflowvpcinterfacerequestrequesttypedef">RemoveFlowVpcInterfaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#removeflowvpcinterfaceresponsetypedef">RemoveFlowVpcInterfaceResponseTypeDef</a></li>
 <li><a href="type_defs/#reservationtypedef">ReservationTypeDef</a></li>
-<li><a href="type_defs/#resourcespecificationtypedef">ResourceSpecificationTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#revokeflowentitlementrequestrequesttypedef">RevokeFlowEntitlementRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#revokeflowentitlementresponsetypedef">RevokeFlowEntitlementResponseTypeDef</a></li>
-<li><a href="type_defs/#setsourcerequesttypedef">SetSourceRequestTypeDef</a></li>
-<li><a href="type_defs/#sourceprioritytypedef">SourcePriorityTypeDef</a></li>
-<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
-<li><a href="type_defs/#startflowrequestrequesttypedef">StartFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startflowresponsetypedef">StartFlowResponseTypeDef</a></li>
-<li><a href="type_defs/#stopflowrequestrequesttypedef">StopFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stopflowresponsetypedef">StopFlowResponseTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#transporttypedef">TransportTypeDef</a></li>
-<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateencryptiontypedef">UpdateEncryptionTypeDef</a></li>
-<li><a href="type_defs/#updatefailoverconfigtypedef">UpdateFailoverConfigTypeDef</a></li>
 <li><a href="type_defs/#updateflowentitlementrequestrequesttypedef">UpdateFlowEntitlementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#grantflowentitlementsresponsetypedef">GrantFlowEntitlementsResponseTypeDef</a></li>
 <li><a href="type_defs/#updateflowentitlementresponsetypedef">UpdateFlowEntitlementResponseTypeDef</a></li>
-<li><a href="type_defs/#updateflowmediastreamrequestrequesttypedef">UpdateFlowMediaStreamRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateflowmediastreamresponsetypedef">UpdateFlowMediaStreamResponseTypeDef</a></li>
-<li><a href="type_defs/#updateflowoutputrequestrequesttypedef">UpdateFlowOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateflowoutputresponsetypedef">UpdateFlowOutputResponseTypeDef</a></li>
+<li><a href="type_defs/#grantflowentitlementsrequestrequesttypedef">GrantFlowEntitlementsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mediastreamoutputconfigurationrequesttypedef">MediaStreamOutputConfigurationRequestTypeDef</a></li>
+<li><a href="type_defs/#mediastreamsourceconfigurationrequesttypedef">MediaStreamSourceConfigurationRequestTypeDef</a></li>
+<li><a href="type_defs/#mediastreamoutputconfigurationtypedef">MediaStreamOutputConfigurationTypeDef</a></li>
+<li><a href="type_defs/#mediastreamsourceconfigurationtypedef">MediaStreamSourceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updateflowrequestrequesttypedef">UpdateFlowRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateflowresponsetypedef">UpdateFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#listflowsresponsetypedef">ListFlowsResponseTypeDef</a></li>
+<li><a href="type_defs/#addmediastreamrequesttypedef">AddMediaStreamRequestTypeDef</a></li>
+<li><a href="type_defs/#updateflowmediastreamrequestrequesttypedef">UpdateFlowMediaStreamRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mediastreamtypedef">MediaStreamTypeDef</a></li>
+<li><a href="type_defs/#describeofferingresponsetypedef">DescribeOfferingResponseTypeDef</a></li>
+<li><a href="type_defs/#listofferingsresponsetypedef">ListOfferingsResponseTypeDef</a></li>
+<li><a href="type_defs/#describereservationresponsetypedef">DescribeReservationResponseTypeDef</a></li>
+<li><a href="type_defs/#listreservationsresponsetypedef">ListReservationsResponseTypeDef</a></li>
+<li><a href="type_defs/#purchaseofferingresponsetypedef">PurchaseOfferingResponseTypeDef</a></li>
+<li><a href="type_defs/#addoutputrequesttypedef">AddOutputRequestTypeDef</a></li>
+<li><a href="type_defs/#updateflowoutputrequestrequesttypedef">UpdateFlowOutputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#setsourcerequesttypedef">SetSourceRequestTypeDef</a></li>
 <li><a href="type_defs/#updateflowsourcerequestrequesttypedef">UpdateFlowSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#outputtypedef">OutputTypeDef</a></li>
+<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
+<li><a href="type_defs/#addflowmediastreamsrequestrequesttypedef">AddFlowMediaStreamsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addflowmediastreamsresponsetypedef">AddFlowMediaStreamsResponseTypeDef</a></li>
+<li><a href="type_defs/#updateflowmediastreamresponsetypedef">UpdateFlowMediaStreamResponseTypeDef</a></li>
+<li><a href="type_defs/#addflowoutputsrequestrequesttypedef">AddFlowOutputsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addflowsourcesrequestrequesttypedef">AddFlowSourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createflowrequestrequesttypedef">CreateFlowRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addflowoutputsresponsetypedef">AddFlowOutputsResponseTypeDef</a></li>
+<li><a href="type_defs/#updateflowoutputresponsetypedef">UpdateFlowOutputResponseTypeDef</a></li>
+<li><a href="type_defs/#addflowsourcesresponsetypedef">AddFlowSourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#flowtypedef">FlowTypeDef</a></li>
 <li><a href="type_defs/#updateflowsourceresponsetypedef">UpdateFlowSourceResponseTypeDef</a></li>
-<li><a href="type_defs/#updatemaintenancetypedef">UpdateMaintenanceTypeDef</a></li>
-<li><a href="type_defs/#vpcinterfaceattachmenttypedef">VpcInterfaceAttachmentTypeDef</a></li>
-<li><a href="type_defs/#vpcinterfacerequesttypedef">VpcInterfaceRequestTypeDef</a></li>
-<li><a href="type_defs/#vpcinterfacetypedef">VpcInterfaceTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#createflowresponsetypedef">CreateFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#describeflowresponsetypedef">DescribeFlowResponseTypeDef</a></li>
+<li><a href="type_defs/#updateflowresponsetypedef">UpdateFlowResponseTypeDef</a></li>
 </ul>
 
               
@@ -36326,7 +36329,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

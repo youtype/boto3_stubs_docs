@@ -43,25 +43,30 @@ class CancelKeyDeletionRequestRequestTypeDef(TypedDict):
     KeyId: str,
 ```
 
-## CancelKeyDeletionResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CancelKeyDeletionResponseTypeDef
+from mypy_boto3_kms.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CancelKeyDeletionResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "KeyId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CancelKeyDeletionResponseTypeDef(TypedDict):
-    KeyId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectCustomKeyStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -118,122 +123,41 @@ class CreateCustomKeyStoreRequestRequestTypeDef(TypedDict):
     KeyStorePassword: str,
 ```
 
-## CreateCustomKeyStoreResponseTypeDef
+## GrantConstraintsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateCustomKeyStoreResponseTypeDef
+from mypy_boto3_kms.type_defs import GrantConstraintsTypeDef
 
-def get_value() -> CreateCustomKeyStoreResponseTypeDef:
+def get_value() -> GrantConstraintsTypeDef:
     return {
-        "CustomKeyStoreId": ...,
-        "ResponseMetadata": ...,
+        "EncryptionContextSubset": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateCustomKeyStoreResponseTypeDef(TypedDict):
-    CustomKeyStoreId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class GrantConstraintsTypeDef(TypedDict):
+    EncryptionContextSubset: NotRequired[Mapping[str, str]],
+    EncryptionContextEquals: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateGrantRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateGrantRequestRequestTypeDef
+from mypy_boto3_kms.type_defs import TagTypeDef
 
-def get_value() -> CreateGrantRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "KeyId": ...,
-        "GranteePrincipal": ...,
-        "Operations": ...,
+        "TagKey": ...,
+        "TagValue": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGrantRequestRequestTypeDef(TypedDict):
-    KeyId: str,
-    GranteePrincipal: str,
-    Operations: Sequence[GrantOperationType],  # (1)
-    RetiringPrincipal: NotRequired[str],
-    Constraints: NotRequired[GrantConstraintsTypeDef],  # (2)
-    GrantTokens: NotRequired[Sequence[str]],
-    Name: NotRequired[str],
+class TagTypeDef(TypedDict):
+    TagKey: str,
+    TagValue: str,
 ```
 
-1. See [:material-code-brackets: GrantOperationType](./literals.md#grantoperationtype) 
-2. See [:material-code-braces: GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef) 
-## CreateGrantResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateGrantResponseTypeDef
-
-def get_value() -> CreateGrantResponseTypeDef:
-    return {
-        "GrantToken": ...,
-        "GrantId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateGrantResponseTypeDef(TypedDict):
-    GrantToken: str,
-    GrantId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateKeyRequestRequestTypeDef
-
-def get_value() -> CreateKeyRequestRequestTypeDef:
-    return {
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class CreateKeyRequestRequestTypeDef(TypedDict):
-    Policy: NotRequired[str],
-    Description: NotRequired[str],
-    KeyUsage: NotRequired[KeyUsageTypeType],  # (1)
-    CustomerMasterKeySpec: NotRequired[CustomerMasterKeySpecType],  # (2)
-    KeySpec: NotRequired[KeySpecType],  # (3)
-    Origin: NotRequired[OriginTypeType],  # (4)
-    CustomKeyStoreId: NotRequired[str],
-    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
-    MultiRegion: NotRequired[bool],
-```
-
-1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
-2. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
-3. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
-4. See [:material-code-brackets: OriginTypeType](./literals.md#origintypetype) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateKeyResponseTypeDef
-
-def get_value() -> CreateKeyResponseTypeDef:
-    return {
-        "KeyMetadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateKeyResponseTypeDef(TypedDict):
-    KeyMetadata: KeyMetadataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomKeyStoresListEntryTypeDef
 
 ```python title="Usage Example"
@@ -279,30 +203,6 @@ class DecryptRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-## DecryptResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import DecryptResponseTypeDef
-
-def get_value() -> DecryptResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "Plaintext": ...,
-        "EncryptionAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DecryptResponseTypeDef(TypedDict):
-    KeyId: str,
-    Plaintext: bytes,
-    EncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -370,30 +270,6 @@ class DescribeCustomKeyStoresRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## DescribeCustomKeyStoresResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
-
-def get_value() -> DescribeCustomKeyStoresResponseTypeDef:
-    return {
-        "CustomKeyStores": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCustomKeyStoresResponseTypeDef(TypedDict):
-    CustomKeyStores: List[CustomKeyStoresListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -411,26 +287,6 @@ class DescribeKeyRequestRequestTypeDef(TypedDict):
     GrantTokens: NotRequired[Sequence[str]],
 ```
 
-## DescribeKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import DescribeKeyResponseTypeDef
-
-def get_value() -> DescribeKeyResponseTypeDef:
-    return {
-        "KeyMetadata": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeKeyResponseTypeDef(TypedDict):
-    KeyMetadata: KeyMetadataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -533,30 +389,6 @@ class EncryptRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-## EncryptResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import EncryptResponseTypeDef
-
-def get_value() -> EncryptResponseTypeDef:
-    return {
-        "CiphertextBlob": ...,
-        "KeyId": ...,
-        "EncryptionAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EncryptResponseTypeDef(TypedDict):
-    CiphertextBlob: bytes,
-    KeyId: str,
-    EncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateDataKeyPairRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -578,34 +410,6 @@ class GenerateDataKeyPairRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
-## GenerateDataKeyPairResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateDataKeyPairResponseTypeDef
-
-def get_value() -> GenerateDataKeyPairResponseTypeDef:
-    return {
-        "PrivateKeyCiphertextBlob": ...,
-        "PrivateKeyPlaintext": ...,
-        "PublicKey": ...,
-        "KeyId": ...,
-        "KeyPairSpec": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateDataKeyPairResponseTypeDef(TypedDict):
-    PrivateKeyCiphertextBlob: bytes,
-    PrivateKeyPlaintext: bytes,
-    PublicKey: bytes,
-    KeyId: str,
-    KeyPairSpec: DataKeyPairSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateDataKeyPairWithoutPlaintextRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -627,32 +431,6 @@ class GenerateDataKeyPairWithoutPlaintextRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
-## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateDataKeyPairWithoutPlaintextResponseTypeDef
-
-def get_value() -> GenerateDataKeyPairWithoutPlaintextResponseTypeDef:
-    return {
-        "PrivateKeyCiphertextBlob": ...,
-        "PublicKey": ...,
-        "KeyId": ...,
-        "KeyPairSpec": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateDataKeyPairWithoutPlaintextResponseTypeDef(TypedDict):
-    PrivateKeyCiphertextBlob: bytes,
-    PublicKey: bytes,
-    KeyId: str,
-    KeyPairSpec: DataKeyPairSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateDataKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -674,29 +452,6 @@ class GenerateDataKeyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataKeySpecType](./literals.md#datakeyspectype) 
-## GenerateDataKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateDataKeyResponseTypeDef
-
-def get_value() -> GenerateDataKeyResponseTypeDef:
-    return {
-        "CiphertextBlob": ...,
-        "Plaintext": ...,
-        "KeyId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateDataKeyResponseTypeDef(TypedDict):
-    CiphertextBlob: bytes,
-    Plaintext: bytes,
-    KeyId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateDataKeyWithoutPlaintextRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -718,27 +473,6 @@ class GenerateDataKeyWithoutPlaintextRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataKeySpecType](./literals.md#datakeyspectype) 
-## GenerateDataKeyWithoutPlaintextResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateDataKeyWithoutPlaintextResponseTypeDef
-
-def get_value() -> GenerateDataKeyWithoutPlaintextResponseTypeDef:
-    return {
-        "CiphertextBlob": ...,
-        "KeyId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateDataKeyWithoutPlaintextResponseTypeDef(TypedDict):
-    CiphertextBlob: bytes,
-    KeyId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateMacRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -761,30 +495,6 @@ class GenerateMacRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
-## GenerateMacResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateMacResponseTypeDef
-
-def get_value() -> GenerateMacResponseTypeDef:
-    return {
-        "Mac": ...,
-        "MacAlgorithm": ...,
-        "KeyId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateMacResponseTypeDef(TypedDict):
-    Mac: bytes,
-    MacAlgorithm: MacAlgorithmSpecType,  # (1)
-    KeyId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateRandomRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -802,25 +512,6 @@ class GenerateRandomRequestRequestTypeDef(TypedDict):
     CustomKeyStoreId: NotRequired[str],
 ```
 
-## GenerateRandomResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GenerateRandomResponseTypeDef
-
-def get_value() -> GenerateRandomResponseTypeDef:
-    return {
-        "Plaintext": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateRandomResponseTypeDef(TypedDict):
-    Plaintext: bytes,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetKeyPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -839,25 +530,6 @@ class GetKeyPolicyRequestRequestTypeDef(TypedDict):
     PolicyName: str,
 ```
 
-## GetKeyPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GetKeyPolicyResponseTypeDef
-
-def get_value() -> GetKeyPolicyResponseTypeDef:
-    return {
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetKeyPolicyResponseTypeDef(TypedDict):
-    Policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetKeyRotationStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -874,25 +546,6 @@ class GetKeyRotationStatusRequestRequestTypeDef(TypedDict):
     KeyId: str,
 ```
 
-## GetKeyRotationStatusResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GetKeyRotationStatusResponseTypeDef
-
-def get_value() -> GetKeyRotationStatusResponseTypeDef:
-    return {
-        "KeyRotationEnabled": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetKeyRotationStatusResponseTypeDef(TypedDict):
-    KeyRotationEnabled: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetParametersForImportRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -915,31 +568,6 @@ class GetParametersForImportRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AlgorithmSpecType](./literals.md#algorithmspectype) 
 2. See [:material-code-brackets: WrappingKeySpecType](./literals.md#wrappingkeyspectype) 
-## GetParametersForImportResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GetParametersForImportResponseTypeDef
-
-def get_value() -> GetParametersForImportResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "ImportToken": ...,
-        "PublicKey": ...,
-        "ParametersValidTo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetParametersForImportResponseTypeDef(TypedDict):
-    KeyId: str,
-    ImportToken: bytes,
-    PublicKey: bytes,
-    ParametersValidTo: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPublicKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -957,85 +585,6 @@ class GetPublicKeyRequestRequestTypeDef(TypedDict):
     GrantTokens: NotRequired[Sequence[str]],
 ```
 
-## GetPublicKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GetPublicKeyResponseTypeDef
-
-def get_value() -> GetPublicKeyResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "PublicKey": ...,
-        "CustomerMasterKeySpec": ...,
-        "KeySpec": ...,
-        "KeyUsage": ...,
-        "EncryptionAlgorithms": ...,
-        "SigningAlgorithms": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPublicKeyResponseTypeDef(TypedDict):
-    KeyId: str,
-    PublicKey: bytes,
-    CustomerMasterKeySpec: CustomerMasterKeySpecType,  # (1)
-    KeySpec: KeySpecType,  # (2)
-    KeyUsage: KeyUsageTypeType,  # (3)
-    EncryptionAlgorithms: List[EncryptionAlgorithmSpecType],  # (4)
-    SigningAlgorithms: List[SigningAlgorithmSpecType],  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
-2. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
-3. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
-4. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-5. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GrantConstraintsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GrantConstraintsTypeDef
-
-def get_value() -> GrantConstraintsTypeDef:
-    return {
-        "EncryptionContextSubset": ...,
-    }
-```
-
-```python title="Definition"
-class GrantConstraintsTypeDef(TypedDict):
-    EncryptionContextSubset: NotRequired[Mapping[str, str]],
-    EncryptionContextEquals: NotRequired[Mapping[str, str]],
-```
-
-## GrantListEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import GrantListEntryTypeDef
-
-def get_value() -> GrantListEntryTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class GrantListEntryTypeDef(TypedDict):
-    KeyId: NotRequired[str],
-    GrantId: NotRequired[str],
-    Name: NotRequired[str],
-    CreationDate: NotRequired[datetime],
-    GranteePrincipal: NotRequired[str],
-    RetiringPrincipal: NotRequired[str],
-    IssuingAccount: NotRequired[str],
-    Operations: NotRequired[List[GrantOperationType]],  # (1)
-    Constraints: NotRequired[GrantConstraintsTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: GrantOperationType](./literals.md#grantoperationtype) 
-2. See [:material-code-braces: GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef) 
 ## ImportKeyMaterialRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1076,73 +625,24 @@ class KeyListEntryTypeDef(TypedDict):
     KeyArn: NotRequired[str],
 ```
 
-## KeyMetadataTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import KeyMetadataTypeDef
+from mypy_boto3_kms.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> KeyMetadataTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "KeyId": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class KeyMetadataTypeDef(TypedDict):
-    KeyId: str,
-    AWSAccountId: NotRequired[str],
-    Arn: NotRequired[str],
-    CreationDate: NotRequired[datetime],
-    Enabled: NotRequired[bool],
-    Description: NotRequired[str],
-    KeyUsage: NotRequired[KeyUsageTypeType],  # (1)
-    KeyState: NotRequired[KeyStateType],  # (2)
-    DeletionDate: NotRequired[datetime],
-    ValidTo: NotRequired[datetime],
-    Origin: NotRequired[OriginTypeType],  # (3)
-    CustomKeyStoreId: NotRequired[str],
-    CloudHsmClusterId: NotRequired[str],
-    ExpirationModel: NotRequired[ExpirationModelTypeType],  # (4)
-    KeyManager: NotRequired[KeyManagerTypeType],  # (5)
-    CustomerMasterKeySpec: NotRequired[CustomerMasterKeySpecType],  # (6)
-    KeySpec: NotRequired[KeySpecType],  # (7)
-    EncryptionAlgorithms: NotRequired[List[EncryptionAlgorithmSpecType]],  # (8)
-    SigningAlgorithms: NotRequired[List[SigningAlgorithmSpecType]],  # (9)
-    MultiRegion: NotRequired[bool],
-    MultiRegionConfiguration: NotRequired[MultiRegionConfigurationTypeDef],  # (10)
-    PendingDeletionWindowInDays: NotRequired[int],
-    MacAlgorithms: NotRequired[List[MacAlgorithmSpecType]],  # (11)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
-2. See [:material-code-brackets: KeyStateType](./literals.md#keystatetype) 
-3. See [:material-code-brackets: OriginTypeType](./literals.md#origintypetype) 
-4. See [:material-code-brackets: ExpirationModelTypeType](./literals.md#expirationmodeltypetype) 
-5. See [:material-code-brackets: KeyManagerTypeType](./literals.md#keymanagertypetype) 
-6. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
-7. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
-8. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-9. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
-10. See [:material-code-braces: MultiRegionConfigurationTypeDef](./type_defs.md#multiregionconfigurationtypedef) 
-11. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
-## ListAliasesRequestListAliasesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
-
-def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
-    KeyId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1161,50 +661,6 @@ class ListAliasesRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## ListAliasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListAliasesResponseTypeDef
-
-def get_value() -> ListAliasesResponseTypeDef:
-    return {
-        "Aliases": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAliasesResponseTypeDef(TypedDict):
-    Aliases: List[AliasListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AliasListEntryTypeDef](./type_defs.md#aliaslistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGrantsRequestListGrantsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListGrantsRequestListGrantsPaginateTypeDef
-
-def get_value() -> ListGrantsRequestListGrantsPaginateTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class ListGrantsRequestListGrantsPaginateTypeDef(TypedDict):
-    KeyId: str,
-    GrantId: NotRequired[str],
-    GranteePrincipal: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGrantsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1225,48 +681,6 @@ class ListGrantsRequestRequestTypeDef(TypedDict):
     GranteePrincipal: NotRequired[str],
 ```
 
-## ListGrantsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListGrantsResponseTypeDef
-
-def get_value() -> ListGrantsResponseTypeDef:
-    return {
-        "Grants": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGrantsResponseTypeDef(TypedDict):
-    Grants: List[GrantListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GrantListEntryTypeDef](./type_defs.md#grantlistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef
-
-def get_value() -> ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef:
-    return {
-        "KeyId": ...,
-    }
-```
-
-```python title="Definition"
-class ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef(TypedDict):
-    KeyId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListKeyPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1285,46 +699,6 @@ class ListKeyPoliciesRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## ListKeyPoliciesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListKeyPoliciesResponseTypeDef
-
-def get_value() -> ListKeyPoliciesResponseTypeDef:
-    return {
-        "PolicyNames": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListKeyPoliciesResponseTypeDef(TypedDict):
-    PolicyNames: List[str],
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListKeysRequestListKeysPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListKeysRequestListKeysPaginateTypeDef
-
-def get_value() -> ListKeysRequestListKeysPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListKeysRequestListKeysPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1342,30 +716,6 @@ class ListKeysRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## ListKeysResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListKeysResponseTypeDef
-
-def get_value() -> ListKeysResponseTypeDef:
-    return {
-        "Keys": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListKeysResponseTypeDef(TypedDict):
-    Keys: List[KeyListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourceTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1384,30 +734,6 @@ class ListResourceTagsRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## ListResourceTagsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListResourceTagsResponseTypeDef
-
-def get_value() -> ListResourceTagsResponseTypeDef:
-    return {
-        "Tags": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourceTagsResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRetirableGrantsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1426,27 +752,6 @@ class ListRetirableGrantsRequestRequestTypeDef(TypedDict):
     Marker: NotRequired[str],
 ```
 
-## MultiRegionConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import MultiRegionConfigurationTypeDef
-
-def get_value() -> MultiRegionConfigurationTypeDef:
-    return {
-        "MultiRegionKeyType": ...,
-    }
-```
-
-```python title="Definition"
-class MultiRegionConfigurationTypeDef(TypedDict):
-    MultiRegionKeyType: NotRequired[MultiRegionKeyTypeType],  # (1)
-    PrimaryKey: NotRequired[MultiRegionKeyTypeDef],  # (2)
-    ReplicaKeys: NotRequired[List[MultiRegionKeyTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: MultiRegionKeyTypeType](./literals.md#multiregionkeytypetype) 
-2. See [:material-code-braces: MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef) 
-3. See [:material-code-braces: MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef) 
 ## MultiRegionKeyTypeDef
 
 ```python title="Usage Example"
@@ -1462,24 +767,6 @@ def get_value() -> MultiRegionKeyTypeDef:
 class MultiRegionKeyTypeDef(TypedDict):
     Arn: NotRequired[str],
     Region: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## PutKeyPolicyRequestRequestTypeDef
@@ -1529,107 +816,6 @@ class ReEncryptRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
 2. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-## ReEncryptResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ReEncryptResponseTypeDef
-
-def get_value() -> ReEncryptResponseTypeDef:
-    return {
-        "CiphertextBlob": ...,
-        "SourceKeyId": ...,
-        "KeyId": ...,
-        "SourceEncryptionAlgorithm": ...,
-        "DestinationEncryptionAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReEncryptResponseTypeDef(TypedDict):
-    CiphertextBlob: bytes,
-    SourceKeyId: str,
-    KeyId: str,
-    SourceEncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
-    DestinationEncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-2. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ReplicateKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ReplicateKeyRequestRequestTypeDef
-
-def get_value() -> ReplicateKeyRequestRequestTypeDef:
-    return {
-        "KeyId": ...,
-        "ReplicaRegion": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicateKeyRequestRequestTypeDef(TypedDict):
-    KeyId: str,
-    ReplicaRegion: str,
-    Policy: NotRequired[str],
-    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ReplicateKeyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ReplicateKeyResponseTypeDef
-
-def get_value() -> ReplicateKeyResponseTypeDef:
-    return {
-        "ReplicaKeyMetadata": ...,
-        "ReplicaPolicy": ...,
-        "ReplicaTags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicateKeyResponseTypeDef(TypedDict):
-    ReplicaKeyMetadata: KeyMetadataTypeDef,  # (1)
-    ReplicaPolicy: str,
-    ReplicaTags: List[TagTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## RetireGrantRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1683,32 +869,6 @@ class ScheduleKeyDeletionRequestRequestTypeDef(TypedDict):
     PendingWindowInDays: NotRequired[int],
 ```
 
-## ScheduleKeyDeletionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ScheduleKeyDeletionResponseTypeDef
-
-def get_value() -> ScheduleKeyDeletionResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "DeletionDate": ...,
-        "KeyState": ...,
-        "PendingWindowInDays": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduleKeyDeletionResponseTypeDef(TypedDict):
-    KeyId: str,
-    DeletionDate: datetime,
-    KeyState: KeyStateType,  # (1)
-    PendingWindowInDays: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: KeyStateType](./literals.md#keystatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SignRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1733,67 +893,6 @@ class SignRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
 2. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
-## SignResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import SignResponseTypeDef
-
-def get_value() -> SignResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "Signature": ...,
-        "SigningAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SignResponseTypeDef(TypedDict):
-    KeyId: str,
-    Signature: bytes,
-    SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "KeyId": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    KeyId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "TagKey": ...,
-        "TagValue": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    TagKey: str,
-    TagValue: str,
-```
-
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1909,30 +1008,6 @@ class VerifyMacRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
-## VerifyMacResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import VerifyMacResponseTypeDef
-
-def get_value() -> VerifyMacResponseTypeDef:
-    return {
-        "KeyId": ...,
-        "MacValid": ...,
-        "MacAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class VerifyMacResponseTypeDef(TypedDict):
-    KeyId: str,
-    MacValid: bool,
-    MacAlgorithm: MacAlgorithmSpecType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VerifyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1959,6 +1034,503 @@ class VerifyRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
 2. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
+## CancelKeyDeletionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CancelKeyDeletionResponseTypeDef
+
+def get_value() -> CancelKeyDeletionResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelKeyDeletionResponseTypeDef(TypedDict):
+    KeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCustomKeyStoreResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateCustomKeyStoreResponseTypeDef
+
+def get_value() -> CreateCustomKeyStoreResponseTypeDef:
+    return {
+        "CustomKeyStoreId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomKeyStoreResponseTypeDef(TypedDict):
+    CustomKeyStoreId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGrantResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateGrantResponseTypeDef
+
+def get_value() -> CreateGrantResponseTypeDef:
+    return {
+        "GrantToken": ...,
+        "GrantId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGrantResponseTypeDef(TypedDict):
+    GrantToken: str,
+    GrantId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DecryptResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import DecryptResponseTypeDef
+
+def get_value() -> DecryptResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "Plaintext": ...,
+        "EncryptionAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DecryptResponseTypeDef(TypedDict):
+    KeyId: str,
+    Plaintext: bytes,
+    EncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EncryptResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import EncryptResponseTypeDef
+
+def get_value() -> EncryptResponseTypeDef:
+    return {
+        "CiphertextBlob": ...,
+        "KeyId": ...,
+        "EncryptionAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EncryptResponseTypeDef(TypedDict):
+    CiphertextBlob: bytes,
+    KeyId: str,
+    EncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateDataKeyPairResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateDataKeyPairResponseTypeDef
+
+def get_value() -> GenerateDataKeyPairResponseTypeDef:
+    return {
+        "PrivateKeyCiphertextBlob": ...,
+        "PrivateKeyPlaintext": ...,
+        "PublicKey": ...,
+        "KeyId": ...,
+        "KeyPairSpec": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateDataKeyPairResponseTypeDef(TypedDict):
+    PrivateKeyCiphertextBlob: bytes,
+    PrivateKeyPlaintext: bytes,
+    PublicKey: bytes,
+    KeyId: str,
+    KeyPairSpec: DataKeyPairSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateDataKeyPairWithoutPlaintextResponseTypeDef
+
+def get_value() -> GenerateDataKeyPairWithoutPlaintextResponseTypeDef:
+    return {
+        "PrivateKeyCiphertextBlob": ...,
+        "PublicKey": ...,
+        "KeyId": ...,
+        "KeyPairSpec": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateDataKeyPairWithoutPlaintextResponseTypeDef(TypedDict):
+    PrivateKeyCiphertextBlob: bytes,
+    PublicKey: bytes,
+    KeyId: str,
+    KeyPairSpec: DataKeyPairSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DataKeyPairSpecType](./literals.md#datakeypairspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateDataKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateDataKeyResponseTypeDef
+
+def get_value() -> GenerateDataKeyResponseTypeDef:
+    return {
+        "CiphertextBlob": ...,
+        "Plaintext": ...,
+        "KeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateDataKeyResponseTypeDef(TypedDict):
+    CiphertextBlob: bytes,
+    Plaintext: bytes,
+    KeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateDataKeyWithoutPlaintextResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateDataKeyWithoutPlaintextResponseTypeDef
+
+def get_value() -> GenerateDataKeyWithoutPlaintextResponseTypeDef:
+    return {
+        "CiphertextBlob": ...,
+        "KeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateDataKeyWithoutPlaintextResponseTypeDef(TypedDict):
+    CiphertextBlob: bytes,
+    KeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateMacResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateMacResponseTypeDef
+
+def get_value() -> GenerateMacResponseTypeDef:
+    return {
+        "Mac": ...,
+        "MacAlgorithm": ...,
+        "KeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateMacResponseTypeDef(TypedDict):
+    Mac: bytes,
+    MacAlgorithm: MacAlgorithmSpecType,  # (1)
+    KeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GenerateRandomResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GenerateRandomResponseTypeDef
+
+def get_value() -> GenerateRandomResponseTypeDef:
+    return {
+        "Plaintext": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateRandomResponseTypeDef(TypedDict):
+    Plaintext: bytes,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetKeyPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GetKeyPolicyResponseTypeDef
+
+def get_value() -> GetKeyPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetKeyPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetKeyRotationStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GetKeyRotationStatusResponseTypeDef
+
+def get_value() -> GetKeyRotationStatusResponseTypeDef:
+    return {
+        "KeyRotationEnabled": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetKeyRotationStatusResponseTypeDef(TypedDict):
+    KeyRotationEnabled: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetParametersForImportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GetParametersForImportResponseTypeDef
+
+def get_value() -> GetParametersForImportResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "ImportToken": ...,
+        "PublicKey": ...,
+        "ParametersValidTo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetParametersForImportResponseTypeDef(TypedDict):
+    KeyId: str,
+    ImportToken: bytes,
+    PublicKey: bytes,
+    ParametersValidTo: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPublicKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GetPublicKeyResponseTypeDef
+
+def get_value() -> GetPublicKeyResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "PublicKey": ...,
+        "CustomerMasterKeySpec": ...,
+        "KeySpec": ...,
+        "KeyUsage": ...,
+        "EncryptionAlgorithms": ...,
+        "SigningAlgorithms": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPublicKeyResponseTypeDef(TypedDict):
+    KeyId: str,
+    PublicKey: bytes,
+    CustomerMasterKeySpec: CustomerMasterKeySpecType,  # (1)
+    KeySpec: KeySpecType,  # (2)
+    KeyUsage: KeyUsageTypeType,  # (3)
+    EncryptionAlgorithms: List[EncryptionAlgorithmSpecType],  # (4)
+    SigningAlgorithms: List[SigningAlgorithmSpecType],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
+2. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
+3. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
+4. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+5. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListAliasesResponseTypeDef
+
+def get_value() -> ListAliasesResponseTypeDef:
+    return {
+        "Aliases": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesResponseTypeDef(TypedDict):
+    Aliases: List[AliasListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AliasListEntryTypeDef](./type_defs.md#aliaslistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListKeyPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListKeyPoliciesResponseTypeDef
+
+def get_value() -> ListKeyPoliciesResponseTypeDef:
+    return {
+        "PolicyNames": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeyPoliciesResponseTypeDef(TypedDict):
+    PolicyNames: List[str],
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReEncryptResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ReEncryptResponseTypeDef
+
+def get_value() -> ReEncryptResponseTypeDef:
+    return {
+        "CiphertextBlob": ...,
+        "SourceKeyId": ...,
+        "KeyId": ...,
+        "SourceEncryptionAlgorithm": ...,
+        "DestinationEncryptionAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReEncryptResponseTypeDef(TypedDict):
+    CiphertextBlob: bytes,
+    SourceKeyId: str,
+    KeyId: str,
+    SourceEncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
+    DestinationEncryptionAlgorithm: EncryptionAlgorithmSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+2. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ScheduleKeyDeletionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ScheduleKeyDeletionResponseTypeDef
+
+def get_value() -> ScheduleKeyDeletionResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "DeletionDate": ...,
+        "KeyState": ...,
+        "PendingWindowInDays": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ScheduleKeyDeletionResponseTypeDef(TypedDict):
+    KeyId: str,
+    DeletionDate: datetime,
+    KeyState: KeyStateType,  # (1)
+    PendingWindowInDays: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: KeyStateType](./literals.md#keystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SignResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import SignResponseTypeDef
+
+def get_value() -> SignResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "Signature": ...,
+        "SigningAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SignResponseTypeDef(TypedDict):
+    KeyId: str,
+    Signature: bytes,
+    SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VerifyMacResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import VerifyMacResponseTypeDef
+
+def get_value() -> VerifyMacResponseTypeDef:
+    return {
+        "KeyId": ...,
+        "MacValid": ...,
+        "MacAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class VerifyMacResponseTypeDef(TypedDict):
+    KeyId: str,
+    MacValid: bool,
+    MacAlgorithm: MacAlgorithmSpecType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VerifyResponseTypeDef
 
 ```python title="Usage Example"
@@ -1983,3 +1555,431 @@ class VerifyResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGrantRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateGrantRequestRequestTypeDef
+
+def get_value() -> CreateGrantRequestRequestTypeDef:
+    return {
+        "KeyId": ...,
+        "GranteePrincipal": ...,
+        "Operations": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGrantRequestRequestTypeDef(TypedDict):
+    KeyId: str,
+    GranteePrincipal: str,
+    Operations: Sequence[GrantOperationType],  # (1)
+    RetiringPrincipal: NotRequired[str],
+    Constraints: NotRequired[GrantConstraintsTypeDef],  # (2)
+    GrantTokens: NotRequired[Sequence[str]],
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-brackets: GrantOperationType](./literals.md#grantoperationtype) 
+2. See [:material-code-braces: GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef) 
+## GrantListEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import GrantListEntryTypeDef
+
+def get_value() -> GrantListEntryTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class GrantListEntryTypeDef(TypedDict):
+    KeyId: NotRequired[str],
+    GrantId: NotRequired[str],
+    Name: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    GranteePrincipal: NotRequired[str],
+    RetiringPrincipal: NotRequired[str],
+    IssuingAccount: NotRequired[str],
+    Operations: NotRequired[List[GrantOperationType]],  # (1)
+    Constraints: NotRequired[GrantConstraintsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GrantOperationType](./literals.md#grantoperationtype) 
+2. See [:material-code-braces: GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef) 
+## CreateKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateKeyRequestRequestTypeDef
+
+def get_value() -> CreateKeyRequestRequestTypeDef:
+    return {
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class CreateKeyRequestRequestTypeDef(TypedDict):
+    Policy: NotRequired[str],
+    Description: NotRequired[str],
+    KeyUsage: NotRequired[KeyUsageTypeType],  # (1)
+    CustomerMasterKeySpec: NotRequired[CustomerMasterKeySpecType],  # (2)
+    KeySpec: NotRequired[KeySpecType],  # (3)
+    Origin: NotRequired[OriginTypeType],  # (4)
+    CustomKeyStoreId: NotRequired[str],
+    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    MultiRegion: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
+2. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
+3. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
+4. See [:material-code-brackets: OriginTypeType](./literals.md#origintypetype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListResourceTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListResourceTagsResponseTypeDef
+
+def get_value() -> ListResourceTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicateKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ReplicateKeyRequestRequestTypeDef
+
+def get_value() -> ReplicateKeyRequestRequestTypeDef:
+    return {
+        "KeyId": ...,
+        "ReplicaRegion": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicateKeyRequestRequestTypeDef(TypedDict):
+    KeyId: str,
+    ReplicaRegion: str,
+    Policy: NotRequired[str],
+    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "KeyId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    KeyId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeCustomKeyStoresResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
+
+def get_value() -> DescribeCustomKeyStoresResponseTypeDef:
+    return {
+        "CustomKeyStores": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCustomKeyStoresResponseTypeDef(TypedDict):
+    CustomKeyStores: List[CustomKeyStoresListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListKeysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListKeysResponseTypeDef
+
+def get_value() -> ListKeysResponseTypeDef:
+    return {
+        "Keys": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysResponseTypeDef(TypedDict):
+    Keys: List[KeyListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAliasesRequestListAliasesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
+
+def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
+    KeyId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListGrantsRequestListGrantsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListGrantsRequestListGrantsPaginateTypeDef
+
+def get_value() -> ListGrantsRequestListGrantsPaginateTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class ListGrantsRequestListGrantsPaginateTypeDef(TypedDict):
+    KeyId: str,
+    GrantId: NotRequired[str],
+    GranteePrincipal: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef
+
+def get_value() -> ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef(TypedDict):
+    KeyId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListKeysRequestListKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListKeysRequestListKeysPaginateTypeDef
+
+def get_value() -> ListKeysRequestListKeysPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysRequestListKeysPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## MultiRegionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import MultiRegionConfigurationTypeDef
+
+def get_value() -> MultiRegionConfigurationTypeDef:
+    return {
+        "MultiRegionKeyType": ...,
+    }
+```
+
+```python title="Definition"
+class MultiRegionConfigurationTypeDef(TypedDict):
+    MultiRegionKeyType: NotRequired[MultiRegionKeyTypeType],  # (1)
+    PrimaryKey: NotRequired[MultiRegionKeyTypeDef],  # (2)
+    ReplicaKeys: NotRequired[List[MultiRegionKeyTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: MultiRegionKeyTypeType](./literals.md#multiregionkeytypetype) 
+2. See [:material-code-braces: MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef) 
+3. See [:material-code-braces: MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef) 
+## ListGrantsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListGrantsResponseTypeDef
+
+def get_value() -> ListGrantsResponseTypeDef:
+    return {
+        "Grants": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGrantsResponseTypeDef(TypedDict):
+    Grants: List[GrantListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GrantListEntryTypeDef](./type_defs.md#grantlistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## KeyMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import KeyMetadataTypeDef
+
+def get_value() -> KeyMetadataTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class KeyMetadataTypeDef(TypedDict):
+    KeyId: str,
+    AWSAccountId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    Enabled: NotRequired[bool],
+    Description: NotRequired[str],
+    KeyUsage: NotRequired[KeyUsageTypeType],  # (1)
+    KeyState: NotRequired[KeyStateType],  # (2)
+    DeletionDate: NotRequired[datetime],
+    ValidTo: NotRequired[datetime],
+    Origin: NotRequired[OriginTypeType],  # (3)
+    CustomKeyStoreId: NotRequired[str],
+    CloudHsmClusterId: NotRequired[str],
+    ExpirationModel: NotRequired[ExpirationModelTypeType],  # (4)
+    KeyManager: NotRequired[KeyManagerTypeType],  # (5)
+    CustomerMasterKeySpec: NotRequired[CustomerMasterKeySpecType],  # (6)
+    KeySpec: NotRequired[KeySpecType],  # (7)
+    EncryptionAlgorithms: NotRequired[List[EncryptionAlgorithmSpecType]],  # (8)
+    SigningAlgorithms: NotRequired[List[SigningAlgorithmSpecType]],  # (9)
+    MultiRegion: NotRequired[bool],
+    MultiRegionConfiguration: NotRequired[MultiRegionConfigurationTypeDef],  # (10)
+    PendingDeletionWindowInDays: NotRequired[int],
+    MacAlgorithms: NotRequired[List[MacAlgorithmSpecType]],  # (11)
+```
+
+1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
+2. See [:material-code-brackets: KeyStateType](./literals.md#keystatetype) 
+3. See [:material-code-brackets: OriginTypeType](./literals.md#origintypetype) 
+4. See [:material-code-brackets: ExpirationModelTypeType](./literals.md#expirationmodeltypetype) 
+5. See [:material-code-brackets: KeyManagerTypeType](./literals.md#keymanagertypetype) 
+6. See [:material-code-brackets: CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype) 
+7. See [:material-code-brackets: KeySpecType](./literals.md#keyspectype) 
+8. See [:material-code-brackets: EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype) 
+9. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
+10. See [:material-code-braces: MultiRegionConfigurationTypeDef](./type_defs.md#multiregionconfigurationtypedef) 
+11. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
+## CreateKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateKeyResponseTypeDef
+
+def get_value() -> CreateKeyResponseTypeDef:
+    return {
+        "KeyMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateKeyResponseTypeDef(TypedDict):
+    KeyMetadata: KeyMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import DescribeKeyResponseTypeDef
+
+def get_value() -> DescribeKeyResponseTypeDef:
+    return {
+        "KeyMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeKeyResponseTypeDef(TypedDict):
+    KeyMetadata: KeyMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicateKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ReplicateKeyResponseTypeDef
+
+def get_value() -> ReplicateKeyResponseTypeDef:
+    return {
+        "ReplicaKeyMetadata": ...,
+        "ReplicaPolicy": ...,
+        "ReplicaTags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicateKeyResponseTypeDef(TypedDict):
+    ReplicaKeyMetadata: KeyMetadataTypeDef,  # (1)
+    ReplicaPolicy: str,
+    ReplicaTags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

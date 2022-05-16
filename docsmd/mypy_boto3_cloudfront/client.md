@@ -110,6 +110,7 @@ except (
     client.StreamingDistributionAlreadyExists,
     client.StreamingDistributionNotDisabled,
     client.TestFunctionFailed,
+    client.TooLongCSPInResponseHeadersPolicy,
     client.TooManyCacheBehaviors,
     client.TooManyCachePolicies,
     client.TooManyCertificates,

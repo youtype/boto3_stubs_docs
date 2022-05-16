@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36090,33 +36090,21 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_efs.type_defs</span> <span class="kn">import</span> <span class="n">AccessPointDescriptionResponseMetadataTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_efs.type_defs</span> <span class="kn">import</span> <span class="n">PosixUserTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessPointDescriptionResponseMetadataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PosixUserTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ClientToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="s2">&quot;AccessPointId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="s2">&quot;AccessPointArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        <span class="s2">&quot;FileSystemId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="s2">&quot;PosixUser&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        <span class="s2">&quot;RootDirectory&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>        <span class="s2">&quot;OwnerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>        <span class="s2">&quot;LifeCycleState&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Uid&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;Gid&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#accesspointdescriptionresponsemetadatatypedef">AccessPointDescriptionResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#accesspointdescriptiontypedef">AccessPointDescriptionTypeDef</a></li>
-<li><a href="type_defs/#backuppolicydescriptiontypedef">BackupPolicyDescriptionTypeDef</a></li>
+<li><a href="type_defs/#posixusertypedef">PosixUserTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#backuppolicytypedef">BackupPolicyTypeDef</a></li>
-<li><a href="type_defs/#createaccesspointrequestrequesttypedef">CreateAccessPointRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createfilesystemrequestrequesttypedef">CreateFileSystemRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmounttargetrequestrequesttypedef">CreateMountTargetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createreplicationconfigurationrequestrequesttypedef">CreateReplicationConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtagsrequestrequesttypedef">CreateTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#destinationtocreatetypedef">DestinationToCreateTypeDef</a></li>
 <li><a href="type_defs/#creationinfotypedef">CreationInfoTypeDef</a></li>
 <li><a href="type_defs/#deleteaccesspointrequestrequesttypedef">DeleteAccessPointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefilesystempolicyrequestrequesttypedef">DeleteFileSystemPolicyRequestRequestTypeDef</a></li>
@@ -36125,54 +36113,57 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletereplicationconfigurationrequestrequesttypedef">DeleteReplicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetagsrequestrequesttypedef">DeleteTagsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeaccesspointsrequestrequesttypedef">DescribeAccessPointsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeaccesspointsresponsetypedef">DescribeAccessPointsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeaccountpreferencesrequestrequesttypedef">DescribeAccountPreferencesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeaccountpreferencesresponsetypedef">DescribeAccountPreferencesResponseTypeDef</a></li>
+<li><a href="type_defs/#resourceidpreferencetypedef">ResourceIdPreferenceTypeDef</a></li>
 <li><a href="type_defs/#describebackuppolicyrequestrequesttypedef">DescribeBackupPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describefilesystempolicyrequestrequesttypedef">DescribeFileSystemPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describefilesystemsrequestdescribefilesystemspaginatetypedef">DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describefilesystemsrequestrequesttypedef">DescribeFileSystemsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describefilesystemsresponsetypedef">DescribeFileSystemsResponseTypeDef</a></li>
 <li><a href="type_defs/#describelifecycleconfigurationrequestrequesttypedef">DescribeLifecycleConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describemounttargetsecuritygroupsrequestrequesttypedef">DescribeMountTargetSecurityGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describemounttargetsecuritygroupsresponsetypedef">DescribeMountTargetSecurityGroupsResponseTypeDef</a></li>
-<li><a href="type_defs/#describemounttargetsrequestdescribemounttargetspaginatetypedef">DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describemounttargetsrequestrequesttypedef">DescribeMountTargetsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describemounttargetsresponsetypedef">DescribeMountTargetsResponseTypeDef</a></li>
+<li><a href="type_defs/#mounttargetdescriptiontypedef">MountTargetDescriptionTypeDef</a></li>
 <li><a href="type_defs/#describereplicationconfigurationsrequestrequesttypedef">DescribeReplicationConfigurationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describereplicationconfigurationsresponsetypedef">DescribeReplicationConfigurationsResponseTypeDef</a></li>
-<li><a href="type_defs/#describetagsrequestdescribetagspaginatetypedef">DescribeTagsRequestDescribeTagsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describetagsrequestrequesttypedef">DescribeTagsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetagsresponsetypedef">DescribeTagsResponseTypeDef</a></li>
-<li><a href="type_defs/#destinationtocreatetypedef">DestinationToCreateTypeDef</a></li>
 <li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
-<li><a href="type_defs/#filesystemdescriptionresponsemetadatatypedef">FileSystemDescriptionResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#filesystemdescriptiontypedef">FileSystemDescriptionTypeDef</a></li>
-<li><a href="type_defs/#filesystempolicydescriptiontypedef">FileSystemPolicyDescriptionTypeDef</a></li>
 <li><a href="type_defs/#filesystemsizetypedef">FileSystemSizeTypeDef</a></li>
-<li><a href="type_defs/#lifecycleconfigurationdescriptiontypedef">LifecycleConfigurationDescriptionTypeDef</a></li>
 <li><a href="type_defs/#lifecyclepolicytypedef">LifecyclePolicyTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#modifymounttargetsecuritygroupsrequestrequesttypedef">ModifyMountTargetSecurityGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#mounttargetdescriptionresponsemetadatatypedef">MountTargetDescriptionResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#mounttargetdescriptiontypedef">MountTargetDescriptionTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#posixusertypedef">PosixUserTypeDef</a></li>
 <li><a href="type_defs/#putaccountpreferencesrequestrequesttypedef">PutAccountPreferencesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putaccountpreferencesresponsetypedef">PutAccountPreferencesResponseTypeDef</a></li>
-<li><a href="type_defs/#putbackuppolicyrequestrequesttypedef">PutBackupPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putfilesystempolicyrequestrequesttypedef">PutFileSystemPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putlifecycleconfigurationrequestrequesttypedef">PutLifecycleConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#replicationconfigurationdescriptionresponsemetadatatypedef">ReplicationConfigurationDescriptionResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#replicationconfigurationdescriptiontypedef">ReplicationConfigurationDescriptionTypeDef</a></li>
-<li><a href="type_defs/#resourceidpreferencetypedef">ResourceIdPreferenceTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#rootdirectorytypedef">RootDirectoryTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefilesystemrequestrequesttypedef">UpdateFileSystemRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describemounttargetsecuritygroupsresponsetypedef">DescribeMountTargetSecurityGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#filesystempolicydescriptiontypedef">FileSystemPolicyDescriptionTypeDef</a></li>
+<li><a href="type_defs/#mounttargetdescriptionresponsemetadatatypedef">MountTargetDescriptionResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#createfilesystemrequestrequesttypedef">CreateFileSystemRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtagsrequestrequesttypedef">CreateTagsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describetagsresponsetypedef">DescribeTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#backuppolicydescriptiontypedef">BackupPolicyDescriptionTypeDef</a></li>
+<li><a href="type_defs/#putbackuppolicyrequestrequesttypedef">PutBackupPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createreplicationconfigurationrequestrequesttypedef">CreateReplicationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#rootdirectorytypedef">RootDirectoryTypeDef</a></li>
+<li><a href="type_defs/#describeaccountpreferencesresponsetypedef">DescribeAccountPreferencesResponseTypeDef</a></li>
+<li><a href="type_defs/#putaccountpreferencesresponsetypedef">PutAccountPreferencesResponseTypeDef</a></li>
+<li><a href="type_defs/#describefilesystemsrequestdescribefilesystemspaginatetypedef">DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describemounttargetsrequestdescribemounttargetspaginatetypedef">DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describetagsrequestdescribetagspaginatetypedef">DescribeTagsRequestDescribeTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describemounttargetsresponsetypedef">DescribeMountTargetsResponseTypeDef</a></li>
+<li><a href="type_defs/#replicationconfigurationdescriptionresponsemetadatatypedef">ReplicationConfigurationDescriptionResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#replicationconfigurationdescriptiontypedef">ReplicationConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#filesystemdescriptionresponsemetadatatypedef">FileSystemDescriptionResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#filesystemdescriptiontypedef">FileSystemDescriptionTypeDef</a></li>
+<li><a href="type_defs/#lifecycleconfigurationdescriptiontypedef">LifecycleConfigurationDescriptionTypeDef</a></li>
+<li><a href="type_defs/#putlifecycleconfigurationrequestrequesttypedef">PutLifecycleConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#accesspointdescriptionresponsemetadatatypedef">AccessPointDescriptionResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#accesspointdescriptiontypedef">AccessPointDescriptionTypeDef</a></li>
+<li><a href="type_defs/#createaccesspointrequestrequesttypedef">CreateAccessPointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describereplicationconfigurationsresponsetypedef">DescribeReplicationConfigurationsResponseTypeDef</a></li>
+<li><a href="type_defs/#describefilesystemsresponsetypedef">DescribeFileSystemsResponseTypeDef</a></li>
+<li><a href="type_defs/#describeaccesspointsresponsetypedef">DescribeAccessPointsResponseTypeDef</a></li>
 </ul>
 
               
@@ -36242,7 +36233,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

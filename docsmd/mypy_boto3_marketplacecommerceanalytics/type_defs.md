@@ -34,25 +34,6 @@ class GenerateDataSetRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataSetTypeType](./literals.md#datasettypetype) 
-## GenerateDataSetResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef
-
-def get_value() -> GenerateDataSetResultTypeDef:
-    return {
-        "dataSetRequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GenerateDataSetResultTypeDef(TypedDict):
-    dataSetRequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -104,6 +85,25 @@ class StartSupportDataExportRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SupportDataSetTypeType](./literals.md#supportdatasettypetype) 
+## GenerateDataSetResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef
+
+def get_value() -> GenerateDataSetResultTypeDef:
+    return {
+        "dataSetRequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GenerateDataSetResultTypeDef(TypedDict):
+    dataSetRequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSupportDataExportResultTypeDef
 
 ```python title="Usage Example"

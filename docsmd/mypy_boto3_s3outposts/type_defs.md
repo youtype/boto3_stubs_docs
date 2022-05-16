@@ -30,6 +30,117 @@ class CreateEndpointRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EndpointAccessTypeType](./literals.md#endpointaccesstypetype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## DeleteEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import DeleteEndpointRequestRequestTypeDef
+
+def get_value() -> DeleteEndpointRequestRequestTypeDef:
+    return {
+        "EndpointId": ...,
+        "OutpostId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteEndpointRequestRequestTypeDef(TypedDict):
+    EndpointId: str,
+    OutpostId: str,
+```
+
+## NetworkInterfaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    NetworkInterfaceId: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ListEndpointsRequestRequestTypeDef
+
+def get_value() -> ListEndpointsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListEndpointsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListSharedEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsRequestRequestTypeDef
+
+def get_value() -> ListSharedEndpointsRequestRequestTypeDef:
+    return {
+        "OutpostId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSharedEndpointsRequestRequestTypeDef(TypedDict):
+    OutpostId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
 ## CreateEndpointResultTypeDef
 
 ```python title="Usage Example"
@@ -49,24 +160,6 @@ class CreateEndpointResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteEndpointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import DeleteEndpointRequestRequestTypeDef
-
-def get_value() -> DeleteEndpointRequestRequestTypeDef:
-    return {
-        "EndpointId": ...,
-        "OutpostId": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteEndpointRequestRequestTypeDef(TypedDict):
-    EndpointId: str,
-    OutpostId: str,
-```
-
 ## EndpointTypeDef
 
 ```python title="Usage Example"
@@ -113,23 +206,24 @@ class ListEndpointsRequestListEndpointsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListEndpointsRequestRequestTypeDef
+## ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import ListEndpointsRequestRequestTypeDef
+from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef
 
-def get_value() -> ListEndpointsRequestRequestTypeDef:
+def get_value() -> ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef:
     return {
-        "NextToken": ...,
+        "OutpostId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListEndpointsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
+class ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef(TypedDict):
+    OutpostId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEndpointsResultTypeDef
 
 ```python title="Usage Example"
@@ -152,42 +246,6 @@ class ListEndpointsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef
-
-def get_value() -> ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef:
-    return {
-        "OutpostId": ...,
-    }
-```
-
-```python title="Definition"
-class ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef(TypedDict):
-    OutpostId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListSharedEndpointsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsRequestRequestTypeDef
-
-def get_value() -> ListSharedEndpointsRequestRequestTypeDef:
-    return {
-        "OutpostId": ...,
-    }
-```
-
-```python title="Definition"
-class ListSharedEndpointsRequestRequestTypeDef(TypedDict):
-    OutpostId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
 ## ListSharedEndpointsResultTypeDef
 
 ```python title="Usage Example"
@@ -210,61 +268,3 @@ class ListSharedEndpointsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkInterfaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import NetworkInterfaceTypeDef
-
-def get_value() -> NetworkInterfaceTypeDef:
-    return {
-        "NetworkInterfaceId": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceTypeDef(TypedDict):
-    NetworkInterfaceId: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3outposts.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-

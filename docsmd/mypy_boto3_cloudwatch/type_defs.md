@@ -30,52 +30,42 @@ class AlarmHistoryItemTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
-## AnomalyDetectorConfigurationTypeDef
+## RangeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorConfigurationTypeDef
+from mypy_boto3_cloudwatch.type_defs import RangeTypeDef
 
-def get_value() -> AnomalyDetectorConfigurationTypeDef:
+def get_value() -> RangeTypeDef:
     return {
-        "ExcludedTimeRanges": ...,
+        "StartTime": ...,
+        "EndTime": ...,
     }
 ```
 
 ```python title="Definition"
-class AnomalyDetectorConfigurationTypeDef(TypedDict):
-    ExcludedTimeRanges: NotRequired[List[RangeTypeDef]],  # (1)
-    MetricTimezone: NotRequired[str],
+class RangeTypeDef(TypedDict):
+    StartTime: datetime,
+    EndTime: datetime,
 ```
 
-1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
-## AnomalyDetectorTypeDef
+## DimensionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorTypeDef
+from mypy_boto3_cloudwatch.type_defs import DimensionTypeDef
 
-def get_value() -> AnomalyDetectorTypeDef:
+def get_value() -> DimensionTypeDef:
     return {
-        "Namespace": ...,
+        "Name": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class AnomalyDetectorTypeDef(TypedDict):
-    Namespace: NotRequired[str],
-    MetricName: NotRequired[str],
-    Dimensions: NotRequired[List[DimensionTypeDef]],  # (1)
-    Stat: NotRequired[str],
-    Configuration: NotRequired[AnomalyDetectorConfigurationTypeDef],  # (2)
-    StateValue: NotRequired[AnomalyDetectorStateValueType],  # (3)
-    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (4)
-    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (5)
+class DimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-2. See [:material-code-braces: AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef) 
-3. See [:material-code-brackets: AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype) 
-4. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
-5. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
 ## CompositeAlarmTypeDef
 
 ```python title="Usage Example"
@@ -181,30 +171,6 @@ class DeleteAlarmsInputRequestTypeDef(TypedDict):
     AlarmNames: Sequence[str],
 ```
 
-## DeleteAnomalyDetectorInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DeleteAnomalyDetectorInputRequestTypeDef
-
-def get_value() -> DeleteAnomalyDetectorInputRequestTypeDef:
-    return {
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteAnomalyDetectorInputRequestTypeDef(TypedDict):
-    Namespace: NotRequired[str],
-    MetricName: NotRequired[str],
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
-    Stat: NotRequired[str],
-    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (2)
-    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-2. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
-3. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
 ## DeleteDashboardsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -237,26 +203,49 @@ class DeleteInsightRulesInputRequestTypeDef(TypedDict):
     RuleNames: Sequence[str],
 ```
 
-## DeleteInsightRulesOutputTypeDef
+## PartialFailureTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import PartialFailureTypeDef
 
-def get_value() -> DeleteInsightRulesOutputTypeDef:
+def get_value() -> PartialFailureTypeDef:
     return {
-        "Failures": ...,
-        "ResponseMetadata": ...,
+        "FailureResource": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteInsightRulesOutputTypeDef(TypedDict):
-    Failures: List[PartialFailureTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PartialFailureTypeDef(TypedDict):
+    FailureResource: NotRequired[str],
+    ExceptionType: NotRequired[str],
+    FailureCode: NotRequired[str],
+    FailureDescription: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## DeleteMetricStreamInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -298,32 +287,24 @@ class DescribeAlarmHistoryInputAlarmDescribeHistoryTypeDef(TypedDict):
 1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
 3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
-## DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef
+from mypy_boto3_cloudwatch.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "AlarmName": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef(TypedDict):
-    AlarmName: NotRequired[str],
-    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
-    HistoryItemType: NotRequired[HistoryItemTypeType],  # (2)
-    StartDate: NotRequired[Union[datetime, str]],
-    EndDate: NotRequired[Union[datetime, str]],
-    ScanBy: NotRequired[ScanByType],  # (3)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
-2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
-3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAlarmHistoryInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -350,156 +331,23 @@ class DescribeAlarmHistoryInputRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
 3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
-## DescribeAlarmHistoryOutputTypeDef
+## WaiterConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import WaiterConfigTypeDef
 
-def get_value() -> DescribeAlarmHistoryOutputTypeDef:
+def get_value() -> WaiterConfigTypeDef:
     return {
-        "AlarmHistoryItems": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Delay": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAlarmHistoryOutputTypeDef(TypedDict):
-    AlarmHistoryItems: List[AlarmHistoryItemTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
 ```
 
-1. See [:material-code-braces: AlarmHistoryItemTypeDef](./type_defs.md#alarmhistoryitemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAlarmsForMetricInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricInputRequestTypeDef
-
-def get_value() -> DescribeAlarmsForMetricInputRequestTypeDef:
-    return {
-        "MetricName": ...,
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsForMetricInputRequestTypeDef(TypedDict):
-    MetricName: str,
-    Namespace: str,
-    Statistic: NotRequired[StatisticType],  # (1)
-    ExtendedStatistic: NotRequired[str],
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (2)
-    Period: NotRequired[int],
-    Unit: NotRequired[StandardUnitType],  # (3)
-```
-
-1. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
-2. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
-## DescribeAlarmsForMetricOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricOutputTypeDef
-
-def get_value() -> DescribeAlarmsForMetricOutputTypeDef:
-    return {
-        "MetricAlarms": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsForMetricOutputTypeDef(TypedDict):
-    MetricAlarms: List[MetricAlarmTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MetricAlarmTypeDef](./type_defs.md#metricalarmtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAlarmsInputAlarmExistsWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputAlarmExistsWaitTypeDef
-
-def get_value() -> DescribeAlarmsInputAlarmExistsWaitTypeDef:
-    return {
-        "AlarmNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsInputAlarmExistsWaitTypeDef(TypedDict):
-    AlarmNames: NotRequired[Sequence[str]],
-    AlarmNamePrefix: NotRequired[str],
-    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
-    ChildrenOfAlarmName: NotRequired[str],
-    ParentsOfAlarmName: NotRequired[str],
-    StateValue: NotRequired[StateValueType],  # (2)
-    ActionPrefix: NotRequired[str],
-    MaxRecords: NotRequired[int],
-    NextToken: NotRequired[str],
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
-2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef
-
-def get_value() -> DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef:
-    return {
-        "AlarmNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef(TypedDict):
-    AlarmNames: NotRequired[Sequence[str]],
-    AlarmNamePrefix: NotRequired[str],
-    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
-    ChildrenOfAlarmName: NotRequired[str],
-    ParentsOfAlarmName: NotRequired[str],
-    StateValue: NotRequired[StateValueType],  # (2)
-    ActionPrefix: NotRequired[str],
-    MaxRecords: NotRequired[int],
-    NextToken: NotRequired[str],
-    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
-2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
-## DescribeAlarmsInputDescribeAlarmsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputDescribeAlarmsPaginateTypeDef
-
-def get_value() -> DescribeAlarmsInputDescribeAlarmsPaginateTypeDef:
-    return {
-        "AlarmNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsInputDescribeAlarmsPaginateTypeDef(TypedDict):
-    AlarmNames: NotRequired[Sequence[str]],
-    AlarmNamePrefix: NotRequired[str],
-    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
-    ChildrenOfAlarmName: NotRequired[str],
-    ParentsOfAlarmName: NotRequired[str],
-    StateValue: NotRequired[StateValueType],  # (2)
-    ActionPrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
-2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAlarmsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -526,76 +374,6 @@ class DescribeAlarmsInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-## DescribeAlarmsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsOutputTypeDef
-
-def get_value() -> DescribeAlarmsOutputTypeDef:
-    return {
-        "CompositeAlarms": ...,
-        "MetricAlarms": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAlarmsOutputTypeDef(TypedDict):
-    CompositeAlarms: List[CompositeAlarmTypeDef],  # (1)
-    MetricAlarms: List[MetricAlarmTypeDef],  # (2)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: CompositeAlarmTypeDef](./type_defs.md#compositealarmtypedef) 
-2. See [:material-code-braces: MetricAlarmTypeDef](./type_defs.md#metricalarmtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAnomalyDetectorsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsInputRequestTypeDef
-
-def get_value() -> DescribeAnomalyDetectorsInputRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnomalyDetectorsInputRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-    Namespace: NotRequired[str],
-    MetricName: NotRequired[str],
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
-    AnomalyDetectorTypes: NotRequired[Sequence[AnomalyDetectorTypeType]],  # (2)
-```
-
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-2. See [:material-code-brackets: AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype) 
-## DescribeAnomalyDetectorsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsOutputTypeDef
-
-def get_value() -> DescribeAnomalyDetectorsOutputTypeDef:
-    return {
-        "AnomalyDetectors": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnomalyDetectorsOutputTypeDef(TypedDict):
-    AnomalyDetectors: List[AnomalyDetectorTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AnomalyDetectorTypeDef](./type_defs.md#anomalydetectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInsightRulesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -613,28 +391,28 @@ class DescribeInsightRulesInputRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeInsightRulesOutputTypeDef
+## InsightRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DescribeInsightRulesOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import InsightRuleTypeDef
 
-def get_value() -> DescribeInsightRulesOutputTypeDef:
+def get_value() -> InsightRuleTypeDef:
     return {
-        "NextToken": ...,
-        "InsightRules": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
+        "State": ...,
+        "Schema": ...,
+        "Definition": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeInsightRulesOutputTypeDef(TypedDict):
-    NextToken: str,
-    InsightRules: List[InsightRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class InsightRuleTypeDef(TypedDict):
+    Name: str,
+    State: str,
+    Schema: str,
+    Definition: str,
 ```
 
-1. See [:material-code-braces: InsightRuleTypeDef](./type_defs.md#insightruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionFilterTypeDef
 
 ```python title="Usage Example"
@@ -650,24 +428,6 @@ def get_value() -> DimensionFilterTypeDef:
 class DimensionFilterTypeDef(TypedDict):
     Name: str,
     Value: NotRequired[str],
-```
-
-## DimensionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DimensionTypeDef
-
-def get_value() -> DimensionTypeDef:
-    return {
-        "Name": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class DimensionTypeDef(TypedDict):
-    Name: str,
-    Value: str,
 ```
 
 ## DisableAlarmActionsInputRequestTypeDef
@@ -702,26 +462,6 @@ class DisableInsightRulesInputRequestTypeDef(TypedDict):
     RuleNames: Sequence[str],
 ```
 
-## DisableInsightRulesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesOutputTypeDef
-
-def get_value() -> DisableInsightRulesOutputTypeDef:
-    return {
-        "Failures": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DisableInsightRulesOutputTypeDef(TypedDict):
-    Failures: List[PartialFailureTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableAlarmActionsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -754,26 +494,6 @@ class EnableInsightRulesInputRequestTypeDef(TypedDict):
     RuleNames: Sequence[str],
 ```
 
-## EnableInsightRulesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesOutputTypeDef
-
-def get_value() -> EnableInsightRulesOutputTypeDef:
-    return {
-        "Failures": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EnableInsightRulesOutputTypeDef(TypedDict):
-    Failures: List[PartialFailureTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDashboardInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -790,29 +510,6 @@ class GetDashboardInputRequestTypeDef(TypedDict):
     DashboardName: str,
 ```
 
-## GetDashboardOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetDashboardOutputTypeDef
-
-def get_value() -> GetDashboardOutputTypeDef:
-    return {
-        "DashboardArn": ...,
-        "DashboardBody": ...,
-        "DashboardName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDashboardOutputTypeDef(TypedDict):
-    DashboardArn: str,
-    DashboardBody: str,
-    DashboardName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightRuleReportInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -838,116 +535,471 @@ class GetInsightRuleReportInputRequestTypeDef(TypedDict):
     OrderBy: NotRequired[str],
 ```
 
-## GetInsightRuleReportOutputTypeDef
+## InsightRuleMetricDatapointTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetInsightRuleReportOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import InsightRuleMetricDatapointTypeDef
 
-def get_value() -> GetInsightRuleReportOutputTypeDef:
+def get_value() -> InsightRuleMetricDatapointTypeDef:
     return {
-        "KeyLabels": ...,
-        "AggregationStatistic": ...,
-        "AggregateValue": ...,
-        "ApproximateUniqueCount": ...,
-        "Contributors": ...,
-        "MetricDatapoints": ...,
-        "ResponseMetadata": ...,
+        "Timestamp": ...,
     }
 ```
 
 ```python title="Definition"
-class GetInsightRuleReportOutputTypeDef(TypedDict):
-    KeyLabels: List[str],
-    AggregationStatistic: str,
-    AggregateValue: float,
-    ApproximateUniqueCount: int,
-    Contributors: List[InsightRuleContributorTypeDef],  # (1)
-    MetricDatapoints: List[InsightRuleMetricDatapointTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class InsightRuleMetricDatapointTypeDef(TypedDict):
+    Timestamp: datetime,
+    UniqueContributors: NotRequired[float],
+    MaxContributorValue: NotRequired[float],
+    SampleCount: NotRequired[float],
+    Average: NotRequired[float],
+    Sum: NotRequired[float],
+    Minimum: NotRequired[float],
+    Maximum: NotRequired[float],
 ```
 
-1. See [:material-code-braces: InsightRuleContributorTypeDef](./type_defs.md#insightrulecontributortypedef) 
-2. See [:material-code-braces: InsightRuleMetricDatapointTypeDef](./type_defs.md#insightrulemetricdatapointtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMetricDataInputGetMetricDataPaginateTypeDef
+## LabelOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricDataInputGetMetricDataPaginateTypeDef
+from mypy_boto3_cloudwatch.type_defs import LabelOptionsTypeDef
 
-def get_value() -> GetMetricDataInputGetMetricDataPaginateTypeDef:
+def get_value() -> LabelOptionsTypeDef:
     return {
-        "MetricDataQueries": ...,
-        "StartTime": ...,
-        "EndTime": ...,
+        "Timezone": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMetricDataInputGetMetricDataPaginateTypeDef(TypedDict):
-    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
-    StartTime: Union[datetime, str],
-    EndTime: Union[datetime, str],
-    ScanBy: NotRequired[ScanByType],  # (2)
-    LabelOptions: NotRequired[LabelOptionsTypeDef],  # (3)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+class LabelOptionsTypeDef(TypedDict):
+    Timezone: NotRequired[str],
 ```
 
-1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
-3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetMetricDataInputRequestTypeDef
+## MessageDataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricDataInputRequestTypeDef
+from mypy_boto3_cloudwatch.type_defs import MessageDataTypeDef
 
-def get_value() -> GetMetricDataInputRequestTypeDef:
+def get_value() -> MessageDataTypeDef:
     return {
-        "MetricDataQueries": ...,
-        "StartTime": ...,
-        "EndTime": ...,
+        "Code": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMetricDataInputRequestTypeDef(TypedDict):
-    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
-    StartTime: Union[datetime, str],
-    EndTime: Union[datetime, str],
+class MessageDataTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## GetMetricStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetMetricStreamInputRequestTypeDef
+
+def get_value() -> GetMetricStreamInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricStreamInputRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## MetricStreamFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamFilterTypeDef
+
+def get_value() -> MetricStreamFilterTypeDef:
+    return {
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamFilterTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+```
+
+## GetMetricWidgetImageInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetMetricWidgetImageInputRequestTypeDef
+
+def get_value() -> GetMetricWidgetImageInputRequestTypeDef:
+    return {
+        "MetricWidget": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricWidgetImageInputRequestTypeDef(TypedDict):
+    MetricWidget: str,
+    OutputFormat: NotRequired[str],
+```
+
+## InsightRuleContributorDatapointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorDatapointTypeDef
+
+def get_value() -> InsightRuleContributorDatapointTypeDef:
+    return {
+        "Timestamp": ...,
+        "ApproximateValue": ...,
+    }
+```
+
+```python title="Definition"
+class InsightRuleContributorDatapointTypeDef(TypedDict):
+    Timestamp: datetime,
+    ApproximateValue: float,
+```
+
+## ListDashboardsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListDashboardsInputRequestTypeDef
+
+def get_value() -> ListDashboardsInputRequestTypeDef:
+    return {
+        "DashboardNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsInputRequestTypeDef(TypedDict):
+    DashboardNamePrefix: NotRequired[str],
     NextToken: NotRequired[str],
-    ScanBy: NotRequired[ScanByType],  # (2)
-    MaxDatapoints: NotRequired[int],
-    LabelOptions: NotRequired[LabelOptionsTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
-3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
-## GetMetricDataOutputTypeDef
+## ListMetricStreamsInputRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricDataOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsInputRequestTypeDef
 
-def get_value() -> GetMetricDataOutputTypeDef:
+def get_value() -> ListMetricStreamsInputRequestTypeDef:
     return {
-        "MetricDataResults": ...,
         "NextToken": ...,
-        "Messages": ...,
-        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMetricDataOutputTypeDef(TypedDict):
-    MetricDataResults: List[MetricDataResultTypeDef],  # (1)
-    NextToken: str,
-    Messages: List[MessageDataTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ListMetricStreamsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-braces: MetricDataResultTypeDef](./type_defs.md#metricdataresulttypedef) 
-2. See [:material-code-braces: MessageDataTypeDef](./type_defs.md#messagedatatypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricStreamEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamEntryTypeDef
+
+def get_value() -> MetricStreamEntryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamEntryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    LastUpdateDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    FirehoseArn: NotRequired[str],
+    State: NotRequired[str],
+    OutputFormat: NotRequired[MetricStreamOutputFormatType],  # (1)
+```
+
+1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
+## ListTagsForResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
+
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## StatisticSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import StatisticSetTypeDef
+
+def get_value() -> StatisticSetTypeDef:
+    return {
+        "SampleCount": ...,
+        "Sum": ...,
+        "Minimum": ...,
+        "Maximum": ...,
+    }
+```
+
+```python title="Definition"
+class StatisticSetTypeDef(TypedDict):
+    SampleCount: float,
+    Sum: float,
+    Minimum: float,
+    Maximum: float,
+```
+
+## MetricStreamStatisticsMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsMetricTypeDef
+
+def get_value() -> MetricStreamStatisticsMetricTypeDef:
+    return {
+        "Namespace": ...,
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamStatisticsMetricTypeDef(TypedDict):
+    Namespace: str,
+    MetricName: str,
+```
+
+## PutDashboardInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutDashboardInputRequestTypeDef
+
+def get_value() -> PutDashboardInputRequestTypeDef:
+    return {
+        "DashboardName": ...,
+        "DashboardBody": ...,
+    }
+```
+
+```python title="Definition"
+class PutDashboardInputRequestTypeDef(TypedDict):
+    DashboardName: str,
+    DashboardBody: str,
+```
+
+## ServiceResourceAlarmRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ServiceResourceAlarmRequestTypeDef
+
+def get_value() -> ServiceResourceAlarmRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceResourceAlarmRequestTypeDef(TypedDict):
+    name: str,
+```
+
+## ServiceResourceMetricRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ServiceResourceMetricRequestTypeDef
+
+def get_value() -> ServiceResourceMetricRequestTypeDef:
+    return {
+        "namespace": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceResourceMetricRequestTypeDef(TypedDict):
+    namespace: str,
+    name: str,
+```
+
+## SetAlarmStateInputAlarmSetStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import SetAlarmStateInputAlarmSetStateTypeDef
+
+def get_value() -> SetAlarmStateInputAlarmSetStateTypeDef:
+    return {
+        "StateValue": ...,
+        "StateReason": ...,
+    }
+```
+
+```python title="Definition"
+class SetAlarmStateInputAlarmSetStateTypeDef(TypedDict):
+    StateValue: StateValueType,  # (1)
+    StateReason: str,
+    StateReasonData: NotRequired[str],
+```
+
+1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+## SetAlarmStateInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import SetAlarmStateInputRequestTypeDef
+
+def get_value() -> SetAlarmStateInputRequestTypeDef:
+    return {
+        "AlarmName": ...,
+        "StateValue": ...,
+        "StateReason": ...,
+    }
+```
+
+```python title="Definition"
+class SetAlarmStateInputRequestTypeDef(TypedDict):
+    AlarmName: str,
+    StateValue: StateValueType,  # (1)
+    StateReason: str,
+    StateReasonData: NotRequired[str],
+```
+
+1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+## StartMetricStreamsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import StartMetricStreamsInputRequestTypeDef
+
+def get_value() -> StartMetricStreamsInputRequestTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class StartMetricStreamsInputRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+```
+
+## StopMetricStreamsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import StopMetricStreamsInputRequestTypeDef
+
+def get_value() -> StopMetricStreamsInputRequestTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class StopMetricStreamsInputRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+```
+
+## UntagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
+
+## AnomalyDetectorConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorConfigurationTypeDef
+
+def get_value() -> AnomalyDetectorConfigurationTypeDef:
+    return {
+        "ExcludedTimeRanges": ...,
+    }
+```
+
+```python title="Definition"
+class AnomalyDetectorConfigurationTypeDef(TypedDict):
+    ExcludedTimeRanges: NotRequired[List[RangeTypeDef]],  # (1)
+    MetricTimezone: NotRequired[str],
+```
+
+1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+## DescribeAlarmsForMetricInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricInputRequestTypeDef
+
+def get_value() -> DescribeAlarmsForMetricInputRequestTypeDef:
+    return {
+        "MetricName": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmsForMetricInputRequestTypeDef(TypedDict):
+    MetricName: str,
+    Namespace: str,
+    Statistic: NotRequired[StatisticType],  # (1)
+    ExtendedStatistic: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (2)
+    Period: NotRequired[int],
+    Unit: NotRequired[StandardUnitType],  # (3)
+```
+
+1. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+2. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+## DescribeAnomalyDetectorsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsInputRequestTypeDef
+
+def get_value() -> DescribeAnomalyDetectorsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnomalyDetectorsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    AnomalyDetectorTypes: NotRequired[Sequence[AnomalyDetectorTypeType]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype) 
 ## GetMetricStatisticsInputMetricGetStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -1006,6 +1058,150 @@ class GetMetricStatisticsInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
 2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
 3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+## MetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricTypeDef
+
+def get_value() -> MetricTypeDef:
+    return {
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class MetricTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+## SingleMetricAnomalyDetectorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import SingleMetricAnomalyDetectorTypeDef
+
+def get_value() -> SingleMetricAnomalyDetectorTypeDef:
+    return {
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class SingleMetricAnomalyDetectorTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    Stat: NotRequired[str],
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+## DeleteInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
+
+def get_value() -> DeleteInsightRulesOutputTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInsightRulesOutputTypeDef(TypedDict):
+    Failures: List[PartialFailureTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAlarmHistoryOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
+
+def get_value() -> DescribeAlarmHistoryOutputTypeDef:
+    return {
+        "AlarmHistoryItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmHistoryOutputTypeDef(TypedDict):
+    AlarmHistoryItems: List[AlarmHistoryItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AlarmHistoryItemTypeDef](./type_defs.md#alarmhistoryitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisableInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesOutputTypeDef
+
+def get_value() -> DisableInsightRulesOutputTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisableInsightRulesOutputTypeDef(TypedDict):
+    Failures: List[PartialFailureTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesOutputTypeDef
+
+def get_value() -> EnableInsightRulesOutputTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnableInsightRulesOutputTypeDef(TypedDict):
+    Failures: List[PartialFailureTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDashboardOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetDashboardOutputTypeDef
+
+def get_value() -> GetDashboardOutputTypeDef:
+    return {
+        "DashboardArn": ...,
+        "DashboardBody": ...,
+        "DashboardName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDashboardOutputTypeDef(TypedDict):
+    DashboardArn: str,
+    DashboardBody: str,
+    DashboardName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMetricStatisticsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1028,82 +1224,6 @@ class GetMetricStatisticsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatapointTypeDef](./type_defs.md#datapointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMetricStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricStreamInputRequestTypeDef
-
-def get_value() -> GetMetricStreamInputRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class GetMetricStreamInputRequestTypeDef(TypedDict):
-    Name: str,
-```
-
-## GetMetricStreamOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricStreamOutputTypeDef
-
-def get_value() -> GetMetricStreamOutputTypeDef:
-    return {
-        "Arn": ...,
-        "Name": ...,
-        "IncludeFilters": ...,
-        "ExcludeFilters": ...,
-        "FirehoseArn": ...,
-        "RoleArn": ...,
-        "State": ...,
-        "CreationDate": ...,
-        "LastUpdateDate": ...,
-        "OutputFormat": ...,
-        "StatisticsConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMetricStreamOutputTypeDef(TypedDict):
-    Arn: str,
-    Name: str,
-    IncludeFilters: List[MetricStreamFilterTypeDef],  # (1)
-    ExcludeFilters: List[MetricStreamFilterTypeDef],  # (1)
-    FirehoseArn: str,
-    RoleArn: str,
-    State: str,
-    CreationDate: datetime,
-    LastUpdateDate: datetime,
-    OutputFormat: MetricStreamOutputFormatType,  # (3)
-    StatisticsConfigurations: List[MetricStreamStatisticsConfigurationTypeDef],  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
-2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
-3. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
-4. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMetricWidgetImageInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import GetMetricWidgetImageInputRequestTypeDef
-
-def get_value() -> GetMetricWidgetImageInputRequestTypeDef:
-    return {
-        "MetricWidget": ...,
-    }
-```
-
-```python title="Definition"
-class GetMetricWidgetImageInputRequestTypeDef(TypedDict):
-    MetricWidget: str,
-    OutputFormat: NotRequired[str],
-```
-
 ## GetMetricWidgetImageOutputTypeDef
 
 ```python title="Usage Example"
@@ -1123,141 +1243,6 @@ class GetMetricWidgetImageOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## InsightRuleContributorDatapointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorDatapointTypeDef
-
-def get_value() -> InsightRuleContributorDatapointTypeDef:
-    return {
-        "Timestamp": ...,
-        "ApproximateValue": ...,
-    }
-```
-
-```python title="Definition"
-class InsightRuleContributorDatapointTypeDef(TypedDict):
-    Timestamp: datetime,
-    ApproximateValue: float,
-```
-
-## InsightRuleContributorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorTypeDef
-
-def get_value() -> InsightRuleContributorTypeDef:
-    return {
-        "Keys": ...,
-        "ApproximateAggregateValue": ...,
-        "Datapoints": ...,
-    }
-```
-
-```python title="Definition"
-class InsightRuleContributorTypeDef(TypedDict):
-    Keys: List[str],
-    ApproximateAggregateValue: float,
-    Datapoints: List[InsightRuleContributorDatapointTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: InsightRuleContributorDatapointTypeDef](./type_defs.md#insightrulecontributordatapointtypedef) 
-## InsightRuleMetricDatapointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import InsightRuleMetricDatapointTypeDef
-
-def get_value() -> InsightRuleMetricDatapointTypeDef:
-    return {
-        "Timestamp": ...,
-    }
-```
-
-```python title="Definition"
-class InsightRuleMetricDatapointTypeDef(TypedDict):
-    Timestamp: datetime,
-    UniqueContributors: NotRequired[float],
-    MaxContributorValue: NotRequired[float],
-    SampleCount: NotRequired[float],
-    Average: NotRequired[float],
-    Sum: NotRequired[float],
-    Minimum: NotRequired[float],
-    Maximum: NotRequired[float],
-```
-
-## InsightRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import InsightRuleTypeDef
-
-def get_value() -> InsightRuleTypeDef:
-    return {
-        "Name": ...,
-        "State": ...,
-        "Schema": ...,
-        "Definition": ...,
-    }
-```
-
-```python title="Definition"
-class InsightRuleTypeDef(TypedDict):
-    Name: str,
-    State: str,
-    Schema: str,
-    Definition: str,
-```
-
-## LabelOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import LabelOptionsTypeDef
-
-def get_value() -> LabelOptionsTypeDef:
-    return {
-        "Timezone": ...,
-    }
-```
-
-```python title="Definition"
-class LabelOptionsTypeDef(TypedDict):
-    Timezone: NotRequired[str],
-```
-
-## ListDashboardsInputListDashboardsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListDashboardsInputListDashboardsPaginateTypeDef
-
-def get_value() -> ListDashboardsInputListDashboardsPaginateTypeDef:
-    return {
-        "DashboardNamePrefix": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardsInputListDashboardsPaginateTypeDef(TypedDict):
-    DashboardNamePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDashboardsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListDashboardsInputRequestTypeDef
-
-def get_value() -> ListDashboardsInputRequestTypeDef:
-    return {
-        "DashboardNamePrefix": ...,
-    }
-```
-
-```python title="Definition"
-class ListDashboardsInputRequestTypeDef(TypedDict):
-    DashboardNamePrefix: NotRequired[str],
-    NextToken: NotRequired[str],
-```
-
 ## ListDashboardsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1280,44 +1265,192 @@ class ListDashboardsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: DashboardEntryTypeDef](./type_defs.md#dashboardentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMetricStreamsInputRequestTypeDef
+## PutDashboardOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsInputRequestTypeDef
+from mypy_boto3_cloudwatch.type_defs import PutDashboardOutputTypeDef
 
-def get_value() -> ListMetricStreamsInputRequestTypeDef:
+def get_value() -> PutDashboardOutputTypeDef:
     return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListMetricStreamsInputRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListMetricStreamsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsOutputTypeDef
-
-def get_value() -> ListMetricStreamsOutputTypeDef:
-    return {
-        "NextToken": ...,
-        "Entries": ...,
+        "DashboardValidationMessages": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListMetricStreamsOutputTypeDef(TypedDict):
-    NextToken: str,
-    Entries: List[MetricStreamEntryTypeDef],  # (1)
+class PutDashboardOutputTypeDef(TypedDict):
+    DashboardValidationMessages: List[DashboardValidationMessageTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: MetricStreamEntryTypeDef](./type_defs.md#metricstreamentrytypedef) 
+1. See [:material-code-braces: DashboardValidationMessageTypeDef](./type_defs.md#dashboardvalidationmessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMetricStreamOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutMetricStreamOutputTypeDef
+
+def get_value() -> PutMetricStreamOutputTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetricStreamOutputTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef
+
+def get_value() -> DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef:
+    return {
+        "AlarmName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef(TypedDict):
+    AlarmName: NotRequired[str],
+    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
+    HistoryItemType: NotRequired[HistoryItemTypeType],  # (2)
+    StartDate: NotRequired[Union[datetime, str]],
+    EndDate: NotRequired[Union[datetime, str]],
+    ScanBy: NotRequired[ScanByType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
+3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAlarmsInputDescribeAlarmsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputDescribeAlarmsPaginateTypeDef
+
+def get_value() -> DescribeAlarmsInputDescribeAlarmsPaginateTypeDef:
+    return {
+        "AlarmNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmsInputDescribeAlarmsPaginateTypeDef(TypedDict):
+    AlarmNames: NotRequired[Sequence[str]],
+    AlarmNamePrefix: NotRequired[str],
+    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
+    ChildrenOfAlarmName: NotRequired[str],
+    ParentsOfAlarmName: NotRequired[str],
+    StateValue: NotRequired[StateValueType],  # (2)
+    ActionPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListDashboardsInputListDashboardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListDashboardsInputListDashboardsPaginateTypeDef
+
+def get_value() -> ListDashboardsInputListDashboardsPaginateTypeDef:
+    return {
+        "DashboardNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsInputListDashboardsPaginateTypeDef(TypedDict):
+    DashboardNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAlarmsInputAlarmExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputAlarmExistsWaitTypeDef
+
+def get_value() -> DescribeAlarmsInputAlarmExistsWaitTypeDef:
+    return {
+        "AlarmNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmsInputAlarmExistsWaitTypeDef(TypedDict):
+    AlarmNames: NotRequired[Sequence[str]],
+    AlarmNamePrefix: NotRequired[str],
+    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
+    ChildrenOfAlarmName: NotRequired[str],
+    ParentsOfAlarmName: NotRequired[str],
+    StateValue: NotRequired[StateValueType],  # (2)
+    ActionPrefix: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef
+
+def get_value() -> DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef:
+    return {
+        "AlarmNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef(TypedDict):
+    AlarmNames: NotRequired[Sequence[str]],
+    AlarmNamePrefix: NotRequired[str],
+    AlarmTypes: NotRequired[Sequence[AlarmTypeType]],  # (1)
+    ChildrenOfAlarmName: NotRequired[str],
+    ParentsOfAlarmName: NotRequired[str],
+    StateValue: NotRequired[StateValueType],  # (2)
+    ActionPrefix: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeInsightRulesOutputTypeDef
+
+def get_value() -> DescribeInsightRulesOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "InsightRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInsightRulesOutputTypeDef(TypedDict):
+    NextToken: str,
+    InsightRules: List[InsightRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InsightRuleTypeDef](./type_defs.md#insightruletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMetricsInputListMetricsPaginateTypeDef
 
@@ -1364,6 +1497,203 @@ class ListMetricsInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef) 
 2. See [:material-code-brackets: RecentlyActiveType](./literals.md#recentlyactivetype) 
+## MetricDataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricDataResultTypeDef
+
+def get_value() -> MetricDataResultTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDataResultTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Label: NotRequired[str],
+    Timestamps: NotRequired[List[datetime]],
+    Values: NotRequired[List[float]],
+    StatusCode: NotRequired[StatusCodeType],  # (1)
+    Messages: NotRequired[List[MessageDataTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: StatusCodeType](./literals.md#statuscodetype) 
+2. See [:material-code-braces: MessageDataTypeDef](./type_defs.md#messagedatatypedef) 
+## InsightRuleContributorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorTypeDef
+
+def get_value() -> InsightRuleContributorTypeDef:
+    return {
+        "Keys": ...,
+        "ApproximateAggregateValue": ...,
+        "Datapoints": ...,
+    }
+```
+
+```python title="Definition"
+class InsightRuleContributorTypeDef(TypedDict):
+    Keys: List[str],
+    ApproximateAggregateValue: float,
+    Datapoints: List[InsightRuleContributorDatapointTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InsightRuleContributorDatapointTypeDef](./type_defs.md#insightrulecontributordatapointtypedef) 
+## ListMetricStreamsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsOutputTypeDef
+
+def get_value() -> ListMetricStreamsOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "Entries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricStreamsOutputTypeDef(TypedDict):
+    NextToken: str,
+    Entries: List[MetricStreamEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricStreamEntryTypeDef](./type_defs.md#metricstreamentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutCompositeAlarmInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutCompositeAlarmInputRequestTypeDef
+
+def get_value() -> PutCompositeAlarmInputRequestTypeDef:
+    return {
+        "AlarmName": ...,
+        "AlarmRule": ...,
+    }
+```
+
+```python title="Definition"
+class PutCompositeAlarmInputRequestTypeDef(TypedDict):
+    AlarmName: str,
+    AlarmRule: str,
+    ActionsEnabled: NotRequired[bool],
+    AlarmActions: NotRequired[Sequence[str]],
+    AlarmDescription: NotRequired[str],
+    InsufficientDataActions: NotRequired[Sequence[str]],
+    OKActions: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## PutInsightRuleInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutInsightRuleInputRequestTypeDef
+
+def get_value() -> PutInsightRuleInputRequestTypeDef:
+    return {
+        "RuleName": ...,
+        "RuleDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class PutInsightRuleInputRequestTypeDef(TypedDict):
+    RuleName: str,
+    RuleDefinition: str,
+    RuleState: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## MetricDatumTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricDatumTypeDef
+
+def get_value() -> MetricDatumTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDatumTypeDef(TypedDict):
+    MetricName: str,
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    Timestamp: NotRequired[Union[datetime, str]],
+    Value: NotRequired[float],
+    StatisticValues: NotRequired[StatisticSetTypeDef],  # (2)
+    Values: NotRequired[Sequence[float]],
+    Counts: NotRequired[Sequence[float]],
+    Unit: NotRequired[StandardUnitType],  # (3)
+    StorageResolution: NotRequired[int],
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-braces: StatisticSetTypeDef](./type_defs.md#statisticsettypedef) 
+3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+## MetricStreamStatisticsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsConfigurationTypeDef
+
+def get_value() -> MetricStreamStatisticsConfigurationTypeDef:
+    return {
+        "IncludeMetrics": ...,
+        "AdditionalStatistics": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamStatisticsConfigurationTypeDef(TypedDict):
+    IncludeMetrics: List[MetricStreamStatisticsMetricTypeDef],  # (1)
+    AdditionalStatistics: List[str],
+```
+
+1. See [:material-code-braces: MetricStreamStatisticsMetricTypeDef](./type_defs.md#metricstreamstatisticsmetrictypedef) 
 ## ListMetricsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1386,59 +1716,255 @@ class ListMetricsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceInputRequestTypeDef
+## MetricStatTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceInputRequestTypeDef
+from mypy_boto3_cloudwatch.type_defs import MetricStatTypeDef
 
-def get_value() -> ListTagsForResourceInputRequestTypeDef:
+def get_value() -> MetricStatTypeDef:
     return {
-        "ResourceARN": ...,
+        "Metric": ...,
+        "Period": ...,
+        "Stat": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
+class MetricStatTypeDef(TypedDict):
+    Metric: MetricTypeDef,  # (1)
+    Period: int,
+    Stat: str,
+    Unit: NotRequired[StandardUnitType],  # (2)
 ```
 
-## ListTagsForResourceOutputTypeDef
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+## GetMetricDataOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_cloudwatch.type_defs import GetMetricDataOutputTypeDef
 
-def get_value() -> ListTagsForResourceOutputTypeDef:
+def get_value() -> GetMetricDataOutputTypeDef:
     return {
-        "Tags": ...,
+        "MetricDataResults": ...,
+        "NextToken": ...,
+        "Messages": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListTagsForResourceOutputTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GetMetricDataOutputTypeDef(TypedDict):
+    MetricDataResults: List[MetricDataResultTypeDef],  # (1)
+    NextToken: str,
+    Messages: List[MessageDataTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MessageDataTypeDef
+1. See [:material-code-braces: MetricDataResultTypeDef](./type_defs.md#metricdataresulttypedef) 
+2. See [:material-code-braces: MessageDataTypeDef](./type_defs.md#messagedatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInsightRuleReportOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MessageDataTypeDef
+from mypy_boto3_cloudwatch.type_defs import GetInsightRuleReportOutputTypeDef
 
-def get_value() -> MessageDataTypeDef:
+def get_value() -> GetInsightRuleReportOutputTypeDef:
     return {
-        "Code": ...,
+        "KeyLabels": ...,
+        "AggregationStatistic": ...,
+        "AggregateValue": ...,
+        "ApproximateUniqueCount": ...,
+        "Contributors": ...,
+        "MetricDatapoints": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class MessageDataTypeDef(TypedDict):
-    Code: NotRequired[str],
-    Value: NotRequired[str],
+class GetInsightRuleReportOutputTypeDef(TypedDict):
+    KeyLabels: List[str],
+    AggregationStatistic: str,
+    AggregateValue: float,
+    ApproximateUniqueCount: int,
+    Contributors: List[InsightRuleContributorTypeDef],  # (1)
+    MetricDatapoints: List[InsightRuleMetricDatapointTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
+1. See [:material-code-braces: InsightRuleContributorTypeDef](./type_defs.md#insightrulecontributortypedef) 
+2. See [:material-code-braces: InsightRuleMetricDatapointTypeDef](./type_defs.md#insightrulemetricdatapointtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMetricDataInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutMetricDataInputRequestTypeDef
+
+def get_value() -> PutMetricDataInputRequestTypeDef:
+    return {
+        "Namespace": ...,
+        "MetricData": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetricDataInputRequestTypeDef(TypedDict):
+    Namespace: str,
+    MetricData: Sequence[MetricDatumTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
+## GetMetricStreamOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetMetricStreamOutputTypeDef
+
+def get_value() -> GetMetricStreamOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "IncludeFilters": ...,
+        "ExcludeFilters": ...,
+        "FirehoseArn": ...,
+        "RoleArn": ...,
+        "State": ...,
+        "CreationDate": ...,
+        "LastUpdateDate": ...,
+        "OutputFormat": ...,
+        "StatisticsConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricStreamOutputTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    IncludeFilters: List[MetricStreamFilterTypeDef],  # (1)
+    ExcludeFilters: List[MetricStreamFilterTypeDef],  # (1)
+    FirehoseArn: str,
+    RoleArn: str,
+    State: str,
+    CreationDate: datetime,
+    LastUpdateDate: datetime,
+    OutputFormat: MetricStreamOutputFormatType,  # (3)
+    StatisticsConfigurations: List[MetricStreamStatisticsConfigurationTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+3. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
+4. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMetricStreamInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutMetricStreamInputRequestTypeDef
+
+def get_value() -> PutMetricStreamInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "FirehoseArn": ...,
+        "RoleArn": ...,
+        "OutputFormat": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetricStreamInputRequestTypeDef(TypedDict):
+    Name: str,
+    FirehoseArn: str,
+    RoleArn: str,
+    OutputFormat: MetricStreamOutputFormatType,  # (1)
+    IncludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
+    ExcludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    StatisticsConfigurations: NotRequired[Sequence[MetricStreamStatisticsConfigurationTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
+2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+3. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
+## MetricDataQueryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricDataQueryTypeDef
+
+def get_value() -> MetricDataQueryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDataQueryTypeDef(TypedDict):
+    Id: str,
+    MetricStat: NotRequired[MetricStatTypeDef],  # (1)
+    Expression: NotRequired[str],
+    Label: NotRequired[str],
+    ReturnData: NotRequired[bool],
+    Period: NotRequired[int],
+    AccountId: NotRequired[str],
+```
+
+1. See [:material-code-braces: MetricStatTypeDef](./type_defs.md#metricstattypedef) 
+## GetMetricDataInputGetMetricDataPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetMetricDataInputGetMetricDataPaginateTypeDef
+
+def get_value() -> GetMetricDataInputGetMetricDataPaginateTypeDef:
+    return {
+        "MetricDataQueries": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricDataInputGetMetricDataPaginateTypeDef(TypedDict):
+    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    ScanBy: NotRequired[ScanByType],  # (2)
+    LabelOptions: NotRequired[LabelOptionsTypeDef],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetMetricDataInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import GetMetricDataInputRequestTypeDef
+
+def get_value() -> GetMetricDataInputRequestTypeDef:
+    return {
+        "MetricDataQueries": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricDataInputRequestTypeDef(TypedDict):
+    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    NextToken: NotRequired[str],
+    ScanBy: NotRequired[ScanByType],  # (2)
+    MaxDatapoints: NotRequired[int],
+    LabelOptions: NotRequired[LabelOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
 ## MetricAlarmTypeDef
 
 ```python title="Usage Example"
@@ -1487,79 +2013,6 @@ class MetricAlarmTypeDef(TypedDict):
 4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
 5. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 6. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-## MetricDataQueryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricDataQueryTypeDef
-
-def get_value() -> MetricDataQueryTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDataQueryTypeDef(TypedDict):
-    Id: str,
-    MetricStat: NotRequired[MetricStatTypeDef],  # (1)
-    Expression: NotRequired[str],
-    Label: NotRequired[str],
-    ReturnData: NotRequired[bool],
-    Period: NotRequired[int],
-    AccountId: NotRequired[str],
-```
-
-1. See [:material-code-braces: MetricStatTypeDef](./type_defs.md#metricstattypedef) 
-## MetricDataResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricDataResultTypeDef
-
-def get_value() -> MetricDataResultTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDataResultTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Label: NotRequired[str],
-    Timestamps: NotRequired[List[datetime]],
-    Values: NotRequired[List[float]],
-    StatusCode: NotRequired[StatusCodeType],  # (1)
-    Messages: NotRequired[List[MessageDataTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: StatusCodeType](./literals.md#statuscodetype) 
-2. See [:material-code-braces: MessageDataTypeDef](./type_defs.md#messagedatatypedef) 
-## MetricDatumTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricDatumTypeDef
-
-def get_value() -> MetricDatumTypeDef:
-    return {
-        "MetricName": ...,
-    }
-```
-
-```python title="Definition"
-class MetricDatumTypeDef(TypedDict):
-    MetricName: str,
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
-    Timestamp: NotRequired[Union[datetime, str]],
-    Value: NotRequired[float],
-    StatisticValues: NotRequired[StatisticSetTypeDef],  # (2)
-    Values: NotRequired[Sequence[float]],
-    Counts: NotRequired[Sequence[float]],
-    Unit: NotRequired[StandardUnitType],  # (3)
-    StorageResolution: NotRequired[int],
-```
-
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-2. See [:material-code-braces: StatisticSetTypeDef](./type_defs.md#statisticsettypedef) 
-3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
 ## MetricMathAnomalyDetectorTypeDef
 
 ```python title="Usage Example"
@@ -1577,271 +2030,6 @@ class MetricMathAnomalyDetectorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
-## MetricStatTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricStatTypeDef
-
-def get_value() -> MetricStatTypeDef:
-    return {
-        "Metric": ...,
-        "Period": ...,
-        "Stat": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStatTypeDef(TypedDict):
-    Metric: MetricTypeDef,  # (1)
-    Period: int,
-    Stat: str,
-    Unit: NotRequired[StandardUnitType],  # (2)
-```
-
-1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
-2. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
-## MetricStreamEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricStreamEntryTypeDef
-
-def get_value() -> MetricStreamEntryTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStreamEntryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    CreationDate: NotRequired[datetime],
-    LastUpdateDate: NotRequired[datetime],
-    Name: NotRequired[str],
-    FirehoseArn: NotRequired[str],
-    State: NotRequired[str],
-    OutputFormat: NotRequired[MetricStreamOutputFormatType],  # (1)
-```
-
-1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
-## MetricStreamFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricStreamFilterTypeDef
-
-def get_value() -> MetricStreamFilterTypeDef:
-    return {
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStreamFilterTypeDef(TypedDict):
-    Namespace: NotRequired[str],
-```
-
-## MetricStreamStatisticsConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsConfigurationTypeDef
-
-def get_value() -> MetricStreamStatisticsConfigurationTypeDef:
-    return {
-        "IncludeMetrics": ...,
-        "AdditionalStatistics": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStreamStatisticsConfigurationTypeDef(TypedDict):
-    IncludeMetrics: List[MetricStreamStatisticsMetricTypeDef],  # (1)
-    AdditionalStatistics: List[str],
-```
-
-1. See [:material-code-braces: MetricStreamStatisticsMetricTypeDef](./type_defs.md#metricstreamstatisticsmetrictypedef) 
-## MetricStreamStatisticsMetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsMetricTypeDef
-
-def get_value() -> MetricStreamStatisticsMetricTypeDef:
-    return {
-        "Namespace": ...,
-        "MetricName": ...,
-    }
-```
-
-```python title="Definition"
-class MetricStreamStatisticsMetricTypeDef(TypedDict):
-    Namespace: str,
-    MetricName: str,
-```
-
-## MetricTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import MetricTypeDef
-
-def get_value() -> MetricTypeDef:
-    return {
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class MetricTypeDef(TypedDict):
-    Namespace: NotRequired[str],
-    MetricName: NotRequired[str],
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PartialFailureTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PartialFailureTypeDef
-
-def get_value() -> PartialFailureTypeDef:
-    return {
-        "FailureResource": ...,
-    }
-```
-
-```python title="Definition"
-class PartialFailureTypeDef(TypedDict):
-    FailureResource: NotRequired[str],
-    ExceptionType: NotRequired[str],
-    FailureCode: NotRequired[str],
-    FailureDescription: NotRequired[str],
-```
-
-## PutAnomalyDetectorInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutAnomalyDetectorInputRequestTypeDef
-
-def get_value() -> PutAnomalyDetectorInputRequestTypeDef:
-    return {
-        "Namespace": ...,
-    }
-```
-
-```python title="Definition"
-class PutAnomalyDetectorInputRequestTypeDef(TypedDict):
-    Namespace: NotRequired[str],
-    MetricName: NotRequired[str],
-    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
-    Stat: NotRequired[str],
-    Configuration: NotRequired[AnomalyDetectorConfigurationTypeDef],  # (2)
-    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (3)
-    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-2. See [:material-code-braces: AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef) 
-3. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
-4. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
-## PutCompositeAlarmInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutCompositeAlarmInputRequestTypeDef
-
-def get_value() -> PutCompositeAlarmInputRequestTypeDef:
-    return {
-        "AlarmName": ...,
-        "AlarmRule": ...,
-    }
-```
-
-```python title="Definition"
-class PutCompositeAlarmInputRequestTypeDef(TypedDict):
-    AlarmName: str,
-    AlarmRule: str,
-    ActionsEnabled: NotRequired[bool],
-    AlarmActions: NotRequired[Sequence[str]],
-    AlarmDescription: NotRequired[str],
-    InsufficientDataActions: NotRequired[Sequence[str]],
-    OKActions: NotRequired[Sequence[str]],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## PutDashboardInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutDashboardInputRequestTypeDef
-
-def get_value() -> PutDashboardInputRequestTypeDef:
-    return {
-        "DashboardName": ...,
-        "DashboardBody": ...,
-    }
-```
-
-```python title="Definition"
-class PutDashboardInputRequestTypeDef(TypedDict):
-    DashboardName: str,
-    DashboardBody: str,
-```
-
-## PutDashboardOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutDashboardOutputTypeDef
-
-def get_value() -> PutDashboardOutputTypeDef:
-    return {
-        "DashboardValidationMessages": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutDashboardOutputTypeDef(TypedDict):
-    DashboardValidationMessages: List[DashboardValidationMessageTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DashboardValidationMessageTypeDef](./type_defs.md#dashboardvalidationmessagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutInsightRuleInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutInsightRuleInputRequestTypeDef
-
-def get_value() -> PutInsightRuleInputRequestTypeDef:
-    return {
-        "RuleName": ...,
-        "RuleDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class PutInsightRuleInputRequestTypeDef(TypedDict):
-    RuleName: str,
-    RuleDefinition: str,
-    RuleState: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutMetricAlarmInputMetricPutAlarmTypeDef
 
 ```python title="Usage Example"
@@ -1930,336 +2118,148 @@ class PutMetricAlarmInputRequestTypeDef(TypedDict):
 4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
 5. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## PutMetricDataInputRequestTypeDef
+## DescribeAlarmsForMetricOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutMetricDataInputRequestTypeDef
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricOutputTypeDef
 
-def get_value() -> PutMetricDataInputRequestTypeDef:
+def get_value() -> DescribeAlarmsForMetricOutputTypeDef:
     return {
-        "Namespace": ...,
-        "MetricData": ...,
-    }
-```
-
-```python title="Definition"
-class PutMetricDataInputRequestTypeDef(TypedDict):
-    Namespace: str,
-    MetricData: Sequence[MetricDatumTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
-## PutMetricStreamInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutMetricStreamInputRequestTypeDef
-
-def get_value() -> PutMetricStreamInputRequestTypeDef:
-    return {
-        "Name": ...,
-        "FirehoseArn": ...,
-        "RoleArn": ...,
-        "OutputFormat": ...,
-    }
-```
-
-```python title="Definition"
-class PutMetricStreamInputRequestTypeDef(TypedDict):
-    Name: str,
-    FirehoseArn: str,
-    RoleArn: str,
-    OutputFormat: MetricStreamOutputFormatType,  # (1)
-    IncludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
-    ExcludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-    StatisticsConfigurations: NotRequired[Sequence[MetricStreamStatisticsConfigurationTypeDef]],  # (5)
-```
-
-1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
-2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
-3. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
-## PutMetricStreamOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import PutMetricStreamOutputTypeDef
-
-def get_value() -> PutMetricStreamOutputTypeDef:
-    return {
-        "Arn": ...,
+        "MetricAlarms": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class PutMetricStreamOutputTypeDef(TypedDict):
-    Arn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DescribeAlarmsForMetricOutputTypeDef(TypedDict):
+    MetricAlarms: List[MetricAlarmTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RangeTypeDef
+1. See [:material-code-braces: MetricAlarmTypeDef](./type_defs.md#metricalarmtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAlarmsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import RangeTypeDef
+from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsOutputTypeDef
 
-def get_value() -> RangeTypeDef:
+def get_value() -> DescribeAlarmsOutputTypeDef:
     return {
-        "StartTime": ...,
-        "EndTime": ...,
+        "CompositeAlarms": ...,
+        "MetricAlarms": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RangeTypeDef(TypedDict):
-    StartTime: datetime,
-    EndTime: datetime,
+class DescribeAlarmsOutputTypeDef(TypedDict):
+    CompositeAlarms: List[CompositeAlarmTypeDef],  # (1)
+    MetricAlarms: List[MetricAlarmTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-## ResponseMetadataTypeDef
+1. See [:material-code-braces: CompositeAlarmTypeDef](./type_defs.md#compositealarmtypedef) 
+2. See [:material-code-braces: MetricAlarmTypeDef](./type_defs.md#metricalarmtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AnomalyDetectorTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## ServiceResourceAlarmRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ServiceResourceAlarmRequestTypeDef
-
-def get_value() -> ServiceResourceAlarmRequestTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceResourceAlarmRequestTypeDef(TypedDict):
-    name: str,
-```
-
-## ServiceResourceMetricRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import ServiceResourceMetricRequestTypeDef
-
-def get_value() -> ServiceResourceMetricRequestTypeDef:
-    return {
-        "namespace": ...,
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceResourceMetricRequestTypeDef(TypedDict):
-    namespace: str,
-    name: str,
-```
-
-## SetAlarmStateInputAlarmSetStateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import SetAlarmStateInputAlarmSetStateTypeDef
-
-def get_value() -> SetAlarmStateInputAlarmSetStateTypeDef:
-    return {
-        "StateValue": ...,
-        "StateReason": ...,
-    }
-```
-
-```python title="Definition"
-class SetAlarmStateInputAlarmSetStateTypeDef(TypedDict):
-    StateValue: StateValueType,  # (1)
-    StateReason: str,
-    StateReasonData: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-## SetAlarmStateInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import SetAlarmStateInputRequestTypeDef
-
-def get_value() -> SetAlarmStateInputRequestTypeDef:
-    return {
-        "AlarmName": ...,
-        "StateValue": ...,
-        "StateReason": ...,
-    }
-```
-
-```python title="Definition"
-class SetAlarmStateInputRequestTypeDef(TypedDict):
-    AlarmName: str,
-    StateValue: StateValueType,  # (1)
-    StateReason: str,
-    StateReasonData: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
-## SingleMetricAnomalyDetectorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import SingleMetricAnomalyDetectorTypeDef
-
-def get_value() -> SingleMetricAnomalyDetectorTypeDef:
+def get_value() -> AnomalyDetectorTypeDef:
     return {
         "Namespace": ...,
     }
 ```
 
 ```python title="Definition"
-class SingleMetricAnomalyDetectorTypeDef(TypedDict):
+class AnomalyDetectorTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[List[DimensionTypeDef]],  # (1)
+    Stat: NotRequired[str],
+    Configuration: NotRequired[AnomalyDetectorConfigurationTypeDef],  # (2)
+    StateValue: NotRequired[AnomalyDetectorStateValueType],  # (3)
+    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (4)
+    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-braces: AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef) 
+3. See [:material-code-brackets: AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype) 
+4. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
+5. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
+## DeleteAnomalyDetectorInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DeleteAnomalyDetectorInputRequestTypeDef
+
+def get_value() -> DeleteAnomalyDetectorInputRequestTypeDef:
+    return {
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAnomalyDetectorInputRequestTypeDef(TypedDict):
     Namespace: NotRequired[str],
     MetricName: NotRequired[str],
     Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
     Stat: NotRequired[str],
+    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (2)
+    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
-## StartMetricStreamsInputRequestTypeDef
+2. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
+3. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
+## PutAnomalyDetectorInputRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import StartMetricStreamsInputRequestTypeDef
+from mypy_boto3_cloudwatch.type_defs import PutAnomalyDetectorInputRequestTypeDef
 
-def get_value() -> StartMetricStreamsInputRequestTypeDef:
+def get_value() -> PutAnomalyDetectorInputRequestTypeDef:
     return {
-        "Names": ...,
+        "Namespace": ...,
     }
 ```
 
 ```python title="Definition"
-class StartMetricStreamsInputRequestTypeDef(TypedDict):
-    Names: Sequence[str],
+class PutAnomalyDetectorInputRequestTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    Stat: NotRequired[str],
+    Configuration: NotRequired[AnomalyDetectorConfigurationTypeDef],  # (2)
+    SingleMetricAnomalyDetector: NotRequired[SingleMetricAnomalyDetectorTypeDef],  # (3)
+    MetricMathAnomalyDetector: NotRequired[MetricMathAnomalyDetectorTypeDef],  # (4)
 ```
 
-## StatisticSetTypeDef
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-braces: AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef) 
+3. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
+4. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
+## DescribeAnomalyDetectorsOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import StatisticSetTypeDef
+from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsOutputTypeDef
 
-def get_value() -> StatisticSetTypeDef:
+def get_value() -> DescribeAnomalyDetectorsOutputTypeDef:
     return {
-        "SampleCount": ...,
-        "Sum": ...,
-        "Minimum": ...,
-        "Maximum": ...,
+        "AnomalyDetectors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StatisticSetTypeDef(TypedDict):
-    SampleCount: float,
-    Sum: float,
-    Minimum: float,
-    Maximum: float,
+class DescribeAnomalyDetectorsOutputTypeDef(TypedDict):
+    AnomalyDetectors: List[AnomalyDetectorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## StopMetricStreamsInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import StopMetricStreamsInputRequestTypeDef
-
-def get_value() -> StopMetricStreamsInputRequestTypeDef:
-    return {
-        "Names": ...,
-    }
-```
-
-```python title="Definition"
-class StopMetricStreamsInputRequestTypeDef(TypedDict):
-    Names: Sequence[str],
-```
-
-## TagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import TagResourceInputRequestTypeDef
-
-def get_value() -> TagResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## UntagResourceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import UntagResourceInputRequestTypeDef
-
-def get_value() -> UntagResourceInputRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceInputRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    TagKeys: Sequence[str],
-```
-
-## WaiterConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudwatch.type_defs import WaiterConfigTypeDef
-
-def get_value() -> WaiterConfigTypeDef:
-    return {
-        "Delay": ...,
-    }
-```
-
-```python title="Definition"
-class WaiterConfigTypeDef(TypedDict):
-    Delay: NotRequired[int],
-    MaxAttempts: NotRequired[int],
-```
-
+1. See [:material-code-braces: AnomalyDetectorTypeDef](./type_defs.md#anomalydetectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

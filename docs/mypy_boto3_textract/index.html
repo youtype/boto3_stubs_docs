@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36057,63 +36057,62 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_textract.type_defs</span> <span class="kn">import</span> <span class="n">AnalyzeDocumentRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_textract.type_defs</span> <span class="kn">import</span> <span class="n">DocumentMetadataTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AnalyzeDocumentRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DocumentMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Document&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;FeatureTypes&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Pages&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#analyzedocumentrequestrequesttypedef">AnalyzeDocumentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#analyzedocumentresponsetypedef">AnalyzeDocumentResponseTypeDef</a></li>
-<li><a href="type_defs/#analyzeexpenserequestrequesttypedef">AnalyzeExpenseRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#analyzeexpenseresponsetypedef">AnalyzeExpenseResponseTypeDef</a></li>
-<li><a href="type_defs/#analyzeiddetectionstypedef">AnalyzeIDDetectionsTypeDef</a></li>
-<li><a href="type_defs/#analyzeidrequestrequesttypedef">AnalyzeIDRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#analyzeidresponsetypedef">AnalyzeIDResponseTypeDef</a></li>
-<li><a href="type_defs/#blocktypedef">BlockTypeDef</a></li>
-<li><a href="type_defs/#boundingboxtypedef">BoundingBoxTypeDef</a></li>
-<li><a href="type_defs/#detectdocumenttextrequestrequesttypedef">DetectDocumentTextRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#detectdocumenttextresponsetypedef">DetectDocumentTextResponseTypeDef</a></li>
-<li><a href="type_defs/#documentlocationtypedef">DocumentLocationTypeDef</a></li>
 <li><a href="type_defs/#documentmetadatatypedef">DocumentMetadataTypeDef</a></li>
-<li><a href="type_defs/#documenttypedef">DocumentTypeDef</a></li>
-<li><a href="type_defs/#expensedetectiontypedef">ExpenseDetectionTypeDef</a></li>
-<li><a href="type_defs/#expensedocumenttypedef">ExpenseDocumentTypeDef</a></li>
-<li><a href="type_defs/#expensefieldtypedef">ExpenseFieldTypeDef</a></li>
-<li><a href="type_defs/#expensetypetypedef">ExpenseTypeTypeDef</a></li>
-<li><a href="type_defs/#geometrytypedef">GeometryTypeDef</a></li>
-<li><a href="type_defs/#getdocumentanalysisrequestrequesttypedef">GetDocumentAnalysisRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdocumentanalysisresponsetypedef">GetDocumentAnalysisResponseTypeDef</a></li>
-<li><a href="type_defs/#getdocumenttextdetectionrequestrequesttypedef">GetDocumentTextDetectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdocumenttextdetectionresponsetypedef">GetDocumentTextDetectionResponseTypeDef</a></li>
-<li><a href="type_defs/#getexpenseanalysisrequestrequesttypedef">GetExpenseAnalysisRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getexpenseanalysisresponsetypedef">GetExpenseAnalysisResponseTypeDef</a></li>
 <li><a href="type_defs/#humanloopactivationoutputtypedef">HumanLoopActivationOutputTypeDef</a></li>
-<li><a href="type_defs/#humanloopconfigtypedef">HumanLoopConfigTypeDef</a></li>
-<li><a href="type_defs/#humanloopdataattributestypedef">HumanLoopDataAttributesTypeDef</a></li>
-<li><a href="type_defs/#identitydocumentfieldtypedef">IdentityDocumentFieldTypeDef</a></li>
-<li><a href="type_defs/#identitydocumenttypedef">IdentityDocumentTypeDef</a></li>
-<li><a href="type_defs/#lineitemfieldstypedef">LineItemFieldsTypeDef</a></li>
-<li><a href="type_defs/#lineitemgrouptypedef">LineItemGroupTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#normalizedvaluetypedef">NormalizedValueTypeDef</a></li>
-<li><a href="type_defs/#notificationchanneltypedef">NotificationChannelTypeDef</a></li>
-<li><a href="type_defs/#outputconfigtypedef">OutputConfigTypeDef</a></li>
-<li><a href="type_defs/#pointtypedef">PointTypeDef</a></li>
-<li><a href="type_defs/#queriesconfigtypedef">QueriesConfigTypeDef</a></li>
 <li><a href="type_defs/#querytypedef">QueryTypeDef</a></li>
 <li><a href="type_defs/#relationshiptypedef">RelationshipTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#boundingboxtypedef">BoundingBoxTypeDef</a></li>
 <li><a href="type_defs/#s3objecttypedef">S3ObjectTypeDef</a></li>
-<li><a href="type_defs/#startdocumentanalysisrequestrequesttypedef">StartDocumentAnalysisRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startdocumentanalysisresponsetypedef">StartDocumentAnalysisResponseTypeDef</a></li>
-<li><a href="type_defs/#startdocumenttextdetectionrequestrequesttypedef">StartDocumentTextDetectionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startdocumenttextdetectionresponsetypedef">StartDocumentTextDetectionResponseTypeDef</a></li>
-<li><a href="type_defs/#startexpenseanalysisrequestrequesttypedef">StartExpenseAnalysisRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startexpenseanalysisresponsetypedef">StartExpenseAnalysisResponseTypeDef</a></li>
+<li><a href="type_defs/#expensetypetypedef">ExpenseTypeTypeDef</a></li>
+<li><a href="type_defs/#pointtypedef">PointTypeDef</a></li>
+<li><a href="type_defs/#getdocumentanalysisrequestrequesttypedef">GetDocumentAnalysisRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#warningtypedef">WarningTypeDef</a></li>
+<li><a href="type_defs/#getdocumenttextdetectionrequestrequesttypedef">GetDocumentTextDetectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getexpenseanalysisrequestrequesttypedef">GetExpenseAnalysisRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#humanloopdataattributestypedef">HumanLoopDataAttributesTypeDef</a></li>
+<li><a href="type_defs/#notificationchanneltypedef">NotificationChannelTypeDef</a></li>
+<li><a href="type_defs/#outputconfigtypedef">OutputConfigTypeDef</a></li>
+<li><a href="type_defs/#startdocumentanalysisresponsetypedef">StartDocumentAnalysisResponseTypeDef</a></li>
+<li><a href="type_defs/#startdocumenttextdetectionresponsetypedef">StartDocumentTextDetectionResponseTypeDef</a></li>
+<li><a href="type_defs/#startexpenseanalysisresponsetypedef">StartExpenseAnalysisResponseTypeDef</a></li>
+<li><a href="type_defs/#analyzeiddetectionstypedef">AnalyzeIDDetectionsTypeDef</a></li>
+<li><a href="type_defs/#queriesconfigtypedef">QueriesConfigTypeDef</a></li>
+<li><a href="type_defs/#documentlocationtypedef">DocumentLocationTypeDef</a></li>
+<li><a href="type_defs/#documenttypedef">DocumentTypeDef</a></li>
+<li><a href="type_defs/#geometrytypedef">GeometryTypeDef</a></li>
+<li><a href="type_defs/#humanloopconfigtypedef">HumanLoopConfigTypeDef</a></li>
+<li><a href="type_defs/#identitydocumentfieldtypedef">IdentityDocumentFieldTypeDef</a></li>
+<li><a href="type_defs/#startdocumentanalysisrequestrequesttypedef">StartDocumentAnalysisRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startdocumenttextdetectionrequestrequesttypedef">StartDocumentTextDetectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startexpenseanalysisrequestrequesttypedef">StartExpenseAnalysisRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#analyzeexpenserequestrequesttypedef">AnalyzeExpenseRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#analyzeidrequestrequesttypedef">AnalyzeIDRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#detectdocumenttextrequestrequesttypedef">DetectDocumentTextRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#blocktypedef">BlockTypeDef</a></li>
+<li><a href="type_defs/#expensedetectiontypedef">ExpenseDetectionTypeDef</a></li>
+<li><a href="type_defs/#analyzedocumentrequestrequesttypedef">AnalyzeDocumentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#identitydocumenttypedef">IdentityDocumentTypeDef</a></li>
+<li><a href="type_defs/#analyzedocumentresponsetypedef">AnalyzeDocumentResponseTypeDef</a></li>
+<li><a href="type_defs/#detectdocumenttextresponsetypedef">DetectDocumentTextResponseTypeDef</a></li>
+<li><a href="type_defs/#getdocumentanalysisresponsetypedef">GetDocumentAnalysisResponseTypeDef</a></li>
+<li><a href="type_defs/#getdocumenttextdetectionresponsetypedef">GetDocumentTextDetectionResponseTypeDef</a></li>
+<li><a href="type_defs/#expensefieldtypedef">ExpenseFieldTypeDef</a></li>
+<li><a href="type_defs/#analyzeidresponsetypedef">AnalyzeIDResponseTypeDef</a></li>
+<li><a href="type_defs/#lineitemfieldstypedef">LineItemFieldsTypeDef</a></li>
+<li><a href="type_defs/#lineitemgrouptypedef">LineItemGroupTypeDef</a></li>
+<li><a href="type_defs/#expensedocumenttypedef">ExpenseDocumentTypeDef</a></li>
+<li><a href="type_defs/#analyzeexpenseresponsetypedef">AnalyzeExpenseResponseTypeDef</a></li>
+<li><a href="type_defs/#getexpenseanalysisresponsetypedef">GetExpenseAnalysisResponseTypeDef</a></li>
 </ul>
 
               
@@ -36183,7 +36182,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36155,163 +36155,162 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_codedeploy.type_defs</span> <span class="kn">import</span> <span class="n">AddTagsToOnPremisesInstancesInputRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_codedeploy.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddTagsToOnPremisesInstancesInputRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;instanceNames&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#addtagstoonpremisesinstancesinputrequesttypedef">AddTagsToOnPremisesInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#alarmconfigurationtypedef">AlarmConfigurationTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#alarmtypedef">AlarmTypeDef</a></li>
 <li><a href="type_defs/#appspeccontenttypedef">AppSpecContentTypeDef</a></li>
 <li><a href="type_defs/#applicationinfotypedef">ApplicationInfoTypeDef</a></li>
 <li><a href="type_defs/#autorollbackconfigurationtypedef">AutoRollbackConfigurationTypeDef</a></li>
 <li><a href="type_defs/#autoscalinggrouptypedef">AutoScalingGroupTypeDef</a></li>
-<li><a href="type_defs/#batchgetapplicationrevisionsinputrequesttypedef">BatchGetApplicationRevisionsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetapplicationrevisionsoutputtypedef">BatchGetApplicationRevisionsOutputTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#batchgetapplicationsinputrequesttypedef">BatchGetApplicationsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetapplicationsoutputtypedef">BatchGetApplicationsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchgetdeploymentgroupsinputrequesttypedef">BatchGetDeploymentGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetdeploymentgroupsoutputtypedef">BatchGetDeploymentGroupsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchgetdeploymentinstancesinputrequesttypedef">BatchGetDeploymentInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetdeploymentinstancesoutputtypedef">BatchGetDeploymentInstancesOutputTypeDef</a></li>
 <li><a href="type_defs/#batchgetdeploymenttargetsinputrequesttypedef">BatchGetDeploymentTargetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetdeploymenttargetsoutputtypedef">BatchGetDeploymentTargetsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchgetdeploymentsinputrequesttypedef">BatchGetDeploymentsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetdeploymentsoutputtypedef">BatchGetDeploymentsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchgetonpremisesinstancesinputrequesttypedef">BatchGetOnPremisesInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetonpremisesinstancesoutputtypedef">BatchGetOnPremisesInstancesOutputTypeDef</a></li>
-<li><a href="type_defs/#bluegreendeploymentconfigurationtypedef">BlueGreenDeploymentConfigurationTypeDef</a></li>
 <li><a href="type_defs/#blueinstanceterminationoptiontypedef">BlueInstanceTerminationOptionTypeDef</a></li>
-<li><a href="type_defs/#cloudformationtargettypedef">CloudFormationTargetTypeDef</a></li>
+<li><a href="type_defs/#deploymentreadyoptiontypedef">DeploymentReadyOptionTypeDef</a></li>
+<li><a href="type_defs/#greenfleetprovisioningoptiontypedef">GreenFleetProvisioningOptionTypeDef</a></li>
 <li><a href="type_defs/#continuedeploymentinputrequesttypedef">ContinueDeploymentInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createapplicationinputrequesttypedef">CreateApplicationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createapplicationoutputtypedef">CreateApplicationOutputTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentconfiginputrequesttypedef">CreateDeploymentConfigInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentconfigoutputtypedef">CreateDeploymentConfigOutputTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentgroupinputrequesttypedef">CreateDeploymentGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentgroupoutputtypedef">CreateDeploymentGroupOutputTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentinputrequesttypedef">CreateDeploymentInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createdeploymentoutputtypedef">CreateDeploymentOutputTypeDef</a></li>
+<li><a href="type_defs/#minimumhealthyhoststypedef">MinimumHealthyHostsTypeDef</a></li>
+<li><a href="type_defs/#deploymentstyletypedef">DeploymentStyleTypeDef</a></li>
+<li><a href="type_defs/#ec2tagfiltertypedef">EC2TagFilterTypeDef</a></li>
+<li><a href="type_defs/#ecsservicetypedef">ECSServiceTypeDef</a></li>
+<li><a href="type_defs/#tagfiltertypedef">TagFilterTypeDef</a></li>
+<li><a href="type_defs/#triggerconfigtypedef">TriggerConfigTypeDef</a></li>
 <li><a href="type_defs/#deleteapplicationinputrequesttypedef">DeleteApplicationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedeploymentconfiginputrequesttypedef">DeleteDeploymentConfigInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedeploymentgroupinputrequesttypedef">DeleteDeploymentGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#deletedeploymentgroupoutputtypedef">DeleteDeploymentGroupOutputTypeDef</a></li>
 <li><a href="type_defs/#deletegithubaccounttokeninputrequesttypedef">DeleteGitHubAccountTokenInputRequestTypeDef</a></li>
-<li><a href="type_defs/#deletegithubaccounttokenoutputtypedef">DeleteGitHubAccountTokenOutputTypeDef</a></li>
 <li><a href="type_defs/#deleteresourcesbyexternalidinputrequesttypedef">DeleteResourcesByExternalIdInputRequestTypeDef</a></li>
-<li><a href="type_defs/#deploymentconfiginfotypedef">DeploymentConfigInfoTypeDef</a></li>
-<li><a href="type_defs/#deploymentgroupinfotypedef">DeploymentGroupInfoTypeDef</a></li>
-<li><a href="type_defs/#deploymentinfotypedef">DeploymentInfoTypeDef</a></li>
+<li><a href="type_defs/#lastdeploymentinfotypedef">LastDeploymentInfoTypeDef</a></li>
 <li><a href="type_defs/#deploymentoverviewtypedef">DeploymentOverviewTypeDef</a></li>
-<li><a href="type_defs/#deploymentreadyoptiontypedef">DeploymentReadyOptionTypeDef</a></li>
-<li><a href="type_defs/#deploymentstyletypedef">DeploymentStyleTypeDef</a></li>
-<li><a href="type_defs/#deploymenttargettypedef">DeploymentTargetTypeDef</a></li>
+<li><a href="type_defs/#errorinformationtypedef">ErrorInformationTypeDef</a></li>
+<li><a href="type_defs/#relateddeploymentstypedef">RelatedDeploymentsTypeDef</a></li>
+<li><a href="type_defs/#rollbackinfotypedef">RollbackInfoTypeDef</a></li>
 <li><a href="type_defs/#deregisteronpremisesinstanceinputrequesttypedef">DeregisterOnPremisesInstanceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#diagnosticstypedef">DiagnosticsTypeDef</a></li>
-<li><a href="type_defs/#ec2tagfiltertypedef">EC2TagFilterTypeDef</a></li>
-<li><a href="type_defs/#ec2tagsettypedef">EC2TagSetTypeDef</a></li>
-<li><a href="type_defs/#ecsservicetypedef">ECSServiceTypeDef</a></li>
-<li><a href="type_defs/#ecstargettypedef">ECSTargetTypeDef</a></li>
-<li><a href="type_defs/#ecstasksettypedef">ECSTaskSetTypeDef</a></li>
+<li><a href="type_defs/#targetgroupinfotypedef">TargetGroupInfoTypeDef</a></li>
 <li><a href="type_defs/#elbinfotypedef">ELBInfoTypeDef</a></li>
-<li><a href="type_defs/#errorinformationtypedef">ErrorInformationTypeDef</a></li>
 <li><a href="type_defs/#genericrevisioninfotypedef">GenericRevisionInfoTypeDef</a></li>
 <li><a href="type_defs/#getapplicationinputrequesttypedef">GetApplicationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getapplicationoutputtypedef">GetApplicationOutputTypeDef</a></li>
-<li><a href="type_defs/#getapplicationrevisioninputrequesttypedef">GetApplicationRevisionInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getapplicationrevisionoutputtypedef">GetApplicationRevisionOutputTypeDef</a></li>
 <li><a href="type_defs/#getdeploymentconfiginputrequesttypedef">GetDeploymentConfigInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeploymentconfigoutputtypedef">GetDeploymentConfigOutputTypeDef</a></li>
 <li><a href="type_defs/#getdeploymentgroupinputrequesttypedef">GetDeploymentGroupInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeploymentgroupoutputtypedef">GetDeploymentGroupOutputTypeDef</a></li>
-<li><a href="type_defs/#getdeploymentinputdeploymentsuccessfulwaittypedef">GetDeploymentInputDeploymentSuccessfulWaitTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#getdeploymentinputrequesttypedef">GetDeploymentInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getdeploymentinstanceinputrequesttypedef">GetDeploymentInstanceInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeploymentinstanceoutputtypedef">GetDeploymentInstanceOutputTypeDef</a></li>
-<li><a href="type_defs/#getdeploymentoutputtypedef">GetDeploymentOutputTypeDef</a></li>
 <li><a href="type_defs/#getdeploymenttargetinputrequesttypedef">GetDeploymentTargetInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getdeploymenttargetoutputtypedef">GetDeploymentTargetOutputTypeDef</a></li>
 <li><a href="type_defs/#getonpremisesinstanceinputrequesttypedef">GetOnPremisesInstanceInputRequestTypeDef</a></li>
-<li><a href="type_defs/#getonpremisesinstanceoutputtypedef">GetOnPremisesInstanceOutputTypeDef</a></li>
 <li><a href="type_defs/#githublocationtypedef">GitHubLocationTypeDef</a></li>
-<li><a href="type_defs/#greenfleetprovisioningoptiontypedef">GreenFleetProvisioningOptionTypeDef</a></li>
-<li><a href="type_defs/#instanceinfotypedef">InstanceInfoTypeDef</a></li>
-<li><a href="type_defs/#instancesummarytypedef">InstanceSummaryTypeDef</a></li>
-<li><a href="type_defs/#instancetargettypedef">InstanceTargetTypeDef</a></li>
 <li><a href="type_defs/#lambdafunctioninfotypedef">LambdaFunctionInfoTypeDef</a></li>
-<li><a href="type_defs/#lambdatargettypedef">LambdaTargetTypeDef</a></li>
-<li><a href="type_defs/#lastdeploymentinfotypedef">LastDeploymentInfoTypeDef</a></li>
-<li><a href="type_defs/#lifecycleeventtypedef">LifecycleEventTypeDef</a></li>
-<li><a href="type_defs/#listapplicationrevisionsinputlistapplicationrevisionspaginatetypedef">ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listapplicationrevisionsinputrequesttypedef">ListApplicationRevisionsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listapplicationrevisionsoutputtypedef">ListApplicationRevisionsOutputTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsinputlistapplicationspaginatetypedef">ListApplicationsInputListApplicationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsinputrequesttypedef">ListApplicationsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listapplicationsoutputtypedef">ListApplicationsOutputTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentconfigsinputlistdeploymentconfigspaginatetypedef">ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentconfigsinputrequesttypedef">ListDeploymentConfigsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentconfigsoutputtypedef">ListDeploymentConfigsOutputTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentgroupsinputlistdeploymentgroupspaginatetypedef">ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentgroupsinputrequesttypedef">ListDeploymentGroupsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentgroupsoutputtypedef">ListDeploymentGroupsOutputTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentinstancesinputlistdeploymentinstancespaginatetypedef">ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentinstancesinputrequesttypedef">ListDeploymentInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentinstancesoutputtypedef">ListDeploymentInstancesOutputTypeDef</a></li>
-<li><a href="type_defs/#listdeploymenttargetsinputlistdeploymenttargetspaginatetypedef">ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdeploymenttargetsinputrequesttypedef">ListDeploymentTargetsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeploymenttargetsoutputtypedef">ListDeploymentTargetsOutputTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentsinputlistdeploymentspaginatetypedef">ListDeploymentsInputListDeploymentsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentsinputrequesttypedef">ListDeploymentsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listdeploymentsoutputtypedef">ListDeploymentsOutputTypeDef</a></li>
-<li><a href="type_defs/#listgithubaccounttokennamesinputlistgithubaccounttokennamespaginatetypedef">ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listgithubaccounttokennamesinputrequesttypedef">ListGitHubAccountTokenNamesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listgithubaccounttokennamesoutputtypedef">ListGitHubAccountTokenNamesOutputTypeDef</a></li>
-<li><a href="type_defs/#listonpremisesinstancesinputlistonpremisesinstancespaginatetypedef">ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef</a></li>
-<li><a href="type_defs/#listonpremisesinstancesinputrequesttypedef">ListOnPremisesInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listonpremisesinstancesoutputtypedef">ListOnPremisesInstancesOutputTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceinputrequesttypedef">ListTagsForResourceInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceoutputtypedef">ListTagsForResourceOutputTypeDef</a></li>
-<li><a href="type_defs/#loadbalancerinfotypedef">LoadBalancerInfoTypeDef</a></li>
-<li><a href="type_defs/#minimumhealthyhoststypedef">MinimumHealthyHostsTypeDef</a></li>
-<li><a href="type_defs/#onpremisestagsettypedef">OnPremisesTagSetTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listapplicationrevisionsinputrequesttypedef">ListApplicationRevisionsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsinputrequesttypedef">ListApplicationsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentconfigsinputrequesttypedef">ListDeploymentConfigsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentgroupsinputrequesttypedef">ListDeploymentGroupsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentinstancesinputrequesttypedef">ListDeploymentInstancesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listdeploymenttargetsinputrequesttypedef">ListDeploymentTargetsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#timerangetypedef">TimeRangeTypeDef</a></li>
+<li><a href="type_defs/#listgithubaccounttokennamesinputrequesttypedef">ListGitHubAccountTokenNamesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceinputrequesttypedef">ListTagsForResourceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#putlifecycleeventhookexecutionstatusinputrequesttypedef">PutLifecycleEventHookExecutionStatusInputRequestTypeDef</a></li>
-<li><a href="type_defs/#putlifecycleeventhookexecutionstatusoutputtypedef">PutLifecycleEventHookExecutionStatusOutputTypeDef</a></li>
 <li><a href="type_defs/#rawstringtypedef">RawStringTypeDef</a></li>
-<li><a href="type_defs/#registerapplicationrevisioninputrequesttypedef">RegisterApplicationRevisionInputRequestTypeDef</a></li>
 <li><a href="type_defs/#registeronpremisesinstanceinputrequesttypedef">RegisterOnPremisesInstanceInputRequestTypeDef</a></li>
-<li><a href="type_defs/#relateddeploymentstypedef">RelatedDeploymentsTypeDef</a></li>
-<li><a href="type_defs/#removetagsfromonpremisesinstancesinputrequesttypedef">RemoveTagsFromOnPremisesInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#revisioninfotypedef">RevisionInfoTypeDef</a></li>
-<li><a href="type_defs/#revisionlocationtypedef">RevisionLocationTypeDef</a></li>
-<li><a href="type_defs/#rollbackinfotypedef">RollbackInfoTypeDef</a></li>
 <li><a href="type_defs/#s3locationtypedef">S3LocationTypeDef</a></li>
 <li><a href="type_defs/#skipwaittimeforinstanceterminationinputrequesttypedef">SkipWaitTimeForInstanceTerminationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#stopdeploymentinputrequesttypedef">StopDeploymentInputRequestTypeDef</a></li>
-<li><a href="type_defs/#stopdeploymentoutputtypedef">StopDeploymentOutputTypeDef</a></li>
-<li><a href="type_defs/#tagfiltertypedef">TagFilterTypeDef</a></li>
-<li><a href="type_defs/#tagresourceinputrequesttypedef">TagResourceInputRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
-<li><a href="type_defs/#targetgroupinfotypedef">TargetGroupInfoTypeDef</a></li>
-<li><a href="type_defs/#targetgrouppairinfotypedef">TargetGroupPairInfoTypeDef</a></li>
-<li><a href="type_defs/#targetinstancestypedef">TargetInstancesTypeDef</a></li>
+<li><a href="type_defs/#trafficroutetypedef">TrafficRouteTypeDef</a></li>
 <li><a href="type_defs/#timebasedcanarytypedef">TimeBasedCanaryTypeDef</a></li>
 <li><a href="type_defs/#timebasedlineartypedef">TimeBasedLinearTypeDef</a></li>
-<li><a href="type_defs/#timerangetypedef">TimeRangeTypeDef</a></li>
-<li><a href="type_defs/#trafficroutetypedef">TrafficRouteTypeDef</a></li>
-<li><a href="type_defs/#trafficroutingconfigtypedef">TrafficRoutingConfigTypeDef</a></li>
-<li><a href="type_defs/#triggerconfigtypedef">TriggerConfigTypeDef</a></li>
 <li><a href="type_defs/#untagresourceinputrequesttypedef">UntagResourceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updateapplicationinputrequesttypedef">UpdateApplicationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedeploymentgroupinputrequesttypedef">UpdateDeploymentGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#addtagstoonpremisesinstancesinputrequesttypedef">AddTagsToOnPremisesInstancesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#createapplicationinputrequesttypedef">CreateApplicationInputRequestTypeDef</a></li>
+<li><a href="type_defs/#instanceinfotypedef">InstanceInfoTypeDef</a></li>
+<li><a href="type_defs/#removetagsfromonpremisesinstancesinputrequesttypedef">RemoveTagsFromOnPremisesInstancesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourceinputrequesttypedef">TagResourceInputRequestTypeDef</a></li>
+<li><a href="type_defs/#alarmconfigurationtypedef">AlarmConfigurationTypeDef</a></li>
+<li><a href="type_defs/#batchgetapplicationsoutputtypedef">BatchGetApplicationsOutputTypeDef</a></li>
+<li><a href="type_defs/#createapplicationoutputtypedef">CreateApplicationOutputTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentconfigoutputtypedef">CreateDeploymentConfigOutputTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentgroupoutputtypedef">CreateDeploymentGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentoutputtypedef">CreateDeploymentOutputTypeDef</a></li>
+<li><a href="type_defs/#deletedeploymentgroupoutputtypedef">DeleteDeploymentGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#deletegithubaccounttokenoutputtypedef">DeleteGitHubAccountTokenOutputTypeDef</a></li>
+<li><a href="type_defs/#getapplicationoutputtypedef">GetApplicationOutputTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsoutputtypedef">ListApplicationsOutputTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentconfigsoutputtypedef">ListDeploymentConfigsOutputTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentgroupsoutputtypedef">ListDeploymentGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentinstancesoutputtypedef">ListDeploymentInstancesOutputTypeDef</a></li>
+<li><a href="type_defs/#listdeploymenttargetsoutputtypedef">ListDeploymentTargetsOutputTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentsoutputtypedef">ListDeploymentsOutputTypeDef</a></li>
+<li><a href="type_defs/#listgithubaccounttokennamesoutputtypedef">ListGitHubAccountTokenNamesOutputTypeDef</a></li>
+<li><a href="type_defs/#listonpremisesinstancesoutputtypedef">ListOnPremisesInstancesOutputTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceoutputtypedef">ListTagsForResourceOutputTypeDef</a></li>
+<li><a href="type_defs/#putlifecycleeventhookexecutionstatusoutputtypedef">PutLifecycleEventHookExecutionStatusOutputTypeDef</a></li>
+<li><a href="type_defs/#stopdeploymentoutputtypedef">StopDeploymentOutputTypeDef</a></li>
 <li><a href="type_defs/#updatedeploymentgroupoutputtypedef">UpdateDeploymentGroupOutputTypeDef</a></li>
-<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#bluegreendeploymentconfigurationtypedef">BlueGreenDeploymentConfigurationTypeDef</a></li>
+<li><a href="type_defs/#ec2tagsettypedef">EC2TagSetTypeDef</a></li>
+<li><a href="type_defs/#listonpremisesinstancesinputrequesttypedef">ListOnPremisesInstancesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#onpremisestagsettypedef">OnPremisesTagSetTypeDef</a></li>
+<li><a href="type_defs/#lifecycleeventtypedef">LifecycleEventTypeDef</a></li>
+<li><a href="type_defs/#ecstasksettypedef">ECSTaskSetTypeDef</a></li>
+<li><a href="type_defs/#getdeploymentinputdeploymentsuccessfulwaittypedef">GetDeploymentInputDeploymentSuccessfulWaitTypeDef</a></li>
+<li><a href="type_defs/#listapplicationrevisionsinputlistapplicationrevisionspaginatetypedef">ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listapplicationsinputlistapplicationspaginatetypedef">ListApplicationsInputListApplicationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentconfigsinputlistdeploymentconfigspaginatetypedef">ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentgroupsinputlistdeploymentgroupspaginatetypedef">ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentinstancesinputlistdeploymentinstancespaginatetypedef">ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymenttargetsinputlistdeploymenttargetspaginatetypedef">ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listgithubaccounttokennamesinputlistgithubaccounttokennamespaginatetypedef">ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listonpremisesinstancesinputlistonpremisesinstancespaginatetypedef">ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentsinputlistdeploymentspaginatetypedef">ListDeploymentsInputListDeploymentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listdeploymentsinputrequesttypedef">ListDeploymentsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#revisionlocationtypedef">RevisionLocationTypeDef</a></li>
+<li><a href="type_defs/#targetgrouppairinfotypedef">TargetGroupPairInfoTypeDef</a></li>
+<li><a href="type_defs/#trafficroutingconfigtypedef">TrafficRoutingConfigTypeDef</a></li>
+<li><a href="type_defs/#batchgetonpremisesinstancesoutputtypedef">BatchGetOnPremisesInstancesOutputTypeDef</a></li>
+<li><a href="type_defs/#getonpremisesinstanceoutputtypedef">GetOnPremisesInstanceOutputTypeDef</a></li>
+<li><a href="type_defs/#targetinstancestypedef">TargetInstancesTypeDef</a></li>
+<li><a href="type_defs/#cloudformationtargettypedef">CloudFormationTargetTypeDef</a></li>
+<li><a href="type_defs/#instancesummarytypedef">InstanceSummaryTypeDef</a></li>
+<li><a href="type_defs/#instancetargettypedef">InstanceTargetTypeDef</a></li>
+<li><a href="type_defs/#lambdatargettypedef">LambdaTargetTypeDef</a></li>
+<li><a href="type_defs/#ecstargettypedef">ECSTargetTypeDef</a></li>
+<li><a href="type_defs/#batchgetapplicationrevisionsinputrequesttypedef">BatchGetApplicationRevisionsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getapplicationrevisioninputrequesttypedef">GetApplicationRevisionInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getapplicationrevisionoutputtypedef">GetApplicationRevisionOutputTypeDef</a></li>
+<li><a href="type_defs/#listapplicationrevisionsoutputtypedef">ListApplicationRevisionsOutputTypeDef</a></li>
+<li><a href="type_defs/#registerapplicationrevisioninputrequesttypedef">RegisterApplicationRevisionInputRequestTypeDef</a></li>
+<li><a href="type_defs/#revisioninfotypedef">RevisionInfoTypeDef</a></li>
+<li><a href="type_defs/#loadbalancerinfotypedef">LoadBalancerInfoTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentconfiginputrequesttypedef">CreateDeploymentConfigInputRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymentconfiginfotypedef">DeploymentConfigInfoTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentinputrequesttypedef">CreateDeploymentInputRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgetdeploymentinstancesoutputtypedef">BatchGetDeploymentInstancesOutputTypeDef</a></li>
+<li><a href="type_defs/#getdeploymentinstanceoutputtypedef">GetDeploymentInstanceOutputTypeDef</a></li>
+<li><a href="type_defs/#deploymenttargettypedef">DeploymentTargetTypeDef</a></li>
+<li><a href="type_defs/#batchgetapplicationrevisionsoutputtypedef">BatchGetApplicationRevisionsOutputTypeDef</a></li>
+<li><a href="type_defs/#createdeploymentgroupinputrequesttypedef">CreateDeploymentGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymentgroupinfotypedef">DeploymentGroupInfoTypeDef</a></li>
+<li><a href="type_defs/#deploymentinfotypedef">DeploymentInfoTypeDef</a></li>
+<li><a href="type_defs/#updatedeploymentgroupinputrequesttypedef">UpdateDeploymentGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getdeploymentconfigoutputtypedef">GetDeploymentConfigOutputTypeDef</a></li>
+<li><a href="type_defs/#batchgetdeploymenttargetsoutputtypedef">BatchGetDeploymentTargetsOutputTypeDef</a></li>
+<li><a href="type_defs/#getdeploymenttargetoutputtypedef">GetDeploymentTargetOutputTypeDef</a></li>
+<li><a href="type_defs/#batchgetdeploymentgroupsoutputtypedef">BatchGetDeploymentGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#getdeploymentgroupoutputtypedef">GetDeploymentGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#batchgetdeploymentsoutputtypedef">BatchGetDeploymentsOutputTypeDef</a></li>
+<li><a href="type_defs/#getdeploymentoutputtypedef">GetDeploymentOutputTypeDef</a></li>
 </ul>
 
               
@@ -36381,7 +36380,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

@@ -102,15 +102,15 @@ def get_value() -> DescribeGroupRequestRequestTypeDef:
 ```
 
 - [DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef)
-- [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef)
-- [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GroupTypeDef](./type_defs.md#grouptypedef)
-- [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
-- [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
-- [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
-- [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+- [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef)
+- [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
+- [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
+- [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
+- [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
+- [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 

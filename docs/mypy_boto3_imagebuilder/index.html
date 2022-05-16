@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36061,158 +36061,158 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_imagebuilder.type_defs</span> <span class="kn">import</span> <span class="n">AdditionalInstanceConfigurationTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_imagebuilder.type_defs</span> <span class="kn">import</span> <span class="n">SystemsManagerAgentTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdditionalInstanceConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SystemsManagerAgentTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;systemsManagerAgent&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;uninstallAfterBuild&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#additionalinstanceconfigurationtypedef">AdditionalInstanceConfigurationTypeDef</a></li>
-<li><a href="type_defs/#amidistributionconfigurationtypedef">AmiDistributionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#amitypedef">AmiTypeDef</a></li>
+<li><a href="type_defs/#systemsmanageragenttypedef">SystemsManagerAgentTypeDef</a></li>
+<li><a href="type_defs/#launchpermissionconfigurationtypedef">LaunchPermissionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#imagestatetypedef">ImageStateTypeDef</a></li>
 <li><a href="type_defs/#cancelimagecreationrequestrequesttypedef">CancelImageCreationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#cancelimagecreationresponsetypedef">CancelImageCreationResponseTypeDef</a></li>
-<li><a href="type_defs/#componentconfigurationtypedef">ComponentConfigurationTypeDef</a></li>
-<li><a href="type_defs/#componentparameterdetailtypedef">ComponentParameterDetailTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#componentparametertypedef">ComponentParameterTypeDef</a></li>
+<li><a href="type_defs/#componentparameterdetailtypedef">ComponentParameterDetailTypeDef</a></li>
 <li><a href="type_defs/#componentstatetypedef">ComponentStateTypeDef</a></li>
-<li><a href="type_defs/#componentsummarytypedef">ComponentSummaryTypeDef</a></li>
-<li><a href="type_defs/#componenttypedef">ComponentTypeDef</a></li>
 <li><a href="type_defs/#componentversiontypedef">ComponentVersionTypeDef</a></li>
-<li><a href="type_defs/#containerdistributionconfigurationtypedef">ContainerDistributionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#targetcontainerrepositorytypedef">TargetContainerRepositoryTypeDef</a></li>
 <li><a href="type_defs/#containerrecipesummarytypedef">ContainerRecipeSummaryTypeDef</a></li>
-<li><a href="type_defs/#containerrecipetypedef">ContainerRecipeTypeDef</a></li>
 <li><a href="type_defs/#containertypedef">ContainerTypeDef</a></li>
 <li><a href="type_defs/#createcomponentrequestrequesttypedef">CreateComponentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createcomponentresponsetypedef">CreateComponentResponseTypeDef</a></li>
-<li><a href="type_defs/#createcontainerreciperequestrequesttypedef">CreateContainerRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createcontainerreciperesponsetypedef">CreateContainerRecipeResponseTypeDef</a></li>
-<li><a href="type_defs/#createdistributionconfigurationrequestrequesttypedef">CreateDistributionConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createdistributionconfigurationresponsetypedef">CreateDistributionConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#createimagepipelinerequestrequesttypedef">CreateImagePipelineRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createimagepipelineresponsetypedef">CreateImagePipelineResponseTypeDef</a></li>
-<li><a href="type_defs/#createimagereciperequestrequesttypedef">CreateImageRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createimagereciperesponsetypedef">CreateImageRecipeResponseTypeDef</a></li>
-<li><a href="type_defs/#createimagerequestrequesttypedef">CreateImageRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createimageresponsetypedef">CreateImageResponseTypeDef</a></li>
-<li><a href="type_defs/#createinfrastructureconfigurationrequestrequesttypedef">CreateInfrastructureConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createinfrastructureconfigurationresponsetypedef">CreateInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#imagetestsconfigurationtypedef">ImageTestsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#scheduletypedef">ScheduleTypeDef</a></li>
+<li><a href="type_defs/#instancemetadataoptionstypedef">InstanceMetadataOptionsTypeDef</a></li>
 <li><a href="type_defs/#deletecomponentrequestrequesttypedef">DeleteComponentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletecomponentresponsetypedef">DeleteComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#deletecontainerreciperequestrequesttypedef">DeleteContainerRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletecontainerreciperesponsetypedef">DeleteContainerRecipeResponseTypeDef</a></li>
 <li><a href="type_defs/#deletedistributionconfigurationrequestrequesttypedef">DeleteDistributionConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deletedistributionconfigurationresponsetypedef">DeleteDistributionConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteimagepipelinerequestrequesttypedef">DeleteImagePipelineRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteimagepipelineresponsetypedef">DeleteImagePipelineResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteimagereciperequestrequesttypedef">DeleteImageRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteimagereciperesponsetypedef">DeleteImageRecipeResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteimagerequestrequesttypedef">DeleteImageRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteimageresponsetypedef">DeleteImageResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteinfrastructureconfigurationrequestrequesttypedef">DeleteInfrastructureConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#deleteinfrastructureconfigurationresponsetypedef">DeleteInfrastructureConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#distributionconfigurationsummarytypedef">DistributionConfigurationSummaryTypeDef</a></li>
-<li><a href="type_defs/#distributionconfigurationtypedef">DistributionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#distributiontypedef">DistributionTypeDef</a></li>
+<li><a href="type_defs/#launchtemplateconfigurationtypedef">LaunchTemplateConfigurationTypeDef</a></li>
+<li><a href="type_defs/#s3exportconfigurationtypedef">S3ExportConfigurationTypeDef</a></li>
 <li><a href="type_defs/#ebsinstanceblockdevicespecificationtypedef">EbsInstanceBlockDeviceSpecificationTypeDef</a></li>
-<li><a href="type_defs/#fastlaunchconfigurationtypedef">FastLaunchConfigurationTypeDef</a></li>
 <li><a href="type_defs/#fastlaunchlaunchtemplatespecificationtypedef">FastLaunchLaunchTemplateSpecificationTypeDef</a></li>
 <li><a href="type_defs/#fastlaunchsnapshotconfigurationtypedef">FastLaunchSnapshotConfigurationTypeDef</a></li>
 <li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
 <li><a href="type_defs/#getcomponentpolicyrequestrequesttypedef">GetComponentPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcomponentpolicyresponsetypedef">GetComponentPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getcomponentrequestrequesttypedef">GetComponentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcomponentresponsetypedef">GetComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#getcontainerrecipepolicyrequestrequesttypedef">GetContainerRecipePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcontainerrecipepolicyresponsetypedef">GetContainerRecipePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getcontainerreciperequestrequesttypedef">GetContainerRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getcontainerreciperesponsetypedef">GetContainerRecipeResponseTypeDef</a></li>
 <li><a href="type_defs/#getdistributionconfigurationrequestrequesttypedef">GetDistributionConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getdistributionconfigurationresponsetypedef">GetDistributionConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getimagepipelinerequestrequesttypedef">GetImagePipelineRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimagepipelineresponsetypedef">GetImagePipelineResponseTypeDef</a></li>
 <li><a href="type_defs/#getimagepolicyrequestrequesttypedef">GetImagePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimagepolicyresponsetypedef">GetImagePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getimagerecipepolicyrequestrequesttypedef">GetImageRecipePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimagerecipepolicyresponsetypedef">GetImageRecipePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getimagereciperequestrequesttypedef">GetImageRecipeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimagereciperesponsetypedef">GetImageRecipeResponseTypeDef</a></li>
 <li><a href="type_defs/#getimagerequestrequesttypedef">GetImageRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimageresponsetypedef">GetImageResponseTypeDef</a></li>
 <li><a href="type_defs/#getinfrastructureconfigurationrequestrequesttypedef">GetInfrastructureConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getinfrastructureconfigurationresponsetypedef">GetInfrastructureConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#imagepackagetypedef">ImagePackageTypeDef</a></li>
-<li><a href="type_defs/#imagepipelinetypedef">ImagePipelineTypeDef</a></li>
 <li><a href="type_defs/#imagerecipesummarytypedef">ImageRecipeSummaryTypeDef</a></li>
-<li><a href="type_defs/#imagerecipetypedef">ImageRecipeTypeDef</a></li>
-<li><a href="type_defs/#imagestatetypedef">ImageStateTypeDef</a></li>
-<li><a href="type_defs/#imagesummarytypedef">ImageSummaryTypeDef</a></li>
-<li><a href="type_defs/#imagetestsconfigurationtypedef">ImageTestsConfigurationTypeDef</a></li>
-<li><a href="type_defs/#imagetypedef">ImageTypeDef</a></li>
 <li><a href="type_defs/#imageversiontypedef">ImageVersionTypeDef</a></li>
 <li><a href="type_defs/#importcomponentrequestrequesttypedef">ImportComponentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#importcomponentresponsetypedef">ImportComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#importvmimagerequestrequesttypedef">ImportVmImageRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#importvmimageresponsetypedef">ImportVmImageResponseTypeDef</a></li>
 <li><a href="type_defs/#infrastructureconfigurationsummarytypedef">InfrastructureConfigurationSummaryTypeDef</a></li>
-<li><a href="type_defs/#infrastructureconfigurationtypedef">InfrastructureConfigurationTypeDef</a></li>
-<li><a href="type_defs/#instanceblockdevicemappingtypedef">InstanceBlockDeviceMappingTypeDef</a></li>
-<li><a href="type_defs/#instanceconfigurationtypedef">InstanceConfigurationTypeDef</a></li>
-<li><a href="type_defs/#instancemetadataoptionstypedef">InstanceMetadataOptionsTypeDef</a></li>
-<li><a href="type_defs/#launchpermissionconfigurationtypedef">LaunchPermissionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#launchtemplateconfigurationtypedef">LaunchTemplateConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listcomponentbuildversionsrequestrequesttypedef">ListComponentBuildVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcomponentbuildversionsresponsetypedef">ListComponentBuildVersionsResponseTypeDef</a></li>
-<li><a href="type_defs/#listcomponentsrequestrequesttypedef">ListComponentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcomponentsresponsetypedef">ListComponentsResponseTypeDef</a></li>
-<li><a href="type_defs/#listcontainerrecipesrequestrequesttypedef">ListContainerRecipesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listcontainerrecipesresponsetypedef">ListContainerRecipesResponseTypeDef</a></li>
-<li><a href="type_defs/#listdistributionconfigurationsrequestrequesttypedef">ListDistributionConfigurationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listdistributionconfigurationsresponsetypedef">ListDistributionConfigurationsResponseTypeDef</a></li>
-<li><a href="type_defs/#listimagebuildversionsrequestrequesttypedef">ListImageBuildVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagebuildversionsresponsetypedef">ListImageBuildVersionsResponseTypeDef</a></li>
 <li><a href="type_defs/#listimagepackagesrequestrequesttypedef">ListImagePackagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagepackagesresponsetypedef">ListImagePackagesResponseTypeDef</a></li>
-<li><a href="type_defs/#listimagepipelineimagesrequestrequesttypedef">ListImagePipelineImagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagepipelineimagesresponsetypedef">ListImagePipelineImagesResponseTypeDef</a></li>
-<li><a href="type_defs/#listimagepipelinesrequestrequesttypedef">ListImagePipelinesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagepipelinesresponsetypedef">ListImagePipelinesResponseTypeDef</a></li>
-<li><a href="type_defs/#listimagerecipesrequestrequesttypedef">ListImageRecipesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagerecipesresponsetypedef">ListImageRecipesResponseTypeDef</a></li>
-<li><a href="type_defs/#listimagesrequestrequesttypedef">ListImagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listimagesresponsetypedef">ListImagesResponseTypeDef</a></li>
-<li><a href="type_defs/#listinfrastructureconfigurationsrequestrequesttypedef">ListInfrastructureConfigurationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listinfrastructureconfigurationsresponsetypedef">ListInfrastructureConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#s3logstypedef">S3LogsTypeDef</a></li>
+<li><a href="type_defs/#putcomponentpolicyrequestrequesttypedef">PutComponentPolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putcontainerrecipepolicyrequestrequesttypedef">PutContainerRecipePolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putimagepolicyrequestrequesttypedef">PutImagePolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putimagerecipepolicyrequestrequesttypedef">PutImageRecipePolicyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startimagepipelineexecutionrequestrequesttypedef">StartImagePipelineExecutionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#additionalinstanceconfigurationtypedef">AdditionalInstanceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#amidistributionconfigurationtypedef">AmiDistributionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#amitypedef">AmiTypeDef</a></li>
+<li><a href="type_defs/#cancelimagecreationresponsetypedef">CancelImageCreationResponseTypeDef</a></li>
+<li><a href="type_defs/#createcomponentresponsetypedef">CreateComponentResponseTypeDef</a></li>
+<li><a href="type_defs/#createcontainerreciperesponsetypedef">CreateContainerRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#createdistributionconfigurationresponsetypedef">CreateDistributionConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#createimagepipelineresponsetypedef">CreateImagePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#createimagereciperesponsetypedef">CreateImageRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#createimageresponsetypedef">CreateImageResponseTypeDef</a></li>
+<li><a href="type_defs/#createinfrastructureconfigurationresponsetypedef">CreateInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#deletecomponentresponsetypedef">DeleteComponentResponseTypeDef</a></li>
+<li><a href="type_defs/#deletecontainerreciperesponsetypedef">DeleteContainerRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#deletedistributionconfigurationresponsetypedef">DeleteDistributionConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteimagepipelineresponsetypedef">DeleteImagePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteimagereciperesponsetypedef">DeleteImageRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteimageresponsetypedef">DeleteImageResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteinfrastructureconfigurationresponsetypedef">DeleteInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#getcomponentpolicyresponsetypedef">GetComponentPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getcontainerrecipepolicyresponsetypedef">GetContainerRecipePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getimagepolicyresponsetypedef">GetImagePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#getimagerecipepolicyresponsetypedef">GetImageRecipePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#importcomponentresponsetypedef">ImportComponentResponseTypeDef</a></li>
+<li><a href="type_defs/#importvmimageresponsetypedef">ImportVmImageResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#putcomponentpolicyresponsetypedef">PutComponentPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#putcontainerrecipepolicyresponsetypedef">PutContainerRecipePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#putimagepolicyresponsetypedef">PutImagePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#putimagerecipepolicyresponsetypedef">PutImageRecipePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#startimagepipelineexecutionresponsetypedef">StartImagePipelineExecutionResponseTypeDef</a></li>
+<li><a href="type_defs/#updatedistributionconfigurationresponsetypedef">UpdateDistributionConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateimagepipelineresponsetypedef">UpdateImagePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#updateinfrastructureconfigurationresponsetypedef">UpdateInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#componentconfigurationtypedef">ComponentConfigurationTypeDef</a></li>
+<li><a href="type_defs/#componentsummarytypedef">ComponentSummaryTypeDef</a></li>
+<li><a href="type_defs/#componenttypedef">ComponentTypeDef</a></li>
+<li><a href="type_defs/#listcomponentsresponsetypedef">ListComponentsResponseTypeDef</a></li>
+<li><a href="type_defs/#containerdistributionconfigurationtypedef">ContainerDistributionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listcontainerrecipesresponsetypedef">ListContainerRecipesResponseTypeDef</a></li>
+<li><a href="type_defs/#createimagerequestrequesttypedef">CreateImageRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createimagepipelinerequestrequesttypedef">CreateImagePipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#imagepipelinetypedef">ImagePipelineTypeDef</a></li>
+<li><a href="type_defs/#updateimagepipelinerequestrequesttypedef">UpdateImagePipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listdistributionconfigurationsresponsetypedef">ListDistributionConfigurationsResponseTypeDef</a></li>
+<li><a href="type_defs/#instanceblockdevicemappingtypedef">InstanceBlockDeviceMappingTypeDef</a></li>
+<li><a href="type_defs/#fastlaunchconfigurationtypedef">FastLaunchConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listcomponentsrequestrequesttypedef">ListComponentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcontainerrecipesrequestrequesttypedef">ListContainerRecipesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listdistributionconfigurationsrequestrequesttypedef">ListDistributionConfigurationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagebuildversionsrequestrequesttypedef">ListImageBuildVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagepipelineimagesrequestrequesttypedef">ListImagePipelineImagesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagepipelinesrequestrequesttypedef">ListImagePipelinesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagerecipesrequestrequesttypedef">ListImageRecipesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagesrequestrequesttypedef">ListImagesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listinfrastructureconfigurationsrequestrequesttypedef">ListInfrastructureConfigurationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimagepackagesresponsetypedef">ListImagePackagesResponseTypeDef</a></li>
+<li><a href="type_defs/#listimagerecipesresponsetypedef">ListImageRecipesResponseTypeDef</a></li>
+<li><a href="type_defs/#listimagesresponsetypedef">ListImagesResponseTypeDef</a></li>
+<li><a href="type_defs/#listinfrastructureconfigurationsresponsetypedef">ListInfrastructureConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#loggingtypedef">LoggingTypeDef</a></li>
 <li><a href="type_defs/#outputresourcestypedef">OutputResourcesTypeDef</a></li>
-<li><a href="type_defs/#putcomponentpolicyrequestrequesttypedef">PutComponentPolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putcomponentpolicyresponsetypedef">PutComponentPolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#putcontainerrecipepolicyrequestrequesttypedef">PutContainerRecipePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putcontainerrecipepolicyresponsetypedef">PutContainerRecipePolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#putimagepolicyrequestrequesttypedef">PutImagePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putimagepolicyresponsetypedef">PutImagePolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#putimagerecipepolicyrequestrequesttypedef">PutImageRecipePolicyRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putimagerecipepolicyresponsetypedef">PutImageRecipePolicyResponseTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#s3exportconfigurationtypedef">S3ExportConfigurationTypeDef</a></li>
-<li><a href="type_defs/#s3logstypedef">S3LogsTypeDef</a></li>
-<li><a href="type_defs/#scheduletypedef">ScheduleTypeDef</a></li>
-<li><a href="type_defs/#startimagepipelineexecutionrequestrequesttypedef">StartImagePipelineExecutionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startimagepipelineexecutionresponsetypedef">StartImagePipelineExecutionResponseTypeDef</a></li>
-<li><a href="type_defs/#systemsmanageragenttypedef">SystemsManagerAgentTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#targetcontainerrepositorytypedef">TargetContainerRepositoryTypeDef</a></li>
-<li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedistributionconfigurationrequestrequesttypedef">UpdateDistributionConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatedistributionconfigurationresponsetypedef">UpdateDistributionConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#updateimagepipelinerequestrequesttypedef">UpdateImagePipelineRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateimagepipelineresponsetypedef">UpdateImagePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#listcomponentbuildversionsresponsetypedef">ListComponentBuildVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#getcomponentresponsetypedef">GetComponentResponseTypeDef</a></li>
+<li><a href="type_defs/#getimagepipelineresponsetypedef">GetImagePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#listimagepipelinesresponsetypedef">ListImagePipelinesResponseTypeDef</a></li>
+<li><a href="type_defs/#createimagereciperequestrequesttypedef">CreateImageRecipeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#imagerecipetypedef">ImageRecipeTypeDef</a></li>
+<li><a href="type_defs/#instanceconfigurationtypedef">InstanceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#distributiontypedef">DistributionTypeDef</a></li>
+<li><a href="type_defs/#createinfrastructureconfigurationrequestrequesttypedef">CreateInfrastructureConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#infrastructureconfigurationtypedef">InfrastructureConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updateinfrastructureconfigurationrequestrequesttypedef">UpdateInfrastructureConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updateinfrastructureconfigurationresponsetypedef">UpdateInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#imagesummarytypedef">ImageSummaryTypeDef</a></li>
+<li><a href="type_defs/#getimagereciperesponsetypedef">GetImageRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#containerrecipetypedef">ContainerRecipeTypeDef</a></li>
+<li><a href="type_defs/#createcontainerreciperequestrequesttypedef">CreateContainerRecipeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createdistributionconfigurationrequestrequesttypedef">CreateDistributionConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#distributionconfigurationtypedef">DistributionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#updatedistributionconfigurationrequestrequesttypedef">UpdateDistributionConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getinfrastructureconfigurationresponsetypedef">GetInfrastructureConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#listimagebuildversionsresponsetypedef">ListImageBuildVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listimagepipelineimagesresponsetypedef">ListImagePipelineImagesResponseTypeDef</a></li>
+<li><a href="type_defs/#getcontainerreciperesponsetypedef">GetContainerRecipeResponseTypeDef</a></li>
+<li><a href="type_defs/#getdistributionconfigurationresponsetypedef">GetDistributionConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#imagetypedef">ImageTypeDef</a></li>
+<li><a href="type_defs/#getimageresponsetypedef">GetImageResponseTypeDef</a></li>
 </ul>
 
               
@@ -36282,7 +36282,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

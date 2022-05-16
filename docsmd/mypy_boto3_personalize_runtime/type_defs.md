@@ -30,73 +30,6 @@ class GetPersonalizedRankingRequestRequestTypeDef(TypedDict):
     filterValues: NotRequired[Mapping[str, str]],
 ```
 
-## GetPersonalizedRankingResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseTypeDef
-
-def get_value() -> GetPersonalizedRankingResponseTypeDef:
-    return {
-        "personalizedRanking": ...,
-        "recommendationId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetPersonalizedRankingResponseTypeDef(TypedDict):
-    personalizedRanking: List[PredictedItemTypeDef],  # (1)
-    recommendationId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PredictedItemTypeDef](./type_defs.md#predicteditemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRecommendationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
-
-def get_value() -> GetRecommendationsRequestRequestTypeDef:
-    return {
-        "campaignArn": ...,
-    }
-```
-
-```python title="Definition"
-class GetRecommendationsRequestRequestTypeDef(TypedDict):
-    campaignArn: NotRequired[str],
-    itemId: NotRequired[str],
-    userId: NotRequired[str],
-    numResults: NotRequired[int],
-    context: NotRequired[Mapping[str, str]],
-    filterArn: NotRequired[str],
-    filterValues: NotRequired[Mapping[str, str]],
-    recommenderArn: NotRequired[str],
-```
-
-## GetRecommendationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseTypeDef
-
-def get_value() -> GetRecommendationsResponseTypeDef:
-    return {
-        "itemList": ...,
-        "recommendationId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRecommendationsResponseTypeDef(TypedDict):
-    itemList: List[PredictedItemTypeDef],  # (1)
-    recommendationId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PredictedItemTypeDef](./type_defs.md#predicteditemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PredictedItemTypeDef
 
 ```python title="Usage Example"
@@ -138,3 +71,70 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## GetRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
+
+def get_value() -> GetRecommendationsRequestRequestTypeDef:
+    return {
+        "campaignArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationsRequestRequestTypeDef(TypedDict):
+    campaignArn: NotRequired[str],
+    itemId: NotRequired[str],
+    userId: NotRequired[str],
+    numResults: NotRequired[int],
+    context: NotRequired[Mapping[str, str]],
+    filterArn: NotRequired[str],
+    filterValues: NotRequired[Mapping[str, str]],
+    recommenderArn: NotRequired[str],
+```
+
+## GetPersonalizedRankingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseTypeDef
+
+def get_value() -> GetPersonalizedRankingResponseTypeDef:
+    return {
+        "personalizedRanking": ...,
+        "recommendationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPersonalizedRankingResponseTypeDef(TypedDict):
+    personalizedRanking: List[PredictedItemTypeDef],  # (1)
+    recommendationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PredictedItemTypeDef](./type_defs.md#predicteditemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRecommendationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseTypeDef
+
+def get_value() -> GetRecommendationsResponseTypeDef:
+    return {
+        "itemList": ...,
+        "recommendationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationsResponseTypeDef(TypedDict):
+    itemList: List[PredictedItemTypeDef],  # (1)
+    recommendationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PredictedItemTypeDef](./type_defs.md#predicteditemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

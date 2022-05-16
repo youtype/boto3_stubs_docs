@@ -29,6 +29,285 @@ class CreateSavingsPlanRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## DeleteQueuedSavingsPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import DeleteQueuedSavingsPlanRequestRequestTypeDef
+
+def get_value() -> DeleteQueuedSavingsPlanRequestRequestTypeDef:
+    return {
+        "savingsPlanId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteQueuedSavingsPlanRequestRequestTypeDef(TypedDict):
+    savingsPlanId: str,
+```
+
+## SavingsPlanRateFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanRateFilterTypeDef
+
+def get_value() -> SavingsPlanRateFilterTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanRateFilterTypeDef(TypedDict):
+    name: NotRequired[SavingsPlanRateFilterNameType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype) 
+## SavingsPlanOfferingRateFilterElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateFilterElementTypeDef
+
+def get_value() -> SavingsPlanOfferingRateFilterElementTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanOfferingRateFilterElementTypeDef(TypedDict):
+    name: NotRequired[SavingsPlanRateFilterAttributeType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype) 
+## SavingsPlanOfferingFilterElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingFilterElementTypeDef
+
+def get_value() -> SavingsPlanOfferingFilterElementTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanOfferingFilterElementTypeDef(TypedDict):
+    name: NotRequired[SavingsPlanOfferingFilterAttributeType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype) 
+## SavingsPlanFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanFilterTypeDef
+
+def get_value() -> SavingsPlanFilterTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanFilterTypeDef(TypedDict):
+    name: NotRequired[SavingsPlansFilterNameType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype) 
+## SavingsPlanTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanTypeDef
+
+def get_value() -> SavingsPlanTypeDef:
+    return {
+        "offeringId": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanTypeDef(TypedDict):
+    offeringId: NotRequired[str],
+    savingsPlanId: NotRequired[str],
+    savingsPlanArn: NotRequired[str],
+    description: NotRequired[str],
+    start: NotRequired[str],
+    end: NotRequired[str],
+    state: NotRequired[SavingsPlanStateType],  # (1)
+    region: NotRequired[str],
+    ec2InstanceFamily: NotRequired[str],
+    savingsPlanType: NotRequired[SavingsPlanTypeType],  # (2)
+    paymentOption: NotRequired[SavingsPlanPaymentOptionType],  # (3)
+    productTypes: NotRequired[List[SavingsPlanProductTypeType]],  # (4)
+    currency: NotRequired[CurrencyCodeType],  # (5)
+    commitment: NotRequired[str],
+    upfrontPaymentAmount: NotRequired[str],
+    recurringPaymentAmount: NotRequired[str],
+    termDurationInSeconds: NotRequired[int],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: SavingsPlanStateType](./literals.md#savingsplanstatetype) 
+2. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
+3. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
+4. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
+5. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## ParentSavingsPlanOfferingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import ParentSavingsPlanOfferingTypeDef
+
+def get_value() -> ParentSavingsPlanOfferingTypeDef:
+    return {
+        "offeringId": ...,
+    }
+```
+
+```python title="Definition"
+class ParentSavingsPlanOfferingTypeDef(TypedDict):
+    offeringId: NotRequired[str],
+    paymentOption: NotRequired[SavingsPlanPaymentOptionType],  # (1)
+    planType: NotRequired[SavingsPlanTypeType],  # (2)
+    durationSeconds: NotRequired[int],
+    currency: NotRequired[CurrencyCodeType],  # (3)
+    planDescription: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
+2. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
+3. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
+## SavingsPlanOfferingPropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingPropertyTypeDef
+
+def get_value() -> SavingsPlanOfferingPropertyTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanOfferingPropertyTypeDef(TypedDict):
+    name: NotRequired[SavingsPlanOfferingPropertyKeyType],  # (1)
+    value: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SavingsPlanOfferingPropertyKeyType](./literals.md#savingsplanofferingpropertykeytype) 
+## SavingsPlanOfferingRatePropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRatePropertyTypeDef
+
+def get_value() -> SavingsPlanOfferingRatePropertyTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanOfferingRatePropertyTypeDef(TypedDict):
+    name: NotRequired[str],
+    value: NotRequired[str],
+```
+
+## SavingsPlanRatePropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import SavingsPlanRatePropertyTypeDef
+
+def get_value() -> SavingsPlanRatePropertyTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SavingsPlanRatePropertyTypeDef(TypedDict):
+    name: NotRequired[SavingsPlanRatePropertyKeyType],  # (1)
+    value: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SavingsPlanRatePropertyKeyType](./literals.md#savingsplanratepropertykeytype) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_savingsplans.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
 ## CreateSavingsPlanResponseTypeDef
 
 ```python title="Usage Example"
@@ -48,22 +327,25 @@ class CreateSavingsPlanResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteQueuedSavingsPlanRequestRequestTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import DeleteQueuedSavingsPlanRequestRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import ListTagsForResourceResponseTypeDef
 
-def get_value() -> DeleteQueuedSavingsPlanRequestRequestTypeDef:
+def get_value() -> ListTagsForResourceResponseTypeDef:
     return {
-        "savingsPlanId": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DeleteQueuedSavingsPlanRequestRequestTypeDef(TypedDict):
-    savingsPlanId: str,
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSavingsPlanRatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -84,30 +366,6 @@ class DescribeSavingsPlanRatesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef) 
-## DescribeSavingsPlanRatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesResponseTypeDef
-
-def get_value() -> DescribeSavingsPlanRatesResponseTypeDef:
-    return {
-        "savingsPlanId": ...,
-        "searchResults": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSavingsPlanRatesResponseTypeDef(TypedDict):
-    savingsPlanId: str,
-    searchResults: List[SavingsPlanRateTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SavingsPlanRateTypeDef](./type_defs.md#savingsplanratetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSavingsPlansOfferingRatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -138,28 +396,6 @@ class DescribeSavingsPlansOfferingRatesRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
 4. See [:material-code-brackets: SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype) 
 5. See [:material-code-braces: SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef) 
-## DescribeSavingsPlansOfferingRatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesResponseTypeDef
-
-def get_value() -> DescribeSavingsPlansOfferingRatesResponseTypeDef:
-    return {
-        "searchResults": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSavingsPlansOfferingRatesResponseTypeDef(TypedDict):
-    searchResults: List[SavingsPlanOfferingRateTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SavingsPlanOfferingRateTypeDef](./type_defs.md#savingsplanofferingratetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSavingsPlansOfferingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -193,28 +429,6 @@ class DescribeSavingsPlansOfferingsRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
 4. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
 5. See [:material-code-braces: SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef) 
-## DescribeSavingsPlansOfferingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsResponseTypeDef
-
-def get_value() -> DescribeSavingsPlansOfferingsResponseTypeDef:
-    return {
-        "searchResults": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeSavingsPlansOfferingsResponseTypeDef(TypedDict):
-    searchResults: List[SavingsPlanOfferingTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SavingsPlanOfferingTypeDef](./type_defs.md#savingsplanofferingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSavingsPlansRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -260,206 +474,6 @@ class DescribeSavingsPlansResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SavingsPlanTypeDef](./type_defs.md#savingsplantypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ParentSavingsPlanOfferingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import ParentSavingsPlanOfferingTypeDef
-
-def get_value() -> ParentSavingsPlanOfferingTypeDef:
-    return {
-        "offeringId": ...,
-    }
-```
-
-```python title="Definition"
-class ParentSavingsPlanOfferingTypeDef(TypedDict):
-    offeringId: NotRequired[str],
-    paymentOption: NotRequired[SavingsPlanPaymentOptionType],  # (1)
-    planType: NotRequired[SavingsPlanTypeType],  # (2)
-    durationSeconds: NotRequired[int],
-    currency: NotRequired[CurrencyCodeType],  # (3)
-    planDescription: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
-2. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
-3. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SavingsPlanFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanFilterTypeDef
-
-def get_value() -> SavingsPlanFilterTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanFilterTypeDef(TypedDict):
-    name: NotRequired[SavingsPlansFilterNameType],  # (1)
-    values: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype) 
-## SavingsPlanOfferingFilterElementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingFilterElementTypeDef
-
-def get_value() -> SavingsPlanOfferingFilterElementTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanOfferingFilterElementTypeDef(TypedDict):
-    name: NotRequired[SavingsPlanOfferingFilterAttributeType],  # (1)
-    values: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype) 
-## SavingsPlanOfferingPropertyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingPropertyTypeDef
-
-def get_value() -> SavingsPlanOfferingPropertyTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanOfferingPropertyTypeDef(TypedDict):
-    name: NotRequired[SavingsPlanOfferingPropertyKeyType],  # (1)
-    value: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SavingsPlanOfferingPropertyKeyType](./literals.md#savingsplanofferingpropertykeytype) 
-## SavingsPlanOfferingRateFilterElementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateFilterElementTypeDef
-
-def get_value() -> SavingsPlanOfferingRateFilterElementTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanOfferingRateFilterElementTypeDef(TypedDict):
-    name: NotRequired[SavingsPlanRateFilterAttributeType],  # (1)
-    values: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype) 
-## SavingsPlanOfferingRatePropertyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRatePropertyTypeDef
-
-def get_value() -> SavingsPlanOfferingRatePropertyTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanOfferingRatePropertyTypeDef(TypedDict):
-    name: NotRequired[str],
-    value: NotRequired[str],
-```
-
-## SavingsPlanOfferingRateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateTypeDef
-
-def get_value() -> SavingsPlanOfferingRateTypeDef:
-    return {
-        "savingsPlanOffering": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanOfferingRateTypeDef(TypedDict):
-    savingsPlanOffering: NotRequired[ParentSavingsPlanOfferingTypeDef],  # (1)
-    rate: NotRequired[str],
-    unit: NotRequired[SavingsPlanRateUnitType],  # (2)
-    productType: NotRequired[SavingsPlanProductTypeType],  # (3)
-    serviceCode: NotRequired[SavingsPlanRateServiceCodeType],  # (4)
-    usageType: NotRequired[str],
-    operation: NotRequired[str],
-    properties: NotRequired[List[SavingsPlanOfferingRatePropertyTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: ParentSavingsPlanOfferingTypeDef](./type_defs.md#parentsavingsplanofferingtypedef) 
-2. See [:material-code-brackets: SavingsPlanRateUnitType](./literals.md#savingsplanrateunittype) 
-3. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
-4. See [:material-code-brackets: SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype) 
-5. See [:material-code-braces: SavingsPlanOfferingRatePropertyTypeDef](./type_defs.md#savingsplanofferingratepropertytypedef) 
 ## SavingsPlanOfferingTypeDef
 
 ```python title="Usage Example"
@@ -491,42 +505,34 @@ class SavingsPlanOfferingTypeDef(TypedDict):
 3. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
 4. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
 5. See [:material-code-braces: SavingsPlanOfferingPropertyTypeDef](./type_defs.md#savingsplanofferingpropertytypedef) 
-## SavingsPlanRateFilterTypeDef
+## SavingsPlanOfferingRateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanRateFilterTypeDef
+from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateTypeDef
 
-def get_value() -> SavingsPlanRateFilterTypeDef:
+def get_value() -> SavingsPlanOfferingRateTypeDef:
     return {
-        "name": ...,
+        "savingsPlanOffering": ...,
     }
 ```
 
 ```python title="Definition"
-class SavingsPlanRateFilterTypeDef(TypedDict):
-    name: NotRequired[SavingsPlanRateFilterNameType],  # (1)
-    values: NotRequired[Sequence[str]],
+class SavingsPlanOfferingRateTypeDef(TypedDict):
+    savingsPlanOffering: NotRequired[ParentSavingsPlanOfferingTypeDef],  # (1)
+    rate: NotRequired[str],
+    unit: NotRequired[SavingsPlanRateUnitType],  # (2)
+    productType: NotRequired[SavingsPlanProductTypeType],  # (3)
+    serviceCode: NotRequired[SavingsPlanRateServiceCodeType],  # (4)
+    usageType: NotRequired[str],
+    operation: NotRequired[str],
+    properties: NotRequired[List[SavingsPlanOfferingRatePropertyTypeDef]],  # (5)
 ```
 
-1. See [:material-code-brackets: SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype) 
-## SavingsPlanRatePropertyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanRatePropertyTypeDef
-
-def get_value() -> SavingsPlanRatePropertyTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class SavingsPlanRatePropertyTypeDef(TypedDict):
-    name: NotRequired[SavingsPlanRatePropertyKeyType],  # (1)
-    value: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SavingsPlanRatePropertyKeyType](./literals.md#savingsplanratepropertykeytype) 
+1. See [:material-code-braces: ParentSavingsPlanOfferingTypeDef](./type_defs.md#parentsavingsplanofferingtypedef) 
+2. See [:material-code-brackets: SavingsPlanRateUnitType](./literals.md#savingsplanrateunittype) 
+3. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
+4. See [:material-code-brackets: SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype) 
+5. See [:material-code-braces: SavingsPlanOfferingRatePropertyTypeDef](./type_defs.md#savingsplanofferingratepropertytypedef) 
 ## SavingsPlanRateTypeDef
 
 ```python title="Usage Example"
@@ -555,77 +561,71 @@ class SavingsPlanRateTypeDef(TypedDict):
 3. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
 4. See [:material-code-brackets: SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype) 
 5. See [:material-code-braces: SavingsPlanRatePropertyTypeDef](./type_defs.md#savingsplanratepropertytypedef) 
-## SavingsPlanTypeDef
+## DescribeSavingsPlansOfferingsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import SavingsPlanTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsResponseTypeDef
 
-def get_value() -> SavingsPlanTypeDef:
+def get_value() -> DescribeSavingsPlansOfferingsResponseTypeDef:
     return {
-        "offeringId": ...,
+        "searchResults": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SavingsPlanTypeDef(TypedDict):
-    offeringId: NotRequired[str],
-    savingsPlanId: NotRequired[str],
-    savingsPlanArn: NotRequired[str],
-    description: NotRequired[str],
-    start: NotRequired[str],
-    end: NotRequired[str],
-    state: NotRequired[SavingsPlanStateType],  # (1)
-    region: NotRequired[str],
-    ec2InstanceFamily: NotRequired[str],
-    savingsPlanType: NotRequired[SavingsPlanTypeType],  # (2)
-    paymentOption: NotRequired[SavingsPlanPaymentOptionType],  # (3)
-    productTypes: NotRequired[List[SavingsPlanProductTypeType]],  # (4)
-    currency: NotRequired[CurrencyCodeType],  # (5)
-    commitment: NotRequired[str],
-    upfrontPaymentAmount: NotRequired[str],
-    recurringPaymentAmount: NotRequired[str],
-    termDurationInSeconds: NotRequired[int],
-    tags: NotRequired[Dict[str, str]],
+class DescribeSavingsPlansOfferingsResponseTypeDef(TypedDict):
+    searchResults: List[SavingsPlanOfferingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-brackets: SavingsPlanStateType](./literals.md#savingsplanstatetype) 
-2. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
-3. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
-4. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
-5. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
-## TagResourceRequestRequestTypeDef
+1. See [:material-code-braces: SavingsPlanOfferingTypeDef](./type_defs.md#savingsplanofferingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSavingsPlansOfferingRatesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesResponseTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> DescribeSavingsPlansOfferingRatesResponseTypeDef:
     return {
-        "resourceArn": ...,
-        "tags": ...,
+        "searchResults": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Mapping[str, str],
+class DescribeSavingsPlansOfferingRatesResponseTypeDef(TypedDict):
+    searchResults: List[SavingsPlanOfferingRateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: SavingsPlanOfferingRateTypeDef](./type_defs.md#savingsplanofferingratetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSavingsPlanRatesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_savingsplans.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesResponseTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> DescribeSavingsPlanRatesResponseTypeDef:
     return {
-        "resourceArn": ...,
-        "tagKeys": ...,
+        "savingsPlanId": ...,
+        "searchResults": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
+class DescribeSavingsPlanRatesResponseTypeDef(TypedDict):
+    savingsPlanId: str,
+    searchResults: List[SavingsPlanRateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: SavingsPlanRateTypeDef](./type_defs.md#savingsplanratetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

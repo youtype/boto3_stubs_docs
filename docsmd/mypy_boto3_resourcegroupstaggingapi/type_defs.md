@@ -25,29 +25,30 @@ class ComplianceDetailsTypeDef(TypedDict):
     ComplianceStatus: NotRequired[bool],
 ```
 
-## DescribeReportCreationOutputTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import DescribeReportCreationOutputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> DescribeReportCreationOutputTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Status": ...,
-        "S3Location": ...,
-        "ErrorMessage": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeReportCreationOutputTypeDef(TypedDict):
-    Status: str,
-    S3Location: str,
-    ErrorMessage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailureInfoTypeDef
 
 ```python title="Usage Example"
@@ -67,29 +68,24 @@ class FailureInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
-## GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "TargetIdFilters": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef(TypedDict):
-    TargetIdFilters: NotRequired[Sequence[str]],
-    RegionFilters: NotRequired[Sequence[str]],
-    ResourceTypeFilters: NotRequired[Sequence[str]],
-    TagKeyFilters: NotRequired[Sequence[str]],
-    GroupBy: NotRequired[Sequence[GroupByAttributeType]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: GroupByAttributeType](./literals.md#groupbyattributetype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetComplianceSummaryInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -113,6 +109,311 @@ class GetComplianceSummaryInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GroupByAttributeType](./literals.md#groupbyattributetype) 
+## SummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import SummaryTypeDef
+
+def get_value() -> SummaryTypeDef:
+    return {
+        "LastUpdated": ...,
+    }
+```
+
+```python title="Definition"
+class SummaryTypeDef(TypedDict):
+    LastUpdated: NotRequired[str],
+    TargetId: NotRequired[str],
+    TargetIdType: NotRequired[TargetIdTypeType],  # (1)
+    Region: NotRequired[str],
+    ResourceType: NotRequired[str],
+    NonCompliantResources: NotRequired[int],
+```
+
+1. See [:material-code-brackets: TargetIdTypeType](./literals.md#targetidtypetype) 
+## TagFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagFilterTypeDef
+
+def get_value() -> TagFilterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class TagFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
+
+## GetTagKeysInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputRequestTypeDef
+
+def get_value() -> GetTagKeysInputRequestTypeDef:
+    return {
+        "PaginationToken": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagKeysInputRequestTypeDef(TypedDict):
+    PaginationToken: NotRequired[str],
+```
+
+## GetTagValuesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputRequestTypeDef
+
+def get_value() -> GetTagValuesInputRequestTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagValuesInputRequestTypeDef(TypedDict):
+    Key: str,
+    PaginationToken: NotRequired[str],
+```
+
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## StartReportCreationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import StartReportCreationInputRequestTypeDef
+
+def get_value() -> StartReportCreationInputRequestTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class StartReportCreationInputRequestTypeDef(TypedDict):
+    S3Bucket: str,
+```
+
+## TagResourcesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesInputRequestTypeDef
+
+def get_value() -> TagResourcesInputRequestTypeDef:
+    return {
+        "ResourceARNList": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourcesInputRequestTypeDef(TypedDict):
+    ResourceARNList: Sequence[str],
+    Tags: Mapping[str, str],
+```
+
+## UntagResourcesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesInputRequestTypeDef
+
+def get_value() -> UntagResourcesInputRequestTypeDef:
+    return {
+        "ResourceARNList": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourcesInputRequestTypeDef(TypedDict):
+    ResourceARNList: Sequence[str],
+    TagKeys: Sequence[str],
+```
+
+## DescribeReportCreationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import DescribeReportCreationOutputTypeDef
+
+def get_value() -> DescribeReportCreationOutputTypeDef:
+    return {
+        "Status": ...,
+        "S3Location": ...,
+        "ErrorMessage": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReportCreationOutputTypeDef(TypedDict):
+    Status: str,
+    S3Location: str,
+    ErrorMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTagKeysOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysOutputTypeDef
+
+def get_value() -> GetTagKeysOutputTypeDef:
+    return {
+        "PaginationToken": ...,
+        "TagKeys": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagKeysOutputTypeDef(TypedDict):
+    PaginationToken: str,
+    TagKeys: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTagValuesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesOutputTypeDef
+
+def get_value() -> GetTagValuesOutputTypeDef:
+    return {
+        "PaginationToken": ...,
+        "TagValues": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagValuesOutputTypeDef(TypedDict):
+    PaginationToken: str,
+    TagValues: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourcesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputTypeDef
+
+def get_value() -> TagResourcesOutputTypeDef:
+    return {
+        "FailedResourcesMap": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourcesOutputTypeDef(TypedDict):
+    FailedResourcesMap: Dict[str, FailureInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UntagResourcesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputTypeDef
+
+def get_value() -> UntagResourcesOutputTypeDef:
+    return {
+        "FailedResourcesMap": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourcesOutputTypeDef(TypedDict):
+    FailedResourcesMap: Dict[str, FailureInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef
+
+def get_value() -> GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef:
+    return {
+        "TargetIdFilters": ...,
+    }
+```
+
+```python title="Definition"
+class GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef(TypedDict):
+    TargetIdFilters: NotRequired[Sequence[str]],
+    RegionFilters: NotRequired[Sequence[str]],
+    ResourceTypeFilters: NotRequired[Sequence[str]],
+    TagKeyFilters: NotRequired[Sequence[str]],
+    GroupBy: NotRequired[Sequence[GroupByAttributeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GroupByAttributeType](./literals.md#groupbyattributetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetTagKeysInputGetTagKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputGetTagKeysPaginateTypeDef
+
+def get_value() -> GetTagKeysInputGetTagKeysPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagKeysInputGetTagKeysPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetTagValuesInputGetTagValuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputGetTagValuesPaginateTypeDef
+
+def get_value() -> GetTagValuesInputGetTagValuesPaginateTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class GetTagValuesInputGetTagValuesPaginateTypeDef(TypedDict):
+    Key: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetComplianceSummaryOutputTypeDef
 
 ```python title="Usage Example"
@@ -183,6 +484,26 @@ class GetResourcesInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+## ResourceTagMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resourcegroupstaggingapi.type_defs import ResourceTagMappingTypeDef
+
+def get_value() -> ResourceTagMappingTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceTagMappingTypeDef(TypedDict):
+    ResourceARN: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    ComplianceDetails: NotRequired[ComplianceDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ComplianceDetailsTypeDef](./type_defs.md#compliancedetailstypedef) 
 ## GetResourcesOutputTypeDef
 
 ```python title="Usage Example"
@@ -204,325 +525,4 @@ class GetResourcesOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceTagMappingTypeDef](./type_defs.md#resourcetagmappingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTagKeysInputGetTagKeysPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputGetTagKeysPaginateTypeDef
-
-def get_value() -> GetTagKeysInputGetTagKeysPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagKeysInputGetTagKeysPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetTagKeysInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputRequestTypeDef
-
-def get_value() -> GetTagKeysInputRequestTypeDef:
-    return {
-        "PaginationToken": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagKeysInputRequestTypeDef(TypedDict):
-    PaginationToken: NotRequired[str],
-```
-
-## GetTagKeysOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysOutputTypeDef
-
-def get_value() -> GetTagKeysOutputTypeDef:
-    return {
-        "PaginationToken": ...,
-        "TagKeys": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagKeysOutputTypeDef(TypedDict):
-    PaginationToken: str,
-    TagKeys: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTagValuesInputGetTagValuesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputGetTagValuesPaginateTypeDef
-
-def get_value() -> GetTagValuesInputGetTagValuesPaginateTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagValuesInputGetTagValuesPaginateTypeDef(TypedDict):
-    Key: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## GetTagValuesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputRequestTypeDef
-
-def get_value() -> GetTagValuesInputRequestTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagValuesInputRequestTypeDef(TypedDict):
-    Key: str,
-    PaginationToken: NotRequired[str],
-```
-
-## GetTagValuesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesOutputTypeDef
-
-def get_value() -> GetTagValuesOutputTypeDef:
-    return {
-        "PaginationToken": ...,
-        "TagValues": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTagValuesOutputTypeDef(TypedDict):
-    PaginationToken: str,
-    TagValues: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ResourceTagMappingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import ResourceTagMappingTypeDef
-
-def get_value() -> ResourceTagMappingTypeDef:
-    return {
-        "ResourceARN": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceTagMappingTypeDef(TypedDict):
-    ResourceARN: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-    ComplianceDetails: NotRequired[ComplianceDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ComplianceDetailsTypeDef](./type_defs.md#compliancedetailstypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## StartReportCreationInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import StartReportCreationInputRequestTypeDef
-
-def get_value() -> StartReportCreationInputRequestTypeDef:
-    return {
-        "S3Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class StartReportCreationInputRequestTypeDef(TypedDict):
-    S3Bucket: str,
-```
-
-## SummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import SummaryTypeDef
-
-def get_value() -> SummaryTypeDef:
-    return {
-        "LastUpdated": ...,
-    }
-```
-
-```python title="Definition"
-class SummaryTypeDef(TypedDict):
-    LastUpdated: NotRequired[str],
-    TargetId: NotRequired[str],
-    TargetIdType: NotRequired[TargetIdTypeType],  # (1)
-    Region: NotRequired[str],
-    ResourceType: NotRequired[str],
-    NonCompliantResources: NotRequired[int],
-```
-
-1. See [:material-code-brackets: TargetIdTypeType](./literals.md#targetidtypetype) 
-## TagFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagFilterTypeDef
-
-def get_value() -> TagFilterTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagFilterTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Values: NotRequired[Sequence[str]],
-```
-
-## TagResourcesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesInputRequestTypeDef
-
-def get_value() -> TagResourcesInputRequestTypeDef:
-    return {
-        "ResourceARNList": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourcesInputRequestTypeDef(TypedDict):
-    ResourceARNList: Sequence[str],
-    Tags: Mapping[str, str],
-```
-
-## TagResourcesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputTypeDef
-
-def get_value() -> TagResourcesOutputTypeDef:
-    return {
-        "FailedResourcesMap": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourcesOutputTypeDef(TypedDict):
-    FailedResourcesMap: Dict[str, FailureInfoTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
-```
-
-## UntagResourcesInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesInputRequestTypeDef
-
-def get_value() -> UntagResourcesInputRequestTypeDef:
-    return {
-        "ResourceARNList": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourcesInputRequestTypeDef(TypedDict):
-    ResourceARNList: Sequence[str],
-    TagKeys: Sequence[str],
-```
-
-## UntagResourcesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputTypeDef
-
-def get_value() -> UntagResourcesOutputTypeDef:
-    return {
-        "FailedResourcesMap": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourcesOutputTypeDef(TypedDict):
-    FailedResourcesMap: Dict[str, FailureInfoTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FailureInfoTypeDef](./type_defs.md#failureinfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

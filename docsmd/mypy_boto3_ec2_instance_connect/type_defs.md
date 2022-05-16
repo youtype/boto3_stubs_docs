@@ -52,6 +52,25 @@ class SendSSHPublicKeyRequestRequestTypeDef(TypedDict):
     AvailabilityZone: NotRequired[str],
 ```
 
+## SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> SendSerialConsoleSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "SSHPublicKey": ...,
+    }
+```
+
+```python title="Definition"
+class SendSerialConsoleSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    SSHPublicKey: str,
+    SerialPort: NotRequired[int],
+```
+
 ## SendSSHPublicKeyResponseTypeDef
 
 ```python title="Usage Example"
@@ -73,25 +92,6 @@ class SendSSHPublicKeyResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
-
-def get_value() -> SendSerialConsoleSSHPublicKeyRequestRequestTypeDef:
-    return {
-        "InstanceId": ...,
-        "SSHPublicKey": ...,
-    }
-```
-
-```python title="Definition"
-class SendSerialConsoleSSHPublicKeyRequestRequestTypeDef(TypedDict):
-    InstanceId: str,
-    SSHPublicKey: str,
-    SerialPort: NotRequired[int],
-```
-
 ## SendSerialConsoleSSHPublicKeyResponseTypeDef
 
 ```python title="Usage Example"

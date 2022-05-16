@@ -65,26 +65,30 @@ class CompleteSnapshotRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 2. See [:material-code-brackets: ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype) 
-## CompleteSnapshotResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
+from mypy_boto3_ebs.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CompleteSnapshotResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "Status": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CompleteSnapshotResponseTypeDef(TypedDict):
-    Status: StatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSnapshotBlockRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -105,32 +109,6 @@ class GetSnapshotBlockRequestRequestTypeDef(TypedDict):
     BlockToken: str,
 ```
 
-## GetSnapshotBlockResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseTypeDef
-
-def get_value() -> GetSnapshotBlockResponseTypeDef:
-    return {
-        "DataLength": ...,
-        "BlockData": ...,
-        "Checksum": ...,
-        "ChecksumAlgorithm": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSnapshotBlockResponseTypeDef(TypedDict):
-    DataLength: int,
-    BlockData: StreamingBody,
-    Checksum: str,
-    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChangedBlocksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -151,34 +129,6 @@ class ListChangedBlocksRequestRequestTypeDef(TypedDict):
     StartingBlockIndex: NotRequired[int],
 ```
 
-## ListChangedBlocksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
-
-def get_value() -> ListChangedBlocksResponseTypeDef:
-    return {
-        "ChangedBlocks": ...,
-        "ExpiryTime": ...,
-        "VolumeSize": ...,
-        "BlockSize": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChangedBlocksResponseTypeDef(TypedDict):
-    ChangedBlocks: List[ChangedBlockTypeDef],  # (1)
-    ExpiryTime: datetime,
-    VolumeSize: int,
-    BlockSize: int,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChangedBlockTypeDef](./type_defs.md#changedblocktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSnapshotBlocksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -198,34 +148,6 @@ class ListSnapshotBlocksRequestRequestTypeDef(TypedDict):
     StartingBlockIndex: NotRequired[int],
 ```
 
-## ListSnapshotBlocksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
-
-def get_value() -> ListSnapshotBlocksResponseTypeDef:
-    return {
-        "Blocks": ...,
-        "ExpiryTime": ...,
-        "VolumeSize": ...,
-        "BlockSize": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListSnapshotBlocksResponseTypeDef(TypedDict):
-    Blocks: List[BlockTypeDef],  # (1)
-    ExpiryTime: datetime,
-    VolumeSize: int,
-    BlockSize: int,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutSnapshotBlockRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -254,6 +176,125 @@ class PutSnapshotBlockRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ebs.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## CompleteSnapshotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
+
+def get_value() -> CompleteSnapshotResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CompleteSnapshotResponseTypeDef(TypedDict):
+    Status: StatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSnapshotBlockResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseTypeDef
+
+def get_value() -> GetSnapshotBlockResponseTypeDef:
+    return {
+        "DataLength": ...,
+        "BlockData": ...,
+        "Checksum": ...,
+        "ChecksumAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSnapshotBlockResponseTypeDef(TypedDict):
+    DataLength: int,
+    BlockData: StreamingBody,
+    Checksum: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChangedBlocksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
+
+def get_value() -> ListChangedBlocksResponseTypeDef:
+    return {
+        "ChangedBlocks": ...,
+        "ExpiryTime": ...,
+        "VolumeSize": ...,
+        "BlockSize": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChangedBlocksResponseTypeDef(TypedDict):
+    ChangedBlocks: List[ChangedBlockTypeDef],  # (1)
+    ExpiryTime: datetime,
+    VolumeSize: int,
+    BlockSize: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChangedBlockTypeDef](./type_defs.md#changedblocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSnapshotBlocksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
+
+def get_value() -> ListSnapshotBlocksResponseTypeDef:
+    return {
+        "Blocks": ...,
+        "ExpiryTime": ...,
+        "VolumeSize": ...,
+        "BlockSize": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSnapshotBlocksResponseTypeDef(TypedDict):
+    Blocks: List[BlockTypeDef],  # (1)
+    ExpiryTime: datetime,
+    VolumeSize: int,
+    BlockSize: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutSnapshotBlockResponseTypeDef
 
 ```python title="Usage Example"
@@ -276,30 +317,6 @@ class PutSnapshotBlockResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## StartSnapshotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -363,20 +380,3 @@ class StartSnapshotResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ebs.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-

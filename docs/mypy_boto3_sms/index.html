@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36104,22 +36104,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sms.type_defs</span> <span class="kn">import</span> <span class="n">AppSummaryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sms.type_defs</span> <span class="kn">import</span> <span class="n">LaunchDetailsTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AppSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LaunchDetailsTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;appId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;latestLaunchTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#appsummarytypedef">AppSummaryTypeDef</a></li>
-<li><a href="type_defs/#appvalidationconfigurationtypedef">AppValidationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#appvalidationoutputtypedef">AppValidationOutputTypeDef</a></li>
+<li><a href="type_defs/#launchdetailstypedef">LaunchDetailsTypeDef</a></li>
 <li><a href="type_defs/#connectortypedef">ConnectorTypeDef</a></li>
-<li><a href="type_defs/#createapprequestrequesttypedef">CreateAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createappresponsetypedef">CreateAppResponseTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createreplicationjobrequestrequesttypedef">CreateReplicationJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createreplicationjobresponsetypedef">CreateReplicationJobResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteapplaunchconfigurationrequestrequesttypedef">DeleteAppLaunchConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteappreplicationconfigurationrequestrequesttypedef">DeleteAppReplicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteapprequestrequesttypedef">DeleteAppRequestRequestTypeDef</a></li>
@@ -36127,76 +36124,79 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletereplicationjobrequestrequesttypedef">DeleteReplicationJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociateconnectorrequestrequesttypedef">DisassociateConnectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#generatechangesetrequestrequesttypedef">GenerateChangeSetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#generatechangesetresponsetypedef">GenerateChangeSetResponseTypeDef</a></li>
+<li><a href="type_defs/#s3locationtypedef">S3LocationTypeDef</a></li>
 <li><a href="type_defs/#generatetemplaterequestrequesttypedef">GenerateTemplateRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#generatetemplateresponsetypedef">GenerateTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#getapplaunchconfigurationrequestrequesttypedef">GetAppLaunchConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getapplaunchconfigurationresponsetypedef">GetAppLaunchConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getappreplicationconfigurationrequestrequesttypedef">GetAppReplicationConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getappreplicationconfigurationresponsetypedef">GetAppReplicationConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getapprequestrequesttypedef">GetAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getappresponsetypedef">GetAppResponseTypeDef</a></li>
 <li><a href="type_defs/#getappvalidationconfigurationrequestrequesttypedef">GetAppValidationConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getappvalidationconfigurationresponsetypedef">GetAppValidationConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getappvalidationoutputrequestrequesttypedef">GetAppValidationOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getappvalidationoutputresponsetypedef">GetAppValidationOutputResponseTypeDef</a></li>
-<li><a href="type_defs/#getconnectorsrequestgetconnectorspaginatetypedef">GetConnectorsRequestGetConnectorsPaginateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#getconnectorsrequestrequesttypedef">GetConnectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getconnectorsresponsetypedef">GetConnectorsResponseTypeDef</a></li>
-<li><a href="type_defs/#getreplicationjobsrequestgetreplicationjobspaginatetypedef">GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getreplicationjobsrequestrequesttypedef">GetReplicationJobsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getreplicationjobsresponsetypedef">GetReplicationJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#getreplicationrunsrequestgetreplicationrunspaginatetypedef">GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getreplicationrunsrequestrequesttypedef">GetReplicationRunsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getreplicationrunsresponsetypedef">GetReplicationRunsResponseTypeDef</a></li>
-<li><a href="type_defs/#getserversrequestgetserverspaginatetypedef">GetServersRequestGetServersPaginateTypeDef</a></li>
-<li><a href="type_defs/#getserversrequestrequesttypedef">GetServersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getserversresponsetypedef">GetServersResponseTypeDef</a></li>
+<li><a href="type_defs/#vmserveraddresstypedef">VmServerAddressTypeDef</a></li>
 <li><a href="type_defs/#importappcatalogrequestrequesttypedef">ImportAppCatalogRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#launchapprequestrequesttypedef">LaunchAppRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#launchdetailstypedef">LaunchDetailsTypeDef</a></li>
-<li><a href="type_defs/#listappsrequestlistappspaginatetypedef">ListAppsRequestListAppsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listappsrequestrequesttypedef">ListAppsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listappsresponsetypedef">ListAppsResponseTypeDef</a></li>
 <li><a href="type_defs/#notificationcontexttypedef">NotificationContextTypeDef</a></li>
-<li><a href="type_defs/#notifyappvalidationoutputrequestrequesttypedef">NotifyAppValidationOutputRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#putapplaunchconfigurationrequestrequesttypedef">PutAppLaunchConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putappreplicationconfigurationrequestrequesttypedef">PutAppReplicationConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putappvalidationconfigurationrequestrequesttypedef">PutAppValidationConfigurationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#replicationjobtypedef">ReplicationJobTypeDef</a></li>
 <li><a href="type_defs/#replicationrunstagedetailstypedef">ReplicationRunStageDetailsTypeDef</a></li>
-<li><a href="type_defs/#replicationruntypedef">ReplicationRunTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#s3locationtypedef">S3LocationTypeDef</a></li>
-<li><a href="type_defs/#ssmoutputtypedef">SSMOutputTypeDef</a></li>
-<li><a href="type_defs/#ssmvalidationparameterstypedef">SSMValidationParametersTypeDef</a></li>
-<li><a href="type_defs/#servergrouplaunchconfigurationtypedef">ServerGroupLaunchConfigurationTypeDef</a></li>
-<li><a href="type_defs/#servergroupreplicationconfigurationtypedef">ServerGroupReplicationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#servergrouptypedef">ServerGroupTypeDef</a></li>
-<li><a href="type_defs/#servergroupvalidationconfigurationtypedef">ServerGroupValidationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#serverlaunchconfigurationtypedef">ServerLaunchConfigurationTypeDef</a></li>
-<li><a href="type_defs/#serverreplicationconfigurationtypedef">ServerReplicationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#serverreplicationparameterstypedef">ServerReplicationParametersTypeDef</a></li>
-<li><a href="type_defs/#servertypedef">ServerTypeDef</a></li>
-<li><a href="type_defs/#servervalidationconfigurationtypedef">ServerValidationConfigurationTypeDef</a></li>
-<li><a href="type_defs/#servervalidationoutputtypedef">ServerValidationOutputTypeDef</a></li>
-<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
 <li><a href="type_defs/#startappreplicationrequestrequesttypedef">StartAppReplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startondemandappreplicationrequestrequesttypedef">StartOnDemandAppReplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startondemandreplicationrunrequestrequesttypedef">StartOnDemandReplicationRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startondemandreplicationrunresponsetypedef">StartOnDemandReplicationRunResponseTypeDef</a></li>
 <li><a href="type_defs/#stopappreplicationrequestrequesttypedef">StopAppReplicationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#terminateapprequestrequesttypedef">TerminateAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatereplicationjobrequestrequesttypedef">UpdateReplicationJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#appsummarytypedef">AppSummaryTypeDef</a></li>
+<li><a href="type_defs/#createreplicationjobresponsetypedef">CreateReplicationJobResponseTypeDef</a></li>
+<li><a href="type_defs/#getconnectorsresponsetypedef">GetConnectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#startondemandreplicationrunresponsetypedef">StartOnDemandReplicationRunResponseTypeDef</a></li>
+<li><a href="type_defs/#generatechangesetresponsetypedef">GenerateChangeSetResponseTypeDef</a></li>
+<li><a href="type_defs/#generatetemplateresponsetypedef">GenerateTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#ssmoutputtypedef">SSMOutputTypeDef</a></li>
+<li><a href="type_defs/#sourcetypedef">SourceTypeDef</a></li>
+<li><a href="type_defs/#userdatatypedef">UserDataTypeDef</a></li>
+<li><a href="type_defs/#getconnectorsrequestgetconnectorspaginatetypedef">GetConnectorsRequestGetConnectorsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getreplicationjobsrequestgetreplicationjobspaginatetypedef">GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getreplicationrunsrequestgetreplicationrunspaginatetypedef">GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listappsrequestlistappspaginatetypedef">ListAppsRequestListAppsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getserversrequestgetserverspaginatetypedef">GetServersRequestGetServersPaginateTypeDef</a></li>
+<li><a href="type_defs/#getserversrequestrequesttypedef">GetServersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#vmservertypedef">VmServerTypeDef</a></li>
+<li><a href="type_defs/#notifyappvalidationoutputrequestrequesttypedef">NotifyAppValidationOutputRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#replicationruntypedef">ReplicationRunTypeDef</a></li>
+<li><a href="type_defs/#listappsresponsetypedef">ListAppsResponseTypeDef</a></li>
+<li><a href="type_defs/#appvalidationoutputtypedef">AppValidationOutputTypeDef</a></li>
+<li><a href="type_defs/#ssmvalidationparameterstypedef">SSMValidationParametersTypeDef</a></li>
+<li><a href="type_defs/#userdatavalidationparameterstypedef">UserDataValidationParametersTypeDef</a></li>
+<li><a href="type_defs/#servertypedef">ServerTypeDef</a></li>
+<li><a href="type_defs/#replicationjobtypedef">ReplicationJobTypeDef</a></li>
+<li><a href="type_defs/#appvalidationconfigurationtypedef">AppValidationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#getserversresponsetypedef">GetServersResponseTypeDef</a></li>
+<li><a href="type_defs/#servergrouptypedef">ServerGroupTypeDef</a></li>
+<li><a href="type_defs/#serverlaunchconfigurationtypedef">ServerLaunchConfigurationTypeDef</a></li>
+<li><a href="type_defs/#serverreplicationconfigurationtypedef">ServerReplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#servervalidationconfigurationtypedef">ServerValidationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#servervalidationoutputtypedef">ServerValidationOutputTypeDef</a></li>
+<li><a href="type_defs/#getreplicationjobsresponsetypedef">GetReplicationJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#getreplicationrunsresponsetypedef">GetReplicationRunsResponseTypeDef</a></li>
+<li><a href="type_defs/#createapprequestrequesttypedef">CreateAppRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createappresponsetypedef">CreateAppResponseTypeDef</a></li>
+<li><a href="type_defs/#getappresponsetypedef">GetAppResponseTypeDef</a></li>
 <li><a href="type_defs/#updateapprequestrequesttypedef">UpdateAppRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateappresponsetypedef">UpdateAppResponseTypeDef</a></li>
-<li><a href="type_defs/#updatereplicationjobrequestrequesttypedef">UpdateReplicationJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#userdatatypedef">UserDataTypeDef</a></li>
-<li><a href="type_defs/#userdatavalidationparameterstypedef">UserDataValidationParametersTypeDef</a></li>
+<li><a href="type_defs/#servergrouplaunchconfigurationtypedef">ServerGroupLaunchConfigurationTypeDef</a></li>
+<li><a href="type_defs/#servergroupreplicationconfigurationtypedef">ServerGroupReplicationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#servergroupvalidationconfigurationtypedef">ServerGroupValidationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#validationoutputtypedef">ValidationOutputTypeDef</a></li>
-<li><a href="type_defs/#vmserveraddresstypedef">VmServerAddressTypeDef</a></li>
-<li><a href="type_defs/#vmservertypedef">VmServerTypeDef</a></li>
+<li><a href="type_defs/#getapplaunchconfigurationresponsetypedef">GetAppLaunchConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#putapplaunchconfigurationrequestrequesttypedef">PutAppLaunchConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getappreplicationconfigurationresponsetypedef">GetAppReplicationConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#putappreplicationconfigurationrequestrequesttypedef">PutAppReplicationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getappvalidationconfigurationresponsetypedef">GetAppValidationConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#putappvalidationconfigurationrequestrequesttypedef">PutAppValidationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getappvalidationoutputresponsetypedef">GetAppValidationOutputResponseTypeDef</a></li>
 </ul>
 
               
@@ -36266,7 +36266,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

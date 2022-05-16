@@ -7,96 +7,67 @@
     Auto-generated documentation for [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
     type annotations stubs module [mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
-## AccessPointDescriptionResponseMetadataTypeDef
+## PosixUserTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import AccessPointDescriptionResponseMetadataTypeDef
+from mypy_boto3_efs.type_defs import PosixUserTypeDef
 
-def get_value() -> AccessPointDescriptionResponseMetadataTypeDef:
+def get_value() -> PosixUserTypeDef:
     return {
-        "ClientToken": ...,
-        "Name": ...,
-        "Tags": ...,
-        "AccessPointId": ...,
-        "AccessPointArn": ...,
-        "FileSystemId": ...,
-        "PosixUser": ...,
-        "RootDirectory": ...,
-        "OwnerId": ...,
-        "LifeCycleState": ...,
-        "ResponseMetadata": ...,
+        "Uid": ...,
+        "Gid": ...,
     }
 ```
 
 ```python title="Definition"
-class AccessPointDescriptionResponseMetadataTypeDef(TypedDict):
-    ClientToken: str,
-    Name: str,
-    Tags: List[TagTypeDef],  # (1)
-    AccessPointId: str,
-    AccessPointArn: str,
-    FileSystemId: str,
-    PosixUser: PosixUserTypeDef,  # (2)
-    RootDirectory: RootDirectoryTypeDef,  # (3)
-    OwnerId: str,
-    LifeCycleState: LifeCycleStateType,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+class PosixUserTypeDef(TypedDict):
+    Uid: int,
+    Gid: int,
+    SecondaryGids: NotRequired[Sequence[int]],
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
-3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
-4. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AccessPointDescriptionTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import AccessPointDescriptionTypeDef
+from mypy_boto3_efs.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> AccessPointDescriptionTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ClientToken": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class AccessPointDescriptionTypeDef(TypedDict):
-    ClientToken: NotRequired[str],
-    Name: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-    AccessPointId: NotRequired[str],
-    AccessPointArn: NotRequired[str],
-    FileSystemId: NotRequired[str],
-    PosixUser: NotRequired[PosixUserTypeDef],  # (2)
-    RootDirectory: NotRequired[RootDirectoryTypeDef],  # (3)
-    OwnerId: NotRequired[str],
-    LifeCycleState: NotRequired[LifeCycleStateType],  # (4)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
-3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
-4. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
-## BackupPolicyDescriptionTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import BackupPolicyDescriptionTypeDef
+from mypy_boto3_efs.type_defs import TagTypeDef
 
-def get_value() -> BackupPolicyDescriptionTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "BackupPolicy": ...,
-        "ResponseMetadata": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class BackupPolicyDescriptionTypeDef(TypedDict):
-    BackupPolicy: BackupPolicyTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BackupPolicyTypeDef
 
 ```python title="Usage Example"
@@ -114,57 +85,6 @@ class BackupPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
-## CreateAccessPointRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import CreateAccessPointRequestRequestTypeDef
-
-def get_value() -> CreateAccessPointRequestRequestTypeDef:
-    return {
-        "ClientToken": ...,
-        "FileSystemId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAccessPointRequestRequestTypeDef(TypedDict):
-    ClientToken: str,
-    FileSystemId: str,
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    PosixUser: NotRequired[PosixUserTypeDef],  # (2)
-    RootDirectory: NotRequired[RootDirectoryTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
-3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
-## CreateFileSystemRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import CreateFileSystemRequestRequestTypeDef
-
-def get_value() -> CreateFileSystemRequestRequestTypeDef:
-    return {
-        "CreationToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateFileSystemRequestRequestTypeDef(TypedDict):
-    CreationToken: str,
-    PerformanceMode: NotRequired[PerformanceModeType],  # (1)
-    Encrypted: NotRequired[bool],
-    KmsKeyId: NotRequired[str],
-    ThroughputMode: NotRequired[ThroughputModeType],  # (2)
-    ProvisionedThroughputInMibps: NotRequired[float],
-    AvailabilityZoneName: NotRequired[str],
-    Backup: NotRequired[bool],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: PerformanceModeType](./literals.md#performancemodetype) 
-2. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMountTargetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -185,44 +105,24 @@ class CreateMountTargetRequestRequestTypeDef(TypedDict):
     SecurityGroups: NotRequired[Sequence[str]],
 ```
 
-## CreateReplicationConfigurationRequestRequestTypeDef
+## DestinationToCreateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import CreateReplicationConfigurationRequestRequestTypeDef
+from mypy_boto3_efs.type_defs import DestinationToCreateTypeDef
 
-def get_value() -> CreateReplicationConfigurationRequestRequestTypeDef:
+def get_value() -> DestinationToCreateTypeDef:
     return {
-        "SourceFileSystemId": ...,
-        "Destinations": ...,
+        "Region": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateReplicationConfigurationRequestRequestTypeDef(TypedDict):
-    SourceFileSystemId: str,
-    Destinations: Sequence[DestinationToCreateTypeDef],  # (1)
+class DestinationToCreateTypeDef(TypedDict):
+    Region: NotRequired[str],
+    AvailabilityZoneName: NotRequired[str],
+    KmsKeyId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef) 
-## CreateTagsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import CreateTagsRequestRequestTypeDef
-
-def get_value() -> CreateTagsRequestRequestTypeDef:
-    return {
-        "FileSystemId": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTagsRequestRequestTypeDef(TypedDict):
-    FileSystemId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreationInfoTypeDef
 
 ```python title="Usage Example"
@@ -360,28 +260,6 @@ class DescribeAccessPointsRequestRequestTypeDef(TypedDict):
     FileSystemId: NotRequired[str],
 ```
 
-## DescribeAccessPointsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeAccessPointsResponseTypeDef
-
-def get_value() -> DescribeAccessPointsResponseTypeDef:
-    return {
-        "AccessPoints": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAccessPointsResponseTypeDef(TypedDict):
-    AccessPoints: List[AccessPointDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountPreferencesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -399,28 +277,25 @@ class DescribeAccountPreferencesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeAccountPreferencesResponseTypeDef
+## ResourceIdPreferenceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeAccountPreferencesResponseTypeDef
+from mypy_boto3_efs.type_defs import ResourceIdPreferenceTypeDef
 
-def get_value() -> DescribeAccountPreferencesResponseTypeDef:
+def get_value() -> ResourceIdPreferenceTypeDef:
     return {
-        "ResourceIdPreference": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "ResourceIdType": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAccountPreferencesResponseTypeDef(TypedDict):
-    ResourceIdPreference: ResourceIdPreferenceTypeDef,  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResourceIdPreferenceTypeDef(TypedDict):
+    ResourceIdType: NotRequired[ResourceIdTypeType],  # (1)
+    Resources: NotRequired[List[ResourceType]],  # (2)
 ```
 
-1. See [:material-code-braces: ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ResourceIdTypeType](./literals.md#resourceidtypetype) 
+2. See [:material-code-brackets: ResourceType](./literals.md#resourcetype) 
 ## DescribeBackupPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -453,25 +328,24 @@ class DescribeFileSystemPolicyRequestRequestTypeDef(TypedDict):
     FileSystemId: str,
 ```
 
-## DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef
+from mypy_boto3_efs.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "CreationToken": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef(TypedDict):
-    CreationToken: NotRequired[str],
-    FileSystemId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeFileSystemsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -491,30 +365,6 @@ class DescribeFileSystemsRequestRequestTypeDef(TypedDict):
     FileSystemId: NotRequired[str],
 ```
 
-## DescribeFileSystemsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeFileSystemsResponseTypeDef
-
-def get_value() -> DescribeFileSystemsResponseTypeDef:
-    return {
-        "Marker": ...,
-        "FileSystems": ...,
-        "NextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFileSystemsResponseTypeDef(TypedDict):
-    Marker: str,
-    FileSystems: List[FileSystemDescriptionTypeDef],  # (1)
-    NextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLifecycleConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -547,45 +397,6 @@ class DescribeMountTargetSecurityGroupsRequestRequestTypeDef(TypedDict):
     MountTargetId: str,
 ```
 
-## DescribeMountTargetSecurityGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsResponseTypeDef
-
-def get_value() -> DescribeMountTargetSecurityGroupsResponseTypeDef:
-    return {
-        "SecurityGroups": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMountTargetSecurityGroupsResponseTypeDef(TypedDict):
-    SecurityGroups: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef
-
-def get_value() -> DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef:
-    return {
-        "FileSystemId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef(TypedDict):
-    FileSystemId: NotRequired[str],
-    MountTargetId: NotRequired[str],
-    AccessPointId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMountTargetsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -606,30 +417,35 @@ class DescribeMountTargetsRequestRequestTypeDef(TypedDict):
     AccessPointId: NotRequired[str],
 ```
 
-## DescribeMountTargetsResponseTypeDef
+## MountTargetDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeMountTargetsResponseTypeDef
+from mypy_boto3_efs.type_defs import MountTargetDescriptionTypeDef
 
-def get_value() -> DescribeMountTargetsResponseTypeDef:
+def get_value() -> MountTargetDescriptionTypeDef:
     return {
-        "Marker": ...,
-        "MountTargets": ...,
-        "NextMarker": ...,
-        "ResponseMetadata": ...,
+        "MountTargetId": ...,
+        "FileSystemId": ...,
+        "SubnetId": ...,
+        "LifeCycleState": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeMountTargetsResponseTypeDef(TypedDict):
-    Marker: str,
-    MountTargets: List[MountTargetDescriptionTypeDef],  # (1)
-    NextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MountTargetDescriptionTypeDef(TypedDict):
+    MountTargetId: str,
+    FileSystemId: str,
+    SubnetId: str,
+    LifeCycleState: LifeCycleStateType,  # (1)
+    OwnerId: NotRequired[str],
+    IpAddress: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    AvailabilityZoneId: NotRequired[str],
+    AvailabilityZoneName: NotRequired[str],
+    VpcId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
 ## DescribeReplicationConfigurationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -648,46 +464,6 @@ class DescribeReplicationConfigurationsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## DescribeReplicationConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeReplicationConfigurationsResponseTypeDef
-
-def get_value() -> DescribeReplicationConfigurationsResponseTypeDef:
-    return {
-        "Replications": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeReplicationConfigurationsResponseTypeDef(TypedDict):
-    Replications: List[ReplicationConfigurationDescriptionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ReplicationConfigurationDescriptionTypeDef](./type_defs.md#replicationconfigurationdescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTagsRequestDescribeTagsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeTagsRequestDescribeTagsPaginateTypeDef
-
-def get_value() -> DescribeTagsRequestDescribeTagsPaginateTypeDef:
-    return {
-        "FileSystemId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTagsRequestDescribeTagsPaginateTypeDef(TypedDict):
-    FileSystemId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -704,48 +480,6 @@ class DescribeTagsRequestRequestTypeDef(TypedDict):
     FileSystemId: str,
     MaxItems: NotRequired[int],
     Marker: NotRequired[str],
-```
-
-## DescribeTagsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DescribeTagsResponseTypeDef
-
-def get_value() -> DescribeTagsResponseTypeDef:
-    return {
-        "Marker": ...,
-        "Tags": ...,
-        "NextMarker": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTagsResponseTypeDef(TypedDict):
-    Marker: str,
-    Tags: List[TagTypeDef],  # (1)
-    NextMarker: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DestinationToCreateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import DestinationToCreateTypeDef
-
-def get_value() -> DestinationToCreateTypeDef:
-    return {
-        "Region": ...,
-    }
-```
-
-```python title="Definition"
-class DestinationToCreateTypeDef(TypedDict):
-    Region: NotRequired[str],
-    AvailabilityZoneName: NotRequired[str],
-    KmsKeyId: NotRequired[str],
 ```
 
 ## DestinationTypeDef
@@ -770,6 +504,597 @@ class DestinationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReplicationStatusType](./literals.md#replicationstatustype) 
+## FileSystemSizeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import FileSystemSizeTypeDef
+
+def get_value() -> FileSystemSizeTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class FileSystemSizeTypeDef(TypedDict):
+    Value: int,
+    Timestamp: NotRequired[datetime],
+    ValueInIA: NotRequired[int],
+    ValueInStandard: NotRequired[int],
+```
+
+## LifecyclePolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import LifecyclePolicyTypeDef
+
+def get_value() -> LifecyclePolicyTypeDef:
+    return {
+        "TransitionToIA": ...,
+    }
+```
+
+```python title="Definition"
+class LifecyclePolicyTypeDef(TypedDict):
+    TransitionToIA: NotRequired[TransitionToIARulesType],  # (1)
+    TransitionToPrimaryStorageClass: NotRequired[TransitionToPrimaryStorageClassRulesType],  # (2)
+```
+
+1. See [:material-code-brackets: TransitionToIARulesType](./literals.md#transitiontoiarulestype) 
+2. See [:material-code-brackets: TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ModifyMountTargetSecurityGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import ModifyMountTargetSecurityGroupsRequestRequestTypeDef
+
+def get_value() -> ModifyMountTargetSecurityGroupsRequestRequestTypeDef:
+    return {
+        "MountTargetId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyMountTargetSecurityGroupsRequestRequestTypeDef(TypedDict):
+    MountTargetId: str,
+    SecurityGroups: NotRequired[Sequence[str]],
+```
+
+## PutAccountPreferencesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import PutAccountPreferencesRequestRequestTypeDef
+
+def get_value() -> PutAccountPreferencesRequestRequestTypeDef:
+    return {
+        "ResourceIdType": ...,
+    }
+```
+
+```python title="Definition"
+class PutAccountPreferencesRequestRequestTypeDef(TypedDict):
+    ResourceIdType: ResourceIdTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: ResourceIdTypeType](./literals.md#resourceidtypetype) 
+## PutFileSystemPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import PutFileSystemPolicyRequestRequestTypeDef
+
+def get_value() -> PutFileSystemPolicyRequestRequestTypeDef:
+    return {
+        "FileSystemId": ...,
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutFileSystemPolicyRequestRequestTypeDef(TypedDict):
+    FileSystemId: str,
+    Policy: str,
+    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagKeys: Sequence[str],
+```
+
+## UpdateFileSystemRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import UpdateFileSystemRequestRequestTypeDef
+
+def get_value() -> UpdateFileSystemRequestRequestTypeDef:
+    return {
+        "FileSystemId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFileSystemRequestRequestTypeDef(TypedDict):
+    FileSystemId: str,
+    ThroughputMode: NotRequired[ThroughputModeType],  # (1)
+    ProvisionedThroughputInMibps: NotRequired[float],
+```
+
+1. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
+## DescribeMountTargetSecurityGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsResponseTypeDef
+
+def get_value() -> DescribeMountTargetSecurityGroupsResponseTypeDef:
+    return {
+        "SecurityGroups": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMountTargetSecurityGroupsResponseTypeDef(TypedDict):
+    SecurityGroups: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FileSystemPolicyDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import FileSystemPolicyDescriptionTypeDef
+
+def get_value() -> FileSystemPolicyDescriptionTypeDef:
+    return {
+        "FileSystemId": ...,
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class FileSystemPolicyDescriptionTypeDef(TypedDict):
+    FileSystemId: str,
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MountTargetDescriptionResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import MountTargetDescriptionResponseMetadataTypeDef
+
+def get_value() -> MountTargetDescriptionResponseMetadataTypeDef:
+    return {
+        "OwnerId": ...,
+        "MountTargetId": ...,
+        "FileSystemId": ...,
+        "SubnetId": ...,
+        "LifeCycleState": ...,
+        "IpAddress": ...,
+        "NetworkInterfaceId": ...,
+        "AvailabilityZoneId": ...,
+        "AvailabilityZoneName": ...,
+        "VpcId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class MountTargetDescriptionResponseMetadataTypeDef(TypedDict):
+    OwnerId: str,
+    MountTargetId: str,
+    FileSystemId: str,
+    SubnetId: str,
+    LifeCycleState: LifeCycleStateType,  # (1)
+    IpAddress: str,
+    NetworkInterfaceId: str,
+    AvailabilityZoneId: str,
+    AvailabilityZoneName: str,
+    VpcId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFileSystemRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import CreateFileSystemRequestRequestTypeDef
+
+def get_value() -> CreateFileSystemRequestRequestTypeDef:
+    return {
+        "CreationToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFileSystemRequestRequestTypeDef(TypedDict):
+    CreationToken: str,
+    PerformanceMode: NotRequired[PerformanceModeType],  # (1)
+    Encrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    ThroughputMode: NotRequired[ThroughputModeType],  # (2)
+    ProvisionedThroughputInMibps: NotRequired[float],
+    AvailabilityZoneName: NotRequired[str],
+    Backup: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: PerformanceModeType](./literals.md#performancemodetype) 
+2. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateTagsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import CreateTagsRequestRequestTypeDef
+
+def get_value() -> CreateTagsRequestRequestTypeDef:
+    return {
+        "FileSystemId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTagsRequestRequestTypeDef(TypedDict):
+    FileSystemId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeTagsResponseTypeDef
+
+def get_value() -> DescribeTagsResponseTypeDef:
+    return {
+        "Marker": ...,
+        "Tags": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsResponseTypeDef(TypedDict):
+    Marker: str,
+    Tags: List[TagTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## BackupPolicyDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import BackupPolicyDescriptionTypeDef
+
+def get_value() -> BackupPolicyDescriptionTypeDef:
+    return {
+        "BackupPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BackupPolicyDescriptionTypeDef(TypedDict):
+    BackupPolicy: BackupPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutBackupPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import PutBackupPolicyRequestRequestTypeDef
+
+def get_value() -> PutBackupPolicyRequestRequestTypeDef:
+    return {
+        "FileSystemId": ...,
+        "BackupPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutBackupPolicyRequestRequestTypeDef(TypedDict):
+    FileSystemId: str,
+    BackupPolicy: BackupPolicyTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef) 
+## CreateReplicationConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import CreateReplicationConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateReplicationConfigurationRequestRequestTypeDef:
+    return {
+        "SourceFileSystemId": ...,
+        "Destinations": ...,
+    }
+```
+
+```python title="Definition"
+class CreateReplicationConfigurationRequestRequestTypeDef(TypedDict):
+    SourceFileSystemId: str,
+    Destinations: Sequence[DestinationToCreateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef) 
+## RootDirectoryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import RootDirectoryTypeDef
+
+def get_value() -> RootDirectoryTypeDef:
+    return {
+        "Path": ...,
+    }
+```
+
+```python title="Definition"
+class RootDirectoryTypeDef(TypedDict):
+    Path: NotRequired[str],
+    CreationInfo: NotRequired[CreationInfoTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CreationInfoTypeDef](./type_defs.md#creationinfotypedef) 
+## DescribeAccountPreferencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeAccountPreferencesResponseTypeDef
+
+def get_value() -> DescribeAccountPreferencesResponseTypeDef:
+    return {
+        "ResourceIdPreference": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountPreferencesResponseTypeDef(TypedDict):
+    ResourceIdPreference: ResourceIdPreferenceTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutAccountPreferencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import PutAccountPreferencesResponseTypeDef
+
+def get_value() -> PutAccountPreferencesResponseTypeDef:
+    return {
+        "ResourceIdPreference": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutAccountPreferencesResponseTypeDef(TypedDict):
+    ResourceIdPreference: ResourceIdPreferenceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef
+
+def get_value() -> DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef:
+    return {
+        "CreationToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef(TypedDict):
+    CreationToken: NotRequired[str],
+    FileSystemId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef
+
+def get_value() -> DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef:
+    return {
+        "FileSystemId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMountTargetsRequestDescribeMountTargetsPaginateTypeDef(TypedDict):
+    FileSystemId: NotRequired[str],
+    MountTargetId: NotRequired[str],
+    AccessPointId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeTagsRequestDescribeTagsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeTagsRequestDescribeTagsPaginateTypeDef
+
+def get_value() -> DescribeTagsRequestDescribeTagsPaginateTypeDef:
+    return {
+        "FileSystemId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsRequestDescribeTagsPaginateTypeDef(TypedDict):
+    FileSystemId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMountTargetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeMountTargetsResponseTypeDef
+
+def get_value() -> DescribeMountTargetsResponseTypeDef:
+    return {
+        "Marker": ...,
+        "MountTargets": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMountTargetsResponseTypeDef(TypedDict):
+    Marker: str,
+    MountTargets: List[MountTargetDescriptionTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicationConfigurationDescriptionResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionResponseMetadataTypeDef
+
+def get_value() -> ReplicationConfigurationDescriptionResponseMetadataTypeDef:
+    return {
+        "SourceFileSystemId": ...,
+        "SourceFileSystemRegion": ...,
+        "SourceFileSystemArn": ...,
+        "OriginalSourceFileSystemArn": ...,
+        "CreationTime": ...,
+        "Destinations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationDescriptionResponseMetadataTypeDef(TypedDict):
+    SourceFileSystemId: str,
+    SourceFileSystemRegion: str,
+    SourceFileSystemArn: str,
+    OriginalSourceFileSystemArn: str,
+    CreationTime: datetime,
+    Destinations: List[DestinationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicationConfigurationDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionTypeDef
+
+def get_value() -> ReplicationConfigurationDescriptionTypeDef:
+    return {
+        "SourceFileSystemId": ...,
+        "SourceFileSystemRegion": ...,
+        "SourceFileSystemArn": ...,
+        "OriginalSourceFileSystemArn": ...,
+        "CreationTime": ...,
+        "Destinations": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationDescriptionTypeDef(TypedDict):
+    SourceFileSystemId: str,
+    SourceFileSystemRegion: str,
+    SourceFileSystemArn: str,
+    OriginalSourceFileSystemArn: str,
+    CreationTime: datetime,
+    Destinations: List[DestinationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
 ## FileSystemDescriptionResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -871,46 +1196,6 @@ class FileSystemDescriptionTypeDef(TypedDict):
 3. See [:material-code-brackets: PerformanceModeType](./literals.md#performancemodetype) 
 4. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## FileSystemPolicyDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import FileSystemPolicyDescriptionTypeDef
-
-def get_value() -> FileSystemPolicyDescriptionTypeDef:
-    return {
-        "FileSystemId": ...,
-        "Policy": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class FileSystemPolicyDescriptionTypeDef(TypedDict):
-    FileSystemId: str,
-    Policy: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## FileSystemSizeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import FileSystemSizeTypeDef
-
-def get_value() -> FileSystemSizeTypeDef:
-    return {
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class FileSystemSizeTypeDef(TypedDict):
-    Value: int,
-    Timestamp: NotRequired[datetime],
-    ValueInIA: NotRequired[int],
-    ValueInStandard: NotRequired[int],
-```
-
 ## LifecycleConfigurationDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -931,261 +1216,6 @@ class LifecycleConfigurationDescriptionTypeDef(TypedDict):
 
 1. See [:material-code-braces: LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LifecyclePolicyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import LifecyclePolicyTypeDef
-
-def get_value() -> LifecyclePolicyTypeDef:
-    return {
-        "TransitionToIA": ...,
-    }
-```
-
-```python title="Definition"
-class LifecyclePolicyTypeDef(TypedDict):
-    TransitionToIA: NotRequired[TransitionToIARulesType],  # (1)
-    TransitionToPrimaryStorageClass: NotRequired[TransitionToPrimaryStorageClassRulesType],  # (2)
-```
-
-1. See [:material-code-brackets: TransitionToIARulesType](./literals.md#transitiontoiarulestype) 
-2. See [:material-code-brackets: TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyMountTargetSecurityGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ModifyMountTargetSecurityGroupsRequestRequestTypeDef
-
-def get_value() -> ModifyMountTargetSecurityGroupsRequestRequestTypeDef:
-    return {
-        "MountTargetId": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyMountTargetSecurityGroupsRequestRequestTypeDef(TypedDict):
-    MountTargetId: str,
-    SecurityGroups: NotRequired[Sequence[str]],
-```
-
-## MountTargetDescriptionResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import MountTargetDescriptionResponseMetadataTypeDef
-
-def get_value() -> MountTargetDescriptionResponseMetadataTypeDef:
-    return {
-        "OwnerId": ...,
-        "MountTargetId": ...,
-        "FileSystemId": ...,
-        "SubnetId": ...,
-        "LifeCycleState": ...,
-        "IpAddress": ...,
-        "NetworkInterfaceId": ...,
-        "AvailabilityZoneId": ...,
-        "AvailabilityZoneName": ...,
-        "VpcId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class MountTargetDescriptionResponseMetadataTypeDef(TypedDict):
-    OwnerId: str,
-    MountTargetId: str,
-    FileSystemId: str,
-    SubnetId: str,
-    LifeCycleState: LifeCycleStateType,  # (1)
-    IpAddress: str,
-    NetworkInterfaceId: str,
-    AvailabilityZoneId: str,
-    AvailabilityZoneName: str,
-    VpcId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MountTargetDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import MountTargetDescriptionTypeDef
-
-def get_value() -> MountTargetDescriptionTypeDef:
-    return {
-        "MountTargetId": ...,
-        "FileSystemId": ...,
-        "SubnetId": ...,
-        "LifeCycleState": ...,
-    }
-```
-
-```python title="Definition"
-class MountTargetDescriptionTypeDef(TypedDict):
-    MountTargetId: str,
-    FileSystemId: str,
-    SubnetId: str,
-    LifeCycleState: LifeCycleStateType,  # (1)
-    OwnerId: NotRequired[str],
-    IpAddress: NotRequired[str],
-    NetworkInterfaceId: NotRequired[str],
-    AvailabilityZoneId: NotRequired[str],
-    AvailabilityZoneName: NotRequired[str],
-    VpcId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PosixUserTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PosixUserTypeDef
-
-def get_value() -> PosixUserTypeDef:
-    return {
-        "Uid": ...,
-        "Gid": ...,
-    }
-```
-
-```python title="Definition"
-class PosixUserTypeDef(TypedDict):
-    Uid: int,
-    Gid: int,
-    SecondaryGids: NotRequired[Sequence[int]],
-```
-
-## PutAccountPreferencesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PutAccountPreferencesRequestRequestTypeDef
-
-def get_value() -> PutAccountPreferencesRequestRequestTypeDef:
-    return {
-        "ResourceIdType": ...,
-    }
-```
-
-```python title="Definition"
-class PutAccountPreferencesRequestRequestTypeDef(TypedDict):
-    ResourceIdType: ResourceIdTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: ResourceIdTypeType](./literals.md#resourceidtypetype) 
-## PutAccountPreferencesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PutAccountPreferencesResponseTypeDef
-
-def get_value() -> PutAccountPreferencesResponseTypeDef:
-    return {
-        "ResourceIdPreference": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutAccountPreferencesResponseTypeDef(TypedDict):
-    ResourceIdPreference: ResourceIdPreferenceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutBackupPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PutBackupPolicyRequestRequestTypeDef
-
-def get_value() -> PutBackupPolicyRequestRequestTypeDef:
-    return {
-        "FileSystemId": ...,
-        "BackupPolicy": ...,
-    }
-```
-
-```python title="Definition"
-class PutBackupPolicyRequestRequestTypeDef(TypedDict):
-    FileSystemId: str,
-    BackupPolicy: BackupPolicyTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef) 
-## PutFileSystemPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import PutFileSystemPolicyRequestRequestTypeDef
-
-def get_value() -> PutFileSystemPolicyRequestRequestTypeDef:
-    return {
-        "FileSystemId": ...,
-        "Policy": ...,
-    }
-```
-
-```python title="Definition"
-class PutFileSystemPolicyRequestRequestTypeDef(TypedDict):
-    FileSystemId: str,
-    Policy: str,
-    BypassPolicyLockoutSafetyCheck: NotRequired[bool],
-```
-
 ## PutLifecycleConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1205,195 +1235,165 @@ class PutLifecycleConfigurationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef) 
-## ReplicationConfigurationDescriptionResponseMetadataTypeDef
+## AccessPointDescriptionResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionResponseMetadataTypeDef
+from mypy_boto3_efs.type_defs import AccessPointDescriptionResponseMetadataTypeDef
 
-def get_value() -> ReplicationConfigurationDescriptionResponseMetadataTypeDef:
+def get_value() -> AccessPointDescriptionResponseMetadataTypeDef:
     return {
-        "SourceFileSystemId": ...,
-        "SourceFileSystemRegion": ...,
-        "SourceFileSystemArn": ...,
-        "OriginalSourceFileSystemArn": ...,
-        "CreationTime": ...,
-        "Destinations": ...,
+        "ClientToken": ...,
+        "Name": ...,
+        "Tags": ...,
+        "AccessPointId": ...,
+        "AccessPointArn": ...,
+        "FileSystemId": ...,
+        "PosixUser": ...,
+        "RootDirectory": ...,
+        "OwnerId": ...,
+        "LifeCycleState": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ReplicationConfigurationDescriptionResponseMetadataTypeDef(TypedDict):
-    SourceFileSystemId: str,
-    SourceFileSystemRegion: str,
-    SourceFileSystemArn: str,
-    OriginalSourceFileSystemArn: str,
-    CreationTime: datetime,
-    Destinations: List[DestinationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ReplicationConfigurationDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionTypeDef
-
-def get_value() -> ReplicationConfigurationDescriptionTypeDef:
-    return {
-        "SourceFileSystemId": ...,
-        "SourceFileSystemRegion": ...,
-        "SourceFileSystemArn": ...,
-        "OriginalSourceFileSystemArn": ...,
-        "CreationTime": ...,
-        "Destinations": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationDescriptionTypeDef(TypedDict):
-    SourceFileSystemId: str,
-    SourceFileSystemRegion: str,
-    SourceFileSystemArn: str,
-    OriginalSourceFileSystemArn: str,
-    CreationTime: datetime,
-    Destinations: List[DestinationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-## ResourceIdPreferenceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ResourceIdPreferenceTypeDef
-
-def get_value() -> ResourceIdPreferenceTypeDef:
-    return {
-        "ResourceIdType": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceIdPreferenceTypeDef(TypedDict):
-    ResourceIdType: NotRequired[ResourceIdTypeType],  # (1)
-    Resources: NotRequired[List[ResourceType]],  # (2)
-```
-
-1. See [:material-code-brackets: ResourceIdTypeType](./literals.md#resourceidtypetype) 
-2. See [:material-code-brackets: ResourceType](./literals.md#resourcetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RootDirectoryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import RootDirectoryTypeDef
-
-def get_value() -> RootDirectoryTypeDef:
-    return {
-        "Path": ...,
-    }
-```
-
-```python title="Definition"
-class RootDirectoryTypeDef(TypedDict):
-    Path: NotRequired[str],
-    CreationInfo: NotRequired[CreationInfoTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CreationInfoTypeDef](./type_defs.md#creationinfotypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceId": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    Tags: Sequence[TagTypeDef],  # (1)
+class AccessPointDescriptionResponseMetadataTypeDef(TypedDict):
+    ClientToken: str,
+    Name: str,
+    Tags: List[TagTypeDef],  # (1)
+    AccessPointId: str,
+    AccessPointArn: str,
+    FileSystemId: str,
+    PosixUser: PosixUserTypeDef,  # (2)
+    RootDirectory: RootDirectoryTypeDef,  # (3)
+    OwnerId: str,
+    LifeCycleState: LifeCycleStateType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
+3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
+4. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AccessPointDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import TagTypeDef
+from mypy_boto3_efs.type_defs import AccessPointDescriptionTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> AccessPointDescriptionTypeDef:
     return {
-        "Key": ...,
-        "Value": ...,
+        "ClientToken": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
+class AccessPointDescriptionTypeDef(TypedDict):
+    ClientToken: NotRequired[str],
+    Name: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    AccessPointId: NotRequired[str],
+    AccessPointArn: NotRequired[str],
+    FileSystemId: NotRequired[str],
+    PosixUser: NotRequired[PosixUserTypeDef],  # (2)
+    RootDirectory: NotRequired[RootDirectoryTypeDef],  # (3)
+    OwnerId: NotRequired[str],
+    LifeCycleState: NotRequired[LifeCycleStateType],  # (4)
 ```
 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
+3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
+4. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
+## CreateAccessPointRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_efs.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_efs.type_defs import CreateAccessPointRequestRequestTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> CreateAccessPointRequestRequestTypeDef:
     return {
-        "ResourceId": ...,
-        "TagKeys": ...,
-    }
-```
-
-```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    ResourceId: str,
-    TagKeys: Sequence[str],
-```
-
-## UpdateFileSystemRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_efs.type_defs import UpdateFileSystemRequestRequestTypeDef
-
-def get_value() -> UpdateFileSystemRequestRequestTypeDef:
-    return {
+        "ClientToken": ...,
         "FileSystemId": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateFileSystemRequestRequestTypeDef(TypedDict):
+class CreateAccessPointRequestRequestTypeDef(TypedDict):
+    ClientToken: str,
     FileSystemId: str,
-    ThroughputMode: NotRequired[ThroughputModeType],  # (1)
-    ProvisionedThroughputInMibps: NotRequired[float],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    PosixUser: NotRequired[PosixUserTypeDef],  # (2)
+    RootDirectory: NotRequired[RootDirectoryTypeDef],  # (3)
 ```
 
-1. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
+3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
+## DescribeReplicationConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeReplicationConfigurationsResponseTypeDef
+
+def get_value() -> DescribeReplicationConfigurationsResponseTypeDef:
+    return {
+        "Replications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReplicationConfigurationsResponseTypeDef(TypedDict):
+    Replications: List[ReplicationConfigurationDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReplicationConfigurationDescriptionTypeDef](./type_defs.md#replicationconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFileSystemsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeFileSystemsResponseTypeDef
+
+def get_value() -> DescribeFileSystemsResponseTypeDef:
+    return {
+        "Marker": ...,
+        "FileSystems": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFileSystemsResponseTypeDef(TypedDict):
+    Marker: str,
+    FileSystems: List[FileSystemDescriptionTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAccessPointsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_efs.type_defs import DescribeAccessPointsResponseTypeDef
+
+def get_value() -> DescribeAccessPointsResponseTypeDef:
+    return {
+        "AccessPoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccessPointsResponseTypeDef(TypedDict):
+    AccessPoints: List[AccessPointDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

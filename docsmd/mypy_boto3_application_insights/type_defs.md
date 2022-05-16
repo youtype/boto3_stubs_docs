@@ -79,49 +79,48 @@ class ConfigurationEventTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConfigurationEventStatusType](./literals.md#configurationeventstatustype) 
 2. See [:material-code-brackets: ConfigurationEventResourceTypeType](./literals.md#configurationeventresourcetypetype) 
-## CreateApplicationRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import CreateApplicationRequestRequestTypeDef
+from mypy_boto3_application_insights.type_defs import TagTypeDef
 
-def get_value() -> CreateApplicationRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "ResourceGroupName": ...,
+        "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateApplicationRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: NotRequired[str],
-    OpsCenterEnabled: NotRequired[bool],
-    CWEMonitorEnabled: NotRequired[bool],
-    OpsItemSNSTopicArn: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    AutoConfigEnabled: NotRequired[bool],
-    AutoCreate: NotRequired[bool],
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateApplicationResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import CreateApplicationResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateApplicationResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "ApplicationInfo": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateApplicationResponseTypeDef(TypedDict):
-    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -166,28 +165,25 @@ class CreateLogPatternRequestRequestTypeDef(TypedDict):
     Rank: int,
 ```
 
-## CreateLogPatternResponseTypeDef
+## LogPatternTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import CreateLogPatternResponseTypeDef
+from mypy_boto3_application_insights.type_defs import LogPatternTypeDef
 
-def get_value() -> CreateLogPatternResponseTypeDef:
+def get_value() -> LogPatternTypeDef:
     return {
-        "LogPattern": ...,
-        "ResourceGroupName": ...,
-        "ResponseMetadata": ...,
+        "PatternSetName": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateLogPatternResponseTypeDef(TypedDict):
-    LogPattern: LogPatternTypeDef,  # (1)
-    ResourceGroupName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LogPatternTypeDef(TypedDict):
+    PatternSetName: NotRequired[str],
+    PatternName: NotRequired[str],
+    Pattern: NotRequired[str],
+    Rank: NotRequired[int],
 ```
 
-1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -258,26 +254,6 @@ class DescribeApplicationRequestRequestTypeDef(TypedDict):
     ResourceGroupName: str,
 ```
 
-## DescribeApplicationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeApplicationResponseTypeDef
-
-def get_value() -> DescribeApplicationResponseTypeDef:
-    return {
-        "ApplicationInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeApplicationResponseTypeDef(TypedDict):
-    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeComponentConfigurationRecommendationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -299,25 +275,6 @@ class DescribeComponentConfigurationRecommendationRequestRequestTypeDef(TypedDic
 ```
 
 1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
-## DescribeComponentConfigurationRecommendationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationResponseTypeDef
-
-def get_value() -> DescribeComponentConfigurationRecommendationResponseTypeDef:
-    return {
-        "ComponentConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeComponentConfigurationRecommendationResponseTypeDef(TypedDict):
-    ComponentConfiguration: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeComponentConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -336,30 +293,6 @@ class DescribeComponentConfigurationRequestRequestTypeDef(TypedDict):
     ComponentName: str,
 ```
 
-## DescribeComponentConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationResponseTypeDef
-
-def get_value() -> DescribeComponentConfigurationResponseTypeDef:
-    return {
-        "Monitor": ...,
-        "Tier": ...,
-        "ComponentConfiguration": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeComponentConfigurationResponseTypeDef(TypedDict):
-    Monitor: bool,
-    Tier: TierType,  # (1)
-    ComponentConfiguration: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -378,28 +311,6 @@ class DescribeComponentRequestRequestTypeDef(TypedDict):
     ComponentName: str,
 ```
 
-## DescribeComponentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeComponentResponseTypeDef
-
-def get_value() -> DescribeComponentResponseTypeDef:
-    return {
-        "ApplicationComponent": ...,
-        "ResourceList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeComponentResponseTypeDef(TypedDict):
-    ApplicationComponent: ApplicationComponentTypeDef,  # (1)
-    ResourceList: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLogPatternRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -420,28 +331,6 @@ class DescribeLogPatternRequestRequestTypeDef(TypedDict):
     PatternName: str,
 ```
 
-## DescribeLogPatternResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeLogPatternResponseTypeDef
-
-def get_value() -> DescribeLogPatternResponseTypeDef:
-    return {
-        "ResourceGroupName": ...,
-        "LogPattern": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLogPatternResponseTypeDef(TypedDict):
-    ResourceGroupName: str,
-    LogPattern: LogPatternTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeObservationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -456,405 +345,6 @@ def get_value() -> DescribeObservationRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeObservationRequestRequestTypeDef(TypedDict):
     ObservationId: str,
-```
-
-## DescribeObservationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeObservationResponseTypeDef
-
-def get_value() -> DescribeObservationResponseTypeDef:
-    return {
-        "Observation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeObservationResponseTypeDef(TypedDict):
-    Observation: ObservationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ObservationTypeDef](./type_defs.md#observationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeProblemObservationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsRequestRequestTypeDef
-
-def get_value() -> DescribeProblemObservationsRequestRequestTypeDef:
-    return {
-        "ProblemId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProblemObservationsRequestRequestTypeDef(TypedDict):
-    ProblemId: str,
-```
-
-## DescribeProblemObservationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsResponseTypeDef
-
-def get_value() -> DescribeProblemObservationsResponseTypeDef:
-    return {
-        "RelatedObservations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProblemObservationsResponseTypeDef(TypedDict):
-    RelatedObservations: RelatedObservationsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RelatedObservationsTypeDef](./type_defs.md#relatedobservationstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeProblemRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeProblemRequestRequestTypeDef
-
-def get_value() -> DescribeProblemRequestRequestTypeDef:
-    return {
-        "ProblemId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProblemRequestRequestTypeDef(TypedDict):
-    ProblemId: str,
-```
-
-## DescribeProblemResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import DescribeProblemResponseTypeDef
-
-def get_value() -> DescribeProblemResponseTypeDef:
-    return {
-        "Problem": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProblemResponseTypeDef(TypedDict):
-    Problem: ProblemTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProblemTypeDef](./type_defs.md#problemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListApplicationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListApplicationsRequestRequestTypeDef
-
-def get_value() -> ListApplicationsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListApplicationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListApplicationsResponseTypeDef
-
-def get_value() -> ListApplicationsResponseTypeDef:
-    return {
-        "ApplicationInfoList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationsResponseTypeDef(TypedDict):
-    ApplicationInfoList: List[ApplicationInfoTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListComponentsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListComponentsRequestRequestTypeDef
-
-def get_value() -> ListComponentsRequestRequestTypeDef:
-    return {
-        "ResourceGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListComponentsRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListComponentsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListComponentsResponseTypeDef
-
-def get_value() -> ListComponentsResponseTypeDef:
-    return {
-        "ApplicationComponentList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListComponentsResponseTypeDef(TypedDict):
-    ApplicationComponentList: List[ApplicationComponentTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListConfigurationHistoryRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryRequestRequestTypeDef
-
-def get_value() -> ListConfigurationHistoryRequestRequestTypeDef:
-    return {
-        "ResourceGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationHistoryRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: NotRequired[str],
-    StartTime: NotRequired[Union[datetime, str]],
-    EndTime: NotRequired[Union[datetime, str]],
-    EventStatus: NotRequired[ConfigurationEventStatusType],  # (1)
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ConfigurationEventStatusType](./literals.md#configurationeventstatustype) 
-## ListConfigurationHistoryResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryResponseTypeDef
-
-def get_value() -> ListConfigurationHistoryResponseTypeDef:
-    return {
-        "EventList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationHistoryResponseTypeDef(TypedDict):
-    EventList: List[ConfigurationEventTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConfigurationEventTypeDef](./type_defs.md#configurationeventtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListLogPatternSetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListLogPatternSetsRequestRequestTypeDef
-
-def get_value() -> ListLogPatternSetsRequestRequestTypeDef:
-    return {
-        "ResourceGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogPatternSetsRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListLogPatternSetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListLogPatternSetsResponseTypeDef
-
-def get_value() -> ListLogPatternSetsResponseTypeDef:
-    return {
-        "ResourceGroupName": ...,
-        "LogPatternSets": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogPatternSetsResponseTypeDef(TypedDict):
-    ResourceGroupName: str,
-    LogPatternSets: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListLogPatternsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListLogPatternsRequestRequestTypeDef
-
-def get_value() -> ListLogPatternsRequestRequestTypeDef:
-    return {
-        "ResourceGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogPatternsRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: str,
-    PatternSetName: NotRequired[str],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListLogPatternsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseTypeDef
-
-def get_value() -> ListLogPatternsResponseTypeDef:
-    return {
-        "ResourceGroupName": ...,
-        "LogPatterns": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListLogPatternsResponseTypeDef(TypedDict):
-    ResourceGroupName: str,
-    LogPatterns: List[LogPatternTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProblemsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListProblemsRequestRequestTypeDef
-
-def get_value() -> ListProblemsRequestRequestTypeDef:
-    return {
-        "ResourceGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class ListProblemsRequestRequestTypeDef(TypedDict):
-    ResourceGroupName: NotRequired[str],
-    StartTime: NotRequired[Union[datetime, str]],
-    EndTime: NotRequired[Union[datetime, str]],
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    ComponentName: NotRequired[str],
-```
-
-## ListProblemsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListProblemsResponseTypeDef
-
-def get_value() -> ListProblemsResponseTypeDef:
-    return {
-        "ProblemList": ...,
-        "NextToken": ...,
-        "ResourceGroupName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListProblemsResponseTypeDef(TypedDict):
-    ProblemList: List[ProblemTypeDef],  # (1)
-    NextToken: str,
-    ResourceGroupName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProblemTypeDef](./type_defs.md#problemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogPatternTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import LogPatternTypeDef
-
-def get_value() -> LogPatternTypeDef:
-    return {
-        "PatternSetName": ...,
-    }
-```
-
-```python title="Definition"
-class LogPatternTypeDef(TypedDict):
-    PatternSetName: NotRequired[str],
-    PatternName: NotRequired[str],
-    Pattern: NotRequired[str],
-    Rank: NotRequired[int],
 ```
 
 ## ObservationTypeDef
@@ -919,6 +409,38 @@ class ObservationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: LogFilterType](./literals.md#logfiltertype) 
 2. See [:material-code-brackets: CloudWatchEventSourceType](./literals.md#cloudwatcheventsourcetype) 
+## DescribeProblemObservationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsRequestRequestTypeDef
+
+def get_value() -> DescribeProblemObservationsRequestRequestTypeDef:
+    return {
+        "ProblemId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProblemObservationsRequestRequestTypeDef(TypedDict):
+    ProblemId: str,
+```
+
+## DescribeProblemRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeProblemRequestRequestTypeDef
+
+def get_value() -> DescribeProblemRequestRequestTypeDef:
+    return {
+        "ProblemId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProblemRequestRequestTypeDef(TypedDict):
+    ProblemId: str,
+```
+
 ## ProblemTypeDef
 
 ```python title="Usage Example"
@@ -949,82 +471,135 @@ class ProblemTypeDef(TypedDict):
 1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 2. See [:material-code-brackets: SeverityLevelType](./literals.md#severityleveltype) 
 3. See [:material-code-brackets: FeedbackKeyType](./literals.md#feedbackkeytype) [:material-code-brackets: FeedbackValueType](./literals.md#feedbackvaluetype) 
-## RelatedObservationsTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import RelatedObservationsTypeDef
+from mypy_boto3_application_insights.type_defs import ListApplicationsRequestRequestTypeDef
 
-def get_value() -> RelatedObservationsTypeDef:
+def get_value() -> ListApplicationsRequestRequestTypeDef:
     return {
-        "ObservationList": ...,
+        "MaxResults": ...,
     }
 ```
 
 ```python title="Definition"
-class RelatedObservationsTypeDef(TypedDict):
-    ObservationList: NotRequired[List[ObservationTypeDef]],  # (1)
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ObservationTypeDef](./type_defs.md#observationtypedef) 
-## ResponseMetadataTypeDef
+## ListComponentsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_application_insights.type_defs import ListComponentsRequestRequestTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> ListComponentsRequestRequestTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "ResourceGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class ListComponentsRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
-## TagResourceRequestRequestTypeDef
+## ListConfigurationHistoryRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryRequestRequestTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> ListConfigurationHistoryRequestRequestTypeDef:
+    return {
+        "ResourceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationHistoryRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    EventStatus: NotRequired[ConfigurationEventStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ConfigurationEventStatusType](./literals.md#configurationeventstatustype) 
+## ListLogPatternSetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListLogPatternSetsRequestRequestTypeDef
+
+def get_value() -> ListLogPatternSetsRequestRequestTypeDef:
+    return {
+        "ResourceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogPatternSetsRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListLogPatternsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListLogPatternsRequestRequestTypeDef
+
+def get_value() -> ListLogPatternsRequestRequestTypeDef:
+    return {
+        "ResourceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogPatternsRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: str,
+    PatternSetName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListProblemsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListProblemsRequestRequestTypeDef
+
+def get_value() -> ListProblemsRequestRequestTypeDef:
+    return {
+        "ResourceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListProblemsRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ComponentName: NotRequired[str],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
     return {
         "ResourceARN": ...,
-        "Tags": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -1066,26 +641,6 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
     AutoConfigEnabled: NotRequired[bool],
 ```
 
-## UpdateApplicationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_insights.type_defs import UpdateApplicationResponseTypeDef
-
-def get_value() -> UpdateApplicationResponseTypeDef:
-    return {
-        "ApplicationInfo": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateApplicationResponseTypeDef(TypedDict):
-    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateComponentConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1151,6 +706,350 @@ class UpdateLogPatternRequestRequestTypeDef(TypedDict):
     Rank: NotRequired[int],
 ```
 
+## CreateApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "ResourceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    ResourceGroupName: NotRequired[str],
+    OpsCenterEnabled: NotRequired[bool],
+    CWEMonitorEnabled: NotRequired[bool],
+    OpsItemSNSTopicArn: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    AutoConfigEnabled: NotRequired[bool],
+    AutoCreate: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "ApplicationInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeApplicationResponseTypeDef
+
+def get_value() -> DescribeApplicationResponseTypeDef:
+    return {
+        "ApplicationInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeApplicationResponseTypeDef(TypedDict):
+    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComponentConfigurationRecommendationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationResponseTypeDef
+
+def get_value() -> DescribeComponentConfigurationRecommendationResponseTypeDef:
+    return {
+        "ComponentConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComponentConfigurationRecommendationResponseTypeDef(TypedDict):
+    ComponentConfiguration: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComponentConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationResponseTypeDef
+
+def get_value() -> DescribeComponentConfigurationResponseTypeDef:
+    return {
+        "Monitor": ...,
+        "Tier": ...,
+        "ComponentConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComponentConfigurationResponseTypeDef(TypedDict):
+    Monitor: bool,
+    Tier: TierType,  # (1)
+    ComponentConfiguration: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeComponentResponseTypeDef
+
+def get_value() -> DescribeComponentResponseTypeDef:
+    return {
+        "ApplicationComponent": ...,
+        "ResourceList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComponentResponseTypeDef(TypedDict):
+    ApplicationComponent: ApplicationComponentTypeDef,  # (1)
+    ResourceList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "ApplicationInfoList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    ApplicationInfoList: List[ApplicationInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComponentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListComponentsResponseTypeDef
+
+def get_value() -> ListComponentsResponseTypeDef:
+    return {
+        "ApplicationComponentList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsResponseTypeDef(TypedDict):
+    ApplicationComponentList: List[ApplicationComponentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConfigurationHistoryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryResponseTypeDef
+
+def get_value() -> ListConfigurationHistoryResponseTypeDef:
+    return {
+        "EventList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationHistoryResponseTypeDef(TypedDict):
+    EventList: List[ConfigurationEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConfigurationEventTypeDef](./type_defs.md#configurationeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLogPatternSetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListLogPatternSetsResponseTypeDef
+
+def get_value() -> ListLogPatternSetsResponseTypeDef:
+    return {
+        "ResourceGroupName": ...,
+        "LogPatternSets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogPatternSetsResponseTypeDef(TypedDict):
+    ResourceGroupName: str,
+    LogPatternSets: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import UpdateApplicationResponseTypeDef
+
+def get_value() -> UpdateApplicationResponseTypeDef:
+    return {
+        "ApplicationInfo": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateApplicationResponseTypeDef(TypedDict):
+    ApplicationInfo: ApplicationInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLogPatternResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import CreateLogPatternResponseTypeDef
+
+def get_value() -> CreateLogPatternResponseTypeDef:
+    return {
+        "LogPattern": ...,
+        "ResourceGroupName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLogPatternResponseTypeDef(TypedDict):
+    LogPattern: LogPatternTypeDef,  # (1)
+    ResourceGroupName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLogPatternResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeLogPatternResponseTypeDef
+
+def get_value() -> DescribeLogPatternResponseTypeDef:
+    return {
+        "ResourceGroupName": ...,
+        "LogPattern": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLogPatternResponseTypeDef(TypedDict):
+    ResourceGroupName: str,
+    LogPattern: LogPatternTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLogPatternsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseTypeDef
+
+def get_value() -> ListLogPatternsResponseTypeDef:
+    return {
+        "ResourceGroupName": ...,
+        "LogPatterns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLogPatternsResponseTypeDef(TypedDict):
+    ResourceGroupName: str,
+    LogPatterns: List[LogPatternTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLogPatternResponseTypeDef
 
 ```python title="Usage Example"
@@ -1172,4 +1071,105 @@ class UpdateLogPatternResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LogPatternTypeDef](./type_defs.md#logpatterntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeObservationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeObservationResponseTypeDef
+
+def get_value() -> DescribeObservationResponseTypeDef:
+    return {
+        "Observation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeObservationResponseTypeDef(TypedDict):
+    Observation: ObservationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ObservationTypeDef](./type_defs.md#observationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RelatedObservationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import RelatedObservationsTypeDef
+
+def get_value() -> RelatedObservationsTypeDef:
+    return {
+        "ObservationList": ...,
+    }
+```
+
+```python title="Definition"
+class RelatedObservationsTypeDef(TypedDict):
+    ObservationList: NotRequired[List[ObservationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ObservationTypeDef](./type_defs.md#observationtypedef) 
+## DescribeProblemResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeProblemResponseTypeDef
+
+def get_value() -> DescribeProblemResponseTypeDef:
+    return {
+        "Problem": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProblemResponseTypeDef(TypedDict):
+    Problem: ProblemTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProblemTypeDef](./type_defs.md#problemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProblemsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import ListProblemsResponseTypeDef
+
+def get_value() -> ListProblemsResponseTypeDef:
+    return {
+        "ProblemList": ...,
+        "NextToken": ...,
+        "ResourceGroupName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProblemsResponseTypeDef(TypedDict):
+    ProblemList: List[ProblemTypeDef],  # (1)
+    NextToken: str,
+    ResourceGroupName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProblemTypeDef](./type_defs.md#problemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProblemObservationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsResponseTypeDef
+
+def get_value() -> DescribeProblemObservationsResponseTypeDef:
+    return {
+        "RelatedObservations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProblemObservationsResponseTypeDef(TypedDict):
+    RelatedObservations: RelatedObservationsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RelatedObservationsTypeDef](./type_defs.md#relatedobservationstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

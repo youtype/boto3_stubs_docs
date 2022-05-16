@@ -40,50 +40,22 @@ class AvailabilityZoneTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
-## BrokerEngineTypeTypeDef
+## EngineVersionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import BrokerEngineTypeTypeDef
+from mypy_boto3_mq.type_defs import EngineVersionTypeDef
 
-def get_value() -> BrokerEngineTypeTypeDef:
+def get_value() -> EngineVersionTypeDef:
     return {
-        "EngineType": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class BrokerEngineTypeTypeDef(TypedDict):
-    EngineType: NotRequired[EngineTypeType],  # (1)
-    EngineVersions: NotRequired[List[EngineVersionTypeDef]],  # (2)
+class EngineVersionTypeDef(TypedDict):
+    Name: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-2. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
-## BrokerInstanceOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import BrokerInstanceOptionTypeDef
-
-def get_value() -> BrokerInstanceOptionTypeDef:
-    return {
-        "AvailabilityZones": ...,
-    }
-```
-
-```python title="Definition"
-class BrokerInstanceOptionTypeDef(TypedDict):
-    AvailabilityZones: NotRequired[List[AvailabilityZoneTypeDef]],  # (1)
-    EngineType: NotRequired[EngineTypeType],  # (2)
-    HostInstanceType: NotRequired[str],
-    StorageType: NotRequired[BrokerStorageTypeType],  # (3)
-    SupportedDeploymentModes: NotRequired[List[DeploymentModeType]],  # (4)
-    SupportedEngineVersions: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
-2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-3. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
-4. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
 ## BrokerInstanceTypeDef
 
 ```python title="Usage Example"
@@ -165,135 +137,136 @@ class ConfigurationRevisionTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## ConfigurationTypeDef
+## EncryptionOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ConfigurationTypeDef
+from mypy_boto3_mq.type_defs import EncryptionOptionsTypeDef
 
-def get_value() -> ConfigurationTypeDef:
+def get_value() -> EncryptionOptionsTypeDef:
     return {
-        "Arn": ...,
-        "AuthenticationStrategy": ...,
-        "Created": ...,
-        "Description": ...,
-        "EngineType": ...,
-        "EngineVersion": ...,
-        "Id": ...,
-        "LatestRevision": ...,
-        "Name": ...,
+        "UseAwsOwnedKey": ...,
     }
 ```
 
 ```python title="Definition"
-class ConfigurationTypeDef(TypedDict):
-    Arn: str,
-    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
-    Created: datetime,
-    Description: str,
-    EngineType: EngineTypeType,  # (2)
-    EngineVersion: str,
-    Id: str,
-    LatestRevision: ConfigurationRevisionTypeDef,  # (3)
-    Name: str,
-    Tags: NotRequired[Dict[str, str]],
+class EncryptionOptionsTypeDef(TypedDict):
+    UseAwsOwnedKey: bool,
+    KmsKeyId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-3. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
-## ConfigurationsTypeDef
+## LdapServerMetadataInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ConfigurationsTypeDef
+from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
 
-def get_value() -> ConfigurationsTypeDef:
+def get_value() -> LdapServerMetadataInputTypeDef:
     return {
-        "Current": ...,
+        "Hosts": ...,
+        "RoleBase": ...,
+        "RoleSearchMatching": ...,
+        "ServiceAccountPassword": ...,
+        "ServiceAccountUsername": ...,
+        "UserBase": ...,
+        "UserSearchMatching": ...,
     }
 ```
 
 ```python title="Definition"
-class ConfigurationsTypeDef(TypedDict):
-    Current: NotRequired[ConfigurationIdTypeDef],  # (1)
-    History: NotRequired[List[ConfigurationIdTypeDef]],  # (2)
-    Pending: NotRequired[ConfigurationIdTypeDef],  # (1)
+class LdapServerMetadataInputTypeDef(TypedDict):
+    Hosts: Sequence[str],
+    RoleBase: str,
+    RoleSearchMatching: str,
+    ServiceAccountPassword: str,
+    ServiceAccountUsername: str,
+    UserBase: str,
+    UserSearchMatching: str,
+    RoleName: NotRequired[str],
+    RoleSearchSubtree: NotRequired[bool],
+    UserRoleName: NotRequired[str],
+    UserSearchSubtree: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-3. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-## CreateBrokerRequestRequestTypeDef
+## LogsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import CreateBrokerRequestRequestTypeDef
+from mypy_boto3_mq.type_defs import LogsTypeDef
 
-def get_value() -> CreateBrokerRequestRequestTypeDef:
+def get_value() -> LogsTypeDef:
     return {
-        "AutoMinorVersionUpgrade": ...,
-        "BrokerName": ...,
-        "DeploymentMode": ...,
-        "EngineType": ...,
-        "EngineVersion": ...,
-        "HostInstanceType": ...,
-        "PubliclyAccessible": ...,
-        "Users": ...,
+        "Audit": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateBrokerRequestRequestTypeDef(TypedDict):
-    AutoMinorVersionUpgrade: bool,
-    BrokerName: str,
-    DeploymentMode: DeploymentModeType,  # (1)
-    EngineType: EngineTypeType,  # (2)
-    EngineVersion: str,
-    HostInstanceType: str,
-    PubliclyAccessible: bool,
-    Users: Sequence[UserTypeDef],  # (3)
-    AuthenticationStrategy: NotRequired[AuthenticationStrategyType],  # (4)
-    Configuration: NotRequired[ConfigurationIdTypeDef],  # (5)
-    CreatorRequestId: NotRequired[str],
-    EncryptionOptions: NotRequired[EncryptionOptionsTypeDef],  # (6)
-    LdapServerMetadata: NotRequired[LdapServerMetadataInputTypeDef],  # (7)
-    Logs: NotRequired[LogsTypeDef],  # (8)
-    MaintenanceWindowStartTime: NotRequired[WeeklyStartTimeTypeDef],  # (9)
-    SecurityGroups: NotRequired[Sequence[str]],
-    StorageType: NotRequired[BrokerStorageTypeType],  # (10)
-    SubnetIds: NotRequired[Sequence[str]],
-    Tags: NotRequired[Mapping[str, str]],
+class LogsTypeDef(TypedDict):
+    Audit: NotRequired[bool],
+    General: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
-2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-3. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-4. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-5. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-6. See [:material-code-braces: EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef) 
-7. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
-8. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
-9. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
-10. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
-## CreateBrokerResponseTypeDef
+## UserTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import CreateBrokerResponseTypeDef
+from mypy_boto3_mq.type_defs import UserTypeDef
 
-def get_value() -> CreateBrokerResponseTypeDef:
+def get_value() -> UserTypeDef:
     return {
-        "BrokerArn": ...,
-        "BrokerId": ...,
-        "ResponseMetadata": ...,
+        "Password": ...,
+        "Username": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateBrokerResponseTypeDef(TypedDict):
-    BrokerArn: str,
-    BrokerId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class UserTypeDef(TypedDict):
+    Password: str,
+    Username: str,
+    ConsoleAccess: NotRequired[bool],
+    Groups: NotRequired[Sequence[str]],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WeeklyStartTimeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
+
+def get_value() -> WeeklyStartTimeTypeDef:
+    return {
+        "DayOfWeek": ...,
+        "TimeOfDay": ...,
+    }
+```
+
+```python title="Definition"
+class WeeklyStartTimeTypeDef(TypedDict):
+    DayOfWeek: DayOfWeekType,  # (1)
+    TimeOfDay: str,
+    TimeZone: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## CreateConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -318,37 +291,6 @@ class CreateConfigurationRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
 2. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-## CreateConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import CreateConfigurationResponseTypeDef
-
-def get_value() -> CreateConfigurationResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AuthenticationStrategy": ...,
-        "Created": ...,
-        "Id": ...,
-        "LatestRevision": ...,
-        "Name": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateConfigurationResponseTypeDef(TypedDict):
-    Arn: str,
-    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
-    Created: datetime,
-    Id: str,
-    LatestRevision: ConfigurationRevisionTypeDef,  # (2)
-    Name: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -404,25 +346,6 @@ class DeleteBrokerRequestRequestTypeDef(TypedDict):
     BrokerId: str,
 ```
 
-## DeleteBrokerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DeleteBrokerResponseTypeDef
-
-def get_value() -> DeleteBrokerResponseTypeDef:
-    return {
-        "BrokerId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteBrokerResponseTypeDef(TypedDict):
-    BrokerId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -477,30 +400,6 @@ class DescribeBrokerEngineTypesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## DescribeBrokerEngineTypesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesResponseTypeDef
-
-def get_value() -> DescribeBrokerEngineTypesResponseTypeDef:
-    return {
-        "BrokerEngineTypes": ...,
-        "MaxResults": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeBrokerEngineTypesResponseTypeDef(TypedDict):
-    BrokerEngineTypes: List[BrokerEngineTypeTypeDef],  # (1)
-    MaxResults: int,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BrokerEngineTypeTypeDef](./type_defs.md#brokerenginetypetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBrokerInstanceOptionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -521,6 +420,888 @@ class DescribeBrokerInstanceOptionsRequestRequestTypeDef(TypedDict):
     StorageType: NotRequired[str],
 ```
 
+## DescribeBrokerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeBrokerRequestRequestTypeDef
+
+def get_value() -> DescribeBrokerRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBrokerRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+```
+
+## LdapServerMetadataOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
+
+def get_value() -> LdapServerMetadataOutputTypeDef:
+    return {
+        "Hosts": ...,
+        "RoleBase": ...,
+        "RoleSearchMatching": ...,
+        "ServiceAccountUsername": ...,
+        "UserBase": ...,
+        "UserSearchMatching": ...,
+    }
+```
+
+```python title="Definition"
+class LdapServerMetadataOutputTypeDef(TypedDict):
+    Hosts: List[str],
+    RoleBase: str,
+    RoleSearchMatching: str,
+    ServiceAccountUsername: str,
+    UserBase: str,
+    UserSearchMatching: str,
+    RoleName: NotRequired[str],
+    RoleSearchSubtree: NotRequired[bool],
+    UserRoleName: NotRequired[str],
+    UserSearchSubtree: NotRequired[bool],
+```
+
+## UserSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UserSummaryTypeDef
+
+def get_value() -> UserSummaryTypeDef:
+    return {
+        "Username": ...,
+    }
+```
+
+```python title="Definition"
+class UserSummaryTypeDef(TypedDict):
+    Username: str,
+    PendingChange: NotRequired[ChangeTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+## DescribeConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigurationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigurationId: str,
+```
+
+## DescribeConfigurationRevisionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationRevisionRequestRequestTypeDef:
+    return {
+        "ConfigurationId": ...,
+        "ConfigurationRevision": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationRevisionRequestRequestTypeDef(TypedDict):
+    ConfigurationId: str,
+    ConfigurationRevision: str,
+```
+
+## DescribeUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeUserRequestRequestTypeDef
+
+def get_value() -> DescribeUserRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+        "Username": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+    Username: str,
+```
+
+## UserPendingChangesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UserPendingChangesTypeDef
+
+def get_value() -> UserPendingChangesTypeDef:
+    return {
+        "PendingChange": ...,
+    }
+```
+
+```python title="Definition"
+class UserPendingChangesTypeDef(TypedDict):
+    PendingChange: ChangeTypeType,  # (1)
+    ConsoleAccess: NotRequired[bool],
+    Groups: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListBrokersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListBrokersRequestRequestTypeDef
+
+def get_value() -> ListBrokersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListBrokersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListConfigurationRevisionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListConfigurationRevisionsRequestRequestTypeDef
+
+def get_value() -> ListConfigurationRevisionsRequestRequestTypeDef:
+    return {
+        "ConfigurationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationRevisionsRequestRequestTypeDef(TypedDict):
+    ConfigurationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListConfigurationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListTagsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## ListUsersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## PendingLogsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import PendingLogsTypeDef
+
+def get_value() -> PendingLogsTypeDef:
+    return {
+        "Audit": ...,
+    }
+```
+
+```python title="Definition"
+class PendingLogsTypeDef(TypedDict):
+    Audit: NotRequired[bool],
+    General: NotRequired[bool],
+```
+
+## RebootBrokerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import RebootBrokerRequestRequestTypeDef
+
+def get_value() -> RebootBrokerRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+    }
+```
+
+```python title="Definition"
+class RebootBrokerRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+```
+
+## SanitizationWarningTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import SanitizationWarningTypeDef
+
+def get_value() -> SanitizationWarningTypeDef:
+    return {
+        "Reason": ...,
+    }
+```
+
+```python title="Definition"
+class SanitizationWarningTypeDef(TypedDict):
+    Reason: SanitizationWarningReasonType,  # (1)
+    AttributeName: NotRequired[str],
+    ElementName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype) 
+## UpdateConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UpdateConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigurationId": ...,
+        "Data": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigurationId: str,
+    Data: str,
+    Description: NotRequired[str],
+```
+
+## UpdateUserRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+        "Username": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+    Username: str,
+    ConsoleAccess: NotRequired[bool],
+    Groups: NotRequired[Sequence[str]],
+    Password: NotRequired[str],
+```
+
+## BrokerInstanceOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import BrokerInstanceOptionTypeDef
+
+def get_value() -> BrokerInstanceOptionTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
+```
+
+```python title="Definition"
+class BrokerInstanceOptionTypeDef(TypedDict):
+    AvailabilityZones: NotRequired[List[AvailabilityZoneTypeDef]],  # (1)
+    EngineType: NotRequired[EngineTypeType],  # (2)
+    HostInstanceType: NotRequired[str],
+    StorageType: NotRequired[BrokerStorageTypeType],  # (3)
+    SupportedDeploymentModes: NotRequired[List[DeploymentModeType]],  # (4)
+    SupportedEngineVersions: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
+2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+3. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
+4. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
+## BrokerEngineTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import BrokerEngineTypeTypeDef
+
+def get_value() -> BrokerEngineTypeTypeDef:
+    return {
+        "EngineType": ...,
+    }
+```
+
+```python title="Definition"
+class BrokerEngineTypeTypeDef(TypedDict):
+    EngineType: NotRequired[EngineTypeType],  # (1)
+    EngineVersions: NotRequired[List[EngineVersionTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+2. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+## ConfigurationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ConfigurationsTypeDef
+
+def get_value() -> ConfigurationsTypeDef:
+    return {
+        "Current": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigurationsTypeDef(TypedDict):
+    Current: NotRequired[ConfigurationIdTypeDef],  # (1)
+    History: NotRequired[List[ConfigurationIdTypeDef]],  # (2)
+    Pending: NotRequired[ConfigurationIdTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+3. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+## ConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ConfigurationTypeDef
+
+def get_value() -> ConfigurationTypeDef:
+    return {
+        "Arn": ...,
+        "AuthenticationStrategy": ...,
+        "Created": ...,
+        "Description": ...,
+        "EngineType": ...,
+        "EngineVersion": ...,
+        "Id": ...,
+        "LatestRevision": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigurationTypeDef(TypedDict):
+    Arn: str,
+    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    Created: datetime,
+    Description: str,
+    EngineType: EngineTypeType,  # (2)
+    EngineVersion: str,
+    Id: str,
+    LatestRevision: ConfigurationRevisionTypeDef,  # (3)
+    Name: str,
+    Tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+3. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
+## CreateBrokerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import CreateBrokerRequestRequestTypeDef
+
+def get_value() -> CreateBrokerRequestRequestTypeDef:
+    return {
+        "AutoMinorVersionUpgrade": ...,
+        "BrokerName": ...,
+        "DeploymentMode": ...,
+        "EngineType": ...,
+        "EngineVersion": ...,
+        "HostInstanceType": ...,
+        "PubliclyAccessible": ...,
+        "Users": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBrokerRequestRequestTypeDef(TypedDict):
+    AutoMinorVersionUpgrade: bool,
+    BrokerName: str,
+    DeploymentMode: DeploymentModeType,  # (1)
+    EngineType: EngineTypeType,  # (2)
+    EngineVersion: str,
+    HostInstanceType: str,
+    PubliclyAccessible: bool,
+    Users: Sequence[UserTypeDef],  # (3)
+    AuthenticationStrategy: NotRequired[AuthenticationStrategyType],  # (4)
+    Configuration: NotRequired[ConfigurationIdTypeDef],  # (5)
+    CreatorRequestId: NotRequired[str],
+    EncryptionOptions: NotRequired[EncryptionOptionsTypeDef],  # (6)
+    LdapServerMetadata: NotRequired[LdapServerMetadataInputTypeDef],  # (7)
+    Logs: NotRequired[LogsTypeDef],  # (8)
+    MaintenanceWindowStartTime: NotRequired[WeeklyStartTimeTypeDef],  # (9)
+    SecurityGroups: NotRequired[Sequence[str]],
+    StorageType: NotRequired[BrokerStorageTypeType],  # (10)
+    SubnetIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
+2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+3. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+4. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+5. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+6. See [:material-code-braces: EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef) 
+7. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
+8. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
+9. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+10. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
+## UpdateBrokerRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UpdateBrokerRequestRequestTypeDef
+
+def get_value() -> UpdateBrokerRequestRequestTypeDef:
+    return {
+        "BrokerId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBrokerRequestRequestTypeDef(TypedDict):
+    BrokerId: str,
+    AuthenticationStrategy: NotRequired[AuthenticationStrategyType],  # (1)
+    AutoMinorVersionUpgrade: NotRequired[bool],
+    Configuration: NotRequired[ConfigurationIdTypeDef],  # (2)
+    EngineVersion: NotRequired[str],
+    HostInstanceType: NotRequired[str],
+    LdapServerMetadata: NotRequired[LdapServerMetadataInputTypeDef],  # (3)
+    Logs: NotRequired[LogsTypeDef],  # (4)
+    MaintenanceWindowStartTime: NotRequired[WeeklyStartTimeTypeDef],  # (5)
+    SecurityGroups: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+3. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
+4. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
+5. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+## CreateBrokerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import CreateBrokerResponseTypeDef
+
+def get_value() -> CreateBrokerResponseTypeDef:
+    return {
+        "BrokerArn": ...,
+        "BrokerId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBrokerResponseTypeDef(TypedDict):
+    BrokerArn: str,
+    BrokerId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import CreateConfigurationResponseTypeDef
+
+def get_value() -> CreateConfigurationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AuthenticationStrategy": ...,
+        "Created": ...,
+        "Id": ...,
+        "LatestRevision": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateConfigurationResponseTypeDef(TypedDict):
+    Arn: str,
+    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    Created: datetime,
+    Id: str,
+    LatestRevision: ConfigurationRevisionTypeDef,  # (2)
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteBrokerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DeleteBrokerResponseTypeDef
+
+def get_value() -> DeleteBrokerResponseTypeDef:
+    return {
+        "BrokerId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteBrokerResponseTypeDef(TypedDict):
+    BrokerId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeConfigurationResponseTypeDef
+
+def get_value() -> DescribeConfigurationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AuthenticationStrategy": ...,
+        "Created": ...,
+        "Description": ...,
+        "EngineType": ...,
+        "EngineVersion": ...,
+        "Id": ...,
+        "LatestRevision": ...,
+        "Name": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationResponseTypeDef(TypedDict):
+    Arn: str,
+    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    Created: datetime,
+    Description: str,
+    EngineType: EngineTypeType,  # (2)
+    EngineVersion: str,
+    Id: str,
+    LatestRevision: ConfigurationRevisionTypeDef,  # (3)
+    Name: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+3. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigurationRevisionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionResponseTypeDef
+
+def get_value() -> DescribeConfigurationRevisionResponseTypeDef:
+    return {
+        "ConfigurationId": ...,
+        "Created": ...,
+        "Data": ...,
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationRevisionResponseTypeDef(TypedDict):
+    ConfigurationId: str,
+    Created: datetime,
+    Data: str,
+    Description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBrokersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListBrokersResponseTypeDef
+
+def get_value() -> ListBrokersResponseTypeDef:
+    return {
+        "BrokerSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBrokersResponseTypeDef(TypedDict):
+    BrokerSummaries: List[BrokerSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BrokerSummaryTypeDef](./type_defs.md#brokersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConfigurationRevisionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListConfigurationRevisionsResponseTypeDef
+
+def get_value() -> ListConfigurationRevisionsResponseTypeDef:
+    return {
+        "ConfigurationId": ...,
+        "MaxResults": ...,
+        "NextToken": ...,
+        "Revisions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationRevisionsResponseTypeDef(TypedDict):
+    ConfigurationId: str,
+    MaxResults: int,
+    NextToken: str,
+    Revisions: List[ConfigurationRevisionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBrokerResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UpdateBrokerResponseTypeDef
+
+def get_value() -> UpdateBrokerResponseTypeDef:
+    return {
+        "AuthenticationStrategy": ...,
+        "AutoMinorVersionUpgrade": ...,
+        "BrokerId": ...,
+        "Configuration": ...,
+        "EngineVersion": ...,
+        "HostInstanceType": ...,
+        "LdapServerMetadata": ...,
+        "Logs": ...,
+        "MaintenanceWindowStartTime": ...,
+        "SecurityGroups": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBrokerResponseTypeDef(TypedDict):
+    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    AutoMinorVersionUpgrade: bool,
+    BrokerId: str,
+    Configuration: ConfigurationIdTypeDef,  # (2)
+    EngineVersion: str,
+    HostInstanceType: str,
+    LdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (3)
+    Logs: LogsTypeDef,  # (4)
+    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef,  # (5)
+    SecurityGroups: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+3. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
+4. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
+5. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "BrokerId": ...,
+        "MaxResults": ...,
+        "NextToken": ...,
+        "Users": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    BrokerId: str,
+    MaxResults: int,
+    NextToken: str,
+    Users: List[UserSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import DescribeUserResponseTypeDef
+
+def get_value() -> DescribeUserResponseTypeDef:
+    return {
+        "BrokerId": ...,
+        "ConsoleAccess": ...,
+        "Groups": ...,
+        "Pending": ...,
+        "Username": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserResponseTypeDef(TypedDict):
+    BrokerId: str,
+    ConsoleAccess: bool,
+    Groups: List[str],
+    Pending: UserPendingChangesTypeDef,  # (1)
+    Username: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserPendingChangesTypeDef](./type_defs.md#userpendingchangestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBrokersRequestListBrokersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListBrokersRequestListBrokersPaginateTypeDef
+
+def get_value() -> ListBrokersRequestListBrokersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListBrokersRequestListBrokersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## LogsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import LogsSummaryTypeDef
+
+def get_value() -> LogsSummaryTypeDef:
+    return {
+        "General": ...,
+        "GeneralLogGroup": ...,
+    }
+```
+
+```python title="Definition"
+class LogsSummaryTypeDef(TypedDict):
+    General: bool,
+    GeneralLogGroup: str,
+    Audit: NotRequired[bool],
+    AuditLogGroup: NotRequired[str],
+    Pending: NotRequired[PendingLogsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PendingLogsTypeDef](./type_defs.md#pendinglogstypedef) 
+## UpdateConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import UpdateConfigurationResponseTypeDef
+
+def get_value() -> UpdateConfigurationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Created": ...,
+        "Id": ...,
+        "LatestRevision": ...,
+        "Name": ...,
+        "Warnings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConfigurationResponseTypeDef(TypedDict):
+    Arn: str,
+    Created: datetime,
+    Id: str,
+    LatestRevision: ConfigurationRevisionTypeDef,  # (1)
+    Name: str,
+    Warnings: List[SanitizationWarningTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
+2. See [:material-code-braces: SanitizationWarningTypeDef](./type_defs.md#sanitizationwarningtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBrokerInstanceOptionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -545,22 +1326,54 @@ class DescribeBrokerInstanceOptionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BrokerInstanceOptionTypeDef](./type_defs.md#brokerinstanceoptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeBrokerRequestRequestTypeDef
+## DescribeBrokerEngineTypesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeBrokerRequestRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesResponseTypeDef
 
-def get_value() -> DescribeBrokerRequestRequestTypeDef:
+def get_value() -> DescribeBrokerEngineTypesResponseTypeDef:
     return {
-        "BrokerId": ...,
+        "BrokerEngineTypes": ...,
+        "MaxResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeBrokerRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
+class DescribeBrokerEngineTypesResponseTypeDef(TypedDict):
+    BrokerEngineTypes: List[BrokerEngineTypeTypeDef],  # (1)
+    MaxResults: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
+1. See [:material-code-braces: BrokerEngineTypeTypeDef](./type_defs.md#brokerenginetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ListConfigurationsResponseTypeDef
+
+def get_value() -> ListConfigurationsResponseTypeDef:
+    return {
+        "Configurations": ...,
+        "MaxResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationsResponseTypeDef(TypedDict):
+    Configurations: List[ConfigurationTypeDef],  # (1)
+    MaxResults: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBrokerResponseTypeDef
 
 ```python title="Usage Example"
@@ -651,816 +1464,3 @@ class DescribeBrokerResponseTypeDef(TypedDict):
 14. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
 15. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
 16. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeConfigurationRequestRequestTypeDef
-
-def get_value() -> DescribeConfigurationRequestRequestTypeDef:
-    return {
-        "ConfigurationId": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConfigurationRequestRequestTypeDef(TypedDict):
-    ConfigurationId: str,
-```
-
-## DescribeConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeConfigurationResponseTypeDef
-
-def get_value() -> DescribeConfigurationResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AuthenticationStrategy": ...,
-        "Created": ...,
-        "Description": ...,
-        "EngineType": ...,
-        "EngineVersion": ...,
-        "Id": ...,
-        "LatestRevision": ...,
-        "Name": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConfigurationResponseTypeDef(TypedDict):
-    Arn: str,
-    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
-    Created: datetime,
-    Description: str,
-    EngineType: EngineTypeType,  # (2)
-    EngineVersion: str,
-    Id: str,
-    LatestRevision: ConfigurationRevisionTypeDef,  # (3)
-    Name: str,
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-3. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeConfigurationRevisionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionRequestRequestTypeDef
-
-def get_value() -> DescribeConfigurationRevisionRequestRequestTypeDef:
-    return {
-        "ConfigurationId": ...,
-        "ConfigurationRevision": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConfigurationRevisionRequestRequestTypeDef(TypedDict):
-    ConfigurationId: str,
-    ConfigurationRevision: str,
-```
-
-## DescribeConfigurationRevisionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionResponseTypeDef
-
-def get_value() -> DescribeConfigurationRevisionResponseTypeDef:
-    return {
-        "ConfigurationId": ...,
-        "Created": ...,
-        "Data": ...,
-        "Description": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConfigurationRevisionResponseTypeDef(TypedDict):
-    ConfigurationId: str,
-    Created: datetime,
-    Data: str,
-    Description: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeUserRequestRequestTypeDef
-
-def get_value() -> DescribeUserRequestRequestTypeDef:
-    return {
-        "BrokerId": ...,
-        "Username": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
-    Username: str,
-```
-
-## DescribeUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import DescribeUserResponseTypeDef
-
-def get_value() -> DescribeUserResponseTypeDef:
-    return {
-        "BrokerId": ...,
-        "ConsoleAccess": ...,
-        "Groups": ...,
-        "Pending": ...,
-        "Username": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserResponseTypeDef(TypedDict):
-    BrokerId: str,
-    ConsoleAccess: bool,
-    Groups: List[str],
-    Pending: UserPendingChangesTypeDef,  # (1)
-    Username: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserPendingChangesTypeDef](./type_defs.md#userpendingchangestypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EncryptionOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import EncryptionOptionsTypeDef
-
-def get_value() -> EncryptionOptionsTypeDef:
-    return {
-        "UseAwsOwnedKey": ...,
-    }
-```
-
-```python title="Definition"
-class EncryptionOptionsTypeDef(TypedDict):
-    UseAwsOwnedKey: bool,
-    KmsKeyId: NotRequired[str],
-```
-
-## EngineVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import EngineVersionTypeDef
-
-def get_value() -> EngineVersionTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class EngineVersionTypeDef(TypedDict):
-    Name: NotRequired[str],
-```
-
-## LdapServerMetadataInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
-
-def get_value() -> LdapServerMetadataInputTypeDef:
-    return {
-        "Hosts": ...,
-        "RoleBase": ...,
-        "RoleSearchMatching": ...,
-        "ServiceAccountPassword": ...,
-        "ServiceAccountUsername": ...,
-        "UserBase": ...,
-        "UserSearchMatching": ...,
-    }
-```
-
-```python title="Definition"
-class LdapServerMetadataInputTypeDef(TypedDict):
-    Hosts: Sequence[str],
-    RoleBase: str,
-    RoleSearchMatching: str,
-    ServiceAccountPassword: str,
-    ServiceAccountUsername: str,
-    UserBase: str,
-    UserSearchMatching: str,
-    RoleName: NotRequired[str],
-    RoleSearchSubtree: NotRequired[bool],
-    UserRoleName: NotRequired[str],
-    UserSearchSubtree: NotRequired[bool],
-```
-
-## LdapServerMetadataOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
-
-def get_value() -> LdapServerMetadataOutputTypeDef:
-    return {
-        "Hosts": ...,
-        "RoleBase": ...,
-        "RoleSearchMatching": ...,
-        "ServiceAccountUsername": ...,
-        "UserBase": ...,
-        "UserSearchMatching": ...,
-    }
-```
-
-```python title="Definition"
-class LdapServerMetadataOutputTypeDef(TypedDict):
-    Hosts: List[str],
-    RoleBase: str,
-    RoleSearchMatching: str,
-    ServiceAccountUsername: str,
-    UserBase: str,
-    UserSearchMatching: str,
-    RoleName: NotRequired[str],
-    RoleSearchSubtree: NotRequired[bool],
-    UserRoleName: NotRequired[str],
-    UserSearchSubtree: NotRequired[bool],
-```
-
-## ListBrokersRequestListBrokersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListBrokersRequestListBrokersPaginateTypeDef
-
-def get_value() -> ListBrokersRequestListBrokersPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListBrokersRequestListBrokersPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListBrokersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListBrokersRequestRequestTypeDef
-
-def get_value() -> ListBrokersRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListBrokersRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListBrokersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListBrokersResponseTypeDef
-
-def get_value() -> ListBrokersResponseTypeDef:
-    return {
-        "BrokerSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBrokersResponseTypeDef(TypedDict):
-    BrokerSummaries: List[BrokerSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BrokerSummaryTypeDef](./type_defs.md#brokersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListConfigurationRevisionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListConfigurationRevisionsRequestRequestTypeDef
-
-def get_value() -> ListConfigurationRevisionsRequestRequestTypeDef:
-    return {
-        "ConfigurationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationRevisionsRequestRequestTypeDef(TypedDict):
-    ConfigurationId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListConfigurationRevisionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListConfigurationRevisionsResponseTypeDef
-
-def get_value() -> ListConfigurationRevisionsResponseTypeDef:
-    return {
-        "ConfigurationId": ...,
-        "MaxResults": ...,
-        "NextToken": ...,
-        "Revisions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationRevisionsResponseTypeDef(TypedDict):
-    ConfigurationId: str,
-    MaxResults: int,
-    NextToken: str,
-    Revisions: List[ConfigurationRevisionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListConfigurationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListConfigurationsRequestRequestTypeDef
-
-def get_value() -> ListConfigurationsRequestRequestTypeDef:
-    return {
-        "MaxResults": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationsRequestRequestTypeDef(TypedDict):
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListConfigurationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListConfigurationsResponseTypeDef
-
-def get_value() -> ListConfigurationsResponseTypeDef:
-    return {
-        "Configurations": ...,
-        "MaxResults": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListConfigurationsResponseTypeDef(TypedDict):
-    Configurations: List[ConfigurationTypeDef],  # (1)
-    MaxResults: int,
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListTagsRequestRequestTypeDef
-
-def get_value() -> ListTagsRequestRequestTypeDef:
-    return {
-        "ResourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsRequestRequestTypeDef(TypedDict):
-    ResourceArn: str,
-```
-
-## ListTagsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListTagsResponseTypeDef
-
-def get_value() -> ListTagsResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsResponseTypeDef(TypedDict):
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUsersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListUsersRequestRequestTypeDef
-
-def get_value() -> ListUsersRequestRequestTypeDef:
-    return {
-        "BrokerId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-```
-
-## ListUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ListUsersResponseTypeDef
-
-def get_value() -> ListUsersResponseTypeDef:
-    return {
-        "BrokerId": ...,
-        "MaxResults": ...,
-        "NextToken": ...,
-        "Users": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersResponseTypeDef(TypedDict):
-    BrokerId: str,
-    MaxResults: int,
-    NextToken: str,
-    Users: List[UserSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LogsSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import LogsSummaryTypeDef
-
-def get_value() -> LogsSummaryTypeDef:
-    return {
-        "General": ...,
-        "GeneralLogGroup": ...,
-    }
-```
-
-```python title="Definition"
-class LogsSummaryTypeDef(TypedDict):
-    General: bool,
-    GeneralLogGroup: str,
-    Audit: NotRequired[bool],
-    AuditLogGroup: NotRequired[str],
-    Pending: NotRequired[PendingLogsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PendingLogsTypeDef](./type_defs.md#pendinglogstypedef) 
-## LogsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import LogsTypeDef
-
-def get_value() -> LogsTypeDef:
-    return {
-        "Audit": ...,
-    }
-```
-
-```python title="Definition"
-class LogsTypeDef(TypedDict):
-    Audit: NotRequired[bool],
-    General: NotRequired[bool],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## PendingLogsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import PendingLogsTypeDef
-
-def get_value() -> PendingLogsTypeDef:
-    return {
-        "Audit": ...,
-    }
-```
-
-```python title="Definition"
-class PendingLogsTypeDef(TypedDict):
-    Audit: NotRequired[bool],
-    General: NotRequired[bool],
-```
-
-## RebootBrokerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import RebootBrokerRequestRequestTypeDef
-
-def get_value() -> RebootBrokerRequestRequestTypeDef:
-    return {
-        "BrokerId": ...,
-    }
-```
-
-```python title="Definition"
-class RebootBrokerRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## SanitizationWarningTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import SanitizationWarningTypeDef
-
-def get_value() -> SanitizationWarningTypeDef:
-    return {
-        "Reason": ...,
-    }
-```
-
-```python title="Definition"
-class SanitizationWarningTypeDef(TypedDict):
-    Reason: SanitizationWarningReasonType,  # (1)
-    AttributeName: NotRequired[str],
-    ElementName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype) 
-## UpdateBrokerRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UpdateBrokerRequestRequestTypeDef
-
-def get_value() -> UpdateBrokerRequestRequestTypeDef:
-    return {
-        "BrokerId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBrokerRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
-    AuthenticationStrategy: NotRequired[AuthenticationStrategyType],  # (1)
-    AutoMinorVersionUpgrade: NotRequired[bool],
-    Configuration: NotRequired[ConfigurationIdTypeDef],  # (2)
-    EngineVersion: NotRequired[str],
-    HostInstanceType: NotRequired[str],
-    LdapServerMetadata: NotRequired[LdapServerMetadataInputTypeDef],  # (3)
-    Logs: NotRequired[LogsTypeDef],  # (4)
-    MaintenanceWindowStartTime: NotRequired[WeeklyStartTimeTypeDef],  # (5)
-    SecurityGroups: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-3. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
-4. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
-5. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
-## UpdateBrokerResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UpdateBrokerResponseTypeDef
-
-def get_value() -> UpdateBrokerResponseTypeDef:
-    return {
-        "AuthenticationStrategy": ...,
-        "AutoMinorVersionUpgrade": ...,
-        "BrokerId": ...,
-        "Configuration": ...,
-        "EngineVersion": ...,
-        "HostInstanceType": ...,
-        "LdapServerMetadata": ...,
-        "Logs": ...,
-        "MaintenanceWindowStartTime": ...,
-        "SecurityGroups": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBrokerResponseTypeDef(TypedDict):
-    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
-    AutoMinorVersionUpgrade: bool,
-    BrokerId: str,
-    Configuration: ConfigurationIdTypeDef,  # (2)
-    EngineVersion: str,
-    HostInstanceType: str,
-    LdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (3)
-    Logs: LogsTypeDef,  # (4)
-    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef,  # (5)
-    SecurityGroups: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
-3. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
-4. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
-5. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UpdateConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateConfigurationRequestRequestTypeDef:
-    return {
-        "ConfigurationId": ...,
-        "Data": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConfigurationRequestRequestTypeDef(TypedDict):
-    ConfigurationId: str,
-    Data: str,
-    Description: NotRequired[str],
-```
-
-## UpdateConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UpdateConfigurationResponseTypeDef
-
-def get_value() -> UpdateConfigurationResponseTypeDef:
-    return {
-        "Arn": ...,
-        "Created": ...,
-        "Id": ...,
-        "LatestRevision": ...,
-        "Name": ...,
-        "Warnings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateConfigurationResponseTypeDef(TypedDict):
-    Arn: str,
-    Created: datetime,
-    Id: str,
-    LatestRevision: ConfigurationRevisionTypeDef,  # (1)
-    Name: str,
-    Warnings: List[SanitizationWarningTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef) 
-2. See [:material-code-braces: SanitizationWarningTypeDef](./type_defs.md#sanitizationwarningtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateUserRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UpdateUserRequestRequestTypeDef
-
-def get_value() -> UpdateUserRequestRequestTypeDef:
-    return {
-        "BrokerId": ...,
-        "Username": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateUserRequestRequestTypeDef(TypedDict):
-    BrokerId: str,
-    Username: str,
-    ConsoleAccess: NotRequired[bool],
-    Groups: NotRequired[Sequence[str]],
-    Password: NotRequired[str],
-```
-
-## UserPendingChangesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UserPendingChangesTypeDef
-
-def get_value() -> UserPendingChangesTypeDef:
-    return {
-        "PendingChange": ...,
-    }
-```
-
-```python title="Definition"
-class UserPendingChangesTypeDef(TypedDict):
-    PendingChange: ChangeTypeType,  # (1)
-    ConsoleAccess: NotRequired[bool],
-    Groups: NotRequired[List[str]],
-```
-
-1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
-## UserSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UserSummaryTypeDef
-
-def get_value() -> UserSummaryTypeDef:
-    return {
-        "Username": ...,
-    }
-```
-
-```python title="Definition"
-class UserSummaryTypeDef(TypedDict):
-    Username: str,
-    PendingChange: NotRequired[ChangeTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
-## UserTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import UserTypeDef
-
-def get_value() -> UserTypeDef:
-    return {
-        "Password": ...,
-        "Username": ...,
-    }
-```
-
-```python title="Definition"
-class UserTypeDef(TypedDict):
-    Password: str,
-    Username: str,
-    ConsoleAccess: NotRequired[bool],
-    Groups: NotRequired[Sequence[str]],
-```
-
-## WeeklyStartTimeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
-
-def get_value() -> WeeklyStartTimeTypeDef:
-    return {
-        "DayOfWeek": ...,
-        "TimeOfDay": ...,
-    }
-```
-
-```python title="Definition"
-class WeeklyStartTimeTypeDef(TypedDict):
-    DayOfWeek: DayOfWeekType,  # (1)
-    TimeOfDay: str,
-    TimeZone: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 

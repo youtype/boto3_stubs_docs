@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36118,29 +36118,31 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_lex_models.type_defs</span> <span class="kn">import</span> <span class="n">BotAliasMetadataTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_lex_models.type_defs</span> <span class="kn">import</span> <span class="n">BotChannelAssociationTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BotAliasMetadataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BotChannelAssociationTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#botaliasmetadatatypedef">BotAliasMetadataTypeDef</a></li>
 <li><a href="type_defs/#botchannelassociationtypedef">BotChannelAssociationTypeDef</a></li>
 <li><a href="type_defs/#botmetadatatypedef">BotMetadataTypeDef</a></li>
 <li><a href="type_defs/#builtinintentmetadatatypedef">BuiltinIntentMetadataTypeDef</a></li>
 <li><a href="type_defs/#builtinintentslottypedef">BuiltinIntentSlotTypeDef</a></li>
 <li><a href="type_defs/#builtinslottypemetadatatypedef">BuiltinSlotTypeMetadataTypeDef</a></li>
 <li><a href="type_defs/#codehooktypedef">CodeHookTypeDef</a></li>
-<li><a href="type_defs/#conversationlogsrequesttypedef">ConversationLogsRequestTypeDef</a></li>
-<li><a href="type_defs/#conversationlogsresponsetypedef">ConversationLogsResponseTypeDef</a></li>
+<li><a href="type_defs/#logsettingsrequesttypedef">LogSettingsRequestTypeDef</a></li>
+<li><a href="type_defs/#logsettingsresponsetypedef">LogSettingsResponseTypeDef</a></li>
 <li><a href="type_defs/#createbotversionrequestrequesttypedef">CreateBotVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createbotversionresponsetypedef">CreateBotVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#intenttypedef">IntentTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createintentversionrequestrequesttypedef">CreateIntentVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createintentversionresponsetypedef">CreateIntentVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#inputcontexttypedef">InputContextTypeDef</a></li>
+<li><a href="type_defs/#kendraconfigurationtypedef">KendraConfigurationTypeDef</a></li>
+<li><a href="type_defs/#outputcontexttypedef">OutputContextTypeDef</a></li>
 <li><a href="type_defs/#createslottypeversionrequestrequesttypedef">CreateSlotTypeVersionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createslottypeversionresponsetypedef">CreateSlotTypeVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#enumerationvaluetypedef">EnumerationValueTypeDef</a></li>
 <li><a href="type_defs/#deletebotaliasrequestrequesttypedef">DeleteBotAliasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletebotchannelassociationrequestrequesttypedef">DeleteBotChannelAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletebotrequestrequesttypedef">DeleteBotRequestRequestTypeDef</a></li>
@@ -36150,100 +36152,98 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteslottyperequestrequesttypedef">DeleteSlotTypeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteslottypeversionrequestrequesttypedef">DeleteSlotTypeVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteutterancesrequestrequesttypedef">DeleteUtterancesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#enumerationvaluetypedef">EnumerationValueTypeDef</a></li>
-<li><a href="type_defs/#followupprompttypedef">FollowUpPromptTypeDef</a></li>
-<li><a href="type_defs/#fulfillmentactivitytypedef">FulfillmentActivityTypeDef</a></li>
 <li><a href="type_defs/#getbotaliasrequestrequesttypedef">GetBotAliasRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotaliasresponsetypedef">GetBotAliasResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotaliasesrequestgetbotaliasespaginatetypedef">GetBotAliasesRequestGetBotAliasesPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbotaliasesrequestrequesttypedef">GetBotAliasesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotaliasesresponsetypedef">GetBotAliasesResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotchannelassociationrequestrequesttypedef">GetBotChannelAssociationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotchannelassociationresponsetypedef">GetBotChannelAssociationResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotchannelassociationsrequestgetbotchannelassociationspaginatetypedef">GetBotChannelAssociationsRequestGetBotChannelAssociationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbotchannelassociationsrequestrequesttypedef">GetBotChannelAssociationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotchannelassociationsresponsetypedef">GetBotChannelAssociationsResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotrequestrequesttypedef">GetBotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotresponsetypedef">GetBotResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotversionsrequestgetbotversionspaginatetypedef">GetBotVersionsRequestGetBotVersionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbotversionsrequestrequesttypedef">GetBotVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotversionsresponsetypedef">GetBotVersionsResponseTypeDef</a></li>
-<li><a href="type_defs/#getbotsrequestgetbotspaginatetypedef">GetBotsRequestGetBotsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbotsrequestrequesttypedef">GetBotsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbotsresponsetypedef">GetBotsResponseTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinintentrequestrequesttypedef">GetBuiltinIntentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinintentresponsetypedef">GetBuiltinIntentResponseTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinintentsrequestgetbuiltinintentspaginatetypedef">GetBuiltinIntentsRequestGetBuiltinIntentsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinintentsrequestrequesttypedef">GetBuiltinIntentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinintentsresponsetypedef">GetBuiltinIntentsResponseTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinslottypesrequestgetbuiltinslottypespaginatetypedef">GetBuiltinSlotTypesRequestGetBuiltinSlotTypesPaginateTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinslottypesrequestrequesttypedef">GetBuiltinSlotTypesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getbuiltinslottypesresponsetypedef">GetBuiltinSlotTypesResponseTypeDef</a></li>
-<li><a href="type_defs/#getexportrequestrequesttypedef">GetExportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getexportresponsetypedef">GetExportResponseTypeDef</a></li>
-<li><a href="type_defs/#getimportrequestrequesttypedef">GetImportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getimportresponsetypedef">GetImportResponseTypeDef</a></li>
-<li><a href="type_defs/#getintentrequestrequesttypedef">GetIntentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getintentresponsetypedef">GetIntentResponseTypeDef</a></li>
-<li><a href="type_defs/#getintentversionsrequestgetintentversionspaginatetypedef">GetIntentVersionsRequestGetIntentVersionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getintentversionsrequestrequesttypedef">GetIntentVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getintentversionsresponsetypedef">GetIntentVersionsResponseTypeDef</a></li>
-<li><a href="type_defs/#getintentsrequestgetintentspaginatetypedef">GetIntentsRequestGetIntentsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getintentsrequestrequesttypedef">GetIntentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getintentsresponsetypedef">GetIntentsResponseTypeDef</a></li>
-<li><a href="type_defs/#getmigrationrequestrequesttypedef">GetMigrationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getmigrationresponsetypedef">GetMigrationResponseTypeDef</a></li>
-<li><a href="type_defs/#getmigrationsrequestrequesttypedef">GetMigrationsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getmigrationsresponsetypedef">GetMigrationsResponseTypeDef</a></li>
-<li><a href="type_defs/#getslottyperequestrequesttypedef">GetSlotTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getslottyperesponsetypedef">GetSlotTypeResponseTypeDef</a></li>
-<li><a href="type_defs/#getslottypeversionsrequestgetslottypeversionspaginatetypedef">GetSlotTypeVersionsRequestGetSlotTypeVersionsPaginateTypeDef</a></li>
-<li><a href="type_defs/#getslottypeversionsrequestrequesttypedef">GetSlotTypeVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getslottypeversionsresponsetypedef">GetSlotTypeVersionsResponseTypeDef</a></li>
-<li><a href="type_defs/#getslottypesrequestgetslottypespaginatetypedef">GetSlotTypesRequestGetSlotTypesPaginateTypeDef</a></li>
-<li><a href="type_defs/#getslottypesrequestrequesttypedef">GetSlotTypesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getslottypesresponsetypedef">GetSlotTypesResponseTypeDef</a></li>
-<li><a href="type_defs/#getutterancesviewrequestrequesttypedef">GetUtterancesViewRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getutterancesviewresponsetypedef">GetUtterancesViewResponseTypeDef</a></li>
-<li><a href="type_defs/#inputcontexttypedef">InputContextTypeDef</a></li>
-<li><a href="type_defs/#intentmetadatatypedef">IntentMetadataTypeDef</a></li>
-<li><a href="type_defs/#intenttypedef">IntentTypeDef</a></li>
-<li><a href="type_defs/#kendraconfigurationtypedef">KendraConfigurationTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#logsettingsrequesttypedef">LogSettingsRequestTypeDef</a></li>
-<li><a href="type_defs/#logsettingsresponsetypedef">LogSettingsResponseTypeDef</a></li>
-<li><a href="type_defs/#messagetypedef">MessageTypeDef</a></li>
-<li><a href="type_defs/#migrationalerttypedef">MigrationAlertTypeDef</a></li>
-<li><a href="type_defs/#migrationsummarytypedef">MigrationSummaryTypeDef</a></li>
-<li><a href="type_defs/#outputcontexttypedef">OutputContextTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
-<li><a href="type_defs/#prompttypedef">PromptTypeDef</a></li>
-<li><a href="type_defs/#putbotaliasrequestrequesttypedef">PutBotAliasRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putbotaliasresponsetypedef">PutBotAliasResponseTypeDef</a></li>
-<li><a href="type_defs/#putbotrequestrequesttypedef">PutBotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putbotresponsetypedef">PutBotResponseTypeDef</a></li>
-<li><a href="type_defs/#putintentrequestrequesttypedef">PutIntentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putintentresponsetypedef">PutIntentResponseTypeDef</a></li>
-<li><a href="type_defs/#putslottyperequestrequesttypedef">PutSlotTypeRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#putslottyperesponsetypedef">PutSlotTypeResponseTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#slotdefaultvaluespectypedef">SlotDefaultValueSpecTypeDef</a></li>
-<li><a href="type_defs/#slotdefaultvaluetypedef">SlotDefaultValueTypeDef</a></li>
-<li><a href="type_defs/#slottypeconfigurationtypedef">SlotTypeConfigurationTypeDef</a></li>
-<li><a href="type_defs/#slottypedef">SlotTypeDef</a></li>
+<li><a href="type_defs/#getbotaliasesrequestrequesttypedef">GetBotAliasesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbotchannelassociationrequestrequesttypedef">GetBotChannelAssociationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbotchannelassociationsrequestrequesttypedef">GetBotChannelAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbotrequestrequesttypedef">GetBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbotversionsrequestrequesttypedef">GetBotVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbotsrequestrequesttypedef">GetBotsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinintentrequestrequesttypedef">GetBuiltinIntentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinintentsrequestrequesttypedef">GetBuiltinIntentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinslottypesrequestrequesttypedef">GetBuiltinSlotTypesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getexportrequestrequesttypedef">GetExportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getimportrequestrequesttypedef">GetImportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getintentrequestrequesttypedef">GetIntentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getintentversionsrequestrequesttypedef">GetIntentVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#intentmetadatatypedef">IntentMetadataTypeDef</a></li>
+<li><a href="type_defs/#getintentsrequestrequesttypedef">GetIntentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getmigrationrequestrequesttypedef">GetMigrationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#migrationalerttypedef">MigrationAlertTypeDef</a></li>
+<li><a href="type_defs/#getmigrationsrequestrequesttypedef">GetMigrationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#migrationsummarytypedef">MigrationSummaryTypeDef</a></li>
+<li><a href="type_defs/#getslottyperequestrequesttypedef">GetSlotTypeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getslottypeversionsrequestrequesttypedef">GetSlotTypeVersionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#slottypemetadatatypedef">SlotTypeMetadataTypeDef</a></li>
-<li><a href="type_defs/#slottyperegexconfigurationtypedef">SlotTypeRegexConfigurationTypeDef</a></li>
-<li><a href="type_defs/#startimportrequestrequesttypedef">StartImportRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startimportresponsetypedef">StartImportResponseTypeDef</a></li>
-<li><a href="type_defs/#startmigrationrequestrequesttypedef">StartMigrationRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#startmigrationresponsetypedef">StartMigrationResponseTypeDef</a></li>
-<li><a href="type_defs/#statementtypedef">StatementTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getslottypesrequestrequesttypedef">GetSlotTypesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getutterancesviewrequestrequesttypedef">GetUtterancesViewRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#messagetypedef">MessageTypeDef</a></li>
+<li><a href="type_defs/#slotdefaultvaluetypedef">SlotDefaultValueTypeDef</a></li>
+<li><a href="type_defs/#slottyperegexconfigurationtypedef">SlotTypeRegexConfigurationTypeDef</a></li>
+<li><a href="type_defs/#startmigrationrequestrequesttypedef">StartMigrationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#utterancedatatypedef">UtteranceDataTypeDef</a></li>
+<li><a href="type_defs/#fulfillmentactivitytypedef">FulfillmentActivityTypeDef</a></li>
+<li><a href="type_defs/#conversationlogsrequesttypedef">ConversationLogsRequestTypeDef</a></li>
+<li><a href="type_defs/#conversationlogsresponsetypedef">ConversationLogsResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotchannelassociationresponsetypedef">GetBotChannelAssociationResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotchannelassociationsresponsetypedef">GetBotChannelAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotversionsresponsetypedef">GetBotVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotsresponsetypedef">GetBotsResponseTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinintentresponsetypedef">GetBuiltinIntentResponseTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinintentsresponsetypedef">GetBuiltinIntentsResponseTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinslottypesresponsetypedef">GetBuiltinSlotTypesResponseTypeDef</a></li>
+<li><a href="type_defs/#getexportresponsetypedef">GetExportResponseTypeDef</a></li>
+<li><a href="type_defs/#getimportresponsetypedef">GetImportResponseTypeDef</a></li>
+<li><a href="type_defs/#startmigrationresponsetypedef">StartMigrationResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotaliasesrequestgetbotaliasespaginatetypedef">GetBotAliasesRequestGetBotAliasesPaginateTypeDef</a></li>
+<li><a href="type_defs/#getbotchannelassociationsrequestgetbotchannelassociationspaginatetypedef">GetBotChannelAssociationsRequestGetBotChannelAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getbotversionsrequestgetbotversionspaginatetypedef">GetBotVersionsRequestGetBotVersionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getbotsrequestgetbotspaginatetypedef">GetBotsRequestGetBotsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinintentsrequestgetbuiltinintentspaginatetypedef">GetBuiltinIntentsRequestGetBuiltinIntentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getbuiltinslottypesrequestgetbuiltinslottypespaginatetypedef">GetBuiltinSlotTypesRequestGetBuiltinSlotTypesPaginateTypeDef</a></li>
+<li><a href="type_defs/#getintentversionsrequestgetintentversionspaginatetypedef">GetIntentVersionsRequestGetIntentVersionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getintentsrequestgetintentspaginatetypedef">GetIntentsRequestGetIntentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getslottypeversionsrequestgetslottypeversionspaginatetypedef">GetSlotTypeVersionsRequestGetSlotTypeVersionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getslottypesrequestgetslottypespaginatetypedef">GetSlotTypesRequestGetSlotTypesPaginateTypeDef</a></li>
+<li><a href="type_defs/#getintentversionsresponsetypedef">GetIntentVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#getintentsresponsetypedef">GetIntentsResponseTypeDef</a></li>
+<li><a href="type_defs/#getmigrationresponsetypedef">GetMigrationResponseTypeDef</a></li>
+<li><a href="type_defs/#getmigrationsresponsetypedef">GetMigrationsResponseTypeDef</a></li>
+<li><a href="type_defs/#getslottypeversionsresponsetypedef">GetSlotTypeVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#getslottypesresponsetypedef">GetSlotTypesResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#startimportrequestrequesttypedef">StartImportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startimportresponsetypedef">StartImportResponseTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#prompttypedef">PromptTypeDef</a></li>
+<li><a href="type_defs/#statementtypedef">StatementTypeDef</a></li>
+<li><a href="type_defs/#slotdefaultvaluespectypedef">SlotDefaultValueSpecTypeDef</a></li>
+<li><a href="type_defs/#slottypeconfigurationtypedef">SlotTypeConfigurationTypeDef</a></li>
 <li><a href="type_defs/#utterancelisttypedef">UtteranceListTypeDef</a></li>
+<li><a href="type_defs/#putbotaliasrequestrequesttypedef">PutBotAliasRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#botaliasmetadatatypedef">BotAliasMetadataTypeDef</a></li>
+<li><a href="type_defs/#getbotaliasresponsetypedef">GetBotAliasResponseTypeDef</a></li>
+<li><a href="type_defs/#putbotaliasresponsetypedef">PutBotAliasResponseTypeDef</a></li>
+<li><a href="type_defs/#createbotversionresponsetypedef">CreateBotVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#followupprompttypedef">FollowUpPromptTypeDef</a></li>
+<li><a href="type_defs/#getbotresponsetypedef">GetBotResponseTypeDef</a></li>
+<li><a href="type_defs/#putbotrequestrequesttypedef">PutBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putbotresponsetypedef">PutBotResponseTypeDef</a></li>
+<li><a href="type_defs/#slottypedef">SlotTypeDef</a></li>
+<li><a href="type_defs/#createslottypeversionresponsetypedef">CreateSlotTypeVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#getslottyperesponsetypedef">GetSlotTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#putslottyperequestrequesttypedef">PutSlotTypeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putslottyperesponsetypedef">PutSlotTypeResponseTypeDef</a></li>
+<li><a href="type_defs/#getutterancesviewresponsetypedef">GetUtterancesViewResponseTypeDef</a></li>
+<li><a href="type_defs/#getbotaliasesresponsetypedef">GetBotAliasesResponseTypeDef</a></li>
+<li><a href="type_defs/#createintentversionresponsetypedef">CreateIntentVersionResponseTypeDef</a></li>
+<li><a href="type_defs/#getintentresponsetypedef">GetIntentResponseTypeDef</a></li>
+<li><a href="type_defs/#putintentrequestrequesttypedef">PutIntentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putintentresponsetypedef">PutIntentResponseTypeDef</a></li>
 </ul>
 
               
@@ -36313,7 +36313,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

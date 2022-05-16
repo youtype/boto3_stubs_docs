@@ -44,45 +44,48 @@ class BatchPutMessageErrorEntryTypeDef(TypedDict):
     errorMessage: NotRequired[str],
 ```
 
-## BatchPutMessageRequestRequestTypeDef
+## MessageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import MessageTypeDef
 
-def get_value() -> BatchPutMessageRequestRequestTypeDef:
+def get_value() -> MessageTypeDef:
     return {
-        "channelName": ...,
-        "messages": ...,
+        "messageId": ...,
+        "payload": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchPutMessageRequestRequestTypeDef(TypedDict):
-    channelName: str,
-    messages: Sequence[MessageTypeDef],  # (1)
+class MessageTypeDef(TypedDict):
+    messageId: str,
+    payload: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
-1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
-## BatchPutMessageResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> BatchPutMessageResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "batchPutMessageErrorEntries": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchPutMessageResponseTypeDef(TypedDict):
-    batchPutMessageErrorEntries: List[BatchPutMessageErrorEntryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: BatchPutMessageErrorEntryTypeDef](./type_defs.md#batchputmessageerrorentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelPipelineReprocessingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -136,378 +139,23 @@ class ChannelMessagesTypeDef(TypedDict):
     s3Paths: NotRequired[Sequence[str]],
 ```
 
-## ChannelStatisticsTypeDef
+## EstimatedResourceSizeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ChannelStatisticsTypeDef
+from mypy_boto3_iotanalytics.type_defs import EstimatedResourceSizeTypeDef
 
-def get_value() -> ChannelStatisticsTypeDef:
+def get_value() -> EstimatedResourceSizeTypeDef:
     return {
-        "size": ...,
+        "estimatedSizeInBytes": ...,
     }
 ```
 
 ```python title="Definition"
-class ChannelStatisticsTypeDef(TypedDict):
-    size: NotRequired[EstimatedResourceSizeTypeDef],  # (1)
+class EstimatedResourceSizeTypeDef(TypedDict):
+    estimatedSizeInBytes: NotRequired[float],
+    estimatedOn: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef) 
-## ChannelStorageSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ChannelStorageSummaryTypeDef
-
-def get_value() -> ChannelStorageSummaryTypeDef:
-    return {
-        "serviceManagedS3": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelStorageSummaryTypeDef(TypedDict):
-    serviceManagedS3: NotRequired[Dict[str, Any]],
-    customerManagedS3: NotRequired[CustomerManagedChannelS3StorageSummaryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CustomerManagedChannelS3StorageSummaryTypeDef](./type_defs.md#customermanagedchannels3storagesummarytypedef) 
-## ChannelStorageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ChannelStorageTypeDef
-
-def get_value() -> ChannelStorageTypeDef:
-    return {
-        "serviceManagedS3": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelStorageTypeDef(TypedDict):
-    serviceManagedS3: NotRequired[Mapping[str, Any]],
-    customerManagedS3: NotRequired[CustomerManagedChannelS3StorageTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: CustomerManagedChannelS3StorageTypeDef](./type_defs.md#customermanagedchannels3storagetypedef) 
-## ChannelSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ChannelSummaryTypeDef
-
-def get_value() -> ChannelSummaryTypeDef:
-    return {
-        "channelName": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelSummaryTypeDef(TypedDict):
-    channelName: NotRequired[str],
-    channelStorage: NotRequired[ChannelStorageSummaryTypeDef],  # (1)
-    status: NotRequired[ChannelStatusType],  # (2)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    lastMessageArrivalTime: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: ChannelStorageSummaryTypeDef](./type_defs.md#channelstoragesummarytypedef) 
-2. See [:material-code-brackets: ChannelStatusType](./literals.md#channelstatustype) 
-## ChannelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ChannelTypeDef
-
-def get_value() -> ChannelTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class ChannelTypeDef(TypedDict):
-    name: NotRequired[str],
-    storage: NotRequired[ChannelStorageTypeDef],  # (1)
-    arn: NotRequired[str],
-    status: NotRequired[ChannelStatusType],  # (2)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (3)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    lastMessageArrivalTime: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
-2. See [:material-code-brackets: ChannelStatusType](./literals.md#channelstatustype) 
-3. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-## ColumnTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ColumnTypeDef
-
-def get_value() -> ColumnTypeDef:
-    return {
-        "name": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class ColumnTypeDef(TypedDict):
-    name: str,
-    type: str,
-```
-
-## ContainerDatasetActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ContainerDatasetActionTypeDef
-
-def get_value() -> ContainerDatasetActionTypeDef:
-    return {
-        "image": ...,
-        "executionRoleArn": ...,
-        "resourceConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class ContainerDatasetActionTypeDef(TypedDict):
-    image: str,
-    executionRoleArn: str,
-    resourceConfiguration: ResourceConfigurationTypeDef,  # (1)
-    variables: NotRequired[Sequence[VariableTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ResourceConfigurationTypeDef](./type_defs.md#resourceconfigurationtypedef) 
-2. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
-## CreateChannelRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateChannelRequestRequestTypeDef
-
-def get_value() -> CreateChannelRequestRequestTypeDef:
-    return {
-        "channelName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelRequestRequestTypeDef(TypedDict):
-    channelName: str,
-    channelStorage: NotRequired[ChannelStorageTypeDef],  # (1)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
-2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateChannelResponseTypeDef
-
-def get_value() -> CreateChannelResponseTypeDef:
-    return {
-        "channelName": ...,
-        "channelArn": ...,
-        "retentionPeriod": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateChannelResponseTypeDef(TypedDict):
-    channelName: str,
-    channelArn: str,
-    retentionPeriod: RetentionPeriodTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDatasetContentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentRequestRequestTypeDef
-
-def get_value() -> CreateDatasetContentRequestRequestTypeDef:
-    return {
-        "datasetName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatasetContentRequestRequestTypeDef(TypedDict):
-    datasetName: str,
-    versionId: NotRequired[str],
-```
-
-## CreateDatasetContentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentResponseTypeDef
-
-def get_value() -> CreateDatasetContentResponseTypeDef:
-    return {
-        "versionId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatasetContentResponseTypeDef(TypedDict):
-    versionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDatasetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetRequestRequestTypeDef
-
-def get_value() -> CreateDatasetRequestRequestTypeDef:
-    return {
-        "datasetName": ...,
-        "actions": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatasetRequestRequestTypeDef(TypedDict):
-    datasetName: str,
-    actions: Sequence[DatasetActionTypeDef],  # (1)
-    triggers: NotRequired[Sequence[DatasetTriggerTypeDef]],  # (2)
-    contentDeliveryRules: NotRequired[Sequence[DatasetContentDeliveryRuleTypeDef]],  # (3)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (4)
-    versioningConfiguration: NotRequired[VersioningConfigurationTypeDef],  # (5)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
-    lateDataRules: NotRequired[Sequence[LateDataRuleTypeDef]],  # (7)
-```
-
-1. See [:material-code-braces: DatasetActionTypeDef](./type_defs.md#datasetactiontypedef) 
-2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
-3. See [:material-code-braces: DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef) 
-4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-5. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
-## CreateDatasetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetResponseTypeDef
-
-def get_value() -> CreateDatasetResponseTypeDef:
-    return {
-        "datasetName": ...,
-        "datasetArn": ...,
-        "retentionPeriod": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatasetResponseTypeDef(TypedDict):
-    datasetName: str,
-    datasetArn: str,
-    retentionPeriod: RetentionPeriodTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateDatastoreRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatastoreRequestRequestTypeDef
-
-def get_value() -> CreateDatastoreRequestRequestTypeDef:
-    return {
-        "datastoreName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatastoreRequestRequestTypeDef(TypedDict):
-    datastoreName: str,
-    datastoreStorage: NotRequired[DatastoreStorageTypeDef],  # (1)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (4)
-    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (5)
-```
-
-1. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
-2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
-5. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
-## CreateDatastoreResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreateDatastoreResponseTypeDef
-
-def get_value() -> CreateDatastoreResponseTypeDef:
-    return {
-        "datastoreName": ...,
-        "datastoreArn": ...,
-        "retentionPeriod": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDatastoreResponseTypeDef(TypedDict):
-    datastoreName: str,
-    datastoreArn: str,
-    retentionPeriod: RetentionPeriodTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreatePipelineRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreatePipelineRequestRequestTypeDef
-
-def get_value() -> CreatePipelineRequestRequestTypeDef:
-    return {
-        "pipelineName": ...,
-        "pipelineActivities": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePipelineRequestRequestTypeDef(TypedDict):
-    pipelineName: str,
-    pipelineActivities: Sequence[PipelineActivityTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreatePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import CreatePipelineResponseTypeDef
-
-def get_value() -> CreatePipelineResponseTypeDef:
-    return {
-        "pipelineName": ...,
-        "pipelineArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePipelineResponseTypeDef(TypedDict):
-    pipelineName: str,
-    pipelineArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomerManagedChannelS3StorageSummaryTypeDef
 
 ```python title="Usage Example"
@@ -543,6 +191,112 @@ class CustomerManagedChannelS3StorageTypeDef(TypedDict):
     bucket: str,
     roleArn: str,
     keyPrefix: NotRequired[str],
+```
+
+## RetentionPeriodTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import RetentionPeriodTypeDef
+
+def get_value() -> RetentionPeriodTypeDef:
+    return {
+        "unlimited": ...,
+    }
+```
+
+```python title="Definition"
+class RetentionPeriodTypeDef(TypedDict):
+    unlimited: NotRequired[bool],
+    numberOfDays: NotRequired[int],
+```
+
+## ColumnTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ColumnTypeDef
+
+def get_value() -> ColumnTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnTypeDef(TypedDict):
+    name: str,
+    type: str,
+```
+
+## ResourceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ResourceConfigurationTypeDef
+
+def get_value() -> ResourceConfigurationTypeDef:
+    return {
+        "computeType": ...,
+        "volumeSizeInGB": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceConfigurationTypeDef(TypedDict):
+    computeType: ComputeTypeType,  # (1)
+    volumeSizeInGB: int,
+```
+
+1. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
+
+## CreateDatasetContentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentRequestRequestTypeDef
+
+def get_value() -> CreateDatasetContentRequestRequestTypeDef:
+    return {
+        "datasetName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetContentRequestRequestTypeDef(TypedDict):
+    datasetName: str,
+    versionId: NotRequired[str],
+```
+
+## VersioningConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import VersioningConfigurationTypeDef
+
+def get_value() -> VersioningConfigurationTypeDef:
+    return {
+        "unlimited": ...,
+    }
+```
+
+```python title="Definition"
+class VersioningConfigurationTypeDef(TypedDict):
+    unlimited: NotRequired[bool],
+    maxVersions: NotRequired[int],
 ```
 
 ## CustomerManagedDatastoreS3StorageSummaryTypeDef
@@ -600,63 +354,24 @@ class DatasetActionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DatasetActionTypeType](./literals.md#datasetactiontypetype) 
-## DatasetActionTypeDef
+## IotEventsDestinationConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetActionTypeDef
+from mypy_boto3_iotanalytics.type_defs import IotEventsDestinationConfigurationTypeDef
 
-def get_value() -> DatasetActionTypeDef:
+def get_value() -> IotEventsDestinationConfigurationTypeDef:
     return {
-        "actionName": ...,
+        "inputName": ...,
+        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class DatasetActionTypeDef(TypedDict):
-    actionName: NotRequired[str],
-    queryAction: NotRequired[SqlQueryDatasetActionTypeDef],  # (1)
-    containerAction: NotRequired[ContainerDatasetActionTypeDef],  # (2)
+class IotEventsDestinationConfigurationTypeDef(TypedDict):
+    inputName: str,
+    roleArn: str,
 ```
 
-1. See [:material-code-braces: SqlQueryDatasetActionTypeDef](./type_defs.md#sqlquerydatasetactiontypedef) 
-2. See [:material-code-braces: ContainerDatasetActionTypeDef](./type_defs.md#containerdatasetactiontypedef) 
-## DatasetContentDeliveryDestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryDestinationTypeDef
-
-def get_value() -> DatasetContentDeliveryDestinationTypeDef:
-    return {
-        "iotEventsDestinationConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class DatasetContentDeliveryDestinationTypeDef(TypedDict):
-    iotEventsDestinationConfiguration: NotRequired[IotEventsDestinationConfigurationTypeDef],  # (1)
-    s3DestinationConfiguration: NotRequired[S3DestinationConfigurationTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: IotEventsDestinationConfigurationTypeDef](./type_defs.md#ioteventsdestinationconfigurationtypedef) 
-2. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
-## DatasetContentDeliveryRuleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryRuleTypeDef
-
-def get_value() -> DatasetContentDeliveryRuleTypeDef:
-    return {
-        "destination": ...,
-    }
-```
-
-```python title="Definition"
-class DatasetContentDeliveryRuleTypeDef(TypedDict):
-    destination: DatasetContentDeliveryDestinationTypeDef,  # (1)
-    entryName: NotRequired[str],
-```
-
-1. See [:material-code-braces: DatasetContentDeliveryDestinationTypeDef](./type_defs.md#datasetcontentdeliverydestinationtypedef) 
 ## DatasetContentStatusTypeDef
 
 ```python title="Usage Example"
@@ -675,27 +390,6 @@ class DatasetContentStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DatasetContentStateType](./literals.md#datasetcontentstatetype) 
-## DatasetContentSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetContentSummaryTypeDef
-
-def get_value() -> DatasetContentSummaryTypeDef:
-    return {
-        "version": ...,
-    }
-```
-
-```python title="Definition"
-class DatasetContentSummaryTypeDef(TypedDict):
-    version: NotRequired[str],
-    status: NotRequired[DatasetContentStatusTypeDef],  # (1)
-    creationTime: NotRequired[datetime],
-    scheduleTime: NotRequired[datetime],
-    completionTime: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: DatasetContentStatusTypeDef](./type_defs.md#datasetcontentstatustypedef) 
 ## DatasetContentVersionValueTypeDef
 
 ```python title="Usage Example"
@@ -729,82 +423,38 @@ class DatasetEntryTypeDef(TypedDict):
     dataURI: NotRequired[str],
 ```
 
-## DatasetSummaryTypeDef
+## ScheduleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetSummaryTypeDef
+from mypy_boto3_iotanalytics.type_defs import ScheduleTypeDef
 
-def get_value() -> DatasetSummaryTypeDef:
+def get_value() -> ScheduleTypeDef:
     return {
-        "datasetName": ...,
+        "expression": ...,
     }
 ```
 
 ```python title="Definition"
-class DatasetSummaryTypeDef(TypedDict):
-    datasetName: NotRequired[str],
-    status: NotRequired[DatasetStatusType],  # (1)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    triggers: NotRequired[List[DatasetTriggerTypeDef]],  # (2)
-    actions: NotRequired[List[DatasetActionSummaryTypeDef]],  # (3)
+class ScheduleTypeDef(TypedDict):
+    expression: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
-2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
-3. See [:material-code-braces: DatasetActionSummaryTypeDef](./type_defs.md#datasetactionsummarytypedef) 
-## DatasetTriggerTypeDef
+## TriggeringDatasetTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetTriggerTypeDef
+from mypy_boto3_iotanalytics.type_defs import TriggeringDatasetTypeDef
 
-def get_value() -> DatasetTriggerTypeDef:
-    return {
-        "schedule": ...,
-    }
-```
-
-```python title="Definition"
-class DatasetTriggerTypeDef(TypedDict):
-    schedule: NotRequired[ScheduleTypeDef],  # (1)
-    dataset: NotRequired[TriggeringDatasetTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
-2. See [:material-code-braces: TriggeringDatasetTypeDef](./type_defs.md#triggeringdatasettypedef) 
-## DatasetTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatasetTypeDef
-
-def get_value() -> DatasetTypeDef:
+def get_value() -> TriggeringDatasetTypeDef:
     return {
         "name": ...,
     }
 ```
 
 ```python title="Definition"
-class DatasetTypeDef(TypedDict):
-    name: NotRequired[str],
-    arn: NotRequired[str],
-    actions: NotRequired[List[DatasetActionTypeDef]],  # (1)
-    triggers: NotRequired[List[DatasetTriggerTypeDef]],  # (2)
-    contentDeliveryRules: NotRequired[List[DatasetContentDeliveryRuleTypeDef]],  # (3)
-    status: NotRequired[DatasetStatusType],  # (4)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (5)
-    versioningConfiguration: NotRequired[VersioningConfigurationTypeDef],  # (6)
-    lateDataRules: NotRequired[List[LateDataRuleTypeDef]],  # (7)
+class TriggeringDatasetTypeDef(TypedDict):
+    name: str,
 ```
 
-1. See [:material-code-braces: DatasetActionTypeDef](./type_defs.md#datasetactiontypedef) 
-2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
-3. See [:material-code-braces: DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef) 
-4. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
-5. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-6. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
-7. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
 ## DatastoreActivityTypeDef
 
 ```python title="Usage Example"
@@ -823,190 +473,73 @@ class DatastoreActivityTypeDef(TypedDict):
     datastoreName: str,
 ```
 
-## DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
+## IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
+from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
 
-def get_value() -> DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef:
+def get_value() -> IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef:
     return {
-        "customerManagedS3Storage": ...,
+        "bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef(TypedDict):
-    customerManagedS3Storage: NotRequired[IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef],  # (1)
+class IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    keyPrefix: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagesummarytypedef) 
-## DatastoreIotSiteWiseMultiLayerStorageTypeDef
+## IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageTypeDef
+from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
 
-def get_value() -> DatastoreIotSiteWiseMultiLayerStorageTypeDef:
+def get_value() -> IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef:
     return {
-        "customerManagedS3Storage": ...,
+        "bucket": ...,
     }
 ```
 
 ```python title="Definition"
-class DatastoreIotSiteWiseMultiLayerStorageTypeDef(TypedDict):
-    customerManagedS3Storage: IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef,  # (1)
+class IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef(TypedDict):
+    bucket: str,
+    keyPrefix: NotRequired[str],
 ```
 
-1. See [:material-code-braces: IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagetypedef) 
-## DatastorePartitionTypeDef
+## PartitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastorePartitionTypeDef
+from mypy_boto3_iotanalytics.type_defs import PartitionTypeDef
 
-def get_value() -> DatastorePartitionTypeDef:
+def get_value() -> PartitionTypeDef:
     return {
-        "attributePartition": ...,
+        "attributeName": ...,
     }
 ```
 
 ```python title="Definition"
-class DatastorePartitionTypeDef(TypedDict):
-    attributePartition: NotRequired[PartitionTypeDef],  # (1)
-    timestampPartition: NotRequired[TimestampPartitionTypeDef],  # (2)
+class PartitionTypeDef(TypedDict):
+    attributeName: str,
 ```
 
-1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
-2. See [:material-code-braces: TimestampPartitionTypeDef](./type_defs.md#timestamppartitiontypedef) 
-## DatastorePartitionsTypeDef
+## TimestampPartitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastorePartitionsTypeDef
+from mypy_boto3_iotanalytics.type_defs import TimestampPartitionTypeDef
 
-def get_value() -> DatastorePartitionsTypeDef:
+def get_value() -> TimestampPartitionTypeDef:
     return {
-        "partitions": ...,
+        "attributeName": ...,
     }
 ```
 
 ```python title="Definition"
-class DatastorePartitionsTypeDef(TypedDict):
-    partitions: NotRequired[Sequence[DatastorePartitionTypeDef]],  # (1)
+class TimestampPartitionTypeDef(TypedDict):
+    attributeName: str,
+    timestampFormat: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef) 
-## DatastoreStatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreStatisticsTypeDef
-
-def get_value() -> DatastoreStatisticsTypeDef:
-    return {
-        "size": ...,
-    }
-```
-
-```python title="Definition"
-class DatastoreStatisticsTypeDef(TypedDict):
-    size: NotRequired[EstimatedResourceSizeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef) 
-## DatastoreStorageSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreStorageSummaryTypeDef
-
-def get_value() -> DatastoreStorageSummaryTypeDef:
-    return {
-        "serviceManagedS3": ...,
-    }
-```
-
-```python title="Definition"
-class DatastoreStorageSummaryTypeDef(TypedDict):
-    serviceManagedS3: NotRequired[Dict[str, Any]],
-    customerManagedS3: NotRequired[CustomerManagedDatastoreS3StorageSummaryTypeDef],  # (1)
-    iotSiteWiseMultiLayerStorage: NotRequired[DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: CustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#customermanageddatastores3storagesummarytypedef) 
-2. See [:material-code-braces: DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragesummarytypedef) 
-## DatastoreStorageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreStorageTypeDef
-
-def get_value() -> DatastoreStorageTypeDef:
-    return {
-        "serviceManagedS3": ...,
-    }
-```
-
-```python title="Definition"
-class DatastoreStorageTypeDef(TypedDict):
-    serviceManagedS3: NotRequired[Mapping[str, Any]],
-    customerManagedS3: NotRequired[CustomerManagedDatastoreS3StorageTypeDef],  # (1)
-    iotSiteWiseMultiLayerStorage: NotRequired[DatastoreIotSiteWiseMultiLayerStorageTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: CustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#customermanageddatastores3storagetypedef) 
-2. See [:material-code-braces: DatastoreIotSiteWiseMultiLayerStorageTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragetypedef) 
-## DatastoreSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreSummaryTypeDef
-
-def get_value() -> DatastoreSummaryTypeDef:
-    return {
-        "datastoreName": ...,
-    }
-```
-
-```python title="Definition"
-class DatastoreSummaryTypeDef(TypedDict):
-    datastoreName: NotRequired[str],
-    datastoreStorage: NotRequired[DatastoreStorageSummaryTypeDef],  # (1)
-    status: NotRequired[DatastoreStatusType],  # (2)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    lastMessageArrivalTime: NotRequired[datetime],
-    fileFormatType: NotRequired[FileFormatTypeType],  # (3)
-    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: DatastoreStorageSummaryTypeDef](./type_defs.md#datastorestoragesummarytypedef) 
-2. See [:material-code-brackets: DatastoreStatusType](./literals.md#datastorestatustype) 
-3. See [:material-code-brackets: FileFormatTypeType](./literals.md#fileformattypetype) 
-4. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
-## DatastoreTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DatastoreTypeDef
-
-def get_value() -> DatastoreTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class DatastoreTypeDef(TypedDict):
-    name: NotRequired[str],
-    storage: NotRequired[DatastoreStorageTypeDef],  # (1)
-    arn: NotRequired[str],
-    status: NotRequired[DatastoreStatusType],  # (2)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (3)
-    creationTime: NotRequired[datetime],
-    lastUpdateTime: NotRequired[datetime],
-    lastMessageArrivalTime: NotRequired[datetime],
-    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (4)
-    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (5)
-```
-
-1. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
-2. See [:material-code-brackets: DatastoreStatusType](./literals.md#datastorestatustype) 
-3. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-4. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
-5. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
 ## DeleteChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1139,29 +672,6 @@ class DescribeChannelRequestRequestTypeDef(TypedDict):
     includeStatistics: NotRequired[bool],
 ```
 
-## DescribeChannelResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DescribeChannelResponseTypeDef
-
-def get_value() -> DescribeChannelResponseTypeDef:
-    return {
-        "channel": ...,
-        "statistics": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeChannelResponseTypeDef(TypedDict):
-    channel: ChannelTypeDef,  # (1)
-    statistics: ChannelStatisticsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-2. See [:material-code-braces: ChannelStatisticsTypeDef](./type_defs.md#channelstatisticstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1178,26 +688,6 @@ class DescribeDatasetRequestRequestTypeDef(TypedDict):
     datasetName: str,
 ```
 
-## DescribeDatasetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DescribeDatasetResponseTypeDef
-
-def get_value() -> DescribeDatasetResponseTypeDef:
-    return {
-        "dataset": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeDatasetResponseTypeDef(TypedDict):
-    dataset: DatasetTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatastoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1215,49 +705,27 @@ class DescribeDatastoreRequestRequestTypeDef(TypedDict):
     includeStatistics: NotRequired[bool],
 ```
 
-## DescribeDatastoreResponseTypeDef
+## LoggingOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import LoggingOptionsTypeDef
 
-def get_value() -> DescribeDatastoreResponseTypeDef:
+def get_value() -> LoggingOptionsTypeDef:
     return {
-        "datastore": ...,
-        "statistics": ...,
-        "ResponseMetadata": ...,
+        "roleArn": ...,
+        "level": ...,
+        "enabled": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDatastoreResponseTypeDef(TypedDict):
-    datastore: DatastoreTypeDef,  # (1)
-    statistics: DatastoreStatisticsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class LoggingOptionsTypeDef(TypedDict):
+    roleArn: str,
+    level: LoggingLevelType,  # (1)
+    enabled: bool,
 ```
 
-1. See [:material-code-braces: DatastoreTypeDef](./type_defs.md#datastoretypedef) 
-2. See [:material-code-braces: DatastoreStatisticsTypeDef](./type_defs.md#datastorestatisticstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLoggingOptionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseTypeDef
-
-def get_value() -> DescribeLoggingOptionsResponseTypeDef:
-    return {
-        "loggingOptions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeLoggingOptionsResponseTypeDef(TypedDict):
-    loggingOptions: LoggingOptionsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
 ## DescribePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1274,26 +742,6 @@ class DescribePipelineRequestRequestTypeDef(TypedDict):
     pipelineName: str,
 ```
 
-## DescribePipelineResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import DescribePipelineResponseTypeDef
-
-def get_value() -> DescribePipelineResponseTypeDef:
-    return {
-        "pipeline": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribePipelineResponseTypeDef(TypedDict):
-    pipeline: PipelineTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceRegistryEnrichActivityTypeDef
 
 ```python title="Usage Example"
@@ -1340,41 +788,6 @@ class DeviceShadowEnrichActivityTypeDef(TypedDict):
     next: NotRequired[str],
 ```
 
-## EstimatedResourceSizeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import EstimatedResourceSizeTypeDef
-
-def get_value() -> EstimatedResourceSizeTypeDef:
-    return {
-        "estimatedSizeInBytes": ...,
-    }
-```
-
-```python title="Definition"
-class EstimatedResourceSizeTypeDef(TypedDict):
-    estimatedSizeInBytes: NotRequired[float],
-    estimatedOn: NotRequired[datetime],
-```
-
-## FileFormatConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import FileFormatConfigurationTypeDef
-
-def get_value() -> FileFormatConfigurationTypeDef:
-    return {
-        "jsonConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class FileFormatConfigurationTypeDef(TypedDict):
-    jsonConfiguration: NotRequired[Mapping[str, Any]],
-    parquetConfiguration: NotRequired[ParquetConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ParquetConfigurationTypeDef](./type_defs.md#parquetconfigurationtypedef) 
 ## FilterActivityTypeDef
 
 ```python title="Usage Example"
@@ -1411,6 +824,675 @@ class GetDatasetContentRequestRequestTypeDef(TypedDict):
     versionId: NotRequired[str],
 ```
 
+## GlueConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import GlueConfigurationTypeDef
+
+def get_value() -> GlueConfigurationTypeDef:
+    return {
+        "tableName": ...,
+        "databaseName": ...,
+    }
+```
+
+```python title="Definition"
+class GlueConfigurationTypeDef(TypedDict):
+    tableName: str,
+    databaseName: str,
+```
+
+## LambdaActivityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import LambdaActivityTypeDef
+
+def get_value() -> LambdaActivityTypeDef:
+    return {
+        "name": ...,
+        "lambdaName": ...,
+        "batchSize": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaActivityTypeDef(TypedDict):
+    name: str,
+    lambdaName: str,
+    batchSize: int,
+    next: NotRequired[str],
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListChannelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListDatasetContentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsRequestRequestTypeDef
+
+def get_value() -> ListDatasetContentsRequestRequestTypeDef:
+    return {
+        "datasetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetContentsRequestRequestTypeDef(TypedDict):
+    datasetName: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    scheduledOnOrAfter: NotRequired[Union[datetime, str]],
+    scheduledBefore: NotRequired[Union[datetime, str]],
+```
+
+## ListDatasetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListDatastoresRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListDatastoresRequestRequestTypeDef
+
+def get_value() -> ListDatastoresRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatastoresRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListPipelinesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListPipelinesRequestRequestTypeDef
+
+def get_value() -> ListPipelinesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListPipelinesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## MathActivityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import MathActivityTypeDef
+
+def get_value() -> MathActivityTypeDef:
+    return {
+        "name": ...,
+        "attribute": ...,
+        "math": ...,
+    }
+```
+
+```python title="Definition"
+class MathActivityTypeDef(TypedDict):
+    name: str,
+    attribute: str,
+    math: str,
+    next: NotRequired[str],
+```
+
+## OutputFileUriValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import OutputFileUriValueTypeDef
+
+def get_value() -> OutputFileUriValueTypeDef:
+    return {
+        "fileName": ...,
+    }
+```
+
+```python title="Definition"
+class OutputFileUriValueTypeDef(TypedDict):
+    fileName: str,
+```
+
+## RemoveAttributesActivityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import RemoveAttributesActivityTypeDef
+
+def get_value() -> RemoveAttributesActivityTypeDef:
+    return {
+        "name": ...,
+        "attributes": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveAttributesActivityTypeDef(TypedDict):
+    name: str,
+    attributes: Sequence[str],
+    next: NotRequired[str],
+```
+
+## SelectAttributesActivityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import SelectAttributesActivityTypeDef
+
+def get_value() -> SelectAttributesActivityTypeDef:
+    return {
+        "name": ...,
+        "attributes": ...,
+    }
+```
+
+```python title="Definition"
+class SelectAttributesActivityTypeDef(TypedDict):
+    name: str,
+    attributes: Sequence[str],
+    next: NotRequired[str],
+```
+
+## ReprocessingSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ReprocessingSummaryTypeDef
+
+def get_value() -> ReprocessingSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class ReprocessingSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    status: NotRequired[ReprocessingStatusType],  # (1)
+    creationTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ReprocessingStatusType](./literals.md#reprocessingstatustype) 
+## SampleChannelDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import SampleChannelDataRequestRequestTypeDef
+
+def get_value() -> SampleChannelDataRequestRequestTypeDef:
+    return {
+        "channelName": ...,
+    }
+```
+
+```python title="Definition"
+class SampleChannelDataRequestRequestTypeDef(TypedDict):
+    channelName: str,
+    maxMessages: NotRequired[int],
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
+## BatchPutMessageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestRequestTypeDef
+
+def get_value() -> BatchPutMessageRequestRequestTypeDef:
+    return {
+        "channelName": ...,
+        "messages": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutMessageRequestRequestTypeDef(TypedDict):
+    channelName: str,
+    messages: Sequence[MessageTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+## BatchPutMessageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
+
+def get_value() -> BatchPutMessageResponseTypeDef:
+    return {
+        "batchPutMessageErrorEntries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutMessageResponseTypeDef(TypedDict):
+    batchPutMessageErrorEntries: List[BatchPutMessageErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchPutMessageErrorEntryTypeDef](./type_defs.md#batchputmessageerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatasetContentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentResponseTypeDef
+
+def get_value() -> CreateDatasetContentResponseTypeDef:
+    return {
+        "versionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetContentResponseTypeDef(TypedDict):
+    versionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreatePipelineResponseTypeDef
+
+def get_value() -> CreatePipelineResponseTypeDef:
+    return {
+        "pipelineName": ...,
+        "pipelineArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePipelineResponseTypeDef(TypedDict):
+    pipelineName: str,
+    pipelineArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RunPipelineActivityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseTypeDef
+
+def get_value() -> RunPipelineActivityResponseTypeDef:
+    return {
+        "payloads": ...,
+        "logResult": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RunPipelineActivityResponseTypeDef(TypedDict):
+    payloads: List[bytes],
+    logResult: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SampleChannelDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseTypeDef
+
+def get_value() -> SampleChannelDataResponseTypeDef:
+    return {
+        "payloads": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SampleChannelDataResponseTypeDef(TypedDict):
+    payloads: List[bytes],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartPipelineReprocessingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingResponseTypeDef
+
+def get_value() -> StartPipelineReprocessingResponseTypeDef:
+    return {
+        "reprocessingId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartPipelineReprocessingResponseTypeDef(TypedDict):
+    reprocessingId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartPipelineReprocessingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingRequestRequestTypeDef
+
+def get_value() -> StartPipelineReprocessingRequestRequestTypeDef:
+    return {
+        "pipelineName": ...,
+    }
+```
+
+```python title="Definition"
+class StartPipelineReprocessingRequestRequestTypeDef(TypedDict):
+    pipelineName: str,
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+    channelMessages: NotRequired[ChannelMessagesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef) 
+## ChannelStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ChannelStatisticsTypeDef
+
+def get_value() -> ChannelStatisticsTypeDef:
+    return {
+        "size": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelStatisticsTypeDef(TypedDict):
+    size: NotRequired[EstimatedResourceSizeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef) 
+## DatastoreStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastoreStatisticsTypeDef
+
+def get_value() -> DatastoreStatisticsTypeDef:
+    return {
+        "size": ...,
+    }
+```
+
+```python title="Definition"
+class DatastoreStatisticsTypeDef(TypedDict):
+    size: NotRequired[EstimatedResourceSizeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef) 
+## ChannelStorageSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ChannelStorageSummaryTypeDef
+
+def get_value() -> ChannelStorageSummaryTypeDef:
+    return {
+        "serviceManagedS3": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelStorageSummaryTypeDef(TypedDict):
+    serviceManagedS3: NotRequired[Dict[str, Any]],
+    customerManagedS3: NotRequired[CustomerManagedChannelS3StorageSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CustomerManagedChannelS3StorageSummaryTypeDef](./type_defs.md#customermanagedchannels3storagesummarytypedef) 
+## ChannelStorageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ChannelStorageTypeDef
+
+def get_value() -> ChannelStorageTypeDef:
+    return {
+        "serviceManagedS3": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelStorageTypeDef(TypedDict):
+    serviceManagedS3: NotRequired[Mapping[str, Any]],
+    customerManagedS3: NotRequired[CustomerManagedChannelS3StorageTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CustomerManagedChannelS3StorageTypeDef](./type_defs.md#customermanagedchannels3storagetypedef) 
+## CreateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "channelName": ...,
+        "channelArn": ...,
+        "retentionPeriod": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    channelName: str,
+    channelArn: str,
+    retentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatasetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "datasetName": ...,
+        "datasetArn": ...,
+        "retentionPeriod": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    datasetName: str,
+    datasetArn: str,
+    retentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatastoreResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatastoreResponseTypeDef
+
+def get_value() -> CreateDatastoreResponseTypeDef:
+    return {
+        "datastoreName": ...,
+        "datastoreArn": ...,
+        "retentionPeriod": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatastoreResponseTypeDef(TypedDict):
+    datastoreName: str,
+    datastoreArn: str,
+    retentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SchemaDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import SchemaDefinitionTypeDef
+
+def get_value() -> SchemaDefinitionTypeDef:
+    return {
+        "columns": ...,
+    }
+```
+
+```python title="Definition"
+class SchemaDefinitionTypeDef(TypedDict):
+    columns: NotRequired[Sequence[ColumnTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ColumnTypeDef](./type_defs.md#columntypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DatasetContentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetContentSummaryTypeDef
+
+def get_value() -> DatasetContentSummaryTypeDef:
+    return {
+        "version": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetContentSummaryTypeDef(TypedDict):
+    version: NotRequired[str],
+    status: NotRequired[DatasetContentStatusTypeDef],  # (1)
+    creationTime: NotRequired[datetime],
+    scheduleTime: NotRequired[datetime],
+    completionTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: DatasetContentStatusTypeDef](./type_defs.md#datasetcontentstatustypedef) 
 ## GetDatasetContentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1436,97 +1518,78 @@ class GetDatasetContentResponseTypeDef(TypedDict):
 1. See [:material-code-braces: DatasetEntryTypeDef](./type_defs.md#datasetentrytypedef) 
 2. See [:material-code-braces: DatasetContentStatusTypeDef](./type_defs.md#datasetcontentstatustypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GlueConfigurationTypeDef
+## DatasetTriggerTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import GlueConfigurationTypeDef
+from mypy_boto3_iotanalytics.type_defs import DatasetTriggerTypeDef
 
-def get_value() -> GlueConfigurationTypeDef:
+def get_value() -> DatasetTriggerTypeDef:
     return {
-        "tableName": ...,
-        "databaseName": ...,
+        "schedule": ...,
     }
 ```
 
 ```python title="Definition"
-class GlueConfigurationTypeDef(TypedDict):
-    tableName: str,
-    databaseName: str,
+class DatasetTriggerTypeDef(TypedDict):
+    schedule: NotRequired[ScheduleTypeDef],  # (1)
+    dataset: NotRequired[TriggeringDatasetTypeDef],  # (2)
 ```
 
-## IotEventsDestinationConfigurationTypeDef
+1. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+2. See [:material-code-braces: TriggeringDatasetTypeDef](./type_defs.md#triggeringdatasettypedef) 
+## DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import IotEventsDestinationConfigurationTypeDef
+from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
 
-def get_value() -> IotEventsDestinationConfigurationTypeDef:
+def get_value() -> DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef:
     return {
-        "inputName": ...,
-        "roleArn": ...,
+        "customerManagedS3Storage": ...,
     }
 ```
 
 ```python title="Definition"
-class IotEventsDestinationConfigurationTypeDef(TypedDict):
-    inputName: str,
-    roleArn: str,
+class DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef(TypedDict):
+    customerManagedS3Storage: NotRequired[IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef],  # (1)
 ```
 
-## IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
+1. See [:material-code-braces: IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagesummarytypedef) 
+## DatastoreIotSiteWiseMultiLayerStorageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
+from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageTypeDef
 
-def get_value() -> IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef:
+def get_value() -> DatastoreIotSiteWiseMultiLayerStorageTypeDef:
     return {
-        "bucket": ...,
+        "customerManagedS3Storage": ...,
     }
 ```
 
 ```python title="Definition"
-class IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef(TypedDict):
-    bucket: NotRequired[str],
-    keyPrefix: NotRequired[str],
+class DatastoreIotSiteWiseMultiLayerStorageTypeDef(TypedDict):
+    customerManagedS3Storage: IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef,  # (1)
 ```
 
-## IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
+1. See [:material-code-braces: IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagetypedef) 
+## DatastorePartitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
+from mypy_boto3_iotanalytics.type_defs import DatastorePartitionTypeDef
 
-def get_value() -> IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef:
+def get_value() -> DatastorePartitionTypeDef:
     return {
-        "bucket": ...,
+        "attributePartition": ...,
     }
 ```
 
 ```python title="Definition"
-class IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef(TypedDict):
-    bucket: str,
-    keyPrefix: NotRequired[str],
+class DatastorePartitionTypeDef(TypedDict):
+    attributePartition: NotRequired[PartitionTypeDef],  # (1)
+    timestampPartition: NotRequired[TimestampPartitionTypeDef],  # (2)
 ```
 
-## LambdaActivityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import LambdaActivityTypeDef
-
-def get_value() -> LambdaActivityTypeDef:
-    return {
-        "name": ...,
-        "lambdaName": ...,
-        "batchSize": ...,
-    }
-```
-
-```python title="Definition"
-class LambdaActivityTypeDef(TypedDict):
-    name: str,
-    lambdaName: str,
-    batchSize: int,
-    next: NotRequired[str],
-```
-
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
+2. See [:material-code-braces: TimestampPartitionTypeDef](./type_defs.md#timestamppartitiontypedef) 
 ## LateDataRuleConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1544,24 +1607,82 @@ class LateDataRuleConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DeltaTimeSessionWindowConfigurationTypeDef](./type_defs.md#deltatimesessionwindowconfigurationtypedef) 
-## LateDataRuleTypeDef
+## QueryFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import LateDataRuleTypeDef
+from mypy_boto3_iotanalytics.type_defs import QueryFilterTypeDef
 
-def get_value() -> LateDataRuleTypeDef:
+def get_value() -> QueryFilterTypeDef:
     return {
-        "ruleConfiguration": ...,
+        "deltaTime": ...,
     }
 ```
 
 ```python title="Definition"
-class LateDataRuleTypeDef(TypedDict):
-    ruleConfiguration: LateDataRuleConfigurationTypeDef,  # (1)
-    ruleName: NotRequired[str],
+class QueryFilterTypeDef(TypedDict):
+    deltaTime: NotRequired[DeltaTimeTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: LateDataRuleConfigurationTypeDef](./type_defs.md#latedataruleconfigurationtypedef) 
+1. See [:material-code-braces: DeltaTimeTypeDef](./type_defs.md#deltatimetypedef) 
+## DescribeLoggingOptionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseTypeDef
+
+def get_value() -> DescribeLoggingOptionsResponseTypeDef:
+    return {
+        "loggingOptions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoggingOptionsResponseTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutLoggingOptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import PutLoggingOptionsRequestRequestTypeDef
+
+def get_value() -> PutLoggingOptionsRequestRequestTypeDef:
+    return {
+        "loggingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class PutLoggingOptionsRequestRequestTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
+## S3DestinationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import S3DestinationConfigurationTypeDef
+
+def get_value() -> S3DestinationConfigurationTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class S3DestinationConfigurationTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+    roleArn: str,
+    glueConfiguration: NotRequired[GlueConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GlueConfigurationTypeDef](./type_defs.md#glueconfigurationtypedef) 
 ## ListChannelsRequestListChannelsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1579,45 +1700,6 @@ class ListChannelsRequestListChannelsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListChannelsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListChannelsRequestRequestTypeDef
-
-def get_value() -> ListChannelsRequestRequestTypeDef:
-    return {
-        "nextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsRequestRequestTypeDef(TypedDict):
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListChannelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
-
-def get_value() -> ListChannelsResponseTypeDef:
-    return {
-        "channelSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListChannelsResponseTypeDef(TypedDict):
-    channelSummaries: List[ChannelSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatasetContentsRequestListDatasetContentsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1638,48 +1720,6 @@ class ListDatasetContentsRequestListDatasetContentsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDatasetContentsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsRequestRequestTypeDef
-
-def get_value() -> ListDatasetContentsRequestRequestTypeDef:
-    return {
-        "datasetName": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatasetContentsRequestRequestTypeDef(TypedDict):
-    datasetName: str,
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-    scheduledOnOrAfter: NotRequired[Union[datetime, str]],
-    scheduledBefore: NotRequired[Union[datetime, str]],
-```
-
-## ListDatasetContentsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsResponseTypeDef
-
-def get_value() -> ListDatasetContentsResponseTypeDef:
-    return {
-        "datasetContentSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatasetContentsResponseTypeDef(TypedDict):
-    datasetContentSummaries: List[DatasetContentSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatasetContentSummaryTypeDef](./type_defs.md#datasetcontentsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatasetsRequestListDatasetsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1697,45 +1737,6 @@ class ListDatasetsRequestListDatasetsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDatasetsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatasetsRequestRequestTypeDef
-
-def get_value() -> ListDatasetsRequestRequestTypeDef:
-    return {
-        "nextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatasetsRequestRequestTypeDef(TypedDict):
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListDatasetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatasetsResponseTypeDef
-
-def get_value() -> ListDatasetsResponseTypeDef:
-    return {
-        "datasetSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatasetsResponseTypeDef(TypedDict):
-    datasetSummaries: List[DatasetSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatastoresRequestListDatastoresPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1753,45 +1754,6 @@ class ListDatastoresRequestListDatastoresPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListDatastoresRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatastoresRequestRequestTypeDef
-
-def get_value() -> ListDatastoresRequestRequestTypeDef:
-    return {
-        "nextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatastoresRequestRequestTypeDef(TypedDict):
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListDatastoresResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListDatastoresResponseTypeDef
-
-def get_value() -> ListDatastoresResponseTypeDef:
-    return {
-        "datastoreSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDatastoresResponseTypeDef(TypedDict):
-    datastoreSummaries: List[DatastoreSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DatastoreSummaryTypeDef](./type_defs.md#datastoresummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPipelinesRequestListPipelinesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1809,208 +1771,28 @@ class ListPipelinesRequestListPipelinesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListPipelinesRequestRequestTypeDef
+## VariableTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListPipelinesRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import VariableTypeDef
 
-def get_value() -> ListPipelinesRequestRequestTypeDef:
-    return {
-        "nextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListPipelinesRequestRequestTypeDef(TypedDict):
-    nextToken: NotRequired[str],
-    maxResults: NotRequired[int],
-```
-
-## ListPipelinesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListPipelinesResponseTypeDef
-
-def get_value() -> ListPipelinesResponseTypeDef:
-    return {
-        "pipelineSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPipelinesResponseTypeDef(TypedDict):
-    pipelineSummaries: List[PipelineSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PipelineSummaryTypeDef](./type_defs.md#pipelinesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LoggingOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import LoggingOptionsTypeDef
-
-def get_value() -> LoggingOptionsTypeDef:
-    return {
-        "roleArn": ...,
-        "level": ...,
-        "enabled": ...,
-    }
-```
-
-```python title="Definition"
-class LoggingOptionsTypeDef(TypedDict):
-    roleArn: str,
-    level: LoggingLevelType,  # (1)
-    enabled: bool,
-```
-
-1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
-## MathActivityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import MathActivityTypeDef
-
-def get_value() -> MathActivityTypeDef:
+def get_value() -> VariableTypeDef:
     return {
         "name": ...,
-        "attribute": ...,
-        "math": ...,
     }
 ```
 
 ```python title="Definition"
-class MathActivityTypeDef(TypedDict):
+class VariableTypeDef(TypedDict):
     name: str,
-    attribute: str,
-    math: str,
-    next: NotRequired[str],
+    stringValue: NotRequired[str],
+    doubleValue: NotRequired[float],
+    datasetContentVersionValue: NotRequired[DatasetContentVersionValueTypeDef],  # (1)
+    outputFileUriValue: NotRequired[OutputFileUriValueTypeDef],  # (2)
 ```
 
-## MessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import MessageTypeDef
-
-def get_value() -> MessageTypeDef:
-    return {
-        "messageId": ...,
-        "payload": ...,
-    }
-```
-
-```python title="Definition"
-class MessageTypeDef(TypedDict):
-    messageId: str,
-    payload: Union[str, bytes, IO[Any], StreamingBody],
-```
-
-## OutputFileUriValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import OutputFileUriValueTypeDef
-
-def get_value() -> OutputFileUriValueTypeDef:
-    return {
-        "fileName": ...,
-    }
-```
-
-```python title="Definition"
-class OutputFileUriValueTypeDef(TypedDict):
-    fileName: str,
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
-```
-
-## ParquetConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ParquetConfigurationTypeDef
-
-def get_value() -> ParquetConfigurationTypeDef:
-    return {
-        "schemaDefinition": ...,
-    }
-```
-
-```python title="Definition"
-class ParquetConfigurationTypeDef(TypedDict):
-    schemaDefinition: NotRequired[SchemaDefinitionTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef) 
-## PartitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import PartitionTypeDef
-
-def get_value() -> PartitionTypeDef:
-    return {
-        "attributeName": ...,
-    }
-```
-
-```python title="Definition"
-class PartitionTypeDef(TypedDict):
-    attributeName: str,
-```
-
+1. See [:material-code-braces: DatasetContentVersionValueTypeDef](./type_defs.md#datasetcontentversionvaluetypedef) 
+2. See [:material-code-braces: OutputFileUriValueTypeDef](./type_defs.md#outputfileurivaluetypedef) 
 ## PipelineActivityTypeDef
 
 ```python title="Usage Example"
@@ -2066,6 +1848,316 @@ class PipelineSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReprocessingSummaryTypeDef](./type_defs.md#reprocessingsummarytypedef) 
+## ChannelSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ChannelSummaryTypeDef
+
+def get_value() -> ChannelSummaryTypeDef:
+    return {
+        "channelName": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelSummaryTypeDef(TypedDict):
+    channelName: NotRequired[str],
+    channelStorage: NotRequired[ChannelStorageSummaryTypeDef],  # (1)
+    status: NotRequired[ChannelStatusType],  # (2)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    lastMessageArrivalTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ChannelStorageSummaryTypeDef](./type_defs.md#channelstoragesummarytypedef) 
+2. See [:material-code-brackets: ChannelStatusType](./literals.md#channelstatustype) 
+## ChannelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    name: NotRequired[str],
+    storage: NotRequired[ChannelStorageTypeDef],  # (1)
+    arn: NotRequired[str],
+    status: NotRequired[ChannelStatusType],  # (2)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (3)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    lastMessageArrivalTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
+2. See [:material-code-brackets: ChannelStatusType](./literals.md#channelstatustype) 
+3. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+## CreateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "channelName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    channelName: str,
+    channelStorage: NotRequired[ChannelStorageTypeDef],  # (1)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "channelName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    channelName: str,
+    channelStorage: NotRequired[ChannelStorageTypeDef],  # (1)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+## ParquetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ParquetConfigurationTypeDef
+
+def get_value() -> ParquetConfigurationTypeDef:
+    return {
+        "schemaDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class ParquetConfigurationTypeDef(TypedDict):
+    schemaDefinition: NotRequired[SchemaDefinitionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef) 
+## ListDatasetContentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsResponseTypeDef
+
+def get_value() -> ListDatasetContentsResponseTypeDef:
+    return {
+        "datasetContentSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetContentsResponseTypeDef(TypedDict):
+    datasetContentSummaries: List[DatasetContentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DatasetContentSummaryTypeDef](./type_defs.md#datasetcontentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DatasetSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetSummaryTypeDef
+
+def get_value() -> DatasetSummaryTypeDef:
+    return {
+        "datasetName": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetSummaryTypeDef(TypedDict):
+    datasetName: NotRequired[str],
+    status: NotRequired[DatasetStatusType],  # (1)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    triggers: NotRequired[List[DatasetTriggerTypeDef]],  # (2)
+    actions: NotRequired[List[DatasetActionSummaryTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
+3. See [:material-code-braces: DatasetActionSummaryTypeDef](./type_defs.md#datasetactionsummarytypedef) 
+## DatastoreStorageSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastoreStorageSummaryTypeDef
+
+def get_value() -> DatastoreStorageSummaryTypeDef:
+    return {
+        "serviceManagedS3": ...,
+    }
+```
+
+```python title="Definition"
+class DatastoreStorageSummaryTypeDef(TypedDict):
+    serviceManagedS3: NotRequired[Dict[str, Any]],
+    customerManagedS3: NotRequired[CustomerManagedDatastoreS3StorageSummaryTypeDef],  # (1)
+    iotSiteWiseMultiLayerStorage: NotRequired[DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#customermanageddatastores3storagesummarytypedef) 
+2. See [:material-code-braces: DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragesummarytypedef) 
+## DatastoreStorageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastoreStorageTypeDef
+
+def get_value() -> DatastoreStorageTypeDef:
+    return {
+        "serviceManagedS3": ...,
+    }
+```
+
+```python title="Definition"
+class DatastoreStorageTypeDef(TypedDict):
+    serviceManagedS3: NotRequired[Mapping[str, Any]],
+    customerManagedS3: NotRequired[CustomerManagedDatastoreS3StorageTypeDef],  # (1)
+    iotSiteWiseMultiLayerStorage: NotRequired[DatastoreIotSiteWiseMultiLayerStorageTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#customermanageddatastores3storagetypedef) 
+2. See [:material-code-braces: DatastoreIotSiteWiseMultiLayerStorageTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragetypedef) 
+## DatastorePartitionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastorePartitionsTypeDef
+
+def get_value() -> DatastorePartitionsTypeDef:
+    return {
+        "partitions": ...,
+    }
+```
+
+```python title="Definition"
+class DatastorePartitionsTypeDef(TypedDict):
+    partitions: NotRequired[Sequence[DatastorePartitionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef) 
+## LateDataRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import LateDataRuleTypeDef
+
+def get_value() -> LateDataRuleTypeDef:
+    return {
+        "ruleConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class LateDataRuleTypeDef(TypedDict):
+    ruleConfiguration: LateDataRuleConfigurationTypeDef,  # (1)
+    ruleName: NotRequired[str],
+```
+
+1. See [:material-code-braces: LateDataRuleConfigurationTypeDef](./type_defs.md#latedataruleconfigurationtypedef) 
+## SqlQueryDatasetActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import SqlQueryDatasetActionTypeDef
+
+def get_value() -> SqlQueryDatasetActionTypeDef:
+    return {
+        "sqlQuery": ...,
+    }
+```
+
+```python title="Definition"
+class SqlQueryDatasetActionTypeDef(TypedDict):
+    sqlQuery: str,
+    filters: NotRequired[Sequence[QueryFilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
+## DatasetContentDeliveryDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryDestinationTypeDef
+
+def get_value() -> DatasetContentDeliveryDestinationTypeDef:
+    return {
+        "iotEventsDestinationConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetContentDeliveryDestinationTypeDef(TypedDict):
+    iotEventsDestinationConfiguration: NotRequired[IotEventsDestinationConfigurationTypeDef],  # (1)
+    s3DestinationConfiguration: NotRequired[S3DestinationConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: IotEventsDestinationConfigurationTypeDef](./type_defs.md#ioteventsdestinationconfigurationtypedef) 
+2. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+## ContainerDatasetActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import ContainerDatasetActionTypeDef
+
+def get_value() -> ContainerDatasetActionTypeDef:
+    return {
+        "image": ...,
+        "executionRoleArn": ...,
+        "resourceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerDatasetActionTypeDef(TypedDict):
+    image: str,
+    executionRoleArn: str,
+    resourceConfiguration: ResourceConfigurationTypeDef,  # (1)
+    variables: NotRequired[Sequence[VariableTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ResourceConfigurationTypeDef](./type_defs.md#resourceconfigurationtypedef) 
+2. See [:material-code-braces: VariableTypeDef](./type_defs.md#variabletypedef) 
+## CreatePipelineRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreatePipelineRequestRequestTypeDef
+
+def get_value() -> CreatePipelineRequestRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "pipelineActivities": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePipelineRequestRequestTypeDef(TypedDict):
+    pipelineName: str,
+    pipelineActivities: Sequence[PipelineActivityTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PipelineTypeDef
 
 ```python title="Usage Example"
@@ -2089,138 +2181,6 @@ class PipelineTypeDef(TypedDict):
 
 1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
 2. See [:material-code-braces: ReprocessingSummaryTypeDef](./type_defs.md#reprocessingsummarytypedef) 
-## PutLoggingOptionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import PutLoggingOptionsRequestRequestTypeDef
-
-def get_value() -> PutLoggingOptionsRequestRequestTypeDef:
-    return {
-        "loggingOptions": ...,
-    }
-```
-
-```python title="Definition"
-class PutLoggingOptionsRequestRequestTypeDef(TypedDict):
-    loggingOptions: LoggingOptionsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
-## QueryFilterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import QueryFilterTypeDef
-
-def get_value() -> QueryFilterTypeDef:
-    return {
-        "deltaTime": ...,
-    }
-```
-
-```python title="Definition"
-class QueryFilterTypeDef(TypedDict):
-    deltaTime: NotRequired[DeltaTimeTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: DeltaTimeTypeDef](./type_defs.md#deltatimetypedef) 
-## RemoveAttributesActivityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import RemoveAttributesActivityTypeDef
-
-def get_value() -> RemoveAttributesActivityTypeDef:
-    return {
-        "name": ...,
-        "attributes": ...,
-    }
-```
-
-```python title="Definition"
-class RemoveAttributesActivityTypeDef(TypedDict):
-    name: str,
-    attributes: Sequence[str],
-    next: NotRequired[str],
-```
-
-## ReprocessingSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ReprocessingSummaryTypeDef
-
-def get_value() -> ReprocessingSummaryTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class ReprocessingSummaryTypeDef(TypedDict):
-    id: NotRequired[str],
-    status: NotRequired[ReprocessingStatusType],  # (1)
-    creationTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: ReprocessingStatusType](./literals.md#reprocessingstatustype) 
-## ResourceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ResourceConfigurationTypeDef
-
-def get_value() -> ResourceConfigurationTypeDef:
-    return {
-        "computeType": ...,
-        "volumeSizeInGB": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceConfigurationTypeDef(TypedDict):
-    computeType: ComputeTypeType,  # (1)
-    volumeSizeInGB: int,
-```
-
-1. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
-## RetentionPeriodTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import RetentionPeriodTypeDef
-
-def get_value() -> RetentionPeriodTypeDef:
-    return {
-        "unlimited": ...,
-    }
-```
-
-```python title="Definition"
-class RetentionPeriodTypeDef(TypedDict):
-    unlimited: NotRequired[bool],
-    numberOfDays: NotRequired[int],
-```
-
 ## RunPipelineActivityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2240,304 +2200,381 @@ class RunPipelineActivityRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
-## RunPipelineActivityResponseTypeDef
+## UpdatePipelineRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdatePipelineRequestRequestTypeDef
 
-def get_value() -> RunPipelineActivityResponseTypeDef:
-    return {
-        "payloads": ...,
-        "logResult": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RunPipelineActivityResponseTypeDef(TypedDict):
-    payloads: List[bytes],
-    logResult: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## S3DestinationConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import S3DestinationConfigurationTypeDef
-
-def get_value() -> S3DestinationConfigurationTypeDef:
-    return {
-        "bucket": ...,
-        "key": ...,
-        "roleArn": ...,
-    }
-```
-
-```python title="Definition"
-class S3DestinationConfigurationTypeDef(TypedDict):
-    bucket: str,
-    key: str,
-    roleArn: str,
-    glueConfiguration: NotRequired[GlueConfigurationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: GlueConfigurationTypeDef](./type_defs.md#glueconfigurationtypedef) 
-## SampleChannelDataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import SampleChannelDataRequestRequestTypeDef
-
-def get_value() -> SampleChannelDataRequestRequestTypeDef:
-    return {
-        "channelName": ...,
-    }
-```
-
-```python title="Definition"
-class SampleChannelDataRequestRequestTypeDef(TypedDict):
-    channelName: str,
-    maxMessages: NotRequired[int],
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-```
-
-## SampleChannelDataResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseTypeDef
-
-def get_value() -> SampleChannelDataResponseTypeDef:
-    return {
-        "payloads": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SampleChannelDataResponseTypeDef(TypedDict):
-    payloads: List[bytes],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ScheduleTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import ScheduleTypeDef
-
-def get_value() -> ScheduleTypeDef:
-    return {
-        "expression": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduleTypeDef(TypedDict):
-    expression: NotRequired[str],
-```
-
-## SchemaDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import SchemaDefinitionTypeDef
-
-def get_value() -> SchemaDefinitionTypeDef:
-    return {
-        "columns": ...,
-    }
-```
-
-```python title="Definition"
-class SchemaDefinitionTypeDef(TypedDict):
-    columns: NotRequired[Sequence[ColumnTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ColumnTypeDef](./type_defs.md#columntypedef) 
-## SelectAttributesActivityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import SelectAttributesActivityTypeDef
-
-def get_value() -> SelectAttributesActivityTypeDef:
-    return {
-        "name": ...,
-        "attributes": ...,
-    }
-```
-
-```python title="Definition"
-class SelectAttributesActivityTypeDef(TypedDict):
-    name: str,
-    attributes: Sequence[str],
-    next: NotRequired[str],
-```
-
-## SqlQueryDatasetActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import SqlQueryDatasetActionTypeDef
-
-def get_value() -> SqlQueryDatasetActionTypeDef:
-    return {
-        "sqlQuery": ...,
-    }
-```
-
-```python title="Definition"
-class SqlQueryDatasetActionTypeDef(TypedDict):
-    sqlQuery: str,
-    filters: NotRequired[Sequence[QueryFilterTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
-## StartPipelineReprocessingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingRequestRequestTypeDef
-
-def get_value() -> StartPipelineReprocessingRequestRequestTypeDef:
+def get_value() -> UpdatePipelineRequestRequestTypeDef:
     return {
         "pipelineName": ...,
+        "pipelineActivities": ...,
     }
 ```
 
 ```python title="Definition"
-class StartPipelineReprocessingRequestRequestTypeDef(TypedDict):
+class UpdatePipelineRequestRequestTypeDef(TypedDict):
     pipelineName: str,
-    startTime: NotRequired[Union[datetime, str]],
-    endTime: NotRequired[Union[datetime, str]],
-    channelMessages: NotRequired[ChannelMessagesTypeDef],  # (1)
+    pipelineActivities: Sequence[PipelineActivityTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef) 
-## StartPipelineReprocessingResponseTypeDef
+1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
+## ListPipelinesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListPipelinesResponseTypeDef
 
-def get_value() -> StartPipelineReprocessingResponseTypeDef:
+def get_value() -> ListPipelinesResponseTypeDef:
     return {
-        "reprocessingId": ...,
+        "pipelineSummaries": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class StartPipelineReprocessingResponseTypeDef(TypedDict):
-    reprocessingId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ListPipelinesResponseTypeDef(TypedDict):
+    pipelineSummaries: List[PipelineSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
+1. See [:material-code-braces: PipelineSummaryTypeDef](./type_defs.md#pipelinesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import TagResourceRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
 
-def get_value() -> TagResourceRequestRequestTypeDef:
+def get_value() -> ListChannelsResponseTypeDef:
     return {
-        "resourceArn": ...,
-        "tags": ...,
+        "channelSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Sequence[TagTypeDef],  # (1)
+class ListChannelsResponseTypeDef(TypedDict):
+    channelSummaries: List[ChannelSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChannelResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import TagTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeChannelResponseTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> DescribeChannelResponseTypeDef:
     return {
-        "key": ...,
-        "value": ...,
+        "channel": ...,
+        "statistics": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TagTypeDef(TypedDict):
-    key: str,
-    value: str,
+class DescribeChannelResponseTypeDef(TypedDict):
+    channel: ChannelTypeDef,  # (1)
+    statistics: ChannelStatisticsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-## TimestampPartitionTypeDef
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ChannelStatisticsTypeDef](./type_defs.md#channelstatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FileFormatConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import TimestampPartitionTypeDef
+from mypy_boto3_iotanalytics.type_defs import FileFormatConfigurationTypeDef
 
-def get_value() -> TimestampPartitionTypeDef:
+def get_value() -> FileFormatConfigurationTypeDef:
     return {
-        "attributeName": ...,
+        "jsonConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class TimestampPartitionTypeDef(TypedDict):
-    attributeName: str,
-    timestampFormat: NotRequired[str],
+class FileFormatConfigurationTypeDef(TypedDict):
+    jsonConfiguration: NotRequired[Mapping[str, Any]],
+    parquetConfiguration: NotRequired[ParquetConfigurationTypeDef],  # (1)
 ```
 
-## TriggeringDatasetTypeDef
+1. See [:material-code-braces: ParquetConfigurationTypeDef](./type_defs.md#parquetconfigurationtypedef) 
+## ListDatasetsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import TriggeringDatasetTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatasetsResponseTypeDef
 
-def get_value() -> TriggeringDatasetTypeDef:
+def get_value() -> ListDatasetsResponseTypeDef:
+    return {
+        "datasetSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsResponseTypeDef(TypedDict):
+    datasetSummaries: List[DatasetSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DatastoreSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastoreSummaryTypeDef
+
+def get_value() -> DatastoreSummaryTypeDef:
+    return {
+        "datastoreName": ...,
+    }
+```
+
+```python title="Definition"
+class DatastoreSummaryTypeDef(TypedDict):
+    datastoreName: NotRequired[str],
+    datastoreStorage: NotRequired[DatastoreStorageSummaryTypeDef],  # (1)
+    status: NotRequired[DatastoreStatusType],  # (2)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    lastMessageArrivalTime: NotRequired[datetime],
+    fileFormatType: NotRequired[FileFormatTypeType],  # (3)
+    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DatastoreStorageSummaryTypeDef](./type_defs.md#datastorestoragesummarytypedef) 
+2. See [:material-code-brackets: DatastoreStatusType](./literals.md#datastorestatustype) 
+3. See [:material-code-brackets: FileFormatTypeType](./literals.md#fileformattypetype) 
+4. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
+## DatasetContentDeliveryRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryRuleTypeDef
+
+def get_value() -> DatasetContentDeliveryRuleTypeDef:
+    return {
+        "destination": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetContentDeliveryRuleTypeDef(TypedDict):
+    destination: DatasetContentDeliveryDestinationTypeDef,  # (1)
+    entryName: NotRequired[str],
+```
+
+1. See [:material-code-braces: DatasetContentDeliveryDestinationTypeDef](./type_defs.md#datasetcontentdeliverydestinationtypedef) 
+## DatasetActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetActionTypeDef
+
+def get_value() -> DatasetActionTypeDef:
+    return {
+        "actionName": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetActionTypeDef(TypedDict):
+    actionName: NotRequired[str],
+    queryAction: NotRequired[SqlQueryDatasetActionTypeDef],  # (1)
+    containerAction: NotRequired[ContainerDatasetActionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SqlQueryDatasetActionTypeDef](./type_defs.md#sqlquerydatasetactiontypedef) 
+2. See [:material-code-braces: ContainerDatasetActionTypeDef](./type_defs.md#containerdatasetactiontypedef) 
+## DescribePipelineResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DescribePipelineResponseTypeDef
+
+def get_value() -> DescribePipelineResponseTypeDef:
+    return {
+        "pipeline": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePipelineResponseTypeDef(TypedDict):
+    pipeline: PipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatastoreRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatastoreRequestRequestTypeDef
+
+def get_value() -> CreateDatastoreRequestRequestTypeDef:
+    return {
+        "datastoreName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatastoreRequestRequestTypeDef(TypedDict):
+    datastoreName: str,
+    datastoreStorage: NotRequired[DatastoreStorageTypeDef],  # (1)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (4)
+    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
+5. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
+## DatastoreTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatastoreTypeDef
+
+def get_value() -> DatastoreTypeDef:
     return {
         "name": ...,
     }
 ```
 
 ```python title="Definition"
-class TriggeringDatasetTypeDef(TypedDict):
-    name: str,
+class DatastoreTypeDef(TypedDict):
+    name: NotRequired[str],
+    storage: NotRequired[DatastoreStorageTypeDef],  # (1)
+    arn: NotRequired[str],
+    status: NotRequired[DatastoreStatusType],  # (2)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (3)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    lastMessageArrivalTime: NotRequired[datetime],
+    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (4)
+    datastorePartitions: NotRequired[DatastorePartitionsTypeDef],  # (5)
 ```
 
-## UntagResourceRequestRequestTypeDef
+1. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
+2. See [:material-code-brackets: DatastoreStatusType](./literals.md#datastorestatustype) 
+3. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+4. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
+5. See [:material-code-braces: DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef) 
+## UpdateDatastoreRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import UntagResourceRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdateDatastoreRequestRequestTypeDef
 
-def get_value() -> UntagResourceRequestRequestTypeDef:
+def get_value() -> UpdateDatastoreRequestRequestTypeDef:
     return {
-        "resourceArn": ...,
-        "tagKeys": ...,
+        "datastoreName": ...,
     }
 ```
 
 ```python title="Definition"
-class UntagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tagKeys: Sequence[str],
+class UpdateDatastoreRequestRequestTypeDef(TypedDict):
+    datastoreName: str,
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (1)
+    datastoreStorage: NotRequired[DatastoreStorageTypeDef],  # (2)
+    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (3)
 ```
 
-## UpdateChannelRequestRequestTypeDef
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
+3. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
+## ListDatastoresResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import UpdateChannelRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatastoresResponseTypeDef
 
-def get_value() -> UpdateChannelRequestRequestTypeDef:
+def get_value() -> ListDatastoresResponseTypeDef:
     return {
-        "channelName": ...,
+        "datastoreSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateChannelRequestRequestTypeDef(TypedDict):
-    channelName: str,
-    channelStorage: NotRequired[ChannelStorageTypeDef],  # (1)
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (2)
+class ListDatastoresResponseTypeDef(TypedDict):
+    datastoreSummaries: List[DatastoreSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
-2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+1. See [:material-code-braces: DatastoreSummaryTypeDef](./type_defs.md#datastoresummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatasetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "datasetName": ...,
+        "actions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    datasetName: str,
+    actions: Sequence[DatasetActionTypeDef],  # (1)
+    triggers: NotRequired[Sequence[DatasetTriggerTypeDef]],  # (2)
+    contentDeliveryRules: NotRequired[Sequence[DatasetContentDeliveryRuleTypeDef]],  # (3)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (4)
+    versioningConfiguration: NotRequired[VersioningConfigurationTypeDef],  # (5)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+    lateDataRules: NotRequired[Sequence[LateDataRuleTypeDef]],  # (7)
+```
+
+1. See [:material-code-braces: DatasetActionTypeDef](./type_defs.md#datasetactiontypedef) 
+2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
+3. See [:material-code-braces: DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef) 
+4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+5. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
+## DatasetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotanalytics.type_defs import DatasetTypeDef
+
+def get_value() -> DatasetTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    actions: NotRequired[List[DatasetActionTypeDef]],  # (1)
+    triggers: NotRequired[List[DatasetTriggerTypeDef]],  # (2)
+    contentDeliveryRules: NotRequired[List[DatasetContentDeliveryRuleTypeDef]],  # (3)
+    status: NotRequired[DatasetStatusType],  # (4)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (5)
+    versioningConfiguration: NotRequired[VersioningConfigurationTypeDef],  # (6)
+    lateDataRules: NotRequired[List[LateDataRuleTypeDef]],  # (7)
+```
+
+1. See [:material-code-braces: DatasetActionTypeDef](./type_defs.md#datasetactiontypedef) 
+2. See [:material-code-braces: DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef) 
+3. See [:material-code-braces: DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef) 
+4. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+5. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+6. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+7. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
 ## UpdateDatasetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2567,83 +2604,46 @@ class UpdateDatasetRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 5. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
 6. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
-## UpdateDatastoreRequestRequestTypeDef
+## DescribeDatastoreResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import UpdateDatastoreRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreResponseTypeDef
 
-def get_value() -> UpdateDatastoreRequestRequestTypeDef:
+def get_value() -> DescribeDatastoreResponseTypeDef:
     return {
-        "datastoreName": ...,
+        "datastore": ...,
+        "statistics": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateDatastoreRequestRequestTypeDef(TypedDict):
-    datastoreName: str,
-    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (1)
-    datastoreStorage: NotRequired[DatastoreStorageTypeDef],  # (2)
-    fileFormatConfiguration: NotRequired[FileFormatConfigurationTypeDef],  # (3)
+class DescribeDatastoreResponseTypeDef(TypedDict):
+    datastore: DatastoreTypeDef,  # (1)
+    statistics: DatastoreStatisticsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
-3. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
-## UpdatePipelineRequestRequestTypeDef
+1. See [:material-code-braces: DatastoreTypeDef](./type_defs.md#datastoretypedef) 
+2. See [:material-code-braces: DatastoreStatisticsTypeDef](./type_defs.md#datastorestatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDatasetResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import UpdatePipelineRequestRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatasetResponseTypeDef
 
-def get_value() -> UpdatePipelineRequestRequestTypeDef:
+def get_value() -> DescribeDatasetResponseTypeDef:
     return {
-        "pipelineName": ...,
-        "pipelineActivities": ...,
+        "dataset": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdatePipelineRequestRequestTypeDef(TypedDict):
-    pipelineName: str,
-    pipelineActivities: Sequence[PipelineActivityTypeDef],  # (1)
+class DescribeDatasetResponseTypeDef(TypedDict):
+    dataset: DatasetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
-## VariableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import VariableTypeDef
-
-def get_value() -> VariableTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class VariableTypeDef(TypedDict):
-    name: str,
-    stringValue: NotRequired[str],
-    doubleValue: NotRequired[float],
-    datasetContentVersionValue: NotRequired[DatasetContentVersionValueTypeDef],  # (1)
-    outputFileUriValue: NotRequired[OutputFileUriValueTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DatasetContentVersionValueTypeDef](./type_defs.md#datasetcontentversionvaluetypedef) 
-2. See [:material-code-braces: OutputFileUriValueTypeDef](./type_defs.md#outputfileurivaluetypedef) 
-## VersioningConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotanalytics.type_defs import VersioningConfigurationTypeDef
-
-def get_value() -> VersioningConfigurationTypeDef:
-    return {
-        "unlimited": ...,
-    }
-```
-
-```python title="Definition"
-class VersioningConfigurationTypeDef(TypedDict):
-    unlimited: NotRequired[bool],
-    maxVersions: NotRequired[int],
-```
-
+1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

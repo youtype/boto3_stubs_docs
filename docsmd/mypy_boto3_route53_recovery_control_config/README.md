@@ -122,78 +122,74 @@ def get_value() -> ClusterCreatedWaiterName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_route53_recovery_control_config.type_defs import AssertionRuleTypeDef
+from mypy_boto3_route53_recovery_control_config.type_defs import RuleConfigTypeDef
 
-def get_value() -> AssertionRuleTypeDef:
+def get_value() -> RuleConfigTypeDef:
     return {
-        "AssertedControls": ...,
-        "ControlPanelArn": ...,
-        "Name": ...,
-        "RuleConfig": ...,
-        "SafetyRuleArn": ...,
-        "Status": ...,
-        "WaitPeriodMs": ...,
+        "Inverted": ...,
+        "Threshold": ...,
+        "Type": ...,
     }
 ```
 
-- [AssertionRuleTypeDef](./type_defs.md#assertionruletypedef)
+- [RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef)
 - [AssertionRuleUpdateTypeDef](./type_defs.md#assertionruleupdatetypedef)
 - [ClusterEndpointTypeDef](./type_defs.md#clusterendpointtypedef)
-- [ClusterTypeDef](./type_defs.md#clustertypedef)
 - [ControlPanelTypeDef](./type_defs.md#controlpaneltypedef)
 - [CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef)
-- [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [CreateControlPanelRequestRequestTypeDef](./type_defs.md#createcontrolpanelrequestrequesttypedef)
-- [CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef)
 - [CreateRoutingControlRequestRequestTypeDef](./type_defs.md#createroutingcontrolrequestrequesttypedef)
-- [CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef)
-- [CreateSafetyRuleRequestRequestTypeDef](./type_defs.md#createsafetyrulerequestrequesttypedef)
-- [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef)
+- [RoutingControlTypeDef](./type_defs.md#routingcontroltypedef)
 - [DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef)
 - [DeleteControlPanelRequestRequestTypeDef](./type_defs.md#deletecontrolpanelrequestrequesttypedef)
 - [DeleteRoutingControlRequestRequestTypeDef](./type_defs.md#deleteroutingcontrolrequestrequesttypedef)
 - [DeleteSafetyRuleRequestRequestTypeDef](./type_defs.md#deletesafetyrulerequestrequesttypedef)
-- [DescribeClusterRequestClusterCreatedWaitTypeDef](./type_defs.md#describeclusterrequestclustercreatedwaittypedef)
-- [DescribeClusterRequestClusterDeletedWaitTypeDef](./type_defs.md#describeclusterrequestclusterdeletedwaittypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef)
-- [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef)
-- [DescribeControlPanelRequestControlPanelCreatedWaitTypeDef](./type_defs.md#describecontrolpanelrequestcontrolpanelcreatedwaittypedef)
-- [DescribeControlPanelRequestControlPanelDeletedWaitTypeDef](./type_defs.md#describecontrolpanelrequestcontrolpaneldeletedwaittypedef)
 - [DescribeControlPanelRequestRequestTypeDef](./type_defs.md#describecontrolpanelrequestrequesttypedef)
-- [DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef)
 - [DescribeRoutingControlRequestRequestTypeDef](./type_defs.md#describeroutingcontrolrequestrequesttypedef)
-- [DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontrolcreatedwaittypedef)
-- [DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontroldeletedwaittypedef)
-- [DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef)
 - [DescribeSafetyRuleRequestRequestTypeDef](./type_defs.md#describesafetyrulerequestrequesttypedef)
-- [DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef)
-- [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
 - [GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef)
 - [ListAssociatedRoute53HealthChecksRequestRequestTypeDef](./type_defs.md#listassociatedroute53healthchecksrequestrequesttypedef)
-- [ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef)
 - [ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef)
-- [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)
 - [ListControlPanelsRequestRequestTypeDef](./type_defs.md#listcontrolpanelsrequestrequesttypedef)
-- [ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef)
 - [ListRoutingControlsRequestRequestTypeDef](./type_defs.md#listroutingcontrolsrequestrequesttypedef)
-- [ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef)
 - [ListSafetyRulesRequestRequestTypeDef](./type_defs.md#listsafetyrulesrequestrequesttypedef)
-- [ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef)
-- [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [RoutingControlTypeDef](./type_defs.md#routingcontroltypedef)
-- [RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef)
-- [RuleTypeDef](./type_defs.md#ruletypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateControlPanelRequestRequestTypeDef](./type_defs.md#updatecontrolpanelrequestrequesttypedef)
-- [UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef)
 - [UpdateRoutingControlRequestRequestTypeDef](./type_defs.md#updateroutingcontrolrequestrequesttypedef)
+- [AssertionRuleTypeDef](./type_defs.md#assertionruletypedef)
+- [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
+- [NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef)
+- [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
+- [ClusterTypeDef](./type_defs.md#clustertypedef)
+- [CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef)
+- [DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef)
+- [ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef)
+- [ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef)
+- [CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef)
+- [DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef)
+- [ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef)
 - [UpdateRoutingControlResponseTypeDef](./type_defs.md#updateroutingcontrolresponsetypedef)
+- [DescribeClusterRequestClusterCreatedWaitTypeDef](./type_defs.md#describeclusterrequestclustercreatedwaittypedef)
+- [DescribeClusterRequestClusterDeletedWaitTypeDef](./type_defs.md#describeclusterrequestclusterdeletedwaittypedef)
+- [DescribeControlPanelRequestControlPanelCreatedWaitTypeDef](./type_defs.md#describecontrolpanelrequestcontrolpanelcreatedwaittypedef)
+- [DescribeControlPanelRequestControlPanelDeletedWaitTypeDef](./type_defs.md#describecontrolpanelrequestcontrolpaneldeletedwaittypedef)
+- [DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontrolcreatedwaittypedef)
+- [DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontroldeletedwaittypedef)
 - [UpdateSafetyRuleRequestRequestTypeDef](./type_defs.md#updatesafetyrulerequestrequesttypedef)
+- [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef)
+- [DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef)
+- [RuleTypeDef](./type_defs.md#ruletypedef)
 - [UpdateSafetyRuleResponseTypeDef](./type_defs.md#updatesafetyruleresponsetypedef)
-- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+- [CreateSafetyRuleRequestRequestTypeDef](./type_defs.md#createsafetyrulerequestrequesttypedef)
+- [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef)
+- [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef)
+- [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)
+- [ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef)
 

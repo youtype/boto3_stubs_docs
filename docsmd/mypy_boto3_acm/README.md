@@ -143,52 +143,51 @@ def get_value() -> CertificateStatusType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef
+from mypy_boto3_acm.type_defs import TagTypeDef
 
-def get_value() -> AddTagsToCertificateRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "CertificateArn": ...,
-        "Tags": ...,
+        "Key": ...,
     }
 ```
 
-- [AddTagsToCertificateRequestRequestTypeDef](./type_defs.md#addtagstocertificaterequestrequesttypedef)
-- [CertificateDetailTypeDef](./type_defs.md#certificatedetailtypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
 - [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
+- [ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)
+- [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - [CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef)
 - [DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef)
-- [DescribeCertificateRequestCertificateValidatedWaitTypeDef](./type_defs.md#describecertificaterequestcertificatevalidatedwaittypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef)
-- [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)
-- [DomainValidationTypeDef](./type_defs.md#domainvalidationtypedef)
+- [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
 - [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 - [ExportCertificateRequestRequestTypeDef](./type_defs.md#exportcertificaterequestrequesttypedef)
-- [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef)
-- [ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)
 - [FiltersTypeDef](./type_defs.md#filterstypedef)
-- [GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef)
 - [GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef)
-- [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef)
-- [ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef)
-- [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef)
-- [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
-- [ListCertificatesRequestListCertificatesPaginateTypeDef](./type_defs.md#listcertificatesrequestlistcertificatespaginatetypedef)
-- [ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef)
-- [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)
-- [ListTagsForCertificateRequestRequestTypeDef](./type_defs.md#listtagsforcertificaterequestrequesttypedef)
-- [ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutAccountConfigurationRequestRequestTypeDef](./type_defs.md#putaccountconfigurationrequestrequesttypedef)
-- [RemoveTagsFromCertificateRequestRequestTypeDef](./type_defs.md#removetagsfromcertificaterequestrequesttypedef)
+- [ListTagsForCertificateRequestRequestTypeDef](./type_defs.md#listtagsforcertificaterequestrequesttypedef)
 - [RenewCertificateRequestRequestTypeDef](./type_defs.md#renewcertificaterequestrequesttypedef)
-- [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
-- [RequestCertificateRequestRequestTypeDef](./type_defs.md#requestcertificaterequestrequesttypedef)
-- [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef)
 - [ResendValidationEmailRequestRequestTypeDef](./type_defs.md#resendvalidationemailrequestrequesttypedef)
-- [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagTypeDef](./type_defs.md#tagtypedef)
+- [AddTagsToCertificateRequestRequestTypeDef](./type_defs.md#addtagstocertificaterequestrequesttypedef)
+- [ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef)
+- [RemoveTagsFromCertificateRequestRequestTypeDef](./type_defs.md#removetagsfromcertificaterequestrequesttypedef)
 - [UpdateCertificateOptionsRequestRequestTypeDef](./type_defs.md#updatecertificateoptionsrequestrequesttypedef)
-- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+- [DescribeCertificateRequestCertificateValidatedWaitTypeDef](./type_defs.md#describecertificaterequestcertificatevalidatedwaittypedef)
+- [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef)
+- [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef)
+- [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef)
+- [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)
+- [ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef)
+- [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef)
+- [RequestCertificateRequestRequestTypeDef](./type_defs.md#requestcertificaterequestrequesttypedef)
+- [DomainValidationTypeDef](./type_defs.md#domainvalidationtypedef)
+- [GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef)
+- [PutAccountConfigurationRequestRequestTypeDef](./type_defs.md#putaccountconfigurationrequestrequesttypedef)
+- [ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef)
+- [ListCertificatesRequestListCertificatesPaginateTypeDef](./type_defs.md#listcertificatesrequestlistcertificatespaginatetypedef)
+- [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
+- [CertificateDetailTypeDef](./type_defs.md#certificatedetailtypedef)
+- [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef)
 

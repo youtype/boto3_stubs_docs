@@ -102,8 +102,8 @@ def get_value() -> InvokeEndpointAsyncInputRequestTypeDef:
 ```
 
 - [InvokeEndpointAsyncInputRequestTypeDef](./type_defs.md#invokeendpointasyncinputrequesttypedef)
-- [InvokeEndpointAsyncOutputTypeDef](./type_defs.md#invokeendpointasyncoutputtypedef)
-- [InvokeEndpointInputRequestTypeDef](./type_defs.md#invokeendpointinputrequesttypedef)
-- [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [InvokeEndpointInputRequestTypeDef](./type_defs.md#invokeendpointinputrequesttypedef)
+- [InvokeEndpointAsyncOutputTypeDef](./type_defs.md#invokeendpointasyncoutputtypedef)
+- [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef)
 

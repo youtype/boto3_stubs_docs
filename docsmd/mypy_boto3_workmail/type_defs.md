@@ -150,25 +150,30 @@ class CreateGroupRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## CreateGroupResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateGroupResponseTypeDef
+from mypy_boto3_workmail.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> CreateGroupResponseTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "GroupId": ...,
-        "ResponseMetadata": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGroupResponseTypeDef(TypedDict):
-    GroupId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMobileDeviceAccessRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -200,66 +205,23 @@ class CreateMobileDeviceAccessRuleRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
-## CreateMobileDeviceAccessRuleResponseTypeDef
+## DomainTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateMobileDeviceAccessRuleResponseTypeDef
+from mypy_boto3_workmail.type_defs import DomainTypeDef
 
-def get_value() -> CreateMobileDeviceAccessRuleResponseTypeDef:
+def get_value() -> DomainTypeDef:
     return {
-        "MobileDeviceAccessRuleId": ...,
-        "ResponseMetadata": ...,
+        "DomainName": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateMobileDeviceAccessRuleResponseTypeDef(TypedDict):
-    MobileDeviceAccessRuleId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+class DomainTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    HostedZoneId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateOrganizationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateOrganizationRequestRequestTypeDef
-
-def get_value() -> CreateOrganizationRequestRequestTypeDef:
-    return {
-        "Alias": ...,
-    }
-```
-
-```python title="Definition"
-class CreateOrganizationRequestRequestTypeDef(TypedDict):
-    Alias: str,
-    DirectoryId: NotRequired[str],
-    ClientToken: NotRequired[str],
-    Domains: NotRequired[Sequence[DomainTypeDef]],  # (1)
-    KmsKeyArn: NotRequired[str],
-    EnableInteroperability: NotRequired[bool],
-```
-
-1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
-## CreateOrganizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateOrganizationResponseTypeDef
-
-def get_value() -> CreateOrganizationResponseTypeDef:
-    return {
-        "OrganizationId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateOrganizationResponseTypeDef(TypedDict):
-    OrganizationId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -281,25 +243,6 @@ class CreateResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-## CreateResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateResourceResponseTypeDef
-
-def get_value() -> CreateResourceResponseTypeDef:
-    return {
-        "ResourceId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateResourceResponseTypeDef(TypedDict):
-    ResourceId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -322,25 +265,6 @@ class CreateUserRequestRequestTypeDef(TypedDict):
     Password: str,
 ```
 
-## CreateUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateUserResponseTypeDef
-
-def get_value() -> CreateUserResponseTypeDef:
-    return {
-        "UserId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUserResponseTypeDef(TypedDict):
-    UserId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DelegateTypeDef
 
 ```python title="Usage Example"
@@ -509,27 +433,6 @@ class DeleteOrganizationRequestRequestTypeDef(TypedDict):
     ClientToken: NotRequired[str],
 ```
 
-## DeleteOrganizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DeleteOrganizationResponseTypeDef
-
-def get_value() -> DeleteOrganizationResponseTypeDef:
-    return {
-        "OrganizationId": ...,
-        "State": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteOrganizationResponseTypeDef(TypedDict):
-    OrganizationId: str,
-    State: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -636,27 +539,6 @@ class DescribeEmailMonitoringConfigurationRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## DescribeEmailMonitoringConfigurationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeEmailMonitoringConfigurationResponseTypeDef
-
-def get_value() -> DescribeEmailMonitoringConfigurationResponseTypeDef:
-    return {
-        "RoleArn": ...,
-        "LogGroupArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEmailMonitoringConfigurationResponseTypeDef(TypedDict):
-    RoleArn: str,
-    LogGroupArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -675,36 +557,6 @@ class DescribeGroupRequestRequestTypeDef(TypedDict):
     GroupId: str,
 ```
 
-## DescribeGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeGroupResponseTypeDef
-
-def get_value() -> DescribeGroupResponseTypeDef:
-    return {
-        "GroupId": ...,
-        "Name": ...,
-        "Email": ...,
-        "State": ...,
-        "EnabledDate": ...,
-        "DisabledDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeGroupResponseTypeDef(TypedDict):
-    GroupId: str,
-    Name: str,
-    Email: str,
-    State: EntityStateType,  # (1)
-    EnabledDate: datetime,
-    DisabledDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInboundDmarcSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -721,25 +573,6 @@ class DescribeInboundDmarcSettingsRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## DescribeInboundDmarcSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsResponseTypeDef
-
-def get_value() -> DescribeInboundDmarcSettingsResponseTypeDef:
-    return {
-        "Enforced": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeInboundDmarcSettingsResponseTypeDef(TypedDict):
-    Enforced: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMailboxExportJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -758,48 +591,6 @@ class DescribeMailboxExportJobRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## DescribeMailboxExportJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeMailboxExportJobResponseTypeDef
-
-def get_value() -> DescribeMailboxExportJobResponseTypeDef:
-    return {
-        "EntityId": ...,
-        "Description": ...,
-        "RoleArn": ...,
-        "KmsKeyArn": ...,
-        "S3BucketName": ...,
-        "S3Prefix": ...,
-        "S3Path": ...,
-        "EstimatedProgress": ...,
-        "State": ...,
-        "ErrorInfo": ...,
-        "StartTime": ...,
-        "EndTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMailboxExportJobResponseTypeDef(TypedDict):
-    EntityId: str,
-    Description: str,
-    RoleArn: str,
-    KmsKeyArn: str,
-    S3BucketName: str,
-    S3Prefix: str,
-    S3Path: str,
-    EstimatedProgress: int,
-    State: MailboxExportJobStateType,  # (1)
-    ErrorInfo: str,
-    StartTime: datetime,
-    EndTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: MailboxExportJobStateType](./literals.md#mailboxexportjobstatetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -816,41 +607,6 @@ class DescribeOrganizationRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## DescribeOrganizationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeOrganizationResponseTypeDef
-
-def get_value() -> DescribeOrganizationResponseTypeDef:
-    return {
-        "OrganizationId": ...,
-        "Alias": ...,
-        "State": ...,
-        "DirectoryId": ...,
-        "DirectoryType": ...,
-        "DefaultMailDomain": ...,
-        "CompletedDate": ...,
-        "ErrorMessage": ...,
-        "ARN": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeOrganizationResponseTypeDef(TypedDict):
-    OrganizationId: str,
-    Alias: str,
-    State: str,
-    DirectoryId: str,
-    DirectoryType: str,
-    DefaultMailDomain: str,
-    CompletedDate: datetime,
-    ErrorMessage: str,
-    ARN: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -869,42 +625,6 @@ class DescribeResourceRequestRequestTypeDef(TypedDict):
     ResourceId: str,
 ```
 
-## DescribeResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeResourceResponseTypeDef
-
-def get_value() -> DescribeResourceResponseTypeDef:
-    return {
-        "ResourceId": ...,
-        "Email": ...,
-        "Name": ...,
-        "Type": ...,
-        "BookingOptions": ...,
-        "State": ...,
-        "EnabledDate": ...,
-        "DisabledDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeResourceResponseTypeDef(TypedDict):
-    ResourceId: str,
-    Email: str,
-    Name: str,
-    Type: ResourceTypeType,  # (1)
-    BookingOptions: BookingOptionsTypeDef,  # (2)
-    State: EntityStateType,  # (3)
-    EnabledDate: datetime,
-    DisabledDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
-3. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -923,41 +643,6 @@ class DescribeUserRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## DescribeUserResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeUserResponseTypeDef
-
-def get_value() -> DescribeUserResponseTypeDef:
-    return {
-        "UserId": ...,
-        "Name": ...,
-        "Email": ...,
-        "DisplayName": ...,
-        "State": ...,
-        "UserRole": ...,
-        "EnabledDate": ...,
-        "DisabledDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeUserResponseTypeDef(TypedDict):
-    UserId: str,
-    Name: str,
-    Email: str,
-    DisplayName: str,
-    State: EntityStateType,  # (1)
-    UserRole: UserRoleType,  # (2)
-    EnabledDate: datetime,
-    DisabledDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateDelegateFromResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1016,23 +701,6 @@ class DnsRecordTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
-## DomainTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DomainTypeDef
-
-def get_value() -> DomainTypeDef:
-    return {
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class DomainTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    HostedZoneId: NotRequired[str],
-```
-
 ## FolderConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1076,28 +744,6 @@ class GetAccessControlEffectRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## GetAccessControlEffectResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseTypeDef
-
-def get_value() -> GetAccessControlEffectResponseTypeDef:
-    return {
-        "Effect": ...,
-        "MatchedRules": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAccessControlEffectResponseTypeDef(TypedDict):
-    Effect: AccessControlRuleEffectType,  # (1)
-    MatchedRules: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDefaultRetentionPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1114,32 +760,6 @@ class GetDefaultRetentionPolicyRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## GetDefaultRetentionPolicyResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyResponseTypeDef
-
-def get_value() -> GetDefaultRetentionPolicyResponseTypeDef:
-    return {
-        "Id": ...,
-        "Name": ...,
-        "Description": ...,
-        "FolderConfigurations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDefaultRetentionPolicyResponseTypeDef(TypedDict):
-    Id: str,
-    Name: str,
-    Description: str,
-    FolderConfigurations: List[FolderConfigurationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMailDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1158,36 +778,6 @@ class GetMailDomainRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
-## GetMailDomainResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetMailDomainResponseTypeDef
-
-def get_value() -> GetMailDomainResponseTypeDef:
-    return {
-        "Records": ...,
-        "IsTestDomain": ...,
-        "IsDefault": ...,
-        "OwnershipVerificationStatus": ...,
-        "DkimVerificationStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMailDomainResponseTypeDef(TypedDict):
-    Records: List[DnsRecordTypeDef],  # (1)
-    IsTestDomain: bool,
-    IsDefault: bool,
-    OwnershipVerificationStatus: DnsRecordVerificationStatusType,  # (2)
-    DkimVerificationStatus: DnsRecordVerificationStatusType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef) 
-2. See [:material-code-brackets: DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype) 
-3. See [:material-code-brackets: DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMailboxDetailsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1206,27 +796,6 @@ class GetMailboxDetailsRequestRequestTypeDef(TypedDict):
     UserId: str,
 ```
 
-## GetMailboxDetailsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetMailboxDetailsResponseTypeDef
-
-def get_value() -> GetMailboxDetailsResponseTypeDef:
-    return {
-        "MailboxQuota": ...,
-        "MailboxSize": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMailboxDetailsResponseTypeDef(TypedDict):
-    MailboxQuota: int,
-    MailboxSize: float,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMobileDeviceAccessEffectRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1247,29 +816,23 @@ class GetMobileDeviceAccessEffectRequestRequestTypeDef(TypedDict):
     DeviceUserAgent: NotRequired[str],
 ```
 
-## GetMobileDeviceAccessEffectResponseTypeDef
+## MobileDeviceAccessMatchedRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseTypeDef
+from mypy_boto3_workmail.type_defs import MobileDeviceAccessMatchedRuleTypeDef
 
-def get_value() -> GetMobileDeviceAccessEffectResponseTypeDef:
+def get_value() -> MobileDeviceAccessMatchedRuleTypeDef:
     return {
-        "Effect": ...,
-        "MatchedRules": ...,
-        "ResponseMetadata": ...,
+        "MobileDeviceAccessRuleId": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMobileDeviceAccessEffectResponseTypeDef(TypedDict):
-    Effect: MobileDeviceAccessRuleEffectType,  # (1)
-    MatchedRules: List[MobileDeviceAccessMatchedRuleTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class MobileDeviceAccessMatchedRuleTypeDef(TypedDict):
+    MobileDeviceAccessRuleId: NotRequired[str],
+    Name: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
-2. See [:material-code-braces: MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMobileDeviceAccessOverrideRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1290,36 +853,6 @@ class GetMobileDeviceAccessOverrideRequestRequestTypeDef(TypedDict):
     DeviceId: str,
 ```
 
-## GetMobileDeviceAccessOverrideResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideResponseTypeDef
-
-def get_value() -> GetMobileDeviceAccessOverrideResponseTypeDef:
-    return {
-        "UserId": ...,
-        "DeviceId": ...,
-        "Effect": ...,
-        "Description": ...,
-        "DateCreated": ...,
-        "DateModified": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMobileDeviceAccessOverrideResponseTypeDef(TypedDict):
-    UserId: str,
-    DeviceId: str,
-    Effect: MobileDeviceAccessRuleEffectType,  # (1)
-    Description: str,
-    DateCreated: datetime,
-    DateModified: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupTypeDef
 
 ```python title="Usage Example"
@@ -1358,46 +891,24 @@ class ListAccessControlRulesRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
 ```
 
-## ListAccessControlRulesResponseTypeDef
+## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListAccessControlRulesResponseTypeDef
+from mypy_boto3_workmail.type_defs import PaginatorConfigTypeDef
 
-def get_value() -> ListAccessControlRulesResponseTypeDef:
+def get_value() -> PaginatorConfigTypeDef:
     return {
-        "Rules": ...,
-        "ResponseMetadata": ...,
+        "MaxItems": ...,
     }
 ```
 
 ```python title="Definition"
-class ListAccessControlRulesResponseTypeDef(TypedDict):
-    Rules: List[AccessControlRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListAliasesRequestListAliasesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
-
-def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-        "EntityId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    EntityId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1418,47 +929,6 @@ class ListAliasesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListAliasesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListAliasesResponseTypeDef
-
-def get_value() -> ListAliasesResponseTypeDef:
-    return {
-        "Aliases": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListAliasesResponseTypeDef(TypedDict):
-    Aliases: List[str],
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGroupMembersRequestListGroupMembersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListGroupMembersRequestListGroupMembersPaginateTypeDef
-
-def get_value() -> ListGroupMembersRequestListGroupMembersPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-        "GroupId": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupMembersRequestListGroupMembersPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    GroupId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupMembersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1479,46 +949,29 @@ class ListGroupMembersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListGroupMembersResponseTypeDef
+## MemberTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListGroupMembersResponseTypeDef
+from mypy_boto3_workmail.type_defs import MemberTypeDef
 
-def get_value() -> ListGroupMembersResponseTypeDef:
+def get_value() -> MemberTypeDef:
     return {
-        "Members": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Id": ...,
     }
 ```
 
 ```python title="Definition"
-class ListGroupMembersResponseTypeDef(TypedDict):
-    Members: List[MemberTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MemberTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[MemberTypeType],  # (1)
+    State: NotRequired[EntityStateType],  # (2)
+    EnabledDate: NotRequired[datetime],
+    DisabledDate: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGroupsRequestListGroupsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListGroupsRequestListGroupsPaginateTypeDef
-
-def get_value() -> ListGroupsRequestListGroupsPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupsRequestListGroupsPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
+2. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
 ## ListGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1537,28 +990,6 @@ class ListGroupsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## ListGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListGroupsResponseTypeDef
-
-def get_value() -> ListGroupsResponseTypeDef:
-    return {
-        "Groups": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGroupsResponseTypeDef(TypedDict):
-    Groups: List[GroupTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMailDomainsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1577,28 +1008,23 @@ class ListMailDomainsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListMailDomainsResponseTypeDef
+## MailDomainSummaryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMailDomainsResponseTypeDef
+from mypy_boto3_workmail.type_defs import MailDomainSummaryTypeDef
 
-def get_value() -> ListMailDomainsResponseTypeDef:
+def get_value() -> MailDomainSummaryTypeDef:
     return {
-        "MailDomains": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "DomainName": ...,
     }
 ```
 
 ```python title="Definition"
-class ListMailDomainsResponseTypeDef(TypedDict):
-    MailDomains: List[MailDomainSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class MailDomainSummaryTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    DefaultDomain: NotRequired[bool],
 ```
 
-1. See [:material-code-braces: MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMailboxExportJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1615,455 +1041,6 @@ class ListMailboxExportJobsRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
-```
-
-## ListMailboxExportJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMailboxExportJobsResponseTypeDef
-
-def get_value() -> ListMailboxExportJobsResponseTypeDef:
-    return {
-        "Jobs": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMailboxExportJobsResponseTypeDef(TypedDict):
-    Jobs: List[MailboxExportJobTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MailboxExportJobTypeDef](./type_defs.md#mailboxexportjobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef
-
-def get_value() -> ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-        "EntityId": ...,
-    }
-```
-
-```python title="Definition"
-class ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    EntityId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListMailboxPermissionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMailboxPermissionsRequestRequestTypeDef
-
-def get_value() -> ListMailboxPermissionsRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "EntityId": ...,
-    }
-```
-
-```python title="Definition"
-class ListMailboxPermissionsRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    EntityId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListMailboxPermissionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseTypeDef
-
-def get_value() -> ListMailboxPermissionsResponseTypeDef:
-    return {
-        "Permissions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMailboxPermissionsResponseTypeDef(TypedDict):
-    Permissions: List[PermissionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMobileDeviceAccessOverridesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesRequestRequestTypeDef
-
-def get_value() -> ListMobileDeviceAccessOverridesRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListMobileDeviceAccessOverridesRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    UserId: NotRequired[str],
-    DeviceId: NotRequired[str],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListMobileDeviceAccessOverridesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesResponseTypeDef
-
-def get_value() -> ListMobileDeviceAccessOverridesResponseTypeDef:
-    return {
-        "Overrides": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMobileDeviceAccessOverridesResponseTypeDef(TypedDict):
-    Overrides: List[MobileDeviceAccessOverrideTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MobileDeviceAccessOverrideTypeDef](./type_defs.md#mobiledeviceaccessoverridetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListMobileDeviceAccessRulesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesRequestRequestTypeDef
-
-def get_value() -> ListMobileDeviceAccessRulesRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListMobileDeviceAccessRulesRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-```
-
-## ListMobileDeviceAccessRulesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesResponseTypeDef
-
-def get_value() -> ListMobileDeviceAccessRulesResponseTypeDef:
-    return {
-        "Rules": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMobileDeviceAccessRulesResponseTypeDef(TypedDict):
-    Rules: List[MobileDeviceAccessRuleTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MobileDeviceAccessRuleTypeDef](./type_defs.md#mobiledeviceaccessruletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOrganizationsRequestListOrganizationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListOrganizationsRequestListOrganizationsPaginateTypeDef
-
-def get_value() -> ListOrganizationsRequestListOrganizationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationsRequestListOrganizationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListOrganizationsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListOrganizationsRequestRequestTypeDef
-
-def get_value() -> ListOrganizationsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListOrganizationsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListOrganizationsResponseTypeDef
-
-def get_value() -> ListOrganizationsResponseTypeDef:
-    return {
-        "OrganizationSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationsResponseTypeDef(TypedDict):
-    OrganizationSummaries: List[OrganizationSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OrganizationSummaryTypeDef](./type_defs.md#organizationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef
-
-def get_value() -> ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    ResourceId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResourceDelegatesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourceDelegatesRequestRequestTypeDef
-
-def get_value() -> ListResourceDelegatesRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourceDelegatesRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    ResourceId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListResourceDelegatesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourceDelegatesResponseTypeDef
-
-def get_value() -> ListResourceDelegatesResponseTypeDef:
-    return {
-        "Delegates": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourceDelegatesResponseTypeDef(TypedDict):
-    Delegates: List[DelegateTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DelegateTypeDef](./type_defs.md#delegatetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListResourcesRequestListResourcesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourcesRequestListResourcesPaginateTypeDef
-
-def get_value() -> ListResourcesRequestListResourcesPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourcesRequestListResourcesPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListResourcesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourcesRequestRequestTypeDef
-
-def get_value() -> ListResourcesRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourcesRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListResourcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListResourcesResponseTypeDef
-
-def get_value() -> ListResourcesResponseTypeDef:
-    return {
-        "Resources": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListResourcesResponseTypeDef(TypedDict):
-    Resources: List[ResourceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListTagsForResourceRequestRequestTypeDef
-
-def get_value() -> ListTagsForResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-```
-
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListUsersRequestListUsersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListUsersRequestListUsersPaginateTypeDef
-
-def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
-    OrganizationId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListUsersRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListUsersRequestRequestTypeDef
-
-def get_value() -> ListUsersRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListUsersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ListUsersResponseTypeDef
-
-def get_value() -> ListUsersResponseTypeDef:
-    return {
-        "Users": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListUsersResponseTypeDef(TypedDict):
-    Users: List[UserTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MailDomainSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import MailDomainSummaryTypeDef
-
-def get_value() -> MailDomainSummaryTypeDef:
-    return {
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class MailDomainSummaryTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    DefaultDomain: NotRequired[bool],
 ```
 
 ## MailboxExportJobTypeDef
@@ -2091,44 +1068,66 @@ class MailboxExportJobTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MailboxExportJobStateType](./literals.md#mailboxexportjobstatetype) 
-## MemberTypeDef
+## ListMailboxPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import MemberTypeDef
+from mypy_boto3_workmail.type_defs import ListMailboxPermissionsRequestRequestTypeDef
 
-def get_value() -> MemberTypeDef:
+def get_value() -> ListMailboxPermissionsRequestRequestTypeDef:
     return {
-        "Id": ...,
+        "OrganizationId": ...,
+        "EntityId": ...,
     }
 ```
 
 ```python title="Definition"
-class MemberTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Type: NotRequired[MemberTypeType],  # (1)
-    State: NotRequired[EntityStateType],  # (2)
-    EnabledDate: NotRequired[datetime],
-    DisabledDate: NotRequired[datetime],
+class ListMailboxPermissionsRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    EntityId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## PermissionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "GranteeId": ...,
+        "GranteeType": ...,
+        "PermissionValues": ...,
+    }
+```
+
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    GranteeId: str,
+    GranteeType: MemberTypeType,  # (1)
+    PermissionValues: List[PermissionTypeType],  # (2)
 ```
 
 1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-2. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-## MobileDeviceAccessMatchedRuleTypeDef
+2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+## ListMobileDeviceAccessOverridesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import MobileDeviceAccessMatchedRuleTypeDef
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesRequestRequestTypeDef
 
-def get_value() -> MobileDeviceAccessMatchedRuleTypeDef:
+def get_value() -> ListMobileDeviceAccessOverridesRequestRequestTypeDef:
     return {
-        "MobileDeviceAccessRuleId": ...,
+        "OrganizationId": ...,
     }
 ```
 
 ```python title="Definition"
-class MobileDeviceAccessMatchedRuleTypeDef(TypedDict):
-    MobileDeviceAccessRuleId: NotRequired[str],
-    Name: NotRequired[str],
+class ListMobileDeviceAccessOverridesRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    UserId: NotRequired[str],
+    DeviceId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## MobileDeviceAccessOverrideTypeDef
@@ -2153,6 +1152,22 @@ class MobileDeviceAccessOverrideTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
+## ListMobileDeviceAccessRulesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesRequestRequestTypeDef
+
+def get_value() -> ListMobileDeviceAccessRulesRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListMobileDeviceAccessRulesRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+```
+
 ## MobileDeviceAccessRuleTypeDef
 
 ```python title="Usage Example"
@@ -2183,6 +1198,23 @@ class MobileDeviceAccessRuleTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
+## ListOrganizationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListOrganizationsRequestRequestTypeDef
+
+def get_value() -> ListOrganizationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
 ## OrganizationSummaryTypeDef
 
 ```python title="Usage Example"
@@ -2203,46 +1235,145 @@ class OrganizationSummaryTypeDef(TypedDict):
     State: NotRequired[str],
 ```
 
-## PaginatorConfigTypeDef
+## ListResourceDelegatesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_workmail.type_defs import ListResourceDelegatesRequestRequestTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> ListResourceDelegatesRequestRequestTypeDef:
     return {
-        "MaxItems": ...,
+        "OrganizationId": ...,
+        "ResourceId": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class ListResourceDelegatesRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ResourceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-## PermissionTypeDef
+## ListResourcesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import PermissionTypeDef
+from mypy_boto3_workmail.type_defs import ListResourcesRequestRequestTypeDef
 
-def get_value() -> PermissionTypeDef:
+def get_value() -> ListResourcesRequestRequestTypeDef:
     return {
-        "GranteeId": ...,
-        "GranteeType": ...,
-        "PermissionValues": ...,
+        "OrganizationId": ...,
     }
 ```
 
 ```python title="Definition"
-class PermissionTypeDef(TypedDict):
-    GranteeId: str,
-    GranteeType: MemberTypeType,  # (1)
-    PermissionValues: List[PermissionTypeType],  # (2)
+class ListResourcesRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
-2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+## ResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Email: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[ResourceTypeType],  # (1)
+    State: NotRequired[EntityStateType],  # (2)
+    EnabledDate: NotRequired[datetime],
+    DisabledDate: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
+
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
+## ListUsersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## UserTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Email: NotRequired[str],
+    Name: NotRequired[str],
+    DisplayName: NotRequired[str],
+    State: NotRequired[EntityStateType],  # (1)
+    UserRole: NotRequired[UserRoleType],  # (2)
+    EnabledDate: NotRequired[datetime],
+    DisabledDate: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
 ## PutAccessControlRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2357,29 +1488,6 @@ class PutMobileDeviceAccessOverrideRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
-## PutRetentionPolicyRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import PutRetentionPolicyRequestRequestTypeDef
-
-def get_value() -> PutRetentionPolicyRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "Name": ...,
-        "FolderConfigurations": ...,
-    }
-```
-
-```python title="Definition"
-class PutRetentionPolicyRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    Name: str,
-    FolderConfigurations: Sequence[FolderConfigurationTypeDef],  # (1)
-    Id: NotRequired[str],
-    Description: NotRequired[str],
-```
-
-1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
 ## RegisterMailDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2439,54 +1547,6 @@ class ResetPasswordRequestRequestTypeDef(TypedDict):
     Password: str,
 ```
 
-## ResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ResourceTypeDef
-
-def get_value() -> ResourceTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Email: NotRequired[str],
-    Name: NotRequired[str],
-    Type: NotRequired[ResourceTypeType],  # (1)
-    State: NotRequired[EntityStateType],  # (2)
-    EnabledDate: NotRequired[datetime],
-    DisabledDate: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## StartMailboxExportJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2514,62 +1574,6 @@ class StartMailboxExportJobRequestRequestTypeDef(TypedDict):
     S3BucketName: str,
     S3Prefix: str,
     Description: NotRequired[str],
-```
-
-## StartMailboxExportJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import StartMailboxExportJobResponseTypeDef
-
-def get_value() -> StartMailboxExportJobResponseTypeDef:
-    return {
-        "JobId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartMailboxExportJobResponseTypeDef(TypedDict):
-    JobId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "ResourceARN": ...,
-        "Tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    ResourceARN: str,
-    Tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "Key": ...,
-        "Value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    Key: str,
-    Value: str,
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -2701,28 +1705,1024 @@ class UpdateResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
-## UserTypeDef
+## CreateGroupResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import UserTypeDef
+from mypy_boto3_workmail.type_defs import CreateGroupResponseTypeDef
 
-def get_value() -> UserTypeDef:
+def get_value() -> CreateGroupResponseTypeDef:
     return {
-        "Id": ...,
+        "GroupId": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class UserTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Email: NotRequired[str],
-    Name: NotRequired[str],
-    DisplayName: NotRequired[str],
-    State: NotRequired[EntityStateType],  # (1)
-    UserRole: NotRequired[UserRoleType],  # (2)
-    EnabledDate: NotRequired[datetime],
-    DisabledDate: NotRequired[datetime],
+class CreateGroupResponseTypeDef(TypedDict):
+    GroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMobileDeviceAccessRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateMobileDeviceAccessRuleResponseTypeDef
+
+def get_value() -> CreateMobileDeviceAccessRuleResponseTypeDef:
+    return {
+        "MobileDeviceAccessRuleId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMobileDeviceAccessRuleResponseTypeDef(TypedDict):
+    MobileDeviceAccessRuleId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateOrganizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateOrganizationResponseTypeDef
+
+def get_value() -> CreateOrganizationResponseTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOrganizationResponseTypeDef(TypedDict):
+    OrganizationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateResourceResponseTypeDef
+
+def get_value() -> CreateResourceResponseTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResourceResponseTypeDef(TypedDict):
+    ResourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "UserId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    UserId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteOrganizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DeleteOrganizationResponseTypeDef
+
+def get_value() -> DeleteOrganizationResponseTypeDef:
+    return {
+        "OrganizationId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteOrganizationResponseTypeDef(TypedDict):
+    OrganizationId: str,
+    State: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEmailMonitoringConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeEmailMonitoringConfigurationResponseTypeDef
+
+def get_value() -> DescribeEmailMonitoringConfigurationResponseTypeDef:
+    return {
+        "RoleArn": ...,
+        "LogGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEmailMonitoringConfigurationResponseTypeDef(TypedDict):
+    RoleArn: str,
+    LogGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeGroupResponseTypeDef
+
+def get_value() -> DescribeGroupResponseTypeDef:
+    return {
+        "GroupId": ...,
+        "Name": ...,
+        "Email": ...,
+        "State": ...,
+        "EnabledDate": ...,
+        "DisabledDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupResponseTypeDef(TypedDict):
+    GroupId: str,
+    Name: str,
+    Email: str,
+    State: EntityStateType,  # (1)
+    EnabledDate: datetime,
+    DisabledDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInboundDmarcSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsResponseTypeDef
+
+def get_value() -> DescribeInboundDmarcSettingsResponseTypeDef:
+    return {
+        "Enforced": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInboundDmarcSettingsResponseTypeDef(TypedDict):
+    Enforced: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMailboxExportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeMailboxExportJobResponseTypeDef
+
+def get_value() -> DescribeMailboxExportJobResponseTypeDef:
+    return {
+        "EntityId": ...,
+        "Description": ...,
+        "RoleArn": ...,
+        "KmsKeyArn": ...,
+        "S3BucketName": ...,
+        "S3Prefix": ...,
+        "S3Path": ...,
+        "EstimatedProgress": ...,
+        "State": ...,
+        "ErrorInfo": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMailboxExportJobResponseTypeDef(TypedDict):
+    EntityId: str,
+    Description: str,
+    RoleArn: str,
+    KmsKeyArn: str,
+    S3BucketName: str,
+    S3Prefix: str,
+    S3Path: str,
+    EstimatedProgress: int,
+    State: MailboxExportJobStateType,  # (1)
+    ErrorInfo: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: MailboxExportJobStateType](./literals.md#mailboxexportjobstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeOrganizationResponseTypeDef
+
+def get_value() -> DescribeOrganizationResponseTypeDef:
+    return {
+        "OrganizationId": ...,
+        "Alias": ...,
+        "State": ...,
+        "DirectoryId": ...,
+        "DirectoryType": ...,
+        "DefaultMailDomain": ...,
+        "CompletedDate": ...,
+        "ErrorMessage": ...,
+        "ARN": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationResponseTypeDef(TypedDict):
+    OrganizationId: str,
+    Alias: str,
+    State: str,
+    DirectoryId: str,
+    DirectoryType: str,
+    DefaultMailDomain: str,
+    CompletedDate: datetime,
+    ErrorMessage: str,
+    ARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeResourceResponseTypeDef
+
+def get_value() -> DescribeResourceResponseTypeDef:
+    return {
+        "ResourceId": ...,
+        "Email": ...,
+        "Name": ...,
+        "Type": ...,
+        "BookingOptions": ...,
+        "State": ...,
+        "EnabledDate": ...,
+        "DisabledDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourceResponseTypeDef(TypedDict):
+    ResourceId: str,
+    Email: str,
+    Name: str,
+    Type: ResourceTypeType,  # (1)
+    BookingOptions: BookingOptionsTypeDef,  # (2)
+    State: EntityStateType,  # (3)
+    EnabledDate: datetime,
+    DisabledDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
+3. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUserResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeUserResponseTypeDef
+
+def get_value() -> DescribeUserResponseTypeDef:
+    return {
+        "UserId": ...,
+        "Name": ...,
+        "Email": ...,
+        "DisplayName": ...,
+        "State": ...,
+        "UserRole": ...,
+        "EnabledDate": ...,
+        "DisabledDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUserResponseTypeDef(TypedDict):
+    UserId: str,
+    Name: str,
+    Email: str,
+    DisplayName: str,
+    State: EntityStateType,  # (1)
+    UserRole: UserRoleType,  # (2)
+    EnabledDate: datetime,
+    DisabledDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
 2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessControlEffectResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseTypeDef
+
+def get_value() -> GetAccessControlEffectResponseTypeDef:
+    return {
+        "Effect": ...,
+        "MatchedRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessControlEffectResponseTypeDef(TypedDict):
+    Effect: AccessControlRuleEffectType,  # (1)
+    MatchedRules: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMailboxDetailsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetMailboxDetailsResponseTypeDef
+
+def get_value() -> GetMailboxDetailsResponseTypeDef:
+    return {
+        "MailboxQuota": ...,
+        "MailboxSize": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMailboxDetailsResponseTypeDef(TypedDict):
+    MailboxQuota: int,
+    MailboxSize: float,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMobileDeviceAccessOverrideResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideResponseTypeDef
+
+def get_value() -> GetMobileDeviceAccessOverrideResponseTypeDef:
+    return {
+        "UserId": ...,
+        "DeviceId": ...,
+        "Effect": ...,
+        "Description": ...,
+        "DateCreated": ...,
+        "DateModified": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMobileDeviceAccessOverrideResponseTypeDef(TypedDict):
+    UserId: str,
+    DeviceId: str,
+    Effect: MobileDeviceAccessRuleEffectType,  # (1)
+    Description: str,
+    DateCreated: datetime,
+    DateModified: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccessControlRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAccessControlRulesResponseTypeDef
+
+def get_value() -> ListAccessControlRulesResponseTypeDef:
+    return {
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessControlRulesResponseTypeDef(TypedDict):
+    Rules: List[AccessControlRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAliasesResponseTypeDef
+
+def get_value() -> ListAliasesResponseTypeDef:
+    return {
+        "Aliases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesResponseTypeDef(TypedDict):
+    Aliases: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartMailboxExportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import StartMailboxExportJobResponseTypeDef
+
+def get_value() -> StartMailboxExportJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartMailboxExportJobResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateOrganizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateOrganizationRequestRequestTypeDef
+
+def get_value() -> CreateOrganizationRequestRequestTypeDef:
+    return {
+        "Alias": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOrganizationRequestRequestTypeDef(TypedDict):
+    Alias: str,
+    DirectoryId: NotRequired[str],
+    ClientToken: NotRequired[str],
+    Domains: NotRequired[Sequence[DomainTypeDef]],  # (1)
+    KmsKeyArn: NotRequired[str],
+    EnableInteroperability: NotRequired[bool],
+```
+
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+## ListResourceDelegatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListResourceDelegatesResponseTypeDef
+
+def get_value() -> ListResourceDelegatesResponseTypeDef:
+    return {
+        "Delegates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceDelegatesResponseTypeDef(TypedDict):
+    Delegates: List[DelegateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DelegateTypeDef](./type_defs.md#delegatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMailDomainResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetMailDomainResponseTypeDef
+
+def get_value() -> GetMailDomainResponseTypeDef:
+    return {
+        "Records": ...,
+        "IsTestDomain": ...,
+        "IsDefault": ...,
+        "OwnershipVerificationStatus": ...,
+        "DkimVerificationStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMailDomainResponseTypeDef(TypedDict):
+    Records: List[DnsRecordTypeDef],  # (1)
+    IsTestDomain: bool,
+    IsDefault: bool,
+    OwnershipVerificationStatus: DnsRecordVerificationStatusType,  # (2)
+    DkimVerificationStatus: DnsRecordVerificationStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef) 
+2. See [:material-code-brackets: DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype) 
+3. See [:material-code-brackets: DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDefaultRetentionPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyResponseTypeDef
+
+def get_value() -> GetDefaultRetentionPolicyResponseTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "FolderConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDefaultRetentionPolicyResponseTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    Description: str,
+    FolderConfigurations: List[FolderConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutRetentionPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import PutRetentionPolicyRequestRequestTypeDef
+
+def get_value() -> PutRetentionPolicyRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "Name": ...,
+        "FolderConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class PutRetentionPolicyRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    Name: str,
+    FolderConfigurations: Sequence[FolderConfigurationTypeDef],  # (1)
+    Id: NotRequired[str],
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
+## GetMobileDeviceAccessEffectResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseTypeDef
+
+def get_value() -> GetMobileDeviceAccessEffectResponseTypeDef:
+    return {
+        "Effect": ...,
+        "MatchedRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMobileDeviceAccessEffectResponseTypeDef(TypedDict):
+    Effect: MobileDeviceAccessRuleEffectType,  # (1)
+    MatchedRules: List[MobileDeviceAccessMatchedRuleTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
+2. See [:material-code-braces: MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAliasesRequestListAliasesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
+
+def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+        "EntityId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    EntityId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListGroupMembersRequestListGroupMembersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListGroupMembersRequestListGroupMembersPaginateTypeDef
+
+def get_value() -> ListGroupMembersRequestListGroupMembersPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+        "GroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupMembersRequestListGroupMembersPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    GroupId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListGroupsRequestListGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListGroupsRequestListGroupsPaginateTypeDef
+
+def get_value() -> ListGroupsRequestListGroupsPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsRequestListGroupsPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef
+
+def get_value() -> ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+        "EntityId": ...,
+    }
+```
+
+```python title="Definition"
+class ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    EntityId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOrganizationsRequestListOrganizationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListOrganizationsRequestListOrganizationsPaginateTypeDef
+
+def get_value() -> ListOrganizationsRequestListOrganizationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationsRequestListOrganizationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef
+
+def get_value() -> ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    ResourceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourcesRequestListResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListResourcesRequestListResourcesPaginateTypeDef
+
+def get_value() -> ListResourcesRequestListResourcesPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesRequestListResourcesPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListUsersRequestListUsersPaginateTypeDef
+
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListGroupMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListGroupMembersResponseTypeDef
+
+def get_value() -> ListGroupMembersResponseTypeDef:
+    return {
+        "Members": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupMembersResponseTypeDef(TypedDict):
+    Members: List[MemberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMailDomainsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMailDomainsResponseTypeDef
+
+def get_value() -> ListMailDomainsResponseTypeDef:
+    return {
+        "MailDomains": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMailDomainsResponseTypeDef(TypedDict):
+    MailDomains: List[MailDomainSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMailboxExportJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMailboxExportJobsResponseTypeDef
+
+def get_value() -> ListMailboxExportJobsResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMailboxExportJobsResponseTypeDef(TypedDict):
+    Jobs: List[MailboxExportJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MailboxExportJobTypeDef](./type_defs.md#mailboxexportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMailboxPermissionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseTypeDef
+
+def get_value() -> ListMailboxPermissionsResponseTypeDef:
+    return {
+        "Permissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMailboxPermissionsResponseTypeDef(TypedDict):
+    Permissions: List[PermissionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMobileDeviceAccessOverridesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesResponseTypeDef
+
+def get_value() -> ListMobileDeviceAccessOverridesResponseTypeDef:
+    return {
+        "Overrides": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMobileDeviceAccessOverridesResponseTypeDef(TypedDict):
+    Overrides: List[MobileDeviceAccessOverrideTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MobileDeviceAccessOverrideTypeDef](./type_defs.md#mobiledeviceaccessoverridetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMobileDeviceAccessRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesResponseTypeDef
+
+def get_value() -> ListMobileDeviceAccessRulesResponseTypeDef:
+    return {
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMobileDeviceAccessRulesResponseTypeDef(TypedDict):
+    Rules: List[MobileDeviceAccessRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MobileDeviceAccessRuleTypeDef](./type_defs.md#mobiledeviceaccessruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOrganizationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListOrganizationsResponseTypeDef
+
+def get_value() -> ListOrganizationsResponseTypeDef:
+    return {
+        "OrganizationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationsResponseTypeDef(TypedDict):
+    OrganizationSummaries: List[OrganizationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrganizationSummaryTypeDef](./type_defs.md#organizationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListResourcesResponseTypeDef
+
+def get_value() -> ListResourcesResponseTypeDef:
+    return {
+        "Resources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesResponseTypeDef(TypedDict):
+    Resources: List[ResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListUsersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

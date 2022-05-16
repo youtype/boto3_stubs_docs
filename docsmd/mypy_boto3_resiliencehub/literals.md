@@ -25,6 +25,21 @@ AlarmTypeType = Literal[
     "Metric",
 ]
 ```
+## AppAssessmentScheduleTypeType
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.literals import AppAssessmentScheduleTypeType
+
+def get_value() -> AppAssessmentScheduleTypeType:
+    return "Daily"
+```
+
+```python title="Definition"
+AppAssessmentScheduleTypeType = Literal[
+    "Daily",
+    "Disabled",
+]
+```
 ## AppComplianceStatusTypeType
 
 ```python title="Usage Example"
@@ -321,6 +336,7 @@ ResourceMappingTypeType = Literal[
     "CfnStack",
     "Resource",
     "ResourceGroup",
+    "Terraform",
 ]
 ```
 ## ResourceResolutionStatusTypeType
