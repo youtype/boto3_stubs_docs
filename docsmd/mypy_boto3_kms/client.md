@@ -529,7 +529,7 @@ parent.disable_key(**kwargs)
 
 Disables [automatic rotation of the key
 material](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-
-keys.html)_ for the specified symmetric encryption KMS key.
+keys.html)_ of the specified symmetric encryption KMS key.
 
 Type annotations and code completion for `#!python boto3.client("kms").disable_key_rotation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation)
@@ -617,7 +617,7 @@ parent.enable_key(**kwargs)
 
 Enables [automatic rotation of the key
 material](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-
-keys.html)_ for the specified symmetric encryption KMS key.
+keys.html)_ of the specified symmetric encryption KMS key.
 
 Type annotations and code completion for `#!python boto3.client("kms").enable_key_rotation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation)

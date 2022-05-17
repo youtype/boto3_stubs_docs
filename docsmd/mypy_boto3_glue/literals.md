@@ -7,6 +7,34 @@
     Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
     type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
+## AggFunctionType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import AggFunctionType
+
+def get_value() -> AggFunctionType:
+    return "avg"
+```
+
+```python title="Definition"
+AggFunctionType = Literal[
+    "avg",
+    "count",
+    "countDistinct",
+    "first",
+    "kurtosis",
+    "last",
+    "max",
+    "min",
+    "skewness",
+    "stddev_pop",
+    "stddev_samp",
+    "sum",
+    "sumDistinct",
+    "var_pop",
+    "var_samp",
+]
+```
 ## BackfillErrorCodeType
 
 ```python title="Usage Example"
@@ -146,6 +174,21 @@ CompatibilityType = Literal[
     "FULL",
     "FULL_ALL",
     "NONE",
+]
+```
+## CompressionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import CompressionTypeType
+
+def get_value() -> CompressionTypeType:
+    return "bzip2"
+```
+
+```python title="Definition"
+CompressionTypeType = Literal[
+    "bzip2",
+    "gzip",
 ]
 ```
 ## ConnectionPropertyKeyType
@@ -337,6 +380,56 @@ ExistConditionType = Literal[
     "MUST_EXIST",
     "NONE",
     "NOT_EXIST",
+]
+```
+## FilterLogicalOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import FilterLogicalOperatorType
+
+def get_value() -> FilterLogicalOperatorType:
+    return "AND"
+```
+
+```python title="Definition"
+FilterLogicalOperatorType = Literal[
+    "AND",
+    "OR",
+]
+```
+## FilterOperationType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import FilterOperationType
+
+def get_value() -> FilterOperationType:
+    return "EQ"
+```
+
+```python title="Definition"
+FilterOperationType = Literal[
+    "EQ",
+    "GT",
+    "GTE",
+    "ISNULL",
+    "LT",
+    "LTE",
+    "REGEX",
+]
+```
+## FilterValueTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import FilterValueTypeType
+
+def get_value() -> FilterValueTypeType:
+    return "COLUMNEXTRACTED"
+```
+
+```python title="Definition"
+FilterValueTypeType = Literal[
+    "COLUMNEXTRACTED",
+    "CONSTANT",
 ]
 ```
 ## GetClassifiersPaginatorName
@@ -563,6 +656,81 @@ GetUserDefinedFunctionsPaginatorName = Literal[
     "get_user_defined_functions",
 ]
 ```
+## GlueRecordTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import GlueRecordTypeType
+
+def get_value() -> GlueRecordTypeType:
+    return "BIGDECIMAL"
+```
+
+```python title="Definition"
+GlueRecordTypeType = Literal[
+    "BIGDECIMAL",
+    "BYTE",
+    "DATE",
+    "DOUBLE",
+    "FLOAT",
+    "INT",
+    "LONG",
+    "SHORT",
+    "STRING",
+    "TIMESTAMP",
+]
+```
+## JDBCDataTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import JDBCDataTypeType
+
+def get_value() -> JDBCDataTypeType:
+    return "ARRAY"
+```
+
+```python title="Definition"
+JDBCDataTypeType = Literal[
+    "ARRAY",
+    "BIGINT",
+    "BINARY",
+    "BIT",
+    "BLOB",
+    "BOOLEAN",
+    "CHAR",
+    "CLOB",
+    "DATALINK",
+    "DATE",
+    "DECIMAL",
+    "DISTINCT",
+    "DOUBLE",
+    "FLOAT",
+    "INTEGER",
+    "JAVA_OBJECT",
+    "LONGNVARCHAR",
+    "LONGVARBINARY",
+    "LONGVARCHAR",
+    "NCHAR",
+    "NCLOB",
+    "NULL",
+    "NUMERIC",
+    "NVARCHAR",
+    "OTHER",
+    "REAL",
+    "REF",
+    "REF_CURSOR",
+    "ROWID",
+    "SMALLINT",
+    "SQLXML",
+    "STRUCT",
+    "TIME",
+    "TIME_WITH_TIMEZONE",
+    "TIMESTAMP",
+    "TIMESTAMP_WITH_TIMEZONE",
+    "TINYINT",
+    "VARBINARY",
+    "VARCHAR",
+]
+```
 ## JobBookmarksEncryptionModeType
 
 ```python title="Usage Example"
@@ -596,6 +764,25 @@ JobRunStateType = Literal[
     "STOPPING",
     "SUCCEEDED",
     "TIMEOUT",
+]
+```
+## JoinTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import JoinTypeType
+
+def get_value() -> JoinTypeType:
+    return "equijoin"
+```
+
+```python title="Definition"
+JoinTypeType = Literal[
+    "equijoin",
+    "left",
+    "leftanti",
+    "leftsemi",
+    "outer",
+    "right",
 ]
 ```
 ## LanguageType
@@ -731,6 +918,24 @@ NodeTypeType = Literal[
     "TRIGGER",
 ]
 ```
+## ParquetCompressionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import ParquetCompressionTypeType
+
+def get_value() -> ParquetCompressionTypeType:
+    return "gzip"
+```
+
+```python title="Definition"
+ParquetCompressionTypeType = Literal[
+    "gzip",
+    "lzo",
+    "none",
+    "snappy",
+    "uncompressed",
+]
+```
 ## PartitionIndexStatusType
 
 ```python title="Usage Example"
@@ -785,6 +990,23 @@ PermissionTypeType = Literal[
     "COLUMN_PERMISSION",
 ]
 ```
+## PiiTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import PiiTypeType
+
+def get_value() -> PiiTypeType:
+    return "ColumnAudit"
+```
+
+```python title="Definition"
+PiiTypeType = Literal[
+    "ColumnAudit",
+    "ColumnMasking",
+    "RowAudit",
+    "RowMasking",
+]
+```
 ## PrincipalTypeType
 
 ```python title="Usage Example"
@@ -799,6 +1021,23 @@ PrincipalTypeType = Literal[
     "GROUP",
     "ROLE",
     "USER",
+]
+```
+## QuoteCharType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import QuoteCharType
+
+def get_value() -> QuoteCharType:
+    return "disabled"
+```
+
+```python title="Definition"
+QuoteCharType = Literal[
+    "disabled",
+    "quillemet",
+    "quote",
+    "single_quote",
 ]
 ```
 ## RecrawlBehaviorType
@@ -942,6 +1181,24 @@ SchemaVersionStatusType = Literal[
     "PENDING",
 ]
 ```
+## SeparatorType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import SeparatorType
+
+def get_value() -> SeparatorType:
+    return "comma"
+```
+
+```python title="Definition"
+SeparatorType = Literal[
+    "comma",
+    "ctrla",
+    "pipe",
+    "semicolon",
+    "tab",
+]
+```
 ## SessionStatusType
 
 ```python title="Usage Example"
@@ -991,6 +1248,22 @@ SortType = Literal[
     "DESC",
 ]
 ```
+## StartingPositionType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import StartingPositionType
+
+def get_value() -> StartingPositionType:
+    return "earliest"
+```
+
+```python title="Definition"
+StartingPositionType = Literal[
+    "earliest",
+    "latest",
+    "trim_horizon",
+]
+```
 ## StatementStateType
 
 ```python title="Usage Example"
@@ -1008,6 +1281,24 @@ StatementStateType = Literal[
     "ERROR",
     "RUNNING",
     "WAITING",
+]
+```
+## TargetFormatType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import TargetFormatType
+
+def get_value() -> TargetFormatType:
+    return "avro"
+```
+
+```python title="Definition"
+TargetFormatType = Literal[
+    "avro",
+    "csv",
+    "json",
+    "orc",
+    "parquet",
 ]
 ```
 ## TaskRunSortColumnTypeType
@@ -1150,6 +1441,21 @@ TriggerTypeType = Literal[
     "SCHEDULED",
 ]
 ```
+## UnionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import UnionTypeType
+
+def get_value() -> UnionTypeType:
+    return "ALL"
+```
+
+```python title="Definition"
+UnionTypeType = Literal[
+    "ALL",
+    "DISTINCT",
+]
+```
 ## UpdateBehaviorType
 
 ```python title="Usage Example"
@@ -1161,6 +1467,21 @@ def get_value() -> UpdateBehaviorType:
 
 ```python title="Definition"
 UpdateBehaviorType = Literal[
+    "LOG",
+    "UPDATE_IN_DATABASE",
+]
+```
+## UpdateCatalogBehaviorType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import UpdateCatalogBehaviorType
+
+def get_value() -> UpdateCatalogBehaviorType:
+    return "LOG"
+```
+
+```python title="Definition"
+UpdateCatalogBehaviorType = Literal[
     "LOG",
     "UPDATE_IN_DATABASE",
 ]

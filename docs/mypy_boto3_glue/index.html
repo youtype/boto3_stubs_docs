@@ -36080,12 +36080,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_glue.literals</span> <span class="kn">import</span> <span class="n">BackfillErrorCodeType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_glue.literals</span> <span class="kn">import</span> <span class="n">AggFunctionType</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BackfillErrorCodeType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;ENCRYPTED_PARTITION_ERROR&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AggFunctionType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;avg&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#aggfunctiontype">AggFunctionType</a></li>
 <li><a href="literals/#backfillerrorcodetype">BackfillErrorCodeType</a></li>
 <li><a href="literals/#blueprintrunstatetype">BlueprintRunStateType</a></li>
 <li><a href="literals/#blueprintstatustype">BlueprintStatusType</a></li>
@@ -36094,6 +36095,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#columnstatisticstypetype">ColumnStatisticsTypeType</a></li>
 <li><a href="literals/#comparatortype">ComparatorType</a></li>
 <li><a href="literals/#compatibilitytype">CompatibilityType</a></li>
+<li><a href="literals/#compressiontypetype">CompressionTypeType</a></li>
 <li><a href="literals/#connectionpropertykeytype">ConnectionPropertyKeyType</a></li>
 <li><a href="literals/#connectiontypetype">ConnectionTypeType</a></li>
 <li><a href="literals/#crawlstatetype">CrawlStateType</a></li>
@@ -36104,6 +36106,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#deletebehaviortype">DeleteBehaviorType</a></li>
 <li><a href="literals/#enablehybridvaluestype">EnableHybridValuesType</a></li>
 <li><a href="literals/#existconditiontype">ExistConditionType</a></li>
+<li><a href="literals/#filterlogicaloperatortype">FilterLogicalOperatorType</a></li>
+<li><a href="literals/#filteroperationtype">FilterOperationType</a></li>
+<li><a href="literals/#filtervaluetypetype">FilterValueTypeType</a></li>
 <li><a href="literals/#getclassifierspaginatorname">GetClassifiersPaginatorName</a></li>
 <li><a href="literals/#getconnectionspaginatorname">GetConnectionsPaginatorName</a></li>
 <li><a href="literals/#getcrawlermetricspaginatorname">GetCrawlerMetricsPaginatorName</a></li>
@@ -36120,8 +36125,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#gettablespaginatorname">GetTablesPaginatorName</a></li>
 <li><a href="literals/#gettriggerspaginatorname">GetTriggersPaginatorName</a></li>
 <li><a href="literals/#getuserdefinedfunctionspaginatorname">GetUserDefinedFunctionsPaginatorName</a></li>
+<li><a href="literals/#gluerecordtypetype">GlueRecordTypeType</a></li>
+<li><a href="literals/#jdbcdatatypetype">JDBCDataTypeType</a></li>
 <li><a href="literals/#jobbookmarksencryptionmodetype">JobBookmarksEncryptionModeType</a></li>
 <li><a href="literals/#jobrunstatetype">JobRunStateType</a></li>
+<li><a href="literals/#jointypetype">JoinTypeType</a></li>
 <li><a href="literals/#languagetype">LanguageType</a></li>
 <li><a href="literals/#lastcrawlstatustype">LastCrawlStatusType</a></li>
 <li><a href="literals/#listregistriespaginatorname">ListRegistriesPaginatorName</a></li>
@@ -36131,10 +36139,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#logicaltype">LogicalType</a></li>
 <li><a href="literals/#mluserdataencryptionmodestringtype">MLUserDataEncryptionModeStringType</a></li>
 <li><a href="literals/#nodetypetype">NodeTypeType</a></li>
+<li><a href="literals/#parquetcompressiontypetype">ParquetCompressionTypeType</a></li>
 <li><a href="literals/#partitionindexstatustype">PartitionIndexStatusType</a></li>
 <li><a href="literals/#permissiontype">PermissionType</a></li>
 <li><a href="literals/#permissiontypetype">PermissionTypeType</a></li>
+<li><a href="literals/#piitypetype">PiiTypeType</a></li>
 <li><a href="literals/#principaltypetype">PrincipalTypeType</a></li>
+<li><a href="literals/#quotechartype">QuoteCharType</a></li>
 <li><a href="literals/#recrawlbehaviortype">RecrawlBehaviorType</a></li>
 <li><a href="literals/#registrystatustype">RegistryStatusType</a></li>
 <li><a href="literals/#resourcesharetypetype">ResourceShareTypeType</a></li>
@@ -36144,10 +36155,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#schemadifftypetype">SchemaDiffTypeType</a></li>
 <li><a href="literals/#schemastatustype">SchemaStatusType</a></li>
 <li><a href="literals/#schemaversionstatustype">SchemaVersionStatusType</a></li>
+<li><a href="literals/#separatortype">SeparatorType</a></li>
 <li><a href="literals/#sessionstatustype">SessionStatusType</a></li>
 <li><a href="literals/#sortdirectiontypetype">SortDirectionTypeType</a></li>
 <li><a href="literals/#sorttype">SortType</a></li>
+<li><a href="literals/#startingpositiontype">StartingPositionType</a></li>
 <li><a href="literals/#statementstatetype">StatementStateType</a></li>
+<li><a href="literals/#targetformattype">TargetFormatType</a></li>
 <li><a href="literals/#taskrunsortcolumntypetype">TaskRunSortColumnTypeType</a></li>
 <li><a href="literals/#taskstatustypetype">TaskStatusTypeType</a></li>
 <li><a href="literals/#tasktypetype">TaskTypeType</a></li>
@@ -36156,7 +36170,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#transformtypetype">TransformTypeType</a></li>
 <li><a href="literals/#triggerstatetype">TriggerStateType</a></li>
 <li><a href="literals/#triggertypetype">TriggerTypeType</a></li>
+<li><a href="literals/#uniontypetype">UnionTypeType</a></li>
 <li><a href="literals/#updatebehaviortype">UpdateBehaviorType</a></li>
+<li><a href="literals/#updatecatalogbehaviortype">UpdateCatalogBehaviorType</a></li>
 <li><a href="literals/#workertypetype">WorkerTypeType</a></li>
 <li><a href="literals/#workflowrunstatustype">WorkflowRunStatusType</a></li>
 <li><a href="literals/#glueservicename">GlueServiceName</a></li>
@@ -36176,8 +36192,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#notificationpropertytypedef">NotificationPropertyTypeDef</a></li>
+<li><a href="type_defs/#aggregateoperationtypedef">AggregateOperationTypeDef</a></li>
+<li><a href="type_defs/#applymappingtypedef">ApplyMappingTypeDef</a></li>
 <li><a href="type_defs/#auditcontexttypedef">AuditContextTypeDef</a></li>
 <li><a href="type_defs/#partitionvaluelisttypedef">PartitionValueListTypeDef</a></li>
+<li><a href="type_defs/#basiccatalogtargettypedef">BasicCatalogTargetTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#batchdeleteconnectionrequestrequesttypedef">BatchDeleteConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#errordetailtypedef">ErrorDetailTypeDef</a></li>
@@ -36203,6 +36222,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#cancelstatementrequestrequesttypedef">CancelStatementRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#catalogentrytypedef">CatalogEntryTypeDef</a></li>
 <li><a href="type_defs/#catalogimportstatustypedef">CatalogImportStatusTypeDef</a></li>
+<li><a href="type_defs/#kafkastreamingsourceoptionstypedef">KafkaStreamingSourceOptionsTypeDef</a></li>
+<li><a href="type_defs/#streamingdatapreviewoptionstypedef">StreamingDataPreviewOptionsTypeDef</a></li>
+<li><a href="type_defs/#kinesisstreamingsourceoptionstypedef">KinesisStreamingSourceOptionsTypeDef</a></li>
+<li><a href="type_defs/#catalogschemachangepolicytypedef">CatalogSchemaChangePolicyTypeDef</a></li>
+<li><a href="type_defs/#catalogsourcetypedef">CatalogSourceTypeDef</a></li>
 <li><a href="type_defs/#catalogtargettypedef">CatalogTargetTypeDef</a></li>
 <li><a href="type_defs/#checkschemaversionvalidityinputrequesttypedef">CheckSchemaVersionValidityInputRequestTypeDef</a></li>
 <li><a href="type_defs/#csvclassifiertypedef">CsvClassifierTypeDef</a></li>
@@ -36210,6 +36234,28 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#jsonclassifiertypedef">JsonClassifierTypeDef</a></li>
 <li><a href="type_defs/#xmlclassifiertypedef">XMLClassifierTypeDef</a></li>
 <li><a href="type_defs/#cloudwatchencryptiontypedef">CloudWatchEncryptionTypeDef</a></li>
+<li><a href="type_defs/#dropduplicatestypedef">DropDuplicatesTypeDef</a></li>
+<li><a href="type_defs/#dropfieldstypedef">DropFieldsTypeDef</a></li>
+<li><a href="type_defs/#dynamodbcatalogsourcetypedef">DynamoDBCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#fillmissingvaluestypedef">FillMissingValuesTypeDef</a></li>
+<li><a href="type_defs/#mergetypedef">MergeTypeDef</a></li>
+<li><a href="type_defs/#microsoftsqlservercatalogsourcetypedef">MicrosoftSQLServerCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#microsoftsqlservercatalogtargettypedef">MicrosoftSQLServerCatalogTargetTypeDef</a></li>
+<li><a href="type_defs/#mysqlcatalogsourcetypedef">MySQLCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#mysqlcatalogtargettypedef">MySQLCatalogTargetTypeDef</a></li>
+<li><a href="type_defs/#oraclesqlcatalogsourcetypedef">OracleSQLCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#oraclesqlcatalogtargettypedef">OracleSQLCatalogTargetTypeDef</a></li>
+<li><a href="type_defs/#piidetectiontypedef">PIIDetectionTypeDef</a></li>
+<li><a href="type_defs/#postgresqlcatalogsourcetypedef">PostgreSQLCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#postgresqlcatalogtargettypedef">PostgreSQLCatalogTargetTypeDef</a></li>
+<li><a href="type_defs/#redshiftsourcetypedef">RedshiftSourceTypeDef</a></li>
+<li><a href="type_defs/#relationalcatalogsourcetypedef">RelationalCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#renamefieldtypedef">RenameFieldTypeDef</a></li>
+<li><a href="type_defs/#selectfieldstypedef">SelectFieldsTypeDef</a></li>
+<li><a href="type_defs/#selectfromcollectiontypedef">SelectFromCollectionTypeDef</a></li>
+<li><a href="type_defs/#spigottypedef">SpigotTypeDef</a></li>
+<li><a href="type_defs/#splitfieldstypedef">SplitFieldsTypeDef</a></li>
+<li><a href="type_defs/#uniontypedef">UnionTypeDef</a></li>
 <li><a href="type_defs/#codegenedgetypedef">CodeGenEdgeTypeDef</a></li>
 <li><a href="type_defs/#codegennodeargtypedef">CodeGenNodeArgTypeDef</a></li>
 <li><a href="type_defs/#columnimportancetypedef">ColumnImportanceTypeDef</a></li>
@@ -36256,6 +36302,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#encryptionatresttypedef">EncryptionAtRestTypeDef</a></li>
 <li><a href="type_defs/#datalakeprincipaltypedef">DataLakePrincipalTypeDef</a></li>
 <li><a href="type_defs/#databaseidentifiertypedef">DatabaseIdentifierTypeDef</a></li>
+<li><a href="type_defs/#datatypetypedef">DatatypeTypeDef</a></li>
 <li><a href="type_defs/#decimalnumbertypedef">DecimalNumberTypeDef</a></li>
 <li><a href="type_defs/#deleteblueprintrequestrequesttypedef">DeleteBlueprintRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteclassifierrequestrequesttypedef">DeleteClassifierRequestRequestTypeDef</a></li>
@@ -36280,11 +36327,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteuserdefinedfunctionrequestrequesttypedef">DeleteUserDefinedFunctionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteworkflowrequestrequesttypedef">DeleteWorkflowRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#devendpointcustomlibrariestypedef">DevEndpointCustomLibrariesTypeDef</a></li>
+<li><a href="type_defs/#directschemachangepolicytypedef">DirectSchemaChangePolicyTypeDef</a></li>
+<li><a href="type_defs/#nullcheckboxlisttypedef">NullCheckBoxListTypeDef</a></li>
 <li><a href="type_defs/#edgetypedef">EdgeTypeDef</a></li>
 <li><a href="type_defs/#jobbookmarksencryptiontypedef">JobBookmarksEncryptionTypeDef</a></li>
 <li><a href="type_defs/#s3encryptiontypedef">S3EncryptionTypeDef</a></li>
 <li><a href="type_defs/#errordetailstypedef">ErrorDetailsTypeDef</a></li>
 <li><a href="type_defs/#exportlabelstaskrunpropertiestypedef">ExportLabelsTaskRunPropertiesTypeDef</a></li>
+<li><a href="type_defs/#filtervaluetypedef">FilterValueTypeDef</a></li>
 <li><a href="type_defs/#findmatchesparameterstypedef">FindMatchesParametersTypeDef</a></li>
 <li><a href="type_defs/#findmatchestaskrunpropertiestypedef">FindMatchesTaskRunPropertiesTypeDef</a></li>
 <li><a href="type_defs/#getblueprintrequestrequesttypedef">GetBlueprintRequestRequestTypeDef</a></li>
@@ -36345,9 +36395,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getworkflowrunpropertiesrequestrequesttypedef">GetWorkflowRunPropertiesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkflowrunrequestrequesttypedef">GetWorkflowRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkflowrunsrequestrequesttypedef">GetWorkflowRunsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gluestudioschemacolumntypedef">GlueStudioSchemaColumnTypeDef</a></li>
+<li><a href="type_defs/#s3sourceadditionaloptionstypedef">S3SourceAdditionalOptionsTypeDef</a></li>
 <li><a href="type_defs/#importcatalogtogluerequestrequesttypedef">ImportCatalogToGlueRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#importlabelstaskrunpropertiestypedef">ImportLabelsTaskRunPropertiesTypeDef</a></li>
+<li><a href="type_defs/#jdbcconnectoroptionstypedef">JDBCConnectorOptionsTypeDef</a></li>
 <li><a href="type_defs/#predecessortypedef">PredecessorTypeDef</a></li>
+<li><a href="type_defs/#joincolumntypedef">JoinColumnTypeDef</a></li>
 <li><a href="type_defs/#keyschemaelementtypedef">KeySchemaElementTypeDef</a></li>
 <li><a href="type_defs/#labelingsetgenerationtaskrunpropertiestypedef">LabelingSetGenerationTaskRunPropertiesTypeDef</a></li>
 <li><a href="type_defs/#listblueprintsrequestrequesttypedef">ListBlueprintsRequestRequestTypeDef</a></li>
@@ -36364,19 +36418,23 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtriggersrequestrequesttypedef">ListTriggersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listworkflowsrequestrequesttypedef">ListWorkflowsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#mluserdataencryptiontypedef">MLUserDataEncryptionTypeDef</a></li>
+<li><a href="type_defs/#mappingtypedef">MappingTypeDef</a></li>
 <li><a href="type_defs/#othermetadatavaluelistitemtypedef">OtherMetadataValueListItemTypeDef</a></li>
 <li><a href="type_defs/#metadatakeyvaluepairtypedef">MetadataKeyValuePairTypeDef</a></li>
 <li><a href="type_defs/#ordertypedef">OrderTypeDef</a></li>
 <li><a href="type_defs/#propertypredicatetypedef">PropertyPredicateTypeDef</a></li>
 <li><a href="type_defs/#putresourcepolicyrequestrequesttypedef">PutResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putworkflowrunpropertiesrequestrequesttypedef">PutWorkflowRunPropertiesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#upsertredshifttargetoptionstypedef">UpsertRedshiftTargetOptionsTypeDef</a></li>
 <li><a href="type_defs/#resetjobbookmarkrequestrequesttypedef">ResetJobBookmarkRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#resourceuritypedef">ResourceUriTypeDef</a></li>
 <li><a href="type_defs/#resumeworkflowrunrequestrequesttypedef">ResumeWorkflowRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#runstatementrequestrequesttypedef">RunStatementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#s3directsourceadditionaloptionstypedef">S3DirectSourceAdditionalOptionsTypeDef</a></li>
 <li><a href="type_defs/#sortcriteriontypedef">SortCriterionTypeDef</a></li>
 <li><a href="type_defs/#serdeinfotypedef">SerDeInfoTypeDef</a></li>
 <li><a href="type_defs/#skewedinfotypedef">SkewedInfoTypeDef</a></li>
+<li><a href="type_defs/#sqlaliastypedef">SqlAliasTypeDef</a></li>
 <li><a href="type_defs/#startblueprintrunrequestrequesttypedef">StartBlueprintRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startcrawlerrequestrequesttypedef">StartCrawlerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startcrawlerschedulerequestrequesttypedef">StartCrawlerScheduleRequestRequestTypeDef</a></li>
@@ -36406,6 +36464,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#workflowrunstatisticstypedef">WorkflowRunStatisticsTypeDef</a></li>
 <li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
 <li><a href="type_defs/#startjobrunrequestrequesttypedef">StartJobRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#aggregatetypedef">AggregateTypeDef</a></li>
 <li><a href="type_defs/#getunfilteredpartitionmetadatarequestrequesttypedef">GetUnfilteredPartitionMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getunfilteredtablemetadatarequestrequesttypedef">GetUnfilteredTableMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#backfillerrortypedef">BackfillErrorTypeDef</a></li>
@@ -36488,6 +36547,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getblueprintrunsresponsetypedef">GetBlueprintRunsResponseTypeDef</a></li>
 <li><a href="type_defs/#blueprinttypedef">BlueprintTypeDef</a></li>
 <li><a href="type_defs/#getcatalogimportstatusresponsetypedef">GetCatalogImportStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#catalogkafkasourcetypedef">CatalogKafkaSourceTypeDef</a></li>
+<li><a href="type_defs/#directkafkasourcetypedef">DirectKafkaSourceTypeDef</a></li>
+<li><a href="type_defs/#catalogkinesissourcetypedef">CatalogKinesisSourceTypeDef</a></li>
+<li><a href="type_defs/#directkinesissourcetypedef">DirectKinesisSourceTypeDef</a></li>
+<li><a href="type_defs/#governedcatalogtargettypedef">GovernedCatalogTargetTypeDef</a></li>
+<li><a href="type_defs/#s3catalogtargettypedef">S3CatalogTargetTypeDef</a></li>
 <li><a href="type_defs/#classifiertypedef">ClassifierTypeDef</a></li>
 <li><a href="type_defs/#codegennodetypedef">CodeGenNodeTypeDef</a></li>
 <li><a href="type_defs/#locationtypedef">LocationTypeDef</a></li>
@@ -36499,9 +36564,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getcrawlermetricsresponsetypedef">GetCrawlerMetricsResponseTypeDef</a></li>
 <li><a href="type_defs/#crawlertargetstypedef">CrawlerTargetsTypeDef</a></li>
 <li><a href="type_defs/#createclassifierrequestrequesttypedef">CreateClassifierRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createjobrequestrequesttypedef">CreateJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
-<li><a href="type_defs/#jobupdatetypedef">JobUpdateTypeDef</a></li>
 <li><a href="type_defs/#createpartitionindexrequestrequesttypedef">CreatePartitionIndexRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createschemainputrequesttypedef">CreateSchemaInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteregistryinputrequesttypedef">DeleteRegistryInputRequestTypeDef</a></li>
@@ -36512,6 +36574,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sessiontypedef">SessionTypeDef</a></li>
 <li><a href="type_defs/#datacatalogencryptionsettingstypedef">DataCatalogEncryptionSettingsTypeDef</a></li>
 <li><a href="type_defs/#principalpermissionstypedef">PrincipalPermissionsTypeDef</a></li>
+<li><a href="type_defs/#nullvaluefieldtypedef">NullValueFieldTypeDef</a></li>
 <li><a href="type_defs/#decimalcolumnstatisticsdatatypedef">DecimalColumnStatisticsDataTypeDef</a></li>
 <li><a href="type_defs/#deleteschemainputrequesttypedef">DeleteSchemaInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteschemaversionsinputrequesttypedef">DeleteSchemaVersionsInputRequestTypeDef</a></li>
@@ -36521,8 +36584,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#registerschemaversioninputrequesttypedef">RegisterSchemaVersionInputRequestTypeDef</a></li>
 <li><a href="type_defs/#schemareferencetypedef">SchemaReferenceTypeDef</a></li>
 <li><a href="type_defs/#updatedevendpointrequestrequesttypedef">UpdateDevEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#s3directtargettypedef">S3DirectTargetTypeDef</a></li>
+<li><a href="type_defs/#s3glueparquettargettypedef">S3GlueParquetTargetTypeDef</a></li>
 <li><a href="type_defs/#encryptionconfigurationtypedef">EncryptionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#schemaversionerroritemtypedef">SchemaVersionErrorItemTypeDef</a></li>
+<li><a href="type_defs/#filterexpressiontypedef">FilterExpressionTypeDef</a></li>
 <li><a href="type_defs/#transformparameterstypedef">TransformParametersTypeDef</a></li>
 <li><a href="type_defs/#getclassifiersrequestgetclassifierspaginatetypedef">GetClassifiersRequestGetClassifiersPaginateTypeDef</a></li>
 <li><a href="type_defs/#getcrawlermetricsrequestgetcrawlermetricspaginatetypedef">GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef</a></li>
@@ -36555,7 +36621,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getschemaversioninputrequesttypedef">GetSchemaVersionInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getschemaversionsdiffinputrequesttypedef">GetSchemaVersionsDiffInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updateschemainputrequesttypedef">UpdateSchemaInputRequestTypeDef</a></li>
+<li><a href="type_defs/#glueschematypedef">GlueSchemaTypeDef</a></li>
+<li><a href="type_defs/#governedcatalogsourcetypedef">GovernedCatalogSourceTypeDef</a></li>
+<li><a href="type_defs/#s3catalogsourcetypedef">S3CatalogSourceTypeDef</a></li>
 <li><a href="type_defs/#jobruntypedef">JobRunTypeDef</a></li>
+<li><a href="type_defs/#jointypedef">JoinTypeDef</a></li>
 <li><a href="type_defs/#taskrunpropertiestypedef">TaskRunPropertiesTypeDef</a></li>
 <li><a href="type_defs/#listregistriesresponsetypedef">ListRegistriesResponseTypeDef</a></li>
 <li><a href="type_defs/#listschemaversionsresponsetypedef">ListSchemaVersionsResponseTypeDef</a></li>
@@ -36565,6 +36635,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#putschemaversionmetadatainputrequesttypedef">PutSchemaVersionMetadataInputRequestTypeDef</a></li>
 <li><a href="type_defs/#queryschemaversionmetadatainputrequesttypedef">QuerySchemaVersionMetadataInputRequestTypeDef</a></li>
 <li><a href="type_defs/#removeschemaversionmetadatainputrequesttypedef">RemoveSchemaVersionMetadataInputRequestTypeDef</a></li>
+<li><a href="type_defs/#redshifttargettypedef">RedshiftTargetTypeDef</a></li>
 <li><a href="type_defs/#userdefinedfunctioninputtypedef">UserDefinedFunctionInputTypeDef</a></li>
 <li><a href="type_defs/#userdefinedfunctiontypedef">UserDefinedFunctionTypeDef</a></li>
 <li><a href="type_defs/#searchtablesrequestrequesttypedef">SearchTablesRequestRequestTypeDef</a></li>
@@ -36596,10 +36667,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#crawlertypedef">CrawlerTypeDef</a></li>
 <li><a href="type_defs/#createcrawlerrequestrequesttypedef">CreateCrawlerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecrawlerrequestrequesttypedef">UpdateCrawlerRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#batchgetjobsresponsetypedef">BatchGetJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#getjobresponsetypedef">GetJobResponseTypeDef</a></li>
-<li><a href="type_defs/#getjobsresponsetypedef">GetJobsResponseTypeDef</a></li>
-<li><a href="type_defs/#updatejobrequestrequesttypedef">UpdateJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createsessionresponsetypedef">CreateSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#getsessionresponsetypedef">GetSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#listsessionsresponsetypedef">ListSessionsResponseTypeDef</a></li>
@@ -36607,14 +36674,26 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#putdatacatalogencryptionsettingsrequestrequesttypedef">PutDataCatalogEncryptionSettingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#databaseinputtypedef">DatabaseInputTypeDef</a></li>
 <li><a href="type_defs/#databasetypedef">DatabaseTypeDef</a></li>
+<li><a href="type_defs/#dropnullfieldstypedef">DropNullFieldsTypeDef</a></li>
 <li><a href="type_defs/#columnstatisticsdatatypedef">ColumnStatisticsDataTypeDef</a></li>
 <li><a href="type_defs/#storagedescriptortypedef">StorageDescriptorTypeDef</a></li>
 <li><a href="type_defs/#createsecurityconfigurationrequestrequesttypedef">CreateSecurityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#securityconfigurationtypedef">SecurityConfigurationTypeDef</a></li>
 <li><a href="type_defs/#deleteschemaversionsresponsetypedef">DeleteSchemaVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
 <li><a href="type_defs/#updatemltransformrequestrequesttypedef">UpdateMLTransformRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmltransformsrequestrequesttypedef">GetMLTransformsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listmltransformsrequestrequesttypedef">ListMLTransformsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#athenaconnectorsourcetypedef">AthenaConnectorSourceTypeDef</a></li>
+<li><a href="type_defs/#customcodetypedef">CustomCodeTypeDef</a></li>
+<li><a href="type_defs/#jdbcconnectorsourcetypedef">JDBCConnectorSourceTypeDef</a></li>
+<li><a href="type_defs/#jdbcconnectortargettypedef">JDBCConnectorTargetTypeDef</a></li>
+<li><a href="type_defs/#s3csvsourcetypedef">S3CsvSourceTypeDef</a></li>
+<li><a href="type_defs/#s3jsonsourcetypedef">S3JsonSourceTypeDef</a></li>
+<li><a href="type_defs/#s3parquetsourcetypedef">S3ParquetSourceTypeDef</a></li>
+<li><a href="type_defs/#sparkconnectorsourcetypedef">SparkConnectorSourceTypeDef</a></li>
+<li><a href="type_defs/#sparkconnectortargettypedef">SparkConnectorTargetTypeDef</a></li>
+<li><a href="type_defs/#sparksqltypedef">SparkSQLTypeDef</a></li>
 <li><a href="type_defs/#getjobrunresponsetypedef">GetJobRunResponseTypeDef</a></li>
 <li><a href="type_defs/#getjobrunsresponsetypedef">GetJobRunsResponseTypeDef</a></li>
 <li><a href="type_defs/#jobnodedetailstypedef">JobNodeDetailsTypeDef</a></li>
@@ -36650,6 +36729,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tabletypedef">TableTypeDef</a></li>
 <li><a href="type_defs/#getsecurityconfigurationresponsetypedef">GetSecurityConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#getsecurityconfigurationsresponsetypedef">GetSecurityConfigurationsResponseTypeDef</a></li>
+<li><a href="type_defs/#codegenconfigurationnodetypedef">CodeGenConfigurationNodeTypeDef</a></li>
 <li><a href="type_defs/#getmltaskrunsresponsetypedef">GetMLTaskRunsResponseTypeDef</a></li>
 <li><a href="type_defs/#getstatementresponsetypedef">GetStatementResponseTypeDef</a></li>
 <li><a href="type_defs/#liststatementsresponsetypedef">ListStatementsResponseTypeDef</a></li>
@@ -36676,6 +36756,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getunfilteredtablemetadataresponsetypedef">GetUnfilteredTableMetadataResponseTypeDef</a></li>
 <li><a href="type_defs/#searchtablesresponsetypedef">SearchTablesResponseTypeDef</a></li>
 <li><a href="type_defs/#tableversiontypedef">TableVersionTypeDef</a></li>
+<li><a href="type_defs/#createjobrequestrequesttypedef">CreateJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
+<li><a href="type_defs/#jobupdatetypedef">JobUpdateTypeDef</a></li>
 <li><a href="type_defs/#workflowgraphtypedef">WorkflowGraphTypeDef</a></li>
 <li><a href="type_defs/#updatecolumnstatisticsforpartitionresponsetypedef">UpdateColumnStatisticsForPartitionResponseTypeDef</a></li>
 <li><a href="type_defs/#updatecolumnstatisticsfortableresponsetypedef">UpdateColumnStatisticsForTableResponseTypeDef</a></li>
@@ -36683,6 +36766,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getunfilteredpartitionsmetadataresponsetypedef">GetUnfilteredPartitionsMetadataResponseTypeDef</a></li>
 <li><a href="type_defs/#gettableversionresponsetypedef">GetTableVersionResponseTypeDef</a></li>
 <li><a href="type_defs/#gettableversionsresponsetypedef">GetTableVersionsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgetjobsresponsetypedef">BatchGetJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#getjobresponsetypedef">GetJobResponseTypeDef</a></li>
+<li><a href="type_defs/#getjobsresponsetypedef">GetJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatejobrequestrequesttypedef">UpdateJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#workflowruntypedef">WorkflowRunTypeDef</a></li>
 <li><a href="type_defs/#getworkflowrunresponsetypedef">GetWorkflowRunResponseTypeDef</a></li>
 <li><a href="type_defs/#getworkflowrunsresponsetypedef">GetWorkflowRunsResponseTypeDef</a></li>

@@ -949,7 +949,8 @@ def create_job(
     GlueVersion: str = ...,
     NumberOfWorkers: int = ...,
     WorkerType: WorkerTypeType = ...,  # (5)
-) -> CreateJobResponseTypeDef:  # (6)
+    CodeGenConfigurationNodes: Mapping[str, CodeGenConfigurationNodeTypeDef] = ...,  # (6)
+) -> CreateJobResponseTypeDef:  # (7)
     ...
 ```
 
@@ -958,7 +959,8 @@ def create_job(
 3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
 4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
-6. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
+6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
+7. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
