@@ -36083,6 +36083,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#grpcretrypolicyeventtype">GrpcRetryPolicyEventType</a></li>
 <li><a href="literals/#httpmethodtype">HttpMethodType</a></li>
 <li><a href="literals/#httpschemetype">HttpSchemeType</a></li>
+<li><a href="literals/#ippreferencetype">IpPreferenceType</a></li>
 <li><a href="literals/#listgatewayroutespaginatorname">ListGatewayRoutesPaginatorName</a></li>
 <li><a href="literals/#listmeshespaginatorname">ListMeshesPaginatorName</a></li>
 <li><a href="literals/#listroutespaginatorname">ListRoutesPaginatorName</a></li>
@@ -36174,6 +36175,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tlsvalidationcontextsdstrusttypedef">TlsValidationContextSdsTrustTypeDef</a></li>
 <li><a href="type_defs/#portmappingtypedef">PortMappingTypeDef</a></li>
 <li><a href="type_defs/#meshstatustypedef">MeshStatusTypeDef</a></li>
+<li><a href="type_defs/#meshservicediscoverytypedef">MeshServiceDiscoveryTypeDef</a></li>
 <li><a href="type_defs/#routestatustypedef">RouteStatusTypeDef</a></li>
 <li><a href="type_defs/#subjectalternativenamematcherstypedef">SubjectAlternativeNameMatchersTypeDef</a></li>
 <li><a href="type_defs/#tlsvalidationcontextacmtrusttypedef">TlsValidationContextAcmTrustTypeDef</a></li>
@@ -36211,7 +36213,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#httptimeouttypedef">HttpTimeoutTypeDef</a></li>
 <li><a href="type_defs/#outlierdetectiontypedef">OutlierDetectionTypeDef</a></li>
 <li><a href="type_defs/#tcptimeouttypedef">TcpTimeoutTypeDef</a></li>
-<li><a href="type_defs/#meshspectypedef">MeshSpecTypeDef</a></li>
 <li><a href="type_defs/#grpcgatewayrouterewritetypedef">GrpcGatewayRouteRewriteTypeDef</a></li>
 <li><a href="type_defs/#listgatewayroutesoutputtypedef">ListGatewayRoutesOutputTypeDef</a></li>
 <li><a href="type_defs/#gatewayroutetargettypedef">GatewayRouteTargetTypeDef</a></li>
@@ -36240,6 +36241,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listenertlscertificatetypedef">ListenerTlsCertificateTypeDef</a></li>
 <li><a href="type_defs/#listenertlsvalidationcontexttrusttypedef">ListenerTlsValidationContextTrustTypeDef</a></li>
 <li><a href="type_defs/#virtualrouterlistenertypedef">VirtualRouterListenerTypeDef</a></li>
+<li><a href="type_defs/#meshspectypedef">MeshSpecTypeDef</a></li>
 <li><a href="type_defs/#subjectalternativenamestypedef">SubjectAlternativeNamesTypeDef</a></li>
 <li><a href="type_defs/#tlsvalidationcontexttrusttypedef">TlsValidationContextTrustTypeDef</a></li>
 <li><a href="type_defs/#virtualgatewayaccesslogtypedef">VirtualGatewayAccessLogTypeDef</a></li>
@@ -36253,9 +36255,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#loggingtypedef">LoggingTypeDef</a></li>
 <li><a href="type_defs/#servicediscoverytypedef">ServiceDiscoveryTypeDef</a></li>
 <li><a href="type_defs/#listenertimeouttypedef">ListenerTimeoutTypeDef</a></li>
-<li><a href="type_defs/#createmeshinputrequesttypedef">CreateMeshInputRequestTypeDef</a></li>
-<li><a href="type_defs/#meshdatatypedef">MeshDataTypeDef</a></li>
-<li><a href="type_defs/#updatemeshinputrequesttypedef">UpdateMeshInputRequestTypeDef</a></li>
 <li><a href="type_defs/#grpcgatewayrouteactiontypedef">GrpcGatewayRouteActionTypeDef</a></li>
 <li><a href="type_defs/#grpcgatewayroutemetadatatypedef">GrpcGatewayRouteMetadataTypeDef</a></li>
 <li><a href="type_defs/#grpcroutemetadatatypedef">GrpcRouteMetadataTypeDef</a></li>
@@ -36264,16 +36263,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tcproutetypedef">TcpRouteTypeDef</a></li>
 <li><a href="type_defs/#httpgatewayrouteactiontypedef">HttpGatewayRouteActionTypeDef</a></li>
 <li><a href="type_defs/#virtualrouterspectypedef">VirtualRouterSpecTypeDef</a></li>
+<li><a href="type_defs/#createmeshinputrequesttypedef">CreateMeshInputRequestTypeDef</a></li>
+<li><a href="type_defs/#meshdatatypedef">MeshDataTypeDef</a></li>
+<li><a href="type_defs/#updatemeshinputrequesttypedef">UpdateMeshInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listenertlsvalidationcontexttypedef">ListenerTlsValidationContextTypeDef</a></li>
 <li><a href="type_defs/#tlsvalidationcontexttypedef">TlsValidationContextTypeDef</a></li>
 <li><a href="type_defs/#virtualgatewayloggingtypedef">VirtualGatewayLoggingTypeDef</a></li>
 <li><a href="type_defs/#virtualgatewaylistenertlsvalidationcontexttypedef">VirtualGatewayListenerTlsValidationContextTypeDef</a></li>
 <li><a href="type_defs/#virtualgatewaytlsvalidationcontexttypedef">VirtualGatewayTlsValidationContextTypeDef</a></li>
 <li><a href="type_defs/#virtualservicespectypedef">VirtualServiceSpecTypeDef</a></li>
-<li><a href="type_defs/#createmeshoutputtypedef">CreateMeshOutputTypeDef</a></li>
-<li><a href="type_defs/#deletemeshoutputtypedef">DeleteMeshOutputTypeDef</a></li>
-<li><a href="type_defs/#describemeshoutputtypedef">DescribeMeshOutputTypeDef</a></li>
-<li><a href="type_defs/#updatemeshoutputtypedef">UpdateMeshOutputTypeDef</a></li>
 <li><a href="type_defs/#grpcgatewayroutematchtypedef">GrpcGatewayRouteMatchTypeDef</a></li>
 <li><a href="type_defs/#grpcroutematchtypedef">GrpcRouteMatchTypeDef</a></li>
 <li><a href="type_defs/#httpgatewayroutematchtypedef">HttpGatewayRouteMatchTypeDef</a></li>
@@ -36281,6 +36279,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createvirtualrouterinputrequesttypedef">CreateVirtualRouterInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatevirtualrouterinputrequesttypedef">UpdateVirtualRouterInputRequestTypeDef</a></li>
 <li><a href="type_defs/#virtualrouterdatatypedef">VirtualRouterDataTypeDef</a></li>
+<li><a href="type_defs/#createmeshoutputtypedef">CreateMeshOutputTypeDef</a></li>
+<li><a href="type_defs/#deletemeshoutputtypedef">DeleteMeshOutputTypeDef</a></li>
+<li><a href="type_defs/#describemeshoutputtypedef">DescribeMeshOutputTypeDef</a></li>
+<li><a href="type_defs/#updatemeshoutputtypedef">UpdateMeshOutputTypeDef</a></li>
 <li><a href="type_defs/#listenertlstypedef">ListenerTlsTypeDef</a></li>
 <li><a href="type_defs/#clientpolicytlstypedef">ClientPolicyTlsTypeDef</a></li>
 <li><a href="type_defs/#virtualgatewaylistenertlstypedef">VirtualGatewayListenerTlsTypeDef</a></li>

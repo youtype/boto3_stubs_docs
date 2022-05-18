@@ -378,6 +378,22 @@ RecipeOutputFormatType = Literal[
     "YAML",
 ]
 ```
+## VendorGuidanceType
+
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.literals import VendorGuidanceType
+
+def get_value() -> VendorGuidanceType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+VendorGuidanceType = Literal[
+    "ACTIVE",
+    "DELETED",
+    "DISCONTINUED",
+]
+```
 ## GreengrassV2ServiceName
 
 ```python title="Usage Example"

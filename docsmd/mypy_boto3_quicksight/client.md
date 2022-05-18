@@ -3896,6 +3896,37 @@ parent.update_ip_restriction(**kwargs)
 
 1. See [:material-code-braces: UpdateIpRestrictionRequestRequestTypeDef](./type_defs.md#updateiprestrictionrequestrequesttypedef) 
 
+### update\_public\_sharing\_settings
+
+Use the UpdatePublicSharingSettings operation to enable or disable the public
+sharing settings of an Amazon QuickSight dashboard.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").update_public_sharing_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_public_sharing_settings)
+
+```python title="Method definition"
+def update_public_sharing_settings(
+    self,
+    *,
+    AwsAccountId: str,
+    PublicSharingEnabled: bool = ...,
+) -> UpdatePublicSharingSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdatePublicSharingSettingsResponseTypeDef](./type_defs.md#updatepublicsharingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdatePublicSharingSettingsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
+
+parent.update_public_sharing_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdatePublicSharingSettingsRequestRequestTypeDef](./type_defs.md#updatepublicsharingsettingsrequestrequesttypedef) 
+
 ### update\_template
 
 Updates a template from an existing Amazon QuickSight analysis or another

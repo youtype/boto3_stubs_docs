@@ -138,6 +138,23 @@ HttpSchemeType = Literal[
     "https",
 ]
 ```
+## IpPreferenceType
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.literals import IpPreferenceType
+
+def get_value() -> IpPreferenceType:
+    return "IPv4_ONLY"
+```
+
+```python title="Definition"
+IpPreferenceType = Literal[
+    "IPv4_ONLY",
+    "IPv4_PREFERRED",
+    "IPv6_ONLY",
+    "IPv6_PREFERRED",
+]
+```
 ## ListGatewayRoutesPaginatorName
 
 ```python title="Usage Example"

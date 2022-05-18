@@ -400,10 +400,12 @@ def get_value() -> DnsServiceDiscoveryTypeDef:
 ```python title="Definition"
 class DnsServiceDiscoveryTypeDef(TypedDict):
     hostname: str,
-    responseType: NotRequired[DnsResponseTypeType],  # (1)
+    ipPreference: NotRequired[IpPreferenceType],  # (1)
+    responseType: NotRequired[DnsResponseTypeType],  # (2)
 ```
 
-1. See [:material-code-brackets: DnsResponseTypeType](./literals.md#dnsresponsetypetype) 
+1. See [:material-code-brackets: IpPreferenceType](./literals.md#ippreferencetype) 
+2. See [:material-code-brackets: DnsResponseTypeType](./literals.md#dnsresponsetypetype) 
 ## DurationTypeDef
 
 ```python title="Usage Example"
@@ -1131,6 +1133,23 @@ class MeshStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MeshStatusCodeType](./literals.md#meshstatuscodetype) 
+## MeshServiceDiscoveryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import MeshServiceDiscoveryTypeDef
+
+def get_value() -> MeshServiceDiscoveryTypeDef:
+    return {
+        "ipPreference": ...,
+    }
+```
+
+```python title="Definition"
+class MeshServiceDiscoveryTypeDef(TypedDict):
+    ipPreference: NotRequired[IpPreferenceType],  # (1)
+```
+
+1. See [:material-code-brackets: IpPreferenceType](./literals.md#ippreferencetype) 
 ## RouteStatusTypeDef
 
 ```python title="Usage Example"
@@ -1606,9 +1625,11 @@ class AwsCloudMapServiceDiscoveryTypeDef(TypedDict):
     namespaceName: str,
     serviceName: str,
     attributes: NotRequired[Sequence[AwsCloudMapInstanceAttributeTypeDef]],  # (1)
+    ipPreference: NotRequired[IpPreferenceType],  # (2)
 ```
 
 1. See [:material-code-braces: AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef) 
+2. See [:material-code-brackets: IpPreferenceType](./literals.md#ippreferencetype) 
 ## ClientTlsCertificateTypeDef
 
 ```python title="Usage Example"
@@ -1794,23 +1815,6 @@ class TcpTimeoutTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
-## MeshSpecTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import MeshSpecTypeDef
-
-def get_value() -> MeshSpecTypeDef:
-    return {
-        "egressFilter": ...,
-    }
-```
-
-```python title="Definition"
-class MeshSpecTypeDef(TypedDict):
-    egressFilter: NotRequired[EgressFilterTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: EgressFilterTypeDef](./type_defs.md#egressfiltertypedef) 
 ## GrpcGatewayRouteRewriteTypeDef
 
 ```python title="Usage Example"
@@ -2362,6 +2366,25 @@ class VirtualRouterListenerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
+## MeshSpecTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import MeshSpecTypeDef
+
+def get_value() -> MeshSpecTypeDef:
+    return {
+        "egressFilter": ...,
+    }
+```
+
+```python title="Definition"
+class MeshSpecTypeDef(TypedDict):
+    egressFilter: NotRequired[EgressFilterTypeDef],  # (1)
+    serviceDiscovery: NotRequired[MeshServiceDiscoveryTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EgressFilterTypeDef](./type_defs.md#egressfiltertypedef) 
+2. See [:material-code-braces: MeshServiceDiscoveryTypeDef](./type_defs.md#meshservicediscoverytypedef) 
 ## SubjectAlternativeNamesTypeDef
 
 ```python title="Usage Example"
@@ -2619,71 +2642,6 @@ class ListenerTimeoutTypeDef(TypedDict):
 2. See [:material-code-braces: HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef) 
 3. See [:material-code-braces: HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef) 
 4. See [:material-code-braces: TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef) 
-## CreateMeshInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import CreateMeshInputRequestTypeDef
-
-def get_value() -> CreateMeshInputRequestTypeDef:
-    return {
-        "meshName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeshInputRequestTypeDef(TypedDict):
-    meshName: str,
-    clientToken: NotRequired[str],
-    spec: NotRequired[MeshSpecTypeDef],  # (1)
-    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
-2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
-## MeshDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import MeshDataTypeDef
-
-def get_value() -> MeshDataTypeDef:
-    return {
-        "meshName": ...,
-        "metadata": ...,
-        "spec": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class MeshDataTypeDef(TypedDict):
-    meshName: str,
-    metadata: ResourceMetadataTypeDef,  # (1)
-    spec: MeshSpecTypeDef,  # (2)
-    status: MeshStatusTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
-2. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
-3. See [:material-code-braces: MeshStatusTypeDef](./type_defs.md#meshstatustypedef) 
-## UpdateMeshInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import UpdateMeshInputRequestTypeDef
-
-def get_value() -> UpdateMeshInputRequestTypeDef:
-    return {
-        "meshName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateMeshInputRequestTypeDef(TypedDict):
-    meshName: str,
-    clientToken: NotRequired[str],
-    spec: NotRequired[MeshSpecTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
 ## GrpcGatewayRouteActionTypeDef
 
 ```python title="Usage Example"
@@ -2834,6 +2792,71 @@ class VirtualRouterSpecTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef) 
+## CreateMeshInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import CreateMeshInputRequestTypeDef
+
+def get_value() -> CreateMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+    clientToken: NotRequired[str],
+    spec: NotRequired[MeshSpecTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+## MeshDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import MeshDataTypeDef
+
+def get_value() -> MeshDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class MeshDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: MeshSpecTypeDef,  # (2)
+    status: MeshStatusTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+3. See [:material-code-braces: MeshStatusTypeDef](./type_defs.md#meshstatustypedef) 
+## UpdateMeshInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import UpdateMeshInputRequestTypeDef
+
+def get_value() -> UpdateMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+    clientToken: NotRequired[str],
+    spec: NotRequired[MeshSpecTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
 ## ListenerTlsValidationContextTypeDef
 
 ```python title="Usage Example"
@@ -2944,86 +2967,6 @@ class VirtualServiceSpecTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VirtualServiceProviderTypeDef](./type_defs.md#virtualserviceprovidertypedef) 
-## CreateMeshOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import CreateMeshOutputTypeDef
-
-def get_value() -> CreateMeshOutputTypeDef:
-    return {
-        "mesh": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMeshOutputTypeDef(TypedDict):
-    mesh: MeshDataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteMeshOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import DeleteMeshOutputTypeDef
-
-def get_value() -> DeleteMeshOutputTypeDef:
-    return {
-        "mesh": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMeshOutputTypeDef(TypedDict):
-    mesh: MeshDataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeMeshOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import DescribeMeshOutputTypeDef
-
-def get_value() -> DescribeMeshOutputTypeDef:
-    return {
-        "mesh": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMeshOutputTypeDef(TypedDict):
-    mesh: MeshDataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateMeshOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appmesh.type_defs import UpdateMeshOutputTypeDef
-
-def get_value() -> UpdateMeshOutputTypeDef:
-    return {
-        "mesh": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateMeshOutputTypeDef(TypedDict):
-    mesh: MeshDataTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GrpcGatewayRouteMatchTypeDef
 
 ```python title="Usage Example"
@@ -3190,6 +3133,86 @@ class VirtualRouterDataTypeDef(TypedDict):
 1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
 2. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
 3. See [:material-code-braces: VirtualRouterStatusTypeDef](./type_defs.md#virtualrouterstatustypedef) 
+## CreateMeshOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import CreateMeshOutputTypeDef
+
+def get_value() -> CreateMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMeshOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import DeleteMeshOutputTypeDef
+
+def get_value() -> DeleteMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMeshOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import DescribeMeshOutputTypeDef
+
+def get_value() -> DescribeMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMeshOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import UpdateMeshOutputTypeDef
+
+def get_value() -> UpdateMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListenerTlsTypeDef
 
 ```python title="Usage Example"

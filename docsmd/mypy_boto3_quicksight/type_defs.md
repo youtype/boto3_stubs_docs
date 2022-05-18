@@ -41,6 +41,7 @@ class AccountSettingsTypeDef(TypedDict):
     Edition: NotRequired[EditionType],  # (1)
     DefaultNamespace: NotRequired[str],
     NotificationEmail: NotRequired[str],
+    PublicSharingEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: EditionType](./literals.md#editiontype) 
@@ -3556,6 +3557,23 @@ class UpdateIpRestrictionRequestRequestTypeDef(TypedDict):
     Enabled: NotRequired[bool],
 ```
 
+## UpdatePublicSharingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdatePublicSharingSettingsRequestRequestTypeDef
+
+def get_value() -> UpdatePublicSharingSettingsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePublicSharingSettingsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    PublicSharingEnabled: NotRequired[bool],
+```
+
 ## UpdateTemplateAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5189,6 +5207,27 @@ def get_value() -> UpdateIpRestrictionResponseTypeDef:
 ```python title="Definition"
 class UpdateIpRestrictionResponseTypeDef(TypedDict):
     AwsAccountId: str,
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdatePublicSharingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdatePublicSharingSettingsResponseTypeDef
+
+def get_value() -> UpdatePublicSharingSettingsResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePublicSharingSettingsResponseTypeDef(TypedDict):
     RequestId: str,
     Status: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)

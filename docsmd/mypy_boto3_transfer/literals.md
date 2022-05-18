@@ -280,6 +280,21 @@ ServerOnlineWaiterName = Literal[
     "server_online",
 ]
 ```
+## SetStatOptionType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import SetStatOptionType
+
+def get_value() -> SetStatOptionType:
+    return "DEFAULT"
+```
+
+```python title="Definition"
+SetStatOptionType = Literal[
+    "DEFAULT",
+    "ENABLE_NO_OP",
+]
+```
 ## StateType
 
 ```python title="Usage Example"

@@ -83,6 +83,36 @@ parent.batch_acknowledge_alarm(**kwargs)
 
 1. See [:material-code-braces: BatchAcknowledgeAlarmRequestRequestTypeDef](./type_defs.md#batchacknowledgealarmrequestrequesttypedef) 
 
+### batch\_delete\_detector
+
+Deletes one or more detectors that were created.
+
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_delete_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_delete_detector)
+
+```python title="Method definition"
+def batch_delete_detector(
+    self,
+    *,
+    detectors: Sequence[DeleteDetectorRequestTypeDef],  # (1)
+) -> BatchDeleteDetectorResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DeleteDetectorRequestTypeDef](./type_defs.md#deletedetectorrequesttypedef) 
+2. See [:material-code-braces: BatchDeleteDetectorResponseTypeDef](./type_defs.md#batchdeletedetectorresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteDetectorRequestRequestTypeDef = {  # (1)
+    "detectors": ...,
+}
+
+parent.batch_delete_detector(**kwargs)
+```
+
+1. See [:material-code-braces: BatchDeleteDetectorRequestRequestTypeDef](./type_defs.md#batchdeletedetectorrequestrequesttypedef) 
+
 ### batch\_disable\_alarm
 
 Disables one or more alarms.

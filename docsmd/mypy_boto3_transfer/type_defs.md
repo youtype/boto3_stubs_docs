@@ -122,9 +122,11 @@ def get_value() -> ProtocolDetailsTypeDef:
 class ProtocolDetailsTypeDef(TypedDict):
     PassiveIp: NotRequired[str],
     TlsSessionResumptionMode: NotRequired[TlsSessionResumptionModeType],  # (1)
+    SetStatOption: NotRequired[SetStatOptionType],  # (2)
 ```
 
 1. See [:material-code-brackets: TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype) 
+2. See [:material-code-brackets: SetStatOptionType](./literals.md#setstatoptiontype) 
 ## TagTypeDef
 
 ```python title="Usage Example"

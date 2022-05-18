@@ -138,6 +138,7 @@ def get_value() -> CustomStepStatusType:
 - [ProtocolType](./literals.md#protocoltype)
 - [ServerOfflineWaiterName](./literals.md#serverofflinewaitername)
 - [ServerOnlineWaiterName](./literals.md#serveronlinewaitername)
+- [SetStatOptionType](./literals.md#setstatoptiontype)
 - [StateType](./literals.md#statetype)
 - [TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype)
 - [WorkflowStepTypeType](./literals.md#workflowsteptypetype)

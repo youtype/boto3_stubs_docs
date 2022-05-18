@@ -107,6 +107,7 @@ def get_value() -> AlarmTypeType:
 - [ResilienceHubServiceName](./literals.md#resiliencehubservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

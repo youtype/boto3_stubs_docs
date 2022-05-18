@@ -164,9 +164,12 @@ class CloudComponentStatusTypeDef(TypedDict):
     componentState: NotRequired[CloudComponentStateType],  # (1)
     message: NotRequired[str],
     errors: NotRequired[Dict[str, str]],
+    vendorGuidance: NotRequired[VendorGuidanceType],  # (2)
+    vendorGuidanceMessage: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: CloudComponentStateType](./literals.md#cloudcomponentstatetype) 
+2. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
 ## ComponentCandidateTypeDef
 
 ```python title="Usage Example"
@@ -340,6 +343,22 @@ def get_value() -> DeleteCoreDeviceRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteCoreDeviceRequestRequestTypeDef(TypedDict):
     coreDeviceThingName: str,
+```
+
+## DeleteDeploymentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import DeleteDeploymentRequestRequestTypeDef
+
+def get_value() -> DeleteDeploymentRequestRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDeploymentRequestRequestTypeDef(TypedDict):
+    deploymentId: str,
 ```
 
 ## DeploymentComponentUpdatePolicyTypeDef
@@ -849,8 +868,11 @@ class ResolvedComponentVersionTypeDef(TypedDict):
     componentName: NotRequired[str],
     componentVersion: NotRequired[str],
     recipe: NotRequired[bytes],
+    vendorGuidance: NotRequired[VendorGuidanceType],  # (1)
+    message: NotRequired[str],
 ```
 
+1. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1296,14 +1318,13 @@ from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesRequestR
 def get_value() -> ResolveComponentCandidatesRequestRequestTypeDef:
     return {
         "platform": ...,
-        "componentCandidates": ...,
     }
 ```
 
 ```python title="Definition"
 class ResolveComponentCandidatesRequestRequestTypeDef(TypedDict):
-    platform: ComponentPlatformTypeDef,  # (1)
-    componentCandidates: Sequence[ComponentCandidateTypeDef],  # (2)
+    platform: NotRequired[ComponentPlatformTypeDef],  # (1)
+    componentCandidates: NotRequired[Sequence[ComponentCandidateTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 

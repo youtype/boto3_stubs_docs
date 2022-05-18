@@ -108,6 +108,44 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## BatchDeleteDetectorErrorEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotevents_data.type_defs import BatchDeleteDetectorErrorEntryTypeDef
+
+def get_value() -> BatchDeleteDetectorErrorEntryTypeDef:
+    return {
+        "messageId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteDetectorErrorEntryTypeDef(TypedDict):
+    messageId: NotRequired[str],
+    errorCode: NotRequired[ErrorCodeType],  # (1)
+    errorMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+## DeleteDetectorRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotevents_data.type_defs import DeleteDetectorRequestTypeDef
+
+def get_value() -> DeleteDetectorRequestTypeDef:
+    return {
+        "messageId": ...,
+        "detectorModelName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDetectorRequestTypeDef(TypedDict):
+    messageId: str,
+    detectorModelName: str,
+    keyValue: NotRequired[str],
+```
+
 ## DisableAlarmActionRequestTypeDef
 
 ```python title="Usage Example"
@@ -643,6 +681,43 @@ class ListAlarmsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AlarmSummaryTypeDef](./type_defs.md#alarmsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDeleteDetectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotevents_data.type_defs import BatchDeleteDetectorResponseTypeDef
+
+def get_value() -> BatchDeleteDetectorResponseTypeDef:
+    return {
+        "batchDeleteDetectorErrorEntries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteDetectorResponseTypeDef(TypedDict):
+    batchDeleteDetectorErrorEntries: List[BatchDeleteDetectorErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchDeleteDetectorErrorEntryTypeDef](./type_defs.md#batchdeletedetectorerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDeleteDetectorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotevents_data.type_defs import BatchDeleteDetectorRequestRequestTypeDef
+
+def get_value() -> BatchDeleteDetectorRequestRequestTypeDef:
+    return {
+        "detectors": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteDetectorRequestRequestTypeDef(TypedDict):
+    detectors: Sequence[DeleteDetectorRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DeleteDetectorRequestTypeDef](./type_defs.md#deletedetectorrequesttypedef) 
 ## BatchDisableAlarmRequestRequestTypeDef
 
 ```python title="Usage Example"
