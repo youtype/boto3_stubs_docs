@@ -185,6 +185,22 @@ OperationType = Literal[
     "REPLACE",
 ]
 ```
+## ResultCodeType
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.literals import ResultCodeType
+
+def get_value() -> ResultCodeType:
+    return "INVALID_ROLE_FAILURE"
+```
+
+```python title="Definition"
+ResultCodeType = Literal[
+    "INVALID_ROLE_FAILURE",
+    "SUCCESS",
+    "UNSPECIFIED_FAILURE",
+]
+```
 ## StageStateType
 
 ```python title="Usage Example"

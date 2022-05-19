@@ -189,6 +189,22 @@ RelationshipTypeType = Literal[
     "EFFECT_OF_INPUT_ANOMALY_GROUP",
 ]
 ```
+## SnsFormatType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.literals import SnsFormatType
+
+def get_value() -> SnsFormatType:
+    return "JSON"
+```
+
+```python title="Definition"
+SnsFormatType = Literal[
+    "JSON",
+    "LONG_TEXT",
+    "SHORT_TEXT",
+]
+```
 ## LookoutMetricsServiceName
 
 ```python title="Usage Example"

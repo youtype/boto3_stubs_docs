@@ -41,8 +41,10 @@ def get_value() -> SNSConfigurationTypeDef:
 class SNSConfigurationTypeDef(TypedDict):
     RoleArn: str,
     SnsTopicArn: str,
+    SnsFormat: NotRequired[SnsFormatType],  # (1)
 ```
 
+1. See [:material-code-brackets: SnsFormatType](./literals.md#snsformattype) 
 ## ActivateAnomalyDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"

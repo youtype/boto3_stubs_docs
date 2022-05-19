@@ -90,6 +90,7 @@ def get_value() -> AggregationFunctionType:
 - [FrequencyType](./literals.md#frequencytype)
 - [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
 - [RelationshipTypeType](./literals.md#relationshiptypetype)
+- [SnsFormatType](./literals.md#snsformattype)
 - [LookoutMetricsServiceName](./literals.md#lookoutmetricsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)

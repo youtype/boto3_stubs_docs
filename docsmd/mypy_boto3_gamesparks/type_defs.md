@@ -191,6 +191,24 @@ class DeleteStageRequestRequestTypeDef(TypedDict):
     StageName: str,
 ```
 
+## DeploymentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import DeploymentResultTypeDef
+
+def get_value() -> DeploymentResultTypeDef:
+    return {
+        "Message": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentResultTypeDef(TypedDict):
+    Message: NotRequired[str],
+    ResultCode: NotRequired[ResultCodeType],  # (1)
+```
+
+1. See [:material-code-brackets: ResultCodeType](./literals.md#resultcodetype) 
 ## DisconnectPlayerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -492,29 +510,6 @@ class GetStageDeploymentRequestRequestTypeDef(TypedDict):
     DeploymentId: NotRequired[str],
 ```
 
-## StageDeploymentDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_gamesparks.type_defs import StageDeploymentDetailsTypeDef
-
-def get_value() -> StageDeploymentDetailsTypeDef:
-    return {
-        "Created": ...,
-    }
-```
-
-```python title="Definition"
-class StageDeploymentDetailsTypeDef(TypedDict):
-    Created: NotRequired[datetime],
-    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
-    DeploymentId: NotRequired[str],
-    DeploymentState: NotRequired[DeploymentStateType],  # (2)
-    LastUpdated: NotRequired[datetime],
-    SnapshotId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
-2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## GetStageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -698,28 +693,6 @@ class ListStageDeploymentsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## StageDeploymentSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_gamesparks.type_defs import StageDeploymentSummaryTypeDef
-
-def get_value() -> StageDeploymentSummaryTypeDef:
-    return {
-        "DeploymentAction": ...,
-    }
-```
-
-```python title="Definition"
-class StageDeploymentSummaryTypeDef(TypedDict):
-    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
-    DeploymentId: NotRequired[str],
-    DeploymentState: NotRequired[DeploymentStateType],  # (2)
-    LastUpdated: NotRequired[datetime],
-    SnapshotId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
-2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## ListStagesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1128,6 +1101,55 @@ class UpdateStageResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: StageDetailsTypeDef](./type_defs.md#stagedetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StageDeploymentDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import StageDeploymentDetailsTypeDef
+
+def get_value() -> StageDeploymentDetailsTypeDef:
+    return {
+        "Created": ...,
+    }
+```
+
+```python title="Definition"
+class StageDeploymentDetailsTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
+    DeploymentId: NotRequired[str],
+    DeploymentResult: NotRequired[DeploymentResultTypeDef],  # (2)
+    DeploymentState: NotRequired[DeploymentStateType],  # (3)
+    LastUpdated: NotRequired[datetime],
+    SnapshotId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
+2. See [:material-code-braces: DeploymentResultTypeDef](./type_defs.md#deploymentresulttypedef) 
+3. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
+## StageDeploymentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import StageDeploymentSummaryTypeDef
+
+def get_value() -> StageDeploymentSummaryTypeDef:
+    return {
+        "DeploymentAction": ...,
+    }
+```
+
+```python title="Definition"
+class StageDeploymentSummaryTypeDef(TypedDict):
+    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
+    DeploymentId: NotRequired[str],
+    DeploymentResult: NotRequired[DeploymentResultTypeDef],  # (2)
+    DeploymentState: NotRequired[DeploymentStateType],  # (3)
+    LastUpdated: NotRequired[datetime],
+    SnapshotId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
+2. See [:material-code-braces: DeploymentResultTypeDef](./type_defs.md#deploymentresulttypedef) 
+3. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## GetExtensionResultTypeDef
 
 ```python title="Usage Example"
@@ -1337,46 +1359,6 @@ class StartGeneratedCodeJobRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GeneratorTypeDef](./type_defs.md#generatortypedef) 
-## GetStageDeploymentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_gamesparks.type_defs import GetStageDeploymentResultTypeDef
-
-def get_value() -> GetStageDeploymentResultTypeDef:
-    return {
-        "StageDeployment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetStageDeploymentResultTypeDef(TypedDict):
-    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartStageDeploymentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_gamesparks.type_defs import StartStageDeploymentResultTypeDef
-
-def get_value() -> StartStageDeploymentResultTypeDef:
-    return {
-        "StageDeployment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartStageDeploymentResultTypeDef(TypedDict):
-    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportGameConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1548,28 +1530,6 @@ class ListSnapshotsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: SnapshotSummaryTypeDef](./type_defs.md#snapshotsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStageDeploymentsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_gamesparks.type_defs import ListStageDeploymentsResultTypeDef
-
-def get_value() -> ListStageDeploymentsResultTypeDef:
-    return {
-        "NextToken": ...,
-        "StageDeployments": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListStageDeploymentsResultTypeDef(TypedDict):
-    NextToken: str,
-    StageDeployments: List[StageDeploymentSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StageDeploymentSummaryTypeDef](./type_defs.md#stagedeploymentsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStagesResultTypeDef
 
 ```python title="Usage Example"
@@ -1611,6 +1571,68 @@ class UpdateGameConfigurationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SectionModificationTypeDef](./type_defs.md#sectionmodificationtypedef) 
+## GetStageDeploymentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import GetStageDeploymentResultTypeDef
+
+def get_value() -> GetStageDeploymentResultTypeDef:
+    return {
+        "StageDeployment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStageDeploymentResultTypeDef(TypedDict):
+    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartStageDeploymentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import StartStageDeploymentResultTypeDef
+
+def get_value() -> StartStageDeploymentResultTypeDef:
+    return {
+        "StageDeployment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartStageDeploymentResultTypeDef(TypedDict):
+    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStageDeploymentsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListStageDeploymentsResultTypeDef
+
+def get_value() -> ListStageDeploymentsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "StageDeployments": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStageDeploymentsResultTypeDef(TypedDict):
+    NextToken: str,
+    StageDeployments: List[StageDeploymentSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StageDeploymentSummaryTypeDef](./type_defs.md#stagedeploymentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGameConfigurationResultTypeDef
 
 ```python title="Usage Example"

@@ -36086,6 +36086,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#liststagedeploymentspaginatorname">ListStageDeploymentsPaginatorName</a></li>
 <li><a href="literals/#liststagespaginatorname">ListStagesPaginatorName</a></li>
 <li><a href="literals/#operationtype">OperationType</a></li>
+<li><a href="literals/#resultcodetype">ResultCodeType</a></li>
 <li><a href="literals/#stagestatetype">StageStateType</a></li>
 <li><a href="literals/#gamesparksservicename">GameSparksServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -36112,6 +36113,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#stagedetailstypedef">StageDetailsTypeDef</a></li>
 <li><a href="type_defs/#deletegamerequestrequesttypedef">DeleteGameRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestagerequestrequesttypedef">DeleteStageRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymentresulttypedef">DeploymentResultTypeDef</a></li>
 <li><a href="type_defs/#disconnectplayerrequestrequesttypedef">DisconnectPlayerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportsnapshotrequestrequesttypedef">ExportSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#extensiondetailstypedef">ExtensionDetailsTypeDef</a></li>
@@ -36128,7 +36130,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getplayerconnectionstatusrequestrequesttypedef">GetPlayerConnectionStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getsnapshotrequestrequesttypedef">GetSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getstagedeploymentrequestrequesttypedef">GetStageDeploymentRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stagedeploymentdetailstypedef">StageDeploymentDetailsTypeDef</a></li>
 <li><a href="type_defs/#getstagerequestrequesttypedef">GetStageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#importgameconfigurationsourcetypedef">ImportGameConfigurationSourceTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
@@ -36139,7 +36140,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listsnapshotsrequestrequesttypedef">ListSnapshotsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#snapshotsummarytypedef">SnapshotSummaryTypeDef</a></li>
 <li><a href="type_defs/#liststagedeploymentsrequestrequesttypedef">ListStageDeploymentsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stagedeploymentsummarytypedef">StageDeploymentSummaryTypeDef</a></li>
 <li><a href="type_defs/#liststagesrequestrequesttypedef">ListStagesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stagesummarytypedef">StageSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
@@ -36161,6 +36161,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createstageresulttypedef">CreateStageResultTypeDef</a></li>
 <li><a href="type_defs/#getstageresulttypedef">GetStageResultTypeDef</a></li>
 <li><a href="type_defs/#updatestageresulttypedef">UpdateStageResultTypeDef</a></li>
+<li><a href="type_defs/#stagedeploymentdetailstypedef">StageDeploymentDetailsTypeDef</a></li>
+<li><a href="type_defs/#stagedeploymentsummarytypedef">StageDeploymentSummaryTypeDef</a></li>
 <li><a href="type_defs/#getextensionresulttypedef">GetExtensionResultTypeDef</a></li>
 <li><a href="type_defs/#listextensionsresulttypedef">ListExtensionsResultTypeDef</a></li>
 <li><a href="type_defs/#getextensionversionresulttypedef">GetExtensionVersionResultTypeDef</a></li>
@@ -36171,8 +36173,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getgeneratedcodejobresulttypedef">GetGeneratedCodeJobResultTypeDef</a></li>
 <li><a href="type_defs/#listgeneratedcodejobsresulttypedef">ListGeneratedCodeJobsResultTypeDef</a></li>
 <li><a href="type_defs/#startgeneratedcodejobrequestrequesttypedef">StartGeneratedCodeJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getstagedeploymentresulttypedef">GetStageDeploymentResultTypeDef</a></li>
-<li><a href="type_defs/#startstagedeploymentresulttypedef">StartStageDeploymentResultTypeDef</a></li>
 <li><a href="type_defs/#importgameconfigurationrequestrequesttypedef">ImportGameConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listextensionversionsrequestlistextensionversionspaginatetypedef">ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listextensionsrequestlistextensionspaginatetypedef">ListExtensionsRequestListExtensionsPaginateTypeDef</a></li>
@@ -36182,9 +36182,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#liststagedeploymentsrequestliststagedeploymentspaginatetypedef">ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststagesrequestliststagespaginatetypedef">ListStagesRequestListStagesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsnapshotsresulttypedef">ListSnapshotsResultTypeDef</a></li>
-<li><a href="type_defs/#liststagedeploymentsresulttypedef">ListStageDeploymentsResultTypeDef</a></li>
 <li><a href="type_defs/#liststagesresulttypedef">ListStagesResultTypeDef</a></li>
 <li><a href="type_defs/#updategameconfigurationrequestrequesttypedef">UpdateGameConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getstagedeploymentresulttypedef">GetStageDeploymentResultTypeDef</a></li>
+<li><a href="type_defs/#startstagedeploymentresulttypedef">StartStageDeploymentResultTypeDef</a></li>
+<li><a href="type_defs/#liststagedeploymentsresulttypedef">ListStageDeploymentsResultTypeDef</a></li>
 <li><a href="type_defs/#getgameconfigurationresulttypedef">GetGameConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#importgameconfigurationresulttypedef">ImportGameConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#updategameconfigurationresulttypedef">UpdateGameConfigurationResultTypeDef</a></li>

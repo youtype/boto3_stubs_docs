@@ -37244,7 +37244,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-looko
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span> <span class="nc">SNSConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">SnsTopicArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">SnsFormat</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">SnsFormatType</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#snsformattype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> SnsFormatType</a> </li>
+</ol>
 <h2 id="activateanomalydetectorrequestrequesttypedef">ActivateAnomalyDetectorRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_lookoutmetrics.type_defs</span> <span class="kn">import</span> <span class="n">ActivateAnomalyDetectorRequestRequestTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
