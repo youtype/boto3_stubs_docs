@@ -1001,3 +1001,21 @@ WaiterName = Literal[
     "service_updated",
 ]
 ```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

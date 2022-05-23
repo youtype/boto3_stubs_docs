@@ -361,6 +361,7 @@ def create_cache_cluster(
     PreferredOutpostArn: str = ...,
     PreferredOutpostArns: Sequence[str] = ...,
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (4)
+    TransitEncryptionEnabled: bool = ...,
 ) -> CreateCacheClusterResultTypeDef:  # (5)
     ...
 ```

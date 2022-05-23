@@ -3343,6 +3343,7 @@ class RecommenderTypeDef(TypedDict):
     status: NotRequired[str],
     failureReason: NotRequired[str],
     latestRecommenderUpdate: NotRequired[RecommenderUpdateSummaryTypeDef],  # (2)
+    modelMetrics: NotRequired[Dict[str, float]],
 ```
 
 1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 

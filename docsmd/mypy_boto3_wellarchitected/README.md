@@ -98,6 +98,7 @@ def get_value() -> AnswerReasonType:
 - [WellArchitectedServiceName](./literals.md#wellarchitectedservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

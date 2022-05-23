@@ -180,6 +180,7 @@ def get_value() -> DeploymentStatusType:
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
 
 

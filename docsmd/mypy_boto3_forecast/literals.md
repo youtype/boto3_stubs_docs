@@ -162,6 +162,34 @@ ListDatasetsPaginatorName = Literal[
     "list_datasets",
 ]
 ```
+## ListExplainabilitiesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListExplainabilitiesPaginatorName
+
+def get_value() -> ListExplainabilitiesPaginatorName:
+    return "list_explainabilities"
+```
+
+```python title="Definition"
+ListExplainabilitiesPaginatorName = Literal[
+    "list_explainabilities",
+]
+```
+## ListExplainabilityExportsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListExplainabilityExportsPaginatorName
+
+def get_value() -> ListExplainabilityExportsPaginatorName:
+    return "list_explainability_exports"
+```
+
+```python title="Definition"
+ListExplainabilityExportsPaginatorName = Literal[
+    "list_explainability_exports",
+]
+```
 ## ListForecastExportJobsPaginatorName
 
 ```python title="Usage Example"
@@ -188,6 +216,34 @@ def get_value() -> ListForecastsPaginatorName:
 ```python title="Definition"
 ListForecastsPaginatorName = Literal[
     "list_forecasts",
+]
+```
+## ListMonitorEvaluationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListMonitorEvaluationsPaginatorName
+
+def get_value() -> ListMonitorEvaluationsPaginatorName:
+    return "list_monitor_evaluations"
+```
+
+```python title="Definition"
+ListMonitorEvaluationsPaginatorName = Literal[
+    "list_monitor_evaluations",
+]
+```
+## ListMonitorsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListMonitorsPaginatorName
+
+def get_value() -> ListMonitorsPaginatorName:
+    return "list_monitors"
+```
+
+```python title="Definition"
+ListMonitorsPaginatorName = Literal[
+    "list_monitors",
 ]
 ```
 ## ListPredictorBacktestExportJobsPaginatorName
@@ -667,8 +723,12 @@ PaginatorName = Literal[
     "list_dataset_groups",
     "list_dataset_import_jobs",
     "list_datasets",
+    "list_explainabilities",
+    "list_explainability_exports",
     "list_forecast_export_jobs",
     "list_forecasts",
+    "list_monitor_evaluations",
+    "list_monitors",
     "list_predictor_backtest_export_jobs",
     "list_predictors",
 ]
