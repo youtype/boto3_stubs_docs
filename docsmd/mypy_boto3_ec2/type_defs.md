@@ -34636,6 +34636,7 @@ class ModifyInstanceAttributeRequestInstanceModifyAttributeTypeDef(TypedDict):
     SriovNetSupport: NotRequired[AttributeValueTypeDef],  # (7)
     UserData: NotRequired[BlobAttributeValueTypeDef],  # (12)
     Value: NotRequired[str],
+    DisableApiStop: NotRequired[AttributeBooleanValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
@@ -34650,6 +34651,7 @@ class ModifyInstanceAttributeRequestInstanceModifyAttributeTypeDef(TypedDict):
 10. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 12. See [:material-code-braces: BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef) 
+13. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 ## ModifyInstanceAttributeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34679,6 +34681,7 @@ class ModifyInstanceAttributeRequestRequestTypeDef(TypedDict):
     SriovNetSupport: NotRequired[AttributeValueTypeDef],  # (7)
     UserData: NotRequired[BlobAttributeValueTypeDef],  # (12)
     Value: NotRequired[str],
+    DisableApiStop: NotRequired[AttributeBooleanValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
@@ -34693,6 +34696,7 @@ class ModifyInstanceAttributeRequestRequestTypeDef(TypedDict):
 10. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 12. See [:material-code-braces: BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef) 
+13. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 ## InstanceAttributeTypeDef
 
 ```python title="Usage Example"
@@ -34716,6 +34720,7 @@ def get_value() -> InstanceAttributeTypeDef:
         "SourceDestCheck": ...,
         "SriovNetSupport": ...,
         "UserData": ...,
+        "DisableApiStop": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -34738,7 +34743,8 @@ class InstanceAttributeTypeDef(TypedDict):
     SourceDestCheck: AttributeBooleanValueTypeDef,  # (3)
     SriovNetSupport: AttributeValueTypeDef,  # (7)
     UserData: AttributeValueTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (16)
+    DisableApiStop: AttributeBooleanValueTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (17)
 ```
 
 1. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
@@ -34756,7 +34762,8 @@ class InstanceAttributeTypeDef(TypedDict):
 13. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 14. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 15. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-16. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+16. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+17. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEgressOnlyInternetGatewayResultTypeDef
 
 ```python title="Usage Example"
@@ -35433,6 +35440,7 @@ class RunInstancesRequestRequestTypeDef(TypedDict):
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
     MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
+    DisableApiStop: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -35510,6 +35518,7 @@ class RunInstancesRequestServiceResourceCreateInstancesTypeDef(TypedDict):
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
     MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
+    DisableApiStop: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -35586,6 +35595,7 @@ class RunInstancesRequestSubnetCreateInstancesTypeDef(TypedDict):
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
     MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
+    DisableApiStop: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -36651,6 +36661,7 @@ class RequestLaunchTemplateDataTypeDef(TypedDict):
     InstanceRequirements: NotRequired[InstanceRequirementsRequestTypeDef],  # (19)
     PrivateDnsNameOptions: NotRequired[LaunchTemplatePrivateDnsNameOptionsRequestTypeDef],  # (20)
     MaintenanceOptions: NotRequired[LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef],  # (21)
+    DisableApiStop: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: LaunchTemplateIamInstanceProfileSpecificationRequestTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationrequesttypedef) 
@@ -36717,6 +36728,7 @@ class ResponseLaunchTemplateDataTypeDef(TypedDict):
     InstanceRequirements: NotRequired[InstanceRequirementsTypeDef],  # (19)
     PrivateDnsNameOptions: NotRequired[LaunchTemplatePrivateDnsNameOptionsTypeDef],  # (20)
     MaintenanceOptions: NotRequired[LaunchTemplateInstanceMaintenanceOptionsTypeDef],  # (21)
+    DisableApiStop: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: LaunchTemplateIamInstanceProfileSpecificationTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationtypedef) 

@@ -979,6 +979,7 @@ def create_instances(
     EnclaveOptions: EnclaveOptionsRequestTypeDef = ...,  # (20)
     PrivateDnsNameOptions: PrivateDnsNameOptionsRequestTypeDef = ...,  # (21)
     MaintenanceOptions: InstanceMaintenanceOptionsRequestTypeDef = ...,  # (22)
+    DisableApiStop: bool = ...,
 ) -> List[Instance]:
     ...
 ```
@@ -2710,6 +2711,7 @@ def modify_attribute(
     SriovNetSupport: AttributeValueTypeDef = ...,  # (7)
     UserData: BlobAttributeValueTypeDef = ...,  # (12)
     Value: str = ...,
+    DisableApiStop: AttributeBooleanValueTypeDef = ...,  # (1)
 ) -> None:
     ...
 ```
@@ -2726,6 +2728,7 @@ def modify_attribute(
 10. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 12. See [:material-code-braces: BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef) 
+13. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5684,6 +5687,7 @@ def create_instances(
     EnclaveOptions: EnclaveOptionsRequestTypeDef = ...,  # (20)
     PrivateDnsNameOptions: PrivateDnsNameOptionsRequestTypeDef = ...,  # (21)
     MaintenanceOptions: InstanceMaintenanceOptionsRequestTypeDef = ...,  # (22)
+    DisableApiStop: bool = ...,
 ) -> List[Instance]:
     ...
 ```

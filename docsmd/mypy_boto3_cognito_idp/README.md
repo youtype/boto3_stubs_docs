@@ -226,6 +226,7 @@ def get_value() -> RecoveryOptionTypeTypeDef:
 - [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
 - [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
+- [UserAttributeUpdateSettingsTypeTypeDef](./type_defs.md#userattributeupdatesettingstypetypedef)
 - [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
 - [UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef)
 - [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)

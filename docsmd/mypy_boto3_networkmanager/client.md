@@ -280,7 +280,7 @@ parent.create_connect_attachment(**kwargs)
 
 ### create\_connect\_peer
 
-Creates a core network connect peer for a specified core network connect
+Creates a core network Connect peer for a specified core network connect
 attachment between a core network and an appliance.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").create_connect_peer` method.
@@ -538,7 +538,8 @@ parent.create_site(**kwargs)
 
 ### create\_site\_to\_site\_vpn\_attachment
 
-Creates a site-to-site VPN attachment on an edge location of a core network.
+Creates an Amazon Web Services site-to-site VPN attachment on an edge location
+of a core network.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").create_site_to_site_vpn_attachment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site_to_site_vpn_attachment)
@@ -1269,7 +1270,7 @@ parent.get_connections(**kwargs)
 
 ### get\_core\_network
 
-Returns information about a core network.
+Returns information about the LIVE policy for a core network.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network)
@@ -2027,6 +2028,37 @@ parent.list_core_networks(**kwargs)
 
 1. See [:material-code-braces: ListCoreNetworksRequestRequestTypeDef](./type_defs.md#listcorenetworksrequestrequesttypedef) 
 
+### list\_organization\_service\_access\_status
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/networkmanager-2019-07-05/ListOrganizationServiceAccessStatus).
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_organization_service_access_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_organization_service_access_status)
+
+```python title="Method definition"
+def list_organization_service_access_status(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListOrganizationServiceAccessStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListOrganizationServiceAccessStatusResponseTypeDef](./type_defs.md#listorganizationserviceaccessstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationServiceAccessStatusRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_organization_service_access_status(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationServiceAccessStatusRequestRequestTypeDef](./type_defs.md#listorganizationserviceaccessstatusrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 Lists the tags for a specified resource.
@@ -2211,6 +2243,36 @@ parent.restore_core_network_policy_version(**kwargs)
 ```
 
 1. See [:material-code-braces: RestoreCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#restorecorenetworkpolicyversionrequestrequesttypedef) 
+
+### start\_organization\_service\_access\_update
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/networkmanager-2019-07-05/StartOrganizationServiceAccessUpdate).
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").start_organization_service_access_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_organization_service_access_update)
+
+```python title="Method definition"
+def start_organization_service_access_update(
+    self,
+    *,
+    Action: str,
+) -> StartOrganizationServiceAccessUpdateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartOrganizationServiceAccessUpdateResponseTypeDef](./type_defs.md#startorganizationserviceaccessupdateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartOrganizationServiceAccessUpdateRequestRequestTypeDef = {  # (1)
+    "Action": ...,
+}
+
+parent.start_organization_service_access_update(**kwargs)
+```
+
+1. See [:material-code-braces: StartOrganizationServiceAccessUpdateRequestRequestTypeDef](./type_defs.md#startorganizationserviceaccessupdaterequestrequesttypedef) 
 
 ### start\_route\_analysis
 

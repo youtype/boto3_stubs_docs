@@ -105,6 +105,25 @@ class AiffSettingsTypeDef(TypedDict):
     SampleRate: NotRequired[int],
 ```
 
+## AllowedRenditionSizeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import AllowedRenditionSizeTypeDef
+
+def get_value() -> AllowedRenditionSizeTypeDef:
+    return {
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class AllowedRenditionSizeTypeDef(TypedDict):
+    Height: NotRequired[int],
+    Required: NotRequired[RequiredFlagType],  # (1)
+    Width: NotRequired[int],
+```
+
+1. See [:material-code-brackets: RequiredFlagType](./literals.md#requiredflagtype) 
 ## AncillarySourceSettingsTypeDef
 
 ```python title="Usage Example"
@@ -405,22 +424,55 @@ class HlsRenditionGroupSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
-## AutomatedAbrSettingsTypeDef
+## ForceIncludeRenditionSizeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mediaconvert.type_defs import AutomatedAbrSettingsTypeDef
+from mypy_boto3_mediaconvert.type_defs import ForceIncludeRenditionSizeTypeDef
 
-def get_value() -> AutomatedAbrSettingsTypeDef:
+def get_value() -> ForceIncludeRenditionSizeTypeDef:
     return {
-        "MaxAbrBitrate": ...,
+        "Height": ...,
     }
 ```
 
 ```python title="Definition"
-class AutomatedAbrSettingsTypeDef(TypedDict):
-    MaxAbrBitrate: NotRequired[int],
-    MaxRenditions: NotRequired[int],
-    MinAbrBitrate: NotRequired[int],
+class ForceIncludeRenditionSizeTypeDef(TypedDict):
+    Height: NotRequired[int],
+    Width: NotRequired[int],
+```
+
+## MinBottomRenditionSizeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import MinBottomRenditionSizeTypeDef
+
+def get_value() -> MinBottomRenditionSizeTypeDef:
+    return {
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class MinBottomRenditionSizeTypeDef(TypedDict):
+    Height: NotRequired[int],
+    Width: NotRequired[int],
+```
+
+## MinTopRenditionSizeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import MinTopRenditionSizeTypeDef
+
+def get_value() -> MinTopRenditionSizeTypeDef:
+    return {
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class MinTopRenditionSizeTypeDef(TypedDict):
+    Height: NotRequired[int],
+    Width: NotRequired[int],
 ```
 
 ## Av1QvbrSettingsTypeDef
@@ -2753,23 +2805,31 @@ class AudioCodecSettingsTypeDef(TypedDict):
 9. See [:material-code-braces: OpusSettingsTypeDef](./type_defs.md#opussettingstypedef) 
 10. See [:material-code-braces: VorbisSettingsTypeDef](./type_defs.md#vorbissettingstypedef) 
 11. See [:material-code-braces: WavSettingsTypeDef](./type_defs.md#wavsettingstypedef) 
-## AutomatedEncodingSettingsTypeDef
+## AutomatedAbrRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mediaconvert.type_defs import AutomatedEncodingSettingsTypeDef
+from mypy_boto3_mediaconvert.type_defs import AutomatedAbrRuleTypeDef
 
-def get_value() -> AutomatedEncodingSettingsTypeDef:
+def get_value() -> AutomatedAbrRuleTypeDef:
     return {
-        "AbrSettings": ...,
+        "AllowedRenditions": ...,
     }
 ```
 
 ```python title="Definition"
-class AutomatedEncodingSettingsTypeDef(TypedDict):
-    AbrSettings: NotRequired[AutomatedAbrSettingsTypeDef],  # (1)
+class AutomatedAbrRuleTypeDef(TypedDict):
+    AllowedRenditions: NotRequired[Sequence[AllowedRenditionSizeTypeDef]],  # (1)
+    ForceIncludeRenditions: NotRequired[Sequence[ForceIncludeRenditionSizeTypeDef]],  # (2)
+    MinBottomRenditionSize: NotRequired[MinBottomRenditionSizeTypeDef],  # (3)
+    MinTopRenditionSize: NotRequired[MinTopRenditionSizeTypeDef],  # (4)
+    Type: NotRequired[RuleTypeType],  # (5)
 ```
 
-1. See [:material-code-braces: AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef) 
+1. See [:material-code-braces: AllowedRenditionSizeTypeDef](./type_defs.md#allowedrenditionsizetypedef) 
+2. See [:material-code-braces: ForceIncludeRenditionSizeTypeDef](./type_defs.md#forceincluderenditionsizetypedef) 
+3. See [:material-code-braces: MinBottomRenditionSizeTypeDef](./type_defs.md#minbottomrenditionsizetypedef) 
+4. See [:material-code-braces: MinTopRenditionSizeTypeDef](./type_defs.md#mintoprenditionsizetypedef) 
+5. See [:material-code-brackets: RuleTypeType](./literals.md#ruletypetype) 
 ## Av1SettingsTypeDef
 
 ```python title="Usage Example"
@@ -3836,6 +3896,26 @@ class XavcSettingsTypeDef(TypedDict):
 11. See [:material-code-braces: Xavc4kProfileSettingsTypeDef](./type_defs.md#xavc4kprofilesettingstypedef) 
 12. See [:material-code-braces: XavcHdIntraCbgProfileSettingsTypeDef](./type_defs.md#xavchdintracbgprofilesettingstypedef) 
 13. See [:material-code-braces: XavcHdProfileSettingsTypeDef](./type_defs.md#xavchdprofilesettingstypedef) 
+## AutomatedAbrSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import AutomatedAbrSettingsTypeDef
+
+def get_value() -> AutomatedAbrSettingsTypeDef:
+    return {
+        "MaxAbrBitrate": ...,
+    }
+```
+
+```python title="Definition"
+class AutomatedAbrSettingsTypeDef(TypedDict):
+    MaxAbrBitrate: NotRequired[int],
+    MaxRenditions: NotRequired[int],
+    MinAbrBitrate: NotRequired[int],
+    Rules: NotRequired[Sequence[AutomatedAbrRuleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AutomatedAbrRuleTypeDef](./type_defs.md#automatedabrruletypedef) 
 ## CaptionDescriptionPresetTypeDef
 
 ```python title="Usage Example"
@@ -4148,6 +4228,23 @@ class VideoCodecSettingsTypeDef(TypedDict):
 10. See [:material-code-braces: Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef) 
 11. See [:material-code-braces: Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef) 
 12. See [:material-code-braces: XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef) 
+## AutomatedEncodingSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import AutomatedEncodingSettingsTypeDef
+
+def get_value() -> AutomatedEncodingSettingsTypeDef:
+    return {
+        "AbrSettings": ...,
+    }
+```
+
+```python title="Definition"
+class AutomatedEncodingSettingsTypeDef(TypedDict):
+    AbrSettings: NotRequired[AutomatedAbrSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef) 
 ## CaptionSelectorTypeDef
 
 ```python title="Usage Example"

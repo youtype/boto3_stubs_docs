@@ -64,6 +64,23 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## AccountStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import AccountStatusTypeDef
+
+def get_value() -> AccountStatusTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class AccountStatusTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    SLRDeploymentStatus: NotRequired[str],
+```
+
 ## AssociateConnectPeerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1336,6 +1353,23 @@ class ListCoreNetworksRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListOrganizationServiceAccessStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListOrganizationServiceAccessStatusRequestRequestTypeDef
+
+def get_value() -> ListOrganizationServiceAccessStatusRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationServiceAccessStatusRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1540,6 +1574,22 @@ class RouteAnalysisEndpointOptionsTypeDef(TypedDict):
     IpAddress: NotRequired[str],
 ```
 
+## StartOrganizationServiceAccessUpdateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import StartOrganizationServiceAccessUpdateRequestRequestTypeDef
+
+def get_value() -> StartOrganizationServiceAccessUpdateRequestRequestTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class StartOrganizationServiceAccessUpdateRequestRequestTypeDef(TypedDict):
+    Action: str,
+```
+
 ## TransitGatewayRegistrationStateReasonTypeDef
 
 ```python title="Usage Example"
@@ -1691,6 +1741,26 @@ class UpdateNetworkResourceMetadataResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OrganizationStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import OrganizationStatusTypeDef
+
+def get_value() -> OrganizationStatusTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class OrganizationStatusTypeDef(TypedDict):
+    OrganizationId: NotRequired[str],
+    OrganizationAwsServiceAccessStatus: NotRequired[str],
+    SLRDeploymentStatus: NotRequired[str],
+    AccountStatusList: NotRequired[List[AccountStatusTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AccountStatusTypeDef](./type_defs.md#accountstatustypedef) 
 ## AssociateConnectPeerResponseTypeDef
 
 ```python title="Usage Example"
@@ -3217,6 +3287,48 @@ class TransitGatewayRegistrationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef) 
+## ListOrganizationServiceAccessStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListOrganizationServiceAccessStatusResponseTypeDef
+
+def get_value() -> ListOrganizationServiceAccessStatusResponseTypeDef:
+    return {
+        "OrganizationStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationServiceAccessStatusResponseTypeDef(TypedDict):
+    OrganizationStatus: OrganizationStatusTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrganizationStatusTypeDef](./type_defs.md#organizationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartOrganizationServiceAccessUpdateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import StartOrganizationServiceAccessUpdateResponseTypeDef
+
+def get_value() -> StartOrganizationServiceAccessUpdateResponseTypeDef:
+    return {
+        "OrganizationStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartOrganizationServiceAccessUpdateResponseTypeDef(TypedDict):
+    OrganizationStatus: OrganizationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrganizationStatusTypeDef](./type_defs.md#organizationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConnectPeersResponseTypeDef
 
 ```python title="Usage Example"

@@ -3558,6 +3558,7 @@ def get_value() -> InstanceAttributeNameType:
 ```python title="Definition"
 InstanceAttributeNameType = Literal[
     "blockDeviceMapping",
+    "disableApiStop",
     "disableApiTermination",
     "ebsOptimized",
     "enaSupport",
