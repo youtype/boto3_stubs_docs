@@ -186,6 +186,7 @@ def get_value() -> ActiveDirectoryBackupAttributesTypeDef:
 - [CancelDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequestrequesttypedef)
 - [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
 - [LustreLogCreateConfigurationTypeDef](./type_defs.md#lustrelogcreateconfigurationtypedef)
+- [LustreRootSquashConfigurationTypeDef](./type_defs.md#lustrerootsquashconfigurationtypedef)
 - [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
 - [SelfManagedActiveDirectoryConfigurationTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationtypedef)
 - [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)

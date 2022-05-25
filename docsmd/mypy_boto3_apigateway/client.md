@@ -73,7 +73,7 @@ def can_paginate(
 
 ### create\_api\_key
 
-Create an  ApiKey resource.
+Create an ApiKey resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
@@ -110,7 +110,7 @@ parent.create_api_key(**kwargs)
 
 ### create\_authorizer
 
-Adds a new  Authorizer resource to an existing  RestApi resource.
+Adds a new Authorizer resource to an existing RestApi resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_authorizer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
@@ -151,7 +151,7 @@ parent.create_authorizer(**kwargs)
 
 ### create\_base\_path\_mapping
 
-Creates a new  BasePathMapping resource.
+Creates a new BasePathMapping resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_base_path_mapping` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
@@ -184,8 +184,8 @@ parent.create_base_path_mapping(**kwargs)
 
 ### create\_deployment
 
-Creates a  Deployment resource, which makes a specified  RestApi callable over
-the internet.
+Creates a Deployment resource, which makes a specified RestApi callable over the
+internet.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_deployment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
@@ -224,8 +224,7 @@ parent.create_deployment(**kwargs)
 
 ### create\_documentation\_part
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationPart).
+Creates a documentation part.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_documentation_part` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
@@ -259,7 +258,7 @@ parent.create_documentation_part(**kwargs)
 
 ### create\_documentation\_version
 
-See also: [AWS API
+Creates a documentation version See also: [AWS API
 Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationVersion).
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_documentation_version` method.
@@ -337,7 +336,7 @@ parent.create_domain_name(**kwargs)
 
 ### create\_model
 
-Adds a new  Model resource to an existing  RestApi resource.
+Adds a new Model resource to an existing RestApi resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_model` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
@@ -372,7 +371,7 @@ parent.create_model(**kwargs)
 
 ### create\_request\_validator
 
-Creates a  ReqeustValidator of a given  RestApi .
+Creates a RequestValidator of a given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_request_validator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
@@ -404,7 +403,7 @@ parent.create_request_validator(**kwargs)
 
 ### create\_resource
 
-Creates a  Resource resource.
+Creates a Resource resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
@@ -437,7 +436,7 @@ parent.create_resource(**kwargs)
 
 ### create\_rest\_api
 
-Creates a new  RestApi resource.
+Creates a new RestApi resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_rest_api` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
@@ -478,7 +477,7 @@ parent.create_rest_api(**kwargs)
 
 ### create\_stage
 
-Creates a new  Stage resource that references a pre-existing  Deployment for the
+Creates a new Stage resource that references a pre-existing Deployment for the
 API.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").create_stage` method.
@@ -628,7 +627,7 @@ parent.create_vpc_link(**kwargs)
 
 ### delete\_api\_key
 
-Deletes the  ApiKey resource.
+Deletes the ApiKey resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
@@ -656,7 +655,7 @@ parent.delete_api_key(**kwargs)
 
 ### delete\_authorizer
 
-Deletes an existing  Authorizer resource.
+Deletes an existing Authorizer resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_authorizer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
@@ -686,7 +685,7 @@ parent.delete_authorizer(**kwargs)
 
 ### delete\_base\_path\_mapping
 
-Deletes the  BasePathMapping resource.
+Deletes the BasePathMapping resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_base_path_mapping` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
@@ -716,7 +715,7 @@ parent.delete_base_path_mapping(**kwargs)
 
 ### delete\_client\_certificate
 
-Deletes the  ClientCertificate resource.
+Deletes the ClientCertificate resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_client_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
@@ -744,7 +743,7 @@ parent.delete_client_certificate(**kwargs)
 
 ### delete\_deployment
 
-Deletes a  Deployment resource.
+Deletes a Deployment resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_deployment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
@@ -774,7 +773,7 @@ parent.delete_deployment(**kwargs)
 
 ### delete\_documentation\_part
 
-See also: [AWS API
+Deletes a documentation part See also: [AWS API
 Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationPart).
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_documentation_part` method.
@@ -805,8 +804,7 @@ parent.delete_documentation_part(**kwargs)
 
 ### delete\_documentation\_version
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationVersion).
+Deletes a documentation version.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_documentation_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
@@ -836,7 +834,7 @@ parent.delete_documentation_version(**kwargs)
 
 ### delete\_domain\_name
 
-Deletes the  DomainName resource.
+Deletes the DomainName resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_domain_name` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
@@ -864,8 +862,8 @@ parent.delete_domain_name(**kwargs)
 
 ### delete\_gateway\_response
 
-Clears any customization of a  GatewayResponse of a specified response type on
-the given  RestApi and resets it with the default settings.
+Clears any customization of a GatewayResponse of a specified response type on
+the given RestApi and resets it with the default settings.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_gateway_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
@@ -962,7 +960,7 @@ parent.delete_integration_response(**kwargs)
 
 ### delete\_method
 
-Deletes an existing  Method resource.
+Deletes an existing Method resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_method` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
@@ -994,7 +992,7 @@ parent.delete_method(**kwargs)
 
 ### delete\_method\_response
 
-Deletes an existing  MethodResponse resource.
+Deletes an existing MethodResponse resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_method_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
@@ -1058,7 +1056,7 @@ parent.delete_model(**kwargs)
 
 ### delete\_request\_validator
 
-Deletes a  RequestValidator of a given  RestApi .
+Deletes a RequestValidator of a given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_request_validator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
@@ -1088,7 +1086,7 @@ parent.delete_request_validator(**kwargs)
 
 ### delete\_resource
 
-Deletes a  Resource resource.
+Deletes a Resource resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
@@ -1146,7 +1144,7 @@ parent.delete_rest_api(**kwargs)
 
 ### delete\_stage
 
-Deletes a  Stage resource.
+Deletes a Stage resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_stage` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
@@ -1235,7 +1233,7 @@ parent.delete_usage_plan_key(**kwargs)
 
 ### delete\_vpc\_link
 
-Deletes an existing  VpcLink of a specified identifier.
+Deletes an existing VpcLink of a specified identifier.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").delete_vpc_link` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
@@ -1323,7 +1321,7 @@ parent.flush_stage_cache(**kwargs)
 
 ### generate\_client\_certificate
 
-Generates a  ClientCertificate resource.
+Generates a ClientCertificate resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").generate_client_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
@@ -1372,7 +1370,7 @@ def generate_presigned_url(
 
 ### get\_account
 
-Gets information about the current  Account resource.
+Gets information about the current Account resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
@@ -1388,7 +1386,7 @@ def get_account(
 
 ### get\_api\_key
 
-Gets information about the current  ApiKey resource.
+Gets information about the current ApiKey resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
@@ -1418,7 +1416,7 @@ parent.get_api_key(**kwargs)
 
 ### get\_api\_keys
 
-Gets information about the current  ApiKeys resource.
+Gets information about the current ApiKeys resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_api_keys` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
@@ -1451,7 +1449,7 @@ parent.get_api_keys(**kwargs)
 
 ### get\_authorizer
 
-Describe an existing  Authorizer resource.
+Describe an existing Authorizer resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_authorizer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
@@ -1482,7 +1480,7 @@ parent.get_authorizer(**kwargs)
 
 ### get\_authorizers
 
-Describe an existing  Authorizers resource.
+Describe an existing Authorizers resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_authorizers` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
@@ -1513,7 +1511,7 @@ parent.get_authorizers(**kwargs)
 
 ### get\_base\_path\_mapping
 
-Describe a  BasePathMapping resource.
+Describe a BasePathMapping resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_base_path_mapping` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
@@ -1544,7 +1542,7 @@ parent.get_base_path_mapping(**kwargs)
 
 ### get\_base\_path\_mappings
 
-Represents a collection of  BasePathMapping resources.
+Represents a collection of BasePathMapping resources.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_base_path_mappings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
@@ -1575,7 +1573,7 @@ parent.get_base_path_mappings(**kwargs)
 
 ### get\_client\_certificate
 
-Gets information about the current  ClientCertificate resource.
+Gets information about the current ClientCertificate resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_client_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
@@ -1604,7 +1602,7 @@ parent.get_client_certificate(**kwargs)
 
 ### get\_client\_certificates
 
-Gets a collection of  ClientCertificate resources.
+Gets a collection of ClientCertificate resources.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_client_certificates` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
@@ -1634,7 +1632,7 @@ parent.get_client_certificates(**kwargs)
 
 ### get\_deployment
 
-Gets information about a  Deployment resource.
+Gets information about a Deployment resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_deployment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
@@ -1666,7 +1664,7 @@ parent.get_deployment(**kwargs)
 
 ### get\_deployments
 
-Gets information about a  Deployments collection.
+Gets information about a Deployments collection.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_deployments` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
@@ -1697,8 +1695,7 @@ parent.get_deployments(**kwargs)
 
 ### get\_documentation\_part
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationPart).
+Gets a documentation part.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_part` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
@@ -1729,8 +1726,7 @@ parent.get_documentation_part(**kwargs)
 
 ### get\_documentation\_parts
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationParts).
+Gets documentation parts.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_parts` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
@@ -1767,8 +1763,7 @@ parent.get_documentation_parts(**kwargs)
 
 ### get\_documentation\_version
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersion).
+Gets a documentation version.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
@@ -1799,8 +1794,7 @@ parent.get_documentation_version(**kwargs)
 
 ### get\_documentation\_versions
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersions).
+Gets documentation versions.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_versions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
@@ -1861,7 +1855,7 @@ parent.get_domain_name(**kwargs)
 
 ### get\_domain\_names
 
-Represents a collection of  DomainName resources.
+Represents a collection of DomainName resources.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_domain_names` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
@@ -1891,7 +1885,7 @@ parent.get_domain_names(**kwargs)
 
 ### get\_export
 
-Exports a deployed version of a  RestApi in a specified format.
+Exports a deployed version of a RestApi in a specified format.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_export` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
@@ -1926,7 +1920,7 @@ parent.get_export(**kwargs)
 
 ### get\_gateway\_response
 
-Gets a  GatewayResponse of a specified response type on the given  RestApi .
+Gets a GatewayResponse of a specified response type on the given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_gateway_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
@@ -1958,7 +1952,7 @@ parent.get_gateway_response(**kwargs)
 
 ### get\_gateway\_responses
 
-Gets the  GatewayResponses collection on the given  RestApi.
+Gets the GatewayResponses collection on the given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_gateway_responses` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
@@ -2057,7 +2051,7 @@ parent.get_integration_response(**kwargs)
 
 ### get\_method
 
-Describe an existing  Method resource.
+Describe an existing Method resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_method` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
@@ -2090,7 +2084,7 @@ parent.get_method(**kwargs)
 
 ### get\_method\_response
 
-Describes a  MethodResponse resource.
+Describes a MethodResponse resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_method_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
@@ -2125,7 +2119,7 @@ parent.get_method_response(**kwargs)
 
 ### get\_model
 
-Describes an existing model defined for a  RestApi resource.
+Describes an existing model defined for a RestApi resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_model` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
@@ -2189,7 +2183,7 @@ parent.get_model_template(**kwargs)
 
 ### get\_models
 
-Describes existing  Models defined for a  RestApi resource.
+Describes existing Models defined for a RestApi resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_models` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
@@ -2220,7 +2214,7 @@ parent.get_models(**kwargs)
 
 ### get\_request\_validator
 
-Gets a  RequestValidator of a given  RestApi .
+Gets a RequestValidator of a given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_request_validator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
@@ -2251,7 +2245,7 @@ parent.get_request_validator(**kwargs)
 
 ### get\_request\_validators
 
-Gets the  RequestValidators collection of a given  RestApi .
+Gets the RequestValidators collection of a given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_request_validators` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
@@ -2314,7 +2308,7 @@ parent.get_resource(**kwargs)
 
 ### get\_resources
 
-Lists information about a collection of  Resource resources.
+Lists information about a collection of Resource resources.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_resources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
@@ -2346,7 +2340,7 @@ parent.get_resources(**kwargs)
 
 ### get\_rest\_api
 
-Lists the  RestApi resource in the collection.
+Lists the RestApi resource in the collection.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_rest_api` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
@@ -2375,7 +2369,7 @@ parent.get_rest_api(**kwargs)
 
 ### get\_rest\_apis
 
-Lists the  RestApis resources for your collection.
+Lists the RestApis resources for your collection.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_rest_apis` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
@@ -2405,7 +2399,7 @@ parent.get_rest_apis(**kwargs)
 
 ### get\_sdk
 
-Generates a client SDK for a  RestApi and  Stage .
+Generates a client SDK for a RestApi and Stage.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
@@ -2439,8 +2433,7 @@ parent.get_sdk(**kwargs)
 
 ### get\_sdk\_type
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType).
+Gets an SDK type.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk_type` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
@@ -2469,7 +2462,7 @@ parent.get_sdk_type(**kwargs)
 
 ### get\_sdk\_types
 
-See also: [AWS API
+Gets SDK types See also: [AWS API
 Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes).
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk_types` method.
@@ -2500,7 +2493,7 @@ parent.get_sdk_types(**kwargs)
 
 ### get\_stage
 
-Gets information about a  Stage resource.
+Gets information about a Stage resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_stage` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
@@ -2531,7 +2524,7 @@ parent.get_stage(**kwargs)
 
 ### get\_stages
 
-Gets information about one or more  Stage resources.
+Gets information about one or more Stage resources.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_stages` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
@@ -2561,7 +2554,7 @@ parent.get_stages(**kwargs)
 
 ### get\_tags
 
-Gets the  Tags collection for a given resource.
+Gets the Tags collection for a given resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
@@ -2781,7 +2774,7 @@ parent.get_vpc_link(**kwargs)
 
 ### get\_vpc\_links
 
-Gets the  VpcLinks collection under the caller's account in a selected region.
+Gets the VpcLinks collection under the caller's account in a selected region.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").get_vpc_links` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
@@ -2844,7 +2837,7 @@ parent.import_api_keys(**kwargs)
 
 ### import\_documentation\_parts
 
-See also: [AWS API
+Imports documentation parts See also: [AWS API
 Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/ImportDocumentationParts).
 
 Type annotations and code completion for `#!python boto3.client("apigateway").import_documentation_parts` method.
@@ -2911,8 +2904,8 @@ parent.import_rest_api(**kwargs)
 
 ### put\_gateway\_response
 
-Creates a customization of a  GatewayResponse of a specified response type and
-status code on the given  RestApi .
+Creates a customization of a GatewayResponse of a specified response type and
+status code on the given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").put_gateway_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
@@ -3039,7 +3032,7 @@ parent.put_integration_response(**kwargs)
 
 ### put\_method
 
-Add a method to an existing  Resource resource.
+Add a method to an existing Resource resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").put_method` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
@@ -3081,7 +3074,7 @@ parent.put_method(**kwargs)
 
 ### put\_method\_response
 
-Adds a  MethodResponse to an existing  Method resource.
+Adds a MethodResponse to an existing Method resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").put_method_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
@@ -3184,7 +3177,7 @@ parent.tag_resource(**kwargs)
 
 ### test\_invoke\_authorizer
 
-Simulate the execution of an  Authorizer in your  RestApi with headers,
+Simulate the execution of an Authorizer in your RestApi with headers,
 parameters, and an incoming request body.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").test_invoke_authorizer` method.
@@ -3222,7 +3215,7 @@ parent.test_invoke_authorizer(**kwargs)
 
 ### test\_invoke\_method
 
-Simulate the execution of a  Method in your  RestApi with headers, parameters,
+Simulate the invocation of a Method in your RestApi with headers, parameters,
 and an incoming request body.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").test_invoke_method` method.
@@ -3292,7 +3285,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_account
 
-Changes information about the current  Account resource.
+Changes information about the current Account resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
@@ -3322,7 +3315,7 @@ parent.update_account(**kwargs)
 
 ### update\_api\_key
 
-Changes information about an  ApiKey resource.
+Changes information about an ApiKey resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
@@ -3353,7 +3346,7 @@ parent.update_api_key(**kwargs)
 
 ### update\_authorizer
 
-Updates an existing  Authorizer resource.
+Updates an existing Authorizer resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_authorizer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
@@ -3386,7 +3379,7 @@ parent.update_authorizer(**kwargs)
 
 ### update\_base\_path\_mapping
 
-Changes information about the  BasePathMapping resource.
+Changes information about the BasePathMapping resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_base_path_mapping` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
@@ -3419,7 +3412,7 @@ parent.update_base_path_mapping(**kwargs)
 
 ### update\_client\_certificate
 
-Changes information about an  ClientCertificate resource.
+Changes information about an ClientCertificate resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_client_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
@@ -3450,7 +3443,7 @@ parent.update_client_certificate(**kwargs)
 
 ### update\_deployment
 
-Changes information about a  Deployment resource.
+Changes information about a Deployment resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_deployment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
@@ -3483,8 +3476,7 @@ parent.update_deployment(**kwargs)
 
 ### update\_documentation\_part
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationPart).
+Updates a documentation part.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_documentation_part` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
@@ -3517,8 +3509,7 @@ parent.update_documentation_part(**kwargs)
 
 ### update\_documentation\_version
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationVersion).
+Updates a documentation version.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_documentation_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
@@ -3551,7 +3542,7 @@ parent.update_documentation_version(**kwargs)
 
 ### update\_domain\_name
 
-Changes information about the  DomainName resource.
+Changes information about the DomainName resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_domain_name` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
@@ -3582,7 +3573,7 @@ parent.update_domain_name(**kwargs)
 
 ### update\_gateway\_response
 
-Updates a  GatewayResponse of a specified response type on the given  RestApi .
+Updates a GatewayResponse of a specified response type on the given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_gateway_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
@@ -3688,7 +3679,7 @@ parent.update_integration_response(**kwargs)
 
 ### update\_method
 
-Updates an existing  Method resource.
+Updates an existing Method resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_method` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
@@ -3723,7 +3714,7 @@ parent.update_method(**kwargs)
 
 ### update\_method\_response
 
-Updates an existing  MethodResponse resource.
+Updates an existing MethodResponse resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_method_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
@@ -3793,7 +3784,7 @@ parent.update_model(**kwargs)
 
 ### update\_request\_validator
 
-Updates a  RequestValidator of a given  RestApi .
+Updates a RequestValidator of a given RestApi.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_request_validator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
@@ -3826,7 +3817,7 @@ parent.update_request_validator(**kwargs)
 
 ### update\_resource
 
-Changes information about a  Resource resource.
+Changes information about a Resource resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
@@ -3890,7 +3881,7 @@ parent.update_rest_api(**kwargs)
 
 ### update\_stage
 
-Changes information about a  Stage resource.
+Changes information about a Stage resource.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_stage` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
@@ -3988,7 +3979,7 @@ parent.update_usage_plan(**kwargs)
 
 ### update\_vpc\_link
 
-Updates an existing  VpcLink of a specified identifier.
+Updates an existing VpcLink of a specified identifier.
 
 Type annotations and code completion for `#!python boto3.client("apigateway").update_vpc_link` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)

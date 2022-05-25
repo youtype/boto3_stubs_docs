@@ -256,6 +256,7 @@ class SpeakerTypeDef(TypedDict):
     CustomerSpeakerId: NotRequired[str],
     DomainId: NotRequired[str],
     GeneratedSpeakerId: NotRequired[str],
+    LastAccessedAt: NotRequired[datetime],
     Status: NotRequired[SpeakerStatusType],  # (1)
     UpdatedAt: NotRequired[datetime],
 ```
@@ -414,6 +415,24 @@ class RegistrationConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DuplicateRegistrationActionType](./literals.md#duplicateregistrationactiontype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## ListDomainsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -506,6 +525,7 @@ class SpeakerSummaryTypeDef(TypedDict):
     CustomerSpeakerId: NotRequired[str],
     DomainId: NotRequired[str],
     GeneratedSpeakerId: NotRequired[str],
+    LastAccessedAt: NotRequired[datetime],
     Status: NotRequired[SpeakerStatusType],  # (1)
     UpdatedAt: NotRequired[datetime],
 ```
@@ -931,6 +951,81 @@ class StartFraudsterRegistrationJobRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
 2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
 3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+## ListDomainsRequestListDomainsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import ListDomainsRequestListDomainsPaginateTypeDef
+
+def get_value() -> ListDomainsRequestListDomainsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef
+
+def get_value() -> ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef:
+    return {
+        "DomainId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef(TypedDict):
+    DomainId: str,
+    JobStatus: NotRequired[FraudsterRegistrationJobStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef
+
+def get_value() -> ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef:
+    return {
+        "DomainId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef(TypedDict):
+    DomainId: str,
+    JobStatus: NotRequired[SpeakerEnrollmentJobStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSpeakersRequestListSpeakersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import ListSpeakersRequestListSpeakersPaginateTypeDef
+
+def get_value() -> ListSpeakersRequestListSpeakersPaginateTypeDef:
+    return {
+        "DomainId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpeakersRequestListSpeakersPaginateTypeDef(TypedDict):
+    DomainId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSpeakersResponseTypeDef
 
 ```python title="Usage Example"

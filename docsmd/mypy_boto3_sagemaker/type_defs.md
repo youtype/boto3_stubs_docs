@@ -357,6 +357,22 @@ class AthenaDatasetDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AthenaResultFormatType](./literals.md#athenaresultformattype) 
 2. See [:material-code-brackets: AthenaResultCompressionTypeType](./literals.md#athenaresultcompressiontypetype) 
+## AutoMLCandidateGenerationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AutoMLCandidateGenerationConfigTypeDef
+
+def get_value() -> AutoMLCandidateGenerationConfigTypeDef:
+    return {
+        "FeatureSpecificationS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class AutoMLCandidateGenerationConfigTypeDef(TypedDict):
+    FeatureSpecificationS3Uri: NotRequired[str],
+```
+
 ## AutoMLCandidateStepTypeDef
 
 ```python title="Usage Example"
@@ -16082,11 +16098,13 @@ class AutoMLJobConfigTypeDef(TypedDict):
     CompletionCriteria: NotRequired[AutoMLJobCompletionCriteriaTypeDef],  # (1)
     SecurityConfig: NotRequired[AutoMLSecurityConfigTypeDef],  # (2)
     DataSplitConfig: NotRequired[AutoMLDataSplitConfigTypeDef],  # (3)
+    CandidateGenerationConfig: NotRequired[AutoMLCandidateGenerationConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: AutoMLJobCompletionCriteriaTypeDef](./type_defs.md#automljobcompletioncriteriatypedef) 
 2. See [:material-code-braces: AutoMLSecurityConfigTypeDef](./type_defs.md#automlsecurityconfigtypedef) 
 3. See [:material-code-braces: AutoMLDataSplitConfigTypeDef](./type_defs.md#automldatasplitconfigtypedef) 
+4. See [:material-code-braces: AutoMLCandidateGenerationConfigTypeDef](./type_defs.md#automlcandidategenerationconfigtypedef) 
 ## ModelMetricsTypeDef
 
 ```python title="Usage Example"

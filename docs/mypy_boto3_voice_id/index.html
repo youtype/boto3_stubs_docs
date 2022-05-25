@@ -34473,6 +34473,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -34517,6 +34524,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -35964,6 +35985,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -36033,12 +36061,28 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VoiceIDClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;voice-id&quot;</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;voice-id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_voice_id.paginator</span> <span class="kn">import</span> <span class="n">ListDomainsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_domains_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListDomainsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;voice-id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_domains&quot;</span><span class="p">))</span>
+</code></pre></div>
+<ul>
+<li><a href="paginators/#listdomainspaginator">ListDomainsPaginator</a></li>
+<li><a href="paginators/#listfraudsterregistrationjobspaginator">ListFraudsterRegistrationJobsPaginator</a></li>
+<li><a href="paginators/#listspeakerenrollmentjobspaginator">ListSpeakerEnrollmentJobsPaginator</a></li>
+<li><a href="paginators/#listspeakerspaginator">ListSpeakersPaginator</a></li>
+</ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_voice_id.literals</span> <span class="kn">import</span> <span class="n">AuthenticationDecisionType</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AuthenticationDecisionType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;ACCEPT&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_voice_id.literals</span> <span class="kn">import</span> <span class="n">AuthenticationDecisionType</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AuthenticationDecisionType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;ACCEPT&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#authenticationdecisiontype">AuthenticationDecisionType</a></li>
@@ -36049,22 +36093,27 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#frauddetectiondecisiontype">FraudDetectionDecisionType</a></li>
 <li><a href="literals/#frauddetectionreasontype">FraudDetectionReasonType</a></li>
 <li><a href="literals/#fraudsterregistrationjobstatustype">FraudsterRegistrationJobStatusType</a></li>
+<li><a href="literals/#listdomainspaginatorname">ListDomainsPaginatorName</a></li>
+<li><a href="literals/#listfraudsterregistrationjobspaginatorname">ListFraudsterRegistrationJobsPaginatorName</a></li>
+<li><a href="literals/#listspeakerenrollmentjobspaginatorname">ListSpeakerEnrollmentJobsPaginatorName</a></li>
+<li><a href="literals/#listspeakerspaginatorname">ListSpeakersPaginatorName</a></li>
 <li><a href="literals/#speakerenrollmentjobstatustype">SpeakerEnrollmentJobStatusType</a></li>
 <li><a href="literals/#speakerstatustype">SpeakerStatusType</a></li>
 <li><a href="literals/#streamingstatustype">StreamingStatusType</a></li>
 <li><a href="literals/#voiceidservicename">VoiceIDServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_voice_id.type_defs</span> <span class="kn">import</span> <span class="n">AuthenticationConfigurationTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AuthenticationConfigurationTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;AcceptanceThreshold&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_voice_id.type_defs</span> <span class="kn">import</span> <span class="n">AuthenticationConfigurationTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AuthenticationConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;AcceptanceThreshold&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#authenticationconfigurationtypedef">AuthenticationConfigurationTypeDef</a></li>
@@ -36090,6 +36139,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#inputdataconfigtypedef">InputDataConfigTypeDef</a></li>
 <li><a href="type_defs/#outputdataconfigtypedef">OutputDataConfigTypeDef</a></li>
 <li><a href="type_defs/#registrationconfigtypedef">RegistrationConfigTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listdomainsrequestrequesttypedef">ListDomainsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfraudsterregistrationjobsrequestrequesttypedef">ListFraudsterRegistrationJobsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listspeakerenrollmentjobsrequestrequesttypedef">ListSpeakerEnrollmentJobsRequestRequestTypeDef</a></li>
@@ -36114,6 +36164,10 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#speakerenrollmentjobsummarytypedef">SpeakerEnrollmentJobSummaryTypeDef</a></li>
 <li><a href="type_defs/#fraudsterregistrationjobtypedef">FraudsterRegistrationJobTypeDef</a></li>
 <li><a href="type_defs/#startfraudsterregistrationjobrequestrequesttypedef">StartFraudsterRegistrationJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listdomainsrequestlistdomainspaginatetypedef">ListDomainsRequestListDomainsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfraudsterregistrationjobsrequestlistfraudsterregistrationjobspaginatetypedef">ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listspeakerenrollmentjobsrequestlistspeakerenrollmentjobspaginatetypedef">ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listspeakersrequestlistspeakerspaginatetypedef">ListSpeakersRequestListSpeakersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listspeakersresponsetypedef">ListSpeakersResponseTypeDef</a></li>
 <li><a href="type_defs/#listdomainsresponsetypedef">ListDomainsResponseTypeDef</a></li>
 <li><a href="type_defs/#createdomainresponsetypedef">CreateDomainResponseTypeDef</a></li>

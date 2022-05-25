@@ -391,7 +391,7 @@ parent.create_artifact(**kwargs)
 
 ### create\_auto\_ml\_job
 
-Creates an Autopilot job.
+.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
@@ -3386,7 +3386,7 @@ parent.describe_artifact(**kwargs)
 
 ### describe\_auto\_ml\_job
 
-Returns information about an Amazon SageMaker AutoML job.
+.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job)
@@ -5160,7 +5160,7 @@ parent.list_auto_ml_jobs(**kwargs)
 
 ### list\_candidates\_for\_auto\_ml\_job
 
-List the candidates created for the job.
+.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").list_candidates_for_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)

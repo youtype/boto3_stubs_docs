@@ -61,6 +61,26 @@ def get_client() -> VoiceIDClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("voice-id").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_voice_id.paginator import ListDomainsPaginator
+
+def get_list_domains_paginator() -> ListDomainsPaginator:
+    return Session().client("voice-id").get_paginator("list_domains"))
+```
+
+- [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- [ListFraudsterRegistrationJobsPaginator](./paginators.md#listfraudsterregistrationjobspaginator)
+- [ListSpeakerEnrollmentJobsPaginator](./paginators.md#listspeakerenrollmentjobspaginator)
+- [ListSpeakersPaginator](./paginators.md#listspeakerspaginator)
+
+
 
 
 
@@ -87,12 +107,17 @@ def get_value() -> AuthenticationDecisionType:
 - [FraudDetectionDecisionType](./literals.md#frauddetectiondecisiontype)
 - [FraudDetectionReasonType](./literals.md#frauddetectionreasontype)
 - [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
+- [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
+- [ListFraudsterRegistrationJobsPaginatorName](./literals.md#listfraudsterregistrationjobspaginatorname)
+- [ListSpeakerEnrollmentJobsPaginatorName](./literals.md#listspeakerenrollmentjobspaginatorname)
+- [ListSpeakersPaginatorName](./literals.md#listspeakerspaginatorname)
 - [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
 - [SpeakerStatusType](./literals.md#speakerstatustype)
 - [StreamingStatusType](./literals.md#streamingstatustype)
 - [VoiceIDServiceName](./literals.md#voiceidservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [RegionName](./literals.md#regionname)
 
 
@@ -134,6 +159,7 @@ def get_value() -> AuthenticationConfigurationTypeDef:
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef)
 - [ListFraudsterRegistrationJobsRequestRequestTypeDef](./type_defs.md#listfraudsterregistrationjobsrequestrequesttypedef)
 - [ListSpeakerEnrollmentJobsRequestRequestTypeDef](./type_defs.md#listspeakerenrollmentjobsrequestrequesttypedef)
@@ -158,6 +184,10 @@ def get_value() -> AuthenticationConfigurationTypeDef:
 - [SpeakerEnrollmentJobSummaryTypeDef](./type_defs.md#speakerenrollmentjobsummarytypedef)
 - [FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef)
 - [StartFraudsterRegistrationJobRequestRequestTypeDef](./type_defs.md#startfraudsterregistrationjobrequestrequesttypedef)
+- [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)
+- [ListFraudsterRegistrationJobsRequestListFraudsterRegistrationJobsPaginateTypeDef](./type_defs.md#listfraudsterregistrationjobsrequestlistfraudsterregistrationjobspaginatetypedef)
+- [ListSpeakerEnrollmentJobsRequestListSpeakerEnrollmentJobsPaginateTypeDef](./type_defs.md#listspeakerenrollmentjobsrequestlistspeakerenrollmentjobspaginatetypedef)
+- [ListSpeakersRequestListSpeakersPaginateTypeDef](./type_defs.md#listspeakersrequestlistspeakerspaginatetypedef)
 - [ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef)
 - [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)
 - [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef)

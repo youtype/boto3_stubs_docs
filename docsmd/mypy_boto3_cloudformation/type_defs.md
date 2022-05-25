@@ -1124,6 +1124,7 @@ class StackSetOperationSummaryTypeDef(TypedDict):
     Status: NotRequired[StackSetOperationStatusType],  # (2)
     CreationTimestamp: NotRequired[datetime],
     EndTimestamp: NotRequired[datetime],
+    StatusReason: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
@@ -3935,6 +3936,7 @@ class StackSetOperationTypeDef(TypedDict):
     EndTimestamp: NotRequired[datetime],
     DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (4)
     StackSetDriftDetectionDetails: NotRequired[StackSetDriftDetectionDetailsTypeDef],  # (5)
+    StatusReason: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 

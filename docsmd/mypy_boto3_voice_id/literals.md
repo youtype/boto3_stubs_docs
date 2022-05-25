@@ -21,6 +21,7 @@ AuthenticationDecisionType = Literal[
     "ACCEPT",
     "NOT_ENOUGH_SPEECH",
     "REJECT",
+    "SPEAKER_EXPIRED",
     "SPEAKER_ID_NOT_PROVIDED",
     "SPEAKER_NOT_ENROLLED",
     "SPEAKER_OPTED_OUT",
@@ -133,6 +134,62 @@ FraudsterRegistrationJobStatusType = Literal[
     "FAILED",
     "IN_PROGRESS",
     "SUBMITTED",
+]
+```
+## ListDomainsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import ListDomainsPaginatorName
+
+def get_value() -> ListDomainsPaginatorName:
+    return "list_domains"
+```
+
+```python title="Definition"
+ListDomainsPaginatorName = Literal[
+    "list_domains",
+]
+```
+## ListFraudsterRegistrationJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import ListFraudsterRegistrationJobsPaginatorName
+
+def get_value() -> ListFraudsterRegistrationJobsPaginatorName:
+    return "list_fraudster_registration_jobs"
+```
+
+```python title="Definition"
+ListFraudsterRegistrationJobsPaginatorName = Literal[
+    "list_fraudster_registration_jobs",
+]
+```
+## ListSpeakerEnrollmentJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import ListSpeakerEnrollmentJobsPaginatorName
+
+def get_value() -> ListSpeakerEnrollmentJobsPaginatorName:
+    return "list_speaker_enrollment_jobs"
+```
+
+```python title="Definition"
+ListSpeakerEnrollmentJobsPaginatorName = Literal[
+    "list_speaker_enrollment_jobs",
+]
+```
+## ListSpeakersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import ListSpeakersPaginatorName
+
+def get_value() -> ListSpeakersPaginatorName:
+    return "list_speakers"
+```
+
+```python title="Definition"
+ListSpeakersPaginatorName = Literal[
+    "list_speakers",
 ]
 ```
 ## SpeakerEnrollmentJobStatusType
@@ -539,6 +596,23 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_domains"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "list_domains",
+    "list_fraudster_registration_jobs",
+    "list_speaker_enrollment_jobs",
+    "list_speakers",
 ]
 ```
 ## RegionName

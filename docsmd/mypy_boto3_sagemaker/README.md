@@ -475,6 +475,7 @@ def get_value() -> ActionSourceTypeDef:
 - [AsyncInferenceClientConfigTypeDef](./type_defs.md#asyncinferenceclientconfigtypedef)
 - [AsyncInferenceNotificationConfigTypeDef](./type_defs.md#asyncinferencenotificationconfigtypedef)
 - [AthenaDatasetDefinitionTypeDef](./type_defs.md#athenadatasetdefinitiontypedef)
+- [AutoMLCandidateGenerationConfigTypeDef](./type_defs.md#automlcandidategenerationconfigtypedef)
 - [AutoMLCandidateStepTypeDef](./type_defs.md#automlcandidatesteptypedef)
 - [AutoMLContainerDefinitionTypeDef](./type_defs.md#automlcontainerdefinitiontypedef)
 - [FinalAutoMLJobObjectiveMetricTypeDef](./type_defs.md#finalautomljobobjectivemetrictypedef)

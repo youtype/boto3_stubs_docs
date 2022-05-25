@@ -235,6 +235,22 @@ class AppFlowConfigTypeDef(TypedDict):
     FlowName: NotRequired[str],
 ```
 
+## BackTestConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import BackTestConfigurationTypeDef
+
+def get_value() -> BackTestConfigurationTypeDef:
+    return {
+        "RunBackTestMode": ...,
+    }
+```
+
+```python title="Definition"
+class BackTestConfigurationTypeDef(TypedDict):
+    RunBackTestMode: bool,
+```
+
 ## AttributeValueTypeDef
 
 ```python title="Usage Example"
@@ -959,6 +975,29 @@ class GetFeedbackRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef) 
+## AthenaSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AthenaSourceConfigTypeDef
+
+def get_value() -> AthenaSourceConfigTypeDef:
+    return {
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class AthenaSourceConfigTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    DataCatalog: NotRequired[str],
+    TableName: NotRequired[str],
+    WorkGroupName: NotRequired[str],
+    S3ResultsPath: NotRequired[str],
+    BackTestConfiguration: NotRequired[BackTestConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BackTestConfigurationTypeDef](./type_defs.md#backtestconfigurationtypedef) 
 ## DetectedFieldTypeDef
 
 ```python title="Usage Example"
@@ -1714,6 +1753,7 @@ class MetricSourceTypeDef(TypedDict):
     CloudWatchConfig: NotRequired[CloudWatchConfigTypeDef],  # (3)
     RDSSourceConfig: NotRequired[RDSSourceConfigTypeDef],  # (4)
     RedshiftSourceConfig: NotRequired[RedshiftSourceConfigTypeDef],  # (5)
+    AthenaSourceConfig: NotRequired[AthenaSourceConfigTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: S3SourceConfigTypeDef](./type_defs.md#s3sourceconfigtypedef) 
@@ -1721,6 +1761,7 @@ class MetricSourceTypeDef(TypedDict):
 3. See [:material-code-braces: CloudWatchConfigTypeDef](./type_defs.md#cloudwatchconfigtypedef) 
 4. See [:material-code-braces: RDSSourceConfigTypeDef](./type_defs.md#rdssourceconfigtypedef) 
 5. See [:material-code-braces: RedshiftSourceConfigTypeDef](./type_defs.md#redshiftsourceconfigtypedef) 
+6. See [:material-code-braces: AthenaSourceConfigTypeDef](./type_defs.md#athenasourceconfigtypedef) 
 ## GetSampleDataRequestRequestTypeDef
 
 ```python title="Usage Example"

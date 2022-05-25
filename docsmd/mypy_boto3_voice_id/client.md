@@ -769,4 +769,14 @@ parent.update_domain(**kwargs)
 
 
 
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("voice-id").get_paginator` method with overloads.
+
+- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_fraudster_registration_jobs")` -> [ListFraudsterRegistrationJobsPaginator](./paginators.md#listfraudsterregistrationjobspaginator)
+- `client.get_paginator("list_speaker_enrollment_jobs")` -> [ListSpeakerEnrollmentJobsPaginator](./paginators.md#listspeakerenrollmentjobspaginator)
+- `client.get_paginator("list_speakers")` -> [ListSpeakersPaginator](./paginators.md#listspeakerspaginator)
+
+
 

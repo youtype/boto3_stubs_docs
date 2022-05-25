@@ -225,6 +225,23 @@ class LustreLogCreateConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LustreAccessAuditLogLevelType](./literals.md#lustreaccessauditlogleveltype) 
+## LustreRootSquashConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import LustreRootSquashConfigurationTypeDef
+
+def get_value() -> LustreRootSquashConfigurationTypeDef:
+    return {
+        "RootSquash": ...,
+    }
+```
+
+```python title="Definition"
+class LustreRootSquashConfigurationTypeDef(TypedDict):
+    RootSquash: NotRequired[str],
+    NoSquashNids: NotRequired[List[str]],
+```
+
 ## DiskIopsConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1539,6 +1556,7 @@ class CreateFileSystemLustreConfigurationTypeDef(TypedDict):
     DriveCacheType: NotRequired[DriveCacheTypeType],  # (3)
     DataCompressionType: NotRequired[DataCompressionTypeType],  # (4)
     LogConfiguration: NotRequired[LustreLogCreateConfigurationTypeDef],  # (5)
+    RootSquashConfiguration: NotRequired[LustreRootSquashConfigurationTypeDef],  # (6)
 ```
 
 1. See [:material-code-brackets: LustreDeploymentTypeType](./literals.md#lustredeploymenttypetype) 
@@ -1546,6 +1564,7 @@ class CreateFileSystemLustreConfigurationTypeDef(TypedDict):
 3. See [:material-code-brackets: DriveCacheTypeType](./literals.md#drivecachetypetype) 
 4. See [:material-code-brackets: DataCompressionTypeType](./literals.md#datacompressiontypetype) 
 5. See [:material-code-braces: LustreLogCreateConfigurationTypeDef](./type_defs.md#lustrelogcreateconfigurationtypedef) 
+6. See [:material-code-braces: LustreRootSquashConfigurationTypeDef](./type_defs.md#lustrerootsquashconfigurationtypedef) 
 ## UpdateFileSystemLustreConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1565,11 +1584,13 @@ class UpdateFileSystemLustreConfigurationTypeDef(TypedDict):
     AutoImportPolicy: NotRequired[AutoImportPolicyTypeType],  # (1)
     DataCompressionType: NotRequired[DataCompressionTypeType],  # (2)
     LogConfiguration: NotRequired[LustreLogCreateConfigurationTypeDef],  # (3)
+    RootSquashConfiguration: NotRequired[LustreRootSquashConfigurationTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype) 
 2. See [:material-code-brackets: DataCompressionTypeType](./literals.md#datacompressiontypetype) 
 3. See [:material-code-braces: LustreLogCreateConfigurationTypeDef](./type_defs.md#lustrelogcreateconfigurationtypedef) 
+4. See [:material-code-braces: LustreRootSquashConfigurationTypeDef](./type_defs.md#lustrerootsquashconfigurationtypedef) 
 ## CreateFileSystemOntapConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2501,6 +2522,7 @@ class LustreFileSystemConfigurationTypeDef(TypedDict):
     DriveCacheType: NotRequired[DriveCacheTypeType],  # (3)
     DataCompressionType: NotRequired[DataCompressionTypeType],  # (4)
     LogConfiguration: NotRequired[LustreLogConfigurationTypeDef],  # (5)
+    RootSquashConfiguration: NotRequired[LustreRootSquashConfigurationTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: DataRepositoryConfigurationTypeDef](./type_defs.md#datarepositoryconfigurationtypedef) 
@@ -2508,6 +2530,7 @@ class LustreFileSystemConfigurationTypeDef(TypedDict):
 3. See [:material-code-brackets: DriveCacheTypeType](./literals.md#drivecachetypetype) 
 4. See [:material-code-brackets: DataCompressionTypeType](./literals.md#datacompressiontypetype) 
 5. See [:material-code-braces: LustreLogConfigurationTypeDef](./type_defs.md#lustrelogconfigurationtypedef) 
+6. See [:material-code-braces: LustreRootSquashConfigurationTypeDef](./type_defs.md#lustrerootsquashconfigurationtypedef) 
 ## CreateDataRepositoryTaskResponseTypeDef
 
 ```python title="Usage Example"
