@@ -151,6 +151,27 @@ class TagTypeDef(TypedDict):
     Value: str,
 ```
 
+## TimeAlignmentBoundaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeAlignmentBoundaryTypeDef
+
+def get_value() -> TimeAlignmentBoundaryTypeDef:
+    return {
+        "Month": ...,
+    }
+```
+
+```python title="Definition"
+class TimeAlignmentBoundaryTypeDef(TypedDict):
+    Month: NotRequired[MonthType],  # (1)
+    DayOfMonth: NotRequired[int],
+    DayOfWeek: NotRequired[DayOfWeekType],  # (2)
+    Hour: NotRequired[int],
+```
+
+1. See [:material-code-brackets: MonthType](./literals.md#monthtype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -2239,6 +2260,7 @@ class CreateAutoPredictorRequestRequestTypeDef(TypedDict):
     ExplainPredictor: NotRequired[bool],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
     MonitorConfig: NotRequired[MonitorConfigTypeDef],  # (5)
+    TimeAlignmentBoundary: NotRequired[TimeAlignmentBoundaryTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: DataConfigTypeDef](./type_defs.md#dataconfigtypedef) 
@@ -2246,6 +2268,7 @@ class CreateAutoPredictorRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 5. See [:material-code-braces: MonitorConfigTypeDef](./type_defs.md#monitorconfigtypedef) 
+6. See [:material-code-braces: TimeAlignmentBoundaryTypeDef](./type_defs.md#timealignmentboundarytypedef) 
 ## DescribeAutoPredictorResponseTypeDef
 
 ```python title="Usage Example"
@@ -2271,6 +2294,7 @@ def get_value() -> DescribeAutoPredictorResponseTypeDef:
         "OptimizationMetric": ...,
         "ExplainabilityInfo": ...,
         "MonitorInfo": ...,
+        "TimeAlignmentBoundary": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2295,7 +2319,8 @@ class DescribeAutoPredictorResponseTypeDef(TypedDict):
     OptimizationMetric: OptimizationMetricType,  # (4)
     ExplainabilityInfo: ExplainabilityInfoTypeDef,  # (5)
     MonitorInfo: MonitorInfoTypeDef,  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    TimeAlignmentBoundary: TimeAlignmentBoundaryTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-braces: DataConfigTypeDef](./type_defs.md#dataconfigtypedef) 
@@ -2304,7 +2329,8 @@ class DescribeAutoPredictorResponseTypeDef(TypedDict):
 4. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 5. See [:material-code-braces: ExplainabilityInfoTypeDef](./type_defs.md#explainabilityinfotypedef) 
 6. See [:material-code-braces: MonitorInfoTypeDef](./type_defs.md#monitorinfotypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: TimeAlignmentBoundaryTypeDef](./type_defs.md#timealignmentboundarytypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BaselineTypeDef
 
 ```python title="Usage Example"

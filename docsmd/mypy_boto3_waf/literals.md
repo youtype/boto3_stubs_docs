@@ -840,6 +840,7 @@ ServiceName = Literal[
     "elbv2",
     "emr",
     "emr-containers",
+    "emr-serverless",
     "es",
     "events",
     "evidently",

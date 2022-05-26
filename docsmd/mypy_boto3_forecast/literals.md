@@ -56,6 +56,26 @@ DatasetTypeType = Literal[
     "TARGET_TIME_SERIES",
 ]
 ```
+## DayOfWeekType
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import DayOfWeekType
+
+def get_value() -> DayOfWeekType:
+    return "FRIDAY"
+```
+
+```python title="Definition"
+DayOfWeekType = Literal[
+    "FRIDAY",
+    "MONDAY",
+    "SATURDAY",
+    "SUNDAY",
+    "THURSDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+]
+```
 ## DomainType
 
 ```python title="Usage Example"
@@ -274,6 +294,31 @@ ListPredictorsPaginatorName = Literal[
     "list_predictors",
 ]
 ```
+## MonthType
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import MonthType
+
+def get_value() -> MonthType:
+    return "APRIL"
+```
+
+```python title="Definition"
+MonthType = Literal[
+    "APRIL",
+    "AUGUST",
+    "DECEMBER",
+    "FEBRUARY",
+    "JANUARY",
+    "JULY",
+    "JUNE",
+    "MARCH",
+    "MAY",
+    "NOVEMBER",
+    "OCTOBER",
+    "SEPTEMBER",
+]
+```
 ## OptimizationMetricType
 
 ```python title="Usage Example"
@@ -484,6 +529,7 @@ ServiceName = Literal[
     "elbv2",
     "emr",
     "emr-containers",
+    "emr-serverless",
     "es",
     "events",
     "evidently",

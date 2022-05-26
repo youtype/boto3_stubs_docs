@@ -633,6 +633,39 @@ class ContainerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ContainerServiceProtocolType](./literals.md#containerserviceprotocoltype) 
+## ContainerServiceECRImagePullerRoleRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import ContainerServiceECRImagePullerRoleRequestTypeDef
+
+def get_value() -> ContainerServiceECRImagePullerRoleRequestTypeDef:
+    return {
+        "isActive": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerServiceECRImagePullerRoleRequestTypeDef(TypedDict):
+    isActive: NotRequired[bool],
+```
+
+## ContainerServiceECRImagePullerRoleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import ContainerServiceECRImagePullerRoleTypeDef
+
+def get_value() -> ContainerServiceECRImagePullerRoleTypeDef:
+    return {
+        "isActive": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerServiceECRImagePullerRoleTypeDef(TypedDict):
+    isActive: NotRequired[bool],
+    principalArn: NotRequired[str],
+```
+
 ## ContainerServiceHealthCheckConfigTypeDef
 
 ```python title="Usage Example"
@@ -3239,27 +3272,6 @@ class UpdateBucketBundleRequestRequestTypeDef(TypedDict):
     bundleId: str,
 ```
 
-## UpdateContainerServiceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lightsail.type_defs import UpdateContainerServiceRequestRequestTypeDef
-
-def get_value() -> UpdateContainerServiceRequestRequestTypeDef:
-    return {
-        "serviceName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateContainerServiceRequestRequestTypeDef(TypedDict):
-    serviceName: str,
-    power: NotRequired[ContainerServicePowerNameType],  # (1)
-    scale: NotRequired[int],
-    isDisabled: NotRequired[bool],
-    publicDomainNames: NotRequired[Mapping[str, Sequence[str]]],
-```
-
-1. See [:material-code-brackets: ContainerServicePowerNameType](./literals.md#containerservicepowernametype) 
 ## UpdateDistributionBundleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4351,6 +4363,40 @@ class RegisterContainerImageResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContainerImageTypeDef](./type_defs.md#containerimagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PrivateRegistryAccessRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import PrivateRegistryAccessRequestTypeDef
+
+def get_value() -> PrivateRegistryAccessRequestTypeDef:
+    return {
+        "ecrImagePullerRole": ...,
+    }
+```
+
+```python title="Definition"
+class PrivateRegistryAccessRequestTypeDef(TypedDict):
+    ecrImagePullerRole: NotRequired[ContainerServiceECRImagePullerRoleRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ContainerServiceECRImagePullerRoleRequestTypeDef](./type_defs.md#containerserviceecrimagepullerrolerequesttypedef) 
+## PrivateRegistryAccessTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import PrivateRegistryAccessTypeDef
+
+def get_value() -> PrivateRegistryAccessTypeDef:
+    return {
+        "ecrImagePullerRole": ...,
+    }
+```
+
+```python title="Definition"
+class PrivateRegistryAccessTypeDef(TypedDict):
+    ecrImagePullerRole: NotRequired[ContainerServiceECRImagePullerRoleTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ContainerServiceECRImagePullerRoleTypeDef](./type_defs.md#containerserviceecrimagepullerroletypedef) 
 ## ContainerServiceEndpointTypeDef
 
 ```python title="Usage Example"
@@ -7786,6 +7832,29 @@ class GetCloudFormationStackRecordsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: CloudFormationStackRecordTypeDef](./type_defs.md#cloudformationstackrecordtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateContainerServiceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import UpdateContainerServiceRequestRequestTypeDef
+
+def get_value() -> UpdateContainerServiceRequestRequestTypeDef:
+    return {
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateContainerServiceRequestRequestTypeDef(TypedDict):
+    serviceName: str,
+    power: NotRequired[ContainerServicePowerNameType],  # (1)
+    scale: NotRequired[int],
+    isDisabled: NotRequired[bool],
+    publicDomainNames: NotRequired[Mapping[str, Sequence[str]]],
+    privateRegistryAccess: NotRequired[PrivateRegistryAccessRequestTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ContainerServicePowerNameType](./literals.md#containerservicepowernametype) 
+2. See [:material-code-braces: PrivateRegistryAccessRequestTypeDef](./type_defs.md#privateregistryaccessrequesttypedef) 
 ## ContainerServiceDeploymentTypeDef
 
 ```python title="Usage Example"
@@ -8251,6 +8320,7 @@ class ContainerServiceTypeDef(TypedDict):
     privateDomainName: NotRequired[str],
     publicDomainNames: NotRequired[Dict[str, List[str]]],
     url: NotRequired[str],
+    privateRegistryAccess: NotRequired[PrivateRegistryAccessTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 
@@ -8261,6 +8331,7 @@ class ContainerServiceTypeDef(TypedDict):
 6. See [:material-code-braces: ContainerServiceStateDetailTypeDef](./type_defs.md#containerservicestatedetailtypedef) 
 7. See [:material-code-braces: ContainerServiceDeploymentTypeDef](./type_defs.md#containerservicedeploymenttypedef) 
 8. See [:material-code-braces: ContainerServiceDeploymentTypeDef](./type_defs.md#containerservicedeploymenttypedef) 
+9. See [:material-code-braces: PrivateRegistryAccessTypeDef](./type_defs.md#privateregistryaccesstypedef) 
 ## GetContainerServiceDeploymentsResultTypeDef
 
 ```python title="Usage Example"
@@ -8302,11 +8373,13 @@ class CreateContainerServiceRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
     publicDomainNames: NotRequired[Mapping[str, Sequence[str]]],
     deployment: NotRequired[ContainerServiceDeploymentRequestTypeDef],  # (3)
+    privateRegistryAccess: NotRequired[PrivateRegistryAccessRequestTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: ContainerServicePowerNameType](./literals.md#containerservicepowernametype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef) 
+4. See [:material-code-braces: PrivateRegistryAccessRequestTypeDef](./type_defs.md#privateregistryaccessrequesttypedef) 
 ## ExportSnapshotRecordTypeDef
 
 ```python title="Usage Example"

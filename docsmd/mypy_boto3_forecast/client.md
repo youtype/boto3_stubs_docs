@@ -93,7 +93,8 @@ def create_auto_predictor(
     ExplainPredictor: bool = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (4)
     MonitorConfig: MonitorConfigTypeDef = ...,  # (5)
-) -> CreateAutoPredictorResponseTypeDef:  # (6)
+    TimeAlignmentBoundary: TimeAlignmentBoundaryTypeDef = ...,  # (6)
+) -> CreateAutoPredictorResponseTypeDef:  # (7)
     ...
 ```
 
@@ -102,7 +103,8 @@ def create_auto_predictor(
 3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 5. See [:material-code-braces: MonitorConfigTypeDef](./type_defs.md#monitorconfigtypedef) 
-6. See [:material-code-braces: CreateAutoPredictorResponseTypeDef](./type_defs.md#createautopredictorresponsetypedef) 
+6. See [:material-code-braces: TimeAlignmentBoundaryTypeDef](./type_defs.md#timealignmentboundarytypedef) 
+7. See [:material-code-braces: CreateAutoPredictorResponseTypeDef](./type_defs.md#createautopredictorresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

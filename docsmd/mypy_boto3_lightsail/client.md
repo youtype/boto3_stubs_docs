@@ -506,14 +506,16 @@ def create_container_service(
     tags: Sequence[TagTypeDef] = ...,  # (2)
     publicDomainNames: Mapping[str, Sequence[str]] = ...,
     deployment: ContainerServiceDeploymentRequestTypeDef = ...,  # (3)
-) -> CreateContainerServiceResultTypeDef:  # (4)
+    privateRegistryAccess: PrivateRegistryAccessRequestTypeDef = ...,  # (4)
+) -> CreateContainerServiceResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ContainerServicePowerNameType](./literals.md#containerservicepowernametype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef) 
-4. See [:material-code-braces: CreateContainerServiceResultTypeDef](./type_defs.md#createcontainerserviceresulttypedef) 
+4. See [:material-code-braces: PrivateRegistryAccessRequestTypeDef](./type_defs.md#privateregistryaccessrequesttypedef) 
+5. See [:material-code-braces: CreateContainerServiceResultTypeDef](./type_defs.md#createcontainerserviceresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4709,12 +4711,14 @@ def update_container_service(
     scale: int = ...,
     isDisabled: bool = ...,
     publicDomainNames: Mapping[str, Sequence[str]] = ...,
-) -> UpdateContainerServiceResultTypeDef:  # (2)
+    privateRegistryAccess: PrivateRegistryAccessRequestTypeDef = ...,  # (2)
+) -> UpdateContainerServiceResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: ContainerServicePowerNameType](./literals.md#containerservicepowernametype) 
-2. See [:material-code-braces: UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef) 
+2. See [:material-code-braces: PrivateRegistryAccessRequestTypeDef](./type_defs.md#privateregistryaccessrequesttypedef) 
+3. See [:material-code-braces: UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
