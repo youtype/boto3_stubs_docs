@@ -1287,10 +1287,14 @@ class CreateLocationEfsRequestRequestTypeDef(TypedDict):
     Ec2Config: Ec2ConfigTypeDef,  # (1)
     Subdirectory: NotRequired[str],
     Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (2)
+    AccessPointArn: NotRequired[str],
+    FileSystemAccessRoleArn: NotRequired[str],
+    InTransitEncryption: NotRequired[EfsInTransitEncryptionType],  # (3)
 ```
 
 1. See [:material-code-braces: Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) 
 2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+3. See [:material-code-brackets: EfsInTransitEncryptionType](./literals.md#efsintransitencryptiontype) 
 ## DescribeLocationEfsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1302,6 +1306,9 @@ def get_value() -> DescribeLocationEfsResponseTypeDef:
         "LocationUri": ...,
         "Ec2Config": ...,
         "CreationTime": ...,
+        "AccessPointArn": ...,
+        "FileSystemAccessRoleArn": ...,
+        "InTransitEncryption": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1312,11 +1319,15 @@ class DescribeLocationEfsResponseTypeDef(TypedDict):
     LocationUri: str,
     Ec2Config: Ec2ConfigTypeDef,  # (1)
     CreationTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    AccessPointArn: str,
+    FileSystemAccessRoleArn: str,
+    InTransitEncryption: EfsInTransitEncryptionType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-brackets: EfsInTransitEncryptionType](./literals.md#efsintransitencryptiontype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLocationHdfsRequestRequestTypeDef
 
 ```python title="Usage Example"

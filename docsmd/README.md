@@ -279,7 +279,7 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-emr-containers](./mypy_boto3_emr_containers/README.md) for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers) service
 
-- [mypy-boto3-emr-serverless](./mypy_boto3_emr_serverless/README.md) for [EMRServerlessWebService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService) service
+- [mypy-boto3-emr-serverless](./mypy_boto3_emr_serverless/README.md) for [EMRServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless) service
 
 - [mypy-boto3-es](./mypy_boto3_es/README.md) for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService) service
 

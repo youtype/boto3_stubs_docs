@@ -102,6 +102,7 @@ def get_value() -> AgentStatusType:
 
 - [AgentStatusType](./literals.md#agentstatustype)
 - [AtimeType](./literals.md#atimetype)
+- [EfsInTransitEncryptionType](./literals.md#efsintransitencryptiontype)
 - [EndpointTypeType](./literals.md#endpointtypetype)
 - [FilterTypeType](./literals.md#filtertypetype)
 - [GidType](./literals.md#gidtype)

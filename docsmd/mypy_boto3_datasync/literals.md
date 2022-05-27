@@ -37,6 +37,21 @@ AtimeType = Literal[
     "NONE",
 ]
 ```
+## EfsInTransitEncryptionType
+
+```python title="Usage Example"
+from mypy_boto3_datasync.literals import EfsInTransitEncryptionType
+
+def get_value() -> EfsInTransitEncryptionType:
+    return "NONE"
+```
+
+```python title="Definition"
+EfsInTransitEncryptionType = Literal[
+    "NONE",
+    "TLS1_2",
+]
+```
 ## EndpointTypeType
 
 ```python title="Usage Example"

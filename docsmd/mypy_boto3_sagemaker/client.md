@@ -1505,7 +1505,8 @@ def create_notebook_instance(
     AdditionalCodeRepositories: Sequence[str] = ...,
     RootAccess: RootAccessType = ...,  # (5)
     PlatformIdentifier: str = ...,
-) -> CreateNotebookInstanceOutputTypeDef:  # (6)
+    InstanceMetadataServiceConfiguration: InstanceMetadataServiceConfigurationTypeDef = ...,  # (6)
+) -> CreateNotebookInstanceOutputTypeDef:  # (7)
     ...
 ```
 
@@ -1514,7 +1515,8 @@ def create_notebook_instance(
 3. See [:material-code-brackets: DirectInternetAccessType](./literals.md#directinternetaccesstype) 
 4. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
 5. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
-6. See [:material-code-braces: CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef) 
+6. See [:material-code-braces: InstanceMetadataServiceConfigurationTypeDef](./type_defs.md#instancemetadataserviceconfigurationtypedef) 
+7. See [:material-code-braces: CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -8251,6 +8253,7 @@ def update_notebook_instance(
     DisassociateDefaultCodeRepository: bool = ...,
     DisassociateAdditionalCodeRepositories: bool = ...,
     RootAccess: RootAccessType = ...,  # (3)
+    InstanceMetadataServiceConfiguration: InstanceMetadataServiceConfigurationTypeDef = ...,  # (4)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -8258,6 +8261,7 @@ def update_notebook_instance(
 1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
 2. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
 3. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
+4. See [:material-code-braces: InstanceMetadataServiceConfigurationTypeDef](./type_defs.md#instancemetadataserviceconfigurationtypedef) 
 
 
 ```python title="Usage example with kwargs"

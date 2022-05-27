@@ -1396,6 +1396,7 @@ class ScheduledTriggerPropertiesTypeDef(TypedDict):
     timezone: NotRequired[str],
     scheduleOffset: NotRequired[int],
     firstExecutionFrom: NotRequired[Union[datetime, str]],
+    flowErrorDeactivationThreshold: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: DataPullModeType](./literals.md#datapullmodetype) 
@@ -2381,6 +2382,7 @@ class S3OutputFormatConfigTypeDef(TypedDict):
     fileType: NotRequired[FileTypeType],  # (1)
     prefixConfig: NotRequired[PrefixConfigTypeDef],  # (2)
     aggregationConfig: NotRequired[AggregationConfigTypeDef],  # (3)
+    preserveSourceDataTyping: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: FileTypeType](./literals.md#filetypetype) 

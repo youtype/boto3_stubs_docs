@@ -1,16 +1,16 @@
 # Paginators
 
-> [Index](../README.md) > [EMRServerlessWebService](./README.md) > Paginators
+> [Index](../README.md) > [EMRServerless](./README.md) > Paginators
 
 !!! note ""
 
-    Auto-generated documentation for [EMRServerlessWebService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService)
+    Auto-generated documentation for [EMRServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless)
     type annotations stubs module [mypy-boto3-emr-serverless](https://pypi.org/project/mypy-boto3-emr-serverless/).
 
 ## ListApplicationsPaginator
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").get_paginator("list_applications")`.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Paginator.ListApplications)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Paginator.ListApplications)
 
 ```python title="Usage example"
 from boto3.session import Session
@@ -53,7 +53,7 @@ parent.paginate(**kwargs)
 ## ListJobRunsPaginator
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").get_paginator("list_job_runs")`.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Paginator.ListJobRuns)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Paginator.ListJobRuns)
 
 ```python title="Usage example"
 from boto3.session import Session

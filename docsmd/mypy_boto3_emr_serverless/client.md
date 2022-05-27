@@ -1,22 +1,22 @@
-# EMRServerlessWebServiceClient
+# EMRServerlessClient
 
-> [Index](../README.md) > [EMRServerlessWebService](./README.md) > EMRServerlessWebServiceClient
+> [Index](../README.md) > [EMRServerless](./README.md) > EMRServerlessClient
 
 !!! note ""
 
-    Auto-generated documentation for [EMRServerlessWebService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService)
+    Auto-generated documentation for [EMRServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless)
     type annotations stubs module [mypy-boto3-emr-serverless](https://pypi.org/project/mypy-boto3-emr-serverless/).
 
-## EMRServerlessWebServiceClient
+## EMRServerlessClient
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless")`.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client)
 
 ```python title="Usage example"
 from boto3.session import Session
-from mypy_boto3_emr_serverless.client import EMRServerlessWebServiceClient
+from mypy_boto3_emr_serverless.client import EMRServerlessClient
 
-def get_emr-serverless_client() -> EMRServerlessWebServiceClient:
+def get_emr-serverless_client() -> EMRServerlessClient:
     return Session().client("emr-serverless")
 ```
 
@@ -58,7 +58,7 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 Check if an operation can be paginated.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").can_paginate` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.can_paginate)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.can_paginate)
 
 ```python title="Method definition"
 def can_paginate(
@@ -74,7 +74,7 @@ def can_paginate(
 Cancels a job run.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").cancel_job_run` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.cancel_job_run)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.cancel_job_run)
 
 ```python title="Method definition"
 def cancel_job_run(
@@ -105,7 +105,7 @@ parent.cancel_job_run(**kwargs)
 Creates an application.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").create_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.create_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.create_application)
 
 ```python title="Method definition"
 def create_application(
@@ -150,7 +150,7 @@ parent.create_application(**kwargs)
 Deletes an application.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").delete_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.delete_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.delete_application)
 
 ```python title="Method definition"
 def delete_application(
@@ -178,7 +178,7 @@ parent.delete_application(**kwargs)
 Generate a presigned url given a client, its method, and arguments.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").generate_presigned_url` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.generate_presigned_url)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.generate_presigned_url)
 
 ```python title="Method definition"
 def generate_presigned_url(
@@ -197,7 +197,7 @@ def generate_presigned_url(
 Displays detailed information about a specified application.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").get_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.get_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.get_application)
 
 ```python title="Method definition"
 def get_application(
@@ -226,7 +226,7 @@ parent.get_application(**kwargs)
 Displays detailed information about a job run.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").get_job_run` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.get_job_run)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.get_job_run)
 
 ```python title="Method definition"
 def get_job_run(
@@ -257,7 +257,7 @@ parent.get_job_run(**kwargs)
 Lists applications based on a set of parameters.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").list_applications` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.list_applications)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.list_applications)
 
 ```python title="Method definition"
 def list_applications(
@@ -289,7 +289,7 @@ parent.list_applications(**kwargs)
 Lists job runs based on a set of parameters.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").list_job_runs` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.list_job_runs)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.list_job_runs)
 
 ```python title="Method definition"
 def list_job_runs(
@@ -324,7 +324,7 @@ parent.list_job_runs(**kwargs)
 Lists the tags assigned to the resources.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").list_tags_for_resource` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.list_tags_for_resource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.list_tags_for_resource)
 
 ```python title="Method definition"
 def list_tags_for_resource(
@@ -353,7 +353,7 @@ parent.list_tags_for_resource(**kwargs)
 Starts a specified application and initializes initial capacity if configured.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").start_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.start_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.start_application)
 
 ```python title="Method definition"
 def start_application(
@@ -381,7 +381,7 @@ parent.start_application(**kwargs)
 Starts a job run.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").start_job_run` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.start_job_run)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.start_job_run)
 
 ```python title="Method definition"
 def start_job_run(
@@ -421,7 +421,7 @@ parent.start_job_run(**kwargs)
 Stops a specified application and releases initial capacity if configured.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").stop_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.stop_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.stop_application)
 
 ```python title="Method definition"
 def stop_application(
@@ -449,7 +449,7 @@ parent.stop_application(**kwargs)
 Assigns tags to resources.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").tag_resource` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.tag_resource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.tag_resource)
 
 ```python title="Method definition"
 def tag_resource(
@@ -479,7 +479,7 @@ parent.tag_resource(**kwargs)
 Removes tags from resources.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").untag_resource` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.untag_resource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.untag_resource)
 
 ```python title="Method definition"
 def untag_resource(
@@ -509,7 +509,7 @@ parent.untag_resource(**kwargs)
 Updates a specified application.
 
 Type annotations and code completion for `#!python boto3.client("emr-serverless").update_application` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client.update_application)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.update_application)
 
 ```python title="Method definition"
 def update_application(

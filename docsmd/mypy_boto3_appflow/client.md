@@ -252,7 +252,7 @@ parent.describe_connector(**kwargs)
 ### describe\_connector\_entity
 
 Provides details regarding the entity used with the connector, with a
-description of the data model for each entity.
+description of the data model for each field in that entity.
 
 Type annotations and code completion for `#!python boto3.client("appflow").describe_connector_entity` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)

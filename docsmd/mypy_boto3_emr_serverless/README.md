@@ -1,10 +1,10 @@
-#  EMRServerlessWebService module
+#  EMRServerless module
 
-> [Index](../README.md) > EMRServerlessWebService
+> [Index](../README.md) > EMRServerless
 
 !!! note ""
 
-    Auto-generated documentation for [EMRServerlessWebService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService)
+    Auto-generated documentation for [EMRServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless)
     type annotations stubs module [mypy-boto3-emr-serverless](https://pypi.org/project/mypy-boto3-emr-serverless/).
 
 ## How to install
@@ -14,11 +14,11 @@
 Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
-Click `Modify` and select `boto3 common` and `EMRServerlessWebService`.
+Click `Modify` and select `boto3 common` and `EMRServerless`.
 
 ### From PyPI with pip
 
-Install `boto3-stubs` for `EMRServerlessWebService` service.
+Install `boto3-stubs` for `EMRServerless` service.
 
 ```bash
 # install with boto3 type annotations
@@ -46,17 +46,17 @@ python -m pip uninstall -y mypy-boto3-emr-serverless
 
 Code samples can be found in [Examples](./usage.md).
 
-## EMRServerlessWebServiceClient
+## EMRServerlessClient
 
-Type annotations and code completion for  `#!python boto3.client("emr-serverless")` as [EMRServerlessWebServiceClient](./client.md)
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService.Client)
+Type annotations and code completion for  `#!python boto3.client("emr-serverless")` as [EMRServerlessClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client)
 
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_emr_serverless.client import EMRServerlessWebServiceClient
+from mypy_boto3_emr_serverless.client import EMRServerlessClient
 
-def get_client() -> EMRServerlessWebServiceClient:
+def get_client() -> EMRServerlessClient:
     return Session().client("emr-serverless")
 ```
 
@@ -101,7 +101,7 @@ def get_value() -> ApplicationStateType:
 - [JobRunStateType](./literals.md#jobrunstatetype)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [ListJobRunsPaginatorName](./literals.md#listjobrunspaginatorname)
-- [EMRServerlessWebServiceServiceName](./literals.md#emrserverlesswebserviceservicename)
+- [EMRServerlessServiceName](./literals.md#emrserverlessservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)

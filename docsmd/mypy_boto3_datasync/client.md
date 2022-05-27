@@ -131,7 +131,8 @@ parent.create_agent(**kwargs)
 
 ### create\_location\_efs
 
-Creates an endpoint for an Amazon EFS file system.
+Creates an endpoint for an Amazon EFS file system that DataSync can access for a
+transfer.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_location_efs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
@@ -144,13 +145,17 @@ def create_location_efs(
     Ec2Config: Ec2ConfigTypeDef,  # (1)
     Subdirectory: str = ...,
     Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
-) -> CreateLocationEfsResponseTypeDef:  # (3)
+    AccessPointArn: str = ...,
+    FileSystemAccessRoleArn: str = ...,
+    InTransitEncryption: EfsInTransitEncryptionType = ...,  # (3)
+) -> CreateLocationEfsResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) 
 2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
-3. See [:material-code-braces: CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef) 
+3. See [:material-code-brackets: EfsInTransitEncryptionType](./literals.md#efsintransitencryptiontype) 
+4. See [:material-code-braces: CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -641,7 +646,7 @@ parent.describe_agent(**kwargs)
 
 ### describe\_location\_efs
 
-Returns metadata, such as the path information about an Amazon EFS location.
+Returns metadata about your DataSync location for an Amazon EFS file system.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_location_efs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)

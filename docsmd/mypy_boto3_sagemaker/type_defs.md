@@ -1454,6 +1454,22 @@ class ModelQualityAppSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MonitoringProblemTypeType](./literals.md#monitoringproblemtypetype) 
+## InstanceMetadataServiceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InstanceMetadataServiceConfigurationTypeDef
+
+def get_value() -> InstanceMetadataServiceConfigurationTypeDef:
+    return {
+        "MinimumInstanceMetadataServiceVersion": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceMetadataServiceConfigurationTypeDef(TypedDict):
+    MinimumInstanceMetadataServiceVersion: str,
+```
+
 ## NotebookInstanceLifecycleHookTypeDef
 
 ```python title="Usage Example"
@@ -7958,37 +7974,6 @@ class UpdateImageRequestRequestTypeDef(TypedDict):
     RoleArn: NotRequired[str],
 ```
 
-## UpdateNotebookInstanceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import UpdateNotebookInstanceInputRequestTypeDef
-
-def get_value() -> UpdateNotebookInstanceInputRequestTypeDef:
-    return {
-        "NotebookInstanceName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateNotebookInstanceInputRequestTypeDef(TypedDict):
-    NotebookInstanceName: str,
-    InstanceType: NotRequired[InstanceTypeType],  # (1)
-    RoleArn: NotRequired[str],
-    LifecycleConfigName: NotRequired[str],
-    DisassociateLifecycleConfig: NotRequired[bool],
-    VolumeSizeInGB: NotRequired[int],
-    DefaultCodeRepository: NotRequired[str],
-    AdditionalCodeRepositories: NotRequired[Sequence[str]],
-    AcceleratorTypes: NotRequired[Sequence[NotebookInstanceAcceleratorTypeType]],  # (2)
-    DisassociateAcceleratorTypes: NotRequired[bool],
-    DisassociateDefaultCodeRepository: NotRequired[bool],
-    DisassociateAdditionalCodeRepositories: NotRequired[bool],
-    RootAccess: NotRequired[RootAccessType],  # (3)
-```
-
-1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
-2. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
-3. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
 ## UpdateTrialRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9157,70 +9142,6 @@ class DescribeImageVersionResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ImageVersionStatusType](./literals.md#imageversionstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNotebookInstanceOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceOutputTypeDef
-
-def get_value() -> DescribeNotebookInstanceOutputTypeDef:
-    return {
-        "NotebookInstanceArn": ...,
-        "NotebookInstanceName": ...,
-        "NotebookInstanceStatus": ...,
-        "FailureReason": ...,
-        "Url": ...,
-        "InstanceType": ...,
-        "SubnetId": ...,
-        "SecurityGroups": ...,
-        "RoleArn": ...,
-        "KmsKeyId": ...,
-        "NetworkInterfaceId": ...,
-        "LastModifiedTime": ...,
-        "CreationTime": ...,
-        "NotebookInstanceLifecycleConfigName": ...,
-        "DirectInternetAccess": ...,
-        "VolumeSizeInGB": ...,
-        "AcceleratorTypes": ...,
-        "DefaultCodeRepository": ...,
-        "AdditionalCodeRepositories": ...,
-        "RootAccess": ...,
-        "PlatformIdentifier": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNotebookInstanceOutputTypeDef(TypedDict):
-    NotebookInstanceArn: str,
-    NotebookInstanceName: str,
-    NotebookInstanceStatus: NotebookInstanceStatusType,  # (1)
-    FailureReason: str,
-    Url: str,
-    InstanceType: InstanceTypeType,  # (2)
-    SubnetId: str,
-    SecurityGroups: List[str],
-    RoleArn: str,
-    KmsKeyId: str,
-    NetworkInterfaceId: str,
-    LastModifiedTime: datetime,
-    CreationTime: datetime,
-    NotebookInstanceLifecycleConfigName: str,
-    DirectInternetAccess: DirectInternetAccessType,  # (3)
-    VolumeSizeInGB: int,
-    AcceleratorTypes: List[NotebookInstanceAcceleratorTypeType],  # (4)
-    DefaultCodeRepository: str,
-    AdditionalCodeRepositories: List[str],
-    RootAccess: RootAccessType,  # (5)
-    PlatformIdentifier: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-brackets: NotebookInstanceStatusType](./literals.md#notebookinstancestatustype) 
-2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
-3. See [:material-code-brackets: DirectInternetAccessType](./literals.md#directinternetaccesstype) 
-4. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
-5. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePipelineDefinitionForExecutionResponseTypeDef
 
 ```python title="Usage Example"
@@ -9928,43 +9849,6 @@ class CreateModelPackageGroupInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateNotebookInstanceInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceInputRequestTypeDef
-
-def get_value() -> CreateNotebookInstanceInputRequestTypeDef:
-    return {
-        "NotebookInstanceName": ...,
-        "InstanceType": ...,
-        "RoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNotebookInstanceInputRequestTypeDef(TypedDict):
-    NotebookInstanceName: str,
-    InstanceType: InstanceTypeType,  # (1)
-    RoleArn: str,
-    SubnetId: NotRequired[str],
-    SecurityGroupIds: NotRequired[Sequence[str]],
-    KmsKeyId: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    LifecycleConfigName: NotRequired[str],
-    DirectInternetAccess: NotRequired[DirectInternetAccessType],  # (3)
-    VolumeSizeInGB: NotRequired[int],
-    AcceleratorTypes: NotRequired[Sequence[NotebookInstanceAcceleratorTypeType]],  # (4)
-    DefaultCodeRepository: NotRequired[str],
-    AdditionalCodeRepositories: NotRequired[Sequence[str]],
-    RootAccess: NotRequired[RootAccessType],  # (5)
-    PlatformIdentifier: NotRequired[str],
-```
-
-1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-brackets: DirectInternetAccessType](./literals.md#directinternetaccesstype) 
-4. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
-5. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
 ## CreateStudioLifecycleConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11245,6 +11129,145 @@ class CreateHumanTaskUiRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: UiTemplateTypeDef](./type_defs.md#uitemplatetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateNotebookInstanceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceInputRequestTypeDef
+
+def get_value() -> CreateNotebookInstanceInputRequestTypeDef:
+    return {
+        "NotebookInstanceName": ...,
+        "InstanceType": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNotebookInstanceInputRequestTypeDef(TypedDict):
+    NotebookInstanceName: str,
+    InstanceType: InstanceTypeType,  # (1)
+    RoleArn: str,
+    SubnetId: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    LifecycleConfigName: NotRequired[str],
+    DirectInternetAccess: NotRequired[DirectInternetAccessType],  # (3)
+    VolumeSizeInGB: NotRequired[int],
+    AcceleratorTypes: NotRequired[Sequence[NotebookInstanceAcceleratorTypeType]],  # (4)
+    DefaultCodeRepository: NotRequired[str],
+    AdditionalCodeRepositories: NotRequired[Sequence[str]],
+    RootAccess: NotRequired[RootAccessType],  # (5)
+    PlatformIdentifier: NotRequired[str],
+    InstanceMetadataServiceConfiguration: NotRequired[InstanceMetadataServiceConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: DirectInternetAccessType](./literals.md#directinternetaccesstype) 
+4. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
+5. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
+6. See [:material-code-braces: InstanceMetadataServiceConfigurationTypeDef](./type_defs.md#instancemetadataserviceconfigurationtypedef) 
+## DescribeNotebookInstanceOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceOutputTypeDef
+
+def get_value() -> DescribeNotebookInstanceOutputTypeDef:
+    return {
+        "NotebookInstanceArn": ...,
+        "NotebookInstanceName": ...,
+        "NotebookInstanceStatus": ...,
+        "FailureReason": ...,
+        "Url": ...,
+        "InstanceType": ...,
+        "SubnetId": ...,
+        "SecurityGroups": ...,
+        "RoleArn": ...,
+        "KmsKeyId": ...,
+        "NetworkInterfaceId": ...,
+        "LastModifiedTime": ...,
+        "CreationTime": ...,
+        "NotebookInstanceLifecycleConfigName": ...,
+        "DirectInternetAccess": ...,
+        "VolumeSizeInGB": ...,
+        "AcceleratorTypes": ...,
+        "DefaultCodeRepository": ...,
+        "AdditionalCodeRepositories": ...,
+        "RootAccess": ...,
+        "PlatformIdentifier": ...,
+        "InstanceMetadataServiceConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNotebookInstanceOutputTypeDef(TypedDict):
+    NotebookInstanceArn: str,
+    NotebookInstanceName: str,
+    NotebookInstanceStatus: NotebookInstanceStatusType,  # (1)
+    FailureReason: str,
+    Url: str,
+    InstanceType: InstanceTypeType,  # (2)
+    SubnetId: str,
+    SecurityGroups: List[str],
+    RoleArn: str,
+    KmsKeyId: str,
+    NetworkInterfaceId: str,
+    LastModifiedTime: datetime,
+    CreationTime: datetime,
+    NotebookInstanceLifecycleConfigName: str,
+    DirectInternetAccess: DirectInternetAccessType,  # (3)
+    VolumeSizeInGB: int,
+    AcceleratorTypes: List[NotebookInstanceAcceleratorTypeType],  # (4)
+    DefaultCodeRepository: str,
+    AdditionalCodeRepositories: List[str],
+    RootAccess: RootAccessType,  # (5)
+    PlatformIdentifier: str,
+    InstanceMetadataServiceConfiguration: InstanceMetadataServiceConfigurationTypeDef,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-brackets: NotebookInstanceStatusType](./literals.md#notebookinstancestatustype) 
+2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+3. See [:material-code-brackets: DirectInternetAccessType](./literals.md#directinternetaccesstype) 
+4. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
+5. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
+6. See [:material-code-braces: InstanceMetadataServiceConfigurationTypeDef](./type_defs.md#instancemetadataserviceconfigurationtypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateNotebookInstanceInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateNotebookInstanceInputRequestTypeDef
+
+def get_value() -> UpdateNotebookInstanceInputRequestTypeDef:
+    return {
+        "NotebookInstanceName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNotebookInstanceInputRequestTypeDef(TypedDict):
+    NotebookInstanceName: str,
+    InstanceType: NotRequired[InstanceTypeType],  # (1)
+    RoleArn: NotRequired[str],
+    LifecycleConfigName: NotRequired[str],
+    DisassociateLifecycleConfig: NotRequired[bool],
+    VolumeSizeInGB: NotRequired[int],
+    DefaultCodeRepository: NotRequired[str],
+    AdditionalCodeRepositories: NotRequired[Sequence[str]],
+    AcceleratorTypes: NotRequired[Sequence[NotebookInstanceAcceleratorTypeType]],  # (2)
+    DisassociateAcceleratorTypes: NotRequired[bool],
+    DisassociateDefaultCodeRepository: NotRequired[bool],
+    DisassociateAdditionalCodeRepositories: NotRequired[bool],
+    RootAccess: NotRequired[RootAccessType],  # (3)
+    InstanceMetadataServiceConfiguration: NotRequired[InstanceMetadataServiceConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+2. See [:material-code-brackets: NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype) 
+3. See [:material-code-brackets: RootAccessType](./literals.md#rootaccesstype) 
+4. See [:material-code-braces: InstanceMetadataServiceConfigurationTypeDef](./type_defs.md#instancemetadataserviceconfigurationtypedef) 
 ## CreateNotebookInstanceLifecycleConfigInputRequestTypeDef
 
 ```python title="Usage Example"

@@ -1,10 +1,10 @@
 # Literals
 
-> [Index](../README.md) > [EMRServerlessWebService](./README.md) > Literals
+> [Index](../README.md) > [EMRServerless](./README.md) > Literals
 
 !!! note ""
 
-    Auto-generated documentation for [EMRServerlessWebService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerlessWebService)
+    Auto-generated documentation for [EMRServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless)
     type annotations stubs module [mypy-boto3-emr-serverless](https://pypi.org/project/mypy-boto3-emr-serverless/).
 
 ## ApplicationStateType
@@ -76,17 +76,17 @@ ListJobRunsPaginatorName = Literal[
     "list_job_runs",
 ]
 ```
-## EMRServerlessWebServiceServiceName
+## EMRServerlessServiceName
 
 ```python title="Usage Example"
-from mypy_boto3_emr_serverless.literals import EMRServerlessWebServiceServiceName
+from mypy_boto3_emr_serverless.literals import EMRServerlessServiceName
 
-def get_value() -> EMRServerlessWebServiceServiceName:
+def get_value() -> EMRServerlessServiceName:
     return "emr-serverless"
 ```
 
 ```python title="Definition"
-EMRServerlessWebServiceServiceName = Literal[
+EMRServerlessServiceName = Literal[
     "emr-serverless",
 ]
 ```
