@@ -232,11 +232,12 @@ def deprecate_activity_type(
     *,
     domain: str,
     activityType: ActivityTypeTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ActivityTypeTypeDef](./type_defs.md#activitytypetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -262,10 +263,11 @@ def deprecate_domain(
     self,
     *,
     name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -291,11 +293,12 @@ def deprecate_workflow_type(
     *,
     domain: str,
     workflowType: WorkflowTypeTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -834,11 +837,12 @@ def register_activity_type(
     defaultTaskPriority: str = ...,
     defaultTaskScheduleToStartTimeout: str = ...,
     defaultTaskScheduleToCloseTimeout: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TaskListTypeDef](./type_defs.md#tasklisttypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -868,11 +872,12 @@ def register_domain(
     workflowExecutionRetentionPeriodInDays: str,
     description: str = ...,
     tags: Sequence[ResourceTagTypeDef] = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -908,12 +913,13 @@ def register_workflow_type(
     defaultTaskPriority: str = ...,
     defaultChildPolicy: ChildPolicyType = ...,  # (2)
     defaultLambdaRole: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TaskListTypeDef](./type_defs.md#tasklisttypedef) 
 2. See [:material-code-brackets: ChildPolicyType](./literals.md#childpolicytype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -943,10 +949,11 @@ def request_cancel_workflow_execution(
     domain: str,
     workflowId: str,
     runId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -974,10 +981,11 @@ def respond_activity_task_canceled(
     *,
     taskToken: str,
     details: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1004,10 +1012,11 @@ def respond_activity_task_completed(
     *,
     taskToken: str,
     result: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1035,10 +1044,11 @@ def respond_activity_task_failed(
     taskToken: str,
     reason: str = ...,
     details: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1066,11 +1076,12 @@ def respond_decision_task_completed(
     taskToken: str,
     decisions: Sequence[DecisionTypeDef] = ...,  # (1)
     executionContext: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: DecisionTypeDef](./type_defs.md#decisiontypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1101,10 +1112,11 @@ def signal_workflow_execution(
     signalName: str,
     runId: str = ...,
     input: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1177,11 +1189,12 @@ def tag_resource(
     *,
     resourceArn: str,
     tags: Sequence[ResourceTagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1213,11 +1226,12 @@ def terminate_workflow_execution(
     reason: str = ...,
     details: str = ...,
     childPolicy: ChildPolicyType = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ChildPolicyType](./literals.md#childpolicytype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1244,11 +1258,12 @@ def undeprecate_activity_type(
     *,
     domain: str,
     activityType: ActivityTypeTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ActivityTypeTypeDef](./type_defs.md#activitytypetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1274,10 +1289,11 @@ def undeprecate_domain(
     self,
     *,
     name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1303,11 +1319,12 @@ def undeprecate_workflow_type(
     *,
     domain: str,
     workflowType: WorkflowTypeTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1334,10 +1351,11 @@ def untag_resource(
     *,
     resourceArn: str,
     tagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

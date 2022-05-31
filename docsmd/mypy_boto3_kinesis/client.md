@@ -76,10 +76,11 @@ def add_tags_to_stream(
     *,
     StreamName: str,
     Tags: Mapping[str, str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -123,11 +124,12 @@ def create_stream(
     StreamName: str,
     ShardCount: int = ...,
     StreamModeDetails: StreamModeDetailsTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -154,10 +156,11 @@ def decrease_stream_retention_period(
     *,
     StreamName: str,
     RetentionPeriodHours: int,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -184,10 +187,11 @@ def delete_stream(
     *,
     StreamName: str,
     EnforceConsumerDeletion: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -214,10 +218,11 @@ def deregister_stream_consumer(
     StreamARN: str = ...,
     ConsumerName: str = ...,
     ConsumerARN: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -502,10 +507,11 @@ def increase_stream_retention_period(
     *,
     StreamName: str,
     RetentionPeriodHours: int,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -663,10 +669,11 @@ def merge_shards(
     StreamName: str,
     ShardToMerge: str,
     AdjacentShardToMerge: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -793,10 +800,11 @@ def remove_tags_from_stream(
     *,
     StreamName: str,
     TagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -825,10 +833,11 @@ def split_shard(
     StreamName: str,
     ShardToSplit: str,
     NewStartingHashKey: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -858,11 +867,12 @@ def start_stream_encryption(
     StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -891,11 +901,12 @@ def stop_stream_encryption(
     StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -994,11 +1005,12 @@ def update_stream_mode(
     *,
     StreamARN: str,
     StreamModeDetails: StreamModeDetailsTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

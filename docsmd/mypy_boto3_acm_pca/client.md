@@ -173,11 +173,12 @@ def create_permission(
     Principal: str,
     Actions: Sequence[ActionTypeType],  # (1)
     SourceAccount: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -205,10 +206,11 @@ def delete_certificate_authority(
     *,
     CertificateAuthorityArn: str,
     PermanentDeletionTimeInDays: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -236,10 +238,11 @@ def delete_permission(
     CertificateAuthorityArn: str,
     Principal: str,
     SourceAccount: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -265,10 +268,11 @@ def delete_policy(
     self,
     *,
     ResourceArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -498,10 +502,11 @@ def import_certificate_authority_certificate(
     CertificateAuthorityArn: str,
     Certificate: Union[str, bytes, IO[Any], StreamingBody],
     CertificateChain: Union[str, bytes, IO[Any], StreamingBody] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -670,10 +675,11 @@ def put_policy(
     *,
     ResourceArn: str,
     Policy: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -699,10 +705,11 @@ def restore_certificate_authority(
     self,
     *,
     CertificateAuthorityArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -729,11 +736,12 @@ def revoke_certificate(
     CertificateAuthorityArn: str,
     CertificateSerial: str,
     RevocationReason: RevocationReasonType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: RevocationReasonType](./literals.md#revocationreasontype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -761,11 +769,12 @@ def tag_certificate_authority(
     *,
     CertificateAuthorityArn: str,
     Tags: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -792,11 +801,12 @@ def untag_certificate_authority(
     *,
     CertificateAuthorityArn: str,
     Tags: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -824,12 +834,13 @@ def update_certificate_authority(
     CertificateAuthorityArn: str,
     RevocationConfiguration: RevocationConfigurationTypeDef = ...,  # (1)
     Status: CertificateAuthorityStatusType = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
 2. See [:material-code-brackets: CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

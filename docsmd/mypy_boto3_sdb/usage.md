@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("sdb")  # (1)
-    result = client.domain_metadata()  # (2)
+    result = client.batch_delete_attributes()  # (2)
     ```
 
     1. client: [SimpleDBClient](./client.md)
-    2. result: [:material-code-braces: DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_sdb.client import SimpleDBClient
-    from mypy_boto3_sdb.type_defs import DomainMetadataResultTypeDef
-    from mypy_boto3_sdb.type_defs import DomainMetadataRequestRequestTypeDef
+    from mypy_boto3_sdb.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestRequestTypeDef
 
 
     session = Session()
 
     client: SimpleDBClient = session.client("sdb")
 
-    kwargs: DomainMetadataRequestRequestTypeDef = {...}
-    result: DomainMetadataResultTypeDef = client.domain_metadata(**kwargs)
+    kwargs: BatchDeleteAttributesRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.batch_delete_attributes(**kwargs)
     ```
 
 

@@ -204,6 +204,7 @@ def get_value() -> AssociateClientDeviceWithCoreDeviceEntryTypeDef:
 - [CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef)
 - [CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef)
 - [DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef)
 - [GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef)
 - [GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef)

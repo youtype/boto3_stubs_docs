@@ -122,14 +122,15 @@ def get_value() -> AccountInfoTypeDef:
 ```
 
 - [AccountInfoTypeDef](./type_defs.md#accountinfotypedef)
-- [GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef)
 - [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListAccountRolesRequestRequestTypeDef](./type_defs.md#listaccountrolesrequestrequesttypedef)
 - [RoleInfoTypeDef](./type_defs.md#roleinfotypedef)
 - [ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef)
 - [LogoutRequestRequestTypeDef](./type_defs.md#logoutrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)
 - [GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef)
 - [ListAccountRolesRequestListAccountRolesPaginateTypeDef](./type_defs.md#listaccountrolesrequestlistaccountrolespaginatetypedef)

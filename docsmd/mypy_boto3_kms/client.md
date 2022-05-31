@@ -170,10 +170,11 @@ def create_alias(
     *,
     AliasName: str,
     TargetKeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -359,10 +360,11 @@ def delete_alias(
     self,
     *,
     AliasName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -417,10 +419,11 @@ def delete_imported_key_material(
     self,
     *,
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -509,10 +512,11 @@ def disable_key(
     self,
     *,
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -539,10 +543,11 @@ def disable_key_rotation(
     self,
     *,
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -597,10 +602,11 @@ def enable_key(
     self,
     *,
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -627,10 +633,11 @@ def enable_key_rotation(
     self,
     *,
     KeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1267,10 +1274,11 @@ def put_key_policy(
     PolicyName: str,
     Policy: str,
     BypassPolicyLockoutSafetyCheck: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1374,10 +1382,11 @@ def retire_grant(
     GrantToken: str = ...,
     KeyId: str = ...,
     GrantId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1403,10 +1412,11 @@ def revoke_grant(
     *,
     KeyId: str,
     GrantId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1504,11 +1514,12 @@ def tag_resource(
     *,
     KeyId: str,
     Tags: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1537,10 +1548,11 @@ def untag_resource(
     *,
     KeyId: str,
     TagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1567,10 +1579,11 @@ def update_alias(
     *,
     AliasName: str,
     TargetKeyId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1628,10 +1641,11 @@ def update_key_description(
     *,
     KeyId: str,
     Description: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1658,10 +1672,11 @@ def update_primary_region(
     *,
     KeyId: str,
     PrimaryRegion: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

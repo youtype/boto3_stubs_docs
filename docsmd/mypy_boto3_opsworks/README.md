@@ -330,6 +330,7 @@ def get_value() -> StackConfigurationManagerTypeDef:
 - [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef)
 - [CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef)
 - [DescribeStackProvisioningParametersResultTypeDef](./type_defs.md#describestackprovisioningparametersresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetHostnameSuggestionResultTypeDef](./type_defs.md#gethostnamesuggestionresulttypedef)
 - [InstancesCountResponseMetadataTypeDef](./type_defs.md#instancescountresponsemetadatatypedef)
 - [ListTagsResultTypeDef](./type_defs.md#listtagsresulttypedef)

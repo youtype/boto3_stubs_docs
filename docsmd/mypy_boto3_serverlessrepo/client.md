@@ -238,10 +238,11 @@ def delete_application(
     self,
     *,
     ApplicationId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -501,10 +502,11 @@ def unshare_application(
     *,
     ApplicationId: str,
     OrganizationId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

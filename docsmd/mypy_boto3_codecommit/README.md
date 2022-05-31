@@ -263,6 +263,7 @@ def get_value() -> ApprovalRuleEventMetadataTypeDef:
 - [DeleteFileOutputTypeDef](./type_defs.md#deletefileoutputtypedef)
 - [DeletePullRequestApprovalRuleOutputTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputtypedef)
 - [DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetApprovalRuleTemplateOutputTypeDef](./type_defs.md#getapprovalruletemplateoutputtypedef)
 - [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef)
 - [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef)

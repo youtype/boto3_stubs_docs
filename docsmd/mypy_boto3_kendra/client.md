@@ -259,10 +259,11 @@ def clear_query_suggestions(
     self,
     *,
     IndexId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -537,10 +538,11 @@ def delete_data_source(
     *,
     Id: str,
     IndexId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -597,10 +599,11 @@ def delete_faq(
     *,
     Id: str,
     IndexId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -626,10 +629,11 @@ def delete_index(
     self,
     *,
     Id: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -658,10 +662,11 @@ def delete_principal_mapping(
     GroupId: str,
     DataSourceId: str = ...,
     OrderingId: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -688,10 +693,11 @@ def delete_query_suggestions_block_list(
     *,
     IndexId: str,
     Id: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -718,10 +724,11 @@ def delete_thesaurus(
     *,
     Id: str,
     IndexId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1510,11 +1517,12 @@ def put_principal_mapping(
     DataSourceId: str = ...,
     OrderingId: int = ...,
     RoleArn: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: GroupMembersTypeDef](./type_defs.md#groupmemberstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1621,10 +1629,11 @@ def stop_data_source_sync_job(
     *,
     Id: str,
     IndexId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1654,12 +1663,13 @@ def submit_feedback(
     QueryId: str,
     ClickFeedbackItems: Sequence[ClickFeedbackTypeDef] = ...,  # (1)
     RelevanceFeedbackItems: Sequence[RelevanceFeedbackTypeDef] = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef) 
 2. See [:material-code-braces: RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1754,12 +1764,13 @@ def update_data_source(
     RoleArn: str = ...,
     LanguageCode: str = ...,
     CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
 2. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1790,11 +1801,12 @@ def update_experience(
     RoleArn: str = ...,
     Configuration: ExperienceConfigurationTypeDef = ...,  # (1)
     Description: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1828,7 +1840,7 @@ def update_index(
     UserTokenConfigurations: Sequence[UserTokenConfigurationTypeDef] = ...,  # (3)
     UserContextPolicy: UserContextPolicyType = ...,  # (4)
     UserGroupResolutionConfiguration: UserGroupResolutionConfigurationTypeDef = ...,  # (5)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (6)
     ...
 ```
 
@@ -1837,6 +1849,7 @@ def update_index(
 3. See [:material-code-braces: UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef) 
 4. See [:material-code-brackets: UserContextPolicyType](./literals.md#usercontextpolicytype) 
 5. See [:material-code-braces: UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef) 
+6. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1866,11 +1879,12 @@ def update_query_suggestions_block_list(
     Description: str = ...,
     SourceS3Path: S3PathTypeDef = ...,  # (1)
     RoleArn: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1901,11 +1915,12 @@ def update_query_suggestions_config(
     IncludeQueriesWithoutUserInformation: bool = ...,
     MinimumNumberOfQueryingUsers: int = ...,
     MinimumQueryCount: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ModeType](./literals.md#modetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1935,11 +1950,12 @@ def update_thesaurus(
     Description: str = ...,
     RoleArn: str = ...,
     SourceS3Path: S3PathTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

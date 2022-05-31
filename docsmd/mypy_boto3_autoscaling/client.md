@@ -70,10 +70,11 @@ def attach_instances(
     *,
     AutoScalingGroupName: str,
     InstanceIds: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -329,7 +330,7 @@ def create_auto_scaling_group(
     Context: str = ...,
     DesiredCapacityType: str = ...,
     DefaultInstanceWarmup: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (5)
     ...
 ```
 
@@ -337,6 +338,7 @@ def create_auto_scaling_group(
 2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
 3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -381,13 +383,14 @@ def create_launch_configuration(
     AssociatePublicIpAddress: bool = ...,
     PlacementTenancy: str = ...,
     MetadataOptions: InstanceMetadataOptionsTypeDef = ...,  # (3)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
 3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -412,11 +415,12 @@ def create_or_update_tags(
     self,
     *,
     Tags: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -442,10 +446,11 @@ def delete_auto_scaling_group(
     *,
     AutoScalingGroupName: str,
     ForceDelete: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -470,10 +475,11 @@ def delete_launch_configuration(
     self,
     *,
     LaunchConfigurationName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -529,10 +535,11 @@ def delete_notification_configuration(
     *,
     AutoScalingGroupName: str,
     TopicARN: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -559,10 +566,11 @@ def delete_policy(
     *,
     PolicyName: str,
     AutoScalingGroupName: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -588,10 +596,11 @@ def delete_scheduled_action(
     *,
     AutoScalingGroupName: str,
     ScheduledActionName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -617,11 +626,12 @@ def delete_tags(
     self,
     *,
     Tags: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1300,10 +1310,11 @@ def disable_metrics_collection(
     *,
     AutoScalingGroupName: str,
     Metrics: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1330,10 +1341,11 @@ def enable_metrics_collection(
     AutoScalingGroupName: str,
     Granularity: str,
     Metrics: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1395,10 +1407,11 @@ def execute_policy(
     HonorCooldown: bool = ...,
     MetricValue: float = ...,
     BreachThreshold: float = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1546,10 +1559,11 @@ def put_notification_configuration(
     AutoScalingGroupName: str,
     TopicARN: str,
     NotificationTypes: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1631,10 +1645,11 @@ def put_scheduled_update_group_action(
     MaxSize: int = ...,
     DesiredCapacity: int = ...,
     TimeZone: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1729,10 +1744,11 @@ def resume_processes(
     *,
     AutoScalingGroupName: str,
     ScalingProcesses: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1759,10 +1775,11 @@ def set_desired_capacity(
     AutoScalingGroupName: str,
     DesiredCapacity: int,
     HonorCooldown: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1790,10 +1807,11 @@ def set_instance_health(
     InstanceId: str,
     HealthStatus: str,
     ShouldRespectGracePeriod: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1888,10 +1906,11 @@ def suspend_processes(
     *,
     AutoScalingGroupName: str,
     ScalingProcesses: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1969,12 +1988,13 @@ def update_auto_scaling_group(
     Context: str = ...,
     DesiredCapacityType: str = ...,
     DefaultInstanceWarmup: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

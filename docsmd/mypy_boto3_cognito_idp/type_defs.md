@@ -797,12 +797,13 @@ from mypy_boto3_cognito_idp.type_defs import UserContextDataTypeTypeDef
 
 def get_value() -> UserContextDataTypeTypeDef:
     return {
-        "EncodedData": ...,
+        "IpAddress": ...,
     }
 ```
 
 ```python title="Definition"
 class UserContextDataTypeTypeDef(TypedDict):
+    IpAddress: NotRequired[str],
     EncodedData: NotRequired[str],
 ```
 
@@ -2402,6 +2403,23 @@ class CreateUserPoolDomainResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCSVHeaderResponseTypeDef
 
 ```python title="Usage Example"
@@ -3673,6 +3691,7 @@ class CreateUserPoolClientRequestRequestTypeDef(TypedDict):
     AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
+    EnablePropagateAdditionalUserContextData: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
@@ -3714,6 +3733,7 @@ class UpdateUserPoolClientRequestRequestTypeDef(TypedDict):
     AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
+    EnablePropagateAdditionalUserContextData: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
@@ -3757,6 +3777,7 @@ class UserPoolClientTypeTypeDef(TypedDict):
     AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
+    EnablePropagateAdditionalUserContextData: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 

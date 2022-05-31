@@ -133,6 +133,7 @@ def get_value() -> CreateEndpointRequestRequestTypeDef:
 - [ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef)
 - [ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef)
 - [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef)
 - [ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef](./type_defs.md#listsharedendpointsrequestlistsharedendpointspaginatetypedef)

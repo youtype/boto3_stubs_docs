@@ -299,6 +299,7 @@ def get_value() -> RecoveryOptionTypeTypeDef:
 - [AssociateSoftwareTokenResponseTypeDef](./type_defs.md#associatesoftwaretokenresponsetypedef)
 - [ConfirmDeviceResponseTypeDef](./type_defs.md#confirmdeviceresponsetypedef)
 - [CreateUserPoolDomainResponseTypeDef](./type_defs.md#createuserpooldomainresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetCSVHeaderResponseTypeDef](./type_defs.md#getcsvheaderresponsetypedef)
 - [GetSigningCertificateResponseTypeDef](./type_defs.md#getsigningcertificateresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

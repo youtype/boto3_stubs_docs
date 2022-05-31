@@ -545,6 +545,7 @@ class CreateAssetRequestRequestTypeDef(TypedDict):
     assetModelId: str,
     clientToken: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
+    assetDescription: NotRequired[str],
 ```
 
 ## CreateDashboardRequestRequestTypeDef
@@ -1811,6 +1812,7 @@ class UpdateAssetRequestRequestTypeDef(TypedDict):
     assetId: str,
     assetName: str,
     clientToken: NotRequired[str],
+    assetDescription: NotRequired[str],
 ```
 
 ## UpdateDashboardRequestRequestTypeDef
@@ -2271,6 +2273,23 @@ class DescribeTimeSeriesResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProjectAssetsResponseTypeDef
 
 ```python title="Usage Example"
@@ -4297,6 +4316,7 @@ class AssetSummaryTypeDef(TypedDict):
     lastUpdateDate: datetime,
     status: AssetStatusTypeDef,  # (1)
     hierarchies: List[AssetHierarchyTypeDef],  # (2)
+    description: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
@@ -4329,6 +4349,7 @@ class AssociatedAssetsSummaryTypeDef(TypedDict):
     lastUpdateDate: datetime,
     status: AssetStatusTypeDef,  # (1)
     hierarchies: List[AssetHierarchyTypeDef],  # (2)
+    description: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
@@ -4394,6 +4415,7 @@ def get_value() -> DescribeAssetResponseTypeDef:
         "assetCreationDate": ...,
         "assetLastUpdateDate": ...,
         "assetStatus": ...,
+        "assetDescription": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4410,6 +4432,7 @@ class DescribeAssetResponseTypeDef(TypedDict):
     assetCreationDate: datetime,
     assetLastUpdateDate: datetime,
     assetStatus: AssetStatusTypeDef,  # (4)
+    assetDescription: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 

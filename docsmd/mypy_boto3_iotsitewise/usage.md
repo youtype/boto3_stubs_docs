@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("iotsitewise")  # (1)
-    result = client.batch_associate_project_assets()  # (2)
+    result = client.associate_assets()  # (2)
     ```
 
     1. client: [IoTSiteWiseClient](./client.md)
-    2. result: [:material-code-braces: BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
-    from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsResponseTypeDef
-    from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsRequestRequestTypeDef
+    from mypy_boto3_iotsitewise.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_iotsitewise.type_defs import AssociateAssetsRequestRequestTypeDef
 
 
     session = Session()
 
     client: IoTSiteWiseClient = session.client("iotsitewise")
 
-    kwargs: BatchAssociateProjectAssetsRequestRequestTypeDef = {...}
-    result: BatchAssociateProjectAssetsResponseTypeDef = client.batch_associate_project_assets(**kwargs)
+    kwargs: AssociateAssetsRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_assets(**kwargs)
     ```
 
 

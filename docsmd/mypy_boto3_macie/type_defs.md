@@ -188,6 +188,23 @@ class ListS3ResourcesRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3ResourceClassificationTypeDef
 
 ```python title="Usage Example"

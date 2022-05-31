@@ -215,10 +215,11 @@ def delete_dataset(
     self,
     *,
     DatasetName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -243,10 +244,11 @@ def delete_inference_scheduler(
     self,
     *,
     InferenceSchedulerName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -271,10 +273,11 @@ def delete_model(
     self,
     *,
     ModelName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -832,13 +835,14 @@ def update_inference_scheduler(
     DataInputConfiguration: InferenceInputConfigurationTypeDef = ...,  # (2)
     DataOutputConfiguration: InferenceOutputConfigurationTypeDef = ...,  # (3)
     RoleArn: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
 2. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
 3. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

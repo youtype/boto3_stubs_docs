@@ -281,6 +281,7 @@ def get_value() -> AbortMultipartUploadInputRequestTypeDef:
 - [ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef)
 - [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef)
 - [DescribeVaultOutputResponseMetadataTypeDef](./type_defs.md#describevaultoutputresponsemetadatatypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef)
 - [GetVaultLockOutputTypeDef](./type_defs.md#getvaultlockoutputtypedef)
 - [InitiateJobOutputTypeDef](./type_defs.md#initiatejoboutputtypedef)

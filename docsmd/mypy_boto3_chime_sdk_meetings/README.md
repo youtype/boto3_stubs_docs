@@ -132,6 +132,7 @@ def get_value() -> AttendeeTypeDef:
 - [BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef)
 - [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef)
 - [CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef)
 - [ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef)
 - [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)

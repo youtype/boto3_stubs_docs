@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("events")  # (1)
-    result = client.cancel_replay()  # (2)
+    result = client.activate_event_source()  # (2)
     ```
 
     1. client: [EventBridgeClient](./client.md)
-    2. result: [:material-code-braces: CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_events.client import EventBridgeClient
-    from mypy_boto3_events.type_defs import CancelReplayResponseTypeDef
-    from mypy_boto3_events.type_defs import CancelReplayRequestRequestTypeDef
+    from mypy_boto3_events.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
 
 
     session = Session()
 
     client: EventBridgeClient = session.client("events")
 
-    kwargs: CancelReplayRequestRequestTypeDef = {...}
-    result: CancelReplayResponseTypeDef = client.cancel_replay(**kwargs)
+    kwargs: ActivateEventSourceRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.activate_event_source(**kwargs)
     ```
 
 

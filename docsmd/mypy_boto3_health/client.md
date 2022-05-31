@@ -421,10 +421,11 @@ Type annotations and code completion for `#!python boto3.client("health").disabl
 ```python title="Method definition"
 def disable_health_service_access_for_organization(
     self,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 ### enable\_health\_service\_access\_for\_organization
 
@@ -436,10 +437,11 @@ Type annotations and code completion for `#!python boto3.client("health").enable
 ```python title="Method definition"
 def enable_health_service_access_for_organization(
     self,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 ### generate\_presigned\_url
 

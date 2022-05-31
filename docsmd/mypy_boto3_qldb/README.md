@@ -133,6 +133,7 @@ def get_value() -> CancelJournalKinesisStreamRequestRequestTypeDef:
 - [UpdateLedgerRequestRequestTypeDef](./type_defs.md#updateledgerrequestrequesttypedef)
 - [CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef)
 - [CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef)

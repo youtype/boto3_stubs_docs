@@ -270,6 +270,7 @@ def get_value() -> ObjectReferenceTypeDef:
 - [DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef)
 - [DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef)
 - [DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef)
 - [GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef)
 - [GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef)

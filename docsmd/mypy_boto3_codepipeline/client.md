@@ -259,11 +259,12 @@ def delete_custom_action_type(
     category: ActionCategoryType,  # (1)
     provider: str,
     version: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -290,10 +291,11 @@ def delete_pipeline(
     self,
     *,
     name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -379,11 +381,12 @@ def disable_stage_transition(
     stageName: str,
     transitionType: StageTransitionTypeType,  # (1)
     reason: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -413,11 +416,12 @@ def enable_stage_transition(
     pipelineName: str,
     stageName: str,
     transitionType: StageTransitionTypeType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -979,11 +983,12 @@ def put_job_failure_result(
     *,
     jobId: str,
     failureDetails: FailureDetailsTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1013,12 +1018,13 @@ def put_job_success_result(
     continuationToken: str = ...,
     executionDetails: ExecutionDetailsTypeDef = ...,  # (2)
     outputVariables: Mapping[str, str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
 2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1046,11 +1052,12 @@ def put_third_party_job_failure_result(
     jobId: str,
     clientToken: str,
     failureDetails: FailureDetailsTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1082,12 +1089,13 @@ def put_third_party_job_success_result(
     currentRevision: CurrentRevisionTypeDef = ...,  # (1)
     continuationToken: str = ...,
     executionDetails: ExecutionDetailsTypeDef = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
 2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1335,11 +1343,12 @@ def update_action_type(
     self,
     *,
     actionType: ActionTypeDeclarationTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

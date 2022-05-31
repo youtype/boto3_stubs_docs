@@ -178,6 +178,7 @@ def get_value() -> AudioConfigurationTypeDef:
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef)
 - [BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef)

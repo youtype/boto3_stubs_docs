@@ -250,6 +250,7 @@ def get_value() -> ActivateEventSourceRequestRequestTypeDef:
 - [DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef)
 - [DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef)
 - [DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef)
 - [ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef)
 - [ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef)

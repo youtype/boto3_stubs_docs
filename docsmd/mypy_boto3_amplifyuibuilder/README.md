@@ -160,6 +160,7 @@ def get_value() -> MutationActionSetStateParameterTypeDef:
 - [ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef)
 - [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)
 - [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExchangeCodeForTokenResponseTypeDef](./type_defs.md#exchangecodefortokenresponsetypedef)
 - [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)
 - [RefreshTokenResponseTypeDef](./type_defs.md#refreshtokenresponsetypedef)

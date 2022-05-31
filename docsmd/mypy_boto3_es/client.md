@@ -102,11 +102,12 @@ def add_tags(
     *,
     ARN: str,
     TagList: Sequence[TagTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -364,10 +365,11 @@ Type annotations and code completion for `#!python boto3.client("es").delete_ela
 ```python title="Method definition"
 def delete_elasticsearch_service_role(
     self,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 ### delete\_inbound\_cross\_cluster\_search\_connection
 
@@ -1238,10 +1240,11 @@ def remove_tags(
     *,
     ARN: str,
     TagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

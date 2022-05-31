@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("drs")  # (1)
-    result = client.create_replication_configuration_template()  # (2)
+    result = client.create_extended_source_server()  # (2)
     ```
 
     1. client: [drsClient](./client.md)
-    2. result: [:material-code-braces: ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef) 
+    2. result: [:material-code-braces: CreateExtendedSourceServerResponseTypeDef](./type_defs.md#createextendedsourceserverresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_drs.client import drsClient
-    from mypy_boto3_drs.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
-    from mypy_boto3_drs.type_defs import CreateReplicationConfigurationTemplateRequestRequestTypeDef
+    from mypy_boto3_drs.type_defs import CreateExtendedSourceServerResponseTypeDef
+    from mypy_boto3_drs.type_defs import CreateExtendedSourceServerRequestRequestTypeDef
 
 
     session = Session()
 
     client: drsClient = session.client("drs")
 
-    kwargs: CreateReplicationConfigurationTemplateRequestRequestTypeDef = {...}
-    result: ReplicationConfigurationTemplateResponseMetadataTypeDef = client.create_replication_configuration_template(**kwargs)
+    kwargs: CreateExtendedSourceServerRequestRequestTypeDef = {...}
+    result: CreateExtendedSourceServerResponseTypeDef = client.create_extended_source_server(**kwargs)
     ```
 
 

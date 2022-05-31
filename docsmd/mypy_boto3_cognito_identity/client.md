@@ -155,10 +155,11 @@ def delete_identity_pool(
     self,
     *,
     IdentityPoolId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -615,11 +616,12 @@ def set_identity_pool_roles(
     IdentityPoolId: str,
     Roles: Mapping[str, str],
     RoleMappings: Mapping[str, RoleMappingTypeDef] = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -712,10 +714,11 @@ def unlink_developer_identity(
     IdentityPoolId: str,
     DeveloperProviderName: str,
     DeveloperUserIdentifier: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -745,10 +748,11 @@ def unlink_identity(
     IdentityId: str,
     Logins: Mapping[str, str],
     LoginsToRemove: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

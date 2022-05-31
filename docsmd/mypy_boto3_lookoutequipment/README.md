@@ -155,6 +155,7 @@ def get_value() -> CategoricalValuesTypeDef:
 - [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
 - [CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef)
 - [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef)
 - [StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef)

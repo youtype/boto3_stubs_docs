@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("acm")  # (1)
-    result = client.describe_certificate()  # (2)
+    result = client.add_tags_to_certificate()  # (2)
     ```
 
     1. client: [ACMClient](./client.md)
-    2. result: [:material-code-braces: DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_acm.client import ACMClient
-    from mypy_boto3_acm.type_defs import DescribeCertificateResponseTypeDef
-    from mypy_boto3_acm.type_defs import DescribeCertificateRequestRequestTypeDef
+    from mypy_boto3_acm.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef
 
 
     session = Session()
 
     client: ACMClient = session.client("acm")
 
-    kwargs: DescribeCertificateRequestRequestTypeDef = {...}
-    result: DescribeCertificateResponseTypeDef = client.describe_certificate(**kwargs)
+    kwargs: AddTagsToCertificateRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_tags_to_certificate(**kwargs)
     ```
 
 

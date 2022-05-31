@@ -381,6 +381,7 @@ def get_value() -> AcceptReservedNodeExchangeInputMessageRequestTypeDef:
 - [CreateAuthenticationProfileResultTypeDef](./type_defs.md#createauthenticationprofileresulttypedef)
 - [CustomerStorageMessageTypeDef](./type_defs.md#customerstoragemessagetypedef)
 - [DeleteAuthenticationProfileResultTypeDef](./type_defs.md#deleteauthenticationprofileresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef)
 - [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef)
 - [ModifyAuthenticationProfileResultTypeDef](./type_defs.md#modifyauthenticationprofileresulttypedef)

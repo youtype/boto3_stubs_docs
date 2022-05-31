@@ -256,6 +256,7 @@ def get_value() -> AcceleratorCountRequestTypeDef:
 - [DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef)
 - [DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef)
 - [DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef)
 - [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef)
 - [StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef)

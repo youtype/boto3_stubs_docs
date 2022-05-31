@@ -269,6 +269,7 @@ def get_value() -> TagTypeDef:
 - [CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef)
 - [DeleteDeploymentGroupOutputTypeDef](./type_defs.md#deletedeploymentgroupoutputtypedef)
 - [DeleteGitHubAccountTokenOutputTypeDef](./type_defs.md#deletegithubaccounttokenoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetApplicationOutputTypeDef](./type_defs.md#getapplicationoutputtypedef)
 - [ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef)
 - [ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef)

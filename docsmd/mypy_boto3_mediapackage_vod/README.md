@@ -163,6 +163,7 @@ def get_value() -> AssetShallowTypeDef:
 - [ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef)
 - [CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef)
 - [DescribePackagingGroupResponseTypeDef](./type_defs.md#describepackaginggroupresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdatePackagingGroupResponseTypeDef](./type_defs.md#updatepackaginggroupresponsetypedef)

@@ -246,6 +246,7 @@ def get_value() -> AbortEnvironmentUpdateMessageRequestTypeDef:
 - [ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef)
 - [CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef)
 - [CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ApplicationMetricsTypeDef](./type_defs.md#applicationmetricstypedef)
 - [ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef)
 - [ApplicationVersionLifecycleConfigTypeDef](./type_defs.md#applicationversionlifecycleconfigtypedef)

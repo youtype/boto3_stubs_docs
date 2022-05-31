@@ -352,6 +352,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
 - [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
 - [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef)
 - [ListTablesOutputTableTypeDef](./type_defs.md#listtablesoutputtabletypedef)
 - [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)

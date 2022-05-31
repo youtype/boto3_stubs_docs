@@ -223,6 +223,7 @@ def get_value() -> AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDe
 - [StorageTypeLimitTypeDef](./type_defs.md#storagetypelimittypedef)
 - [UpgradeElasticsearchDomainRequestRequestTypeDef](./type_defs.md#upgradeelasticsearchdomainrequestrequesttypedef)
 - [UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef)
 - [ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)
 - [ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef)

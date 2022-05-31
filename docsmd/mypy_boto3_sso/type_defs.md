@@ -25,26 +25,6 @@ class AccountInfoTypeDef(TypedDict):
     emailAddress: NotRequired[str],
 ```
 
-## GetRoleCredentialsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestRequestTypeDef
-
-def get_value() -> GetRoleCredentialsRequestRequestTypeDef:
-    return {
-        "roleName": ...,
-        "accountId": ...,
-        "accessToken": ...,
-    }
-```
-
-```python title="Definition"
-class GetRoleCredentialsRequestRequestTypeDef(TypedDict):
-    roleName: str,
-    accountId: str,
-    accessToken: str,
-```
-
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -67,6 +47,26 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## GetRoleCredentialsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestRequestTypeDef
+
+def get_value() -> GetRoleCredentialsRequestRequestTypeDef:
+    return {
+        "roleName": ...,
+        "accountId": ...,
+        "accessToken": ...,
+    }
+```
+
+```python title="Definition"
+class GetRoleCredentialsRequestRequestTypeDef(TypedDict):
+    roleName: str,
+    accountId: str,
+    accessToken: str,
 ```
 
 ## RoleCredentialsTypeDef
@@ -177,6 +177,23 @@ class LogoutRequestRequestTypeDef(TypedDict):
     accessToken: str,
 ```
 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAccountsResponseTypeDef
 
 ```python title="Usage Example"

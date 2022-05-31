@@ -101,11 +101,12 @@ def put_events(
     sessionId: str,
     eventList: Sequence[EventTypeDef],  # (1)
     userId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -133,11 +134,12 @@ def put_items(
     *,
     datasetArn: str,
     items: Sequence[ItemTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -164,11 +166,12 @@ def put_users(
     *,
     datasetArn: str,
     users: Sequence[UserTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

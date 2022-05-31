@@ -208,6 +208,7 @@ def get_value() -> ActionTargetTypeDef:
 - [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
 - [AssociateThirdPartyFirewallResponseTypeDef](./type_defs.md#associatethirdpartyfirewallresponsetypedef)
 - [DisassociateThirdPartyFirewallResponseTypeDef](./type_defs.md#disassociatethirdpartyfirewallresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef)
 - [GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef)
 - [GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef)

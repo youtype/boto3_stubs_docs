@@ -215,6 +215,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - [UpdateMaintenanceTypeDef](./type_defs.md#updatemaintenancetypedef)
 - [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef)
 - [RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef)

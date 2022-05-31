@@ -222,6 +222,7 @@ def get_value() -> AcceptHandshakeRequestRequestTypeDef:
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#updateorganizationalunitrequestrequesttypedef)
 - [UpdatePolicyRequestRequestTypeDef](./type_defs.md#updatepolicyrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef)
 - [ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef)
 - [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)

@@ -174,6 +174,7 @@ def get_value() -> AuthenticationConfigurationTypeDef:
 - [UpdateDomainRequestRequestTypeDef](./type_defs.md#updatedomainrequestrequesttypedef)
 - [CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [DescribeFraudsterResponseTypeDef](./type_defs.md#describefraudsterresponsetypedef)
 - [DescribeSpeakerResponseTypeDef](./type_defs.md#describespeakerresponsetypedef)

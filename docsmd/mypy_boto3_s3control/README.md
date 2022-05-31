@@ -249,6 +249,7 @@ def get_value() -> AbortIncompleteMultipartUploadTypeDef:
 - [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef)
 - [CreateMultiRegionAccessPointResultTypeDef](./type_defs.md#createmultiregionaccesspointresulttypedef)
 - [DeleteMultiRegionAccessPointResultTypeDef](./type_defs.md#deletemultiregionaccesspointresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef)
 - [GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef)
 - [GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef)

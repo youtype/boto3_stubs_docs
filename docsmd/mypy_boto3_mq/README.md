@@ -177,6 +177,7 @@ def get_value() -> ActionRequiredTypeDef:
 - [DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef)
 - [DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef)
 - [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef)
 - [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)

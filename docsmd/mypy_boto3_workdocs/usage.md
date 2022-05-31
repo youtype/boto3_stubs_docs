@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("workdocs")  # (1)
-    result = client.activate_user()  # (2)
+    result = client.abort_document_version_upload()  # (2)
     ```
 
     1. client: [WorkDocsClient](./client.md)
-    2. result: [:material-code-braces: ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_workdocs.client import WorkDocsClient
-    from mypy_boto3_workdocs.type_defs import ActivateUserResponseTypeDef
-    from mypy_boto3_workdocs.type_defs import ActivateUserRequestRequestTypeDef
+    from mypy_boto3_workdocs.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestRequestTypeDef
 
 
     session = Session()
 
     client: WorkDocsClient = session.client("workdocs")
 
-    kwargs: ActivateUserRequestRequestTypeDef = {...}
-    result: ActivateUserResponseTypeDef = client.activate_user(**kwargs)
+    kwargs: AbortDocumentVersionUploadRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.abort_document_version_upload(**kwargs)
     ```
 
 

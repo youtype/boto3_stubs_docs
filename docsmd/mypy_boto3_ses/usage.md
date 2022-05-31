@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("ses")  # (1)
-    result = client.describe_configuration_set()  # (2)
+    result = client.create_custom_verification_email_template()  # (2)
     ```
 
     1. client: [SESClient](./client.md)
-    2. result: [:material-code-braces: DescribeConfigurationSetResponseTypeDef](./type_defs.md#describeconfigurationsetresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_ses.client import SESClient
-    from mypy_boto3_ses.type_defs import DescribeConfigurationSetResponseTypeDef
-    from mypy_boto3_ses.type_defs import DescribeConfigurationSetRequestRequestTypeDef
+    from mypy_boto3_ses.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_ses.type_defs import CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 
     session = Session()
 
     client: SESClient = session.client("ses")
 
-    kwargs: DescribeConfigurationSetRequestRequestTypeDef = {...}
-    result: DescribeConfigurationSetResponseTypeDef = client.describe_configuration_set(**kwargs)
+    kwargs: CreateCustomVerificationEmailTemplateRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.create_custom_verification_email_template(**kwargs)
     ```
 
 

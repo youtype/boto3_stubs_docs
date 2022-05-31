@@ -133,6 +133,7 @@ def get_value() -> AssociateMemberAccountRequestRequestTypeDef:
 - [ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef)
 - [MemberAccountTypeDef](./type_defs.md#memberaccounttypedef)
 - [ListS3ResourcesRequestRequestTypeDef](./type_defs.md#lists3resourcesrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)
 - [S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)
 - [DisassociateS3ResourcesRequestRequestTypeDef](./type_defs.md#disassociates3resourcesrequestrequesttypedef)

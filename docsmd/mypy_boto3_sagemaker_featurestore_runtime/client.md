@@ -113,10 +113,11 @@ def delete_record(
     FeatureGroupName: str,
     RecordIdentifierValueAsString: str,
     EventTime: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -195,11 +196,12 @@ def put_record(
     *,
     FeatureGroupName: str,
     Record: Sequence[FeatureValueTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -152,6 +152,7 @@ def get_value() -> ParameterValueTypeDef:
 - [AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef)
 - [CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef)
 - [CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef)
 - [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)
 - [ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef)

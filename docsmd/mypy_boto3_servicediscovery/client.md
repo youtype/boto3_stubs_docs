@@ -825,11 +825,12 @@ def update_instance_custom_health_status(
     ServiceId: str,
     InstanceId: str,
     Status: CustomHealthStatusType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: CustomHealthStatusType](./literals.md#customhealthstatustype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

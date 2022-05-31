@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("detective")  # (1)
-    result = client.create_graph()  # (2)
+    result = client.accept_invitation()  # (2)
     ```
 
     1. client: [DetectiveClient](./client.md)
-    2. result: [:material-code-braces: CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_detective.client import DetectiveClient
-    from mypy_boto3_detective.type_defs import CreateGraphResponseTypeDef
-    from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
+    from mypy_boto3_detective.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 
 
     session = Session()
 
     client: DetectiveClient = session.client("detective")
 
-    kwargs: CreateGraphRequestRequestTypeDef = {...}
-    result: CreateGraphResponseTypeDef = client.create_graph(**kwargs)
+    kwargs: AcceptInvitationRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.accept_invitation(**kwargs)
     ```
 
 

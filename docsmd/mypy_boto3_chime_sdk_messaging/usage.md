@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("chime-sdk-messaging")  # (1)
-    result = client.batch_create_channel_membership()  # (2)
+    result = client.associate_channel_flow()  # (2)
     ```
 
     1. client: [ChimeSDKMessagingClient](./client.md)
-    2. result: [:material-code-braces: BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
-    from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershipResponseTypeDef
-    from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershipRequestRequestTypeDef
+    from mypy_boto3_chime_sdk_messaging.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_chime_sdk_messaging.type_defs import AssociateChannelFlowRequestRequestTypeDef
 
 
     session = Session()
 
     client: ChimeSDKMessagingClient = session.client("chime-sdk-messaging")
 
-    kwargs: BatchCreateChannelMembershipRequestRequestTypeDef = {...}
-    result: BatchCreateChannelMembershipResponseTypeDef = client.batch_create_channel_membership(**kwargs)
+    kwargs: AssociateChannelFlowRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_channel_flow(**kwargs)
     ```
 
 

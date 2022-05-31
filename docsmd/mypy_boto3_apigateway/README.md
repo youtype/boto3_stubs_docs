@@ -297,6 +297,7 @@ def get_value() -> AccessLogSettingsTypeDef:
 - [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef)
 - [DocumentationPartIdsTypeDef](./type_defs.md#documentationpartidstypedef)
 - [DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef)
 - [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef)
 - [IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef)

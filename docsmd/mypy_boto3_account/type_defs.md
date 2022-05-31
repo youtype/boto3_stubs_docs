@@ -46,24 +46,6 @@ class DeleteAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
-## GetAlternateContactRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_account.type_defs import GetAlternateContactRequestRequestTypeDef
-
-def get_value() -> GetAlternateContactRequestRequestTypeDef:
-    return {
-        "AlternateContactType": ...,
-    }
-```
-
-```python title="Definition"
-class GetAlternateContactRequestRequestTypeDef(TypedDict):
-    AlternateContactType: AlternateContactTypeType,  # (1)
-    AccountId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -88,6 +70,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## GetAlternateContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import GetAlternateContactRequestRequestTypeDef
+
+def get_value() -> GetAlternateContactRequestRequestTypeDef:
+    return {
+        "AlternateContactType": ...,
+    }
+```
+
+```python title="Definition"
+class GetAlternateContactRequestRequestTypeDef(TypedDict):
+    AlternateContactType: AlternateContactTypeType,  # (1)
+    AccountId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## PutAlternateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -114,6 +114,23 @@ class PutAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAlternateContactResponseTypeDef
 
 ```python title="Usage Example"

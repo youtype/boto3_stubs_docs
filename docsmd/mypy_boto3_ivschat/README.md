@@ -117,6 +117,7 @@ def get_value() -> CreateChatTokenRequestRequestTypeDef:
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [CreateChatTokenResponseTypeDef](./type_defs.md#createchattokenresponsetypedef)
 - [DeleteMessageResponseTypeDef](./type_defs.md#deletemessageresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef)
 - [CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef)

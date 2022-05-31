@@ -263,6 +263,7 @@ def get_value() -> AlgorithmImageTypeDef:
 - [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef)
 - [CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef)
 - [CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef)
 - [ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef)
 - [ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef)

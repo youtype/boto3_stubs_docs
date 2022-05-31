@@ -645,6 +645,7 @@ def get_value() -> AbortCriteriaTypeDef:
 - [DescribeScheduledAuditResponseTypeDef](./type_defs.md#describescheduledauditresponsetypedef)
 - [DescribeThingRegistrationTaskResponseTypeDef](./type_defs.md#describethingregistrationtaskresponsetypedef)
 - [DescribeThingResponseTypeDef](./type_defs.md#describethingresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetCardinalityResponseTypeDef](./type_defs.md#getcardinalityresponsetypedef)
 - [GetJobDocumentResponseTypeDef](./type_defs.md#getjobdocumentresponsetypedef)
 - [GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef)

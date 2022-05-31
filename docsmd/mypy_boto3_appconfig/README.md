@@ -151,6 +151,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef)
 - [ConfigurationTypeDef](./type_defs.md#configurationtypedef)
 - [DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef)
 - [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef)
 - [ApplicationsTypeDef](./type_defs.md#applicationstypedef)

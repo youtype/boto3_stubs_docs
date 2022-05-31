@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("accessanalyzer")  # (1)
-    result = client.create_access_preview()  # (2)
+    result = client.apply_archive_rule()  # (2)
     ```
 
     1. client: [AccessAnalyzerClient](./client.md)
-    2. result: [:material-code-braces: CreateAccessPreviewResponseTypeDef](./type_defs.md#createaccesspreviewresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
-    from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewResponseTypeDef
-    from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewRequestRequestTypeDef
+    from mypy_boto3_accessanalyzer.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_accessanalyzer.type_defs import ApplyArchiveRuleRequestRequestTypeDef
 
 
     session = Session()
 
     client: AccessAnalyzerClient = session.client("accessanalyzer")
 
-    kwargs: CreateAccessPreviewRequestRequestTypeDef = {...}
-    result: CreateAccessPreviewResponseTypeDef = client.create_access_preview(**kwargs)
+    kwargs: ApplyArchiveRuleRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.apply_archive_rule(**kwargs)
     ```
 
 

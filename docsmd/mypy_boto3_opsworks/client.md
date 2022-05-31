@@ -63,10 +63,11 @@ def assign_instance(
     *,
     InstanceId: str,
     LayerIds: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -94,10 +95,11 @@ def assign_volume(
     *,
     VolumeId: str,
     InstanceId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -124,10 +126,11 @@ def associate_elastic_ip(
     *,
     ElasticIp: str,
     InstanceId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -153,10 +156,11 @@ def attach_elastic_load_balancer(
     *,
     ElasticLoadBalancerName: str,
     LayerId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -533,10 +537,11 @@ def delete_app(
     self,
     *,
     AppId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -564,10 +569,11 @@ def delete_instance(
     InstanceId: str,
     DeleteElasticIp: bool = ...,
     DeleteVolumes: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -592,10 +598,11 @@ def delete_layer(
     self,
     *,
     LayerId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -620,10 +627,11 @@ def delete_stack(
     self,
     *,
     StackId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -648,10 +656,11 @@ def delete_user_profile(
     self,
     *,
     IamUserArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -676,10 +685,11 @@ def deregister_ecs_cluster(
     self,
     *,
     EcsClusterArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -704,10 +714,11 @@ def deregister_elastic_ip(
     self,
     *,
     ElasticIp: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -732,10 +743,11 @@ def deregister_instance(
     self,
     *,
     InstanceId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -760,10 +772,11 @@ def deregister_rds_db_instance(
     self,
     *,
     RdsDbInstanceArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -788,10 +801,11 @@ def deregister_volume(
     self,
     *,
     VolumeId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1457,10 +1471,11 @@ def detach_elastic_load_balancer(
     *,
     ElasticLoadBalancerName: str,
     LayerId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1486,10 +1501,11 @@ def disassociate_elastic_ip(
     self,
     *,
     ElasticIp: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1624,10 +1640,11 @@ def reboot_instance(
     self,
     *,
     InstanceId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1754,10 +1771,11 @@ def register_rds_db_instance(
     RdsDbInstanceArn: str,
     DbUser: str,
     DbPassword: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1818,12 +1836,13 @@ def set_load_based_auto_scaling(
     Enable: bool = ...,
     UpScaling: AutoScalingThresholdsTypeDef = ...,  # (1)
     DownScaling: AutoScalingThresholdsTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
 2. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1852,10 +1871,11 @@ def set_permission(
     AllowSsh: bool = ...,
     AllowSudo: bool = ...,
     Level: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1882,11 +1902,12 @@ def set_time_based_auto_scaling(
     *,
     InstanceId: str,
     AutoScalingSchedule: WeeklyAutoScalingScheduleTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1911,10 +1932,11 @@ def start_instance(
     self,
     *,
     InstanceId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1939,10 +1961,11 @@ def start_stack(
     self,
     *,
     StackId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1968,10 +1991,11 @@ def stop_instance(
     *,
     InstanceId: str,
     Force: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1996,10 +2020,11 @@ def stop_stack(
     self,
     *,
     StackId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2025,10 +2050,11 @@ def tag_resource(
     *,
     ResourceArn: str,
     Tags: Mapping[str, str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2054,10 +2080,11 @@ def unassign_instance(
     self,
     *,
     InstanceId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2082,10 +2109,11 @@ def unassign_volume(
     self,
     *,
     VolumeId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2111,10 +2139,11 @@ def untag_resource(
     *,
     ResourceArn: str,
     TagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2150,7 +2179,7 @@ def update_app(
     SslConfiguration: SslConfigurationTypeDef = ...,  # (4)
     Attributes: Mapping[AppAttributesKeysType, str] = ...,  # (5)
     Environment: Sequence[EnvironmentVariableTypeDef] = ...,  # (6)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (7)
     ...
 ```
 
@@ -2160,6 +2189,7 @@ def update_app(
 4. See [:material-code-braces: SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef) 
 5. See [:material-code-brackets: AppAttributesKeysType](./literals.md#appattributeskeystype) 
 6. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
+7. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2185,10 +2215,11 @@ def update_elastic_ip(
     *,
     ElasticIp: str,
     Name: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2224,12 +2255,13 @@ def update_instance(
     InstallUpdatesOnBoot: bool = ...,
     EbsOptimized: bool = ...,
     AgentVersion: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: AutoScalingTypeType](./literals.md#autoscalingtypetype) 
 2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2270,7 +2302,7 @@ def update_layer(
     InstallUpdatesOnBoot: bool = ...,
     UseEbsOptimizedInstances: bool = ...,
     LifecycleEventConfiguration: LifecycleEventConfigurationTypeDef = ...,  # (5)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (6)
     ...
 ```
 
@@ -2279,6 +2311,7 @@ def update_layer(
 3. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
 4. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
 5. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
+6. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2303,10 +2336,11 @@ def update_my_user_profile(
     self,
     *,
     SshPublicKey: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2333,10 +2367,11 @@ def update_rds_db_instance(
     RdsDbInstanceArn: str,
     DbUser: str = ...,
     DbPassword: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2378,7 +2413,7 @@ def update_stack(
     DefaultRootDeviceType: RootDeviceTypeType = ...,  # (5)
     UseOpsworksSecurityGroups: bool = ...,
     AgentVersion: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (6)
     ...
 ```
 
@@ -2387,6 +2422,7 @@ def update_stack(
 3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
 4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
 5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
+6. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2414,10 +2450,11 @@ def update_user_profile(
     SshUsername: str = ...,
     SshPublicKey: str = ...,
     AllowSelfManagement: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2444,10 +2481,11 @@ def update_volume(
     VolumeId: str,
     Name: str = ...,
     MountPoint: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

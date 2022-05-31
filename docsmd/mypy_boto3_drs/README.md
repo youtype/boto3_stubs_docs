@@ -81,6 +81,8 @@ def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
 - [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- [ListExtensibleSourceServersPaginator](./paginators.md#listextensiblesourceserverspaginator)
+- [ListStagingAccountsPaginator](./paginators.md#liststagingaccountspaginator)
 
 
 
@@ -112,6 +114,7 @@ def get_value() -> DataReplicationErrorStringType:
 - [DescribeReplicationConfigurationTemplatesPaginatorName](./literals.md#describereplicationconfigurationtemplatespaginatorname)
 - [DescribeSourceServersPaginatorName](./literals.md#describesourceserverspaginatorname)
 - [EC2InstanceStateType](./literals.md#ec2instancestatetype)
+- [ExtensionStatusType](./literals.md#extensionstatustype)
 - [FailbackReplicationErrorType](./literals.md#failbackreplicationerrortype)
 - [FailbackStateType](./literals.md#failbackstatetype)
 - [InitiatedByType](./literals.md#initiatedbytype)
@@ -122,6 +125,8 @@ def get_value() -> DataReplicationErrorStringType:
 - [LastLaunchTypeType](./literals.md#lastlaunchtypetype)
 - [LaunchDispositionType](./literals.md#launchdispositiontype)
 - [LaunchStatusType](./literals.md#launchstatustype)
+- [ListExtensibleSourceServersPaginatorName](./literals.md#listextensiblesourceserverspaginatorname)
+- [ListStagingAccountsPaginatorName](./literals.md#liststagingaccountspaginatorname)
 - [PITPolicyRuleUnitsType](./literals.md#pitpolicyruleunitstype)
 - [RecoveryInstanceDataReplicationInitiationStepNameType](./literals.md#recoveryinstancedatareplicationinitiationstepnametype)
 - [RecoveryInstanceDataReplicationInitiationStepStatusType](./literals.md#recoveryinstancedatareplicationinitiationstepstatustype)
@@ -146,15 +151,19 @@ def get_value() -> DataReplicationErrorStringType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_drs.type_defs import CPUTypeDef
+from mypy_boto3_drs.type_defs import AccountTypeDef
 
-def get_value() -> CPUTypeDef:
+def get_value() -> AccountTypeDef:
     return {
-        "cores": ...,
+        "accountID": ...,
     }
 ```
 
+- [AccountTypeDef](./type_defs.md#accounttypedef)
 - [CPUTypeDef](./type_defs.md#cputypedef)
+- [ConversionPropertiesTypeDef](./type_defs.md#conversionpropertiestypedef)
+- [CreateExtendedSourceServerRequestRequestTypeDef](./type_defs.md#createextendedsourceserverrequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef)
 - [DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef)
 - [DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef)
@@ -165,7 +174,6 @@ def get_value() -> CPUTypeDef:
 - [DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
 - [DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef)
 - [DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef)
@@ -179,10 +187,12 @@ def get_value() -> CPUTypeDef:
 - [GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef)
 - [GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef)
 - [IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef)
-- [JobLogEventDataTypeDef](./type_defs.md#joblogeventdatatypedef)
 - [ParticipatingServerTypeDef](./type_defs.md#participatingservertypedef)
 - [LicensingTypeDef](./type_defs.md#licensingtypedef)
 - [LifeCycleLastLaunchInitiatedTypeDef](./type_defs.md#lifecyclelastlaunchinitiatedtypedef)
+- [ListExtensibleSourceServersRequestRequestTypeDef](./type_defs.md#listextensiblesourceserversrequestrequesttypedef)
+- [StagingSourceServerTypeDef](./type_defs.md#stagingsourceservertypedef)
+- [ListStagingAccountsRequestRequestTypeDef](./type_defs.md#liststagingaccountsrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [OSTypeDef](./type_defs.md#ostypedef)
@@ -193,6 +203,7 @@ def get_value() -> CPUTypeDef:
 - [RecoveryInstanceFailbackTypeDef](./type_defs.md#recoveryinstancefailbacktypedef)
 - [ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)
 - [RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef)
+- [StagingAreaTypeDef](./type_defs.md#stagingareatypedef)
 - [StartFailbackLaunchRequestRequestTypeDef](./type_defs.md#startfailbacklaunchrequestrequesttypedef)
 - [StartRecoveryRequestSourceServerTypeDef](./type_defs.md#startrecoveryrequestsourceservertypedef)
 - [StopFailbackRequestRequestTypeDef](./type_defs.md#stopfailbackrequestrequesttypedef)
@@ -200,15 +211,20 @@ def get_value() -> CPUTypeDef:
 - [TerminateRecoveryInstancesRequestRequestTypeDef](./type_defs.md#terminaterecoveryinstancesrequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateFailbackReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatefailbackreplicationconfigurationrequestrequesttypedef)
+- [JobLogEventDataTypeDef](./type_defs.md#joblogeventdatatypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
+- [GetFailbackReplicationConfigurationResponseTypeDef](./type_defs.md#getfailbackreplicationconfigurationresponsetypedef)
+- [ListStagingAccountsResponseTypeDef](./type_defs.md#liststagingaccountsresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef)
+- [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef)
 - [ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef)
 - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef)
 - [DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef)
 - [DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef](./type_defs.md#describejoblogitemsrequestdescribejoblogitemspaginatetypedef)
 - [DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestdescribereplicationconfigurationtemplatespaginatetypedef)
-- [GetFailbackReplicationConfigurationResponseTypeDef](./type_defs.md#getfailbackreplicationconfigurationresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef)
+- [ListExtensibleSourceServersRequestListExtensibleSourceServersPaginateTypeDef](./type_defs.md#listextensiblesourceserversrequestlistextensiblesourceserverspaginatetypedef)
+- [ListStagingAccountsRequestListStagingAccountsPaginateTypeDef](./type_defs.md#liststagingaccountsrequestliststagingaccountspaginatetypedef)
 - [DescribeJobsRequestDescribeJobsPaginateTypeDef](./type_defs.md#describejobsrequestdescribejobspaginatetypedef)
 - [DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef)
 - [DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef](./type_defs.md#describerecoveryinstancesrequestdescriberecoveryinstancespaginatetypedef)
@@ -218,29 +234,31 @@ def get_value() -> CPUTypeDef:
 - [DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef)
 - [DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef](./type_defs.md#describesourceserversrequestdescribesourceserverspaginatetypedef)
 - [DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef)
-- [JobLogTypeDef](./type_defs.md#joblogtypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef)
 - [UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef)
 - [LifeCycleLastLaunchTypeDef](./type_defs.md#lifecyclelastlaunchtypedef)
+- [ListExtensibleSourceServersResponseTypeDef](./type_defs.md#listextensiblesourceserversresponsetypedef)
 - [SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef)
 - [RecoveryInstanceDataReplicationInitiationTypeDef](./type_defs.md#recoveryinstancedatareplicationinitiationtypedef)
 - [RecoveryInstancePropertiesTypeDef](./type_defs.md#recoveryinstancepropertiestypedef)
 - [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
 - [UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef)
 - [StartRecoveryRequestRequestTypeDef](./type_defs.md#startrecoveryrequestrequesttypedef)
+- [JobLogTypeDef](./type_defs.md#joblogtypedef)
 - [DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)
 - [DataReplicationInfoTypeDef](./type_defs.md#datareplicationinfotypedef)
-- [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)
 - [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)
 - [StartFailbackLaunchResponseTypeDef](./type_defs.md#startfailbacklaunchresponsetypedef)
 - [StartRecoveryResponseTypeDef](./type_defs.md#startrecoveryresponsetypedef)
 - [TerminateRecoveryInstancesResponseTypeDef](./type_defs.md#terminaterecoveryinstancesresponsetypedef)
 - [LifeCycleTypeDef](./type_defs.md#lifecycletypedef)
 - [RecoveryInstanceDataReplicationInfoTypeDef](./type_defs.md#recoveryinstancedatareplicationinfotypedef)
+- [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)
 - [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef)
 - [SourceServerTypeDef](./type_defs.md#sourceservertypedef)
 - [RecoveryInstanceTypeDef](./type_defs.md#recoveryinstancetypedef)
+- [CreateExtendedSourceServerResponseTypeDef](./type_defs.md#createextendedsourceserverresponsetypedef)
 - [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)
 - [DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef)
 

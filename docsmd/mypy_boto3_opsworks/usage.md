@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("opsworks")  # (1)
-    result = client.clone_stack()  # (2)
+    result = client.assign_instance()  # (2)
     ```
 
     1. client: [OpsWorksClient](./client.md)
-    2. result: [:material-code-braces: CloneStackResultTypeDef](./type_defs.md#clonestackresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_opsworks.client import OpsWorksClient
-    from mypy_boto3_opsworks.type_defs import CloneStackResultTypeDef
-    from mypy_boto3_opsworks.type_defs import CloneStackRequestRequestTypeDef
+    from mypy_boto3_opsworks.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_opsworks.type_defs import AssignInstanceRequestRequestTypeDef
 
 
     session = Session()
 
     client: OpsWorksClient = session.client("opsworks")
 
-    kwargs: CloneStackRequestRequestTypeDef = {...}
-    result: CloneStackResultTypeDef = client.clone_stack(**kwargs)
+    kwargs: AssignInstanceRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.assign_instance(**kwargs)
     ```
 
 

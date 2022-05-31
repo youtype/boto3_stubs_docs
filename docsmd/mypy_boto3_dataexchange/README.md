@@ -192,6 +192,7 @@ def get_value() -> ApiGatewayApiAssetTypeDef:
 - [DataSetEntryTypeDef](./type_defs.md#datasetentrytypedef)
 - [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
 - [CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef)
 - [GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

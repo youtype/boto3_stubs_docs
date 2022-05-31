@@ -175,6 +175,7 @@ def get_value() -> TagTypeDef:
 - [RemoveTagsFromCertificateRequestRequestTypeDef](./type_defs.md#removetagsfromcertificaterequestrequesttypedef)
 - [UpdateCertificateOptionsRequestRequestTypeDef](./type_defs.md#updatecertificateoptionsrequestrequesttypedef)
 - [DescribeCertificateRequestCertificateValidatedWaitTypeDef](./type_defs.md#describecertificaterequestcertificatevalidatedwaittypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef)
 - [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef)
 - [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef)

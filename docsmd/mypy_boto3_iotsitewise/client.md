@@ -74,10 +74,11 @@ def associate_assets(
     hierarchyId: str,
     childAssetId: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -107,10 +108,11 @@ def associate_time_series_to_asset_property(
     assetId: str,
     propertyId: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -386,6 +388,7 @@ def create_asset(
     assetModelId: str,
     clientToken: str = ...,
     tags: Mapping[str, str] = ...,
+    assetDescription: str = ...,
 ) -> CreateAssetResponseTypeDef:  # (1)
     ...
 ```
@@ -720,10 +723,11 @@ def delete_gateway(
     self,
     *,
     gatewayId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -810,10 +814,11 @@ def delete_time_series(
     assetId: str = ...,
     propertyId: str = ...,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1188,10 +1193,11 @@ def disassociate_assets(
     hierarchyId: str,
     childAssetId: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1221,10 +1227,11 @@ def disassociate_time_series_from_asset_property(
     assetId: str,
     propertyId: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2016,6 +2023,7 @@ def update_asset(
     assetId: str,
     assetName: str,
     clientToken: str = ...,
+    assetDescription: str = ...,
 ) -> UpdateAssetResponseTypeDef:  # (1)
     ...
 ```
@@ -2089,11 +2097,12 @@ def update_asset_property(
     propertyAlias: str = ...,
     propertyNotificationState: PropertyNotificationStateType = ...,  # (1)
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: PropertyNotificationStateType](./literals.md#propertynotificationstatetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2154,10 +2163,11 @@ def update_gateway(
     *,
     gatewayId: str,
     gatewayName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

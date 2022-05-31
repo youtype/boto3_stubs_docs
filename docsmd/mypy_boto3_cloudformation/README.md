@@ -421,6 +421,7 @@ def get_value() -> AccountGateResultTypeDef:
 - [DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef)
 - [DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef)
 - [DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef)
 - [GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef)
 - [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef)

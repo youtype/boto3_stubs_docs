@@ -133,10 +133,11 @@ def admin_add_user_to_group(
     UserPoolId: str,
     Username: str,
     GroupName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -237,10 +238,11 @@ def admin_delete_user(
     *,
     UserPoolId: str,
     Username: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -392,10 +394,11 @@ def admin_forget_device(
     UserPoolId: str,
     Username: str,
     DeviceKey: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -664,10 +667,11 @@ def admin_remove_user_from_group(
     UserPoolId: str,
     Username: str,
     GroupName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -992,7 +996,9 @@ parent.admin_user_global_sign_out(**kwargs)
 
 ### associate\_software\_token
 
-Returns a unique generated shared secret key code for the user account.
+Begins setup of time-based one-time password multi-factor authentication (TOTP
+MFA) for a user, with a unique private key that Amazon Cognito generates and
+returns in the API response.
 
 Type annotations and code completion for `#!python boto3.client("cognito-idp").associate_software_token` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
@@ -1419,6 +1425,7 @@ def create_user_pool_client(
     AnalyticsConfiguration: AnalyticsConfigurationTypeTypeDef = ...,  # (4)
     PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
     EnableTokenRevocation: bool = ...,
+    EnablePropagateAdditionalUserContextData: bool = ...,
 ) -> CreateUserPoolClientResponseTypeDef:  # (6)
     ...
 ```
@@ -1488,10 +1495,11 @@ def delete_group(
     *,
     GroupName: str,
     UserPoolId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1518,10 +1526,11 @@ def delete_identity_provider(
     *,
     UserPoolId: str,
     ProviderName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1548,10 +1557,11 @@ def delete_resource_server(
     *,
     UserPoolId: str,
     Identifier: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1577,10 +1587,11 @@ def delete_user(
     self,
     *,
     AccessToken: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1635,10 +1646,11 @@ def delete_user_pool(
     self,
     *,
     UserPoolId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1664,10 +1676,11 @@ def delete_user_pool_client(
     *,
     UserPoolId: str,
     ClientId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1937,10 +1950,11 @@ def forget_device(
     *,
     DeviceKey: str,
     AccessToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3397,6 +3411,7 @@ def update_user_pool_client(
     AnalyticsConfiguration: AnalyticsConfigurationTypeTypeDef = ...,  # (4)
     PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
     EnableTokenRevocation: bool = ...,
+    EnablePropagateAdditionalUserContextData: bool = ...,
 ) -> UpdateUserPoolClientResponseTypeDef:  # (6)
     ...
 ```

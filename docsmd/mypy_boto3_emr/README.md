@@ -300,6 +300,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef)
 - [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef)
 - [DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef)
 - [ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef)
 - [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef)

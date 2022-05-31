@@ -322,6 +322,7 @@ def get_value() -> AdvancedRecognitionSettingTypeDef:
 - [DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef)
 - [DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef)
 - [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef)
 - [ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef)
 - [ListBotRecommendationsResponseTypeDef](./type_defs.md#listbotrecommendationsresponsetypedef)

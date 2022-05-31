@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.16">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1c3799f8.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36196,6 +36196,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#describerecoverysnapshotspaginator">DescribeRecoverySnapshotsPaginator</a></li>
 <li><a href="paginators/#describereplicationconfigurationtemplatespaginator">DescribeReplicationConfigurationTemplatesPaginator</a></li>
 <li><a href="paginators/#describesourceserverspaginator">DescribeSourceServersPaginator</a></li>
+<li><a href="paginators/#listextensiblesourceserverspaginator">ListExtensibleSourceServersPaginator</a></li>
+<li><a href="paginators/#liststagingaccountspaginator">ListStagingAccountsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
@@ -36216,6 +36218,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#describereplicationconfigurationtemplatespaginatorname">DescribeReplicationConfigurationTemplatesPaginatorName</a></li>
 <li><a href="literals/#describesourceserverspaginatorname">DescribeSourceServersPaginatorName</a></li>
 <li><a href="literals/#ec2instancestatetype">EC2InstanceStateType</a></li>
+<li><a href="literals/#extensionstatustype">ExtensionStatusType</a></li>
 <li><a href="literals/#failbackreplicationerrortype">FailbackReplicationErrorType</a></li>
 <li><a href="literals/#failbackstatetype">FailbackStateType</a></li>
 <li><a href="literals/#initiatedbytype">InitiatedByType</a></li>
@@ -36226,6 +36229,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#lastlaunchtypetype">LastLaunchTypeType</a></li>
 <li><a href="literals/#launchdispositiontype">LaunchDispositionType</a></li>
 <li><a href="literals/#launchstatustype">LaunchStatusType</a></li>
+<li><a href="literals/#listextensiblesourceserverspaginatorname">ListExtensibleSourceServersPaginatorName</a></li>
+<li><a href="literals/#liststagingaccountspaginatorname">ListStagingAccountsPaginatorName</a></li>
 <li><a href="literals/#pitpolicyruleunitstype">PITPolicyRuleUnitsType</a></li>
 <li><a href="literals/#recoveryinstancedatareplicationinitiationstepnametype">RecoveryInstanceDataReplicationInitiationStepNameType</a></li>
 <li><a href="literals/#recoveryinstancedatareplicationinitiationstepstatustype">RecoveryInstanceDataReplicationInitiationStepStatusType</a></li>
@@ -36244,15 +36249,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_drs.type_defs</span> <span class="kn">import</span> <span class="n">CPUTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_drs.type_defs</span> <span class="kn">import</span> <span class="n">AccountTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CPUTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;cores&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;accountID&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#accounttypedef">AccountTypeDef</a></li>
 <li><a href="type_defs/#cputypedef">CPUTypeDef</a></li>
+<li><a href="type_defs/#conversionpropertiestypedef">ConversionPropertiesTypeDef</a></li>
+<li><a href="type_defs/#createextendedsourceserverrequestrequesttypedef">CreateExtendedSourceServerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#pitpolicyruletypedef">PITPolicyRuleTypeDef</a></li>
 <li><a href="type_defs/#datareplicationerrortypedef">DataReplicationErrorTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinforeplicateddisktypedef">DataReplicationInfoReplicatedDiskTypeDef</a></li>
@@ -36263,7 +36272,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletesourceserverrequestrequesttypedef">DeleteSourceServerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describejoblogitemsrequestrequesttypedef">DescribeJobLogItemsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#describejobsrequestfilterstypedef">DescribeJobsRequestFiltersTypeDef</a></li>
 <li><a href="type_defs/#describerecoveryinstancesrequestfilterstypedef">DescribeRecoveryInstancesRequestFiltersTypeDef</a></li>
 <li><a href="type_defs/#describerecoverysnapshotsrequestfilterstypedef">DescribeRecoverySnapshotsRequestFiltersTypeDef</a></li>
@@ -36277,10 +36285,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getlaunchconfigurationrequestrequesttypedef">GetLaunchConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getreplicationconfigurationrequestrequesttypedef">GetReplicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#identificationhintstypedef">IdentificationHintsTypeDef</a></li>
-<li><a href="type_defs/#joblogeventdatatypedef">JobLogEventDataTypeDef</a></li>
 <li><a href="type_defs/#participatingservertypedef">ParticipatingServerTypeDef</a></li>
 <li><a href="type_defs/#licensingtypedef">LicensingTypeDef</a></li>
 <li><a href="type_defs/#lifecyclelastlaunchinitiatedtypedef">LifeCycleLastLaunchInitiatedTypeDef</a></li>
+<li><a href="type_defs/#listextensiblesourceserversrequestrequesttypedef">ListExtensibleSourceServersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stagingsourceservertypedef">StagingSourceServerTypeDef</a></li>
+<li><a href="type_defs/#liststagingaccountsrequestrequesttypedef">ListStagingAccountsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#networkinterfacetypedef">NetworkInterfaceTypeDef</a></li>
 <li><a href="type_defs/#ostypedef">OSTypeDef</a></li>
@@ -36291,6 +36301,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#recoveryinstancefailbacktypedef">RecoveryInstanceFailbackTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationreplicateddisktypedef">ReplicationConfigurationReplicatedDiskTypeDef</a></li>
 <li><a href="type_defs/#retrydatareplicationrequestrequesttypedef">RetryDataReplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stagingareatypedef">StagingAreaTypeDef</a></li>
 <li><a href="type_defs/#startfailbacklaunchrequestrequesttypedef">StartFailbackLaunchRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startrecoveryrequestsourceservertypedef">StartRecoveryRequestSourceServerTypeDef</a></li>
 <li><a href="type_defs/#stopfailbackrequestrequesttypedef">StopFailbackRequestRequestTypeDef</a></li>
@@ -36298,15 +36309,20 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#terminaterecoveryinstancesrequestrequesttypedef">TerminateRecoveryInstancesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefailbackreplicationconfigurationrequestrequesttypedef">UpdateFailbackReplicationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#joblogeventdatatypedef">JobLogEventDataTypeDef</a></li>
+<li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#getfailbackreplicationconfigurationresponsetypedef">GetFailbackReplicationConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#liststagingaccountsresponsetypedef">ListStagingAccountsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#createreplicationconfigurationtemplaterequestrequesttypedef">CreateReplicationConfigurationTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#replicationconfigurationtemplateresponsemetadatatypedef">ReplicationConfigurationTemplateResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationtemplatetypedef">ReplicationConfigurationTemplateTypeDef</a></li>
 <li><a href="type_defs/#updatereplicationconfigurationtemplaterequestrequesttypedef">UpdateReplicationConfigurationTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinitiationtypedef">DataReplicationInitiationTypeDef</a></li>
 <li><a href="type_defs/#describejoblogitemsrequestdescribejoblogitemspaginatetypedef">DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describereplicationconfigurationtemplatesrequestdescribereplicationconfigurationtemplatespaginatetypedef">DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef</a></li>
-<li><a href="type_defs/#getfailbackreplicationconfigurationresponsetypedef">GetFailbackReplicationConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#replicationconfigurationtemplateresponsemetadatatypedef">ReplicationConfigurationTemplateResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#listextensiblesourceserversrequestlistextensiblesourceserverspaginatetypedef">ListExtensibleSourceServersRequestListExtensibleSourceServersPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststagingaccountsrequestliststagingaccountspaginatetypedef">ListStagingAccountsRequestListStagingAccountsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describejobsrequestdescribejobspaginatetypedef">DescribeJobsRequestDescribeJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describejobsrequestrequesttypedef">DescribeJobsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describerecoveryinstancesrequestdescriberecoveryinstancespaginatetypedef">DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef</a></li>
@@ -36316,29 +36332,31 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describerecoverysnapshotsresponsetypedef">DescribeRecoverySnapshotsResponseTypeDef</a></li>
 <li><a href="type_defs/#describesourceserversrequestdescribesourceserverspaginatetypedef">DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describesourceserversrequestrequesttypedef">DescribeSourceServersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#joblogtypedef">JobLogTypeDef</a></li>
 <li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
 <li><a href="type_defs/#launchconfigurationtypedef">LaunchConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updatelaunchconfigurationrequestrequesttypedef">UpdateLaunchConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#lifecyclelastlaunchtypedef">LifeCycleLastLaunchTypeDef</a></li>
+<li><a href="type_defs/#listextensiblesourceserversresponsetypedef">ListExtensibleSourceServersResponseTypeDef</a></li>
 <li><a href="type_defs/#sourcepropertiestypedef">SourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#recoveryinstancedatareplicationinitiationtypedef">RecoveryInstanceDataReplicationInitiationTypeDef</a></li>
 <li><a href="type_defs/#recoveryinstancepropertiestypedef">RecoveryInstancePropertiesTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationtypedef">ReplicationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updatereplicationconfigurationrequestrequesttypedef">UpdateReplicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startrecoveryrequestrequesttypedef">StartRecoveryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#joblogtypedef">JobLogTypeDef</a></li>
 <li><a href="type_defs/#describereplicationconfigurationtemplatesresponsetypedef">DescribeReplicationConfigurationTemplatesResponseTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinfotypedef">DataReplicationInfoTypeDef</a></li>
-<li><a href="type_defs/#describejoblogitemsresponsetypedef">DescribeJobLogItemsResponseTypeDef</a></li>
 <li><a href="type_defs/#describejobsresponsetypedef">DescribeJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#startfailbacklaunchresponsetypedef">StartFailbackLaunchResponseTypeDef</a></li>
 <li><a href="type_defs/#startrecoveryresponsetypedef">StartRecoveryResponseTypeDef</a></li>
 <li><a href="type_defs/#terminaterecoveryinstancesresponsetypedef">TerminateRecoveryInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#lifecycletypedef">LifeCycleTypeDef</a></li>
 <li><a href="type_defs/#recoveryinstancedatareplicationinfotypedef">RecoveryInstanceDataReplicationInfoTypeDef</a></li>
+<li><a href="type_defs/#describejoblogitemsresponsetypedef">DescribeJobLogItemsResponseTypeDef</a></li>
 <li><a href="type_defs/#sourceserverresponsemetadatatypedef">SourceServerResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#sourceservertypedef">SourceServerTypeDef</a></li>
 <li><a href="type_defs/#recoveryinstancetypedef">RecoveryInstanceTypeDef</a></li>
+<li><a href="type_defs/#createextendedsourceserverresponsetypedef">CreateExtendedSourceServerResponseTypeDef</a></li>
 <li><a href="type_defs/#describesourceserversresponsetypedef">DescribeSourceServersResponseTypeDef</a></li>
 <li><a href="type_defs/#describerecoveryinstancesresponsetypedef">DescribeRecoveryInstancesResponseTypeDef</a></li>
 </ul>
@@ -36410,7 +36428,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../assets/javascripts/bundle.3a4b43e5.min.js"></script>
       
     
   </body>

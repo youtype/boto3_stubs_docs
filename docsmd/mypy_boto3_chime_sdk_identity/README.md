@@ -144,6 +144,7 @@ def get_value() -> IdentityTypeDef:
 - [CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef)
 - [DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef)
 - [DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef)
 - [ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef)
 - [RegisterAppInstanceUserEndpointResponseTypeDef](./type_defs.md#registerappinstanceuserendpointresponsetypedef)

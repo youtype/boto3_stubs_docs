@@ -1275,6 +1275,23 @@ class UpgradeStepItemTypeDef(TypedDict):
 
 1. See [:material-code-brackets: UpgradeStepType](./literals.md#upgradesteptype) 
 2. See [:material-code-brackets: UpgradeStatusType](./literals.md#upgradestatustype) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUpgradeStatusResponseTypeDef
 
 ```python title="Usage Example"

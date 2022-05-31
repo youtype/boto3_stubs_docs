@@ -207,6 +207,7 @@ def get_value() -> AddTagsToStreamInputRequestTypeDef:
 - [UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef)
 - [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef)
 - [DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef)
 - [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef)
 - [ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)

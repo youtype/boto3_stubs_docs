@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("wellarchitected")  # (1)
-    result = client.create_lens_share()  # (2)
+    result = client.associate_lenses()  # (2)
     ```
 
     1. client: [WellArchitectedClient](./client.md)
-    2. result: [:material-code-braces: CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_wellarchitected.client import WellArchitectedClient
-    from mypy_boto3_wellarchitected.type_defs import CreateLensShareOutputTypeDef
-    from mypy_boto3_wellarchitected.type_defs import CreateLensShareInputRequestTypeDef
+    from mypy_boto3_wellarchitected.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_wellarchitected.type_defs import AssociateLensesInputRequestTypeDef
 
 
     session = Session()
 
     client: WellArchitectedClient = session.client("wellarchitected")
 
-    kwargs: CreateLensShareInputRequestTypeDef = {...}
-    result: CreateLensShareOutputTypeDef = client.create_lens_share(**kwargs)
+    kwargs: AssociateLensesInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_lenses(**kwargs)
     ```
 
 

@@ -241,6 +241,7 @@ def get_value() -> AccessLogSettingsTypeDef:
 - [CreateIntegrationResponseResponseTypeDef](./type_defs.md#createintegrationresponseresponsetypedef)
 - [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef)
 - [CreateVpcLinkResponseTypeDef](./type_defs.md#createvpclinkresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportApiResponseTypeDef](./type_defs.md#exportapiresponsetypedef)
 - [GetApiMappingResponseTypeDef](./type_defs.md#getapimappingresponsetypedef)
 - [GetApiMappingsResponseTypeDef](./type_defs.md#getapimappingsresponsetypedef)

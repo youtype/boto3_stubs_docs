@@ -195,6 +195,7 @@ def get_value() -> CreateDiscovererRequestRequestTypeDef:
 - [DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef)
 - [DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef)
 - [DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef)
 - [GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef)
 - [GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef)

@@ -285,10 +285,11 @@ def delete_access_point(
     *,
     AccountId: str,
     Name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -315,10 +316,11 @@ def delete_access_point_for_object_lambda(
     *,
     AccountId: str,
     Name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -345,10 +347,11 @@ def delete_access_point_policy(
     *,
     AccountId: str,
     Name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -375,10 +378,11 @@ def delete_access_point_policy_for_object_lambda(
     *,
     AccountId: str,
     Name: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -405,10 +409,11 @@ def delete_bucket(
     *,
     AccountId: str,
     Bucket: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -435,10 +440,11 @@ def delete_bucket_lifecycle_configuration(
     *,
     AccountId: str,
     Bucket: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -465,10 +471,11 @@ def delete_bucket_policy(
     *,
     AccountId: str,
     Bucket: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -495,10 +502,11 @@ def delete_bucket_tagging(
     *,
     AccountId: str,
     Bucket: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -589,10 +597,11 @@ def delete_public_access_block(
     self,
     *,
     AccountId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -618,10 +627,11 @@ def delete_storage_lens_configuration(
     *,
     ConfigId: str,
     AccountId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1518,11 +1528,12 @@ def put_access_point_configuration_for_object_lambda(
     AccountId: str,
     Name: str,
     Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1551,10 +1562,11 @@ def put_access_point_policy(
     AccountId: str,
     Name: str,
     Policy: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1583,10 +1595,11 @@ def put_access_point_policy_for_object_lambda(
     AccountId: str,
     Name: str,
     Policy: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1615,11 +1628,12 @@ def put_bucket_lifecycle_configuration(
     AccountId: str,
     Bucket: str,
     LifecycleConfiguration: LifecycleConfigurationTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1648,10 +1662,11 @@ def put_bucket_policy(
     Bucket: str,
     Policy: str,
     ConfirmRemoveSelfBucketAccess: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1680,11 +1695,12 @@ def put_bucket_tagging(
     AccountId: str,
     Bucket: str,
     Tagging: TaggingTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1781,11 +1797,12 @@ def put_public_access_block(
     *,
     PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
     AccountId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1814,12 +1831,13 @@ def put_storage_lens_configuration(
     AccountId: str,
     StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
     Tags: Sequence[StorageLensTagTypeDef] = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
 2. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

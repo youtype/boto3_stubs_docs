@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("rds")  # (1)
-    result = client.add_source_identifier_to_subscription()  # (2)
+    result = client.add_role_to_db_cluster()  # (2)
     ```
 
     1. client: [RDSClient](./client.md)
-    2. result: [:material-code-braces: AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_rds.client import RDSClient
-    from mypy_boto3_rds.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
-    from mypy_boto3_rds.type_defs import AddSourceIdentifierToSubscriptionMessageRequestTypeDef
+    from mypy_boto3_rds.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_rds.type_defs import AddRoleToDBClusterMessageRequestTypeDef
 
 
     session = Session()
 
     client: RDSClient = session.client("rds")
 
-    kwargs: AddSourceIdentifierToSubscriptionMessageRequestTypeDef = {...}
-    result: AddSourceIdentifierToSubscriptionResultTypeDef = client.add_source_identifier_to_subscription(**kwargs)
+    kwargs: AddRoleToDBClusterMessageRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_role_to_db_cluster(**kwargs)
     ```
 
 

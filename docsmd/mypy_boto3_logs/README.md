@@ -204,6 +204,7 @@ def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
 - [UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef)
 - [CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef)
 - [DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef)
 - [ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef)
 - [PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef)

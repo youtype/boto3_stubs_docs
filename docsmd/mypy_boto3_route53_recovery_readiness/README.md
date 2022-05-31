@@ -186,6 +186,7 @@ def get_value() -> CellOutputTypeDef:
 - [CreateCrossAccountAuthorizationResponseTypeDef](./type_defs.md#createcrossaccountauthorizationresponsetypedef)
 - [CreateReadinessCheckResponseTypeDef](./type_defs.md#createreadinesscheckresponsetypedef)
 - [CreateRecoveryGroupResponseTypeDef](./type_defs.md#createrecoverygroupresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef)
 - [GetReadinessCheckResponseTypeDef](./type_defs.md#getreadinesscheckresponsetypedef)
 - [GetRecoveryGroupResponseTypeDef](./type_defs.md#getrecoverygroupresponsetypedef)

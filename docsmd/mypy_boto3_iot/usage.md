@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("iot")  # (1)
-    result = client.associate_targets_with_job()  # (2)
+    result = client.accept_certificate_transfer()  # (2)
     ```
 
     1. client: [IoTClient](./client.md)
-    2. result: [:material-code-braces: AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_iot.client import IoTClient
-    from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseTypeDef
-    from mypy_boto3_iot.type_defs import AssociateTargetsWithJobRequestRequestTypeDef
+    from mypy_boto3_iot.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_iot.type_defs import AcceptCertificateTransferRequestRequestTypeDef
 
 
     session = Session()
 
     client: IoTClient = session.client("iot")
 
-    kwargs: AssociateTargetsWithJobRequestRequestTypeDef = {...}
-    result: AssociateTargetsWithJobResponseTypeDef = client.associate_targets_with_job(**kwargs)
+    kwargs: AcceptCertificateTransferRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.accept_certificate_transfer(**kwargs)
     ```
 
 

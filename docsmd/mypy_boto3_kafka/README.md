@@ -202,6 +202,7 @@ def get_value() -> BatchAssociateScramSecretRequestRequestTypeDef:
 - [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef)
 - [DeleteConfigurationResponseTypeDef](./type_defs.md#deleteconfigurationresponsetypedef)
 - [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef)
 - [ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

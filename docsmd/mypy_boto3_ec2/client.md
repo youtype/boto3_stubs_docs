@@ -568,10 +568,11 @@ def associate_dhcp_options(
     DhcpOptionsId: str,
     VpcId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -935,10 +936,11 @@ def attach_internet_gateway(
     InternetGatewayId: str,
     VpcId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1325,10 +1327,11 @@ def cancel_conversion_task(
     ConversionTaskId: str,
     DryRun: bool = ...,
     ReasonMessage: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1353,10 +1356,11 @@ def cancel_export_task(
     self,
     *,
     ExportTaskId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2727,13 +2731,14 @@ def create_network_acl_entry(
     IcmpTypeCode: IcmpTypeCodeTypeDef = ...,  # (2)
     Ipv6CidrBlock: str = ...,
     PortRange: PortRangeTypeDef = ...,  # (3)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: RuleActionType](./literals.md#ruleactiontype) 
 2. See [:material-code-braces: IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef) 
 3. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3429,11 +3434,12 @@ def create_tags(
     Resources: Sequence[Any],
     Tags: Optional[Sequence[TagTypeDef]],  # (1)
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4223,10 +4229,11 @@ def create_vpn_connection_route(
     *,
     DestinationCidrBlock: str,
     VpnConnectionId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4381,10 +4388,11 @@ def delete_customer_gateway(
     *,
     CustomerGatewayId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4410,10 +4418,11 @@ def delete_dhcp_options(
     *,
     DhcpOptionsId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4592,10 +4601,11 @@ def delete_internet_gateway(
     *,
     InternetGatewayId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4713,10 +4723,11 @@ def delete_key_pair(
     KeyName: str = ...,
     KeyPairId: str = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4927,10 +4938,11 @@ def delete_network_acl(
     *,
     NetworkAclId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4959,10 +4971,11 @@ def delete_network_acl_entry(
     NetworkAclId: str,
     RuleNumber: int,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5110,10 +5123,11 @@ def delete_network_interface(
     *,
     NetworkInterfaceId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5170,10 +5184,11 @@ def delete_placement_group(
     *,
     GroupName: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5262,10 +5277,11 @@ def delete_route(
     DestinationIpv6CidrBlock: str = ...,
     DestinationPrefixListId: str = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5291,10 +5307,11 @@ def delete_route_table(
     *,
     RouteTableId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5321,10 +5338,11 @@ def delete_security_group(
     GroupId: str = ...,
     GroupName: str = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5350,10 +5368,11 @@ def delete_snapshot(
     *,
     SnapshotId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5378,10 +5397,11 @@ def delete_spot_datafeed_subscription(
     self,
     *,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5407,10 +5427,11 @@ def delete_subnet(
     *,
     SubnetId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5467,11 +5488,12 @@ def delete_tags(
     Resources: Sequence[Any],
     DryRun: bool = ...,
     Tags: Optional[Sequence[TagTypeDef]] = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5892,10 +5914,11 @@ def delete_volume(
     *,
     VolumeId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5921,10 +5944,11 @@ def delete_vpc(
     *,
     VpcId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6070,10 +6094,11 @@ def delete_vpn_connection(
     *,
     VpnConnectionId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6100,10 +6125,11 @@ def delete_vpn_connection_route(
     *,
     DestinationCidrBlock: str,
     VpnConnectionId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6130,10 +6156,11 @@ def delete_vpn_gateway(
     *,
     VpnGatewayId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6254,10 +6281,11 @@ def deregister_image(
     *,
     ImageId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -10934,10 +10962,11 @@ def detach_internet_gateway(
     InternetGatewayId: str,
     VpcId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -10965,10 +10994,11 @@ def detach_network_interface(
     AttachmentId: str,
     DryRun: bool = ...,
     Force: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11028,10 +11058,11 @@ def detach_vpn_gateway(
     VpcId: str,
     VpnGatewayId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11276,10 +11307,11 @@ def disable_vgw_route_propagation(
     GatewayId: str,
     RouteTableId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11367,10 +11399,11 @@ def disassociate_address(
     AssociationId: str = ...,
     PublicIp: str = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11521,10 +11554,11 @@ def disassociate_route_table(
     *,
     AssociationId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11928,10 +11962,11 @@ def enable_vgw_route_propagation(
     GatewayId: str,
     RouteTableId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -11959,10 +11994,11 @@ def enable_volume_io(
     *,
     VolumeId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14026,10 +14062,11 @@ def modify_id_format(
     *,
     Resource: str,
     UseLongIds: bool,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14059,10 +14096,11 @@ def modify_identity_id_format(
     PrincipalArn: str,
     Resource: str,
     UseLongIds: bool,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14100,13 +14138,14 @@ def modify_image_attribute(
     DryRun: bool = ...,
     OrganizationArns: Sequence[str] = ...,
     OrganizationalUnitArns: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14147,7 +14186,7 @@ def modify_instance_attribute(
     UserData: BlobAttributeValueTypeDef = ...,  # (12)
     Value: str = ...,
     DisableApiStop: AttributeBooleanValueTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (14)
     ...
 ```
 
@@ -14164,6 +14203,7 @@ def modify_instance_attribute(
 11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 12. See [:material-code-braces: BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef) 
 13. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+14. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14651,13 +14691,14 @@ def modify_network_interface_attribute(
     DryRun: bool = ...,
     Groups: Sequence[str] = ...,
     SourceDestCheck: AttributeBooleanValueTypeDef = ...,  # (3)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
 2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14789,13 +14830,14 @@ def modify_snapshot_attribute(
     OperationType: OperationTypeType = ...,  # (3)
     UserIds: Sequence[str] = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: SnapshotAttributeNameType](./literals.md#snapshotattributenametype) 
 2. See [:material-code-braces: CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -14898,7 +14940,7 @@ def modify_subnet_attribute(
     EnableResourceNameDnsAAAARecordOnLaunch: AttributeBooleanValueTypeDef = ...,  # (1)
     EnableLniAtDeviceIndex: int = ...,
     DisableLniAtDeviceIndex: AttributeBooleanValueTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (9)
     ...
 ```
 
@@ -14910,6 +14952,7 @@ def modify_subnet_attribute(
 6. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 7. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 8. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+9. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -15192,11 +15235,12 @@ def modify_volume_attribute(
     VolumeId: str,
     AutoEnableIO: AttributeBooleanValueTypeDef = ...,  # (1)
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -15223,12 +15267,13 @@ def modify_vpc_attribute(
     VpcId: str,
     EnableDnsHostnames: AttributeBooleanValueTypeDef = ...,  # (1)
     EnableDnsSupport: AttributeBooleanValueTypeDef = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -15943,10 +15988,11 @@ def reboot_instances(
     *,
     InstanceIds: Sequence[str],
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16275,10 +16321,11 @@ def release_address(
     PublicIp: str = ...,
     NetworkBorderGroup: str = ...,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16439,13 +16486,14 @@ def replace_network_acl_entry(
     IcmpTypeCode: IcmpTypeCodeTypeDef = ...,  # (2)
     Ipv6CidrBlock: str = ...,
     PortRange: PortRangeTypeDef = ...,  # (3)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: RuleActionType](./literals.md#ruleactiontype) 
 2. See [:material-code-braces: IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef) 
 3. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16490,10 +16538,11 @@ def replace_route(
     NetworkInterfaceId: str = ...,
     VpcPeeringConnectionId: str = ...,
     CoreNetworkArn: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16591,12 +16640,13 @@ def report_instance_status(
     DryRun: bool = ...,
     EndTime: Union[datetime, str] = ...,
     StartTime: Union[datetime, str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype) 
 2. See [:material-code-brackets: ReportStatusTypeType](./literals.md#reportstatustypetype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16797,11 +16847,12 @@ def reset_image_attribute(
     Attribute: ResetImageAttributeNameType,  # (1)
     ImageId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ResetImageAttributeNameType](./literals.md#resetimageattributenametype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16829,11 +16880,12 @@ def reset_instance_attribute(
     Attribute: InstanceAttributeNameType,  # (1)
     InstanceId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: InstanceAttributeNameType](./literals.md#instanceattributenametype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16861,10 +16913,11 @@ def reset_network_interface_attribute(
     NetworkInterfaceId: str,
     DryRun: bool = ...,
     SourceDestCheck: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -16891,11 +16944,12 @@ def reset_snapshot_attribute(
     Attribute: SnapshotAttributeNameType,  # (1)
     SnapshotId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: SnapshotAttributeNameType](./literals.md#snapshotattributenametype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -17427,10 +17481,11 @@ def send_diagnostic_interrupt(
     *,
     InstanceId: str,
     DryRun: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -17715,10 +17770,11 @@ def unassign_private_ip_addresses(
     NetworkInterfaceId: str,
     PrivateIpAddresses: Sequence[str] = ...,
     Ipv4Prefixes: Sequence[str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

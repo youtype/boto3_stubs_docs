@@ -121,6 +121,7 @@ def get_value() -> AudioArtifactsConfigurationTypeDef:
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef)
 - [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)

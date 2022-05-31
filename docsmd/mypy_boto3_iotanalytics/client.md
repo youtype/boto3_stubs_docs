@@ -328,10 +328,11 @@ def delete_channel(
     self,
     *,
     channelName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -356,10 +357,11 @@ def delete_dataset(
     self,
     *,
     datasetName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -385,10 +387,11 @@ def delete_dataset_content(
     *,
     datasetName: str,
     versionId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -413,10 +416,11 @@ def delete_datastore(
     self,
     *,
     datastoreName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -441,10 +445,11 @@ def delete_pipeline(
     self,
     *,
     pipelineName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -834,11 +839,12 @@ def put_logging_options(
     self,
     *,
     loggingOptions: LoggingOptionsTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1024,12 +1030,13 @@ def update_channel(
     channelName: str,
     channelStorage: ChannelStorageTypeDef = ...,  # (1)
     retentionPeriod: RetentionPeriodTypeDef = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef) 
 2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1060,7 +1067,7 @@ def update_dataset(
     retentionPeriod: RetentionPeriodTypeDef = ...,  # (4)
     versioningConfiguration: VersioningConfigurationTypeDef = ...,  # (5)
     lateDataRules: Sequence[LateDataRuleTypeDef] = ...,  # (6)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (7)
     ...
 ```
 
@@ -1070,6 +1077,7 @@ def update_dataset(
 4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 5. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
 6. See [:material-code-braces: LateDataRuleTypeDef](./type_defs.md#latedataruletypedef) 
+7. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1098,13 +1106,14 @@ def update_datastore(
     retentionPeriod: RetentionPeriodTypeDef = ...,  # (1)
     datastoreStorage: DatastoreStorageTypeDef = ...,  # (2)
     fileFormatConfiguration: FileFormatConfigurationTypeDef = ...,  # (3)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 2. See [:material-code-braces: DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef) 
 3. See [:material-code-braces: FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1130,11 +1139,12 @@ def update_pipeline(
     *,
     pipelineName: str,
     pipelineActivities: Sequence[PipelineActivityTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -254,6 +254,7 @@ def get_value() -> ActivityTaskCancelRequestedEventAttributesTypeDef:
 - [WorkflowExecutionConfigurationTypeDef](./type_defs.md#workflowexecutionconfigurationtypedef)
 - [WorkflowTypeConfigurationTypeDef](./type_defs.md#workflowtypeconfigurationtypedef)
 - [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef)
 - [RunTypeDef](./type_defs.md#runtypedef)
 - [WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef)

@@ -197,6 +197,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [UpgradeDomainRequestRequestTypeDef](./type_defs.md#upgradedomainrequestrequesttypedef)
 - [UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)
 - [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef)
 - [ListVersionsResponseTypeDef](./type_defs.md#listversionsresponsetypedef)
 - [PurchaseReservedInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedinstanceofferingresponsetypedef)

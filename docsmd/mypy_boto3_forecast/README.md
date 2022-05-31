@@ -235,6 +235,7 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef)
 - [DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef)
 - [DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ExplainabilitySummaryTypeDef](./type_defs.md#explainabilitysummarytypedef)
 - [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)

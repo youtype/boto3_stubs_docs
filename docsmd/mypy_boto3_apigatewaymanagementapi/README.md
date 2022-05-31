@@ -100,9 +100,10 @@ def get_value() -> DeleteConnectionRequestRequestTypeDef:
 ```
 
 - [DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef)
 - [IdentityTypeDef](./type_defs.md#identitytypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [PostToConnectionRequestRequestTypeDef](./type_defs.md#posttoconnectionrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef)
 

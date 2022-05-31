@@ -456,6 +456,23 @@ class CreateLedgerResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: LedgerStateType](./literals.md#ledgerstatetype) 
 2. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_qldb.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportJournalToS3ResponseTypeDef
 
 ```python title="Usage Example"

@@ -309,6 +309,7 @@ def get_value() -> AliasICPRecordalTypeDef:
 - [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
 - [ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef)
 - [ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetCloudFrontOriginAccessIdentityConfigResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresulttypedef)
 - [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef)
 - [CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef)

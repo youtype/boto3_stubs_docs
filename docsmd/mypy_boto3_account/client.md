@@ -82,11 +82,12 @@ def delete_alternate_contact(
     *,
     AlternateContactType: AlternateContactTypeType,  # (1)
     AccountId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -168,11 +169,12 @@ def put_alternate_contact(
     PhoneNumber: str,
     Title: str,
     AccountId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

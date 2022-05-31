@@ -202,6 +202,7 @@ def get_value() -> AliasListEntryTypeDef:
 - [CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef)
 - [CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef)
 - [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef)
 - [GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef)
 - [GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef)

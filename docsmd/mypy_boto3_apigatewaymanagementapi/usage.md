@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("apigatewaymanagementapi")  # (1)
-    result = client.get_connection()  # (2)
+    result = client.delete_connection()  # (2)
     ```
 
     1. client: [ApiGatewayManagementApiClient](./client.md)
-    2. result: [:material-code-braces: GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
-    from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef
-    from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionRequestRequestTypeDef
+    from mypy_boto3_apigatewaymanagementapi.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef
 
 
     session = Session()
 
     client: ApiGatewayManagementApiClient = session.client("apigatewaymanagementapi")
 
-    kwargs: GetConnectionRequestRequestTypeDef = {...}
-    result: GetConnectionResponseTypeDef = client.get_connection(**kwargs)
+    kwargs: DeleteConnectionRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.delete_connection(**kwargs)
     ```
 
 

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("connect")  # (1)
-    result = client.associate_instance_storage_config()  # (2)
+    result = client.associate_approved_origin()  # (2)
     ```
 
     1. client: [ConnectClient](./client.md)
-    2. result: [:material-code-braces: AssociateInstanceStorageConfigResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_connect.client import ConnectClient
-    from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigResponseTypeDef
-    from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigRequestRequestTypeDef
+    from mypy_boto3_connect.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTypeDef
 
 
     session = Session()
 
     client: ConnectClient = session.client("connect")
 
-    kwargs: AssociateInstanceStorageConfigRequestRequestTypeDef = {...}
-    result: AssociateInstanceStorageConfigResponseTypeDef = client.associate_instance_storage_config(**kwargs)
+    kwargs: AssociateApprovedOriginRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_approved_origin(**kwargs)
     ```
 
 

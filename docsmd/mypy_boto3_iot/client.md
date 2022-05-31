@@ -92,10 +92,11 @@ def accept_certificate_transfer(
     *,
     certificateId: str,
     setAsActive: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -218,10 +219,11 @@ def attach_policy(
     *,
     policyName: str,
     target: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -249,10 +251,11 @@ def attach_principal_policy(
     *,
     policyName: str,
     principal: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -411,10 +414,11 @@ def cancel_certificate_transfer(
     self,
     *,
     certificateId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -503,10 +507,11 @@ def cancel_job_execution(
     force: bool = ...,
     expectedVersion: int = ...,
     statusDetails: Mapping[str, str] = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1542,11 +1547,12 @@ def create_topic_rule(
     ruleName: str,
     topicRulePayload: TopicRulePayloadTypeDef,  # (1)
     tags: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1747,10 +1753,11 @@ def delete_certificate(
     *,
     certificateId: str,
     forceDelete: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1889,10 +1896,11 @@ def delete_fleet_metric(
     *,
     metricName: str,
     expectedVersion: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1919,10 +1927,11 @@ def delete_job(
     jobId: str,
     force: bool = ...,
     namespaceId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1951,10 +1960,11 @@ def delete_job_execution(
     executionNumber: int,
     force: bool = ...,
     namespaceId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1981,10 +1991,11 @@ def delete_job_template(
     self,
     *,
     jobTemplateId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2067,10 +2078,11 @@ def delete_policy(
     self,
     *,
     policyName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2096,10 +2108,11 @@ def delete_policy_version(
     *,
     policyName: str,
     policyVersionId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2400,10 +2413,11 @@ def delete_topic_rule(
     self,
     *,
     ruleName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2457,11 +2471,12 @@ def delete_v2_logging_level(
     *,
     targetType: LogTargetTypeType,  # (1)
     targetName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3447,10 +3462,11 @@ def detach_policy(
     *,
     policyName: str,
     target: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3477,10 +3493,11 @@ def detach_principal_policy(
     *,
     policyName: str,
     principal: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3567,10 +3584,11 @@ def disable_topic_rule(
     self,
     *,
     ruleName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3595,10 +3613,11 @@ def enable_topic_rule(
     self,
     *,
     ruleName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6068,10 +6087,11 @@ def reject_certificate_transfer(
     *,
     certificateId: str,
     rejectReason: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6159,11 +6179,12 @@ def replace_topic_rule(
     *,
     ruleName: str,
     topicRulePayload: TopicRulePayloadTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6253,10 +6274,11 @@ def set_default_policy_version(
     *,
     policyName: str,
     policyVersionId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6282,11 +6304,12 @@ def set_logging_options(
     self,
     *,
     loggingOptionsPayload: LoggingOptionsPayloadTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6312,12 +6335,13 @@ def set_v2_logging_level(
     *,
     logTarget: LogTargetTypeDef,  # (1)
     logLevel: LogLevelType,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
 2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6345,11 +6369,12 @@ def set_v2_logging_options(
     roleArn: str = ...,
     defaultLogLevel: LogLevelType = ...,  # (1)
     disableAllLogs: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6847,13 +6872,14 @@ def update_ca_certificate(
     newAutoRegistrationStatus: AutoRegistrationStatusType = ...,  # (2)
     registrationConfig: RegistrationConfigTypeDef = ...,  # (3)
     removeAutoRegistration: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
 2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
 3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -6879,11 +6905,12 @@ def update_certificate(
     *,
     certificateId: str,
     newStatus: CertificateStatusType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -7079,12 +7106,13 @@ def update_fleet_metric(
     queryVersion: str = ...,
     unit: FleetMetricUnitType = ...,  # (2)
     expectedVersion: int = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
 2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -7148,7 +7176,7 @@ def update_job(
     timeoutConfig: TimeoutConfigTypeDef = ...,  # (4)
     namespaceId: str = ...,
     jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (5)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (6)
     ...
 ```
 
@@ -7157,6 +7185,7 @@ def update_job(
 3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
 4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+6. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

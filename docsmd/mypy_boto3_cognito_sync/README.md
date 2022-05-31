@@ -128,6 +128,7 @@ def get_value() -> BulkPublishRequestRequestTypeDef:
 - [SubscribeToDatasetRequestRequestTypeDef](./type_defs.md#subscribetodatasetrequestrequesttypedef)
 - [UnsubscribeFromDatasetRequestRequestTypeDef](./type_defs.md#unsubscribefromdatasetrequestrequesttypedef)
 - [BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef)
 - [GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef)
 - [RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef)

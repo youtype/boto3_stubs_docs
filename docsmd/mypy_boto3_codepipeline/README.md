@@ -218,6 +218,7 @@ def get_value() -> AWSSessionCredentialsTypeDef:
 - [WebhookFilterRuleTypeDef](./type_defs.md#webhookfilterruletypedef)
 - [AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef)
 - [AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef)
 - [PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef)
 - [RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef)

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("iam")  # (1)
-    result = client.create_access_key()  # (2)
+    result = client.add_client_id_to_open_id_connect_provider()  # (2)
     ```
 
     1. client: [IAMClient](./client.md)
-    2. result: [:material-code-braces: CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_iam.client import IAMClient
-    from mypy_boto3_iam.type_defs import CreateAccessKeyResponseTypeDef
-    from mypy_boto3_iam.type_defs import CreateAccessKeyRequestRequestTypeDef
+    from mypy_boto3_iam.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_iam.type_defs import AddClientIDToOpenIDConnectProviderRequestRequestTypeDef
 
 
     session = Session()
 
     client: IAMClient = session.client("iam")
 
-    kwargs: CreateAccessKeyRequestRequestTypeDef = {...}
-    result: CreateAccessKeyResponseTypeDef = client.create_access_key(**kwargs)
+    kwargs: AddClientIDToOpenIDConnectProviderRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_client_id_to_open_id_connect_provider(**kwargs)
     ```
 
 

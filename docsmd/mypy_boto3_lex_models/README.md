@@ -223,6 +223,7 @@ def get_value() -> BotChannelAssociationTypeDef:
 - [FulfillmentActivityTypeDef](./type_defs.md#fulfillmentactivitytypedef)
 - [ConversationLogsRequestTypeDef](./type_defs.md#conversationlogsrequesttypedef)
 - [ConversationLogsResponseTypeDef](./type_defs.md#conversationlogsresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef)
 - [GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef)
 - [GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef)

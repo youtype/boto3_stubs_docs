@@ -23,6 +23,30 @@ class DeleteConnectionRequestRequestTypeDef(TypedDict):
     ConnectionId: str,
 ```
 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigatewaymanagementapi.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## GetConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -57,30 +81,6 @@ class IdentityTypeDef(TypedDict):
     UserAgent: str,
 ```
 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_apigatewaymanagementapi.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## PostToConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -99,6 +99,23 @@ class PostToConnectionRequestRequestTypeDef(TypedDict):
     ConnectionId: str,
 ```
 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apigatewaymanagementapi.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectionResponseTypeDef
 
 ```python title="Usage Example"

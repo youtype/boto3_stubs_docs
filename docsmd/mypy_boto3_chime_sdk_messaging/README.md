@@ -176,6 +176,7 @@ def get_value() -> AppInstanceUserMembershipSummaryTypeDef:
 - [CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef)
 - [CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef)
 - [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef)
 - [UpdateChannelFlowResponseTypeDef](./type_defs.md#updatechannelflowresponsetypedef)
 - [UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef)

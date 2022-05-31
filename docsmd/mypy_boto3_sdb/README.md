@@ -137,6 +137,7 @@ def get_value() -> AttributeTypeDef:
 - [ItemTypeDef](./type_defs.md#itemtypedef)
 - [DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef)
 - [DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef)
 - [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)
 - [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)

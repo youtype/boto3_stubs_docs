@@ -390,10 +390,11 @@ def delete_bucket(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -421,10 +422,11 @@ def delete_bucket_analytics_configuration(
     Bucket: str,
     Id: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -451,10 +453,11 @@ def delete_bucket_cors(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -481,10 +484,11 @@ def delete_bucket_encryption(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -510,10 +514,11 @@ def delete_bucket_intelligent_tiering_configuration(
     *,
     Bucket: str,
     Id: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -542,10 +547,11 @@ def delete_bucket_inventory_configuration(
     Bucket: str,
     Id: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -572,10 +578,11 @@ def delete_bucket_lifecycle(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -603,10 +610,11 @@ def delete_bucket_metrics_configuration(
     Bucket: str,
     Id: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -633,10 +641,11 @@ def delete_bucket_ownership_controls(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -663,10 +672,11 @@ def delete_bucket_policy(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -692,10 +702,11 @@ def delete_bucket_replication(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -721,10 +732,11 @@ def delete_bucket_tagging(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -750,10 +762,11 @@ def delete_bucket_website(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -890,10 +903,11 @@ def delete_public_access_block(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2046,10 +2060,11 @@ def head_bucket(
     *,
     Bucket: str,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2456,12 +2471,13 @@ def put_bucket_accelerate_configuration(
     AccelerateConfiguration: AccelerateConfigurationTypeDef,  # (1)
     ExpectedBucketOwner: str = ...,
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2496,13 +2512,14 @@ def put_bucket_acl(
     GrantWrite: str = ...,
     GrantWriteACP: str = ...,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
 2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
 3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2531,11 +2548,12 @@ def put_bucket_analytics_configuration(
     Id: str,
     AnalyticsConfiguration: AnalyticsConfigurationTypeDef,  # (1)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2565,12 +2583,13 @@ def put_bucket_cors(
     CORSConfiguration: CORSConfigurationTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2601,12 +2620,13 @@ def put_bucket_encryption(
     ContentMD5: str = ...,
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2634,11 +2654,12 @@ def put_bucket_intelligent_tiering_configuration(
     Bucket: str,
     Id: str,
     IntelligentTieringConfiguration: IntelligentTieringConfigurationTypeDef,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2669,11 +2690,12 @@ def put_bucket_inventory_configuration(
     Id: str,
     InventoryConfiguration: InventoryConfigurationTypeDef,  # (1)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2703,12 +2725,13 @@ def put_bucket_lifecycle(
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
     LifecycleConfiguration: LifecycleConfigurationTypeDef = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 2. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2737,12 +2760,13 @@ def put_bucket_lifecycle_configuration(
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
     LifecycleConfiguration: BucketLifecycleConfigurationTypeDef = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 2. See [:material-code-braces: BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2771,12 +2795,13 @@ def put_bucket_logging(
     BucketLoggingStatus: BucketLoggingStatusTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2806,11 +2831,12 @@ def put_bucket_metrics_configuration(
     Id: str,
     MetricsConfiguration: MetricsConfigurationTypeDef,  # (1)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2842,12 +2868,13 @@ def put_bucket_notification(
     NotificationConfiguration: NotificationConfigurationDeprecatedTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2876,11 +2903,12 @@ def put_bucket_notification_configuration(
     NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
     ExpectedBucketOwner: str = ...,
     SkipDestinationValidation: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2909,11 +2937,12 @@ def put_bucket_ownership_controls(
     OwnershipControls: OwnershipControlsTypeDef,  # (1)
     ContentMD5: str = ...,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2943,11 +2972,12 @@ def put_bucket_policy(
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
     ConfirmRemoveSelfBucketAccess: bool = ...,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2977,12 +3007,13 @@ def put_bucket_replication(
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     Token: str = ...,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3011,12 +3042,13 @@ def put_bucket_request_payment(
     RequestPaymentConfiguration: RequestPaymentConfigurationTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3045,12 +3077,13 @@ def put_bucket_tagging(
     Tagging: TaggingTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3080,12 +3113,13 @@ def put_bucket_versioning(
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     MFA: str = ...,
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3115,12 +3149,13 @@ def put_bucket_website(
     WebsiteConfiguration: WebsiteConfigurationTypeDef,  # (1)
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3431,12 +3466,13 @@ def put_public_access_block(
     ContentMD5: str = ...,
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
 2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3764,7 +3800,7 @@ def write_get_object_response(
     TagCount: int = ...,
     VersionId: str = ...,
     BucketKeyEnabled: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (7)
     ...
 ```
 
@@ -3774,6 +3810,7 @@ def write_get_object_response(
 4. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
 5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
 6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+7. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

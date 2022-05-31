@@ -426,6 +426,7 @@ def get_value() -> AgentInfoTypeDef:
 - [CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef)
 - [DeleteVocabularyResponseTypeDef](./type_defs.md#deletevocabularyresponsetypedef)
 - [DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetContactAttributesResponseTypeDef](./type_defs.md#getcontactattributesresponsetypedef)
 - [ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef)
 - [ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef)

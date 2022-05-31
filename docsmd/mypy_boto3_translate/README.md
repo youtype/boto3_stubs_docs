@@ -156,6 +156,7 @@ def get_value() -> TermTypeDef:
 - [UpdateParallelDataRequestRequestTypeDef](./type_defs.md#updateparalleldatarequestrequesttypedef)
 - [CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef)
 - [DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef)
 - [StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef)
 - [UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef)

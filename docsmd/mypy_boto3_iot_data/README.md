@@ -130,6 +130,7 @@ def get_value() -> DeleteThingShadowRequestRequestTypeDef:
 - [PublishRequestRequestTypeDef](./type_defs.md#publishrequestrequesttypedef)
 - [UpdateThingShadowRequestRequestTypeDef](./type_defs.md#updatethingshadowrequestrequesttypedef)
 - [DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef)
 - [GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef)
 - [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef)

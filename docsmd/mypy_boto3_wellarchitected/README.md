@@ -182,6 +182,7 @@ def get_value() -> ChoiceAnswerSummaryTypeDef:
 - [CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef)
 - [CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef)
 - [CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportLensOutputTypeDef](./type_defs.md#exportlensoutputtypedef)
 - [ImportLensOutputTypeDef](./type_defs.md#importlensoutputtypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)

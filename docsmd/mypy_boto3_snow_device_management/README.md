@@ -161,6 +161,7 @@ def get_value() -> CancelTaskInputRequestTypeDef:
 - [CreateTaskOutputTypeDef](./type_defs.md#createtaskoutputtypedef)
 - [DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef)
 - [DescribeTaskOutputTypeDef](./type_defs.md#describetaskoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
 - [CreateTaskInputRequestTypeDef](./type_defs.md#createtaskinputrequesttypedef)
 - [DescribeDeviceOutputTypeDef](./type_defs.md#describedeviceoutputtypedef)

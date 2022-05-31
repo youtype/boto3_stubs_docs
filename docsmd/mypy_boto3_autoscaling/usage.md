@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("autoscaling")  # (1)
-    result = client.batch_delete_scheduled_action()  # (2)
+    result = client.attach_instances()  # (2)
     ```
 
     1. client: [AutoScalingClient](./client.md)
-    2. result: [:material-code-braces: BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_autoscaling.client import AutoScalingClient
-    from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
-    from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionTypeRequestTypeDef
+    from mypy_boto3_autoscaling.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_autoscaling.type_defs import AttachInstancesQueryRequestTypeDef
 
 
     session = Session()
 
     client: AutoScalingClient = session.client("autoscaling")
 
-    kwargs: BatchDeleteScheduledActionTypeRequestTypeDef = {...}
-    result: BatchDeleteScheduledActionAnswerTypeDef = client.batch_delete_scheduled_action(**kwargs)
+    kwargs: AttachInstancesQueryRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.attach_instances(**kwargs)
     ```
 
 

@@ -127,6 +127,7 @@ def get_value() -> TagTypeDef:
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef)
 - [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef)

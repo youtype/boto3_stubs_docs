@@ -26,24 +26,6 @@ class EdgeMetricTypeDef(TypedDict):
     Timestamp: NotRequired[Union[datetime, str]],
 ```
 
-## GetDeviceRegistrationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestRequestTypeDef
-
-def get_value() -> GetDeviceRegistrationRequestRequestTypeDef:
-    return {
-        "DeviceName": ...,
-        "DeviceFleetName": ...,
-    }
-```
-
-```python title="Definition"
-class GetDeviceRegistrationRequestRequestTypeDef(TypedDict):
-    DeviceName: str,
-    DeviceFleetName: str,
-```
-
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -68,6 +50,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## GetDeviceRegistrationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestRequestTypeDef
+
+def get_value() -> GetDeviceRegistrationRequestRequestTypeDef:
+    return {
+        "DeviceName": ...,
+        "DeviceFleetName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeviceRegistrationRequestRequestTypeDef(TypedDict):
+    DeviceName: str,
+    DeviceFleetName: str,
+```
+
 ## ModelTypeDef
 
 ```python title="Usage Example"
@@ -89,6 +89,23 @@ class ModelTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceRegistrationResultTypeDef
 
 ```python title="Usage Example"

@@ -214,6 +214,7 @@ def get_value() -> AbortDocumentVersionUploadRequestRequestTypeDef:
 - [UpdateDocumentRequestRequestTypeDef](./type_defs.md#updatedocumentrequestrequesttypedef)
 - [UpdateDocumentVersionRequestRequestTypeDef](./type_defs.md#updatedocumentversionrequestrequesttypedef)
 - [UpdateFolderRequestRequestTypeDef](./type_defs.md#updatefolderrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - [AddResourcePermissionsRequestRequestTypeDef](./type_defs.md#addresourcepermissionsrequestrequesttypedef)
 - [AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef)

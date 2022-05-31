@@ -244,6 +244,7 @@ def get_value() -> AddPermissionRequestQueueAddPermissionTypeDef:
 - [ChangeMessageVisibilityBatchRequestRequestTypeDef](./type_defs.md#changemessagevisibilitybatchrequestrequesttypedef)
 - [ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef)
 - [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef)
 - [GetQueueUrlResultTypeDef](./type_defs.md#getqueueurlresulttypedef)
 - [ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef)

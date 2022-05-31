@@ -89,10 +89,11 @@ def delete_alarms(
     self,
     *,
     AlarmNames: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -421,10 +422,11 @@ def disable_alarm_actions(
     self,
     *,
     AlarmNames: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -478,10 +480,11 @@ def enable_alarm_actions(
     self,
     *,
     AlarmNames: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -935,11 +938,12 @@ def put_composite_alarm(
     InsufficientDataActions: Sequence[str] = ...,
     OKActions: Sequence[str] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1052,7 +1056,7 @@ def put_metric_alarm(
     Metrics: Sequence[MetricDataQueryTypeDef] = ...,  # (5)
     Tags: Sequence[TagTypeDef] = ...,  # (6)
     ThresholdMetricId: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (7)
     ...
 ```
 
@@ -1062,6 +1066,7 @@ def put_metric_alarm(
 4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
 5. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1089,11 +1094,12 @@ def put_metric_data(
     *,
     Namespace: str,
     MetricData: Sequence[MetricDatumTypeDef],  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1166,11 +1172,12 @@ def set_alarm_state(
     StateValue: StateValueType,  # (1)
     StateReason: str,
     StateReasonData: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

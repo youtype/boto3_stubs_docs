@@ -153,6 +153,7 @@ def get_value() -> CognitoIdentityProviderTypeDef:
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
 - [CreateIdentityPoolInputRequestTypeDef](./type_defs.md#createidentitypoolinputrequesttypedef)
 - [IdentityPoolRequestTypeDef](./type_defs.md#identitypoolrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef)
 - [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef)
 - [GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef)

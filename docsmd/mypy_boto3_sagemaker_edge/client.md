@@ -131,12 +131,13 @@ def send_heartbeat(
     DeviceFleetName: str,
     AgentMetrics: Sequence[EdgeMetricTypeDef] = ...,  # (1)
     Models: Sequence[ModelTypeDef] = ...,  # (2)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef) 
 2. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

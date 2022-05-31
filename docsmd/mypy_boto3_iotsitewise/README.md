@@ -324,6 +324,7 @@ def get_value() -> AggregatesTypeDef:
 - [DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef)
 - [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef)
 - [DescribeTimeSeriesResponseTypeDef](./type_defs.md#describetimeseriesresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef)

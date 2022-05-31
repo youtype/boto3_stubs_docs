@@ -163,10 +163,11 @@ def delete_scheduled_query(
     self,
     *,
     ScheduledQueryArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -239,10 +240,11 @@ def execute_scheduled_query(
     ScheduledQueryArn: str,
     InvocationTime: Union[datetime, str],
     ClientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -474,11 +476,12 @@ def update_scheduled_query(
     *,
     ScheduledQueryArn: str,
     State: ScheduledQueryStateType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ScheduledQueryStateType](./literals.md#scheduledquerystatetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

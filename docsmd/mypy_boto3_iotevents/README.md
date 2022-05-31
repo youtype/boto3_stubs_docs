@@ -159,6 +159,7 @@ def get_value() -> AcknowledgeFlowTypeDef:
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [CreateAlarmModelResponseTypeDef](./type_defs.md#createalarmmodelresponsetypedef)
 - [DescribeDetectorModelAnalysisResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListAlarmModelVersionsResponseTypeDef](./type_defs.md#listalarmmodelversionsresponsetypedef)
 - [ListAlarmModelsResponseTypeDef](./type_defs.md#listalarmmodelsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

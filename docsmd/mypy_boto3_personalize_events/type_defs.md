@@ -7,6 +7,30 @@
     Auto-generated documentation for [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
     type annotations stubs module [mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_events.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## EventTypeDef
 
 ```python title="Usage Example"
@@ -65,6 +89,23 @@ class UserTypeDef(TypedDict):
     properties: NotRequired[str],
 ```
 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_events.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutEventsRequestRequestTypeDef
 
 ```python title="Usage Example"

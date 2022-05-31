@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("cognito-idp")  # (1)
-    result = client.admin_create_user()  # (2)
+    result = client.admin_add_user_to_group()  # (2)
     ```
 
     1. client: [CognitoIdentityProviderClient](./client.md)
-    2. result: [:material-code-braces: AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
-    from mypy_boto3_cognito_idp.type_defs import AdminCreateUserResponseTypeDef
-    from mypy_boto3_cognito_idp.type_defs import AdminCreateUserRequestRequestTypeDef
+    from mypy_boto3_cognito_idp.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_cognito_idp.type_defs import AdminAddUserToGroupRequestRequestTypeDef
 
 
     session = Session()
 
     client: CognitoIdentityProviderClient = session.client("cognito-idp")
 
-    kwargs: AdminCreateUserRequestRequestTypeDef = {...}
-    result: AdminCreateUserResponseTypeDef = client.admin_create_user(**kwargs)
+    kwargs: AdminAddUserToGroupRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.admin_add_user_to_group(**kwargs)
     ```
 
 

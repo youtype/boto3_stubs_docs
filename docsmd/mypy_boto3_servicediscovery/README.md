@@ -181,6 +181,7 @@ def get_value() -> TagTypeDef:
 - [CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef)
 - [DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef)
 - [DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef)

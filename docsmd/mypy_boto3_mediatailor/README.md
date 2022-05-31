@@ -205,6 +205,7 @@ def get_value() -> SecretsManagerAccessTokenConfigurationTypeDef:
 - [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
 - [ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef)
 - [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

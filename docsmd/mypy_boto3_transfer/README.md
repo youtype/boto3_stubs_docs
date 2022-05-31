@@ -223,6 +223,7 @@ def get_value() -> HomeDirectoryMapEntryTypeDef:
 - [CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef)
 - [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef)
 - [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef)
 - [ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef)
 - [TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef)

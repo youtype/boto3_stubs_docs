@@ -151,6 +151,7 @@ def get_value() -> CancelRotateSecretRequestRequestTypeDef:
 - [CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef)
 - [DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef)
 - [DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef)
 - [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef)
 - [GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef)

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("sns")  # (1)
-    result = client.check_if_phone_number_is_opted_out()  # (2)
+    result = client.add_permission()  # (2)
     ```
 
     1. client: [SNSClient](./client.md)
-    2. result: [:material-code-braces: CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_sns.client import SNSClient
-    from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutResponseTypeDef
-    from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
+    from mypy_boto3_sns.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef
 
 
     session = Session()
 
     client: SNSClient = session.client("sns")
 
-    kwargs: CheckIfPhoneNumberIsOptedOutInputRequestTypeDef = {...}
-    result: CheckIfPhoneNumberIsOptedOutResponseTypeDef = client.check_if_phone_number_is_opted_out(**kwargs)
+    kwargs: AddPermissionInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_permission(**kwargs)
     ```
 
 

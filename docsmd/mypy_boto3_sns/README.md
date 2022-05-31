@@ -264,6 +264,7 @@ def get_value() -> AddPermissionInputRequestTypeDef:
 - [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef)
 - [CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef)
 - [CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef)
 - [GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef)
 - [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef)

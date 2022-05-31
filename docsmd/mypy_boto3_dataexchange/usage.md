@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("dataexchange")  # (1)
-    result = client.create_data_set()  # (2)
+    result = client.cancel_job()  # (2)
     ```
 
     1. client: [DataExchangeClient](./client.md)
-    2. result: [:material-code-braces: CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_dataexchange.client import DataExchangeClient
-    from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseTypeDef
-    from mypy_boto3_dataexchange.type_defs import CreateDataSetRequestRequestTypeDef
+    from mypy_boto3_dataexchange.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_dataexchange.type_defs import CancelJobRequestRequestTypeDef
 
 
     session = Session()
 
     client: DataExchangeClient = session.client("dataexchange")
 
-    kwargs: CreateDataSetRequestRequestTypeDef = {...}
-    result: CreateDataSetResponseTypeDef = client.create_data_set(**kwargs)
+    kwargs: CancelJobRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.cancel_job(**kwargs)
     ```
 
 

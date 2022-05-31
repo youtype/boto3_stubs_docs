@@ -506,6 +506,7 @@ def get_value() -> AbortIncompleteMultipartUploadTypeDef:
 - [CreateMultipartUploadOutputTypeDef](./type_defs.md#createmultipartuploadoutputtypedef)
 - [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef)
 - [DeleteObjectTaggingOutputTypeDef](./type_defs.md#deleteobjecttaggingoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ErrorDocumentResponseMetadataTypeDef](./type_defs.md#errordocumentresponsemetadatatypedef)
 - [GetBucketAccelerateConfigurationOutputTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputtypedef)
 - [GetBucketLocationOutputTypeDef](./type_defs.md#getbucketlocationoutputtypedef)

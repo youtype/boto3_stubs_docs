@@ -294,6 +294,7 @@ def get_value() -> AccountLimitTypeDef:
 - [AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef)
 - [AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef)
 - [ConcurrencyResponseMetadataTypeDef](./type_defs.md#concurrencyresponsemetadatatypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef)
 - [GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef)
 - [GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef)

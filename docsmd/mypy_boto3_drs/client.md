@@ -72,6 +72,37 @@ def can_paginate(
 ```
 
 
+### create\_extended\_source\_server
+
+Create an extended source server in the target Account based on the source
+server in staging account.
+
+Type annotations and code completion for `#!python boto3.client("drs").create_extended_source_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.create_extended_source_server)
+
+```python title="Method definition"
+def create_extended_source_server(
+    self,
+    *,
+    sourceServerArn: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateExtendedSourceServerResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateExtendedSourceServerResponseTypeDef](./type_defs.md#createextendedsourceserverresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateExtendedSourceServerRequestRequestTypeDef = {  # (1)
+    "sourceServerArn": ...,
+}
+
+parent.create_extended_source_server(**kwargs)
+```
+
+1. See [:material-code-braces: CreateExtendedSourceServerRequestRequestTypeDef](./type_defs.md#createextendedsourceserverrequestrequesttypedef) 
+
 ### create\_replication\_configuration\_template
 
 Creates a new ReplicationConfigurationTemplate.
@@ -169,10 +200,11 @@ def delete_recovery_instance(
     self,
     *,
     recoveryInstanceID: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -284,7 +316,7 @@ Type annotations and code completion for `#!python boto3.client("drs").describe_
 def describe_jobs(
     self,
     *,
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    filters: DescribeJobsRequestFiltersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> DescribeJobsResponseTypeDef:  # (2)
@@ -316,7 +348,7 @@ Type annotations and code completion for `#!python boto3.client("drs").describe_
 def describe_recovery_instances(
     self,
     *,
-    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
+    filters: DescribeRecoveryInstancesRequestFiltersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> DescribeRecoveryInstancesResponseTypeDef:  # (2)
@@ -383,9 +415,9 @@ Type annotations and code completion for `#!python boto3.client("drs").describe_
 def describe_replication_configuration_templates(
     self,
     *,
-    replicationConfigurationTemplateIDs: Sequence[str],
     maxResults: int = ...,
     nextToken: str = ...,
+    replicationConfigurationTemplateIDs: Sequence[str] = ...,
 ) -> DescribeReplicationConfigurationTemplatesResponseTypeDef:  # (1)
     ...
 ```
@@ -395,7 +427,7 @@ def describe_replication_configuration_templates(
 
 ```python title="Usage example with kwargs"
 kwargs: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef = {  # (1)
-    "replicationConfigurationTemplateIDs": ...,
+    "maxResults": ...,
 }
 
 parent.describe_replication_configuration_templates(**kwargs)
@@ -414,7 +446,7 @@ Type annotations and code completion for `#!python boto3.client("drs").describe_
 def describe_source_servers(
     self,
     *,
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    filters: DescribeSourceServersRequestFiltersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> DescribeSourceServersResponseTypeDef:  # (2)
@@ -447,10 +479,11 @@ def disconnect_recovery_instance(
     self,
     *,
     recoveryInstanceID: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -613,6 +646,68 @@ def initialize_service(
 ```
 
 
+### list\_extensible\_source\_servers
+
+Returns a list of source servers on a staging account that are extensible, which
+means that: a.
+
+Type annotations and code completion for `#!python boto3.client("drs").list_extensible_source_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.list_extensible_source_servers)
+
+```python title="Method definition"
+def list_extensible_source_servers(
+    self,
+    *,
+    stagingAccountID: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListExtensibleSourceServersResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListExtensibleSourceServersResponseTypeDef](./type_defs.md#listextensiblesourceserversresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListExtensibleSourceServersRequestRequestTypeDef = {  # (1)
+    "stagingAccountID": ...,
+}
+
+parent.list_extensible_source_servers(**kwargs)
+```
+
+1. See [:material-code-braces: ListExtensibleSourceServersRequestRequestTypeDef](./type_defs.md#listextensiblesourceserversrequestrequesttypedef) 
+
+### list\_staging\_accounts
+
+Returns an array of staging accounts for existing extended source servers.
+
+Type annotations and code completion for `#!python boto3.client("drs").list_staging_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.list_staging_accounts)
+
+```python title="Method definition"
+def list_staging_accounts(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStagingAccountsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListStagingAccountsResponseTypeDef](./type_defs.md#liststagingaccountsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStagingAccountsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_staging_accounts(**kwargs)
+```
+
+1. See [:material-code-braces: ListStagingAccountsRequestRequestTypeDef](./type_defs.md#liststagingaccountsrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 List all tags for your Elastic Disaster Recovery resources.
@@ -748,10 +843,11 @@ def stop_failback(
     self,
     *,
     recoveryInstanceID: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -778,10 +874,11 @@ def tag_resource(
     *,
     resourceArn: str,
     tags: Mapping[str, str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -840,10 +937,11 @@ def untag_resource(
     *,
     resourceArn: str,
     tagKeys: Sequence[str],
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -873,10 +971,11 @@ def update_failback_replication_configuration(
     bandwidthThrottling: int = ...,
     name: str = ...,
     usePrivateIP: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1035,6 +1134,8 @@ Type annotations and code completion for `#!python boto3.client("drs").get_pagin
 - `client.get_paginator("describe_recovery_snapshots")` -> [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
 - `client.get_paginator("describe_replication_configuration_templates")` -> [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - `client.get_paginator("describe_source_servers")` -> [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- `client.get_paginator("list_extensible_source_servers")` -> [ListExtensibleSourceServersPaginator](./paginators.md#listextensiblesourceserverspaginator)
+- `client.get_paginator("list_staging_accounts")` -> [ListStagingAccountsPaginator](./paginators.md#liststagingaccountspaginator)
 
 
 

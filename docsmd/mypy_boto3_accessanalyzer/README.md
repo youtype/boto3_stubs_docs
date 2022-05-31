@@ -209,6 +209,7 @@ def get_value() -> AccessPreviewStatusReasonTypeDef:
 - [CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef)
 - [CreateAccessPreviewResponseTypeDef](./type_defs.md#createaccesspreviewresponsetypedef)
 - [CreateAnalyzerResponseTypeDef](./type_defs.md#createanalyzerresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAnalyzedResourceResponseTypeDef](./type_defs.md#getanalyzedresourceresponsetypedef)
 - [ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)

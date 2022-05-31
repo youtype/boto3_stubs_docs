@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("logs")  # (1)
-    result = client.create_export_task()  # (2)
+    result = client.associate_kms_key()  # (2)
     ```
 
     1. client: [CloudWatchLogsClient](./client.md)
-    2. result: [:material-code-braces: CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_logs.client import CloudWatchLogsClient
-    from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
-    from mypy_boto3_logs.type_defs import CreateExportTaskRequestRequestTypeDef
+    from mypy_boto3_logs.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef
 
 
     session = Session()
 
     client: CloudWatchLogsClient = session.client("logs")
 
-    kwargs: CreateExportTaskRequestRequestTypeDef = {...}
-    result: CreateExportTaskResponseTypeDef = client.create_export_task(**kwargs)
+    kwargs: AssociateKmsKeyRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_kms_key(**kwargs)
     ```
 
 

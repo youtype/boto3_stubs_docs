@@ -66,10 +66,11 @@ def associate_admin_account(
     self,
     *,
     AdminAccount: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -141,10 +142,11 @@ def delete_apps_list(
     self,
     *,
     ListId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -169,10 +171,11 @@ Type annotations and code completion for `#!python boto3.client("fms").delete_no
 ```python title="Method definition"
 def delete_notification_channel(
     self,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 ### delete\_policy
 
@@ -187,10 +190,11 @@ def delete_policy(
     *,
     PolicyId: str,
     DeleteAllPolicyResources: bool = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -215,10 +219,11 @@ def delete_protocols_list(
     self,
     *,
     ListId: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -242,10 +247,11 @@ Type annotations and code completion for `#!python boto3.client("fms").disassoci
 ```python title="Method definition"
 def disassociate_admin_account(
     self,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 ### disassociate\_third\_party\_firewall
 
@@ -816,10 +822,11 @@ def put_notification_channel(
     *,
     SnsTopicArn: str,
     SnsRoleName: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("codecommit")  # (1)
-    result = client.batch_associate_approval_rule_template_with_repositories()  # (2)
+    result = client.associate_approval_rule_template_with_repository()  # (2)
     ```
 
     1. client: [CodeCommitClient](./client.md)
-    2. result: [:material-code-braces: BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_codecommit.client import CodeCommitClient
-    from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
-    from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesInputRequestTypeDef
+    from mypy_boto3_codecommit.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_codecommit.type_defs import AssociateApprovalRuleTemplateWithRepositoryInputRequestTypeDef
 
 
     session = Session()
 
     client: CodeCommitClient = session.client("codecommit")
 
-    kwargs: BatchAssociateApprovalRuleTemplateWithRepositoriesInputRequestTypeDef = {...}
-    result: BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef = client.batch_associate_approval_rule_template_with_repositories(**kwargs)
+    kwargs: AssociateApprovalRuleTemplateWithRepositoryInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_approval_rule_template_with_repository(**kwargs)
     ```
 
 

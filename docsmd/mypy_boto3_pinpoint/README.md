@@ -335,6 +335,7 @@ def get_value() -> ADMChannelRequestTypeDef:
 - [DeleteApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponsetypedef)
 - [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef)
 - [DeleteBaiduChannelResponseTypeDef](./type_defs.md#deletebaiduchannelresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAdmChannelResponseTypeDef](./type_defs.md#getadmchannelresponsetypedef)
 - [GetApnsChannelResponseTypeDef](./type_defs.md#getapnschannelresponsetypedef)
 - [GetApnsSandboxChannelResponseTypeDef](./type_defs.md#getapnssandboxchannelresponsetypedef)

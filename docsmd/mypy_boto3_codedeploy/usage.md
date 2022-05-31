@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("codedeploy")  # (1)
-    result = client.batch_get_application_revisions()  # (2)
+    result = client.add_tags_to_on_premises_instances()  # (2)
     ```
 
     1. client: [CodeDeployClient](./client.md)
-    2. result: [:material-code-braces: BatchGetApplicationRevisionsOutputTypeDef](./type_defs.md#batchgetapplicationrevisionsoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_codedeploy.client import CodeDeployClient
-    from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTypeDef
-    from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsInputRequestTypeDef
+    from mypy_boto3_codedeploy.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputRequestTypeDef
 
 
     session = Session()
 
     client: CodeDeployClient = session.client("codedeploy")
 
-    kwargs: BatchGetApplicationRevisionsInputRequestTypeDef = {...}
-    result: BatchGetApplicationRevisionsOutputTypeDef = client.batch_get_application_revisions(**kwargs)
+    kwargs: AddTagsToOnPremisesInstancesInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_tags_to_on_premises_instances(**kwargs)
     ```
 
 

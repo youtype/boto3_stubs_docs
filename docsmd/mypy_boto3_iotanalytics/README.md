@@ -203,6 +203,7 @@ def get_value() -> AddAttributesActivityTypeDef:
 - [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef)
 - [CreateDatasetContentResponseTypeDef](./type_defs.md#createdatasetcontentresponsetypedef)
 - [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef)
 - [SampleChannelDataResponseTypeDef](./type_defs.md#samplechanneldataresponsetypedef)
 - [StartPipelineReprocessingResponseTypeDef](./type_defs.md#startpipelinereprocessingresponsetypedef)

@@ -392,6 +392,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef)
 - [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef)
 - [DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef)
 - [StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef)
 - [StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef)

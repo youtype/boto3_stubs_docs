@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("cloudwatch")  # (1)
-    result = client.delete_insight_rules()  # (2)
+    result = client.delete_alarms()  # (2)
     ```
 
     1. client: [CloudWatchClient](./client.md)
-    2. result: [:material-code-braces: DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_cloudwatch.client import CloudWatchClient
-    from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
-    from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesInputRequestTypeDef
+    from mypy_boto3_cloudwatch.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_cloudwatch.type_defs import DeleteAlarmsInputRequestTypeDef
 
 
     session = Session()
 
     client: CloudWatchClient = session.client("cloudwatch")
 
-    kwargs: DeleteInsightRulesInputRequestTypeDef = {...}
-    result: DeleteInsightRulesOutputTypeDef = client.delete_insight_rules(**kwargs)
+    kwargs: DeleteAlarmsInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.delete_alarms(**kwargs)
     ```
 
 

@@ -91,18 +91,23 @@ def get_value() -> PersonalizeEventsServiceName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_personalize_events.type_defs import EventTypeDef
+from mypy_boto3_personalize_events.type_defs import ResponseMetadataTypeDef
 
-def get_value() -> EventTypeDef:
+def get_value() -> ResponseMetadataTypeDef:
     return {
-        "eventType": ...,
-        "sentAt": ...,
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
     }
 ```
 
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef)
 - [PutItemsRequestRequestTypeDef](./type_defs.md#putitemsrequestrequesttypedef)
 - [PutUsersRequestRequestTypeDef](./type_defs.md#putusersrequestrequesttypedef)

@@ -665,6 +665,23 @@ class ComponentPropertyTypeDef(TypedDict):
 3. See [:material-code-braces: ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef) 
 4. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 5. See [:material-code-braces: ComponentConditionPropertyTypeDef](./type_defs.md#componentconditionpropertytypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExchangeCodeForTokenResponseTypeDef
 
 ```python title="Usage Example"

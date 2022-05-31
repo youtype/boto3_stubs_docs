@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("glacier")  # (1)
-    result = client.complete_multipart_upload()  # (2)
+    result = client.abort_multipart_upload()  # (2)
     ```
 
     1. client: [GlacierClient](./client.md)
-    2. result: [:material-code-braces: ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_glacier.client import GlacierClient
-    from mypy_boto3_glacier.type_defs import ArchiveCreationOutputTypeDef
-    from mypy_boto3_glacier.type_defs import CompleteMultipartUploadInputRequestTypeDef
+    from mypy_boto3_glacier.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 
 
     session = Session()
 
     client: GlacierClient = session.client("glacier")
 
-    kwargs: CompleteMultipartUploadInputRequestTypeDef = {...}
-    result: ArchiveCreationOutputTypeDef = client.complete_multipart_upload(**kwargs)
+    kwargs: AbortMultipartUploadInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.abort_multipart_upload(**kwargs)
     ```
 
 

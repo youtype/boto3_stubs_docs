@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("elasticbeanstalk")  # (1)
-    result = client.apply_environment_managed_action()  # (2)
+    result = client.abort_environment_update()  # (2)
     ```
 
     1. client: [ElasticBeanstalkClient](./client.md)
-    2. result: [:material-code-braces: ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
-    from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultTypeDef
-    from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionRequestRequestTypeDef
+    from mypy_boto3_elasticbeanstalk.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageRequestTypeDef
 
 
     session = Session()
 
     client: ElasticBeanstalkClient = session.client("elasticbeanstalk")
 
-    kwargs: ApplyEnvironmentManagedActionRequestRequestTypeDef = {...}
-    result: ApplyEnvironmentManagedActionResultTypeDef = client.apply_environment_managed_action(**kwargs)
+    kwargs: AbortEnvironmentUpdateMessageRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.abort_environment_update(**kwargs)
     ```
 
 

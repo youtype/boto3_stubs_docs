@@ -291,6 +291,7 @@ def get_value() -> TagTypeDef:
 - [PurchaseReservedCacheNodesOfferingMessageRequestTypeDef](./type_defs.md#purchasereservedcachenodesofferingmessagerequesttypedef)
 - [AllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#allowednodetypemodificationsmessagetypedef)
 - [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef)
 - [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)

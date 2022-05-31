@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("macie")  # (1)
-    result = client.associate_s3_resources()  # (2)
+    result = client.associate_member_account()  # (2)
     ```
 
     1. client: [MacieClient](./client.md)
-    2. result: [:material-code-braces: AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_macie.client import MacieClient
-    from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultTypeDef
-    from mypy_boto3_macie.type_defs import AssociateS3ResourcesRequestRequestTypeDef
+    from mypy_boto3_macie.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestRequestTypeDef
 
 
     session = Session()
 
     client: MacieClient = session.client("macie")
 
-    kwargs: AssociateS3ResourcesRequestRequestTypeDef = {...}
-    result: AssociateS3ResourcesResultTypeDef = client.associate_s3_resources(**kwargs)
+    kwargs: AssociateMemberAccountRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_member_account(**kwargs)
     ```
 
 

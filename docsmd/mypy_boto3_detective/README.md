@@ -130,6 +130,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef)
 - [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef)
 - [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)

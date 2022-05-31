@@ -182,6 +182,7 @@ def get_value() -> AddProfilePermissionRequestRequestTypeDef:
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef)
 - [RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef)

@@ -274,6 +274,7 @@ def get_value() -> AlarmHistoryItemTypeDef:
 - [DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef)
 - [DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)
 - [DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef)
 - [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef)
 - [GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef)

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("sqs")  # (1)
-    result = client.change_message_visibility_batch()  # (2)
+    result = client.add_permission()  # (2)
     ```
 
     1. client: [SQSClient](./client.md)
-    2. result: [:material-code-braces: ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_sqs.client import SQSClient
-    from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
-    from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestRequestTypeDef
+    from mypy_boto3_sqs.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_sqs.type_defs import AddPermissionRequestRequestTypeDef
 
 
     session = Session()
 
     client: SQSClient = session.client("sqs")
 
-    kwargs: ChangeMessageVisibilityBatchRequestRequestTypeDef = {...}
-    result: ChangeMessageVisibilityBatchResultTypeDef = client.change_message_visibility_batch(**kwargs)
+    kwargs: AddPermissionRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_permission(**kwargs)
     ```
 
 

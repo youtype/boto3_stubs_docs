@@ -172,10 +172,11 @@ def cancel_update_stack(
     *,
     StackName: str,
     ClientRequestToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -489,10 +490,11 @@ def delete_stack(
     RetainResources: Sequence[str] = ...,
     RoleARN: str = ...,
     ClientRequestToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1989,10 +1991,11 @@ def set_stack_policy(
     StackName: str,
     StackPolicyBody: str = ...,
     StackPolicyURL: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2087,11 +2090,12 @@ def signal_resource(
     LogicalResourceId: str,
     UniqueId: str,
     Status: ResourceSignalStatusType,  # (1)
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ResourceSignalStatusType](./literals.md#resourcesignalstatustype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

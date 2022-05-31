@@ -203,6 +203,22 @@ EC2InstanceStateType = Literal[
     "TERMINATED",
 ]
 ```
+## ExtensionStatusType
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import ExtensionStatusType
+
+def get_value() -> ExtensionStatusType:
+    return "EXTENDED"
+```
+
+```python title="Definition"
+ExtensionStatusType = Literal[
+    "EXTENDED",
+    "EXTENSION_ERROR",
+    "NOT_EXTENDED",
+]
+```
 ## FailbackReplicationErrorType
 
 ```python title="Usage Example"
@@ -258,6 +274,7 @@ InitiatedByType = Literal[
     "FAILBACK",
     "START_DRILL",
     "START_RECOVERY",
+    "TARGET_ACCOUNT",
     "TERMINATE_RECOVERY_INSTANCES",
 ]
 ```
@@ -313,11 +330,12 @@ JobStatusType = Literal[
 from mypy_boto3_drs.literals import JobTypeType
 
 def get_value() -> JobTypeType:
-    return "LAUNCH"
+    return "CREATE_CONVERTED_SNAPSHOT"
 ```
 
 ```python title="Definition"
 JobTypeType = Literal[
+    "CREATE_CONVERTED_SNAPSHOT",
     "LAUNCH",
     "TERMINATE",
 ]
@@ -385,6 +403,34 @@ LaunchStatusType = Literal[
     "LAUNCHED",
     "PENDING",
     "TERMINATED",
+]
+```
+## ListExtensibleSourceServersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import ListExtensibleSourceServersPaginatorName
+
+def get_value() -> ListExtensibleSourceServersPaginatorName:
+    return "list_extensible_source_servers"
+```
+
+```python title="Definition"
+ListExtensibleSourceServersPaginatorName = Literal[
+    "list_extensible_source_servers",
+]
+```
+## ListStagingAccountsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import ListStagingAccountsPaginatorName
+
+def get_value() -> ListStagingAccountsPaginatorName:
+    return "list_staging_accounts"
+```
+
+```python title="Definition"
+ListStagingAccountsPaginatorName = Literal[
+    "list_staging_accounts",
 ]
 ```
 ## PITPolicyRuleUnitsType
@@ -933,6 +979,8 @@ PaginatorName = Literal[
     "describe_recovery_snapshots",
     "describe_replication_configuration_templates",
     "describe_source_servers",
+    "list_extensible_source_servers",
+    "list_staging_accounts",
 ]
 ```
 ## RegionName

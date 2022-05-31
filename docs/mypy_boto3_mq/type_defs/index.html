@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.16">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1c3799f8.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -24253,6 +24253,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#emptyresponsemetadatatypedef" class="md-nav__link">
+    EmptyResponseMetadataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#listbrokersresponsetypedef" class="md-nav__link">
     ListBrokersResponseTypeDef
   </a>
@@ -36777,6 +36784,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#emptyresponsemetadatatypedef" class="md-nav__link">
+    EmptyResponseMetadataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#listbrokersresponsetypedef" class="md-nav__link">
     ListBrokersResponseTypeDef
   </a>
@@ -37735,94 +37749,108 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-mq/">
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="listbrokersresponsetypedef">ListBrokersResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListBrokersResponseTypeDef</span>
+<h2 id="emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">EmptyResponseMetadataTypeDef</span>
 <a id="__codelineno-100-2" name="__codelineno-100-2" href="#__codelineno-100-2"></a>
-<a id="__codelineno-100-3" name="__codelineno-100-3" href="#__codelineno-100-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListBrokersResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-100-3" name="__codelineno-100-3" href="#__codelineno-100-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EmptyResponseMetadataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-100-4" name="__codelineno-100-4" href="#__codelineno-100-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-100-5" name="__codelineno-100-5" href="#__codelineno-100-5"></a>        <span class="s2">&quot;BrokerSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-100-6" name="__codelineno-100-6" href="#__codelineno-100-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-100-7" name="__codelineno-100-7" href="#__codelineno-100-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-100-8" name="__codelineno-100-8" href="#__codelineno-100-8"></a>    <span class="p">}</span>
+<a id="__codelineno-100-5" name="__codelineno-100-5" href="#__codelineno-100-5"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-100-6" name="__codelineno-100-6" href="#__codelineno-100-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a><span class="k">class</span> <span class="nc">ListBrokersResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-101-2" name="__codelineno-101-2" href="#__codelineno-101-2"></a>    <span class="n">BrokerSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-101-3" name="__codelineno-101-3" href="#__codelineno-101-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-101-4" name="__codelineno-101-4" href="#__codelineno-101-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a><span class="k">class</span> <span class="nc">EmptyResponseMetadataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-101-2" name="__codelineno-101-2" href="#__codelineno-101-2"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+</ol>
+<h2 id="listbrokersresponsetypedef">ListBrokersResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListBrokersResponseTypeDef</span>
+<a id="__codelineno-102-2" name="__codelineno-102-2" href="#__codelineno-102-2"></a>
+<a id="__codelineno-102-3" name="__codelineno-102-3" href="#__codelineno-102-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListBrokersResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-102-4" name="__codelineno-102-4" href="#__codelineno-102-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-102-5" name="__codelineno-102-5" href="#__codelineno-102-5"></a>        <span class="s2">&quot;BrokerSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-102-6" name="__codelineno-102-6" href="#__codelineno-102-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-102-7" name="__codelineno-102-7" href="#__codelineno-102-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-102-8" name="__codelineno-102-8" href="#__codelineno-102-8"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a><span class="k">class</span> <span class="nc">ListBrokersResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-103-2" name="__codelineno-103-2" href="#__codelineno-103-2"></a>    <span class="n">BrokerSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-103-3" name="__codelineno-103-3" href="#__codelineno-103-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-103-4" name="__codelineno-103-4" href="#__codelineno-103-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#brokersummarytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> BrokerSummaryTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="listconfigurationrevisionsresponsetypedef">ListConfigurationRevisionsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListConfigurationRevisionsResponseTypeDef</span>
-<a id="__codelineno-102-2" name="__codelineno-102-2" href="#__codelineno-102-2"></a>
-<a id="__codelineno-102-3" name="__codelineno-102-3" href="#__codelineno-102-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListConfigurationRevisionsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-102-4" name="__codelineno-102-4" href="#__codelineno-102-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-102-5" name="__codelineno-102-5" href="#__codelineno-102-5"></a>        <span class="s2">&quot;ConfigurationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-102-6" name="__codelineno-102-6" href="#__codelineno-102-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-102-7" name="__codelineno-102-7" href="#__codelineno-102-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-102-8" name="__codelineno-102-8" href="#__codelineno-102-8"></a>        <span class="s2">&quot;Revisions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-102-9" name="__codelineno-102-9" href="#__codelineno-102-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-102-10" name="__codelineno-102-10" href="#__codelineno-102-10"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListConfigurationRevisionsResponseTypeDef</span>
+<a id="__codelineno-104-2" name="__codelineno-104-2" href="#__codelineno-104-2"></a>
+<a id="__codelineno-104-3" name="__codelineno-104-3" href="#__codelineno-104-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListConfigurationRevisionsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-104-4" name="__codelineno-104-4" href="#__codelineno-104-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-104-5" name="__codelineno-104-5" href="#__codelineno-104-5"></a>        <span class="s2">&quot;ConfigurationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-6" name="__codelineno-104-6" href="#__codelineno-104-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-7" name="__codelineno-104-7" href="#__codelineno-104-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-8" name="__codelineno-104-8" href="#__codelineno-104-8"></a>        <span class="s2">&quot;Revisions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-9" name="__codelineno-104-9" href="#__codelineno-104-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-10" name="__codelineno-104-10" href="#__codelineno-104-10"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a><span class="k">class</span> <span class="nc">ListConfigurationRevisionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-103-2" name="__codelineno-103-2" href="#__codelineno-103-2"></a>    <span class="n">ConfigurationId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-103-3" name="__codelineno-103-3" href="#__codelineno-103-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-103-4" name="__codelineno-103-4" href="#__codelineno-103-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-103-5" name="__codelineno-103-5" href="#__codelineno-103-5"></a>    <span class="n">Revisions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ConfigurationRevisionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-103-6" name="__codelineno-103-6" href="#__codelineno-103-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a><span class="k">class</span> <span class="nc">ListConfigurationRevisionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-105-2" name="__codelineno-105-2" href="#__codelineno-105-2"></a>    <span class="n">ConfigurationId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-105-3" name="__codelineno-105-3" href="#__codelineno-105-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-105-4" name="__codelineno-105-4" href="#__codelineno-105-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-105-5" name="__codelineno-105-5" href="#__codelineno-105-5"></a>    <span class="n">Revisions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ConfigurationRevisionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-105-6" name="__codelineno-105-6" href="#__codelineno-105-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#configurationrevisiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ConfigurationRevisionTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="listtagsresponsetypedef">ListTagsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListTagsResponseTypeDef</span>
-<a id="__codelineno-104-2" name="__codelineno-104-2" href="#__codelineno-104-2"></a>
-<a id="__codelineno-104-3" name="__codelineno-104-3" href="#__codelineno-104-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListTagsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-104-4" name="__codelineno-104-4" href="#__codelineno-104-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-104-5" name="__codelineno-104-5" href="#__codelineno-104-5"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-104-6" name="__codelineno-104-6" href="#__codelineno-104-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-104-7" name="__codelineno-104-7" href="#__codelineno-104-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListTagsResponseTypeDef</span>
+<a id="__codelineno-106-2" name="__codelineno-106-2" href="#__codelineno-106-2"></a>
+<a id="__codelineno-106-3" name="__codelineno-106-3" href="#__codelineno-106-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListTagsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-106-4" name="__codelineno-106-4" href="#__codelineno-106-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-106-5" name="__codelineno-106-5" href="#__codelineno-106-5"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-106-6" name="__codelineno-106-6" href="#__codelineno-106-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-106-7" name="__codelineno-106-7" href="#__codelineno-106-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a><span class="k">class</span> <span class="nc">ListTagsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-105-2" name="__codelineno-105-2" href="#__codelineno-105-2"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-105-3" name="__codelineno-105-3" href="#__codelineno-105-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a><span class="k">class</span> <span class="nc">ListTagsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updatebrokerresponsetypedef">UpdateBrokerResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">UpdateBrokerResponseTypeDef</span>
-<a id="__codelineno-106-2" name="__codelineno-106-2" href="#__codelineno-106-2"></a>
-<a id="__codelineno-106-3" name="__codelineno-106-3" href="#__codelineno-106-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateBrokerResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-106-4" name="__codelineno-106-4" href="#__codelineno-106-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-106-5" name="__codelineno-106-5" href="#__codelineno-106-5"></a>        <span class="s2">&quot;AuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-6" name="__codelineno-106-6" href="#__codelineno-106-6"></a>        <span class="s2">&quot;AutoMinorVersionUpgrade&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-7" name="__codelineno-106-7" href="#__codelineno-106-7"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-8" name="__codelineno-106-8" href="#__codelineno-106-8"></a>        <span class="s2">&quot;Configuration&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-9" name="__codelineno-106-9" href="#__codelineno-106-9"></a>        <span class="s2">&quot;EngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-10" name="__codelineno-106-10" href="#__codelineno-106-10"></a>        <span class="s2">&quot;HostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-11" name="__codelineno-106-11" href="#__codelineno-106-11"></a>        <span class="s2">&quot;LdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-12" name="__codelineno-106-12" href="#__codelineno-106-12"></a>        <span class="s2">&quot;Logs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-13" name="__codelineno-106-13" href="#__codelineno-106-13"></a>        <span class="s2">&quot;MaintenanceWindowStartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-14" name="__codelineno-106-14" href="#__codelineno-106-14"></a>        <span class="s2">&quot;SecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-15" name="__codelineno-106-15" href="#__codelineno-106-15"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-106-16" name="__codelineno-106-16" href="#__codelineno-106-16"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">UpdateBrokerResponseTypeDef</span>
+<a id="__codelineno-108-2" name="__codelineno-108-2" href="#__codelineno-108-2"></a>
+<a id="__codelineno-108-3" name="__codelineno-108-3" href="#__codelineno-108-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateBrokerResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-108-4" name="__codelineno-108-4" href="#__codelineno-108-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-108-5" name="__codelineno-108-5" href="#__codelineno-108-5"></a>        <span class="s2">&quot;AuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-6" name="__codelineno-108-6" href="#__codelineno-108-6"></a>        <span class="s2">&quot;AutoMinorVersionUpgrade&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-7" name="__codelineno-108-7" href="#__codelineno-108-7"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-8" name="__codelineno-108-8" href="#__codelineno-108-8"></a>        <span class="s2">&quot;Configuration&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-9" name="__codelineno-108-9" href="#__codelineno-108-9"></a>        <span class="s2">&quot;EngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-10" name="__codelineno-108-10" href="#__codelineno-108-10"></a>        <span class="s2">&quot;HostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-11" name="__codelineno-108-11" href="#__codelineno-108-11"></a>        <span class="s2">&quot;LdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-12" name="__codelineno-108-12" href="#__codelineno-108-12"></a>        <span class="s2">&quot;Logs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-13" name="__codelineno-108-13" href="#__codelineno-108-13"></a>        <span class="s2">&quot;MaintenanceWindowStartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-14" name="__codelineno-108-14" href="#__codelineno-108-14"></a>        <span class="s2">&quot;SecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-15" name="__codelineno-108-15" href="#__codelineno-108-15"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-108-16" name="__codelineno-108-16" href="#__codelineno-108-16"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a><span class="k">class</span> <span class="nc">UpdateBrokerResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>    <span class="n">AuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>    <span class="n">AutoMinorVersionUpgrade</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-107-4" name="__codelineno-107-4" href="#__codelineno-107-4"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-107-5" name="__codelineno-107-5" href="#__codelineno-107-5"></a>    <span class="n">Configuration</span><span class="p">:</span> <span class="n">ConfigurationIdTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-107-6" name="__codelineno-107-6" href="#__codelineno-107-6"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-107-7" name="__codelineno-107-7" href="#__codelineno-107-7"></a>    <span class="n">HostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-107-8" name="__codelineno-107-8" href="#__codelineno-107-8"></a>    <span class="n">LdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-107-9" name="__codelineno-107-9" href="#__codelineno-107-9"></a>    <span class="n">Logs</span><span class="p">:</span> <span class="n">LogsTypeDef</span><span class="p">,</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-107-10" name="__codelineno-107-10" href="#__codelineno-107-10"></a>    <span class="n">MaintenanceWindowStartTime</span><span class="p">:</span> <span class="n">WeeklyStartTimeTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-107-11" name="__codelineno-107-11" href="#__codelineno-107-11"></a>    <span class="n">SecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-107-12" name="__codelineno-107-12" href="#__codelineno-107-12"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (6)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a><span class="k">class</span> <span class="nc">UpdateBrokerResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-109-2" name="__codelineno-109-2" href="#__codelineno-109-2"></a>    <span class="n">AuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-109-3" name="__codelineno-109-3" href="#__codelineno-109-3"></a>    <span class="n">AutoMinorVersionUpgrade</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+<a id="__codelineno-109-4" name="__codelineno-109-4" href="#__codelineno-109-4"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-109-5" name="__codelineno-109-5" href="#__codelineno-109-5"></a>    <span class="n">Configuration</span><span class="p">:</span> <span class="n">ConfigurationIdTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-109-6" name="__codelineno-109-6" href="#__codelineno-109-6"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-109-7" name="__codelineno-109-7" href="#__codelineno-109-7"></a>    <span class="n">HostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-109-8" name="__codelineno-109-8" href="#__codelineno-109-8"></a>    <span class="n">LdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-109-9" name="__codelineno-109-9" href="#__codelineno-109-9"></a>    <span class="n">Logs</span><span class="p">:</span> <span class="n">LogsTypeDef</span><span class="p">,</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-109-10" name="__codelineno-109-10" href="#__codelineno-109-10"></a>    <span class="n">MaintenanceWindowStartTime</span><span class="p">:</span> <span class="n">WeeklyStartTimeTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-109-11" name="__codelineno-109-11" href="#__codelineno-109-11"></a>    <span class="n">SecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-109-12" name="__codelineno-109-12" href="#__codelineno-109-12"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (6)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#authenticationstrategytype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> AuthenticationStrategyType</a> </li>
@@ -37833,108 +37861,108 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-mq/">
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="listusersresponsetypedef">ListUsersResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListUsersResponseTypeDef</span>
-<a id="__codelineno-108-2" name="__codelineno-108-2" href="#__codelineno-108-2"></a>
-<a id="__codelineno-108-3" name="__codelineno-108-3" href="#__codelineno-108-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListUsersResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-108-4" name="__codelineno-108-4" href="#__codelineno-108-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-108-5" name="__codelineno-108-5" href="#__codelineno-108-5"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-108-6" name="__codelineno-108-6" href="#__codelineno-108-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-108-7" name="__codelineno-108-7" href="#__codelineno-108-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-108-8" name="__codelineno-108-8" href="#__codelineno-108-8"></a>        <span class="s2">&quot;Users&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-108-9" name="__codelineno-108-9" href="#__codelineno-108-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-108-10" name="__codelineno-108-10" href="#__codelineno-108-10"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListUsersResponseTypeDef</span>
+<a id="__codelineno-110-2" name="__codelineno-110-2" href="#__codelineno-110-2"></a>
+<a id="__codelineno-110-3" name="__codelineno-110-3" href="#__codelineno-110-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListUsersResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-110-4" name="__codelineno-110-4" href="#__codelineno-110-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-110-5" name="__codelineno-110-5" href="#__codelineno-110-5"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-110-6" name="__codelineno-110-6" href="#__codelineno-110-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-110-7" name="__codelineno-110-7" href="#__codelineno-110-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-110-8" name="__codelineno-110-8" href="#__codelineno-110-8"></a>        <span class="s2">&quot;Users&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-110-9" name="__codelineno-110-9" href="#__codelineno-110-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-110-10" name="__codelineno-110-10" href="#__codelineno-110-10"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a><span class="k">class</span> <span class="nc">ListUsersResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-109-2" name="__codelineno-109-2" href="#__codelineno-109-2"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-109-3" name="__codelineno-109-3" href="#__codelineno-109-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-109-4" name="__codelineno-109-4" href="#__codelineno-109-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-109-5" name="__codelineno-109-5" href="#__codelineno-109-5"></a>    <span class="n">Users</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">UserSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-109-6" name="__codelineno-109-6" href="#__codelineno-109-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a><span class="k">class</span> <span class="nc">ListUsersResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-111-2" name="__codelineno-111-2" href="#__codelineno-111-2"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-111-3" name="__codelineno-111-3" href="#__codelineno-111-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-111-4" name="__codelineno-111-4" href="#__codelineno-111-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-111-5" name="__codelineno-111-5" href="#__codelineno-111-5"></a>    <span class="n">Users</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">UserSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-111-6" name="__codelineno-111-6" href="#__codelineno-111-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#usersummarytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UserSummaryTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="describeuserresponsetypedef">DescribeUserResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeUserResponseTypeDef</span>
-<a id="__codelineno-110-2" name="__codelineno-110-2" href="#__codelineno-110-2"></a>
-<a id="__codelineno-110-3" name="__codelineno-110-3" href="#__codelineno-110-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeUserResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-110-4" name="__codelineno-110-4" href="#__codelineno-110-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-110-5" name="__codelineno-110-5" href="#__codelineno-110-5"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-6" name="__codelineno-110-6" href="#__codelineno-110-6"></a>        <span class="s2">&quot;ConsoleAccess&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-7" name="__codelineno-110-7" href="#__codelineno-110-7"></a>        <span class="s2">&quot;Groups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-8" name="__codelineno-110-8" href="#__codelineno-110-8"></a>        <span class="s2">&quot;Pending&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-9" name="__codelineno-110-9" href="#__codelineno-110-9"></a>        <span class="s2">&quot;Username&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-10" name="__codelineno-110-10" href="#__codelineno-110-10"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-110-11" name="__codelineno-110-11" href="#__codelineno-110-11"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeUserResponseTypeDef</span>
+<a id="__codelineno-112-2" name="__codelineno-112-2" href="#__codelineno-112-2"></a>
+<a id="__codelineno-112-3" name="__codelineno-112-3" href="#__codelineno-112-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeUserResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-112-4" name="__codelineno-112-4" href="#__codelineno-112-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-112-5" name="__codelineno-112-5" href="#__codelineno-112-5"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-6" name="__codelineno-112-6" href="#__codelineno-112-6"></a>        <span class="s2">&quot;ConsoleAccess&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-7" name="__codelineno-112-7" href="#__codelineno-112-7"></a>        <span class="s2">&quot;Groups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-8" name="__codelineno-112-8" href="#__codelineno-112-8"></a>        <span class="s2">&quot;Pending&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-9" name="__codelineno-112-9" href="#__codelineno-112-9"></a>        <span class="s2">&quot;Username&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-10" name="__codelineno-112-10" href="#__codelineno-112-10"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-112-11" name="__codelineno-112-11" href="#__codelineno-112-11"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a><span class="k">class</span> <span class="nc">DescribeUserResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-111-2" name="__codelineno-111-2" href="#__codelineno-111-2"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-111-3" name="__codelineno-111-3" href="#__codelineno-111-3"></a>    <span class="n">ConsoleAccess</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-111-4" name="__codelineno-111-4" href="#__codelineno-111-4"></a>    <span class="n">Groups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-111-5" name="__codelineno-111-5" href="#__codelineno-111-5"></a>    <span class="n">Pending</span><span class="p">:</span> <span class="n">UserPendingChangesTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-111-6" name="__codelineno-111-6" href="#__codelineno-111-6"></a>    <span class="n">Username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-111-7" name="__codelineno-111-7" href="#__codelineno-111-7"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a><span class="k">class</span> <span class="nc">DescribeUserResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-113-2" name="__codelineno-113-2" href="#__codelineno-113-2"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-113-3" name="__codelineno-113-3" href="#__codelineno-113-3"></a>    <span class="n">ConsoleAccess</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+<a id="__codelineno-113-4" name="__codelineno-113-4" href="#__codelineno-113-4"></a>    <span class="n">Groups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-113-5" name="__codelineno-113-5" href="#__codelineno-113-5"></a>    <span class="n">Pending</span><span class="p">:</span> <span class="n">UserPendingChangesTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-113-6" name="__codelineno-113-6" href="#__codelineno-113-6"></a>    <span class="n">Username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-113-7" name="__codelineno-113-7" href="#__codelineno-113-7"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#userpendingchangestypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UserPendingChangesTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="listbrokersrequestlistbrokerspaginatetypedef">ListBrokersRequestListBrokersPaginateTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListBrokersRequestListBrokersPaginateTypeDef</span>
-<a id="__codelineno-112-2" name="__codelineno-112-2" href="#__codelineno-112-2"></a>
-<a id="__codelineno-112-3" name="__codelineno-112-3" href="#__codelineno-112-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListBrokersRequestListBrokersPaginateTypeDef</span><span class="p">:</span>
-<a id="__codelineno-112-4" name="__codelineno-112-4" href="#__codelineno-112-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-112-5" name="__codelineno-112-5" href="#__codelineno-112-5"></a>        <span class="s2">&quot;PaginationConfig&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-112-6" name="__codelineno-112-6" href="#__codelineno-112-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListBrokersRequestListBrokersPaginateTypeDef</span>
+<a id="__codelineno-114-2" name="__codelineno-114-2" href="#__codelineno-114-2"></a>
+<a id="__codelineno-114-3" name="__codelineno-114-3" href="#__codelineno-114-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListBrokersRequestListBrokersPaginateTypeDef</span><span class="p">:</span>
+<a id="__codelineno-114-4" name="__codelineno-114-4" href="#__codelineno-114-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-114-5" name="__codelineno-114-5" href="#__codelineno-114-5"></a>        <span class="s2">&quot;PaginationConfig&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-114-6" name="__codelineno-114-6" href="#__codelineno-114-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a><span class="k">class</span> <span class="nc">ListBrokersRequestListBrokersPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-113-2" name="__codelineno-113-2" href="#__codelineno-113-2"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a><span class="k">class</span> <span class="nc">ListBrokersRequestListBrokersPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-115-2" name="__codelineno-115-2" href="#__codelineno-115-2"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#paginatorconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PaginatorConfigTypeDef</a> </li>
 </ol>
 <h2 id="logssummarytypedef">LogsSummaryTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">LogsSummaryTypeDef</span>
-<a id="__codelineno-114-2" name="__codelineno-114-2" href="#__codelineno-114-2"></a>
-<a id="__codelineno-114-3" name="__codelineno-114-3" href="#__codelineno-114-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LogsSummaryTypeDef</span><span class="p">:</span>
-<a id="__codelineno-114-4" name="__codelineno-114-4" href="#__codelineno-114-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-114-5" name="__codelineno-114-5" href="#__codelineno-114-5"></a>        <span class="s2">&quot;General&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-114-6" name="__codelineno-114-6" href="#__codelineno-114-6"></a>        <span class="s2">&quot;GeneralLogGroup&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-114-7" name="__codelineno-114-7" href="#__codelineno-114-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">LogsSummaryTypeDef</span>
+<a id="__codelineno-116-2" name="__codelineno-116-2" href="#__codelineno-116-2"></a>
+<a id="__codelineno-116-3" name="__codelineno-116-3" href="#__codelineno-116-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LogsSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-116-4" name="__codelineno-116-4" href="#__codelineno-116-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-116-5" name="__codelineno-116-5" href="#__codelineno-116-5"></a>        <span class="s2">&quot;General&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-116-6" name="__codelineno-116-6" href="#__codelineno-116-6"></a>        <span class="s2">&quot;GeneralLogGroup&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-116-7" name="__codelineno-116-7" href="#__codelineno-116-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a><span class="k">class</span> <span class="nc">LogsSummaryTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-115-2" name="__codelineno-115-2" href="#__codelineno-115-2"></a>    <span class="n">General</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-115-3" name="__codelineno-115-3" href="#__codelineno-115-3"></a>    <span class="n">GeneralLogGroup</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-115-4" name="__codelineno-115-4" href="#__codelineno-115-4"></a>    <span class="n">Audit</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-115-5" name="__codelineno-115-5" href="#__codelineno-115-5"></a>    <span class="n">AuditLogGroup</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-115-6" name="__codelineno-115-6" href="#__codelineno-115-6"></a>    <span class="n">Pending</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PendingLogsTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a><span class="k">class</span> <span class="nc">LogsSummaryTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-117-2" name="__codelineno-117-2" href="#__codelineno-117-2"></a>    <span class="n">General</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+<a id="__codelineno-117-3" name="__codelineno-117-3" href="#__codelineno-117-3"></a>    <span class="n">GeneralLogGroup</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-117-4" name="__codelineno-117-4" href="#__codelineno-117-4"></a>    <span class="n">Audit</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-117-5" name="__codelineno-117-5" href="#__codelineno-117-5"></a>    <span class="n">AuditLogGroup</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-117-6" name="__codelineno-117-6" href="#__codelineno-117-6"></a>    <span class="n">Pending</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PendingLogsTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#pendinglogstypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PendingLogsTypeDef</a> </li>
 </ol>
 <h2 id="updateconfigurationresponsetypedef">UpdateConfigurationResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">UpdateConfigurationResponseTypeDef</span>
-<a id="__codelineno-116-2" name="__codelineno-116-2" href="#__codelineno-116-2"></a>
-<a id="__codelineno-116-3" name="__codelineno-116-3" href="#__codelineno-116-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateConfigurationResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-116-4" name="__codelineno-116-4" href="#__codelineno-116-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-116-5" name="__codelineno-116-5" href="#__codelineno-116-5"></a>        <span class="s2">&quot;Arn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-6" name="__codelineno-116-6" href="#__codelineno-116-6"></a>        <span class="s2">&quot;Created&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-7" name="__codelineno-116-7" href="#__codelineno-116-7"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-8" name="__codelineno-116-8" href="#__codelineno-116-8"></a>        <span class="s2">&quot;LatestRevision&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-9" name="__codelineno-116-9" href="#__codelineno-116-9"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-10" name="__codelineno-116-10" href="#__codelineno-116-10"></a>        <span class="s2">&quot;Warnings&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-11" name="__codelineno-116-11" href="#__codelineno-116-11"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-116-12" name="__codelineno-116-12" href="#__codelineno-116-12"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">UpdateConfigurationResponseTypeDef</span>
+<a id="__codelineno-118-2" name="__codelineno-118-2" href="#__codelineno-118-2"></a>
+<a id="__codelineno-118-3" name="__codelineno-118-3" href="#__codelineno-118-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateConfigurationResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-118-4" name="__codelineno-118-4" href="#__codelineno-118-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-118-5" name="__codelineno-118-5" href="#__codelineno-118-5"></a>        <span class="s2">&quot;Arn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-6" name="__codelineno-118-6" href="#__codelineno-118-6"></a>        <span class="s2">&quot;Created&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-7" name="__codelineno-118-7" href="#__codelineno-118-7"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-8" name="__codelineno-118-8" href="#__codelineno-118-8"></a>        <span class="s2">&quot;LatestRevision&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-9" name="__codelineno-118-9" href="#__codelineno-118-9"></a>        <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-10" name="__codelineno-118-10" href="#__codelineno-118-10"></a>        <span class="s2">&quot;Warnings&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-11" name="__codelineno-118-11" href="#__codelineno-118-11"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-12" name="__codelineno-118-12" href="#__codelineno-118-12"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a><span class="k">class</span> <span class="nc">UpdateConfigurationResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-117-2" name="__codelineno-117-2" href="#__codelineno-117-2"></a>    <span class="n">Arn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-117-3" name="__codelineno-117-3" href="#__codelineno-117-3"></a>    <span class="n">Created</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-117-4" name="__codelineno-117-4" href="#__codelineno-117-4"></a>    <span class="n">Id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-117-5" name="__codelineno-117-5" href="#__codelineno-117-5"></a>    <span class="n">LatestRevision</span><span class="p">:</span> <span class="n">ConfigurationRevisionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-117-6" name="__codelineno-117-6" href="#__codelineno-117-6"></a>    <span class="n">Name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-117-7" name="__codelineno-117-7" href="#__codelineno-117-7"></a>    <span class="n">Warnings</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SanitizationWarningTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-117-8" name="__codelineno-117-8" href="#__codelineno-117-8"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="k">class</span> <span class="nc">UpdateConfigurationResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>    <span class="n">Arn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>    <span class="n">Created</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
+<a id="__codelineno-119-4" name="__codelineno-119-4" href="#__codelineno-119-4"></a>    <span class="n">Id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-5" name="__codelineno-119-5" href="#__codelineno-119-5"></a>    <span class="n">LatestRevision</span><span class="p">:</span> <span class="n">ConfigurationRevisionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-119-6" name="__codelineno-119-6" href="#__codelineno-119-6"></a>    <span class="n">Name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-7" name="__codelineno-119-7" href="#__codelineno-119-7"></a>    <span class="n">Warnings</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SanitizationWarningTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-119-8" name="__codelineno-119-8" href="#__codelineno-119-8"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#configurationrevisiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ConfigurationRevisionTypeDef</a> </li>
@@ -37942,136 +37970,136 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-mq/">
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="describebrokerinstanceoptionsresponsetypedef">DescribeBrokerInstanceOptionsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerInstanceOptionsResponseTypeDef</span>
-<a id="__codelineno-118-2" name="__codelineno-118-2" href="#__codelineno-118-2"></a>
-<a id="__codelineno-118-3" name="__codelineno-118-3" href="#__codelineno-118-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerInstanceOptionsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-118-4" name="__codelineno-118-4" href="#__codelineno-118-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-118-5" name="__codelineno-118-5" href="#__codelineno-118-5"></a>        <span class="s2">&quot;BrokerInstanceOptions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-6" name="__codelineno-118-6" href="#__codelineno-118-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-7" name="__codelineno-118-7" href="#__codelineno-118-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-8" name="__codelineno-118-8" href="#__codelineno-118-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-9" name="__codelineno-118-9" href="#__codelineno-118-9"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerInstanceOptionsResponseTypeDef</span>
+<a id="__codelineno-120-2" name="__codelineno-120-2" href="#__codelineno-120-2"></a>
+<a id="__codelineno-120-3" name="__codelineno-120-3" href="#__codelineno-120-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerInstanceOptionsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-120-4" name="__codelineno-120-4" href="#__codelineno-120-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-120-5" name="__codelineno-120-5" href="#__codelineno-120-5"></a>        <span class="s2">&quot;BrokerInstanceOptions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-120-6" name="__codelineno-120-6" href="#__codelineno-120-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-120-7" name="__codelineno-120-7" href="#__codelineno-120-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-120-8" name="__codelineno-120-8" href="#__codelineno-120-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-120-9" name="__codelineno-120-9" href="#__codelineno-120-9"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerInstanceOptionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>    <span class="n">BrokerInstanceOptions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerInstanceOptionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-119-4" name="__codelineno-119-4" href="#__codelineno-119-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-119-5" name="__codelineno-119-5" href="#__codelineno-119-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerInstanceOptionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-121-2" name="__codelineno-121-2" href="#__codelineno-121-2"></a>    <span class="n">BrokerInstanceOptions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerInstanceOptionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-121-3" name="__codelineno-121-3" href="#__codelineno-121-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-121-4" name="__codelineno-121-4" href="#__codelineno-121-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-121-5" name="__codelineno-121-5" href="#__codelineno-121-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#brokerinstanceoptiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> BrokerInstanceOptionTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="describebrokerenginetypesresponsetypedef">DescribeBrokerEngineTypesResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerEngineTypesResponseTypeDef</span>
-<a id="__codelineno-120-2" name="__codelineno-120-2" href="#__codelineno-120-2"></a>
-<a id="__codelineno-120-3" name="__codelineno-120-3" href="#__codelineno-120-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerEngineTypesResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-120-4" name="__codelineno-120-4" href="#__codelineno-120-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-120-5" name="__codelineno-120-5" href="#__codelineno-120-5"></a>        <span class="s2">&quot;BrokerEngineTypes&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-120-6" name="__codelineno-120-6" href="#__codelineno-120-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-120-7" name="__codelineno-120-7" href="#__codelineno-120-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-120-8" name="__codelineno-120-8" href="#__codelineno-120-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-120-9" name="__codelineno-120-9" href="#__codelineno-120-9"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerEngineTypesResponseTypeDef</span>
+<a id="__codelineno-122-2" name="__codelineno-122-2" href="#__codelineno-122-2"></a>
+<a id="__codelineno-122-3" name="__codelineno-122-3" href="#__codelineno-122-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerEngineTypesResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-122-4" name="__codelineno-122-4" href="#__codelineno-122-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-122-5" name="__codelineno-122-5" href="#__codelineno-122-5"></a>        <span class="s2">&quot;BrokerEngineTypes&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-122-6" name="__codelineno-122-6" href="#__codelineno-122-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-122-7" name="__codelineno-122-7" href="#__codelineno-122-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-122-8" name="__codelineno-122-8" href="#__codelineno-122-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-122-9" name="__codelineno-122-9" href="#__codelineno-122-9"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerEngineTypesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-121-2" name="__codelineno-121-2" href="#__codelineno-121-2"></a>    <span class="n">BrokerEngineTypes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerEngineTypeTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-121-3" name="__codelineno-121-3" href="#__codelineno-121-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-121-4" name="__codelineno-121-4" href="#__codelineno-121-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-121-5" name="__codelineno-121-5" href="#__codelineno-121-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerEngineTypesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-123-2" name="__codelineno-123-2" href="#__codelineno-123-2"></a>    <span class="n">BrokerEngineTypes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerEngineTypeTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-123-3" name="__codelineno-123-3" href="#__codelineno-123-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-123-4" name="__codelineno-123-4" href="#__codelineno-123-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-123-5" name="__codelineno-123-5" href="#__codelineno-123-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#brokerenginetypetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> BrokerEngineTypeTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="listconfigurationsresponsetypedef">ListConfigurationsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListConfigurationsResponseTypeDef</span>
-<a id="__codelineno-122-2" name="__codelineno-122-2" href="#__codelineno-122-2"></a>
-<a id="__codelineno-122-3" name="__codelineno-122-3" href="#__codelineno-122-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListConfigurationsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-122-4" name="__codelineno-122-4" href="#__codelineno-122-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-122-5" name="__codelineno-122-5" href="#__codelineno-122-5"></a>        <span class="s2">&quot;Configurations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-122-6" name="__codelineno-122-6" href="#__codelineno-122-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-122-7" name="__codelineno-122-7" href="#__codelineno-122-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-122-8" name="__codelineno-122-8" href="#__codelineno-122-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-122-9" name="__codelineno-122-9" href="#__codelineno-122-9"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">ListConfigurationsResponseTypeDef</span>
+<a id="__codelineno-124-2" name="__codelineno-124-2" href="#__codelineno-124-2"></a>
+<a id="__codelineno-124-3" name="__codelineno-124-3" href="#__codelineno-124-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListConfigurationsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-124-4" name="__codelineno-124-4" href="#__codelineno-124-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-124-5" name="__codelineno-124-5" href="#__codelineno-124-5"></a>        <span class="s2">&quot;Configurations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-124-6" name="__codelineno-124-6" href="#__codelineno-124-6"></a>        <span class="s2">&quot;MaxResults&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-124-7" name="__codelineno-124-7" href="#__codelineno-124-7"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-124-8" name="__codelineno-124-8" href="#__codelineno-124-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-124-9" name="__codelineno-124-9" href="#__codelineno-124-9"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a><span class="k">class</span> <span class="nc">ListConfigurationsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-123-2" name="__codelineno-123-2" href="#__codelineno-123-2"></a>    <span class="n">Configurations</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-123-3" name="__codelineno-123-3" href="#__codelineno-123-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-123-4" name="__codelineno-123-4" href="#__codelineno-123-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-123-5" name="__codelineno-123-5" href="#__codelineno-123-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a><span class="k">class</span> <span class="nc">ListConfigurationsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-125-2" name="__codelineno-125-2" href="#__codelineno-125-2"></a>    <span class="n">Configurations</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-125-3" name="__codelineno-125-3" href="#__codelineno-125-3"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-125-4" name="__codelineno-125-4" href="#__codelineno-125-4"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-125-5" name="__codelineno-125-5" href="#__codelineno-125-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#configurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ConfigurationTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="describebrokerresponsetypedef">DescribeBrokerResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerResponseTypeDef</span>
-<a id="__codelineno-124-2" name="__codelineno-124-2" href="#__codelineno-124-2"></a>
-<a id="__codelineno-124-3" name="__codelineno-124-3" href="#__codelineno-124-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-124-4" name="__codelineno-124-4" href="#__codelineno-124-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-124-5" name="__codelineno-124-5" href="#__codelineno-124-5"></a>        <span class="s2">&quot;ActionsRequired&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-6" name="__codelineno-124-6" href="#__codelineno-124-6"></a>        <span class="s2">&quot;AuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-7" name="__codelineno-124-7" href="#__codelineno-124-7"></a>        <span class="s2">&quot;AutoMinorVersionUpgrade&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-8" name="__codelineno-124-8" href="#__codelineno-124-8"></a>        <span class="s2">&quot;BrokerArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-9" name="__codelineno-124-9" href="#__codelineno-124-9"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-10" name="__codelineno-124-10" href="#__codelineno-124-10"></a>        <span class="s2">&quot;BrokerInstances&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-11" name="__codelineno-124-11" href="#__codelineno-124-11"></a>        <span class="s2">&quot;BrokerName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-12" name="__codelineno-124-12" href="#__codelineno-124-12"></a>        <span class="s2">&quot;BrokerState&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-13" name="__codelineno-124-13" href="#__codelineno-124-13"></a>        <span class="s2">&quot;Configurations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-14" name="__codelineno-124-14" href="#__codelineno-124-14"></a>        <span class="s2">&quot;Created&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-15" name="__codelineno-124-15" href="#__codelineno-124-15"></a>        <span class="s2">&quot;DeploymentMode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-16" name="__codelineno-124-16" href="#__codelineno-124-16"></a>        <span class="s2">&quot;EncryptionOptions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-17" name="__codelineno-124-17" href="#__codelineno-124-17"></a>        <span class="s2">&quot;EngineType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-18" name="__codelineno-124-18" href="#__codelineno-124-18"></a>        <span class="s2">&quot;EngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-19" name="__codelineno-124-19" href="#__codelineno-124-19"></a>        <span class="s2">&quot;HostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-20" name="__codelineno-124-20" href="#__codelineno-124-20"></a>        <span class="s2">&quot;LdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-21" name="__codelineno-124-21" href="#__codelineno-124-21"></a>        <span class="s2">&quot;Logs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-22" name="__codelineno-124-22" href="#__codelineno-124-22"></a>        <span class="s2">&quot;MaintenanceWindowStartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-23" name="__codelineno-124-23" href="#__codelineno-124-23"></a>        <span class="s2">&quot;PendingAuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-24" name="__codelineno-124-24" href="#__codelineno-124-24"></a>        <span class="s2">&quot;PendingEngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-25" name="__codelineno-124-25" href="#__codelineno-124-25"></a>        <span class="s2">&quot;PendingHostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-26" name="__codelineno-124-26" href="#__codelineno-124-26"></a>        <span class="s2">&quot;PendingLdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-27" name="__codelineno-124-27" href="#__codelineno-124-27"></a>        <span class="s2">&quot;PendingSecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-28" name="__codelineno-124-28" href="#__codelineno-124-28"></a>        <span class="s2">&quot;PubliclyAccessible&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-29" name="__codelineno-124-29" href="#__codelineno-124-29"></a>        <span class="s2">&quot;SecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-30" name="__codelineno-124-30" href="#__codelineno-124-30"></a>        <span class="s2">&quot;StorageType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-31" name="__codelineno-124-31" href="#__codelineno-124-31"></a>        <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-32" name="__codelineno-124-32" href="#__codelineno-124-32"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-33" name="__codelineno-124-33" href="#__codelineno-124-33"></a>        <span class="s2">&quot;Users&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-34" name="__codelineno-124-34" href="#__codelineno-124-34"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-124-35" name="__codelineno-124-35" href="#__codelineno-124-35"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_mq.type_defs</span> <span class="kn">import</span> <span class="n">DescribeBrokerResponseTypeDef</span>
+<a id="__codelineno-126-2" name="__codelineno-126-2" href="#__codelineno-126-2"></a>
+<a id="__codelineno-126-3" name="__codelineno-126-3" href="#__codelineno-126-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeBrokerResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-126-4" name="__codelineno-126-4" href="#__codelineno-126-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-126-5" name="__codelineno-126-5" href="#__codelineno-126-5"></a>        <span class="s2">&quot;ActionsRequired&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-6" name="__codelineno-126-6" href="#__codelineno-126-6"></a>        <span class="s2">&quot;AuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-7" name="__codelineno-126-7" href="#__codelineno-126-7"></a>        <span class="s2">&quot;AutoMinorVersionUpgrade&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-8" name="__codelineno-126-8" href="#__codelineno-126-8"></a>        <span class="s2">&quot;BrokerArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-9" name="__codelineno-126-9" href="#__codelineno-126-9"></a>        <span class="s2">&quot;BrokerId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-10" name="__codelineno-126-10" href="#__codelineno-126-10"></a>        <span class="s2">&quot;BrokerInstances&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-11" name="__codelineno-126-11" href="#__codelineno-126-11"></a>        <span class="s2">&quot;BrokerName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-12" name="__codelineno-126-12" href="#__codelineno-126-12"></a>        <span class="s2">&quot;BrokerState&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-13" name="__codelineno-126-13" href="#__codelineno-126-13"></a>        <span class="s2">&quot;Configurations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-14" name="__codelineno-126-14" href="#__codelineno-126-14"></a>        <span class="s2">&quot;Created&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-15" name="__codelineno-126-15" href="#__codelineno-126-15"></a>        <span class="s2">&quot;DeploymentMode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-16" name="__codelineno-126-16" href="#__codelineno-126-16"></a>        <span class="s2">&quot;EncryptionOptions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-17" name="__codelineno-126-17" href="#__codelineno-126-17"></a>        <span class="s2">&quot;EngineType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-18" name="__codelineno-126-18" href="#__codelineno-126-18"></a>        <span class="s2">&quot;EngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-19" name="__codelineno-126-19" href="#__codelineno-126-19"></a>        <span class="s2">&quot;HostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-20" name="__codelineno-126-20" href="#__codelineno-126-20"></a>        <span class="s2">&quot;LdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-21" name="__codelineno-126-21" href="#__codelineno-126-21"></a>        <span class="s2">&quot;Logs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-22" name="__codelineno-126-22" href="#__codelineno-126-22"></a>        <span class="s2">&quot;MaintenanceWindowStartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-23" name="__codelineno-126-23" href="#__codelineno-126-23"></a>        <span class="s2">&quot;PendingAuthenticationStrategy&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-24" name="__codelineno-126-24" href="#__codelineno-126-24"></a>        <span class="s2">&quot;PendingEngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-25" name="__codelineno-126-25" href="#__codelineno-126-25"></a>        <span class="s2">&quot;PendingHostInstanceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-26" name="__codelineno-126-26" href="#__codelineno-126-26"></a>        <span class="s2">&quot;PendingLdapServerMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-27" name="__codelineno-126-27" href="#__codelineno-126-27"></a>        <span class="s2">&quot;PendingSecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-28" name="__codelineno-126-28" href="#__codelineno-126-28"></a>        <span class="s2">&quot;PubliclyAccessible&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-29" name="__codelineno-126-29" href="#__codelineno-126-29"></a>        <span class="s2">&quot;SecurityGroups&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-30" name="__codelineno-126-30" href="#__codelineno-126-30"></a>        <span class="s2">&quot;StorageType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-31" name="__codelineno-126-31" href="#__codelineno-126-31"></a>        <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-32" name="__codelineno-126-32" href="#__codelineno-126-32"></a>        <span class="s2">&quot;Tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-33" name="__codelineno-126-33" href="#__codelineno-126-33"></a>        <span class="s2">&quot;Users&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-34" name="__codelineno-126-34" href="#__codelineno-126-34"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-126-35" name="__codelineno-126-35" href="#__codelineno-126-35"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-125-2" name="__codelineno-125-2" href="#__codelineno-125-2"></a>    <span class="n">ActionsRequired</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ActionRequiredTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-125-3" name="__codelineno-125-3" href="#__codelineno-125-3"></a>    <span class="n">AuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-125-4" name="__codelineno-125-4" href="#__codelineno-125-4"></a>    <span class="n">AutoMinorVersionUpgrade</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-125-5" name="__codelineno-125-5" href="#__codelineno-125-5"></a>    <span class="n">BrokerArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-6" name="__codelineno-125-6" href="#__codelineno-125-6"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-7" name="__codelineno-125-7" href="#__codelineno-125-7"></a>    <span class="n">BrokerInstances</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerInstanceTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-125-8" name="__codelineno-125-8" href="#__codelineno-125-8"></a>    <span class="n">BrokerName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-9" name="__codelineno-125-9" href="#__codelineno-125-9"></a>    <span class="n">BrokerState</span><span class="p">:</span> <span class="n">BrokerStateType</span><span class="p">,</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-125-10" name="__codelineno-125-10" href="#__codelineno-125-10"></a>    <span class="n">Configurations</span><span class="p">:</span> <span class="n">ConfigurationsTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-125-11" name="__codelineno-125-11" href="#__codelineno-125-11"></a>    <span class="n">Created</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-125-12" name="__codelineno-125-12" href="#__codelineno-125-12"></a>    <span class="n">DeploymentMode</span><span class="p">:</span> <span class="n">DeploymentModeType</span><span class="p">,</span>  <span class="c1"># (6)</span>
-<a id="__codelineno-125-13" name="__codelineno-125-13" href="#__codelineno-125-13"></a>    <span class="n">EncryptionOptions</span><span class="p">:</span> <span class="n">EncryptionOptionsTypeDef</span><span class="p">,</span>  <span class="c1"># (7)</span>
-<a id="__codelineno-125-14" name="__codelineno-125-14" href="#__codelineno-125-14"></a>    <span class="n">EngineType</span><span class="p">:</span> <span class="n">EngineTypeType</span><span class="p">,</span>  <span class="c1"># (8)</span>
-<a id="__codelineno-125-15" name="__codelineno-125-15" href="#__codelineno-125-15"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-16" name="__codelineno-125-16" href="#__codelineno-125-16"></a>    <span class="n">HostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-17" name="__codelineno-125-17" href="#__codelineno-125-17"></a>    <span class="n">LdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (9)</span>
-<a id="__codelineno-125-18" name="__codelineno-125-18" href="#__codelineno-125-18"></a>    <span class="n">Logs</span><span class="p">:</span> <span class="n">LogsSummaryTypeDef</span><span class="p">,</span>  <span class="c1"># (10)</span>
-<a id="__codelineno-125-19" name="__codelineno-125-19" href="#__codelineno-125-19"></a>    <span class="n">MaintenanceWindowStartTime</span><span class="p">:</span> <span class="n">WeeklyStartTimeTypeDef</span><span class="p">,</span>  <span class="c1"># (11)</span>
-<a id="__codelineno-125-20" name="__codelineno-125-20" href="#__codelineno-125-20"></a>    <span class="n">PendingAuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-125-21" name="__codelineno-125-21" href="#__codelineno-125-21"></a>    <span class="n">PendingEngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-22" name="__codelineno-125-22" href="#__codelineno-125-22"></a>    <span class="n">PendingHostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-125-23" name="__codelineno-125-23" href="#__codelineno-125-23"></a>    <span class="n">PendingLdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (9)</span>
-<a id="__codelineno-125-24" name="__codelineno-125-24" href="#__codelineno-125-24"></a>    <span class="n">PendingSecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-125-25" name="__codelineno-125-25" href="#__codelineno-125-25"></a>    <span class="n">PubliclyAccessible</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-125-26" name="__codelineno-125-26" href="#__codelineno-125-26"></a>    <span class="n">SecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-125-27" name="__codelineno-125-27" href="#__codelineno-125-27"></a>    <span class="n">StorageType</span><span class="p">:</span> <span class="n">BrokerStorageTypeType</span><span class="p">,</span>  <span class="c1"># (14)</span>
-<a id="__codelineno-125-28" name="__codelineno-125-28" href="#__codelineno-125-28"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-125-29" name="__codelineno-125-29" href="#__codelineno-125-29"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-125-30" name="__codelineno-125-30" href="#__codelineno-125-30"></a>    <span class="n">Users</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">UserSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (15)</span>
-<a id="__codelineno-125-31" name="__codelineno-125-31" href="#__codelineno-125-31"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (16)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a><span class="k">class</span> <span class="nc">DescribeBrokerResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-127-2" name="__codelineno-127-2" href="#__codelineno-127-2"></a>    <span class="n">ActionsRequired</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ActionRequiredTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-127-3" name="__codelineno-127-3" href="#__codelineno-127-3"></a>    <span class="n">AuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-127-4" name="__codelineno-127-4" href="#__codelineno-127-4"></a>    <span class="n">AutoMinorVersionUpgrade</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+<a id="__codelineno-127-5" name="__codelineno-127-5" href="#__codelineno-127-5"></a>    <span class="n">BrokerArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-6" name="__codelineno-127-6" href="#__codelineno-127-6"></a>    <span class="n">BrokerId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-7" name="__codelineno-127-7" href="#__codelineno-127-7"></a>    <span class="n">BrokerInstances</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BrokerInstanceTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-127-8" name="__codelineno-127-8" href="#__codelineno-127-8"></a>    <span class="n">BrokerName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-9" name="__codelineno-127-9" href="#__codelineno-127-9"></a>    <span class="n">BrokerState</span><span class="p">:</span> <span class="n">BrokerStateType</span><span class="p">,</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-127-10" name="__codelineno-127-10" href="#__codelineno-127-10"></a>    <span class="n">Configurations</span><span class="p">:</span> <span class="n">ConfigurationsTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-127-11" name="__codelineno-127-11" href="#__codelineno-127-11"></a>    <span class="n">Created</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
+<a id="__codelineno-127-12" name="__codelineno-127-12" href="#__codelineno-127-12"></a>    <span class="n">DeploymentMode</span><span class="p">:</span> <span class="n">DeploymentModeType</span><span class="p">,</span>  <span class="c1"># (6)</span>
+<a id="__codelineno-127-13" name="__codelineno-127-13" href="#__codelineno-127-13"></a>    <span class="n">EncryptionOptions</span><span class="p">:</span> <span class="n">EncryptionOptionsTypeDef</span><span class="p">,</span>  <span class="c1"># (7)</span>
+<a id="__codelineno-127-14" name="__codelineno-127-14" href="#__codelineno-127-14"></a>    <span class="n">EngineType</span><span class="p">:</span> <span class="n">EngineTypeType</span><span class="p">,</span>  <span class="c1"># (8)</span>
+<a id="__codelineno-127-15" name="__codelineno-127-15" href="#__codelineno-127-15"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-16" name="__codelineno-127-16" href="#__codelineno-127-16"></a>    <span class="n">HostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-17" name="__codelineno-127-17" href="#__codelineno-127-17"></a>    <span class="n">LdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (9)</span>
+<a id="__codelineno-127-18" name="__codelineno-127-18" href="#__codelineno-127-18"></a>    <span class="n">Logs</span><span class="p">:</span> <span class="n">LogsSummaryTypeDef</span><span class="p">,</span>  <span class="c1"># (10)</span>
+<a id="__codelineno-127-19" name="__codelineno-127-19" href="#__codelineno-127-19"></a>    <span class="n">MaintenanceWindowStartTime</span><span class="p">:</span> <span class="n">WeeklyStartTimeTypeDef</span><span class="p">,</span>  <span class="c1"># (11)</span>
+<a id="__codelineno-127-20" name="__codelineno-127-20" href="#__codelineno-127-20"></a>    <span class="n">PendingAuthenticationStrategy</span><span class="p">:</span> <span class="n">AuthenticationStrategyType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-127-21" name="__codelineno-127-21" href="#__codelineno-127-21"></a>    <span class="n">PendingEngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-22" name="__codelineno-127-22" href="#__codelineno-127-22"></a>    <span class="n">PendingHostInstanceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-127-23" name="__codelineno-127-23" href="#__codelineno-127-23"></a>    <span class="n">PendingLdapServerMetadata</span><span class="p">:</span> <span class="n">LdapServerMetadataOutputTypeDef</span><span class="p">,</span>  <span class="c1"># (9)</span>
+<a id="__codelineno-127-24" name="__codelineno-127-24" href="#__codelineno-127-24"></a>    <span class="n">PendingSecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-127-25" name="__codelineno-127-25" href="#__codelineno-127-25"></a>    <span class="n">PubliclyAccessible</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+<a id="__codelineno-127-26" name="__codelineno-127-26" href="#__codelineno-127-26"></a>    <span class="n">SecurityGroups</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-127-27" name="__codelineno-127-27" href="#__codelineno-127-27"></a>    <span class="n">StorageType</span><span class="p">:</span> <span class="n">BrokerStorageTypeType</span><span class="p">,</span>  <span class="c1"># (14)</span>
+<a id="__codelineno-127-28" name="__codelineno-127-28" href="#__codelineno-127-28"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-127-29" name="__codelineno-127-29" href="#__codelineno-127-29"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-127-30" name="__codelineno-127-30" href="#__codelineno-127-30"></a>    <span class="n">Users</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">UserSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (15)</span>
+<a id="__codelineno-127-31" name="__codelineno-127-31" href="#__codelineno-127-31"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (16)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#actionrequiredtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ActionRequiredTypeDef</a> </li>
@@ -38159,7 +38187,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-mq/">
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3a4b43e5.min.js"></script>
       
     
   </body>

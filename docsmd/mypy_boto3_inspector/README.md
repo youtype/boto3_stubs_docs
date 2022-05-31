@@ -207,6 +207,7 @@ def get_value() -> AttributeTypeDef:
 - [CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef)
 - [CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef)
 - [DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef)
 - [ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef)
 - [ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef)

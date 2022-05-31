@@ -608,6 +608,7 @@ def get_value() -> AacSettingsTypeDef:
 - [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef)
 - [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef)
 - [DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [TeletextSourceSettingsTypeDef](./type_defs.md#teletextsourcesettingstypedef)
 - [CreateInputRequestRequestTypeDef](./type_defs.md#createinputrequestrequesttypedef)

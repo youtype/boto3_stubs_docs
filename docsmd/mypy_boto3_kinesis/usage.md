@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("kinesis")  # (1)
-    result = client.describe_stream()  # (2)
+    result = client.add_tags_to_stream()  # (2)
     ```
 
     1. client: [KinesisClient](./client.md)
-    2. result: [:material-code-braces: DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_kinesis.client import KinesisClient
-    from mypy_boto3_kinesis.type_defs import DescribeStreamOutputTypeDef
-    from mypy_boto3_kinesis.type_defs import DescribeStreamInputRequestTypeDef
+    from mypy_boto3_kinesis.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef
 
 
     session = Session()
 
     client: KinesisClient = session.client("kinesis")
 
-    kwargs: DescribeStreamInputRequestTypeDef = {...}
-    result: DescribeStreamOutputTypeDef = client.describe_stream(**kwargs)
+    kwargs: AddTagsToStreamInputRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.add_tags_to_stream(**kwargs)
     ```
 
 

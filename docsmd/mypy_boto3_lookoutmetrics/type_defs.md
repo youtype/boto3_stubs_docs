@@ -305,22 +305,6 @@ class BackTestAnomalyDetectorRequestRequestTypeDef(TypedDict):
     AnomalyDetectorArn: str,
 ```
 
-## CloudWatchConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
-
-def get_value() -> CloudWatchConfigTypeDef:
-    return {
-        "RoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class CloudWatchConfigTypeDef(TypedDict):
-    RoleArn: NotRequired[str],
-```
-
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -994,6 +978,24 @@ class AthenaSourceConfigTypeDef(TypedDict):
     TableName: NotRequired[str],
     WorkGroupName: NotRequired[str],
     S3ResultsPath: NotRequired[str],
+    BackTestConfiguration: NotRequired[BackTestConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BackTestConfigurationTypeDef](./type_defs.md#backtestconfigurationtypedef) 
+## CloudWatchConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
+
+def get_value() -> CloudWatchConfigTypeDef:
+    return {
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CloudWatchConfigTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
     BackTestConfiguration: NotRequired[BackTestConfigurationTypeDef],  # (1)
 ```
 

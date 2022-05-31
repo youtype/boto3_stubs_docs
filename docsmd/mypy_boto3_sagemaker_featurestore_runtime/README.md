@@ -109,6 +109,7 @@ def get_value() -> BatchGetRecordErrorTypeDef:
 - [DeleteRecordRequestRequestTypeDef](./type_defs.md#deleterecordrequestrequesttypedef)
 - [GetRecordRequestRequestTypeDef](./type_defs.md#getrecordrequestrequesttypedef)
 - [BatchGetRecordRequestRequestTypeDef](./type_defs.md#batchgetrecordrequestrequesttypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef)
 - [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef)
 - [PutRecordRequestRequestTypeDef](./type_defs.md#putrecordrequestrequesttypedef)

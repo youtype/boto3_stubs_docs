@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("cloudfront")  # (1)
-    result = client.create_cache_policy()  # (2)
+    result = client.associate_alias()  # (2)
     ```
 
     1. client: [CloudFrontClient](./client.md)
-    2. result: [:material-code-braces: CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef) 
+    2. result: [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_cloudfront.client import CloudFrontClient
-    from mypy_boto3_cloudfront.type_defs import CreateCachePolicyResultTypeDef
-    from mypy_boto3_cloudfront.type_defs import CreateCachePolicyRequestRequestTypeDef
+    from mypy_boto3_cloudfront.type_defs import EmptyResponseMetadataTypeDef
+    from mypy_boto3_cloudfront.type_defs import AssociateAliasRequestRequestTypeDef
 
 
     session = Session()
 
     client: CloudFrontClient = session.client("cloudfront")
 
-    kwargs: CreateCachePolicyRequestRequestTypeDef = {...}
-    result: CreateCachePolicyResultTypeDef = client.create_cache_policy(**kwargs)
+    kwargs: AssociateAliasRequestRequestTypeDef = {...}
+    result: EmptyResponseMetadataTypeDef = client.associate_alias(**kwargs)
     ```
 
 

@@ -2409,6 +2409,23 @@ class ContentTypeProfilesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCloudFrontOriginAccessIdentityConfigResultTypeDef
 
 ```python title="Usage Example"

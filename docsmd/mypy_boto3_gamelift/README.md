@@ -314,6 +314,7 @@ def get_value() -> AcceptMatchInputRequestTypeDef:
 - [ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef)
 - [DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef)
 - [DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef)
 - [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)
 - [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)

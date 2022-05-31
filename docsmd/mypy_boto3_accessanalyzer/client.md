@@ -70,10 +70,11 @@ def apply_archive_rule(
     analyzerArn: str,
     ruleName: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -216,11 +217,12 @@ def create_archive_rule(
     filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -248,10 +250,11 @@ def delete_analyzer(
     *,
     analyzerName: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -278,10 +281,11 @@ def delete_archive_rule(
     analyzerName: str,
     ruleName: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -803,10 +807,11 @@ def start_resource_scan(
     *,
     analyzerArn: str,
     resourceArn: str,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -895,11 +900,12 @@ def update_archive_rule(
     filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
     clientToken: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -930,11 +936,12 @@ def update_findings(
     clientToken: str = ...,
     ids: Sequence[str] = ...,
     resourceArn: str = ...,
-) -> None:
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: FindingStatusUpdateType](./literals.md#findingstatusupdatetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

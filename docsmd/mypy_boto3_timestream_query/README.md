@@ -160,6 +160,7 @@ def get_value() -> CancelQueryRequestRequestTypeDef:
 - [UpdateScheduledQueryRequestRequestTypeDef](./type_defs.md#updatescheduledqueryrequestrequesttypedef)
 - [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef)
 - [CreateScheduledQueryResponseTypeDef](./type_defs.md#createscheduledqueryresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [DatumTypeDef](./type_defs.md#datumtypedef)
