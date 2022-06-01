@@ -36198,12 +36198,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53.paginator</span> <span class="kn">import</span> <span class="n">ListHealthChecksPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53.paginator</span> <span class="kn">import</span> <span class="n">ListCidrBlocksPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_health_checks_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListHealthChecksPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_health_checks&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_cidr_blocks_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListCidrBlocksPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_cidr_blocks&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#listcidrblockspaginator">ListCidrBlocksPaginator</a></li>
+<li><a href="paginators/#listcidrcollectionspaginator">ListCidrCollectionsPaginator</a></li>
+<li><a href="paginators/#listcidrlocationspaginator">ListCidrLocationsPaginator</a></li>
 <li><a href="paginators/#listhealthcheckspaginator">ListHealthChecksPaginator</a></li>
 <li><a href="paginators/#listhostedzonespaginator">ListHostedZonesPaginator</a></li>
 <li><a href="paginators/#listqueryloggingconfigspaginator">ListQueryLoggingConfigsPaginator</a></li>
@@ -36234,12 +36237,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#accountlimittypetype">AccountLimitTypeType</a></li>
 <li><a href="literals/#changeactiontype">ChangeActionType</a></li>
 <li><a href="literals/#changestatustype">ChangeStatusType</a></li>
+<li><a href="literals/#cidrcollectionchangeactiontype">CidrCollectionChangeActionType</a></li>
 <li><a href="literals/#cloudwatchregiontype">CloudWatchRegionType</a></li>
 <li><a href="literals/#comparisonoperatortype">ComparisonOperatorType</a></li>
 <li><a href="literals/#healthcheckregiontype">HealthCheckRegionType</a></li>
 <li><a href="literals/#healthchecktypetype">HealthCheckTypeType</a></li>
 <li><a href="literals/#hostedzonelimittypetype">HostedZoneLimitTypeType</a></li>
 <li><a href="literals/#insufficientdatahealthstatustype">InsufficientDataHealthStatusType</a></li>
+<li><a href="literals/#listcidrblockspaginatorname">ListCidrBlocksPaginatorName</a></li>
+<li><a href="literals/#listcidrcollectionspaginatorname">ListCidrCollectionsPaginatorName</a></li>
+<li><a href="literals/#listcidrlocationspaginatorname">ListCidrLocationsPaginatorName</a></li>
 <li><a href="literals/#listhealthcheckspaginatorname">ListHealthChecksPaginatorName</a></li>
 <li><a href="literals/#listhostedzonespaginatorname">ListHostedZonesPaginatorName</a></li>
 <li><a href="literals/#listqueryloggingconfigspaginatorname">ListQueryLoggingConfigsPaginatorName</a></li>
@@ -36278,8 +36285,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#alarmidentifiertypedef">AlarmIdentifierTypeDef</a></li>
 <li><a href="type_defs/#aliastargettypedef">AliasTargetTypeDef</a></li>
 <li><a href="type_defs/#vpctypedef">VPCTypeDef</a></li>
+<li><a href="type_defs/#cidrcollectionchangetypedef">CidrCollectionChangeTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#cidrblocksummarytypedef">CidrBlockSummaryTypeDef</a></li>
+<li><a href="type_defs/#cidrcollectiontypedef">CidrCollectionTypeDef</a></li>
+<li><a href="type_defs/#cidrroutingconfigtypedef">CidrRoutingConfigTypeDef</a></li>
 <li><a href="type_defs/#dimensiontypedef">DimensionTypeDef</a></li>
+<li><a href="type_defs/#collectionsummarytypedef">CollectionSummaryTypeDef</a></li>
+<li><a href="type_defs/#createcidrcollectionrequestrequesttypedef">CreateCidrCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#hostedzoneconfigtypedef">HostedZoneConfigTypeDef</a></li>
 <li><a href="type_defs/#delegationsettypedef">DelegationSetTypeDef</a></li>
 <li><a href="type_defs/#createkeysigningkeyrequestrequesttypedef">CreateKeySigningKeyRequestRequestTypeDef</a></li>
@@ -36294,6 +36307,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createtrafficpolicyversionrequestrequesttypedef">CreateTrafficPolicyVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#dnssecstatustypedef">DNSSECStatusTypeDef</a></li>
 <li><a href="type_defs/#deactivatekeysigningkeyrequestrequesttypedef">DeactivateKeySigningKeyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletecidrcollectionrequestrequesttypedef">DeleteCidrCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletehealthcheckrequestrequesttypedef">DeleteHealthCheckRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletehostedzonerequestrequesttypedef">DeleteHostedZoneRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletekeysigningkeyrequestrequesttypedef">DeleteKeySigningKeyRequestRequestTypeDef</a></li>
@@ -36325,8 +36339,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#statusreporttypedef">StatusReportTypeDef</a></li>
 <li><a href="type_defs/#linkedservicetypedef">LinkedServiceTypeDef</a></li>
 <li><a href="type_defs/#hostedzoneownertypedef">HostedZoneOwnerTypeDef</a></li>
-<li><a href="type_defs/#listgeolocationsrequestrequesttypedef">ListGeoLocationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listcidrblocksrequestrequesttypedef">ListCidrBlocksRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcidrcollectionsrequestrequesttypedef">ListCidrCollectionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listcidrlocationsrequestrequesttypedef">ListCidrLocationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#locationsummarytypedef">LocationSummaryTypeDef</a></li>
+<li><a href="type_defs/#listgeolocationsrequestrequesttypedef">ListGeoLocationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listhealthchecksrequestrequesttypedef">ListHealthChecksRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listhostedzonesbynamerequestrequesttypedef">ListHostedZonesByNameRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listhostedzonesbyvpcrequestrequesttypedef">ListHostedZonesByVPCRequestRequestTypeDef</a></li>
@@ -36350,6 +36368,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatetrafficpolicyinstancerequestrequesttypedef">UpdateTrafficPolicyInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#activatekeysigningkeyresponsetypedef">ActivateKeySigningKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#associatevpcwithhostedzoneresponsetypedef">AssociateVPCWithHostedZoneResponseTypeDef</a></li>
+<li><a href="type_defs/#changecidrcollectionresponsetypedef">ChangeCidrCollectionResponseTypeDef</a></li>
 <li><a href="type_defs/#changeresourcerecordsetsresponsetypedef">ChangeResourceRecordSetsResponseTypeDef</a></li>
 <li><a href="type_defs/#deactivatekeysigningkeyresponsetypedef">DeactivateKeySigningKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#deletehostedzoneresponsetypedef">DeleteHostedZoneResponseTypeDef</a></li>
@@ -36372,9 +36391,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletevpcassociationauthorizationrequestrequesttypedef">DeleteVPCAssociationAuthorizationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatevpcfromhostedzonerequestrequesttypedef">DisassociateVPCFromHostedZoneRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvpcassociationauthorizationsresponsetypedef">ListVPCAssociationAuthorizationsResponseTypeDef</a></li>
+<li><a href="type_defs/#changecidrcollectionrequestrequesttypedef">ChangeCidrCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#changetagsforresourcerequestrequesttypedef">ChangeTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#resourcetagsettypedef">ResourceTagSetTypeDef</a></li>
+<li><a href="type_defs/#listcidrblocksresponsetypedef">ListCidrBlocksResponseTypeDef</a></li>
+<li><a href="type_defs/#createcidrcollectionresponsetypedef">CreateCidrCollectionResponseTypeDef</a></li>
 <li><a href="type_defs/#cloudwatchalarmconfigurationtypedef">CloudWatchAlarmConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listcidrcollectionsresponsetypedef">ListCidrCollectionsResponseTypeDef</a></li>
 <li><a href="type_defs/#createhostedzonerequestrequesttypedef">CreateHostedZoneRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createreusabledelegationsetresponsetypedef">CreateReusableDelegationSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getreusabledelegationsetresponsetypedef">GetReusableDelegationSetResponseTypeDef</a></li>
@@ -36403,11 +36426,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#healthcheckobservationtypedef">HealthCheckObservationTypeDef</a></li>
 <li><a href="type_defs/#hostedzonetypedef">HostedZoneTypeDef</a></li>
 <li><a href="type_defs/#hostedzonesummarytypedef">HostedZoneSummaryTypeDef</a></li>
+<li><a href="type_defs/#listcidrblocksrequestlistcidrblockspaginatetypedef">ListCidrBlocksRequestListCidrBlocksPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcidrcollectionsrequestlistcidrcollectionspaginatetypedef">ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcidrlocationsrequestlistcidrlocationspaginatetypedef">ListCidrLocationsRequestListCidrLocationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listhealthchecksrequestlisthealthcheckspaginatetypedef">ListHealthChecksRequestListHealthChecksPaginateTypeDef</a></li>
 <li><a href="type_defs/#listhostedzonesrequestlisthostedzonespaginatetypedef">ListHostedZonesRequestListHostedZonesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listqueryloggingconfigsrequestlistqueryloggingconfigspaginatetypedef">ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listresourcerecordsetsrequestlistresourcerecordsetspaginatetypedef">ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listvpcassociationauthorizationsrequestlistvpcassociationauthorizationspaginatetypedef">ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcidrlocationsresponsetypedef">ListCidrLocationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtrafficpoliciesresponsetypedef">ListTrafficPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#resourcerecordsettypedef">ResourceRecordSetTypeDef</a></li>
 <li><a href="type_defs/#createhealthcheckrequestrequesttypedef">CreateHealthCheckRequestRequestTypeDef</a></li>

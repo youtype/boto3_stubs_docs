@@ -147,6 +147,27 @@ class VPCTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VPCRegionType](./literals.md#vpcregiontype) 
+## CidrCollectionChangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CidrCollectionChangeTypeDef
+
+def get_value() -> CidrCollectionChangeTypeDef:
+    return {
+        "LocationName": ...,
+        "Action": ...,
+        "CidrList": ...,
+    }
+```
+
+```python title="Definition"
+class CidrCollectionChangeTypeDef(TypedDict):
+    LocationName: str,
+    Action: CidrCollectionChangeActionType,  # (1)
+    CidrList: Sequence[str],
+```
+
+1. See [:material-code-brackets: CidrCollectionChangeActionType](./literals.md#cidrcollectionchangeactiontype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -162,6 +183,60 @@ def get_value() -> TagTypeDef:
 class TagTypeDef(TypedDict):
     Key: NotRequired[str],
     Value: NotRequired[str],
+```
+
+## CidrBlockSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CidrBlockSummaryTypeDef
+
+def get_value() -> CidrBlockSummaryTypeDef:
+    return {
+        "CidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class CidrBlockSummaryTypeDef(TypedDict):
+    CidrBlock: NotRequired[str],
+    LocationName: NotRequired[str],
+```
+
+## CidrCollectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CidrCollectionTypeDef
+
+def get_value() -> CidrCollectionTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class CidrCollectionTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[int],
+```
+
+## CidrRoutingConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CidrRoutingConfigTypeDef
+
+def get_value() -> CidrRoutingConfigTypeDef:
+    return {
+        "CollectionId": ...,
+        "LocationName": ...,
+    }
+```
+
+```python title="Definition"
+class CidrRoutingConfigTypeDef(TypedDict):
+    CollectionId: str,
+    LocationName: str,
 ```
 
 ## DimensionTypeDef
@@ -180,6 +255,43 @@ def get_value() -> DimensionTypeDef:
 class DimensionTypeDef(TypedDict):
     Name: str,
     Value: str,
+```
+
+## CollectionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CollectionSummaryTypeDef
+
+def get_value() -> CollectionSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class CollectionSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[int],
+```
+
+## CreateCidrCollectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CreateCidrCollectionRequestRequestTypeDef
+
+def get_value() -> CreateCidrCollectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "CallerReference": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCidrCollectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CallerReference: str,
 ```
 
 ## HostedZoneConfigTypeDef
@@ -481,6 +593,22 @@ def get_value() -> DeactivateKeySigningKeyRequestRequestTypeDef:
 class DeactivateKeySigningKeyRequestRequestTypeDef(TypedDict):
     HostedZoneId: str,
     Name: str,
+```
+
+## DeleteCidrCollectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import DeleteCidrCollectionRequestRequestTypeDef
+
+def get_value() -> DeleteCidrCollectionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCidrCollectionRequestRequestTypeDef(TypedDict):
+    Id: str,
 ```
 
 ## DeleteHealthCheckRequestRequestTypeDef
@@ -1011,6 +1139,94 @@ class HostedZoneOwnerTypeDef(TypedDict):
     OwningService: NotRequired[str],
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListCidrBlocksRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrBlocksRequestRequestTypeDef
+
+def get_value() -> ListCidrBlocksRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrBlocksRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    LocationName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[str],
+```
+
+## ListCidrCollectionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrCollectionsRequestRequestTypeDef
+
+def get_value() -> ListCidrCollectionsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrCollectionsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[str],
+```
+
+## ListCidrLocationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrLocationsRequestRequestTypeDef
+
+def get_value() -> ListCidrLocationsRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrLocationsRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[str],
+```
+
+## LocationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import LocationSummaryTypeDef
+
+def get_value() -> LocationSummaryTypeDef:
+    return {
+        "LocationName": ...,
+    }
+```
+
+```python title="Definition"
+class LocationSummaryTypeDef(TypedDict):
+    LocationName: NotRequired[str],
+```
+
 ## ListGeoLocationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1028,24 +1244,6 @@ class ListGeoLocationsRequestRequestTypeDef(TypedDict):
     StartCountryCode: NotRequired[str],
     StartSubdivisionCode: NotRequired[str],
     MaxItems: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_route53.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## ListHealthChecksRequestRequestTypeDef
@@ -1496,6 +1694,25 @@ class AssociateVPCWithHostedZoneResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ChangeCidrCollectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ChangeCidrCollectionResponseTypeDef
+
+def get_value() -> ChangeCidrCollectionResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeCidrCollectionResponseTypeDef(TypedDict):
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeResourceRecordSetsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1981,6 +2198,26 @@ class ListVPCAssociationAuthorizationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ChangeCidrCollectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ChangeCidrCollectionRequestRequestTypeDef
+
+def get_value() -> ChangeCidrCollectionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Changes": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeCidrCollectionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Changes: Sequence[CidrCollectionChangeTypeDef],  # (1)
+    CollectionVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: CidrCollectionChangeTypeDef](./type_defs.md#cidrcollectionchangetypedef) 
 ## ChangeTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2023,6 +2260,50 @@ class ResourceTagSetTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListCidrBlocksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrBlocksResponseTypeDef
+
+def get_value() -> ListCidrBlocksResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "CidrBlocks": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrBlocksResponseTypeDef(TypedDict):
+    NextToken: str,
+    CidrBlocks: List[CidrBlockSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CidrBlockSummaryTypeDef](./type_defs.md#cidrblocksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCidrCollectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import CreateCidrCollectionResponseTypeDef
+
+def get_value() -> CreateCidrCollectionResponseTypeDef:
+    return {
+        "Collection": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCidrCollectionResponseTypeDef(TypedDict):
+    Collection: CidrCollectionTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CidrCollectionTypeDef](./type_defs.md#cidrcollectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchAlarmConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2055,6 +2336,28 @@ class CloudWatchAlarmConfigurationTypeDef(TypedDict):
 1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
 3. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+## ListCidrCollectionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrCollectionsResponseTypeDef
+
+def get_value() -> ListCidrCollectionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "CidrCollections": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrCollectionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    CidrCollections: List[CollectionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CollectionSummaryTypeDef](./type_defs.md#collectionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHostedZoneRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2701,6 +3004,60 @@ class HostedZoneSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HostedZoneOwnerTypeDef](./type_defs.md#hostedzoneownertypedef) 
+## ListCidrBlocksRequestListCidrBlocksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrBlocksRequestListCidrBlocksPaginateTypeDef
+
+def get_value() -> ListCidrBlocksRequestListCidrBlocksPaginateTypeDef:
+    return {
+        "CollectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrBlocksRequestListCidrBlocksPaginateTypeDef(TypedDict):
+    CollectionId: str,
+    LocationName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef
+
+def get_value() -> ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCidrLocationsRequestListCidrLocationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrLocationsRequestListCidrLocationsPaginateTypeDef
+
+def get_value() -> ListCidrLocationsRequestListCidrLocationsPaginateTypeDef:
+    return {
+        "CollectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrLocationsRequestListCidrLocationsPaginateTypeDef(TypedDict):
+    CollectionId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHealthChecksRequestListHealthChecksPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2791,6 +3148,28 @@ class ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPag
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCidrLocationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListCidrLocationsResponseTypeDef
+
+def get_value() -> ListCidrLocationsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "CidrLocations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCidrLocationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    CidrLocations: List[LocationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocationSummaryTypeDef](./type_defs.md#locationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPoliciesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2844,6 +3223,7 @@ class ResourceRecordSetTypeDef(TypedDict):
     AliasTarget: NotRequired[AliasTargetTypeDef],  # (6)
     HealthCheckId: NotRequired[str],
     TrafficPolicyInstanceId: NotRequired[str],
+    CidrRoutingConfig: NotRequired[CidrRoutingConfigTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
@@ -2852,6 +3232,7 @@ class ResourceRecordSetTypeDef(TypedDict):
 4. See [:material-code-brackets: ResourceRecordSetFailoverType](./literals.md#resourcerecordsetfailovertype) 
 5. See [:material-code-braces: ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef) 
 6. See [:material-code-braces: AliasTargetTypeDef](./type_defs.md#aliastargettypedef) 
+7. See [:material-code-braces: CidrRoutingConfigTypeDef](./type_defs.md#cidrroutingconfigtypedef) 
 ## CreateHealthCheckRequestRequestTypeDef
 
 ```python title="Usage Example"

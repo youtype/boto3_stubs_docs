@@ -7,22 +7,43 @@
     Auto-generated documentation for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
     type annotations stubs module [mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
-## AttendeeTypeDef
+## AttendeeCapabilitiesTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef
+from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeCapabilitiesTypeDef
 
-def get_value() -> AttendeeTypeDef:
+def get_value() -> AttendeeCapabilitiesTypeDef:
     return {
-        "ExternalUserId": ...,
+        "Audio": ...,
+        "Video": ...,
+        "Content": ...,
     }
 ```
 
 ```python title="Definition"
-class AttendeeTypeDef(TypedDict):
-    ExternalUserId: NotRequired[str],
-    AttendeeId: NotRequired[str],
-    JoinToken: NotRequired[str],
+class AttendeeCapabilitiesTypeDef(TypedDict):
+    Audio: MediaCapabilitiesType,  # (1)
+    Video: MediaCapabilitiesType,  # (1)
+    Content: MediaCapabilitiesType,  # (1)
+```
+
+1. See [:material-code-brackets: MediaCapabilitiesType](./literals.md#mediacapabilitiestype) 
+2. See [:material-code-brackets: MediaCapabilitiesType](./literals.md#mediacapabilitiestype) 
+3. See [:material-code-brackets: MediaCapabilitiesType](./literals.md#mediacapabilitiestype) 
+## AttendeeIdItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeIdItemTypeDef
+
+def get_value() -> AttendeeIdItemTypeDef:
+    return {
+        "AttendeeId": ...,
+    }
+```
+
+```python title="Definition"
+class AttendeeIdItemTypeDef(TypedDict):
+    AttendeeId: str,
 ```
 
 ## AudioFeaturesTypeDef
@@ -42,22 +63,6 @@ class AudioFeaturesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MeetingFeatureStatusType](./literals.md#meetingfeaturestatustype) 
-## CreateAttendeeRequestItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import CreateAttendeeRequestItemTypeDef
-
-def get_value() -> CreateAttendeeRequestItemTypeDef:
-    return {
-        "ExternalUserId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeRequestItemTypeDef(TypedDict):
-    ExternalUserId: str,
-```
-
 ## CreateAttendeeErrorTypeDef
 
 ```python title="Usage Example"
@@ -98,24 +103,6 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
-```
-
-## CreateAttendeeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import CreateAttendeeRequestRequestTypeDef
-
-def get_value() -> CreateAttendeeRequestRequestTypeDef:
-    return {
-        "MeetingId": ...,
-        "ExternalUserId": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAttendeeRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    ExternalUserId: str,
 ```
 
 ## NotificationsConfigurationTypeDef
@@ -325,6 +312,107 @@ class StopMeetingTranscriptionRequestRequestTypeDef(TypedDict):
     MeetingId: str,
 ```
 
+## AttendeeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef
+
+def get_value() -> AttendeeTypeDef:
+    return {
+        "ExternalUserId": ...,
+    }
+```
+
+```python title="Definition"
+class AttendeeTypeDef(TypedDict):
+    ExternalUserId: NotRequired[str],
+    AttendeeId: NotRequired[str],
+    JoinToken: NotRequired[str],
+    Capabilities: NotRequired[AttendeeCapabilitiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AttendeeCapabilitiesTypeDef](./type_defs.md#attendeecapabilitiestypedef) 
+## CreateAttendeeRequestItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import CreateAttendeeRequestItemTypeDef
+
+def get_value() -> CreateAttendeeRequestItemTypeDef:
+    return {
+        "ExternalUserId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAttendeeRequestItemTypeDef(TypedDict):
+    ExternalUserId: str,
+    Capabilities: NotRequired[AttendeeCapabilitiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AttendeeCapabilitiesTypeDef](./type_defs.md#attendeecapabilitiestypedef) 
+## CreateAttendeeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import CreateAttendeeRequestRequestTypeDef
+
+def get_value() -> CreateAttendeeRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "ExternalUserId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAttendeeRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    ExternalUserId: str,
+    Capabilities: NotRequired[AttendeeCapabilitiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AttendeeCapabilitiesTypeDef](./type_defs.md#attendeecapabilitiestypedef) 
+## UpdateAttendeeCapabilitiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import UpdateAttendeeCapabilitiesRequestRequestTypeDef
+
+def get_value() -> UpdateAttendeeCapabilitiesRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "AttendeeId": ...,
+        "Capabilities": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAttendeeCapabilitiesRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    AttendeeId: str,
+    Capabilities: AttendeeCapabilitiesTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: AttendeeCapabilitiesTypeDef](./type_defs.md#attendeecapabilitiestypedef) 
+## BatchUpdateAttendeeCapabilitiesExceptRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import BatchUpdateAttendeeCapabilitiesExceptRequestRequestTypeDef
+
+def get_value() -> BatchUpdateAttendeeCapabilitiesExceptRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "ExcludedAttendeeIds": ...,
+        "Capabilities": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateAttendeeCapabilitiesExceptRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    ExcludedAttendeeIds: Sequence[AttendeeIdItemTypeDef],  # (1)
+    Capabilities: AttendeeCapabilitiesTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttendeeIdItemTypeDef](./type_defs.md#attendeeiditemtypedef) 
+2. See [:material-code-braces: AttendeeCapabilitiesTypeDef](./type_defs.md#attendeecapabilitiestypedef) 
 ## MeetingFeaturesConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -342,25 +430,42 @@ class MeetingFeaturesConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AudioFeaturesTypeDef](./type_defs.md#audiofeaturestypedef) 
-## BatchCreateAttendeeRequestRequestTypeDef
+## EmptyResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import BatchCreateAttendeeRequestRequestTypeDef
+from mypy_boto3_chime_sdk_meetings.type_defs import EmptyResponseMetadataTypeDef
 
-def get_value() -> BatchCreateAttendeeRequestRequestTypeDef:
+def get_value() -> EmptyResponseMetadataTypeDef:
     return {
-        "MeetingId": ...,
-        "Attendees": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class BatchCreateAttendeeRequestRequestTypeDef(TypedDict):
-    MeetingId: str,
-    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TranscriptionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import TranscriptionConfigurationTypeDef
+
+def get_value() -> TranscriptionConfigurationTypeDef:
+    return {
+        "EngineTranscribeSettings": ...,
+    }
+```
+
+```python title="Definition"
+class TranscriptionConfigurationTypeDef(TypedDict):
+    EngineTranscribeSettings: NotRequired[EngineTranscribeSettingsTypeDef],  # (1)
+    EngineTranscribeMedicalSettings: NotRequired[EngineTranscribeMedicalSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EngineTranscribeSettingsTypeDef](./type_defs.md#enginetranscribesettingstypedef) 
+2. See [:material-code-braces: EngineTranscribeMedicalSettingsTypeDef](./type_defs.md#enginetranscribemedicalsettingstypedef) 
 ## BatchCreateAttendeeResponseTypeDef
 
 ```python title="Usage Example"
@@ -404,23 +509,6 @@ class CreateAttendeeResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EmptyResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import EmptyResponseMetadataTypeDef
-
-def get_value() -> EmptyResponseMetadataTypeDef:
-    return {
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EmptyResponseMetadataTypeDef(TypedDict):
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAttendeeResponseTypeDef
 
 ```python title="Usage Example"
@@ -463,25 +551,45 @@ class ListAttendeesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TranscriptionConfigurationTypeDef
+## UpdateAttendeeCapabilitiesResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_chime_sdk_meetings.type_defs import TranscriptionConfigurationTypeDef
+from mypy_boto3_chime_sdk_meetings.type_defs import UpdateAttendeeCapabilitiesResponseTypeDef
 
-def get_value() -> TranscriptionConfigurationTypeDef:
+def get_value() -> UpdateAttendeeCapabilitiesResponseTypeDef:
     return {
-        "EngineTranscribeSettings": ...,
+        "Attendee": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class TranscriptionConfigurationTypeDef(TypedDict):
-    EngineTranscribeSettings: NotRequired[EngineTranscribeSettingsTypeDef],  # (1)
-    EngineTranscribeMedicalSettings: NotRequired[EngineTranscribeMedicalSettingsTypeDef],  # (2)
+class UpdateAttendeeCapabilitiesResponseTypeDef(TypedDict):
+    Attendee: AttendeeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: EngineTranscribeSettingsTypeDef](./type_defs.md#enginetranscribesettingstypedef) 
-2. See [:material-code-braces: EngineTranscribeMedicalSettingsTypeDef](./type_defs.md#enginetranscribemedicalsettingstypedef) 
+1. See [:material-code-braces: AttendeeTypeDef](./type_defs.md#attendeetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchCreateAttendeeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import BatchCreateAttendeeRequestRequestTypeDef
+
+def get_value() -> BatchCreateAttendeeRequestRequestTypeDef:
+    return {
+        "MeetingId": ...,
+        "Attendees": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateAttendeeRequestRequestTypeDef(TypedDict):
+    MeetingId: str,
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
 ## CreateMeetingRequestRequestTypeDef
 
 ```python title="Usage Example"

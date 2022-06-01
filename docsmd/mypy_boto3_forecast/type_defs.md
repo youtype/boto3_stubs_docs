@@ -1186,27 +1186,6 @@ class CreateDatasetGroupRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateForecastRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_forecast.type_defs import CreateForecastRequestRequestTypeDef
-
-def get_value() -> CreateForecastRequestRequestTypeDef:
-    return {
-        "ForecastName": ...,
-        "PredictorArn": ...,
-    }
-```
-
-```python title="Definition"
-class CreateForecastRequestRequestTypeDef(TypedDict):
-    ForecastName: str,
-    PredictorArn: str,
-    ForecastTypes: NotRequired[Sequence[str]],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMonitorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1487,43 +1466,6 @@ class DescribeDatasetGroupResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeForecastResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_forecast.type_defs import DescribeForecastResponseTypeDef
-
-def get_value() -> DescribeForecastResponseTypeDef:
-    return {
-        "ForecastArn": ...,
-        "ForecastName": ...,
-        "ForecastTypes": ...,
-        "PredictorArn": ...,
-        "DatasetGroupArn": ...,
-        "EstimatedTimeRemainingInMinutes": ...,
-        "Status": ...,
-        "Message": ...,
-        "CreationTime": ...,
-        "LastModificationTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeForecastResponseTypeDef(TypedDict):
-    ForecastArn: str,
-    ForecastName: str,
-    ForecastTypes: List[str],
-    PredictorArn: str,
-    DatasetGroupArn: str,
-    EstimatedTimeRemainingInMinutes: int,
-    Status: str,
-    Message: str,
-    CreationTime: datetime,
-    LastModificationTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EmptyResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -2406,6 +2348,7 @@ class CreateExplainabilityExportRequestRequestTypeDef(TypedDict):
     ExplainabilityArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Format: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
@@ -2429,6 +2372,7 @@ class CreateForecastExportJobRequestRequestTypeDef(TypedDict):
     ForecastArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Format: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
@@ -2452,6 +2396,7 @@ class CreatePredictorBacktestExportJobRequestRequestTypeDef(TypedDict):
     PredictorArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Format: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
@@ -2471,6 +2416,7 @@ def get_value() -> DescribeExplainabilityExportResponseTypeDef:
         "Status": ...,
         "CreationTime": ...,
         "LastModificationTime": ...,
+        "Format": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2485,6 +2431,7 @@ class DescribeExplainabilityExportResponseTypeDef(TypedDict):
     Status: str,
     CreationTime: datetime,
     LastModificationTime: datetime,
+    Format: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -2505,6 +2452,7 @@ def get_value() -> DescribeForecastExportJobResponseTypeDef:
         "Status": ...,
         "CreationTime": ...,
         "LastModificationTime": ...,
+        "Format": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2519,6 +2467,7 @@ class DescribeForecastExportJobResponseTypeDef(TypedDict):
     Status: str,
     CreationTime: datetime,
     LastModificationTime: datetime,
+    Format: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -2539,6 +2488,7 @@ def get_value() -> DescribePredictorBacktestExportJobResponseTypeDef:
         "Status": ...,
         "CreationTime": ...,
         "LastModificationTime": ...,
+        "Format": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2553,6 +2503,7 @@ class DescribePredictorBacktestExportJobResponseTypeDef(TypedDict):
     Status: str,
     CreationTime: datetime,
     LastModificationTime: datetime,
+    Format: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -2650,6 +2601,7 @@ class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
     UseGeolocationForTimeZone: NotRequired[bool],
     GeolocationFormat: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Format: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
@@ -2699,6 +2651,7 @@ def get_value() -> DescribeDatasetImportJobResponseTypeDef:
         "Message": ...,
         "CreationTime": ...,
         "LastModificationTime": ...,
+        "Format": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2720,6 +2673,7 @@ class DescribeDatasetImportJobResponseTypeDef(TypedDict):
     Message: str,
     CreationTime: datetime,
     LastModificationTime: datetime,
+    Format: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
@@ -2994,6 +2948,26 @@ class DescribeExplainabilityResponseTypeDef(TypedDict):
 2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TimeSeriesIdentifiersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeSeriesIdentifiersTypeDef
+
+def get_value() -> TimeSeriesIdentifiersTypeDef:
+    return {
+        "DataSource": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesIdentifiersTypeDef(TypedDict):
+    DataSource: NotRequired[DataSourceTypeDef],  # (1)
+    Schema: NotRequired[SchemaTypeDef],  # (2)
+    Format: NotRequired[str],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
 ## DescribeMonitorResponseTypeDef
 
 ```python title="Usage Example"
@@ -3254,6 +3228,23 @@ class DescribePredictorResponseTypeDef(TypedDict):
 7. See [:material-code-braces: PredictorExecutionDetailsTypeDef](./type_defs.md#predictorexecutiondetailstypedef) 
 8. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TimeSeriesSelectorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeSeriesSelectorTypeDef
+
+def get_value() -> TimeSeriesSelectorTypeDef:
+    return {
+        "TimeSeriesIdentifiers": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesSelectorTypeDef(TypedDict):
+    TimeSeriesIdentifiers: NotRequired[TimeSeriesIdentifiersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TimeSeriesIdentifiersTypeDef](./type_defs.md#timeseriesidentifierstypedef) 
 ## GetAccuracyMetricsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3282,3 +3273,66 @@ class GetAccuracyMetricsResponseTypeDef(TypedDict):
 2. See [:material-code-brackets: AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype) 
 3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateForecastRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateForecastRequestRequestTypeDef
+
+def get_value() -> CreateForecastRequestRequestTypeDef:
+    return {
+        "ForecastName": ...,
+        "PredictorArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateForecastRequestRequestTypeDef(TypedDict):
+    ForecastName: str,
+    PredictorArn: str,
+    ForecastTypes: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    TimeSeriesSelector: NotRequired[TimeSeriesSelectorTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+## DescribeForecastResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeForecastResponseTypeDef
+
+def get_value() -> DescribeForecastResponseTypeDef:
+    return {
+        "ForecastArn": ...,
+        "ForecastName": ...,
+        "ForecastTypes": ...,
+        "PredictorArn": ...,
+        "DatasetGroupArn": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "TimeSeriesSelector": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeForecastResponseTypeDef(TypedDict):
+    ForecastArn: str,
+    ForecastName: str,
+    ForecastTypes: List[str],
+    PredictorArn: str,
+    DatasetGroupArn: str,
+    EstimatedTimeRemainingInMinutes: int,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    TimeSeriesSelector: TimeSeriesSelectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

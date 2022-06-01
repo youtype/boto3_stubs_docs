@@ -36167,12 +36167,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">MeetingFeatureStatusType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">MediaCapabilitiesType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MeetingFeatureStatusType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;AVAILABLE&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MediaCapabilitiesType</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;None&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#mediacapabilitiestype">MediaCapabilitiesType</a></li>
 <li><a href="literals/#meetingfeaturestatustype">MeetingFeatureStatusType</a></li>
 <li><a href="literals/#transcribecontentidentificationtypetype">TranscribeContentIdentificationTypeType</a></li>
 <li><a href="literals/#transcribecontentredactiontypetype">TranscribeContentRedactionTypeType</a></li>
@@ -36192,20 +36193,21 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.type_defs</span> <span class="kn">import</span> <span class="n">AttendeeTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.type_defs</span> <span class="kn">import</span> <span class="n">AttendeeCapabilitiesTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AttendeeTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AttendeeCapabilitiesTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;ExternalUserId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Audio&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;Video&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="s2">&quot;Content&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#attendeetypedef">AttendeeTypeDef</a></li>
+<li><a href="type_defs/#attendeecapabilitiestypedef">AttendeeCapabilitiesTypeDef</a></li>
+<li><a href="type_defs/#attendeeiditemtypedef">AttendeeIdItemTypeDef</a></li>
 <li><a href="type_defs/#audiofeaturestypedef">AudioFeaturesTypeDef</a></li>
-<li><a href="type_defs/#createattendeerequestitemtypedef">CreateAttendeeRequestItemTypeDef</a></li>
 <li><a href="type_defs/#createattendeeerrortypedef">CreateAttendeeErrorTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#createattendeerequestrequesttypedef">CreateAttendeeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#notificationsconfigurationtypedef">NotificationsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#deleteattendeerequestrequesttypedef">DeleteAttendeeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemeetingrequestrequesttypedef">DeleteMeetingRequestRequestTypeDef</a></li>
@@ -36216,14 +36218,20 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listattendeesrequestrequesttypedef">ListAttendeesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#mediaplacementtypedef">MediaPlacementTypeDef</a></li>
 <li><a href="type_defs/#stopmeetingtranscriptionrequestrequesttypedef">StopMeetingTranscriptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#attendeetypedef">AttendeeTypeDef</a></li>
+<li><a href="type_defs/#createattendeerequestitemtypedef">CreateAttendeeRequestItemTypeDef</a></li>
+<li><a href="type_defs/#createattendeerequestrequesttypedef">CreateAttendeeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateattendeecapabilitiesrequestrequesttypedef">UpdateAttendeeCapabilitiesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchupdateattendeecapabilitiesexceptrequestrequesttypedef">BatchUpdateAttendeeCapabilitiesExceptRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#meetingfeaturesconfigurationtypedef">MeetingFeaturesConfigurationTypeDef</a></li>
-<li><a href="type_defs/#batchcreateattendeerequestrequesttypedef">BatchCreateAttendeeRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#transcriptionconfigurationtypedef">TranscriptionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#batchcreateattendeeresponsetypedef">BatchCreateAttendeeResponseTypeDef</a></li>
 <li><a href="type_defs/#createattendeeresponsetypedef">CreateAttendeeResponseTypeDef</a></li>
-<li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#getattendeeresponsetypedef">GetAttendeeResponseTypeDef</a></li>
 <li><a href="type_defs/#listattendeesresponsetypedef">ListAttendeesResponseTypeDef</a></li>
-<li><a href="type_defs/#transcriptionconfigurationtypedef">TranscriptionConfigurationTypeDef</a></li>
+<li><a href="type_defs/#updateattendeecapabilitiesresponsetypedef">UpdateAttendeeCapabilitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#batchcreateattendeerequestrequesttypedef">BatchCreateAttendeeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmeetingrequestrequesttypedef">CreateMeetingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmeetingwithattendeesrequestrequesttypedef">CreateMeetingWithAttendeesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#meetingtypedef">MeetingTypeDef</a></li>

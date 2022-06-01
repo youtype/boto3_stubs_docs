@@ -214,6 +214,7 @@ def create_dataset_import_job(
     UseGeolocationForTimeZone: bool = ...,
     GeolocationFormat: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    Format: str = ...,
 ) -> CreateDatasetImportJobResponseTypeDef:  # (3)
     ...
 ```
@@ -294,6 +295,7 @@ def create_explainability_export(
     ExplainabilityArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    Format: str = ...,
 ) -> CreateExplainabilityExportResponseTypeDef:  # (3)
     ...
 ```
@@ -331,12 +333,14 @@ def create_forecast(
     PredictorArn: str,
     ForecastTypes: Sequence[str] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
-) -> CreateForecastResponseTypeDef:  # (2)
+    TimeSeriesSelector: TimeSeriesSelectorTypeDef = ...,  # (2)
+) -> CreateForecastResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef) 
+2. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+3. See [:material-code-braces: CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -366,6 +370,7 @@ def create_forecast_export_job(
     ForecastArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    Format: str = ...,
 ) -> CreateForecastExportJobResponseTypeDef:  # (3)
     ...
 ```
@@ -490,6 +495,7 @@ def create_predictor_backtest_export_job(
     PredictorArn: str,
     Destination: DataDestinationTypeDef,  # (1)
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    Format: str = ...,
 ) -> CreatePredictorBacktestExportJobResponseTypeDef:  # (3)
     ...
 ```

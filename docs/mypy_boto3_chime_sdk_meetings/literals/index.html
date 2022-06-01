@@ -4587,6 +4587,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mediacapabilitiestype" class="md-nav__link">
+    MediaCapabilitiesType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#meetingfeaturestatustype" class="md-nav__link">
     MeetingFeatureStatusType
   </a>
@@ -36098,6 +36105,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mediacapabilitiestype" class="md-nav__link">
+    MediaCapabilitiesType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#meetingfeaturestatustype" class="md-nav__link">
     MeetingFeatureStatusType
   </a>
@@ -36231,521 +36245,534 @@
 <p>Auto-generated documentation for <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings">ChimeSDKMeetings</a>
 type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-chime-sdk-meetings/">mypy-boto3-chime-sdk-meetings</a>.</p>
 </div>
-<h2 id="meetingfeaturestatustype">MeetingFeatureStatusType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">MeetingFeatureStatusType</span>
+<h2 id="mediacapabilitiestype">MediaCapabilitiesType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">MediaCapabilitiesType</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MeetingFeatureStatusType</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">return</span> <span class="s2">&quot;AVAILABLE&quot;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MediaCapabilitiesType</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">return</span> <span class="s2">&quot;None&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">MeetingFeatureStatusType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="s2">&quot;AVAILABLE&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="s2">&quot;UNAVAILABLE&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">MediaCapabilitiesType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="s2">&quot;None&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="s2">&quot;Receive&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="s2">&quot;Send&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="s2">&quot;SendReceive&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">]</span>
+</code></pre></div>
+<h2 id="meetingfeaturestatustype">MeetingFeatureStatusType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">MeetingFeatureStatusType</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MeetingFeatureStatusType</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">return</span> <span class="s2">&quot;AVAILABLE&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">MeetingFeatureStatusType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="s2">&quot;AVAILABLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="s2">&quot;UNAVAILABLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribecontentidentificationtypetype">TranscribeContentIdentificationTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeContentIdentificationTypeType</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeContentIdentificationTypeType</span><span class="p">:</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">return</span> <span class="s2">&quot;PII&quot;</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">TranscribeContentIdentificationTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="s2">&quot;PII&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">]</span>
-</code></pre></div>
-<h2 id="transcribecontentredactiontypetype">TranscribeContentRedactionTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeContentRedactionTypeType</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeContentIdentificationTypeType</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeContentRedactionTypeType</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeContentIdentificationTypeType</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;PII&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">TranscribeContentRedactionTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">TranscribeContentIdentificationTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="s2">&quot;PII&quot;</span><span class="p">,</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">]</span>
 </code></pre></div>
-<h2 id="transcribelanguagecodetype">TranscribeLanguageCodeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeLanguageCodeType</span>
+<h2 id="transcribecontentredactiontypetype">TranscribeContentRedactionTypeType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeContentRedactionTypeType</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeLanguageCodeType</span><span class="p">:</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="s2">&quot;de-DE&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeContentRedactionTypeType</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="s2">&quot;PII&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">TranscribeLanguageCodeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="s2">&quot;en-AU&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="s2">&quot;en-GB&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="s2">&quot;es-US&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="s2">&quot;fr-CA&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="s2">&quot;fr-FR&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="s2">&quot;it-IT&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="s2">&quot;ja-JP&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="s2">&quot;ko-KR&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="s2">&quot;pt-BR&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="s2">&quot;zh-CN&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">TranscribeContentRedactionTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="s2">&quot;PII&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">]</span>
+</code></pre></div>
+<h2 id="transcribelanguagecodetype">TranscribeLanguageCodeType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeLanguageCodeType</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeLanguageCodeType</span><span class="p">:</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">return</span> <span class="s2">&quot;de-DE&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">TranscribeLanguageCodeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="s2">&quot;en-AU&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="s2">&quot;en-GB&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="s2">&quot;es-US&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="s2">&quot;fr-CA&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="s2">&quot;fr-FR&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="s2">&quot;it-IT&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="s2">&quot;ja-JP&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="s2">&quot;ko-KR&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    <span class="s2">&quot;pt-BR&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="s2">&quot;zh-CN&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribemedicalcontentidentificationtypetype">TranscribeMedicalContentIdentificationTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalContentIdentificationTypeType</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalContentIdentificationTypeType</span><span class="p">:</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">return</span> <span class="s2">&quot;PHI&quot;</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">TranscribeMedicalContentIdentificationTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="s2">&quot;PHI&quot;</span><span class="p">,</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">]</span>
-</code></pre></div>
-<h2 id="transcribemedicallanguagecodetype">TranscribeMedicalLanguageCodeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalLanguageCodeType</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalContentIdentificationTypeType</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalLanguageCodeType</span><span class="p">:</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="k">return</span> <span class="s2">&quot;en-US&quot;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalContentIdentificationTypeType</span><span class="p">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="k">return</span> <span class="s2">&quot;PHI&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">TranscribeMedicalLanguageCodeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">TranscribeMedicalContentIdentificationTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="s2">&quot;PHI&quot;</span><span class="p">,</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">]</span>
 </code></pre></div>
-<h2 id="transcribemedicalregiontype">TranscribeMedicalRegionType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalRegionType</span>
+<h2 id="transcribemedicallanguagecodetype">TranscribeMedicalLanguageCodeType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalLanguageCodeType</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalRegionType</span><span class="p">:</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-southeast-2&quot;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalLanguageCodeType</span><span class="p">:</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">return</span> <span class="s2">&quot;en-US&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">TranscribeMedicalRegionType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">TranscribeMedicalLanguageCodeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">]</span>
+</code></pre></div>
+<h2 id="transcribemedicalregiontype">TranscribeMedicalRegionType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalRegionType</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalRegionType</span><span class="p">:</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-southeast-2&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">TranscribeMedicalRegionType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribemedicalspecialtytype">TranscribeMedicalSpecialtyType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalSpecialtyType</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalSpecialtyType</span><span class="p">:</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">return</span> <span class="s2">&quot;CARDIOLOGY&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalSpecialtyType</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalSpecialtyType</span><span class="p">:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="k">return</span> <span class="s2">&quot;CARDIOLOGY&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">TranscribeMedicalSpecialtyType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="s2">&quot;CARDIOLOGY&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="s2">&quot;NEUROLOGY&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="s2">&quot;ONCOLOGY&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="s2">&quot;PRIMARYCARE&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="s2">&quot;RADIOLOGY&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="s2">&quot;UROLOGY&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">TranscribeMedicalSpecialtyType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="s2">&quot;CARDIOLOGY&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="s2">&quot;NEUROLOGY&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="s2">&quot;ONCOLOGY&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="s2">&quot;PRIMARYCARE&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    <span class="s2">&quot;RADIOLOGY&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="s2">&quot;UROLOGY&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribemedicaltypetype">TranscribeMedicalTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalTypeType</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalTypeType</span><span class="p">:</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="k">return</span> <span class="s2">&quot;CONVERSATION&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeMedicalTypeType</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeMedicalTypeType</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">return</span> <span class="s2">&quot;CONVERSATION&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">TranscribeMedicalTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="s2">&quot;CONVERSATION&quot;</span><span class="p">,</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="s2">&quot;DICTATION&quot;</span><span class="p">,</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">TranscribeMedicalTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="s2">&quot;CONVERSATION&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="s2">&quot;DICTATION&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribepartialresultsstabilitytype">TranscribePartialResultsStabilityType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribePartialResultsStabilityType</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribePartialResultsStabilityType</span><span class="p">:</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">return</span> <span class="s2">&quot;high&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribePartialResultsStabilityType</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribePartialResultsStabilityType</span><span class="p">:</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="k">return</span> <span class="s2">&quot;high&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">TranscribePartialResultsStabilityType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="s2">&quot;high&quot;</span><span class="p">,</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="s2">&quot;low&quot;</span><span class="p">,</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="s2">&quot;medium&quot;</span><span class="p">,</span>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">TranscribePartialResultsStabilityType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcriberegiontype">TranscribeRegionType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeRegionType</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeRegionType</span><span class="p">:</span>
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-northeast-1&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeRegionType</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeRegionType</span><span class="p">:</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-northeast-1&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">TranscribeRegionType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="s2">&quot;ap-northeast-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="s2">&quot;ap-northeast-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="s2">&quot;eu-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="s2">&quot;sa-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">TranscribeRegionType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="s2">&quot;ap-northeast-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="s2">&quot;ap-northeast-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    <span class="s2">&quot;eu-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>    <span class="s2">&quot;sa-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="transcribevocabularyfiltermethodtype">TranscribeVocabularyFilterMethodType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeVocabularyFilterMethodType</span>
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeVocabularyFilterMethodType</span><span class="p">:</span>
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">return</span> <span class="s2">&quot;mask&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">TranscribeVocabularyFilterMethodType</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TranscribeVocabularyFilterMethodType</span><span class="p">:</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="k">return</span> <span class="s2">&quot;mask&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">TranscribeVocabularyFilterMethodType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="s2">&quot;mask&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="s2">&quot;remove&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="s2">&quot;tag&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">TranscribeVocabularyFilterMethodType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="s2">&quot;mask&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="s2">&quot;remove&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="s2">&quot;tag&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="chimesdkmeetingsservicename">ChimeSDKMeetingsServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ChimeSDKMeetingsServiceName</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChimeSDKMeetingsServiceName</span><span class="p">:</span>
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="k">return</span> <span class="s2">&quot;chime-sdk-meetings&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ChimeSDKMeetingsServiceName</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChimeSDKMeetingsServiceName</span><span class="p">:</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="k">return</span> <span class="s2">&quot;chime-sdk-meetings&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">ChimeSDKMeetingsServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">ChimeSDKMeetingsServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="servicename">ServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ServiceName</span>
-<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
-<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServiceName</span><span class="p">:</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="k">return</span> <span class="s2">&quot;accessanalyzer&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ServiceName</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServiceName</span><span class="p">:</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">return</span> <span class="s2">&quot;accessanalyzer&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">ServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="s2">&quot;accessanalyzer&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="s2">&quot;account&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="s2">&quot;acm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    <span class="s2">&quot;acm-pca&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    <span class="s2">&quot;alexaforbusiness&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>    <span class="s2">&quot;amp&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>    <span class="s2">&quot;amplify&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>    <span class="s2">&quot;amplifybackend&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>    <span class="s2">&quot;amplifyuibuilder&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>    <span class="s2">&quot;apigateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>    <span class="s2">&quot;apigatewaymanagementapi&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>    <span class="s2">&quot;apigatewayv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>    <span class="s2">&quot;appconfig&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>    <span class="s2">&quot;appconfigdata&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>    <span class="s2">&quot;appflow&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>    <span class="s2">&quot;appintegrations&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>    <span class="s2">&quot;application-autoscaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>    <span class="s2">&quot;application-insights&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>    <span class="s2">&quot;applicationcostprofiler&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>    <span class="s2">&quot;appmesh&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>    <span class="s2">&quot;apprunner&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>    <span class="s2">&quot;appstream&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>    <span class="s2">&quot;appsync&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>    <span class="s2">&quot;athena&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>    <span class="s2">&quot;auditmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a>    <span class="s2">&quot;autoscaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a>    <span class="s2">&quot;autoscaling-plans&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a>    <span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a>    <span class="s2">&quot;backup-gateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>    <span class="s2">&quot;batch&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-32" name="__codelineno-27-32" href="#__codelineno-27-32"></a>    <span class="s2">&quot;billingconductor&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-33" name="__codelineno-27-33" href="#__codelineno-27-33"></a>    <span class="s2">&quot;braket&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-34" name="__codelineno-27-34" href="#__codelineno-27-34"></a>    <span class="s2">&quot;budgets&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-35" name="__codelineno-27-35" href="#__codelineno-27-35"></a>    <span class="s2">&quot;ce&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-36" name="__codelineno-27-36" href="#__codelineno-27-36"></a>    <span class="s2">&quot;chime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-37" name="__codelineno-27-37" href="#__codelineno-27-37"></a>    <span class="s2">&quot;chime-sdk-identity&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-38" name="__codelineno-27-38" href="#__codelineno-27-38"></a>    <span class="s2">&quot;chime-sdk-media-pipelines&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-39" name="__codelineno-27-39" href="#__codelineno-27-39"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-40" name="__codelineno-27-40" href="#__codelineno-27-40"></a>    <span class="s2">&quot;chime-sdk-messaging&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-41" name="__codelineno-27-41" href="#__codelineno-27-41"></a>    <span class="s2">&quot;cloud9&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-42" name="__codelineno-27-42" href="#__codelineno-27-42"></a>    <span class="s2">&quot;cloudcontrol&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-43" name="__codelineno-27-43" href="#__codelineno-27-43"></a>    <span class="s2">&quot;clouddirectory&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-44" name="__codelineno-27-44" href="#__codelineno-27-44"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-45" name="__codelineno-27-45" href="#__codelineno-27-45"></a>    <span class="s2">&quot;cloudfront&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-46" name="__codelineno-27-46" href="#__codelineno-27-46"></a>    <span class="s2">&quot;cloudhsm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-47" name="__codelineno-27-47" href="#__codelineno-27-47"></a>    <span class="s2">&quot;cloudhsmv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-48" name="__codelineno-27-48" href="#__codelineno-27-48"></a>    <span class="s2">&quot;cloudsearch&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-49" name="__codelineno-27-49" href="#__codelineno-27-49"></a>    <span class="s2">&quot;cloudsearchdomain&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-50" name="__codelineno-27-50" href="#__codelineno-27-50"></a>    <span class="s2">&quot;cloudtrail&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-51" name="__codelineno-27-51" href="#__codelineno-27-51"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-52" name="__codelineno-27-52" href="#__codelineno-27-52"></a>    <span class="s2">&quot;codeartifact&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-53" name="__codelineno-27-53" href="#__codelineno-27-53"></a>    <span class="s2">&quot;codebuild&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-54" name="__codelineno-27-54" href="#__codelineno-27-54"></a>    <span class="s2">&quot;codecommit&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-55" name="__codelineno-27-55" href="#__codelineno-27-55"></a>    <span class="s2">&quot;codedeploy&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-56" name="__codelineno-27-56" href="#__codelineno-27-56"></a>    <span class="s2">&quot;codeguru-reviewer&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-57" name="__codelineno-27-57" href="#__codelineno-27-57"></a>    <span class="s2">&quot;codeguruprofiler&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-58" name="__codelineno-27-58" href="#__codelineno-27-58"></a>    <span class="s2">&quot;codepipeline&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-59" name="__codelineno-27-59" href="#__codelineno-27-59"></a>    <span class="s2">&quot;codestar&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-60" name="__codelineno-27-60" href="#__codelineno-27-60"></a>    <span class="s2">&quot;codestar-connections&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-61" name="__codelineno-27-61" href="#__codelineno-27-61"></a>    <span class="s2">&quot;codestar-notifications&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-62" name="__codelineno-27-62" href="#__codelineno-27-62"></a>    <span class="s2">&quot;cognito-identity&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-63" name="__codelineno-27-63" href="#__codelineno-27-63"></a>    <span class="s2">&quot;cognito-idp&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-64" name="__codelineno-27-64" href="#__codelineno-27-64"></a>    <span class="s2">&quot;cognito-sync&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-65" name="__codelineno-27-65" href="#__codelineno-27-65"></a>    <span class="s2">&quot;comprehend&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-66" name="__codelineno-27-66" href="#__codelineno-27-66"></a>    <span class="s2">&quot;comprehendmedical&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-67" name="__codelineno-27-67" href="#__codelineno-27-67"></a>    <span class="s2">&quot;compute-optimizer&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-68" name="__codelineno-27-68" href="#__codelineno-27-68"></a>    <span class="s2">&quot;config&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-69" name="__codelineno-27-69" href="#__codelineno-27-69"></a>    <span class="s2">&quot;connect&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-70" name="__codelineno-27-70" href="#__codelineno-27-70"></a>    <span class="s2">&quot;connect-contact-lens&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-71" name="__codelineno-27-71" href="#__codelineno-27-71"></a>    <span class="s2">&quot;connectparticipant&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-72" name="__codelineno-27-72" href="#__codelineno-27-72"></a>    <span class="s2">&quot;cur&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-73" name="__codelineno-27-73" href="#__codelineno-27-73"></a>    <span class="s2">&quot;customer-profiles&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-74" name="__codelineno-27-74" href="#__codelineno-27-74"></a>    <span class="s2">&quot;databrew&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-75" name="__codelineno-27-75" href="#__codelineno-27-75"></a>    <span class="s2">&quot;dataexchange&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-76" name="__codelineno-27-76" href="#__codelineno-27-76"></a>    <span class="s2">&quot;datapipeline&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-77" name="__codelineno-27-77" href="#__codelineno-27-77"></a>    <span class="s2">&quot;datasync&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-78" name="__codelineno-27-78" href="#__codelineno-27-78"></a>    <span class="s2">&quot;dax&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-79" name="__codelineno-27-79" href="#__codelineno-27-79"></a>    <span class="s2">&quot;detective&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-80" name="__codelineno-27-80" href="#__codelineno-27-80"></a>    <span class="s2">&quot;devicefarm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-81" name="__codelineno-27-81" href="#__codelineno-27-81"></a>    <span class="s2">&quot;devops-guru&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-82" name="__codelineno-27-82" href="#__codelineno-27-82"></a>    <span class="s2">&quot;directconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-83" name="__codelineno-27-83" href="#__codelineno-27-83"></a>    <span class="s2">&quot;discovery&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-84" name="__codelineno-27-84" href="#__codelineno-27-84"></a>    <span class="s2">&quot;dlm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-85" name="__codelineno-27-85" href="#__codelineno-27-85"></a>    <span class="s2">&quot;dms&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-86" name="__codelineno-27-86" href="#__codelineno-27-86"></a>    <span class="s2">&quot;docdb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-87" name="__codelineno-27-87" href="#__codelineno-27-87"></a>    <span class="s2">&quot;drs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-88" name="__codelineno-27-88" href="#__codelineno-27-88"></a>    <span class="s2">&quot;ds&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-89" name="__codelineno-27-89" href="#__codelineno-27-89"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-90" name="__codelineno-27-90" href="#__codelineno-27-90"></a>    <span class="s2">&quot;dynamodbstreams&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-91" name="__codelineno-27-91" href="#__codelineno-27-91"></a>    <span class="s2">&quot;ebs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-92" name="__codelineno-27-92" href="#__codelineno-27-92"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-93" name="__codelineno-27-93" href="#__codelineno-27-93"></a>    <span class="s2">&quot;ec2-instance-connect&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-94" name="__codelineno-27-94" href="#__codelineno-27-94"></a>    <span class="s2">&quot;ecr&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-95" name="__codelineno-27-95" href="#__codelineno-27-95"></a>    <span class="s2">&quot;ecr-public&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-96" name="__codelineno-27-96" href="#__codelineno-27-96"></a>    <span class="s2">&quot;ecs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-97" name="__codelineno-27-97" href="#__codelineno-27-97"></a>    <span class="s2">&quot;efs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-98" name="__codelineno-27-98" href="#__codelineno-27-98"></a>    <span class="s2">&quot;eks&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-99" name="__codelineno-27-99" href="#__codelineno-27-99"></a>    <span class="s2">&quot;elastic-inference&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-100" name="__codelineno-27-100" href="#__codelineno-27-100"></a>    <span class="s2">&quot;elasticache&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-101" name="__codelineno-27-101" href="#__codelineno-27-101"></a>    <span class="s2">&quot;elasticbeanstalk&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-102" name="__codelineno-27-102" href="#__codelineno-27-102"></a>    <span class="s2">&quot;elastictranscoder&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-103" name="__codelineno-27-103" href="#__codelineno-27-103"></a>    <span class="s2">&quot;elb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-104" name="__codelineno-27-104" href="#__codelineno-27-104"></a>    <span class="s2">&quot;elbv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-105" name="__codelineno-27-105" href="#__codelineno-27-105"></a>    <span class="s2">&quot;emr&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-106" name="__codelineno-27-106" href="#__codelineno-27-106"></a>    <span class="s2">&quot;emr-containers&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-107" name="__codelineno-27-107" href="#__codelineno-27-107"></a>    <span class="s2">&quot;emr-serverless&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-108" name="__codelineno-27-108" href="#__codelineno-27-108"></a>    <span class="s2">&quot;es&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-109" name="__codelineno-27-109" href="#__codelineno-27-109"></a>    <span class="s2">&quot;events&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-110" name="__codelineno-27-110" href="#__codelineno-27-110"></a>    <span class="s2">&quot;evidently&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-111" name="__codelineno-27-111" href="#__codelineno-27-111"></a>    <span class="s2">&quot;finspace&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-112" name="__codelineno-27-112" href="#__codelineno-27-112"></a>    <span class="s2">&quot;finspace-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-113" name="__codelineno-27-113" href="#__codelineno-27-113"></a>    <span class="s2">&quot;firehose&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-114" name="__codelineno-27-114" href="#__codelineno-27-114"></a>    <span class="s2">&quot;fis&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-115" name="__codelineno-27-115" href="#__codelineno-27-115"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-116" name="__codelineno-27-116" href="#__codelineno-27-116"></a>    <span class="s2">&quot;forecast&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-117" name="__codelineno-27-117" href="#__codelineno-27-117"></a>    <span class="s2">&quot;forecastquery&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-118" name="__codelineno-27-118" href="#__codelineno-27-118"></a>    <span class="s2">&quot;frauddetector&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-119" name="__codelineno-27-119" href="#__codelineno-27-119"></a>    <span class="s2">&quot;fsx&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-120" name="__codelineno-27-120" href="#__codelineno-27-120"></a>    <span class="s2">&quot;gamelift&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-121" name="__codelineno-27-121" href="#__codelineno-27-121"></a>    <span class="s2">&quot;gamesparks&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-122" name="__codelineno-27-122" href="#__codelineno-27-122"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-123" name="__codelineno-27-123" href="#__codelineno-27-123"></a>    <span class="s2">&quot;globalaccelerator&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-124" name="__codelineno-27-124" href="#__codelineno-27-124"></a>    <span class="s2">&quot;glue&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-125" name="__codelineno-27-125" href="#__codelineno-27-125"></a>    <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-126" name="__codelineno-27-126" href="#__codelineno-27-126"></a>    <span class="s2">&quot;greengrass&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-127" name="__codelineno-27-127" href="#__codelineno-27-127"></a>    <span class="s2">&quot;greengrassv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-128" name="__codelineno-27-128" href="#__codelineno-27-128"></a>    <span class="s2">&quot;groundstation&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-129" name="__codelineno-27-129" href="#__codelineno-27-129"></a>    <span class="s2">&quot;guardduty&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-130" name="__codelineno-27-130" href="#__codelineno-27-130"></a>    <span class="s2">&quot;health&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-131" name="__codelineno-27-131" href="#__codelineno-27-131"></a>    <span class="s2">&quot;healthlake&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-132" name="__codelineno-27-132" href="#__codelineno-27-132"></a>    <span class="s2">&quot;honeycode&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-133" name="__codelineno-27-133" href="#__codelineno-27-133"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-134" name="__codelineno-27-134" href="#__codelineno-27-134"></a>    <span class="s2">&quot;identitystore&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-135" name="__codelineno-27-135" href="#__codelineno-27-135"></a>    <span class="s2">&quot;imagebuilder&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-136" name="__codelineno-27-136" href="#__codelineno-27-136"></a>    <span class="s2">&quot;importexport&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-137" name="__codelineno-27-137" href="#__codelineno-27-137"></a>    <span class="s2">&quot;inspector&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-138" name="__codelineno-27-138" href="#__codelineno-27-138"></a>    <span class="s2">&quot;inspector2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-139" name="__codelineno-27-139" href="#__codelineno-27-139"></a>    <span class="s2">&quot;iot&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-140" name="__codelineno-27-140" href="#__codelineno-27-140"></a>    <span class="s2">&quot;iot-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-141" name="__codelineno-27-141" href="#__codelineno-27-141"></a>    <span class="s2">&quot;iot-jobs-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-142" name="__codelineno-27-142" href="#__codelineno-27-142"></a>    <span class="s2">&quot;iot1click-devices&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-143" name="__codelineno-27-143" href="#__codelineno-27-143"></a>    <span class="s2">&quot;iot1click-projects&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-144" name="__codelineno-27-144" href="#__codelineno-27-144"></a>    <span class="s2">&quot;iotanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-145" name="__codelineno-27-145" href="#__codelineno-27-145"></a>    <span class="s2">&quot;iotdeviceadvisor&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-146" name="__codelineno-27-146" href="#__codelineno-27-146"></a>    <span class="s2">&quot;iotevents&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-147" name="__codelineno-27-147" href="#__codelineno-27-147"></a>    <span class="s2">&quot;iotevents-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-148" name="__codelineno-27-148" href="#__codelineno-27-148"></a>    <span class="s2">&quot;iotfleethub&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-149" name="__codelineno-27-149" href="#__codelineno-27-149"></a>    <span class="s2">&quot;iotsecuretunneling&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-150" name="__codelineno-27-150" href="#__codelineno-27-150"></a>    <span class="s2">&quot;iotsitewise&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-151" name="__codelineno-27-151" href="#__codelineno-27-151"></a>    <span class="s2">&quot;iotthingsgraph&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-152" name="__codelineno-27-152" href="#__codelineno-27-152"></a>    <span class="s2">&quot;iottwinmaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-153" name="__codelineno-27-153" href="#__codelineno-27-153"></a>    <span class="s2">&quot;iotwireless&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-154" name="__codelineno-27-154" href="#__codelineno-27-154"></a>    <span class="s2">&quot;ivs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-155" name="__codelineno-27-155" href="#__codelineno-27-155"></a>    <span class="s2">&quot;ivschat&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-156" name="__codelineno-27-156" href="#__codelineno-27-156"></a>    <span class="s2">&quot;kafka&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-157" name="__codelineno-27-157" href="#__codelineno-27-157"></a>    <span class="s2">&quot;kafkaconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-158" name="__codelineno-27-158" href="#__codelineno-27-158"></a>    <span class="s2">&quot;kendra&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-159" name="__codelineno-27-159" href="#__codelineno-27-159"></a>    <span class="s2">&quot;keyspaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-160" name="__codelineno-27-160" href="#__codelineno-27-160"></a>    <span class="s2">&quot;kinesis&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-161" name="__codelineno-27-161" href="#__codelineno-27-161"></a>    <span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-162" name="__codelineno-27-162" href="#__codelineno-27-162"></a>    <span class="s2">&quot;kinesis-video-media&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-163" name="__codelineno-27-163" href="#__codelineno-27-163"></a>    <span class="s2">&quot;kinesis-video-signaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-164" name="__codelineno-27-164" href="#__codelineno-27-164"></a>    <span class="s2">&quot;kinesisanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-165" name="__codelineno-27-165" href="#__codelineno-27-165"></a>    <span class="s2">&quot;kinesisanalyticsv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-166" name="__codelineno-27-166" href="#__codelineno-27-166"></a>    <span class="s2">&quot;kinesisvideo&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-167" name="__codelineno-27-167" href="#__codelineno-27-167"></a>    <span class="s2">&quot;kms&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-168" name="__codelineno-27-168" href="#__codelineno-27-168"></a>    <span class="s2">&quot;lakeformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-169" name="__codelineno-27-169" href="#__codelineno-27-169"></a>    <span class="s2">&quot;lambda&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-170" name="__codelineno-27-170" href="#__codelineno-27-170"></a>    <span class="s2">&quot;lex-models&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-171" name="__codelineno-27-171" href="#__codelineno-27-171"></a>    <span class="s2">&quot;lex-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-172" name="__codelineno-27-172" href="#__codelineno-27-172"></a>    <span class="s2">&quot;lexv2-models&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-173" name="__codelineno-27-173" href="#__codelineno-27-173"></a>    <span class="s2">&quot;lexv2-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-174" name="__codelineno-27-174" href="#__codelineno-27-174"></a>    <span class="s2">&quot;license-manager&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-175" name="__codelineno-27-175" href="#__codelineno-27-175"></a>    <span class="s2">&quot;lightsail&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-176" name="__codelineno-27-176" href="#__codelineno-27-176"></a>    <span class="s2">&quot;location&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-177" name="__codelineno-27-177" href="#__codelineno-27-177"></a>    <span class="s2">&quot;logs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-178" name="__codelineno-27-178" href="#__codelineno-27-178"></a>    <span class="s2">&quot;lookoutequipment&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-179" name="__codelineno-27-179" href="#__codelineno-27-179"></a>    <span class="s2">&quot;lookoutmetrics&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-180" name="__codelineno-27-180" href="#__codelineno-27-180"></a>    <span class="s2">&quot;lookoutvision&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-181" name="__codelineno-27-181" href="#__codelineno-27-181"></a>    <span class="s2">&quot;machinelearning&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-182" name="__codelineno-27-182" href="#__codelineno-27-182"></a>    <span class="s2">&quot;macie&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-183" name="__codelineno-27-183" href="#__codelineno-27-183"></a>    <span class="s2">&quot;macie2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-184" name="__codelineno-27-184" href="#__codelineno-27-184"></a>    <span class="s2">&quot;managedblockchain&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-185" name="__codelineno-27-185" href="#__codelineno-27-185"></a>    <span class="s2">&quot;marketplace-catalog&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-186" name="__codelineno-27-186" href="#__codelineno-27-186"></a>    <span class="s2">&quot;marketplace-entitlement&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-187" name="__codelineno-27-187" href="#__codelineno-27-187"></a>    <span class="s2">&quot;marketplacecommerceanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-188" name="__codelineno-27-188" href="#__codelineno-27-188"></a>    <span class="s2">&quot;mediaconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-189" name="__codelineno-27-189" href="#__codelineno-27-189"></a>    <span class="s2">&quot;mediaconvert&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-190" name="__codelineno-27-190" href="#__codelineno-27-190"></a>    <span class="s2">&quot;medialive&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-191" name="__codelineno-27-191" href="#__codelineno-27-191"></a>    <span class="s2">&quot;mediapackage&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-192" name="__codelineno-27-192" href="#__codelineno-27-192"></a>    <span class="s2">&quot;mediapackage-vod&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-193" name="__codelineno-27-193" href="#__codelineno-27-193"></a>    <span class="s2">&quot;mediastore&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-194" name="__codelineno-27-194" href="#__codelineno-27-194"></a>    <span class="s2">&quot;mediastore-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-195" name="__codelineno-27-195" href="#__codelineno-27-195"></a>    <span class="s2">&quot;mediatailor&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-196" name="__codelineno-27-196" href="#__codelineno-27-196"></a>    <span class="s2">&quot;memorydb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-197" name="__codelineno-27-197" href="#__codelineno-27-197"></a>    <span class="s2">&quot;meteringmarketplace&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-198" name="__codelineno-27-198" href="#__codelineno-27-198"></a>    <span class="s2">&quot;mgh&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-199" name="__codelineno-27-199" href="#__codelineno-27-199"></a>    <span class="s2">&quot;mgn&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-200" name="__codelineno-27-200" href="#__codelineno-27-200"></a>    <span class="s2">&quot;migration-hub-refactor-spaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-201" name="__codelineno-27-201" href="#__codelineno-27-201"></a>    <span class="s2">&quot;migrationhub-config&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-202" name="__codelineno-27-202" href="#__codelineno-27-202"></a>    <span class="s2">&quot;migrationhubstrategy&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-203" name="__codelineno-27-203" href="#__codelineno-27-203"></a>    <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-204" name="__codelineno-27-204" href="#__codelineno-27-204"></a>    <span class="s2">&quot;mq&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-205" name="__codelineno-27-205" href="#__codelineno-27-205"></a>    <span class="s2">&quot;mturk&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-206" name="__codelineno-27-206" href="#__codelineno-27-206"></a>    <span class="s2">&quot;mwaa&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-207" name="__codelineno-27-207" href="#__codelineno-27-207"></a>    <span class="s2">&quot;neptune&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-208" name="__codelineno-27-208" href="#__codelineno-27-208"></a>    <span class="s2">&quot;network-firewall&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-209" name="__codelineno-27-209" href="#__codelineno-27-209"></a>    <span class="s2">&quot;networkmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-210" name="__codelineno-27-210" href="#__codelineno-27-210"></a>    <span class="s2">&quot;nimble&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-211" name="__codelineno-27-211" href="#__codelineno-27-211"></a>    <span class="s2">&quot;opensearch&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-212" name="__codelineno-27-212" href="#__codelineno-27-212"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-213" name="__codelineno-27-213" href="#__codelineno-27-213"></a>    <span class="s2">&quot;opsworkscm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-214" name="__codelineno-27-214" href="#__codelineno-27-214"></a>    <span class="s2">&quot;organizations&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-215" name="__codelineno-27-215" href="#__codelineno-27-215"></a>    <span class="s2">&quot;outposts&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-216" name="__codelineno-27-216" href="#__codelineno-27-216"></a>    <span class="s2">&quot;panorama&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-217" name="__codelineno-27-217" href="#__codelineno-27-217"></a>    <span class="s2">&quot;personalize&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-218" name="__codelineno-27-218" href="#__codelineno-27-218"></a>    <span class="s2">&quot;personalize-events&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-219" name="__codelineno-27-219" href="#__codelineno-27-219"></a>    <span class="s2">&quot;personalize-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-220" name="__codelineno-27-220" href="#__codelineno-27-220"></a>    <span class="s2">&quot;pi&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-221" name="__codelineno-27-221" href="#__codelineno-27-221"></a>    <span class="s2">&quot;pinpoint&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-222" name="__codelineno-27-222" href="#__codelineno-27-222"></a>    <span class="s2">&quot;pinpoint-email&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-223" name="__codelineno-27-223" href="#__codelineno-27-223"></a>    <span class="s2">&quot;pinpoint-sms-voice&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-224" name="__codelineno-27-224" href="#__codelineno-27-224"></a>    <span class="s2">&quot;pinpoint-sms-voice-v2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-225" name="__codelineno-27-225" href="#__codelineno-27-225"></a>    <span class="s2">&quot;polly&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-226" name="__codelineno-27-226" href="#__codelineno-27-226"></a>    <span class="s2">&quot;pricing&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-227" name="__codelineno-27-227" href="#__codelineno-27-227"></a>    <span class="s2">&quot;proton&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-228" name="__codelineno-27-228" href="#__codelineno-27-228"></a>    <span class="s2">&quot;qldb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-229" name="__codelineno-27-229" href="#__codelineno-27-229"></a>    <span class="s2">&quot;qldb-session&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-230" name="__codelineno-27-230" href="#__codelineno-27-230"></a>    <span class="s2">&quot;quicksight&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-231" name="__codelineno-27-231" href="#__codelineno-27-231"></a>    <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-232" name="__codelineno-27-232" href="#__codelineno-27-232"></a>    <span class="s2">&quot;rbin&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-233" name="__codelineno-27-233" href="#__codelineno-27-233"></a>    <span class="s2">&quot;rds&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-234" name="__codelineno-27-234" href="#__codelineno-27-234"></a>    <span class="s2">&quot;rds-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-235" name="__codelineno-27-235" href="#__codelineno-27-235"></a>    <span class="s2">&quot;redshift&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-236" name="__codelineno-27-236" href="#__codelineno-27-236"></a>    <span class="s2">&quot;redshift-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-237" name="__codelineno-27-237" href="#__codelineno-27-237"></a>    <span class="s2">&quot;rekognition&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-238" name="__codelineno-27-238" href="#__codelineno-27-238"></a>    <span class="s2">&quot;resiliencehub&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-239" name="__codelineno-27-239" href="#__codelineno-27-239"></a>    <span class="s2">&quot;resource-groups&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-240" name="__codelineno-27-240" href="#__codelineno-27-240"></a>    <span class="s2">&quot;resourcegroupstaggingapi&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-241" name="__codelineno-27-241" href="#__codelineno-27-241"></a>    <span class="s2">&quot;robomaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-242" name="__codelineno-27-242" href="#__codelineno-27-242"></a>    <span class="s2">&quot;route53&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-243" name="__codelineno-27-243" href="#__codelineno-27-243"></a>    <span class="s2">&quot;route53-recovery-cluster&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-244" name="__codelineno-27-244" href="#__codelineno-27-244"></a>    <span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-245" name="__codelineno-27-245" href="#__codelineno-27-245"></a>    <span class="s2">&quot;route53-recovery-readiness&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-246" name="__codelineno-27-246" href="#__codelineno-27-246"></a>    <span class="s2">&quot;route53domains&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-247" name="__codelineno-27-247" href="#__codelineno-27-247"></a>    <span class="s2">&quot;route53resolver&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-248" name="__codelineno-27-248" href="#__codelineno-27-248"></a>    <span class="s2">&quot;rum&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-249" name="__codelineno-27-249" href="#__codelineno-27-249"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-250" name="__codelineno-27-250" href="#__codelineno-27-250"></a>    <span class="s2">&quot;s3control&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-251" name="__codelineno-27-251" href="#__codelineno-27-251"></a>    <span class="s2">&quot;s3outposts&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-252" name="__codelineno-27-252" href="#__codelineno-27-252"></a>    <span class="s2">&quot;sagemaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-253" name="__codelineno-27-253" href="#__codelineno-27-253"></a>    <span class="s2">&quot;sagemaker-a2i-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-254" name="__codelineno-27-254" href="#__codelineno-27-254"></a>    <span class="s2">&quot;sagemaker-edge&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-255" name="__codelineno-27-255" href="#__codelineno-27-255"></a>    <span class="s2">&quot;sagemaker-featurestore-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-256" name="__codelineno-27-256" href="#__codelineno-27-256"></a>    <span class="s2">&quot;sagemaker-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-257" name="__codelineno-27-257" href="#__codelineno-27-257"></a>    <span class="s2">&quot;savingsplans&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-258" name="__codelineno-27-258" href="#__codelineno-27-258"></a>    <span class="s2">&quot;schemas&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-259" name="__codelineno-27-259" href="#__codelineno-27-259"></a>    <span class="s2">&quot;sdb&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-260" name="__codelineno-27-260" href="#__codelineno-27-260"></a>    <span class="s2">&quot;secretsmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-261" name="__codelineno-27-261" href="#__codelineno-27-261"></a>    <span class="s2">&quot;securityhub&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-262" name="__codelineno-27-262" href="#__codelineno-27-262"></a>    <span class="s2">&quot;serverlessrepo&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-263" name="__codelineno-27-263" href="#__codelineno-27-263"></a>    <span class="s2">&quot;service-quotas&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-264" name="__codelineno-27-264" href="#__codelineno-27-264"></a>    <span class="s2">&quot;servicecatalog&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-265" name="__codelineno-27-265" href="#__codelineno-27-265"></a>    <span class="s2">&quot;servicecatalog-appregistry&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-266" name="__codelineno-27-266" href="#__codelineno-27-266"></a>    <span class="s2">&quot;servicediscovery&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-267" name="__codelineno-27-267" href="#__codelineno-27-267"></a>    <span class="s2">&quot;ses&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-268" name="__codelineno-27-268" href="#__codelineno-27-268"></a>    <span class="s2">&quot;sesv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-269" name="__codelineno-27-269" href="#__codelineno-27-269"></a>    <span class="s2">&quot;shield&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-270" name="__codelineno-27-270" href="#__codelineno-27-270"></a>    <span class="s2">&quot;signer&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-271" name="__codelineno-27-271" href="#__codelineno-27-271"></a>    <span class="s2">&quot;sms&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-272" name="__codelineno-27-272" href="#__codelineno-27-272"></a>    <span class="s2">&quot;sms-voice&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-273" name="__codelineno-27-273" href="#__codelineno-27-273"></a>    <span class="s2">&quot;snow-device-management&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-274" name="__codelineno-27-274" href="#__codelineno-27-274"></a>    <span class="s2">&quot;snowball&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-275" name="__codelineno-27-275" href="#__codelineno-27-275"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-276" name="__codelineno-27-276" href="#__codelineno-27-276"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-277" name="__codelineno-27-277" href="#__codelineno-27-277"></a>    <span class="s2">&quot;ssm&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-278" name="__codelineno-27-278" href="#__codelineno-27-278"></a>    <span class="s2">&quot;ssm-contacts&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-279" name="__codelineno-27-279" href="#__codelineno-27-279"></a>    <span class="s2">&quot;ssm-incidents&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-280" name="__codelineno-27-280" href="#__codelineno-27-280"></a>    <span class="s2">&quot;sso&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-281" name="__codelineno-27-281" href="#__codelineno-27-281"></a>    <span class="s2">&quot;sso-admin&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-282" name="__codelineno-27-282" href="#__codelineno-27-282"></a>    <span class="s2">&quot;sso-oidc&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-283" name="__codelineno-27-283" href="#__codelineno-27-283"></a>    <span class="s2">&quot;stepfunctions&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-284" name="__codelineno-27-284" href="#__codelineno-27-284"></a>    <span class="s2">&quot;storagegateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-285" name="__codelineno-27-285" href="#__codelineno-27-285"></a>    <span class="s2">&quot;sts&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-286" name="__codelineno-27-286" href="#__codelineno-27-286"></a>    <span class="s2">&quot;support&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-287" name="__codelineno-27-287" href="#__codelineno-27-287"></a>    <span class="s2">&quot;swf&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-288" name="__codelineno-27-288" href="#__codelineno-27-288"></a>    <span class="s2">&quot;synthetics&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-289" name="__codelineno-27-289" href="#__codelineno-27-289"></a>    <span class="s2">&quot;textract&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-290" name="__codelineno-27-290" href="#__codelineno-27-290"></a>    <span class="s2">&quot;timestream-query&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-291" name="__codelineno-27-291" href="#__codelineno-27-291"></a>    <span class="s2">&quot;timestream-write&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-292" name="__codelineno-27-292" href="#__codelineno-27-292"></a>    <span class="s2">&quot;transcribe&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-293" name="__codelineno-27-293" href="#__codelineno-27-293"></a>    <span class="s2">&quot;transfer&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-294" name="__codelineno-27-294" href="#__codelineno-27-294"></a>    <span class="s2">&quot;translate&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-295" name="__codelineno-27-295" href="#__codelineno-27-295"></a>    <span class="s2">&quot;voice-id&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-296" name="__codelineno-27-296" href="#__codelineno-27-296"></a>    <span class="s2">&quot;waf&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-297" name="__codelineno-27-297" href="#__codelineno-27-297"></a>    <span class="s2">&quot;waf-regional&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-298" name="__codelineno-27-298" href="#__codelineno-27-298"></a>    <span class="s2">&quot;wafv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-299" name="__codelineno-27-299" href="#__codelineno-27-299"></a>    <span class="s2">&quot;wellarchitected&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-300" name="__codelineno-27-300" href="#__codelineno-27-300"></a>    <span class="s2">&quot;wisdom&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-301" name="__codelineno-27-301" href="#__codelineno-27-301"></a>    <span class="s2">&quot;workdocs&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-302" name="__codelineno-27-302" href="#__codelineno-27-302"></a>    <span class="s2">&quot;worklink&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-303" name="__codelineno-27-303" href="#__codelineno-27-303"></a>    <span class="s2">&quot;workmail&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-304" name="__codelineno-27-304" href="#__codelineno-27-304"></a>    <span class="s2">&quot;workmailmessageflow&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-305" name="__codelineno-27-305" href="#__codelineno-27-305"></a>    <span class="s2">&quot;workspaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-306" name="__codelineno-27-306" href="#__codelineno-27-306"></a>    <span class="s2">&quot;workspaces-web&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-307" name="__codelineno-27-307" href="#__codelineno-27-307"></a>    <span class="s2">&quot;xray&quot;</span><span class="p">,</span>
-<a id="__codelineno-27-308" name="__codelineno-27-308" href="#__codelineno-27-308"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">ServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="s2">&quot;accessanalyzer&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="s2">&quot;account&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="s2">&quot;acm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="s2">&quot;acm-pca&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>    <span class="s2">&quot;alexaforbusiness&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>    <span class="s2">&quot;amp&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="s2">&quot;amplify&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    <span class="s2">&quot;amplifybackend&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>    <span class="s2">&quot;amplifyuibuilder&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>    <span class="s2">&quot;apigateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>    <span class="s2">&quot;apigatewaymanagementapi&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>    <span class="s2">&quot;apigatewayv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>    <span class="s2">&quot;appconfig&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>    <span class="s2">&quot;appconfigdata&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>    <span class="s2">&quot;appflow&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>    <span class="s2">&quot;appintegrations&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>    <span class="s2">&quot;application-autoscaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>    <span class="s2">&quot;application-insights&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>    <span class="s2">&quot;applicationcostprofiler&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>    <span class="s2">&quot;appmesh&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>    <span class="s2">&quot;apprunner&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>    <span class="s2">&quot;appstream&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>    <span class="s2">&quot;appsync&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>    <span class="s2">&quot;athena&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>    <span class="s2">&quot;auditmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>    <span class="s2">&quot;autoscaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>    <span class="s2">&quot;autoscaling-plans&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>    <span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>    <span class="s2">&quot;backup-gateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a>    <span class="s2">&quot;batch&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a>    <span class="s2">&quot;billingconductor&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a>    <span class="s2">&quot;braket&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a>    <span class="s2">&quot;budgets&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a>    <span class="s2">&quot;ce&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a>    <span class="s2">&quot;chime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a>    <span class="s2">&quot;chime-sdk-identity&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-38" name="__codelineno-29-38" href="#__codelineno-29-38"></a>    <span class="s2">&quot;chime-sdk-media-pipelines&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-39" name="__codelineno-29-39" href="#__codelineno-29-39"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-40" name="__codelineno-29-40" href="#__codelineno-29-40"></a>    <span class="s2">&quot;chime-sdk-messaging&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-41" name="__codelineno-29-41" href="#__codelineno-29-41"></a>    <span class="s2">&quot;cloud9&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-42" name="__codelineno-29-42" href="#__codelineno-29-42"></a>    <span class="s2">&quot;cloudcontrol&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-43" name="__codelineno-29-43" href="#__codelineno-29-43"></a>    <span class="s2">&quot;clouddirectory&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-44" name="__codelineno-29-44" href="#__codelineno-29-44"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-45" name="__codelineno-29-45" href="#__codelineno-29-45"></a>    <span class="s2">&quot;cloudfront&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-46" name="__codelineno-29-46" href="#__codelineno-29-46"></a>    <span class="s2">&quot;cloudhsm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-47" name="__codelineno-29-47" href="#__codelineno-29-47"></a>    <span class="s2">&quot;cloudhsmv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-48" name="__codelineno-29-48" href="#__codelineno-29-48"></a>    <span class="s2">&quot;cloudsearch&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-49" name="__codelineno-29-49" href="#__codelineno-29-49"></a>    <span class="s2">&quot;cloudsearchdomain&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-50" name="__codelineno-29-50" href="#__codelineno-29-50"></a>    <span class="s2">&quot;cloudtrail&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-51" name="__codelineno-29-51" href="#__codelineno-29-51"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-52" name="__codelineno-29-52" href="#__codelineno-29-52"></a>    <span class="s2">&quot;codeartifact&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-53" name="__codelineno-29-53" href="#__codelineno-29-53"></a>    <span class="s2">&quot;codebuild&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-54" name="__codelineno-29-54" href="#__codelineno-29-54"></a>    <span class="s2">&quot;codecommit&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-55" name="__codelineno-29-55" href="#__codelineno-29-55"></a>    <span class="s2">&quot;codedeploy&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-56" name="__codelineno-29-56" href="#__codelineno-29-56"></a>    <span class="s2">&quot;codeguru-reviewer&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-57" name="__codelineno-29-57" href="#__codelineno-29-57"></a>    <span class="s2">&quot;codeguruprofiler&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-58" name="__codelineno-29-58" href="#__codelineno-29-58"></a>    <span class="s2">&quot;codepipeline&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-59" name="__codelineno-29-59" href="#__codelineno-29-59"></a>    <span class="s2">&quot;codestar&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-60" name="__codelineno-29-60" href="#__codelineno-29-60"></a>    <span class="s2">&quot;codestar-connections&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-61" name="__codelineno-29-61" href="#__codelineno-29-61"></a>    <span class="s2">&quot;codestar-notifications&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-62" name="__codelineno-29-62" href="#__codelineno-29-62"></a>    <span class="s2">&quot;cognito-identity&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-63" name="__codelineno-29-63" href="#__codelineno-29-63"></a>    <span class="s2">&quot;cognito-idp&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-64" name="__codelineno-29-64" href="#__codelineno-29-64"></a>    <span class="s2">&quot;cognito-sync&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-65" name="__codelineno-29-65" href="#__codelineno-29-65"></a>    <span class="s2">&quot;comprehend&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-66" name="__codelineno-29-66" href="#__codelineno-29-66"></a>    <span class="s2">&quot;comprehendmedical&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-67" name="__codelineno-29-67" href="#__codelineno-29-67"></a>    <span class="s2">&quot;compute-optimizer&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-68" name="__codelineno-29-68" href="#__codelineno-29-68"></a>    <span class="s2">&quot;config&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-69" name="__codelineno-29-69" href="#__codelineno-29-69"></a>    <span class="s2">&quot;connect&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-70" name="__codelineno-29-70" href="#__codelineno-29-70"></a>    <span class="s2">&quot;connect-contact-lens&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-71" name="__codelineno-29-71" href="#__codelineno-29-71"></a>    <span class="s2">&quot;connectparticipant&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-72" name="__codelineno-29-72" href="#__codelineno-29-72"></a>    <span class="s2">&quot;cur&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-73" name="__codelineno-29-73" href="#__codelineno-29-73"></a>    <span class="s2">&quot;customer-profiles&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-74" name="__codelineno-29-74" href="#__codelineno-29-74"></a>    <span class="s2">&quot;databrew&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-75" name="__codelineno-29-75" href="#__codelineno-29-75"></a>    <span class="s2">&quot;dataexchange&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-76" name="__codelineno-29-76" href="#__codelineno-29-76"></a>    <span class="s2">&quot;datapipeline&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-77" name="__codelineno-29-77" href="#__codelineno-29-77"></a>    <span class="s2">&quot;datasync&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-78" name="__codelineno-29-78" href="#__codelineno-29-78"></a>    <span class="s2">&quot;dax&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-79" name="__codelineno-29-79" href="#__codelineno-29-79"></a>    <span class="s2">&quot;detective&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-80" name="__codelineno-29-80" href="#__codelineno-29-80"></a>    <span class="s2">&quot;devicefarm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-81" name="__codelineno-29-81" href="#__codelineno-29-81"></a>    <span class="s2">&quot;devops-guru&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-82" name="__codelineno-29-82" href="#__codelineno-29-82"></a>    <span class="s2">&quot;directconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-83" name="__codelineno-29-83" href="#__codelineno-29-83"></a>    <span class="s2">&quot;discovery&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-84" name="__codelineno-29-84" href="#__codelineno-29-84"></a>    <span class="s2">&quot;dlm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-85" name="__codelineno-29-85" href="#__codelineno-29-85"></a>    <span class="s2">&quot;dms&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-86" name="__codelineno-29-86" href="#__codelineno-29-86"></a>    <span class="s2">&quot;docdb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-87" name="__codelineno-29-87" href="#__codelineno-29-87"></a>    <span class="s2">&quot;drs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-88" name="__codelineno-29-88" href="#__codelineno-29-88"></a>    <span class="s2">&quot;ds&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-89" name="__codelineno-29-89" href="#__codelineno-29-89"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-90" name="__codelineno-29-90" href="#__codelineno-29-90"></a>    <span class="s2">&quot;dynamodbstreams&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-91" name="__codelineno-29-91" href="#__codelineno-29-91"></a>    <span class="s2">&quot;ebs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-92" name="__codelineno-29-92" href="#__codelineno-29-92"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-93" name="__codelineno-29-93" href="#__codelineno-29-93"></a>    <span class="s2">&quot;ec2-instance-connect&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-94" name="__codelineno-29-94" href="#__codelineno-29-94"></a>    <span class="s2">&quot;ecr&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-95" name="__codelineno-29-95" href="#__codelineno-29-95"></a>    <span class="s2">&quot;ecr-public&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-96" name="__codelineno-29-96" href="#__codelineno-29-96"></a>    <span class="s2">&quot;ecs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-97" name="__codelineno-29-97" href="#__codelineno-29-97"></a>    <span class="s2">&quot;efs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-98" name="__codelineno-29-98" href="#__codelineno-29-98"></a>    <span class="s2">&quot;eks&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-99" name="__codelineno-29-99" href="#__codelineno-29-99"></a>    <span class="s2">&quot;elastic-inference&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-100" name="__codelineno-29-100" href="#__codelineno-29-100"></a>    <span class="s2">&quot;elasticache&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-101" name="__codelineno-29-101" href="#__codelineno-29-101"></a>    <span class="s2">&quot;elasticbeanstalk&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-102" name="__codelineno-29-102" href="#__codelineno-29-102"></a>    <span class="s2">&quot;elastictranscoder&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-103" name="__codelineno-29-103" href="#__codelineno-29-103"></a>    <span class="s2">&quot;elb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-104" name="__codelineno-29-104" href="#__codelineno-29-104"></a>    <span class="s2">&quot;elbv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-105" name="__codelineno-29-105" href="#__codelineno-29-105"></a>    <span class="s2">&quot;emr&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-106" name="__codelineno-29-106" href="#__codelineno-29-106"></a>    <span class="s2">&quot;emr-containers&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-107" name="__codelineno-29-107" href="#__codelineno-29-107"></a>    <span class="s2">&quot;emr-serverless&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-108" name="__codelineno-29-108" href="#__codelineno-29-108"></a>    <span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-109" name="__codelineno-29-109" href="#__codelineno-29-109"></a>    <span class="s2">&quot;events&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-110" name="__codelineno-29-110" href="#__codelineno-29-110"></a>    <span class="s2">&quot;evidently&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-111" name="__codelineno-29-111" href="#__codelineno-29-111"></a>    <span class="s2">&quot;finspace&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-112" name="__codelineno-29-112" href="#__codelineno-29-112"></a>    <span class="s2">&quot;finspace-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-113" name="__codelineno-29-113" href="#__codelineno-29-113"></a>    <span class="s2">&quot;firehose&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-114" name="__codelineno-29-114" href="#__codelineno-29-114"></a>    <span class="s2">&quot;fis&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-115" name="__codelineno-29-115" href="#__codelineno-29-115"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-116" name="__codelineno-29-116" href="#__codelineno-29-116"></a>    <span class="s2">&quot;forecast&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-117" name="__codelineno-29-117" href="#__codelineno-29-117"></a>    <span class="s2">&quot;forecastquery&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-118" name="__codelineno-29-118" href="#__codelineno-29-118"></a>    <span class="s2">&quot;frauddetector&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-119" name="__codelineno-29-119" href="#__codelineno-29-119"></a>    <span class="s2">&quot;fsx&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-120" name="__codelineno-29-120" href="#__codelineno-29-120"></a>    <span class="s2">&quot;gamelift&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-121" name="__codelineno-29-121" href="#__codelineno-29-121"></a>    <span class="s2">&quot;gamesparks&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-122" name="__codelineno-29-122" href="#__codelineno-29-122"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-123" name="__codelineno-29-123" href="#__codelineno-29-123"></a>    <span class="s2">&quot;globalaccelerator&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-124" name="__codelineno-29-124" href="#__codelineno-29-124"></a>    <span class="s2">&quot;glue&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-125" name="__codelineno-29-125" href="#__codelineno-29-125"></a>    <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-126" name="__codelineno-29-126" href="#__codelineno-29-126"></a>    <span class="s2">&quot;greengrass&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-127" name="__codelineno-29-127" href="#__codelineno-29-127"></a>    <span class="s2">&quot;greengrassv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-128" name="__codelineno-29-128" href="#__codelineno-29-128"></a>    <span class="s2">&quot;groundstation&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-129" name="__codelineno-29-129" href="#__codelineno-29-129"></a>    <span class="s2">&quot;guardduty&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-130" name="__codelineno-29-130" href="#__codelineno-29-130"></a>    <span class="s2">&quot;health&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-131" name="__codelineno-29-131" href="#__codelineno-29-131"></a>    <span class="s2">&quot;healthlake&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-132" name="__codelineno-29-132" href="#__codelineno-29-132"></a>    <span class="s2">&quot;honeycode&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-133" name="__codelineno-29-133" href="#__codelineno-29-133"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-134" name="__codelineno-29-134" href="#__codelineno-29-134"></a>    <span class="s2">&quot;identitystore&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-135" name="__codelineno-29-135" href="#__codelineno-29-135"></a>    <span class="s2">&quot;imagebuilder&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-136" name="__codelineno-29-136" href="#__codelineno-29-136"></a>    <span class="s2">&quot;importexport&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-137" name="__codelineno-29-137" href="#__codelineno-29-137"></a>    <span class="s2">&quot;inspector&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-138" name="__codelineno-29-138" href="#__codelineno-29-138"></a>    <span class="s2">&quot;inspector2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-139" name="__codelineno-29-139" href="#__codelineno-29-139"></a>    <span class="s2">&quot;iot&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-140" name="__codelineno-29-140" href="#__codelineno-29-140"></a>    <span class="s2">&quot;iot-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-141" name="__codelineno-29-141" href="#__codelineno-29-141"></a>    <span class="s2">&quot;iot-jobs-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-142" name="__codelineno-29-142" href="#__codelineno-29-142"></a>    <span class="s2">&quot;iot1click-devices&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-143" name="__codelineno-29-143" href="#__codelineno-29-143"></a>    <span class="s2">&quot;iot1click-projects&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-144" name="__codelineno-29-144" href="#__codelineno-29-144"></a>    <span class="s2">&quot;iotanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-145" name="__codelineno-29-145" href="#__codelineno-29-145"></a>    <span class="s2">&quot;iotdeviceadvisor&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-146" name="__codelineno-29-146" href="#__codelineno-29-146"></a>    <span class="s2">&quot;iotevents&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-147" name="__codelineno-29-147" href="#__codelineno-29-147"></a>    <span class="s2">&quot;iotevents-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-148" name="__codelineno-29-148" href="#__codelineno-29-148"></a>    <span class="s2">&quot;iotfleethub&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-149" name="__codelineno-29-149" href="#__codelineno-29-149"></a>    <span class="s2">&quot;iotsecuretunneling&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-150" name="__codelineno-29-150" href="#__codelineno-29-150"></a>    <span class="s2">&quot;iotsitewise&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-151" name="__codelineno-29-151" href="#__codelineno-29-151"></a>    <span class="s2">&quot;iotthingsgraph&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-152" name="__codelineno-29-152" href="#__codelineno-29-152"></a>    <span class="s2">&quot;iottwinmaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-153" name="__codelineno-29-153" href="#__codelineno-29-153"></a>    <span class="s2">&quot;iotwireless&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-154" name="__codelineno-29-154" href="#__codelineno-29-154"></a>    <span class="s2">&quot;ivs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-155" name="__codelineno-29-155" href="#__codelineno-29-155"></a>    <span class="s2">&quot;ivschat&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-156" name="__codelineno-29-156" href="#__codelineno-29-156"></a>    <span class="s2">&quot;kafka&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-157" name="__codelineno-29-157" href="#__codelineno-29-157"></a>    <span class="s2">&quot;kafkaconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-158" name="__codelineno-29-158" href="#__codelineno-29-158"></a>    <span class="s2">&quot;kendra&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-159" name="__codelineno-29-159" href="#__codelineno-29-159"></a>    <span class="s2">&quot;keyspaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-160" name="__codelineno-29-160" href="#__codelineno-29-160"></a>    <span class="s2">&quot;kinesis&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-161" name="__codelineno-29-161" href="#__codelineno-29-161"></a>    <span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-162" name="__codelineno-29-162" href="#__codelineno-29-162"></a>    <span class="s2">&quot;kinesis-video-media&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-163" name="__codelineno-29-163" href="#__codelineno-29-163"></a>    <span class="s2">&quot;kinesis-video-signaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-164" name="__codelineno-29-164" href="#__codelineno-29-164"></a>    <span class="s2">&quot;kinesisanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-165" name="__codelineno-29-165" href="#__codelineno-29-165"></a>    <span class="s2">&quot;kinesisanalyticsv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-166" name="__codelineno-29-166" href="#__codelineno-29-166"></a>    <span class="s2">&quot;kinesisvideo&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-167" name="__codelineno-29-167" href="#__codelineno-29-167"></a>    <span class="s2">&quot;kms&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-168" name="__codelineno-29-168" href="#__codelineno-29-168"></a>    <span class="s2">&quot;lakeformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-169" name="__codelineno-29-169" href="#__codelineno-29-169"></a>    <span class="s2">&quot;lambda&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-170" name="__codelineno-29-170" href="#__codelineno-29-170"></a>    <span class="s2">&quot;lex-models&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-171" name="__codelineno-29-171" href="#__codelineno-29-171"></a>    <span class="s2">&quot;lex-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-172" name="__codelineno-29-172" href="#__codelineno-29-172"></a>    <span class="s2">&quot;lexv2-models&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-173" name="__codelineno-29-173" href="#__codelineno-29-173"></a>    <span class="s2">&quot;lexv2-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-174" name="__codelineno-29-174" href="#__codelineno-29-174"></a>    <span class="s2">&quot;license-manager&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-175" name="__codelineno-29-175" href="#__codelineno-29-175"></a>    <span class="s2">&quot;lightsail&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-176" name="__codelineno-29-176" href="#__codelineno-29-176"></a>    <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-177" name="__codelineno-29-177" href="#__codelineno-29-177"></a>    <span class="s2">&quot;logs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-178" name="__codelineno-29-178" href="#__codelineno-29-178"></a>    <span class="s2">&quot;lookoutequipment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-179" name="__codelineno-29-179" href="#__codelineno-29-179"></a>    <span class="s2">&quot;lookoutmetrics&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-180" name="__codelineno-29-180" href="#__codelineno-29-180"></a>    <span class="s2">&quot;lookoutvision&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-181" name="__codelineno-29-181" href="#__codelineno-29-181"></a>    <span class="s2">&quot;machinelearning&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-182" name="__codelineno-29-182" href="#__codelineno-29-182"></a>    <span class="s2">&quot;macie&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-183" name="__codelineno-29-183" href="#__codelineno-29-183"></a>    <span class="s2">&quot;macie2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-184" name="__codelineno-29-184" href="#__codelineno-29-184"></a>    <span class="s2">&quot;managedblockchain&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-185" name="__codelineno-29-185" href="#__codelineno-29-185"></a>    <span class="s2">&quot;marketplace-catalog&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-186" name="__codelineno-29-186" href="#__codelineno-29-186"></a>    <span class="s2">&quot;marketplace-entitlement&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-187" name="__codelineno-29-187" href="#__codelineno-29-187"></a>    <span class="s2">&quot;marketplacecommerceanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-188" name="__codelineno-29-188" href="#__codelineno-29-188"></a>    <span class="s2">&quot;mediaconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-189" name="__codelineno-29-189" href="#__codelineno-29-189"></a>    <span class="s2">&quot;mediaconvert&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-190" name="__codelineno-29-190" href="#__codelineno-29-190"></a>    <span class="s2">&quot;medialive&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-191" name="__codelineno-29-191" href="#__codelineno-29-191"></a>    <span class="s2">&quot;mediapackage&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-192" name="__codelineno-29-192" href="#__codelineno-29-192"></a>    <span class="s2">&quot;mediapackage-vod&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-193" name="__codelineno-29-193" href="#__codelineno-29-193"></a>    <span class="s2">&quot;mediastore&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-194" name="__codelineno-29-194" href="#__codelineno-29-194"></a>    <span class="s2">&quot;mediastore-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-195" name="__codelineno-29-195" href="#__codelineno-29-195"></a>    <span class="s2">&quot;mediatailor&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-196" name="__codelineno-29-196" href="#__codelineno-29-196"></a>    <span class="s2">&quot;memorydb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-197" name="__codelineno-29-197" href="#__codelineno-29-197"></a>    <span class="s2">&quot;meteringmarketplace&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-198" name="__codelineno-29-198" href="#__codelineno-29-198"></a>    <span class="s2">&quot;mgh&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-199" name="__codelineno-29-199" href="#__codelineno-29-199"></a>    <span class="s2">&quot;mgn&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-200" name="__codelineno-29-200" href="#__codelineno-29-200"></a>    <span class="s2">&quot;migration-hub-refactor-spaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-201" name="__codelineno-29-201" href="#__codelineno-29-201"></a>    <span class="s2">&quot;migrationhub-config&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-202" name="__codelineno-29-202" href="#__codelineno-29-202"></a>    <span class="s2">&quot;migrationhubstrategy&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-203" name="__codelineno-29-203" href="#__codelineno-29-203"></a>    <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-204" name="__codelineno-29-204" href="#__codelineno-29-204"></a>    <span class="s2">&quot;mq&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-205" name="__codelineno-29-205" href="#__codelineno-29-205"></a>    <span class="s2">&quot;mturk&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-206" name="__codelineno-29-206" href="#__codelineno-29-206"></a>    <span class="s2">&quot;mwaa&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-207" name="__codelineno-29-207" href="#__codelineno-29-207"></a>    <span class="s2">&quot;neptune&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-208" name="__codelineno-29-208" href="#__codelineno-29-208"></a>    <span class="s2">&quot;network-firewall&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-209" name="__codelineno-29-209" href="#__codelineno-29-209"></a>    <span class="s2">&quot;networkmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-210" name="__codelineno-29-210" href="#__codelineno-29-210"></a>    <span class="s2">&quot;nimble&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-211" name="__codelineno-29-211" href="#__codelineno-29-211"></a>    <span class="s2">&quot;opensearch&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-212" name="__codelineno-29-212" href="#__codelineno-29-212"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-213" name="__codelineno-29-213" href="#__codelineno-29-213"></a>    <span class="s2">&quot;opsworkscm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-214" name="__codelineno-29-214" href="#__codelineno-29-214"></a>    <span class="s2">&quot;organizations&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-215" name="__codelineno-29-215" href="#__codelineno-29-215"></a>    <span class="s2">&quot;outposts&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-216" name="__codelineno-29-216" href="#__codelineno-29-216"></a>    <span class="s2">&quot;panorama&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-217" name="__codelineno-29-217" href="#__codelineno-29-217"></a>    <span class="s2">&quot;personalize&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-218" name="__codelineno-29-218" href="#__codelineno-29-218"></a>    <span class="s2">&quot;personalize-events&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-219" name="__codelineno-29-219" href="#__codelineno-29-219"></a>    <span class="s2">&quot;personalize-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-220" name="__codelineno-29-220" href="#__codelineno-29-220"></a>    <span class="s2">&quot;pi&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-221" name="__codelineno-29-221" href="#__codelineno-29-221"></a>    <span class="s2">&quot;pinpoint&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-222" name="__codelineno-29-222" href="#__codelineno-29-222"></a>    <span class="s2">&quot;pinpoint-email&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-223" name="__codelineno-29-223" href="#__codelineno-29-223"></a>    <span class="s2">&quot;pinpoint-sms-voice&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-224" name="__codelineno-29-224" href="#__codelineno-29-224"></a>    <span class="s2">&quot;pinpoint-sms-voice-v2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-225" name="__codelineno-29-225" href="#__codelineno-29-225"></a>    <span class="s2">&quot;polly&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-226" name="__codelineno-29-226" href="#__codelineno-29-226"></a>    <span class="s2">&quot;pricing&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-227" name="__codelineno-29-227" href="#__codelineno-29-227"></a>    <span class="s2">&quot;proton&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-228" name="__codelineno-29-228" href="#__codelineno-29-228"></a>    <span class="s2">&quot;qldb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-229" name="__codelineno-29-229" href="#__codelineno-29-229"></a>    <span class="s2">&quot;qldb-session&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-230" name="__codelineno-29-230" href="#__codelineno-29-230"></a>    <span class="s2">&quot;quicksight&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-231" name="__codelineno-29-231" href="#__codelineno-29-231"></a>    <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-232" name="__codelineno-29-232" href="#__codelineno-29-232"></a>    <span class="s2">&quot;rbin&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-233" name="__codelineno-29-233" href="#__codelineno-29-233"></a>    <span class="s2">&quot;rds&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-234" name="__codelineno-29-234" href="#__codelineno-29-234"></a>    <span class="s2">&quot;rds-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-235" name="__codelineno-29-235" href="#__codelineno-29-235"></a>    <span class="s2">&quot;redshift&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-236" name="__codelineno-29-236" href="#__codelineno-29-236"></a>    <span class="s2">&quot;redshift-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-237" name="__codelineno-29-237" href="#__codelineno-29-237"></a>    <span class="s2">&quot;rekognition&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-238" name="__codelineno-29-238" href="#__codelineno-29-238"></a>    <span class="s2">&quot;resiliencehub&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-239" name="__codelineno-29-239" href="#__codelineno-29-239"></a>    <span class="s2">&quot;resource-groups&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-240" name="__codelineno-29-240" href="#__codelineno-29-240"></a>    <span class="s2">&quot;resourcegroupstaggingapi&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-241" name="__codelineno-29-241" href="#__codelineno-29-241"></a>    <span class="s2">&quot;robomaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-242" name="__codelineno-29-242" href="#__codelineno-29-242"></a>    <span class="s2">&quot;route53&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-243" name="__codelineno-29-243" href="#__codelineno-29-243"></a>    <span class="s2">&quot;route53-recovery-cluster&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-244" name="__codelineno-29-244" href="#__codelineno-29-244"></a>    <span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-245" name="__codelineno-29-245" href="#__codelineno-29-245"></a>    <span class="s2">&quot;route53-recovery-readiness&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-246" name="__codelineno-29-246" href="#__codelineno-29-246"></a>    <span class="s2">&quot;route53domains&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-247" name="__codelineno-29-247" href="#__codelineno-29-247"></a>    <span class="s2">&quot;route53resolver&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-248" name="__codelineno-29-248" href="#__codelineno-29-248"></a>    <span class="s2">&quot;rum&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-249" name="__codelineno-29-249" href="#__codelineno-29-249"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-250" name="__codelineno-29-250" href="#__codelineno-29-250"></a>    <span class="s2">&quot;s3control&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-251" name="__codelineno-29-251" href="#__codelineno-29-251"></a>    <span class="s2">&quot;s3outposts&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-252" name="__codelineno-29-252" href="#__codelineno-29-252"></a>    <span class="s2">&quot;sagemaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-253" name="__codelineno-29-253" href="#__codelineno-29-253"></a>    <span class="s2">&quot;sagemaker-a2i-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-254" name="__codelineno-29-254" href="#__codelineno-29-254"></a>    <span class="s2">&quot;sagemaker-edge&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-255" name="__codelineno-29-255" href="#__codelineno-29-255"></a>    <span class="s2">&quot;sagemaker-featurestore-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-256" name="__codelineno-29-256" href="#__codelineno-29-256"></a>    <span class="s2">&quot;sagemaker-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-257" name="__codelineno-29-257" href="#__codelineno-29-257"></a>    <span class="s2">&quot;savingsplans&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-258" name="__codelineno-29-258" href="#__codelineno-29-258"></a>    <span class="s2">&quot;schemas&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-259" name="__codelineno-29-259" href="#__codelineno-29-259"></a>    <span class="s2">&quot;sdb&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-260" name="__codelineno-29-260" href="#__codelineno-29-260"></a>    <span class="s2">&quot;secretsmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-261" name="__codelineno-29-261" href="#__codelineno-29-261"></a>    <span class="s2">&quot;securityhub&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-262" name="__codelineno-29-262" href="#__codelineno-29-262"></a>    <span class="s2">&quot;serverlessrepo&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-263" name="__codelineno-29-263" href="#__codelineno-29-263"></a>    <span class="s2">&quot;service-quotas&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-264" name="__codelineno-29-264" href="#__codelineno-29-264"></a>    <span class="s2">&quot;servicecatalog&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-265" name="__codelineno-29-265" href="#__codelineno-29-265"></a>    <span class="s2">&quot;servicecatalog-appregistry&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-266" name="__codelineno-29-266" href="#__codelineno-29-266"></a>    <span class="s2">&quot;servicediscovery&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-267" name="__codelineno-29-267" href="#__codelineno-29-267"></a>    <span class="s2">&quot;ses&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-268" name="__codelineno-29-268" href="#__codelineno-29-268"></a>    <span class="s2">&quot;sesv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-269" name="__codelineno-29-269" href="#__codelineno-29-269"></a>    <span class="s2">&quot;shield&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-270" name="__codelineno-29-270" href="#__codelineno-29-270"></a>    <span class="s2">&quot;signer&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-271" name="__codelineno-29-271" href="#__codelineno-29-271"></a>    <span class="s2">&quot;sms&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-272" name="__codelineno-29-272" href="#__codelineno-29-272"></a>    <span class="s2">&quot;sms-voice&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-273" name="__codelineno-29-273" href="#__codelineno-29-273"></a>    <span class="s2">&quot;snow-device-management&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-274" name="__codelineno-29-274" href="#__codelineno-29-274"></a>    <span class="s2">&quot;snowball&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-275" name="__codelineno-29-275" href="#__codelineno-29-275"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-276" name="__codelineno-29-276" href="#__codelineno-29-276"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-277" name="__codelineno-29-277" href="#__codelineno-29-277"></a>    <span class="s2">&quot;ssm&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-278" name="__codelineno-29-278" href="#__codelineno-29-278"></a>    <span class="s2">&quot;ssm-contacts&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-279" name="__codelineno-29-279" href="#__codelineno-29-279"></a>    <span class="s2">&quot;ssm-incidents&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-280" name="__codelineno-29-280" href="#__codelineno-29-280"></a>    <span class="s2">&quot;sso&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-281" name="__codelineno-29-281" href="#__codelineno-29-281"></a>    <span class="s2">&quot;sso-admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-282" name="__codelineno-29-282" href="#__codelineno-29-282"></a>    <span class="s2">&quot;sso-oidc&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-283" name="__codelineno-29-283" href="#__codelineno-29-283"></a>    <span class="s2">&quot;stepfunctions&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-284" name="__codelineno-29-284" href="#__codelineno-29-284"></a>    <span class="s2">&quot;storagegateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-285" name="__codelineno-29-285" href="#__codelineno-29-285"></a>    <span class="s2">&quot;sts&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-286" name="__codelineno-29-286" href="#__codelineno-29-286"></a>    <span class="s2">&quot;support&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-287" name="__codelineno-29-287" href="#__codelineno-29-287"></a>    <span class="s2">&quot;swf&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-288" name="__codelineno-29-288" href="#__codelineno-29-288"></a>    <span class="s2">&quot;synthetics&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-289" name="__codelineno-29-289" href="#__codelineno-29-289"></a>    <span class="s2">&quot;textract&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-290" name="__codelineno-29-290" href="#__codelineno-29-290"></a>    <span class="s2">&quot;timestream-query&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-291" name="__codelineno-29-291" href="#__codelineno-29-291"></a>    <span class="s2">&quot;timestream-write&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-292" name="__codelineno-29-292" href="#__codelineno-29-292"></a>    <span class="s2">&quot;transcribe&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-293" name="__codelineno-29-293" href="#__codelineno-29-293"></a>    <span class="s2">&quot;transfer&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-294" name="__codelineno-29-294" href="#__codelineno-29-294"></a>    <span class="s2">&quot;translate&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-295" name="__codelineno-29-295" href="#__codelineno-29-295"></a>    <span class="s2">&quot;voice-id&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-296" name="__codelineno-29-296" href="#__codelineno-29-296"></a>    <span class="s2">&quot;waf&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-297" name="__codelineno-29-297" href="#__codelineno-29-297"></a>    <span class="s2">&quot;waf-regional&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-298" name="__codelineno-29-298" href="#__codelineno-29-298"></a>    <span class="s2">&quot;wafv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-299" name="__codelineno-29-299" href="#__codelineno-29-299"></a>    <span class="s2">&quot;wellarchitected&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-300" name="__codelineno-29-300" href="#__codelineno-29-300"></a>    <span class="s2">&quot;wisdom&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-301" name="__codelineno-29-301" href="#__codelineno-29-301"></a>    <span class="s2">&quot;workdocs&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-302" name="__codelineno-29-302" href="#__codelineno-29-302"></a>    <span class="s2">&quot;worklink&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-303" name="__codelineno-29-303" href="#__codelineno-29-303"></a>    <span class="s2">&quot;workmail&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-304" name="__codelineno-29-304" href="#__codelineno-29-304"></a>    <span class="s2">&quot;workmailmessageflow&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-305" name="__codelineno-29-305" href="#__codelineno-29-305"></a>    <span class="s2">&quot;workspaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-306" name="__codelineno-29-306" href="#__codelineno-29-306"></a>    <span class="s2">&quot;workspaces-web&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-307" name="__codelineno-29-307" href="#__codelineno-29-307"></a>    <span class="s2">&quot;xray&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-308" name="__codelineno-29-308" href="#__codelineno-29-308"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="resourceservicename">ResourceServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ResourceServiceName</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceServiceName</span><span class="p">:</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">return</span> <span class="s2">&quot;cloudformation&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">ResourceServiceName</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceServiceName</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="k">return</span> <span class="s2">&quot;cloudformation&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">ResourceServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">ResourceServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="regionname">RegionName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">RegionName</span>
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
-<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegionName</span><span class="p">:</span>
-<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-southeast-1&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_meetings.literals</span> <span class="kn">import</span> <span class="n">RegionName</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegionName</span><span class="p">:</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="k">return</span> <span class="s2">&quot;ap-southeast-1&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">RegionName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="s2">&quot;ap-southeast-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">RegionName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="s2">&quot;ap-southeast-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="p">]</span>
 </code></pre></div>
 
               

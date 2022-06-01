@@ -7,6 +7,132 @@
     Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
     type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
+## ListCidrBlocksPaginator
+
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_cidr_blocks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListCidrBlocks)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrBlocksPaginator
+
+def get_list_cidr_blocks_paginator() -> ListCidrBlocksPaginator:
+    return Session().client("route53").get_paginator("list_cidr_blocks")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCidrBlocksPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CollectionId: str,
+    LocationName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCidrBlocksResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCidrBlocksResponseTypeDef](./type_defs.md#listcidrblocksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrBlocksRequestListCidrBlocksPaginateTypeDef = {  # (1)
+    "CollectionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrBlocksRequestListCidrBlocksPaginateTypeDef](./type_defs.md#listcidrblocksrequestlistcidrblockspaginatetypedef) 
+## ListCidrCollectionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_cidr_collections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListCidrCollections)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrCollectionsPaginator
+
+def get_list_cidr_collections_paginator() -> ListCidrCollectionsPaginator:
+    return Session().client("route53").get_paginator("list_cidr_collections")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCidrCollectionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCidrCollectionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCidrCollectionsResponseTypeDef](./type_defs.md#listcidrcollectionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrCollectionsRequestListCidrCollectionsPaginateTypeDef](./type_defs.md#listcidrcollectionsrequestlistcidrcollectionspaginatetypedef) 
+## ListCidrLocationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_cidr_locations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListCidrLocations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrLocationsPaginator
+
+def get_list_cidr_locations_paginator() -> ListCidrLocationsPaginator:
+    return Session().client("route53").get_paginator("list_cidr_locations")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCidrLocationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CollectionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCidrLocationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCidrLocationsResponseTypeDef](./type_defs.md#listcidrlocationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrLocationsRequestListCidrLocationsPaginateTypeDef = {  # (1)
+    "CollectionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrLocationsRequestListCidrLocationsPaginateTypeDef](./type_defs.md#listcidrlocationsrequestlistcidrlocationspaginatetypedef) 
 ## ListHealthChecksPaginator
 
 Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_health_checks")`.

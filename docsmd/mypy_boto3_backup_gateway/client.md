@@ -242,6 +242,35 @@ def generate_presigned_url(
 ```
 
 
+### get\_gateway
+
+By providing the ARN (Amazon Resource Name), this API returns the gateway.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.get_gateway)
+
+```python title="Method definition"
+def get_gateway(
+    self,
+    *,
+    GatewayArn: str,
+) -> GetGatewayOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetGatewayOutputTypeDef](./type_defs.md#getgatewayoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetGatewayInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
+
+parent.get_gateway(**kwargs)
+```
+
+1. See [:material-code-braces: GetGatewayInputRequestTypeDef](./type_defs.md#getgatewayinputrequesttypedef) 
+
 ### import\_hypervisor\_configuration
 
 Connect to a hypervisor by importing its configuration.
@@ -560,6 +589,35 @@ parent.update_gateway_information(**kwargs)
 
 1. See [:material-code-braces: UpdateGatewayInformationInputRequestTypeDef](./type_defs.md#updategatewayinformationinputrequesttypedef) 
 
+### update\_gateway\_software\_now
+
+Updates the gateway virtual machine (VM) software.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").update_gateway_software_now` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.update_gateway_software_now)
+
+```python title="Method definition"
+def update_gateway_software_now(
+    self,
+    *,
+    GatewayArn: str,
+) -> UpdateGatewaySoftwareNowOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateGatewaySoftwareNowOutputTypeDef](./type_defs.md#updategatewaysoftwarenowoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewaySoftwareNowInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
+
+parent.update_gateway_software_now(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateGatewaySoftwareNowInputRequestTypeDef](./type_defs.md#updategatewaysoftwarenowinputrequesttypedef) 
+
 ### update\_hypervisor
 
 Updates a hypervisor metadata, including its host, username, and password.
@@ -573,6 +631,7 @@ def update_hypervisor(
     *,
     HypervisorArn: str,
     Host: str = ...,
+    Name: str = ...,
     Password: str = ...,
     Username: str = ...,
 ) -> UpdateHypervisorOutputTypeDef:  # (1)

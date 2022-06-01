@@ -56,6 +56,21 @@ ChangeStatusType = Literal[
     "PENDING",
 ]
 ```
+## CidrCollectionChangeActionType
+
+```python title="Usage Example"
+from mypy_boto3_route53.literals import CidrCollectionChangeActionType
+
+def get_value() -> CidrCollectionChangeActionType:
+    return "DELETE_IF_EXISTS"
+```
+
+```python title="Definition"
+CidrCollectionChangeActionType = Literal[
+    "DELETE_IF_EXISTS",
+    "PUT",
+]
+```
 ## CloudWatchRegionType
 
 ```python title="Usage Example"
@@ -186,6 +201,48 @@ InsufficientDataHealthStatusType = Literal[
     "Healthy",
     "LastKnownStatus",
     "Unhealthy",
+]
+```
+## ListCidrBlocksPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53.literals import ListCidrBlocksPaginatorName
+
+def get_value() -> ListCidrBlocksPaginatorName:
+    return "list_cidr_blocks"
+```
+
+```python title="Definition"
+ListCidrBlocksPaginatorName = Literal[
+    "list_cidr_blocks",
+]
+```
+## ListCidrCollectionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53.literals import ListCidrCollectionsPaginatorName
+
+def get_value() -> ListCidrCollectionsPaginatorName:
+    return "list_cidr_collections"
+```
+
+```python title="Definition"
+ListCidrCollectionsPaginatorName = Literal[
+    "list_cidr_collections",
+]
+```
+## ListCidrLocationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53.literals import ListCidrLocationsPaginatorName
+
+def get_value() -> ListCidrLocationsPaginatorName:
+    return "list_cidr_locations"
+```
+
+```python title="Definition"
+ListCidrLocationsPaginatorName = Literal[
+    "list_cidr_locations",
 ]
 ```
 ## ListHealthChecksPaginatorName
@@ -817,11 +874,14 @@ ResourceServiceName = Literal[
 from mypy_boto3_route53.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "list_health_checks"
+    return "list_cidr_blocks"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "list_cidr_blocks",
+    "list_cidr_collections",
+    "list_cidr_locations",
     "list_health_checks",
     "list_hosted_zones",
     "list_query_logging_configs",

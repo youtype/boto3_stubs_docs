@@ -7,6 +7,23 @@
     Auto-generated documentation for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
     type annotations stubs module [mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
+## MediaCapabilitiesType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.literals import MediaCapabilitiesType
+
+def get_value() -> MediaCapabilitiesType:
+    return "None"
+```
+
+```python title="Definition"
+MediaCapabilitiesType = Literal[
+    "None",
+    "Receive",
+    "Send",
+    "SendReceive",
+]
+```
 ## MeetingFeatureStatusType
 
 ```python title="Usage Example"

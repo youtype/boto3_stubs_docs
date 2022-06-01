@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("route53")  # (1)
 
-    paginator = client.get_paginator("list_health_checks")  # (2)
+    paginator = client.get_paginator("list_cidr_blocks")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [Route53Client](./client.md)
-    2. paginator: [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
-    3. item: [:material-code-braces: ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef) 
+    2. paginator: [ListCidrBlocksPaginator](./paginators.md#listcidrblockspaginator)
+    3. item: [:material-code-braces: ListCidrBlocksResponseTypeDef](./type_defs.md#listcidrblocksresponsetypedef) 
 
 
 
@@ -106,16 +106,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_route53.client import Route53Client
-    from mypy_boto3_route53.paginator import ListHealthChecksPaginator
-    from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
+    from mypy_boto3_route53.paginator import ListCidrBlocksPaginator
+    from mypy_boto3_route53.type_defs import ListCidrBlocksResponseTypeDef
 
 
     session = Session()
     client: Route53Client = session.client("route53")
 
-    paginator: ListHealthChecksPaginator = client.get_paginator("list_health_checks")
+    paginator: ListCidrBlocksPaginator = client.get_paginator("list_cidr_blocks")
     for item in paginator.paginate(...):
-        item: ListHealthChecksResponseTypeDef
+        item: ListCidrBlocksResponseTypeDef
         print(item)
     ```
 

@@ -32,6 +32,10 @@ client = boto3.client("route53")
 try:
     do_something(client)
 except (
+    client.CidrBlockInUseException,
+    client.CidrCollectionAlreadyExistsException,
+    client.CidrCollectionInUseException,
+    client.CidrCollectionVersionMismatchException,
     client.ClientError,
     client.ConcurrentModification,
     client.ConflictingDomainExists,
@@ -70,6 +74,8 @@ except (
     client.LastVPCAssociation,
     client.LimitsExceeded,
     client.NoSuchChange,
+    client.NoSuchCidrCollectionException,
+    client.NoSuchCidrLocationException,
     client.NoSuchCloudWatchLogsLogGroup,
     client.NoSuchDelegationSet,
     client.NoSuchGeoLocation,
@@ -103,7 +109,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_route53.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.CidrBlockInUseException) -> None:
     ...
 ```
 
@@ -191,6 +197,39 @@ def can_paginate(
 ```
 
 
+### change\_cidr\_collection
+
+Creates, changes, or deletes CIDR blocks within a collection.
+
+Type annotations and code completion for `#!python boto3.client("route53").change_cidr_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_cidr_collection)
+
+```python title="Method definition"
+def change_cidr_collection(
+    self,
+    *,
+    Id: str,
+    Changes: Sequence[CidrCollectionChangeTypeDef],  # (1)
+    CollectionVersion: int = ...,
+) -> ChangeCidrCollectionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CidrCollectionChangeTypeDef](./type_defs.md#cidrcollectionchangetypedef) 
+2. See [:material-code-braces: ChangeCidrCollectionResponseTypeDef](./type_defs.md#changecidrcollectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ChangeCidrCollectionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Changes": ...,
+}
+
+parent.change_cidr_collection(**kwargs)
+```
+
+1. See [:material-code-braces: ChangeCidrCollectionRequestRequestTypeDef](./type_defs.md#changecidrcollectionrequestrequesttypedef) 
+
 ### change\_resource\_record\_sets
 
 Creates, changes, or deletes a resource record set, which contains authoritative
@@ -257,6 +296,37 @@ parent.change_tags_for_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: ChangeTagsForResourceRequestRequestTypeDef](./type_defs.md#changetagsforresourcerequestrequesttypedef) 
+
+### create\_cidr\_collection
+
+Creates a CIDR collection in the current Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("route53").create_cidr_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_cidr_collection)
+
+```python title="Method definition"
+def create_cidr_collection(
+    self,
+    *,
+    Name: str,
+    CallerReference: str,
+) -> CreateCidrCollectionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateCidrCollectionResponseTypeDef](./type_defs.md#createcidrcollectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateCidrCollectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "CallerReference": ...,
+}
+
+parent.create_cidr_collection(**kwargs)
+```
+
+1. See [:material-code-braces: CreateCidrCollectionRequestRequestTypeDef](./type_defs.md#createcidrcollectionrequestrequesttypedef) 
 
 ### create\_health\_check
 
@@ -594,6 +664,34 @@ parent.deactivate_key_signing_key(**kwargs)
 ```
 
 1. See [:material-code-braces: DeactivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#deactivatekeysigningkeyrequestrequesttypedef) 
+
+### delete\_cidr\_collection
+
+Deletes a CIDR collection in the current Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("route53").delete_cidr_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_cidr_collection)
+
+```python title="Method definition"
+def delete_cidr_collection(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteCidrCollectionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.delete_cidr_collection(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteCidrCollectionRequestRequestTypeDef](./type_defs.md#deletecidrcollectionrequestrequesttypedef) 
 
 ### delete\_health\_check
 
@@ -1434,6 +1532,101 @@ def get_traffic_policy_instance_count(
 
 1. See [:material-code-braces: GetTrafficPolicyInstanceCountResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponsetypedef) 
 
+### list\_cidr\_blocks
+
+Returns a paginated list of location objects and their CIDR blocks.
+
+Type annotations and code completion for `#!python boto3.client("route53").list_cidr_blocks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_cidr_blocks)
+
+```python title="Method definition"
+def list_cidr_blocks(
+    self,
+    *,
+    CollectionId: str,
+    LocationName: str = ...,
+    NextToken: str = ...,
+    MaxResults: str = ...,
+) -> ListCidrBlocksResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCidrBlocksResponseTypeDef](./type_defs.md#listcidrblocksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrBlocksRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
+
+parent.list_cidr_blocks(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrBlocksRequestRequestTypeDef](./type_defs.md#listcidrblocksrequestrequesttypedef) 
+
+### list\_cidr\_collections
+
+Returns a paginated list of CIDR collections in the Amazon Web Services account
+(metadata only).
+
+Type annotations and code completion for `#!python boto3.client("route53").list_cidr_collections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_cidr_collections)
+
+```python title="Method definition"
+def list_cidr_collections(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: str = ...,
+) -> ListCidrCollectionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCidrCollectionsResponseTypeDef](./type_defs.md#listcidrcollectionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrCollectionsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_cidr_collections(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrCollectionsRequestRequestTypeDef](./type_defs.md#listcidrcollectionsrequestrequesttypedef) 
+
+### list\_cidr\_locations
+
+Returns a paginated list of CIDR locations for the given collection (metadata
+only, does not include CIDR blocks).
+
+Type annotations and code completion for `#!python boto3.client("route53").list_cidr_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_cidr_locations)
+
+```python title="Method definition"
+def list_cidr_locations(
+    self,
+    *,
+    CollectionId: str,
+    NextToken: str = ...,
+    MaxResults: str = ...,
+) -> ListCidrLocationsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCidrLocationsResponseTypeDef](./type_defs.md#listcidrlocationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCidrLocationsRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
+
+parent.list_cidr_locations(**kwargs)
+```
+
+1. See [:material-code-braces: ListCidrLocationsRequestRequestTypeDef](./type_defs.md#listcidrlocationsrequestrequesttypedef) 
+
 ### list\_geo\_locations
 
 Retrieves a list of supported geographic locations.
@@ -2150,6 +2343,9 @@ parent.update_traffic_policy_instance(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("route53").get_paginator` method with overloads.
 
+- `client.get_paginator("list_cidr_blocks")` -> [ListCidrBlocksPaginator](./paginators.md#listcidrblockspaginator)
+- `client.get_paginator("list_cidr_collections")` -> [ListCidrCollectionsPaginator](./paginators.md#listcidrcollectionspaginator)
+- `client.get_paginator("list_cidr_locations")` -> [ListCidrLocationsPaginator](./paginators.md#listcidrlocationspaginator)
 - `client.get_paginator("list_health_checks")` -> [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
 - `client.get_paginator("list_hosted_zones")` -> [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
 - `client.get_paginator("list_query_logging_configs")` -> [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)

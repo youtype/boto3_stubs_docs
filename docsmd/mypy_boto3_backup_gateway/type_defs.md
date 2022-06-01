@@ -115,6 +115,29 @@ class DisassociateGatewayFromServerInputRequestTypeDef(TypedDict):
     GatewayArn: str,
 ```
 
+## GatewayDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GatewayDetailsTypeDef
+
+def get_value() -> GatewayDetailsTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class GatewayDetailsTypeDef(TypedDict):
+    GatewayArn: NotRequired[str],
+    GatewayDisplayName: NotRequired[str],
+    GatewayType: NotRequired[GatewayTypeType],  # (1)
+    HypervisorId: NotRequired[str],
+    LastSeenTime: NotRequired[datetime],
+    NextUpdateAvailabilityTime: NotRequired[datetime],
+    VpcEndpoint: NotRequired[str],
+```
+
+1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
 ## GatewayTypeDef
 
 ```python title="Usage Example"
@@ -136,6 +159,22 @@ class GatewayTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+## GetGatewayInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetGatewayInputRequestTypeDef
+
+def get_value() -> GetGatewayInputRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetGatewayInputRequestTypeDef(TypedDict):
+    GatewayArn: str,
+```
+
 ## HypervisorTypeDef
 
 ```python title="Usage Example"
@@ -340,6 +379,22 @@ class UpdateGatewayInformationInputRequestTypeDef(TypedDict):
     GatewayDisplayName: NotRequired[str],
 ```
 
+## UpdateGatewaySoftwareNowInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import UpdateGatewaySoftwareNowInputRequestTypeDef
+
+def get_value() -> UpdateGatewaySoftwareNowInputRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGatewaySoftwareNowInputRequestTypeDef(TypedDict):
+    GatewayArn: str,
+```
+
 ## UpdateHypervisorInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -355,6 +410,7 @@ def get_value() -> UpdateHypervisorInputRequestTypeDef:
 class UpdateHypervisorInputRequestTypeDef(TypedDict):
     HypervisorArn: str,
     Host: NotRequired[str],
+    Name: NotRequired[str],
     Password: NotRequired[str],
     Username: NotRequired[str],
 ```
@@ -549,6 +605,25 @@ class UpdateGatewayInformationOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGatewaySoftwareNowOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import UpdateGatewaySoftwareNowOutputTypeDef
+
+def get_value() -> UpdateGatewaySoftwareNowOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGatewaySoftwareNowOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateHypervisorOutputTypeDef
 
 ```python title="Usage Example"
@@ -655,6 +730,26 @@ class TagResourceInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetGatewayOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetGatewayOutputTypeDef
+
+def get_value() -> GetGatewayOutputTypeDef:
+    return {
+        "Gateway": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetGatewayOutputTypeDef(TypedDict):
+    Gateway: GatewayDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GatewayDetailsTypeDef](./type_defs.md#gatewaydetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListGatewaysOutputTypeDef
 
 ```python title="Usage Example"
