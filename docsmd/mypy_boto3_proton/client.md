@@ -100,6 +100,36 @@ def can_paginate(
 ```
 
 
+### cancel\_component\_deployment
+
+Attempts to cancel a component deployment (for a component that is in the
+`IN_PROGRESS` deployment status).
+
+Type annotations and code completion for `#!python boto3.client("proton").cancel_component_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_component_deployment)
+
+```python title="Method definition"
+def cancel_component_deployment(
+    self,
+    *,
+    componentName: str,
+) -> CancelComponentDeploymentOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CancelComponentDeploymentOutputTypeDef](./type_defs.md#cancelcomponentdeploymentoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CancelComponentDeploymentInputRequestTypeDef = {  # (1)
+    "componentName": ...,
+}
+
+parent.cancel_component_deployment(**kwargs)
+```
+
+1. See [:material-code-braces: CancelComponentDeploymentInputRequestTypeDef](./type_defs.md#cancelcomponentdeploymentinputrequesttypedef) 
+
 ### cancel\_environment\_deployment
 
 Attempts to cancel an environment deployment on an  UpdateEnvironment action, if
@@ -192,6 +222,46 @@ parent.cancel_service_pipeline_deployment(**kwargs)
 
 1. See [:material-code-braces: CancelServicePipelineDeploymentInputRequestTypeDef](./type_defs.md#cancelservicepipelinedeploymentinputrequesttypedef) 
 
+### create\_component
+
+Create an Proton component.
+
+Type annotations and code completion for `#!python boto3.client("proton").create_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_component)
+
+```python title="Method definition"
+def create_component(
+    self,
+    *,
+    manifest: str,
+    name: str,
+    templateFile: str,
+    description: str = ...,
+    environmentName: str = ...,
+    serviceInstanceName: str = ...,
+    serviceName: str = ...,
+    serviceSpec: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateComponentOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateComponentOutputTypeDef](./type_defs.md#createcomponentoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateComponentInputRequestTypeDef = {  # (1)
+    "manifest": ...,
+    "name": ...,
+    "templateFile": ...,
+}
+
+parent.create_component(**kwargs)
+```
+
+1. See [:material-code-braces: CreateComponentInputRequestTypeDef](./type_defs.md#createcomponentinputrequesttypedef) 
+
 ### create\_environment
 
 Deploy a new environment.
@@ -207,6 +277,7 @@ def create_environment(
     spec: str,
     templateMajorVersion: str,
     templateName: str,
+    componentRoleArn: str = ...,
     description: str = ...,
     environmentAccountConnectionId: str = ...,
     protonServiceRoleArn: str = ...,
@@ -252,6 +323,7 @@ def create_environment_account_connection(
     managementAccountId: str,
     roleArn: str,
     clientToken: str = ...,
+    componentRoleArn: str = ...,
     tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> CreateEnvironmentAccountConnectionOutputTypeDef:  # (2)
     ...
@@ -479,15 +551,17 @@ def create_service_template_version(
     clientToken: str = ...,
     description: str = ...,
     majorVersion: str = ...,
-    tags: Sequence[TagTypeDef] = ...,  # (3)
-) -> CreateServiceTemplateVersionOutputTypeDef:  # (4)
+    supportedComponentSources: Sequence[ServiceTemplateSupportedComponentSourceTypeType] = ...,  # (3)
+    tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateServiceTemplateVersionOutputTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
 2. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef) 
+3. See [:material-code-brackets: ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -541,6 +615,35 @@ parent.create_template_sync_config(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#createtemplatesyncconfiginputrequesttypedef) 
+
+### delete\_component
+
+Delete an Proton component resource.
+
+Type annotations and code completion for `#!python boto3.client("proton").delete_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_component)
+
+```python title="Method definition"
+def delete_component(
+    self,
+    *,
+    name: str,
+) -> DeleteComponentOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteComponentOutputTypeDef](./type_defs.md#deletecomponentoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteComponentInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.delete_component(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteComponentInputRequestTypeDef](./type_defs.md#deletecomponentinputrequesttypedef) 
 
 ### delete\_environment
 
@@ -698,7 +801,7 @@ parent.delete_repository(**kwargs)
 
 ### delete\_service
 
-Delete a service.
+Delete a service, with its instances and pipeline.
 
 Type annotations and code completion for `#!python boto3.client("proton").delete_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service)
@@ -856,9 +959,38 @@ def get_account_settings(
 
 1. See [:material-code-braces: GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef) 
 
+### get\_component
+
+Get detailed data for a component.
+
+Type annotations and code completion for `#!python boto3.client("proton").get_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_component)
+
+```python title="Method definition"
+def get_component(
+    self,
+    *,
+    name: str,
+) -> GetComponentOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetComponentOutputTypeDef](./type_defs.md#getcomponentoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetComponentInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.get_component(**kwargs)
+```
+
+1. See [:material-code-braces: GetComponentInputRequestTypeDef](./type_defs.md#getcomponentinputrequesttypedef) 
+
 ### get\_environment
 
-Get detail data for an environment.
+Get detailed data for an environment.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_environment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment)
@@ -887,7 +1019,7 @@ parent.get_environment(**kwargs)
 
 ### get\_environment\_account\_connection
 
-In an environment account, view the detail data for an environment account
+In an environment account, get the detailed data for an environment account
 connection.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_environment_account_connection` method.
@@ -917,7 +1049,7 @@ parent.get_environment_account_connection(**kwargs)
 
 ### get\_environment\_template
 
-Get detail data for an environment template.
+Get detailed data for an environment template.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_environment_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template)
@@ -946,7 +1078,7 @@ parent.get_environment_template(**kwargs)
 
 ### get\_environment\_template\_version
 
-View detail data for a major or minor version of an environment template.
+Get detailed data for a major or minor version of an environment template.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_environment_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template_version)
@@ -1048,7 +1180,7 @@ parent.get_repository_sync_status(**kwargs)
 
 ### get\_service
 
-Get detail data for a service.
+Get detailed data for a service.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service)
@@ -1077,7 +1209,7 @@ parent.get_service(**kwargs)
 
 ### get\_service\_instance
 
-Get detail data for a service instance.
+Get detailed data for a service instance.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_service_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_instance)
@@ -1108,7 +1240,7 @@ parent.get_service_instance(**kwargs)
 
 ### get\_service\_template
 
-Get detail data for a service template.
+Get detailed data for a service template.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_service_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template)
@@ -1137,7 +1269,7 @@ parent.get_service_template(**kwargs)
 
 ### get\_service\_template\_version
 
-View detail data for a major or minor version of a service template.
+Get detailed data for a major or minor version of a service template.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_service_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template_version)
@@ -1233,6 +1365,99 @@ parent.get_template_sync_status(**kwargs)
 ```
 
 1. See [:material-code-braces: GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef) 
+
+### list\_component\_outputs
+
+Get a list of component Infrastructure as Code (IaC) outputs.
+
+Type annotations and code completion for `#!python boto3.client("proton").list_component_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_component_outputs)
+
+```python title="Method definition"
+def list_component_outputs(
+    self,
+    *,
+    componentName: str,
+    nextToken: str = ...,
+) -> ListComponentOutputsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListComponentOutputsOutputTypeDef](./type_defs.md#listcomponentoutputsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListComponentOutputsInputRequestTypeDef = {  # (1)
+    "componentName": ...,
+}
+
+parent.list_component_outputs(**kwargs)
+```
+
+1. See [:material-code-braces: ListComponentOutputsInputRequestTypeDef](./type_defs.md#listcomponentoutputsinputrequesttypedef) 
+
+### list\_component\_provisioned\_resources
+
+List provisioned resources for a component with details.
+
+Type annotations and code completion for `#!python boto3.client("proton").list_component_provisioned_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_component_provisioned_resources)
+
+```python title="Method definition"
+def list_component_provisioned_resources(
+    self,
+    *,
+    componentName: str,
+    nextToken: str = ...,
+) -> ListComponentProvisionedResourcesOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListComponentProvisionedResourcesOutputTypeDef](./type_defs.md#listcomponentprovisionedresourcesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListComponentProvisionedResourcesInputRequestTypeDef = {  # (1)
+    "componentName": ...,
+}
+
+parent.list_component_provisioned_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListComponentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listcomponentprovisionedresourcesinputrequesttypedef) 
+
+### list\_components
+
+List components with summary data.
+
+Type annotations and code completion for `#!python boto3.client("proton").list_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_components)
+
+```python title="Method definition"
+def list_components(
+    self,
+    *,
+    environmentName: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    serviceInstanceName: str = ...,
+    serviceName: str = ...,
+) -> ListComponentsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListComponentsOutputTypeDef](./type_defs.md#listcomponentsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListComponentsInputRequestTypeDef = {  # (1)
+    "environmentName": ...,
+}
+
+parent.list_components(**kwargs)
+```
+
+1. See [:material-code-braces: ListComponentsInputRequestTypeDef](./type_defs.md#listcomponentsinputrequesttypedef) 
 
 ### list\_environment\_account\_connections
 
@@ -1491,7 +1716,7 @@ parent.list_repository_sync_definitions(**kwargs)
 
 ### list\_service\_instance\_outputs
 
-View a list service instance infrastructure as code outputs with detail data.
+Get a list service of instance Infrastructure as Code (IaC) outputs.
 
 Type annotations and code completion for `#!python boto3.client("proton").list_service_instance_outputs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_outputs)
@@ -1555,7 +1780,7 @@ parent.list_service_instance_provisioned_resources(**kwargs)
 
 ### list\_service\_instances
 
-List service instances with summaries of detail data.
+List service instances with summary data.
 
 Type annotations and code completion for `#!python boto3.client("proton").list_service_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instances)
@@ -1586,7 +1811,7 @@ parent.list_service_instances(**kwargs)
 
 ### list\_service\_pipeline\_outputs
 
-View a list service pipeline infrastructure as code outputs with detail.
+Get a list of service pipeline Infrastructure as Code (IaC) outputs.
 
 Type annotations and code completion for `#!python boto3.client("proton").list_service_pipeline_outputs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_outputs)
@@ -1925,6 +2150,43 @@ parent.update_account_settings(**kwargs)
 
 1. See [:material-code-braces: UpdateAccountSettingsInputRequestTypeDef](./type_defs.md#updateaccountsettingsinputrequesttypedef) 
 
+### update\_component
+
+Update a component.
+
+Type annotations and code completion for `#!python boto3.client("proton").update_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_component)
+
+```python title="Method definition"
+def update_component(
+    self,
+    *,
+    deploymentType: ComponentDeploymentUpdateTypeType,  # (1)
+    name: str,
+    description: str = ...,
+    serviceInstanceName: str = ...,
+    serviceName: str = ...,
+    serviceSpec: str = ...,
+    templateFile: str = ...,
+) -> UpdateComponentOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ComponentDeploymentUpdateTypeType](./literals.md#componentdeploymentupdatetypetype) 
+2. See [:material-code-braces: UpdateComponentOutputTypeDef](./type_defs.md#updatecomponentoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateComponentInputRequestTypeDef = {  # (1)
+    "deploymentType": ...,
+    "name": ...,
+}
+
+parent.update_component(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateComponentInputRequestTypeDef](./type_defs.md#updatecomponentinputrequesttypedef) 
+
 ### update\_environment
 
 Update an environment.
@@ -1938,6 +2200,7 @@ def update_environment(
     *,
     deploymentType: DeploymentUpdateTypeType,  # (1)
     name: str,
+    componentRoleArn: str = ...,
     description: str = ...,
     environmentAccountConnectionId: str = ...,
     protonServiceRoleArn: str = ...,
@@ -1978,7 +2241,8 @@ def update_environment_account_connection(
     self,
     *,
     id: str,
-    roleArn: str,
+    componentRoleArn: str = ...,
+    roleArn: str = ...,
 ) -> UpdateEnvironmentAccountConnectionOutputTypeDef:  # (1)
     ...
 ```
@@ -1989,7 +2253,6 @@ def update_environment_account_connection(
 ```python title="Usage example with kwargs"
 kwargs: UpdateEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
     "id": ...,
-    "roleArn": ...,
 }
 
 parent.update_environment_account_connection(**kwargs)
@@ -2216,13 +2479,15 @@ def update_service_template_version(
     compatibleEnvironmentTemplates: Sequence[CompatibleEnvironmentTemplateInputTypeDef] = ...,  # (1)
     description: str = ...,
     status: TemplateVersionStatusType = ...,  # (2)
-) -> UpdateServiceTemplateVersionOutputTypeDef:  # (3)
+    supportedComponentSources: Sequence[ServiceTemplateSupportedComponentSourceTypeType] = ...,  # (3)
+) -> UpdateServiceTemplateVersionOutputTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
 2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
-3. See [:material-code-braces: UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef) 
+3. See [:material-code-brackets: ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype) 
+4. See [:material-code-braces: UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2284,6 +2549,9 @@ parent.update_template_sync_config(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("proton").get_paginator` method with overloads.
 
+- `client.get_paginator("list_component_outputs")` -> [ListComponentOutputsPaginator](./paginators.md#listcomponentoutputspaginator)
+- `client.get_paginator("list_component_provisioned_resources")` -> [ListComponentProvisionedResourcesPaginator](./paginators.md#listcomponentprovisionedresourcespaginator)
+- `client.get_paginator("list_components")` -> [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - `client.get_paginator("list_environment_account_connections")` -> [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
 - `client.get_paginator("list_environment_outputs")` -> [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
 - `client.get_paginator("list_environment_provisioned_resources")` -> [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
@@ -2309,6 +2577,8 @@ Type annotations and code completion for `#!python boto3.client("proton").get_pa
 
 Type annotations and code completion for `#!python boto3.client("proton").get_waiter` method with overloads.
 
+- `client.get_waiter("component_deleted")` -> [ComponentDeletedWaiter](./waiters.md#componentdeletedwaiter)
+- `client.get_waiter("component_deployed")` -> [ComponentDeployedWaiter](./waiters.md#componentdeployedwaiter)
 - `client.get_waiter("environment_deployed")` -> [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
 - `client.get_waiter("environment_template_version_registered")` -> [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
 - `client.get_waiter("service_created")` -> [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)

@@ -53,6 +53,7 @@ class EnvironmentAccountConnectionTypeDef(TypedDict):
     requestedAt: datetime,
     roleArn: str,
     status: EnvironmentAccountConnectionStatusType,  # (1)
+    componentRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
@@ -103,6 +104,56 @@ class RepositoryBranchTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+## CancelComponentDeploymentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import CancelComponentDeploymentInputRequestTypeDef
+
+def get_value() -> CancelComponentDeploymentInputRequestTypeDef:
+    return {
+        "componentName": ...,
+    }
+```
+
+```python title="Definition"
+class CancelComponentDeploymentInputRequestTypeDef(TypedDict):
+    componentName: str,
+```
+
+## ComponentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ComponentTypeDef
+
+def get_value() -> ComponentTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "environmentName": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    environmentName: str,
+    lastModifiedAt: datetime,
+    name: str,
+    deploymentStatusMessage: NotRequired[str],
+    description: NotRequired[str],
+    lastDeploymentAttemptedAt: NotRequired[datetime],
+    lastDeploymentSucceededAt: NotRequired[datetime],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+    serviceSpec: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## CancelEnvironmentDeploymentInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -261,6 +312,38 @@ class CompatibleEnvironmentTemplateTypeDef(TypedDict):
     templateName: str,
 ```
 
+## ComponentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ComponentSummaryTypeDef
+
+def get_value() -> ComponentSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "environmentName": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    environmentName: str,
+    lastModifiedAt: datetime,
+    name: str,
+    deploymentStatusMessage: NotRequired[str],
+    lastDeploymentAttemptedAt: NotRequired[datetime],
+    lastDeploymentSucceededAt: NotRequired[datetime],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -467,6 +550,22 @@ class TemplateSyncConfigTypeDef(TypedDict):
 
 1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+## DeleteComponentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import DeleteComponentInputRequestTypeDef
+
+def get_value() -> DeleteComponentInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteComponentInputRequestTypeDef(TypedDict):
+    name: str,
+```
+
 ## DeleteEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -655,6 +754,7 @@ class EnvironmentAccountConnectionSummaryTypeDef(TypedDict):
     requestedAt: datetime,
     roleArn: str,
     status: EnvironmentAccountConnectionStatusType,  # (1)
+    componentRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
@@ -688,6 +788,7 @@ class EnvironmentSummaryTypeDef(TypedDict):
     templateMajorVersion: str,
     templateMinorVersion: str,
     templateName: str,
+    componentRoleArn: NotRequired[str],
     deploymentStatusMessage: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
@@ -775,22 +876,6 @@ class EnvironmentTemplateVersionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
-## GetEnvironmentAccountConnectionInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputRequestTypeDef
-
-def get_value() -> GetEnvironmentAccountConnectionInputRequestTypeDef:
-    return {
-        "id": ...,
-    }
-```
-
-```python title="Definition"
-class GetEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
-    id: str,
-```
-
 ## WaiterConfigTypeDef
 
 ```python title="Usage Example"
@@ -806,6 +891,38 @@ def get_value() -> WaiterConfigTypeDef:
 class WaiterConfigTypeDef(TypedDict):
     Delay: NotRequired[int],
     MaxAttempts: NotRequired[int],
+```
+
+## GetComponentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetComponentInputRequestTypeDef
+
+def get_value() -> GetComponentInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetComponentInputRequestTypeDef(TypedDict):
+    name: str,
+```
+
+## GetEnvironmentAccountConnectionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> GetEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
 ```
 
 ## GetEnvironmentInputRequestTypeDef
@@ -1056,6 +1173,96 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
+## ListComponentOutputsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentOutputsInputRequestTypeDef
+
+def get_value() -> ListComponentOutputsInputRequestTypeDef:
+    return {
+        "componentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentOutputsInputRequestTypeDef(TypedDict):
+    componentName: str,
+    nextToken: NotRequired[str],
+```
+
+## OutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import OutputTypeDef
+
+def get_value() -> OutputTypeDef:
+    return {
+        "key": ...,
+    }
+```
+
+```python title="Definition"
+class OutputTypeDef(TypedDict):
+    key: NotRequired[str],
+    valueString: NotRequired[str],
+```
+
+## ListComponentProvisionedResourcesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentProvisionedResourcesInputRequestTypeDef
+
+def get_value() -> ListComponentProvisionedResourcesInputRequestTypeDef:
+    return {
+        "componentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentProvisionedResourcesInputRequestTypeDef(TypedDict):
+    componentName: str,
+    nextToken: NotRequired[str],
+```
+
+## ProvisionedResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ProvisionedResourceTypeDef
+
+def get_value() -> ProvisionedResourceTypeDef:
+    return {
+        "identifier": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedResourceTypeDef(TypedDict):
+    identifier: NotRequired[str],
+    name: NotRequired[str],
+    provisioningEngine: NotRequired[ProvisionedResourceEngineType],  # (1)
+```
+
+1. See [:material-code-brackets: ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype) 
+## ListComponentsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentsInputRequestTypeDef
+
+def get_value() -> ListComponentsInputRequestTypeDef:
+    return {
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsInputRequestTypeDef(TypedDict):
+    environmentName: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+```
+
 ## ListEnvironmentAccountConnectionsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1095,23 +1302,6 @@ class ListEnvironmentOutputsInputRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## OutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_proton.type_defs import OutputTypeDef
-
-def get_value() -> OutputTypeDef:
-    return {
-        "key": ...,
-    }
-```
-
-```python title="Definition"
-class OutputTypeDef(TypedDict):
-    key: NotRequired[str],
-    valueString: NotRequired[str],
-```
-
 ## ListEnvironmentProvisionedResourcesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1129,25 +1319,6 @@ class ListEnvironmentProvisionedResourcesInputRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ProvisionedResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_proton.type_defs import ProvisionedResourceTypeDef
-
-def get_value() -> ProvisionedResourceTypeDef:
-    return {
-        "identifier": ...,
-    }
-```
-
-```python title="Definition"
-class ProvisionedResourceTypeDef(TypedDict):
-    identifier: NotRequired[str],
-    name: NotRequired[str],
-    provisioningEngine: NotRequired[ProvisionedResourceEngineType],  # (1)
-```
-
-1. See [:material-code-brackets: ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype) 
 ## ListEnvironmentTemplateVersionsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1648,6 +1819,30 @@ class UntagResourceInputRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
+## UpdateComponentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import UpdateComponentInputRequestTypeDef
+
+def get_value() -> UpdateComponentInputRequestTypeDef:
+    return {
+        "deploymentType": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateComponentInputRequestTypeDef(TypedDict):
+    deploymentType: ComponentDeploymentUpdateTypeType,  # (1)
+    name: str,
+    description: NotRequired[str],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+    serviceSpec: NotRequired[str],
+    templateFile: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ComponentDeploymentUpdateTypeType](./literals.md#componentdeploymentupdatetypetype) 
 ## UpdateEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1656,14 +1851,14 @@ from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionInputR
 def get_value() -> UpdateEnvironmentAccountConnectionInputRequestTypeDef:
     return {
         "id": ...,
-        "roleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
     id: str,
-    roleArn: str,
+    componentRoleArn: NotRequired[str],
+    roleArn: NotRequired[str],
 ```
 
 ## UpdateEnvironmentTemplateInputRequestTypeDef
@@ -1985,6 +2180,7 @@ class EnvironmentTypeDef(TypedDict):
     templateMajorVersion: str,
     templateMinorVersion: str,
     templateName: str,
+    componentRoleArn: NotRequired[str],
     deploymentStatusMessage: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
@@ -1998,6 +2194,106 @@ class EnvironmentTypeDef(TypedDict):
 1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 2. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 3. See [:material-code-braces: RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef) 
+## CancelComponentDeploymentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import CancelComponentDeploymentOutputTypeDef
+
+def get_value() -> CancelComponentDeploymentOutputTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelComponentDeploymentOutputTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateComponentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import CreateComponentOutputTypeDef
+
+def get_value() -> CreateComponentOutputTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateComponentOutputTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteComponentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import DeleteComponentOutputTypeDef
+
+def get_value() -> DeleteComponentOutputTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteComponentOutputTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComponentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetComponentOutputTypeDef
+
+def get_value() -> GetComponentOutputTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetComponentOutputTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateComponentOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import UpdateComponentOutputTypeDef
+
+def get_value() -> UpdateComponentOutputTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateComponentOutputTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelServiceInstanceDeploymentOutputTypeDef
 
 ```python title="Usage Example"
@@ -2155,10 +2451,12 @@ class UpdateServiceTemplateVersionInputRequestTypeDef(TypedDict):
     compatibleEnvironmentTemplates: NotRequired[Sequence[CompatibleEnvironmentTemplateInputTypeDef]],  # (1)
     description: NotRequired[str],
     status: NotRequired[TemplateVersionStatusType],  # (2)
+    supportedComponentSources: NotRequired[Sequence[ServiceTemplateSupportedComponentSourceTypeType]],  # (3)
 ```
 
 1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
 2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
+3. See [:material-code-brackets: ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype) 
 ## ServiceTemplateVersionTypeDef
 
 ```python title="Usage Example"
@@ -2191,10 +2489,61 @@ class ServiceTemplateVersionTypeDef(TypedDict):
     recommendedMinorVersion: NotRequired[str],
     schema: NotRequired[str],
     statusMessage: NotRequired[str],
+    supportedComponentSources: NotRequired[List[ServiceTemplateSupportedComponentSourceTypeType]],  # (3)
 ```
 
 1. See [:material-code-braces: CompatibleEnvironmentTemplateTypeDef](./type_defs.md#compatibleenvironmenttemplatetypedef) 
 2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
+3. See [:material-code-brackets: ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype) 
+## ListComponentsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentsOutputTypeDef
+
+def get_value() -> ListComponentsOutputTypeDef:
+    return {
+        "components": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsOutputTypeDef(TypedDict):
+    components: List[ComponentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateComponentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import CreateComponentInputRequestTypeDef
+
+def get_value() -> CreateComponentInputRequestTypeDef:
+    return {
+        "manifest": ...,
+        "name": ...,
+        "templateFile": ...,
+    }
+```
+
+```python title="Definition"
+class CreateComponentInputRequestTypeDef(TypedDict):
+    manifest: str,
+    name: str,
+    templateFile: str,
+    description: NotRequired[str],
+    environmentName: NotRequired[str],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+    serviceSpec: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2214,6 +2563,7 @@ class CreateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
     managementAccountId: str,
     roleArn: str,
     clientToken: NotRequired[str],
+    componentRoleArn: NotRequired[str],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 
@@ -2378,6 +2728,7 @@ class CreateEnvironmentInputRequestTypeDef(TypedDict):
     spec: str,
     templateMajorVersion: str,
     templateName: str,
+    componentRoleArn: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
     protonServiceRoleArn: NotRequired[str],
@@ -2422,6 +2773,7 @@ def get_value() -> UpdateEnvironmentInputRequestTypeDef:
 class UpdateEnvironmentInputRequestTypeDef(TypedDict):
     deploymentType: DeploymentUpdateTypeType,  # (1)
     name: str,
+    componentRoleArn: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
     protonServiceRoleArn: NotRequired[str],
@@ -2920,6 +3272,42 @@ class ListEnvironmentTemplateVersionsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: EnvironmentTemplateVersionSummaryTypeDef](./type_defs.md#environmenttemplateversionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComponentInputComponentDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetComponentInputComponentDeletedWaitTypeDef
+
+def get_value() -> GetComponentInputComponentDeletedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetComponentInputComponentDeletedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetComponentInputComponentDeployedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetComponentInputComponentDeployedWaitTypeDef
+
+def get_value() -> GetComponentInputComponentDeployedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetComponentInputComponentDeployedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetEnvironmentInputEnvironmentDeployedWaitTypeDef
 
 ```python title="Usage Example"
@@ -3074,6 +3462,62 @@ class GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef(
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## ListComponentOutputsInputListComponentOutputsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentOutputsInputListComponentOutputsPaginateTypeDef
+
+def get_value() -> ListComponentOutputsInputListComponentOutputsPaginateTypeDef:
+    return {
+        "componentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentOutputsInputListComponentOutputsPaginateTypeDef(TypedDict):
+    componentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListComponentProvisionedResourcesInputListComponentProvisionedResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentProvisionedResourcesInputListComponentProvisionedResourcesPaginateTypeDef
+
+def get_value() -> ListComponentProvisionedResourcesInputListComponentProvisionedResourcesPaginateTypeDef:
+    return {
+        "componentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentProvisionedResourcesInputListComponentProvisionedResourcesPaginateTypeDef(TypedDict):
+    componentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListComponentsInputListComponentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentsInputListComponentsPaginateTypeDef
+
+def get_value() -> ListComponentsInputListComponentsPaginateTypeDef:
+    return {
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsInputListComponentsPaginateTypeDef(TypedDict):
+    environmentName: NotRequired[str],
+    serviceInstanceName: NotRequired[str],
+    serviceName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3393,6 +3837,28 @@ class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListComponentOutputsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentOutputsOutputTypeDef
+
+def get_value() -> ListComponentOutputsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "outputs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentOutputsOutputTypeDef(TypedDict):
+    nextToken: str,
+    outputs: List[OutputTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEnvironmentOutputsOutputTypeDef
 
 ```python title="Usage Example"
@@ -3482,6 +3948,28 @@ class NotifyResourceDeploymentStatusChangeInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
 2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+## ListComponentProvisionedResourcesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListComponentProvisionedResourcesOutputTypeDef
+
+def get_value() -> ListComponentProvisionedResourcesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "provisionedResources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentProvisionedResourcesOutputTypeDef(TypedDict):
+    nextToken: str,
+    provisionedResources: List[ProvisionedResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEnvironmentProvisionedResourcesOutputTypeDef
 
 ```python title="Usage Example"
@@ -4140,9 +4628,11 @@ class CreateServiceTemplateVersionInputRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
     description: NotRequired[str],
     majorVersion: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    supportedComponentSources: NotRequired[Sequence[ServiceTemplateSupportedComponentSourceTypeType]],  # (3)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
 2. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

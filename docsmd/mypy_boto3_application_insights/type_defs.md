@@ -726,9 +726,11 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
     AutoConfigEnabled: NotRequired[bool],
     AutoCreate: NotRequired[bool],
+    GroupingType: NotRequired[GroupingTypeType],  # (2)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: GroupingTypeType](./literals.md#groupingtypetype) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"

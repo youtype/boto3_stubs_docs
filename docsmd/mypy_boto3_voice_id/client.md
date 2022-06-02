@@ -110,7 +110,7 @@ parent.create_domain(**kwargs)
 
 ### delete\_domain
 
-Deletes the specified domain from the Amazon Connect Voice ID system.
+Deletes the specified domain from Voice ID.
 
 Type annotations and code completion for `#!python boto3.client("voice-id").delete_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_domain)
@@ -139,7 +139,7 @@ parent.delete_domain(**kwargs)
 
 ### delete\_fraudster
 
-Deletes the specified fraudster from the Amazon Connect Voice ID system.
+Deletes the specified fraudster from Voice ID.
 
 Type annotations and code completion for `#!python boto3.client("voice-id").delete_fraudster` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_fraudster)
@@ -170,7 +170,7 @@ parent.delete_fraudster(**kwargs)
 
 ### delete\_speaker
 
-Deletes the specified speaker from the Amazon Connect Voice ID system.
+Deletes the specified speaker from Voice ID.
 
 Type annotations and code completion for `#!python boto3.client("voice-id").delete_speaker` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_speaker)
@@ -563,7 +563,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### opt\_out\_speaker
 
-Opts out a speaker from Voice ID system.
+Opts out a speaker from Voice ID.
 
 Type annotations and code completion for `#!python boto3.client("voice-id").opt_out_speaker` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.opt_out_speaker)
@@ -676,7 +676,7 @@ parent.start_speaker_enrollment_job(**kwargs)
 
 ### tag\_resource
 
-Tags an Amazon Connect Voice ID resource with the provided list of tags.
+Tags a Voice ID resource with the provided list of tags.
 
 Type annotations and code completion for `#!python boto3.client("voice-id").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.tag_resource)

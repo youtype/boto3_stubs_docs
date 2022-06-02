@@ -90,12 +90,14 @@ def create_application(
     Tags: Sequence[TagTypeDef] = ...,  # (1)
     AutoConfigEnabled: bool = ...,
     AutoCreate: bool = ...,
-) -> CreateApplicationResponseTypeDef:  # (2)
+    GroupingType: GroupingTypeType = ...,  # (2)
+) -> CreateApplicationResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
+2. See [:material-code-brackets: GroupingTypeType](./literals.md#groupingtypetype) 
+3. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

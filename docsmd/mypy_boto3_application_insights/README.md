@@ -85,6 +85,7 @@ def get_value() -> CloudWatchEventSourceType:
 - [DiscoveryTypeType](./literals.md#discoverytypetype)
 - [FeedbackKeyType](./literals.md#feedbackkeytype)
 - [FeedbackValueType](./literals.md#feedbackvaluetype)
+- [GroupingTypeType](./literals.md#groupingtypetype)
 - [LogFilterType](./literals.md#logfiltertype)
 - [OsTypeType](./literals.md#ostypetype)
 - [SeverityLevelType](./literals.md#severityleveltype)

@@ -836,6 +836,23 @@ class CurrentMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: CurrentMetricNameType](./literals.md#currentmetricnametype) 
 2. See [:material-code-brackets: UnitType](./literals.md#unittype) 
+## DateReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DateReferenceTypeDef
+
+def get_value() -> DateReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DateReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## DefaultVocabularyTypeDef
 
 ```python title="Usage Example"
@@ -981,6 +998,24 @@ def get_value() -> DeleteSecurityProfileRequestRequestTypeDef:
 class DeleteSecurityProfileRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     SecurityProfileId: str,
+```
+
+## DeleteTaskTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DeleteTaskTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteTaskTemplateRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "TaskTemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTaskTemplateRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    TaskTemplateId: str,
 ```
 
 ## DeleteUseCaseRequestRequestTypeDef
@@ -1582,6 +1617,23 @@ class DisassociateSecurityKeyRequestRequestTypeDef(TypedDict):
     AssociationId: str,
 ```
 
+## EmailReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import EmailReferenceTypeDef
+
+def get_value() -> EmailReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class EmailReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## EncryptionConfigTypeDef
 
 ```python title="Usage Example"
@@ -1669,6 +1721,25 @@ class PaginatorConfigTypeDef(TypedDict):
     MaxItems: NotRequired[int],
     PageSize: NotRequired[int],
     StartingToken: NotRequired[str],
+```
+
+## GetTaskTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetTaskTemplateRequestRequestTypeDef
+
+def get_value() -> GetTaskTemplateRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "TaskTemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTaskTemplateRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    TaskTemplateId: str,
+    SnapshotVersion: NotRequired[str],
 ```
 
 ## HierarchyGroupConditionTypeDef
@@ -1894,6 +1965,22 @@ class IntegrationAssociationSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
 2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+## TaskTemplateFieldIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateFieldIdentifierTypeDef
+
+def get_value() -> TaskTemplateFieldIdentifierTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateFieldIdentifierTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
+
 ## ListAgentStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2582,6 +2669,50 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
 ```
 
+## ListTaskTemplatesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTaskTemplatesRequestRequestTypeDef
+
+def get_value() -> ListTaskTemplatesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTaskTemplatesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Status: NotRequired[TaskTemplateStatusType],  # (1)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+## TaskTemplateMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateMetadataTypeDef
+
+def get_value() -> TaskTemplateMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[TaskTemplateStatusType],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+    CreatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
 ## ListUseCasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2675,6 +2806,23 @@ class UserSummaryTypeDef(TypedDict):
     Username: NotRequired[str],
 ```
 
+## NumberReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import NumberReferenceTypeDef
+
+def get_value() -> NumberReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class NumberReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## ParticipantDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2761,6 +2909,23 @@ def get_value() -> UserQuickConnectConfigTypeDef:
 class UserQuickConnectConfigTypeDef(TypedDict):
     UserId: str,
     ContactFlowId: str,
+```
+
+## StringReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import StringReferenceTypeDef
+
+def get_value() -> StringReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StringReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
 ```
 
 ## UrlReferenceTypeDef
@@ -3043,6 +3208,29 @@ def get_value() -> TagResourceRequestRequestTypeDef:
 class TagResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
     tags: Mapping[str, str],
+```
+
+## TransferContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TransferContactRequestRequestTypeDef
+
+def get_value() -> TransferContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ContactFlowId": ...,
+    }
+```
+
+```python title="Definition"
+class TransferContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ContactFlowId: str,
+    QueueId: NotRequired[str],
+    UserId: NotRequired[str],
+    ClientToken: NotRequired[str],
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -3903,6 +4091,27 @@ class CreateSecurityProfileResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTaskTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateTaskTemplateResponseTypeDef
+
+def get_value() -> CreateTaskTemplateResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTaskTemplateResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUseCaseResponseTypeDef
 
 ```python title="Usage Example"
@@ -4272,6 +4481,27 @@ def get_value() -> StartTaskContactResponseTypeDef:
 ```python title="Definition"
 class StartTaskContactResponseTypeDef(TypedDict):
     ContactId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TransferContactResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TransferContactResponseTypeDef
+
+def get_value() -> TransferContactResponseTypeDef:
+    return {
+        "ContactId": ...,
+        "ContactArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TransferContactResponseTypeDef(TypedDict):
+    ContactId: str,
+    ContactArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -5484,6 +5714,27 @@ class ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef
+
+def get_value() -> ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    Status: NotRequired[TaskTemplateStatusType],  # (1)
+    Name: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUseCasesRequestListUseCasesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -5825,6 +6076,96 @@ class ListIntegrationAssociationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: IntegrationAssociationSummaryTypeDef](./type_defs.md#integrationassociationsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InvisibleFieldInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import InvisibleFieldInfoTypeDef
+
+def get_value() -> InvisibleFieldInfoTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class InvisibleFieldInfoTypeDef(TypedDict):
+    Id: NotRequired[TaskTemplateFieldIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TaskTemplateFieldIdentifierTypeDef](./type_defs.md#tasktemplatefieldidentifiertypedef) 
+## ReadOnlyFieldInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ReadOnlyFieldInfoTypeDef
+
+def get_value() -> ReadOnlyFieldInfoTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ReadOnlyFieldInfoTypeDef(TypedDict):
+    Id: NotRequired[TaskTemplateFieldIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TaskTemplateFieldIdentifierTypeDef](./type_defs.md#tasktemplatefieldidentifiertypedef) 
+## RequiredFieldInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RequiredFieldInfoTypeDef
+
+def get_value() -> RequiredFieldInfoTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class RequiredFieldInfoTypeDef(TypedDict):
+    Id: NotRequired[TaskTemplateFieldIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TaskTemplateFieldIdentifierTypeDef](./type_defs.md#tasktemplatefieldidentifiertypedef) 
+## TaskTemplateDefaultFieldValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateDefaultFieldValueTypeDef
+
+def get_value() -> TaskTemplateDefaultFieldValueTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateDefaultFieldValueTypeDef(TypedDict):
+    Id: NotRequired[TaskTemplateFieldIdentifierTypeDef],  # (1)
+    DefaultValue: NotRequired[str],
+```
+
+1. See [:material-code-braces: TaskTemplateFieldIdentifierTypeDef](./type_defs.md#tasktemplatefieldidentifiertypedef) 
+## TaskTemplateFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateFieldTypeDef
+
+def get_value() -> TaskTemplateFieldTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateFieldTypeDef(TypedDict):
+    Id: TaskTemplateFieldIdentifierTypeDef,  # (1)
+    Description: NotRequired[str],
+    Type: NotRequired[TaskTemplateFieldTypeType],  # (2)
+    SingleSelectOptions: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: TaskTemplateFieldIdentifierTypeDef](./type_defs.md#tasktemplatefieldidentifiertypedef) 
+2. See [:material-code-brackets: TaskTemplateFieldTypeType](./literals.md#tasktemplatefieldtypetype) 
 ## ListPhoneNumbersResponseTypeDef
 
 ```python title="Usage Example"
@@ -6045,6 +6386,28 @@ class ListSecurityProfilesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SecurityProfileSummaryTypeDef](./type_defs.md#securityprofilesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTaskTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTaskTemplatesResponseTypeDef
+
+def get_value() -> ListTaskTemplatesResponseTypeDef:
+    return {
+        "TaskTemplates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTaskTemplatesResponseTypeDef(TypedDict):
+    TaskTemplates: List[TaskTemplateMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TaskTemplateMetadataTypeDef](./type_defs.md#tasktemplatemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUseCasesResponseTypeDef
 
 ```python title="Usage Example"
@@ -6154,10 +6517,18 @@ def get_value() -> ReferenceSummaryTypeDef:
 class ReferenceSummaryTypeDef(TypedDict):
     Url: NotRequired[UrlReferenceTypeDef],  # (1)
     Attachment: NotRequired[AttachmentReferenceTypeDef],  # (2)
+    String: NotRequired[StringReferenceTypeDef],  # (3)
+    Number: NotRequired[NumberReferenceTypeDef],  # (4)
+    Date: NotRequired[DateReferenceTypeDef],  # (5)
+    Email: NotRequired[EmailReferenceTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: UrlReferenceTypeDef](./type_defs.md#urlreferencetypedef) 
 2. See [:material-code-braces: AttachmentReferenceTypeDef](./type_defs.md#attachmentreferencetypedef) 
+3. See [:material-code-braces: StringReferenceTypeDef](./type_defs.md#stringreferencetypedef) 
+4. See [:material-code-braces: NumberReferenceTypeDef](./type_defs.md#numberreferencetypedef) 
+5. See [:material-code-braces: DateReferenceTypeDef](./type_defs.md#datereferencetypedef) 
+6. See [:material-code-braces: EmailReferenceTypeDef](./type_defs.md#emailreferencetypedef) 
 ## StartTaskContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6166,7 +6537,6 @@ from mypy_boto3_connect.type_defs import StartTaskContactRequestRequestTypeDef
 def get_value() -> StartTaskContactRequestRequestTypeDef:
     return {
         "InstanceId": ...,
-        "ContactFlowId": ...,
         "Name": ...,
     }
 ```
@@ -6174,14 +6544,16 @@ def get_value() -> StartTaskContactRequestRequestTypeDef:
 ```python title="Definition"
 class StartTaskContactRequestRequestTypeDef(TypedDict):
     InstanceId: str,
-    ContactFlowId: str,
     Name: str,
     PreviousContactId: NotRequired[str],
+    ContactFlowId: NotRequired[str],
     Attributes: NotRequired[Mapping[str, str]],
     References: NotRequired[Mapping[str, ReferenceTypeDef]],  # (1)
     Description: NotRequired[str],
     ClientToken: NotRequired[str],
     ScheduledTime: NotRequired[Union[datetime, str]],
+    TaskTemplateId: NotRequired[str],
+    QuickConnectId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
@@ -6786,6 +7158,44 @@ class DescribeInstanceResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TaskTemplateConstraintsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateConstraintsTypeDef
+
+def get_value() -> TaskTemplateConstraintsTypeDef:
+    return {
+        "RequiredFields": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateConstraintsTypeDef(TypedDict):
+    RequiredFields: NotRequired[Sequence[RequiredFieldInfoTypeDef]],  # (1)
+    ReadOnlyFields: NotRequired[Sequence[ReadOnlyFieldInfoTypeDef]],  # (2)
+    InvisibleFields: NotRequired[Sequence[InvisibleFieldInfoTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: RequiredFieldInfoTypeDef](./type_defs.md#requiredfieldinfotypedef) 
+2. See [:material-code-braces: ReadOnlyFieldInfoTypeDef](./type_defs.md#readonlyfieldinfotypedef) 
+3. See [:material-code-braces: InvisibleFieldInfoTypeDef](./type_defs.md#invisiblefieldinfotypedef) 
+## TaskTemplateDefaultsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskTemplateDefaultsTypeDef
+
+def get_value() -> TaskTemplateDefaultsTypeDef:
+    return {
+        "DefaultFieldValues": ...,
+    }
+```
+
+```python title="Definition"
+class TaskTemplateDefaultsTypeDef(TypedDict):
+    DefaultFieldValues: NotRequired[Sequence[TaskTemplateDefaultFieldValueTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TaskTemplateDefaultFieldValueTypeDef](./type_defs.md#tasktemplatedefaultfieldvaluetypedef) 
 ## CreateQuickConnectRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7113,6 +7523,157 @@ class DescribeHoursOfOperationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: HoursOfOperationTypeDef](./type_defs.md#hoursofoperationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTaskTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateTaskTemplateRequestRequestTypeDef
+
+def get_value() -> CreateTaskTemplateRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "Fields": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTaskTemplateRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    Fields: Sequence[TaskTemplateFieldTypeDef],  # (1)
+    Description: NotRequired[str],
+    ContactFlowId: NotRequired[str],
+    Constraints: NotRequired[TaskTemplateConstraintsTypeDef],  # (2)
+    Defaults: NotRequired[TaskTemplateDefaultsTypeDef],  # (3)
+    Status: NotRequired[TaskTemplateStatusType],  # (4)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+2. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+3. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+## GetTaskTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetTaskTemplateResponseTypeDef
+
+def get_value() -> GetTaskTemplateResponseTypeDef:
+    return {
+        "InstanceId": ...,
+        "Id": ...,
+        "Arn": ...,
+        "Name": ...,
+        "Description": ...,
+        "ContactFlowId": ...,
+        "Constraints": ...,
+        "Defaults": ...,
+        "Fields": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "CreatedTime": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTaskTemplateResponseTypeDef(TypedDict):
+    InstanceId: str,
+    Id: str,
+    Arn: str,
+    Name: str,
+    Description: str,
+    ContactFlowId: str,
+    Constraints: TaskTemplateConstraintsTypeDef,  # (1)
+    Defaults: TaskTemplateDefaultsTypeDef,  # (2)
+    Fields: List[TaskTemplateFieldTypeDef],  # (3)
+    Status: TaskTemplateStatusType,  # (4)
+    LastModifiedTime: datetime,
+    CreatedTime: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+2. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+3. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTaskTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateTaskTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateTaskTemplateRequestRequestTypeDef:
+    return {
+        "TaskTemplateId": ...,
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTaskTemplateRequestRequestTypeDef(TypedDict):
+    TaskTemplateId: str,
+    InstanceId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ContactFlowId: NotRequired[str],
+    Constraints: NotRequired[TaskTemplateConstraintsTypeDef],  # (1)
+    Defaults: NotRequired[TaskTemplateDefaultsTypeDef],  # (2)
+    Status: NotRequired[TaskTemplateStatusType],  # (3)
+    Fields: NotRequired[Sequence[TaskTemplateFieldTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+2. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+3. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+4. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+## UpdateTaskTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateTaskTemplateResponseTypeDef
+
+def get_value() -> UpdateTaskTemplateResponseTypeDef:
+    return {
+        "InstanceId": ...,
+        "Id": ...,
+        "Arn": ...,
+        "Name": ...,
+        "Description": ...,
+        "ContactFlowId": ...,
+        "Constraints": ...,
+        "Defaults": ...,
+        "Fields": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "CreatedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTaskTemplateResponseTypeDef(TypedDict):
+    InstanceId: str,
+    Id: str,
+    Arn: str,
+    Name: str,
+    Description: str,
+    ContactFlowId: str,
+    Constraints: TaskTemplateConstraintsTypeDef,  # (1)
+    Defaults: TaskTemplateDefaultsTypeDef,  # (2)
+    Fields: List[TaskTemplateFieldTypeDef],  # (3)
+    Status: TaskTemplateStatusType,  # (4)
+    LastModifiedTime: datetime,
+    CreatedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+2. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+3. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeQuickConnectResponseTypeDef
 
 ```python title="Usage Example"

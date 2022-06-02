@@ -7,6 +7,49 @@
     Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
     type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
+## ComponentDeletedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ComponentDeletedWaiterName
+
+def get_value() -> ComponentDeletedWaiterName:
+    return "component_deleted"
+```
+
+```python title="Definition"
+ComponentDeletedWaiterName = Literal[
+    "component_deleted",
+]
+```
+## ComponentDeployedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ComponentDeployedWaiterName
+
+def get_value() -> ComponentDeployedWaiterName:
+    return "component_deployed"
+```
+
+```python title="Definition"
+ComponentDeployedWaiterName = Literal[
+    "component_deployed",
+]
+```
+## ComponentDeploymentUpdateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ComponentDeploymentUpdateTypeType
+
+def get_value() -> ComponentDeploymentUpdateTypeType:
+    return "CURRENT_VERSION"
+```
+
+```python title="Definition"
+ComponentDeploymentUpdateTypeType = Literal[
+    "CURRENT_VERSION",
+    "NONE",
+]
+```
 ## DeploymentStatusType
 
 ```python title="Usage Example"
@@ -102,6 +145,48 @@ def get_value() -> EnvironmentTemplateVersionRegisteredWaiterName:
 ```python title="Definition"
 EnvironmentTemplateVersionRegisteredWaiterName = Literal[
     "environment_template_version_registered",
+]
+```
+## ListComponentOutputsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ListComponentOutputsPaginatorName
+
+def get_value() -> ListComponentOutputsPaginatorName:
+    return "list_component_outputs"
+```
+
+```python title="Definition"
+ListComponentOutputsPaginatorName = Literal[
+    "list_component_outputs",
+]
+```
+## ListComponentProvisionedResourcesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ListComponentProvisionedResourcesPaginatorName
+
+def get_value() -> ListComponentProvisionedResourcesPaginatorName:
+    return "list_component_provisioned_resources"
+```
+
+```python title="Definition"
+ListComponentProvisionedResourcesPaginatorName = Literal[
+    "list_component_provisioned_resources",
+]
+```
+## ListComponentsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ListComponentsPaginatorName
+
+def get_value() -> ListComponentsPaginatorName:
+    return "list_components"
+```
+
+```python title="Definition"
+ListComponentsPaginatorName = Literal[
+    "list_components",
 ]
 ```
 ## ListEnvironmentAccountConnectionsPaginatorName
@@ -519,6 +604,20 @@ ServiceStatusType = Literal[
     "UPDATE_FAILED_CLEANUP_FAILED",
     "UPDATE_FAILED_CLEANUP_IN_PROGRESS",
     "UPDATE_IN_PROGRESS",
+]
+```
+## ServiceTemplateSupportedComponentSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ServiceTemplateSupportedComponentSourceTypeType
+
+def get_value() -> ServiceTemplateSupportedComponentSourceTypeType:
+    return "DIRECTLY_DEFINED"
+```
+
+```python title="Definition"
+ServiceTemplateSupportedComponentSourceTypeType = Literal[
+    "DIRECTLY_DEFINED",
 ]
 ```
 ## ServiceTemplateVersionRegisteredWaiterName
@@ -957,11 +1056,14 @@ ResourceServiceName = Literal[
 from mypy_boto3_proton.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "list_environment_account_connections"
+    return "list_component_outputs"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "list_component_outputs",
+    "list_component_provisioned_resources",
+    "list_components",
     "list_environment_account_connections",
     "list_environment_outputs",
     "list_environment_provisioned_resources",
@@ -987,11 +1089,13 @@ PaginatorName = Literal[
 from mypy_boto3_proton.literals import WaiterName
 
 def get_value() -> WaiterName:
-    return "environment_deployed"
+    return "component_deleted"
 ```
 
 ```python title="Definition"
 WaiterName = Literal[
+    "component_deleted",
+    "component_deployed",
     "environment_deployed",
     "environment_template_version_registered",
     "service_created",

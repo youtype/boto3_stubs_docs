@@ -46,6 +46,7 @@ except (
     client.InvalidRequestException,
     client.LimitExceededException,
     client.OutboundContactNotPermittedException,
+    client.PropertyValidationException,
     client.ResourceConflictException,
     client.ResourceInUseException,
     client.ResourceNotFoundException,
@@ -819,6 +820,49 @@ parent.create_security_profile(**kwargs)
 
 1. See [:material-code-braces: CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef) 
 
+### create\_task\_template
+
+Creates a new task template in the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").create_task_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_task_template)
+
+```python title="Method definition"
+def create_task_template(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    Fields: Sequence[TaskTemplateFieldTypeDef],  # (1)
+    Description: str = ...,
+    ContactFlowId: str = ...,
+    Constraints: TaskTemplateConstraintsTypeDef = ...,  # (2)
+    Defaults: TaskTemplateDefaultsTypeDef = ...,  # (3)
+    Status: TaskTemplateStatusType = ...,  # (4)
+    ClientToken: str = ...,
+) -> CreateTaskTemplateResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+2. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+3. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+5. See [:material-code-braces: CreateTaskTemplateResponseTypeDef](./type_defs.md#createtasktemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateTaskTemplateRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "Fields": ...,
+}
+
+parent.create_task_template(**kwargs)
+```
+
+1. See [:material-code-braces: CreateTaskTemplateRequestRequestTypeDef](./type_defs.md#createtasktemplaterequestrequesttypedef) 
+
 ### create\_use\_case
 
 Creates a use case for an integration association.
@@ -1183,6 +1227,36 @@ parent.delete_security_profile(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef) 
+
+### delete\_task\_template
+
+Deletes the task template.
+
+Type annotations and code completion for `#!python boto3.client("connect").delete_task_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_task_template)
+
+```python title="Method definition"
+def delete_task_template(
+    self,
+    *,
+    InstanceId: str,
+    TaskTemplateId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteTaskTemplateRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "TaskTemplateId": ...,
+}
+
+parent.delete_task_template(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteTaskTemplateRequestRequestTypeDef](./type_defs.md#deletetasktemplaterequestrequesttypedef) 
 
 ### delete\_use\_case
 
@@ -2290,6 +2364,39 @@ parent.get_metric_data(**kwargs)
 
 1. See [:material-code-braces: GetMetricDataRequestRequestTypeDef](./type_defs.md#getmetricdatarequestrequesttypedef) 
 
+### get\_task\_template
+
+Gets details about a specific task template in the specified Amazon Connect
+instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").get_task_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_task_template)
+
+```python title="Method definition"
+def get_task_template(
+    self,
+    *,
+    InstanceId: str,
+    TaskTemplateId: str,
+    SnapshotVersion: str = ...,
+) -> GetTaskTemplateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTaskTemplateResponseTypeDef](./type_defs.md#gettasktemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTaskTemplateRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "TaskTemplateId": ...,
+}
+
+parent.get_task_template(**kwargs)
+```
+
+1. See [:material-code-braces: GetTaskTemplateRequestRequestTypeDef](./type_defs.md#gettasktemplaterequestrequesttypedef) 
+
 ### list\_agent\_statuses
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -3141,6 +3248,40 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### list\_task\_templates
+
+Lists task templates for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_task_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_task_templates)
+
+```python title="Method definition"
+def list_task_templates(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Status: TaskTemplateStatusType = ...,  # (1)
+    Name: str = ...,
+) -> ListTaskTemplatesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+2. See [:material-code-braces: ListTaskTemplatesResponseTypeDef](./type_defs.md#listtasktemplatesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTaskTemplatesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.list_task_templates(**kwargs)
+```
+
+1. See [:material-code-braces: ListTaskTemplatesRequestRequestTypeDef](./type_defs.md#listtasktemplatesrequestrequesttypedef) 
+
 ### list\_use\_cases
 
 Lists the use cases for the integration association.
@@ -3610,14 +3751,16 @@ def start_task_contact(
     self,
     *,
     InstanceId: str,
-    ContactFlowId: str,
     Name: str,
     PreviousContactId: str = ...,
+    ContactFlowId: str = ...,
     Attributes: Mapping[str, str] = ...,
     References: Mapping[str, ReferenceTypeDef] = ...,  # (1)
     Description: str = ...,
     ClientToken: str = ...,
     ScheduledTime: Union[datetime, str] = ...,
+    TaskTemplateId: str = ...,
+    QuickConnectId: str = ...,
 ) -> StartTaskContactResponseTypeDef:  # (2)
     ...
 ```
@@ -3629,7 +3772,6 @@ def start_task_contact(
 ```python title="Usage example with kwargs"
 kwargs: StartTaskContactRequestRequestTypeDef = {  # (1)
     "InstanceId": ...,
-    "ContactFlowId": ...,
     "Name": ...,
 }
 
@@ -3794,6 +3936,43 @@ parent.tag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### transfer\_contact
+
+Transfers contacts from one agent or queue to another agent or queue at any
+point after a contact is created.
+
+Type annotations and code completion for `#!python boto3.client("connect").transfer_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.transfer_contact)
+
+```python title="Method definition"
+def transfer_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ContactFlowId: str,
+    QueueId: str = ...,
+    UserId: str = ...,
+    ClientToken: str = ...,
+) -> TransferContactResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: TransferContactResponseTypeDef](./type_defs.md#transfercontactresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TransferContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ContactFlowId": ...,
+}
+
+parent.transfer_contact(**kwargs)
+```
+
+1. See [:material-code-braces: TransferContactRequestRequestTypeDef](./type_defs.md#transfercontactrequestrequesttypedef) 
 
 ### untag\_resource
 
@@ -4670,6 +4849,49 @@ parent.update_security_profile(**kwargs)
 
 1. See [:material-code-braces: UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef) 
 
+### update\_task\_template
+
+Updates details about a specific task template in the specified Amazon Connect
+instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_task_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_task_template)
+
+```python title="Method definition"
+def update_task_template(
+    self,
+    *,
+    TaskTemplateId: str,
+    InstanceId: str,
+    Name: str = ...,
+    Description: str = ...,
+    ContactFlowId: str = ...,
+    Constraints: TaskTemplateConstraintsTypeDef = ...,  # (1)
+    Defaults: TaskTemplateDefaultsTypeDef = ...,  # (2)
+    Status: TaskTemplateStatusType = ...,  # (3)
+    Fields: Sequence[TaskTemplateFieldTypeDef] = ...,  # (4)
+) -> UpdateTaskTemplateResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: TaskTemplateConstraintsTypeDef](./type_defs.md#tasktemplateconstraintstypedef) 
+2. See [:material-code-braces: TaskTemplateDefaultsTypeDef](./type_defs.md#tasktemplatedefaultstypedef) 
+3. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+4. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
+5. See [:material-code-braces: UpdateTaskTemplateResponseTypeDef](./type_defs.md#updatetasktemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateTaskTemplateRequestRequestTypeDef = {  # (1)
+    "TaskTemplateId": ...,
+    "InstanceId": ...,
+}
+
+parent.update_task_template(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateTaskTemplateRequestRequestTypeDef](./type_defs.md#updatetasktemplaterequestrequesttypedef) 
+
 ### update\_user\_hierarchy
 
 Assigns the specified hierarchy group to the specified user.
@@ -4934,6 +5156,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_security_keys")` -> [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
 - `client.get_paginator("list_security_profile_permissions")` -> [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
 - `client.get_paginator("list_security_profiles")` -> [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
+- `client.get_paginator("list_task_templates")` -> [ListTaskTemplatesPaginator](./paginators.md#listtasktemplatespaginator)
 - `client.get_paginator("list_use_cases")` -> [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)

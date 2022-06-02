@@ -7,6 +7,88 @@
     Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
     type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
+## ComponentDeletedWaiter
+
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("component_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ComponentDeleted)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.waiter import ComponentDeletedWaiter
+
+def get_component_deleted_waiter() -> ComponentDeletedWaiter:
+    return Session().client("proton").get_waiter("component_deleted")
+```
+
+
+### wait
+
+Type annotations and code completion for `#!python ComponentDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetComponentInputComponentDeletedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetComponentInputComponentDeletedWaitTypeDef](./type_defs.md#getcomponentinputcomponentdeletedwaittypedef) 
+## ComponentDeployedWaiter
+
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("component_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ComponentDeployed)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.waiter import ComponentDeployedWaiter
+
+def get_component_deployed_waiter() -> ComponentDeployedWaiter:
+    return Session().client("proton").get_waiter("component_deployed")
+```
+
+
+### wait
+
+Type annotations and code completion for `#!python ComponentDeployedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetComponentInputComponentDeployedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetComponentInputComponentDeployedWaitTypeDef](./type_defs.md#getcomponentinputcomponentdeployedwaittypedef) 
 ## EnvironmentDeployedWaiter
 
 Type annotations and code completion for `#!python boto3.client("proton").get_waiter("environment_deployed")`.

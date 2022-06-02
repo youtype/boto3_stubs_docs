@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.16">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
     
     
       
@@ -17,11 +17,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.1c3799f8.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.fd896c8a.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -36216,6 +36217,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listsecuritykeyspaginator">ListSecurityKeysPaginator</a></li>
 <li><a href="paginators/#listsecurityprofilepermissionspaginator">ListSecurityProfilePermissionsPaginator</a></li>
 <li><a href="paginators/#listsecurityprofilespaginator">ListSecurityProfilesPaginator</a></li>
+<li><a href="paginators/#listtasktemplatespaginator">ListTaskTemplatesPaginator</a></li>
 <li><a href="paginators/#listusecasespaginator">ListUseCasesPaginator</a></li>
 <li><a href="paginators/#listuserhierarchygroupspaginator">ListUserHierarchyGroupsPaginator</a></li>
 <li><a href="paginators/#listuserspaginator">ListUsersPaginator</a></li>
@@ -36278,6 +36280,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listsecuritykeyspaginatorname">ListSecurityKeysPaginatorName</a></li>
 <li><a href="literals/#listsecurityprofilepermissionspaginatorname">ListSecurityProfilePermissionsPaginatorName</a></li>
 <li><a href="literals/#listsecurityprofilespaginatorname">ListSecurityProfilesPaginatorName</a></li>
+<li><a href="literals/#listtasktemplatespaginatorname">ListTaskTemplatesPaginatorName</a></li>
 <li><a href="literals/#listusecasespaginatorname">ListUseCasesPaginatorName</a></li>
 <li><a href="literals/#listuserhierarchygroupspaginatorname">ListUserHierarchyGroupsPaginatorName</a></li>
 <li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
@@ -36297,6 +36300,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#statistictype">StatisticType</a></li>
 <li><a href="literals/#storagetypetype">StorageTypeType</a></li>
 <li><a href="literals/#stringcomparisontypetype">StringComparisonTypeType</a></li>
+<li><a href="literals/#tasktemplatefieldtypetype">TaskTemplateFieldTypeType</a></li>
+<li><a href="literals/#tasktemplatestatustype">TaskTemplateStatusType</a></li>
 <li><a href="literals/#traffictypetype">TrafficTypeType</a></li>
 <li><a href="literals/#unittype">UnitType</a></li>
 <li><a href="literals/#usecasetypetype">UseCaseTypeType</a></li>
@@ -36360,6 +36365,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createvocabularyrequestrequesttypedef">CreateVocabularyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#credentialstypedef">CredentialsTypeDef</a></li>
 <li><a href="type_defs/#currentmetrictypedef">CurrentMetricTypeDef</a></li>
+<li><a href="type_defs/#datereferencetypedef">DateReferenceTypeDef</a></li>
 <li><a href="type_defs/#defaultvocabularytypedef">DefaultVocabularyTypeDef</a></li>
 <li><a href="type_defs/#deletecontactflowmodulerequestrequesttypedef">DeleteContactFlowModuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletecontactflowrequestrequesttypedef">DeleteContactFlowRequestRequestTypeDef</a></li>
@@ -36368,6 +36374,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteintegrationassociationrequestrequesttypedef">DeleteIntegrationAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletequickconnectrequestrequesttypedef">DeleteQuickConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesecurityprofilerequestrequesttypedef">DeleteSecurityProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletetasktemplaterequestrequesttypedef">DeleteTaskTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteusecaserequestrequesttypedef">DeleteUseCaseRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteuserhierarchygrouprequestrequesttypedef">DeleteUserHierarchyGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteuserrequestrequesttypedef">DeleteUserRequestRequestTypeDef</a></li>
@@ -36400,11 +36407,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disassociatequeuequickconnectsrequestrequesttypedef">DisassociateQueueQuickConnectsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#routingprofilequeuereferencetypedef">RoutingProfileQueueReferenceTypeDef</a></li>
 <li><a href="type_defs/#disassociatesecuritykeyrequestrequesttypedef">DisassociateSecurityKeyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#emailreferencetypedef">EmailReferenceTypeDef</a></li>
 <li><a href="type_defs/#encryptionconfigtypedef">EncryptionConfigTypeDef</a></li>
 <li><a href="type_defs/#filterstypedef">FiltersTypeDef</a></li>
 <li><a href="type_defs/#getcontactattributesrequestrequesttypedef">GetContactAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfederationtokenrequestrequesttypedef">GetFederationTokenRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#gettasktemplaterequestrequesttypedef">GetTaskTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#hierarchygroupconditiontypedef">HierarchyGroupConditionTypeDef</a></li>
 <li><a href="type_defs/#hierarchygroupsummarytypedef">HierarchyGroupSummaryTypeDef</a></li>
 <li><a href="type_defs/#hierarchyleveltypedef">HierarchyLevelTypeDef</a></li>
@@ -36417,6 +36426,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#kinesisstreamconfigtypedef">KinesisStreamConfigTypeDef</a></li>
 <li><a href="type_defs/#instancesummarytypedef">InstanceSummaryTypeDef</a></li>
 <li><a href="type_defs/#integrationassociationsummarytypedef">IntegrationAssociationSummaryTypeDef</a></li>
+<li><a href="type_defs/#tasktemplatefieldidentifiertypedef">TaskTemplateFieldIdentifierTypeDef</a></li>
 <li><a href="type_defs/#listagentstatusrequestrequesttypedef">ListAgentStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listapprovedoriginsrequestrequesttypedef">ListApprovedOriginsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listbotsrequestrequesttypedef">ListBotsRequestRequestTypeDef</a></li>
@@ -36452,16 +36462,20 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listsecurityprofilesrequestrequesttypedef">ListSecurityProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#securityprofilesummarytypedef">SecurityProfileSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtasktemplatesrequestrequesttypedef">ListTaskTemplatesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tasktemplatemetadatatypedef">TaskTemplateMetadataTypeDef</a></li>
 <li><a href="type_defs/#listusecasesrequestrequesttypedef">ListUseCasesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usecasetypedef">UseCaseTypeDef</a></li>
 <li><a href="type_defs/#listuserhierarchygroupsrequestrequesttypedef">ListUserHierarchyGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestrequesttypedef">ListUsersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usersummarytypedef">UserSummaryTypeDef</a></li>
+<li><a href="type_defs/#numberreferencetypedef">NumberReferenceTypeDef</a></li>
 <li><a href="type_defs/#participantdetailstypedef">ParticipantDetailsTypeDef</a></li>
 <li><a href="type_defs/#phonenumberquickconnectconfigtypedef">PhoneNumberQuickConnectConfigTypeDef</a></li>
 <li><a href="type_defs/#putuserstatusrequestrequesttypedef">PutUserStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#queuequickconnectconfigtypedef">QueueQuickConnectConfigTypeDef</a></li>
 <li><a href="type_defs/#userquickconnectconfigtypedef">UserQuickConnectConfigTypeDef</a></li>
+<li><a href="type_defs/#stringreferencetypedef">StringReferenceTypeDef</a></li>
 <li><a href="type_defs/#urlreferencetypedef">UrlReferenceTypeDef</a></li>
 <li><a href="type_defs/#referencetypedef">ReferenceTypeDef</a></li>
 <li><a href="type_defs/#releasephonenumberrequestrequesttypedef">ReleasePhoneNumberRequestRequestTypeDef</a></li>
@@ -36476,6 +36490,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#stringconditiontypedef">StringConditionTypeDef</a></li>
 <li><a href="type_defs/#suspendcontactrecordingrequestrequesttypedef">SuspendContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#transfercontactrequestrequesttypedef">TransferContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateagentstatusrequestrequesttypedef">UpdateAgentStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecontactattributesrequestrequesttypedef">UpdateContactAttributesRequestRequestTypeDef</a></li>
@@ -36518,6 +36533,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createquickconnectresponsetypedef">CreateQuickConnectResponseTypeDef</a></li>
 <li><a href="type_defs/#createroutingprofileresponsetypedef">CreateRoutingProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#createsecurityprofileresponsetypedef">CreateSecurityProfileResponseTypeDef</a></li>
+<li><a href="type_defs/#createtasktemplateresponsetypedef">CreateTaskTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#createusecaseresponsetypedef">CreateUseCaseResponseTypeDef</a></li>
 <li><a href="type_defs/#createuserhierarchygroupresponsetypedef">CreateUserHierarchyGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#createuserresponsetypedef">CreateUserResponseTypeDef</a></li>
@@ -36536,6 +36552,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#startcontactstreamingresponsetypedef">StartContactStreamingResponseTypeDef</a></li>
 <li><a href="type_defs/#startoutboundvoicecontactresponsetypedef">StartOutboundVoiceContactResponseTypeDef</a></li>
 <li><a href="type_defs/#starttaskcontactresponsetypedef">StartTaskContactResponseTypeDef</a></li>
+<li><a href="type_defs/#transfercontactresponsetypedef">TransferContactResponseTypeDef</a></li>
 <li><a href="type_defs/#updatephonenumberresponsetypedef">UpdatePhoneNumberResponseTypeDef</a></li>
 <li><a href="type_defs/#describeinstanceattributeresponsetypedef">DescribeInstanceAttributeResponseTypeDef</a></li>
 <li><a href="type_defs/#listinstanceattributesresponsetypedef">ListInstanceAttributesResponseTypeDef</a></li>
@@ -36593,6 +36610,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listsecuritykeysrequestlistsecuritykeyspaginatetypedef">ListSecurityKeysRequestListSecurityKeysPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilepermissionsrequestlistsecurityprofilepermissionspaginatetypedef">ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef">ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtasktemplatesrequestlisttasktemplatespaginatetypedef">ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listusecasesrequestlistusecasespaginatetypedef">ListUseCasesRequestListUseCasesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listuserhierarchygroupsrequestlistuserhierarchygroupspaginatetypedef">ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestlistuserspaginatetypedef">ListUsersRequestListUsersPaginateTypeDef</a></li>
@@ -36608,6 +36626,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
 <li><a href="type_defs/#listinstancesresponsetypedef">ListInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#listintegrationassociationsresponsetypedef">ListIntegrationAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#invisiblefieldinfotypedef">InvisibleFieldInfoTypeDef</a></li>
+<li><a href="type_defs/#readonlyfieldinfotypedef">ReadOnlyFieldInfoTypeDef</a></li>
+<li><a href="type_defs/#requiredfieldinfotypedef">RequiredFieldInfoTypeDef</a></li>
+<li><a href="type_defs/#tasktemplatedefaultfieldvaluetypedef">TaskTemplateDefaultFieldValueTypeDef</a></li>
+<li><a href="type_defs/#tasktemplatefieldtypedef">TaskTemplateFieldTypeDef</a></li>
 <li><a href="type_defs/#listphonenumbersresponsetypedef">ListPhoneNumbersResponseTypeDef</a></li>
 <li><a href="type_defs/#listphonenumbersv2responsetypedef">ListPhoneNumbersV2ResponseTypeDef</a></li>
 <li><a href="type_defs/#listpromptsresponsetypedef">ListPromptsResponseTypeDef</a></li>
@@ -36618,6 +36641,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listroutingprofilesresponsetypedef">ListRoutingProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#listsecuritykeysresponsetypedef">ListSecurityKeysResponseTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilesresponsetypedef">ListSecurityProfilesResponseTypeDef</a></li>
+<li><a href="type_defs/#listtasktemplatesresponsetypedef">ListTaskTemplatesResponseTypeDef</a></li>
 <li><a href="type_defs/#listusecasesresponsetypedef">ListUseCasesResponseTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
 <li><a href="type_defs/#startchatcontactrequestrequesttypedef">StartChatContactRequestRequestTypeDef</a></li>
@@ -36651,6 +36675,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#hoursofoperationtypedef">HoursOfOperationTypeDef</a></li>
 <li><a href="type_defs/#updatehoursofoperationrequestrequesttypedef">UpdateHoursOfOperationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeinstanceresponsetypedef">DescribeInstanceResponseTypeDef</a></li>
+<li><a href="type_defs/#tasktemplateconstraintstypedef">TaskTemplateConstraintsTypeDef</a></li>
+<li><a href="type_defs/#tasktemplatedefaultstypedef">TaskTemplateDefaultsTypeDef</a></li>
 <li><a href="type_defs/#createquickconnectrequestrequesttypedef">CreateQuickConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#quickconnecttypedef">QuickConnectTypeDef</a></li>
 <li><a href="type_defs/#updatequickconnectconfigrequestrequesttypedef">UpdateQuickConnectConfigRequestRequestTypeDef</a></li>
@@ -36666,12 +36692,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeuserhierarchygroupresponsetypedef">DescribeUserHierarchyGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#historicalmetricresulttypedef">HistoricalMetricResultTypeDef</a></li>
 <li><a href="type_defs/#describehoursofoperationresponsetypedef">DescribeHoursOfOperationResponseTypeDef</a></li>
+<li><a href="type_defs/#createtasktemplaterequestrequesttypedef">CreateTaskTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettasktemplateresponsetypedef">GetTaskTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#updatetasktemplaterequestrequesttypedef">UpdateTaskTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatetasktemplateresponsetypedef">UpdateTaskTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#describequickconnectresponsetypedef">DescribeQuickConnectResponseTypeDef</a></li>
 <li><a href="type_defs/#getmetricdataresponsetypedef">GetMetricDataResponseTypeDef</a></li>
 </ul>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -36679,7 +36710,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../mypy_boto3_config/usage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Examples" rel="prev">
@@ -36734,10 +36766,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.3a4b43e5.min.js"></script>
+      <script src="../assets/javascripts/bundle.0f659f14.min.js"></script>
       
     
   </body>

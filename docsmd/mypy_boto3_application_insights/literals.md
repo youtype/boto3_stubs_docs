@@ -102,6 +102,20 @@ FeedbackValueType = Literal[
     "USEFUL",
 ]
 ```
+## GroupingTypeType
+
+```python title="Usage Example"
+from mypy_boto3_application_insights.literals import GroupingTypeType
+
+def get_value() -> GroupingTypeType:
+    return "ACCOUNT_BASED"
+```
+
+```python title="Definition"
+GroupingTypeType = Literal[
+    "ACCOUNT_BASED",
+]
+```
 ## LogFilterType
 
 ```python title="Usage Example"
@@ -145,6 +159,7 @@ def get_value() -> SeverityLevelType:
 ```python title="Definition"
 SeverityLevelType = Literal[
     "High",
+    "Informative",
     "Low",
     "Medium",
 ]

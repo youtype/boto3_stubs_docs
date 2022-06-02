@@ -69,12 +69,15 @@ from `#!python boto3.client("proton").get_paginator("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
+from mypy_boto3_proton.paginator import ListComponentOutputsPaginator
 
-def get_list_environment_account_connections_paginator() -> ListEnvironmentAccountConnectionsPaginator:
-    return Session().client("proton").get_paginator("list_environment_account_connections"))
+def get_list_component_outputs_paginator() -> ListComponentOutputsPaginator:
+    return Session().client("proton").get_paginator("list_component_outputs"))
 ```
 
+- [ListComponentOutputsPaginator](./paginators.md#listcomponentoutputspaginator)
+- [ListComponentProvisionedResourcesPaginator](./paginators.md#listcomponentprovisionedresourcespaginator)
+- [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
 - [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
 - [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
@@ -104,12 +107,14 @@ from `#!python boto3.client("proton").get_waiter("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
+from mypy_boto3_proton.waiter import ComponentDeletedWaiter
 
-def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
-    return Session().client("proton").get_waiter("environment_deployed")
+def get_component_deleted_waiter() -> ComponentDeletedWaiter:
+    return Session().client("proton").get_waiter("component_deleted")
 ```
 
+- [ComponentDeletedWaiter](./waiters.md#componentdeletedwaiter)
+- [ComponentDeployedWaiter](./waiters.md#componentdeployedwaiter)
 - [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
 - [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
 - [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)
@@ -130,18 +135,24 @@ def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_proton.literals import DeploymentStatusType
+from mypy_boto3_proton.literals import ComponentDeletedWaiterName
 
-def get_value() -> DeploymentStatusType:
-    return "CANCELLED"
+def get_value() -> ComponentDeletedWaiterName:
+    return "component_deleted"
 ```
 
+- [ComponentDeletedWaiterName](./literals.md#componentdeletedwaitername)
+- [ComponentDeployedWaiterName](./literals.md#componentdeployedwaitername)
+- [ComponentDeploymentUpdateTypeType](./literals.md#componentdeploymentupdatetypetype)
 - [DeploymentStatusType](./literals.md#deploymentstatustype)
 - [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
 - [EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype)
 - [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
 - [EnvironmentDeployedWaiterName](./literals.md#environmentdeployedwaitername)
 - [EnvironmentTemplateVersionRegisteredWaiterName](./literals.md#environmenttemplateversionregisteredwaitername)
+- [ListComponentOutputsPaginatorName](./literals.md#listcomponentoutputspaginatorname)
+- [ListComponentProvisionedResourcesPaginatorName](./literals.md#listcomponentprovisionedresourcespaginatorname)
+- [ListComponentsPaginatorName](./literals.md#listcomponentspaginatorname)
 - [ListEnvironmentAccountConnectionsPaginatorName](./literals.md#listenvironmentaccountconnectionspaginatorname)
 - [ListEnvironmentOutputsPaginatorName](./literals.md#listenvironmentoutputspaginatorname)
 - [ListEnvironmentProvisionedResourcesPaginatorName](./literals.md#listenvironmentprovisionedresourcespaginatorname)
@@ -170,6 +181,7 @@ def get_value() -> DeploymentStatusType:
 - [ServiceInstanceDeployedWaiterName](./literals.md#serviceinstancedeployedwaitername)
 - [ServicePipelineDeployedWaiterName](./literals.md#servicepipelinedeployedwaitername)
 - [ServiceStatusType](./literals.md#servicestatustype)
+- [ServiceTemplateSupportedComponentSourceTypeType](./literals.md#servicetemplatesupportedcomponentsourcetypetype)
 - [ServiceTemplateVersionRegisteredWaiterName](./literals.md#servicetemplateversionregisteredwaitername)
 - [ServiceUpdatedWaiterName](./literals.md#serviceupdatedwaitername)
 - [SyncTypeType](./literals.md#synctypetype)
@@ -202,6 +214,8 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
+- [CancelComponentDeploymentInputRequestTypeDef](./type_defs.md#cancelcomponentdeploymentinputrequesttypedef)
+- [ComponentTypeDef](./type_defs.md#componenttypedef)
 - [CancelEnvironmentDeploymentInputRequestTypeDef](./type_defs.md#cancelenvironmentdeploymentinputrequesttypedef)
 - [CancelServiceInstanceDeploymentInputRequestTypeDef](./type_defs.md#cancelserviceinstancedeploymentinputrequesttypedef)
 - [ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef)
@@ -209,6 +223,7 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef)
 - [CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)
 - [CompatibleEnvironmentTemplateTypeDef](./type_defs.md#compatibleenvironmenttemplatetypedef)
+- [ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
@@ -217,6 +232,7 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
 - [CreateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#createtemplatesyncconfiginputrequesttypedef)
 - [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
+- [DeleteComponentInputRequestTypeDef](./type_defs.md#deletecomponentinputrequesttypedef)
 - [DeleteEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#deleteenvironmentaccountconnectioninputrequesttypedef)
 - [DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef)
 - [DeleteEnvironmentTemplateInputRequestTypeDef](./type_defs.md#deleteenvironmenttemplateinputrequesttypedef)
@@ -231,8 +247,9 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)
 - [EnvironmentTemplateSummaryTypeDef](./type_defs.md#environmenttemplatesummarytypedef)
 - [EnvironmentTemplateVersionSummaryTypeDef](./type_defs.md#environmenttemplateversionsummarytypedef)
-- [GetEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#getenvironmentaccountconnectioninputrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+- [GetComponentInputRequestTypeDef](./type_defs.md#getcomponentinputrequesttypedef)
+- [GetEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#getenvironmentaccountconnectioninputrequesttypedef)
 - [GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef)
 - [GetEnvironmentTemplateInputRequestTypeDef](./type_defs.md#getenvironmenttemplateinputrequesttypedef)
 - [GetEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#getenvironmenttemplateversioninputrequesttypedef)
@@ -246,11 +263,14 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef)
 - [RevisionTypeDef](./type_defs.md#revisiontypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ListComponentOutputsInputRequestTypeDef](./type_defs.md#listcomponentoutputsinputrequesttypedef)
+- [OutputTypeDef](./type_defs.md#outputtypedef)
+- [ListComponentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listcomponentprovisionedresourcesinputrequesttypedef)
+- [ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)
+- [ListComponentsInputRequestTypeDef](./type_defs.md#listcomponentsinputrequesttypedef)
 - [ListEnvironmentAccountConnectionsInputRequestTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputrequesttypedef)
 - [ListEnvironmentOutputsInputRequestTypeDef](./type_defs.md#listenvironmentoutputsinputrequesttypedef)
-- [OutputTypeDef](./type_defs.md#outputtypedef)
 - [ListEnvironmentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputrequesttypedef)
-- [ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)
 - [ListEnvironmentTemplateVersionsInputRequestTypeDef](./type_defs.md#listenvironmenttemplateversionsinputrequesttypedef)
 - [ListEnvironmentTemplatesInputRequestTypeDef](./type_defs.md#listenvironmenttemplatesinputrequesttypedef)
 - [ListRepositoriesInputRequestTypeDef](./type_defs.md#listrepositoriesinputrequesttypedef)
@@ -275,6 +295,7 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [ResourceSyncEventTypeDef](./type_defs.md#resourcesynceventtypedef)
 - [S3ObjectSourceTypeDef](./type_defs.md#s3objectsourcetypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
+- [UpdateComponentInputRequestTypeDef](./type_defs.md#updatecomponentinputrequesttypedef)
 - [UpdateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#updateenvironmentaccountconnectioninputrequesttypedef)
 - [UpdateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateinputrequesttypedef)
 - [UpdateEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateversioninputrequesttypedef)
@@ -291,6 +312,11 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [UpdateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputtypedef)
 - [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- [CancelComponentDeploymentOutputTypeDef](./type_defs.md#cancelcomponentdeploymentoutputtypedef)
+- [CreateComponentOutputTypeDef](./type_defs.md#createcomponentoutputtypedef)
+- [DeleteComponentOutputTypeDef](./type_defs.md#deletecomponentoutputtypedef)
+- [GetComponentOutputTypeDef](./type_defs.md#getcomponentoutputtypedef)
+- [UpdateComponentOutputTypeDef](./type_defs.md#updatecomponentoutputtypedef)
 - [CancelServiceInstanceDeploymentOutputTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputtypedef)
 - [GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef)
 - [UpdateServiceInstanceOutputTypeDef](./type_defs.md#updateserviceinstanceoutputtypedef)
@@ -299,6 +325,8 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef)
 - [UpdateServiceTemplateVersionInputRequestTypeDef](./type_defs.md#updateservicetemplateversioninputrequesttypedef)
 - [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
+- [ListComponentsOutputTypeDef](./type_defs.md#listcomponentsoutputtypedef)
+- [CreateComponentInputRequestTypeDef](./type_defs.md#createcomponentinputrequesttypedef)
 - [CreateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#createenvironmentaccountconnectioninputrequesttypedef)
 - [CreateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#createenvironmenttemplateinputrequesttypedef)
 - [CreateRepositoryInputRequestTypeDef](./type_defs.md#createrepositoryinputrequesttypedef)
@@ -333,6 +361,8 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef)
 - [ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef)
 - [ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef)
+- [GetComponentInputComponentDeletedWaitTypeDef](./type_defs.md#getcomponentinputcomponentdeletedwaittypedef)
+- [GetComponentInputComponentDeployedWaitTypeDef](./type_defs.md#getcomponentinputcomponentdeployedwaittypedef)
 - [GetEnvironmentInputEnvironmentDeployedWaitTypeDef](./type_defs.md#getenvironmentinputenvironmentdeployedwaittypedef)
 - [GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getenvironmenttemplateversioninputenvironmenttemplateversionregisteredwaittypedef)
 - [GetServiceInputServiceCreatedWaitTypeDef](./type_defs.md#getserviceinputservicecreatedwaittypedef)
@@ -341,6 +371,9 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [GetServiceInputServiceUpdatedWaitTypeDef](./type_defs.md#getserviceinputserviceupdatedwaittypedef)
 - [GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef](./type_defs.md#getserviceinstanceinputserviceinstancedeployedwaittypedef)
 - [GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getservicetemplateversioninputservicetemplateversionregisteredwaittypedef)
+- [ListComponentOutputsInputListComponentOutputsPaginateTypeDef](./type_defs.md#listcomponentoutputsinputlistcomponentoutputspaginatetypedef)
+- [ListComponentProvisionedResourcesInputListComponentProvisionedResourcesPaginateTypeDef](./type_defs.md#listcomponentprovisionedresourcesinputlistcomponentprovisionedresourcespaginatetypedef)
+- [ListComponentsInputListComponentsPaginateTypeDef](./type_defs.md#listcomponentsinputlistcomponentspaginatetypedef)
 - [ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputlistenvironmentaccountconnectionspaginatetypedef)
 - [ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef](./type_defs.md#listenvironmentoutputsinputlistenvironmentoutputspaginatetypedef)
 - [ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputlistenvironmentprovisionedresourcespaginatetypedef)
@@ -358,10 +391,12 @@ def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
 - [ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef](./type_defs.md#listservicetemplatesinputlistservicetemplatespaginatetypedef)
 - [ListServicesInputListServicesPaginateTypeDef](./type_defs.md#listservicesinputlistservicespaginatetypedef)
 - [ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef)
+- [ListComponentOutputsOutputTypeDef](./type_defs.md#listcomponentoutputsoutputtypedef)
 - [ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef)
 - [ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef)
 - [ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef)
 - [NotifyResourceDeploymentStatusChangeInputRequestTypeDef](./type_defs.md#notifyresourcedeploymentstatuschangeinputrequesttypedef)
+- [ListComponentProvisionedResourcesOutputTypeDef](./type_defs.md#listcomponentprovisionedresourcesoutputtypedef)
 - [ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef)
 - [ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef)
 - [ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef)

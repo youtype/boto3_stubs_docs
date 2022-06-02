@@ -220,6 +220,7 @@ DataSourceTypeType = Literal[
     "CUSTOM",
     "DATABASE",
     "FSX",
+    "GITHUB",
     "GOOGLEDRIVE",
     "JIRA",
     "ONEDRIVE",
@@ -860,6 +861,21 @@ ThesaurusStatusType = Literal[
     "DELETING",
     "FAILED",
     "UPDATING",
+]
+```
+## TypeType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import TypeType
+
+def get_value() -> TypeType:
+    return "ON_PREMISE"
+```
+
+```python title="Definition"
+TypeType = Literal[
+    "ON_PREMISE",
+    "SAAS",
 ]
 ```
 ## UserContextPolicyType

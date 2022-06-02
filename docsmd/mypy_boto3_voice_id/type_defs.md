@@ -262,6 +262,25 @@ class SpeakerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SpeakerStatusType](./literals.md#speakerstatustype) 
+## ServerSideEncryptionUpdateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import ServerSideEncryptionUpdateDetailsTypeDef
+
+def get_value() -> ServerSideEncryptionUpdateDetailsTypeDef:
+    return {
+        "Message": ...,
+    }
+```
+
+```python title="Definition"
+class ServerSideEncryptionUpdateDetailsTypeDef(TypedDict):
+    Message: NotRequired[str],
+    OldKmsKeyId: NotRequired[str],
+    UpdateStatus: NotRequired[ServerSideEncryptionUpdateStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: ServerSideEncryptionUpdateStatusType](./literals.md#serversideencryptionupdatestatustype) 
 ## EnrollmentJobFraudDetectionConfigTypeDef
 
 ```python title="Usage Example"
@@ -608,56 +627,6 @@ class AuthenticationResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef) 
 2. See [:material-code-brackets: AuthenticationDecisionType](./literals.md#authenticationdecisiontype) 
-## DomainSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_voice_id.type_defs import DomainSummaryTypeDef
-
-def get_value() -> DomainSummaryTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DomainSummaryTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    Description: NotRequired[str],
-    DomainId: NotRequired[str],
-    DomainStatus: NotRequired[DomainStatusType],  # (1)
-    Name: NotRequired[str],
-    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
-    UpdatedAt: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
-2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
-## DomainTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_voice_id.type_defs import DomainTypeDef
-
-def get_value() -> DomainTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class DomainTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    CreatedAt: NotRequired[datetime],
-    Description: NotRequired[str],
-    DomainId: NotRequired[str],
-    DomainStatus: NotRequired[DomainStatusType],  # (1)
-    Name: NotRequired[str],
-    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
-    UpdatedAt: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
-2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 ## UpdateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -819,6 +788,60 @@ class OptOutSpeakerResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SpeakerTypeDef](./type_defs.md#speakertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DomainSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import DomainSummaryTypeDef
+
+def get_value() -> DomainSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DomainSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    DomainId: NotRequired[str],
+    DomainStatus: NotRequired[DomainStatusType],  # (1)
+    Name: NotRequired[str],
+    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
+    ServerSideEncryptionUpdateDetails: NotRequired[ServerSideEncryptionUpdateDetailsTypeDef],  # (3)
+    UpdatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionUpdateDetailsTypeDef](./type_defs.md#serversideencryptionupdatedetailstypedef) 
+## DomainTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import DomainTypeDef
+
+def get_value() -> DomainTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DomainTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    DomainId: NotRequired[str],
+    DomainStatus: NotRequired[DomainStatusType],  # (1)
+    Name: NotRequired[str],
+    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
+    ServerSideEncryptionUpdateDetails: NotRequired[ServerSideEncryptionUpdateDetailsTypeDef],  # (3)
+    UpdatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionUpdateDetailsTypeDef](./type_defs.md#serversideencryptionupdatedetailstypedef) 
 ## EnrollmentConfigTypeDef
 
 ```python title="Usage Example"

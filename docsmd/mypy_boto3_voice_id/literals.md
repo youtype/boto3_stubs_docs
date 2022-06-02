@@ -192,6 +192,22 @@ ListSpeakersPaginatorName = Literal[
     "list_speakers",
 ]
 ```
+## ServerSideEncryptionUpdateStatusType
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.literals import ServerSideEncryptionUpdateStatusType
+
+def get_value() -> ServerSideEncryptionUpdateStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+ServerSideEncryptionUpdateStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## SpeakerEnrollmentJobStatusType
 
 ```python title="Usage Example"

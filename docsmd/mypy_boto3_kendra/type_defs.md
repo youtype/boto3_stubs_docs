@@ -1205,6 +1205,46 @@ class TimeRangeTypeDef(TypedDict):
     EndTime: NotRequired[datetime],
 ```
 
+## GitHubDocumentCrawlPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import GitHubDocumentCrawlPropertiesTypeDef
+
+def get_value() -> GitHubDocumentCrawlPropertiesTypeDef:
+    return {
+        "CrawlRepositoryDocuments": ...,
+    }
+```
+
+```python title="Definition"
+class GitHubDocumentCrawlPropertiesTypeDef(TypedDict):
+    CrawlRepositoryDocuments: NotRequired[bool],
+    CrawlIssue: NotRequired[bool],
+    CrawlIssueComment: NotRequired[bool],
+    CrawlIssueCommentAttachment: NotRequired[bool],
+    CrawlPullRequest: NotRequired[bool],
+    CrawlPullRequestComment: NotRequired[bool],
+    CrawlPullRequestCommentAttachment: NotRequired[bool],
+```
+
+## SaaSConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import SaaSConfigurationTypeDef
+
+def get_value() -> SaaSConfigurationTypeDef:
+    return {
+        "OrganizationName": ...,
+        "HostUrl": ...,
+    }
+```
+
+```python title="Definition"
+class SaaSConfigurationTypeDef(TypedDict):
+    OrganizationName: str,
+    HostUrl: str,
+```
+
 ## MemberGroupTypeDef
 
 ```python title="Usage Example"
@@ -2997,6 +3037,27 @@ class DescribeThesaurusResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: ThesaurusStatusType](./literals.md#thesaurusstatustype) 
 2. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OnPremiseConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import OnPremiseConfigurationTypeDef
+
+def get_value() -> OnPremiseConfigurationTypeDef:
+    return {
+        "HostUrl": ...,
+        "OrganizationName": ...,
+        "SslCertificateS3Path": ...,
+    }
+```
+
+```python title="Definition"
+class OnPremiseConfigurationTypeDef(TypedDict):
+    HostUrl: str,
+    OrganizationName: str,
+    SslCertificateS3Path: S3PathTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
 ## OneDriveUsersTypeDef
 
 ```python title="Usage Example"
@@ -3839,6 +3900,56 @@ class ConfluenceConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: ConfluenceBlogConfigurationTypeDef](./type_defs.md#confluenceblogconfigurationtypedef) 
 5. See [:material-code-braces: ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef) 
 6. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+## GitHubConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import GitHubConfigurationTypeDef
+
+def get_value() -> GitHubConfigurationTypeDef:
+    return {
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class GitHubConfigurationTypeDef(TypedDict):
+    SecretArn: str,
+    SaaSConfiguration: NotRequired[SaaSConfigurationTypeDef],  # (1)
+    OnPremiseConfiguration: NotRequired[OnPremiseConfigurationTypeDef],  # (2)
+    Type: NotRequired[TypeType],  # (3)
+    UseChangeLog: NotRequired[bool],
+    GitHubDocumentCrawlProperties: NotRequired[GitHubDocumentCrawlPropertiesTypeDef],  # (4)
+    RepositoryFilter: NotRequired[Sequence[str]],
+    InclusionFolderNamePatterns: NotRequired[Sequence[str]],
+    InclusionFileTypePatterns: NotRequired[Sequence[str]],
+    InclusionFileNamePatterns: NotRequired[Sequence[str]],
+    ExclusionFolderNamePatterns: NotRequired[Sequence[str]],
+    ExclusionFileTypePatterns: NotRequired[Sequence[str]],
+    ExclusionFileNamePatterns: NotRequired[Sequence[str]],
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (5)
+    GitHubRepositoryConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubCommitConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubIssueDocumentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubIssueCommentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubIssueAttachmentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubPullRequestCommentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubPullRequestDocumentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+    GitHubPullRequestDocumentAttachmentConfigurationFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: SaaSConfigurationTypeDef](./type_defs.md#saasconfigurationtypedef) 
+2. See [:material-code-braces: OnPremiseConfigurationTypeDef](./type_defs.md#onpremiseconfigurationtypedef) 
+3. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+4. See [:material-code-braces: GitHubDocumentCrawlPropertiesTypeDef](./type_defs.md#githubdocumentcrawlpropertiestypedef) 
+5. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+6. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+7. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+8. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+9. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+10. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+11. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+12. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+13. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
 ## OneDriveConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4517,6 +4628,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
     BoxConfiguration: NotRequired[BoxConfigurationTypeDef],  # (13)
     QuipConfiguration: NotRequired[QuipConfigurationTypeDef],  # (14)
     JiraConfiguration: NotRequired[JiraConfigurationTypeDef],  # (15)
+    GitHubConfiguration: NotRequired[GitHubConfigurationTypeDef],  # (16)
 ```
 
 1. See [:material-code-braces: S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef) 
@@ -4534,6 +4646,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
 13. See [:material-code-braces: BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef) 
 14. See [:material-code-braces: QuipConfigurationTypeDef](./type_defs.md#quipconfigurationtypedef) 
 15. See [:material-code-braces: JiraConfigurationTypeDef](./type_defs.md#jiraconfigurationtypedef) 
+16. See [:material-code-braces: GitHubConfigurationTypeDef](./type_defs.md#githubconfigurationtypedef) 
 ## BatchPutDocumentRequestRequestTypeDef
 
 ```python title="Usage Example"
