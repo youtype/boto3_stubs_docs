@@ -2292,6 +2292,40 @@ parent.get_current_metric_data(**kwargs)
 
 1. See [:material-code-braces: GetCurrentMetricDataRequestRequestTypeDef](./type_defs.md#getcurrentmetricdatarequestrequesttypedef) 
 
+### get\_current\_user\_data
+
+Gets the real-time active user data from the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").get_current_user_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_user_data)
+
+```python title="Method definition"
+def get_current_user_data(
+    self,
+    *,
+    InstanceId: str,
+    Filters: UserDataFiltersTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetCurrentUserDataResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: UserDataFiltersTypeDef](./type_defs.md#userdatafilterstypedef) 
+2. See [:material-code-braces: GetCurrentUserDataResponseTypeDef](./type_defs.md#getcurrentuserdataresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCurrentUserDataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Filters": ...,
+}
+
+parent.get_current_user_data(**kwargs)
+```
+
+1. See [:material-code-braces: GetCurrentUserDataRequestRequestTypeDef](./type_defs.md#getcurrentuserdatarequestrequesttypedef) 
+
 ### get\_federation\_token
 
 Retrieves a token for federation.

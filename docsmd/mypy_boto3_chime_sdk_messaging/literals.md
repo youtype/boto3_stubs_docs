@@ -187,6 +187,35 @@ PushNotificationTypeType = Literal[
     "VOIP",
 ]
 ```
+## SearchFieldKeyType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_messaging.literals import SearchFieldKeyType
+
+def get_value() -> SearchFieldKeyType:
+    return "MEMBERS"
+```
+
+```python title="Definition"
+SearchFieldKeyType = Literal[
+    "MEMBERS",
+]
+```
+## SearchFieldOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_messaging.literals import SearchFieldOperatorType
+
+def get_value() -> SearchFieldOperatorType:
+    return "EQUALS"
+```
+
+```python title="Definition"
+SearchFieldOperatorType = Literal[
+    "EQUALS",
+    "INCLUDES",
+]
+```
 ## SortOrderType
 
 ```python title="Usage Example"

@@ -905,6 +905,28 @@ class RedactChannelMessageRequestRequestTypeDef(TypedDict):
     ChimeBearer: str,
 ```
 
+## SearchFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_messaging.type_defs import SearchFieldTypeDef
+
+def get_value() -> SearchFieldTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+        "Operator": ...,
+    }
+```
+
+```python title="Definition"
+class SearchFieldTypeDef(TypedDict):
+    Key: SearchFieldKeyType,  # (1)
+    Values: Sequence[str],
+    Operator: SearchFieldOperatorType,  # (2)
+```
+
+1. See [:material-code-brackets: SearchFieldKeyType](./literals.md#searchfieldkeytype) 
+2. See [:material-code-brackets: SearchFieldOperatorType](./literals.md#searchfieldoperatortype) 
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -971,8 +993,6 @@ from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelRequestRequest
 def get_value() -> UpdateChannelRequestRequestTypeDef:
     return {
         "ChannelArn": ...,
-        "Name": ...,
-        "Mode": ...,
         "ChimeBearer": ...,
     }
 ```
@@ -980,9 +1000,9 @@ def get_value() -> UpdateChannelRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateChannelRequestRequestTypeDef(TypedDict):
     ChannelArn: str,
-    Name: str,
-    Mode: ChannelModeType,  # (1)
     ChimeBearer: str,
+    Name: NotRequired[str],
+    Mode: NotRequired[ChannelModeType],  # (1)
     Metadata: NotRequired[str],
 ```
 
@@ -1454,6 +1474,28 @@ class ListChannelsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchChannelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_messaging.type_defs import SearchChannelsResponseTypeDef
+
+def get_value() -> SearchChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchChannelsResponseTypeDef(TypedDict):
+    Channels: List[ChannelSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChannelMembershipPreferencesTypeDef
 
 ```python title="Usage Example"
@@ -1681,6 +1723,9 @@ class CreateChannelRequestRequestTypeDef(TypedDict):
     Privacy: NotRequired[ChannelPrivacyType],  # (2)
     Metadata: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ChannelId: NotRequired[str],
+    MemberArns: NotRequired[Sequence[str]],
+    ModeratorArns: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
@@ -1762,6 +1807,26 @@ class ProcessorConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef) 
+## SearchChannelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_messaging.type_defs import SearchChannelsRequestRequestTypeDef
+
+def get_value() -> SearchChannelsRequestRequestTypeDef:
+    return {
+        "Fields": ...,
+    }
+```
+
+```python title="Definition"
+class SearchChannelsRequestRequestTypeDef(TypedDict):
+    Fields: Sequence[SearchFieldTypeDef],  # (1)
+    ChimeBearer: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: SearchFieldTypeDef](./type_defs.md#searchfieldtypedef) 
 ## BatchCreateChannelMembershipResponseTypeDef
 
 ```python title="Usage Example"

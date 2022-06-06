@@ -154,6 +154,28 @@ ContactInitiationMethodType = Literal[
     "TRANSFER",
 ]
 ```
+## ContactStateType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ContactStateType
+
+def get_value() -> ContactStateType:
+    return "CONNECTED"
+```
+
+```python title="Definition"
+ContactStateType = Literal[
+    "CONNECTED",
+    "CONNECTED_ONHOLD",
+    "CONNECTING",
+    "ENDED",
+    "ERROR",
+    "INCOMING",
+    "MISSED",
+    "PENDING",
+    "REJECTED",
+]
+```
 ## CurrentMetricNameType
 
 ```python title="Usage Example"

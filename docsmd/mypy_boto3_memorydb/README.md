@@ -88,6 +88,7 @@ def get_value() -> AZStatusType:
 - [MemoryDBServiceName](./literals.md#memorydbservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

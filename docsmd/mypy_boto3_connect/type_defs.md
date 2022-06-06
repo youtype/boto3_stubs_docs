@@ -7,6 +7,23 @@
     Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
     type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
+## QueueReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
+
+def get_value() -> QueueReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class QueueReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## AgentInfoTypeDef
 
 ```python title="Usage Example"
@@ -22,6 +39,23 @@ def get_value() -> AgentInfoTypeDef:
 class AgentInfoTypeDef(TypedDict):
     Id: NotRequired[str],
     ConnectedToAgentTimestamp: NotRequired[datetime],
+```
+
+## AgentStatusReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import AgentStatusReferenceTypeDef
+
+def get_value() -> AgentStatusReferenceTypeDef:
+    return {
+        "StatusStartTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class AgentStatusReferenceTypeDef(TypedDict):
+    StatusStartTimestamp: NotRequired[datetime],
+    StatusArn: NotRequired[str],
 ```
 
 ## AgentStatusSummaryTypeDef
@@ -387,6 +421,23 @@ class PhoneNumberStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PhoneNumberWorkflowStatusType](./literals.md#phonenumberworkflowstatustype) 
+## ContactFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ContactFilterTypeDef
+
+def get_value() -> ContactFilterTypeDef:
+    return {
+        "ContactStates": ...,
+    }
+```
+
+```python title="Definition"
+class ContactFilterTypeDef(TypedDict):
+    ContactStates: NotRequired[Sequence[ContactStateType]],  # (1)
+```
+
+1. See [:material-code-brackets: ContactStateType](./literals.md#contactstatetype) 
 ## ContactFlowModuleSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1448,23 +1499,6 @@ class VocabularyTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
-## QueueReferenceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
-
-def get_value() -> QueueReferenceTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class QueueReferenceTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Arn: NotRequired[str],
-```
-
 ## DisassociateApprovedOriginRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1760,6 +1794,23 @@ class HierarchyGroupConditionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: HierarchyGroupMatchTypeType](./literals.md#hierarchygroupmatchtypetype) 
+## HierarchyGroupSummaryReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import HierarchyGroupSummaryReferenceTypeDef
+
+def get_value() -> HierarchyGroupSummaryReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class HierarchyGroupSummaryReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## HierarchyGroupSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3001,6 +3052,23 @@ class ResumeContactRecordingRequestRequestTypeDef(TypedDict):
     InitialContactId: str,
 ```
 
+## RoutingProfileReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RoutingProfileReferenceTypeDef
+
+def get_value() -> RoutingProfileReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class RoutingProfileReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## SearchAvailablePhoneNumbersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3698,6 +3766,23 @@ class UpdateUserSecurityProfilesRequestRequestTypeDef(TypedDict):
     InstanceId: str,
 ```
 
+## UserReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UserReferenceTypeDef
+
+def get_value() -> UserReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UserReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## UserIdentityInfoLiteTypeDef
 
 ```python title="Usage Example"
@@ -3715,6 +3800,51 @@ class UserIdentityInfoLiteTypeDef(TypedDict):
     LastName: NotRequired[str],
 ```
 
+## AgentContactReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import AgentContactReferenceTypeDef
+
+def get_value() -> AgentContactReferenceTypeDef:
+    return {
+        "ContactId": ...,
+    }
+```
+
+```python title="Definition"
+class AgentContactReferenceTypeDef(TypedDict):
+    ContactId: NotRequired[str],
+    Channel: NotRequired[ChannelType],  # (1)
+    InitiationMethod: NotRequired[ContactInitiationMethodType],  # (2)
+    AgentContactState: NotRequired[ContactStateType],  # (3)
+    StateStartTimestamp: NotRequired[datetime],
+    ConnectedToAgentTimestamp: NotRequired[datetime],
+    Queue: NotRequired[QueueReferenceTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+2. See [:material-code-brackets: ContactInitiationMethodType](./literals.md#contactinitiationmethodtype) 
+3. See [:material-code-brackets: ContactStateType](./literals.md#contactstatetype) 
+4. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
+## DimensionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DimensionsTypeDef
+
+def get_value() -> DimensionsTypeDef:
+    return {
+        "Queue": ...,
+    }
+```
+
+```python title="Definition"
+class DimensionsTypeDef(TypedDict):
+    Queue: NotRequired[QueueReferenceTypeDef],  # (1)
+    Channel: NotRequired[ChannelType],  # (2)
+```
+
+1. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
+2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## StartOutboundVoiceContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4641,6 +4771,24 @@ class ClaimedPhoneNumberSummaryTypeDef(TypedDict):
 1. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
 2. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
 3. See [:material-code-braces: PhoneNumberStatusTypeDef](./type_defs.md#phonenumberstatustypedef) 
+## UserDataFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UserDataFiltersTypeDef
+
+def get_value() -> UserDataFiltersTypeDef:
+    return {
+        "Queues": ...,
+    }
+```
+
+```python title="Definition"
+class UserDataFiltersTypeDef(TypedDict):
+    Queues: NotRequired[Sequence[str]],
+    ContactFilter: NotRequired[ContactFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ContactFilterTypeDef](./type_defs.md#contactfiltertypedef) 
 ## ListContactFlowModulesResponseTypeDef
 
 ```python title="Usage Example"
@@ -5097,25 +5245,6 @@ class DescribeVocabularyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VocabularyTypeDef](./type_defs.md#vocabularytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DimensionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import DimensionsTypeDef
-
-def get_value() -> DimensionsTypeDef:
-    return {
-        "Queue": ...,
-    }
-```
-
-```python title="Definition"
-class DimensionsTypeDef(TypedDict):
-    Queue: NotRequired[QueueReferenceTypeDef],  # (1)
-    Channel: NotRequired[ChannelType],  # (2)
-```
-
-1. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
-2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5839,6 +5968,31 @@ class SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
 2. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## HierarchyPathReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import HierarchyPathReferenceTypeDef
+
+def get_value() -> HierarchyPathReferenceTypeDef:
+    return {
+        "LevelOne": ...,
+    }
+```
+
+```python title="Definition"
+class HierarchyPathReferenceTypeDef(TypedDict):
+    LevelOne: NotRequired[HierarchyGroupSummaryReferenceTypeDef],  # (1)
+    LevelTwo: NotRequired[HierarchyGroupSummaryReferenceTypeDef],  # (1)
+    LevelThree: NotRequired[HierarchyGroupSummaryReferenceTypeDef],  # (1)
+    LevelFour: NotRequired[HierarchyGroupSummaryReferenceTypeDef],  # (1)
+    LevelFive: NotRequired[HierarchyGroupSummaryReferenceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef) 
+2. See [:material-code-braces: HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef) 
+3. See [:material-code-braces: HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef) 
+4. See [:material-code-braces: HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef) 
+5. See [:material-code-braces: HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef) 
 ## HierarchyPathTypeDef
 
 ```python title="Usage Example"
@@ -6716,6 +6870,27 @@ class DescribePhoneNumberResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ClaimedPhoneNumberSummaryTypeDef](./type_defs.md#claimedphonenumbersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCurrentUserDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetCurrentUserDataRequestRequestTypeDef
+
+def get_value() -> GetCurrentUserDataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class GetCurrentUserDataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Filters: UserDataFiltersTypeDef,  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: UserDataFiltersTypeDef](./type_defs.md#userdatafilterstypedef) 
 ## DescribeContactResponseTypeDef
 
 ```python title="Usage Example"
@@ -6928,6 +7103,37 @@ class InstanceStorageConfigTypeDef(TypedDict):
 3. See [:material-code-braces: KinesisVideoStreamConfigTypeDef](./type_defs.md#kinesisvideostreamconfigtypedef) 
 4. See [:material-code-braces: KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef) 
 5. See [:material-code-braces: KinesisFirehoseConfigTypeDef](./type_defs.md#kinesisfirehoseconfigtypedef) 
+## UserDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UserDataTypeDef
+
+def get_value() -> UserDataTypeDef:
+    return {
+        "User": ...,
+    }
+```
+
+```python title="Definition"
+class UserDataTypeDef(TypedDict):
+    User: NotRequired[UserReferenceTypeDef],  # (1)
+    RoutingProfile: NotRequired[RoutingProfileReferenceTypeDef],  # (2)
+    HierarchyPath: NotRequired[HierarchyPathReferenceTypeDef],  # (3)
+    Status: NotRequired[AgentStatusReferenceTypeDef],  # (4)
+    AvailableSlotsByChannel: NotRequired[Dict[ChannelType, int]],  # (5)
+    MaxSlotsByChannel: NotRequired[Dict[ChannelType, int]],  # (5)
+    ActiveSlotsByChannel: NotRequired[Dict[ChannelType, int]],  # (5)
+    Contacts: NotRequired[List[AgentContactReferenceTypeDef]],  # (8)
+```
+
+1. See [:material-code-braces: UserReferenceTypeDef](./type_defs.md#userreferencetypedef) 
+2. See [:material-code-braces: RoutingProfileReferenceTypeDef](./type_defs.md#routingprofilereferencetypedef) 
+3. See [:material-code-braces: HierarchyPathReferenceTypeDef](./type_defs.md#hierarchypathreferencetypedef) 
+4. See [:material-code-braces: AgentStatusReferenceTypeDef](./type_defs.md#agentstatusreferencetypedef) 
+5. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+6. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+7. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+8. See [:material-code-braces: AgentContactReferenceTypeDef](./type_defs.md#agentcontactreferencetypedef) 
 ## HierarchyGroupTypeDef
 
 ```python title="Usage Example"
@@ -7464,6 +7670,28 @@ class UpdateInstanceStorageConfigRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
 2. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
+## GetCurrentUserDataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetCurrentUserDataResponseTypeDef
+
+def get_value() -> GetCurrentUserDataResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "UserDataList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCurrentUserDataResponseTypeDef(TypedDict):
+    NextToken: str,
+    UserDataList: List[UserDataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserDataTypeDef](./type_defs.md#userdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserHierarchyGroupResponseTypeDef
 
 ```python title="Usage Example"

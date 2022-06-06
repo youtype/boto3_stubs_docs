@@ -137,6 +137,7 @@ def get_value() -> AgentStatusStateType:
 - [ContactFlowStateType](./literals.md#contactflowstatetype)
 - [ContactFlowTypeType](./literals.md#contactflowtypetype)
 - [ContactInitiationMethodType](./literals.md#contactinitiationmethodtype)
+- [ContactStateType](./literals.md#contactstatetype)
 - [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - [DirectoryTypeType](./literals.md#directorytypetype)
 - [EncryptionTypeType](./literals.md#encryptiontypetype)
@@ -217,15 +218,17 @@ def get_value() -> AgentStatusStateType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_connect.type_defs import AgentInfoTypeDef
+from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
 
-def get_value() -> AgentInfoTypeDef:
+def get_value() -> QueueReferenceTypeDef:
     return {
         "Id": ...,
     }
 ```
 
+- [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
 - [AgentInfoTypeDef](./type_defs.md#agentinfotypedef)
+- [AgentStatusReferenceTypeDef](./type_defs.md#agentstatusreferencetypedef)
 - [AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)
 - [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
 - [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
@@ -245,6 +248,7 @@ def get_value() -> AgentInfoTypeDef:
 - [ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef)
 - [ClaimPhoneNumberRequestRequestTypeDef](./type_defs.md#claimphonenumberrequestrequesttypedef)
 - [PhoneNumberStatusTypeDef](./type_defs.md#phonenumberstatustypedef)
+- [ContactFilterTypeDef](./type_defs.md#contactfiltertypedef)
 - [ContactFlowModuleSummaryTypeDef](./type_defs.md#contactflowmodulesummarytypedef)
 - [ContactFlowModuleTypeDef](./type_defs.md#contactflowmoduletypedef)
 - [ContactFlowSummaryTypeDef](./type_defs.md#contactflowsummarytypedef)
@@ -299,7 +303,6 @@ def get_value() -> AgentInfoTypeDef:
 - [DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef)
 - [DescribeVocabularyRequestRequestTypeDef](./type_defs.md#describevocabularyrequestrequesttypedef)
 - [VocabularyTypeDef](./type_defs.md#vocabularytypedef)
-- [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
 - [DisassociateApprovedOriginRequestRequestTypeDef](./type_defs.md#disassociateapprovedoriginrequestrequesttypedef)
 - [DisassociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#disassociateinstancestorageconfigrequestrequesttypedef)
 - [DisassociateLambdaFunctionRequestRequestTypeDef](./type_defs.md#disassociatelambdafunctionrequestrequesttypedef)
@@ -316,6 +319,7 @@ def get_value() -> AgentInfoTypeDef:
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [GetTaskTemplateRequestRequestTypeDef](./type_defs.md#gettasktemplaterequestrequesttypedef)
 - [HierarchyGroupConditionTypeDef](./type_defs.md#hierarchygroupconditiontypedef)
+- [HierarchyGroupSummaryReferenceTypeDef](./type_defs.md#hierarchygroupsummaryreferencetypedef)
 - [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
 - [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
 - [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
@@ -381,6 +385,7 @@ def get_value() -> AgentInfoTypeDef:
 - [ReferenceTypeDef](./type_defs.md#referencetypedef)
 - [ReleasePhoneNumberRequestRequestTypeDef](./type_defs.md#releasephonenumberrequestrequesttypedef)
 - [ResumeContactRecordingRequestRequestTypeDef](./type_defs.md#resumecontactrecordingrequestrequesttypedef)
+- [RoutingProfileReferenceTypeDef](./type_defs.md#routingprofilereferencetypedef)
 - [SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef)
 - [SearchVocabulariesRequestRequestTypeDef](./type_defs.md#searchvocabulariesrequestrequesttypedef)
 - [VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef)
@@ -415,7 +420,10 @@ def get_value() -> AgentInfoTypeDef:
 - [UpdateUserHierarchyRequestRequestTypeDef](./type_defs.md#updateuserhierarchyrequestrequesttypedef)
 - [UpdateUserRoutingProfileRequestRequestTypeDef](./type_defs.md#updateuserroutingprofilerequestrequesttypedef)
 - [UpdateUserSecurityProfilesRequestRequestTypeDef](./type_defs.md#updateusersecurityprofilesrequestrequesttypedef)
+- [UserReferenceTypeDef](./type_defs.md#userreferencetypedef)
 - [UserIdentityInfoLiteTypeDef](./type_defs.md#useridentityinfolitetypedef)
+- [AgentContactReferenceTypeDef](./type_defs.md#agentcontactreferencetypedef)
+- [DimensionsTypeDef](./type_defs.md#dimensionstypedef)
 - [StartOutboundVoiceContactRequestRequestTypeDef](./type_defs.md#startoutboundvoicecontactrequestrequesttypedef)
 - [AssociateLexBotRequestRequestTypeDef](./type_defs.md#associatelexbotrequestrequesttypedef)
 - [AssociateBotRequestRequestTypeDef](./type_defs.md#associatebotrequestrequesttypedef)
@@ -460,6 +468,7 @@ def get_value() -> AgentInfoTypeDef:
 - [SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef)
 - [StartContactStreamingRequestRequestTypeDef](./type_defs.md#startcontactstreamingrequestrequesttypedef)
 - [ClaimedPhoneNumberSummaryTypeDef](./type_defs.md#claimedphonenumbersummarytypedef)
+- [UserDataFiltersTypeDef](./type_defs.md#userdatafilterstypedef)
 - [ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef)
 - [DescribeContactFlowModuleResponseTypeDef](./type_defs.md#describecontactflowmoduleresponsetypedef)
 - [ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef)
@@ -480,7 +489,6 @@ def get_value() -> AgentInfoTypeDef:
 - [ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef)
 - [DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef)
 - [DescribeVocabularyResponseTypeDef](./type_defs.md#describevocabularyresponsetypedef)
-- [DimensionsTypeDef](./type_defs.md#dimensionstypedef)
 - [DisassociateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#disassociateroutingprofilequeuesrequestrequesttypedef)
 - [RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)
 - [KinesisVideoStreamConfigTypeDef](./type_defs.md#kinesisvideostreamconfigtypedef)
@@ -517,6 +525,7 @@ def get_value() -> AgentInfoTypeDef:
 - [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [SearchAvailablePhoneNumbersRequestSearchAvailablePhoneNumbersPaginateTypeDef](./type_defs.md#searchavailablephonenumbersrequestsearchavailablephonenumberspaginatetypedef)
 - [SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef](./type_defs.md#searchvocabulariesrequestsearchvocabulariespaginatetypedef)
+- [HierarchyPathReferenceTypeDef](./type_defs.md#hierarchypathreferencetypedef)
 - [HierarchyPathTypeDef](./type_defs.md#hierarchypathtypedef)
 - [ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef)
 - [HierarchyStructureTypeDef](./type_defs.md#hierarchystructuretypedef)
@@ -556,6 +565,7 @@ def get_value() -> AgentInfoTypeDef:
 - [UserSearchSummaryTypeDef](./type_defs.md#usersearchsummarytypedef)
 - [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)
 - [DescribePhoneNumberResponseTypeDef](./type_defs.md#describephonenumberresponsetypedef)
+- [GetCurrentUserDataRequestRequestTypeDef](./type_defs.md#getcurrentuserdatarequestrequesttypedef)
 - [DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef)
 - [UserSearchFilterTypeDef](./type_defs.md#usersearchfiltertypedef)
 - [DescribeQueueResponseTypeDef](./type_defs.md#describequeueresponsetypedef)
@@ -566,6 +576,7 @@ def get_value() -> AgentInfoTypeDef:
 - [CreateRoutingProfileRequestRequestTypeDef](./type_defs.md#createroutingprofilerequestrequesttypedef)
 - [UpdateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#updateroutingprofilequeuesrequestrequesttypedef)
 - [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
+- [UserDataTypeDef](./type_defs.md#userdatatypedef)
 - [HierarchyGroupTypeDef](./type_defs.md#hierarchygrouptypedef)
 - [DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef)
 - [UpdateUserHierarchyStructureRequestRequestTypeDef](./type_defs.md#updateuserhierarchystructurerequestrequesttypedef)
@@ -590,6 +601,7 @@ def get_value() -> AgentInfoTypeDef:
 - [DescribeInstanceStorageConfigResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponsetypedef)
 - [ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef)
 - [UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef)
+- [GetCurrentUserDataResponseTypeDef](./type_defs.md#getcurrentuserdataresponsetypedef)
 - [DescribeUserHierarchyGroupResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponsetypedef)
 - [HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef)
 - [DescribeHoursOfOperationResponseTypeDef](./type_defs.md#describehoursofoperationresponsetypedef)
