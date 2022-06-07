@@ -85,6 +85,7 @@ def get_value() -> ChangeStatusType:
 - [MarketplaceCatalogServiceName](./literals.md#marketplacecatalogservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

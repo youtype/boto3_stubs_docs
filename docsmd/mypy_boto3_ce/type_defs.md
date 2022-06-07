@@ -126,6 +126,47 @@ class RootCauseTypeDef(TypedDict):
     UsageType: NotRequired[str],
 ```
 
+## CostAllocationTagStatusEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import CostAllocationTagStatusEntryTypeDef
+
+def get_value() -> CostAllocationTagStatusEntryTypeDef:
+    return {
+        "TagKey": ...,
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class CostAllocationTagStatusEntryTypeDef(TypedDict):
+    TagKey: str,
+    Status: CostAllocationTagStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: CostAllocationTagStatusType](./literals.md#costallocationtagstatustype) 
+## CostAllocationTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import CostAllocationTagTypeDef
+
+def get_value() -> CostAllocationTagTypeDef:
+    return {
+        "TagKey": ...,
+        "Type": ...,
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class CostAllocationTagTypeDef(TypedDict):
+    TagKey: str,
+    Type: CostAllocationTagTypeType,  # (1)
+    Status: CostAllocationTagStatusType,  # (2)
+```
+
+1. See [:material-code-brackets: CostAllocationTagTypeType](./literals.md#costallocationtagtypetype) 
+2. See [:material-code-brackets: CostAllocationTagStatusType](./literals.md#costallocationtagstatustype) 
 ## CostCategoryInheritedValueDimensionTypeDef
 
 ```python title="Usage Example"
@@ -909,6 +950,28 @@ class RedshiftInstanceDetailsTypeDef(TypedDict):
     SizeFlexEligible: NotRequired[bool],
 ```
 
+## ListCostAllocationTagsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import ListCostAllocationTagsRequestRequestTypeDef
+
+def get_value() -> ListCostAllocationTagsRequestRequestTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ListCostAllocationTagsRequestRequestTypeDef(TypedDict):
+    Status: NotRequired[CostAllocationTagStatusType],  # (1)
+    TagKeys: NotRequired[Sequence[str]],
+    Type: NotRequired[CostAllocationTagTypeType],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: CostAllocationTagStatusType](./literals.md#costallocationtagstatustype) 
+2. See [:material-code-brackets: CostAllocationTagTypeType](./literals.md#costallocationtagtypetype) 
 ## ListCostCategoryDefinitionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1149,6 +1212,24 @@ class UpdateAnomalyMonitorRequestRequestTypeDef(TypedDict):
     MonitorName: NotRequired[str],
 ```
 
+## UpdateCostAllocationTagsStatusErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import UpdateCostAllocationTagsStatusErrorTypeDef
+
+def get_value() -> UpdateCostAllocationTagsStatusErrorTypeDef:
+    return {
+        "TagKey": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCostAllocationTagsStatusErrorTypeDef(TypedDict):
+    TagKey: NotRequired[str],
+    Code: NotRequired[str],
+    Message: NotRequired[str],
+```
+
 ## AnomalySubscriptionTypeDef
 
 ```python title="Usage Example"
@@ -1231,6 +1312,23 @@ class AnomalyTypeDef(TypedDict):
 2. See [:material-code-braces: AnomalyScoreTypeDef](./type_defs.md#anomalyscoretypedef) 
 3. See [:material-code-braces: ImpactTypeDef](./type_defs.md#impacttypedef) 
 4. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
+## UpdateCostAllocationTagsStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import UpdateCostAllocationTagsStatusRequestRequestTypeDef
+
+def get_value() -> UpdateCostAllocationTagsStatusRequestRequestTypeDef:
+    return {
+        "CostAllocationTagsStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCostAllocationTagsStatusRequestRequestTypeDef(TypedDict):
+    CostAllocationTagsStatus: Sequence[CostAllocationTagStatusEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CostAllocationTagStatusEntryTypeDef](./type_defs.md#costallocationtagstatusentrytypedef) 
 ## CostCategoryRuleTypeDef
 
 ```python title="Usage Example"
@@ -1585,6 +1683,28 @@ class GetTagsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCostAllocationTagsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import ListCostAllocationTagsResponseTypeDef
+
+def get_value() -> ListCostAllocationTagsResponseTypeDef:
+    return {
+        "CostAllocationTags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCostAllocationTagsResponseTypeDef(TypedDict):
+    CostAllocationTags: List[CostAllocationTagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CostAllocationTagTypeDef](./type_defs.md#costallocationtagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -2287,6 +2407,26 @@ class SavingsPlansUtilizationDetailTypeDef(TypedDict):
 1. See [:material-code-braces: SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef) 
 2. See [:material-code-braces: SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef) 
 3. See [:material-code-braces: SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef) 
+## UpdateCostAllocationTagsStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import UpdateCostAllocationTagsStatusResponseTypeDef
+
+def get_value() -> UpdateCostAllocationTagsStatusResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCostAllocationTagsStatusResponseTypeDef(TypedDict):
+    Errors: List[UpdateCostAllocationTagsStatusErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UpdateCostAllocationTagsStatusErrorTypeDef](./type_defs.md#updatecostallocationtagsstatuserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAnomalySubscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"

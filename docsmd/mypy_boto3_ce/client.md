@@ -266,8 +266,8 @@ parent.delete_cost_category_definition(**kwargs)
 
 ### describe\_cost\_category\_definition
 
-Returns the name, ARN, rules, definition, and effective dates of a Cost Category
-that's defined in the account.
+Returns the name, Amazon Resource Name (ARN), rules, definition, and effective
+dates of a Cost Category that's defined in the account.
 
 Type annotations and code completion for `#!python boto3.client("ce").describe_cost_category_definition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
@@ -618,7 +618,10 @@ parent.get_dimension_values(**kwargs)
 
 ### get\_reservation\_coverage
 
-Retrieves the reservation coverage for your account.
+Retrieves the reservation coverage for your account, which you can use to see
+how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon
+Relational Database Service, or Amazon Redshift usage is covered by a
+reservation.
 
 Type annotations and code completion for `#!python boto3.client("ce").get_reservation_coverage` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
@@ -659,7 +662,7 @@ parent.get_reservation_coverage(**kwargs)
 
 ### get\_reservation\_purchase\_recommendation
 
-Gets recommendations for which reservations to purchase.
+Gets recommendations for reservation purchases.
 
 Type annotations and code completion for `#!python boto3.client("ce").get_reservation_purchase_recommendation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
@@ -1018,10 +1021,45 @@ parent.get_usage_forecast(**kwargs)
 
 1. See [:material-code-braces: GetUsageForecastRequestRequestTypeDef](./type_defs.md#getusageforecastrequestrequesttypedef) 
 
+### list\_cost\_allocation\_tags
+
+Get a list of cost allocation tags.
+
+Type annotations and code completion for `#!python boto3.client("ce").list_cost_allocation_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_allocation_tags)
+
+```python title="Method definition"
+def list_cost_allocation_tags(
+    self,
+    *,
+    Status: CostAllocationTagStatusType = ...,  # (1)
+    TagKeys: Sequence[str] = ...,
+    Type: CostAllocationTagTypeType = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCostAllocationTagsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: CostAllocationTagStatusType](./literals.md#costallocationtagstatustype) 
+2. See [:material-code-brackets: CostAllocationTagTypeType](./literals.md#costallocationtagtypetype) 
+3. See [:material-code-braces: ListCostAllocationTagsResponseTypeDef](./type_defs.md#listcostallocationtagsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCostAllocationTagsRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
+
+parent.list_cost_allocation_tags(**kwargs)
+```
+
+1. See [:material-code-braces: ListCostAllocationTagsRequestRequestTypeDef](./type_defs.md#listcostallocationtagsrequestrequesttypedef) 
+
 ### list\_cost\_category\_definitions
 
-Returns the name, ARN, `NumberOfRules` and effective dates of all Cost
-Categories defined in the account.
+Returns the name, Amazon Resource Name (ARN), `NumberOfRules` and effective
+dates of all Cost Categories defined in the account.
 
 Type annotations and code completion for `#!python boto3.client("ce").list_cost_category_definitions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
@@ -1237,6 +1275,36 @@ parent.update_anomaly_subscription(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequestrequesttypedef) 
+
+### update\_cost\_allocation\_tags\_status
+
+Updates status for cost allocation tags in bulk, with maximum batch size of 20.
+
+Type annotations and code completion for `#!python boto3.client("ce").update_cost_allocation_tags_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_allocation_tags_status)
+
+```python title="Method definition"
+def update_cost_allocation_tags_status(
+    self,
+    *,
+    CostAllocationTagsStatus: Sequence[CostAllocationTagStatusEntryTypeDef],  # (1)
+) -> UpdateCostAllocationTagsStatusResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CostAllocationTagStatusEntryTypeDef](./type_defs.md#costallocationtagstatusentrytypedef) 
+2. See [:material-code-braces: UpdateCostAllocationTagsStatusResponseTypeDef](./type_defs.md#updatecostallocationtagsstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateCostAllocationTagsStatusRequestRequestTypeDef = {  # (1)
+    "CostAllocationTagsStatus": ...,
+}
+
+parent.update_cost_allocation_tags_status(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCostAllocationTagsStatusRequestRequestTypeDef](./type_defs.md#updatecostallocationtagsstatusrequestrequesttypedef) 
 
 ### update\_cost\_category\_definition
 

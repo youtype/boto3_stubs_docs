@@ -70,6 +70,36 @@ ContextType = Literal[
     "SAVINGS_PLANS",
 ]
 ```
+## CostAllocationTagStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ce.literals import CostAllocationTagStatusType
+
+def get_value() -> CostAllocationTagStatusType:
+    return "Active"
+```
+
+```python title="Definition"
+CostAllocationTagStatusType = Literal[
+    "Active",
+    "Inactive",
+]
+```
+## CostAllocationTagTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ce.literals import CostAllocationTagTypeType
+
+def get_value() -> CostAllocationTagTypeType:
+    return "AWSGenerated"
+```
+
+```python title="Definition"
+CostAllocationTagTypeType = Literal[
+    "AWSGenerated",
+    "UserDefined",
+]
+```
 ## CostCategoryInheritedValueDimensionNameType
 
 ```python title="Usage Example"

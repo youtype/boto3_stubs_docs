@@ -411,3 +411,17 @@ ResourceServiceName = Literal[
     "sqs",
 ]
 ```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.literals import RegionName
+
+def get_value() -> RegionName:
+    return "us-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "us-east-1",
+]
+```
