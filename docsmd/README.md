@@ -427,6 +427,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-lookoutvision](./mypy_boto3_lookoutvision/README.md) for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision) service
 
+- [mypy-boto3-m2](./mypy_boto3_m2/README.md) for [MainframeModernization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/m2.html#MainframeModernization) service
+
 - [mypy-boto3-machinelearning](./mypy_boto3_machinelearning/README.md) for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning) service
 
 - [mypy-boto3-macie](./mypy_boto3_macie/README.md) for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie) service
@@ -538,6 +540,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-redshift](./mypy_boto3_redshift/README.md) for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift) service
 
 - [mypy-boto3-redshift-data](./mypy_boto3_redshift_data/README.md) for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService) service
+
+- [mypy-boto3-redshift-serverless](./mypy_boto3_redshift_serverless/README.md) for [RedshiftServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-serverless.html#RedshiftServerless) service
 
 - [mypy-boto3-rekognition](./mypy_boto3_rekognition/README.md) for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition) service
 

@@ -144,6 +144,60 @@ class CertificateTypeDef(TypedDict):
     KeyLength: NotRequired[int],
 ```
 
+## CollectorHealthCheckTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import CollectorHealthCheckTypeDef
+
+def get_value() -> CollectorHealthCheckTypeDef:
+    return {
+        "CollectorStatus": ...,
+    }
+```
+
+```python title="Definition"
+class CollectorHealthCheckTypeDef(TypedDict):
+    CollectorStatus: NotRequired[CollectorStatusType],  # (1)
+    LocalCollectorS3Access: NotRequired[bool],
+    WebCollectorS3Access: NotRequired[bool],
+    WebCollectorGrantedRoleBasedAccess: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: CollectorStatusType](./literals.md#collectorstatustype) 
+## InventoryDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import InventoryDataTypeDef
+
+def get_value() -> InventoryDataTypeDef:
+    return {
+        "NumberOfDatabases": ...,
+    }
+```
+
+```python title="Definition"
+class InventoryDataTypeDef(TypedDict):
+    NumberOfDatabases: NotRequired[int],
+    NumberOfSchemas: NotRequired[int],
+```
+
+## CollectorShortInfoResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import CollectorShortInfoResponseTypeDef
+
+def get_value() -> CollectorShortInfoResponseTypeDef:
+    return {
+        "CollectorReferencedId": ...,
+    }
+```
+
+```python title="Definition"
+class CollectorShortInfoResponseTypeDef(TypedDict):
+    CollectorReferencedId: NotRequired[str],
+    CollectorName: NotRequired[str],
+```
+
 ## ConnectionTypeDef
 
 ```python title="Usage Example"
@@ -744,6 +798,86 @@ class EventSubscriptionTypeDef(TypedDict):
     Enabled: NotRequired[bool],
 ```
 
+## CreateFleetAdvisorCollectorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import CreateFleetAdvisorCollectorRequestRequestTypeDef
+
+def get_value() -> CreateFleetAdvisorCollectorRequestRequestTypeDef:
+    return {
+        "CollectorName": ...,
+        "ServiceAccessRoleArn": ...,
+        "S3BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetAdvisorCollectorRequestRequestTypeDef(TypedDict):
+    CollectorName: str,
+    ServiceAccessRoleArn: str,
+    S3BucketName: str,
+    Description: NotRequired[str],
+```
+
+## DatabaseInstanceSoftwareDetailsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DatabaseInstanceSoftwareDetailsResponseTypeDef
+
+def get_value() -> DatabaseInstanceSoftwareDetailsResponseTypeDef:
+    return {
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class DatabaseInstanceSoftwareDetailsResponseTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    EngineEdition: NotRequired[str],
+    ServicePack: NotRequired[str],
+    SupportLevel: NotRequired[str],
+    OsArchitecture: NotRequired[int],
+    Tooltip: NotRequired[str],
+```
+
+## ServerShortInfoResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import ServerShortInfoResponseTypeDef
+
+def get_value() -> ServerShortInfoResponseTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ServerShortInfoResponseTypeDef(TypedDict):
+    ServerId: NotRequired[str],
+    IpAddress: NotRequired[str],
+    ServerName: NotRequired[str],
+```
+
+## DatabaseShortInfoResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DatabaseShortInfoResponseTypeDef
+
+def get_value() -> DatabaseShortInfoResponseTypeDef:
+    return {
+        "DatabaseId": ...,
+    }
+```
+
+```python title="Definition"
+class DatabaseShortInfoResponseTypeDef(TypedDict):
+    DatabaseId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    DatabaseIpAddress: NotRequired[str],
+    DatabaseEngine: NotRequired[str],
+```
+
 ## DeleteCertificateMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -758,6 +892,22 @@ def get_value() -> DeleteCertificateMessageRequestTypeDef:
 ```python title="Definition"
 class DeleteCertificateMessageRequestTypeDef(TypedDict):
     CertificateArn: str,
+```
+
+## DeleteCollectorRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DeleteCollectorRequestRequestTypeDef
+
+def get_value() -> DeleteCollectorRequestRequestTypeDef:
+    return {
+        "CollectorReferencedId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCollectorRequestRequestTypeDef(TypedDict):
+    CollectorReferencedId: str,
 ```
 
 ## DeleteConnectionMessageRequestTypeDef
@@ -808,6 +958,22 @@ def get_value() -> DeleteEventSubscriptionMessageRequestTypeDef:
 ```python title="Definition"
 class DeleteEventSubscriptionMessageRequestTypeDef(TypedDict):
     SubscriptionName: str,
+```
+
+## DeleteFleetAdvisorDatabasesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DeleteFleetAdvisorDatabasesRequestRequestTypeDef
+
+def get_value() -> DeleteFleetAdvisorDatabasesRequestRequestTypeDef:
+    return {
+        "DatabaseIds": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFleetAdvisorDatabasesRequestRequestTypeDef(TypedDict):
+    DatabaseIds: Sequence[str],
 ```
 
 ## DeleteReplicationInstanceMessageRequestTypeDef
@@ -1052,6 +1218,60 @@ class EventTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+## DescribeFleetAdvisorLsaAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorLsaAnalysisRequestRequestTypeDef
+
+def get_value() -> DescribeFleetAdvisorLsaAnalysisRequestRequestTypeDef:
+    return {
+        "MaxRecords": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorLsaAnalysisRequestRequestTypeDef(TypedDict):
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## FleetAdvisorLsaAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import FleetAdvisorLsaAnalysisResponseTypeDef
+
+def get_value() -> FleetAdvisorLsaAnalysisResponseTypeDef:
+    return {
+        "LsaAnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class FleetAdvisorLsaAnalysisResponseTypeDef(TypedDict):
+    LsaAnalysisId: NotRequired[str],
+    Status: NotRequired[str],
+```
+
+## FleetAdvisorSchemaObjectResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import FleetAdvisorSchemaObjectResponseTypeDef
+
+def get_value() -> FleetAdvisorSchemaObjectResponseTypeDef:
+    return {
+        "SchemaId": ...,
+    }
+```
+
+```python title="Definition"
+class FleetAdvisorSchemaObjectResponseTypeDef(TypedDict):
+    SchemaId: NotRequired[str],
+    ObjectType: NotRequired[str],
+    NumberOfObjects: NotRequired[int],
+    CodeLineCount: NotRequired[int],
+    CodeSize: NotRequired[int],
+```
+
 ## DescribeOrderableReplicationInstancesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1576,6 +1796,26 @@ class ReplicationTaskStatsTypeDef(TypedDict):
     FullLoadFinishDate: NotRequired[datetime],
 ```
 
+## SchemaShortInfoResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import SchemaShortInfoResponseTypeDef
+
+def get_value() -> SchemaShortInfoResponseTypeDef:
+    return {
+        "SchemaId": ...,
+    }
+```
+
+```python title="Definition"
+class SchemaShortInfoResponseTypeDef(TypedDict):
+    SchemaId: NotRequired[str],
+    SchemaName: NotRequired[str],
+    DatabaseId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    DatabaseIpAddress: NotRequired[str],
+```
+
 ## StartReplicationTaskAssessmentMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1827,6 +2067,52 @@ class ImportCertificateMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFleetAdvisorCollectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import CreateFleetAdvisorCollectorResponseTypeDef
+
+def get_value() -> CreateFleetAdvisorCollectorResponseTypeDef:
+    return {
+        "CollectorReferencedId": ...,
+        "CollectorName": ...,
+        "Description": ...,
+        "ServiceAccessRoleArn": ...,
+        "S3BucketName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFleetAdvisorCollectorResponseTypeDef(TypedDict):
+    CollectorReferencedId: str,
+    CollectorName: str,
+    Description: str,
+    ServiceAccessRoleArn: str,
+    S3BucketName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFleetAdvisorDatabasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DeleteFleetAdvisorDatabasesResponseTypeDef
+
+def get_value() -> DeleteFleetAdvisorDatabasesResponseTypeDef:
+    return {
+        "DatabaseIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFleetAdvisorDatabasesResponseTypeDef(TypedDict):
+    DatabaseIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountAttributesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1891,6 +2177,23 @@ class DescribeSchemasResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -1926,6 +2229,27 @@ def get_value() -> ReloadTablesResponseTypeDef:
 ```python title="Definition"
 class ReloadTablesResponseTypeDef(TypedDict):
     ReplicationTaskArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RunFleetAdvisorLsaAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RunFleetAdvisorLsaAnalysisResponseTypeDef
+
+def get_value() -> RunFleetAdvisorLsaAnalysisResponseTypeDef:
+    return {
+        "LsaAnalysisId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RunFleetAdvisorLsaAnalysisResponseTypeDef(TypedDict):
+    LsaAnalysisId: str,
+    Status: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2011,6 +2335,37 @@ class ImportCertificateResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CollectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import CollectorResponseTypeDef
+
+def get_value() -> CollectorResponseTypeDef:
+    return {
+        "CollectorReferencedId": ...,
+    }
+```
+
+```python title="Definition"
+class CollectorResponseTypeDef(TypedDict):
+    CollectorReferencedId: NotRequired[str],
+    CollectorName: NotRequired[str],
+    CollectorVersion: NotRequired[str],
+    VersionStatus: NotRequired[VersionStatusType],  # (1)
+    Description: NotRequired[str],
+    S3BucketName: NotRequired[str],
+    ServiceAccessRoleArn: NotRequired[str],
+    CollectorHealthCheck: NotRequired[CollectorHealthCheckTypeDef],  # (2)
+    LastDataReceived: NotRequired[str],
+    RegisteredDate: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    ModifiedDate: NotRequired[str],
+    InventoryData: NotRequired[InventoryDataTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: VersionStatusType](./literals.md#versionstatustype) 
+2. See [:material-code-braces: CollectorHealthCheckTypeDef](./type_defs.md#collectorhealthchecktypedef) 
+3. See [:material-code-braces: InventoryDataTypeDef](./type_defs.md#inventorydatatypedef) 
 ## DeleteConnectionResponseTypeDef
 
 ```python title="Usage Example"
@@ -2365,6 +2720,31 @@ class ModifyEventSubscriptionResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DatabaseResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DatabaseResponseTypeDef
+
+def get_value() -> DatabaseResponseTypeDef:
+    return {
+        "DatabaseId": ...,
+    }
+```
+
+```python title="Definition"
+class DatabaseResponseTypeDef(TypedDict):
+    DatabaseId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    IpAddress: NotRequired[str],
+    NumberOfSchemas: NotRequired[int],
+    Server: NotRequired[ServerShortInfoResponseTypeDef],  # (1)
+    SoftwareDetails: NotRequired[DatabaseInstanceSoftwareDetailsResponseTypeDef],  # (2)
+    Collectors: NotRequired[List[CollectorShortInfoResponseTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: ServerShortInfoResponseTypeDef](./type_defs.md#servershortinforesponsetypedef) 
+2. See [:material-code-braces: DatabaseInstanceSoftwareDetailsResponseTypeDef](./type_defs.md#databaseinstancesoftwaredetailsresponsetypedef) 
+3. See [:material-code-braces: CollectorShortInfoResponseTypeDef](./type_defs.md#collectorshortinforesponsetypedef) 
 ## DescribeCertificatesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2505,6 +2885,82 @@ class DescribeEventsMessageRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeFleetAdvisorCollectorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorCollectorsRequestRequestTypeDef
+
+def get_value() -> DescribeFleetAdvisorCollectorsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorCollectorsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeFleetAdvisorDatabasesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorDatabasesRequestRequestTypeDef
+
+def get_value() -> DescribeFleetAdvisorDatabasesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorDatabasesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeFleetAdvisorSchemaObjectSummaryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorSchemaObjectSummaryRequestRequestTypeDef
+
+def get_value() -> DescribeFleetAdvisorSchemaObjectSummaryRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorSchemaObjectSummaryRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeFleetAdvisorSchemasRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorSchemasRequestRequestTypeDef
+
+def get_value() -> DescribeFleetAdvisorSchemasRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorSchemasRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribePendingMaintenanceActionsMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3152,6 +3608,50 @@ class DescribeEventsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetAdvisorLsaAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorLsaAnalysisResponseTypeDef
+
+def get_value() -> DescribeFleetAdvisorLsaAnalysisResponseTypeDef:
+    return {
+        "Analysis": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorLsaAnalysisResponseTypeDef(TypedDict):
+    Analysis: List[FleetAdvisorLsaAnalysisResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FleetAdvisorLsaAnalysisResponseTypeDef](./type_defs.md#fleetadvisorlsaanalysisresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetAdvisorSchemaObjectSummaryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorSchemaObjectSummaryResponseTypeDef
+
+def get_value() -> DescribeFleetAdvisorSchemaObjectSummaryResponseTypeDef:
+    return {
+        "FleetAdvisorSchemaObjects": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorSchemaObjectSummaryResponseTypeDef(TypedDict):
+    FleetAdvisorSchemaObjects: List[FleetAdvisorSchemaObjectResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FleetAdvisorSchemaObjectResponseTypeDef](./type_defs.md#fleetadvisorschemaobjectresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrderableReplicationInstancesResponseTypeDef
 
 ```python title="Usage Example"
@@ -3411,6 +3911,33 @@ class ReplicationTaskTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MigrationTypeValueType](./literals.md#migrationtypevaluetype) 
 2. See [:material-code-braces: ReplicationTaskStatsTypeDef](./type_defs.md#replicationtaskstatstypedef) 
+## SchemaResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import SchemaResponseTypeDef
+
+def get_value() -> SchemaResponseTypeDef:
+    return {
+        "CodeLineCount": ...,
+    }
+```
+
+```python title="Definition"
+class SchemaResponseTypeDef(TypedDict):
+    CodeLineCount: NotRequired[int],
+    CodeSize: NotRequired[int],
+    Complexity: NotRequired[str],
+    Server: NotRequired[ServerShortInfoResponseTypeDef],  # (1)
+    DatabaseInstance: NotRequired[DatabaseShortInfoResponseTypeDef],  # (2)
+    SchemaId: NotRequired[str],
+    SchemaName: NotRequired[str],
+    OriginalSchema: NotRequired[SchemaShortInfoResponseTypeDef],  # (3)
+    Similarity: NotRequired[float],
+```
+
+1. See [:material-code-braces: ServerShortInfoResponseTypeDef](./type_defs.md#servershortinforesponsetypedef) 
+2. See [:material-code-braces: DatabaseShortInfoResponseTypeDef](./type_defs.md#databaseshortinforesponsetypedef) 
+3. See [:material-code-braces: SchemaShortInfoResponseTypeDef](./type_defs.md#schemashortinforesponsetypedef) 
 ## ReplicationSubnetGroupTypeDef
 
 ```python title="Usage Example"
@@ -3432,6 +3959,28 @@ class ReplicationSubnetGroupTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
+## DescribeFleetAdvisorCollectorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorCollectorsResponseTypeDef
+
+def get_value() -> DescribeFleetAdvisorCollectorsResponseTypeDef:
+    return {
+        "Collectors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorCollectorsResponseTypeDef(TypedDict):
+    Collectors: List[CollectorResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CollectorResponseTypeDef](./type_defs.md#collectorresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndpointResponseTypeDef
 
 ```python title="Usage Example"
@@ -3513,6 +4062,28 @@ class ModifyEndpointResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetAdvisorDatabasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorDatabasesResponseTypeDef
+
+def get_value() -> DescribeFleetAdvisorDatabasesResponseTypeDef:
+    return {
+        "Databases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorDatabasesResponseTypeDef(TypedDict):
+    Databases: List[DatabaseResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DatabaseResponseTypeDef](./type_defs.md#databaseresponsetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplyPendingMaintenanceActionResponseTypeDef
 
@@ -3799,6 +4370,28 @@ class StopReplicationTaskResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFleetAdvisorSchemasResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeFleetAdvisorSchemasResponseTypeDef
+
+def get_value() -> DescribeFleetAdvisorSchemasResponseTypeDef:
+    return {
+        "FleetAdvisorSchemas": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFleetAdvisorSchemasResponseTypeDef(TypedDict):
+    FleetAdvisorSchemas: List[SchemaResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SchemaResponseTypeDef](./type_defs.md#schemaresponsetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReplicationSubnetGroupResponseTypeDef
 

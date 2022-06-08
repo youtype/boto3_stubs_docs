@@ -75,6 +75,21 @@ CharLengthSemanticsType = Literal[
     "default",
 ]
 ```
+## CollectorStatusType
+
+```python title="Usage Example"
+from mypy_boto3_dms.literals import CollectorStatusType
+
+def get_value() -> CollectorStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+CollectorStatusType = Literal[
+    "ACTIVE",
+    "UNREGISTERED",
+]
+```
 ## CompressionTypeValueType
 
 ```python title="Usage Example"
@@ -745,6 +760,22 @@ TestConnectionSucceedsWaiterName = Literal[
     "test_connection_succeeds",
 ]
 ```
+## VersionStatusType
+
+```python title="Usage Example"
+from mypy_boto3_dms.literals import VersionStatusType
+
+def get_value() -> VersionStatusType:
+    return "OUTDATED"
+```
+
+```python title="Definition"
+VersionStatusType = Literal[
+    "OUTDATED",
+    "UNSUPPORTED",
+    "UP_TO_DATE",
+]
+```
 ## DatabaseMigrationServiceServiceName
 
 ```python title="Usage Example"
@@ -949,6 +980,7 @@ ServiceName = Literal[
     "lookoutequipment",
     "lookoutmetrics",
     "lookoutvision",
+    "m2",
     "machinelearning",
     "macie",
     "macie2",
@@ -1005,6 +1037,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",

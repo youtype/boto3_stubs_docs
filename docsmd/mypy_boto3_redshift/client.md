@@ -3050,6 +3050,38 @@ parent.get_cluster_credentials(**kwargs)
 
 1. See [:material-code-braces: GetClusterCredentialsMessageRequestTypeDef](./type_defs.md#getclustercredentialsmessagerequesttypedef) 
 
+### get\_cluster\_credentials\_with\_iam
+
+Returns a database user name and temporary password with temporary authorization
+to log in to an Amazon Redshift database.
+
+Type annotations and code completion for `#!python boto3.client("redshift").get_cluster_credentials_with_iam` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials_with_iam)
+
+```python title="Method definition"
+def get_cluster_credentials_with_iam(
+    self,
+    *,
+    ClusterIdentifier: str,
+    DbName: str = ...,
+    DurationSeconds: int = ...,
+) -> ClusterExtendedCredentialsTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ClusterExtendedCredentialsTypeDef](./type_defs.md#clusterextendedcredentialstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetClusterCredentialsWithIAMMessageRequestTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.get_cluster_credentials_with_iam(**kwargs)
+```
+
+1. See [:material-code-braces: GetClusterCredentialsWithIAMMessageRequestTypeDef](./type_defs.md#getclustercredentialswithiammessagerequesttypedef) 
+
 ### get\_reserved\_node\_exchange\_configuration\_options
 
 Gets the configuration options for the reserved-node exchange.

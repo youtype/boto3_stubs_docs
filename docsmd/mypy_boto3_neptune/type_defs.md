@@ -253,6 +253,27 @@ class DBParameterGroupTypeDef(TypedDict):
     DBParameterGroupArn: NotRequired[str],
 ```
 
+## CreateGlobalClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import CreateGlobalClusterMessageRequestTypeDef
+
+def get_value() -> CreateGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    SourceDBClusterIdentifier: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    StorageEncrypted: NotRequired[bool],
+```
+
 ## DBClusterEndpointTypeDef
 
 ```python title="Usage Example"
@@ -426,6 +447,7 @@ class UpgradeTargetTypeDef(TypedDict):
     Description: NotRequired[str],
     AutoUpgrade: NotRequired[bool],
     IsMajorVersionUpgrade: NotRequired[bool],
+    SupportsGlobalDatabases: NotRequired[bool],
 ```
 
 ## DBInstanceStatusInfoTypeDef
@@ -667,6 +689,22 @@ class DeleteEventSubscriptionMessageRequestTypeDef(TypedDict):
     SubscriptionName: str,
 ```
 
+## DeleteGlobalClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import DeleteGlobalClusterMessageRequestTypeDef
+
+def get_value() -> DeleteGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+```
+
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -734,6 +772,24 @@ def get_value() -> WaiterConfigTypeDef:
 class WaiterConfigTypeDef(TypedDict):
     Delay: NotRequired[int],
     MaxAttempts: NotRequired[int],
+```
+
+## DescribeGlobalClustersMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import DescribeGlobalClustersMessageRequestTypeDef
+
+def get_value() -> DescribeGlobalClustersMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGlobalClustersMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
 ```
 
 ## DescribeValidDBInstanceModificationsMessageRequestTypeDef
@@ -825,6 +881,42 @@ class FailoverDBClusterMessageRequestTypeDef(TypedDict):
     TargetDBInstanceIdentifier: NotRequired[str],
 ```
 
+## FailoverGlobalClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import FailoverGlobalClusterMessageRequestTypeDef
+
+def get_value() -> FailoverGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+        "TargetDbClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class FailoverGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    TargetDbClusterIdentifier: str,
+```
+
+## GlobalClusterMemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import GlobalClusterMemberTypeDef
+
+def get_value() -> GlobalClusterMemberTypeDef:
+    return {
+        "DBClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalClusterMemberTypeDef(TypedDict):
+    DBClusterArn: NotRequired[str],
+    Readers: NotRequired[List[str]],
+    IsWriter: NotRequired[bool],
+```
+
 ## ModifyDBClusterEndpointMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -901,6 +993,26 @@ class ModifyEventSubscriptionMessageRequestTypeDef(TypedDict):
     SourceType: NotRequired[str],
     EventCategories: NotRequired[Sequence[str]],
     Enabled: NotRequired[bool],
+```
+
+## ModifyGlobalClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import ModifyGlobalClusterMessageRequestTypeDef
+
+def get_value() -> ModifyGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    NewGlobalClusterIdentifier: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    EngineVersion: NotRequired[str],
+    AllowMajorVersionUpgrade: NotRequired[bool],
 ```
 
 ## PendingCloudwatchLogsExportsTypeDef
@@ -990,6 +1102,24 @@ def get_value() -> RebootDBInstanceMessageRequestTypeDef:
 class RebootDBInstanceMessageRequestTypeDef(TypedDict):
     DBInstanceIdentifier: str,
     ForceFailover: NotRequired[bool],
+```
+
+## RemoveFromGlobalClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import RemoveFromGlobalClusterMessageRequestTypeDef
+
+def get_value() -> RemoveFromGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+        "DbClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveFromGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    DbClusterIdentifier: str,
 ```
 
 ## RemoveRoleFromDBClusterMessageRequestTypeDef
@@ -1517,6 +1647,7 @@ class CreateDBClusterMessageRequestTypeDef(TypedDict):
     EnableIAMDatabaseAuthentication: NotRequired[bool],
     EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
     DeletionProtection: NotRequired[bool],
+    GlobalClusterIdentifier: NotRequired[str],
     SourceRegion: NotRequired[str],
 ```
 
@@ -1812,6 +1943,7 @@ class OrderableDBInstanceOptionTypeDef(TypedDict):
     MaxIopsPerDbInstance: NotRequired[int],
     MinIopsPerGib: NotRequired[float],
     MaxIopsPerGib: NotRequired[float],
+    SupportsGlobalDatabases: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
@@ -2390,6 +2522,7 @@ class DBEngineVersionTypeDef(TypedDict):
     ExportableLogTypes: NotRequired[List[str]],
     SupportsLogExportsToCloudwatchLogs: NotRequired[bool],
     SupportsReadReplica: NotRequired[bool],
+    SupportsGlobalDatabases: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
@@ -3182,6 +3315,31 @@ class EventsMessageTypeDef(TypedDict):
 
 1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GlobalClusterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import GlobalClusterTypeDef
+
+def get_value() -> GlobalClusterTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalClusterTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    GlobalClusterResourceId: NotRequired[str],
+    GlobalClusterArn: NotRequired[str],
+    Status: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+    DeletionProtection: NotRequired[bool],
+    GlobalClusterMembers: NotRequired[List[GlobalClusterMemberTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef) 
 ## PendingModifiedValuesTypeDef
 
 ```python title="Usage Example"
@@ -3599,6 +3757,128 @@ class DBEngineVersionMessageTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGlobalClusterResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import CreateGlobalClusterResultTypeDef
+
+def get_value() -> CreateGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGlobalClusterResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import DeleteGlobalClusterResultTypeDef
+
+def get_value() -> DeleteGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FailoverGlobalClusterResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import FailoverGlobalClusterResultTypeDef
+
+def get_value() -> FailoverGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class FailoverGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GlobalClustersMessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import GlobalClustersMessageTypeDef
+
+def get_value() -> GlobalClustersMessageTypeDef:
+    return {
+        "Marker": ...,
+        "GlobalClusters": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalClustersMessageTypeDef(TypedDict):
+    Marker: str,
+    GlobalClusters: List[GlobalClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyGlobalClusterResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import ModifyGlobalClusterResultTypeDef
+
+def get_value() -> ModifyGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RemoveFromGlobalClusterResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import RemoveFromGlobalClusterResultTypeDef
+
+def get_value() -> RemoveFromGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveFromGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplyPendingMaintenanceActionResultTypeDef
 

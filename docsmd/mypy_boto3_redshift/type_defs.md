@@ -1935,6 +1935,24 @@ class GetClusterCredentialsMessageRequestTypeDef(TypedDict):
     DbGroups: NotRequired[Sequence[str]],
 ```
 
+## GetClusterCredentialsWithIAMMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import GetClusterCredentialsWithIAMMessageRequestTypeDef
+
+def get_value() -> GetClusterCredentialsWithIAMMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetClusterCredentialsWithIAMMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    DbName: NotRequired[str],
+    DurationSeconds: NotRequired[int],
+```
+
 ## GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2734,6 +2752,31 @@ class ClusterCredentialsTypeDef(TypedDict):
     DbUser: str,
     DbPassword: str,
     Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ClusterExtendedCredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import ClusterExtendedCredentialsTypeDef
+
+def get_value() -> ClusterExtendedCredentialsTypeDef:
+    return {
+        "DbUser": ...,
+        "DbPassword": ...,
+        "Expiration": ...,
+        "NextRefreshTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterExtendedCredentialsTypeDef(TypedDict):
+    DbUser: str,
+    DbPassword: str,
+    Expiration: datetime,
+    NextRefreshTime: datetime,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
