@@ -662,6 +662,21 @@ parent.check_schema_version_validity(**kwargs)
 
 1. See [:material-code-braces: CheckSchemaVersionValidityInputRequestTypeDef](./type_defs.md#checkschemaversionvalidityinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("glue").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_blueprint
 
 Registers a blueprint with Glue.

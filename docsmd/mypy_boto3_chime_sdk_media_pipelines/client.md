@@ -72,6 +72,21 @@ def can_paginate(
 ```
 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_media\_capture\_pipeline
 
 Creates a media capture pipeline.

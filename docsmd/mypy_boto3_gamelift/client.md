@@ -145,6 +145,21 @@ parent.claim_game_server(**kwargs)
 
 1. See [:material-code-braces: ClaimGameServerInputRequestTypeDef](./type_defs.md#claimgameserverinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_alias
 
 Creates an alias for a fleet.

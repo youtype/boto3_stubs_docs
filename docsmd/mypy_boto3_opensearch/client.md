@@ -198,6 +198,21 @@ parent.cancel_service_software_update(**kwargs)
 
 1. See [:material-code-braces: CancelServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#cancelservicesoftwareupdaterequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_domain
 
 Creates a new Amazon OpenSearch Service domain.

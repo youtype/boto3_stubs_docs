@@ -128,6 +128,21 @@ parent.clone_receipt_rule_set(**kwargs)
 
 1. See [:material-code-braces: CloneReceiptRuleSetRequestRequestTypeDef](./type_defs.md#clonereceiptrulesetrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("ses").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_configuration\_set
 
 Creates a configuration set.

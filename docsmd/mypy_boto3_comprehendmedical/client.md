@@ -72,6 +72,21 @@ def can_paginate(
 ```
 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### describe\_entities\_detection\_v2\_job
 
 Gets the properties associated with a medical entities detection job.

@@ -309,6 +309,21 @@ parent.change_password(**kwargs)
 
 1. See [:material-code-braces: ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("iam").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_access\_key
 
 Creates a new Amazon Web Services secret access key and corresponding Amazon Web

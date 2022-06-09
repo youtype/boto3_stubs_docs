@@ -162,6 +162,21 @@ parent.check_if_phone_number_is_opted_out(**kwargs)
 
 1. See [:material-code-braces: CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("sns").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### confirm\_subscription
 
 Verifies an endpoint owner's intent to receive messages by validating the token

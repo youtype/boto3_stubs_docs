@@ -101,6 +101,21 @@ parent.clone_backend(**kwargs)
 
 1. See [:material-code-braces: CloneBackendRequestRequestTypeDef](./type_defs.md#clonebackendrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("amplifybackend").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_backend
 
 This operation creates a backend for an Amplify app.

@@ -444,6 +444,21 @@ parent.claim_phone_number(**kwargs)
 
 1. See [:material-code-braces: ClaimPhoneNumberRequestRequestTypeDef](./type_defs.md#claimphonenumberrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("connect").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_agent\_status
 
 This API is in preview release for Amazon Connect and is subject to change.

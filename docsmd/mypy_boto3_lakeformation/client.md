@@ -206,6 +206,21 @@ parent.cancel_transaction(**kwargs)
 
 1. See [:material-code-braces: CancelTransactionRequestRequestTypeDef](./type_defs.md#canceltransactionrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("lakeformation").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### commit\_transaction
 
 Attempts to commit the specified transaction.

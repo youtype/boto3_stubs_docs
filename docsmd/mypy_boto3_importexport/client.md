@@ -114,6 +114,21 @@ parent.cancel_job(**kwargs)
 
 1. See [:material-code-braces: CancelJobInputRequestTypeDef](./type_defs.md#canceljobinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("importexport").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_job
 
 This operation initiates the process of scheduling an upload or download of your

@@ -137,6 +137,21 @@ parent.cancel_statement(**kwargs)
 
 1. See [:material-code-braces: CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("redshift-data").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### describe\_statement
 
 Describes the details about a specific instance when a query was run by the

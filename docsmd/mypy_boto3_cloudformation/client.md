@@ -189,6 +189,21 @@ parent.cancel_update_stack(**kwargs)
 
 1. See [:material-code-braces: CancelUpdateStackInputRequestTypeDef](./type_defs.md#cancelupdatestackinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("cloudformation").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### continue\_update\_rollback
 
 For a specified stack that's in the `UPDATE_ROLLBACK_FAILED` state, continues

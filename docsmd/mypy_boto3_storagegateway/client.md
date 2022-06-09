@@ -409,6 +409,21 @@ parent.cancel_retrieval(**kwargs)
 
 1. See [:material-code-braces: CancelRetrievalInputRequestTypeDef](./type_defs.md#cancelretrievalinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("storagegateway").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_cached\_iscsi\_volume
 
 Creates a cached volume on a specified cached volume gateway.

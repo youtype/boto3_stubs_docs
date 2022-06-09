@@ -227,6 +227,21 @@ parent.cancel_steps(**kwargs)
 
 1. See [:material-code-braces: CancelStepsInputRequestTypeDef](./type_defs.md#cancelstepsinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("emr").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_security\_configuration
 
 Creates a security configuration, which is stored in the service and can be

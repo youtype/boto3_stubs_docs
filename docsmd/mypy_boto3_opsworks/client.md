@@ -246,6 +246,21 @@ parent.clone_stack(**kwargs)
 
 1. See [:material-code-braces: CloneStackRequestRequestTypeDef](./type_defs.md#clonestackrequestrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("opsworks").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_app
 
 Creates an app for a specified stack.

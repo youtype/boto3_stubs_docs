@@ -256,6 +256,21 @@ parent.cancel_instance_refresh(**kwargs)
 
 1. See [:material-code-braces: CancelInstanceRefreshTypeRequestTypeDef](./type_defs.md#cancelinstancerefreshtyperequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("autoscaling").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### complete\_lifecycle\_action
 
 Completes the lifecycle action for the specified token or instance with the

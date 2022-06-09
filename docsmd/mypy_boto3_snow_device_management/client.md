@@ -99,6 +99,21 @@ parent.cancel_task(**kwargs)
 
 1. See [:material-code-braces: CancelTaskInputRequestTypeDef](./type_defs.md#canceltaskinputrequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("snow-device-management").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### create\_task
 
 Instructs one or more devices to start a task, such as unlocking or rebooting.

@@ -508,6 +508,21 @@ parent.cancel_resize(**kwargs)
 
 1. See [:material-code-braces: CancelResizeMessageRequestTypeDef](./type_defs.md#cancelresizemessagerequesttypedef) 
 
+### close
+
+Closes underlying endpoint connections.
+
+Type annotations and code completion for `#!python boto3.client("redshift").close` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.close)
+
+```python title="Method definition"
+def close(
+    self,
+) -> None:
+    ...
+```
+
+
 ### copy\_cluster\_snapshot
 
 Copies the specified automated cluster snapshot to a new manual cluster
