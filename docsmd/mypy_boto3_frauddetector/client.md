@@ -485,7 +485,7 @@ parent.create_variable(**kwargs)
 
 ### delete\_batch\_import\_job
 
-Deletes data that was batch imported to Amazon Fraud Detector.
+Deletes the specified batch import job ID record.
 
 Type annotations and code completion for `#!python boto3.client("frauddetector").delete_batch_import_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_import_job)
