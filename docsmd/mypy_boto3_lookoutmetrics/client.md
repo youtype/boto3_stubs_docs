@@ -154,23 +154,24 @@ def create_alert(
     self,
     *,
     AlertName: str,
-    AlertSensitivityThreshold: int,
     AnomalyDetectorArn: str,
     Action: ActionTypeDef,  # (1)
+    AlertSensitivityThreshold: int = ...,
     AlertDescription: str = ...,
     Tags: Mapping[str, str] = ...,
-) -> CreateAlertResponseTypeDef:  # (2)
+    AlertFilters: AlertFiltersTypeDef = ...,  # (2)
+) -> CreateAlertResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-2. See [:material-code-braces: CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef) 
+2. See [:material-code-braces: AlertFiltersTypeDef](./type_defs.md#alertfilterstypedef) 
+3. See [:material-code-braces: CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateAlertRequestRequestTypeDef = {  # (1)
     "AlertName": ...,
-    "AlertSensitivityThreshold": ...,
     "AnomalyDetectorArn": ...,
     "Action": ...,
 }
@@ -929,6 +930,41 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_alert
+
+Make changes to an existing alert.
+
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").update_alert` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_alert)
+
+```python title="Method definition"
+def update_alert(
+    self,
+    *,
+    AlertArn: str,
+    AlertDescription: str = ...,
+    AlertSensitivityThreshold: int = ...,
+    Action: ActionTypeDef = ...,  # (1)
+    AlertFilters: AlertFiltersTypeDef = ...,  # (2)
+) -> UpdateAlertResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: AlertFiltersTypeDef](./type_defs.md#alertfilterstypedef) 
+3. See [:material-code-braces: UpdateAlertResponseTypeDef](./type_defs.md#updatealertresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAlertRequestRequestTypeDef = {  # (1)
+    "AlertArn": ...,
+}
+
+parent.update_alert(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAlertRequestRequestTypeDef](./type_defs.md#updatealertrequestrequesttypedef) 
 
 ### update\_anomaly\_detector
 

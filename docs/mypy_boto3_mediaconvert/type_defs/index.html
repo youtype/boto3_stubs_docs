@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.5">
     
     
       
@@ -42843,23 +42843,25 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
 <a id="__codelineno-378-2" name="__codelineno-378-2" href="#__codelineno-378-2"></a>
 <a id="__codelineno-378-3" name="__codelineno-378-3" href="#__codelineno-378-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AudioSelectorTypeDef</span><span class="p">:</span>
 <a id="__codelineno-378-4" name="__codelineno-378-4" href="#__codelineno-378-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-378-5" name="__codelineno-378-5" href="#__codelineno-378-5"></a>        <span class="s2">&quot;CustomLanguageCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-378-5" name="__codelineno-378-5" href="#__codelineno-378-5"></a>        <span class="s2">&quot;AudioDurationCorrection&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-378-6" name="__codelineno-378-6" href="#__codelineno-378-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-379-1" name="__codelineno-379-1" href="#__codelineno-379-1"></a><span class="k">class</span> <span class="nc">AudioSelectorTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-379-2" name="__codelineno-379-2" href="#__codelineno-379-2"></a>    <span class="n">CustomLanguageCode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-379-3" name="__codelineno-379-3" href="#__codelineno-379-3"></a>    <span class="n">DefaultSelection</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AudioDefaultSelectionType</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-379-4" name="__codelineno-379-4" href="#__codelineno-379-4"></a>    <span class="n">ExternalAudioFileInput</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-379-5" name="__codelineno-379-5" href="#__codelineno-379-5"></a>    <span class="n">HlsRenditionGroupSettings</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">HlsRenditionGroupSettingsTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-379-6" name="__codelineno-379-6" href="#__codelineno-379-6"></a>    <span class="n">LanguageCode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">LanguageCodeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-379-7" name="__codelineno-379-7" href="#__codelineno-379-7"></a>    <span class="n">Offset</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-379-8" name="__codelineno-379-8" href="#__codelineno-379-8"></a>    <span class="n">Pids</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
-<a id="__codelineno-379-9" name="__codelineno-379-9" href="#__codelineno-379-9"></a>    <span class="n">ProgramSelection</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-379-10" name="__codelineno-379-10" href="#__codelineno-379-10"></a>    <span class="n">RemixSettings</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RemixSettingsTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-379-11" name="__codelineno-379-11" href="#__codelineno-379-11"></a>    <span class="n">SelectorType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AudioSelectorTypeType</span><span class="p">],</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-379-12" name="__codelineno-379-12" href="#__codelineno-379-12"></a>    <span class="n">Tracks</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
+<a id="__codelineno-379-2" name="__codelineno-379-2" href="#__codelineno-379-2"></a>    <span class="n">AudioDurationCorrection</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AudioDurationCorrectionType</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-379-3" name="__codelineno-379-3" href="#__codelineno-379-3"></a>    <span class="n">CustomLanguageCode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-379-4" name="__codelineno-379-4" href="#__codelineno-379-4"></a>    <span class="n">DefaultSelection</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AudioDefaultSelectionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-379-5" name="__codelineno-379-5" href="#__codelineno-379-5"></a>    <span class="n">ExternalAudioFileInput</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-379-6" name="__codelineno-379-6" href="#__codelineno-379-6"></a>    <span class="n">HlsRenditionGroupSettings</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">HlsRenditionGroupSettingsTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-379-7" name="__codelineno-379-7" href="#__codelineno-379-7"></a>    <span class="n">LanguageCode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">LanguageCodeType</span><span class="p">],</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-379-8" name="__codelineno-379-8" href="#__codelineno-379-8"></a>    <span class="n">Offset</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-379-9" name="__codelineno-379-9" href="#__codelineno-379-9"></a>    <span class="n">Pids</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
+<a id="__codelineno-379-10" name="__codelineno-379-10" href="#__codelineno-379-10"></a>    <span class="n">ProgramSelection</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-379-11" name="__codelineno-379-11" href="#__codelineno-379-11"></a>    <span class="n">RemixSettings</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RemixSettingsTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-379-12" name="__codelineno-379-12" href="#__codelineno-379-12"></a>    <span class="n">SelectorType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AudioSelectorTypeType</span><span class="p">],</span>  <span class="c1"># (6)</span>
+<a id="__codelineno-379-13" name="__codelineno-379-13" href="#__codelineno-379-13"></a>    <span class="n">Tracks</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span>
 </code></pre></div>
 <ol>
+<li>See <a href="../literals/#audiodurationcorrectiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> AudioDurationCorrectionType</a> </li>
 <li>See <a href="../literals/#audiodefaultselectiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> AudioDefaultSelectionType</a> </li>
 <li>See <a href="./#hlsrenditiongroupsettingstypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> HlsRenditionGroupSettingsTypeDef</a> </li>
 <li>See <a href="../literals/#languagecodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> LanguageCodeType</a> </li>
@@ -43847,7 +43849,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.431f3d41.min.js"></script>
       
     
   </body>

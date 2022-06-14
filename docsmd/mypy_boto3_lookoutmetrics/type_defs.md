@@ -61,6 +61,23 @@ class ActivateAnomalyDetectorRequestRequestTypeDef(TypedDict):
     AnomalyDetectorArn: str,
 ```
 
+## DimensionFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DimensionFilterTypeDef
+
+def get_value() -> DimensionFilterTypeDef:
+    return {
+        "DimensionName": ...,
+    }
+```
+
+```python title="Definition"
+class DimensionFilterTypeDef(TypedDict):
+    DimensionName: NotRequired[str],
+    DimensionValueList: NotRequired[Sequence[str]],
+```
+
 ## AlertSummaryTypeDef
 
 ```python title="Usage Example"
@@ -858,6 +875,24 @@ class ActionTypeDef(TypedDict):
 
 1. See [:material-code-braces: SNSConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef) 
 2. See [:material-code-braces: LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef) 
+## AlertFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AlertFiltersTypeDef
+
+def get_value() -> AlertFiltersTypeDef:
+    return {
+        "MetricList": ...,
+    }
+```
+
+```python title="Definition"
+class AlertFiltersTypeDef(TypedDict):
+    MetricList: NotRequired[Sequence[str]],
+    DimensionFilterList: NotRequired[Sequence[DimensionFilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef) 
 ## CreateAnomalyDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1218,6 +1253,25 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAlertResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import UpdateAlertResponseTypeDef
+
+def get_value() -> UpdateAlertResponseTypeDef:
+    return {
+        "AlertArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAlertResponseTypeDef(TypedDict):
+    AlertArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAnomalyDetectorResponseTypeDef
 
 ```python title="Usage Example"
@@ -1473,11 +1527,13 @@ class AlertTypeDef(TypedDict):
     AlertStatus: NotRequired[AlertStatusType],  # (3)
     LastModificationTime: NotRequired[datetime],
     CreationTime: NotRequired[datetime],
+    AlertFilters: NotRequired[AlertFiltersTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-brackets: AlertTypeType](./literals.md#alerttypetype) 
 3. See [:material-code-brackets: AlertStatusType](./literals.md#alertstatustype) 
+4. See [:material-code-braces: AlertFiltersTypeDef](./type_defs.md#alertfilterstypedef) 
 ## CreateAlertRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1486,7 +1542,6 @@ from mypy_boto3_lookoutmetrics.type_defs import CreateAlertRequestRequestTypeDef
 def get_value() -> CreateAlertRequestRequestTypeDef:
     return {
         "AlertName": ...,
-        "AlertSensitivityThreshold": ...,
         "AnomalyDetectorArn": ...,
         "Action": ...,
     }
@@ -1495,14 +1550,38 @@ def get_value() -> CreateAlertRequestRequestTypeDef:
 ```python title="Definition"
 class CreateAlertRequestRequestTypeDef(TypedDict):
     AlertName: str,
-    AlertSensitivityThreshold: int,
     AnomalyDetectorArn: str,
     Action: ActionTypeDef,  # (1)
+    AlertSensitivityThreshold: NotRequired[int],
     AlertDescription: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
+    AlertFilters: NotRequired[AlertFiltersTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: AlertFiltersTypeDef](./type_defs.md#alertfilterstypedef) 
+## UpdateAlertRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import UpdateAlertRequestRequestTypeDef
+
+def get_value() -> UpdateAlertRequestRequestTypeDef:
+    return {
+        "AlertArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAlertRequestRequestTypeDef(TypedDict):
+    AlertArn: str,
+    AlertDescription: NotRequired[str],
+    AlertSensitivityThreshold: NotRequired[int],
+    Action: NotRequired[ActionTypeDef],  # (1)
+    AlertFilters: NotRequired[AlertFiltersTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: AlertFiltersTypeDef](./type_defs.md#alertfilterstypedef) 
 ## ListAnomalyGroupSummariesResponseTypeDef
 
 ```python title="Usage Example"

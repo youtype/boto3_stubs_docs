@@ -4305,30 +4305,32 @@ from mypy_boto3_mediaconvert.type_defs import AudioSelectorTypeDef
 
 def get_value() -> AudioSelectorTypeDef:
     return {
-        "CustomLanguageCode": ...,
+        "AudioDurationCorrection": ...,
     }
 ```
 
 ```python title="Definition"
 class AudioSelectorTypeDef(TypedDict):
+    AudioDurationCorrection: NotRequired[AudioDurationCorrectionType],  # (1)
     CustomLanguageCode: NotRequired[str],
-    DefaultSelection: NotRequired[AudioDefaultSelectionType],  # (1)
+    DefaultSelection: NotRequired[AudioDefaultSelectionType],  # (2)
     ExternalAudioFileInput: NotRequired[str],
-    HlsRenditionGroupSettings: NotRequired[HlsRenditionGroupSettingsTypeDef],  # (2)
-    LanguageCode: NotRequired[LanguageCodeType],  # (3)
+    HlsRenditionGroupSettings: NotRequired[HlsRenditionGroupSettingsTypeDef],  # (3)
+    LanguageCode: NotRequired[LanguageCodeType],  # (4)
     Offset: NotRequired[int],
     Pids: NotRequired[Sequence[int]],
     ProgramSelection: NotRequired[int],
-    RemixSettings: NotRequired[RemixSettingsTypeDef],  # (4)
-    SelectorType: NotRequired[AudioSelectorTypeType],  # (5)
+    RemixSettings: NotRequired[RemixSettingsTypeDef],  # (5)
+    SelectorType: NotRequired[AudioSelectorTypeType],  # (6)
     Tracks: NotRequired[Sequence[int]],
 ```
 
-1. See [:material-code-brackets: AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype) 
-2. See [:material-code-braces: HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef) 
-3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
-4. See [:material-code-braces: RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef) 
-5. See [:material-code-brackets: AudioSelectorTypeType](./literals.md#audioselectortypetype) 
+1. See [:material-code-brackets: AudioDurationCorrectionType](./literals.md#audiodurationcorrectiontype) 
+2. See [:material-code-brackets: AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype) 
+3. See [:material-code-braces: HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-braces: RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef) 
+6. See [:material-code-brackets: AudioSelectorTypeType](./literals.md#audioselectortypetype) 
 ## CmafGroupSettingsTypeDef
 
 ```python title="Usage Example"

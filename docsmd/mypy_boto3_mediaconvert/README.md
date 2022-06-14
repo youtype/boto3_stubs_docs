@@ -124,6 +124,7 @@ def get_value() -> AacAudioDescriptionBroadcasterMixType:
 - [AudioChannelTagType](./literals.md#audiochanneltagtype)
 - [AudioCodecType](./literals.md#audiocodectype)
 - [AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype)
+- [AudioDurationCorrectionType](./literals.md#audiodurationcorrectiontype)
 - [AudioLanguageCodeControlType](./literals.md#audiolanguagecodecontroltype)
 - [AudioNormalizationAlgorithmControlType](./literals.md#audionormalizationalgorithmcontroltype)
 - [AudioNormalizationAlgorithmType](./literals.md#audionormalizationalgorithmtype)

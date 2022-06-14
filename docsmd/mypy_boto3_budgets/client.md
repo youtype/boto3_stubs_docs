@@ -42,6 +42,7 @@ except (
     client.InvalidParameterException,
     client.NotFoundException,
     client.ResourceLockedException,
+    client.ThrottlingException,
 ) as e:
     print(e)
 ```

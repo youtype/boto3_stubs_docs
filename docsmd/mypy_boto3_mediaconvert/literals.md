@@ -415,6 +415,23 @@ AudioDefaultSelectionType = Literal[
     "NOT_DEFAULT",
 ]
 ```
+## AudioDurationCorrectionType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import AudioDurationCorrectionType
+
+def get_value() -> AudioDurationCorrectionType:
+    return "AUTO"
+```
+
+```python title="Definition"
+AudioDurationCorrectionType = Literal[
+    "AUTO",
+    "DISABLED",
+    "FRAME",
+    "TRACK",
+]
+```
 ## AudioLanguageCodeControlType
 
 ```python title="Usage Example"
