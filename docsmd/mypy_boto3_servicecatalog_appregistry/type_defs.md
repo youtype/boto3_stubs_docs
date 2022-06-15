@@ -113,6 +113,24 @@ class AssociateResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+## AttributeGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog_appregistry.type_defs import AttributeGroupDetailsTypeDef
+
+def get_value() -> AttributeGroupDetailsTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeGroupDetailsTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    name: NotRequired[str],
+```
+
 ## AttributeGroupSummaryTypeDef
 
 ```python title="Usage Example"
@@ -427,6 +445,24 @@ def get_value() -> ResourceInfoTypeDef:
 class ResourceInfoTypeDef(TypedDict):
     name: NotRequired[str],
     arn: NotRequired[str],
+```
+
+## ListAttributeGroupsForApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsForApplicationRequestRequestTypeDef
+
+def get_value() -> ListAttributeGroupsForApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttributeGroupsForApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 ## ListAttributeGroupsRequestRequestTypeDef
@@ -817,6 +853,28 @@ class UpdateApplicationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttributeGroupsForApplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsForApplicationResponseTypeDef
+
+def get_value() -> ListAttributeGroupsForApplicationResponseTypeDef:
+    return {
+        "attributeGroupsDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttributeGroupsForApplicationResponseTypeDef(TypedDict):
+    attributeGroupsDetails: List[AttributeGroupDetailsTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AttributeGroupDetailsTypeDef](./type_defs.md#attributegroupdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAttributeGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -981,6 +1039,24 @@ def get_value() -> ListAssociatedResourcesRequestListAssociatedResourcesPaginate
 
 ```python title="Definition"
 class ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef(TypedDict):
+    application: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef
+
+def get_value() -> ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef:
+    return {
+        "application": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef(TypedDict):
     application: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```

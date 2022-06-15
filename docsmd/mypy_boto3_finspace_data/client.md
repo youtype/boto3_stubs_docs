@@ -55,6 +55,39 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 ## Methods
 
 
+### associate\_user\_to\_permission\_group
+
+Adds a user account to a permission group to grant permissions for actions a
+user can perform in FinSpace.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").associate_user_to_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.associate_user_to_permission_group)
+
+```python title="Method definition"
+def associate_user_to_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+    userId: str,
+    clientToken: str = ...,
+) -> AssociateUserToPermissionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AssociateUserToPermissionGroupResponseTypeDef](./type_defs.md#associateusertopermissiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateUserToPermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+    "userId": ...,
+}
+
+parent.associate_user_to_permission_group(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateUserToPermissionGroupRequestRequestTypeDef](./type_defs.md#associateusertopermissiongrouprequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -365,6 +398,38 @@ parent.disable_user(**kwargs)
 
 1. See [:material-code-braces: DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef) 
 
+### disassociate\_user\_from\_permission\_group
+
+Removes a user account from a permission group.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").disassociate_user_from_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.disassociate_user_from_permission_group)
+
+```python title="Method definition"
+def disassociate_user_from_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+    userId: str,
+    clientToken: str = ...,
+) -> DisassociateUserFromPermissionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisassociateUserFromPermissionGroupResponseTypeDef](./type_defs.md#disassociateuserfrompermissiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateUserFromPermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+    "userId": ...,
+}
+
+parent.disassociate_user_from_permission_group(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateUserFromPermissionGroupRequestRequestTypeDef](./type_defs.md#disassociateuserfrompermissiongrouprequestrequesttypedef) 
+
 ### enable\_user
 
 Allows the specified user to access the FinSpace web application and API.
@@ -504,6 +569,35 @@ parent.get_dataset(**kwargs)
 ```
 
 1. See [:material-code-braces: GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef) 
+
+### get\_permission\_group
+
+Retrieves the details of a specific permission group.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_permission_group)
+
+```python title="Method definition"
+def get_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+) -> GetPermissionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetPermissionGroupResponseTypeDef](./type_defs.md#getpermissiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+}
+
+parent.get_permission_group(**kwargs)
+```
+
+1. See [:material-code-braces: GetPermissionGroupRequestRequestTypeDef](./type_defs.md#getpermissiongrouprequestrequesttypedef) 
 
 ### get\_programmatic\_access\_credentials
 
@@ -717,6 +811,39 @@ parent.list_permission_groups(**kwargs)
 
 1. See [:material-code-braces: ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef) 
 
+### list\_permission\_groups\_by\_user
+
+Lists all the permission groups that are associated with a specific user
+account.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_permission_groups_by_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_permission_groups_by_user)
+
+```python title="Method definition"
+def list_permission_groups_by_user(
+    self,
+    *,
+    userId: str,
+    maxResults: int,
+    nextToken: str = ...,
+) -> ListPermissionGroupsByUserResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListPermissionGroupsByUserResponseTypeDef](./type_defs.md#listpermissiongroupsbyuserresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionGroupsByUserRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+    "maxResults": ...,
+}
+
+parent.list_permission_groups_by_user(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionGroupsByUserRequestRequestTypeDef](./type_defs.md#listpermissiongroupsbyuserrequestrequesttypedef) 
+
 ### list\_users
 
 Lists all available user accounts in FinSpace.
@@ -746,6 +873,38 @@ parent.list_users(**kwargs)
 ```
 
 1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
+
+### list\_users\_by\_permission\_group
+
+Lists details of all the users in a specific permission group.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_users_by_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_users_by_permission_group)
+
+```python title="Method definition"
+def list_users_by_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+    maxResults: int,
+    nextToken: str = ...,
+) -> ListUsersByPermissionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListUsersByPermissionGroupResponseTypeDef](./type_defs.md#listusersbypermissiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersByPermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+    "maxResults": ...,
+}
+
+parent.list_users_by_permission_group(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersByPermissionGroupRequestRequestTypeDef](./type_defs.md#listusersbypermissiongrouprequestrequesttypedef) 
 
 ### reset\_user\_password
 

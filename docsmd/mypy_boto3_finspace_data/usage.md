@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("finspace-data")  # (1)
-    result = client.create_changeset()  # (2)
+    result = client.associate_user_to_permission_group()  # (2)
     ```
 
     1. client: [FinSpaceDataClient](./client.md)
-    2. result: [:material-code-braces: CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef) 
+    2. result: [:material-code-braces: AssociateUserToPermissionGroupResponseTypeDef](./type_defs.md#associateusertopermissiongroupresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_finspace_data.client import FinSpaceDataClient
-    from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseTypeDef
-    from mypy_boto3_finspace_data.type_defs import CreateChangesetRequestRequestTypeDef
+    from mypy_boto3_finspace_data.type_defs import AssociateUserToPermissionGroupResponseTypeDef
+    from mypy_boto3_finspace_data.type_defs import AssociateUserToPermissionGroupRequestRequestTypeDef
 
 
     session = Session()
 
     client: FinSpaceDataClient = session.client("finspace-data")
 
-    kwargs: CreateChangesetRequestRequestTypeDef = {...}
-    result: CreateChangesetResponseTypeDef = client.create_changeset(**kwargs)
+    kwargs: AssociateUserToPermissionGroupRequestRequestTypeDef = {...}
+    result: AssociateUserToPermissionGroupResponseTypeDef = client.associate_user_to_permission_group(**kwargs)
     ```
 
 

@@ -173,3 +173,45 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef](./type_defs.md#listattributegroupsrequestlistattributegroupspaginatetypedef) 
+## ListAttributeGroupsForApplicationPaginator
+
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups_for_application")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroupsForApplication)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsForApplicationPaginator
+
+def get_list_attribute_groups_for_application_paginator() -> ListAttributeGroupsForApplicationPaginator:
+    return Session().client("servicecatalog-appregistry").get_paginator("list_attribute_groups_for_application")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAttributeGroupsForApplicationPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    application: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAttributeGroupsForApplicationResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAttributeGroupsForApplicationResponseTypeDef](./type_defs.md#listattributegroupsforapplicationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef = {  # (1)
+    "application": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef](./type_defs.md#listattributegroupsforapplicationrequestlistattributegroupsforapplicationpaginatetypedef) 

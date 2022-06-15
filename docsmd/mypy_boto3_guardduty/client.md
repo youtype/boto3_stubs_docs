@@ -50,6 +50,39 @@ def handle_error(exc: Exceptions.BadRequestException) -> None:
 ## Methods
 
 
+### accept\_administrator\_invitation
+
+Accepts the invitation to be a member account and get monitored by a GuardDuty
+administrator account that sent the invitation.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").accept_administrator_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_administrator_invitation)
+
+```python title="Method definition"
+def accept_administrator_invitation(
+    self,
+    *,
+    DetectorId: str,
+    AdministratorId: str,
+    InvitationId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AcceptAdministratorInvitationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AdministratorId": ...,
+    "InvitationId": ...,
+}
+
+parent.accept_administrator_invitation(**kwargs)
+```
+
+1. See [:material-code-braces: AcceptAdministratorInvitationRequestRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequestrequesttypedef) 
+
 ### accept\_invitation
 
 Accepts the invitation to be monitored by a GuardDuty administrator account.
@@ -727,6 +760,35 @@ parent.disable_organization_admin_account(**kwargs)
 
 1. See [:material-code-braces: DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef) 
 
+### disassociate\_from\_administrator\_account
+
+Disassociates the current GuardDuty member account from its administrator
+account.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").disassociate_from_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_administrator_account)
+
+```python title="Method definition"
+def disassociate_from_administrator_account(
+    self,
+    *,
+    DetectorId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateFromAdministratorAccountRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.disassociate_from_administrator_account(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateFromAdministratorAccountRequestRequestTypeDef](./type_defs.md#disassociatefromadministratoraccountrequestrequesttypedef) 
+
 ### disassociate\_from\_master\_account
 
 Disassociates the current GuardDuty member account from its administrator
@@ -835,6 +897,36 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_administrator\_account
+
+Provides the details for the GuardDuty administrator account associated with the
+current GuardDuty member account.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").get_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_administrator_account)
+
+```python title="Method definition"
+def get_administrator_account(
+    self,
+    *,
+    DetectorId: str,
+) -> GetAdministratorAccountResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAdministratorAccountRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.get_administrator_account(**kwargs)
+```
+
+1. See [:material-code-braces: GetAdministratorAccountRequestRequestTypeDef](./type_defs.md#getadministratoraccountrequestrequesttypedef) 
 
 ### get\_detector
 
@@ -1103,6 +1195,37 @@ parent.get_members(**kwargs)
 ```
 
 1. See [:material-code-braces: GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef) 
+
+### get\_remaining\_free\_trial\_days
+
+Provides the number of days left for each data source used in the free trial
+period.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").get_remaining_free_trial_days` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_remaining_free_trial_days)
+
+```python title="Method definition"
+def get_remaining_free_trial_days(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str] = ...,
+) -> GetRemainingFreeTrialDaysResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetRemainingFreeTrialDaysResponseTypeDef](./type_defs.md#getremainingfreetrialdaysresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetRemainingFreeTrialDaysRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.get_remaining_free_trial_days(**kwargs)
+```
+
+1. See [:material-code-braces: GetRemainingFreeTrialDaysRequestRequestTypeDef](./type_defs.md#getremainingfreetrialdaysrequestrequesttypedef) 
 
 ### get\_threat\_intel\_set
 

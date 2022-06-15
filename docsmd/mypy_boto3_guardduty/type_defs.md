@@ -7,6 +7,26 @@
     Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
     type annotations stubs module [mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
+## AcceptAdministratorInvitationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import AcceptAdministratorInvitationRequestRequestTypeDef
+
+def get_value() -> AcceptAdministratorInvitationRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+        "AdministratorId": ...,
+        "InvitationId": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptAdministratorInvitationRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    AdministratorId: str,
+    InvitationId: str,
+```
+
 ## AcceptInvitationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -114,6 +134,8 @@ def get_value() -> DnsRequestActionTypeDef:
 ```python title="Definition"
 class DnsRequestActionTypeDef(TypedDict):
     Domain: NotRequired[str],
+    Protocol: NotRequired[str],
+    Blocked: NotRequired[bool],
 ```
 
 ## AdminAccountTypeDef
@@ -134,6 +156,25 @@ class AdminAccountTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AdminStatusType](./literals.md#adminstatustype) 
+## AdministratorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import AdministratorTypeDef
+
+def get_value() -> AdministratorTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class AdministratorTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    InvitationId: NotRequired[str],
+    RelationshipStatus: NotRequired[str],
+    InvitedAt: NotRequired[str],
+```
+
 ## ArchiveFindingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -509,6 +550,22 @@ class S3LogsConfigurationTypeDef(TypedDict):
     Enable: bool,
 ```
 
+## DataSourceFreeTrialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DataSourceFreeTrialTypeDef
+
+def get_value() -> DataSourceFreeTrialTypeDef:
+    return {
+        "FreeTrialDaysRemaining": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceFreeTrialTypeDef(TypedDict):
+    FreeTrialDaysRemaining: NotRequired[int],
+```
+
 ## DeclineInvitationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -736,6 +793,22 @@ class DisableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
     AdminAccountId: str,
 ```
 
+## DisassociateFromAdministratorAccountRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DisassociateFromAdministratorAccountRequestRequestTypeDef
+
+def get_value() -> DisassociateFromAdministratorAccountRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateFromAdministratorAccountRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+```
+
 ## DisassociateFromMasterAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -851,6 +924,22 @@ def get_value() -> GeoLocationTypeDef:
 class GeoLocationTypeDef(TypedDict):
     Lat: NotRequired[float],
     Lon: NotRequired[float],
+```
+
+## GetAdministratorAccountRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetAdministratorAccountRequestRequestTypeDef
+
+def get_value() -> GetAdministratorAccountRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class GetAdministratorAccountRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
 ```
 
 ## GetDetectorRequestRequestTypeDef
@@ -1018,6 +1107,24 @@ class MemberTypeDef(TypedDict):
     UpdatedAt: str,
     DetectorId: NotRequired[str],
     InvitedAt: NotRequired[str],
+    AdministratorId: NotRequired[str],
+```
+
+## GetRemainingFreeTrialDaysRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetRemainingFreeTrialDaysRequestRequestTypeDef
+
+def get_value() -> GetRemainingFreeTrialDaysRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class GetRemainingFreeTrialDaysRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    AccountIds: NotRequired[Sequence[str]],
 ```
 
 ## GetThreatIntelSetRequestRequestTypeDef
@@ -1556,6 +1663,23 @@ class OwnerTypeDef(TypedDict):
     Id: NotRequired[str],
 ```
 
+## ServiceAdditionalInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ServiceAdditionalInfoTypeDef
+
+def get_value() -> ServiceAdditionalInfoTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceAdditionalInfoTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Type: NotRequired[str],
+```
+
 ## StartMonitoringMembersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1920,6 +2044,26 @@ class CreateThreatIntelSetResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAdministratorAccountResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetAdministratorAccountResponseTypeDef
+
+def get_value() -> GetAdministratorAccountResponseTypeDef:
+    return {
+        "Administrator": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAdministratorAccountResponseTypeDef(TypedDict):
+    Administrator: AdministratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AdministratorTypeDef](./type_defs.md#administratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIPSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -2415,6 +2559,23 @@ class UpdatePublishingDestinationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef) 
+## KubernetesDataSourceFreeTrialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import KubernetesDataSourceFreeTrialTypeDef
+
+def get_value() -> KubernetesDataSourceFreeTrialTypeDef:
+    return {
+        "AuditLogs": ...,
+    }
+```
+
+```python title="Definition"
+class KubernetesDataSourceFreeTrialTypeDef(TypedDict):
+    AuditLogs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
 ## ListPublishingDestinationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3110,6 +3271,31 @@ class UpdateFilterRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
 2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+## DataSourcesFreeTrialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DataSourcesFreeTrialTypeDef
+
+def get_value() -> DataSourcesFreeTrialTypeDef:
+    return {
+        "CloudTrail": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourcesFreeTrialTypeDef(TypedDict):
+    CloudTrail: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+    DnsLogs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+    FlowLogs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+    S3Logs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+    Kubernetes: NotRequired[KubernetesDataSourceFreeTrialTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+2. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+3. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+4. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+5. See [:material-code-braces: KubernetesDataSourceFreeTrialTypeDef](./type_defs.md#kubernetesdatasourcefreetrialtypedef) 
 ## KubernetesWorkloadDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3272,6 +3458,7 @@ class AwsApiCallActionTypeDef(TypedDict):
     RemoteIpDetails: NotRequired[RemoteIpDetailsTypeDef],  # (2)
     ServiceName: NotRequired[str],
     RemoteAccountDetails: NotRequired[RemoteAccountDetailsTypeDef],  # (3)
+    AffectedResources: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-braces: DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef) 
@@ -3388,6 +3575,24 @@ class PublicAccessTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PermissionConfigurationTypeDef](./type_defs.md#permissionconfigurationtypedef) 
+## AccountFreeTrialInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import AccountFreeTrialInfoTypeDef
+
+def get_value() -> AccountFreeTrialInfoTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class AccountFreeTrialInfoTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    DataSources: NotRequired[DataSourcesFreeTrialTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataSourcesFreeTrialTypeDef](./type_defs.md#datasourcesfreetrialtypedef) 
 ## KubernetesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3634,6 +3839,29 @@ class S3BucketDetailTypeDef(TypedDict):
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: DefaultServerSideEncryptionTypeDef](./type_defs.md#defaultserversideencryptiontypedef) 
 4. See [:material-code-braces: PublicAccessTypeDef](./type_defs.md#publicaccesstypedef) 
+## GetRemainingFreeTrialDaysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetRemainingFreeTrialDaysResponseTypeDef
+
+def get_value() -> GetRemainingFreeTrialDaysResponseTypeDef:
+    return {
+        "Accounts": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRemainingFreeTrialDaysResponseTypeDef(TypedDict):
+    Accounts: List[AccountFreeTrialInfoTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AccountFreeTrialInfoTypeDef](./type_defs.md#accountfreetrialinfotypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMemberDetectorsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3732,10 +3960,12 @@ class ServiceTypeDef(TypedDict):
     ResourceRole: NotRequired[str],
     ServiceName: NotRequired[str],
     UserFeedback: NotRequired[str],
+    AdditionalInfo: NotRequired[ServiceAdditionalInfoTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: EvidenceTypeDef](./type_defs.md#evidencetypedef) 
+3. See [:material-code-braces: ServiceAdditionalInfoTypeDef](./type_defs.md#serviceadditionalinfotypedef) 
 ## FindingTypeDef
 
 ```python title="Usage Example"

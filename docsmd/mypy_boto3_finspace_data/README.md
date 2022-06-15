@@ -115,6 +115,7 @@ def get_value() -> ApiAccessType:
 - [ListDatasetsPaginatorName](./literals.md#listdatasetspaginatorname)
 - [ListPermissionGroupsPaginatorName](./literals.md#listpermissiongroupspaginatorname)
 - [ListUsersPaginatorName](./literals.md#listuserspaginatorname)
+- [PermissionGroupMembershipStatusType](./literals.md#permissiongroupmembershipstatustype)
 - [UserStatusType](./literals.md#userstatustype)
 - [UserTypeType](./literals.md#usertypetype)
 - [locationTypeType](./literals.md#locationtypetype)
@@ -132,18 +133,20 @@ def get_value() -> ApiAccessType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef
+from mypy_boto3_finspace_data.type_defs import AssociateUserToPermissionGroupRequestRequestTypeDef
 
-def get_value() -> ChangesetErrorInfoTypeDef:
+def get_value() -> AssociateUserToPermissionGroupRequestRequestTypeDef:
     return {
-        "errorMessage": ...,
+        "permissionGroupId": ...,
+        "userId": ...,
     }
 ```
 
+- [AssociateUserToPermissionGroupRequestRequestTypeDef](./type_defs.md#associateusertopermissiongrouprequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
 - [ColumnDefinitionTypeDef](./type_defs.md#columndefinitiontypedef)
 - [CreateChangesetRequestRequestTypeDef](./type_defs.md#createchangesetrequestrequesttypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
 - [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
 - [CreatePermissionGroupRequestRequestTypeDef](./type_defs.md#createpermissiongrouprequestrequesttypedef)
@@ -153,10 +156,13 @@ def get_value() -> ChangesetErrorInfoTypeDef:
 - [DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef)
 - [DeletePermissionGroupRequestRequestTypeDef](./type_defs.md#deletepermissiongrouprequestrequesttypedef)
 - [DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef)
+- [DisassociateUserFromPermissionGroupRequestRequestTypeDef](./type_defs.md#disassociateuserfrompermissiongrouprequestrequesttypedef)
 - [EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef)
 - [GetChangesetRequestRequestTypeDef](./type_defs.md#getchangesetrequestrequesttypedef)
 - [GetDataViewRequestRequestTypeDef](./type_defs.md#getdataviewrequestrequesttypedef)
 - [GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef)
+- [GetPermissionGroupRequestRequestTypeDef](./type_defs.md#getpermissiongrouprequestrequesttypedef)
+- [PermissionGroupTypeDef](./type_defs.md#permissiongrouptypedef)
 - [GetProgrammaticAccessCredentialsRequestRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequestrequesttypedef)
 - [GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef)
 - [GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef)
@@ -164,8 +170,11 @@ def get_value() -> ChangesetErrorInfoTypeDef:
 - [ListChangesetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef)
 - [ListDataViewsRequestRequestTypeDef](./type_defs.md#listdataviewsrequestrequesttypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
+- [ListPermissionGroupsByUserRequestRequestTypeDef](./type_defs.md#listpermissiongroupsbyuserrequestrequesttypedef)
+- [PermissionGroupByUserTypeDef](./type_defs.md#permissiongroupbyusertypedef)
 - [ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef)
-- [PermissionGroupTypeDef](./type_defs.md#permissiongrouptypedef)
+- [ListUsersByPermissionGroupRequestRequestTypeDef](./type_defs.md#listusersbypermissiongrouprequestrequesttypedef)
+- [UserByPermissionGroupTypeDef](./type_defs.md#userbypermissiongrouptypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
 - [ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)
@@ -173,8 +182,7 @@ def get_value() -> ChangesetErrorInfoTypeDef:
 - [UpdateChangesetRequestRequestTypeDef](./type_defs.md#updatechangesetrequestrequesttypedef)
 - [UpdatePermissionGroupRequestRequestTypeDef](./type_defs.md#updatepermissiongrouprequestrequesttypedef)
 - [UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef)
-- [ChangesetSummaryTypeDef](./type_defs.md#changesetsummarytypedef)
-- [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
+- [AssociateUserToPermissionGroupResponseTypeDef](./type_defs.md#associateusertopermissiongroupresponsetypedef)
 - [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef)
 - [CreateDataViewResponseTypeDef](./type_defs.md#createdataviewresponsetypedef)
 - [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
@@ -183,8 +191,8 @@ def get_value() -> ChangesetErrorInfoTypeDef:
 - [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef)
 - [DeletePermissionGroupResponseTypeDef](./type_defs.md#deletepermissiongroupresponsetypedef)
 - [DisableUserResponseTypeDef](./type_defs.md#disableuserresponsetypedef)
+- [DisassociateUserFromPermissionGroupResponseTypeDef](./type_defs.md#disassociateuserfrompermissiongroupresponsetypedef)
 - [EnableUserResponseTypeDef](./type_defs.md#enableuserresponsetypedef)
-- [GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef)
 - [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef)
 - [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef)
 - [ResetUserPasswordResponseTypeDef](./type_defs.md#resetuserpasswordresponsetypedef)
@@ -192,16 +200,22 @@ def get_value() -> ChangesetErrorInfoTypeDef:
 - [UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef)
 - [UpdatePermissionGroupResponseTypeDef](./type_defs.md#updatepermissiongroupresponsetypedef)
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)
+- [ChangesetSummaryTypeDef](./type_defs.md#changesetsummarytypedef)
+- [GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef)
+- [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
 - [CreateDataViewRequestRequestTypeDef](./type_defs.md#createdataviewrequestrequesttypedef)
 - [GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef)
 - [DataViewSummaryTypeDef](./type_defs.md#dataviewsummarytypedef)
 - [GetDataViewResponseTypeDef](./type_defs.md#getdataviewresponsetypedef)
+- [GetPermissionGroupResponseTypeDef](./type_defs.md#getpermissiongroupresponsetypedef)
+- [ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef)
 - [ListChangesetsRequestListChangesetsPaginateTypeDef](./type_defs.md#listchangesetsrequestlistchangesetspaginatetypedef)
 - [ListDataViewsRequestListDataViewsPaginateTypeDef](./type_defs.md#listdataviewsrequestlistdataviewspaginatetypedef)
 - [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListPermissionGroupsRequestListPermissionGroupsPaginateTypeDef](./type_defs.md#listpermissiongroupsrequestlistpermissiongroupspaginatetypedef)
 - [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
-- [ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef)
+- [ListPermissionGroupsByUserResponseTypeDef](./type_defs.md#listpermissiongroupsbyuserresponsetypedef)
+- [ListUsersByPermissionGroupResponseTypeDef](./type_defs.md#listusersbypermissiongroupresponsetypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
 - [ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)

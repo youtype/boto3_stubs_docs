@@ -36358,16 +36358,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_guardduty.type_defs</span> <span class="kn">import</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_guardduty.type_defs</span> <span class="kn">import</span> <span class="n">AcceptAdministratorInvitationRequestRequestTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptAdministratorInvitationRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;DetectorId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;MasterId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;AdministratorId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;InvitationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#acceptadministratorinvitationrequestrequesttypedef">AcceptAdministratorInvitationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#acceptinvitationrequestrequesttypedef">AcceptInvitationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accesscontrollisttypedef">AccessControlListTypeDef</a></li>
 <li><a href="type_defs/#accesskeydetailstypedef">AccessKeyDetailsTypeDef</a></li>
@@ -36375,6 +36376,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#blockpublicaccesstypedef">BlockPublicAccessTypeDef</a></li>
 <li><a href="type_defs/#dnsrequestactiontypedef">DnsRequestActionTypeDef</a></li>
 <li><a href="type_defs/#adminaccounttypedef">AdminAccountTypeDef</a></li>
+<li><a href="type_defs/#administratortypedef">AdministratorTypeDef</a></li>
 <li><a href="type_defs/#archivefindingsrequestrequesttypedef">ArchiveFindingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#domaindetailstypedef">DomainDetailsTypeDef</a></li>
 <li><a href="type_defs/#remoteaccountdetailstypedef">RemoteAccountDetailsTypeDef</a></li>
@@ -36395,6 +36397,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#flowlogsconfigurationresulttypedef">FlowLogsConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#s3logsconfigurationresulttypedef">S3LogsConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#s3logsconfigurationtypedef">S3LogsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#datasourcefreetrialtypedef">DataSourceFreeTrialTypeDef</a></li>
 <li><a href="type_defs/#declineinvitationsrequestrequesttypedef">DeclineInvitationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#defaultserversideencryptiontypedef">DefaultServerSideEncryptionTypeDef</a></li>
 <li><a href="type_defs/#deletedetectorrequestrequesttypedef">DeleteDetectorRequestRequestTypeDef</a></li>
@@ -36408,6 +36411,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describepublishingdestinationrequestrequesttypedef">DescribePublishingDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
 <li><a href="type_defs/#disableorganizationadminaccountrequestrequesttypedef">DisableOrganizationAdminAccountRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociatefromadministratoraccountrequestrequesttypedef">DisassociateFromAdministratorAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatefrommasteraccountrequestrequesttypedef">DisassociateFromMasterAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatemembersrequestrequesttypedef">DisassociateMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
@@ -36415,6 +36419,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#threatintelligencedetailtypedef">ThreatIntelligenceDetailTypeDef</a></li>
 <li><a href="type_defs/#findingstatisticstypedef">FindingStatisticsTypeDef</a></li>
 <li><a href="type_defs/#geolocationtypedef">GeoLocationTypeDef</a></li>
+<li><a href="type_defs/#getadministratoraccountrequestrequesttypedef">GetAdministratorAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdetectorrequestrequesttypedef">GetDetectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfilterrequestrequesttypedef">GetFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
@@ -36424,6 +36429,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmemberdetectorsrequestrequesttypedef">GetMemberDetectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmembersrequestrequesttypedef">GetMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#membertypedef">MemberTypeDef</a></li>
+<li><a href="type_defs/#getremainingfreetrialdaysrequestrequesttypedef">GetRemainingFreeTrialDaysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getthreatintelsetrequestrequesttypedef">GetThreatIntelSetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usagecriteriatypedef">UsageCriteriaTypeDef</a></li>
 <li><a href="type_defs/#hostpathtypedef">HostPathTypeDef</a></li>
@@ -36455,6 +36461,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#organizationkubernetesauditlogsconfigurationtypedef">OrganizationKubernetesAuditLogsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#organizationtypedef">OrganizationTypeDef</a></li>
 <li><a href="type_defs/#ownertypedef">OwnerTypeDef</a></li>
+<li><a href="type_defs/#serviceadditionalinfotypedef">ServiceAdditionalInfoTypeDef</a></li>
 <li><a href="type_defs/#startmonitoringmembersrequestrequesttypedef">StartMonitoringMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopmonitoringmembersrequestrequesttypedef">StopMonitoringMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
@@ -36474,6 +36481,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createipsetresponsetypedef">CreateIPSetResponseTypeDef</a></li>
 <li><a href="type_defs/#createpublishingdestinationresponsetypedef">CreatePublishingDestinationResponseTypeDef</a></li>
 <li><a href="type_defs/#createthreatintelsetresponsetypedef">CreateThreatIntelSetResponseTypeDef</a></li>
+<li><a href="type_defs/#getadministratoraccountresponsetypedef">GetAdministratorAccountResponseTypeDef</a></li>
 <li><a href="type_defs/#getipsetresponsetypedef">GetIPSetResponseTypeDef</a></li>
 <li><a href="type_defs/#getinvitationscountresponsetypedef">GetInvitationsCountResponseTypeDef</a></li>
 <li><a href="type_defs/#getthreatintelsetresponsetypedef">GetThreatIntelSetResponseTypeDef</a></li>
@@ -36497,6 +36505,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createpublishingdestinationrequestrequesttypedef">CreatePublishingDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describepublishingdestinationresponsetypedef">DescribePublishingDestinationResponseTypeDef</a></li>
 <li><a href="type_defs/#updatepublishingdestinationrequestrequesttypedef">UpdatePublishingDestinationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#kubernetesdatasourcefreetrialtypedef">KubernetesDataSourceFreeTrialTypeDef</a></li>
 <li><a href="type_defs/#listpublishingdestinationsresponsetypedef">ListPublishingDestinationsResponseTypeDef</a></li>
 <li><a href="type_defs/#eksclusterdetailstypedef">EksClusterDetailsTypeDef</a></li>
 <li><a href="type_defs/#evidencetypedef">EvidenceTypeDef</a></li>
@@ -36531,6 +36540,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listfindingsrequestlistfindingspaginatetypedef">ListFindingsRequestListFindingsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfindingsrequestrequesttypedef">ListFindingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefilterrequestrequesttypedef">UpdateFilterRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#datasourcesfreetrialtypedef">DataSourcesFreeTrialTypeDef</a></li>
 <li><a href="type_defs/#kubernetesworkloaddetailstypedef">KubernetesWorkloadDetailsTypeDef</a></li>
 <li><a href="type_defs/#datasourceconfigurationsresulttypedef">DataSourceConfigurationsResultTypeDef</a></li>
 <li><a href="type_defs/#datasourceconfigurationstypedef">DataSourceConfigurationsTypeDef</a></li>
@@ -36543,6 +36553,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#portprobedetailtypedef">PortProbeDetailTypeDef</a></li>
 <li><a href="type_defs/#usagestatisticstypedef">UsageStatisticsTypeDef</a></li>
 <li><a href="type_defs/#publicaccesstypedef">PublicAccessTypeDef</a></li>
+<li><a href="type_defs/#accountfreetrialinfotypedef">AccountFreeTrialInfoTypeDef</a></li>
 <li><a href="type_defs/#kubernetesdetailstypedef">KubernetesDetailsTypeDef</a></li>
 <li><a href="type_defs/#getdetectorresponsetypedef">GetDetectorResponseTypeDef</a></li>
 <li><a href="type_defs/#memberdatasourceconfigurationtypedef">MemberDataSourceConfigurationTypeDef</a></li>
@@ -36554,6 +36565,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#portprobeactiontypedef">PortProbeActionTypeDef</a></li>
 <li><a href="type_defs/#getusagestatisticsresponsetypedef">GetUsageStatisticsResponseTypeDef</a></li>
 <li><a href="type_defs/#s3bucketdetailtypedef">S3BucketDetailTypeDef</a></li>
+<li><a href="type_defs/#getremainingfreetrialdaysresponsetypedef">GetRemainingFreeTrialDaysResponseTypeDef</a></li>
 <li><a href="type_defs/#getmemberdetectorsresponsetypedef">GetMemberDetectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
 <li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>

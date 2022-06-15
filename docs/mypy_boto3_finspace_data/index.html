@@ -36338,6 +36338,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listdatasetspaginatorname">ListDatasetsPaginatorName</a></li>
 <li><a href="literals/#listpermissiongroupspaginatorname">ListPermissionGroupsPaginatorName</a></li>
 <li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
+<li><a href="literals/#permissiongroupmembershipstatustype">PermissionGroupMembershipStatusType</a></li>
 <li><a href="literals/#userstatustype">UserStatusType</a></li>
 <li><a href="literals/#usertypetype">UserTypeType</a></li>
 <li><a href="literals/#locationtypetype">locationTypeType</a></li>
@@ -36349,18 +36350,20 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_finspace_data.type_defs</span> <span class="kn">import</span> <span class="n">ChangesetErrorInfoTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_finspace_data.type_defs</span> <span class="kn">import</span> <span class="n">AssociateUserToPermissionGroupRequestRequestTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChangesetErrorInfoTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AssociateUserToPermissionGroupRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;errorMessage&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;permissionGroupId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#associateusertopermissiongrouprequestrequesttypedef">AssociateUserToPermissionGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#changeseterrorinfotypedef">ChangesetErrorInfoTypeDef</a></li>
 <li><a href="type_defs/#columndefinitiontypedef">ColumnDefinitionTypeDef</a></li>
 <li><a href="type_defs/#createchangesetrequestrequesttypedef">CreateChangesetRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#dataviewdestinationtypeparamstypedef">DataViewDestinationTypeParamsTypeDef</a></li>
 <li><a href="type_defs/#datasetownerinfotypedef">DatasetOwnerInfoTypeDef</a></li>
 <li><a href="type_defs/#createpermissiongrouprequestrequesttypedef">CreatePermissionGroupRequestRequestTypeDef</a></li>
@@ -36370,10 +36373,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedatasetrequestrequesttypedef">DeleteDatasetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepermissiongrouprequestrequesttypedef">DeletePermissionGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disableuserrequestrequesttypedef">DisableUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociateuserfrompermissiongrouprequestrequesttypedef">DisassociateUserFromPermissionGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#enableuserrequestrequesttypedef">EnableUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getchangesetrequestrequesttypedef">GetChangesetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdataviewrequestrequesttypedef">GetDataViewRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdatasetrequestrequesttypedef">GetDatasetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getpermissiongrouprequestrequesttypedef">GetPermissionGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#permissiongrouptypedef">PermissionGroupTypeDef</a></li>
 <li><a href="type_defs/#getprogrammaticaccesscredentialsrequestrequesttypedef">GetProgrammaticAccessCredentialsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getuserrequestrequesttypedef">GetUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkinglocationrequestrequesttypedef">GetWorkingLocationRequestRequestTypeDef</a></li>
@@ -36381,8 +36387,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listchangesetsrequestrequesttypedef">ListChangesetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdataviewsrequestrequesttypedef">ListDataViewsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdatasetsrequestrequesttypedef">ListDatasetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listpermissiongroupsbyuserrequestrequesttypedef">ListPermissionGroupsByUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#permissiongroupbyusertypedef">PermissionGroupByUserTypeDef</a></li>
 <li><a href="type_defs/#listpermissiongroupsrequestrequesttypedef">ListPermissionGroupsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#permissiongrouptypedef">PermissionGroupTypeDef</a></li>
+<li><a href="type_defs/#listusersbypermissiongrouprequestrequesttypedef">ListUsersByPermissionGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#userbypermissiongrouptypedef">UserByPermissionGroupTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestrequesttypedef">ListUsersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usertypedef">UserTypeDef</a></li>
 <li><a href="type_defs/#resourcepermissiontypedef">ResourcePermissionTypeDef</a></li>
@@ -36390,8 +36399,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatechangesetrequestrequesttypedef">UpdateChangesetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatepermissiongrouprequestrequesttypedef">UpdatePermissionGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateuserrequestrequesttypedef">UpdateUserRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#changesetsummarytypedef">ChangesetSummaryTypeDef</a></li>
-<li><a href="type_defs/#schemadefinitiontypedef">SchemaDefinitionTypeDef</a></li>
+<li><a href="type_defs/#associateusertopermissiongroupresponsetypedef">AssociateUserToPermissionGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#createchangesetresponsetypedef">CreateChangesetResponseTypeDef</a></li>
 <li><a href="type_defs/#createdataviewresponsetypedef">CreateDataViewResponseTypeDef</a></li>
 <li><a href="type_defs/#createdatasetresponsetypedef">CreateDatasetResponseTypeDef</a></li>
@@ -36400,8 +36408,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedatasetresponsetypedef">DeleteDatasetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletepermissiongroupresponsetypedef">DeletePermissionGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#disableuserresponsetypedef">DisableUserResponseTypeDef</a></li>
+<li><a href="type_defs/#disassociateuserfrompermissiongroupresponsetypedef">DisassociateUserFromPermissionGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#enableuserresponsetypedef">EnableUserResponseTypeDef</a></li>
-<li><a href="type_defs/#getchangesetresponsetypedef">GetChangesetResponseTypeDef</a></li>
 <li><a href="type_defs/#getuserresponsetypedef">GetUserResponseTypeDef</a></li>
 <li><a href="type_defs/#getworkinglocationresponsetypedef">GetWorkingLocationResponseTypeDef</a></li>
 <li><a href="type_defs/#resetuserpasswordresponsetypedef">ResetUserPasswordResponseTypeDef</a></li>
@@ -36409,16 +36417,22 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatedatasetresponsetypedef">UpdateDatasetResponseTypeDef</a></li>
 <li><a href="type_defs/#updatepermissiongroupresponsetypedef">UpdatePermissionGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#updateuserresponsetypedef">UpdateUserResponseTypeDef</a></li>
+<li><a href="type_defs/#changesetsummarytypedef">ChangesetSummaryTypeDef</a></li>
+<li><a href="type_defs/#getchangesetresponsetypedef">GetChangesetResponseTypeDef</a></li>
+<li><a href="type_defs/#schemadefinitiontypedef">SchemaDefinitionTypeDef</a></li>
 <li><a href="type_defs/#createdataviewrequestrequesttypedef">CreateDataViewRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getprogrammaticaccesscredentialsresponsetypedef">GetProgrammaticAccessCredentialsResponseTypeDef</a></li>
 <li><a href="type_defs/#dataviewsummarytypedef">DataViewSummaryTypeDef</a></li>
 <li><a href="type_defs/#getdataviewresponsetypedef">GetDataViewResponseTypeDef</a></li>
+<li><a href="type_defs/#getpermissiongroupresponsetypedef">GetPermissionGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#listpermissiongroupsresponsetypedef">ListPermissionGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listchangesetsrequestlistchangesetspaginatetypedef">ListChangesetsRequestListChangesetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdataviewsrequestlistdataviewspaginatetypedef">ListDataViewsRequestListDataViewsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdatasetsrequestlistdatasetspaginatetypedef">ListDatasetsRequestListDatasetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpermissiongroupsrequestlistpermissiongroupspaginatetypedef">ListPermissionGroupsRequestListPermissionGroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestlistuserspaginatetypedef">ListUsersRequestListUsersPaginateTypeDef</a></li>
-<li><a href="type_defs/#listpermissiongroupsresponsetypedef">ListPermissionGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listpermissiongroupsbyuserresponsetypedef">ListPermissionGroupsByUserResponseTypeDef</a></li>
+<li><a href="type_defs/#listusersbypermissiongroupresponsetypedef">ListUsersByPermissionGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
 <li><a href="type_defs/#permissiongroupparamstypedef">PermissionGroupParamsTypeDef</a></li>
 <li><a href="type_defs/#listchangesetsresponsetypedef">ListChangesetsResponseTypeDef</a></li>

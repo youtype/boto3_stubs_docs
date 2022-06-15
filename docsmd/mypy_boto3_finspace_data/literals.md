@@ -260,6 +260,22 @@ ListUsersPaginatorName = Literal[
     "list_users",
 ]
 ```
+## PermissionGroupMembershipStatusType
+
+```python title="Usage Example"
+from mypy_boto3_finspace_data.literals import PermissionGroupMembershipStatusType
+
+def get_value() -> PermissionGroupMembershipStatusType:
+    return "ADDITION_IN_PROGRESS"
+```
+
+```python title="Definition"
+PermissionGroupMembershipStatusType = Literal[
+    "ADDITION_IN_PROGRESS",
+    "ADDITION_SUCCESS",
+    "REMOVAL_IN_PROGRESS",
+]
+```
 ## UserStatusType
 
 ```python title="Usage Example"
