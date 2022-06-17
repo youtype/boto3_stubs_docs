@@ -597,6 +597,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshiftserverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",

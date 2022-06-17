@@ -104,6 +104,7 @@ def get_value() -> ActionValueType:
 - [WAFV2ServiceName](./literals.md#wafv2servicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

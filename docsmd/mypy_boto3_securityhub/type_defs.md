@@ -617,6 +617,40 @@ class AwsCertificateManagerCertificateResourceRecordTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
+## AwsCloudFormationStackDriftInformationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFormationStackDriftInformationDetailsTypeDef
+
+def get_value() -> AwsCloudFormationStackDriftInformationDetailsTypeDef:
+    return {
+        "StackDriftStatus": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFormationStackDriftInformationDetailsTypeDef(TypedDict):
+    StackDriftStatus: NotRequired[str],
+```
+
+## AwsCloudFormationStackOutputsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFormationStackOutputsDetailsTypeDef
+
+def get_value() -> AwsCloudFormationStackOutputsDetailsTypeDef:
+    return {
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFormationStackOutputsDetailsTypeDef(TypedDict):
+    Description: NotRequired[str],
+    OutputKey: NotRequired[str],
+    OutputValue: NotRequired[str],
+```
+
 ## AwsCloudFrontDistributionCacheBehaviorTypeDef
 
 ```python title="Usage Example"
@@ -690,6 +724,23 @@ class AwsCloudFrontDistributionViewerCertificateTypeDef(TypedDict):
     SslSupportMethod: NotRequired[str],
 ```
 
+## AwsCloudFrontDistributionOriginSslProtocolsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginSslProtocolsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginSslProtocolsTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginSslProtocolsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[str]],
+    Quantity: NotRequired[int],
+```
+
 ## AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef
 
 ```python title="Usage Example"
@@ -751,6 +802,23 @@ class AwsCloudTrailTrailDetailsTypeDef(TypedDict):
     SnsTopicArn: NotRequired[str],
     SnsTopicName: NotRequired[str],
     TrailArn: NotRequired[str],
+```
+
+## AwsCloudWatchAlarmDimensionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudWatchAlarmDimensionsDetailsTypeDef
+
+def get_value() -> AwsCloudWatchAlarmDimensionsDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudWatchAlarmDimensionsDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
 ```
 
 ## AwsCodeBuildProjectArtifactsDetailsTypeDef
@@ -1069,6 +1137,26 @@ class AwsEc2EipDetailsTypeDef(TypedDict):
     PrivateIpAddress: NotRequired[str],
 ```
 
+## AwsEc2InstanceMetadataOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2InstanceMetadataOptionsTypeDef
+
+def get_value() -> AwsEc2InstanceMetadataOptionsTypeDef:
+    return {
+        "HttpEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2InstanceMetadataOptionsTypeDef(TypedDict):
+    HttpEndpoint: NotRequired[str],
+    HttpProtocolIpv6: NotRequired[str],
+    HttpPutResponseHopLimit: NotRequired[int],
+    HttpTokens: NotRequired[str],
+    InstanceMetadataTags: NotRequired[str],
+```
+
 ## AwsEc2InstanceNetworkInterfacesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1296,6 +1384,33 @@ class Ipv6CidrBlockAssociationTypeDef(TypedDict):
     CidrBlockState: NotRequired[str],
 ```
 
+## AwsEc2TransitGatewayDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2TransitGatewayDetailsTypeDef
+
+def get_value() -> AwsEc2TransitGatewayDetailsTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2TransitGatewayDetailsTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Description: NotRequired[str],
+    DefaultRouteTablePropagation: NotRequired[str],
+    AutoAcceptSharedAttachments: NotRequired[str],
+    DefaultRouteTableAssociation: NotRequired[str],
+    TransitGatewayCidrBlocks: NotRequired[Sequence[str]],
+    AssociationDefaultRouteTableId: NotRequired[str],
+    PropagationDefaultRouteTableId: NotRequired[str],
+    VpnEcmpSupport: NotRequired[str],
+    DnsSupport: NotRequired[str],
+    MulticastSupport: NotRequired[str],
+    AmazonSideAsn: NotRequired[int],
+```
+
 ## AwsEc2VolumeAttachmentTypeDef
 
 ```python title="Usage Example"
@@ -1347,6 +1462,73 @@ def get_value() -> AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef:
 ```python title="Definition"
 class AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef(TypedDict):
     ServiceType: NotRequired[str],
+```
+
+## AwsEc2VpcPeeringConnectionStatusDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcPeeringConnectionStatusDetailsTypeDef
+
+def get_value() -> AwsEc2VpcPeeringConnectionStatusDetailsTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpcPeeringConnectionStatusDetailsTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Message: NotRequired[str],
+```
+
+## VpcInfoCidrBlockSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import VpcInfoCidrBlockSetDetailsTypeDef
+
+def get_value() -> VpcInfoCidrBlockSetDetailsTypeDef:
+    return {
+        "CidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class VpcInfoCidrBlockSetDetailsTypeDef(TypedDict):
+    CidrBlock: NotRequired[str],
+```
+
+## VpcInfoIpv6CidrBlockSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import VpcInfoIpv6CidrBlockSetDetailsTypeDef
+
+def get_value() -> VpcInfoIpv6CidrBlockSetDetailsTypeDef:
+    return {
+        "Ipv6CidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class VpcInfoIpv6CidrBlockSetDetailsTypeDef(TypedDict):
+    Ipv6CidrBlock: NotRequired[str],
+```
+
+## VpcInfoPeeringOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import VpcInfoPeeringOptionsDetailsTypeDef
+
+def get_value() -> VpcInfoPeeringOptionsDetailsTypeDef:
+    return {
+        "AllowDnsResolutionFromRemoteVpc": ...,
+    }
+```
+
+```python title="Definition"
+class VpcInfoPeeringOptionsDetailsTypeDef(TypedDict):
+    AllowDnsResolutionFromRemoteVpc: NotRequired[bool],
+    AllowEgressFromLocalClassicLinkToRemoteVpc: NotRequired[bool],
+    AllowEgressFromLocalVpcToRemoteClassicLink: NotRequired[bool],
 ```
 
 ## AwsEc2VpnConnectionRoutesDetailsTypeDef
@@ -1525,6 +1707,23 @@ class AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef(TypedDict):
     Base: NotRequired[int],
     CapacityProvider: NotRequired[str],
     Weight: NotRequired[int],
+```
+
+## AwsMountPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsMountPointTypeDef
+
+def get_value() -> AwsMountPointTypeDef:
+    return {
+        "SourceVolume": ...,
+    }
+```
+
+```python title="Definition"
+class AwsMountPointTypeDef(TypedDict):
+    SourceVolume: NotRequired[str],
+    ContainerPath: NotRequired[str],
 ```
 
 ## AwsEcsServiceCapacityProviderStrategyDetailsTypeDef
@@ -2083,6 +2282,58 @@ def get_value() -> AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizatio
 class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef(TypedDict):
     AccessPointId: NotRequired[str],
     Iam: NotRequired[str],
+```
+
+## AwsEcsTaskVolumeHostDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskVolumeHostDetailsTypeDef
+
+def get_value() -> AwsEcsTaskVolumeHostDetailsTypeDef:
+    return {
+        "SourcePath": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskVolumeHostDetailsTypeDef(TypedDict):
+    SourcePath: NotRequired[str],
+```
+
+## AwsEfsAccessPointPosixUserDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEfsAccessPointPosixUserDetailsTypeDef
+
+def get_value() -> AwsEfsAccessPointPosixUserDetailsTypeDef:
+    return {
+        "Gid": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEfsAccessPointPosixUserDetailsTypeDef(TypedDict):
+    Gid: NotRequired[str],
+    SecondaryGids: NotRequired[Sequence[str]],
+    Uid: NotRequired[str],
+```
+
+## AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef
+
+def get_value() -> AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef:
+    return {
+        "OwnerGid": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef(TypedDict):
+    OwnerGid: NotRequired[str],
+    OwnerUid: NotRequired[str],
+    Permissions: NotRequired[str],
 ```
 
 ## AwsEksClusterResourcesVpcConfigDetailsTypeDef
@@ -2698,6 +2949,23 @@ class AwsIamUserPolicyTypeDef(TypedDict):
     PolicyName: NotRequired[str],
 ```
 
+## AwsKinesisStreamStreamEncryptionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsKinesisStreamStreamEncryptionDetailsTypeDef
+
+def get_value() -> AwsKinesisStreamStreamEncryptionDetailsTypeDef:
+    return {
+        "EncryptionType": ...,
+    }
+```
+
+```python title="Definition"
+class AwsKinesisStreamStreamEncryptionDetailsTypeDef(TypedDict):
+    EncryptionType: NotRequired[str],
+    KeyId: NotRequired[str],
+```
+
 ## AwsKmsKeyDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2856,6 +3124,24 @@ def get_value() -> AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef:
 ```python title="Definition"
 class AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef(TypedDict):
     SubnetId: NotRequired[str],
+```
+
+## AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef:
+    return {
+        "MasterUserArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef(TypedDict):
+    MasterUserArn: NotRequired[str],
+    MasterUserName: NotRequired[str],
+    MasterUserPassword: NotRequired[str],
 ```
 
 ## AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef
@@ -4223,6 +4509,106 @@ class AwsWafRegionalRateBasedRuleMatchPredicateTypeDef(TypedDict):
     Type: NotRequired[str],
 ```
 
+## AwsWafRegionalRulePredicateListDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRulePredicateListDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRulePredicateListDetailsTypeDef:
+    return {
+        "DataId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRulePredicateListDetailsTypeDef(TypedDict):
+    DataId: NotRequired[str],
+    Negated: NotRequired[bool],
+    Type: NotRequired[str],
+```
+
+## AwsWafRegionalRuleGroupRulesActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRuleGroupRulesActionDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRuleGroupRulesActionDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRuleGroupRulesActionDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## AwsWafRegionalWebAclRulesListActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalWebAclRulesListActionDetailsTypeDef
+
+def get_value() -> AwsWafRegionalWebAclRulesListActionDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalWebAclRulesListActionDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef
+
+def get_value() -> AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## AwsWafRulePredicateListDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRulePredicateListDetailsTypeDef
+
+def get_value() -> AwsWafRulePredicateListDetailsTypeDef:
+    return {
+        "DataId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRulePredicateListDetailsTypeDef(TypedDict):
+    DataId: NotRequired[str],
+    Negated: NotRequired[bool],
+    Type: NotRequired[str],
+```
+
+## AwsWafRuleGroupRulesActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRuleGroupRulesActionDetailsTypeDef
+
+def get_value() -> AwsWafRuleGroupRulesActionDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRuleGroupRulesActionDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
 ## WafActionTypeDef
 
 ```python title="Usage Example"
@@ -4473,23 +4859,21 @@ class StatusReasonTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## ContainerDetailsTypeDef
+## VolumeMountTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import ContainerDetailsTypeDef
+from mypy_boto3_securityhub.type_defs import VolumeMountTypeDef
 
-def get_value() -> ContainerDetailsTypeDef:
+def get_value() -> VolumeMountTypeDef:
     return {
         "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class ContainerDetailsTypeDef(TypedDict):
+class VolumeMountTypeDef(TypedDict):
     Name: NotRequired[str],
-    ImageId: NotRequired[str],
-    ImageName: NotRequired[str],
-    LaunchedAt: NotRequired[str],
+    MountPath: NotRequired[str],
 ```
 
 ## CreateActionTargetRequestRequestTypeDef
@@ -4931,6 +5315,25 @@ def get_value() -> EnableSecurityHubRequestRequestTypeDef:
 class EnableSecurityHubRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
     EnableDefaultStandards: NotRequired[bool],
+```
+
+## FilePathsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import FilePathsTypeDef
+
+def get_value() -> FilePathsTypeDef:
+    return {
+        "FilePath": ...,
+    }
+```
+
+```python title="Definition"
+class FilePathsTypeDef(TypedDict):
+    FilePath: NotRequired[str],
+    FileName: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Hash: NotRequired[str],
 ```
 
 ## FindingAggregatorTypeDef
@@ -5959,6 +6362,38 @@ class AwsCertificateManagerCertificateDomainValidationOptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsCertificateManagerCertificateResourceRecordTypeDef](./type_defs.md#awscertificatemanagercertificateresourcerecordtypedef) 
+## AwsCloudFormationStackDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFormationStackDetailsTypeDef
+
+def get_value() -> AwsCloudFormationStackDetailsTypeDef:
+    return {
+        "Capabilities": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFormationStackDetailsTypeDef(TypedDict):
+    Capabilities: NotRequired[Sequence[str]],
+    CreationTime: NotRequired[str],
+    Description: NotRequired[str],
+    DisableRollback: NotRequired[bool],
+    DriftInformation: NotRequired[AwsCloudFormationStackDriftInformationDetailsTypeDef],  # (1)
+    EnableTerminationProtection: NotRequired[bool],
+    LastUpdatedTime: NotRequired[str],
+    NotificationArns: NotRequired[Sequence[str]],
+    Outputs: NotRequired[Sequence[AwsCloudFormationStackOutputsDetailsTypeDef]],  # (2)
+    RoleArn: NotRequired[str],
+    StackId: NotRequired[str],
+    StackName: NotRequired[str],
+    StackStatus: NotRequired[str],
+    StackStatusReason: NotRequired[str],
+    TimeoutInMinutes: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsCloudFormationStackDriftInformationDetailsTypeDef](./type_defs.md#awscloudformationstackdriftinformationdetailstypedef) 
+2. See [:material-code-braces: AwsCloudFormationStackOutputsDetailsTypeDef](./type_defs.md#awscloudformationstackoutputsdetailstypedef) 
 ## AwsCloudFrontDistributionCacheBehaviorsTypeDef
 
 ```python title="Usage Example"
@@ -5976,6 +6411,28 @@ class AwsCloudFrontDistributionCacheBehaviorsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef) 
+## AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef:
+    return {
+        "HttpPort": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef(TypedDict):
+    HttpPort: NotRequired[int],
+    HttpsPort: NotRequired[int],
+    OriginKeepaliveTimeout: NotRequired[int],
+    OriginProtocolPolicy: NotRequired[str],
+    OriginReadTimeout: NotRequired[int],
+    OriginSslProtocols: NotRequired[AwsCloudFrontDistributionOriginSslProtocolsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginSslProtocolsTypeDef](./type_defs.md#awscloudfrontdistributionoriginsslprotocolstypedef) 
 ## AwsCloudFrontDistributionOriginGroupFailoverTypeDef
 
 ```python title="Usage Example"
@@ -5993,26 +6450,44 @@ class AwsCloudFrontDistributionOriginGroupFailoverTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailoverstatuscodestypedef) 
-## AwsCloudFrontDistributionOriginItemTypeDef
+## AwsCloudWatchAlarmDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginItemTypeDef
+from mypy_boto3_securityhub.type_defs import AwsCloudWatchAlarmDetailsTypeDef
 
-def get_value() -> AwsCloudFrontDistributionOriginItemTypeDef:
+def get_value() -> AwsCloudWatchAlarmDetailsTypeDef:
     return {
-        "DomainName": ...,
+        "ActionsEnabled": ...,
     }
 ```
 
 ```python title="Definition"
-class AwsCloudFrontDistributionOriginItemTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    Id: NotRequired[str],
-    OriginPath: NotRequired[str],
-    S3OriginConfig: NotRequired[AwsCloudFrontDistributionOriginS3OriginConfigTypeDef],  # (1)
+class AwsCloudWatchAlarmDetailsTypeDef(TypedDict):
+    ActionsEnabled: NotRequired[bool],
+    AlarmActions: NotRequired[Sequence[str]],
+    AlarmArn: NotRequired[str],
+    AlarmConfigurationUpdatedTimestamp: NotRequired[str],
+    AlarmDescription: NotRequired[str],
+    AlarmName: NotRequired[str],
+    ComparisonOperator: NotRequired[str],
+    DatapointsToAlarm: NotRequired[int],
+    Dimensions: NotRequired[Sequence[AwsCloudWatchAlarmDimensionsDetailsTypeDef]],  # (1)
+    EvaluateLowSampleCountPercentile: NotRequired[str],
+    EvaluationPeriods: NotRequired[int],
+    ExtendedStatistic: NotRequired[str],
+    InsufficientDataActions: NotRequired[Sequence[str]],
+    MetricName: NotRequired[str],
+    Namespace: NotRequired[str],
+    OkActions: NotRequired[Sequence[str]],
+    Period: NotRequired[int],
+    Statistic: NotRequired[str],
+    Threshold: NotRequired[float],
+    ThresholdMetricId: NotRequired[str],
+    TreatMissingData: NotRequired[str],
+    Unit: NotRequired[str],
 ```
 
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigins3originconfigtypedef) 
+1. See [:material-code-braces: AwsCloudWatchAlarmDimensionsDetailsTypeDef](./type_defs.md#awscloudwatchalarmdimensionsdetailstypedef) 
 ## AwsCodeBuildProjectEnvironmentTypeDef
 
 ```python title="Usage Example"
@@ -6144,9 +6619,12 @@ class AwsEc2InstanceDetailsTypeDef(TypedDict):
     SubnetId: NotRequired[str],
     LaunchedAt: NotRequired[str],
     NetworkInterfaces: NotRequired[Sequence[AwsEc2InstanceNetworkInterfacesDetailsTypeDef]],  # (1)
+    VirtualizationType: NotRequired[str],
+    MetadataOptions: NotRequired[AwsEc2InstanceMetadataOptionsTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef) 
+2. See [:material-code-braces: AwsEc2InstanceMetadataOptionsTypeDef](./type_defs.md#awsec2instancemetadataoptionstypedef) 
 ## AwsEc2NetworkAclEntryTypeDef
 
 ```python title="Usage Example"
@@ -6268,12 +6746,16 @@ def get_value() -> AwsEc2VolumeDetailsTypeDef:
 ```python title="Definition"
 class AwsEc2VolumeDetailsTypeDef(TypedDict):
     CreateTime: NotRequired[str],
+    DeviceName: NotRequired[str],
     Encrypted: NotRequired[bool],
     Size: NotRequired[int],
     SnapshotId: NotRequired[str],
     Status: NotRequired[str],
     KmsKeyId: NotRequired[str],
     Attachments: NotRequired[Sequence[AwsEc2VolumeAttachmentTypeDef]],  # (1)
+    VolumeId: NotRequired[str],
+    VolumeType: NotRequired[str],
+    VolumeScanStatus: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef) 
@@ -6325,6 +6807,31 @@ class AwsEc2VpcEndpointServiceDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef](./type_defs.md#awsec2vpcendpointserviceservicetypedetailstypedef) 
+## AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef
+
+def get_value() -> AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef:
+    return {
+        "CidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef(TypedDict):
+    CidrBlock: NotRequired[str],
+    CidrBlockSet: NotRequired[Sequence[VpcInfoCidrBlockSetDetailsTypeDef]],  # (1)
+    Ipv6CidrBlockSet: NotRequired[Sequence[VpcInfoIpv6CidrBlockSetDetailsTypeDef]],  # (2)
+    OwnerId: NotRequired[str],
+    PeeringOptions: NotRequired[VpcInfoPeeringOptionsDetailsTypeDef],  # (3)
+    Region: NotRequired[str],
+    VpcId: NotRequired[str],
+```
+
+1. See [:material-code-braces: VpcInfoCidrBlockSetDetailsTypeDef](./type_defs.md#vpcinfocidrblocksetdetailstypedef) 
+2. See [:material-code-braces: VpcInfoIpv6CidrBlockSetDetailsTypeDef](./type_defs.md#vpcinfoipv6cidrblocksetdetailstypedef) 
+3. See [:material-code-braces: VpcInfoPeeringOptionsDetailsTypeDef](./type_defs.md#vpcinfopeeringoptionsdetailstypedef) 
 ## AwsEc2VpnConnectionOptionsDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6385,6 +6892,26 @@ class AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef(TypedD
 ```
 
 1. See [:material-code-braces: AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef) 
+## AwsEcsContainerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsContainerDetailsTypeDef
+
+def get_value() -> AwsEcsContainerDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsContainerDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Image: NotRequired[str],
+    MountPoints: NotRequired[Sequence[AwsMountPointTypeDef]],  # (1)
+    Privileged: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AwsMountPointTypeDef](./type_defs.md#awsmountpointtypedef) 
 ## AwsEcsServiceDeploymentConfigurationDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6505,6 +7032,42 @@ class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef(TypedDict)
 ```
 
 1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef) 
+## AwsEcsTaskVolumeDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskVolumeDetailsTypeDef
+
+def get_value() -> AwsEcsTaskVolumeDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskVolumeDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Host: NotRequired[AwsEcsTaskVolumeHostDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsEcsTaskVolumeHostDetailsTypeDef](./type_defs.md#awsecstaskvolumehostdetailstypedef) 
+## AwsEfsAccessPointRootDirectoryDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEfsAccessPointRootDirectoryDetailsTypeDef
+
+def get_value() -> AwsEfsAccessPointRootDirectoryDetailsTypeDef:
+    return {
+        "CreationInfo": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEfsAccessPointRootDirectoryDetailsTypeDef(TypedDict):
+    CreationInfo: NotRequired[AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef],  # (1)
+    Path: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEfsAccessPointRootDirectoryCreationInfoDetailsTypeDef](./type_defs.md#awsefsaccesspointrootdirectorycreationinfodetailstypedef) 
 ## AwsEksClusterLoggingDetailsTypeDef
 
 ```python title="Usage Example"
@@ -6809,6 +7372,27 @@ class AwsIamUserDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef) 
 2. See [:material-code-braces: AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef) 
 3. See [:material-code-braces: AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef) 
+## AwsKinesisStreamDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsKinesisStreamDetailsTypeDef
+
+def get_value() -> AwsKinesisStreamDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsKinesisStreamDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    StreamEncryption: NotRequired[AwsKinesisStreamStreamEncryptionDetailsTypeDef],  # (1)
+    ShardCount: NotRequired[int],
+    RetentionPeriodHours: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsKinesisStreamStreamEncryptionDetailsTypeDef](./type_defs.md#awskinesisstreamstreamencryptiondetailstypedef) 
 ## AwsLambdaFunctionEnvironmentTypeDef
 
 ```python title="Usage Example"
@@ -6853,6 +7437,25 @@ class AwsNetworkFirewallFirewallDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallsubnetmappingsdetailstypedef) 
+## AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef
+
+def get_value() -> AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    InternalUserDatabaseEnabled: NotRequired[bool],
+    MasterUserOptions: NotRequired[AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsOpenSearchServiceDomainMasterUserOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainmasteruseroptionsdetailstypedef) 
 ## AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
 
 ```python title="Usage Example"
@@ -7228,6 +7831,13 @@ class AwsSnsTopicDetailsTypeDef(TypedDict):
     Subscription: NotRequired[Sequence[AwsSnsTopicSubscriptionTypeDef]],  # (1)
     TopicName: NotRequired[str],
     Owner: NotRequired[str],
+    SqsSuccessFeedbackRoleArn: NotRequired[str],
+    SqsFailureFeedbackRoleArn: NotRequired[str],
+    ApplicationSuccessFeedbackRoleArn: NotRequired[str],
+    FirehoseSuccessFeedbackRoleArn: NotRequired[str],
+    FirehoseFailureFeedbackRoleArn: NotRequired[str],
+    HttpSuccessFeedbackRoleArn: NotRequired[str],
+    HttpFailureFeedbackRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef) 
@@ -7292,6 +7902,108 @@ class AwsWafRegionalRateBasedRuleDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsWafRegionalRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafregionalratebasedrulematchpredicatetypedef) 
+## AwsWafRegionalRuleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRuleDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRuleDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRuleDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    PredicateList: NotRequired[Sequence[AwsWafRegionalRulePredicateListDetailsTypeDef]],  # (1)
+    RuleId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRegionalRulePredicateListDetailsTypeDef](./type_defs.md#awswafregionalrulepredicatelistdetailstypedef) 
+## AwsWafRegionalRuleGroupRulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRuleGroupRulesDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRuleGroupRulesDetailsTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRuleGroupRulesDetailsTypeDef(TypedDict):
+    Action: NotRequired[AwsWafRegionalRuleGroupRulesActionDetailsTypeDef],  # (1)
+    Priority: NotRequired[int],
+    RuleId: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRegionalRuleGroupRulesActionDetailsTypeDef](./type_defs.md#awswafregionalrulegrouprulesactiondetailstypedef) 
+## AwsWafRegionalWebAclRulesListDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalWebAclRulesListDetailsTypeDef
+
+def get_value() -> AwsWafRegionalWebAclRulesListDetailsTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalWebAclRulesListDetailsTypeDef(TypedDict):
+    Action: NotRequired[AwsWafRegionalWebAclRulesListActionDetailsTypeDef],  # (1)
+    OverrideAction: NotRequired[AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef],  # (2)
+    Priority: NotRequired[int],
+    RuleId: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRegionalWebAclRulesListActionDetailsTypeDef](./type_defs.md#awswafregionalwebaclruleslistactiondetailstypedef) 
+2. See [:material-code-braces: AwsWafRegionalWebAclRulesListOverrideActionDetailsTypeDef](./type_defs.md#awswafregionalwebaclruleslistoverrideactiondetailstypedef) 
+## AwsWafRuleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRuleDetailsTypeDef
+
+def get_value() -> AwsWafRuleDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRuleDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    PredicateList: NotRequired[Sequence[AwsWafRulePredicateListDetailsTypeDef]],  # (1)
+    RuleId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRulePredicateListDetailsTypeDef](./type_defs.md#awswafrulepredicatelistdetailstypedef) 
+## AwsWafRuleGroupRulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRuleGroupRulesDetailsTypeDef
+
+def get_value() -> AwsWafRuleGroupRulesDetailsTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRuleGroupRulesDetailsTypeDef(TypedDict):
+    Action: NotRequired[AwsWafRuleGroupRulesActionDetailsTypeDef],  # (1)
+    Priority: NotRequired[int],
+    RuleId: NotRequired[str],
+    Type: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRuleGroupRulesActionDetailsTypeDef](./type_defs.md#awswafrulegrouprulesactiondetailstypedef) 
 ## AwsWafWebAclRuleTypeDef
 
 ```python title="Usage Example"
@@ -7728,6 +8440,29 @@ class ComplianceTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
+## ContainerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ContainerDetailsTypeDef
+
+def get_value() -> ContainerDetailsTypeDef:
+    return {
+        "ContainerRuntime": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerDetailsTypeDef(TypedDict):
+    ContainerRuntime: NotRequired[str],
+    Name: NotRequired[str],
+    ImageId: NotRequired[str],
+    ImageName: NotRequired[str],
+    LaunchedAt: NotRequired[str],
+    VolumeMounts: NotRequired[Sequence[VolumeMountTypeDef]],  # (1)
+    Privileged: NotRequired[bool],
+```
+
+1. See [:material-code-braces: VolumeMountTypeDef](./type_defs.md#volumemounttypedef) 
 ## CreateMembersResponseTypeDef
 
 ```python title="Usage Example"
@@ -8106,6 +8841,26 @@ class DescribeStandardsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StandardTypeDef](./type_defs.md#standardtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ThreatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ThreatTypeDef
+
+def get_value() -> ThreatTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ThreatTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Severity: NotRequired[str],
+    ItemCount: NotRequired[int],
+    FilePaths: NotRequired[Sequence[FilePathsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilePathsTypeDef](./type_defs.md#filepathstypedef) 
 ## ListFindingAggregatorsResponseTypeDef
 
 ```python title="Usage Example"
@@ -8639,6 +9394,28 @@ class AwsCertificateManagerCertificateRenewalSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef) 
+## AwsCloudFrontDistributionOriginItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginItemTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginItemTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginItemTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    Id: NotRequired[str],
+    OriginPath: NotRequired[str],
+    S3OriginConfig: NotRequired[AwsCloudFrontDistributionOriginS3OriginConfigTypeDef],  # (1)
+    CustomOriginConfig: NotRequired[AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigins3originconfigtypedef) 
+2. See [:material-code-braces: AwsCloudFrontDistributionOriginCustomOriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigincustomoriginconfigtypedef) 
 ## AwsCloudFrontDistributionOriginGroupTypeDef
 
 ```python title="Usage Example"
@@ -8656,23 +9433,6 @@ class AwsCloudFrontDistributionOriginGroupTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsCloudFrontDistributionOriginGroupFailoverTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailovertypedef) 
-## AwsCloudFrontDistributionOriginsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTypeDef
-
-def get_value() -> AwsCloudFrontDistributionOriginsTypeDef:
-    return {
-        "Items": ...,
-    }
-```
-
-```python title="Definition"
-class AwsCloudFrontDistributionOriginsTypeDef(TypedDict):
-    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginItemTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef) 
 ## AwsCodeBuildProjectDetailsTypeDef
 
 ```python title="Usage Example"
@@ -8772,6 +9532,29 @@ class AwsEc2SecurityGroupDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
 2. See [:material-code-braces: AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef) 
+## AwsEc2VpcPeeringConnectionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcPeeringConnectionDetailsTypeDef
+
+def get_value() -> AwsEc2VpcPeeringConnectionDetailsTypeDef:
+    return {
+        "AccepterVpcInfo": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2VpcPeeringConnectionDetailsTypeDef(TypedDict):
+    AccepterVpcInfo: NotRequired[AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef],  # (1)
+    ExpirationTime: NotRequired[str],
+    RequesterVpcInfo: NotRequired[AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef],  # (1)
+    Status: NotRequired[AwsEc2VpcPeeringConnectionStatusDetailsTypeDef],  # (3)
+    VpcPeeringConnectionId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef](./type_defs.md#awsec2vpcpeeringconnectionvpcinfodetailstypedef) 
+2. See [:material-code-braces: AwsEc2VpcPeeringConnectionVpcInfoDetailsTypeDef](./type_defs.md#awsec2vpcpeeringconnectionvpcinfodetailstypedef) 
+3. See [:material-code-braces: AwsEc2VpcPeeringConnectionStatusDetailsTypeDef](./type_defs.md#awsec2vpcpeeringconnectionstatusdetailstypedef) 
 ## AwsEc2VpnConnectionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -8955,6 +9738,55 @@ class AwsEcsTaskDefinitionVolumesDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdockervolumeconfigurationdetailstypedef) 
 2. See [:material-code-braces: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef) 
 3. See [:material-code-braces: AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumeshostdetailstypedef) 
+## AwsEcsTaskDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDetailsTypeDef
+
+def get_value() -> AwsEcsTaskDetailsTypeDef:
+    return {
+        "ClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEcsTaskDetailsTypeDef(TypedDict):
+    ClusterArn: NotRequired[str],
+    TaskDefinitionArn: NotRequired[str],
+    Version: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    StartedAt: NotRequired[str],
+    StartedBy: NotRequired[str],
+    Group: NotRequired[str],
+    Volumes: NotRequired[Sequence[AwsEcsTaskVolumeDetailsTypeDef]],  # (1)
+    Containers: NotRequired[Sequence[AwsEcsContainerDetailsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsEcsTaskVolumeDetailsTypeDef](./type_defs.md#awsecstaskvolumedetailstypedef) 
+2. See [:material-code-braces: AwsEcsContainerDetailsTypeDef](./type_defs.md#awsecscontainerdetailstypedef) 
+## AwsEfsAccessPointDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEfsAccessPointDetailsTypeDef
+
+def get_value() -> AwsEfsAccessPointDetailsTypeDef:
+    return {
+        "AccessPointId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEfsAccessPointDetailsTypeDef(TypedDict):
+    AccessPointId: NotRequired[str],
+    Arn: NotRequired[str],
+    ClientToken: NotRequired[str],
+    FileSystemId: NotRequired[str],
+    PosixUser: NotRequired[AwsEfsAccessPointPosixUserDetailsTypeDef],  # (1)
+    RootDirectory: NotRequired[AwsEfsAccessPointRootDirectoryDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsEfsAccessPointPosixUserDetailsTypeDef](./type_defs.md#awsefsaccesspointposixuserdetailstypedef) 
+2. See [:material-code-braces: AwsEfsAccessPointRootDirectoryDetailsTypeDef](./type_defs.md#awsefsaccesspointrootdirectorydetailstypedef) 
 ## AwsEksClusterDetailsTypeDef
 
 ```python title="Usage Example"
@@ -9176,6 +10008,7 @@ class AwsOpenSearchServiceDomainDetailsTypeDef(TypedDict):
     VpcOptions: NotRequired[AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef],  # (6)
     LogPublishingOptions: NotRequired[AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef],  # (7)
     DomainEndpoints: NotRequired[Mapping[str, str]],
+    AdvancedSecurityOptions: NotRequired[AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainencryptionatrestoptionsdetailstypedef) 
@@ -9185,6 +10018,7 @@ class AwsOpenSearchServiceDomainDetailsTypeDef(TypedDict):
 5. See [:material-code-braces: AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindomainendpointoptionsdetailstypedef) 
 6. See [:material-code-braces: AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainvpcoptionsdetailstypedef) 
 7. See [:material-code-braces: AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptionsdetailstypedef) 
+8. See [:material-code-braces: AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainadvancedsecurityoptionsdetailstypedef) 
 ## AwsRdsDbSubnetGroupTypeDef
 
 ```python title="Usage Example"
@@ -9396,6 +10230,67 @@ class AwsSsmPatchComplianceDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsSsmPatchTypeDef](./type_defs.md#awsssmpatchtypedef) 
+## AwsWafRegionalRuleGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRuleGroupDetailsTypeDef
+
+def get_value() -> AwsWafRegionalRuleGroupDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalRuleGroupDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    RuleGroupId: NotRequired[str],
+    Rules: NotRequired[Sequence[AwsWafRegionalRuleGroupRulesDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafRegionalRuleGroupRulesDetailsTypeDef](./type_defs.md#awswafregionalrulegrouprulesdetailstypedef) 
+## AwsWafRegionalWebAclDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalWebAclDetailsTypeDef
+
+def get_value() -> AwsWafRegionalWebAclDetailsTypeDef:
+    return {
+        "DefaultAction": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRegionalWebAclDetailsTypeDef(TypedDict):
+    DefaultAction: NotRequired[str],
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    RulesList: NotRequired[Sequence[AwsWafRegionalWebAclRulesListDetailsTypeDef]],  # (1)
+    WebAclId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsWafRegionalWebAclRulesListDetailsTypeDef](./type_defs.md#awswafregionalwebaclruleslistdetailstypedef) 
+## AwsWafRuleGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafRuleGroupDetailsTypeDef
+
+def get_value() -> AwsWafRuleGroupDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafRuleGroupDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Name: NotRequired[str],
+    RuleGroupId: NotRequired[str],
+    Rules: NotRequired[Sequence[AwsWafRuleGroupRulesDetailsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafRuleGroupRulesDetailsTypeDef](./type_defs.md#awswafrulegrouprulesdetailstypedef) 
 ## AwsWafWebAclDetailsTypeDef
 
 ```python title="Usage Example"
@@ -9871,6 +10766,23 @@ class AwsCertificateManagerCertificateDetailsTypeDef(TypedDict):
 3. See [:material-code-braces: AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef) 
 4. See [:material-code-braces: AwsCertificateManagerCertificateOptionsTypeDef](./type_defs.md#awscertificatemanagercertificateoptionstypedef) 
 5. See [:material-code-braces: AwsCertificateManagerCertificateRenewalSummaryTypeDef](./type_defs.md#awscertificatemanagercertificaterenewalsummarytypedef) 
+## AwsCloudFrontDistributionOriginsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTypeDef
+
+def get_value() -> AwsCloudFrontDistributionOriginsTypeDef:
+    return {
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCloudFrontDistributionOriginsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[AwsCloudFrontDistributionOriginItemTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef) 
 ## AwsCloudFrontDistributionOriginGroupsTypeDef
 
 ```python title="Usage Example"
@@ -9939,16 +10851,22 @@ from mypy_boto3_securityhub.type_defs import AwsEcsClusterDetailsTypeDef
 
 def get_value() -> AwsEcsClusterDetailsTypeDef:
     return {
-        "CapacityProviders": ...,
+        "ClusterArn": ...,
     }
 ```
 
 ```python title="Definition"
 class AwsEcsClusterDetailsTypeDef(TypedDict):
+    ClusterArn: NotRequired[str],
+    ActiveServicesCount: NotRequired[int],
     CapacityProviders: NotRequired[Sequence[str]],
     ClusterSettings: NotRequired[Sequence[AwsEcsClusterClusterSettingsDetailsTypeDef]],  # (1)
     Configuration: NotRequired[AwsEcsClusterConfigurationDetailsTypeDef],  # (2)
     DefaultCapacityProviderStrategy: NotRequired[Sequence[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef]],  # (3)
+    ClusterName: NotRequired[str],
+    RegisteredContainerInstancesCount: NotRequired[int],
+    RunningTasksCount: NotRequired[int],
+    Status: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef) 
@@ -10789,25 +11707,38 @@ class ResourceDetailsTypeDef(TypedDict):
     AwsRdsDbClusterSnapshot: NotRequired[AwsRdsDbClusterSnapshotDetailsTypeDef],  # (42)
     AwsRdsDbCluster: NotRequired[AwsRdsDbClusterDetailsTypeDef],  # (43)
     AwsEcsCluster: NotRequired[AwsEcsClusterDetailsTypeDef],  # (44)
-    AwsEcsTaskDefinition: NotRequired[AwsEcsTaskDefinitionDetailsTypeDef],  # (45)
-    Container: NotRequired[ContainerDetailsTypeDef],  # (46)
+    AwsEcsContainer: NotRequired[AwsEcsContainerDetailsTypeDef],  # (45)
+    AwsEcsTaskDefinition: NotRequired[AwsEcsTaskDefinitionDetailsTypeDef],  # (46)
+    Container: NotRequired[ContainerDetailsTypeDef],  # (47)
     Other: NotRequired[Mapping[str, str]],
-    AwsRdsEventSubscription: NotRequired[AwsRdsEventSubscriptionDetailsTypeDef],  # (47)
-    AwsEcsService: NotRequired[AwsEcsServiceDetailsTypeDef],  # (48)
-    AwsAutoScalingLaunchConfiguration: NotRequired[AwsAutoScalingLaunchConfigurationDetailsTypeDef],  # (49)
-    AwsEc2VpnConnection: NotRequired[AwsEc2VpnConnectionDetailsTypeDef],  # (50)
-    AwsEcrContainerImage: NotRequired[AwsEcrContainerImageDetailsTypeDef],  # (51)
-    AwsOpenSearchServiceDomain: NotRequired[AwsOpenSearchServiceDomainDetailsTypeDef],  # (52)
-    AwsEc2VpcEndpointService: NotRequired[AwsEc2VpcEndpointServiceDetailsTypeDef],  # (53)
-    AwsXrayEncryptionConfig: NotRequired[AwsXrayEncryptionConfigDetailsTypeDef],  # (54)
-    AwsWafRateBasedRule: NotRequired[AwsWafRateBasedRuleDetailsTypeDef],  # (55)
-    AwsWafRegionalRateBasedRule: NotRequired[AwsWafRegionalRateBasedRuleDetailsTypeDef],  # (56)
-    AwsEcrRepository: NotRequired[AwsEcrRepositoryDetailsTypeDef],  # (57)
-    AwsEksCluster: NotRequired[AwsEksClusterDetailsTypeDef],  # (58)
-    AwsNetworkFirewallFirewallPolicy: NotRequired[AwsNetworkFirewallFirewallPolicyDetailsTypeDef],  # (59)
-    AwsNetworkFirewallFirewall: NotRequired[AwsNetworkFirewallFirewallDetailsTypeDef],  # (60)
-    AwsNetworkFirewallRuleGroup: NotRequired[AwsNetworkFirewallRuleGroupDetailsTypeDef],  # (61)
-    AwsRdsDbSecurityGroup: NotRequired[AwsRdsDbSecurityGroupDetailsTypeDef],  # (62)
+    AwsRdsEventSubscription: NotRequired[AwsRdsEventSubscriptionDetailsTypeDef],  # (48)
+    AwsEcsService: NotRequired[AwsEcsServiceDetailsTypeDef],  # (49)
+    AwsAutoScalingLaunchConfiguration: NotRequired[AwsAutoScalingLaunchConfigurationDetailsTypeDef],  # (50)
+    AwsEc2VpnConnection: NotRequired[AwsEc2VpnConnectionDetailsTypeDef],  # (51)
+    AwsEcrContainerImage: NotRequired[AwsEcrContainerImageDetailsTypeDef],  # (52)
+    AwsOpenSearchServiceDomain: NotRequired[AwsOpenSearchServiceDomainDetailsTypeDef],  # (53)
+    AwsEc2VpcEndpointService: NotRequired[AwsEc2VpcEndpointServiceDetailsTypeDef],  # (54)
+    AwsXrayEncryptionConfig: NotRequired[AwsXrayEncryptionConfigDetailsTypeDef],  # (55)
+    AwsWafRateBasedRule: NotRequired[AwsWafRateBasedRuleDetailsTypeDef],  # (56)
+    AwsWafRegionalRateBasedRule: NotRequired[AwsWafRegionalRateBasedRuleDetailsTypeDef],  # (57)
+    AwsEcrRepository: NotRequired[AwsEcrRepositoryDetailsTypeDef],  # (58)
+    AwsEksCluster: NotRequired[AwsEksClusterDetailsTypeDef],  # (59)
+    AwsNetworkFirewallFirewallPolicy: NotRequired[AwsNetworkFirewallFirewallPolicyDetailsTypeDef],  # (60)
+    AwsNetworkFirewallFirewall: NotRequired[AwsNetworkFirewallFirewallDetailsTypeDef],  # (61)
+    AwsNetworkFirewallRuleGroup: NotRequired[AwsNetworkFirewallRuleGroupDetailsTypeDef],  # (62)
+    AwsRdsDbSecurityGroup: NotRequired[AwsRdsDbSecurityGroupDetailsTypeDef],  # (63)
+    AwsKinesisStream: NotRequired[AwsKinesisStreamDetailsTypeDef],  # (64)
+    AwsEc2TransitGateway: NotRequired[AwsEc2TransitGatewayDetailsTypeDef],  # (65)
+    AwsEfsAccessPoint: NotRequired[AwsEfsAccessPointDetailsTypeDef],  # (66)
+    AwsCloudFormationStack: NotRequired[AwsCloudFormationStackDetailsTypeDef],  # (67)
+    AwsCloudWatchAlarm: NotRequired[AwsCloudWatchAlarmDetailsTypeDef],  # (68)
+    AwsEc2VpcPeeringConnection: NotRequired[AwsEc2VpcPeeringConnectionDetailsTypeDef],  # (69)
+    AwsWafRegionalRuleGroup: NotRequired[AwsWafRegionalRuleGroupDetailsTypeDef],  # (70)
+    AwsWafRegionalRule: NotRequired[AwsWafRegionalRuleDetailsTypeDef],  # (71)
+    AwsWafRegionalWebAcl: NotRequired[AwsWafRegionalWebAclDetailsTypeDef],  # (72)
+    AwsWafRule: NotRequired[AwsWafRuleDetailsTypeDef],  # (73)
+    AwsWafRuleGroup: NotRequired[AwsWafRuleGroupDetailsTypeDef],  # (74)
+    AwsEcsTask: NotRequired[AwsEcsTaskDetailsTypeDef],  # (75)
 ```
 
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupdetailstypedef) 
@@ -10854,24 +11785,37 @@ class ResourceDetailsTypeDef(TypedDict):
 42. See [:material-code-braces: AwsRdsDbClusterSnapshotDetailsTypeDef](./type_defs.md#awsrdsdbclustersnapshotdetailstypedef) 
 43. See [:material-code-braces: AwsRdsDbClusterDetailsTypeDef](./type_defs.md#awsrdsdbclusterdetailstypedef) 
 44. See [:material-code-braces: AwsEcsClusterDetailsTypeDef](./type_defs.md#awsecsclusterdetailstypedef) 
-45. See [:material-code-braces: AwsEcsTaskDefinitionDetailsTypeDef](./type_defs.md#awsecstaskdefinitiondetailstypedef) 
-46. See [:material-code-braces: ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef) 
-47. See [:material-code-braces: AwsRdsEventSubscriptionDetailsTypeDef](./type_defs.md#awsrdseventsubscriptiondetailstypedef) 
-48. See [:material-code-braces: AwsEcsServiceDetailsTypeDef](./type_defs.md#awsecsservicedetailstypedef) 
-49. See [:material-code-braces: AwsAutoScalingLaunchConfigurationDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationdetailstypedef) 
-50. See [:material-code-braces: AwsEc2VpnConnectionDetailsTypeDef](./type_defs.md#awsec2vpnconnectiondetailstypedef) 
-51. See [:material-code-braces: AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef) 
-52. See [:material-code-braces: AwsOpenSearchServiceDomainDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindetailstypedef) 
-53. See [:material-code-braces: AwsEc2VpcEndpointServiceDetailsTypeDef](./type_defs.md#awsec2vpcendpointservicedetailstypedef) 
-54. See [:material-code-braces: AwsXrayEncryptionConfigDetailsTypeDef](./type_defs.md#awsxrayencryptionconfigdetailstypedef) 
-55. See [:material-code-braces: AwsWafRateBasedRuleDetailsTypeDef](./type_defs.md#awswafratebasedruledetailstypedef) 
-56. See [:material-code-braces: AwsWafRegionalRateBasedRuleDetailsTypeDef](./type_defs.md#awswafregionalratebasedruledetailstypedef) 
-57. See [:material-code-braces: AwsEcrRepositoryDetailsTypeDef](./type_defs.md#awsecrrepositorydetailstypedef) 
-58. See [:material-code-braces: AwsEksClusterDetailsTypeDef](./type_defs.md#awseksclusterdetailstypedef) 
-59. See [:material-code-braces: AwsNetworkFirewallFirewallPolicyDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallpolicydetailstypedef) 
-60. See [:material-code-braces: AwsNetworkFirewallFirewallDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewalldetailstypedef) 
-61. See [:material-code-braces: AwsNetworkFirewallRuleGroupDetailsTypeDef](./type_defs.md#awsnetworkfirewallrulegroupdetailstypedef) 
-62. See [:material-code-braces: AwsRdsDbSecurityGroupDetailsTypeDef](./type_defs.md#awsrdsdbsecuritygroupdetailstypedef) 
+45. See [:material-code-braces: AwsEcsContainerDetailsTypeDef](./type_defs.md#awsecscontainerdetailstypedef) 
+46. See [:material-code-braces: AwsEcsTaskDefinitionDetailsTypeDef](./type_defs.md#awsecstaskdefinitiondetailstypedef) 
+47. See [:material-code-braces: ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef) 
+48. See [:material-code-braces: AwsRdsEventSubscriptionDetailsTypeDef](./type_defs.md#awsrdseventsubscriptiondetailstypedef) 
+49. See [:material-code-braces: AwsEcsServiceDetailsTypeDef](./type_defs.md#awsecsservicedetailstypedef) 
+50. See [:material-code-braces: AwsAutoScalingLaunchConfigurationDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationdetailstypedef) 
+51. See [:material-code-braces: AwsEc2VpnConnectionDetailsTypeDef](./type_defs.md#awsec2vpnconnectiondetailstypedef) 
+52. See [:material-code-braces: AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef) 
+53. See [:material-code-braces: AwsOpenSearchServiceDomainDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindetailstypedef) 
+54. See [:material-code-braces: AwsEc2VpcEndpointServiceDetailsTypeDef](./type_defs.md#awsec2vpcendpointservicedetailstypedef) 
+55. See [:material-code-braces: AwsXrayEncryptionConfigDetailsTypeDef](./type_defs.md#awsxrayencryptionconfigdetailstypedef) 
+56. See [:material-code-braces: AwsWafRateBasedRuleDetailsTypeDef](./type_defs.md#awswafratebasedruledetailstypedef) 
+57. See [:material-code-braces: AwsWafRegionalRateBasedRuleDetailsTypeDef](./type_defs.md#awswafregionalratebasedruledetailstypedef) 
+58. See [:material-code-braces: AwsEcrRepositoryDetailsTypeDef](./type_defs.md#awsecrrepositorydetailstypedef) 
+59. See [:material-code-braces: AwsEksClusterDetailsTypeDef](./type_defs.md#awseksclusterdetailstypedef) 
+60. See [:material-code-braces: AwsNetworkFirewallFirewallPolicyDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallpolicydetailstypedef) 
+61. See [:material-code-braces: AwsNetworkFirewallFirewallDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewalldetailstypedef) 
+62. See [:material-code-braces: AwsNetworkFirewallRuleGroupDetailsTypeDef](./type_defs.md#awsnetworkfirewallrulegroupdetailstypedef) 
+63. See [:material-code-braces: AwsRdsDbSecurityGroupDetailsTypeDef](./type_defs.md#awsrdsdbsecuritygroupdetailstypedef) 
+64. See [:material-code-braces: AwsKinesisStreamDetailsTypeDef](./type_defs.md#awskinesisstreamdetailstypedef) 
+65. See [:material-code-braces: AwsEc2TransitGatewayDetailsTypeDef](./type_defs.md#awsec2transitgatewaydetailstypedef) 
+66. See [:material-code-braces: AwsEfsAccessPointDetailsTypeDef](./type_defs.md#awsefsaccesspointdetailstypedef) 
+67. See [:material-code-braces: AwsCloudFormationStackDetailsTypeDef](./type_defs.md#awscloudformationstackdetailstypedef) 
+68. See [:material-code-braces: AwsCloudWatchAlarmDetailsTypeDef](./type_defs.md#awscloudwatchalarmdetailstypedef) 
+69. See [:material-code-braces: AwsEc2VpcPeeringConnectionDetailsTypeDef](./type_defs.md#awsec2vpcpeeringconnectiondetailstypedef) 
+70. See [:material-code-braces: AwsWafRegionalRuleGroupDetailsTypeDef](./type_defs.md#awswafregionalrulegroupdetailstypedef) 
+71. See [:material-code-braces: AwsWafRegionalRuleDetailsTypeDef](./type_defs.md#awswafregionalruledetailstypedef) 
+72. See [:material-code-braces: AwsWafRegionalWebAclDetailsTypeDef](./type_defs.md#awswafregionalwebacldetailstypedef) 
+73. See [:material-code-braces: AwsWafRuleDetailsTypeDef](./type_defs.md#awswafruledetailstypedef) 
+74. See [:material-code-braces: AwsWafRuleGroupDetailsTypeDef](./type_defs.md#awswafrulegroupdetailstypedef) 
+75. See [:material-code-braces: AwsEcsTaskDetailsTypeDef](./type_defs.md#awsecstaskdetailstypedef) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"
@@ -10930,7 +11874,7 @@ class AwsSecurityFindingTypeDef(TypedDict):
     UpdatedAt: str,
     Title: str,
     Description: str,
-    Resources: Sequence[ResourceTypeDef],  # (8)
+    Resources: Sequence[ResourceTypeDef],  # (9)
     ProductName: NotRequired[str],
     CompanyName: NotRequired[str],
     Region: NotRequired[str],
@@ -10948,18 +11892,19 @@ class AwsSecurityFindingTypeDef(TypedDict):
     Network: NotRequired[NetworkTypeDef],  # (4)
     NetworkPath: NotRequired[Sequence[NetworkPathComponentTypeDef]],  # (5)
     Process: NotRequired[ProcessDetailsTypeDef],  # (6)
-    ThreatIntelIndicators: NotRequired[Sequence[ThreatIntelIndicatorTypeDef]],  # (7)
-    Compliance: NotRequired[ComplianceTypeDef],  # (9)
-    VerificationState: NotRequired[VerificationStateType],  # (10)
-    WorkflowState: NotRequired[WorkflowStateType],  # (11)
-    Workflow: NotRequired[WorkflowTypeDef],  # (12)
-    RecordState: NotRequired[RecordStateType],  # (13)
-    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (14)
-    Note: NotRequired[NoteTypeDef],  # (15)
-    Vulnerabilities: NotRequired[Sequence[VulnerabilityTypeDef]],  # (16)
-    PatchSummary: NotRequired[PatchSummaryTypeDef],  # (17)
-    Action: NotRequired[ActionTypeDef],  # (18)
-    FindingProviderFields: NotRequired[FindingProviderFieldsTypeDef],  # (19)
+    Threats: NotRequired[Sequence[ThreatTypeDef]],  # (7)
+    ThreatIntelIndicators: NotRequired[Sequence[ThreatIntelIndicatorTypeDef]],  # (8)
+    Compliance: NotRequired[ComplianceTypeDef],  # (10)
+    VerificationState: NotRequired[VerificationStateType],  # (11)
+    WorkflowState: NotRequired[WorkflowStateType],  # (12)
+    Workflow: NotRequired[WorkflowTypeDef],  # (13)
+    RecordState: NotRequired[RecordStateType],  # (14)
+    RelatedFindings: NotRequired[Sequence[RelatedFindingTypeDef]],  # (15)
+    Note: NotRequired[NoteTypeDef],  # (16)
+    Vulnerabilities: NotRequired[Sequence[VulnerabilityTypeDef]],  # (17)
+    PatchSummary: NotRequired[PatchSummaryTypeDef],  # (18)
+    Action: NotRequired[ActionTypeDef],  # (19)
+    FindingProviderFields: NotRequired[FindingProviderFieldsTypeDef],  # (20)
     Sample: NotRequired[bool],
 ```
 
@@ -10969,19 +11914,20 @@ class AwsSecurityFindingTypeDef(TypedDict):
 4. See [:material-code-braces: NetworkTypeDef](./type_defs.md#networktypedef) 
 5. See [:material-code-braces: NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef) 
 6. See [:material-code-braces: ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef) 
-7. See [:material-code-braces: ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef) 
-8. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
-9. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
-10. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
-11. See [:material-code-brackets: WorkflowStateType](./literals.md#workflowstatetype) 
-12. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
-13. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
-14. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
-15. See [:material-code-braces: NoteTypeDef](./type_defs.md#notetypedef) 
-16. See [:material-code-braces: VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef) 
-17. See [:material-code-braces: PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef) 
-18. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
-19. See [:material-code-braces: FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef) 
+7. See [:material-code-braces: ThreatTypeDef](./type_defs.md#threattypedef) 
+8. See [:material-code-braces: ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef) 
+9. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+10. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
+11. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+12. See [:material-code-brackets: WorkflowStateType](./literals.md#workflowstatetype) 
+13. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
+14. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
+15. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+16. See [:material-code-braces: NoteTypeDef](./type_defs.md#notetypedef) 
+17. See [:material-code-braces: VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef) 
+18. See [:material-code-braces: PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef) 
+19. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+20. See [:material-code-braces: FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef) 
 ## BatchImportFindingsRequestRequestTypeDef
 
 ```python title="Usage Example"

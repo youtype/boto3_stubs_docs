@@ -28,6 +28,7 @@ class BatchExecuteStatementInputRequestTypeDef(TypedDict):
     SecretArn: NotRequired[str],
     StatementName: NotRequired[str],
     WithEvent: NotRequired[bool],
+    WorkgroupName: NotRequired[str],
 ```
 
 ## ResponseMetadataTypeDef
@@ -199,6 +200,7 @@ class DescribeTableRequestRequestTypeDef(TypedDict):
     Schema: NotRequired[str],
     SecretArn: NotRequired[str],
     Table: NotRequired[str],
+    WorkgroupName: NotRequired[str],
 ```
 
 ## FieldTypeDef
@@ -258,6 +260,7 @@ class ListDatabasesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
     SecretArn: NotRequired[str],
+    WorkgroupName: NotRequired[str],
 ```
 
 ## ListSchemasRequestRequestTypeDef
@@ -281,6 +284,7 @@ class ListSchemasRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     SchemaPattern: NotRequired[str],
     SecretArn: NotRequired[str],
+    WorkgroupName: NotRequired[str],
 ```
 
 ## ListStatementsRequestRequestTypeDef
@@ -326,6 +330,7 @@ class ListTablesRequestRequestTypeDef(TypedDict):
     SchemaPattern: NotRequired[str],
     SecretArn: NotRequired[str],
     TablePattern: NotRequired[str],
+    WorkgroupName: NotRequired[str],
 ```
 
 ## TableMemberTypeDef
@@ -359,6 +364,7 @@ def get_value() -> BatchExecuteStatementOutputTypeDef:
         "DbUser": ...,
         "Id": ...,
         "SecretArn": ...,
+        "WorkgroupName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -371,6 +377,7 @@ class BatchExecuteStatementOutputTypeDef(TypedDict):
     DbUser: str,
     Id: str,
     SecretArn: str,
+    WorkgroupName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -407,6 +414,7 @@ def get_value() -> ExecuteStatementOutputTypeDef:
         "DbUser": ...,
         "Id": ...,
         "SecretArn": ...,
+        "WorkgroupName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -419,6 +427,7 @@ class ExecuteStatementOutputTypeDef(TypedDict):
     DbUser: str,
     Id: str,
     SecretArn: str,
+    WorkgroupName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -511,6 +520,7 @@ class ExecuteStatementInputRequestTypeDef(TypedDict):
     SecretArn: NotRequired[str],
     StatementName: NotRequired[str],
     WithEvent: NotRequired[bool],
+    WorkgroupName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
@@ -566,6 +576,7 @@ def get_value() -> DescribeStatementResponseTypeDef:
         "Status": ...,
         "SubStatements": ...,
         "UpdatedAt": ...,
+        "WorkgroupName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -590,6 +601,7 @@ class DescribeStatementResponseTypeDef(TypedDict):
     Status: StatusStringType,  # (2)
     SubStatements: List[SubStatementDataTypeDef],  # (3)
     UpdatedAt: datetime,
+    WorkgroupName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -617,6 +629,7 @@ class DescribeTableRequestDescribeTablePaginateTypeDef(TypedDict):
     Schema: NotRequired[str],
     SecretArn: NotRequired[str],
     Table: NotRequired[str],
+    WorkgroupName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -656,6 +669,7 @@ class ListDatabasesRequestListDatabasesPaginateTypeDef(TypedDict):
     ClusterIdentifier: NotRequired[str],
     DbUser: NotRequired[str],
     SecretArn: NotRequired[str],
+    WorkgroupName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -679,6 +693,7 @@ class ListSchemasRequestListSchemasPaginateTypeDef(TypedDict):
     DbUser: NotRequired[str],
     SchemaPattern: NotRequired[str],
     SecretArn: NotRequired[str],
+    WorkgroupName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -724,6 +739,7 @@ class ListTablesRequestListTablesPaginateTypeDef(TypedDict):
     SchemaPattern: NotRequired[str],
     SecretArn: NotRequired[str],
     TablePattern: NotRequired[str],
+    WorkgroupName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 

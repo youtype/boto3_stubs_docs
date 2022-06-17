@@ -74,6 +74,7 @@ def batch_execute_statement(
     SecretArn: str = ...,
     StatementName: str = ...,
     WithEvent: bool = ...,
+    WorkgroupName: str = ...,
 ) -> BatchExecuteStatementOutputTypeDef:  # (1)
     ...
 ```
@@ -202,6 +203,7 @@ def describe_table(
     Schema: str = ...,
     SecretArn: str = ...,
     Table: str = ...,
+    WorkgroupName: str = ...,
 ) -> DescribeTableResponseTypeDef:  # (1)
     ...
 ```
@@ -239,6 +241,7 @@ def execute_statement(
     SecretArn: str = ...,
     StatementName: str = ...,
     WithEvent: bool = ...,
+    WorkgroupName: str = ...,
 ) -> ExecuteStatementOutputTypeDef:  # (2)
     ...
 ```
@@ -324,6 +327,7 @@ def list_databases(
     MaxResults: int = ...,
     NextToken: str = ...,
     SecretArn: str = ...,
+    WorkgroupName: str = ...,
 ) -> ListDatabasesResponseTypeDef:  # (1)
     ...
 ```
@@ -360,6 +364,7 @@ def list_schemas(
     NextToken: str = ...,
     SchemaPattern: str = ...,
     SecretArn: str = ...,
+    WorkgroupName: str = ...,
 ) -> ListSchemasResponseTypeDef:  # (1)
     ...
 ```
@@ -431,6 +436,7 @@ def list_tables(
     SchemaPattern: str = ...,
     SecretArn: str = ...,
     TablePattern: str = ...,
+    WorkgroupName: str = ...,
 ) -> ListTablesResponseTypeDef:  # (1)
     ...
 ```
