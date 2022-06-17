@@ -207,6 +207,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-connect-contact-lens](./mypy_boto3_connect_contact_lens/README.md) for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens) service
 
+- [mypy-boto3-connectcampaigns](./mypy_boto3_connectcampaigns/README.md) for [ConnectCampaignService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectcampaigns.html#ConnectCampaignService) service
+
 - [mypy-boto3-connectparticipant](./mypy_boto3_connectparticipant/README.md) for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant) service
 
 - [mypy-boto3-cur](./mypy_boto3_cur/README.md) for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService) service

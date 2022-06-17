@@ -67,6 +67,25 @@ class ArchivalSummaryTypeDef(TypedDict):
     ArchivalBackupArn: NotRequired[str],
 ```
 
+## AttributeDefinitionServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import AttributeDefinitionServiceResourceTypeDef
+
+def get_value() -> AttributeDefinitionServiceResourceTypeDef:
+    return {
+        "AttributeName": ...,
+        "AttributeType": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeDefinitionServiceResourceTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeType: ScalarAttributeTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: ScalarAttributeTypeType](./literals.md#scalarattributetypetype) 
 ## AttributeDefinitionTableTypeDef
 
 ```python title="Usage Example"
@@ -268,6 +287,26 @@ class BackupSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
 2. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
+## KeysAndAttributesServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import KeysAndAttributesServiceResourceTypeDef
+
+def get_value() -> KeysAndAttributesServiceResourceTypeDef:
+    return {
+        "Keys": ...,
+    }
+```
+
+```python title="Definition"
+class KeysAndAttributesServiceResourceTypeDef(TypedDict):
+    Keys: Sequence[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    AttributesToGet: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+    ProjectionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+```
+
 ## BatchStatementErrorTypeDef
 
 ```python title="Usage Example"
@@ -286,6 +325,23 @@ class BatchStatementErrorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype) 
+## ItemCollectionMetricsServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ItemCollectionMetricsServiceResourceTypeDef
+
+def get_value() -> ItemCollectionMetricsServiceResourceTypeDef:
+    return {
+        "ItemCollectionKey": ...,
+    }
+```
+
+```python title="Definition"
+class ItemCollectionMetricsServiceResourceTypeDef(TypedDict):
+    ItemCollectionKey: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    SizeEstimateRangeGB: NotRequired[List[float]],
+```
+
 ## BillingModeSummaryTableTypeDef
 
 ```python title="Usage Example"
@@ -322,6 +378,24 @@ class BillingModeSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+## CapacityServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CapacityServiceResourceTypeDef
+
+def get_value() -> CapacityServiceResourceTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class CapacityServiceResourceTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    CapacityUnits: NotRequired[float],
+```
+
 ## CapacityTableTypeDef
 
 ```python title="Usage Example"
@@ -661,6 +735,98 @@ class TagTypeDef(TypedDict):
     Value: str,
 ```
 
+## KeySchemaElementServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import KeySchemaElementServiceResourceTypeDef
+
+def get_value() -> KeySchemaElementServiceResourceTypeDef:
+    return {
+        "AttributeName": ...,
+        "KeyType": ...,
+    }
+```
+
+```python title="Definition"
+class KeySchemaElementServiceResourceTypeDef(TypedDict):
+    AttributeName: str,
+    KeyType: KeyTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
+## ProvisionedThroughputServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputServiceResourceTypeDef
+
+def get_value() -> ProvisionedThroughputServiceResourceTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+        "WriteCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedThroughputServiceResourceTypeDef(TypedDict):
+    ReadCapacityUnits: int,
+    WriteCapacityUnits: int,
+```
+
+## SSESpecificationServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import SSESpecificationServiceResourceTypeDef
+
+def get_value() -> SSESpecificationServiceResourceTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class SSESpecificationServiceResourceTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    SSEType: NotRequired[SSETypeType],  # (1)
+    KMSMasterKeyId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
+## StreamSpecificationServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import StreamSpecificationServiceResourceTypeDef
+
+def get_value() -> StreamSpecificationServiceResourceTypeDef:
+    return {
+        "StreamEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class StreamSpecificationServiceResourceTypeDef(TypedDict):
+    StreamEnabled: bool,
+    StreamViewType: NotRequired[StreamViewTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: StreamViewTypeType](./literals.md#streamviewtypetype) 
+## TagServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import TagServiceResourceTypeDef
+
+def get_value() -> TagServiceResourceTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagServiceResourceTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## DeleteBackupInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -792,6 +958,22 @@ def get_value() -> DeleteReplicationGroupMemberActionTypeDef:
 ```python title="Definition"
 class DeleteReplicationGroupMemberActionTypeDef(TypedDict):
     RegionName: str,
+```
+
+## DeleteRequestServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DeleteRequestServiceResourceTypeDef
+
+def get_value() -> DeleteRequestServiceResourceTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteRequestServiceResourceTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
 ```
 
 ## DeleteTableInputRequestTypeDef
@@ -1204,6 +1386,24 @@ class ProvisionedThroughputDescriptionTypeDef(TypedDict):
     WriteCapacityUnits: NotRequired[int],
 ```
 
+## ProjectionServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProjectionServiceResourceTypeDef
+
+def get_value() -> ProjectionServiceResourceTypeDef:
+    return {
+        "ProjectionType": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectionServiceResourceTypeDef(TypedDict):
+    ProjectionType: NotRequired[ProjectionTypeType],  # (1)
+    NonKeyAttributes: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: ProjectionTypeType](./literals.md#projectiontypetype) 
 ## KinesisStreamingDestinationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1382,6 +1582,22 @@ def get_value() -> PointInTimeRecoverySpecificationTypeDef:
 ```python title="Definition"
 class PointInTimeRecoverySpecificationTypeDef(TypedDict):
     PointInTimeRecoveryEnabled: bool,
+```
+
+## PutRequestServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import PutRequestServiceResourceTypeDef
+
+def get_value() -> PutRequestServiceResourceTypeDef:
+    return {
+        "Item": ...,
+    }
+```
+
+```python title="Definition"
+class PutRequestServiceResourceTypeDef(TypedDict):
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
 ```
 
 ## TableClassSummaryTableTypeDef
@@ -2386,6 +2602,25 @@ class ListBackupsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupSummaryTypeDef](./type_defs.md#backupsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetItemInputServiceResourceBatchGetItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BatchGetItemInputServiceResourceBatchGetItemTypeDef
+
+def get_value() -> BatchGetItemInputServiceResourceBatchGetItemTypeDef:
+    return {
+        "RequestItems": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetItemInputServiceResourceBatchGetItemTypeDef(TypedDict):
+    RequestItems: Mapping[str, KeysAndAttributesServiceResourceTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
+
+1. See [:material-code-braces: KeysAndAttributesServiceResourceTypeDef](./type_defs.md#keysandattributesserviceresourcetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## BatchStatementResponseTypeDef
 
 ```python title="Usage Example"
@@ -2406,6 +2641,31 @@ class BatchStatementResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef) 
 2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+## ConsumedCapacityServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ConsumedCapacityServiceResourceTypeDef
+
+def get_value() -> ConsumedCapacityServiceResourceTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class ConsumedCapacityServiceResourceTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    CapacityUnits: NotRequired[float],
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    Table: NotRequired[CapacityServiceResourceTypeDef],  # (1)
+    LocalSecondaryIndexes: NotRequired[Dict[str, CapacityServiceResourceTypeDef]],  # (2)
+    GlobalSecondaryIndexes: NotRequired[Dict[str, CapacityServiceResourceTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: CapacityServiceResourceTypeDef](./type_defs.md#capacityserviceresourcetypedef) 
+2. See [:material-code-braces: CapacityServiceResourceTypeDef](./type_defs.md#capacityserviceresourcetypedef) 
+3. See [:material-code-braces: CapacityServiceResourceTypeDef](./type_defs.md#capacityserviceresourcetypedef) 
 ## ConsumedCapacityTableTypeDef
 
 ```python title="Usage Example"
@@ -3324,6 +3584,52 @@ class GlobalSecondaryIndexDescriptionTypeDef(TypedDict):
 2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
 3. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
 4. See [:material-code-braces: ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef) 
+## GlobalSecondaryIndexServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexServiceResourceTypeDef
+
+def get_value() -> GlobalSecondaryIndexServiceResourceTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalSecondaryIndexServiceResourceTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementServiceResourceTypeDef],  # (1)
+    Projection: ProjectionServiceResourceTypeDef,  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputServiceResourceTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: KeySchemaElementServiceResourceTypeDef](./type_defs.md#keyschemaelementserviceresourcetypedef) 
+2. See [:material-code-braces: ProjectionServiceResourceTypeDef](./type_defs.md#projectionserviceresourcetypedef) 
+3. See [:material-code-braces: ProvisionedThroughputServiceResourceTypeDef](./type_defs.md#provisionedthroughputserviceresourcetypedef) 
+## LocalSecondaryIndexServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexServiceResourceTypeDef
+
+def get_value() -> LocalSecondaryIndexServiceResourceTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
+```
+
+```python title="Definition"
+class LocalSecondaryIndexServiceResourceTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementServiceResourceTypeDef],  # (1)
+    Projection: ProjectionServiceResourceTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeySchemaElementServiceResourceTypeDef](./type_defs.md#keyschemaelementserviceresourcetypedef) 
+2. See [:material-code-braces: ProjectionServiceResourceTypeDef](./type_defs.md#projectionserviceresourcetypedef) 
 ## ListBackupsInputListBackupsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3494,6 +3800,25 @@ class UpdateContinuousBackupsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef) 
+## WriteRequestServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import WriteRequestServiceResourceTypeDef
+
+def get_value() -> WriteRequestServiceResourceTypeDef:
+    return {
+        "PutRequest": ...,
+    }
+```
+
+```python title="Definition"
+class WriteRequestServiceResourceTypeDef(TypedDict):
+    PutRequest: NotRequired[PutRequestServiceResourceTypeDef],  # (1)
+    DeleteRequest: NotRequired[DeleteRequestServiceResourceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PutRequestServiceResourceTypeDef](./type_defs.md#putrequestserviceresourcetypedef) 
+2. See [:material-code-braces: DeleteRequestServiceResourceTypeDef](./type_defs.md#deleterequestserviceresourcetypedef) 
 ## UpdateTimeToLiveInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -3766,25 +4091,6 @@ class BatchGetItemInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
 2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-## BatchGetItemInputServiceResourceBatchGetItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dynamodb.type_defs import BatchGetItemInputServiceResourceBatchGetItemTypeDef
-
-def get_value() -> BatchGetItemInputServiceResourceBatchGetItemTypeDef:
-    return {
-        "RequestItems": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetItemInputServiceResourceBatchGetItemTypeDef(TypedDict):
-    RequestItems: Mapping[str, KeysAndAttributesTypeDef],  # (1)
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
-```
-
-1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
-2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## ExecuteTransactionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -3889,6 +4195,31 @@ class AutoScalingSettingsUpdateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingPolicyUpdateTypeDef](./type_defs.md#autoscalingpolicyupdatetypedef) 
+## BatchGetItemOutputServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputServiceResourceTypeDef
+
+def get_value() -> BatchGetItemOutputServiceResourceTypeDef:
+    return {
+        "Responses": ...,
+        "UnprocessedKeys": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetItemOutputServiceResourceTypeDef(TypedDict):
+    Responses: Dict[str, List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],
+    UnprocessedKeys: Dict[str, KeysAndAttributesServiceResourceTypeDef],  # (1)
+    ConsumedCapacity: List[ConsumedCapacityServiceResourceTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: KeysAndAttributesServiceResourceTypeDef](./type_defs.md#keysandattributesserviceresourcetypedef) 
+2. See [:material-code-braces: ConsumedCapacityServiceResourceTypeDef](./type_defs.md#consumedcapacityserviceresourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteItemOutputTableTypeDef
 
 ```python title="Usage Example"
@@ -4473,44 +4804,6 @@ class CreateTableInputRequestTypeDef(TypedDict):
 8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
 9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
-## CreateTableInputServiceResourceCreateTableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dynamodb.type_defs import CreateTableInputServiceResourceCreateTableTypeDef
-
-def get_value() -> CreateTableInputServiceResourceCreateTableTypeDef:
-    return {
-        "AttributeDefinitions": ...,
-        "TableName": ...,
-        "KeySchema": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTableInputServiceResourceCreateTableTypeDef(TypedDict):
-    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef],  # (1)
-    TableName: str,
-    KeySchema: Sequence[KeySchemaElementTypeDef],  # (2)
-    LocalSecondaryIndexes: NotRequired[Sequence[LocalSecondaryIndexTypeDef]],  # (3)
-    GlobalSecondaryIndexes: NotRequired[Sequence[GlobalSecondaryIndexTypeDef]],  # (4)
-    BillingMode: NotRequired[BillingModeType],  # (5)
-    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (6)
-    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (7)
-    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (8)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (9)
-    TableClass: NotRequired[TableClassType],  # (10)
-```
-
-1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
-2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
-3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
-4. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
-5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
-6. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
-7. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
-8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
-9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## RestoreTableFromBackupInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -4779,6 +5072,91 @@ class UpdateGlobalTableInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef) 
+## CreateTableInputServiceResourceCreateTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CreateTableInputServiceResourceCreateTableTypeDef
+
+def get_value() -> CreateTableInputServiceResourceCreateTableTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+        "TableName": ...,
+        "KeySchema": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTableInputServiceResourceCreateTableTypeDef(TypedDict):
+    AttributeDefinitions: Sequence[AttributeDefinitionServiceResourceTypeDef],  # (1)
+    TableName: str,
+    KeySchema: Sequence[KeySchemaElementServiceResourceTypeDef],  # (2)
+    LocalSecondaryIndexes: NotRequired[Sequence[LocalSecondaryIndexServiceResourceTypeDef]],  # (3)
+    GlobalSecondaryIndexes: NotRequired[Sequence[GlobalSecondaryIndexServiceResourceTypeDef]],  # (4)
+    BillingMode: NotRequired[BillingModeType],  # (5)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputServiceResourceTypeDef],  # (6)
+    StreamSpecification: NotRequired[StreamSpecificationServiceResourceTypeDef],  # (7)
+    SSESpecification: NotRequired[SSESpecificationServiceResourceTypeDef],  # (8)
+    Tags: NotRequired[Sequence[TagServiceResourceTypeDef]],  # (9)
+    TableClass: NotRequired[TableClassType],  # (10)
+```
+
+1. See [:material-code-braces: AttributeDefinitionServiceResourceTypeDef](./type_defs.md#attributedefinitionserviceresourcetypedef) 
+2. See [:material-code-braces: KeySchemaElementServiceResourceTypeDef](./type_defs.md#keyschemaelementserviceresourcetypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexServiceResourceTypeDef](./type_defs.md#localsecondaryindexserviceresourcetypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexServiceResourceTypeDef](./type_defs.md#globalsecondaryindexserviceresourcetypedef) 
+5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+6. See [:material-code-braces: ProvisionedThroughputServiceResourceTypeDef](./type_defs.md#provisionedthroughputserviceresourcetypedef) 
+7. See [:material-code-braces: StreamSpecificationServiceResourceTypeDef](./type_defs.md#streamspecificationserviceresourcetypedef) 
+8. See [:material-code-braces: SSESpecificationServiceResourceTypeDef](./type_defs.md#ssespecificationserviceresourcetypedef) 
+9. See [:material-code-braces: TagServiceResourceTypeDef](./type_defs.md#tagserviceresourcetypedef) 
+10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
+## BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
+
+def get_value() -> BatchWriteItemInputServiceResourceBatchWriteItemTypeDef:
+    return {
+        "RequestItems": ...,
+    }
+```
+
+```python title="Definition"
+class BatchWriteItemInputServiceResourceBatchWriteItemTypeDef(TypedDict):
+    RequestItems: Mapping[str, Sequence[WriteRequestServiceResourceTypeDef]],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)
+```
+
+1. See [:material-code-braces: WriteRequestServiceResourceTypeDef](./type_defs.md#writerequestserviceresourcetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+## BatchWriteItemOutputServiceResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputServiceResourceTypeDef
+
+def get_value() -> BatchWriteItemOutputServiceResourceTypeDef:
+    return {
+        "UnprocessedItems": ...,
+        "ItemCollectionMetrics": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchWriteItemOutputServiceResourceTypeDef(TypedDict):
+    UnprocessedItems: Dict[str, List[WriteRequestServiceResourceTypeDef]],  # (1)
+    ItemCollectionMetrics: Dict[str, List[ItemCollectionMetricsServiceResourceTypeDef]],  # (2)
+    ConsumedCapacity: List[ConsumedCapacityServiceResourceTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: WriteRequestServiceResourceTypeDef](./type_defs.md#writerequestserviceresourcetypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsServiceResourceTypeDef](./type_defs.md#itemcollectionmetricsserviceresourcetypedef) 
+3. See [:material-code-braces: ConsumedCapacityServiceResourceTypeDef](./type_defs.md#consumedcapacityserviceresourcetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TransactGetItemsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -4811,27 +5189,6 @@ def get_value() -> BatchWriteItemInputRequestTypeDef:
 
 ```python title="Definition"
 class BatchWriteItemInputRequestTypeDef(TypedDict):
-    RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
-    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)
-```
-
-1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
-2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-## BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
-
-def get_value() -> BatchWriteItemInputServiceResourceBatchWriteItemTypeDef:
-    return {
-        "RequestItems": ...,
-    }
-```
-
-```python title="Definition"
-class BatchWriteItemInputServiceResourceBatchWriteItemTypeDef(TypedDict):
     RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)

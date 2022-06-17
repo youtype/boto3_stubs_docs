@@ -90,15 +90,15 @@ Type annotations and code completion for `#!python boto3.resource("dynamodb").ba
 def batch_get_item(
     self,
     *,
-    RequestItems: Mapping[str, KeysAndAttributesTypeDef],  # (1)
+    RequestItems: Mapping[str, KeysAndAttributesServiceResourceTypeDef],  # (1)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
-) -> BatchGetItemOutputTypeDef:  # (3)
+) -> BatchGetItemOutputServiceResourceTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+1. See [:material-code-braces: KeysAndAttributesServiceResourceTypeDef](./type_defs.md#keysandattributesserviceresourcetypedef) 
 2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-3. See [:material-code-braces: BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef) 
+3. See [:material-code-braces: BatchGetItemOutputServiceResourceTypeDef](./type_defs.md#batchgetitemoutputserviceresourcetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -123,17 +123,17 @@ Type annotations and code completion for `#!python boto3.resource("dynamodb").ba
 def batch_write_item(
     self,
     *,
-    RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
+    RequestItems: Mapping[str, Sequence[WriteRequestServiceResourceTypeDef]],  # (1)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
     ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (3)
-) -> BatchWriteItemOutputTypeDef:  # (4)
+) -> BatchWriteItemOutputServiceResourceTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
+1. See [:material-code-braces: WriteRequestServiceResourceTypeDef](./type_defs.md#writerequestserviceresourcetypedef) 
 2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-4. See [:material-code-braces: BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef) 
+4. See [:material-code-braces: BatchWriteItemOutputServiceResourceTypeDef](./type_defs.md#batchwriteitemoutputserviceresourcetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -157,30 +157,30 @@ Type annotations and code completion for `#!python boto3.resource("dynamodb").cr
 def create_table(
     self,
     *,
-    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef],  # (1)
+    AttributeDefinitions: Sequence[AttributeDefinitionServiceResourceTypeDef],  # (1)
     TableName: str,
-    KeySchema: Sequence[KeySchemaElementTypeDef],  # (2)
-    LocalSecondaryIndexes: Sequence[LocalSecondaryIndexTypeDef] = ...,  # (3)
-    GlobalSecondaryIndexes: Sequence[GlobalSecondaryIndexTypeDef] = ...,  # (4)
+    KeySchema: Sequence[KeySchemaElementServiceResourceTypeDef],  # (2)
+    LocalSecondaryIndexes: Sequence[LocalSecondaryIndexServiceResourceTypeDef] = ...,  # (3)
+    GlobalSecondaryIndexes: Sequence[GlobalSecondaryIndexServiceResourceTypeDef] = ...,  # (4)
     BillingMode: BillingModeType = ...,  # (5)
-    ProvisionedThroughput: ProvisionedThroughputTypeDef = ...,  # (6)
-    StreamSpecification: StreamSpecificationTypeDef = ...,  # (7)
-    SSESpecification: SSESpecificationTypeDef = ...,  # (8)
-    Tags: Sequence[TagTypeDef] = ...,  # (9)
+    ProvisionedThroughput: ProvisionedThroughputServiceResourceTypeDef = ...,  # (6)
+    StreamSpecification: StreamSpecificationServiceResourceTypeDef = ...,  # (7)
+    SSESpecification: SSESpecificationServiceResourceTypeDef = ...,  # (8)
+    Tags: Sequence[TagServiceResourceTypeDef] = ...,  # (9)
     TableClass: TableClassType = ...,  # (10)
 ) -> Table:
     ...
 ```
 
-1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
-2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
-3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
-4. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+1. See [:material-code-braces: AttributeDefinitionServiceResourceTypeDef](./type_defs.md#attributedefinitionserviceresourcetypedef) 
+2. See [:material-code-braces: KeySchemaElementServiceResourceTypeDef](./type_defs.md#keyschemaelementserviceresourcetypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexServiceResourceTypeDef](./type_defs.md#localsecondaryindexserviceresourcetypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexServiceResourceTypeDef](./type_defs.md#globalsecondaryindexserviceresourcetypedef) 
 5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
-6. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
-7. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
-8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
-9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ProvisionedThroughputServiceResourceTypeDef](./type_defs.md#provisionedthroughputserviceresourcetypedef) 
+7. See [:material-code-braces: StreamSpecificationServiceResourceTypeDef](./type_defs.md#streamspecificationserviceresourcetypedef) 
+8. See [:material-code-braces: SSESpecificationServiceResourceTypeDef](./type_defs.md#ssespecificationserviceresourcetypedef) 
+9. See [:material-code-braces: TagServiceResourceTypeDef](./type_defs.md#tagserviceresourcetypedef) 
 10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 
 

@@ -206,6 +206,7 @@ ServiceName = Literal[
     "config",
     "connect",
     "connect-contact-lens",
+    "connectcampaigns",
     "connectparticipant",
     "cur",
     "customer-profiles",
