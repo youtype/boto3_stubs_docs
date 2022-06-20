@@ -125,6 +125,7 @@ def get_value() -> AddressTypeDef:
 ```
 
 - [AddressTypeDef](./type_defs.md#addresstypedef)
+- [AssetLocationTypeDef](./type_defs.md#assetlocationtypedef)
 - [ComputeAttributesTypeDef](./type_defs.md#computeattributestypedef)
 - [CancelOrderInputRequestTypeDef](./type_defs.md#cancelorderinputrequesttypedef)
 - [EC2CapacityTypeDef](./type_defs.md#ec2capacitytypedef)

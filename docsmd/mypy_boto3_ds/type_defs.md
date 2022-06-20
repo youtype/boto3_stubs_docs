@@ -711,6 +711,52 @@ class DescribeRegionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## DescribeSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSettingsRequestRequestTypeDef
+
+def get_value() -> DescribeSettingsRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSettingsRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    Status: NotRequired[DirectoryConfigurationStatusType],  # (1)
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DirectoryConfigurationStatusType](./literals.md#directoryconfigurationstatustype) 
+## SettingEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import SettingEntryTypeDef
+
+def get_value() -> SettingEntryTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class SettingEntryTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Name: NotRequired[str],
+    AllowedValues: NotRequired[str],
+    AppliedValue: NotRequired[str],
+    RequestedValue: NotRequired[str],
+    RequestStatus: NotRequired[DirectoryConfigurationStatusType],  # (1)
+    RequestDetailedStatus: NotRequired[Dict[str, DirectoryConfigurationStatusType]],  # (2)
+    RequestStatusMessage: NotRequired[str],
+    LastUpdatedDateTime: NotRequired[datetime],
+    LastRequestedDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DirectoryConfigurationStatusType](./literals.md#directoryconfigurationstatustype) 
+2. See [:material-code-brackets: DirectoryConfigurationStatusType](./literals.md#directoryconfigurationstatustype) 
 ## DescribeSharedDirectoriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1363,6 +1409,24 @@ class RestoreFromSnapshotRequestRequestTypeDef(TypedDict):
     SnapshotId: str,
 ```
 
+## SettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import SettingTypeDef
+
+def get_value() -> SettingTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class SettingTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
+
 ## ShareTargetTypeDef
 
 ```python title="Usage Example"
@@ -1759,6 +1823,25 @@ def get_value() -> UnshareDirectoryResultTypeDef:
 ```python title="Definition"
 class UnshareDirectoryResultTypeDef(TypedDict):
     SharedDirectoryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSettingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateSettingsResultTypeDef
+
+def get_value() -> UpdateSettingsResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSettingsResultTypeDef(TypedDict):
+    DirectoryId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2420,6 +2503,30 @@ class DescribeLDAPSSettingsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: LDAPSSettingInfoTypeDef](./type_defs.md#ldapssettinginfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSettingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeSettingsResultTypeDef
+
+def get_value() -> DescribeSettingsResultTypeDef:
+    return {
+        "DirectoryId": ...,
+        "SettingEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSettingsResultTypeDef(TypedDict):
+    DirectoryId: str,
+    SettingEntries: List[SettingEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SettingEntryTypeDef](./type_defs.md#settingentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSnapshotsResultTypeDef
 
 ```python title="Usage Example"
@@ -2632,6 +2739,25 @@ class ListSchemaExtensionsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: SchemaExtensionInfoTypeDef](./type_defs.md#schemaextensioninfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateSettingsRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "Settings": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSettingsRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    Settings: Sequence[SettingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
 ## ShareDirectoryRequestRequestTypeDef
 
 ```python title="Usage Example"

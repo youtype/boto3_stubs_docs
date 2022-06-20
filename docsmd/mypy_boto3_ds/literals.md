@@ -68,6 +68,7 @@ def get_value() -> ClientAuthenticationTypeType:
 ```python title="Definition"
 ClientAuthenticationTypeType = Literal[
     "SmartCard",
+    "SmartCardOrPassword",
 ]
 ```
 ## DescribeDirectoriesPaginatorName
@@ -138,6 +139,24 @@ def get_value() -> DescribeTrustsPaginatorName:
 ```python title="Definition"
 DescribeTrustsPaginatorName = Literal[
     "describe_trusts",
+]
+```
+## DirectoryConfigurationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import DirectoryConfigurationStatusType
+
+def get_value() -> DirectoryConfigurationStatusType:
+    return "Default"
+```
+
+```python title="Definition"
+DirectoryConfigurationStatusType = Literal[
+    "Default",
+    "Failed",
+    "Requested",
+    "Updated",
+    "Updating",
 ]
 ```
 ## DirectoryEditionType

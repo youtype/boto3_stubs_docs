@@ -37,6 +37,22 @@ class AddressTypeDef(TypedDict):
     Municipality: NotRequired[str],
 ```
 
+## AssetLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import AssetLocationTypeDef
+
+def get_value() -> AssetLocationTypeDef:
+    return {
+        "RackElevation": ...,
+    }
+```
+
+```python title="Definition"
+class AssetLocationTypeDef(TypedDict):
+    RackElevation: NotRequired[float],
+```
+
 ## ComputeAttributesTypeDef
 
 ```python title="Usage Example"
@@ -729,10 +745,12 @@ class AssetInfoTypeDef(TypedDict):
     RackId: NotRequired[str],
     AssetType: NotRequired[AssetTypeType],  # (1)
     ComputeAttributes: NotRequired[ComputeAttributesTypeDef],  # (2)
+    AssetLocation: NotRequired[AssetLocationTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
 2. See [:material-code-braces: ComputeAttributesTypeDef](./type_defs.md#computeattributestypedef) 
+3. See [:material-code-braces: AssetLocationTypeDef](./type_defs.md#assetlocationtypedef) 
 ## CatalogItemTypeDef
 
 ```python title="Usage Example"

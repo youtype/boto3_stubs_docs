@@ -49,6 +49,7 @@ except (
     client.DomainControllerLimitExceededException,
     client.EntityAlreadyExistsException,
     client.EntityDoesNotExistException,
+    client.IncompatibleSettingsException,
     client.InsufficientPermissionsException,
     client.InvalidCertificateException,
     client.InvalidClientAuthStatusException,
@@ -66,6 +67,7 @@ except (
     client.SnapshotLimitExceededException,
     client.TagLimitExceededException,
     client.UnsupportedOperationException,
+    client.UnsupportedSettingsException,
     client.UserDoesNotExistException,
 ) as e:
     print(e)
@@ -1061,6 +1063,39 @@ parent.describe_regions(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef) 
+
+### describe\_settings
+
+Retrieves information about the configurable settings for the specified
+directory.
+
+Type annotations and code completion for `#!python boto3.client("ds").describe_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_settings)
+
+```python title="Method definition"
+def describe_settings(
+    self,
+    *,
+    DirectoryId: str,
+    Status: DirectoryConfigurationStatusType = ...,  # (1)
+    NextToken: str = ...,
+) -> DescribeSettingsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: DirectoryConfigurationStatusType](./literals.md#directoryconfigurationstatustype) 
+2. See [:material-code-braces: DescribeSettingsResultTypeDef](./type_defs.md#describesettingsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSettingsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
+
+parent.describe_settings(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSettingsRequestRequestTypeDef](./type_defs.md#describesettingsrequestrequesttypedef) 
 
 ### describe\_shared\_directories
 
@@ -2067,6 +2102,38 @@ parent.update_radius(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateRadiusRequestRequestTypeDef](./type_defs.md#updateradiusrequestrequesttypedef) 
+
+### update\_settings
+
+Updates the configurable settings for the specified directory.
+
+Type annotations and code completion for `#!python boto3.client("ds").update_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_settings)
+
+```python title="Method definition"
+def update_settings(
+    self,
+    *,
+    DirectoryId: str,
+    Settings: Sequence[SettingTypeDef],  # (1)
+) -> UpdateSettingsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
+2. See [:material-code-braces: UpdateSettingsResultTypeDef](./type_defs.md#updatesettingsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSettingsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Settings": ...,
+}
+
+parent.update_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSettingsRequestRequestTypeDef](./type_defs.md#updatesettingsrequestrequesttypedef) 
 
 ### update\_trust
 
