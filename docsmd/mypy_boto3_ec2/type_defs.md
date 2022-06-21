@@ -31533,6 +31533,7 @@ class CreateCustomerGatewayRequestRequestTypeDef(TypedDict):
     CertificateArn: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
     DeviceName: NotRequired[str],
+    IpAddress: NotRequired[str],
     DryRun: NotRequired[bool],
 ```
 
@@ -36866,6 +36867,8 @@ class VpnConnectionOptionsSpecificationTypeDef(TypedDict):
     RemoteIpv4NetworkCidr: NotRequired[str],
     LocalIpv6NetworkCidr: NotRequired[str],
     RemoteIpv6NetworkCidr: NotRequired[str],
+    OutsideIpAddressType: NotRequired[str],
+    TransportTransitGatewayAttachmentId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype) 
@@ -37170,6 +37173,8 @@ class VpnConnectionOptionsTypeDef(TypedDict):
     RemoteIpv4NetworkCidr: NotRequired[str],
     LocalIpv6NetworkCidr: NotRequired[str],
     RemoteIpv6NetworkCidr: NotRequired[str],
+    OutsideIpAddressType: NotRequired[str],
+    TransportTransitGatewayAttachmentId: NotRequired[str],
     TunnelInsideIpVersion: NotRequired[TunnelInsideIpVersionType],  # (1)
     TunnelOptions: NotRequired[List[TunnelOptionTypeDef]],  # (2)
 ```

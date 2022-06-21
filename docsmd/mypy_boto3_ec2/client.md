@@ -1877,8 +1877,7 @@ parent.create_client_vpn_route(**kwargs)
 
 ### create\_customer\_gateway
 
-Provides information to Amazon Web Services about your VPN customer gateway
-device.
+Provides information to Amazon Web Services about your customer gateway device.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_customer_gateway` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_customer_gateway)
@@ -1893,6 +1892,7 @@ def create_customer_gateway(
     CertificateArn: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
     DeviceName: str = ...,
+    IpAddress: str = ...,
     DryRun: bool = ...,
 ) -> CreateCustomerGatewayResultTypeDef:  # (3)
     ...

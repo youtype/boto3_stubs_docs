@@ -7,6 +7,21 @@
     Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
     type annotations stubs module [mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
+## AdditionalResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import AdditionalResourceTypeType
+
+def get_value() -> AdditionalResourceTypeType:
+    return "HELPFUL_RESOURCE"
+```
+
+```python title="Definition"
+AdditionalResourceTypeType = Literal[
+    "HELPFUL_RESOURCE",
+    "IMPROVEMENT_PLAN",
+]
+```
 ## AnswerReasonType
 
 ```python title="Usage Example"

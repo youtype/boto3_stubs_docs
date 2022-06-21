@@ -231,7 +231,6 @@ def create_workload(
     WorkloadName: str,
     Description: str,
     Environment: WorkloadEnvironmentType,  # (1)
-    ReviewOwner: str,
     Lenses: Sequence[str],
     ClientRequestToken: str,
     AccountIds: Sequence[str] = ...,
@@ -239,6 +238,7 @@ def create_workload(
     NonAwsRegions: Sequence[str] = ...,
     PillarPriorities: Sequence[str] = ...,
     ArchitecturalDesign: str = ...,
+    ReviewOwner: str = ...,
     IndustryType: str = ...,
     Industry: str = ...,
     Notes: str = ...,
@@ -256,7 +256,6 @@ kwargs: CreateWorkloadInputRequestTypeDef = {  # (1)
     "WorkloadName": ...,
     "Description": ...,
     "Environment": ...,
-    "ReviewOwner": ...,
     "Lenses": ...,
     "ClientRequestToken": ...,
 }

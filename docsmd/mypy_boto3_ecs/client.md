@@ -1844,7 +1844,7 @@ parent.update_container_instances_state(**kwargs)
 
 ### update\_service
 
-.
+Modifies the parameters of a service.
 
 Type annotations and code completion for `#!python boto3.client("ecs").update_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)

@@ -36522,12 +36522,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wellarchitected.literals</span> <span class="kn">import</span> <span class="n">AnswerReasonType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wellarchitected.literals</span> <span class="kn">import</span> <span class="n">AdditionalResourceTypeType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AnswerReasonType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;ARCHITECTURE_CONSTRAINTS&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdditionalResourceTypeType</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;HELPFUL_RESOURCE&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#additionalresourcetypetype">AdditionalResourceTypeType</a></li>
 <li><a href="literals/#answerreasontype">AnswerReasonType</a></li>
 <li><a href="literals/#choicereasontype">ChoiceReasonType</a></li>
 <li><a href="literals/#choicestatustype">ChoiceStatusType</a></li>
@@ -36551,18 +36552,18 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wellarchitected.type_defs</span> <span class="kn">import</span> <span class="n">ChoiceAnswerSummaryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wellarchitected.type_defs</span> <span class="kn">import</span> <span class="n">ChoiceContentTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChoiceAnswerSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChoiceContentTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;ChoiceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;DisplayText&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#choicecontenttypedef">ChoiceContentTypeDef</a></li>
 <li><a href="type_defs/#choiceanswersummarytypedef">ChoiceAnswerSummaryTypeDef</a></li>
 <li><a href="type_defs/#choiceanswertypedef">ChoiceAnswerTypeDef</a></li>
 <li><a href="type_defs/#associatelensesinputrequesttypedef">AssociateLensesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#choicecontenttypedef">ChoiceContentTypeDef</a></li>
 <li><a href="type_defs/#choiceimprovementplantypedef">ChoiceImprovementPlanTypeDef</a></li>
 <li><a href="type_defs/#choiceupdatetypedef">ChoiceUpdateTypeDef</a></li>
 <li><a href="type_defs/#createlensshareinputrequesttypedef">CreateLensShareInputRequestTypeDef</a></li>
@@ -36617,7 +36618,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updateworkloadshareinputrequesttypedef">UpdateWorkloadShareInputRequestTypeDef</a></li>
 <li><a href="type_defs/#workloadsharetypedef">WorkloadShareTypeDef</a></li>
 <li><a href="type_defs/#upgradelensreviewinputrequesttypedef">UpgradeLensReviewInputRequestTypeDef</a></li>
-<li><a href="type_defs/#choicetypedef">ChoiceTypeDef</a></li>
+<li><a href="type_defs/#additionalresourcestypedef">AdditionalResourcesTypeDef</a></li>
 <li><a href="type_defs/#improvementsummarytypedef">ImprovementSummaryTypeDef</a></li>
 <li><a href="type_defs/#updateanswerinputrequesttypedef">UpdateAnswerInputRequestTypeDef</a></li>
 <li><a href="type_defs/#createlensshareoutputtypedef">CreateLensShareOutputTypeDef</a></li>
@@ -36646,8 +36647,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#pillardifferencetypedef">PillarDifferenceTypeDef</a></li>
 <li><a href="type_defs/#updateshareinvitationoutputtypedef">UpdateShareInvitationOutputTypeDef</a></li>
 <li><a href="type_defs/#updateworkloadshareoutputtypedef">UpdateWorkloadShareOutputTypeDef</a></li>
-<li><a href="type_defs/#answersummarytypedef">AnswerSummaryTypeDef</a></li>
-<li><a href="type_defs/#answertypedef">AnswerTypeDef</a></li>
+<li><a href="type_defs/#choicetypedef">ChoiceTypeDef</a></li>
 <li><a href="type_defs/#listlensreviewimprovementsoutputtypedef">ListLensReviewImprovementsOutputTypeDef</a></li>
 <li><a href="type_defs/#getmilestoneoutputtypedef">GetMilestoneOutputTypeDef</a></li>
 <li><a href="type_defs/#getlensreviewoutputtypedef">GetLensReviewOutputTypeDef</a></li>
@@ -36655,10 +36655,12 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listnotificationsoutputtypedef">ListNotificationsOutputTypeDef</a></li>
 <li><a href="type_defs/#listmilestonesoutputtypedef">ListMilestonesOutputTypeDef</a></li>
 <li><a href="type_defs/#versiondifferencestypedef">VersionDifferencesTypeDef</a></li>
+<li><a href="type_defs/#answersummarytypedef">AnswerSummaryTypeDef</a></li>
+<li><a href="type_defs/#answertypedef">AnswerTypeDef</a></li>
+<li><a href="type_defs/#getlensversiondifferenceoutputtypedef">GetLensVersionDifferenceOutputTypeDef</a></li>
 <li><a href="type_defs/#listanswersoutputtypedef">ListAnswersOutputTypeDef</a></li>
 <li><a href="type_defs/#getansweroutputtypedef">GetAnswerOutputTypeDef</a></li>
 <li><a href="type_defs/#updateansweroutputtypedef">UpdateAnswerOutputTypeDef</a></li>
-<li><a href="type_defs/#getlensversiondifferenceoutputtypedef">GetLensVersionDifferenceOutputTypeDef</a></li>
 </ul>
 
               
