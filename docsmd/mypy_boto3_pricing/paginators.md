@@ -117,7 +117,7 @@ Type annotations and code completion for `#!python GetProductsPaginator.paginate
 def paginate(
     self,
     *,
-    ServiceCode: str = ...,
+    ServiceCode: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     FormatVersion: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)

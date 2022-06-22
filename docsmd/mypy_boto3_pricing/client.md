@@ -179,7 +179,7 @@ Type annotations and code completion for `#!python boto3.client("pricing").get_p
 def get_products(
     self,
     *,
-    ServiceCode: str = ...,
+    ServiceCode: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     FormatVersion: str = ...,
     NextToken: str = ...,
