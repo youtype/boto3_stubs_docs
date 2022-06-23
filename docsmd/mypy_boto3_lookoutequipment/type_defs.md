@@ -318,6 +318,27 @@ class DescribeModelRequestRequestTypeDef(TypedDict):
     ModelName: str,
 ```
 
+## InferenceEventSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import InferenceEventSummaryTypeDef
+
+def get_value() -> InferenceEventSummaryTypeDef:
+    return {
+        "InferenceSchedulerArn": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceEventSummaryTypeDef(TypedDict):
+    InferenceSchedulerArn: NotRequired[str],
+    InferenceSchedulerName: NotRequired[str],
+    EventStartTime: NotRequired[datetime],
+    EventEndTime: NotRequired[datetime],
+    Diagnostics: NotRequired[str],
+    EventDurationInSeconds: NotRequired[int],
+```
+
 ## S3ObjectTypeDef
 
 ```python title="Usage Example"
@@ -533,6 +554,28 @@ class ListDatasetsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
     DatasetNameBeginsWith: NotRequired[str],
+```
+
+## ListInferenceEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceEventsRequestRequestTypeDef
+
+def get_value() -> ListInferenceEventsRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+        "IntervalStartTime": ...,
+        "IntervalEndTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceEventsRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+    IntervalStartTime: Union[datetime, str],
+    IntervalEndTime: Union[datetime, str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## ListInferenceExecutionsRequestRequestTypeDef
@@ -988,6 +1031,28 @@ class ListDatasetsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInferenceEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceEventsResponseTypeDef
+
+def get_value() -> ListInferenceEventsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "InferenceEventSummaries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceEventsResponseTypeDef(TypedDict):
+    NextToken: str,
+    InferenceEventSummaries: List[InferenceEventSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InferenceEventSummaryTypeDef](./type_defs.md#inferenceeventsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IngestedFilesSummaryTypeDef
 

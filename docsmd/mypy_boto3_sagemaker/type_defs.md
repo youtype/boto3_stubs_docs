@@ -1904,6 +1904,24 @@ class SourceIpConfigTypeDef(TypedDict):
     Cidrs: Sequence[str],
 ```
 
+## WorkforceVpcConfigRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import WorkforceVpcConfigRequestTypeDef
+
+def get_value() -> WorkforceVpcConfigRequestTypeDef:
+    return {
+        "VpcId": ...,
+    }
+```
+
+```python title="Definition"
+class WorkforceVpcConfigRequestTypeDef(TypedDict):
+    VpcId: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    Subnets: NotRequired[Sequence[str]],
+```
+
 ## NotificationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4852,22 +4870,6 @@ class LabelCountersForWorkteamTypeDef(TypedDict):
     HumanLabeled: NotRequired[int],
     PendingHuman: NotRequired[int],
     Total: NotRequired[int],
-```
-
-## LabelingJobResourceConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import LabelingJobResourceConfigTypeDef
-
-def get_value() -> LabelingJobResourceConfigTypeDef:
-    return {
-        "VolumeKmsKeyId": ...,
-    }
-```
-
-```python title="Definition"
-class LabelingJobResourceConfigTypeDef(TypedDict):
-    VolumeKmsKeyId: NotRequired[str],
 ```
 
 ## LabelingJobDataAttributesTypeDef
@@ -7991,6 +7993,27 @@ class UpdateTrialRequestRequestTypeDef(TypedDict):
     DisplayName: NotRequired[str],
 ```
 
+## WorkforceVpcConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import WorkforceVpcConfigResponseTypeDef
+
+def get_value() -> WorkforceVpcConfigResponseTypeDef:
+    return {
+        "VpcId": ...,
+        "SecurityGroupIds": ...,
+        "Subnets": ...,
+    }
+```
+
+```python title="Definition"
+class WorkforceVpcConfigResponseTypeDef(TypedDict):
+    VpcId: str,
+    SecurityGroupIds: List[str],
+    Subnets: List[str],
+    VpcEndpointId: NotRequired[str],
+```
+
 ## ActionSummaryTypeDef
 
 ```python title="Usage Example"
@@ -10277,6 +10300,24 @@ class AutoMLSecurityConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## LabelingJobResourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import LabelingJobResourceConfigTypeDef
+
+def get_value() -> LabelingJobResourceConfigTypeDef:
+    return {
+        "VolumeKmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class LabelingJobResourceConfigTypeDef(TypedDict):
+    VolumeKmsKeyId: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
 ## MonitoringNetworkConfigTypeDef
 
 ```python title="Usage Example"
@@ -11608,12 +11649,14 @@ class CreateWorkforceRequestRequestTypeDef(TypedDict):
     OidcConfig: NotRequired[OidcConfigTypeDef],  # (2)
     SourceIpConfig: NotRequired[SourceIpConfigTypeDef],  # (3)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    WorkforceVpcConfig: NotRequired[WorkforceVpcConfigRequestTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef) 
 2. See [:material-code-braces: OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef) 
 3. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: WorkforceVpcConfigRequestTypeDef](./type_defs.md#workforcevpcconfigrequesttypedef) 
 ## UpdateWorkforceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11630,10 +11673,12 @@ class UpdateWorkforceRequestRequestTypeDef(TypedDict):
     WorkforceName: str,
     SourceIpConfig: NotRequired[SourceIpConfigTypeDef],  # (1)
     OidcConfig: NotRequired[OidcConfigTypeDef],  # (2)
+    WorkforceVpcConfig: NotRequired[WorkforceVpcConfigRequestTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
 2. See [:material-code-braces: OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef) 
+3. See [:material-code-braces: WorkforceVpcConfigRequestTypeDef](./type_defs.md#workforcevpcconfigrequesttypedef) 
 ## KernelGatewayAppSettingsTypeDef
 
 ```python title="Usage Example"
@@ -13300,25 +13345,6 @@ class LabelingJobForWorkteamSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LabelCountersForWorkteamTypeDef](./type_defs.md#labelcountersforworkteamtypedef) 
-## LabelingJobAlgorithmsConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import LabelingJobAlgorithmsConfigTypeDef
-
-def get_value() -> LabelingJobAlgorithmsConfigTypeDef:
-    return {
-        "LabelingJobAlgorithmSpecificationArn": ...,
-    }
-```
-
-```python title="Definition"
-class LabelingJobAlgorithmsConfigTypeDef(TypedDict):
-    LabelingJobAlgorithmSpecificationArn: str,
-    InitialActiveLearningModelArn: NotRequired[str],
-    LabelingJobResourceConfig: NotRequired[LabelingJobResourceConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: LabelingJobResourceConfigTypeDef](./type_defs.md#labelingjobresourceconfigtypedef) 
 ## LabelingJobDataSourceTypeDef
 
 ```python title="Usage Example"
@@ -15456,33 +15482,6 @@ class OfflineStoreConfigTypeDef(TypedDict):
 
 1. See [:material-code-braces: S3StorageConfigTypeDef](./type_defs.md#s3storageconfigtypedef) 
 2. See [:material-code-braces: DataCatalogConfigTypeDef](./type_defs.md#datacatalogconfigtypedef) 
-## WorkforceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import WorkforceTypeDef
-
-def get_value() -> WorkforceTypeDef:
-    return {
-        "WorkforceName": ...,
-        "WorkforceArn": ...,
-    }
-```
-
-```python title="Definition"
-class WorkforceTypeDef(TypedDict):
-    WorkforceName: str,
-    WorkforceArn: str,
-    LastUpdatedDate: NotRequired[datetime],
-    SourceIpConfig: NotRequired[SourceIpConfigTypeDef],  # (1)
-    SubDomain: NotRequired[str],
-    CognitoConfig: NotRequired[CognitoConfigTypeDef],  # (2)
-    OidcConfig: NotRequired[OidcConfigForResponseTypeDef],  # (3)
-    CreateDate: NotRequired[datetime],
-```
-
-1. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
-2. See [:material-code-braces: CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef) 
-3. See [:material-code-braces: OidcConfigForResponseTypeDef](./type_defs.md#oidcconfigforresponsetypedef) 
 ## OnlineStoreConfigTypeDef
 
 ```python title="Usage Example"
@@ -15905,6 +15904,38 @@ class TransformDataSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TransformS3DataSourceTypeDef](./type_defs.md#transforms3datasourcetypedef) 
+## WorkforceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import WorkforceTypeDef
+
+def get_value() -> WorkforceTypeDef:
+    return {
+        "WorkforceName": ...,
+        "WorkforceArn": ...,
+    }
+```
+
+```python title="Definition"
+class WorkforceTypeDef(TypedDict):
+    WorkforceName: str,
+    WorkforceArn: str,
+    LastUpdatedDate: NotRequired[datetime],
+    SourceIpConfig: NotRequired[SourceIpConfigTypeDef],  # (1)
+    SubDomain: NotRequired[str],
+    CognitoConfig: NotRequired[CognitoConfigTypeDef],  # (2)
+    OidcConfig: NotRequired[OidcConfigForResponseTypeDef],  # (3)
+    CreateDate: NotRequired[datetime],
+    WorkforceVpcConfig: NotRequired[WorkforceVpcConfigResponseTypeDef],  # (4)
+    Status: NotRequired[WorkforceStatusType],  # (5)
+    FailureReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
+2. See [:material-code-braces: CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef) 
+3. See [:material-code-braces: OidcConfigForResponseTypeDef](./type_defs.md#oidcconfigforresponsetypedef) 
+4. See [:material-code-braces: WorkforceVpcConfigResponseTypeDef](./type_defs.md#workforcevpcconfigresponsetypedef) 
+5. See [:material-code-brackets: WorkforceStatusType](./literals.md#workforcestatustype) 
 ## ListActionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -16145,6 +16176,25 @@ class AutoMLJobConfigTypeDef(TypedDict):
 2. See [:material-code-braces: AutoMLSecurityConfigTypeDef](./type_defs.md#automlsecurityconfigtypedef) 
 3. See [:material-code-braces: AutoMLDataSplitConfigTypeDef](./type_defs.md#automldatasplitconfigtypedef) 
 4. See [:material-code-braces: AutoMLCandidateGenerationConfigTypeDef](./type_defs.md#automlcandidategenerationconfigtypedef) 
+## LabelingJobAlgorithmsConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import LabelingJobAlgorithmsConfigTypeDef
+
+def get_value() -> LabelingJobAlgorithmsConfigTypeDef:
+    return {
+        "LabelingJobAlgorithmSpecificationArn": ...,
+    }
+```
+
+```python title="Definition"
+class LabelingJobAlgorithmsConfigTypeDef(TypedDict):
+    LabelingJobAlgorithmSpecificationArn: str,
+    InitialActiveLearningModelArn: NotRequired[str],
+    LabelingJobResourceConfig: NotRequired[LabelingJobResourceConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LabelingJobResourceConfigTypeDef](./type_defs.md#labelingjobresourceconfigtypedef) 
 ## ModelMetricsTypeDef
 
 ```python title="Usage Example"
@@ -17090,68 +17140,6 @@ class MonitoringOutputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MonitoringOutputTypeDef](./type_defs.md#monitoringoutputtypedef) 
-## DescribeWorkforceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeWorkforceResponseTypeDef
-
-def get_value() -> DescribeWorkforceResponseTypeDef:
-    return {
-        "Workforce": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeWorkforceResponseTypeDef(TypedDict):
-    Workforce: WorkforceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListWorkforcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ListWorkforcesResponseTypeDef
-
-def get_value() -> ListWorkforcesResponseTypeDef:
-    return {
-        "Workforces": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkforcesResponseTypeDef(TypedDict):
-    Workforces: List[WorkforceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateWorkforceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import UpdateWorkforceResponseTypeDef
-
-def get_value() -> UpdateWorkforceResponseTypeDef:
-    return {
-        "Workforce": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateWorkforceResponseTypeDef(TypedDict):
-    Workforce: WorkforceTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFeatureGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -17621,6 +17609,68 @@ class TransformInputTypeDef(TypedDict):
 1. See [:material-code-braces: TransformDataSourceTypeDef](./type_defs.md#transformdatasourcetypedef) 
 2. See [:material-code-brackets: CompressionTypeType](./literals.md#compressiontypetype) 
 3. See [:material-code-brackets: SplitTypeType](./literals.md#splittypetype) 
+## DescribeWorkforceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeWorkforceResponseTypeDef
+
+def get_value() -> DescribeWorkforceResponseTypeDef:
+    return {
+        "Workforce": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkforceResponseTypeDef(TypedDict):
+    Workforce: WorkforceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkforcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListWorkforcesResponseTypeDef
+
+def get_value() -> ListWorkforcesResponseTypeDef:
+    return {
+        "Workforces": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkforcesResponseTypeDef(TypedDict):
+    Workforces: List[WorkforceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateWorkforceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateWorkforceResponseTypeDef
+
+def get_value() -> UpdateWorkforceResponseTypeDef:
+    return {
+        "Workforce": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateWorkforceResponseTypeDef(TypedDict):
+    Workforce: WorkforceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkforceTypeDef](./type_defs.md#workforcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListArtifactsResponseTypeDef
 
 ```python title="Usage Example"

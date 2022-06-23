@@ -140,6 +140,23 @@ class CreateEnvironmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NetworkFabricTypeType](./literals.md#networkfabrictypetype) 
+## DefaultRouteInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import DefaultRouteInputTypeDef
+
+def get_value() -> DefaultRouteInputTypeDef:
+    return {
+        "ActivationState": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultRouteInputTypeDef(TypedDict):
+    ActivationState: NotRequired[RouteActivationStateType],  # (1)
+```
+
+1. See [:material-code-brackets: RouteActivationStateType](./literals.md#routeactivationstatetype) 
 ## UriPathRouteInputTypeDef
 
 ```python title="Usage Example"
@@ -644,6 +661,29 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateRouteRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import UpdateRouteRequestRequestTypeDef
+
+def get_value() -> UpdateRouteRequestRequestTypeDef:
+    return {
+        "ActivationState": ...,
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "RouteIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRouteRequestRequestTypeDef(TypedDict):
+    ActivationState: RouteActivationStateType,  # (1)
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    RouteIdentifier: str,
+```
+
+1. See [:material-code-brackets: RouteActivationStateType](./literals.md#routeactivationstatetype) 
 ## CreateApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1161,6 +1201,36 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRouteResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import UpdateRouteResponseTypeDef
+
+def get_value() -> UpdateRouteResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "LastUpdatedTime": ...,
+        "RouteId": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRouteResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    LastUpdatedTime: datetime,
+    RouteId: str,
+    ServiceId: str,
+    State: RouteStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRouteRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1182,12 +1252,14 @@ class CreateRouteRequestRequestTypeDef(TypedDict):
     RouteType: RouteTypeType,  # (1)
     ServiceIdentifier: str,
     ClientToken: NotRequired[str],
+    DefaultRoute: NotRequired[DefaultRouteInputTypeDef],  # (2)
     Tags: NotRequired[Mapping[str, str]],
-    UriPathRoute: NotRequired[UriPathRouteInputTypeDef],  # (2)
+    UriPathRoute: NotRequired[UriPathRouteInputTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
-2. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
+2. See [:material-code-braces: DefaultRouteInputTypeDef](./type_defs.md#defaultrouteinputtypedef) 
+3. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
 ## CreateRouteResponseTypeDef
 
 ```python title="Usage Example"

@@ -2066,7 +2066,8 @@ def create_workforce(
     OidcConfig: OidcConfigTypeDef = ...,  # (2)
     SourceIpConfig: SourceIpConfigTypeDef = ...,  # (3)
     Tags: Sequence[TagTypeDef] = ...,  # (4)
-) -> CreateWorkforceResponseTypeDef:  # (5)
+    WorkforceVpcConfig: WorkforceVpcConfigRequestTypeDef = ...,  # (5)
+) -> CreateWorkforceResponseTypeDef:  # (6)
     ...
 ```
 
@@ -2074,7 +2075,8 @@ def create_workforce(
 2. See [:material-code-braces: OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef) 
 3. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef) 
+5. See [:material-code-braces: WorkforceVpcConfigRequestTypeDef](./type_defs.md#workforcevpcconfigrequesttypedef) 
+6. See [:material-code-braces: CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -8622,13 +8624,15 @@ def update_workforce(
     WorkforceName: str,
     SourceIpConfig: SourceIpConfigTypeDef = ...,  # (1)
     OidcConfig: OidcConfigTypeDef = ...,  # (2)
-) -> UpdateWorkforceResponseTypeDef:  # (3)
+    WorkforceVpcConfig: WorkforceVpcConfigRequestTypeDef = ...,  # (3)
+) -> UpdateWorkforceResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef) 
 2. See [:material-code-braces: OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef) 
-3. See [:material-code-braces: UpdateWorkforceResponseTypeDef](./type_defs.md#updateworkforceresponsetypedef) 
+3. See [:material-code-braces: WorkforceVpcConfigRequestTypeDef](./type_defs.md#workforcevpcconfigrequesttypedef) 
+4. See [:material-code-braces: UpdateWorkforceResponseTypeDef](./type_defs.md#updateworkforceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

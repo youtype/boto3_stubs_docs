@@ -4328,6 +4328,24 @@ VariantStatusType = Literal[
     "Updating",
 ]
 ```
+## WorkforceStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import WorkforceStatusType
+
+def get_value() -> WorkforceStatusType:
+    return "Active"
+```
+
+```python title="Definition"
+WorkforceStatusType = Literal[
+    "Active",
+    "Deleting",
+    "Failed",
+    "Initializing",
+    "Updating",
+]
+```
 ## SageMakerServiceName
 
 ```python title="Usage Example"

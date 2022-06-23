@@ -36903,6 +36903,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#userprofilestatustype">UserProfileStatusType</a></li>
 <li><a href="literals/#variantpropertytypetype">VariantPropertyTypeType</a></li>
 <li><a href="literals/#variantstatustype">VariantStatusType</a></li>
+<li><a href="literals/#workforcestatustype">WorkforceStatusType</a></li>
 <li><a href="literals/#sagemakerservicename">SageMakerServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37021,6 +37022,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#trialcomponentstatustypedef">TrialComponentStatusTypeDef</a></li>
 <li><a href="type_defs/#oidcconfigtypedef">OidcConfigTypeDef</a></li>
 <li><a href="type_defs/#sourceipconfigtypedef">SourceIpConfigTypeDef</a></li>
+<li><a href="type_defs/#workforcevpcconfigrequesttypedef">WorkforceVpcConfigRequestTypeDef</a></li>
 <li><a href="type_defs/#notificationconfigurationtypedef">NotificationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#customimagetypedef">CustomImageTypeDef</a></li>
 <li><a href="type_defs/#datacaptureconfigsummarytypedef">DataCaptureConfigSummaryTypeDef</a></li>
@@ -37185,7 +37187,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#integerparameterrangetypedef">IntegerParameterRangeTypeDef</a></li>
 <li><a href="type_defs/#kernelspectypedef">KernelSpecTypeDef</a></li>
 <li><a href="type_defs/#labelcountersforworkteamtypedef">LabelCountersForWorkteamTypeDef</a></li>
-<li><a href="type_defs/#labelingjobresourceconfigtypedef">LabelingJobResourceConfigTypeDef</a></li>
 <li><a href="type_defs/#labelingjobdataattributestypedef">LabelingJobDataAttributesTypeDef</a></li>
 <li><a href="type_defs/#labelingjobs3datasourcetypedef">LabelingJobS3DataSourceTypeDef</a></li>
 <li><a href="type_defs/#labelingjobsnsdatasourcetypedef">LabelingJobSnsDataSourceTypeDef</a></li>
@@ -37332,6 +37333,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updateexperimentrequestrequesttypedef">UpdateExperimentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateimagerequestrequesttypedef">UpdateImageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetrialrequestrequesttypedef">UpdateTrialRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#workforcevpcconfigresponsetypedef">WorkforceVpcConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#actionsummarytypedef">ActionSummaryTypeDef</a></li>
 <li><a href="type_defs/#addassociationresponsetypedef">AddAssociationResponseTypeDef</a></li>
 <li><a href="type_defs/#associatetrialcomponentresponsetypedef">AssociateTrialComponentResponseTypeDef</a></li>
@@ -37445,6 +37447,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#resolvedattributestypedef">ResolvedAttributesTypeDef</a></li>
 <li><a href="type_defs/#automljobsummarytypedef">AutoMLJobSummaryTypeDef</a></li>
 <li><a href="type_defs/#automlsecurityconfigtypedef">AutoMLSecurityConfigTypeDef</a></li>
+<li><a href="type_defs/#labelingjobresourceconfigtypedef">LabelingJobResourceConfigTypeDef</a></li>
 <li><a href="type_defs/#monitoringnetworkconfigtypedef">MonitoringNetworkConfigTypeDef</a></li>
 <li><a href="type_defs/#networkconfigtypedef">NetworkConfigTypeDef</a></li>
 <li><a href="type_defs/#biastypedef">BiasTypeDef</a></li>
@@ -37570,7 +37573,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#parameterrangestypedef">ParameterRangesTypeDef</a></li>
 <li><a href="type_defs/#kernelgatewayimageconfigtypedef">KernelGatewayImageConfigTypeDef</a></li>
 <li><a href="type_defs/#labelingjobforworkteamsummarytypedef">LabelingJobForWorkteamSummaryTypeDef</a></li>
-<li><a href="type_defs/#labelingjobalgorithmsconfigtypedef">LabelingJobAlgorithmsConfigTypeDef</a></li>
 <li><a href="type_defs/#labelingjobdatasourcetypedef">LabelingJobDataSourceTypeDef</a></li>
 <li><a href="type_defs/#listlineagegroupsresponsetypedef">ListLineageGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listactionsrequestlistactionspaginatetypedef">ListActionsRequestListActionsPaginateTypeDef</a></li>
@@ -37661,7 +37663,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#monitoringresourcestypedef">MonitoringResourcesTypeDef</a></li>
 <li><a href="type_defs/#monitoringoutputtypedef">MonitoringOutputTypeDef</a></li>
 <li><a href="type_defs/#offlinestoreconfigtypedef">OfflineStoreConfigTypeDef</a></li>
-<li><a href="type_defs/#workforcetypedef">WorkforceTypeDef</a></li>
 <li><a href="type_defs/#onlinestoreconfigtypedef">OnlineStoreConfigTypeDef</a></li>
 <li><a href="type_defs/#outputconfigtypedef">OutputConfigTypeDef</a></li>
 <li><a href="type_defs/#pendingproductionvariantsummarytypedef">PendingProductionVariantSummaryTypeDef</a></li>
@@ -37682,6 +37683,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#renderuitemplateresponsetypedef">RenderUiTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#sourcealgorithmspecificationtypedef">SourceAlgorithmSpecificationTypeDef</a></li>
 <li><a href="type_defs/#transformdatasourcetypedef">TransformDataSourceTypeDef</a></li>
+<li><a href="type_defs/#workforcetypedef">WorkforceTypeDef</a></li>
 <li><a href="type_defs/#listactionsresponsetypedef">ListActionsResponseTypeDef</a></li>
 <li><a href="type_defs/#artifactsummarytypedef">ArtifactSummaryTypeDef</a></li>
 <li><a href="type_defs/#createartifactrequestrequesttypedef">CreateArtifactRequestRequestTypeDef</a></li>
@@ -37692,6 +37694,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#automlchanneltypedef">AutoMLChannelTypeDef</a></li>
 <li><a href="type_defs/#listautomljobsresponsetypedef">ListAutoMLJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#automljobconfigtypedef">AutoMLJobConfigTypeDef</a></li>
+<li><a href="type_defs/#labelingjobalgorithmsconfigtypedef">LabelingJobAlgorithmsConfigTypeDef</a></li>
 <li><a href="type_defs/#modelmetricstypedef">ModelMetricsTypeDef</a></li>
 <li><a href="type_defs/#pipelineexecutionstepmetadatatypedef">PipelineExecutionStepMetadataTypeDef</a></li>
 <li><a href="type_defs/#automlcandidatetypedef">AutoMLCandidateTypeDef</a></li>
@@ -37732,9 +37735,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listmodelmetadatarequestlistmodelmetadatapaginatetypedef">ListModelMetadataRequestListModelMetadataPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmodelmetadatarequestrequesttypedef">ListModelMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#monitoringoutputconfigtypedef">MonitoringOutputConfigTypeDef</a></li>
-<li><a href="type_defs/#describeworkforceresponsetypedef">DescribeWorkforceResponseTypeDef</a></li>
-<li><a href="type_defs/#listworkforcesresponsetypedef">ListWorkforcesResponseTypeDef</a></li>
-<li><a href="type_defs/#updateworkforceresponsetypedef">UpdateWorkforceResponseTypeDef</a></li>
 <li><a href="type_defs/#createfeaturegrouprequestrequesttypedef">CreateFeatureGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describefeaturegroupresponsetypedef">DescribeFeatureGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#featuregrouptypedef">FeatureGroupTypeDef</a></li>
@@ -37750,6 +37750,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#humanloopconfigtypedef">HumanLoopConfigTypeDef</a></li>
 <li><a href="type_defs/#humantaskconfigtypedef">HumanTaskConfigTypeDef</a></li>
 <li><a href="type_defs/#transforminputtypedef">TransformInputTypeDef</a></li>
+<li><a href="type_defs/#describeworkforceresponsetypedef">DescribeWorkforceResponseTypeDef</a></li>
+<li><a href="type_defs/#listworkforcesresponsetypedef">ListWorkforcesResponseTypeDef</a></li>
+<li><a href="type_defs/#updateworkforceresponsetypedef">UpdateWorkforceResponseTypeDef</a></li>
 <li><a href="type_defs/#listartifactsresponsetypedef">ListArtifactsResponseTypeDef</a></li>
 <li><a href="type_defs/#createendpointconfiginputrequesttypedef">CreateEndpointConfigInputRequestTypeDef</a></li>
 <li><a href="type_defs/#describeendpointconfigoutputtypedef">DescribeEndpointConfigOutputTypeDef</a></li>

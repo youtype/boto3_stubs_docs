@@ -36547,6 +36547,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <ul>
 <li><a href="paginators/#describejoblogitemspaginator">DescribeJobLogItemsPaginator</a></li>
 <li><a href="paginators/#describejobspaginator">DescribeJobsPaginator</a></li>
+<li><a href="paginators/#describelaunchconfigurationtemplatespaginator">DescribeLaunchConfigurationTemplatesPaginator</a></li>
 <li><a href="paginators/#describereplicationconfigurationtemplatespaginator">DescribeReplicationConfigurationTemplatesPaginator</a></li>
 <li><a href="paginators/#describesourceserverspaginator">DescribeSourceServersPaginator</a></li>
 <li><a href="paginators/#describevcenterclientspaginator">DescribeVcenterClientsPaginator</a></li>
@@ -36567,6 +36568,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#datareplicationstatetype">DataReplicationStateType</a></li>
 <li><a href="literals/#describejoblogitemspaginatorname">DescribeJobLogItemsPaginatorName</a></li>
 <li><a href="literals/#describejobspaginatorname">DescribeJobsPaginatorName</a></li>
+<li><a href="literals/#describelaunchconfigurationtemplatespaginatorname">DescribeLaunchConfigurationTemplatesPaginatorName</a></li>
 <li><a href="literals/#describereplicationconfigurationtemplatespaginatorname">DescribeReplicationConfigurationTemplatesPaginatorName</a></li>
 <li><a href="literals/#describesourceserverspaginatorname">DescribeSourceServersPaginatorName</a></li>
 <li><a href="literals/#describevcenterclientspaginatorname">DescribeVcenterClientsPaginatorName</a></li>
@@ -36578,11 +36580,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#launchdispositiontype">LaunchDispositionType</a></li>
 <li><a href="literals/#launchstatustype">LaunchStatusType</a></li>
 <li><a href="literals/#lifecyclestatetype">LifeCycleStateType</a></li>
+<li><a href="literals/#postlaunchactionexecutionstatustype">PostLaunchActionExecutionStatusType</a></li>
+<li><a href="literals/#postlaunchactionsdeploymenttypetype">PostLaunchActionsDeploymentTypeType</a></li>
 <li><a href="literals/#replicationconfigurationdataplaneroutingtype">ReplicationConfigurationDataPlaneRoutingType</a></li>
 <li><a href="literals/#replicationconfigurationdefaultlargestagingdisktypetype">ReplicationConfigurationDefaultLargeStagingDiskTypeType</a></li>
 <li><a href="literals/#replicationconfigurationebsencryptiontype">ReplicationConfigurationEbsEncryptionType</a></li>
 <li><a href="literals/#replicationconfigurationreplicateddiskstagingdisktypetype">ReplicationConfigurationReplicatedDiskStagingDiskTypeType</a></li>
 <li><a href="literals/#replicationtypetype">ReplicationTypeType</a></li>
+<li><a href="literals/#ssmdocumenttypetype">SsmDocumentTypeType</a></li>
+<li><a href="literals/#ssmparameterstoreparametertypetype">SsmParameterStoreParameterTypeType</a></li>
 <li><a href="literals/#targetinstancetyperightsizingmethodtype">TargetInstanceTypeRightSizingMethodType</a></li>
 <li><a href="literals/#mgnservicename">mgnServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -36607,6 +36613,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#datareplicationinforeplicateddisktypedef">DataReplicationInfoReplicatedDiskTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinitiationsteptypedef">DataReplicationInitiationStepTypeDef</a></li>
 <li><a href="type_defs/#deletejobrequestrequesttypedef">DeleteJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelaunchconfigurationtemplaterequestrequesttypedef">DeleteLaunchConfigurationTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletereplicationconfigurationtemplaterequestrequesttypedef">DeleteReplicationConfigurationTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesourceserverrequestrequesttypedef">DeleteSourceServerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevcenterclientrequestrequesttypedef">DeleteVcenterClientRequestRequestTypeDef</a></li>
@@ -36614,6 +36621,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describejoblogitemsrequestrequesttypedef">DescribeJobLogItemsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#describejobsrequestfilterstypedef">DescribeJobsRequestFiltersTypeDef</a></li>
+<li><a href="type_defs/#describelaunchconfigurationtemplatesrequestrequesttypedef">DescribeLaunchConfigurationTemplatesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describereplicationconfigurationtemplatesrequestrequesttypedef">DescribeReplicationConfigurationTemplatesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationtemplatetypedef">ReplicationConfigurationTemplateTypeDef</a></li>
 <li><a href="type_defs/#describesourceserversrequestfilterstypedef">DescribeSourceServersRequestFiltersTypeDef</a></li>
@@ -36626,7 +36634,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getreplicationconfigurationrequestrequesttypedef">GetReplicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#identificationhintstypedef">IdentificationHintsTypeDef</a></li>
 <li><a href="type_defs/#joblogeventdatatypedef">JobLogEventDataTypeDef</a></li>
-<li><a href="type_defs/#participatingservertypedef">ParticipatingServerTypeDef</a></li>
 <li><a href="type_defs/#licensingtypedef">LicensingTypeDef</a></li>
 <li><a href="type_defs/#launchedinstancetypedef">LaunchedInstanceTypeDef</a></li>
 <li><a href="type_defs/#lifecyclelastcutoverfinalizedtypedef">LifeCycleLastCutoverFinalizedTypeDef</a></li>
@@ -36641,6 +36648,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#ostypedef">OSTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationreplicateddisktypedef">ReplicationConfigurationReplicatedDiskTypeDef</a></li>
 <li><a href="type_defs/#retrydatareplicationrequestrequesttypedef">RetryDataReplicationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ssmparameterstoreparametertypedef">SsmParameterStoreParameterTypeDef</a></li>
 <li><a href="type_defs/#startcutoverrequestrequesttypedef">StartCutoverRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startreplicationrequestrequesttypedef">StartReplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#starttestrequestrequesttypedef">StartTestRequestRequestTypeDef</a></li>
@@ -36652,6 +36660,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#changeserverlifecyclestaterequestrequesttypedef">ChangeServerLifeCycleStateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinitiationtypedef">DataReplicationInitiationTypeDef</a></li>
 <li><a href="type_defs/#describejoblogitemsrequestdescribejoblogitemspaginatetypedef">DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describelaunchconfigurationtemplatesrequestdescribelaunchconfigurationtemplatespaginatetypedef">DescribeLaunchConfigurationTemplatesRequestDescribeLaunchConfigurationTemplatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describereplicationconfigurationtemplatesrequestdescribereplicationconfigurationtemplatespaginatetypedef">DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describevcenterclientsrequestdescribevcenterclientspaginatetypedef">DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
@@ -36664,24 +36673,34 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describesourceserversrequestrequesttypedef">DescribeSourceServersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describevcenterclientsresponsetypedef">DescribeVcenterClientsResponseTypeDef</a></li>
 <li><a href="type_defs/#joblogtypedef">JobLogTypeDef</a></li>
-<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
-<li><a href="type_defs/#launchconfigurationtypedef">LaunchConfigurationTypeDef</a></li>
-<li><a href="type_defs/#updatelaunchconfigurationrequestrequesttypedef">UpdateLaunchConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#lifecyclelastcutovertypedef">LifeCycleLastCutoverTypeDef</a></li>
 <li><a href="type_defs/#lifecyclelasttesttypedef">LifeCycleLastTestTypeDef</a></li>
 <li><a href="type_defs/#sourcepropertiestypedef">SourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#replicationconfigurationtypedef">ReplicationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updatereplicationconfigurationrequestrequesttypedef">UpdateReplicationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ssmdocumenttypedef">SsmDocumentTypeDef</a></li>
 <li><a href="type_defs/#datareplicationinfotypedef">DataReplicationInfoTypeDef</a></li>
 <li><a href="type_defs/#describejoblogitemsresponsetypedef">DescribeJobLogItemsResponseTypeDef</a></li>
+<li><a href="type_defs/#lifecycletypedef">LifeCycleTypeDef</a></li>
+<li><a href="type_defs/#jobpostlaunchactionslaunchstatustypedef">JobPostLaunchActionsLaunchStatusTypeDef</a></li>
+<li><a href="type_defs/#postlaunchactionstypedef">PostLaunchActionsTypeDef</a></li>
+<li><a href="type_defs/#sourceserverresponsemetadatatypedef">SourceServerResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#sourceservertypedef">SourceServerTypeDef</a></li>
+<li><a href="type_defs/#postlaunchactionsstatustypedef">PostLaunchActionsStatusTypeDef</a></li>
+<li><a href="type_defs/#createlaunchconfigurationtemplaterequestrequesttypedef">CreateLaunchConfigurationTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#launchconfigurationtemplateresponsemetadatatypedef">LaunchConfigurationTemplateResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#launchconfigurationtemplatetypedef">LaunchConfigurationTemplateTypeDef</a></li>
+<li><a href="type_defs/#launchconfigurationtypedef">LaunchConfigurationTypeDef</a></li>
+<li><a href="type_defs/#updatelaunchconfigurationrequestrequesttypedef">UpdateLaunchConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatelaunchconfigurationtemplaterequestrequesttypedef">UpdateLaunchConfigurationTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describesourceserversresponsetypedef">DescribeSourceServersResponseTypeDef</a></li>
+<li><a href="type_defs/#participatingservertypedef">ParticipatingServerTypeDef</a></li>
+<li><a href="type_defs/#describelaunchconfigurationtemplatesresponsetypedef">DescribeLaunchConfigurationTemplatesResponseTypeDef</a></li>
+<li><a href="type_defs/#jobtypedef">JobTypeDef</a></li>
 <li><a href="type_defs/#describejobsresponsetypedef">DescribeJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#startcutoverresponsetypedef">StartCutoverResponseTypeDef</a></li>
 <li><a href="type_defs/#starttestresponsetypedef">StartTestResponseTypeDef</a></li>
 <li><a href="type_defs/#terminatetargetinstancesresponsetypedef">TerminateTargetInstancesResponseTypeDef</a></li>
-<li><a href="type_defs/#lifecycletypedef">LifeCycleTypeDef</a></li>
-<li><a href="type_defs/#sourceserverresponsemetadatatypedef">SourceServerResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#sourceservertypedef">SourceServerTypeDef</a></li>
-<li><a href="type_defs/#describesourceserversresponsetypedef">DescribeSourceServersResponseTypeDef</a></li>
 </ul>
 
               

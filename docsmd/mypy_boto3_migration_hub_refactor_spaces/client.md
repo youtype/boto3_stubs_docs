@@ -178,15 +178,17 @@ def create_route(
     RouteType: RouteTypeType,  # (1)
     ServiceIdentifier: str,
     ClientToken: str = ...,
+    DefaultRoute: DefaultRouteInputTypeDef = ...,  # (2)
     Tags: Mapping[str, str] = ...,
-    UriPathRoute: UriPathRouteInputTypeDef = ...,  # (2)
-) -> CreateRouteResponseTypeDef:  # (3)
+    UriPathRoute: UriPathRouteInputTypeDef = ...,  # (3)
+) -> CreateRouteResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
-2. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
-3. See [:material-code-braces: CreateRouteResponseTypeDef](./type_defs.md#createrouteresponsetypedef) 
+2. See [:material-code-braces: DefaultRouteInputTypeDef](./type_defs.md#defaultrouteinputtypedef) 
+3. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
+4. See [:material-code-braces: CreateRouteResponseTypeDef](./type_defs.md#createrouteresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -856,6 +858,42 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_route
+
+Updates an Amazon Web Services Migration Hub Refactor Spaces route.
+
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").update_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Client.update_route)
+
+```python title="Method definition"
+def update_route(
+    self,
+    *,
+    ActivationState: RouteActivationStateType,  # (1)
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    RouteIdentifier: str,
+) -> UpdateRouteResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: RouteActivationStateType](./literals.md#routeactivationstatetype) 
+2. See [:material-code-braces: UpdateRouteResponseTypeDef](./type_defs.md#updaterouteresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRouteRequestRequestTypeDef = {  # (1)
+    "ActivationState": ...,
+    "ApplicationIdentifier": ...,
+    "EnvironmentIdentifier": ...,
+    "RouteIdentifier": ...,
+}
+
+parent.update_route(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRouteRequestRequestTypeDef](./type_defs.md#updaterouterequestrequesttypedef) 
 
 
 

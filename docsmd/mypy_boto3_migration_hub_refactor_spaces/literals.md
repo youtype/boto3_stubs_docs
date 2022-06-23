@@ -244,6 +244,7 @@ def get_value() -> RouteActivationStateType:
 ```python title="Definition"
 RouteActivationStateType = Literal[
     "ACTIVE",
+    "INACTIVE",
 ]
 ```
 ## RouteStateType
