@@ -543,8 +543,6 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-redshift-data](./mypy_boto3_redshift_data/README.md) for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService) service
 
-- [mypy-boto3-redshiftserverless](./mypy_boto3_redshiftserverless/README.md) for [RedshiftServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshiftserverless.html#RedshiftServerless) service
-
 - [mypy-boto3-rekognition](./mypy_boto3_rekognition/README.md) for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition) service
 
 - [mypy-boto3-resiliencehub](./mypy_boto3_resiliencehub/README.md) for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub) service

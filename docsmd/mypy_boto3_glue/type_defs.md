@@ -1624,6 +1624,32 @@ class CrawlTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CrawlStateType](./literals.md#crawlstatetype) 
+## CrawlerHistoryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CrawlerHistoryTypeDef
+
+def get_value() -> CrawlerHistoryTypeDef:
+    return {
+        "CrawlId": ...,
+    }
+```
+
+```python title="Definition"
+class CrawlerHistoryTypeDef(TypedDict):
+    CrawlId: NotRequired[str],
+    State: NotRequired[CrawlerHistoryStateType],  # (1)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Summary: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LogGroup: NotRequired[str],
+    LogStream: NotRequired[str],
+    MessagePrefix: NotRequired[str],
+    DPUHour: NotRequired[float],
+```
+
+1. See [:material-code-brackets: CrawlerHistoryStateType](./literals.md#crawlerhistorystatetype) 
 ## CrawlerMetricsTypeDef
 
 ```python title="Usage Example"
@@ -1850,6 +1876,26 @@ class SchemaChangePolicyTypeDef(TypedDict):
 
 1. See [:material-code-brackets: UpdateBehaviorType](./literals.md#updatebehaviortype) 
 2. See [:material-code-brackets: DeleteBehaviorType](./literals.md#deletebehaviortype) 
+## CrawlsFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CrawlsFilterTypeDef
+
+def get_value() -> CrawlsFilterTypeDef:
+    return {
+        "FieldName": ...,
+    }
+```
+
+```python title="Definition"
+class CrawlsFilterTypeDef(TypedDict):
+    FieldName: NotRequired[FieldNameType],  # (1)
+    FilterOperator: NotRequired[FilterOperatorType],  # (2)
+    FieldValue: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FieldNameType](./literals.md#fieldnametype) 
+2. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
 ## CreateBlueprintRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7335,6 +7381,28 @@ class CrawlerNodeDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CrawlTypeDef](./type_defs.md#crawltypedef) 
+## ListCrawlsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListCrawlsResponseTypeDef
+
+def get_value() -> ListCrawlsResponseTypeDef:
+    return {
+        "Crawls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCrawlsResponseTypeDef(TypedDict):
+    Crawls: List[CrawlerHistoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CrawlerHistoryTypeDef](./type_defs.md#crawlerhistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCrawlerMetricsResponseTypeDef
 
 ```python title="Usage Example"
@@ -7384,6 +7452,26 @@ class CrawlerTargetsTypeDef(TypedDict):
 4. See [:material-code-braces: DynamoDBTargetTypeDef](./type_defs.md#dynamodbtargettypedef) 
 5. See [:material-code-braces: CatalogTargetTypeDef](./type_defs.md#catalogtargettypedef) 
 6. See [:material-code-braces: DeltaTargetTypeDef](./type_defs.md#deltatargettypedef) 
+## ListCrawlsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListCrawlsRequestRequestTypeDef
+
+def get_value() -> ListCrawlsRequestRequestTypeDef:
+    return {
+        "CrawlerName": ...,
+    }
+```
+
+```python title="Definition"
+class ListCrawlsRequestRequestTypeDef(TypedDict):
+    CrawlerName: str,
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[CrawlsFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: CrawlsFilterTypeDef](./type_defs.md#crawlsfiltertypedef) 
 ## CreateClassifierRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -4235,6 +4235,39 @@ parent.list_crawlers(**kwargs)
 
 1. See [:material-code-braces: ListCrawlersRequestRequestTypeDef](./type_defs.md#listcrawlersrequestrequesttypedef) 
 
+### list\_crawls
+
+Returns all the crawls of a specified crawler.
+
+Type annotations and code completion for `#!python boto3.client("glue").list_crawls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawls)
+
+```python title="Method definition"
+def list_crawls(
+    self,
+    *,
+    CrawlerName: str,
+    MaxResults: int = ...,
+    Filters: Sequence[CrawlsFilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+) -> ListCrawlsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CrawlsFilterTypeDef](./type_defs.md#crawlsfiltertypedef) 
+2. See [:material-code-braces: ListCrawlsResponseTypeDef](./type_defs.md#listcrawlsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCrawlsRequestRequestTypeDef = {  # (1)
+    "CrawlerName": ...,
+}
+
+parent.list_crawls(**kwargs)
+```
+
+1. See [:material-code-braces: ListCrawlsRequestRequestTypeDef](./type_defs.md#listcrawlsrequestrequesttypedef) 
+
 ### list\_custom\_entity\_types
 
 Lists all the custom patterns that have been created.

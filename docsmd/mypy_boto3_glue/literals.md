@@ -272,6 +272,23 @@ CrawlStateType = Literal[
     "SUCCEEDED",
 ]
 ```
+## CrawlerHistoryStateType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import CrawlerHistoryStateType
+
+def get_value() -> CrawlerHistoryStateType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+CrawlerHistoryStateType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "RUNNING",
+    "STOPPED",
+]
+```
 ## CrawlerLineageSettingsType
 
 ```python title="Usage Example"
@@ -382,6 +399,24 @@ ExistConditionType = Literal[
     "NOT_EXIST",
 ]
 ```
+## FieldNameType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import FieldNameType
+
+def get_value() -> FieldNameType:
+    return "CRAWL_ID"
+```
+
+```python title="Definition"
+FieldNameType = Literal[
+    "CRAWL_ID",
+    "DPU_HOUR",
+    "END_TIME",
+    "START_TIME",
+    "STATE",
+]
+```
 ## FilterLogicalOperatorType
 
 ```python title="Usage Example"
@@ -415,6 +450,25 @@ FilterOperationType = Literal[
     "LT",
     "LTE",
     "REGEX",
+]
+```
+## FilterOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import FilterOperatorType
+
+def get_value() -> FilterOperatorType:
+    return "EQ"
+```
+
+```python title="Definition"
+FilterOperatorType = Literal[
+    "EQ",
+    "GE",
+    "GT",
+    "LE",
+    "LT",
+    "NE",
 ]
 ```
 ## FilterValueTypeType
@@ -1782,7 +1836,6 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
-    "redshiftserverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",
