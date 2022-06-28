@@ -6154,6 +6154,21 @@ SpotInstanceTypeType = Literal[
     "persistent",
 ]
 ```
+## SpreadLevelType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import SpreadLevelType
+
+def get_value() -> SpreadLevelType:
+    return "host"
+```
+
+```python title="Definition"
+SpreadLevelType = Literal[
+    "host",
+    "rack",
+]
+```
 ## StateType
 
 ```python title="Usage Example"

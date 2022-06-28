@@ -397,6 +397,22 @@ class DescribeLocationFsxLustreRequestRequestTypeDef(TypedDict):
     LocationArn: str,
 ```
 
+## DescribeLocationFsxOntapRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxOntapRequestRequestTypeDef
+
+def get_value() -> DescribeLocationFsxOntapRequestRequestTypeDef:
+    return {
+        "LocationArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLocationFsxOntapRequestRequestTypeDef(TypedDict):
+    LocationArn: str,
+```
+
 ## DescribeLocationFsxOpenZfsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -963,6 +979,25 @@ def get_value() -> CreateLocationFsxLustreResponseTypeDef:
 
 ```python title="Definition"
 class CreateLocationFsxLustreResponseTypeDef(TypedDict):
+    LocationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLocationFsxOntapResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import CreateLocationFsxOntapResponseTypeDef
+
+def get_value() -> CreateLocationFsxOntapResponseTypeDef:
+    return {
+        "LocationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationFsxOntapResponseTypeDef(TypedDict):
     LocationArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -1646,6 +1681,27 @@ class DescribeLocationSmbResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FsxProtocolSmbTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import FsxProtocolSmbTypeDef
+
+def get_value() -> FsxProtocolSmbTypeDef:
+    return {
+        "Password": ...,
+        "User": ...,
+    }
+```
+
+```python title="Definition"
+class FsxProtocolSmbTypeDef(TypedDict):
+    Password: str,
+    User: str,
+    Domain: NotRequired[str],
+    MountOptions: NotRequired[SmbMountOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef) 
 ## UpdateLocationSmbRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2109,9 +2165,35 @@ def get_value() -> FsxProtocolTypeDef:
 ```python title="Definition"
 class FsxProtocolTypeDef(TypedDict):
     NFS: NotRequired[FsxProtocolNfsTypeDef],  # (1)
+    SMB: NotRequired[FsxProtocolSmbTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: FsxProtocolNfsTypeDef](./type_defs.md#fsxprotocolnfstypedef) 
+2. See [:material-code-braces: FsxProtocolSmbTypeDef](./type_defs.md#fsxprotocolsmbtypedef) 
+## CreateLocationFsxOntapRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import CreateLocationFsxOntapRequestRequestTypeDef
+
+def get_value() -> CreateLocationFsxOntapRequestRequestTypeDef:
+    return {
+        "Protocol": ...,
+        "SecurityGroupArns": ...,
+        "StorageVirtualMachineArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationFsxOntapRequestRequestTypeDef(TypedDict):
+    Protocol: FsxProtocolTypeDef,  # (1)
+    SecurityGroupArns: Sequence[str],
+    StorageVirtualMachineArn: str,
+    Subdirectory: NotRequired[str],
+    Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
 ## CreateLocationFsxOpenZfsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2136,6 +2218,38 @@ class CreateLocationFsxOpenZfsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
 2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+## DescribeLocationFsxOntapResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxOntapResponseTypeDef
+
+def get_value() -> DescribeLocationFsxOntapResponseTypeDef:
+    return {
+        "CreationTime": ...,
+        "LocationArn": ...,
+        "LocationUri": ...,
+        "Protocol": ...,
+        "SecurityGroupArns": ...,
+        "StorageVirtualMachineArn": ...,
+        "FsxFilesystemArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLocationFsxOntapResponseTypeDef(TypedDict):
+    CreationTime: datetime,
+    LocationArn: str,
+    LocationUri: str,
+    Protocol: FsxProtocolTypeDef,  # (1)
+    SecurityGroupArns: List[str],
+    StorageVirtualMachineArn: str,
+    FsxFilesystemArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLocationFsxOpenZfsResponseTypeDef
 
 ```python title="Usage Example"

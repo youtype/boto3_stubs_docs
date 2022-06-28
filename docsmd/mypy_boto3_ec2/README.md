@@ -739,6 +739,7 @@ def get_value() -> AcceleratorManufacturerType:
 - [SpotInstanceRequestFulfilledWaiterName](./literals.md#spotinstancerequestfulfilledwaitername)
 - [SpotInstanceStateType](./literals.md#spotinstancestatetype)
 - [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
+- [SpreadLevelType](./literals.md#spreadleveltype)
 - [StateType](./literals.md#statetype)
 - [StaticSourcesSupportValueType](./literals.md#staticsourcessupportvaluetype)
 - [StatusNameType](./literals.md#statusnametype)

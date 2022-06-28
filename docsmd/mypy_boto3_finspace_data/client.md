@@ -570,6 +570,37 @@ parent.get_dataset(**kwargs)
 
 1. See [:material-code-braces: GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef) 
 
+### get\_external\_data\_view\_access\_details
+
+Returns the credentials to access the external Dataview from an S3 location.
+
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_external_data_view_access_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_external_data_view_access_details)
+
+```python title="Method definition"
+def get_external_data_view_access_details(
+    self,
+    *,
+    dataViewId: str,
+    datasetId: str,
+) -> GetExternalDataViewAccessDetailsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetExternalDataViewAccessDetailsResponseTypeDef](./type_defs.md#getexternaldataviewaccessdetailsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetExternalDataViewAccessDetailsRequestRequestTypeDef = {  # (1)
+    "dataViewId": ...,
+    "datasetId": ...,
+}
+
+parent.get_external_data_view_access_details(**kwargs)
+```
+
+1. See [:material-code-braces: GetExternalDataViewAccessDetailsRequestRequestTypeDef](./type_defs.md#getexternaldataviewaccessdetailsrequestrequesttypedef) 
+
 ### get\_permission\_group
 
 Retrieves the details of a specific permission group.

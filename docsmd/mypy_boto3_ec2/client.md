@@ -2950,13 +2950,15 @@ def create_placement_group(
     Strategy: PlacementStrategyType = ...,  # (1)
     PartitionCount: int = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
-) -> CreatePlacementGroupResultTypeDef:  # (3)
+    SpreadLevel: SpreadLevelType = ...,  # (3)
+) -> CreatePlacementGroupResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: PlacementStrategyType](./literals.md#placementstrategytype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
-3. See [:material-code-braces: CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef) 
+3. See [:material-code-brackets: SpreadLevelType](./literals.md#spreadleveltype) 
+4. See [:material-code-braces: CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

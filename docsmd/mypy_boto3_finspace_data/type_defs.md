@@ -50,6 +50,25 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## AwsCredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_finspace_data.type_defs import AwsCredentialsTypeDef
+
+def get_value() -> AwsCredentialsTypeDef:
+    return {
+        "accessKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsCredentialsTypeDef(TypedDict):
+    accessKeyId: NotRequired[str],
+    secretAccessKey: NotRequired[str],
+    sessionToken: NotRequired[str],
+    expiration: NotRequired[int],
+```
+
 ## ChangesetErrorInfoTypeDef
 
 ```python title="Usage Example"
@@ -367,6 +386,42 @@ def get_value() -> GetDatasetRequestRequestTypeDef:
 ```python title="Definition"
 class GetDatasetRequestRequestTypeDef(TypedDict):
     datasetId: str,
+```
+
+## GetExternalDataViewAccessDetailsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_finspace_data.type_defs import GetExternalDataViewAccessDetailsRequestRequestTypeDef
+
+def get_value() -> GetExternalDataViewAccessDetailsRequestRequestTypeDef:
+    return {
+        "dataViewId": ...,
+        "datasetId": ...,
+    }
+```
+
+```python title="Definition"
+class GetExternalDataViewAccessDetailsRequestRequestTypeDef(TypedDict):
+    dataViewId: str,
+    datasetId: str,
+```
+
+## S3LocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_finspace_data.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
+```
+
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: str,
+    key: str,
 ```
 
 ## GetPermissionGroupRequestRequestTypeDef
@@ -1377,6 +1432,29 @@ class GetDataViewResponseTypeDef(TypedDict):
 2. See [:material-code-braces: DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef) 
 3. See [:material-code-brackets: DataViewStatusType](./literals.md#dataviewstatustype) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetExternalDataViewAccessDetailsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_finspace_data.type_defs import GetExternalDataViewAccessDetailsResponseTypeDef
+
+def get_value() -> GetExternalDataViewAccessDetailsResponseTypeDef:
+    return {
+        "credentials": ...,
+        "s3Location": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetExternalDataViewAccessDetailsResponseTypeDef(TypedDict):
+    credentials: AwsCredentialsTypeDef,  # (1)
+    s3Location: S3LocationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AwsCredentialsTypeDef](./type_defs.md#awscredentialstypedef) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPermissionGroupResponseTypeDef
 
 ```python title="Usage Example"

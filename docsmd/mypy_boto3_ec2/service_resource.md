@@ -1181,12 +1181,14 @@ def create_placement_group(
     Strategy: PlacementStrategyType = ...,  # (1)
     PartitionCount: int = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
+    SpreadLevel: SpreadLevelType = ...,  # (3)
 ) -> PlacementGroup:
     ...
 ```
 
 1. See [:material-code-brackets: PlacementStrategyType](./literals.md#placementstrategytype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-brackets: SpreadLevelType](./literals.md#spreadleveltype) 
 
 
 ```python title="Usage example with kwargs"
@@ -4374,6 +4376,7 @@ def get_resource() -> PlacementGroup:
 - `group_id`: `str`
 - `tags`: `List`[[TagTypeDef](./type_defs.md#tagtypedef)]
 - `group_arn`: `str`
+- `spread_level`: [SpreadLevelType](./literals.md#spreadleveltype)
 - `name`: `str`
 - `instances`: [PlacementGroupInstancesCollection](#placementgroupinstancescollection)
 
