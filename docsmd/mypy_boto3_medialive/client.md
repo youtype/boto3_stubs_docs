@@ -1462,14 +1462,16 @@ def purchase_offering(
     Count: int,
     OfferingId: str,
     Name: str = ...,
+    RenewalSettings: RenewalSettingsTypeDef = ...,  # (1)
     RequestId: str = ...,
     Start: str = ...,
     Tags: Mapping[str, str] = ...,
-) -> PurchaseOfferingResponseTypeDef:  # (1)
+) -> PurchaseOfferingResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef) 
+1. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+2. See [:material-code-braces: PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1923,11 +1925,13 @@ def update_reservation(
     *,
     ReservationId: str,
     Name: str = ...,
-) -> UpdateReservationResponseTypeDef:  # (1)
+    RenewalSettings: RenewalSettingsTypeDef = ...,  # (1)
+) -> UpdateReservationResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef) 
+1. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+2. See [:material-code-braces: UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

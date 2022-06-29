@@ -3229,6 +3229,24 @@ class DescribeFeatureGroupRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## LastUpdateStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import LastUpdateStatusTypeDef
+
+def get_value() -> LastUpdateStatusTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class LastUpdateStatusTypeDef(TypedDict):
+    Status: LastUpdateStatusValueType,  # (1)
+    FailureReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LastUpdateStatusValueType](./literals.md#lastupdatestatusvaluetype) 
 ## OfflineStoreStatusTypeDef
 
 ```python title="Usage Example"
@@ -3247,6 +3265,41 @@ class OfflineStoreStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OfflineStoreStatusValueType](./literals.md#offlinestorestatusvaluetype) 
+## DescribeFeatureMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeFeatureMetadataRequestRequestTypeDef
+
+def get_value() -> DescribeFeatureMetadataRequestRequestTypeDef:
+    return {
+        "FeatureGroupName": ...,
+        "FeatureName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFeatureMetadataRequestRequestTypeDef(TypedDict):
+    FeatureGroupName: str,
+    FeatureName: str,
+```
+
+## FeatureParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import FeatureParameterTypeDef
+
+def get_value() -> FeatureParameterTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class FeatureParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## DescribeFlowDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9599,6 +9652,25 @@ class UpdateExperimentResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFeatureGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateFeatureGroupResponseTypeDef
+
+def get_value() -> UpdateFeatureGroupResponseTypeDef:
+    return {
+        "FeatureGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFeatureGroupResponseTypeDef(TypedDict):
+    FeatureGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateImageResponseTypeDef
 
 ```python title="Usage Example"
@@ -11166,6 +11238,24 @@ class UpdateDeviceFleetRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EdgeOutputConfigTypeDef](./type_defs.md#edgeoutputconfigtypedef) 
+## UpdateFeatureGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateFeatureGroupRequestRequestTypeDef
+
+def get_value() -> UpdateFeatureGroupRequestRequestTypeDef:
+    return {
+        "FeatureGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFeatureGroupRequestRequestTypeDef(TypedDict):
+    FeatureGroupName: str,
+    FeatureAdditions: NotRequired[Sequence[FeatureDefinitionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef) 
 ## CreateHumanTaskUiRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12363,6 +12453,88 @@ class FeatureGroupSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FeatureGroupStatusType](./literals.md#featuregroupstatustype) 
 2. See [:material-code-braces: OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef) 
+## DescribeFeatureMetadataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeFeatureMetadataResponseTypeDef
+
+def get_value() -> DescribeFeatureMetadataResponseTypeDef:
+    return {
+        "FeatureGroupArn": ...,
+        "FeatureGroupName": ...,
+        "FeatureName": ...,
+        "FeatureType": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "Description": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFeatureMetadataResponseTypeDef(TypedDict):
+    FeatureGroupArn: str,
+    FeatureGroupName: str,
+    FeatureName: str,
+    FeatureType: FeatureTypeType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    Description: str,
+    Parameters: List[FeatureParameterTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
+2. See [:material-code-braces: FeatureParameterTypeDef](./type_defs.md#featureparametertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FeatureMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import FeatureMetadataTypeDef
+
+def get_value() -> FeatureMetadataTypeDef:
+    return {
+        "FeatureGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class FeatureMetadataTypeDef(TypedDict):
+    FeatureGroupArn: NotRequired[str],
+    FeatureGroupName: NotRequired[str],
+    FeatureName: NotRequired[str],
+    FeatureType: NotRequired[FeatureTypeType],  # (1)
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    Description: NotRequired[str],
+    Parameters: NotRequired[List[FeatureParameterTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
+2. See [:material-code-braces: FeatureParameterTypeDef](./type_defs.md#featureparametertypedef) 
+## UpdateFeatureMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateFeatureMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateFeatureMetadataRequestRequestTypeDef:
+    return {
+        "FeatureGroupName": ...,
+        "FeatureName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFeatureMetadataRequestRequestTypeDef(TypedDict):
+    FeatureGroupName: str,
+    FeatureName: str,
+    Description: NotRequired[str],
+    ParameterAdditions: NotRequired[Sequence[FeatureParameterTypeDef]],  # (1)
+    ParameterRemovals: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: FeatureParameterTypeDef](./type_defs.md#featureparametertypedef) 
 ## DescribeHumanTaskUiResponseTypeDef
 
 ```python title="Usage Example"
@@ -17184,14 +17356,17 @@ def get_value() -> DescribeFeatureGroupResponseTypeDef:
         "EventTimeFeatureName": ...,
         "FeatureDefinitions": ...,
         "CreationTime": ...,
+        "LastModifiedTime": ...,
         "OnlineStoreConfig": ...,
         "OfflineStoreConfig": ...,
         "RoleArn": ...,
         "FeatureGroupStatus": ...,
         "OfflineStoreStatus": ...,
+        "LastUpdateStatus": ...,
         "FailureReason": ...,
         "Description": ...,
         "NextToken": ...,
+        "OnlineStoreTotalSizeBytes": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -17204,15 +17379,18 @@ class DescribeFeatureGroupResponseTypeDef(TypedDict):
     EventTimeFeatureName: str,
     FeatureDefinitions: List[FeatureDefinitionTypeDef],  # (1)
     CreationTime: datetime,
+    LastModifiedTime: datetime,
     OnlineStoreConfig: OnlineStoreConfigTypeDef,  # (2)
     OfflineStoreConfig: OfflineStoreConfigTypeDef,  # (3)
     RoleArn: str,
     FeatureGroupStatus: FeatureGroupStatusType,  # (4)
     OfflineStoreStatus: OfflineStoreStatusTypeDef,  # (5)
+    LastUpdateStatus: LastUpdateStatusTypeDef,  # (6)
     FailureReason: str,
     Description: str,
     NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    OnlineStoreTotalSizeBytes: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
 1. See [:material-code-braces: FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef) 
@@ -17220,7 +17398,8 @@ class DescribeFeatureGroupResponseTypeDef(TypedDict):
 3. See [:material-code-braces: OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef) 
 4. See [:material-code-brackets: FeatureGroupStatusType](./literals.md#featuregroupstatustype) 
 5. See [:material-code-braces: OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: LastUpdateStatusTypeDef](./type_defs.md#lastupdatestatustypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FeatureGroupTypeDef
 
 ```python title="Usage Example"
@@ -17240,14 +17419,16 @@ class FeatureGroupTypeDef(TypedDict):
     EventTimeFeatureName: NotRequired[str],
     FeatureDefinitions: NotRequired[List[FeatureDefinitionTypeDef]],  # (1)
     CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
     OnlineStoreConfig: NotRequired[OnlineStoreConfigTypeDef],  # (2)
     OfflineStoreConfig: NotRequired[OfflineStoreConfigTypeDef],  # (3)
     RoleArn: NotRequired[str],
     FeatureGroupStatus: NotRequired[FeatureGroupStatusType],  # (4)
     OfflineStoreStatus: NotRequired[OfflineStoreStatusTypeDef],  # (5)
+    LastUpdateStatus: NotRequired[LastUpdateStatusTypeDef],  # (6)
     FailureReason: NotRequired[str],
     Description: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (6)
+    Tags: NotRequired[List[TagTypeDef]],  # (7)
 ```
 
 1. See [:material-code-braces: FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef) 
@@ -17255,7 +17436,8 @@ class FeatureGroupTypeDef(TypedDict):
 3. See [:material-code-braces: OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef) 
 4. See [:material-code-brackets: FeatureGroupStatusType](./literals.md#featuregroupstatustype) 
 5. See [:material-code-braces: OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: LastUpdateStatusTypeDef](./type_defs.md#lastupdatestatustypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCompilationJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -20530,6 +20712,7 @@ class SearchRecordTypeDef(TypedDict):
     PipelineExecution: NotRequired[PipelineExecutionTypeDef],  # (9)
     FeatureGroup: NotRequired[FeatureGroupTypeDef],  # (10)
     Project: NotRequired[ProjectTypeDef],  # (11)
+    FeatureMetadata: NotRequired[FeatureMetadataTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: TrainingJobTypeDef](./type_defs.md#trainingjobtypedef) 
@@ -20543,6 +20726,7 @@ class SearchRecordTypeDef(TypedDict):
 9. See [:material-code-braces: PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef) 
 10. See [:material-code-braces: FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef) 
 11. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+12. See [:material-code-braces: FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef) 
 ## SearchResponseTypeDef
 
 ```python title="Usage Example"

@@ -215,6 +215,21 @@ AcceptHeaderType = Literal[
     "image/jpeg",
 ]
 ```
+## AccessibilityTypeType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import AccessibilityTypeType
+
+def get_value() -> AccessibilityTypeType:
+    return "DOES_NOT_IMPLEMENT_ACCESSIBILITY_FEATURES"
+```
+
+```python title="Definition"
+AccessibilityTypeType = Literal[
+    "DOES_NOT_IMPLEMENT_ACCESSIBILITY_FEATURES",
+    "IMPLEMENTS_ACCESSIBILITY_FEATURES",
+]
+```
 ## AfdSignalingType
 
 ```python title="Usage Example"
@@ -683,6 +698,7 @@ def get_value() -> DeviceUpdateStatusType:
 DeviceUpdateStatusType = Literal[
     "NOT_UP_TO_DATE",
     "UP_TO_DATE",
+    "UPDATING",
 ]
 ```
 ## DvbSdtOutputSdtType
@@ -3619,6 +3635,22 @@ PreferredChannelPipelineType = Literal[
     "PIPELINE_1",
 ]
 ```
+## ReservationAutomaticRenewalType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import ReservationAutomaticRenewalType
+
+def get_value() -> ReservationAutomaticRenewalType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+ReservationAutomaticRenewalType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "UNAVAILABLE",
+]
+```
 ## ReservationCodecType
 
 ```python title="Usage Example"
@@ -4588,6 +4620,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",

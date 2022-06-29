@@ -472,6 +472,21 @@ PlatformTypeType = Literal[
     "WINDOWS_SERVER_2019",
 ]
 ```
+## PreferredProtocolType
+
+```python title="Usage Example"
+from mypy_boto3_appstream.literals import PreferredProtocolType
+
+def get_value() -> PreferredProtocolType:
+    return "TCP"
+```
+
+```python title="Definition"
+PreferredProtocolType = Literal[
+    "TCP",
+    "UDP",
+]
+```
 ## SessionConnectionStateType
 
 ```python title="Usage Example"
@@ -523,6 +538,7 @@ StackAttributeType = Literal[
     "STORAGE_CONNECTOR_HOMEFOLDERS",
     "STORAGE_CONNECTOR_ONE_DRIVE",
     "STORAGE_CONNECTORS",
+    "STREAMING_EXPERIENCE_SETTINGS",
     "THEME_NAME",
     "USER_SETTINGS",
 ]
@@ -898,6 +914,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",

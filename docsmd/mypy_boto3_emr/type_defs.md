@@ -670,6 +670,7 @@ class VolumeSpecificationTypeDef(TypedDict):
     VolumeType: str,
     SizeInGB: int,
     Iops: NotRequired[int],
+    Throughput: NotRequired[int],
 ```
 
 ## EbsVolumeTypeDef

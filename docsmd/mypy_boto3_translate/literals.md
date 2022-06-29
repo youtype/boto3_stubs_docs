@@ -22,6 +22,29 @@ DirectionalityType = Literal[
     "UNI",
 ]
 ```
+## DisplayLanguageCodeType
+
+```python title="Usage Example"
+from mypy_boto3_translate.literals import DisplayLanguageCodeType
+
+def get_value() -> DisplayLanguageCodeType:
+    return "de"
+```
+
+```python title="Definition"
+DisplayLanguageCodeType = Literal[
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "zh",
+    "zh-TW",
+]
+```
 ## EncryptionKeyTypeType
 
 ```python title="Usage Example"
@@ -425,6 +448,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",

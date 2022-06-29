@@ -45,6 +45,7 @@ except (
     client.ServiceUnavailableException,
     client.TextSizeLimitExceededException,
     client.TooManyRequestsException,
+    client.UnsupportedDisplayLanguageCodeException,
     client.UnsupportedLanguagePairException,
 ) as e:
     print(e)
@@ -300,8 +301,8 @@ parent.get_terminology(**kwargs)
 
 ### import\_terminology
 
-Creates or updates a custom terminology, depending on whether or not one already
-exists for the given terminology name.
+Creates or updates a custom terminology, depending on whether one already exists
+for the given terminology name.
 
 Type annotations and code completion for `#!python boto3.client("translate").import_terminology` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
@@ -336,6 +337,39 @@ parent.import_terminology(**kwargs)
 ```
 
 1. See [:material-code-braces: ImportTerminologyRequestRequestTypeDef](./type_defs.md#importterminologyrequestrequesttypedef) 
+
+### list\_languages
+
+Provides a list of languages (RFC-5646 codes and names) that Amazon Translate
+supports.
+
+Type annotations and code completion for `#!python boto3.client("translate").list_languages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_languages)
+
+```python title="Method definition"
+def list_languages(
+    self,
+    *,
+    DisplayLanguageCode: DisplayLanguageCodeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLanguagesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: DisplayLanguageCodeType](./literals.md#displaylanguagecodetype) 
+2. See [:material-code-braces: ListLanguagesResponseTypeDef](./type_defs.md#listlanguagesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLanguagesRequestRequestTypeDef = {  # (1)
+    "DisplayLanguageCode": ...,
+}
+
+parent.list_languages(**kwargs)
+```
+
+1. See [:material-code-braces: ListLanguagesRequestRequestTypeDef](./type_defs.md#listlanguagesrequestrequesttypedef) 
 
 ### list\_parallel\_data
 

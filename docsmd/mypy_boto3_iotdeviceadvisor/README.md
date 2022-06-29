@@ -84,6 +84,7 @@ def get_value() -> StatusType:
 - [IoTDeviceAdvisorServiceName](./literals.md#iotdeviceadvisorservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

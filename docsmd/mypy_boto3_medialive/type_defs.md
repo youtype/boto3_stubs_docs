@@ -1178,6 +1178,24 @@ class DeleteReservationRequestRequestTypeDef(TypedDict):
     ReservationId: str,
 ```
 
+## RenewalSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import RenewalSettingsTypeDef
+
+def get_value() -> RenewalSettingsTypeDef:
+    return {
+        "AutomaticRenewal": ...,
+    }
+```
+
+```python title="Definition"
+class RenewalSettingsTypeDef(TypedDict):
+    AutomaticRenewal: NotRequired[ReservationAutomaticRenewalType],  # (1)
+    RenewalCount: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ReservationAutomaticRenewalType](./literals.md#reservationautomaticrenewaltype) 
 ## ReservationResourceSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -2686,28 +2704,6 @@ class PipelinePauseStateSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PipelineIdType](./literals.md#pipelineidtype) 
-## PurchaseOfferingRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_medialive.type_defs import PurchaseOfferingRequestRequestTypeDef
-
-def get_value() -> PurchaseOfferingRequestRequestTypeDef:
-    return {
-        "Count": ...,
-        "OfferingId": ...,
-    }
-```
-
-```python title="Definition"
-class PurchaseOfferingRequestRequestTypeDef(TypedDict):
-    Count: int,
-    OfferingId: str,
-    Name: NotRequired[str],
-    RequestId: NotRequired[str],
-    Start: NotRequired[str],
-    Tags: NotRequired[Mapping[str, str]],
-```
-
 ## RejectInputDeviceTransferRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2881,23 +2877,6 @@ class TransferInputDeviceRequestRequestTypeDef(TypedDict):
     TargetCustomerId: NotRequired[str],
     TargetRegion: NotRequired[str],
     TransferMessage: NotRequired[str],
-```
-
-## UpdateReservationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_medialive.type_defs import UpdateReservationRequestRequestTypeDef
-
-def get_value() -> UpdateReservationRequestRequestTypeDef:
-    return {
-        "ReservationId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateReservationRequestRequestTypeDef(TypedDict):
-    ReservationId: str,
-    Name: NotRequired[str],
 ```
 
 ## VideoSelectorPidTypeDef
@@ -3601,6 +3580,49 @@ class UpdateMultiplexRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef) 
+## PurchaseOfferingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import PurchaseOfferingRequestRequestTypeDef
+
+def get_value() -> PurchaseOfferingRequestRequestTypeDef:
+    return {
+        "Count": ...,
+        "OfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class PurchaseOfferingRequestRequestTypeDef(TypedDict):
+    Count: int,
+    OfferingId: str,
+    Name: NotRequired[str],
+    RenewalSettings: NotRequired[RenewalSettingsTypeDef],  # (1)
+    RequestId: NotRequired[str],
+    Start: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+## UpdateReservationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import UpdateReservationRequestRequestTypeDef
+
+def get_value() -> UpdateReservationRequestRequestTypeDef:
+    return {
+        "ReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateReservationRequestRequestTypeDef(TypedDict):
+    ReservationId: str,
+    Name: NotRequired[str],
+    RenewalSettings: NotRequired[RenewalSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
 ## DeleteReservationResponseTypeDef
 
 ```python title="Usage Example"
@@ -3620,6 +3642,7 @@ def get_value() -> DeleteReservationResponseTypeDef:
         "OfferingId": ...,
         "OfferingType": ...,
         "Region": ...,
+        "RenewalSettings": ...,
         "ReservationId": ...,
         "ResourceSpecification": ...,
         "Start": ...,
@@ -3644,20 +3667,22 @@ class DeleteReservationResponseTypeDef(TypedDict):
     OfferingId: str,
     OfferingType: OfferingTypeType,  # (2)
     Region: str,
+    RenewalSettings: RenewalSettingsTypeDef,  # (3)
     ReservationId: str,
-    ResourceSpecification: ReservationResourceSpecificationTypeDef,  # (3)
+    ResourceSpecification: ReservationResourceSpecificationTypeDef,  # (4)
     Start: str,
-    State: ReservationStateType,  # (4)
+    State: ReservationStateType,  # (5)
     Tags: Dict[str, str],
     UsagePrice: float,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-brackets: OfferingDurationUnitsType](./literals.md#offeringdurationunitstype) 
 2. See [:material-code-brackets: OfferingTypeType](./literals.md#offeringtypetype) 
-3. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
-4. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+4. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
+5. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOfferingResponseTypeDef
 
 ```python title="Usage Example"
@@ -3719,6 +3744,7 @@ def get_value() -> DescribeReservationResponseTypeDef:
         "OfferingId": ...,
         "OfferingType": ...,
         "Region": ...,
+        "RenewalSettings": ...,
         "ReservationId": ...,
         "ResourceSpecification": ...,
         "Start": ...,
@@ -3743,20 +3769,22 @@ class DescribeReservationResponseTypeDef(TypedDict):
     OfferingId: str,
     OfferingType: OfferingTypeType,  # (2)
     Region: str,
+    RenewalSettings: RenewalSettingsTypeDef,  # (3)
     ReservationId: str,
-    ResourceSpecification: ReservationResourceSpecificationTypeDef,  # (3)
+    ResourceSpecification: ReservationResourceSpecificationTypeDef,  # (4)
     Start: str,
-    State: ReservationStateType,  # (4)
+    State: ReservationStateType,  # (5)
     Tags: Dict[str, str],
     UsagePrice: float,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-brackets: OfferingDurationUnitsType](./literals.md#offeringdurationunitstype) 
 2. See [:material-code-brackets: OfferingTypeType](./literals.md#offeringtypetype) 
-3. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
-4. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+4. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
+5. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OfferingTypeDef
 
 ```python title="Usage Example"
@@ -3811,18 +3839,20 @@ class ReservationTypeDef(TypedDict):
     OfferingId: NotRequired[str],
     OfferingType: NotRequired[OfferingTypeType],  # (2)
     Region: NotRequired[str],
+    RenewalSettings: NotRequired[RenewalSettingsTypeDef],  # (3)
     ReservationId: NotRequired[str],
-    ResourceSpecification: NotRequired[ReservationResourceSpecificationTypeDef],  # (3)
+    ResourceSpecification: NotRequired[ReservationResourceSpecificationTypeDef],  # (4)
     Start: NotRequired[str],
-    State: NotRequired[ReservationStateType],  # (4)
+    State: NotRequired[ReservationStateType],  # (5)
     Tags: NotRequired[Dict[str, str]],
     UsagePrice: NotRequired[float],
 ```
 
 1. See [:material-code-brackets: OfferingDurationUnitsType](./literals.md#offeringdurationunitstype) 
 2. See [:material-code-brackets: OfferingTypeType](./literals.md#offeringtypetype) 
-3. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
-4. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
+3. See [:material-code-braces: RenewalSettingsTypeDef](./type_defs.md#renewalsettingstypedef) 
+4. See [:material-code-braces: ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef) 
+5. See [:material-code-brackets: ReservationStateType](./literals.md#reservationstatetype) 
 ## DescribeChannelRequestChannelCreatedWaitTypeDef
 
 ```python title="Usage Example"
@@ -6099,12 +6129,14 @@ def get_value() -> CaptionDescriptionTypeDef:
 class CaptionDescriptionTypeDef(TypedDict):
     CaptionSelectorName: str,
     Name: str,
-    DestinationSettings: NotRequired[CaptionDestinationSettingsTypeDef],  # (1)
+    Accessibility: NotRequired[AccessibilityTypeType],  # (1)
+    DestinationSettings: NotRequired[CaptionDestinationSettingsTypeDef],  # (2)
     LanguageCode: NotRequired[str],
     LanguageDescription: NotRequired[str],
 ```
 
-1. See [:material-code-braces: CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef) 
+1. See [:material-code-brackets: AccessibilityTypeType](./literals.md#accessibilitytypetype) 
+2. See [:material-code-braces: CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef) 
 ## HlsGroupSettingsTypeDef
 
 ```python title="Usage Example"

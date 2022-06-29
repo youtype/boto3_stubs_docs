@@ -261,6 +261,43 @@ class JobDetailsTypeDef(TypedDict):
     InputDocumentsCount: NotRequired[int],
 ```
 
+## LanguageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import LanguageTypeDef
+
+def get_value() -> LanguageTypeDef:
+    return {
+        "LanguageName": ...,
+        "LanguageCode": ...,
+    }
+```
+
+```python title="Definition"
+class LanguageTypeDef(TypedDict):
+    LanguageName: str,
+    LanguageCode: str,
+```
+
+## ListLanguagesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListLanguagesRequestRequestTypeDef
+
+def get_value() -> ListLanguagesRequestRequestTypeDef:
+    return {
+        "DisplayLanguageCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListLanguagesRequestRequestTypeDef(TypedDict):
+    DisplayLanguageCode: NotRequired[DisplayLanguageCodeType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: DisplayLanguageCodeType](./literals.md#displaylanguagecodetype) 
 ## ListParallelDataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -675,6 +712,31 @@ class ImportTerminologyRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
 2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
 3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+## ListLanguagesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListLanguagesResponseTypeDef
+
+def get_value() -> ListLanguagesResponseTypeDef:
+    return {
+        "Languages": ...,
+        "DisplayLanguageCode": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLanguagesResponseTypeDef(TypedDict):
+    Languages: List[LanguageTypeDef],  # (1)
+    DisplayLanguageCode: DisplayLanguageCodeType,  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: LanguageTypeDef](./type_defs.md#languagetypedef) 
+2. See [:material-code-brackets: DisplayLanguageCodeType](./literals.md#displaylanguagecodetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTerminologiesRequestListTerminologiesPaginateTypeDef
 
 ```python title="Usage Example"

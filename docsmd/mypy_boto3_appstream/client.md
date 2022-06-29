@@ -590,7 +590,8 @@ def create_stack(
     Tags: Mapping[str, str] = ...,
     AccessEndpoints: Sequence[AccessEndpointTypeDef] = ...,  # (4)
     EmbedHostDomains: Sequence[str] = ...,
-) -> CreateStackResultTypeDef:  # (5)
+    StreamingExperienceSettings: StreamingExperienceSettingsTypeDef = ...,  # (5)
+) -> CreateStackResultTypeDef:  # (6)
     ...
 ```
 
@@ -598,7 +599,8 @@ def create_stack(
 2. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
 3. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
 4. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-5. See [:material-code-braces: CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef) 
+5. See [:material-code-braces: StreamingExperienceSettingsTypeDef](./type_defs.md#streamingexperiencesettingstypedef) 
+6. See [:material-code-braces: CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2210,7 +2212,8 @@ def update_stack(
     ApplicationSettings: ApplicationSettingsTypeDef = ...,  # (4)
     AccessEndpoints: Sequence[AccessEndpointTypeDef] = ...,  # (5)
     EmbedHostDomains: Sequence[str] = ...,
-) -> UpdateStackResultTypeDef:  # (6)
+    StreamingExperienceSettings: StreamingExperienceSettingsTypeDef = ...,  # (6)
+) -> UpdateStackResultTypeDef:  # (7)
     ...
 ```
 
@@ -2219,7 +2222,8 @@ def update_stack(
 3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
 4. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
 5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
-6. See [:material-code-braces: UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef) 
+6. See [:material-code-braces: StreamingExperienceSettingsTypeDef](./type_defs.md#streamingexperiencesettingstypedef) 
+7. See [:material-code-braces: UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

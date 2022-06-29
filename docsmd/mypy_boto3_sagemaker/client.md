@@ -3810,6 +3810,37 @@ parent.describe_feature_group(**kwargs)
 
 1. See [:material-code-braces: DescribeFeatureGroupRequestRequestTypeDef](./type_defs.md#describefeaturegrouprequestrequesttypedef) 
 
+### describe\_feature\_metadata
+
+Shows the metadata for a feature within a feature group.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_feature_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_metadata)
+
+```python title="Method definition"
+def describe_feature_metadata(
+    self,
+    *,
+    FeatureGroupName: str,
+    FeatureName: str,
+) -> DescribeFeatureMetadataResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeFeatureMetadataResponseTypeDef](./type_defs.md#describefeaturemetadataresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFeatureMetadataRequestRequestTypeDef = {  # (1)
+    "FeatureGroupName": ...,
+    "FeatureName": ...,
+}
+
+parent.describe_feature_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFeatureMetadataRequestRequestTypeDef](./type_defs.md#describefeaturemetadatarequestrequesttypedef) 
+
 ### describe\_flow\_definition
 
 Returns information about the specified flow definition.
@@ -8186,6 +8217,72 @@ parent.update_experiment(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateExperimentRequestRequestTypeDef](./type_defs.md#updateexperimentrequestrequesttypedef) 
+
+### update\_feature\_group
+
+Updates the feature group.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_feature_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_feature_group)
+
+```python title="Method definition"
+def update_feature_group(
+    self,
+    *,
+    FeatureGroupName: str,
+    FeatureAdditions: Sequence[FeatureDefinitionTypeDef] = ...,  # (1)
+) -> UpdateFeatureGroupResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef) 
+2. See [:material-code-braces: UpdateFeatureGroupResponseTypeDef](./type_defs.md#updatefeaturegroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFeatureGroupRequestRequestTypeDef = {  # (1)
+    "FeatureGroupName": ...,
+}
+
+parent.update_feature_group(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFeatureGroupRequestRequestTypeDef](./type_defs.md#updatefeaturegrouprequestrequesttypedef) 
+
+### update\_feature\_metadata
+
+Updates the description and parameters of the feature group.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_feature_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_feature_metadata)
+
+```python title="Method definition"
+def update_feature_metadata(
+    self,
+    *,
+    FeatureGroupName: str,
+    FeatureName: str,
+    Description: str = ...,
+    ParameterAdditions: Sequence[FeatureParameterTypeDef] = ...,  # (1)
+    ParameterRemovals: Sequence[str] = ...,
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FeatureParameterTypeDef](./type_defs.md#featureparametertypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFeatureMetadataRequestRequestTypeDef = {  # (1)
+    "FeatureGroupName": ...,
+    "FeatureName": ...,
+}
+
+parent.update_feature_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFeatureMetadataRequestRequestTypeDef](./type_defs.md#updatefeaturemetadatarequestrequesttypedef) 
 
 ### update\_image
 

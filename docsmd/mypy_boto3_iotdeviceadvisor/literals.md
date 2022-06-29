@@ -313,6 +313,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",
@@ -407,5 +408,22 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2",
 ]
 ```

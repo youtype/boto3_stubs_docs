@@ -1552,6 +1552,22 @@ LabelingJobStatusType = Literal[
     "Stopping",
 ]
 ```
+## LastUpdateStatusValueType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import LastUpdateStatusValueType
+
+def get_value() -> LastUpdateStatusValueType:
+    return "Failed"
+```
+
+```python title="Definition"
+LastUpdateStatusValueType = Literal[
+    "Failed",
+    "InProgress",
+    "Successful",
+]
+```
 ## LineageTypeType
 
 ```python title="Usage Example"
@@ -3471,6 +3487,7 @@ ResourceTypeType = Literal[
     "ExperimentTrial",
     "ExperimentTrialComponent",
     "FeatureGroup",
+    "FeatureMetadata",
     "ModelPackage",
     "ModelPackageGroup",
     "Pipeline",
@@ -4608,6 +4625,7 @@ ServiceName = Literal[
     "rds-data",
     "redshift",
     "redshift-data",
+    "redshift-serverless",
     "rekognition",
     "resiliencehub",
     "resource-groups",
