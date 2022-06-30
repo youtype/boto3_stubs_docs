@@ -21,6 +21,22 @@ AdditionalResultAttributeValueTypeType = Literal[
     "TEXT_WITH_HIGHLIGHTS_VALUE",
 ]
 ```
+## AlfrescoEntityType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import AlfrescoEntityType
+
+def get_value() -> AlfrescoEntityType:
+    return "blog"
+```
+
+```python title="Definition"
+AlfrescoEntityType = Literal[
+    "blog",
+    "documentLibrary",
+    "wiki",
+]
+```
 ## ConditionOperatorType
 
 ```python title="Usage Example"
@@ -210,11 +226,12 @@ DataSourceSyncJobStatusType = Literal[
 from mypy_boto3_kendra.literals import DataSourceTypeType
 
 def get_value() -> DataSourceTypeType:
-    return "BOX"
+    return "ALFRESCO"
 ```
 
 ```python title="Definition"
 DataSourceTypeType = Literal[
+    "ALFRESCO",
     "BOX",
     "CONFLUENCE",
     "CUSTOM",

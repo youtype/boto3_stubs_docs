@@ -11070,6 +11070,7 @@ def get_value() -> CreateDatabaseRequestRequestTypeDef:
 class CreateDatabaseRequestRequestTypeDef(TypedDict):
     DatabaseInput: DatabaseInputTypeDef,  # (1)
     CatalogId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef) 

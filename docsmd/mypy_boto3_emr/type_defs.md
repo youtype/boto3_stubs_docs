@@ -3348,6 +3348,7 @@ class StepTypeDef(TypedDict):
     Config: NotRequired[HadoopStepConfigTypeDef],  # (1)
     ActionOnFailure: NotRequired[ActionOnFailureType],  # (2)
     Status: NotRequired[StepStatusTypeDef],  # (3)
+    ExecutionRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef) 
@@ -3458,6 +3459,7 @@ def get_value() -> AddJobFlowStepsInputRequestTypeDef:
 class AddJobFlowStepsInputRequestTypeDef(TypedDict):
     JobFlowId: str,
     Steps: Sequence[StepConfigTypeDef],  # (1)
+    ExecutionRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 

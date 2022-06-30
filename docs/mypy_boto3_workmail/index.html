@@ -36546,6 +36546,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="paginators/#listaliasespaginator">ListAliasesPaginator</a></li>
+<li><a href="paginators/#listavailabilityconfigurationspaginator">ListAvailabilityConfigurationsPaginator</a></li>
 <li><a href="paginators/#listgroupmemberspaginator">ListGroupMembersPaginator</a></li>
 <li><a href="paginators/#listgroupspaginator">ListGroupsPaginator</a></li>
 <li><a href="paginators/#listmailboxpermissionspaginator">ListMailboxPermissionsPaginator</a></li>
@@ -36563,10 +36564,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="literals/#accesscontrolruleeffecttype">AccessControlRuleEffectType</a></li>
+<li><a href="literals/#availabilityprovidertypetype">AvailabilityProviderTypeType</a></li>
 <li><a href="literals/#dnsrecordverificationstatustype">DnsRecordVerificationStatusType</a></li>
 <li><a href="literals/#entitystatetype">EntityStateType</a></li>
 <li><a href="literals/#foldernametype">FolderNameType</a></li>
 <li><a href="literals/#listaliasespaginatorname">ListAliasesPaginatorName</a></li>
+<li><a href="literals/#listavailabilityconfigurationspaginatorname">ListAvailabilityConfigurationsPaginatorName</a></li>
 <li><a href="literals/#listgroupmemberspaginatorname">ListGroupMembersPaginatorName</a></li>
 <li><a href="literals/#listgroupspaginatorname">ListGroupsPaginatorName</a></li>
 <li><a href="literals/#listmailboxpermissionspaginatorname">ListMailboxPermissionsPaginatorName</a></li>
@@ -36600,9 +36603,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#accesscontrolruletypedef">AccessControlRuleTypeDef</a></li>
 <li><a href="type_defs/#associatedelegatetoresourcerequestrequesttypedef">AssociateDelegateToResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatemembertogrouprequestrequesttypedef">AssociateMemberToGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#lambdaavailabilityprovidertypedef">LambdaAvailabilityProviderTypeDef</a></li>
+<li><a href="type_defs/#redactedewsavailabilityprovidertypedef">RedactedEwsAvailabilityProviderTypeDef</a></li>
 <li><a href="type_defs/#bookingoptionstypedef">BookingOptionsTypeDef</a></li>
 <li><a href="type_defs/#cancelmailboxexportjobrequestrequesttypedef">CancelMailboxExportJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createaliasrequestrequesttypedef">CreateAliasRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ewsavailabilityprovidertypedef">EwsAvailabilityProviderTypeDef</a></li>
 <li><a href="type_defs/#creategrouprequestrequesttypedef">CreateGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createmobiledeviceaccessrulerequestrequesttypedef">CreateMobileDeviceAccessRuleRequestRequestTypeDef</a></li>
@@ -36612,6 +36618,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#delegatetypedef">DelegateTypeDef</a></li>
 <li><a href="type_defs/#deleteaccesscontrolrulerequestrequesttypedef">DeleteAccessControlRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletealiasrequestrequesttypedef">DeleteAliasRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteavailabilityconfigurationrequestrequesttypedef">DeleteAvailabilityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteemailmonitoringconfigurationrequestrequesttypedef">DeleteEmailMonitoringConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletegrouprequestrequesttypedef">DeleteGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemailboxpermissionsrequestrequesttypedef">DeleteMailboxPermissionsRequestRequestTypeDef</a></li>
@@ -36645,6 +36652,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listaccesscontrolrulesrequestrequesttypedef">ListAccessControlRulesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listaliasesrequestrequesttypedef">ListAliasesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listavailabilityconfigurationsrequestrequesttypedef">ListAvailabilityConfigurationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listgroupmembersrequestrequesttypedef">ListGroupMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#membertypedef">MemberTypeDef</a></li>
 <li><a href="type_defs/#listgroupsrequestrequesttypedef">ListGroupsRequestRequestTypeDef</a></li>
@@ -36681,7 +36689,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatemailboxquotarequestrequesttypedef">UpdateMailboxQuotaRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatemobiledeviceaccessrulerequestrequesttypedef">UpdateMobileDeviceAccessRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateprimaryemailaddressrequestrequesttypedef">UpdatePrimaryEmailAddressRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#availabilityconfigurationtypedef">AvailabilityConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updateresourcerequestrequesttypedef">UpdateResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createavailabilityconfigurationrequestrequesttypedef">CreateAvailabilityConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#testavailabilityconfigurationrequestrequesttypedef">TestAvailabilityConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateavailabilityconfigurationrequestrequesttypedef">UpdateAvailabilityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#creategroupresponsetypedef">CreateGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#createmobiledeviceaccessruleresponsetypedef">CreateMobileDeviceAccessRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#createorganizationresponsetypedef">CreateOrganizationResponseTypeDef</a></li>
@@ -36701,6 +36713,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listaccesscontrolrulesresponsetypedef">ListAccessControlRulesResponseTypeDef</a></li>
 <li><a href="type_defs/#listaliasesresponsetypedef">ListAliasesResponseTypeDef</a></li>
 <li><a href="type_defs/#startmailboxexportjobresponsetypedef">StartMailboxExportJobResponseTypeDef</a></li>
+<li><a href="type_defs/#testavailabilityconfigurationresponsetypedef">TestAvailabilityConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#createorganizationrequestrequesttypedef">CreateOrganizationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listresourcedelegatesresponsetypedef">ListResourceDelegatesResponseTypeDef</a></li>
 <li><a href="type_defs/#getmaildomainresponsetypedef">GetMailDomainResponseTypeDef</a></li>
@@ -36709,6 +36722,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmobiledeviceaccesseffectresponsetypedef">GetMobileDeviceAccessEffectResponseTypeDef</a></li>
 <li><a href="type_defs/#listgroupsresponsetypedef">ListGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listaliasesrequestlistaliasespaginatetypedef">ListAliasesRequestListAliasesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listavailabilityconfigurationsrequestlistavailabilityconfigurationspaginatetypedef">ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgroupmembersrequestlistgroupmemberspaginatetypedef">ListGroupMembersRequestListGroupMembersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgroupsrequestlistgroupspaginatetypedef">ListGroupsRequestListGroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmailboxpermissionsrequestlistmailboxpermissionspaginatetypedef">ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef</a></li>
@@ -36727,6 +36741,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
+<li><a href="type_defs/#listavailabilityconfigurationsresponsetypedef">ListAvailabilityConfigurationsResponseTypeDef</a></li>
 </ul>
 
               

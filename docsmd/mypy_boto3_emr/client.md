@@ -128,6 +128,7 @@ def add_job_flow_steps(
     *,
     JobFlowId: str,
     Steps: Sequence[StepConfigTypeDef],  # (1)
+    ExecutionRoleArn: str = ...,
 ) -> AddJobFlowStepsOutputTypeDef:  # (2)
     ...
 ```

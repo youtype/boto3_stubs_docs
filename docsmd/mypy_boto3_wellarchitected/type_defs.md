@@ -667,6 +667,7 @@ class LensShareSummaryTypeDef(TypedDict):
     ShareId: NotRequired[str],
     SharedWith: NotRequired[str],
     Status: NotRequired[ShareStatusType],  # (1)
+    StatusMessage: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
@@ -798,8 +799,10 @@ class ListLensSharesInputRequestTypeDef(TypedDict):
     SharedWithPrefix: NotRequired[str],
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
+    Status: NotRequired[ShareStatusType],  # (1)
 ```
 
+1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## ListLensesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -938,8 +941,10 @@ class ListWorkloadSharesInputRequestTypeDef(TypedDict):
     SharedWithPrefix: NotRequired[str],
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
+    Status: NotRequired[ShareStatusType],  # (1)
 ```
 
+1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## WorkloadShareSummaryTypeDef
 
 ```python title="Usage Example"
@@ -957,6 +962,7 @@ class WorkloadShareSummaryTypeDef(TypedDict):
     SharedWith: NotRequired[str],
     PermissionType: NotRequired[PermissionTypeType],  # (1)
     Status: NotRequired[ShareStatusType],  # (2)
+    StatusMessage: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
@@ -1080,6 +1086,23 @@ class UntagResourceInputRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateGlobalSettingsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.type_defs import UpdateGlobalSettingsInputRequestTypeDef
+
+def get_value() -> UpdateGlobalSettingsInputRequestTypeDef:
+    return {
+        "OrganizationSharingStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGlobalSettingsInputRequestTypeDef(TypedDict):
+    OrganizationSharingStatus: NotRequired[OrganizationSharingStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: OrganizationSharingStatusType](./literals.md#organizationsharingstatustype) 
 ## UpdateLensReviewInputRequestTypeDef
 
 ```python title="Usage Example"

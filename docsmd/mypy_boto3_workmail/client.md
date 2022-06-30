@@ -229,6 +229,42 @@ parent.create_alias(**kwargs)
 
 1. See [:material-code-braces: CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef) 
 
+### create\_availability\_configuration
+
+Creates an `AvailabilityConfiguration` for the given WorkMail organization and
+domain.
+
+Type annotations and code completion for `#!python boto3.client("workmail").create_availability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_availability_configuration)
+
+```python title="Method definition"
+def create_availability_configuration(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+    ClientToken: str = ...,
+    EwsProvider: EwsAvailabilityProviderTypeDef = ...,  # (1)
+    LambdaProvider: LambdaAvailabilityProviderTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateAvailabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
+
+parent.create_availability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: CreateAvailabilityConfigurationRequestRequestTypeDef](./type_defs.md#createavailabilityconfigurationrequestrequesttypedef) 
+
 ### create\_group
 
 Creates a group that can be used in Amazon WorkMail by calling the
@@ -472,6 +508,37 @@ parent.delete_alias(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef) 
+
+### delete\_availability\_configuration
+
+Deletes the `AvailabilityConfiguration` for the given WorkMail organization and
+domain.
+
+Type annotations and code completion for `#!python boto3.client("workmail").delete_availability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_availability_configuration)
+
+```python title="Method definition"
+def delete_availability_configuration(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAvailabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
+
+parent.delete_availability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAvailabilityConfigurationRequestRequestTypeDef](./type_defs.md#deleteavailabilityconfigurationrequestrequesttypedef) 
 
 ### delete\_email\_monitoring\_configuration
 
@@ -1365,6 +1432,37 @@ parent.list_aliases(**kwargs)
 
 1. See [:material-code-braces: ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef) 
 
+### list\_availability\_configurations
+
+List all the `AvailabilityConfiguration` 's for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").list_availability_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_availability_configurations)
+
+```python title="Method definition"
+def list_availability_configurations(
+    self,
+    *,
+    OrganizationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAvailabilityConfigurationsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAvailabilityConfigurationsResponseTypeDef](./type_defs.md#listavailabilityconfigurationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAvailabilityConfigurationsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.list_availability_configurations(**kwargs)
+```
+
+1. See [:material-code-braces: ListAvailabilityConfigurationsRequestRequestTypeDef](./type_defs.md#listavailabilityconfigurationsrequestrequesttypedef) 
+
 ### list\_group\_members
 
 Returns an overview of the members of a group.
@@ -2128,6 +2226,40 @@ parent.tag_resource(**kwargs)
 
 1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
+### test\_availability\_configuration
+
+Performs a test on an availability provider to ensure that access is allowed.
+
+Type annotations and code completion for `#!python boto3.client("workmail").test_availability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.test_availability_configuration)
+
+```python title="Method definition"
+def test_availability_configuration(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str = ...,
+    EwsProvider: EwsAvailabilityProviderTypeDef = ...,  # (1)
+    LambdaProvider: LambdaAvailabilityProviderTypeDef = ...,  # (2)
+) -> TestAvailabilityConfigurationResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+3. See [:material-code-braces: TestAvailabilityConfigurationResponseTypeDef](./type_defs.md#testavailabilityconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TestAvailabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.test_availability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: TestAvailabilityConfigurationRequestRequestTypeDef](./type_defs.md#testavailabilityconfigurationrequestrequesttypedef) 
+
 ### untag\_resource
 
 Untags the specified tags from the specified Amazon WorkMail organization
@@ -2158,6 +2290,41 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_availability\_configuration
+
+Updates an existing `AvailabilityConfiguration` for the given WorkMail
+organization and domain.
+
+Type annotations and code completion for `#!python boto3.client("workmail").update_availability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_availability_configuration)
+
+```python title="Method definition"
+def update_availability_configuration(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+    EwsProvider: EwsAvailabilityProviderTypeDef = ...,  # (1)
+    LambdaProvider: LambdaAvailabilityProviderTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAvailabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
+
+parent.update_availability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAvailabilityConfigurationRequestRequestTypeDef](./type_defs.md#updateavailabilityconfigurationrequestrequesttypedef) 
 
 ### update\_default\_mail\_domain
 
@@ -2338,6 +2505,7 @@ parent.update_resource(**kwargs)
 Type annotations and code completion for `#!python boto3.client("workmail").get_paginator` method with overloads.
 
 - `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_availability_configurations")` -> [ListAvailabilityConfigurationsPaginator](./paginators.md#listavailabilityconfigurationspaginator)
 - `client.get_paginator("list_group_members")` -> [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
 - `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
 - `client.get_paginator("list_mailbox_permissions")` -> [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)

@@ -171,6 +171,21 @@ NotificationTypeType = Literal[
     "LENS_VERSION_UPGRADED",
 ]
 ```
+## OrganizationSharingStatusType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import OrganizationSharingStatusType
+
+def get_value() -> OrganizationSharingStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+OrganizationSharingStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## PermissionTypeType
 
 ```python title="Usage Example"
@@ -246,7 +261,10 @@ def get_value() -> ShareStatusType:
 ```python title="Definition"
 ShareStatusType = Literal[
     "ACCEPTED",
+    "ASSOCIATED",
+    "ASSOCIATING",
     "EXPIRED",
+    "FAILED",
     "PENDING",
     "REJECTED",
     "REVOKED",

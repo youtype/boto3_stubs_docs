@@ -872,6 +872,7 @@ def create_database(
     *,
     DatabaseInput: DatabaseInputTypeDef,  # (1)
     CatalogId: str = ...,
+    Tags: Mapping[str, str] = ...,
 ) -> Dict[str, Any]:
     ...
 ```

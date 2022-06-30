@@ -22,6 +22,21 @@ AccessControlRuleEffectType = Literal[
     "DENY",
 ]
 ```
+## AvailabilityProviderTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workmail.literals import AvailabilityProviderTypeType
+
+def get_value() -> AvailabilityProviderTypeType:
+    return "EWS"
+```
+
+```python title="Definition"
+AvailabilityProviderTypeType = Literal[
+    "EWS",
+    "LAMBDA",
+]
+```
 ## DnsRecordVerificationStatusType
 
 ```python title="Usage Example"
@@ -84,6 +99,20 @@ def get_value() -> ListAliasesPaginatorName:
 ```python title="Definition"
 ListAliasesPaginatorName = Literal[
     "list_aliases",
+]
+```
+## ListAvailabilityConfigurationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_workmail.literals import ListAvailabilityConfigurationsPaginatorName
+
+def get_value() -> ListAvailabilityConfigurationsPaginatorName:
+    return "list_availability_configurations"
+```
+
+```python title="Definition"
+ListAvailabilityConfigurationsPaginatorName = Literal[
+    "list_availability_configurations",
 ]
 ```
 ## ListGroupMembersPaginatorName
@@ -665,6 +694,7 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "list_aliases",
+    "list_availability_configurations",
     "list_group_members",
     "list_groups",
     "list_mailbox_permissions",

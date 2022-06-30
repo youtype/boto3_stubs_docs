@@ -51,6 +51,48 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef) 
+## ListAvailabilityConfigurationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_availability_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListAvailabilityConfigurations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListAvailabilityConfigurationsPaginator
+
+def get_list_availability_configurations_paginator() -> ListAvailabilityConfigurationsPaginator:
+    return Session().client("workmail").get_paginator("list_availability_configurations")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAvailabilityConfigurationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAvailabilityConfigurationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAvailabilityConfigurationsResponseTypeDef](./type_defs.md#listavailabilityconfigurationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef](./type_defs.md#listavailabilityconfigurationsrequestlistavailabilityconfigurationspaginatetypedef) 
 ## ListGroupMembersPaginator
 
 Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_group_members")`.

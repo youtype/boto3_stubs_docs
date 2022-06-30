@@ -511,6 +511,7 @@ def get_auto_merging_preview(
     DomainName: str,
     Consolidation: ConsolidationTypeDef,  # (1)
     ConflictResolution: ConflictResolutionTypeDef,  # (2)
+    MinAllowedConfidenceScoreForMerging: float = ...,
 ) -> GetAutoMergingPreviewResponseTypeDef:  # (3)
     ...
 ```

@@ -74,6 +74,39 @@ class AssociateMemberToGroupRequestRequestTypeDef(TypedDict):
     MemberId: str,
 ```
 
+## LambdaAvailabilityProviderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import LambdaAvailabilityProviderTypeDef
+
+def get_value() -> LambdaAvailabilityProviderTypeDef:
+    return {
+        "LambdaArn": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaAvailabilityProviderTypeDef(TypedDict):
+    LambdaArn: str,
+```
+
+## RedactedEwsAvailabilityProviderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import RedactedEwsAvailabilityProviderTypeDef
+
+def get_value() -> RedactedEwsAvailabilityProviderTypeDef:
+    return {
+        "EwsEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class RedactedEwsAvailabilityProviderTypeDef(TypedDict):
+    EwsEndpoint: NotRequired[str],
+    EwsUsername: NotRequired[str],
+```
+
 ## BookingOptionsTypeDef
 
 ```python title="Usage Example"
@@ -130,6 +163,26 @@ class CreateAliasRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     EntityId: str,
     Alias: str,
+```
+
+## EwsAvailabilityProviderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import EwsAvailabilityProviderTypeDef
+
+def get_value() -> EwsAvailabilityProviderTypeDef:
+    return {
+        "EwsEndpoint": ...,
+        "EwsUsername": ...,
+        "EwsPassword": ...,
+    }
+```
+
+```python title="Definition"
+class EwsAvailabilityProviderTypeDef(TypedDict):
+    EwsEndpoint: str,
+    EwsUsername: str,
+    EwsPassword: str,
 ```
 
 ## CreateGroupRequestRequestTypeDef
@@ -320,6 +373,24 @@ class DeleteAliasRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     EntityId: str,
     Alias: str,
+```
+
+## DeleteAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DeleteAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: str,
 ```
 
 ## DeleteEmailMonitoringConfigurationRequestRequestTypeDef
@@ -927,6 +998,24 @@ class ListAliasesRequestRequestTypeDef(TypedDict):
     EntityId: str,
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
+```
+
+## ListAvailabilityConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAvailabilityConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListAvailabilityConfigurationsRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAvailabilityConfigurationsRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## ListGroupMembersRequestRequestTypeDef
@@ -1684,6 +1773,30 @@ class UpdatePrimaryEmailAddressRequestRequestTypeDef(TypedDict):
     Email: str,
 ```
 
+## AvailabilityConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import AvailabilityConfigurationTypeDef
+
+def get_value() -> AvailabilityConfigurationTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class AvailabilityConfigurationTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    ProviderType: NotRequired[AvailabilityProviderTypeType],  # (1)
+    EwsProvider: NotRequired[RedactedEwsAvailabilityProviderTypeDef],  # (2)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (3)
+    DateCreated: NotRequired[datetime],
+    DateModified: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: AvailabilityProviderTypeType](./literals.md#availabilityprovidertypetype) 
+2. See [:material-code-braces: RedactedEwsAvailabilityProviderTypeDef](./type_defs.md#redactedewsavailabilityprovidertypedef) 
+3. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
 ## UpdateResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1705,6 +1818,72 @@ class UpdateResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
+## CreateAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: str,
+    ClientToken: NotRequired[str],
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## TestAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import TestAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> TestAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class TestAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: NotRequired[str],
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## UpdateAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import UpdateAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: str,
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
 ## CreateGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -2172,6 +2351,27 @@ class StartMailboxExportJobResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestAvailabilityConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import TestAvailabilityConfigurationResponseTypeDef
+
+def get_value() -> TestAvailabilityConfigurationResponseTypeDef:
+    return {
+        "TestPassed": ...,
+        "FailureReason": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestAvailabilityConfigurationResponseTypeDef(TypedDict):
+    TestPassed: bool,
+    FailureReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOrganizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2356,6 +2556,24 @@ def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
 class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
     OrganizationId: str,
     EntityId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef
+
+def get_value() -> ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAvailabilityConfigurationsRequestListAvailabilityConfigurationsPaginateTypeDef(TypedDict):
+    OrganizationId: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -2725,4 +2943,26 @@ class ListUsersResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAvailabilityConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListAvailabilityConfigurationsResponseTypeDef
+
+def get_value() -> ListAvailabilityConfigurationsResponseTypeDef:
+    return {
+        "AvailabilityConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAvailabilityConfigurationsResponseTypeDef(TypedDict):
+    AvailabilityConfigurations: List[AvailabilityConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AvailabilityConfigurationTypeDef](./type_defs.md#availabilityconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
