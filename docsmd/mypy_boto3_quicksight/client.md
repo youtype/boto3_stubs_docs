@@ -132,7 +132,8 @@ def close(
 
 ### create\_account\_customization
 
-Creates Amazon QuickSight customizations the current Amazon Web Services Region.
+Creates Amazon QuickSight customizations for the current Amazon Web Services
+Region.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").create_account_customization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
@@ -164,6 +165,55 @@ parent.create_account_customization(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateAccountCustomizationRequestRequestTypeDef](./type_defs.md#createaccountcustomizationrequestrequesttypedef) 
+
+### create\_account\_subscription
+
+Creates an Amazon QuickSight account, or subscribes to Amazon QuickSight Q.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").create_account_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_subscription)
+
+```python title="Method definition"
+def create_account_subscription(
+    self,
+    *,
+    Edition: EditionType,  # (1)
+    AuthenticationMethod: AuthenticationMethodOptionType,  # (2)
+    AwsAccountId: str,
+    AccountName: str,
+    NotificationEmail: str,
+    ActiveDirectoryName: str = ...,
+    Realm: str = ...,
+    DirectoryId: str = ...,
+    AdminGroup: Sequence[str] = ...,
+    AuthorGroup: Sequence[str] = ...,
+    ReaderGroup: Sequence[str] = ...,
+    FirstName: str = ...,
+    LastName: str = ...,
+    EmailAddress: str = ...,
+    ContactNumber: str = ...,
+) -> CreateAccountSubscriptionResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: EditionType](./literals.md#editiontype) 
+2. See [:material-code-brackets: AuthenticationMethodOptionType](./literals.md#authenticationmethodoptiontype) 
+3. See [:material-code-braces: CreateAccountSubscriptionResponseTypeDef](./type_defs.md#createaccountsubscriptionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateAccountSubscriptionRequestRequestTypeDef = {  # (1)
+    "Edition": ...,
+    "AuthenticationMethod": ...,
+    "AwsAccountId": ...,
+    "AccountName": ...,
+    "NotificationEmail": ...,
+}
+
+parent.create_account_subscription(**kwargs)
+```
+
+1. See [:material-code-braces: CreateAccountSubscriptionRequestRequestTypeDef](./type_defs.md#createaccountsubscriptionrequestrequesttypedef) 
 
 ### create\_analysis
 
@@ -1384,6 +1434,36 @@ parent.describe_account_settings(**kwargs)
 
 1. See [:material-code-braces: DescribeAccountSettingsRequestRequestTypeDef](./type_defs.md#describeaccountsettingsrequestrequesttypedef) 
 
+### describe\_account\_subscription
+
+Use the DescribeAccountSubscription operation to receive a description of a
+Amazon QuickSight account's subscription.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_account_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_subscription)
+
+```python title="Method definition"
+def describe_account_subscription(
+    self,
+    *,
+    AwsAccountId: str,
+) -> DescribeAccountSubscriptionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAccountSubscriptionResponseTypeDef](./type_defs.md#describeaccountsubscriptionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountSubscriptionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
+
+parent.describe_account_subscription(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAccountSubscriptionRequestRequestTypeDef](./type_defs.md#describeaccountsubscriptionrequestrequesttypedef) 
+
 ### describe\_analysis
 
 Provides a summary of the metadata for an analysis.
@@ -2168,6 +2248,7 @@ def generate_embed_url_for_anonymous_user(
     ExperienceConfiguration: AnonymousUserEmbeddingExperienceConfigurationTypeDef,  # (1)
     SessionLifetimeInMinutes: int = ...,
     SessionTags: Sequence[SessionTagTypeDef] = ...,  # (2)
+    AllowedDomains: Sequence[str] = ...,
 ) -> GenerateEmbedUrlForAnonymousUserResponseTypeDef:  # (3)
     ...
 ```
@@ -2206,6 +2287,7 @@ def generate_embed_url_for_registered_user(
     UserArn: str,
     ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
     SessionLifetimeInMinutes: int = ...,
+    AllowedDomains: Sequence[str] = ...,
 ) -> GenerateEmbedUrlForRegisteredUserResponseTypeDef:  # (2)
     ...
 ```
@@ -2247,8 +2329,8 @@ def generate_presigned_url(
 
 ### get\_dashboard\_embed\_url
 
-Generates a session URL and authorization code that you can use to embed an
-Amazon Amazon QuickSight read-only dashboard in your web server code.
+Generates a temporary session URL and authorization code that you can use to
+embed an Amazon QuickSight read-only dashboard in your website or application.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").get_dashboard_embed_url` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
@@ -3325,7 +3407,8 @@ parent.untag_resource(**kwargs)
 
 ### update\_account\_customization
 
-Updates Amazon QuickSight customizations the current Amazon Web Services Region.
+Updates Amazon QuickSight customizations for the current Amazon Web Services
+Region.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").update_account_customization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
@@ -3913,8 +3996,8 @@ parent.update_ip_restriction(**kwargs)
 
 ### update\_public\_sharing\_settings
 
-Use the UpdatePublicSharingSettings operation to enable or disable the public
-sharing settings of an Amazon QuickSight dashboard.
+Use the `UpdatePublicSharingSettings` operation to turn on or turn off the
+public sharing settings of an Amazon QuickSight dashboard.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").update_public_sharing_settings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_public_sharing_settings)

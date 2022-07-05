@@ -2503,8 +2503,7 @@ parent.put_organization_config_rule(**kwargs)
 
 ### put\_organization\_conformance\_pack
 
-Deploys conformance packs across member accounts in an Amazon Web Services
-Organization.
+.
 
 Type annotations and code completion for `#!python boto3.client("config").put_organization_conformance_pack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)

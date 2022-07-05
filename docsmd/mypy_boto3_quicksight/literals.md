@@ -60,6 +60,22 @@ AssignmentStatusType = Literal[
     "ENABLED",
 ]
 ```
+## AuthenticationMethodOptionType
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import AuthenticationMethodOptionType
+
+def get_value() -> AuthenticationMethodOptionType:
+    return "ACTIVE_DIRECTORY"
+```
+
+```python title="Definition"
+AuthenticationMethodOptionType = Literal[
+    "ACTIVE_DIRECTORY",
+    "IAM_AND_QUICKSIGHT",
+    "IAM_ONLY",
+]
+```
 ## ColumnDataTypeType
 
 ```python title="Usage Example"
@@ -245,6 +261,7 @@ def get_value() -> EditionType:
 ```python title="Definition"
 EditionType = Literal[
     "ENTERPRISE",
+    "ENTERPRISE_AND_Q",
     "STANDARD",
 ]
 ```
@@ -1234,6 +1251,7 @@ ServiceName = Literal[
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",
+    "rolesanywhere",
     "route53",
     "route53-recovery-cluster",
     "route53-recovery-control-config",

@@ -63,12 +63,12 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("rds")  # (1)
 
-    waiter = client.get_waiter("db_cluster_snapshot_available")  # (2)
+    waiter = client.get_waiter("db_cluster_available")  # (2)
     waiter.wait()
     ```
 
     1. client: [RDSClient](./client.md)
-    2. waiter: [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
+    2. waiter: [DBClusterAvailableWaiter](./waiters.md#dbclusteravailablewaiter)
 
 
 ### Explicit type annotations
@@ -127,12 +127,12 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_rds.client import RDSClient
-    from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
+    from mypy_boto3_rds.waiter import DBClusterAvailableWaiter
 
     session = Session()
     client: RDSClient = session.client("rds")
 
-    waiter: DBClusterSnapshotAvailableWaiter = client.get_waiter("db_cluster_snapshot_available")
+    waiter: DBClusterAvailableWaiter = client.get_waiter("db_cluster_available")
     waiter.wait()
     ```
 

@@ -6371,6 +6371,52 @@ class DescribeDBClusterSnapshotsMessageDBClusterSnapshotDeletedWaitTypeDef(Typed
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeDBClustersMessageDBClusterAvailableWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DescribeDBClustersMessageDBClusterAvailableWaitTypeDef
+
+def get_value() -> DescribeDBClustersMessageDBClusterAvailableWaitTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClustersMessageDBClusterAvailableWaitTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    IncludeShared: NotRequired[bool],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeDBClustersMessageDBClusterDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DescribeDBClustersMessageDBClusterDeletedWaitTypeDef
+
+def get_value() -> DescribeDBClustersMessageDBClusterDeletedWaitTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClustersMessageDBClusterDeletedWaitTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    IncludeShared: NotRequired[bool],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef
 
 ```python title="Usage Example"

@@ -643,6 +643,21 @@ MergeStrategyType = Literal[
     "Overwrite",
 ]
 ```
+## MessageSelectionStrategyType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import MessageSelectionStrategyType
+
+def get_value() -> MessageSelectionStrategyType:
+    return "Ordered"
+```
+
+```python title="Definition"
+MessageSelectionStrategyType = Literal[
+    "Ordered",
+    "Random",
+]
+```
 ## ObfuscationSettingTypeType
 
 ```python title="Usage Example"
@@ -1136,6 +1151,7 @@ ServiceName = Literal[
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",
+    "rolesanywhere",
     "route53",
     "route53-recovery-cluster",
     "route53-recovery-control-config",

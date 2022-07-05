@@ -555,6 +555,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-robomaker](./mypy_boto3_robomaker/README.md) for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker) service
 
+- [mypy-boto3-rolesanywhere](./mypy_boto3_rolesanywhere/README.md) for [IAMRolesAnywhere](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rolesanywhere.html#IAMRolesAnywhere) service
+
 - [mypy-boto3-route53](./mypy_boto3_route53/README.md) for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53) service
 
 - [mypy-boto3-route53-recovery-cluster](./mypy_boto3_route53_recovery_cluster/README.md) for [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster) service

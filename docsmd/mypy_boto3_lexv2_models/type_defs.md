@@ -4744,9 +4744,11 @@ class PromptSpecificationTypeDef(TypedDict):
     messageGroups: Sequence[MessageGroupTypeDef],  # (1)
     maxRetries: int,
     allowInterrupt: NotRequired[bool],
+    messageSelectionStrategy: NotRequired[MessageSelectionStrategyType],  # (2)
 ```
 
 1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
+2. See [:material-code-brackets: MessageSelectionStrategyType](./literals.md#messageselectionstrategytype) 
 ## ResponseSpecificationTypeDef
 
 ```python title="Usage Example"

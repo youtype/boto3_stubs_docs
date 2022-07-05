@@ -980,6 +980,7 @@ def update_response_plan(
     incidentTemplateImpact: int = ...,
     incidentTemplateNotificationTargets: Sequence[NotificationTargetItemTypeDef] = ...,  # (3)
     incidentTemplateSummary: str = ...,
+    incidentTemplateTags: Mapping[str, str] = ...,
     incidentTemplateTitle: str = ...,
 ) -> Dict[str, Any]:
     ...

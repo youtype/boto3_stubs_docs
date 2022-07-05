@@ -7,6 +7,98 @@
     Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
     type annotations stubs module [mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
+## DBClusterAvailableWaiter
+
+Type annotations and code completion for `#!python boto3.client("rds").get_waiter("db_cluster_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBClusterAvailable)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rds.waiter import DBClusterAvailableWaiter
+
+def get_db_cluster_available_waiter() -> DBClusterAvailableWaiter:
+    return Session().client("rds").get_waiter("db_cluster_available")
+```
+
+
+### wait
+
+Type annotations and code completion for `#!python DBClusterAvailableWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    IncludeShared: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClustersMessageDBClusterAvailableWaitTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClustersMessageDBClusterAvailableWaitTypeDef](./type_defs.md#describedbclustersmessagedbclusteravailablewaittypedef) 
+## DBClusterDeletedWaiter
+
+Type annotations and code completion for `#!python boto3.client("rds").get_waiter("db_cluster_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBClusterDeleted)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rds.waiter import DBClusterDeletedWaiter
+
+def get_db_cluster_deleted_waiter() -> DBClusterDeletedWaiter:
+    return Session().client("rds").get_waiter("db_cluster_deleted")
+```
+
+
+### wait
+
+Type annotations and code completion for `#!python DBClusterDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    IncludeShared: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClustersMessageDBClusterDeletedWaitTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClustersMessageDBClusterDeletedWaitTypeDef](./type_defs.md#describedbclustersmessagedbclusterdeletedwaittypedef) 
 ## DBClusterSnapshotAvailableWaiter
 
 Type annotations and code completion for `#!python boto3.client("rds").get_waiter("db_cluster_snapshot_available")`.

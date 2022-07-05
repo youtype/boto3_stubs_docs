@@ -145,12 +145,14 @@ from `#!python boto3.client("rds").get_waiter("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
+from mypy_boto3_rds.waiter import DBClusterAvailableWaiter
 
-def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWaiter:
-    return Session().client("rds").get_waiter("db_cluster_snapshot_available")
+def get_db_cluster_available_waiter() -> DBClusterAvailableWaiter:
+    return Session().client("rds").get_waiter("db_cluster_available")
 ```
 
+- [DBClusterAvailableWaiter](./waiters.md#dbclusteravailablewaiter)
+- [DBClusterDeletedWaiter](./waiters.md#dbclusterdeletedwaiter)
 - [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
 - [DBClusterSnapshotDeletedWaiter](./waiters.md#dbclustersnapshotdeletedwaiter)
 - [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
@@ -182,6 +184,8 @@ def get_value() -> ActivityStreamModeType:
 - [AuthSchemeType](./literals.md#authschemetype)
 - [AutomationModeType](./literals.md#automationmodetype)
 - [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
+- [DBClusterAvailableWaiterName](./literals.md#dbclusteravailablewaitername)
+- [DBClusterDeletedWaiterName](./literals.md#dbclusterdeletedwaitername)
 - [DBClusterSnapshotAvailableWaiterName](./literals.md#dbclustersnapshotavailablewaitername)
 - [DBClusterSnapshotDeletedWaiterName](./literals.md#dbclustersnapshotdeletedwaitername)
 - [DBInstanceAvailableWaiterName](./literals.md#dbinstanceavailablewaitername)
@@ -541,6 +545,8 @@ def get_value() -> AccountQuotaTypeDef:
 - [DownloadDBLogFilePortionMessageDownloadDBLogFilePortionPaginateTypeDef](./type_defs.md#downloaddblogfileportionmessagedownloaddblogfileportionpaginatetypedef)
 - [DescribeDBClusterSnapshotsMessageDBClusterSnapshotAvailableWaitTypeDef](./type_defs.md#describedbclustersnapshotsmessagedbclustersnapshotavailablewaittypedef)
 - [DescribeDBClusterSnapshotsMessageDBClusterSnapshotDeletedWaitTypeDef](./type_defs.md#describedbclustersnapshotsmessagedbclustersnapshotdeletedwaittypedef)
+- [DescribeDBClustersMessageDBClusterAvailableWaitTypeDef](./type_defs.md#describedbclustersmessagedbclusteravailablewaittypedef)
+- [DescribeDBClustersMessageDBClusterDeletedWaitTypeDef](./type_defs.md#describedbclustersmessagedbclusterdeletedwaittypedef)
 - [DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstanceavailablewaittypedef)
 - [DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstancedeletedwaittypedef)
 - [DescribeDBSnapshotsMessageDBSnapshotAvailableWaitTypeDef](./type_defs.md#describedbsnapshotsmessagedbsnapshotavailablewaittypedef)

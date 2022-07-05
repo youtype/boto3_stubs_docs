@@ -99,6 +99,34 @@ CustomEngineVersionStatusType = Literal[
     "inactive-except-restore",
 ]
 ```
+## DBClusterAvailableWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import DBClusterAvailableWaiterName
+
+def get_value() -> DBClusterAvailableWaiterName:
+    return "db_cluster_available"
+```
+
+```python title="Definition"
+DBClusterAvailableWaiterName = Literal[
+    "db_cluster_available",
+]
+```
+## DBClusterDeletedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import DBClusterDeletedWaiterName
+
+def get_value() -> DBClusterDeletedWaiterName:
+    return "db_cluster_deleted"
+```
+
+```python title="Definition"
+DBClusterDeletedWaiterName = Literal[
+    "db_cluster_deleted",
+]
+```
 ## DBClusterSnapshotAvailableWaiterName
 
 ```python title="Usage Example"
@@ -1163,6 +1191,7 @@ ServiceName = Literal[
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",
+    "rolesanywhere",
     "route53",
     "route53-recovery-cluster",
     "route53-recovery-control-config",
@@ -1307,11 +1336,13 @@ PaginatorName = Literal[
 from mypy_boto3_rds.literals import WaiterName
 
 def get_value() -> WaiterName:
-    return "db_cluster_snapshot_available"
+    return "db_cluster_available"
 ```
 
 ```python title="Definition"
 WaiterName = Literal[
+    "db_cluster_available",
+    "db_cluster_deleted",
     "db_cluster_snapshot_available",
     "db_cluster_snapshot_deleted",
     "db_instance_available",

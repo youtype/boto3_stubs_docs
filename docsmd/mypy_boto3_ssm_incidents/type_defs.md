@@ -1195,6 +1195,7 @@ class IncidentTemplateTypeDef(TypedDict):
     impact: int,
     title: str,
     dedupeString: NotRequired[str],
+    incidentTags: NotRequired[Mapping[str, str]],
     notificationTargets: NotRequired[Sequence[NotificationTargetItemTypeDef]],  # (1)
     summary: NotRequired[str],
 ```
@@ -1605,6 +1606,7 @@ class UpdateResponsePlanInputRequestTypeDef(TypedDict):
     incidentTemplateImpact: NotRequired[int],
     incidentTemplateNotificationTargets: NotRequired[Sequence[NotificationTargetItemTypeDef]],  # (3)
     incidentTemplateSummary: NotRequired[str],
+    incidentTemplateTags: NotRequired[Mapping[str, str]],
     incidentTemplateTitle: NotRequired[str],
 ```
 

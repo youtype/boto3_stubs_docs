@@ -5167,6 +5167,8 @@ Type annotations and code completion for `#!python boto3.client("rds").get_pagin
 
 Type annotations and code completion for `#!python boto3.client("rds").get_waiter` method with overloads.
 
+- `client.get_waiter("db_cluster_available")` -> [DBClusterAvailableWaiter](./waiters.md#dbclusteravailablewaiter)
+- `client.get_waiter("db_cluster_deleted")` -> [DBClusterDeletedWaiter](./waiters.md#dbclusterdeletedwaiter)
 - `client.get_waiter("db_cluster_snapshot_available")` -> [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
 - `client.get_waiter("db_cluster_snapshot_deleted")` -> [DBClusterSnapshotDeletedWaiter](./waiters.md#dbclustersnapshotdeletedwaiter)
 - `client.get_waiter("db_instance_available")` -> [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)

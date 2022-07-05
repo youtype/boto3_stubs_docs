@@ -145,6 +145,7 @@ def get_value() -> AggregatedUtterancesFilterNameType:
 - [IntentFilterOperatorType](./literals.md#intentfilteroperatortype)
 - [IntentSortAttributeType](./literals.md#intentsortattributetype)
 - [MergeStrategyType](./literals.md#mergestrategytype)
+- [MessageSelectionStrategyType](./literals.md#messageselectionstrategytype)
 - [ObfuscationSettingTypeType](./literals.md#obfuscationsettingtypetype)
 - [SearchOrderType](./literals.md#searchordertype)
 - [SlotConstraintType](./literals.md#slotconstrainttype)
