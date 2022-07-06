@@ -25,6 +25,24 @@ class S3EncryptionConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionModeType](./literals.md#encryptionmodetype) 
+## AssociateResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import AssociateResourceRequestRequestTypeDef
+
+def get_value() -> AssociateResourceRequestRequestTypeDef:
+    return {
+        "GroupIdentifier": ...,
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateResourceRequestRequestTypeDef(TypedDict):
+    GroupIdentifier: str,
+    ResourceArn: str,
+```
+
 ## BaseScreenshotTypeDef
 
 ```python title="Usage Example"
@@ -285,6 +303,44 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## CreateGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import CreateGroupRequestRequestTypeDef
+
+def get_value() -> CreateGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+## GroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    CreatedTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
+
 ## DeleteCanaryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -300,6 +356,22 @@ def get_value() -> DeleteCanaryRequestRequestTypeDef:
 class DeleteCanaryRequestRequestTypeDef(TypedDict):
     Name: str,
     DeleteLambda: NotRequired[bool],
+```
+
+## DeleteGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import DeleteGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGroupRequestRequestTypeDef:
+    return {
+        "GroupIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGroupRequestRequestTypeDef(TypedDict):
+    GroupIdentifier: str,
 ```
 
 ## DescribeCanariesLastRunRequestRequestTypeDef
@@ -374,6 +446,24 @@ class RuntimeVersionTypeDef(TypedDict):
     DeprecationDate: NotRequired[datetime],
 ```
 
+## DisassociateResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import DisassociateResourceRequestRequestTypeDef
+
+def get_value() -> DisassociateResourceRequestRequestTypeDef:
+    return {
+        "GroupIdentifier": ...,
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateResourceRequestRequestTypeDef(TypedDict):
+    GroupIdentifier: str,
+    ResourceArn: str,
+```
+
 ## GetCanaryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -404,6 +494,93 @@ def get_value() -> GetCanaryRunsRequestRequestTypeDef:
 ```python title="Definition"
 class GetCanaryRunsRequestRequestTypeDef(TypedDict):
     Name: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## GetGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import GetGroupRequestRequestTypeDef
+
+def get_value() -> GetGroupRequestRequestTypeDef:
+    return {
+        "GroupIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetGroupRequestRequestTypeDef(TypedDict):
+    GroupIdentifier: str,
+```
+
+## GroupSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import GroupSummaryTypeDef
+
+def get_value() -> GroupSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GroupSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
+## ListAssociatedGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListAssociatedGroupsRequestRequestTypeDef
+
+def get_value() -> ListAssociatedGroupsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedGroupsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListGroupResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListGroupResourcesRequestRequestTypeDef
+
+def get_value() -> ListGroupResourcesRequestRequestTypeDef:
+    return {
+        "GroupIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupResourcesRequestRequestTypeDef(TypedDict):
+    GroupIdentifier: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListGroupsRequestRequestTypeDef
+
+def get_value() -> ListGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
 ```
@@ -584,6 +761,27 @@ class CanaryRunTypeDef(TypedDict):
 
 1. See [:material-code-braces: CanaryRunStatusTypeDef](./type_defs.md#canaryrunstatustypedef) 
 2. See [:material-code-braces: CanaryRunTimelineTypeDef](./type_defs.md#canaryruntimelinetypedef) 
+## ListGroupResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListGroupResourcesResponseTypeDef
+
+def get_value() -> ListGroupResourcesResponseTypeDef:
+    return {
+        "Resources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupResourcesResponseTypeDef(TypedDict):
+    Resources: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -603,6 +801,46 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import CreateGroupResponseTypeDef
+
+def get_value() -> CreateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import GetGroupResponseTypeDef
+
+def get_value() -> GetGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuntimeVersionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -624,6 +862,50 @@ class DescribeRuntimeVersionsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RuntimeVersionTypeDef](./type_defs.md#runtimeversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociatedGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListAssociatedGroupsResponseTypeDef
+
+def get_value() -> ListAssociatedGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_synthetics.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCanaryRequestRequestTypeDef
 

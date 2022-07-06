@@ -7,6 +7,23 @@
     Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
     type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
+## AccountFilterTypeType
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.literals import AccountFilterTypeType
+
+def get_value() -> AccountFilterTypeType:
+    return "DIFFERENCE"
+```
+
+```python title="Definition"
+AccountFilterTypeType = Literal[
+    "DIFFERENCE",
+    "INTERSECTION",
+    "NONE",
+    "UNION",
+]
+```
 ## AccountGateStatusType
 
 ```python title="Usage Example"

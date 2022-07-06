@@ -317,8 +317,10 @@ class DeploymentTargetsTypeDef(TypedDict):
     Accounts: NotRequired[Sequence[str]],
     AccountsUrl: NotRequired[str],
     OrganizationalUnitIds: NotRequired[Sequence[str]],
+    AccountFilterType: NotRequired[AccountFilterTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: AccountFilterTypeType](./literals.md#accountfiltertypetype) 
 ## StackSetOperationPreferencesTypeDef
 
 ```python title="Usage Example"

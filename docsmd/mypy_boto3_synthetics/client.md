@@ -32,11 +32,16 @@ client = boto3.client("synthetics")
 try:
     do_something(client)
 except (
+    client.BadRequestException,
     client.ClientError,
     client.ConflictException,
+    client.InternalFailureException,
     client.InternalServerException,
+    client.NotFoundException,
     client.RequestEntityTooLargeException,
     client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.TooManyRequestsException,
     client.ValidationException,
 ) as e:
     print(e)
@@ -45,13 +50,43 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_synthetics.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
 
 ## Methods
 
+
+### associate\_resource
+
+Associates a canary with a group.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").associate_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.associate_resource)
+
+```python title="Method definition"
+def associate_resource(
+    self,
+    *,
+    GroupIdentifier: str,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateResourceRequestRequestTypeDef = {  # (1)
+    "GroupIdentifier": ...,
+    "ResourceArn": ...,
+}
+
+parent.associate_resource(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateResourceRequestRequestTypeDef](./type_defs.md#associateresourcerequestrequesttypedef) 
 
 ### can\_paginate
 
@@ -134,6 +169,37 @@ parent.create_canary(**kwargs)
 
 1. See [:material-code-braces: CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef) 
 
+### create\_group
+
+Creates a group which you can use to associate canaries with each other,
+including cross-Region canaries.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_group)
+
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    Name: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.create_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
+
 ### delete\_canary
 
 Permanently deletes the specified canary.
@@ -162,6 +228,34 @@ parent.delete_canary(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteCanaryRequestRequestTypeDef](./type_defs.md#deletecanaryrequestrequesttypedef) 
+
+### delete\_group
+
+Deletes a group.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_group)
+
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupIdentifier: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupIdentifier": ...,
+}
+
+parent.delete_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
 ### describe\_canaries
 
@@ -257,6 +351,36 @@ parent.describe_runtime_versions(**kwargs)
 
 1. See [:material-code-braces: DescribeRuntimeVersionsRequestRequestTypeDef](./type_defs.md#describeruntimeversionsrequestrequesttypedef) 
 
+### disassociate\_resource
+
+Removes a canary from a group.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").disassociate_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.disassociate_resource)
+
+```python title="Method definition"
+def disassociate_resource(
+    self,
+    *,
+    GroupIdentifier: str,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateResourceRequestRequestTypeDef = {  # (1)
+    "GroupIdentifier": ...,
+    "ResourceArn": ...,
+}
+
+parent.disassociate_resource(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateResourceRequestRequestTypeDef](./type_defs.md#disassociateresourcerequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -336,9 +460,132 @@ parent.get_canary_runs(**kwargs)
 
 1. See [:material-code-braces: GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef) 
 
+### get\_group
+
+Returns information about one group.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").get_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_group)
+
+```python title="Method definition"
+def get_group(
+    self,
+    *,
+    GroupIdentifier: str,
+) -> GetGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetGroupRequestRequestTypeDef = {  # (1)
+    "GroupIdentifier": ...,
+}
+
+parent.get_group(**kwargs)
+```
+
+1. See [:material-code-braces: GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef) 
+
+### list\_associated\_groups
+
+Returns a list of the groups that the specified canary is associated with.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").list_associated_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_associated_groups)
+
+```python title="Method definition"
+def list_associated_groups(
+    self,
+    *,
+    ResourceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAssociatedGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAssociatedGroupsResponseTypeDef](./type_defs.md#listassociatedgroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedGroupsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.list_associated_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociatedGroupsRequestRequestTypeDef](./type_defs.md#listassociatedgroupsrequestrequesttypedef) 
+
+### list\_group\_resources
+
+This operation returns a list of the ARNs of the canaries that are associated
+with the specified group.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").list_group_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_group_resources)
+
+```python title="Method definition"
+def list_group_resources(
+    self,
+    *,
+    GroupIdentifier: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupResourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListGroupResourcesResponseTypeDef](./type_defs.md#listgroupresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupResourcesRequestRequestTypeDef = {  # (1)
+    "GroupIdentifier": ...,
+}
+
+parent.list_group_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupResourcesRequestRequestTypeDef](./type_defs.md#listgroupresourcesrequestrequesttypedef) 
+
+### list\_groups
+
+Returns a list of all groups in the account, displaying their names, unique IDs,
+and ARNs.
+
+Type annotations and code completion for `#!python boto3.client("synthetics").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_groups)
+
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
-Displays the tags associated with a canary.
+Displays the tags associated with a canary or group.
 
 Type annotations and code completion for `#!python boto3.client("synthetics").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource)
@@ -423,7 +670,7 @@ parent.stop_canary(**kwargs)
 
 ### tag\_resource
 
-Assigns one or more tags (key-value pairs) to the specified canary.
+Assigns one or more tags (key-value pairs) to the specified canary or group.
 
 Type annotations and code completion for `#!python boto3.client("synthetics").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource)
@@ -453,7 +700,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-Removes one or more tags from the specified canary.
+Removes one or more tags from the specified resource.
 
 Type annotations and code completion for `#!python boto3.client("synthetics").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource)
@@ -483,8 +730,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_canary
 
-Use this operation to change the settings of a canary that has already been
-created.
+Updates the configuration of a canary that has already been created.
 
 Type annotations and code completion for `#!python boto3.client("synthetics").update_canary` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary)
