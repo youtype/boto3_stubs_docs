@@ -5960,7 +5960,7 @@ parent.put_verification_state_on_violation(**kwargs)
 
 ### register\_ca\_certificate
 
-Registers a CA certificate with IoT.
+Registers a CA certificate with Amazon Web Services IoT Core.
 
 Type annotations and code completion for `#!python boto3.client("iot").register_ca_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
@@ -5970,24 +5970,25 @@ def register_ca_certificate(
     self,
     *,
     caCertificate: str,
-    verificationCertificate: str,
+    verificationCertificate: str = ...,
     setAsActive: bool = ...,
     allowAutoRegistration: bool = ...,
     registrationConfig: RegistrationConfigTypeDef = ...,  # (1)
     tags: Sequence[TagTypeDef] = ...,  # (2)
-) -> RegisterCACertificateResponseTypeDef:  # (3)
+    certificateMode: CertificateModeType = ...,  # (3)
+) -> RegisterCACertificateResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef) 
+3. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
+4. See [:material-code-braces: RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: RegisterCACertificateRequestRequestTypeDef = {  # (1)
     "caCertificate": ...,
-    "verificationCertificate": ...,
 }
 
 parent.register_ca_certificate(**kwargs)
@@ -5997,7 +5998,9 @@ parent.register_ca_certificate(**kwargs)
 
 ### register\_certificate
 
-Registers a device certificate with IoT.
+Registers a device certificate with IoT in the same [certificate
+mode](https://docs.aws.amazon.com/iot/latest/apireference/API_CertificateDescription.html#iot-
+Type-CertificateDescription-certificateMode)_ as the signing CA.
 
 Type annotations and code completion for `#!python boto3.client("iot").register_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)

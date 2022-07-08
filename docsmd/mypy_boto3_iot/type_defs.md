@@ -8129,11 +8129,13 @@ class CACertificateDescriptionTypeDef(TypedDict):
     customerVersion: NotRequired[int],
     generationId: NotRequired[str],
     validity: NotRequired[CertificateValidityTypeDef],  # (3)
+    certificateMode: NotRequired[CertificateModeType],  # (4)
 ```
 
 1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
 2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
 3. See [:material-code-braces: CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef) 
+4. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
 ## ListCACertificatesResponseTypeDef
 
 ```python title="Usage Example"
@@ -8755,22 +8757,23 @@ from mypy_boto3_iot.type_defs import RegisterCACertificateRequestRequestTypeDef
 def get_value() -> RegisterCACertificateRequestRequestTypeDef:
     return {
         "caCertificate": ...,
-        "verificationCertificate": ...,
     }
 ```
 
 ```python title="Definition"
 class RegisterCACertificateRequestRequestTypeDef(TypedDict):
     caCertificate: str,
-    verificationCertificate: str,
+    verificationCertificate: NotRequired[str],
     setAsActive: NotRequired[bool],
     allowAutoRegistration: NotRequired[bool],
     registrationConfig: NotRequired[RegistrationConfigTypeDef],  # (1)
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    certificateMode: NotRequired[CertificateModeType],  # (3)
 ```
 
 1. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: CertificateModeType](./literals.md#certificatemodetype) 
 ## UpdateCACertificateRequestRequestTypeDef
 
 ```python title="Usage Example"

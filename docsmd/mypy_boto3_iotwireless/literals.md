@@ -255,6 +255,79 @@ PartnerTypeType = Literal[
     "Sidewalk",
 ]
 ```
+## PositionConfigurationFecType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositionConfigurationFecType
+
+def get_value() -> PositionConfigurationFecType:
+    return "NONE"
+```
+
+```python title="Definition"
+PositionConfigurationFecType = Literal[
+    "NONE",
+    "ROSE",
+]
+```
+## PositionConfigurationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositionConfigurationStatusType
+
+def get_value() -> PositionConfigurationStatusType:
+    return "Disabled"
+```
+
+```python title="Definition"
+PositionConfigurationStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
+## PositionResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositionResourceTypeType
+
+def get_value() -> PositionResourceTypeType:
+    return "WirelessDevice"
+```
+
+```python title="Definition"
+PositionResourceTypeType = Literal[
+    "WirelessDevice",
+    "WirelessGateway",
+]
+```
+## PositionSolverProviderType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositionSolverProviderType
+
+def get_value() -> PositionSolverProviderType:
+    return "Semtech"
+```
+
+```python title="Definition"
+PositionSolverProviderType = Literal[
+    "Semtech",
+]
+```
+## PositionSolverTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositionSolverTypeType
+
+def get_value() -> PositionSolverTypeType:
+    return "GNSS"
+```
+
+```python title="Definition"
+PositionSolverTypeType = Literal[
+    "GNSS",
+]
+```
 ## SigningAlgType
 
 ```python title="Usage Example"

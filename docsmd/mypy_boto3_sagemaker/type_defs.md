@@ -1675,28 +1675,6 @@ class ProfilerRuleConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProcessingInstanceTypeType](./literals.md#processinginstancetypetype) 
-## ResourceConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ResourceConfigTypeDef
-
-def get_value() -> ResourceConfigTypeDef:
-    return {
-        "InstanceType": ...,
-        "InstanceCount": ...,
-        "VolumeSizeInGB": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceConfigTypeDef(TypedDict):
-    InstanceType: TrainingInstanceTypeType,  # (1)
-    InstanceCount: int,
-    VolumeSizeInGB: int,
-    VolumeKmsKeyId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
 ## RetryStrategyTypeDef
 
 ```python title="Usage Example"
@@ -2104,6 +2082,7 @@ class S3DataSourceTypeDef(TypedDict):
     S3Uri: str,
     S3DataDistributionType: NotRequired[S3DataDistributionType],  # (2)
     AttributeNames: NotRequired[Sequence[str]],
+    InstanceGroupNames: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: S3DataTypeType](./literals.md#s3datatypetype) 
@@ -4850,6 +4829,27 @@ class InferenceRecommendationsJobTypeDef(TypedDict):
 
 1. See [:material-code-brackets: RecommendationJobTypeType](./literals.md#recommendationjobtypetype) 
 2. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+## InstanceGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InstanceGroupTypeDef
+
+def get_value() -> InstanceGroupTypeDef:
+    return {
+        "InstanceType": ...,
+        "InstanceCount": ...,
+        "InstanceGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceGroupTypeDef(TypedDict):
+    InstanceType: TrainingInstanceTypeType,  # (1)
+    InstanceCount: int,
+    InstanceGroupName: str,
+```
+
+1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
 ## IntegerParameterRangeSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -13432,6 +13432,28 @@ class ListInferenceRecommendationsJobsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: InferenceRecommendationsJobTypeDef](./type_defs.md#inferencerecommendationsjobtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ResourceConfigTypeDef
+
+def get_value() -> ResourceConfigTypeDef:
+    return {
+        "VolumeSizeInGB": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceConfigTypeDef(TypedDict):
+    VolumeSizeInGB: int,
+    InstanceType: NotRequired[TrainingInstanceTypeType],  # (1)
+    InstanceCount: NotRequired[int],
+    VolumeKmsKeyId: NotRequired[str],
+    InstanceGroups: NotRequired[Sequence[InstanceGroupTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
+2. See [:material-code-braces: InstanceGroupTypeDef](./type_defs.md#instancegrouptypedef) 
 ## ParameterRangeTypeDef
 
 ```python title="Usage Example"

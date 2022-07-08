@@ -1282,7 +1282,7 @@ parent.get_device_profile(**kwargs)
 
 ### get\_event\_configuration\_by\_resource\_types
 
-Get the event configuration by resource types.
+Get the event configuration based on resource types.
 
 Type annotations and code completion for `#!python boto3.client("iotwireless").get_event_configuration_by_resource_types` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_event_configuration_by_resource_types)
@@ -1459,6 +1459,70 @@ parent.get_partner_account(**kwargs)
 ```
 
 1. See [:material-code-braces: GetPartnerAccountRequestRequestTypeDef](./type_defs.md#getpartneraccountrequestrequesttypedef) 
+
+### get\_position
+
+Get the position information for a given resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").get_position` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_position)
+
+```python title="Method definition"
+def get_position(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+) -> GetPositionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+2. See [:material-code-braces: GetPositionResponseTypeDef](./type_defs.md#getpositionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPositionRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+}
+
+parent.get_position(**kwargs)
+```
+
+1. See [:material-code-braces: GetPositionRequestRequestTypeDef](./type_defs.md#getpositionrequestrequesttypedef) 
+
+### get\_position\_configuration
+
+Get position configuration for a given resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").get_position_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_position_configuration)
+
+```python title="Method definition"
+def get_position_configuration(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+) -> GetPositionConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+2. See [:material-code-braces: GetPositionConfigurationResponseTypeDef](./type_defs.md#getpositionconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPositionConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+}
+
+parent.get_position_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: GetPositionConfigurationRequestRequestTypeDef](./type_defs.md#getpositionconfigurationrequestrequesttypedef) 
 
 ### get\_resource\_event\_configuration
 
@@ -2068,6 +2132,38 @@ parent.list_partner_accounts(**kwargs)
 
 1. See [:material-code-braces: ListPartnerAccountsRequestRequestTypeDef](./type_defs.md#listpartneraccountsrequestrequesttypedef) 
 
+### list\_position\_configurations
+
+List position configurations for a given resource, such as positioning solvers.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").list_position_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_position_configurations)
+
+```python title="Method definition"
+def list_position_configurations(
+    self,
+    *,
+    ResourceType: PositionResourceTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPositionConfigurationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+2. See [:material-code-braces: ListPositionConfigurationsResponseTypeDef](./type_defs.md#listpositionconfigurationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPositionConfigurationsRequestRequestTypeDef = {  # (1)
+    "ResourceType": ...,
+}
+
+parent.list_position_configurations(**kwargs)
+```
+
+1. See [:material-code-braces: ListPositionConfigurationsRequestRequestTypeDef](./type_defs.md#listpositionconfigurationsrequestrequesttypedef) 
+
 ### list\_queued\_messages
 
 List queued messages in the downlink queue.
@@ -2258,6 +2354,40 @@ parent.list_wireless_gateways(**kwargs)
 ```
 
 1. See [:material-code-braces: ListWirelessGatewaysRequestRequestTypeDef](./type_defs.md#listwirelessgatewaysrequestrequesttypedef) 
+
+### put\_position\_configuration
+
+Put position configuration for a given resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").put_position_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.put_position_configuration)
+
+```python title="Method definition"
+def put_position_configuration(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+    Solvers: PositionSolverConfigurationsTypeDef = ...,  # (2)
+    Destination: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+2. See [:material-code-braces: PositionSolverConfigurationsTypeDef](./type_defs.md#positionsolverconfigurationstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutPositionConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+}
+
+parent.put_position_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: PutPositionConfigurationRequestRequestTypeDef](./type_defs.md#putpositionconfigurationrequestrequesttypedef) 
 
 ### put\_resource\_log\_level
 
@@ -2658,7 +2788,7 @@ parent.update_destination(**kwargs)
 
 ### update\_event\_configuration\_by\_resource\_types
 
-Update the event configuration by resource types.
+Update the event configuration based on resource types.
 
 Type annotations and code completion for `#!python boto3.client("iotwireless").update_event_configuration_by_resource_types` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_event_configuration_by_resource_types)
@@ -2858,6 +2988,39 @@ parent.update_partner_account(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdatePartnerAccountRequestRequestTypeDef](./type_defs.md#updatepartneraccountrequestrequesttypedef) 
+
+### update\_position
+
+Update the position information of a resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").update_position` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_position)
+
+```python title="Method definition"
+def update_position(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+    Position: Sequence[float],
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdatePositionRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+    "Position": ...,
+}
+
+parent.update_position(**kwargs)
+```
+
+1. See [:material-code-braces: UpdatePositionRequestRequestTypeDef](./type_defs.md#updatepositionrequestrequesttypedef) 
 
 ### update\_resource\_event\_configuration
 

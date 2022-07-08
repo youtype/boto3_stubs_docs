@@ -209,6 +209,7 @@ def create_meeting(
     NotificationsConfiguration: NotificationsConfigurationTypeDef = ...,  # (1)
     MeetingFeatures: MeetingFeaturesConfigurationTypeDef = ...,  # (2)
     PrimaryMeetingId: str = ...,
+    TenantIds: Sequence[str] = ...,
 ) -> CreateMeetingResponseTypeDef:  # (3)
     ...
 ```
@@ -250,6 +251,7 @@ def create_meeting_with_attendees(
     MeetingFeatures: MeetingFeaturesConfigurationTypeDef = ...,  # (2)
     NotificationsConfiguration: NotificationsConfigurationTypeDef = ...,  # (3)
     PrimaryMeetingId: str = ...,
+    TenantIds: Sequence[str] = ...,
 ) -> CreateMeetingWithAttendeesResponseTypeDef:  # (4)
     ...
 ```

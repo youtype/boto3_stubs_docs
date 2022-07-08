@@ -1921,6 +1921,22 @@ class TestConnectionMessageRequestTypeDef(TypedDict):
     EndpointArn: str,
 ```
 
+## UpdateSubscriptionsToEventBridgeMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import UpdateSubscriptionsToEventBridgeMessageRequestTypeDef
+
+def get_value() -> UpdateSubscriptionsToEventBridgeMessageRequestTypeDef:
+    return {
+        "ForceMove": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSubscriptionsToEventBridgeMessageRequestTypeDef(TypedDict):
+    ForceMove: NotRequired[bool],
+```
+
 ## AddTagsToResourceMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2256,6 +2272,25 @@ def get_value() -> RunFleetAdvisorLsaAnalysisResponseTypeDef:
 class RunFleetAdvisorLsaAnalysisResponseTypeDef(TypedDict):
     LsaAnalysisId: str,
     Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSubscriptionsToEventBridgeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import UpdateSubscriptionsToEventBridgeResponseTypeDef
+
+def get_value() -> UpdateSubscriptionsToEventBridgeResponseTypeDef:
+    return {
+        "Result": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSubscriptionsToEventBridgeResponseTypeDef(TypedDict):
+    Result: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

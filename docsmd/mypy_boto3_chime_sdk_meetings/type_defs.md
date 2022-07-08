@@ -612,6 +612,7 @@ class CreateMeetingRequestRequestTypeDef(TypedDict):
     NotificationsConfiguration: NotRequired[NotificationsConfigurationTypeDef],  # (1)
     MeetingFeatures: NotRequired[MeetingFeaturesConfigurationTypeDef],  # (2)
     PrimaryMeetingId: NotRequired[str],
+    TenantIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
@@ -640,6 +641,7 @@ class CreateMeetingWithAttendeesRequestRequestTypeDef(TypedDict):
     MeetingFeatures: NotRequired[MeetingFeaturesConfigurationTypeDef],  # (2)
     NotificationsConfiguration: NotRequired[NotificationsConfigurationTypeDef],  # (3)
     PrimaryMeetingId: NotRequired[str],
+    TenantIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
@@ -665,6 +667,7 @@ class MeetingTypeDef(TypedDict):
     MediaPlacement: NotRequired[MediaPlacementTypeDef],  # (1)
     MeetingFeatures: NotRequired[MeetingFeaturesConfigurationTypeDef],  # (2)
     PrimaryMeetingId: NotRequired[str],
+    TenantIds: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef) 

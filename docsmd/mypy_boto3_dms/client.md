@@ -2279,6 +2279,36 @@ parent.test_connection(**kwargs)
 
 1. See [:material-code-braces: TestConnectionMessageRequestTypeDef](./type_defs.md#testconnectionmessagerequesttypedef) 
 
+### update\_subscriptions\_to\_event\_bridge
+
+Migrates 10 active and enabled Amazon SNS subscriptions at a time and converts
+them to corresponding Amazon EventBridge rules.
+
+Type annotations and code completion for `#!python boto3.client("dms").update_subscriptions_to_event_bridge` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.update_subscriptions_to_event_bridge)
+
+```python title="Method definition"
+def update_subscriptions_to_event_bridge(
+    self,
+    *,
+    ForceMove: bool = ...,
+) -> UpdateSubscriptionsToEventBridgeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateSubscriptionsToEventBridgeResponseTypeDef](./type_defs.md#updatesubscriptionstoeventbridgeresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSubscriptionsToEventBridgeMessageRequestTypeDef = {  # (1)
+    "ForceMove": ...,
+}
+
+parent.update_subscriptions_to_event_bridge(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSubscriptionsToEventBridgeMessageRequestTypeDef](./type_defs.md#updatesubscriptionstoeventbridgemessagerequesttypedef) 
+
 
 
 ### get_paginator
