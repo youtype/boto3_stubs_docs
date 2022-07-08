@@ -1854,7 +1854,7 @@ def start_restore_job(
     *,
     RecoveryPointArn: str,
     Metadata: Mapping[str, str],
-    IamRoleArn: str,
+    IamRoleArn: str = ...,
     IdempotencyToken: str = ...,
     ResourceType: str = ...,
 ) -> StartRestoreJobOutputTypeDef:  # (1)
@@ -1868,7 +1868,6 @@ def start_restore_job(
 kwargs: StartRestoreJobInputRequestTypeDef = {  # (1)
     "RecoveryPointArn": ...,
     "Metadata": ...,
-    "IamRoleArn": ...,
 }
 
 parent.start_restore_job(**kwargs)

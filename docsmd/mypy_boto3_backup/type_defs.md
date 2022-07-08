@@ -1243,7 +1243,6 @@ def get_value() -> StartRestoreJobInputRequestTypeDef:
     return {
         "RecoveryPointArn": ...,
         "Metadata": ...,
-        "IamRoleArn": ...,
     }
 ```
 
@@ -1251,7 +1250,7 @@ def get_value() -> StartRestoreJobInputRequestTypeDef:
 class StartRestoreJobInputRequestTypeDef(TypedDict):
     RecoveryPointArn: str,
     Metadata: Mapping[str, str],
-    IamRoleArn: str,
+    IamRoleArn: NotRequired[str],
     IdempotencyToken: NotRequired[str],
     ResourceType: NotRequired[str],
 ```
