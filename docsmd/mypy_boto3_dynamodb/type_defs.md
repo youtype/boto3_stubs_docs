@@ -3247,7 +3247,7 @@ class DeleteItemInputTableDeleteItemTypeDef(TypedDict):
     ReturnValues: NotRequired[ReturnValueType],  # (3)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (5)
-    ConditionExpression: NotRequired[str],
+    ConditionExpression: NotRequired[Union[str, ConditionBase]],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```
@@ -3276,7 +3276,7 @@ class PutItemInputTablePutItemTypeDef(TypedDict):
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (3)
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (4)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (5)
-    ConditionExpression: NotRequired[str],
+    ConditionExpression: NotRequired[Union[str, ConditionBase]],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```
@@ -3307,7 +3307,7 @@ class UpdateItemInputTableUpdateItemTypeDef(TypedDict):
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
     UpdateExpression: NotRequired[str],
-    ConditionExpression: NotRequired[str],
+    ConditionExpression: NotRequired[Union[str, ConditionBase]],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```

@@ -392,11 +392,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_kinesis_video_media.literals import RegionName
 
 def get_value() -> RegionName:
-    return "ap-east-1"
+    return "af-south-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "af-south-1",
     "ap-east-1",
     "ap-northeast-1",
     "ap-northeast-2",

@@ -2241,6 +2241,34 @@ DescribeTransitGatewayPeeringAttachmentsPaginatorName = Literal[
     "describe_transit_gateway_peering_attachments",
 ]
 ```
+## DescribeTransitGatewayPolicyTablesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeTransitGatewayPolicyTablesPaginatorName
+
+def get_value() -> DescribeTransitGatewayPolicyTablesPaginatorName:
+    return "describe_transit_gateway_policy_tables"
+```
+
+```python title="Definition"
+DescribeTransitGatewayPolicyTablesPaginatorName = Literal[
+    "describe_transit_gateway_policy_tables",
+]
+```
+## DescribeTransitGatewayRouteTableAnnouncementsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeTransitGatewayRouteTableAnnouncementsPaginatorName
+
+def get_value() -> DescribeTransitGatewayRouteTableAnnouncementsPaginatorName:
+    return "describe_transit_gateway_route_table_announcements"
+```
+
+```python title="Definition"
+DescribeTransitGatewayRouteTableAnnouncementsPaginatorName = Literal[
+    "describe_transit_gateway_route_table_announcements",
+]
+```
 ## DescribeTransitGatewayRouteTablesPaginatorName
 
 ```python title="Usage Example"
@@ -2587,6 +2615,21 @@ def get_value() -> DomainTypeType:
 DomainTypeType = Literal[
     "standard",
     "vpc",
+]
+```
+## DynamicRoutingValueType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DynamicRoutingValueType
+
+def get_value() -> DynamicRoutingValueType:
+    return "disable"
+```
+
+```python title="Definition"
+DynamicRoutingValueType = Literal[
+    "disable",
+    "enable",
 ]
 ```
 ## EbsEncryptionSupportType
@@ -3293,6 +3336,20 @@ def get_value() -> GetTransitGatewayMulticastDomainAssociationsPaginatorName:
 ```python title="Definition"
 GetTransitGatewayMulticastDomainAssociationsPaginatorName = Literal[
     "get_transit_gateway_multicast_domain_associations",
+]
+```
+## GetTransitGatewayPolicyTableAssociationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import GetTransitGatewayPolicyTableAssociationsPaginatorName
+
+def get_value() -> GetTransitGatewayPolicyTableAssociationsPaginatorName:
+    return "get_transit_gateway_policy_table_associations"
+```
+
+```python title="Definition"
+GetTransitGatewayPolicyTableAssociationsPaginatorName = Literal[
+    "get_transit_gateway_policy_table_associations",
 ]
 ```
 ## GetTransitGatewayPrefixListReferencesPaginatorName
@@ -5816,7 +5873,9 @@ ResourceTypeType = Literal[
     "transit-gateway-attachment",
     "transit-gateway-connect-peer",
     "transit-gateway-multicast-domain",
+    "transit-gateway-policy-table",
     "transit-gateway-route-table",
+    "transit-gateway-route-table-announcement",
     "volume",
     "vpc",
     "vpc-endpoint",
@@ -6684,6 +6743,23 @@ TransitGatewayMulticastDomainStateType = Literal[
     "pending",
 ]
 ```
+## TransitGatewayPolicyTableStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import TransitGatewayPolicyTableStateType
+
+def get_value() -> TransitGatewayPolicyTableStateType:
+    return "available"
+```
+
+```python title="Definition"
+TransitGatewayPolicyTableStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## TransitGatewayPrefixListReferenceStateType
 
 ```python title="Usage Example"
@@ -6733,6 +6809,40 @@ TransitGatewayRouteStateType = Literal[
     "blackhole",
     "deleted",
     "deleting",
+    "pending",
+]
+```
+## TransitGatewayRouteTableAnnouncementDirectionType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import TransitGatewayRouteTableAnnouncementDirectionType
+
+def get_value() -> TransitGatewayRouteTableAnnouncementDirectionType:
+    return "incoming"
+```
+
+```python title="Definition"
+TransitGatewayRouteTableAnnouncementDirectionType = Literal[
+    "incoming",
+    "outgoing",
+]
+```
+## TransitGatewayRouteTableAnnouncementStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import TransitGatewayRouteTableAnnouncementStateType
+
+def get_value() -> TransitGatewayRouteTableAnnouncementStateType:
+    return "available"
+```
+
+```python title="Definition"
+TransitGatewayRouteTableAnnouncementStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "failed",
+    "failing",
     "pending",
 ]
 ```
@@ -7777,6 +7887,8 @@ PaginatorName = Literal[
     "describe_transit_gateway_connects",
     "describe_transit_gateway_multicast_domains",
     "describe_transit_gateway_peering_attachments",
+    "describe_transit_gateway_policy_tables",
+    "describe_transit_gateway_route_table_announcements",
     "describe_transit_gateway_route_tables",
     "describe_transit_gateway_vpc_attachments",
     "describe_transit_gateways",
@@ -7805,6 +7917,7 @@ PaginatorName = Literal[
     "get_spot_placement_scores",
     "get_transit_gateway_attachment_propagations",
     "get_transit_gateway_multicast_domain_associations",
+    "get_transit_gateway_policy_table_associations",
     "get_transit_gateway_prefix_list_references",
     "get_transit_gateway_route_table_associations",
     "get_transit_gateway_route_table_propagations",

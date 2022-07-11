@@ -199,15 +199,15 @@ from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessMessageRequestT
 
 def get_value() -> AuthorizeSnapshotAccessMessageRequestTypeDef:
     return {
-        "SnapshotIdentifier": ...,
         "AccountWithRestoreAccess": ...,
     }
 ```
 
 ```python title="Definition"
 class AuthorizeSnapshotAccessMessageRequestTypeDef(TypedDict):
-    SnapshotIdentifier: str,
     AccountWithRestoreAccess: str,
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotClusterIdentifier: NotRequired[str],
 ```
 
@@ -2487,14 +2487,14 @@ from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotMessageReque
 def get_value() -> RestoreFromClusterSnapshotMessageRequestTypeDef:
     return {
         "ClusterIdentifier": ...,
-        "SnapshotIdentifier": ...,
     }
 ```
 
 ```python title="Definition"
 class RestoreFromClusterSnapshotMessageRequestTypeDef(TypedDict):
     ClusterIdentifier: str,
-    SnapshotIdentifier: str,
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotClusterIdentifier: NotRequired[str],
     Port: NotRequired[int],
     AvailabilityZone: NotRequired[str],
@@ -2663,15 +2663,15 @@ from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessMessageRequestType
 
 def get_value() -> RevokeSnapshotAccessMessageRequestTypeDef:
     return {
-        "SnapshotIdentifier": ...,
         "AccountWithRestoreAccess": ...,
     }
 ```
 
 ```python title="Definition"
 class RevokeSnapshotAccessMessageRequestTypeDef(TypedDict):
-    SnapshotIdentifier: str,
     AccountWithRestoreAccess: str,
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotClusterIdentifier: NotRequired[str],
 ```
 
@@ -4613,6 +4613,7 @@ def get_value() -> DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPagina
 class DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef(TypedDict):
     ClusterIdentifier: NotRequired[str],
     SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotType: NotRequired[str],
     StartTime: NotRequired[Union[datetime, str]],
     EndTime: NotRequired[Union[datetime, str]],
@@ -4641,6 +4642,7 @@ def get_value() -> DescribeClusterSnapshotsMessageRequestTypeDef:
 class DescribeClusterSnapshotsMessageRequestTypeDef(TypedDict):
     ClusterIdentifier: NotRequired[str],
     SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotType: NotRequired[str],
     StartTime: NotRequired[Union[datetime, str]],
     EndTime: NotRequired[Union[datetime, str]],
@@ -4669,6 +4671,7 @@ def get_value() -> DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef:
 class DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef(TypedDict):
     ClusterIdentifier: NotRequired[str],
     SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     SnapshotType: NotRequired[str],
     StartTime: NotRequired[Union[datetime, str]],
     EndTime: NotRequired[Union[datetime, str]],
@@ -4766,6 +4769,7 @@ class DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPag
     ActionType: ActionTypeType,  # (1)
     ClusterIdentifier: NotRequired[str],
     SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     OwnerAccount: NotRequired[str],
     Filters: NotRequired[Sequence[NodeConfigurationOptionsFilterTypeDef]],  # (2)
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
@@ -4790,6 +4794,7 @@ class DescribeNodeConfigurationOptionsMessageRequestTypeDef(TypedDict):
     ActionType: ActionTypeType,  # (1)
     ClusterIdentifier: NotRequired[str],
     SnapshotIdentifier: NotRequired[str],
+    SnapshotArn: NotRequired[str],
     OwnerAccount: NotRequired[str],
     Filters: NotRequired[Sequence[NodeConfigurationOptionsFilterTypeDef]],  # (2)
     Marker: NotRequired[str],

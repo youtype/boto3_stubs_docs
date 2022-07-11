@@ -916,6 +916,47 @@ class AssociateTransitGatewayMulticastDomainRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## AssociateTransitGatewayPolicyTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayPolicyTableRequestRequestTypeDef
+
+def get_value() -> AssociateTransitGatewayPolicyTableRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+        "TransitGatewayAttachmentId": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateTransitGatewayPolicyTableRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
+    TransitGatewayAttachmentId: str,
+    DryRun: NotRequired[bool],
+```
+
+## TransitGatewayPolicyTableAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPolicyTableAssociationTypeDef
+
+def get_value() -> TransitGatewayPolicyTableAssociationTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPolicyTableAssociationTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: NotRequired[str],
+    TransitGatewayAttachmentId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceType: NotRequired[TransitGatewayAttachmentResourceTypeType],  # (1)
+    State: NotRequired[TransitGatewayAssociationStateType],  # (2)
+```
+
+1. See [:material-code-brackets: TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype) 
+2. See [:material-code-brackets: TransitGatewayAssociationStateType](./literals.md#transitgatewayassociationstatetype) 
 ## AssociateTransitGatewayRouteTableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2961,6 +3002,23 @@ class CreateTransitGatewayMulticastDomainRequestOptionsTypeDef(TypedDict):
 1. See [:material-code-brackets: Igmpv2SupportValueType](./literals.md#igmpv2supportvaluetype) 
 2. See [:material-code-brackets: StaticSourcesSupportValueType](./literals.md#staticsourcessupportvaluetype) 
 3. See [:material-code-brackets: AutoAcceptSharedAssociationsValueType](./literals.md#autoacceptsharedassociationsvaluetype) 
+## CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef
+
+def get_value() -> CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef:
+    return {
+        "DynamicRouting": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef(TypedDict):
+    DynamicRouting: NotRequired[DynamicRoutingValueType],  # (1)
+```
+
+1. See [:material-code-brackets: DynamicRoutingValueType](./literals.md#dynamicroutingvaluetype) 
 ## CreateTransitGatewayPrefixListReferenceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4338,6 +4396,23 @@ class DeleteTransitGatewayPeeringAttachmentRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## DeleteTransitGatewayPolicyTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPolicyTableRequestRequestTypeDef
+
+def get_value() -> DeleteTransitGatewayPolicyTableRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTransitGatewayPolicyTableRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## DeleteTransitGatewayPrefixListReferenceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4390,6 +4465,23 @@ def get_value() -> DeleteTransitGatewayRouteRequestRequestTypeDef:
 class DeleteTransitGatewayRouteRequestRequestTypeDef(TypedDict):
     TransitGatewayRouteTableId: str,
     DestinationCidrBlock: str,
+    DryRun: NotRequired[bool],
+```
+
+## DeleteTransitGatewayRouteTableAnnouncementRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableAnnouncementRequestRequestTypeDef
+
+def get_value() -> DeleteTransitGatewayRouteTableAnnouncementRequestRequestTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncementId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTransitGatewayRouteTableAnnouncementRequestRequestTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncementId: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -6235,15 +6327,15 @@ from mypy_boto3_ec2.type_defs import DisableTransitGatewayRouteTablePropagationR
 def get_value() -> DisableTransitGatewayRouteTablePropagationRequestRequestTypeDef:
     return {
         "TransitGatewayRouteTableId": ...,
-        "TransitGatewayAttachmentId": ...,
     }
 ```
 
 ```python title="Definition"
 class DisableTransitGatewayRouteTablePropagationRequestRequestTypeDef(TypedDict):
     TransitGatewayRouteTableId: str,
-    TransitGatewayAttachmentId: str,
+    TransitGatewayAttachmentId: NotRequired[str],
     DryRun: NotRequired[bool],
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
 ```
 
 ## TransitGatewayPropagationTypeDef
@@ -6264,6 +6356,7 @@ class TransitGatewayPropagationTypeDef(TypedDict):
     ResourceType: NotRequired[TransitGatewayAttachmentResourceTypeType],  # (1)
     TransitGatewayRouteTableId: NotRequired[str],
     State: NotRequired[TransitGatewayPropagationStateType],  # (2)
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype) 
@@ -6524,6 +6617,25 @@ class DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef(TypedDict):
     TransitGatewayMulticastDomainId: NotRequired[str],
     TransitGatewayAttachmentId: NotRequired[str],
     SubnetIds: NotRequired[Sequence[str]],
+    DryRun: NotRequired[bool],
+```
+
+## DisassociateTransitGatewayPolicyTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayPolicyTableRequestRequestTypeDef
+
+def get_value() -> DisassociateTransitGatewayPolicyTableRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+        "TransitGatewayAttachmentId": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateTransitGatewayPolicyTableRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
+    TransitGatewayAttachmentId: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -7093,15 +7205,15 @@ from mypy_boto3_ec2.type_defs import EnableTransitGatewayRouteTablePropagationRe
 def get_value() -> EnableTransitGatewayRouteTablePropagationRequestRequestTypeDef:
     return {
         "TransitGatewayRouteTableId": ...,
-        "TransitGatewayAttachmentId": ...,
     }
 ```
 
 ```python title="Definition"
 class EnableTransitGatewayRouteTablePropagationRequestRequestTypeDef(TypedDict):
     TransitGatewayRouteTableId: str,
-    TransitGatewayAttachmentId: str,
+    TransitGatewayAttachmentId: NotRequired[str],
     DryRun: NotRequired[bool],
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
 ```
 
 ## EnableVgwRoutePropagationRequestRequestTypeDef
@@ -8214,6 +8326,7 @@ class TransitGatewayRouteTablePropagationTypeDef(TypedDict):
     ResourceId: NotRequired[str],
     ResourceType: NotRequired[TransitGatewayAttachmentResourceTypeType],  # (1)
     State: NotRequired[TransitGatewayPropagationStateType],  # (2)
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype) 
@@ -10576,6 +10689,7 @@ class ModifyTransitGatewayOptionsTypeDef(TypedDict):
     AssociationDefaultRouteTableId: NotRequired[str],
     DefaultRouteTablePropagation: NotRequired[DefaultRouteTablePropagationValueType],  # (5)
     PropagationDefaultRouteTableId: NotRequired[str],
+    AmazonSideAsn: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype) 
@@ -11257,6 +11371,7 @@ def get_value() -> PeeringTgwInfoTypeDef:
 ```python title="Definition"
 class PeeringTgwInfoTypeDef(TypedDict):
     TransitGatewayId: NotRequired[str],
+    CoreNetworkId: NotRequired[str],
     OwnerId: NotRequired[str],
     Region: NotRequired[str],
 ```
@@ -13572,6 +13687,40 @@ class TransitGatewayOptionsTypeDef(TypedDict):
 4. See [:material-code-brackets: VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype) 
 5. See [:material-code-brackets: DnsSupportValueType](./literals.md#dnssupportvaluetype) 
 6. See [:material-code-brackets: MulticastSupportValueType](./literals.md#multicastsupportvaluetype) 
+## TransitGatewayPeeringAttachmentOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPeeringAttachmentOptionsTypeDef
+
+def get_value() -> TransitGatewayPeeringAttachmentOptionsTypeDef:
+    return {
+        "DynamicRouting": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPeeringAttachmentOptionsTypeDef(TypedDict):
+    DynamicRouting: NotRequired[DynamicRoutingValueType],  # (1)
+```
+
+1. See [:material-code-brackets: DynamicRoutingValueType](./literals.md#dynamicroutingvaluetype) 
+## TransitGatewayPolicyRuleMetaDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPolicyRuleMetaDataTypeDef
+
+def get_value() -> TransitGatewayPolicyRuleMetaDataTypeDef:
+    return {
+        "MetaDataKey": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPolicyRuleMetaDataTypeDef(TypedDict):
+    MetaDataKey: NotRequired[str],
+    MetaDataValue: NotRequired[str],
+```
+
 ## TransitGatewayPrefixListAttachmentTypeDef
 
 ```python title="Usage Example"
@@ -17854,6 +18003,57 @@ class TrafficMirrorTargetTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TrafficMirrorTargetTypeType](./literals.md#trafficmirrortargettypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TransitGatewayPolicyTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPolicyTableTypeDef
+
+def get_value() -> TransitGatewayPolicyTableTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPolicyTableTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: NotRequired[str],
+    TransitGatewayId: NotRequired[str],
+    State: NotRequired[TransitGatewayPolicyTableStateType],  # (1)
+    CreationTime: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: TransitGatewayPolicyTableStateType](./literals.md#transitgatewaypolicytablestatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TransitGatewayRouteTableAnnouncementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayRouteTableAnnouncementTypeDef
+
+def get_value() -> TransitGatewayRouteTableAnnouncementTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncementId": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayRouteTableAnnouncementTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
+    TransitGatewayId: NotRequired[str],
+    CoreNetworkId: NotRequired[str],
+    PeerTransitGatewayId: NotRequired[str],
+    PeerCoreNetworkId: NotRequired[str],
+    PeeringAttachmentId: NotRequired[str],
+    AnnouncementDirection: NotRequired[TransitGatewayRouteTableAnnouncementDirectionType],  # (1)
+    TransitGatewayRouteTableId: NotRequired[str],
+    State: NotRequired[TransitGatewayRouteTableAnnouncementStateType],  # (2)
+    CreationTime: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: TransitGatewayRouteTableAnnouncementDirectionType](./literals.md#transitgatewayroutetableannouncementdirectiontype) 
+2. See [:material-code-brackets: TransitGatewayRouteTableAnnouncementStateType](./literals.md#transitgatewayroutetableannouncementstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TransitGatewayRouteTableTypeDef
 
 ```python title="Usage Example"
@@ -18368,6 +18568,68 @@ class RouteTableAssociationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef) 
+## AssociateTransitGatewayPolicyTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayPolicyTableResultTypeDef
+
+def get_value() -> AssociateTransitGatewayPolicyTableResultTypeDef:
+    return {
+        "Association": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateTransitGatewayPolicyTableResultTypeDef(TypedDict):
+    Association: TransitGatewayPolicyTableAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableAssociationTypeDef](./type_defs.md#transitgatewaypolicytableassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateTransitGatewayPolicyTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayPolicyTableResultTypeDef
+
+def get_value() -> DisassociateTransitGatewayPolicyTableResultTypeDef:
+    return {
+        "Association": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateTransitGatewayPolicyTableResultTypeDef(TypedDict):
+    Association: TransitGatewayPolicyTableAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableAssociationTypeDef](./type_defs.md#transitgatewaypolicytableassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayPolicyTableAssociationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPolicyTableAssociationsResultTypeDef
+
+def get_value() -> GetTransitGatewayPolicyTableAssociationsResultTypeDef:
+    return {
+        "Associations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPolicyTableAssociationsResultTypeDef(TypedDict):
+    Associations: List[TransitGatewayPolicyTableAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableAssociationTypeDef](./type_defs.md#transitgatewaypolicytableassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateTransitGatewayRouteTableResultTypeDef
 
 ```python title="Usage Example"
@@ -23904,6 +24166,90 @@ class DescribeTransitGatewayPeeringAttachmentsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeTransitGatewayPolicyTablesRequestDescribeTransitGatewayPolicyTablesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPolicyTablesRequestDescribeTransitGatewayPolicyTablesPaginateTypeDef
+
+def get_value() -> DescribeTransitGatewayPolicyTablesRequestDescribeTransitGatewayPolicyTablesPaginateTypeDef:
+    return {
+        "TransitGatewayPolicyTableIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayPolicyTablesRequestDescribeTransitGatewayPolicyTablesPaginateTypeDef(TypedDict):
+    TransitGatewayPolicyTableIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeTransitGatewayPolicyTablesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPolicyTablesRequestRequestTypeDef
+
+def get_value() -> DescribeTransitGatewayPolicyTablesRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayPolicyTablesRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeTransitGatewayRouteTableAnnouncementsRequestDescribeTransitGatewayRouteTableAnnouncementsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTableAnnouncementsRequestDescribeTransitGatewayRouteTableAnnouncementsPaginateTypeDef
+
+def get_value() -> DescribeTransitGatewayRouteTableAnnouncementsRequestDescribeTransitGatewayRouteTableAnnouncementsPaginateTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncementIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayRouteTableAnnouncementsRequestDescribeTransitGatewayRouteTableAnnouncementsPaginateTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncementIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeTransitGatewayRouteTableAnnouncementsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTableAnnouncementsRequestRequestTypeDef
+
+def get_value() -> DescribeTransitGatewayRouteTableAnnouncementsRequestRequestTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncementIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayRouteTableAnnouncementsRequestRequestTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncementIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeTransitGatewayRouteTablesRequestDescribeTransitGatewayRouteTablesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -24891,6 +25237,69 @@ def get_value() -> GetTransitGatewayMulticastDomainAssociationsRequestRequestTyp
 ```python title="Definition"
 class GetTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef(TypedDict):
     TransitGatewayMulticastDomainId: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## GetTransitGatewayPolicyTableAssociationsRequestGetTransitGatewayPolicyTableAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPolicyTableAssociationsRequestGetTransitGatewayPolicyTableAssociationsPaginateTypeDef
+
+def get_value() -> GetTransitGatewayPolicyTableAssociationsRequestGetTransitGatewayPolicyTableAssociationsPaginateTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPolicyTableAssociationsRequestGetTransitGatewayPolicyTableAssociationsPaginateTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetTransitGatewayPolicyTableAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPolicyTableAssociationsRequestRequestTypeDef
+
+def get_value() -> GetTransitGatewayPolicyTableAssociationsRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPolicyTableAssociationsRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## GetTransitGatewayPolicyTableEntriesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPolicyTableEntriesRequestRequestTypeDef
+
+def get_value() -> GetTransitGatewayPolicyTableEntriesRequestRequestTypeDef:
+    return {
+        "TransitGatewayPolicyTableId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPolicyTableEntriesRequestRequestTypeDef(TypedDict):
+    TransitGatewayPolicyTableId: str,
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
@@ -28897,33 +29306,6 @@ class ThroughResourcesStatementTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceStatementTypeDef](./type_defs.md#resourcestatementtypedef) 
-## TransitGatewayPeeringAttachmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import TransitGatewayPeeringAttachmentTypeDef
-
-def get_value() -> TransitGatewayPeeringAttachmentTypeDef:
-    return {
-        "TransitGatewayAttachmentId": ...,
-    }
-```
-
-```python title="Definition"
-class TransitGatewayPeeringAttachmentTypeDef(TypedDict):
-    TransitGatewayAttachmentId: NotRequired[str],
-    RequesterTgwInfo: NotRequired[PeeringTgwInfoTypeDef],  # (1)
-    AccepterTgwInfo: NotRequired[PeeringTgwInfoTypeDef],  # (1)
-    Status: NotRequired[PeeringAttachmentStatusTypeDef],  # (3)
-    State: NotRequired[TransitGatewayAttachmentStateType],  # (4)
-    CreationTime: NotRequired[datetime],
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef) 
-2. See [:material-code-braces: PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef) 
-3. See [:material-code-braces: PeeringAttachmentStatusTypeDef](./type_defs.md#peeringattachmentstatustypedef) 
-4. See [:material-code-brackets: TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TunnelOptionTypeDef
 
 ```python title="Usage Example"
@@ -29881,6 +30263,58 @@ class TransitGatewayTypeDef(TypedDict):
 1. See [:material-code-brackets: TransitGatewayStateType](./literals.md#transitgatewaystatetype) 
 2. See [:material-code-braces: TransitGatewayOptionsTypeDef](./type_defs.md#transitgatewayoptionstypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TransitGatewayPeeringAttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPeeringAttachmentTypeDef
+
+def get_value() -> TransitGatewayPeeringAttachmentTypeDef:
+    return {
+        "TransitGatewayAttachmentId": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPeeringAttachmentTypeDef(TypedDict):
+    TransitGatewayAttachmentId: NotRequired[str],
+    AccepterTransitGatewayAttachmentId: NotRequired[str],
+    RequesterTgwInfo: NotRequired[PeeringTgwInfoTypeDef],  # (1)
+    AccepterTgwInfo: NotRequired[PeeringTgwInfoTypeDef],  # (1)
+    Options: NotRequired[TransitGatewayPeeringAttachmentOptionsTypeDef],  # (3)
+    Status: NotRequired[PeeringAttachmentStatusTypeDef],  # (4)
+    State: NotRequired[TransitGatewayAttachmentStateType],  # (5)
+    CreationTime: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef) 
+2. See [:material-code-braces: PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef) 
+3. See [:material-code-braces: TransitGatewayPeeringAttachmentOptionsTypeDef](./type_defs.md#transitgatewaypeeringattachmentoptionstypedef) 
+4. See [:material-code-braces: PeeringAttachmentStatusTypeDef](./type_defs.md#peeringattachmentstatustypedef) 
+5. See [:material-code-brackets: TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TransitGatewayPolicyRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPolicyRuleTypeDef
+
+def get_value() -> TransitGatewayPolicyRuleTypeDef:
+    return {
+        "SourceCidrBlock": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPolicyRuleTypeDef(TypedDict):
+    SourceCidrBlock: NotRequired[str],
+    SourcePortRange: NotRequired[str],
+    DestinationCidrBlock: NotRequired[str],
+    DestinationPortRange: NotRequired[str],
+    Protocol: NotRequired[str],
+    MetaData: NotRequired[TransitGatewayPolicyRuleMetaDataTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyRuleMetaDataTypeDef](./type_defs.md#transitgatewaypolicyrulemetadatatypedef) 
 ## TransitGatewayPrefixListReferenceTypeDef
 
 ```python title="Usage Example"
@@ -29919,6 +30353,7 @@ def get_value() -> TransitGatewayRouteTypeDef:
 class TransitGatewayRouteTypeDef(TypedDict):
     DestinationCidrBlock: NotRequired[str],
     PrefixListId: NotRequired[str],
+    TransitGatewayRouteTableAnnouncementId: NotRequired[str],
     TransitGatewayAttachments: NotRequired[List[TransitGatewayRouteAttachmentTypeDef]],  # (1)
     Type: NotRequired[TransitGatewayRouteTypeType],  # (2)
     State: NotRequired[TransitGatewayRouteStateType],  # (3)
@@ -32709,6 +33144,27 @@ class CreateTransitGatewayPeeringAttachmentRequestRequestTypeDef(TypedDict):
     PeerTransitGatewayId: str,
     PeerAccountId: str,
     PeerRegion: str,
+    Options: NotRequired[CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef],  # (1)
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef](./type_defs.md#createtransitgatewaypeeringattachmentrequestoptionstypedef) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateTransitGatewayPolicyTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPolicyTableRequestRequestTypeDef
+
+def get_value() -> CreateTransitGatewayPolicyTableRequestRequestTypeDef:
+    return {
+        "TransitGatewayId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPolicyTableRequestRequestTypeDef(TypedDict):
+    TransitGatewayId: str,
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
     DryRun: NotRequired[bool],
 ```
@@ -32735,6 +33191,27 @@ class CreateTransitGatewayRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: TransitGatewayRequestOptionsTypeDef](./type_defs.md#transitgatewayrequestoptionstypedef) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateTransitGatewayRouteTableAnnouncementRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableAnnouncementRequestRequestTypeDef
+
+def get_value() -> CreateTransitGatewayRouteTableAnnouncementRequestRequestTypeDef:
+    return {
+        "TransitGatewayRouteTableId": ...,
+        "PeeringAttachmentId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayRouteTableAnnouncementRequestRequestTypeDef(TypedDict):
+    TransitGatewayRouteTableId: str,
+    PeeringAttachmentId: str,
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateTransitGatewayRouteTableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -33309,6 +33786,130 @@ class DescribeTrafficMirrorTargetsResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TrafficMirrorTargetTypeDef](./type_defs.md#trafficmirrortargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTransitGatewayPolicyTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPolicyTableResultTypeDef
+
+def get_value() -> CreateTransitGatewayPolicyTableResultTypeDef:
+    return {
+        "TransitGatewayPolicyTable": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPolicyTableResultTypeDef(TypedDict):
+    TransitGatewayPolicyTable: TransitGatewayPolicyTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableTypeDef](./type_defs.md#transitgatewaypolicytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTransitGatewayPolicyTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPolicyTableResultTypeDef
+
+def get_value() -> DeleteTransitGatewayPolicyTableResultTypeDef:
+    return {
+        "TransitGatewayPolicyTable": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTransitGatewayPolicyTableResultTypeDef(TypedDict):
+    TransitGatewayPolicyTable: TransitGatewayPolicyTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableTypeDef](./type_defs.md#transitgatewaypolicytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTransitGatewayPolicyTablesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPolicyTablesResultTypeDef
+
+def get_value() -> DescribeTransitGatewayPolicyTablesResultTypeDef:
+    return {
+        "TransitGatewayPolicyTables": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayPolicyTablesResultTypeDef(TypedDict):
+    TransitGatewayPolicyTables: List[TransitGatewayPolicyTableTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableTypeDef](./type_defs.md#transitgatewaypolicytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTransitGatewayRouteTableAnnouncementResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableAnnouncementResultTypeDef
+
+def get_value() -> CreateTransitGatewayRouteTableAnnouncementResultTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncement": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayRouteTableAnnouncementResultTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncement: TransitGatewayRouteTableAnnouncementTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRouteTableAnnouncementTypeDef](./type_defs.md#transitgatewayroutetableannouncementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTransitGatewayRouteTableAnnouncementResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableAnnouncementResultTypeDef
+
+def get_value() -> DeleteTransitGatewayRouteTableAnnouncementResultTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncement": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTransitGatewayRouteTableAnnouncementResultTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncement: TransitGatewayRouteTableAnnouncementTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRouteTableAnnouncementTypeDef](./type_defs.md#transitgatewayroutetableannouncementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef
+
+def get_value() -> DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef:
+    return {
+        "TransitGatewayRouteTableAnnouncements": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef(TypedDict):
+    TransitGatewayRouteTableAnnouncements: List[TransitGatewayRouteTableAnnouncementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRouteTableAnnouncementTypeDef](./type_defs.md#transitgatewayroutetableannouncementtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTransitGatewayRouteTableResultTypeDef
 
@@ -37058,108 +37659,6 @@ class AccessScopePathTypeDef(TypedDict):
 1. See [:material-code-braces: PathStatementTypeDef](./type_defs.md#pathstatementtypedef) 
 2. See [:material-code-braces: PathStatementTypeDef](./type_defs.md#pathstatementtypedef) 
 3. See [:material-code-braces: ThroughResourcesStatementTypeDef](./type_defs.md#throughresourcesstatementtypedef) 
-## AcceptTransitGatewayPeeringAttachmentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentResultTypeDef
-
-def get_value() -> AcceptTransitGatewayPeeringAttachmentResultTypeDef:
-    return {
-        "TransitGatewayPeeringAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class AcceptTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
-    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateTransitGatewayPeeringAttachmentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentResultTypeDef
-
-def get_value() -> CreateTransitGatewayPeeringAttachmentResultTypeDef:
-    return {
-        "TransitGatewayPeeringAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
-    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteTransitGatewayPeeringAttachmentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentResultTypeDef
-
-def get_value() -> DeleteTransitGatewayPeeringAttachmentResultTypeDef:
-    return {
-        "TransitGatewayPeeringAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
-    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeTransitGatewayPeeringAttachmentsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsResultTypeDef
-
-def get_value() -> DescribeTransitGatewayPeeringAttachmentsResultTypeDef:
-    return {
-        "TransitGatewayPeeringAttachments": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTransitGatewayPeeringAttachmentsResultTypeDef(TypedDict):
-    TransitGatewayPeeringAttachments: List[TransitGatewayPeeringAttachmentTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RejectTransitGatewayPeeringAttachmentResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentResultTypeDef
-
-def get_value() -> RejectTransitGatewayPeeringAttachmentResultTypeDef:
-    return {
-        "TransitGatewayPeeringAttachment": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class RejectTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
-    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpnConnectionOptionsTypeDef
 
 ```python title="Usage Example"
@@ -38392,6 +38891,127 @@ class ModifyTransitGatewayResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AcceptTransitGatewayPeeringAttachmentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentResultTypeDef
+
+def get_value() -> AcceptTransitGatewayPeeringAttachmentResultTypeDef:
+    return {
+        "TransitGatewayPeeringAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
+    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTransitGatewayPeeringAttachmentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentResultTypeDef
+
+def get_value() -> CreateTransitGatewayPeeringAttachmentResultTypeDef:
+    return {
+        "TransitGatewayPeeringAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
+    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTransitGatewayPeeringAttachmentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentResultTypeDef
+
+def get_value() -> DeleteTransitGatewayPeeringAttachmentResultTypeDef:
+    return {
+        "TransitGatewayPeeringAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
+    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTransitGatewayPeeringAttachmentsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsResultTypeDef
+
+def get_value() -> DescribeTransitGatewayPeeringAttachmentsResultTypeDef:
+    return {
+        "TransitGatewayPeeringAttachments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTransitGatewayPeeringAttachmentsResultTypeDef(TypedDict):
+    TransitGatewayPeeringAttachments: List[TransitGatewayPeeringAttachmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RejectTransitGatewayPeeringAttachmentResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentResultTypeDef
+
+def get_value() -> RejectTransitGatewayPeeringAttachmentResultTypeDef:
+    return {
+        "TransitGatewayPeeringAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RejectTransitGatewayPeeringAttachmentResultTypeDef(TypedDict):
+    TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TransitGatewayPolicyTableEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TransitGatewayPolicyTableEntryTypeDef
+
+def get_value() -> TransitGatewayPolicyTableEntryTypeDef:
+    return {
+        "PolicyRuleNumber": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPolicyTableEntryTypeDef(TypedDict):
+    PolicyRuleNumber: NotRequired[str],
+    PolicyRule: NotRequired[TransitGatewayPolicyRuleTypeDef],  # (1)
+    TargetRouteTableId: NotRequired[str],
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyRuleTypeDef](./type_defs.md#transitgatewaypolicyruletypedef) 
 ## CreateTransitGatewayPrefixListReferenceResultTypeDef
 
 ```python title="Usage Example"
@@ -40481,6 +41101,26 @@ class DescribeTransitGatewayConnectPeersResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayPolicyTableEntriesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPolicyTableEntriesResultTypeDef
+
+def get_value() -> GetTransitGatewayPolicyTableEntriesResultTypeDef:
+    return {
+        "TransitGatewayPolicyTableEntries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPolicyTableEntriesResultTypeDef(TypedDict):
+    TransitGatewayPolicyTableEntries: List[TransitGatewayPolicyTableEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPolicyTableEntryTypeDef](./type_defs.md#transitgatewaypolicytableentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVolumeStatusResultTypeDef
 

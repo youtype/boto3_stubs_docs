@@ -36843,6 +36843,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#describetransitgatewayconnectspaginator">DescribeTransitGatewayConnectsPaginator</a></li>
 <li><a href="paginators/#describetransitgatewaymulticastdomainspaginator">DescribeTransitGatewayMulticastDomainsPaginator</a></li>
 <li><a href="paginators/#describetransitgatewaypeeringattachmentspaginator">DescribeTransitGatewayPeeringAttachmentsPaginator</a></li>
+<li><a href="paginators/#describetransitgatewaypolicytablespaginator">DescribeTransitGatewayPolicyTablesPaginator</a></li>
+<li><a href="paginators/#describetransitgatewayroutetableannouncementspaginator">DescribeTransitGatewayRouteTableAnnouncementsPaginator</a></li>
 <li><a href="paginators/#describetransitgatewayroutetablespaginator">DescribeTransitGatewayRouteTablesPaginator</a></li>
 <li><a href="paginators/#describetransitgatewayvpcattachmentspaginator">DescribeTransitGatewayVpcAttachmentsPaginator</a></li>
 <li><a href="paginators/#describetransitgatewayspaginator">DescribeTransitGatewaysPaginator</a></li>
@@ -36871,6 +36873,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#getspotplacementscorespaginator">GetSpotPlacementScoresPaginator</a></li>
 <li><a href="paginators/#gettransitgatewayattachmentpropagationspaginator">GetTransitGatewayAttachmentPropagationsPaginator</a></li>
 <li><a href="paginators/#gettransitgatewaymulticastdomainassociationspaginator">GetTransitGatewayMulticastDomainAssociationsPaginator</a></li>
+<li><a href="paginators/#gettransitgatewaypolicytableassociationspaginator">GetTransitGatewayPolicyTableAssociationsPaginator</a></li>
 <li><a href="paginators/#gettransitgatewayprefixlistreferencespaginator">GetTransitGatewayPrefixListReferencesPaginator</a></li>
 <li><a href="paginators/#gettransitgatewayroutetableassociationspaginator">GetTransitGatewayRouteTableAssociationsPaginator</a></li>
 <li><a href="paginators/#gettransitgatewayroutetablepropagationspaginator">GetTransitGatewayRouteTablePropagationsPaginator</a></li>
@@ -37157,6 +37160,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#describetransitgatewayconnectspaginatorname">DescribeTransitGatewayConnectsPaginatorName</a></li>
 <li><a href="literals/#describetransitgatewaymulticastdomainspaginatorname">DescribeTransitGatewayMulticastDomainsPaginatorName</a></li>
 <li><a href="literals/#describetransitgatewaypeeringattachmentspaginatorname">DescribeTransitGatewayPeeringAttachmentsPaginatorName</a></li>
+<li><a href="literals/#describetransitgatewaypolicytablespaginatorname">DescribeTransitGatewayPolicyTablesPaginatorName</a></li>
+<li><a href="literals/#describetransitgatewayroutetableannouncementspaginatorname">DescribeTransitGatewayRouteTableAnnouncementsPaginatorName</a></li>
 <li><a href="literals/#describetransitgatewayroutetablespaginatorname">DescribeTransitGatewayRouteTablesPaginatorName</a></li>
 <li><a href="literals/#describetransitgatewayvpcattachmentspaginatorname">DescribeTransitGatewayVpcAttachmentsPaginatorName</a></li>
 <li><a href="literals/#describetransitgatewayspaginatorname">DescribeTransitGatewaysPaginatorName</a></li>
@@ -37181,6 +37186,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#dnsrecordiptypetype">DnsRecordIpTypeType</a></li>
 <li><a href="literals/#dnssupportvaluetype">DnsSupportValueType</a></li>
 <li><a href="literals/#domaintypetype">DomainTypeType</a></li>
+<li><a href="literals/#dynamicroutingvaluetype">DynamicRoutingValueType</a></li>
 <li><a href="literals/#ebsencryptionsupporttype">EbsEncryptionSupportType</a></li>
 <li><a href="literals/#ebsnvmesupporttype">EbsNvmeSupportType</a></li>
 <li><a href="literals/#ebsoptimizedsupporttype">EbsOptimizedSupportType</a></li>
@@ -37227,6 +37233,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#getspotplacementscorespaginatorname">GetSpotPlacementScoresPaginatorName</a></li>
 <li><a href="literals/#gettransitgatewayattachmentpropagationspaginatorname">GetTransitGatewayAttachmentPropagationsPaginatorName</a></li>
 <li><a href="literals/#gettransitgatewaymulticastdomainassociationspaginatorname">GetTransitGatewayMulticastDomainAssociationsPaginatorName</a></li>
+<li><a href="literals/#gettransitgatewaypolicytableassociationspaginatorname">GetTransitGatewayPolicyTableAssociationsPaginatorName</a></li>
 <li><a href="literals/#gettransitgatewayprefixlistreferencespaginatorname">GetTransitGatewayPrefixListReferencesPaginatorName</a></li>
 <li><a href="literals/#gettransitgatewayroutetableassociationspaginatorname">GetTransitGatewayRouteTableAssociationsPaginatorName</a></li>
 <li><a href="literals/#gettransitgatewayroutetablepropagationspaginatorname">GetTransitGatewayRouteTablePropagationsPaginatorName</a></li>
@@ -37400,9 +37407,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#transitgatewayconnectpeerstatetype">TransitGatewayConnectPeerStateType</a></li>
 <li><a href="literals/#transitgatewaymulitcastdomainassociationstatetype">TransitGatewayMulitcastDomainAssociationStateType</a></li>
 <li><a href="literals/#transitgatewaymulticastdomainstatetype">TransitGatewayMulticastDomainStateType</a></li>
+<li><a href="literals/#transitgatewaypolicytablestatetype">TransitGatewayPolicyTableStateType</a></li>
 <li><a href="literals/#transitgatewayprefixlistreferencestatetype">TransitGatewayPrefixListReferenceStateType</a></li>
 <li><a href="literals/#transitgatewaypropagationstatetype">TransitGatewayPropagationStateType</a></li>
 <li><a href="literals/#transitgatewayroutestatetype">TransitGatewayRouteStateType</a></li>
+<li><a href="literals/#transitgatewayroutetableannouncementdirectiontype">TransitGatewayRouteTableAnnouncementDirectionType</a></li>
+<li><a href="literals/#transitgatewayroutetableannouncementstatetype">TransitGatewayRouteTableAnnouncementStateType</a></li>
 <li><a href="literals/#transitgatewayroutetablestatetype">TransitGatewayRouteTableStateType</a></li>
 <li><a href="literals/#transitgatewayroutetypetype">TransitGatewayRouteTypeType</a></li>
 <li><a href="literals/#transitgatewaystatetype">TransitGatewayStateType</a></li>
@@ -37506,6 +37516,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#routetableassociationstatetypedef">RouteTableAssociationStateTypeDef</a></li>
 <li><a href="type_defs/#associatesubnetcidrblockrequestrequesttypedef">AssociateSubnetCidrBlockRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatetransitgatewaymulticastdomainrequestrequesttypedef">AssociateTransitGatewayMulticastDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatetransitgatewaypolicytablerequestrequesttypedef">AssociateTransitGatewayPolicyTableRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypolicytableassociationtypedef">TransitGatewayPolicyTableAssociationTypeDef</a></li>
 <li><a href="type_defs/#associatetransitgatewayroutetablerequestrequesttypedef">AssociateTransitGatewayRouteTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayassociationtypedef">TransitGatewayAssociationTypeDef</a></li>
 <li><a href="type_defs/#associatetrunkinterfacerequestrequesttypedef">AssociateTrunkInterfaceRequestRequestTypeDef</a></li>
@@ -37615,6 +37627,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#transitgatewayconnectrequestbgpoptionstypedef">TransitGatewayConnectRequestBgpOptionsTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayconnectrequestoptionstypedef">CreateTransitGatewayConnectRequestOptionsTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewaymulticastdomainrequestoptionstypedef">CreateTransitGatewayMulticastDomainRequestOptionsTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypeeringattachmentrequestoptionstypedef">CreateTransitGatewayPeeringAttachmentRequestOptionsTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayprefixlistreferencerequestrequesttypedef">CreateTransitGatewayPrefixListReferenceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayrequestoptionstypedef">TransitGatewayRequestOptionsTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayrouterequestrequesttypedef">CreateTransitGatewayRouteRequestRequestTypeDef</a></li>
@@ -37693,9 +37706,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletetransitgatewayconnectrequestrequesttypedef">DeleteTransitGatewayConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewaymulticastdomainrequestrequesttypedef">DeleteTransitGatewayMulticastDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewaypeeringattachmentrequestrequesttypedef">DeleteTransitGatewayPeeringAttachmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletetransitgatewaypolicytablerequestrequesttypedef">DeleteTransitGatewayPolicyTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayprefixlistreferencerequestrequesttypedef">DeleteTransitGatewayPrefixListReferenceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayrequestrequesttypedef">DeleteTransitGatewayRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayrouterequestrequesttypedef">DeleteTransitGatewayRouteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletetransitgatewayroutetableannouncementrequestrequesttypedef">DeleteTransitGatewayRouteTableAnnouncementRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayroutetablerequestrequesttypedef">DeleteTransitGatewayRouteTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayvpcattachmentrequestrequesttypedef">DeleteTransitGatewayVpcAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevolumerequestrequesttypedef">DeleteVolumeRequestRequestTypeDef</a></li>
@@ -37812,6 +37827,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disassociateroutetablerequestserviceresourcedisassociateroutetabletypedef">DisassociateRouteTableRequestServiceResourceDisassociateRouteTableTypeDef</a></li>
 <li><a href="type_defs/#disassociatesubnetcidrblockrequestrequesttypedef">DisassociateSubnetCidrBlockRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatetransitgatewaymulticastdomainrequestrequesttypedef">DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociatetransitgatewaypolicytablerequestrequesttypedef">DisassociateTransitGatewayPolicyTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatetransitgatewayroutetablerequestrequesttypedef">DisassociateTransitGatewayRouteTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatetrunkinterfacerequestrequesttypedef">DisassociateTrunkInterfaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatevpccidrblockrequestrequesttypedef">DisassociateVpcCidrBlockRequestRequestTypeDef</a></li>
@@ -38194,6 +38210,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#transitgatewayconnectoptionstypedef">TransitGatewayConnectOptionsTypeDef</a></li>
 <li><a href="type_defs/#transitgatewaymulticastdomainoptionstypedef">TransitGatewayMulticastDomainOptionsTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayoptionstypedef">TransitGatewayOptionsTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypeeringattachmentoptionstypedef">TransitGatewayPeeringAttachmentOptionsTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypolicyrulemetadatatypedef">TransitGatewayPolicyRuleMetaDataTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayprefixlistattachmenttypedef">TransitGatewayPrefixListAttachmentTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayrouteattachmenttypedef">TransitGatewayRouteAttachmentTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayvpcattachmentoptionstypedef">TransitGatewayVpcAttachmentOptionsTypeDef</a></li>
@@ -38397,6 +38415,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tagspecificationtypedef">TagSpecificationTypeDef</a></li>
 <li><a href="type_defs/#trafficmirrorsessiontypedef">TrafficMirrorSessionTypeDef</a></li>
 <li><a href="type_defs/#trafficmirrortargettypedef">TrafficMirrorTargetTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypolicytabletypedef">TransitGatewayPolicyTableTypeDef</a></li>
+<li><a href="type_defs/#transitgatewayroutetableannouncementtypedef">TransitGatewayRouteTableAnnouncementTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayroutetabletypedef">TransitGatewayRouteTableTypeDef</a></li>
 <li><a href="type_defs/#trunkinterfaceassociationtypedef">TrunkInterfaceAssociationTypeDef</a></li>
 <li><a href="type_defs/#vpcclassiclinktypedef">VpcClassicLinkTypeDef</a></li>
@@ -38421,6 +38441,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#associateroutetableresulttypedef">AssociateRouteTableResultTypeDef</a></li>
 <li><a href="type_defs/#replaceroutetableassociationresulttypedef">ReplaceRouteTableAssociationResultTypeDef</a></li>
 <li><a href="type_defs/#routetableassociationtypedef">RouteTableAssociationTypeDef</a></li>
+<li><a href="type_defs/#associatetransitgatewaypolicytableresulttypedef">AssociateTransitGatewayPolicyTableResultTypeDef</a></li>
+<li><a href="type_defs/#disassociatetransitgatewaypolicytableresulttypedef">DisassociateTransitGatewayPolicyTableResultTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypolicytableassociationsresulttypedef">GetTransitGatewayPolicyTableAssociationsResultTypeDef</a></li>
 <li><a href="type_defs/#associatetransitgatewayroutetableresulttypedef">AssociateTransitGatewayRouteTableResultTypeDef</a></li>
 <li><a href="type_defs/#disassociatetransitgatewayroutetableresulttypedef">DisassociateTransitGatewayRouteTableResultTypeDef</a></li>
 <li><a href="type_defs/#getassociatedenclavecertificateiamrolesresulttypedef">GetAssociatedEnclaveCertificateIamRolesResultTypeDef</a></li>
@@ -38677,6 +38700,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describetransitgatewaymulticastdomainsrequestrequesttypedef">DescribeTransitGatewayMulticastDomainsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewaypeeringattachmentsrequestdescribetransitgatewaypeeringattachmentspaginatetypedef">DescribeTransitGatewayPeeringAttachmentsRequestDescribeTransitGatewayPeeringAttachmentsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewaypeeringattachmentsrequestrequesttypedef">DescribeTransitGatewayPeeringAttachmentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewaypolicytablesrequestdescribetransitgatewaypolicytablespaginatetypedef">DescribeTransitGatewayPolicyTablesRequestDescribeTransitGatewayPolicyTablesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewaypolicytablesrequestrequesttypedef">DescribeTransitGatewayPolicyTablesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewayroutetableannouncementsrequestdescribetransitgatewayroutetableannouncementspaginatetypedef">DescribeTransitGatewayRouteTableAnnouncementsRequestDescribeTransitGatewayRouteTableAnnouncementsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewayroutetableannouncementsrequestrequesttypedef">DescribeTransitGatewayRouteTableAnnouncementsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewayroutetablesrequestdescribetransitgatewayroutetablespaginatetypedef">DescribeTransitGatewayRouteTablesRequestDescribeTransitGatewayRouteTablesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewayroutetablesrequestrequesttypedef">DescribeTransitGatewayRouteTablesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewayvpcattachmentsrequestdescribetransitgatewayvpcattachmentspaginatetypedef">DescribeTransitGatewayVpcAttachmentsRequestDescribeTransitGatewayVpcAttachmentsPaginateTypeDef</a></li>
@@ -38724,6 +38751,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#gettransitgatewayattachmentpropagationsrequestrequesttypedef">GetTransitGatewayAttachmentPropagationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewaymulticastdomainassociationsrequestgettransitgatewaymulticastdomainassociationspaginatetypedef">GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewaymulticastdomainassociationsrequestrequesttypedef">GetTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypolicytableassociationsrequestgettransitgatewaypolicytableassociationspaginatetypedef">GetTransitGatewayPolicyTableAssociationsRequestGetTransitGatewayPolicyTableAssociationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypolicytableassociationsrequestrequesttypedef">GetTransitGatewayPolicyTableAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypolicytableentriesrequestrequesttypedef">GetTransitGatewayPolicyTableEntriesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayprefixlistreferencesrequestgettransitgatewayprefixlistreferencespaginatetypedef">GetTransitGatewayPrefixListReferencesRequestGetTransitGatewayPrefixListReferencesPaginateTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayprefixlistreferencesrequestrequesttypedef">GetTransitGatewayPrefixListReferencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayroutetableassociationsrequestgettransitgatewayroutetableassociationspaginatetypedef">GetTransitGatewayRouteTableAssociationsRequestGetTransitGatewayRouteTableAssociationsPaginateTypeDef</a></li>
@@ -38895,7 +38925,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#throughresourcesstatementrequesttypedef">ThroughResourcesStatementRequestTypeDef</a></li>
 <li><a href="type_defs/#pathstatementtypedef">PathStatementTypeDef</a></li>
 <li><a href="type_defs/#throughresourcesstatementtypedef">ThroughResourcesStatementTypeDef</a></li>
-<li><a href="type_defs/#transitgatewaypeeringattachmenttypedef">TransitGatewayPeeringAttachmentTypeDef</a></li>
 <li><a href="type_defs/#tunneloptiontypedef">TunnelOptionTypeDef</a></li>
 <li><a href="type_defs/#reservedinstanceslistingtypedef">ReservedInstancesListingTypeDef</a></li>
 <li><a href="type_defs/#provisionpublicipv4poolcidrresulttypedef">ProvisionPublicIpv4PoolCidrResultTypeDef</a></li>
@@ -38933,6 +38962,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#transitgatewayconnecttypedef">TransitGatewayConnectTypeDef</a></li>
 <li><a href="type_defs/#transitgatewaymulticastdomaintypedef">TransitGatewayMulticastDomainTypeDef</a></li>
 <li><a href="type_defs/#transitgatewaytypedef">TransitGatewayTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypeeringattachmenttypedef">TransitGatewayPeeringAttachmentTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypolicyruletypedef">TransitGatewayPolicyRuleTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayprefixlistreferencetypedef">TransitGatewayPrefixListReferenceTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayroutetypedef">TransitGatewayRouteTypeDef</a></li>
 <li><a href="type_defs/#transitgatewayvpcattachmenttypedef">TransitGatewayVpcAttachmentTypeDef</a></li>
@@ -39057,7 +39088,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createtransitgatewayconnectrequestrequesttypedef">CreateTransitGatewayConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewaymulticastdomainrequestrequesttypedef">CreateTransitGatewayMulticastDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewaypeeringattachmentrequestrequesttypedef">CreateTransitGatewayPeeringAttachmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypolicytablerequestrequesttypedef">CreateTransitGatewayPolicyTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayrequestrequesttypedef">CreateTransitGatewayRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewayroutetableannouncementrequestrequesttypedef">CreateTransitGatewayRouteTableAnnouncementRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayroutetablerequestrequesttypedef">CreateTransitGatewayRouteTableRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayvpcattachmentrequestrequesttypedef">CreateTransitGatewayVpcAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createvolumerequestrequesttypedef">CreateVolumeRequestRequestTypeDef</a></li>
@@ -39082,6 +39115,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifytrafficmirrorsessionresulttypedef">ModifyTrafficMirrorSessionResultTypeDef</a></li>
 <li><a href="type_defs/#createtrafficmirrortargetresulttypedef">CreateTrafficMirrorTargetResultTypeDef</a></li>
 <li><a href="type_defs/#describetrafficmirrortargetsresulttypedef">DescribeTrafficMirrorTargetsResultTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypolicytableresulttypedef">CreateTransitGatewayPolicyTableResultTypeDef</a></li>
+<li><a href="type_defs/#deletetransitgatewaypolicytableresulttypedef">DeleteTransitGatewayPolicyTableResultTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewaypolicytablesresulttypedef">DescribeTransitGatewayPolicyTablesResultTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewayroutetableannouncementresulttypedef">CreateTransitGatewayRouteTableAnnouncementResultTypeDef</a></li>
+<li><a href="type_defs/#deletetransitgatewayroutetableannouncementresulttypedef">DeleteTransitGatewayRouteTableAnnouncementResultTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewayroutetableannouncementsresulttypedef">DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayroutetableresulttypedef">CreateTransitGatewayRouteTableResultTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayroutetableresulttypedef">DeleteTransitGatewayRouteTableResultTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewayroutetablesresulttypedef">DescribeTransitGatewayRouteTablesResultTypeDef</a></li>
@@ -39217,11 +39256,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describenetworkinterfacepermissionsresulttypedef">DescribeNetworkInterfacePermissionsResultTypeDef</a></li>
 <li><a href="type_defs/#accessscopepathrequesttypedef">AccessScopePathRequestTypeDef</a></li>
 <li><a href="type_defs/#accessscopepathtypedef">AccessScopePathTypeDef</a></li>
-<li><a href="type_defs/#accepttransitgatewaypeeringattachmentresulttypedef">AcceptTransitGatewayPeeringAttachmentResultTypeDef</a></li>
-<li><a href="type_defs/#createtransitgatewaypeeringattachmentresulttypedef">CreateTransitGatewayPeeringAttachmentResultTypeDef</a></li>
-<li><a href="type_defs/#deletetransitgatewaypeeringattachmentresulttypedef">DeleteTransitGatewayPeeringAttachmentResultTypeDef</a></li>
-<li><a href="type_defs/#describetransitgatewaypeeringattachmentsresulttypedef">DescribeTransitGatewayPeeringAttachmentsResultTypeDef</a></li>
-<li><a href="type_defs/#rejecttransitgatewaypeeringattachmentresulttypedef">RejectTransitGatewayPeeringAttachmentResultTypeDef</a></li>
 <li><a href="type_defs/#vpnconnectionoptionstypedef">VpnConnectionOptionsTypeDef</a></li>
 <li><a href="type_defs/#cancelreservedinstanceslistingresulttypedef">CancelReservedInstancesListingResultTypeDef</a></li>
 <li><a href="type_defs/#createreservedinstanceslistingresulttypedef">CreateReservedInstancesListingResultTypeDef</a></li>
@@ -39275,6 +39309,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletetransitgatewayresulttypedef">DeleteTransitGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewaysresulttypedef">DescribeTransitGatewaysResultTypeDef</a></li>
 <li><a href="type_defs/#modifytransitgatewayresulttypedef">ModifyTransitGatewayResultTypeDef</a></li>
+<li><a href="type_defs/#accepttransitgatewaypeeringattachmentresulttypedef">AcceptTransitGatewayPeeringAttachmentResultTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypeeringattachmentresulttypedef">CreateTransitGatewayPeeringAttachmentResultTypeDef</a></li>
+<li><a href="type_defs/#deletetransitgatewaypeeringattachmentresulttypedef">DeleteTransitGatewayPeeringAttachmentResultTypeDef</a></li>
+<li><a href="type_defs/#describetransitgatewaypeeringattachmentsresulttypedef">DescribeTransitGatewayPeeringAttachmentsResultTypeDef</a></li>
+<li><a href="type_defs/#rejecttransitgatewaypeeringattachmentresulttypedef">RejectTransitGatewayPeeringAttachmentResultTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypolicytableentrytypedef">TransitGatewayPolicyTableEntryTypeDef</a></li>
 <li><a href="type_defs/#createtransitgatewayprefixlistreferenceresulttypedef">CreateTransitGatewayPrefixListReferenceResultTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayprefixlistreferenceresulttypedef">DeleteTransitGatewayPrefixListReferenceResultTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayprefixlistreferencesresulttypedef">GetTransitGatewayPrefixListReferencesResultTypeDef</a></li>
@@ -39364,6 +39404,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createtransitgatewayconnectpeerresulttypedef">CreateTransitGatewayConnectPeerResultTypeDef</a></li>
 <li><a href="type_defs/#deletetransitgatewayconnectpeerresulttypedef">DeleteTransitGatewayConnectPeerResultTypeDef</a></li>
 <li><a href="type_defs/#describetransitgatewayconnectpeersresulttypedef">DescribeTransitGatewayConnectPeersResultTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypolicytableentriesresulttypedef">GetTransitGatewayPolicyTableEntriesResultTypeDef</a></li>
 <li><a href="type_defs/#describevolumestatusresulttypedef">DescribeVolumeStatusResultTypeDef</a></li>
 <li><a href="type_defs/#createdefaultvpcresulttypedef">CreateDefaultVpcResultTypeDef</a></li>
 <li><a href="type_defs/#createvpcresulttypedef">CreateVpcResultTypeDef</a></li>

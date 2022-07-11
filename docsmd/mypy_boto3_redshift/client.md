@@ -381,8 +381,9 @@ Type annotations and code completion for `#!python boto3.client("redshift").auth
 def authorize_snapshot_access(
     self,
     *,
-    SnapshotIdentifier: str,
     AccountWithRestoreAccess: str,
+    SnapshotIdentifier: str = ...,
+    SnapshotArn: str = ...,
     SnapshotClusterIdentifier: str = ...,
 ) -> AuthorizeSnapshotAccessResultTypeDef:  # (1)
     ...
@@ -393,7 +394,6 @@ def authorize_snapshot_access(
 
 ```python title="Usage example with kwargs"
 kwargs: AuthorizeSnapshotAccessMessageRequestTypeDef = {  # (1)
-    "SnapshotIdentifier": ...,
     "AccountWithRestoreAccess": ...,
 }
 
@@ -1838,6 +1838,7 @@ def describe_cluster_snapshots(
     *,
     ClusterIdentifier: str = ...,
     SnapshotIdentifier: str = ...,
+    SnapshotArn: str = ...,
     SnapshotType: str = ...,
     StartTime: Union[datetime, str] = ...,
     EndTime: Union[datetime, str] = ...,
@@ -2408,6 +2409,7 @@ def describe_node_configuration_options(
     ActionType: ActionTypeType,  # (1)
     ClusterIdentifier: str = ...,
     SnapshotIdentifier: str = ...,
+    SnapshotArn: str = ...,
     OwnerAccount: str = ...,
     Filters: Sequence[NodeConfigurationOptionsFilterTypeDef] = ...,  # (2)
     Marker: str = ...,
@@ -3898,7 +3900,8 @@ def restore_from_cluster_snapshot(
     self,
     *,
     ClusterIdentifier: str,
-    SnapshotIdentifier: str,
+    SnapshotIdentifier: str = ...,
+    SnapshotArn: str = ...,
     SnapshotClusterIdentifier: str = ...,
     Port: int = ...,
     AvailabilityZone: str = ...,
@@ -3940,7 +3943,6 @@ def restore_from_cluster_snapshot(
 ```python title="Usage example with kwargs"
 kwargs: RestoreFromClusterSnapshotMessageRequestTypeDef = {  # (1)
     "ClusterIdentifier": ...,
-    "SnapshotIdentifier": ...,
 }
 
 parent.restore_from_cluster_snapshot(**kwargs)
@@ -4095,8 +4097,9 @@ Type annotations and code completion for `#!python boto3.client("redshift").revo
 def revoke_snapshot_access(
     self,
     *,
-    SnapshotIdentifier: str,
     AccountWithRestoreAccess: str,
+    SnapshotIdentifier: str = ...,
+    SnapshotArn: str = ...,
     SnapshotClusterIdentifier: str = ...,
 ) -> RevokeSnapshotAccessResultTypeDef:  # (1)
     ...
@@ -4107,7 +4110,6 @@ def revoke_snapshot_access(
 
 ```python title="Usage example with kwargs"
 kwargs: RevokeSnapshotAccessMessageRequestTypeDef = {  # (1)
-    "SnapshotIdentifier": ...,
     "AccountWithRestoreAccess": ...,
 }
 
