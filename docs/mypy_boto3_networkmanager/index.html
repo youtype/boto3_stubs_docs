@@ -36666,6 +36666,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#describeglobalnetworkspaginator">DescribeGlobalNetworksPaginator</a></li>
 <li><a href="paginators/#getconnectpeerassociationspaginator">GetConnectPeerAssociationsPaginator</a></li>
 <li><a href="paginators/#getconnectionspaginator">GetConnectionsPaginator</a></li>
+<li><a href="paginators/#getcorenetworkchangeeventspaginator">GetCoreNetworkChangeEventsPaginator</a></li>
 <li><a href="paginators/#getcorenetworkchangesetpaginator">GetCoreNetworkChangeSetPaginator</a></li>
 <li><a href="paginators/#getcustomergatewayassociationspaginator">GetCustomerGatewayAssociationsPaginator</a></li>
 <li><a href="paginators/#getdevicespaginator">GetDevicesPaginator</a></li>
@@ -36682,6 +36683,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listconnectpeerspaginator">ListConnectPeersPaginator</a></li>
 <li><a href="paginators/#listcorenetworkpolicyversionspaginator">ListCoreNetworkPolicyVersionsPaginator</a></li>
 <li><a href="paginators/#listcorenetworkspaginator">ListCoreNetworksPaginator</a></li>
+<li><a href="paginators/#listpeeringspaginator">ListPeeringsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
@@ -36695,6 +36697,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#attachmenttypetype">AttachmentTypeType</a></li>
 <li><a href="literals/#changeactiontype">ChangeActionType</a></li>
 <li><a href="literals/#changesetstatetype">ChangeSetStateType</a></li>
+<li><a href="literals/#changestatustype">ChangeStatusType</a></li>
 <li><a href="literals/#changetypetype">ChangeTypeType</a></li>
 <li><a href="literals/#connectpeerassociationstatetype">ConnectPeerAssociationStateType</a></li>
 <li><a href="literals/#connectpeerstatetype">ConnectPeerStateType</a></li>
@@ -36708,6 +36711,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#devicestatetype">DeviceStateType</a></li>
 <li><a href="literals/#getconnectpeerassociationspaginatorname">GetConnectPeerAssociationsPaginatorName</a></li>
 <li><a href="literals/#getconnectionspaginatorname">GetConnectionsPaginatorName</a></li>
+<li><a href="literals/#getcorenetworkchangeeventspaginatorname">GetCoreNetworkChangeEventsPaginatorName</a></li>
 <li><a href="literals/#getcorenetworkchangesetpaginatorname">GetCoreNetworkChangeSetPaginatorName</a></li>
 <li><a href="literals/#getcustomergatewayassociationspaginatorname">GetCustomerGatewayAssociationsPaginatorName</a></li>
 <li><a href="literals/#getdevicespaginatorname">GetDevicesPaginatorName</a></li>
@@ -36727,6 +36731,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listconnectpeerspaginatorname">ListConnectPeersPaginatorName</a></li>
 <li><a href="literals/#listcorenetworkpolicyversionspaginatorname">ListCoreNetworkPolicyVersionsPaginatorName</a></li>
 <li><a href="literals/#listcorenetworkspaginatorname">ListCoreNetworksPaginatorName</a></li>
+<li><a href="literals/#listpeeringspaginatorname">ListPeeringsPaginatorName</a></li>
+<li><a href="literals/#peeringstatetype">PeeringStateType</a></li>
+<li><a href="literals/#peeringtypetype">PeeringTypeType</a></li>
 <li><a href="literals/#routeanalysiscompletionreasoncodetype">RouteAnalysisCompletionReasonCodeType</a></li>
 <li><a href="literals/#routeanalysiscompletionresultcodetype">RouteAnalysisCompletionResultCodeType</a></li>
 <li><a href="literals/#routeanalysisstatustype">RouteAnalysisStatusType</a></li>
@@ -36770,6 +36777,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#connectattachmentoptionstypedef">ConnectAttachmentOptionsTypeDef</a></li>
 <li><a href="type_defs/#connectpeerbgpconfigurationtypedef">ConnectPeerBgpConfigurationTypeDef</a></li>
 <li><a href="type_defs/#connectionhealthtypedef">ConnectionHealthTypeDef</a></li>
+<li><a href="type_defs/#corenetworkchangeeventvaluestypedef">CoreNetworkChangeEventValuesTypeDef</a></li>
 <li><a href="type_defs/#corenetworkchangevaluestypedef">CoreNetworkChangeValuesTypeDef</a></li>
 <li><a href="type_defs/#corenetworkedgetypedef">CoreNetworkEdgeTypeDef</a></li>
 <li><a href="type_defs/#corenetworkpolicyerrortypedef">CoreNetworkPolicyErrorTypeDef</a></li>
@@ -36786,6 +36794,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedevicerequestrequesttypedef">DeleteDeviceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteglobalnetworkrequestrequesttypedef">DeleteGlobalNetworkRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelinkrequestrequesttypedef">DeleteLinkRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletepeeringrequestrequesttypedef">DeletePeeringRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteresourcepolicyrequestrequesttypedef">DeleteResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesiterequestrequesttypedef">DeleteSiteRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregistertransitgatewayrequestrequesttypedef">DeregisterTransitGatewayRequestRequestTypeDef</a></li>
@@ -36800,6 +36809,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getconnectpeerassociationsrequestrequesttypedef">GetConnectPeerAssociationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getconnectpeerrequestrequesttypedef">GetConnectPeerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getconnectionsrequestrequesttypedef">GetConnectionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcorenetworkchangeeventsrequestrequesttypedef">GetCoreNetworkChangeEventsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkchangesetrequestrequesttypedef">GetCoreNetworkChangeSetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkpolicyrequestrequesttypedef">GetCoreNetworkPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkrequestrequesttypedef">GetCoreNetworkRequestRequestTypeDef</a></li>
@@ -36818,13 +36828,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getsitetositevpnattachmentrequestrequesttypedef">GetSiteToSiteVpnAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getsitesrequestrequesttypedef">GetSitesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayconnectpeerassociationsrequestrequesttypedef">GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypeeringrequestrequesttypedef">GetTransitGatewayPeeringRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayregistrationsrequestrequesttypedef">GetTransitGatewayRegistrationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewayroutetableattachmentrequestrequesttypedef">GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getvpcattachmentrequestrequesttypedef">GetVpcAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listattachmentsrequestrequesttypedef">ListAttachmentsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listconnectpeersrequestrequesttypedef">ListConnectPeersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcorenetworkpolicyversionsrequestrequesttypedef">ListCoreNetworkPolicyVersionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcorenetworksrequestrequesttypedef">ListCoreNetworksRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listorganizationserviceaccessstatusrequestrequesttypedef">ListOrganizationServiceAccessStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listpeeringsrequestrequesttypedef">ListPeeringsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#networkresourcesummarytypedef">NetworkResourceSummaryTypeDef</a></li>
 <li><a href="type_defs/#networkroutedestinationtypedef">NetworkRouteDestinationTypeDef</a></li>
@@ -36865,9 +36878,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcorenetworkrequestrequesttypedef">CreateCoreNetworkRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createglobalnetworkrequestrequesttypedef">CreateGlobalNetworkRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createsitetositevpnattachmentrequestrequesttypedef">CreateSiteToSiteVpnAttachmentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypeeringrequestrequesttypedef">CreateTransitGatewayPeeringRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewayroutetableattachmentrequestrequesttypedef">CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#globalnetworktypedef">GlobalNetworkTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#networkresourcetypedef">NetworkResourceTypeDef</a></li>
+<li><a href="type_defs/#peeringtypedef">PeeringTypeDef</a></li>
 <li><a href="type_defs/#proposedsegmentchangetypedef">ProposedSegmentChangeTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createlinkrequestrequesttypedef">CreateLinkRequestRequestTypeDef</a></li>
@@ -36877,6 +36893,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createconnectattachmentrequestrequesttypedef">CreateConnectAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#connectpeerconfigurationtypedef">ConnectPeerConfigurationTypeDef</a></li>
 <li><a href="type_defs/#networktelemetrytypedef">NetworkTelemetryTypeDef</a></li>
+<li><a href="type_defs/#corenetworkchangeeventtypedef">CoreNetworkChangeEventTypeDef</a></li>
 <li><a href="type_defs/#corenetworkchangetypedef">CoreNetworkChangeTypeDef</a></li>
 <li><a href="type_defs/#corenetworkpolicytypedef">CoreNetworkPolicyTypeDef</a></li>
 <li><a href="type_defs/#listcorenetworkpolicyversionsresponsetypedef">ListCoreNetworkPolicyVersionsResponseTypeDef</a></li>
@@ -36893,6 +36910,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeglobalnetworksrequestdescribeglobalnetworkspaginatetypedef">DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef</a></li>
 <li><a href="type_defs/#getconnectpeerassociationsrequestgetconnectpeerassociationspaginatetypedef">GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getconnectionsrequestgetconnectionspaginatetypedef">GetConnectionsRequestGetConnectionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getcorenetworkchangeeventsrequestgetcorenetworkchangeeventspaginatetypedef">GetCoreNetworkChangeEventsRequestGetCoreNetworkChangeEventsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkchangesetrequestgetcorenetworkchangesetpaginatetypedef">GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef</a></li>
 <li><a href="type_defs/#getcustomergatewayassociationsrequestgetcustomergatewayassociationspaginatetypedef">GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getdevicesrequestgetdevicespaginatetypedef">GetDevicesRequestGetDevicesPaginateTypeDef</a></li>
@@ -36909,6 +36927,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listconnectpeersrequestlistconnectpeerspaginatetypedef">ListConnectPeersRequestListConnectPeersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcorenetworkpolicyversionsrequestlistcorenetworkpolicyversionspaginatetypedef">ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcorenetworksrequestlistcorenetworkspaginatetypedef">ListCoreNetworksRequestListCoreNetworksPaginateTypeDef</a></li>
+<li><a href="type_defs/#listpeeringsrequestlistpeeringspaginatetypedef">ListPeeringsRequestListPeeringsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getnetworkresourcecountsresponsetypedef">GetNetworkResourceCountsResponseTypeDef</a></li>
 <li><a href="type_defs/#getnetworkresourcerelationshipsresponsetypedef">GetNetworkResourceRelationshipsResponseTypeDef</a></li>
 <li><a href="type_defs/#pathcomponenttypedef">PathComponentTypeDef</a></li>
@@ -36928,6 +36947,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeglobalnetworksresponsetypedef">DescribeGlobalNetworksResponseTypeDef</a></li>
 <li><a href="type_defs/#updateglobalnetworkresponsetypedef">UpdateGlobalNetworkResponseTypeDef</a></li>
 <li><a href="type_defs/#getnetworkresourcesresponsetypedef">GetNetworkResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#deletepeeringresponsetypedef">DeletePeeringResponseTypeDef</a></li>
+<li><a href="type_defs/#listpeeringsresponsetypedef">ListPeeringsResponseTypeDef</a></li>
+<li><a href="type_defs/#transitgatewaypeeringtypedef">TransitGatewayPeeringTypeDef</a></li>
 <li><a href="type_defs/#attachmenttypedef">AttachmentTypeDef</a></li>
 <li><a href="type_defs/#createlinkresponsetypedef">CreateLinkResponseTypeDef</a></li>
 <li><a href="type_defs/#deletelinkresponsetypedef">DeleteLinkResponseTypeDef</a></li>
@@ -36935,6 +36957,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatelinkresponsetypedef">UpdateLinkResponseTypeDef</a></li>
 <li><a href="type_defs/#connectpeertypedef">ConnectPeerTypeDef</a></li>
 <li><a href="type_defs/#getnetworktelemetryresponsetypedef">GetNetworkTelemetryResponseTypeDef</a></li>
+<li><a href="type_defs/#getcorenetworkchangeeventsresponsetypedef">GetCoreNetworkChangeEventsResponseTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkchangesetresponsetypedef">GetCoreNetworkChangeSetResponseTypeDef</a></li>
 <li><a href="type_defs/#deletecorenetworkpolicyversionresponsetypedef">DeleteCoreNetworkPolicyVersionResponseTypeDef</a></li>
 <li><a href="type_defs/#getcorenetworkpolicyresponsetypedef">GetCoreNetworkPolicyResponseTypeDef</a></li>
@@ -36958,12 +36981,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deregistertransitgatewayresponsetypedef">DeregisterTransitGatewayResponseTypeDef</a></li>
 <li><a href="type_defs/#gettransitgatewayregistrationsresponsetypedef">GetTransitGatewayRegistrationsResponseTypeDef</a></li>
 <li><a href="type_defs/#registertransitgatewayresponsetypedef">RegisterTransitGatewayResponseTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewaypeeringresponsetypedef">CreateTransitGatewayPeeringResponseTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewaypeeringresponsetypedef">GetTransitGatewayPeeringResponseTypeDef</a></li>
 <li><a href="type_defs/#acceptattachmentresponsetypedef">AcceptAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#connectattachmenttypedef">ConnectAttachmentTypeDef</a></li>
 <li><a href="type_defs/#deleteattachmentresponsetypedef">DeleteAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#listattachmentsresponsetypedef">ListAttachmentsResponseTypeDef</a></li>
 <li><a href="type_defs/#rejectattachmentresponsetypedef">RejectAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#sitetositevpnattachmenttypedef">SiteToSiteVpnAttachmentTypeDef</a></li>
+<li><a href="type_defs/#transitgatewayroutetableattachmenttypedef">TransitGatewayRouteTableAttachmentTypeDef</a></li>
 <li><a href="type_defs/#vpcattachmenttypedef">VpcAttachmentTypeDef</a></li>
 <li><a href="type_defs/#createconnectpeerresponsetypedef">CreateConnectPeerResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteconnectpeerresponsetypedef">DeleteConnectPeerResponseTypeDef</a></li>
@@ -36973,6 +36999,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getconnectattachmentresponsetypedef">GetConnectAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#createsitetositevpnattachmentresponsetypedef">CreateSiteToSiteVpnAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#getsitetositevpnattachmentresponsetypedef">GetSiteToSiteVpnAttachmentResponseTypeDef</a></li>
+<li><a href="type_defs/#createtransitgatewayroutetableattachmentresponsetypedef">CreateTransitGatewayRouteTableAttachmentResponseTypeDef</a></li>
+<li><a href="type_defs/#gettransitgatewayroutetableattachmentresponsetypedef">GetTransitGatewayRouteTableAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#createvpcattachmentresponsetypedef">CreateVpcAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#getvpcattachmentresponsetypedef">GetVpcAttachmentResponseTypeDef</a></li>
 <li><a href="type_defs/#updatevpcattachmentresponsetypedef">UpdateVpcAttachmentResponseTypeDef</a></li>

@@ -586,6 +586,74 @@ parent.create_site_to_site_vpn_attachment(**kwargs)
 
 1. See [:material-code-braces: CreateSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#createsitetositevpnattachmentrequestrequesttypedef) 
 
+### create\_transit\_gateway\_peering
+
+Creates a transit gateway peering connection.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_transit_gateway_peering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_transit_gateway_peering)
+
+```python title="Method definition"
+def create_transit_gateway_peering(
+    self,
+    *,
+    CoreNetworkId: str,
+    TransitGatewayArn: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+) -> CreateTransitGatewayPeeringResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTransitGatewayPeeringResponseTypeDef](./type_defs.md#createtransitgatewaypeeringresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateTransitGatewayPeeringRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "TransitGatewayArn": ...,
+}
+
+parent.create_transit_gateway_peering(**kwargs)
+```
+
+1. See [:material-code-braces: CreateTransitGatewayPeeringRequestRequestTypeDef](./type_defs.md#createtransitgatewaypeeringrequestrequesttypedef) 
+
+### create\_transit\_gateway\_route\_table\_attachment
+
+Creates a transit gateway route table attachment.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_transit_gateway_route_table_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_transit_gateway_route_table_attachment)
+
+```python title="Method definition"
+def create_transit_gateway_route_table_attachment(
+    self,
+    *,
+    PeeringId: str,
+    TransitGatewayRouteTableArn: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+) -> CreateTransitGatewayRouteTableAttachmentResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTransitGatewayRouteTableAttachmentResponseTypeDef](./type_defs.md#createtransitgatewayroutetableattachmentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef = {  # (1)
+    "PeeringId": ...,
+    "TransitGatewayRouteTableArn": ...,
+}
+
+parent.create_transit_gateway_route_table_attachment(**kwargs)
+```
+
+1. See [:material-code-braces: CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef](./type_defs.md#createtransitgatewayroutetableattachmentrequestrequesttypedef) 
+
 ### create\_vpc\_attachment
 
 Creates a VPC attachment on an edge location of a core network.
@@ -863,6 +931,35 @@ parent.delete_link(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteLinkRequestRequestTypeDef](./type_defs.md#deletelinkrequestrequesttypedef) 
+
+### delete\_peering
+
+Deletes an existing peering connection.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_peering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_peering)
+
+```python title="Method definition"
+def delete_peering(
+    self,
+    *,
+    PeeringId: str,
+) -> DeletePeeringResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeletePeeringResponseTypeDef](./type_defs.md#deletepeeringresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeletePeeringRequestRequestTypeDef = {  # (1)
+    "PeeringId": ...,
+}
+
+parent.delete_peering(**kwargs)
+```
+
+1. See [:material-code-braces: DeletePeeringRequestRequestTypeDef](./type_defs.md#deletepeeringrequestrequesttypedef) 
 
 ### delete\_resource\_policy
 
@@ -1312,6 +1409,39 @@ parent.get_core_network(**kwargs)
 
 1. See [:material-code-braces: GetCoreNetworkRequestRequestTypeDef](./type_defs.md#getcorenetworkrequestrequesttypedef) 
 
+### get\_core\_network\_change\_events
+
+Returns information about a core network change event.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network_change_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_change_events)
+
+```python title="Method definition"
+def get_core_network_change_events(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCoreNetworkChangeEventsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCoreNetworkChangeEventsResponseTypeDef](./type_defs.md#getcorenetworkchangeeventsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCoreNetworkChangeEventsRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
+
+parent.get_core_network_change_events(**kwargs)
+```
+
+1. See [:material-code-braces: GetCoreNetworkChangeEventsRequestRequestTypeDef](./type_defs.md#getcorenetworkchangeeventsrequestrequesttypedef) 
+
 ### get\_core\_network\_change\_set
 
 Returns a change set between the LIVE core network policy and a submitted
@@ -1348,7 +1478,7 @@ parent.get_core_network_change_set(**kwargs)
 
 ### get\_core\_network\_policy
 
-Gets details about a core network policy.
+Returns details about a core network policy.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_policy)
@@ -1852,6 +1982,35 @@ parent.get_transit_gateway_connect_peer_associations(**kwargs)
 
 1. See [:material-code-braces: GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestrequesttypedef) 
 
+### get\_transit\_gateway\_peering
+
+Returns information about a transit gateway peer.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_transit_gateway_peering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_peering)
+
+```python title="Method definition"
+def get_transit_gateway_peering(
+    self,
+    *,
+    PeeringId: str,
+) -> GetTransitGatewayPeeringResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTransitGatewayPeeringResponseTypeDef](./type_defs.md#gettransitgatewaypeeringresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayPeeringRequestRequestTypeDef = {  # (1)
+    "PeeringId": ...,
+}
+
+parent.get_transit_gateway_peering(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayPeeringRequestRequestTypeDef](./type_defs.md#gettransitgatewaypeeringrequestrequesttypedef) 
+
 ### get\_transit\_gateway\_registrations
 
 Gets information about the transit gateway registrations in a specified global
@@ -1884,6 +2043,35 @@ parent.get_transit_gateway_registrations(**kwargs)
 ```
 
 1. See [:material-code-braces: GetTransitGatewayRegistrationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestrequesttypedef) 
+
+### get\_transit\_gateway\_route\_table\_attachment
+
+Returns information about a transit gateway route table attachment.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_transit_gateway_route_table_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_route_table_attachment)
+
+```python title="Method definition"
+def get_transit_gateway_route_table_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> GetTransitGatewayRouteTableAttachmentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTransitGatewayRouteTableAttachmentResponseTypeDef](./type_defs.md#gettransitgatewayroutetableattachmentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
+
+parent.get_transit_gateway_route_table_attachment(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef](./type_defs.md#gettransitgatewayroutetableattachmentrequestrequesttypedef) 
 
 ### get\_vpc\_attachment
 
@@ -2045,8 +2233,8 @@ parent.list_core_networks(**kwargs)
 
 ### list\_organization\_service\_access\_status
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/networkmanager-2019-07-05/ListOrganizationServiceAccessStatus).
+Gets the status of the Service Linked Role (SLR) deployment for the accounts in
+a given Amazon Web Services Organization.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").list_organization_service_access_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_organization_service_access_status)
@@ -2073,6 +2261,42 @@ parent.list_organization_service_access_status(**kwargs)
 ```
 
 1. See [:material-code-braces: ListOrganizationServiceAccessStatusRequestRequestTypeDef](./type_defs.md#listorganizationserviceaccessstatusrequestrequesttypedef) 
+
+### list\_peerings
+
+Lists the peerings for a core network.
+
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_peerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_peerings)
+
+```python title="Method definition"
+def list_peerings(
+    self,
+    *,
+    CoreNetworkId: str = ...,
+    PeeringType: PeeringTypeType = ...,  # (1)
+    EdgeLocation: str = ...,
+    State: PeeringStateType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPeeringsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: PeeringTypeType](./literals.md#peeringtypetype) 
+2. See [:material-code-brackets: PeeringStateType](./literals.md#peeringstatetype) 
+3. See [:material-code-braces: ListPeeringsResponseTypeDef](./type_defs.md#listpeeringsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPeeringsRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
+
+parent.list_peerings(**kwargs)
+```
+
+1. See [:material-code-braces: ListPeeringsRequestRequestTypeDef](./type_defs.md#listpeeringsrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -2261,8 +2485,7 @@ parent.restore_core_network_policy_version(**kwargs)
 
 ### start\_organization\_service\_access\_update
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/networkmanager-2019-07-05/StartOrganizationServiceAccessUpdate).
+Enables for the Network Manager service for an Amazon Web Services Organization.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").start_organization_service_access_update` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_organization_service_access_update)
@@ -2667,6 +2890,7 @@ Type annotations and code completion for `#!python boto3.client("networkmanager"
 - `client.get_paginator("describe_global_networks")` -> [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
 - `client.get_paginator("get_connect_peer_associations")` -> [GetConnectPeerAssociationsPaginator](./paginators.md#getconnectpeerassociationspaginator)
 - `client.get_paginator("get_connections")` -> [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_core_network_change_events")` -> [GetCoreNetworkChangeEventsPaginator](./paginators.md#getcorenetworkchangeeventspaginator)
 - `client.get_paginator("get_core_network_change_set")` -> [GetCoreNetworkChangeSetPaginator](./paginators.md#getcorenetworkchangesetpaginator)
 - `client.get_paginator("get_customer_gateway_associations")` -> [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
 - `client.get_paginator("get_devices")` -> [GetDevicesPaginator](./paginators.md#getdevicespaginator)
@@ -2683,6 +2907,7 @@ Type annotations and code completion for `#!python boto3.client("networkmanager"
 - `client.get_paginator("list_connect_peers")` -> [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
 - `client.get_paginator("list_core_network_policy_versions")` -> [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
 - `client.get_paginator("list_core_networks")` -> [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
+- `client.get_paginator("list_peerings")` -> [ListPeeringsPaginator](./paginators.md#listpeeringspaginator)
 
 
 

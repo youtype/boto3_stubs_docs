@@ -353,6 +353,25 @@ class ConnectionHealthTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
 2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
+## CoreNetworkChangeEventValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeEventValuesTypeDef
+
+def get_value() -> CoreNetworkChangeEventValuesTypeDef:
+    return {
+        "EdgeLocation": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkChangeEventValuesTypeDef(TypedDict):
+    EdgeLocation: NotRequired[str],
+    SegmentName: NotRequired[str],
+    AttachmentId: NotRequired[str],
+    Cidr: NotRequired[str],
+```
+
 ## CoreNetworkChangeValuesTypeDef
 
 ```python title="Usage Example"
@@ -641,6 +660,22 @@ class DeleteLinkRequestRequestTypeDef(TypedDict):
     LinkId: str,
 ```
 
+## DeletePeeringRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeletePeeringRequestRequestTypeDef
+
+def get_value() -> DeletePeeringRequestRequestTypeDef:
+    return {
+        "PeeringId": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePeeringRequestRequestTypeDef(TypedDict):
+    PeeringId: str,
+```
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -888,6 +923,26 @@ class GetConnectionsRequestRequestTypeDef(TypedDict):
     GlobalNetworkId: str,
     ConnectionIds: NotRequired[Sequence[str]],
     DeviceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## GetCoreNetworkChangeEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeEventsRequestRequestTypeDef
+
+def get_value() -> GetCoreNetworkChangeEventsRequestRequestTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "PolicyVersionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkChangeEventsRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: str,
+    PolicyVersionId: int,
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
 ```
@@ -1241,6 +1296,22 @@ class GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## GetTransitGatewayPeeringRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayPeeringRequestRequestTypeDef
+
+def get_value() -> GetTransitGatewayPeeringRequestRequestTypeDef:
+    return {
+        "PeeringId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPeeringRequestRequestTypeDef(TypedDict):
+    PeeringId: str,
+```
+
 ## GetTransitGatewayRegistrationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1258,6 +1329,22 @@ class GetTransitGatewayRegistrationsRequestRequestTypeDef(TypedDict):
     TransitGatewayArns: NotRequired[Sequence[str]],
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+```
+
+## GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef
+
+def get_value() -> GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef:
+    return {
+        "AttachmentId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayRouteTableAttachmentRequestRequestTypeDef(TypedDict):
+    AttachmentId: str,
 ```
 
 ## GetVpcAttachmentRequestRequestTypeDef
@@ -1370,6 +1457,29 @@ class ListOrganizationServiceAccessStatusRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListPeeringsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListPeeringsRequestRequestTypeDef
+
+def get_value() -> ListPeeringsRequestRequestTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPeeringsRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    PeeringType: NotRequired[PeeringTypeType],  # (1)
+    EdgeLocation: NotRequired[str],
+    State: NotRequired[PeeringStateType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PeeringTypeType](./literals.md#peeringtypetype) 
+2. See [:material-code-brackets: PeeringStateType](./literals.md#peeringstatetype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2170,6 +2280,48 @@ class CreateSiteToSiteVpnAttachmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateTransitGatewayPeeringRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateTransitGatewayPeeringRequestRequestTypeDef
+
+def get_value() -> CreateTransitGatewayPeeringRequestRequestTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "TransitGatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPeeringRequestRequestTypeDef(TypedDict):
+    CoreNetworkId: str,
+    TransitGatewayArn: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef
+
+def get_value() -> CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef:
+    return {
+        "PeeringId": ...,
+        "TransitGatewayRouteTableArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayRouteTableAttachmentRequestRequestTypeDef(TypedDict):
+    PeeringId: str,
+    TransitGatewayRouteTableArn: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## GlobalNetworkTypeDef
 
 ```python title="Usage Example"
@@ -2240,6 +2392,34 @@ class NetworkResourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## PeeringTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import PeeringTypeDef
+
+def get_value() -> PeeringTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class PeeringTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    CoreNetworkArn: NotRequired[str],
+    PeeringId: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    PeeringType: NotRequired[PeeringTypeType],  # (1)
+    State: NotRequired[PeeringStateType],  # (2)
+    EdgeLocation: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    CreatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: PeeringTypeType](./literals.md#peeringtypetype) 
+2. See [:material-code-brackets: PeeringStateType](./literals.md#peeringstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ProposedSegmentChangeTypeDef
 
 ```python title="Usage Example"
@@ -2455,6 +2635,31 @@ class NetworkTelemetryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConnectionHealthTypeDef](./type_defs.md#connectionhealthtypedef) 
+## CoreNetworkChangeEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeEventTypeDef
+
+def get_value() -> CoreNetworkChangeEventTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class CoreNetworkChangeEventTypeDef(TypedDict):
+    Type: NotRequired[ChangeTypeType],  # (1)
+    Action: NotRequired[ChangeActionType],  # (2)
+    IdentifierPath: NotRequired[str],
+    EventTime: NotRequired[datetime],
+    Status: NotRequired[ChangeStatusType],  # (3)
+    Values: NotRequired[CoreNetworkChangeEventValuesTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+2. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+3. See [:material-code-brackets: ChangeStatusType](./literals.md#changestatustype) 
+4. See [:material-code-braces: CoreNetworkChangeEventValuesTypeDef](./type_defs.md#corenetworkchangeeventvaluestypedef) 
 ## CoreNetworkChangeTypeDef
 
 ```python title="Usage Example"
@@ -2473,6 +2678,7 @@ class CoreNetworkChangeTypeDef(TypedDict):
     Identifier: NotRequired[str],
     PreviousValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
     NewValues: NotRequired[CoreNetworkChangeValuesTypeDef],  # (3)
+    IdentifierPath: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
@@ -2832,6 +3038,26 @@ class GetConnectionsRequestGetConnectionsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetCoreNetworkChangeEventsRequestGetCoreNetworkChangeEventsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeEventsRequestGetCoreNetworkChangeEventsPaginateTypeDef
+
+def get_value() -> GetCoreNetworkChangeEventsRequestGetCoreNetworkChangeEventsPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+        "PolicyVersionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkChangeEventsRequestGetCoreNetworkChangeEventsPaginateTypeDef(TypedDict):
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3158,6 +3384,29 @@ class ListCoreNetworksRequestListCoreNetworksPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPeeringsRequestListPeeringsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListPeeringsRequestListPeeringsPaginateTypeDef
+
+def get_value() -> ListPeeringsRequestListPeeringsPaginateTypeDef:
+    return {
+        "CoreNetworkId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPeeringsRequestListPeeringsPaginateTypeDef(TypedDict):
+    CoreNetworkId: NotRequired[str],
+    PeeringType: NotRequired[PeeringTypeType],  # (1)
+    EdgeLocation: NotRequired[str],
+    State: NotRequired[PeeringStateType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PeeringTypeType](./literals.md#peeringtypetype) 
+2. See [:material-code-brackets: PeeringStateType](./literals.md#peeringstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetNetworkResourceCountsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3559,6 +3808,66 @@ class GetNetworkResourcesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeletePeeringResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import DeletePeeringResponseTypeDef
+
+def get_value() -> DeletePeeringResponseTypeDef:
+    return {
+        "Peering": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePeeringResponseTypeDef(TypedDict):
+    Peering: PeeringTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PeeringTypeDef](./type_defs.md#peeringtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPeeringsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import ListPeeringsResponseTypeDef
+
+def get_value() -> ListPeeringsResponseTypeDef:
+    return {
+        "Peerings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPeeringsResponseTypeDef(TypedDict):
+    Peerings: List[PeeringTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PeeringTypeDef](./type_defs.md#peeringtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TransitGatewayPeeringTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import TransitGatewayPeeringTypeDef
+
+def get_value() -> TransitGatewayPeeringTypeDef:
+    return {
+        "Peering": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayPeeringTypeDef(TypedDict):
+    Peering: NotRequired[PeeringTypeDef],  # (1)
+    TransitGatewayArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: PeeringTypeDef](./type_defs.md#peeringtypedef) 
 ## AttachmentTypeDef
 
 ```python title="Usage Example"
@@ -3721,6 +4030,28 @@ class GetNetworkTelemetryResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NetworkTelemetryTypeDef](./type_defs.md#networktelemetrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCoreNetworkChangeEventsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeEventsResponseTypeDef
+
+def get_value() -> GetCoreNetworkChangeEventsResponseTypeDef:
+    return {
+        "CoreNetworkChangeEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCoreNetworkChangeEventsResponseTypeDef(TypedDict):
+    CoreNetworkChangeEvents: List[CoreNetworkChangeEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoreNetworkChangeEventTypeDef](./type_defs.md#corenetworkchangeeventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCoreNetworkChangeSetResponseTypeDef
 
@@ -4208,6 +4539,46 @@ class RegisterTransitGatewayResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTransitGatewayPeeringResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateTransitGatewayPeeringResponseTypeDef
+
+def get_value() -> CreateTransitGatewayPeeringResponseTypeDef:
+    return {
+        "TransitGatewayPeering": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayPeeringResponseTypeDef(TypedDict):
+    TransitGatewayPeering: TransitGatewayPeeringTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringTypeDef](./type_defs.md#transitgatewaypeeringtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayPeeringResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayPeeringResponseTypeDef
+
+def get_value() -> GetTransitGatewayPeeringResponseTypeDef:
+    return {
+        "TransitGatewayPeering": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayPeeringResponseTypeDef(TypedDict):
+    TransitGatewayPeering: TransitGatewayPeeringTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayPeeringTypeDef](./type_defs.md#transitgatewaypeeringtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AcceptAttachmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -4325,6 +4696,25 @@ def get_value() -> SiteToSiteVpnAttachmentTypeDef:
 class SiteToSiteVpnAttachmentTypeDef(TypedDict):
     Attachment: NotRequired[AttachmentTypeDef],  # (1)
     VpnConnectionArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+## TransitGatewayRouteTableAttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import TransitGatewayRouteTableAttachmentTypeDef
+
+def get_value() -> TransitGatewayRouteTableAttachmentTypeDef:
+    return {
+        "Attachment": ...,
+    }
+```
+
+```python title="Definition"
+class TransitGatewayRouteTableAttachmentTypeDef(TypedDict):
+    Attachment: NotRequired[AttachmentTypeDef],  # (1)
+    PeeringId: NotRequired[str],
+    TransitGatewayRouteTableArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
@@ -4518,6 +4908,46 @@ class GetSiteToSiteVpnAttachmentResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTransitGatewayRouteTableAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import CreateTransitGatewayRouteTableAttachmentResponseTypeDef
+
+def get_value() -> CreateTransitGatewayRouteTableAttachmentResponseTypeDef:
+    return {
+        "TransitGatewayRouteTableAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTransitGatewayRouteTableAttachmentResponseTypeDef(TypedDict):
+    TransitGatewayRouteTableAttachment: TransitGatewayRouteTableAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRouteTableAttachmentTypeDef](./type_defs.md#transitgatewayroutetableattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTransitGatewayRouteTableAttachmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRouteTableAttachmentResponseTypeDef
+
+def get_value() -> GetTransitGatewayRouteTableAttachmentResponseTypeDef:
+    return {
+        "TransitGatewayRouteTableAttachment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTransitGatewayRouteTableAttachmentResponseTypeDef(TypedDict):
+    TransitGatewayRouteTableAttachment: TransitGatewayRouteTableAttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TransitGatewayRouteTableAttachmentTypeDef](./type_defs.md#transitgatewayroutetableattachmenttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVpcAttachmentResponseTypeDef
 

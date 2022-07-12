@@ -92,6 +92,7 @@ def get_value() -> EventSourceValuesType:
 - [DLMServiceName](./literals.md#dlmservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

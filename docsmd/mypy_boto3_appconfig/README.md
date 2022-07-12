@@ -89,6 +89,7 @@ def get_value() -> DeploymentEventTypeType:
 - [AppConfigServiceName](./literals.md#appconfigservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 
