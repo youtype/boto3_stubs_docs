@@ -7,6 +7,47 @@
     Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
     type annotations stubs module [mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
+## ActionInvocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ActionInvocationTypeDef
+
+def get_value() -> ActionInvocationTypeDef:
+    return {
+        "ExtensionIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ActionInvocationTypeDef(TypedDict):
+    ExtensionIdentifier: NotRequired[str],
+    ActionName: NotRequired[str],
+    Uri: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    InvocationId: NotRequired[str],
+```
+
+## ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Uri: NotRequired[str],
+    RoleArn: NotRequired[str],
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -47,6 +88,25 @@ class ApplicationTypeDef(TypedDict):
     Id: NotRequired[str],
     Name: NotRequired[str],
     Description: NotRequired[str],
+```
+
+## AppliedExtensionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import AppliedExtensionTypeDef
+
+def get_value() -> AppliedExtensionTypeDef:
+    return {
+        "ExtensionId": ...,
+    }
+```
+
+```python title="Definition"
+class AppliedExtensionTypeDef(TypedDict):
+    ExtensionId: NotRequired[str],
+    ExtensionAssociationId: NotRequired[str],
+    VersionNumber: NotRequired[int],
+    Parameters: NotRequired[Dict[str, str]],
 ```
 
 ## ConfigurationProfileSummaryTypeDef
@@ -118,7 +178,6 @@ def get_value() -> CreateDeploymentStrategyRequestRequestTypeDef:
         "Name": ...,
         "DeploymentDurationInMinutes": ...,
         "GrowthFactor": ...,
-        "ReplicateTo": ...,
     }
 ```
 
@@ -127,15 +186,15 @@ class CreateDeploymentStrategyRequestRequestTypeDef(TypedDict):
     Name: str,
     DeploymentDurationInMinutes: int,
     GrowthFactor: float,
-    ReplicateTo: ReplicateToType,  # (1)
     Description: NotRequired[str],
     FinalBakeTimeInMinutes: NotRequired[int],
-    GrowthType: NotRequired[GrowthTypeType],  # (2)
+    GrowthType: NotRequired[GrowthTypeType],  # (1)
+    ReplicateTo: NotRequired[ReplicateToType],  # (2)
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
-2. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
 ## MonitorTypeDef
 
 ```python title="Usage Example"
@@ -151,6 +210,44 @@ def get_value() -> MonitorTypeDef:
 class MonitorTypeDef(TypedDict):
     AlarmArn: str,
     AlarmRoleArn: NotRequired[str],
+```
+
+## CreateExtensionAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import CreateExtensionAssociationRequestRequestTypeDef
+
+def get_value() -> CreateExtensionAssociationRequestRequestTypeDef:
+    return {
+        "ExtensionIdentifier": ...,
+        "ResourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class CreateExtensionAssociationRequestRequestTypeDef(TypedDict):
+    ExtensionIdentifier: str,
+    ResourceIdentifier: str,
+    ExtensionVersionNumber: NotRequired[int],
+    Parameters: NotRequired[Mapping[str, str]],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+## ParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Required: NotRequired[bool],
 ```
 
 ## CreateHostedConfigurationVersionRequestRequestTypeDef
@@ -245,6 +342,39 @@ class DeleteEnvironmentRequestRequestTypeDef(TypedDict):
     EnvironmentId: str,
 ```
 
+## DeleteExtensionAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import DeleteExtensionAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteExtensionAssociationRequestRequestTypeDef:
+    return {
+        "ExtensionAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteExtensionAssociationRequestRequestTypeDef(TypedDict):
+    ExtensionAssociationId: str,
+```
+
+## DeleteExtensionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import DeleteExtensionRequestRequestTypeDef
+
+def get_value() -> DeleteExtensionRequestRequestTypeDef:
+    return {
+        "ExtensionIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteExtensionRequestRequestTypeDef(TypedDict):
+    ExtensionIdentifier: str,
+    VersionNumber: NotRequired[int],
+```
+
 ## DeleteHostedConfigurationVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -265,27 +395,6 @@ class DeleteHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
     VersionNumber: int,
 ```
 
-## DeploymentEventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appconfig.type_defs import DeploymentEventTypeDef
-
-def get_value() -> DeploymentEventTypeDef:
-    return {
-        "EventType": ...,
-    }
-```
-
-```python title="Definition"
-class DeploymentEventTypeDef(TypedDict):
-    EventType: NotRequired[DeploymentEventTypeType],  # (1)
-    TriggeredBy: NotRequired[TriggeredByType],  # (2)
-    Description: NotRequired[str],
-    OccurredAt: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: DeploymentEventTypeType](./literals.md#deploymenteventtypetype) 
-2. See [:material-code-brackets: TriggeredByType](./literals.md#triggeredbytype) 
 ## DeploymentStrategyTypeDef
 
 ```python title="Usage Example"
@@ -339,6 +448,44 @@ class DeploymentSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
 2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
+## ExtensionAssociationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionAssociationSummaryTypeDef
+
+def get_value() -> ExtensionAssociationSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ExtensionAssociationSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ExtensionArn: NotRequired[str],
+    ResourceArn: NotRequired[str],
+```
+
+## ExtensionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionSummaryTypeDef
+
+def get_value() -> ExtensionSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ExtensionSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    VersionNumber: NotRequired[int],
+    Arn: NotRequired[str],
+    Description: NotRequired[str],
+```
+
 ## GetApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -448,6 +595,39 @@ def get_value() -> GetEnvironmentRequestRequestTypeDef:
 class GetEnvironmentRequestRequestTypeDef(TypedDict):
     ApplicationId: str,
     EnvironmentId: str,
+```
+
+## GetExtensionAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import GetExtensionAssociationRequestRequestTypeDef
+
+def get_value() -> GetExtensionAssociationRequestRequestTypeDef:
+    return {
+        "ExtensionAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class GetExtensionAssociationRequestRequestTypeDef(TypedDict):
+    ExtensionAssociationId: str,
+```
+
+## GetExtensionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import GetExtensionRequestRequestTypeDef
+
+def get_value() -> GetExtensionRequestRequestTypeDef:
+    return {
+        "ExtensionIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetExtensionRequestRequestTypeDef(TypedDict):
+    ExtensionIdentifier: str,
+    VersionNumber: NotRequired[int],
 ```
 
 ## GetHostedConfigurationVersionRequestRequestTypeDef
@@ -579,6 +759,44 @@ class ListEnvironmentsRequestRequestTypeDef(TypedDict):
     ApplicationId: str,
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+```
+
+## ListExtensionAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ListExtensionAssociationsRequestRequestTypeDef
+
+def get_value() -> ListExtensionAssociationsRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListExtensionAssociationsRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: NotRequired[str],
+    ExtensionIdentifier: NotRequired[str],
+    ExtensionVersionNumber: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListExtensionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ListExtensionsRequestRequestTypeDef
+
+def get_value() -> ListExtensionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListExtensionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Name: NotRequired[str],
 ```
 
 ## ListHostedConfigurationVersionsRequestRequestTypeDef
@@ -739,6 +957,23 @@ class UpdateDeploymentStrategyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+## UpdateExtensionAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import UpdateExtensionAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateExtensionAssociationRequestRequestTypeDef:
+    return {
+        "ExtensionAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateExtensionAssociationRequestRequestTypeDef(TypedDict):
+    ExtensionAssociationId: str,
+    Parameters: NotRequired[Mapping[str, str]],
+```
+
 ## ValidateConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -759,6 +994,29 @@ class ValidateConfigurationRequestRequestTypeDef(TypedDict):
     ConfigurationVersion: str,
 ```
 
+## DeploymentEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import DeploymentEventTypeDef
+
+def get_value() -> DeploymentEventTypeDef:
+    return {
+        "EventType": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentEventTypeDef(TypedDict):
+    EventType: NotRequired[DeploymentEventTypeType],  # (1)
+    TriggeredBy: NotRequired[TriggeredByType],  # (2)
+    Description: NotRequired[str],
+    ActionInvocations: NotRequired[List[ActionInvocationTypeDef]],  # (3)
+    OccurredAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DeploymentEventTypeType](./literals.md#deploymenteventtypetype) 
+2. See [:material-code-brackets: TriggeredByType](./literals.md#triggeredbytype) 
+3. See [:material-code-braces: ActionInvocationTypeDef](./type_defs.md#actioninvocationtypedef) 
 ## ApplicationResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -853,6 +1111,35 @@ def get_value() -> EmptyResponseMetadataTypeDef:
 
 ```python title="Definition"
 class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExtensionAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionAssociationTypeDef
+
+def get_value() -> ExtensionAssociationTypeDef:
+    return {
+        "Id": ...,
+        "ExtensionArn": ...,
+        "ResourceArn": ...,
+        "Arn": ...,
+        "Parameters": ...,
+        "ExtensionVersionNumber": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExtensionAssociationTypeDef(TypedDict):
+    Id: str,
+    ExtensionArn: str,
+    ResourceArn: str,
+    Arn: str,
+    Parameters: Dict[str, str],
+    ExtensionVersionNumber: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1130,62 +1417,85 @@ class UpdateEnvironmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
-## DeploymentTypeDef
+## CreateExtensionRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_appconfig.type_defs import DeploymentTypeDef
+from mypy_boto3_appconfig.type_defs import CreateExtensionRequestRequestTypeDef
 
-def get_value() -> DeploymentTypeDef:
+def get_value() -> CreateExtensionRequestRequestTypeDef:
     return {
-        "ApplicationId": ...,
-        "EnvironmentId": ...,
-        "DeploymentStrategyId": ...,
-        "ConfigurationProfileId": ...,
-        "DeploymentNumber": ...,
-        "ConfigurationName": ...,
-        "ConfigurationLocationUri": ...,
-        "ConfigurationVersion": ...,
+        "Name": ...,
+        "Actions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateExtensionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Actions: Mapping[ActionPointType, Sequence[ActionTypeDef]],  # (1)
+    Description: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, ParameterTypeDef]],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+    LatestVersionNumber: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ActionPointType](./literals.md#actionpointtype) [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+## ExtensionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionTypeDef
+
+def get_value() -> ExtensionTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "VersionNumber": ...,
+        "Arn": ...,
         "Description": ...,
-        "DeploymentDurationInMinutes": ...,
-        "GrowthType": ...,
-        "GrowthFactor": ...,
-        "FinalBakeTimeInMinutes": ...,
-        "State": ...,
-        "EventLog": ...,
-        "PercentageComplete": ...,
-        "StartedAt": ...,
-        "CompletedAt": ...,
+        "Actions": ...,
+        "Parameters": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DeploymentTypeDef(TypedDict):
-    ApplicationId: str,
-    EnvironmentId: str,
-    DeploymentStrategyId: str,
-    ConfigurationProfileId: str,
-    DeploymentNumber: int,
-    ConfigurationName: str,
-    ConfigurationLocationUri: str,
-    ConfigurationVersion: str,
+class ExtensionTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    VersionNumber: int,
+    Arn: str,
     Description: str,
-    DeploymentDurationInMinutes: int,
-    GrowthType: GrowthTypeType,  # (1)
-    GrowthFactor: float,
-    FinalBakeTimeInMinutes: int,
-    State: DeploymentStateType,  # (2)
-    EventLog: List[DeploymentEventTypeDef],  # (3)
-    PercentageComplete: float,
-    StartedAt: datetime,
-    CompletedAt: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    Actions: Dict[ActionPointType, List[ActionTypeDef]],  # (1)
+    Parameters: Dict[str, ParameterTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
-2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
-3. See [:material-code-braces: DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ActionPointType](./literals.md#actionpointtype) [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateExtensionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import UpdateExtensionRequestRequestTypeDef
+
+def get_value() -> UpdateExtensionRequestRequestTypeDef:
+    return {
+        "ExtensionIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateExtensionRequestRequestTypeDef(TypedDict):
+    ExtensionIdentifier: str,
+    Description: NotRequired[str],
+    Actions: NotRequired[Mapping[ActionPointType, Sequence[ActionTypeDef]]],  # (1)
+    Parameters: NotRequired[Mapping[str, ParameterTypeDef]],  # (2)
+    VersionNumber: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ActionPointType](./literals.md#actionpointtype) [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## DeploymentStrategiesTypeDef
 
 ```python title="Usage Example"
@@ -1230,6 +1540,50 @@ class DeploymentsTypeDef(TypedDict):
 
 1. See [:material-code-braces: DeploymentSummaryTypeDef](./type_defs.md#deploymentsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExtensionAssociationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionAssociationsTypeDef
+
+def get_value() -> ExtensionAssociationsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExtensionAssociationsTypeDef(TypedDict):
+    Items: List[ExtensionAssociationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExtensionAssociationSummaryTypeDef](./type_defs.md#extensionassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExtensionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import ExtensionsTypeDef
+
+def get_value() -> ExtensionsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExtensionsTypeDef(TypedDict):
+    Items: List[ExtensionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExtensionSummaryTypeDef](./type_defs.md#extensionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HostedConfigurationVersionsTypeDef
 
 ```python title="Usage Example"
@@ -1252,6 +1606,65 @@ class HostedConfigurationVersionsTypeDef(TypedDict):
 
 1. See [:material-code-braces: HostedConfigurationVersionSummaryTypeDef](./type_defs.md#hostedconfigurationversionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeploymentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+        "DeploymentStrategyId": ...,
+        "ConfigurationProfileId": ...,
+        "DeploymentNumber": ...,
+        "ConfigurationName": ...,
+        "ConfigurationLocationUri": ...,
+        "ConfigurationVersion": ...,
+        "Description": ...,
+        "DeploymentDurationInMinutes": ...,
+        "GrowthType": ...,
+        "GrowthFactor": ...,
+        "FinalBakeTimeInMinutes": ...,
+        "State": ...,
+        "EventLog": ...,
+        "PercentageComplete": ...,
+        "StartedAt": ...,
+        "CompletedAt": ...,
+        "AppliedExtensions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentStrategyId: str,
+    ConfigurationProfileId: str,
+    DeploymentNumber: int,
+    ConfigurationName: str,
+    ConfigurationLocationUri: str,
+    ConfigurationVersion: str,
+    Description: str,
+    DeploymentDurationInMinutes: int,
+    GrowthType: GrowthTypeType,  # (1)
+    GrowthFactor: float,
+    FinalBakeTimeInMinutes: int,
+    State: DeploymentStateType,  # (2)
+    EventLog: List[DeploymentEventTypeDef],  # (3)
+    PercentageComplete: float,
+    StartedAt: datetime,
+    CompletedAt: datetime,
+    AppliedExtensions: List[AppliedExtensionTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
+3. See [:material-code-braces: DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef) 
+4. See [:material-code-braces: AppliedExtensionTypeDef](./type_defs.md#appliedextensiontypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentsTypeDef
 
 ```python title="Usage Example"

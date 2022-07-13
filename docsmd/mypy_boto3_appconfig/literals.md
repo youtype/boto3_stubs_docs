@@ -7,6 +7,26 @@
     Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
     type annotations stubs module [mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
+## ActionPointType
+
+```python title="Usage Example"
+from mypy_boto3_appconfig.literals import ActionPointType
+
+def get_value() -> ActionPointType:
+    return "ON_DEPLOYMENT_BAKING"
+```
+
+```python title="Definition"
+ActionPointType = Literal[
+    "ON_DEPLOYMENT_BAKING",
+    "ON_DEPLOYMENT_COMPLETE",
+    "ON_DEPLOYMENT_ROLLED_BACK",
+    "ON_DEPLOYMENT_START",
+    "ON_DEPLOYMENT_STEP",
+    "PRE_CREATE_HOSTED_CONFIGURATION_VERSION",
+    "PRE_START_DEPLOYMENT",
+]
+```
 ## DeploymentEventTypeType
 
 ```python title="Usage Example"

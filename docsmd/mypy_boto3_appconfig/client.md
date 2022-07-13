@@ -171,17 +171,17 @@ def create_deployment_strategy(
     Name: str,
     DeploymentDurationInMinutes: int,
     GrowthFactor: float,
-    ReplicateTo: ReplicateToType,  # (1)
     Description: str = ...,
     FinalBakeTimeInMinutes: int = ...,
-    GrowthType: GrowthTypeType = ...,  # (2)
+    GrowthType: GrowthTypeType = ...,  # (1)
+    ReplicateTo: ReplicateToType = ...,  # (2)
     Tags: Mapping[str, str] = ...,
 ) -> DeploymentStrategyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
-2. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
 3. See [:material-code-braces: DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef) 
 
 
@@ -190,7 +190,6 @@ kwargs: CreateDeploymentStrategyRequestRequestTypeDef = {  # (1)
     "Name": ...,
     "DeploymentDurationInMinutes": ...,
     "GrowthFactor": ...,
-    "ReplicateTo": ...,
 }
 
 parent.create_deployment_strategy(**kwargs)
@@ -232,6 +231,79 @@ parent.create_environment(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef) 
+
+### create\_extension
+
+Creates an AppConfig extension.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").create_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_extension)
+
+```python title="Method definition"
+def create_extension(
+    self,
+    *,
+    Name: str,
+    Actions: Mapping[ActionPointType, Sequence[ActionTypeDef]],  # (1)
+    Description: str = ...,
+    Parameters: Mapping[str, ParameterTypeDef] = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+    LatestVersionNumber: int = ...,
+) -> ExtensionTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ActionPointType](./literals.md#actionpointtype) [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: ExtensionTypeDef](./type_defs.md#extensiontypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateExtensionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Actions": ...,
+}
+
+parent.create_extension(**kwargs)
+```
+
+1. See [:material-code-braces: CreateExtensionRequestRequestTypeDef](./type_defs.md#createextensionrequestrequesttypedef) 
+
+### create\_extension\_association
+
+When you create an extension or configure an Amazon Web Services-authored
+extension, you associate the extension with an AppConfig application,
+environment, or configuration profile.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").create_extension_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_extension_association)
+
+```python title="Method definition"
+def create_extension_association(
+    self,
+    *,
+    ExtensionIdentifier: str,
+    ResourceIdentifier: str,
+    ExtensionVersionNumber: int = ...,
+    Parameters: Mapping[str, str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ExtensionAssociationTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionAssociationTypeDef](./type_defs.md#extensionassociationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateExtensionAssociationRequestRequestTypeDef = {  # (1)
+    "ExtensionIdentifier": ...,
+    "ResourceIdentifier": ...,
+}
+
+parent.create_extension_association(**kwargs)
+```
+
+1. See [:material-code-braces: CreateExtensionAssociationRequestRequestTypeDef](./type_defs.md#createextensionassociationrequestrequesttypedef) 
 
 ### create\_hosted\_configuration\_version
 
@@ -389,6 +461,65 @@ parent.delete_environment(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef) 
+
+### delete\_extension
+
+Deletes an AppConfig extension.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_extension)
+
+```python title="Method definition"
+def delete_extension(
+    self,
+    *,
+    ExtensionIdentifier: str,
+    VersionNumber: int = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteExtensionRequestRequestTypeDef = {  # (1)
+    "ExtensionIdentifier": ...,
+}
+
+parent.delete_extension(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteExtensionRequestRequestTypeDef](./type_defs.md#deleteextensionrequestrequesttypedef) 
+
+### delete\_extension\_association
+
+Deletes an extension association.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_extension_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_extension_association)
+
+```python title="Method definition"
+def delete_extension_association(
+    self,
+    *,
+    ExtensionAssociationId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteExtensionAssociationRequestRequestTypeDef = {  # (1)
+    "ExtensionAssociationId": ...,
+}
+
+parent.delete_extension_association(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteExtensionAssociationRequestRequestTypeDef](./type_defs.md#deleteextensionassociationrequestrequesttypedef) 
 
 ### delete\_hosted\_configuration\_version
 
@@ -632,6 +763,65 @@ parent.get_environment(**kwargs)
 
 1. See [:material-code-braces: GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef) 
 
+### get\_extension
+
+Returns information about an AppConfig extension.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").get_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_extension)
+
+```python title="Method definition"
+def get_extension(
+    self,
+    *,
+    ExtensionIdentifier: str,
+    VersionNumber: int = ...,
+) -> ExtensionTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionTypeDef](./type_defs.md#extensiontypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetExtensionRequestRequestTypeDef = {  # (1)
+    "ExtensionIdentifier": ...,
+}
+
+parent.get_extension(**kwargs)
+```
+
+1. See [:material-code-braces: GetExtensionRequestRequestTypeDef](./type_defs.md#getextensionrequestrequesttypedef) 
+
+### get\_extension\_association
+
+Returns information about an AppConfig extension association.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").get_extension_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_extension_association)
+
+```python title="Method definition"
+def get_extension_association(
+    self,
+    *,
+    ExtensionAssociationId: str,
+) -> ExtensionAssociationTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionAssociationTypeDef](./type_defs.md#extensionassociationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetExtensionAssociationRequestRequestTypeDef = {  # (1)
+    "ExtensionAssociationId": ...,
+}
+
+parent.get_extension_association(**kwargs)
+```
+
+1. See [:material-code-braces: GetExtensionAssociationRequestRequestTypeDef](./type_defs.md#getextensionassociationrequestrequesttypedef) 
+
 ### get\_hosted\_configuration\_version
 
 Retrieves information about a specific configuration version.
@@ -820,6 +1010,71 @@ parent.list_environments(**kwargs)
 ```
 
 1. See [:material-code-braces: ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef) 
+
+### list\_extension\_associations
+
+Lists all AppConfig extension associations in the account.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").list_extension_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_extension_associations)
+
+```python title="Method definition"
+def list_extension_associations(
+    self,
+    *,
+    ResourceIdentifier: str = ...,
+    ExtensionIdentifier: str = ...,
+    ExtensionVersionNumber: int = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ExtensionAssociationsTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionAssociationsTypeDef](./type_defs.md#extensionassociationstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListExtensionAssociationsRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+}
+
+parent.list_extension_associations(**kwargs)
+```
+
+1. See [:material-code-braces: ListExtensionAssociationsRequestRequestTypeDef](./type_defs.md#listextensionassociationsrequestrequesttypedef) 
+
+### list\_extensions
+
+Lists all custom and Amazon Web Services-authored AppConfig extensions in the
+account.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").list_extensions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_extensions)
+
+```python title="Method definition"
+def list_extensions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Name: str = ...,
+) -> ExtensionsTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionsTypeDef](./type_defs.md#extensionstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListExtensionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_extensions(**kwargs)
+```
+
+1. See [:material-code-braces: ListExtensionsRequestRequestTypeDef](./type_defs.md#listextensionsrequestrequesttypedef) 
 
 ### list\_hosted\_configuration\_versions
 
@@ -1154,6 +1409,71 @@ parent.update_environment(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef) 
+
+### update\_extension
+
+Updates an AppConfig extension.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").update_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_extension)
+
+```python title="Method definition"
+def update_extension(
+    self,
+    *,
+    ExtensionIdentifier: str,
+    Description: str = ...,
+    Actions: Mapping[ActionPointType, Sequence[ActionTypeDef]] = ...,  # (1)
+    Parameters: Mapping[str, ParameterTypeDef] = ...,  # (2)
+    VersionNumber: int = ...,
+) -> ExtensionTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ActionPointType](./literals.md#actionpointtype) [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: ExtensionTypeDef](./type_defs.md#extensiontypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateExtensionRequestRequestTypeDef = {  # (1)
+    "ExtensionIdentifier": ...,
+}
+
+parent.update_extension(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateExtensionRequestRequestTypeDef](./type_defs.md#updateextensionrequestrequesttypedef) 
+
+### update\_extension\_association
+
+Updates an association.
+
+Type annotations and code completion for `#!python boto3.client("appconfig").update_extension_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_extension_association)
+
+```python title="Method definition"
+def update_extension_association(
+    self,
+    *,
+    ExtensionAssociationId: str,
+    Parameters: Mapping[str, str] = ...,
+) -> ExtensionAssociationTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExtensionAssociationTypeDef](./type_defs.md#extensionassociationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateExtensionAssociationRequestRequestTypeDef = {  # (1)
+    "ExtensionAssociationId": ...,
+}
+
+parent.update_extension_association(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateExtensionAssociationRequestRequestTypeDef](./type_defs.md#updateextensionassociationrequestrequesttypedef) 
 
 ### validate\_configuration
 
